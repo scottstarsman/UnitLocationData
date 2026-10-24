@@ -28,10 +28,14 @@ Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims,
 2. **Better sources for order of battle**: US Army Green Books (CMH), Joslen's *Orders of Battle* (British), the Canadian official history, German OOB references (Tessin, *Lexikon der Wehrmacht*, axishistory), and Soviet *Boevoi sostav* lists. Use Wikipedia as a first pass only.
 3. **Per-row evidence**: add a quote or page reference (not only a URL) and a separate `coordinate_source` column, plus a coordinate precision type (point / town / sector), so a coordinate can be re-checked.
 4. **Batch geocoding with a cache** (GeoNames or Wikidata with Nominatim as a fallback) and a gazetteer with historical names (places change names, for example Octeville / Cherbourg-Octeville).
-5. **Split by theater and month**: new theaters get their own `theater` value and folders stay by nationality, so contributors can work independently. Crawl each campaign page and its OOB page, then run a verification pass that checks date, place, unit and echelon against two sources before a row is accepted.
+5. **New theaters and campaigns**: new theaters get their own `theater` value and folders stay by nationality, so contributors can work independently. Crawl each campaign page and its OOB page, then run a verification pass that checks date, place, unit and echelon against two sources before a row is accepted.
 6. **Weaker source bases**: the Eastern Front and the Pacific need Russian and Japanese-language sources and atlases (Glantz-type), so expect lower confidence and more conflict groups.
 7. **Tooling**: a dataset browser (map and timeline) generated from `build/claims.geojson`, CSV and GeoJSON releases with a changelog, a Frictionless data package descriptor, and unit tests for the scripts.
 8. **Community**: issue and PR templates, a review rota for source checking, and tagged releases with a changelog.
+
+## Generated files at scale
+
+The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are committed today because the proof of concept is small. The per-unit files in `data/claims/` are the master copy; there are deliberately no monthly or per-theater exports. Once the dataset grows (for example the whole war), stop committing the generated combined files and publish them as release assets instead (build them in CI on each tagged release), so the repository history stays small and diffs stay readable. At that point remove `build/` from version control, add it to `.gitignore`, and drop the "build is up to date" check from the workflow.
 
 ## Open design questions
 

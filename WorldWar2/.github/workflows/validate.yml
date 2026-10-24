@@ -18,6 +18,7 @@ jobs:
         run: python scripts/validate.py
       - name: Build combined outputs
         run: python scripts/build.py
+      # build/ holds only all_claims.csv and claims.geojson (no monthly or per-theater exports)
       - name: Check build/ is up to date
         run: |
           python scripts/build.py --check

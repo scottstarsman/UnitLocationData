@@ -3,8 +3,6 @@
 
 Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-8):
   build/all_claims.csv                  every claim, same columns as the schema
-  build/by_month/<YYYY-MM>.csv          claims by month of `date`
-  build/by_theater/<theater>.csv        claims by theater
   build/claims.geojson                  one Point feature per claim (lon, lat) with main properties
 
 Do not hand-edit anything in build/: edit data/claims/ and re-run this script.
@@ -36,14 +34,6 @@ def outputs():
     header, rows = common.load_all_claims()
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows)}
-    months, theaters = {}, {}
-    for r in rows:
-        months.setdefault(r['date'][:7], []).append(r)
-        theaters.setdefault(r['theater'], []).append(r)
-    for k in sorted(months):
-        out['by_month/%s.csv' % k] = table(months[k])
-    for k in sorted(theaters):
-        out['by_theater/%s.csv' % k] = table(theaters[k])
     feats = []
     for r in rows:
         props = {}

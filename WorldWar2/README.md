@@ -13,7 +13,7 @@ data/claims/<nationality>/<unit_id>.csv   master copy: one file per unit, all cl
 data/units.csv                            unit table (one row per unit, including parent-only units)
 schema/                                   machine-readable schema + vocabularies + human-readable README
 scripts/                                  validate.py, build.py, split_from_flat.py (standard library only)
-build/                                    GENERATED combined outputs (CSV, by month, by theater, GeoJSON)
+build/                                    GENERATED combined outputs (all_claims.csv, claims.geojson)
 docs/                                     methodology, sources, roadmap
 archive/v5_flat/                          the flat CSVs the per-unit files were first split from
 .github/workflows/validate.yml            CI for pull requests
@@ -34,11 +34,11 @@ Requires Python 3.8+ and nothing else (standard library only).
 
 ```bash
 python scripts/validate.py          # exit code 0 = data is valid
-python scripts/build.py             # regenerate build/ (all_claims.csv, by_month, by_theater, claims.geojson)
+python scripts/build.py             # regenerate build/ (all_claims.csv, claims.geojson)
 python scripts/build.py --check     # exit code 1 if build/ is stale (used by CI)
 ```
 
-Use the data directly: `build/all_claims.csv` (all claims, one file), `build/by_month/1944-06.csv`, `build/by_theater/western_europe.csv`, or `build/claims.geojson` (Point features for GIS tools, `geojson.io`, QGIS, Leaflet).
+Use the data directly: `build/all_claims.csv` (all claims, one file) or `build/claims.geojson` (Point features for GIS tools, `geojson.io`, QGIS, Leaflet).
 
 Example (Python, no libraries):
 

@@ -1,0 +1,82 @@
+unit_id,unit_name,nationality,echelon,branch,theater,parent_unit_id,parent_only
+CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,western_europe,,false
+CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,western_europe,,false
+GER-AG-00BG,Army Group B,Germany,army_group,Army,western_europe,,false
+GER-ARMY-007A,Seventh Army,Germany,army,Army,western_europe,,false
+GER-COR-084C,LXXXIV Corps,Germany,corps,Army,western_europe,,false
+GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,western_europe,,false
+GER-FJ-003D,3rd Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,false
+GER-INF-077D,77th Infantry Division,Germany,division,Army,western_europe,,false
+GER-INF-243D,243rd Static Infantry Division,Germany,division,Army,western_europe,,false
+GER-INF-265D,265th Infantry Division,Germany,division,Army,western_europe,,true
+GER-INF-275D,275th Infantry Division,Germany,division,Army,western_europe,,true
+GER-INF-346D,346th Infantry Division,Germany,division,Army,western_europe,,false
+GER-INF-352D,352nd Infantry Division,Germany,division,Army,western_europe,,false
+GER-INF-353D,353rd Infantry Division,Germany,division,Army,western_europe,,true
+GER-INF-709D,709th Static Infantry Division,Germany,division,Army,western_europe,,false
+GER-INF-711D,711th Infantry Division,Germany,division,Army,western_europe,,false
+GER-INF-716D,716th Static Infantry Division,Germany,division,Army,western_europe,,false
+GER-KG-002PZ,Kampfgruppe (tank battalion) 2nd Panzer Division,Germany,regiment/battle_group,Armoured,western_europe,GER-PZ-002D,false
+GER-KG-265,Kampfgruppe 265th Infantry Division (name of commander not given),Germany,regiment/battle_group,Army,western_europe,GER-INF-265D,false
+GER-KG-BOEHM,Kampfgruppe Boehm,Germany,regiment/battle_group,Army,western_europe,GER-INF-353D,false
+GER-KG-FREY,Kampfgruppe Frey,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-001D,false
+GER-KG-HEINTZ,Kampfgruppe Heintz,Germany,regiment/battle_group,Army,western_europe,GER-INF-275D,false
+GER-KG-MEYER,Kampfgruppe Meyer,Germany,regiment/battle_group,Army,western_europe,GER-INF-352D,false
+GER-KG-ROHRBACH,Kampfgruppe Rohrbach,Germany,regiment/battle_group,Army,western_europe,GER-INF-709D,false
+GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,western_europe,GER-PZ-021D,false
+GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-002D,false
+GER-LL-091D,91st Luftlande Division,Germany,division,Army,western_europe,,false
+GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,western_europe,,false
+GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,western_europe,,false
+GER-PZ-021D,21st Panzer Division,Germany,division,Armoured,western_europe,,false
+GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,western_europe,,false
+GER-PZ-LEHRD,Panzer Lehr Division,Germany,division,Armoured,western_europe,,false
+GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,western_europe,,false
+GER-SSPG-017D,17th SS Panzergrenadier Division Götz von Berlichingen,Germany,division,Waffen-SS,western_europe,,false
+GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,western_europe,,false
+GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,western_europe,,true
+GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,western_europe,,false
+GER-SSPZ-002D,2nd SS Panzer Division Das Reich,Germany,division,Waffen-SS,western_europe,,true
+GER-SSPZ-009D,9th SS Panzer Division Hohenstaufen,Germany,division,Waffen-SS,western_europe,,false
+GER-SSPZ-010D,10th SS Panzer Division Frundsberg,Germany,division,Waffen-SS,western_europe,,false
+GER-SSPZ-012D,12th SS Panzer Division Hitlerjugend,Germany,division,Waffen-SS,western_europe,,false
+UK-ABN-006D,6th Airborne Division,UK,division,Airborne,western_europe,,false
+UK-AG-021G,21st Army Group,UK,army_group,Army,western_europe,,false
+UK-ARM-004B,4th Armoured Brigade,UK,brigade,Armoured,western_europe,,false
+UK-ARM-007D,7th Armoured Division,UK,division,Armoured,western_europe,,false
+UK-ARM-008B,8th Armoured Brigade,UK,brigade,Armoured,western_europe,,false
+UK-ARM-011D,11th Armoured Division,UK,division,Armoured,western_europe,,false
+UK-ARM-079D,79th Armoured Division,UK,division,Armoured,western_europe,,false
+UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,western_europe,,false
+UK-ARMY-002A,Second Army,UK,army,Army,western_europe,,false
+UK-COR-001C,I Corps,UK,corps,Army,western_europe,,false
+UK-COR-008C,VIII Corps,UK,corps,Army,western_europe,,false
+UK-COR-030C,XXX Corps,UK,corps,Army,western_europe,,false
+UK-INF-003D,3rd Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-015D,15th (Scottish) Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-049D,49th (West Riding) Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-050D,50th (Northumbrian) Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-051D,51st (Highland) Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-053D,53rd (Welsh) Infantry Division,UK,division,Army,western_europe,,false
+UK-INF-059D,59th (Staffordshire) Infantry Division,UK,division,Army,western_europe,,false
+UK-TNK-031B,31st Tank Brigade,UK,brigade,Armoured,western_europe,,false
+US-ABN-082D,82nd Airborne Division,US,division,Airborne,western_europe,,false
+US-ABN-101D,101st Airborne Division,US,division,Airborne,western_europe,,false
+US-ARM-002D,2nd Armored Division,US,division,Armoured,western_europe,,false
+US-ARM-003D,3rd Armored Division,US,division,Armoured,western_europe,,false
+US-ARMY-001A,First Army,US,army,Army,western_europe,,false
+US-CCA-002D,"Combat Command A, 2nd Armored Division",US,regiment/battle_group,Armoured,western_europe,US-ARM-002D,false
+US-COR-005C,V Corps,US,corps,Army,western_europe,,false
+US-COR-007C,VII Corps,US,corps,Army,western_europe,,false
+US-COR-008C,VIII Corps,US,corps,Army,western_europe,,false
+US-COR-019C,XIX Corps,US,corps,Army,western_europe,,false
+US-INF-001D,1st Infantry Division,US,division,Army,western_europe,,false
+US-INF-002D,2nd Infantry Division,US,division,Army,western_europe,,false
+US-INF-004D,4th Infantry Division,US,division,Army,western_europe,,false
+US-INF-009D,9th Infantry Division,US,division,Army,western_europe,,false
+US-INF-029D,29th Infantry Division,US,division,Army,western_europe,,false
+US-INF-030D,30th Infantry Division,US,division,Army,western_europe,,false
+US-INF-079D,79th Infantry Division,US,division,Army,western_europe,,false
+US-INF-083D,83rd Infantry Division,US,division,Army,western_europe,,false
+US-INF-090D,90th Infantry Division,US,division,Army,western_europe,,false

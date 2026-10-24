@@ -1,0 +1,82 @@
+unit_id,nationality,unit_name,echelon,branch,kind,parent_division_unit_id,rows_in_v5,rows_in_v4,note
+CAN-ARM-002B,Canada,2nd Canadian Armoured Brigade,brigade,Armoured,original,,1,1,
+CAN-INF-003D,Canada,3rd Canadian Infantry Division,division,Army,original,,3,3,
+GER-AG-00BG,Germany,Army Group B,army_group,Army,original,,2,2,
+GER-ARMY-007A,Germany,Seventh Army,army,Army,original,,3,3,
+GER-COR-084C,Germany,LXXXIV Corps,corps,Army,original,,7,7,
+GER-FJ-002C,Germany,II Fallschirmjäger Corps,corps,Luftwaffe,original,,1,1,
+GER-FJ-003D,Germany,3rd Fallschirmjäger Division,division,Luftwaffe,original,,2,2,
+GER-INF-077D,Germany,77th Infantry Division,division,Army,original,,3,3,
+GER-INF-243D,Germany,243rd Static Infantry Division,division,Army,original,,2,3,
+GER-INF-265D,Germany,265th Infantry Division,division,Army,parent_only (no rows left in v5),,0,1,All of this unit's v4 rows were about its battle group(s); kept here so parent_formation ids resolve.
+GER-INF-275D,Germany,275th Infantry Division,division,Army,parent_only (no rows left in v5),,0,1,All of this unit's v4 rows were about its battle group(s); kept here so parent_formation ids resolve.
+GER-INF-346D,Germany,346th Infantry Division,division,Army,original,,1,1,
+GER-INF-352D,Germany,352nd Infantry Division,division,Army,original,,3,3,
+GER-INF-353D,Germany,353rd Infantry Division,division,Army,parent_only (no rows left in v5),,0,1,All of this unit's v4 rows were about its battle group(s); kept here so parent_formation ids resolve.
+GER-INF-709D,Germany,709th Static Infantry Division,division,Army,original,,5,5,
+GER-INF-711D,Germany,711th Infantry Division,division,Army,original,,1,1,
+GER-INF-716D,Germany,716th Static Infantry Division,division,Army,original,,1,1,
+GER-KG-002PZ,Germany,Kampfgruppe (tank battalion) 2nd Panzer Division,regiment/battle_group,Armoured,battle_group,GER-PZ-002D,1,0,converted from existing v4 row(s)
+GER-KG-265,Germany,Kampfgruppe 265th Infantry Division (name of commander not given),regiment/battle_group,Army,battle_group,GER-INF-265D,1,0,converted from existing v4 row(s)
+GER-KG-BOEHM,Germany,Kampfgruppe Boehm,regiment/battle_group,Army,battle_group,GER-INF-353D,1,0,converted from existing v4 row(s)
+GER-KG-FREY,Germany,Kampfgruppe Frey,regiment/battle_group,Waffen-SS,battle_group,GER-SSPZ-001D,1,0,converted from existing v4 row(s)
+GER-KG-HEINTZ,Germany,Kampfgruppe Heintz,regiment/battle_group,Army,battle_group,GER-INF-275D,1,0,converted from existing v4 row(s)
+GER-KG-MEYER,Germany,Kampfgruppe Meyer,regiment/battle_group,Army,battle_group,GER-INF-352D,1,0,new in v5 (sourced addition)
+GER-KG-ROHRBACH,Germany,Kampfgruppe Rohrbach,regiment/battle_group,Army,battle_group,GER-INF-709D,1,0,converted from existing v4 row(s)
+GER-KG-VONLUCK,Germany,Kampfgruppe von Luck,regiment/battle_group,Armoured,battle_group,GER-PZ-021D,1,0,converted from existing v4 row(s)
+GER-KG-WEIDINGER,Germany,Kampfgruppe Weidinger,regiment/battle_group,Waffen-SS,battle_group,GER-SSPZ-002D,3,0,converted from existing v4 row(s)
+GER-LL-091D,Germany,91st Luftlande Division,division,Army,original,,2,2,
+GER-OBW-000H,Germany,Oberbefehlshaber West (OB West),other,Army,original,,2,2,
+GER-PZ-002D,Germany,2nd Panzer Division,division,Armoured,original,,2,3,
+GER-PZ-021D,Germany,21st Panzer Division,division,Armoured,original,,3,4,
+GER-PZ-047C,Germany,XLVII Panzer Corps,corps,Armoured,original,,1,1,
+GER-PZ-LEHRD,Germany,Panzer Lehr Division,division,Armoured,original,,5,5,
+GER-PZG-WESTA,Germany,Panzer Group West,army,Armoured,original,,3,3,
+GER-SSPG-017D,Germany,17th SS Panzergrenadier Division Götz von Berlichingen,division,Waffen-SS,original,,2,2,
+GER-SSPZ-001C,Germany,I SS Panzer Corps,corps,Waffen-SS,original,,3,3,
+GER-SSPZ-001D,Germany,1st SS Panzer Division Leibstandarte SS Adolf Hitler,division,Waffen-SS,parent_only (no rows left in v5),,0,1,All of this unit's v4 rows were about its battle group(s); kept here so parent_formation ids resolve.
+GER-SSPZ-002C,Germany,II SS Panzer Corps,corps,Waffen-SS,original,,3,3,
+GER-SSPZ-002D,Germany,2nd SS Panzer Division Das Reich,division,Waffen-SS,parent_only (no rows left in v5),,0,3,All of this unit's v4 rows were about its battle group(s); kept here so parent_formation ids resolve.
+GER-SSPZ-009D,Germany,9th SS Panzer Division Hohenstaufen,division,Waffen-SS,original,,1,1,
+GER-SSPZ-010D,Germany,10th SS Panzer Division Frundsberg,division,Waffen-SS,original,,1,1,
+GER-SSPZ-012D,Germany,12th SS Panzer Division Hitlerjugend,division,Waffen-SS,original,,5,5,
+UK-ABN-006D,UK,6th Airborne Division,division,Airborne,original,,5,5,
+UK-AG-021G,UK,21st Army Group,army_group,Army,original,,4,4,
+UK-ARM-004B,UK,4th Armoured Brigade,brigade,Armoured,original,,1,1,
+UK-ARM-007D,UK,7th Armoured Division,division,Armoured,original,,5,5,
+UK-ARM-008B,UK,8th Armoured Brigade,brigade,Armoured,original,,1,1,
+UK-ARM-011D,UK,11th Armoured Division,division,Armoured,original,,5,5,
+UK-ARM-079D,UK,79th Armoured Division,division,Armoured,original,,1,1,
+UK-ARM-GRDD,UK,Guards Armoured Division,division,Armoured,original,,1,1,
+UK-ARMY-002A,UK,Second Army,army,Army,original,,2,2,
+UK-COR-001C,UK,I Corps,corps,Army,original,,3,3,
+UK-COR-008C,UK,VIII Corps,corps,Army,original,,4,4,
+UK-COR-030C,UK,XXX Corps,corps,Army,original,,7,7,
+UK-INF-003D,UK,3rd Infantry Division,division,Army,original,,2,2,
+UK-INF-015D,UK,15th (Scottish) Infantry Division,division,Army,original,,3,3,
+UK-INF-043D,UK,43rd (Wessex) Infantry Division,division,Army,original,,2,2,
+UK-INF-049D,UK,49th (West Riding) Infantry Division,division,Army,original,,3,3,
+UK-INF-050D,UK,50th (Northumbrian) Infantry Division,division,Army,original,,3,3,
+UK-INF-051D,UK,51st (Highland) Infantry Division,division,Army,original,,5,5,
+UK-INF-053D,UK,53rd (Welsh) Infantry Division,division,Army,original,,1,1,
+UK-INF-059D,UK,59th (Staffordshire) Infantry Division,division,Army,original,,1,1,
+UK-TNK-031B,UK,31st Tank Brigade,brigade,Armoured,original,,1,1,
+US-ABN-082D,US,82nd Airborne Division,division,Airborne,original,,7,7,
+US-ABN-101D,US,101st Airborne Division,division,Airborne,original,,5,5,
+US-ARM-002D,US,2nd Armored Division,division,Armoured,original,,2,2,
+US-ARM-003D,US,3rd Armored Division,division,Armoured,original,,2,2,
+US-ARMY-001A,US,First Army,army,Army,original,,4,4,
+US-CCA-002D,US,"Combat Command A, 2nd Armored Division",regiment/battle_group,Armoured,battle_group,US-ARM-002D,1,0,new in v5 (sourced addition)
+US-COR-005C,US,V Corps,corps,Army,original,,4,4,
+US-COR-007C,US,VII Corps,corps,Army,original,,9,9,
+US-COR-008C,US,VIII Corps,corps,Army,original,,3,3,
+US-COR-019C,US,XIX Corps,corps,Army,original,,3,3,
+US-INF-001D,US,1st Infantry Division,division,Army,original,,4,4,
+US-INF-002D,US,2nd Infantry Division,division,Army,original,,3,3,
+US-INF-004D,US,4th Infantry Division,division,Army,original,,5,5,
+US-INF-009D,US,9th Infantry Division,division,Army,original,,5,5,
+US-INF-029D,US,29th Infantry Division,division,Army,original,,4,4,
+US-INF-030D,US,30th Infantry Division,division,Army,original,,2,2,
+US-INF-079D,US,79th Infantry Division,division,Army,original,,4,4,
+US-INF-083D,US,83rd Infantry Division,division,Army,original,,1,1,
+US-INF-090D,US,90th Infantry Division,division,Army,original,,5,5,

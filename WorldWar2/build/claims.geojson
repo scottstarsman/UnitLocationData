@@ -1,0 +1,6577 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0001",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-06",
+    "location_name": "Juno Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing at Juno Beach in support of 3rd Canadian Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0002",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Juno Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Juno Beach and advancing inland toward Caen",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.23,
+     49.15
+    ]
+   },
+   "properties": {
+    "claim_id": "C0003",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-06",
+    "location_name": "Lisieux",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "ordered toward Caen but held at Lisieux",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0004",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-06",
+    "location_name": "Caen sector (counter-attacks on 3rd Infantry/3rd Canadian Divisions)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking between Caen and the sea",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C0005",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Le Havre (division stationed; offered to 7th Army)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "stationed at Le Havre; offered to assist Seventh Army",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0006",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Omaha Beach sector (division HQ Le Molay-Littry)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defending Omaha Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0007",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-709D",
+    "unit_name": "709th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Valognes",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "defending Cotentin east coast and Cherbourg area",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1,
+     49.2864
+    ]
+   },
+   "properties": {
+    "claim_id": "C0008",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Coast east of the Orne/Dives (sector, representative)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "holding coast east of the Orne",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0009",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Caen (division HQ; defending Juno-Sword sector)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "defending Juno-Sword coastal sector",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "heavily_depleted"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3181,
+     49.4089
+    ]
+   },
+   "properties": {
+    "claim_id": "C0010",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LL-091D",
+    "unit_name": "91st Luftlande Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Cotentin airborne landing area (representative)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "fighting airborne landings in the Cotentin",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6303,
+     49.0822
+    ]
+   },
+   "properties": {
+    "claim_id": "C0011",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "La Roche-Guyon (Army Group B HQ)",
+    "location_represents": "headquarters",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "other",
+    "current_activity": "directing defence from Army Group B HQ",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0012",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Saint-Lô",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "directing coastal defence of Normandy sector",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0938,
+     48.8989
+    ]
+   },
+   "properties": {
+    "claim_id": "C0013",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Saint-Germain-en-Laye (OB West HQ; location per Rundstedt biography)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "holding reserve panzer divisions at OKW disposal; HQ near Paris",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1984,
+     48.0077
+    ]
+   },
+   "properties": {
+    "claim_id": "C0014",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Le Mans",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "directing defence of Normandy from Le Mans HQ",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3211,
+     49.3064
+    ]
+   },
+   "properties": {
+    "claim_id": "C0015",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Sword Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Sword Beach and linking with 6th Airborne",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3435,
+     49.2146
+    ]
+   },
+   "properties": {
+    "claim_id": "C0016",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Biéville-Beuville / Lébisey approach to Caen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing on Caen; halted by 21st Panzer counterattack",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C0017",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Gold Beach; overran 716th Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2744,
+     49.2422
+    ]
+   },
+   "properties": {
+    "claim_id": "C0018",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-06",
+    "location_name": "Caen canal and Orne bridges (Pegasus Bridge) / Ranville",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "seizing Orne bridges and Caen canal after airborne landing",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Tonga",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3211,
+     49.3064
+    ]
+   },
+   "properties": {
+    "claim_id": "C0019",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-079D",
+    "unit_name": "79th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-06",
+    "location_name": "Gold/Juno/Sword (point = Sword Beach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "supporting assault landings with specialist armour",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C0020",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-06",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "supporting 50th Division landing at Gold Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3211,
+     49.3064
+    ]
+   },
+   "properties": {
+    "claim_id": "C0021",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Sword/Juno beaches (I Corps sector, point = Sword)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Juno and Sword beaches",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0022",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARMY-002A",
+    "unit_name": "Second Army",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Gold-Juno-Sword landing zone (representative point; army HQ not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "landing",
+    "current_activity": "landing troops across Gold, Juno and Sword",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C0023",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Gold Beach and linking with I Corps",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2711,
+     49.3367
+    ]
+   },
+   "properties": {
+    "claim_id": "C0024",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-06",
+    "location_name": "Drop zones west of Utah Beach (Saint-Come-du-Mont / Sainte-Marie-du-Mont area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "parachuting behind Utah Beach to seize causeways and bridges",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0025",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Omaha Beach (Colleville-sur-Mer sector)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Omaha Beach (Colleville sector)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0026",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Omaha Beach (Vierville-sur-Mer sector)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Omaha Beach (Vierville sector)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1764,
+     49.4181
+    ]
+   },
+   "properties": {
+    "claim_id": "C0027",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Utah Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing at Utah Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3181,
+     49.4089
+    ]
+   },
+   "properties": {
+    "claim_id": "C0028",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-06",
+    "location_name": "Sainte-Mère-Église",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "parachuting in and capturing Sainte-Mère-Église",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1764,
+     49.4181
+    ]
+   },
+   "properties": {
+    "claim_id": "C0029",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Utah Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "beginning landing at Utah Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.5975,
+     51.4536
+    ]
+   },
+   "properties": {
+    "claim_id": "C0030",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Bristol, England (First Army HQ; troops landed at Utah/Omaha)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "controlling the landings from HQ in England",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0031",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Omaha Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Omaha Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1764,
+     49.4181
+    ]
+   },
+   "properties": {
+    "claim_id": "C0032",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Utah Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "assaulting Utah Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.585,
+     49.3036
+    ]
+   },
+   "properties": {
+    "claim_id": "C0211",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-MEYER",
+    "unit_name": "Kampfgruppe Meyer",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "location_name": "Bazenville-Villiers-le-Sec (assembly area)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "advancing to assemble for a counterattack toward Crépon; British already in the area",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0033",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-07",
+    "location_name": "Caen sector assembly areas",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "arriving in assembly areas west of Caen",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3286,
+     49.4283
+    ]
+   },
+   "properties": {
+    "claim_id": "C0034",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-ROHRBACH",
+    "unit_name": "Kampfgruppe Rohrbach",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Defensive line north of Neuville-au-Plain",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "forming defensive line north of Neuville; blocking 4th Division advance",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6794,
+     48.1147
+    ]
+   },
+   "properties": {
+    "claim_id": "C0035",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-265",
+    "unit_name": "Kampfgruppe 265th Infantry Division (name of commander not given)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Brittany (division area; Kampfgruppe movement)",
+    "location_represents": "approach_route",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "preparing Kampfgruppe movement from Brittany",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3181,
+     49.4089
+    ]
+   },
+   "properties": {
+    "claim_id": "C0036",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LL-091D",
+    "unit_name": "91st Luftlande Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Sainte-Mère-Église",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking Sainte-Mère-Église from the north",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0037",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-07",
+    "location_name": "Caen sector (corps HQ not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "assembling for counterattack toward the coast",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.484,
+     48.456
+    ]
+   },
+   "properties": {
+    "claim_id": "C0038",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-07",
+    "location_name": "Chartres area (start of 90-mile drive to the front)",
+    "location_represents": "approach_route",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "moving up from Chartres toward the front",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.54549,
+     49.28836
+    ]
+   },
+   "properties": {
+    "claim_id": "C0039",
+    "conflict_group_id": "G005",
+    "claim_status": "alternate",
+    "unit_id": "UK-AG-021G",
+    "unit_name": "21st Army Group",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Château de Creullet (Creully)",
+    "location_represents": "headquarters",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "establishing Montgomery's tactical HQ at Creullet",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C0040",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Bayeux",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "entering and clearing Bayeux",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0041",
+    "conflict_group_id": "G010",
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Juno/Sword (landed via Juno; point = Juno Beach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing via Juno Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2564,
+     49.2319
+    ]
+   },
+   "properties": {
+    "claim_id": "C0042",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-07",
+    "location_name": "Ranville",
+    "location_represents": "main_body",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "relieved at the bridges; holding the Orne bridgehead",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Tonga",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C0043",
+    "conflict_group_id": "G011",
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-07",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing at Gold Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C0044",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Bayeux",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "securing Bayeux and Port-en-Bessin",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.903,
+     49.3092
+    ]
+   },
+   "properties": {
+    "claim_id": "C0045",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Treviers-Mosles area (point = Treviers)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing south toward Trévières and Mosles",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0046",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Omaha Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing at Omaha Beach and entering the line",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3135,
+     49.4591
+    ]
+   },
+   "properties": {
+    "claim_id": "C0047",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "location_name": "Azeville",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking Azeville and Crisbecq fortified positions",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4306,
+     49.2067
+    ]
+   },
+   "properties": {
+    "claim_id": "C0048",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-08",
+    "location_name": "Authie-Carpiquet line (point = Authie)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "contained north-west of Caen by 12th SS",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4306,
+     49.2067
+    ]
+   },
+   "properties": {
+    "claim_id": "C0049",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-08",
+    "location_name": "Authie",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding Authie-Carpiquet line against Canadian advance",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0050",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEINTZ",
+    "unit_name": "Kampfgruppe Heintz",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-06-08",
+    "location_name": "Saint-Lô area (Kampfgruppe Heintz arrival)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "arriving to reinforce Saint-Lô area",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4306,
+     49.2067
+    ]
+   },
+   "properties": {
+    "claim_id": "C0051",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-08",
+    "location_name": "Authie",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "attacking toward the coast; held Authie-Carpiquet",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0052",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-08",
+    "location_name": "Saint-Lô sector (corps on march from Brittany)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "marching from Brittany toward Saint-Lô",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0053",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-08",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "in assembly areas near Thury-Harcourt",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.54549,
+     49.28836
+    ]
+   },
+   "properties": {
+    "claim_id": "C0054",
+    "conflict_group_id": "G005",
+    "claim_status": "preferred",
+    "unit_id": "UK-AG-021G",
+    "unit_name": "21st Army Group",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-08",
+    "location_name": "Château de Creullet (Creully)",
+    "location_represents": "headquarters",
+    "precision_km": 1,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "establishing Montgomery's tactical HQ at Creullet",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0055",
+    "conflict_group_id": "G010",
+    "claim_status": "alternate",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-08",
+    "location_name": "Juno/Sword (landed via Juno; point = Juno Beach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "completing landing in the beachhead",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1008,
+     49.3186
+    ]
+   },
+   "properties": {
+    "claim_id": "C0056",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-08",
+    "location_name": "Isigny-sur-Mer",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "holding Isigny after its capture",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.075,
+     49.214
+    ]
+   },
+   "properties": {
+    "claim_id": "C0057",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-09",
+    "location_name": "Elle River line (Berigny-Airel; point = Airel)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawing to the Elle River line",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "heavily_depleted"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1653,
+     48.7256
+    ]
+   },
+   "properties": {
+    "claim_id": "C0058",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-09",
+    "location_name": "Brécey",
+    "location_represents": "approach_route",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "marching up from Brittany; main body at Brécey",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0059",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-06-09",
+    "location_name": "Caen sector (HQ around Thury-Harcourt; see 10 June)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "taking over the Caen sector from 7th Army",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C0060",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-09",
+    "location_name": "Tilly-sur-Seulles",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "arriving at Tilly-sur-Seulles; checking 7th Armoured",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0061",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-09",
+    "location_name": "Omaha Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "landing at Omaha Beach; in V Corps reserve",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3431,
+     49.3853
+    ]
+   },
+   "properties": {
+    "claim_id": "C0062",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-09",
+    "location_name": "Merderet crossing / Chef-du-Pont",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "forcing Merderet crossing and linking with 507th PIR",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0063",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-10",
+    "location_name": "Southwest of Carentan (assembly areas)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "moving up to block US westward thrust near Carentan",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Battle of Carentan",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.299,
+     49.892
+    ]
+   },
+   "properties": {
+    "claim_id": "C0064",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-10",
+    "location_name": "Amiens-Alencon march route (point = Amiens)",
+    "location_represents": "approach_route",
+    "precision_km": 50,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "marching from Amiens toward the battle area",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0065",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-10",
+    "location_name": "Saint-Lô-Caumont gap sector",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "arriving to hold the Caumont gap",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "full"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0066",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Valognes",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "arriving at Valognes; fighting 4th Division and 82nd Airborne",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0067",
+    "conflict_group_id": "G004",
+    "claim_status": "alternate",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Cotentin sector (corps HQ location not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "taking command of corps under dispute (10 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5213,
+     49.0342
+    ]
+   },
+   "properties": {
+    "claim_id": "C0068",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-06-10",
+    "location_name": "La Caine (Panzer Group West HQ)",
+    "location_represents": "headquarters",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "headquarters attacked by RAF; counterattack cancelled",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0069",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-10",
+    "location_name": "Orne bridgehead (Bréville-Ranville area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defending Orne bridgehead and expanding it east",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C0070",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-10",
+    "location_name": "Tilly-sur-Seulles",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "checked at Tilly-sur-Seulles by Panzer Lehr",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C0071",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Tilly-sur-Seulles",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking Tilly-sur-Seulles; checked by Panzer Lehr",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0072",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-10",
+    "location_name": "Carentan",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "forcing the causeway into Carentan",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Battle of Carentan",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8917,
+     49.1833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0073",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Forêt de Cerisy",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing to objectives west and south of Forêt de Cerisy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0074",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-030D",
+    "unit_name": "30th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Omaha Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "landing at Omaha Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3783,
+     49.4883
+    ]
+   },
+   "properties": {
+    "claim_id": "C0075",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-10",
+    "location_name": "Montebourg Station",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "capturing Montebourg Station to support 4th Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4089,
+     49.4217
+    ]
+   },
+   "properties": {
+    "claim_id": "C0076",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "West of the Merderet (Gourbesville area)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking west of the Merderet; attack going badly",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1764,
+     49.4181
+    ]
+   },
+   "properties": {
+    "claim_id": "C0077",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Utah Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "landing at Utah Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8917,
+     49.1833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0078",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-10",
+    "location_name": "Forêt de Cerisy / Caumont gap sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking toward Saint-Lô with three divisions",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5436,
+     49.1958
+    ]
+   },
+   "properties": {
+    "claim_id": "C0079",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-11",
+    "location_name": "Le Mesnil-Patry",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking Le Mesnil-Patry; costly failure",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0080",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-11",
+    "location_name": "Bréville-les-Monts",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking Bréville; repulsed with heavy casualties",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.165,
+     49.1269
+    ]
+   },
+   "properties": {
+    "claim_id": "C0081",
+    "conflict_group_id": "G004",
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-12",
+    "location_name": "Hébécrevon (near Saint-Lô)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "commander killed by air attack; Fahrmbacher takes over",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0082",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-12",
+    "location_name": "Orne bridgehead (east of Caen)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking from Orne bridgehead; held up by 21st Panzer",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C0083",
+    "conflict_group_id": "G011",
+    "claim_status": "alternate",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-12",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing at Gold Beach (12 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0084",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-12",
+    "location_name": "Orne bridgehead / east of Caen",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking from Orne bridgehead; held by 21st Panzer",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0085",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-12",
+    "location_name": "Carentan",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "capturing Carentan after German withdrawal",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Battle of Carentan",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C0086",
+    "conflict_group_id": "G008",
+    "claim_status": "alternate",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-12",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "taking part of Caumont (12 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1764,
+     49.4181
+    ]
+   },
+   "properties": {
+    "claim_id": "C0087",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-12",
+    "location_name": "Utah Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "landing at Utah Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0088",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-12",
+    "location_name": "Carentan",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "holding Carentan and repulsing 17th SS counterattack",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0089",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-13",
+    "location_name": "Carentan / Manoir de Donville (Méautis)",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking toward Carentan; repulsed",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Battle of Bloody Gulch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0090",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Orne bridgehead east bank (Bréville area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "opposing 51st Highland Division in Orne bridgehead",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "reduced"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7675,
+     49.0669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0091",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Cahagnes",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking between Cahagnes and Villers-Bocage",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.65611,
+     49.08056
+    ]
+   },
+   "properties": {
+    "claim_id": "C0092",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Villers-Bocage",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "engaged with 22nd Armoured Brigade at Villers-Bocage",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7675,
+     49.0669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0093",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Cahagnes - Villers-Bocage axis",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking between Cahagnes and Villers-Bocage",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0094",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Juno Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing in the beachhead",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C0095",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing at Gold Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.65611,
+     49.08056
+    ]
+   },
+   "properties": {
+    "claim_id": "C0096",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Villers-Bocage",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "ambushed at Villers-Bocage; withdrawing to brigade box",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.65611,
+     49.08056
+    ]
+   },
+   "properties": {
+    "claim_id": "C0097",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "Villers-Bocage",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing via Caumont gap; ambushed at Villers-Bocage",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0098",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-13",
+    "location_name": "Carentan / Manoir de Donville (Meautis)",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "repulsing 17th SS counterattack at Carentan",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Battle of Bloody Gulch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C0099",
+    "conflict_group_id": "G008",
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "holding Caumont on the V Corps left",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0100",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Carentan / Vire crossing (Auville-sur-le-Vey)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "reinforcing Vire bridgehead; task force crossing the Vire to move south",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8917,
+     49.1833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0101",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "Elle River south of Foret de Cerisy",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing south of the Elle River",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.36,
+     49.3089
+    ]
+   },
+   "properties": {
+    "claim_id": "C0102",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-13",
+    "location_name": "Baupte",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "capturing Baupte after crossing the Douve",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4089,
+     49.4217
+    ]
+   },
+   "properties": {
+    "claim_id": "C0103",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "West of the Merderet (Gourbesville area)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "commander relieved and replaced; division attacking west of Merderet",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C0104",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "Caumont (left of First Army line)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "halting attack toward Saint-Lô; holding Caumont-Carentan line",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1008,
+     49.3186
+    ]
+   },
+   "properties": {
+    "claim_id": "C0105",
+    "conflict_group_id": "G009",
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "location_name": "Isigny / Vire–Elle sector (corps HQ site not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "becoming operational with 30th Division attached",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0212",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-06-13",
+    "location_name": "Carentan (counterattack southwest of the town)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking southwest from Carentan; repelling 17th SS attack",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Battle of Bloody Gulch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0106",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Cotentin sector (corps HQ location not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "defending Cotentin; reporting US attack cannot be held",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0107",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Landed Normandy beachhead (beach unverified; point = Juno Beach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "landing",
+    "current_activity": "landing in the beachhead",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C0108",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Lingeves / Tilly-sur-Seulles sector (point = Tilly)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking toward Lingèvres and Verrières against Panzer Lehr",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0109",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Orne bridgehead east bank (Bréville area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "taking over southern Orne bridgehead from 6th Airborne",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1,
+     49.2864
+    ]
+   },
+   "properties": {
+    "claim_id": "C0110",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-14",
+    "location_name": "Orne-Dives bridgehead (point = Dives-sur-Mer)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "holding Orne-Dives area until relieved by 51st Highland",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C0111",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-14",
+    "location_name": "Brigade box west of Villers-Bocage (Hill 174 area)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawing to brigade box near Hill 174",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Perch",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0586,
+     49.1575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0112",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Elle River / Villiers-Fossard sector",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "transferring to XIX Corps; holding Elle River flank",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5308,
+     49.3872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0113",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Douve line, Sainte-Colombe / Saint-Sauveur-le-Vicomte area",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "taking over westward attack toward Saint-Sauveur-le-Vicomte",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cutting the Cotentin",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5308,
+     49.3872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0114",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Douve River line / St-Sauveur-le-Vicomte axis (representative)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking west toward Saint-Sauveur-le-Vicomte",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cutting the Cotentin",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1008,
+     49.3186
+    ]
+   },
+   "properties": {
+    "claim_id": "C0115",
+    "conflict_group_id": "G009",
+    "claim_status": "alternate",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "location_name": "Isigny / Vire–Elle sector (corps HQ site not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "becoming operational (14 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0116",
+    "conflict_group_id": "G003",
+    "claim_status": "disputed",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "location_name": "Cotentin sector (corps HQ location not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Choltitz replacing Fahrmbacher (15 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0117",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-15",
+    "location_name": "Carentan",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "assigned to VIII Corps in a defensive role",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.075,
+     49.214
+    ]
+   },
+   "properties": {
+    "claim_id": "C0118",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-030D",
+    "unit_name": "30th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "location_name": "Vire / Elle front near Airel (representative)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "making limited-objective attacks along Vire-Taute front",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "location_name": "Southern front, First Army zone (Saint-Lô sector, representative point)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "holding four-corps line from Cotentin to Caumont",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.247,
+     49.304
+    ]
+   },
+   "properties": {
+    "claim_id": "C0120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "location_name": "West of Carentan (Cotentin defensive line)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "organising defensive positions across the Cotentin",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0586,
+     49.1575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0121",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "location_name": "Elle River / Villiers-Fossard sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "making limited-objective attacks toward Saint-Lô",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0586,
+     49.1575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0122",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-BOEHM",
+    "unit_name": "Kampfgruppe Boehm",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-06-16",
+    "location_name": "Villiers-Fossard",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "arriving and fighting in Villiers-Fossard salient",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0123",
+    "conflict_group_id": "G003",
+    "claim_status": "disputed",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-16",
+    "location_name": "Cotentin sector (corps HQ location not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Choltitz replacing Fahrmbacher (16 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5308,
+     49.3872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0124",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-16",
+    "location_name": "Saint-Sauveur-le-Vicomte",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "capturing Saint-Sauveur-le-Vicomte on the Douve",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cutting the Cotentin",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4089,
+     49.4217
+    ]
+   },
+   "properties": {
+    "claim_id": "C0125",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-16",
+    "location_name": "Gourbesville / Pont-l-Abbe area (point = Gourbesville)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "capturing Gourbesville and Pont-l'Abbé",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5411,
+     49.2908
+    ]
+   },
+   "properties": {
+    "claim_id": "C0126",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-243D",
+    "unit_name": "243rd Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "location_name": "Cotentin west (place of death not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "defending Cotentin west; commander Hellmich killed",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0586,
+     49.1575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0127",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "location_name": "Villiers-Fossard",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "reduced to a Kampfgruppe; defending Villiers-Fossard",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "heavily_depleted"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0128",
+    "conflict_group_id": "G003",
+    "claim_status": "disputed",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "location_name": "Cotentin sector (corps HQ location not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Fahrmbacher relieved by Rommel (c. 17 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4025,
+     49.4353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0129",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "location_name": "Margival (Wolfsschlucht II, 16-17 June meeting)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "meeting Hitler at Margival; ordered to hold positions",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0586,
+     49.1575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0130",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "location_name": "Villiers-Fossard",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking in Villiers-Fossard salient",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5411,
+     49.2908
+    ]
+   },
+   "properties": {
+    "claim_id": "C0131",
+    "conflict_group_id": "G007",
+    "claim_status": "disputed",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-17",
+    "location_name": "Douve bridgehead south of Pont-l-Abbe (toward La Haye-du-Puits)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking south of Pont-l'Abbé to form bridgehead",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6124,
+     49.4179
+    ]
+   },
+   "properties": {
+    "claim_id": "C0132",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "location_name": "Saint-Jacques-de-Néhou",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawing south; column attacked, commander mortally wounded",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "heavily_depleted"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C0133",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "location_name": "Tilly-sur-Seulles",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "re-entering and consolidating Tilly-sur-Seulles",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0134",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-083D",
+    "unit_name": "83rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "location_name": "Omaha Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "landing at Omaha Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.755,
+     49.381
+    ]
+   },
+   "properties": {
+    "claim_id": "C0135",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "location_name": "Barneville-sur-Mer",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "reaching Barneville-sur-Mer; isolating Cherbourg garrison",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cutting the Cotentin",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0136",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "location_name": "Front before Saint-Lô (representative point)",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "on the defensive before Saint-Lô",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.755,
+     49.381
+    ]
+   },
+   "properties": {
+    "claim_id": "C0137",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "location_name": "Barneville-sur-Mer",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "sealing off Cherbourg garrison at Barneville-sur-Mer",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cutting the Cotentin",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6681,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0138",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "location_name": "Saint-Lô-d'Ourville",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "capturing Ollande bridge to withdraw south",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "heavily_depleted"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3783,
+     49.4883
+    ]
+   },
+   "properties": {
+    "claim_id": "C0139",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "location_name": "Montebourg-Valognes axis",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "advancing north toward Cherbourg",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3783,
+     49.4883
+    ]
+   },
+   "properties": {
+    "claim_id": "C0140",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "location_name": "Central Cotentin axis, north of Valognes (representative)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing north toward Cherbourg",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4353,
+     49.3772
+    ]
+   },
+   "properties": {
+    "claim_id": "C0141",
+    "conflict_group_id": "G007",
+    "claim_status": "disputed",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-06-19",
+    "location_name": "Pont-l'Abbe (Douve bridgehead, Etienville)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "establishing Douve bridgehead south of Pont-l'Abbé (19 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6681,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0142",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "location_name": "Saint-Lô-d'Ourville",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieving 47th Infantry; passing to VIII Corps",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.47,
+     49.52
+    ]
+   },
+   "properties": {
+    "claim_id": "C0143",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "location_name": "Valognes–Montebourg axis (representative of corps advance)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking north toward Cherbourg on a broad front",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5411,
+     49.2908
+    ]
+   },
+   "properties": {
+    "claim_id": "C0144",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "location_name": "Southern Cotentin front (La Haye-du-Puits approach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "taking control of 90th Division and 82nd Airborne",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0145",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-709D",
+    "unit_name": "709th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-20",
+    "location_name": "Cherbourg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawing into and reorganising Cherbourg defences",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8402,
+     49.2709
+    ]
+   },
+   "properties": {
+    "claim_id": "C0146",
+    "conflict_group_id": "G006",
+    "claim_status": "disputed",
+    "unit_id": "UK-AG-021G",
+    "unit_name": "21st Army Group",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-22",
+    "location_name": "Blay",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "moving tactical HQ from Creullet to Blay (22 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0147",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-22",
+    "location_name": "Cherbourg outer defences (representative)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "assaulting the Cherbourg defensive ring",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0148",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-VONLUCK",
+    "unit_name": "Kampfgruppe von Luck",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-06-23",
+    "location_name": "Orne bridgehead east bank (Bréville area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking Sainte-Honorine; failed to retake village",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8402,
+     49.2709
+    ]
+   },
+   "properties": {
+    "claim_id": "C0149",
+    "conflict_group_id": "G006",
+    "claim_status": "disputed",
+    "unit_id": "UK-AG-021G",
+    "unit_name": "21st Army Group",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-23",
+    "location_name": "Blay",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "moving tactical HQ from Creullet to Blay (23 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0150",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-23",
+    "location_name": "Sainte-Honorine area, east of the Orne (point = bridgehead centre)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking and holding Sainte-Honorine-la-Chardronette",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0151",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-23",
+    "location_name": "Orne bridgehead east bank (Bréville area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "pinning 21st Panzer east of the Orne before Epsom",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     49.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C0152",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-23",
+    "location_name": "Omaha Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "landing",
+    "current_activity": "landing at Omaha Beach",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5775,
+     49.6417
+    ]
+   },
+   "properties": {
+    "claim_id": "C0153",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-23",
+    "location_name": "Eastern approaches to Cherbourg (Tourlaville)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking Cherbourg defences from the east toward Tourlaville",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0154",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-24",
+    "location_name": "Juno Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "landing; concentrating for Epsom",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5786,
+     49.1711
+    ]
+   },
+   "properties": {
+    "claim_id": "C0155",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-25",
+    "location_name": "Fontenay-le-Pesnel",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking in Operation Martlet; Tessel Wood taken",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Martlet",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5786,
+     49.1711
+    ]
+   },
+   "properties": {
+    "claim_id": "C0156",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-25",
+    "location_name": "Fontenay-le-Pesnel",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "launching Operation Martlet against Panzer Lehr and 12th SS",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Martlet",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6448,
+     49.6255
+    ]
+   },
+   "properties": {
+    "claim_id": "C0157",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-25",
+    "location_name": "Octeville (Cherbourg)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "fighting in Cherbourg south-west suburbs",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0158",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-26",
+    "location_name": "Cheux",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "engaged with 15th Scottish and 11th Armoured near Cheux",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "reduced"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0159",
+    "conflict_group_id": "G002",
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-709D",
+    "unit_name": "709th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "location_name": "Cherbourg",
+    "location_represents": "main_body",
+    "precision_km": 1,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "commanding Cherbourg defence until captured",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5786,
+     49.1711
+    ]
+   },
+   "properties": {
+    "claim_id": "C0160",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-26",
+    "location_name": "Fontenay-le-Pesnel / Rauray sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "committing remaining 12th SS tanks against XXX Corps",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Martlet; Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0161",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-26",
+    "location_name": "Assembly west/south of Caen (Epsom front; point = Cheux)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "ordered to assist; assembling west of Caen",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0162",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-26",
+    "location_name": "Cheux",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "reaching ridge south of Cheux; engaged by 12th SS",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0163",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "location_name": "Cheux",
+    "location_represents": "front_line_point",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "leading Epsom and fighting at Cheux",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0164",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-031B",
+    "unit_name": "31st Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-26",
+    "location_name": "Cheux",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "supporting 15th Division in Epsom",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0165",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-004B",
+    "unit_name": "4th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-26",
+    "location_name": "Cheux",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "attached to 11th Armoured Division for Epsom",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0166",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARMY-002A",
+    "unit_name": "Second Army",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "location_name": "Epsom attack area (point = Cheux; army HQ not verified)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "conducting Epsom with VIII Corps; XXX Corps on flank",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0167",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "location_name": "Epsom attack area (point = Cheux, first-day objective)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "launching Operation Epsom west of Caen",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6137,
+     49.6306
+    ]
+   },
+   "properties": {
+    "claim_id": "C0168",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "location_name": "Fort du Roule (Cherbourg)",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "capturing Fort du Roule",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6137,
+     49.6306
+    ]
+   },
+   "properties": {
+    "claim_id": "C0169",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "location_name": "Fort du Roule (Cherbourg)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "capturing Fort du Roule; organised defence ended",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5607,
+     49.152
+    ]
+   },
+   "properties": {
+    "claim_id": "C0170",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-27",
+    "location_name": "Rauray",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "losing Rauray to 49th Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Martlet; Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0171",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-002PZ",
+    "unit_name": "Kampfgruppe (tank battalion) 2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-06-27",
+    "location_name": "Cheux",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking 43rd Division at Cheux with Panthers",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5786,
+     49.1711
+    ]
+   },
+   "properties": {
+    "claim_id": "C0172",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-WEIDINGER",
+    "unit_name": "Kampfgruppe Weidinger",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-06-27",
+    "location_name": "Panzer Lehr sector (battle group arrival)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "arriving at the front; under Panzer Lehr command",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5786,
+     49.1711
+    ]
+   },
+   "properties": {
+    "claim_id": "C0173",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-27",
+    "location_name": "Tilly-Fontenay sector (point = Fontenay-le-Pesnel)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding junction with 12th SS against Martlet",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "reduced"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C0174",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-27",
+    "location_name": "Mondrainville (Odon bridge area)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "seizing Odon bridge; reinforcing bridgehead",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0175",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Cheux",
+    "location_represents": "main_body",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "relieving Scottish infantry at Cheux; repulsing Panther attack",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5607,
+     49.152
+    ]
+   },
+   "properties": {
+    "claim_id": "C0176",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Rauray",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "capturing Rauray from 12th SS",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Martlet",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0177",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Normandy beachhead (beach unverified; point = Juno Beach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "arriving in Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4153,
+     49.3353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0178",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-059D",
+    "unit_name": "59th (Staffordshire) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Normandy beachhead (beach unverified; point = Juno Beach)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "arriving in Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C0179",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Mondrainville (Odon bridge area)",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "forming bridgehead across the Odon",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5607,
+     49.152
+    ]
+   },
+   "properties": {
+    "claim_id": "C0180",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Rauray",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "capturing Rauray with 49th Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Martlet",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0181",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Cherbourg",
+    "location_represents": "objective",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "capturing Cherbourg and its port",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0182",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "location_name": "Cherbourg",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "accepting Cherbourg surrender; resistance ceasing",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4825,
+     49.1489
+    ]
+   },
+   "properties": {
+    "claim_id": "C0183",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-FREY",
+    "unit_name": "Kampfgruppe Frey",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-06-28",
+    "location_name": "Mouen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking north of the Odon; gaining Mouen",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4825,
+     49.1489
+    ]
+   },
+   "properties": {
+    "claim_id": "C0184",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-28",
+    "location_name": "Mouen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "supporting Kampfgruppe Frey north of the Odon",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C0185",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-WEIDINGER",
+    "unit_name": "Kampfgruppe Weidinger",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-06-28",
+    "location_name": "Mondrainville (Odon bridge area)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking to retake Grainville and Mondrainville",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0186",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-28",
+    "location_name": "Epsom front (assembly area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "changing commanders; unable to counterattack before 29 June",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0187",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-06-28",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "taking responsibility for Anglo-Canadian front",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1984,
+     48.0077
+    ]
+   },
+   "properties": {
+    "claim_id": "C0188",
+    "conflict_group_id": "G001",
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-28",
+    "location_name": "Le Mans (7th Army HQ)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "commander Dollmann died; Hausser appointed",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4605,
+     49.1236
+    ]
+   },
+   "properties": {
+    "claim_id": "C0189",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-28",
+    "location_name": "Hill 112 (Odon salient)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking Hill 112; fighting 12th SS counterattacks",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "reduced"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0190",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-28",
+    "location_name": "Grainville-sur-Odon",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "securing Grainville-sur-Odon and Gavrus",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C0191",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-28",
+    "location_name": "Cheux sector (attached to 43rd Division)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "landing; 32nd Brigade attached to 43rd Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0192",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-28",
+    "location_name": "Cherbourg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "securing Cherbourg after its fall",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5411,
+     49.2908
+    ]
+   },
+   "properties": {
+    "claim_id": "C0193",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-28",
+    "location_name": "Moving south from Cherbourg to VIII Corps zone (representative)",
+    "location_represents": "approach_route",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "moving south to reorganise under VIII Corps",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0194",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-28",
+    "location_name": "Southern front, First Army zone (representative point)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "shifting weight south toward Saint-Lô front",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5411,
+     49.2908
+    ]
+   },
+   "properties": {
+    "claim_id": "C0195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-28",
+    "location_name": "Southern Cotentin front (representative)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "receiving 79th Division for drive south",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4605,
+     49.1236
+    ]
+   },
+   "properties": {
+    "claim_id": "C0196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-29",
+    "location_name": "Hill 112 / Odon salient",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking British salient on Hill 112",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-243D",
+    "unit_name": "243rd Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Cherbourg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "destruction",
+    "current_activity": "surrendering in the Cherbourg fortress; destroyed",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "destroyed"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-WEIDINGER",
+    "unit_name": "Kampfgruppe Weidinger",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-06-29",
+    "location_name": "Grainville-sur-Odon",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "transferring to II SS Panzer Corps control",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-709D",
+    "unit_name": "709th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Cherbourg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "destruction",
+    "current_activity": "destroyed with the fall of Cherbourg",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "destroyed"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C0200",
+    "conflict_group_id": "G002",
+    "claim_status": "alternate",
+    "unit_id": "GER-INF-709D",
+    "unit_name": "709th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Cherbourg",
+    "location_represents": "main_body",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "surrendering Cherbourg fortress (29 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-29",
+    "location_name": "Grainville-sur-Odon",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking Odon salient and Grainville-sur-Odon",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6303,
+     49.0822
+    ]
+   },
+   "properties": {
+    "claim_id": "C0202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "La Roche-Guyon (Army Group B HQ)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "requesting 7th Army withdrawal toward the Seine",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-29",
+    "location_name": "West flank of the Odon salient (Grainville-sur-Odon / Le Valtru)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "counterattacking west flank of British salient",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1984,
+     48.0077
+    ]
+   },
+   "properties": {
+    "claim_id": "C0204",
+    "conflict_group_id": "G001",
+    "claim_status": "alternate",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Le Mans (7th Army HQ; Dollmann died there per Wikipedia)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "commander Dollmann died (29 June claim)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C0205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-29",
+    "location_name": "Odon bridgehead (point = Mondrainville)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawing 29th Armoured Brigade north of the Odon",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C0206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Mondrainville (Odon bridge area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "reinforcing and tightening Odon bridgehead",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0586,
+     49.1575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-29",
+    "location_name": "Villiers-Fossard",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking Villiers-Fossard salient",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.8333,
+     49.6667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Cap de la Hague",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacking up Cap de la Hague",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.8333,
+     49.6667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0209",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "location_name": "Cherbourg harbour forts / Cap de la Hague",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking Cap de la Hague; last harbour forts surrendering",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cherbourg",
+    "strength_status": "unknown"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0210",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-30",
+    "location_name": "Grainville-sur-Odon / Odon salient",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "containing German counterattacks as Epsom ended",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown"
+   }
+  }
+ ]
+}

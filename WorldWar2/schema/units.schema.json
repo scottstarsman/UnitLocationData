@@ -1,0 +1,86 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "units",
+  "title": "WWII units",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "unit_id",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "description": "Stable unit key. Primary key.",
+      "constraints": {
+        "required": true,
+        "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
+      }
+    },
+    {
+      "name": "unit_name",
+      "type": "string",
+      "description": "Unit name only.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nationality",
+      "type": "string",
+      "description": "Nationality (US, UK, Canada, Germany ...).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "nationality"
+    },
+    {
+      "name": "echelon",
+      "type": "string",
+      "description": "Organisational level (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "echelon"
+    },
+    {
+      "name": "branch",
+      "type": "string",
+      "description": "Service or arm (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "branch"
+    },
+    {
+      "name": "theater",
+      "type": "string",
+      "description": "Primary theater of the unit (single value; claim rows carry their own theater).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "theater"
+    },
+    {
+      "name": "parent_unit_id",
+      "type": "string",
+      "description": "Fixed parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use claims.parent_formation for time-dependent parents.",
+      "constraints": {
+        "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
+      }
+    },
+    {
+      "name": "parent_only",
+      "type": "boolean",
+      "description": "true if the unit has no claim rows of its own (it exists only so that other rows can point to it); false if data/claims/<nationality>/<unit_id>.csv exists.",
+      "constraints": {
+        "required": true
+      },
+      "trueValues": [
+        "true"
+      ],
+      "falseValues": [
+        "false"
+      ]
+    }
+  ]
+}

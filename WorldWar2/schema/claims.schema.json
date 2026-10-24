@@ -1,0 +1,285 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "claims",
+  "title": "WWII unit location claims",
+  "description": "One row per claim. Same header in every file under data/claims/. Vocabulary-backed fields refer to keys in schema/vocabularies.json.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "claim_id",
+  "fields": [
+    {
+      "name": "claim_id",
+      "type": "string",
+      "description": "Unique id of the claim, C0001 onward. One row is one claim (\"this unit was here on this date\"). Never reused.",
+      "constraints": {
+        "required": true,
+        "pattern": "^C\\d{4,}$"
+      }
+    },
+    {
+      "name": "conflict_group_id",
+      "type": "string",
+      "description": "Shared by rows that make competing claims about the same unit and event (G001...). Blank if no known conflict.",
+      "constraints": {
+        "pattern": "^G\\d{3,}$"
+      }
+    },
+    {
+      "name": "claim_status",
+      "type": "string",
+      "description": "preferred, alternate or disputed (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "claim_status"
+    },
+    {
+      "name": "unit_id",
+      "type": "string",
+      "description": "Stable unit key, NATION-TYPE-NUMBER+ECHELONLETTER (for example US-INF-029D). Must exist in data/units.csv and match the file name.",
+      "constraints": {
+        "required": true,
+        "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
+      }
+    },
+    {
+      "name": "date",
+      "type": "date",
+      "description": "Date of the claim, YYYY-MM-DD.",
+      "constraints": {
+        "required": true
+      },
+      "format": "%Y-%m-%d"
+    },
+    {
+      "name": "theater",
+      "type": "string",
+      "description": "Primary theater of the claim (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "theater"
+    },
+    {
+      "name": "nationality",
+      "type": "string",
+      "description": "Nationality of the unit: US, UK, Canada, Germany (extend as needed). Matches the data/claims/<nationality>/ folder in lowercase.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "nationality"
+    },
+    {
+      "name": "unit_name",
+      "type": "string",
+      "description": "Unit name only, for example \"29th Infantry Division\".",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "echelon",
+      "type": "string",
+      "description": "Organisational level (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "echelon"
+    },
+    {
+      "name": "branch",
+      "type": "string",
+      "description": "Service or arm (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "branch"
+    },
+    {
+      "name": "parent_formation",
+      "type": "string",
+      "description": "Formation the unit was subordinate or attached to on that date, \"Name (unit_id)\" when the parent is in units.csv; several parents are separated by \"; \" (\"; attached to ...\" marks an attachment). \"unknown\" if not verified.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "commander",
+      "type": "string",
+      "description": "Commander on that date, rank and name as given by sources; \"unknown\" if not verified.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "latitude",
+      "type": "number",
+      "description": "Decimal degrees WGS84.",
+      "constraints": {
+        "required": true,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "longitude",
+      "type": "number",
+      "description": "Decimal degrees WGS84.",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "location_name",
+      "type": "string",
+      "description": "Name of the place the coordinate refers to.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "location_represents",
+      "type": "string",
+      "description": "What the point stands for (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "location_represents"
+    },
+    {
+      "name": "precision_km",
+      "type": "number",
+      "description": "Judgment estimate of the radius in km within which the unit probably was (banded).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "precision_km"
+    },
+    {
+      "name": "operation_name",
+      "type": "string",
+      "description": "Parent operation, for example Overlord.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sub_operation_name",
+      "type": "string",
+      "description": "Sub-operation(s), semicolon-separated (Neptune, Epsom, Perch, ...). Blank for plain parent-operation rows."
+    },
+    {
+      "name": "composing_units",
+      "type": "string",
+      "description": "Subordinate units, listed when first given or when they change; blank means unchanged from the unit's previous row; \"unknown\" means no data."
+    },
+    {
+      "name": "established",
+      "type": "boolean",
+      "description": "True on the row where the source says the unit was formed.",
+      "constraints": {
+        "required": true
+      },
+      "trueValues": [
+        "true"
+      ],
+      "falseValues": [
+        "false"
+      ]
+    },
+    {
+      "name": "disestablished",
+      "type": "boolean",
+      "description": "True on the row where the source says the unit was disbanded.",
+      "constraints": {
+        "required": true
+      },
+      "trueValues": [
+        "true"
+      ],
+      "falseValues": [
+        "false"
+      ]
+    },
+    {
+      "name": "destroyed",
+      "type": "boolean",
+      "description": "True on the row where the source says the unit was destroyed.",
+      "constraints": {
+        "required": true
+      },
+      "trueValues": [
+        "true"
+      ],
+      "falseValues": [
+        "false"
+      ]
+    },
+    {
+      "name": "confidence",
+      "type": "number",
+      "description": "Numeric 0-1 confidence by rubric (see vocabulary).",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 1
+      },
+      "vocabulary": "confidence"
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "description": "URLs separated by \" | \" ending with the coordinate source note. Every row needs at least one URL.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "event_type",
+      "type": "string",
+      "description": "One primary event type (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "event_type"
+    },
+    {
+      "name": "current_activity",
+      "type": "string",
+      "description": "Short phrase saying what the unit is doing on that date at that place; lower-case, free text.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "engaged_with",
+      "type": "string",
+      "description": "Enemy units fought on that date, nationality first, separated by \"; \". Blank = no combat that day; \"unknown\" = combat with no opponent identified."
+    },
+    {
+      "name": "strength_status",
+      "type": "string",
+      "description": "Qualitative strength (see vocabulary).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "strength_status"
+    },
+    {
+      "name": "strength_json",
+      "type": "string",
+      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"source\",\"note\"}. See docs/methodology.md. Blank where no source gives figures."
+    },
+    {
+      "name": "notes",
+      "type": "string",
+      "description": "Free text: what the source says, caveats, source conflicts, change history.",
+      "constraints": {
+        "required": true
+      }
+    }
+  ]
+}

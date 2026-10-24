@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "WWII Unit Locations: a claim-based dataset of unit positions (proof of concept, Western Front, June 1944)"
+type: dataset
+version: 0.1.0
+date-released: "2026-10-24"
+authors:
+  - family-names: "<Your Surname>"
+    given-names: "<Your Given Name>"
+license: CC-BY-SA-4.0
+# repository-code: "<add the repository URL when it exists>"
+abstract: "Event-based, sourced claims about where World War II units were on given dates, with coordinates, precision, confidence, conflict handling and optional strength figures. The proof of concept covers the Western Front, 6-30 June 1944."
+keywords:
+  - World War II
+  - military history
+  - order of battle
+  - Normandy
+  - geospatial

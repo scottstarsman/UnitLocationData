@@ -1,0 +1,29 @@
+name: validate
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate claims and units
+        run: python scripts/validate.py
+      - name: Build combined outputs
+        run: python scripts/build.py
+      - name: Check build/ is up to date
+        run: |
+          python scripts/build.py --check
+          if [ -n "$(git status --porcelain -- build)" ]; then
+            echo "build/ differs from the committed files; run 'python scripts/build.py' and commit the result"
+            git status --porcelain -- build
+            git diff --stat -- build
+            exit 1
+          fi

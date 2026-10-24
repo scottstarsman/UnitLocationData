@@ -1,0 +1,142 @@
+{
+  "_comment": "Controlled vocabularies for the claims and units tables. scripts/validate.py enforces these. To add a value, edit this file and schema/README.md in the same pull request.",
+  "theater": {
+    "description": "Primary theater of operations the claim belongs to. One value per claim row; a unit's primary theater is recorded once in data/units.csv.",
+    "values": {
+      "western_europe": "Northwest Europe and France, from the Normandy landings through the end of the war in the West (also Netherlands, Belgium, Luxembourg, Germany west of the Elbe).",
+      "mediterranean": "Italy, Sicily, southern France (Dragoon), the Balkans and Greece, and the Mediterranean Sea.",
+      "north_africa": "Libya, Egypt, Tunisia, Algeria and Morocco campaigns (1940-1943).",
+      "eastern_front": "Germany/Axis versus the USSR (Soviet Union, Poland, Baltic, Romania, Hungary, Finland).",
+      "pacific": "Pacific Ocean areas and Southwest Pacific, including Japan, the Philippines and the Dutch East Indies.",
+      "cbi": "China-Burma-India theater (China, Burma, India, Indochina).",
+      "atlantic": "Atlantic Ocean, Arctic convoys and other naval or air units whose operations are mainly at sea.",
+      "other": "Anything that does not fit above (for example East Africa, Middle East, home-front units). Explain in notes."
+    }
+  },
+  "nationality": {
+    "description": "Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit.",
+    "values": {
+      "US": "United States (folder us).",
+      "UK": "United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).",
+      "Canada": "Canada (folder canada).",
+      "Germany": "Germany, including Waffen-SS and Luftwaffe ground formations (folder germany)."
+    }
+  },
+  "claim_status": {
+    "description": "How a row relates to competing claims. Rows with a conflict_group_id must use preferred, alternate or disputed as below; rows with no conflict are always preferred.",
+    "values": {
+      "preferred": "A non-conflicted claim, or the best-supported claim in a conflict group.",
+      "alternate": "A competing claim judged less likely than the preferred one in the same conflict group.",
+      "disputed": "One of several competing claims where no source is judged better; a group with no preferred row has all rows disputed."
+    }
+  },
+  "echelon": {
+    "description": "Organisational level of the unit.",
+    "values": {
+      "army_group": "Army group or equivalent theater command (for example 21st Army Group, Army Group B).",
+      "army": "Army or panzer group.",
+      "corps": "Corps.",
+      "division": "Division.",
+      "brigade": "Independent brigade.",
+      "regiment/battle_group": "Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command.",
+      "other": "Higher or special headquarters that fit no level above (for example OB West)."
+    }
+  },
+  "branch": {
+    "description": "Service or arm, assigned from the unit name.",
+    "values": {
+      "Army": "Regular army (including infantry and static divisions).",
+      "Armoured": "Armoured and panzer formations.",
+      "Airborne": "Allied airborne formations.",
+      "Waffen-SS": "Waffen-SS formations.",
+      "Luftwaffe": "Luftwaffe ground formations (for example Fallschirmjaeger)."
+    }
+  },
+  "location_represents": {
+    "description": "What the latitude/longitude stands for.",
+    "values": {
+      "headquarters": "The unit's headquarters.",
+      "main_body": "Where the main body of the unit was.",
+      "sector_center": "The centre of the sector or landing zone the unit held or used.",
+      "front_line_point": "A representative point on the unit's front line or point of contact.",
+      "objective": "The place the unit captured, attacked or defended.",
+      "approach_route": "A point on the unit's march or approach route."
+    }
+  },
+  "precision_km": {
+    "description": "Judgment estimate, in kilometres, of the radius within which the unit (or its main body) probably was. Not a surveyed error. Banded values.",
+    "values": {
+      "1": "Exact named place tied to the date; division or smaller.",
+      "3": "Village-scale point; manual override used once in the proof of concept (C0034).",
+      "5": "Named town or village, approximate; or exact for corps and above.",
+      "10": "Sector or beach centre (beaches are 8-10 km wide), or inferred for division or smaller.",
+      "25": "Inferred for corps, or approximate for army and above; approach routes within one region.",
+      "50": "Inferred for army and above, or long approach routes (for example a move from Brittany)."
+    }
+  },
+  "confidence": {
+    "description": "Numeric 0-1 score applied by rule from location quality and source families. Only these four levels are used.",
+    "values": {
+      "0.9": "Exact location and two independent source families agree (Wikipedia, CMH/HyperWar and each other domain count as separate families; several Wikipedia pages count as one).",
+      "0.7": "Exact location with one authoritative source (for example the US Army CMH); or approximate location with two source families.",
+      "0.5": "Exact location with one secondary source (Wikipedia, local-history page); or approximate location with one source family.",
+      "0.3": "Position inferred or a representative point (HQ not tied to the date, unverified beach, front-line representative point), or the date itself is approximate."
+    },
+    "rules": [
+      "Caps for conflicts: the preferred row of a conflict group is at most 0.7; alternate and disputed rows are at most 0.5.",
+      "A manual override is allowed when the date itself is approximate (use 0.3) and must be explained in notes."
+    ]
+  },
+  "event_type": {
+    "description": "One primary event per row.",
+    "values": {
+      "landing": "Seaborne or airborne landing, including D-Day assault landings.",
+      "arrival": "Reaching the front or the beachhead after the landing phase.",
+      "attack": "Offensive action.",
+      "defense": "Defensive action.",
+      "counterattack": "Counterattack.",
+      "relocation": "March or move.",
+      "withdrawal": "Withdrawal or retreat.",
+      "surrender": "Surrender.",
+      "capture": "Taking a named place or position.",
+      "destruction": "Unit destroyed.",
+      "command_change": "Commander or command responsibility changes.",
+      "hq_move": "Headquarters moves.",
+      "regroup": "Assembly, reorganisation, relief in place.",
+      "other": "Headquarters decisions, air attack on a headquarters, units at their station."
+    }
+  },
+  "strength_status": {
+    "description": "Qualitative strength. Default unknown; set only when a source states strength or losses.",
+    "values": {
+      "full": "A source describes the unit as at full strength.",
+      "reduced": "Source states significant losses or reduced combat power.",
+      "heavily_depleted": "Source states the unit was a small fraction of its strength.",
+      "destroyed": "Unit destroyed or ceased to exist as a fighting formation.",
+      "unknown": "No source states the strength."
+    }
+  },
+  "strength_json_basis": {
+    "description": "Meaning of the basis field inside strength_json.",
+    "values": {
+      "reported_actual": "A unit report or operational count relayed by the source (for example working-order tank returns).",
+      "authorized_organization": "Establishment or table-of-organisation strength, not an actual count.",
+      "estimate": "Rounded, approximate or retrospective figure, or a landing tally."
+    }
+  },
+  "strength_json_vehicle_count_type": {
+    "description": "What the numbers in strength_json.vehicles mean.",
+    "values": {
+      "operational": "Vehicles in working order.",
+      "on_hand": "Vehicles on hand, working order not stated.",
+      "unknown": "The source does not say what the count means (for example vehicles committed in one action)."
+    }
+  },
+  "boolean": {
+    "description": "Boolean fields (established, disestablished, destroyed, parent_only) use lowercase text.",
+    "values": {
+      "true": "True.",
+      "false": "False."
+    }
+  }
+}

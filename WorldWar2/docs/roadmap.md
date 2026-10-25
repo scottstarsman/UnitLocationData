@@ -18,7 +18,8 @@ Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims,
 - Composition lists are the standard organisation checked against Wikipedia unit pages, not the exact attachments each day. Not verified: US 2nd and 3rd Armored combat commands, 21st Panzer "Panzer Regiment 22", 79th Armoured and independent brigades (marked `unknown`).
 - `parent_unit_id` and `command_relationships` are time-dependent and some links are only supported in outline (for example I SS Panzer Corps under Seventh Army or Panzer Group West; II SS Panzer Corps on 28-29 June). Where no link was found both are `unknown` (16 rows). Plain parents are recorded as `organic` because the sources do not say whether a corps or army link was a standing one; attachments are marked only where a source says so.
 - `precision_km` and `confidence` are rule-derived (see methodology); they are consistent but not independent measurements.
-- `strength_json` is sparse (21 rows) and rests on secondary sources; no row uses `authorized_organization` yet.
+- `strength_json` is sparse (20 rows) and rests on secondary sources; no row uses `authorized_organization` yet.
+- LXXXIV Corps rows C0106, C0116, C0123 and C0128 (14-17 June) still use an unverified Cotentin placeholder point (49.52,-1.47, 25 km); no source read places the corps headquarters on those dates (CMH only says Rommel visited "LXXXIV Corps headquarters" on 16 June). The same placeholder on C0067 was replaced in the G004 fix (the conflict there was about the handover date, not the place; see `review_changes.md`).
 - Date conflicts between sources are open (Dollmann's death, Schlieben's capture, Choltitz replacing Fahrmbacher, Montgomery's HQ moves, 82nd Airborne at Pont-l'Abbe): see the 11 conflict groups.
 - Wikipedia is a first-pass source; many rows should be re-verified against primary or semi-primary sources.
 

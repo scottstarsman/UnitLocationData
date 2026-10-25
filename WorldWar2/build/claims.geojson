@@ -2083,8 +2083,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -2098,9 +2098,9 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-10",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "location_name": "Saint-Lô (corps HQ per Wikipedia, not tied to 10 June)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "taking command of corps under dispute (10 June claim)",
@@ -2532,10 +2532,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-12",
-    "location_name": "Hébécrevon (near Saint-Lô)",
-    "location_represents": "main_body",
+    "location_name": "Hébécrevon (where Marcks was killed, near Saint-Lô)",
+    "location_represents": "approach_route",
     "precision_km": 5,
-    "confidence": 0.7,
+    "confidence": 0.5,
     "event_type": "command_change",
     "current_activity": "commander killed by air attack; Fahrmbacher takes over",
     "operation_name": "Overlord",

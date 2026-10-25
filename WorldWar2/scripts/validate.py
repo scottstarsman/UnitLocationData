@@ -4,7 +4,8 @@
 Checks: header and field count of every file, field types, booleans, lat/long ranges,
 controlled vocabularies, unique claim_ids across the repository, unit_id matches both the
 file name and data/units.csv, rows sorted by date then claim_id, conflict-group integrity,
-strength_json structure, parent_formation ids resolve, every row has a source URL.
+strength_json structure, parent_unit_id resolves, command_relationships is valid JSON with allowed keys,
+relationship values and resolving unit_ids, every row has a source URL.
 
 Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found)
 """
@@ -127,6 +128,63 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json: needs personnel and/or vehicles')
 
 
+REL_KEYS = {'unit_id', 'name', 'relationship', 'note'}
+
+
+def check_command_relationships(where, row, units, vocabs):
+    """parent_unit_id is a unit id (resolves), blank or 'unknown'; command_relationships is a JSON list."""
+    pid, s = row['parent_unit_id'], row['command_relationships']
+    if pid not in ('', 'unknown'):
+        if pid not in units:
+            err(where, 'parent_unit_id %s not in units.csv' % pid)
+        if pid == row['unit_id']:
+            err(where, 'parent_unit_id is the unit itself')
+    if s in ('', 'unknown'):
+        if pid not in ('', 'unknown'):
+            err(where, 'parent_unit_id %s needs a command_relationships entry for it' % pid)
+        return
+    try:
+        d = json.loads(s)
+    except ValueError as e:
+        err(where, 'command_relationships is not valid JSON or "unknown" (%s)' % e)
+        return
+    if not isinstance(d, list) or not d:
+        err(where, 'command_relationships must be a non-empty JSON list')
+        return
+    ids = []
+    for e in d:
+        if not isinstance(e, dict):
+            err(where, 'command_relationships entries must be objects')
+            continue
+        for k in e:
+            if k not in REL_KEYS:
+                err(where, 'command_relationships: unknown key %r' % k)
+        for k in ('unit_id', 'name', 'relationship'):
+            if k not in e:
+                err(where, 'command_relationships: entry missing %r' % k)
+        uid = e.get('unit_id')
+        if uid is not None:
+            if not isinstance(uid, str) or uid not in units:
+                err(where, 'command_relationships: unit_id %r not in units.csv' % (uid,))
+            elif uid == row['unit_id']:
+                err(where, 'command_relationships: the unit is listed as its own parent')
+            ids.append(uid)
+        if not isinstance(e.get('name'), str) or not e.get('name'):
+            err(where, 'command_relationships: name must be a non-empty string')
+        if e.get('relationship') not in vocabs['relationship']['values']:
+            err(where, 'command_relationships: relationship %r not in vocabulary relationship' % e.get('relationship'))
+        if 'note' in e and not isinstance(e['note'], str):
+            err(where, 'command_relationships: note must be a string')
+    if len(ids) != len(set(ids)):
+        err(where, 'command_relationships lists the same unit_id twice')
+    if pid not in ('', 'unknown') and pid not in ids:
+        err(where, 'parent_unit_id %s is not listed in command_relationships' % pid)
+    u = units.get(row['unit_id'])
+    if u and u['parent_unit_id'] and not any(
+            isinstance(e, dict) and e.get('unit_id') == u['parent_unit_id'] and e.get('relationship') == 'organic' for e in d):
+        err(where, 'units.csv parent_unit_id %s must appear as an organic entry in command_relationships' % u['parent_unit_id'])
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -222,9 +280,7 @@ def main():
             if row['claim_status'] != 'preferred' and not row['conflict_group_id']:
                 err(where, 'claim_status %s requires a conflict_group_id' % row['claim_status'])
             check_strength_json(where, row['strength_json'], vocabs)
-            for pid in re.findall(r'\(([A-Z]{2,4}-[A-Z0-9-]+)\)', row['parent_formation']):
-                if pid not in units:
-                    err(where, 'parent_formation id %s not in units.csv' % pid)
+            check_command_relationships(where, row, units, vocabs)
             row['_where'] = where
             all_rows.append(row)
 

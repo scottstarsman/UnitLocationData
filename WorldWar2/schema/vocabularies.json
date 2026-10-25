@@ -19,7 +19,18 @@
       "US": "United States (folder us).",
       "UK": "United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).",
       "Canada": "Canada (folder canada).",
-      "Germany": "Germany, including Waffen-SS and Luftwaffe ground formations (folder germany)."
+      "Germany": "Germany, including Waffen-SS and Luftwaffe ground formations (folder germany).",
+      "Allied": "Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only parent_only units)."
+    }
+  },
+  "relationship": {
+    "description": "Meaning of the relationship field in each object of command_relationships.",
+    "values": {
+      "organic": "The standing parent: the formation the original source names as the unit's parent without an attachment qualifier, or a battle group's own division. Not a claim that the link was permanent.",
+      "attached": "The unit was attached to this formation on the row's date (the operational parent).",
+      "operational_control": "This formation controlled the unit operationally without it being a standing or attached part of it.",
+      "reserve": "The unit was held in this formation's (or the high command's) reserve.",
+      "unknown": "A formation is named by the source but how it relates to the unit is not stated."
     }
   },
   "claim_status": {

@@ -2,7 +2,7 @@
 
 An open, claim-based dataset of where World War II units were, when, and how sure we are. Each row is one sourced claim: *this unit was at this place on this date*, with coordinates, a precision radius, a confidence score, an event type, what the unit was doing, and the sources. Competing claims are kept as separate rows instead of being averaged away.
 
-**Status: proof of concept.** The dataset currently covers the **Western Front, 6-30 June 1944** (Normandy landings through the fall of Cherbourg and Operation Epsom): 212 claims about 81 units (US, British, Canadian and German), including battle groups (Kampfgruppen) and a combat command. Rows are event-based, not daily: a unit has a row on days when something substantial happened, so its position between rows is unknown. See [docs/roadmap.md](docs/roadmap.md) for known gaps and the scale-up plan.
+**Status: proof of concept.** The dataset currently covers the **Western Front, 6-30 June 1944** (Normandy landings through the fall of Cherbourg and Operation Epsom): 212 claims about 84 units (US, British, Canadian and German), including battle groups (Kampfgruppen) and a combat command. Rows are event-based, not daily: a unit has a row on days when something substantial happened, so its position between rows is unknown. See [docs/roadmap.md](docs/roadmap.md) for known gaps and the scale-up plan.
 
 > **Licensing note (please confirm).** The data licence (CC BY-SA 4.0) and the code licence (MIT) in this repository are *recommendations* chosen by the project owner's assistant, not a final decision. The owner should confirm both, fill in the copyright holder in `LICENSE-CODE` and `CITATION.cff`, and review `docs/sources.md` before publishing. Wikipedia-derived facts are CC BY-SA, which is the main reason for choosing a share-alike data licence.
 
@@ -12,7 +12,7 @@ An open, claim-based dataset of where World War II units were, when, and how sur
 data/claims/<nationality>/<unit_id>.csv   master copy: one file per unit, all claim columns
 data/units.csv                            unit table (one row per unit, including parent-only units)
 schema/                                   machine-readable schema + vocabularies + human-readable README
-scripts/                                  validate.py, build.py, split_from_flat.py (standard library only)
+scripts/                                  validate.py, build.py, split_from_flat.py, migrate_parent_formation.py (standard library only)
 build/                                    GENERATED combined outputs (all_claims.csv, claims.geojson)
 docs/                                     methodology, sources, roadmap
 archive/v5_flat/                          the flat CSVs the per-unit files were first split from
@@ -23,8 +23,8 @@ archive/v5_flat/                          the flat CSVs the per-unit files were 
 
 ## Data model
 
-- **Claim** (a row in `data/claims/...`): `claim_id` (never reused), optional `conflict_group_id`, `claim_status` (preferred / alternate / disputed), `unit_id`, `date`, `theater`, place (`latitude`, `longitude`, `location_name`, `location_represents`, `precision_km`), `event_type` and `current_activity`, `engaged_with`, command (`parent_formation`, `commander`, `composing_units`), `strength_status` and optional `strength_json`, `confidence`, `source`, `notes`. Full column definitions: [schema/README.md](schema/README.md).
-- **Unit** (a row in `data/units.csv`): `unit_id`, `unit_name`, `nationality`, `echelon`, `branch`, `theater` (primary), `parent_unit_id` (fixed parent for battle groups), `parent_only`.
+- **Claim** (a row in `data/claims/...`): `claim_id` (never reused), optional `conflict_group_id`, `claim_status` (preferred / alternate / disputed), `unit_id`, `date`, `theater`, place (`latitude`, `longitude`, `location_name`, `location_represents`, `precision_km`), `event_type` and `current_activity`, `engaged_with`, command (`parent_unit_id` for the operational parent, `command_relationships` as a JSON list with organic, attached, operational-control or reserve links, `commander`, `composing_units`), `strength_status` and optional `strength_json`, `confidence`, `source`, `notes`. Full column definitions: [schema/README.md](schema/README.md).
+- **Unit** (a row in `data/units.csv`): `unit_id`, `unit_name`, `nationality`, `echelon`, `branch`, `theater` (primary), `parent_unit_id` (organic parent of battle groups), `parent_only`.
 - **Conflict group**: claims that disagree about the same unit and event (for example two sources dating a commander's death differently). One may be preferred; the others are alternate or disputed.
 - **theater**: controlled vocabulary (`western_europe`, `mediterranean`, `north_africa`, `eastern_front`, `pacific`, `cbi`, `atlantic`, `other`). All current rows are `western_europe`.
 

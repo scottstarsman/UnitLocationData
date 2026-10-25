@@ -11,7 +11,7 @@ Each row has:
 - **Who**: `unit_id` (stable key, one file per unit), plus `unit_name`, `echelon`, `branch` copied from `data/units.csv`.
 - **When / where**: `date`, `theater`, coordinates, `location_name`, `location_represents` (headquarters, main body, sector centre, front-line point, objective, approach route), `precision_km`.
 - **What**: `event_type` (one of 14 values), `current_activity` (short free-text phrase), `engaged_with` (opponents fought that day).
-- **Command**: `parent_formation` and `commander` on that date (time-dependent), `composing_units` (listed when first given or when it changes).
+- **Command**: `parent_unit_id` (operational parent on that date), `command_relationships` (JSON list of organic, attached, operational-control and reserve links), `commander` on that date (time-dependent), `composing_units` (listed when first given or when it changes).
 - **Strength**: `strength_status` (qualitative) and optional `strength_json` (numbers).
 - **Quality**: `confidence`, `claim_status`, `source`, `notes`.
 
@@ -19,7 +19,18 @@ Rows were built by reading the sources in [sources.md](sources.md), writing one 
 
 ## Units, battle groups and parents
 
-Every unit has one `unit_id` and one row in `data/units.csv`. Battle groups (Kampfgruppen) and combat commands are units of their own (`echelon` = `regiment/battle_group`) with a fixed `parent_unit_id` (the division) and a time-dependent `parent_formation` on each claim (for example "attached to Panzer Lehr"). Brigades stay brigades. When all of a division's rows were really about its battle group, the division has no claim file and is a `parent_only` unit so that parent links still resolve. A claim is never duplicated between a division and its battle group.
+Every unit has one `unit_id` and one row in `data/units.csv`. Battle groups (Kampfgruppen) and combat commands are units of their own (`echelon` = `regiment/battle_group`) with a fixed `parent_unit_id` in `data/units.csv` (the organic parent division) and, on each claim, a time-dependent `parent_unit_id` and `command_relationships` (for example attached to Panzer Lehr, with the organic parent division kept in the list). Brigades stay brigades. When all of a division's rows were really about its battle group, the division has no claim file and is a `parent_only` unit so that parent links still resolve. A claim is never duplicated between a division and its battle group.
+
+## Parents and command relationships
+
+`parent_unit_id` is the **operational parent** on the row's date, as one unit id from `data/units.csv`: the formation the unit was attached to or operating under, otherwise its standing parent. It is blank for a top-level headquarters and `unknown` if no source was checked. `command_relationships` is a JSON list that also holds the organic parent (relationship `organic`), attachments (`attached`), formations that controlled the unit without owning it (`operational_control`), and reserves (`reserve`); see the `relationship` vocabulary. Rules used when the free text of v5 was converted (details in `scripts/migrate_parent_formation.py`):
+
+- A plain parent in the old text becomes an `organic` entry. This records the standing parent the source names, not a claim that the link was permanent (corps and armies reshuffled divisions constantly).
+- "attached to X" makes X the operational parent and the named parent an `organic` entry (battle groups attached to another division or corps).
+- A corps or high-command reserve becomes `reserve`. US First Army under 21st Army Group is `operational_control`.
+- Where the old text listed a battle group's division and a higher formation without saying how they relate, the division stays the parent unless the row's notes show who controlled the group; the higher formation is kept with relationship `unknown`.
+- Parents named without an id (Fifteenth Army, OKW, SHAEF) were added to `units.csv` as `parent_only` units; SHAEF is nationality `Allied`.
+- `unknown` is kept where the source did not give a parent; the migration adds no relationship that the old text or the row's notes do not support.
 
 ## precision_km
 
@@ -88,4 +99,4 @@ In the proof of concept 21 of 212 rows carry figures (16 estimate, 5 reported_ac
 
 ## Provenance of the first import
 
-The proof of concept was built in five iterations (v1 to v5): v1 flat claims; v2 added unit-name/nationality/echelon split, operation and sub-operation names, `precision_km`, numeric `confidence` and conflict groups; v3 added `current_activity`; v4 added `unit_id`, `parent_formation`, `commander`, `event_type`, `engaged_with` and `strength_status`; v5 added battle groups as units and `strength_json`; this repository adds `theater` and splits the data by unit. The flat v5 CSVs are kept in `archive/v5_flat/`, and `scripts/split_from_flat.py` reproduces `data/` from them. `claim_id`s are identical in every version.
+The proof of concept was built in five iterations (v1 to v5): v1 flat claims; v2 added unit-name/nationality/echelon split, operation and sub-operation names, `precision_km`, numeric `confidence` and conflict groups; v3 added `current_activity`; v4 added `unit_id`, `parent_formation`, `commander`, `event_type`, `engaged_with` and `strength_status`; v5 added battle groups as units and `strength_json`; this repository adds `theater`, splits the data by unit and replaces the free-text `parent_formation` by `parent_unit_id` + `command_relationships` (`scripts/migrate_parent_formation.py`). The flat v5 CSVs are kept in `archive/v5_flat/`, and `scripts/split_from_flat.py` reproduces `data/` from them, including that last step (the flat files keep the original `parent_formation` text). `claim_id`s are identical in every version.

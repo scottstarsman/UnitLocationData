@@ -8,6 +8,9 @@ Output: data/claims/<nationality>/<unit_id>.csv   (one file per unit that has cl
 
 Changes made on the way (everything else is copied unchanged):
   * adds the `theater` column after `date` (every row is western_europe in this import)
+  * then runs scripts/migrate_parent_formation.py, which replaces the free-text `parent_formation` column by
+    `parent_unit_id` + `command_relationships` and adds the parent-only units that text named without an id
+    (the archive flat files keep the original `parent_formation` text, so they are left unchanged)
   * writes one file per unit, rows sorted by date then claim_id, same header everywhere
   * builds data/units.csv: adds theater, parent_unit_id (from parent_division_unit_id),
     parent_only (true for units with no rows left), drops v5-only bookkeeping columns
@@ -25,6 +28,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import migrate_parent_formation  # noqa: E402
 
 FLAT = os.path.join(common.ROOT, 'archive', 'v5_flat', 'ww2_west_1944-06_v5.csv')
 UNITS_FLAT = os.path.join(common.ROOT, 'archive', 'v5_flat', 'units_v5.csv')
@@ -38,10 +42,16 @@ def main():
     args = ap.parse_args()
 
     header_flat, flat = common.read_dicts(FLAT)
-    header = common.field_names(common.load_schema('claims'))
+    # the flat v5 file has the old single `parent_formation` column and no `theater` column
+    header = []
+    for c in common.field_names(common.load_schema('claims')):
+        if c == 'parent_unit_id':
+            header.append('parent_formation')
+        elif c != 'command_relationships':
+            header.append(c)
     expected = [c for c in header if c != 'theater']
     if header_flat != expected:
-        sys.exit('flat header does not match schema minus theater')
+        sys.exit('flat header does not match schema minus theater (with parent_formation in place of the two command columns)')
 
     claims_dir = os.path.join(args.out, 'data', 'claims')
     if os.path.isdir(claims_dir):
@@ -66,7 +76,9 @@ def main():
     os.makedirs(os.path.join(args.out, 'data'), exist_ok=True)
     with open(os.path.join(args.out, 'data', 'units.csv'), 'wb') as f:
         f.write(common.csv_bytes(UNIT_HEADER, out))
-    print('wrote %d claim files, %d units, %d claims' % (len(by_unit), len(out), len(flat)))
+    migrate_parent_formation.migrate(args.out)
+    print('wrote %d claim files, %d units (+%d parent-only units from the migration), %d claims'
+          % (len(by_unit), len(out), len(migrate_parent_formation.NEW_UNITS), len(flat)))
 
 
 if __name__ == '__main__':

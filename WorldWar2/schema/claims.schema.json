@@ -97,11 +97,20 @@
       "vocabulary": "branch"
     },
     {
-      "name": "parent_formation",
+      "name": "parent_unit_id",
       "type": "string",
-      "description": "Formation the unit was subordinate or attached to on that date, \"Name (unit_id)\" when the parent is in units.csv; several parents are separated by \"; \" (\"; attached to ...\" marks an attachment). \"unknown\" if not verified.",
+      "description": "Unit id (from data/units.csv) of the operational parent on this row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters); \"unknown\" if not verified. The organic parent, when different, is in command_relationships.",
       "constraints": {
-        "required": true
+        "pattern": "^([A-Z]{2,4}(-[A-Z0-9]+)+|unknown)$"
+      }
+    },
+    {
+      "name": "command_relationships",
+      "type": "string",
+      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null if the formation is not in units.csv>\", \"name\": \"<formation name>\", \"relationship\": \"organic|attached|operational_control|reserve|unknown\", \"note\": \"<optional>\"}]. Allowed keys: unit_id, name, relationship, note. \"unknown\" (not JSON) or blank if nothing is known.",
+      "format": "json",
+      "jsonVocabulary": {
+        "relationship": "relationship"
       }
     },
     {

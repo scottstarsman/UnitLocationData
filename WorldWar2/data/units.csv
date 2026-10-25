@@ -1,8 +1,10 @@
 unit_id,unit_name,nationality,echelon,branch,theater,parent_unit_id,parent_only
+ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,other,Army,western_europe,,true
 CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,western_europe,,false
 CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,western_europe,,false
 GER-AG-00BG,Army Group B,Germany,army_group,Army,western_europe,,false
 GER-ARMY-007A,Seventh Army,Germany,army,Army,western_europe,,false
+GER-ARMY-015A,Fifteenth Army,Germany,army,Army,western_europe,,true
 GER-COR-084C,LXXXIV Corps,Germany,corps,Army,western_europe,,false
 GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,western_europe,,false
 GER-FJ-003D,3rd Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,false
@@ -27,6 +29,7 @@ GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,weste
 GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-002D,false
 GER-LL-091D,91st Luftlande Division,Germany,division,Army,western_europe,,false
 GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,western_europe,,false
+GER-OKW-000H,Oberkommando der Wehrmacht (OKW),Germany,other,Army,western_europe,,true
 GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,western_europe,,false
 GER-PZ-021D,21st Panzer Division,Germany,division,Armoured,western_europe,,false
 GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,western_europe,,false

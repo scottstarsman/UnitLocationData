@@ -24,7 +24,8 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `unit_name` | string | yes | Unit name only, for example "29th Infantry Division". |  |
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
 | `branch` | string | yes | Service or arm (see vocabulary). | vocabulary `branch` |
-| `parent_formation` | string | yes | Formation the unit was subordinate or attached to on that date, "Name (unit_id)" when the parent is in units.csv; several parents are separated by "; " ("; attached to ..." marks an attachment). "unknown" if not verified. |  |
+| `parent_unit_id` | string | no | Unit id (from `data/units.csv`) of the operational parent on that row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters); `unknown` if not verified. The organic parent, when different, is in `command_relationships`. | pattern `^([A-Z]{2,4}(-[A-Z0-9]+)+\|unknown)$` |
+| `command_relationships` | string (JSON) | no | JSON list of command relationships on that date, see [command_relationships](#command_relationships). `unknown` (plain text, not JSON) or blank if nothing is known. | valid JSON list, or `unknown` |
 | `commander` | string | yes | Commander on that date, rank and name as given by sources; "unknown" if not verified. |  |
 | `latitude` | number | yes | Decimal degrees WGS84. | -90 to 90 |
 | `longitude` | number | yes | Decimal degrees WGS84. | -180 to 180 |
@@ -58,21 +59,21 @@ Primary key: `claim_id` (unique across the whole repository). Rows in each file 
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
 | `branch` | string | yes | Service or arm (see vocabulary). | vocabulary `branch` |
 | `theater` | string | yes | Primary theater of the unit (single value; claim rows carry their own theater). | vocabulary `theater` |
-| `parent_unit_id` | string | no | Fixed parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use claims.parent_formation for time-dependent parents. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
+| `parent_unit_id` | string | no | Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use the claim columns `parent_unit_id` and `command_relationships` for time-dependent parents. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
 | `parent_only` | boolean | yes | true if the unit has no claim rows of its own (it exists only so that other rows can point to it); false if data/claims/<nationality>/<unit_id>.csv exists. | `true`/`false` |
 
-Rows are sorted by `unit_id`. `parent_only = true` units have no claim file; they exist so `parent_formation` ids resolve. `parent_formation` ids in claim rows are written `Name (unit_id)`; `scripts/validate.py` checks every id of the form `(XX-...-...)` against `units.csv`.
+Rows are sorted by `unit_id`. `parent_only = true` units have no claim file; they exist so `parent_unit_id` and `command_relationships` ids resolve (for example SHAEF, OKW and the German Fifteenth Army). `scripts/validate.py` checks every parent id against `units.csv`.
 
 ## unit_id pattern
 
 `NATION-TYPE-NUMBER+ECHELONLETTER`, all upper case.
 
-- Nation: `US`, `UK`, `CAN`, `GER`.
-- Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West).
+- Nation: `US`, `UK`, `CAN`, `GER`, `ALL` (combined Allied headquarters such as SHAEF).
+- Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West), `OKW`, `SHAEF`.
 - Echelon letter: `G` army group, `A` army, `C` corps, `D` division, `B` brigade, `H` other HQ.
 - Examples: `US-INF-029D`, `GER-PZ-021D`, `UK-ARM-011D`, `CAN-INF-003D`, `GER-SSPZ-001C` (I SS Panzer Corps), `GER-SSPZ-001D` (1st SS Panzer Division).
 - Units without a number use a word: `GER-PZ-LEHRD` (Panzer Lehr), `UK-ARM-GRDD` (Guards Armoured), `GER-PZG-WESTA` (Panzer Group West), `GER-AG-00BG` (Army Group B).
-- Battle groups and combat commands: `GER-KG-<NAME>` for a Kampfgruppe (for example `GER-KG-FREY`; unnamed ones use a number or parent code, for example `GER-KG-265`, `GER-KG-002PZ`) and `US-CCA-002D` for Combat Command A of the 2nd Armored Division. Their `echelon` is `regiment/battle_group` and `parent_unit_id` points at the parent division.
+- Battle groups and combat commands: `GER-KG-<NAME>` for a Kampfgruppe (for example `GER-KG-FREY`; unnamed ones use a number or parent code, for example `GER-KG-265`, `GER-KG-002PZ`) and `US-CCA-002D` for Combat Command A of the 2nd Armored Division. Their `echelon` is `regiment/battle_group` and the units.csv `parent_unit_id` points at the parent division (the organic parent).
 - The id is the same on every row of the unit and equals the claim file name.
 
 ## Free-text conventions
@@ -80,10 +81,19 @@ Rows are sorted by `unit_id`. `parent_only = true` units have no claim file; the
 - `composing_units`: listed when first given or when it changes; blank means unchanged from that unit's previous row; `unknown` means no data. Items are separated by `; `.
 - `engaged_with`: enemy units, nationality first, separated by `; ` (for example `German 352nd Infantry Division; German 716th Static Infantry Division`). Blank = no combat that day; `unknown` = combat with no opponent identified.
 - `commander`: rank and name as given by the sources; command changes are written like `X (killed 12 June); Y from that evening`.
-- `parent_formation`: `Name (unit_id)`; several parents separated by `; `; `; attached to ...` marks an attachment. `unknown` if not verified; parents outside the unit table are plain names.
 - `source`: URLs separated by ` | `, ending with a coordinate source note after ` ; ` (for example `; coords: Wikipedia`).
 - `sub_operation_name`: semicolon-separated if several (`Martlet; Epsom`).
 - `current_activity`: short lower-case phrase, no trailing period; free text, not a vocabulary.
+
+## command_relationships
+
+A JSON list written on one line (CSV-quoted like `strength_json`), or the plain text `unknown`, or blank. Each element:
+
+```json
+[{"unit_id":"GER-SSPZ-002D","name":"German 2nd SS Panzer Division Das Reich","relationship":"organic"},{"unit_id":"GER-PZ-LEHRD","name":"German Panzer Lehr Division","relationship":"attached","note":"Placed under Panzer Lehr on arrival"}]
+```
+
+Keys: `unit_id` (required; a unit id from `data/units.csv`, or `null` if the formation is not in the table), `name` (required), `relationship` (required, see the `relationship` vocabulary below) and `note` (optional string). No other keys. `parent_unit_id` is the operational parent: the formation the unit was attached to or operating under on that date, otherwise its standing parent. It must also appear in the list. In the example the row's `parent_unit_id` is `GER-PZ-LEHRD` and the organic parent stays in the list. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a `parent_only` unit if it has no claims) rather than using `null`. The original free text and how it was converted are documented in `scripts/migrate_parent_formation.py`.
 
 ## strength_json
 
@@ -122,6 +132,19 @@ Nation of the unit. The lowercase value is the folder name under data/claims/. A
 | `UK` | United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk). |
 | `Canada` | Canada (folder canada). |
 | `Germany` | Germany, including Waffen-SS and Luftwaffe ground formations (folder germany). |
+| `Allied` | Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only parent_only units). |
+
+### relationship
+
+Meaning of the `relationship` field in each object of `command_relationships`.
+
+| value | meaning |
+|---|---|
+| `organic` | The standing parent: the formation the original source names as the unit's parent without an attachment qualifier, or a battle group's own division. Not a claim that the link was permanent. |
+| `attached` | The unit was attached to this formation on the row's date (the operational parent). |
+| `operational_control` | This formation controlled the unit operationally without it being a standing or attached part of it. |
+| `reserve` | The unit was held in this formation's (or the high command's) reserve. |
+| `unknown` | A formation is named by the source but how it relates to the unit is not stated. |
 
 ### claim_status
 

@@ -1,6 +1,6 @@
 # Roadmap and known gaps
 
-Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims, 81 units).
+Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims, 84 units in the unit table).
 
 ## Known gaps in the current data
 
@@ -16,7 +16,7 @@ Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims,
 - Rows are event-based; quiet days are absent, so positions between rows are unknown.
 - Many corps, army and panzer-corps headquarters positions are not tied to a dated source (inferred or approximate). HQ moves are poorly covered by free web sources.
 - Composition lists are the standard organisation checked against Wikipedia unit pages, not the exact attachments each day. Not verified: US 2nd and 3rd Armored combat commands, 21st Panzer "Panzer Regiment 22", 79th Armoured and independent brigades (marked `unknown`).
-- `parent_formation` is time-dependent and some links are only supported in outline (for example I SS Panzer Corps under Seventh Army or Panzer Group West; II SS Panzer Corps on 28-29 June). Where no link was found it is `unknown` (18 rows in v4).
+- `parent_unit_id` and `command_relationships` are time-dependent and some links are only supported in outline (for example I SS Panzer Corps under Seventh Army or Panzer Group West; II SS Panzer Corps on 28-29 June). Where no link was found both are `unknown` (16 rows). Plain parents are recorded as `organic` because the sources do not say whether a corps or army link was a standing one; attachments are marked only where a source says so.
 - `precision_km` and `confidence` are rule-derived (see methodology); they are consistent but not independent measurements.
 - `strength_json` is sparse (21 rows) and rests on secondary sources; no row uses `authorized_organization` yet.
 - Date conflicts between sources are open (Dollmann's death, Schlieben's capture, Choltitz replacing Fahrmbacher, Montgomery's HQ moves, 82nd Airborne at Pont-l'Abbe): see the 11 conflict groups.
@@ -41,4 +41,4 @@ The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are commit
 
 - Per-day interpolation versus pure event rows (currently pure events).
 - Whether a unit's primary `theater` should be derived from its claims once several theaters exist (currently set by hand in `units.csv`).
-- Whether `parent_formation` should become a separate time-dependent relations table instead of free text.
+- Whether `command_relationships` should become a separate time-dependent relations table (one row per unit, formation and date range) instead of a JSON cell, for example once whole-war data makes the cell awkward to query.

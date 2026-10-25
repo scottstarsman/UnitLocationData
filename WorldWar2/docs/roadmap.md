@@ -9,7 +9,7 @@ Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 t
 | batch | period | status |
 |---|---|---|
 | 1 | 1 July - 30 September 1944 | **Done, awaiting spot check.** 268 new claims (209 division, 43 corps, 14 army, 2 army group); 25 placeholders became active (12th and 6th Army Groups; Third, Seventh and Ninth Armies; VI, XII, XV, XX and XVIII Airborne Corps; 3rd, 5th, 8th, 26th, 28th, 35th, 36th, 44th, 45th, 80th and 94th Infantry and 4th to 7th Armored Divisions), and a stub `ALL-AFHQ-000H` was added as Seventh Army's parent until 15 September. |
-| 2 | 25 July - 15 September 1944 command transitions (V, VII, VIII, XII, XV, XIX, XX Corps; First, Third, Ninth Army; 12th Army Group) | **Done, awaiting spot check** (`review samples/spot_check_batch2.md`): 32 new claims, relationship regeneration of 213 table-derived rows, 2 explained warnings added; see "Batch 2" in `review_changes.md` |
+| 2 | 25 July - 15 September 1944 command transitions (V, VII, VIII, XII, XV, XIX, XX Corps; First, Third, Ninth Army; 12th Army Group) | **Done, review corrections applied** (`review samples/spot_check_batch2.md`): 33 new claims (C0483-C0515), relationship regeneration of 216 table-derived rows, 2 explained warnings added; see "Batch 2" and "Batch 2 review corrections" in `review_changes.md` |
 | 3 | 1 October - 31 December 1944 | not started (Aachen, Hurtgen, Lorraine/Metz, Alsace, the Bulge) |
 | 4 | 1 January - 31 March 1945 | not started |
 | 5 | 1 April - 8 May 1945 | not started |
@@ -104,6 +104,19 @@ A second reviewer checked the 15-row Batch 1 spot check. Their schema and proces
 | Scripted audit of the 268 new rows | **Done**: `scripts/audit_command_location.py`. Its geocoding check found a wrong place (Mesnil-St-Martin) that three rows used. |
 | Batch 2 (V, VII, XII, XV, XX Corps command transitions, 25 July to 15 September 1944; Brittany army transitions) | **Done** (authorised 25 October 2026); see the Batch 2 section below and `review_changes.md`. |
 
+## Batch 2 review proposals (25 October 2026)
+
+A third reviewer checked the 15-row Batch 2 spot check. Their findings were verified against the Green Books, the Third Army After Action Report and other sources before anything was applied (`review_changes.md`, "Batch 2 review corrections"). The design proposals and what was done:
+
+| proposal | outcome |
+|---|---|
+| (a) Explicit validity intervals; a missing `effective_to` must not mean indefinitely valid; optional `ordered_date` | **Done** (additive, inside the relationship JSON): keys `ordered_date`, `effective_from_latest`, `effective_to_earliest`, `effective_to_basis`, validated; the validator prints a count of `attached`/`operational_control` entries with no end that the unit's next claim no longer lists, and the audit lists them (33 claims); explicit ends added where a source dates them (XV Corps, 2nd Armored, 6th Armored, VIII Corps' First Army attachment). The 33 open entries stay as snapshots: the derived table closes them at the next claim. Applied to C0425, C0426 and C0296 (order versus effect). |
+| (b) Derived `command_relations` table | **Done, first version**: `build/command_relations.csv` (about 250 intervals, US units with a claim from 24 July to 20 September 1944), built by `scripts/build.py`, queried with `scripts/who_controls.py`. Claims stay the evidence. **Not done**: other nations and periods, time of day, a numeric relationship confidence (the `support` column says documented, table or inferred instead). |
+| (c) Separate event confidence and location confidence / `location_status` | **Declined again**, with the reasoning in `schema/README.md`: `confidence` already scores the location and its sources; a status column would repeat `location_basis`; a second numeric column would need a judged value for each of the 515 rows. Instead command rows from Batch 2 on carry `Event support:` and `Location support:` sentences (qualitative), the validator warns when a low-confidence command row lacks `Event support:`, and the derived table carries relationship support. Revisit if the derived table needs an event score as input. |
+| (d) `composing_units` with effective dates, or derived from relationships | **Roadmap**: C0493 and C0487 now list dated, qualified entries as text; a derived composing view needs formation-to-corps rows for every component (the combat commands and cavalry groups are not all units yet). Derive it from `command_relations.csv` once component coverage is complete. |
+| (e) `last_confirmed_hq_location` | **Roadmap**: needs the temporal reconstruction layer. Until then Lesneven is documented as the 18 August headquarters observation and the last confirmed place before the CMH list's St Aubin on 24 September; the VIII Corps 5 and 10 September rows keep Brest-sector points and say so. |
+| Explained-exception mechanism for the coordinate checker | **Done**: `data/coordinate_exceptions.csv` (speed warnings only so far; five entries with sources), and the speed check now measures days between the dates the coordinates belong to (`location_date`). Three speed warnings that this made visible remain open and unchecked: C0253, C0419, C0480. |
+
 ## Generated files at scale
 
 The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are committed today because the proof of concept is small. The per-unit files in `data/claims/` are the master copy; there are deliberately no monthly or per-theater exports. Once the dataset grows (for example the whole war), stop committing the generated combined files and publish them as release assets instead (build them in CI on each tagged release), so the repository history stays small and diffs stay readable. At that point remove `build/` from version control, add it to `.gitignore`, and drop the "build is up to date" check from the workflow.
@@ -112,7 +125,7 @@ The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are commit
 
 - Per-day interpolation versus pure event rows (currently pure events).
 - Whether a unit's primary `theater` should be derived from its claims once several theaters exist (currently set by hand in `units.csv`).
-- Whether `command_relationships` should become a separate time-dependent relations table (one row per unit, formation and date range) instead of a JSON cell, for example once whole-war data makes the cell awkward to query.
+- Whether `command_relationships` should become the master time-dependent relations table instead of a JSON cell (a derived version exists since the Batch 2 corrections: `build/command_relations.csv`); the open point is whether to hand-edit intervals once the derived table is used for queries.
 
 ## Batch 2: command transitions, 25 July - 15 September 1944 (25 October 2026)
 
@@ -121,7 +134,7 @@ Done: First/Third/Ninth Army and 12th Army Group handovers (1 August; 1 Septembe
 Still open after Batch 2:
 - Seventh Army headquarters place on 15 September 1944 (not found; row C0296 stays an unlocated representative point at confidence 0.3).
 - VIII Corps headquarters on 5 and 10 September: only the 18 August move to Lesneven is documented; those two rows keep Brest-sector points.
-- First Army 1 August headquarters: Vouilly (monument) or Saint-Gilles (CMH list as compiled by World War II by Day) differ by about 23 km (group G015).
+- First Army 1-2 August headquarters: Vouilly (monument: stayed until 2 August) and Saint-Gilles (CMH list from 1 August) are 23 km apart and are now modelled as a move in sequence (C0484, C0485; conflict group G015 dissolved in the Batch 2 corrections); the order of events within 1-2 August is not documented.
 - The 83rd Division's brief simultaneous attachment to VIII and XV Corps (Breakout p428) is not given a row: the table shows XV Corps on 1 August and VIII Corps on 3 August and no source dates the overlap.
 - Regiment-level Cobra rows (the 4th Division's 8th Infantry at La Chapelle-en-Juger, the 9th and 30th Divisions on 25 July) were not added: the pages read here do not give a place and date together.
 - The corps and army lists from World War II by Day are a secondary compilation; replace them with the CMH ETO-OB corps and army pages if those become reachable.

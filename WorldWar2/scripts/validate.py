@@ -40,6 +40,7 @@ errors = []
 warnings = []
 
 ACTIVITY_MAX_CHARS = 120
+EVENT_SUPPORT_FROM = 483  # first claim id of Batch 2, which introduced the Event support / Location support sentences
 HEDGE_WORDS = re.compile(r'\b(probably|likely|presumably|apparently|possibly|perhaps|inferred|may have)\b', re.I)
 
 
@@ -193,7 +194,9 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json has personnel but no scope: set scope to whole_unit, sub_force or sector (what the figure covers), or remove the personnel figure if no source says')
 
 
-REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'effective_to', 'date_basis', 'note'}
+REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'effective_from_latest', 'ordered_date', 'effective_to',
+            'effective_to_earliest', 'effective_to_basis', 'date_basis', 'note'}
+DATE_KEYS = ('effective_from', 'effective_from_latest', 'ordered_date', 'effective_to', 'effective_to_earliest')
 STANDING_RELS = ('organic', 'assigned', 'unspecified_subordination', 'unknown')
 ECH_RANK = {'squad': 0, 'platoon': 0, 'company': 0, 'battalion': 1, 'regiment/battle_group': 2, 'brigade': 3, 'division': 4,
             'corps': 5, 'army': 6, 'army_group': 7, 'other': 8}
@@ -279,7 +282,7 @@ def check_command_relationships(where, row, units, vocabs):
         if 'note' in e and not isinstance(e['note'], str):
             err(where, 'command_relationships: note must be a string')
         okdates = {}
-        for dk in ('effective_from', 'effective_to'):
+        for dk in DATE_KEYS:
             if dk in e:
                 try:
                     if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(e[dk])):
@@ -296,8 +299,23 @@ def check_command_relationships(where, row, units, vocabs):
                 err(where, 'command_relationships: effective_to %s is before effective_from %s' % (okdates['effective_to'], okdates['effective_from']))
             if okdates['effective_to'] < row['date']:
                 warn(where, 'command_relationships: %s ended on %s, before the row date %s' % (e.get('unit_id'), okdates['effective_to'], row['date']))
-        if 'date_basis' in e and e['date_basis'] not in vocabs['relationship_date_basis']['values']:
-            err(where, 'command_relationships: date_basis %r not in vocabulary relationship_date_basis' % (e['date_basis'],))
+        if 'ordered_date' in okdates and 'effective_from' in okdates and okdates['ordered_date'] > okdates['effective_from']:
+            err(where, 'command_relationships: ordered_date %s is after effective_from %s (an order cannot follow the date it takes effect)' % (okdates['ordered_date'], okdates['effective_from']))
+        if 'effective_from_latest' in okdates:
+            if 'effective_from' not in okdates:
+                err(where, 'command_relationships: effective_from_latest needs effective_from (the earliest possible start)')
+            elif okdates['effective_from_latest'] < okdates['effective_from']:
+                err(where, 'command_relationships: effective_from_latest %s is before effective_from %s' % (okdates['effective_from_latest'], okdates['effective_from']))
+        if 'effective_to_earliest' in okdates:
+            if 'effective_to' not in okdates:
+                err(where, 'command_relationships: effective_to_earliest needs effective_to (the latest possible end)')
+            elif okdates['effective_to_earliest'] > okdates['effective_to']:
+                err(where, 'command_relationships: effective_to_earliest %s is after effective_to %s' % (okdates['effective_to_earliest'], okdates['effective_to']))
+        for bk in ('date_basis', 'effective_to_basis'):
+            if bk in e and e[bk] not in vocabs['relationship_date_basis']['values']:
+                err(where, 'command_relationships: %s %r not in vocabulary relationship_date_basis' % (bk, e[bk]))
+        if 'effective_to_basis' in e and 'effective_to' not in e:
+            err(where, 'command_relationships: effective_to_basis without effective_to')
         if e.get('unit_id') is None and e.get('relationship') not in ('unknown', None) and isinstance(e.get('name'), str):
             warn(where, 'command_relationships: named higher HQ %r has no stable unit_id; add it to data/units.csv (placeholder is fine)' % e.get('name'))
         ur = units.get(e.get('unit_id')) if e.get('unit_id') else None
@@ -466,6 +484,10 @@ def main():
                 warn(where, 'current_activity is %d characters (> %d): one row should describe one documented action; put the rest in notes' % (len(act), ACTIVITY_MAX_CHARS))
             if HEDGE_WORDS.search(act):
                 warn(where, 'current_activity contains a hedge word (%s): state only what the source documents; put doubt in notes' % HEDGE_WORDS.search(act).group(0))
+            m = re.fullmatch(r'C(\d+)', row['claim_id'])
+            if m and int(m.group(1)) >= EVENT_SUPPORT_FROM and row['event_type'] in ('command_change', 'activation') \
+                    and row['confidence'] and float(row['confidence']) <= 0.3 and 'Event support:' not in row['notes']:
+                warn(where, 'low-confidence command row without an "Event support:" sentence in notes (confidence scores the location; say how well the event itself is documented)')
             if row['engaged_with'] and row['engaged_with'] != 'unknown':
                 for x in [x.strip() for x in row['engaged_with'].split(';') if x.strip()]:
                     if x != 'unknown' and x not in eng_index and not any(n.startswith(x + ' ') for n in eng_index):
@@ -503,6 +525,32 @@ def main():
             err(where, 'competing claims should differ in date or place')
         if len({r['event_type'] for r in rs}) > 1 and not all('Event definition:' in r['notes'] for r in rs):
             warn(where, 'rows have different event_type values (different event definitions, not just different sources): each row needs an "Event definition:" sentence in notes')
+
+    # ---- command-relationship validity (informational; see schema/README.md "Validity of a relationship") ----
+    by_unit = {}
+    for r in all_rows:
+        by_unit.setdefault(r['unit_id'], []).append(r)
+    open_end = []
+    for uid, rs in by_unit.items():
+        rs.sort(key=lambda r: (r['date'], r['claim_id']))
+        for i, r in enumerate(rs):
+            if r['command_relationships'] in ('', 'unknown'):
+                continue
+            later = [x for x in rs[i + 1:] if x['date'] > r['date']]
+            if not later:
+                continue
+            nxt = later[0]
+            nxt_keys = set()
+            if nxt['command_relationships'] not in ('', 'unknown'):
+                nxt_keys = {(f.get('unit_id'), f.get('relationship')) for f in json.loads(nxt['command_relationships'])}
+            for e in json.loads(r['command_relationships']):
+                if e.get('relationship') in ('attached', 'operational_control') and 'effective_to' not in e \
+                        and (e.get('unit_id'), e.get('relationship')) not in nxt_keys:
+                    open_end.append((r['claim_id'], nxt['claim_id']))
+    if open_end:
+        print('NOTE: %d attached/operational_control entries have no effective_to and are not listed by the unit\'s next claim; '
+              'a missing effective_to never means indefinitely valid: build/command_relations.csv closes them at the next claim '
+              '(valid_to_basis inferred_from_next_claim). Add effective_to where a source dates the end.\n' % len(open_end))
 
     for w in warnings:
         print('WARNING', w)

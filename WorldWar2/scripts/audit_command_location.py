@@ -55,6 +55,28 @@ def main():
                     hit('named higher headquarters without a unit id', r)
                 if e['relationship'] == 'unspecified_subordination':
                     hit('relationship unspecified_subordination (source does not say assigned or attached)', r)
+    for r in rows:
+        if r['location_represents'] == 'objective' and r['event_type'] == 'attack' and r['location_basis'] == 'documented_on_date' \
+                and 'Objective check' not in r['notes']:
+            hit('attack row whose point is an objective marked documented_on_date (confirm the unit or event was there on the date)', r)
+        if r['event_type'] in ('command_change', 'activation') and r['confidence'] and float(r['confidence']) <= 0.3 \
+                and 'Event support:' not in r['notes'] and int(r['claim_id'][1:]) >= 483:
+            hit('low-confidence command row without an Event support sentence (Batch 2 on)', r)
+    by_unit = {}
+    for r in rows:
+        by_unit.setdefault(r['unit_id'], []).append(r)
+    for rs in by_unit.values():
+        rs.sort(key=lambda r: (r['date'], r['claim_id']))
+        for i, r in enumerate(rs):
+            later = [x for x in rs[i + 1:] if x['date'] > r['date']]
+            if not later or r['command_relationships'] in ('', 'unknown'):
+                continue
+            nxt = later[0]
+            nk = {(f.get('unit_id'), f.get('relationship')) for f in json.loads(nxt['command_relationships'])} \
+                if nxt['command_relationships'] not in ('', 'unknown') else set()
+            for e in json.loads(r['command_relationships']):
+                if e['relationship'] in ('attached', 'operational_control') and 'effective_to' not in e and (e.get('unit_id'), e['relationship']) not in nk:
+                    hit('attached/operational_control entry with no effective_to, not listed by the next claim (derived end)', r)
     groups = {}
     for r in rows:
         if r['conflict_group_id']:

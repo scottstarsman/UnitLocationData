@@ -9,7 +9,15 @@ Offline checks (always run):
   2. same-name rows that share a location_name but whose points are more than 3 km apart
   3. conflict  claims in one conflict group whose points are farther apart than their precision radii
                add up (a real place disagreement is allowed, but it should be deliberate and noted)
-  4. speed     a unit's consecutive preferred rows imply more than 80 km/day (a likely wrong point or date)
+  4. speed     a unit's consecutive preferred rows imply more than 80 km/day (a likely wrong point or date). The days are counted
+               between the dates the coordinates belong to (location_date when set, otherwise the row date), so a point taken from
+               a command-post list nine days earlier is not compared as if it were the position on the row date.
+
+Explained exceptions: data/coordinate_exceptions.csv lists warnings that were checked and are correct (columns: check,
+claim_id, other_claim_id, reason, source). A listed warning is printed as EXPLAINED and counted separately; it is not an open
+warning and does not fail --strict. An entry that no longer matches any warning is reported as STALE so the file does not rot.
+Keys: speed = the later claim_id and the earlier one; conflict = the group's first claim_id and the other; same-name = the first
+claim_id and the other. Add an entry only with a reason that cites a source.
 
 Optional online check (--geocode, needs network, uses OpenStreetMap Nominatim at 1 request/second):
   5. geocode   no geocode candidate for the place named in location_name lies within max(15 km, 2 x precision_km)
@@ -43,6 +51,20 @@ BBOX = {  # theater -> (lat_min, lat_max, lon_min, lon_max); loose, only to catc
 SAME_NAME_KM = 3.0
 SPEED_KM_PER_DAY = 80.0
 CACHE = os.path.join(common.ROOT, '.cache', 'geocode.json')
+EXCEPTIONS_CSV = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
+
+
+def load_exceptions():
+    """Return {(check, claim_id, other_claim_id): (reason, source)} from data/coordinate_exceptions.csv (empty if absent)."""
+    out = {}
+    if os.path.isfile(EXCEPTIONS_CSV):
+        _h, rows = common.read_dicts(EXCEPTIONS_CSV)
+        for r in rows:
+            if not r['reason'].strip():
+                print('WARNING [exceptions] %s %s/%s has no reason; it is ignored' % (r['check'], r['claim_id'], r['other_claim_id']))
+                continue
+            out[(r['check'], r['claim_id'], r['other_claim_id'])] = (r['reason'], r['source'])
+    return out
 
 
 def km(a_lat, a_lon, b_lat, b_lon):
@@ -97,8 +119,16 @@ def main(argv):
     country = argv[argv.index('--country') + 1] if '--country' in argv else None
     _h, rows = common.load_all_claims()
     warns = []
+    explained = []
+    exceptions = load_exceptions()
+    used = set()
 
-    def warn(kind, r, msg):
+    def warn(kind, r, msg, other=None):
+        key = (kind, r['claim_id'], other or '')
+        if key in exceptions:
+            used.add(key)
+            explained.append((kind, '%s %s: %s [%s]' % (r['claim_id'], r['unit_id'], msg, exceptions[key][0])))
+            return
         warns.append((kind, '%s %s: %s' % (r['claim_id'], r['unit_id'], msg)))
 
     for r in rows:
@@ -115,7 +145,7 @@ def main(argv):
             for j in range(i + 1, len(rs)):
                 d = km(*pt(rs[i]), *pt(rs[j]))
                 if d > SAME_NAME_KM:
-                    warn('same-name', rs[i], 'location_name %r also used by %s %.1f km away' % (name, rs[j]['claim_id'], d))
+                    warn('same-name', rs[i], 'location_name %r also used by %s %.1f km away' % (name, rs[j]['claim_id'], d), rs[j]['claim_id'])
 
     groups = {}
     for r in rows:
@@ -128,7 +158,7 @@ def main(argv):
                 reach = float(rs[i]['precision_km']) + float(rs[j]['precision_km'])
                 if d > reach:
                     warn('conflict', rs[i], 'group %s: %s is %.1f km away, more than the %.0f km the two precision radii allow' % (
-                        g, rs[j]['claim_id'], d, reach))
+                        g, rs[j]['claim_id'], d, reach), rs[j]['claim_id'])
 
     by_unit = {}
     for r in rows:
@@ -138,12 +168,13 @@ def main(argv):
     for uid, rs in by_unit.items():
         rs.sort(key=lambda r: (r['date'], r['claim_id']))
         for a, b in zip(rs, rs[1:]):
-            days = (datetime.date.fromisoformat(b['date']) - datetime.date.fromisoformat(a['date'])).days
+            da, db = a['location_date'] or a['date'], b['location_date'] or b['date']
+            days = (datetime.date.fromisoformat(db) - datetime.date.fromisoformat(da)).days
             if days <= 0:
                 continue
             d = km(*pt(a), *pt(b))
             if d / days > SPEED_KM_PER_DAY:
-                warn('speed', b, '%.0f km from %s in %d day(s) = %.0f km/day' % (d, a['claim_id'], days, d / days))
+                warn('speed', b, '%.0f km from %s in %d day(s) = %.0f km/day' % (d, a['claim_id'], days, d / days), a['claim_id'])
 
     if do_geo:
         cache = {}
@@ -170,10 +201,14 @@ def main(argv):
         os.makedirs(os.path.dirname(CACHE), exist_ok=True)
         json.dump(cache, open(CACHE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 
+    for kind, msg in sorted(explained):
+        print('EXPLAINED [%s] %s' % (kind, msg))
+    for key in sorted(set(exceptions) - used):
+        print('STALE [exceptions] %s %s/%s matches no current warning; remove it from data/coordinate_exceptions.csv' % key)
     for kind, msg in sorted(warns):
         print('WARNING [%s] %s' % (kind, msg))
-    print('\n%d coordinate warning(s) over %d rows%s. Warnings are prompts to check a row, not errors.' % (
-        len(warns), len(rows), ' (with geocode)' if do_geo else ' (offline checks only)'))
+    print('\n%d coordinate warning(s) and %d explained exception(s) over %d rows%s. Warnings are prompts to check a row, not errors.' % (
+        len(warns), len(explained), len(rows), ' (with geocode)' if do_geo else ' (offline checks only)'))
     return 1 if (strict and warns) else 0
 
 

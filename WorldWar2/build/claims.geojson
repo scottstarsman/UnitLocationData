@@ -24,9 +24,9 @@
     "location_name": "Juno Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
-    "current_activity": "landing at Juno Beach in support of 3rd Canadian Division",
+    "current_activity": "providing armoured support during the Juno landings",
     "operation_name": "Overlord",
     "sub_operation_name": null,
     "strength_status": "unknown"
@@ -1773,8 +1773,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.075,
-     49.214
+     -1.0074,
+     49.1788
     ]
    },
    "properties": {
@@ -1788,9 +1788,9 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-06-09",
-    "location_name": "Elle River line (Berigny-Airel; point = Airel)",
+    "location_name": "Elle River line (Berigny-Airel; point = midpoint of the two)",
     "location_represents": "front_line_point",
-    "precision_km": 5,
+    "precision_km": 10,
     "confidence": 0.7,
     "event_type": "withdrawal",
     "current_activity": "withdrawing to the Elle River line",
@@ -2625,12 +2625,12 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-12",
-    "location_name": "Orne bridgehead / east of Caen",
+    "location_name": "Orne bridgehead / east of Caen (point = Bréville-les-Monts)",
     "location_represents": "sector_center",
     "precision_km": 10,
     "confidence": 0.5,
     "event_type": "attack",
-    "current_activity": "attacking from Orne bridgehead; held by 21st Panzer",
+    "current_activity": "limited attack by 51st Highland Division from the Orne bridgehead, delayed to this date and contained by 21st Panzer; 6th Airborne beat off German attacks and captured Bréville",
     "operation_name": "Overlord",
     "sub_operation_name": "Perch",
     "strength_status": "unknown"
@@ -5759,9 +5759,9 @@
     "location_name": "Mouen",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
-    "current_activity": "supporting Kampfgruppe Frey north of the Odon",
+    "current_activity": "supporting Kampfgruppe Frey's attack on Mouen north of the Odon with a company of Panzer IVs",
     "operation_name": "Overlord",
     "sub_operation_name": "Epsom",
     "strength_status": "unknown"

@@ -122,8 +122,8 @@ Primary theater of operations the claim belongs to. One value per claim row; a u
 
 | value | meaning |
 |---|---|
-| `western_europe` | Northwest Europe and France, from the Normandy landings through the end of the war in the West (also Netherlands, Belgium, Luxembourg, Germany west of the Elbe). |
-| `mediterranean` | Italy, Sicily, southern France (Dragoon), the Balkans and Greece, and the Mediterranean Sea. |
+| `western_europe` | Northwest Europe and France, from the Normandy landings through the end of the war in the West (also Netherlands, Belgium, Luxembourg, Germany west of the Elbe), and southern France from the Dragoon landings (15 August 1944) on, because the project's Western Front scope includes the Riviera-to-Rhine campaign. |
+| `mediterranean` | Italy, Sicily, the Balkans and Greece, and the Mediterranean Sea (southern France only before the Dragoon landing, for example staging in Italy or Corsica; from 15 August 1944 southern France is western_europe). |
 | `north_africa` | Libya, Egypt, Tunisia, Algeria and Morocco campaigns (1940-1943). |
 | `eastern_front` | Germany/Axis versus the USSR (Soviet Union, Poland, Baltic, Romania, Hungary, Finland). |
 | `pacific` | Pacific Ocean areas and Southwest Pacific, including Japan, the Philippines and the Dutch East Indies. |

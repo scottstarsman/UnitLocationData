@@ -1,14 +1,34 @@
 # Roadmap and known gaps
 
-Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims). The unit table now also holds 275 placeholder units for the Western Front, 6 June 1944 to 8 May 1945 (351 units in total, 76 with claims); see `docs/coverage.md`.
+Status: Western Front, 6 June to 30 September 1944. Batch 1 of the US Army fill-in (1 July to 30 September 1944: army group, army, corps and division level) is in, on top of the original 6-30 June proof of concept: 480 claims, 352 units of which 101 are active and 251 placeholders; see `docs/coverage.md`.
+
+## US Army fill-in: progress and plan
+
+Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 to 8 May 1945, at army group, army, corps and division level; no Marines. Work goes by period with a spot-check gate between batches (`review samples/spot_check_batch1.md` for Batch 1).
+
+| batch | period | status |
+|---|---|---|
+| 1 | 1 July - 30 September 1944 | **Done, awaiting spot check.** 268 new claims (209 division, 43 corps, 14 army, 2 army group); 25 placeholders became active (12th and 6th Army Groups; Third, Seventh and Ninth Armies; VI, XII, XV, XX and XVIII Airborne Corps; 3rd, 5th, 8th, 26th, 28th, 35th, 36th, 44th, 45th, 80th and 94th Infantry and 4th to 7th Armored Divisions), and a stub `ALL-AFHQ-000H` was added as Seventh Army's parent until 15 September. |
+| 2 | 1 October - 31 December 1944 | not started (Aachen, Hurtgen, Lorraine/Metz, Alsace, the Bulge) |
+| 3 | 1 January - 31 March 1945 | not started |
+| 4 | 1 April - 8 May 1945 | not started |
+
+**Not covered in Batch 1 (known gaps):**
+- Regiments, combat commands, separate battalions, cavalry groups and corps troops. Batch 1 is division level and up.
+- Corps rows are milestones from the Green Books and Wikipedia, so they are sparse: Batch 1 adds 2 rows each for V and XIX Corps and 1 for XVIII Airborne Corps; V Corps has no row between 18 June and 25 August and XIX Corps none between 21 June and 29 August (July and early August positions are not covered). First Army has no row for the 1 August handover to Hodges (headquarters place not found).
+- Army and army group headquarters places are mostly not sourced; those rows use a representative point at 50 km and confidence 0.3 (see the Batch 1 rules in `docs/methodology.md`).
+- CP-derived division rows use CMH command-post towns; towns that could not be geocoded safely were dropped, so some dates have no row (see `review_changes.md`).
+- The 39 US units still placeholders (III, XIII, XVI, XXI, XXII and XXIII Corps; Fifteenth Army; 17th Airborne; 8th to 14th, 16th and 20th Armored; 42nd and 63rd to 106th Infantry as listed in `docs/coverage.md`) arrive after September 1944 or were not in Batch 1's divisions; the 26th and 44th Divisions have only their arrival rows here.
+- The 82nd and 101st Airborne rows cover England and Market Garden's first days only; the later fighting in Holland is Batch 2.
+- German opponents are named only where a Green Book page states them; most US rows have an empty `engaged_with`.
 
 ## Known gaps in the current data
 
 **Coverage left out (no verified dates or too thin sources):**
-- British XII Corps (arrival date not found), II Canadian Corps and First Canadian Army (July); 12th Army Group (operational 1 August, HQ unknown).
+- British XII Corps (arrival date not found), II Canadian Corps and First Canadian Army (July); 12th Army Group HQ place (operational 1 August; Batch 1 gives a representative point only).
 - Free French, 1st Special Service Brigade and the 2nd Canadian Armoured Brigade after D-Day.
 - German Fifteenth Army, Luftwaffe units, the 319th Division (Channel Islands), 85th, 89th and 116th Panzer (arrive July).
-- US 5th, 8th, 28th and 35th Divisions and 4th Armored (July).
+- (US 5th, 8th, 28th and 35th Divisions and 4th Armored were covered in Batch 1.)
 - Battle groups: Hellmich (formed about 9-10 June), Hoffmann, Keil and Mueller (Cotentin, undated in the source), and the US 4th Division task forces are sourced but not yet added because the date or place was too vague.
 - Roughly 40-60 German units that fought in the sector (regiments, Kampfgruppen, Ost battalions) are only partially represented.
 

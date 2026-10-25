@@ -103,7 +103,7 @@ A JSON object (blank if no source gives figures):
 {"basis":"reported_actual","as_of":"1944-06-16","vehicles":{"tanks":85},"vehicle_count_type":"operational","source":"Wikipedia Operation Perch","note":"optional caveat"}
 ```
 
-Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the row date), `personnel` (integer), `vehicles` (object name -> integer count), `vehicle_count_type` (required when `vehicles` is present), `scope` (optional; `whole_unit`, `sub_force` or `sector`, see the `strength_json_scope` vocabulary; recommended whenever `personnel` is given, and the validator warns when it is missing), `source` (required), `note` (optional). A figure that a source gives for a task force, a line or a sector (for example "for the defense of the new line he had 2,500 men") is not the strength of the whole unit: mark it `sub_force` or `sector` and say so in `note`. At least one of `personnel` or `vehicles` must be present. Guns are not vehicles. Details and basis rules: [../docs/methodology.md](../docs/methodology.md).
+Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the row date), `personnel` (integer), `vehicles` (object name -> integer count), `vehicle_count_type` (required when `vehicles` is present), `scope` (`whole_unit`, `sub_force` or `sector`, see the `strength_json_scope` vocabulary; required whenever `personnel` is given, and the validator reports an error when it is missing; if no source says what a figure covers, leave the figure out), `source` (required), `note` (optional). A figure that a source gives for a task force, a line or a sector (for example "for the defense of the new line he had 2,500 men") is not the strength of the whole unit: mark it `sub_force` or `sector` and say so in `note`. At least one of `personnel` or `vehicles` must be present. Guns are not vehicles. Details and basis rules: [../docs/methodology.md](../docs/methodology.md).
 
 ## Vocabularies
 
@@ -278,13 +278,13 @@ What the numbers in strength_json.vehicles mean.
 
 ### strength_json_scope
 
-What part of the unit the figures in strength_json describe. Optional; recommended whenever personnel is given.
+What part of the unit the figures in strength_json describe. Required whenever personnel is given (the validator reports an error if it is missing).
 
 | value | meaning |
 |---|---|
 | `whole_unit` | The figure covers the whole unit (division, brigade, ...) as the source states it. |
 | `sub_force` | The figure covers only part of the unit: a battle group, a detachment or the force available for one task or line. |
-| `sector` | The figure covers the forces in a sector or area that is not the unit's own organisation (for example the defenders of a line or beach). |
+| `sector` | The figure covers the forces in a sector or area that is not the unit's own organisation (for example the defenders of a line or beach, or all the forces landed on a beach). |
 
 ### boolean
 

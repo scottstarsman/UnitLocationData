@@ -4,11 +4,11 @@
 Checks: header and field count of every file, field types, booleans, lat/long ranges,
 controlled vocabularies, unique claim_ids across the repository, unit_id matches both the
 file name and data/units.csv, rows sorted by date then claim_id, conflict-group integrity,
-strength_json structure, parent_unit_id resolves, command_relationships is valid JSON with allowed keys,
+strength_json structure (a scope is required whenever personnel is given), parent_unit_id resolves, command_relationships is valid JSON with allowed keys,
 relationship values and resolving unit_ids, every row has a source URL.
 
 Warning-only checks (printed as WARNING, never change the exit code; see docs/methodology.md, "Review guardrails"):
-strength_json with personnel but no scope, an attached relationship whose unit is not the parent_unit_id or with no
+an attached relationship whose unit is not the parent_unit_id or with no
 organic entry, a command relationship that takes effect after the row's date, a current_activity that is long
 (probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with list longer than three.
 Coordinate checks live in scripts/check_coordinates.py.
@@ -144,7 +144,7 @@ def check_strength_json(where, s, vocabs):
         if d['scope'] not in vocabs['strength_json_scope']['values']:
             err(where, 'strength_json: scope %r not in vocabulary strength_json_scope' % (d['scope'],))
     elif 'personnel' in d:
-        warn(where, 'strength_json has personnel but no scope (whole_unit, sub_force or sector); say what the figure covers')
+        err(where, 'strength_json has personnel but no scope: set scope to whole_unit, sub_force or sector (what the figure covers), or remove the personnel figure if no source says')
 
 
 REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'note'}

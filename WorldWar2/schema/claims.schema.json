@@ -280,7 +280,7 @@
     {
       "name": "strength_json",
       "type": "string",
-      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"scope\",\"source\",\"note\"}; scope (whole_unit, sub_force, sector) says what the figure covers. See docs/methodology.md. Blank where no source gives figures."
+      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"scope\",\"source\",\"note\"}; scope (whole_unit, sub_force, sector) says what the figure covers and is required whenever personnel is present. See docs/methodology.md. Blank where no source gives figures."
     },
     {
       "name": "notes",

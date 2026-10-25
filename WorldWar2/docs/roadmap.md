@@ -47,6 +47,7 @@ The review guardrails in `docs/methodology.md` (rules, `scope`, `effective_from`
 | Action-level rows (a separate `actions` table or structured `action_type` and `counterparty` fields) instead of free-text `current_activity` and `engaged_with` | free text let two actions blur into one (C0184) | new fields or table; breaking | **No for now**: one-row-one-action plus the warnings catches most cases; revisit if aggregation recurs |
 | Make the coordinate bounding-box check an error and run the offline coordinate script in CI | catches typos and sign errors automatically | CI change, no data change | **Yes** for the bounding box (error); keep the other coordinate checks as warnings |
 | Second-source rule for risky rows (attached relationships, strength figures, conflict groups) | these rows carried most of the review findings | process rule, no schema change | **Yes**: already described in the spot-check section; make it a release gate |
+| Review the migrated `organic` corps links of divisions that were attached to a corps (found on the 82nd Airborne, C0131) | the migration copied the old `parent_formation` as `organic`, but the sources read (CMH, Wikipedia) describe VII Corps control of the 82nd as operational | data review of the 82nd and 101st Airborne rows first, then any division whose corps changes; no schema change | **Yes**, next review pass: change to `attached` with an `unknown` standing-parent entry unless a source names one |
 
 ## Generated files at scale
 

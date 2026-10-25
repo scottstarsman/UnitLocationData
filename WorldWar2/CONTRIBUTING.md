@@ -10,7 +10,8 @@ Thank you for helping. This project is only useful if every row can be checked, 
 4. **One row is one claim** about one unit on one date. Rows are event-based; do not add filler rows for quiet days.
 5. **Use the vocabularies** in `schema/vocabularies.json`. If you need a new value (for example a new nationality or theater), add it there and in `schema/README.md` in the same pull request, with a one-line definition.
 6. **Keep ids stable.** `claim_id` is never reused or renumbered. New claims take the next free number (the highest existing id + 1). Do not delete a claim to "fix" it: correct it, or add a conflicting claim.
-7. **Licensing.** Do not copy text from copyrighted sources. Facts and short quotations with attribution are fine. Contributions are released under the data and code licences of this repository.
+7. **Command, strength and wording rules** (details in [docs/methodology.md](docs/methodology.md)): `parent_unit_id` is the operational parent *on the row's date* and the standing (organic) parent goes in `command_relationships` as `organic`; a temporary link is `attached` with the date it took effect (`effective_from`); a strength figure for a task force, line or sector gets `scope` `sub_force` or `sector`, not `whole_unit`; one row describes one documented action, in the sources' words, with no inferred direction or result.
+8. **Licensing.** Do not copy text from copyrighted sources. Facts and short quotations with attribution are fine. Contributions are released under the data and code licences of this repository.
 
 ## Add a claim to an existing unit
 
@@ -27,10 +28,24 @@ Thank you for helping. This project is only useful if every row can be checked, 
 4. A unit's `unit_name`, `nationality`, `echelon` and `branch` in every claim row must equal the values in `units.csv`.
 5. Add a claim row (above) and validate.
 
+## Per-row review checklist
+
+Use this for every new row, and for each row in a spot check (the reviewer should check against a source the author did not use). Answer each point from the source, not from the existing row.
+
+1. **Date.** Does the source put this unit at this place and in this action on this date (not the day before or after, not the day an order was given or a transfer took effect)?
+2. **Place.** Is the point the place the source names, within `precision_km`? If it stands for a line, sector or route, is it a midpoint with a radius that covers it? Is `location_represents` honest (headquarters, main body, front-line point, objective, ...)?
+3. **Action.** Does `current_activity` say only what the source says (no inferred direction, aim or result)? Is it one action? If several were documented, did you split the row or say in `notes` what is not documented?
+4. **Opponent.** Is every unit in `engaged_with` placed in this fight by a source (and not in a different action the same day)?
+5. **Parent and relationships.** Is `parent_unit_id` the operational parent on this date? Is the standing parent listed as `organic` (or `unknown`)? Is an `attached` entry dated by `effective_from` when a source gives the day, and is it in force on the row's date? Is an independent brigade or battle group not recorded as an organic part of the formation it fought under?
+6. **Strength.** Does each figure cover what `scope` says (whole unit, sub-force, sector)? Is `basis` right (reported count, establishment, estimate)? Are conflicting figures from other sources in `note`? Is `strength_status` justified for the whole unit?
+7. **Source, confidence and conflicts.** Does every cited source support this row's own claim? Does `confidence` follow the rubric after any change? If a source disagrees on date or place, is it a conflict group, and are the group's rows consistent with each other (including their coordinates)?
+8. **Record the result.** Note what was checked, what changed (before and after) and what was left alone and why, in the pull request or a review note. Change only what a source supports.
+
 ## Run the checks
 
 ```bash
-python scripts/validate.py
+python scripts/validate.py              # errors fail the check; WARNING lines are prompts to re-check a row
+python scripts/check_coordinates.py    # warnings only; add --geocode (network, 1 request/second) before a release
 python scripts/build.py
 git diff --stat build/        # build outputs must be committed with your change
 python scripts/build.py --check
@@ -43,7 +58,8 @@ python scripts/build.py --check
 - [ ] Nothing is invented; unknowns are `unknown` or blank.
 - [ ] New `claim_id`s are unique and follow the highest existing id; none were reused.
 - [ ] New units are in `data/units.csv` and the file name matches `unit_id`.
-- [ ] `python scripts/validate.py` passes.
+- [ ] `python scripts/validate.py` passes, and any WARNING lines for rows you touched are fixed or explained in `notes`.
+- [ ] The per-row review checklist above was applied to every new or changed row (a second person checks 15 rows or 10% of a large batch, chosen by risk as described in `docs/methodology.md`).
 - [ ] `python scripts/build.py` was run and the `build/` changes are committed.
 - [ ] New vocabulary values (if any) are documented in `schema/vocabularies.json` and `schema/README.md`.
 - [ ] Confidence and precision follow the rubric in `docs/methodology.md`.

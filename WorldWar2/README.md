@@ -12,7 +12,7 @@ An open, claim-based dataset of where World War II units were, when, and how sur
 data/claims/<nationality>/<unit_id>.csv   master copy: one file per unit, all claim columns
 data/units.csv                            unit table (one row per unit, including parent-only units)
 schema/                                   machine-readable schema + vocabularies + human-readable README
-scripts/                                  validate.py, build.py, split_from_flat.py, migrate_parent_formation.py (standard library only)
+scripts/                                  validate.py, check_coordinates.py, build.py, split_from_flat.py, migrate_parent_formation.py (standard library only)
 build/                                    GENERATED combined outputs (all_claims.csv, claims.geojson)
 docs/                                     methodology, sources, roadmap
 archive/v5_flat/                          the flat CSVs the per-unit files were first split from
@@ -36,6 +36,7 @@ Requires Python 3.8+ and nothing else (standard library only).
 python scripts/validate.py          # exit code 0 = data is valid
 python scripts/build.py             # regenerate build/ (all_claims.csv, claims.geojson)
 python scripts/build.py --check     # exit code 1 if build/ is stale (used by CI)
+python scripts/check_coordinates.py # coordinate warnings only (add --geocode before a release)
 ```
 
 Use the data directly: `build/all_claims.csv` (all claims, one file) or `build/claims.geojson` (Point features for GIS tools, `geojson.io`, QGIS, Leaflet).

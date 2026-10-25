@@ -143,6 +143,14 @@
       "unknown": "The source does not say what the count means (for example vehicles committed in one action)."
     }
   },
+  "strength_json_scope": {
+    "description": "What part of the unit the figures in strength_json describe. Optional; recommended whenever personnel is given.",
+    "values": {
+      "whole_unit": "The figure covers the whole unit (division, brigade, ...) as the source states it.",
+      "sub_force": "The figure covers only part of the unit: a battle group, a detachment or the force available for one task or line.",
+      "sector": "The figure covers the forces in a sector or area that is not the unit's own organisation (for example the defenders of a line or beach)."
+    }
+  },
   "boolean": {
     "description": "Boolean fields (established, disestablished, destroyed, parent_only) use lowercase text.",
     "values": {

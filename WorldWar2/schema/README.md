@@ -83,7 +83,7 @@ Rows are sorted by `unit_id`. `parent_only = true` units have no claim file; the
 - `commander`: rank and name as given by the sources; command changes are written like `X (killed 12 June); Y from that evening`.
 - `source`: URLs separated by ` | `, ending with a coordinate source note after ` ; ` (for example `; coords: Wikipedia`).
 - `sub_operation_name`: semicolon-separated if several (`Martlet; Epsom`).
-- `current_activity`: short lower-case phrase, no trailing period; free text, not a vocabulary.
+- `current_activity`: short lower-case phrase (about 120 characters at most), no trailing period; free text, not a vocabulary. Describe the one action the sources document on that date at that place, in the sources' own terms (who did what, where). Do not state a direction, aim or result the sources do not give (for example "attacking from the bridgehead" when the source says the attack was postponed or contained), and do not join several actions with `;`: use `notes` for the rest. `scripts/validate.py` warns on long or hedged activities.
 
 ## command_relationships
 
@@ -93,7 +93,7 @@ A JSON list written on one line (CSV-quoted like `strength_json`), or the plain 
 [{"unit_id":"GER-SSPZ-002D","name":"German 2nd SS Panzer Division Das Reich","relationship":"organic"},{"unit_id":"GER-PZ-LEHRD","name":"German Panzer Lehr Division","relationship":"attached","note":"Placed under Panzer Lehr on arrival"}]
 ```
 
-Keys: `unit_id` (required; a unit id from `data/units.csv`, or `null` if the formation is not in the table), `name` (required), `relationship` (required, see the `relationship` vocabulary below) and `note` (optional string). No other keys. `parent_unit_id` is the operational parent: the formation the unit was attached to or operating under on that date, otherwise its standing parent. It must also appear in the list. In the example the row's `parent_unit_id` is `GER-PZ-LEHRD` and the organic parent stays in the list. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a `parent_only` unit if it has no claims) rather than using `null`. The original free text and how it was converted are documented in `scripts/migrate_parent_formation.py`.
+Keys: `unit_id` (required; a unit id from `data/units.csv`, or `null` if the formation is not in the table), `name` (required), `relationship` (required, see the `relationship` vocabulary below), `effective_from` (optional date `YYYY-MM-DD`: the day this relationship took effect, when a source gives it; an entry that takes effect after the row's date draws a validator warning) and `note` (optional string). No other keys. `parent_unit_id` is the **operational parent on the row's date**: the formation the unit was attached to or operating under that day, otherwise its standing parent. It must also appear in the list. The **organic (standing) parent is recorded only here**, with relationship `organic`: when an `attached` or `operational_control` entry exists, `parent_unit_id` must be that entry and the standing parent stays in the list as `organic` (an independent brigade attached to a division for an assault is `attached` to the division and `organic` to the army or corps that holds it). If the standing parent is not known, say so with an entry of relationship `unknown`. An entry never describes a relationship that only started on a later date: use `effective_from` and let the row's date decide which entries apply. In the example the row's `parent_unit_id` is `GER-PZ-LEHRD` and the organic parent stays in the list. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a `parent_only` unit if it has no claims) rather than using `null`. The original free text and how it was converted are documented in `scripts/migrate_parent_formation.py`.
 
 ## strength_json
 
@@ -103,7 +103,7 @@ A JSON object (blank if no source gives figures):
 {"basis":"reported_actual","as_of":"1944-06-16","vehicles":{"tanks":85},"vehicle_count_type":"operational","source":"Wikipedia Operation Perch","note":"optional caveat"}
 ```
 
-Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the row date), `personnel` (integer), `vehicles` (object name -> integer count), `vehicle_count_type` (required when `vehicles` is present), `source` (required), `note` (optional). At least one of `personnel` or `vehicles` must be present. Guns are not vehicles. Details and basis rules: [../docs/methodology.md](../docs/methodology.md).
+Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the row date), `personnel` (integer), `vehicles` (object name -> integer count), `vehicle_count_type` (required when `vehicles` is present), `scope` (optional; `whole_unit`, `sub_force` or `sector`, see the `strength_json_scope` vocabulary; recommended whenever `personnel` is given, and the validator warns when it is missing), `source` (required), `note` (optional). A figure that a source gives for a task force, a line or a sector (for example "for the defense of the new line he had 2,500 men") is not the strength of the whole unit: mark it `sub_force` or `sector` and say so in `note`. At least one of `personnel` or `vehicles` must be present. Guns are not vehicles. Details and basis rules: [../docs/methodology.md](../docs/methodology.md).
 
 ## Vocabularies
 
@@ -275,6 +275,16 @@ What the numbers in strength_json.vehicles mean.
 | `operational` | Vehicles in working order. |
 | `on_hand` | Vehicles on hand, working order not stated. |
 | `unknown` | The source does not say what the count means (for example vehicles committed in one action). |
+
+### strength_json_scope
+
+What part of the unit the figures in strength_json describe. Optional; recommended whenever personnel is given.
+
+| value | meaning |
+|---|---|
+| `whole_unit` | The figure covers the whole unit (division, brigade, ...) as the source states it. |
+| `sub_force` | The figure covers only part of the unit: a battle group, a detachment or the force available for one task or line. |
+| `sector` | The figure covers the forces in a sector or area that is not the unit's own organisation (for example the defenders of a line or beach). |
 
 ### boolean
 

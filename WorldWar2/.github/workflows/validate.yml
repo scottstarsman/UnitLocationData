@@ -16,6 +16,9 @@ jobs:
           python-version: "3.x"
       - name: Validate claims and units
         run: python scripts/validate.py
+      - name: Coordinate checks (warnings only)
+        run: python scripts/check_coordinates.py
+        continue-on-error: true
       - name: Build combined outputs
         run: python scripts/build.py
       # build/ holds only all_claims.csv and claims.geojson (no monthly or per-theater exports)

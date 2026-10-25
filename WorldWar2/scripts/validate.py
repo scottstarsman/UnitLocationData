@@ -7,7 +7,13 @@ file name and data/units.csv, rows sorted by date then claim_id, conflict-group 
 strength_json structure, parent_unit_id resolves, command_relationships is valid JSON with allowed keys,
 relationship values and resolving unit_ids, every row has a source URL.
 
-Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found)
+Warning-only checks (printed as WARNING, never change the exit code; see docs/methodology.md, "Review guardrails"):
+strength_json with personnel but no scope, an attached relationship whose unit is not the parent_unit_id or with no
+organic entry, a command relationship that takes effect after the row's date, a current_activity that is long
+(probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with list longer than three.
+Coordinate checks live in scripts/check_coordinates.py.
+
+Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found; warnings do not count)
 """
 import datetime
 import json
@@ -19,10 +25,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 
 errors = []
+warnings = []
+
+ACTIVITY_MAX_CHARS = 120
+HEDGE_WORDS = re.compile(r'\b(probably|likely|presumably|apparently|possibly|perhaps|inferred|may have)\b', re.I)
 
 
 def err(where, msg):
     errors.append('%s: %s' % (where, msg))
+
+
+def warn(where, msg):
+    warnings.append('%s: %s' % (where, msg))
 
 
 def rel(path):
@@ -96,7 +110,7 @@ def check_strength_json(where, s, vocabs):
     if not isinstance(d, dict):
         err(where, 'strength_json must be a JSON object')
         return
-    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'source', 'note'}
+    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'source', 'note'}
     for k in d:
         if k not in allowed:
             err(where, 'strength_json: unknown key %r' % k)
@@ -126,9 +140,14 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json: vehicle_count_type without vehicles')
     if 'personnel' not in d and 'vehicles' not in d:
         err(where, 'strength_json: needs personnel and/or vehicles')
+    if 'scope' in d:
+        if d['scope'] not in vocabs['strength_json_scope']['values']:
+            err(where, 'strength_json: scope %r not in vocabulary strength_json_scope' % (d['scope'],))
+    elif 'personnel' in d:
+        warn(where, 'strength_json has personnel but no scope (whole_unit, sub_force or sector); say what the figure covers')
 
 
-REL_KEYS = {'unit_id', 'name', 'relationship', 'note'}
+REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'note'}
 
 
 def check_command_relationships(where, row, units, vocabs):
@@ -175,10 +194,28 @@ def check_command_relationships(where, row, units, vocabs):
             err(where, 'command_relationships: relationship %r not in vocabulary relationship' % e.get('relationship'))
         if 'note' in e and not isinstance(e['note'], str):
             err(where, 'command_relationships: note must be a string')
+        if 'effective_from' in e:
+            try:
+                if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(e['effective_from'])):
+                    raise ValueError
+                datetime.datetime.strptime(e['effective_from'], '%Y-%m-%d')
+            except ValueError:
+                err(where, 'command_relationships: effective_from must be YYYY-MM-DD')
+            else:
+                if e['effective_from'] > row['date']:
+                    warn(where, 'command_relationships: %s is effective from %s, after the row date %s' % (
+                        e.get('unit_id'), e['effective_from'], row['date']))
     if len(ids) != len(set(ids)):
         err(where, 'command_relationships lists the same unit_id twice')
     if pid not in ('', 'unknown') and pid not in ids:
         err(where, 'parent_unit_id %s is not listed in command_relationships' % pid)
+    entries = [e for e in d if isinstance(e, dict)]
+    ops = [e for e in entries if e.get('relationship') in ('attached', 'operational_control')]
+    if ops and pid not in ('', 'unknown') and pid not in [e.get('unit_id') for e in ops]:
+        warn(where, 'an attached/operational_control entry exists but parent_unit_id %s is not one of them (parent_unit_id is the operational parent)' % pid)
+    if any(e.get('relationship') == 'attached' for e in entries) and not any(
+            e.get('relationship') in ('organic', 'unknown') for e in entries):
+        warn(where, 'attached entry without an organic (standing parent) entry; record the standing parent or an "unknown" entry')
     u = units.get(row['unit_id'])
     if u and u['parent_unit_id'] and not any(
             isinstance(e, dict) and e.get('unit_id') == u['parent_unit_id'] and e.get('relationship') == 'organic' for e in d):
@@ -281,6 +318,13 @@ def main():
                 err(where, 'claim_status %s requires a conflict_group_id' % row['claim_status'])
             check_strength_json(where, row['strength_json'], vocabs)
             check_command_relationships(where, row, units, vocabs)
+            act = row['current_activity']
+            if len(act) > ACTIVITY_MAX_CHARS:
+                warn(where, 'current_activity is %d characters (> %d): one row should describe one documented action; put the rest in notes' % (len(act), ACTIVITY_MAX_CHARS))
+            if HEDGE_WORDS.search(act):
+                warn(where, 'current_activity contains a hedge word (%s): state only what the source documents; put doubt in notes' % HEDGE_WORDS.search(act).group(0))
+            if row['engaged_with'] and row['engaged_with'] != 'unknown' and len([x for x in row['engaged_with'].split(';') if x.strip()]) > 3:
+                warn(where, 'engaged_with lists more than three opponents: check that they were fought in one action')
             row['_where'] = where
             all_rows.append(row)
 
@@ -309,6 +353,10 @@ def main():
         if len({r['date'] for r in rs}) < 2 and len({r['latitude'] + r['longitude'] for r in rs}) < 2:
             err(where, 'competing claims should differ in date or place')
 
+    for w in warnings:
+        print('WARNING', w)
+    if warnings:
+        print('%d warning(s): prompts to re-check a row, not errors\n' % len(warnings))
     if errors:
         for e in errors:
             print('ERROR', e)

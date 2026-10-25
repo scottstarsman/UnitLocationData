@@ -32,6 +32,12 @@ Every unit has one `unit_id` and one row in `data/units.csv`. Battle groups (Kam
 - Parents named without an id (Fifteenth Army, OKW, SHAEF) were added to `units.csv` as `parent_only` units; SHAEF is nationality `Allied`.
 - `unknown` is kept where the source did not give a parent; the migration adds no relationship that the old text or the row's notes do not support.
 
+**Operational parent versus organic parent (rule).** `parent_unit_id` answers "who commanded this unit **on this row's date**"; the standing (organic) parent is never put only in `parent_unit_id`: it is recorded in `command_relationships` as `organic`, and a temporary parent as `attached` (or `operational_control`, `reserve`). So a row for an independent brigade that landed under a division's command has the division as `parent_unit_id` (relationship `attached`) and the army or corps that holds the brigade as the `organic` entry; it is not an organic part of the division (review finding, C0001). Three further rules:
+
+- **Dates decide.** An attachment applies from the day a source says it took effect, not from the day of the event it enabled. Put that day in the entry's optional `effective_from`, and keep a row's relationship in line with its own date: the 82nd Airborne's bridgehead attack was ordered for 17 June under VII Corps, and control passed to VIII Corps on 19 June (C0131, C0141).
+- **Record "unknown", do not guess.** If a source gives the attachment but not the standing parent, add an entry with relationship `unknown` (the validator warns about an `attached` entry with no `organic` or `unknown` entry beside it).
+- **A relationship is not an organisation chart.** "Under command for the assault" or "attached" does not make the unit part of the other formation; `organic` is reserved for the standing parent a source names without an attachment qualifier.
+
 ## precision_km
 
 `precision_km` is a **judgment estimate of the radius, in kilometres, within which the unit (or its main body) probably was**. It is not a surveyed error. Values are banded: 1, 5, 10, 25, 50 (and 3 once, as a manual override for a village-scale point). Starting rules (then reviewed row by row):
@@ -85,17 +91,36 @@ An optional JSON object with sourced strength numbers. Never estimate numbers yo
 - `personnel`: integer number of people, as stated by the source.
 - `vehicles`: object of vehicle name to integer count. Only counted vehicles (tanks, assault guns, half-tracks). Guns are not vehicles and are left out.
 - `vehicle_count_type`: `operational` (working order), `on_hand` (on hand, working order not stated) or `unknown` (the source does not say what the count means). Required when `vehicles` is present.
-- `source`: short source reference. `note`: optional caveat or a conflicting figure from another source.
+- `scope` (optional, recommended with `personnel`): `whole_unit`, `sub_force` or `sector`. A figure given for a line, a task force or a sector (CMH: Kraiss "had 2,500 men, 14 guns ... 5 tanks" for the new Elle line, C0057) is **not** the strength of the whole division: mark it `sub_force` or `sector`, say so in `note`, and do not set `strength_status` as if it were a whole-unit count unless a source says so. Do not subtract it from, or compare it with, an establishment figure.
+- `source`: short source reference. `note`: optional caveat or a conflicting figure from another source (for example 17,200 on paper versus 12,000 for D-Day).
 - Only fields with sourced numbers are included. Where sources conflict, the row's `notes` or the `note` field names the other figure.
 - `strength_status` (`full`, `reduced`, `heavily_depleted`, `destroyed`, `unknown`) is set only when a source states strength or losses; it is deliberately sparse.
 
 In the proof of concept 21 of 212 rows carry figures (16 estimate, 5 reported_actual, 0 authorized_organization), mostly operational tank counts for panzer divisions and landing tallies for Allied formations. This is a sparse, sourced field, not a full order-of-battle strength table.
+
+## Writing a row: one action, documented wording
+
+- **One row, one action.** A row says what a unit is documented as doing on one date at one place. If the sources describe several actions on that date at different places or against different opponents, write one row per action (new `claim_id`s are allowed; ids are never reused) or, when the pieces cannot be separated, describe the connected action and say in `notes` what is and is not documented. Do not put a day's whole story in `current_activity` (review finding, C0184: a company of Panzer IVs was documented in a three-part fight).
+- **Say only what the sources say.** `current_activity` uses the sources' own terms; it does not add a direction, aim or outcome the source does not give. "Attacking from the Orne bridgehead" was overstated for I Corps on 12 June, when the attack was postponed, limited and contained, and the bridgehead itself was under German attack (C0084). Words such as "probably", "likely" or "inferred" belong in `notes`, not in `current_activity`; the validator warns about them and about activities over 120 characters.
+- **Name the real opponent.** `engaged_with` lists units a source places in the fight at that place and time, not the formation next door that a source mentions in a different action (C0184: the Mouen fight was against 11th Armoured Division elements, the Grainville attack by the 15th (Scottish) Division was a different action). More than three opponents is a prompt to check whether the row mixes actions.
+- **Organisational level.** When a sub-unit did the fighting (a company, a battle group), the row for the parent unit records that element's part and says so in `notes`.
+- **Coordinates.** A coordinate must lie within `precision_km` of what the row says it represents. A line or sector is represented by a midpoint with a radius that covers it, not by one end (C0057), and the two rows of a conflict group should not be farther apart than their radii unless the disagreement is about place and says so (C0131 was left near La Haye-du-Puits while C0141 had been corrected to Etienville).
 
 ## Dates, time and places
 
 - Dates are calendar dates in local historical time; no time of day is recorded (put it in `notes`).
 - Place names follow the source; historical names and later renamings are noted in `notes` where known.
 - Coordinates are WGS84. A coordinate may be a representative point (see `location_represents` and the "(point = X)" convention in `location_name`) rather than the exact position of the unit.
+
+## Review guardrails
+
+`python scripts/validate.py` checks structure and, since the first spot check, also prints **warnings** (never errors; exit code unchanged): `strength_json` with `personnel` but no `scope`; an `attached` or `operational_control` entry that is not the `parent_unit_id`; an `attached` entry without an `organic`/`unknown` entry; a relationship whose `effective_from` is after the row's date; a `current_activity` over 120 characters or with a hedge word; more than three opponents in `engaged_with`. Existing rows that trigger a warning are a to-do list for the next review pass, not a defect in the check.
+
+`python scripts/check_coordinates.py` prints coordinate warnings (it exits 0): points outside a theater bounding box, the same `location_name` at points more than 3 km apart, conflict-group claims farther apart than their precision radii, and a unit that moves more than 80 km/day between preferred rows. With `--geocode` (add `--country fr` for a French campaign) it also fetches up to ten geocode candidates (OpenStreetMap Nominatim, one request per second, cached in `.cache/`) for the place named in `location_name` and warns when even the nearest candidate is farther than max(15 km, twice `precision_km`) from the point. Run it before a release and after adding many rows; it is not run in CI. In its first full run (212 rows) the geocode check flagged 4 rows, all false positives caused by name matching (a place written without accents, short names such as Vire and Caumont, an ambiguous Pont-l'Abbe), and could not geocode about 45 sector, line and axis names at all, so treat it as a prompt only and read each warning against the row; the offline conflict check, in the same run, found the C0131/C0141 disagreement. A warning means "look at this row", and a deliberate place disagreement or an `approach_route` row can be a correct reason to keep the data.
+
+## Spot-check review
+
+Spot checks (sampling about 15 rows, ideally by someone who did not write them) find different problems from the validator. Choose the sample by risk, not at random only: all rows with an `attached` or `operational_control` entry, rows with `strength_json`, rows in a conflict group, rows whose `current_activity` is long, and rows near the end of a long march. For each sampled row, apply the per-row checklist in [CONTRIBUTING.md](../CONTRIBUTING.md#per-row-review-checklist) against a source that was **not** used to write the row, record the outcome (confirmed / corrected / disputed) and the change in a review note, and fix only what the sources support. The first review (five of 15 rows corrected) is the origin of the rules above.
 
 ## Provenance of the first import
 

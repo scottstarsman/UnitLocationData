@@ -33,6 +33,21 @@ Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims,
 7. **Tooling**: a dataset browser (map and timeline) generated from `build/claims.geojson`, CSV and GeoJSON releases with a changelog, a Frictionless data package descriptor, and unit tests for the scripts.
 8. **Community**: issue and PR templates, a review rota for source checking, and tagged releases with a changelog.
 
+## Proposed changes after the first spot check (not implemented: they change the schema or the process)
+
+The review guardrails in `docs/methodology.md` (rules, `scope`, `effective_from`, validator warnings, `scripts/check_coordinates.py`, the per-row checklist) are in place and are additive. These larger changes were considered and left as proposals; each has a recommendation.
+
+| proposal | why | change | recommendation |
+|---|---|---|---|
+| Make `strength_json.scope` mandatory when `personnel` is present | whole-unit versus sub-force figures were confused (C0057); 12 existing rows still lack a scope | turn the validator warning into an error after backfilling those rows | **Yes**, after the next review pass has backfilled the 12 rows |
+| A `command_relations` table (unit, related unit, relationship, start, end, source) instead of the JSON cell | attachments are time-dependent and JSON in CSV is hard to query or review; `effective_from` is only a stop-gap | new table, claims keep a derived `parent_unit_id`; breaking | **Yes**, when the dataset grows beyond one campaign; not before |
+| Optional `verification_status`, `reviewed_by`, `reviewed_on` columns on claims | to know which rows were independently checked and to sample the rest by risk | additive nullable columns | **Yes**, soon: cheap and it turns spot checks into coverage |
+| Per-row `evidence` (quote or page reference) and `coordinate_source` columns | a reviewer re-checks a row faster, and a coordinate can be traced (already in the scale-up plan) | additive nullable columns | **Yes**, high value |
+| Place table with a geometry type (point, line, area) and a representative point | a front line or sector (the Elle line) is not a point; midpoint plus radius is a workaround | new `places` table referenced by claims; breaking | **Yes at scale**; the midpoint rule is enough for now |
+| Action-level rows (a separate `actions` table or structured `action_type` and `counterparty` fields) instead of free-text `current_activity` and `engaged_with` | free text let two actions blur into one (C0184) | new fields or table; breaking | **No for now**: one-row-one-action plus the warnings catches most cases; revisit if aggregation recurs |
+| Make the coordinate bounding-box check an error and run the offline coordinate script in CI | catches typos and sign errors automatically | CI change, no data change | **Yes** for the bounding box (error); keep the other coordinate checks as warnings |
+| Second-source rule for risky rows (attached relationships, strength figures, conflict groups) | these rows carried most of the review findings | process rule, no schema change | **Yes**: already described in the spot-check section; make it a release gate |
+
 ## Generated files at scale
 
 The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are committed today because the proof of concept is small. The per-unit files in `data/claims/` are the master copy; there are deliberately no monthly or per-theater exports. Once the dataset grows (for example the whole war), stop committing the generated combined files and publish them as release assets instead (build them in CI on each tagged release), so the repository history stays small and diffs stay readable. At that point remove `build/` from version control, add it to `.gitignore`, and drop the "build is up to date" check from the workflow.

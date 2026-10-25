@@ -107,7 +107,7 @@
     {
       "name": "command_relationships",
       "type": "string",
-      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null if the formation is not in units.csv>\", \"name\": \"<formation name>\", \"relationship\": \"organic|attached|operational_control|reserve|unknown\", \"note\": \"<optional>\"}]. Allowed keys: unit_id, name, relationship, note. \"unknown\" (not JSON) or blank if nothing is known.",
+      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null if the formation is not in units.csv>\", \"name\": \"<formation name>\", \"relationship\": \"organic|attached|operational_control|reserve|unknown\", \"note\": \"<optional>\"}]. Allowed keys: unit_id, name, relationship, effective_from (optional YYYY-MM-DD), note. parent_unit_id is the operational parent on the row's date; the organic (standing) parent is recorded only here, as an organic entry. \"unknown\" (not JSON) or blank if nothing is known.",
       "format": "json",
       "jsonVocabulary": {
         "relationship": "relationship"
@@ -258,7 +258,7 @@
     {
       "name": "current_activity",
       "type": "string",
-      "description": "Short phrase saying what the unit is doing on that date at that place; lower-case, free text.",
+      "description": "Short phrase (about 120 characters at most) saying the one action the sources document for the unit on that date at that place; lower-case, free text. No inferred direction or result; extra detail goes in notes.",
       "constraints": {
         "required": true
       }
@@ -280,7 +280,7 @@
     {
       "name": "strength_json",
       "type": "string",
-      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"source\",\"note\"}. See docs/methodology.md. Blank where no source gives figures."
+      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"scope\",\"source\",\"note\"}; scope (whole_unit, sub_force, sector) says what the figure covers. See docs/methodology.md. Blank where no source gives figures."
     },
     {
       "name": "notes",

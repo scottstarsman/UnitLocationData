@@ -1,6 +1,6 @@
 # Roadmap and known gaps
 
-Status: Western Front, 6 June to 30 September 1944. Batch 1 of the US Army fill-in (1 July to 30 September 1944: army group, army, corps and division level) is in, on top of the original 6-30 June proof of concept: 480 claims, 352 units of which 101 are active and 251 placeholders; see `docs/coverage.md`.
+Status: Western Front, 6 June to 30 September 1944. Batch 1 of the US Army fill-in (1 July to 30 September 1944: army group, army, corps and division level) is in, on top of the original 6-30 June proof of concept: 514 claims after the Batch 1 review and the command-transitions pass (called Batch 2 below), 353 units of which 101 are active; see `docs/coverage.md`.
 
 ## US Army fill-in: progress and plan
 
@@ -9,13 +9,14 @@ Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 t
 | batch | period | status |
 |---|---|---|
 | 1 | 1 July - 30 September 1944 | **Done, awaiting spot check.** 268 new claims (209 division, 43 corps, 14 army, 2 army group); 25 placeholders became active (12th and 6th Army Groups; Third, Seventh and Ninth Armies; VI, XII, XV, XX and XVIII Airborne Corps; 3rd, 5th, 8th, 26th, 28th, 35th, 36th, 44th, 45th, 80th and 94th Infantry and 4th to 7th Armored Divisions), and a stub `ALL-AFHQ-000H` was added as Seventh Army's parent until 15 September. |
-| 2 | 1 October - 31 December 1944 | not started (Aachen, Hurtgen, Lorraine/Metz, Alsace, the Bulge) |
-| 3 | 1 January - 31 March 1945 | not started |
-| 4 | 1 April - 8 May 1945 | not started |
+| 2 | 25 July - 15 September 1944 command transitions (V, VII, VIII, XII, XV, XIX, XX Corps; First, Third, Ninth Army; 12th Army Group) | **Done, awaiting spot check** (`review samples/spot_check_batch2.md`): 32 new claims, relationship regeneration of 213 table-derived rows, 2 explained warnings added; see "Batch 2" in `review_changes.md` |
+| 3 | 1 October - 31 December 1944 | not started (Aachen, Hurtgen, Lorraine/Metz, Alsace, the Bulge) |
+| 4 | 1 January - 31 March 1945 | not started |
+| 5 | 1 April - 8 May 1945 | not started |
 
 **Not covered in Batch 1 (known gaps):**
 - Regiments, combat commands, separate battalions, cavalry groups and corps troops. Batch 1 is division level and up.
-- Corps rows are milestones from the Green Books and Wikipedia, so they are sparse: Batch 1 adds 2 rows each for V and XIX Corps and 1 for XVIII Airborne Corps; V Corps has no row between 18 June and 25 August and XIX Corps none between 21 June and 29 August (July and early August positions are not covered). First Army has no row for the 1 August handover to Hodges (headquarters place not found).
+- Corps rows are milestones from the Green Books and Wikipedia, so they are sparse. Batch 2 (command transitions, 25 July to 15 September 1944) added rows for V, VII, VIII, XII, XV, XIX and XX Corps and for First Army on 1 August; outside that window the corps gaps remain, and the Seventh Army place on 15 September is still unlocated.
 - Army and army group headquarters places are mostly not sourced; those rows use a representative point at 50 km and confidence 0.3 (see the Batch 1 rules in `docs/methodology.md`).
 - CP-derived division rows use CMH command-post towns; towns that could not be geocoded safely were dropped, so some dates have no row (see `review_changes.md`).
 - The 39 US units still placeholders (III, XIII, XVI, XXI, XXII and XXIII Corps; Fifteenth Army; 17th Airborne; 8th to 14th, 16th and 20th Armored; 42nd and 63rd to 106th Infantry as listed in `docs/coverage.md`) arrive after September 1944 or were not in Batch 1's divisions; the 26th and 44th Divisions have only their arrival rows here.
@@ -101,7 +102,7 @@ A second reviewer checked the 15-row Batch 1 spot check. Their schema and proces
 | `event_definition` | **Done as a notes convention** (`Event definition:`), no new column. |
 | Notes convention for separate sources | **Done** (`Event date:`, `Relationship:`, `Location:`, `Coordinates:`); applied to the 15 reviewed rows only. |
 | Scripted audit of the 268 new rows | **Done**: `scripts/audit_command_location.py`. Its geocoding check found a wrong place (Mesnil-St-Martin) that three rows used. |
-| Batch 2 (V, VII, XII, XV, XX Corps command transitions, 25 July to 15 September 1944; Brittany army transitions) | **Not started** (not authorised). |
+| Batch 2 (V, VII, XII, XV, XX Corps command transitions, 25 July to 15 September 1944; Brittany army transitions) | **Done** (authorised 25 October 2026); see the Batch 2 section below and `review_changes.md`. |
 
 ## Generated files at scale
 
@@ -112,3 +113,16 @@ The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are commit
 - Per-day interpolation versus pure event rows (currently pure events).
 - Whether a unit's primary `theater` should be derived from its claims once several theaters exist (currently set by hand in `units.csv`).
 - Whether `command_relationships` should become a separate time-dependent relations table (one row per unit, formation and date range) instead of a JSON cell, for example once whole-war data makes the cell awkward to query.
+
+## Batch 2: command transitions, 25 July - 15 September 1944 (25 October 2026)
+
+Done: First/Third/Ninth Army and 12th Army Group handovers (1 August; 1 September; Ninth Army 5 and 10 September), V, VII, VIII, XII, XV, XIX and XX Corps command posts and transitions, the 2nd Armored/XIX Corps sequence, Cobra division rows (1st, 2nd Armored, 3rd Armored), the 6th Armored and 83rd Divisions under Ninth Army, and a regeneration of every table-derived relationship from the CMH tables (army and army-group columns now `assigned`/`attached`/`operational_control`; corps stays `unspecified_subordination` except where a Green Book page says attached).
+
+Still open after Batch 2:
+- Seventh Army headquarters place on 15 September 1944 (not found; row C0296 stays an unlocated representative point at confidence 0.3).
+- VIII Corps headquarters on 5 and 10 September: only the 18 August move to Lesneven is documented; those two rows keep Brest-sector points.
+- First Army 1 August headquarters: Vouilly (monument) or Saint-Gilles (CMH list as compiled by World War II by Day) differ by about 23 km (group G015).
+- The 83rd Division's brief simultaneous attachment to VIII and XV Corps (Breakout p428) is not given a row: the table shows XV Corps on 1 August and VIII Corps on 3 August and no source dates the overlap.
+- Regiment-level Cobra rows (the 4th Division's 8th Infantry at La Chapelle-en-Juger, the 9th and 30th Divisions on 25 July) were not added: the pages read here do not give a place and date together.
+- The corps and army lists from World War II by Day are a secondary compilation; replace them with the CMH ETO-OB corps and army pages if those become reachable.
+- 2nd French Armoured Division attachment to XV Corps (Breakout p496) is not recorded (French unit not yet active).

@@ -310,6 +310,10 @@ def check_command_relationships(where, row, units, vocabs):
         err(where, 'parent_unit_id %s is not listed in command_relationships' % pid)
     entries = [e for e in d if isinstance(e, dict)]
     ops = [e for e in entries if e.get('relationship') in ('attached', 'operational_control')]
+    # An attachment to a higher headquarters than the parent (e.g. a division in a corps zone that the CMH table shows attached to an army)
+    # does not make that army the immediate parent, so it is not flagged.
+    pech = ECH_RANK.get((units.get(pid) or {}).get('echelon'), 0)
+    ops = [e for e in ops if ECH_RANK.get((units.get(e.get('unit_id')) or {}).get('echelon'), 0) <= pech or e.get('unit_id') not in units]
     if ops and pid not in ('', 'unknown') and pid not in [e.get('unit_id') for e in ops]:
         warn(where, 'an attached/operational_control entry exists but parent_unit_id %s is not one of them (parent_unit_id is the operational parent)' % pid)
     if any(e.get('relationship') == 'attached' for e in entries) and not any(

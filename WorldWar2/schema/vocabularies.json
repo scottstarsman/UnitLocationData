@@ -29,11 +29,16 @@
     }
   },
   "relationship": {
-    "description": "Meaning of the relationship field in each object of command_relationships.",
+    "description": "Meaning of the relationship field in each object of command_relationships. Each entry may carry effective_from, effective_to and date_basis (see schema/README.md).",
     "values": {
-      "organic": "The standing parent: the formation the original source names as the unit's parent without an attachment qualifier, or a battle group's own division. Not a claim that the link was permanent.",
-      "attached": "The unit was attached to this formation on the row's date (the operational parent).",
-      "operational_control": "This formation controlled the unit operationally without it being a standing or attached part of it.",
+      "organic": "A constituted component of the formation: its own regiments, battalions or battle groups, or a unit that is part of the parent's table of organisation. Do not use for a division, corps or army that is assigned to a higher headquarters (use assigned or unspecified_subordination).",
+      "assigned": "The unit was assigned to this formation: the source says 'assigned', or names the unit as a standing member of the headquarters' order of battle for a period not described as temporary, with no attachment language. Includes army to army group and corps to army.",
+      "attached": "The unit was attached to this formation (a temporary or task-organised subordination) on the row's date; use only where the source says attached or shows a temporary tasking.",
+      "unspecified_subordination": "The source shows the unit subordinate to this formation on the date but does not distinguish assigned from attached (for example the CMH ETO-OB assignment tables, whose columns are combined). Never convert to attached or assigned without a source.",
+      "operational_control": "This formation exercised operational (tactical) control over the unit, whether or not the unit was one of its assigned or attached components.",
+      "administrative_control": "This formation held administrative, supply or personnel responsibility for the unit while another formation had operational control.",
+      "supporting": "The unit was in direct support of this formation without being part of it.",
+      "coordinating": "This formation coordinated the unit's operations with others without commanding it (for example 21st Army Group's coordination of both army groups until 1 September 1944).",
       "reserve": "The unit was held in this formation's (or the high command's) reserve.",
       "unknown": "A formation is named by the source but how it relates to the unit is not stated."
     }
@@ -126,6 +131,8 @@
       "command_change": "Commander or command responsibility changes.",
       "hq_move": "Headquarters moves.",
       "regroup": "Assembly, reorganisation, relief in place.",
+      "activation": "A formation becomes operational, or is activated or constituted as a headquarters or unit (for example 12th Army Group becoming operational on 1 August 1944).",
+      "redesignation": "The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps).",
       "other": "Headquarters decisions, air attack on a headquarters, units at their station."
     }
   },
@@ -192,6 +199,27 @@
       "WPDRAGOON": "en.wikipedia 'Operation Dragoon order of battle'.",
       "WPNORDWIND": "en.wikipedia 'Operation Nordwind'.",
       "WPUNIT": "The unit's own en.wikipedia article (no Wikipedia order-of-battle page above links to it)."
+    }
+  },
+  "relationship_date_basis": {
+    "description": "Where the effective_from / effective_to dates of a command relationship come from (optional key date_basis).",
+    "values": {
+      "order": "A named order or message gives the date.",
+      "assignment_table": "A dated assignment table such as CMH ETO-OB. The table date may differ from the day command actually passed.",
+      "narrative": "A narrative history or reference work states the date.",
+      "inferred": "The date is inferred from other rows; treat as approximate."
+    }
+  },
+  "location_basis": {
+    "description": "How the claim's coordinate relates in time and place to the claim's date (optional claim column location_basis). Where a coordinate comes from a different date, record that date in location_date and the offset in location_temporal_offset_days.",
+    "values": {
+      "documented_on_date": "A source places the unit, event or headquarters at this location on the claim's date.",
+      "nearest_later_command_post": "The coordinate is the nearest command post listed after the claim's date; the position on the date itself is not documented.",
+      "nearest_earlier_command_post": "The coordinate is the nearest command post listed before the claim's date; the position on the date itself is not documented.",
+      "representative_point": "A point chosen to stand for an area or front (not a documented position).",
+      "town_centroid": "The coordinate is the centre of a named town or commune; the source does not locate the headquarters or event more precisely.",
+      "operational_area": "A point inside the area of operations (sector, landing area, bridgehead) rather than a headquarters or exact position.",
+      "inferred": "Inferred from the unit's movements or other rows rather than stated."
     }
   }
 }

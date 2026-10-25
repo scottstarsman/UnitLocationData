@@ -46,6 +46,9 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `strength_status` | string | yes | Qualitative strength (see vocabulary). | vocabulary `strength_status` |
 | `strength_json` | string | no | Optional JSON object with sourced strength figures: {"basis","as_of","personnel","vehicles","vehicle_count_type","source","note"}. See docs/methodology.md. Blank where no source gives figures. |  |
 | `notes` | string | yes | Free text: what the source says, caveats, source conflicts, change history. |  |
+| `location_date` | date | no | Optional. The date the coordinate is actually documented for, when it differs from `date` (for example the date of the command post list the point was taken from). Blank where the coordinate is for the claim's own date or the date is unknown (older rows not yet reviewed). | valid date |
+| `location_basis` | string | no | Optional. How the coordinate relates in time and place to `date` (see vocabulary `location_basis`). Blank on rows not yet reviewed. | vocabulary `location_basis` |
+| `location_temporal_offset_days` | number | no | Optional integer: `location_date` minus `date` in days (positive = the coordinate is from a later date). Blank when `location_date` is blank. | pattern `^-?\d+$`; must equal `location_date - date` |
 
 Primary key: `claim_id` (unique across the whole repository). Rows in each file are sorted by `date`, then `claim_id`.
 
@@ -99,10 +102,38 @@ Rows are sorted by `unit_id`. `parent_only = true` units (`record_status = place
 A JSON list written on one line (CSV-quoted like `strength_json`), or the plain text `unknown`, or blank. Each element:
 
 ```json
-[{"unit_id":"GER-SSPZ-002D","name":"German 2nd SS Panzer Division Das Reich","relationship":"organic"},{"unit_id":"GER-PZ-LEHRD","name":"German Panzer Lehr Division","relationship":"attached","note":"Placed under Panzer Lehr on arrival"}]
+[{"unit_id":"GER-SSPZ-002D","name":"German 2nd SS Panzer Division Das Reich","relationship":"assigned"},{"unit_id":"GER-PZ-LEHRD","name":"German Panzer Lehr Division","relationship":"attached","note":"Placed under Panzer Lehr on arrival"}]
 ```
 
-Keys: `unit_id` (required; a unit id from `data/units.csv`, or `null` if the formation is not in the table), `name` (required), `relationship` (required, see the `relationship` vocabulary below), `effective_from` (optional date `YYYY-MM-DD`: the day this relationship took effect, when a source gives it; an entry that takes effect after the row's date draws a validator warning) and `note` (optional string). No other keys. `parent_unit_id` is the **operational parent on the row's date**: the formation the unit was attached to or operating under that day, otherwise its standing parent. It must also appear in the list. The **organic (standing) parent is recorded only here**, with relationship `organic`: when an `attached` or `operational_control` entry exists, `parent_unit_id` must be that entry and the standing parent stays in the list as `organic` (an independent brigade attached to a division for an assault is `attached` to the division and `organic` to the army or corps that holds it). If the standing parent is not known, say so with an entry of relationship `unknown`. An entry never describes a relationship that only started on a later date: use `effective_from` and let the row's date decide which entries apply. In the example the row's `parent_unit_id` is `GER-PZ-LEHRD` and the organic parent stays in the list. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a `parent_only` unit if it has no claims) rather than using `null`. The original free text and how it was converted are documented in `scripts/migrate_parent_formation.py`.
+Keys: `unit_id` (required; a unit id from `data/units.csv`; `null` only for a formation that is not a unit, such as the placeholder "standing parent not identified"), `name` (required), `relationship` (required, see the `relationship` vocabulary below), `effective_from` and `effective_to` (optional dates `YYYY-MM-DD`: the first and last day the relationship held, when a source gives them; an entry that takes effect after the row's date, or ended before it, draws a validator warning), `date_basis` (optional: `order`, `assignment_table`, `narrative` or `inferred`, see the `relationship_date_basis` vocabulary: where the dates come from; a table date may differ from the day command actually passed) and `note` (optional string). No other keys.
+
+`parent_unit_id` is the **operational parent on the row's date**: the formation the unit was attached to or operating under that day, otherwise its standing parent. It must also appear in the list. The **standing parent is recorded only here**, as an `organic`, `assigned` or `unspecified_subordination` entry: when an `attached` or `operational_control` entry exists, `parent_unit_id` must be that entry and the standing parent stays in the list (an independent brigade attached to a division for an assault is `attached` to the division and `assigned` to the army or corps that holds it). If the standing parent is not known, say so with an entry of relationship `unknown`. An entry never describes a relationship that only started on a later date: use `effective_from` and let the row's date decide which entries apply. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a `parent_only` unit if it has no claims) rather than using `null`: the validator warns about a named higher headquarters without a unit id.
+
+How to choose the value (the full definitions are in the table below):
+
+- `organic` is only for a constituted component: a regiment or battle group of its own division, a battalion of its own regiment. A division, corps or army under a higher headquarters is never `organic`; the validator warns when it is.
+- `assigned` when the source says assigned, or names the unit as a standing member of the headquarters' order of battle without attachment language. Army to army group and corps to army links from narrative histories are normally `assigned`.
+- `attached` only where the source says attached or shows a temporary tasking.
+- `unspecified_subordination` when the source shows the subordination but does not distinguish assigned from attached, for example the CMH ETO-OB assignment tables, whose columns are combined. Never convert it to `assigned` or `attached` without a source.
+- `operational_control`, `administrative_control`, `supporting` and `coordinating` describe a different kind of authority and can sit beside a standing entry (for example SHAEF with operational control and AFHQ with administrative control over 6th Army Group on 15 September 1944; 21st Army Group coordinating 12th Army Group until 31 August 1944).
+- Entries written before 25 October 2026 used `organic` for every standing parent; they were converted by the Batch 1 review (`review_changes.md`, "Systemic changes"): table-derived links became `unspecified_subordination`, other formation-to-higher-HQ links became `assigned`.
+
+A row has one entry per higher headquarters. When the kind of authority changes during the row's period (for example 21st Army Group's coordination ending on 31 August), use `effective_to` and say so in the `note`; put the change history in `notes`.
+
+## Location provenance: location_date, location_basis, location_temporal_offset_days
+
+`latitude`/`longitude` answer "where", `date` answers "when". Many Batch 1 coordinates are command posts that a source lists on a different date from the claim, or town centres standing for a headquarters. Three optional columns record that:
+
+- `location_date`: the date the coordinate is documented for. Set it equal to `date` when a source places the unit there on the claim's date.
+- `location_temporal_offset_days`: `location_date - date` in days (the validator checks it).
+- `location_basis`: one value of the `location_basis` vocabulary below. Temporal bases come first: if the coordinate is from another date use `nearest_later_command_post` or `nearest_earlier_command_post`; otherwise say whether the point is a `town_centroid` (a named town standing for a headquarters whose site is not given), a `representative_point`, an `operational_area` point (sector, landing area, bridgehead), `documented_on_date` (a named site or event place for that date), or `inferred`.
+- There is no separate location confidence column: `confidence`, `precision_km` and the basis together say how far the coordinate can be trusted. A coordinate from another date or a town centroid should carry a wider `precision_km` and, where the row's own date is not documented, `confidence` 0.5 or 0.3. Older rows (before Batch 1) are left blank unless their notes say where the coordinate came from.
+
+Validator checks: error when `location_date` and the offset disagree, when the offset is set without a date, when a temporal basis has no date, and for a `landing` row whose coordinate is a `town_centroid` or a command post from another date; warning when `location_date` differs from `date` but the basis is blank or `documented_on_date`, when a corps, army or army-group headquarters is only a town centroid with `precision_km` under 5, and when a corps or army sector is recorded as an exact `front_line_point`. `python scripts/audit_command_location.py` lists the counts per pattern.
+
+### Notes convention
+
+Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date:` (the source for the date), `Event definition:` (what event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival), `Relationship:` (the source for the command relationship), `Location:` (what the point stands for and which source places it), `Coordinates:` (how the numbers were obtained). Not every row needs all labels; the reviewed Batch 1 rows use them.
 
 ## strength_json
 
@@ -154,11 +185,41 @@ Meaning of the `relationship` field in each object of `command_relationships`.
 
 | value | meaning |
 |---|---|
-| `organic` | The standing parent: the formation the original source names as the unit's parent without an attachment qualifier, or a battle group's own division. Not a claim that the link was permanent. |
-| `attached` | The unit was attached to this formation on the row's date (the operational parent). |
-| `operational_control` | This formation controlled the unit operationally without it being a standing or attached part of it. |
+| `organic` | A constituted component of the formation: its own regiments, battalions or battle groups, or a unit that is part of the parent's table of organisation. Do not use for a division, corps or army that is assigned to a higher headquarters (use assigned or unspecified_subordination). |
+| `assigned` | The unit was assigned to this formation: the source says 'assigned', or names the unit as a standing member of the headquarters' order of battle for a period not described as temporary, with no attachment language. Includes army to army group and corps to army. |
+| `attached` | The unit was attached to this formation (a temporary or task-organised subordination) on the row's date; use only where the source says attached or shows a temporary tasking. |
+| `unspecified_subordination` | The source shows the unit subordinate to this formation on the date but does not distinguish assigned from attached (for example the CMH ETO-OB assignment tables, whose columns are combined). Never convert to attached or assigned without a source. |
+| `operational_control` | This formation exercised operational (tactical) control over the unit, whether or not the unit was one of its assigned or attached components. |
+| `administrative_control` | This formation held administrative, supply or personnel responsibility for the unit while another formation had operational control. |
+| `supporting` | The unit was in direct support of this formation without being part of it. |
+| `coordinating` | This formation coordinated the unit's operations with others without commanding it (for example 21st Army Group's coordination of both army groups until 1 September 1944). |
 | `reserve` | The unit was held in this formation's (or the high command's) reserve. |
 | `unknown` | A formation is named by the source but how it relates to the unit is not stated. |
+
+### relationship_date_basis
+
+Where the `effective_from` / `effective_to` dates of a command relationship come from (`date_basis` key).
+
+| value | meaning |
+|---|---|
+| `order` | A named order or message gives the date. |
+| `assignment_table` | A dated assignment table such as CMH ETO-OB. The table date may differ from the day command actually passed. |
+| `narrative` | A narrative history or reference work states the date. |
+| `inferred` | The date is inferred from other rows; treat as approximate. |
+
+### location_basis
+
+How the coordinate relates in time and place to the claim's date (`location_basis` column).
+
+| value | meaning |
+|---|---|
+| `documented_on_date` | A source places the unit, event or headquarters at this location on the claim's date. |
+| `nearest_later_command_post` | The coordinate is the nearest command post listed after the claim's date; the position on the date itself is not documented. |
+| `nearest_earlier_command_post` | The coordinate is the nearest command post listed before the claim's date; the position on the date itself is not documented. |
+| `representative_point` | A point chosen to stand for an area or front (not a documented position). |
+| `town_centroid` | The coordinate is the centre of a named town or commune; the source does not locate the headquarters or event more precisely. |
+| `operational_area` | A point inside the area of operations (sector, landing area, bridgehead) rather than a headquarters or exact position. |
+| `inferred` | Inferred from the unit's movements or other rows rather than stated. |
 
 ### claim_status
 
@@ -263,6 +324,8 @@ One primary event per row.
 | `command_change` | Commander or command responsibility changes. |
 | `hq_move` | Headquarters moves. |
 | `regroup` | Assembly, reorganisation, relief in place. |
+| `activation` | A formation becomes operational, or is activated or constituted as a headquarters or unit (for example 12th Army Group becoming operational on 1 August 1944). |
+| `redesignation` | The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps). |
 | `other` | Headquarters decisions, air attack on a headquarters, units at their station. |
 
 ### strength_status

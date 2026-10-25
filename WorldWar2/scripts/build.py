@@ -23,8 +23,9 @@ import common  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'location_name', 'location_represents', 'precision_km', 'confidence',
-             'event_type', 'current_activity', 'operation_name', 'sub_operation_name', 'strength_status']
-NUMERIC = {'precision_km', 'confidence'}
+             'event_type', 'current_activity', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
+             'location_temporal_offset_days']
+NUMERIC = {'precision_km', 'confidence', 'location_temporal_offset_days'}
 
 
 def num(s):

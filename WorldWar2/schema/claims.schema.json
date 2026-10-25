@@ -107,7 +107,7 @@
     {
       "name": "command_relationships",
       "type": "string",
-      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null if the formation is not in units.csv>\", \"name\": \"<formation name>\", \"relationship\": \"organic|attached|operational_control|reserve|unknown\", \"note\": \"<optional>\"}]. Allowed keys: unit_id, name, relationship, effective_from (optional YYYY-MM-DD), note. parent_unit_id is the operational parent on the row's date; the organic (standing) parent is recorded only here, as an organic entry. \"unknown\" (not JSON) or blank if nothing is known.",
+      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null only if the formation is not a unit in units.csv>\", \"name\": \"<formation name>\", \"relationship\": \"organic|assigned|attached|unspecified_subordination|operational_control|administrative_control|supporting|coordinating|reserve|unknown\", \"effective_from\": \"YYYY-MM-DD (optional)\", \"effective_to\": \"YYYY-MM-DD, last day of the relationship (optional)\", \"date_basis\": \"order|assignment_table|narrative|inferred (optional)\", \"note\": \"<optional>\"}]. Allowed keys: unit_id, name, relationship, effective_from, effective_to, date_basis, note. parent_unit_id is the operational parent on the row's date; the standing parent is recorded only here, as an organic, assigned or unspecified_subordination entry. \"unknown\" (not JSON) or blank if nothing is known.",
       "format": "json",
       "jsonVocabulary": {
         "relationship": "relationship"
@@ -288,6 +288,26 @@
       "description": "Free text: what the source says, caveats, source conflicts, change history.",
       "constraints": {
         "required": true
+      }
+    },
+    {
+      "name": "location_date",
+      "type": "date",
+      "description": "Optional. The date the coordinate is actually documented for, when it differs from date (for example the date of the command post list the point was taken from). Blank when the coordinate is for the claim's own date or the date is not known.",
+      "format": "%Y-%m-%d"
+    },
+    {
+      "name": "location_basis",
+      "type": "string",
+      "description": "Optional. How the coordinate relates in time and place to date (see vocabulary location_basis). Blank on rows not yet reviewed.",
+      "vocabulary": "location_basis"
+    },
+    {
+      "name": "location_temporal_offset_days",
+      "type": "number",
+      "description": "Optional integer: location_date minus date in days (positive = coordinate is from a later date). Blank when location_date is blank.",
+      "constraints": {
+        "pattern": "^-?\\d+$"
       }
     }
   ]

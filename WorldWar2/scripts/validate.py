@@ -15,8 +15,14 @@ Warning-only checks (printed as WARNING, never change the exit code; see docs/me
 an engaged_with entry that does not match a unit in data/units.csv (nationality adjective plus unit_name, or a leading part of it; free text is still
 allowed for non-ground opponents),
 an attached relationship whose unit is not the parent_unit_id or with no
-organic entry, a command relationship that takes effect after the row's date, a current_activity that is long
+standing entry (organic, assigned, unspecified_subordination or unknown), 'organic' used for a division, corps or army under a
+higher headquarters, a named higher headquarters without a unit id, a command relationship that takes effect after the row's date or
+ended before it, a location_date that differs from date without a temporal location_basis, a corps/army/army-group headquarters that is
+only a town centroid (precision under 5 km), a corps or army sector recorded as an exact front_line_point, a conflict group whose rows
+have different event types and no 'Event definition:' in notes, a current_activity that is long
 (probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with list longer than three.
+Errors also cover location_date / location_temporal_offset_days / location_basis inconsistencies and a landing row whose coordinate is a
+town centroid or a command post of another date.
 Coordinate checks live in scripts/check_coordinates.py.
 
 Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found; warnings do not count)
@@ -187,7 +193,45 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json has personnel but no scope: set scope to whole_unit, sub_force or sector (what the figure covers), or remove the personnel figure if no source says')
 
 
-REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'note'}
+REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'effective_to', 'date_basis', 'note'}
+STANDING_RELS = ('organic', 'assigned', 'unspecified_subordination', 'unknown')
+ECH_RANK = {'squad': 0, 'platoon': 0, 'company': 0, 'battalion': 1, 'regiment/battle_group': 2, 'brigade': 3, 'division': 4,
+            'corps': 5, 'army': 6, 'army_group': 7, 'other': 8}
+HIGHER_THAN_ORGANIC = {'division': ('army_group', 'army', 'corps'), 'corps': ('army_group', 'army'), 'army': ('army_group', 'other'),
+                       'army_group': ('other',)}
+
+
+def row_echelon(row, units):
+    u = units.get(row['unit_id'])
+    return u['echelon'] if u else row.get('echelon', '')
+
+
+def check_location_date(where, row):
+    """location_date, location_basis and location_temporal_offset_days: temporal provenance of the coordinate."""
+    ld, lb, off = row.get('location_date', ''), row.get('location_basis', ''), row.get('location_temporal_offset_days', '')
+    if ld:
+        try:
+            delta = (datetime.date.fromisoformat(ld) - datetime.date.fromisoformat(row['date'])).days
+        except ValueError:
+            return
+        if off == '':
+            err(where, 'location_date is set but location_temporal_offset_days is blank')
+        elif re.fullmatch(r'-?\d+', off) and int(off) != delta:
+            err(where, 'location_temporal_offset_days %s != location_date - date (%d days)' % (off, delta))
+        if delta != 0 and lb in ('', 'documented_on_date'):
+            warn(where, 'location_date %s differs from date by %d days but location_basis is %r: use nearest_later_command_post, nearest_earlier_command_post or another basis' % (ld, delta, lb))
+        if delta > 0 and lb == 'nearest_earlier_command_post' or delta < 0 and lb == 'nearest_later_command_post':
+            err(where, 'location_basis %s contradicts the sign of the offset (%d days)' % (lb, delta))
+    elif off != '':
+        err(where, 'location_temporal_offset_days is set but location_date is blank')
+    if lb in ('nearest_later_command_post', 'nearest_earlier_command_post') and not ld:
+        err(where, 'location_basis %s requires location_date and the offset' % lb)
+    if row['event_type'] == 'landing' and lb in ('town_centroid', 'nearest_later_command_post', 'nearest_earlier_command_post'):
+        err(where, 'a landing row cannot take its coordinate from %s (an unrelated headquarters or town centroid); use the landing area (operational_area / documented_on_date)' % lb)
+    if row['location_represents'] == 'headquarters' and lb == 'town_centroid' and row['echelon'] in ('corps', 'army', 'army_group') and row['precision_km'] not in ('', '5', '10', '25', '50'):
+        warn(where, 'a %s headquarters coordinate that is only a town centroid needs precision_km >= 5 (found %s)' % (row['echelon'], row['precision_km']))
+    if row['echelon'] in ('corps', 'army', 'army_group') and row['location_represents'] == 'front_line_point' and row['precision_km'] in ('1', '3', '5'):
+        warn(where, 'a %s sector recorded as an exact front_line_point (precision %s km): use sector_center with a wider precision, or document the point' % (row['echelon'], row['precision_km']))
 
 
 def check_command_relationships(where, row, units, vocabs):
@@ -234,17 +278,32 @@ def check_command_relationships(where, row, units, vocabs):
             err(where, 'command_relationships: relationship %r not in vocabulary relationship' % e.get('relationship'))
         if 'note' in e and not isinstance(e['note'], str):
             err(where, 'command_relationships: note must be a string')
-        if 'effective_from' in e:
-            try:
-                if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(e['effective_from'])):
-                    raise ValueError
-                datetime.datetime.strptime(e['effective_from'], '%Y-%m-%d')
-            except ValueError:
-                err(where, 'command_relationships: effective_from must be YYYY-MM-DD')
-            else:
-                if e['effective_from'] > row['date']:
-                    warn(where, 'command_relationships: %s is effective from %s, after the row date %s' % (
-                        e.get('unit_id'), e['effective_from'], row['date']))
+        okdates = {}
+        for dk in ('effective_from', 'effective_to'):
+            if dk in e:
+                try:
+                    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(e[dk])):
+                        raise ValueError
+                    datetime.datetime.strptime(e[dk], '%Y-%m-%d')
+                    okdates[dk] = e[dk]
+                except ValueError:
+                    err(where, 'command_relationships: %s must be YYYY-MM-DD' % dk)
+        if 'effective_from' in okdates and okdates['effective_from'] > row['date']:
+            warn(where, 'command_relationships: %s is effective from %s, after the row date %s' % (
+                e.get('unit_id'), okdates['effective_from'], row['date']))
+        if 'effective_to' in okdates:
+            if 'effective_from' in okdates and okdates['effective_to'] < okdates['effective_from']:
+                err(where, 'command_relationships: effective_to %s is before effective_from %s' % (okdates['effective_to'], okdates['effective_from']))
+            if okdates['effective_to'] < row['date']:
+                warn(where, 'command_relationships: %s ended on %s, before the row date %s' % (e.get('unit_id'), okdates['effective_to'], row['date']))
+        if 'date_basis' in e and e['date_basis'] not in vocabs['relationship_date_basis']['values']:
+            err(where, 'command_relationships: date_basis %r not in vocabulary relationship_date_basis' % (e['date_basis'],))
+        if e.get('unit_id') is None and e.get('relationship') not in ('unknown', None) and isinstance(e.get('name'), str):
+            warn(where, 'command_relationships: named higher HQ %r has no stable unit_id; add it to data/units.csv (placeholder is fine)' % e.get('name'))
+        ur = units.get(e.get('unit_id')) if e.get('unit_id') else None
+        if e.get('relationship') == 'organic' and ur and ECH_RANK.get(row_echelon(row, units), 0) >= 4 and ur['echelon'] in HIGHER_THAN_ORGANIC.get(row_echelon(row, units), ()):
+            warn(where, "command_relationships: 'organic' used for %s -> %s (%s); a division, corps or army under a higher headquarters is assigned, attached, "
+                        "unspecified_subordination or operational_control, not organic" % (row_echelon(row, units), ur['echelon'], e.get('unit_id')))
     if len(ids) != len(set(ids)):
         err(where, 'command_relationships lists the same unit_id twice')
     if pid not in ('', 'unknown') and pid not in ids:
@@ -254,8 +313,8 @@ def check_command_relationships(where, row, units, vocabs):
     if ops and pid not in ('', 'unknown') and pid not in [e.get('unit_id') for e in ops]:
         warn(where, 'an attached/operational_control entry exists but parent_unit_id %s is not one of them (parent_unit_id is the operational parent)' % pid)
     if any(e.get('relationship') == 'attached' for e in entries) and not any(
-            e.get('relationship') in ('organic', 'unknown') for e in entries):
-        warn(where, 'attached entry without an organic (standing parent) entry; record the standing parent or an "unknown" entry')
+            e.get('relationship') in STANDING_RELS for e in entries):
+        warn(where, 'attached entry without a standing parent entry (organic, assigned, unspecified_subordination or unknown)')
     u = units.get(row['unit_id'])
     if u and u['parent_unit_id'] and not any(
             isinstance(e, dict) and e.get('unit_id') == u['parent_unit_id'] and e.get('relationship') == 'organic' for e in d):
@@ -397,6 +456,7 @@ def main():
                 err(where, 'claim_status %s requires a conflict_group_id' % row['claim_status'])
             check_strength_json(where, row['strength_json'], vocabs)
             check_command_relationships(where, row, units, vocabs)
+            check_location_date(where, row)
             act = row['current_activity']
             if len(act) > ACTIVITY_MAX_CHARS:
                 warn(where, 'current_activity is %d characters (> %d): one row should describe one documented action; put the rest in notes' % (len(act), ACTIVITY_MAX_CHARS))
@@ -437,6 +497,8 @@ def main():
             err(where, 'a group with no preferred claim must be all disputed')
         if len({r['date'] for r in rs}) < 2 and len({r['latitude'] + r['longitude'] for r in rs}) < 2:
             err(where, 'competing claims should differ in date or place')
+        if len({r['event_type'] for r in rs}) > 1 and not all('Event definition:' in r['notes'] for r in rs):
+            warn(where, 'rows have different event_type values (different event definitions, not just different sources): each row needs an "Event definition:" sentence in notes')
 
     for w in warnings:
         print('WARNING', w)

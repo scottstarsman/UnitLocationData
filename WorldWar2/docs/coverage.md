@@ -6,6 +6,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 
 | Nationality | Echelon | Placeholder | Partial | Active | Total | With formed_date | Claim rows |
 |---|---|---:|---:|---:|---:|---:|---:|
+| Allied | army | 1 | 0 | 0 | 1 | 1 | 0 |
 | Allied | other | 2 | 0 | 0 | 2 | 0 | 0 |
 | Belgium | brigade | 1 | 0 | 0 | 1 | 1 | 0 |
 | Canada | army | 1 | 0 | 0 | 1 | 1 | 0 |
@@ -34,6 +35,6 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 2 |
 | US | army | 1 | 0 | 4 | 5 | 3 | 18 |
 | US | corps | 6 | 0 | 9 | 15 | 5 | 62 |
-| US | division | 32 | 0 | 28 | 60 | 24 | 258 |
+| US | division | 32 | 0 | 28 | 60 | 24 | 260 |
 | US | regiment/battle_group | 0 | 0 | 1 | 1 | 0 | 1 |
-| **All** | | **251** | **0** | **101** | **352** | **233** | **480** |
+| **All** | | **252** | **0** | **101** | **353** | **234** | **482** |

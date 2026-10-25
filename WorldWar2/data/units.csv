@@ -1,5 +1,6 @@
 unit_id,unit_name,nationality,echelon,branch,theater,parent_unit_id,parent_only,record_status,formed_date,formed_date_source,initial_parent_unit_id,initial_parent_as_of,initial_parent_source,component_of_note,unit_note,listing_source
 ALL-AFHQ-000H,Allied Force Headquarters (AFHQ),Allied,other,Army,mediterranean,,true,placeholder,,,,,,,AFHQ (Mediterranean). Added as the parent of US Seventh Army until 6th Army Group became operational on 15 September 1944; no claims yet.,WPDRAGOON
+ALL-FAAA-001A,First Allied Airborne Army,Allied,army,Airborne,western_europe,,true,placeholder,1944-08-02,https://en.wikipedia.org/wiki/1st_Allied_Airborne_Army,,,,,Added for Batch 1 review: stable id for the headquarters above XVIII Airborne Corps and British I Airborne Corps (Brereton); activated 2 August 1944 as the Combined Airborne Headquarters and renamed First Allied Airborne Army. No claims yet.,WPMG
 ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,other,Army,western_europe,,true,placeholder,,,,,,,,
 BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,western_europe,,true,placeholder,1943-01,https://en.wikipedia.org/wiki/Piron_Brigade,,,,,,WPUNIT
 CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,western_europe,,false,active,1942-01-26,https://en.wikipedia.org/wiki/2nd_Canadian_Armoured_Brigade,,,,,,WPNORM
@@ -269,7 +270,7 @@ UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,western_europe,,true,pl
 UK-TNK-031B,31st Tank Brigade,UK,brigade,Armoured,western_europe,,false,active,,,,,,,,WPUNIT
 UK-TNK-034B,34th Tank Brigade,UK,brigade,Armoured,western_europe,,true,placeholder,1941-12,https://en.wikipedia.org/wiki/34th_Tank_Brigade,,,,,,WPUNIT
 US-ABN-017D,17th Airborne Division,US,division,Airborne,western_europe,,true,placeholder,1942-12-16,https://en.wikipedia.org/wiki/17th_Airborne_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
-US-ABN-018C,XVIII Airborne Corps,US,corps,Airborne,western_europe,,false,active,1942-01-14,https://en.wikipedia.org/wiki/XVIII_Airborne_Corps,,,,,,WP12AG;WPBULGE
+US-ABN-018C,XVIII Airborne Corps,US,corps,Airborne,western_europe,,false,active,1942-01-14,https://en.wikipedia.org/wiki/XVIII_Airborne_Corps,,,,,"Same headquarters throughout: constituted 14 January 1942 as II Armored Corps, redesignated XVIII Corps on 9 October 1943 and XVIII Airborne Corps on 25 August 1944 (Wikipedia, XVIII Airborne Corps). The two earlier US formations also called XVIII Corps (1921-1945 reserve) are different units.",WP12AG;WPBULGE
 US-ABN-082D,82nd Airborne Division,US,division,Airborne,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPNORM;WPMG;WPBULGE
 US-ABN-101D,101st Airborne Division,US,division,Airborne,western_europe,,false,active,,,,,,,,WP6AG;WP21AG;WPNORM;WPMG;WPBULGE
 US-AG-006G,6th Army Group,US,army_group,Army,western_europe,,false,active,1944,https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group,,,,,,WP12AG;WP21AG

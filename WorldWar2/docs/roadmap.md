@@ -1,6 +1,6 @@
 # Roadmap and known gaps
 
-Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims, 84 units in the unit table).
+Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims). The unit table now also holds 275 placeholder units for the Western Front, 6 June 1944 to 8 May 1945 (351 units in total, 76 with claims); see `docs/coverage.md`.
 
 ## Known gaps in the current data
 
@@ -22,6 +22,23 @@ Status: proof of concept covering the Western Front, 6-30 June 1944 (212 claims,
 - LXXXIV Corps rows C0106, C0116, C0123 and C0128 (14-17 June) still use an unverified Cotentin placeholder point (49.52,-1.47, 25 km); no source read places the corps headquarters on those dates (CMH only says Rommel visited "LXXXIV Corps headquarters" on 16 June). The same placeholder on C0067 was replaced in the G004 fix (the conflict there was about the handover date, not the place; see `review_changes.md`).
 - Date conflicts between sources are open (Dollmann's death, Schlieben's capture, Choltitz replacing Fahrmbacher, Montgomery's HQ moves, 82nd Airborne at Pont-l'Abbe): see the 11 conflict groups.
 - Wikipedia is a first-pass source; many rows should be re-verified against primary or semi-primary sources.
+
+## Placeholder units: what is not in the table yet
+
+The placeholder pass (see "Placeholder units" in `docs/methodology.md`) is a first, source-listed set; it is not a complete order of battle.
+
+**Left out on purpose (to do next):**
+- Air and naval units (the vocabularies reserve `air_force`, `air_formation`, `fleet`, `naval_unit` and the branches `Air Force`, `Navy` and `Marines`), then the other theaters and Italy.
+- Regiments, battalions, separate US tank, tank destroyer, artillery and engineer groups, British Army Groups Royal Artillery and Armoured Brigades beyond those listed, Special Air Service brigade, First Allied Airborne Army and the Atlantic-pocket commands (Detachment of the Army of the Atlantic), the French Detachment of the Army of the Alps, the 13th Airborne and 98th Infantry Divisions (not found in the listing sources), Polish I Corps (role in the West to be checked).
+- German: naval ground units, Volkswerfer, assault gun and Heeres artillery brigades, Sicherungs and fortress units, the Schnelle Brigaden 20 and 30, Panzer-Brigaden 109 and 110, 20th and 21st Fallschirmjaeger Divisions and the 12th Army and Armeegruppe Student (service in the West uncertain or only a name for another record), III Flak Corps, and Divisions in Denmark and Norway.
+
+**Ambiguities recorded in `unit_note` or `component_of_note`:**
+- German reorganisations: Reserve Corps renamed Armeekorps on 5 August 1944 (LXII, LXIV, LXVI); Korpsgruppe/Generalkommando Kniess becoming LXXXV Corps; Panzer Group West becoming Fifth Panzer Army (separate records); Infantry divisions destroyed and re-formed as Volksgrenadier divisions (separate records); the 19th Luftwaffe Field Division / Luftwaffen-Sturm-Division and the later 19th Volksgrenadier Division; Fuehrer-Begleit and Fuehrer-Grenadier brigades becoming divisions in January 1945; the Lexikon lists a "4. Armee" in Army Group B in November 1944, which looks like an error and is not used.
+- French 1st Division naming (1st Free French Division / 1re Division de Marche d'Infanterie), the 11th Army (Western Front only in April 1945), the 24th Army (a skeleton at the Swiss frontier) and Armee-Abteilung von Luettwitz.
+- 1st Airborne Task Force and 1st Special Service Force (provisional, mixed-nationality formations) are not in the table.
+- The 6 June 1944 German list shows the 326th Division under two corps, and the 271st, 272nd and 277th after Korpsgruppe Kniess without a corps heading; they have no 6 June parent, and the parent shown is the first matching Lexikon timeline entry (see `component_of_note`).
+
+**Next steps for the unit table:** reconcile Allied formation dates against CMH lineage and the British Joslen volumes (many Allied dates are blank because the Wikipedia infobox starts with a First World War lineage); add the Allied parent chain by dated sources; add regiments and Kampfgruppen as claims need them; extend `listing_source` tokens when new sources are used.
 
 ## Scale-up plan
 

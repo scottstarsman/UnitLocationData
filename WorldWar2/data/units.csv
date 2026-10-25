@@ -1,86 +1,352 @@
-unit_id,unit_name,nationality,echelon,branch,theater,parent_unit_id,parent_only
-ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,other,Army,western_europe,,true
-CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,western_europe,,false
-CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,western_europe,,false
-GER-AG-00BG,Army Group B,Germany,army_group,Army,western_europe,,false
-GER-ARMY-007A,Seventh Army,Germany,army,Army,western_europe,,false
-GER-ARMY-015A,Fifteenth Army,Germany,army,Army,western_europe,,true
-GER-COR-084C,LXXXIV Corps,Germany,corps,Army,western_europe,,false
-GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,western_europe,,false
-GER-FJ-003D,3rd Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,false
-GER-INF-077D,77th Infantry Division,Germany,division,Army,western_europe,,false
-GER-INF-243D,243rd Static Infantry Division,Germany,division,Army,western_europe,,false
-GER-INF-265D,265th Infantry Division,Germany,division,Army,western_europe,,true
-GER-INF-275D,275th Infantry Division,Germany,division,Army,western_europe,,true
-GER-INF-346D,346th Infantry Division,Germany,division,Army,western_europe,,false
-GER-INF-352D,352nd Infantry Division,Germany,division,Army,western_europe,,false
-GER-INF-353D,353rd Infantry Division,Germany,division,Army,western_europe,,true
-GER-INF-709D,709th Static Infantry Division,Germany,division,Army,western_europe,,false
-GER-INF-711D,711th Infantry Division,Germany,division,Army,western_europe,,false
-GER-INF-716D,716th Static Infantry Division,Germany,division,Army,western_europe,,false
-GER-KG-002PZ,Kampfgruppe (tank battalion) 2nd Panzer Division,Germany,regiment/battle_group,Armoured,western_europe,GER-PZ-002D,false
-GER-KG-265,Kampfgruppe 265th Infantry Division (name of commander not given),Germany,regiment/battle_group,Army,western_europe,GER-INF-265D,false
-GER-KG-BOEHM,Kampfgruppe Boehm,Germany,regiment/battle_group,Army,western_europe,GER-INF-353D,false
-GER-KG-FREY,Kampfgruppe Frey,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-001D,false
-GER-KG-HEINTZ,Kampfgruppe Heintz,Germany,regiment/battle_group,Army,western_europe,GER-INF-275D,false
-GER-KG-MEYER,Kampfgruppe Meyer,Germany,regiment/battle_group,Army,western_europe,GER-INF-352D,false
-GER-KG-ROHRBACH,Kampfgruppe Rohrbach,Germany,regiment/battle_group,Army,western_europe,GER-INF-709D,false
-GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,western_europe,GER-PZ-021D,false
-GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-002D,false
-GER-LL-091D,91st Luftlande Division,Germany,division,Army,western_europe,,false
-GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,western_europe,,false
-GER-OKW-000H,Oberkommando der Wehrmacht (OKW),Germany,other,Army,western_europe,,true
-GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,western_europe,,false
-GER-PZ-021D,21st Panzer Division,Germany,division,Armoured,western_europe,,false
-GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,western_europe,,false
-GER-PZ-LEHRD,Panzer Lehr Division,Germany,division,Armoured,western_europe,,false
-GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,western_europe,,false
-GER-SSPG-017D,17th SS Panzergrenadier Division Götz von Berlichingen,Germany,division,Waffen-SS,western_europe,,false
-GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,western_europe,,false
-GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,western_europe,,true
-GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,western_europe,,false
-GER-SSPZ-002D,2nd SS Panzer Division Das Reich,Germany,division,Waffen-SS,western_europe,,true
-GER-SSPZ-009D,9th SS Panzer Division Hohenstaufen,Germany,division,Waffen-SS,western_europe,,false
-GER-SSPZ-010D,10th SS Panzer Division Frundsberg,Germany,division,Waffen-SS,western_europe,,false
-GER-SSPZ-012D,12th SS Panzer Division Hitlerjugend,Germany,division,Waffen-SS,western_europe,,false
-UK-ABN-006D,6th Airborne Division,UK,division,Airborne,western_europe,,false
-UK-AG-021G,21st Army Group,UK,army_group,Army,western_europe,,false
-UK-ARM-004B,4th Armoured Brigade,UK,brigade,Armoured,western_europe,,false
-UK-ARM-007D,7th Armoured Division,UK,division,Armoured,western_europe,,false
-UK-ARM-008B,8th Armoured Brigade,UK,brigade,Armoured,western_europe,,false
-UK-ARM-011D,11th Armoured Division,UK,division,Armoured,western_europe,,false
-UK-ARM-079D,79th Armoured Division,UK,division,Armoured,western_europe,,false
-UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,western_europe,,false
-UK-ARMY-002A,Second Army,UK,army,Army,western_europe,,false
-UK-COR-001C,I Corps,UK,corps,Army,western_europe,,false
-UK-COR-008C,VIII Corps,UK,corps,Army,western_europe,,false
-UK-COR-030C,XXX Corps,UK,corps,Army,western_europe,,false
-UK-INF-003D,3rd Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-015D,15th (Scottish) Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-049D,49th (West Riding) Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-050D,50th (Northumbrian) Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-051D,51st (Highland) Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-053D,53rd (Welsh) Infantry Division,UK,division,Army,western_europe,,false
-UK-INF-059D,59th (Staffordshire) Infantry Division,UK,division,Army,western_europe,,false
-UK-TNK-031B,31st Tank Brigade,UK,brigade,Armoured,western_europe,,false
-US-ABN-082D,82nd Airborne Division,US,division,Airborne,western_europe,,false
-US-ABN-101D,101st Airborne Division,US,division,Airborne,western_europe,,false
-US-ARM-002D,2nd Armored Division,US,division,Armoured,western_europe,,false
-US-ARM-003D,3rd Armored Division,US,division,Armoured,western_europe,,false
-US-ARMY-001A,First Army,US,army,Army,western_europe,,false
-US-ARMY-003A,Third Army,US,army,Army,western_europe,,true
-US-CCA-002D,"Combat Command A, 2nd Armored Division",US,regiment/battle_group,Armoured,western_europe,US-ARM-002D,false
-US-COR-005C,V Corps,US,corps,Army,western_europe,,false
-US-COR-007C,VII Corps,US,corps,Army,western_europe,,false
-US-COR-008C,VIII Corps,US,corps,Army,western_europe,,false
-US-COR-019C,XIX Corps,US,corps,Army,western_europe,,false
-US-INF-001D,1st Infantry Division,US,division,Army,western_europe,,false
-US-INF-002D,2nd Infantry Division,US,division,Army,western_europe,,false
-US-INF-004D,4th Infantry Division,US,division,Army,western_europe,,false
-US-INF-009D,9th Infantry Division,US,division,Army,western_europe,,false
-US-INF-029D,29th Infantry Division,US,division,Army,western_europe,,false
-US-INF-030D,30th Infantry Division,US,division,Army,western_europe,,false
-US-INF-079D,79th Infantry Division,US,division,Army,western_europe,,false
-US-INF-083D,83rd Infantry Division,US,division,Army,western_europe,,false
-US-INF-090D,90th Infantry Division,US,division,Army,western_europe,,false
+unit_id,unit_name,nationality,echelon,branch,theater,parent_unit_id,parent_only,record_status,formed_date,formed_date_source,initial_parent_unit_id,initial_parent_as_of,initial_parent_source,component_of_note,unit_note,listing_source
+ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,other,Army,western_europe,,true,placeholder,,,,,,,,
+BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,western_europe,,true,placeholder,1943-01,https://en.wikipedia.org/wiki/Piron_Brigade,,,,,,WPUNIT
+CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,western_europe,,false,active,1942-01-26,https://en.wikipedia.org/wiki/2nd_Canadian_Armoured_Brigade,,,,,,WPNORM
+CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,western_europe,,true,placeholder,,,,,,,,WPUNIT
+CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,western_europe,,true,placeholder,1941-02-27,https://en.wikipedia.org/wiki/5th_Canadian_Armoured_Division,,,,,Arrived in northwest Europe from Italy in early 1945; confirm date before adding claims.,WPUNIT
+CAN-ARMY-001A,First Canadian Army,Canada,army,Army,western_europe,,true,placeholder,1942,https://en.wikipedia.org/wiki/First_Canadian_Army,,,,,,WP12AG;WP21AG
+CAN-COR-001C,I Canadian Corps,Canada,corps,Army,western_europe,,true,placeholder,1942,https://en.wikipedia.org/wiki/I_Canadian_Corps,,,,,Arrived in northwest Europe from Italy in early 1945; confirm date before adding claims.,WP21AG
+CAN-COR-002C,II Canadian Corps,Canada,corps,Army,western_europe,,true,placeholder,1943,https://en.wikipedia.org/wiki/II_Canadian_Corps,,,,,,WP21AG
+CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,western_europe,,true,placeholder,1939,https://en.wikipedia.org/wiki/1st_Canadian_Infantry_Division,,,,,Arrived in northwest Europe from Italy in early 1945; confirm date before adding claims.,WPUNIT
+CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,western_europe,,true,placeholder,1939,https://en.wikipedia.org/wiki/2nd_Canadian_Infantry_Division,,,,,,WPNORM
+CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,western_europe,,false,active,,,,,,,,WPNORM
+CZ-ARM-001B,1st Czechoslovak Independent Armoured Brigade,Czechoslovakia,brigade,Armoured,western_europe,,true,placeholder,1943-09,https://en.wikipedia.org/wiki/1st_Czechoslovak_Independent_Armoured_Brigade,,,,,,WPNORM
+FR-ARM-001D,French 1st Armoured Division,France,division,Armoured,western_europe,,true,placeholder,,,,,,,,WPNORM
+FR-ARM-002D,French 2nd Armoured Division,France,division,Armoured,western_europe,,true,placeholder,1943-08-24,https://en.wikipedia.org/wiki/2nd_Armored_Division_(France),,,,,,WP12AG;WP6AG;WPNORM;WPBULGE;WPNORDWIND
+FR-ARM-005D,French 5th Armoured Division,France,division,Armoured,western_europe,,true,placeholder,,,,,,,,WP12AG;WP6AG;WPNORM;WPBULGE;WPNORDWIND
+FR-ARMY-001A,French First Army (Army B until 25 September 1944),France,army,Army,western_europe,,true,placeholder,1944,https://en.wikipedia.org/wiki/French_First_Army,,,,,Formed as Armée B and renamed French First Army on 25 September 1944 per the Wikipedia 6th Army Group page; formed_date is the Wikipedia infobox start of the 1944 formation.,WP12AG;WP6AG
+FR-COR-001C,French I Corps,France,corps,Army,western_europe,,true,placeholder,1943-08-16,https://en.wikipedia.org/wiki/I_Corps_(France),,,,,,WP21AG;WPNORDWIND
+FR-COR-002C,French II Corps,France,corps,Army,western_europe,,true,placeholder,1943-08-16,https://en.wikipedia.org/wiki/II_Corps_(France),,,,,,WPDRAGOON;WPNORDWIND
+FR-INF-001D,French 1st Infantry Division (1st Free French Division),France,division,Army,western_europe,,true,placeholder,1940-08-01,https://en.wikipedia.org/wiki/1st_Free_French_Division,,,,,Name and lineage (1st Free French Division / 1re Division de Marche d'Infanterie / 1re Division d'Infanterie) not yet reconciled; confirm before adding claims.,WP6AG;WPDRAGOON
+FR-INF-002D,French 2nd Moroccan Infantry Division,France,division,Army,western_europe,,true,placeholder,1943-05-01,https://en.wikipedia.org/wiki/2nd_Moroccan_Infantry_Division,,,,,,WP6AG
+FR-INF-003D,French 3rd Algerian Infantry Division,France,division,Army,western_europe,,true,placeholder,1943-05-01,https://en.wikipedia.org/wiki/3rd_Algerian_Infantry_Division,,,,,,WP6AG;WPDRAGOON;WPNORDWIND
+FR-INF-004D,French 4th Moroccan Mountain Division,France,division,Army,western_europe,,true,placeholder,1943-05-01,https://en.wikipedia.org/wiki/4th_Moroccan_Mountain_Division,,,,,,WP6AG
+FR-INF-009D,French 9th Colonial Infantry Division,France,division,Army,western_europe,,true,placeholder,1943-07-16,https://en.wikipedia.org/wiki/9th_Colonial_Infantry_Division_(France),,,,,,WPUNIT
+FR-INF-010D,French 10th Infantry Division,France,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG
+FR-INF-014D,French 14th Infantry Division,France,division,Army,western_europe,,true,placeholder,1945-02-09,https://en.wikipedia.org/wiki/14th_Infantry_Division_(France),,,,,,WP6AG
+GER-AA-LUETTW,Armee-Abteilung von Lüttwitz,Germany,army,Army,western_europe,,true,placeholder,1945-04,https://lexikon-wehrmacht.de/Gliederungen/ArmeeAbteilung/ArmeeAbtLuttwitz-R.htm,,,,,"April 1945, Ruhr area.",LEX
+GER-AG-00BG,Army Group B,Germany,army_group,Army,western_europe,,false,active,1939-10-12,https://lexikon-wehrmacht.de/Gliederungen/Heeresgruppen/HeeresgruppeB-R.htm,,,,,,LEX
+GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,army_group,Army,western_europe,,true,placeholder,1944-04-28,https://lexikon-wehrmacht.de/Gliederungen/Heeresgruppen/HeeresgruppeG-R.htm,,,,,,DEW6;LEX;WPDRAGOON
+GER-AG-00HG,Army Group H (Heeresgruppe H),Germany,army_group,Army,western_europe,,true,placeholder,1944-11-11,https://lexikon-wehrmacht.de/Gliederungen/Heeresgruppen/HeeresgruppeH-R.htm,,,,,,LEX
+GER-AG-OBRHG,Army Group Upper Rhine (Heeresgruppe Oberrhein),Germany,army_group,Army,western_europe,,true,placeholder,,,,,,,,LEX;WPNORDWIND
+GER-ARMY-001A,First Army (Germany),Germany,army,Army,western_europe,,true,placeholder,1939-08-26,https://lexikon-wehrmacht.de/Gliederungen/Armeen/1Armee-R.htm,GER-AG-00GG,1944-06-06,DEW6,,,DEW6;LEX
+GER-ARMY-007A,Seventh Army,Germany,army,Army,western_europe,,false,active,1939-08-25,https://lexikon-wehrmacht.de/Gliederungen/Armeen/7Armee-R.htm,GER-AG-00BG,1944-06-06,DEW6,,,LEX
+GER-ARMY-011A,Eleventh Army (Germany),Germany,army,Army,western_europe,,true,placeholder,,,,,,,Western Front service April 1945 only (Harz); the Lexikon page also covers its earlier Eastern Front history.,LEX
+GER-ARMY-015A,Fifteenth Army,Germany,army,Army,western_europe,,true,placeholder,,,GER-AG-00BG,1944-06-06,DEW6,,,LEX
+GER-ARMY-019A,Nineteenth Army (Germany),Germany,army,Army,western_europe,,true,placeholder,1943-08-26,https://lexikon-wehrmacht.de/Gliederungen/Armeen/19Armee-R.htm,GER-AG-00GG,1944-06-06,DEW6,,,DEW6;LEX;WPDRAGOON
+GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,army,Army,western_europe,,true,placeholder,1944-10-17,https://lexikon-wehrmacht.de/Gliederungen/Armeen/24Armee-R.htm,,,,,"Skeleton army at the Swiss frontier, 1945; Western Front service uncertain.",LEX
+GER-ARMY-025A,Twenty-fifth Army (Germany),Germany,army,Army,western_europe,,true,placeholder,1944-11-10,https://lexikon-wehrmacht.de/Gliederungen/Armeen/25Armee-R.htm,,,,,"Netherlands, from late 1944.",LEX
+GER-COR-012C,XII Corps,Germany,corps,Army,western_europe,,true,placeholder,1936-10-01,https://lexikon-wehrmacht.de/Gliederungen/Korps/XIIKorps-R.htm,,,,,,LEX
+GER-COR-013C,XIII Corps,Germany,corps,Army,western_europe,,true,placeholder,1937-10-01,https://lexikon-wehrmacht.de/Gliederungen/Korps/XIIIKorps-R.htm,GER-ARMY-007A,1945-02,LEX,,,LEX
+GER-COR-025C,XXV Corps,Germany,corps,Army,western_europe,,true,placeholder,1938-11-24,https://lexikon-wehrmacht.de/Gliederungen/Korps/XXVKorps-R.htm,GER-ARMY-007A,1944-06-06,DEW6,,,LEX
+GER-COR-030C,XXX Corps,Germany,corps,Army,western_europe,,true,placeholder,1939-08-26,https://lexikon-wehrmacht.de/Gliederungen/Korps/XXXKorps-R.htm,,,,,,LEX
+GER-COR-053C,LIII Corps,Germany,corps,Army,western_europe,,true,placeholder,1941-02-15,https://lexikon-wehrmacht.de/Gliederungen/Korps/LIIIKorps-R.htm,GER-ARMY-007A,1945-02,LEX,,,LEX
+GER-COR-062C,LXII Corps (LXII Reserve Corps until 5 August 1944),Germany,corps,Army,western_europe,,true,placeholder,1944-08-05,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXIIKorps-R.htm,GER-ARMY-019A,1944-06-06,DEW6,,Formed by renaming the LXII Reserve Corps; the date is the Armeekorps designation.,DEW6;LEX
+GER-COR-063C,LXIII Corps,Germany,corps,Army,western_europe,,true,placeholder,,,,,,,,LEX
+GER-COR-064C,LXIV Corps (LXIV Reserve Corps until 5 August 1944),Germany,corps,Army,western_europe,,true,placeholder,1944-08-05,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXIVKorps-R.htm,GER-ARMY-001A,1944-08,LEX,,Formed by renaming the LXIV Reserve Corps; the date is the Armeekorps designation.,DEW6;LEX
+GER-COR-066C,LXVI Corps (LXVI Reserve Corps until 5 August 1944),Germany,corps,Army,western_europe,,true,placeholder,1944-08-05,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXVIKorps-R.htm,,,,,Formed by renaming the LXVI Reserve Corps; the date is the Armeekorps designation.,DEW6;LEX
+GER-COR-067C,LXVII Corps,Germany,corps,Army,western_europe,,true,placeholder,1944-01-20,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXVIIKorps-R.htm,GER-ARMY-015A,1944-06-06,DEW6,,,LEX
+GER-COR-074C,LXXIV Corps,Germany,corps,Army,western_europe,,true,placeholder,1943-07-27,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXIVKorps-R.htm,GER-ARMY-007A,1944-06-06,DEW6,,,LEX
+GER-COR-080C,LXXX Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-05-27,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXKorps-R.htm,GER-ARMY-001A,1944-06-06,DEW6,,,LEX
+GER-COR-081C,LXXXI Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-05-28,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXIKorps-R.htm,GER-ARMY-015A,1944-06-06,DEW6,,,LEX
+GER-COR-082C,LXXXII Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-05-25,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXIIKorps-R.htm,GER-ARMY-015A,1944-06-06,DEW6,,,LEX
+GER-COR-084C,LXXXIV Corps,Germany,corps,Army,western_europe,,false,active,1942-05,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXIVKorps-R.htm,GER-ARMY-007A,1944-06-06,DEW6,,,LEX
+GER-COR-085C,LXXXV Corps (Generalkommando Knieß until July 1944),Germany,corps,Army,western_europe,,true,placeholder,1943-10,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXVKorps-R.htm,GER-ARMY-019A,1944-06-06,DEW6,,Listed as Korpsgruppe Knieß in the 6 June 1944 source; Lexikon dates the Generalkommando Knieß to October 1943.,DEW6;LEX;WPDRAGOON
+GER-COR-086C,LXXXVI Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-11-19,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXVIKorps-R.htm,GER-ARMY-001A,1944-06-06,DEW6,,,LEX
+GER-COR-088C,LXXXVIII Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-06-08,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXVIIIKorps-R.htm,GER-WBN-000H,1944-06-06,DEW6,,,LEX
+GER-COR-089C,LXXXIX Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-08-02,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXIXKorps-R.htm,GER-ARMY-015A,1944-06-06,DEW6,,,LEX
+GER-COR-090C,LXXXX Corps,Germany,corps,Army,western_europe,,true,placeholder,1942-11-15,https://lexikon-wehrmacht.de/Gliederungen/Korps/LXXXXKorps-R.htm,GER-ARMY-001A,1944-12,LEX,,,LEX
+GER-DIV-136ZBV,Division z.b.V. 136,Germany,division,Army,western_europe,,true,placeholder,,,GER-COR-089C,1944-06-06,DEW6,,,DEW6
+GER-DIV-172,Division Nr. 172,Germany,division,Army,western_europe,,true,placeholder,,,,,,,Listed in the Market Garden order of battle; Lexikon page not checked.,WPMG
+GER-DIV-405,Division Nr. 405,Germany,division,Army,western_europe,,true,placeholder,1942-10-05,https://lexikon-wehrmacht.de/Gliederungen/DivisionNr/DivisionNr405-R.htm,GER-COR-064C,1945-02,LEX,,"Replacement/training division, Upper Rhine area, 1945.",LEX
+GER-DIV-406,406th Landesschützen Division (Division z.b.V. 406),Germany,division,Army,western_europe,,true,placeholder,,,,,,,Listed in the Market Garden order of battle as 406. Landesschützen-Division.,WPMG
+GER-DIV-526,Division Nr. 526,Germany,division,Army,western_europe,,true,placeholder,1942-09-28,https://lexikon-wehrmacht.de/Gliederungen/DivisionNr/DivisionNr526-R.htm,GER-COR-074C,1944-09,LEX,,"Replacement division, Aachen area.",LEX
+GER-DIV-905,Division Nr. 905,Germany,division,Army,western_europe,,true,placeholder,1945-01-07,https://lexikon-wehrmacht.de/Gliederungen/DivisionNr/DivisionNr905-R.htm,GER-COR-089C,1945-02,LEX,,"Formerly Division von Witzleben, Upper Rhine.",LEX
+GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,western_europe,,false,active,1944-01,https://lexikon-wehrmacht.de/Gliederungen/KorpsSonstige/FallKorpsII-R.htm,GER-ARMY-007A,1944-06,LEX,,,LEX
+GER-FJ-002D,2nd Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1943-02-13,https://lexikon-wehrmacht.de/Gliederungen/Fallschirmjagerdivisionen/2FJD-R.htm,GER-COR-025C,1944-06,LEX,,,LEX
+GER-FJ-003D,3rd Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,false,active,1943-10,https://lexikon-wehrmacht.de/Gliederungen/Fallschirmjagerdivisionen/3FJD-R.htm,,,,,,LEX
+GER-FJ-005D,5th Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1944-04,https://lexikon-wehrmacht.de/Gliederungen/Fallschirmjagerdivisionen/5FJD-R.htm,GER-FJ-002C,1944-08,LEX,,,LEX
+GER-FJ-006D,6th Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1944-06,https://lexikon-wehrmacht.de/Gliederungen/Fallschirmjagerdivisionen/6FJD-R.htm,GER-SSPZ-001C,1944-08,LEX,,,LEX
+GER-FJ-007D,7th Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Fallschirmjagerdivisionen/7FJD-R.htm,GER-FJ-002C,1944-10,LEX,,,LEX
+GER-FJ-008D,8th Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,,,GER-FJ-002C,1945-01,LEX,,,LEX
+GER-FJ-011D,11th Fallschirmjäger Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,,,GER-FJ-002C,1945-04,LEX,,,LEX
+GER-FJ-ERDMD,Fallschirmjäger Division Erdmann,Germany,division,Luftwaffe,western_europe,,true,placeholder,,,,,,,Improvised September 1944 division; also called Division Erdmann.,LEX;WPMG
+GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,western_europe,,true,placeholder,,,,,,,,LEX;WPMG
+GER-INF-047D,47th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-02-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/47ID.htm,GER-COR-082C,1944-06-06,DEW6,,,LEX
+GER-INF-048D,48th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-02-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/48ID.htm,GER-COR-080C,1944-09,LEX,,,LEX
+GER-INF-049D,49th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-02-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/49ID.htm,GER-COR-082C,1944-06-06,DEW6,,,LEX
+GER-INF-059D,59th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-06-26,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/59ID.htm,GER-COR-089C,1944-08,LEX,,,LEX
+GER-INF-064D,64th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-06-26,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/64ID.htm,GER-COR-067C,1944-10,LEX,,,LEX
+GER-INF-070D,70th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-08-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/70ID.htm,GER-COR-089C,1944-08,LEX,,,LEX
+GER-INF-077D,77th Infantry Division,Germany,division,Army,western_europe,,false,active,1944-01-15,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/77ID.htm,GER-COR-074C,1944-06-06,DEW6,,,LEX
+GER-INF-084D,84th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-02-02,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/84ID.htm,GER-COR-081C,1944-06-06,DEW6,,,LEX
+GER-INF-085D,85th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-02-02,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/85ID.htm,GER-COR-067C,1944-06-06,DEW6,,,LEX
+GER-INF-089D,89th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-01-15,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/89ID.htm,GER-COR-081C,1944-07,LEX,,,LEX
+GER-INF-106D,106th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,,,GER-COR-064C,1945-04,LEX,,,LEX
+GER-INF-159D,159th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/159ID.htm,GER-COR-086C,1944-06-06,DEW6,,,LEX
+GER-INF-176D,176th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-10,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/176ID.htm,GER-SSCOR-012C,1944-11,LEX,,,LEX
+GER-INF-180D,180th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-31,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/180ID.htm,GER-COR-086C,1944-11,LEX,,,LEX
+GER-INF-189D,189th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-08,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/189ID.htm,GER-COR-066C,1944-06-06,DEW6,,,LEX
+GER-INF-190D,190th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-11-04,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/190ID.htm,GER-FJ-002C,1944-11,LEX,,,LEX
+GER-INF-198D,198th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1939-12-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/198ID.htm,GER-LFC-004C,1944-07,LEX,,,LEX
+GER-INF-226D,226th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-06-26,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/226ID.htm,GER-COR-067C,1944-08,LEX,,,LEX
+GER-INF-242D,242nd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-07-09,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/242ID.htm,GER-COR-062C,1944-06-06,DEW6,,,LEX
+GER-INF-243D,243rd Static Infantry Division,Germany,division,Army,western_europe,,false,active,1943-07-09,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/243ID.htm,GER-COR-084C,1944-06-06,DEW6,,,LEX
+GER-INF-244D,244th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-09-08,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/244ID.htm,GER-COR-085C,1944-06-06,DEW6,,,LEX
+GER-INF-245D,245th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-09-08,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/245ID.htm,GER-COR-081C,1944-06-06,DEW6,,,LEX
+GER-INF-249D,249th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-03-22,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/249ID.htm,GER-COR-030C,1945-04,LEX,,,LEX
+GER-INF-265D,265th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-05-20,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/265ID.htm,GER-COR-025C,1944-06-06,DEW6,,,LEX
+GER-INF-266D,266th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-05-20,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/266ID.htm,GER-COR-074C,1944-06-06,DEW6,,,LEX
+GER-INF-269D,269th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1939-08-26,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/269ID.htm,GER-LFC-004C,1944-11,LEX,,,LEX
+GER-INF-271D,271st Infantry Division,Germany,division,Army,western_europe,,true,placeholder,,,GER-SSPZ-002C,1944-07,LEX,"The 6 June 1944 source lists it after Korpsgruppe Knieß without a clear corps heading, so no 6 June parent is given; the parent shown is the first Lexikon timeline entry that matches a unit in the table.",,LEX
+GER-INF-272D,272nd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,,,GER-SSPZ-001C,1944-07,LEX,"The 6 June 1944 source lists it after Korpsgruppe Knieß without a clear corps heading, so no 6 June parent is given; the parent shown is the first Lexikon timeline entry that matches a unit in the table.",,LEX
+GER-INF-275D,275th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-11-17,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/275ID.htm,GER-COR-025C,1944-06-06,DEW6,,,LEX
+GER-INF-276D,276th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1940-05-22,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/276ID.htm,GER-COR-086C,1944-06-06,DEW6,,,LEX
+GER-INF-277D,277th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1940-05-22,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/277ID.htm,GER-SSPZ-002C,1944-07,LEX,"The 6 June 1944 source lists it after Korpsgruppe Knieß without a clear corps heading, so no 6 June parent is given; the parent shown is the first Lexikon timeline entry that matches a unit in the table.",,LEX
+GER-INF-319D,319th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1940-11-15,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/319ID.htm,,,,,,LEX
+GER-INF-326D,326th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1942-11-09,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/326ID.htm,GER-FJ-002C,1944-08,LEX,"The 6 June 1944 source lists it under two corps (LXXXII and LXXXIX), so no 6 June parent is given; the parent shown is the first Lexikon timeline entry that matches a unit in the table.",,LEX
+GER-INF-331D,331st Infantry Division,Germany,division,Army,western_europe,,true,placeholder,,,GER-COR-082C,1944-06-06,DEW6,,,LEX
+GER-INF-338D,338th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1942-11-09,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/338ID.htm,GER-COR-085C,1944-06-06,DEW6,,,LEX
+GER-INF-343D,343rd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1942-10-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/343ID.htm,GER-COR-025C,1944-06-06,DEW6,,,LEX
+GER-INF-344D,344th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1942-09-25,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/344ID.htm,GER-COR-067C,1944-06-06,DEW6,,,LEX
+GER-INF-346D,346th Infantry Division,Germany,division,Army,western_europe,,false,active,1942-09-21,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/346ID.htm,GER-COR-081C,1944-06-06,DEW6,,,LEX
+GER-INF-347D,347th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1942-10-03,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/347ID.htm,GER-COR-088C,1944-06-06,DEW6,,,LEX
+GER-INF-348D,348th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1942-09-14,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/348ID.htm,GER-COR-067C,1944-06-06,DEW6,,,LEX
+GER-INF-352D,352nd Infantry Division,Germany,division,Army,western_europe,,false,active,1943-11-05,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/352ID.htm,GER-COR-084C,1944-06-06,DEW6,,,LEX
+GER-INF-353D,353rd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-11-05,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/353ID.htm,GER-COR-025C,1944-06-06,DEW6,,,LEX
+GER-INF-361D,361st Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-11-26,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/361ID.htm,GER-COR-088C,1945-04,LEX,,,LEX
+GER-INF-363D,363rd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1943-12-28,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/363ID.htm,GER-COR-084C,1944-08,LEX,,,LEX
+GER-INF-416D,416th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1941-12-20,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/416ID.htm,GER-COR-082C,1944-10,LEX,,,LEX
+GER-INF-462D,462nd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-19,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/462ID.htm,GER-SSCOR-013C,1944-09,LEX,,,LEX
+GER-INF-703D,703rd Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1945-03-22,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/703ID.htm,,,,,,LEX
+GER-INF-708D,708th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1941-05-02,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/708ID.htm,GER-COR-080C,1944-06-06,DEW6,,,LEX
+GER-INF-709D,709th Static Infantry Division,Germany,division,Army,western_europe,,false,active,1941-05-02,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/709ID.htm,GER-COR-084C,1944-06-06,DEW6,,,LEX
+GER-INF-711D,711th Infantry Division,Germany,division,Army,western_europe,,false,active,1941-05-01,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/711ID.htm,GER-COR-081C,1944-06-06,DEW6,,,LEX
+GER-INF-712D,712th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1941-05-05,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/712ID.htm,GER-COR-089C,1944-06-06,DEW6,,,LEX
+GER-INF-716D,716th Static Infantry Division,Germany,division,Army,western_europe,,false,active,1941-05-02,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/716ID.htm,GER-COR-084C,1944-06-06,DEW6,,,LEX
+GER-INF-719D,719th Infantry Division,Germany,division,Army,western_europe,,true,placeholder,1941-05-03,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/719ID.htm,GER-COR-088C,1944-06-06,DEW6,,,LEX
+GER-INF-HAMBURG,Infanterie-Division Hamburg (324th Infantry Division),Germany,division,Army,western_europe,,true,placeholder,1945-03-04,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/IDHamburg.htm,GER-COR-086C,1945-03,LEX,,Lexikon page titled 324; formed March 1945.,LEX
+GER-INF-JUTLAND,Infanterie-Division Jütland (325th Infantry Division),Germany,division,Army,western_europe,,true,placeholder,1944-07-04,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/IDJutland.htm,GER-COR-086C,1945-04,LEX,,Lexikon page titled 325; formed April 1945.,LEX
+GER-INF-POTSDAM,Infanterie-Division Potsdam,Germany,division,Army,western_europe,,true,placeholder,,,,,,,Formed April 1945.,LEX
+GER-KG-002PZ,Kampfgruppe (tank battalion) 2nd Panzer Division,Germany,regiment/battle_group,Armoured,western_europe,GER-PZ-002D,false,active,,,,,,,,
+GER-KG-265,Kampfgruppe 265th Infantry Division (name of commander not given),Germany,regiment/battle_group,Army,western_europe,GER-INF-265D,false,active,,,,,,,,
+GER-KG-BOEHM,Kampfgruppe Boehm,Germany,regiment/battle_group,Army,western_europe,GER-INF-353D,false,active,,,,,,,,
+GER-KG-FREY,Kampfgruppe Frey,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-001D,false,active,,,,,,,,
+GER-KG-HEINTZ,Kampfgruppe Heintz,Germany,regiment/battle_group,Army,western_europe,GER-INF-275D,false,active,,,,,,,,
+GER-KG-MEYER,Kampfgruppe Meyer,Germany,regiment/battle_group,Army,western_europe,GER-INF-352D,false,active,,,,,,,,
+GER-KG-ROHRBACH,Kampfgruppe Rohrbach,Germany,regiment/battle_group,Army,western_europe,GER-INF-709D,false,active,,,,,,,,
+GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,western_europe,GER-PZ-021D,false,active,,,,,,,,
+GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,western_europe,GER-SSPZ-002D,false,active,,,,,,,,
+GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,western_europe,,true,placeholder,,,,,,,"Corps in southern France in July 1944 per the Lexikon division timelines (198th, 189th).",LEX
+GER-LFD-016D,16th Luftwaffe Field Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1942-12-01,https://lexikon-wehrmacht.de/Gliederungen/LWFelddivisionen/16LFD-R.htm,GER-COR-088C,1944-06-06,DEW6,,"Listed as Feld-Division (L), bodenständig, in the 6 June 1944 source.",DEW6;LEX
+GER-LFD-017D,17th Luftwaffe Field Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1942-12-01,https://lexikon-wehrmacht.de/Gliederungen/LWFelddivisionen/17LFD-R.htm,GER-COR-081C,1944-06-06,DEW6,,"Listed as Feld-Division (L), bodenständig, in the 6 June 1944 source.",DEW6;LEX
+GER-LFD-018D,18th Luftwaffe Field Division,Germany,division,Luftwaffe,western_europe,,true,placeholder,1942-12-01,https://lexikon-wehrmacht.de/Gliederungen/LWFelddivisionen/18LFD-R.htm,GER-COR-082C,1944-06-06,DEW6,,"Listed as Feld-Division (L), bodenständig, in the 6 June 1944 source.",DEW6;LEX
+GER-LFD-019D,19th Luftwaffe Field Division (19. Luftwaffen-Sturm-Division),Germany,division,Luftwaffe,western_europe,,true,placeholder,1943-03-01,https://lexikon-wehrmacht.de/Gliederungen/LWFelddivisionen/19LFD-R.htm,,,,,Listed as 19. Luftwaffen-Sturm-Division in the 6 June 1944 source; later Grenadier/Volksgrenadier lineage is a separate record (GER-VG-019D).,DEW6;LEX
+GER-LL-091D,91st Luftlande Division,Germany,division,Army,western_europe,,false,active,1944-01-15,https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/91ID.htm,,,,,,LEX
+GER-OBNW-000H,Oberbefehlshaber Nordwest (OB Nordwest),Germany,other,Army,western_europe,,true,placeholder,,,,,,,"Northwest Germany and Netherlands command, 1945.",LEX
+GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,western_europe,,false,active,,,,,,,,
+GER-OKW-000H,Oberkommando der Wehrmacht (OKW),Germany,other,Army,western_europe,,true,placeholder,,,,,,,,
+GER-PG-003D,3rd Panzergrenadier Division,Germany,division,Armoured,western_europe,,true,placeholder,,,,,,,,LEX
+GER-PG-015D,15th Panzergrenadier Division,Germany,division,Armoured,western_europe,,true,placeholder,,,GER-COR-066C,1944-09,LEX,,,LEX
+GER-PG-025D,25th Panzergrenadier Division,Germany,division,Armoured,western_europe,,true,placeholder,1943-06-23,https://lexikon-wehrmacht.de/Gliederungen/Panzergrenadierdivisionen/25PGD.htm,,,,,,LEX
+GER-PG-FUEBE,Führer-Begleit-Division,Germany,division,Armoured,western_europe,,true,placeholder,1945-01-26,https://lexikon-wehrmacht.de/Gliederungen/Panzergrenadierdivisionen/FuhrerBeglDiv.htm,,,,,Formed from Führer-Begleit-Brigade; see source.,LEX
+GER-PG-FUEGR,Führer-Grenadier-Division (Führer Grenadier Brigade until 1945),Germany,division,Armoured,western_europe,,true,placeholder,1945-01-26,https://lexikon-wehrmacht.de/Gliederungen/Panzergrenadierdivisionen/FuhrerGrenDiv.htm,GER-COR-053C,1945-01,LEX,,Brigade in the December 1944 Ardennes order of battle; division from January 1945 per source.,LEX;WPBULGE
+GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,western_europe,,false,active,1935-10-15,https://lexikon-wehrmacht.de/Gliederungen/Panzerdivisionen/2PD-R.htm,,,,,,LEX
+GER-PZ-009D,9th Panzer Division,Germany,division,Armoured,western_europe,,true,placeholder,,,GER-SSPZ-002C,1944-08,LEX,,,LEX
+GER-PZ-011D,11th Panzer Division,Germany,division,Armoured,western_europe,,true,placeholder,1940-08-01,https://lexikon-wehrmacht.de/Gliederungen/Panzerdivisionen/11PD-R.htm,GER-COR-085C,1944-09,LEX,,,LEX
+GER-PZ-021D,21st Panzer Division,Germany,division,Armoured,western_europe,,false,active,1941-08-01,https://lexikon-wehrmacht.de/Gliederungen/Panzerdivisionen/21PD-R.htm,,,,,,LEX
+GER-PZ-039C,XXXIX Panzer Corps,Germany,corps,Armoured,western_europe,,true,placeholder,1942-07-09,https://lexikon-wehrmacht.de/Gliederungen/KorpsPz/XXXIXPzKorps-R.htm,,,,,,WPBULGE;WPNORDWIND
+GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,western_europe,,false,active,1942-06-21,https://lexikon-wehrmacht.de/Gliederungen/KorpsPz/XXXXVIIPzKorps-R.htm,GER-PZA-005A,1944-08,LEX,,,LEX
+GER-PZ-058C,LVIII Panzer Corps,Germany,corps,Armoured,western_europe,,true,placeholder,1943-07-28,https://lexikon-wehrmacht.de/Gliederungen/KorpsPz/LVIIIPzKorps-R.htm,GER-PZA-005A,1944-09,LEX,,,WPBULGE;LEX
+GER-PZ-116D,116th Panzer Division,Germany,division,Armoured,western_europe,,true,placeholder,1944-03-28,https://lexikon-wehrmacht.de/Gliederungen/Panzerdivisionen/116PD-R.htm,GER-SSPZ-002C,1944-08,LEX,,,LEX
+GER-PZ-LEHRD,Panzer Lehr Division,Germany,division,Armoured,western_europe,,false,active,1944-01-10,https://lexikon-wehrmacht.de/Gliederungen/Panzerdivisionen/PzLPD.htm,,,,,,LEX
+GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,western_europe,,true,placeholder,,,GER-AG-00BG,1944-08,LEX,,Successor of Panzer Group West (separate record GER-PZG-WESTA); the Lexikon page may also cover the earlier Tunisian Fifth Panzer Army.,LEX;WPBULGE
+GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,western_europe,,true,placeholder,1944-09-14,https://lexikon-wehrmacht.de/Gliederungen/ArmeenPz/Panzerarmee6-R.htm,GER-AG-00BG,1944-12,LEX,,"Ardennes offensive, December 1944; the Lexikon page also covers its later Eastern Front history.",LEX;WPBULGE
+GER-PZB-105B,Panzer-Brigade 105,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-106B,Panzer-Brigade 106,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-107B,Panzer-Brigade 107,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-108B,Panzer-Brigade 108,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-111B,Panzer-Brigade 111,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-112B,Panzer-Brigade 112,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-113B,Panzer-Brigade 113,Germany,brigade,Armoured,western_europe,,true,placeholder,,,,,,,Western Front service September 1944 to January 1945 per Lexikon page.,LEX
+GER-PZB-150B,Panzer-Brigade 150,Germany,brigade,Armoured,western_europe,,true,placeholder,1944-11,https://lexikon-wehrmacht.de/Gliederungen/PanzerBrig/PzBrig150.htm,,,,,Special-operations brigade for the Ardennes offensive (Operation Greif).,LEX
+GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,western_europe,,false,active,,,,,,,,
+GER-RES-148D,148th Reserve Division,Germany,division,Army,western_europe,,true,placeholder,1942-10-01,https://lexikon-wehrmacht.de/Gliederungen/ResDiv/148ResDiv-R.htm,GER-COR-062C,1944-06-06,DEW6,,Ersatzheer (replacement army) formation listed in the 6 June 1944 source.,DEW6;LEX
+GER-RES-157D,157th Reserve Division,Germany,division,Army,western_europe,,true,placeholder,1942-10-01,https://lexikon-wehrmacht.de/Gliederungen/ResDiv/157ResDiv-R.htm,GER-COR-066C,1944-06-06,DEW6,,Ersatzheer (replacement army) formation listed in the 6 June 1944 source.,DEW6;LEX
+GER-RES-158D,158th Reserve Division,Germany,division,Army,western_europe,,true,placeholder,1942-10-01,https://lexikon-wehrmacht.de/Gliederungen/ResDiv/158ResDiv-R.htm,GER-COR-080C,1944-06-06,DEW6,,Ersatzheer (replacement army) formation listed in the 6 June 1944 source.,DEW6;LEX
+GER-RES-165D,165th Reserve Division,Germany,division,Army,western_europe,,true,placeholder,1942-10-04,https://lexikon-wehrmacht.de/Gliederungen/ResDiv/165ResDiv-R.htm,GER-COR-089C,1944-06-06,DEW6,,Ersatzheer (replacement army) formation listed in the 6 June 1944 source.,DEW6;LEX
+GER-RES-182D,182nd Reserve Division,Germany,division,Army,western_europe,,true,placeholder,1942-11-26,https://lexikon-wehrmacht.de/Gliederungen/ResDiv/182ResDiv-R.htm,GER-COR-089C,1944-06-06,DEW6,,Ersatzheer (replacement army) formation listed in the 6 June 1944 source.,DEW6;LEX
+GER-SSCOR-012C,XII SS Corps,Germany,corps,Waffen-SS,western_europe,,true,placeholder,,,GER-PZA-005A,1944-10,LEX,,,LEX
+GER-SSCOR-013C,XIII SS Corps,Germany,corps,Waffen-SS,western_europe,,true,placeholder,,,GER-ARMY-001A,1944-09,LEX,,,LEX
+GER-SSCOR-014C,XIV SS Corps,Germany,corps,Waffen-SS,western_europe,,true,placeholder,1944-11-10,https://lexikon-wehrmacht.de/Gliederungen/KorpsSS/XIVSSKorps-R.htm,,,,,"Upper Rhine, January 1945.",LEX
+GER-SSCOR-018C,XVIII SS Corps,Germany,corps,Waffen-SS,western_europe,,true,placeholder,1944-12,https://lexikon-wehrmacht.de/Gliederungen/KorpsSS/XVIIISSKorps-R.htm,,,,,"Upper Rhine, January 1945.",LEX
+GER-SSGEB-006D,6th SS Mountain Division Nord,Germany,division,Waffen-SS,western_europe,,true,placeholder,1941-02-28,https://lexikon-wehrmacht.de/Gliederungen/GebirgsdivisionenSS/6GebDSS.htm,GER-COR-090C,1945-01,LEX,,,LEX;WPNORDWIND
+GER-SSGR-030D,30th Waffen Grenadier Division of the SS (Russian No. 2),Germany,division,Waffen-SS,western_europe,,true,placeholder,,,,,,,,WPNORDWIND
+GER-SSPG-017D,17th SS Panzergrenadier Division Götz von Berlichingen,Germany,division,Waffen-SS,western_europe,,false,active,1943-11-15,https://lexikon-wehrmacht.de/Gliederungen/PanzergrenadierdivisonenSS/17SSPGD-R.htm,,,,,,LEX
+GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,western_europe,,false,active,1943-07-27,https://lexikon-wehrmacht.de/Gliederungen/KorpsSS/ISSPzKorps-R.htm,GER-ARMY-007A,1944-06,LEX,,,LEX
+GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,western_europe,,true,placeholder,1943-10-22,https://lexikon-wehrmacht.de/Gliederungen/PanzerdivisionenSS/1SSPD-R.htm,,,,,,LEX
+GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,western_europe,,false,active,1942-07,https://lexikon-wehrmacht.de/Gliederungen/KorpsSS/IISSPzKorps-R.htm,GER-PZA-005A,1944-08,LEX,,,LEX
+GER-SSPZ-002D,2nd SS Panzer Division Das Reich,Germany,division,Waffen-SS,western_europe,,true,placeholder,1943-10-22,https://lexikon-wehrmacht.de/Gliederungen/PanzerdivisionenSS/2SSPD-R.htm,,,,,,LEX
+GER-SSPZ-009D,9th SS Panzer Division Hohenstaufen,Germany,division,Waffen-SS,western_europe,,false,active,1943-10-03,https://lexikon-wehrmacht.de/Gliederungen/PanzerdivisionenSS/9SSPD-R.htm,,,,,,LEX
+GER-SSPZ-010D,10th SS Panzer Division Frundsberg,Germany,division,Waffen-SS,western_europe,,false,active,1943-10-26,https://lexikon-wehrmacht.de/Gliederungen/PanzerdivisionenSS/10SSPD-R.htm,,,,,,LEX
+GER-SSPZ-012D,12th SS Panzer Division Hitlerjugend,Germany,division,Waffen-SS,western_europe,,false,active,1943-07-20,https://lexikon-wehrmacht.de/Gliederungen/PanzerdivisionenSS/12SSPD-R.htm,,,,,,LEX
+GER-VAK-388C,Volks-Artillerie-Korps 388,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps388-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-401C,Volks-Artillerie-Korps 401,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps401-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-402C,Volks-Artillerie-Korps 402,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps402-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-403C,Volks-Artillerie-Korps 403,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps403-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-404C,Volks-Artillerie-Korps 404,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps404-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-405C,Volks-Artillerie-Korps 405,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps405-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-406C,Volks-Artillerie-Korps 406,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps406-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-407C,Volks-Artillerie-Korps 407,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps407-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-408C,Volks-Artillerie-Korps 408,Germany,corps,Army,western_europe,,true,placeholder,1944-10-15,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps408-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-409C,Volks-Artillerie-Korps 409,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps409-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-410C,Volks-Artillerie-Korps 410,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps410-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VAK-766C,Volks-Artillerie-Korps 766,Germany,corps,Army,western_europe,,true,placeholder,1944-10-20,https://lexikon-wehrmacht.de/Gliederungen/VolksArtKorps/VolksArtKorps766-R.htm,,,,,Artillery corps created 20 October 1944 (renamed Volks-Artillerie-Korps 22 October 1944) by renaming a Heeres-Artillerie-Brigade; Ardennes offensive deployment per Lexikon.,LEX
+GER-VG-009D,9th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-13,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/9VGD.htm,GER-COR-053C,1945-01,LEX,,,LEX
+GER-VG-012D,12th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-08-12,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/12VGD.htm,GER-COR-081C,1944-10,LEX,,,LEX
+GER-VG-016D,16th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/16VGD.htm,GER-COR-064C,1944-11,LEX,,,LEX
+GER-VG-018D,18th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-02,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/18VGD.htm,GER-COR-066C,1944-10,LEX,,,LEX
+GER-VG-019D,19th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/19VGD.htm,GER-COR-082C,1944-10,LEX,,,LEX
+GER-VG-026D,26th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-17,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/26VGD.htm,GER-COR-066C,1944-11,LEX,,,LEX
+GER-VG-036D,36th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/36VGD-R.htm,GER-COR-080C,1944-10,LEX,,,LEX
+GER-VG-047D,47th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-17,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/47VGD-R.htm,GER-COR-081C,1944-12,LEX,,,LEX
+GER-VG-062D,62nd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-22,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/62VGD-R.htm,GER-COR-066C,1944-12,LEX,,,LEX
+GER-VG-079D,79th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-27,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/79VGD.htm,GER-COR-053C,1944-12,LEX,,,LEX
+GER-VG-167D,167th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/167VGD-R.htm,GER-COR-013C,1945-02,LEX,,,LEX
+GER-VG-183D,183rd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-15,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/183VGD.htm,GER-SSPZ-002C,1944-10,LEX,,,LEX
+GER-VG-212D,212th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-17,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/212VGD-R.htm,GER-COR-080C,1944-12,LEX,,,LEX
+GER-VG-246D,246th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-15,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/246VGD-R.htm,GER-COR-081C,1944-10,LEX,,,LEX
+GER-VG-256D,256th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-17,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/256VGD-R.htm,GER-COR-089C,1944-10,LEX,,,LEX
+GER-VG-257D,257th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-13,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/257VGD-R.htm,GER-COR-090C,1945-01,LEX,,,LEX
+GER-VG-272D,272nd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-17,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/272VGD-R.htm,GER-COR-074C,1944-12,LEX,,,LEX
+GER-VG-276D,276th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-04,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/276VGD-R.htm,GER-COR-080C,1944-12,LEX,,,LEX
+GER-VG-277D,277th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-04,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/277VGD-R.htm,GER-COR-074C,1944-12,LEX,,,LEX
+GER-VG-326D,326th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-04,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/326VGD-R.htm,GER-COR-067C,1944-12,LEX,,,LEX
+GER-VG-340D,340th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-15,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/340VGD-R.htm,GER-COR-081C,1944-11,LEX,,,LEX
+GER-VG-347D,347th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,,,GER-COR-012C,1945-05,LEX,,,LEX
+GER-VG-352D,352nd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-21,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/352VGD.htm,GER-COR-085C,1945-01,LEX,,,LEX
+GER-VG-361D,361st Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-08-23,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/361VGD.htm,GER-COR-089C,1944-11,LEX,,,LEX
+GER-VG-363D,363rd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-17,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/363VGD.htm,GER-SSCOR-012C,1944-10,LEX,,,LEX
+GER-VG-462D,462nd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-11,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/462VGD-R.htm,GER-COR-082C,1944-11,LEX,,,LEX
+GER-VG-553D,553rd Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/553VGD.htm,GER-SSCOR-013C,1944-10,LEX,,,LEX
+GER-VG-559D,559th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-10-09,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/559VGD.htm,GER-SSCOR-013C,1944-10,LEX,,,LEX
+GER-VG-560D,560th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-08-10,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/560VGD.htm,GER-SSPZ-002C,1945-01,LEX,,,LEX
+GER-VG-708D,708th Volksgrenadier Division,Germany,division,Army,western_europe,,true,placeholder,1944-09-04,https://lexikon-wehrmacht.de/Gliederungen/Volksgrenadierdivisionen/708VGD-R.htm,GER-COR-064C,1944-11,LEX,,,LEX
+GER-WBN-000H,Wehrmachtbefehlshaber der Niederlande,Germany,other,Army,western_europe,,true,placeholder,,,,,,,Regional command in the Netherlands; listed above corps level on 6 June 1944.,DEW6;LEX
+NL-INF-IRNEB,Royal Netherlands Brigade (Prinses Irene),Netherlands,brigade,Army,western_europe,,true,placeholder,,,,,,,,WPUNIT
+POL-ABN-001B,1st Polish Independent Parachute Brigade,Poland,brigade,Airborne,western_europe,,true,placeholder,1941-09-23,https://en.wikipedia.org/wiki/1st_Independent_Parachute_Brigade_(Poland),,,,,,WP21AG;WPMG
+POL-ARM-001D,1st Polish Armoured Division,Poland,division,Armoured,western_europe,,true,placeholder,1942,https://en.wikipedia.org/wiki/1st_Armoured_Division_(Poland),,,,,Under II Canadian Corps (First Canadian Army) in 1944-45.,WP21AG;WPNORM
+UK-ABN-001C,I Airborne Corps,UK,corps,Airborne,western_europe,,true,placeholder,1943,https://en.wikipedia.org/wiki/I_Airborne_Corps_(United_Kingdom),,,,,,WPUNIT
+UK-ABN-001D,1st Airborne Division,UK,division,Airborne,western_europe,,true,placeholder,1941,https://en.wikipedia.org/wiki/1st_Airborne_Division_(United_Kingdom),,,,,,WP21AG;WPMG
+UK-ABN-006D,6th Airborne Division,UK,division,Airborne,western_europe,,false,active,1943,https://en.wikipedia.org/wiki/6th_Airborne_Division_(United_Kingdom),,,,,,WPNORM;WPBULGE
+UK-AG-021G,21st Army Group,UK,army_group,Army,western_europe,,false,active,1943,https://en.wikipedia.org/wiki/21st_Army_Group,,,,,,WP12AG;WPMG;WPBULGE
+UK-ARM-004B,4th Armoured Brigade,UK,brigade,Armoured,western_europe,,false,active,1939-09,https://en.wikipedia.org/wiki/4th_Armoured_Brigade_(United_Kingdom),,,,,,WPMG
+UK-ARM-007D,7th Armoured Division,UK,division,Armoured,western_europe,,false,active,,,,,,,,WP21AG;WPNORM;WPMG
+UK-ARM-008B,8th Armoured Brigade,UK,brigade,Armoured,western_europe,,false,active,1941-08,https://en.wikipedia.org/wiki/8th_Armoured_Brigade_(United_Kingdom),,,,,,WPNORM;WPMG
+UK-ARM-011D,11th Armoured Division,UK,division,Armoured,western_europe,,false,active,1941,https://en.wikipedia.org/wiki/11th_Armoured_Division_(United_Kingdom),,,,,,WP21AG;WPNORM;WPMG
+UK-ARM-027B,27th Armoured Brigade,UK,brigade,Armoured,western_europe,,true,placeholder,1940-11-26,https://en.wikipedia.org/wiki/27th_Armoured_Brigade_(United_Kingdom),,,,,,WPUNIT
+UK-ARM-033B,33rd Armoured Brigade,UK,brigade,Armoured,western_europe,,true,placeholder,1944-03-17,https://en.wikipedia.org/wiki/33rd_Armoured_Brigade_(United_Kingdom),,,,,,WPBULGE
+UK-ARM-079D,79th Armoured Division,UK,division,Armoured,western_europe,,false,active,1942-08-14,https://en.wikipedia.org/wiki/79th_Armoured_Division_(United_Kingdom),,,,,,WPNORM
+UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,western_europe,,false,active,1941-06-17,https://en.wikipedia.org/wiki/Guards_Armoured_Division,,,,,,WP21AG;WPNORM;WPMG;WPBULGE
+UK-ARMY-002A,Second Army,UK,army,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG
+UK-CDO-001B,1st Special Service (Commando) Brigade,UK,brigade,Army,western_europe,,true,placeholder,,,,,,,Also known as 1st Commando Brigade; includes Royal Marine commandos in part. No US Marine Corps ground units served on the Western Front in this period.,WPUNIT
+UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,western_europe,,true,placeholder,,,,,,,Also known as 4th Commando Brigade; Royal Marine commandos. No US Marine Corps ground units served on the Western Front in this period.,WPUNIT
+UK-COR-001C,I Corps,UK,corps,Army,western_europe,,false,active,,,,,,,,WP21AG;WPNORDWIND
+UK-COR-008C,VIII Corps,UK,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
+UK-COR-012C,XII Corps,UK,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
+UK-COR-030C,XXX Corps,UK,corps,Army,western_europe,,false,active,,,,,,,,WP21AG;WPMG;WPBULGE
+UK-INF-003D,3rd Infantry Division,UK,division,Army,western_europe,,false,active,,,,,,,,WP6AG;WP21AG;WPNORM;WPMG
+UK-INF-015D,15th (Scottish) Infantry Division,UK,division,Army,western_europe,,false,active,1939,https://en.wikipedia.org/wiki/15th_(Scottish)_Infantry_Division,,,,,,WP21AG;WPNORM;WPMG
+UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,western_europe,,false,active,,,,,,,,WP21AG;WPNORM;WPMG
+UK-INF-049D,49th (West Riding) Infantry Division,UK,division,Army,western_europe,,false,active,,,,,,,,WP21AG;WPNORM;WPMG
+UK-INF-050D,50th (Northumbrian) Infantry Division,UK,division,Army,western_europe,,false,active,,,,,,,,WP21AG;WPNORM;WPMG;WPBULGE
+UK-INF-051D,51st (Highland) Infantry Division,UK,division,Army,western_europe,,false,active,,,,,,,,WP21AG;WPNORM
+UK-INF-052D,52nd (Lowland) Infantry Division,UK,division,Army,western_europe,,true,placeholder,,,,,,,,WP21AG
+UK-INF-053D,53rd (Welsh) Infantry Division,UK,division,Army,western_europe,,false,active,,,,,,,,WP21AG;WPNORM;WPMG
+UK-INF-059D,59th (Staffordshire) Infantry Division,UK,division,Army,western_europe,,false,active,1939,https://en.wikipedia.org/wiki/59th_(Staffordshire)_Infantry_Division,,,,,,WP21AG;WPNORM
+UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,western_europe,,true,placeholder,1941-09,https://en.wikipedia.org/wiki/6th_Guards_Armoured_Brigade,,,,,Churchill tank brigade (Guards).,WPNORM
+UK-TNK-031B,31st Tank Brigade,UK,brigade,Armoured,western_europe,,false,active,,,,,,,,WPUNIT
+UK-TNK-034B,34th Tank Brigade,UK,brigade,Armoured,western_europe,,true,placeholder,1941-12,https://en.wikipedia.org/wiki/34th_Tank_Brigade,,,,,,WPUNIT
+US-ABN-017D,17th Airborne Division,US,division,Airborne,western_europe,,true,placeholder,1942-12-16,https://en.wikipedia.org/wiki/17th_Airborne_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
+US-ABN-018C,XVIII Airborne Corps,US,corps,Airborne,western_europe,,true,placeholder,1942-01-14,https://en.wikipedia.org/wiki/XVIII_Airborne_Corps,,,,,,WP12AG;WPBULGE
+US-ABN-082D,82nd Airborne Division,US,division,Airborne,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPNORM;WPMG;WPBULGE
+US-ABN-101D,101st Airborne Division,US,division,Airborne,western_europe,,false,active,,,,,,,,WP6AG;WP21AG;WPNORM;WPMG;WPBULGE
+US-AG-006G,6th Army Group,US,army_group,Army,western_europe,,true,placeholder,1944,https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group,,,,,,WP12AG;WP21AG
+US-AG-012G,12th Army Group,US,army_group,Army,western_europe,,true,placeholder,1944,https://en.wikipedia.org/wiki/Twelfth_United_States_Army_Group,,,,,,WP6AG;WP21AG
+US-ARM-002D,2nd Armored Division,US,division,Armoured,western_europe,,false,active,1940-07-15,https://en.wikipedia.org/wiki/2nd_Armored_Division_(United_States),,,,,,WP12AG;WP6AG;WPNORM;WPBULGE;WPNORDWIND
+US-ARM-003D,3rd Armored Division,US,division,Armoured,western_europe,,false,active,1941-01-13,https://en.wikipedia.org/wiki/3rd_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPNORM;WPBULGE
+US-ARM-004D,4th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1941-01-13,https://en.wikipedia.org/wiki/4th_Armored_Division_(United_States),,,,,,WP12AG;WPNORM;WPBULGE
+US-ARM-005D,5th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1941-08-28,https://en.wikipedia.org/wiki/5th_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP6AG;WPNORM;WPBULGE;WPNORDWIND
+US-ARM-006D,6th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-02-15,https://en.wikipedia.org/wiki/6th_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPNORM;WPBULGE
+US-ARM-007D,7th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-03-01,https://en.wikipedia.org/wiki/7th_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
+US-ARM-008D,8th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-04-01,https://en.wikipedia.org/wiki/8th_Armored_Division_(United_States),,,,,,WP12AG
+US-ARM-009D,9th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-07-15,https://en.wikipedia.org/wiki/9th_Armored_Division_(United_States),,,,,,WP12AG;WPBULGE
+US-ARM-010D,10th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-07-15,https://en.wikipedia.org/wiki/10th_Armored_Division_(United_States),,,,,,WP6AG;WPBULGE
+US-ARM-011D,11th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-08-15,https://en.wikipedia.org/wiki/11th_Armored_Division_(United_States),,,,,,WP12AG;WPBULGE
+US-ARM-012D,12th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-09-15,https://en.wikipedia.org/wiki/12th_Armored_Division_(United_States),,,,,,WP6AG;WPNORDWIND
+US-ARM-013D,13th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-06-09,https://en.wikipedia.org/wiki/13th_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
+US-ARM-014D,14th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-06-09,https://en.wikipedia.org/wiki/14th_Armored_Division_(United_States),,,,,,WP12AG;WPNORDWIND
+US-ARM-016D,16th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1943-07-15,https://en.wikipedia.org/wiki/16th_Armored_Division_(United_States),,,,,,WP12AG
+US-ARM-020D,20th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-11-24,https://en.wikipedia.org/wiki/20th_Armored_Division_(United_States),,,,,,WP6AG
+US-ARMY-001A,First Army,US,army,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPBULGE
+US-ARMY-003A,Third Army,US,army,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP6AG;WP21AG
+US-ARMY-007A,Seventh Army,US,army,Army,western_europe,,true,placeholder,1943-02-25,https://en.wikipedia.org/wiki/Seventh_United_States_Army,,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP6AG;WPMG;WPBULGE;WPNORDWIND
+US-ARMY-009A,Ninth Army,US,army,Army,western_europe,,true,placeholder,1944-04-15,https://en.wikipedia.org/wiki/Ninth_United_States_Army,,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
+US-ARMY-015A,Fifteenth Army,US,army,Army,western_europe,,true,placeholder,1944-08-21,https://en.wikipedia.org/wiki/Fifteenth_United_States_Army,,,,,Occupation/rear-area army HQ from early 1945; Western Front combat role limited.,WP12AG;WPMG
+US-CCA-002D,"Combat Command A, 2nd Armored Division",US,regiment/battle_group,Armoured,western_europe,US-ARM-002D,false,active,,,,,,,,
+US-COR-003C,III Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-COR-005C,V Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
+US-COR-006C,VI Corps,US,corps,Army,western_europe,,true,placeholder,,,US-ARMY-007A,1944-08-15,WPDRAGOON,,,WP6AG;WPNORDWIND
+US-COR-007C,VII Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
+US-COR-008C,VIII Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
+US-COR-012C,XII Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
+US-COR-013C,XIII Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-COR-015C,XV Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
+US-COR-016C,XVI Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-COR-019C,XIX Corps,US,corps,Army,western_europe,,false,active,1942-07-07,https://en.wikipedia.org/wiki/XIX_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
+US-COR-020C,XX Corps,US,corps,Army,western_europe,,true,placeholder,1942-08-27,https://en.wikipedia.org/wiki/XX_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
+US-COR-021C,XXI Corps,US,corps,Army,western_europe,,true,placeholder,1943-12-02,https://en.wikipedia.org/wiki/XXI_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP6AG;WPNORDWIND
+US-COR-022C,XXII Corps,US,corps,Army,western_europe,,true,placeholder,1944-01-09,https://en.wikipedia.org/wiki/XXII_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
+US-COR-023C,XXIII Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-001D,1st Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WP6AG;WPNORM;WPBULGE
+US-INF-002D,2nd Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-003D,3rd Infantry Division,US,division,Army,western_europe,,true,placeholder,,,US-COR-006C,1944-08-15,WPDRAGOON,,,WP6AG;WP21AG;WPNORM;WPMG
+US-INF-004D,4th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-005D,5th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP21AG;WPNORM;WPBULGE
+US-INF-008D,8th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP21AG;WPNORM
+US-INF-009D,9th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-026D,26th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-028D,28th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-029D,29th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM
+US-INF-030D,30th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-035D,35th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-036D,36th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,US-COR-006C,1944-08-15,WPDRAGOON,,,WP6AG;WPNORDWIND
+US-INF-042D,42nd Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
+US-INF-044D,44th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
+US-INF-045D,45th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,US-COR-006C,1944-08-15,WPDRAGOON,,,WP6AG;WPNORDWIND
+US-INF-063D,63rd Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-01-18,https://en.wikipedia.org/wiki/63rd_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP6AG;WPNORDWIND
+US-INF-065D,65th Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-03-12,https://en.wikipedia.org/wiki/65th_Infantry_Division_(United_States),,,,,,WP12AG
+US-INF-066D,66th Infantry Division,US,division,Army,western_europe,,true,placeholder,1942-12-16,https://en.wikipedia.org/wiki/66th_Infantry_Division_(United_States),,,,,,WP12AG
+US-INF-069D,69th Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-01-14,https://en.wikipedia.org/wiki/69th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
+US-INF-070D,70th Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-01-18,https://en.wikipedia.org/wiki/70th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPNORDWIND
+US-INF-071D,71st Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-07-10,https://en.wikipedia.org/wiki/71st_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
+US-INF-075D,75th Infantry Division,US,division,Army,western_europe,,true,placeholder,1942-12-24,https://en.wikipedia.org/wiki/75th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPBULGE
+US-INF-076D,76th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-078D,78th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-079D,79th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPNORDWIND
+US-INF-080D,80th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-083D,83rd Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-084D,84th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-086D,86th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG
+US-INF-087D,87th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-089D,89th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-090D,90th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
+US-INF-094D,94th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-095D,95th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-097D,97th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-099D,99th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-100D,100th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
+US-INF-102D,102nd Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-INF-103D,103rd Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
+US-INF-104D,104th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP21AG
+US-INF-106D,106th Infantry Division,US,division,Army,western_europe,,true,placeholder,1942-05-15,https://en.wikipedia.org/wiki/106th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPBULGE

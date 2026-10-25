@@ -55,21 +55,30 @@ Primary key: `claim_id` (unique across the whole repository). Rows in each file 
 |---|---|---|---|---|
 | `unit_id` | string | yes | Stable unit key. Primary key. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
 | `unit_name` | string | yes | Unit name only. |  |
-| `nationality` | string | yes | Nationality (US, UK, Canada, Germany ...). | vocabulary `nationality` |
+| `nationality` | string | yes | Nationality (US, UK, Canada, Germany, Poland, France, Belgium, Netherlands, Czechoslovakia, Allied ...). | vocabulary `nationality` |
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
 | `branch` | string | yes | Service or arm (see vocabulary). | vocabulary `branch` |
 | `theater` | string | yes | Primary theater of the unit (single value; claim rows carry their own theater). | vocabulary `theater` |
 | `parent_unit_id` | string | no | Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use the claim columns `parent_unit_id` and `command_relationships` for time-dependent parents. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
-| `parent_only` | boolean | yes | true if the unit has no claim rows of its own (it exists only so that other rows can point to it); false if data/claims/<nationality>/<unit_id>.csv exists. | `true`/`false` |
+| `parent_only` | boolean | yes | true if the unit has no claim rows of its own (it exists only so that other rows can point to it, or it is a placeholder); false if data/claims/<nationality>/<unit_id>.csv exists. True exactly when `record_status` is `placeholder`. | `true`/`false` |
+| `record_status` | string | yes | `placeholder` (identity only, no claim file; not a claim about location), `partial` (claim file known to be incomplete) or `active` (claim file exists). | vocabulary `record_status` |
+| `formed_date` | string | no | Formation or activation date of the unit, or of the designation the record uses (see `unit_note`), as given by `formed_date_source`: `YYYY-MM-DD`, `YYYY-MM` or `YYYY`; blank if unknown. It is not the date the unit arrived in the theater. | pattern `^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$`; must be a real date |
+| `formed_date_source` | string | no | URL of the page that gives `formed_date`. Required when `formed_date` is set. | URL |
+| `initial_parent_unit_id` | string | no | Placeholder-level hint: the formation the unit is listed under in `initial_parent_source` as of `initial_parent_as_of`. Blank where no source clearly gives it. Not an organic-versus-attached statement and not a claim: time-dependent parents of claim rows go in the claim columns `parent_unit_id` and `command_relationships`. Different from `parent_unit_id` (fixed organic parent of battle groups). | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$`; must resolve |
+| `initial_parent_as_of` | string | no | Date the listing applies to, `YYYY-MM-DD` or `YYYY-MM` (for example `1944-06-06` for the German 6 June 1944 order of battle). Set together with the two other `initial_parent_*` columns or not at all. | real date |
+| `initial_parent_source` | string | no | Source token for the listing. | vocabulary `source_token` |
+| `component_of_note` | string | no | Free text on the placeholder parent link, for example why it is blank or that the source lists the unit under two formations. |  |
+| `unit_note` | string | no | Free text on the unit's identity: renames, reconstitutions, lineage caveats, uncertain Western Front service. |  |
+| `listing_source` | string | no | Semicolon-separated source tokens naming where the unit was found when the placeholder was created. A listing is not evidence of a date or place. | tokens from vocabulary `source_token` |
 
-Rows are sorted by `unit_id`. `parent_only = true` units have no claim file; they exist so `parent_unit_id` and `command_relationships` ids resolve (for example SHAEF, OKW and the German Fifteenth Army). `scripts/validate.py` checks every parent id against `units.csv`.
+Rows are sorted by `unit_id`. `parent_only = true` units (`record_status = placeholder`) have no claim file; they exist so that `parent_unit_id`, `command_relationships` and `engaged_with` names resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active` and `parent_only = false`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with `parent_only` and the existence of a claim file, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
 
 ## unit_id pattern
 
 `NATION-TYPE-NUMBER+ECHELONLETTER`, all upper case.
 
-- Nation: `US`, `UK`, `CAN`, `GER`, `ALL` (combined Allied headquarters such as SHAEF).
-- Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West), `OKW`, `SHAEF`.
+- Nation: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF).
+- Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger, also Fallschirmjaeger corps), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West), `OKW`, `SHAEF`; placeholder additions: `VG` (Volksgrenadier division), `PG` (panzergrenadier), `SSGEB` (SS mountain), `SSGR` (SS grenadier), `LFD` (Luftwaffe field division), `RES` (reserve division), `DIV` (numbered or z.b.V. division), `PZB` (Panzer-Brigade), `PZA` (panzer army), `FJA` (parachute army), `AA` (Armee-Abteilung), `PZ`/`SSCOR`/`LFC` for panzer, SS and Luftwaffe field corps, `VAK` (Volks-Artillerie-Korps), `OBNW`/`WBN` (other HQs), `CDO` (commando brigade).
 - Echelon letter: `G` army group, `A` army, `C` corps, `D` division, `B` brigade, `H` other HQ.
 - Examples: `US-INF-029D`, `GER-PZ-021D`, `UK-ARM-011D`, `CAN-INF-003D`, `GER-SSPZ-001C` (I SS Panzer Corps), `GER-SSPZ-001D` (1st SS Panzer Division).
 - Units without a number use a word: `GER-PZ-LEHRD` (Panzer Lehr), `UK-ARM-GRDD` (Guards Armoured), `GER-PZG-WESTA` (Panzer Group West), `GER-AG-00BG` (Army Group B).
@@ -124,7 +133,7 @@ Primary theater of operations the claim belongs to. One value per claim row; a u
 
 ### nationality
 
-Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit.
+Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit. Further nations (Italy, USSR, Japan, ...) are added when their theaters are started.
 
 | value | meaning |
 |---|---|
@@ -132,7 +141,12 @@ Nation of the unit. The lowercase value is the folder name under data/claims/. A
 | `UK` | United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk). |
 | `Canada` | Canada (folder canada). |
 | `Germany` | Germany, including Waffen-SS and Luftwaffe ground formations (folder germany). |
-| `Allied` | Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only parent_only units). |
+| `Allied` | Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only placeholder or parent_only units). |
+| `Poland` | Poland: Polish formations serving under British or Allied command (folder poland). |
+| `France` | France: Free French and French Army formations (folder france). |
+| `Belgium` | Belgium: Belgian formations (folder belgium). |
+| `Netherlands` | Netherlands: Dutch formations (folder netherlands). |
+| `Czechoslovakia` | Czechoslovakia: Czechoslovak formations (folder czechoslovakia). |
 
 ### relationship
 
@@ -169,6 +183,10 @@ Organisational level of the unit.
 | `brigade` | Independent brigade. |
 | `regiment/battle_group` | Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command. |
 | `other` | Higher or special headquarters that fit no level above (for example OB West). |
+| `air_force` | Reserved for later: air force, air fleet or air army headquarters (not yet used). |
+| `air_formation` | Reserved for later: air corps, air division, wing, group or squadron (not yet used). |
+| `fleet` | Reserved for later: naval fleet, task force or flotilla headquarters (not yet used). |
+| `naval_unit` | Reserved for later: ship, squadron or other naval unit (not yet used). |
 
 ### branch
 
@@ -180,7 +198,10 @@ Service or arm, assigned from the unit name.
 | `Armoured` | Armoured and panzer formations. |
 | `Airborne` | Allied airborne formations. |
 | `Waffen-SS` | Waffen-SS formations. |
-| `Luftwaffe` | Luftwaffe ground formations (for example Fallschirmjaeger). |
+| `Luftwaffe` | Luftwaffe ground formations (for example Fallschirmjaeger and Luftwaffe field divisions); also reserved for Luftwaffe flying units. |
+| `Marines` | Marine ground formations (reserved; none served on the Western Front 1944-45). |
+| `Air Force` | Reserved for later: air forces (RAF, USAAF, Luftwaffe flying units). |
+| `Navy` | Reserved for later: naval forces. |
 
 ### location_represents
 
@@ -295,3 +316,30 @@ Boolean fields (established, disestablished, destroyed, parent_only) use lowerca
 | `true` | True. |
 | `false` | False. |
 
+### record_status
+
+Research state of a unit record in data/units.csv.
+
+| value | meaning |
+|---|---|
+| `placeholder` | Identity only: the unit exists in the table so that other records can point to it. No claim file; parent_only is true. Not a claim about its location. |
+| `partial` | A claim file exists but coverage is known to be incomplete (for example only some operations are done). parent_only is false. |
+| `active` | A claim file exists. parent_only is false. |
+
+### source_token
+
+Short tokens used in listing_source and initial_parent_source. See docs/sources.md and docs/methodology.md (Placeholder units).
+
+| value | meaning |
+|---|---|
+| `LEX` | Lexikon der Wehrmacht (lexikon-wehrmacht.de), the unit's own page or its timeline tables. |
+| `DEW6` | de.wikipedia 'Schematische Kriegsgliederung der Wehrmacht fuer die Operation Overlord' (German order of battle for 6 June 1944). |
+| `WP12AG` | en.wikipedia 'Twelfth United States Army Group' (order of battle, 8 May 1945). |
+| `WP6AG` | en.wikipedia 'Sixth United States Army Group' (order of battle, 8 May 1945). |
+| `WP21AG` | en.wikipedia '21st Army Group'. |
+| `WPNORM` | en.wikipedia 'List of Allied forces in the Normandy campaign'. |
+| `WPMG` | en.wikipedia 'Operation Market Garden order of battle'. |
+| `WPBULGE` | en.wikipedia 'Battle of the Bulge order of battle'. |
+| `WPDRAGOON` | en.wikipedia 'Operation Dragoon order of battle'. |
+| `WPNORDWIND` | en.wikipedia 'Operation Nordwind'. |
+| `WPUNIT` | The unit's own en.wikipedia article (no Wikipedia order-of-battle page above links to it). |

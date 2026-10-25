@@ -6,8 +6,14 @@ controlled vocabularies, unique claim_ids across the repository, unit_id matches
 file name and data/units.csv, rows sorted by date then claim_id, conflict-group integrity,
 strength_json structure (a scope is required whenever personnel is given), parent_unit_id resolves, command_relationships is valid JSON with allowed keys,
 relationship values and resolving unit_ids, every row has a source URL.
+Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with parent_only and with the
+existence of a claim file (a placeholder must not have claim rows: run scripts/promote_placeholders.py once a claim file is
+added), formed_date is a real YYYY, YYYY-MM or YYYY-MM-DD with a source URL, initial_parent_* columns are all set or all blank
+and resolve, listing_source tokens are in the source_token vocabulary, and unit_name is unique within a nationality.
 
 Warning-only checks (printed as WARNING, never change the exit code; see docs/methodology.md, "Review guardrails"):
+an engaged_with entry that does not match a unit in data/units.csv (nationality adjective plus unit_name, or a leading part of it; free text is still
+allowed for non-ground opponents),
 an attached relationship whose unit is not the parent_unit_id or with no
 organic entry, a command relationship that takes effect after the row's date, a current_activity that is long
 (probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with list longer than three.
@@ -84,6 +90,40 @@ def check_vocab(where, f, value, vocabs):
         allowed = vocabs[name]['values']
         if value not in allowed:
             err(where, '%s: %r not in vocabulary %s %s' % (f['name'], value, name, sorted(allowed)))
+    lname = f.get('vocabulary_list')
+    if lname:
+        allowed = vocabs[lname]['values']
+        for tok in value.split(';'):
+            if tok not in allowed:
+                err(where, '%s: token %r not in vocabulary %s %s' % (f['name'], tok, lname, sorted(allowed)))
+
+
+def valid_partial_date(s):
+    """True for a real YYYY, YYYY-MM or YYYY-MM-DD."""
+    m = re.fullmatch(r'(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?', s)
+    if not m:
+        return False
+    try:
+        datetime.date(int(m.group(1)), int(m.group(2) or 1), int(m.group(3) or 1))
+    except ValueError:
+        return False
+    return True
+
+
+ADJ = {'Germany': ['German'], 'UK': ['British'], 'Canada': ['Canadian'], 'US': ['US', 'American'], 'France': ['French'],
+       'Poland': ['Polish'], 'Belgium': ['Belgian'], 'Netherlands': ['Dutch'], 'Czechoslovakia': ['Czechoslovak'],
+       'Allied': ['Allied']}
+
+
+def engaged_index(units):
+    """Names that an engaged_with entry may use: '<adjective> <unit_name>' (also with the adjective removed from the name)."""
+    idx = set()
+    for u in units.values():
+        for adj in ADJ.get(u['nationality'], []):
+            idx.add('%s %s' % (adj, u['unit_name']))
+            idx.add('%s %s' % (adj, re.sub(r'^(%s) ' % adj, '', u['unit_name'])))
+            idx.add('%s %s' % (adj, u['unit_name'].replace(' %s ' % adj, ' ')))
+    return idx
 
 
 def check_row(where, row, fields, vocabs):
@@ -252,12 +292,51 @@ def main():
         ids = list(units)
         if ids != sorted(ids):
             err('data/units.csv', 'rows must be sorted by unit_id')
+        seen_names = {}
+        for uid, u in units.items():
+            key = (u['nationality'], u['unit_name'])
+            if key in seen_names:
+                err('data/units.csv', 'unit_name %r is used by both %s and %s (names must be unique within a nationality)' % (u['unit_name'], seen_names[key], uid))
+            seen_names[key] = uid
+            where = 'data/units.csv unit %s' % uid
+            st = u['record_status']
+            if st == 'placeholder' and u['parent_only'] != 'true':
+                err(where, 'record_status placeholder requires parent_only=true')
+            if st in ('partial', 'active') and u['parent_only'] != 'false':
+                err(where, 'record_status %s requires parent_only=false (and a claim file)' % st)
+            if u['formed_date']:
+                if not valid_partial_date(u['formed_date']):
+                    err(where, 'formed_date %r is not a real YYYY, YYYY-MM or YYYY-MM-DD' % u['formed_date'])
+                if not u['formed_date_source']:
+                    err(where, 'formed_date needs a formed_date_source URL')
+            elif u['formed_date_source']:
+                err(where, 'formed_date_source without formed_date')
+            ip = [u['initial_parent_unit_id'], u['initial_parent_as_of'], u['initial_parent_source']]
+            if any(ip) and not all(ip):
+                err(where, 'initial_parent_unit_id, initial_parent_as_of and initial_parent_source must be all set or all blank')
+            if u['initial_parent_as_of'] and not valid_partial_date(u['initial_parent_as_of']):
+                err(where, 'initial_parent_as_of %r is not a real YYYY-MM or YYYY-MM-DD' % u['initial_parent_as_of'])
+            if u['initial_parent_unit_id']:
+                if u['initial_parent_unit_id'] not in units:
+                    err(where, 'initial_parent_unit_id %s not in units' % u['initial_parent_unit_id'])
+                if u['initial_parent_unit_id'] == uid:
+                    err(where, 'initial_parent_unit_id is the unit itself')
+        for uid in units:
+            seen, cur = {uid}, units[uid]['initial_parent_unit_id']
+            while cur and cur in units:
+                if cur in seen:
+                    err('data/units.csv', 'initial_parent_unit_id chain from %s loops at %s' % (uid, cur))
+                    break
+                seen.add(cur)
+                cur = units[cur]['initial_parent_unit_id']
         for uid, u in units.items():
             p = u['parent_unit_id']
             if p and p not in units:
                 err('data/units.csv', 'parent_unit_id %s of %s not in units' % (p, uid))
             if p == uid:
                 err('data/units.csv', '%s is its own parent' % uid)
+
+    eng_index = engaged_index(units)
 
     # ---- claim files ----
     files = common.claim_files()
@@ -283,8 +362,8 @@ def main():
             err(r_path, 'unit_id %s (file name) not in data/units.csv' % stem)
         else:
             unit_with_file.add(stem)
-            if units[stem]['parent_only'] == 'true':
-                err(r_path, 'unit is marked parent_only in units.csv but has a claim file')
+            if units[stem]['parent_only'] == 'true' or units[stem]['record_status'] == 'placeholder':
+                err(r_path, 'unit %s is a placeholder (parent_only=true, record_status=placeholder) in units.csv but has a claim file: run scripts/promote_placeholders.py to set record_status=active and parent_only=false' % stem)
             if units[stem]['nationality'].lower() != folder:
                 err(r_path, 'folder %s does not match unit nationality %s' % (folder, units[stem]['nationality']))
         if not rows:
@@ -323,6 +402,10 @@ def main():
                 warn(where, 'current_activity is %d characters (> %d): one row should describe one documented action; put the rest in notes' % (len(act), ACTIVITY_MAX_CHARS))
             if HEDGE_WORDS.search(act):
                 warn(where, 'current_activity contains a hedge word (%s): state only what the source documents; put doubt in notes' % HEDGE_WORDS.search(act).group(0))
+            if row['engaged_with'] and row['engaged_with'] != 'unknown':
+                for x in [x.strip() for x in row['engaged_with'].split(';') if x.strip()]:
+                    if x != 'unknown' and x not in eng_index and not any(n.startswith(x + ' ') for n in eng_index):
+                        warn(where, 'engaged_with %r does not match a unit in data/units.csv (nationality adjective + unit_name); fine for non-ground or unnamed opponents, otherwise add the unit as a placeholder' % x)
             if row['engaged_with'] and row['engaged_with'] != 'unknown' and len([x for x in row['engaged_with'].split(';') if x.strip()]) > 3:
                 warn(where, 'engaged_with lists more than three opponents: check that they were fought in one action')
             row['_where'] = where
@@ -331,6 +414,8 @@ def main():
     for uid, u in units.items():
         if u['parent_only'] == 'false' and uid not in unit_with_file:
             err('data/units.csv', '%s has parent_only=false but no claim file' % uid)
+        if u['parent_only'] == 'true' and uid in unit_with_file:
+            pass  # already reported at the claim file
 
     # ---- conflict groups ----
     groups = {}

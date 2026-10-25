@@ -10,11 +10,11 @@ An open, claim-based dataset of where World War II units were, when, and how sur
 
 ```
 data/claims/<nationality>/<unit_id>.csv   master copy: one file per unit, all claim columns
-data/units.csv                            unit table (one row per unit, including parent-only units)
+data/units.csv                            unit table (one row per unit, including placeholder and parent-only units)
 schema/                                   machine-readable schema + vocabularies + human-readable README
-scripts/                                  validate.py, check_coordinates.py, build.py, split_from_flat.py, migrate_parent_formation.py (standard library only)
-build/                                    GENERATED combined outputs (all_claims.csv, claims.geojson)
-docs/                                     methodology, sources, roadmap
+scripts/                                  validate.py, check_coordinates.py, build.py, promote_placeholders.py, split_from_flat.py, migrate_parent_formation.py (standard library only)
+build/                                    GENERATED combined outputs (all_claims.csv, claims.geojson, coverage.csv; docs/coverage.md is generated too)
+docs/                                     methodology, sources, roadmap, coverage (generated)
 archive/v5_flat/                          the flat CSVs the per-unit files were first split from
 .github/workflows/validate.yml            CI for pull requests
 ```
@@ -24,7 +24,7 @@ archive/v5_flat/                          the flat CSVs the per-unit files were 
 ## Data model
 
 - **Claim** (a row in `data/claims/...`): `claim_id` (never reused), optional `conflict_group_id`, `claim_status` (preferred / alternate / disputed), `unit_id`, `date`, `theater`, place (`latitude`, `longitude`, `location_name`, `location_represents`, `precision_km`), `event_type` and `current_activity`, `engaged_with`, command (`parent_unit_id` for the operational parent, `command_relationships` as a JSON list with organic, attached, operational-control or reserve links, `commander`, `composing_units`), `strength_status` and optional `strength_json`, `confidence`, `source`, `notes`. Full column definitions: [schema/README.md](schema/README.md).
-- **Unit** (a row in `data/units.csv`): `unit_id`, `unit_name`, `nationality`, `echelon`, `branch`, `theater` (primary), `parent_unit_id` (organic parent of battle groups), `parent_only`.
+- **Unit** (a row in `data/units.csv`): `unit_id`, `unit_name`, `nationality`, `echelon`, `branch`, `theater` (primary), `parent_unit_id` (organic parent of battle groups), `parent_only`, `record_status` (placeholder / partial / active), optional `formed_date` and `initial_parent_*` listing columns (see [docs/methodology.md](docs/methodology.md), "Placeholder units"). Most of the table is placeholders; [docs/coverage.md](docs/coverage.md) shows what has claims.
 - **Conflict group**: claims that disagree about the same unit and event (for example two sources dating a commander's death differently). One may be preferred; the others are alternate or disputed.
 - **theater**: controlled vocabulary (`western_europe`, `mediterranean`, `north_africa`, `eastern_front`, `pacific`, `cbi`, `atlantic`, `other`). All current rows are `western_europe`.
 
@@ -59,6 +59,7 @@ Every row needs a source, conflicting claims become separate rows, and nothing i
 - [docs/methodology.md](docs/methodology.md): how claims are built, precision, confidence, conflicts, strength figures
 - [docs/sources.md](docs/sources.md): sources used, reliability, licensing
 - [docs/roadmap.md](docs/roadmap.md): scale-up plan and known gaps
+- [docs/coverage.md](docs/coverage.md): generated coverage of the unit table (placeholder vs active)
 - [schema/README.md](schema/README.md): column and vocabulary reference
 
 ## Licence and citation

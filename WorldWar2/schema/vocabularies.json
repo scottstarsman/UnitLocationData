@@ -14,13 +14,18 @@
     }
   },
   "nationality": {
-    "description": "Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit.",
+    "description": "Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit. Further nations (Italy, USSR, Japan, ...) are added when their theaters are started.",
     "values": {
       "US": "United States (folder us).",
       "UK": "United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).",
       "Canada": "Canada (folder canada).",
       "Germany": "Germany, including Waffen-SS and Luftwaffe ground formations (folder germany).",
-      "Allied": "Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only parent_only units)."
+      "Allied": "Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only placeholder or parent_only units).",
+      "Poland": "Poland: Polish formations serving under British or Allied command (folder poland).",
+      "France": "France: Free French and French Army formations (folder france).",
+      "Belgium": "Belgium: Belgian formations (folder belgium).",
+      "Netherlands": "Netherlands: Dutch formations (folder netherlands).",
+      "Czechoslovakia": "Czechoslovakia: Czechoslovak formations (folder czechoslovakia)."
     }
   },
   "relationship": {
@@ -50,7 +55,11 @@
       "division": "Division.",
       "brigade": "Independent brigade.",
       "regiment/battle_group": "Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command.",
-      "other": "Higher or special headquarters that fit no level above (for example OB West)."
+      "other": "Higher or special headquarters that fit no level above (for example OB West).",
+      "air_force": "Reserved for later: air force, air fleet or air army headquarters (not yet used).",
+      "air_formation": "Reserved for later: air corps, air division, wing, group or squadron (not yet used).",
+      "fleet": "Reserved for later: naval fleet, task force or flotilla headquarters (not yet used).",
+      "naval_unit": "Reserved for later: ship, squadron or other naval unit (not yet used)."
     }
   },
   "branch": {
@@ -60,7 +69,10 @@
       "Armoured": "Armoured and panzer formations.",
       "Airborne": "Allied airborne formations.",
       "Waffen-SS": "Waffen-SS formations.",
-      "Luftwaffe": "Luftwaffe ground formations (for example Fallschirmjaeger)."
+      "Luftwaffe": "Luftwaffe ground formations (for example Fallschirmjaeger and Luftwaffe field divisions); also reserved for Luftwaffe flying units.",
+      "Marines": "Marine ground formations (reserved; none served on the Western Front 1944-45).",
+      "Air Force": "Reserved for later: air forces (RAF, USAAF, Luftwaffe flying units).",
+      "Navy": "Reserved for later: naval forces."
     }
   },
   "location_represents": {
@@ -156,6 +168,30 @@
     "values": {
       "true": "True.",
       "false": "False."
+    }
+  },
+  "record_status": {
+    "description": "Research state of a unit record in data/units.csv.",
+    "values": {
+      "placeholder": "Identity only: the unit exists in the table so that other records can point to it. No claim file; parent_only is true. Not a claim about its location.",
+      "partial": "A claim file exists but coverage is known to be incomplete (for example only some operations are done). parent_only is false.",
+      "active": "A claim file exists. parent_only is false."
+    }
+  },
+  "source_token": {
+    "description": "Short tokens used in listing_source and initial_parent_source. See docs/sources.md and docs/methodology.md (Placeholder units).",
+    "values": {
+      "LEX": "Lexikon der Wehrmacht (lexikon-wehrmacht.de), the unit's own page or its timeline tables.",
+      "DEW6": "de.wikipedia 'Schematische Kriegsgliederung der Wehrmacht fuer die Operation Overlord' (German order of battle for 6 June 1944).",
+      "WP12AG": "en.wikipedia 'Twelfth United States Army Group' (order of battle, 8 May 1945).",
+      "WP6AG": "en.wikipedia 'Sixth United States Army Group' (order of battle, 8 May 1945).",
+      "WP21AG": "en.wikipedia '21st Army Group'.",
+      "WPNORM": "en.wikipedia 'List of Allied forces in the Normandy campaign'.",
+      "WPMG": "en.wikipedia 'Operation Market Garden order of battle'.",
+      "WPBULGE": "en.wikipedia 'Battle of the Bulge order of battle'.",
+      "WPDRAGOON": "en.wikipedia 'Operation Dragoon order of battle'.",
+      "WPNORDWIND": "en.wikipedia 'Operation Nordwind'.",
+      "WPUNIT": "The unit's own en.wikipedia article (no Wikipedia order-of-battle page above links to it)."
     }
   }
 }

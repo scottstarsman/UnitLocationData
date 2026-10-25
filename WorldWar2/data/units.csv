@@ -283,7 +283,7 @@ US-ARM-006D,6th Armored Division,US,division,Armoured,western_europe,,false,acti
 US-ARM-007D,7th Armored Division,US,division,Armoured,western_europe,,false,active,1942-03-01,https://en.wikipedia.org/wiki/7th_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
 US-ARM-008D,8th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-04-01,https://en.wikipedia.org/wiki/8th_Armored_Division_(United_States),,,,,,WP12AG
 US-ARM-009D,9th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-07-15,https://en.wikipedia.org/wiki/9th_Armored_Division_(United_States),,,,,,WP12AG;WPBULGE
-US-ARM-010D,10th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-07-15,https://en.wikipedia.org/wiki/10th_Armored_Division_(United_States),,,,,,WP6AG;WPBULGE
+US-ARM-010D,10th Armored Division,US,division,Armoured,western_europe,,false,active,1942-07-15,https://en.wikipedia.org/wiki/10th_Armored_Division_(United_States),,,,,,WP6AG;WPBULGE
 US-ARM-011D,11th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-08-15,https://en.wikipedia.org/wiki/11th_Armored_Division_(United_States),,,,,,WP12AG;WPBULGE
 US-ARM-012D,12th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-09-15,https://en.wikipedia.org/wiki/12th_Armored_Division_(United_States),,,,,,WP6AG;WPNORDWIND
 US-ARM-013D,13th Armored Division,US,division,Armoured,western_europe,,true,placeholder,1942-06-09,https://en.wikipedia.org/wiki/13th_Armored_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
@@ -296,18 +296,18 @@ US-ARMY-007A,Seventh Army,US,army,Army,western_europe,,false,active,1943-02-25,h
 US-ARMY-009A,Ninth Army,US,army,Army,western_europe,,false,active,1944-04-15,https://en.wikipedia.org/wiki/Ninth_United_States_Army,,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
 US-ARMY-015A,Fifteenth Army,US,army,Army,western_europe,,true,placeholder,1944-08-21,https://en.wikipedia.org/wiki/Fifteenth_United_States_Army,,,,,Occupation/rear-area army HQ from early 1945; Western Front combat role limited.,WP12AG;WPMG
 US-CCA-002D,"Combat Command A, 2nd Armored Division",US,regiment/battle_group,Armoured,western_europe,US-ARM-002D,false,active,,,,,,,,
-US-COR-003C,III Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-COR-003C,III Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
 US-COR-005C,V Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
 US-COR-006C,VI Corps,US,corps,Army,western_europe,,false,active,,,US-ARMY-007A,1944-08-15,WPDRAGOON,,,WP6AG;WPNORDWIND
 US-COR-007C,VII Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
 US-COR-008C,VIII Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
 US-COR-012C,XII Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
-US-COR-013C,XIII Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
+US-COR-013C,XIII Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP12AG
 US-COR-015C,XV Corps,US,corps,Army,western_europe,,false,active,,,,,,,,WP6AG;WPNORDWIND
 US-COR-016C,XVI Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
 US-COR-019C,XIX Corps,US,corps,Army,western_europe,,false,active,1942-07-07,https://en.wikipedia.org/wiki/XIX_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
 US-COR-020C,XX Corps,US,corps,Army,western_europe,,false,active,1942-08-27,https://en.wikipedia.org/wiki/XX_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
-US-COR-021C,XXI Corps,US,corps,Army,western_europe,,true,placeholder,1943-12-02,https://en.wikipedia.org/wiki/XXI_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP6AG;WPNORDWIND
+US-COR-021C,XXI Corps,US,corps,Army,western_europe,,false,active,1943-12-02,https://en.wikipedia.org/wiki/XXI_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP6AG;WPNORDWIND
 US-COR-022C,XXII Corps,US,corps,Army,western_europe,,true,placeholder,1944-01-09,https://en.wikipedia.org/wiki/XXII_Corps_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
 US-COR-023C,XXIII Corps,US,corps,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
 US-INF-001D,1st Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WP6AG;WPNORM;WPBULGE
@@ -332,23 +332,23 @@ US-INF-066D,66th Infantry Division,US,division,Army,western_europe,,true,placeho
 US-INF-069D,69th Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-01-14,https://en.wikipedia.org/wiki/69th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
 US-INF-070D,70th Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-01-18,https://en.wikipedia.org/wiki/70th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPNORDWIND
 US-INF-071D,71st Infantry Division,US,division,Army,western_europe,,true,placeholder,1943-07-10,https://en.wikipedia.org/wiki/71st_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG
-US-INF-075D,75th Infantry Division,US,division,Army,western_europe,,true,placeholder,1942-12-24,https://en.wikipedia.org/wiki/75th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPBULGE
+US-INF-075D,75th Infantry Division,US,division,Army,western_europe,,false,active,1942-12-24,https://en.wikipedia.org/wiki/75th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPBULGE
 US-INF-076D,76th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
 US-INF-078D,78th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
 US-INF-079D,79th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPNORDWIND
 US-INF-080D,80th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
 US-INF-083D,83rd Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
-US-INF-084D,84th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-084D,84th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
 US-INF-086D,86th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG
-US-INF-087D,87th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
+US-INF-087D,87th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPBULGE
 US-INF-089D,89th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
 US-INF-090D,90th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WPNORM;WPBULGE
 US-INF-094D,94th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG
 US-INF-095D,95th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
 US-INF-097D,97th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
 US-INF-099D,99th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WPBULGE
-US-INF-100D,100th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
-US-INF-102D,102nd Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG
-US-INF-103D,103rd Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP6AG;WPNORDWIND
-US-INF-104D,104th Infantry Division,US,division,Army,western_europe,,true,placeholder,,,,,,,,WP12AG;WP21AG
-US-INF-106D,106th Infantry Division,US,division,Army,western_europe,,true,placeholder,1942-05-15,https://en.wikipedia.org/wiki/106th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPBULGE
+US-INF-100D,100th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP6AG;WPNORDWIND
+US-INF-102D,102nd Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG
+US-INF-103D,103rd Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP6AG;WPNORDWIND
+US-INF-104D,104th Infantry Division,US,division,Army,western_europe,,false,active,,,,,,,,WP12AG;WP21AG
+US-INF-106D,106th Infantry Division,US,division,Army,western_europe,,false,active,1942-05-15,https://en.wikipedia.org/wiki/106th_Infantry_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WPBULGE

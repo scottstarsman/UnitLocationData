@@ -8,7 +8,7 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         claim file, number of claim rows and their first and last date
   docs/coverage.md                      summary counts of the same, by nationality and echelon (generated; do not edit)
   build/command_relations.csv           DERIVED command-relationship intervals (subject, higher, relationship, valid_from, valid_to,
-                                        bases, source claim ids) for US units with a claim in 1944-07-24..1944-09-20; the claims stay
+                                        bases, source claim ids) for US units with a claim in 1944-07-24..1944-12-31; the claims stay
                                         the evidence, this table is an interpretation (see schema/README.md, "Validity of a relationship")
 
 Do not hand-edit anything in build/: edit data/claims/ and re-run this script.
@@ -84,7 +84,7 @@ def coverage(claim_rows):
     return rows, ('\n'.join(out) + '\n').encode('utf-8')
 
 
-REL_WINDOW = ('1944-07-24', '1944-09-20')
+REL_WINDOW = ('1944-07-24', '1944-12-31')
 REL_HEADER = ['subject_unit_id', 'subject_name', 'higher_unit_id', 'higher_name', 'relationship', 'valid_from', 'valid_from_latest',
               'valid_from_basis', 'valid_to', 'valid_to_earliest', 'valid_to_basis', 'support', 'ordered_date', 'source_claim_ids', 'note']
 
@@ -101,10 +101,12 @@ def relations(claim_rows):
     valid_to is the entry's effective_to when given (valid_to_basis = effective_to_basis or date_basis), otherwise the day
     before the unit's next claim that no longer lists the pair (valid_to_basis inferred_from_next_claim; valid_to_earliest is
     the last claim date that lists it), otherwise blank (open_at_last_claim). A missing effective_to never means indefinitely
-    valid. support: documented (narrative/order), table (assignment_table), inferred (date_basis inferred, or no basis).
+    valid. Alternate and disputed rows are skipped (the preferred row of a conflict group decides). support: documented (narrative/order), table (assignment_table), inferred (date_basis inferred, or no basis).
     """
     by_unit = {}
     for r in claim_rows:
+        if r.get('claim_status', 'preferred') not in ('preferred', ''):
+            continue  # alternate and disputed rows are competing claims; only the preferred row feeds the derived intervals
         by_unit.setdefault(r['unit_id'], []).append(r)
     out = []
     for uid, rs in by_unit.items():

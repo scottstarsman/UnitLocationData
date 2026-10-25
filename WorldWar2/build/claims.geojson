@@ -17510,6 +17510,1638 @@
     "location_basis": "town_centroid",
     "location_temporal_offset_days": 0
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2231,
+     48.2225
+    ]
+   },
+   "properties": {
+    "claim_id": "C0516",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-AG-006G",
+    "unit_name": "6th Army Group",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-10-02",
+    "location_name": "Dompaire, Vosges",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army group command post at Dompaire",
+    "operation_name": "Dragoon",
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4512,
+     48.1744
+    ]
+   },
+   "properties": {
+    "claim_id": "C0526",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-10-02",
+    "location_name": "Épinal, Vosges",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army command post at Épinal",
+    "operation_name": "Dragoon",
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9833,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0528",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-16",
+    "location_name": "Heerlen, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "30th Division links with 1st Division at Würselen, closing the Aachen ring",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-13",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0529",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-21",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "1st Division takes Aachen; the garrison commander surrenders",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8642,
+     50.4925
+    ]
+   },
+   "properties": {
+    "claim_id": "C0518",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-10-22",
+    "location_name": "Spa, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "takes VIII Corps and the Ardennes sector from Ninth Army; XIX Corps goes to Ninth",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "inferred",
+    "location_temporal_offset_days": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C0521",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-009A",
+    "unit_name": "Ninth Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-10-22",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "takes XIX Corps from First Army and opens a command post at Maastricht",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-10-25",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6833,
+     51.2833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0543",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-104D",
+    "unit_name": "104th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-23",
+    "location_name": "Westmalle, Antwerp",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "first combat: moves into the line with the 1st British Corps on the south bank of the Maas",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-22",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1846,
+     48.6936
+    ]
+   },
+   "properties": {
+    "claim_id": "C0523",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-003A",
+    "unit_name": "Third Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "location_name": "Nancy, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "XII Corps opens the Lorraine offensive; XX Corps attacks next day",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-10-12",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -27
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4667,
+     50.7833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0532",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-013C",
+    "unit_name": "XIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "location_name": "Tongeren, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "takes over the 17-mile Ninth Army front west of Geilenkirchen with the 102nd Division and the 113th Cavalry Group",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-10-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -13
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9833,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0534",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "location_name": "Heerlen, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "holds the Ninth Army north flank west of Geilenkirchen under XIII Corps",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-11-12",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1846,
+     48.6936
+    ]
+   },
+   "properties": {
+    "claim_id": "C0535",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "location_name": "Nancy, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "opens the Lorraine offensive across the Seille",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-10-12",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -27
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0192,
+     49.4431
+    ]
+   },
+   "properties": {
+    "claim_id": "C0537",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-010D",
+    "unit_name": "10th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-08",
+    "location_name": "Ottange, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "relieved west of Metz by the 95th Division and moves north for the XX Corps envelopment",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1558,
+     49.3031
+    ]
+   },
+   "properties": {
+    "claim_id": "C0536",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-020C",
+    "unit_name": "XX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-09",
+    "location_name": "Uckange, Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "crosses the Moselle north of Metz; the 5th Division follows on the 9th",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7389,
+     48.4492
+    ]
+   },
+   "properties": {
+    "claim_id": "C0541",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-100D",
+    "unit_name": "100th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-12",
+    "location_name": "Baccarat, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "first combat: crosses the Meurthe toward Raon-l'Étape",
+    "operation_name": "Dragoon",
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-11",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5017,
+     48.5894
+    ]
+   },
+   "properties": {
+    "claim_id": "C0540",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-015C",
+    "unit_name": "XV Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-13",
+    "location_name": "Lunéville, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "attacks from Lunéville toward Sarrebourg and the Saverne Gap",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -36
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2833,
+     50.8167
+    ]
+   },
+   "properties": {
+    "claim_id": "C0530",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-007C",
+    "unit_name": "VII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "location_name": "Eschweiler, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "attacks toward the Roer after weather delays; heavy fighting at the Donnerberg and in the Hürtgen",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0531",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "location_name": "Alsdorf, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "attacks toward the Roer; code words \"The Democrats have won\" telephoned to the 30th Division",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-10-13",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -34
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.05,
+     50.9
+    ]
+   },
+   "properties": {
+    "claim_id": "C0544",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-18",
+    "location_name": "Eygelshoven, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "first major attack: Operation Clipper toward Geilenkirchen under British operational control",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8025,
+     48.2636
+    ]
+   },
+   "properties": {
+    "claim_id": "C0542",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-103D",
+    "unit_name": "103rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "location_name": "Les Rouges-Eaux, Vosges",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "first combat: two regiments cross the Meurthe at the 3rd Division sites",
+    "operation_name": "Dragoon",
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4667,
+     50.7833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0533",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-013C",
+    "unit_name": "XIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-24",
+    "location_name": "Tongeren, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "begins its push to the Roer: takes six miles of front from the Wurm at Müllendorf to the XIX Corps boundary below Ederen",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-10-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -29
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C0538",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-04",
+    "location_name": "Metz, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "joins III Corps in Third Army after landing at Le Havre in November",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0306,
+     49.1106
+    ]
+   },
+   "properties": {
+    "claim_id": "C0539",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-04",
+    "location_name": "Gravelotte, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "takes its first division, the 87th, in Third Army; had been assigned to Third Army since 10 October",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.36,
+     48.74
+    ]
+   },
+   "properties": {
+    "claim_id": "C0527",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-08",
+    "location_name": "Saverne, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army command post at Saverne",
+    "operation_name": "Dragoon",
+    "sub_operation_name": "Alsace",
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1167,
+     50.2667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0548",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-11",
+    "location_name": "Saint-Vith, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 2nd Division on the Schnee Eifel front",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9325,
+     49.9661
+    ]
+   },
+   "properties": {
+    "claim_id": "C0547",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "location_name": "Wiltz, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "defends the Our-Clerf line when the German offensive opens; division command post at Wiltz",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.13,
+     49.6114
+    ]
+   },
+   "properties": {
+    "claim_id": "C0550",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-010D",
+    "unit_name": "10th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-17",
+    "location_name": "Luxembourg City, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "moves north to the Luxembourg-Bastogne area; CCB reaches Bastogne by the 18th",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3658,
+     49.1401
+    ]
+   },
+   "properties": {
+    "claim_id": "C0563",
+    "conflict_group_id": "G016",
+    "claim_status": "alternate",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-17",
+    "location_name": "Mourmelon-le-Grand, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "CMH table date for Third Army attachment (alternate to the Green Book date of 20 December)",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -16
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4351,
+     49.8408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0545",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "location_name": "Neufchâteau, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "most of the headquarters leaves Bastogne for Neufchâteau; Middleton stays in Bastogne with a small staff",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.683,
+     50.367
+    ]
+   },
+   "properties": {
+    "claim_id": "C0551",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-18",
+    "location_name": "Werbomont, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "arrives at Werbomont after being diverted from Bastogne",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6333,
+     50.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0519",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "location_name": "Chaudfontaine, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves from Spa to Chaudfontaine",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.717,
+     50.371
+    ]
+   },
+   "properties": {
+    "claim_id": "C0552",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-018C",
+    "unit_name": "XVIII Airborne Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Airborne",
+    "date": "1944-12-19",
+    "location_name": "Habiémont, Lierneux",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Ridgway opens the corps command post near the 82nd Airborne and the corps becomes operational under First Army",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C0553",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-19",
+    "location_name": "Bastogne, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "arrives at Bastogne by truck from Camp Mourmelon; all four regiments in hand by 0900",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.13,
+     49.6114
+    ]
+   },
+   "properties": {
+    "claim_id": "C0559",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "location_name": "Luxembourg City, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "ordered to disengage in the Saar and move its command post to Luxembourg City",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.13,
+     49.6114
+    ]
+   },
+   "properties": {
+    "claim_id": "C0517",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-AG-012G",
+    "unit_name": "12th Army Group",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Luxembourg City, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "First and Ninth Armies pass to 21st Army Group; Bradley keeps the south of the Bulge",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6333,
+     50.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0520",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Chaudfontaine, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "passes to 21st Army Group under Montgomery",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C0522",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-009A",
+    "unit_name": "Ninth Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "passes to 21st Army Group under Montgomery",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Roer",
+    "strength_status": "unknown",
+    "location_date": "1944-10-25",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -56
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1846,
+     48.6936
+    ]
+   },
+   "properties": {
+    "claim_id": "C0524",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-003A",
+    "unit_name": "Third Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Nancy, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "takes command south of the Bulge; VIII Corps passes to it",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4351,
+     49.8408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0546",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Neufchâteau, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "passes from First Army to Third Army",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     50.2833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0549",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Vielsalm, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "passes to XVIII Airborne Corps; the 12th Army Group column keeps First Army and 21st Army Group listed",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C0554",
+    "conflict_group_id": "G016",
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-20",
+    "location_name": "Bastogne, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "passes with VIII Corps from First Army to Third Army",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bastogne",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3333,
+     50.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C0560",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "location_name": "Marche-en-Famenne, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "leaves Ninth Army's Roer front for First Army; temporarily attached to XVIII Airborne Corps, entering Marche that night",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C0555",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-21",
+    "location_name": "Bastogne, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Bastogne is surrounded; the division holds a perimeter around the town",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bastogne",
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1846,
+     48.6936
+    ]
+   },
+   "properties": {
+    "claim_id": "C0525",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-003A",
+    "unit_name": "Third Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "location_name": "Nancy, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "III and XII Corps counterattack north toward Bastogne",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8167,
+     49.6833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0556",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-22",
+    "location_name": "Arlon, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "counterattacks north toward Bastogne with III Corps; H-hour 0600",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6486,
+     49.7297
+    ]
+   },
+   "properties": {
+    "claim_id": "C0558",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "location_name": "Habay-la-Neuve, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "III Corps counterattack begins from Habay-la-Neuve and Arlon with the 26th, 80th and 4th Armored",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3953,
+     50.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C0561",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "location_name": "Ocquier, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "arrives in the Ardennes and joins VII Corps in First Army",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6816,
+     49.9665
+    ]
+   },
+   "properties": {
+    "claim_id": "C0557",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-26",
+    "location_name": "Assenois, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "CCR spearhead reaches the Bastogne perimeter at Assenois at 1650",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bastogne",
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.26,
+     48.77
+    ]
+   },
+   "properties": {
+    "claim_id": "C0562",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-021C",
+    "unit_name": "XXI Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-27",
+    "location_name": "Phalsbourg, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "takes its first division, the 36th, as XXI Corps headquarters takes over a Seventh Army sector in Alsace",
+    "operation_name": "Dragoon",
+    "sub_operation_name": "Alsace",
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1
+   }
   }
  ]
 }

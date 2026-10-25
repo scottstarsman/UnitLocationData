@@ -6,7 +6,7 @@ Usage: python scripts/who_controls.py US-ARM-002D 1944-08-28
 
 Prints every interval that covers the date, with its support (documented / table / inferred) and how its end was fixed.
 Intervals whose end is inferred from the next claim, or whose start or end is a range, are marked. The table covers US units
-with a claim between 1944-07-24 and 1944-09-20 only; run python scripts/build.py first. Standard library only.
+with a claim between 1944-07-24 and 1944-12-31 only; run python scripts/build.py first. Standard library only.
 """
 import csv
 import os

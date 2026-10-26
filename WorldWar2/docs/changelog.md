@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: CR0156 source note (26 October 2026)
+
+Scott's decision on open item 3 ("leave data as is; add a note only"). One commit. `CR0156` 7th Armored Division to 12th Army Group (`assigned`, from 10 August 1944): a source note is appended to the relation note: the table (R363) prints the row that first lists "12th" as "11 Aug 44" before the row "5 Aug 44", so the order is out of sequence and the date is probably a misprint. No date, basis or link changes. `who_controls`: 5,020 grid answers compared before and after, 0 changed. Validator 0 errors, same 3 warnings; 68 `semantic_tests` expectations hold.
+
 ## open-items-oct26: CR0200 and CR0201 relabelled `inferred` (26 October 2026)
 
 Scott's decision on open item 2. One commit.

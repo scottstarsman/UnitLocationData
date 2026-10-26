@@ -6,7 +6,7 @@ Produced with the places table (`scripts/migrate_places.py`, branch `places-tabl
 
 - 421 distinct `location_name` values became 383 places (288 point, 79 area, 16 line); 26 places absorb 2-5 old names each (list 1), 14 aliases on 13 places, 4 places with a hand-worked point (list 5).
 - 566 claims: 286 places have one claim, 62 have two, 16 three, 9 four, and 10 have five or more (largest PL0045 Brest, PL0258 Omaha Beach: 10 claims each).
-- After the place merges of item 8 (section 7): 382 places (287 point, 79 area, 16 line); retired ids in `data/place_merges.csv`: 1.
+- After the place merges of item 8 (section 7): 381 places (286 point, 79 area, 16 line); retired ids in `data/place_merges.csv`: 2.
 - 20 claims keep their own point with a `coord_override` (list 3).
 - Countries by the point's GeoNames nearest place: FR 332, BE 28, NL 10, DE 5, GB 4, LU 4. Places near a border (Saint-Vith, Luxembourg, the Netherlands and Belgium, Aachen) should be glanced at: the lookup uses the nearest GeoNames place, not a boundary polygon.
 
@@ -110,12 +110,12 @@ Places with more than one old name: 26
 
 ## 2. Co-located places left separate (the main decision list)
 
-A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 104 places after the merges of section 7; the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:
+A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 103 places after the merges of section 7; the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:
 
 | Places | Why they may be one place |
 |---|---|
 | PL0070 Caumont / PL0071 Caumont-l'Éventé | **Merged** into PL0071 (see section 7); the same commune (Caumont-l'Éventé, Calvados), 0 m apart |
-| PL0208 Mantes-Gassicourt / PL0209 Mantes-la-Jolie | Mantes-Gassicourt is a former commune, merged into Mantes-la-Jolie in 1962; 0 m apart (PL0207 is the bridgehead area on the same point) |
+| PL0208 Mantes-Gassicourt / PL0209 Mantes-la-Jolie | **Merged** into PL0209 (see section 7); Gassicourt is a former village annexed to Mantes in 1930 (an earlier version of this table said 1962) and now a district of Mantes-la-Jolie; the town was called Mantes-Gassicourt until 1953; 0 m apart (PL0207 is the bridgehead area on the same point) |
 | PL0045 Brest, Finistère / PL0294 Recouvrance, Brest | Recouvrance is the district of Brest on the west bank of the Penfeld; 0 m apart |
 | PL0258 Omaha Beach / PL0259 Omaha Beach sector | the beach and its sector share the point (both areas) |
 | PL0173 Hill 112 / PL0174 Hill 112 / Odon salient | same point; the second is the wider salient, an area |
@@ -139,7 +139,7 @@ The groups (rounded point, then each place with its kind, name and claim count):
 (49.183, -0.892) PL0130 area "Elle River south of Foret de Cerisy" (1) | PL0149 area "Forêt de Cerisy" (1) | PL0150 area "Forêt de Cerisy / Caumont gap sector" (1)
 (49.306, -0.321) PL0157 area "Gold/Juno/Sword" (1) | PL0344 area "Sword Beach" (1) | PL0345 area "Sword/Juno beaches" (1)
 (49.139, -0.528) PL0161 point "Grainville-sur-Odon" (3) | PL0162 area "Grainville-sur-Odon / Odon salient" (1) | PL0378 area "West flank of the Odon salient" (1)
-(48.991, 1.717) PL0207 area "Mantes-Gassicourt bridgehead area (Seine), Yvelines" (3) | PL0208 point "Mantes-Gassicourt, Yvelines" (2) | PL0209 point "Mantes-la-Jolie, Yvelines" (2)
+(48.991, 1.717) PL0207 area "Mantes-Gassicourt bridgehead area (Seine), Yvelines" (3) | PL0209 point "Mantes-la-Jolie, Yvelines" (4)
 (49.207, -0.431) PL0019 point "Authie" (2) | PL0020 line "Authie-Carpiquet line" (1)
 (47.24, 6.02) PL0038 point "Besançon, Doubs" (1) | PL0119 area "Doubs valley west of Besançon" (1)
 (48.391, -4.486) PL0045 point "Brest, Finistère" (10) | PL0294 point "Recouvrance, Brest" (1)
@@ -197,7 +197,7 @@ Decision: where a point differs by a few hundred metres only because two geocode
 Places of kind point within 1 km of each other:
 
 - PL0070 Caumont and PL0071 Caumont-l'Éventé, 0 m (merged, see section 7)
-- PL0208 Mantes-Gassicourt and PL0209 Mantes-la-Jolie, 0 m (merge candidate)
+- PL0208 Mantes-Gassicourt and PL0209 Mantes-la-Jolie, 0 m (merged, see section 7)
 - PL0045 Brest and PL0294 Recouvrance, 0 m (merge candidate)
 - PL0089 Cherbourg and PL0152 Fort du Roule, 459 m (the fort is part of the town's defences; probably different places)
 - PL0107 Coutances and PL0285 Pont Herbert, 172 m (suspect data, see 6)
@@ -218,3 +218,5 @@ These have a blank `coord_reference_id` and the explanation in `coord_source_not
 Item 8 of `docs/unit_references_review.md`: the five likely merge candidates of section 2 were decided and merged, one commit each, with `scripts/migrate_place_merges.py`. The survivor keeps its id and point; the retired id is listed in `data/place_merges.csv` and never reused; every moved claim keeps its own `precision_km`, `coord_override` and point, so no position in `build/claims.geojson` changed; the derived `location_name` of the moved claims changed (the survivor's name plus the qualifier). The `coord_reference_id` of each pair was the same, so nothing changed there. The other co-located places of section 2 are unchanged: where a group lost a place it is shown in its new form, the other groups are as before.
 
 - **PL0070 Caumont -> PL0071 Caumont-l'Éventé.** The same commune (Caumont-l'Éventé, Calvados): both places used the point of the Wikipedia article Caumont-l'Éventé, 0 m apart. `Caumont` is now an alias of PL0071. One claim moved (C0104, V Corps, 13 June 1944); it keeps its qualifier `left of First Army line` and its own `precision_km` 10.
+
+- **PL0208 Mantes-Gassicourt, Yvelines -> PL0209 Mantes-la-Jolie, Yvelines.** Checked first: Gassicourt is a district of Mantes-la-Jolie, not a separate commune. The English Wikipedia article Mantes-la-Jolie says the commune absorbed Gassicourt in 1930 (the merged commune was called Mantes-Gassicourt until it was renamed Mantes-la-Jolie on 7 May 1953) and lists Gassicourt among the four districts of the city; the French article describes Gassicourt as the former village west of the historic centre, annexed in 1930, now a residential district. A Nominatim read of the district (https://nominatim.openstreetmap.org/search?q=Gassicourt,+Mantes-la-Jolie) lies 1.85 km west of the shared point, inside the commune, under the 2 km limit set for this merge. In 1944 `Mantes-Gassicourt` was the name of the whole town, so it is kept as an alias of PL0209. Two claims moved (C0330 XV Corps and C0451 79th Infantry Division, both 19 August 1944: the 79th Division started across the Seine near Mantes that evening); they keep their precision (10 and 5 km) and get the qualifier `Mantes-Gassicourt, Seine crossing`. PL0207 (the bridgehead area on the same point) is a different kind of place and stays.

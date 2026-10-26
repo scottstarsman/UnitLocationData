@@ -2,6 +2,24 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## sample-verification: start dates (26 October 2026)
+
+Scott's decision on the start-date convention (V-013): option C, "set `valid_from` to the table date", applied first to the 8 firm cases only. Same branch (commit ids are those of the branch on GitHub); main is untouched.
+
+- **`f0f034e` start of 8 table-based relations (V-013).** `valid_from` moves to the date of the CMH ETO-OB table row in which the entry began; `valid_from_basis` stays `assignment_table`; `stated_effective_from` of the evidence links follows (the claims keep their dates and their links keep the role `asserts_start`). Each date was checked again against the table on the unit's CMH page, read on 26 October 2026:
+  - `CR0162` 10th Armored Division to Third Army (assigned): 23 October 1944 to 10 October 1944. R341, table "Assignment and Attachment to Higher Units", row 10 Oct 44, Army Assigned "Third"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm.
+  - `CR0164` 10th Armored Division to First Army (attached; ends 20 December unchanged): 17 December 1944 to 16 December 1944. R341, table "Assignment and Attachment to Higher Units", row 16 Dec 44, Army Attached "First"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm.
+  - `CR0209` 2nd Infantry Division to V Corps (unspecified_subordination; same corps as CR0206): 1 August 1944 to 14 April 1944. R348, table "Assignment and Attachment to Higher Units", row 14 Apr 44, corps "V"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/2ID-ETO.htm.
+  - `CR0223` 5th Infantry Division to XV Corps (unspecified_subordination): 31 January 1944 to 24 December 1943. R359, table "Assignment and Attachment to Higher Units", row 24 Dec 43, corps "XV"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/5ID-ETO.htm.
+  - `CR0254` 29th Infantry Division to XIX Corps (unspecified_subordination; same corps as CR0251): 1 August 1944 to 14 June 1944. R346, table "Assignment and Attachment to Higher Units", row 14 Jun 44, corps "XIX"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/29ID-ETO.htm.
+  - `CR0292` 45th Infantry Division to Seventh Army (administrative_control): 13 July 1944 to 1 July 1944. R355, table "Assignment and Attachment to Higher Units", row 1 Jul 44, Army Attached "Seventh (Adm)"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm.
+  - `CR0313` 80th Infantry Division to XII Corps (unspecified_subordination): 1 August 1944 to 11 June 1944. R364, table "Assignment and Attachment to Higher Units", row 11 Jun 44, corps "XII"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/80ID-ETO.htm.
+  - `CR0353` 94th Infantry Division to XIII Corps (unspecified_subordination): 28 August 1944 to 27 July 1944. R371, table "Assignment and Attachment to Higher Units", row 27 Jul 44, corps "XIII"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/94ID-ETO.htm.
+- **Annotation.** The `note` of each of the 8 relations records the old and the new start, that the new date is the CMH table's entry date, the unit's first claim in the dataset and the first claim that lists the relation, and the days that rest on the table alone (no claim for the unit, only the table). The pair note of CR0206 and CR0209 now gives 14 April to 17 August 1944.
+- **Documents.** `schema/README.md`, new section "Start of a table-based interval" (the convention, and why `who_controls` may report a relation before the unit's first claim); `docs/methodology.md`, one sentence; `docs/review/verification_results.md` and `responses.md`, V-013 decided for the 8 firm cases, with the column-aware follow-up count for the army and army-group links (38 of 157 start later; analysis only).
+- **Checked.** Validator 0 errors and the same 3 warnings; 68 `semantic_tests` expectations hold; `who_controls`: 5,020 grid answers compared before and after, 99 changed: 16 had no relationship before and now name one, 15 gain the second line of a same-corps pair (CR0209 and CR0254 now overlap CR0206 and CR0251), 68 print an earlier start (2 of them also change certainty from possible to certain); none lost a relationship.
+- **Not changed:** the start of the army and army-group links and of the 57 relations not compared (pending), the claims, the end dates.
+
 ## sample-verification: decisions (26 October 2026)
 
 Scott's decisions on the pending items of the sample verification, applied on the same branch (commit ids are those of the branch on GitHub). Main is untouched. Nothing changes a date, a relationship or an evidence link.

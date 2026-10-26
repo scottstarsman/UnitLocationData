@@ -89,6 +89,7 @@ python scripts/check_coordinates.py    # warnings only; add --geocode (network, 
 python scripts/build.py
 git diff --stat build/        # build outputs must be committed with your change
 python scripts/build.py --check
+python scripts/semantic_tests.py   # expected answers of who_controls.py for four command scenarios (fails CI); if you change the data on purpose, change the expectation in the same commit and say why
 python scripts/build_references.py --check-links   # optional, network: re-check reference URLs (writes link_status into data/references_meta.csv; rerun build.py after)
 python scripts/audit_command_location.py   # review prompts: command and location-date patterns
 python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim temporal checks (overlaps, undated transfers, sequences recorded as conflicts); add --out FILE for a markdown report

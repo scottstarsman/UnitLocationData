@@ -23,7 +23,7 @@ Each finding that comes back from an outside review is recorded here with the de
 | R1-F-005 | provenance | 3 design | deferred (the reviewer agrees: only when the conflict model limits) |
 | R1-F-006 | missing observations | 3 design | accepted in part: tool fix done (commit 2); position query not built |
 | R1-F-007 | the packet | 4 suggestion | accepted: done (commit 1) |
-| R1-F-008 | regression tests | 4 suggestion | accepted: `scripts/semantic_tests.py` approved, commit 3 |
+| R1-F-008 | regression tests | 4 suggestion | accepted: `scripts/semantic_tests.py` done (commit 3) |
 | R1-A-001 | README, "How to interpret the data" | suggestion | accepted: done (commit 1) |
 | R1-N-001 | found while checking: `who_controls.py` | 3 | fixed (commit 2) |
 | R1-Q1 to R1-Q10 | answers to the ten questions | | see the table at the end |
@@ -120,7 +120,7 @@ In short: **none of the reviewer's numbers is wrong.** They were read correctly 
   5. An inferred position replaced by a directly sourced one: **not as a state**. The data hold one row per claim and no supersession or version field; a better source replaces the row (history in git and `docs/changelog.md`) or becomes an alternate claim in a conflict group. `location_basis` `inferred` is on 3 claims. A test could only pin the current value of named rows.
   **The 48-query comparison:** it is an ad hoc script run by hand when the data structures changed: it ran `who_controls.py` for 48 unit and date pairs on the old and the new revision and compared the outputs (the saved outputs are outside the repository). It is not in the repository or in CI and it asserts no historical expectation, so it guards against unintended change, not against a wrong story. It is a partial precedent for the suite. **The audits:** accurate that they print prompts: all three exit 0; the validator, however, fails on semantic errors (see the factual checks).
 - **Decision and reason:** valid and cheap. Propose: `scripts/semantic_tests.py` (standard library only) with expected answers stated in words for scenarios 1 to 4 plus a few more from the documented sequences (the 101st rows; the XVIII Corps redesignation), run in CI as a failing step; scenario 5 as a pinned-values test for named rows. Count 8 to 12 cases. It should be written before the January 1945 batch so that each batch is tested against the known story.
-- **Owner's decision (26 October 2026):** approved. **To follow (commit 3):** `scripts/semantic_tests.py` and a failing CI step.
+- **Owner's decision (26 October 2026):** approved. **Done (commit 3):** `scripts/semantic_tests.py` (four scenarios and the R1-N-001 staleness test, 68 expectations) and a failing CI step; the fifth scenario (an inferred position replaced by a sourced one) is not testable yet. Where the data differs from what the reviewer assumed is in `docs/changelog.md`.
 - **Change:** see the commit named above.
 - **Date:** 2026-10-26
 

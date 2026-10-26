@@ -36,7 +36,8 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `location_represents` | string | yes | What the point stands for (see vocabulary). | vocabulary `location_represents` |
 | `precision_km` | number | yes | Judgment estimate of the radius in km within which the unit probably was (banded). | vocabulary `precision_km` |
 | `operation_id` | string | yes | Key of the most specific operation, battle, phase or campaign the row belongs to, in `data/operations.csv` (for example `OP-EPSOM`; `OP-CAMP-NORTHERN-FRANCE` when no named operation applies). The parent chain gives the campaign, the umbrella (Overlord) and the named operation; `build/all_claims.csv` carries them as derived columns. The date should lie inside the operation's dates. See "Operations" below. | pattern `^OP-[A-Z0-9]+(-[A-Z0-9]+)*$` |
-| `composing_units` | string | no | Subordinate units, listed when first given or when they change; blank means unchanged from the unit's previous row; "unknown" means no data. |  |
+| `composing_units` | string | no | Subordinate units that are a unit of `data/units.csv`: `;` list of `unit_id`s (foreign key), listed when first given or when they change. Blank (with `composing_text` blank) means unchanged from the unit's previous row; "unknown" means no data. |  |
+| `composing_text` | string | no | Free text for the composition that is not a unit of the table (regiments, battalions, companies, remarks), `;` list (a `;` inside parentheses does not split). `<unit_id> (<qualifier>)` is the qualifier of a unit in `composing_units`. No `attached:` prefix (use `data/command_relations.csv`); never the name of a unit that has an id. |  |
 | `established` | boolean | yes | True on the row where the source says the unit was formed. | `true`/`false` |
 | `disestablished` | boolean | yes | True on the row where the source says the unit was disbanded. | `true`/`false` |
 | `destroyed` | boolean | yes | True on the row where the source says the unit was destroyed. | `true`/`false` |
@@ -46,7 +47,8 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `source_locator` | string | no | Page, chapter or section per reference: `R398: p. 285, 289; R407: p. 36`. Only ids that are in `reference_ids`; blank when the citation gives no page. | `R###: text` separated by `; ` |
 | `event_type` | string | yes | One primary event type (see vocabulary). | vocabulary `event_type` |
 | `current_activity` | string | yes | Short phrase saying what the unit is doing on that date at that place; lower-case, free text. |  |
-| `engaged_with` | string | no | Enemy units fought on that date, nationality first, separated by "; ". Blank = no combat that day; "unknown" = combat with no opponent identified. |  |
+| `engaged_with` | string | no | Enemy units fought on that date: `;` list of `unit_id`s (foreign key). Blank = no combat that day; "unknown" = combat with no opponent identified (the only sentinel). |  |
+| `engaged_note` | string | no | Free text for an opponent that cannot be a unit id (an air force, naval forces, an unnamed formation), `;` list. Never the name of a unit that has an id. |  |
 | `strength_json` | string | no | Optional JSON object with sourced strength figures: {"basis","as_of","personnel","vehicles","vehicle_count_type","scope","status","source","note"}; scope (whole_unit, sub_force, sector) says what the figure covers and is required whenever personnel is present. `status` (full, reduced or heavily_depleted; vocabulary strength_json_status) is the qualitative strength a source states; a record with a status needs no personnel or vehicles figure. build/all_claims.csv derives `strength_status` from it (destroyed when the destroyed flag is true, unknown when there is no status). See docs/methodology.md. Blank where no source gives figures or a status. |  |
 | `notes` | string | yes | Free text: what the source says, caveats, source conflicts, change history. |  |
 | `location_date` | date | no | Optional. The date the coordinate is actually documented for, when it differs from `date` (for example the date of the command post list the point was taken from). Blank where the coordinate is for the claim's own date or the date is unknown (older rows not yet reviewed). | valid date |
@@ -76,7 +78,7 @@ Validator checks: unique ids and names, sorted, vocabulary for `kind` and `count
 
 ## Derived values
 
-Not stored in the claim files; rebuilt by `common.load_all_claims()` and carried in `build/all_claims.csv` (same names and values as before the places table, so consumers need no change):
+Not stored in the claim files; rebuilt by `common.load_all_claims()` and carried in `build/all_claims.csv` (the place and value columns have the same names and values as before the places table; the two name columns are new next to the id columns that replaced the old text):
 
 | column | derived from |
 |---|---|
@@ -84,6 +86,8 @@ Not stored in the claim files; rebuilt by `common.load_all_claims()` and carried
 | `place_name`, `country`, `region`, `coord_reference_id`, `coord_source_note` | the place row (new columns) |
 | `location_temporal_offset_days` | `location_date` minus `date` in days; blank when `location_date` is blank |
 | `strength_status` | `destroyed` when the `destroyed` flag is true, else `strength_json.status`, else `unknown` |
+| `engaged_with_names` | the display name of each unit in `engaged_with` (`<adjective> <unit_name>`, `common.display_name`), then the entries of `engaged_note` (`scripts/unit_refs.py`) |
+| `composing_units_names` | the unit name of each unit in `composing_units` (the display name when the unit's nation differs from the claiming unit's), each followed by its qualifiers from `composing_text`, then the other `composing_text` entries |
 | role `location` of a `gazetteer_geocoder` reference | `build_references.derive()`; not stored in `claim_reference_roles.csv` |
 
 The flags `established`, `disestablished` and `destroyed` are kept, because they are not derivable from other columns.
@@ -109,18 +113,18 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 | `unit_note` | string | no | Free text on the unit's identity: renames, reconstitutions, lineage caveats, uncertain Western Front service. |  |
 | `listing_source` | string | no | Semicolon-separated source tokens naming where the unit was found when the placeholder was created. A listing is not evidence of a date or place. | tokens from vocabulary `source_token` |
 
-Rows are sorted by `unit_id`. Units with `record_status = placeholder` have no claim file; they exist so that `parent_unit_id`, command relations and `engaged_with` names resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with the existence of a claim file, that the nationality is a row of `data/nationalities.csv` and the unit id starts with that row's code, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
+Rows are sorted by `unit_id`. Units with `record_status = placeholder` have no claim file; they exist so that `parent_unit_id`, command relations, `engaged_with` and `composing_units` ids resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with the existence of a claim file, that the nationality is a row of `data/nationalities.csv` and the unit id starts with that row's code, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
 
 ## nationalities columns (`data/nationalities.csv`)
 
-Lookup table, hand-maintained, sorted by `code`. It is the single list of nations: `units.nationality`, `claims.nationality` and `operations.nationality_scope` are foreign keys to its `name`, and the adjective used in names (`engaged_with` matching, the derived `higher_name` of `build/command_relations.csv`) comes from here instead of from code.
+Lookup table, hand-maintained, sorted by `code`. It is the single list of nations: `units.nationality`, `claims.nationality` and `operations.nationality_scope` are foreign keys to its `name`, and the adjective used in names (the derived display names of `engaged_with_names`, `composing_units_names` and the `higher_name` of `build/command_relations.csv`) comes from here instead of from code.
 
 | column | meaning | constraints |
 |---|---|---|
 | `code` | Primary key: the prefix of every `unit_id` of this nation (GER, US, CAN, ...). | 2 to 4 capital letters; unique |
 | `name` | The value used in the `nationality` columns and the lowercase folder under `data/claims/` (Germany, US, UK, Canada, ..., Allied). | unique; not `All` (reserved for operation scopes) |
 | `adjective` | Adjective used in display names ("German", "British", "US"). | required |
-| `alt_adjectives` | Further adjectives accepted when matching `engaged_with` entries, `;`-separated (US: American). | optional |
+| `alt_adjectives` | Further adjectives accepted when matching opponent and component names (the migration and the validator's name check), `;`-separated (US: American). | optional |
 | `alliance` | Side: `Allied` or `Axis` (vocabulary `alliance`). | vocabulary |
 | `kind` | `nation`, or `multinational` for combined headquarters (vocabulary `nationality_kind`). | vocabulary |
 | `note` | Scope of the row, folder and id conventions. | required |
@@ -134,6 +138,7 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | from | column | to |
 |---|---|---|
 | claims | `unit_id`, `parent_unit_id` | units.`unit_id` |
+| claims | `engaged_with`, `composing_units` (`;` lists; `unknown` also allowed) | units.`unit_id` |
 | claims | `nationality` | nationalities.`name` |
 | claims | `operation_id` | operations.`operation_id` |
 | claims | `reference_ids` (`;` list) | references_meta.`reference_id` |
@@ -152,7 +157,7 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | command_relation_claims | `relation_id` / `claim_id` | command_relations.`relation_id` / claims.`claim_id` |
 | command_relation_overlaps | `relation_id_a`, `relation_id_b` | command_relations.`relation_id` |
 
-Not foreign keys: `conflict_group_id` (a group exists as the set of claims that share the id), `engaged_with` and `composing_units` (free text for now). `claims.schema.json` also declares `repeatedColumns`: the columns repeated from the unit table on every claim (`unit_name`, `nationality`, `echelon`, `branch`, `theater`) must equal `data/units.csv`. The primary keys of the side tables, and the natural keys declared as `uniqueTogether` (the command-relation tables), are checked for uniqueness.
+Not foreign keys: `conflict_group_id` (a group exists as the set of claims that share the id), `engaged_note` and `composing_text` (free text; the validator checks they do not repeat the name of a unit that has an id). `claims.schema.json` also declares `repeatedColumns`: the columns repeated from the unit table on every claim (`unit_name`, `nationality`, `echelon`, `branch`, `theater`) must equal `data/units.csv`. The primary keys of the side tables, and the natural keys declared as `uniqueTogether` (the command-relation tables), are checked for uniqueness.
 
 ## unit_id pattern
 
@@ -164,12 +169,13 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 - Examples: `US-INF-029D`, `GER-PZ-021D`, `UK-ARM-011D`, `CAN-INF-003D`, `GER-SSPZ-001C` (I SS Panzer Corps), `GER-SSPZ-001D` (1st SS Panzer Division).
 - Units without a number use a word: `GER-PZ-LEHRD` (Panzer Lehr), `UK-ARM-GRDD` (Guards Armoured), `GER-PZG-WESTA` (Panzer Group West), `GER-AG-00BG` (Army Group B).
 - Battle groups and combat commands: `GER-KG-<NAME>` for a Kampfgruppe (for example `GER-KG-FREY`; unnamed ones use a number or parent code, for example `GER-KG-265`, `GER-KG-002PZ`) and `US-CCA-002D` for Combat Command A of the 2nd Armored Division. Their `echelon` is `regiment/battle_group` and the units.csv `parent_unit_id` points at the parent division (the organic parent).
+- A regiment or battalion that is only an opponent or a component has no echelon letter (the table has no letter for it) and the type names the arm: `GER-FJR-006` (6th Fallschirmjäger Regiment, echelon `regiment/battle_group`), `GER-SSHPZ-101` (SS Heavy Panzer Battalion 101; echelon `other`, because the echelon vocabulary has no battalion value).
 - The id is the same on every row of the unit and equals the claim file name.
 
 ## Free-text conventions
 
-- `composing_units`: listed when first given or when it changes; blank means unchanged from that unit's previous row; `unknown` means no data. Items are separated by `; `.
-- `engaged_with`: enemy units, nationality first, separated by `; ` (for example `German 352nd Infantry Division; German 716th Static Infantry Division`). Blank = no combat that day; `unknown` = combat with no opponent identified.
+- `composing_units`: unit ids, listed when first given or when they change; blank (and `composing_text` blank) means unchanged from that unit's previous row; `unknown` means no data. Items are separated by `; `. `composing_text` holds what is not a unit of the table, with the qualifier form `<unit_id> (<qualifier>)` for a listed unit (`GER-PZ-002D (elements)`).
+- `engaged_with`: enemy unit ids separated by `; ` (for example `GER-INF-352D; GER-INF-716D`). Blank = no combat that day; `unknown` = combat with no opponent identified. `engaged_note` holds an opponent that is not a unit, as written.
 - `commander`: rank and name as given by the sources; command changes are written like `X (killed 12 June); Y from that evening`.
 - `source`: URLs separated by ` | `. The coordinate source is not in it: it is on the place (`coord_reference_id`, `coord_source_note`) or, for a claim with its own point, in `coord_override`.
 - `location_qualifier`: what is specific to the claim about the place, in the sources' words (`division HQ Le Molay-Littry`, `point = Cheux`); the first token `vicinity` means the claim says "vicinity of" the place.

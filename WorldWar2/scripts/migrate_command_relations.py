@@ -2,6 +2,7 @@
 """Migration: claims' `command_relationships` JSON cell -> data/command_relations.csv + data/command_relation_claims.csv.
 
 NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+NOTE (unit-ids-in-text-columns): Historical, one-off: it predates the claim columns `engaged_note` and `composing_text` and the unit ids in `engaged_with` / `composing_units`; do not run it on the current files (its output is checked by the validator, which now expects the new layout).
 
 Run once on the layout before this change (claim files that still have the `command_relationships` column):
     python scripts/migrate_command_relations.py [--dry-run]

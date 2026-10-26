@@ -13,6 +13,11 @@ The rebuilt per-claim entries (what the old command_relationships column held) a
 every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch, theater) equal the unit table.
 Nationalities (data/nationalities.csv): header, unique code and name, alliance and kind vocabularies, adjective set; every unit's nationality is a row of the table,
 its unit_id prefix is the row's code and its claim folder is the lower-case name.
+Unit references in claims (scripts/unit_refs.py, see schema/README.md): engaged_with and composing_units are `;` lists of unit_ids (or the sentinel `unknown` alone),
+each a row of units.csv (foreign key), no duplicate, never the claiming unit itself, an opponent on the other side of the war (nationalities.alliance); engaged_note
+and composing_text are free text that never repeats the name of a unit that has an id, never starts with `attached:`, and never contains a unit id that does not exist; a
+composing_text entry that starts with a unit id must be `<unit_id> (<qualifier>)` for an id listed in composing_units; engaged_note must hold no unit id; the lists are
+written canonically (entries joined by "; ").
 Foreign keys: every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json is checked (blank allowed, list columns split on the
 declared separator), and the declared primary keys of the side tables are unique.
 Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with the
@@ -24,15 +29,13 @@ Operations (scripts/operations.py): every claim has an operation_id that exists 
 sources (or a note), an acyclic parent chain and resolving relation endpoints; some CMH campaign covers each claim's date.
 Warning-only checks (printed as WARNING, never change the exit code; a claim dated outside its operation's dates without a row in
 data/operation_exceptions.csv, or an operation outside its parent's dates without an explanation, are among them; see docs/methodology.md, "Review guardrails"):
-an engaged_with entry that does not match a unit in data/units.csv (nationality adjective plus unit_name, or a leading part of it; free text is still
-allowed for non-ground opponents),
 an attached relationship whose unit is not the parent_unit_id or with no
 standing entry (organic, assigned, unspecified_subordination or unknown), 'organic' used for a division, corps or army under a
 higher headquarters, a named higher headquarters without a unit id, a command relationship that takes effect after the row's date or
 ended before it, a location_date that differs from date without a temporal location_basis, a corps/army/army-group headquarters that is
 only a town centroid (precision under 5 km), a corps or army sector recorded as an exact front_line_point, a conflict group whose rows
 have different event types and no 'Event definition:' in notes, a current_activity that is long
-(probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with list longer than three.
+(probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with plus engaged_note list longer than three.
 Errors also cover effective_time /
 effective_to_time that are not HH:MM, location_date / location_temporal_offset_days / location_basis inconsistencies and a landing row whose coordinate is a
 town centroid or a command post of another date.
@@ -55,6 +58,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import command_relations as crel  # noqa: E402
 import places as placesmod  # noqa: E402
+import unit_refs  # noqa: E402
 
 errors = []
 warnings = []
@@ -135,19 +139,6 @@ def valid_partial_date(s):
     except ValueError:
         return False
     return True
-
-
-def engaged_index(units):
-    """Names that an engaged_with entry may use: '<adjective> <unit_name>' (also with the adjective removed from the name);
-    the adjectives come from data/nationalities.csv."""
-    idx = set()
-    nats = common.nationality_by_name()
-    for u in units.values():
-        for adj in (common.adjectives(nats[u['nationality']]) if u['nationality'] in nats else []):
-            idx.add('%s %s' % (adj, u['unit_name']))
-            idx.add('%s %s' % (adj, re.sub(r'^(%s) ' % adj, '', u['unit_name'])))
-            idx.add('%s %s' % (adj, u['unit_name'].replace(' %s ' % adj, ' ')))
-    return idx
 
 
 def check_row(where, row, fields, vocabs):
@@ -868,7 +859,7 @@ def main():
             if p == uid:
                 err('data/units.csv', '%s is its own parent' % uid)
 
-    eng_index = engaged_index(units)
+    unit_refs.reset()
     relset = crel.load(True)   # the command-relation tables (checked in check_command_relation_tables)
 
     # ---- claim files ----
@@ -941,12 +932,11 @@ def main():
             if m and int(m.group(1)) >= EVENT_SUPPORT_FROM and row['event_type'] in ('command_change', 'activation', 'subordinate_assignment') \
                     and row['confidence'] and float(row['confidence']) <= 0.3 and 'Event support:' not in row['notes']:
                 warn(where, 'low-confidence command row without an "Event support:" sentence in notes (confidence scores the location; say how well the event itself is documented)')
-            if row['engaged_with'] and row['engaged_with'] != 'unknown':
-                for x in [x.strip() for x in row['engaged_with'].split(';') if x.strip()]:
-                    if x != 'unknown' and x not in eng_index and not any(n.startswith(x + ' ') for n in eng_index):
-                        warn(where, 'engaged_with %r does not match a unit in data/units.csv (nationality adjective + unit_name); fine for non-ground or unnamed opponents, otherwise add the unit as a placeholder' % x)
-            if row['engaged_with'] and row['engaged_with'] != 'unknown' and len([x for x in row['engaged_with'].split(';') if x.strip()]) > 3:
-                warn(where, 'engaged_with lists more than three opponents: check that they were fought in one action')
+            ue, uw = unit_refs.check(row)
+            for m in ue:
+                err(where, m)
+            for m in uw:
+                warn(where, m)
             row['_where'] = where
             all_rows.append(row)
 

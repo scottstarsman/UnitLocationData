@@ -55,7 +55,7 @@ def all_claims_header(stored):
     """Header of build/all_claims.csv: the claim-file columns with the derived ones at the place the stored column used to have (or next to the
     column they come from), then the derived operation columns."""
     after = {'parent_unit_id': ['command_relationships'], 'place_id': ['place_name', 'location_name'],
-             'coord_override': ['country', 'region', 'coord_reference_id', 'coord_source_note'], 'engaged_with': ['strength_status'],
+             'coord_override': ['country', 'region', 'coord_reference_id', 'coord_source_note'], 'engaged_note': ['engaged_with_names', 'strength_status'], 'composing_text': ['composing_units_names'],
              'location_basis': ['location_temporal_offset_days']}
     h = []
     for c in stored:

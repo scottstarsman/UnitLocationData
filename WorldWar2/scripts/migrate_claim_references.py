@@ -2,6 +2,7 @@
 """One-off migration: store the claim -> reference links on the claims.
 
 NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+NOTE (unit-ids-in-text-columns): Historical, one-off: it predates the claim columns `engaged_note` and `composing_text` and the unit ids in `engaged_with` / `composing_units`; do not run it on the current files (its output is checked by the validator, which now expects the new layout).
 
 NOTE: Historical, one-off: it read the `command_relationships` cell of the claim files; since `command-relations-table` that text is rebuilt from the relation tables by `common.load_all_claims()`, the claim files no longer have the column.
 

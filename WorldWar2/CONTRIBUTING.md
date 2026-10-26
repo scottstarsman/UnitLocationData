@@ -9,9 +9,30 @@ Thank you for helping. This project is only useful if every row can be checked, 
 3. **Never invent.** If a value is not in a source, write `unknown` (for text fields such as `commander`; for a parent that is not verified leave `parent_unit_id` blank and record an `unknown` relationship entry) or leave the optional field blank. Do not guess numbers for `strength_json`. A gap is better than a plausible fabrication.
 4. **One row is one claim** about one unit on one date. Rows are event-based; do not add filler rows for quiet days.
 5. **Use the vocabularies** in `schema/vocabularies.json`. If you need a new value (for example a new nationality or theater), add it there and in `schema/README.md` in the same pull request, with a one-line definition.
-6. **Keep ids stable.** `claim_id` and the command `relation_id` (CR0001...) are never reused or renumbered. New claims take the next free number (the highest existing id + 1). Do not delete a claim to "fix" it: correct it, or add a conflicting claim.
+6. **Keep ids stable.** `claim_id` and the command `relation_id` (CR0001...) are never reused or renumbered. New claims take the next free number (the highest id in use + 1; see "Claim ids" below). Do not delete a claim to "fix" it: correct it, or add a conflicting claim; a claim that has to go is retired in `data/retired_claims.csv`.
 7. **Command, strength and wording rules** (details in [docs/methodology.md](docs/methodology.md)): `parent_unit_id` is the operational parent *on the row's date* and the standing parent goes in the command relations (`data/command_relations.csv`) as `assigned` (or `unspecified_subordination` when the source combines assigned and attached, as the CMH ETO-OB tables do; never turn that into `attached` without a source); `organic` is only for constituted components such as a battle group's own division; the word "attached" (in any form) is rejected in `composing_text` (also in a qualifier) and `engaged_note`: record the link in `data/command_relations.csv`, or in `docs/deferred_relations.md` if the formation is not a unit of the table; a temporary link is `attached` with the date it took effect (`valid_from`, optionally `valid_to` and `date_basis`; the claim's own statement goes in the `stated_*` columns of `data/command_relation_claims.csv`); other authority is `operational_control`, `administrative_control`, `supporting` or `coordinating`; a coordinate taken from another date needs `location_date`, `location_basis` and `location_temporal_offset_days`; a landing row's point is the landing area, not a headquarters; every `personnel` figure needs a `scope` (the validator errors without one), and a figure for a task force, line or sector gets `sub_force` or `sector`, not `whole_unit`; if no source says what a figure covers, leave it out; one row describes one documented action, in the sources' words, with no inferred direction or result.
 8. **Licensing.** Do not copy text from copyrighted sources. Facts and short quotations with attribution are fine. Contributions are released under the data and code licences of this repository.
+9. **Note labels are a closed set.** A sentence of `notes` that starts with `Label: ` uses one of the 19 labels of the vocabulary `note_label` (`Event date`, `Event definition`, `Event support`, `Location`, `Location support`, `Relationship`, `Coordinates`, ...; the list and what each means is in [schema/README.md](schema/README.md), "Note labels"). The validator rejects any other label of that shape. Lead-ins that name a source or batch (`Breakout-28 p577:`, `CMH ETO-OB chronology:`, `Wikipedia:`) are prose. To add a label, change `schema/vocabularies.json`, the table in `schema/README.md` and `docs/changelog.md` in the same commit, and use the label in a row.
+
+## Claim identity
+
+### The key: unit, date and event type
+
+A unit has at most one claim per `date` and `event_type`: `(unit_id, date, event_type)` is unique, and `python scripts/validate.py` fails with both claim ids when a new row repeats it. Before you add a row, search the unit's file for the same date and event type. If it exists, correct that row (a source gives a better place, a source adds a fact) instead of adding a second one. A repeat is allowed in two cases:
+
+- **The sources disagree**: put both claims in one conflict group (rule 2). That is the only thing needed.
+- **Different actions of one kind on one day** (two attacks at different places, one row per action, see "One row, one action" in `docs/methodology.md`): add the pair to `data/claim_key_exceptions.csv` (`claim_id,other_claim_id,reason`, lower id first) and say in the reason what differs. The validator rejects a pair that does not need the exception.
+
+A different `event_type` is the right fix only when the row really is a different event (a landing and an arrival, see "Event definition" in `docs/methodology.md`); do not change it to get past the check.
+
+### Claim ids
+
+- **Format.** `C` and four digits (`C0001` ...; more digits after `C9999`), unique across all claim files. The id says nothing about the unit or the date.
+- **Next id.** A new claim takes the highest id in use plus one: the highest of every `claim_id` in `data/claims/` and every id in `data/retired_claims.csv` (`python scripts/check_claim_ids.py` prints it as "next free id"). Add several claims in a row from that number up. If two branches both took the same number, the one merged second renumbers its own *new* claims before merging (its ids were never published); renumber only ids that are not on `main` yet.
+- **Never reuse, never renumber a published id.** An id that has been on `main` stays attached to the same claim for ever: correct the row in place (the id stays), do not move the id to another unit, and do not hand it out again.
+- **Gaps are allowed.** An id that was never used (a branch that was abandoned before it was merged) is simply skipped; nobody fills it later.
+- **Retiring a claim.** A claim that has to leave the data (entered by mistake, or a duplicate of another claim) is removed from its claim file in the same change that adds a row to `data/retired_claims.csv` (`claim_id,replaced_by_claim_id,reason`; sorted by id). A claim that is only wrong is corrected, or contradicted by a conflicting claim (rules 2 and 6), not retired. If the unit's file would be left empty, the unit stays in `data/units.csv` as before (see "Placeholder units" in `docs/methodology.md`).
+- **Checks.** `python scripts/validate.py` fails on a duplicate id, a retired id that is a claim again, and a bad `data/retired_claims.csv`; it prints a NOTE for a gap that is not retired. Run `python scripts/check_claim_ids.py` before a pull request: it compares with `origin/main` and fails when a claim id disappeared without a retired row or now belongs to another unit.
 
 ## Add a claim to an existing unit
 
@@ -89,7 +110,9 @@ Each claim lists the references behind it in `reference_ids`; the `source` text 
 - [ ] Every new or changed row has a source URL and a `notes` entry saying what the source supports.
 - [ ] Conflicting information is kept as separate rows with a shared `conflict_group_id`; exactly one `preferred` or all `disputed`.
 - [ ] Nothing is invented; unknowns are `unknown` or blank.
-- [ ] New `claim_id`s are unique and follow the highest existing id; none were reused.
+- [ ] New `claim_id`s are unique and follow the highest id in use (claims and `data/retired_claims.csv`); none were reused; a claim that was removed has a row in `data/retired_claims.csv`; `python scripts/check_claim_ids.py` passes.
+- [ ] No new row repeats a unit's date and event type unless it is in a conflict group with the existing claim or listed with a reason in `data/claim_key_exceptions.csv`.
+- [ ] Every sentence of `notes` that starts with `Label: ` uses a label of the vocabulary `note_label` (the validator checks it).
 - [ ] New units are in `data/units.csv` and the file name matches `unit_id`.
 - [ ] `python scripts/validate.py` passes, and any WARNING lines for rows you touched are fixed or explained in `notes`.
 - [ ] `python scripts/audit_command_location.py` was run and its counts for the new rows were reviewed.

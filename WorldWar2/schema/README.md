@@ -4,7 +4,7 @@ The machine-readable definitions live next to this file and are what `scripts/va
 
 - [`claims.schema.json`](claims.schema.json): column order, types and constraints of every file under `data/claims/` (Frictionless Table Schema style; `vocabulary` is a custom property pointing at a key in `vocabularies.json`).
 - [`units.schema.json`](units.schema.json): the same for `data/units.csv`.
-- [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `references_meta`, `claim_reference_roles`).
+- [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `claim_key_exceptions`, `place_merges`, `references_meta`, `claim_reference_roles`).
 - [`places.schema.json`](places.schema.json): columns, primary key and foreign key of `data/places.csv`.
 - [`vocabularies.json`](vocabularies.json): controlled vocabularies and the confidence rubric.
 
@@ -55,6 +55,33 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `location_basis` | string | no | Optional. How the coordinate relates in time and place to `date` (see vocabulary `location_basis`). Blank on rows not yet reviewed. | vocabulary `location_basis` |
 
 Primary key: `claim_id` (unique across the whole repository). Rows in each file are sorted by `date`, then `claim_id`.
+
+**Claim key.** A unit has at most one claim per `date` and `event_type`: `(unit_id, date, event_type)` is unique across the repository (`uniqueTogether` in `claims.schema.json`; `scripts/validate.py` enforces it). `claim_id` stays the primary key; the key says what the claim is about, so the same event is not entered twice. Two claims may share the key in two cases only:
+
+1. **The sources disagree.** Both claims are in the same conflict group (same `conflict_group_id`, one `preferred` and the others `alternate`, or all `disputed`; see CONTRIBUTING rule 2). Nothing else is needed.
+2. **They are different actions of one kind on one day** (for example two attacks by one division at different places, written as one row per action, see "One row, one action" in `docs/methodology.md`). The pair is listed with a reason in `data/claim_key_exceptions.csv`.
+
+### data/claim_key_exceptions.csv (hand-maintained)
+
+| column | description |
+|---|---|
+| `claim_id` | The claim with the lower id of the pair. |
+| `other_claim_id` | The other claim. Together with `claim_id` the primary key; both are foreign keys to claims.`claim_id`. Rows sorted by the pair. |
+| `reason` | Why the two are different actions and not duplicates (what differs: the place, the opponent, the objective), with the source if it is not in the claims' notes. |
+
+Validator checks: header, sorted, both ids are claims, the pair really shares `unit_id`, `date` and `event_type` and is not already in one conflict group (an exception that is not needed is an error: remove it), the reason is not blank. A repeated key that is neither in one conflict group nor listed is an error that names both claims. The table is empty today: when the rule was added no claim shared a key (566 claims, 566 distinct keys); the 14 conflict groups differ in date or event type.
+
+### data/retired_claims.csv (hand-maintained)
+
+Claim ids are never reused. A claim that has to leave the data (it was entered by mistake, or it duplicated another claim; a claim that is merely wrong is corrected or contradicted by a conflicting claim, see CONTRIBUTING rule 2 and 6) has its row removed from the claim file and one row added here, so the id stays accounted for. The table is empty today: no id is missing from C0001 to C0566.
+
+| column | description |
+|---|---|
+| `claim_id` | The retired id (primary key). Never a claim again. Rows sorted by `claim_id`. |
+| `replaced_by_claim_id` | The claim that carries on the retired one (foreign key to claims.`claim_id`), or blank when none does. |
+| `reason` | Why the claim was removed, and by whom or in which change. |
+
+Validator checks (`scripts/validate.py`): header, sorted, no repeated id, the id is not a claim, the replacement is a claim, the reason is not blank; a gap in the numbering that is not retired is printed as a NOTE (a gap is allowed when the id was never used). `scripts/check_claim_ids.py` compares with an earlier revision (default `origin/main`) and fails when an id of that revision is gone without a row here, belongs to another unit now, or when a retired id was forgotten or reused; it needs git history, so it is run by hand before a pull request.
 
 ## places columns (`data/places.csv`)
 
@@ -163,6 +190,8 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | operation_relations | `from_operation_id`, `to_operation_id` | operations.`operation_id` |
 | operation_exceptions | `claim_id` / `operation_id` | claims.`claim_id` / operations.`operation_id` |
 | coordinate_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
+| claim_key_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
+| retired_claims | `replaced_by_claim_id` | claims.`claim_id` |
 | claims | `place_id` | places.`place_id` |
 | places | `coord_reference_id` (blank for a hand-worked point) | references_meta.`reference_id` |
 | place_merges | `merged_into_place_id` | places.`place_id` |
@@ -249,9 +278,35 @@ Order and effect can differ: the 35th Division was attached to V Corps by an ord
 
 Validator checks: error when a temporal basis has no date, and for a `landing` row whose coordinate is a `town_centroid` or a command post from another date; warning when `location_date` differs from `date` but the basis is blank or `documented_on_date`, when a corps, army or army-group headquarters is only a town centroid with `precision_km` under 5, and when a corps or army sector is recorded as an exact `front_line_point`. `python scripts/audit_command_location.py` lists the counts per pattern.
 
-### Notes convention
+### Note labels
 
-Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date:` (the source for the date), `Event definition:` (what event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival), `Relationship:` (the source for the command relationship), `Location:` (what the point stands for and which source places it), `Coordinates:` (how the numbers were obtained). Not every row needs all labels; the reviewed Batch 1 rows use them.
+Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date: ...`, `Location: ...`, `Relationship: ...`. Not every row needs all labels; the reviewed Batch 1 rows use them. The labels are a **controlled vocabulary** (`note_label` in `vocabularies.json`), frozen on 26 October 2026 at the set the data used then (19 labels, 632 uses in 118 of the 566 rows); the validator rejects any other label. The number in each description is how often the label was used when the set was frozen.
+
+| label | what the sentence says |
+|---|---|
+| `Event date:` | The source for the date of the event, and how the date was fixed (108 uses at the time the set was frozen). |
+| `Event definition:` | What event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival (106). |
+| `Event support:` | How well the event itself is documented, in words (high, moderate, low) with the source; `confidence` scores the location, this sentence the event (70). |
+| `Location:` | What the point stands for and which source places it (100). |
+| `Location support:` | How well the location is documented, in words, with the source (70). |
+| `Location support fallback:` | The location support when the point is only a fallback such as a sector point (1). |
+| `Location caveat:` | A doubt about the place name or the point that the row's coordinates do not remove (3). |
+| `Location approximate:` | The point is approximate and says how (1). |
+| `Coordinates:` | How the numbers were obtained: gazetteer, centroid, measured on a map (55). |
+| `Coordinate check:` | The outcome of a coordinate or speed check against another claim (1). |
+| `Relationship:` | The source for the command relationship of the row (102). |
+| `Command support:` | How well the command event (start of command, hour, date) is documented (1). |
+| `Opponents:` | What is and is not covered by `engaged_with` (1). |
+| `Objective check:` | Why `location_represents` objective holds on the row date (8). |
+| `Commander:` | The source for the commander named in the row (1). |
+| `Context:` | Background that explains the row but does not belong to it (1). |
+| `Later:` | What later sources or rows show about the same fact (1). |
+| `Search:` | What was searched and not found, and where (1). |
+| `Review:` | A later review's correction of the row and what it changed (1). |
+
+**What counts as a label.** The validator looks at the start of every sentence of `notes` (the start of the cell, or after `. `, `; `, `] ` or `) `) for `Phrase: ` or `Phrase (qualifier): `. When the phrase has the shape of a label (a capital letter, then at most two more words, all lower case) it must be one of the labels above, spelled exactly (`Location support:`, not `Location Support:` or `location support:`), otherwise the row fails with `unknown label`. A qualifier in parentheses is free text and does not change the label (`Relationship (sequence):`, `Objective check (Batch 2 review):`). Lead-ins that name a source, a batch or an id are prose and are not checked: `CMH ETO-OB chronology:`, `Breakout-28 p577:`, `Batch 2 review:`, `Wikipedia:` (a capital letter after the first word, a digit or a hyphen makes a phrase prose; `Wikipedia` is the one source name that has label shape and is exempted by name). Labels in the middle of a sentence and the other columns are not checked.
+
+**Adding a label.** Do it in one change (one pull request, one commit): (1) add the label to `note_label` in `schema/vocabularies.json` with a one-line definition (what the sentence says, and when to use it instead of an existing label); (2) add it to the table above (and change the count in the first paragraph); (3) add a line to `docs/changelog.md`; (4) use it in at least one row in the same change, or say why none yet; (5) run `python scripts/validate.py`. If a `scripts/` check needs to read the new label (as `Event support:` and `Event definition:` are read by the validator and the audits), change it in the same commit. A label is not renamed or removed while a note uses it; rewrite the notes in the same change. Before inventing a label, check whether an existing one fits.
 
 ## Operations (`data/operations.csv`, `data/operation_relations.csv`, `data/operation_exceptions.csv`)
 

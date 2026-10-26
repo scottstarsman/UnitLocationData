@@ -7,6 +7,14 @@
     ""
   ],
   "primaryKey": "claim_id",
+  "uniqueTogether": [
+    [
+      "unit_id",
+      "date",
+      "event_type"
+    ]
+  ],
+  "uniqueTogetherNote": "A unit has at most one claim per date and event_type. Two claims may share the key only when they are in the same conflict group (conflict_group_id: sources that disagree) or when the pair is listed with a reason in data/claim_key_exceptions.csv (different actions of one kind on one day, one row per action).",
   "foreignKeys": [
     {
       "fields": "unit_id",

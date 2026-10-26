@@ -2,6 +2,8 @@ name: validate
 
 on:
   pull_request:
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -9,6 +11,9 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: WorldWar2
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,12 +29,12 @@ jobs:
         continue-on-error: true
       - name: Build combined outputs
         run: python scripts/build.py
-      # build/ holds only all_claims.csv, claims.geojson and coverage.csv (no monthly or per-theater exports); docs/coverage.md is generated too
+      # build/ holds only all_claims.csv, claims.geojson, command_relations.csv and coverage.csv; docs/coverage.md is generated too
       - name: Check build/ is up to date
         run: |
           python scripts/build.py --check
           if [ -n "$(git status --porcelain -- build docs/coverage.md)" ]; then
-            echo "build/ differs from the committed files; run 'python scripts/build.py' and commit the result"
+            echo "build/ differs from the committed files; run 'python scripts/build.py' in WorldWar2/ and commit the result"
             git status --porcelain -- build docs/coverage.md
             git diff --stat -- build
             exit 1

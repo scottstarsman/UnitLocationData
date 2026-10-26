@@ -16,7 +16,7 @@ Unacceptable behaviour: harassment, insults, trolling, personal or political att
 
 Maintainers are responsible for clarifying these standards and may remove, edit or reject comments, commits, issues and other contributions that do not follow them, and may temporarily or permanently ban contributors for behaviour they judge inappropriate.
 
-Report problems to the maintainers at **<contact email>** (placeholder: the project owner should fill this in). Reports will be handled promptly and kept confidential.
+Report problems to the maintainers at **scott@starsman.com**. Reports will be handled promptly and kept confidential.
 
 ## Attribution
 

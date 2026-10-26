@@ -43,6 +43,12 @@ Items 1 to 7 of the review in [unit_references_review.md](unit_references_review
 - **Validator.** (a) `battalion` is accepted as an echelon value through the vocabulary; (b) new check on `data/units.csv`: an id that ends in a digit and one of G, A, C, D, B, H must have the matching echelon, with the combat-command pattern as the only exception (all 356 current units pass; ids without a letter, including ten division placeholders and `GER-AA-LUETTW`, are accepted as before and are not renamed).
 - **Not changed.** Claims have no `battalion` value in use; `who_controls` and the audits are unchanged.
 
+### Item 7: the regenerated-text differences are accepted
+
+- **Accepted, no data change.** The 24 cells in which the `engaged_with` and `composing_units` text regenerated from the ids differs from the old text (the display name replacing a short or variant form such as "Combat Command A", "17th SS Panzergrenadier Division", "Nineteenth Army", "3rd Canadian Infantry Division"; the removed `attached:` prefix; two cells that list the same entries in another order) are accepted as the new wording. Recorded in `docs/unit_references_review.md` (item 7).
+- **Losslessness after items 1 to 7** (`scripts/verify_review_items.py --base <commit before the branch>`, one-off, kept as the record). 38 cells in 27 of the 566 claims differ in `composing_units` (11, all an id added) or `composing_text` (27, the relationship wording removed or the entry converted); `engaged_with` and `engaged_note` are identical in all 566. Every changed claim has a stated reason in the script (item, and whether the relationship is now a relation, evidence of an existing relation or a row of `docs/deferred_relations.md`), and the script fails if a word of the old derived `composing_units_names` is missing from the new one other than `attached`, a raw unit id now carried by `composing_units` or a preposition of the removed wording.
+- **Status of the review file.** Items 1 to 7 are marked done in `docs/unit_references_review.md`; item 8 (the five place merges, `docs/places_review.md`) is not part of this branch and stays open.
+
 ## unit-ids-in-text-columns (27 October 2026)
 
 Recommendation 3 (F3, unit references in text columns, the claim part) of [normalization_review.md](normalization_review.md). Applied with `scripts/migrate_unit_ids.py` (run once; `--verify HEAD` before the commit regenerates the old strings from the new data and diffs them). What was mapped and what is left for a decision: [unit_references_review.md](unit_references_review.md).

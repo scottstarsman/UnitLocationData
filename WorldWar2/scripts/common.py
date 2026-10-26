@@ -145,9 +145,16 @@ def attach_places(rows):
     return places.attach(rows)
 
 
+def attach_unit_names(rows):
+    """Add the derived keys engaged_with_names and composing_units_names (display names of the unit ids in engaged_with and composing_units, with
+    the notes and qualifiers of engaged_note and composing_text; see scripts/unit_refs.py) to every claim dict. Neither is a claim-file column."""
+    import unit_refs
+    return unit_refs.attach(rows)
+
+
 def load_all_claims():
     """Return (header, rows) with every claim as a dict, sorted by date then claim_id. `header` is the claim-file header; each row also has the
-    derived keys command_relationships (see attach_command_relationships) and the place and derived-value keys of attach_places."""
+    derived keys command_relationships (see attach_command_relationships) and the place and derived-value keys of attach_places, and the unit-name keys of attach_unit_names."""
     schema = load_schema('claims')
     header = field_names(schema)
     rows = []
@@ -157,4 +164,5 @@ def load_all_claims():
     rows.sort(key=sort_key)
     attach_command_relationships(rows)
     attach_places(rows)
+    attach_unit_names(rows)
     return header, rows

@@ -50,6 +50,28 @@
         "resource": "references_meta",
         "fields": "reference_id"
       }
+    },
+    {
+      "fields": "engaged_with",
+      "separator": ";",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      },
+      "alsoAllowed": [
+        "unknown"
+      ]
+    },
+    {
+      "fields": "composing_units",
+      "separator": ";",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      },
+      "alsoAllowed": [
+        "unknown"
+      ]
     }
   ],
   "repeatedColumns": {
@@ -242,7 +264,12 @@
     {
       "name": "composing_units",
       "type": "string",
-      "description": "Subordinate units, listed when first given or when they change; blank means unchanged from the unit's previous row; \"unknown\" means no data."
+      "description": "Subordinate units that are a unit of data/units.csv: `;` list of unit_ids (foreign key to units.unit_id), listed when first given or when they change. Blank (with composing_text blank too) means unchanged from the unit's previous row; \"unknown\" means no data. Components that are not a unit of the table (regiments, battalions, companies, groups) go in composing_text. build/all_claims.csv derives `composing_units_names`."
+    },
+    {
+      "name": "composing_text",
+      "type": "string",
+      "description": "Free text for the composition that is not a unit of data/units.csv, as a `;` list (a `;` inside parentheses does not split): regiments, battalions, companies, remarks. An entry `<unit_id> (<qualifier>)` is the qualifier of a unit listed in composing_units (for example `GER-PZ-002D (elements)`). No relationship prefix such as `attached:` (how a unit is attached belongs in data/command_relations.csv); an entry never repeats the name of a unit that has an id. A row whose composing_units and composing_text are both blank is unchanged from the unit's previous row; composing_text alone is a composition made only of non-unit components; \"unknown\" in composing_units means no data and composing_text is then blank."
     },
     {
       "name": "established",
@@ -342,7 +369,12 @@
     {
       "name": "engaged_with",
       "type": "string",
-      "description": "Enemy units fought on that date, nationality first, separated by \"; \". Blank = no combat that day; \"unknown\" = combat with no opponent identified."
+      "description": "Enemy units fought on that date: `;` list of unit_ids (foreign key to units.unit_id). Blank = no combat that day; \"unknown\" = combat with no opponent identified (the only sentinel). An opponent that is a named unit but not yet in the table gets a placeholder unit; a generic opponent goes in engaged_note. build/all_claims.csv derives `engaged_with_names`."
+    },
+    {
+      "name": "engaged_note",
+      "type": "string",
+      "description": "Free text for opponents that cannot be a unit id: an air force, naval forces, an unnamed formation ('British forces (Gold Beach sector; unit not named by CMH)'). `;` list; a `;` inside parentheses does not split. Never repeats the name of a unit that has an id; no `attached:` prefix. Blank when engaged_with says it all."
     },
     {
       "name": "strength_json",

@@ -109,7 +109,7 @@ Places with more than one old name: 26
 
 ## 2. Co-located places left separate (the main decision list)
 
-A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 105 places; the full list follows. Likely merge candidates, which Scott should decide:
+A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 105 places; the full list follows. Likely merge candidates, which Scott should decide (still open after the `unit-ids-in-text-columns` work, which did not touch places; none of the five has been ruled on):
 
 | Places | Why they may be one place |
 |---|---|

@@ -2,6 +2,7 @@
 """OBSOLETE (superseded by scripts/migrate_operations.py, which replaced these columns by operation_id). One-off migration (Batch 3 review): add the `campaign` column to every claim file and stop using the umbrella operation_name labels.
 
 NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+NOTE (unit-ids-in-text-columns): Historical, one-off: it predates the claim columns `engaged_note` and `composing_text` and the unit ids in `engaged_with` / `composing_units`; do not run it on the current files (its output is checked by the validator, which now expects the new layout).
 
 1. Inserts `campaign` before `operation_name` in every file under data/claims/ (idempotent: skipped when the column exists).
 2. Backfills `campaign` from the CMH campaign streamer dates (schema/vocabularies.json, vocabulary `campaign`):

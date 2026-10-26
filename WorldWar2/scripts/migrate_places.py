@@ -2,6 +2,8 @@
 """One-time migration: places table (F2) and removal of derived claim columns (F6). Standard library; the country/region lookup also needs
 `pip install reverse_geocoder` (offline GeoNames, used only when --apply writes a new places.csv).
 
+NOTE (unit-ids-in-text-columns): Historical, one-off: it predates the claim columns `engaged_note` and `composing_text` and the unit ids in `engaged_with` / `composing_units`; do not run it on the current files (its output is checked by the validator, which now expects the new layout).
+
 What it does (all from the claims as they were at the commit it is run on; see docs/changelog.md):
   1. data/places.csv           one place per (folded first name segment, point within 3 km): same name and same point (or a point within 3 km that
                                is another read of the same place) = one place with alias names; different named places that merely share a geocoded

@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: PL0195 (Logis de la Bocage) searched, not located (26 October 2026)
+
+Scott's decision on open item 6 (replace the stand-in only if a reliable source is found; otherwise document the search). One commit. **No point, precision, basis or confidence changed.** Searched: the IGN geocoder (no place of that name; three hamlets "le Logis" and the Chateau du Logis in Mortain-Bocage, none tied to the division), OpenStreetMap Nominatim (only Le Vieux Logis in Sartilly, the point rejected in V-003), the CMH 1st Infantry Division page (4 and 7 August, "Logis de la Bocage (vic), Manche", no map reference), the 90th Division after-action report for August 1944 and Breakout and Pursuit ch. 23 pp. 443-445 (the division's whereabouts around Mortain, 3 to 6 August). The 1st Division's after-action reports and G-3 journal (Eisenhower Library, accession 64-3) are not online. The search is appended to `PL0195`'s `coord_source_note` and to the notes of `C0342` (the only claim at the place); the sampled row S23 in `docs/review/sample.md` is regenerated. **Checked.** Validator 0 errors, same 3 warnings; `check_coordinates` 3 warnings and 6 explained exceptions as before; 68 `semantic_tests` expectations hold; `who_controls` grid unchanged (positions are not part of it).
+
 ## open-items-oct26: source references for S28, S36 and S37 (26 October 2026)
 
 Scott's decision on open item 5. One commit, no value changed.

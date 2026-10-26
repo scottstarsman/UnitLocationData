@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: LXXXIV Corps placeholder point, 14 to 17 June 1944 (26 October 2026)
+
+Open item 7 (fourth sub-item). One commit. **Four claims changed, one place removed.**
+
+- **Claims `C0106` (14 June), `C0116` (15 June), `C0123` (16 June) and `C0128` (17 June)**, the rows of the corps command change under conflict group G003, used the generic placeholder place `PL0102` "Cotentin sector". Old value: `PL0102`, 49.52, -1.47, `precision_km` 25, `location_represents` `sector_center`, no `location_basis`. New value: `PL0333` Saint-Lô, 49.12, -1.09, `precision_km` 10, `location_represents` `headquarters`, `location_basis` `nearest_earlier_command_post`, `location_date` 1944-06-06; confidence stays 0.3. `location_qualifier` says the headquarters was last documented at Saint-Lô on 6 June and is not tied to the date. Reason, in each claim's notes: no source read places the corps headquarters on these dates (Cross-Channel Attack ch. 10 p. 413 has Rommel "at LXXXIV Corps headquarters" on 16 June without a place; the German Wikipedia page and the Lexikon der Wehrmacht keep the corps staff at St. Lô for 1944), the last documented place is Saint-Lô on 6 June (C0012; ch. 8 p. 296-297), the placeholder lay about 49 km from it, and `C0067` (10 June) was corrected the same way in the G004 fix. A search for a move of the headquarters (for example to Canisy) found no source. The commander and the dates of the four rows, and the G003 conflict, are not touched; the Lexikon der Wehrmacht lists von Choltitz from 17 June, a lead for G003 that is not followed here.
+- **Place `PL0102` "Cotentin sector" (area, 49.52, -1.47, precision 25 km, R001, "Wikipedia") removed** from `data/places.csv`: no claim uses it any more and the validator rejects a place without a claim. Old row recorded here in full: `PL0102,Cotentin sector,,area,49.52,-1.47,25,FR,Lower Normandy,R001,Wikipedia`. The places that share the coordinates (`PL0358` Valognes, `PL0359`) are unchanged. `docs/places_review.md` is a record of the place migration and is not regenerated: its list 2 still names `PL0102`.
+- **Checked.** Validator 0 errors, same 3 warnings (a fourth, for the unused place, appeared and was cleared by the removal); `check_coordinates` 3 warnings and 6 explained exceptions as before; `build --check` and `review_sample --check` clean after regeneration (`build/places*`, `build/all_claims.csv`, `docs/coverage.md`); 68 `semantic_tests` expectations hold; `who_controls` does not read positions.
+
 ## open-items-oct26: the five undated German parent changes of June 1944 (26 October 2026)
 
 Open item 7 (second sub-item), read in Cross-Channel Attack ch. 8 (R448), ch. 9 (R449) and ch. 10 (HyperWar pages). One commit. Result: 1 change dated (as a range), 2 narrowed to a window in the notes, 1 finding for Scott, 1 unresolved.

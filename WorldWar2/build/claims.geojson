@@ -4393,8 +4393,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -4408,10 +4408,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-14",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "defense",
     "current_activity": "defending Cotentin; reporting US attack cannot be held",
@@ -4422,9 +4422,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
     "reference_ids": "R446;R132;R001",
     "source_locator": null
    }
@@ -4803,8 +4803,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -4818,10 +4818,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-15",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "Choltitz replacing Fahrmbacher (15 June claim)",
@@ -4832,9 +4832,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -9,
     "reference_ids": "R132;R001",
     "source_locator": null
    }
@@ -5090,8 +5090,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -5105,10 +5105,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-16",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "Choltitz replacing Fahrmbacher (16 June claim)",
@@ -5119,9 +5119,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -10,
     "reference_ids": "R153;R001",
     "source_locator": null
    }
@@ -5295,8 +5295,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -5310,10 +5310,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-17",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "Fahrmbacher relieved by Rommel (c. 17 June claim)",
@@ -5324,9 +5324,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -11,
     "reference_ids": "R112;R001",
     "source_locator": null
    }

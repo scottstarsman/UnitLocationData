@@ -173,7 +173,7 @@ The reviewer's own order (command intervals, confidence, regression tests, locat
 
 ## Verification of the sample (26 October 2026)
 
-The 40 sampled claims and 20 sampled relations were checked against their cited sources, with the questions of [checklist.md](checklist.md) and the verdict words of [findings_template.md](findings_template.md). The full results (a table of every row, the findings, rough error rates by field, the method and the one source that needed a fallback) are in [verification_results.md](verification_results.md); the verdicts and one-line comments are in the `reviewer_verdict` and `reviewer_comment` columns of the two sample files. No data table, schema file, vocabulary or validator was changed.
+The 40 sampled claims and 20 sampled relations were checked against their cited sources, with the questions of [checklist.md](checklist.md) and the verdict words of [findings_template.md](findings_template.md). The full results (a table of every row, the findings, rough error rates by field, the method and the one source that needed a fallback) are in [verification_results.md](verification_results.md); the verdicts and one-line comments are in the `reviewer_verdict` and `reviewer_comment` columns of the two sample files. The check itself changed no data table, schema file, vocabulary or validator; the corrections the owner approved afterwards are in the index below.
 
 | | supported | partly supported | not supported | unverifiable |
 |---|---:|---:|---:|---:|
@@ -182,25 +182,25 @@ The 40 sampled claims and 20 sampled relations were checked against their cited 
 
 - **No row is contradicted outright; five have a severity 1 finding** (claims S09 and S25, relations R04, R08, R11) and two more a severity 2 finding on a point or a confidence level (S10, S23). The other 15 `partly supported` rows are source gaps (the value looks right but a cited source does not show it, or the source that does is not cited), boundary conventions of relation intervals, or a small inferred detail.
 - **Where the problems are.** A claim is wrong in a stored value in about 4 of 40 cases (the place, from a geocoder hit, twice; the confidence level, twice); the date, unit, event type and commander were never wrong. A command relation always has the right parent and type; 7 of 20 intervals start or end on a date that differs from the table or the source. These are rates in a seeded, stratified sample of 40 and 20, with wide intervals; they are not rates for the dataset.
-- **Outside the sample.** Five places whose coordinates come from a geocoder lie far from the town they name or outside their precision (two of them are the sample's S23 and S25, three are not in the sample: PL0021 Auw, PL0314 St Anthonis, PL0285 Pont Herbert); one more (PL0043 Boinville) is unresolved.
+- **Outside the sample.** Five places whose coordinates come from a geocoder lie far from the town they name or outside their precision (two of them are the sample's S23 and S25, three are not in the sample: PL0021 Auw, PL0314 St Anthonis, PL0285 Pont Herbert); one more (PL0043 Boinville) was unresolved at the check and has since been resolved. All five have been re-geocoded (see the index).
 - **Relation to review 1.** Findings V-013 and V-014 (the start of an interval taken from the table row in force at the first claim; an interval split where only the wording of the relationship changes) are cases of R1-F-001, now with sampled examples. They stay open under that finding.
 
 ### Index of the verification findings
 
 | finding | table | severity | what | status |
 |---|---|---|---|---|
-| V-001 | claims | 1 error | S09 C0197: approximate date, confidence 0.7 (rubric 0.3) | PROPOSED, waiting for the owner |
-| V-002 | claims | 2 weak | S10 C0198: place not in a cited source, confidence 0.7 | PROPOSED |
-| V-003 | places | 2 weak | S23 PL0195: point probably wrong by tens of km | PROPOSED |
-| V-004 | places | 1 error | S25 PL0306: point 4 km off, department label | PROPOSED |
-| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | PROPOSED (references only) |
-| V-007 | claims | 4 suggestion | S02, S06: inferred wording | PROPOSED |
-| V-008 | relations | 1 error | R04 CR0040: interval one day after the source | PROPOSED |
-| V-009 | relations | 2 weak | R05 CR0041: end is a placeholder before the next claim | PROPOSED |
-| V-011 | relations, build | 1 error | R08: build keeps VII Corps for the 82nd Airborne 19 June to 12 July | PROPOSED (changes `build/command_relations.csv`) |
-| V-012 | relations | 1 error | R11 CR0127: starts a day before the table | PROPOSED |
-| V-013, V-014 | relations | 3 design | start taken from the table row in force; split by wording | PROPOSED (a design decision) |
-| V-015 to V-017 | places | 1 error | PL0021, PL0314, PL0285: points 120, 127 and 27 km from the named town (not sampled) | PROPOSED |
-| V-018 | scripts | 4 suggestion | a coordinate comparison in `check_coordinates.py` | PROPOSED |
+| V-001 | claims | 1 error | S09 C0197: approximate date, confidence 0.7 (rubric 0.3) | fixed, `2e560b8` (C0491 checked and left) |
+| V-002 | claims | 2 weak | S10 C0198: place not in a cited source, confidence 0.7 | fixed, `2e560b8` (0.3: the position is inferred) |
+| V-003 | places | 2 weak | S23 PL0195: point probably wrong by tens of km | partly fixed, `5d50d73` (stand-in point, 25 km, 0.3; the site is not located) |
+| V-004 | places | 1 error | S25 PL0306: point 4 km off, department label | fixed, `5d50d73` |
+| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | open (references only) |
+| V-007 | claims | 4 suggestion | S02, S06: inferred wording | open |
+| V-008 | relations | 1 error | R04 CR0040: interval one day after the source | fixed (start), `9abb54e` |
+| V-009 | relations | 2 weak | R05 CR0041: end is a placeholder before the next claim | open (convention decision pending) |
+| V-011 | relations, build | 1 error | R08: build keeps VII Corps for the 82nd Airborne 19 June to 12 July | fixed, `668d0f5` (the relationship type stays open) |
+| V-012 | relations | 1 error | R11 CR0127: starts a day before the table | fixed, `9abb54e` |
+| V-013, V-014 | relations | 3 design | start taken from the table row in force; split by wording | open (a design decision) |
+| V-015 to V-017 | places | 1 error | PL0021, PL0314, PL0285: points 120, 127 and 27 km from the named town (not sampled) | fixed, `5d50d73` (PL0043 Boinville fixed in the same commit) |
+| V-018 | scripts | 4 suggestion | a coordinate comparison in `check_coordinates.py` | open |
 
-Nothing in this table has been applied. Each data correction needs the owner's approval and the source named in [verification_results.md](verification_results.md); documents and references fixes can be made without changing a value.
+The four corrections were approved by the owner and made on the branch `sample-verification`, one commit each (commit ids above); [verification_results.md](verification_results.md), "Status after the corrections", has the detail for each finding. Everything marked open needs a decision or a reference and was not part of the corrections.

@@ -2,11 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## sample-verification: corrections (26 October 2026)
+
+Four data corrections the owner approved after the sample verification, made on the same branch, one commit each (commit ids are those of the branch on GitHub). No schema, vocabulary or script change.
+
+- **`668d0f5` 82nd Airborne corps relations (V-011).** `data/command_relations.csv`: CR0088 (VIII Corps) preferred, 19 June to 12 July, basis narrative and assignment_table; CR0087 (VII Corps) ends 18 June. `data/command_relation_claims.csv`: CR0087-C0131 and the new CR0088-C0214 state the ends. One explained validator warning added (4 in total). `who_controls` answers change for US-ABN-082D only (37).
+- **`5d50d73` places (V-003, V-004, V-015 to V-017, Boinville).** `data/places.csv` and the claim coordinates of PL0021, PL0043, PL0195, PL0285, PL0306 and PL0314 (6 places, 7 claims); PL0306 renamed "Sées, Orne"; PL0314 is now NL / North Brabant; PL0195 is a documented stand-in point (blank `coord_reference_id`, 25 km, confidence 0.3); R001 added to the references of C0225. `docs/places_review.md` and `docs/review/README.md` updated.
+- **`2e560b8` confidence (V-001, V-002).** C0197 and C0198 from 0.7 to 0.3 by the rubric; C0491 checked and left.
+- **`9abb54e` intervals (V-008, V-012).** CR0040 starts 6 June (was 7), CR0127 starts 29 August (was 28); the evidence links were adjusted to match. CR0041 (placeholder end) is left open.
+- **Review sample.** The relation draw changed twice because the draw is stratified by status and start basis (R08 became CR0096; CR0003, CR0037, CR0056 and CR0127 were replaced by CR0001, CR0071, CR0185 and CR0196). The verdicts of the unchanged rows were carried over, the five new rows were checked (supported or, for CR0096, partly supported), and the comments of the corrected rows say so. `docs/review/verification_results.md` and `responses.md` mark each finding fixed (with the commit) or open.
+- **Not changed:** the missing citations, the start-date convention, the overlap records, the `check_coordinates` warnings, CR0041.
+
 ## sample-verification (26 October 2026)
 
 The review sample (40 claims, 20 command relations; `docs/review/sample.md`) was checked against the sources it cites, which the outside reviewer had not done. Documents and verdicts only; one commit each for the claims, the relations and the summary.
 
-- **Result.** Claims: 28 supported, 12 partly supported, 0 not supported, 0 unverifiable. Command relations: 10, 10, 0, 0. Five rows carry a severity 1 finding (claims S09 and S25, relations R04, R08, R11); the other `partly supported` rows are source gaps, boundary conventions or small inferred details. The results, the findings V-001 to V-018 (all PROPOSED, none applied), rough error rates by field and the method are in `docs/review/verification_results.md`.
+- **Result.** Claims: 28 supported, 12 partly supported, 0 not supported, 0 unverifiable. Command relations: 10, 10, 0, 0. Five rows carry a severity 1 finding (claims S09 and S25, relations R04, R08, R11); the other `partly supported` rows are source gaps, boundary conventions or small inferred details. The results, the findings V-001 to V-018 (all PROPOSED at the time; the corrections made afterwards are in the entry above), rough error rates by field and the method are in `docs/review/verification_results.md`.
 - **`docs/review/sample_claims.csv`, `sample_relations.csv`**: the `reviewer_verdict` and `reviewer_comment` columns are filled for all 60 rows. No other column changed; the draw is the same (seed 20261026).
 - **`scripts/review_sample.py`**: when it rewrites the sample files it keeps the verdict and comment of rows that are unchanged, and `--check` ignores the two columns (before, a hand-filled verdict would have made `--check` fail). The header text of `sample.md` says so. The draw, the counts block and the other columns are unchanged.
 - **`docs/review/verification_results.md`** (new), **`docs/review/README.md`** (file table), **`docs/review/checklist.md`** ("Sampled rows") and **`docs/review/responses.md`** (the "unreviewed" statement, and a section "Verification of the sample" with an index of the findings).

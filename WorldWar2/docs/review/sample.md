@@ -704,7 +704,7 @@ A relation is one dated interval of one relationship between a subject unit and 
 
 - **Subject / higher unit:** `GER-PZ-LEHRD` / `GER-OKW-000H`
 - **Interval:** from 1944-06-06 (narrative) to 1944-06-07 (earliest 1944-06-07) (inferred_from_next_claim); end_unknown true; change_undated true; date_basis narrative; status preferred
-- **Note:** Start corrected from 7 to 6 June (V-008): Cross-Channel Attack ch. 8 (R448) has Panzer Lehr in OKW reserve on 6 June, waiting until 1600 for Hitler's word to move; C0038 (7 June) still lists OKW as the parent while the division is ordered up, so the end stays inferred from the next claim (7 June, C0053 on 8 June lists I SS Panzer Corps) and the date of the change is not sourced.
+- **Note:** Start corrected from 7 to 6 June (V-008): Cross-Channel Attack ch. 8 (R448) has Panzer Lehr in OKW reserve on 6 June, waiting until 1600 for Hitler's word to move; C0038 (7 June) still lists OKW as the parent while the division is ordered up, so the end stays inferred from the next claim (7 June, C0053 on 8 June lists I SS Panzer Corps) and the date of the change is not sourced. Source reading of 26 October 2026 (open item 7, the five undated German parent changes of June 1944; Cross-Channel Att [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |

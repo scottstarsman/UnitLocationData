@@ -2,6 +2,8 @@
 
 Status: Western Front, 6 June to 31 December 1944 for US Army army-group, army, corps and selected division milestones (Batch 3 added 1 October to 31 December); divisions are complete only for the milestones listed in the Batch 3 section. Batch 1 of the US Army fill-in (1 July to 30 September 1944: army group, army, corps and division level) is in, on top of the original 6-30 June proof of concept: 573 claims after Batch 3, its review and the open items of 26 October 2026, 356 units (114 active); see `docs/coverage.md`.
 
+For a new maintainer: [HANDOFF.md](HANDOFF.md) (state, locations, standing rules, conventions, checks, decision log, next steps).
+
 ## US Army fill-in: progress and plan
 
 Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 to 8 May 1945, at army group, army, corps and division level; no Marines. Work goes by period with a spot-check gate between batches ([`review/spot_check_batch1.md`](review/spot_check_batch1.md) for Batch 1).

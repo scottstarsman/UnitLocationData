@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## handoff-doc: `docs/HANDOFF.md` (26 October 2026)
+
+One commit, documents only; **no data changed.** New file `docs/HANDOFF.md` (state and counts of 26 October 2026, locations, Scott's standing rules, conventions, how to run each check and what the baseline is, decision log, open items and next steps for Batches 4 and 5, startup checklist, working style). Linked from `README.md` (Documentation list) and the head of `docs/roadmap.md`. It contains no secrets. Its counts are a snapshot: the live counts are in `docs/coverage.md` and the validator output.
+
 ## handoff-doc: the roadmap's placeholder count and status line (26 October 2026)
 
 One commit, documents only; **no data changed.** Old value to new value:

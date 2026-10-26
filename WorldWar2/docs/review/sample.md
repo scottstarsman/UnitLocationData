@@ -796,25 +796,25 @@ A relation is one dated interval of one relationship between a subject unit and 
 ### R11. CR0162: 10th Armored Division -> Third Army (assigned)
 
 - **Subject / higher unit:** `US-ARM-010D` / `US-ARMY-003A`
-- **Interval:** from 1944-10-23 (assignment_table) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Army Assigned column: "Third"
+- **Interval:** from 1944-10-10 (assignment_table) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis assignment_table; status preferred
+- **Note:** CMH ETO-OB assignment table, Army Assigned column: "Third" Start extrapolated from the CMH table (V-013, decided by Scott on 26 October 2026): valid_from was 23 October 1944 (the table row in force at the first claim that lists the relation) and is now 10 October 1944, the date of the row of the CMH ETO-OB assignment table (R341, "Assignment and Attachment to Higher Units", row 10 Oct 44, Army Assigned column ("Third")) in which the entry begins. The unit's first claim in the dataset is C0537 (8 [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0537 (US-ARM-010D, 1944-11-08) | asserts_start | 1944-10-23 | - | CMH ETO-OB assignment table, Army Assigned column: "Third" | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R419: p. 375; R412: p. 497]; R412 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-11.html [p. 497]; R419 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-8.html [p. 375]; R470 https://www.ww2byday.com/7/mapunit/ [R419: p. 375; R412: p. 497] |
-  | C0550 (US-ARM-010D, 1944-12-17) | asserts_start | 1944-12-17 | - | CMH ETO-OB assignment table, Army Assigned column: "Third" | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R386: p. 330; R384: p. 299]; R384 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-13.html [p. 299]; R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 330]; R470 https://www.ww2byday.com/7/mapunit/ [R386: p. 330; R384: p. 299] |
+  | C0537 (US-ARM-010D, 1944-11-08) | asserts_start | 1944-10-10 | - | CMH ETO-OB assignment table, Army Assigned column: "Third" | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R419: p. 375; R412: p. 497]; R412 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-11.html [p. 497]; R419 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-8.html [p. 375]; R470 https://www.ww2byday.com/7/mapunit/ [R419: p. 375; R412: p. 497] |
+  | C0550 (US-ARM-010D, 1944-12-17) | asserts_start | 1944-10-10 | - | CMH ETO-OB assignment table, Army Assigned column: "Third" | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R386: p. 330; R384: p. 299]; R384 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-13.html [p. 299]; R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 330]; R470 https://www.ww2byday.com/7/mapunit/ [R386: p. 330; R384: p. 299] |
 
 ### R12. CR0164: 10th Armored Division -> First Army (attached)
 
 - **Subject / higher unit:** `US-ARM-010D` / `US-ARMY-001A`
-- **Interval:** from 1944-12-17 (assignment_table) to 1944-12-20 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20
+- **Interval:** from 1944-12-16 (assignment_table) to 1944-12-20 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
+- **Note:** CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20 Start extrapolated from the CMH table (V-013, decided by Scott on 26 October 2026): valid_from was 17 December 1944 (the table row in force at the first claim that lists the relation) and is now 16 December 1944, the date of the row of the CMH ETO-OB assignment table (R341, "Assignment and Attachment to Higher Units", row 16 Dec 44, Army Attached c [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0550 (US-ARM-010D, 1944-12-17) | asserts_start_and_end | 1944-12-17 | 1944-12-20 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20 | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R386: p. 330; R384: p. 299]; R384 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-13.html [p. 299]; R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 330]; R470 https://www.ww2byday.com/7/mapunit/ [R386: p. 330; R384: p. 299] |
+  | C0550 (US-ARM-010D, 1944-12-17) | asserts_start_and_end | 1944-12-16 | 1944-12-20 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20 | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R386: p. 330; R384: p. 299]; R384 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-13.html [p. 299]; R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 330]; R470 https://www.ww2byday.com/7/mapunit/ [R386: p. 330; R384: p. 299] |
 
 ### R13. CR0168: First Army -> 21st Army Group (operational_control)
 
@@ -854,7 +854,7 @@ A relation is one dated interval of one relationship between a subject unit and 
 
 - **Subject / higher unit:** `US-INF-002D` / `US-COR-005C`
 - **Interval:** from 1944-06-07 (claim_date) to 1944-08-04 (earliest 1944-06-13) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** Same-unit split: CR0209 records the same subject and the same higher unit (US-COR-005C) in the other wording (unspecified_subordination, here assigned); the corps did not change. Read the pair as one continuous interval, 7 June to 17 August 1944; no dates are changed and the two rows are not merged (schema/README.md, "Same-unit splits").
+- **Note:** Same-unit split: CR0209 records the same subject and the same higher unit (US-COR-005C) in the other wording (unspecified_subordination, here assigned); the corps did not change. Read the pair as one continuous interval, 14 April to 17 August 1944 (CR0209 now starts on the CMH table date, see below); the two rows are not merged (schema/README.md, "Same-unit splits").
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
@@ -894,15 +894,15 @@ A relation is one dated interval of one relationship between a subject unit and 
 ### R19. CR0292: 45th Infantry Division -> Seventh Army (administrative_control)
 
 - **Subject / higher unit:** `US-INF-045D` / `US-ARMY-007A`
-- **Interval:** from 1944-07-13 (assignment_table) to 1944-09-19 (earliest 1944-09-11) (inferred_from_next_claim); end_unknown true; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)"
+- **Interval:** from 1944-07-01 (assignment_table) to 1944-09-19 (earliest 1944-09-11) (inferred_from_next_claim); end_unknown true; change_undated false; date_basis assignment_table; status preferred
+- **Note:** CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" Start extrapolated from the CMH table (V-013, decided by Scott on 26 October 2026): valid_from was 13 July 1944 (the table row in force at the first claim that lists the relation) and is now 1 July 1944, the date of the row of the CMH ETO-OB assignment table (R355, "Assignment and Attachment to Higher Units", row 1 Jul 44, Army Attached column ("Seventh (Adm)")) in which the entry begins. The unit's first claim in the dataset is [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0442 (US-INF-045D, 1944-08-15) | asserts_start | 1944-07-13 | - | CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" | R355 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm [R427: p. 111]; R427 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-7.html [p. 111] |
-  | C0443 (US-INF-045D, 1944-09-02) | asserts_start | 1944-07-13 | - | CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" | R355 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm |
-  | C0444 (US-INF-045D, 1944-09-11) | asserts_start | 1944-07-13 | - | CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" | R355 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm |
+  | C0442 (US-INF-045D, 1944-08-15) | asserts_start | 1944-07-01 | - | CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" | R355 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm [R427: p. 111]; R427 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-7.html [p. 111] |
+  | C0443 (US-INF-045D, 1944-09-02) | asserts_start | 1944-07-01 | - | CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" | R355 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm |
+  | C0444 (US-INF-045D, 1944-09-11) | asserts_start | 1944-07-01 | - | CMH ETO-OB assignment table, Army Attached column: "Seventh (Adm)" | R355 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/45ID-ETO.htm |
 
 ### R20. CR0368: 106th Infantry Division -> First Army (assigned)
 

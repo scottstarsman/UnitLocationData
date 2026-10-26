@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## place-merges (26 October 2026)
+
+Item 8 of the review in [unit_references_review.md](unit_references_review.md): the five place merges of [places_review.md](places_review.md) (section 7). One commit per merge, after one commit that adds the mechanism. Applied with `scripts/migrate_place_merges.py` (`--merge 1` to `5`; every edit asserts the old value) and checked with `scripts/verify_place_merges.py`.
+
+- **New table `data/place_merges.csv`** (`retired_place_id, merged_into_place_id, retired_name, note`): a place id is never reused, so a merged-away id leaves `data/places.csv` and is recorded here with the survivor and the reason. `scripts/places.py` has `load_merges()` and `resolve()`. It is declared in `schema/relations.schema.json` (primary key, foreign key to `places.place_id`) and described in `schema/README.md` and `docs/methodology.md` ("Merging two places later").
+- **Validator.** The table is checked (header, sorted, no blank or repeated value, the retired id is not a place, the survivor is a live place); a claim whose `place_id` is a retired id is an error that names the survivor; an alias may not be another place's alias either (before: only another place's name). The warnings are the same three.
+- **The five merges** (survivor first): PL0071 Caumont-l'Éventé absorbs PL0070 Caumont; PL0209 Mantes-la-Jolie, Yvelines absorbs PL0208 Mantes-Gassicourt, Yvelines (Gassicourt is a district of Mantes-la-Jolie, annexed in 1930, checked against Wikipedia first; the town was called Mantes-Gassicourt until 1953); PL0045 Brest, Finistère absorbs PL0294 Recouvrance, Brest; PL0258 Omaha Beach absorbs PL0259 Omaha Beach sector; PL0173 Hill 112 absorbs PL0174 Hill 112 / Odon salient. Places 383 -> 378 (288 point, 79 area, 16 line became 285 point, 77 area, 16 line).
+- **Claims.** Six claims moved (C0104, C0330, C0451, C0408, C0006, C0196): each keeps its own `precision_km`, point and `coord_override`; the retired place's context is in `location_qualifier` (C0330 and C0451 `Mantes-Gassicourt, Seine crossing`, C0408 `Recouvrance district`, C0196 `Odon salient`; C0104 and C0006 keep theirs). Aliases added: `Caumont`, `Mantes-Gassicourt`, `Recouvrance`. All five pairs had the same `coord_reference_id`, so provenance did not change.
+- **What changed in the outputs.** `build/all_claims.csv`: only place_id, place_name, location_name and location_qualifier (and the place columns that follow the new place) of those six claims. `build/claims.geojson`: no position changed. `who_controls` answers on the 48-query sample are the same. `build/places.csv`, `build/places.geojson` and `docs/coverage.md`: five places fewer, the alias and claim counts of the survivors.
+- **Not changed.** The 33 other groups of co-located places in `docs/places_review.md` stay as they were (38 groups became 35: the groups at Brest, Hill 112 and Omaha Beach no longer exist, those at Caumont and Mantes-la-Jolie lost one place each). Claim C0006 (the 352nd Division headquarters at Le Molay-Littry, inland) now sits on the Omaha Beach point as before and is flagged there for its own place later.
+
 ## review-items-1-7 (26 October 2026)
 
 Items 1 to 7 of the review in [unit_references_review.md](unit_references_review.md) (the decisions listed there; item 8, the five place merges, is not part of this branch and stays open). One commit per item. Applied with `scripts/migrate_review_items.py` (run once per item; every edit asserts the old value).

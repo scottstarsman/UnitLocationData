@@ -43,7 +43,7 @@ PL0041,Blay,,point,49.2709,-0.8402,5,FR,Lower Normandy,R002,OSM Nominatim
 PL0042,"La Bocagnerie, Manche",,point,48.8488,-0.9629,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (La Bocagnerie, France)"
 PL0043,"Boinville, Seine-et-Oise",,point,48.4081,2.0481,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Boinville, France)"
 PL0044,Brécey,,point,48.7256,-1.1653,25,FR,Lower Normandy,R001,Wikipedia
-PL0045,"Brest, Finistère",,point,48.3906,-4.4861,3,FR,Brittany,R001,"Wikipedia (en): Brest, France"
+PL0045,"Brest, Finistère",Recouvrance,point,48.3906,-4.4861,3,FR,Brittany,R001,"Wikipedia (en): Brest, France"
 PL0046,"Breuchotte, Haute-Saone",,point,47.8353,6.4688,3,FR,Franche-Comte,R002,"OpenStreetMap Nominatim (Breuchotte, Haute-Saone, France)"
 PL0047,Bréville-les-Monts,,point,49.2408,-0.2261,1,FR,Lower Normandy,R001,Wikipedia
 PL0048,Brigade box west of Villers-Bocage,,area,49.0911,-0.8039,5,FR,Lower Normandy,R001,Wikipedia
@@ -68,8 +68,7 @@ PL0066,"Cape Saint-Tropez landing area, Var",,area,43.2733,6.6396,25,FR,Provence
 PL0067,"Carentan, Manche",Carentan,point,49.304,-1.247,1,FR,Lower Normandy,R001,Wikipedia (Carentan)
 PL0068,Carentan / Manoir de Donville,,area,49.304,-1.247,1,FR,Lower Normandy,R001,Wikipedia
 PL0069,Carentan / Vire crossing,,area,49.304,-1.247,5,FR,Lower Normandy,R001,Wikipedia
-PL0070,Caumont,,point,49.0911,-0.8039,10,FR,Lower Normandy,R001,Wikipedia
-PL0071,Caumont-l'Éventé,,point,49.0911,-0.8039,5,FR,Lower Normandy,R001,Wikipedia
+PL0071,Caumont-l'Éventé,Caumont,point,49.0911,-0.8039,5,FR,Lower Normandy,R001,Wikipedia
 PL0072,"Cavalaire-sur-Mer, Var",,point,43.1723,6.5319,5,FR,Provence-Alpes-Cote d'Azur,R002,"OpenStreetMap Nominatim (Cavalaire-sur-Mer, Var (Cavalaire Bay beaches))"
 PL0073,"Ceintrey, Meurthe-et-Moselle",,point,48.5246,6.1646,10,FR,Lorraine,R002,"OpenStreetMap Nominatim (Ceintrey, Meurthe-et-Moselle, France)"
 PL0074,"Central Cotentin axis, north of Valognes",,line,49.4883,-1.3783,5,FR,Lower Normandy,R001,Wikipedia
@@ -172,7 +171,6 @@ PL0170,"La-Haye-du-Puits, Manche",,point,49.2911,-1.5451,3,FR,Lower Normandy,R00
 PL0171,"Hebecrevon, Manche",Hébécrevon,point,49.1269,-1.165,3,FR,Lower Normandy,R001,Wikipedia
 PL0172,"Heerlen, Limburg",,point,50.8833,5.9833,5,NL,Limburg,R001,Wikipedia (en): Heerlen
 PL0173,Hill 112,,point,49.1236,-0.4605,5,FR,Lower Normandy,R002,OSM Nominatim
-PL0174,Hill 112 / Odon salient,,area,49.1236,-0.4605,5,FR,Lower Normandy,R002,OSM Nominatim
 PL0175,"Houdelaincourt, Meuse",,point,48.5495,5.4711,10,FR,Lorraine,R002,"OpenStreetMap Nominatim (Houdelaincourt, Meuse, France)"
 PL0176,"Houssay, Mayenne",,point,47.9145,-0.7359,10,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Houssay, Mayenne, France)"
 PL0177,Isigny-sur-Mer,,point,49.3186,-1.1008,5,FR,Lower Normandy,R001,Wikipedia
@@ -206,8 +204,7 @@ PL0204,"Maisoncelles-la-Jourdan, Calvados",,point,48.7919,-0.8466,3,FR,Lower Nor
 PL0205,"Mamey, Meurthe-et-Moselle",,point,48.8788,5.9598,10,FR,Lorraine,R002,"OpenStreetMap Nominatim (Mamey, Meurthe-et-Moselle, France)"
 PL0206,"Le Mans, Sarthe",Le Mans,point,48.0077,0.1984,5,FR,Pays de la Loire,R001,Wikipedia (en): Le Mans
 PL0207,"Mantes-Gassicourt bridgehead area (Seine), Yvelines",,area,48.9908,1.7172,10,FR,Ile-de-France,R001,Wikipedia (en): Mantes-la-Jolie
-PL0208,"Mantes-Gassicourt, Yvelines",,point,48.9908,1.7172,5,FR,Ile-de-France,R001,Wikipedia (en): Mantes-la-Jolie
-PL0209,"Mantes-la-Jolie, Yvelines",,point,48.9908,1.7172,5,FR,Ile-de-France,R001,Wikipedia (en): Mantes-la-Jolie
+PL0209,"Mantes-la-Jolie, Yvelines",Mantes-Gassicourt,point,48.9908,1.7172,5,FR,Ile-de-France,R001,Wikipedia (en): Mantes-la-Jolie
 PL0210,"Marche-en-Famenne, Luxembourg",,point,50.2167,5.3333,5,BE,Wallonia,R001,Wikipedia (en): Marche-en-Famenne | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-18.html#page431 | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-18.html#page433
 PL0211,"Marest, Oise",,point,49.5085,2.8242,3,FR,Picardie,R002,"OpenStreetMap Nominatim (Marest, Oise, France)"
 PL0212,Margival,,point,49.4353,3.4025,5,FR,Picardie,R001,Wikipedia
@@ -257,7 +254,6 @@ PL0255,Octeville,,point,49.6255,-1.6448,5,FR,Lower Normandy,R002,OSM Nominatim
 PL0256,Odon bridgehead,,area,49.1394,-0.5158,5,FR,Lower Normandy,R001,Wikipedia
 PL0257,"Ogbourne St George, Wiltshire",,point,51.4680,-1.7130,5,GB,England,R001,Wikipedia (en): Ogbourne St George
 PL0258,Omaha Beach,"Omaha Beach, Manche",area,49.3689,-0.8686,3,FR,Lower Normandy,R001,Wikipedia
-PL0259,Omaha Beach sector,,area,49.3689,-0.8686,10,FR,Lower Normandy,R001,Wikipedia
 PL0260,"Oorsbeck, Limburg",,point,50.9500,5.9082,3,NL,Limburg,R002,"OpenStreetMap Nominatim (Oirsbeek, Limburg, Netherlands)"
 PL0261,"Orléans, Loiret","Orleans, Loiret",point,47.9027,1.9086,3,FR,Centre,R002,"OpenStreetMap Nominatim (Orleans, Loiret, France)"
 PL0262,"Ormoy, Eure-et-Loire",,point,48.6202,1.4730,10,FR,Centre,R002,"OpenStreetMap Nominatim (Ormoy, Eure-et-Loire, France)"
@@ -292,7 +288,6 @@ PL0290,"Les Rairies, Calvados",,point,48.9255,-0.9157,3,FR,Lower Normandy,R002,"
 PL0291,"Ranes, Orne",,point,48.6421,-0.2109,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Ranes, Orne, France)"
 PL0292,Ranville,,point,49.2319,-0.2564,1,FR,Lower Normandy,R001,Wikipedia
 PL0293,Rauray,,point,49.152,-0.5607,1,FR,Lower Normandy,R002,OSM Nominatim
-PL0294,"Recouvrance, Brest",,point,48.3906,-4.4861,3,FR,Brittany,R001,"Wikipedia (en): Brest, France"
 PL0295,"Reims, Marne",,point,49.2578,4.0319,10,FR,Champagne-Ardenne,R002,"OpenStreetMap Nominatim (Reims, Marne, France)"
 PL0296,"Rennes, Ille-et-Vilaine",,point,48.1147,-1.6794,5,FR,Brittany,R001,Wikipedia (en): Rennes
 PL0297,"Rioz, Haute-Saone",,point,47.4214,6.0731,10,FR,Franche-Comte,R002,"OpenStreetMap Nominatim (Rioz, Haute-Saone, France)"

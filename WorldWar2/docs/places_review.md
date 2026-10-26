@@ -6,6 +6,7 @@ Produced with the places table (`scripts/migrate_places.py`, branch `places-tabl
 
 - 421 distinct `location_name` values became 383 places (288 point, 79 area, 16 line); 26 places absorb 2-5 old names each (list 1), 14 aliases on 13 places, 4 places with a hand-worked point (list 5).
 - 566 claims: 286 places have one claim, 62 have two, 16 three, 9 four, and 10 have five or more (largest PL0045 Brest, PL0258 Omaha Beach: 10 claims each).
+- After the place merges of item 8 (section 7): 378 places (285 point, 77 area, 16 line); retired ids in `data/place_merges.csv`: 5.
 - 20 claims keep their own point with a `coord_override` (list 3).
 - Countries by the point's GeoNames nearest place: FR 332, BE 28, NL 10, DE 5, GB 4, LU 4. Places near a border (Saint-Vith, Luxembourg, the Netherlands and Belgium, Aachen) should be glanced at: the lookup uses the nearest GeoNames place, not a boundary polygon.
 
@@ -109,15 +110,15 @@ Places with more than one old name: 26
 
 ## 2. Co-located places left separate (the main decision list)
 
-A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 105 places; the full list follows. Likely merge candidates, which Scott should decide (still open after the `unit-ids-in-text-columns` work, which did not touch places; none of the five has been ruled on):
+A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 35 groups, 97 places after the merges of section 7 (before: 38 groups, 105 places; the groups at Brest, Hill 112 and Omaha Beach are gone, those at Caumont and Mantes-la-Jolie lost a place, the other 33 are unchanged); the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:
 
 | Places | Why they may be one place |
 |---|---|
-| PL0070 Caumont / PL0071 Caumont-l'Éventé | the same commune (Caumont-l'Éventé, Calvados), 0 m apart |
-| PL0208 Mantes-Gassicourt / PL0209 Mantes-la-Jolie | Mantes-Gassicourt is a former commune, merged into Mantes-la-Jolie in 1962; 0 m apart (PL0207 is the bridgehead area on the same point) |
-| PL0045 Brest, Finistère / PL0294 Recouvrance, Brest | Recouvrance is the district of Brest on the west bank of the Penfeld; 0 m apart |
-| PL0258 Omaha Beach / PL0259 Omaha Beach sector | the beach and its sector share the point (both areas) |
-| PL0173 Hill 112 / PL0174 Hill 112 / Odon salient | same point; the second is the wider salient, an area |
+| PL0070 Caumont / PL0071 Caumont-l'Éventé | **Merged** into PL0071 (see section 7); the same commune (Caumont-l'Éventé, Calvados), 0 m apart |
+| PL0208 Mantes-Gassicourt / PL0209 Mantes-la-Jolie | **Merged** into PL0209 (see section 7); Gassicourt is a former village annexed to Mantes in 1930 (an earlier version of this table said 1962) and now a district of Mantes-la-Jolie; the town was called Mantes-Gassicourt until 1953; 0 m apart (PL0207 is the bridgehead area on the same point) |
+| PL0045 Brest, Finistère / PL0294 Recouvrance, Brest | **Merged** into PL0045 (see section 7); Recouvrance is the district of Brest on the west bank of the Penfeld; 0 m apart |
+| PL0258 Omaha Beach / PL0259 Omaha Beach sector | **Merged** into PL0258 (see section 7); the beach and its sector share the point (both areas) |
+| PL0173 Hill 112 / PL0174 Hill 112 / Odon salient | **Merged** into PL0173 (see section 7); same point; the second is the wider salient, an area |
 
 The groups (rounded point, then each place with its kind, name and claim count):
 
@@ -128,7 +129,7 @@ The groups (rounded point, then each place with its kind, name and claim count):
 (49.304, -1.247) PL0067 point "Carentan, Manche" (6) | PL0068 area "Carentan / Manoir de Donville" (2) | PL0069 area "Carentan / Vire crossing" (1) | PL0310 area "Southwest of Carentan" (1) | PL0380 area "West of Carentan" (1)
 (49.335, -0.415) PL0158 area "Gold-Juno-Sword landing zone" (1) | PL0180 area "Juno Beach" (4) | PL0181 area "Juno/Sword" (2) | PL0185 area "Landed Normandy beachhead" (1) | PL0251 area "Normandy beachhead" (2)
 (49.171, -0.579) PL0146 point "Fontenay-le-Pesnel" (2) | PL0147 area "Fontenay-le-Pesnel / Rauray sector" (1) | PL0270 area "Panzer Lehr sector" (1) | PL0348 area "Tilly-Fontenay sector" (1)
-(49.091, -0.804) PL0048 area "Brigade box west of Villers-Bocage" (1) | PL0070 point "Caumont" (1) | PL0071 point "Caumont-l'Éventé" (2)
+(49.091, -0.804) PL0048 area "Brigade box west of Villers-Bocage" (1) | PL0071 point "Caumont-l'Éventé" (3)
 (49.181, -0.364) PL0057 point "Caen" (1) | PL0059 area "Caen sector" (2) | PL0060 area "Caen sector assembly areas" (1)
 (43.273, 6.64) PL0066 area "Cape Saint-Tropez landing area, Var" (1) | PL0123 area "Dragoon assault area (Alpha, Delta and Camel sectors), Var coast" (1) | PL0342 point "Saint-Tropez, Var" (1)
 (49.488, -1.378) PL0074 line "Central Cotentin axis, north of Valognes" (1) | PL0230 point "Montebourg Station" (1) | PL0231 line "Montebourg-Valognes axis" (1)
@@ -138,10 +139,9 @@ The groups (rounded point, then each place with its kind, name and claim count):
 (49.183, -0.892) PL0130 area "Elle River south of Foret de Cerisy" (1) | PL0149 area "Forêt de Cerisy" (1) | PL0150 area "Forêt de Cerisy / Caumont gap sector" (1)
 (49.306, -0.321) PL0157 area "Gold/Juno/Sword" (1) | PL0344 area "Sword Beach" (1) | PL0345 area "Sword/Juno beaches" (1)
 (49.139, -0.528) PL0161 point "Grainville-sur-Odon" (3) | PL0162 area "Grainville-sur-Odon / Odon salient" (1) | PL0378 area "West flank of the Odon salient" (1)
-(48.991, 1.717) PL0207 area "Mantes-Gassicourt bridgehead area (Seine), Yvelines" (3) | PL0208 point "Mantes-Gassicourt, Yvelines" (2) | PL0209 point "Mantes-la-Jolie, Yvelines" (2)
+(48.991, 1.717) PL0207 area "Mantes-Gassicourt bridgehead area (Seine), Yvelines" (3) | PL0209 point "Mantes-la-Jolie, Yvelines" (4)
 (49.207, -0.431) PL0019 point "Authie" (2) | PL0020 line "Authie-Carpiquet line" (1)
 (47.24, 6.02) PL0038 point "Besançon, Doubs" (1) | PL0119 area "Doubs valley west of Besançon" (1)
-(48.391, -4.486) PL0045 point "Brest, Finistère" (10) | PL0294 point "Recouvrance, Brest" (1)
 (48.115, -1.679) PL0051 area "Brittany" (1) | PL0296 point "Rennes, Ille-et-Vilaine" (3)
 (48.984, -0.473) PL0061 area "Caen sector (HQ around Thury-Harcourt; see 10 June)" (1) | PL0347 point "Thury-Harcourt" (2)
 (49.067, -0.767) PL0062 point "Cahagnes" (1) | PL0063 line "Cahagnes - Villers-Bocage axis" (1)
@@ -151,14 +151,12 @@ The groups (rounded point, then each place with its kind, name and claim count):
 (49.409, -1.318) PL0101 area "Cotentin airborne landing area" (1) | PL0320 point "Sainte-Mère-Église" (2)
 (49.157, -1.059) PL0131 area "Elle River / Villiers-Fossard sector" (2) | PL0374 point "Villiers-Fossard" (4)
 (49.422, -1.409) PL0160 area "Gourbesville / Pont-l-Abbe area" (1) | PL0381 area "West of the Merderet" (2)
-(49.124, -0.461) PL0173 point "Hill 112" (1) | PL0174 area "Hill 112 / Odon salient" (1)
 (49.319, -1.101) PL0177 point "Isigny-sur-Mer" (1) | PL0178 area "Isigny / Vire–Elle sector" (2)
 (51.565, 5.461) PL0186 area "Landing zones between Son and Veghel (centred at Sint-Oedenrode), Noord-Brabant, Netherlands" (1) | PL0336 point "St-Oedenrode, Nord Brabant, Netherlands" (1)
 (49.176, -0.625) PL0192 area "Lingeves / Tilly-sur-Seulles sector" (1) | PL0349 point "Tilly-sur-Seulles" (4)
 (50.85, 5.683) PL0202 area "Maastricht area, Albert Canal–Meuse" (1) | PL0203 point "Maastricht, Limburg" (2)
 (49.1, -1.239) PL0213 point "Marigny, Manche" (6) | PL0214 area "Marigny–Saint-Gilles gap, Manche" (1)
 (49.139, -0.516) PL0227 point "Mondrainville" (4) | PL0256 area "Odon bridgehead" (1)
-(49.369, -0.869) PL0258 area "Omaha Beach" (10) | PL0259 area "Omaha Beach sector" (1)
 (49.309, -0.903) PL0352 point "Trévières, Calvados" (1) | PL0353 area "Treviers-Mosles area" (1)
 ```
 
@@ -195,9 +193,9 @@ Decision: where a point differs by a few hundred metres only because two geocode
 
 Places of kind point within 1 km of each other:
 
-- PL0070 Caumont and PL0071 Caumont-l'Éventé, 0 m (merge candidate)
-- PL0208 Mantes-Gassicourt and PL0209 Mantes-la-Jolie, 0 m (merge candidate)
-- PL0045 Brest and PL0294 Recouvrance, 0 m (merge candidate)
+- PL0070 Caumont and PL0071 Caumont-l'Éventé, 0 m (merged, see section 7)
+- PL0208 Mantes-Gassicourt and PL0209 Mantes-la-Jolie, 0 m (merged, see section 7)
+- PL0045 Brest and PL0294 Recouvrance, 0 m (merged, see section 7)
 - PL0089 Cherbourg and PL0152 Fort du Roule, 459 m (the fort is part of the town's defences; probably different places)
 - PL0107 Coutances and PL0285 Pont Herbert, 172 m (suspect data, see 6)
 - PL0161 Grainville-sur-Odon and PL0227 Mondrainville, 911 m (different villages; keep)
@@ -211,3 +209,18 @@ These have a blank `coord_reference_id` and the explanation in `coord_source_not
 - `Pont Herbert, Manche` (PL0285, claim C0225 of US-ARM-002D) lies 172 m from Coutances. Pont-Hébert is a different commune (about 25 km to the north-east); the point looks wrong or the name is a mix-up. It is a different place from Pont-Hébert, so it was not merged with anything.
 - `St Anthonis, Nort Brabant` (PL0314) has a point in Belgium (Flanders, 51.18 N 4.19 E) although the name says North Brabant; St. Anthonis in the Netherlands is near 51.6 N 5.9 E (country and region come from the point, so the place reads as Belgian). The point should be checked against the source.
 - Place `precision_km` is the finest precision any claim at the place has used (it is not a statement about the place itself); claims keep their own `precision_km`.
+- Claim C0006 (352nd Infantry Division, 6 June 1944): its notes put the division headquarters at Le Molay-Littry, which is inland, but the claim sits on the Omaha Beach point (since the merge of PL0259 into PL0258 its qualifier `division HQ Le Molay-Littry` is the only trace of the headquarters). It may deserve its own place and point later; the coordinates were not changed.
+
+## 7. Place merges made (item 8, branch `place-merges`)
+
+Item 8 of `docs/unit_references_review.md`: the five likely merge candidates of section 2 were decided and merged, one commit each, with `scripts/migrate_place_merges.py`. The survivor keeps its id and point; the retired id is listed in `data/place_merges.csv` and never reused; every moved claim keeps its own `precision_km`, `coord_override` and point, so no position in `build/claims.geojson` changed; the derived `location_name` of the moved claims changed (the survivor's name plus the qualifier). The `coord_reference_id` of each pair was the same, so nothing changed there. The other co-located places of section 2 are unchanged: where a group lost a place it is shown in its new form, the other groups are as before.
+
+- **PL0070 Caumont -> PL0071 Caumont-l'Éventé.** The same commune (Caumont-l'Éventé, Calvados): both places used the point of the Wikipedia article Caumont-l'Éventé, 0 m apart. `Caumont` is now an alias of PL0071. One claim moved (C0104, V Corps, 13 June 1944); it keeps its qualifier `left of First Army line` and its own `precision_km` 10.
+
+- **PL0208 Mantes-Gassicourt, Yvelines -> PL0209 Mantes-la-Jolie, Yvelines.** Checked first: Gassicourt is a district of Mantes-la-Jolie, not a separate commune. The English Wikipedia article Mantes-la-Jolie says the commune absorbed Gassicourt in 1930 (the merged commune was called Mantes-Gassicourt until it was renamed Mantes-la-Jolie on 7 May 1953) and lists Gassicourt among the four districts of the city; the French article describes Gassicourt as the former village west of the historic centre, annexed in 1930, now a residential district. A Nominatim read of the district (https://nominatim.openstreetmap.org/search?q=Gassicourt,+Mantes-la-Jolie) lies 1.85 km west of the shared point, inside the commune, under the 2 km limit set for this merge. In 1944 `Mantes-Gassicourt` was the name of the whole town, so it is kept as an alias of PL0209. Two claims moved (C0330 XV Corps and C0451 79th Infantry Division, both 19 August 1944: the 79th Division started across the Seine near Mantes that evening); they keep their precision (10 and 5 km) and get the qualifier `Mantes-Gassicourt, Seine crossing`. PL0207 (the bridgehead area on the same point) is a different kind of place and stays.
+
+- **PL0294 Recouvrance, Brest -> PL0045 Brest, Finistère.** Recouvrance is a historic district of Brest on the Penfeld (https://fr.wikipedia.org/wiki/Recouvrance_(Brest)); both places used the Wikipedia point of Brest, 0 m apart (a Nominatim read of the district is 1.2 km away). `Recouvrance` is now an alias of PL0045. One claim moved (C0408, 29th Infantry Division, 18 September 1944: Von der Mosel surrendered the troops in Recouvrance); it gets the qualifier `Recouvrance district` and keeps its `precision_km` 3.
+
+- **PL0259 Omaha Beach sector -> PL0258 Omaha Beach.** The beach and its sector were two areas on the same point (reference R001). One claim moved (C0006, 352nd Infantry Division, 6 June 1944); it keeps its qualifier `division HQ Le Molay-Littry` and its `precision_km` 10. No alias was added (the sector name is kept as `retired_name` in `data/place_merges.csv`). **Open: C0006.** Its notes say the division defended Omaha Beach with its headquarters at Le Molay-Littry, which is inland; the claim sits on the beach point (represents `sector_center`). The headquarters may deserve its own place and point later; the coordinates were not changed.
+
+- **PL0174 Hill 112 / Odon salient -> PL0173 Hill 112.** Same point (reference R002). The survivor is the point Hill 112; the salient (the retired area) becomes context on the claim. One claim moved (C0196, 10th SS Panzer Division, 29 June 1944: the counter-attack on the west flank of the British salient); it gets the qualifier `Odon salient` and keeps its `precision_km` 5. C0189 already had the qualifier `Odon salient`. No alias was added (the retired name is kept in `data/place_merges.csv`).

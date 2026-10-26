@@ -3,6 +3,8 @@
 A place is a named location that claims point at (`claims.place_id`): a settlement or site (kind point), a named area, sector, beach or zone
 (kind area) or a front, axis or route (kind line). Its coordinate is the one point every claim at the place uses; a claim that uses a different
 point (another geocoder read of the same place, an approximate point) says so in `coord_override`. See schema/README.md, "places columns".
+A place id is never reused. When two places turn out to be one, the survivor keeps its id and the other id is retired: it leaves data/places.csv, no
+claim may use it, and data/place_merges.csv records which place it became (`load_merges`, `resolve`), so an old reference to the id can be resolved.
 
 Values that used to be claim columns and are now derived (never stored in the claim files):
   location_name                   the place name with the claim's `location_qualifier` (see display_name)
@@ -22,6 +24,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 
 PLACES_CSV = os.path.join(common.ROOT, 'data', 'places.csv')
+MERGES_CSV = os.path.join(common.ROOT, 'data', 'place_merges.csv')
+MERGES_HEADER = ['retired_place_id', 'merged_into_place_id', 'retired_name', 'note']
 HEADER = ['place_id', 'name', 'alt_names', 'kind', 'latitude', 'longitude', 'precision_km', 'country', 'region', 'coord_reference_id', 'coord_source_note']
 VICINITY = 'vicinity'   # reserved first token of a location_qualifier: the claim says "vicinity of <place>"
 DERIVED_PLACE = ['place_name', 'country', 'region', 'coord_reference_id', 'coord_source_note']   # place columns carried to build/all_claims.csv
@@ -46,6 +50,23 @@ def load():
     if not os.path.isfile(PLACES_CSV):
         return Places([])
     return Places(common.read_dicts(PLACES_CSV)[1])
+
+
+def load_merges():
+    """Rows of data/place_merges.csv as dicts (empty when the file is absent): the place ids that were retired by merging two places."""
+    if not os.path.isfile(MERGES_CSV):
+        return []
+    return common.read_dicts(MERGES_CSV)[1]
+
+
+def resolve(place_id, merges=None):
+    """The place id a (possibly retired) id now stands for: follows data/place_merges.csv until an id that was not merged away."""
+    m = {r['retired_place_id']: r['merged_into_place_id'] for r in (load_merges() if merges is None else merges)}
+    seen = set()
+    while place_id in m and place_id not in seen:
+        seen.add(place_id)
+        place_id = m[place_id]
+    return place_id
 
 
 def display_name(place_name, qualifier):

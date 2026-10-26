@@ -1,0 +1,150 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "relations",
+  "title": "Keys and foreign keys of the side tables",
+  "description": "Primary and foreign keys of the CSV tables that have no column schema file of their own (their headers are defined in scripts/operations.py and scripts/build_references.py). Together with the foreignKeys of claims.schema.json and units.schema.json this is the complete list of references between tables; scripts/validate.py enforces every entry. `separator` marks a column that holds a list of keys; `alsoAllowed` names values accepted besides the referenced keys.",
+  "tables": {
+    "nationalities": {
+      "path": "data/nationalities.csv",
+      "primaryKey": "code",
+      "unique": [
+        "name"
+      ]
+    },
+    "operations": {
+      "path": "data/operations.csv",
+      "primaryKey": "operation_id",
+      "foreignKeys": [
+        {
+          "fields": "parent_operation_id",
+          "reference": {
+            "resource": "operations",
+            "fields": "operation_id"
+          }
+        },
+        {
+          "fields": "nationality_scope",
+          "reference": {
+            "resource": "nationalities",
+            "fields": "name"
+          },
+          "alsoAllowed": [
+            "All"
+          ]
+        },
+        {
+          "fields": "reference_ids",
+          "separator": ";",
+          "reference": {
+            "resource": "references_meta",
+            "fields": "reference_id"
+          }
+        }
+      ]
+    },
+    "operation_relations": {
+      "path": "data/operation_relations.csv",
+      "primaryKey": [
+        "from_operation_id",
+        "to_operation_id",
+        "relation"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "from_operation_id",
+          "reference": {
+            "resource": "operations",
+            "fields": "operation_id"
+          }
+        },
+        {
+          "fields": "to_operation_id",
+          "reference": {
+            "resource": "operations",
+            "fields": "operation_id"
+          }
+        },
+        {
+          "fields": "reference_ids",
+          "separator": ";",
+          "reference": {
+            "resource": "references_meta",
+            "fields": "reference_id"
+          }
+        }
+      ]
+    },
+    "operation_exceptions": {
+      "path": "data/operation_exceptions.csv",
+      "primaryKey": "claim_id",
+      "foreignKeys": [
+        {
+          "fields": "claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        },
+        {
+          "fields": "operation_id",
+          "reference": {
+            "resource": "operations",
+            "fields": "operation_id"
+          }
+        }
+      ]
+    },
+    "coordinate_exceptions": {
+      "path": "data/coordinate_exceptions.csv",
+      "primaryKey": [
+        "check",
+        "claim_id",
+        "other_claim_id"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        },
+        {
+          "fields": "other_claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        }
+      ]
+    },
+    "references_meta": {
+      "path": "data/references_meta.csv",
+      "primaryKey": "reference_id"
+    },
+    "claim_reference_roles": {
+      "path": "data/claim_reference_roles.csv",
+      "primaryKey": [
+        "claim_id",
+        "reference_id",
+        "role"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        },
+        {
+          "fields": "reference_id",
+          "reference": {
+            "resource": "references_meta",
+            "fields": "reference_id"
+          }
+        }
+      ]
+    }
+  }
+}

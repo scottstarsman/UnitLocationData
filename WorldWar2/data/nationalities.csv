@@ -1,0 +1,11 @@
+code,name,adjective,alt_adjectives,alliance,kind,note
+ALL,Allied,Allied,,Allied,multinational,"Combined Allied headquarters that belong to no single nation, for example SHAEF and AFHQ (folder allied; no claim files yet). Kept as an explicit value; the unit records do not say which nation staffed them."
+BEL,Belgium,Belgian,,Allied,nation,Belgian formations (folder belgium).
+CAN,Canada,Canadian,,Allied,nation,Canada (folder canada).
+CZ,Czechoslovakia,Czechoslovak,,Allied,nation,Czechoslovak formations (folder czechoslovakia).
+FR,France,French,,Allied,nation,Free French and French Army formations (folder france).
+GER,Germany,German,,Axis,nation,"Germany, including Waffen-SS and Luftwaffe ground formations (folder germany). The unit id prefix is GER; the nationality value is Germany; the adjective used in names is German."
+NL,Netherlands,Dutch,,Allied,nation,Dutch formations (folder netherlands).
+POL,Poland,Polish,,Allied,nation,Polish formations serving under British or Allied command (folder poland).
+UK,UK,British,,Allied,nation,United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).
+US,US,US,American,Allied,nation,United States (folder us).

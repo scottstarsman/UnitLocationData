@@ -26,7 +26,10 @@ Conversion rules (applied to the old text; nothing is added that the old text or
   * US First Army under 21st Army Group is recorded as operational_control (it was never a permanent part of it).
 
 The script works on a repository root and rewrites data/claims/**/*.csv and data/units.csv in place.
-It refuses to run on files that already have the new columns. scripts/split_from_flat.py calls it so that the
+It refuses to run on files that already have the new columns.
+HISTORICAL: this script reproduces the layout of that migration step (including the `parent_only` column, the entry `name` and the `unknown`
+sentinels). The current layout is reached by scripts/migrate_normalize.py, which has to be applied after it.
+ scripts/split_from_flat.py calls it so that the
 archive flat v5 files still reproduce data/ exactly.
 
 Usage:  python scripts/migrate_parent_formation.py [--root DIR]

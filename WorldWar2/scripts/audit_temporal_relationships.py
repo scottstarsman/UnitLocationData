@@ -41,9 +41,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 
-RANK = {'squad': 0, 'platoon': 0, 'company': 0, 'battalion': 1, 'regiment/battle_group': 2, 'brigade': 3, 'division': 4,
-        'corps': 5, 'army': 6, 'army_group': 7, 'other': 8}
-ACTIVE = ('operational_control', 'attached')
+RANK = common.echelon_rank()                    # schema/vocabularies.json, vocabulary echelon_rank
+ACTIVE = common.relationship_group('active')    # schema/vocabularies.json, vocabulary relationship_groups
 MAX_LIST = 40
 
 
@@ -59,7 +58,7 @@ def km(a, b):
 
 def entries(row):
     v = row['command_relationships']
-    if v in ('', 'unknown'):
+    if v == '':
         return []
     try:
         return [e for e in json.loads(v) if isinstance(e, dict)]
@@ -135,7 +134,7 @@ def check_parent_in_force(rows, units, rn):
     f = []
     for r in rows:
         p = r['parent_unit_id']
-        if p in ('', 'unknown') or r['claim_status'] not in ('preferred', ''):
+        if p == '' or r['claim_status'] not in ('preferred', ''):
             continue
         es = [e for e in entries(r) if e.get('unit_id') == p]
         if not es:
@@ -188,7 +187,7 @@ def check_parent_change(rows, units, rn):
     f = []
     by = {}
     for r in rows:
-        if r['claim_status'] in ('preferred', '') and r['parent_unit_id'] not in ('', 'unknown'):
+        if r['claim_status'] in ('preferred', '') and r['parent_unit_id'] != '':
             by.setdefault(r['unit_id'], []).append(r)
     for uid, rs in by.items():
         rs.sort(key=lambda r: (r['date'], r['claim_id']))

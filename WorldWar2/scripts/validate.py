@@ -4,9 +4,14 @@
 Checks: header and field count of every file, field types, booleans, lat/long ranges,
 controlled vocabularies, unique claim_ids across the repository, unit_id matches both the
 file name and data/units.csv, rows sorted by date then claim_id, conflict-group integrity,
-strength_json structure (a scope is required whenever personnel is given), parent_unit_id resolves, command_relationships is valid JSON with allowed keys,
-relationship values and resolving unit_ids, every row has a source URL.
-Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with parent_only and with the
+strength_json structure (a scope is required whenever personnel is given), parent_unit_id resolves (blank, never a sentinel), command_relationships is valid JSON
+(blank, or a list) with allowed keys, relationship values and resolving unit_ids (an entry with unit_id null must be relationship unknown with a note),
+every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch, theater) equal the unit table.
+Nationalities (data/nationalities.csv): header, unique code and name, alliance and kind vocabularies, adjective set; every unit's nationality is a row of the table,
+its unit_id prefix is the row's code and its claim folder is the lower-case name.
+Foreign keys: every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json is checked (blank allowed, list columns split on the
+declared separator), and the declared primary keys of the side tables are unique.
+Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with the
 existence of a claim file (a placeholder must not have claim rows: run scripts/promote_placeholders.py once a claim file is
 added), formed_date is a real YYYY, YYYY-MM or YYYY-MM-DD with a source URL, initial_parent_* columns are all set or all blank
 and resolve, listing_source tokens are in the source_token vocabulary, and unit_name is unique within a nationality.
@@ -121,16 +126,13 @@ def valid_partial_date(s):
     return True
 
 
-ADJ = {'Germany': ['German'], 'UK': ['British'], 'Canada': ['Canadian'], 'US': ['US', 'American'], 'France': ['French'],
-       'Poland': ['Polish'], 'Belgium': ['Belgian'], 'Netherlands': ['Dutch'], 'Czechoslovakia': ['Czechoslovak'],
-       'Allied': ['Allied']}
-
-
 def engaged_index(units):
-    """Names that an engaged_with entry may use: '<adjective> <unit_name>' (also with the adjective removed from the name)."""
+    """Names that an engaged_with entry may use: '<adjective> <unit_name>' (also with the adjective removed from the name);
+    the adjectives come from data/nationalities.csv."""
     idx = set()
+    nats = common.nationality_by_name()
     for u in units.values():
-        for adj in ADJ.get(u['nationality'], []):
+        for adj in (common.adjectives(nats[u['nationality']]) if u['nationality'] in nats else []):
             idx.add('%s %s' % (adj, u['unit_name']))
             idx.add('%s %s' % (adj, re.sub(r'^(%s) ' % adj, '', u['unit_name'])))
             idx.add('%s %s' % (adj, u['unit_name'].replace(' %s ' % adj, ' ')))
@@ -198,19 +200,33 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json has personnel but no scope: set scope to whole_unit, sub_force or sector (what the figure covers), or remove the personnel figure if no source says')
 
 
-REL_KEYS = {'unit_id', 'name', 'relationship', 'effective_from', 'effective_from_latest', 'ordered_date', 'effective_to',
+REPEATED_COLUMNS = common.load_schema('claims')['repeatedColumns']['fields']   # claim columns that must equal data/units.csv
+NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'alliance', 'kind', 'note']
+
+REL_KEYS = {'unit_id', 'relationship', 'effective_from', 'effective_from_latest', 'ordered_date', 'effective_to',
             'effective_to_earliest', 'effective_to_basis', 'date_basis', 'note', 'effective_time', 'effective_to_time'}
 DATE_KEYS = ('effective_from', 'effective_from_latest', 'ordered_date', 'effective_to', 'effective_to_earliest')
-STANDING_RELS = ('organic', 'assigned', 'unspecified_subordination', 'unknown')
-ECH_RANK = {'squad': 0, 'platoon': 0, 'company': 0, 'battalion': 1, 'regiment/battle_group': 2, 'brigade': 3, 'division': 4,
-            'corps': 5, 'army': 6, 'army_group': 7, 'other': 8}
-HIGHER_THAN_ORGANIC = {'division': ('army_group', 'army', 'corps'), 'corps': ('army_group', 'army'), 'army': ('army_group', 'other'),
-                       'army_group': ('other',)}
+# Single sources: schema/vocabularies.json (echelon_rank, relationship_groups, higher_than_organic, source_type)
+STANDING_RELS = common.relationship_group('standing')
+ACTIVE_RELS = common.relationship_group('active')
+ECH_RANK = common.echelon_rank()
+HIGHER_THAN_ORGANIC = common.higher_than_organic()
 
 
 def row_echelon(row, units):
     u = units.get(row['unit_id'])
     return u['echelon'] if u else row.get('echelon', '')
+
+
+def entries_of(s):
+    """The dict entries of a command_relationships cell, [] when it is blank or not a valid list (reported elsewhere)."""
+    if s == '':
+        return []
+    try:
+        d = json.loads(s)
+    except ValueError:
+        return []
+    return [e for e in d if isinstance(e, dict)] if isinstance(d, list) else []
 
 
 def check_location_date(where, row):
@@ -242,21 +258,29 @@ def check_location_date(where, row):
 
 
 def check_command_relationships(where, row, units, vocabs):
-    """parent_unit_id is a unit id (resolves), blank or 'unknown'; command_relationships is a JSON list."""
+    """parent_unit_id is a unit id (resolves) or blank (no parent, or none verified: then an unknown entry says so);
+    command_relationships is blank or a JSON list. The sentinel text `unknown` is not accepted in either column."""
     pid, s = row['parent_unit_id'], row['command_relationships']
-    if pid not in ('', 'unknown'):
+    if pid == 'unknown':
+        err(where, "parent_unit_id 'unknown' is not allowed: leave it blank and give command_relationships one entry "
+                   '{"unit_id": null, "relationship": "unknown", "note": "..."}')
+    elif pid:
         if pid not in units:
             err(where, 'parent_unit_id %s not in units.csv' % pid)
         if pid == row['unit_id']:
             err(where, 'parent_unit_id is the unit itself')
-    if s in ('', 'unknown'):
-        if pid not in ('', 'unknown'):
+    if s == 'unknown':
+        err(where, "command_relationships 'unknown' is not allowed: leave it blank, or give the entry "
+                   '{"unit_id": null, "relationship": "unknown", "note": "..."}')
+        return
+    if s == '':
+        if pid:
             err(where, 'parent_unit_id %s needs a command_relationships entry for it' % pid)
         return
     try:
         d = json.loads(s)
     except ValueError as e:
-        err(where, 'command_relationships is not valid JSON or "unknown" (%s)' % e)
+        err(where, 'command_relationships is not valid JSON (%s)' % e)
         return
     if not isinstance(d, list) or not d:
         err(where, 'command_relationships must be a non-empty JSON list')
@@ -269,7 +293,9 @@ def check_command_relationships(where, row, units, vocabs):
         for k in e:
             if k not in REL_KEYS:
                 err(where, 'command_relationships: unknown key %r' % k)
-        for k in ('unit_id', 'name', 'relationship'):
+        if 'name' in e:
+            err(where, "command_relationships: 'name' is not stored (the name comes from units.csv); for an entry with unit_id null put the explanation in note")
+        for k in ('unit_id', 'relationship'):
             if k not in e:
                 err(where, 'command_relationships: entry missing %r' % k)
         uid = e.get('unit_id')
@@ -279,8 +305,11 @@ def check_command_relationships(where, row, units, vocabs):
             elif uid == row['unit_id']:
                 err(where, 'command_relationships: the unit is listed as its own parent')
             ids.append(uid)
-        if not isinstance(e.get('name'), str) or not e.get('name'):
-            err(where, 'command_relationships: name must be a non-empty string')
+        if 'unit_id' in e and uid is None:
+            if e.get('relationship') != 'unknown':
+                err(where, 'command_relationships: unit_id null is only allowed with relationship unknown (a formation that is not a unit needs a placeholder in data/units.csv)')
+            if not isinstance(e.get('note'), str) or not e.get('note').strip():
+                err(where, 'command_relationships: an entry with unit_id null needs a note saying what is unknown')
         if e.get('relationship') not in vocabs['relationship']['values']:
             err(where, 'command_relationships: relationship %r not in vocabulary relationship' % e.get('relationship'))
         if 'note' in e and not isinstance(e['note'], str):
@@ -326,23 +355,21 @@ def check_command_relationships(where, row, units, vocabs):
                     err(where, 'command_relationships: %s must be HH:MM (24-hour; say in the note which clock the source uses)' % tk)
                 if dk not in e:
                     err(where, 'command_relationships: %s needs %s' % (tk, dk))
-        if e.get('unit_id') is None and e.get('relationship') not in ('unknown', None) and isinstance(e.get('name'), str):
-            warn(where, 'command_relationships: named higher HQ %r has no stable unit_id; add it to data/units.csv (placeholder is fine)' % e.get('name'))
         ur = units.get(e.get('unit_id')) if e.get('unit_id') else None
         if e.get('relationship') == 'organic' and ur and ECH_RANK.get(row_echelon(row, units), 0) >= 4 and ur['echelon'] in HIGHER_THAN_ORGANIC.get(row_echelon(row, units), ()):
             warn(where, "command_relationships: 'organic' used for %s -> %s (%s); a division, corps or army under a higher headquarters is assigned, attached, "
                         "unspecified_subordination or operational_control, not organic" % (row_echelon(row, units), ur['echelon'], e.get('unit_id')))
     if len(ids) != len(set(ids)):
         err(where, 'command_relationships lists the same unit_id twice')
-    if pid not in ('', 'unknown') and pid not in ids:
+    if pid and pid not in ids:
         err(where, 'parent_unit_id %s is not listed in command_relationships' % pid)
     entries = [e for e in d if isinstance(e, dict)]
-    ops = [e for e in entries if e.get('relationship') in ('attached', 'operational_control')]
+    ops = [e for e in entries if e.get('relationship') in ACTIVE_RELS]
     # An attachment to a higher headquarters than the parent (e.g. a division in a corps zone that the CMH table shows attached to an army)
     # does not make that army the immediate parent, so it is not flagged.
     pech = ECH_RANK.get((units.get(pid) or {}).get('echelon'), 0)
     ops = [e for e in ops if ECH_RANK.get((units.get(e.get('unit_id')) or {}).get('echelon'), 0) <= pech or e.get('unit_id') not in units]
-    if ops and pid not in ('', 'unknown') and pid not in [e.get('unit_id') for e in ops]:
+    if ops and pid and pid not in [e.get('unit_id') for e in ops]:
         warn(where, 'an attached/operational_control entry exists but parent_unit_id %s is not one of them (parent_unit_id is the operational parent)' % pid)
     if any(e.get('relationship') == 'attached' for e in entries) and not any(
             e.get('relationship') in STANDING_RELS for e in entries):
@@ -353,8 +380,7 @@ def check_command_relationships(where, row, units, vocabs):
         err(where, 'units.csv parent_unit_id %s must appear as an organic entry in command_relationships' % u['parent_unit_id'])
 
 
-REFERENCE_TYPES = {'official_history', 'unit_history', 'assignment_table', 'reference_compilation', 'encyclopedia', 'gazetteer_geocoder',
-                   'monument_or_memorial', 'archive_document', 'news_or_web_article', 'other'}
+REFERENCE_TYPES = set(common.vocab_values('source_type'))   # schema/vocabularies.json, vocabulary source_type
 
 
 def check_references(claims):
@@ -479,6 +505,83 @@ def check_operations(claims, vocabs):
         warn(wh, m)
 
 
+def check_nationalities():
+    """data/nationalities.csv: header, unique code and name, vocabularies for alliance and kind, adjective set."""
+    where = 'data/nationalities.csv'
+    if not os.path.isfile(common.NATIONALITIES_CSV):
+        err(where, 'missing')
+        return {}
+    header, rows = common.read_dicts(common.NATIONALITIES_CSV)
+    if header != NAT_HEADER:
+        err(where, 'header %s != %s' % (header, NAT_HEADER))
+        return {}
+    alliances, kinds = common.vocab_values('alliance'), common.vocab_values('nationality_kind')
+    codes, names = set(), set()
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        if not re.fullmatch(r'[A-Z]{2,4}', r['code']):
+            err(w, 'code %r must be 2-4 capital letters (the unit_id prefix)' % r['code'])
+        if r['code'] in codes:
+            err(w, 'duplicate code %s' % r['code'])
+        if r['name'] in names:
+            err(w, 'duplicate name %s' % r['name'])
+        codes.add(r['code'])
+        names.add(r['name'])
+        for f in ('name', 'adjective', 'alliance', 'kind', 'note'):
+            if not r[f].strip():
+                err(w, '%s is empty' % f)
+        if r['name'] != r['name'].strip() or r['name'] == 'All':
+            err(w, "name %r is invalid ('All' is reserved for operation scopes)" % r['name'])
+        if r['alliance'] not in alliances:
+            err(w, 'alliance %r not in vocabulary alliance %s' % (r['alliance'], alliances))
+        if r['kind'] not in kinds:
+            err(w, 'kind %r not in vocabulary nationality_kind %s' % (r['kind'], kinds))
+    if [r['code'] for r in rows] != sorted(r['code'] for r in rows):
+        err(where, 'rows must be sorted by code')
+    return {r['name']: r for r in rows}
+
+
+def check_foreign_keys(tables):
+    """Enforce every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json, and the
+    declared primary keys / unique columns of the side tables. `tables` maps resource name -> list of row dicts. A blank value is
+    allowed (nullable reference); a column with a `separator` holds a list of keys; `alsoAllowed` lists extra accepted values."""
+    decl = [(n, fk) for n in ('claims', 'units') for fk in common.load_schema(n).get('foreignKeys', [])]
+    rel = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
+    for name, t in rel.items():
+        decl.extend((name, fk) for fk in t.get('foreignKeys', []))
+    for src, fk in decl:
+        dst, dfield = fk['reference']['resource'], fk['reference']['fields']
+        if src not in tables or dst not in tables:
+            err('schema', 'foreign key %s.%s refers to unknown resource %s' % (src, fk['fields'], dst))
+            continue
+        allowed = {r[dfield] for r in tables[dst]} | set(fk.get('alsoAllowed', []))
+        sep = fk.get('separator')
+        for i, r in enumerate(tables[src], start=2):
+            v = r.get(fk['fields'], '')
+            if not v:
+                continue
+            for tok in ([t.strip() for t in v.split(sep) if t.strip()] if sep else [v]):
+                if tok not in allowed:
+                    err(r.get('_where') or 'data/%s row %d' % (src, i), 'foreign key %s.%s = %r is not a %s.%s' % (src, fk['fields'], tok, dst, dfield))
+    for name, t in rel.items():
+        pk = t.get('primaryKey')
+        if not pk or name not in tables:
+            continue
+        pk = [pk] if isinstance(pk, str) else pk
+        seen = set()
+        for i, r in enumerate(tables[name], start=2):
+            k = tuple(r[c] for c in pk)
+            if '' in k:
+                err('data/%s row %d' % (name, i), 'primary key %s is blank' % pk)
+            if k in seen:
+                err('data/%s row %d' % (name, i), 'duplicate primary key %s = %s' % (pk, k))
+            seen.add(k)
+        for col in t.get('unique', []):
+            vals = [r[col] for r in tables[name]]
+            if len(vals) != len(set(vals)):
+                err('data/%s' % name, 'column %s must be unique' % col)
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -487,6 +590,8 @@ def main():
     cheader = [f['name'] for f in cfields]
     ufields = units_schema['fields']
     uheader = [f['name'] for f in ufields]
+
+    nats = check_nationalities()
 
     # ---- units.csv ----
     units = {}
@@ -516,11 +621,9 @@ def main():
                 err('data/units.csv', 'unit_name %r is used by both %s and %s (names must be unique within a nationality)' % (u['unit_name'], seen_names[key], uid))
             seen_names[key] = uid
             where = 'data/units.csv unit %s' % uid
-            st = u['record_status']
-            if st == 'placeholder' and u['parent_only'] != 'true':
-                err(where, 'record_status placeholder requires parent_only=true')
-            if st in ('partial', 'active') and u['parent_only'] != 'false':
-                err(where, 'record_status %s requires parent_only=false (and a claim file)' % st)
+            nat = nats.get(u['nationality'])
+            if nat and uid.split('-')[0] != nat['code']:
+                err(where, 'unit_id prefix %s is not the code %s of nationality %s' % (uid.split('-')[0], nat['code'], u['nationality']))
             if u['formed_date']:
                 if not valid_partial_date(u['formed_date']):
                     err(where, 'formed_date %r is not a real YYYY, YYYY-MM or YYYY-MM-DD' % u['formed_date'])
@@ -579,8 +682,8 @@ def main():
             err(r_path, 'unit_id %s (file name) not in data/units.csv' % stem)
         else:
             unit_with_file.add(stem)
-            if units[stem]['parent_only'] == 'true' or units[stem]['record_status'] == 'placeholder':
-                err(r_path, 'unit %s is a placeholder (parent_only=true, record_status=placeholder) in units.csv but has a claim file: run scripts/promote_placeholders.py to set record_status=active and parent_only=false' % stem)
+            if units[stem]['record_status'] == 'placeholder':
+                err(r_path, 'unit %s is a placeholder (record_status=placeholder) in units.csv but has a claim file: run scripts/promote_placeholders.py to set record_status=active' % stem)
             if units[stem]['nationality'].lower() != folder:
                 err(r_path, 'folder %s does not match unit nationality %s' % (folder, units[stem]['nationality']))
         if not rows:
@@ -601,7 +704,7 @@ def main():
                 err(where, 'unit_id %s does not match file name %s' % (row['unit_id'], stem))
             u = units.get(row['unit_id'])
             if u:
-                for col in ('unit_name', 'nationality', 'echelon', 'branch'):
+                for col in REPEATED_COLUMNS:
                     if row[col] != u[col]:
                         err(where, '%s %r differs from units.csv %r' % (col, row[col], u[col]))
             k = (row['date'], row['claim_id'])
@@ -634,10 +737,9 @@ def main():
             all_rows.append(row)
 
     for uid, u in units.items():
-        if u['parent_only'] == 'false' and uid not in unit_with_file:
-            err('data/units.csv', '%s has parent_only=false but no claim file' % uid)
-        if u['parent_only'] == 'true' and uid in unit_with_file:
-            pass  # already reported at the claim file
+        if u['record_status'] in ('partial', 'active') and uid not in unit_with_file:
+            err('data/units.csv', '%s has record_status %s but no claim file (only a placeholder has none)' % (uid, u['record_status']))
+        # a placeholder that has a claim file is reported at the claim file
 
     # ---- conflict groups ----
     groups = {}
@@ -670,17 +772,15 @@ def main():
     for uid, rs in by_unit.items():
         rs.sort(key=lambda r: (r['date'], r['claim_id']))
         for i, r in enumerate(rs):
-            if r['command_relationships'] in ('', 'unknown'):
+            if r['command_relationships'] == '':
                 continue
             later = [x for x in rs[i + 1:] if x['date'] > r['date']]
             if not later:
                 continue
             nxt = later[0]
-            nxt_keys = set()
-            if nxt['command_relationships'] not in ('', 'unknown'):
-                nxt_keys = {(f.get('unit_id'), f.get('relationship')) for f in json.loads(nxt['command_relationships'])}
-            for e in json.loads(r['command_relationships']):
-                if e.get('relationship') in ('attached', 'operational_control') and 'effective_to' not in e \
+            nxt_keys = {(f.get('unit_id'), f.get('relationship')) for f in entries_of(nxt['command_relationships'])}
+            for e in entries_of(r['command_relationships']):
+                if e.get('relationship') in ACTIVE_RELS and 'effective_to' not in e \
                         and (e.get('unit_id'), e.get('relationship')) not in nxt_keys:
                     open_end.append((r['claim_id'], nxt['claim_id']))
     if open_end:
@@ -690,6 +790,18 @@ def main():
 
     check_operations(all_rows, vocabs)
     check_references(all_rows)
+
+    # ---- foreign keys declared in the schemas ----
+    import build_references as br
+    import operations as opsmod
+    ops = opsmod.load()
+    exc_path = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
+    tables = {'claims': all_rows, 'units': list(units.values()), 'nationalities': list(nats.values()),
+              'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
+              'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
+              'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
+              'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else []}
+    check_foreign_keys(tables)
 
     for w in warnings:
         print('WARNING', w)

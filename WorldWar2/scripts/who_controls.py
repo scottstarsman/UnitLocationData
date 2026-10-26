@@ -20,9 +20,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 
-RANK = {'squad': 0, 'platoon': 0, 'company': 0, 'battalion': 1, 'regiment/battle_group': 2, 'brigade': 3, 'division': 4,
-        'corps': 5, 'army': 6, 'army_group': 7, 'other': 8}
-ACTIVE = ('operational_control', 'attached')
+RANK = common.echelon_rank()                    # schema/vocabularies.json, vocabulary echelon_rank
+ACTIVE = common.relationship_group('active')    # schema/vocabularies.json, vocabulary relationship_groups
 STANDING = ('assigned', 'unspecified_subordination')
 
 

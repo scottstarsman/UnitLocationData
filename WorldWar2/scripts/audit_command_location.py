@@ -46,7 +46,7 @@ def main():
             hit('landing row whose coordinate is a headquarters or town centroid', r)
         if r['location_basis'] == 'inferred':
             hit('coordinate inferred or unresolved', r)
-        if r['command_relationships'] not in ('', 'unknown'):
+        if r['command_relationships'] != '':
             for e in json.loads(r['command_relationships']):
                 u = units.get(e.get('unit_id') or '')
                 if e['relationship'] == 'organic' and u and r['echelon'] in ('division', 'corps', 'army') and u['echelon'] in ('corps', 'army', 'army_group', 'other'):
@@ -69,13 +69,13 @@ def main():
         rs.sort(key=lambda r: (r['date'], r['claim_id']))
         for i, r in enumerate(rs):
             later = [x for x in rs[i + 1:] if x['date'] > r['date']]
-            if not later or r['command_relationships'] in ('', 'unknown'):
+            if not later or r['command_relationships'] == '':
                 continue
             nxt = later[0]
             nk = {(f.get('unit_id'), f.get('relationship')) for f in json.loads(nxt['command_relationships'])} \
-                if nxt['command_relationships'] not in ('', 'unknown') else set()
+                if nxt['command_relationships'] != '' else set()
             for e in json.loads(r['command_relationships']):
-                if e['relationship'] in ('attached', 'operational_control') and 'effective_to' not in e and (e.get('unit_id'), e['relationship']) not in nk:
+                if e['relationship'] in common.relationship_group('active') and 'effective_to' not in e and (e.get('unit_id'), e['relationship']) not in nk:
                     hit('attached/operational_control entry with no effective_to, not listed by the next claim (derived end)', r)
     groups = {}
     for r in rows:

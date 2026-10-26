@@ -38,27 +38,12 @@ OP_HEADER = ['operation_id', 'name', 'short_name', 'alt_names', 'op_type', 'pare
 REL_HEADER = ['from_operation_id', 'to_operation_id', 'relation', 'reference_ids', 'note']
 EXC_HEADER = ['claim_id', 'operation_id', 'reason']
 
-OP_TYPES = {
-    'umbrella': 'A planning or command umbrella that contains campaigns and operations (Overlord).',
-    'campaign': 'A campaign: a CMH campaign streamer (date_basis cmh_streamer) or a named campaign of the official histories (Brittany, Lorraine, Siegfried Line).',
-    'operation': 'A named operation with a codename or an official-history name (Cobra, Epsom, Market Garden, Lüttich).',
-    'battle': 'A battle or siege (Carentan, Cherbourg, Aachen, the Bulge, Bastogne).',
-    'phase': 'A phase of a larger operation without a name of its own (the pursuit, cutting the Cotentin).',
-}
-DATE_BASES = {
-    'cmh_streamer': 'Dates of a US Army campaign streamer (Center of Military History).',
-    'official_history': 'Dates from a US Army official history (Green Book) or CMH publication.',
-    'secondary': 'Dates from Wikipedia or another secondary source.',
-    'derived': 'Dates set by the dataset authors from several sources, because no single source dates the phase; see notes.',
-}
-RELATIONS = {
-    'follows': 'from_operation_id began after to_operation_id and continues or follows from it.',
-    'concurrent_with': 'The two ran at the same time in neighbouring areas without one being part of the other.',
-    'supports': 'from_operation_id was carried out in support of to_operation_id.',
-    'succeeded_by': 'from_operation_id was replaced by to_operation_id (a renamed, resumed or successor operation).',
-    'related': 'Linked in a way the other values do not capture, for example the German and Allied names of the same battle.',
-}
-SCOPES = {'Allied': 'Allied name or concept.', 'German': 'German name or concept.', 'All': 'Neutral or both sides.'}
+# Single source: schema/vocabularies.json (op_type, operation_date_basis, operation_relation) and data/nationalities.csv (scope)
+OP_TYPES = common.vocab_descriptions('op_type')
+DATE_BASES = common.vocab_descriptions('operation_date_basis')
+RELATIONS = common.vocab_descriptions('operation_relation')
+# nationality_scope: the `name` of a row of data/nationalities.csv (Allied, Germany, ...) or All (neutral or both sides)
+SCOPES = dict({'All': 'Neutral or both sides.'}, **{n['name']: 'Name or concept of %s.' % n['name'] for n in common.load_nationalities()})
 
 
 def _read(path, header):

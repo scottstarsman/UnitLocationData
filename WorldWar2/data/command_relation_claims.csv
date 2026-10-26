@@ -152,7 +152,7 @@ CR0020,C0127,2,listed_by_higher_unit,1944-06-16,,,,,,,,Kampfgruppe Boehm listed 
 CR0006,C0128,1,observed_during,,,,,,,,,,
 CR0034,C0129,1,observed_during,,,,,,,,,,
 CR0251,C0130,1,asserts_start,1944-06-14,,,,,,,,"CMH, Cross-Channel Attack ch. IX: XIX Corps took over control of the 29th Division from V Corps on 14 June",
-CR0087,C0131,1,observed_during,,,,,,,,,"Wikipedia, VII Corps (United States): for Overlord the 82nd and 101st Airborne Divisions were attached to VII Corps",
+CR0087,C0131,1,asserts_end,,,,,1944-06-18,,,,"Wikipedia, VII Corps (United States): for Overlord the 82nd and 101st Airborne Divisions were attached to VII Corps; CMH ch. X (a source the claim cites): control of the 82d Airborne Division passed on 19 June to VIII Corps, so the attachment ended on 18 June",narrative
 CR0086,C0131,2,observed_during,,,,,,,,,standing parent not identified,
 CR0009,C0132,1,observed_during,,,,,,,,,,
 CR0069,C0133,1,observed_during,,,,,,,,,,
@@ -164,7 +164,7 @@ CR0009,C0138,1,observed_during,,,,,,,,,,
 CR0218,C0139,1,observed_during,,,,,,,,,,
 CR0300,C0140,1,asserts_start,1944-05-29,,,,,,,,"CMH, Utah Beach to Cherbourg ch. 1: the revised VII Corps field order of 28 May provided for the temporary attachment of the 79th Division to VII Corps; Wikipedia, 79th Infantry Division (United States), assignments in ETO: Third Army, 'but attached to VII Corps, First Army' from 29 May 1944",
 CR0301,C0140,2,observed_during,,,,,,,,,"Wikipedia, 79th Infantry Division (United States), assignments in ETO: Third Army (18 April 1944, with VIII Corps)",
-CR0088,C0141,1,asserts_start,1944-06-19,,,,,,,,CMH ch. X: control of the 82d Airborne Division passed to VIII Corps on 19 June,
+CR0088,C0141,1,asserts_start,1944-06-19,,,,,,,,CMH ch. X: control of the 82d Airborne Division passed to VIII Corps on 19 June,narrative
 CR0086,C0141,2,observed_during,,,,,,,,,"standing parent not identified: XVIII Airborne Corps, the later parent, was organized after Normandy (Wikipedia, 82nd Airborne Division); none of the sources read names a standing parent on 19 June",
 CR0344,C0142,1,asserts_start,1944-06-19,,,,,,,,"CMH, Cross-Channel Attack ch. X: control of the 90th Division passed on 19 June to VIII Corps; Wikipedia, 90th Infantry Division, assignments in ETO: VIII Corps from 19 June 1944",
 CR0182,C0143,1,observed_during,,,,,,,,,,
@@ -255,6 +255,7 @@ CR0176,C0212,1,observed_during,,,,,,,,,,
 CR0175,C0212,2,observed_during,,,,,,,,,CMH ch. IX: Combat Command A was still attached to the 101st Airborne Division,
 CR0084,C0213,1,observed_during,,,,,,,,,CMH ETO-OB tables show XVIII Airborne Corps under First Allied Airborne Army,assignment_table
 CR0089,C0214,1,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Ninth""",assignment_table
+CR0088,C0214,2,asserts_end,,,,,1944-07-12,,,,"CMH ETO-OB assignment table (R365): VIII Corps from 19 Jun 44; the row of 13 Jul 44 no longer lists a corps (""(-)""), so the relation is closed on 1944-07-12",assignment_table
 CR0092,C0215,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0090,C0215,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0092,C0216,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table

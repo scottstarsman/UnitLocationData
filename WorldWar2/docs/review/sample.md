@@ -746,16 +746,16 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0020 (UK-ARM-008B, 1944-06-06) | observed_during | - | - |  | R008 https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign [R513: p. 7]; R014 https://en.wikipedia.org/wiki/Operation_Martlet [R513: p. 7]; R512 https://en.wikipedia.org/wiki/Gold_Beach [R513: p. 7]; R513 https://www.britishmilitaryhistory.co.uk/wp-content/uploads/sites/124/2019/05/Independent-Armoured-Brigades.pdf [p. 7]; R514 https://www.pegasusarchive.org/normandy/order_xxxCorps.htm [R513: p. 7] |
   | C0017 (UK-INF-050D, 1944-06-06) | listed_by_higher_unit | - | - | 8th Armoured Brigade listed as a component of the 50th Division; the claim's earlier wording listed it with the formations attached for the landings (the former `attached:` list of this claim) | R071 https://en.wikipedia.org/wiki/50th_(Northumbrian)_Infantry_Division; R137 https://en.wikipedia.org/wiki/Normandy_landings |
 
-### R08. CR0088: 82nd Airborne Division -> VIII Corps (attached)
+### R08. CR0096: 82nd Airborne Division -> First Army (attached)
 
-- **Subject / higher unit:** `US-ABN-082D` / `US-COR-008C`
-- **Interval:** from 1944-06-19 (inferred) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status disputed
-- **Note:** CMH ch. X: control of the 82d Airborne Division passed to VIII Corps on 19 June
+- **Subject / higher unit:** `US-ABN-082D` / `US-ARMY-001A`
+- **Interval:** from 1944-12-18 (assignment_table) to 1945-02-13 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
+- **Note:** CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0141 (US-ABN-082D, 1944-06-19) | asserts_start | 1944-06-19 | - | CMH ch. X: control of the 82d Airborne Division passed to VIII Corps on 19 June | R106 https://en.wikipedia.org/wiki/American_airborne_landings_in_Normandy; R446 https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-10.html |
+  | C0551 (US-ABN-082D, 1944-12-18) | asserts_start_and_end | 1944-12-18 | 1945-02-13 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13 | R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 342]; R465 https://www.ww2byday.com/48/mapunit/ [R386: p. 342] |
 
 ### R09. CR0114: 6th Army Group -> Supreme Headquarters Allied Expeditionary Force (SHAEF) (operational_control)
 

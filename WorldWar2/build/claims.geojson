@@ -25543,6 +25543,744 @@
     "reference_ids": "R532;R540;R001",
     "source_locator": "R540: p. 226"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4239,
+     48.9131
+    ]
+   },
+   "properties": {
+    "claim_id": "C0624",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-042D",
+    "unit_name": "42nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL0430",
+    "location_name": "Wimmenau, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "division attacks along the crests of the Lower Vosges, supplied by pack mules, in the VI Corps attack",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R522;R541;R001",
+    "source_locator": "R541: p. 254"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0915,
+     49.1664
+    ]
+   },
+   "properties": {
+    "claim_id": "C0625",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL0431",
+    "location_name": "Bliesransbach, Saarland",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacks east of Saarbrücken to bypass the city and cut the German escape routes; meets the West Wall",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 2,
+    "reference_ids": "R523;R541;R002",
+    "source_locator": "R541: p. 253"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1667,
+     50.1469
+    ]
+   },
+   "properties": {
+    "claim_id": "C0626",
+    "conflict_group_id": "G017",
+    "claim_status": "disputed",
+    "unit_id": "US-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL0432",
+    "location_name": "Moselle upstream of Cochem, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "division ordered to cross the Moselle beside the 5th Division early on 15 March (first combat; Green Book p. 248 date)",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R541;R530;R001",
+    "source_locator": "R541: p. 248"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1667,
+     50.1469
+    ]
+   },
+   "properties": {
+    "claim_id": "C0627",
+    "conflict_group_id": "G017",
+    "claim_status": "disputed",
+    "unit_id": "US-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-16",
+    "place_id": "PL0432",
+    "location_name": "Moselle upstream of Cochem, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "two regiments cross the Moselle in assault boats before daylight upstream of Cochem; bridgehead by the end of the day",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R541;R530;R001",
+    "source_locator": "R541: p. 250"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1667,
+     50.1469
+    ]
+   },
+   "properties": {
+    "claim_id": "C0628",
+    "conflict_group_id": "G017",
+    "claim_status": "disputed",
+    "unit_id": "US-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL0432",
+    "location_name": "Moselle upstream of Cochem, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "division assaults across the Sauer and across the Moselle (Wikipedia date)",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R551;R530;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.75,
+     49.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C0629",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-065D",
+    "unit_name": "65th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-19",
+    "place_id": "PL0433",
+    "location_name": "Saarlouis, Saarland",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "division drives north-east from Saarlautern with the XX Corps advance",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1,
+    "reference_ids": "R524;R541;R001",
+    "source_locator": "R541: p. 258"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4353,
+     49.4811
+    ]
+   },
+   "properties": {
+    "claim_id": "C0630",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-012D",
+    "unit_name": "12th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-20",
+    "place_id": "PL0434",
+    "location_name": "Ludwigshafen, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "XX Corps drive: division approaches the Rhine near Ludwigshafen",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R541;R519;R001",
+    "source_locator": "R541: p. 263"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3603,
+     49.8556
+    ]
+   },
+   "properties": {
+    "claim_id": "C0631",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-005D",
+    "unit_name": "5th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL0435",
+    "location_name": "Oppenheim, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "the 11th Infantry crosses the Rhine at Nierstein (3d Battalion) and Oppenheim (1st Battalion) at 2200 on 22 March",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R542;R359;R001",
+    "source_locator": "R542: p. 266-268"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6883,
+     49.0366
+    ]
+   },
+   "properties": {
+    "claim_id": "C0632",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-042D",
+    "unit_name": "42nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL0436",
+    "location_name": "Obersteinbach, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "a regiment of the division cuts the secondary road through the Pfälzer Forest after the German withdrawal",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-22",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R522;R541;R002",
+    "source_locator": "R541: p. 263"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.548,
+     51.6913
+    ]
+   },
+   "properties": {
+    "claim_id": "C0633",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-03-24",
+    "place_id": "PL0437",
+    "location_name": "Diersfordt, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "Operation Varsity: parachute and glider landing north-west of Wesel to take the Diersfordter Forst",
+    "operation_id": "OP-VARSITY",
+    "operation": "Operation Varsity",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Varsity",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R543;R549;R521;R002",
+    "source_locator": "R543: p. 310-311"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3667,
+     49.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C0634",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-012D",
+    "unit_name": "12th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-24",
+    "place_id": "PL0438",
+    "location_name": "Germersheim, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "task force sent for the last Rhine bridge at Germersheim; the Germans blew it at 1020",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R541;R519;R001",
+    "source_locator": "R541: p. 264"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9957,
+     49.0403
+    ]
+   },
+   "properties": {
+    "claim_id": "C0635",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-014D",
+    "unit_name": "14th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-24",
+    "place_id": "PL0439",
+    "location_name": "Schweighofen, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "task force sent for the last Rhine bridge at Germersheim; the Germans blew it at 1020",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R520;R541;R002",
+    "source_locator": "R541: p. 264"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6006,
+     51.5467
+    ]
+   },
+   "properties": {
+    "claim_id": "C0636",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-016C",
+    "unit_name": "XVI Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL0440",
+    "location_name": "Rheinberg, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "directs the Ninth Army's assault crossing of the Rhine (Operation Flashpoint) with five divisions",
+    "operation_id": "OP-VARSITY",
+    "operation": "Operation Varsity",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Varsity",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R543;R001",
+    "source_locator": "R543: p. 303-305"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6515,
+     51.6213
+    ]
+   },
+   "properties": {
+    "claim_id": "C0637",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-008D",
+    "unit_name": "8th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-26",
+    "place_id": "PL0441",
+    "location_name": "Friedrichsfeld, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "division ordered through the Wesel bridgehead to find room for the Ninth Army's armour",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R516;R543;R002",
+    "source_locator": "R543: p. 317"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7167,
+     50.15
+    ]
+   },
+   "properties": {
+    "claim_id": "C0638",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-26",
+    "place_id": "PL0442",
+    "location_name": "Sankt Goar, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "division crosses the Rhine near St. Goar in the early hours of 26 March",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R542;R551;R530;R001",
+    "source_locator": "R542: p. 274"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.15,
+     50.6833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0639",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL0443",
+    "location_name": "Bad Godesberg, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army headquarters at Bad Godesberg on the Rhine",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R482;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9167,
+     50.2667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0640",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL0444",
+    "location_name": "Dinant, Namur",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "army headquarters at Dinant; the army is to move forward to hold the Rhine facing the Ruhr",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R547;R544;R001",
+    "source_locator": "R544: p. 323"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.79,
+     47.51
+    ]
+   },
+   "properties": {
+    "claim_id": "C0641",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-066D",
+    "unit_name": "66th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL0386",
+    "location_name": "Brittany port pockets (Lorient to Saint-Nazaire), representative point",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "listed under the Fifteenth Army, which controlled the division while it contained the Brittany ports",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R525;R544;R001",
+    "source_locator": "R544: p. 323"
+   }
   }
  ]
 }

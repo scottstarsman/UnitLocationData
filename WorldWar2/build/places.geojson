@@ -7598,7 +7598,7 @@
     "precision_km": 50,
     "country": "FR",
     "region": "Brittany",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -8458,6 +8458,306 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4239,
+     48.9131
+    ]
+   },
+   "properties": {
+    "place_id": "PL0430",
+    "name": "Wimmenau, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0915,
+     49.1664
+    ]
+   },
+   "properties": {
+    "place_id": "PL0431",
+    "name": "Bliesransbach, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1667,
+     50.1469
+    ]
+   },
+   "properties": {
+    "place_id": "PL0432",
+    "name": "Moselle upstream of Cochem, Rheinland-Pfalz",
+    "alt_names": "Cochem; Moselle crossing area of the 89th Division",
+    "kind": "area",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.75,
+     49.3167
+    ]
+   },
+   "properties": {
+    "place_id": "PL0433",
+    "name": "Saarlouis, Saarland",
+    "alt_names": "Saarlautern",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4353,
+     49.4811
+    ]
+   },
+   "properties": {
+    "place_id": "PL0434",
+    "name": "Ludwigshafen, Rheinland-Pfalz",
+    "alt_names": "Ludwigshafen am Rhein",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3603,
+     49.8556
+    ]
+   },
+   "properties": {
+    "place_id": "PL0435",
+    "name": "Oppenheim, Rheinland-Pfalz",
+    "alt_names": "Oppenheim-Nierstein crossing",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6883,
+     49.0366
+    ]
+   },
+   "properties": {
+    "place_id": "PL0436",
+    "name": "Obersteinbach, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.548,
+     51.6913
+    ]
+   },
+   "properties": {
+    "place_id": "PL0437",
+    "name": "Diersfordt, North Rhine-Westphalia",
+    "alt_names": "Diersfordter Wald",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3667,
+     49.2167
+    ]
+   },
+   "properties": {
+    "place_id": "PL0438",
+    "name": "Germersheim, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9957,
+     49.0403
+    ]
+   },
+   "properties": {
+    "place_id": "PL0439",
+    "name": "Schweighofen, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6006,
+     51.5467
+    ]
+   },
+   "properties": {
+    "place_id": "PL0440",
+    "name": "Rheinberg, North Rhine-Westphalia",
+    "alt_names": "Rheinberg; Ninth Army Rhine assault area",
+    "kind": "area",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6515,
+     51.6213
+    ]
+   },
+   "properties": {
+    "place_id": "PL0441",
+    "name": "Friedrichsfeld, North Rhine-Westphalia",
+    "alt_names": "Voerde-Friedrichsfeld",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7167,
+     50.15
+    ]
+   },
+   "properties": {
+    "place_id": "PL0442",
+    "name": "Sankt Goar, Rheinland-Pfalz",
+    "alt_names": "St. Goar",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.15,
+     50.6833
+    ]
+   },
+   "properties": {
+    "place_id": "PL0443",
+    "name": "Bad Godesberg, North Rhine-Westphalia",
+    "alt_names": "Godesberg (Bonn)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9167,
+     50.2667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0444",
+    "name": "Dinant, Namur",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Namur",
     "claims_count": 1
    }
   }

@@ -138,9 +138,16 @@ def attach_command_relationships(rows):
     return rows
 
 
+def attach_places(rows):
+    """Add the values derived from data/places.csv and from other claim columns (location_name, location_temporal_offset_days, strength_status,
+    place_name, country, region, coord_reference_id, coord_source_note; see scripts/places.py) to every claim dict. None is a claim-file column."""
+    import places
+    return places.attach(rows)
+
+
 def load_all_claims():
     """Return (header, rows) with every claim as a dict, sorted by date then claim_id. `header` is the claim-file header; each row also has the
-    derived key command_relationships (see attach_command_relationships)."""
+    derived keys command_relationships (see attach_command_relationships) and the place and derived-value keys of attach_places."""
     schema = load_schema('claims')
     header = field_names(schema)
     rows = []
@@ -149,4 +156,5 @@ def load_all_claims():
         rows.extend(dicts)
     rows.sort(key=sort_key)
     attach_command_relationships(rows)
+    attach_places(rows)
     return header, rows

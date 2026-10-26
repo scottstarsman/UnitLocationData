@@ -4,7 +4,7 @@ Thank you for helping. This project is only useful if every row can be checked, 
 
 ## Rules
 
-1. **Every row needs a source.** The `source` column must hold at least one URL (separate several with ` | `, and end with the coordinate source note, for example `; coords: Wikipedia`). Say in `notes` what the source says. Cite a page or chapter when you can. Then list the same sources in `reference_ids` (see "How to cite a new source").
+1. **Every row needs a source.** The `source` column must hold at least one URL (separate several with ` | `; the coordinate source is not part of it: it belongs to the place, see "Places" below). Say in `notes` what the source says. Cite a page or chapter when you can. Then list the same sources in `reference_ids` (see "How to cite a new source").
 2. **Conflicting claims become separate rows.** If two sources disagree (date, place, commander, anything in the row), do not average or pick silently. Add one row per claim, give them the same `conflict_group_id` (next free `G###`), and set `claim_status`: one `preferred` and the others `alternate`, or all `disputed` if no source is better. Explain the disagreement in `notes` on each row.
 3. **Never invent.** If a value is not in a source, write `unknown` (for text fields such as `commander`; for a parent that is not verified leave `parent_unit_id` blank and record an `unknown` relationship entry) or leave the optional field blank. Do not guess numbers for `strength_json`. A gap is better than a plausible fabrication.
 4. **One row is one claim** about one unit on one date. Rows are event-based; do not add filler rows for quiet days.
@@ -17,8 +17,17 @@ Thank you for helping. This project is only useful if every row can be checked, 
 
 1. Open `data/claims/<nationality>/<unit_id>.csv`.
 2. Add a row with the next free `claim_id`, all columns filled as described in [schema/README.md](schema/README.md), and insert it in order (sorted by `date`, then `claim_id`).
-3. Run `python scripts/validate.py`, then `python scripts/build.py`.
-4. Commit both the data change and the regenerated `build/` files.
+3. Place: find the place in `data/places.csv` (search the name and the `alt_names`) and put its `place_id` in the row; put the claim-specific words ("vicinity", "division HQ", "point = Cheux") in `location_qualifier`, not in a new name. Use the place's `latitude` and `longitude` exactly. If the place is not in the table, add it (see "Add a place"). Never write a free-text place name in a claim.
+4. Run `python scripts/validate.py`, then `python scripts/build.py`.
+5. Commit both the data change and the regenerated `build/` files.
+
+## Add a place
+
+1. Append a row to `data/places.csv` with the next free `place_id` (PL####, sorted; ids are never reused). `name` is the canonical name, unique ignoring case ("Name, administrative area" for a settlement); other spellings and names go in `alt_names` separated by `; ` (an alias must not be another place's name).
+2. `kind`: `point` for a named settlement or site; `area` for a named area, sector, beach, zone or bridgehead; `line` for a front, axis or route. A sector or front represented by the centre of a town is its own place, not an alias of the town: places that merely share a geocoded point are separate rows.
+3. `latitude` and `longitude` are the point every claim at the place uses. Read them from the coordinate service and set `coord_reference_id` to it (R001 Wikipedia article coordinates, R002 OpenStreetMap Nominatim) with the article or query in `coord_source_note`. A point worked out by hand (the midpoint of two towns, a commune centroid) has a blank `coord_reference_id` and says how in `coord_source_note`. `precision_km` is the finest radius you would use at the place; `country` and `region` come from where the point lies (see the vocabulary `country`; add a code there for a new country).
+4. A claim whose own point differs from the place's (another geocoder read, an approximate point) keeps its point and gives the reason in `coord_override` (the source of its point and the distance); the validator requires the point to equal the place's exactly when `coord_override` is blank, and to be within 5 km when it is set. Farther than that is a different place.
+5. Run `python scripts/validate.py` and `python scripts/check_coordinates.py` (its `--duplicates` option lists places of kind point within 1 km of each other), then `python scripts/build.py`.
 
 ## Add a new unit
 
@@ -46,8 +55,8 @@ Use this for every new row, and for each row in a spot check (the reviewer shoul
 3. **Action.** Does `current_activity` say only what the source says (no inferred direction, aim or result)? Is it one action? If several were documented, did you split the row or say in `notes` what is not documented?
 4. **Opponent.** Is every unit in `engaged_with` placed in this fight by a source (and not in a different action the same day)?
 5. **Parent and relationships.** Is `parent_unit_id` the operational parent on this date? Is the standing parent listed as `assigned`, `unspecified_subordination` or `unknown` (not `organic` for a division, corps or army under a higher headquarters), and does every named higher headquarters have a `unit_id`? Is an `attached` entry dated by `effective_from` when a source gives the day, and is it in force on the row's date? Is an independent brigade or battle group not recorded as an organic part of the formation it fought under?
-5a. **Location and date.** Is the coordinate documented for the row's date? If it comes from a CP list or source dated otherwise, are `location_date`, `location_temporal_offset_days` and `location_basis` set (and the precision and confidence wide enough)? Is a headquarters coordinate really the headquarters (not the sector or objective), a landing point the landing area, and a corps or army sector not an exact front-line point? Do the rows of a conflict group describe the same event, and if not does each carry an `Event definition:` sentence in `notes`? Are the sources for event date, relationship, location and coordinates kept apart in `notes` (`Event date:`, `Relationship:`, `Location:`, `Coordinates:`)?
-6. **Strength.** Does each figure cover what `scope` says (whole unit, sub-force, sector)? Is `basis` right (reported count, establishment, estimate)? Are conflicting figures from other sources in `note`? Is `strength_status` justified for the whole unit?
+5a. **Location and date.** Is the coordinate documented for the row's date? If it comes from a CP list or source dated otherwise, are `location_date` and `location_basis` set (the offset in days is derived) (and the precision and confidence wide enough)? Is a headquarters coordinate really the headquarters (not the sector or objective), a landing point the landing area, and a corps or army sector not an exact front-line point? Do the rows of a conflict group describe the same event, and if not does each carry an `Event definition:` sentence in `notes`? Are the sources for event date, relationship, location and coordinates kept apart in `notes` (`Event date:`, `Relationship:`, `Location:`, `Coordinates:`)?
+6. **Strength.** Does each figure cover what `scope` says (whole unit, sub-force, sector)? Is `basis` right (reported count, establishment, estimate)? Are conflicting figures from other sources in `note`? Is a `status` in `strength_json` justified for the whole unit (or absent)?
 7. **Source, confidence and conflicts.** Does every cited source support this row's own claim? Does `confidence` follow the rubric after any change? If a source disagrees on date or place, is it a conflict group, and are the group's rows consistent with each other (including their coordinates)?
 8. **Record the result.** Note what was checked, what changed (before and after) and what was left alone and why, in the pull request or a review note. Change only what a source supports.
 
@@ -68,11 +77,11 @@ python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim t
 
 Each claim lists the references behind it in `reference_ids`; the `source` text stays as the human-readable citation. For every source a row relies on:
 
-1. Put its URL in the claim's `source` (` | ` between URLs, the coordinate note last) and say in `notes` what it supports.
+1. Put its URL in the claim's `source` (` | ` between URLs) and say in `notes` what it supports.
 2. Find its row in `data/references.csv` (search the URL). If it has none, add one: `python scripts/build_references.py --add URL` appends a skeleton row to `data/references_meta.csv` with the next `R###` id and a `source_family`. Edit the skeleton: `short_title`, `full_citation`, `source_type`, `publisher`, `license_or_status`, `reliability_note`, `used_for`. Keep `source_family` equal to the family of an existing reference when the new source republishes it or is Wikipedia (see `schema/vocabularies.json`); otherwise leave the host name.
 3. Add the id to the claim's `reference_ids` (`R398;R407`). If the source gives a page, chapter or section, add it to `source_locator` (`R398: p. 285, 289; R407: p. 36`). A page in the URL fragment (`#page285`) is not enough on its own; write the locator.
-4. If the source supports one part of the claim only (the date, the place, the command relationship, a strength figure), add a row to `data/claim_reference_roles.csv` (`claim_id,reference_id,role,basis`; role `event`, `date`, `location`, `command_relationship` or `strength`; `basis` says why). Leave it out when the source supports the claim as a whole.
-5. A claim at `confidence` 0.9 needs references from at least two source families (Wikipedia, in any language, counts as one; so does everything republished from a CMH publication). A coordinate service such as Nominatim does not make a claim independently sourced; do not raise confidence on that basis.
+4. If the source supports one part of the claim only (the date, the place, the command relationship, a strength figure), add a row to `data/claim_reference_roles.csv` (`claim_id,reference_id,role,basis`; role `event`, `date`, `location`, `command_relationship` or `strength`; `basis` says why). Leave it out when the source supports the claim as a whole. Do not add a row for a coordinate service (R001 Wikipedia, R002 Nominatim): its `location` role is derived.
+5. A claim at `confidence` 0.9 needs references from at least two source families (Wikipedia, in any language, counts as one; so does everything republished from a CMH publication). A coordinate service such as Nominatim does not make a claim independently sourced; the validator ignores `gazetteer_geocoder` references when it counts families.
 6. Run `python scripts/validate.py` (errors: an unknown id, a claim without a reference, a URL in `source` whose reference is not in `reference_ids`), then `python scripts/build.py`.
 
 ## Pull request checklist

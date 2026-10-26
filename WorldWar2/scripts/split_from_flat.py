@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Show how the per-unit master files were made from the flat v5 CSV (reproducibility).
 
+NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+
 NOTE: Historical: this script produced the `command_relationships` column; since `command-relations-table` the claim files no longer have it (see scripts/migrate_command_relations.py).
 
 Input : archive/v5_flat/ww2_west_1944-06_v5.csv   (flat claims, 212 rows, 30 columns)

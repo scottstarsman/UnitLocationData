@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """OBSOLETE (superseded by scripts/migrate_operations.py, which replaced these columns by operation_id). One-off migration (Batch 3 review): add the `campaign` column to every claim file and stop using the umbrella operation_name labels.
 
+NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+
 1. Inserts `campaign` before `operation_name` in every file under data/claims/ (idempotent: skipped when the column exists).
 2. Backfills `campaign` from the CMH campaign streamer dates (schema/vocabularies.json, vocabulary `campaign`):
      6 Jun-24 Jul 1944 Normandy; 25 Jul-14 Sep Northern France (rows of the Dragoon operation dated 15 Aug-14 Sep: Southern France);

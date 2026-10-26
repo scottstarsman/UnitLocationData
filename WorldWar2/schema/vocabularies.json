@@ -124,7 +124,7 @@
     }
   },
   "strength_status": {
-    "description": "Qualitative strength. Default unknown; set only when a source states strength or losses.",
+    "description": "Qualitative strength as it appears in build/all_claims.csv (a derived value, not a claim-file column): destroyed when the claim's destroyed flag is true, else the `status` key of strength_json, else unknown. Default unknown; a status is set only when a source states strength or losses.",
     "values": {
       "full": "A source describes the unit as at full strength.",
       "reduced": "Source states significant losses or reduced combat power.",
@@ -243,7 +243,7 @@
     "values": {
       "event": "The event definition: what happened (arrival, assignment, engagement, relief).",
       "date": "The date of the claim's event.",
-      "location": "The place or the coordinates (a place source, or the coordinate service/gazetteer).",
+      "location": "The place or the coordinates (a place source). The role of a gazetteer_geocoder reference (the coordinate service) is derived, not stored.",
       "command_relationship": "The unit's parent or attached/assigned relationship in command_relationships.",
       "strength": "A strength_json figure.",
       "general": "Supports the claim as a whole or the role is not established from the claim's own text (the default; no row is stored)."
@@ -382,6 +382,33 @@
     "values": {
       "transfer_dates_differ": "The two relations are consecutive (the unit moved from one higher unit of an echelon to another) but the sources date the change differently, or one end is only inferred, so the intervals overlap on some days. Nothing is resolved.",
       "concurrent_by_source": "A source states that the unit was under both higher units at the same time."
+    }
+  },
+  "place_kind": {
+    "description": "What a place in data/places.csv is. One point stands for it in every case.",
+    "values": {
+      "point": "A named settlement or site: a town, village, hamlet, château, hill or station.",
+      "area": "A named area, sector, beach, zone, bridgehead or other stretch of ground, represented by one point (usually the centre of the town or place it is geocoded to).",
+      "line": "A front, defensive line, axis of advance or route, represented by one point on it."
+    }
+  },
+  "country": {
+    "description": "ISO 3166-1 alpha-2 country codes used by places.country (the country the point lies in today). Add a code with its name when a place in a new country is added.",
+    "values": {
+      "FR": "France",
+      "BE": "Belgium",
+      "LU": "Luxembourg",
+      "NL": "Netherlands",
+      "DE": "Germany",
+      "GB": "United Kingdom"
+    }
+  },
+  "strength_json_status": {
+    "description": "The `status` key of strength_json: the qualitative strength a source states for the unit on that date. `destroyed` is not allowed here: it is derived from the claim's destroyed flag. No status means strength_status unknown.",
+    "values": {
+      "full": "A source describes the unit as at full strength.",
+      "reduced": "Source states significant losses or reduced combat power.",
+      "heavily_depleted": "Source states the unit was a small fraction of its strength."
     }
   }
 }

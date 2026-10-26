@@ -36,6 +36,11 @@ have different event types and no 'Event definition:' in notes, a current_activi
 Errors also cover effective_time /
 effective_to_time that are not HH:MM, location_date / location_temporal_offset_days / location_basis inconsistencies and a landing row whose coordinate is a
 town centroid or a command post of another date.
+Places (data/places.csv, schema/places.schema.json; scripts/places.py): header and field values, unique ids and names (ignoring case), sorted by place_id, no alias equal to another
+place's name, coord_reference_id a gazetteer_geocoder reference that a claim at the place lists, every claim's place_id resolves, a claim's latitude/longitude equal the place's
+exactly when coord_override is blank (and differ, within 5 km, when it is set), the coordinate note no longer ends `source`. A place with no claim is a warning.
+Derived values are not stored (location_name, location_temporal_offset_days, strength_status, the roles of coordinate-service references; scripts/places.py,
+scripts/build_references.py): a role row for a gazetteer_geocoder reference is an error; strength_json may carry `status` (full, reduced, heavily_depleted), which build/all_claims.csv turns into strength_status.
 Coordinate checks live in scripts/check_coordinates.py.
 
 Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found; warnings do not count)
@@ -49,6 +54,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import command_relations as crel  # noqa: E402
+import places as placesmod  # noqa: E402
 
 errors = []
 warnings = []
@@ -168,7 +174,7 @@ def check_strength_json(where, s, vocabs):
     if not isinstance(d, dict):
         err(where, 'strength_json must be a JSON object')
         return
-    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'source', 'note'}
+    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'status', 'source', 'note'}
     for k in d:
         if k not in allowed:
             err(where, 'strength_json: unknown key %r' % k)
@@ -196,8 +202,10 @@ def check_strength_json(where, s, vocabs):
             err(where, 'strength_json: vehicle_count_type required with vehicles and must be in the vocabulary')
     elif 'vehicle_count_type' in d:
         err(where, 'strength_json: vehicle_count_type without vehicles')
-    if 'personnel' not in d and 'vehicles' not in d:
-        err(where, 'strength_json: needs personnel and/or vehicles')
+    if 'status' in d and d['status'] not in vocabs['strength_json_status']['values']:
+        err(where, 'strength_json: status %r not in vocabulary strength_json_status %s (destroyed is derived from the destroyed flag)' % (d['status'], sorted(vocabs['strength_json_status']['values'])))
+    if 'personnel' not in d and 'vehicles' not in d and 'status' not in d:
+        err(where, 'strength_json: needs personnel, vehicles and/or status')
     if 'scope' in d:
         if d['scope'] not in vocabs['strength_json_scope']['values']:
             err(where, 'strength_json: scope %r not in vocabulary strength_json_scope' % (d['scope'],))
@@ -235,25 +243,19 @@ def entries_of(s):
 
 
 def check_location_date(where, row):
-    """location_date, location_basis and location_temporal_offset_days: temporal provenance of the coordinate."""
-    ld, lb, off = row.get('location_date', ''), row.get('location_basis', ''), row.get('location_temporal_offset_days', '')
+    """location_date and location_basis: temporal provenance of the coordinate (the offset in days is derived: scripts/places.py)."""
+    ld, lb = row.get('location_date', ''), row.get('location_basis', '')
     if ld:
         try:
             delta = (datetime.date.fromisoformat(ld) - datetime.date.fromisoformat(row['date'])).days
         except ValueError:
             return
-        if off == '':
-            err(where, 'location_date is set but location_temporal_offset_days is blank')
-        elif re.fullmatch(r'-?\d+', off) and int(off) != delta:
-            err(where, 'location_temporal_offset_days %s != location_date - date (%d days)' % (off, delta))
         if delta != 0 and lb in ('', 'documented_on_date'):
             warn(where, 'location_date %s differs from date by %d days but location_basis is %r: use nearest_later_command_post, nearest_earlier_command_post or another basis' % (ld, delta, lb))
         if delta > 0 and lb == 'nearest_earlier_command_post' or delta < 0 and lb == 'nearest_later_command_post':
             err(where, 'location_basis %s contradicts the sign of the offset (%d days)' % (lb, delta))
-    elif off != '':
-        err(where, 'location_temporal_offset_days is set but location_date is blank')
     if lb in ('nearest_later_command_post', 'nearest_earlier_command_post') and not ld:
-        err(where, 'location_basis %s requires location_date and the offset' % lb)
+        err(where, 'location_basis %s requires location_date' % lb)
     if row['event_type'] == 'landing' and lb in ('town_centroid', 'nearest_later_command_post', 'nearest_earlier_command_post'):
         err(where, 'a landing row cannot take its coordinate from %s (an unrelated headquarters or town centroid); use the landing area (operational_area / documented_on_date)' % lb)
     if row['location_represents'] == 'headquarters' and lb == 'town_centroid' and row['echelon'] in ('corps', 'army', 'army_group') and row['precision_km'] not in ('', '5', '10', '25', '50'):
@@ -466,12 +468,12 @@ def check_claim_references(claims, meta):
         for rid in sorted({x[0] for x in cited.get(w, [])} - set(ids)):
             err(w, 'the citation (source / coordinate note / strength_json) resolves to %s but reference_ids does not list it' % rid)
         for rid in ids:
-            if rid in by_id and rid not in {x[0] for x in cited.get(w, [])}:
+            if rid in by_id and by_id[rid]['source_type'] != 'gazetteer_geocoder' and rid not in {x[0] for x in cited.get(w, [])}:
                 warn(w, 'reference_ids lists %s but no URL, coordinate note or strength source in the claim cites it: add its URL to `source`' % rid)
         if c.get('confidence') and float(c['confidence']) >= 0.9:
-            fam = {by_id[r]['source_family'] for r in ids if r in by_id}
+            fam = {by_id[r]['source_family'] for r in ids if r in by_id and by_id[r]['source_type'] != 'gazetteer_geocoder'}   # a coordinate service is not evidence
             if len(fam) < 2:
-                warn(w, 'confidence %s needs references from at least two source families (Wikipedia counts as one); has %s' % (c['confidence'], sorted(fam)))
+                warn(w, 'confidence %s needs references from at least two source families (Wikipedia counts as one; a gazetteer_geocoder reference is not evidence and does not count); has %s' % (c['confidence'], sorted(fam)))
     where = 'data/claim_reference_roles.csv'
     if not os.path.isfile(br.ROLES_CSV):
         err(where, 'missing')
@@ -490,6 +492,8 @@ def check_claim_references(claims, meta):
             err(w, '%s is not in the reference_ids of %s' % (r['reference_id'], r['claim_id']))
         if r['role'] not in br.ROLES or r['role'] == 'general':
             err(w, 'role %r must be one of %s (general is the default and is not stored)' % (r['role'], br.ROLES[:-1]))
+        if r['reference_id'] in by_id and by_id[r['reference_id']]['source_type'] == 'gazetteer_geocoder':
+            err(w, '%s is a gazetteer_geocoder reference: its role location is derived (build_references.py), not stored' % r['reference_id'])
         if (r['claim_id'], r['reference_id'], r['role']) in seen:
             err(w, 'duplicate row')
         seen.add((r['claim_id'], r['reference_id'], r['role']))
@@ -508,6 +512,84 @@ def check_operations(claims, vocabs):
         err(wh, m)
     for wh, m in ws:
         warn(wh, m)
+
+
+def check_places(claims, vocabs):
+    """data/places.csv and the claim -> place links: header and field values from schema/places.schema.json, ids and names unique, aliases unambiguous,
+    the coordinate service, and that each claim's point equals its place's exactly when coord_override is blank. Returns the place rows (with _where)."""
+    import build_references as br
+    where = 'data/places.csv'
+    sch = common.load_schema('places')
+    fields = sch['fields']
+    header = [f['name'] for f in fields]
+    if not os.path.isfile(placesmod.PLACES_CSV):
+        err(where, 'missing (see scripts/places.py)')
+        return []
+    h, rows = common.read_rows(placesmod.PLACES_CSV)
+    if h != header:
+        err(where, 'header %s != schema/places.schema.json %s' % (h, header))
+        return []
+    meta = {m['reference_id']: m for m in br.read_meta()[1]}
+    out, names, ids = [], {}, []
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        if len(r) != len(h):
+            err(w, 'expected %d fields, found %d' % (len(h), len(r)))
+            continue
+        d = dict(zip(h, r))
+        d['_where'] = w
+        check_row(w, d, fields, vocabs)
+        out.append(d)
+        ids.append(d['place_id'])
+        k = d['name'].casefold()
+        if k in names:
+            err(w, 'name %r is already the name of %s (place names are unique, ignoring case)' % (d['name'], names[k]))
+        names[k] = d['place_id']
+        if d['coord_reference_id']:
+            m = meta.get(d['coord_reference_id'])
+            if m is None:
+                err(w, 'coord_reference_id %s is not in data/references_meta.csv' % d['coord_reference_id'])
+            elif m['source_type'] != 'gazetteer_geocoder':
+                err(w, 'coord_reference_id %s is not a gazetteer_geocoder reference (the coordinate service); a hand-worked point leaves it blank and explains itself in coord_source_note' % d['coord_reference_id'])
+    if ids != sorted(ids):
+        err(where, 'rows must be sorted by place_id')
+    if len(ids) != len(set(ids)):
+        err(where, 'duplicate place_id')
+    by_id = {d['place_id']: d for d in out}
+    for d in out:
+        seen = set()
+        for a in [x.strip() for x in d['alt_names'].split(';') if x.strip()]:
+            if a.casefold() == d['name'].casefold():
+                err(d['_where'], 'alt name %r repeats the name' % a)
+            if a.casefold() in seen:
+                err(d['_where'], 'alt name %r is listed twice' % a)
+            seen.add(a.casefold())
+            if a.casefold() in names and names[a.casefold()] != d['place_id']:
+                err(d['_where'], 'alt name %r is the name of %s (an alias must not name another place)' % (a, names[a.casefold()]))
+    used = {}
+    for c in claims:
+        p = by_id.get(c['place_id'])
+        if p is None:
+            continue   # unknown id: reported by the foreign-key check
+        used.setdefault(p['place_id'], []).append(c)
+        same = (float(c['latitude']), float(c['longitude'])) == (float(p['latitude']), float(p['longitude']))
+        if same and c['coord_override']:
+            err(c['_where'], 'coord_override is set but the claim point equals the place point of %s: leave it blank' % p['place_id'])
+        if not same:
+            dist = placesmod.km(float(c['latitude']), float(c['longitude']), float(p['latitude']), float(p['longitude']))
+            if not c['coord_override']:
+                err(c['_where'], 'latitude/longitude differ from place %s %r by %.0f m and coord_override is blank: use the place point or say why in coord_override' % (p['place_id'], p['name'], dist * 1000))
+            elif dist > 5:
+                err(c['_where'], 'the claim point is %.1f km from place %s %r: farther than 5 km is a different place' % (dist, p['place_id'], p['name']))
+        if re.search(r' ; coords?:', c['source']):
+            err(c['_where'], "source ends with a coordinate note ('; coords: ...'): the note is the place's coord_source_note (or the claim's coord_override)")
+    for d in out:
+        cs = used.get(d['place_id'], [])
+        if not cs:
+            warn(d['_where'], 'place %s %r has no claim: remove it or add the claim' % (d['place_id'], d['name']))
+        elif d['coord_reference_id'] and not any(d['coord_reference_id'] in br.parse_ids(c['reference_ids']) for c in cs):
+            err(d['_where'], 'coord_reference_id %s is not in the reference_ids of any claim at the place' % d['coord_reference_id'])
+    return out
 
 
 def check_nationalities():
@@ -550,7 +632,7 @@ def check_foreign_keys(tables):
     """Enforce every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json, and the
     declared primary keys / unique columns of the side tables. `tables` maps resource name -> list of row dicts. A blank value is
     allowed (nullable reference); a column with a `separator` holds a list of keys; `alsoAllowed` lists extra accepted values."""
-    decl = [(n, fk) for n in ('claims', 'units') for fk in common.load_schema(n).get('foreignKeys', [])]
+    decl = [(n, fk) for n in ('claims', 'units', 'places') for fk in common.load_schema(n).get('foreignKeys', [])]
     rel = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
     for name, t in rel.items():
         decl.extend((name, fk) for fk in t.get('foreignKeys', []))
@@ -924,13 +1006,14 @@ def main():
     check_command_relation_tables(units, vocabs, all_rows)
     check_operations(all_rows, vocabs)
     check_references(all_rows)
+    place_rows = check_places(all_rows, vocabs)
 
     # ---- foreign keys declared in the schemas ----
     import build_references as br
     import operations as opsmod
     ops = opsmod.load()
     exc_path = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
-    tables = {'claims': all_rows, 'units': list(units.values()), 'nationalities': list(nats.values()),
+    tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()),
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],

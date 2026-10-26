@@ -1,0 +1,112 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "places",
+  "title": "Places referred to by claims",
+  "description": "One row per place. A claim points at a place with place_id and keeps its own latitude/longitude, which must equal the place's unless the claim has a coord_override reason. Rows are sorted by place_id; ids are never reused or renumbered. Several names for one place are alt_names; different places that merely share a geocoded point (an area, sector or front represented by the centre of a town) are separate rows.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "place_id",
+  "foreignKeys": [
+    {
+      "fields": "coord_reference_id",
+      "reference": {
+        "resource": "references_meta",
+        "fields": "reference_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "place_id",
+      "type": "string",
+      "description": "Stable key PL0001 onward. Never reused.",
+      "constraints": {
+        "required": true,
+        "pattern": "^PL\\d{4,}$"
+      }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Canonical name, unique (ignoring case) across the table. Settlements are written 'Name, administrative area' as the sources give them.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "alt_names",
+      "type": "string",
+      "description": "Other spellings and names under which claims named the place, separated by '; '. No alias may equal another place's name.",
+      "constraints": {}
+    },
+    {
+      "name": "kind",
+      "type": "string",
+      "description": "point (a named settlement or site), area (a named area, sector, beach, zone or bridgehead, represented by one point) or line (a front, axis or route, represented by one point on it).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "place_kind"
+    },
+    {
+      "name": "latitude",
+      "type": "number",
+      "description": "Decimal degrees WGS84 of the place's point.",
+      "constraints": {
+        "required": true,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "longitude",
+      "type": "number",
+      "description": "Decimal degrees WGS84 of the place's point.",
+      "constraints": {
+        "required": true,
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "precision_km",
+      "type": "number",
+      "description": "The finest radius (banded, vocabulary precision_km) with which any claim has used this point when the place was created; a guide for new claims, not a measured error. A claim keeps its own precision_km.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "precision_km"
+    },
+    {
+      "name": "country",
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 code of the country the point lies in today (vocabulary country). Assigned once from the nearest GeoNames populated place; check border places by hand.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "country"
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "description": "First-level administrative area of the point as GeoNames names it (for example Lower Normandy, Wallonia, Limburg).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "coord_reference_id",
+      "type": "string",
+      "description": "The coordinate service that gave the point: a reference of source_type gazetteer_geocoder in data/references_meta.csv (R001 Wikipedia article coordinates, R002 OpenStreetMap Nominatim). Blank for a point worked out by hand (then coord_source_note says how)."
+    },
+    {
+      "name": "coord_source_note",
+      "type": "string",
+      "description": "How the point was obtained, as the claims recorded it: the Wikipedia article ('Wikipedia (en): Brest, France') or the Nominatim query, or for a hand-worked point (blank reference id) the explanation (midpoint of two towns, commune centroid).",
+      "constraints": {
+        "required": true
+      }
+    }
+  ]
+}

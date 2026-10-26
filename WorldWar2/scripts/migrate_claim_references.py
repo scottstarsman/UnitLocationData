@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """One-off migration: store the claim -> reference links on the claims.
 
+NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+
 NOTE: Historical, one-off: it read the `command_relationships` cell of the claim files; since `command-relations-table` that text is rebuilt from the relation tables by `common.load_all_claims()`, the claim files no longer have the column.
 
 Before, build/claim_references.csv was DERIVED by matching the URLs of each claim's `source` column (and the coordinate note and the

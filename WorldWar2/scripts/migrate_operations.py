@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """One-off migration (operations table): replace the claim columns campaign, operation_name and sub_operation_name by `operation_id`.
 
+NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+
 Kept for provenance; it does nothing once the claim files carry operation_id. Run once from the repository root:
     python scripts/migrate_operations.py [--report FILE]
 

@@ -435,7 +435,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.5
 - **Activity:** division command post at Courtenay
 - **Place:** Courtenay, Loiret (`PL0105`, Centre, FR); point 48.0394, 3.0619; precision 10 km; point represents: headquarters; qualifier: vicinity; coordinate source: R002: OpenStreetMap Nominatim (Courtenay, Loiret, France)
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-08-13; assigned US-AG-012G from 1944-08-13
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-08-13; assigned US-AG-012G from 1944-08-01
 - **Notes:** CMH ETO-OB lists the command post at vicinity of Courtenay, Loiret on this date. CMH gives the CP only as a vicinity of the town.
 - **Sources cited** (the claim's own locator: none):
 
@@ -746,13 +746,13 @@ A relation is one dated interval of one relationship between a subject unit and 
 ### R07. CR0096: 82nd Airborne Division -> First Army (attached)
 
 - **Subject / higher unit:** `US-ABN-082D` / `US-ARMY-001A`
-- **Interval:** from 1944-12-18 (assignment_table) to 1945-02-13 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13
+- **Interval:** from 1944-12-17 (assignment_table) to 1945-02-13 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
+- **Note:** CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13 Start extrapolated from the CMH table (V-013, decided by Scott on 26 October 2026): valid_from was 18 December 1944 (the table row in force at the first claim that lists the relation) and is now 17 December 1944, the date of the row of the CMH ETO-OB assignment table (R365, "Assignment and Attachment to Higher Units", row 17 Dec 44, Army Attached c [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0551 (US-ABN-082D, 1944-12-18) | asserts_start_and_end | 1944-12-18 | 1945-02-13 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13 | R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 342]; R465 https://www.ww2byday.com/48/mapunit/ [R386: p. 342] |
+  | C0551 (US-ABN-082D, 1944-12-18) | asserts_start_and_end | 1944-12-17 | 1945-02-13 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13 | R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 342]; R465 https://www.ww2byday.com/48/mapunit/ [R386: p. 342] |
 
 ### R08. CR0114: 6th Army Group -> Supreme Headquarters Allied Expeditionary Force (SHAEF) (operational_control)
 

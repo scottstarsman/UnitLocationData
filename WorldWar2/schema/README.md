@@ -71,6 +71,18 @@ Primary key: `claim_id` (unique across the whole repository). Rows in each file 
 
 Validator checks: header, sorted, both ids are claims, the pair really shares `unit_id`, `date` and `event_type` and is not already in one conflict group (an exception that is not needed is an error: remove it), the reason is not blank. A repeated key that is neither in one conflict group nor listed is an error that names both claims. The table is empty today: when the rule was added no claim shared a key (566 claims, 566 distinct keys); the 14 conflict groups differ in date or event type.
 
+### data/retired_claims.csv (hand-maintained)
+
+Claim ids are never reused. A claim that has to leave the data (it was entered by mistake, or it duplicated another claim; a claim that is merely wrong is corrected or contradicted by a conflicting claim, see CONTRIBUTING rule 2 and 6) has its row removed from the claim file and one row added here, so the id stays accounted for. The table is empty today: no id is missing from C0001 to C0566.
+
+| column | description |
+|---|---|
+| `claim_id` | The retired id (primary key). Never a claim again. Rows sorted by `claim_id`. |
+| `replaced_by_claim_id` | The claim that carries on the retired one (foreign key to claims.`claim_id`), or blank when none does. |
+| `reason` | Why the claim was removed, and by whom or in which change. |
+
+Validator checks (`scripts/validate.py`): header, sorted, no repeated id, the id is not a claim, the replacement is a claim, the reason is not blank; a gap in the numbering that is not retired is printed as a NOTE (a gap is allowed when the id was never used). `scripts/check_claim_ids.py` compares with an earlier revision (default `origin/main`) and fails when an id of that revision is gone without a row here, belongs to another unit now, or when a retired id was forgotten or reused; it needs git history, so it is run by hand before a pull request.
+
 ## places columns (`data/places.csv`)
 
 One row per place; claims point at it with `place_id`. Primary key `place_id`; rows sorted by `place_id`; `name` unique ignoring case; no alias equals another place's name or its own; foreign key `coord_reference_id` -> references_meta.`reference_id` (a `gazetteer_geocoder` reference, or blank for a hand-worked point). Machine-readable: [`places.schema.json`](places.schema.json). `build/places.csv` adds `claim_count` and `build/places.geojson` maps the places.
@@ -179,6 +191,7 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | operation_exceptions | `claim_id` / `operation_id` | claims.`claim_id` / operations.`operation_id` |
 | coordinate_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
 | claim_key_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
+| retired_claims | `replaced_by_claim_id` | claims.`claim_id` |
 | claims | `place_id` | places.`place_id` |
 | places | `coord_reference_id` (blank for a hand-worked point) | references_meta.`reference_id` |
 | place_merges | `merged_into_place_id` | places.`place_id` |

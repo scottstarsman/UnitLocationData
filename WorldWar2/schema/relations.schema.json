@@ -141,6 +141,19 @@
         }
       ]
     },
+    "retired_claims": {
+      "path": "data/retired_claims.csv",
+      "primaryKey": "claim_id",
+      "foreignKeys": [
+        {
+          "fields": "replaced_by_claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        }
+      ]
+    },
     "place_merges": {
       "path": "data/place_merges.csv",
       "primaryKey": "retired_place_id",

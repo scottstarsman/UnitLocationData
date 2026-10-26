@@ -21,6 +21,8 @@ written canonically (entries joined by "; ").
 Command relations: a link of role listed_by_higher_unit belongs to the HIGHER unit's claim, which lists the subject in composing_units, keeps the wording in stated_note and states the start if it
 lists the relation before it starts (see schema/README.md, "Command relations"). docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
 every row names an existing claim of its unit, a higher unit of the table, a vocabulary relationship and an entry that is still in the claim's composing_text.
+Claim ids: unique, C plus four digits or more; data/retired_claims.csv records removed claims (a retired id is never a claim again); unrecorded gaps in the numbering are
+listed as a NOTE. Reuse across revisions: scripts/check_claim_ids.py (needs git history).
 Claim key: unit_id + date + event_type identify one claim (schema/claims.schema.json `uniqueTogether`); a repeat is allowed only inside one conflict group or when
 data/claim_key_exceptions.csv lists the pair with a reason (an exception that is not needed is an error).
 Places: names and aliases identify one place each (no alias is another place's name or alias); data/place_merges.csv lists the ids retired by merging two places (the id is not a
@@ -553,6 +555,56 @@ def check_place_merges(places_by_id):
     for i, r in enumerate(rows, start=2):
         if len(r) == len(h) and r[1] not in places_by_id:
             err('%s line %d' % (where, i), 'merged_into_place_id %s is not a row of data/places.csv (a survivor is a live place, not a retired id)' % r[1])
+    return out
+
+
+RETIRED_CLAIMS_CSV = os.path.join(common.ROOT, 'data', 'retired_claims.csv')
+RETIRED_CLAIMS_HEADER = ['claim_id', 'replaced_by_claim_id', 'reason']
+
+
+def check_claim_ids(claims):
+    """Claim ids (CONTRIBUTING.md, "Claim ids"): `claim_id` is C plus at least four digits and unique (duplicates are reported where the files are read); a claim
+    that is removed is recorded in data/retired_claims.csv (claim_id, replaced_by_claim_id, reason) and its id is never a claim again; gaps in the numbering are
+    allowed (an id that was never used is simply skipped) and are listed as a NOTE when they are not recorded. Whether an id of an earlier revision was dropped or
+    reused needs git history: scripts/check_claim_ids.py. Returns the retired rows (dicts)."""
+    where = 'data/retired_claims.csv'
+    live = {c['claim_id'] for c in claims}
+    out = []
+    if not os.path.isfile(RETIRED_CLAIMS_CSV):
+        err(where, 'missing (header %s)' % ','.join(RETIRED_CLAIMS_HEADER))
+        return out
+    h, rows = common.read_rows(RETIRED_CLAIMS_CSV)
+    if h != RETIRED_CLAIMS_HEADER:
+        err(where, 'header %s != %s' % (h, RETIRED_CLAIMS_HEADER))
+        return out
+    seen = set()
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        if len(r) != len(h):
+            err(w, 'expected %d fields, found %d' % (len(h), len(r)))
+            continue
+        d = dict(zip(h, r))
+        out.append(d)
+        if not re.fullmatch(r'C\d{4,}', d['claim_id']):
+            err(w, 'claim_id %r is not a claim id (C0001 onward)' % d['claim_id'])
+        if d['claim_id'] in seen:
+            err(w, 'claim_id %s is retired twice' % d['claim_id'])
+        seen.add(d['claim_id'])
+        if d['claim_id'] in live:
+            err(w, 'claim_id %s is retired but is also a claim: a retired id is never reused' % d['claim_id'])
+        if d['replaced_by_claim_id'] and d['replaced_by_claim_id'] not in live:
+            err(w, 'replaced_by_claim_id %s is not a claim' % d['replaced_by_claim_id'])
+        if d['replaced_by_claim_id'] == d['claim_id']:
+            err(w, '%s cannot be replaced by itself' % d['claim_id'])
+        if not d['reason'].strip():
+            err(w, 'reason is blank: say why the claim was removed (a wrong claim is corrected or contradicted, not deleted; see CONTRIBUTING.md)')
+    if [d['claim_id'] for d in out] != sorted(d['claim_id'] for d in out):
+        err(where, 'rows must be sorted by claim_id')
+    nums = [int(x[1:]) for x in live | seen if re.fullmatch(r'C\d{4,}', x)]
+    gaps = sorted(set(range(1, (max(nums) if nums else 0) + 1)) - set(nums))
+    if gaps:
+        print('NOTE: %d claim id(s) below the highest are neither a claim nor retired (a gap is allowed if the id was never used; a deleted claim must be in '
+              'data/retired_claims.csv): %s\n' % (len(gaps), ', '.join('C%04d' % g for g in gaps[:20]) + (' ...' if len(gaps) > 20 else '')))
     return out
 
 
@@ -1191,6 +1243,7 @@ def main():
     check_deferred_relations(units, vocabs, all_rows)
     check_operations(all_rows, vocabs)
     check_references(all_rows)
+    check_claim_ids(all_rows)
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
 
@@ -1203,6 +1256,7 @@ def main():
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'place_merges': placesmod.load_merges(),
+              'retired_claims': common.read_dicts(RETIRED_CLAIMS_CSV)[1] if os.path.isfile(RETIRED_CLAIMS_CSV) else [],
               'claim_key_exceptions': common.read_dicts(CLAIM_KEY_EXCEPTIONS_CSV)[1] if os.path.isfile(CLAIM_KEY_EXCEPTIONS_CSV) else [],
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
               'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],

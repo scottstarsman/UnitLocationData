@@ -148,7 +148,7 @@ def scenario_1_first_army():
     expect(s + ': 17 Jan 1945: the end hour is undocumented, so possible', intervals(FIRST_ARMY, '1945-01-17')[(ARMY_GROUP_21, 'operational_control')][0], 'possible')
     a = intervals(FIRST_ARMY, '1945-01-18')
     expect(s + ': 18 Jan 1945: no relation to 21st Army Group', (ARMY_GROUP_21, 'operational_control') in a, False)
-    expect(s + ': 18 Jan 1945: chain falls back to 12th Army Group (possible: last listed 17 Jan 1945, the day before)', chain(FIRST_ARMY, '1945-01-18')[0], ('US 12th Army Group', 'assigned', 'possible'))
+    expect(s + ': 18 Jan 1945: chain falls back to 12th Army Group (certain: listed on 17 Jan 1945 and again on 11 Mar 1945)', chain(FIRST_ARMY, '1945-01-18')[0], ('US 12th Army Group', 'assigned', 'certain'))
 
 
 def scenario_2_viii_corps():

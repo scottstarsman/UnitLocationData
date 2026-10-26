@@ -25010,6 +25010,539 @@
     "reference_ids": "R516;R538;R001",
     "source_locator": "R538: p. 172"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6414,
+     49.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C0611",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-010D",
+    "unit_name": "10th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-01",
+    "place_id": "PL0417",
+    "location_name": "Trier, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Task Force Richardson enters Trier before midnight and surprises the Germans",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R536;R341;R001",
+    "source_locator": "R536: p. 133-134"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6207,
+     51.2691
+    ]
+   },
+   "properties": {
+    "claim_id": "C0612",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-095D",
+    "unit_name": "95th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-03",
+    "place_id": "PL0418",
+    "location_name": "Osterath, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "two battalions of the 379th Infantry, attached to 2d Armored CCB, fight toward Uerdingen",
+    "operation_id": "OP-GRENADE",
+    "operation": "Operation Grenade",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Grenade",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-03",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R531;R538;R002",
+    "source_locator": "R538: p. 176-177"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2667,
+     51.3
+    ]
+   },
+   "properties": {
+    "claim_id": "C0613",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-016C",
+    "unit_name": "XVI Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL0419",
+    "location_name": "Lobberich, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "corps drives north-east from Venlo toward Rheinberg after contact with the Veritable forces at Geldern on 3 March",
+    "operation_id": "OP-GRENADE",
+    "operation": "Operation Grenade",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Grenade",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R538;R546;R001",
+    "source_locator": "R538: p. 179"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C0614",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-095D",
+    "unit_name": "95th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-05",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "XIX Corps orders the division to drive for the Rheinhausen bridges; both bridges are found down",
+    "operation_id": "OP-GRENADE",
+    "operation": "Operation Grenade",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Grenade",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R531;R538;R001",
+    "source_locator": "R538: p. 178"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5586,
+     50.4156
+    ]
+   },
+   "properties": {
+    "claim_id": "C0615",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-069D",
+    "unit_name": "69th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-06",
+    "place_id": "PL0421",
+    "location_name": "Schmidtheim, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "V Corps sends the division east in the centre of its zone in the Eifel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 2,
+    "reference_ids": "R526;R539;R002",
+    "source_locator": "R539: p. 204"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2442,
+     50.5792
+    ]
+   },
+   "properties": {
+    "claim_id": "C0616",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-009D",
+    "unit_name": "9th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-07",
+    "place_id": "PL0422",
+    "location_name": "Ludendorff Bridge, Remagen",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "a task force reaches the Ludendorff Bridge at Remagen about 1600 and the Americans take it before demolition",
+    "operation_id": "OP-REMAGEN",
+    "operation": "Battle of Remagen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Remagen",
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R540;R556;R517;R001",
+    "source_locator": "R540: p. 212-216"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3292,
+     50.485
+    ]
+   },
+   "properties": {
+    "claim_id": "C0617",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-011D",
+    "unit_name": "11th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-08",
+    "place_id": "PL0423",
+    "location_name": "Brohl, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "final surge brings the division to the Rhine at Brohl",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R540;R518;R001",
+    "source_locator": "R540: p. 223"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1022,
+     50.7353
+    ]
+   },
+   "properties": {
+    "claim_id": "C0618",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-09",
+    "place_id": "PL0424",
+    "location_name": "Bonn, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "the division eliminates the last German defenders in Bonn; the Rhine bridge is destroyed",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R540;R343;R001",
+    "source_locator": "R540: p. 223"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4942,
+     49.1842
+    ]
+   },
+   "properties": {
+    "claim_id": "C0619",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-065D",
+    "unit_name": "65th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-09",
+    "place_id": "PL0425",
+    "location_name": "Boulay-Moselle, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "division enters combat with XX Corps in the Saar-Moselle triangle area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R524;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2269,
+     50.645
+    ]
+   },
+   "properties": {
+    "claim_id": "C0620",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-078D",
+    "unit_name": "78th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL0426",
+    "location_name": "Bad Honnef, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "the 311th Infantry takes Honnef on the east bank of the Rhine, almost five miles north of the Remagen bridge",
+    "operation_id": "OP-REMAGEN",
+    "operation": "Battle of Remagen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Remagen",
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R540;R529;R001",
+    "source_locator": "R540: p. 225"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C0621",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-11",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army headquarters at Düren, in the Roer valley",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R482;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9064,
+     50.1297
+    ]
+   },
+   "properties": {
+    "claim_id": "C0622",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL0428",
+    "location_name": "Gillenfeld, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "division enters combat in the XII Corps zone before the Moselle crossing (CMH: entered combat 12 March 1945)",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-13",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1,
+    "reference_ids": "R530;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2847,
+     50.5703
+    ]
+   },
+   "properties": {
+    "claim_id": "C0623",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL0429",
+    "location_name": "Linz am Rhein, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "most of the division arrives in the Remagen bridgehead to take over its southern and south-eastern parts",
+    "operation_id": "OP-REMAGEN",
+    "operation": "Battle of Remagen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Remagen",
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R532;R540;R001",
+    "source_locator": "R540: p. 226"
+   }
   }
  ]
 }

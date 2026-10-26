@@ -189,6 +189,7 @@ def main(argv):
         gcache = json.load(open(cache_path, encoding='utf-8'))
     checked = 0
     fetched = 0
+    compared = set()   # exception keys of the places that had a stored result (an exception for another place is not stale, only unchecked)
     for p in places.rows:
         if p['kind'] != 'point':   # the name of a line or an area ('Vire / Elle front near Airel') is not a place a geocoder knows
             continue
@@ -209,11 +210,12 @@ def main(argv):
         checked += 1
         lat, lon = float(p['latitude']), float(p['longitude'])
         d = min(km(lat, lon, c[0], c[1]) for c in cands)
+        at_place = sorted(r['claim_id'] for r in rows if r['place_id'] == p['place_id'])
+        key = ('place-geocoder', at_place[0] if at_place else '', at_place[0] if at_place else '')
+        compared.add(key)
         if d > max(PLACE_GEOCODER_MIN_KM, 2 * float(p['precision_km'])):
             msg = '%s %s: the place point is %.1f km from the nearest of %d stored geocoder candidates for %r (precision %s km); the point or the name may be wrong' % (
                 p['place_id'], p['name'], d, len(cands), q, p['precision_km'])
-            at_place = sorted(r['claim_id'] for r in rows if r['place_id'] == p['place_id'])
-            key = ('place-geocoder', at_place[0] if at_place else '', at_place[0] if at_place else '')
             if key in exceptions:
                 used.add(key)
                 explained.append(('place-geocoder', '%s [%s]' % (msg, exceptions[key][0])))
@@ -284,6 +286,8 @@ def main(argv):
     for kind, msg in sorted(explained):
         print('EXPLAINED [%s] %s' % (kind, msg))
     for key in sorted(set(exceptions) - used):
+        if key[0] == 'place-geocoder' and key not in compared:
+            continue   # no stored geocoder result for this place on this machine (no cache): not checked, not stale
         print('STALE [exceptions] %s %s/%s matches no current warning; remove it from data/coordinate_exceptions.csv' % key)
     for kind, msg in sorted(warns):
         print('WARNING [%s] %s' % (kind, msg))

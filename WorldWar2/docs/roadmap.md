@@ -1,6 +1,8 @@
 # Roadmap and known gaps
 
-Status: Western Front, 6 June to 31 December 1944 for US Army army-group, army, corps and selected division milestones (Batch 3 added 1 October to 31 December); divisions are complete only for the milestones listed in the Batch 3 section. Batch 1 of the US Army fill-in (1 July to 30 September 1944: army group, army, corps and division level) is in, on top of the original 6-30 June proof of concept: 566 claims after Batch 3 and its review, 354 units; see `docs/coverage.md`.
+Status: Western Front, 6 June to 31 December 1944 for US Army army-group, army, corps and selected division milestones (Batch 3 added 1 October to 31 December); divisions are complete only for the milestones listed in the Batch 3 section. Batch 1 of the US Army fill-in (1 July to 30 September 1944: army group, army, corps and division level) is in, on top of the original 6-30 June proof of concept: 573 claims after Batch 3, its review and the open items of 26 October 2026, 356 units (114 active); see `docs/coverage.md`.
+
+For a new maintainer: [HANDOFF.md](HANDOFF.md) (state, locations, standing rules, conventions, checks, decision log, next steps).
 
 ## US Army fill-in: progress and plan
 
@@ -19,7 +21,7 @@ Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 t
 - Corps rows are milestones from the Green Books and Wikipedia, so they are sparse. Batch 2 (command transitions, 25 July to 15 September 1944) added rows for V, VII, VIII, XII, XV, XIX and XX Corps and for First Army on 1 August; outside that window the corps gaps remain, and the Seventh Army place on 15 September is still unlocated.
 - Army and army group headquarters places are mostly not sourced; those rows use a representative point at 50 km and confidence 0.3 (see the Batch 1 rules in `docs/methodology.md`).
 - CP-derived division rows use CMH command-post towns; towns that could not be geocoded safely were dropped, so some dates have no row (see [`review/review_changes.md`](review/review_changes.md)).
-- The 39 US units still placeholders (III, XIII, XVI, XXI, XXII and XXIII Corps; Fifteenth Army; 17th Airborne; 8th to 14th, 16th and 20th Armored; 42nd and 63rd to 106th Infantry as listed in `docs/coverage.md`) arrive after September 1944 or were not in Batch 1's divisions; the 26th and 44th Divisions have only their arrival rows here.
+- The 27 US units still placeholders on 26 October 2026 (XVI, XXII and XXIII Corps; Fifteenth Army; 17th Airborne; 8th, 9th, 11th, 12th, 13th, 14th, 16th and 20th Armored; 42nd, 63rd, 65th, 66th, 69th, 70th, 71st, 76th, 78th, 86th, 89th, 95th, 97th and 99th Infantry; the list is in `data/units.csv`, `record_status` placeholder, nationality US) arrive after September 1944 or were not in Batch 1's divisions; the 26th and 44th Divisions have only their arrival rows here. (This line said 39 until 26 October 2026: III, XIII and XXI Corps and eleven divisions had become active in Batches 1 to 3, and the count had not been updated.)
 - The 82nd and 101st Airborne rows cover England and Market Garden's first days only; the later fighting in Holland is Batch 2.
 - German opponents are named only where a Green Book page states them; most US rows have an empty `engaged_with`. (Opponents are unit ids now; a named opponent missing from `data/units.csv` becomes a placeholder.)
 

@@ -82,6 +82,7 @@ Every row needs a source, conflicting claims become separate rows, and nothing i
 - [docs/sources.md](docs/sources.md): sources used, reliability, licensing; the full list of references is [data/references.csv](data/references.csv)
 - [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md): what to credit and what applies when you reuse a derived file, by source family and by export
 - [docs/roadmap.md](docs/roadmap.md): scale-up plan and known gaps
+- [docs/HANDOFF.md](docs/HANDOFF.md): handoff for whoever maintains the dataset next (state, locations, standing rules, conventions, checks, decision log, next steps)
 - [docs/coverage.md](docs/coverage.md): generated coverage of the unit table (placeholder vs active)
 - [docs/review/README.md](docs/review/README.md): the brief for an independent reviewer (scope, tables, rules, known limitations), with a checklist, a seeded sample to check against the sources, and ten design questions
 - [schema/README.md](schema/README.md): column and vocabulary reference

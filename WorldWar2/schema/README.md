@@ -278,9 +278,35 @@ Order and effect can differ: the 35th Division was attached to V Corps by an ord
 
 Validator checks: error when a temporal basis has no date, and for a `landing` row whose coordinate is a `town_centroid` or a command post from another date; warning when `location_date` differs from `date` but the basis is blank or `documented_on_date`, when a corps, army or army-group headquarters is only a town centroid with `precision_km` under 5, and when a corps or army sector is recorded as an exact `front_line_point`. `python scripts/audit_command_location.py` lists the counts per pattern.
 
-### Notes convention
+### Note labels
 
-Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date:` (the source for the date), `Event definition:` (what event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival), `Relationship:` (the source for the command relationship), `Location:` (what the point stands for and which source places it), `Coordinates:` (how the numbers were obtained). Not every row needs all labels; the reviewed Batch 1 rows use them.
+Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date: ...`, `Location: ...`, `Relationship: ...`. Not every row needs all labels; the reviewed Batch 1 rows use them. The labels are a **controlled vocabulary** (`note_label` in `vocabularies.json`), frozen on 26 October 2026 at the set the data used then (19 labels, 632 uses in 118 of the 566 rows); the validator rejects any other label. The number in each description is how often the label was used when the set was frozen.
+
+| label | what the sentence says |
+|---|---|
+| `Event date:` | The source for the date of the event, and how the date was fixed (108 uses at the time the set was frozen). |
+| `Event definition:` | What event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival (106). |
+| `Event support:` | How well the event itself is documented, in words (high, moderate, low) with the source; `confidence` scores the location, this sentence the event (70). |
+| `Location:` | What the point stands for and which source places it (100). |
+| `Location support:` | How well the location is documented, in words, with the source (70). |
+| `Location support fallback:` | The location support when the point is only a fallback such as a sector point (1). |
+| `Location caveat:` | A doubt about the place name or the point that the row's coordinates do not remove (3). |
+| `Location approximate:` | The point is approximate and says how (1). |
+| `Coordinates:` | How the numbers were obtained: gazetteer, centroid, measured on a map (55). |
+| `Coordinate check:` | The outcome of a coordinate or speed check against another claim (1). |
+| `Relationship:` | The source for the command relationship of the row (102). |
+| `Command support:` | How well the command event (start of command, hour, date) is documented (1). |
+| `Opponents:` | What is and is not covered by `engaged_with` (1). |
+| `Objective check:` | Why `location_represents` objective holds on the row date (8). |
+| `Commander:` | The source for the commander named in the row (1). |
+| `Context:` | Background that explains the row but does not belong to it (1). |
+| `Later:` | What later sources or rows show about the same fact (1). |
+| `Search:` | What was searched and not found, and where (1). |
+| `Review:` | A later review's correction of the row and what it changed (1). |
+
+**What counts as a label.** The validator looks at the start of every sentence of `notes` (the start of the cell, or after `. `, `; `, `] ` or `) `) for `Phrase: ` or `Phrase (qualifier): `. When the phrase has the shape of a label (a capital letter, then at most two more words, all lower case) it must be one of the labels above, spelled exactly (`Location support:`, not `Location Support:` or `location support:`), otherwise the row fails with `unknown label`. A qualifier in parentheses is free text and does not change the label (`Relationship (sequence):`, `Objective check (Batch 2 review):`). Lead-ins that name a source, a batch or an id are prose and are not checked: `CMH ETO-OB chronology:`, `Breakout-28 p577:`, `Batch 2 review:`, `Wikipedia:` (a capital letter after the first word, a digit or a hyphen makes a phrase prose; `Wikipedia` is the one source name that has label shape and is exempted by name). Labels in the middle of a sentence and the other columns are not checked.
+
+**Adding a label.** Do it in one change (one pull request, one commit): (1) add the label to `note_label` in `schema/vocabularies.json` with a one-line definition (what the sentence says, and when to use it instead of an existing label); (2) add it to the table above (and change the count in the first paragraph); (3) add a line to `docs/changelog.md`; (4) use it in at least one row in the same change, or say why none yet; (5) run `python scripts/validate.py`. If a `scripts/` check needs to read the new label (as `Event support:` and `Event definition:` are read by the validator and the audits), change it in the same commit. A label is not renamed or removed while a note uses it; rewrite the notes in the same change. Before inventing a label, check whether an existing one fits.
 
 ## Operations (`data/operations.csv`, `data/operation_relations.csv`, `data/operation_exceptions.csv`)
 

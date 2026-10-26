@@ -21,6 +21,7 @@ written canonically (entries joined by "; ").
 Command relations: a link of role listed_by_higher_unit belongs to the HIGHER unit's claim, which lists the subject in composing_units, keeps the wording in stated_note and states the start if it
 lists the relation before it starts (see schema/README.md, "Command relations"). docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
 every row names an existing claim of its unit, a higher unit of the table, a vocabulary relationship and an entry that is still in the claim's composing_text.
+Note labels: a sentence of `notes` that starts with `Label: ` uses a label of the vocabulary note_label (closed set, exact spelling); source and batch lead-ins are prose.
 Claim ids: unique, C plus four digits or more; data/retired_claims.csv records removed claims (a retired id is never a claim again); unrecorded gaps in the numbering are
 listed as a NOTE. Reuse across revisions: scripts/check_claim_ids.py (needs git history).
 Claim key: unit_id + date + event_type identify one claim (schema/claims.schema.json `uniqueTogether`); a repeat is allowed only inside one conflict group or when
@@ -556,6 +557,28 @@ def check_place_merges(places_by_id):
         if len(r) == len(h) and r[1] not in places_by_id:
             err('%s line %d' % (where, i), 'merged_into_place_id %s is not a row of data/places.csv (a survivor is a live place, not a retired id)' % r[1])
     return out
+
+
+NOTE_LEAD = re.compile(r'(?:^|(?<=\. )|(?<=; )|(?<=\] )|(?<=\) ))([A-Za-z]+(?: [A-Za-z]+){0,2})(?: \(([^()]*)\))?: ')   # a sentence-initial `Phrase: ` or `Phrase (qualifier): ` (start of the cell, or after '. ', '; ', '] ' or ') ')
+NOTE_LABEL_SHAPE = re.compile(r'[A-Z][a-z]+(?: [a-z]+){0,2}')   # what a label looks like: not a source name, a batch, an id or a number
+NOTE_PROSE_LEAD = ('Wikipedia',)                                 # a source name of label shape: the sentence quotes the source, it is not a label
+
+
+def check_note_labels(where, row, labels):
+    """The labels of `notes` (vocabulary note_label) are a closed set. A sentence that starts with `Label: ` or `Label (qualifier): ` must use a label of the
+    vocabulary, spelled exactly; a sentence-initial phrase of label shape that is not one is an error (to add a label see schema/README.md, "Note labels").
+    Lead-ins that name a source or a batch ('CMH ETO-OB chronology:', 'Breakout-28 p577:', 'Batch 2 review:', 'Wikipedia:') are prose and ignored."""
+    folded = {x.casefold(): x for x in labels}
+    for m in NOTE_LEAD.finditer(row['notes']):
+        base = m.group(1)
+        if base in labels:
+            continue
+        if base.casefold() in folded:
+            err(where, "notes: label %r is spelled %r in the vocabulary note_label (use the exact spelling)" % (base + ':', folded[base.casefold()]))
+        elif NOTE_LABEL_SHAPE.fullmatch(base) and not base.startswith(NOTE_PROSE_LEAD):
+            err(where, "notes: unknown label %r (allowed: %s). A new label is added to the vocabulary note_label in schema/vocabularies.json, to schema/README.md "
+                       "('Note labels') in the same change; otherwise rewrite the sentence so that it does not start with 'Word: '"
+                % (base + ':', ', '.join(sorted(labels))))
 
 
 RETIRED_CLAIMS_CSV = os.path.join(common.ROOT, 'data', 'retired_claims.csv')
@@ -1169,6 +1192,7 @@ def main():
             row['command_relationships'] = relset.entries_json(cid)   # derived from the relation tables; not a claim-file column
             check_command_relationships(where, row, units, vocabs)
             check_location_date(where, row)
+            check_note_labels(where, row, vocabs['note_label']['values'])
             act = row['current_activity']
             if len(act) > ACTIVITY_MAX_CHARS:
                 warn(where, 'current_activity is %d characters (> %d): one row should describe one documented action; put the rest in notes' % (len(act), ACTIVITY_MAX_CHARS))

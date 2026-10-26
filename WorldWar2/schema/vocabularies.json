@@ -124,6 +124,30 @@
       "other": "Headquarters decisions, air attack on a headquarters, units at their station."
     }
   },
+  "note_label": {
+    "description": "Labels that may start a sentence of the claims' `notes` column in the form `Label: text` (or `Label (qualifier): text`). A sentence-initial phrase that has this shape (a capital letter and up to two more lower-case words) and is not in this list is an error. Lead-ins that name a source, a batch or an id (anything with a digit, a hyphen or a capital after the first word, and `Wikipedia`) are prose, not labels. To add a label: see schema/README.md, 'Note labels'.",
+    "values": {
+      "Event date": "The source for the date of the event, and how the date was fixed (108 uses at the time the set was frozen).",
+      "Event definition": "What event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival (106).",
+      "Event support": "How well the event itself is documented, in words (high, moderate, low) with the source; `confidence` scores the location, this sentence the event (70).",
+      "Location": "What the point stands for and which source places it (100).",
+      "Location support": "How well the location is documented, in words, with the source (70).",
+      "Location support fallback": "The location support when the point is only a fallback such as a sector point (1).",
+      "Location caveat": "A doubt about the place name or the point that the row's coordinates do not remove (3).",
+      "Location approximate": "The point is approximate and says how (1).",
+      "Coordinates": "How the numbers were obtained: gazetteer, centroid, measured on a map (55).",
+      "Coordinate check": "The outcome of a coordinate or speed check against another claim (1).",
+      "Relationship": "The source for the command relationship of the row (102).",
+      "Command support": "How well the command event (start of command, hour, date) is documented (1).",
+      "Opponents": "What is and is not covered by `engaged_with` (1).",
+      "Objective check": "Why `location_represents` objective holds on the row date (8).",
+      "Commander": "The source for the commander named in the row (1).",
+      "Context": "Background that explains the row but does not belong to it (1).",
+      "Later": "What later sources or rows show about the same fact (1).",
+      "Search": "What was searched and not found, and where (1).",
+      "Review": "A later review's correction of the row and what it changed (1)."
+    }
+  },
   "strength_status": {
     "description": "Qualitative strength as it appears in build/all_claims.csv (a derived value, not a claim-file column): destroyed when the claim's destroyed flag is true, else the `status` key of strength_json, else unknown. Default unknown; a status is set only when a source states strength or losses.",
     "values": {

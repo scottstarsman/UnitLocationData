@@ -318,7 +318,42 @@ def item2(claims):
                'Panzergrenadier Regiment 901; Panzergrenadier Regiment 902; Panzer Regiment 130; battle group from the 2nd SS Division: Kampfgruppe Weidinger (GER-KG-WEIDINGER; 27-28 June)')
 
 
-ITEMS = {1: item1, 2: item2}
+def item3(claims):
+    """The ten embedded unit ids of composing_text become `<unit_id> (qualifier)` entries, with the id in composing_units."""
+    def conv(cid, old_text, new_text, old_units, new_units):
+        claims.set(cid, 'composing_text', old_text, new_text)
+        if old_units != new_units:
+            claims.set(cid, 'composing_units', old_units, new_units)
+    cur = lambda cid: claims.get(cid, 'composing_text')
+    def swap(cid, old_entry, new_entry, unit_id, old_units):
+        t = cur(cid)
+        assert old_entry in t.split('; ') or old_entry in t, (cid, old_entry)
+        new_units = (old_units + '; ' + unit_id) if old_units and unit_id not in old_units else (old_units or unit_id)
+        conv(cid, t, t.replace(old_entry, new_entry, 1), old_units, new_units)
+        return new_units
+    swap('C0006', 'battle group formed from this division: Kampfgruppe Meyer (GER-KG-MEYER; reinforced 915th Regiment, 6 June)',
+         'GER-KG-MEYER (battle group formed from this division; reinforced 915th Regiment, 6 June)', 'GER-KG-MEYER', '')
+    swap('C0089', 'battle group from the 275th Division: Kampfgruppe Heintz (GER-KG-HEINTZ) after its arrival (CMH ch. IX)',
+         'GER-KG-HEINTZ (battle group from the 275th Division; after its arrival, CMH ch. IX)', 'GER-KG-HEINTZ', '')
+    swap('C0100', 'Combat Command A (US-CCA-002D) with the 101st Airborne Division at Carentan on 13 June',
+         'US-CCA-002D (Combat Command A, with the 101st Airborne Division at Carentan on 13 June)', 'US-CCA-002D', 'US-CCA-002D')
+    swap('C0126', '922nd Grenadier Regiment went into Kampfgruppe Rohrbach (GER-KG-ROHRBACH) on 7 June',
+         'GER-KG-ROHRBACH (the 922nd Grenadier Regiment went into it on 7 June)', 'GER-KG-ROHRBACH', '')
+    u = swap('C0127', 'battle group formed from this division: Kampfgruppe Meyer (GER-KG-MEYER; reinforced 915th Regiment, 6 June)',
+             'GER-KG-MEYER (battle group formed from this division; reinforced 915th Regiment, 6 June)', 'GER-KG-MEYER', '')
+    swap('C0127', 'battle group from the 353rd Division: Kampfgruppe Boehm (GER-KG-BOEHM; from evening 16 June)',
+         'GER-KG-BOEHM (battle group from the 353rd Division; from evening 16 June)', 'GER-KG-BOEHM', u)
+    swap('C0145', 'battle group formed in this division\'s sector: Kampfgruppe Rohrbach (GER-KG-ROHRBACH; 7 June)',
+         'GER-KG-ROHRBACH (battle group formed in this division\'s sector; 7 June)', 'GER-KG-ROHRBACH', '')
+    swap('C0170', 'battle group from the 1st SS Division: Kampfgruppe Frey (GER-KG-FREY; from 28 June)',
+         'GER-KG-FREY (battle group from the 1st SS Division; from 28 June)', 'GER-KG-FREY', '')
+    swap('C0173', 'battle group from the 2nd SS Division: Kampfgruppe Weidinger (GER-KG-WEIDINGER; 27-28 June)',
+         'GER-KG-WEIDINGER (battle group from the 2nd SS Division; 27-28 June)', 'GER-KG-WEIDINGER', '')
+    swap('C0184', 'battle group formed from this division: Kampfgruppe von Luck (GER-KG-VONLUCK; 23 June)',
+         'GER-KG-VONLUCK (battle group formed from this division; 23 June)', 'GER-KG-VONLUCK', '')
+
+
+ITEMS = {1: item1, 2: item2, 3: item3}
 
 
 def main():

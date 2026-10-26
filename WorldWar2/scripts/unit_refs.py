@@ -210,6 +210,8 @@ def check(row):
                 errs.append('%s entry %r contains %s, which is not a unit_id in data/units.csv' % (col, e, t))
             elif col == 'engaged_note':
                 errs.append('%s entry %r contains the unit id %s: list the opponent in engaged_with' % (col, e, t))
+            elif col == 'composing_text':
+                errs.append('%s entry %r contains the unit id %s inside free text: write "%s (qualifier)" and list the id in composing_units' % (col, e, t, t))
         r = _name_clash(e, claimer_nat, claimer_name)
         if r:
             errs.append('%s entry %r is the name of unit %s: use the id in %s' % (col, e, r[0], 'engaged_with' if col == 'engaged_note' else 'composing_units'))

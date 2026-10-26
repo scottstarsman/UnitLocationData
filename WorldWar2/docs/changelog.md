@@ -19,6 +19,12 @@ Items 1 to 7 of the review in [unit_references_review.md](unit_references_review
 - **Nothing else changed.** `who_controls` answers are the same on the 48-query sample; only the list of supporting claims of two lines grew (GER-KG-FREY gains C0170, US-CCA-002D gains C0493). The validator warnings are the same three.
 - **Other words.** `notes` (140 claims `assign*`, 19 `operational control`/OPCON, 71 `attach*`, 7 placed/came under, 2 `subordinat*`, 1 under command), `current_activity`, `location_qualifier` and `strength_json` keep the word `attached` where it is the source's own description of a fact; they are free narrative and not parsed. Not banned: `composing_text` and `engaged_note` contain one `assigned` (C0052 `GER-SSPG-017D (assigned for blocking mission near Carentan)`, a task and not a command relation) and four `reinforced`. Recommendation: keep the ban to `composing_text` and `engaged_note` (the fields that were turned into ids), do not ban the narrative columns; the relationship words that matter are in the relations table.
 
+### Item 3: the ten embedded unit ids
+
+- **Ten entries in nine claims** (C0006, C0089, C0100, C0126, C0127 with two entries (Meyer and Boehm), C0145, C0170, C0173, C0184) had a unit id inside a free-text sentence ("battle group from the 1st SS Division: Kampfgruppe Frey (GER-KG-FREY; from 28 June)"). Each is now `<unit_id> (qualifier)` with the id in `composing_units`, like the other 25 qualified entries; the qualifier keeps the wording of the source minus the name that the id now supplies and minus the word "attached" (item 2). Nine ids are new in `composing_units` (GER-KG-MEYER twice, GER-KG-BOEHM, GER-KG-HEINTZ, GER-KG-ROHRBACH twice, GER-KG-FREY, GER-KG-WEIDINGER, GER-KG-VONLUCK; US-CCA-002D was already listed in C0100).
+- **Validator.** An id inside an unqualified free-text entry of `composing_text` is now an error (it had to exist before): write `<unit_id> (qualifier)`.
+- The relationships behind these entries are the relations of item 2 and the existing ones (see the evidence links of CR0020, CR0023, CR0030, CR0374).
+
 ## unit-ids-in-text-columns (27 October 2026)
 
 Recommendation 3 (F3, unit references in text columns, the claim part) of [normalization_review.md](normalization_review.md). Applied with `scripts/migrate_unit_ids.py` (run once; `--verify HEAD` before the commit regenerates the old strings from the new data and diffs them). What was mapped and what is left for a decision: [unit_references_review.md](unit_references_review.md).

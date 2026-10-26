@@ -45,6 +45,7 @@
       "division": "Division.",
       "brigade": "Independent brigade.",
       "regiment/battle_group": "Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command.",
+      "battalion": "Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`.",
       "other": "Higher or special headquarters that fit no level above (for example OB West).",
       "air_force": "Reserved for later: air force, air fleet or air army headquarters (not yet used).",
       "air_formation": "Reserved for later: air corps, air division, wing, group or squadron (not yet used).",
@@ -293,8 +294,25 @@
       "division",
       "brigade",
       "regiment/battle_group",
+      "battalion",
       "other"
     ]
+  },
+  "echelon_id_letter": {
+    "description": "The echelon letter that ends a unit_id (`NATION-TYPE-NUMBER` + letter, see schema/README.md, \"unit_id pattern\"). An id that ends in a digit and one of these letters must have the matching echelon (checked by scripts/validate.py); an id that ends otherwise has no echelon letter. The echelons in `no_letter` never carry one: regiments, regiment-sized battle groups and battalions are identified by their type code and name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). Exception: the combat commands `US-CCA-002D` and `US-CCR-004D` (echelon `regiment/battle_group`), whose final `D` is the 2nd and 4th Armored Division in the id and not an echelon letter (`combat_command_pattern`). Ids are opaque and are never renamed to follow this rule.",
+    "values": {
+      "army_group": "G",
+      "army": "A",
+      "corps": "C",
+      "division": "D",
+      "brigade": "B",
+      "other": "H"
+    },
+    "no_letter": [
+      "regiment/battle_group",
+      "battalion"
+    ],
+    "combat_command_pattern": "^[A-Z]+-CC[A-Z]-[0-9]+D$"
   },
   "relationship_groups": {
     "description": "Groups of command-relationship values used by the checks and the derived tables (single source for scripts/validate.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py).",
@@ -369,12 +387,13 @@
     }
   },
   "relation_claim_role": {
-    "description": "What a claim says about a command relation (column role of data/command_relation_claims.csv); it follows from which dates the claim itself stated.",
+    "description": "What a claim says about a command relation (column role of data/command_relation_claims.csv). For a claim of the subject unit the role follows from which dates the claim itself stated; a claim of the higher unit that lists the subject has the role listed_by_higher_unit.",
     "values": {
       "asserts_start": "The claim states when the relation began (stated_effective_from).",
       "asserts_end": "The claim states when the relation ended (stated_effective_to).",
       "asserts_start_and_end": "The claim states both the start and the end.",
-      "observed_during": "The claim lists the relation as in force on its date without dating the start or the end."
+      "observed_during": "The claim lists the relation as in force on its date without dating the start or the end.",
+      "listed_by_higher_unit": "The claim belongs to the HIGHER unit of the relation and lists the subject as one of its components with this relationship (for example a corps claim whose composing_units names a division attached to it, or a division claim that names an attached battle group). It is evidence for the relation, not one of the claim's own relationships: it does not appear in the claim's rebuilt command_relationships, it needs no stated dates (it records what the claim said in stated_note, and the start or end only if the claim gave one), and the subject must be listed in the claim's composing_units (or, until converted, named by id in composing_text)."
     }
   },
   "relation_overlap_kind": {

@@ -29,7 +29,8 @@ STATED = [('effective_from', 'stated_effective_from'), ('effective_from_latest',
           ('effective_to_earliest', 'stated_effective_to_earliest'), ('effective_to_time', 'stated_effective_to_time'),
           ('effective_to_basis', 'stated_effective_to_basis'), ('note', 'stated_note'), ('date_basis', 'stated_date_basis')]
 LINK_HEADER = ['relation_id', 'claim_id', 'seq', 'role'] + [c for _k, c in STATED]
-ROLES = ('asserts_start', 'asserts_end', 'asserts_start_and_end', 'observed_during')
+ROLES = ('asserts_start', 'asserts_end', 'asserts_start_and_end', 'observed_during', 'listed_by_higher_unit')
+LISTED = 'listed_by_higher_unit'   # the claim is the HIGHER unit's: it lists the subject as a component; it is evidence but not one of its own relationships
 # valid_to_basis / valid_from_basis values beyond the sourced ones of vocabulary relationship_date_basis
 END_INFERRED = ('inferred_from_next_claim', 'open_at_last_claim')
 
@@ -63,7 +64,8 @@ class Relations:
         return e
 
     def entries(self, claim_id):
-        return [self.entry(l) for l in self.by_claim.get(claim_id, []) if l['relation_id'] in self.by_id]
+        """The claim's own relationships; links of role listed_by_higher_unit (the claim lists a SUBORDINATE unit) are evidence, not entries."""
+        return [self.entry(l) for l in self.by_claim.get(claim_id, []) if l['relation_id'] in self.by_id and l['role'] != LISTED]
 
     def entries_json(self, claim_id):
         """The text the claims' command_relationships column used to hold: compact JSON, blank when the claim lists no relation."""

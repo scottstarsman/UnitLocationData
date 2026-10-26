@@ -6,8 +6,8 @@ Stored in the claim files (see schema/README.md, "unit references in claims"):
                     parentheses does not split. Never repeats the name of a unit that has an id.
   composing_units   `;` list of unit_ids of the subordinate units, or `unknown`; blank = unchanged from the unit's previous row
   composing_text    free text for what is not a unit of units.csv (regiments, battalions, companies, groups, remarks); `;` list as above. An entry of the
-                    form `<unit_id> (<qualifier>)` is the qualifier of a unit listed in composing_units ('GER-PZ-002D (elements)'). No relationship
-                    prefix: how a unit is attached to another belongs in data/command_relations.csv.
+                    form `<unit_id> (<qualifier>)` is the qualifier of a unit listed in composing_units ('GER-PZ-002D (elements)'). The word "attach" in any form is
+                    forbidden: how a unit is joined to another belongs in data/command_relations.csv (docs/deferred_relations.md for a formation that is not a unit).
 Derived, never stored (carried to build/all_claims.csv and returned by load_all_claims):
   engaged_with_names     the unit display names ('German 12th SS Panzer Division Hitlerjugend', see common.display_name) followed by the notes
   composing_units_names  the unit names (the unit_name when the unit has the claiming unit's nationality, else the display name) with their
@@ -23,6 +23,10 @@ import common  # noqa: E402
 SENTINEL = 'unknown'
 DERIVED = ['engaged_with_names', 'composing_units_names']
 QUALIFIED = re.compile(r'^([A-Z0-9]+(?:-[A-Z0-9]+)+) (\(.*\))$')
+# The word "attach" in any form (attach, attached, attaches, attaching, attachment, attachments; whole word, any case, also after a hyphen) may not appear in
+# composing_text (entries and qualifiers) or engaged_note: an attachment is a command relationship (data/command_relations.csv, or docs/deferred_relations.md
+# when the subordinate formation is not a unit of the table). "detached" is a different word and is not caught.
+BANNED = re.compile(r'\battach(?:ed|es|ing|ments?)?\b', re.I)
 _cache = {}
 
 
@@ -201,16 +205,22 @@ def check(row):
             errs.append('%s must be entries joined by "; " with no stray spaces or empty entries: %r' % (col, row[col]))
 
     def free(col, e, claimer_nat, claimer_name):
-        if re.match(r'^\s*attached\s*:', e, re.I):
-            errs.append('%s entry %r starts with "attached:": a relationship belongs in data/command_relations.csv' % (col, e))
         for t in embedded_ids(e):
             if t not in units:
                 errs.append('%s entry %r contains %s, which is not a unit_id in data/units.csv' % (col, e, t))
             elif col == 'engaged_note':
                 errs.append('%s entry %r contains the unit id %s: list the opponent in engaged_with' % (col, e, t))
+            elif col == 'composing_text':
+                errs.append('%s entry %r contains the unit id %s inside free text: write "%s (qualifier)" and list the id in composing_units' % (col, e, t, t))
         r = _name_clash(e, claimer_nat, claimer_name)
         if r:
             errs.append('%s entry %r is the name of unit %s: use the id in %s' % (col, e, r[0], 'engaged_with' if col == 'engaged_note' else 'composing_units'))
+
+    def banned(col, e):
+        m = BANNED.search(e)
+        if m:
+            errs.append('%s entry %r uses the word %r: a relationship (attachment) belongs in data/command_relations.csv, or in docs/deferred_relations.md when the formation is not a unit of the table; '
+                        'name the unit or the formation without relationship wording' % (col, e, m.group(0)))
 
     # engaged_with / engaged_note
     ew, note = row.get('engaged_with', ''), row.get('engaged_note', '')
@@ -218,6 +228,7 @@ def check(row):
     if note:
         canonical('engaged_note', notes)
     for e in notes:
+        banned('engaged_note', e)
         free('engaged_note', e, '', '')
     if ew == SENTINEL:
         if note:
@@ -260,6 +271,7 @@ def check(row):
         elif uid == row.get('unit_id'):
             errs.append('composing_units lists the claiming unit itself (%s)' % uid)
     for t in texts:
+        banned('composing_text', t)
         m = QUALIFIED.match(t)
         if m:
             if m.group(1) not in ids:

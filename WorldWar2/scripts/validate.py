@@ -18,6 +18,9 @@ each a row of units.csv (foreign key), no duplicate, never the claiming unit its
 and composing_text are free text that never repeats the name of a unit that has an id, never starts with `attached:`, and never contains a unit id that does not exist; a
 composing_text entry that starts with a unit id must be `<unit_id> (<qualifier>)` for an id listed in composing_units; engaged_note must hold no unit id; the lists are
 written canonically (entries joined by "; ").
+Command relations: a link of role listed_by_higher_unit belongs to the HIGHER unit's claim, which lists the subject in composing_units, keeps the wording in stated_note and states the start if it
+lists the relation before it starts (see schema/README.md, "Command relations"). docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
+every row names an existing claim of its unit, a higher unit of the table, a vocabulary relationship and an entry that is still in the claim's composing_text.
 Foreign keys: every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json is checked (blank allowed, list columns split on the
 declared separator), and the declared primary keys of the side tables are unique.
 Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with the
@@ -214,6 +217,9 @@ DATE_KEYS = ('effective_from', 'effective_from_latest', 'ordered_date', 'effecti
 STANDING_RELS = common.relationship_group('standing')
 ACTIVE_RELS = common.relationship_group('active')
 ECH_RANK = common.echelon_rank()
+_LETTERS, NO_ID_LETTER, _CC = common.echelon_id_letters()
+ID_LETTER_ECHELON = {letter: echelon for echelon, letter in _LETTERS.items()}   # 'D' -> 'division'
+COMBAT_COMMAND_ID = re.compile(_CC)
 HIGHER_THAN_ORGANIC = common.higher_than_organic()
 
 
@@ -730,27 +736,43 @@ def check_command_relation_tables(units, vocabs, claims):
         if not links:
             err(where, 'no row in data/command_relation_claims.csv: a relation needs evidence')
             continue
-        lc = [cinfo[l['claim_id']] for l in links if l['claim_id'] in cinfo]
+        own = [l for l in links if l['role'] != crel.LISTED]
+        listed = [l for l in links if l['role'] == crel.LISTED]
+        lc = [cinfo[l['claim_id']] for l in own if l['claim_id'] in cinfo]       # claims of the subject unit
+        lh = [cinfo[l['claim_id']] for l in listed if l['claim_id'] in cinfo]    # claims of the higher unit that list the subject
         if any(c['unit_id'] != r['subject_unit_id'] for c in lc):
             err(where, 'a linked claim belongs to another unit than the subject %s' % r['subject_unit_id'])
-        if r['status'] == 'preferred' and lc and not any(c['claim_status'] == 'preferred' for c in lc):
+        for l in listed:
+            c = cinfo.get(l['claim_id'])
+            if c is None:
+                continue
+            if c['unit_id'] != r['higher_unit_id']:
+                err(where, 'link to %s has role listed_by_higher_unit but the claim belongs to %s, not to the higher unit %s' % (c['claim_id'], c['unit_id'], r['higher_unit_id']))
+            elif r['subject_unit_id'] not in unit_refs.split_ids(c.get('composing_units', '')) and r['subject_unit_id'] not in unit_refs.embedded_ids(c.get('composing_text', '')):
+                err(where, 'link to %s has role listed_by_higher_unit but the claim does not list %s in composing_units' % (c['claim_id'], r['subject_unit_id']))
+            if c['date'] < r['valid_from'] and l['stated_effective_from'] != r['valid_from']:
+                err(where, 'claim %s (%s) lists the relation before it starts (%s) and does not state that start in stated_effective_from' % (c['claim_id'], c['date'], r['valid_from']))
+            if not l['stated_note'].strip():
+                err(where, 'link to %s has role listed_by_higher_unit: stated_note must keep what the claim said about the unit' % c['claim_id'])
+        lc_all = lc + lh
+        if r['status'] == 'preferred' and lc_all and not any(c['claim_status'] == 'preferred' for c in lc_all):
             err(where, 'a preferred relation needs a preferred claim as evidence')
-        if r['status'] != 'preferred' and any(c['claim_status'] == 'preferred' for c in lc):
+        if r['status'] != 'preferred' and any(c['claim_status'] == 'preferred' for c in lc_all):
             err(where, 'a %s relation is evidenced by a preferred claim (it should be preferred)' % r['status'])
-        if lc:
-            first = min(c['date'] for c in lc)
+        if lc_all:
+            first = min(c['date'] for c in (lc or lh))
             if r['valid_from_basis'] == 'claim_date' and r['valid_from'] != first:
                 err(where, 'valid_from_basis claim_date but valid_from %s is not the date of the first linked claim %s' % (r['valid_from'], first))
             if r['valid_from_basis'] != 'claim_date' and not any(l['stated_effective_from'] for l in links):
                 err(where, 'valid_from_basis %s but no linked claim states effective_from' % r['valid_from_basis'])
-            if r['valid_to_basis'] == 'inferred_from_next_claim' and r['valid_to_earliest'] not in {c['date'] for c in lc}:
+            if r['valid_to_basis'] == 'inferred_from_next_claim' and r['valid_to_earliest'] not in {c['date'] for c in (lc or lh)}:
                 err(where, 'valid_to_earliest %s must be the date of a linked claim (the last one that lists the relation before the inferred end)' % r['valid_to_earliest'])
             if r['valid_to_basis'] not in crel.END_INFERRED and not any(l['stated_effective_to'] for l in links):
                 err(where, 'valid_to_basis %s but no linked claim states effective_to' % r['valid_to_basis'])
     for i, l in enumerate(rel.links, start=2):
         where = 'data/command_relation_claims.csv line %d' % i
         stated = {k: l[col] for k, col in crel.STATED if l[col] != ''}
-        if l['role'] != crel.role_of(stated):
+        if l['role'] != crel.LISTED and l['role'] != crel.role_of(stated):
             err(where, 'role %s does not agree with the stated dates (expected %s)' % (l['role'], crel.role_of(stated)))
         if stated.get('effective_from_latest') and not stated.get('effective_from'):
             err(where, 'stated_effective_from_latest needs stated_effective_from')
@@ -759,7 +781,7 @@ def check_command_relation_tables(units, vocabs, claims):
     for cid, ls in rel.by_claim.items():
         if [int(l['seq']) for l in ls] != list(range(1, len(ls) + 1)):
             err('data/command_relation_claims.csv', 'seq of claim %s is not 1..%d without gaps' % (cid, len(ls)))
-        names = [rel.by_id[l['relation_id']]['higher_unit_id'] for l in ls if l['relation_id'] in rel.by_id]
+        names = [rel.by_id[l['relation_id']]['higher_unit_id'] for l in ls if l['relation_id'] in rel.by_id and l['role'] != crel.LISTED]
         if len(names) != len(set(n for n in names if n)) + names.count(''):
             err('data/command_relation_claims.csv', 'claim %s lists the same higher unit twice' % cid)
     # contradictory overlaps: all documented, none stale, none duplicated
@@ -783,6 +805,55 @@ def check_command_relation_tables(units, vocabs, claims):
     ids = [(o['relation_id_a'], o['relation_id_b']) for o in ol]
     if ids != sorted(ids):
         err('data/command_relation_overlaps.csv', 'rows must be sorted by relation_id_a, relation_id_b')
+
+
+def check_deferred_relations(units, vocabs, claims):
+    """docs/deferred_relations.md: the relationships a claim states whose subordinate formation is not a unit of the table. Every row names an existing
+    claim of claim_unit_id, a higher_unit_id that is a unit (or blank with a higher_unit name), a relationship of the vocabulary, a date and a source, and
+    text_in_claim must be an entry of the claim's composing_text (so the formation stays named in the claim)."""
+    path = os.path.join(common.ROOT, 'docs', 'deferred_relations.md')
+    where = 'docs/deferred_relations.md'
+    if not os.path.isfile(path):
+        err(where, 'missing')
+        return
+    cols = ['id', 'claim_id', 'claim_unit_id', 'subject', 'higher_unit_id', 'higher_unit', 'relationship', 'date_as_stated', 'source_as_stated', 'text_in_claim']
+    cinfo = {c['claim_id']: c for c in claims}
+    seen = set()
+    n = 0
+    for i, line in enumerate(open(path, encoding='utf-8').read().split('\n'), start=1):
+        if not re.match(r'^\| D\d+ \|', line):
+            continue
+        n += 1
+        cells = [c.strip() for c in line.strip().strip('|').split(' | ')]
+        w = '%s line %d' % (where, i)
+        if len(cells) != len(cols):
+            err(w, 'expected %d cells (%s), found %d (a "|" inside a cell?)' % (len(cols), ', '.join(cols), len(cells)))
+            continue
+        r = dict(zip(cols, cells))
+        if r['id'] in seen:
+            err(w, 'duplicate id %s' % r['id'])
+        seen.add(r['id'])
+        c = cinfo.get(r['claim_id'])
+        if c is None:
+            err(w, 'claim %s does not exist' % r['claim_id'])
+            continue
+        if c['unit_id'] != r['claim_unit_id']:
+            err(w, 'claim %s belongs to %s, not to %s' % (r['claim_id'], c['unit_id'], r['claim_unit_id']))
+        if r['higher_unit_id'] and r['higher_unit_id'] not in units:
+            err(w, 'higher_unit_id %s is not a unit_id in data/units.csv' % r['higher_unit_id'])
+        if not r['higher_unit_id'] and not r['higher_unit']:
+            err(w, 'higher_unit_id or higher_unit must be given')
+        if r['relationship'] not in vocabs['relationship']['values']:
+            err(w, 'relationship %r is not in the vocabulary relationship' % r['relationship'])
+        for k in ('subject', 'date_as_stated', 'source_as_stated', 'text_in_claim'):
+            if not r[k]:
+                err(w, '%s is empty' % k)
+        if r['text_in_claim'] and r['text_in_claim'] not in unit_refs.split_list(c.get('composing_text', '')):
+            err(w, 'text_in_claim %r is not an entry of composing_text of %s (%r)' % (r['text_in_claim'], r['claim_id'], c.get('composing_text', '')))
+        if r['subject'] in units or r['subject'] in {u['unit_name'] for u in units.values()}:
+            err(w, 'subject %r is a unit of the table: record the relationship in data/command_relations.csv' % r['subject'])
+    if not n:
+        err(where, 'no rows (D01 ...)')
 
 
 def main():
@@ -827,6 +898,11 @@ def main():
             nat = nats.get(u['nationality'])
             if nat and uid.split('-')[0] != nat['code']:
                 err(where, 'unit_id prefix %s is not the code %s of nationality %s' % (uid.split('-')[0], nat['code'], u['nationality']))
+            # echelon letter (vocabulary echelon_id_letter): an id ending in digits and G, A, C, D, B or H must have that echelon; regiments, battle groups and battalions have no letter
+            lm = re.search(r'[0-9]([A-Z])$', uid)
+            if lm and lm.group(1) in ID_LETTER_ECHELON and ID_LETTER_ECHELON[lm.group(1)] != u['echelon'] and not (u['echelon'] in NO_ID_LETTER and COMBAT_COMMAND_ID.match(uid)):
+                err(where, 'unit_id %s ends in the echelon letter %s (%s) but echelon is %s: regiments, battle groups and battalions have no echelon letter in the id '
+                           '(see vocabulary echelon_id_letter)' % (uid, lm.group(1), ID_LETTER_ECHELON[lm.group(1)], u['echelon']))
             if u['formed_date']:
                 if not valid_partial_date(u['formed_date']):
                     err(where, 'formed_date %r is not a real YYYY, YYYY-MM or YYYY-MM-DD' % u['formed_date'])
@@ -994,6 +1070,7 @@ def main():
               'valid_to where a source dates the end.\n' % len(open_end))
 
     check_command_relation_tables(units, vocabs, all_rows)
+    check_deferred_relations(units, vocabs, all_rows)
     check_operations(all_rows, vocabs)
     check_references(all_rows)
     place_rows = check_places(all_rows, vocabs)

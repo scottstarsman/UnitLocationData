@@ -362,7 +362,7 @@
         {
           "name": "claim_id",
           "type": "string",
-          "description": "The claim that lists the relation (data/claims/...).",
+          "description": "The claim that lists the relation (data/claims/...): a claim of the subject unit (the relation is one of its own relationships), or, with role listed_by_higher_unit, a claim of the higher unit that lists the subject as a component.",
           "constraints": {
             "required": true,
             "pattern": "^C\\d{4,}$"
@@ -371,7 +371,7 @@
         {
           "name": "seq",
           "type": "number",
-          "description": "Position of the relation in the claim's list (1 = first); the list order of the former command_relationships cell.",
+          "description": "Position of the link in the claim's list (1 = first); for a claim of the subject unit the list order of the former command_relationships cell. Links with role listed_by_higher_unit come after the claim's own relationships.",
           "constraints": {
             "required": true,
             "minimum": 1
@@ -380,7 +380,7 @@
         {
           "name": "role",
           "type": "string",
-          "description": "What the claim says about the relation (vocabulary relation_claim_role); must agree with the stated_effective_from / stated_effective_to columns.",
+          "description": "What the claim says about the relation (vocabulary relation_claim_role). For a claim of the subject unit it must agree with the stated_effective_from / stated_effective_to columns; listed_by_higher_unit marks a claim of the higher unit (see the vocabulary).",
           "constraints": {
             "required": true
           },

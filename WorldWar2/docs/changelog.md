@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: CR0105 relabelled and I Airborne Corps added from the table (26 October 2026)
+
+Branch `open-items-oct26` (from `main`, 26 October 2026). Scott's decision on open item 1 of the sample-verification list ("I'll take your recommendations on 1 to 4"). One commit.
+
+- **`CR0105` 101st Airborne Division to I Airborne Corps (`operational_control`, 17 to 19 September 1944): start basis relabelled.** `valid_from_basis`, `date_basis` and the `stated_date_basis` of its two evidence links (C0220, C0482) were `assignment_table` and are now `narrative`, an existing value of the vocabulary (no new value). Reason: the 17 September start comes from the Market Garden plan, not from a row of the CMH ETO-OB table: the division's table (R336) has XVIII Abn in the corps column from 12 Aug 44, Br XXX from 18 Sep 44 and Br I ABN only from 21 Sep 44. Dates unchanged. Old value, new value and reason are in the relation's note.
+- **New relation `CR0376` 101st Airborne Division to I Airborne Corps (`unspecified_subordination`, 21 to 22 September 1944, basis `assignment_table`).** Read by hand from R336 (table "Assignment and Attachment to Higher Units"): row 21 Sep 44, corps column "Br I ABN"; the next row (23 Sep 44) lists "Br VIII", so by the standard rule the entry is closed on 22 September (the day before the first row that no longer lists it, basis `assignment_table`). Evidence link: `C0567` (below).
+- **New claim `C0567`** (101st Airborne Division, 21 September 1944, `subordinate_assignment`, confidence 0.3, place PL0336 St-Oedenrode, `location_basis` `nearest_earlier_command_post` from C0221): a table observation, the same kind of row as C0563, added because no claim lies between 20 September (C0221) and the next table row. Claims 566 to 567.
+- **New documented overlap `CR0107` / `CR0376`** (`transfer_dates_differ`, 21 to 22 September 1944), required by the validator: CR0107 (XXX Corps from 18 September) ends only on 16 December because that end is inferred from the next claim, whereas the same table dates the change to I Airborne Corps on 21 September. The later entry on the 101st's table rows from 23 September (open item 7) removes this overlap; see that entry.
+- **Checked.** Validator 0 errors and the same 3 warnings; 68 `semantic_tests` expectations hold; `who_controls`: 5,020 grid answers compared before and after, 1 changed (101st Airborne, 18 September: the support label of the CR0105 line reads "documented" where it read "table"); no certainty changes.
+
 ## sample-verification: start dates, batch (d) (26 October 2026)
 
 Scott's decision to cover the 57 relations that the earlier comparisons could not read (the question to Scott about using the existing branch for them was answered yes): option C ("set `valid_from` to the table date") wherever the date holds up. Same branch (commit ids are those of the branch on GitHub; this entry is in the one commit that carries the data and the documents of batch (d), so it names no hash of its own); main is untouched.

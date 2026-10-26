@@ -36,9 +36,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 6 |
 | US | army | 1 | 0 | 4 | 5 | 3 | 33 |
 | US | corps | 3 | 0 | 12 | 15 | 5 | 96 |
-| US | division | 23 | 0 | 37 | 60 | 24 | 289 |
+| US | division | 23 | 0 | 37 | 60 | 24 | 290 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **242** | **0** | **114** | **356** | **234** | **566** |
+| **All** | | **242** | **0** | **114** | **356** | **234** | **567** |
 
 ## Operations
 
@@ -48,18 +48,18 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
 | campaign | 9 | 7 | 312 |
-| operation | 12 | 10 | 136 |
+| operation | 12 | 10 | 137 |
 | battle | 12 | 12 | 88 |
 | phase | 2 | 2 | 30 |
-| **All** | **36** | **31** | **566** |
+| **All** | **36** | **31** | **567** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 378 places and 22 alias names for 566 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 378 places and 22 alias names for 567 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 285 | 428 |
+| point | 285 | 429 |
 | area | 77 | 120 |
 | line | 16 | 18 |
 
@@ -67,7 +67,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 |---|---:|---:|
 | France (FR) | 327 | 495 |
 | Belgium (BE) | 27 | 37 |
-| Netherlands (NL) | 11 | 13 |
+| Netherlands (NL) | 11 | 14 |
 | Germany (DE) | 5 | 7 |
 | United Kingdom (GB) | 4 | 7 |
 | Luxembourg (LU) | 4 | 7 |

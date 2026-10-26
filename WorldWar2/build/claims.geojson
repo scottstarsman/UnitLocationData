@@ -20588,6 +20588,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.461,
+     51.5646
+    ]
+   },
+   "properties": {
+    "claim_id": "C0567",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-21",
+    "place_id": "PL0336",
+    "location_name": "St-Oedenrode, Nord Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under British I Airborne Corps from 21 September",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5017,
      48.5894
     ]

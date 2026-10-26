@@ -2,6 +2,20 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: source review of the documented overlaps (26 October 2026)
+
+Open item 8. One commit. **Explanation text changed on 19 of the 24 rows of `data/command_relation_overlaps.csv`; no relation, date, basis or kind changed, and no row was added or removed in this commit.** Method: each row was compared with the CMH ETO-OB assignment-table row of the unit (pages R-ids in `docs/review/verification_results.md`) or, for the corps rows, with the narrative the relation cites (Siegfried Line p. 378, Ardennes p. 306 and 399, Riviera p. 253, Breakout-31 p. 672, Third Army After Action Report). Siegfried Line p. 378 was re-read on 26 October 2026.
+
+- **Wrong explanation corrected (the generic "the sources do not agree on the date of the change" was not true).** Old text for each: "the sources do not agree on the date of the change; nothing is resolved here". New text states what the source dates.
+  - *The table dates the change and only the end of the earlier relation is inferred (13 rows):* CR0138/CR0139 (III Corps from 19 Dec, XII to 18 Dec), CR0208/CR0212 (Ninth Army from 5 Sep), CR0233/CR0234 (5 Sep), CR0240/CR0242 (Third Army from 28 Sep), CR0244/CR0246 (First Army from 30 Jul, Third to 29 Jul), CR0248/CR0249 (VIII Corps from 19 Nov), CR0253/CR0258 (5 Sep), CR0266/CR0267 (XIX Corps to 3 Aug, V Corps on 4 Aug, VII Corps from 5 Aug), CR0270/CR0272 (First Army from 29 Aug), CR0271/CR0273 (XIX Corps from 29 Aug), CR0317/CR0319 (no corps on the 23 Aug row, so V Corps to 22 Aug; XII Corps from 26 Aug), CR0323/CR0324 (VIII Corps from 15 Jul), CR0345/CR0347 (no corps on the 30 Jul row, so VIII Corps to 29 Jul; XV Corps from 1 Aug). The overlap is produced by the inferred end (the day before the next claim), not by two sources.
+  - *The narrative dates the change and only the end of the earlier relation is inferred (2 rows):* CR0187/CR0188 (VIII Corps, Ninth to First Army at noon on 22 Oct) and CR0197/CR0198 (XIX Corps, First to Ninth Army at noon on 22 Oct), Siegfried Line p. 378.
+  - *Same-day changes, hour not documented (3 rows):* CR0188/CR0189 (20 Dec), CR0193/CR0194 (29 Aug), CR0195/CR0196 (29 Sep). The sources agree on the day.
+- **Reworded, still a real difference of one day (1 row):** CR0108/CR0109: Ardennes p. 306 has the turnover to VIII Corps on 18 December, the CMH table lists VIII Corps from 17 December.
+- **Already correct, checked against the table and left unchanged (5 rows):** CR0047/CR0048 (added in this branch, item 7b), CR0140/CR0144, CR0225/CR0228, CR0301/CR0307, CR0322/CR0326.
+- **Finding, not changed:** the 30th Division table lists V Corps for one row (4 Aug 1944) between XIX Corps and VII Corps. The dataset carries no relation for it, so CR0266 (XIX Corps) runs to 5 Aug on an inferred end. Left as is; decision for Scott in the report.
+- **Not checked:** the corps rows were compared only with the narrative they cite, not with a second source; the table pages of the units outside the 24 rows were not read.
+- **Checked.** Validator 0 errors, same 3 warnings; `build --check` clean; the explanation column is not read by `who_controls`.
+
 ## open-items-oct26: G012, the 4th Armored Division's landing against arrival (26 October 2026)
 
 Open item 7 (third sub-item). One commit, **no value changed**; the finding is that the sources do not settle it.

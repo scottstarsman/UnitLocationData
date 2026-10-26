@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""One-off migration "normalize-cheap-fixes" (already applied; kept for the record, safe to re-run: it changes nothing a second time).
+"""One-off migration "normalize-cheap-fixes" (already applied; kept for the record).
+
+NOTE: Historical, one-off: it edited the `command_relationships` column of the claim files; since `command-relations-table` the column no longer exists (see scripts/migrate_command_relations.py). It cannot be run on the current layout.
 
 1. data/claims/*: command_relationships entries lose their redundant display `name` (the unit's name comes from data/units.csv).
    An entry with unit_id null (a formation that is not a unit) keeps its explanation as the `note`. The sentinel `unknown` in

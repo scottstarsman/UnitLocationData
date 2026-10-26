@@ -2,7 +2,8 @@
 """Generate the combined outputs in build/ from the per-unit master files in data/claims/.
 
 Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-8):
-  build/all_claims.csv                  every claim, same columns as the schema
+  build/all_claims.csv                  every claim, the columns of the schema plus the derived command_relationships (rebuilt from data/command_relations.csv
+                                        and data/command_relation_claims.csv; it is no longer a claim-file column)
   build/claims.geojson                  one Point feature per claim (lon, lat) with main properties
   build/coverage.csv                    one row per unit in data/units.csv: record_status, formed_date, whether it has a
                                         claim file, number of claim rows and their first and last date
@@ -10,15 +11,16 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/operations.csv                  derived view of data/operations.csv: operation path, depth, claim counts (direct and including child operations);
                                         all_claims.csv also carries the derived columns operation, operation_type, campaign, operation_name,
                                         sub_operation_name, operation_path (see scripts/operations.py)
-  build/command_relations.csv           DERIVED command-relationship intervals (subject, higher, relationship, valid_from, valid_to,
-                                        bases, source claim ids) for US units with a claim in 1944-07-24..1944-12-31; the claims stay
-                                        the evidence, this table is an interpretation (see schema/README.md, "Validity of a relationship")
+  build/command_relations.csv           the master data/command_relations.csv with names, a support column (documented | table | inferred)
+                                        and the evidence claim ids; every preferred relation except `organic` (the placeholders with no
+                                        higher unit included), all nationalities and dates; see schema/README.md, "Validity of a relationship"
+                                        (the claims stay the evidence; scripts/who_controls.py reads this file)
   data/references.csv                   the references table (one row per distinct source cited; derived from the claims and
                                         data/references_meta.csv by scripts/build_references.py, which build.py calls)
   build/claim_references.csv            claim_id -> reference_id links, one row per link and role (role event | date | location | command_relationship | strength | general; locator = page or section), built from the claims' stored reference_ids
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
-Do not hand-edit anything in build/: edit data/claims/ and re-run this script.
+Do not hand-edit anything in build/: edit data/claims/, data/command_relations.csv or data/command_relation_claims.csv and re-run this script.
 
 Usage: python scripts/build.py            write the outputs (removes stale files in build/)
        python scripts/build.py --check    do not write; exit 1 if build/ is not up to date
@@ -31,6 +33,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import build_references  # noqa: E402
+import command_relations  # noqa: E402
 import operations  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
@@ -94,105 +97,6 @@ def coverage(claim_rows):
     return rows, ('\n'.join(out) + '\n').encode('utf-8')
 
 
-REL_WINDOW = ('1944-07-24', '1944-12-31')
-REL_HEADER = ['subject_unit_id', 'subject_name', 'higher_unit_id', 'higher_name', 'relationship', 'valid_from', 'valid_from_latest',
-              'valid_from_time', 'valid_from_basis', 'valid_to', 'valid_to_earliest', 'valid_to_time', 'valid_to_basis', 'support', 'ordered_date',
-              'source_claim_ids', 'note']
-
-
-def _addday(iso, n):
-    import datetime
-    return (datetime.date.fromisoformat(iso) + datetime.timedelta(days=n)).isoformat()
-
-
-def relations(claim_rows, units):
-    """Derive dated command-relationship intervals from the claims' command_relationships entries.
-
-    One interval per (subject, higher, relationship) run. valid_from is the entry's effective_from (else the claim date);
-    valid_from_time / valid_to_time carry the entry's optional HH:MM (blank = hour not documented). valid_to is INCLUSIVE:
-    the last day the relationship holds; on that day and on valid_from the hour decides, and where no time is recorded the
-    boundary day belongs to both the outgoing and the incoming interval. valid_to is the entry's effective_to when given (valid_to_basis = effective_to_basis or date_basis), otherwise the day
-    before the unit's next claim that no longer lists the pair (valid_to_basis inferred_from_next_claim; valid_to_earliest is
-    the last claim date that lists it), otherwise blank (open_at_last_claim). A missing effective_to never means indefinitely
-    valid. Alternate and disputed rows are skipped (the preferred row of a conflict group decides). support: documented (narrative/order), table (assignment_table), inferred (date_basis inferred, or no basis).
-    higher_name is derived from `units` (common.display_name: '<adjective> <unit_name>'); the claims no longer store it.
-    """
-    by_unit = {}
-    for r in claim_rows:
-        if r.get('claim_status', 'preferred') not in ('preferred', ''):
-            continue  # alternate and disputed rows are competing claims; only the preferred row feeds the derived intervals
-        by_unit.setdefault(r['unit_id'], []).append(r)
-    out = []
-    for uid, rs in by_unit.items():
-        rs.sort(key=lambda r: (r['date'], r['claim_id']))
-        open_iv = {}
-
-        def close(key, iv, date_next, last_listed):
-            iv['valid_to'] = _addday(date_next, -1)
-            iv['valid_to_earliest'] = last_listed
-            iv['valid_to_basis'] = 'inferred_from_next_claim'
-            out.append(iv)
-            del open_iv[key]
-        for r in rs:
-            ents = json.loads(r['command_relationships']) if r['command_relationships'] != '' else []
-            keys = set()
-            for e in ents:
-                if not e.get('unit_id') or e['relationship'] == 'organic':
-                    continue
-                key = (e['unit_id'], e['relationship'])
-                keys.add(key)
-                start = e.get('effective_from') or r['date']
-                if key in open_iv:
-                    iv = open_iv[key]
-                    iv['claims'].append(r['claim_id'])
-                    iv['last_listed'] = r['date']
-                    if start < iv['valid_from']:
-                        iv['valid_from'] = start
-                    if e.get('date_basis') and iv['basis'] == 'inferred' and e['date_basis'] != 'inferred':
-                        iv['basis'] = e['date_basis']
-                else:
-                    iv = {'subject_unit_id': uid, 'subject_name': r['unit_name'], 'higher_unit_id': e['unit_id'], 'higher_name': common.display_name(units[e['unit_id']]['unit_name'], units[e['unit_id']]['nationality']),
-                          'relationship': e['relationship'], 'valid_from': start, 'valid_from_latest': e.get('effective_from_latest', ''),
-                          'valid_from_time': e.get('effective_time', ''),
-                          'valid_from_basis': e.get('date_basis', 'inferred') if 'effective_from' in e else 'claim_date',
-                          'valid_to': '', 'valid_to_earliest': '', 'valid_to_time': '', 'valid_to_basis': '', 'basis': e.get('date_basis', 'inferred'),
-                          'ordered_date': e.get('ordered_date', ''), 'claims': [r['claim_id']], 'last_listed': r['date'],
-                          'note': e.get('note', '')}
-                    open_iv[key] = iv
-                    key_open = key  # noqa: F841
-                if e.get('effective_to'):
-                    iv = open_iv.pop(key)
-                    iv['valid_to'] = e['effective_to']
-                    iv['valid_to_earliest'] = e.get('effective_to_earliest', '')
-                    iv['valid_to_time'] = e.get('effective_to_time', '')
-                    iv['valid_to_basis'] = e.get('effective_to_basis') or e.get('date_basis', 'inferred')
-                    twin = [o for o in out if (o['subject_unit_id'], o['higher_unit_id'], o['relationship'], o['valid_to']) ==
-                            (uid, iv['higher_unit_id'], iv['relationship'], iv['valid_to'])]
-                    if twin:  # the same interval restated by another claim (same end): one row, earliest start, all claim ids
-                        twin[0]['claims'] += iv['claims']
-                        twin[0]['valid_from'] = min(twin[0]['valid_from'], iv['valid_from'])
-                    else:
-                        out.append(iv)
-            for key in list(open_iv):
-                if key not in keys and r['date'] > open_iv[key]['last_listed']:
-                    close(key, open_iv[key], r['date'], open_iv[key]['last_listed'])
-        for key, iv in open_iv.items():
-            iv['valid_to_basis'] = 'open_at_last_claim'
-            out.append(iv)
-    rows = []
-    lo, hi = REL_WINDOW
-    for iv in out:
-        end = iv['valid_to'] or '9999-12-31'
-        if end < lo or iv['valid_from'] > hi:
-            continue
-        sup = {'narrative': 'documented', 'order': 'documented', 'assignment_table': 'table'}.get(iv['basis'], 'inferred')
-        rows.append([iv['subject_unit_id'], iv['subject_name'], iv['higher_unit_id'], iv['higher_name'], iv['relationship'], iv['valid_from'],
-                     iv['valid_from_latest'], iv['valid_from_time'], iv['valid_from_basis'], iv['valid_to'], iv['valid_to_earliest'], iv['valid_to_time'], iv['valid_to_basis'], sup,
-                     iv['ordered_date'], ' '.join(iv['claims']), iv['note']])
-    rows.sort(key=lambda x: (x[0], x[5], x[2], x[4]))
-    return rows
-
-
 OPERATIONS_HEADER = ['operation_id', 'name', 'short_name', 'alt_names', 'op_type', 'parent_operation_id', 'operation_path', 'depth', 'start_date',
                      'end_date', 'date_basis', 'nationality_scope', 'claims_direct', 'claims_including_children', 'first_claim_date',
                      'last_claim_date', 'reference_ids']
@@ -239,7 +143,8 @@ def outputs():
     ops = operations.load()
     for r in rows:
         r.update(ops.labels(r['operation_id'], r['date']))
-    header = header + DERIVED
+    ix = header.index('parent_unit_id') + 1
+    header = header[:ix] + ['command_relationships'] + header[ix:] + DERIVED   # command_relationships is rebuilt from the relation tables (not a claim-file column)
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows)}
     feats = []
@@ -255,7 +160,7 @@ def outputs():
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
-    out['command_relations.csv'] = common.csv_bytes(REL_HEADER, relations(rows, units))
+    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(command_relations.load(), units, rows))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
     out['../docs/coverage.md'] = cov_md + op_md

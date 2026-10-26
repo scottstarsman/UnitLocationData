@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Answer "which higher headquarters held this unit on this date (and hour)?" from the derived build/command_relations.csv.
+"""Answer "which higher headquarters held this unit on this date (and hour)?" from build/command_relations.csv (the master data/command_relations.csv
+with names and evidence; run python scripts/build.py first).
 
 Usage: python scripts/who_controls.py US-ARM-002D 1944-08-28
        python scripts/who_controls.py US-ABN-101D 1944-12-20 12:00        (optional HH:MM, 24-hour)
@@ -10,8 +11,10 @@ and the chain above it. Intervals are INCLUSIVE (valid_to is the last day), so o
 begins both cover the day; the hour decides, and where no hour is recorded the answer for that level is UNKNOWN rather than a
 guess. A start range (valid_from..valid_from_latest), an end range (valid_to_earliest..valid_to) or an end inferred from the
 next claim also makes an interval [possible]. The operational parent is the lowest-echelon holder of operational_control or
-attached, else of a standing relationship (assigned, unspecified_subordination). The table covers US units with a claim between
-1944-07-24 and 1944-12-31 only; run python scripts/build.py first. Standard library only.
+attached, else of a standing relationship (assigned, unspecified_subordination). The table covers every unit that has a claim (all nationalities,
+the whole period of the data); `organic` relations are not in it. A relation marked [change undated] belongs to one of the parent changes that no
+source dates (change_undated in the master table): the change fell between the previous relation's last listing and this one's first. Where only
+an explicit `unknown` placeholder (no higher unit named by any source) covers the date, the answer says so. Standard library only.
 """
 import os
 import re
@@ -49,7 +52,7 @@ def status(iv, date, time):
             else:
                 why.append('ends that day at %s' % (tt or 'an undocumented hour'))
         if iv['valid_to_earliest'] and date > iv['valid_to_earliest']:
-            why.append('end between %s and %s' % (iv['valid_to_earliest'], to))
+            why.append('end between %s and %s' % (iv['valid_to_earliest'], to) + (' (change undated: no source dates the change of parent)' if iv.get('change_undated') == 'true' else ''))
     return ('possible' if why else 'yes'), why
 
 
@@ -70,6 +73,8 @@ def main(argv):
     def hits_for(uid_or_name):
         out = []
         for r in rows:
+            if not r['higher_unit_id']:
+                continue   # explicit unknown placeholders are reported separately
             if r['subject_unit_id'] == uid_or_name or (uid_or_name.lower() in r['subject_name'].lower() and not uid_or_name.startswith(('US-', 'UK-', 'GER-', 'CAN-'))):
                 st, why = status(r, date, time)
                 if st != 'no':
@@ -78,6 +83,12 @@ def main(argv):
 
     hits = hits_for(who)
     if not hits:
+        holes = [r for r in rows if not r['higher_unit_id'] and (r['subject_unit_id'] == who or who.lower() in r['subject_name'].lower()) and status(r, date, time)[0] != 'no']
+        if holes:
+            for r in holes:
+                print('%s on %s: no higher headquarters is recorded; relation %s is an explicit unknown (%s to %s): %s' % (
+                    r['subject_unit_id'], date, r['relation_id'], r['valid_from'], r['valid_to'] or 'open', r['note']))
+            return 1
         print('no relationship interval covers %s on %s in %s' % (who, date, os.path.relpath(path, common.ROOT)))
         return 1
     print('%s on %s%s' % (who, date, (' at ' + time) if time else ''))

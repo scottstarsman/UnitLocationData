@@ -85,7 +85,7 @@
     {
       "name": "parent_unit_id",
       "type": "string",
-      "description": "Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use claims.parent_unit_id and claims.command_relationships for time-dependent parents.",
+      "description": "Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use claims.parent_unit_id and the command relations (data/command_relations.csv) for time-dependent parents.",
       "constraints": {
         "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
       }
@@ -118,7 +118,7 @@
     {
       "name": "initial_parent_unit_id",
       "type": "string",
-      "description": "Placeholder-level hint: the formation this unit is listed under in the source named by initial_parent_source, as of initial_parent_as_of. Blank where no source clearly gives it. Not an organic-versus-attached statement and not a claim; use claims.parent_unit_id and command_relationships for that. Distinct from parent_unit_id (fixed organic parent of battle groups).",
+      "description": "Placeholder-level hint: the formation this unit is listed under in the source named by initial_parent_source, as of initial_parent_as_of. Blank where no source clearly gives it. Not an organic-versus-attached statement and not a claim; use claims.parent_unit_id and the command relations (data/command_relations.csv) for that. Distinct from parent_unit_id (fixed organic parent of battle groups).",
       "constraints": {
         "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
       }

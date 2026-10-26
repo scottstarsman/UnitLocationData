@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Migration: split the free-text `parent_formation` column into `parent_unit_id` and `command_relationships`.
 
+NOTE: Historical, one-off: it wrote the `command_relationships` column of the claim files; since `command-relations-table` the column no longer exists (command lives in data/command_relations.csv, see scripts/migrate_command_relations.py). It cannot be run on the current layout.
+
 This documents (and performs) the one-off transformation that replaced
 
     parent_formation   free text, e.g. "German 2nd SS Panzer Division Das Reich (GER-SSPZ-002D); attached to German Panzer Lehr Division (GER-PZ-LEHRD)"

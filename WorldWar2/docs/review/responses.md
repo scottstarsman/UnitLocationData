@@ -193,7 +193,7 @@ The 40 sampled claims and 20 sampled relations were checked against their cited 
 | V-002 | claims | 2 weak | S10 C0198: place not in a cited source, confidence 0.7 | fixed, `2e560b8` (0.3: the position is inferred) |
 | V-003 | places | 2 weak | S23 PL0195: point probably wrong by tens of km | partly fixed, `5d50d73` (stand-in point, 25 km, 0.3; the site is not located) |
 | V-004 | places | 1 error | S25 PL0306: point 4 km off, department label | fixed, `5d50d73` |
-| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | fixed, `08630d5` (references added); the two source conflicts (S21, S24) were decided by Scott on 26 October 2026: data kept, notes flagged (`@@D@@`) |
+| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | fixed, `08630d5` (references added); the two source conflicts (S21, S24) were decided by Scott on 26 October 2026: data kept, notes flagged (`0a8d933`) |
 | V-007 | claims | 4 suggestion | S02, S06: inferred wording | fixed, `e39df6b` |
 | V-008 | relations | 1 error | R04 CR0040: interval one day after the source | fixed (start), `9abb54e` |
 | V-009 | relations | 2 weak | R05 CR0041: end is a placeholder before the next claim | documented, `bfef59a` (decided by Scott, 26 October 2026: document; no date changed) |

@@ -4393,8 +4393,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -4408,10 +4408,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-14",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "defense",
     "current_activity": "defending Cotentin; reporting US attack cannot be held",
@@ -4422,9 +4422,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
     "reference_ids": "R446;R132;R001",
     "source_locator": null
    }
@@ -4803,8 +4803,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -4818,10 +4818,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-15",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "Choltitz replacing Fahrmbacher (15 June claim)",
@@ -4832,9 +4832,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -9,
     "reference_ids": "R132;R001",
     "source_locator": null
    }
@@ -5090,8 +5090,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -5105,10 +5105,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-16",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "Choltitz replacing Fahrmbacher (16 June claim)",
@@ -5119,9 +5119,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -10,
     "reference_ids": "R153;R001",
     "source_locator": null
    }
@@ -5295,8 +5295,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
+     -1.09,
+     49.12
     ]
    },
    "properties": {
@@ -5310,10 +5310,10 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-06-17",
-    "place_id": "PL0102",
-    "location_name": "Cotentin sector (corps HQ location not verified)",
-    "location_represents": "sector_center",
-    "precision_km": 25,
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (corps HQ last documented at Saint-Lô on 6 June (CMH); not tied to this date)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
     "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "Fahrmbacher relieved by Rommel (c. 17 June claim)",
@@ -5324,9 +5324,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
     "strength_status": "unknown",
-    "location_date": null,
-    "location_basis": null,
-    "location_temporal_offset_days": null,
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -11,
     "reference_ids": "R112;R001",
     "source_locator": null
    }
@@ -8909,8 +8909,8 @@
    },
    "properties": {
     "claim_id": "C0243",
-    "conflict_group_id": "G012",
-    "claim_status": "alternate",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
     "unit_id": "US-ARM-004D",
     "unit_name": "4th Armored Division",
     "nationality": "US",
@@ -9032,7 +9032,7 @@
    },
    "properties": {
     "claim_id": "C0244",
-    "conflict_group_id": "G012",
+    "conflict_group_id": null,
     "claim_status": "preferred",
     "unit_id": "US-ARM-004D",
     "unit_name": "4th Armored Division",
@@ -15372,8 +15372,8 @@
     "location_date": "1944-08-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R405;R001",
-    "source_locator": "R405: p. 583"
+    "reference_ids": "R405;R356;R001",
+    "source_locator": "R405: p. 583; R356: table \"Assignments and Attachments\" (rows 1 Feb 44, 13 Aug 44)"
    }
   },
   {
@@ -20588,6 +20588,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.461,
+     51.5646
+    ]
+   },
+   "properties": {
+    "claim_id": "C0567",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-21",
+    "place_id": "PL0336",
+    "location_name": "St-Oedenrode, Nord Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under British I Airborne Corps from 21 September",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5017,
      48.5894
     ]
@@ -20662,6 +20703,88 @@
     "location_basis": "nearest_later_command_post",
     "location_temporal_offset_days": 3,
     "reference_ids": "R370;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.461,
+     51.5646
+    ]
+   },
+   "properties": {
+    "claim_id": "C0568",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-23",
+    "place_id": "PL0336",
+    "location_name": "St-Oedenrode, Nord Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under British VIII Corps from 23 September",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C0569",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-24",
+    "place_id": "PL0384",
+    "location_name": "Veghel, Noord-Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "division command post at Veghel",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R336;R002",
     "source_locator": null
    }
   },
@@ -20826,6 +20949,47 @@
     "location_basis": "nearest_later_command_post",
     "location_temporal_offset_days": 8,
     "reference_ids": "R345;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C0570",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-28",
+    "place_id": "PL0384",
+    "location_name": "Veghel, Noord-Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under British XII Corps from 28 September",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R336;R002",
     "source_locator": null
    }
   },
@@ -21195,6 +21359,47 @@
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
     "reference_ids": "R484;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7903,
+     51.8875
+    ]
+   },
+   "properties": {
+    "claim_id": "C0571",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-10-05",
+    "place_id": "PL0385",
+    "location_name": "Slijk-Ewijk, Gelderland, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "division command post at Slijk-Ewijk (the Island)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R336;R002",
     "source_locator": null
    }
   },
@@ -21654,6 +21859,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7903,
+     51.8875
+    ]
+   },
+   "properties": {
+    "claim_id": "C0572",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-11-09",
+    "place_id": "PL0385",
+    "location_name": "Slijk-Ewijk, Gelderland, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under II Canadian Corps and First Canadian Army from 9 November",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -35,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.7389,
      48.4492
     ]
@@ -21934,6 +22180,47 @@
     "location_temporal_offset_days": -29,
     "reference_ids": "R440;R438;R476;R001",
     "source_locator": "R440: p. 565; R438: p. 543"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3658,
+     49.1401
+    ]
+   },
+   "properties": {
+    "claim_id": "C0573",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-01",
+    "place_id": "PL0238",
+    "location_name": "Mourmelon-le-Grand, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "division command post at Mourmelon (the division is back in France)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R336;R002",
+    "source_locator": null
    }
   },
   {
@@ -22342,8 +22629,8 @@
     "location_date": "1944-12-18",
     "location_basis": "town_centroid",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R391;R471",
-    "source_locator": "R391: p. 509"
+    "reference_ids": "R391;R471;R417",
+    "source_locator": "R391: p. 509; R417: p. 299"
    }
   },
   {
@@ -22383,8 +22670,8 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R388;R386;R001",
-    "source_locator": "R388: p. 423; R386: p. 343"
+    "reference_ids": "R388;R386;R398;R001",
+    "source_locator": "R388: p. 423; R386: p. 343; R398: p. 343"
    }
   },
   {

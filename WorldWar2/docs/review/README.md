@@ -74,42 +74,42 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 566, dated 1944-06-06 to 1944-12-27 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 573, dated 1944-06-06 to 1944-12-27 |
 | units in `data/units.csv` | 356: 114 active (have claims), 242 placeholders |
 | claim files (one per active unit) | 114 |
-| conflict groups / claims in a group | 14 / 29 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 378 / 5 |
+| conflict groups / claims in a group | 13 / 27 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 379 / 5 |
 | operations / operation relations | 36 / 6 |
-| command relations (`data/command_relations.csv`) | 375 |
-| relation-to-claim evidence links (`data/command_relation_claims.csv`) | 1088 |
-| documented relation overlaps (`data/command_relation_overlaps.csv`) | 23 |
+| command relations (`data/command_relations.csv`) | 379 |
+| relation-to-claim evidence links (`data/command_relation_claims.csv`) | 1098 |
+| documented relation overlaps (`data/command_relation_overlaps.csv`) | 24 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 11 |
 | references (`data/references.csv`, generated) | 511, of which 263 cited by at least one claim (the others are cited by units or operations) |
-| claim-reference roles (`data/claim_reference_roles.csv`) | 74 |
+| claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 38 |
 
-Claims by nationality: US 427, Germany 75, UK 60, Canada 4.
+Claims by nationality: US 434, Germany 75, UK 60, Canada 4.
 
-Claims by echelon: division 368, corps 125, army 41, regiment/battle_group 14, army_group 12, brigade 4, other 2.
+Claims by echelon: division 375, corps 125, army 41, regiment/battle_group 14, army_group 12, brigade 4, other 2.
 
-Claims by branch: Army 400, Armoured 110, Airborne 34, Waffen-SS 19, Luftwaffe 3.
+Claims by branch: Army 400, Armoured 110, Airborne 41, Waffen-SS 19, Luftwaffe 3.
 
-Claims by event type: hq_move 130, attack 100, command_change 96, capture 43, landing 42, other 32, defense 31, arrival 29, counterattack 16, relocation 14, regroup 11, activation 6, withdrawal 6, subordinate_assignment 3, surrender 3, destruction 2, hq_observation 1, redesignation 1.
+Claims by event type: hq_move 133, attack 100, command_change 96, capture 43, landing 42, other 32, defense 31, arrival 29, counterattack 16, relocation 14, regroup 11, subordinate_assignment 7, activation 6, withdrawal 6, surrender 3, destruction 2, hq_observation 1, redesignation 1.
 
-Claims by status: preferred 548, alternate 11, disputed 7. Claims by confidence: 0.3 65, 0.5 313, 0.7 179, 0.9 9.
+Claims by status: preferred 556, alternate 10, disputed 7. Claims by confidence: 0.3 69, 0.5 314, 0.7 181, 0.9 9.
 
 Placeholder units by nationality: Germany 177, US 27, France 13, UK 10, Canada 7, Allied 3, Poland 2, Belgium 1, Czechoslovakia 1, Netherlands 1.
 
-Command relations by relationship: assigned 174, unspecified_subordination 85, attached 52, unknown 26, operational_control 21, organic 11, reserve 3, administrative_control 2, coordinating 1.
+Command relations by relationship: assigned 174, unspecified_subordination 89, attached 53, unknown 25, operational_control 21, organic 11, reserve 3, administrative_control 2, coordinating 1.
 
-Command relations: start basis assignment_table 214, claim_date 117, narrative 33, inferred 7, order 4; end basis open_at_last_claim 200, inferred_from_next_claim 142, assignment_table 23, narrative 10; `end_unknown` true 55; `change_undated` true 10; status preferred 373, alternate 2.
+Command relations: start basis assignment_table 216, claim_date 114, narrative 35, inferred 10, order 4; end basis open_at_last_claim 200, inferred_from_next_claim 137, assignment_table 30, narrative 11, inferred 1; `end_unknown` true 54; `change_undated` true 6; status preferred 377, alternate 2.
 
-Evidence roles of relation links: asserts_start 745, observed_during 288, asserts_start_and_end 33, asserts_end 11, listed_by_higher_unit 11.
+Evidence roles of relation links: asserts_start 749, observed_during 285, asserts_start_and_end 36, asserts_end 17, listed_by_higher_unit 11.
 
 References by source family: wikipedia 174, lexikon_wehrmacht_de 164, us_army_cmh 113, ww2byday_com 30, dday_overlord_com 2, erenow_org 2, pegasusarchive_org 2, uswarmemorials_org 2, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, britishmilitaryhistory_co_uk 1, cgsc_contentdm_oclc_org 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 195, encyclopedia 174, official_history 77, assignment_table 37, news_or_web_article 12, monument_or_memorial 6, archive_document 5, gazetteer_geocoder 2, other 2, unit_history 1.
 
-Places by kind: point 285, area 77, line 16.
+Places by kind: point 287, area 76, line 16.
 
 <!-- counts:end -->
 
@@ -119,13 +119,13 @@ These are known. Please do not report them as new findings unless you have a fix
 
 **Coverage**
 - Only the period and units described in section 1. 242 of the units in the table are placeholders; the US Army coverage after June is milestones only (command changes, new headquarters places, first combat, arrivals), with regiments, combat commands, separate battalions, cavalry groups and corps troops left out (`docs/roadmap.md`, "Known gaps").
-- The 101st Airborne Division has no row for October and November 1944 (the first row after 20 September 1944 is 17 December), so its parent changes from British XXX Corps to XVIII Airborne Corps with nothing between.
+- The 101st Airborne Division has no *claim* for October and November 1944 (the first claim after 20 September 1944 is 17 December). Since 26 October 2026 its corps and army changes of 18 September to 16 December are carried by relations read from the CMH table (CR0106 to CR0108 and CR0376 to CR0380), with the claims C0567 to C0573 as evidence; there is still no position claim for those weeks.
 - Corps and army headquarters places are often not sourced; those rows use a representative point (`location_represents` `sector_center`, 50 km, confidence 0.3). `location_basis` is blank on 211 claims (not yet reviewed).
 - A source for corps and army lists (World War II by Day) is a secondary compilation of the CMH order of battle; the CMH pages themselves are blocked to automated readers.
 
 **Command relations** (`docs/methodology.md`, "Command relations table"; `docs/deferred_relations.md`; `scripts/audit_temporal_relationships.py`)
 - **Deferred relations D01 to D11**: a claim states a relationship (nearly all `attached`) for a formation below division that is not a unit of the table; each is kept as a row of `docs/deferred_relations.md` with the claim's own words, and is not in the relations table.
-- **Undated German parent changes (June 1944)**: five parent changes of German units (21st Panzer, 12th SS Panzer, Panzer Lehr, I SS Panzer Corps, II SS Panzer Corps) that no source dates; they are marked `change_undated` true on ten relations (CR0036, CR0038, CR0040, CR0041, CR0047 to CR0050, CR0053, CR0054). A sixth parent change with no dated entry is the 101st Airborne's (above).
+- **Undated German parent changes (June 1944)**: five parent changes of German units (21st Panzer, 12th SS Panzer, Panzer Lehr, I SS Panzer Corps, II SS Panzer Corps) that no source dates; they are marked `change_undated` true on six relations (CR0040, CR0041, CR0049, CR0050, CR0053, CR0054); the I SS Panzer Corps change (CR0047, CR0048) was dated on 26 October 2026 as a range (7 to 9 June 1944, narrative) and the 21st Panzer Division change (CR0036, CR0038) as an inferred 8 June (the placeholder CR0037 was removed). The 101st Airborne's corps and army changes are dated from the table since 26 October 2026 (above).
 - **`end_unknown`**: 57 relations of temporary kinds (attached, operational control, reserve, administrative control, ...) have no sourced end; their end is inferred from the unit's next claim (39) or open at the last claim (18). A missing end never means "indefinitely".
 - **19 documented overlaps** (`command_relation_overlaps.csv`, all of kind `transfer_dates_differ`): two relations of one subject cover the same days because sources disagree on the date of a transfer. Nothing is resolved; each needs a source review (14 of them overlap by more than the boundary day).
 - `unspecified_subordination` is used where an assignment table lists a corps for a division without saying assigned or attached (85 relations).

@@ -3,7 +3,7 @@ CR0002,C0001,1,observed_during,,,,,,,,,"Independent (army-level) armoured brigad
 CR0001,C0001,2,asserts_start,1944-06-06,,,,,,,,Under command of the 3rd Canadian Infantry Division for the Juno assault,
 CR0003,C0002,1,observed_during,,,,,,,,,,
 CR0053,C0003,1,observed_during,,,,,,,,,,
-CR0036,C0004,1,observed_during,,,,,,,,,,
+CR0036,C0004,1,asserts_end,,,,,1944-06-07,,,inferred,"Cross-Channel Attack ch. 8 p. 333, ch. 9 p. 347 and 372: the 21st Panzer Division was under I SS Panzer Corps from 8 June at the latest (first day shown); the end is inferred as 7 June, the change may have come that day",
 CR0011,C0005,1,observed_during,,,,,,,,,,
 CR0012,C0006,1,observed_during,,,,,,,,,,
 CR0013,C0007,1,observed_during,,,,,,,,,,
@@ -42,7 +42,7 @@ CR0028,C0034,1,observed_during,,,,,,,,,Formed by the 709th Division commander (S
 CR0019,C0035,1,observed_during,,,,,,,,,,
 CR0018,C0035,2,observed_during,,,,,,,,,"Seventh Army (Dollmann) ordered the 265th Kampfgruppe forward, per the claim notes",
 CR0033,C0036,1,observed_during,,,,,,,,,,
-CR0047,C0037,1,observed_during,,,,,,,,,,
+CR0047,C0037,1,asserts_end,,,,,1944-06-09,1944-06-07,,narrative,C0037: the corps was transferred to Panzer Group West late on 7 June; Cross-Channel Attack ch. 9 p. 347 and 372: Geyr took over the Caen sector on 9 June (arriving the night of 8-9 June),
 CR0040,C0038,1,asserts_start,1944-06-06,,,,,,,,"Cross-Channel Attack ch. 8 (R448): Panzer Lehr was in OKW reserve on 6 June and waited until 1600 for Hitler's word to move; the claim (7 June) notes ""Held back 6 June"".",narrative
 CR0056,C0039,1,observed_during,,,,,,,,,,
 CR0077,C0040,1,observed_during,,,,,,,,,,
@@ -57,7 +57,7 @@ CR0003,C0048,1,observed_during,,,,,,,,,,
 CR0054,C0049,1,observed_during,,,,,,,,,,
 CR0025,C0050,1,observed_during,,,,,,,,,,
 CR0024,C0050,2,observed_during,,,,,,,,,"Seventh Army (Dollmann) sent Kampfgruppe Heintz from Brittany, per the claim notes",
-CR0048,C0051,1,observed_during,,,,,,,,,,
+CR0048,C0051,1,asserts_start,1944-06-08,1944-06-09,,,,,,,C0051 lists the corps under Panzer Group West on 8 June; Cross-Channel Attack ch. 9 p. 347 and 372: Geyr took over the Caen sector on 9 June (arriving the night of 8-9 June),narrative
 CR0007,C0052,1,observed_during,,,,,,,,,,
 CR0041,C0053,1,observed_during,,,,,,,,,,
 CR0057,C0054,1,observed_during,,,,,,,,,,
@@ -102,7 +102,7 @@ CR0301,C0087,2,observed_during,,,,,,,,,"Wikipedia, 79th Infantry Division (Unite
 CR0182,C0088,1,observed_during,,,,,,,,,,
 CR0046,C0089,1,observed_during,,,,,,,,,,
 CR0374,C0089,2,listed_by_higher_unit,,,,,,,,,Kampfgruppe Heintz listed as a component of the 17th SS Panzergrenadier Division 'after its arrival (CMH ch. IX)'; the claim's earlier wording was 'attached battle group from the 275th Division: Kampfgruppe Heintz (GER-KG-HEINTZ)',
-CR0037,C0090,1,observed_during,,,,,,,,,parent not verified,
+CR0038,C0090,1,observed_during,,,,,,,,,,
 CR0035,C0091,1,observed_during,,,,,,,,,,
 CR0042,C0092,1,observed_during,,,,,,,,,parent not verified,
 CR0039,C0093,1,observed_during,,,,,,,,,parent not verified,
@@ -218,7 +218,7 @@ CR0166,C0181,1,observed_during,,,,,,,,,US First Army served under 21st Army Grou
 CR0182,C0182,1,observed_during,,,,,,,,,,
 CR0022,C0183,1,observed_during,,,,,,,,,,
 CR0023,C0183,2,observed_during,,,,,,,,,Vanguard attached to the 12th SS Panzer Division,
-CR0038,C0184,1,observed_during,,,,,,,,,,
+CR0038,C0184,1,asserts_start,1944-06-08,,,,,,,,"Cross-Channel Attack ch. 8 p. 333, ch. 9 p. 347 and 372: I SS Panzer Corps attacked on 8 June with the 12th SS and 21st Panzer Divisions; the start is inferred as 8 June (it may be 7 June); this claim, dated 28 June, is the first that lists the relation",inferred
 CR0031,C0185,1,observed_during,,,,,,,,,,
 CR0030,C0185,2,observed_during,,,,,,,,,,
 CR0049,C0186,1,observed_during,,,,,,,,,,
@@ -267,10 +267,10 @@ CR0094,C0217,4,asserts_start,1944-09-17,,,,,,,,"CMH ETO-OB assignment table, Arm
 CR0101,C0218,1,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Ninth""",assignment_table
 CR0104,C0219,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0102,C0219,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
-CR0105,C0220,1,asserts_start,1944-09-17,,,,,,,,Market Garden plan placed the US airborne divisions under British I Airborne Corps,assignment_table
+CR0105,C0220,1,asserts_start,1944-09-17,,,,,,,,Market Garden plan placed the US airborne divisions under British I Airborne Corps,narrative
 CR0103,C0220,2,asserts_start_and_end,1944-08-12,,,,1944-09-17,,,,XVIII Airborne Corps headquarters stayed in England,assignment_table
 CR0102,C0220,3,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
-CR0107,C0221,1,asserts_start,1944-09-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0107,C0221,1,asserts_start_and_end,1944-09-18,,,,1944-09-20,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0102,C0221,2,asserts_start,1944-09-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0106,C0221,3,asserts_start,1944-09-18,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Br Second""",assignment_table
 CR0114,C0222,1,asserts_start,1944-09-15,,,,,,,,"Tactical control transferred from AFHQ to SHAEF at 0001B, 15 September 1944",order
@@ -927,7 +927,7 @@ CR0091,C0481,1,asserts_start_and_end,1944-08-12,,,,1944-09-17,,,,XVIII Airborne 
 CR0090,C0481,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0093,C0481,3,asserts_start,1944-09-17,,,,,,,,CMH ETO-OB table; Market Garden plan placed the US airborne divisions under British I Airborne Corps,assignment_table
 CR0094,C0481,4,asserts_start,1944-09-17,,,,,,,,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""",assignment_table
-CR0105,C0482,1,asserts_start,1944-09-17,,,,,,,,Market Garden plan placed the US airborne divisions under British I Airborne Corps,assignment_table
+CR0105,C0482,1,asserts_start,1944-09-17,,,,,,,,Market Garden plan placed the US airborne divisions under British I Airborne Corps,narrative
 CR0103,C0482,2,asserts_start_and_end,1944-08-12,,,,1944-09-17,,,,XVIII Airborne Corps headquarters stayed in England,assignment_table
 CR0102,C0482,3,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0166,C0483,1,asserts_end,,,,,1944-07-31,,,,US First Army served under 21st Army Group until 12th Army Group became operational,narrative
@@ -1079,11 +1079,21 @@ CR0299,C0561,1,asserts_start,1944-12-22,,,,,,,,CMH ETO-OB assignment table (sing
 CR0298,C0561,2,asserts_start,1944-12-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0297,C0561,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0296,C0561,4,asserts_start_and_end,1944-12-22,,,,1945-01-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""; the table row of 1945-01-25 no longer lists it, so the attachment is closed on 1945-01-24",assignment_table
-CR0201,C0562,1,asserts_start,1944-12-27,,,,,,,,"CMH ETO table, 36th Division row of 27 December: Seventh Army",assignment_table
-CR0200,C0562,2,asserts_start,1944-12-27,,,,,,,,CMH table: 6th,assignment_table
+CR0201,C0562,1,asserts_start,1944-12-27,,,,,,,,"CMH ETO table, 36th Division row of 27 December: Seventh Army",inferred
+CR0200,C0562,2,asserts_start,1944-12-27,,,,,,,,CMH table: 6th,inferred
 CR0108,C0563,1,asserts_end,,,,,1944-12-18,1944-12-16,,narrative,"Ardennes p304: the division belonged to General Ridgway's XVIII Airborne Corps in SHAEF reserve at Reims; the 17 December orders reached the corps chief of staff, who relayed the alert to the 82d and 101st; the entry ends with the turnover to VIII Corps on 18 December (p306); the CMH table lists VIII Corps instead from 17 December, so the end lies between 16 and 18 December; the start of this stretch is not dated in the sources used",narrative
 CR0109,C0563,2,asserts_start,1944-12-17,1944-12-18,,,,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the Green Book has the turnover to VIII Corps on 18 December (p306), so the start lies between 17 and 18 December; operational control is on the 19 December row",assignment_table
 CR0102,C0563,3,asserts_start,1944-12-17,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0179,C0564,1,asserts_start,1944-10-10,,,1944-10-10,,,,,Lorraine p299: the III Corps headquarters was assigned to the Third Army on 10 October,narrative
 CR0182,C0565,1,asserts_start,1944-08-01,,,,,,,,12th Army Group became operational 1 August with First and Third Armies; Breakout-18 p343,narrative
 CR0178,C0566,1,observed_during,,,,,,,,,Ardennes p552: Gaffey formed the Reserve Combat Command as a balanced task force of the division,narrative
+CR0376,C0567,1,asserts_start_and_end,1944-09-21,,,,1944-09-22,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps), row 21 Sep 44 ""Br I ABN""",assignment_table
+CR0377,C0568,1,asserts_start_and_end,1944-09-23,,,,1944-09-27,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps), row 23 Sep 44 ""Br VIII""",assignment_table
+CR0377,C0569,1,observed_during,,,,,,,,,,
+CR0378,C0570,1,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps), row 28 Sep 44 ""Br XII""",assignment_table
+CR0378,C0571,1,asserts_end,,,,,1944-11-08,,,,"CMH ETO-OB assignment table, row 9 Nov 44 lists ""Cdn II"" in the corps column, so the entry ends on 8 November",
+CR0106,C0571,2,asserts_end,,,,,1944-11-08,,,,"CMH ETO-OB assignment table, Army Attached column: row 9 Nov 44 lists ""Cdn First"", so the entry ends on 8 November",
+CR0379,C0572,1,asserts_start,1944-11-09,,,,,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps), row 9 Nov 44 ""Cdn II""",assignment_table
+CR0380,C0572,2,asserts_start,1944-11-09,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Cdn First"", row 9 Nov 44",assignment_table
+CR0379,C0573,1,asserts_end,,,,,1944-12-16,,,,"CMH ETO-OB assignment table, row 17 Dec 44 lists ""VIII"" in the corps column, so the entry ends on 16 December",
+CR0380,C0573,2,asserts_end,,,,,1944-12-16,,,,"CMH ETO-OB assignment table, Army Attached column: row 17 Dec 44 lists ""Third"", so the entry ends on 16 December",

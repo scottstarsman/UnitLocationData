@@ -2006,26 +2006,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.47,
-     49.52
-    ]
-   },
-   "properties": {
-    "place_id": "PL0102",
-    "name": "Cotentin sector",
-    "alt_names": null,
-    "kind": "area",
-    "precision_km": 25,
-    "country": "FR",
-    "region": "Lower Normandy",
-    "claims_count": 4
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -1.5411,
      49.2908
     ]
@@ -4698,7 +4678,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Champagne-Ardenne",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -6558,7 +6538,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 8
    }
   },
   {
@@ -6618,7 +6598,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "North Brabant",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -7559,6 +7539,46 @@
     "country": "NL",
     "region": "North Brabant",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "place_id": "PL0384",
+    "name": "Veghel, Noord-Brabant, Netherlands",
+    "alt_names": "Vechel",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "North Brabant",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7903,
+     51.8875
+    ]
+   },
+   "properties": {
+    "place_id": "PL0385",
+    "name": "Slijk-Ewijk, Gelderland, Netherlands",
+    "alt_names": "Slik Ewjik",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
    }
   }
  ]

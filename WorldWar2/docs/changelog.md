@@ -2,6 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## sample-verification: start dates, batch (a) (26 October 2026)
+
+Scott's decision to proceed with option C ("set `valid_from` to the table date") for batch (a), the 7 army and army-group relations of the units whose corps links were moved in the entry below. Same branch (commit ids are those of the branch on GitHub); main is untouched. Batches (b) and (c) are not changed.
+
+- **`3b8a6fa` start of 7 table-based relations (V-013).** Same procedure and annotation as the 8 firm cases: `valid_from` is the date of the CMH ETO-OB table row in which the entry began, `valid_from_basis` stays `assignment_table`, `stated_effective_from` of the evidence links follows, the claims keep their dates. Each table was read again on 26 October 2026 (column by column) and every date held:
+  - `CR0161` 10th Armored Division to 12th Army Group (assigned): 23 October 1944 to 5 September 1944. R341, table "Assignment and Attachment to Higher Units", row 5 Sep 44, Army Group Assigned "12th"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm.
+  - `CR0208` 2nd Infantry Division to First Army (assigned): 1 August 1944 to 14 April 1944. R348, table "Assignment and Attachment to Higher Units", row 14 Apr 44, Army Assigned "First"; the earlier rows list First in the Attached column; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/2ID-ETO.htm.
+  - `CR0227` 5th Infantry Division to 12th Army Group (assigned): 4 August 1944 to 1 August 1944. R359, table "Assignment and Attachment to Higher Units", row 1 Aug 44, Army Group Assigned "12th"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/5ID-ETO.htm.
+  - `CR0228` 5th Infantry Division to Third Army (assigned): 4 August 1944 to 1 August 1944. R359, table "Assignment and Attachment to Higher Units", row 1 Aug 44, Army Assigned "Third"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/5ID-ETO.htm.
+  - `CR0253` 29th Infantry Division to First Army (assigned): 1 August 1944 to 22 October 1943. R346, table "Assignment and Attachment to Higher Units", row 22 Oct 43, Army Assigned "First"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/29ID-ETO.htm.
+  - `CR0312` 80th Infantry Division to Third Army (assigned): 1 August 1944 to 11 June 1944. R364, table "Assignment and Attachment to Higher Units", row 11 Jun 44, Army Assigned "Third"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/80ID-ETO.htm.
+  - `CR0352` 94th Infantry Division to Ninth Army (assigned): 28 August 1944 to 11 July 1944. R371, table "Assignment and Attachment to Higher Units", row 11 Jul 44, Army Assigned "Ninth"; https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/94ID-ETO.htm.
+- **Overlap.** CR0228 (Third Army, assigned, now from 1 August 1944) overlaps CR0225 (First Army, assigned, to 3 August 1944, an end inferred from the next claim) on 1 to 3 August; the table lists First Army as attached from 1 August. Documented as a `transfer_dates_differ` row in `data/command_relation_overlaps.csv`; CR0225 is unchanged. The explanations of the rows CR0208/CR0212 and CR0253/CR0258 quote the new starts.
+- **Checked.** Validator 0 errors and the same 3 warnings; 68 `semantic_tests` expectations hold; the review sample is the same (no sampled relation changed); `who_controls`: 5,020 grid answers compared before and after, 160 changed: 8 had no relationship before and now name one, 30 gain a relation line, 122 print an earlier start (2 of them also change certainty from possible to certain); no operational chain and nothing else changed.
+- **Counts for the rest.** 31 relations still start later than their table row (23 army, 8 army group): batch (b) 13 start up to 7 days late, batch (c) 18 start 8 or more days late (5 of them more than 100 days); 57 relations were not compared. All are pending Scott; the list is in `docs/review/verification_results.md`, item 1a.
+
 ## sample-verification: start dates (26 October 2026)
 
 Scott's decision on the start-date convention (V-013): option C, "set `valid_from` to the table date", applied first to the 8 firm cases only. Same branch (commit ids are those of the branch on GitHub); main is untouched.

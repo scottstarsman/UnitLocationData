@@ -6,6 +6,29 @@
     ""
   ],
   "primaryKey": "unit_id",
+  "foreignKeys": [
+    {
+      "fields": "nationality",
+      "reference": {
+        "resource": "nationalities",
+        "fields": "name"
+      }
+    },
+    {
+      "fields": "parent_unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "initial_parent_unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    }
+  ],
   "fields": [
     {
       "name": "unit_id",
@@ -27,11 +50,10 @@
     {
       "name": "nationality",
       "type": "string",
-      "description": "Nationality (US, UK, Canada, Germany, Poland, France, Belgium, Netherlands, Czechoslovakia, Allied ...).",
+      "description": "Nationality: the `name` of a row of data/nationalities.csv (foreign key). The lowercase value is the folder under data/claims/.",
       "constraints": {
         "required": true
-      },
-      "vocabulary": "nationality"
+      }
     },
     {
       "name": "echelon",
@@ -69,23 +91,9 @@
       }
     },
     {
-      "name": "parent_only",
-      "type": "boolean",
-      "description": "true if the unit has no claim rows of its own (it exists only so that other rows can point to it, or it is a placeholder); false if data/claims/<nationality>/<unit_id>.csv exists. Must be true exactly when record_status is placeholder.",
-      "constraints": {
-        "required": true
-      },
-      "trueValues": [
-        "true"
-      ],
-      "falseValues": [
-        "false"
-      ]
-    },
-    {
       "name": "record_status",
       "type": "string",
-      "description": "How much of the unit has been researched: placeholder (identity only, no claim file), partial (claim file exists but coverage is known to be incomplete) or active (claim file exists). A placeholder is not a claim about where the unit was.",
+      "description": "How much of the unit has been researched: placeholder (identity only, no claim file), partial (claim file exists but coverage is known to be incomplete) or active (claim file exists). A placeholder is not a claim about where the unit was. Exactly the placeholders have no claim file (the validator checks this).",
       "constraints": {
         "required": true
       },

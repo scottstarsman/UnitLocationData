@@ -46,7 +46,7 @@ def num(s):
     return int(f) if f == int(f) else f
 
 
-ECHELON_ORDER = ['army_group', 'army', 'corps', 'division', 'brigade', 'regiment/battle_group', 'other']
+ECHELON_ORDER = common.echelon_display_order()   # schema/vocabularies.json, vocabulary echelon_rank (display_order)
 COVERAGE_HEADER = ['unit_id', 'unit_name', 'nationality', 'echelon', 'branch', 'record_status', 'formed_date', 'has_claim_file',
                    'claim_rows', 'first_claim_date', 'last_claim_date', 'initial_parent_unit_id']
 
@@ -105,7 +105,7 @@ def _addday(iso, n):
     return (datetime.date.fromisoformat(iso) + datetime.timedelta(days=n)).isoformat()
 
 
-def relations(claim_rows):
+def relations(claim_rows, units):
     """Derive dated command-relationship intervals from the claims' command_relationships entries.
 
     One interval per (subject, higher, relationship) run. valid_from is the entry's effective_from (else the claim date);
@@ -115,6 +115,7 @@ def relations(claim_rows):
     before the unit's next claim that no longer lists the pair (valid_to_basis inferred_from_next_claim; valid_to_earliest is
     the last claim date that lists it), otherwise blank (open_at_last_claim). A missing effective_to never means indefinitely
     valid. Alternate and disputed rows are skipped (the preferred row of a conflict group decides). support: documented (narrative/order), table (assignment_table), inferred (date_basis inferred, or no basis).
+    higher_name is derived from `units` (common.display_name: '<adjective> <unit_name>'); the claims no longer store it.
     """
     by_unit = {}
     for r in claim_rows:
@@ -133,7 +134,7 @@ def relations(claim_rows):
             out.append(iv)
             del open_iv[key]
         for r in rs:
-            ents = json.loads(r['command_relationships']) if r['command_relationships'] not in ('', 'unknown') else []
+            ents = json.loads(r['command_relationships']) if r['command_relationships'] != '' else []
             keys = set()
             for e in ents:
                 if not e.get('unit_id') or e['relationship'] == 'organic':
@@ -150,7 +151,7 @@ def relations(claim_rows):
                     if e.get('date_basis') and iv['basis'] == 'inferred' and e['date_basis'] != 'inferred':
                         iv['basis'] = e['date_basis']
                 else:
-                    iv = {'subject_unit_id': uid, 'subject_name': r['unit_name'], 'higher_unit_id': e['unit_id'], 'higher_name': e['name'],
+                    iv = {'subject_unit_id': uid, 'subject_name': r['unit_name'], 'higher_unit_id': e['unit_id'], 'higher_name': common.display_name(units[e['unit_id']]['unit_name'], units[e['unit_id']]['nationality']),
                           'relationship': e['relationship'], 'valid_from': start, 'valid_from_latest': e.get('effective_from_latest', ''),
                           'valid_from_time': e.get('effective_time', ''),
                           'valid_from_basis': e.get('date_basis', 'inferred') if 'effective_from' in e else 'claim_date',
@@ -253,7 +254,8 @@ def outputs():
     out['claims.geojson'] = (json.dumps(gj, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
-    out['command_relations.csv'] = common.csv_bytes(REL_HEADER, relations(rows))
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    out['command_relations.csv'] = common.csv_bytes(REL_HEADER, relations(rows, units))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
     out['../docs/coverage.md'] = cov_md + op_md

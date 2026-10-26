@@ -7,6 +7,56 @@
     ""
   ],
   "primaryKey": "claim_id",
+  "foreignKeys": [
+    {
+      "fields": "unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "nationality",
+      "reference": {
+        "resource": "nationalities",
+        "fields": "name"
+      }
+    },
+    {
+      "fields": "parent_unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "operation_id",
+      "reference": {
+        "resource": "operations",
+        "fields": "operation_id"
+      }
+    },
+    {
+      "fields": "reference_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "references_meta",
+        "fields": "reference_id"
+      }
+    }
+  ],
+  "repeatedColumns": {
+    "description": "Columns repeated from the unit table on every claim row so that a claim file is readable on its own. The validator requires them to equal data/units.csv.",
+    "resource": "units",
+    "key": "unit_id",
+    "fields": [
+      "unit_name",
+      "nationality",
+      "echelon",
+      "branch",
+      "theater"
+    ]
+  },
   "fields": [
     {
       "name": "claim_id",
@@ -64,11 +114,10 @@
     {
       "name": "nationality",
       "type": "string",
-      "description": "Nationality of the unit: US, UK, Canada, Germany (extend as needed). Matches the data/claims/<nationality>/ folder in lowercase.",
+      "description": "Nationality of the unit: the `name` of a row of data/nationalities.csv (foreign key; US, UK, Canada, Germany, ... Allied). Repeated from data/units.csv (must equal it). Matches the data/claims/<nationality>/ folder in lowercase.",
       "constraints": {
         "required": true
-      },
-      "vocabulary": "nationality"
+      }
     },
     {
       "name": "unit_name",
@@ -99,15 +148,15 @@
     {
       "name": "parent_unit_id",
       "type": "string",
-      "description": "Unit id (from data/units.csv) of the operational parent on this row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters); \"unknown\" if not verified. The organic parent, when different, is in command_relationships.",
+      "description": "Unit id (from data/units.csv) of the operational parent on this row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters), or if no parent could be verified; in that case command_relationships holds one entry {\"unit_id\": null, \"relationship\": \"unknown\", \"note\": ...}. The organic parent, when different, is in command_relationships.",
       "constraints": {
-        "pattern": "^([A-Z]{2,4}(-[A-Z0-9]+)+|unknown)$"
+        "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
       }
     },
     {
       "name": "command_relationships",
       "type": "string",
-      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null only if the formation is not a unit in units.csv>\", \"name\": \"<formation name>\", \"relationship\": \"organic|assigned|attached|unspecified_subordination|operational_control|administrative_control|supporting|coordinating|reserve|unknown\", \"effective_from\": \"YYYY-MM-DD (optional)\", \"effective_to\": \"YYYY-MM-DD, last day of the relationship (optional)\", \"date_basis\": \"order|assignment_table|narrative|inferred (optional)\", \"note\": \"<optional>\"}]. Allowed keys: unit_id, name, relationship, effective_from, effective_to, date_basis, note. parent_unit_id is the operational parent on the row's date; the standing parent is recorded only here, as an organic, assigned or unspecified_subordination entry. \"unknown\" (not JSON) or blank if nothing is known.",
+      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null only with relationship unknown>\", \"relationship\": \"organic|assigned|attached|unspecified_subordination|operational_control|administrative_control|supporting|coordinating|reserve|unknown\", \"effective_from\": \"YYYY-MM-DD (optional)\", \"effective_to\": \"YYYY-MM-DD, last day of the relationship (optional)\", \"date_basis\": \"order|assignment_table|narrative|inferred (optional)\", \"note\": \"<optional; required when unit_id is null>\"}]. Allowed keys: unit_id, relationship, effective_from, effective_from_latest, ordered_date, effective_to, effective_to_earliest, effective_to_basis, date_basis, effective_time, effective_to_time, note. The name of the formation is not stored: it comes from units.csv (derived display name, see docs/methodology.md). An entry whose formation is not a unit in units.csv has unit_id null, relationship unknown and a note saying what is unknown. parent_unit_id is the operational parent on the row's date; the standing parent is recorded only here, as an organic, assigned or unspecified_subordination entry. Blank if nothing is recorded (a top-level headquarters).",
       "format": "json",
       "jsonVocabulary": {
         "relationship": "relationship"

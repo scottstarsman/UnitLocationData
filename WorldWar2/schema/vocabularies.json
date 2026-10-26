@@ -13,21 +13,6 @@
       "other": "Anything that does not fit above (for example East Africa, Middle East, home-front units). Explain in notes."
     }
   },
-  "nationality": {
-    "description": "Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit. Further nations (Italy, USSR, Japan, ...) are added when their theaters are started.",
-    "values": {
-      "US": "United States (folder us).",
-      "UK": "United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).",
-      "Canada": "Canada (folder canada).",
-      "Germany": "Germany, including Waffen-SS and Luftwaffe ground formations (folder germany).",
-      "Allied": "Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only placeholder or parent_only units).",
-      "Poland": "Poland: Polish formations serving under British or Allied command (folder poland).",
-      "France": "France: Free French and French Army formations (folder france).",
-      "Belgium": "Belgium: Belgian formations (folder belgium).",
-      "Netherlands": "Netherlands: Dutch formations (folder netherlands).",
-      "Czechoslovakia": "Czechoslovakia: Czechoslovak formations (folder czechoslovakia)."
-    }
-  },
   "relationship": {
     "description": "Meaning of the relationship field in each object of command_relationships. Each entry may carry effective_from, effective_to and date_basis (see schema/README.md).",
     "values": {
@@ -173,7 +158,7 @@
     }
   },
   "boolean": {
-    "description": "Boolean fields (established, disestablished, destroyed, parent_only) use lowercase text.",
+    "description": "Boolean fields (established, disestablished, destroyed) use lowercase text.",
     "values": {
       "true": "True.",
       "false": "False."
@@ -182,9 +167,9 @@
   "record_status": {
     "description": "Research state of a unit record in data/units.csv.",
     "values": {
-      "placeholder": "Identity only: the unit exists in the table so that other records can point to it. No claim file; parent_only is true. Not a claim about its location.",
-      "partial": "A claim file exists but coverage is known to be incomplete (for example only some operations are done). parent_only is false.",
-      "active": "A claim file exists. parent_only is false."
+      "placeholder": "Identity only: the unit exists in the table so that other records can point to it. No claim file. Not a claim about its location.",
+      "partial": "A claim file exists but coverage is known to be incomplete (for example only some operations are done).",
+      "active": "A claim file exists."
     }
   },
   "source_token": {
@@ -253,14 +238,6 @@
       "related": "Linked in a way the other values do not capture, for example the German and Allied names of the same battle."
     }
   },
-  "operation_scope": {
-    "description": "Whose name or concept an operation row is (column nationality_scope).",
-    "values": {
-      "Allied": "Allied name or concept.",
-      "German": "German name or concept.",
-      "All": "Neutral or both sides."
-    }
-  },
   "reference_role": {
     "description": "Role of a claim-to-reference link in data/claim_reference_roles.csv: what in the claim the reference supports. A link with no row there has the role general.",
     "values": {
@@ -278,6 +255,96 @@
       "wikipedia": "Wikipedia in any language, its API and Wikimedia pages. One family however many articles are cited.",
       "us_army_cmh": "US Army Center of Military History publications and the sites that republish them (HyperWar copies of the Green Books, history.army.mil, archive copies of them).",
       "openstreetmap": "OpenStreetMap / Nominatim, the geocoder behind many coordinates. A gazetteer, not evidence that the unit was there."
+    }
+  },
+  "alliance": {
+    "description": "Side of the war a nationality belongs to (column alliance of data/nationalities.csv).",
+    "values": {
+      "Allied": "Allied powers (including combined Allied headquarters).",
+      "Axis": "Axis powers."
+    }
+  },
+  "nationality_kind": {
+    "description": "Kind of row in data/nationalities.csv.",
+    "values": {
+      "nation": "A single nation; the lowercase name is the folder under data/claims/.",
+      "multinational": "A combined headquarters that belongs to no single nation (Allied)."
+    }
+  },
+  "echelon_rank": {
+    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour).",
+    "values": {
+      "squad": 0,
+      "platoon": 0,
+      "company": 0,
+      "battalion": 1,
+      "regiment/battle_group": 2,
+      "brigade": 3,
+      "division": 4,
+      "corps": 5,
+      "army": 6,
+      "army_group": 7,
+      "other": 8
+    },
+    "display_order": [
+      "army_group",
+      "army",
+      "corps",
+      "division",
+      "brigade",
+      "regiment/battle_group",
+      "other"
+    ]
+  },
+  "relationship_groups": {
+    "description": "Groups of command-relationship values used by the checks and the derived tables (single source for scripts/validate.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py).",
+    "values": {
+      "standing": [
+        "organic",
+        "assigned",
+        "unspecified_subordination",
+        "unknown"
+      ],
+      "active": [
+        "operational_control",
+        "attached"
+      ]
+    }
+  },
+  "higher_than_organic": {
+    "description": "For each echelon, the higher echelons whose headquarters cannot be an `organic` parent (a division, corps or army under a higher headquarters is assigned, attached, unspecified_subordination or operational_control). scripts/validate.py warns when `organic` is used across these pairs.",
+    "values": {
+      "division": [
+        "army_group",
+        "army",
+        "corps"
+      ],
+      "corps": [
+        "army_group",
+        "army"
+      ],
+      "army": [
+        "army_group",
+        "other"
+      ],
+      "army_group": [
+        "other"
+      ]
+    }
+  },
+  "source_type": {
+    "description": "Kind of source of a row in data/references_meta.csv (column source_type).",
+    "values": {
+      "official_history": "A government or armed-forces official history (for example a US Army Green Book volume).",
+      "unit_history": "A history written by or about the unit.",
+      "assignment_table": "A table of unit assignments (for example an order of battle by date).",
+      "reference_compilation": "A reference compilation such as a unit or order-of-battle web reference.",
+      "encyclopedia": "An encyclopedia article (Wikipedia).",
+      "gazetteer_geocoder": "A gazetteer or geocoding service used for coordinates only.",
+      "monument_or_memorial": "A monument, memorial or memorial-site page.",
+      "archive_document": "An archived primary or period document.",
+      "news_or_web_article": "A news report or other web article.",
+      "other": "Anything else; explain in reliability_note."
     }
   }
 }

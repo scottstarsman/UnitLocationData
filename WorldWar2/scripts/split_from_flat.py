@@ -15,6 +15,9 @@ Changes made on the way (everything else is copied unchanged):
   * builds data/units.csv: adds theater, parent_unit_id (from parent_division_unit_id),
     parent_only (true for units with no rows left), drops v5-only bookkeeping columns
 
+HISTORICAL: this script reproduces the layout of that migration step (including the `parent_only` column, the entry `name` and the `unknown`
+sentinels). The current layout is reached by scripts/migrate_normalize.py, which has to be applied after it.
+
 Usage:  python scripts/split_from_flat.py [--out DIR]
 By default it writes into the repository (overwriting data/). Use --out to write elsewhere,
 for example to check that the committed data/ is reproducible:

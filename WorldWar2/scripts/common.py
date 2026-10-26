@@ -1,12 +1,15 @@
 """Shared helpers for the validation, build and split scripts (standard library only)."""
 import csv
+import functools
 import io
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CLAIMS_DIR = os.path.join(ROOT, 'data', 'claims')
 UNITS_CSV = os.path.join(ROOT, 'data', 'units.csv')
+NATIONALITIES_CSV = os.path.join(ROOT, 'data', 'nationalities.csv')
 SCHEMA_DIR = os.path.join(ROOT, 'schema')
 BUILD_DIR = os.path.join(ROOT, 'build')
 
@@ -22,6 +25,66 @@ def load_schema(name='claims'):
 
 def load_vocabularies():
     return load_json(os.path.join(SCHEMA_DIR, 'vocabularies.json'))
+
+
+def vocab_values(name):
+    """The allowed values of one vocabulary of schema/vocabularies.json, in file order (the single source; do not copy lists into code)."""
+    return list(load_vocabularies()[name]['values'])
+
+
+def vocab_descriptions(name):
+    """{value: description} of one vocabulary."""
+    return dict(load_vocabularies()[name]['values'])
+
+
+def echelon_rank():
+    """{echelon: rank} from the echelon_rank vocabulary (higher = larger formation)."""
+    return dict(load_vocabularies()['echelon_rank']['values'])
+
+
+def echelon_display_order():
+    return list(load_vocabularies()['echelon_rank']['display_order'])
+
+
+def relationship_group(name):
+    """Tuple of command-relationship values in one group of the relationship_groups vocabulary ('standing', 'active')."""
+    return tuple(load_vocabularies()['relationship_groups']['values'][name])
+
+
+def higher_than_organic():
+    return {k: tuple(v) for k, v in load_vocabularies()['higher_than_organic']['values'].items()}
+
+
+@functools.lru_cache(maxsize=1)
+def load_nationalities():
+    """data/nationalities.csv as a list of dicts (code, name, adjective, alt_adjectives, alliance, kind, note); {} rows if missing."""
+    if not os.path.isfile(NATIONALITIES_CSV):
+        return ()
+    return tuple(read_dicts(NATIONALITIES_CSV)[1])
+
+
+def nationality_names():
+    return [n['name'] for n in load_nationalities()]
+
+
+def nationality_by_name():
+    return {n['name']: n for n in load_nationalities()}
+
+
+def adjectives(nat):
+    """Adjectives of a nationality row, the primary one first (US: US, American)."""
+    return [nat['adjective']] + [a.strip() for a in nat['alt_adjectives'].split(';') if a.strip()]
+
+
+def display_name(unit_name, nationality):
+    """Name used where a unit must be unambiguous across nations: '<adjective> <unit_name>' (US VII Corps, British I Corps).
+    Multinational headquarters and names that already contain the adjective as a word stay as they are. Derived, never stored."""
+    nat = nationality_by_name().get(nationality)
+    if not nat or nat['kind'] == 'multinational':
+        return unit_name
+    if any(re.search(r'\b%s\b' % re.escape(a), unit_name) for a in adjectives(nat)):
+        return unit_name
+    return '%s %s' % (nat['adjective'], unit_name)
 
 
 def field_names(schema):

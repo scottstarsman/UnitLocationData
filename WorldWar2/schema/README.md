@@ -4,6 +4,7 @@ The machine-readable definitions live next to this file and are what `scripts/va
 
 - [`claims.schema.json`](claims.schema.json): column order, types and constraints of every file under `data/claims/` (Frictionless Table Schema style; `vocabulary` is a custom property pointing at a key in `vocabularies.json`).
 - [`units.schema.json`](units.schema.json): the same for `data/units.csv`.
+- [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `references_meta`, `claim_reference_roles`).
 - [`vocabularies.json`](vocabularies.json): controlled vocabularies and the confidence rubric.
 
 All CSV files are UTF-8, LF line endings, comma separated, with a header row, minimal quoting (fields with commas, quotes or newlines are quoted). Missing values are empty strings. Dates are `YYYY-MM-DD`. Booleans are lowercase `true`/`false`. Coordinates are decimal degrees (WGS84). The column order is the same in every claim file; `theater` follows `date`.
@@ -24,8 +25,8 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `unit_name` | string | yes | Unit name only, for example "29th Infantry Division". |  |
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
 | `branch` | string | yes | Service or arm (see vocabulary). | vocabulary `branch` |
-| `parent_unit_id` | string | no | Unit id (from `data/units.csv`) of the operational parent on that row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters); `unknown` if not verified. The organic parent, when different, is in `command_relationships`. | pattern `^([A-Z]{2,4}(-[A-Z0-9]+)+\|unknown)$` |
-| `command_relationships` | string (JSON) | no | JSON list of command relationships on that date, see [command_relationships](#command_relationships). `unknown` (plain text, not JSON) or blank if nothing is known. | valid JSON list, or `unknown` |
+| `parent_unit_id` | string | no | Unit id (from `data/units.csv`) of the operational parent on that row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters) or if none was verified; in the second case `command_relationships` holds the entry `{"unit_id": null, "relationship": "unknown", "note": ...}`. The text `unknown` is not a value. The organic parent, when different, is in `command_relationships`. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$`; foreign key to `units` |
+| `command_relationships` | string (JSON) | no | JSON list of command relationships on that date, see [command_relationships](#command_relationships). Blank if nothing is recorded (top-level headquarters); the text `unknown` is not a value. | blank or a valid JSON list |
 | `commander` | string | yes | Commander on that date, rank and name as given by sources; "unknown" if not verified. |  |
 | `latitude` | number | yes | Decimal degrees WGS84. | -90 to 90 |
 | `longitude` | number | yes | Decimal degrees WGS84. | -180 to 180 |
@@ -59,29 +60,66 @@ Primary key: `claim_id` (unique across the whole repository). Rows in each file 
 |---|---|---|---|---|
 | `unit_id` | string | yes | Stable unit key. Primary key. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
 | `unit_name` | string | yes | Unit name only. |  |
-| `nationality` | string | yes | Nationality (US, UK, Canada, Germany, Poland, France, Belgium, Netherlands, Czechoslovakia, Allied ...). | vocabulary `nationality` |
+| `nationality` | string | yes | Nationality: the `name` of a row of [`data/nationalities.csv`](#nationalities-columns-datanationalitiescsv) (US, UK, Canada, Germany, Poland, France, Belgium, Netherlands, Czechoslovakia, Allied ...). | foreign key to `nationalities.name` |
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
 | `branch` | string | yes | Service or arm (see vocabulary). | vocabulary `branch` |
 | `theater` | string | yes | Primary theater of the unit (single value; claim rows carry their own theater). | vocabulary `theater` |
-| `parent_unit_id` | string | no | Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use the claim columns `parent_unit_id` and `command_relationships` for time-dependent parents. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
-| `parent_only` | boolean | yes | true if the unit has no claim rows of its own (it exists only so that other rows can point to it, or it is a placeholder); false if data/claims/<nationality>/<unit_id>.csv exists. True exactly when `record_status` is `placeholder`. | `true`/`false` |
-| `record_status` | string | yes | `placeholder` (identity only, no claim file; not a claim about location), `partial` (claim file known to be incomplete) or `active` (claim file exists). | vocabulary `record_status` |
+| `parent_unit_id` | string | no | Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use the claim columns `parent_unit_id` and `command_relationships` for time-dependent parents. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$`; foreign key to `units` |
+| `record_status` | string | yes | `placeholder` (identity only, no claim file; not a claim about location), `partial` (claim file known to be incomplete) or `active` (claim file exists). Exactly the placeholders have no claim file (the validator checks it). The former column `parent_only` said the same and was removed. | vocabulary `record_status` |
 | `formed_date` | string | no | Formation or activation date of the unit, or of the designation the record uses (see `unit_note`), as given by `formed_date_source`: `YYYY-MM-DD`, `YYYY-MM` or `YYYY`; blank if unknown. It is not the date the unit arrived in the theater. | pattern `^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$`; must be a real date |
 | `formed_date_source` | string | no | URL of the page that gives `formed_date`. Required when `formed_date` is set. | URL |
-| `initial_parent_unit_id` | string | no | Placeholder-level hint: the formation the unit is listed under in `initial_parent_source` as of `initial_parent_as_of`. Blank where no source clearly gives it. Not an organic-versus-attached statement and not a claim: time-dependent parents of claim rows go in the claim columns `parent_unit_id` and `command_relationships`. Different from `parent_unit_id` (fixed organic parent of battle groups). | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$`; must resolve |
+| `initial_parent_unit_id` | string | no | Placeholder-level hint: the formation the unit is listed under in `initial_parent_source` as of `initial_parent_as_of`. Blank where no source clearly gives it. Not an organic-versus-attached statement and not a claim: time-dependent parents of claim rows go in the claim columns `parent_unit_id` and `command_relationships`. Different from `parent_unit_id` (fixed organic parent of battle groups). | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$`; foreign key to `units` |
 | `initial_parent_as_of` | string | no | Date the listing applies to, `YYYY-MM-DD` or `YYYY-MM` (for example `1944-06-06` for the German 6 June 1944 order of battle). Set together with the two other `initial_parent_*` columns or not at all. | real date |
 | `initial_parent_source` | string | no | Source token for the listing. | vocabulary `source_token` |
 | `component_of_note` | string | no | Free text on the placeholder parent link, for example why it is blank or that the source lists the unit under two formations. |  |
 | `unit_note` | string | no | Free text on the unit's identity: renames, reconstitutions, lineage caveats, uncertain Western Front service. |  |
 | `listing_source` | string | no | Semicolon-separated source tokens naming where the unit was found when the placeholder was created. A listing is not evidence of a date or place. | tokens from vocabulary `source_token` |
 
-Rows are sorted by `unit_id`. `parent_only = true` units (`record_status = placeholder`) have no claim file; they exist so that `parent_unit_id`, `command_relationships` and `engaged_with` names resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active` and `parent_only = false`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with `parent_only` and the existence of a claim file, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
+Rows are sorted by `unit_id`. Units with `record_status = placeholder` have no claim file; they exist so that `parent_unit_id`, `command_relationships` and `engaged_with` names resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with the existence of a claim file, that the nationality is a row of `data/nationalities.csv` and the unit id starts with that row's code, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
+
+## nationalities columns (`data/nationalities.csv`)
+
+Lookup table, hand-maintained, sorted by `code`. It is the single list of nations: `units.nationality`, `claims.nationality` and `operations.nationality_scope` are foreign keys to its `name`, and the adjective used in names (`engaged_with` matching, the derived `higher_name` of `build/command_relations.csv`) comes from here instead of from code.
+
+| column | meaning | constraints |
+|---|---|---|
+| `code` | Primary key: the prefix of every `unit_id` of this nation (GER, US, CAN, ...). | 2 to 4 capital letters; unique |
+| `name` | The value used in the `nationality` columns and the lowercase folder under `data/claims/` (Germany, US, UK, Canada, ..., Allied). | unique; not `All` (reserved for operation scopes) |
+| `adjective` | Adjective used in display names ("German", "British", "US"). | required |
+| `alt_adjectives` | Further adjectives accepted when matching `engaged_with` entries, `;`-separated (US: American). | optional |
+| `alliance` | Side: `Allied` or `Axis` (vocabulary `alliance`). | vocabulary |
+| `kind` | `nation`, or `multinational` for combined headquarters (vocabulary `nationality_kind`). | vocabulary |
+| `note` | Scope of the row, folder and id conventions. | required |
+
+How the former spellings map: the unit id prefix is `GER`, the nationality value is `Germany` (units, claims, folder `germany`) and the operation scope is now also `Germany` (it was `German`); "German" is only the adjective in names. The three `Allied` units (AFHQ, SHAEF, First Allied Airborne Army) keep the explicit value `Allied` of kind `multinational`: no source in the table says which nation staffed them, so no nationality was assigned.
+
+## Foreign keys
+
+The references between tables are declared as `foreignKeys` (Frictionless Table Schema style) in `claims.schema.json`, `units.schema.json` and `relations.schema.json`, and enforced by `scripts/validate.py` (a blank value is allowed; a `separator` marks a column that holds a list of keys; `alsoAllowed` names accepted extra values):
+
+| from | column | to |
+|---|---|---|
+| claims | `unit_id`, `parent_unit_id` | units.`unit_id` |
+| claims | `nationality` | nationalities.`name` |
+| claims | `operation_id` | operations.`operation_id` |
+| claims | `reference_ids` (`;` list) | references_meta.`reference_id` |
+| units | `parent_unit_id`, `initial_parent_unit_id` | units.`unit_id` |
+| units | `nationality` | nationalities.`name` |
+| operations | `parent_operation_id` | operations.`operation_id` |
+| operations | `nationality_scope` | nationalities.`name` (or `All`) |
+| operations, operation_relations | `reference_ids` (`;` list) | references_meta.`reference_id` |
+| operation_relations | `from_operation_id`, `to_operation_id` | operations.`operation_id` |
+| operation_exceptions | `claim_id` / `operation_id` | claims.`claim_id` / operations.`operation_id` |
+| coordinate_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
+| claim_reference_roles | `claim_id` / `reference_id` | claims.`claim_id` / references_meta.`reference_id` |
+
+Not foreign keys: `command_relationships[].unit_id` (inside JSON; checked by the validator against `units`), `conflict_group_id` (a group exists as the set of claims that share the id), `engaged_with` and `composing_units` (free text for now). `claims.schema.json` also declares `repeatedColumns`: the columns repeated from the unit table on every claim (`unit_name`, `nationality`, `echelon`, `branch`, `theater`) must equal `data/units.csv`. The primary keys of the side tables are checked for uniqueness.
 
 ## unit_id pattern
 
 `NATION-TYPE-NUMBER+ECHELONLETTER`, all upper case.
 
-- Nation: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF).
+- Nation: the `code` of the unit's row in `data/nationalities.csv`: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF). The validator requires the prefix to equal the code of the unit's nationality. The id is an opaque stable key: the attributes it spells (nation, type, echelon letter) are not re-derived and the id is never renamed when they change.
 - Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger, also Fallschirmjaeger corps), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West), `OKW`, `SHAEF`; placeholder additions: `VG` (Volksgrenadier division), `PG` (panzergrenadier), `SSGEB` (SS mountain), `SSGR` (SS grenadier), `LFD` (Luftwaffe field division), `RES` (reserve division), `DIV` (numbered or z.b.V. division), `PZB` (Panzer-Brigade), `PZA` (panzer army), `FJA` (parachute army), `AA` (Armee-Abteilung), `PZ`/`SSCOR`/`LFC` for panzer, SS and Luftwaffe field corps, `VAK` (Volks-Artillerie-Korps), `OBNW`/`WBN` (other HQs), `CDO` (commando brigade).
 - Echelon letter: `G` army group, `A` army, `C` corps, `D` division, `B` brigade, `H` other HQ.
 - Examples: `US-INF-029D`, `GER-PZ-021D`, `UK-ARM-011D`, `CAN-INF-003D`, `GER-SSPZ-001C` (I SS Panzer Corps), `GER-SSPZ-001D` (1st SS Panzer Division).
@@ -103,12 +141,12 @@ Rows are sorted by `unit_id`. `parent_only = true` units (`record_status = place
 A JSON list written on one line (CSV-quoted like `strength_json`), or the plain text `unknown`, or blank. Each element:
 
 ```json
-[{"unit_id":"GER-SSPZ-002D","name":"German 2nd SS Panzer Division Das Reich","relationship":"assigned"},{"unit_id":"GER-PZ-LEHRD","name":"German Panzer Lehr Division","relationship":"attached","note":"Placed under Panzer Lehr on arrival"}]
+[{"unit_id":"GER-SSPZ-002D","relationship":"assigned"},{"unit_id":"GER-PZ-LEHRD","relationship":"attached","note":"Placed under Panzer Lehr on arrival"}]
 ```
 
-Keys: `unit_id` (required; a unit id from `data/units.csv`; `null` only for a formation that is not a unit, such as the placeholder "standing parent not identified"), `name` (required), `relationship` (required, see the `relationship` vocabulary below), `effective_from` and `effective_to` (optional dates `YYYY-MM-DD`: the first and last day the relationship held, when a source gives them; an entry that takes effect after the row's date, or ended before it, draws a validator warning), `date_basis` (optional: `order`, `assignment_table`, `narrative` or `inferred`, see the `relationship_date_basis` vocabulary: where the dates come from; a table date may differ from the day command actually passed) and `note` (optional string). Added in the Batch 2 corrections (all optional): `ordered_date` (`YYYY-MM-DD`: the day a superior headquarters ordered the change, when it differs from `effective_from`, which stays the day the relationship took effect; it cannot be later than `effective_from`), `effective_from_latest` (the latest possible start, when only an interval is known; `effective_from` is then the earliest) and `effective_to_earliest` (the earliest possible end, with `effective_to` the latest), and `effective_to_basis` (same values as `date_basis`: where the end date comes from; only with `effective_to`). Times of day (0600, noon) go in the `note`, because the sources mix local, British and double-summer time. No other keys.
+Keys: `unit_id` (required; a unit id from `data/units.csv`; `null` only with relationship `unknown` and a `note` saying what is unknown, for example "standing parent not identified" or "parent not verified"), `relationship` (required, see the `relationship` vocabulary below), `effective_from` and `effective_to` (optional dates `YYYY-MM-DD`: the first and last day the relationship held, when a source gives them; an entry that takes effect after the row's date, or ended before it, draws a validator warning), `date_basis` (optional: `order`, `assignment_table`, `narrative` or `inferred`, see the `relationship_date_basis` vocabulary: where the dates come from; a table date may differ from the day command actually passed) and `note` (optional string). Added in the Batch 2 corrections (all optional): `ordered_date` (`YYYY-MM-DD`: the day a superior headquarters ordered the change, when it differs from `effective_from`, which stays the day the relationship took effect; it cannot be later than `effective_from`), `effective_from_latest` (the latest possible start, when only an interval is known; `effective_from` is then the earliest) and `effective_to_earliest` (the earliest possible end, with `effective_to` the latest), and `effective_to_basis` (same values as `date_basis`: where the end date comes from; only with `effective_to`). Times of day (0600, noon) go in the `note`, because the sources mix local, British and double-summer time. No other keys. There is no `name` key: the formation's name is derived from `data/units.csv` (`<nationality adjective> <unit_name>`, see `common.display_name` in `scripts/common.py`; multinational headquarters keep their own name), so a rename is made in one place.
 
-`parent_unit_id` is the **operational parent on the row's date**: the formation the unit was attached to or operating under that day, otherwise its standing parent. It must also appear in the list. The **standing parent is recorded only here**, as an `organic`, `assigned` or `unspecified_subordination` entry: when an `attached` or `operational_control` entry exists, `parent_unit_id` must be that entry and the standing parent stays in the list (an independent brigade attached to a division for an assault is `attached` to the division and `assigned` to the army or corps that holds it). If the standing parent is not known, say so with an entry of relationship `unknown`. An entry never describes a relationship that only started on a later date: use `effective_from` and let the row's date decide which entries apply. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a `parent_only` unit if it has no claims) rather than using `null`: the validator warns about a named higher headquarters without a unit id.
+`parent_unit_id` is the **operational parent on the row's date**: the formation the unit was attached to or operating under that day, otherwise its standing parent. It must also appear in the list. The **standing parent is recorded only here**, as an `organic`, `assigned` or `unspecified_subordination` entry: when an `attached` or `operational_control` entry exists, `parent_unit_id` must be that entry and the standing parent stays in the list (an independent brigade attached to a division for an assault is `attached` to the division and `assigned` to the army or corps that holds it). If the standing parent is not known, say so with an entry of relationship `unknown`. An entry never describes a relationship that only started on a later date: use `effective_from` and let the row's date decide which entries apply. For a battle group, the `parent_unit_id` in `data/units.csv` must be listed here as `organic`. Add a formation to `data/units.csv` (as a placeholder unit if it has no claims) rather than using `null`: the validator rejects `null` for any relationship except `unknown`.
 
 How to choose the value (the full definitions are in the table below):
 
@@ -171,7 +209,7 @@ Claims point at one operation row through `operation_id`. The operations table r
 | `date_basis` | `cmh_streamer`, `official_history`, `secondary` or `derived` (a note says how). |
 | `parent_date_exception` | Why the row's dates fall outside its parent's (blank when they do not). Without it the validator warns. |
 | `theater` | A `theater` vocabulary value. |
-| `nationality_scope` | `Allied`, `German` or `All`: whose name or concept the row is (a German codename is its own row, linked to the Allied battle). |
+| `nationality_scope` | A nationality `name` from `data/nationalities.csv` (`Allied`, `Germany`, ...) or `All`: whose name or concept the row is (a German codename is its own row, linked to the Allied battle). Foreign key to `nationalities.name` (also allowing `All`). |
 | `reference_ids` | `;`-separated `reference_id`s from `data/references.csv` that source the name and dates. |
 | `notes` | Contested boundaries, placement decisions, what the row is for. Required when `reference_ids` is empty or the dates are `derived`. |
 
@@ -247,20 +285,7 @@ Primary theater of operations the claim belongs to. One value per claim row; a u
 
 ### nationality
 
-Nation of the unit. The lowercase value is the folder name under data/claims/. Add a nation here before adding its first unit. Further nations (Italy, USSR, Japan, ...) are added when their theaters are started.
-
-| value | meaning |
-|---|---|
-| `US` | United States (folder us). |
-| `UK` | United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk). |
-| `Canada` | Canada (folder canada). |
-| `Germany` | Germany, including Waffen-SS and Luftwaffe ground formations (folder germany). |
-| `Allied` | Combined Allied headquarters that belong to no single nation, for example SHAEF (folder allied; no claim files yet, only placeholder or parent_only units). |
-| `Poland` | Poland: Polish formations serving under British or Allied command (folder poland). |
-| `France` | France: Free French and French Army formations (folder france). |
-| `Belgium` | Belgium: Belgian formations (folder belgium). |
-| `Netherlands` | Netherlands: Dutch formations (folder netherlands). |
-| `Czechoslovakia` | Czechoslovakia: Czechoslovak formations (folder czechoslovakia). |
+Defined by the lookup table `data/nationalities.csv` (see "nationalities columns" below), not by `vocabularies.json`. The `name` is the value used in `units.nationality`, `claims.nationality` and `operations.nationality_scope`; its lowercase form is the folder under `data/claims/`; the `code` is the prefix of every `unit_id` of that nation (GER for Germany, CAN for Canada, ...). Add a row to the table before adding the first unit of a new nation (Italy, USSR, Japan, ...). `Allied` is an explicit value of kind `multinational` for combined headquarters (AFHQ, SHAEF, First Allied Airborne Army); the unit records do not say which nation staffed them, so it was not replaced.
 
 ### relationship
 
@@ -390,7 +415,7 @@ Numeric 0-1 score applied by rule from location quality and source families. Onl
 
 ### Operation vocabularies
 
-`op_type`, `operation_date_basis`, `operation_relation` and `operation_scope` (the values of `op_type`, `date_basis`, `relation` and `nationality_scope`) are defined in `schema/vocabularies.json` and described under "Operations" above. The CMH campaign streamers and the other operations are rows of `data/operations.csv`, not vocabulary values.
+`op_type`, `operation_date_basis` and `operation_relation` (the values of `op_type`, `date_basis` and `relation`) are defined in `schema/vocabularies.json` and described under "Operations" above (`scripts/operations.py` reads them from there); `nationality_scope` takes the names of `data/nationalities.csv` plus `All`. The CMH campaign streamers and the other operations are rows of `data/operations.csv`, not vocabulary values.
 
 ### event_type
 
@@ -461,7 +486,7 @@ What part of the unit the figures in strength_json describe. Required whenever p
 
 ### boolean
 
-Boolean fields (established, disestablished, destroyed, parent_only) use lowercase text.
+Boolean fields (established, disestablished, destroyed) use lowercase text.
 
 | value | meaning |
 |---|---|
@@ -474,9 +499,9 @@ Research state of a unit record in data/units.csv.
 
 | value | meaning |
 |---|---|
-| `placeholder` | Identity only: the unit exists in the table so that other records can point to it. No claim file; parent_only is true. Not a claim about its location. |
-| `partial` | A claim file exists but coverage is known to be incomplete (for example only some operations are done). parent_only is false. |
-| `active` | A claim file exists. parent_only is false. |
+| `placeholder` | Identity only: the unit exists in the table so that other records can point to it. No claim file. Not a claim about its location. |
+| `partial` | A claim file exists but coverage is known to be incomplete (for example only some operations are done). |
+| `active` | A claim file exists. |
 
 ### source_token
 
@@ -495,3 +520,13 @@ Short tokens used in listing_source and initial_parent_source. See docs/sources.
 | `WPDRAGOON` | en.wikipedia 'Operation Dragoon order of battle'. |
 | `WPNORDWIND` | en.wikipedia 'Operation Nordwind'. |
 | `WPUNIT` | The unit's own en.wikipedia article (no Wikipedia order-of-battle page above links to it). |
+
+### Vocabularies read by the scripts
+
+These entries of `vocabularies.json` are not field vocabularies; they hold values that used to be copied into the scripts, and the scripts read them through `scripts/common.py`:
+
+- `echelon_rank`: `values` maps each echelon (and the smaller levels squad, platoon, company, battalion) to a rank (higher = larger formation; `other` = 8) for the hierarchy checks of `validate.py`, `audit_temporal_relationships.py` and `who_controls.py`; `display_order` is the order of echelons in `build/coverage.csv` and `docs/coverage.md`.
+- `relationship_groups`: `standing` (organic, assigned, unspecified_subordination, unknown) and `active` (operational_control, attached).
+- `higher_than_organic`: for each echelon, the higher echelons whose headquarters cannot be an `organic` parent.
+- `source_type`: the allowed `source_type` values of `data/references_meta.csv`.
+- `alliance` and `nationality_kind`: the allowed `alliance` and `kind` values of `data/nationalities.csv`.

@@ -14,7 +14,7 @@ data/units.csv                            unit table (one row per unit, includin
 schema/                                   machine-readable schema + vocabularies + human-readable README
 scripts/                                  validate.py, check_coordinates.py, audit_command_location.py, audit_temporal_relationships.py, who_controls.py, build.py, promote_placeholders.py, migrate_campaign.py, split_from_flat.py, migrate_parent_formation.py (standard library only)
 build/                                    GENERATED combined outputs (all_claims.csv, claims.geojson, coverage.csv; docs/coverage.md is generated too)
-docs/                                     methodology, sources, roadmap, coverage (generated)
+docs/                                     methodology, sources, roadmap, coverage (generated); docs/review/ holds the review notes
 archive/v5_flat/                          the flat CSVs the per-unit files were first split from
 (repository root) .github/workflows/validate.yml   CI for pull requests and pushes to main; runs the commands below inside WorldWar2/
 ```
@@ -60,6 +60,7 @@ Every row needs a source, conflicting claims become separate rows, and nothing i
 - [docs/sources.md](docs/sources.md): sources used, reliability, licensing
 - [docs/roadmap.md](docs/roadmap.md): scale-up plan and known gaps
 - [docs/coverage.md](docs/coverage.md): generated coverage of the unit table (placeholder vs active)
+- [docs/review/](docs/review/): review notes: what each reviewer claimed, what the sources say, what changed and what was declined
 - [schema/README.md](schema/README.md): column and vocabulary reference
 
 ## Licence and citation

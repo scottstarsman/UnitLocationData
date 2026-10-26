@@ -28,6 +28,15 @@ Thank you for helping. This project is only useful if every row can be checked, 
 4. A unit's `unit_name`, `nationality`, `echelon` and `branch` in every claim row must equal the values in `units.csv`.
 5. Add a claim row (above) and validate.
 
+## Add an operation
+
+1. Check `data/operations.csv` first: the operation may exist under another name (`alt_names`) or as a parent you can use.
+2. Add a row (kept sorted by `operation_id`). `operation_id` is `OP-` plus upper-case words and is never renamed or reused. Set `op_type`, the `parent_operation_id` (the smallest enclosing row: a battle goes under its operation, an operation under its CMH campaign; leave blank for a row that spans two campaigns, such as Lorraine), inclusive `start_date` and `end_date`, `date_basis`, `theater`, and `nationality_scope` (a German codename is its own row with scope `German`).
+3. Cite where the dates come from in `reference_ids` (add the URL to `data/references_meta.csv`: `python scripts/build_references.py --add URL`, then edit the skeleton row; see the pull request checklist below) and use the CMH campaign streamer dates or an official history for `date_basis` where one exists. Where sources disagree on a boundary, pick one, say so in `notes` and cite both. A row with no source needs a note saying why (`date_basis derived`).
+4. If the dates fall outside the parent's, fill `parent_date_exception` with the reason. Add the non-parent links to `data/operation_relations.csv` (`follows`, `concurrent_with`, `supports`, `succeeded_by`, `related`).
+5. Point claims at the new row (`operation_id` in the claim files). A claim dated just outside the operation's dates that you want to keep goes in `data/operation_exceptions.csv` with a reason.
+6. Run `python scripts/validate.py` and `python scripts/build.py`, and commit the data and the regenerated `build/` files. Only add operations that a claim needs, plus their parent chain.
+
 ## Per-row review checklist
 
 Use this for every new row, and for each row in a spot check (the reviewer should check against a source the author did not use). Answer each point from the source, not from the existing row.
@@ -65,7 +74,7 @@ python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim t
 - [ ] `python scripts/validate.py` passes, and any WARNING lines for rows you touched are fixed or explained in `notes`.
 - [ ] `python scripts/audit_command_location.py` was run and its counts for the new rows were reviewed.
 - [ ] `python scripts/audit_temporal_relationships.py` was run and any finding that involves a new or changed row was checked against the source (a finding is a prompt, not an error; say in the pull request which are real and which are expected patterns).
-- [ ] Every new row has a `campaign` (CMH streamer by date); `operation_name` is blank outside a named operation's dates.
+- [ ] Every new row has an `operation_id` that exists in `data/operations.csv` (the most specific operation whose dates contain the row's date; the campaign row when no named operation applies). A new operation has its own row, dates, a source or a note, and a reference row (see "Add an operation").
 - [ ] The per-row review checklist above was applied to every new or changed row (a second person checks 15 rows or 10% of a large batch, chosen by risk as described in `docs/methodology.md`).
 - [ ] Every new source URL has a row in `data/references_meta.csv` (`python scripts/build_references.py --seed` adds a skeleton to edit; `validate.py` fails without it).
 - [ ] `python scripts/build.py` was run and the `build/` changes (including `data/references.csv`) are committed.

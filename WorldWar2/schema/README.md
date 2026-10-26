@@ -32,9 +32,7 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `location_name` | string | yes | Name of the place the coordinate refers to. |  |
 | `location_represents` | string | yes | What the point stands for (see vocabulary). | vocabulary `location_represents` |
 | `precision_km` | number | yes | Judgment estimate of the radius in km within which the unit probably was (banded). | vocabulary `precision_km` |
-| `campaign` | string | yes | US Army CMH campaign streamer whose dates contain the row's date (Normandy, Northern France, Southern France, Rhineland, Ardennes-Alsace, Central Europe): a date-and-area label, not credit for the unit; applied to every nationality alike. One value, or two separated by `; ` only where both campaigns cover the date. Backfilled by date for all rows (`scripts/migrate_campaign.py`). | vocabulary list `campaign` |
-| `operation_name` | string | no | Named parent operation, only within the operation's dates: Overlord 6 June-30 August 1944, Dragoon 15 August-14 September, Market Garden 17-25 September. Blank after the operation ends (`campaign`, `sub_operation_name` and the notes carry the context); Overlord is not an umbrella label for the whole campaign. A row outside the dates draws a validator warning. | vocabulary `operation_name` |
-| `sub_operation_name` | string | no | Sub-operation(s), semicolon-separated (Neptune, Epsom, Perch, ...). Blank for plain parent-operation rows. |  |
+| `operation_id` | string | yes | Key of the most specific operation, battle, phase or campaign the row belongs to, in `data/operations.csv` (for example `OP-EPSOM`; `OP-CAMP-NORTHERN-FRANCE` when no named operation applies). The parent chain gives the campaign, the umbrella (Overlord) and the named operation; `build/all_claims.csv` carries them as derived columns. The date should lie inside the operation's dates. See "Operations" below. | pattern `^OP-[A-Z0-9]+(-[A-Z0-9]+)*$` |
 | `composing_units` | string | no | Subordinate units, listed when first given or when they change; blank means unchanged from the unit's previous row; "unknown" means no data. |  |
 | `established` | boolean | yes | True on the row where the source says the unit was formed. | `true`/`false` |
 | `disestablished` | boolean | yes | True on the row where the source says the unit was disbanded. | `true`/`false` |
@@ -95,7 +93,7 @@ Rows are sorted by `unit_id`. `parent_only = true` units (`record_status = place
 - `engaged_with`: enemy units, nationality first, separated by `; ` (for example `German 352nd Infantry Division; German 716th Static Infantry Division`). Blank = no combat that day; `unknown` = combat with no opponent identified.
 - `commander`: rank and name as given by the sources; command changes are written like `X (killed 12 June); Y from that evening`.
 - `source`: URLs separated by ` | `, ending with a coordinate source note after ` ; ` (for example `; coords: Wikipedia`).
-- `sub_operation_name`: semicolon-separated if several (`Martlet; Epsom`).
+- `operation_id`: one value. A row that two operations both claim (an operation and the operation it supported) takes the more specific or the larger one and the other is linked in `data/operation_relations.csv`.
 - `current_activity`: short lower-case phrase (about 120 characters at most), no trailing period; free text, not a vocabulary. Describe the one action the sources document on that date at that place, in the sources' own terms (who did what, where). Do not state a direction, aim or result the sources do not give (for example "attacking from the bridgehead" when the source says the attack was postponed or contained), and do not join several actions with `;`: use `notes` for the rest. `scripts/validate.py` warns on long or hedged activities.
 
 ## command_relationships
@@ -152,6 +150,48 @@ Validator checks: error when `location_date` and the offset disagree, when the o
 ### Notes convention
 
 Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date:` (the source for the date), `Event definition:` (what event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival), `Relationship:` (the source for the command relationship), `Location:` (what the point stands for and which source places it), `Coordinates:` (how the numbers were obtained). Not every row needs all labels; the reviewed Batch 1 rows use them.
+
+## Operations (`data/operations.csv`, `data/operation_relations.csv`, `data/operation_exceptions.csv`)
+
+Claims point at one operation row through `operation_id`. The operations table replaces the earlier free-text columns `campaign`, `operation_name` and `sub_operation_name` (migration: `scripts/migrate_operations.py`; how each claim was moved: `docs/review/operations_backfill.md`).
+
+### data/operations.csv (hand-maintained)
+
+| column | meaning |
+|---|---|
+| `operation_id` | Stable key, `OP-` plus upper-case words (`OP-EPSOM`, `OP-CAMP-RHINELAND`). Never renamed or reused. |
+| `name` | Full name (`Operation Epsom`, `Rhineland campaign`). |
+| `short_name` | The short label used by the derived columns and the old data (`Epsom`, `Rhineland`). |
+| `alt_names` | `;`-separated other names, including the other side's codename (`Anvil`; `Watch on the Rhine`). |
+| `op_type` | `umbrella`, `campaign`, `operation`, `battle` or `phase` (see the table below). |
+| `parent_operation_id` | The operation this one is part of (blank for a top-level row). Parent/child is the only containment link; it must be acyclic. |
+| `start_date`, `end_date` | Inclusive `YYYY-MM-DD`. |
+| `date_basis` | `cmh_streamer`, `official_history`, `secondary` or `derived` (a note says how). |
+| `parent_date_exception` | Why the row's dates fall outside its parent's (blank when they do not). Without it the validator warns. |
+| `theater` | A `theater` vocabulary value. |
+| `nationality_scope` | `Allied`, `German` or `All`: whose name or concept the row is (a German codename is its own row, linked to the Allied battle). |
+| `reference_ids` | `;`-separated `reference_id`s from `data/references.csv` that source the name and dates. |
+| `notes` | Contested boundaries, placement decisions, what the row is for. Required when `reference_ids` is empty or the dates are `derived`. |
+
+`op_type`: `umbrella` is a planning or command umbrella that contains campaigns (Overlord); `campaign` is a CMH campaign streamer (`date_basis cmh_streamer`: Normandy, Northern France, Southern France, Rhineland, Ardennes-Alsace, Central Europe) or a named campaign of the official histories (Brittany, Lorraine, Siegfried Line); `operation` is a named operation (Cobra, Epsom, Market Garden); `battle` a battle or siege; `phase` a stretch of a larger operation without a name of its own. The CMH streamers are the only rows that give a claim its derived `campaign`; the others sit in the tree for context.
+
+Examples of the tree: Operation Overlord > Normandy campaign > Operation Neptune > Operation Tonga; Operation Overlord > Northern France campaign > Operation Cobra; Northern France > Brittany campaign > Siege of Brest; Ardennes-Alsace campaign > Battle of the Bulge > Siege of Bastogne; Southern France campaign > Operation Dragoon. Rows that span two campaigns (Lorraine, Siegfried Line) have no parent.
+
+### data/operation_relations.csv (hand-maintained)
+
+`from_operation_id, to_operation_id, relation, reference_ids, note`. Relations other than parent/child: `follows`, `concurrent_with`, `supports`, `succeeded_by`, `related` (vocabulary `operation_relation`). A German and an Allied name of one battle are `related`. Endpoints must exist; a source or a note is required.
+
+### data/operation_exceptions.csv (hand-maintained)
+
+`claim_id, operation_id, reason`: a claim dated outside its operation's dates (a preparation or aftermath row) that is kept on the operation. The validator warns about a claim outside its operation's dates unless it is listed here, and warns about a listed claim that is in fact inside.
+
+### Derived columns (`build/all_claims.csv`, `build/claims.geojson`, `build/operations.csv`)
+
+`build/all_claims.csv` repeats the schema columns and appends: `operation` (name of the claim's operation), `operation_type`, `campaign` (the CMH streamer in the chain that covers the claim's date; for a claim whose operation sits in no streamer, or whose streamer does not cover the date, the earliest-starting streamer that does), `operation_name` (the topmost operation or umbrella in the chain whose dates cover the claim's date, blank otherwise, so Overlord never labels a claim after 30 August 1944), `sub_operation_name` (the claim's own operation when it is below that) and `operation_path` (the chain, outermost first, ` > `-separated). `build/operations.csv` lists every operation with its path, depth and claim counts.
+
+Rules checked by `scripts/validate.py`: `operation_id` exists; the chain is acyclic; a child lies inside its parent's dates (warning, silenced by `parent_date_exception`); relation endpoints exist; every row has a source or a note; a claim lies inside its operation's dates (warning, silenced by an exception row); some CMH campaign covers every claim's date (error).
+
+To add an operation: see CONTRIBUTING.md.
 
 ## References (`data/references.csv`, `data/references_meta.csv`, `build/claim_references.csv`, `build/unit_references.csv`)
 
@@ -333,28 +373,9 @@ Numeric 0-1 score applied by rule from location quality and source families. Onl
 
 - A manual override is allowed when the date itself is approximate (use 0.3) and must be explained in notes.
 
-### campaign
+### Operation vocabularies
 
-US Army CMH campaign streamer names. A date and area label for the theatre, not credit for a unit. Overlaps by design: Northern France and Southern France (15 August-14 September 1944; Southern France only for rows of the Dragoon landing and its advance) and Rhineland with Ardennes-Alsace (16 December 1944-25 January 1945; rows of the Ardennes and Alsace fighting take Ardennes-Alsace, other rows Rhineland). The dates are in `schema/vocabularies.json` (`campaign.dates`) and the validator errors when the row's date lies outside its campaign.
-
-| value | dates |
-|---|---|
-| `Normandy` | 6 June-24 July 1944 |
-| `Northern France` | 25 July-14 September 1944 |
-| `Southern France` | 15 August-14 September 1944 |
-| `Rhineland` | 15 September 1944-21 March 1945 |
-| `Ardennes-Alsace` | 16 December 1944-25 January 1945 |
-| `Central Europe` | 22 March-11 May 1945 (reserved) |
-
-### operation_name
-
-`operation_name` is blank or one of the named operations below, and only on rows within the operation's dates (a warning otherwise; a blank inside the Overlord dates also warns).
-
-| value | dates |
-|---|---|
-| `Overlord` | 6 June-30 August 1944 (some sources end it on 25 August) |
-| `Dragoon` | 15 August-14 September 1944 |
-| `Market Garden` | 17-25 September 1944 |
+`op_type`, `operation_date_basis`, `operation_relation` and `operation_scope` (the values of `op_type`, `date_basis`, `relation` and `nationality_scope`) are defined in `schema/vocabularies.json` and described under "Operations" above. The CMH campaign streamers and the other operations are rows of `data/operations.csv`, not vocabulary values.
 
 ### event_type
 

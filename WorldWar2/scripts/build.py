@@ -7,6 +7,9 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/coverage.csv                    one row per unit in data/units.csv: record_status, formed_date, whether it has a
                                         claim file, number of claim rows and their first and last date
   docs/coverage.md                      summary counts of the same, by nationality and echelon (generated; do not edit)
+  build/operations.csv                  derived view of data/operations.csv: operation path, depth, claim counts (direct and including child operations);
+                                        all_claims.csv also carries the derived columns operation, operation_type, campaign, operation_name,
+                                        sub_operation_name, operation_path (see scripts/operations.py)
   build/command_relations.csv           DERIVED command-relationship intervals (subject, higher, relationship, valid_from, valid_to,
                                         bases, source claim ids) for US units with a claim in 1944-07-24..1944-12-31; the claims stay
                                         the evidence, this table is an interpretation (see schema/README.md, "Validity of a relationship")
@@ -28,11 +31,13 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import build_references  # noqa: E402
+import operations  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'location_name', 'location_represents', 'precision_km', 'confidence',
-             'event_type', 'current_activity', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
+             'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
              'location_temporal_offset_days']
+DERIVED = ['operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'operation_path']   # appended to all_claims.csv from data/operations.csv
 NUMERIC = {'precision_km', 'confidence', 'location_temporal_offset_days'}
 
 
@@ -187,9 +192,53 @@ def relations(claim_rows):
     return rows
 
 
+OPERATIONS_HEADER = ['operation_id', 'name', 'short_name', 'alt_names', 'op_type', 'parent_operation_id', 'operation_path', 'depth', 'start_date',
+                     'end_date', 'date_basis', 'nationality_scope', 'claims_direct', 'claims_including_children', 'first_claim_date',
+                     'last_claim_date', 'reference_ids']
+
+
+def operations_table(ops, rows):
+    """Rows of build/operations.csv and the text of the operations section of docs/coverage.md."""
+    direct, sub = {}, {}
+    for r in rows:
+        direct.setdefault(r['operation_id'], []).append(r['date'])
+        for c in ops.chain(r['operation_id']):
+            sub.setdefault(c['operation_id'], []).append(r['date'])
+    out = []
+    for o in sorted(ops.rows, key=lambda o: o['operation_id']):
+        i = o['operation_id']
+        ds = sorted(sub.get(i, []))
+        path = ' > '.join(c['name'] for c in reversed(ops.chain(i)))
+        out.append([i, o['name'], o['short_name'], o['alt_names'], o['op_type'], o['parent_operation_id'], path, str(ops.depth(i)),
+                    o['start_date'], o['end_date'], o['date_basis'], o['nationality_scope'], str(len(direct.get(i, []))), str(len(ds)),
+                    ds[0] if ds else '', ds[-1] if ds else '', o['reference_ids']])
+    by_type = {}
+    for o in ops.rows:
+        by_type.setdefault(o['op_type'], [0, 0, 0])[0] += 1
+    for r in rows:
+        t = ops.by_id[r['operation_id']]['op_type']
+        by_type.setdefault(t, [0, 0, 0])[1] += 1
+    for o in ops.rows:
+        if direct.get(o['operation_id']):
+            by_type[o['op_type']][2] += 1
+    md = ['', '## Operations', '',
+          'Generated from `data/operations.csv` and the claims\' `operation_id`. Per-operation detail (path, dates, claim counts) is in `build/operations.csv`. '
+          'A claim points at the most specific operation row it belongs to; rows with no named operation point at their campaign row.', '',
+          '| op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |', '|---|---:|---:|---:|']
+    for t in operations.OP_TYPES:
+        if t in by_type:
+            md.append('| %s | %d | %d | %d |' % (t, by_type[t][0], by_type[t][2], by_type[t][1]))
+    md.append('| **All** | **%d** | **%d** | **%d** |' % (len(ops.rows), sum(v[2] for v in by_type.values()), len(rows)))
+    return out, ('\n'.join(md) + '\n').encode('utf-8')
+
+
 def outputs():
     """Return {relative path: bytes} for every generated file (paths under docs/ are relative to the repository root)."""
     header, rows = common.load_all_claims()
+    ops = operations.load()
+    for r in rows:
+        r.update(ops.labels(r['operation_id'], r['date']))
+    header = header + DERIVED
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows)}
     feats = []
@@ -205,7 +254,9 @@ def outputs():
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
     out['command_relations.csv'] = common.csv_bytes(REL_HEADER, relations(rows))
-    out['../docs/coverage.md'] = cov_md
+    op_rows, op_md = operations_table(ops, rows)
+    out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
+    out['../docs/coverage.md'] = cov_md + op_md
     # references: data/references.csv (metadata + counts) and the claim/unit -> reference links (see build_references.py)
     for k, data in build_references.outputs().items():
         out[k[len('build/'):] if k.startswith('build/') else '../' + k] = data

@@ -38,3 +38,16 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | division | 23 | 0 | 37 | 60 | 24 | 289 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
 | **All** | | **240** | **0** | **114** | **354** | **234** | **566** |
+
+## Operations
+
+Generated from `data/operations.csv` and the claims' `operation_id`. Per-operation detail (path, dates, claim counts) is in `build/operations.csv`. A claim points at the most specific operation row it belongs to; rows with no named operation point at their campaign row.
+
+| op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
+|---|---:|---:|---:|
+| umbrella | 1 | 0 | 0 |
+| campaign | 9 | 7 | 312 |
+| operation | 12 | 10 | 136 |
+| battle | 12 | 12 | 88 |
+| phase | 2 | 2 | 30 |
+| **All** | **36** | **31** | **566** |

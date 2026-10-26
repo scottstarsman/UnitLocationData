@@ -121,6 +121,10 @@ A third reviewer checked the 15-row Batch 2 spot check. Their findings were veri
 
 The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are committed today because the proof of concept is small. The per-unit files in `data/claims/` are the master copy; there are deliberately no monthly or per-theater exports. Once the dataset grows (for example the whole war), stop committing the generated combined files and publish them as release assets instead (build them in CI on each tagged release), so the repository history stays small and diffs stay readable. At that point remove `build/` from version control, add it to `.gitignore`, and drop the "build is up to date" check from the workflow.
 
+## Operations table (26 October 2026)
+
+Done: `data/operations.csv` (36 rows: the Overlord umbrella, 9 campaigns of which 6 are CMH streamers, 12 operations, 12 battles and 2 phases), `operation_relations.csv`, `operation_exceptions.csv`, `operation_id` on every claim, derived `campaign` / `operation_name` / `sub_operation_name` / `operation_path` in `build/all_claims.csv`, validator rules. Open points: the operation boundaries listed in [`review/operations_backfill.md`](review/operations_backfill.md) (Cobra placement, Overlord end date, Cherbourg window, Brittany and Brest end dates, derived Pursuit dates, Bulge end date, Aachen and Siegfried Line start dates); 20 claims left on a campaign because no operation row fits (Le Mans, Loire, Seine, Alsace, early Pursuit and Roer rows); rows for the Hedgerows, Hurtgen Forest, Colmar Pocket, Nordwind and the Central Europe operations once claims need them; a `claim_operations` link table only if a claim is found that belongs to two operations at once (none yet).
+
 ## Open design questions
 
 - Per-day interpolation versus pure event rows (currently pure events).

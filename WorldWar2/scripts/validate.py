@@ -11,7 +11,10 @@ existence of a claim file (a placeholder must not have claim rows: run scripts/p
 added), formed_date is a real YYYY, YYYY-MM or YYYY-MM-DD with a source URL, initial_parent_* columns are all set or all blank
 and resolve, listing_source tokens are in the source_token vocabulary, and unit_name is unique within a nationality.
 
-Warning-only checks (printed as WARNING, never change the exit code; an operation_name used outside the operation's dates is one of them; see docs/methodology.md, "Review guardrails"):
+Operations (scripts/operations.py): every claim has an operation_id that exists in data/operations.csv; the operations table has valid ids, types, dates,
+sources (or a note), an acyclic parent chain and resolving relation endpoints; some CMH campaign covers each claim's date.
+Warning-only checks (printed as WARNING, never change the exit code; a claim dated outside its operation's dates without a row in
+data/operation_exceptions.csv, or an operation outside its parent's dates without an explanation, are among them; see docs/methodology.md, "Review guardrails"):
 an engaged_with entry that does not match a unit in data/units.csv (nationality adjective plus unit_name, or a leading part of it; free text is still
 allowed for non-ground opponents),
 an attached relationship whose unit is not the parent_unit_id or with no
@@ -21,7 +24,7 @@ ended before it, a location_date that differs from date without a temporal locat
 only a town centroid (precision under 5 km), a corps or army sector recorded as an exact front_line_point, a conflict group whose rows
 have different event types and no 'Event definition:' in notes, a current_activity that is long
 (probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with list longer than three.
-Errors also cover a campaign that does not contain the row's date (campaign values and dates are in schema/vocabularies.json), effective_time /
+Errors also cover effective_time /
 effective_to_time that are not HH:MM, location_date / location_temporal_offset_days / location_basis inconsistencies and a landing row whose coordinate is a
 town centroid or a command post of another date.
 Coordinate checks live in scripts/check_coordinates.py.
@@ -238,32 +241,6 @@ def check_location_date(where, row):
         warn(where, 'a %s sector recorded as an exact front_line_point (precision %s km): use sector_center with a wider precision, or document the point' % (row['echelon'], row['precision_km']))
 
 
-def check_campaign_operation(where, row, vocabs):
-    """campaign must name a campaign whose dates contain the row's date (two values only in an overlap); operation_name is a named parent
-    operation used only within the operation's dates (a warning otherwise; blank is allowed after the operation)."""
-    d = row['date']
-    camps = [t.strip() for t in row.get('campaign', '').split(';') if t.strip()]
-    dates = vocabs['campaign']['dates']
-    for c in camps:
-        if c in dates and not (dates[c][0] <= d <= dates[c][1]):
-            err(where, 'campaign %s covers %s to %s but the row is dated %s' % (c, dates[c][0], dates[c][1], d))
-    if len(camps) == 2 and not all(dates[c][0] <= d <= dates[c][1] for c in camps if c in dates):
-        err(where, 'two campaigns are only allowed where both cover the date')
-    if len(camps) > 2 or len(set(camps)) != len(camps):
-        err(where, 'campaign lists more than two values or repeats one')
-    inside = [c for c in dates if dates[c][0] <= d <= dates[c][1]]
-    if camps and not inside:
-        err(where, 'no campaign covers the date %s' % d)
-    elif not camps and inside:
-        pass  # required-ness is enforced by the schema
-    op = row.get('operation_name', '')
-    odates = vocabs['operation_name']['dates']
-    if op in odates and not (odates[op][0] <= d <= odates[op][1]):
-        warn(where, 'operation_name %s runs %s to %s but the row is dated %s: leave operation_name blank after the operation and use campaign and sub_operation_name' % (op, odates[op][0], odates[op][1], d))
-    if not op and d <= vocabs['operation_name']['dates']['Overlord'][1]:
-        warn(where, 'operation_name is blank on a row dated %s, inside Operation Overlord' % d)
-
-
 def check_command_relationships(where, row, units, vocabs):
     """parent_unit_id is a unit id (resolves), blank or 'unknown'; command_relationships is a JSON list."""
     pid, s = row['parent_unit_id'], row['command_relationships']
@@ -419,13 +396,26 @@ def check_references():
             err(w, 'link_status %r' % m['link_status'])
         if m['link_status'] == 'not_found':
             warn(w, '%s was not found at the last link check: replace it with a working URL from the same source' % m['url'])
-    _c, _u, stats, missing, _m = br.derive()
+    _c, _u, stats, missing, _m, _o = br.derive()
     for k, first in sorted(missing.items()):
         err('citation', '%s cited by %s has no row in data/references_meta.csv (run python scripts/build_references.py --seed)' % (k, first))
     for m in meta:
         st = stats[m['reference_id']]
-        if not st['claims'] and not st['units']:
-            warn(where, '%s (%s) is not cited by any claim or unit: remove the row or cite it' % (m['reference_id'], m['short_title']))
+        if not st['claims'] and not st['units'] and not st['ops']:
+            warn(where, '%s (%s) is not cited by any claim, unit or operation: remove the row or cite it' % (m['reference_id'], m['short_title']))
+
+
+def check_operations(claims, vocabs):
+    """data/operations.csv, operation_relations.csv, operation_exceptions.csv and every claim's operation_id (rules in scripts/operations.py;
+    window and parent-date problems are warnings, structural problems errors)."""
+    import operations
+    import build_references as br
+    refs = {m['reference_id'] for m in br.read_meta()[1]}
+    es, ws = operations.check(operations.load(), claims, refs, set(vocabs['theater']['values']), valid_partial_date)
+    for wh, m in es:
+        err(wh, m)
+    for wh, m in ws:
+        warn(wh, m)
 
 
 def main():
@@ -564,7 +554,6 @@ def main():
             check_strength_json(where, row['strength_json'], vocabs)
             check_command_relationships(where, row, units, vocabs)
             check_location_date(where, row)
-            check_campaign_operation(where, row, vocabs)
             act = row['current_activity']
             if len(act) > ACTIVITY_MAX_CHARS:
                 warn(where, 'current_activity is %d characters (> %d): one row should describe one documented action; put the rest in notes' % (len(act), ACTIVITY_MAX_CHARS))
@@ -638,6 +627,7 @@ def main():
               'a missing effective_to never means indefinitely valid: build/command_relations.csv closes them at the next claim '
               '(valid_to_basis inferred_from_next_claim). Add effective_to where a source dates the end.\n' % len(open_end))
 
+    check_operations(all_rows, vocabs)
     check_references()
 
     for w in warnings:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-off migration (Batch 3 review): add the `campaign` column to every claim file and stop using the umbrella operation_name labels.
+"""OBSOLETE (superseded by scripts/migrate_operations.py, which replaced these columns by operation_id). One-off migration (Batch 3 review): add the `campaign` column to every claim file and stop using the umbrella operation_name labels.
 
 1. Inserts `campaign` before `operation_name` in every file under data/claims/ (idempotent: skipped when the column exists).
 2. Backfills `campaign` from the CMH campaign streamer dates (schema/vocabularies.json, vocabulary `campaign`):
@@ -35,6 +35,9 @@ def campaign_for(d, op, sub):
 
 
 def main():
+    if 'operation_id' in common.field_names(common.load_schema('claims')):
+        print('obsolete: the campaign, operation_name and sub_operation_name columns were replaced by operation_id (scripts/migrate_operations.py)')
+        return 0
     vocabs = common.load_vocabularies()
     odates = vocabs['operation_name']['dates']
     names = common.field_names(common.load_schema('claims'))

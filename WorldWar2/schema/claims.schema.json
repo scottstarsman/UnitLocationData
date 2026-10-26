@@ -168,23 +168,13 @@
       "vocabulary": "precision_km"
     },
     {
-      "name": "campaign",
+      "name": "operation_id",
       "type": "string",
-      "description": "US Army campaign (CMH streamer names, see vocabulary campaign) whose dates contain the claim's date: a date and area label, not credit for the unit. One value, or two separated by '; ' where campaigns overlap (Rhineland; Ardennes-Alsace).",
+      "description": "Key of the most specific operation, battle, phase or campaign the claim belongs to, in data/operations.csv (for example OP-EPSOM, or the campaign row OP-CAMP-NORTHERN-FRANCE when no named operation applies). Its parent chain gives the campaign, the umbrella (Overlord) and the named operation; build/all_claims.csv carries these as derived columns. The claim's date should lie inside the operation's dates; a claim just outside needs a row in data/operation_exceptions.csv.",
       "constraints": {
-        "required": true
-      },
-      "vocabulary_list": "campaign"
-    },
-    {
-      "name": "operation_name",
-      "type": "string",
-      "description": "Named parent operation (Overlord 6 June-30 August 1944, Dragoon 15 August-14 September 1944, Market Garden 17-25 September 1944; see vocabulary operation_name). Blank when the row belongs to no named parent operation (most rows after 30 August 1944 outside Dragoon and Market Garden): the campaign column and sub_operation_name give the context."
-    },
-    {
-      "name": "sub_operation_name",
-      "type": "string",
-      "description": "Sub-operation(s), semicolon-separated (Neptune, Epsom, Perch, ...). Blank for plain parent-operation rows."
+        "required": true,
+        "pattern": "^OP-[A-Z0-9]+(-[A-Z0-9]+)*$"
+      }
     },
     {
       "name": "composing_units",

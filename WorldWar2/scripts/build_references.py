@@ -11,6 +11,7 @@ Outputs (deterministic; the claims stay the evidence, these tables are derived):
   data/references.csv        one row per reference: the metadata plus claims_count, units_count, first_claim_id
   build/claim_references.csv claim_id, reference_id, role (source | coordinates | strength), locator (URL fragment, e.g. page285)
   build/unit_references.csv  unit_id, field (formed_date_source | listing_source | initial_parent_source), reference_id
+  build/operation_references.csv  operation_id, reference_id (the reference_ids column of data/operations.csv)
 
 A cited URL is normalised (fragment removed, ibiblio.org -> www.ibiblio.org) and must match the url of a row in
 references_meta.csv. A reference may instead be matched by a regular expression on the coordinate note
@@ -21,6 +22,8 @@ Usage
   python scripts/build_references.py                 write data/references.csv, build/claim_references.csv, build/unit_references.csv
   python scripts/build_references.py --check         exit 1 if those files are stale or a cited URL has no metadata row
   python scripts/build_references.py --seed          append skeleton metadata rows for cited URLs that have none (then edit them)
+  python scripts/build_references.py --add URL ...   append a skeleton row for each URL (a source cited only by data/operations.csv, which
+                                                     points at reference_ids, not URLs); then edit the row
   python scripts/build_references.py --check-links   HTTP-check every reference URL (polite, one request at a time) and record
                                                      link_status / link_checked in references_meta.csv; page titles are cached
                                                      in .cache/links.json
@@ -47,10 +50,11 @@ LINK_CACHE = os.path.join(common.ROOT, '.cache', 'links.json')
 META_HEADER = ['reference_id', 'url', 'match_pattern', 'source_token', 'strength_alias', 'short_title', 'full_citation', 'source_type',
                'publisher', 'accessed_date', 'license_or_status', 'reliability_note', 'used_for', 'link_status', 'link_checked']
 REF_HEADER = ['reference_id', 'short_title', 'full_citation', 'source_type', 'publisher', 'url', 'original_url', 'accessed_date',
-              'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'first_claim_id', 'used_for', 'link_status',
+              'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'first_claim_id', 'used_for', 'link_status',
               'link_checked']
 CLAIM_REF_HEADER = ['claim_id', 'reference_id', 'role', 'locator']
 UNIT_REF_HEADER = ['unit_id', 'field', 'reference_id']
+OP_REF_HEADER = ['operation_id', 'reference_id']
 UA = 'ww2-unit-locations-reference-check/1.0 (https://github.com/scottstarsman/UnitLocationData)'
 
 
@@ -124,7 +128,7 @@ def derive():
                 aliases[a.strip()] = m
     missing = {}   # url -> first claim/unit
     claim_refs, unit_refs = set(), set()
-    stats = {m['reference_id']: {'claims': set(), 'units': set()} for m in meta}
+    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set()} for m in meta}
 
     _hh, claims = common.load_all_claims()
     claims = sorted(claims, key=lambda r: r['claim_id'])
@@ -172,12 +176,27 @@ def derive():
                     continue
                 unit_refs.add((u['unit_id'], field, m['reference_id']))
                 stats[m['reference_id']]['units'].add(u['unit_id'])
-    return sorted(claim_refs), sorted(unit_refs), stats, missing, meta
+    op_refs = set()
+    import operations as opsmod
+    if os.path.isfile(opsmod.OPERATIONS_CSV):
+        _oh, orows = common.read_dicts(opsmod.OPERATIONS_CSV)
+        for o in orows:
+            for rid in [x.strip() for x in o['reference_ids'].split(';') if x.strip()]:
+                if rid in stats:
+                    op_refs.add((o['operation_id'], rid))
+                    stats[rid]['ops'].add(o['operation_id'])
+    if os.path.isfile(opsmod.RELATIONS_CSV):
+        _rh, rrows = common.read_dicts(opsmod.RELATIONS_CSV)
+        for r in rrows:
+            for rid in [x.strip() for x in r['reference_ids'].split(';') if x.strip()]:
+                if rid in stats:
+                    stats[rid]['ops'].add('%s>%s' % (r['from_operation_id'], r['to_operation_id']))
+    return sorted(claim_refs), sorted(unit_refs), stats, missing, meta, sorted(op_refs)
 
 
 def outputs():
     """Return {path relative to the repository root: bytes}."""
-    claim_refs, unit_refs, stats, missing, meta = derive()
+    claim_refs, unit_refs, stats, missing, meta, op_refs = derive()
     if missing:
         raise SystemExit('cited but not in data/references_meta.csv (run scripts/build_references.py --seed, then edit the new rows):\n'
                          + '\n'.join('  %s (first cited by %s)' % kv for kv in sorted(missing.items())))
@@ -186,12 +205,13 @@ def outputs():
         st = stats[m['reference_id']]
         rows.append([m['reference_id'], m['short_title'], m['full_citation'], m['source_type'], m['publisher'], m['url'],
                      original_url(m['url']), m['accessed_date'], m['license_or_status'], m['reliability_note'],
-                     str(len(st['claims'])), str(len(st['units'])), min(st['claims']) if st['claims'] else '', m['used_for'],
+                     str(len(st['claims'])), str(len(st['units'])), str(len(st['ops'])), min(st['claims']) if st['claims'] else '', m['used_for'],
                      m['link_status'] or 'unchecked', m['link_checked']])
     return {
         'data/references.csv': common.csv_bytes(REF_HEADER, rows),
         'build/claim_references.csv': common.csv_bytes(CLAIM_REF_HEADER, [list(r) for r in claim_refs]),
         'build/unit_references.csv': common.csv_bytes(UNIT_REF_HEADER, [list(r) for r in unit_refs]),
+        'build/operation_references.csv': common.csv_bytes(OP_REF_HEADER, [list(r) for r in op_refs]),
     }
 
 
@@ -253,7 +273,7 @@ def seed_row(url):
 
 def do_seed():
     meta_header, meta = read_meta()
-    _c, _u, _s, missing, _m = derive()
+    _c, _u, _s, missing, _m, _o = derive()
     urls = sorted(k for k in missing if k.startswith('http'))
     nxt = max([int(m['reference_id'][1:]) for m in meta] or [0]) + 1
     for u in urls:
@@ -268,6 +288,27 @@ def do_seed():
         print('still unmapped (add a token / alias row by hand):')
         for k in rest:
             print('  ' + k)
+
+
+def do_add(urls):
+    meta_header, meta = read_meta()
+    have = {m['url'] for m in meta}
+    nxt = max([int(m['reference_id'][1:]) for m in meta] or [0]) + 1
+    n = 0
+    for u in urls:
+        u, _frag = norm_url(u)
+        if u in have:
+            print('already present: ' + u)
+            continue
+        d = seed_row(u)
+        d['reference_id'] = 'R%03d' % nxt
+        nxt += 1
+        meta.append(d)
+        have.add(u)
+        n += 1
+        print('%s %s' % (d['reference_id'], u))
+    write_meta(meta)
+    print('added %d skeleton rows to data/references_meta.csv' % n)
 
 
 def write_meta(meta):
@@ -337,12 +378,16 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--check', action='store_true')
     ap.add_argument('--seed', action='store_true')
+    ap.add_argument('--add', nargs='+', metavar='URL', help='append skeleton metadata rows for these URLs')
     ap.add_argument('--check-links', action='store_true')
     ap.add_argument('--only-unchecked', action='store_true', help='with --check-links: skip rows that already have a status')
     ap.add_argument('--delay', type=float, default=0.6, help='seconds between requests (default 0.6)')
     a = ap.parse_args()
     if a.seed:
         do_seed()
+        return 0
+    if a.add:
+        do_add(a.add)
         return 0
     if a.check_links:
         do_check_links(a.delay, a.only_unchecked)

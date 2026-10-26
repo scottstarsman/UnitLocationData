@@ -128,8 +128,19 @@ def claim_files():
     return sorted(out)
 
 
+def attach_command_relationships(rows):
+    """Add the derived key `command_relationships` (the compact JSON list the claim files used to hold, rebuilt from data/command_relations.csv and
+    data/command_relation_claims.csv; blank when the claim lists no relation) to every claim dict. It is not a column of the claim files."""
+    import command_relations
+    rel = command_relations.load()
+    for r in rows:
+        r['command_relationships'] = rel.entries_json(r['claim_id'])
+    return rows
+
+
 def load_all_claims():
-    """Return (header, rows) with every claim as a dict, sorted by date then claim_id."""
+    """Return (header, rows) with every claim as a dict, sorted by date then claim_id. `header` is the claim-file header; each row also has the
+    derived key command_relationships (see attach_command_relationships)."""
     schema = load_schema('claims')
     header = field_names(schema)
     rows = []
@@ -137,4 +148,5 @@ def load_all_claims():
         _h, dicts = read_dicts(p)
         rows.extend(dicts)
     rows.sort(key=sort_key)
+    attach_command_relationships(rows)
     return header, rows

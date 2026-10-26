@@ -4,8 +4,12 @@
 Checks: header and field count of every file, field types, booleans, lat/long ranges,
 controlled vocabularies, unique claim_ids across the repository, unit_id matches both the
 file name and data/units.csv, rows sorted by date then claim_id, conflict-group integrity,
-strength_json structure (a scope is required whenever personnel is given), parent_unit_id resolves (blank, never a sentinel), command_relationships is valid JSON
-(blank, or a list) with allowed keys, relationship values and resolving unit_ids (an entry with unit_id null must be relationship unknown with a note),
+strength_json structure (a scope is required whenever personnel is given), parent_unit_id resolves (blank, never a sentinel) and is the higher unit of one of the claim's relations.
+Command relations (data/command_relations.csv, data/command_relation_claims.csv, data/command_relation_overlaps.csv; scripts/command_relations.py): header and
+field values from schema/relations.schema.json, unique ids and natural keys, foreign keys, a blank higher unit only for relationship unknown with a note, interval and
+date rules (valid_to not before valid_from, ranges, bases, end_unknown), the evidence agrees with the master (role against the stated dates, seq, same unit, first
+listing and sourced dates), and every contradictory overlap (same relationship class, different higher units of one echelon) is documented or an error.
+The rebuilt per-claim entries (what the old command_relationships column held) are still checked: valid keys, relationship values and resolving unit_ids (an entry with unit_id null must be relationship unknown with a note),
 every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch, theater) equal the unit table.
 Nationalities (data/nationalities.csv): header, unique code and name, alliance and kind vocabularies, adjective set; every unit's nationality is a row of the table,
 its unit_id prefix is the row's code and its claim folder is the lower-case name.
@@ -44,6 +48,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import command_relations as crel  # noqa: E402
 
 errors = []
 warnings = []
@@ -580,6 +585,131 @@ def check_foreign_keys(tables):
             vals = [r[col] for r in tables[name]]
             if len(vals) != len(set(vals)):
                 err('data/%s' % name, 'column %s must be unique' % col)
+        for cols in t.get('uniqueTogether', []):
+            seen = {}
+            for i, r in enumerate(tables[name], start=2):
+                k = tuple(r[c] for c in cols)
+                if k in seen:
+                    err('data/%s row %d' % (name, i), 'natural key %s = %s repeats row %d' % (cols, k, seen[k]))
+                seen[k] = i
+
+
+def check_command_relation_tables(units, vocabs, claims):
+    """data/command_relations.csv (master), data/command_relation_claims.csv (evidence join) and data/command_relation_overlaps.csv: headers and
+    field values from schema/relations.schema.json; the interval rules (see schema/README.md, "Validity of a relationship"); the evidence agrees with
+    the master; every contradictory overlap is documented. Keys and foreign keys are checked by check_foreign_keys."""
+    sch = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
+    paths = {'command_relations': crel.REL_CSV, 'command_relation_claims': crel.LINK_CSV, 'command_relation_overlaps': crel.OVERLAP_CSV}
+    for name, path in paths.items():
+        where = 'data/%s.csv' % name
+        if not os.path.isfile(path):
+            err(where, 'missing')
+            continue
+        fields = sch[name]['fields']
+        header, rows = common.read_rows(path)
+        if header != [f['name'] for f in fields]:
+            err(where, 'header %s != schema/relations.schema.json %s' % (header, [f['name'] for f in fields]))
+            continue
+        for i, r in enumerate(rows, start=2):
+            if len(r) != len(header):
+                err('%s line %d' % (where, i), 'expected %d fields, found %d' % (len(header), len(r)))
+            else:
+                check_row('%s line %d' % (where, i), dict(zip(header, r)), fields, vocabs)
+    rel = crel.load(True)
+    ids = [r['relation_id'] for r in rel.rows]
+    if ids != sorted(ids):
+        err('data/command_relations.csv', 'rows must be sorted by relation_id')
+    cinfo = {c['claim_id']: c for c in claims}
+    standing = common.relationship_group('standing')
+    for i, r in enumerate(rel.rows, start=2):
+        where = 'data/command_relations.csv %s' % r['relation_id']
+        links = rel.by_relation.get(r['relation_id'], [])
+        if not r['higher_unit_id']:
+            if r['relationship'] != 'unknown':
+                err(where, 'higher_unit_id may be blank only for relationship unknown (an explicit placeholder)')
+            if not r['note']:
+                err(where, 'a relation with no higher unit needs a note saying what is unknown')
+        elif r['higher_unit_id'] == r['subject_unit_id']:
+            err(where, 'the unit is listed as its own parent')
+        for a, b in (('valid_to', 'valid_from'), ('valid_from_latest', 'valid_from'), ('valid_to_earliest', 'valid_to')):
+            if r[a] and r[b] and (r[a] < r[b] if a != 'valid_to_earliest' else r[a] > r[b]):
+                err(where, '%s %s is %s %s %s' % (a, r[a], 'after' if a == 'valid_to_earliest' else 'before', b, r[b]))
+        if r['valid_from_latest'] and r['valid_from_latest'] < r['valid_from']:
+            err(where, 'valid_from_latest %s is before valid_from %s' % (r['valid_from_latest'], r['valid_from']))
+        if r['valid_to_earliest'] and not r['valid_to']:
+            err(where, 'valid_to_earliest needs valid_to (the latest possible end)')
+        if r['valid_to'] and r['valid_to'] < r['valid_from']:
+            err(where, 'valid_to %s is before valid_from %s' % (r['valid_to'], r['valid_from']))
+        if r['ordered_date'] and r['ordered_date'] > r['valid_from']:
+            err(where, 'ordered_date %s is after valid_from %s (an order cannot follow the date it takes effect)' % (r['ordered_date'], r['valid_from']))
+        for tk, dk in (('valid_from_time', 'valid_from'), ('valid_to_time', 'valid_to')):
+            if r[tk] and not r[dk]:
+                err(where, '%s needs %s' % (tk, dk))
+        if bool(r['valid_to']) != (r['valid_to_basis'] != 'open_at_last_claim'):
+            err(where, 'valid_to %r and valid_to_basis %s disagree (blank valid_to <=> open_at_last_claim)' % (r['valid_to'], r['valid_to_basis']))
+        if r['valid_to_basis'] == 'inferred_from_next_claim' and not r['valid_to_earliest']:
+            err(where, 'inferred_from_next_claim needs valid_to_earliest (the last claim date that lists the relation)')
+        want = 'true' if r['valid_to_basis'] in crel.END_INFERRED and r['relationship'] not in standing else 'false'
+        if r['end_unknown'] != want:
+            err(where, 'end_unknown is %s but must be %s (true = a temporary relationship with no sourced end)' % (r['end_unknown'], want))
+        if r['change_undated'] == 'true' and (r['status'] != 'preferred' or not r['higher_unit_id'] or r['relationship'] == 'organic'):
+            err(where, 'change_undated applies to preferred, named, non-organic relations only')
+        if not links:
+            err(where, 'no row in data/command_relation_claims.csv: a relation needs evidence')
+            continue
+        lc = [cinfo[l['claim_id']] for l in links if l['claim_id'] in cinfo]
+        if any(c['unit_id'] != r['subject_unit_id'] for c in lc):
+            err(where, 'a linked claim belongs to another unit than the subject %s' % r['subject_unit_id'])
+        if r['status'] == 'preferred' and lc and not any(c['claim_status'] == 'preferred' for c in lc):
+            err(where, 'a preferred relation needs a preferred claim as evidence')
+        if r['status'] != 'preferred' and any(c['claim_status'] == 'preferred' for c in lc):
+            err(where, 'a %s relation is evidenced by a preferred claim (it should be preferred)' % r['status'])
+        if lc:
+            first = min(c['date'] for c in lc)
+            if r['valid_from_basis'] == 'claim_date' and r['valid_from'] != first:
+                err(where, 'valid_from_basis claim_date but valid_from %s is not the date of the first linked claim %s' % (r['valid_from'], first))
+            if r['valid_from_basis'] != 'claim_date' and not any(l['stated_effective_from'] for l in links):
+                err(where, 'valid_from_basis %s but no linked claim states effective_from' % r['valid_from_basis'])
+            if r['valid_to_basis'] == 'inferred_from_next_claim' and r['valid_to_earliest'] not in {c['date'] for c in lc}:
+                err(where, 'valid_to_earliest %s must be the date of a linked claim (the last one that lists the relation before the inferred end)' % r['valid_to_earliest'])
+            if r['valid_to_basis'] not in crel.END_INFERRED and not any(l['stated_effective_to'] for l in links):
+                err(where, 'valid_to_basis %s but no linked claim states effective_to' % r['valid_to_basis'])
+    for i, l in enumerate(rel.links, start=2):
+        where = 'data/command_relation_claims.csv line %d' % i
+        stated = {k: l[col] for k, col in crel.STATED if l[col] != ''}
+        if l['role'] != crel.role_of(stated):
+            err(where, 'role %s does not agree with the stated dates (expected %s)' % (l['role'], crel.role_of(stated)))
+        if stated.get('effective_from_latest') and not stated.get('effective_from'):
+            err(where, 'stated_effective_from_latest needs stated_effective_from')
+        if stated.get('effective_to_earliest') and not stated.get('effective_to'):
+            err(where, 'stated_effective_to_earliest needs stated_effective_to')
+    for cid, ls in rel.by_claim.items():
+        if [int(l['seq']) for l in ls] != list(range(1, len(ls) + 1)):
+            err('data/command_relation_claims.csv', 'seq of claim %s is not 1..%d without gaps' % (cid, len(ls)))
+        names = [rel.by_id[l['relation_id']]['higher_unit_id'] for l in ls if l['relation_id'] in rel.by_id]
+        if len(names) != len(set(n for n in names if n)) + names.count(''):
+            err('data/command_relation_claims.csv', 'claim %s lists the same higher unit twice' % cid)
+    # contradictory overlaps: all documented, none stale, none duplicated
+    found = {(a['relation_id'], b['relation_id']): (lo, hi) for a, b, lo, hi in crel.contradictory_overlaps(rel.rows, units)}
+    listed = {}
+    for o in rel.overlaps:
+        k = (o['relation_id_a'], o['relation_id_b'])
+        if k in listed:
+            err('data/command_relation_overlaps.csv', 'overlap %s is listed twice' % (k,))
+        listed[k] = o
+        if o['relation_id_a'] >= o['relation_id_b']:
+            err('data/command_relation_overlaps.csv', 'relation_id_a must be lower than relation_id_b (%s, %s)' % k)
+        if k not in found:
+            err('data/command_relation_overlaps.csv', 'listed overlap %s is not a contradictory overlap of the master table (stale entry)' % (k,))
+        elif (o['overlap_from'], o['overlap_to']) != found[k]:
+            err('data/command_relation_overlaps.csv', 'overlap %s lists %s to %s but the intervals overlap %s to %s' % (k, o['overlap_from'], o['overlap_to'], found[k][0], found[k][1]))
+    for k, (lo, hi) in sorted(found.items()):
+        if k not in listed:
+            err('data/command_relations.csv', 'relations %s and %s overlap (%s to %s) but are contradictory (same relationship class, different higher units of one echelon) and not documented in data/command_relation_overlaps.csv' % (k[0], k[1], lo, hi or 'open'))
+    ol = [o for o in rel.overlaps]
+    ids = [(o['relation_id_a'], o['relation_id_b']) for o in ol]
+    if ids != sorted(ids):
+        err('data/command_relation_overlaps.csv', 'rows must be sorted by relation_id_a, relation_id_b')
 
 
 def main():
@@ -657,6 +787,7 @@ def main():
                 err('data/units.csv', '%s is its own parent' % uid)
 
     eng_index = engaged_index(units)
+    relset = crel.load(True)   # the command-relation tables (checked in check_command_relation_tables)
 
     # ---- claim files ----
     files = common.claim_files()
@@ -716,6 +847,7 @@ def main():
             if row['claim_status'] != 'preferred' and not row['conflict_group_id']:
                 err(where, 'claim_status %s requires a conflict_group_id' % row['claim_status'])
             check_strength_json(where, row['strength_json'], vocabs)
+            row['command_relationships'] = relset.entries_json(cid)   # derived from the relation tables; not a claim-file column
             check_command_relationships(where, row, units, vocabs)
             check_location_date(where, row)
             act = row['current_activity']
@@ -785,9 +917,11 @@ def main():
                     open_end.append((r['claim_id'], nxt['claim_id']))
     if open_end:
         print('NOTE: %d attached/operational_control entries have no effective_to and are not listed by the unit\'s next claim; '
-              'a missing effective_to never means indefinitely valid: build/command_relations.csv closes them at the next claim '
-              '(valid_to_basis inferred_from_next_claim). Add effective_to where a source dates the end.\n' % len(open_end))
+              'a missing effective_to never means indefinitely valid: data/command_relations.csv closes them at the next claim '
+              '(valid_to_basis inferred_from_next_claim, end_unknown true). Add effective_to to the claim\'s link row (stated_effective_to) and the relation\'s '
+              'valid_to where a source dates the end.\n' % len(open_end))
 
+    check_command_relation_tables(units, vocabs, all_rows)
     check_operations(all_rows, vocabs)
     check_references(all_rows)
 
@@ -800,7 +934,8 @@ def main():
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
-              'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else []}
+              'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],
+              'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps}
     check_foreign_keys(tables)
 
     for w in warnings:

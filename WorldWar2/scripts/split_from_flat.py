@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Show how the per-unit master files were made from the flat v5 CSV (reproducibility).
 
+NOTE: Historical: this script produced the `command_relationships` column; since `command-relations-table` the claim files no longer have it (see scripts/migrate_command_relations.py).
+
 Input : archive/v5_flat/ww2_west_1944-06_v5.csv   (flat claims, 212 rows, 30 columns)
         archive/v5_flat/units_v5.csv              (unit table from the proof of concept)
 Output: data/claims/<nationality>/<unit_id>.csv   (one file per unit that has claims)

@@ -2,7 +2,7 @@
   "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
   "name": "claims",
   "title": "WWII unit location claims",
-  "description": "One row per claim. Same header in every file under data/claims/. Vocabulary-backed fields refer to keys in schema/vocabularies.json.",
+  "description": "One row per claim. Same header in every file under data/claims/. Vocabulary-backed fields refer to keys in schema/vocabularies.json. The claim's command relationships (who the unit was subordinate to, attached to or under the control of, with dates) are not stored in the claim file: they are rows of data/command_relations.csv, linked to the claim by data/command_relation_claims.csv (see schema/relations.schema.json); build/all_claims.csv carries the rebuilt `command_relationships` column.",
   "missingValues": [
     ""
   ],
@@ -148,18 +148,9 @@
     {
       "name": "parent_unit_id",
       "type": "string",
-      "description": "Unit id (from data/units.csv) of the operational parent on this row's date: the formation the unit was attached to or operating under, otherwise its standing parent. Blank if the unit has no parent (top-level headquarters), or if no parent could be verified; in that case command_relationships holds one entry {\"unit_id\": null, \"relationship\": \"unknown\", \"note\": ...}. The organic parent, when different, is in command_relationships.",
+      "description": "Unit id (from data/units.csv) of the operational parent on this row's date: the formation the unit was attached to or operating under, otherwise its standing parent. It must be one of the higher units of the relations the claim lists in data/command_relation_claims.csv (the relations themselves are rows of data/command_relations.csv; there is no command_relationships column in the claim file). Blank if the unit has no parent (top-level headquarters), or if no parent could be verified; then the claim lists one `unknown` placeholder relation (higher_unit_id blank, with a note). The organic parent, when different, is another relation of the claim.",
       "constraints": {
         "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
-      }
-    },
-    {
-      "name": "command_relationships",
-      "type": "string",
-      "description": "JSON list of command relationships on this row's date: [{\"unit_id\": \"<unit id, or null only with relationship unknown>\", \"relationship\": \"organic|assigned|attached|unspecified_subordination|operational_control|administrative_control|supporting|coordinating|reserve|unknown\", \"effective_from\": \"YYYY-MM-DD (optional)\", \"effective_to\": \"YYYY-MM-DD, last day of the relationship (optional)\", \"date_basis\": \"order|assignment_table|narrative|inferred (optional)\", \"note\": \"<optional; required when unit_id is null>\"}]. Allowed keys: unit_id, relationship, effective_from, effective_from_latest, ordered_date, effective_to, effective_to_earliest, effective_to_basis, date_basis, effective_time, effective_to_time, note. The name of the formation is not stored: it comes from units.csv (derived display name, see docs/methodology.md). An entry whose formation is not a unit in units.csv has unit_id null, relationship unknown and a note saying what is unknown. parent_unit_id is the operational parent on the row's date; the standing parent is recorded only here, as an organic, assigned or unspecified_subordination entry. Blank if nothing is recorded (a top-level headquarters).",
-      "format": "json",
-      "jsonVocabulary": {
-        "relationship": "relationship"
       }
     },
     {

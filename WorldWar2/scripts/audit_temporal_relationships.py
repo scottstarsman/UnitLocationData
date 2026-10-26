@@ -6,7 +6,8 @@ Usage: python scripts/audit_temporal_relationships.py                 (prints th
 
 validate.py checks one row at a time; this script reads all claims together and looks for temporal patterns that a single-row
 check cannot see. Every finding is a prompt for a human check against the sources, not an error: the report states how many
-findings each check made and lists them. Nine checks:
+findings each check made and lists them. The claims' relationship entries are rebuilt from the master tables (data/command_relations.csv,
+data/command_relation_claims.csv; see scripts/command_relations.py); checks 10 to 12 read the master table directly. Twelve checks:
 
  1 overlap            two different headquarters of the same echelon hold operational_control or attached over one subject
                       for more than the boundary day (a change on one day is expected, the day is inclusive on both sides)
@@ -27,6 +28,12 @@ findings each check made and lists them. Nine checks:
                       in a conflict group)
  9 group_date_spread  a conflict group whose rows are dated more than one day apart AND differ in event_type (a sequence recorded as
                       a conflict; a plain disagreement over one event's date keeps one event_type and is not listed)
+10 master_overlap     two preferred relations of one subject that contradict each other (same relationship class, different higher units of
+                      one echelon) over more than the boundary day, as documented in data/command_relation_overlaps.csv (validate.py makes
+                      sure every such overlap is listed); a one-day overlap is the boundary day
+11 end_unknown        an attached/operational_control/reserve/administrative_control relation with no sourced end (end_unknown true in the
+                      master table): valid_to is only inferred from the unit's next claim, or still open at its last claim
+12 change_flagged     the parent changes whose date no source gives (change_undated true): the change lies between the two dates shown
 
 Standard library only.
 """
@@ -40,6 +47,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import command_relations  # noqa: E402
 
 RANK = common.echelon_rank()                    # schema/vocabularies.json, vocabulary echelon_rank
 ACTIVE = common.relationship_group('active')    # schema/vocabularies.json, vocabulary relationship_groups
@@ -283,6 +291,38 @@ def check_group_spread(rows, units, rn):
     return f
 
 
+def check_master_overlap(rows, units, rn):
+    rel = command_relations.load(True)
+    f = []
+    for o in rel.overlaps:
+        if o['overlap_to'] and o['overlap_to'] == o['overlap_from']:
+            continue   # the boundary day
+        f.append((o['overlap_from'], '%s / %s %s to %s: %s' % (o['relation_id_a'], o['relation_id_b'], o['overlap_from'], o['overlap_to'] or 'open', o['explanation'])))
+    return f
+
+
+def check_end_unknown(rows, units, rn):
+    f = []
+    for r in command_relations.load(True).rows:
+        if r['end_unknown'] == 'true' and r['status'] == 'preferred':
+            f.append((r['valid_from'], '%s %s -> %s %s from %s: %s' % (r['relation_id'], r['subject_unit_id'], r['higher_unit_id'], r['relationship'], r['valid_from'],
+                      ('end inferred between %s and %s' % (r['valid_to_earliest'], r['valid_to'])) if r['valid_to'] else 'still listed at the unit\'s last claim')))
+    return f
+
+
+def check_change_flagged(rows, units, rn):
+    """One finding per undated transition: an outgoing relation (end inferred) followed by an incoming one (start = its first claim), both flagged."""
+    f = []
+    flagged = sorted((r for r in command_relations.load(True).rows if r['change_undated'] == 'true'),
+                     key=lambda r: (r['subject_unit_id'], r['valid_from'], r['relation_id']))
+    for a, b in zip(flagged, flagged[1:]):
+        if a['subject_unit_id'] == b['subject_unit_id'] and a['valid_to_basis'] == 'inferred_from_next_claim' and b['valid_from_basis'] == 'claim_date' \
+                and b['valid_from'] > a['valid_to_earliest']:
+            f.append((a['valid_to_earliest'], '%s -> %s (%s / %s): the parent changed from %s to %s some time between %s (last listing) and %s (first listing); no source dates it' % (
+                a['subject_unit_id'], b['higher_unit_id'], a['relation_id'], b['relation_id'], a['higher_unit_id'], b['higher_unit_id'], a['valid_to_earliest'], b['valid_from'])))
+    return f
+
+
 CHECKS = [
     ('overlap', 'Two headquarters of one echelon over one subject for more than the boundary day', check_overlap),
     ('parent_in_force', "Row's parent has no entry on the row or its entry does not cover the row date", check_parent_in_force),
@@ -293,6 +333,9 @@ CHECKS = [
     ('change_undated', 'A row whose activity says the unit passes or transfers to a headquarters, with no entry dated within a day', check_change_undated),
     ('same_day_place', 'Two preferred rows of one unit on one date, 25 km or more apart, outside a conflict group', check_same_day_place),
     ('group_date_spread', 'Conflict group more than a day apart whose rows differ in event_type', check_group_spread),
+    ('master_overlap', 'Contradictory relations of one subject overlapping by more than the boundary day (documented in data/command_relation_overlaps.csv)', check_master_overlap),
+    ('end_unknown', 'Temporary relation with no sourced end (end_unknown true in data/command_relations.csv)', check_end_unknown),
+    ('change_flagged', 'Parent change that no source dates (change_undated true in data/command_relations.csv)', check_change_flagged),
 ]
 
 

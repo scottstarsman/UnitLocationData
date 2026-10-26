@@ -14,7 +14,7 @@
     }
   },
   "relationship": {
-    "description": "Meaning of the relationship field in each object of command_relationships. Each entry may carry effective_from, effective_to and date_basis (see schema/README.md).",
+    "description": "Meaning of the relationship column of data/command_relations.csv (and of the `relationship` key of the entries rebuilt from it for build/all_claims.csv). A relation may carry valid_from, valid_to and date_basis (see schema/README.md).",
     "values": {
       "organic": "A constituted component of the formation: its own regiments, battalions or battle groups, or a unit that is part of the parent's table of organisation. Do not use for a division, corps or army that is assigned to a higher headquarters (use assigned or unspecified_subordination).",
       "assigned": "The unit was assigned to this formation: the source says 'assigned', or names the unit as a standing member of the headquarters' order of battle for a period not described as temporary, with no attachment language. Includes army to army group and corps to army.",
@@ -189,7 +189,7 @@
     }
   },
   "relationship_date_basis": {
-    "description": "Where the effective_from / effective_to dates of a command relationship come from (optional keys date_basis, and effective_to_basis for the end date).",
+    "description": "Where the start and end dates of a command relation come from (columns date_basis, and stated_date_basis / stated_effective_to_basis on the claim link; valid_from_basis and valid_to_basis use these values and the extra ones of relation_start_basis and relation_end_basis).",
     "values": {
       "order": "A named order or message gives the date.",
       "assignment_table": "A dated assignment table such as CMH ETO-OB. The table date may differ from the day command actually passed.",
@@ -345,6 +345,43 @@
       "archive_document": "An archived primary or period document.",
       "news_or_web_article": "A news report or other web article.",
       "other": "Anything else; explain in reliability_note."
+    }
+  },
+  "relation_start_basis": {
+    "description": "Where valid_from of a command relation comes from: a sourced date (the values of relationship_date_basis), or claim_date when no source dates the start and valid_from is the date of the first claim that lists the relation.",
+    "values": {
+      "order": "A named order or message gives the date.",
+      "assignment_table": "A dated assignment table such as CMH ETO-OB. The table date may differ from the day command actually passed.",
+      "narrative": "A narrative history or reference work states the date.",
+      "inferred": "The date is inferred from other rows; treat as approximate.",
+      "claim_date": "No source dates the start: valid_from is the date of the first claim that lists the relation (the relation may have begun earlier)."
+    }
+  },
+  "relation_end_basis": {
+    "description": "Where valid_to of a command relation comes from: a sourced date (the values of relationship_date_basis), or one of the two derived cases below. A missing sourced end never means indefinitely valid.",
+    "values": {
+      "order": "A named order or message gives the date.",
+      "assignment_table": "A dated assignment table such as CMH ETO-OB. The table date may differ from the day command actually passed.",
+      "narrative": "A narrative history or reference work states the date.",
+      "inferred": "The date is inferred from other rows; treat as approximate.",
+      "inferred_from_next_claim": "No source dates the end: valid_to is the day before the unit's next claim that no longer lists the relation; valid_to_earliest is the last claim date that lists it, so the true end lies between the two.",
+      "open_at_last_claim": "No end is recorded: the unit's latest claim still lists the relation, valid_to is blank."
+    }
+  },
+  "relation_claim_role": {
+    "description": "What a claim says about a command relation (column role of data/command_relation_claims.csv); it follows from which dates the claim itself stated.",
+    "values": {
+      "asserts_start": "The claim states when the relation began (stated_effective_from).",
+      "asserts_end": "The claim states when the relation ended (stated_effective_to).",
+      "asserts_start_and_end": "The claim states both the start and the end.",
+      "observed_during": "The claim lists the relation as in force on its date without dating the start or the end."
+    }
+  },
+  "relation_overlap_kind": {
+    "description": "Why two contradictory command relations overlap (column kind of data/command_relation_overlaps.csv). Every such overlap must be listed; the validator rejects an unlisted or stale one.",
+    "values": {
+      "transfer_dates_differ": "The two relations are consecutive (the unit moved from one higher unit of an echelon to another) but the sources date the change differently, or one end is only inferred, so the intervals overlap on some days. Nothing is resolved.",
+      "concurrent_by_source": "A source states that the unit was under both higher units at the same time."
     }
   }
 }

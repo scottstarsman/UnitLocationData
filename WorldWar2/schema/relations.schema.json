@@ -2,7 +2,7 @@
   "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
   "name": "relations",
   "title": "Keys and foreign keys of the side tables",
-  "description": "Primary and foreign keys of the CSV tables that have no column schema file of their own (their headers are defined in scripts/operations.py and scripts/build_references.py). Together with the foreignKeys of claims.schema.json and units.schema.json this is the complete list of references between tables; scripts/validate.py enforces every entry. `separator` marks a column that holds a list of keys; `alsoAllowed` names values accepted besides the referenced keys.",
+  "description": "Primary and foreign keys of the CSV tables that have no column schema file of their own (the headers of most are defined in scripts/operations.py and scripts/build_references.py; the two command-relation tables list their fields here and in scripts/command_relations.py). Together with the foreignKeys of claims.schema.json and units.schema.json this is the complete list of references between tables; scripts/validate.py enforces every entry. `separator` marks a column that holds a list of keys; `alsoAllowed` names values accepted besides the referenced keys.",
   "tables": {
     "nationalities": {
       "path": "data/nationalities.csv",
@@ -142,6 +142,386 @@
           "reference": {
             "resource": "references_meta",
             "fields": "reference_id"
+          }
+        }
+      ]
+    },
+    "command_relations": {
+      "path": "data/command_relations.csv",
+      "primaryKey": "relation_id",
+      "uniqueTogether": [
+        [
+          "subject_unit_id",
+          "higher_unit_id",
+          "relationship",
+          "valid_from",
+          "valid_to",
+          "status"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "fields": "subject_unit_id",
+          "reference": {
+            "resource": "units",
+            "fields": "unit_id"
+          }
+        },
+        {
+          "fields": "higher_unit_id",
+          "reference": {
+            "resource": "units",
+            "fields": "unit_id"
+          }
+        }
+      ],
+      "fields": [
+        {
+          "name": "relation_id",
+          "type": "string",
+          "description": "Stable id of the relation, CR0001 onward; never reused or renumbered.",
+          "constraints": {
+            "required": true,
+            "pattern": "^CR\\d{4,}$"
+          }
+        },
+        {
+          "name": "subject_unit_id",
+          "type": "string",
+          "description": "The subordinate unit (the unit whose command situation this is). Must exist in data/units.csv.",
+          "constraints": {
+            "required": true,
+            "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
+          }
+        },
+        {
+          "name": "higher_unit_id",
+          "type": "string",
+          "description": "The higher unit (parent, attaching or controlling headquarters). Blank only for an explicit `unknown` placeholder (relationship unknown): no unit is named by any source and `note` says what is unknown.",
+          "constraints": {
+            "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
+          }
+        },
+        {
+          "name": "relationship",
+          "type": "string",
+          "description": "Kind of relation (vocabulary relationship). Several relations of one subject may overlap when they are different kinds (for example organic or assigned plus attached or operational_control).",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "relationship"
+        },
+        {
+          "name": "valid_from",
+          "type": "date",
+          "description": "First day the relation holds, YYYY-MM-DD (inclusive). With valid_from_basis claim_date it is only the first day a claim lists the relation.",
+          "constraints": {
+            "required": true
+          },
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "valid_from_latest",
+          "type": "date",
+          "description": "Latest possible start when the source gives a range (valid_from is then the earliest possible start). Blank otherwise.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "valid_from_time",
+          "type": "string",
+          "description": "Optional hour of the start on valid_from, HH:MM 24-hour (say in note which clock the source uses). Blank = hour not documented.",
+          "constraints": {
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          }
+        },
+        {
+          "name": "valid_from_basis",
+          "type": "string",
+          "description": "Where valid_from comes from (vocabulary relation_start_basis).",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "relation_start_basis"
+        },
+        {
+          "name": "valid_to",
+          "type": "date",
+          "description": "Last day the relation holds, YYYY-MM-DD (inclusive). Blank = no end recorded (see valid_to_basis and end_unknown). A missing end never means indefinitely valid.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "valid_to_earliest",
+          "type": "date",
+          "description": "Earliest possible end when the true end lies in a range (valid_to is the latest possible end): for an inferred end the last claim date that lists the relation. Blank otherwise.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "valid_to_time",
+          "type": "string",
+          "description": "Optional hour of the end on valid_to, HH:MM 24-hour. Blank = hour not documented.",
+          "constraints": {
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          }
+        },
+        {
+          "name": "valid_to_basis",
+          "type": "string",
+          "description": "Where valid_to comes from (vocabulary relation_end_basis); open_at_last_claim when valid_to is blank.",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "relation_end_basis"
+        },
+        {
+          "name": "end_unknown",
+          "type": "boolean",
+          "description": "true when a temporary relation (anything but organic, assigned, unspecified_subordination or unknown) has no sourced end: valid_to is only inferred from the next claim, or blank. A standing relation without a sourced end is false (it ends when another one replaces it).",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "boolean"
+        },
+        {
+          "name": "change_undated",
+          "type": "boolean",
+          "description": "true when the relation begins or ends a change of parent that no source dates: the change happened somewhere between valid_to_earliest of the outgoing relation and valid_from of the incoming one. Nothing is guessed inside that range.",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "boolean"
+        },
+        {
+          "name": "date_basis",
+          "type": "string",
+          "description": "Where the evidence for the relation comes from, used for the `support` column of build/command_relations.csv (vocabulary relationship_date_basis); `inferred` when no claim names a basis.",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "relationship_date_basis"
+        },
+        {
+          "name": "ordered_date",
+          "type": "date",
+          "description": "Date the order that created the relation was issued, when it differs from valid_from (an order cannot follow the date it takes effect).",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "preferred, or alternate / disputed when the relation is known only from competing claims of a conflict group (such relations are not shown in build/command_relations.csv).",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "claim_status"
+        },
+        {
+          "name": "note",
+          "type": "string",
+          "description": "What the source says about the relation (the note of the claim that first listed it)."
+        }
+      ]
+    },
+    "command_relation_claims": {
+      "path": "data/command_relation_claims.csv",
+      "primaryKey": [
+        "relation_id",
+        "claim_id"
+      ],
+      "uniqueTogether": [
+        [
+          "claim_id",
+          "seq"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "fields": "relation_id",
+          "reference": {
+            "resource": "command_relations",
+            "fields": "relation_id"
+          }
+        },
+        {
+          "fields": "claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        }
+      ],
+      "fields": [
+        {
+          "name": "relation_id",
+          "type": "string",
+          "description": "The relation (data/command_relations.csv).",
+          "constraints": {
+            "required": true,
+            "pattern": "^CR\\d{4,}$"
+          }
+        },
+        {
+          "name": "claim_id",
+          "type": "string",
+          "description": "The claim that lists the relation (data/claims/...).",
+          "constraints": {
+            "required": true,
+            "pattern": "^C\\d{4,}$"
+          }
+        },
+        {
+          "name": "seq",
+          "type": "number",
+          "description": "Position of the relation in the claim's list (1 = first); the list order of the former command_relationships cell.",
+          "constraints": {
+            "required": true,
+            "minimum": 1
+          }
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "description": "What the claim says about the relation (vocabulary relation_claim_role); must agree with the stated_effective_from / stated_effective_to columns.",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "relation_claim_role"
+        },
+        {
+          "name": "stated_effective_from",
+          "type": "date",
+          "description": "Start date the claim itself gave for the relation (blank if its entry had no effective_from).",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "stated_effective_from_latest",
+          "type": "date",
+          "description": "Latest possible start the claim gave.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "stated_effective_time",
+          "type": "string",
+          "description": "Hour of the start the claim gave, HH:MM.",
+          "constraints": {
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          }
+        },
+        {
+          "name": "stated_ordered_date",
+          "type": "date",
+          "description": "Order date the claim gave.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "stated_effective_to",
+          "type": "date",
+          "description": "Last day the claim gave for the relation.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "stated_effective_to_earliest",
+          "type": "date",
+          "description": "Earliest possible end the claim gave.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "stated_effective_to_time",
+          "type": "string",
+          "description": "Hour of the end the claim gave, HH:MM.",
+          "constraints": {
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+          }
+        },
+        {
+          "name": "stated_effective_to_basis",
+          "type": "string",
+          "description": "Basis the claim named for the end date (vocabulary relationship_date_basis).",
+          "vocabulary": "relationship_date_basis"
+        },
+        {
+          "name": "stated_note",
+          "type": "string",
+          "description": "Note the claim carried for this relation (blank if the claim's entry had none)."
+        },
+        {
+          "name": "stated_date_basis",
+          "type": "string",
+          "description": "Basis the claim named for the dates (vocabulary relationship_date_basis).",
+          "vocabulary": "relationship_date_basis"
+        }
+      ]
+    },
+    "command_relation_overlaps": {
+      "path": "data/command_relation_overlaps.csv",
+      "primaryKey": [
+        "relation_id_a",
+        "relation_id_b"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "relation_id_a",
+          "reference": {
+            "resource": "command_relations",
+            "fields": "relation_id"
+          }
+        },
+        {
+          "fields": "relation_id_b",
+          "reference": {
+            "resource": "command_relations",
+            "fields": "relation_id"
+          }
+        }
+      ],
+      "fields": [
+        {
+          "name": "relation_id_a",
+          "type": "string",
+          "description": "First relation (the lower relation_id).",
+          "constraints": {
+            "required": true,
+            "pattern": "^CR\\d{4,}$"
+          }
+        },
+        {
+          "name": "relation_id_b",
+          "type": "string",
+          "description": "Second relation.",
+          "constraints": {
+            "required": true,
+            "pattern": "^CR\\d{4,}$"
+          }
+        },
+        {
+          "name": "overlap_from",
+          "type": "date",
+          "description": "First day on which both relations hold.",
+          "constraints": {
+            "required": true
+          },
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "overlap_to",
+          "type": "date",
+          "description": "Last day on which both hold; blank when both are still open.",
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "description": "Why they overlap (vocabulary relation_overlap_kind).",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "relation_overlap_kind"
+        },
+        {
+          "name": "explanation",
+          "type": "string",
+          "description": "What the two relations say, and that the conflict is not resolved.",
+          "constraints": {
+            "required": true
           }
         }
       ]

@@ -43,7 +43,7 @@ CR0019,C0035,1,observed_during,,,,,,,,,,
 CR0018,C0035,2,observed_during,,,,,,,,,"Seventh Army (Dollmann) ordered the 265th Kampfgruppe forward, per the claim notes",
 CR0033,C0036,1,observed_during,,,,,,,,,,
 CR0047,C0037,1,observed_during,,,,,,,,,,
-CR0040,C0038,1,observed_during,,,,,,,,,,
+CR0040,C0038,1,asserts_start,1944-06-06,,,,,,,,"Cross-Channel Attack ch. 8 (R448): Panzer Lehr was in OKW reserve on 6 June and waited until 1600 for Hitler's word to move; the claim (7 June) notes ""Held back 6 June"".",narrative
 CR0056,C0039,1,observed_during,,,,,,,,,,
 CR0077,C0040,1,observed_during,,,,,,,,,,
 CR0078,C0041,1,observed_during,,,,,,,,,,
@@ -967,9 +967,8 @@ CR0125,C0509,1,asserts_start_and_end,1944-08-19,,,,1944-08-27,,,assignment_table
 CR0120,C0509,2,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0509,3,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0126,C0510,1,asserts_start_and_end,1944-08-28,,,,1944-08-29,,,narrative,"CMH ETO-OB lists XV Corps in the single corps column on 28 August (table does not say assigned or attached). Breakout-31 p672: until XIX Corps headquarters took over the Mantes bridgehead at noon on 29 August XV Corps continued in command there, and the 2nd Armored crossed the Seine on 28 August to protect the left flank. About a day of command inside the bridgehead between two periods under XIX Corps, so recorded as temporary operational control, not a change of assignment.",assignment_table
-CR0127,C0510,2,asserts_start,1944-08-28,,,,,,,,"Standing corps link before (C0509, C0229) and after (C0511); continuation inferred from 28 August because no source says the XIX Corps link ended, only that XV Corps commanded the division in the bridgehead.",inferred
-CR0120,C0510,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0122,C0510,4,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0120,C0510,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0122,C0510,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0127,C0511,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0120,C0511,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0511,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table

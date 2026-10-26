@@ -353,7 +353,78 @@ def item3(claims):
          'GER-KG-VONLUCK (battle group formed from this division; 23 June)', 'GER-KG-VONLUCK', '')
 
 
-ITEMS = {1: item1, 2: item2, 3: item3}
+META = os.path.join(DATA, 'references_meta.csv')
+
+
+def add_meta(new_rows):
+    """Append rows (dicts) to data/references_meta.csv after the last reference id."""
+    h, rows = read(META)
+    ids = {r[0] for r in rows}
+    for d in new_rows:
+        assert d['reference_id'] not in ids, d['reference_id'] + ' exists'
+        rows.append([d.get(c, '') for c in h])
+    rows.sort(key=lambda r: r[0])
+    write(META, h, rows)
+
+
+def edit_relation(rid, changes):
+    """changes: {column: (old, new)}"""
+    h, rows = read(REL)
+    for r in rows:
+        if r[0] == rid:
+            for col, (old, new) in changes.items():
+                assert r[h.index(col)] == old, '%s %s: expected %r, found %r' % (rid, col, old, r[h.index(col)])
+                r[h.index(col)] = new
+            write(REL, h, rows)
+            return
+    raise AssertionError(rid)
+
+
+def item5(claims):
+    """CR0061: the 8th Armoured Brigade is an independent brigade attached to the 50th Division for the landings, not an organic part of it."""
+    edit_relation('CR0061', {
+        'relationship': ('organic', 'attached'), 'end_unknown': ('false', 'true'),
+        'note': ('', 'Review item 5. Was recorded as organic from 6 June 1944, which was wrong: the 8th Armoured Brigade was an independent armoured brigade (Wikipedia, 8th Armoured Brigade: independent since November 1942; '
+                 'British Military History, Independent Armoured Brigades: landed on 6 June "supporting the 50th Infantry Division") and the 50th Division order of battle for Gold Beach lists it among the '
+                 'formations "attached for assault phase" (Wikipedia, Gold Beach). The date is the claim date (6 June, the landing); no source dates the end, so the end stays unknown. '
+                 'Pegasus Archive lists the brigade as attached to XXX Corps headquarters in the corps order of battle, which is consistent: the corps held it and attached it to the 50th Division for the assault. '
+                 'The standing formation on 6 June is not named by a source (BMH has it under XXX Corps command from 25 June), so the standing parent is an `unknown` placeholder (CR0375).')})
+    add_relations([rel_row('CR0375', 'UK-ARM-008B', '', 'unknown', '1944-06-06', 'claim_date', 'standing parent not identified', date_basis='inferred', end_unknown='false')])
+    add_links([
+        {'relation_id': 'CR0375', 'claim_id': 'C0020', 'role': 'observed_during', 'stated_note': 'standing parent not identified'},
+        link_row('CR0061', 'C0017', "8th Armoured Brigade listed as a component of the 50th Division; the claim's earlier wording listed it with the formations attached for the landings (the former `attached:` list of this claim)"),
+    ])
+    add_meta([
+        {'reference_id': 'R512', 'url': 'https://en.wikipedia.org/wiki/Gold_Beach', 'short_title': 'Wikipedia: Gold Beach',
+         'full_citation': 'Wikipedia contributors, "Gold Beach", English Wikipedia (section Order of battle, 50th Division: "Formations attached for assault phase").',
+         'source_type': 'encyclopedia', 'source_family': 'wikipedia', 'publisher': 'Wikimedia Foundation (English Wikipedia)', 'license_or_status': 'CC BY-SA 4.0 (Wikipedia text)',
+         'reliability_note': 'secondary, medium; a finding aid', 'used_for': 'order of battle, formations attached for the assault', 'link_status': 'ok', 'link_checked': '2026-10-26'},
+        {'reference_id': 'R513', 'url': 'https://www.britishmilitaryhistory.co.uk/wp-content/uploads/sites/124/2019/05/Independent-Armoured-Brigades.pdf',
+         'short_title': 'British Military History: Independent Armoured Brigades (PDF)',
+         'full_citation': 'British Military History (britishmilitaryhistory.co.uk), "Independent Armoured Brigades" (PDF order of battle of the independent armoured brigades, 1944-1945), entry for the 8th Armoured Brigade.',
+         'source_type': 'reference_compilation', 'source_family': 'britishmilitaryhistory_co_uk', 'publisher': 'British Military History',
+         'license_or_status': 'Copyrighted web document: only facts and the URL are used', 'reliability_note': 'secondary compilation, medium',
+         'used_for': 'independent armoured brigades, command relations', 'link_status': 'ok', 'link_checked': '2026-10-26'},
+        {'reference_id': 'R514', 'url': 'https://www.pegasusarchive.org/normandy/order_xxxCorps.htm', 'short_title': 'Pegasus Archive: XXX Corps order of battle (Normandy)',
+         'full_citation': 'Pegasus Archive, "XXX Corps" (Normandy order of battle, order_xxxCorps.htm).', 'source_type': 'news_or_web_article', 'source_family': 'pegasusarchive_org',
+         'publisher': 'Pegasus Archive', 'license_or_status': 'Copyrighted web page: only facts and the URL are used', 'reliability_note': 'secondary compilation, medium',
+         'used_for': 'order of battle, formations attached to the corps', 'link_status': 'ok', 'link_checked': '2026-10-26'},
+    ])
+    claims.set('C0020', 'source', 'https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign | https://en.wikipedia.org/wiki/Operation_Martlet',
+               'https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign | https://en.wikipedia.org/wiki/Operation_Martlet | https://en.wikipedia.org/wiki/Gold_Beach | '
+               'https://www.britishmilitaryhistory.co.uk/wp-content/uploads/sites/124/2019/05/Independent-Armoured-Brigades.pdf | https://www.pegasusarchive.org/normandy/order_xxxCorps.htm')
+    claims.set('C0020', 'reference_ids', 'R008;R014;R001', 'R008;R014;R512;R513;R514;R001')
+    claims.set('C0020', 'source_locator', '', 'R513: p. 7')
+    old = claims.get('C0020', 'notes')
+    claims.set('C0020', 'notes', old, old + ' [Review item 5: independent armoured brigade, attached to the 50th Division for the assault phase (CR0061, corrected from organic); standing parent not identified (CR0375).]')
+    add_roles([
+        ('C0020', 'R512', 'command_relationship', 'lists the 8th Armoured Brigade among the formations attached to the 50th Division for the assault phase (CR0061)'),
+        ('C0020', 'R513', 'command_relationship', 'the brigade landed on 6 June supporting the 50th Division; an independent brigade, under XXX Corps command from 25 June (CR0061, CR0375)'),
+        ('C0020', 'R514', 'command_relationship', 'lists the 8th Armoured Brigade among the formations attached to XXX Corps headquarters (CR0061 note)'),
+    ])
+
+
+ITEMS = {1: item1, 2: item2, 3: item3, 5: item5}
 
 
 def main():

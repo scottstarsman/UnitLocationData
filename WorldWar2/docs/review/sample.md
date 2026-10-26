@@ -155,12 +155,12 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 ### S09. C0197: 243rd Static Infantry Division, 1944-06-29
 
 - **Unit:** 243rd Static Infantry Division (`GER-INF-243D`), Germany, division; parent in the claim: `GER-COR-084C`; commander field: Generalmajor Bernhard Klosterkemper
-- **Claim:** `destruction` / `OP-CHERBOURG`; status preferred; confidence 0.7
+- **Claim:** `destruction` / `OP-CHERBOURG`; status preferred; confidence 0.3
 - **Activity:** surrendering in the Cherbourg fortress; destroyed
 - **Place:** Cherbourg (`PL0089`, Lower Normandy, FR); point 49.63, -1.62; precision 5 km; point represents: main_body; qualifier: -; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned GER-COR-084C
 - **Engaged with:** US-COR-007C
-- **Notes:** Wikipedia lists the unit as destroyed (commander Klosterkemper, infobox active July 1943 - June 1944); surviving elements surrendered in the Cherbourg fortress 26-29 June. Exact destruction date approximate.
+- **Notes:** Wikipedia lists the unit as destroyed (commander Klosterkemper, infobox active July 1943 - June 1944); surviving elements surrendered in the Cherbourg fortress 26-29 June. Exact destruction date approximate. [Review (V-001): confidence 0.7 -> 0.3. The notes already say the destruction date is approximate and neither cited source dates the end of the 243rd Infantry Division on 29 June (R446 p. 435 dates the surrender of the last harbour forts, not the division); the confidence rubric gives 0.3 when the date itself is approximate. Nothing else changed.]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
@@ -172,11 +172,11 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 ### S10. C0198: Kampfgruppe Weidinger, 1944-06-29
 
 - **Unit:** Kampfgruppe Weidinger (`GER-KG-WEIDINGER`), Germany, regiment/battle_group; parent in the claim: `GER-SSPZ-002C`; commander field: SS-Obersturmbannführer Otto Weidinger
-- **Claim:** `command_change` / `OP-EPSOM`; status preferred; confidence 0.7
+- **Claim:** `command_change` / `OP-EPSOM`; status preferred; confidence 0.3
 - **Activity:** transferring to II SS Panzer Corps control
 - **Place:** Grainville-sur-Odon (`PL0161`, Lower Normandy, FR); point 49.1389, -0.5283; precision 5 km; point represents: front_line_point; qualifier: -; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** organic GER-SSPZ-002D; attached GER-SSPZ-002C from 1944-06-29
-- **Notes:** Kampfgruppe transferred to II SS Panzer Corps 29 June; Seventh Army demanded a Kampfgruppe of the division be returned to reserve behind the Saint-Lô front. [v5: row converted from 2nd SS Panzer Division Das Reich (GER-SSPZ-002D) to battle-group unit; claim_id unchanged. ]
+- **Notes:** Kampfgruppe transferred to II SS Panzer Corps 29 June; Seventh Army demanded a Kampfgruppe of the division be returned to reserve behind the Saint-Lô front. [v5: row converted from 2nd SS Panzer Division Das Reich (GER-SSPZ-002D) to battle-group unit; claim_id unchanged. ] Event support: high (R140 note [h]: "On 29 June the battlegroup was transferred to II SS Corps"; R446 ch. 10 for the Seventh Army request). Location approximate: neither cited source names a place for the Kampfgruppe on 29 June; the point is Grainville-sur-Odon, where it had attacked the day before (C0185, R139), so the position is inferred. [Review (V-002): confidence 0.7 -> 0.3 by the rubric (position inferred); the 5 km [...]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |

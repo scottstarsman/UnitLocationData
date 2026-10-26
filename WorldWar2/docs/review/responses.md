@@ -16,16 +16,16 @@ Each finding that comes back from an outside review is recorded here with the de
 
 | finding | area / table | severity | proposed status |
 |---|---|---|---|
-| R1-F-001 | command relations | 3 design | accepted in part: docs done (commit 1); `last_listed_date` approved, commit 2 |
+| R1-F-001 | command relations | 3 design | accepted in part: docs done (commit 1); `last_listed_date` done (commit 2) |
 | R1-F-002 | confidence | 3 design | accepted in part: docs done (commit 1); structured fields deferred; `event_support` column not approved |
 | R1-F-003 | location | 3 design | accepted in part: docs done (commit 1); `position_interpretation` column not approved |
 | R1-F-004 | claim key | 3 design | deferred (error kept); clarification done (commit 1) |
 | R1-F-005 | provenance | 3 design | deferred (the reviewer agrees: only when the conflict model limits) |
-| R1-F-006 | missing observations | 3 design | accepted in part: tool fix approved, commit 2; position query not built |
+| R1-F-006 | missing observations | 3 design | accepted in part: tool fix done (commit 2); position query not built |
 | R1-F-007 | the packet | 4 suggestion | accepted: done (commit 1) |
 | R1-F-008 | regression tests | 4 suggestion | accepted: `scripts/semantic_tests.py` approved, commit 3 |
 | R1-A-001 | README, "How to interpret the data" | suggestion | accepted: done (commit 1) |
-| R1-N-001 | found while checking: `who_controls.py` | 3 | fix approved, commit 2 |
+| R1-N-001 | found while checking: `who_controls.py` | 3 | fixed (commit 2) |
 | R1-Q1 to R1-Q10 | answers to the ten questions | | see the table at the end |
 
 ### Factual checks on the reviewer's statements
@@ -59,7 +59,7 @@ In short: **none of the reviewer's numbers is wrong.** They were read correctly 
 - **Status:** PROPOSED: accepted in part, pending the owner's decision.
 - **Checked:** the counts above; `schema/README.md`, "Command relations" and "Validity of a relationship"; `data/command_relations.csv` and `build/command_relations.csv`; `scripts/who_controls.py`. The reviewer's five concepts against what exists: (1) sourced start and end: `valid_from_basis` and `valid_to_basis` (`order`, `assignment_table`, `narrative`; 22 + 9 sourced ends, 4 + 31 + 213 sourced starts); (2) earliest and latest plausible transitions: `valid_from_latest` (4 rows) and `valid_to_earliest` (146 rows); (3) last date actually observed: stored as `valid_to_earliest` for every inferred end (143 of 143), not stored for the 201 open ends (derivable: the latest date among the relation's evidence claims); (4) the date through which a relation can safely be asserted: the same date as (3); (5) an inferred continuation: `inferred_from_next_claim` and `open_at_last_claim`, flagged `end_unknown` for temporary kinds; plus the derived `support` column (`documented` 44, `table` 215, `inferred` 102). The documents say "A missing end never means the relationship held indefinitely".
 - **Decision and reason:** the reviewer's concern is valid and the model already carries every distinction they list, but a reader has to piece it together from four places, and the brief prints the end-basis counts without saying what "open at last claim" and "inferred from next claim" mean for a user. Propose (a) docs only: a short section "Reading a command interval" (one table mapping the five concepts to the columns, with the 375 / 201 / 143 / 57 relationship explained, and the rule that for a standing relationship an open end means "no replacement recorded", while for a temporary one it means "no end recorded") in `schema/README.md`, linked from the brief and the root README; (b) a small build-only change, not a schema change: a derived `last_listed_date` column in `build/command_relations.csv` (filled for all 375), and the fix in R1-N-001. Decline new master-table columns: the existing fields are enough once they are explained.
-- **Owner's decision (26 October 2026):** approved. **Done (commit 1):** `schema/README.md`, "Reading a command interval" (the table of the five concepts, how the 201 open and 143 inferred ends relate to the 57 / 39 / 18 `end_unknown` subset: standing against temporary kinds), linked from the root README. **To follow (commit 2):** `last_listed_date` in `build/command_relations.csv`. No master-table column added.
+- **Owner's decision (26 October 2026):** approved. **Done (commit 1):** `schema/README.md`, "Reading a command interval" (the table of the five concepts, how the 201 open and 143 inferred ends relate to the 57 / 39 / 18 `end_unknown` subset: standing against temporary kinds), linked from the root README. **Done (commit 2):** `last_listed_date` in `build/command_relations.csv` (derived; no master-table column added).
 - **Change:** see the commit named above.
 - **Date:** 2026-10-26
 
@@ -98,7 +98,7 @@ In short: **none of the reviewer's numbers is wrong.** They were read correctly 
 - **Status:** PROPOSED: accepted in part: documentation, and a tool fix (R1-N-001); no position query exists to extend. Pending the owner's decision.
 - **Checked:** `scripts/who_controls.py` and its output on several queries; `docs/methodology.md` line 7; `CONTRIBUTING.md` rule 4. **What exists:** quiet days are absent by design and the methodology says a position between two rows "is unknown, not unchanged". `who_controls.py` is the only derived query, and it is about command, not position. It marks each interval `[certain]` or `[possible: why]` and reports `UNKNOWN at this level` for a boundary hour with no record; for an inferred end it prints the range and the last listing (101st Airborne on 15 October 1944: "possible: end between 1944-09-20 and 1944-12-16; end inferred from next claim (last listed 1944-09-20)"). **What does not exist:** a position query (there is no "where was unit X on date D" tool), so the reviewer's five statuses (Observed, Carried forward, Interpolated, Conflicted, Unknown) have nothing to attach to for positions; and for command the tool's two labels are coarser than five (certain and possible, plus UNKNOWN).
 - **Decision and reason:** agreed in principle and important before any broader use or any map or AI layer (the reviewer's priority 5). It is not needed for the data release as it stands, because no derived position product exists. Propose: first the R1-N-001 fix; then docs: say what `certain`, `possible` and `UNKNOWN` mean and map them to the reviewer's vocabulary (observed in an interval, carried forward from the last listing, conflicted by a documented overlap, unknown); a position query, if built, returns the reviewer's five statuses from the start. Defer the position query itself until the owner wants one.
-- **Owner's decision (26 October 2026):** the tool fix was approved. **To follow (commit 2):** see R1-N-001. No position query will be built.
+- **Owner's decision (26 October 2026):** the tool fix was approved. **Done (commit 2):** see R1-N-001. No position query was built.
 - **Change:** see the commit named above.
 - **Date:** 2026-10-26
 
@@ -142,7 +142,8 @@ In short: **none of the reviewer's numbers is wrong.** They were read correctly 
 - **Status:** PROPOSED: fix (tool only; no data or schema change). Not a reviewer finding; it came out of checking R1-F-001 and R1-F-006.
 - **Checked:** `python scripts/who_controls.py US-INF-029D 1944-12-31` answers `[certain]` for the 29th Division's relations to 12th Army Group, First Army and XIX Corps (`open_at_last_claim`), although the division's latest claim is dated 1944-09-29 (93 days earlier). In the code, the flag "no end recorded; latest claim lists it" is added for an `open_at_last_claim` relation but printed only when the interval's status is `possible`, so for a date after the last listing nothing tells the user that the date is beyond the evidence. (An inferred end gives `[possible: ... last listed ...]` correctly, as for the 101st on 15 October.)
 - **Decision and reason:** this is the tool-level form of the reviewer's concern. Whether a standing relation should be taken to hold until replaced is the documented rule; the fault is that the answer does not say how old the last evidence is. Propose: for `open_at_last_claim`, always print the last listing date (and, for a date after it, mark the interval `[possible: last listed <date>; no later evidence]`); regenerate nothing else. Add a test for it in the R1-F-008 suite.
-- **Change:** none yet.
+- **Owner's decision (26 October 2026):** approved. **Done (commit 2):** for a date after the last listing of an `open_at_last_claim` relation the answer is `possible` with the last listing and the days since it (no threshold); every interval without a sourced end prints its `last_listed_date` and end basis; the chain applies the rule at each level; `last_listed_date` is a derived build column. On a 48-query sample 22 answers changed, all certain to possible (see `docs/changelog.md`).
+- **Change:** see the commit named above.
 - **Date:** 2026-10-26
 
 ### Answers to the ten questions

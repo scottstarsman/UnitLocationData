@@ -10,12 +10,21 @@ Prints every interval that covers the date, each marked [certain] or [possible: 
 and the chain above it. Intervals are INCLUSIVE (valid_to is the last day), so on the day one relationship ends and the next
 begins both cover the day; the hour decides, and where no hour is recorded the answer for that level is UNKNOWN rather than a
 guess. A start range (valid_from..valid_from_latest), an end range (valid_to_earliest..valid_to) or an end inferred from the
-next claim also makes an interval [possible]. The operational parent is the lowest-echelon holder of operational_control or
+next claim also makes an interval [possible].
+
+Staleness rule (schema/README.md, "Reading a command interval"). Every interval whose end is not sourced also prints a label with the date of
+the last claim that lists it (last_listed_date in build/command_relations.csv) and its end basis, whatever the status. A relationship is
+[certain] only up to that date. For a date AFTER the last listing of a relationship that has no recorded end (valid_to_basis
+open_at_last_claim) the interval is [possible], at any distance: the sources observed it last on that date, and a standing relationship (assigned,
+unspecified_subordination) is carried forward only until a replacement is recorded, a temporary one has an unknown end. The reason names the
+last listing, the number of days since it and that kind of carry-forward. This is the rule already applied to an end inferred from the next
+claim (a date after valid_to_earliest is [possible]); there is no day threshold, and no date is invented. The operational parent is the lowest-echelon holder of operational_control or
 attached, else of a standing relationship (assigned, unspecified_subordination). The table covers every unit that has a claim (all nationalities,
 the whole period of the data); `organic` relations are not in it. A relation marked [change undated] belongs to one of the parent changes that no
 source dates (change_undated in the master table): the change fell between the previous relation's last listing and this one's first. Where only
 an explicit `unknown` placeholder (no higher unit named by any source) covers the date, the answer says so. Standard library only.
 """
+import datetime
 import os
 import re
 import sys
@@ -43,6 +52,13 @@ def status(iv, date, time):
             why.append('starts that day at %s' % (ft or 'an undocumented hour'))
     if iv['valid_from_latest'] and date < iv['valid_from_latest']:
         why.append('start between %s and %s' % (frm, iv['valid_from_latest']))
+    last = iv.get('last_listed_date', '')
+    if iv['valid_to_basis'] == 'open_at_last_claim' and last and date > last:
+        days = (datetime.date.fromisoformat(date) - datetime.date.fromisoformat(last)).days
+        why.append('after the last claim that lists it (%s, %d day%s earlier); %s' % (
+            last, days, '' if days == 1 else 's',
+            'a standing relationship, carried forward until a replacement is recorded' if iv['relationship'] in STANDING + ('unknown', 'organic')
+            else 'no end recorded'))
     if to:
         tt = iv.get('valid_to_time', '')
         if date == to and iv['valid_to_basis'] != 'inferred_from_next_claim':
@@ -93,16 +109,16 @@ def main(argv):
         return 1
     print('%s on %s%s' % (who, date, (' at ' + time) if time else ''))
     for r, st, why in sorted(hits, key=lambda h: (h[0]['relationship'], h[0]['higher_unit_id'])):
-        flags = list(why)
+        label = ''
         if r['valid_to_basis'] == 'inferred_from_next_claim':
-            flags.append('end inferred from next claim (last listed %s)' % r['valid_to_earliest'])
+            label = ' [last listed %s; end inferred from next claim]' % (r['last_listed_date'] or r['valid_to_earliest'])
         if r['valid_to_basis'] == 'open_at_last_claim':
-            flags.append('no end recorded; latest claim lists it')
-        print('%s -> %s: %s, %s%s to %s%s, support %s (%s) [%s] [%s%s]' % (
+            label = ' [last listed %s; no end recorded]' % r['last_listed_date']
+        print('%s -> %s: %s, %s%s to %s%s, support %s (%s) [%s] [%s%s]%s' % (
             r['subject_unit_id'], r['higher_name'], r['relationship'], r['valid_from'], (' ' + r['valid_from_time']) if r['valid_from_time'] else '',
             r['valid_to'] or 'open', (' ' + r['valid_to_time']) if r['valid_to_time'] else '', r['support'],
             r['valid_to_basis'] or r['valid_from_basis'], r['source_claim_ids'],
-            'certain' if st == 'yes' else 'possible', (': ' + '; '.join(flags)) if st == 'possible' else ''))
+            'certain' if st == 'yes' else 'possible', (': ' + '; '.join(why)) if st == 'possible' else '', label))
 
     # operational chain: lowest-echelon holder of operational_control/attached, else of a standing relationship
     print('operational chain:')
@@ -119,7 +135,8 @@ def main(argv):
         sure = [i for i in ids if any(h[0]['higher_unit_id'] == i and h[1] == 'yes' for h in pool)]
         pad = '  ' * (depth + 1)
         if len(ids) > 1 and not sure:
-            print('%sUNKNOWN at this level: %s (hour of the change not documented%s)' % (pad, ' or '.join(names[i] for i in ids), '' if not time else ' for %s' % time))
+            print('%sUNKNOWN at this level: %s (%s%s)' % (pad, ' or '.join(names[i] for i in ids),
+                  'hour of the change not documented' if any('undocumented hour' in w for h in pool for w in h[2]) else 'none is observed on this date', '' if not time else ' for %s' % time))
             break
         pick = sure[0] if sure else ids[0]
         h = [x for x in pool if x[0]['higher_unit_id'] == pick][0]

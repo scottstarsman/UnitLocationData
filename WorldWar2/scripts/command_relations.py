@@ -133,13 +133,15 @@ def source_claim_ids(rel, rel_obj, claim_info):
 
 DERIVED_HEADER = ['relation_id', 'subject_unit_id', 'subject_name', 'higher_unit_id', 'higher_name', 'relationship', 'valid_from', 'valid_from_latest',
                   'valid_from_time', 'valid_from_basis', 'valid_to', 'valid_to_earliest', 'valid_to_time', 'valid_to_basis', 'support', 'ordered_date',
-                  'source_claim_ids', 'note', 'end_unknown', 'change_undated']
+                  'source_claim_ids', 'note', 'end_unknown', 'change_undated', 'last_listed_date']
 
 
 def derived_rows(rel_obj, units, claim_rows):
     """Rows of build/command_relations.csv: every preferred relation of the master table except `organic` (a constituted component is not a
     command relationship to ask about), with names from units.csv and the evidence claim ids. Placeholders (no higher unit) are included with blank
-    higher_* columns. support: documented (date_basis narrative/order), table (assignment_table), inferred (anything else)."""
+    higher_* columns. support: documented (date_basis narrative/order), table (assignment_table), inferred (anything else).
+    last_listed_date: the date of the latest preferred claim that lists the relation (the last observation); for an end inferred from the next claim it
+    equals valid_to_earliest, for an end open at the last claim it is the last date the evidence reaches. Derived here; not a column of the master table."""
     claim_info = {r['claim_id']: r for r in claim_rows}
     out = []
     for r in rel_obj.rows:
@@ -147,10 +149,12 @@ def derived_rows(rel_obj, units, claim_rows):
             continue
         hu = units.get(r['higher_unit_id']) if r['higher_unit_id'] else None
         su = units[r['subject_unit_id']]
+        ids = source_claim_ids(r, rel_obj, claim_info)
         sup = {'narrative': 'documented', 'order': 'documented', 'assignment_table': 'table'}.get(r['date_basis'], 'inferred')
         out.append([r['relation_id'], r['subject_unit_id'], su['unit_name'], r['higher_unit_id'],
                     common.display_name(hu['unit_name'], hu['nationality']) if hu else '', r['relationship'], r['valid_from'], r['valid_from_latest'],
                     r['valid_from_time'], r['valid_from_basis'], r['valid_to'], r['valid_to_earliest'], r['valid_to_time'], r['valid_to_basis'], sup,
-                    r['ordered_date'], ' '.join(source_claim_ids(r, rel_obj, claim_info)), r['note'], r['end_unknown'], r['change_undated']])
+                    r['ordered_date'], ' '.join(ids), r['note'], r['end_unknown'], r['change_undated'],
+                    max((claim_info[c]['date'] for c in ids), default='')])
     out.sort(key=lambda x: (x[1], x[6], x[3], x[5], x[0]))
     return out

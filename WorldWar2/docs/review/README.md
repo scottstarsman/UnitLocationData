@@ -101,7 +101,7 @@ Claims by status: preferred 548, alternate 11, disputed 7. Claims by confidence:
 
 Placeholder units by nationality: Germany 177, US 27, France 13, UK 10, Canada 7, Allied 3, Poland 2, Belgium 1, Czechoslovakia 1, Netherlands 1.
 
-Command relations by relationship: assigned 173, unspecified_subordination 85, attached 53, unknown 26, operational_control 21, organic 11, reserve 3, administrative_control 2, coordinating 1.
+Command relations by relationship: assigned 174, unspecified_subordination 85, attached 52, unknown 26, operational_control 21, organic 11, reserve 3, administrative_control 2, coordinating 1.
 
 Command relations: start basis assignment_table 214, claim_date 117, narrative 33, inferred 7, order 4; end basis open_at_last_claim 200, inferred_from_next_claim 142, assignment_table 23, narrative 10; `end_unknown` true 55; `change_undated` true 10; status preferred 373, alternate 2.
 

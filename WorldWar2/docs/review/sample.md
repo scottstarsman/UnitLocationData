@@ -35,11 +35,11 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 
 - **Unit:** 3rd Canadian Infantry Division (`CAN-INF-003D`), Canada, division; parent in the claim: `UK-COR-001C`; commander field: Major-General Rodney F.L. Keller
 - **Claim:** `attack` / `OP-CAMP-NORMANDY`; status preferred; confidence 0.3
-- **Activity:** contained north-west of Caen by 12th SS
+- **Activity:** facing the 12th SS Panzer Division on the Caen-Bayeux road
 - **Place:** Authie-Carpiquet line (`PL0020`, Lower Normandy, FR); point 49.2067, -0.4306; precision 10 km; point represents: front_line_point; qualifier: point = Authie; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned UK-COR-001C
 - **Engaged with:** GER-SSPZ-012D
-- **Notes:** 12th SS Panzer Division recon battalion committed 7 June and by 8 June 12th SS held the Caen-Bayeux road between Authie and Carpiquet against the Canadian advance; Canadians contained north-west of Caen.
+- **Notes:** 12th SS Panzer Division recon battalion committed 7 June and by 8 June 12th SS held the Caen-Bayeux road between Authie and Carpiquet (R449 p. 347-348), on the line that the 3rd Canadian Division was to reach from Juno (R013). [Review (V-007): neither cited source describes the division in an attack on 8 June; the activity and the event type attack are inferred from that position. The activity wording no longer says the division was contained.]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
@@ -102,12 +102,12 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 
 ### S06. C0081: LXXXIV Corps, 1944-06-12
 
-- **Unit:** LXXXIV Corps (`GER-COR-084C`), Germany, corps; parent in the claim: `GER-ARMY-007A`; commander field: General der Artillerie Erich Marcks (killed 12 June); General der Artillerie Wilhelm Fahrmbacher from that evening
+- **Unit:** LXXXIV Corps (`GER-COR-084C`), Germany, corps; parent in the claim: `GER-ARMY-007A`; commander field: General der Artillerie Erich Marcks (killed 12 June); General der Artillerie Wilhelm Fahrmbacher from 12 June
 - **Claim:** `command_change` / `OP-CAMP-NORMANDY`; status preferred; confidence 0.5; conflict group G004
 - **Activity:** commander killed by air attack; Fahrmbacher takes over
 - **Place:** Hebecrevon, Manche (`PL0171`, Lower Normandy, FR); point 49.1269, -1.165; precision 5 km; point represents: approach_route; qualifier: where Marcks was killed, near Saint-Lô; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned GER-ARMY-007A
-- **Notes:** Gen. Marcks killed 12 June in an Allied air attack while going to Carentan (Hebecrevon); Fahrmbacher took command that evening (CMH; Wikipedia Marcks/LXXXIV pages agree). Wikipedia's Fahrmbacher page dates his command from 10 June (conflict G004). [Review 6: the point is the place Wikipedia's Marcks page gives for his death (Hébécrevon), about 5 km west of Saint-Lô, where the corps headquarters was; it is not the corps' main body, so location_represents changed from main_body to approach_route (Marcks was travelling to Carentan). Confidence lowered from 0.7 to 0.5: CMH supports the date and the death but names no place; the place rests on Wikipedia alone. Coordinates unchanged.]
+- **Notes:** Gen. Marcks killed 12 June in an Allied air attack while going to Carentan (Hebecrevon); Fahrmbacher replaced him (CMH, Cross-Channel Attack ch. 10; the Wikipedia Marcks and LXXXIV pages agree on 12 June; none gives the hour). [Review (V-007): the words "from that evening" and "took command that evening" were dropped; no cited source says it was that evening.] Wikipedia's Fahrmbacher page dates his command from 10 June (conflict G004). [Review 6: the point is the place Wikipedia's Marcks page gives for his death (Hébécrevon), about 5 km west of Saint-Lô, where the corps headquarters was; it is not the corps' main body, so location_represents changed from main_body to approach_route (Marcks w [...]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |

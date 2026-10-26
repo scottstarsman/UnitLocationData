@@ -357,7 +357,7 @@ REFERENCE_TYPES = {'official_history', 'unit_history', 'assignment_table', 'refe
                    'monument_or_memorial', 'archive_document', 'news_or_web_article', 'other'}
 
 
-def check_references():
+def check_references(claims):
     """Every cited URL (claims.source, units.formed_date_source), unit source token and strength source maps to a row of
     data/references_meta.csv; the metadata rows are well formed. (build.py --check verifies data/references.csv itself.)"""
     import build_references as br
@@ -403,6 +403,67 @@ def check_references():
         st = stats[m['reference_id']]
         if not st['claims'] and not st['units'] and not st['ops']:
             warn(where, '%s (%s) is not cited by any claim, unit or operation: remove the row or cite it' % (m['reference_id'], m['short_title']))
+        if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
+            err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
+    check_claim_references(claims, meta)
+
+
+def check_claim_references(claims, meta):
+    """The stored claim -> reference links: reference_ids (every id exists, at least one per claim), source_locator, the roles table, the
+    consistency of the readable `source` citation with the ids, and the independent-source rubric for confidence 0.9 (warning)."""
+    import build_references as br
+    by_id = {m['reference_id']: m for m in meta}
+    by_claim = {c['claim_id']: c for c in claims}
+    cited, _missing = br.cited_links(claims, meta)   # URLs of `source` / coordinate note / strength_json -> reference ids
+    for c in claims:
+        w = c['claim_id']
+        ids = br.parse_ids(c.get('reference_ids', ''))
+        if not ids:
+            err(w, 'reference_ids is empty: every claim needs at least one reference (see CONTRIBUTING.md "How to cite a new source")')
+            continue
+        for rid in ids:
+            if rid not in by_id:
+                err(w, 'reference_ids: %s is not in data/references_meta.csv' % rid)
+        if len(set(ids)) != len(ids):
+            err(w, 'reference_ids lists a reference twice: %s' % c['reference_ids'])
+        locs, bad = br.parse_locators(c.get('source_locator', ''))
+        for b in bad:
+            err(w, 'source_locator part %r is not "R###: page or section"' % b)
+        for rid in locs:
+            if rid not in ids:
+                err(w, 'source_locator names %s, which is not in reference_ids' % rid)
+        for rid in sorted({x[0] for x in cited.get(w, [])} - set(ids)):
+            err(w, 'the citation (source / coordinate note / strength_json) resolves to %s but reference_ids does not list it' % rid)
+        for rid in ids:
+            if rid in by_id and rid not in {x[0] for x in cited.get(w, [])}:
+                warn(w, 'reference_ids lists %s but no URL, coordinate note or strength source in the claim cites it: add its URL to `source`' % rid)
+        if c.get('confidence') and float(c['confidence']) >= 0.9:
+            fam = {by_id[r]['source_family'] for r in ids if r in by_id}
+            if len(fam) < 2:
+                warn(w, 'confidence %s needs references from at least two source families (Wikipedia counts as one); has %s' % (c['confidence'], sorted(fam)))
+    where = 'data/claim_reference_roles.csv'
+    if not os.path.isfile(br.ROLES_CSV):
+        err(where, 'missing')
+        return
+    header, rows = br.read_roles()
+    if header != br.ROLE_HEADER:
+        err(where, 'header %s != %s' % (header, br.ROLE_HEADER))
+        return
+    seen = set()
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        c = by_claim.get(r['claim_id'])
+        if c is None:
+            err(w, 'unknown claim_id %s' % r['claim_id'])
+        elif r['reference_id'] not in br.parse_ids(c.get('reference_ids', '')):
+            err(w, '%s is not in the reference_ids of %s' % (r['reference_id'], r['claim_id']))
+        if r['role'] not in br.ROLES or r['role'] == 'general':
+            err(w, 'role %r must be one of %s (general is the default and is not stored)' % (r['role'], br.ROLES[:-1]))
+        if (r['claim_id'], r['reference_id'], r['role']) in seen:
+            err(w, 'duplicate row')
+        seen.add((r['claim_id'], r['reference_id'], r['role']))
+        if not r['basis'].strip():
+            err(w, 'basis is empty (say why the role was assigned)')
 
 
 def check_operations(claims, vocabs):
@@ -628,7 +689,7 @@ def main():
               '(valid_to_basis inferred_from_next_claim). Add effective_to where a source dates the end.\n' % len(open_end))
 
     check_operations(all_rows, vocabs)
-    check_references()
+    check_references(all_rows)
 
     for w in warnings:
         print('WARNING', w)

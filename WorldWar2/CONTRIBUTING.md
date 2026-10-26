@@ -4,7 +4,7 @@ Thank you for helping. This project is only useful if every row can be checked, 
 
 ## Rules
 
-1. **Every row needs a source.** The `source` column must hold at least one URL (separate several with ` | `, and end with the coordinate source note, for example `; coords: Wikipedia`). Say in `notes` what the source says. Cite a page or chapter when you can.
+1. **Every row needs a source.** The `source` column must hold at least one URL (separate several with ` | `, and end with the coordinate source note, for example `; coords: Wikipedia`). Say in `notes` what the source says. Cite a page or chapter when you can. Then list the same sources in `reference_ids` (see "How to cite a new source").
 2. **Conflicting claims become separate rows.** If two sources disagree (date, place, commander, anything in the row), do not average or pick silently. Add one row per claim, give them the same `conflict_group_id` (next free `G###`), and set `claim_status`: one `preferred` and the others `alternate`, or all `disputed` if no source is better. Explain the disagreement in `notes` on each row.
 3. **Never invent.** If a value is not in a source, write `unknown` (for text fields such as `commander`, or `parent_unit_id` and `command_relationships`) or leave the optional field blank. Do not guess numbers for `strength_json`. A gap is better than a plausible fabrication.
 4. **One row is one claim** about one unit on one date. Rows are event-based; do not add filler rows for quiet days.
@@ -64,6 +64,17 @@ python scripts/audit_command_location.py   # review prompts: command and locatio
 python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim temporal checks (overlaps, undated transfers, sequences recorded as conflicts); add --out FILE for a markdown report
 ```
 
+## How to cite a new source
+
+Each claim lists the references behind it in `reference_ids`; the `source` text stays as the human-readable citation. For every source a row relies on:
+
+1. Put its URL in the claim's `source` (` | ` between URLs, the coordinate note last) and say in `notes` what it supports.
+2. Find its row in `data/references.csv` (search the URL). If it has none, add one: `python scripts/build_references.py --add URL` appends a skeleton row to `data/references_meta.csv` with the next `R###` id and a `source_family`. Edit the skeleton: `short_title`, `full_citation`, `source_type`, `publisher`, `license_or_status`, `reliability_note`, `used_for`. Keep `source_family` equal to the family of an existing reference when the new source republishes it or is Wikipedia (see `schema/vocabularies.json`); otherwise leave the host name.
+3. Add the id to the claim's `reference_ids` (`R398;R407`). If the source gives a page, chapter or section, add it to `source_locator` (`R398: p. 285, 289; R407: p. 36`). A page in the URL fragment (`#page285`) is not enough on its own; write the locator.
+4. If the source supports one part of the claim only (the date, the place, the command relationship, a strength figure), add a row to `data/claim_reference_roles.csv` (`claim_id,reference_id,role,basis`; role `event`, `date`, `location`, `command_relationship` or `strength`; `basis` says why). Leave it out when the source supports the claim as a whole.
+5. A claim at `confidence` 0.9 needs references from at least two source families (Wikipedia, in any language, counts as one; so does everything republished from a CMH publication). A coordinate service such as Nominatim does not make a claim independently sourced; do not raise confidence on that basis.
+6. Run `python scripts/validate.py` (errors: an unknown id, a claim without a reference, a URL in `source` whose reference is not in `reference_ids`), then `python scripts/build.py`.
+
 ## Pull request checklist
 
 - [ ] Every new or changed row has a source URL and a `notes` entry saying what the source supports.
@@ -76,7 +87,7 @@ python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim t
 - [ ] `python scripts/audit_temporal_relationships.py` was run and any finding that involves a new or changed row was checked against the source (a finding is a prompt, not an error; say in the pull request which are real and which are expected patterns).
 - [ ] Every new row has an `operation_id` that exists in `data/operations.csv` (the most specific operation whose dates contain the row's date; the campaign row when no named operation applies). A new operation has its own row, dates, a source or a note, and a reference row (see "Add an operation").
 - [ ] The per-row review checklist above was applied to every new or changed row (a second person checks 15 rows or 10% of a large batch, chosen by risk as described in `docs/methodology.md`).
-- [ ] Every new source URL has a row in `data/references_meta.csv` (`python scripts/build_references.py --seed` adds a skeleton to edit; `validate.py` fails without it).
+- [ ] Every new source URL has a row in `data/references_meta.csv` (`python scripts/build_references.py --add URL` adds a skeleton to edit; `validate.py` fails without it), and every new row lists its references in `reference_ids` (with `source_locator` where a page is known; a 0.9 row cites two source families).
 - [ ] `python scripts/build.py` was run and the `build/` changes (including `data/references.csv`) are committed.
 - [ ] New vocabulary values (if any) are documented in `schema/vocabularies.json` and `schema/README.md`.
 - [ ] Confidence and precision follow the rubric in `docs/methodology.md`.

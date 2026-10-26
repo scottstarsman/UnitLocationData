@@ -2,18 +2,21 @@
 """Build the references table from the citations in the claims and the unit table.
 
 Inputs
-  data/claims/**.csv     source (URLs separated by ' | ', then ' ; coords: <note>'), strength_json.source
+  data/claims/**.csv     reference_ids and source_locator (the STORED claim -> reference links, the source of truth); source (URLs separated
+                         by ' | ', then ' ; coords: <note>') and strength_json.source stay as the readable citation and must resolve to
+                         the stored reference_ids (checked by validate.py)
+  data/claim_reference_roles.csv   HAND-MAINTAINED role of a link (event | location | command_relationship | strength | date | general)
   data/units.csv         formed_date_source (URL), listing_source and initial_parent_source (tokens)
   data/references_meta.csv   HAND-MAINTAINED metadata, one row per reference: stable reference_id, URL,
                          title, citation, type, publisher, licence, reliability, link status, ...
 
 Outputs (deterministic; the claims stay the evidence, these tables are derived):
   data/references.csv        one row per reference: the metadata plus claims_count, units_count, first_claim_id
-  build/claim_references.csv claim_id, reference_id, role (source | coordinates | strength), locator (URL fragment, e.g. page285)
+  build/claim_references.csv claim_id, reference_id, role, locator (page / section, from the claim's source_locator), one row per link and role
   build/unit_references.csv  unit_id, field (formed_date_source | listing_source | initial_parent_source), reference_id
   build/operation_references.csv  operation_id, reference_id (the reference_ids column of data/operations.csv)
 
-A cited URL is normalised (fragment removed, ibiblio.org -> www.ibiblio.org) and must match the url of a row in
+Stored links were migrated once from the citations by scripts/migrate_claim_references.py. A cited URL is normalised (fragment removed, ibiblio.org -> www.ibiblio.org) and must match the url of a row in
 references_meta.csv. A reference may instead be matched by a regular expression on the coordinate note
 (match_pattern, for services such as Nominatim), by a unit source token (source_token) or by the text of a
 strength_json source (strength_alias, ';'-separated). Rows keep their reference_id forever; new ones are appended.
@@ -48,11 +51,15 @@ REFERENCES_CSV = os.path.join(common.ROOT, 'data', 'references.csv')
 LINK_CACHE = os.path.join(common.ROOT, '.cache', 'links.json')
 
 META_HEADER = ['reference_id', 'url', 'match_pattern', 'source_token', 'strength_alias', 'short_title', 'full_citation', 'source_type',
-               'publisher', 'accessed_date', 'license_or_status', 'reliability_note', 'used_for', 'link_status', 'link_checked']
-REF_HEADER = ['reference_id', 'short_title', 'full_citation', 'source_type', 'publisher', 'url', 'original_url', 'accessed_date',
+               'source_family', 'publisher', 'accessed_date', 'license_or_status', 'reliability_note', 'used_for', 'link_status', 'link_checked']
+REF_HEADER = ['reference_id', 'short_title', 'full_citation', 'source_type', 'source_family', 'publisher', 'url', 'original_url', 'accessed_date',
               'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'first_claim_id', 'used_for', 'link_status',
               'link_checked']
 CLAIM_REF_HEADER = ['claim_id', 'reference_id', 'role', 'locator']
+ROLES_CSV = os.path.join(common.ROOT, 'data', 'claim_reference_roles.csv')
+ROLE_HEADER = ['claim_id', 'reference_id', 'role', 'basis']
+ROLES = ['event', 'date', 'location', 'command_relationship', 'strength', 'general']   # 'general' is the default when a link has no role row
+REF_ID_RE = re.compile(r'R\d{3,}')
 UNIT_REF_HEADER = ['unit_id', 'field', 'reference_id']
 OP_REF_HEADER = ['operation_id', 'reference_id']
 UA = 'ww2-unit-locations-reference-check/1.0 (https://github.com/scottstarsman/UnitLocationData)'
@@ -115,44 +122,119 @@ def strength_sources(row):
     return out
 
 
-def derive():
-    """Return (claim_refs, unit_refs, per-reference stats, missing) from the data and the metadata file."""
-    _h, meta = read_meta()
+def default_family(url):
+    """Source family of a URL (independent-source rubric: Wikipedia, in any language, is one family; the US Army Center of Military History
+    and everything republished from it is one; otherwise the host name)."""
+    h = urlsplit(url).netloc.lower()
+    h = re.sub(r'^www\.', '', h)
+    if h.endswith('wikipedia.org') or h.endswith('wikimedia.org'):
+        return 'wikipedia'
+    if h == 'web.archive.org':
+        inner = original_url(url)
+        return default_family(inner) if inner else 'internet_archive'
+    if h == 'history.army.mil' or (h.endswith('ibiblio.org') and '/hyperwar/USA/' in url):
+        return 'us_army_cmh'
+    if h.startswith('nominatim.openstreetmap'):
+        return 'openstreetmap'
+    return re.sub(r'[^a-z0-9]+', '_', h).strip('_')   # any other site: its host name, e.g. lexikon_wehrmacht_de
+
+
+def parse_ids(s):
+    """Reference ids of a reference_ids cell (';'-separated), in order."""
+    return [x.strip() for x in s.split(';') if x.strip()]
+
+
+def parse_locators(s):
+    """{reference_id: locator} of a source_locator cell ('R398: p. 285, 289; R407: p. 36'); (dict, malformed parts)."""
+    out, bad = {}, []
+    for part in s.split(';'):
+        part = part.strip()
+        if not part:
+            continue
+        m = re.fullmatch(r'(R\d{3,}):\s*(\S.*)', part)
+        if m and m.group(1) not in out:
+            out[m.group(1)] = m.group(2).strip()
+        else:
+            bad.append(part)
+    return out, bad
+
+
+def fragment_locator(frag):
+    """Locator text of a URL fragment: 'page285' -> 'p. 285'; '' for any other fragment (nothing is guessed)."""
+    m = re.fullmatch(r'page(\d+)', frag or '')
+    return 'p. ' + m.group(1) if m else ''
+
+
+def read_roles():
+    if not os.path.isfile(ROLES_CSV):
+        return [], []
+    return common.read_dicts(ROLES_CSV)
+
+
+def cited_links(claims, meta):
+    """Links implied by the readable citations: {claim_id: [(reference_id, kind, fragment)]} in citation order (URLs, then the coordinate
+    service, then strength sources), and {citation: first claim_id} for citations with no metadata row."""
     by_url = {m['url']: m for m in meta if m['url']}
     patterns = [(re.compile(m['match_pattern']), m) for m in meta if m['match_pattern']]
-    tokens = {m['source_token']: m for m in meta if m['source_token']}
     aliases = {}
     for m in meta:
         for a in m['strength_alias'].split(';'):
             if a.strip():
                 aliases[a.strip()] = m
-    missing = {}   # url -> first claim/unit
-    claim_refs, unit_refs = set(), set()
-    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set()} for m in meta}
-
-    _hh, claims = common.load_all_claims()
-    claims = sorted(claims, key=lambda r: r['claim_id'])
+    missing, out = {}, {}
     for r in claims:
+        links = []
         urls, note = split_source(r['source'])
-        for pos, raw in enumerate(urls):
+        for raw in urls:
             url, frag = norm_url(raw)
             m = by_url.get(url)
             if m is None:
                 missing.setdefault(url, r['claim_id'])
                 continue
-            claim_refs.add((r['claim_id'], m['reference_id'], 'source', frag))
-            stats[m['reference_id']]['claims'].add(r['claim_id'])
+            links.append((m['reference_id'], 'source', frag))
         for rx, m in patterns:
             if note and rx.search(note):
-                claim_refs.add((r['claim_id'], m['reference_id'], 'coordinates', ''))
-                stats[m['reference_id']]['claims'].add(r['claim_id'])
+                links.append((m['reference_id'], 'coordinates', ''))
         for a in strength_sources(r):
             m = aliases.get(a)
             if m is None:
                 missing.setdefault('strength source: ' + a, r['claim_id'])
                 continue
-            claim_refs.add((r['claim_id'], m['reference_id'], 'strength', ''))
-            stats[m['reference_id']]['claims'].add(r['claim_id'])
+            links.append((m['reference_id'], 'strength', ''))
+        out[r['claim_id']] = links
+    return out, missing
+
+
+def stored_roles():
+    """{(claim_id, reference_id): [roles]} from data/claim_reference_roles.csv."""
+    out = {}
+    for r in read_roles()[1]:
+        out.setdefault((r['claim_id'], r['reference_id']), []).append(r['role'])
+    return out
+
+
+def derive():
+    """Return (claim_refs, unit_refs, per-reference stats, missing, meta, op_refs). Claim links are the STORED reference_ids of the claims
+    (roles from data/claim_reference_roles.csv, locators from source_locator); `missing` lists citations (URLs, strength sources, unit
+    sources) that have no metadata row."""
+    _h, meta = read_meta()
+    tokens = {m['source_token']: m for m in meta if m['source_token']}
+    by_url = {m['url']: m for m in meta if m['url']}
+    claim_refs, unit_refs = set(), set()
+    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set()} for m in meta}
+
+    _hh, claims = common.load_all_claims()
+    claims = sorted(claims, key=lambda r: r['claim_id'])
+    _cl, missing = cited_links(claims, meta)
+    roles = stored_roles()
+    for r in claims:
+        locs, _bad = parse_locators(r.get('source_locator', ''))
+        for rid in parse_ids(r.get('reference_ids', '')):
+            if rid not in stats:
+                continue   # reported by validate.py
+            for role in sorted(set(roles.get((r['claim_id'], rid), ['general'])), key=ROLES.index):
+                claim_refs.add((r['claim_id'], rid, role, locs.get(rid, '')))
+            stats[rid]['claims'].add(r['claim_id'])
 
     _uh, units = common.read_dicts(common.UNITS_CSV)
     for u in units:
@@ -203,7 +285,7 @@ def outputs():
     rows = []
     for m in sorted(meta, key=lambda m: m['reference_id']):
         st = stats[m['reference_id']]
-        rows.append([m['reference_id'], m['short_title'], m['full_citation'], m['source_type'], m['publisher'], m['url'],
+        rows.append([m['reference_id'], m['short_title'], m['full_citation'], m['source_type'], m['source_family'], m['publisher'], m['url'],
                      original_url(m['url']), m['accessed_date'], m['license_or_status'], m['reliability_note'],
                      str(len(st['claims'])), str(len(st['units'])), str(len(st['ops'])), min(st['claims']) if st['claims'] else '', m['used_for'],
                      m['link_status'] or 'unchecked', m['link_checked']])
@@ -236,6 +318,7 @@ def seed_row(url):
     last = re.sub(r'\.html?$', '', path.rstrip('/').rsplit('/', 1)[-1])
     d = dict.fromkeys(META_HEADER, '')
     d['url'] = url
+    d['source_family'] = default_family(url)
     d['short_title'] = last
     if host.endswith('ibiblio.org') and '/hyperwar/USA/' in path:
         series = path.split('/hyperwar/USA/')[1].split('/')[0]

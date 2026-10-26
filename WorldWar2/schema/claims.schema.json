@@ -243,6 +243,23 @@
       }
     },
     {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "Stored links to the references that support this claim: reference_ids from data/references_meta.csv (R###), separated by \";\", in citation order. The source of truth for claim-to-reference links (build/claim_references.csv and the claims_count of data/references.csv are built from it). The URLs in `source` stay as the readable citation and must resolve to ids listed here. Every claim needs at least one; a claim at confidence 0.9 should have references from at least two different source families (warning). The role of a link (event, date, location, command_relationship, strength) is in data/claim_reference_roles.csv; a link with no row there is \"general\".",
+      "constraints": {
+        "required": true,
+        "pattern": "^R[0-9]{3,}( ?; ?R[0-9]{3,})*$"
+      }
+    },
+    {
+      "name": "source_locator",
+      "type": "string",
+      "description": "Where in a reference the claim is supported, as \"R398: p. 285, 289; R407: p. 36\" (reference_id, then page, chapter or section), separated by \";\". Only ids that are in reference_ids. Blank where the citation gives no page; nothing is guessed. Filled from URL fragments (#page285) of the original citation.",
+      "constraints": {
+        "pattern": "^R[0-9]{3,}: [^;]+(; R[0-9]{3,}: [^;]+)*$"
+      }
+    },
+    {
       "name": "event_type",
       "type": "string",
       "description": "One primary event type (see vocabulary).",

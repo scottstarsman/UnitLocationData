@@ -260,5 +260,24 @@
       "German": "German name or concept.",
       "All": "Neutral or both sides."
     }
+  },
+  "reference_role": {
+    "description": "Role of a claim-to-reference link in data/claim_reference_roles.csv: what in the claim the reference supports. A link with no row there has the role general.",
+    "values": {
+      "event": "The event definition: what happened (arrival, assignment, engagement, relief).",
+      "date": "The date of the claim's event.",
+      "location": "The place or the coordinates (a place source, or the coordinate service/gazetteer).",
+      "command_relationship": "The unit's parent or attached/assigned relationship in command_relationships.",
+      "strength": "A strength_json figure.",
+      "general": "Supports the claim as a whole or the role is not established from the claim's own text (the default; no row is stored)."
+    }
+  },
+  "source_family": {
+    "description": "Source family of a reference (data/references_meta.csv source_family), used by the independent-source rubric: two references from the same family count once. The value is a free lower-case token (a host name with underscores) except for these families, which group sites that are not independent of each other.",
+    "values": {
+      "wikipedia": "Wikipedia in any language, its API and Wikimedia pages. One family however many articles are cited.",
+      "us_army_cmh": "US Army Center of Military History publications and the sites that republish them (HyperWar copies of the Green Books, history.army.mil, archive copies of them).",
+      "openstreetmap": "OpenStreetMap / Nominatim, the geocoder behind many coordinates. A gazetteer, not evidence that the unit was there."
+    }
   }
 }

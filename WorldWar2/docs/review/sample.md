@@ -674,7 +674,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R460 | general | World War II by Day: 101st Airborne Division | reference_compilation | https://www.ww2byday.com/2/mapunit/ | R389: p. 458; R384: p. 308 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R389: p. 458; R384: p. 308 |
 
-## Part 2: command relations (20 of 380)
+## Part 2: command relations (20 of 379)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -700,7 +700,18 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0171 (GER-KG-002PZ, 1944-06-27) | observed_during | - | - |  | R139 https://en.wikipedia.org/wiki/Operation_Epsom; R140 https://en.wikipedia.org/wiki/Operation_Epsom_order_of_battle |
 
-### R03. CR0040: Panzer Lehr Division -> Oberkommando der Wehrmacht (OKW) (reserve)
+### R03. CR0036: 21st Panzer Division -> Seventh Army (assigned)
+
+- **Subject / higher unit:** `GER-PZ-021D` / `GER-ARMY-007A`
+- **Interval:** from 1944-06-06 (claim_date) to 1944-06-07 (earliest 1944-06-06) (inferred); end_unknown false; change_undated false; date_basis inferred; status preferred
+- **Note:** Dated on 26 October 2026 (open item 7, decided by Scott; annotated inferred value). Old values: valid_to 1944-06-12 (basis inferred_from_next_claim), valid_to_earliest 1944-06-06, change_undated true, date_basis inferred. New values: valid_to 1944-06-07 (basis inferred), valid_to_earliest 1944-06-06 (unchanged), change_undated false, date_basis inferred. Reason: Cross-Channel Attack ch. 8 p. 333 has the plan "developed on D Day" put the 21st Panzer Division under I SS Panzer Corps, ch. 9 p. 347 [...]
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C0004 (GER-PZ-021D, 1944-06-06) | asserts_end | - | 1944-06-07 | Cross-Channel Attack ch. 8 p. 333, ch. 9 p. 347 and 372: the 21st Panzer Division was under I SS Panzer Corps from 8 June at the latest (first day shown); the end is inferred as 7 June, the change may have come that day | R013 https://en.wikipedia.org/wiki/Battle_for_Caen; R042 https://en.wikipedia.org/wiki/21st_Panzer_Division_(Wehrmacht); R132 https://en.wikipedia.org/wiki/LXXXIV_Army_Corps_(Wehrmacht); R137 https://en.wikipedia.org/wiki/Normandy_landings; R448 https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-8.html; R449 https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-9.html |
+
+### R04. CR0040: Panzer Lehr Division -> Oberkommando der Wehrmacht (OKW) (reserve)
 
 - **Subject / higher unit:** `GER-PZ-LEHRD` / `GER-OKW-000H`
 - **Interval:** from 1944-06-06 (narrative) to 1944-06-07 (earliest 1944-06-07) (inferred_from_next_claim); end_unknown true; change_undated true; date_basis narrative; status preferred
@@ -711,7 +722,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0038 (GER-PZ-LEHRD, 1944-06-07) | asserts_start | 1944-06-06 | - | Cross-Channel Attack ch. 8 (R448): Panzer Lehr was in OKW reserve on 6 June and waited until 1600 for Hitler's word to move; the claim (7 June) notes "Held back 6 June". | R141 https://en.wikipedia.org/wiki/Operation_Perch; R143 https://en.wikipedia.org/wiki/Panzer_Lehr_Division; R448 https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-8.html |
 
-### R04. CR0041: Panzer Lehr Division -> I SS Panzer Corps (assigned)
+### R05. CR0041: Panzer Lehr Division -> I SS Panzer Corps (assigned)
 
 - **Subject / higher unit:** `GER-PZ-LEHRD` / `GER-SSPZ-001C`
 - **Interval:** from 1944-06-08 (claim_date) to 1944-06-12 (earliest 1944-06-09) (inferred_from_next_claim); end_unknown false; change_undated true; date_basis inferred; status preferred
@@ -723,7 +734,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0053 (GER-PZ-LEHRD, 1944-06-08) | observed_during | - | - |  | R449 https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-9.html |
   | C0060 (GER-PZ-LEHRD, 1944-06-09) | observed_during | - | - |  | R141 https://en.wikipedia.org/wiki/Operation_Perch; R449 https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-9.html |
 
-### R05. CR0056: 21st Army Group -> Supreme Headquarters Allied Expeditionary Force (SHAEF) (assigned)
+### R06. CR0056: 21st Army Group -> Supreme Headquarters Allied Expeditionary Force (SHAEF) (assigned)
 
 - **Subject / higher unit:** `UK-AG-021G` / `ALL-SHAEF-000H`
 - **Interval:** from 1944-06-07 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status alternate
@@ -734,7 +745,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0039 (UK-AG-021G, 1944-06-07) | observed_during | - | - |  | R007 https://en.wikipedia.org/wiki/21st_Army_Group; R017 https://actu.fr/normandie/cherbourg-en-cotentin_50129/80e-anniversaire-du-debarquement-de-normandie-des-qg-dans-des-lieux-strategiques-generaux-2-4_60696680.html; R376 https://www.dday-overlord.com/en/battle-of-normandy/cities/creully |
 
-### R06. CR0061: 8th Armoured Brigade -> 50th (Northumbrian) Infantry Division (attached)
+### R07. CR0061: 8th Armoured Brigade -> 50th (Northumbrian) Infantry Division (attached)
 
 - **Subject / higher unit:** `UK-ARM-008B` / `UK-INF-050D`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -746,7 +757,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0020 (UK-ARM-008B, 1944-06-06) | observed_during | - | - |  | R008 https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign [R513: p. 7]; R014 https://en.wikipedia.org/wiki/Operation_Martlet [R513: p. 7]; R512 https://en.wikipedia.org/wiki/Gold_Beach [R513: p. 7]; R513 https://www.britishmilitaryhistory.co.uk/wp-content/uploads/sites/124/2019/05/Independent-Armoured-Brigades.pdf [p. 7]; R514 https://www.pegasusarchive.org/normandy/order_xxxCorps.htm [R513: p. 7] |
   | C0017 (UK-INF-050D, 1944-06-06) | listed_by_higher_unit | - | - | 8th Armoured Brigade listed as a component of the 50th Division; the claim's earlier wording listed it with the formations attached for the landings (the former `attached:` list of this claim) | R071 https://en.wikipedia.org/wiki/50th_(Northumbrian)_Infantry_Division; R137 https://en.wikipedia.org/wiki/Normandy_landings |
 
-### R07. CR0071: 15th (Scottish) Infantry Division -> no higher unit named (unknown)
+### R08. CR0071: 15th (Scottish) Infantry Division -> no higher unit named (unknown)
 
 - **Subject / higher unit:** `UK-INF-015D` / `blank (unknown placeholder)`
 - **Interval:** from 1944-06-14 (claim_date) to 1944-06-25 (earliest 1944-06-14) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -757,7 +768,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0107 (UK-INF-015D, 1944-06-14) | observed_during | - | - | parent not verified | R008 https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign; R140 https://en.wikipedia.org/wiki/Operation_Epsom_order_of_battle |
 
-### R08. CR0096: 82nd Airborne Division -> First Army (attached)
+### R09. CR0096: 82nd Airborne Division -> First Army (attached)
 
 - **Subject / higher unit:** `US-ABN-082D` / `US-ARMY-001A`
 - **Interval:** from 1944-12-17 (assignment_table) to 1945-02-13 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -768,7 +779,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0551 (US-ABN-082D, 1944-12-18) | asserts_start_and_end | 1944-12-17 | 1945-02-13 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13 | R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 342]; R465 https://www.ww2byday.com/48/mapunit/ [R386: p. 342] |
 
-### R09. CR0114: 6th Army Group -> Supreme Headquarters Allied Expeditionary Force (SHAEF) (operational_control)
+### R10. CR0114: 6th Army Group -> Supreme Headquarters Allied Expeditionary Force (SHAEF) (operational_control)
 
 - **Subject / higher unit:** `US-AG-006G` / `ALL-SHAEF-000H`
 - **Interval:** from 1944-09-15 (order) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis order; status preferred
@@ -780,7 +791,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0222 (US-AG-006G, 1944-09-15) | asserts_start | 1944-09-15 | - | Tactical control transferred from AFHQ to SHAEF at 0001B, 15 September 1944 | R006 https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group [R410: p. 701, 683]; R410 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-32.html [p. 701, 683]; R453 https://www.trailblazersww2.org/pdf/SixthArmyG3pdf.pdf [R410: p. 701, 683] |
   | C0516 (US-AG-006G, 1944-10-02) | asserts_start | 1944-09-15 | - | Tactical control passed from AFHQ to SHAEF at 0001B, 15 September 1944 (6th Army Group G-3 Section Final Report); see C0222 | R006 https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group; R453 https://www.trailblazersww2.org/pdf/SixthArmyG3pdf.pdf; R487 https://www.ww2byday.com/98/mapunit/ |
 
-### R10. CR0116: 12th Army Group -> 21st Army Group (coordinating)
+### R11. CR0116: 12th Army Group -> 21st Army Group (coordinating)
 
 - **Subject / higher unit:** `US-AG-012G` / `UK-AG-021G`
 - **Interval:** from 1944-08-01 (narrative) to 1944-08-31 (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -791,7 +802,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0223 (US-AG-012G, 1944-08-01) | asserts_start_and_end | 1944-08-01 | 1944-08-31 | Montgomery coordinated Allied ground operations until Eisenhower took direct control on 1 September 1944 | R005 https://en.wikipedia.org/wiki/Twelfth_United_States_Army_Group [R398: p. 343]; R334 https://warfarehistorynetwork.com/article/the-12th-army-group-gets-going/ [R398: p. 343]; R377 https://www.dday-overlord.com/en/battle-of-normandy/cities/saint-sauveur-lendelin [R398: p. 343]; R398 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-18.html [p. 343]; R445 https://www.ibiblio.org/hyperwar/USA/USA-E-Supreme/USA-E-Supreme-15.html [R398: p. 343]; R457 https://www.wikimanche.fr/Ch%C3%A2teau_des_Mares_(Saint-Sauveur-Lendelin) [R398: p. 343] |
 
-### R11. CR0150: 6th Armored Division -> VIII Corps (unspecified_subordination)
+### R12. CR0150: 6th Armored Division -> VIII Corps (unspecified_subordination)
 
 - **Subject / higher unit:** `US-ARM-006D` / `US-COR-008C`
 - **Interval:** from 1944-07-25 (assignment_table) to 1944-09-04 (earliest 1944-08-15) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -807,7 +818,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0274 (US-ARM-006D, 1944-08-14) | asserts_start | 1944-08-01 | - | CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps) | R360 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/6AD-ETO.htm |
   | C0275 (US-ARM-006D, 1944-08-15) | asserts_start | 1944-08-01 | - | CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps) | R399 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-19.html [p. 366] |
 
-### R12. CR0162: 10th Armored Division -> Third Army (assigned)
+### R13. CR0162: 10th Armored Division -> Third Army (assigned)
 
 - **Subject / higher unit:** `US-ARM-010D` / `US-ARMY-003A`
 - **Interval:** from 1944-10-10 (assignment_table) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -819,7 +830,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0537 (US-ARM-010D, 1944-11-08) | asserts_start | 1944-10-10 | - | CMH ETO-OB assignment table, Army Assigned column: "Third" | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R419: p. 375; R412: p. 497]; R412 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-11.html [p. 497]; R419 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-8.html [p. 375]; R470 https://www.ww2byday.com/7/mapunit/ [R419: p. 375; R412: p. 497] |
   | C0550 (US-ARM-010D, 1944-12-17) | asserts_start | 1944-10-10 | - | CMH ETO-OB assignment table, Army Assigned column: "Third" | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R386: p. 330; R384: p. 299]; R384 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-13.html [p. 299]; R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 330]; R470 https://www.ww2byday.com/7/mapunit/ [R386: p. 330; R384: p. 299] |
 
-### R13. CR0164: 10th Armored Division -> First Army (attached)
+### R14. CR0164: 10th Armored Division -> First Army (attached)
 
 - **Subject / higher unit:** `US-ARM-010D` / `US-ARMY-001A`
 - **Interval:** from 1944-12-16 (assignment_table) to 1944-12-20 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -829,18 +840,6 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C0550 (US-ARM-010D, 1944-12-17) | asserts_start_and_end | 1944-12-16 | 1944-12-20 | CMH ETO-OB assignment table, Army Attached column: "First"; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20 | R341 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/10AD-ETO.htm [R386: p. 330; R384: p. 299]; R384 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-13.html [p. 299]; R386 https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html [p. 330]; R470 https://www.ww2byday.com/7/mapunit/ [R386: p. 330; R384: p. 299] |
-
-### R14. CR0196: XV Corps -> Seventh Army (assigned)
-
-- **Subject / higher unit:** `US-COR-015C` / `US-ARMY-007A`
-- **Interval:** from 1944-09-29 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
-- **Note:** Riviera p253: Eisenhower decided on 26 September to transfer the XV Corps to the 6th Army Group on the 29th, and on 29 September 1944 control of the corps officially passed to the 6th Army Group and the Seventh Army (hour not documented; the Third Army link on C0332 ends the same day); an earlier version of this entry carried 15 September, the date Seventh Army itself passed to the 6th Army Group (C0296)
-- **Documented overlap:** CR0195 with CR0196, 1944-09-29 to 1944-09-29 (transfer_dates_differ)
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C0540 (US-COR-015C, 1944-11-13) | asserts_start | 1944-09-29 | - | Riviera p253: Eisenhower decided on 26 September to transfer the XV Corps to the 6th Army Group on the 29th, and on 29 September 1944 control of the corps officially passed to the 6th Army Group and the Seventh Army (hour not documented; the Third Army link on C0332 ends the same day); an earlier ve [...] | R421 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-14.html [p. 253]; R422 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-22.html [R421: p. 253]; R423 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-24.html [R421: p. 253]; R478 https://www.ww2byday.com/81/mapunit/ [R421: p. 253] |
 
 ### R15. CR0206: 2nd Infantry Division -> V Corps (assigned)
 

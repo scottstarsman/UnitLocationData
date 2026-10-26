@@ -119,7 +119,7 @@ def scenario_0_staleness():
     # a sourced end is not capped
     row = master(FIRST_ARMY, ARMY_GROUP_21, 'operational_control', '1944-12-20')
     expect(s + ': a sourced end (assignment table) is never capped by the last listing: 1945-01-10 is certain', intervals(FIRST_ARMY, '1945-01-10')[(ARMY_GROUP_21, 'operational_control')][0], 'certain')
-    expect(s + ': ...although the last listing is 1944-12-20', row['last_listed_date'], '1944-12-20')
+    expect(s + ': ...although the last listing is 1945-01-17 (Batch 4: C0587 lists the relation on its end day)', row['last_listed_date'], '1945-01-17')
 
 
 def scenario_1_first_army():
@@ -142,12 +142,13 @@ def scenario_1_first_army():
     expect(s + ': 20 Dec at 12:00: still possible (no hour is recorded to compare with)', chain(FIRST_ARMY, '1944-12-20', '12:00')[0], ('British 21st Army Group', 'operational_control', 'possible'))
     expect(s + ': 20 Dec: the 12th Army Group assignment still covers the day', (ARMY_GROUP_12, 'assigned') in a, True)
     expect(s + ': 21 Dec: chain starts with 21st Army Group, certain', chain(FIRST_ARMY, '1944-12-21')[0], ('British 21st Army Group', 'operational_control', 'certain'))
-    # consequence of the staleness rule, recorded as the data gives it: the assignment was last listed on 20 Dec, so from 21 Dec it is possible
-    expect(s + ': 21 Dec: the assignment to 12th Army Group (last listed 20 Dec) is possible', intervals(FIRST_ARMY, '1944-12-21')[(ARMY_GROUP_12, 'assigned')][0], 'possible')
+    # consequence of the staleness rule, recorded as the data gives it: before Batch 4 the assignment was last listed on 20 Dec, so from 21 Dec it was possible;
+    # Batch 4 adds a First Army claim on 17 Jan 1945 that lists it, so the whole gap is now certain
+    expect(s + ': 21 Dec: the assignment to 12th Army Group (listed again on 17 Jan 1945) is certain', intervals(FIRST_ARMY, '1944-12-21')[(ARMY_GROUP_12, 'assigned')][0], 'certain')
     expect(s + ': 17 Jan 1945: the end hour is undocumented, so possible', intervals(FIRST_ARMY, '1945-01-17')[(ARMY_GROUP_21, 'operational_control')][0], 'possible')
     a = intervals(FIRST_ARMY, '1945-01-18')
     expect(s + ': 18 Jan 1945: no relation to 21st Army Group', (ARMY_GROUP_21, 'operational_control') in a, False)
-    expect(s + ': 18 Jan 1945: chain falls back to 12th Army Group (possible: last listed 20 Dec)', chain(FIRST_ARMY, '1945-01-18')[0], ('US 12th Army Group', 'assigned', 'possible'))
+    expect(s + ': 18 Jan 1945: chain falls back to 12th Army Group (possible: last listed 17 Jan 1945, the day before)', chain(FIRST_ARMY, '1945-01-18')[0], ('US 12th Army Group', 'assigned', 'possible'))
 
 
 def scenario_2_viii_corps():

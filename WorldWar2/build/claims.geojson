@@ -23493,6 +23493,908 @@
     "reference_ids": "R351;R424;R425;R481;R001",
     "source_locator": "R424: p. 512; R425: p. 534"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.79,
+     47.51
+    ]
+   },
+   "properties": {
+    "claim_id": "C0574",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-066D",
+    "unit_name": "66th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0386",
+    "location_name": "Brittany port pockets (Lorient to Saint-Nazaire), representative point",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "division contains the German garrisons in the Brittany ports (CMH: entered combat 1 January 1945)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R525;R080;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5842,
+     49.9622
+    ]
+   },
+   "properties": {
+    "claim_id": "C0575",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-01-03",
+    "place_id": "PL0387",
+    "location_name": "Morhet, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Morhet, west of Bastogne",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R521;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5842,
+     49.9622
+    ]
+   },
+   "properties": {
+    "claim_id": "C0576",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-01-04",
+    "place_id": "PL0387",
+    "location_name": "Morhet, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "renewed attack west of Bastogne; held by the XLVII Panzer Corps and the division reorganised for two days",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R521;R515;R002",
+    "source_locator": "R515: p. 38"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3769,
+     48.9211
+    ]
+   },
+   "properties": {
+    "claim_id": "C0577",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-05",
+    "place_id": "PL0388",
+    "location_name": "Wingen-sur-Moder, Bas-Rhin",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "2d Battalion, 274th Infantry, fights in the Wingen area (Presidential Unit Citation for 5-7 January 1945)",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R545;R527;R001",
+    "source_locator": "R545: p. 532 n. 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3206,
+     48.8579
+    ]
+   },
+   "properties": {
+    "claim_id": "C0578",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-06",
+    "place_id": "PL0389",
+    "location_name": "La Petite Pierre, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at La Petite Pierre (Lützelstein) in the Nordwind fighting",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-06",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R527;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8085,
+     50.0587
+    ]
+   },
+   "properties": {
+    "claim_id": "C0579",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-10",
+    "place_id": "PL0390",
+    "location_name": "Bourcy, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "a combat command attacking toward Bourcy is halted and the division is pulled back into reserve",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R356;R002",
+    "source_locator": "R515: p. 41"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7428,
+     48.9008
+    ]
+   },
+   "properties": {
+    "claim_id": "C0580",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-014D",
+    "unit_name": "14th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-11",
+    "place_id": "PL0391",
+    "location_name": "Morsbronn-les-Bains, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Morsbronn-les-Bains in the VI Corps zone of northern Alsace",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-11",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R520;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0547,
+     48.9053
+    ]
+   },
+   "properties": {
+    "claim_id": "C0581",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-008D",
+    "unit_name": "8th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-14",
+    "place_id": "PL0392",
+    "location_name": "Pont-à-Mousson, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Pont-à-Mousson after landing in France",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-14",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R516;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2175,
+     49.2267
+    ]
+   },
+   "properties": {
+    "claim_id": "C0582",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-009D",
+    "unit_name": "9th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-14",
+    "place_id": "PL0393",
+    "location_name": "Ennery, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Ennery, Moselle, in the SHAEF-reserve and Third Army area",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-14",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R517;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.762,
+     50.0643
+    ]
+   },
+   "properties": {
+    "claim_id": "C0583",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-01-15",
+    "place_id": "PL0394",
+    "location_name": "Noville, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "the division enters Noville in the fighting for the north-eastern part of the Bulge",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R336;R002",
+    "source_locator": "R515: p. 42"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7833,
+     50.1333
+    ]
+   },
+   "properties": {
+    "claim_id": "C0584",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-011D",
+    "unit_name": "11th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-16",
+    "place_id": "PL0395",
+    "location_name": "Houffalize, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "division seizes the high ground south of Houffalize and meets the 2d Armored Division",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R518;R001",
+    "source_locator": "R515: p. 42-43"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9061,
+     48.7289
+    ]
+   },
+   "properties": {
+    "claim_id": "C0585",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-012D",
+    "unit_name": "12th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-16",
+    "place_id": "PL0396",
+    "location_name": "Herrlisheim, Bas-Rhin",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "division begins its effort to seize Herrlisheim north of Strasbourg; counterattacked by the XXXIX Panzer Corps",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R545;R519;R002",
+    "source_locator": "R545: p. 523, 526"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5325,
+     49.1308
+    ]
+   },
+   "properties": {
+    "claim_id": "C0586",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-01-16",
+    "place_id": "PL0397",
+    "location_name": "Suippes, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Gerow takes command of the Fifteenth Army, which is still handling only rear-echelon tasks",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": -23,
+    "reference_ids": "R116;R547;R515;R001",
+    "source_locator": "R515: p. 46"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8642,
+     50.4925
+    ]
+   },
+   "properties": {
+    "claim_id": "C0587",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-01-17",
+    "place_id": "PL0311",
+    "location_name": "Spa, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "First Army returns to the 12th Army Group at midnight on 17 January from Montgomery's 21st Army Group",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-18",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1,
+    "reference_ids": "R515;R482;R001",
+    "source_locator": "R515: p. 43"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8311,
+     50.865
+    ]
+   },
+   "properties": {
+    "claim_id": "C0588",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-016C",
+    "unit_name": "XVI Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-17",
+    "place_id": "PL0398",
+    "location_name": "Valkenburg, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "corps headquarters at Valkenburg, Netherlands",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R546;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1567,
+     49.8681
+    ]
+   },
+   "properties": {
+    "claim_id": "C0589",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-18",
+    "place_id": "PL0399",
+    "location_name": "Diekirch, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "crosses the Sûre before daylight, 4th Division at the Our confluence, 5th Division either side of Diekirch",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R001",
+    "source_locator": "R515: p. 48"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5034,
+     50.1078
+    ]
+   },
+   "properties": {
+    "claim_id": "C0590",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-19",
+    "place_id": "PL0400",
+    "location_name": "Champlon, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under VIII Corps and Third Army from 19 January (first combat per the CMH page)",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1,
+    "reference_ids": "R528;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.03,
+     49.0
+    ]
+   },
+   "properties": {
+    "claim_id": "C0591",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL0401",
+    "location_name": "Sarralbe, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Sarralbe on the Seventh Army front",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R523;R545;R001",
+    "source_locator": "R545: p. 527"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1259,
+     50.2804
+    ]
+   },
+   "properties": {
+    "claim_id": "C0592",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-23",
+    "place_id": "PL0343",
+    "location_name": "Saint-Vith, Liège",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "the division returns to St. Vith, ending its role in the First Army fighting in the Bulge",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R363;R002",
+    "source_locator": "R515: p. 51"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1259,
+     50.2804
+    ]
+   },
+   "properties": {
+    "claim_id": "C0593",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-29",
+    "place_id": "PL0343",
+    "location_name": "Saint-Vith, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "a regiment tries to cross the Our four miles south-east of St. Vith; the leading battalion is across by noon next day",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R533;R357;R002",
+    "source_locator": "R533: p. 66"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8842,
+     48.6931
+    ]
+   },
+   "properties": {
+    "claim_id": "C0594",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-014D",
+    "unit_name": "14th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-31",
+    "place_id": "PL0402",
+    "location_name": "Gambsheim, Bas-Rhin",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "combat command assists the 36th Division in clearing the Gambsheim bridgehead area (to 11 February)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R425;R520;R001",
+    "source_locator": "R425: p. 558"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C0595",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-31",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "moves into the First French Army area and relieves 3d Division regiments south of the Colmar Canal",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R425;R361;R001",
+    "source_locator": "R425: p. 550"
+   }
   }
  ]
 }

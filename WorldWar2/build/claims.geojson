@@ -20711,6 +20711,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.461,
+     51.5646
+    ]
+   },
+   "properties": {
+    "claim_id": "C0568",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-23",
+    "place_id": "PL0336",
+    "location_name": "St-Oedenrode, Nord Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under British VIII Corps from 23 September",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C0569",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-24",
+    "place_id": "PL0384",
+    "location_name": "Veghel, Noord-Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "division command post at Veghel",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8312,
      49.0724
     ]
@@ -20867,6 +20949,47 @@
     "location_basis": "nearest_later_command_post",
     "location_temporal_offset_days": 8,
     "reference_ids": "R345;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C0570",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-28",
+    "place_id": "PL0384",
+    "location_name": "Veghel, Noord-Brabant, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under British XII Corps from 28 September",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R336;R002",
     "source_locator": null
    }
   },
@@ -21236,6 +21359,47 @@
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
     "reference_ids": "R484;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7903,
+     51.8875
+    ]
+   },
+   "properties": {
+    "claim_id": "C0571",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-10-05",
+    "place_id": "PL0385",
+    "location_name": "Slijk-Ewijk, Gelderland, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "division command post at Slijk-Ewijk (the Island)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R336;R002",
     "source_locator": null
    }
   },
@@ -21695,6 +21859,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7903,
+     51.8875
+    ]
+   },
+   "properties": {
+    "claim_id": "C0572",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-11-09",
+    "place_id": "PL0385",
+    "location_name": "Slijk-Ewijk, Gelderland, Netherlands",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under II Canadian Corps and First Canadian Army from 9 November",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -35,
+    "reference_ids": "R336;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.7389,
      48.4492
     ]
@@ -21975,6 +22180,47 @@
     "location_temporal_offset_days": -29,
     "reference_ids": "R440;R438;R476;R001",
     "source_locator": "R440: p. 565; R438: p. 543"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3658,
+     49.1401
+    ]
+   },
+   "properties": {
+    "claim_id": "C0573",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-01",
+    "place_id": "PL0238",
+    "location_name": "Mourmelon-le-Grand, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "division command post at Mourmelon (the division is back in France)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R336;R002",
+    "source_locator": null
    }
   },
   {

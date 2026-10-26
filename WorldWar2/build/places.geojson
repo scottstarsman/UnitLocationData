@@ -4698,7 +4698,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Champagne-Ardenne",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -6618,7 +6618,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "North Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -7559,6 +7559,46 @@
     "country": "NL",
     "region": "North Brabant",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "place_id": "PL0384",
+    "name": "Veghel, Noord-Brabant, Netherlands",
+    "alt_names": "Vechel",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "North Brabant",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7903,
+     51.8875
+    ]
+   },
+   "properties": {
+    "place_id": "PL0385",
+    "name": "Slijk-Ewijk, Gelderland, Netherlands",
+    "alt_names": "Slik Ewjik",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
    }
   }
  ]

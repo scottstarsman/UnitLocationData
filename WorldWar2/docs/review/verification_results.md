@@ -65,3 +65,30 @@ Columns: sample id, claim id, unit and date, verdict, comment (also in `sample_c
 | S39 | C0559 | US-COR-012C, 1944-12-19 | supported | R390 p. 487: XII Corps 'to disengage at once' and move CP 'to Luxembourg City'; R475: Luxembourg 23 Dec. Order, not arrival, as the row says. |
 | S40 | C0555 | US-ABN-101D, 1944-12-21 | supported | R389 p. 458: 'by daylight on the 21st the German infantry ... were ensconced on both the main roads running from Bastogne south'; R460 Bastogne. Third Army attachment from 20 Dec is narrative; cited table says 17 Dec. |
 
+## 3. Command relations: all 20 rows
+
+Columns: sample id, relation id, subject and higher unit, relationship, interval, verdict, comment (also in `sample_relations.csv`).
+
+| id | relation | subject, higher unit, relationship | interval | verdict | comment |
+|---|---|---|---|---|---|
+| R01 | CR0003 | CAN-INF-003D, UK-COR-001C, assigned | 1944-06-06 to open | supported | R137: 'Juno Beach: I Corps 3rd Canadian Infantry Division'; R063: 'in I British Corps and later in the II Canadian Corps'. Start 6 June is the landing; open end means no replacement recorded. |
+| R02 | CR0016 | GER-KG-002PZ, GER-PZ-002D, organic | 1944-06-27 to open | supported | R139: 'counter-attacked by six Panthers of the 2nd Panzer Division' (09:30); R140: 'One battlegroup based around a tank battalion'. Organic link and start match. |
+| R03 | CR0037 | GER-PZ-021D, unknown, unknown | 1944-06-13 to 1944-06-27 | supported | Placeholder (parent unknown) is correct as a gap: R114 and R141 evidence matches. R141 names I SS-Panzer Corps for the 21st Panzer Division, so the parent could be filled in. |
+| R04 | CR0040 | GER-PZ-LEHRD, GER-OKW-000H, reserve | 1944-06-07 to 1944-06-07 | partly supported | R448: both divisions 'were in OKW reserve' on 6 June until Hitler's 1600 release; plan to place them under I SS Panzer Corps. The row covers 7 June only, a day after the documented status. |
+| R05 | CR0041 | GER-PZ-LEHRD, GER-SSPZ-001C, assigned | 1944-06-08 to 1944-06-12 | partly supported | R449/R448/R141 support I SS Panzer Corps from 8 June. The 12 June end is only the day before C0092 (unknown parent); no cited source dates a change (CR0042 gap). |
+| R06 | CR0056 | UK-AG-021G, ALL-SHAEF-000H, assigned | 1944-06-07 to open | partly supported | R376: 'From 7 to 22 June 1944, General Montgomery set up his tactical headquarters in the Creullet castle'; no SHAEF mention. Wikipedia '21st Army Group' says 'under the command of SHAEF'. Alternate row. |
+| R07 | CR0061 | UK-ARM-008B, UK-INF-050D, attached | 1944-06-06 to open | supported | R137: 50th Division 'reinforced with 56th Infantry Brigade, 8th Armoured Brigade'; R512: 'Formations attached for assault phase'. Attached from 6 June, end unknown, as stated. |
+| R08 | CR0088 | US-ABN-082D, US-COR-008C, attached | 1944-06-19 to open | partly supported | R446: 'Control of the 90th and of the 82d Airborne Division passed on 19 June to VIII Corps'; table agrees. Type 'attached' unsupported, end open though table drops corps 13 Jul, and 'disputed' keeps VIII Corps out of the build. |
+| R09 | CR0114 | US-AG-006G, ALL-SHAEF-000H, operational_control | 1944-09-15 to open | supported | R453: orders 'as of 0001B hours, 15 September. At the same time tactical control was transferred from AFHQ to SHAEF'; R410 agrees. Start, order date and type match. |
+| R10 | CR0116 | US-AG-012G, UK-AG-021G, coordinating | 1944-08-01 to 1944-08-31 | supported | R445: 12th Army Group active 1 Aug, 'the 21 Army Group commander retained over-all control until 1 September'. Coordinating, 1-31 Aug matches. |
+| R11 | CR0127 | US-ARM-002D, US-COR-019C, unspecified_subordination | 1944-08-28 to open | partly supported | R347 table '28 Aug 1944 XV; 29 Aug 1944 XIX First 12th'; R409: XIX Corps took command at noon 29 Aug. Parent and type fit; the 28 Aug start is inferred, a day before any source, overlapping CR0126. |
+| R12 | CR0150 | US-ARM-006D, US-COR-008C, unspecified_subordination | 1944-07-25 to 1944-09-04 | supported | R360 table '25 Jul 44 VIII First Br 21st' ... '5 Sep 44 - Ninth 12th'. Corps VIII from 25 Jul to 4 Sep matches; end basis could be assignment_table. |
+| R13 | CR0162 | US-ARM-010D, US-ARMY-003A, assigned | 1944-10-23 to open | partly supported | R341 table '10 Oct 44 (-) Third 12th' shows Third from 10 Oct; the row starts 23 Oct (the row in force at the first claim). Parent, type and open end match. |
+| R14 | CR0164 | US-ARM-010D, US-ARMY-001A, attached | 1944-12-17 to 1944-12-20 | partly supported | R341 table '16 Dec 44 XX Third First 12th' ... '21 Dec 44 XII Third (-) 12th'. End 20 Dec matches; start 17 Dec is a day after the 16 Dec row. |
+| R15 | CR0168 | US-ARMY-001A, UK-AG-021G, operational_control | 1944-12-20 to 1945-01-17 | supported | R388 p. 423-425: 'The reorganization placed the U.S. First and Ninth Armies under Montgomery's 21 Army Group'; table '20 Dec 44 ... Br 21st', dropped 18 Jan 45. All match. |
+| R16 | CR0206 | US-INF-002D, US-COR-005C, assigned | 1944-06-07 to 1944-08-04 | partly supported | R052: '14 April 1944: V Corps ... 17 August 1944: XIX Corps'. The 4 Aug end only reflects a switch of wording (CR0209 keeps V Corps to 17 Aug), not a source. |
+| R17 | CR0218 | US-INF-004D, US-COR-007C, assigned | 1944-06-06 to 1944-07-25 | partly supported | R137: 'Utah Beach: VII Corps 4th Infantry Division'; R446. The 25 Jul end only reflects a switch of wording (CR0220 keeps VII Corps to 21 Aug), not a source. |
+| R18 | CR0258 | US-INF-029D, US-ARMY-009A, assigned | 1944-09-05 to 1944-09-20 | supported | R346 table '5 Sep 44 VIII Ninth (-) 12th' ... '21 Sep 44 XIX First 12th'. Ninth Army 5-20 Sep matches. |
+| R19 | CR0292 | US-INF-045D, US-ARMY-007A, administrative_control | 1944-07-13 to 1944-09-19 | partly supported | R355 table 'Seventh (Adm)' in the Army-attached column matches the type. It is already in the 1 Jul row and is dropped on 15 Sep (CR0295 starts then); the row runs 13 Jul to 19 Sep. |
+| R20 | CR0368 | US-INF-106D, US-ARMY-001A, assigned | 1944-11-29 to open | supported | R340 table '29 Nov 44 VIII First (-) 12th', First kept to 6 Feb 45. Start and open end match. |
+

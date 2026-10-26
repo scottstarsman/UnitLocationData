@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: the 30th Division's one-day V Corps row, decision recorded (26 October 2026)
+
+Follow-up to open item 8, decided by Scott on 26 October 2026 ("leave"). One commit, **documents only; no data changed.**
+
+- **Decision.** The CMH table of the 30th Infantry Division lists V Corps on one row, dated 4 August 1944, between XIX Corps (28 July to 3 August) and VII Corps (from 5 August). The dataset has no relation for it and gets none: `CR0266` (XIX Corps, to 5 August, end inferred from the next claim) and `CR0267` (VII Corps, from 5 August) stay as they are; the explanation of their overlap row already states the table's dates and the missing V Corps relation.
+- **Recorded in** `docs/review/verification_results.md` (section 5, new bullet and the list of decisions pending) and the index of `docs/review/responses.md` (new row). No claim, relation, overlap row, count, build file or `who_controls` answer changed.
+- **Checked.** Validator 0 errors, same 3 warnings; `build --check`, `build_references --check`, `review_sample --check` clean; 68 `semantic_tests` expectations hold.
+
 ## open-items-oct26: G012 dissolved, the 4th Armored Division's landing and arrival (26 October 2026)
 
 Follow-up to open item 7 (third sub-item), decided by Scott on 26 October 2026. One commit. **Two claims changed (status and group only); no date, place, confidence or reference changed.**

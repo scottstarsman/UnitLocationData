@@ -203,5 +203,6 @@ The 40 sampled claims and 20 sampled relations were checked against their cited 
 | V-014 | relations | 3 design | split by wording | documented, `bfef59a` (decided by Scott, 26 October 2026: document; no date changed, nothing merged) |
 | V-015 to V-017 | places | 1 error | PL0021, PL0314, PL0285: points 120, 127 and 27 km from the named town (not sampled) | fixed, `5d50d73` (PL0043 Boinville fixed in the same commit) |
 | V-018 | scripts | 4 suggestion | a coordinate comparison in `check_coordinates.py` | fixed, `f4a9e9e` (two warnings, tested by fault injection; it does not find a wrong first geocoder hit) |
+| Open item 8 (overlap review) | relations | 4 suggestion | the 30th Division table lists V Corps for one row (4 August 1944) between XIX and VII Corps; the dataset has no relation for it (CR0266 runs to 5 August on an inferred end) | decided by Scott, 26 October 2026: leave the data unchanged, no relation added; recorded in `verification_results.md`, section 5 (branch `open-items-oct26`) |
 
 The corrections were approved by the owner and made on the branch `sample-verification`, one commit each (commit ids above); [verification_results.md](verification_results.md), "Status after the corrections", has the detail for each finding and "Decisions pending" the open design questions. Everything marked open needs a decision of the owner.

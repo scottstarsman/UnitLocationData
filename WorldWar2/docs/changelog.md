@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## batch4-jan-mar-1945: references for Batch 4 (26 October 2026)
+
+First commit of Batch 4 (US Army ground units, army group to division, 1 January to 31 March 1945; approved by Scott on 26 October 2026). **Sources only; no claim, place, unit or relation changed.** `data/references_meta.csv`: 39 rows added, `R515` to `R556` (ids `R548`, `R550` and `R554` were drafted and dropped before any commit because no row cites them; they are not reused, and the next free id is `R557`): *The Last Offensive* chapters 2 to 4 and 6 to 15 (`R515`, `R533`-`R544`), *The Riviera to the Rhine* chapter 28 (`R545`), the CMH ETO order-of-battle pages for sixteen divisions (`R516`-`R532`), World War II by Day for XVI Corps and the Fifteenth Army (`R546`, `R547`) and English Wikipedia articles on Operations Varsity, Grenade and Undertone, the 89th Infantry Division, the Colmar Pocket and the Battle of Remagen (`R549`, `R551`-`R553`, `R555`, `R556`). Link status `ok` checked on 26 October 2026 with `build_references.py --check-links`. `docs/sources.md`: one row added for the sources of Batch 4. `build_references.py --check`: up to date.
+
 ## handoff-doc: `docs/HANDOFF.md` (26 October 2026)
 
 One commit, documents only; **no data changed.** New file `docs/HANDOFF.md` (state and counts of 26 October 2026, locations, Scott's standing rules, conventions, how to run each check and what the baseline is, decision log, open items and next steps for Batches 4 and 5, startup checklist, working style). Linked from `README.md` (Documentation list) and the head of `docs/roadmap.md`. It contains no secrets. Its counts are a snapshot: the live counts are in `docs/coverage.md` and the validator output.

@@ -6,7 +6,9 @@ the place the row names, or a point at one end of a front line). Standard librar
 
 Offline checks (always run):
   1. bbox      the point lies inside a loose bounding box for the row's theater
-  2. same-name rows that share a location_name but whose points are more than 3 km apart
+  1b. atlantic the point (a claim's or a place's) lies in open water west of Brittany, Cornwall and the Bay of Biscay (ATLANTIC boxes below; a typo or sign error)
+  2. same-place claims of one place (place_id) whose points are more than 3 km from the place's point (the validator already requires equality or a
+               coord_override within 5 km; this flags overrides that are far enough to deserve a look)
   3. conflict  claims in one conflict group whose points are farther apart than their precision radii
                add up (a real place disagreement is allowed, but it should be deliberate and noted)
   4. speed     a unit's consecutive preferred rows imply more than 80 km/day (a likely wrong point or date). The days are counted
@@ -16,17 +18,20 @@ Offline checks (always run):
 Explained exceptions: data/coordinate_exceptions.csv lists warnings that were checked and are correct (columns: check,
 claim_id, other_claim_id, reason, source). A listed warning is printed as EXPLAINED and counted separately; it is not an open
 warning and does not fail --strict. An entry that no longer matches any warning is reported as STALE so the file does not rot.
-Keys: speed = the later claim_id and the earlier one; conflict = the group's first claim_id and the other; same-name = the first
-claim_id and the other. Add an entry only with a reason that cites a source.
+Keys: speed = the later claim_id and the earlier one; conflict = the group's first claim_id and the other; same-place = the claim_id
+and blank; atlantic = the claim_id (or the place_id for a place) and blank. Add an entry only with a reason that cites a source.
 
 Optional online check (--geocode, needs network, uses OpenStreetMap Nominatim at 1 request/second):
-  5. geocode   no geocode candidate for the place named in location_name lies within max(15 km, 2 x precision_km)
+  5. geocode   no geocode candidate for the place named in location_name (the place name and qualifier, derived) lies within max(15 km, 2 x precision_km)
                of the point. Up to 10 candidates are fetched per name (many French place names exist more than once)
                and the nearest counts. Add --country fr to restrict candidates to one country (ISO code).
                Results are cached in .cache/geocode.json. Use --limit N to try a few rows first.
                Respect the Nominatim usage policy; do not run this in CI.
 
-Usage: python scripts/check_coordinates.py [--geocode [--country fr] [--limit N]] [--strict]
+--duplicates lists pairs of places of kind point within 1 km of each other (possible duplicates: one town under two names); it is
+informational, never a warning, and is how the review list of ambiguous merges in docs/changelog.md was produced.
+
+Usage: python scripts/check_coordinates.py [--geocode [--country fr] [--limit N]] [--strict] [--duplicates]
 """
 import json
 import math
@@ -39,6 +44,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import places as placesmod  # noqa: E402
 
 BBOX = {  # theater -> (lat_min, lat_max, lon_min, lon_max); loose, only to catch typos and sign errors
     'western_europe': (35.0, 62.0, -12.0, 25.0),
@@ -48,7 +54,10 @@ BBOX = {  # theater -> (lat_min, lat_max, lon_min, lon_max); loose, only to catc
     'pacific': (-50.0, 60.0, 90.0, 180.0),
     'cbi': (0.0, 40.0, 60.0, 125.0),
 }
-SAME_NAME_KM = 3.0
+# (lat_min, lat_max, lon_min, lon_max) of open Atlantic: west of Brittany and the Bay of Biscay, and west of Cornwall / the Scilly Isles.
+# Loose on purpose: it must not touch Brittany (west tip 4.8 W), Cornwall (5.7 W) or Ireland (north of 51 N).
+ATLANTIC = [(43.0, 48.9, -20.0, -5.3), (48.9, 50.7, -20.0, -6.4)]
+SAME_PLACE_KM = 3.0
 SPEED_KM_PER_DAY = 80.0
 CACHE = os.path.join(common.ROOT, '.cache', 'geocode.json')
 EXCEPTIONS_CSV = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
@@ -137,15 +146,20 @@ def main(argv):
         if b and not (b[0] <= lat <= b[1] and b[2] <= lon <= b[3]):
             warn('bbox', r, 'point %.4f,%.4f is outside the bounding box for theater %s' % (lat, lon, r['theater']))
 
-    by_name = {}
+    places = placesmod.load()
     for r in rows:
-        by_name.setdefault(r['location_name'], []).append(r)
-    for name, rs in by_name.items():
-        for i in range(len(rs)):
-            for j in range(i + 1, len(rs)):
-                d = km(*pt(rs[i]), *pt(rs[j]))
-                if d > SAME_NAME_KM:
-                    warn('same-name', rs[i], 'location_name %r also used by %s %.1f km away' % (name, rs[j]['claim_id'], d), rs[j]['claim_id'])
+        lat, lon = pt(r)
+        if any(b[0] <= lat <= b[1] and b[2] <= lon <= b[3] for b in ATLANTIC):
+            warn('atlantic', r, 'point %.4f,%.4f is in the open Atlantic' % (lat, lon))
+        p = places.by_id.get(r['place_id'])
+        if p:
+            d = km(lat, lon, float(p['latitude']), float(p['longitude']))
+            if d > SAME_PLACE_KM:
+                warn('same-place', r, 'place %s %r: the claim point is %.1f km from the place point' % (p['place_id'], p['name'], d))
+    for p in places.rows:
+        lat, lon = float(p['latitude']), float(p['longitude'])
+        if any(b[0] <= lat <= b[1] and b[2] <= lon <= b[3] for b in ATLANTIC):
+            warns.append(('atlantic', '%s %s: place point %.4f,%.4f is in the open Atlantic' % (p['place_id'], p['name'], lat, lon)))
 
     groups = {}
     for r in rows:
@@ -201,6 +215,13 @@ def main(argv):
         os.makedirs(os.path.dirname(CACHE), exist_ok=True)
         json.dump(cache, open(CACHE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 
+    if '--duplicates' in argv:
+        pts = [p for p in places.rows if p['kind'] == 'point']
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                d = km(float(pts[i]['latitude']), float(pts[i]['longitude']), float(pts[j]['latitude']), float(pts[j]['longitude']))
+                if d <= 1.0:
+                    print('DUPLICATE? %s %r and %s %r are %.0f m apart' % (pts[i]['place_id'], pts[i]['name'], pts[j]['place_id'], pts[j]['name'], d * 1000))
     for kind, msg in sorted(explained):
         print('EXPLAINED [%s] %s' % (kind, msg))
     for key in sorted(set(exceptions) - used):

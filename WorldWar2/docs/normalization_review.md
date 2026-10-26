@@ -2,6 +2,10 @@
 
 Scope: a read-only review of every table and file in the working copy at commit `5a97013` (the same content as `main` on GitHub after the `claim-references` merge, `cd8007d`). Nothing in `data/`, `schema/`, `build/` or `scripts/` was changed. Every count below was computed from the files; the profiling scripts are in `/workspace/norm/` (`p1.py` to `p8.py`, outside the repository) and can be re-run.
 
+## Status after `places-table` (27 October 2026)
+
+F2 (places) is done and F6 is done except for the lifecycle flags and the copies of tables: `data/places.csv` (383 places) and `claims.place_id` replace `location_name`; the coordinate provenance moved off the tail of `source`; `location_temporal_offset_days`, `strength_status` (folded into `strength_json.status` and the destroyed flag) and the 561 mechanical coordinate-service roles are derived; the independence rule ignores geocoders. `established`, `disestablished` and `destroyed` are kept because they are not derivable (the reasons are in [methodology.md](methodology.md), "Derived values"). Ambiguous merges and co-located places are in [places_review.md](places_review.md). Still open: `engaged_with` / `composing_units` ids, the branch/echelon split, commanders and `claim_evidence`, `references.csv` as a generated table, generating `source` from `reference_ids`. The counts below describe the state before the branch.
+
 ## Status after `command-relations-table` (26 October 2026)
 
 Recommendation 1 (F1, the large step) is done on branch `command-relations-table`: the master table `data/command_relations.csv`, the evidence join `data/command_relation_claims.csv` and the documented-overlap table `data/command_relation_overlaps.csv` replace the `command_relationships` column of the claim files (see [changelog.md](changelog.md) and [methodology.md](methodology.md), "Command relations table"). `claims.parent_unit_id` stays on the claim as a validated column. Still open and untouched by that branch: the places table, `engaged_with` / `composing_units` ids, the branch/echelon split and the derived columns repeated from `units.csv`; the counts quoted below describe the state before the branch.

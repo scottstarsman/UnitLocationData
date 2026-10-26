@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Migration: claims' `command_relationships` JSON cell -> data/command_relations.csv + data/command_relation_claims.csv.
 
+NOTE (places-table): Historical, one-off: it was written for claim files that still had `location_name`, `strength_status`, `location_temporal_offset_days` and the `; coords:` tail of `source`; since `places-table` those are a place (data/places.csv, scripts/migrate_places.py) and derived values (scripts/places.py), so it cannot be run on the current layout.
+
 Run once on the layout before this change (claim files that still have the `command_relationships` column):
     python scripts/migrate_command_relations.py [--dry-run]
 It

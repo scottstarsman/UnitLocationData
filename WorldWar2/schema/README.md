@@ -5,6 +5,7 @@ The machine-readable definitions live next to this file and are what `scripts/va
 - [`claims.schema.json`](claims.schema.json): column order, types and constraints of every file under `data/claims/` (Frictionless Table Schema style; `vocabulary` is a custom property pointing at a key in `vocabularies.json`).
 - [`units.schema.json`](units.schema.json): the same for `data/units.csv`.
 - [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `references_meta`, `claim_reference_roles`).
+- [`places.schema.json`](places.schema.json): columns, primary key and foreign key of `data/places.csv`.
 - [`vocabularies.json`](vocabularies.json): controlled vocabularies and the confidence rubric.
 
 All CSV files are UTF-8, LF line endings, comma separated, with a header row, minimal quoting (fields with commas, quotes or newlines are quoted). Missing values are empty strings. Dates are `YYYY-MM-DD`. Booleans are lowercase `true`/`false`. Coordinates are decimal degrees (WGS84). The column order is the same in every claim file; `theater` follows `date`.
@@ -29,7 +30,9 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `commander` | string | yes | Commander on that date, rank and name as given by sources; "unknown" if not verified. |  |
 | `latitude` | number | yes | Decimal degrees WGS84. | -90 to 90 |
 | `longitude` | number | yes | Decimal degrees WGS84. | -180 to 180 |
-| `location_name` | string | yes | Name of the place the coordinate refers to. |  |
+| `place_id` | string | yes | The place the coordinate refers to: a row of data/places.csv (a named settlement or site, an area, sector or beach, or a front or axis). Replaces the free-text location_name, which is rebuilt in build/all_claims.csv from the place name and location_qualifier. | foreign key places.`place_id`; pattern `^PL\d{4,}$` |
+| `location_qualifier` | string | no | Optional. What is specific to this claim about the place, as the sources word it: a context note ('division HQ Le Molay-Littry', 'point = Cheux') or the reserved first token `vicinity` (the claim says "vicinity of <place>"; further text follows after '; '). Blank when the claim is simply at the place. Never a place name that is not in places.csv. |  |
+| `coord_override` | string | no | Optional. A reason, set only when this claim's latitude/longitude differ from the place's (another geocoder read of the same place, an approximate point). It names the coordinate source of the claim's own point and the distance to the place point ('OpenStreetMap Nominatim (Utah Beach, Manche, France); 290 m from the place point'). Blank when the claim uses the place's point: the validator requires the point to equal the place's exactly when this is blank and to differ when it is set. |  |
 | `location_represents` | string | yes | What the point stands for (see vocabulary). | vocabulary `location_represents` |
 | `precision_km` | number | yes | Judgment estimate of the radius in km within which the unit probably was (banded). | vocabulary `precision_km` |
 | `operation_id` | string | yes | Key of the most specific operation, battle, phase or campaign the row belongs to, in `data/operations.csv` (for example `OP-EPSOM`; `OP-CAMP-NORTHERN-FRANCE` when no named operation applies). The parent chain gives the campaign, the umbrella (Overlord) and the named operation; `build/all_claims.csv` carries them as derived columns. The date should lie inside the operation's dates. See "Operations" below. | pattern `^OP-[A-Z0-9]+(-[A-Z0-9]+)*$` |
@@ -38,20 +41,52 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `disestablished` | boolean | yes | True on the row where the source says the unit was disbanded. | `true`/`false` |
 | `destroyed` | boolean | yes | True on the row where the source says the unit was destroyed. | `true`/`false` |
 | `confidence` | number | yes | Numeric 0-1 confidence by rubric (see vocabulary). | vocabulary `confidence`; 0 to 1 |
-| `source` | string | yes | The readable citation: URLs separated by " \| " ending with the coordinate source note. Every row needs at least one URL, and each URL (and the coordinate service) must resolve to an id in `reference_ids`. |  |
+| `source` | string | yes | The readable citation: URLs separated by " \| ". Every row needs at least one URL, and each URL must resolve to an id in `reference_ids`. The coordinate source is not part of it: it is the place's `coord_reference_id` and `coord_source_note` (data/places.csv), or `coord_override` for a claim with its own point. |  |
 | `reference_ids` | string | yes | The references that support the row: `;`-separated `reference_id`s from `data/references_meta.csv`, in citation order. The source of truth for the claim-to-reference links; the URLs in `source` must resolve to them. A row at confidence 0.9 should cite two source families (warning). See the References section below. | `R###` ids separated by `;` |
 | `source_locator` | string | no | Page, chapter or section per reference: `R398: p. 285, 289; R407: p. 36`. Only ids that are in `reference_ids`; blank when the citation gives no page. | `R###: text` separated by `; ` |
 | `event_type` | string | yes | One primary event type (see vocabulary). | vocabulary `event_type` |
 | `current_activity` | string | yes | Short phrase saying what the unit is doing on that date at that place; lower-case, free text. |  |
 | `engaged_with` | string | no | Enemy units fought on that date, nationality first, separated by "; ". Blank = no combat that day; "unknown" = combat with no opponent identified. |  |
-| `strength_status` | string | yes | Qualitative strength (see vocabulary). | vocabulary `strength_status` |
-| `strength_json` | string | no | Optional JSON object with sourced strength figures: {"basis","as_of","personnel","vehicles","vehicle_count_type","source","note"}. See docs/methodology.md. Blank where no source gives figures. |  |
+| `strength_json` | string | no | Optional JSON object with sourced strength figures: {"basis","as_of","personnel","vehicles","vehicle_count_type","scope","status","source","note"}; scope (whole_unit, sub_force, sector) says what the figure covers and is required whenever personnel is present. `status` (full, reduced or heavily_depleted; vocabulary strength_json_status) is the qualitative strength a source states; a record with a status needs no personnel or vehicles figure. build/all_claims.csv derives `strength_status` from it (destroyed when the destroyed flag is true, unknown when there is no status). See docs/methodology.md. Blank where no source gives figures or a status. |  |
 | `notes` | string | yes | Free text: what the source says, caveats, source conflicts, change history. |  |
 | `location_date` | date | no | Optional. The date the coordinate is actually documented for, when it differs from `date` (for example the date of the command post list the point was taken from). Blank where the coordinate is for the claim's own date or the date is unknown (older rows not yet reviewed). | valid date |
 | `location_basis` | string | no | Optional. How the coordinate relates in time and place to `date` (see vocabulary `location_basis`). Blank on rows not yet reviewed. | vocabulary `location_basis` |
-| `location_temporal_offset_days` | number | no | Optional integer: `location_date` minus `date` in days (positive = the coordinate is from a later date). Blank when `location_date` is blank. | pattern `^-?\d+$`; must equal `location_date - date` |
 
 Primary key: `claim_id` (unique across the whole repository). Rows in each file are sorted by `date`, then `claim_id`.
+
+## places columns (`data/places.csv`)
+
+One row per place; claims point at it with `place_id`. Primary key `place_id`; rows sorted by `place_id`; `name` unique ignoring case; no alias equals another place's name or its own; foreign key `coord_reference_id` -> references_meta.`reference_id` (a `gazetteer_geocoder` reference, or blank for a hand-worked point). Machine-readable: [`places.schema.json`](places.schema.json). `build/places.csv` adds `claim_count` and `build/places.geojson` maps the places.
+
+| column | type | required | description |
+|---|---|---|---|
+| `place_id` | string | yes | Stable key PL0001 onward. Never reused. |
+| `name` | string | yes | Canonical name, unique (ignoring case) across the table. Settlements are written 'Name, administrative area' as the sources give them. |
+| `alt_names` | string | no | Other spellings and names under which claims named the place, separated by '; '. No alias may equal another place's name. |
+| `kind` | string | yes | point (a named settlement or site), area (a named area, sector, beach, zone or bridgehead, represented by one point) or line (a front, axis or route, represented by one point on it). |
+| `latitude` | number | yes | Decimal degrees WGS84 of the place's point. |
+| `longitude` | number | yes | Decimal degrees WGS84 of the place's point. |
+| `precision_km` | number | yes | The finest radius (banded, vocabulary precision_km) with which any claim has used this point when the place was created; a guide for new claims, not a measured error. A claim keeps its own precision_km. |
+| `country` | string | yes | ISO 3166-1 alpha-2 code of the country the point lies in today (vocabulary country). Assigned once from the nearest GeoNames populated place; check border places by hand. |
+| `region` | string | yes | First-level administrative area of the point as GeoNames names it (for example Lower Normandy, Wallonia, Limburg). |
+| `coord_reference_id` | string | no | The coordinate service that gave the point: a reference of source_type gazetteer_geocoder in data/references_meta.csv (R001 Wikipedia article coordinates, R002 OpenStreetMap Nominatim). Blank for a point worked out by hand (then coord_source_note says how). |
+| `coord_source_note` | string | yes | How the point was obtained, as the claims recorded it: the Wikipedia article ('Wikipedia (en): Brest, France') or the Nominatim query, or for a hand-worked point (blank reference id) the explanation (midpoint of two towns, commune centroid). |
+
+Validator checks: unique ids and names, sorted, vocabulary for `kind` and `country`, alias rules, `coord_reference_id` is a geocoder and appears in the `reference_ids` of at least one claim at the place, every place has at least one claim (warning), and for every claim the point equals the place's point exactly unless `coord_override` is set (then it must differ and be within 5 km). `check_coordinates.py` also warns for a place or claim point in the open Atlantic and, with `--duplicates`, lists places of kind point within 1 km of each other.
+
+## Derived values
+
+Not stored in the claim files; rebuilt by `common.load_all_claims()` and carried in `build/all_claims.csv` (same names and values as before the places table, so consumers need no change):
+
+| column | derived from |
+|---|---|
+| `location_name` | place name and `location_qualifier` (`scripts/places.py`, `display_name`): qualifier token `vicinity` -> `vicinity of NAME`; other qualifier text -> `NAME (text)` |
+| `place_name`, `country`, `region`, `coord_reference_id`, `coord_source_note` | the place row (new columns) |
+| `location_temporal_offset_days` | `location_date` minus `date` in days; blank when `location_date` is blank |
+| `strength_status` | `destroyed` when the `destroyed` flag is true, else `strength_json.status`, else `unknown` |
+| role `location` of a `gazetteer_geocoder` reference | `build_references.derive()`; not stored in `claim_reference_roles.csv` |
+
+The flags `established`, `disestablished` and `destroyed` are kept, because they are not derivable from other columns.
 
 ## units columns (`data/units.csv`)
 
@@ -110,6 +145,8 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | operation_relations | `from_operation_id`, `to_operation_id` | operations.`operation_id` |
 | operation_exceptions | `claim_id` / `operation_id` | claims.`claim_id` / operations.`operation_id` |
 | coordinate_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
+| claims | `place_id` | places.`place_id` |
+| places | `coord_reference_id` (blank for a hand-worked point) | references_meta.`reference_id` |
 | claim_reference_roles | `claim_id` / `reference_id` | claims.`claim_id` / references_meta.`reference_id` |
 | command_relations | `subject_unit_id`, `higher_unit_id` (blank only for an `unknown` placeholder) | units.`unit_id` |
 | command_relation_claims | `relation_id` / `claim_id` | command_relations.`relation_id` / claims.`claim_id` |
@@ -134,7 +171,8 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 - `composing_units`: listed when first given or when it changes; blank means unchanged from that unit's previous row; `unknown` means no data. Items are separated by `; `.
 - `engaged_with`: enemy units, nationality first, separated by `; ` (for example `German 352nd Infantry Division; German 716th Static Infantry Division`). Blank = no combat that day; `unknown` = combat with no opponent identified.
 - `commander`: rank and name as given by the sources; command changes are written like `X (killed 12 June); Y from that evening`.
-- `source`: URLs separated by ` | `, ending with a coordinate source note after ` ; ` (for example `; coords: Wikipedia`).
+- `source`: URLs separated by ` | `. The coordinate source is not in it: it is on the place (`coord_reference_id`, `coord_source_note`) or, for a claim with its own point, in `coord_override`.
+- `location_qualifier`: what is specific to the claim about the place, in the sources' words (`division HQ Le Molay-Littry`, `point = Cheux`); the first token `vicinity` means the claim says "vicinity of" the place.
 - `operation_id`: one value. A row that two operations both claim (an operation and the operation it supported) takes the more specific or the larger one and the other is linked in `data/operation_relations.csv`.
 - `current_activity`: short lower-case phrase (about 120 characters at most), no trailing period; free text, not a vocabulary. Describe the one action the sources document on that date at that place, in the sources' own terms (who did what, where). Do not state a direction, aim or result the sources do not give (for example "attacking from the bridgehead" when the source says the attack was postponed or contained), and do not join several actions with `;`: use `notes` for the rest. `scripts/validate.py` warns on long or hedged activities.
 
@@ -180,16 +218,16 @@ Order and effect can differ: the 35th Division was attached to V Corps by an ord
 - **Ordered, effective and exercised.** Four states can have different dates: *intended* (a plan or tentative selection), *ordered* (an order or alert is given), *effective* (the order takes effect) and *exercised* (the headquarters is shown commanding). The model today keeps them cheaply: `ordered_date` is the order, `effective_from` (with `effective_time`) is the effective date, a narrative row that shows the headquarters acting is the exercised evidence, and an intended-only fact is an `other` row whose `Event definition:` says it is a decision (III Corps, 18 December: Bradley and Patton agree to move the headquarters from Metz to Arlon and earmark three divisions; the attack opens on 22 December). A separate state column is on the roadmap (`docs/roadmap.md`, "Ordered / effective / exercised states"), with the 7th Armored Division's move to St. Vith as the motivating case.
 - **Declined, with reasons.** A numeric event confidence beside the location confidence is declined for the third time: `confidence` already scores the location and its sources, the `Event support:` and `Location support:` sentences carry the event side in words, and a second number would repeat `location_basis` and the notes. A `retained_nonoperational_responsibilities` relationship is not added: `unknown` with a scoped note does the job (AFHQ, 15 September 1944). An `engagement_area` location kind is not added: `objective` with `representative_point` says it. An `inferred_from_nearby_unit_hq` basis is not added: `inferred` plus a note naming the neighbour does.
 
-## Location provenance: location_date, location_basis, location_temporal_offset_days
+## Location provenance: location_date, location_basis
 
 `latitude`/`longitude` answer "where", `date` answers "when". Many Batch 1 coordinates are command posts that a source lists on a different date from the claim, or town centres standing for a headquarters. Three optional columns record that:
 
 - `location_date`: the date the coordinate is documented for. Set it equal to `date` when a source places the unit there on the claim's date.
-- `location_temporal_offset_days`: `location_date - date` in days (the validator checks it).
+- The offset `location_date - date` in days is not stored; `build/all_claims.csv` derives `location_temporal_offset_days`.
 - `location_basis`: one value of the `location_basis` vocabulary below. Temporal bases come first: if the coordinate is from another date use `nearest_later_command_post` or `nearest_earlier_command_post`; otherwise say whether the point is a `town_centroid` (a named town standing for a headquarters whose site is not given), a `representative_point`, an `operational_area` point (sector, landing area, bridgehead), `documented_on_date` (a named site or event place for that date), or `inferred`.
 - There is no separate location confidence column, and the Batch 2 corrections reconsidered one and again declined it: `confidence` is by definition the score for the location and its sources (see the rubric), `precision_km` and `location_basis` already carry the rest, and a location status column such as confirmed / last_known / interpolated / representative would repeat `location_basis` (documented_on_date, nearest earlier or later command post, operational_area or representative_point, inferred). How well a command event itself is documented is stated in the notes of command_change and activation rows from Batch 2 on, in the sentences `Event support:` and `Location support:` (high, moderate or low, with the reason); the validator warns when a command row with confidence 0.3 or less lacks `Event support:`. The relationship-level support is in `build/command_relations.csv` (`support`). `confidence`, `precision_km` and the basis together say how far the coordinate can be trusted. A coordinate from another date or a town centroid should carry a wider `precision_km` and, where the row's own date is not documented, `confidence` 0.5 or 0.3. Older rows (before Batch 1) are left blank unless their notes say where the coordinate came from.
 
-Validator checks: error when `location_date` and the offset disagree, when the offset is set without a date, when a temporal basis has no date, and for a `landing` row whose coordinate is a `town_centroid` or a command post from another date; warning when `location_date` differs from `date` but the basis is blank or `documented_on_date`, when a corps, army or army-group headquarters is only a town centroid with `precision_km` under 5, and when a corps or army sector is recorded as an exact `front_line_point`. `python scripts/audit_command_location.py` lists the counts per pattern.
+Validator checks: error when a temporal basis has no date, and for a `landing` row whose coordinate is a `town_centroid` or a command post from another date; warning when `location_date` differs from `date` but the basis is blank or `documented_on_date`, when a corps, army or army-group headquarters is only a town centroid with `precision_km` under 5, and when a corps or army sector is recorded as an exact `front_line_point`. `python scripts/audit_command_location.py` lists the counts per pattern.
 
 ### Notes convention
 
@@ -246,15 +284,15 @@ To add an operation: see CONTRIBUTING.md.
 | `reference_ids` | `;`-separated `reference_id`s (`R398;R407;R001`) in `data/references_meta.csv`, in citation order. **The source of truth** for which references support the claim. At least one is required. |
 | `source_locator` | where in a reference: `R398: p. 285, 289; R407: p. 36` (reference id, then page, chapter or section; `;` between references). Only ids that are in `reference_ids`. Blank where the citation gives no page. Nothing is guessed: the 158 values were taken from `#pageNNN` fragments of the original URLs. |
 
-The `source` text (URLs separated by ` | `, ending with the coordinate note) stays as the readable citation and `strength_json.source` stays as it was. `validate.py` checks that every URL, coordinate note and strength source in them resolves (through `data/references_meta.csv`) to an id in `reference_ids` (error), and warns when an id is listed that no citation text mentions.
+The `source` text (URLs separated by ` | `) stays as the readable citation and `strength_json.source` stays as it was. `validate.py` checks that every URL and strength source in them resolves (through `data/references_meta.csv`) to an id in `reference_ids` (error), and warns when an id is listed that no citation text mentions.
 
-**Roles.** What a reference supports is stored in the side table `data/claim_reference_roles.csv` (`claim_id, reference_id, role, basis`), not in the claim file, so that per-unit files stay one-line-per-claim readable. A link has no row (role `general`) unless there is evidence for a more specific role; a link can have several rows. Vocabulary `reference_role`: `event` (what happened), `date`, `location` (the place or the coordinates), `command_relationship`, `strength`, `general`. `basis` says why: `coordinate note names the service`, `strength_json source`, `named in the Event date sentence of notes` (also Event definition, Location, Relationship) or `named in command_relationships`. Roles are inferred conservatively from the claim's own text; most links are `general` and a reviewer may add a row when a source is checked for one part of a claim.
+**Roles.** What a reference supports is stored in the side table `data/claim_reference_roles.csv` (`claim_id, reference_id, role, basis`), not in the claim file, so that per-unit files stay one-line-per-claim readable. A link has no row (role `general`) unless there is evidence for a more specific role; a link can have several rows. Vocabulary `reference_role`: `event` (what happened), `date`, `location` (the place or the coordinates), `command_relationship`, `strength`, `general`. `basis` says why: `strength_json source`, `named in the Event date sentence of notes` (also Event definition, Location, Relationship) or `named in command_relationships`. The `location` role of a `gazetteer_geocoder` reference is derived, not stored (`build_references.derive()`; 561 rows removed when the places table was introduced), so the file holds only judgments. Roles are inferred conservatively from the claim's own text; most links are `general` and a reviewer may add a row when a source is checked for one part of a claim.
 
-**Independent sources.** `source_family` (in `references_meta.csv` and `references.csv`) groups references that are not independent: every Wikipedia article, in any language, and the Wikipedia API are one family `wikipedia`; the US Army Center of Military History publications and the sites that republish them are `us_army_cmh`; OpenStreetMap/Nominatim is `openstreetmap`; any other site is its host name. A claim with `confidence` 0.9 should cite at least two families (`validate.py` warning). The rubric counts every reference, including coordinate services; a stricter reading that ignores `gazetteer_geocoder` references (a geocoder shows where a place is, not that the unit was there) is reported in `docs/methodology.md`.
+**Independent sources.** `source_family` (in `references_meta.csv` and `references.csv`) groups references that are not independent: every Wikipedia article, in any language, and the Wikipedia API are one family `wikipedia`; the US Army Center of Military History publications and the sites that republish them are `us_army_cmh`; OpenStreetMap/Nominatim is `openstreetmap`; any other site is its host name. A claim with `confidence` 0.9 should cite at least two families (`validate.py` warning). The count ignores references of `source_type` `gazetteer_geocoder` (a geocoder shows where a place is, not that the unit was there); the numbers are in `docs/methodology.md`.
 
 Every URL in a claim's `source` column, every `formed_date_source` URL in `units.csv`, every unit source token (`listing_source`, `initial_parent_source`, for example `LEX`, `WP12AG`) and every `strength_json.source` text maps to one row of `data/references_meta.csv`; `scripts/validate.py` reports an error for a citation that does not.
 
-`data/references_meta.csv` is hand-maintained and holds the stable `reference_id` (`R001`, never reused or renumbered), the normalised `url` (no `#fragment`, `www.ibiblio.org`), the curated `short_title`, `full_citation`, `source_type`, `source_family`, `publisher`, `license_or_status`, `reliability_note`, `used_for`, `accessed_date`, and `link_status` / `link_checked` (written by `build_references.py --check-links`). Optional matching columns: `match_pattern` (regular expression on the coordinate note after ` ; `, used for services such as Nominatim that have no per-place URL), `source_token` (unit source token) and `strength_alias` (`;`-separated strength source texts). `data/references.csv` is generated from it and adds `original_url` (the archived address of a Wayback Machine link), `claims_count` (claims whose stored `reference_ids` list it), `units_count` and `first_claim_id` (the lowest claim_id listing it). `build/claim_references.csv` (columns `claim_id`, `reference_id`, `role`, `locator`) has one row per link and role, built from the stored `reference_ids`, `source_locator` and the roles table; it replaces the earlier derived roles `source` and `coordinates` (now `general` and `location`).
+`data/references_meta.csv` is hand-maintained and holds the stable `reference_id` (`R001`, never reused or renumbered), the normalised `url` (no `#fragment`, `www.ibiblio.org`), the curated `short_title`, `full_citation`, `source_type`, `source_family`, `publisher`, `license_or_status`, `reliability_note`, `used_for`, `accessed_date`, and `link_status` / `link_checked` (written by `build_references.py --check-links`). Optional matching columns: `source_token` (unit source token) and `strength_alias` (`;`-separated strength source texts). `data/references.csv` is generated from it and adds `original_url` (the archived address of a Wayback Machine link), `claims_count` (claims whose stored `reference_ids` list it), `units_count` and `first_claim_id` (the lowest claim_id listing it). `build/claim_references.csv` (columns `claim_id`, `reference_id`, `role`, `locator`) has one row per link and role, built from the stored `reference_ids`, `source_locator` and the roles table; it replaces the earlier derived roles `source` and `coordinates` (now `general` and `location`).
 
 `source_type`: `official_history`, `unit_history`, `assignment_table`, `reference_compilation`, `encyclopedia`, `gazetteer_geocoder`, `monument_or_memorial`, `archive_document`, `news_or_web_article`, `other`. `link_status`: `ok`, `blocked_403` (the server refuses automated requests, as `history.army.mil` does), `not_found`, `error` (timeout or other failure), `unchecked`. A link status records the day of the last check only; web pages move.
 
@@ -268,7 +306,7 @@ A JSON object (blank if no source gives figures):
 {"basis":"reported_actual","as_of":"1944-06-16","vehicles":{"tanks":85},"vehicle_count_type":"operational","source":"Wikipedia Operation Perch","note":"optional caveat"}
 ```
 
-Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the row date), `personnel` (integer), `vehicles` (object name -> integer count), `vehicle_count_type` (required when `vehicles` is present), `scope` (`whole_unit`, `sub_force` or `sector`, see the `strength_json_scope` vocabulary; required whenever `personnel` is given, and the validator reports an error when it is missing; if no source says what a figure covers, leave the figure out), `source` (required), `note` (optional). A figure that a source gives for a task force, a line or a sector (for example "for the defense of the new line he had 2,500 men") is not the strength of the whole unit: mark it `sub_force` or `sector` and say so in `note`. At least one of `personnel` or `vehicles` must be present. Guns are not vehicles. Details and basis rules: [../docs/methodology.md](../docs/methodology.md).
+Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the row date), `personnel` (integer), `vehicles` (object name -> integer count), `vehicle_count_type` (required when `vehicles` is present), `scope` (`whole_unit`, `sub_force` or `sector`, see the `strength_json_scope` vocabulary; required whenever `personnel` is given, and the validator reports an error when it is missing; if no source says what a figure covers, leave the figure out), `source` (required), `note` (optional). A figure that a source gives for a task force, a line or a sector (for example "for the defense of the new line he had 2,500 men") is not the strength of the whole unit: mark it `sub_force` or `sector` and say so in `note`. At least one of `personnel` or `vehicles` must be present. Guns are not vehicles. Details and basis rules: [../docs/methodology.md](../docs/methodology.md). `status` (`full`, `reduced`, `heavily_depleted`, see the `strength_json_status` vocabulary): the qualitative strength a source states; a record may hold a status alone (basis, as_of and source are then still required). `build/all_claims.csv` derives the column `strength_status` from it.
 
 ## Vocabularies
 
@@ -457,9 +495,9 @@ One primary event per row.
 | `redesignation` | The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps). |
 | `other` | Headquarters decisions, air attack on a headquarters, units at their station. |
 
-### strength_status
+### strength_status (derived)
 
-Qualitative strength. Default unknown; set only when a source states strength or losses.
+Qualitative strength in `build/all_claims.csv`; derived, not stored: `destroyed` when the claim's `destroyed` flag is true, else `strength_json.status` (`full`, `reduced`, `heavily_depleted`; vocabulary `strength_json_status`), else `unknown`.
 
 | value | meaning |
 |---|---|

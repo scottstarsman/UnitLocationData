@@ -2,9 +2,14 @@
 """Generate the combined outputs in build/ from the per-unit master files in data/claims/.
 
 Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-8):
-  build/all_claims.csv                  every claim, the columns of the schema plus the derived command_relationships (rebuilt from data/command_relations.csv
-                                        and data/command_relation_claims.csv; it is no longer a claim-file column)
-  build/claims.geojson                  one Point feature per claim (lon, lat) with main properties
+  build/all_claims.csv                  every claim: the columns of the schema plus the derived columns that are no longer stored in the claim files:
+                                        command_relationships (rebuilt from data/command_relations.csv and data/command_relation_claims.csv),
+                                        place_name, location_name (place name + location_qualifier), country, region, coord_reference_id and
+                                        coord_source_note (from data/places.csv), strength_status (destroyed flag, else strength_json status, else unknown)
+                                        and location_temporal_offset_days (location_date - date); see scripts/places.py
+  build/claims.geojson                  one Point feature per claim (lon, lat; the claim's own point, which equals its place's unless coord_override) with main properties
+  build/places.csv                      derived view of data/places.csv: the place columns plus claims_count, units_count, first and last claim date
+  build/places.geojson                  one Point feature per place with its main properties and claims_count
   build/coverage.csv                    one row per unit in data/units.csv: record_status, formed_date, whether it has a
                                         claim file, number of claim rows and their first and last date
   docs/coverage.md                      summary counts of the same, by nationality and echelon (generated; do not edit)
@@ -35,13 +40,67 @@ import common  # noqa: E402
 import build_references  # noqa: E402
 import command_relations  # noqa: E402
 import operations  # noqa: E402
+import places as placesmod  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
-             'echelon', 'branch', 'date', 'location_name', 'location_represents', 'precision_km', 'confidence',
+             'echelon', 'branch', 'date', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
              'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
              'location_temporal_offset_days', 'reference_ids', 'source_locator']
 DERIVED = ['operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'operation_path']   # appended to all_claims.csv from data/operations.csv
 NUMERIC = {'precision_km', 'confidence', 'location_temporal_offset_days'}
+PLACES_OUT_HEADER = placesmod.HEADER + ['claims_count', 'units_count', 'first_claim_date', 'last_claim_date']
+
+
+def all_claims_header(stored):
+    """Header of build/all_claims.csv: the claim-file columns with the derived ones at the place the stored column used to have (or next to the
+    column they come from), then the derived operation columns."""
+    after = {'parent_unit_id': ['command_relationships'], 'place_id': ['place_name', 'location_name'],
+             'coord_override': ['country', 'region', 'coord_reference_id', 'coord_source_note'], 'engaged_with': ['strength_status'],
+             'location_basis': ['location_temporal_offset_days']}
+    h = []
+    for c in stored:
+        h.append(c)
+        h.extend(after.get(c, []))
+    return h + DERIVED
+
+
+def places_outputs(rows):
+    """build/places.csv, build/places.geojson and the text of the places section of docs/coverage.md."""
+    places = placesmod.load()
+    per = {}
+    for r in rows:
+        per.setdefault(r['place_id'], []).append(r)
+    out, feats = [], []
+    kinds, countries = {}, {}
+    for p in places.rows:
+        rs = per.get(p['place_id'], [])
+        ds = sorted(r['date'] for r in rs)
+        row = [p[c] for c in placesmod.HEADER] + [str(len(rs)), str(len({r['unit_id'] for r in rs})), ds[0] if ds else '', ds[-1] if ds else '']
+        out.append(row)
+        props = {'place_id': p['place_id'], 'name': p['name'], 'alt_names': p['alt_names'] or None, 'kind': p['kind'], 'precision_km': num(p['precision_km']),
+                 'country': p['country'], 'region': p['region'], 'claims_count': len(rs)}
+        feats.append({'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [float(p['longitude']), float(p['latitude'])]}, 'properties': props})
+        k = kinds.setdefault(p['kind'], [0, 0])
+        k[0] += 1
+        k[1] += len(rs)
+        c = countries.setdefault(p['country'], [0, 0])
+        c[0] += 1
+        c[1] += len(rs)
+    names = placesmod.load()
+    alias_n = sum(len([a for a in p['alt_names'].split(';') if a.strip()]) for p in names.rows)
+    md = ['', '## Places', '',
+          'Generated from `data/places.csv` and the claims\' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; '
+          '`build/places.geojson` has one point per place. %d places and %d alias names for %d claims.' % (len(places.rows), alias_n, len(rows)), '',
+          '| kind | Places | Claims |', '|---|---:|---:|']
+    for k in common.vocab_values('place_kind'):
+        if k in kinds:
+            md.append('| %s | %d | %d |' % (k, kinds[k][0], kinds[k][1]))
+    md += ['', '| country | Places | Claims |', '|---|---:|---:|']
+    cn = common.vocab_descriptions('country')
+    for c in sorted(countries, key=lambda c: (-countries[c][1], c)):
+        md.append('| %s (%s) | %d | %d |' % (cn.get(c, c), c, countries[c][0], countries[c][1]))
+    gj = {'type': 'FeatureCollection', 'features': feats}
+    return out, (json.dumps(gj, ensure_ascii=False, indent=1) + '\n').encode('utf-8'), ('\n'.join(md) + '\n').encode('utf-8')
 
 
 def num(s):
@@ -143,8 +202,7 @@ def outputs():
     ops = operations.load()
     for r in rows:
         r.update(ops.labels(r['operation_id'], r['date']))
-    ix = header.index('parent_unit_id') + 1
-    header = header[:ix] + ['command_relationships'] + header[ix:] + DERIVED   # command_relationships is rebuilt from the relation tables (not a claim-file column)
+    header = all_claims_header(header)   # the derived columns (command_relationships, place and derived-value columns, operations) are not claim-file columns
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows)}
     feats = []
@@ -163,7 +221,10 @@ def outputs():
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(command_relations.load(), units, rows))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
-    out['../docs/coverage.md'] = cov_md + op_md
+    pl_rows, pl_geo, pl_md = places_outputs(rows)
+    out['places.csv'] = common.csv_bytes(PLACES_OUT_HEADER, pl_rows)
+    out['places.geojson'] = pl_geo
+    out['../docs/coverage.md'] = cov_md + op_md + pl_md
     # references: data/references.csv (metadata + counts) and the claim/unit -> reference links (see build_references.py)
     for k, data in build_references.outputs().items():
         out[k[len('build/'):] if k.startswith('build/') else '../' + k] = data

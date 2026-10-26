@@ -29,7 +29,7 @@ jobs:
         continue-on-error: true
       - name: Build combined outputs
         run: python scripts/build.py
-      # build/ holds the generated tables (claims, coverage, command relations, reference links); docs/coverage.md and data/references.csv are generated too
+      # build/ holds the generated tables (claims, places, coverage, command relations, reference links); docs/coverage.md and data/references.csv are generated too
       - name: Check build/ is up to date
         run: |
           python scripts/build.py --check

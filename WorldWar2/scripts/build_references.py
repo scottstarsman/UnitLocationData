@@ -3,9 +3,10 @@
 
 Inputs
   data/claims/**.csv     reference_ids and source_locator (the STORED claim -> reference links, the source of truth); source (URLs separated
-                         by ' | ', then ' ; coords: <note>') and strength_json.source stay as the readable citation and must resolve to
-                         the stored reference_ids (checked by validate.py)
-  data/claim_reference_roles.csv   HAND-MAINTAINED role of a link (event | location | command_relationship | strength | date | general)
+                         by ' | ') and strength_json.source stay as the readable citation and must resolve to the stored reference_ids (checked by
+                         validate.py); the coordinate source is the place's coord_reference_id and coord_source_note (data/places.csv)
+  data/claim_reference_roles.csv   HAND-MAINTAINED role of a link (event | location | command_relationship | strength | date | general). Only judgments are stored:
+                         the role `location` of a gazetteer_geocoder reference (the coordinate service, R001 / R002) is derived here, never stored
   data/units.csv         formed_date_source (URL), listing_source and initial_parent_source (tokens)
   data/references_meta.csv   HAND-MAINTAINED metadata, one row per reference: stable reference_id, URL,
                          title, citation, type, publisher, licence, reliability, link status, ...
@@ -17,8 +18,7 @@ Outputs (deterministic; the claims stay the evidence, these tables are derived):
   build/operation_references.csv  operation_id, reference_id (the reference_ids column of data/operations.csv)
 
 Stored links were migrated once from the citations by scripts/migrate_claim_references.py. A cited URL is normalised (fragment removed, ibiblio.org -> www.ibiblio.org) and must match the url of a row in
-references_meta.csv. A reference may instead be matched by a regular expression on the coordinate note
-(match_pattern, for services such as Nominatim), by a unit source token (source_token) or by the text of a
+references_meta.csv. A reference may instead be matched by a unit source token (source_token) or by the text of a
 strength_json source (strength_alias, ';'-separated). Rows keep their reference_id forever; new ones are appended.
 
 Usage
@@ -50,7 +50,7 @@ META_CSV = os.path.join(common.ROOT, 'data', 'references_meta.csv')
 REFERENCES_CSV = os.path.join(common.ROOT, 'data', 'references.csv')
 LINK_CACHE = os.path.join(common.ROOT, '.cache', 'links.json')
 
-META_HEADER = ['reference_id', 'url', 'match_pattern', 'source_token', 'strength_alias', 'short_title', 'full_citation', 'source_type',
+META_HEADER = ['reference_id', 'url', 'source_token', 'strength_alias', 'short_title', 'full_citation', 'source_type',
                'source_family', 'publisher', 'accessed_date', 'license_or_status', 'reliability_note', 'used_for', 'link_status', 'link_checked']
 REF_HEADER = ['reference_id', 'short_title', 'full_citation', 'source_type', 'source_family', 'publisher', 'url', 'original_url', 'accessed_date',
               'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'first_claim_id', 'used_for', 'link_status',
@@ -82,7 +82,7 @@ def original_url(u):
 
 
 def split_source(source):
-    """URLs of a claim's source column and the coordinate note (text after ' ; ')."""
+    """URLs of a claim's source column and a trailing ' ; <note>' (the coordinate note of the old layout; none is stored any more)."""
     urls, note = [], ''
     for part in source.split(' | '):
         head, _sep, tail = part.partition(' ; ')
@@ -172,10 +172,10 @@ def read_roles():
 
 
 def cited_links(claims, meta):
-    """Links implied by the readable citations: {claim_id: [(reference_id, kind, fragment)]} in citation order (URLs, then the coordinate
-    service, then strength sources), and {citation: first claim_id} for citations with no metadata row."""
+    """Links implied by the readable citations: {claim_id: [(reference_id, kind, fragment)]} in citation order (URLs, then strength sources),
+    and {citation: first claim_id} for citations with no metadata row. The coordinate service is not a citation of the claim: it belongs to the
+    place (places.coord_reference_id)."""
     by_url = {m['url']: m for m in meta if m['url']}
-    patterns = [(re.compile(m['match_pattern']), m) for m in meta if m['match_pattern']]
     aliases = {}
     for m in meta:
         for a in m['strength_alias'].split(';'):
@@ -184,7 +184,7 @@ def cited_links(claims, meta):
     missing, out = {}, {}
     for r in claims:
         links = []
-        urls, note = split_source(r['source'])
+        urls, _note = split_source(r['source'])
         for raw in urls:
             url, frag = norm_url(raw)
             m = by_url.get(url)
@@ -192,9 +192,6 @@ def cited_links(claims, meta):
                 missing.setdefault(url, r['claim_id'])
                 continue
             links.append((m['reference_id'], 'source', frag))
-        for rx, m in patterns:
-            if note and rx.search(note):
-                links.append((m['reference_id'], 'coordinates', ''))
         for a in strength_sources(r):
             m = aliases.get(a)
             if m is None:
@@ -223,6 +220,7 @@ def derive():
     claim_refs, unit_refs = set(), set()
     stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set()} for m in meta}
 
+    geocoders = {m['reference_id'] for m in meta if m['source_type'] == 'gazetteer_geocoder'}
     _hh, claims = common.load_all_claims()
     claims = sorted(claims, key=lambda r: r['claim_id'])
     _cl, missing = cited_links(claims, meta)
@@ -232,7 +230,10 @@ def derive():
         for rid in parse_ids(r.get('reference_ids', '')):
             if rid not in stats:
                 continue   # reported by validate.py
-            for role in sorted(set(roles.get((r['claim_id'], rid), ['general'])), key=ROLES.index):
+            rs = set(roles.get((r['claim_id'], rid), []))
+            if rid in geocoders:
+                rs.add('location')   # the coordinate service: derived, not stored
+            for role in sorted(rs or {'general'}, key=ROLES.index):
                 claim_refs.add((r['claim_id'], rid, role, locs.get(rid, '')))
             stats[rid]['claims'].add(r['claim_id'])
 

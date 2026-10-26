@@ -51,3 +51,22 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | battle | 12 | 12 | 88 |
 | phase | 2 | 2 | 30 |
 | **All** | **36** | **31** | **566** |
+
+## Places
+
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 383 places and 14 alias names for 566 claims.
+
+| kind | Places | Claims |
+|---|---:|---:|
+| point | 288 | 427 |
+| area | 79 | 121 |
+| line | 16 | 18 |
+
+| country | Places | Claims |
+|---|---:|---:|
+| France (FR) | 332 | 495 |
+| Belgium (BE) | 28 | 38 |
+| Netherlands (NL) | 10 | 12 |
+| Germany (DE) | 5 | 7 |
+| United Kingdom (GB) | 4 | 7 |
+| Luxembourg (LU) | 4 | 7 |

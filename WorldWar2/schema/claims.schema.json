@@ -2,7 +2,7 @@
   "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
   "name": "claims",
   "title": "WWII unit location claims",
-  "description": "One row per claim. Same header in every file under data/claims/. Vocabulary-backed fields refer to keys in schema/vocabularies.json. The claim's command relationships (who the unit was subordinate to, attached to or under the control of, with dates) are not stored in the claim file: they are rows of data/command_relations.csv, linked to the claim by data/command_relation_claims.csv (see schema/relations.schema.json); build/all_claims.csv carries the rebuilt `command_relationships` column.",
+  "description": "One row per claim. Same header in every file under data/claims/. Vocabulary-backed fields refer to keys in schema/vocabularies.json. The claim's command relationships (who the unit was subordinate to, attached to or under the control of, with dates) are not stored in the claim file: they are rows of data/command_relations.csv, linked to the claim by data/command_relation_claims.csv (see schema/relations.schema.json); build/all_claims.csv carries the rebuilt `command_relationships` column. Values derived from other data are not stored in the claim files: location_name (place name + location_qualifier), location_temporal_offset_days, strength_status and the coordinate source note (see scripts/places.py); build/all_claims.csv carries them.",
   "missingValues": [
     ""
   ],
@@ -27,6 +27,13 @@
       "reference": {
         "resource": "units",
         "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "place_id",
+      "reference": {
+        "resource": "places",
+        "fields": "place_id"
       }
     },
     {
@@ -182,12 +189,28 @@
       }
     },
     {
-      "name": "location_name",
+      "name": "place_id",
       "type": "string",
-      "description": "Name of the place the coordinate refers to.",
+      "description": "The place the coordinate refers to: a row of data/places.csv (a named settlement or site, an area, sector or beach, or a front or axis). Replaces the free-text location_name, which is rebuilt in build/all_claims.csv from the place name and location_qualifier.",
       "constraints": {
-        "required": true
+        "required": true,
+        "pattern": "^PL\\d{4,}$"
       }
+    },
+    {
+      "name": "location_qualifier",
+      "type": "string",
+      "description": "Optional. What is specific to this claim about the place, as the sources word it: a context note ('division HQ Le Molay-Littry', 'point = Cheux') or the reserved first token `vicinity` (the claim says \"vicinity of <place>\"; further text follows after '; '). Blank when the claim is simply at the place. Never a place name that is not in places.csv.",
+      "examples": [
+        "vicinity",
+        "departure area",
+        "vicinity; unresolved CMH place name"
+      ]
+    },
+    {
+      "name": "coord_override",
+      "type": "string",
+      "description": "Optional. A reason, set only when this claim's latitude/longitude differ from the place's (another geocoder read of the same place, an approximate point). It names the coordinate source of the claim's own point and the distance to the place point ('OpenStreetMap Nominatim (Utah Beach, Manche, France); 290 m from the place point'). Blank when the claim uses the place's point: the validator requires the point to equal the place's exactly when this is blank and to differ when it is set."
     },
     {
       "name": "location_represents",
@@ -277,7 +300,7 @@
     {
       "name": "source",
       "type": "string",
-      "description": "URLs separated by \" | \" ending with the coordinate source note. Every row needs at least one URL.",
+      "description": "The readable citation: URLs separated by \" | \". Every row needs at least one URL, and each URL must resolve to an id in `reference_ids`. The coordinate source is not part of it: it is the place's `coord_reference_id` and `coord_source_note` (data/places.csv), or `coord_override` for a claim with its own point.",
       "constraints": {
         "required": true
       }
@@ -322,18 +345,9 @@
       "description": "Enemy units fought on that date, nationality first, separated by \"; \". Blank = no combat that day; \"unknown\" = combat with no opponent identified."
     },
     {
-      "name": "strength_status",
-      "type": "string",
-      "description": "Qualitative strength (see vocabulary).",
-      "constraints": {
-        "required": true
-      },
-      "vocabulary": "strength_status"
-    },
-    {
       "name": "strength_json",
       "type": "string",
-      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"scope\",\"source\",\"note\"}; scope (whole_unit, sub_force, sector) says what the figure covers and is required whenever personnel is present. See docs/methodology.md. Blank where no source gives figures."
+      "description": "Optional JSON object with sourced strength figures: {\"basis\",\"as_of\",\"personnel\",\"vehicles\",\"vehicle_count_type\",\"scope\",\"status\",\"source\",\"note\"}; scope (whole_unit, sub_force, sector) says what the figure covers and is required whenever personnel is present. `status` (full, reduced or heavily_depleted; vocabulary strength_json_status) is the qualitative strength a source states; a record with a status needs no personnel or vehicles figure. build/all_claims.csv derives `strength_status` from it (destroyed when the destroyed flag is true, unknown when there is no status). See docs/methodology.md. Blank where no source gives figures or a status."
     },
     {
       "name": "notes",
@@ -354,14 +368,6 @@
       "type": "string",
       "description": "Optional. How the coordinate relates in time and place to date (see vocabulary location_basis). Blank on rows not yet reviewed.",
       "vocabulary": "location_basis"
-    },
-    {
-      "name": "location_temporal_offset_days",
-      "type": "number",
-      "description": "Optional integer: location_date minus date in days (positive = coordinate is from a later date). Blank when location_date is blank.",
-      "constraints": {
-        "pattern": "^-?\\d+$"
-      }
     }
   ]
 }

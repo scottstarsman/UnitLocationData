@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: US-ARM-003D / CR0128 decision recorded (26 October 2026)
+
+Scott's decision on open item 4: accept the change. Documentation only, one commit, no data change. After the batch (d) move of `CR0130` (3rd Armored Division to First Army, start 20 November 1943), `who_controls` for US-ARM-003D on 26 June 1944 names First Army (assigned, certain) and the chain First Army, 21st Army Group, SHAEF instead of answering "no higher headquarters is recorded; relation CR0128 is an explicit unknown". `CR0128` (corps-level placeholder, 23 to 28 June) is kept unchanged. Recorded in `docs/review/verification_results.md` (new item 5, "Open items decided on 26 October 2026", which also summarises items 1 to 3). Checks unchanged from the previous commit (data and build files untouched).
+
 ## open-items-oct26: CR0156 source note (26 October 2026)
 
 Scott's decision on open item 3 ("leave data as is; add a note only"). One commit. `CR0156` 7th Armored Division to 12th Army Group (`assigned`, from 10 August 1944): a source note is appended to the relation note: the table (R363) prints the row that first lists "12th" as "11 Aug 44" before the row "5 Aug 44", so the order is out of sequence and the date is probably a misprint. No date, basis or link changes. `who_controls`: 5,020 grid answers compared before and after, 0 changed. Validator 0 errors, same 3 warnings; 68 `semantic_tests` expectations hold.

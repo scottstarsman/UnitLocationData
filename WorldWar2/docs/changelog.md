@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## review-packet (26 October 2026)
+
+An independent-review packet for an outside reviewer who has read access to the repository and nothing else. No claim, table, schema or validator rule changed; the three commits add documents and one read-only script.
+
+- **`scripts/review_sample.py`** (standard library only) draws a seeded, stratified sample and computes the counts quoted in the brief. Seed 20261026. Claims: 40, with a quota per nationality proportional to the square root of its claims (Canada 2 of 4, Germany 9 of 75, UK 8 of 60, US 21 of 427), then coverage-first inside each nationality over echelon group, event type, confidence and claim status (all 18 event types, all four confidence levels, all three statuses and all five echelon groups are in the sample). Relations: 20 of 375, coverage-first over relationship, start and end basis, status, the two flags, subject nationality, overlap membership and whether a higher unit is named. Ranks are SHA-256 hashes of the seed and the row id, so the draw does not depend on the Python version. `--check` fails when the sample or the counts block of the brief is stale; `--seed`, `--claims` and `--relations` draw another sample.
+- **`docs/review/`**: `README.md` (brief: scope, table map, rules, counts, known limitations, how to run the checks, what is out of scope), `checklist.md` (ten areas and how to check a sampled row), `sample.md`, `sample_claims.csv`, `sample_relations.csv` (each sampled row with its cited sources, links and locators, and empty verdict columns), `questions.md` (ten design questions), `findings_template.md` (the format of a finding and how a finding is handled: verify against the sources, accept, decline, defer, record) and `responses.md` (empty until a review comes back).
+- **README.** The unit count in the status line is 356, as in the table (it said 354); the layout and the documents list mention the packet.
+- **Checks.** Validator: 0 errors and the same three warnings; `build.py --check`, `build_references.py --check`, `check_coordinates.py` and both audits unchanged; `review_sample.py --check` passes. Generated files in `build/` are unchanged.
+
 ## integrity-rules (26 October 2026)
 
 Three data integrity rules, one commit each: the claim key (this section's first item), claim-id allocation, and the controlled set of note labels. Validator warnings stay the same three; no claim was changed.

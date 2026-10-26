@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: CR0200 and CR0201 relabelled `inferred` (26 October 2026)
+
+Scott's decision on open item 2. One commit.
+
+- **`CR0200` XXI Corps to 6th Army Group and `CR0201` XXI Corps to Seventh Army (`assigned`, from 27 December 1944): start basis relabelled.** `valid_from_basis`, `date_basis` and the `stated_date_basis` of the evidence link (C0562) were `assignment_table` and are now `inferred`, an existing value of the vocabulary. Reason, recorded in both notes: the only source is the table of the 36th Infantry Division (R351, row 27 Dec 44), which says where the division was, not to what the corps was assigned; it does not establish the corps assignment. Dates unchanged.
+- **Corps-level source search.** Looked for a source that dates the corps' own assignment: Riviera to the Rhine ch. XXVII (R424: a new corps headquarters, the XXI, "had also recently arrived", undated) and p. 533 (headquarters in charge of the northern flank, date not given) say nothing of a date; two secondary accounts (thesecondwar.pl; trailblazersww2.org) give the headquarters' arrival in France as 27 December 1944 and its becoming operational on 13 January 1945. Nothing replaces 27 December, so it is kept and labelled `inferred`. A guessed archive address for a corps page of the CMH ETO-OB set returned 404; corps pages were not otherwise searched.
+- **Checked.** Validator 0 errors, same 3 warnings; 68 `semantic_tests` expectations hold; `who_controls`: 5,020 answers compared before and after, 10 changed (XXI Corps, 5 grid dates, two lines each): only the support label of the two lines changes from "table" to "inferred".
+
 ## open-items-oct26: CR0105 relabelled and I Airborne Corps added from the table (26 October 2026)
 
 Branch `open-items-oct26` (from `main`, 26 October 2026). Scott's decision on open item 1 of the sample-verification list ("I'll take your recommendations on 1 to 4"). One commit.

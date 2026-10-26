@@ -1079,8 +1079,8 @@ CR0299,C0561,1,asserts_start,1944-12-22,,,,,,,,CMH ETO-OB assignment table (sing
 CR0298,C0561,2,asserts_start,1944-12-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0297,C0561,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0296,C0561,4,asserts_start_and_end,1944-12-22,,,,1945-01-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""; the table row of 1945-01-25 no longer lists it, so the attachment is closed on 1945-01-24",assignment_table
-CR0201,C0562,1,asserts_start,1944-12-27,,,,,,,,"CMH ETO table, 36th Division row of 27 December: Seventh Army",assignment_table
-CR0200,C0562,2,asserts_start,1944-12-27,,,,,,,,CMH table: 6th,assignment_table
+CR0201,C0562,1,asserts_start,1944-12-27,,,,,,,,"CMH ETO table, 36th Division row of 27 December: Seventh Army",inferred
+CR0200,C0562,2,asserts_start,1944-12-27,,,,,,,,CMH table: 6th,inferred
 CR0108,C0563,1,asserts_end,,,,,1944-12-18,1944-12-16,,narrative,"Ardennes p304: the division belonged to General Ridgway's XVIII Airborne Corps in SHAEF reserve at Reims; the 17 December orders reached the corps chief of staff, who relayed the alert to the 82d and 101st; the entry ends with the turnover to VIII Corps on 18 December (p306); the CMH table lists VIII Corps instead from 17 December, so the end lies between 16 and 18 December; the start of this stretch is not dated in the sources used",narrative
 CR0109,C0563,2,asserts_start,1944-12-17,1944-12-18,,,,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the Green Book has the turnover to VIII Corps on 18 December (p306), so the start lies between 17 and 18 December; operational control is on the 19 December row",assignment_table
 CR0102,C0563,3,asserts_start,1944-12-17,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table

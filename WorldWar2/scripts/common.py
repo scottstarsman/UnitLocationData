@@ -42,6 +42,12 @@ def echelon_rank():
     return dict(load_vocabularies()['echelon_rank']['values'])
 
 
+def echelon_id_letters():
+    """(letter_by_echelon, echelons_without_letter, combat_command_regex) from the echelon_id_letter vocabulary."""
+    v = load_vocabularies()['echelon_id_letter']
+    return dict(v['values']), list(v['no_letter']), v['combat_command_pattern']
+
+
 def echelon_display_order():
     return list(load_vocabularies()['echelon_rank']['display_order'])
 

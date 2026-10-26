@@ -217,6 +217,9 @@ DATE_KEYS = ('effective_from', 'effective_from_latest', 'ordered_date', 'effecti
 STANDING_RELS = common.relationship_group('standing')
 ACTIVE_RELS = common.relationship_group('active')
 ECH_RANK = common.echelon_rank()
+_LETTERS, NO_ID_LETTER, _CC = common.echelon_id_letters()
+ID_LETTER_ECHELON = {letter: echelon for echelon, letter in _LETTERS.items()}   # 'D' -> 'division'
+COMBAT_COMMAND_ID = re.compile(_CC)
 HIGHER_THAN_ORGANIC = common.higher_than_organic()
 
 
@@ -895,6 +898,11 @@ def main():
             nat = nats.get(u['nationality'])
             if nat and uid.split('-')[0] != nat['code']:
                 err(where, 'unit_id prefix %s is not the code %s of nationality %s' % (uid.split('-')[0], nat['code'], u['nationality']))
+            # echelon letter (vocabulary echelon_id_letter): an id ending in digits and G, A, C, D, B or H must have that echelon; regiments, battle groups and battalions have no letter
+            lm = re.search(r'[0-9]([A-Z])$', uid)
+            if lm and lm.group(1) in ID_LETTER_ECHELON and ID_LETTER_ECHELON[lm.group(1)] != u['echelon'] and not (u['echelon'] in NO_ID_LETTER and COMBAT_COMMAND_ID.match(uid)):
+                err(where, 'unit_id %s ends in the echelon letter %s (%s) but echelon is %s: regiments, battle groups and battalions have no echelon letter in the id '
+                           '(see vocabulary echelon_id_letter)' % (uid, lm.group(1), ID_LETTER_ECHELON[lm.group(1)], u['echelon']))
             if u['formed_date']:
                 if not valid_partial_date(u['formed_date']):
                     err(where, 'formed_date %r is not a real YYYY, YYYY-MM or YYYY-MM-DD' % u['formed_date'])

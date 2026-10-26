@@ -95,7 +95,7 @@ This is the most useful check and the one that needs the sample: see "Sampled ro
 
 ## Sampled rows
 
-[sample.md](sample.md) lists 40 claims (S01 to S40) and 20 command relations (R01 to R20) that were drawn by `scripts/review_sample.py` with a fixed seed (see its header and the script's docstring for the draw). The same rows are in `sample_claims.csv` and `sample_relations.csv` with empty `reviewer_verdict` and `reviewer_comment` columns for your answers.
+[sample.md](sample.md) lists 40 claims (S01 to S40) and 20 command relations (R01 to R20) that were drawn by `scripts/review_sample.py` with a fixed seed (see its header and the script's docstring for the draw). The same rows are in `sample_claims.csv` and `sample_relations.csv` with `reviewer_verdict` and `reviewer_comment` columns for your answers. The columns are filled in with our own verification of 26 October 2026 ([verification_results.md](verification_results.md)); a reviewer can use them as a second opinion to compare with, or check the rows again.
 
 For each sampled **claim**, with the cited source open:
 

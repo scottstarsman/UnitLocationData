@@ -58,7 +58,7 @@ python scripts/validate.py          # exit code 0 = data is valid
 python scripts/build.py             # regenerate build/ (all_claims.csv, claims.geojson)
 python scripts/build.py --check     # exit code 1 if build/ is stale (used by CI)
 python scripts/semantic_tests.py    # what who_controls.py answers for four command scenarios; exit code 1 on a changed answer (used by CI, run build.py first)
-python scripts/check_coordinates.py # coordinate warnings only (add --geocode before a release)
+python scripts/check_coordinates.py # coordinate warnings only (add --geocode and --places before a release to fill the geocoder cache)
 ```
 
 Use the data directly: `build/all_claims.csv` (all claims, one file) or `build/claims.geojson` (Point features for GIS tools, `geojson.io`, QGIS, Leaflet).

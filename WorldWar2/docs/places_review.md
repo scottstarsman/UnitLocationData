@@ -4,7 +4,7 @@ Produced with the places table (`scripts/migrate_places.py`, branch `places-tabl
 
 ## Counts
 
-- 421 distinct `location_name` values became 383 places (288 point, 79 area, 16 line); 26 places absorb 2-5 old names each (list 1), 14 aliases on 13 places, 4 places with a hand-worked point (list 5).
+- 421 distinct `location_name` values became 383 places (288 point, 79 area, 16 line); 26 places absorb 2-5 old names each (list 1), 14 aliases on 13 places, 5 places with a hand-worked point (list 5; PL0195 added on the `sample-verification` branch).
 - 566 claims: 286 places have one claim, 62 have two, 16 three, 9 four, and 10 have five or more (largest PL0045 Brest, PL0258 Omaha Beach: 10 claims each).
 - After the place merges of item 8 (section 7): 378 places (285 point, 77 area, 16 line); retired ids in `data/place_merges.csv`: 5.
 - 20 claims keep their own point with a `coord_override` (list 3).
@@ -197,17 +197,22 @@ Places of kind point within 1 km of each other:
 - PL0208 Mantes-Gassicourt and PL0209 Mantes-la-Jolie, 0 m (merged, see section 7)
 - PL0045 Brest and PL0294 Recouvrance, 0 m (merged, see section 7)
 - PL0089 Cherbourg and PL0152 Fort du Roule, 459 m (the fort is part of the town's defences; probably different places)
-- PL0107 Coutances and PL0285 Pont Herbert, 172 m (suspect data, see 6)
+- PL0107 Coutances and PL0285 Pont Herbert, 172 m (the Pont Herbert point was wrong; corrected on the `sample-verification` branch, see 6, so the pair is no longer within 1 km)
 - PL0161 Grainville-sur-Odon and PL0227 Mondrainville, 911 m (different villages; keep)
 
 ## 5. Places with a hand-worked point
 
-These have a blank `coord_reference_id` and the explanation in `coord_source_note`: PL0022 Avranches–Brécey gap (midpoint of two Wikipedia coordinates), PL0120 Douve bridgehead objective south of Pont-l'Abbe (commune centroid, approximate), PL0225 Meuse crossings between Verdun and Commercy (midpoint), PL0286 Pont-l'Abbe (commune centroid, approximate). A real point could replace the last two.
+These have a blank `coord_reference_id` and the explanation in `coord_source_note`: PL0022 Avranches–Brécey gap (midpoint of two Wikipedia coordinates), PL0120 Douve bridgehead objective south of Pont-l'Abbe (commune centroid, approximate), PL0195 Logis de la Bocage (stand-in point, see 6), PL0225 Meuse crossings between Verdun and Commercy (midpoint), PL0286 Pont-l'Abbe (commune centroid, approximate). A real point could replace the last two.
 
 ## 6. Suspect data noticed and not changed
 
-- `Pont Herbert, Manche` (PL0285, claim C0225 of US-ARM-002D) lies 172 m from Coutances. Pont-Hébert is a different commune (about 25 km to the north-east); the point looks wrong or the name is a mix-up. It is a different place from Pont-Hébert, so it was not merged with anything.
-- `St Anthonis, Nort Brabant` (PL0314) has a point in Belgium (Flanders, 51.18 N 4.19 E) although the name says North Brabant; St. Anthonis in the Netherlands is near 51.6 N 5.9 E (country and region come from the point, so the place reads as Belgian). The point should be checked against the source.
+- Corrected on the `sample-verification` branch (items found by the sample verification and by this review; the points were re-geocoded, the old values are in the commit message):
+  - `Pont Herbert, Manche` (PL0285, claim C0225 of US-ARM-002D) was 172 m from Coutances and 27 km from Pont-Hébert; the point is now Pont-Hébert (Wikipedia en, 49.1678 N 1.1319 W; R001 added to the claim's references). The CMH list says "Pont Herbert (vic W)", so precision stays 10 km.
+  - `St Anthonis, Nort Brabant` (PL0314) was in Belgium (Flanders, 51.18 N 4.19 E, 127 km west); the point is now Sint Anthonis, Noord-Brabant (Nominatim 51.6269 N 5.8817 E), country NL and region North Brabant.
+  - `Auw, Rhineland` (PL0021) was a street in Langenbach bei Bad Marienberg, 120 km east; it is now Auw bei Prüm (Nominatim 50.3004 N 6.3380 E).
+  - `Sees, Sarthe` (PL0306) is now `Sées, Orne` at the town centre (Nominatim 48.6034 N 0.1735 E; the earlier point was 4 km south-east, outside the claim's 3 km precision).
+  - `Boinville, Seine-et-Oise` (PL0043) was a hamlet in Châlo-Saint-Mars, 62 km south; the 5th Armored Division after-action report for August 1944 places the division CP "in the vicinity of Boinville" on the march to Mantes-Gassicourt, and one transcription spells it Boinville-en-Mantois, so the point is Boinville-en-Mantois (Nominatim 48.9298 N 1.7568 E).
+  - `Logis de la Bocage, Manche` (PL0195, claim C0342) cannot be located: the CMH gives only "Logis de la Bocage (vic)" and no gazetteer entry was found. The point is a hand-worked stand-in (Juvigny-le-Tertre, the 3 August CP place, Wikipedia en), the place has a blank `coord_reference_id`, precision 25 km, and the claim is `nearest_earlier_command_post` at confidence 0.3. The site itself is still unresolved.
 - Place `precision_km` is the finest precision any claim at the place has used (it is not a statement about the place itself); claims keep their own `precision_km`.
 - Claim C0006 (352nd Infantry Division, 6 June 1944): its notes put the division headquarters at Le Molay-Littry, which is inland, but the claim sits on the Omaha Beach point (since the merge of PL0259 into PL0258 its qualifier `division HQ Le Molay-Littry` is the only trace of the headquarters). It may deserve its own place and point later; the coordinates were not changed.
 

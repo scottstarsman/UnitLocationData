@@ -1637,7 +1637,7 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R017;R376;R002",
+    "reference_ids": "R017;R376;R007;R002",
     "source_locator": null
    }
   },
@@ -1995,7 +1995,7 @@
     "precision_km": 10,
     "confidence": 0.3,
     "event_type": "attack",
-    "current_activity": "contained north-west of Caen by 12th SS",
+    "current_activity": "facing the 12th SS Panzer Division on the Caen-Bayeux road",
     "operation_id": "OP-CAMP-NORMANDY",
     "operation": "Normandy campaign",
     "operation_type": "campaign",
@@ -2293,7 +2293,7 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R013;R001",
+    "reference_ids": "R013;R008;R072;R001",
     "source_locator": null
    }
   },
@@ -3564,7 +3564,7 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R001",
+    "reference_ids": "R141;R343;R001",
     "source_locator": null
    }
   },
@@ -6844,7 +6844,7 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R001",
+    "reference_ids": "R139;R140;R068;R001",
     "source_locator": null
    }
   },
@@ -7500,7 +7500,7 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R112;R446;R001",
+    "reference_ids": "R112;R446;R445;R007;R001",
     "source_locator": null
    }
   },
@@ -8143,7 +8143,7 @@
     "location_name": "Cherbourg",
     "location_represents": "main_body",
     "precision_km": 5,
-    "confidence": 0.7,
+    "confidence": 0.3,
     "event_type": "destruction",
     "current_activity": "surrendering in the Cherbourg fortress; destroyed",
     "operation_id": "OP-CHERBOURG",
@@ -8184,7 +8184,7 @@
     "location_name": "Grainville-sur-Odon",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.7,
+    "confidence": 0.3,
     "event_type": "command_change",
     "current_activity": "transferring to II SS Panzer Corps control",
     "operation_id": "OP-EPSOM",
@@ -9559,8 +9559,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.4461,
-     49.0463
+     -1.1319,
+     49.1678
     ]
    },
    "properties": {
@@ -9591,7 +9591,7 @@
     "location_date": "1944-07-25",
     "location_basis": "town_centroid",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R347;R002",
+    "reference_ids": "R347;R002;R001",
     "source_locator": null
    }
   },
@@ -12347,8 +12347,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.4564,
-     48.7522
+     -1.02,
+     48.6775
     ]
    },
    "properties": {
@@ -12365,8 +12365,8 @@
     "place_id": "PL0195",
     "location_name": "vicinity of Logis de la Bocage, Manche",
     "location_represents": "headquarters",
-    "precision_km": 10,
-    "confidence": 0.5,
+    "precision_km": 25,
+    "confidence": 0.3,
     "event_type": "hq_move",
     "current_activity": "division command post at Logis de la Bocage",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -12376,9 +12376,9 @@
     "operation_name": "Overlord",
     "sub_operation_name": null,
     "strength_status": "unknown",
-    "location_date": "1944-08-07",
-    "location_basis": "town_centroid",
-    "location_temporal_offset_days": 0,
+    "location_date": "1944-08-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
     "reference_ids": "R343;R002",
     "source_locator": null
    }
@@ -12584,7 +12584,7 @@
     "location_date": "1944-08-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R398;R475;R001",
+    "reference_ids": "R398;R475;R155;R001",
     "source_locator": "R398: p. 344"
    }
   },
@@ -14315,8 +14315,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     0.198,
-     48.5705
+     0.1735,
+     48.6034
     ]
    },
    "properties": {
@@ -14331,7 +14331,7 @@
     "branch": "Army",
     "date": "1944-08-15",
     "place_id": "PL0306",
-    "location_name": "Sees, Sarthe",
+    "location_name": "Sées, Orne",
     "location_represents": "headquarters",
     "precision_km": 3,
     "confidence": 0.7,
@@ -15381,8 +15381,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     2.0481,
-     48.4081
+     1.7568,
+     48.9298
     ]
    },
    "properties": {
@@ -19768,8 +19768,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     7.948,
-     50.646
+     6.338,
+     50.3004
     ]
    },
    "properties": {
@@ -20465,8 +20465,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     7.948,
-     50.646
+     6.338,
+     50.3004
     ]
    },
    "properties": {
@@ -20957,8 +20957,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     4.1935,
-     51.1848
+     5.8817,
+     51.6269
     ]
    },
    "properties": {
@@ -21153,7 +21153,7 @@
     "location_date": "1944-10-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R487;R001",
+    "reference_ids": "R487;R453;R006;R001",
     "source_locator": null
    }
   },

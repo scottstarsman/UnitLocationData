@@ -19,7 +19,7 @@ PL0017,"Assenois, Luxembourg",,point,49.9665,5.6816,3,BE,Wallonia,R002,"OpenStre
 PL0018,"Aumeville-Lestre, Manche",,point,49.5400,-1.3205,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Aumeville-Lestre, Manche, France)",1,1,1944-09-30,1944-09-30
 PL0019,Authie,,point,49.2067,-0.4306,5,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-08,1944-06-08
 PL0020,Authie-Carpiquet line,,line,49.2067,-0.4306,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-08,1944-06-08
-PL0021,"Auw, Rhineland",,point,50.6460,7.9480,25,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Auw, Rhineland, Germany)",2,1,1944-09-18,1944-09-21
+PL0021,"Auw, Rhineland",Auw bei Prüm,point,50.3004,6.3380,25,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Auw bei Prüm, Rheinland-Pfalz, Germany); Wikipedia (en) Auw bei Prüm 50.3007, 6.3380 agrees (0.04 km)",2,1,1944-09-18,1944-09-21
 PL0022,"Avranches–Brécey gap, Manche",,area,48.7100,-1.2600,10,FR,Lower Normandy,,midpoint of Wikipedia (en) Avranches and Brécey,1,1,1944-08-01,1944-08-01
 PL0023,"Avranches, Manche",,point,48.6850,-1.3556,5,FR,Lower Normandy,R001,Wikipedia (en): Avranches,3,3,1944-07-30,1944-07-31
 PL0024,Azeville,,point,49.4591,-1.3135,5,FR,Lower Normandy,R002,OSM Nominatim,1,1,1944-06-07,1944-06-07
@@ -41,7 +41,7 @@ PL0039,"Betton, Ille-et-Vilaine",,point,48.1817,-1.6415,10,FR,Brittany,R002,"Ope
 PL0040,Biéville-Beuville / Lébisey approach to Caen,,area,49.2146,-0.3435,5,FR,Lower Normandy,R002,OSM Nominatim,1,1,1944-06-06,1944-06-06
 PL0041,Blay,,point,49.2709,-0.8402,5,FR,Lower Normandy,R002,OSM Nominatim,2,1,1944-06-22,1944-06-23
 PL0042,"La Bocagnerie, Manche",,point,48.8488,-0.9629,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (La Bocagnerie, France)",1,1,1944-08-05,1944-08-05
-PL0043,"Boinville, Seine-et-Oise",,point,48.4081,2.0481,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Boinville, France)",1,1,1944-08-25,1944-08-25
+PL0043,"Boinville, Seine-et-Oise",Boinville-en-Mantois,point,48.9298,1.7568,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Boinville-en-Mantois, Yvelines, France); namesake identified from the 5th Armored Division after-action report for August 1944 (https://www.5ad.org/08_44.html: ""At 0045 on 25 August the Division CP was in the vicinity of BOINVILLE"", on the march from Champenard to the Mantes-Gassicourt area; the same text at https://eucmh.com/2025/06/17/5th-armored-division-after-action-report-august-1944/4/ reads ""Boinville-en-Mantois""); Wikipedia (fr) Boinville-en-Mantois 48.9314, 1.7578 agrees (0.2 km)",1,1,1944-08-25,1944-08-25
 PL0044,Brécey,,point,48.7256,-1.1653,25,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-09,1944-06-09
 PL0045,"Brest, Finistère",Recouvrance,point,48.3906,-4.4861,3,FR,Brittany,R001,"Wikipedia (en): Brest, France",11,4,1944-08-25,1944-09-26
 PL0046,"Breuchotte, Haute-Saone",,point,47.8353,6.4688,3,FR,Franche-Comte,R002,"OpenStreetMap Nominatim (Breuchotte, Haute-Saone, France)",1,1,1944-09-20,1944-09-20
@@ -191,7 +191,7 @@ PL0191,"Lessay, Manche",,point,49.2133,-1.5203,3,FR,Lower Normandy,R002,"OpenStr
 PL0192,Lingeves / Tilly-sur-Seulles sector,,area,49.1761,-0.6253,5,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-14,1944-06-14
 PL0193,Lisieux,,point,49.15,0.23,5,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-06,1944-06-06
 PL0194,"Les Loges-sur-Brecey, Manche",,point,48.7540,-1.1610,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Les Loges-sur-Brecey, Manche, France)",1,1,1944-08-05,1944-08-05
-PL0195,"Logis de la Bocage, Manche",,point,48.7522,-1.4564,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Logis de la Bocage, Manche, France)",1,1,1944-08-07,1944-08-07
+PL0195,"Logis de la Bocage, Manche",,point,48.6775,-1.0200,25,FR,Lower Normandy,,"Stand-in point, not the site: the CMH lists the 1st Infantry Division command post on 4 and 7 August 1944 only as ""Logis de la Bocage (vic), Manche"" and no gazetteer entry for it was found. The point is Wikipedia (en) Juvigny-le-Tertre, the place of the division command post listed on 3 August (""Juvigny (vic west)""); the earlier point (OpenStreetMap Nominatim, a house in Sartilly) was about 21 km west of Brécey and out of the division's sequence",1,1,1944-08-07,1944-08-07
 PL0196,"Loire sector at Orléans, Beaugency and Mer, Loiret",,area,47.7792,1.6325,25,FR,Centre,R001,Wikipedia (en): Beaugency,1,1,1944-09-10,1944-09-10
 PL0197,"Longnes, Seine-et-Oise",,point,48.9207,1.5871,3,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Longnes, France)",1,1,1944-08-26,1944-08-26
 PL0198,"Lorient, Morbihan",,point,47.7500,-3.3600,10,FR,Brittany,R001,Wikipedia (en): Lorient,1,1,1944-08-15,1944-08-15
@@ -279,7 +279,7 @@ PL0281,"Plouguin, Finistere",,point,48.5253,-4.5977,25,FR,Brittany,R002,"OpenStr
 PL0282,"Plouvien, Finistere",,point,48.5305,-4.4512,3,FR,Brittany,R002,"OpenStreetMap Nominatim (Plouvien, Finistere, France)",1,1,1944-08-30,1944-08-30
 PL0283,"Pontaubault, Manche",,point,48.6300,-1.3497,10,FR,Lower Normandy,R001,Wikipedia (en): Pontaubault,1,1,1944-08-01,1944-08-01
 PL0284,"Pont Hebert, Manche",,point,49.1829,-1.1779,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Pont Hebert, Manche, France)",1,1,1944-07-15,1944-07-15
-PL0285,"Pont Herbert, Manche",,point,49.0463,-1.4461,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Pont Herbert, Manche, France)",1,1,1944-07-25,1944-07-25
+PL0285,"Pont Herbert, Manche",Pont-Hébert,point,49.1678,-1.1319,10,FR,Lower Normandy,R001,"Wikipedia (en): Pont-Hébert (the commune centre; Nominatim returns two administrative objects for the name, 4 km apart)",1,1,1944-07-25,1944-07-25
 PL0286,Pont-l'Abbe,,point,49.3772,-1.4353,5,FR,Lower Normandy,,"OSM (Etienville commune centroid, approximate)",1,1,1944-06-19,1944-06-19
 PL0287,"Pouance, Maine-et-Loire",,point,47.7403,-1.1730,10,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Pouance, Maine-et-Loire, France)",1,1,1944-08-13,1944-08-13
 PL0288,"Punerot, Meuse",,point,48.4825,5.8091,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Punerot, France)",1,1,1944-09-10,1944-09-10
@@ -299,7 +299,7 @@ PL0302,"Le Ruel, Seine-et-Oise",,point,49.1726,2.0235,10,FR,Ile-de-France,R002,"
 PL0303,"Rumes, Hainaut",,point,50.5424,3.3176,3,BE,Wallonia,R002,"OpenStreetMap Nominatim (Rumes, Hainaut, Belgium)",1,1,1944-09-02,1944-09-02
 PL0304,"Sameon, Nord",,point,50.4765,3.3351,3,FR,Nord-Pas-de-Calais,R002,"OpenStreetMap Nominatim (Sameon, Nord, France)",1,1,1944-09-02,1944-09-02
 PL0305,"Saverne, Bas-Rhin",,point,48.7400,7.3600,5,FR,Alsace,R001,Wikipedia (en): Saverne,1,1,1944-12-08,1944-12-08
-PL0306,"Sees, Sarthe",,point,48.5705,0.1980,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Sees, Sarthe, France)",1,1,1944-08-15,1944-08-15
+PL0306,"Sées, Orne","Sees, Sarthe",point,48.6034,0.1735,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Sées, Orne, France); Wikipedia (en) Sées 48.6053, 0.1719 agrees (0.3 km)",1,1,1944-08-15,1944-08-15
 PL0307,"Sourdeval, Manche",,point,48.7147,-0.8935,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Sourdeval, Manche, France)",2,1,1944-08-13,1944-08-14
 PL0308,Southern Cotentin front,,line,49.2908,-1.5411,10,FR,Lower Normandy,R001,Wikipedia,2,1,1944-06-19,1944-06-28
 PL0309,"Southern front, First Army zone",,line,49.12,-1.09,50,FR,Lower Normandy,R001,Wikipedia,2,1,1944-06-15,1944-06-28
@@ -307,7 +307,7 @@ PL0310,Southwest of Carentan,,area,49.304,-1.247,5,FR,Lower Normandy,R001,Wikipe
 PL0311,"Spa, Liège",,point,50.4925,5.8642,5,BE,Wallonia,R001,"Wikipedia (en): Spa, Belgium",1,1,1944-10-22,1944-10-22
 PL0312,"Sponville, Meurthe-et-Moselle",,point,49.0724,5.8312,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Sponville, Meurthe-et-Moselle, France)",1,1,1944-09-25,1944-09-25
 PL0313,"Stalzemburg area, Our River",,area,49.9000,6.2000,10,LU,Diekirch,R001,Wikipedia (en): Vianden,2,2,1944-09-11,1944-09-11
-PL0314,"St Anthonis, Nort Brabant",,point,51.1848,4.1935,3,BE,Flanders,R002,"OpenStreetMap Nominatim (St Anthonis, Belgium)",1,1,1944-09-30,1944-09-30
+PL0314,"St Anthonis, Nort Brabant",Sint Anthonis,point,51.6269,5.8817,3,NL,North Brabant,R002,"OpenStreetMap Nominatim (Sint Anthonis, Noord-Brabant, Netherlands); Wikipedia (en) Sint Anthonis 51.6333, 5.8833 agrees (0.7 km)",1,1,1944-09-30,1944-09-30
 PL0315,"St-Denis-du-Gast, Manche",,point,48.9405,-1.3294,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Saint-Denis-du-Gast, Manche, France)",1,1,1944-07-30,1944-07-30
 PL0316,"Ste-Cerotte, Sarthe",,point,47.9007,0.6846,3,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Sainte-Cerotte, Sarthe, France)",1,1,1944-08-15,1944-08-15
 PL0317,"Sainte-Honorine area, east of the Orne",,area,49.2408,-0.2261,5,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-23,1944-06-23

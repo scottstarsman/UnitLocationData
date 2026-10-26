@@ -43,7 +43,7 @@ CR0019,C0035,1,observed_during,,,,,,,,,,
 CR0018,C0035,2,observed_during,,,,,,,,,"Seventh Army (Dollmann) ordered the 265th Kampfgruppe forward, per the claim notes",
 CR0033,C0036,1,observed_during,,,,,,,,,,
 CR0047,C0037,1,observed_during,,,,,,,,,,
-CR0040,C0038,1,observed_during,,,,,,,,,,
+CR0040,C0038,1,asserts_start,1944-06-06,,,,,,,,"Cross-Channel Attack ch. 8 (R448): Panzer Lehr was in OKW reserve on 6 June and waited until 1600 for Hitler's word to move; the claim (7 June) notes ""Held back 6 June"".",narrative
 CR0056,C0039,1,observed_during,,,,,,,,,,
 CR0077,C0040,1,observed_during,,,,,,,,,,
 CR0078,C0041,1,observed_during,,,,,,,,,,
@@ -152,7 +152,7 @@ CR0020,C0127,2,listed_by_higher_unit,1944-06-16,,,,,,,,Kampfgruppe Boehm listed 
 CR0006,C0128,1,observed_during,,,,,,,,,,
 CR0034,C0129,1,observed_during,,,,,,,,,,
 CR0251,C0130,1,asserts_start,1944-06-14,,,,,,,,"CMH, Cross-Channel Attack ch. IX: XIX Corps took over control of the 29th Division from V Corps on 14 June",
-CR0087,C0131,1,observed_during,,,,,,,,,"Wikipedia, VII Corps (United States): for Overlord the 82nd and 101st Airborne Divisions were attached to VII Corps",
+CR0087,C0131,1,asserts_end,,,,,1944-06-18,,,,"Wikipedia, VII Corps (United States): for Overlord the 82nd and 101st Airborne Divisions were attached to VII Corps; CMH ch. X (a source the claim cites): control of the 82d Airborne Division passed on 19 June to VIII Corps, so the attachment ended on 18 June",narrative
 CR0086,C0131,2,observed_during,,,,,,,,,standing parent not identified,
 CR0009,C0132,1,observed_during,,,,,,,,,,
 CR0069,C0133,1,observed_during,,,,,,,,,,
@@ -164,7 +164,7 @@ CR0009,C0138,1,observed_during,,,,,,,,,,
 CR0218,C0139,1,observed_during,,,,,,,,,,
 CR0300,C0140,1,asserts_start,1944-05-29,,,,,,,,"CMH, Utah Beach to Cherbourg ch. 1: the revised VII Corps field order of 28 May provided for the temporary attachment of the 79th Division to VII Corps; Wikipedia, 79th Infantry Division (United States), assignments in ETO: Third Army, 'but attached to VII Corps, First Army' from 29 May 1944",
 CR0301,C0140,2,observed_during,,,,,,,,,"Wikipedia, 79th Infantry Division (United States), assignments in ETO: Third Army (18 April 1944, with VIII Corps)",
-CR0088,C0141,1,asserts_start,1944-06-19,,,,,,,,CMH ch. X: control of the 82d Airborne Division passed to VIII Corps on 19 June,
+CR0088,C0141,1,asserts_start,1944-06-19,,,,,,,,CMH ch. X: control of the 82d Airborne Division passed to VIII Corps on 19 June,narrative
 CR0086,C0141,2,observed_during,,,,,,,,,"standing parent not identified: XVIII Airborne Corps, the later parent, was organized after Normandy (Wikipedia, 82nd Airborne Division); none of the sources read names a standing parent on 19 June",
 CR0344,C0142,1,asserts_start,1944-06-19,,,,,,,,"CMH, Cross-Channel Attack ch. X: control of the 90th Division passed on 19 June to VIII Corps; Wikipedia, 90th Infantry Division, assignments in ETO: VIII Corps from 19 June 1944",
 CR0182,C0143,1,observed_during,,,,,,,,,,
@@ -255,6 +255,7 @@ CR0176,C0212,1,observed_during,,,,,,,,,,
 CR0175,C0212,2,observed_during,,,,,,,,,CMH ch. IX: Combat Command A was still attached to the 101st Airborne Division,
 CR0084,C0213,1,observed_during,,,,,,,,,CMH ETO-OB tables show XVIII Airborne Corps under First Allied Airborne Army,assignment_table
 CR0089,C0214,1,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Ninth""",assignment_table
+CR0088,C0214,2,asserts_end,,,,,1944-07-12,,,,"CMH ETO-OB assignment table (R365): VIII Corps from 19 Jun 44; the row of 13 Jul 44 no longer lists a corps (""(-)""), so the relation is closed on 1944-07-12",assignment_table
 CR0092,C0215,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0090,C0215,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0092,C0216,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
@@ -277,132 +278,132 @@ CR0113,C0222,2,asserts_start,1944-09-15,,,,,,,,"6th Army Group G-3 report: AFHQ 
 CR0115,C0223,1,asserts_start,1944-08-01,,,,,,,,"Eisenhower, Supreme Commander; direct operational control by SHAEF from 1 September 1944",narrative
 CR0116,C0223,2,asserts_start_and_end,1944-08-01,,,,1944-08-31,,,,Montgomery coordinated Allied ground operations until Eisenhower took direct control on 1 September 1944,narrative
 CR0121,C0224,1,asserts_start,1944-07-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0224,2,asserts_start,1944-07-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0224,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0121,C0225,1,asserts_start,1944-07-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0225,2,asserts_start,1944-07-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0225,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0123,C0226,1,asserts_start,1944-08-02,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0226,2,asserts_start,1944-08-02,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0226,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0226,3,asserts_start,1944-08-02,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0124,C0227,1,asserts_start,1944-08-07,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0227,2,asserts_start,1944-08-07,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0227,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0227,3,asserts_start,1944-08-07,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0125,C0228,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0228,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0228,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0228,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0125,C0229,1,asserts_start_and_end,1944-08-19,,,,1944-08-27,,,assignment_table,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the table shows XV Corps in the corps column from 28 August (C0510), so the last table day under XIX Corps is 27 August",assignment_table
-CR0120,C0229,2,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0229,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0229,3,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0127,C0230,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0230,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0230,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0230,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0127,C0231,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0231,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0231,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0231,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0232,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0232,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0232,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0131,C0233,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0233,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0233,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0131,C0234,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0234,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0234,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0234,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0235,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0235,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0235,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0235,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0236,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0236,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0236,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0236,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0237,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0237,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0237,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0237,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0238,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0238,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0238,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0238,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0239,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0239,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0239,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0239,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0240,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0240,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0240,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0240,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0241,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0241,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0241,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0241,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0131,C0242,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0242,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0242,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0132,C0242,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0134,C0243,1,asserts_start,1944-04-20,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0243,2,asserts_start,1944-04-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0243,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0134,C0244,1,asserts_start,1944-04-20,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0244,2,asserts_start,1944-04-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0244,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0136,C0245,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0245,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0245,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0135,C0245,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0136,C0246,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0246,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0246,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0135,C0246,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0136,C0247,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0247,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0247,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0135,C0247,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0136,C0248,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0248,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0248,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0135,C0248,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0136,C0249,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0249,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0249,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0249,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0136,C0250,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0250,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0250,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0250,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0136,C0251,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0251,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0251,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0251,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0252,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0252,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0252,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0252,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0253,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0253,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0253,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0253,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0254,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0254,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0254,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0254,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0255,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0255,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0255,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0255,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0256,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0256,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0256,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0256,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0257,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0257,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0257,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0257,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0258,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0258,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0258,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0258,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0138,C0259,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0259,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0259,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0259,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0140,C0260,1,asserts_start,1944-06-17,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0140,C0260,1,asserts_start,1944-03-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0142,C0261,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0140,C0261,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0140,C0261,2,asserts_start,1944-03-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0141,C0261,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0142,C0262,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0140,C0262,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0140,C0262,2,asserts_start,1944-03-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0141,C0262,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0142,C0263,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0140,C0263,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0140,C0263,2,asserts_start,1944-03-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0141,C0263,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0142,C0264,1,asserts_start,1944-08-24,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0140,C0264,2,asserts_start,1944-08-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0140,C0264,2,asserts_start,1944-03-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0143,C0264,3,asserts_start,1944-08-24,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0141,C0264,4,asserts_start,1944-08-24,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0145,C0265,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0144,C0265,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0144,C0265,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0141,C0265,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0145,C0266,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0144,C0266,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0144,C0266,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0141,C0266,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0145,C0267,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0144,C0267,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0144,C0267,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0141,C0267,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0145,C0268,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0144,C0268,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0144,C0268,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0141,C0268,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0147,C0269,1,observed_during,,,,,,,,,Army not shown in CMH table,
 CR0146,C0269,2,asserts_start,1944-03-09,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
@@ -430,16 +431,16 @@ CR0155,C0277,1,asserts_start,1944-09-20,,,,,,,,CMH ETO-OB assignment table (sing
 CR0154,C0277,2,asserts_start,1944-09-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0151,C0277,3,asserts_start,1944-09-20,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0158,C0278,1,asserts_start,1944-08-10,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0157,C0278,2,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0157,C0278,2,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0156,C0278,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0158,C0279,1,asserts_start,1944-08-10,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0157,C0279,2,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0157,C0279,2,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0156,C0279,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0158,C0280,1,asserts_start,1944-08-10,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0157,C0280,2,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0157,C0280,2,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0156,C0280,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0158,C0281,1,asserts_start,1944-08-10,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0157,C0281,2,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0157,C0281,2,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0156,C0281,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0160,C0282,1,asserts_start,1944-09-25,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0159,C0282,2,asserts_start,1944-09-25,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
@@ -507,30 +508,30 @@ CR0199,C0337,1,observed_during,,,,,,,,,,
 CR0199,C0338,1,observed_during,,,,,,,,,,
 CR0199,C0339,1,observed_during,,,,,,,,,,
 CR0204,C0340,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0203,C0340,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0203,C0340,2,asserts_start,1943-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0204,C0341,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0203,C0341,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0203,C0341,2,asserts_start,1943-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0204,C0342,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0203,C0342,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0203,C0342,2,asserts_start,1943-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0205,C0342,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0204,C0343,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0203,C0343,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0203,C0343,2,asserts_start,1943-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0205,C0343,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0204,C0344,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0203,C0344,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0203,C0344,2,asserts_start,1943-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0205,C0344,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0209,C0345,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0208,C0345,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0209,C0345,1,asserts_start,1944-04-14,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0208,C0345,2,asserts_start,1944-04-14,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0207,C0345,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0209,C0346,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0208,C0346,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0209,C0346,1,asserts_start,1944-04-14,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0208,C0346,2,asserts_start,1944-04-14,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0207,C0346,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0211,C0347,1,asserts_start,1944-08-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0208,C0347,2,asserts_start,1944-08-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0208,C0347,2,asserts_start,1944-04-14,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0210,C0347,3,asserts_start,1944-08-18,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Third""",assignment_table
 CR0207,C0347,4,asserts_start,1944-08-18,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0211,C0348,1,asserts_start,1944-08-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0208,C0348,2,asserts_start,1944-08-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0208,C0348,2,asserts_start,1944-04-14,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0210,C0348,3,asserts_start,1944-08-18,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Third""",assignment_table
 CR0207,C0348,4,asserts_start,1944-08-18,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0211,C0349,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
@@ -540,48 +541,48 @@ CR0211,C0350,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (sing
 CR0212,C0350,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0207,C0350,3,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0215,C0351,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0214,C0351,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0213,C0351,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0214,C0351,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0213,C0351,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0215,C0352,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0214,C0352,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0213,C0352,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0214,C0352,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0213,C0352,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0215,C0353,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0214,C0353,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0213,C0353,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0214,C0353,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0213,C0353,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0215,C0354,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0214,C0354,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0213,C0354,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0214,C0354,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0213,C0354,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0215,C0355,1,asserts_start,1944-09-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0217,C0355,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh""",assignment_table
 CR0216,C0355,3,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th""",assignment_table
 CR0220,C0356,1,asserts_start,1944-07-19,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0356,2,asserts_start,1944-07-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0356,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0220,C0357,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0357,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0357,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0357,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0358,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0358,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0358,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0358,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0359,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0359,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0359,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0359,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0360,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0360,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0360,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0360,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0361,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0361,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0361,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0361,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0362,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0362,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0362,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0362,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0363,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0363,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0363,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0363,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0222,C0364,1,asserts_start,1944-08-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0219,C0364,2,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0219,C0364,2,asserts_start,1944-01-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0221,C0364,3,asserts_start,1944-08-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0224,C0365,1,observed_during,,,,,,,,,Army not shown in CMH table,
-CR0223,C0365,2,asserts_start,1944-01-31,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0223,C0365,2,asserts_start,1943-12-24,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0226,C0366,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0225,C0366,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0226,C0367,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
@@ -589,23 +590,23 @@ CR0225,C0367,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Arm
 CR0226,C0368,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0225,C0368,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0229,C0369,1,asserts_start,1944-08-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0228,C0369,2,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0227,C0369,3,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0228,C0369,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0227,C0369,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0229,C0370,1,asserts_start,1944-08-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0228,C0370,2,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0227,C0370,3,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0228,C0370,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0227,C0370,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0229,C0371,1,asserts_start,1944-08-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0228,C0371,2,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0227,C0371,3,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0228,C0371,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0227,C0371,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0229,C0372,1,asserts_start,1944-08-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0228,C0372,2,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0227,C0372,3,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0228,C0372,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0227,C0372,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0229,C0373,1,asserts_start,1944-08-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0228,C0373,2,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0227,C0373,3,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0228,C0373,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0227,C0373,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0229,C0374,1,asserts_start,1944-08-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0228,C0374,2,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0227,C0374,3,asserts_start,1944-08-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0228,C0374,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0227,C0374,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0231,C0375,1,asserts_start,1944-07-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0230,C0375,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0231,C0376,1,asserts_start,1944-07-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
@@ -625,31 +626,31 @@ CR0231,C0381,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (sing
 CR0234,C0381,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0232,C0381,3,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0236,C0382,1,asserts_start,1943-11-25,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0235,C0382,2,asserts_start,1943-11-25,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0235,C0382,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0236,C0383,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0235,C0383,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0235,C0383,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0238,C0383,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0236,C0384,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0235,C0384,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0235,C0384,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0238,C0384,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0236,C0385,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0235,C0385,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0235,C0385,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0238,C0385,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0236,C0386,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0235,C0386,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0235,C0386,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0238,C0386,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0236,C0387,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0235,C0387,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0235,C0387,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0238,C0387,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0241,C0388,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0240,C0388,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
-CR0239,C0388,3,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0240,C0388,2,asserts_start,1944-08-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0239,C0388,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0242,C0389,1,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0239,C0389,2,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0244,C0390,1,asserts_start,1944-04-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0239,C0389,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0244,C0390,1,asserts_start,1944-04-14,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0243,C0390,2,asserts_start,1944-04-24,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0245,C0391,1,asserts_start,1944-07-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0244,C0391,2,asserts_start,1944-07-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0244,C0391,2,asserts_start,1944-04-14,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0243,C0391,3,asserts_start,1944-07-26,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0245,C0392,1,asserts_start,1944-07-30,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0246,C0392,2,asserts_start,1944-07-30,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
@@ -680,24 +681,24 @@ CR0247,C0400,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Arm
 CR0248,C0401,1,asserts_start,1944-08-28,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0246,C0401,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0247,C0401,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0254,C0402,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0253,C0402,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0254,C0402,1,asserts_start,1944-06-14,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0253,C0402,2,asserts_start,1943-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0252,C0402,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0254,C0403,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0253,C0403,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0254,C0403,1,asserts_start,1944-06-14,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0253,C0403,2,asserts_start,1943-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0252,C0403,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0255,C0404,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0253,C0404,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0253,C0404,2,asserts_start,1943-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0252,C0404,3,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0255,C0405,1,asserts_start,1944-08-12,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0253,C0405,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0253,C0405,2,asserts_start,1943-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0252,C0405,3,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0257,C0406,1,asserts_start,1944-08-19,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0253,C0406,2,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0253,C0406,2,asserts_start,1943-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0256,C0406,3,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Third""",assignment_table
 CR0252,C0406,4,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0257,C0407,1,asserts_start,1944-08-19,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0253,C0407,2,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0253,C0407,2,asserts_start,1943-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0256,C0407,3,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Third""",assignment_table
 CR0252,C0407,4,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0257,C0408,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
@@ -713,28 +714,28 @@ CR0260,C0411,1,asserts_start,1944-09-21,,,,,,,,CMH ETO-OB assignment table (sing
 CR0259,C0411,2,asserts_start,1944-09-21,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0252,C0411,3,asserts_start,1944-09-21,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0265,C0412,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0412,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0412,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0412,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0265,C0413,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0413,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0413,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0413,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0266,C0414,1,asserts_start,1944-07-28,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0414,2,asserts_start,1944-07-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0414,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0414,3,asserts_start,1944-07-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0266,C0415,1,asserts_start,1944-07-28,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0415,2,asserts_start,1944-07-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0415,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0415,3,asserts_start,1944-07-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0267,C0416,1,asserts_start,1944-08-05,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0416,2,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0416,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0416,3,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0267,C0417,1,asserts_start,1944-08-05,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0417,2,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0417,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0417,3,asserts_start,1944-08-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0268,C0418,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0418,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0418,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0418,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0268,C0419,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0264,C0419,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0264,C0419,2,asserts_start,1944-02-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0419,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0271,C0420,1,asserts_start,1944-08-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0270,C0420,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
@@ -747,180 +748,180 @@ CR0273,C0422,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (sing
 CR0272,C0422,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0263,C0422,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0276,C0423,1,asserts_start,1944-07-08,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0423,2,asserts_start,1944-07-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0275,C0423,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0274,C0423,3,asserts_start,1944-07-08,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0276,C0424,1,asserts_start,1944-07-08,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0424,2,asserts_start,1944-07-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0275,C0424,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0274,C0424,3,asserts_start,1944-07-08,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0277,C0425,1,asserts_start,1944-07-28,,,1944-07-27,,,,,"Breakout-15 p285: on the evening of 27 July Bradley attached the 35th Division to V Corps (order); p289: V Corps took control of the division on 28 July (effective). The CMH table lists V Corps from 27 July, the order date.",narrative
-CR0275,C0425,2,asserts_start,1944-07-27,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0275,C0425,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0274,C0425,3,asserts_start,1944-07-27,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0277,C0426,1,asserts_start,1944-07-28,,,1944-07-27,,,,,Breakout-15 p285: ordered the evening of 27 July; p289: V Corps took control on 28 July,narrative
-CR0275,C0426,2,asserts_start,1944-07-27,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0275,C0426,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0274,C0426,3,asserts_start,1944-07-27,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0279,C0427,1,asserts_start,1944-08-06,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0427,2,asserts_start,1944-08-06,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0427,3,asserts_start,1944-08-06,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0427,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0427,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0279,C0428,1,asserts_start,1944-08-06,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0428,2,asserts_start,1944-08-06,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0428,3,asserts_start,1944-08-06,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0428,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0428,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0281,C0429,1,asserts_start,1944-08-09,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0429,2,asserts_start,1944-08-09,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0275,C0429,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0280,C0429,3,asserts_start,1944-08-09,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
-CR0278,C0429,4,asserts_start,1944-08-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0278,C0429,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0282,C0430,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0430,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0430,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0430,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0430,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0282,C0431,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0431,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0431,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0431,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0431,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0282,C0432,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0432,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0432,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0432,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0432,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0282,C0433,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0433,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0433,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0433,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0433,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0282,C0434,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0434,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0434,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0434,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0434,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0282,C0435,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0275,C0435,2,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0278,C0435,3,asserts_start,1944-08-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0275,C0435,2,asserts_start,1944-04-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0278,C0435,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0285,C0436,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0284,C0436,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0283,C0436,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0284,C0436,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0283,C0436,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0285,C0437,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0284,C0437,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0283,C0437,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0284,C0437,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0283,C0437,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0285,C0438,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0284,C0438,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0283,C0438,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0284,C0438,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0283,C0438,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0285,C0439,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0284,C0439,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
-CR0283,C0439,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0284,C0439,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh""",assignment_table
+CR0283,C0439,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0285,C0440,1,asserts_start,1944-09-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0287,C0440,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh""",assignment_table
 CR0286,C0440,3,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th""",assignment_table
 CR0290,C0441,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0289,C0441,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
-CR0288,C0441,3,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0289,C0441,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0288,C0441,3,asserts_start,1944-08-30,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0293,C0442,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0292,C0442,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh (Adm)""",assignment_table
-CR0291,C0442,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0292,C0442,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh (Adm)""",assignment_table
+CR0291,C0442,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0293,C0443,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0292,C0443,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh (Adm)""",assignment_table
-CR0291,C0443,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0292,C0443,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh (Adm)""",assignment_table
+CR0291,C0443,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0293,C0444,1,asserts_start,1944-07-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0292,C0444,2,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh (Adm)""",assignment_table
-CR0291,C0444,3,asserts_start,1944-07-13,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
+CR0292,C0444,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""Seventh (Adm)""",assignment_table
+CR0291,C0444,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0293,C0445,1,asserts_start,1944-09-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0295,C0445,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh""",assignment_table
 CR0294,C0445,3,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th""",assignment_table
 CR0304,C0446,1,asserts_start,1944-07-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0301,C0446,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0303,C0446,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
+CR0303,C0446,3,asserts_start,1944-05-29,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0304,C0447,1,asserts_start,1944-07-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0301,C0447,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0303,C0447,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
+CR0303,C0447,3,asserts_start,1944-05-29,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0306,C0448,1,asserts_start,1944-08-03,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0301,C0448,2,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0448,3,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0305,C0448,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0306,C0449,1,asserts_start,1944-08-03,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0301,C0449,2,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0449,3,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0305,C0449,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0306,C0450,1,asserts_start,1944-08-03,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0301,C0450,2,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0450,3,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0305,C0450,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0306,C0451,1,asserts_start,1944-08-03,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0301,C0451,2,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0451,3,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0305,C0451,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0308,C0452,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0307,C0452,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0305,C0452,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0307,C0452,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0305,C0452,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0308,C0453,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0307,C0453,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0305,C0453,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0307,C0453,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0305,C0453,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0310,C0454,1,asserts_start,1944-09-07,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0309,C0454,2,asserts_start,1944-09-07,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0454,3,asserts_start,1944-09-07,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0305,C0454,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0310,C0455,1,asserts_start,1944-09-07,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0309,C0455,2,asserts_start,1944-09-07,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0455,3,asserts_start,1944-09-07,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0305,C0455,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0310,C0456,1,asserts_start,1944-09-07,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0309,C0456,2,asserts_start,1944-09-07,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0305,C0456,3,asserts_start,1944-09-07,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0313,C0457,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0457,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0305,C0456,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0313,C0457,1,asserts_start,1944-06-11,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0312,C0457,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0457,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0314,C0458,1,asserts_start,1944-08-08,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0458,2,asserts_start,1944-08-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0458,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0458,3,asserts_start,1944-08-08,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0314,C0459,1,asserts_start,1944-08-08,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0459,2,asserts_start,1944-08-08,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0459,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0459,3,asserts_start,1944-08-08,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0315,C0460,1,asserts_start,1944-08-10,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0460,2,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0460,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0460,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0315,C0461,1,asserts_start,1944-08-10,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0461,2,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0461,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0461,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0317,C0462,1,asserts_start,1944-08-17,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0462,2,asserts_start,1944-08-17,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0462,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0316,C0462,3,asserts_start,1944-08-17,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0311,C0462,4,asserts_start,1944-08-17,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0318,C0463,1,asserts_start,1944-08-26,,,,,,,,Breakout-28 p584: the 80th Division (attached to the XII Corps) marched from Argentan to assemble near Orléans; table date 26 August,narrative
-CR0312,C0463,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0463,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0463,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0318,C0464,1,asserts_start,1944-08-26,,,,,,,,Breakout-28 p584: the 80th Division (attached to the XII Corps) marched from Argentan to assemble near Orléans; table date 26 August,narrative
-CR0312,C0464,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0464,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0464,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0319,C0465,1,asserts_start,1944-08-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0465,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0465,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0465,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0319,C0466,1,asserts_start,1944-08-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0312,C0466,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0312,C0466,2,asserts_start,1944-06-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0311,C0466,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0323,C0467,1,asserts_start,1944-07-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0322,C0467,2,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0322,C0467,2,asserts_start,1944-04-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0321,C0467,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0324,C0468,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0322,C0468,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0322,C0468,2,asserts_start,1944-04-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0321,C0468,3,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0324,C0469,1,asserts_start,1944-08-03,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0322,C0469,2,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0325,C0469,3,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
+CR0322,C0469,2,asserts_start,1944-04-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0325,C0469,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0324,C0470,1,asserts_start,1944-08-03,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0322,C0470,2,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0325,C0470,3,asserts_start,1944-08-03,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
-CR0326,C0471,1,asserts_start,1944-09-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
-CR0325,C0471,2,asserts_start,1944-09-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
+CR0322,C0470,2,asserts_start,1944-04-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0325,C0470,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
+CR0326,C0471,1,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0325,C0471,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0328,C0472,1,asserts_start,1944-09-21,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0327,C0472,2,asserts_start,1944-09-21,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0325,C0472,3,asserts_start,1944-09-21,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
+CR0325,C0472,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0345,C0473,1,asserts_start,1944-06-19,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0343,C0473,2,asserts_start,1944-06-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0342,C0473,3,asserts_start,1944-06-19,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
+CR0343,C0473,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0342,C0473,3,asserts_start,1944-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0347,C0474,1,asserts_start,1944-08-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0343,C0474,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0343,C0474,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0346,C0474,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0349,C0475,1,asserts_start,1944-08-17,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0343,C0475,2,asserts_start,1944-08-17,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0343,C0475,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0348,C0475,3,asserts_start,1944-08-17,,,,,,,,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
 CR0346,C0475,4,asserts_start,1944-08-17,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0350,C0476,1,asserts_start,1944-08-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0343,C0476,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0343,C0476,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0346,C0476,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0350,C0477,1,asserts_start,1944-08-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0343,C0477,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0343,C0477,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0346,C0477,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0350,C0478,1,asserts_start,1944-08-26,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0343,C0478,2,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0343,C0478,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0346,C0478,3,asserts_start,1944-08-26,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
-CR0353,C0479,1,asserts_start,1944-08-28,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0352,C0479,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0353,C0479,1,asserts_start,1944-07-27,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0352,C0479,2,asserts_start,1944-07-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0351,C0479,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0353,C0480,1,asserts_start,1944-08-28,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0352,C0480,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0353,C0480,1,asserts_start,1944-07-27,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0352,C0480,2,asserts_start,1944-07-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0351,C0480,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0091,C0481,1,asserts_start_and_end,1944-08-12,,,,1944-09-17,,,,XVIII Airborne Corps headquarters stayed in England during Market Garden,assignment_table
 CR0090,C0481,2,asserts_start,1944-08-12,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
@@ -957,27 +958,26 @@ CR0194,C0503,2,asserts_start,1944-08-29,,,,,,,,"Third Army After Action Report: 
 CR0199,C0504,1,asserts_start,1944-08-01,,,,,,,,Breakout-18 p343,narrative
 CR0190,C0505,1,asserts_start,1944-08-01,,,,,,,,Breakout-18 p343,narrative
 CR0204,C0506,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0203,C0506,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0203,C0506,2,asserts_start,1943-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0121,C0507,1,asserts_start,1944-07-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0507,2,asserts_start,1944-07-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0507,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0131,C0508,1,asserts_start,1944-07-15,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0130,C0508,2,asserts_start,1944-07-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0130,C0508,2,asserts_start,1943-11-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0125,C0509,1,asserts_start_and_end,1944-08-19,,,,1944-08-27,,,assignment_table,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the table shows XV Corps in the corps column from 28 August (C0510), so the last table day under XIX Corps is 27 August",assignment_table
-CR0120,C0509,2,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0509,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0509,3,asserts_start,1944-08-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0126,C0510,1,asserts_start_and_end,1944-08-28,,,,1944-08-29,,,narrative,"CMH ETO-OB lists XV Corps in the single corps column on 28 August (table does not say assigned or attached). Breakout-31 p672: until XIX Corps headquarters took over the Mantes bridgehead at noon on 29 August XV Corps continued in command there, and the 2nd Armored crossed the Seine on 28 August to protect the left flank. About a day of command inside the bridgehead between two periods under XIX Corps, so recorded as temporary operational control, not a change of assignment.",assignment_table
-CR0127,C0510,2,asserts_start,1944-08-28,,,,,,,,"Standing corps link before (C0509, C0229) and after (C0511); continuation inferred from 28 August because no source says the XIX Corps link ended, only that XV Corps commanded the division in the bridgehead.",inferred
-CR0120,C0510,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0122,C0510,4,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0120,C0510,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0122,C0510,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0127,C0511,1,asserts_start,1944-08-29,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0120,C0511,2,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0120,C0511,2,asserts_start,1943-11-24,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0122,C0511,3,asserts_start,1944-08-29,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0153,C0512,1,asserts_start_and_end,1944-09-05,1944-09-10,,,1944-09-15,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"", first shown 5 September and replaced by Third Army on 16 September (C0513). Breakout-30 p636 says Simpson put the division directly under his control to free Middleton for Brest and gives no date; the text places it after the 10 September VIII Corps transfer, so the start is given as 5-10 September.",assignment_table
 CR0151,C0512,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0154,C0513,1,asserts_start,1944-09-16,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0151,C0513,2,asserts_start,1944-09-16,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0326,C0514,1,asserts_start,1944-09-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""; the table date 10 September is kept for the direct Ninth Army control, Breakout-30 p636 gives no date",assignment_table
-CR0325,C0514,2,asserts_start,1944-09-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
+CR0326,C0514,1,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""; the table date 10 September is kept for the direct Ninth Army control, Breakout-30 p636 gives no date",assignment_table
+CR0325,C0514,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0176,C0515,1,observed_during,,,,,,,,,,
 CR0177,C0515,2,asserts_start,1944-07-28,,,,,,,,Breakout-15 p296: at noon on 28 July Corlett assumed responsibility for CCA of the 2nd Armored Division (reinforced by the 22nd Infantry); Breakout-16 p304: transferred to XIX Corps. The sources do not say attached or assigned; the rest of the division stayed with VII Corps.,narrative
 CR0114,C0516,1,asserts_start,1944-09-15,,,1944-09-14,,,,,"Tactical control passed from AFHQ to SHAEF at 0001B, 15 September 1944 (6th Army Group G-3 Section Final Report); see C0222",order
@@ -1001,31 +1001,31 @@ CR0198,C0531,1,asserts_start,1944-10-22,,,,,,,,Siegfried p378: paper transfer of
 CR0191,C0532,1,asserts_start,1944-11-04,,,,,,,,Siegfried p399 and p401: Ninth Army plans and the 4 November directive to its two corps,narrative
 CR0191,C0533,1,asserts_start,1944-11-04,,,,,,,,Siegfried p399 and p401,narrative
 CR0359,C0534,1,asserts_start,1944-11-07,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0358,C0534,2,asserts_start,1944-11-07,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
-CR0357,C0534,3,asserts_start,1944-11-07,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
+CR0358,C0534,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0357,C0534,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th""",assignment_table
 CR0190,C0535,1,asserts_start,1944-08-01,,,,,,,,Breakout-18 p343,narrative
 CR0199,C0536,1,asserts_start,1944-08-01,,,,,,,,Breakout-18 p343,narrative
 CR0163,C0537,1,asserts_start,1944-10-23,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0162,C0537,2,asserts_start,1944-10-23,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0161,C0537,3,asserts_start,1944-10-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0162,C0537,2,asserts_start,1944-10-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0161,C0537,3,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0340,C0538,1,asserts_start,1944-12-04,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0339,C0538,2,asserts_start,1944-12-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0339,C0538,2,asserts_start,1944-11-25,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0179,C0539,1,asserts_start,1944-10-10,,,1944-10-10,,,,,Lorraine p299: the III Corps headquarters was assigned to the Third Army on 10 October,narrative
 CR0196,C0540,1,asserts_start,1944-09-29,,,1944-09-26,,,,,"Riviera p253: Eisenhower decided on 26 September to transfer the XV Corps to the 6th Army Group on the 29th, and on 29 September 1944 control of the corps officially passed to the 6th Army Group and the Seventh Army (hour not documented; the Third Army link on C0332 ends the same day); an earlier version of this entry carried 15 September, the date Seventh Army itself passed to the 6th Army Group (C0296)",narrative
 CR0356,C0541,1,asserts_start,1944-11-01,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0355,C0541,2,asserts_start,1944-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh""",assignment_table
 CR0354,C0541,3,asserts_start,1944-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th""",assignment_table
 CR0362,C0542,1,asserts_start,1944-11-06,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0361,C0542,2,asserts_start,1944-11-06,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh""",assignment_table
-CR0360,C0542,3,asserts_start,1944-11-06,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6 th""",assignment_table
+CR0361,C0542,2,asserts_start,1944-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh""",assignment_table
+CR0360,C0542,3,asserts_start,1944-11-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6 th""",assignment_table
 CR0365,C0543,1,asserts_start_and_end,1944-10-15,,,,1944-11-04,,,assignment_table,"CMH ETO-OB assignment table, corps column: ""I Br (Opn)""; the table row of 1944-11-05 no longer lists it, so the attachment is closed on 1944-11-04",assignment_table
 CR0366,C0543,2,asserts_start,1944-10-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth (Admin)""",assignment_table
 CR0363,C0543,3,asserts_start_and_end,1944-10-15,,,,1944-11-04,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First Cdn (Opn)""; the table row of 1944-11-05 no longer lists it, so the attachment is closed on 1944-11-04",assignment_table
 CR0364,C0543,4,asserts_start_and_end,1944-10-15,,,,1944-11-04,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21 st (Opn)""; the table row of 1944-11-05 no longer lists it, so the attachment is closed on 1944-11-04",assignment_table
 CR0331,C0544,1,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"CMH ETO-OB assignment table, corps column: ""30th Br (Opns)""; the table row of 1944-11-23 no longer lists it, so the attachment is closed on 1944-11-22",assignment_table
-CR0333,C0544,2,asserts_start,1944-11-11,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0333,C0544,2,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0330,C0544,3,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Second Br (Opns)""; the table row of 1944-11-23 no longer lists it, so the attachment is closed on 1944-11-22",assignment_table
-CR0332,C0544,4,asserts_start,1944-11-11,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0332,C0544,4,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0329,C0544,5,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""; the table row of 1944-11-23 no longer lists it, so the attachment is closed on 1944-11-22",assignment_table
 CR0334,C0544,6,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"Siegfried p545: the division was ""attached for operations to the British but still tied for other purposes to the XIII Corps""; the source does not say what the other purposes were, so the relationship is not typed as administrative control; the dates are those of the CMH table's British operational-control entries",narrative
 CR0188,C0545,1,asserts_start,1944-10-22,,,,,,,,Siegfried p378: VIII Corps passed from Ninth Army to First Army at noon on 22 October,narrative
@@ -1042,12 +1042,12 @@ CR0368,C0549,2,asserts_start,1944-12-20,,,,,,,,"CMH ETO-OB assignment table, Arm
 CR0367,C0549,3,asserts_start,1944-12-20,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0370,C0549,4,asserts_start_and_end,1944-12-20,,,,1945-01-17,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21 st""; the table row of 1945-01-18 no longer lists it, so the attachment is closed on 1945-01-17",assignment_table
 CR0165,C0550,1,asserts_start,1944-12-17,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0162,C0550,2,asserts_start,1944-12-17,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0164,C0550,3,asserts_start_and_end,1944-12-17,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20",assignment_table
-CR0161,C0550,4,asserts_start,1944-12-17,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0162,C0550,2,asserts_start,1944-10-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0164,C0550,3,asserts_start_and_end,1944-12-16,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20",assignment_table
+CR0161,C0550,4,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0097,C0551,1,asserts_start,1944-12-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0090,C0551,2,asserts_start,1944-12-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
-CR0096,C0551,3,asserts_start_and_end,1944-12-18,,,,1945-02-13,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13",assignment_table
+CR0096,C0551,3,asserts_start_and_end,1944-12-17,,,,1945-02-13,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13",assignment_table
 CR0095,C0551,4,asserts_start_and_end,1944-12-18,,,,1944-12-19,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""12th""; the table row of 1944-12-20 no longer lists it, so the attachment is closed on 1944-12-19",assignment_table
 CR0083,C0552,1,asserts_start,1944-08-25,,,,,,,,see C0213,narrative
 CR0085,C0552,2,asserts_start,1944-12-19,,,1944-12-19,,,,,Ardennes p343: First Army directive making the corps operational,narrative
@@ -1062,22 +1062,22 @@ CR0102,C0555,2,asserts_start,1944-12-17,,,,,,,,"CMH ETO-OB assignment table, Arm
 CR0112,C0555,3,asserts_start_and_end,1944-12-20,,,,1945-01-19,,,assignment_table,"Ardennes p399: VIII Corps passed to Third Army during the 20th, hour not documented; the CMH table dates the Third Army attachment from 1944-12-17, three days before the Green Book; the narrative date is used and the table date is not encoded (see C0563 and C0554 notes); Third Army's authority over the division is exercised through VIII Corps",narrative
 CR0111,C0555,4,asserts_start_and_end,1944-12-20,,,,1945-01-19,,,assignment_table,"follows the corps to Third Army, a 12th Army Group army; the CMH table shows 12th Army Group attached from 1944-12-17 (table date not encoded, see C0563)",inferred
 CR0139,C0556,1,asserts_start,1944-12-19,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0556,2,asserts_start,1944-12-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0556,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0556,3,asserts_start,1944-12-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0139,C0557,1,asserts_start,1944-12-19,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0133,C0557,2,asserts_start,1944-12-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
+CR0133,C0557,2,asserts_start,1944-02-01,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0137,C0557,3,asserts_start,1944-12-19,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0179,C0558,1,asserts_start,1944-10-10,,,1944-10-10,,,,,Lorraine p299,narrative
 CR0190,C0559,1,asserts_start,1944-08-01,,,,,,,,Breakout-18 p343,narrative
 CR0336,C0560,1,asserts_start_and_end,1944-12-20,,,,1944-12-23,1944-12-22,,narrative,"Ardennes p426: ""Temporarily attached to the XVIII Airborne Corps""; the corps was still giving the division orders at noon on 21 December (p430) and on 22 December (p431: Ridgway extended the division's mission); the VII Corps officially assumed its corps front at 1630 on 23 December (p433), which is the latest end; the division's own handover is not separately dated",narrative
-CR0333,C0560,2,asserts_start,1944-12-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
+CR0333,C0560,2,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0337,C0560,3,asserts_start_and_end,1944-12-20,,,,1945-02-02,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""",assignment_table
-CR0332,C0560,4,asserts_start,1944-12-20,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0332,C0560,4,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0335,C0560,5,asserts_start_and_end,1944-12-20,,,,1945-01-17,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""",assignment_table
 CR0338,C0560,6,asserts_start,1944-12-20,1944-12-23,,,,,,,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps) lists VII Corps from 20 December, the same day as the XVIII Airborne Corps row; the Green Book has the VII Corps assembling around the division from 21 December and officially assuming its corps front at 1630 on 23 December (Ardennes p426, p433), so operational control passed between 22 and 23 December and the table date is administrative",assignment_table
 CR0299,C0561,1,asserts_start,1944-12-22,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0298,C0561,2,asserts_start,1944-12-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0297,C0561,3,asserts_start,1944-12-22,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
+CR0297,C0561,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0296,C0561,4,asserts_start_and_end,1944-12-22,,,,1945-01-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""; the table row of 1945-01-25 no longer lists it, so the attachment is closed on 1945-01-24",assignment_table
 CR0201,C0562,1,asserts_start,1944-12-27,,,,,,,,"CMH ETO table, 36th Division row of 27 December: Seventh Army",assignment_table
 CR0200,C0562,2,asserts_start,1944-12-27,,,,,,,,CMH table: 6th,assignment_table

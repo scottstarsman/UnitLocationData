@@ -1045,7 +1045,7 @@ CR0165,C0550,1,asserts_start,1944-12-17,,,,,,,,CMH ETO-OB assignment table (sing
 CR0162,C0550,2,asserts_start,1944-10-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0164,C0550,3,asserts_start_and_end,1944-12-16,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""; the table row of 1944-12-21 no longer lists it, so the attachment is closed on 1944-12-20",assignment_table
 CR0161,C0550,4,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
-CR0097,C0551,1,asserts_start,1944-12-18,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0097,C0551,1,asserts_start_and_end,1944-12-18,,,,1944-12-18,,,assignment_table,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the table row of 1944-12-19 no longer lists it, so the relation is closed on 1944-12-18",assignment_table
 CR0090,C0551,2,asserts_start,1944-12-18,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First Allied Abn""",assignment_table
 CR0096,C0551,3,asserts_start_and_end,1944-12-17,,,,1945-02-13,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First""; the table row of 1945-02-14 no longer lists it, so the attachment is closed on 1945-02-13",assignment_table
 CR0095,C0551,4,asserts_start_and_end,1944-12-18,,,,1944-12-19,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""12th""; the table row of 1944-12-20 no longer lists it, so the attachment is closed on 1944-12-19",assignment_table
@@ -1288,3 +1288,12 @@ CR0167,C0639,1,observed_during,,,,,,,,,Breakout-18 p343,
 CR0470,C0640,1,observed_during,,,,,,,,,"the Green Book lists the Fifteenth Army as the sixth army of the 12th Army Group at the end of March (p. 323); it gives no start date, so the relation begins at this claim.",
 CR0471,C0641,1,asserts_start,1945-03-31,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" from the row of 31 Mar 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table",assignment_table
 CR0381,C0641,2,asserts_start,1944-12-27,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" from the row of 27 Dec 44; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table",assignment_table
+CR0472,C0643,1,asserts_start,1945-01-21,,,,,,,,"Fifteenth Army from 21 January 1945 (Wikipedia, Fifteenth Army; TheSecondWar.pl)",narrative
+CR0473,C0644,1,asserts_start,1945-01-21,,,,,,,,"Fifteenth Army from 21 January 1945 (Wikipedia, Fifteenth Army; TheSecondWar.pl)",narrative
+CR0472,C0645,1,observed_during,,,,,,,,,listed as in force on the date,
+CR0472,C0646,1,observed_during,,,,,,,,,listed as in force on the date,
+CR0474,C0646,2,listed_by_higher_unit,1945-03-28,,,,,,,,97th Infantry Division listed under XXII Corps in the CMH ETO-OB assignment table from the row of 28 Mar 45,assignment_table
+CR0475,C0646,3,listed_by_higher_unit,1945-03-29,,,,,,,,94th Infantry Division listed under XXII Corps in the CMH ETO-OB assignment table from the row of 29 Mar 45,assignment_table
+CR0476,C0646,4,listed_by_higher_unit,1945-03-30,,,,,,,,86th Infantry Division listed under XXII Corps in the CMH ETO-OB assignment table from the row of 30 Mar 45,assignment_table
+CR0477,C0646,5,listed_by_higher_unit,1945-03-31,,,,,,,,95th Infantry Division listed under XXII Corps in the CMH ETO-OB assignment table from the row of 31 Mar 45,assignment_table
+CR0478,C0646,6,listed_by_higher_unit,1945-03-31,,,,,,,,82nd Airborne Division listed under XXII Corps in the CMH ETO-OB assignment table from the row of 31 Mar 45,assignment_table

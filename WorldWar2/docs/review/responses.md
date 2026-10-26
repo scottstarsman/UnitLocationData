@@ -183,7 +183,7 @@ The 40 sampled claims and 20 sampled relations were checked against their cited 
 - **No row is contradicted outright; five have a severity 1 finding** (claims S09 and S25, relations R04, R08, R11) and two more a severity 2 finding on a point or a confidence level (S10, S23). The other 15 `partly supported` rows are source gaps (the value looks right but a cited source does not show it, or the source that does is not cited), boundary conventions of relation intervals, or a small inferred detail.
 - **Where the problems are.** A claim is wrong in a stored value in about 4 of 40 cases (the place, from a geocoder hit, twice; the confidence level, twice); the date, unit, event type and commander were never wrong. A command relation always has the right parent and type; 7 of 20 intervals start or end on a date that differs from the table or the source. These are rates in a seeded, stratified sample of 40 and 20, with wide intervals; they are not rates for the dataset.
 - **Outside the sample.** Five places whose coordinates come from a geocoder lie far from the town they name or outside their precision (two of them are the sample's S23 and S25, three are not in the sample: PL0021 Auw, PL0314 St Anthonis, PL0285 Pont Herbert); one more (PL0043 Boinville) was unresolved at the check and has since been resolved. All five have been re-geocoded (see the index).
-- **Relation to review 1.** Findings V-013 and V-014 (the start of an interval taken from the table row in force at the first claim; an interval split where only the wording of the relationship changes) are cases of R1-F-001, now with sampled examples. They stay open under that finding; the counts, options and a recommendation are in `verification_results.md`, "Decisions pending".
+- **Relation to review 1.** Findings V-013 and V-014 (the start of an interval taken from the table row in force at the first claim; an interval split where only the wording of the relationship changes) are cases of R1-F-001, now with sampled examples. V-014 is documented (decided 26 October 2026); V-013 stays open under that finding, with the counts, options and a recommendation in `verification_results.md`, "Decisions pending".
 
 ### Index of the verification findings
 
@@ -193,13 +193,14 @@ The 40 sampled claims and 20 sampled relations were checked against their cited 
 | V-002 | claims | 2 weak | S10 C0198: place not in a cited source, confidence 0.7 | fixed, `2e560b8` (0.3: the position is inferred) |
 | V-003 | places | 2 weak | S23 PL0195: point probably wrong by tens of km | partly fixed, `5d50d73` (stand-in point, 25 km, 0.3; the site is not located) |
 | V-004 | places | 1 error | S25 PL0306: point 4 km off, department label | fixed, `5d50d73` |
-| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | fixed, `08630d5` (references added; two source conflicts flagged, not resolved: S21 and S24) |
+| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | fixed, `08630d5` (references added); the two source conflicts (S21, S24) were decided by Scott on 26 October 2026: data kept, notes flagged (`@@D@@`) |
 | V-007 | claims | 4 suggestion | S02, S06: inferred wording | fixed, `e39df6b` |
 | V-008 | relations | 1 error | R04 CR0040: interval one day after the source | fixed (start), `9abb54e` |
-| V-009 | relations | 2 weak | R05 CR0041: end is a placeholder before the next claim | open (decision pending; recommendation: document) |
+| V-009 | relations | 2 weak | R05 CR0041: end is a placeholder before the next claim | documented, `bfef59a` (decided by Scott, 26 October 2026: document; no date changed) |
 | V-011 | relations, build | 1 error | R08: build keeps VII Corps for the 82nd Airborne 19 June to 12 July | fixed, `668d0f5`; CR0088 type `assigned`, `f8f1c87` |
 | V-012 | relations | 1 error | R11 CR0127: starts a day before the table | fixed, `9abb54e` (an overlap record is not possible: the validator accepts only contradictory overlaps) |
-| V-013, V-014 | relations | 3 design | start taken from the table row in force; split by wording | open (decisions pending, with counts and recommendations in `verification_results.md`) |
+| V-013 | relations | 3 design | start taken from the table row in force | open (decision pending, with counts and a recommendation in `verification_results.md`) |
+| V-014 | relations | 3 design | split by wording | documented, `bfef59a` (decided by Scott, 26 October 2026: document; no date changed, nothing merged) |
 | V-015 to V-017 | places | 1 error | PL0021, PL0314, PL0285: points 120, 127 and 27 km from the named town (not sampled) | fixed, `5d50d73` (PL0043 Boinville fixed in the same commit) |
 | V-018 | scripts | 4 suggestion | a coordinate comparison in `check_coordinates.py` | fixed, `f4a9e9e` (two warnings, tested by fault injection; it does not find a wrong first geocoder hit) |
 

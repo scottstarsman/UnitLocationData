@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## sample-verification: decisions (26 October 2026)
+
+Scott's decisions on the pending items of the sample verification, applied on the same branch (commit ids are those of the branch on GitHub). Main is untouched. Nothing changes a date, a relationship or an evidence link.
+
+- **`bfef59a` same-unit splits and the CR0041 placeholder (V-009, V-014).** The `note` of CR0041 and of the 16 relations of the 8 same-corps pairs (CR0083/0084, 0091/0092, 0103/0104, 0206/0209, 0218/0220, 0236/0237, 0251/0254, 0344/0345) explains the split; `schema/README.md` has a new section "Same-unit splits" (read a pair as one continuous interval; no overlap record). 5,020 `who_controls` answers compared before and after: 0 changed.
+- **`@@D@@` decisions recorded (V-006).** S21 C0181 (21st Army Group control to 1 September against CR0166 ending 31 July) and S24 C0505 (Cook against Eddy): the data and the flagged notes are kept. `docs/review/verification_results.md` and `responses.md` show items 2 to 4 as decided.
+- **Still pending:** the start-date convention (V-013, item 1).
+
 ## sample-verification: open items (26 October 2026)
 
 Further work on the same branch after the first four corrections, one commit each (commit ids are those of the branch on GitHub). Main is untouched.

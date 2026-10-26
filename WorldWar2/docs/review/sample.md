@@ -469,7 +469,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `attack` / `OP-PURSUIT`; status preferred; confidence 0.7
 - **Activity:** CCA attacking Troyes frontally after the drive from Sens
 - **Place:** Troyes, Aube (`PL0354`, Champagne-Ardenne, FR); point 48.2997, 4.0792; precision 5 km; point represents: objective; qualifier: -; coordinate source: R001: Wikipedia (en): Troyes
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-08-13; assigned US-AG-012G from 1944-08-13
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-02-01; assigned US-AG-012G from 1944-08-13
 - **Notes:** Breakout-28 p583: CCA drove forty miles from Sens to the outskirts of Troyes on the morning of 25 August and attacked. Objective check (Batch 2 review): the combat command attacked at the town on the row date, so documented_on_date holds.
 - **Sources cited** (the claim's own locator: R405: p. 583):
 

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## batch4-jan-mar-1945: Batch 4 documents and spot-check corrections (26 October 2026)
+
+Last commit of Batch 4. **Documents:** `docs/roadmap.md` (status line, batch table row 4, placeholder count 27 to 8, new section "Batch 4: January to March 1945 milestones" with what is not covered and the open points), `README.md` and `docs/HANDOFF.md` (status counts: 641 claims, 133 active units, 470 relations, 438 places, 550 references, 42 operations, 14 conflict groups; next free ids `C0642`, `CR0472`, `PL0445`, `R557`, `G018`; Batch 4 marked done on this branch, not merged), and the regenerated `docs/review/` sample.
+
+**Spot-check corrections (changed values; sample of 17 claims against sources not used to write the rows; see the spot-check file kept with the review notes).**
+- `C0586` (Fifteenth Army, 16 January 1945), `notes`: old "Maj. Gen. Gilbert R. Porter" (previous army commander), new "Maj. Gen. Ray E. Porter", reason: the History of the Fifteenth US Army and Wikipedia's list of commanders give Ray E. Porter; the first name was an authoring slip with no source. The same history confirms the headquarters at Suippes from 24 December 1944 to early February 1945, so the inferred position is consistent; the basis stays `inferred`.
+- `C0619` (65th Division enters combat, 9 March 1945), `notes` only: a Review note records that the CMH Combat Chronicle and Wikipedia date the first elements in the line to 5 March and the whole division in its sector to 8 March. Old 9 March (ETO-OB page), new unchanged, reason: two CMH products disagree and nothing was invented; the confidence stays 0.5; open for Scott.
+- `C0620` (78th Division, Honnef, 10 March 1945), `notes` only: caveat that after-action extracts show resistance still at the north end of the town at the end of 10 March and the Combat Chronicle dates the capture 16 March. Old and new value unchanged (the row stands as the Green Book's capture date), reason: the town was taken in stages.
+- No coordinate, date, confidence, claim status or relation changed by the review.
+
 ## batch4-jan-mar-1945: claims for the Saar-Palatinate offensive and the Rhine crossings (15-31 March 1945) (26 October 2026)
 
 Data commit of Batch 4 (US Army ground units, army group to division, 1 January to 31 March 1945; milestone pass, not a daily record). **18 claims added** (C0624 to C0641), 16 for units new to the dataset.

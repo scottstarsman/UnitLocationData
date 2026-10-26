@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## handoff-doc: the roadmap's placeholder count and status line (26 October 2026)
+
+One commit, documents only; **no data changed.** Old value to new value:
+
+- `docs/roadmap.md`, status line: "566 claims after Batch 3 and its review, 354 units" to "573 claims after Batch 3, its review and the open items of 26 October 2026, 356 units (114 active)". Reason: the counts had not been updated after the review corrections and the open items (`python scripts/validate.py` prints 573 claims, 356 units).
+- `docs/roadmap.md`, "Not covered in Batch 1": "The 39 US units still placeholders (III, XIII, XVI, XXI, XXII and XXIII Corps; Fifteenth Army; 17th Airborne; 8th to 14th, 16th and 20th Armored; 42nd and 63rd to 106th Infantry ...)" to "The 27 US units still placeholders on 26 October 2026" with the 27 listed by name (XVI, XXII, XXIII Corps; Fifteenth Army; 17th Airborne; 8th, 9th, 11th to 14th, 16th, 20th Armored; 42nd, 63rd, 65th, 66th, 69th to 71st, 76th, 78th, 86th, 89th, 95th, 97th, 99th Infantry). Reason: count of `data/units.csv` rows with nationality US and `record_status` placeholder is 27; III, XIII and XXI Corps and eleven divisions became active in Batches 1 to 3.
+- **Not updated:** the snapshot documents `docs/normalization_review.md`, `docs/places_review.md`, `docs/unit_references_review.md`.
+
 ## open-items-oct26: status and counts after the three decisions (26 October 2026)
 
 One commit, documents only; **no data changed.** Old value to new value:

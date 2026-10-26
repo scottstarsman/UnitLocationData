@@ -25,6 +25,10 @@ Items 1 to 7 of the review in [unit_references_review.md](unit_references_review
 - **Validator.** An id inside an unqualified free-text entry of `composing_text` is now an error (it had to exist before): write `<unit_id> (qualifier)`.
 - The relationships behind these entries are the relations of item 2 and the existing ones (see the evidence links of CR0020, CR0023, CR0030, CR0374).
 
+### Item 4: "First Army" in C0039
+
+- **Checked, left as text.** C0039 (21st Army Group, 7 June 1944) cites two pages about Montgomery's headquarters at Creullet (actu.fr, dday-overlord.com, read on 26 October 2026): neither mentions a First Army or any army (they give the dates of the visits, 7 to 22 June at Creullet and the move to Blay on 23 June). The claim's `composing_text` is `First Army` and the source does not decide which one. The US First Army was under the operational control of the 21st Army Group from 6 June (CR0166) and the First Canadian Army belonged to its order of battle (it was not yet in Normandy), so the name alone does not decide it; the evidence is not conclusive and the entry stays text (no id is guessed). If a source naming the army is found, replace it with the id (probably `US-ARMY-001A`) and add the claim to CR0166.
+
 ## unit-ids-in-text-columns (27 October 2026)
 
 Recommendation 3 (F3, unit references in text columns, the claim part) of [normalization_review.md](normalization_review.md). Applied with `scripts/migrate_unit_ids.py` (run once; `--verify HEAD` before the commit regenerates the old strings from the new data and diffs them). What was mapped and what is left for a decision: [unit_references_review.md](unit_references_review.md).

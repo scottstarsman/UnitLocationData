@@ -369,12 +369,13 @@
     }
   },
   "relation_claim_role": {
-    "description": "What a claim says about a command relation (column role of data/command_relation_claims.csv); it follows from which dates the claim itself stated.",
+    "description": "What a claim says about a command relation (column role of data/command_relation_claims.csv). For a claim of the subject unit the role follows from which dates the claim itself stated; a claim of the higher unit that lists the subject has the role listed_by_higher_unit.",
     "values": {
       "asserts_start": "The claim states when the relation began (stated_effective_from).",
       "asserts_end": "The claim states when the relation ended (stated_effective_to).",
       "asserts_start_and_end": "The claim states both the start and the end.",
-      "observed_during": "The claim lists the relation as in force on its date without dating the start or the end."
+      "observed_during": "The claim lists the relation as in force on its date without dating the start or the end.",
+      "listed_by_higher_unit": "The claim belongs to the HIGHER unit of the relation and lists the subject as one of its components with this relationship (for example a corps claim whose composing_units names a division attached to it, or a division claim that names an attached battle group). It is evidence for the relation, not one of the claim's own relationships: it does not appear in the claim's rebuilt command_relationships, it needs no stated dates (it records what the claim said in stated_note, and the start or end only if the claim gave one), and the subject must be listed in the claim's composing_units (or, until converted, named by id in composing_text)."
     }
   },
   "relation_overlap_kind": {

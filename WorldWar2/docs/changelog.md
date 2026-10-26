@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## review-items-1-7 (26 October 2026)
+
+Items 1 to 7 of the review in [unit_references_review.md](unit_references_review.md) (the decisions listed there; item 8, the five place merges, is not part of this branch and stays open). One commit per item. Applied with `scripts/migrate_review_items.py` (run once per item; every edit asserts the old value).
+
+### Item 1: the six former `attached:` entries
+
+- **GER-FJR-006 with the 91st Luftlande Division (C0010) is now a relation, `CR0372`** (`attached`, from 6 June 1944, `end_unknown`). The source is the CMH volume Cross-Channel Attack (Harrison): ch. VII p. 237-238 says the 91st Division went into combat with an attached parachute regiment and p. 259-260 that Seventh Army ordered the division to take over command of the 6th Parachute Regiment on arrival; ch. VIII p. 292-293 has the regiment "under control of the 91st Division" on 6 June, and note 47 says the subordination ordered by Seventh Army was apparently not effected (von der Heydte directed the regiment without orders from the division). It is recorded as ordered, with that caveat in the relation's note; the start is the claim date because no source dates the order. References R447 and R448 (already in the table) are added to C0010 (`reference_ids`, `source`, `source_locator`, role `command_relationship` in `data/claim_reference_roles.csv`).
+- **New evidence role `listed_by_higher_unit`** (vocabulary `relation_claim_role`, `data/command_relation_claims.csv`). A relation is evidenced by claims of its subject unit; the 6th Fallschirmjäger Regiment has no claim of its own, so the claim of the higher unit that lists it (C0010) is the evidence. Such a link is evidence only: it is not one of the listing claim's own relationships (the claim's rebuilt `command_relationships` does not change), the subject must be listed in the claim's `composing_units`, the link's `stated_note` keeps what the claim said, and a claim that lists a relation before it starts must state that start. `scripts/command_relations.py` and `scripts/validate.py` know the role.
+- **The other five are not units of the table** (the 56th Infantry Brigade C0017, the 1st Canadian Parachute Battalion C0018, the 116th Infantry Regiment C0025, the 2nd and 5th Ranger Battalions C0031, the 2nd Irish Guards C0217; scope is division and above), so no unit and no relation was added. The word `(attached)` is removed from their `composing_text` entries and each relationship is kept, with the claim's date and source as stated, in the new [deferred_relations.md](deferred_relations.md) (rows D01 to D06). `scripts/validate.py` checks that file (claim exists and belongs to the claim unit, higher unit is a unit, relationship is in the vocabulary, the entry is still in the claim's `composing_text`).
+
 ## unit-ids-in-text-columns (27 October 2026)
 
 Recommendation 3 (F3, unit references in text columns, the claim part) of [normalization_review.md](normalization_review.md). Applied with `scripts/migrate_unit_ids.py` (run once; `--verify HEAD` before the commit regenerates the old strings from the new data and diffs them). What was mapped and what is left for a decision: [unit_references_review.md](unit_references_review.md).

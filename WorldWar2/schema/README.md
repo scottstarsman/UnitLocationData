@@ -4,7 +4,7 @@ The machine-readable definitions live next to this file and are what `scripts/va
 
 - [`claims.schema.json`](claims.schema.json): column order, types and constraints of every file under `data/claims/` (Frictionless Table Schema style; `vocabulary` is a custom property pointing at a key in `vocabularies.json`).
 - [`units.schema.json`](units.schema.json): the same for `data/units.csv`.
-- [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `references_meta`, `claim_reference_roles`).
+- [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `claim_key_exceptions`, `place_merges`, `references_meta`, `claim_reference_roles`).
 - [`places.schema.json`](places.schema.json): columns, primary key and foreign key of `data/places.csv`.
 - [`vocabularies.json`](vocabularies.json): controlled vocabularies and the confidence rubric.
 
@@ -55,6 +55,21 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `location_basis` | string | no | Optional. How the coordinate relates in time and place to `date` (see vocabulary `location_basis`). Blank on rows not yet reviewed. | vocabulary `location_basis` |
 
 Primary key: `claim_id` (unique across the whole repository). Rows in each file are sorted by `date`, then `claim_id`.
+
+**Claim key.** A unit has at most one claim per `date` and `event_type`: `(unit_id, date, event_type)` is unique across the repository (`uniqueTogether` in `claims.schema.json`; `scripts/validate.py` enforces it). `claim_id` stays the primary key; the key says what the claim is about, so the same event is not entered twice. Two claims may share the key in two cases only:
+
+1. **The sources disagree.** Both claims are in the same conflict group (same `conflict_group_id`, one `preferred` and the others `alternate`, or all `disputed`; see CONTRIBUTING rule 2). Nothing else is needed.
+2. **They are different actions of one kind on one day** (for example two attacks by one division at different places, written as one row per action, see "One row, one action" in `docs/methodology.md`). The pair is listed with a reason in `data/claim_key_exceptions.csv`.
+
+### data/claim_key_exceptions.csv (hand-maintained)
+
+| column | description |
+|---|---|
+| `claim_id` | The claim with the lower id of the pair. |
+| `other_claim_id` | The other claim. Together with `claim_id` the primary key; both are foreign keys to claims.`claim_id`. Rows sorted by the pair. |
+| `reason` | Why the two are different actions and not duplicates (what differs: the place, the opponent, the objective), with the source if it is not in the claims' notes. |
+
+Validator checks: header, sorted, both ids are claims, the pair really shares `unit_id`, `date` and `event_type` and is not already in one conflict group (an exception that is not needed is an error: remove it), the reason is not blank. A repeated key that is neither in one conflict group nor listed is an error that names both claims. The table is empty today: when the rule was added no claim shared a key (566 claims, 566 distinct keys); the 14 conflict groups differ in date or event type.
 
 ## places columns (`data/places.csv`)
 
@@ -163,6 +178,7 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | operation_relations | `from_operation_id`, `to_operation_id` | operations.`operation_id` |
 | operation_exceptions | `claim_id` / `operation_id` | claims.`claim_id` / operations.`operation_id` |
 | coordinate_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
+| claim_key_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
 | claims | `place_id` | places.`place_id` |
 | places | `coord_reference_id` (blank for a hand-worked point) | references_meta.`reference_id` |
 | place_merges | `merged_into_place_id` | places.`place_id` |

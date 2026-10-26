@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## integrity-rules (26 October 2026)
+
+Three data integrity rules, one commit each: the claim key (this section's first item), claim-id allocation, and the controlled set of note labels. Validator warnings stay the same three; no claim was changed.
+
+### Rule 1: unit, date and event type identify one claim
+
+- **Rule.** `(unit_id, date, event_type)` is unique across the claims (`uniqueTogether` in `schema/claims.schema.json`, enforced by `scripts/validate.py`). A repeat is allowed only inside one conflict group, or when the pair is listed with a reason in the new hand-maintained table `data/claim_key_exceptions.csv` (`claim_id, other_claim_id, reason`: several actions of one kind by one unit on one day). An exception that is not needed is an error, so the list cannot go stale. The error names both claims and the three ways out. Described in `schema/README.md` ("Claim key") and `CONTRIBUTING.md` ("Claim identity", checklist).
+- **Audit before the rule.** 566 claims, 566 distinct keys: **0 violations**, so no claim was deleted, merged or edited and the exception table is empty. Looked at for context: 7 pairs of claims share a unit and a date but differ in event type (C0015/C0016, C0199/C0200, C0284/C0483, C0484/C0485, C0333/C0496, C0217/C0481, C0220/C0482: a landing or attack beside a headquarters move, and so on); they are different events and stay as they are. The 14 conflict groups all differ in date or event type (sources disagree about the date), so none needed the group exemption either.
+- **Table.** `claim_key_exceptions` is declared in `schema/relations.schema.json` (primary key `claim_id, other_claim_id`, both foreign keys to `claims.claim_id`).
+
 ## place-merges (26 October 2026)
 
 Item 8 of the review in [unit_references_review.md](unit_references_review.md): the five place merges of [places_review.md](places_review.md) (section 7). One commit per merge, after one commit that adds the mechanism. Applied with `scripts/migrate_place_merges.py` (`--merge 1` to `5`; every edit asserts the old value) and checked with `scripts/verify_place_merges.py`.

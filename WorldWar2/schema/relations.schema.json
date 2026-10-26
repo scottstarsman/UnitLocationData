@@ -118,6 +118,29 @@
         }
       ]
     },
+    "claim_key_exceptions": {
+      "path": "data/claim_key_exceptions.csv",
+      "primaryKey": [
+        "claim_id",
+        "other_claim_id"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        },
+        {
+          "fields": "other_claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        }
+      ]
+    },
     "place_merges": {
       "path": "data/place_merges.csv",
       "primaryKey": "retired_place_id",

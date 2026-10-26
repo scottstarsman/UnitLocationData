@@ -21,6 +21,8 @@ written canonically (entries joined by "; ").
 Command relations: a link of role listed_by_higher_unit belongs to the HIGHER unit's claim, which lists the subject in composing_units, keeps the wording in stated_note and states the start if it
 lists the relation before it starts (see schema/README.md, "Command relations"). docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
 every row names an existing claim of its unit, a higher unit of the table, a vocabulary relationship and an entry that is still in the claim's composing_text.
+Claim key: unit_id + date + event_type identify one claim (schema/claims.schema.json `uniqueTogether`); a repeat is allowed only inside one conflict group or when
+data/claim_key_exceptions.csv lists the pair with a reason (an exception that is not needed is an error).
 Places: names and aliases identify one place each (no alias is another place's name or alias); data/place_merges.csv lists the ids retired by merging two places (the id is not a
 row of places.csv, the survivor is, no claim uses a retired id).
 Foreign keys: every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json is checked (blank allowed, list columns split on the
@@ -552,6 +554,72 @@ def check_place_merges(places_by_id):
         if len(r) == len(h) and r[1] not in places_by_id:
             err('%s line %d' % (where, i), 'merged_into_place_id %s is not a row of data/places.csv (a survivor is a live place, not a retired id)' % r[1])
     return out
+
+
+CLAIM_KEY_EXCEPTIONS_CSV = os.path.join(common.ROOT, 'data', 'claim_key_exceptions.csv')
+CLAIM_KEY_EXCEPTIONS_HEADER = ['claim_id', 'other_claim_id', 'reason']
+
+
+def check_claim_keys(claims, schema):
+    """The natural key of a claim (schema/claims.schema.json, `uniqueTogether`: unit_id, date, event_type) is unique. Two claims with the same key are allowed
+    only when (a) both are in the same conflict group (the sources disagree: one preferred, the others alternate, or all disputed) or (b) the pair is listed with a
+    reason in data/claim_key_exceptions.csv (several actions of one kind by one unit on one day, one row per action). Returns the exception rows (dicts)."""
+    where = 'data/claim_key_exceptions.csv'
+    exc, pairs = [], {}
+    if not os.path.isfile(CLAIM_KEY_EXCEPTIONS_CSV):
+        err(where, 'missing (header %s)' % ','.join(CLAIM_KEY_EXCEPTIONS_HEADER))
+    else:
+        h, rows = common.read_rows(CLAIM_KEY_EXCEPTIONS_CSV)
+        if h != CLAIM_KEY_EXCEPTIONS_HEADER:
+            err(where, 'header %s != %s' % (h, CLAIM_KEY_EXCEPTIONS_HEADER))
+        else:
+            ids = {c['claim_id'] for c in claims}
+            prev = None
+            for i, r in enumerate(rows, start=2):
+                w = '%s line %d' % (where, i)
+                if len(r) != len(h):
+                    err(w, 'expected %d fields, found %d' % (len(h), len(r)))
+                    continue
+                d = dict(zip(h, r))
+                exc.append(d)
+                if not d['reason'].strip():
+                    err(w, 'reason is blank: say why the two claims are different actions and not duplicates')
+                for k in ('claim_id', 'other_claim_id'):
+                    if d[k] not in ids:
+                        err(w, '%s %r is not a claim' % (k, d[k]))
+                if d['claim_id'] >= d['other_claim_id']:
+                    err(w, 'list the pair with the lower claim_id first (%s, %s)' % (d['claim_id'], d['other_claim_id']))
+                key = (d['claim_id'], d['other_claim_id'])
+                if key in pairs:
+                    err(w, 'pair %s / %s is listed twice' % key)
+                if prev is not None and key < prev:
+                    err(where, 'rows must be sorted by claim_id, other_claim_id')
+                prev = key
+                pairs[key] = w
+    used = set()
+    for cols in schema.get('uniqueTogether', []):
+        seen = {}
+        for c in claims:
+            seen.setdefault(tuple(c[x] for x in cols), []).append(c)
+        for k, cs in sorted(seen.items()):
+            if len(cs) < 2:
+                continue
+            cs = sorted(cs, key=lambda c: c['claim_id'])
+            for i, a in enumerate(cs):
+                for b in cs[i + 1:]:
+                    if a['conflict_group_id'] and a['conflict_group_id'] == b['conflict_group_id']:
+                        continue
+                    if (a['claim_id'], b['claim_id']) in pairs:
+                        used.add((a['claim_id'], b['claim_id']))
+                        continue
+                    err(b['_where'], 'claims %s and %s have the same %s = %s: one unit has one claim per date and event type. If the sources disagree, put both '
+                                     'in one conflict group (same conflict_group_id, claim_status); if they are different actions of one kind on the same day, '
+                                     'list the pair with a reason in data/claim_key_exceptions.csv; otherwise they are duplicates: correct the existing claim '
+                                     '(see CONTRIBUTING.md, "Claim identity")' % (a['claim_id'], b['claim_id'], '/'.join(cols), ' / '.join(k)))
+    for key, w in sorted(pairs.items()):
+        if key not in used:
+            err(w, 'pair %s / %s does not need an exception (the claims do not share unit_id, date and event_type, or they are in one conflict group): remove the row' % key)
+    return exc
 
 
 def check_places(claims, vocabs):
@@ -1123,6 +1191,7 @@ def main():
     check_deferred_relations(units, vocabs, all_rows)
     check_operations(all_rows, vocabs)
     check_references(all_rows)
+    check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
 
     # ---- foreign keys declared in the schemas ----
@@ -1134,6 +1203,7 @@ def main():
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'place_merges': placesmod.load_merges(),
+              'claim_key_exceptions': common.read_dicts(CLAIM_KEY_EXCEPTIONS_CSV)[1] if os.path.isfile(CLAIM_KEY_EXCEPTIONS_CSV) else [],
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
               'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],
               'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps}

@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## sample-verification: open items (26 October 2026)
+
+Further work on the same branch after the first four corrections, one commit each (commit ids are those of the branch on GitHub). Main is untouched.
+
+- **`08630d5` missing references (V-005, V-006, V-010).** The sources and `source` text of C0039, C0055, C0086, C0165, C0181, C0505 and C0516 gain references that were already in `references_meta.csv` (R006, R007, R008, R068, R072, R140, R155, R343, R445, R453; no new reference row), nine rows in `data/claim_reference_roles.csv`, review notes, and a note on CR0056 and CR0166. No value changed. Two source conflicts are flagged and not resolved (the end of 21st Army Group control of the American armies, C0181 and CR0166; the XII Corps commander on 7 August, C0505).
+- **`e39df6b` wording (V-007).** C0048 `current_activity` and note, C0081 commander field and note, C0491 note. No key, date, event type or confidence changed.
+- **`f8f1c87` CR0088 type (V-011).** `attached` to `assigned` (Wikipedia, 82nd Airborne Division; the CMH does not separate the two). The warning "attached entry without a standing parent entry" on US-ABN-082D is gone (3 validator warnings now). 24 `who_controls` answers (US-ABN-082D, 19 June to 12 July) read assigned instead of attached.
+- **`f4a9e9e` coordinate warnings (V-018).** `scripts/check_coordinates.py`: `override` and `place-geocoder` (new options `--places` and `--cache`), documented in the script and in `docs/methodology.md`, with one explained exception in `data/coordinate_exceptions.csv` (PL0286, keyed by claim C0141). The warnings stay at 3.
+- **Not possible:** overlap records for CR0126/CR0127 and CR0292/CR0295 (the validator rejects them as stale; the pairs are not contradictory overlaps).
+- **Not applied (decisions of the owner):** the start of table-based intervals (V-013), CR0041 (V-009) and the splits at a wording change (V-014), and the two source conflicts. Counts, options and recommendations: `docs/review/verification_results.md`, "Decisions pending".
+
 ## sample-verification: corrections (26 October 2026)
 
 Four data corrections the owner approved after the sample verification, made on the same branch, one commit each (commit ids are those of the branch on GitHub). No schema, vocabulary or script change.

@@ -470,13 +470,14 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Activity:** CCA attacking Troyes frontally after the drive from Sens
 - **Place:** Troyes, Aube (`PL0354`, Champagne-Ardenne, FR); point 48.2997, 4.0792; precision 5 km; point represents: objective; qualifier: -; coordinate source: R001: Wikipedia (en): Troyes
 - **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-02-01; assigned US-AG-012G from 1944-08-13
-- **Notes:** Breakout-28 p583: CCA drove forty miles from Sens to the outskirts of Troyes on the morning of 25 August and attacked. Objective check (Batch 2 review): the combat command attacked at the town on the row date, so documented_on_date holds.
-- **Sources cited** (the claim's own locator: R405: p. 583):
+- **Notes:** Breakout-28 p583: CCA drove forty miles from Sens to the outskirts of Troyes on the morning of 25 August and attacked. Objective check (Batch 2 review): the combat command attacked at the town on the row date, so documented_on_date holds. Source added on 26 October 2026 (open item 5; no value changed): the CMH ETO-OB table of the 4th Armored Division (R356), from which the claim's command relationships (CR0133, CR0137, CR0138) are taken, was not among the references.
+- **Sources cited** (the claim's own locator: R405: p. 583; R356: table "Assignments and Attachments" (rows 1 Feb 44, 13 Aug 44)):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
+  | R356 | command_relationship | CMH ETO order of battle: 4th ARMORED DIVISION (Wayback copy) | assignment_table | https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/4AD-ETO.htm | table "Assignments and Attachments" (rows 1 Feb 44, 13 Aug 44) |
   | R405 | general | Breakout and Pursuit ch. 28 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-28.html | p. 583 |
-  | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R405: p. 583 |
+  | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R405: p. 583; R356: table "Assignments and Attachments" (rows 1 Feb 44, 13 Aug 44) |
 
 ### S29. C0510: 2nd Armored Division, 1944-08-28
 
@@ -598,12 +599,13 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Place:** Metz, Moselle (`PL0224`, Lorraine, FR); point 49.1203, 6.1778; precision 10 km; point represents: headquarters; qualifier: -; coordinate source: R001: Wikipedia (en): Metz
 - **Command relationships stated by the claim:** assigned US-ARMY-003A from 1944-10-10
 - **Notes:** Event date: 18 December 1944 (Ardennes p509: the forces "had been earmarked as early as the night of 18 December when Bradley and Patton agreed to move the new III Corps headquarters (as yet inexperienced and untried) from Metz to Arlon"; the divisions given Millikin, the 26th, the 80th and the 4th Armored, "were selected almost automatically"). Event definition: a decision, not an execution. This row records the intended state of the sequence (agreed 18 December); the move to Arlon and the corps' counterattack front are later (the attack opens on 22 December, C0558). The corps stays assigned to Third Army throughout. Relationship: Third Army assigned (C0539). Location: Metz, the headquarter [...]
-- **Sources cited** (the claim's own locator: R391: p. 509):
+- **Sources cited** (the claim's own locator: R391: p. 509; R417: p. 299):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
   | R391 | general | The Ardennes: Battle of the Bulge ch. 21 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-21.html | p. 509 |
-  | R471 | general | World War II by Day: III Corps | reference_compilation | https://www.ww2byday.com/70/mapunit/ | R391: p. 509 |
+  | R417 | command_relationship | The Lorraine Campaign ch. 6 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-6.html | p. 299 |
+  | R471 | general | World War II by Day: III Corps | reference_compilation | https://www.ww2byday.com/70/mapunit/ | R391: p. 509; R417: p. 299 |
 
 ### S37. C0519: First Army, 1944-12-19
 
@@ -612,14 +614,15 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Activity:** headquarters moves from Spa to Chaudfontaine
 - **Place:** Chaudfontaine, Liège (`PL0088`, Wallonia, BE); point 50.5833, 5.6333; precision 3 km; point represents: headquarters; qualifier: -; coordinate source: R001: Wikipedia (en): Chaudfontaine
 - **Command relationships stated by the claim:** assigned US-AG-012G from 1944-08-01
-- **Notes:** Event date: 19 December 1944 (Ardennes p423: Hodges' headquarters "had been moved on the 19th from Spa to Chaudfontaine"; p343 has the move done by the morning of the directive to the XVIII Airborne Corps). Event definition: army headquarters leaves Spa for Chaudfontaine as the German thrust develops (Ardennes p423 ties the move to the communications problem). Relationship: 12th Army Group assigned until the command change of 20 December. Location: Chaudfontaine commune centroid; the building is not stated. Coordinates: Wikipedia (en): Chaudfontaine. Event support: high (dated in the Green Book narrative). Location support: high for the commune, moderate for the site.
-- **Sources cited** (the claim's own locator: R388: p. 423; R386: p. 343):
+- **Notes:** Event date: 19 December 1944 (Ardennes p423: Hodges' headquarters "had been moved on the 19th from Spa to Chaudfontaine"; p343 has the move done by the morning of the directive to the XVIII Airborne Corps). Event definition: army headquarters leaves Spa for Chaudfontaine as the German thrust develops (Ardennes p423 ties the move to the communications problem). Relationship: 12th Army Group assigned until the command change of 20 December. Location: Chaudfontaine commune centroid; the building is not stated. Coordinates: Wikipedia (en): Chaudfontaine. Event support: high (dated in the Green Book narrative). Location support: high for the commune, moderate for the site. Source added on 26 Octo [...]
+- **Sources cited** (the claim's own locator: R388: p. 423; R386: p. 343; R398: p. 343):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
   | R386 | general | The Ardennes: Battle of the Bulge ch. 15 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-15.html | p. 343 |
   | R388 | general | The Ardennes: Battle of the Bulge ch. 18 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-18.html | p. 423 |
-  | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R388: p. 423; R386: p. 343 |
+  | R398 | command_relationship | Breakout and Pursuit ch. 18 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-18.html | p. 343 |
+  | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R388: p. 423; R386: p. 343; R398: p. 343 |
 
 ### S38. C0553: 101st Airborne Division, 1944-12-19
 

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: source references for S28, S36 and S37 (26 October 2026)
+
+Scott's decision on open item 5. One commit, no value changed.
+
+- `C0254` (S28, 4th Armored Division, 25 August 1944): R356 added (the CMH ETO-OB table of the 4th Armored Division, the source of the claim's relations CR0133 Third Army, CR0137 12th Army Group and CR0138 XII Corps); `reference_ids` R405;R001 to R405;R356;R001, `source_locator` extended, URL added to `source`.
+- `C0564` (S36, III Corps, 18 December 1944): R417 added (The Lorraine Campaign ch. 6, p. 299: "on 10 October the III Corps headquarters ... was assigned to the Third Army", the source of CR0179); the anchor `#page299` is in the URL.
+- `C0519` (S37, First Army, 19 December 1944): R398 added (Breakout and Pursuit ch. 18, p. 343: the 12th Army Group became operational at noon on 1 August, with First and Third Army, the source of CR0167); anchor `#page343`.
+- Each of the three has a `command_relationship` row in `data/claim_reference_roles.csv` (3 rows; 35 to 38 in total) and a sentence in its `notes`. `data/references.csv` and `build/claim_references.csv` are regenerated (R356, R398 and R417 each gain a claim). `docs/review/sample_claims.csv` comments for S28, S36 and S37 and the corresponding rows of `docs/review/verification_results.md` say that the gap is closed.
+- **Checked.** Validator 0 errors, same 3 warnings; `build_references --check` and `review_sample --check` clean; 68 `semantic_tests` expectations hold; `who_controls`: 5,020 grid answers, 0 changed (no relation or claim position changed).
+
 ## open-items-oct26: US-ARM-003D / CR0128 decision recorded (26 October 2026)
 
 Scott's decision on open item 4: accept the change. Documentation only, one commit, no data change. After the batch (d) move of `CR0130` (3rd Armored Division to First Army, start 20 November 1943), `who_controls` for US-ARM-003D on 26 June 1944 names First Army (assigned, certain) and the chain First Army, 21st Army Group, SHAEF instead of answering "no higher headquarters is recorded; relation CR0128 is an explicit unknown". `CR0128` (corps-level placeholder, 23 to 28 June) is kept unchanged. Recorded in `docs/review/verification_results.md` (new item 5, "Open items decided on 26 October 2026", which also summarises items 1 to 3). Checks unchanged from the previous commit (data and build files untouched).

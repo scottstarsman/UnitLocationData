@@ -712,7 +712,7 @@ A relation is one dated interval of one relationship between a subject unit and 
 
 - **Subject / higher unit:** `GER-PZ-LEHRD` / `GER-SSPZ-001C`
 - **Interval:** from 1944-06-08 (claim_date) to 1944-06-12 (earliest 1944-06-09) (inferred_from_next_claim); end_unknown false; change_undated true; date_basis inferred; status preferred
-- **Note:** none
+- **Note:** Placeholder end, not a sourced date: the interval ends on 12 June, the day before claim C0092 (13 June), which lists the parent as unknown (CR0042, 13 to 26 June); CR0043 resumes the same corps on 27 June. No source says the division left I SS Panzer Corps on 13 June. It is the only one of the 22 placeholder relations with the same higher unit on both sides. Read CR0041, CR0042 (the placeholder, whose own note stays as it is because who_controls prints it) and CR0043 as one corps relationship fr [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
@@ -854,7 +854,7 @@ A relation is one dated interval of one relationship between a subject unit and 
 
 - **Subject / higher unit:** `US-INF-002D` / `US-COR-005C`
 - **Interval:** from 1944-06-07 (claim_date) to 1944-08-04 (earliest 1944-06-13) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** none
+- **Note:** Same-unit split: CR0209 records the same subject and the same higher unit (US-COR-005C) in the other wording (unspecified_subordination, here assigned); the corps did not change. Read the pair as one continuous interval, 7 June to 17 August 1944; no dates are changed and the two rows are not merged (schema/README.md, "Same-unit splits").
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
@@ -867,7 +867,7 @@ A relation is one dated interval of one relationship between a subject unit and 
 
 - **Subject / higher unit:** `US-INF-004D` / `US-COR-007C`
 - **Interval:** from 1944-06-06 (claim_date) to 1944-07-25 (earliest 1944-06-28) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** none
+- **Note:** Same-unit split: CR0220 records the same subject and the same higher unit (US-COR-007C) in the other wording (unspecified_subordination, here assigned); the corps did not change. Read the pair as one continuous interval, 6 June to 21 August 1944; no dates are changed and the two rows are not merged (schema/README.md, "Same-unit splits").
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |

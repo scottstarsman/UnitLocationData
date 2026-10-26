@@ -24395,6 +24395,621 @@
     "reference_ids": "R425;R361;R001",
     "source_locator": "R425: p. 550"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3009,
+     50.4344
+    ]
+   },
+   "properties": {
+    "claim_id": "C0596",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL0404",
+    "location_name": "Rocherath-Krinkelt, Liège",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "fights through Krinkelt-Rocherath and into the Monschau Forest to reach Wahlerscheid from the south",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R533;R348;R002",
+    "source_locator": "R533: p. 66"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.327,
+     50.5028
+    ]
+   },
+   "properties": {
+    "claim_id": "C0597",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL0405",
+    "location_name": "Wahlerscheid, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "the 39th Infantry moves in on the rear of the Wahlerscheid pillboxes early on 1 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R533;R372;R002",
+    "source_locator": "R533: p. 65-66"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2233,
+     50.1786
+    ]
+   },
+   "properties": {
+    "claim_id": "C0598",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL0406",
+    "location_name": "Heckhuscheid, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "division in sight of the West Wall around Heckhuscheid and Grosskampenberg after crossing the Our on 29 January",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R533;R370;R001",
+    "source_locator": "R533: p. 65-66"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C0599",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-012D",
+    "unit_name": "12th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-04",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Colmar; the division is in reserve north of Colmar during the final Colmar Pocket offensive",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-04",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R519;R425;R001",
+    "source_locator": "R425: p. 548"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1137,
+     50.2967
+    ]
+   },
+   "properties": {
+    "claim_id": "C0600",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-04",
+    "place_id": "PL0407",
+    "location_name": "Hünningen, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Hünningen, Liège, in the V Corps zone",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-04",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R532;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2548,
+     50.5858
+    ]
+   },
+   "properties": {
+    "claim_id": "C0601",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-078D",
+    "unit_name": "78th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-05",
+    "place_id": "PL0408",
+    "location_name": "Konzen, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "limited-objective attack at 0300 toward the Roer dams; the 310th Infantry takes Konzen in three hours",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R534;R529;R002",
+    "source_locator": "R534: p. 72-75"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9833,
+     50.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C0602",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-008D",
+    "unit_name": "8th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-06",
+    "place_id": "PL0409",
+    "location_name": "Simpelveld, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "attached to the previously uncommitted XVI Corps to hold the Ninth Army's new sector to Roermond",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R516;R537;R001",
+    "source_locator": "R537: p. 136"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8311,
+     50.865
+    ]
+   },
+   "properties": {
+    "claim_id": "C0603",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-016C",
+    "unit_name": "XVI Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-06",
+    "place_id": "PL0398",
+    "location_name": "Valkenburg, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the previously uncommitted corps, with two divisions attached, holds the Ninth Army's new sector to Roermond",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -20,
+    "reference_ids": "R537;R546;R001",
+    "source_locator": "R537: p. 136"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3583,
+     49.8531
+    ]
+   },
+   "properties": {
+    "claim_id": "C0604",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-005D",
+    "unit_name": "5th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0410",
+    "location_name": "Bollendorf, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "makes the XII Corps main effort across the Sauer between Bollendorf and Echternach",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R535;R359;R002",
+    "source_locator": "R535: p. 99-103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4217,
+     49.8117
+    ]
+   },
+   "properties": {
+    "claim_id": "C0605",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0411",
+    "location_name": "Echternach, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "the attached 417th Infantry crosses the Sauer at Echternach to guard the right flank of the 5th Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R535;R528;R001",
+    "source_locator": "R535: p. 101-103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2879,
+     49.8775
+    ]
+   },
+   "properties": {
+    "claim_id": "C0606",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-080D",
+    "unit_name": "80th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0412",
+    "location_name": "Wallendorf, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "the division begins its Sauer attack at Wallendorf at 0300 on 7 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R535;R364;R002",
+    "source_locator": "R535: p. 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3986,
+     50.6325
+    ]
+   },
+   "properties": {
+    "claim_id": "C0607",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-078D",
+    "unit_name": "78th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-09",
+    "place_id": "PL0413",
+    "location_name": "Schwammenauel Dam, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "1st Battalion, 309th Infantry, attacks the Schwammenauel Dam at 1800; the discharge valves are already destroyed",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R534;R529;R001",
+    "source_locator": "R534: p. 81-83"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3093,
+     50.4068
+    ]
+   },
+   "properties": {
+    "claim_id": "C0608",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-069D",
+    "unit_name": "69th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL0414",
+    "location_name": "Mürringen, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "division in combat with V Corps near Elsenborn (CMH: entered combat 11 February 1945)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R526;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5733,
+     49.5747
+    ]
+   },
+   "properties": {
+    "claim_id": "C0609",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-094D",
+    "unit_name": "94th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-22",
+    "place_id": "PL0415",
+    "location_name": "Serrig, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "two regiments cross the Saar in assault boats at 0400; Serrig is secured that night",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R536;R371;R001",
+    "source_locator": "R536: p. 129-130"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2197,
+     51.0608
+    ]
+   },
+   "properties": {
+    "claim_id": "C0610",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-008D",
+    "unit_name": "8th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-27",
+    "place_id": "PL0416",
+    "location_name": "Hückelhoven, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "a combat command is alerted to cross the Roer on 27 February and take up the fight to the north",
+    "operation_id": "OP-GRENADE",
+    "operation": "Operation Grenade",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Grenade",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 1,
+    "reference_ids": "R516;R538;R001",
+    "source_locator": "R538: p. 172"
+   }
   }
  ]
 }

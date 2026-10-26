@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## sample-verification (26 October 2026)
+
+The review sample (40 claims, 20 command relations; `docs/review/sample.md`) was checked against the sources it cites, which the outside reviewer had not done. Documents and verdicts only; one commit each for the claims, the relations and the summary.
+
+- **Result.** Claims: 28 supported, 12 partly supported, 0 not supported, 0 unverifiable. Command relations: 10, 10, 0, 0. Five rows carry a severity 1 finding (claims S09 and S25, relations R04, R08, R11); the other `partly supported` rows are source gaps, boundary conventions or small inferred details. The results, the findings V-001 to V-018 (all PROPOSED, none applied), rough error rates by field and the method are in `docs/review/verification_results.md`.
+- **`docs/review/sample_claims.csv`, `sample_relations.csv`**: the `reviewer_verdict` and `reviewer_comment` columns are filled for all 60 rows. No other column changed; the draw is the same (seed 20261026).
+- **`scripts/review_sample.py`**: when it rewrites the sample files it keeps the verdict and comment of rows that are unchanged, and `--check` ignores the two columns (before, a hand-filled verdict would have made `--check` fail). The header text of `sample.md` says so. The draw, the counts block and the other columns are unchanged.
+- **`docs/review/verification_results.md`** (new), **`docs/review/README.md`** (file table), **`docs/review/checklist.md`** ("Sampled rows") and **`docs/review/responses.md`** (the "unreviewed" statement, and a section "Verification of the sample" with an index of the findings).
+- **Not changed**: data tables, schema JSON, vocabularies, the validator, `build/`.
+- **Not applied (waiting for the owner):** corrections of five places (PL0195, PL0306, PL0021, PL0314, PL0285), of the confidence of C0197 and C0198, and of the intervals CR0040, CR0087/CR0088 and CR0127; documents and references fixes; the convention for the start of a table-based interval. See the proposed split in `docs/review/verification_results.md`, section 5.
+
 ## review-actions (26 October 2026)
 
 The owner approved items 1 to 3 of the proposed order of work in `docs/review/responses.md` (item 4, the derived columns `position_interpretation` and `event_support`, is not approved and not built). One commit each.

@@ -9,7 +9,7 @@ Each finding that comes back from an outside review is recorded here with the de
 ### What the reviewer had and did not do
 
 - **Had:** a documentation packet (`docs/review/` with the brief, checklist, questions, findings template, the two sample files, `schema/README.md` and `docs/methodology.md`). Not the data tables, the machine-readable schema, the scripts or the validator.
-- **Did not:** check any of the 40 sampled claims or 20 sampled relations against their sources (the reviewer says so), gave no verdict counts, and ran none of the checks. **The sample is therefore still unreviewed**: 0 of 40 claims and 0 of 20 relations have a verdict, and nothing in this review certifies or contradicts the validator results, the counts or any source citation. The findings are design and documentation findings; they are not evidence that a row is wrong.
+- **Did not:** check any of the 40 sampled claims or 20 sampled relations against their sources (the reviewer says so), gave no verdict counts, and ran none of the checks. **The sample was therefore unreviewed when the review came back**: 0 of 40 claims and 0 of 20 relations had a verdict, and nothing in this review certifies or contradicts the validator results, the counts or any source citation. The sample was verified against the sources afterwards, on 26 October 2026 (section "Verification of the sample" below and [verification_results.md](verification_results.md)): 28 of 40 claims and 10 of 20 relations supported, 12 and 10 partly supported, none not supported or unverifiable. The findings are design and documentation findings; they are not evidence that a row is wrong.
 - **Overall view:** approves the design ("retain the overall architecture"; "refinements rather than a wholesale redesign"). Central concern: a set of sourced observations is not a continuous reconstruction, and a downstream user could read an inferred relation or a representative coordinate as a verified fact.
 
 ### Index
@@ -169,4 +169,38 @@ In short: **none of the reviewer's numbers is wrong.** They were read correctly 
 4. **Derived columns in `build/all_claims.csv`, only if the owner wants them:** `position_interpretation` (R1-F-003) and `event_support` (R1-F-002). Computed from existing fields; nothing stored in the claim files.
 5. **Deferred, with triggers:** relax the claim key (about ten exceptions, or before air and naval rows); the selective `claim_evidence` table (a real field-level conflict that cannot be split); structured `date_confidence`, `relationship_confidence` and a rename of `confidence` (not proposed); a position query with the five statuses (when a map or AI layer is planned); a dated names table, persons and appointments, air and naval tables.
 
-The reviewer's own order (command intervals, confidence, regression tests, location, all before 1945; missing observations before wider use; key, evidence, persons later) is close to this; the difference is that confidence and location are handled first as documentation and as derived output, because the data to support a stored change are mostly there already, and that the sample's source verification (the 40 claims and 20 relations nobody has yet checked) should happen before any of the design changes are made.
+The reviewer's own order (command intervals, confidence, regression tests, location, all before 1945; missing observations before wider use; key, evidence, persons later) is close to this; the difference is that confidence and location are handled first as documentation and as derived output, because the data to support a stored change are mostly there already, and that the sample's source verification (the 40 claims and 20 relations nobody had checked) should happen before any of the design changes are made. (Items 1 to 3 were carried out first, as the owner decided, and the verification was made after them. None of the three changes a claim, a place or a relation value, so the verification is not affected; see the section "Verification of the sample" below.)
+
+## Verification of the sample (26 October 2026)
+
+The 40 sampled claims and 20 sampled relations were checked against their cited sources, with the questions of [checklist.md](checklist.md) and the verdict words of [findings_template.md](findings_template.md). The full results (a table of every row, the findings, rough error rates by field, the method and the one source that needed a fallback) are in [verification_results.md](verification_results.md); the verdicts and one-line comments are in the `reviewer_verdict` and `reviewer_comment` columns of the two sample files. No data table, schema file, vocabulary or validator was changed.
+
+| | supported | partly supported | not supported | unverifiable |
+|---|---:|---:|---:|---:|
+| claims (40) | 28 | 12 | 0 | 0 |
+| command relations (20) | 10 | 10 | 0 | 0 |
+
+- **No row is contradicted outright; five have a severity 1 finding** (claims S09 and S25, relations R04, R08, R11) and two more a severity 2 finding on a point or a confidence level (S10, S23). The other 15 `partly supported` rows are source gaps (the value looks right but a cited source does not show it, or the source that does is not cited), boundary conventions of relation intervals, or a small inferred detail.
+- **Where the problems are.** A claim is wrong in a stored value in about 4 of 40 cases (the place, from a geocoder hit, twice; the confidence level, twice); the date, unit, event type and commander were never wrong. A command relation always has the right parent and type; 7 of 20 intervals start or end on a date that differs from the table or the source. These are rates in a seeded, stratified sample of 40 and 20, with wide intervals; they are not rates for the dataset.
+- **Outside the sample.** Five places whose coordinates come from a geocoder lie far from the town they name or outside their precision (two of them are the sample's S23 and S25, three are not in the sample: PL0021 Auw, PL0314 St Anthonis, PL0285 Pont Herbert); one more (PL0043 Boinville) is unresolved.
+- **Relation to review 1.** Findings V-013 and V-014 (the start of an interval taken from the table row in force at the first claim; an interval split where only the wording of the relationship changes) are cases of R1-F-001, now with sampled examples. They stay open under that finding.
+
+### Index of the verification findings
+
+| finding | table | severity | what | status |
+|---|---|---|---|---|
+| V-001 | claims | 1 error | S09 C0197: approximate date, confidence 0.7 (rubric 0.3) | PROPOSED, waiting for the owner |
+| V-002 | claims | 2 weak | S10 C0198: place not in a cited source, confidence 0.7 | PROPOSED |
+| V-003 | places | 2 weak | S23 PL0195: point probably wrong by tens of km | PROPOSED |
+| V-004 | places | 1 error | S25 PL0306: point 4 km off, department label | PROPOSED |
+| V-005, V-006, V-010 | claims, relations | 2 weak | commander or relationship not in a cited source (S13, S17, S20, S21, S24, S33, R06) | PROPOSED (references only) |
+| V-007 | claims | 4 suggestion | S02, S06: inferred wording | PROPOSED |
+| V-008 | relations | 1 error | R04 CR0040: interval one day after the source | PROPOSED |
+| V-009 | relations | 2 weak | R05 CR0041: end is a placeholder before the next claim | PROPOSED |
+| V-011 | relations, build | 1 error | R08: build keeps VII Corps for the 82nd Airborne 19 June to 12 July | PROPOSED (changes `build/command_relations.csv`) |
+| V-012 | relations | 1 error | R11 CR0127: starts a day before the table | PROPOSED |
+| V-013, V-014 | relations | 3 design | start taken from the table row in force; split by wording | PROPOSED (a design decision) |
+| V-015 to V-017 | places | 1 error | PL0021, PL0314, PL0285: points 120, 127 and 27 km from the named town (not sampled) | PROPOSED |
+| V-018 | scripts | 4 suggestion | a coordinate comparison in `check_coordinates.py` | PROPOSED |
+
+Nothing in this table has been applied. Each data correction needs the owner's approval and the source named in [verification_results.md](verification_results.md); documents and references fixes can be made without changing a value.

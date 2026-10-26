@@ -17,6 +17,7 @@ Your findings are checked against the sources before anything changes; they are 
 | [questions.md](questions.md) | ten design questions on which an outside view is most wanted |
 | [findings_template.md](findings_template.md) | the format of a finding, and the response protocol |
 | [responses.md](responses.md) | our recorded responses to findings (empty until a review comes back) |
+| [verification_results.md](verification_results.md) | our own source verification of the sample: verdicts, findings, rough error rates by field |
 | `earlier_reviews.md` (GitHub repository only) | an index of the notes from earlier review passes (history; not needed for this review) |
 
 **Suggested paths.** About one hour: this brief, `schema/README.md`, ten sampled claims and five sampled relations, then the questions. About half a day: the whole checklist, the full sample, and the validator and audits run locally.

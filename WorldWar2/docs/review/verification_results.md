@@ -1,0 +1,67 @@
+# Source verification of the review sample
+
+The 40 claims (S01 to S40) and 20 command relations (R01 to R20) of [sample.md](sample.md) were checked against the sources they cite, following [checklist.md](checklist.md), "Sampled rows", with the verdict words of [findings_template.md](findings_template.md). The checks were made on 26 October 2026 with each source opened that day. The verdicts and one-line comments are also in the `reviewer_verdict` and `reviewer_comment` columns of [sample_claims.csv](sample_claims.csv) and [sample_relations.csv](sample_relations.csv). No data table, schema file, vocabulary or validator was changed by this check; every correction below is a proposal (PROPOSED) that waits for the owner.
+
+## 1. What was checked, and how
+
+**Claims.** For each claim the cited references (`reference_ids`, with `source_locator`) were opened and read at the passage named. Each of the seven checklist items was marked ok, not shown by the cited sources ("uncovered"), or wrong: unit, date, event (the `event_type` and `current_activity`), place (the name, and the point against `precision_km`), commander and command relationships, support (does every cited source support something, is any fact unsupported by all), and confidence recomputed from the rubric in `schema/vocabularies.json`.
+
+**Relations.** For each relation the cited pages and tables were read for the higher unit, the relationship, the start and the end, and the evidence claims (`evidence_claim_ids`) were read to see that they state what the table says. The start and end `basis`, `end_unknown` and `change_undated` were compared with what the sources show.
+
+**Verdict rule.** `supported`: every checked item holds in the cited sources (or in a source that the row's own notes name and that was opened and read). `partly supported`: at least one item fails, or is not shown by any of the cited sources, while the others hold; the comment says which item. `not supported`: a source contradicts the row. `unverifiable`: no cited source could be opened, or none covers the claim at all. A row whose single weak item was a detail that a notes-named source settles was kept `supported` and the comment says so ("citation note"); a row where the settling source is cited nowhere on the row, or where the cited source disagrees, is `partly supported` (class source gap).
+
+**Independent checks.** Where a cited source did not cover an item, one further source was opened to see whether the stored value is right (for example a Wikipedia commander list, the Center of Military History unit page, or place coordinates). That result is recorded as part of the finding and does not change the verdict of the row.
+
+**How a command-relation table was read.** The CMH ETO-OB assignment tables have one row per date with the corps, the army to which it is assigned or attached, and the army group; "(-)" means relieved. A date in a table row is taken as the first day of the entry. A relation that starts on the date of the table row "in force at the unit's first claim", rather than the date the entry began, was marked as a start that differs from the table (the dataset's own rule; see V-013 in the findings).
+
+**Deviation from the checklist.** The checklist says `unverifiable` for a source that "does not cover" the claim. That word was used only for a row where nothing in the sources covers the claim. A source that covers most items but not one of them gives `partly supported`, because the other items could be checked; this is why `unverifiable` is 0 although some items are marked as not shown. An item that was settled only in a source that the row does not cite is described as a source gap in the findings.
+
+**Who checked.** One checker made all 60 verdicts; no second person has read them. The verdicts, the quotations and the page locators are in the comment columns and in the table below, so each can be re-checked.
+
+## 2. Claims: all 40 rows
+
+Columns: sample id, claim id, unit and date, verdict, comment (also in `sample_claims.csv`). Source gap: the value looks right but is not in a cited source.
+
+| id | claim | unit, date | verdict | comment |
+|---|---|---|---|---|
+| S01 | C0001 | CAN-ARM-002B, 1944-06-06 | supported | R050: 'brigade's three regiments landed in Normandy on D-Day'; R008: Juno 6 June, Brigadier Wyman. R137/R141 do not name the brigade (context only). |
+| S02 | C0048 | CAN-INF-003D, 1944-06-08 | partly supported | 12th SS position between Authie and Carpiquet on 8 June is supported (R449 p. 347-348); neither cited source puts the 3rd Canadian Division in an attack that day. Activity and event type inferred. |
+| S03 | C0010 | GER-LL-091D, 1944-06-06 | supported | R102: Falley 'KIA' 6 June, Klosterkemper 6-10 June, then König; R448 p. 292: 'Falley on his return was killed by paratroopers'. Date, place, commander and successor match. |
+| S04 | C0012 | GER-COR-084C, 1944-06-06 | supported | R132: 'stationed in Saint-Lô'; Marcks corps commander to 12 June; R448 p. 297 'General Marcks at LXXXIV Corps headquarters'. All fields match. |
+| S05 | C0035 | GER-KG-265, 1944-06-07 | supported | R449 p. 3: 265th move 'canceled on 7 June'; R448: XXV Corps to prepare Kampfgruppen of the 275th and 265th; R446 names the Pretot area. All fields match. |
+| S06 | C0081 | GER-COR-084C, 1944-06-12 | partly supported | R446/R115/R132 give Marcks's death on 12 June and Fahrmbacher as successor. The 'that evening' detail in the commander field is in none of the three sources. |
+| S07 | C0089 | GER-SSPG-017D, 1944-06-13 | supported | R449 p. 378-379: 'With the guns in position on the morning of 13 June, Ostendorff attacked ... at about 0630'; R109: Manoir de Donville, 13 June. All fields match. |
+| S08 | C0159 | GER-INF-709D, 1944-06-26 | supported | R446: 'With the surrender of General Schlieben on 26 June and of his deputy, General Sattler, the following day, all organized resistance in Cherbourg ceased'. 29 June alternate is the harbour forts (R112). |
+| S09 | C0197 | GER-INF-243D, 1944-06-29 | partly supported | Unit, event, place and commander match R043/R446; neither gives a 29 June date for the 243rd. The note calls the date approximate, so the rubric level is 0.3, not the 0.7 recorded. |
+| S10 | C0198 | GER-KG-WEIDINGER, 1944-06-29 | partly supported | R140 note [h]: 'On 29 June the battlegroup was transferred to II SS Corps'; Weidinger named. Neither source names Grainville-sur-Odon, yet confidence is 0.7 (rubric: exact location, authoritative source). |
+| S11 | C0204 | GER-ARMY-007A, 1944-06-29 | supported | R120: 'Died 29 June 1944 ... Le Mans'; Rundstedt and Dollmann summoned 28 June. Alternate row, 0.5 within the cap. R120 does not say HQ was at Le Mans. |
+| S12 | C0044 | UK-COR-030C, 1944-06-07 | supported | R449: 56th Brigade 'entered Bayeux and by noon had cleared the city' (7 June), Port-en-Bessin about 1600; R141 XXX Corps plan, Bucknall. Corps attribution is by organisation, not CMH text. |
+| S13 | C0055 | UK-INF-051D, 1944-06-08 | partly supported | R013: 'not until D+7 (8 June) that all of the 51st (Highland) Division was ashore' (D+7 is the page's slip). Landing via Juno and Bullen-Smith are not in R013; Wikipedia 51st Division confirms Bullen-Smith. |
+| S14 | C0069 | UK-ABN-006D, 1944-06-10 | supported | R141: 'On 10 June, German tanks and infantry made several attacks on the 6th Airborne Division'; R142: Gale, bridgehead expansion decided 10 June. All fields match. |
+| S15 | C0110 | UK-ABN-006D, 1944-06-14 | supported | R142: 'The division retained control of the area between the Rivers Orne and Dives until 14 June, when the 51st (Highland) Infantry Division took over'; Gale. 0.5 right for a sector point. |
+| S16 | C0146 | UK-AG-021G, 1944-06-22 | supported | R378: location 'kept secret until he left for another HQ in Blay, on 22 June 1944'; R376: Creullet 7 to 22 June. Disputed row capped at 0.5. |
+| S17 | C0165 | UK-ARM-004B, 1944-06-26 | partly supported | R139: 4th Armoured Brigade 'although attached to the 11th Armoured Division, was restricted to operations between the Odon and Orne'. Currie is not in R139; Cheux is only the Scottish Division's objective there. |
+| S18 | C0178 | UK-INF-059D, 1944-06-27 | supported | R008: '59th (Staffordshire) Infantry Division 27 June ? Major General Lewis Lyne'; R145: disbanded August 1944. Beach unverified, 0.3 correct. |
+| S19 | C0205 | UK-ARM-011D, 1944-06-29 | supported | R139: 29th Armoured Brigade withdrawn north across the Odon after dark; 159th Brigade under the 15th (Scottish) Division; R446 II SS Panzer Corps attack 29 June. All fields match. |
+| S20 | C0086 | US-INF-001D, 1944-06-12 | partly supported | R141 footnote: 'The 1st US Infantry Division took part of the town on 12 June and the remainder the following day'. Huebner is not in R141 (he is on the CMH page R343). |
+| S21 | C0181 | US-ARMY-001A, 1944-06-27 | partly supported | R446: 'all organized resistance in Cherbourg ceased' after Schlieben (26 June) and Sattler (27 June); Bradley with Collins. 21st Army Group operational control is in neither R446 nor R112. |
+| S22 | C0468 | US-INF-083D, 1944-07-29 | supported | R366: 'Feugeres' CP 28-29 Jul; Macon from 1 Jun 1944; table '15 Jul 44 VIII Third First'. All fields match. |
+| S23 | C0342 | US-INF-001D, 1944-08-07 | partly supported | R343: '7 Aug Logis de la Bocage (vic)' and table '1 Aug 44 VII First 12th' match. The point is a Nominatim hit for 'Le Vieux Logis, Sartilly', 21 km west of Brecey (1 Aug CP): probably wrong by tens of km. |
+| S24 | C0505 | US-COR-012C, 1944-08-07 | partly supported | R398: 'part ... reached Normandy on 29 July, the remainder on 7 August'; R475: 'Aug. 7, 1944 Ducey-les-Chéris'. R475 gives Eddy from 1 Aug (Wikipedia: Cook to 18 Aug); Third Army assignment not in R398. |
+| S25 | C0474 | US-INF-090D, 1944-08-15 | partly supported | R370: '15 Aug Sees' (CMH spelling), McLain from 30 Jul, table '1 Aug 44 XV Third - 12th' match. PL0306 is a Nominatim building (Pôle du Pays de Sées), about 4 km from Sées town, labelled Sarthe (Sées is in Orne). |
+| S26 | C0432 | US-INF-035D, 1944-08-24 | supported | R350: '24 Aug Courtenay (5 km W)'; Baade from 26 May; table '13 Aug 44 XII Third - 12th'. Town point with vicinity qualifier fits. |
+| S27 | C0213 | US-ABN-018C, 1944-08-25 | supported | R157: 'became the XVIII Airborne Corps on 25 August 1944 at Ogbourne St. George'; Ridgway; 'part of the newly created First Allied Airborne Army'. All fields match. |
+| S28 | C0254 | US-ARM-004D, 1944-08-25 | supported | R405: CCA 'drove forty miles to the outskirts of Troyes on the morning of 25 August' and attacked; Wood. The CMH table behind the army relations ('13 Aug 44 XII Third 12th') is not in this claim's references. |
+| S29 | C0510 | US-ARM-002D, 1944-08-28 | supported | R409 p. 672: 2d Armored 'crossed the Seine on 28 August'; XV Corps 'continued in command' until XIX Corps at noon 29 August; R347 table 28 Aug XV, 29 Aug XIX. All fields match. |
+| S30 | C0388 | US-INF-026D, 1944-09-07 | supported | R344: '7 Sep 44 Valognes Staging Area', Paul from 7 Sep, table '5 Sep 44 III Ninth 12th'; R166 confirms 7 Sep landing. CMH's '19 Sep Arrived Continent' is a recorded difference. |
+| S31 | C0410 | US-INF-029D, 1944-09-21 | supported | R346: '19 Sep 44 Kerdivichen (1 mi SW)', table '21 Sep 44 XIX First 12th', Gerhardt. Point is the CP two days earlier, as the row says. |
+| S32 | C0293 | US-ARMY-003A, 1944-09-29 | supported | R417 p. 268: 'the headquarters of the army at Etain' on 29 September with Eisenhower and Patton. Fields match; 12th Army Group link is implied, not tabled. |
+| S33 | C0516 | US-AG-006G, 1944-10-02 | partly supported | R487: 'Oct. 2, 1944 Dompaire'; Devers from 29 Jun 1944. The SHAEF operational-control entry cites a G-3 report that is not among the references (Wikipedia '6th Army Group' confirms 15 September). |
+| S34 | C0532 | US-COR-013C, 1944-11-08 | supported | R434 p. 401: 'General Gillem's XIII Corps on 8 November took over defense of the seventeen-mile line west of Geilenkirchen'; R476: Tongres 26 Oct. 0.3 right. |
+| S35 | C0539 | US-COR-003C, 1944-12-04 | supported | R417 p. 299: III Corps 'assigned to the Third Army' on 10 October; R368 table '4 Dec 44 III Third'; R471 Gravelotte 8 Dec. All fields match. |
+| S36 | C0564 | US-COR-003C, 1944-12-18 | supported | R391 p. 509: 'Bradley and Patton agreed to move the new III Corps headquarters ... from Metz to Arlon' (night of 18 December); Millikin. Third Army link is in R417 (not cited here). |
+| S37 | C0519 | US-ARMY-001A, 1944-12-19 | supported | R388 p. 423: HQ 'moved on the 19th from Spa to Chaudfontaine'; R386 p. 343 agrees. 12th Army Group link is in R398 (not in this claim's references). |
+| S38 | C0553 | US-ABN-101D, 1944-12-19 | supported | R384 p. 308: 'By 0900 on 19 December McAuliffe had all four regiments in hand'; R460: Bastogne 19 Dec; turned over to Middleton; R336 table 17 Dec. All fields match. |
+| S39 | C0559 | US-COR-012C, 1944-12-19 | supported | R390 p. 487: XII Corps 'to disengage at once' and move CP 'to Luxembourg City'; R475: Luxembourg 23 Dec. Order, not arrival, as the row says. |
+| S40 | C0555 | US-ABN-101D, 1944-12-21 | supported | R389 p. 458: 'by daylight on the 21st the German infantry ... were ensconced on both the main roads running from Bastogne south'; R460 Bastogne. Third Army attachment from 20 Dec is narrative; cited table says 17 Dec. |
+

@@ -15,7 +15,7 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         the evidence, this table is an interpretation (see schema/README.md, "Validity of a relationship")
   data/references.csv                   the references table (one row per distinct source cited; derived from the claims and
                                         data/references_meta.csv by scripts/build_references.py, which build.py calls)
-  build/claim_references.csv            claim_id -> reference_id links (role source | coordinates | strength; locator = URL fragment)
+  build/claim_references.csv            claim_id -> reference_id links, one row per link and role (role event | date | location | command_relationship | strength | general; locator = page or section), built from the claims' stored reference_ids
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
 Do not hand-edit anything in build/: edit data/claims/ and re-run this script.
@@ -36,7 +36,7 @@ import operations  # noqa: E402
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'location_name', 'location_represents', 'precision_km', 'confidence',
              'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
-             'location_temporal_offset_days']
+             'location_temporal_offset_days', 'reference_ids', 'source_locator']
 DERIVED = ['operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'operation_path']   # appended to all_claims.csv from data/operations.csv
 NUMERIC = {'precision_km', 'confidence', 'location_temporal_offset_days'}
 

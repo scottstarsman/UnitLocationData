@@ -125,6 +125,10 @@ The combined outputs in `build/` (`all_claims.csv`, `claims.geojson`) are commit
 
 Done: `data/operations.csv` (36 rows: the Overlord umbrella, 9 campaigns of which 6 are CMH streamers, 12 operations, 12 battles and 2 phases), `operation_relations.csv`, `operation_exceptions.csv`, `operation_id` on every claim, derived `campaign` / `operation_name` / `sub_operation_name` / `operation_path` in `build/all_claims.csv`, validator rules. Open points: the operation boundaries listed in [`review/operations_backfill.md`](review/operations_backfill.md) (Cobra placement, Overlord end date, Cherbourg window, Brittany and Brest end dates, derived Pursuit dates, Bulge end date, Aachen and Siegfried Line start dates); 20 claims left on a campaign because no operation row fits (Le Mans, Loire, Seine, Alsace, early Pursuit and Roer rows); rows for the Hedgerows, Hurtgen Forest, Colmar Pocket, Nordwind and the Central Europe operations once claims need them; a `claim_operations` link table only if a claim is found that belongs to two operations at once (none yet).
 
+## Claim-to-reference links stored on claims (26 October 2026)
+
+Done: `reference_ids` and `source_locator` on every claim (566 claims; 158 with a locator taken from URL page fragments), `data/claim_reference_roles.csv` (619 rows: 564 location, 21 strength, 20 command_relationship, 12 date, 2 event; every other link is `general`), `source_family` on every reference, validator checks (ids exist, one reference per claim, URL citations resolve to the stored ids, role rows match the links, two source families at confidence 0.9 as a warning) and `scripts/migrate_claim_references.py`. Next: add roles by hand while checking sources (only 70 notes name what a source supports, so most links are `general`); add page numbers for the 408 claims without a locator when a source is next read; consider promoting the 0.9 family rule to an error after the next batch, and a rule that confidence 0.7 needs a second family (115 + 240 claims at 0.7 and 0.5 currently rest on one non-geocoder family).
+
 ## Open design questions
 
 - Per-day interpolation versus pure event rows (currently pure events).

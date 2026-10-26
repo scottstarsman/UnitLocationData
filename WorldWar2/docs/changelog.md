@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## corps-xxii-xxiii: documents for the XXII and XXIII Corps task (26 October 2026)
+
+Last commit of the task. **Documents:** `docs/roadmap.md` (status line, placeholder count 8 to 6 US units, Batch 4 open point 3 now points to the new section, new section "XXII and XXIII Corps" with what is left for Batch 5), `README.md` and `docs/HANDOFF.md` (status counts: 646 claims, 135 active units, 477 relations, 441 places, 559 references; next free ids `C0647`, `CR0479`, `PL0448`, `R566`, `G018`; the validator line). No data changed. Old values to new values: README and HANDOFF claims 641 to 646, active units 133 to 135, placeholders 223 to 221, relations 470 to 477, evidence links 1,289 to 1,298, places 438 to 441, references 550 to 559, preferred claims 621 to 626, validator line `133 claim files, 641 claims` to `135 claim files, 646 claims`; reason: the data commit of this task. A spot check of five claims and the new relations against sources not used to write them is recorded with the review notes (`spot_check_corps_xxii_xxiii.md`); it led to one change that is already in the data commit (the 82nd Airborne relation `attached`, see above).
+
 ## corps-xxii-xxiii: XXII and XXIII Corps claims and command relations (26 October 2026)
 
 Data commit of the XXII/XXIII Corps task (approved by Scott on 26 October 2026; branch `corps-xxii-xxiii`, based on `batch4-jan-mar-1945`). US corps headquarters, 1 January to 31 March 1945 milestone pass (the corps' earlier months in Britain are not placed by any source read). **5 claims added** (`C0642` to `C0646`: four for XXII Corps, one for XXIII Corps), all for units new to the claim files.

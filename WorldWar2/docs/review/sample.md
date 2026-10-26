@@ -373,7 +373,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.7
 - **Activity:** division command post at Feugeres
 - **Place:** Feugeres, Manche (`PL0142`, Lower Normandy, FR); point 49.1512, -1.3197; precision 3 km; point represents: headquarters; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Feugeres, Manche, France)
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-008C from 1944-07-15; assigned US-ARMY-003A from 1944-07-15; attached US-ARMY-001A from 1944-07-15
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-008C from 1944-07-15; assigned US-ARMY-003A from 1944-04-04; attached US-ARMY-001A from 1944-07-15
 - **Notes:** CMH ETO-OB lists the command post at Feugeres, Manche on this date.
 - **Sources cited** (the claim's own locator: none):
 
@@ -388,7 +388,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.3
 - **Activity:** division command post at Logis de la Bocage
 - **Place:** Logis de la Bocage, Manche (`PL0195`, Lower Normandy, FR); point 48.6775, -1.0200; precision 25 km; point represents: headquarters; qualifier: vicinity; coordinate source: Stand-in point, not the site: the CMH lists the 1st Infantry Division command post on 4 and 7 August 1944 only as "Logis de la Bocage (vic), Manche" and no gaze [...]
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-007C from 1944-08-01; assigned US-ARMY-001A from 1944-08-01; assigned US-AG-012G from 1944-08-01
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-007C from 1944-08-01; assigned US-ARMY-001A from 1943-11-01; assigned US-AG-012G from 1944-08-01
 - **Notes:** CMH ETO-OB lists the command post at vicinity of Logis de la Bocage, Manche on this date. CMH gives the CP only as a vicinity of the town. [Review (V-003): the CMH names the place but gives no site, and the earlier point (a house in Sartilly, about 21 km west of Brécey) was out of the division's sequence. The point is now a stand-in: Juvigny-le-Tertre (Wikipedia en), the place of the division command post listed on 3 August ("Juvigny (vic west)"), four days earlier. location_basis is nearest_earlier_command_post (location_date 1944-08-03), precision_km 10 -> 25 and confidence 0.5 -> 0.3 (rubric: a CP point 3 to 5 days away). The command post of 7 August itself is not located.]
 - **Sources cited** (the claim's own locator: none):
 
@@ -420,7 +420,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.7
 - **Activity:** division command post at Sees
 - **Place:** Sées, Orne (`PL0306`, Lower Normandy, FR); point 48.6034, 0.1735; precision 3 km; point represents: headquarters; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Sées, Orne, France); Wikipedia (en) Sées 48.6053, 0.1719 agrees (0.3 km)
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-015C from 1944-08-01; assigned US-ARMY-003A from 1944-08-01; assigned US-AG-012G from 1944-08-01
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-015C from 1944-08-01; assigned US-ARMY-003A from 1944-03-05; assigned US-AG-012G from 1944-08-01
 - **Notes:** CMH ETO-OB lists the command post at Sees, Sarthe on this date. [Review (V-004): latitude and longitude moved from the building Pôle du Pays de Sées (about 4 km south-east of the town, outside the 3 km precision) to the town centre of Sées; the place is now named "Sées, Orne" (the CMH list gives "Sees, Sarthe", but Sées is in the department of Orne, as the CMH list of the 5th Armored Division also gives: "Sees (vic) Orne"); nothing else changed.]
 - **Sources cited** (the claim's own locator: none):
 
@@ -435,7 +435,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.5
 - **Activity:** division command post at Courtenay
 - **Place:** Courtenay, Loiret (`PL0105`, Centre, FR); point 48.0394, 3.0619; precision 10 km; point represents: headquarters; qualifier: vicinity; coordinate source: R002: OpenStreetMap Nominatim (Courtenay, Loiret, France)
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-08-13; assigned US-AG-012G from 1944-08-01
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-012C from 1944-08-13; assigned US-ARMY-003A from 1944-04-26; assigned US-AG-012G from 1944-08-01
 - **Notes:** CMH ETO-OB lists the command post at vicinity of Courtenay, Loiret on this date. CMH gives the CP only as a vicinity of the town.
 - **Sources cited** (the claim's own locator: none):
 
@@ -484,7 +484,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `command_change` / `OP-PURSUIT`; status preferred; confidence 0.5
 - **Activity:** crossing the Seine into the Mantes bridgehead under XV Corps command
 - **Place:** Mantes-Gassicourt bridgehead area (Seine), Yvelines (`PL0207`, Ile-de-France, FR); point 48.9908, 1.7172; precision 10 km; point represents: sector_center; qualifier: -; coordinate source: R001: Wikipedia (en): Mantes-la-Jolie
-- **Command relationships stated by the claim:** operational_control US-COR-015C from 1944-08-28; assigned US-ARMY-001A from 1944-08-28; assigned US-AG-012G from 1944-08-28
+- **Command relationships stated by the claim:** operational_control US-COR-015C from 1944-08-28; assigned US-ARMY-001A from 1943-11-24; assigned US-AG-012G from 1944-08-28
 - **Notes:** Event date: Breakout-31 p672: the 2nd Armored Division crossed the Seine on 28 August to protect the left flank of the Mantes-Gassicourt bridgehead, where XV Corps continued in command until noon on 29 August; the CMH assignment table lists XV Corps from 28 August. Event definition: temporary XV Corps operational control of the division inside the bridgehead between two periods under XIX Corps (C0509, C0511); it is not a change of assignment. The Army entries come from the CMH table (First Army assigned). Relationship: the table's corps column is single and does not say assigned or attached; the narrative shows a one-day command, so XV Corps is operational_control from 28 to 29 August and th [...]
 - **Sources cited** (the claim's own locator: R409: p. 672):
 
@@ -500,7 +500,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `arrival` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.7
 - **Activity:** arriving on the Continent
 - **Place:** Valognes Staging Area, Manche (`PL0360`, Lower Normandy, FR); point 49.5091, -1.4706; precision 5 km; point represents: headquarters; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Valognes, Manche, France)
-- **Command relationships stated by the claim:** unspecified_subordination US-COR-003C from 1944-09-05; assigned US-ARMY-009A from 1944-09-05; assigned US-AG-012G from 1944-09-05
+- **Command relationships stated by the claim:** unspecified_subordination US-COR-003C from 1944-09-05; assigned US-ARMY-009A from 1944-08-24; assigned US-AG-012G from 1944-08-28
 - **Notes:** Event date: 7 September 1944 is kept: the CMH command and staff table dates every command appointment to 7 September, CMH lists the CP at the Valognes staging area on that date, and the division history (EUCMH, from the division record) says the division landed at Cherbourg and Utah Beach on 7 September as the first convoy direct from the United States. The CMH chronology table gives "Arrived Continent (D+105)", 19 September 1944 (D+105 is 19 September, so the figure is internally consistent): it appears to be a separate CMH event definition, probably the date the division closed in the staging area, and is not corroborated elsewhere. Location: Valognes is the CMH-listed staging area; the co [...]
 - **Sources cited** (the claim's own locator: none):
 

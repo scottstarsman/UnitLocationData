@@ -50,6 +50,7 @@ python scripts/check_coordinates.py    # warnings only; add --geocode (network, 
 python scripts/build.py
 git diff --stat build/        # build outputs must be committed with your change
 python scripts/build.py --check
+python scripts/build_references.py --check-links   # optional, network: re-check reference URLs (writes link_status into data/references_meta.csv; rerun build.py after)
 python scripts/audit_command_location.py   # review prompts: command and location-date patterns
 python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim temporal checks (overlaps, undated transfers, sequences recorded as conflicts); add --out FILE for a markdown report
 ```
@@ -66,7 +67,8 @@ python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim t
 - [ ] `python scripts/audit_temporal_relationships.py` was run and any finding that involves a new or changed row was checked against the source (a finding is a prompt, not an error; say in the pull request which are real and which are expected patterns).
 - [ ] Every new row has a `campaign` (CMH streamer by date); `operation_name` is blank outside a named operation's dates.
 - [ ] The per-row review checklist above was applied to every new or changed row (a second person checks 15 rows or 10% of a large batch, chosen by risk as described in `docs/methodology.md`).
-- [ ] `python scripts/build.py` was run and the `build/` changes are committed.
+- [ ] Every new source URL has a row in `data/references_meta.csv` (`python scripts/build_references.py --seed` adds a skeleton to edit; `validate.py` fails without it).
+- [ ] `python scripts/build.py` was run and the `build/` changes (including `data/references.csv`) are committed.
 - [ ] New vocabulary values (if any) are documented in `schema/vocabularies.json` and `schema/README.md`.
 - [ ] Confidence and precision follow the rubric in `docs/methodology.md`.
 

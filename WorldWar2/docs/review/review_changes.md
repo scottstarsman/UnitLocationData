@@ -1705,3 +1705,17 @@ C0563, C0553, C0554, C0555 (101st sequence); C0546 (VIII Corps); C0560 (84th); C
 - The 101st Airborne Division has no rows for 21 September to 16 December 1944 (Holland, return to Mourmelon); five German parent changes in June 1944 are undated; G012 (4th Armored landing date and event type) needs a source check.
 - C0560's location for the 20th is a next-day command post; no source places the division headquarters on the 20th.
 - Batch 4 is not started.
+
+## References table (25 October 2026)
+
+`data/references.csv` was added: one row per distinct source cited by the claims, the unit table and `strength_json` (486 references), with link, type, licence, claim count and the result of an HTTP check of every URL. It is derived by `scripts/build_references.py` from the claims and the hand-maintained `data/references_meta.csv`; `build/claim_references.csv` and `build/unit_references.csv` link each claim and unit to its references. `scripts/validate.py` now fails when a cited URL or unit source token has no metadata row. The claims schema is unchanged.
+
+The link check found four URLs that needed attention. Each was fixed with a page from the same source; no claim's date, place or confidence changed.
+
+| claim(s) | cited URL | problem | replacement |
+|---|---|---|---|
+| C0339, C0373 | `en.wikipedia.org/wiki/Battle_of_Arnaville` | no such article (404) | `en.wikipedia.org/wiki/5th_Infantry_Division_(United_States)`, which states that a Moselle bridgehead was secured at Dornot and Arnaville and that the 10th Infantry's crossing at Arnaville succeeded; the Green Book page (Lorraine-3 p147) remains the dated source |
+| C0506 | Wayback copy of `ETO-OB/1ID-ETO.htm` | not archived (404); a mistyped file name | `ETO-OB/1ID-eto-ob.htm`, the 1st Infantry Division page that the division's other rows already cite |
+| C0217, C0481 | `http://cgsc.contentdm.oclc.org/u?/p4013coll8,387` | the old http link timed out | `https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/387`, the same item ("82nd Airborne Division: Operation Market: historical data", CGSC World War II Operational Documents) |
+
+Status at the check: 478 reachable, 7 refuse automated requests (403: history.army.mil, the Wayback copy of the 7th Armored Division page, actu.fr, Ouest-France, army.mod.uk, TracesOfWar, Warfare History Network), 1 unreachable from the box (`pattonthirdarmy.com`, timeouts). A 403 means the server refuses scripts, not that the page is missing.

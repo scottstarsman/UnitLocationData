@@ -376,6 +376,58 @@ def check_command_relationships(where, row, units, vocabs):
         err(where, 'units.csv parent_unit_id %s must appear as an organic entry in command_relationships' % u['parent_unit_id'])
 
 
+REFERENCE_TYPES = {'official_history', 'unit_history', 'assignment_table', 'reference_compilation', 'encyclopedia', 'gazetteer_geocoder',
+                   'monument_or_memorial', 'archive_document', 'news_or_web_article', 'other'}
+
+
+def check_references():
+    """Every cited URL (claims.source, units.formed_date_source), unit source token and strength source maps to a row of
+    data/references_meta.csv; the metadata rows are well formed. (build.py --check verifies data/references.csv itself.)"""
+    import build_references as br
+    where = 'data/references_meta.csv'
+    if not os.path.isfile(br.META_CSV):
+        err(where, 'missing (see scripts/build_references.py)')
+        return
+    header, meta = br.read_meta()
+    if header != br.META_HEADER:
+        err(where, 'header %s != %s' % (header, br.META_HEADER))
+        return
+    seen_id, seen_url = set(), set()
+    for i, m in enumerate(meta, start=2):
+        w = '%s line %d' % (where, i)
+        if not re.fullmatch(r'R\d{3,}', m['reference_id']):
+            err(w, 'reference_id %r is not R### ' % m['reference_id'])
+        if m['reference_id'] in seen_id:
+            err(w, 'duplicate reference_id %s' % m['reference_id'])
+        seen_id.add(m['reference_id'])
+        if m['url']:
+            if m['url'] in seen_url:
+                err(w, 'duplicate url %s' % m['url'])
+            seen_url.add(m['url'])
+            if br.norm_url(m['url'])[0] != m['url']:
+                err(w, 'url is not normalised (no fragment; www.ibiblio.org): %s' % m['url'])
+            if not re.match(r'https?://', m['url']):
+                err(w, 'url is not http(s): %s' % m['url'])
+        else:
+            err(w, 'url is empty')
+        for f in ('short_title', 'full_citation', 'source_type', 'publisher', 'license_or_status', 'reliability_note', 'used_for'):
+            if not m[f].strip():
+                err(w, '%s is empty' % f)
+        if m['source_type'] not in REFERENCE_TYPES:
+            err(w, 'source_type %r not one of %s' % (m['source_type'], sorted(REFERENCE_TYPES)))
+        if m['link_status'] not in ('', 'ok', 'blocked_403', 'not_found', 'error', 'unchecked'):
+            err(w, 'link_status %r' % m['link_status'])
+        if m['link_status'] == 'not_found':
+            warn(w, '%s was not found at the last link check: replace it with a working URL from the same source' % m['url'])
+    _c, _u, stats, missing, _m = br.derive()
+    for k, first in sorted(missing.items()):
+        err('citation', '%s cited by %s has no row in data/references_meta.csv (run python scripts/build_references.py --seed)' % (k, first))
+    for m in meta:
+        st = stats[m['reference_id']]
+        if not st['claims'] and not st['units']:
+            warn(where, '%s (%s) is not cited by any claim or unit: remove the row or cite it' % (m['reference_id'], m['short_title']))
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -585,6 +637,8 @@ def main():
         print('NOTE: %d attached/operational_control entries have no effective_to and are not listed by the unit\'s next claim; '
               'a missing effective_to never means indefinitely valid: build/command_relations.csv closes them at the next claim '
               '(valid_to_basis inferred_from_next_claim). Add effective_to where a source dates the end.\n' % len(open_end))
+
+    check_references()
 
     for w in warnings:
         print('WARNING', w)

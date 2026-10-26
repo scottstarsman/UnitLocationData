@@ -10,6 +10,10 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/command_relations.csv           DERIVED command-relationship intervals (subject, higher, relationship, valid_from, valid_to,
                                         bases, source claim ids) for US units with a claim in 1944-07-24..1944-12-31; the claims stay
                                         the evidence, this table is an interpretation (see schema/README.md, "Validity of a relationship")
+  data/references.csv                   the references table (one row per distinct source cited; derived from the claims and
+                                        data/references_meta.csv by scripts/build_references.py, which build.py calls)
+  build/claim_references.csv            claim_id -> reference_id links (role source | coordinates | strength; locator = URL fragment)
+  build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
 Do not hand-edit anything in build/: edit data/claims/ and re-run this script.
 
@@ -23,6 +27,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
+import build_references  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'location_name', 'location_represents', 'precision_km', 'confidence',
@@ -201,6 +206,9 @@ def outputs():
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
     out['command_relations.csv'] = common.csv_bytes(REL_HEADER, relations(rows))
     out['../docs/coverage.md'] = cov_md
+    # references: data/references.csv (metadata + counts) and the claim/unit -> reference links (see build_references.py)
+    for k, data in build_references.outputs().items():
+        out[k[len('build/'):] if k.startswith('build/') else '../' + k] = data
     return out
 
 

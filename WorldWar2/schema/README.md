@@ -153,6 +153,16 @@ Validator checks: error when `location_date` and the offset disagree, when the o
 
 Use short labelled sentences in `notes` so the sources for each kind of statement stay separate: `Event date:` (the source for the date), `Event definition:` (what event this row means, needed when rows in a conflict group differ in event type or definition, for example a landing against an arrival), `Relationship:` (the source for the command relationship), `Location:` (what the point stands for and which source places it), `Coordinates:` (how the numbers were obtained). Not every row needs all labels; the reviewed Batch 1 rows use them.
 
+## References (`data/references.csv`, `data/references_meta.csv`, `build/claim_references.csv`, `build/unit_references.csv`)
+
+Every URL in a claim's `source` column, every `formed_date_source` URL in `units.csv`, every unit source token (`listing_source`, `initial_parent_source`, for example `LEX`, `WP12AG`) and every `strength_json.source` text maps to one row of `data/references_meta.csv`; `scripts/validate.py` reports an error for a citation that does not. Claims keep their `source` text unchanged (the claims schema has no reference column); the link is derived.
+
+`data/references_meta.csv` is hand-maintained and holds the stable `reference_id` (`R001`, never reused or renumbered), the normalised `url` (no `#fragment`, `www.ibiblio.org`), the curated `short_title`, `full_citation`, `source_type`, `publisher`, `license_or_status`, `reliability_note`, `used_for`, `accessed_date`, and `link_status` / `link_checked` (written by `build_references.py --check-links`). Optional matching columns: `match_pattern` (regular expression on the coordinate note after ` ; `, used for services such as Nominatim that have no per-place URL), `source_token` (unit source token) and `strength_alias` (`;`-separated strength source texts). `data/references.csv` is generated from it and adds `original_url` (the archived address of a Wayback Machine link), `claims_count`, `units_count` and `first_claim_id` (the lowest claim_id citing it). Page numbers and anchors (`#page285`) are kept as `locator` in `build/claim_references.csv` (columns `claim_id`, `reference_id`, `role`, `locator`; `role` is `source`, `coordinates` or `strength`).
+
+`source_type`: `official_history`, `unit_history`, `assignment_table`, `reference_compilation`, `encyclopedia`, `gazetteer_geocoder`, `monument_or_memorial`, `archive_document`, `news_or_web_article`, `other`. `link_status`: `ok`, `blocked_403` (the server refuses automated requests, as `history.army.mil` does), `not_found`, `error` (timeout or other failure), `unchecked`. A link status records the day of the last check only; web pages move.
+
+To add a source: cite its URL in the claim's `source`, run `python scripts/build_references.py --seed` (adds a skeleton row), edit the row's title, type, licence and note, then run `python scripts/build.py`.
+
 ## strength_json
 
 A JSON object (blank if no source gives figures):

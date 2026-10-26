@@ -3,7 +3,7 @@ name: validate
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: ['**']   # every pushed branch is checked (work goes to branches; main only on explicit approval)
 
 permissions:
   contents: read
@@ -29,13 +29,13 @@ jobs:
         continue-on-error: true
       - name: Build combined outputs
         run: python scripts/build.py
-      # build/ holds only all_claims.csv, claims.geojson, command_relations.csv and coverage.csv; docs/coverage.md is generated too
+      # build/ holds the generated tables (claims, coverage, command relations, reference links); docs/coverage.md and data/references.csv are generated too
       - name: Check build/ is up to date
         run: |
           python scripts/build.py --check
-          if [ -n "$(git status --porcelain -- build docs/coverage.md)" ]; then
+          if [ -n "$(git status --porcelain -- build docs/coverage.md data/references.csv)" ]; then
             echo "build/ differs from the committed files; run 'python scripts/build.py' in WorldWar2/ and commit the result"
-            git status --porcelain -- build docs/coverage.md
+            git status --porcelain -- build docs/coverage.md data/references.csv
             git diff --stat -- build
             exit 1
           fi

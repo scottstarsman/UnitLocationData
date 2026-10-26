@@ -6,6 +6,7 @@ Produced with the places table (`scripts/migrate_places.py`, branch `places-tabl
 
 - 421 distinct `location_name` values became 383 places (288 point, 79 area, 16 line); 26 places absorb 2-5 old names each (list 1), 14 aliases on 13 places, 4 places with a hand-worked point (list 5).
 - 566 claims: 286 places have one claim, 62 have two, 16 three, 9 four, and 10 have five or more (largest PL0045 Brest, PL0258 Omaha Beach: 10 claims each).
+- After the place merges of item 8 (section 7): 382 places (287 point, 79 area, 16 line); retired ids in `data/place_merges.csv`: 1.
 - 20 claims keep their own point with a `coord_override` (list 3).
 - Countries by the point's GeoNames nearest place: FR 332, BE 28, NL 10, DE 5, GB 4, LU 4. Places near a border (Saint-Vith, Luxembourg, the Netherlands and Belgium, Aachen) should be glanced at: the lookup uses the nearest GeoNames place, not a boundary polygon.
 
@@ -109,11 +110,11 @@ Places with more than one old name: 26
 
 ## 2. Co-located places left separate (the main decision list)
 
-A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 105 places; the full list follows. Likely merge candidates, which Scott should decide (still open after the `unit-ids-in-text-columns` work, which did not touch places; none of the five has been ruled on):
+A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 38 groups, 104 places after the merges of section 7; the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:
 
 | Places | Why they may be one place |
 |---|---|
-| PL0070 Caumont / PL0071 Caumont-l'Éventé | the same commune (Caumont-l'Éventé, Calvados), 0 m apart |
+| PL0070 Caumont / PL0071 Caumont-l'Éventé | **Merged** into PL0071 (see section 7); the same commune (Caumont-l'Éventé, Calvados), 0 m apart |
 | PL0208 Mantes-Gassicourt / PL0209 Mantes-la-Jolie | Mantes-Gassicourt is a former commune, merged into Mantes-la-Jolie in 1962; 0 m apart (PL0207 is the bridgehead area on the same point) |
 | PL0045 Brest, Finistère / PL0294 Recouvrance, Brest | Recouvrance is the district of Brest on the west bank of the Penfeld; 0 m apart |
 | PL0258 Omaha Beach / PL0259 Omaha Beach sector | the beach and its sector share the point (both areas) |
@@ -128,7 +129,7 @@ The groups (rounded point, then each place with its kind, name and claim count):
 (49.304, -1.247) PL0067 point "Carentan, Manche" (6) | PL0068 area "Carentan / Manoir de Donville" (2) | PL0069 area "Carentan / Vire crossing" (1) | PL0310 area "Southwest of Carentan" (1) | PL0380 area "West of Carentan" (1)
 (49.335, -0.415) PL0158 area "Gold-Juno-Sword landing zone" (1) | PL0180 area "Juno Beach" (4) | PL0181 area "Juno/Sword" (2) | PL0185 area "Landed Normandy beachhead" (1) | PL0251 area "Normandy beachhead" (2)
 (49.171, -0.579) PL0146 point "Fontenay-le-Pesnel" (2) | PL0147 area "Fontenay-le-Pesnel / Rauray sector" (1) | PL0270 area "Panzer Lehr sector" (1) | PL0348 area "Tilly-Fontenay sector" (1)
-(49.091, -0.804) PL0048 area "Brigade box west of Villers-Bocage" (1) | PL0070 point "Caumont" (1) | PL0071 point "Caumont-l'Éventé" (2)
+(49.091, -0.804) PL0048 area "Brigade box west of Villers-Bocage" (1) | PL0071 point "Caumont-l'Éventé" (3)
 (49.181, -0.364) PL0057 point "Caen" (1) | PL0059 area "Caen sector" (2) | PL0060 area "Caen sector assembly areas" (1)
 (43.273, 6.64) PL0066 area "Cape Saint-Tropez landing area, Var" (1) | PL0123 area "Dragoon assault area (Alpha, Delta and Camel sectors), Var coast" (1) | PL0342 point "Saint-Tropez, Var" (1)
 (49.488, -1.378) PL0074 line "Central Cotentin axis, north of Valognes" (1) | PL0230 point "Montebourg Station" (1) | PL0231 line "Montebourg-Valognes axis" (1)
@@ -195,7 +196,7 @@ Decision: where a point differs by a few hundred metres only because two geocode
 
 Places of kind point within 1 km of each other:
 
-- PL0070 Caumont and PL0071 Caumont-l'Éventé, 0 m (merge candidate)
+- PL0070 Caumont and PL0071 Caumont-l'Éventé, 0 m (merged, see section 7)
 - PL0208 Mantes-Gassicourt and PL0209 Mantes-la-Jolie, 0 m (merge candidate)
 - PL0045 Brest and PL0294 Recouvrance, 0 m (merge candidate)
 - PL0089 Cherbourg and PL0152 Fort du Roule, 459 m (the fort is part of the town's defences; probably different places)
@@ -211,3 +212,9 @@ These have a blank `coord_reference_id` and the explanation in `coord_source_not
 - `Pont Herbert, Manche` (PL0285, claim C0225 of US-ARM-002D) lies 172 m from Coutances. Pont-Hébert is a different commune (about 25 km to the north-east); the point looks wrong or the name is a mix-up. It is a different place from Pont-Hébert, so it was not merged with anything.
 - `St Anthonis, Nort Brabant` (PL0314) has a point in Belgium (Flanders, 51.18 N 4.19 E) although the name says North Brabant; St. Anthonis in the Netherlands is near 51.6 N 5.9 E (country and region come from the point, so the place reads as Belgian). The point should be checked against the source.
 - Place `precision_km` is the finest precision any claim at the place has used (it is not a statement about the place itself); claims keep their own `precision_km`.
+
+## 7. Place merges made (item 8, branch `place-merges`)
+
+Item 8 of `docs/unit_references_review.md`: the five likely merge candidates of section 2 were decided and merged, one commit each, with `scripts/migrate_place_merges.py`. The survivor keeps its id and point; the retired id is listed in `data/place_merges.csv` and never reused; every moved claim keeps its own `precision_km`, `coord_override` and point, so no position in `build/claims.geojson` changed; the derived `location_name` of the moved claims changed (the survivor's name plus the qualifier). The `coord_reference_id` of each pair was the same, so nothing changed there. The other co-located places of section 2 are unchanged: where a group lost a place it is shown in its new form, the other groups are as before.
+
+- **PL0070 Caumont -> PL0071 Caumont-l'Éventé.** The same commune (Caumont-l'Éventé, Calvados): both places used the point of the Wikipedia article Caumont-l'Éventé, 0 m apart. `Caumont` is now an alias of PL0071. One claim moved (C0104, V Corps, 13 June 1944); it keeps its qualifier `left of First Army line` and its own `precision_km` 10.

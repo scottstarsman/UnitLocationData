@@ -164,7 +164,7 @@ def review(n, m, h, rows):
                '%d groups, %d places after the merges of section 7; the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:' % (len(groups), gplaces), t) \
         if 'Likely merge candidates' in t else re.sub(r'\d+ groups, \d+ places after the merges', '%d groups, %d places after the merges' % (len(groups), gplaces), t)
     kinds = collections.Counter(r[h.index('kind')] for r in rows)
-    bullet = '- After the place merges of item 8 (section 7): %d places (%d point, %d area, %d line); %d places have been retired in `data/place_merges.csv`.' % (
+    bullet = '- After the place merges of item 8 (section 7): %d places (%d point, %d area, %d line); retired ids in `data/place_merges.csv`: %d.' % (
         len(rows), kinds['point'], kinds['area'], kinds['line'], len(common.read_rows(placesmod.MERGES_CSV)[1]))
     if '- After the place merges of item 8' in t:
         t = re.sub(r'- After the place merges of item 8[^\n]*', lambda _: bullet, t)

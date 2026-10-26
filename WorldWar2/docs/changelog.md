@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## review-responses (26 October 2026)
+
+Triage of the first outside review of the review packet, recorded in `docs/review/responses.md` (findings R1-F-001 to R1-F-008, the README suggestion R1-A-001, one finding that came out of the checking, R1-N-001, the answers to the ten questions, a table of every factual statement of the reviewer checked against the data, and a proposed order of work). Every decision there is a proposal pending the owner's decision. Documentation only: no data, schema, vocabulary, validator or script changed, and `build/` and the review sample are unchanged. The reviewer did not check the sampled rows against their sources, so the sample is still unreviewed.
+
 ## review-packet (26 October 2026)
 
 An independent-review packet for an outside reviewer who has read access to the repository and nothing else. No claim, table, schema or validator rule changed; the three commits add documents and one read-only script.

@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: G012, the 4th Armored Division's landing against arrival (26 October 2026)
+
+Open item 7 (third sub-item). One commit, **no value changed**; the finding is that the sources do not settle it.
+
+- **Sources read.** CMH ETO-OB 4th Armored Division (R356): "arrived Continent 13 July", command post at Mesnil-St-Martin on 13 July, Dorchester on 8 July; Wikipedia and USHMM (C0243's references): landed at Utah Beach on 11 July; Breakout and Pursuit ch. 7 p. 132: "the newly arrived 4th Armored Division" relieved the 4th Division after 15 July, no landing date; the dday-overlord.com order of battle repeats the CMH command-post list and gives no date of its own. No source says the two are the same event, that either is wrong, or when the main body was ashore.
+- **Result.** `C0244` (arrival, 13 July) stays preferred and `C0243` (landing, 11 July) stays the alternate in G012; a review note on both rows records the search. **Recommendation for Scott:** dissolve G012 and make C0243 preferred beside C0244, as G016 was dissolved (the event types differ, landing and arrival); not applied, because it is a decision about the group and not a source finding.
+- **`PL0222` "Mesnil-St-Martin, Manche"** (the 13 July command post, a 50 km inferred point): the IGN geocoder has no place of that name in Manche; the search is appended to the place's coordinate source note; the point is unchanged.
+- **Checked.** Validator 0 errors, same 3 warnings; `build --check`, `build_references --check` and `review_sample --check` clean; 68 `semantic_tests` expectations hold; `who_controls` does not read these rows.
+
 ## open-items-oct26: LXXXIV Corps placeholder point, 14 to 17 June 1944 (26 October 2026)
 
 Open item 7 (fourth sub-item). One commit. **Four claims changed, one place removed.**

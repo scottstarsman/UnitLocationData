@@ -168,12 +168,18 @@
       "vocabulary": "precision_km"
     },
     {
-      "name": "operation_name",
+      "name": "campaign",
       "type": "string",
-      "description": "Parent operation, for example Overlord.",
+      "description": "US Army campaign (CMH streamer names, see vocabulary campaign) whose dates contain the claim's date: a date and area label, not credit for the unit. One value, or two separated by '; ' where campaigns overlap (Rhineland; Ardennes-Alsace).",
       "constraints": {
         "required": true
-      }
+      },
+      "vocabulary_list": "campaign"
+    },
+    {
+      "name": "operation_name",
+      "type": "string",
+      "description": "Named parent operation (Overlord 6 June-30 August 1944, Dragoon 15 August-14 September 1944, Market Garden 17-25 September 1944; see vocabulary operation_name). Blank when the row belongs to no named parent operation (most rows after 30 August 1944 outside Dragoon and Market Garden): the campaign column and sub_operation_name give the context."
     },
     {
       "name": "sub_operation_name",

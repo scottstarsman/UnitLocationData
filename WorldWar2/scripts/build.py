@@ -26,7 +26,7 @@ import common  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'location_name', 'location_represents', 'precision_km', 'confidence',
-             'event_type', 'current_activity', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
+             'event_type', 'current_activity', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
              'location_temporal_offset_days']
 NUMERIC = {'precision_km', 'confidence', 'location_temporal_offset_days'}
 
@@ -86,7 +86,8 @@ def coverage(claim_rows):
 
 REL_WINDOW = ('1944-07-24', '1944-12-31')
 REL_HEADER = ['subject_unit_id', 'subject_name', 'higher_unit_id', 'higher_name', 'relationship', 'valid_from', 'valid_from_latest',
-              'valid_from_basis', 'valid_to', 'valid_to_earliest', 'valid_to_basis', 'support', 'ordered_date', 'source_claim_ids', 'note']
+              'valid_from_time', 'valid_from_basis', 'valid_to', 'valid_to_earliest', 'valid_to_time', 'valid_to_basis', 'support', 'ordered_date',
+              'source_claim_ids', 'note']
 
 
 def _addday(iso, n):
@@ -98,7 +99,9 @@ def relations(claim_rows):
     """Derive dated command-relationship intervals from the claims' command_relationships entries.
 
     One interval per (subject, higher, relationship) run. valid_from is the entry's effective_from (else the claim date);
-    valid_to is the entry's effective_to when given (valid_to_basis = effective_to_basis or date_basis), otherwise the day
+    valid_from_time / valid_to_time carry the entry's optional HH:MM (blank = hour not documented). valid_to is INCLUSIVE:
+    the last day the relationship holds; on that day and on valid_from the hour decides, and where no time is recorded the
+    boundary day belongs to both the outgoing and the incoming interval. valid_to is the entry's effective_to when given (valid_to_basis = effective_to_basis or date_basis), otherwise the day
     before the unit's next claim that no longer lists the pair (valid_to_basis inferred_from_next_claim; valid_to_earliest is
     the last claim date that lists it), otherwise blank (open_at_last_claim). A missing effective_to never means indefinitely
     valid. Alternate and disputed rows are skipped (the preferred row of a conflict group decides). support: documented (narrative/order), table (assignment_table), inferred (date_basis inferred, or no basis).
@@ -139,8 +142,9 @@ def relations(claim_rows):
                 else:
                     iv = {'subject_unit_id': uid, 'subject_name': r['unit_name'], 'higher_unit_id': e['unit_id'], 'higher_name': e['name'],
                           'relationship': e['relationship'], 'valid_from': start, 'valid_from_latest': e.get('effective_from_latest', ''),
+                          'valid_from_time': e.get('effective_time', ''),
                           'valid_from_basis': e.get('date_basis', 'inferred') if 'effective_from' in e else 'claim_date',
-                          'valid_to': '', 'valid_to_earliest': '', 'valid_to_basis': '', 'basis': e.get('date_basis', 'inferred'),
+                          'valid_to': '', 'valid_to_earliest': '', 'valid_to_time': '', 'valid_to_basis': '', 'basis': e.get('date_basis', 'inferred'),
                           'ordered_date': e.get('ordered_date', ''), 'claims': [r['claim_id']], 'last_listed': r['date'],
                           'note': e.get('note', '')}
                     open_iv[key] = iv
@@ -149,6 +153,7 @@ def relations(claim_rows):
                     iv = open_iv.pop(key)
                     iv['valid_to'] = e['effective_to']
                     iv['valid_to_earliest'] = e.get('effective_to_earliest', '')
+                    iv['valid_to_time'] = e.get('effective_to_time', '')
                     iv['valid_to_basis'] = e.get('effective_to_basis') or e.get('date_basis', 'inferred')
                     twin = [o for o in out if (o['subject_unit_id'], o['higher_unit_id'], o['relationship'], o['valid_to']) ==
                             (uid, iv['higher_unit_id'], iv['relationship'], iv['valid_to'])]
@@ -171,7 +176,7 @@ def relations(claim_rows):
             continue
         sup = {'narrative': 'documented', 'order': 'documented', 'assignment_table': 'table'}.get(iv['basis'], 'inferred')
         rows.append([iv['subject_unit_id'], iv['subject_name'], iv['higher_unit_id'], iv['higher_name'], iv['relationship'], iv['valid_from'],
-                     iv['valid_from_latest'], iv['valid_from_basis'], iv['valid_to'], iv['valid_to_earliest'], iv['valid_to_basis'], sup,
+                     iv['valid_from_latest'], iv['valid_from_time'], iv['valid_from_basis'], iv['valid_to'], iv['valid_to_earliest'], iv['valid_to_time'], iv['valid_to_basis'], sup,
                      iv['ordered_date'], ' '.join(iv['claims']), iv['note']])
     rows.sort(key=lambda x: (x[0], x[5], x[2], x[4]))
     return rows

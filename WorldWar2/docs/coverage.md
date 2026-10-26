@@ -34,7 +34,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | brigade | 6 | 0 | 3 | 9 | 6 | 3 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 6 |
 | US | army | 1 | 0 | 4 | 5 | 3 | 33 |
-| US | corps | 3 | 0 | 12 | 15 | 5 | 94 |
+| US | corps | 3 | 0 | 12 | 15 | 5 | 96 |
 | US | division | 23 | 0 | 37 | 60 | 24 | 289 |
-| US | regiment/battle_group | 0 | 0 | 1 | 1 | 0 | 2 |
-| **All** | | **240** | **0** | **113** | **353** | **234** | **563** |
+| US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
+| **All** | | **240** | **0** | **114** | **354** | **234** | **566** |

@@ -19,6 +19,9 @@ jobs:
       - name: Coordinate checks (warnings only)
         run: python scripts/check_coordinates.py
         continue-on-error: true
+      - name: Temporal audit of command relationships (read-only, non-failing)
+        run: python scripts/audit_temporal_relationships.py
+        continue-on-error: true
       - name: Build combined outputs
         run: python scripts/build.py
       # build/ holds only all_claims.csv, claims.geojson and coverage.csv (no monthly or per-theater exports); docs/coverage.md is generated too

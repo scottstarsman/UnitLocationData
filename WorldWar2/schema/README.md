@@ -32,7 +32,8 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `location_name` | string | yes | Name of the place the coordinate refers to. |  |
 | `location_represents` | string | yes | What the point stands for (see vocabulary). | vocabulary `location_represents` |
 | `precision_km` | number | yes | Judgment estimate of the radius in km within which the unit probably was (banded). | vocabulary `precision_km` |
-| `operation_name` | string | yes | Parent operation, for example Overlord. |  |
+| `campaign` | string | yes | US Army CMH campaign streamer whose dates contain the row's date (Normandy, Northern France, Southern France, Rhineland, Ardennes-Alsace, Central Europe): a date-and-area label, not credit for the unit; applied to every nationality alike. One value, or two separated by `; ` only where both campaigns cover the date. Backfilled by date for all rows (`scripts/migrate_campaign.py`). | vocabulary list `campaign` |
+| `operation_name` | string | no | Named parent operation, only within the operation's dates: Overlord 6 June-30 August 1944, Dragoon 15 August-14 September, Market Garden 17-25 September. Blank after the operation ends (`campaign`, `sub_operation_name` and the notes carry the context); Overlord is not an umbrella label for the whole campaign. A row outside the dates draws a validator warning. | vocabulary `operation_name` |
 | `sub_operation_name` | string | no | Sub-operation(s), semicolon-separated (Neptune, Epsom, Perch, ...). Blank for plain parent-operation rows. |  |
 | `composing_units` | string | no | Subordinate units, listed when first given or when they change; blank means unchanged from the unit's previous row; "unknown" means no data. |  |
 | `established` | boolean | yes | True on the row where the source says the unit was formed. | `true`/`false` |
@@ -122,10 +123,20 @@ A row has one entry per higher headquarters. When the kind of authority changes 
 
 ### Validity of a relationship
 
-A relationship entry is a statement about one dated claim row, not a standing fact. `effective_from` and `effective_to` bound it when a source gives them. **A missing `effective_to` never means the relationship held indefinitely**: it means the claim records no end. Wherever a source dates an end, give it, especially for `attached` and `operational_control` (temporary by definition); the validator prints a count of such entries that the unit's next claim no longer lists, and `scripts/audit_command_location.py` lists their claim ids. `build/command_relations.csv` (derived by `scripts/build.py`, US units with a claim from 24 July to 20 September 1944) turns the entries into dated intervals and closes an entry without `effective_to` on the day before the unit's next claim that does not list it (`valid_to_basis` = `inferred_from_next_claim`, with `valid_to_earliest` the last claim that lists it); an entry still listed by the unit's latest claim stays open (`open_at_last_claim`). Its `support` column says `documented` (narrative or order dates), `table` (CMH assignment table dates) or `inferred`. The claims stay the evidence; the derived table is an interpretation and is rebuilt, never edited. `python scripts/who_controls.py US-ARM-002D 1944-08-28` answers "who held this unit on this date" from it.
+A relationship entry is a statement about one dated claim row, not a standing fact. `effective_from` and `effective_to` bound it when a source gives them. **A missing `effective_to` never means the relationship held indefinitely**: it means the claim records no end. Wherever a source dates an end, give it, especially for `attached` and `operational_control` (temporary by definition); the validator prints a count of such entries that the unit's next claim no longer lists, and `scripts/audit_command_location.py` lists their claim ids. `build/command_relations.csv` (derived by `scripts/build.py`, US units with a claim from 24 July to 31 December 1944) turns the entries into dated intervals and closes an entry without `effective_to` on the day before the unit's next claim that does not list it (`valid_to_basis` = `inferred_from_next_claim`, with `valid_to_earliest` the last claim that lists it); an entry still listed by the unit's latest claim stays open (`open_at_last_claim`). Its `support` column says `documented` (narrative or order dates), `table` (CMH assignment table dates) or `inferred`. The claims stay the evidence; the derived table is an interpretation and is rebuilt, never edited. `python scripts/who_controls.py US-ARM-002D 1944-08-28` answers "who held this unit on this date" from it.
 
 Order and effect can differ: the 35th Division was attached to V Corps by an order on the evening of 27 July and V Corps took control on 28 July; the entry keeps both (`ordered_date` 27 July, `effective_from` 28 July). Where a table date and a narrative date differ, the entry keeps the one it states in `date_basis` and the other goes in the `note`.
 
+
+### Intervals are inclusive; sequences, handovers and the ordered / effective / exercised states
+
+- **`effective_to` is the last day the relationship held (inclusive).** On the day one relationship ends and the next begins, both entries cover the day; the derived `valid_to` is inclusive too. Which of the two held at a given hour of that boundary day is unknown unless an hour is recorded: `effective_time` and `effective_to_time` (optional `HH:MM`, 24-hour; each needs its date; say in the `note` which clock the source uses) carry it into `build/command_relations.csv` as `valid_from_time` and `valid_to_time`. `python scripts/who_controls.py US-ABN-101D 1944-12-20 12:00` reports UNKNOWN for a level where two headquarters meet on a boundary day and no hour is documented, rather than choosing. There is no `valid_until_exclusive` key: a second convention would make every end date ambiguous.
+- **A table observation and an operational transfer are different rows.** A CMH assignment table that lists a unit under a headquarters from a date is a `subordinate_assignment` row (or an `effective_from` with `date_basis` `assignment_table` on a later row); the dated narrative transfer is a `command_change` row. The two are a sequence, not a conflict group, and the table row does not assert control by a headquarters the narrative has not yet reached (101st Airborne Division: CMH table 17 December, VIII Corps operational control from 18 December, VIII Corps to Third Army during 20 December). A conflict group is for two claims that cannot both hold.
+- **The immediate operational parent is `parent_unit_id`; higher headquarters follow by hierarchy.** A division under a corps that passes from one army to another has the corps as `parent_unit_id` before and after; the army appears in the corps' own rows. Do not put the army on the division's row only because a table lists it.
+- **A temporary attachment that overlaps a table date is modelled with a range.** The 84th Infantry Division was "temporarily attached" to the XVIII Airborne Corps from 20 December (Ardennes p426) while the CMH table lists VII Corps from the same day; the Green Book has the XVIII Airborne Corps still giving orders on 21 and 22 December and the VII Corps officially assuming its front at 1630 on 23 December (p433). The XVIII entry is `attached` with `effective_to` 23 December and `effective_to_earliest` 22 December; the VII Corps entry is `unspecified_subordination` with `effective_from` 20 December and `effective_from_latest` 23 December.
+- **Where a location stands for a later or nearby place, say so.** A headquarters row whose coordinate is the nearest later command post (84th Division at Marche on 20 December, the command post being documented there on 21 December) keeps `nearest_later_command_post`; a headquarters place taken from a neighbouring unit's command post is `inferred` (XVIII Airborne Corps, 19 December). A place that is the last listed one rather than the position on the date (Ninth Army at Maastricht, 20 December) is `nearest_earlier_command_post` and the note says "last-known".
+- **Ordered, effective and exercised.** Four states can have different dates: *intended* (a plan or tentative selection), *ordered* (an order or alert is given), *effective* (the order takes effect) and *exercised* (the headquarters is shown commanding). The model today keeps them cheaply: `ordered_date` is the order, `effective_from` (with `effective_time`) is the effective date, a narrative row that shows the headquarters acting is the exercised evidence, and an intended-only fact is an `other` row whose `Event definition:` says it is a decision (III Corps, 18 December: Bradley and Patton agree to move the headquarters from Metz to Arlon and earmark three divisions; the attack opens on 22 December). A separate state column is on the roadmap (`docs/roadmap.md`, "Ordered / effective / exercised states"), with the 7th Armored Division's move to St. Vith as the motivating case.
+- **Declined, with reasons.** A numeric event confidence beside the location confidence is declined for the third time: `confidence` already scores the location and its sources, the `Event support:` and `Location support:` sentences carry the event side in words, and a second number would repeat `location_basis` and the notes. A `retained_nonoperational_responsibilities` relationship is not added: `unknown` with a scoped note does the job (AFHQ, 15 September 1944). An `engagement_area` location kind is not added: `objective` with `representative_point` says it. An `inferred_from_nearby_unit_hq` basis is not added: `inferred` plus a note naming the neighbour does.
 
 ## Location provenance: location_date, location_basis, location_temporal_offset_days
 
@@ -312,6 +323,29 @@ Numeric 0-1 score applied by rule from location quality and source families. Onl
 
 - A manual override is allowed when the date itself is approximate (use 0.3) and must be explained in notes.
 
+### campaign
+
+US Army CMH campaign streamer names. A date and area label for the theatre, not credit for a unit. Overlaps by design: Northern France and Southern France (15 August-14 September 1944; Southern France only for rows of the Dragoon landing and its advance) and Rhineland with Ardennes-Alsace (16 December 1944-25 January 1945; rows of the Ardennes and Alsace fighting take Ardennes-Alsace, other rows Rhineland). The dates are in `schema/vocabularies.json` (`campaign.dates`) and the validator errors when the row's date lies outside its campaign.
+
+| value | dates |
+|---|---|
+| `Normandy` | 6 June-24 July 1944 |
+| `Northern France` | 25 July-14 September 1944 |
+| `Southern France` | 15 August-14 September 1944 |
+| `Rhineland` | 15 September 1944-21 March 1945 |
+| `Ardennes-Alsace` | 16 December 1944-25 January 1945 |
+| `Central Europe` | 22 March-11 May 1945 (reserved) |
+
+### operation_name
+
+`operation_name` is blank or one of the named operations below, and only on rows within the operation's dates (a warning otherwise; a blank inside the Overlord dates also warns).
+
+| value | dates |
+|---|---|
+| `Overlord` | 6 June-30 August 1944 (some sources end it on 25 August) |
+| `Dragoon` | 15 August-14 September 1944 |
+| `Market Garden` | 17-25 September 1944 |
+
 ### event_type
 
 One primary event per row.
@@ -330,8 +364,10 @@ One primary event per row.
 | `destruction` | Unit destroyed. |
 | `command_change` | Commander or command responsibility changes. |
 | `hq_move` | Headquarters moves. |
+| `hq_observation` | A source (a command-post list, situation map or report) records the headquarters at a place on the date; it does not state that the headquarters moved on that date (use `hq_move` where a dated movement source exists). |
 | `regroup` | Assembly, reorganisation, relief in place. |
 | `activation` | A formation becomes operational, or is activated or constituted as a headquarters or unit (for example 12th Army Group becoming operational on 1 August 1944). |
+| `subordinate_assignment` | A source (a CMH assignment table or an order) lists the unit under a higher headquarters, or lists a headquarters' first subordinate unit, from this date; it says nothing about when command was first exercised or when a headquarters became operational. Use `activation` only where a source documents the operational start (taking a sector, command or mission). |
 | `redesignation` | The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps). |
 | `other` | Headquarters decisions, air attack on a headquarters, units at their station. |
 

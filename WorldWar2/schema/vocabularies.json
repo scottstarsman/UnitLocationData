@@ -132,6 +132,8 @@
       "hq_move": "Headquarters moves.",
       "regroup": "Assembly, reorganisation, relief in place.",
       "activation": "A formation becomes operational, or is activated or constituted as a headquarters or unit (for example 12th Army Group becoming operational on 1 August 1944).",
+      "subordinate_assignment": "A source (a CMH assignment table or an order) lists the unit under a higher headquarters, or lists a headquarters' first subordinate unit, from this date; it says nothing about when command was first exercised or when a headquarters became operational. Use activation only where a source documents the operational start (taking a sector, command or mission).",
+      "hq_observation": "A source (a command-post list, situation map or report) records the headquarters at a place on the date; it does not state that the headquarters moved on that date (use hq_move where a dated movement source exists).",
       "redesignation": "The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps).",
       "other": "Headquarters decisions, air attack on a headquarters, units at their station."
     }
@@ -220,6 +222,65 @@
       "town_centroid": "The coordinate is the centre of a named town or commune; the source does not locate the headquarters or event more precisely.",
       "operational_area": "A point inside the area of operations (sector, landing area, bridgehead) rather than a headquarters or exact position.",
       "inferred": "Inferred from the unit's movements or other rows rather than stated."
+    }
+  },
+  "campaign": {
+    "description": "US Army World War II campaign (CMH streamer names) whose dates contain the claim's date. A date and area label for the theatre, not credit for the unit and not a statement that the unit took part; it is applied to every nationality's rows alike. One value, or two separated by '; ' where a row belongs to two overlapping campaigns. Overlaps by design: Northern France and Southern France (15 August-14 September 1944, Southern France only for rows of the Dragoon landing and its advance) and Rhineland with Ardennes-Alsace (16 December 1944-25 January 1945; rows of the Ardennes and Alsace fighting take Ardennes-Alsace, other rows Rhineland). Dates: CMH, 'World War II - European-African-Middle Eastern Theater' campaign streamers.",
+    "values": {
+      "Normandy": "6 June-24 July 1944.",
+      "Northern France": "25 July-14 September 1944.",
+      "Southern France": "15 August-14 September 1944 (the Dragoon landing and the advance up the Rhone valley).",
+      "Rhineland": "15 September 1944-21 March 1945.",
+      "Ardennes-Alsace": "16 December 1944-25 January 1945.",
+      "Central Europe": "22 March-11 May 1945 (reserved; no claim yet)."
+    },
+    "dates": {
+      "Normandy": [
+        "1944-06-06",
+        "1944-07-24"
+      ],
+      "Northern France": [
+        "1944-07-25",
+        "1944-09-14"
+      ],
+      "Southern France": [
+        "1944-08-15",
+        "1944-09-14"
+      ],
+      "Rhineland": [
+        "1944-09-15",
+        "1945-03-21"
+      ],
+      "Ardennes-Alsace": [
+        "1944-12-16",
+        "1945-01-25"
+      ],
+      "Central Europe": [
+        "1945-03-22",
+        "1945-05-11"
+      ]
+    }
+  },
+  "operation_name": {
+    "description": "Named parent operations that operation_name may carry, with the dates of the operation. A row dated outside the operation's dates draws a validator warning; after the operation ends the field is blank and campaign, sub_operation_name and the notes carry the context. Overlord is the codename of the Normandy invasion and campaign and ends with the German withdrawal across the Seine (30 August 1944, Wikipedia 'Operation Overlord'; some sources end it on 25 August); it is not an umbrella label for the whole campaign in north-west Europe.",
+    "values": {
+      "Overlord": "6 June-30 August 1944.",
+      "Dragoon": "15 August-14 September 1944.",
+      "Market Garden": "17-25 September 1944."
+    },
+    "dates": {
+      "Overlord": [
+        "1944-06-06",
+        "1944-08-30"
+      ],
+      "Dragoon": [
+        "1944-08-15",
+        "1944-09-14"
+      ],
+      "Market Garden": [
+        "1944-09-17",
+        "1944-09-25"
+      ]
     }
   }
 }

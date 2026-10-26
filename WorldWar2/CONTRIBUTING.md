@@ -51,6 +51,7 @@ python scripts/build.py
 git diff --stat build/        # build outputs must be committed with your change
 python scripts/build.py --check
 python scripts/audit_command_location.py   # review prompts: command and location-date patterns
+python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim temporal checks (overlaps, undated transfers, sequences recorded as conflicts); add --out FILE for a markdown report
 ```
 
 ## Pull request checklist
@@ -62,6 +63,8 @@ python scripts/audit_command_location.py   # review prompts: command and locatio
 - [ ] New units are in `data/units.csv` and the file name matches `unit_id`.
 - [ ] `python scripts/validate.py` passes, and any WARNING lines for rows you touched are fixed or explained in `notes`.
 - [ ] `python scripts/audit_command_location.py` was run and its counts for the new rows were reviewed.
+- [ ] `python scripts/audit_temporal_relationships.py` was run and any finding that involves a new or changed row was checked against the source (a finding is a prompt, not an error; say in the pull request which are real and which are expected patterns).
+- [ ] Every new row has a `campaign` (CMH streamer by date); `operation_name` is blank outside a named operation's dates.
 - [ ] The per-row review checklist above was applied to every new or changed row (a second person checks 15 rows or 10% of a large batch, chosen by risk as described in `docs/methodology.md`).
 - [ ] `python scripts/build.py` was run and the `build/` changes are committed.
 - [ ] New vocabulary values (if any) are documented in `schema/vocabularies.json` and `schema/README.md`.

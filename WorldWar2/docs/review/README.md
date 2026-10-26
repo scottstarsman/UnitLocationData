@@ -84,8 +84,8 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 1088 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 19 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 11 |
-| references (`data/references.csv`, generated) | 511, of which 261 cited by at least one claim (the others are cited by units or operations) |
-| claim-reference roles (`data/claim_reference_roles.csv`) | 65 |
+| references (`data/references.csv`, generated) | 511, of which 263 cited by at least one claim (the others are cited by units or operations) |
+| claim-reference roles (`data/claim_reference_roles.csv`) | 74 |
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 38 |
 

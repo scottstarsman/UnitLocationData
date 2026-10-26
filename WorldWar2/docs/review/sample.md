@@ -223,13 +223,15 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Activity:** completing landing in the beachhead
 - **Place:** Juno/Sword (`PL0181`, Lower Normandy, FR); point 49.3353, -0.4153; precision 10 km; point represents: sector_center; qualifier: landed via Juno; point = Juno Beach; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned UK-COR-001C
-- **Notes:** Wikipedia Battle for Caen: 'not until D+7 (8 June) was all of the 51st (Highland) Division ashore' (D+7 would be 13 June; 8 June is D+2). Differs from the 6-7 June landing in the preferred row; may describe completion of landing rather than start.
+- **Notes:** Wikipedia Battle for Caen: 'not until D+7 (8 June) was all of the 51st (Highland) Division ashore' (D+7 would be 13 June; 8 June is D+2). Differs from the 6-7 June landing in the preferred row; may describe completion of landing rather than start. [Review (V-005): references added. R008 (Wikipedia, Allied forces in the Normandy campaign) lists the 51st (Highland) Infantry Division as landing on 6-7 June on Juno under Major-General D.C. Bullen-Smith. R072 (Wikipedia, 51st (Highland) Infantry Division) says most of the division landed on 7 June 1944 as part of British I Corps and lists Bullen-Smith as commander from August 1943 to July 1944. Nothing else changed.]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
   | R013 | general | Wikipedia: Battle for Caen | encyclopedia | https://en.wikipedia.org/wiki/Battle_for_Caen |  |
+  | R072 | command_relationship | Wikipedia: 51st (Highland) Infantry Division | encyclopedia | https://en.wikipedia.org/wiki/51st_(Highland)_Infantry_Division |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
+  | R008 | location | Wikipedia: List of Allied forces in the Normandy campaign | encyclopedia | https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign |  |
 
 ### S14. C0069: 6th Airborne Division, 1944-06-10
 
@@ -286,12 +288,14 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Activity:** attached to 11th Armoured Division for Epsom
 - **Place:** Cheux (`PL0092`, Lower Normandy, FR); point 49.1669, -0.5247; precision 5 km; point represents: sector_center; qualifier: -; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** attached UK-ARM-011D; unknown None
-- **Notes:** Brigade-level (below stated scope; included for context). Attached to 11th Armoured Division for Epsom, restricted to operations between the Odon and Orne. [Review 3: link to British 11th Armoured Division changed from organic to attached (Wikipedia, Operation Epsom); standing parent recorded as unknown. parent_unit_id, coordinates, event, status and confidence unchanged.]
+- **Notes:** Brigade-level (below stated scope; included for context). Attached to 11th Armoured Division for Epsom, restricted to operations between the Odon and Orne. [Review 3: link to British 11th Armoured Division changed from organic to attached (Wikipedia, Operation Epsom); standing parent recorded as unknown. parent_unit_id, coordinates, event, status and confidence unchanged.] [Review (V-005): references added. R140 (Wikipedia, Operation Epsom order of battle) lists the 4th Armoured Brigade under Brigadier John Currie as attached for Operation Epsom. R068 (Wikipedia, 4th Armoured Brigade) lists Currie as commander in March-June 1944 and Michael Carver from June 1944, with no days, so it does not [...]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
+  | R068 | general | Wikipedia: 4th Armoured Brigade (United Kingdom) | encyclopedia | https://en.wikipedia.org/wiki/4th_Armoured_Brigade_(United_Kingdom) |  |
   | R139 | command_relationship | Wikipedia: Operation Epsom | encyclopedia | https://en.wikipedia.org/wiki/Operation_Epsom |  |
+  | R140 | command_relationship | Wikipedia: Operation Epsom order of battle | encyclopedia | https://en.wikipedia.org/wiki/Operation_Epsom_order_of_battle |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 
 ### S18. C0178: 59th (Staffordshire) Infantry Division, 1944-06-27
@@ -335,12 +339,13 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Place:** Caumont-l'Éventé (`PL0071`, Lower Normandy, FR); point 49.0911, -0.8039; precision 5 km; point represents: sector_center; qualifier: -; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned US-COR-005C
 - **Engaged with:** GER-PZ-002D
-- **Notes:** Wikipedia Operation Perch footnote: 1st US Infantry Division took part of Caumont on 12 June and the remainder the next day. Competing (earlier) claim.
+- **Notes:** Wikipedia Operation Perch footnote: 1st US Infantry Division took part of Caumont on 12 June and the remainder the next day. Competing (earlier) claim. [Review (V-005): reference added. R343 (US Army Center of Military History, ETO order of battle, 1st Infantry Division, command and staff) lists Maj. Gen. Clarence R. Huebner as commanding general from 14 Dec 43 to 11 Dec 44. Nothing else changed.]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
   | R141 | general | Wikipedia: Operation Perch | encyclopedia | https://en.wikipedia.org/wiki/Operation_Perch |  |
+  | R343 | general | CMH ETO order of battle: 1st INFANTRY DIVISION (Wayback copy) | assignment_table | https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/1ID-eto-ob.htm |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 
 ### S21. C0181: First Army, 1944-06-27
@@ -351,12 +356,14 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Place:** Cherbourg (`PL0089`, Lower Normandy, FR); point 49.63, -1.62; precision 25 km; point represents: objective; qualifier: -; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** operational_control UK-AG-021G
 - **Engaged with:** GER-INF-709D
-- **Notes:** VII Corps captured Cherbourg (Schlieben surrendered 26 June, deputy Sattler 27 June; arsenal/harbour forts 29 June). Port heavily demolished.
+- **Notes:** VII Corps captured Cherbourg (Schlieben surrendered 26 June, deputy Sattler 27 June; arsenal/harbour forts 29 June). Port heavily demolished. [Review (V-006): references added for the 21st Army Group relationship (CR0166). R445 (US Army in WWII, The Supreme Command, ch. 15) says that although the 12th Army Group became active on the Continent on 1 August and Montgomery channeled his orders to the U.S. armies through it, the 21 Army Group commander retained over-all control until 1 September. R007 (Wikipedia, 21st Army Group) says that on 1 September 1944 the group was relieved of operational control of the American armies. These sources disagree; CR0166 ends on 31 July (12th Army Group opera [...]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
+  | R007 | command_relationship | Wikipedia: 21st Army Group | encyclopedia | https://en.wikipedia.org/wiki/21st_Army_Group |  |
   | R112 | general | Wikipedia: Battle of Cherbourg | encyclopedia | https://en.wikipedia.org/wiki/Battle_of_Cherbourg |  |
+  | R445 | command_relationship | The Supreme Command ch. 15 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Supreme/USA-E-Supreme-15.html |  |
   | R446 | general | Cross-Channel Attack ch. 10 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-10.html |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 
@@ -397,11 +404,12 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Activity:** remaining headquarters arrives; command post at Ducey
 - **Place:** Ducey-Les Chéris, Manche (`PL0126`, Lower Normandy, FR); point 48.6170, -1.2900; precision 5 km; point represents: headquarters; qualifier: -; coordinate source: R001: Wikipedia (en): Ducey-Les Chéris
 - **Command relationships stated by the claim:** assigned US-ARMY-003A from 1944-08-01
-- **Notes:** Event date: Breakout-18 p344: part of XII Corps headquarters reached Normandy on 29 July and the remainder on 7 August; the CMH command-post list (World War II by Day) gives Ducey-les-Chéris on 7 August. Event definition: the corps headquarters completes its arrival; the date is when the remainder arrived, not when the corps took a sector. Location: commune centroid. Relationship: Third Army assigned.
+- **Notes:** Event date: Breakout-18 p344: part of XII Corps headquarters reached Normandy on 29 July and the remainder on 7 August; the CMH command-post list (World War II by Day) gives Ducey-les-Chéris on 7 August. Event definition: the corps headquarters completes its arrival; the date is when the remainder arrived, not when the corps took a sector. Location: commune centroid. Relationship: Third Army assigned. [Review (V-006): reference added. R155 (Wikipedia, XII Corps) says XII Corps became operational in France as part of Lieutenant General George S. Patton's Third Army on 1 August 1944 (the assignment CR0190), and that Major General Gilbert R. Cook commanded until he fell ill on 18 August 1944, w [...]
 - **Sources cited** (the claim's own locator: R398: p. 344):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
+  | R155 | command_relationship | Wikipedia: XII Corps (United States) | encyclopedia | https://en.wikipedia.org/wiki/XII_Corps_(United_States) | R398: p. 344 |
   | R398 | general | Breakout and Pursuit ch. 18 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-18.html | p. 344 |
   | R475 | date | World War II by Day: XII Corps | reference_compilation | https://www.ww2byday.com/77/mapunit/ | R398: p. 344 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R398: p. 344 |
@@ -544,6 +552,8 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
+  | R006 | command_relationship | Wikipedia: Sixth United States Army Group | encyclopedia | https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group |  |
+  | R453 | command_relationship | 6th Army Group, G-3 Section Final Report (trailblazersww2.org PDF) | archive_document | https://www.trailblazersww2.org/pdf/SixthArmyG3pdf.pdf |  |
   | R487 | date | World War II by Day: Sixth Army Group | reference_compilation | https://www.ww2byday.com/98/mapunit/ |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 
@@ -754,7 +764,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C0222 (US-AG-006G, 1944-09-15) | asserts_start | 1944-09-15 | - | Tactical control transferred from AFHQ to SHAEF at 0001B, 15 September 1944 | R006 https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group [R410: p. 701, 683]; R410 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-32.html [p. 701, 683]; R453 https://www.trailblazersww2.org/pdf/SixthArmyG3pdf.pdf [R410: p. 701, 683] |
-  | C0516 (US-AG-006G, 1944-10-02) | asserts_start | 1944-09-15 | - | Tactical control passed from AFHQ to SHAEF at 0001B, 15 September 1944 (6th Army Group G-3 Section Final Report); see C0222 | R487 https://www.ww2byday.com/98/mapunit/ |
+  | C0516 (US-AG-006G, 1944-10-02) | asserts_start | 1944-09-15 | - | Tactical control passed from AFHQ to SHAEF at 0001B, 15 September 1944 (6th Army Group G-3 Section Final Report); see C0222 | R006 https://en.wikipedia.org/wiki/Sixth_United_States_Army_Group; R453 https://www.trailblazersww2.org/pdf/SixthArmyG3pdf.pdf; R487 https://www.ww2byday.com/98/mapunit/ |
 
 ### R09. CR0116: 12th Army Group -> 21st Army Group (coordinating)
 

@@ -118,6 +118,19 @@
         }
       ]
     },
+    "place_merges": {
+      "path": "data/place_merges.csv",
+      "primaryKey": "retired_place_id",
+      "foreignKeys": [
+        {
+          "fields": "merged_into_place_id",
+          "reference": {
+            "resource": "places",
+            "fields": "place_id"
+          }
+        }
+      ]
+    },
     "references_meta": {
       "path": "data/references_meta.csv",
       "primaryKey": "reference_id"

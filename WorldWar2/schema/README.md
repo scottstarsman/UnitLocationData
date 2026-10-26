@@ -74,7 +74,20 @@ One row per place; claims point at it with `place_id`. Primary key `place_id`; r
 | `coord_reference_id` | string | no | The coordinate service that gave the point: a reference of source_type gazetteer_geocoder in data/references_meta.csv (R001 Wikipedia article coordinates, R002 OpenStreetMap Nominatim). Blank for a point worked out by hand (then coord_source_note says how). |
 | `coord_source_note` | string | yes | How the point was obtained, as the claims recorded it: the Wikipedia article ('Wikipedia (en): Brest, France') or the Nominatim query, or for a hand-worked point (blank reference id) the explanation (midpoint of two towns, commune centroid). |
 
-Validator checks: unique ids and names, sorted, vocabulary for `kind` and `country`, alias rules, `coord_reference_id` is a geocoder and appears in the `reference_ids` of at least one claim at the place, every place has at least one claim (warning), and for every claim the point equals the place's point exactly unless `coord_override` is set (then it must differ and be within 5 km). `check_coordinates.py` also warns for a place or claim point in the open Atlantic and, with `--duplicates`, lists places of kind point within 1 km of each other.
+Validator checks: unique ids and names, an alias is not another place's name or alias, sorted, vocabulary for `kind` and `country`, alias rules, `coord_reference_id` is a geocoder and appears in the `reference_ids` of at least one claim at the place, every place has at least one claim (warning), and for every claim the point equals the place's point exactly unless `coord_override` is set (then it must differ and be within 5 km). `check_coordinates.py` also warns for a place or claim point in the open Atlantic and, with `--duplicates`, lists places of kind point within 1 km of each other.
+
+### data/place_merges.csv (hand-maintained)
+
+A place id is never reused. When two places turn out to be one, the survivor keeps its id and the other id is retired: its row leaves `data/places.csv`, every claim that pointed at it points at the survivor (the context that made it a separate place moves to the claim's `location_qualifier`, and a name worth finding goes to the survivor's `alt_names`), and one row here says where the id went, so an old reference (a published copy, a note) can be resolved with `places.resolve()`.
+
+| column | description |
+|---|---|
+| `retired_place_id` | The retired id (primary key). Never a row of `data/places.csv` again; no claim may use it. Rows sorted by this column. |
+| `merged_into_place_id` | The survivor: a live row of `data/places.csv` (foreign key `places.place_id`; a retired id is not a survivor). |
+| `retired_name` | The name the retired place had. |
+| `note` | Why the two are one place and the source for that. |
+
+Validator checks: header, sorted, no repeated or blank value, the retired id is not in `places.csv`, the survivor is, and no claim uses a retired id (the error names the survivor). `build/` does not carry the table; it is part of `data/`.
 
 ## Derived values
 
@@ -152,6 +165,7 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | coordinate_exceptions | `claim_id`, `other_claim_id` | claims.`claim_id` |
 | claims | `place_id` | places.`place_id` |
 | places | `coord_reference_id` (blank for a hand-worked point) | references_meta.`reference_id` |
+| place_merges | `merged_into_place_id` | places.`place_id` |
 | claim_reference_roles | `claim_id` / `reference_id` | claims.`claim_id` / references_meta.`reference_id` |
 | command_relations | `subject_unit_id`, `higher_unit_id` (blank only for an `unknown` placeholder) | units.`unit_id` |
 | command_relation_claims | `relation_id` / `claim_id` | command_relations.`relation_id` / claims.`claim_id` |

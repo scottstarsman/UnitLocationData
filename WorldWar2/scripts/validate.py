@@ -21,6 +21,8 @@ written canonically (entries joined by "; ").
 Command relations: a link of role listed_by_higher_unit belongs to the HIGHER unit's claim, which lists the subject in composing_units, keeps the wording in stated_note and states the start if it
 lists the relation before it starts (see schema/README.md, "Command relations"). docs/deferred_relations.md: the relationships whose subordinate formation is not a unit of the table;
 every row names an existing claim of its unit, a higher unit of the table, a vocabulary relationship and an entry that is still in the claim's composing_text.
+Places: names and aliases identify one place each (no alias is another place's name or alias); data/place_merges.csv lists the ids retired by merging two places (the id is not a
+row of places.csv, the survivor is, no claim uses a retired id).
 Foreign keys: every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json is checked (blank allowed, list columns split on the
 declared separator), and the declared primary keys of the side tables are unique.
 Unit table (placeholders, see docs/methodology.md "Placeholder units"): record_status agrees with the
@@ -511,6 +513,47 @@ def check_operations(claims, vocabs):
         warn(wh, m)
 
 
+def check_place_merges(places_by_id):
+    """data/place_merges.csv (retired place id -> the place it was merged into): header, sorted, one row per retired id, a retired id is not a
+    place in data/places.csv (ids are never reused), the survivor is a place and not itself retired, name and note are filled.
+    Returns {retired_place_id: merged_into_place_id}."""
+    where = 'data/place_merges.csv'
+    if not os.path.isfile(placesmod.MERGES_CSV):
+        err(where, 'missing (see scripts/places.py)')
+        return {}
+    h, rows = common.read_rows(placesmod.MERGES_CSV)
+    if h != placesmod.MERGES_HEADER:
+        err(where, 'header %s != %s' % (h, placesmod.MERGES_HEADER))
+        return {}
+    out, ids = {}, []
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        if len(r) != len(h):
+            err(w, 'expected %d fields, found %d' % (len(h), len(r)))
+            continue
+        d = dict(zip(h, r))
+        for k in h:
+            if not d[k].strip():
+                err(w, '%s is blank' % k)
+        for k in ('retired_place_id', 'merged_into_place_id'):
+            if not re.match(r'^PL\d{4,}$', d[k]):
+                err(w, '%s %r is not a place id (PL0001 onward)' % (k, d[k]))
+        ids.append(d['retired_place_id'])
+        if d['retired_place_id'] in out:
+            err(w, 'place id %s is retired twice' % d['retired_place_id'])
+        out[d['retired_place_id']] = d['merged_into_place_id']
+        if d['retired_place_id'] == d['merged_into_place_id']:
+            err(w, '%s cannot be merged into itself' % d['retired_place_id'])
+        if d['retired_place_id'] in places_by_id:
+            err(w, 'retired place id %s is still a row of data/places.csv (a retired id leaves the table and is never reused)' % d['retired_place_id'])
+    if ids != sorted(ids):
+        err(where, 'rows must be sorted by retired_place_id')
+    for i, r in enumerate(rows, start=2):
+        if len(r) == len(h) and r[1] not in places_by_id:
+            err('%s line %d' % (where, i), 'merged_into_place_id %s is not a row of data/places.csv (a survivor is a live place, not a retired id)' % r[1])
+    return out
+
+
 def check_places(claims, vocabs):
     """data/places.csv and the claim -> place links: header and field values from schema/places.schema.json, ids and names unique, aliases unambiguous,
     the coordinate service, and that each claim's point equals its place's exactly when coord_override is blank. Returns the place rows (with _where)."""
@@ -553,6 +596,8 @@ def check_places(claims, vocabs):
     if len(ids) != len(set(ids)):
         err(where, 'duplicate place_id')
     by_id = {d['place_id']: d for d in out}
+    retired = check_place_merges(by_id)
+    alias_of = {}
     for d in out:
         seen = set()
         for a in [x.strip() for x in d['alt_names'].split(';') if x.strip()]:
@@ -563,9 +608,14 @@ def check_places(claims, vocabs):
             seen.add(a.casefold())
             if a.casefold() in names and names[a.casefold()] != d['place_id']:
                 err(d['_where'], 'alt name %r is the name of %s (an alias must not name another place)' % (a, names[a.casefold()]))
+            if a.casefold() in alias_of and alias_of[a.casefold()] != d['place_id']:
+                err(d['_where'], 'alt name %r is also an alias of %s (a name or alias identifies one place)' % (a, alias_of[a.casefold()]))
+            alias_of.setdefault(a.casefold(), d['place_id'])
     used = {}
     for c in claims:
         p = by_id.get(c['place_id'])
+        if c['place_id'] in retired:
+            err(c['_where'], 'place_id %s was retired: the place was merged into %s (data/place_merges.csv); use %s' % (c['place_id'], retired[c['place_id']], retired[c['place_id']]))
         if p is None:
             continue   # unknown id: reported by the foreign-key check
         used.setdefault(p['place_id'], []).append(c)
@@ -1083,6 +1133,7 @@ def main():
     tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()),
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
+              'place_merges': placesmod.load_merges(),
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
               'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],
               'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps}

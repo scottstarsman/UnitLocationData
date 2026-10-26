@@ -2,6 +2,20 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## review-actions (26 October 2026)
+
+The owner approved items 1 to 3 of the proposed order of work in `docs/review/responses.md` (item 4, the derived columns `position_interpretation` and `event_support`, is not approved and not built). One commit each.
+
+### Commit 1: documentation
+
+- **Root `README.md`**: a section "How to interpret the data" (a claim is a sourced assertion; no row is not no activity; what a point can be; what `confidence` scores; inferred boundaries of a relation; the preferred claim is a selection; `claim_id` is the identity), with three examples (C0001, CR0106, C0244), and a link to the new reuse page.
+- **`schema/README.md`**: three new sections: "Reading a command interval" (the columns that separate sourced from inferred boundaries, the last observation, and how the 201 open / 143 inferred ends relate to the 57 (39 + 18) `end_unknown` subset: standing against temporary relationship kinds), "What `confidence` means" (date and place, not a probability, not the event; 84 of 96 command-change claims are below 0.7) and "What a location point can mean" (the rule on `location_represents` and `location_basis` that classifies 549 of 566 claims, as guidance with the counts, not a column).
+- **`CONTRIBUTING.md`**: the claim-key subsection is headed "The duplicate guard"; `claim_id` is the identity. The rule and the validator are unchanged.
+- **`docs/reuse_and_attribution.md`** (new): what to credit and what applies, by source family and by derived export.
+- **`docs/review/README.md`**: "If you only have the documents" and two export options (the whole folder, about 5.2 MB; documentation plus read-only data). No zip was built.
+- **`docs/review/responses.md`**: statuses updated with the owner's decision of 26 October 2026.
+- **Not changed**: data, schema JSON, vocabularies, validator, scripts, `build/`, the review sample.
+
 ## review-responses (26 October 2026)
 
 Triage of the first outside review of the review packet, recorded in `docs/review/responses.md` (findings R1-F-001 to R1-F-008, the README suggestion R1-A-001, one finding that came out of the checking, R1-N-001, the answers to the ten questions, a table of every factual statement of the reviewer checked against the data, and a proposed order of work). Every decision there is a proposal pending the owner's decision. Documentation only: no data, schema, vocabulary, validator or script changed, and `build/` and the review sample are unchanged. The reviewer did not check the sampled rows against their sources, so the sample is still unreviewed.

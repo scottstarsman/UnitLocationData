@@ -2,6 +2,11 @@
 
 You are asked to assess the design and the data quality of this dataset. You need nothing but read access to the repository: this page is the brief, and every file it points to is in the repository. (In the GitHub repository the dataset sits in the `WorldWar2/` folder; every path below is relative to that folder.) You may be a person or another AI system. Please do not assume anything that is not written here or in the files.
 
+**If you only have the documents.** The checks in section 6 and the counts in section 4 need the whole dataset folder, not only this packet: without `data/`, `build/`, `schema/*.json` and `scripts/` you cannot run `validate.py`, `build.py --check` or `review_sample.py --check`, and you cannot confirm a count or a validator result. You can still judge the design, the documents and the questions, and check the sampled rows against their sources (the sample files carry the links and locators). Please say in your findings which of the two situations you were in. The packet can be handed over in two forms:
+
+- **Option A, the whole dataset folder** (`data/`, `build/`, `schema/`, `scripts/`, `docs/` and the files at the top of the folder; about 5.2 MB unpacked, without `archive/`). Every command in this brief works.
+- **Option B, documentation plus read-only data**: this packet (`docs/review/`), `schema/` including the JSON files, `docs/`, the tables of `data/` and `build/all_claims.csv`. The counts and the sample can be checked against the tables, but no script can be run.
+
 Your findings are checked against the sources before anything changes; they are treated as unverified feedback, so a finding that carries its evidence (a link and a page) is worth far more than an opinion. See [findings_template.md](findings_template.md) for the format and for what happens to a finding.
 
 | file | what it is |

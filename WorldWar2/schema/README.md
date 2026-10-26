@@ -257,6 +257,30 @@ A claim's list of relations is a statement about one dated claim row, not a stan
 Order and effect can differ: the 35th Division was attached to V Corps by an order on the evening of 27 July and V Corps took control on 28 July; the relation keeps both (`ordered_date` 27 July, `valid_from` 28 July). Where a table date and a narrative date differ, the relation keeps the one it states in `date_basis` and the other goes in the `note`.
 
 
+### Reading a command interval
+
+A relation says that a subject unit stood in a relationship to a higher unit from `valid_from` to `valid_to`. Not every day of that interval is evidenced: the claims that list the relation are observations (`data/command_relation_claims.csv`), and the interval joins them. The columns separate what a source says from what the table infers:
+
+| what a reader wants to know | where it is |
+|---|---|
+| Is the start sourced? | `valid_from_basis`: `order`, `assignment_table` or `narrative` are sourced; `claim_date` means no source dates the start and `valid_from` is the first claim that lists the relation; `inferred` is an inference |
+| Is the end sourced? | `valid_to_basis`: `order`, `assignment_table` or `narrative` are sourced; `inferred_from_next_claim` (the day before the unit's next claim that no longer lists the relation) and `open_at_last_claim` (still listed by the unit's latest claim, blank `valid_to`) are not |
+| The earliest and the latest plausible transition | `valid_from_latest` (start between `valid_from` and this date) and `valid_to_earliest` (end between this date and `valid_to`); both blank when a single date is given |
+| The last date on which a claim lists the relation (the last observation) | for an inferred end it is `valid_to_earliest`; for an open end it is the latest date among the relation's evidence claims in `data/command_relation_claims.csv` |
+| The date through which the relationship is evidenced | the last observation; after it the relationship is a carry-forward, not an observation |
+| Is a temporary relationship's end unknown? | `end_unknown` true (kinds that are temporary by nature, see "Flags") |
+| Is a parent change undated? | `change_undated` true (both relations of the change) |
+| How good is the evidence overall? | `support` in `build/command_relations.csv`: `documented` (narrative or order dates), `table` (CMH assignment-table dates) or `inferred` |
+
+**How the end counts relate.** On 26 October 2026 the master table has 375 relations. By end basis: 201 `open_at_last_claim`, 143 `inferred_from_next_claim`, 22 `assignment_table`, 9 `narrative`. `end_unknown` is true on 57 of them: 18 of the 201 open ends and 39 of the 143 inferred ends. The two sets measure different things:
+
+- A **temporary** relationship (`attached`, `operational_control`, `administrative_control`, `reserve`, `supporting`, `coordinating`) normally has an end, so a missing sourced end is a real gap: `end_unknown` is true. These are the 57 (open 18, inferred 39).
+- A **standing** relationship (`assigned`, `unspecified_subordination`, `unknown`, `organic`) has no expected end: it lasts until another standing relationship replaces it, so a missing end is not a gap and `end_unknown` is false. These are the other 287 open or inferred ends (open 183, inferred 104).
+- For both, `open_at_last_claim` and `inferred_from_next_claim` say how long the *evidence* reaches, not how long the relationship lasted. A standing relationship that is open at its last claim is read as "no replacement recorded", not as "confirmed through the end of the data".
+- The 118 starts with basis `claim_date` have the same limit on the other side: the relationship may have begun earlier.
+
+A hypothetical example: a corps listed as assigned to an army by the unit's claims of 1 October and 20 October, and not by the next one: the relation is evidenced on 1 and 20 October, and everything between them is carried by the interval; the end is the day before the next claim and is an inference (`inferred_from_next_claim`, `valid_to_earliest` 20 October).
+
 ### Intervals are inclusive; sequences, handovers and the ordered / effective / exercised states
 
 - **`valid_to` is the last day the relationship held (inclusive).** On the day one relationship ends and the next begins, both relations cover the day. Which of the two held at a given hour of that boundary day is unknown unless an hour is recorded: `valid_from_time` and `valid_to_time` (optional `HH:MM`, 24-hour; each needs its date; say in the `note` which clock the source uses; the claim's `stated_effective_time` and `stated_effective_to_time` say what the claim gave) carry it into `build/command_relations.csv`. `python scripts/who_controls.py US-ABN-101D 1944-12-20 12:00` reports UNKNOWN for a level where two headquarters meet on a boundary day and no hour is documented, rather than choosing. There is no `valid_until_exclusive` key: a second convention would make every end date ambiguous.
@@ -277,6 +301,33 @@ Order and effect can differ: the 35th Division was attached to V Corps by an ord
 - There is no separate location confidence column, and the Batch 2 corrections reconsidered one and again declined it: `confidence` is by definition the score for the location and its sources (see the rubric), `precision_km` and `location_basis` already carry the rest, and a location status column such as confirmed / last_known / interpolated / representative would repeat `location_basis` (documented_on_date, nearest earlier or later command post, operational_area or representative_point, inferred). How well a command event itself is documented is stated in the notes of command_change and activation rows from Batch 2 on, in the sentences `Event support:` and `Location support:` (high, moderate or low, with the reason); the validator warns when a command row with confidence 0.3 or less lacks `Event support:`. The relationship-level support is in `build/command_relations.csv` (`support`). `confidence`, `precision_km` and the basis together say how far the coordinate can be trusted. A coordinate from another date or a town centroid should carry a wider `precision_km` and, where the row's own date is not documented, `confidence` 0.5 or 0.3. Older rows (before Batch 1) are left blank unless their notes say where the coordinate came from.
 
 Validator checks: error when a temporal basis has no date, and for a `landing` row whose coordinate is a `town_centroid` or a command post from another date; warning when `location_date` differs from `date` but the basis is blank or `documented_on_date`, when a corps, army or army-group headquarters is only a town centroid with `precision_km` under 5, and when a corps or army sector is recorded as an exact `front_line_point`. `python scripts/audit_command_location.py` lists the counts per pattern.
+
+### What `confidence` means
+
+`confidence` is the score of the claim's **date and place**: how exactly the location is documented, how many independent source families support it, and (for 0.3) whether the date itself is approximate. The levels are rules, not probabilities, and they are comparable across rows only in that sense.
+
+- It **is not** the probability that the event happened, and it **is not** a measure of how well the event is documented. A command change with a precisely documented date and an approximate headquarters place (a town centre, a representative point) scores 0.3 or 0.5.
+- The effect is large: of the 96 `command_change` claims, 12 score 0.7 or more, 63 score 0.5 and 21 score 0.3. A filter `confidence >= 0.7` would remove 84 of them (88%), 16 of which carry an `Event support: high` sentence in `notes`.
+- How well the event itself is documented is said in words, in the `notes` sentence `Event support:` (high, moderate or low, with the source; 70 of the 566 claims have one, from Batch 2 on, and the validator asks for it on command rows at 0.3 or less). How well the command relationship is documented is the `support` column of `build/command_relations.csv`.
+- For a conflict group the cap applies: the preferred claim is at most 0.7, an alternate or disputed claim at most 0.5, whatever the quality of the sources.
+- The column keeps its name for compatibility. A separate numeric event confidence was declined three times (see "Location provenance" and the roadmap); the documented meaning is date and place.
+
+### What a location point can mean
+
+`latitude` and `longitude` are what the claim's point stands for (`location_represents`), and `location_basis` and `precision_km` say how it was fixed and how far to trust it. A point is **usually a place's centre, not the unit's measured position**. As guidance (not a stored column), the two columns classify the 566 claims on 26 October 2026 as follows:
+
+| the point is | rule | claims |
+|---|---|---|
+| an objective | `location_represents` objective | 68 |
+| representative of an area, a line or a route | `location_represents` sector_center (130), main_body (21), front_line_point (62) or approach_route (6), whatever the basis | 219 |
+| a headquarters documented on the claim's date | headquarters with basis `documented_on_date` | 38 |
+| a headquarters taken from another date or inferred | headquarters with basis `nearest_earlier_command_post` (38), `nearest_later_command_post` (40), `inferred` (3) or `operational_area` (1) | 82 |
+| a town centre standing for a headquarters | headquarters with basis `town_centroid` | 142 |
+| undetermined without reading the row | headquarters with a blank basis | 17 |
+
+(211 claims have a blank `location_basis`: 194 of them are classified by `location_represents` alone, the 17 headquarters are not.) The mapping of the groups to "observed", "inferred" or "representative" in a given use is the user's choice; the table says which facts are available.
+
+Using the points: plot a point as "the unit was here" only for a headquarters documented on the date, or a main body whose precision is small. A distance between two claim points is the distance between two units only when both points are of that kind, and the sum of the two `precision_km` radii is smaller than the distance. For everything else a point is an indication of the area of operations, with `precision_km` as its radius.
 
 ### Note labels
 

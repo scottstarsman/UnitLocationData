@@ -131,6 +131,16 @@ DEFERRED_ROWS = [
     (1, 'D05', 'C0031', '5th Ranger Battalion', '', '', 'attached', D6, '2nd and 5th Ranger Battalions'),
     (1, 'D06', 'C0217', '2nd Irish Guards (Guards Armoured Division)', '', '', 'attached',
      'from 16 September 1944 (as stated in the claim; the claim date is 17 September)', 'British 2nd Irish Guards (Guards Armoured Division) from 16 September'),
+    (2, 'D07', 'C0506', 'Combat Command B, 3rd Armored Division', '', '', 'attached', '26 July 1944 (the claim date; the claim notes say "for Cobra")',
+     'Combat Command B, 3rd Armored Division'),
+    (2, 'D08', 'C0507', '22nd Infantry Regiment, 4th Infantry Division', '', '', 'attached',
+     '26 July 1944 (the claim date; the claim notes say the 22nd and Combat Command A passed to XIX Corps by 28 July, Breakout-16 p304)', '22nd Infantry Regiment, 4th Infantry Division'),
+    (2, 'D09', 'C0493', '22nd Infantry Regiment (4th Infantry Division)', 'US-CCA-002D', '', 'attached', 'temporary, from noon 28 July 1944 (as stated in the claim)',
+     'US-CCA-002D (reinforced by the 22nd Infantry; temporary, from noon 28 July)'),
+    (2, 'D10', 'C0164', 'C Squadron, 2nd County of London Yeomanry', '', '', 'attached', '26 June 1944 (the claim date; the claim names Operation Epsom)',
+     '(C Sqn 2nd County of London Yeomanry)'),
+    (2, 'D11', 'C0211', '2nd Battalion, 915th Grenadier Regiment', '', '916th Grenadier Regiment (352nd Infantry Division; not a unit of the table)', 'attached',
+     'at midday on 6 June 1944 (as stated in the claim)', 'its 2nd Bn was split off at midday and went to the 916th Regiment'),
 ]
 
 
@@ -222,7 +232,93 @@ def item1(claims):
                'British 2nd Irish Guards (Guards Armoured Division) from 16 September')
 
 
-ITEMS = {1: item1}
+def item2(claims):
+    """The word "attached" out of composing_text: a relation where the subject is a unit of the table, a deferred row where it is not."""
+    nid = next_relation_id()
+    rels, links, roles = [], [], []
+    # 30th Infantry Division with XIX Corps on 13 June (CMH Cross-Channel Attack ch. IX): the corps became operational with the division attached
+    cr30 = 'CR%04d' % nid
+    rels.append(rel_row(cr30, 'US-INF-030D', 'US-COR-019C', 'attached', '1944-06-13', 'narrative',
+                        'CMH Cross-Channel Attack ch. IX p. 376-377: XIX Corps became operational with the 30th Division attached (the claim date, 13 June). '
+                        'No source dates the end: the interval is closed the day before the division\'s next claim (15 June, assigned to the corps, CR0262).',
+                        valid_to='1944-06-14', valid_to_earliest='1944-06-13', valid_to_basis='inferred_from_next_claim'))
+    links.append(link_row(cr30, 'C0105', "30th Infantry Division listed as a component of XIX Corps; the claim's earlier wording was 'US-INF-030D (attached)'",
+                          '1944-06-13', 'narrative'))
+    nid += 1
+    # Kampfgruppe Heintz with the 17th SS Panzergrenadier Division (CMH ch. IX)
+    crh = 'CR%04d' % nid
+    rels.append(rel_row(crh, 'GER-KG-HEINTZ', 'GER-SSPG-017D', 'attached', '1944-06-13', 'claim_date',
+                        'CMH Cross-Channel Attack ch. IX p. 378-379: after a road march of three to five days (the troops were unloaded on 9 June) Kampfgruppe Heintz, the mobile group of the 275th Division, '
+                        'was attached to the 17th SS Panzer Grenadier Division and put into the line southeast of Carentan; n. 78 adds that it was attached to the 352nd Division for supply. '
+                        'The source gives no day, so the start is the date of the claim that lists it.'))
+    links.append(link_row(crh, 'C0089', "Kampfgruppe Heintz listed as a component of the 17th SS Panzergrenadier Division 'after its arrival (CMH ch. IX)'; the claim's earlier wording was "
+                          "'attached battle group from the 275th Division: Kampfgruppe Heintz (GER-KG-HEINTZ)'"))
+    # relations that already exist: the claim of the higher unit is added as evidence (what it said, and the dates it gave)
+    links += [
+        link_row('CR0100', 'C0120', "101st Airborne Division listed as a component of VIII Corps; the claim's earlier wording was 'US-ABN-101D (attached)'"),
+        link_row('CR0277', 'C0490', "35th Infantry Division listed as a component of V Corps; the claim's earlier wording was 'US-INF-035D (attached)'", '1944-07-28', 'narrative'),
+        link_row('CR0032', 'C0161', "Kampfgruppe Weidinger listed as a component of II SS Panzer Corps; the claim's earlier wording was '(2nd SS Kampfgruppe Weidinger attached 29 June)'",
+                 '1944-06-29', 'narrative'),
+        link_row('CR0177', 'C0493', "Combat Command A listed as a component of XIX Corps with the 22nd Infantry reinforcing it; the claim's earlier wording was "
+                 "'Combat Command A, 2nd Armored Division, with the 22nd Infantry attached (temporary, from noon 28 July)'", '1944-07-28', 'narrative'),
+        link_row('CR0020', 'C0127', "Kampfgruppe Boehm listed as a component of the 352nd Infantry Division; the claim's earlier wording was "
+                 "'attached battle group from the 353rd Division: Kampfgruppe Boehm (GER-KG-BOEHM; from evening 16 June)'", '1944-06-16', 'narrative'),
+        link_row('CR0023', 'C0170', "Kampfgruppe Frey listed as a component of the 12th SS Panzer Division; the claim's earlier wording was "
+                 "'attached battle group from the 1st SS Division: Kampfgruppe Frey (GER-KG-FREY; from 28 June)'", '1944-06-28', 'narrative'),
+        link_row('CR0030', 'C0173', "Kampfgruppe Weidinger listed as a component of Panzer Lehr; the claim's earlier wording was "
+                 "'attached battle group from the 2nd SS Division: Kampfgruppe Weidinger (GER-KG-WEIDINGER; 27-28 June)'", '1944-06-27', 'narrative'),
+    ]
+    add_relations(rels)
+    add_links(links)
+    # references for the two new relations (R449 = CMH ch. IX)
+    claims.set('C0105', 'source_locator', '', 'R449: p. 376-377')
+    roles.append(('C0105', 'R449', 'command_relationship', 'names the 30th Division attached to XIX Corps from 13 June (%s)' % cr30))
+    claims.set('C0089', 'source', 'https://en.wikipedia.org/wiki/Battle_of_Bloody_Gulch | https://en.wikipedia.org/wiki/Battle_of_Carentan',
+               'https://en.wikipedia.org/wiki/Battle_of_Bloody_Gulch | https://en.wikipedia.org/wiki/Battle_of_Carentan | https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-9.html')
+    claims.set('C0089', 'reference_ids', 'R109;R111;R001', 'R109;R111;R449;R001')
+    claims.set('C0089', 'source_locator', '', 'R449: p. 378-379')
+    roles.append(('C0089', 'R449', 'command_relationship', 'names Kampfgruppe Heintz attached to the 17th SS Panzer Grenadier Division (%s)' % crh))
+    add_roles(roles)
+    old = claims.get('C0105', 'notes')
+    claims.set('C0105', 'notes', old, old + ' [Review item 2: the attachment of the 30th Division to XIX Corps from 13 June is relation %s (CMH ch. IX p. 376-377).]' % cr30)
+    old = claims.get('C0089', 'notes')
+    claims.set('C0089', 'notes', old, old + ' [Review item 2: the attachment of Kampfgruppe Heintz to this division is relation %s (CMH ch. IX p. 378-379).]' % crh)
+
+    # composing_text: the word removed (the relationship now lives in a relation, or in docs/deferred_relations.md)
+    claims.set('C0105', 'composing_text', 'US-INF-030D (attached); US-INF-029D (from 14 June)', 'US-INF-029D (from 14 June)')
+    claims.set('C0120', 'composing_text', 'US-ABN-101D (attached); US-ABN-082D (from 17\u201319 June)', 'US-ABN-082D (from 17\u201319 June)')
+    claims.set('C0490', 'composing_text', 'US-INF-035D (attached)', '')
+    claims.set('C0037', 'composing_text', 'GER-INF-716D (remnant); GER-PZ-LEHRD (attached, planned)', 'GER-INF-716D (remnant); GER-PZ-LEHRD (planned)')
+    claims.set('C0030', 'composing_text', 'US-COR-007C (82nd and 101st Airborne attached to VII Corps)', 'US-COR-007C (with the 82nd and 101st Airborne Divisions)')
+    claims.set('C0506', 'composing_text', 'Combat Command B, 3rd Armored Division (attached)', 'Combat Command B, 3rd Armored Division')
+    claims.set('C0507', 'composing_text', '22nd Infantry Regiment, 4th Infantry Division (attached)', '22nd Infantry Regiment, 4th Infantry Division')
+    claims.set('C0094', 'composing_units', '', 'UK-ARM-004B')
+    claims.set('C0094', 'composing_text', '29th Armoured Brigade; 159th Infantry Brigade; (4th Armoured Brigade attached for Epsom)',
+               '29th Armoured Brigade; 159th Infantry Brigade; UK-ARM-004B (for Operation Epsom)')
+    claims.set('C0164', 'composing_text', '7th Royal Tank Regiment; 9th Royal Tank Regiment; (C Sqn 2nd County of London Yeomanry attached)',
+               '7th Royal Tank Regiment; 9th Royal Tank Regiment; (C Sqn 2nd County of London Yeomanry)')
+    claims.set('C0161', 'composing_units', 'GER-SSPZ-009D; GER-SSPZ-010D', 'GER-SSPZ-009D; GER-SSPZ-010D; GER-KG-WEIDINGER')
+    claims.set('C0161', 'composing_text', '(2nd SS Kampfgruppe Weidinger attached 29 June)', 'GER-KG-WEIDINGER (2nd SS; from 29 June)')
+    claims.set('C0493', 'composing_units', 'US-INF-030D', 'US-INF-030D; US-CCA-002D')
+    claims.set('C0493', 'composing_text',
+               'US-INF-030D (from noon 28 July); Combat Command A, 2nd Armored Division, with the 22nd Infantry attached (temporary, from noon 28 July); 113th Cavalry Group (from noon 28 July); 29th and 28th Infantry Divisions (displacing into the zone, control not dated)',
+               'US-INF-030D (from noon 28 July); US-CCA-002D (reinforced by the 22nd Infantry; temporary, from noon 28 July); 113th Cavalry Group (from noon 28 July); 29th and 28th Infantry Divisions (displacing into the zone, control not dated)')
+    claims.set('C0211', 'composing_text', 'reinforced 915th Grenadier Regiment (352nd Division); its 2nd Bn was split off at midday and attached to the 916th Regiment',
+               'reinforced 915th Grenadier Regiment (352nd Division); its 2nd Bn was split off at midday and went to the 916th Regiment')
+    # the five that also embed a unit id (item 3 turns them into id entries): only the word goes now
+    claims.set('C0089', 'composing_text', 'SS-Panzergrenadier Regiment 37; SS-Panzergrenadier Regiment 38; attached battle group from the 275th Division: Kampfgruppe Heintz (GER-KG-HEINTZ) after its arrival (CMH ch. IX)',
+               'SS-Panzergrenadier Regiment 37; SS-Panzergrenadier Regiment 38; battle group from the 275th Division: Kampfgruppe Heintz (GER-KG-HEINTZ) after its arrival (CMH ch. IX)')
+    claims.set('C0100', 'composing_text', 'Combat Command B; 41st Armored Infantry Regiment; 66th Armored Regiment; 67th Armored Regiment; Combat Command A (US-CCA-002D) attached to the 101st Airborne Division at Carentan on 13 June',
+               'Combat Command B; 41st Armored Infantry Regiment; 66th Armored Regiment; 67th Armored Regiment; Combat Command A (US-CCA-002D) with the 101st Airborne Division at Carentan on 13 June')
+    claims.set('C0127', 'composing_text', '914th Grenadier Regiment; 915th Grenadier Regiment; 916th Grenadier Regiment; 352nd Artillery Regiment; battle group formed from this division: Kampfgruppe Meyer (GER-KG-MEYER; reinforced 915th Regiment, 6 June); attached battle group from the 353rd Division: Kampfgruppe Boehm (GER-KG-BOEHM; from evening 16 June)',
+               '914th Grenadier Regiment; 915th Grenadier Regiment; 916th Grenadier Regiment; 352nd Artillery Regiment; battle group formed from this division: Kampfgruppe Meyer (GER-KG-MEYER; reinforced 915th Regiment, 6 June); battle group from the 353rd Division: Kampfgruppe Boehm (GER-KG-BOEHM; from evening 16 June)')
+    claims.set('C0170', 'composing_text', 'SS-Panzer Regiment 12; SS-Panzergrenadier Regiment 25; SS-Panzergrenadier Regiment 26; SS-Panzer Artillery Regiment 12; SS-Reconnaissance Battalion 12; attached battle group from the 1st SS Division: Kampfgruppe Frey (GER-KG-FREY; from 28 June)',
+               'SS-Panzer Regiment 12; SS-Panzergrenadier Regiment 25; SS-Panzergrenadier Regiment 26; SS-Panzer Artillery Regiment 12; SS-Reconnaissance Battalion 12; battle group from the 1st SS Division: Kampfgruppe Frey (GER-KG-FREY; from 28 June)')
+    claims.set('C0173', 'composing_text', 'Panzergrenadier Regiment 901; Panzergrenadier Regiment 902; Panzer Regiment 130; attached battle group from the 2nd SS Division: Kampfgruppe Weidinger (GER-KG-WEIDINGER; 27-28 June)',
+               'Panzergrenadier Regiment 901; Panzergrenadier Regiment 902; Panzer Regiment 130; battle group from the 2nd SS Division: Kampfgruppe Weidinger (GER-KG-WEIDINGER; 27-28 June)')
+
+
+ITEMS = {1: item1, 2: item2}
 
 
 def main():

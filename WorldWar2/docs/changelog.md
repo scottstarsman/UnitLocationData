@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: G012 dissolved, the 4th Armored Division's landing and arrival (26 October 2026)
+
+Follow-up to open item 7 (third sub-item), decided by Scott on 26 October 2026. One commit. **Two claims changed (status and group only); no date, place, confidence or reference changed.**
+
+- **`C0243` (landing, 11 July 1944).** Old: `conflict_group_id` G012, `claim_status` alternate. New: no group, `claim_status` preferred.
+- **`C0244` (arrival, 13 July 1944).** Old: `conflict_group_id` G012, `claim_status` preferred. New: no group, `claim_status` preferred.
+- **Reason.** The rows describe two events with different event types (the first landing at Utah Beach, USHMM and Wikipedia; the arrival with the command post at Mesnil-St-Martin, CMH ETO-OB), and no source read says the dates are the same event or that either is wrong (re-read on 26 October 2026, see the entry for item 7c). A conflict group is for rival claims about one event. The unit, date and event type still make each claim key unique.
+- **Notes and labels.** The notes of both rows drop "(preferred)" and "(alternate row)", keep their `Event date:` and `Event definition:` sentences, and the review sentence now records the decision (old and new status and group). The frozen note labels are unchanged; the validator accepts the notes.
+- **Counts.** Conflict groups 14 to 13; claims in a group 29 to 27; claims by status preferred 555 to 556, alternate 11 to 10. `README.md` (the C0244 example), `docs/methodology.md` (the list of source conflicts) and `docs/roadmap.md` (the open list) say that the group was dissolved.
+- **Not changed.** Relations: `CR0133` and `CR0134` are linked to both claims already, and the derived relation table reads only preferred claims as evidence, so `C0243` now also appears in the evidence list of `CR0133` and `CR0134` (the link rows are unchanged). The place `PL0222` (an inferred 50 km point) and the confidence 0.3 of `C0244` stay.
+- **Checked.** Validator 0 errors, same 3 warnings (13 conflict groups); 68 `semantic_tests` expectations hold; `build`, `build_references`, `review_sample --check` clean. `who_controls`, 5,020 grid answers before and after: 40 changed, all for the 4th Armored Division (the weekly grid dates 5 June 1944 to 5 March 1945, the dates on which its Third Army and XV Corps relations are shown); the only difference is that `C0243` is added to the evidence lists of `CR0133` and `CR0134`; no relation, chain or certainty changes.
+
 ## open-items-oct26: 21st Panzer Division, I SS Panzer Corps from 8 June 1944 (26 October 2026)
 
 Follow-up to open item 7 (second sub-item), decided by Scott on 26 October 2026 ("approved your three recommendations"). One commit. **Two relations changed, one removed, one claim changed; the values below are inferred and annotated.**

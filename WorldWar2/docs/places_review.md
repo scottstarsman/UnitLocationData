@@ -6,7 +6,7 @@ Produced with the places table (`scripts/migrate_places.py`, branch `places-tabl
 
 - 421 distinct `location_name` values became 383 places (288 point, 79 area, 16 line); 26 places absorb 2-5 old names each (list 1), 14 aliases on 13 places, 4 places with a hand-worked point (list 5).
 - 566 claims: 286 places have one claim, 62 have two, 16 three, 9 four, and 10 have five or more (largest PL0045 Brest, PL0258 Omaha Beach: 10 claims each).
-- After the place merges of item 8 (section 7): 379 places (285 point, 78 area, 16 line); retired ids in `data/place_merges.csv`: 4.
+- After the place merges of item 8 (section 7): 378 places (285 point, 77 area, 16 line); retired ids in `data/place_merges.csv`: 5.
 - 20 claims keep their own point with a `coord_override` (list 3).
 - Countries by the point's GeoNames nearest place: FR 332, BE 28, NL 10, DE 5, GB 4, LU 4. Places near a border (Saint-Vith, Luxembourg, the Netherlands and Belgium, Aachen) should be glanced at: the lookup uses the nearest GeoNames place, not a boundary polygon.
 
@@ -110,7 +110,7 @@ Places with more than one old name: 26
 
 ## 2. Co-located places left separate (the main decision list)
 
-A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 36 groups, 99 places after the merges of section 7; the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:
+A coordinate group is places whose points agree to 0.001 degree (about 100 m). They are separate because the names differ in kind (a town and the sector or front built on it), or because it is not certain that two names are the same place. 35 groups, 97 places after the merges of section 7 (before: 38 groups, 105 places; the groups at Brest, Hill 112 and Omaha Beach are gone, those at Caumont and Mantes-la-Jolie lost a place, the other 33 are unchanged); the full list follows. The five likely merge candidates were decided (item 8); the table shows what was done to each:
 
 | Places | Why they may be one place |
 |---|---|
@@ -118,7 +118,7 @@ A coordinate group is places whose points agree to 0.001 degree (about 100 m). T
 | PL0208 Mantes-Gassicourt / PL0209 Mantes-la-Jolie | **Merged** into PL0209 (see section 7); Gassicourt is a former village annexed to Mantes in 1930 (an earlier version of this table said 1962) and now a district of Mantes-la-Jolie; the town was called Mantes-Gassicourt until 1953; 0 m apart (PL0207 is the bridgehead area on the same point) |
 | PL0045 Brest, Finistère / PL0294 Recouvrance, Brest | **Merged** into PL0045 (see section 7); Recouvrance is the district of Brest on the west bank of the Penfeld; 0 m apart |
 | PL0258 Omaha Beach / PL0259 Omaha Beach sector | **Merged** into PL0258 (see section 7); the beach and its sector share the point (both areas) |
-| PL0173 Hill 112 / PL0174 Hill 112 / Odon salient | same point; the second is the wider salient, an area |
+| PL0173 Hill 112 / PL0174 Hill 112 / Odon salient | **Merged** into PL0173 (see section 7); same point; the second is the wider salient, an area |
 
 The groups (rounded point, then each place with its kind, name and claim count):
 
@@ -151,7 +151,6 @@ The groups (rounded point, then each place with its kind, name and claim count):
 (49.409, -1.318) PL0101 area "Cotentin airborne landing area" (1) | PL0320 point "Sainte-Mère-Église" (2)
 (49.157, -1.059) PL0131 area "Elle River / Villiers-Fossard sector" (2) | PL0374 point "Villiers-Fossard" (4)
 (49.422, -1.409) PL0160 area "Gourbesville / Pont-l-Abbe area" (1) | PL0381 area "West of the Merderet" (2)
-(49.124, -0.461) PL0173 point "Hill 112" (1) | PL0174 area "Hill 112 / Odon salient" (1)
 (49.319, -1.101) PL0177 point "Isigny-sur-Mer" (1) | PL0178 area "Isigny / Vire–Elle sector" (2)
 (51.565, 5.461) PL0186 area "Landing zones between Son and Veghel (centred at Sint-Oedenrode), Noord-Brabant, Netherlands" (1) | PL0336 point "St-Oedenrode, Nord Brabant, Netherlands" (1)
 (49.176, -0.625) PL0192 area "Lingeves / Tilly-sur-Seulles sector" (1) | PL0349 point "Tilly-sur-Seulles" (4)
@@ -223,3 +222,5 @@ Item 8 of `docs/unit_references_review.md`: the five likely merge candidates of 
 - **PL0294 Recouvrance, Brest -> PL0045 Brest, Finistère.** Recouvrance is a historic district of Brest on the Penfeld (https://fr.wikipedia.org/wiki/Recouvrance_(Brest)); both places used the Wikipedia point of Brest, 0 m apart (a Nominatim read of the district is 1.2 km away). `Recouvrance` is now an alias of PL0045. One claim moved (C0408, 29th Infantry Division, 18 September 1944: Von der Mosel surrendered the troops in Recouvrance); it gets the qualifier `Recouvrance district` and keeps its `precision_km` 3.
 
 - **PL0259 Omaha Beach sector -> PL0258 Omaha Beach.** The beach and its sector were two areas on the same point (reference R001). One claim moved (C0006, 352nd Infantry Division, 6 June 1944); it keeps its qualifier `division HQ Le Molay-Littry` and its `precision_km` 10. No alias was added (the sector name is kept as `retired_name` in `data/place_merges.csv`). **Open: C0006.** Its notes say the division defended Omaha Beach with its headquarters at Le Molay-Littry, which is inland; the claim sits on the beach point (represents `sector_center`). The headquarters may deserve its own place and point later; the coordinates were not changed.
+
+- **PL0174 Hill 112 / Odon salient -> PL0173 Hill 112.** Same point (reference R002). The survivor is the point Hill 112; the salient (the retired area) becomes context on the claim. One claim moved (C0196, 10th SS Panzer Division, 29 June 1944: the counter-attack on the west flank of the British salient); it gets the qualifier `Odon salient` and keeps its `precision_km` 5. C0189 already had the qualifier `Odon salient`. No alias was added (the retired name is kept in `data/place_merges.csv`).

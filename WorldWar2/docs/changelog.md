@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## open-items-oct26: status and counts in the documents (26 October 2026)
+
+One commit, documents only; **no data changed.** Statements that the branch made stale were brought up to date (old value to new value):
+
+- `README.md`: 566 claims to 573; the CR0106 example (end "16 December, inferred, `end_unknown` true" to "8 November, read from the table").
+- `schema/README.md`, "How the end counts relate": 375 relations to 380; end bases 201/143/22/9 to 200/139/30/11 (open, inferred, assignment_table, narrative); `end_unknown` 57 (18 open, 39 inferred) to 54 (17, 37); standing ends 287 (183, 104) to 285 (183, 102); `claim_date` starts 118 to 116.
+- `docs/review/README.md`: the 101st Airborne gap (now carried by relations, still no position claim); `change_undated` on ten relations to eight (CR0047 and CR0048 are dated).
+- `docs/roadmap.md`: the LXXXIV Corps line (done), the "Open" line (101st, German parent changes, G012).
+- `docs/review/verification_results.md` and `docs/review/responses.md`: V-013 (CR0105, CR0156, CR0200, CR0201 decided and applied), V-003 (PL0195 searched again), the "Still open" paragraph, the overlap sentence of item 1, and a new list of decisions pending for Scott (21st Panzer, G012, the 30th Division's V Corps row).
+- **Not updated:** the snapshot documents `docs/normalization_review.md`, `docs/places_review.md`, `docs/unit_references_review.md` and the "566" in `docs/methodology.md` (the count of `parent_unit_id` values not derivable by a rule, 41 of 566, was not recomputed for the 7 new claims).
+
 ## open-items-oct26: source review of the documented overlaps (26 October 2026)
 
 Open item 8. One commit. **Explanation text changed on 19 of the 24 rows of `data/command_relation_overlaps.csv`; no relation, date, basis or kind changed, and no row was added or removed in this commit.** Method: each row was compared with the CMH ETO-OB assignment-table row of the unit (pages R-ids in `docs/review/verification_results.md`) or, for the corps rows, with the narrative the relation cites (Siegfried Line p. 378, Ardennes p. 306 and 399, Riviera p. 253, Breakout-31 p. 672, Third Army After Action Report). Siegfried Line p. 378 was re-read on 26 October 2026.

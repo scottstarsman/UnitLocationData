@@ -378,11 +378,11 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 ### S23. C0342: 1st Infantry Division, 1944-08-07
 
 - **Unit:** 1st Infantry Division (`US-INF-001D`), US, division; parent in the claim: `US-COR-007C`; commander field: Major General Clarence R. Huebner
-- **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.5
+- **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.3
 - **Activity:** division command post at Logis de la Bocage
-- **Place:** Logis de la Bocage, Manche (`PL0195`, Lower Normandy, FR); point 48.7522, -1.4564; precision 10 km; point represents: headquarters; qualifier: vicinity; coordinate source: R002: OpenStreetMap Nominatim (Logis de la Bocage, Manche, France)
+- **Place:** Logis de la Bocage, Manche (`PL0195`, Lower Normandy, FR); point 48.6775, -1.0200; precision 25 km; point represents: headquarters; qualifier: vicinity; coordinate source: Stand-in point, not the site: the CMH lists the 1st Infantry Division command post on 4 and 7 August 1944 only as "Logis de la Bocage (vic), Manche" and no gaze [...]
 - **Command relationships stated by the claim:** unspecified_subordination US-COR-007C from 1944-08-01; assigned US-ARMY-001A from 1944-08-01; assigned US-AG-012G from 1944-08-01
-- **Notes:** CMH ETO-OB lists the command post at vicinity of Logis de la Bocage, Manche on this date. CMH gives the CP only as a vicinity of the town.
+- **Notes:** CMH ETO-OB lists the command post at vicinity of Logis de la Bocage, Manche on this date. CMH gives the CP only as a vicinity of the town. [Review (V-003): the CMH names the place but gives no site, and the earlier point (a house in Sartilly, about 21 km west of Brécey) was out of the division's sequence. The point is now a stand-in: Juvigny-le-Tertre (Wikipedia en), the place of the division command post listed on 3 August ("Juvigny (vic west)"), four days earlier. location_basis is nearest_earlier_command_post (location_date 1944-08-03), precision_km 10 -> 25 and confidence 0.5 -> 0.3 (rubric: a CP point 3 to 5 days away). The command post of 7 August itself is not located.]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
@@ -411,9 +411,9 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Unit:** 90th Infantry Division (`US-INF-090D`), US, division; parent in the claim: `US-COR-015C`; commander field: Brigadier General Raymond S McLain
 - **Claim:** `hq_move` / `OP-CAMP-NORTHERN-FRANCE`; status preferred; confidence 0.7
 - **Activity:** division command post at Sees
-- **Place:** Sees, Sarthe (`PL0306`, Lower Normandy, FR); point 48.5705, 0.1980; precision 3 km; point represents: headquarters; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Sees, Sarthe, France)
+- **Place:** Sées, Orne (`PL0306`, Lower Normandy, FR); point 48.6034, 0.1735; precision 3 km; point represents: headquarters; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Sées, Orne, France); Wikipedia (en) Sées 48.6053, 0.1719 agrees (0.3 km)
 - **Command relationships stated by the claim:** unspecified_subordination US-COR-015C from 1944-08-01; assigned US-ARMY-003A from 1944-08-01; assigned US-AG-012G from 1944-08-01
-- **Notes:** CMH ETO-OB lists the command post at Sees, Sarthe on this date.
+- **Notes:** CMH ETO-OB lists the command post at Sees, Sarthe on this date. [Review (V-004): latitude and longitude moved from the building Pôle du Pays de Sées (about 4 km south-east of the town, outside the 3 km precision) to the town centre of Sées; the place is now named "Sées, Orne" (the CMH list gives "Sees, Sarthe", but Sées is in the department of Orne, as the CMH list of the 5th Armored Division also gives: "Sees (vic) Orne"); nothing else changed.]
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |

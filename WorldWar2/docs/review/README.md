@@ -97,7 +97,7 @@ Claims by branch: Army 400, Armoured 110, Airborne 34, Waffen-SS 19, Luftwaffe 3
 
 Claims by event type: hq_move 130, attack 100, command_change 96, capture 43, landing 42, other 32, defense 31, arrival 29, counterattack 16, relocation 14, regroup 11, activation 6, withdrawal 6, subordinate_assignment 3, surrender 3, destruction 2, hq_observation 1, redesignation 1.
 
-Claims by status: preferred 548, alternate 11, disputed 7. Claims by confidence: 0.3 62, 0.5 314, 0.7 181, 0.9 9.
+Claims by status: preferred 548, alternate 11, disputed 7. Claims by confidence: 0.3 63, 0.5 313, 0.7 181, 0.9 9.
 
 Placeholder units by nationality: Germany 177, US 27, France 13, UK 10, Canada 7, Allied 3, Poland 2, Belgium 1, Czechoslovakia 1, Netherlands 1.
 
@@ -133,7 +133,7 @@ These are known. Please do not report them as new findings unless you have a fix
 - Open timing points on the Ardennes rows: the hour of the 101st Airborne / VIII Corps handover on 20 December (Green Book "during the 20th" against the CMH table's 17 December); the hour of VIII Corps' passage to Third Army; the VII Corps handover of the 84th Division (`docs/roadmap.md`, "Batch 3").
 
 **Places and coordinates** (`docs/places_review.md`)
-- **PL0285 "Pont Herbert, Manche"** (claim C0225) has a point 172 m from Coutances, 25 km from Pont-Hébert; the point or the name is probably wrong. **PL0314 "St Anthonis, Nort Brabant"** has a point in Belgium (51.18 N 4.19 E) although the name says North Brabant (the Netherlands, about 51.6 N 5.9 E). Both are unresolved.
+- **PL0285 "Pont Herbert, Manche"** (claim C0225) and **PL0314 "St Anthonis, Nort Brabant"** had wrong points (27 km and 127 km off; the second was in Belgium). Both were re-geocoded on the `sample-verification` branch; see `verification_results.md`.
 - **C0006** (352nd Infantry Division, 6 June 1944): the notes put the division headquarters at Le Molay-Littry, inland, but the claim sits on the Omaha Beach point; the qualifier `division HQ Le Molay-Littry` is the only trace of it.
 - Five places were merged (retired ids in `data/place_merges.csv`); the other groups of places that share a point were reviewed and kept (`docs/places_review.md`, sections 2 and 4).
 - `scripts/check_coordinates.py` prints 3 warnings (speed between consecutive rows of US-ARM-004D, US-INF-030D, US-INF-094D) and lists 5 explained exceptions. Points are place-centre geocodes (Wikipedia, OpenStreetMap), not unit positions; `precision_km` is the honest radius, not a measured error.

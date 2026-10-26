@@ -39,3 +39,6 @@ jobs:
             git diff --stat -- build
             exit 1
           fi
+      # fails the build: the answers of who_controls.py for four command scenarios (scripts/semantic_tests.py)
+      - name: Semantic tests (command scenarios)
+        run: python scripts/semantic_tests.py

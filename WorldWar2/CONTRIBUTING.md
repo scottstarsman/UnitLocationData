@@ -16,9 +16,9 @@ Thank you for helping. This project is only useful if every row can be checked, 
 
 ## Claim identity
 
-### The key: unit, date and event type
+### The duplicate guard: unit, date and event type
 
-A unit has at most one claim per `date` and `event_type`: `(unit_id, date, event_type)` is unique, and `python scripts/validate.py` fails with both claim ids when a new row repeats it. Before you add a row, search the unit's file for the same date and event type. If it exists, correct that row (a source gives a better place, a source adds a fact) instead of adding a second one. A repeat is allowed in two cases:
+**The identity of a claim is its `claim_id`** (`C0001` ...), and nothing else: a claim keeps its id when it is corrected. The combination `(unit_id, date, event_type)` is a guard against entering the same claim twice, not a statement that a unit cannot do two things of one kind in a day (a legitimate repeat is recorded in the exception table below). A unit has at most one claim per `date` and `event_type`: `(unit_id, date, event_type)` is unique, and `python scripts/validate.py` fails with both claim ids when a new row repeats it. Before you add a row, search the unit's file for the same date and event type. If it exists, correct that row (a source gives a better place, a source adds a fact) instead of adding a second one. A repeat is allowed in two cases:
 
 - **The sources disagree**: put both claims in one conflict group (rule 2). That is the only thing needed.
 - **Different actions of one kind on one day** (two attacks at different places, one row per action, see "One row, one action" in `docs/methodology.md`): add the pair to `data/claim_key_exceptions.csv` (`claim_id,other_claim_id,reason`, lower id first) and say in the reason what differs. The validator rejects a pair that does not need the exception.
@@ -89,6 +89,7 @@ python scripts/check_coordinates.py    # warnings only; add --geocode (network, 
 python scripts/build.py
 git diff --stat build/        # build outputs must be committed with your change
 python scripts/build.py --check
+python scripts/semantic_tests.py   # expected answers of who_controls.py for four command scenarios (fails CI); if you change the data on purpose, change the expectation in the same commit and say why
 python scripts/build_references.py --check-links   # optional, network: re-check reference URLs (writes link_status into data/references_meta.csv; rerun build.py after)
 python scripts/audit_command_location.py   # review prompts: command and location-date patterns
 python scripts/audit_temporal_relationships.py   # read-only; nine cross-claim temporal checks (overlaps, undated transfers, sequences recorded as conflicts); add --out FILE for a markdown report

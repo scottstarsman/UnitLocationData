@@ -35,6 +35,20 @@ archive/v5_flat/                          the flat CSVs the per-unit files were 
 - **Conflict group**: claims that disagree about the same unit and event (for example two sources dating a commander's death differently). One may be preferred; the others are alternate or disputed.
 - **theater**: controlled vocabulary (`western_europe`, `mediterranean`, `north_africa`, `eastern_front`, `pacific`, `cbi`, `atlantic`, `other`). All current rows are `western_europe`.
 
+## How to interpret the data
+
+The dataset is a set of **sourced observations**, not a continuous reconstruction of where every unit was. Read each row with these points (the details and the counts are in [schema/README.md](schema/README.md), "Reading a command interval", "What `confidence` means" and "What a location point can mean"; the reuse terms are in [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md)):
+
+- **A claim is a sourced assertion** that a source puts this unit at this place on this date doing this. It is not a verified unit state for the days around it.
+- **No row for a date does not mean no activity, and does not mean the unit stayed put.** Rows are event-based; quiet days are absent on purpose, so a position between two rows is unknown, not unchanged. Do not interpolate unless you say so.
+- **A point is not always where the unit was.** It can stand for a headquarters, a main body, the centre of a sector, a point on a front line, an objective, a march route or a town centre (`location_represents`, `location_basis`, `precision_km`). A distance between two claim points is not a distance between two units.
+- **`confidence` scores the date and the place** (how exactly the location is documented and by how many independent source families); it is not a probability, and it says nothing about whether the event happened. A command change with a well-documented date and an approximate headquarters place scores 0.3 or 0.5. Do not filter events by it (84 of the 96 command-change claims are below 0.7); the notes sentence `Event support:` says how well an event is documented, where there is one.
+- **A command relationship is an interval, and its boundaries may be inferred.** `valid_to_basis` says whether an end is sourced, inferred from the unit's next claim, or open at the last claim that lists it; a missing end never means the relationship held indefinitely. A relationship is evidenced up to the last claim that lists it.
+- **The `preferred` claim is the dataset's selection, not a fact.** In a conflict group it is the best-supported of competing claims; the alternates are kept and say what the other sources say.
+- **`claim_id` is the identity of a claim.** `(unit_id, date, event_type)` is only a guard against entering the same claim twice.
+
+Three examples. **C0001** (2nd Canadian Armoured Brigade, 6 June 1944, landing): the point is the centre of the Juno Beach sector (`sector_center`, 10 km), not the position of the brigade's units. **CR0106** (the 101st Airborne Division attached to British Second Army from 18 September 1944): the last claim that lists it is dated 20 September; its end, 16 December, is inferred from the division's next claim and `end_unknown` is true, so the attachment is evidenced for 18 to 20 September and not asserted for the weeks after. **C0244** (4th Armored Division arrives on the Continent, 13 July 1944; confidence 0.3): it is the preferred claim of conflict group G012, whose alternate **C0243** gives 11 July from other sources; the place is the vicinity of an unresolved CMH place name (50 km).
+
 ## Quick start
 
 Requires Python 3.8+ and nothing else (standard library only). Run the commands from this directory (`WorldWar2/` in the repository).
@@ -43,6 +57,7 @@ Requires Python 3.8+ and nothing else (standard library only). Run the commands 
 python scripts/validate.py          # exit code 0 = data is valid
 python scripts/build.py             # regenerate build/ (all_claims.csv, claims.geojson)
 python scripts/build.py --check     # exit code 1 if build/ is stale (used by CI)
+python scripts/semantic_tests.py    # what who_controls.py answers for four command scenarios; exit code 1 on a changed answer (used by CI, run build.py first)
 python scripts/check_coordinates.py # coordinate warnings only (add --geocode before a release)
 ```
 
@@ -65,6 +80,7 @@ Every row needs a source, conflicting claims become separate rows, and nothing i
 
 - [docs/methodology.md](docs/methodology.md): how claims are built, precision, confidence, conflicts, strength figures
 - [docs/sources.md](docs/sources.md): sources used, reliability, licensing; the full list of references is [data/references.csv](data/references.csv)
+- [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md): what to credit and what applies when you reuse a derived file, by source family and by export
 - [docs/roadmap.md](docs/roadmap.md): scale-up plan and known gaps
 - [docs/coverage.md](docs/coverage.md): generated coverage of the unit table (placeholder vs active)
 - [docs/review/README.md](docs/review/README.md): the brief for an independent reviewer (scope, tables, rules, known limitations), with a checklist, a seeded sample to check against the sources, and ten design questions

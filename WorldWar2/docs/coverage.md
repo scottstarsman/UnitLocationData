@@ -34,11 +34,11 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | division | 2 | 0 | 13 | 15 | 7 | 37 |
 | UK | brigade | 6 | 0 | 3 | 9 | 6 | 3 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 6 |
-| US | army | 1 | 0 | 4 | 5 | 3 | 33 |
-| US | corps | 3 | 0 | 12 | 15 | 5 | 96 |
-| US | division | 23 | 0 | 37 | 60 | 24 | 296 |
+| US | army | 0 | 0 | 5 | 5 | 3 | 38 |
+| US | corps | 2 | 0 | 13 | 15 | 5 | 101 |
+| US | division | 6 | 0 | 54 | 60 | 24 | 354 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **242** | **0** | **114** | **356** | **234** | **573** |
+| **All** | | **223** | **0** | **133** | **356** | **234** | **641** |
 
 ## Operations
 
@@ -47,27 +47,27 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 7 | 316 |
-| operation | 12 | 10 | 139 |
-| battle | 12 | 12 | 88 |
+| campaign | 9 | 8 | 348 |
+| operation | 16 | 14 | 161 |
+| battle | 14 | 14 | 102 |
 | phase | 2 | 2 | 30 |
-| **All** | **36** | **31** | **573** |
+| **All** | **42** | **38** | **641** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 379 places and 24 alias names for 573 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 438 places and 58 alias names for 641 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 287 | 439 |
-| area | 76 | 116 |
+| point | 343 | 501 |
+| area | 79 | 122 |
 | line | 16 | 18 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 326 | 496 |
-| Belgium (BE) | 27 | 37 |
-| Netherlands (NL) | 13 | 19 |
-| Germany (DE) | 5 | 7 |
+| France (FR) | 340 | 512 |
+| Belgium (BE) | 36 | 50 |
+| Germany (DE) | 37 | 41 |
+| Netherlands (NL) | 15 | 22 |
+| Luxembourg (LU) | 6 | 9 |
 | United Kingdom (GB) | 4 | 7 |
-| Luxembourg (LU) | 4 | 7 |

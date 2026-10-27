@@ -6098,7 +6098,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -6738,7 +6738,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -7579,6 +7579,1186 @@
     "country": "NL",
     "region": "Gelderland",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.79,
+     47.51
+    ]
+   },
+   "properties": {
+    "place_id": "PL0386",
+    "name": "Brittany port pockets (Lorient to Saint-Nazaire), representative point",
+    "alt_names": "Lorient and Saint-Nazaire containment area",
+    "kind": "area",
+    "precision_km": 50,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5842,
+     49.9622
+    ]
+   },
+   "properties": {
+    "place_id": "PL0387",
+    "name": "Morhet, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3769,
+     48.9211
+    ]
+   },
+   "properties": {
+    "place_id": "PL0388",
+    "name": "Wingen-sur-Moder, Bas-Rhin",
+    "alt_names": "Wingen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3206,
+     48.8579
+    ]
+   },
+   "properties": {
+    "place_id": "PL0389",
+    "name": "La Petite Pierre, Bas-Rhin",
+    "alt_names": "Lützelstein",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8085,
+     50.0587
+    ]
+   },
+   "properties": {
+    "place_id": "PL0390",
+    "name": "Bourcy, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7428,
+     48.9008
+    ]
+   },
+   "properties": {
+    "place_id": "PL0391",
+    "name": "Morsbronn-les-Bains, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0547,
+     48.9053
+    ]
+   },
+   "properties": {
+    "place_id": "PL0392",
+    "name": "Pont-à-Mousson, Meurthe-et-Moselle",
+    "alt_names": "Pont-a-Mousson",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2175,
+     49.2267
+    ]
+   },
+   "properties": {
+    "place_id": "PL0393",
+    "name": "Ennery, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.762,
+     50.0643
+    ]
+   },
+   "properties": {
+    "place_id": "PL0394",
+    "name": "Noville, Luxembourg",
+    "alt_names": "Noville (Bastogne)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7833,
+     50.1333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0395",
+    "name": "Houffalize, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9061,
+     48.7289
+    ]
+   },
+   "properties": {
+    "place_id": "PL0396",
+    "name": "Herrlisheim, Bas-Rhin",
+    "alt_names": "Herrlisheim near Strasbourg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5325,
+     49.1308
+    ]
+   },
+   "properties": {
+    "place_id": "PL0397",
+    "name": "Suippes, Marne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Champagne-Ardenne",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8311,
+     50.865
+    ]
+   },
+   "properties": {
+    "place_id": "PL0398",
+    "name": "Valkenburg, Limburg",
+    "alt_names": "Valkenburg aan de Geul",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1567,
+     49.8681
+    ]
+   },
+   "properties": {
+    "place_id": "PL0399",
+    "name": "Diekirch, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Diekirch",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5034,
+     50.1078
+    ]
+   },
+   "properties": {
+    "place_id": "PL0400",
+    "name": "Champlon, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.03,
+     49.0
+    ]
+   },
+   "properties": {
+    "place_id": "PL0401",
+    "name": "Sarralbe, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8842,
+     48.6931
+    ]
+   },
+   "properties": {
+    "place_id": "PL0402",
+    "name": "Gambsheim, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "place_id": "PL0403",
+    "name": "Colmar, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3009,
+     50.4344
+    ]
+   },
+   "properties": {
+    "place_id": "PL0404",
+    "name": "Rocherath-Krinkelt, Liège",
+    "alt_names": "Krinkelt-Rocherath",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.327,
+     50.5028
+    ]
+   },
+   "properties": {
+    "place_id": "PL0405",
+    "name": "Wahlerscheid, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2233,
+     50.1786
+    ]
+   },
+   "properties": {
+    "place_id": "PL0406",
+    "name": "Heckhuscheid, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1137,
+     50.2967
+    ]
+   },
+   "properties": {
+    "place_id": "PL0407",
+    "name": "Hünningen, Liège",
+    "alt_names": "Hunningen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2548,
+     50.5858
+    ]
+   },
+   "properties": {
+    "place_id": "PL0408",
+    "name": "Konzen, North Rhine-Westphalia",
+    "alt_names": "Monschau-Konzen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9833,
+     50.8333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0409",
+    "name": "Simpelveld, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3583,
+     49.8531
+    ]
+   },
+   "properties": {
+    "place_id": "PL0410",
+    "name": "Bollendorf, Rheinland-Pfalz",
+    "alt_names": "Bollendorf (Sauer)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4217,
+     49.8117
+    ]
+   },
+   "properties": {
+    "place_id": "PL0411",
+    "name": "Echternach, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Grevenmacher",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2879,
+     49.8775
+    ]
+   },
+   "properties": {
+    "place_id": "PL0412",
+    "name": "Wallendorf, Rheinland-Pfalz",
+    "alt_names": "Wallendorf (Sauer)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3986,
+     50.6325
+    ]
+   },
+   "properties": {
+    "place_id": "PL0413",
+    "name": "Schwammenauel Dam, North Rhine-Westphalia",
+    "alt_names": "Rur dam; Roer dam",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3093,
+     50.4068
+    ]
+   },
+   "properties": {
+    "place_id": "PL0414",
+    "name": "Mürringen, Liège",
+    "alt_names": "Murringen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5733,
+     49.5747
+    ]
+   },
+   "properties": {
+    "place_id": "PL0415",
+    "name": "Serrig, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2197,
+     51.0608
+    ]
+   },
+   "properties": {
+    "place_id": "PL0416",
+    "name": "Hückelhoven, North Rhine-Westphalia",
+    "alt_names": "Huckelhoven",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6414,
+     49.7567
+    ]
+   },
+   "properties": {
+    "place_id": "PL0417",
+    "name": "Trier, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6207,
+     51.2691
+    ]
+   },
+   "properties": {
+    "place_id": "PL0418",
+    "name": "Osterath, North Rhine-Westphalia",
+    "alt_names": "Meerbusch-Osterath",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2667,
+     51.3
+    ]
+   },
+   "properties": {
+    "place_id": "PL0419",
+    "name": "Lobberich, North Rhine-Westphalia",
+    "alt_names": "Nettetal-Lobberich",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0420",
+    "name": "Krefeld, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5586,
+     50.4156
+    ]
+   },
+   "properties": {
+    "place_id": "PL0421",
+    "name": "Schmidtheim, North Rhine-Westphalia",
+    "alt_names": "Dahlem-Schmidtheim",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2442,
+     50.5792
+    ]
+   },
+   "properties": {
+    "place_id": "PL0422",
+    "name": "Ludendorff Bridge, Remagen",
+    "alt_names": "Remagen bridge",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3292,
+     50.485
+    ]
+   },
+   "properties": {
+    "place_id": "PL0423",
+    "name": "Brohl, Rheinland-Pfalz",
+    "alt_names": "Brohl-Lützing",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1022,
+     50.7353
+    ]
+   },
+   "properties": {
+    "place_id": "PL0424",
+    "name": "Bonn, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4942,
+     49.1842
+    ]
+   },
+   "properties": {
+    "place_id": "PL0425",
+    "name": "Boulay-Moselle, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2269,
+     50.645
+    ]
+   },
+   "properties": {
+    "place_id": "PL0426",
+    "name": "Bad Honnef, North Rhine-Westphalia",
+    "alt_names": "Honnef",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "place_id": "PL0427",
+    "name": "Düren, North Rhine-Westphalia",
+    "alt_names": "Dueren",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9064,
+     50.1297
+    ]
+   },
+   "properties": {
+    "place_id": "PL0428",
+    "name": "Gillenfeld, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2847,
+     50.5703
+    ]
+   },
+   "properties": {
+    "place_id": "PL0429",
+    "name": "Linz am Rhein, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4239,
+     48.9131
+    ]
+   },
+   "properties": {
+    "place_id": "PL0430",
+    "name": "Wimmenau, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0915,
+     49.1664
+    ]
+   },
+   "properties": {
+    "place_id": "PL0431",
+    "name": "Bliesransbach, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1667,
+     50.1469
+    ]
+   },
+   "properties": {
+    "place_id": "PL0432",
+    "name": "Moselle upstream of Cochem, Rheinland-Pfalz",
+    "alt_names": "Cochem; Moselle crossing area of the 89th Division",
+    "kind": "area",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.75,
+     49.3167
+    ]
+   },
+   "properties": {
+    "place_id": "PL0433",
+    "name": "Saarlouis, Saarland",
+    "alt_names": "Saarlautern",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4353,
+     49.4811
+    ]
+   },
+   "properties": {
+    "place_id": "PL0434",
+    "name": "Ludwigshafen, Rheinland-Pfalz",
+    "alt_names": "Ludwigshafen am Rhein",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3603,
+     49.8556
+    ]
+   },
+   "properties": {
+    "place_id": "PL0435",
+    "name": "Oppenheim, Rheinland-Pfalz",
+    "alt_names": "Oppenheim-Nierstein crossing",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6883,
+     49.0366
+    ]
+   },
+   "properties": {
+    "place_id": "PL0436",
+    "name": "Obersteinbach, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.548,
+     51.6913
+    ]
+   },
+   "properties": {
+    "place_id": "PL0437",
+    "name": "Diersfordt, North Rhine-Westphalia",
+    "alt_names": "Diersfordter Wald",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3667,
+     49.2167
+    ]
+   },
+   "properties": {
+    "place_id": "PL0438",
+    "name": "Germersheim, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9957,
+     49.0403
+    ]
+   },
+   "properties": {
+    "place_id": "PL0439",
+    "name": "Schweighofen, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6006,
+     51.5467
+    ]
+   },
+   "properties": {
+    "place_id": "PL0440",
+    "name": "Rheinberg, North Rhine-Westphalia",
+    "alt_names": "Rheinberg; Ninth Army Rhine assault area",
+    "kind": "area",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6515,
+     51.6213
+    ]
+   },
+   "properties": {
+    "place_id": "PL0441",
+    "name": "Friedrichsfeld, North Rhine-Westphalia",
+    "alt_names": "Voerde-Friedrichsfeld",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7167,
+     50.15
+    ]
+   },
+   "properties": {
+    "place_id": "PL0442",
+    "name": "Sankt Goar, Rheinland-Pfalz",
+    "alt_names": "St. Goar",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.15,
+     50.6833
+    ]
+   },
+   "properties": {
+    "place_id": "PL0443",
+    "name": "Bad Godesberg, North Rhine-Westphalia",
+    "alt_names": "Godesberg (Bonn)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9167,
+     50.2667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0444",
+    "name": "Dinant, Namur",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Namur",
+    "claims_count": 1
    }
   }
  ]

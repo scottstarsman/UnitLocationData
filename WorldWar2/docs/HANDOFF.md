@@ -16,15 +16,16 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 | item | value |
 |---|---|
-| Claims | **573** (`C0001` to `C0573`), dated 6 June to 27 December 1944. By nation: US 434, Germany 75, UK 60, Canada 4 |
-| Claims by month | Jun 212, Jul 58, Aug 140, Sep 109, Oct 8, Nov 14, Dec 32 |
-| Units in `data/units.csv` | **356**: 114 active (US 57, Germany 34, UK 21, Canada 2), **242 placeholders** (identity only, no claims) |
-| Command relations | 379 (`CR0001` to `CR0380`; `CR0037` was removed), 1,098 evidence links, 24 documented overlaps |
-| Places / references / operations | 379 / 511 / 36 |
-| Conflict groups | 13 (27 claims in groups; 556 preferred, 10 alternate, 7 disputed overall) |
-| Retired claim ids | 0. Next free claim id: **C0574** |
+| Claims | **641** (`C0001` to `C0641`), dated 6 June 1944 to 31 March 1945. By nation: US 502, Germany 75, UK 60, Canada 4 |
+| Claims by month | Jun 212, Jul 58, Aug 140, Sep 109, Oct 8, Nov 14, Dec 32, Jan 1945 22, Feb 15, Mar 31 |
+| Units in `data/units.csv` | **356**: 133 active (US 76, Germany 34, UK 21, Canada 2), **223 placeholders** (identity only, no claims) |
+| Command relations | 470 (`CR0001` to `CR0471`; `CR0037` was removed), 1,289 evidence links, 24 documented overlaps |
+| Places / references / operations | 438 / 550 (ids to `R556`; `R548`, `R550` and `R554` unused and not to be reused) / 42 |
+| Conflict groups | 14 (30 claims in groups; 621 preferred, 10 alternate, 10 disputed overall; `G017` is the newest, the 89th Division's Moselle date) |
+| Retired claim ids | 0. Next free claim id: **C0642** (next relation `CR0472`, next place `PL0445`, next reference `R557`, next conflict group `G018`) |
 | Done | June 1944 proof of concept (US, UK, Canadian and German units); US Army Batches 1 to 3 (1 July to 31 December 1944) |
-| **Not started** | **Batch 4 (1 January to 31 March 1945) and Batch 5 (1 April to 8 May 1945)** |
+| Done on the branch `batch4-jan-mar-1945` (not merged) | **Batch 4 (1 January to 31 March 1945)**, 68 claims; see `docs/roadmap.md`, "Batch 4" and the `docs/changelog.md` entries |
+| **Not started** | **Batch 5 (1 April to 8 May 1945)** |
 
 **What is and is not covered.**
 - **US Army, 1 July to 31 December 1944:** army groups, armies, corps and *selected division milestones*. Rows are event-based (a row on days when something substantial happened). A position between two rows is unknown, not unchanged.
@@ -128,7 +129,7 @@ Run from `/workspace/ww2-unit-locations` (standard-library Python 3 only). One c
 
 | check | command | good baseline on 26 October 2026 |
 |---|---|---|
-| Validator | `python3 scripts/validate.py` | `OK: 114 claim files, 573 claims, 356 units, 13 conflict groups`; exit 0; **3 known WARNINGs** (GER-COR-084C line 2: more than three opponents; US-ABN-082D line 9: US-COR-008C ended 12 July before the 13 July row; US-ABN-101D line 7: attached entry without a standing parent). Any new ERROR or a new WARNING must be fixed or explained in the row's `notes`. |
+| Validator | `python3 scripts/validate.py` | `OK: 133 claim files, 641 claims, 356 units, 14 conflict groups`; exit 0; **3 known WARNINGs** (GER-COR-084C line 2: more than three opponents; US-ABN-082D line 9: US-COR-008C ended 12 July before the 13 July row; US-ABN-101D line 7: attached entry without a standing parent). Any new ERROR or a new WARNING must be fixed or explained in the row's `notes`. |
 | Semantic tests | `python3 scripts/semantic_tests.py` | `OK: 68 expectations hold`. If you change data on purpose, change the expectation in the same commit and say why. |
 | Build check | `python3 scripts/build.py --check` (after `build.py`) | `build/ and docs/coverage.md are up to date (12 files)` |
 | References | `python3 scripts/build_references.py --check` | `references are up to date (4 files)` |
@@ -205,7 +206,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 2. Fix leftover stale counts when a branch next touches those files: `docs/roadmap.md` header was fixed by `handoff-doc`; the snapshot documents `normalization_review.md`, `places_review.md`, `unit_references_review.md` and "41 of 566" in `docs/methodology.md` deliberately keep the old numbers.
 3. Licence choice (CC BY-SA 4.0 and MIT) and the copyright holder are unconfirmed.
 
-**Batch 4 (1 January to 31 March 1945) and Batch 5 (1 April to 8 May 1945).** Scope: US Army ground units, army group to division. Not started; Scott must approve each batch.
+**Batch 4 (1 January to 31 March 1945) and Batch 5 (1 April to 8 May 1945).** Scope: US Army ground units, army group to division. **Batch 4 was done on 26 October 2026 on the branch `batch4-jan-mar-1945` (awaiting the spot check, Scott's review and merge); the text of this section below describes it as planned.** Batch 5 is not started; Scott must approve it.
 
 *Expected content.* Batch 4: end of the Bulge (January), Colmar pocket, Roer and Rur crossings, Operation Grenade (Ninth Army), Remagen (7 March) and the Rhine crossings, Saar and Palatinate, and the corps and divisions arriving. Batch 5: Ruhr pocket, advance to the Elbe, Bavaria, Austria and Czechoslovakia, the surrenders (7 and 8 May). Claim types: position and event rows (attack, capture, arrival, relocation, hq_move), command relations from the CMH tables, and activations of the new corps and divisions.
 

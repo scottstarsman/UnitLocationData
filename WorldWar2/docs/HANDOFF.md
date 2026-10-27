@@ -16,15 +16,16 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 | item | value |
 |---|---|
-| Claims | **641** (`C0001` to `C0641`), dated 6 June 1944 to 31 March 1945. By nation: US 502, Germany 75, UK 60, Canada 4 |
-| Claims by month | Jun 212, Jul 58, Aug 140, Sep 109, Oct 8, Nov 14, Dec 32, Jan 1945 22, Feb 15, Mar 31 |
-| Units in `data/units.csv` | **356**: 133 active (US 76, Germany 34, UK 21, Canada 2), **223 placeholders** (identity only, no claims) |
-| Command relations | 470 (`CR0001` to `CR0471`; `CR0037` was removed), 1,289 evidence links, 24 documented overlaps |
-| Places / references / operations | 438 / 550 (ids to `R556`; `R548`, `R550` and `R554` unused and not to be reused) / 42 |
-| Conflict groups | 14 (30 claims in groups; 621 preferred, 10 alternate, 10 disputed overall; `G017` is the newest, the 89th Division's Moselle date) |
-| Retired claim ids | 0. Next free claim id: **C0642** (next relation `CR0472`, next place `PL0445`, next reference `R557`, next conflict group `G018`) |
+| Claims | **646** (`C0001` to `C0646`), dated 6 June 1944 to 31 March 1945. By nation: US 507, Germany 75, UK 60, Canada 4 (on the branch `corps-xxii-xxiii`; the branch `batch4-jan-mar-1945` has 641, `C0001` to `C0641`, US 502) |
+| Claims by month | Jun 212, Jul 58, Aug 140, Sep 109, Oct 8, Nov 15, Dec 32, Jan 1945 22, Feb 15, Mar 35 |
+| Units in `data/units.csv` | **356**: 135 active (US 78, Germany 34, UK 21, Canada 2), **221 placeholders** (identity only, no claims) |
+| Command relations | 477 (`CR0001` to `CR0478`; `CR0037` was removed), 1,298 evidence links, 24 documented overlaps |
+| Places / references / operations | 441 / 559 (ids to `R565`; `R548`, `R550` and `R554` unused and not to be reused) / 42 |
+| Conflict groups | 14 (30 claims in groups; 626 preferred, 10 alternate, 10 disputed overall; `G017` is the newest, the 89th Division's Moselle date) |
+| Retired claim ids | 0. Next free claim id: **C0647** (next relation `CR0479`, next place `PL0448`, next reference `R566`, next conflict group `G018`) |
 | Done | June 1944 proof of concept (US, UK, Canadian and German units); US Army Batches 1 to 3 (1 July to 31 December 1944) |
 | Done on the branch `batch4-jan-mar-1945` (not merged) | **Batch 4 (1 January to 31 March 1945)**, 68 claims; see `docs/roadmap.md`, "Batch 4" and the `docs/changelog.md` entries |
+| Done on the branch `corps-xxii-xxiii` (based on `batch4-jan-mar-1945`, not merged) | **XXII and XXIII Corps** activated: 5 claims (`C0642` to `C0646`), 7 command relations (`CR0472` to `CR0478`), 1 existing relation closed (`CR0097`); see `docs/roadmap.md`, "XXII and XXIII Corps" and the `docs/changelog.md` entry |
 | **Not started** | **Batch 5 (1 April to 8 May 1945)** |
 
 **What is and is not covered.**
@@ -129,7 +130,7 @@ Run from `/workspace/ww2-unit-locations` (standard-library Python 3 only). One c
 
 | check | command | good baseline on 26 October 2026 |
 |---|---|---|
-| Validator | `python3 scripts/validate.py` | `OK: 133 claim files, 641 claims, 356 units, 14 conflict groups`; exit 0; **3 known WARNINGs** (GER-COR-084C line 2: more than three opponents; US-ABN-082D line 9: US-COR-008C ended 12 July before the 13 July row; US-ABN-101D line 7: attached entry without a standing parent). Any new ERROR or a new WARNING must be fixed or explained in the row's `notes`. |
+| Validator | `python3 scripts/validate.py` | `OK: 135 claim files, 646 claims, 356 units, 14 conflict groups`; exit 0; **3 known WARNINGs** (GER-COR-084C line 2: more than three opponents; US-ABN-082D line 9: US-COR-008C ended 12 July before the 13 July row; US-ABN-101D line 7: attached entry without a standing parent). Any new ERROR or a new WARNING must be fixed or explained in the row's `notes`. |
 | Semantic tests | `python3 scripts/semantic_tests.py` | `OK: 68 expectations hold`. If you change data on purpose, change the expectation in the same commit and say why. |
 | Build check | `python3 scripts/build.py --check` (after `build.py`) | `build/ and docs/coverage.md are up to date (12 files)` |
 | References | `python3 scripts/build_references.py --check` | `references are up to date (4 files)` |

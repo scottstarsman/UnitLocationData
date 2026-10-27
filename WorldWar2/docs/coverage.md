@@ -35,10 +35,10 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | brigade | 6 | 0 | 3 | 9 | 6 | 3 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 6 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 38 |
-| US | corps | 2 | 0 | 13 | 15 | 5 | 101 |
+| US | corps | 0 | 0 | 15 | 15 | 5 | 106 |
 | US | division | 6 | 0 | 54 | 60 | 24 | 354 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **223** | **0** | **133** | **356** | **234** | **641** |
+| **All** | | **221** | **0** | **135** | **356** | **234** | **646** |
 
 ## Operations
 
@@ -47,27 +47,27 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 8 | 348 |
+| campaign | 9 | 8 | 353 |
 | operation | 16 | 14 | 161 |
 | battle | 14 | 14 | 102 |
 | phase | 2 | 2 | 30 |
-| **All** | **42** | **38** | **641** |
+| **All** | **42** | **38** | **646** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 438 places and 58 alias names for 641 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 441 places and 61 alias names for 646 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 343 | 501 |
+| point | 346 | 506 |
 | area | 79 | 122 |
 | line | 16 | 18 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 340 | 512 |
+| France (FR) | 341 | 513 |
 | Belgium (BE) | 36 | 50 |
-| Germany (DE) | 37 | 41 |
+| Germany (DE) | 38 | 44 |
 | Netherlands (NL) | 15 | 22 |
 | Luxembourg (LU) | 6 | 9 |
-| United Kingdom (GB) | 4 | 7 |
+| United Kingdom (GB) | 5 | 8 |

@@ -21900,6 +21900,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -2.4342,
+     53.0148
+    ]
+   },
+   "properties": {
+    "claim_id": "C0642",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-022C",
+    "unit_name": "XXII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-10",
+    "place_id": "PL0445",
+    "location_name": "Doddington Hall, Cheshire, England",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Advance party of the corps headquarters billeted at Doddington Hall, Cheshire, England",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R557;R558;R001",
+    "source_locator": "R557: p. 9; R558: section \"With the Fifteenth Army\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.7389,
      48.4492
     ]
@@ -26164,6 +26205,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5875,
+     51.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C0643",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-022C",
+    "unit_name": "XXII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL0446",
+    "location_name": "Grevenbroich, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Corps command post at Grevenbroich, Germany; the corps is to take over the Rhine sector from Bonn to Neuss",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R557;R116;R558;R159;R564;R001",
+    "source_locator": "R557: pp. 90-93 (Letters of Instructions Thirteen and Fourteen, 28 March 1945, paragraph 5); R116: section \"Subordinate units\"; R558: section \"With the Fifteenth Army\"; R159: section \"Commanders\"; R564: p. 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6983,
+     49.3972
+    ]
+   },
+   "properties": {
+    "claim_id": "C0644",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-023C",
+    "unit_name": "XXIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL0447",
+    "location_name": "Vouziers, Ardennes",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Corps command post at Vouziers, France; the corps is to prepare to occupy Trier, Koblenz and the Saar-Palatinate",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R557;R116;R559;R560;R564;R001",
+    "source_locator": "R557: pp. 90-93 (Letters of Instructions Thirteen and Fourteen, 28 March 1945, paragraphs 3b and 5); R116: section \"Subordinate units\"; R559: section \"Its place in the war\"; R560: section \"Commanders\"; R564: p. 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.15,
      50.6833
     ]
@@ -26198,6 +26321,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R482;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5875,
+     51.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C0645",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-022C",
+    "unit_name": "XXII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL0446",
+    "location_name": "Grevenbroich, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Corps becomes operational and takes over the Rhine sector from Bonn to Neuss; 102nd, 95th and 86th Divisions in place",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R557;R564;R001",
+    "source_locator": "R557: pp. 40, 46, 90; R564: p. 540"
    }
   },
   {
@@ -26280,6 +26444,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R525;R544;R001",
     "source_locator": "R544: p. 323"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5875,
+     51.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C0646",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-022C",
+    "unit_name": "XXII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL0446",
+    "location_name": "Grevenbroich, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH tables list the 97th, 94th, 86th and 95th Divisions and the 82nd Airborne Division under the corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R557;R337;R371;R531;R561;R562;R563;R565;R001",
+    "source_locator": "R557: p. 46; R337: assignment table (no XXII Corps row); R371: assignment table, row 29 Mar 45; R531: assignment table, row 31 Mar 45; R561: assignment table, row 30 Mar 45; R562: assignment table, row 28 Mar 45; R563: assignment table, row 31 Mar 45; R565: list of assignments in the ETO, entry of 31 March 1945"
    }
   }
  ]

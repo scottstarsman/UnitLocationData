@@ -18,7 +18,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 10
+    "claims_count": 13
    }
   },
   {
@@ -3938,7 +3938,7 @@
     "precision_km": 5,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -7938,7 +7938,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -8218,7 +8218,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10918,7 +10918,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 6
+    "claims_count": 11
    }
   },
   {
@@ -11218,7 +11218,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11238,7 +11238,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11258,6 +11258,166 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4249,
+     50.2069
+    ]
+   },
+   "properties": {
+    "place_id": "PL0571",
+    "name": "Prüm, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5249,
+     49.9733
+    ]
+   },
+   "properties": {
+    "place_id": "PL0572",
+    "name": "Bitburg, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.87,
+     50.39
+    ]
+   },
+   "properties": {
+    "place_id": "PL0573",
+    "name": "Eifel region, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 10
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3997,
+     51.2211
+    ]
+   },
+   "properties": {
+    "place_id": "PL0574",
+    "name": "Antwerp, Belgium",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0,
+     48.0
+    ]
+   },
+   "properties": {
+    "place_id": "PL0575",
+    "name": "Vosges mountains",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0,
+     49.2333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0576",
+    "name": "Saarbrücken, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0577",
+    "name": "Venlo, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "place_id": "PL0578",
+    "name": "Kleve, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

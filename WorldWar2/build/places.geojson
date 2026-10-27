@@ -5838,7 +5838,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -10758,7 +10758,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11413,6 +11413,66 @@
    "properties": {
     "place_id": "PL0578",
     "name": "Kleve, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     51.2885
+    ]
+   },
+   "properties": {
+    "place_id": "PL0579",
+    "name": "Fichtenhain, Krefeld-Fischeln",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.178,
+     51.264
+    ]
+   },
+   "properties": {
+    "place_id": "PL0580",
+    "name": "Wuppertal, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0085,
+     51.1955
+    ]
+   },
+   "properties": {
+    "place_id": "PL0581",
+    "name": "Haan, North Rhine-Westphalia",
     "alt_names": null,
     "kind": "point",
     "precision_km": 5,

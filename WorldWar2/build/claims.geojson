@@ -18283,7 +18283,7 @@
     "location_date": "1944-06-29",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -49,
-    "reference_ids": "R107;R587;R001",
+    "reference_ids": "R107;R587;R001;R185;R629",
     "source_locator": null
    }
   },
@@ -18326,6 +18326,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R404;R001",
     "source_locator": "R404: p. 529, 530"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6303,
+     49.0822
+    ]
+   },
+   "properties": {
+    "claim_id": "C0933",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL0298",
+    "location_name": "La Roche-Guyon",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Model arrives at the Army Group B headquarters at La Roche-Guyon to relieve Kluge",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R404;R001",
+    "source_locator": "R593: p. 465; R404: p. 530-531"
    }
   },
   {
@@ -22670,8 +22711,8 @@
     "location_date": "1944-09-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R411;R430;R001",
-    "source_locator": "R411: p. 42; R430: p. 17-18"
+    "reference_ids": "R411;R430;R001;R410;R635;R636",
+    "source_locator": "R411: p. 42; R430: p. 17-18; R410: p. 700"
    }
   },
   {
@@ -24845,6 +24886,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R441;R001",
     "source_locator": "R441: p. 71"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.842,
+     51.9884
+    ]
+   },
+   "properties": {
+    "claim_id": "C0934",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-14",
+    "place_id": "PL0545",
+    "location_name": "Oosterbeek, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Model moves the Army Group B headquarters to Oosterbeek near Arnhem",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R631;R605;R635;R002",
+    "source_locator": "R605: p. 140"
    }
   },
   {
@@ -30503,6 +30585,47 @@
     "location_temporal_offset_days": -1,
     "reference_ids": "R443;R466;R339;R001",
     "source_locator": "R443: p. 226"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     51.2885
+    ]
+   },
+   "properties": {
+    "claim_id": "C0935",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL0579",
+    "location_name": "Fichtenhain, Krefeld-Fischeln",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "Model and part of the Army Group B staff are at Fichtenhain near Krefeld for the joint planning conference",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R638;R002",
+    "source_locator": "R638: p. 23, 26"
    }
   },
   {
@@ -36414,6 +36537,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.178,
+     51.264
+    ]
+   },
+   "properties": {
+    "claim_id": "C0936",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0580",
+    "location_name": "Wuppertal, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Model learns of the LIII Corps surrender while American aircraft attack his Wuppertal headquarters",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R630;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -36612,6 +36776,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R567;R349;R001",
     "source_locator": "R567: p. 399"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0085,
+     51.1955
+    ]
+   },
+   "properties": {
+    "claim_id": "C0937",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL0581",
+    "location_name": "Haan, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Model dissolves Army Group B by order, effective 17 April; farewell to the staff reported at Haan",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R185;R629;R630;R632;R107;R002",
+    "source_locator": "R566: p. 369, 372"
    }
   },
   {

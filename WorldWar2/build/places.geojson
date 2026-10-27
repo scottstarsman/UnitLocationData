@@ -78,7 +78,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -198,7 +198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -2098,7 +2098,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -4058,7 +4058,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Pays de la Loire",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -4638,7 +4638,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 8
    }
   },
   {
@@ -6558,7 +6558,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10079,6 +10079,266 @@
     "country": "FR",
     "region": "Lower Normandy",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0755,
+     48.8201
+    ]
+   },
+   "properties": {
+    "place_id": "PL0511",
+    "name": "Saint-Lambert-sur-Dives, Orne",
+    "alt_names": "St. Lambert",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1061,
+     48.8058
+    ]
+   },
+   "properties": {
+    "place_id": "PL0512",
+    "name": "Chambois, Orne",
+    "alt_names": "Chambois",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1044,
+     48.7299
+    ]
+   },
+   "properties": {
+    "place_id": "PL0513",
+    "name": "Forêt de Gouffern",
+    "alt_names": "Fôret de Gouffern; Gouffern forest",
+    "kind": "area",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0908,
+     48.813
+    ]
+   },
+   "properties": {
+    "place_id": "PL0514",
+    "name": "Saint-Lambert-sur-Dives and Chambois (midpoint)",
+    "alt_names": "St. Lambert-Chambois crossing area",
+    "kind": "area",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0206,
+     48.8147
+    ]
+   },
+   "properties": {
+    "place_id": "PL0515",
+    "name": "Villedieu-lès-Bailleul, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0219,
+     48.2825
+    ]
+   },
+   "properties": {
+    "place_id": "PL0516",
+    "name": "Fresnay-sur-Sarthe, Sarthe",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7331,
+     48.7636
+    ]
+   },
+   "properties": {
+    "place_id": "PL0517",
+    "name": "Tinchebray, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0747,
+     48.7011
+    ]
+   },
+   "properties": {
+    "place_id": "PL0518",
+    "name": "Le Mesnil-Adelée, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.02,
+     48.6775
+    ]
+   },
+   "properties": {
+    "place_id": "PL0519",
+    "name": "Juvigny-le-Tertre, Manche",
+    "alt_names": "Juvigny",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0156,
+     48.7094
+    ]
+   },
+   "properties": {
+    "place_id": "PL0520",
+    "name": "Chérencé-le-Roussel, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1633,
+     49.205
+    ]
+   },
+   "properties": {
+    "place_id": "PL0521",
+    "name": "Le Dézert, Manche",
+    "alt_names": "le Désert (CMH spelling)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.165,
+     49.1269
+    ]
+   },
+   "properties": {
+    "place_id": "PL0522",
+    "name": "Hébécrevon, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1061,
+     48.7611
+    ]
+   },
+   "properties": {
+    "place_id": "PL0523",
+    "name": "Le Bourg-Saint-Léonard, Orne",
+    "alt_names": "le Bourg-St.-Léonard",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
    }
   }
  ]

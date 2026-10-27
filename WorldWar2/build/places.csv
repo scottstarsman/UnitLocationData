@@ -2,13 +2,13 @@ place_id,name,alt_names,kind,latitude,longitude,precision_km,country,region,coor
 PL0001,"Aachen, North Rhine-Westphalia",Aachen,point,50.7756,6.0836,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Aachen,2,1,1944-09-12,1944-10-21
 PL0002,"Ablis, Seine-et-Oise",,point,48.5172,1.8369,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Ablis, France)",1,1,1944-08-22,1944-08-22
 PL0003,"Agay–Saint-Raphaël, Var",,area,43.4314,6.8565,5,FR,Provence-Alpes-Cote d'Azur,R002,"OpenStreetMap Nominatim (Agay–Saint-Raphaël, Var (beaches east of Saint-Raphaël))",1,1,1944-08-15,1944-08-15
-PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",2,2,1944-08-17,1944-08-17
+PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",5,3,1944-08-06,1944-08-17
 PL0005,"Alsdorf, North Rhine-Westphalia",,point,50.8833,6.1667,10,DE,North Rhine-Westphalia,R001,Wikipedia (en): Alsdorf,1,1,1944-11-16,1944-11-16
 PL0006,Amiens-Alencon march route,,line,49.892,2.299,50,FR,Picardie,R001,Wikipedia,1,1,1944-06-10,1944-06-10
 PL0007,"Amne, Sarthe",,point,48.0395,-0.0594,10,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Amne, Sarthe, France)",1,1,1944-08-10,1944-08-10
 PL0008,"Andellare, Haute-Saone",,point,47.5898,6.0967,3,FR,Franche-Comte,R002,"OpenStreetMap Nominatim (Andelarre, Haute-Saône, France)",1,1,1944-09-11,1944-09-11
 PL0009,"Angers, Maine-et-Loire",,point,47.4711,-0.5519,5,FR,Pays de la Loire,R001,Wikipedia (en): Angers,1,1,1944-08-10,1944-08-10
-PL0010,"Argentan, Orne",,point,48.7500,-0.0200,10,FR,Lower Normandy,R001,Wikipedia (en): Argentan,2,2,1944-08-12,1944-08-13
+PL0010,"Argentan, Orne",,point,48.7500,-0.0200,10,FR,Lower Normandy,R001,Wikipedia (en): Argentan,4,4,1944-08-12,1944-08-20
 PL0011,"Argenteau, Liege",,point,50.6982,5.6855,3,BE,Wallonia,R002,"OpenStreetMap Nominatim (Argenteau, Liege, Belgium)",1,1,1944-09-12,1944-09-12
 PL0012,"Arlon, Luxembourg",,point,49.6833,5.8167,5,BE,Wallonia,R001,Wikipedia (en): Arlon,1,1,1944-12-22,1944-12-22
 PL0013,"Arnaville, Meurthe-et-Moselle",,point,49.0119,6.0311,3,FR,Lorraine,R001,Wikipedia (en): Arnaville,2,2,1944-09-10,1944-09-10
@@ -103,7 +103,7 @@ PL0103,Cotentin west,,area,49.2908,-1.5411,10,FR,Lower Normandy,R001,Wikipedia,1
 PL0104,"Couptrain, Mayenne",,point,48.4841,-0.2942,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Couptrain, Mayenne, France)",1,1,1944-08-15,1944-08-15
 PL0105,"Courtenay, Loiret",,point,48.0394,3.0619,10,FR,Centre,R002,"OpenStreetMap Nominatim (Courtenay, Loiret, France)",1,1,1944-08-24,1944-08-24
 PL0106,"Courville-sur-Eure, Eure-et-Loire",,point,48.4503,1.2388,3,FR,Centre,R002,"OpenStreetMap Nominatim (Courville-sur-Eure, Eure-et-Loire, France)",1,1,1944-08-15,1944-08-15
-PL0107,"Coutances, Manche",,point,49.0478,-1.4455,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Coutances, Manche, France)",3,2,1944-07-25,1944-07-27
+PL0107,"Coutances, Manche",,point,49.0478,-1.4455,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Coutances, Manche, France)",4,3,1944-07-25,1944-07-28
 PL0108,"La Couture, Manche",,point,49.1610,-1.1894,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (La Couture, Manche, France)",1,1,1944-07-26,1944-07-26
 PL0109,"Crest, Drome",,point,44.7283,5.0237,3,FR,Rhone-Alpes,R002,"OpenStreetMap Nominatim (Crest, Drome, France)",1,1,1944-08-24,1944-08-24
 PL0110,"La Danerie, Manche",,point,48.8722,-1.5126,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (La Danerie, Manche, France)",1,1,1944-07-31,1944-07-31
@@ -201,7 +201,7 @@ PL0202,"Maastricht area, Albert Canal–Meuse",,area,50.8500,5.6833,25,NL,Limbur
 PL0203,"Maastricht, Limburg",,point,50.8500,5.6833,5,NL,Limburg,R001,Wikipedia (en): Maastricht,2,1,1944-10-22,1944-12-20
 PL0204,"Maisoncelles-la-Jourdan, Calvados",,point,48.7919,-0.8466,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Maisoncelles-la-Jourdan, Calvados, France)",1,1,1944-08-13,1944-08-13
 PL0205,"Mamey, Meurthe-et-Moselle",,point,48.8788,5.9598,10,FR,Lorraine,R002,"OpenStreetMap Nominatim (Mamey, Meurthe-et-Moselle, France)",1,1,1944-09-12,1944-09-12
-PL0206,"Le Mans, Sarthe",Le Mans,point,48.0077,0.1984,5,FR,Pays de la Loire,R001,Wikipedia (en): Le Mans,7,4,1944-06-06,1944-08-13
+PL0206,"Le Mans, Sarthe",Le Mans,point,48.0077,0.1984,5,FR,Pays de la Loire,R001,Wikipedia (en): Le Mans,8,5,1944-06-06,1944-08-13
 PL0207,"Mantes-Gassicourt bridgehead area (Seine), Yvelines",,area,48.9908,1.7172,10,FR,Ile-de-France,R001,Wikipedia (en): Mantes-la-Jolie,3,2,1944-08-28,1944-08-29
 PL0209,"Mantes-la-Jolie, Yvelines",Mantes-Gassicourt,point,48.9908,1.7172,5,FR,Ile-de-France,R001,Wikipedia (en): Mantes-la-Jolie,4,2,1944-08-19,1944-08-24
 PL0210,"Marche-en-Famenne, Luxembourg",,point,50.2167,5.3333,5,BE,Wallonia,R001,Wikipedia (en): Marche-en-Famenne | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-18.html#page431 | https://www.ibiblio.org/hyperwar/USA/USA-E-Ardennes/USA-E-Ardennes-18.html#page433,1,1,1944-12-20,1944-12-20
@@ -230,7 +230,7 @@ PL0232,"Montélimar, Drôme",,point,44.5581,4.7508,10,FR,Rhone-Alpes,R001,Wikipe
 PL0233,"Montsuer, Mayenne",,point,48.1348,-0.5540,3,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Montsûrs, Mayenne, France)",2,1,1944-08-08,1944-08-09
 PL0234,"Moon-sur-Elle, Manche",,point,49.2116,-1.0445,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Moon-sur-Elle, Manche, France)",2,1,1944-07-08,1944-07-11
 PL0235,Mortagne-au-Perche–Brezolles assembly area,,area,48.5208,0.5483,25,FR,Lower Normandy,R001,Wikipedia (en): Mortagne-au-Perche,1,1,1944-08-19,1944-08-19
-PL0236,"Mortain, Manche",,point,48.6486,-0.9397,3,FR,Lower Normandy,R001,Wikipedia (en): Mortain,5,4,1944-08-06,1944-08-07
+PL0236,"Mortain, Manche",,point,48.6486,-0.9397,3,FR,Lower Normandy,R001,Wikipedia (en): Mortain,8,7,1944-08-06,1944-08-12
 PL0237,Mouen,,point,49.1489,-0.4825,5,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-28,1944-06-28
 PL0238,"Mourmelon-le-Grand, Marne",,point,49.1401,4.3658,5,FR,Champagne-Ardenne,R001,Wikipedia (en): Mourmelon-le-Grand,2,1,1944-12-01,1944-12-17
 PL0239,Moving south from Cherbourg to VIII Corps zone,,area,49.2908,-1.5411,25,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-28,1944-06-28
@@ -326,7 +326,7 @@ PL0330,Saint-Lô area,,area,49.12,-1.09,5,FR,Lower Normandy,R001,Wikipedia,1,1,1
 PL0331,Saint-Lô-Caumont gap sector,,area,49.12,-1.09,5,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-10,1944-06-10
 PL0332,Saint-Lô-d'Ourville,,point,49.3353,-1.6681,1,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-19,1944-06-19
 PL0333,"Saint-Lô, Manche","Saint-Lô; St-Lo, Manche",point,49.12,-1.09,3,FR,Lower Normandy,R001,Wikipedia,8,3,1944-06-06,1944-07-28
-PL0334,Saint-Lô sector,,area,49.12,-1.09,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-08,1944-06-08
+PL0334,Saint-Lô sector,,area,49.12,-1.09,10,FR,Lower Normandy,R001,Wikipedia,2,1,1944-06-08,1944-07-11
 PL0335,"Saint-Malo, Ille-et-Vilaine",,point,48.6494,-2.0261,3,FR,Brittany,R001,Wikipedia (en): Saint-Malo,1,1,1944-08-17,1944-08-17
 PL0336,"St-Oedenrode, Nord Brabant, Netherlands",,point,51.5646,5.4610,5,NL,North Brabant,R002,"OpenStreetMap Nominatim (St-Oedenrode, Nord Brabant, Netherlands)",3,1,1944-09-20,1944-09-23
 PL0337,"Stolberg, Rhineland",,point,50.7703,6.2296,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Stolberg, Germany)",1,1,1944-09-21,1944-09-21
@@ -503,3 +503,16 @@ PL0507,"Sierning, Oberösterreich",,point,48.0447,14.3100,3,AT,Oberösterreich,R
 PL0508,"Prien am Chiemsee, Bayern",,point,47.8667,12.3333,3,DE,Bayern,R001,Wikipedia (en): Prien am Chiemsee,1,1,1945-05-08,1945-05-08
 PL0509,"Burghausen, Bayern",,point,48.1589,12.8329,3,DE,Bayern,R002,"OpenStreetMap Nominatim (Burghausen, Altötting, Germany)",1,1,1945-05-08,1945-05-08
 PL0510,Falaise pocket,Falaise-Argentan pocket; Chambois pocket,area,48.8928,-0.1919,10,FR,Lower Normandy,R001,Wikipedia article Falaise pocket (point in the pocket area),2,1,1944-08-20,1944-08-20
+PL0511,"Saint-Lambert-sur-Dives, Orne",St. Lambert,point,48.8201,0.0755,3,FR,Normandy,R002,Nominatim result for Saint-Lambert-sur-Dives (Wikipedia redirect points to another Saint-Lambert),4,4,1944-08-20,1944-08-20
+PL0512,"Chambois, Orne",Chambois,point,48.8058,0.1061,3,FR,Normandy,R001,"Wikipedia article Chambois, Orne",2,2,1944-08-20,1944-08-20
+PL0513,Forêt de Gouffern,Fôret de Gouffern; Gouffern forest,area,48.7299,0.1044,10,FR,Normandy,R002,Nominatim result Forêt de la Petite Gouffern (forest area),2,2,1944-08-19,1944-08-19
+PL0514,Saint-Lambert-sur-Dives and Chambois (midpoint),St. Lambert-Chambois crossing area,area,48.813,0.0908,5,FR,Normandy,R001,"Midpoint of Nominatim Saint-Lambert-sur-Dives (48.8201, 0.0755) and Wikipedia Chambois, Orne (48.8058, 0.1061)",2,2,1944-08-20,1944-08-20
+PL0515,"Villedieu-lès-Bailleul, Orne",,point,48.8147,0.0206,3,FR,Normandy,R001,Wikipedia article Villedieu-lès-Bailleul,1,1,1944-08-20,1944-08-20
+PL0516,"Fresnay-sur-Sarthe, Sarthe",,point,48.2825,0.0219,3,FR,Pays de la Loire,R001,Wikipedia article Fresnay-sur-Sarthe,1,1,1944-08-10,1944-08-10
+PL0517,"Tinchebray, Orne",,point,48.7636,-0.7331,3,FR,Normandy,R001,Wikipedia article Tinchebray,1,1,1944-08-06,1944-08-06
+PL0518,"Le Mesnil-Adelée, Manche",,point,48.7011,-1.0747,3,FR,Normandy,R001,Wikipedia article Le Mesnil-Adelée,1,1,1944-08-07,1944-08-07
+PL0519,"Juvigny-le-Tertre, Manche",Juvigny,point,48.6775,-1.02,3,FR,Normandy,R001,Wikipedia article Juvigny-le-Tertre,1,1,1944-08-07,1944-08-07
+PL0520,"Chérencé-le-Roussel, Manche",,point,48.7094,-1.0156,3,FR,Normandy,R001,Wikipedia article Chérencé-le-Roussel,1,1,1944-08-07,1944-08-07
+PL0521,"Le Dézert, Manche",le Désert (CMH spelling),point,49.205,-1.1633,3,FR,Normandy,R001,Wikipedia article Le Dézert,1,1,1944-07-11,1944-07-11
+PL0522,"Hébécrevon, Manche",,point,49.1269,-1.165,3,FR,Normandy,R001,Wikipedia article Hébécrevon,1,1,1944-07-25,1944-07-25
+PL0523,"Le Bourg-Saint-Léonard, Orne",le Bourg-St.-Léonard,point,48.7611,0.1061,3,FR,Normandy,R001,Wikipedia article Le Bourg-Saint-Léonard,1,1,1944-08-17,1944-08-17

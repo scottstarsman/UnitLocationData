@@ -22,9 +22,14 @@ CR0006,C0106,1,observed_during,,,,,,,,,,
 CR0006,C0116,1,observed_during,,,,,,,,,,
 CR0006,C0123,1,observed_during,,,,,,,,,,
 CR0006,C0128,1,observed_during,,,,,,,,,,
+CR0006,C0748,1,observed_during,,,,,,,,,,
+CR0006,C0756,1,observed_during,,,,,,,,,,
 CR0007,C0052,1,observed_during,,,,,,,,,,
+CR0007,C0746,1,observed_during,,,,,,,,,,
+CR0007,C0755,1,observed_during,,,,,,,,,,
 CR0008,C0058,1,observed_during,,,,,,,,,,
 CR0008,C0065,1,observed_during,,,,,,,,,,
+CR0008,C0747,1,observed_during,,,,,,,,,,
 CR0009,C0066,1,observed_during,,,,,,,,,,
 CR0009,C0132,1,observed_during,,,,,,,,,,
 CR0009,C0138,1,observed_during,,,,,,,,,,
@@ -72,6 +77,8 @@ CR0034,C0129,1,observed_during,,,,,,,,,,
 CR0034,C0713,1,observed_during,,,,,,,,,,
 CR0035,C0064,1,observed_during,,,,,,,,,,
 CR0035,C0091,1,observed_during,,,,,,,,,,
+CR0035,C0733,1,observed_during,,,,,,,,,,
+CR0035,C0742,1,observed_during,,,,,,,,,,
 CR0036,C0004,1,asserts_end,,,,,1944-06-07,,,inferred,"Cross-Channel Attack ch. 8 p. 333, ch. 9 p. 347 and 372: the 21st Panzer Division was under I SS Panzer Corps from 8 June at the latest (first day shown); the end is inferred as 7 June, the change may have come that day",
 CR0038,C0090,1,observed_during,,,,,,,,,,
 CR0038,C0184,1,asserts_start,1944-06-08,,,,,,,,"Cross-Channel Attack ch. 8 p. 333, ch. 9 p. 347 and 372: I SS Panzer Corps attacked on 8 June with the 12th SS and 21st Panzer Divisions; the start is inferred as 8 June (it may be 7 June); this claim, dated 28 June, is the first that lists the relation",inferred
@@ -1481,3 +1488,26 @@ CR0558,C0712,1,asserts_start,1945-05-02,,,,,,,,"CMH ETO-OB assignment table, Cor
 CR0559,C0721,1,observed_during,,,,,,,,,,
 CR0560,C0722,1,observed_during,,,,,,,,,,
 CR0561,C0726,1,asserts_start,1944-08-20,,,,,,,,,
+CR0562,C0727,1,observed_during,,,,,,,,,parent not verified in the sources read,
+CR0562,C0728,1,observed_during,,,,,,,,,parent not verified in the sources read,
+CR0563,C0729,1,asserts_start,1944-08-12,,,,,,,,Placed under control of the Fifth Panzer Army (Breakout and Pursuit ch. 25 p. 503),narrative
+CR0564,C0730,1,asserts_start,1944-08-10,,,,,,,,Listed as one of the two LXXXI Corps divisions in line on 10 August (Breakout and Pursuit ch. 25 p. 498),narrative
+CR0565,C0731,1,asserts_start,1944-08-10,,,,,,,,Listed as one of the two LXXXI Corps divisions in line on 10 August (Breakout and Pursuit ch. 25 p. 498),narrative
+CR0566,C0736,1,asserts_start,1944-08-07,,,,,,,,Hausser dealt with Funck directly during the 7 August attack (Breakout and Pursuit ch. 24 p. 462-463); the source does not say assigned or attached,narrative
+CR0567,C0738,1,asserts_start,1944-08-12,,,,,,,,Panzer Group Eberbach assumed command in the Argentan sector on 12 August and the XLVII Panzer Corps arrived there and took control of 9th and 116th Panzer Division elements (Breakout and Pursuit ch. 25 p. 502); ch. 27 p. 528 lists four panzer corps in the group,inferred
+CR0568,C0735,1,asserts_start,1944-08-07,,,,,,,,"Committed in the XLVII Panzer Corps attack of 7 August under Funck (Breakout and Pursuit ch. 24 p. 457, 462-463); the source does not say assigned or attached",narrative
+CR0568,C0740,1,observed_during,,,,,,,,,,
+CR0568,C0743,1,observed_during,,,,,,,,,,
+CR0569,C0732,1,asserts_start,1944-08-07,,,,,,,,"Committed in the XLVII Panzer Corps attack of 7 August under Funck (Breakout and Pursuit ch. 24 p. 457, 462-463); the source does not say assigned or attached",narrative
+CR0570,C0734,1,observed_during,,,,,,,,,,
+CR0570,C0737,1,asserts_start,1944-08-06,,,,,,,,"The exploiting force of the XLVII Panzer Corps attack; Funck asked on 6 August to postpone because its advance elements were only beginning to reach Tinchebray, and committed it on 7 August (Breakout and Pursuit ch. 24 p. 461-463); the source does not say assigned or attached",narrative
+CR0570,C0744,1,observed_during,,,,,,,,,,
+CR0571,C0739,1,observed_during,,,,,,,,,parent not verified in the sources read,
+CR0572,C0741,1,asserts_start,1944-08-19,,,,,,,,"Hausser, commanding the encircled forces, issued the order for the XLVII Panzer Corps breakout attack (Breakout and Pursuit ch. 27 p. 539)",narrative
+CR0573,C0745,1,asserts_start,1944-08-19,,,,,,,,"Meindl planned the 19 August breakout with his two divisions, the 3d Parachute and the 353d (Breakout and Pursuit ch. 27 p. 538); the source does not say assigned or attached",narrative
+CR0574,C0749,1,asserts_start,1944-08-20,,,,,,,,"Remnants of the 12th SS Panzer Division under the LXXXIV Corps command in the pocket (Breakout and Pursuit ch. 27 p. 540, 550); the source says under its command, without assigned or attached",narrative
+CR0575,C0750,1,asserts_start,1944-08-19,,,,,,,,One of the five infantry divisions of the LXXIV Corps on 19 August (Breakout and Pursuit ch. 27 p. 550-551),narrative
+CR0576,C0751,1,asserts_start,1944-08-19,,,,,,,,One of the five infantry divisions of the LXXIV Corps on 19 August (Breakout and Pursuit ch. 27 p. 550-551),narrative
+CR0577,C0752,1,asserts_start,1944-08-19,,,,,,,,One of the five infantry divisions of the LXXIV Corps on 19 August (Breakout and Pursuit ch. 27 p. 550-551),narrative
+CR0578,C0753,1,asserts_start,1944-07-11,,,,,,,,Hausser dealt with the division directly and attached elements to it (Breakout and Pursuit ch. 7 p. 135); the source does not say assigned or attached,narrative
+CR0579,C0754,1,asserts_start,1944-07-24,,,,,,,,On the morning of 24 July Panzer Lehr held the ground between the Taute and the Vire in the LXXXIV Corps sector (Breakout and Pursuit ch. 12 p. 227); the source does not say assigned or attached,narrative

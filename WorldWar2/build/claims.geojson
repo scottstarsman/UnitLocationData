@@ -9108,6 +9108,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1633,
+     49.205
+    ]
+   },
+   "properties": {
+    "claim_id": "C0753",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-11",
+    "place_id": "PL0521",
+    "location_name": "Le Dézert, Manche",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "Panzer Lehr counterattack between the Taute and the Vire, penetrating near le Désert",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R591;R001",
+    "source_locator": "R591: p. 137, 135"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0755",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-07-11",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (feint north from Saint-Lô; corps headquarters not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "II Parachute Corps diversionary feint north from St. Lô along the east bank of the Vire",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R591;R586;R001",
+    "source_locator": "R591: p. 137; R586: p. 29"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1332,
      52.6362
     ]
@@ -10133,6 +10215,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.165,
+     49.1269
+    ]
+   },
+   "properties": {
+    "claim_id": "C0754",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-25",
+    "place_id": "PL0522",
+    "location_name": "Hébécrevon, Manche (sector along the Périers-St. Lô highway; point = Hébécrevon)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Panzer Lehr front along the Périers-St. Lô highway destroyed by the Cobra bombardment",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R001",
+    "source_locator": "R592: p. 240, 228, 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2389,
      49.0997
     ]
@@ -10741,6 +10864,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R396;R397;R001",
     "source_locator": "R396: p. 296, 302; R397: p. 304"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4455,
+     49.0478
+    ]
+   },
+   "properties": {
+    "claim_id": "C0756",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-28",
+    "place_id": "PL0107",
+    "location_name": "Coutances, Manche (Coutances area; corps headquarters not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Kluge replaces Choltitz with Elfeldt as LXXXIV Corps commander as the corps was in the Coutances area",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R590;R002",
+    "source_locator": "R590: p. 328"
    }
   },
   {
@@ -12388,6 +12552,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.0911,
+     48.4312
+    ]
+   },
+   "properties": {
+    "claim_id": "C0727",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-06",
+    "place_id": "PL0004",
+    "location_name": "Alençon, Orne (vicinity of Alençon; corps command post not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps in the vicinity of Alençon, the only nearby force of Army Group B",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R002",
+    "source_locator": "R402: p. 457"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7331,
+     48.7636
+    ]
+   },
+   "properties": {
+    "claim_id": "C0737",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-06",
+    "place_id": "PL0517",
+    "location_name": "Tinchebray, Orne",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "1st SS Panzer Division advance elements beginning to reach Tinchebray as the exploiting force",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 462, 461"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.8576,
      48.5401
     ]
@@ -12921,6 +13167,211 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9397,
+     48.6486
+    ]
+   },
+   "properties": {
+    "claim_id": "C0732",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-07",
+    "place_id": "PL0236",
+    "location_name": "Mortain, Manche",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "2nd SS Panzer Division overran and captured Mortain and held blocking positions half way to St. Hilaire by noon",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 462, 461"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0747,
+     48.7011
+    ]
+   },
+   "properties": {
+    "claim_id": "C0733",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0518",
+    "location_name": "Le Mesnil-Adelée, Manche",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "2nd Panzer Division attack toward the Brécey-St. Hilaire road stopped at le Mesnil-Adelée",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 463, 462"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.02,
+     48.6775
+    ]
+   },
+   "properties": {
+    "claim_id": "C0734",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-07",
+    "place_id": "PL0519",
+    "location_name": "Juvigny-le-Tertre, Manche (east of Juvigny)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "1st SS Panzer Division committed by Funck in mid-morning to gain Juvigny; halted east of Juvigny",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0156,
+     48.7094
+    ]
+   },
+   "properties": {
+    "claim_id": "C0735",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0520",
+    "location_name": "Chérencé-le-Roussel, Manche (north bank of the Sée; division headquarters not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Schwerin relieved at 1600; Col. Walter Reinhard takes command of the 116th Panzer Division, which had not attacked",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 463, 462"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9397,
+     48.6486
+    ]
+   },
+   "properties": {
+    "claim_id": "C0736",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0236",
+    "location_name": "Mortain, Manche (attack sector; corps command post not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "XLVII Panzer Corps attack toward Avranches; Funck halts it around noon",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 463, 462, 457"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -13290,6 +13741,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.0219,
+     48.2825
+    ]
+   },
+   "properties": {
+    "claim_id": "C0730",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-10",
+    "place_id": "PL0516",
+    "location_name": "Fresnay-sur-Sarthe, Sarthe",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "9th Panzer Division command post at Fresnay-sur-Sarthe came under fire from the U.S. XV Corps and withdrew north",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R403;R001",
+    "source_locator": "R403: p. 500, 498"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1984,
+     48.0077
+    ]
+   },
+   "properties": {
+    "claim_id": "C0731",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-708D",
+    "unit_name": "708th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-10",
+    "place_id": "PL0206",
+    "location_name": "Le Mans, Sarthe",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "708th Division defending the le Mans area west of the Sarthe against the U.S. XV Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R403;R001",
+    "source_locator": "R403: p. 498"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0911,
+     48.4312
+    ]
+   },
+   "properties": {
+    "claim_id": "C0728",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-11",
+    "place_id": "PL0004",
+    "location_name": "Alençon, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps command post at Alençon threatened by the U.S. XV Corps advance",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R403;R002",
+    "source_locator": "R403: p. 501, 500"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1332,
      52.6362
     ]
@@ -13488,6 +14062,129 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R403;R001",
     "source_locator": "R403: p. 502, 483"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0911,
+     48.4312
+    ]
+   },
+   "properties": {
+    "claim_id": "C0729",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-12",
+    "place_id": "PL0004",
+    "location_name": "Alençon, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXXXI Corps placed under the Fifth Panzer Army to cover Eberbach's east flank",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-11",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R403;R002",
+    "source_locator": "R403: p. 503"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.02,
+     48.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C0738",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-08-12",
+    "place_id": "PL0010",
+    "location_name": "Argentan, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "XLVII Panzer Corps headquarters arrives at Argentan; takes control of 9th Panzer remnants and the 116th",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R403;R001",
+    "source_locator": "R403: p. 502, 503"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9397,
+     48.6486
+    ]
+   },
+   "properties": {
+    "claim_id": "C0739",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-08-12",
+    "place_id": "PL0236",
+    "location_name": "Mortain, Manche (Mortain sector; corps command post not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "LVIII Panzer Corps takes over responsibility at Mortain from the XLVII Panzer Corps",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R403;R001",
+    "source_locator": "R403: p. 502, 482"
    }
   },
   {
@@ -14930,6 +15627,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.1061,
+     48.7611
+    ]
+   },
+   "properties": {
+    "claim_id": "C0740",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-17",
+    "place_id": "PL0523",
+    "location_name": "Le Bourg-Saint-Léonard, Orne",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "116th Panzer Division and 2nd SS elements retake le Bourg-St.-Léonard from the U.S. 90th Division",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 529, 530"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.3106,
      48.537
     ]
@@ -15381,6 +16119,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.1044,
+     48.7299
+    ]
+   },
+   "properties": {
+    "claim_id": "C0751",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-19",
+    "place_id": "PL0513",
+    "location_name": "Forêt de Gouffern (Bois de Feuillet; point = Forêt de Gouffern area)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "84th Division assembles in the Bois de Feuillet to follow the LXXXIV Corps across the Dives",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R002",
+    "source_locator": "R404: p. 550, 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1044,
+     48.7299
+    ]
+   },
+   "properties": {
+    "claim_id": "C0752",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-363D",
+    "unit_name": "363rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-19",
+    "place_id": "PL0513",
+    "location_name": "Forêt de Gouffern (Bois de Feuillet; point = Forêt de Gouffern area)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "363rd Division assembles in the Bois de Feuillet to follow the LXXXIV Corps across the Dives",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R002",
+    "source_locator": "R404: p. 550, 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.9286,
      48.7394
     ]
@@ -15538,6 +16358,416 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R405;R001",
     "source_locator": "R405: p. 576"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0908,
+     48.813
+    ]
+   },
+   "properties": {
+    "claim_id": "C0741",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-08-20",
+    "place_id": "PL0514",
+    "location_name": "Saint-Lambert-sur-Dives and Chambois (midpoint) (crossing area; corps headquarters not tied to a village)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "XLVII Panzer Corps breakout across the Dives in the St. Lambert-Chambois area",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 548, 549, 539"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0755,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C0742",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-20",
+    "place_id": "PL0511",
+    "location_name": "Saint-Lambert-sur-Dives, Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "2nd Panzer Division armored elements reach St. Lambert about 1000; Luettwitz leads an attack across the Dives bridge",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R002",
+    "source_locator": "R404: p. 549, 548"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.02,
+     48.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C0743",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-20",
+    "place_id": "PL0010",
+    "location_name": "Argentan, Orne",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "116th Panzer Division covering the corps rear in two groups at Argentan and near Bon-Ménil",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 549, 548"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1061,
+     48.8058
+    ]
+   },
+   "properties": {
+    "claim_id": "C0744",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-20",
+    "place_id": "PL0512",
+    "location_name": "Chambois, Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "1st SS Panzer Division tanks preparing at daybreak to attack through Chambois; the Allied fire stalled the attack",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 550, 548"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1061,
+     48.8058
+    ]
+   },
+   "properties": {
+    "claim_id": "C0745",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0512",
+    "location_name": "Chambois, Orne (Dives crossing at Moissy, near Chambois)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "353rd Division breakout across the Dives in the Chambois area at Moissy; Mahlmann reaches Mt. Ormel",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 547, 548, 538"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0755,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C0746",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-08-20",
+    "place_id": "PL0511",
+    "location_name": "Saint-Lambert-sur-Dives, Orne (between Magny and St. Lambert; crossing area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "II Parachute Corps breakout column reaches the Dives between Magny and St. Lambert about 0030",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R002",
+    "source_locator": "R404: p. 543, 542, 538"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0755,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C0747",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-20",
+    "place_id": "PL0511",
+    "location_name": "Saint-Lambert-sur-Dives, Orne (Dives crossing area)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Schimpf seriously wounded at the Dives; Meindl, the corps commander, takes over the 3rd Parachute Division",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R002",
+    "source_locator": "R404: p. 543, 542"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0755,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C0748",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0511",
+    "location_name": "Saint-Lambert-sur-Dives, Orne (action near St. Lambert; corps headquarters not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "Elfeldt, the LXXXIV Corps commander, surrenders after an action near St. Lambert",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R002",
+    "source_locator": "R404: p. 550, 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0908,
+     48.813
+    ]
+   },
+   "properties": {
+    "claim_id": "C0749",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-20",
+    "place_id": "PL0514",
+    "location_name": "Saint-Lambert-sur-Dives and Chambois (midpoint) (Dives crossing between Chambois and St. Lambert)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "12th SS Panzer Division infantry group under Meyer crosses the Dives between Chambois and St. Lambert",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 550, 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0206,
+     48.8147
+    ]
+   },
+   "properties": {
+    "claim_id": "C0750",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-277D",
+    "unit_name": "277th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0515",
+    "location_name": "Villedieu-lès-Bailleul, Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "277th Division falls back to a line 1.5 miles from Villedieu-les-Bailleul and breaks out toward the Dives that night",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 551, 550"
    }
   },
   {

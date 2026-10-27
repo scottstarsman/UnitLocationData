@@ -5049,6 +5049,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C0790",
+    "conflict_group_id": "G022",
+    "claim_status": "disputed",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie) (Normandie only)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Lexikon table of 1944 puts Panzer Lehr under the LXXXIV Corps, Seventh Army, in the month of June",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R276;R001",
+    "source_locator": "R276: table of 1944 (June row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0586,
      49.1575
     ]
@@ -9067,6 +9108,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0793",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-03",
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (assembly area well south of Saint-Lô)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "2nd SS Panzer Division assembling well south of Saint-Lô in the Seventh Army reserve, ready to move to La Haye-du-Puits",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R603;R280;R001",
+    "source_locator": "R603: p. 60; R280: Einsatz und Unterstellung (to 6 July 1944)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5451,
+     49.2911
+    ]
+   },
+   "properties": {
+    "claim_id": "C0798",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LL-091D",
+    "unit_name": "91st Luftlande Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-03",
+    "place_id": "PL0170",
+    "location_name": "La-Haye-du-Puits, Manche (Group Koenig line at La Haye-du-Puits)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "91st Luftlande Division remnants, with the 243rd and a 265th Kampfgruppe, hold Group Koenig's line in front of the VIII Corps attack at La Haye-du-Puits",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R603;R002",
+    "source_locator": "R603: p. 58, 60"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5451,
+     49.2911
+    ]
+   },
+   "properties": {
+    "claim_id": "C0799",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-243D",
+    "unit_name": "243rd Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-03",
+    "place_id": "PL0170",
+    "location_name": "La-Haye-du-Puits, Manche (flank sectors of Group Koenig; whole division artillery in support)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "243rd Division parts on the flanks of Group Koenig, with the whole division artillery supporting the line at La Haye-du-Puits",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R603;R002",
+    "source_locator": "R603: p. 60, 58"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5717,
+     49.2811
+    ]
+   },
+   "properties": {
+    "claim_id": "C0800",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-03",
+    "place_id": "PL0530",
+    "location_name": "Montgardon (Montgardon ridge and Mont Castre)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "353rd Division defends the Montgardon ridge and Mont Castre behind Group Koenig; the LXXXIV Corps recommits it on 2 July",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R603;R215;R001",
+    "source_locator": "R603: p. 60; R215: Einsatz und Unterstellung (2 and 3 July 1944)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -9149,6 +9354,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0797",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-04",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (Périers sector of the isthmus)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "17th SS Panzer Grenadier Division headquarters controls the Périers sector of the LXXXIV Corps right wing, with the 6th Parachute Regiment attached",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R604;R285;R001",
+    "source_locator": "R604: p. 81; R285: table of 1944 (July row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -9183,6 +9429,129 @@
     "location_temporal_offset_days": -2,
     "reference_ids": "R369;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3239,
+     49.0458
+    ]
+   },
+   "properties": {
+    "claim_id": "C0772",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-06",
+    "place_id": "PL0525",
+    "location_name": "Bretteville-sur-Laize (assembly area around the town, about 12 km south of Caen)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "1st SS Panzer Division arrives and takes its assembly area around Bretteville-sur-Laize, about 12 km south of Caen",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R279;R001",
+    "source_locator": "R279: Einsatz und Unterstellung (6 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0794",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-06",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (sector northeast of Périers)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "2nd SS Panzer Division headquarters takes over its own front sector northeast of Périers",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R280;R001",
+    "source_locator": "R280: Einsatz und Unterstellung (6 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0795",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-07",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (isthmus end of a division strung across the Cotentin)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "2nd SS Panzer Division strung across the Cotentin, battling the VIII Corps at La Haye-du-Puits and the VII Corps on the Carentan-Périers isthmus",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R604;R001",
+    "source_locator": "R604: p. 89"
    }
   },
   {
@@ -9231,6 +9600,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0776",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-08",
+    "place_id": "PL0059",
+    "location_name": "Caen sector (Caen sector west of the Orne)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "12th SS Panzer Division still in the front line at Caen after the bombing of 7 July; forced to give way, with heavy tank and gun losses (Operation Charnwood)",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R591;R278;R001",
+    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5019,
+     49.1006
+    ]
+   },
+   "properties": {
+    "claim_id": "C0784",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-08",
+    "place_id": "PL0527",
+    "location_name": "Évrecy (area east of the village)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "9th SS Panzer Division relieved by the 277th Infantry Division and marching to the area east of Évrecy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R281;R001",
+    "source_locator": "R281: Einsatz und Unterstellung (8 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0787",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-08",
+    "place_id": "PL0059",
+    "location_name": "Caen sector (Caen sector; place of the counterattack not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "21st Panzer Division, just moved out of the line into reserve, counterattacks after the bombing of 7 July without result; the 16th Luftwaffe Field Division is attached to it",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R591;R596;R001",
+    "source_locator": "R591: p. 121, 122; R596: infobox"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.3859,
      49.4989
     ]
@@ -9265,6 +9757,170 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R359;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0777",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-09",
+    "place_id": "PL0057",
+    "location_name": "Caen (southern part of Caen behind the Orne)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "12th SS Panzer Division withdraws behind the Orne into the southern part of Caen as British and Canadian troops enter the city",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R278;R591;R001",
+    "source_locator": "R278: Einsatz und Unterstellung (9 July 1944 entry); R591: p. 122"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0788",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-09",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (destination area west of the Vire; division in transit)",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Panzer Lehr, replaced at Caen by a newly arrived infantry division, moving across the front to the Seventh Army sector west of Saint-Lô",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R591;R602;R593;R001",
+    "source_locator": "R591: p. 122; R602: p. 102; R593: p. 324"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1633,
+     49.205
+    ]
+   },
+   "properties": {
+    "claim_id": "C0796",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-09",
+    "place_id": "PL0521",
+    "location_name": "Le Dézert, Manche (contact near le Désert)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "task force of the 2nd SS Panzer Division strikes the right flank of the U.S. 30th Division near le Désert; Panzer Lehr to come from the east",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R602;R001",
+    "source_locator": "R602: p. 113, 102"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1633,
+     49.205
+    ]
+   },
+   "properties": {
+    "claim_id": "C0789",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-10",
+    "place_id": "PL0521",
+    "location_name": "Le Dézert, Manche (Taute-Vire area near Hauts-Vents)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Panzer Lehr moving into the Taute-Vire area; its counterattack planned for after midnight is disrupted by the American combat command at Hauts-Vents",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R602;R001",
+    "source_locator": "R602: p. 117"
    }
   },
   {
@@ -9436,6 +10092,211 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3927,
+     49.1557
+    ]
+   },
+   "properties": {
+    "claim_id": "C0773",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-11",
+    "place_id": "PL0532",
+    "location_name": "Maltot-Caen front sector (sector between Maltot and Caen)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "1st SS Panzer Division takes over a front sector between Maltot and Caen (the day of Operation Jupiter)",
+    "operation_id": "OP-JUPITER",
+    "operation": "Operation Jupiter",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Jupiter",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R279;R001",
+    "source_locator": "R279: Einsatz und Unterstellung (11 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2467,
+     48.9719
+    ]
+   },
+   "properties": {
+    "claim_id": "C0778",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-11",
+    "place_id": "PL0528",
+    "location_name": "Potigny (refit area around the town)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "12th SS Panzer Division relieved by the 272nd Infantry Division and sent to refit around Potigny, north of Falaise",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R278;R600;R001",
+    "source_locator": "R278: Einsatz und Unterstellung (11 July 1944 entry); R600: p. 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4217,
+     49.13
+    ]
+   },
+   "properties": {
+    "claim_id": "C0785",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-11",
+    "place_id": "PL0526",
+    "location_name": "Maltot (Maltot and Éterville, villages named together)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "9th SS Panzer Division in heavy fighting at Maltot and Éterville (Operation Jupiter)",
+    "operation_id": "OP-JUPITER",
+    "operation": "Operation Jupiter",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Jupiter",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R281;R597;R001",
+    "source_locator": "R281: Einsatz und Unterstellung (11 July 1944 entry); R597: infobox"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0801",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-07-11",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (sector east and northeast of Saint-Lô)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "3rd Fallschirmjäger Division, on the right of the II Parachute Corps, reduced to 35 percent of its authorized strength by nightfall of 11 July in the XIX Corps attack toward Saint-Lô",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R588;R180;R001",
+    "source_locator": "R588: p. 157, 148; R180: Einsatz und Unterstellung (11 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0802",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-11",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (left of the II Parachute Corps sector; headquarters place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "352nd Division headquarters controls Kampfgruppes of the 353rd, 266th and 352nd Divisions on the left of the II Parachute Corps sector between the Vire and the Drôme",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R588;R001",
+    "source_locator": "R588: p. 148, 157"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1332,
      52.6362
     ]
@@ -9593,6 +10454,47 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R359;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4632,
+     49.2003
+    ]
+   },
+   "properties": {
+    "claim_id": "C0805",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-14",
+    "place_id": "PL0534",
+    "location_name": "Lessay-Périers line (Lessay-Périers line; command post not stated)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXIV Corps falls back to the Lessay-Périers line in the night of 13/14 July with Kluge's authorization",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R591;R248;R593;R002",
+    "source_locator": "R591: p. 128; R248: Einsatz und Unterstellung (night 13/14 July 1944); R593: p. 325"
    }
   },
   {
@@ -9805,6 +10707,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3125,
+     49.1285
+    ]
+   },
+   "properties": {
+    "claim_id": "C0774",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-15",
+    "place_id": "PL0533",
+    "location_name": "Saint-André-sur-Orne to Frénouville line (line from Saint-André-sur-Orne to Frénouville)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "1st SS Panzer Division moves into the line from Saint-André-sur-Orne to Frénouville, about 3 km south of Caen, before the 272nd Infantry Division relieves it",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R279;R599;R594;R001",
+    "source_locator": "R279: Einsatz und Unterstellung (15 July 1944 entry); R599: Einsatz und Unterstellung (11 to 16 July); R594: footnote 3 to the I SS Panzer Corps list"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0782",
+    "conflict_group_id": "G023",
+    "claim_status": "disputed",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-15",
+    "place_id": "PL0059",
+    "location_name": "Caen sector (corps sector; division place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "12th SS Panzer Division listed in the July 1944 order of battle as corps reserve of the I SS Panzer Corps",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R594;R001",
+    "source_locator": "R594: German list, I SS Panzer Corps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C0783",
+    "conflict_group_id": "G023",
+    "claim_status": "disputed",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie) (Normandie only)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "12th SS Panzer Division listed by the Lexikon for July 1944 under the LXXXVI Corps, Panzer Group West, Normandie",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R278;R001",
+    "source_locator": "R278: table of 1944 (July row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C0791",
+    "conflict_group_id": "G022",
+    "claim_status": "disputed",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie) (Normandy front only)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Feldgrau table puts Panzer Lehr under the LXXXIV Corps in the month of July (7.44)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R595;R001",
+    "source_locator": "R595: War Service table (7.44 row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C0792",
+    "conflict_group_id": "G022",
+    "claim_status": "disputed",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie) (corps order of battle; division place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Lexikon dated list of 15 July 1944 names Panzer Lehr first among the divisions of the LXXXIV Corps",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R248;R001",
+    "source_locator": "R248: dated list \"15. Juli 1944\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.23,
+     49.15
+    ]
+   },
+   "properties": {
+    "claim_id": "C0779",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-16",
+    "place_id": "PL0193",
+    "location_name": "Lisieux (711th Division sector north of Lisieux; move ordered, division not arrived)",
+    "location_represents": "objective",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "order given on 16 July to move the 12th SS Panzer Division into the sector of the 711th Infantry Division on the Channel coast north of Lisieux",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R593;R600;R001",
+    "source_locator": "R593: p. 325; R600: p. 192"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2997,
      49.2786
     ]
@@ -9887,6 +11035,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.4217,
+     49.13
+    ]
+   },
+   "properties": {
+    "claim_id": "C0780",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-17",
+    "place_id": "PL0526",
+    "location_name": "Maltot (Maltot area, one Kampfgruppe only)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "one Kampfgruppe of the 12th SS Panzer Division alerted and moved to the Maltot area to the 272nd Infantry Division",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R278;R001",
+    "source_locator": "R278: Einsatz und Unterstellung (17 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4605,
+     49.1236
+    ]
+   },
+   "properties": {
+    "claim_id": "C0786",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-17",
+    "place_id": "PL0173",
+    "location_name": "Hill 112 (front southwest of Caen; Hill 112 sector as an approximation)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "10th SS Panzer Division being relieved at the front southwest of Caen by the 271st Infantry Division; OB West offers it to the LXXXIV Corps but cannot release it",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R601;R594;R593;R002",
+    "source_locator": "R601: Einsatz und Unterstellung (17 July 1944 entry); R594: footnote 2 to the II SS Panzer Corps list; R593: p. 326"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7533,
      49.0093
     ]
@@ -9962,6 +11192,170 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R360;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2569,
+     49.1461
+    ]
+   },
+   "properties": {
+    "claim_id": "C0775",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-18",
+    "place_id": "PL0529",
+    "location_name": "Cagny, Calvados (penetration area near Cagny; position of the division not stated)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "1st SS Panzer Division with the 21st Panzer Division counterattacks the British VIII Corps penetration of Operation Goodwood",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R600;R593;R279;R001",
+    "source_locator": "R600: p. 193; R593: p. 326; R279: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1972,
+     49.1222
+    ]
+   },
+   "properties": {
+    "claim_id": "C0781",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-18",
+    "place_id": "PL0538",
+    "location_name": "Vimont (Kampfgruppe at Vimont; rest of the division position not stated)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "12th SS Panzer Division, turned back from Lisieux, put in at the Goodwood sector; the second Kampfgruppe moved to Vimont to the 21st Panzer Division",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R278;R600;R002",
+    "source_locator": "R278: Einsatz und Unterstellung (18 July 1944 entry); R600: p. 193"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0803",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche (Saint-Lô town and Vire bridges)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "352nd Division fights in Saint-Lô for the Vire bridges with too few men; its counterattack cannot expel the Americans",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R588;R180;R001",
+    "source_locator": "R588: p. 174, 173; R180: Einsatz und Unterstellung (18 July 1944 entry)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0804",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-07-18",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (line south of the Bayeux-Saint-Lô road)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "3rd Fallschirmjäger Division withdraws to the line south of the Bayeux-Saint-Lô road, facing north and northeast, after the Americans enter Saint-Lô",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R180;R588;R001",
+    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174"
    }
   },
   {

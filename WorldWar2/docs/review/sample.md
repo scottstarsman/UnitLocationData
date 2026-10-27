@@ -672,6 +672,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R568 | general | The Last Offensive ch. 18 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-18.html | p. 437 |
   | R569 | general | The Last Offensive ch. 19 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-19.html | p. 466 |
   | R571 | general | CMH ETO order of battle: 13th ARMORED DIVISION (Wayback copy) | assignment_table | https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/13AD-ETO.htm | R568: p. 437; R569: p. 466 |
+  | R582 | general | CMH Combat Chronicle: 13th Armored Division (Wayback copy) | official_history | https://web.archive.org/web/2018/https://history.army.mil/html/forcestruc/cbtchron/cc/013ad.htm | R568: p. 437; R569: p. 466 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R568: p. 437; R569: p. 466 |
 
 ## Part 2: command relations (20 of 557)

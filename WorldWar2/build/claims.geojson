@@ -27415,7 +27415,7 @@
     "precision_km": 3,
     "confidence": 0.7,
     "event_type": "capture",
-    "current_activity": "Combat Command R of the division crosses the Mulde on two intact bridges and takes Colditz and its prisoners",
+    "current_activity": "Combat Command R of the division, with the 69th Division's 273d Infantry, takes Colditz and its prisoners",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",
     "operation_type": "campaign",
@@ -27426,7 +27426,7 @@
     "location_date": "1945-04-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R567;R517;R001",
+    "reference_ids": "R567;R584;R517;R001",
     "source_locator": "R567: p. 393"
    }
   },
@@ -28000,7 +28000,7 @@
     "location_date": "1945-04-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R569;R577;R526;R001",
+    "reference_ids": "R569;R577;R584;R526;R001",
     "source_locator": "R569: p. 450-453"
    }
   },
@@ -28492,7 +28492,7 @@
     "location_date": "1945-05-02",
     "location_basis": "town_centroid",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R571;R568;R569;R001",
+    "reference_ids": "R571;R568;R569;R582;R001",
     "source_locator": "R568: p. 437; R569: p. 466"
    }
   },
@@ -28767,8 +28767,8 @@
     "location_represents": "headquarters",
     "precision_km": 3,
     "confidence": 0.7,
-    "event_type": "capture",
-    "current_activity": "the division enters Innsbruck and its 411th Infantry reaches the Brenner Pass",
+    "event_type": "hq_observation",
+    "current_activity": "command post at Innsbruck as the 411th Infantry reaches the Brenner Pass",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",
     "operation_type": "campaign",
@@ -28779,7 +28779,7 @@
     "location_date": "1945-05-04",
     "location_basis": "town_centroid",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R338;R569;R001",
+    "reference_ids": "R338;R569;R583;R001",
     "source_locator": "R569: p. 468-469"
    }
   },

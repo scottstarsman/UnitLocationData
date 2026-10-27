@@ -20,14 +20,14 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 | Claims by month | Jun 212, Jul 58, Aug 140, Sep 109, Oct 8, Nov 15, Dec 32, Jan 1945 22, Feb 15, Mar 35, Apr 1945 48, May 18 |
 | Units in `data/units.csv` | **356**: 141 active (US 84, Germany 34, UK 21, Canada 2), **215 placeholders** (identity only, no claims; none is a US unit) |
 | Command relations | 557 (`CR0001` to `CR0558`; `CR0037` was removed), 1,468 evidence links, 24 documented overlaps |
-| Places / references / operations | 503 / 575 (ids to `R581`; `R548`, `R550` and `R554` unused and not to be reused) / 45 |
+| Places / references / operations | 503 / 578 (ids to `R584`; `R548`, `R550` and `R554` unused and not to be reused) / 45 |
 | Conflict groups | 14 (30 claims in groups; 626 preferred, 10 alternate, 10 disputed overall; `G017` is the newest, the 89th Division's Moselle date) |
-| Retired claim ids | 0. Next free claim id: **C0713** (next relation `CR0559`, next place `PL0510`, next reference `R582`, next conflict group `G018`) |
+| Retired claim ids | 0. Next free claim id: **C0713** (next relation `CR0559`, next place `PL0510`, next reference `R585`, next conflict group `G018`) |
 | Done | June 1944 proof of concept (US, UK, Canadian and German units); US Army Batches 1 to 3 (1 July to 31 December 1944) |
 | Done on the branch `batch4-jan-mar-1945` (merged into `main`, 26 October 2026) | **Batch 4 (1 January to 31 March 1945)**, 68 claims; see `docs/roadmap.md`, "Batch 4" and the `docs/changelog.md` entries |
 | Done on the branch `corps-xxii-xxiii` (merged into `main`, 26 October 2026) | **XXII and XXIII Corps** activated: 5 claims (`C0642` to `C0646`), 7 command relations (`CR0472` to `CR0478`), 1 existing relation closed (`CR0097`); see `docs/roadmap.md`, "XXII and XXIII Corps" and the `docs/changelog.md` entry |
 | Done on the branch `corps-followups` (merged into `main` with PR #17, 26 October 2026) | **Follow-ups to the corps task:** `formed_date` of XXII and XXIII Corps set to 1944-01-15 (activation); `CR0447` (95th Division to XIX Corps) closed on 1945-03-30 (table-based end); no claim added (646). See the `docs/changelog.md` entries and `docs/roadmap.md`, open points 1, 2 and 6 |
-| Done on the branch `batch5-apr-may-1945` (**pushed, not merged**; awaiting the spot check, Scott's review and merge) | **Batch 5 (1 April to 8 May 1945)**, 66 claims (`C0647` to `C0712`), 6 placeholders activated (13th, 16th and 20th Armored; 71st, 86th and 97th Infantry), 80 relations (`CR0479` to `CR0558`), 41 earlier relations closed, 3 operations, 16 references, country codes `AT` and `CZ`; see `docs/roadmap.md`, "Batch 5" (including what it does not cover) and the `docs/changelog.md` entries |
+| Done on the branch `batch5-apr-may-1945` (**pushed, not merged**; awaiting the spot check, Scott's review and merge) | **Batch 5 (1 April to 8 May 1945)**, 66 claims (`C0647` to `C0712`), 6 placeholders activated (13th, 16th and 20th Armored; 71st, 86th and 97th Infantry), 80 relations (`CR0479` to `CR0558`), 41 earlier relations closed, 3 operations, 19 references, country codes `AT` and `CZ`; see `docs/roadmap.md`, "Batch 5" (including what it does not cover) and the `docs/changelog.md` entries |
 | **Not started** | A commanders table, `event_support` and `position` columns, F-004 and F-005, XXII and XXIII Corps rows for April and May, and the gaps listed under "What Batch 5 does NOT cover" in the roadmap |
 
 **What is and is not covered.**

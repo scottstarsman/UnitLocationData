@@ -22146,6 +22146,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0886",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-03",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland (destination of the order, not a documented position)",
+    "location_represents": "objective",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Model directs the Fifth Panzer Army to release the 9th SS Panzer Division to the vicinity of Arnhem for rehabilitation",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R608;R001",
+    "source_locator": "R608: p. 127"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0418,
      51.0356
     ]
@@ -22262,6 +22303,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R415;R002",
     "source_locator": "R415: p. 192-193"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0418,
+     51.0356
+    ]
+   },
+   "properties": {
+    "claim_id": "C0894",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-04",
+    "place_id": "PL0541",
+    "location_name": "Albert Canal front (midpoint of Antwerp and Maastricht) (canal line, not a documented position of the division)",
+    "location_represents": "objective",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The 3rd Fallschirmjäger Division is assigned to the First Parachute Army",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 366"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0418,
+     51.0356
+    ]
+   },
+   "properties": {
+    "claim_id": "C0895",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-04",
+    "place_id": "PL0541",
+    "location_name": "Albert Canal front (midpoint of Antwerp and Maastricht) (canal line, not a documented position of the division)",
+    "location_represents": "objective",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The 5th Fallschirmjäger Division is assigned to the First Parachute Army",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 366"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0418,
+     51.0356
+    ]
+   },
+   "properties": {
+    "claim_id": "C0896",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-04",
+    "place_id": "PL0541",
+    "location_name": "Albert Canal front (midpoint of Antwerp and Maastricht) (canal line, not a documented position of the division)",
+    "location_represents": "objective",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The 6th Fallschirmjäger Division is assigned to the First Parachute Army",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 366"
    }
   },
   {
@@ -22643,6 +22807,47 @@
     ]
    },
    "properties": {
+    "claim_id": "C0874",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-05",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "The 17th SS Panzer Grenadier Division refits in the Metz area behind the First Army front",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R411;R001",
+    "source_locator": "R411: p. 47"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
     "claim_id": "C0834",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -23000,6 +23205,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R593;R001",
     "source_locator": "R593: p. 370"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0888",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-09",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland (route named in the order, not a documented position)",
+    "location_represents": "approach_route",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Model orders the 10th SS Panzer Division to continue past Arnhem into Germany for rehabilitation",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R608;R001",
+    "source_locator": "R608: p. 127"
    }
   },
   {
@@ -24278,6 +24524,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0861",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-12",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Schwerin regroups the 116th Panzer Division north of Aachen and takes command of the city",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R272;R001",
+    "source_locator": "R441: p. 70-71; R272: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C0866",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-049D",
+    "unit_name": "49th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 49th Infantry Division holds the Dutch-Belgian border line east of the 275th Division on the LXXXI Corps north wing",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R442;R001",
+    "source_locator": "R442: p. 98, 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C0867",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-275D",
+    "unit_name": "275th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 275th Infantry Division holds the Meuse near Lanaye on the LXXXI Corps north wing",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R442;R203;R001",
+    "source_locator": "R442: p. 98, 103; R203: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0706,
+     48.8406
+    ]
+   },
+   "properties": {
+    "claim_id": "C0872",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-12",
+    "place_id": "PL0114",
+    "location_name": "Dieulouard, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 3rd Panzer Grenadier Division holds the First Army line north of Nancy opposite the 80th Division bridgehead",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R413;R411;R001",
+    "source_locator": "R413: p. 80; R411: p. 49"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9013,
      49.0476
     ]
@@ -24319,6 +24729,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5017,
+     48.5894
+    ]
+   },
+   "properties": {
+    "claim_id": "C0876",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-13",
+    "place_id": "PL0199",
+    "location_name": "Lunéville, Meurthe-et-Moselle (attack objective, not a documented position)",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "OB West sets the 15th Panzer Grenadier Division to attack at Lunéville",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-13",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.8619,
      48.5661
     ]
@@ -24353,6 +24804,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R369;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0863",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-14",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia (destination of the movement; the division was in East Prussia)",
+    "location_represents": "objective",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "The 12th Infantry Division begins entraining in East Prussia for the Aachen sector at 0001",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R001",
+    "source_locator": "R441: p. 71"
    }
   },
   {
@@ -24558,6 +25050,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R360;R408;R001",
     "source_locator": "R408: p. 637"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "claim_id": "C0862",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-16",
+    "place_id": "PL0557",
+    "location_name": "Stolberg (Rhineland), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Brandenberger relieves the commander and the chief of staff of the 9th Panzer Division in the Stolberg Corridor",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R002",
+    "source_locator": "R441: p. 87"
    }
   },
   {
@@ -24845,6 +25378,375 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R605;R001",
     "source_locator": "R605: p. 141-142, 170"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "claim_id": "C0864",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0557",
+    "location_name": "Stolberg (Rhineland), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "The 12th Infantry Division detrains at Jülich and sends battalions to Verlautenheide and Stolberg",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R442;R002",
+    "source_locator": "R441: p. 88; R442: p. 109"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3249,
+     50.7685
+    ]
+   },
+   "properties": {
+    "claim_id": "C0868",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0559",
+    "location_name": "Schevenhütte, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "The remnant of the 353rd Infantry Division takes the Wenau, Hürtgen and Roetgen forests and passes to the LXXIV Corps",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R002",
+    "source_locator": "R441: p. 87"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1605,
+     48.9869
+    ]
+   },
+   "properties": {
+    "claim_id": "C0873",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-17",
+    "place_id": "PL0560",
+    "location_name": "Sillegny, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "The 3rd Panzer Grenadier Division withdraws to the line Sillegny-Seille-Port-sur-Seille-Landremont",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R413;R002",
+    "source_locator": "R413: p. 114"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1605,
+     48.9869
+    ]
+   },
+   "properties": {
+    "claim_id": "C0875",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-17",
+    "place_id": "PL0560",
+    "location_name": "Sillegny, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 17th SS Panzer Grenadier Division holds the First Army line at Sillegny, next to the 3rd Panzer Grenadier line",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R413;R002",
+    "source_locator": "R413: p. 114"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0887",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-17",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "The 9th SS Panzer Division, the stronger of the two SS divisions, is at Arnhem under the II SS Panzer Corps",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R281;R001",
+    "source_locator": "R605: p. 142-143; R281: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C0889",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-17",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland (destination of the order, not a documented position)",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Bittrich directs the whole 10th SS Panzer Division to Nijmegen to hold the Waal bridges",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R001",
+    "source_locator": "R605: p. 142, 164"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C0890",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "The 59th Infantry Division, moved to the First Parachute Army, is in transit near Tilburg when the landings begin",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R608;R443;R001",
+    "source_locator": "R608: p. 136; R443: p. 219"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C0892",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-064D",
+    "unit_name": "64th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0569",
+    "location_name": "Breskens, Zeeland (south bank of the Scheldt; the point is inferred)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "The 64th Infantry Division is left to defend the south bank of the Scheldt",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R443;R002",
+    "source_locator": "R443: p. 218-219"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.893,
+     51.4672
+    ]
+   },
+   "properties": {
+    "claim_id": "C0893",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0570",
+    "location_name": "South Beveland (Zuid-Beveland), Zeeland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "The 245th Infantry Division is installed on the peninsula of South Beveland",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R443;R002",
+    "source_locator": "R443: p. 218-219"
    }
   },
   {
@@ -25180,6 +26082,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C0865",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia (West Wall north of Aachen; no village named)",
+    "location_represents": "objective",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "The 183rd Volksgrenadier Division detrains along the Roer and moves into the West Wall north of Aachen",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R442;R002",
+    "source_locator": "R442: p. 109-112"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C0880",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-18",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "The 11th Panzer Division leaves the Belfort Gap to reinforce the Fifth Panzer Army",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R273;R001",
+    "source_locator": "R416: p. 237; R273: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C0891",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "The 70th Infantry Division settles on Walcheren island, which Hitler ordered held as a fortress",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R443;R001",
+    "source_locator": "R593: p. 393; R443: p. 218-219"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5339,
      48.7244
     ]
@@ -25460,6 +26485,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R364;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3481,
+     48.742
+    ]
+   },
+   "properties": {
+    "claim_id": "C0882",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-553D",
+    "unit_name": "553rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL0566",
+    "location_name": "Champenoux, Meurthe-et-Moselle (link-up point; the division position is inferred)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "The 553rd Volksgrenadier Division is hemmed in east of Nancy; the armor is to link up with it at Champenoux",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 221-222"
    }
   },
   {
@@ -26000,6 +27066,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5296,
+     48.5745
+    ]
+   },
+   "properties": {
+    "claim_id": "C0878",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-21",
+    "place_id": "PL0562",
+    "location_name": "Moncel-lès-Lunéville, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 21st Panzer Division outposts at Moncel are hit by the 313th Infantry, just outside the Forêt de Mondon",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 233"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5017,
      48.5894
     ]
@@ -26157,6 +27264,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R416;R002",
     "source_locator": "R416: p. 230, 232-233"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6078,
+     48.6417
+    ]
+   },
+   "properties": {
+    "claim_id": "C0877",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-22",
+    "place_id": "PL0561",
+    "location_name": "Forêt de Parroy, Meurthe-et-Moselle",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 15th Panzer Grenadier Division, one regiment short, holds between Lunéville and the canal from the Forêt de Parroy",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R609;R002",
+    "source_locator": "R416: p. 234; R609: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6579,
+     48.5401
+    ]
+   },
+   "properties": {
+    "claim_id": "C0879",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-22",
+    "place_id": "PL0563",
+    "location_name": "Forêt de Mondon, Meurthe-et-Moselle",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "The 21st Panzer Division, hardly at regimental strength, holds the east bank of the Meurthe at the Forêt de Mondon",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R274;R002",
+    "source_locator": "R416: p. 234; R274: table of 1944, September row"
    }
   },
   {
@@ -26533,6 +27722,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5113,
+     48.8231
+    ]
+   },
+   "properties": {
+    "claim_id": "C0883",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-559D",
+    "unit_name": "559th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-24",
+    "place_id": "PL0547",
+    "location_name": "Château-Salins, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Two regiments of the 559th Volksgrenadier Division attack Combat Command B near Château-Salins from Morhange",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 236"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1676,
+     49.3579
+    ]
+   },
+   "properties": {
+    "claim_id": "C0885",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-462D",
+    "unit_name": "462nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-24",
+    "place_id": "PL0567",
+    "location_name": "Thionville, Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Number 462 extends its front north past Thionville to cover the gap left by the 559th Division",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R219;R002",
+    "source_locator": "R416: p. 236; R219: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8312,
      49.0724
     ]
@@ -26697,6 +27968,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6087,
+     48.7897
+    ]
+   },
+   "properties": {
+    "claim_id": "C0881",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-25",
+    "place_id": "PL0565",
+    "location_name": "Marsal, Moselle",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 11th Panzer Division attacks at 0900 and takes Marsal, then reaches Vic-sur-Seille",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 237-238"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -26801,6 +28113,47 @@
     "confidence": 0.5,
     "event_type": "attack",
     "current_activity": "Priess attacks toward Moncel with the 559th Volksgrenadier Division and the 106th Panzer Brigade",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 245-246"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5113,
+     48.8231
+    ]
+   },
+   "properties": {
+    "claim_id": "C0884",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-559D",
+    "unit_name": "559th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL0547",
+    "location_name": "Château-Salins, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 559th Volksgrenadier Division attacks down the Chambrey-Pettoncourt road toward Moncel",
     "operation_id": "OP-LORRAINE",
     "operation": "Lorraine campaign",
     "operation_type": "campaign",
@@ -27353,6 +28706,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0869",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-246D",
+    "unit_name": "246th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 246th Infantry Division holds Aachen; OB West accepts its possible loss and orders the city held to the last",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 404"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0870",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-246D",
+    "unit_name": "246th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-12",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Wilck takes over the Aachen garrison and sets up his headquarters in the Palast-Hotel Quellenhof",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R432;R001",
+    "source_locator": "R432: p. 307"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9833,
      50.8833
     ]
@@ -27428,6 +28863,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R432;R434;R001",
     "source_locator": "R432: p. 319, 315; R434: p. 390"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0871",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-246D",
+    "unit_name": "246th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-21",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "Wilck surrenders the Aachen garrison at 1205 at a bunker on Lousberg Strasse",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-21",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R432;R001",
+    "source_locator": "R432: p. 316"
    }
   },
   {

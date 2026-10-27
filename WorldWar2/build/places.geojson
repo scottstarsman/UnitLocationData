@@ -18,7 +18,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 10
    }
   },
   {
@@ -2238,7 +2238,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -3918,7 +3918,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -3998,7 +3998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -10678,7 +10678,7 @@
     "precision_km": 50,
     "country": "BE",
     "region": "Belgium",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -10798,7 +10798,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -10838,7 +10838,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10918,7 +10918,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 3
+    "claims_count": 6
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10978,6 +10978,286 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "place_id": "PL0557",
+    "name": "Stolberg (Rhineland), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "place_id": "PL0558",
+    "name": "Geilenkirchen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3249,
+     50.7685
+    ]
+   },
+   "properties": {
+    "place_id": "PL0559",
+    "name": "Schevenhütte, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1605,
+     48.9869
+    ]
+   },
+   "properties": {
+    "place_id": "PL0560",
+    "name": "Sillegny, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6078,
+     48.6417
+    ]
+   },
+   "properties": {
+    "place_id": "PL0561",
+    "name": "Forêt de Parroy, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5296,
+     48.5745
+    ]
+   },
+   "properties": {
+    "place_id": "PL0562",
+    "name": "Moncel-lès-Lunéville, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6579,
+     48.5401
+    ]
+   },
+   "properties": {
+    "place_id": "PL0563",
+    "name": "Forêt de Mondon, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "place_id": "PL0564",
+    "name": "Belfort, Territoire de Belfort",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Franche-Comté",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6087,
+     48.7897
+    ]
+   },
+   "properties": {
+    "place_id": "PL0565",
+    "name": "Marsal, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3481,
+     48.742
+    ]
+   },
+   "properties": {
+    "place_id": "PL0566",
+    "name": "Champenoux, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1676,
+     49.3579
+    ]
+   },
+   "properties": {
+    "place_id": "PL0567",
+    "name": "Thionville, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "place_id": "PL0568",
+    "name": "Tilburg, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "place_id": "PL0569",
+    "name": "Breskens, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.893,
+     51.4672
+    ]
+   },
+   "properties": {
+    "place_id": "PL0570",
+    "name": "South Beveland (Zuid-Beveland), Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Zeeland",
     "claims_count": 1
    }
   }

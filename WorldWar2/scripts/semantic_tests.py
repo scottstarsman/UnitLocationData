@@ -9,6 +9,7 @@ ANSWERS for four representable scenarios, so that a change to the data, the buil
   3. 84th Infantry Division: a temporary corps-level attachment (XVIII Airborne Corps, 20 to 23 December) and the transfer to VII Corps.
   4. Administrative parent against operational headquarters: administrative_control is shown as a relationship but is not part of the operational chain.
   0. The staleness rule (R1-N-001): a relationship with no recorded end is certain only up to its last listing (schema/README.md, "Reading a command interval").
+  6. German Batch 1 (July-August 1944): undated German parent changes are answered 'possible' on the days between two listings.
   5. NOT TESTED: an inferred position replaced by a sourced one. The data has no way to represent the replacement (no supersession or version field;
      `location_basis` marks only three claims as inferred), so there is nothing to assert yet.
 
@@ -228,8 +229,33 @@ def scenario_4_administrative_versus_operational():
            sorted(k for k in intervals(FIRST_ARMY, '1944-12-21')), sorted([(ARMY_GROUP_12, 'assigned'), (ARMY_GROUP_21, 'operational_control')]))
 
 
+def scenario_6_german_parent_changes_1944():
+    """German Batch 1 (July-August 1944): parent changes that no source dates are answered 'possible', never 'certain', on the days between the two listings."""
+    s = 'scenario 6, German parent changes July-August 1944'
+    pz47, lehr, ss12, d352 = 'GER-PZ-047C', 'GER-PZ-LEHRD', 'GER-SSPZ-012D', 'GER-INF-352D'
+    a = intervals(lehr, '1944-07-09')
+    expect(s + ': Panzer Lehr, 9 Jul: I SS Panzer Corps is possible only (the end is inferred, change undated)', a[('GER-SSPZ-001C', 'assigned')][0], 'possible')
+    a = intervals(lehr, '1944-07-15')
+    expect(s + ': Panzer Lehr, 15 Jul: Seventh Army (unspecified_subordination) is possible', a[('GER-ARMY-007A', 'unspecified_subordination')][0], 'possible')
+    expect(s + ': Panzer Lehr, 15 Jul: the I SS Panzer Corps interval no longer applies', ('GER-SSPZ-001C', 'assigned') in a, False)
+    a = intervals(lehr, '1944-07-25')
+    expect(s + ': Panzer Lehr, 25 Jul (Cobra): LXXXIV Corps is certain', a[('GER-COR-084C', 'unspecified_subordination')][0], 'certain')
+    expect(s + ': Panzer Lehr, 25 Jul: the chain is LXXXIV Corps, Seventh Army, Army Group B', [x[0] for x in chain(lehr, '1944-07-25')][:3], ['German LXXXIV Corps', 'German Seventh Army', 'German Army Group B'])
+    a = intervals(pz47, '1944-08-10')
+    expect(s + ': XLVII Panzer Corps, 10 Aug: Seventh Army is possible (end between 7 and 11 Aug)', a[('GER-ARMY-007A', 'unspecified_subordination')][0], 'possible')
+    a = intervals(pz47, '1944-08-15')
+    expect(s + ': XLVII Panzer Corps, 15 Aug: Panzer Group Eberbach is the only parent (possible)', sorted(a), [('GER-PZG-EBERB', 'unspecified_subordination')])
+    expect(s + ': XLVII Panzer Corps, 15 Aug: ... and it is possible, not certain', a[('GER-PZG-EBERB', 'unspecified_subordination')][0], 'possible')
+    a = intervals(pz47, '1944-08-19')
+    expect(s + ': XLVII Panzer Corps, 19 Aug: back under the Seventh Army (possible: the start hour is undocumented)', a[('GER-ARMY-007A', 'unspecified_subordination')][0], 'possible')
+    a = intervals(ss12, '1944-08-20')
+    expect(s + ': 12th SS Panzer Division, 20 Aug: LXXXIV Corps (possible) and no I SS Panzer Corps interval', sorted(a), [('GER-COR-084C', 'unspecified_subordination')])
+    a = intervals(d352, '1944-07-20')
+    expect(s + ': 352nd Division, 20 Jul: the LXXXIV Corps assignment is possible (end between 17 and 23 Jul, undated)', a[('GER-COR-084C', 'assigned')][0], 'possible')
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944):
         before = len(FAILURES)
         try:
             fn()

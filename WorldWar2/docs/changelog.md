@@ -8,6 +8,11 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 
 
 
+
+## german-batch1-jul-aug-1944: semantic tests for the German parent changes (27 October 2026)
+
+Fourth commit of German Batch 1. **`scripts/semantic_tests.py` gets a sixth scenario (`scenario_6_german_parent_changes_1944`, 11 new expectations; 68 become 79).** It records what `who_controls` answers today for the undated German parent changes of July and August 1944: Panzer Lehr (I SS Panzer Corps, then the Seventh Army, then the LXXXIV Corps), the XLVII Panzer Corps (Seventh Army, Panzer Group Eberbach, Seventh Army again), the 12th SS Panzer Division (I SS Panzer Corps to the LXXXIV Corps) and the 352nd Division (LXXXIV Corps to the II Parachute Corps). Days between two listings are `possible`, never `certain`. The 68 older expectations hold unchanged. No data changed.
+
 ## german-batch1-jul-aug-1944: German order of battle on 24 July and the 275th at Barenton (27 October 2026)
 
 Third commit of German Batch 1. **8 claims added (`C0757` to `C0764`), 6 command relations (`CR0580` to `CR0585`), 1 place (`PL0524`, Périers), 2 placeholders activated (`GER-FJ-005D`, `GER-INF-275D`); 3 earlier relations closed with inferred ends.** Old value for every added row: no row. Source: Breakout and Pursuit ch. 12 p. 227 (the German order of battle on the morning of 24 July, the day before Cobra), ch. 24 p. 459 and ch. 25 p. 482 (R592 for ch. 12; the other chapters already cited).

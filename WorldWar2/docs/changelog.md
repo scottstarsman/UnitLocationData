@@ -3,6 +3,16 @@
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
 
+## german-batch1b-jul-1944: documentation, spot-check corrections and checks (27 October 2026)
+
+Fourth commit of German Batch 1b: documentation and checks. No claim, relation or place added.
+
+- **Quotations corrected (spot check).** `C0767` (the OCR text does not hold the word "Verunglückung"; the quotation is now the two OCR fragments), `C0776` (CMH wording), `C0798` (a parenthesis the CMH text has between two parts of the quotation), `C0809` ("ab" is not in the Lexikon text). Dates, places, confidence and flags of the four claims are unchanged.
+- **Coordinate exception.** `data/coordinate_exceptions.csv` has a new row (`conflict`, `C0815`, `C0816`): the 716th Division rows of group `G024` are 773 km apart on purpose (text against table of one Lexikon page); the check `check_coordinates.py` now prints 3 open warnings and 7 explained exceptions.
+- **Claim-id check.** `check_claim_ids.py --base german-batch1-jul-aug-1944` and `--base main`: no id reused or dropped (57 new ids, `C0765` to `C0821`; 109 new compared with `main`).
+- **README, roadmap and HANDOFF.** Status, counts (821 claims, 160 active units, 592 relations, 534 places, 598 references, 48 operations, 22 conflict groups, next free ids `C0822`, `CR0594`, `PL0541`, `R605`, `G026`), the "German Batch 1b" roadmap section with its open points, and the decisions of this batch.
+- **who_controls grid.** 6,700 answers before, 6,820 after: 987 changed (887 text only: claim ids, date of the last listing, "N days earlier"; 100 with a changed parent or certainty: all German units, no US unit), 120 new. Every change is explained in the review file `grid_german_batch1b.md`.
+
 ## german-batch1b-jul-1944: further Caen-front divisions, month-level rows and corps lists (27 October 2026)
 
 Third commit of German Batch 1b. **16 claims added (`C0806` to `C0821`); 2 new conflict groups (`G024`: 716th Division; `G025`: 711th Division); `CR0591`/`CR0592` created by the 272nd, 346th and 89th Division rows (see below); 2 relation notes and end dates adjusted.** Old value for every added row: no row. Correction to the second entry of this file: it names `CR0588` to `CR0593`; only `CR0588`, `CR0589` and `CR0590` were created in that commit, and its two new conflict groups are `G022` and `G023` (`G021` is the first commit's).

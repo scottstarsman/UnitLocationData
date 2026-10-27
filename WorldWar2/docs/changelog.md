@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## batch5-apr-may-1945: references (26 October 2026)
+
+First commit of Batch 5 (1 April to 8 May 1945, approved by Scott on 26 October 2026; branch `batch5-apr-may-1945`, based on `main` 367e9b7). **`data/references_meta.csv`: 16 rows added (R566 to R581; 559 to 575 references in total, the numbering has gaps); `data/references.csv` and the build files regenerated. No claim, relation, place or unit changed.** Added with `scripts/build_references.py --add` and then described by hand (title, citation, type, reliability, used_for); every URL was opened on 26 October 2026 (HTTP 200).
+
+- **The Last Offensive ch. 16 to 20** (R566 to R570; HyperWar mirror of the CMH Green Book): ch. 16 the Ruhr encirclement and its reduction, ch. 17 the Elbe, the Harz and Leipzig, ch. 18 Bavaria, ch. 19 the link-up with the Soviet forces, Austria and the piecemeal surrenders, ch. 20 the last pages (the end of the campaign). Same family and reliability as R515 and R533 to R544.
+- **CMH ETO-OB division tables** for the four divisions that had none (R571 13th Armored, R572 16th Armored, R573 20th Armored, R574 71st Infantry; Wayback copies). The 86th and 97th Infantry tables are already R561 and R562.
+- **ww2byday.com VI Corps** (R575; command-post list compiled from the CMH order of battle; the other corps and army pages are already R471 to R487).
+- **Wikipedia** (second family, one family for all of Wikipedia): Ruhr pocket (R576), Elbe Day (R577), Dachau concentration camp (R578), Battle of Nuremberg (1945) (R579), Plzeň (R580).
+- **CMH Combat Chronicle of the 95th Infantry Division** (R581; Wayback copy): the dated list of the division's assignments (it also gives the capture of Dortmund on 13 April); it is the same family as the CMH ETO-OB table.
+- **Validator:** the Last Offensive rows R566 to R570 are reported as "not cited by any claim" until the claim commits of this branch; the warning goes away with the first claim that cites each chapter. Checked: `build_references.py --check`, `build.py --check`, `validate.py` (OK, 646 claims).
+
 ## corps-followups: documents and item 2 (26 October 2026)
 
 Last commit of the follow-up task. **Documents:** `docs/roadmap.md` (open points 1, 2, 4 and 6 of the XXII and XXIII Corps section updated) and `docs/HANDOFF.md` (status rows: the Batch 4 and corps branches marked merged into `main` on 26 October 2026, a row for `corps-followups`). No data changed.

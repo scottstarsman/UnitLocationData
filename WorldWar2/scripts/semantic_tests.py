@@ -183,8 +183,11 @@ def scenario_3_84th_division():
     # data differs from "transferred to VII Corps": the VII Corps relation is unspecified_subordination (the source does not say assigned or attached),
     # starts between 12-20 and 12-23 and is last listed on 12-20. The note of the relation says that operational control passed to VII Corps between
     # 22 and 23 Dec (Green Book, p426, p433), but the CMH table does not say assigned or attached, so no `attached` or `operational_control` row says so.
-    expect(s + ': VII Corps relation is unspecified_subordination, start 12-20 (latest 12-23), open',
-           (vii['valid_from'], vii['valid_from_latest'], vii['valid_to'], vii['valid_to_basis']), ('1944-12-20', '1944-12-23', '', 'open_at_last_claim'))
+    # Batch 5 (C0653, 84th Division, 11 April 1945): the relation is no longer open. The CMH table lists VII Corps until 22 January 1945 and XIII Corps
+    # from 3 February 1945, and the new claim lists XIII Corps instead, so the relation is closed at the last day the table lists it (valid_to 1945-01-22,
+    # inferred_from_next_claim, earliest 1944-12-20). The start and the 24 December expectations below are unchanged.
+    expect(s + ': VII Corps relation is unspecified_subordination, start 12-20 (latest 12-23), closed 1945-01-22 by Batch 5 (table end)',
+           (vii['valid_from'], vii['valid_from_latest'], vii['valid_to'], vii['valid_to_basis']), ('1944-12-20', '1944-12-23', '1945-01-22', 'inferred_from_next_claim'))
     a = intervals(DIV_84, '1944-12-19')
     expect(s + ': 19 Dec: neither corps covers the day', ((CORPS_XVIII_ABN, 'attached') in a, (CORPS_VII, 'unspecified_subordination') in a), (False, False))
     a = intervals(DIV_84, '1944-12-20')

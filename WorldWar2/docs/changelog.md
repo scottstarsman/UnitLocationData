@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## handoff-branching-rule: branching rule in HANDOFF section 3 (27 October 2026)
+
+Branch `handoff-branching-rule`, cut from `main` (`ba961f8`, PR #20). **Documentation only; no data, build, schema or script changed.** `docs/HANDOFF.md` section 3 (rules 1, 2, 3 and 5), the task-start line in section 8 (startup checklist step 6) and a decision-log entry: related batches go on one branch with each logical item in its own commit (Scott merges it once; no second branch stacked on an unmerged one for related work), unrelated tasks branch from current `main`, and Scott deletes branches himself. All other standing rules are unchanged. Approved by Scott on 27 October 2026 ("Yes").
+
 ## german-batch2-followup-model-lxxx: German Batch 2 follow-up, Model / Army Group B and the LXXX Corps (27 October 2026)
 
 Branch `german-batch2-followup-model-lxxx`, cut from `german-batch2-sep-oct-1944`. **The compare is against `german-batch2-sep-oct-1944`** (`https://github.com/scottstarsman/UnitLocationData/compare/german-batch2-sep-oct-1944...german-batch2-followup-model-lxxx`); compared with `main` it also shows Batch 2. After Batch 2 is merged into `main`, the follow-up can be merged normally (its commits sit on top of the Batch 2 commits). Approved by Scott on 27 October 2026 ("Yes"). Every fact of the research note was read again on the cited page before it was recorded.

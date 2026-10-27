@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## corps-followups: documents and item 2 (26 October 2026)
+
+Last commit of the follow-up task. **Documents:** `docs/roadmap.md` (open points 1, 2, 4 and 6 of the XXII and XXIII Corps section updated) and `docs/HANDOFF.md` (status rows: the Batch 4 and corps branches marked merged into `main` on 26 October 2026, a row for `corps-followups`). No data changed.
+
+- **Item 2 (21 January 1945 start of both corps' assignment to the Fifteenth Army):** accepted by Scott on 26 October 2026; **no data change**. Checked: the `note` of `CR0472` and `CR0473` already says that the date is given by Wikipedia (Fifteenth Army, "Subordinate units") and TheSecondWar.pl, that both are secondary accounts and that no primary source read states it, and the same is stated in the notes of `C0643` and `C0644`; the start basis is `narrative`. No sentence was added.
+- **Open for the next batch (not done, outside the 31 March 1945 limit):** `CR0477` (95th Infantry Division to XXII Corps, operational_control) has no end; the CMH table (R531) and the Combat Chronicle list XXII Corps only on 31 March and 1 April 1945 and XIX Corps (Ninth Army) again from 2 April, so the table-based end would be 1 April 1945; the 95th Division's XIX Corps and Ninth Army relations from 2 April are not recorded.
+
 ## corps-followups: CR0447 (95th Infantry Division to XIX Corps) closed (26 October 2026)
 
 Item 3 of the follow-up task (approved by Scott on 26 October 2026). **One relation, its two evidence links and two claim notes changed; no claim, place or unit added or removed (646 claims).**

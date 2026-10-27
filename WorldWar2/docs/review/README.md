@@ -103,9 +103,9 @@ Placeholder units by nationality: Germany 177, France 13, UK 10, Canada 7, Allie
 
 Command relations by relationship: assigned 255, unspecified_subordination 162, attached 70, operational_control 28, unknown 25, organic 11, reserve 3, administrative_control 2, coordinating 1.
 
-Command relations: start basis assignment_table 388, claim_date 116, narrative 39, inferred 10, order 4; end basis open_at_last_claim 253, inferred_from_next_claim 189, assignment_table 103, narrative 11, inferred 1; `end_unknown` true 66; `change_undated` true 6; status preferred 555, alternate 2.
+Command relations: start basis assignment_table 388, claim_date 116, narrative 39, inferred 10, order 4; end basis open_at_last_claim 244, inferred_from_next_claim 190, assignment_table 111, narrative 11, inferred 1; `end_unknown` true 66; `change_undated` true 6; status preferred 555, alternate 2.
 
-Evidence roles of relation links: asserts_start 985, observed_during 317, asserts_start_and_end 133, asserts_end 17, listed_by_higher_unit 16.
+Evidence roles of relation links: asserts_start 975, observed_during 317, asserts_start_and_end 143, asserts_end 17, listed_by_higher_unit 16.
 
 References by source family: wikipedia 186, lexikon_wehrmacht_de 164, us_army_cmh 159, ww2byday_com 33, dday_overlord_com 2, erenow_org 2, pegasusarchive_org 2, thesecondwar_pl 2, uswarmemorials_org 2, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, britishmilitaryhistory_co_uk 1, cgsc_contentdm_oclc_org 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, us_army_unit_history 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 198, encyclopedia 186, official_history 99, assignment_table 61, news_or_web_article 14, monument_or_memorial 6, archive_document 5, gazetteer_geocoder 2, other 2, unit_history 2.
 

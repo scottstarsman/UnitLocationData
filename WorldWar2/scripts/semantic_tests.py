@@ -285,8 +285,89 @@ def scenario_7_german_batch_1b_july_1944():
     expect(s + ': 346th Division, 20 Jul: LXXXVI Corps is possible (month-level start)', a[('GER-COR-086C', 'assigned')][0], 'possible')
 
 
+def scenario_8_german_batch_2_sep_oct_1944():
+    """German Batch 2 (September-October 1944): a parent shown on a dated row is certain on that day; a parent that is only closed by inference is possible; an old parent that the next row replaces no longer applies."""
+    s = 'scenario 8, German Batch 2 September-October 1944'
+    a = intervals('GER-PZ-021D', '1944-09-20')
+    expect(s + ': 21st Panzer Division, 20 Sep: I SS Panzer Corps is possible only (CR0038 closed by inference on that day)', a[('GER-SSPZ-001C', 'assigned')][0], 'possible')
+    expect(s + ': 21st Panzer Division, 20 Sep: XLVII Panzer Corps does not apply yet', ('GER-PZ-047C', 'assigned') in a, False)
+    a = intervals('GER-PZ-021D', '1944-09-21')
+    expect(s + ': 21st Panzer Division, 21 Sep (C0878, CMH ch. 5 p. 233): XLVII Panzer Corps is certain', a[('GER-PZ-047C', 'assigned')][0], 'certain')
+    expect(s + ': 21st Panzer Division, 21 Sep: the I SS Panzer Corps interval no longer applies', ('GER-SSPZ-001C', 'assigned') in a, False)
+    a = intervals('GER-PZ-021D', '1944-09-30')
+    expect(s + ': 21st Panzer Division, 30 Sep: XLVII Panzer Corps is possible (8 days after the last listing)', a[('GER-PZ-047C', 'assigned')][0], 'possible')
+    a = intervals('GER-SSPZ-009D', '1944-09-17')
+    expect(s + ': 9th SS Panzer Division, 17 Sep: II SS Panzer Corps is certain (CMH ch. 7 p. 142)', a[('GER-SSPZ-002C', 'assigned')][0], 'certain')
+    a = intervals('GER-SSPZ-010D', '1944-09-17')
+    expect(s + ': 10th SS Panzer Division, 17 Sep: II SS Panzer Corps is certain (CMH ch. 7 p. 164)', a[('GER-SSPZ-002C', 'assigned')][0], 'certain')
+    a = intervals('GER-PG-003D', '1944-09-12')
+    expect(s + ': 3rd Panzer Grenadier Division, 12 Sep: First Army is certain (CMH ch. 2 p. 80 and ch. 1 p. 49)', a[('GER-ARMY-001A', 'assigned')][0], 'certain')
+    a = intervals('GER-INF-059D', '1944-09-12')
+    expect(s + ': 59th Division, 12 Sep: First Parachute Army is possible (Model\'s directive of 12 Sep is stated by the row of 17 Sep)', a[('GER-FJA-001A', 'assigned')][0], 'possible')
+    expect(s + ': 59th Division, 11 Sep: no parent is recorded', intervals('GER-INF-059D', '1944-09-11'), {})
+    a = intervals('GER-VG-559D', '1944-09-27')
+    expect(s + ': 559th Division, 27 Sep: XIII SS Corps is certain (CMH ch. 5 p. 245-246)', a[('GER-SSCOR-013C', 'assigned')][0], 'certain')
+    a = intervals('GER-PZ-116D', '1944-10-14')
+    expect(s + ': 116th Panzer Division, 14 Oct: LXXXI Corps is possible only (the next listing, 15 Oct, is month-level)', a[('GER-COR-081C', 'assigned')][0], 'possible')
+    a = intervals('GER-PZ-116D', '1944-10-15')
+    expect(s + ': 116th Panzer Division, 15 Oct: I SS Panzer Corps (Lexikon, month-level row) and LXXXI Corps no longer applies', sorted(a), [('GER-SSPZ-001C', 'assigned')])
+    a = intervals('GER-VG-246D', '1944-10-12')
+    expect(s + ': 246th Division, 12 Oct: LXXXI Corps is certain (CMH ch. 12 p. 283)', a[('GER-COR-081C', 'assigned')][0], 'certain')
+    expect(s + ': 21st Panzer Division, 22 Sep: the chain starts with the XLVII Panzer Corps', [x[0] for x in chain('GER-PZ-021D', '1944-09-22')][:1], ['German XLVII Panzer Corps'])
+
+
+def scenario_9_german_batch_2_followup_model_lxxx():
+    """German Batch 2 follow-up (Army Group B and the LXXX Corps): a transfer that only a narrative dates leaves the old parent possible on the day and the new one possible on the first day; units shown under the corps on a dated order of battle are certain on that day; the end of Army Group B closes its relation to OB West."""
+    s = 'scenario 9, German Batch 2 follow-up (Model and the LXXX Corps)'
+    L = 'GER-COR-080C'
+    a = intervals(L, '1944-09-14')
+    expect(s + ': LXXX Corps, 14 Sep: First Army is certain (CMH ch. 3 p. 42, 57 and the order of battle of 16 Sep)', a[('GER-ARMY-001A', 'assigned')][0], 'certain')
+    a = intervals(L, '1944-09-17')
+    expect(s + ': LXXX Corps, 17 Sep: First Army is possible only (closed by inference the day before the transfer row)', a[('GER-ARMY-001A', 'assigned')][0], 'possible')
+    expect(s + ': LXXX Corps, 17 Sep: the Seventh Army does not apply yet', ('GER-ARMY-007A', 'assigned') in a, False)
+    a = intervals(L, '1944-09-18')
+    expect(s + ': LXXX Corps, 18 Sep (CMH ch. 3 p. 63, Lexikon): Seventh Army is possible on the first day', a[('GER-ARMY-007A', 'assigned')][0], 'possible')
+    a = intervals(L, '1944-09-20')
+    expect(s + ': LXXX Corps, 20 Sep: Seventh Army is certain (between listings)', a[('GER-ARMY-007A', 'assigned')][0], 'certain')
+    expect(s + ': LXXX Corps, 20 Sep: the First Army no longer applies', ('GER-ARMY-001A', 'assigned') in a, False)
+    a = intervals(L, '1944-12-16')
+    expect(s + ': LXXX Corps, 16 Dec (CMH Ardennes ch. 9 p. 212-213): Seventh Army is certain', a[('GER-ARMY-007A', 'assigned')][0], 'certain')
+    a = intervals(L, '1945-03-20')
+    expect(s + ': LXXX Corps, 20 Mar 1945: Seventh Army is possible only (transfer in the night of 20 March, CMH ch. 12 p. 260)', a[('GER-ARMY-007A', 'assigned')][0], 'possible')
+    a = intervals(L, '1945-03-22')
+    expect(s + ': LXXX Corps, 22 Mar 1945 (CMH ch. 12 p. 263): First Army is certain', a[('GER-ARMY-001A', 'assigned')][0], 'certain')
+    expect(s + ': LXXX Corps, 22 Mar 1945: the Seventh Army no longer applies', ('GER-ARMY-007A', 'assigned') in a, False)
+    a = intervals(L, '1945-04-19')
+    expect(s + ': LXXX Corps, 19 Apr 1945 (CMH ch. 18 p. 428): Nineteenth Army is certain', a[('GER-ARMY-019A', 'assigned')][0], 'certain')
+    expect(s + ': LXXX Corps, 20 Sep: the chain runs Seventh Army, Army Group B, OB West', [x[0] for x in chain(L, '1944-09-20')][:3], ['German Seventh Army', 'German Army Group B', 'German Oberbefehlshaber West (OB West)'])
+    expect(s + ': LXXX Corps, 25 Mar 1945: the chain starts with the First Army and Army Group G', [x[0] for x in chain(L, '1945-03-25')][:2], ['German First Army (Germany)', 'German Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)'])
+    a = intervals('GER-ARMY-007A', '1945-03-01')
+    expect(s + ': Seventh Army, 1 Mar 1945: Army Group B is possible (closed on the day before the transfer of 2 March, CMH ch. 10 p. 198)', a[('GER-AG-00BG', 'assigned')][0], 'possible')
+    a = intervals('GER-ARMY-007A', '1945-03-03')
+    expect(s + ': Seventh Army, 3 Mar 1945: Army Group G is possible and Army Group B no longer applies', sorted(a), [('GER-AG-00GG', 'assigned')])
+    a = intervals('GER-FJ-005D', '1944-09-15')
+    expect(s + ': 5th Fallschirmjäger Division, 15 Sep: First Parachute Army is possible only (CR0630 closed by inference)', a[('GER-FJA-001A', 'assigned')][0], 'possible')
+    a = intervals('GER-FJ-005D', '1944-09-16')
+    expect(s + ': 5th Fallschirmjäger Division, 16 Sep (order of battle, CMH ch. 3 p. 42): LXXX Corps is certain', a[('GER-COR-080C', 'assigned')][0], 'certain')
+    expect(s + ': 5th Fallschirmjäger Division, 16 Sep: the First Parachute Army no longer applies', ('GER-FJA-001A', 'assigned') in a, False)
+    a = intervals('GER-PZ-LEHRD', '1944-09-16')
+    expect(s + ': Panzer Lehr Division, 16 Sep: LXXX Corps is certain', a[('GER-COR-080C', 'assigned')][0], 'certain')
+    a = intervals('GER-INF-353D', '1944-11-26')
+    expect(s + ': 353rd Infantry Division, 26 Nov (order of battle): LXXX Corps is certain', a[('GER-COR-080C', 'assigned')][0], 'certain')
+    expect(s + ': 212th Infantry Division, 25 Nov: no parent is recorded', intervals('GER-VG-212D', '1944-11-25'), {})
+    a = intervals('GER-VG-212D', '1944-12-16')
+    expect(s + ': 212th Volksgrenadier Division, 16 Dec (CMH Ardennes ch. 9 p. 213): LXXX Corps is certain', a[('GER-COR-080C', 'assigned')][0], 'certain')
+    a = intervals('GER-VG-276D', '1944-12-16')
+    expect(s + ': 276th Volksgrenadier Division, 16 Dec (CMH Ardennes ch. 9 p. 229): LXXX Corps is certain', a[('GER-COR-080C', 'assigned')][0], 'certain')
+    a = intervals('GER-AG-00BG', '1945-04-16')
+    expect(s + ': Army Group B, 16 Apr 1945: OB West is certain', a[('GER-OBW-000H', 'assigned')][0], 'certain')
+    a = intervals('GER-AG-00BG', '1945-04-17')
+    expect(s + ': Army Group B, 17 Apr 1945 (dissolution, CMH The Last Offensive ch. 16 p. 369): OB West is possible on the last day', a[('GER-OBW-000H', 'assigned')][0], 'possible')
+    expect(s + ': Army Group B, 18 Apr 1945: no parent is recorded', intervals('GER-AG-00BG', '1945-04-18'), {})
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx):
         before = len(FAILURES)
         try:
             fn()

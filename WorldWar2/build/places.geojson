@@ -18,7 +18,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 13
    }
   },
   {
@@ -298,7 +298,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -498,7 +498,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -538,7 +538,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -2238,7 +2238,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -3918,7 +3918,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -3938,7 +3938,7 @@
     "precision_km": 5,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -3998,7 +3998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 7
    }
   },
   {
@@ -4778,7 +4778,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 5
+    "claims_count": 7
    }
   },
   {
@@ -5838,7 +5838,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -7938,7 +7938,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -8098,7 +8098,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Grevenmacher",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -8118,7 +8118,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 1
+    "claims_count": 7
    }
   },
   {
@@ -8218,7 +8218,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10658,6 +10658,906 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Occitanie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0418,
+     51.0356
+    ]
+   },
+   "properties": {
+    "place_id": "PL0541",
+    "name": "Albert Canal front (midpoint of Antwerp and Maastricht)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "BE",
+    "region": "Belgium",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2368,
+     51.6512
+    ]
+   },
+   "properties": {
+    "place_id": "PL0542",
+    "name": "Vught, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5978,
+     50.3597
+    ]
+   },
+   "properties": {
+    "place_id": "PL0543",
+    "name": "Koblenz, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8667,
+     49.85
+    ]
+   },
+   "properties": {
+    "place_id": "PL0544",
+    "name": "Bad Kreuznach, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.842,
+     51.9884
+    ]
+   },
+   "properties": {
+    "place_id": "PL0545",
+    "name": "Oosterbeek, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "place_id": "PL0546",
+    "name": "Gérardmer, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5113,
+     48.8231
+    ]
+   },
+   "properties": {
+    "place_id": "PL0547",
+    "name": "Château-Salins, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5303,
+     48.7813
+    ]
+   },
+   "properties": {
+    "place_id": "PL0548",
+    "name": "Vic-sur-Seille, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "place_id": "PL0549",
+    "name": "Walcheren island, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8138,
+     48.4827
+    ]
+   },
+   "properties": {
+    "place_id": "PL0550",
+    "name": "Vacqueville, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1313,
+     48.3005
+    ]
+   },
+   "properties": {
+    "place_id": "PL0551",
+    "name": "Mirecourt, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6483,
+     48.7624
+    ]
+   },
+   "properties": {
+    "place_id": "PL0552",
+    "name": "Juvelize, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "place_id": "PL0553",
+    "name": "Arnhem, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 11
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "place_id": "PL0554",
+    "name": "Nijmegen, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3939,
+     51.5034
+    ]
+   },
+   "properties": {
+    "place_id": "PL0555",
+    "name": "Best, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7086,
+     48.3569
+    ]
+   },
+   "properties": {
+    "place_id": "PL0556",
+    "name": "Neufchâteau, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "place_id": "PL0557",
+    "name": "Stolberg (Rhineland), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "place_id": "PL0558",
+    "name": "Geilenkirchen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3249,
+     50.7685
+    ]
+   },
+   "properties": {
+    "place_id": "PL0559",
+    "name": "Schevenhütte, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1605,
+     48.9869
+    ]
+   },
+   "properties": {
+    "place_id": "PL0560",
+    "name": "Sillegny, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6078,
+     48.6417
+    ]
+   },
+   "properties": {
+    "place_id": "PL0561",
+    "name": "Forêt de Parroy, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5296,
+     48.5745
+    ]
+   },
+   "properties": {
+    "place_id": "PL0562",
+    "name": "Moncel-lès-Lunéville, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6579,
+     48.5401
+    ]
+   },
+   "properties": {
+    "place_id": "PL0563",
+    "name": "Forêt de Mondon, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "place_id": "PL0564",
+    "name": "Belfort, Territoire de Belfort",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Franche-Comté",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6087,
+     48.7897
+    ]
+   },
+   "properties": {
+    "place_id": "PL0565",
+    "name": "Marsal, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3481,
+     48.742
+    ]
+   },
+   "properties": {
+    "place_id": "PL0566",
+    "name": "Champenoux, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1676,
+     49.3579
+    ]
+   },
+   "properties": {
+    "place_id": "PL0567",
+    "name": "Thionville, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "place_id": "PL0568",
+    "name": "Tilburg, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "place_id": "PL0569",
+    "name": "Breskens, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.893,
+     51.4672
+    ]
+   },
+   "properties": {
+    "place_id": "PL0570",
+    "name": "South Beveland (Zuid-Beveland), Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4249,
+     50.2069
+    ]
+   },
+   "properties": {
+    "place_id": "PL0571",
+    "name": "Prüm, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5249,
+     49.9733
+    ]
+   },
+   "properties": {
+    "place_id": "PL0572",
+    "name": "Bitburg, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.87,
+     50.39
+    ]
+   },
+   "properties": {
+    "place_id": "PL0573",
+    "name": "Eifel region, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 10
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3997,
+     51.2211
+    ]
+   },
+   "properties": {
+    "place_id": "PL0574",
+    "name": "Antwerp, Belgium",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0,
+     48.0
+    ]
+   },
+   "properties": {
+    "place_id": "PL0575",
+    "name": "Vosges mountains",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0,
+     49.2333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0576",
+    "name": "Saarbrücken, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0577",
+    "name": "Venlo, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "place_id": "PL0578",
+    "name": "Kleve, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     51.2885
+    ]
+   },
+   "properties": {
+    "place_id": "PL0579",
+    "name": "Fichtenhain, Krefeld-Fischeln",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.178,
+     51.264
+    ]
+   },
+   "properties": {
+    "place_id": "PL0580",
+    "name": "Wuppertal, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0085,
+     51.1955
+    ]
+   },
+   "properties": {
+    "place_id": "PL0581",
+    "name": "Haan, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1553,
+     49.6114
+    ]
+   },
+   "properties": {
+    "place_id": "PL0582",
+    "name": "Meuse front between Sedan and Montmédy (midpoint)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5832,
+     49.865
+    ]
+   },
+   "properties": {
+    "place_id": "PL0583",
+    "name": "Sector between Bitburg and the Moselle (midpoint of Bitburg and Trier)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4345,
+     49.3988
+    ]
+   },
+   "properties": {
+    "place_id": "PL0584",
+    "name": "Rhine plain between Ludwigshafen and Speyer (midpoint)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2187,
+     49.1423
+    ]
+   },
+   "properties": {
+    "place_id": "PL0585",
+    "name": "Heilbronn, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
     "claims_count": 1
    }
   }

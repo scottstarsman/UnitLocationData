@@ -198,7 +198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -3798,7 +3798,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -4058,7 +4058,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Pays de la Loire",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -4638,7 +4638,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -5838,7 +5838,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -6338,7 +6338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -6818,7 +6818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 6
    }
   },
   {
@@ -10059,6 +10059,26 @@
     "country": "DE",
     "region": "Bayern",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1919,
+     48.8928
+    ]
+   },
+   "properties": {
+    "place_id": "PL0510",
+    "name": "Falaise pocket",
+    "alt_names": "Falaise-Argentan pocket; Chambois pocket",
+    "kind": "area",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 2
    }
   }
  ]

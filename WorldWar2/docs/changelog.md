@@ -5,6 +5,18 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 
 
 
+
+## german-batch1-jul-aug-1944: higher headquarters, 2 July to 20 August 1944 (27 October 2026)
+
+First commit of German Batch 1 (Scott approved German units from 30 June to 31 August 1944 on 27 October 2026). **14 claims added (`C0713` to `C0726`), 3 command relations (`CR0559` to `CR0561`), 1 place (`PL0510`, the Falaise pocket), 1 new unit record (`GER-PZG-EBERB`, Panzer Group Eberbach), 1 placeholder activated (`GER-PZA-005A`, Fifth Panzer Army), 3 conflict groups (`G018` to `G020`), 5 references (`R586` to `R590`: Breakout and Pursuit ch. 2, 8 and 17; Wikipedia, Oberbefehlshaber West and Heinrich Eberbach); `build/` and the review sample regenerated.** Old value for every added row: no row.
+
+- **OB West (`C0713`, 2 July):** Kluge replaces Rundstedt (ch. 2 p. 28, ch. 3 p. 47; Wikipedia list). Place is the headquarters of `C0013` used as a representative point, confidence 0.3 (`nearest_earlier_command_post`, `location_date` 1944-06-06).
+- **Army Group B (`C0714`, 17 July; `C0715`/`C0716`, Model, group `G018`):** Rommel's injury and Kluge taking over (ch. 8 p. 169). **`G018`, inferred value:** the Green Book says Model, still the commander-designate at 0600 on 18 August, assumed command 'at midnight after a day of inspection' (ch. 27 p. 532, 535); the row reads that as the end of 18 August (19 August, inferred); Wikipedia says 17 August. Both rows `disputed`.
+- **Panzer Group West (`C0717`/`C0718`, Eberbach for Geyr, group `G019`; `C0719`/`C0720`, renamed Fifth Panzer Army, group `G020`):** the Green Book gives 4 July (Geyr relieved two days after Rundstedt) and 5 August; Wikipedia gives 2 July and 1 August. The CMH rows are `preferred`, the Wikipedia rows `alternate`. Place Thury-Harcourt as a representative point (confidence 0.3). The two names stay two unit records (`GER-PZG-WESTA`, `GER-PZA-005A`; unit notes updated).
+- **Panzer Group Eberbach (`C0721`, 12 August; new unit `GER-PZG-EBERB`):** provisional headquarters formed for the second Avranches attack, directly under Army Group B (`CR0559`, `unspecified_subordination`: the source says only 'directly under'); first documented date 12 August (ch. 25 p. 483, 502).
+- **Fifth Panzer Army (`C0722`, 18 August):** command post near Lisieux, Model's conference (ch. 27 p. 532); `CR0560` to Army Group B from the claim date.
+- **Seventh Army (`C0723`, 31 July, Le Mans, Kluge in direct command; `C0724`, 7 August, the Luttich attack; `C0725`/`C0726`, 20 August, Hausser wounded and the army subordinated to the Fifth Panzer Army, `CR0561`).** The successor to Hausser is stated differently (Funck, ch. 27 p. 557; Eberbach, ch. 31 p. 663 and Wikipedia): recorded as an open point in `C0725`, not resolved.
+
 ## batch5-apr-may-1945: status documents after Scott's answers (27 October 2026)
 
 Eleventh and last commit of Batch 5. **Documentation only; no data, schema or script changed.** `README.md` (units 356 to 358), `docs/roadmap.md` (status line, batch-table row 5, the placeholder paragraph, the "does not cover" line for X and XIV Corps, open points 2, 3 and 7 marked as resolved by Scott, references R566 to R584 to R566 to R585) and `docs/HANDOFF.md` (status table: units 356 to 358, placeholders 215 to 217, references 578 to 579, next reference R585 to R586, the Batch 5 row now "ready for Scott's merge", the validator line; new decision-log block "Batch 5 decisions (27 October 2026)"). Old values to new values as listed; reason: Scott answered yes to the four open points on 27 October 2026 and the two corps records were added (the entries above). Next free ids after this branch: `C0713`, `CR0559`, `PL0510`, `R586`, `G018`.

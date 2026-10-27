@@ -8739,6 +8739,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.0938,
+     48.8989
+    ]
+   },
+   "properties": {
+    "claim_id": "C0713",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-07-02",
+    "place_id": "PL0323",
+    "location_name": "Saint-Germain-en-Laye",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Rundstedt relieved; Kluge arrives to take over as commander in chief in the west",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -26,
+    "reference_ids": "R586;R407;R587;R001",
+    "source_locator": "R586: p. 28; R407: p. 47"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0718",
+    "conflict_group_id": "G019",
+    "claim_status": "alternate",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-07-02",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Geyr relieved; Eberbach replaces him at Panzer Group West (Wikipedia date)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R077;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -8773,6 +8855,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R369;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0717",
+    "conflict_group_id": "G019",
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-07-04",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Geyr relieved; Eberbach takes over Panzer Group West",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R586;R407;R589;R001",
+    "source_locator": "R586: p. 28; R407: p. 47"
    }
   },
   {
@@ -9388,6 +9511,47 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R356;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6303,
+     49.0822
+    ]
+   },
+   "properties": {
+    "claim_id": "C0714",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-07-17",
+    "place_id": "PL0298",
+    "location_name": "La Roche-Guyon",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Rommel badly injured; Kluge, the OB West commander, takes over Army Group B as well",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-29",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -18,
+    "reference_ids": "R588;R107;R001",
+    "source_locator": "R588: p. 169"
    }
   },
   {
@@ -11076,6 +11240,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.1984,
+     48.0077
+    ]
+   },
+   "properties": {
+    "claim_id": "C0723",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0206",
+    "location_name": "Le Mans, Sarthe",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "army command post at Le Mans; Kluge for the second day commanding the army and the LXXXIV Corps himself",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R590;R001",
+    "source_locator": "R590: p. 323"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.4271,
      49.1274
     ]
@@ -11356,6 +11561,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R401;R478",
     "source_locator": "R401: p. 423, 424"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0720",
+    "conflict_group_id": "G020",
+    "claim_status": "alternate",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-01",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Panzer Group West reorganized as Fifth Panzer Army (Wikipedia date)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -34,
+    "reference_ids": "R077;R001",
+    "source_locator": null
    }
   },
   {
@@ -11889,6 +12135,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R346;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C0719",
+    "conflict_group_id": "G020",
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-05",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Panzer Group West renamed Fifth Panzer Army (Eberbach)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -38,
+    "reference_ids": "R401;R077;R001",
+    "source_locator": "R401: p. 422"
    }
   },
   {
@@ -12593,6 +12880,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9397,
+     48.6486
+    ]
+   },
+   "properties": {
+    "claim_id": "C0724",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL0236",
+    "location_name": "Mortain, Manche",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "army attack from the Mortain area toward Avranches (Operation Luttich) with the XLVII Panzer Corps",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R001",
+    "source_locator": "R402: p. 462-463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -13119,6 +13447,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R346;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.02,
+     48.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C0721",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-EBERB",
+    "unit_name": "Panzer Group Eberbach",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-12",
+    "place_id": "PL0010",
+    "location_name": "Argentan, Orne",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "provisional panzer group assumes command in the Argentan sector; XLVII Panzer Corps headquarters arrives there",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R403;R001",
+    "source_locator": "R403: p. 502, 483"
    }
   },
   {
@@ -14520,6 +14889,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.6303,
+     49.0822
+    ]
+   },
+   "properties": {
+    "claim_id": "C0716",
+    "conflict_group_id": "G018",
+    "claim_status": "disputed",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL0298",
+    "location_name": "La Roche-Guyon",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Model takes over Army Group B (and OB West) from Kluge",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-29",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -49,
+    "reference_ids": "R107;R587;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.3106,
      48.537
     ]
@@ -14595,6 +15005,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R408;R001",
     "source_locator": "R408: p. 638"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.23,
+     49.15
+    ]
+   },
+   "properties": {
+    "claim_id": "C0722",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-18",
+    "place_id": "PL0193",
+    "location_name": "Lisieux",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "army command post near Lisieux; Model confers with Dietrich, Eberbach and Hausser",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R077;R001",
+    "source_locator": "R404: p. 532"
    }
   },
   {
@@ -14889,6 +15340,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.6303,
+     49.0822
+    ]
+   },
+   "properties": {
+    "claim_id": "C0715",
+    "conflict_group_id": "G018",
+    "claim_status": "disputed",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-08-19",
+    "place_id": "PL0298",
+    "location_name": "La Roche-Guyon",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Model takes over OB West and Army Group B; Kluge leaves for Germany",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-29",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -51,
+    "reference_ids": "R404;R001",
+    "source_locator": "R404: p. 532, 535"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.9286,
      48.7394
     ]
@@ -14963,6 +15455,88 @@
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
     "reference_ids": "R168;R478;R405;R001",
+    "source_locator": "R405: p. 576"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1919,
+     48.8928
+    ]
+   },
+   "properties": {
+    "claim_id": "C0725",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0510",
+    "location_name": "Falaise pocket",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "army commander Hausser seriously wounded in the Falaise pocket; successor named differently by the sources",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R404;R409;R001",
+    "source_locator": "R404: p. 553, 557; R409: p. 663"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1919,
+     48.8928
+    ]
+   },
+   "properties": {
+    "claim_id": "C0726",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0510",
+    "location_name": "Falaise pocket",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Model subordinates the Seventh Army to the Fifth Panzer Army (Dietrich)",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R405;R001",
     "source_locator": "R405: p. 576"
    }
   },

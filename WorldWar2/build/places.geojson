@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -5838,7 +5838,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -6338,7 +6338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -6818,7 +6818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -7438,7 +7438,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10359,6 +10359,286 @@
     "country": "FR",
     "region": "Normandy",
     "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3239,
+     49.0458
+    ]
+   },
+   "properties": {
+    "place_id": "PL0525",
+    "name": "Bretteville-sur-Laize",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4217,
+     49.13
+    ]
+   },
+   "properties": {
+    "place_id": "PL0526",
+    "name": "Maltot",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5019,
+     49.1006
+    ]
+   },
+   "properties": {
+    "place_id": "PL0527",
+    "name": "Évrecy",
+    "alt_names": "Evrecy",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2467,
+     48.9719
+    ]
+   },
+   "properties": {
+    "place_id": "PL0528",
+    "name": "Potigny",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2569,
+     49.1461
+    ]
+   },
+   "properties": {
+    "place_id": "PL0529",
+    "name": "Cagny, Calvados",
+    "alt_names": "Cagny",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5717,
+     49.2811
+    ]
+   },
+   "properties": {
+    "place_id": "PL0530",
+    "name": "Montgardon",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6,
+     49.09
+    ]
+   },
+   "properties": {
+    "place_id": "PL0531",
+    "name": "Bernay, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Haute-Normandie",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3927,
+     49.1557
+    ]
+   },
+   "properties": {
+    "place_id": "PL0532",
+    "name": "Maltot-Caen front sector",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3125,
+     49.1285
+    ]
+   },
+   "properties": {
+    "place_id": "PL0533",
+    "name": "Saint-André-sur-Orne to Frénouville line",
+    "alt_names": null,
+    "kind": "line",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4632,
+     49.2003
+    ]
+   },
+   "properties": {
+    "place_id": "PL0534",
+    "name": "Lessay-Périers line",
+    "alt_names": null,
+    "kind": "line",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6823,
+     49.1216
+    ]
+   },
+   "properties": {
+    "place_id": "PL0535",
+    "name": "Caumont-Rauray sector",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "place_id": "PL0536",
+    "name": "Normandy front (area named only as Normandie)",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 50,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.55,
+     48.85
+    ]
+   },
+   "properties": {
+    "place_id": "PL0537",
+    "name": "Condé-sur-Noireau",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1972,
+     49.1222
+    ]
+   },
+   "properties": {
+    "place_id": "PL0538",
+    "name": "Vimont",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
    }
   }
  ]

@@ -3,12 +3,15 @@
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
 
+## german-batch1b-jul-1944: command level and corps on 1 July (27 October 2026)
 
+First commit of German Batch 1b (branch `german-batch1b-jul-1944`, from `german-batch1-jul-aug-1944`). **7 claims added (`C0765` to `C0771`), 2 command relations (`CR0586`, `CR0587`), 1 placeholder activated (`GER-COR-086C`), 12 places (`PL0525` to `PL0536`; two more follow), 6 references (`R593` to `R598`); `C0714` joins the new conflict group `G021`; `CR0039` and `CR0587` ended with inferred dates.** Old value for every added row: no row.
 
-
-
-
-
+- **Command level (`C0765` to `C0767`).** `C0765` OB West, 3 July, Kluge takes over the command at 2000 hours (Schramm, OKW war diary, p. 324, confidence 0.3). `C0766` Panzer Group West, Schramm row of the existing conflict group `G019` (Eberbach for Geyr, listed with the 2 July replacement of Rundstedt; alternate, 0.3). `C0767` Army Group B, 19 July, Schramm chronology (p. 458): Kluge leads the army group "ab 19. 7."; alternate in the new group `G021`, whose preferred row stays `C0714` (17 July, CMH and Wikipedia).
+- **Corps on 1 July (`C0768` to `C0771`).** Breakout and Pursuit ch. 2 p. 30 gives the order of the corps from east to west: LXXXVI, I SS Panzer, II SS Panzer, XLVII Panzer, II Parachute, LXXXIV. Four rows: LXXXVI Corps (0.7, with the Lexikon der Wehrmacht page), I SS, II SS and XLVII Panzer Corps (0.5). The text also says that on 28 June Panzer Group West took control of the four corps on the right: new relations `CR0586` (LXXXVI) and `CR0587` (XLVII) under Panzer Group West, `unspecified_subordination`, from 28 June (narrative).
+- **Earlier values changed.** `C0714`: `conflict_group_id` blank to `G021` (see above; a Review note). `CR0039` (XLVII Panzer Corps, parent unknown): `valid_to` 1944-08-06 to 1944-06-27 (basis `inferred` with an `asserts_end` link from `C0771`), because ch. 2 p. 30 names the parent from 28 June; the earlier close on 6 August is replaced. `CR0587` is closed on 1944-08-06 (inferred from next claim) because `CR0566` has the corps under the Seventh Army from 7 August.
+- **Places.** `PL0525` to `PL0538`: Bretteville-sur-Laize, Maltot, Évrecy, Potigny, Cagny, Montgardon, Bernay, the Maltot-Caen front sector, the Saint-André-sur-Orne to Frénouville line, the Lessay-Périers line, the Caumont-Rauray sector, Normandy front (area named only as Normandie, precision 50 km, a representative point only), Condé-sur-Noireau, Le Havre, Vimont. Midpoints and representative points are described in `coord_source_note`.
+- **References.** `R593` Schramm, KTB OKW IV/1 (family `okw_kriegstagebuch_schramm`); `R594` Nafziger 944BGAA; `R595` Feldgrau.com Panzer Lehr (both in the family `lexikon_wehrmacht_de`: Tessin lineage, not independent of the Lexikon); `R596` to `R598` Wikipedia Operation Charnwood, Jupiter and Goodwood.
 
 ## german-batch1-jul-aug-1944: spot-check corrections and status documents (27 October 2026)
 

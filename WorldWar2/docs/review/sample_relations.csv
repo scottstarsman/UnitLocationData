@@ -1,21 +1,21 @@
 sample_id,relation_id,subject_unit_id,higher_unit_id,relationship,valid_from,valid_to,valid_from_basis,valid_to_basis,end_unknown,change_undated,status,evidence_claim_ids,reviewer_verdict,reviewer_comment
 R01,CR0001,CAN-ARM-002B,CAN-INF-003D,attached,1944-06-06,,inferred,open_at_last_claim,true,false,preferred,C0001,supported,"Row drawn after the CR0040 and CR0127 corrections changed the sample strata (four relations of the first draw, CR0003, CR0037, CR0056 and CR0127, left the sample; their verdicts are in verification_results.md). R050 (Wikipedia 2nd Canadian Armoured Brigade): 'selected to be part of the D-Day invasion force in support of the units of the 3rd Canadian Infantry Division'; 'landed in Normandy on D-Day, 6 June 1944'; 'paired with any infantry who needed armour support'. R456 (Veterans Affairs Canada): the 3rd Canadian Infantry Division 'along with the 2nd Canadian Armoured Brigade' designated for the assault. Parent, attached type and the 6 June start match; the end is open and flagged end_unknown, which fits."
 R02,CR0016,GER-KG-002PZ,GER-PZ-002D,organic,1944-06-27,,claim_date,open_at_last_claim,false,false,preferred,C0171,supported,R139: 'counter-attacked by six Panthers of the 2nd Panzer Division' (09:30); R140: 'One battlegroup based around a tank battalion'. Organic link and start match.
-R03,CR0036,GER-PZ-021D,GER-ARMY-007A,assigned,1944-06-06,1944-06-07,claim_date,inferred,false,false,preferred,C0004,supported,"Row drawn after the CR0037 removal changed the sample strata (CR0037 left the sample, CR0036 entered; the verdicts of the other rows are carried over). R448 (Cross-Channel Attack ch. 8 p. 331): 'At 0500 Army Group B released the 21st Panzer Division ... to Seventh Army control'. Start and parent match. The end, 7 June, is an inferred value set on 26 October 2026 (the day before 8 June, the first day the division is shown under I SS Panzer Corps, ch. 9 p. 347); the change may have come on 7 June, so the end is approximate. Annotated in the relation note and the changelog."
+R03,CR0039,GER-PZ-047C,,unknown,1944-06-13,1944-06-27,claim_date,inferred,false,false,preferred,C0093 C0771,,
 R04,CR0040,GER-PZ-LEHRD,GER-OKW-000H,reserve,1944-06-06,1944-06-07,narrative,inferred_from_next_claim,true,true,preferred,C0038,partly supported,"R448: both divisions 'were in OKW reserve' on 6 June until Hitler's 1600 release; plan to place them under I SS Panzer Corps. The row covers 7 June only, a day after the documented status. Corrected after this check (V-008, see verification_results.md): the start is now 6 June, with the end still inferred from the next claim; the verdict is for the row as it was drawn (an interval of 7 June only)."
 R05,CR0041,GER-PZ-LEHRD,GER-SSPZ-001C,assigned,1944-06-08,1944-06-12,claim_date,inferred_from_next_claim,false,true,preferred,C0053 C0060,partly supported,R449/R448/R141 support I SS Panzer Corps from 8 June. The 12 June end is only the day before C0092 (unknown parent); no cited source dates a change (CR0042 gap).
 R06,CR0056,UK-AG-021G,ALL-SHAEF-000H,assigned,1944-06-07,,claim_date,open_at_last_claim,false,false,alternate,C0039,,
 R07,CR0061,UK-ARM-008B,UK-INF-050D,attached,1944-06-06,,claim_date,open_at_last_claim,true,false,preferred,C0020 C0017,,
-R08,CR0071,UK-INF-015D,,unknown,1944-06-14,1944-06-25,claim_date,inferred_from_next_claim,false,false,preferred,C0107,,
-R09,CR0114,US-AG-006G,ALL-SHAEF-000H,operational_control,1944-09-15,,order,open_at_last_claim,true,false,preferred,C0222 C0516 C0685,,
-R10,CR0116,US-AG-012G,UK-AG-021G,coordinating,1944-08-01,1944-08-31,narrative,narrative,false,false,preferred,C0223,,
-R11,CR0162,US-ARM-010D,US-ARMY-003A,assigned,1944-10-10,1945-04-07,assignment_table,inferred_from_next_claim,false,false,preferred,C0537 C0550 C0611,,
-R12,CR0164,US-ARM-010D,US-ARMY-001A,attached,1944-12-16,1944-12-20,assignment_table,assignment_table,false,false,preferred,C0550,,
+R08,CR0114,US-AG-006G,ALL-SHAEF-000H,operational_control,1944-09-15,,order,open_at_last_claim,true,false,preferred,C0222 C0516 C0685,,
+R09,CR0116,US-AG-012G,UK-AG-021G,coordinating,1944-08-01,1944-08-31,narrative,narrative,false,false,preferred,C0223,,
+R10,CR0162,US-ARM-010D,US-ARMY-003A,assigned,1944-10-10,1945-04-07,assignment_table,inferred_from_next_claim,false,false,preferred,C0537 C0550 C0611,,
+R11,CR0164,US-ARM-010D,US-ARMY-001A,attached,1944-12-16,1944-12-20,assignment_table,assignment_table,false,false,preferred,C0550,,
+R12,CR0168,US-ARMY-001A,UK-AG-021G,operational_control,1944-12-20,1945-01-17,narrative,assignment_table,false,false,preferred,C0587 C0520,,
 R13,CR0258,US-INF-029D,US-ARMY-009A,assigned,1944-09-05,1944-09-20,assignment_table,inferred_from_next_claim,false,false,preferred,C0408 C0409,,
 R14,CR0292,US-INF-045D,US-ARMY-007A,administrative_control,1944-07-01,1944-09-19,assignment_table,inferred_from_next_claim,true,false,preferred,C0442 C0443 C0444,,
 R15,CR0368,US-INF-106D,US-ARMY-001A,assigned,1944-11-29,,assignment_table,open_at_last_claim,false,false,preferred,C0548 C0549,,
-R16,CR0421,US-ARM-012D,US-COR-021C,unspecified_subordination,1945-02-03,1945-02-10,assignment_table,assignment_table,false,false,preferred,C0599,,
-R17,CR0458,US-INF-099D,US-COR-003C,unspecified_subordination,1945-03-09,,assignment_table,open_at_last_claim,false,false,preferred,C0623 C0668,,
-R18,CR0508,US-INF-008D,US-ABN-018C,unspecified_subordination,1945-04-02,,assignment_table,open_at_last_claim,false,false,preferred,C0663 C0697,,
-R19,CR0537,US-ABN-082D,US-ABN-018C,unspecified_subordination,1945-04-30,,assignment_table,open_at_last_claim,false,false,preferred,C0696,,
-R20,CR0564,GER-PZ-009D,GER-COR-081C,assigned,1944-08-10,,narrative,open_at_last_claim,false,false,preferred,C0730,,
+R16,CR0458,US-INF-099D,US-COR-003C,unspecified_subordination,1945-03-09,,assignment_table,open_at_last_claim,false,false,preferred,C0623 C0668,,
+R17,CR0508,US-INF-008D,US-ABN-018C,unspecified_subordination,1945-04-02,,assignment_table,open_at_last_claim,false,false,preferred,C0663 C0697,,
+R18,CR0537,US-ABN-082D,US-ABN-018C,unspecified_subordination,1945-04-30,,assignment_table,open_at_last_claim,false,false,preferred,C0696,,
+R19,CR0564,GER-PZ-009D,GER-COR-081C,assigned,1944-08-10,,narrative,open_at_last_claim,false,false,preferred,C0730,,
+R20,CR0587,GER-PZ-047C,GER-PZG-WESTA,unspecified_subordination,1944-06-28,1944-08-06,narrative,inferred_from_next_claim,false,true,preferred,C0771,,

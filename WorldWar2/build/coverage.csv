@@ -26,7 +26,7 @@ FR-INF-004D,French 4th Moroccan Mountain Division,France,division,Army,placehold
 FR-INF-009D,French 9th Colonial Infantry Division,France,division,Army,placeholder,1943-07-16,false,0,,,
 FR-INF-010D,French 10th Infantry Division,France,division,Army,placeholder,,false,0,,,
 FR-INF-014D,French 14th Infantry Division,France,division,Army,placeholder,1945-02-09,false,0,,,
-GER-AG-00BG,Army Group B,Germany,army_group,Army,active,1939-10-12,true,5,1944-06-06,1944-08-19,
+GER-AG-00BG,Army Group B,Germany,army_group,Army,active,1939-10-12,true,6,1944-06-06,1944-08-19,
 GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,army_group,Army,placeholder,1944-04-28,false,0,,,
 GER-AG-00HG,Army Group H (Heeresgruppe H),Germany,army_group,Army,placeholder,1944-11-11,false,0,,,
 GER-AG-OBRHG,Army Group Upper Rhine (Heeresgruppe Oberrhein),Germany,army_group,Army,placeholder,,false,0,,,
@@ -42,7 +42,7 @@ GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,pl
 GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,active,,true,1,1944-08-18,1944-08-18,GER-AG-00BG
 GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,placeholder,1944-09-14,false,0,,,GER-AG-00BG
 GER-PZG-EBERB,Panzer Group Eberbach,Germany,army,Armoured,active,,true,1,1944-08-12,1944-08-12,
-GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,active,,true,7,1944-06-09,1944-08-05,
+GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,active,,true,8,1944-06-09,1944-08-05,
 GER-COR-012C,XII Corps,Germany,corps,Army,placeholder,1936-10-01,false,0,,,
 GER-COR-013C,XIII Corps,Germany,corps,Army,placeholder,1937-10-01,false,0,,,GER-ARMY-007A
 GER-COR-025C,XXV Corps,Germany,corps,Army,placeholder,1938-11-24,false,0,,,GER-ARMY-007A
@@ -59,21 +59,21 @@ GER-COR-081C,LXXXI Corps,Germany,corps,Army,active,1942-05-28,true,3,1944-08-06,
 GER-COR-082C,LXXXII Corps,Germany,corps,Army,placeholder,1942-05-25,false,0,,,GER-ARMY-015A
 GER-COR-084C,LXXXIV Corps,Germany,corps,Army,active,1942-05,true,9,1944-06-06,1944-08-20,GER-ARMY-007A
 GER-COR-085C,LXXXV Corps (Generalkommando Knieß until July 1944),Germany,corps,Army,placeholder,1943-10,false,0,,,GER-ARMY-019A
-GER-COR-086C,LXXXVI Corps,Germany,corps,Army,placeholder,1942-11-19,false,0,,,GER-ARMY-001A
+GER-COR-086C,LXXXVI Corps,Germany,corps,Army,active,1942-11-19,true,1,1944-07-01,1944-07-01,GER-ARMY-001A
 GER-COR-088C,LXXXVIII Corps,Germany,corps,Army,placeholder,1942-06-08,false,0,,,GER-WBN-000H
 GER-COR-089C,LXXXIX Corps,Germany,corps,Army,placeholder,1942-08-02,false,0,,,GER-ARMY-015A
 GER-COR-090C,LXXXX Corps,Germany,corps,Army,placeholder,1942-11-15,false,0,,,GER-ARMY-001A
 GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,3,1944-06-08,1944-08-20,GER-ARMY-007A
 GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,placeholder,,false,0,,,
 GER-PZ-039C,XXXIX Panzer Corps,Germany,corps,Armoured,placeholder,1942-07-09,false,0,,,
-GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,4,1944-06-13,1944-08-20,GER-PZA-005A
+GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,5,1944-06-13,1944-08-20,GER-PZA-005A
 GER-PZ-058C,LVIII Panzer Corps,Germany,corps,Armoured,active,1943-07-28,true,1,1944-08-12,1944-08-12,GER-PZA-005A
 GER-SSCOR-012C,XII SS Corps,Germany,corps,Waffen-SS,placeholder,,false,0,,,GER-PZA-005A
 GER-SSCOR-013C,XIII SS Corps,Germany,corps,Waffen-SS,placeholder,,false,0,,,GER-ARMY-001A
 GER-SSCOR-014C,XIV SS Corps,Germany,corps,Waffen-SS,placeholder,1944-11-10,false,0,,,
 GER-SSCOR-018C,XVIII SS Corps,Germany,corps,Waffen-SS,placeholder,1944-12,false,0,,,
-GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,active,1943-07-27,true,3,1944-06-07,1944-06-26,GER-ARMY-007A
-GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,active,1942-07,true,3,1944-06-26,1944-06-29,GER-PZA-005A
+GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,active,1943-07-27,true,4,1944-06-07,1944-07-01,GER-ARMY-007A
+GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,active,1942-07,true,4,1944-06-26,1944-07-01,GER-PZA-005A
 GER-VAK-388C,Volks-Artillerie-Korps 388,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
 GER-VAK-401C,Volks-Artillerie-Korps 401,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
 GER-VAK-402C,Volks-Artillerie-Korps 402,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
@@ -235,7 +235,7 @@ GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,activ
 GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,active,,true,3,1944-06-27,1944-06-29,
 GER-SSHPZ-101,SS Heavy Panzer Battalion 101,Germany,battalion,Waffen-SS,placeholder,,false,0,,,
 GER-OBNW-000H,Oberbefehlshaber Nordwest (OB Nordwest),Germany,other,Army,placeholder,,false,0,,,
-GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,active,,true,3,1944-06-06,1944-07-02,
+GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,active,,true,4,1944-06-06,1944-07-03,
 GER-OKW-000H,Oberkommando der Wehrmacht (OKW),Germany,other,Army,placeholder,,false,0,,,
 GER-WBN-000H,Wehrmachtbefehlshaber der Niederlande,Germany,other,Army,placeholder,,false,0,,,
 NL-INF-IRNEB,Royal Netherlands Brigade (Prinses Irene),Netherlands,brigade,Army,placeholder,,false,0,,,

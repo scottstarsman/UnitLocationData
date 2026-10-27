@@ -77,6 +77,7 @@ CR0033,C0758,1,observed_during,,,,,,,,,,
 CR0034,C0013,1,observed_during,,,,,,,,,,
 CR0034,C0129,1,observed_during,,,,,,,,,,
 CR0034,C0713,1,observed_during,,,,,,,,,,
+CR0034,C0765,1,observed_during,,,,,,,,,,
 CR0035,C0064,1,observed_during,,,,,,,,,,
 CR0035,C0091,1,observed_during,,,,,,,,,,
 CR0035,C0733,1,observed_during,,,,,,,,,,
@@ -85,6 +86,7 @@ CR0036,C0004,1,asserts_end,,,,,1944-06-07,,,inferred,"Cross-Channel Attack ch. 8
 CR0038,C0090,1,observed_during,,,,,,,,,,
 CR0038,C0184,1,asserts_start,1944-06-08,,,,,,,,"Cross-Channel Attack ch. 8 p. 333, ch. 9 p. 347 and 372: I SS Panzer Corps attacked on 8 June with the 12th SS and 21st Panzer Divisions; the start is inferred as 8 June (it may be 7 June); this claim, dated 28 June, is the first that lists the relation",inferred
 CR0039,C0093,1,observed_during,,,,,,,,,parent not verified,
+CR0039,C0771,2,asserts_end,,,,,1944-06-27,,,inferred,Breakout and Pursuit ch. 2 p. 30 names Panzer Group West as the parent of the corps from 28 June; the end of the unknown-parent relation is the day before (inferred value),inferred
 CR0040,C0038,1,asserts_start,1944-06-06,,,,,,,,"Cross-Channel Attack ch. 8 (R448): Panzer Lehr was in OKW reserve on 6 June and waited until 1600 for Hitler's word to move; the claim (7 June) notes ""Held back 6 June"".",narrative
 CR0041,C0053,1,observed_during,,,,,,,,,,
 CR0041,C0060,1,observed_during,,,,,,,,,,
@@ -102,9 +104,11 @@ CR0046,C0089,1,observed_during,,,,,,,,,,
 CR0047,C0037,1,asserts_end,,,,,1944-06-09,1944-06-07,,narrative,C0037: the corps was transferred to Panzer Group West late on 7 June; Cross-Channel Attack ch. 9 p. 347 and 372: Geyr took over the Caen sector on 9 June (arriving the night of 8-9 June),
 CR0048,C0051,1,asserts_start,1944-06-08,1944-06-09,,,,,,,C0051 lists the corps under Panzer Group West on 8 June; Cross-Channel Attack ch. 9 p. 347 and 372: Geyr took over the Caen sector on 9 June (arriving the night of 8-9 June),narrative
 CR0048,C0160,1,observed_during,,,,,,,,,,
+CR0048,C0769,1,observed_during,,,,,,,,,,
 CR0049,C0161,1,observed_during,,,,,,,,,,
 CR0049,C0186,1,observed_during,,,,,,,,,,
 CR0050,C0203,1,observed_during,,,,,,,,,,
+CR0050,C0770,1,observed_during,,,,,,,,,,
 CR0051,C0201,1,observed_during,,,,,,,,,,
 CR0052,C0196,1,observed_during,,,,,,,,,,
 CR0053,C0003,1,observed_during,,,,,,,,,,
@@ -1519,3 +1523,5 @@ CR0582,C0761,1,asserts_start,1944-07-24,,,,,,,,"The LXXXIV Corps controlled the 
 CR0583,C0762,1,asserts_start,1944-07-24,,,,,,,,Forming the LXXXIV Corps reserve on 24 July (Breakout and Pursuit ch. 12 p. 227); ch. 25 p. 482 has the 363d and 353d Divisions supported by the LXXXIV Corps between Vire and Sourdeval in August; the day before the II Parachute Corps breakout plan (CR0573) ends the interval,narrative
 CR0584,C0763,1,asserts_start,1944-07-24,,,,,,,,"Under the control of the II Parachute Corps on 24 July (Breakout and Pursuit ch. 12 p. 227; ch. 17 p. 326); the source says under the control, without assigned or attached",narrative
 CR0585,C0764,1,observed_during,,,,,,,,,parent not verified in the sources read,
+CR0586,C0768,1,asserts_start,1944-06-28,,,,,,,,Panzer Group West took control of the four corps on the right (east) on 28 June (Breakout and Pursuit ch. 2 p. 29-30),narrative
+CR0587,C0771,1,asserts_start,1944-06-28,,,,,,,,Panzer Group West took control of the four corps on the right (east) on 28 June (Breakout and Pursuit ch. 2 p. 29-30),narrative

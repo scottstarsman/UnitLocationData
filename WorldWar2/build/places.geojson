@@ -8098,7 +8098,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Grevenmacher",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -8118,7 +8118,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 1
+    "claims_count": 7
    }
   },
   {
@@ -8218,7 +8218,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11298,7 +11298,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11478,6 +11478,86 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1553,
+     49.6114
+    ]
+   },
+   "properties": {
+    "place_id": "PL0582",
+    "name": "Meuse front between Sedan and Montmédy (midpoint)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5832,
+     49.865
+    ]
+   },
+   "properties": {
+    "place_id": "PL0583",
+    "name": "Sector between Bitburg and the Moselle (midpoint of Bitburg and Trier)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4345,
+     49.3988
+    ]
+   },
+   "properties": {
+    "place_id": "PL0584",
+    "name": "Rhine plain between Ludwigshafen and Speyer (midpoint)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2187,
+     49.1423
+    ]
+   },
+   "properties": {
+    "place_id": "PL0585",
+    "name": "Heilbronn, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
     "claims_count": 1
    }
   }

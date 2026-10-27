@@ -656,7 +656,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R582 | general | CMH Combat Chronicle: 13th Armored Division (Wayback copy) | official_history | https://web.archive.org/web/2018/https://history.army.mil/html/forcestruc/cbtchron/cc/013ad.htm | R568: p. 437; R569: p. 466 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R568: p. 437; R569: p. 466 |
 
-## Part 2: command relations (20 of 663)
+## Part 2: command relations (20 of 664)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 

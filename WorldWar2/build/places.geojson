@@ -9658,7 +9658,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9714,6 +9714,346 @@
     "place_id": "PL0492",
     "name": "Feldmoching, Munich",
     "alt_names": "Feldmoching-Hasenbergl",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.9,
+     48.3167
+    ]
+   },
+   "properties": {
+    "place_id": "PL0493",
+    "name": "Tann, Bayern",
+    "alt_names": "Tann (Niederbayern)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4972,
+     53.3244
+    ]
+   },
+   "properties": {
+    "place_id": "PL0494",
+    "name": "Ludwigslust, Mecklenburg-Vorpommern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4167,
+     53.6333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0495",
+    "name": "Schwerin, Mecklenburg-Vorpommern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.8333,
+     47.7833
+    ]
+   },
+   "properties": {
+    "place_id": "PL0496",
+    "name": "Miesbach, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0644,
+     47.5967
+    ]
+   },
+   "properties": {
+    "place_id": "PL0497",
+    "name": "Oberammergau, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3833,
+     48.85
+    ]
+   },
+   "properties": {
+    "place_id": "PL0498",
+    "name": "Grafenau, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3933,
+     47.2683
+    ]
+   },
+   "properties": {
+    "place_id": "PL0499",
+    "name": "Innsbruck, Tirol",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "AT",
+    "region": "Tirol",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.7333,
+     48.1
+    ]
+   },
+   "properties": {
+    "place_id": "PL0500",
+    "name": "Haar, Bayern",
+    "alt_names": "Haar near Munich",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5667,
+     47.1333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0501",
+    "name": "Landeck, Tirol",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Tirol",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.6558,
+     48.0086
+    ]
+   },
+   "properties": {
+    "place_id": "PL0502",
+    "name": "Vöcklabruck, Oberösterreich",
+    "alt_names": "Voecklabruck",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6331,
+     49.7953
+    ]
+   },
+   "properties": {
+    "place_id": "PL0503",
+    "name": "Tachov, Czech Republic",
+    "alt_names": "Tachau",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "CZ",
+    "region": "Plzeň Region",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2781,
+     48.4136
+    ]
+   },
+   "properties": {
+    "place_id": "PL0504",
+    "name": "Kirchschlag bei Linz, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3775,
+     49.7475
+    ]
+   },
+   "properties": {
+    "place_id": "PL0505",
+    "name": "Pilsen (Plzeň), Czech Republic",
+    "alt_names": "Plzeň; Plzen",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "CZ",
+    "region": "Plzeň Region",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4894,
+     48.21
+    ]
+   },
+   "properties": {
+    "place_id": "PL0506",
+    "name": "Ried im Innkreis, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.31,
+     48.0447
+    ]
+   },
+   "properties": {
+    "place_id": "PL0507",
+    "name": "Sierning, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3333,
+     47.8667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0508",
+    "name": "Prien am Chiemsee, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8329,
+     48.1589
+    ]
+   },
+   "properties": {
+    "place_id": "PL0509",
+    "name": "Burghausen, Bayern",
+    "alt_names": null,
     "kind": "point",
     "precision_km": 3,
     "country": "DE",

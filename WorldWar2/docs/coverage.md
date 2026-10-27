@@ -35,10 +35,10 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | brigade | 6 | 0 | 3 | 9 | 6 | 3 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 7 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 43 |
-| US | corps | 0 | 0 | 15 | 15 | 6 | 113 |
-| US | division | 1 | 0 | 59 | 60 | 24 | 389 |
+| US | corps | 0 | 0 | 15 | 15 | 6 | 117 |
+| US | division | 0 | 0 | 60 | 60 | 24 | 403 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **216** | **0** | **140** | **356** | **235** | **694** |
+| **All** | | **215** | **0** | **141** | **356** | **235** | **712** |
 
 ## Operations
 
@@ -47,27 +47,29 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 8 | 389 |
+| campaign | 9 | 8 | 407 |
 | operation | 16 | 14 | 161 |
 | battle | 17 | 17 | 114 |
 | phase | 2 | 2 | 30 |
-| **All** | **45** | **41** | **694** |
+| **All** | **45** | **41** | **712** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 486 places and 81 alias names for 694 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 503 places and 87 alias names for 712 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 391 | 554 |
+| point | 408 | 572 |
 | area | 79 | 122 |
 | line | 16 | 18 |
 
 | country | Places | Claims |
 |---|---:|---:|
 | France (FR) | 341 | 513 |
-| Germany (DE) | 83 | 92 |
+| Germany (DE) | 92 | 102 |
 | Belgium (BE) | 36 | 50 |
 | Netherlands (NL) | 15 | 22 |
 | Luxembourg (LU) | 6 | 9 |
 | United Kingdom (GB) | 5 | 8 |
+| Austria (AT) | 6 | 6 |
+| Czechia (CZ) | 2 | 2 |

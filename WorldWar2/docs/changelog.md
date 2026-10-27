@@ -9,6 +9,15 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 
 
 
+
+## german-batch1-jul-aug-1944: spot-check corrections and status documents (27 October 2026)
+
+Fifth and last commit of German Batch 1. **Two claim notes corrected after the spot check (no value of any column except `notes` changed); `README.md`, `docs/roadmap.md` and `docs/HANDOFF.md` updated.**
+
+- **`C0724` (Seventh Army, 7 August), note.** Old text: "the army headquarters had left Le Mans; ch. 22 p. 435". New text: "administrative personnel had been evacuated from Le Mans, long the Seventh Army headquarters, after the loss of Laval; ch. 22 p. 435". Reason: the page says administrative personnel were evacuated, not that the headquarters had left.
+- **`C0729` (LXXXI Corps, 12 August), note.** Old text: "the LXXXI Corps, out of contact with most of its divisions, was placed under control of the Fifth Panzer Army". New text: "the LXXXI Corps, which had only radio contact with its remaining units, was placed under control of the Fifth Panzer Army". Reason: ch. 25 p. 502-503 says the headquarters was severed from its divisions in the Argentan sector and had only radio contact with the remaining units.
+- **Status documents.** `README.md`: 764 claims, 156 of 359 units active. `docs/roadmap.md`: status line, batch-table row German 1 and a German Batch 1 section (done, not covered, six open points for Scott). `docs/HANDOFF.md`: current-state table (claims 764: US 573, Germany 127, UK 60, Canada 4; July 74, August 176; units 359, 156 active, 203 placeholders; relations 584; places 518; references 586; operations 45; conflict groups 17; next free ids `C0765`, `CR0586`, `PL0525`, `R593`, `G021`), the German coverage line, the baselines (validator 156 claim files, 764 claims, 359 units, 17 groups; 79 semantic expectations; grid 6,700 answers) and a decision-log entry for the batch. Open points for Scott (also in the roadmap): the dates in `G018` to `G020`, the Hausser successor, the 243rd Division flag, the two Panzer Group West records, and the 12th SS parent before 19 August.
+
 ## german-batch1-jul-aug-1944: semantic tests for the German parent changes (27 October 2026)
 
 Fourth commit of German Batch 1. **`scripts/semantic_tests.py` gets a sixth scenario (`scenario_6_german_parent_changes_1944`, 11 new expectations; 68 become 79).** It records what `who_controls` answers today for the undated German parent changes of July and August 1944: Panzer Lehr (I SS Panzer Corps, then the Seventh Army, then the LXXXIV Corps), the XLVII Panzer Corps (Seventh Army, Panzer Group Eberbach, Seventh Army again), the 12th SS Panzer Division (I SS Panzer Corps to the LXXXIV Corps) and the 352nd Division (LXXXIV Corps to the II Parachute Corps). Days between two listings are `possible`, never `certain`. The 68 older expectations hold unchanged. No data changed.

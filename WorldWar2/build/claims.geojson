@@ -9887,6 +9887,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0806",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-09",
+    "place_id": "PL0057",
+    "location_name": "Caen (town of Caen; corps headquarters not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXXVI Corps loses most of Caen to the British by 9 July after hard fighting in the town",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R252;R001",
+    "source_locator": "R252: Einsatz und Unterstellung (to 9 July 1944)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1633,
      49.205
     ]
@@ -9921,6 +9962,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R602;R001",
     "source_locator": "R602: p. 117"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.75,
+     42.6333
+    ]
+   },
+   "properties": {
+    "claim_id": "C0815",
+    "conflict_group_id": "G024",
+    "claim_status": "disputed",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-10",
+    "place_id": "PL0540",
+    "location_name": "Thuir (headquarters at Thuir; coastal sector from the Spanish border)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "716th Static Division takes over a coastal sector from the Spanish border to 5 km south of Leucate, headquarters at Thuir, by 10 July",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R231;R001",
+    "source_locator": "R231: Einsatz und Unterstellung (to 10 July 1944)"
    }
   },
   {
@@ -10290,6 +10372,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R588;R001",
     "source_locator": "R588: p. 148, 157"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3239,
+     49.0458
+    ]
+   },
+   "properties": {
+    "claim_id": "C0808",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-272D",
+    "unit_name": "272nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-11",
+    "place_id": "PL0525",
+    "location_name": "Bretteville-sur-Laize (front south of Caen; day of entering the line)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "272nd Infantry Division enters the line in the Normandy front south of Caen after a rail move from the Pyrenees and a march from Angers",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R599;R001",
+    "source_locator": "R599: Einsatz und Unterstellung (11 July 1944)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6,
+     49.09
+    ]
+   },
+   "properties": {
+    "claim_id": "C0810",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-271D",
+    "unit_name": "271st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-12",
+    "place_id": "PL0531",
+    "location_name": "Bernay, Eure (vanguard only)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "271st Infantry Division leading elements reach Bernay on the march from Rouen to the Normandy front",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R601;R001",
+    "source_locator": "R601: Einsatz und Unterstellung (12 July 1944)"
    }
   },
   {
@@ -10912,6 +11076,375 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0812",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen (LXXXVI Corps sector; division place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "346th Infantry Division listed in the LXXXVI Corps under Panzer Group West in July 1944",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R211;R594;R001",
+    "source_locator": "R211: table of 1944 (July row); R594: German list, LXXXVI Corps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C0813",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0169",
+    "location_name": "Le Havre (area of Le Havre; month-level row)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "89th Infantry Division listed in the LXXXI Corps, Fifteenth Army, at Le Havre in July 1944",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R236;R001",
+    "source_locator": "R236: table of 1944 (July row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C0814",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie) (Normandie only)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "116th Panzer Division listed at the disposal of the Fifteenth Army, place \"Normandie\", in July 1944",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R272;R001",
+    "source_locator": "R272: table of 1944 (July row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C0816",
+    "conflict_group_id": "G024",
+    "claim_status": "disputed",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie) (Normandie only)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "716th Static Division listed in July 1944 as at the disposal of the Seventh Army, place \"Normandie\"",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R231;R001",
+    "source_locator": "R231: table of 1944 (July row)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0833,
+     49.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0817",
+    "conflict_group_id": "G025",
+    "claim_status": "disputed",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0539",
+    "location_name": "Cabourg-Le Havre coast (coast between Cabourg and Le Havre)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "711th Infantry Division listed in the LXXXI Corps under Panzer Group West on the Channel coast north of Lisieux in July 1944",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R229;R001",
+    "source_locator": "R229: table of 1944 (July rows)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0818",
+    "conflict_group_id": "G025",
+    "claim_status": "disputed",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen (LXXXVI Corps sector; part of the division; place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "711th Infantry Division (part) listed in the LXXXVI Corps in the July 1944 order of battle",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R594;R001",
+    "source_locator": "R594: German list, LXXXVI Corps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0819",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen (corps sector; month-level list)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "LXXXVI Corps listed in the July 1944 order of battle with the 346th Infantry, 21st Panzer, 16th Luftwaffe Field and part of the 711th Division",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R594;R001",
+    "source_locator": "R594: German list, LXXXVI Corps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C0820",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-07-15",
+    "place_id": "PL0059",
+    "location_name": "Caen sector (corps sector; month-level list)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "I SS Panzer Corps listed in the July 1944 order of battle with the 1st SS Panzer Division and the 12th SS Panzer Division in reserve",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R594;R001",
+    "source_locator": "R594: German list, I SS Panzer Corps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0821",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-07-15",
+    "place_id": "PL0378",
+    "location_name": "West flank of the Odon salient (corps sector; month-level list)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "II SS Panzer Corps listed in the July 1944 order of battle with the 10th SS Panzer Division, the 277th Infantry Division and the 9th SS Panzer Division in reserve",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R594;R001",
+    "source_locator": "R594: German list, II SS Panzer Corps"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.23,
      49.15
     ]
@@ -10946,6 +11479,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R593;R600;R001",
     "source_locator": "R593: p. 325; R600: p. 192"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3239,
+     49.0458
+    ]
+   },
+   "properties": {
+    "claim_id": "C0809",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-272D",
+    "unit_name": "272nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-16",
+    "place_id": "PL0525",
+    "location_name": "Bretteville-sur-Laize (front south of Caen taken over from the 1st SS Panzer Division)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "272nd Infantry Division has relieved the 1st SS Panzer Division in the front south of Caen",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R599;R594;R001",
+    "source_locator": "R599: Einsatz und Unterstellung (to 16 July 1944); R594: footnote 3 of the German list"
    }
   },
   {
@@ -11110,6 +11684,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R601;R594;R593;R002",
     "source_locator": "R601: Einsatz und Unterstellung (17 July 1944 entry); R594: footnote 2 to the II SS Panzer Corps list; R593: p. 326"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3239,
+     49.0458
+    ]
+   },
+   "properties": {
+    "claim_id": "C0811",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-271D",
+    "unit_name": "271st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-17",
+    "place_id": "PL0525",
+    "location_name": "Bretteville-sur-Laize (front southwest of Caen; front elements only)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "271st Infantry Division front elements begin to relieve the 10th SS Panzer Division on the front southwest of Caen",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R601;R594;R001",
+    "source_locator": "R601: Einsatz und Unterstellung (17 July 1944); R594: footnote 2 of the German list"
    }
   },
   {
@@ -11356,6 +11971,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R180;R588;R001",
     "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0807",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen (Goodwood sector east of Caen)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXXVI Corps front hit by Operation Goodwood east of Caen; the British breakthrough is stopped and Caen is lost",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": null,
+    "reference_ids": "R252;R598;R001",
+    "source_locator": "R252: Einsatz und Unterstellung (18 July 1944); R598: infobox"
    }
   },
   {

@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -3338,7 +3338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 6
    }
   },
   {
@@ -7438,7 +7438,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10378,7 +10378,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -10498,7 +10498,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 0
+    "claims_count": 1
    }
   },
   {
@@ -10598,7 +10598,7 @@
     "precision_km": 50,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -10638,6 +10638,46 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0833,
+     49.3667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0539",
+    "name": "Cabourg-Le Havre coast",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 25,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.75,
+     42.6333
+    ]
+   },
+   "properties": {
+    "place_id": "PL0540",
+    "name": "Thuir",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Occitanie",
     "claims_count": 1
    }
   }

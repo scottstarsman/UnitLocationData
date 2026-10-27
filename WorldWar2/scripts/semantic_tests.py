@@ -234,7 +234,9 @@ def scenario_6_german_parent_changes_1944():
     s = 'scenario 6, German parent changes July-August 1944'
     pz47, lehr, ss12, d352 = 'GER-PZ-047C', 'GER-PZ-LEHRD', 'GER-SSPZ-012D', 'GER-INF-352D'
     a = intervals(lehr, '1944-07-09')
-    expect(s + ': Panzer Lehr, 9 Jul: I SS Panzer Corps is possible only (the end is inferred, change undated)', a[('GER-SSPZ-001C', 'assigned')][0], 'possible')
+    expect(s + ': Panzer Lehr, 9 Jul: I SS Panzer Corps is certain (German Batch 1b: C0788 lists the relation on that day)', a[('GER-SSPZ-001C', 'assigned')][0], 'certain')
+    a = intervals(lehr, '1944-07-10')
+    expect(s + ': Panzer Lehr, 10 Jul: I SS Panzer Corps is possible only (the end is inferred, change undated; the last listing is 9 Jul)', a[('GER-SSPZ-001C', 'assigned')][0], 'possible')
     a = intervals(lehr, '1944-07-15')
     expect(s + ': Panzer Lehr, 15 Jul: Seventh Army (unspecified_subordination) is possible', a[('GER-ARMY-007A', 'unspecified_subordination')][0], 'possible')
     expect(s + ': Panzer Lehr, 15 Jul: the I SS Panzer Corps interval no longer applies', ('GER-SSPZ-001C', 'assigned') in a, False)
@@ -251,11 +253,40 @@ def scenario_6_german_parent_changes_1944():
     a = intervals(ss12, '1944-08-20')
     expect(s + ': 12th SS Panzer Division, 20 Aug: LXXXIV Corps (possible) and no I SS Panzer Corps interval', sorted(a), [('GER-COR-084C', 'unspecified_subordination')])
     a = intervals(d352, '1944-07-20')
-    expect(s + ': 352nd Division, 20 Jul: the LXXXIV Corps assignment is possible (end between 17 and 23 Jul, undated)', a[('GER-COR-084C', 'assigned')][0], 'possible')
+    expect(s + ': 352nd Division, 20 Jul: the LXXXIV Corps assignment no longer applies (German Batch 1b moved its end to 10 Jul)', ('GER-COR-084C', 'assigned') in a, False)
+    expect(s + ': 352nd Division, 20 Jul: the II Parachute Corps is certain (start moved to 11 Jul)', a[('GER-FJ-002C', 'unspecified_subordination')][0], 'certain')
+
+
+def scenario_7_german_batch_1b_july_1944():
+    """German Batch 1b (3 to 18 July 1944): relations that no source dates are possible; a relation listed on the day is certain."""
+    s = 'scenario 7, German Batch 1b July 1944'
+    a = intervals('GER-INF-352D', '1944-07-10')
+    expect(s + ': 352nd Division, 10 Jul: LXXXIV Corps is possible (end between 17 Jun and 10 Jul, undated)', a[('GER-COR-084C', 'assigned')][0], 'possible')
+    a = intervals('GER-INF-352D', '1944-07-11')
+    expect(s + ': 352nd Division, 11 Jul: II Parachute Corps is possible (it starts that day at an undocumented hour)', a[('GER-FJ-002C', 'unspecified_subordination')][0], 'possible')
+    a = intervals('GER-SSPG-017D', '1944-07-03')
+    expect(s + ': 17th SS Panzer Grenadier Division, 3 Jul: II Parachute Corps is possible (end inferred)', a[('GER-FJ-002C', 'assigned')][0], 'possible')
+    a = intervals('GER-SSPG-017D', '1944-07-20')
+    expect(s + ': 17th SS Panzer Grenadier Division, 20 Jul: LXXXIV Corps is certain', a[('GER-COR-084C', 'unspecified_subordination')][0], 'certain')
+    a = intervals('GER-SSPZ-001D', '1944-07-12')
+    expect(s + ': 1st SS Panzer Division, 12 Jul: I SS Panzer Corps is certain', a[('GER-SSPZ-001C', 'assigned')][0], 'certain')
+    a = intervals('GER-SSPZ-001D', '1944-08-10')
+    expect(s + ': 1st SS Panzer Division, 10 Aug: XLVII Panzer Corps only (the I SS Panzer Corps relation ended 5 Aug)', sorted(a), [('GER-PZ-047C', 'unspecified_subordination')])
+    a = intervals('GER-INF-353D', '1944-07-10')
+    expect(s + ': 353rd Division, 10 Jul: LXXXIV Corps is possible (end between 3 and 23 Jul)', a[('GER-COR-084C', 'assigned')][0], 'possible')
+    a = intervals('GER-SSPZ-002D', '1944-07-04')
+    expect(s + ': 2nd SS Panzer Division, 4 Jul: Seventh Army reserve is possible (end between 3 and 5 Jul)', a[('GER-ARMY-007A', 'reserve')][0], 'possible')
+    expect(s + ': 2nd SS Panzer Division, 10 Jul: no parent is recorded', intervals('GER-SSPZ-002D', '1944-07-10'), {})
+    a = intervals('GER-INF-272D', '1944-07-11')
+    expect(s + ': 272nd Division, 11 Jul: I SS Panzer Corps is certain', a[('GER-SSPZ-001C', 'assigned')][0], 'certain')
+    a = intervals('GER-INF-272D', '1944-07-20')
+    expect(s + ': 272nd Division, 20 Jul: I SS Panzer Corps is possible (4 days after the last listing)', a[('GER-SSPZ-001C', 'assigned')][0], 'possible')
+    a = intervals('GER-INF-346D', '1944-07-20')
+    expect(s + ': 346th Division, 20 Jul: LXXXVI Corps is possible (month-level start)', a[('GER-COR-086C', 'assigned')][0], 'possible')
 
 
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944):
         before = len(FAILURES)
         try:
             fn()

@@ -26,8 +26,8 @@ FR-INF-004D,French 4th Moroccan Mountain Division,France,division,Army,placehold
 FR-INF-009D,French 9th Colonial Infantry Division,France,division,Army,placeholder,1943-07-16,false,0,,,
 FR-INF-010D,French 10th Infantry Division,France,division,Army,placeholder,,false,0,,,
 FR-INF-014D,French 14th Infantry Division,France,division,Army,placeholder,1945-02-09,false,0,,,
-GER-AG-00BG,Army Group B,Germany,army_group,Army,active,1939-10-12,true,6,1944-06-06,1944-08-19,
-GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,army_group,Army,placeholder,1944-04-28,false,0,,,
+GER-AG-00BG,Army Group B,Germany,army_group,Army,active,1939-10-12,true,7,1944-06-06,1944-09-17,
+GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,army_group,Army,active,1944-04-28,true,5,1944-09-04,1944-09-21,
 GER-AG-00HG,Army Group H (Heeresgruppe H),Germany,army_group,Army,placeholder,1944-11-11,false,0,,,
 GER-AG-OBRHG,Army Group Upper Rhine (Heeresgruppe Oberrhein),Germany,army_group,Army,placeholder,,false,0,,,
 GER-AA-LUETTW,Armee-Abteilung von Lüttwitz,Germany,army,Army,placeholder,1945-04,false,0,,,
@@ -38,7 +38,7 @@ GER-ARMY-015A,Fifteenth Army,Germany,army,Army,placeholder,,false,0,,,GER-AG-00B
 GER-ARMY-019A,Nineteenth Army (Germany),Germany,army,Army,placeholder,1943-08-26,false,0,,,GER-AG-00GG
 GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,army,Army,placeholder,1944-10-17,false,0,,,
 GER-ARMY-025A,Twenty-fifth Army (Germany),Germany,army,Army,placeholder,1944-11-10,false,0,,,
-GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,placeholder,,false,0,,,
+GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,3,1944-09-04,1944-09-23,
 GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,active,,true,1,1944-08-18,1944-08-18,GER-AG-00BG
 GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,placeholder,1944-09-14,false,0,,,GER-AG-00BG
 GER-PZG-EBERB,Panzer Group Eberbach,Germany,army,Armoured,active,,true,1,1944-08-12,1944-08-12,
@@ -235,7 +235,7 @@ GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,activ
 GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,active,,true,3,1944-06-27,1944-06-29,
 GER-SSHPZ-101,SS Heavy Panzer Battalion 101,Germany,battalion,Waffen-SS,placeholder,,false,0,,,
 GER-OBNW-000H,Oberbefehlshaber Nordwest (OB Nordwest),Germany,other,Army,placeholder,,false,0,,,
-GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,active,,true,4,1944-06-06,1944-07-03,
+GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,active,,true,7,1944-06-06,1944-09-29,
 GER-OKW-000H,Oberkommando der Wehrmacht (OKW),Germany,other,Army,placeholder,,false,0,,,
 GER-WBN-000H,Wehrmachtbefehlshaber der Niederlande,Germany,other,Army,placeholder,,false,0,,,
 NL-INF-IRNEB,Royal Netherlands Brigade (Prinses Irene),Netherlands,brigade,Army,placeholder,,false,0,,,

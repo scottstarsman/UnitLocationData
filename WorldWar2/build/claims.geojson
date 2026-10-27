@@ -21531,6 +21531,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.5978,
+     50.3597
+    ]
+   },
+   "properties": {
+    "claim_id": "C0822",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL0543",
+    "location_name": "Koblenz, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Rundstedt is again appointed OB West; the OB West headquarters moves to Koblenz",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 364"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3176,
      50.5424
     ]
@@ -22105,6 +22146,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0418,
+     51.0356
+    ]
+   },
+   "properties": {
+    "claim_id": "C0826",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1944-09-04",
+    "place_id": "PL0541",
+    "location_name": "Albert Canal front (midpoint of Antwerp and Maastricht) (Albert Canal front; the army headquarters place is not stated)",
+    "location_represents": "objective",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "First Parachute Army (Student) is given the Albert Canal defence with FJ Divisions 3, 5, 6 and LXXXVIII Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R593;R001",
+    "source_locator": "R593: p. 366"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C0829",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Blaskowitz at Army Group G headquarters, Gérardmer, orders the XLVII Panzer Corps to Mirecourt-Neufchâteau",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R002",
+    "source_locator": "R415: p. 192"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.8662,
      50.4665
     ]
@@ -22310,6 +22433,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.5978,
+     50.3597
+    ]
+   },
+   "properties": {
+    "claim_id": "C0823",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL0543",
+    "location_name": "Koblenz, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Rundstedt assumes command in the main OB West headquarters near Koblenz",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R411;R430;R001",
+    "source_locator": "R411: p. 42; R430: p. 17-18"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -22508,6 +22672,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R420;R001",
     "source_locator": "R420: p. 188"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C0830",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges (headquarters of 4 September; not documented for 8 September)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "OB West places the First Army under Army Group G on 8 September",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R415;R593;R002",
+    "source_locator": "R415: p. 193; R593: p. 370"
    }
   },
   {
@@ -23376,6 +23581,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C0831",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-11",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges (headquarters of 4 September; not documented for 11 September)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Armeegruppe G becomes Heeresgruppe G; the order of 9 September takes effect on 11 September",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -7,
+    "reference_ids": "R593;R002",
+    "source_locator": "R593: p. 370"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.3378,
      50.9304
     ]
@@ -24155,6 +24401,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.842,
+     51.9884
+    ]
+   },
+   "properties": {
+    "claim_id": "C0825",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0545",
+    "location_name": "Oosterbeek, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "Model's Army Group B headquarters is in a hotel at Oosterbeek when the British airborne landing begins",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R002",
+    "source_locator": "R605: p. 140-141"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2368,
+     51.6512
+    ]
+   },
+   "properties": {
+    "claim_id": "C0827",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1944-09-17",
+    "place_id": "PL0542",
+    "location_name": "Vught, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "Student's First Parachute Army command post is at Vught, nine miles west of the drop zones",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R002",
+    "source_locator": "R605: p. 139"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -24353,6 +24681,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R350;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C0832",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges (headquarters of 4 September; not documented for 18 September)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Hitler replaces Blaskowitz with General Balck and orders the western Vosges position held",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -14,
+    "reference_ids": "R593;R002",
+    "source_locator": "R593: p. 393"
    }
   },
   {
@@ -25098,6 +25467,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C0833",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-21",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges (headquarters of 4 September; not documented for 21 September)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Balck takes over Army Group G from Blaskowitz; Mellenthin becomes chief of staff",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -17,
+    "reference_ids": "R416;R186;R002",
+    "source_locator": "R416: p. 229-230; R186: section 2, Oberbefehlshaber"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5017,
      48.5894
     ]
@@ -25214,6 +25624,47 @@
     "location_temporal_offset_days": -3,
     "reference_ids": "R336;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2368,
+     51.6512
+    ]
+   },
+   "properties": {
+    "claim_id": "C0828",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1944-09-23",
+    "place_id": "PL0542",
+    "location_name": "Vught, Noord-Brabant (command post of 17 September; not documented for 23 September)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Model gives the First Parachute Army the II SS Panzer, II Parachute and LXXXVI Corps and Corps Feldt",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R606;R002",
+    "source_locator": "R606: p. 193"
    }
   },
   {
@@ -25583,6 +26034,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R364;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8667,
+     49.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C0824",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-09-29",
+    "place_id": "PL0544",
+    "location_name": "Bad Kreuznach, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "Rundstedt receives Balck at the OB West headquarters at Bad Kreuznach",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R001",
+    "source_locator": "R416: p. 242, 250"
    }
   },
   {

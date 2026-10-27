@@ -17,14 +17,14 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | France | army | 1 | 0 | 0 | 1 | 1 | 0 |
 | France | corps | 2 | 0 | 0 | 2 | 2 | 0 |
 | France | division | 10 | 0 | 0 | 10 | 7 | 0 |
-| Germany | army_group | 3 | 0 | 1 | 4 | 3 | 6 |
-| Germany | army | 9 | 0 | 4 | 13 | 7 | 17 |
+| Germany | army_group | 2 | 0 | 2 | 4 | 3 | 12 |
+| Germany | army | 8 | 0 | 5 | 13 | 7 | 20 |
 | Germany | corps | 35 | 0 | 8 | 43 | 39 | 36 |
 | Germany | division | 99 | 0 | 30 | 129 | 113 | 110 |
 | Germany | brigade | 8 | 0 | 0 | 8 | 1 | 0 |
 | Germany | regiment/battle_group | 1 | 0 | 9 | 10 | 0 | 11 |
 | Germany | battalion | 1 | 0 | 0 | 1 | 0 | 0 |
-| Germany | other | 3 | 0 | 1 | 4 | 0 | 4 |
+| Germany | other | 3 | 0 | 1 | 4 | 0 | 7 |
 | Netherlands | brigade | 1 | 0 | 0 | 1 | 0 | 0 |
 | Poland | division | 1 | 0 | 0 | 1 | 1 | 0 |
 | Poland | brigade | 1 | 0 | 0 | 1 | 1 | 0 |
@@ -38,7 +38,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | corps | 2 | 0 | 15 | 17 | 7 | 117 |
 | US | division | 0 | 0 | 60 | 60 | 24 | 403 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **199** | **0** | **160** | **359** | **236** | **821** |
+| **All** | | **197** | **0** | **162** | **359** | **236** | **833** |
 
 ## Operations
 
@@ -47,28 +47,28 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 8 | 480 |
-| operation | 19 | 18 | 178 |
+| campaign | 9 | 8 | 489 |
+| operation | 19 | 18 | 181 |
 | battle | 17 | 17 | 133 |
 | phase | 2 | 2 | 30 |
-| **All** | **48** | **45** | **821** |
+| **All** | **48** | **45** | **833** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 533 places and 99 alias names for 821 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 539 places and 99 alias names for 833 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 429 | 646 |
+| point | 435 | 658 |
 | area | 86 | 155 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 371 | 622 |
-| Germany (DE) | 92 | 102 |
-| Belgium (BE) | 36 | 50 |
-| Netherlands (NL) | 15 | 22 |
+| France (FR) | 372 | 627 |
+| Germany (DE) | 94 | 105 |
+| Belgium (BE) | 37 | 51 |
+| Netherlands (NL) | 17 | 25 |
 | Luxembourg (LU) | 6 | 9 |
 | United Kingdom (GB) | 5 | 8 |
 | Austria (AT) | 6 | 6 |

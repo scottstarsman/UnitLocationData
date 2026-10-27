@@ -882,7 +882,7 @@ A relation is one dated interval of one relationship between a subject unit and 
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0922 (GER-INF-064D, 1944-10-15) | observed_during | - | - |  | R224 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/64ID.htm [table of 1944, October row] |
+  | C0922 (GER-INF-064D, 1944-10-15) | observed_during | - | - |  | R623 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/64ID-R.htm [table of 1944, October row] |
 
 ### R20. CR0658: 347th Infantry Division -> LXXIV Corps (assigned)
 
@@ -893,5 +893,5 @@ A relation is one dated interval of one relationship between a subject unit and 
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C0925 (GER-INF-347D, 1944-09-15) | observed_during | - | - |  | R212 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/347ID.htm [table of 1944, September row] |
+  | C0925 (GER-INF-347D, 1944-09-15) | observed_during | - | - |  | R617 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/347ID-R.htm [table of 1944, September row] |
 

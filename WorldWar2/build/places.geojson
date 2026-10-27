@@ -578,7 +578,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -3758,7 +3758,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -6558,7 +6558,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10339,6 +10339,26 @@
     "country": "FR",
     "region": "Normandy",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "place_id": "PL0524",
+    "name": "Périers, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 4
    }
   }
  ]

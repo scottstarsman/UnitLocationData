@@ -9805,6 +9805,293 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.5203,
+     49.2133
+    ]
+   },
+   "properties": {
+    "claim_id": "C0757",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-243D",
+    "unit_name": "243rd Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-24",
+    "place_id": "PL0191",
+    "location_name": "Lessay, Manche (coastal sector near Lessay)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "battered remnants beside the 91st Division in the coastal sector near Lessay",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R002",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5203,
+     49.2133
+    ]
+   },
+   "properties": {
+    "claim_id": "C0758",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LL-091D",
+    "unit_name": "91st Luftlande Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-24",
+    "place_id": "PL0191",
+    "location_name": "Lessay, Manche (coastal sector near Lessay)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "beside the 243rd in the Lessay coastal sector, controlling remnants of the 77th Division and the 265th Kampfgruppe",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R002",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0759",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-24",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (Périers area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "2nd SS Panzer Division, with the 6th Parachute Regiment, defending the Périers area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R001",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0760",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-24",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (Périers area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "17th SS Panzer Grenadier Division, much weakened, defending the Périers area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R001",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0761",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-07-24",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (east of the Périers area; point = Périers)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "5th Parachute Division, controlling only one regiment, east of the Périers area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R001",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4061,
+     49.1872
+    ]
+   },
+   "properties": {
+    "claim_id": "C0762",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-24",
+    "place_id": "PL0524",
+    "location_name": "Périers, Manche (assembled south of Périers; point = Périers)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "forming the LXXXIV Corps reserve, assembled south of Périers behind the 5th Parachute Division",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R001",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C0763",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-24",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (west bank of the Vire; point = Saint-Lô sector)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "352nd Division, 650 combat troops with attached units under the II Parachute Corps, on the west bank of the Vire",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R592;R001",
+    "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1319,
      49.1678
     ]
@@ -12627,6 +12914,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R402;R001",
     "source_locator": "R402: p. 462, 461"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8324,
+     48.5997
+    ]
+   },
+   "properties": {
+    "claim_id": "C0764",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-275D",
+    "unit_name": "275th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-06",
+    "place_id": "PL0029",
+    "location_name": "Barenton, Manche",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "275th Division weak defenses at Barenton, threatening the southern flank of the Mortain attack",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": null,
+    "location_basis": null,
+    "location_temporal_offset_days": null,
+    "reference_ids": "R402;R403;R002",
+    "source_locator": "R402: p. 459; R403: p. 482"
    }
   },
   {

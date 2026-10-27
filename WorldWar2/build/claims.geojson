@@ -22228,6 +22228,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1313,
+     48.3005
+    ]
+   },
+   "properties": {
+    "claim_id": "C0844",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-09-04",
+    "place_id": "PL0551",
+    "location_name": "Mirecourt, Vosges (destination of the order, not a documented position)",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Blaskowitz orders the XLVII Panzer Corps headquarters from Metz to the Mirecourt-Neufchâteau area",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R002",
+    "source_locator": "R415: p. 192-193"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.8662,
      50.4665
     ]
@@ -22467,6 +22508,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R411;R430;R001",
     "source_locator": "R411: p. 42; R430: p. 17-18"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1846,
+     48.6936
+    ]
+   },
+   "properties": {
+    "claim_id": "C0845",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-09-05",
+    "place_id": "PL0243",
+    "location_name": "Nancy, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The XLVII Panzer Corps holds the First Army left wing along the Moselle from Arnaville to Bayon",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R411;R001",
+    "source_locator": "R411: p. 49"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0853",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-05",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland (destination of the order, not a documented position)",
+    "location_represents": "objective",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Model orders the II SS Panzer Corps headquarters to the vicinity of Arnhem to rehabilitate the 9th SS Panzer Division",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R608;R001",
+    "source_locator": "R608: p. 127"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7086,
+     48.3569
+    ]
+   },
+   "properties": {
+    "claim_id": "C0858",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-066C",
+    "unit_name": "LXVI Corps (LXVI Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL0556",
+    "location_name": "Neufchâteau, Vosges",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Lucht's LXVI Corps holds the north flank of Army Group G in the Neufchâteau-Langres sector",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R411;R244;R002",
+    "source_locator": "R411: p. 45; R244: table of 1944, September row"
    }
   },
   {
@@ -24073,6 +24237,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0851",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Schack's LXXXI Corps defends Aachen with the 116th Panzer Division; the city is put under the division commander",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R247;R001",
+    "source_locator": "R441: p. 69-70; R247: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9013,
      49.0476
     ]
@@ -24599,6 +24804,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R605;R002",
     "source_locator": "R605: p. 139"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0854",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-17",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The II SS Panzer Corps with the 9th and 10th SS Panzer Divisions moves against the British landing at Arnhem",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R001",
+    "source_locator": "R605: p. 141-142, 170"
    }
   },
   {
@@ -25467,6 +25713,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0852",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-20",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Brandenberger relieves Schack over the Schwerin affair; General Koechling takes over the LXXXI Corps",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R001",
+    "source_locator": "R441: p. 91"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -25836,6 +26123,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6483,
+     48.7624
+    ]
+   },
+   "properties": {
+    "claim_id": "C0847",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-09-22",
+    "place_id": "PL0552",
+    "location_name": "Juvelize, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The right wing of the LVIII Panzer Corps attacks at 0700 for the high ground southeast of Juvelize",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 230, 232-233"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -25918,6 +26246,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5017,
+     48.5894
+    ]
+   },
+   "properties": {
+    "claim_id": "C0846",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-09-23",
+    "place_id": "PL0199",
+    "location_name": "Lunéville, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "The XLVII Panzer Corps falls back to the line Forêt de Parroy-Croismare-Vezouse-Azerailles under the Fifth Panzer Army",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R261;R001",
+    "source_locator": "R416: p. 234-235; R261: table of 1944, September row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C0855",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-23",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The II SS Panzer Corps and Division von Tettau pass to the First Parachute Army by Model's reorganization",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R606;R001",
+    "source_locator": "R606: p. 193"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C0856",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-23",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Meindl's II Parachute Corps, with Corps Feldt, holds the Nijmegen sector under the First Parachute Army",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R606;R001",
+    "source_locator": "R606: p. 193"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3939,
+     51.5034
+    ]
+   },
+   "properties": {
+    "claim_id": "C0857",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-23",
+    "place_id": "PL0555",
+    "location_name": "Best, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Reinhard's LXXXVIII Corps holds the British XII Corps near Best and attacks Veghel from the west",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R606;R002",
+    "source_locator": "R606: p. 191-192"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -25992,6 +26484,47 @@
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
     "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 236"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1846,
+     48.6936
+    ]
+   },
+   "properties": {
+    "claim_id": "C0849",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-013C",
+    "unit_name": "XIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-24",
+    "place_id": "PL0243",
+    "location_name": "Nancy, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "General Priess and the XIII SS Corps take command in the sector east of Nancy",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R001",
     "source_locator": "R416: p. 236"
    }
   },
@@ -26123,6 +26656,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5339,
+     48.7244
+    ]
+   },
+   "properties": {
+    "claim_id": "C0848",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-09-25",
+    "place_id": "PL0015",
+    "location_name": "Arracourt, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Manteuffel orders an advance along the whole LVIII Panzer Corps front",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R259;R001",
+    "source_locator": "R416: p. 237-238; R259: table of 1944, September rows"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -26198,6 +26772,47 @@
     "location_temporal_offset_days": 8,
     "reference_ids": "R345;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5113,
+     48.8231
+    ]
+   },
+   "properties": {
+    "claim_id": "C0850",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-013C",
+    "unit_name": "XIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-27",
+    "place_id": "PL0547",
+    "location_name": "Château-Salins, Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Priess attacks toward Moncel with the 559th Volksgrenadier Division and the 106th Panzer Brigade",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 245-246"
    }
   },
   {
@@ -26977,6 +27592,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R607;R002",
     "source_locator": "R607: p. 338-339"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7389,
+     48.4492
+    ]
+   },
+   "properties": {
+    "claim_id": "C0859",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-31",
+    "place_id": "PL0025",
+    "location_name": "Baccarat, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "The LXIV Corps (Thumm) takes over the former LXXXIX Corps zone from Domèvre to Saulcy-sur-Meurthe",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R607;R001",
+    "source_locator": "R607: p. 338"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C0860",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFC-004C",
+    "unit_name": "IV Luftwaffe Field Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-10-31",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Petersen's IV Luftwaffe Field Corps extends its front to over twenty-five miles, from Saulcy to Le Thillot",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R607;R002",
+    "source_locator": "R607: p. 338"
    }
   },
   {

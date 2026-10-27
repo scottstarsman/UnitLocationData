@@ -18,7 +18,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -298,7 +298,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -498,7 +498,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -3918,7 +3918,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -4778,7 +4778,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 5
+    "claims_count": 7
    }
   },
   {
@@ -10778,7 +10778,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -10798,7 +10798,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10856,6 +10856,126 @@
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1313,
+     48.3005
+    ]
+   },
+   "properties": {
+    "place_id": "PL0551",
+    "name": "Mirecourt, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6483,
+     48.7624
+    ]
+   },
+   "properties": {
+    "place_id": "PL0552",
+    "name": "Juvelize, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "place_id": "PL0553",
+    "name": "Arnhem, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "place_id": "PL0554",
+    "name": "Nijmegen, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3939,
+     51.5034
+    ]
+   },
+   "properties": {
+    "place_id": "PL0555",
+    "name": "Best, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7086,
+     48.3569
+    ]
+   },
+   "properties": {
+    "place_id": "PL0556",
+    "name": "Neufchâteau, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
     "claims_count": 1

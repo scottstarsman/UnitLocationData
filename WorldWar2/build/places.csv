@@ -1,5 +1,5 @@
 place_id,name,alt_names,kind,latitude,longitude,precision_km,country,region,coord_reference_id,coord_source_note,claims_count,units_count,first_claim_date,last_claim_date
-PL0001,"Aachen, North Rhine-Westphalia",Aachen,point,50.7756,6.0836,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Aachen,3,2,1944-09-12,1944-10-21
+PL0001,"Aachen, North Rhine-Westphalia",Aachen,point,50.7756,6.0836,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Aachen,5,3,1944-09-12,1944-10-21
 PL0002,"Ablis, Seine-et-Oise",,point,48.5172,1.8369,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Ablis, France)",1,1,1944-08-22,1944-08-22
 PL0003,"Agay–Saint-Raphaël, Var",,area,43.4314,6.8565,5,FR,Provence-Alpes-Cote d'Azur,R002,"OpenStreetMap Nominatim (Agay–Saint-Raphaël, Var (beaches east of Saint-Raphaël))",1,1,1944-08-15,1944-08-15
 PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",5,3,1944-08-06,1944-08-17
@@ -13,7 +13,7 @@ PL0011,"Argenteau, Liege",,point,50.6982,5.6855,3,BE,Wallonia,R002,"OpenStreetMa
 PL0012,"Arlon, Luxembourg",,point,49.6833,5.8167,5,BE,Wallonia,R001,Wikipedia (en): Arlon,1,1,1944-12-22,1944-12-22
 PL0013,"Arnaville, Meurthe-et-Moselle",,point,49.0119,6.0311,3,FR,Lorraine,R001,Wikipedia (en): Arnaville,2,2,1944-09-10,1944-09-10
 PL0014,"Arpajon, Seine-et-Oise",,point,48.5903,2.2477,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Arpajon, France)",1,1,1944-08-25,1944-08-25
-PL0015,"Arracourt, Meurthe-et-Moselle",,point,48.7244,6.5339,5,FR,Lorraine,R001,Wikipedia (en): Arracourt,3,3,1944-09-19,1944-09-22
+PL0015,"Arracourt, Meurthe-et-Moselle",,point,48.7244,6.5339,5,FR,Lorraine,R001,Wikipedia (en): Arracourt,4,4,1944-09-19,1944-09-25
 PL0016,Assembly west/south of Caen,,area,49.1669,-0.5247,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-26,1944-06-26
 PL0017,"Assenois, Luxembourg",,point,49.9665,5.6816,3,BE,Wallonia,R002,"OpenStreetMap Nominatim: Assenois, Vaux-sur-Sûre, Bastogne, Luxembourg, Wallonie, 6640, België / Belgique",2,2,1944-12-26,1944-12-26
 PL0018,"Aumeville-Lestre, Manche",,point,49.5400,-1.3205,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Aumeville-Lestre, Manche, France)",1,1,1944-09-30,1944-09-30
@@ -23,7 +23,7 @@ PL0021,"Auw, Rhineland",Auw bei Prüm,point,50.3004,6.3380,25,DE,Rheinland-Pfalz
 PL0022,"Avranches–Brécey gap, Manche",,area,48.7100,-1.2600,10,FR,Lower Normandy,,midpoint of Wikipedia (en) Avranches and Brécey,1,1,1944-08-01,1944-08-01
 PL0023,"Avranches, Manche",,point,48.6850,-1.3556,5,FR,Lower Normandy,R001,Wikipedia (en): Avranches,3,3,1944-07-30,1944-07-31
 PL0024,Azeville,,point,49.4591,-1.3135,5,FR,Lower Normandy,R002,OSM Nominatim,1,1,1944-06-07,1944-06-07
-PL0025,"Baccarat, Meurthe-et-Moselle",,point,48.4492,6.7389,5,FR,Lorraine,R001,Wikipedia (fr): Baccarat,1,1,1944-11-12,1944-11-12
+PL0025,"Baccarat, Meurthe-et-Moselle",,point,48.4492,6.7389,5,FR,Lorraine,R001,Wikipedia (fr): Baccarat,2,2,1944-10-31,1944-11-12
 PL0026,"Bagnoles de l'Orne, Orne",,point,48.5539,-0.4229,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Bagnoles de l'Orne, Orne, France)",1,1,1944-08-15,1944-08-15
 PL0027,"Bains-les-Bains, Vosges",,point,47.9962,6.2566,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Bains-les-Bains, Vosges, France)",2,2,1944-09-18,1944-09-20
 PL0028,"Balleroy, Calvados",,point,49.1809,-0.8370,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Balleroy, Calvados, France)",2,1,1944-07-13,1944-07-14
@@ -194,7 +194,7 @@ PL0195,"Logis de la Bocage, Manche",,point,48.6775,-1.0200,25,FR,Lower Normandy,
 PL0196,"Loire sector at Orléans, Beaugency and Mer, Loiret",,area,47.7792,1.6325,25,FR,Centre,R001,Wikipedia (en): Beaugency,1,1,1944-09-10,1944-09-10
 PL0197,"Longnes, Seine-et-Oise",,point,48.9207,1.5871,3,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Longnes, France)",1,1,1944-08-26,1944-08-26
 PL0198,"Lorient, Morbihan",,point,47.7500,-3.3600,10,FR,Brittany,R001,Wikipedia (en): Lorient,1,1,1944-08-15,1944-08-15
-PL0199,"Lunéville, Meurthe-et-Moselle",,point,48.5894,6.5017,5,FR,Lorraine,R001,Wikipedia (en): Lunéville,2,1,1944-09-22,1944-11-13
+PL0199,"Lunéville, Meurthe-et-Moselle",,point,48.5894,6.5017,5,FR,Lorraine,R001,Wikipedia (en): Lunéville,3,2,1944-09-22,1944-11-13
 PL0200,"Luxembourg City, Luxembourg",,point,49.6114,6.1300,5,LU,Luxembourg,R001,Wikipedia (en): Luxembourg City,3,3,1944-12-17,1944-12-20
 PL0201,"Lyon, Palais de la Foire (east bank of the Rhône), Rhône",,point,45.7849,4.8538,5,FR,Rhone-Alpes,R002,"OpenStreetMap Nominatim (Cité Internationale, Lyon; approximate stand-in for the Palais de la Foire)",1,1,1944-09-15,1944-09-15
 PL0202,"Maastricht area, Albert Canal–Meuse",,area,50.8500,5.6833,25,NL,Limburg,R001,Wikipedia (en): Maastricht,1,1,1944-09-10,1944-09-10
@@ -237,7 +237,7 @@ PL0239,Moving south from Cherbourg to VIII Corps zone,,area,49.2908,-1.5411,25,F
 PL0240,"Les Mureaux, Yvelines",,point,48.9875,1.9172,5,FR,Ile-de-France,R001,Wikipedia (en): Les Mureaux,1,1,1944-08-29,1944-08-29
 PL0241,"Nampcel, Oise",,point,49.4853,3.0983,3,FR,Picardie,R002,"OpenStreetMap Nominatim (Nampcel, Oise, France)",1,1,1944-09-02,1944-09-02
 PL0242,"Namur, Namur",,point,50.4665,4.8662,3,BE,Wallonia,R002,"OpenStreetMap Nominatim (Namur, Namur, Belgium)",1,1,1944-09-05,1944-09-05
-PL0243,"Nancy, Meurthe-et-Moselle",,point,48.6936,6.1846,5,FR,Lorraine,R001,Wikipedia (fr): Nancy,5,2,1944-09-15,1944-12-22
+PL0243,"Nancy, Meurthe-et-Moselle",,point,48.6936,6.1846,5,FR,Lorraine,R001,Wikipedia (fr): Nancy,7,4,1944-09-05,1944-12-22
 PL0244,"Nantes, Loire-Atlantique",,point,47.2181,-1.5528,5,FR,Pays de la Loire,R001,Wikipedia (en): Nantes,1,1,1944-08-12,1944-08-12
 PL0245,"Néhou, Manche",,point,49.4209,-1.5430,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Néhou, Manche, France)",1,1,1944-08-01,1944-08-01
 PL0246,"Nerduit, Manche",,point,49.2633,-1.4559,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Nerduit, Manche, France)",1,1,1944-07-25,1944-07-25
@@ -537,8 +537,14 @@ PL0542,"Vught, Noord-Brabant",,point,51.6512,5.2368,3,NL,Noord-Brabant,R002,Open
 PL0543,"Koblenz, Rheinland-Pfalz",,point,50.3597,7.5978,5,DE,Rheinland-Pfalz,R001,Wikipedia article Koblenz,2,1,1944-09-01,1944-09-05
 PL0544,"Bad Kreuznach, Rheinland-Pfalz",,point,49.85,7.8667,5,DE,Rheinland-Pfalz,R001,Wikipedia article Bad Kreuznach,1,1,1944-09-29,1944-09-29
 PL0545,"Oosterbeek, Gelderland",,point,51.9884,5.842,3,NL,Gelderland,R002,"OpenStreetMap Nominatim (Oosterbeek, Renkum, Gelderland)",1,1,1944-09-17,1944-09-17
-PL0546,"Gérardmer, Vosges",,point,48.0706,6.8777,5,FR,Lorraine,R002,OpenStreetMap Nominatim (Gérardmer),5,1,1944-09-04,1944-09-21
-PL0547,"Château-Salins, Moselle",,point,48.8231,6.5113,3,FR,Lorraine,R002,OpenStreetMap Nominatim (Château-Salins),1,1,1944-09-24,1944-09-24
+PL0546,"Gérardmer, Vosges",,point,48.0706,6.8777,5,FR,Lorraine,R002,OpenStreetMap Nominatim (Gérardmer),6,2,1944-09-04,1944-10-31
+PL0547,"Château-Salins, Moselle",,point,48.8231,6.5113,3,FR,Lorraine,R002,OpenStreetMap Nominatim (Château-Salins),2,2,1944-09-24,1944-09-27
 PL0548,"Vic-sur-Seille, Moselle",,point,48.7813,6.5303,3,FR,Lorraine,R002,OpenStreetMap Nominatim (Vic-sur-Seille),1,1,1944-09-25,1944-09-25
 PL0549,"Walcheren island, Zeeland",,point,51.5214,3.5822,10,NL,Zeeland,R001,Wikipedia article Walcheren,1,1,1944-09-18,1944-09-18
 PL0550,"Vacqueville, Meurthe-et-Moselle",,point,48.4827,6.8138,3,FR,Lorraine,R002,OpenStreetMap Nominatim (Vacqueville),1,1,1944-10-31,1944-10-31
+PL0551,"Mirecourt, Vosges",,point,48.3005,6.1313,5,FR,Lorraine,R002,OpenStreetMap Nominatim (Mirecourt),1,1,1944-09-04,1944-09-04
+PL0552,"Juvelize, Moselle",,point,48.7624,6.6483,3,FR,Lorraine,R002,OpenStreetMap Nominatim (Juvelize),1,1,1944-09-22,1944-09-22
+PL0553,"Arnhem, Gelderland",,point,51.9833,5.9167,5,NL,Gelderland,R001,Wikipedia article Arnhem,3,1,1944-09-05,1944-09-23
+PL0554,"Nijmegen, Gelderland",,point,51.8475,5.8625,5,NL,Gelderland,R001,Wikipedia article Nijmegen,1,1,1944-09-23,1944-09-23
+PL0555,"Best, Noord-Brabant",,point,51.5034,5.3939,3,NL,Noord-Brabant,R002,OpenStreetMap Nominatim (Best),1,1,1944-09-23,1944-09-23
+PL0556,"Neufchâteau, Vosges",,point,48.3569,5.7086,5,FR,Lorraine,R002,"OpenStreetMap Nominatim (Neufchâteau, Vosges)",1,1,1944-09-05,1944-09-05

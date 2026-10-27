@@ -26486,6 +26486,703 @@
     "reference_ids": "R557;R337;R371;R531;R561;R562;R563;R565;R001",
     "source_locator": "R557: p. 46; R337: assignment table (no XXII Corps row); R371: assignment table, row 29 Mar 45; R531: assignment table, row 31 Mar 45; R561: assignment table, row 30 Mar 45; R562: assignment table, row 28 Mar 45; R563: assignment table, row 31 Mar 45; R565: list of assignments in the ETO, entry of 31 March 1945"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0403,
+     51.755
+    ]
+   },
+   "properties": {
+    "claim_id": "C0647",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-095D",
+    "unit_name": "95th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL0448",
+    "location_name": "Beckum, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "subordinate_assignment",
+    "current_activity": "CMH table lists the division under XIX Corps and the Ninth Army again, with the British 21st Army Group attached",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R531;R581;R566;R001",
+    "source_locator": "R566: p. 364"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7328,
+     50.8281
+    ]
+   },
+   "properties": {
+    "claim_id": "C0648",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-04",
+    "place_id": "PL0449",
+    "location_name": "Ohrdruf, Thüringen",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Combat Command A of the division takes Ohrdruf and finds the first camp uncovered by the advancing armies",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R356;R001",
+    "source_locator": "R567: p. 377-378"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1833,
+     51.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C0649",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-009A",
+    "unit_name": "Ninth Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-05",
+    "place_id": "PL0450",
+    "location_name": "Haltern am See, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "army headquarters at Haltern am See after the army returns to the 12th Army Group on 4 April",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R483;R567;R566;R001",
+    "source_locator": "R567: p. 379; R566: p. 363"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7708,
+     50.81
+    ]
+   },
+   "properties": {
+    "claim_id": "C0650",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL0451",
+    "location_name": "Marburg, Hessen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army headquarters moves to Marburg as the First Army prepares the thrust to Leipzig",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R482;R567;R001",
+    "source_locator": "R567: p. 379-380"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6822,
+     50.1106
+    ]
+   },
+   "properties": {
+    "claim_id": "C0651",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-003A",
+    "unit_name": "Third Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL0452",
+    "location_name": "Frankfurt am Main, Hessen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army headquarters at Frankfurt as the Third Army, halted on the Werra, waits for the First Army to draw level",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R485;R567;R001",
+    "source_locator": "R567: p. 376, 380"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7911,
+     51.505
+    ]
+   },
+   "properties": {
+    "claim_id": "C0652",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-11",
+    "place_id": "PL0453",
+    "location_name": "Nordhausen, Thüringen",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "the armored division sweeps into Nordhausen and uncovers another concentration camp",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R352;R001",
+    "source_locator": "R567: p. 391-392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.7167,
+     52.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0653",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-11",
+    "place_id": "PL0454",
+    "location_name": "Hannover, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "command post at Hannover as the division follows the armor toward the Elbe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-11",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R367;R567;R001",
+    "source_locator": "R567: p. 386-387"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6763,
+     52.0633
+    ]
+   },
+   "properties": {
+    "claim_id": "C0654",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-12",
+    "place_id": "PL0455",
+    "location_name": "Westerhüsen, Magdeburg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "two armored infantry battalions cross the Elbe at Westerhausen, south of Magdeburg, in dukws on 12 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R347;R002",
+    "source_locator": "R567: p. 387, 396-399"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9689,
+     52.5408
+    ]
+   },
+   "properties": {
+    "claim_id": "C0655",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-005D",
+    "unit_name": "5th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-12",
+    "place_id": "PL0456",
+    "location_name": "Tangermünde, Sachsen-Anhalt",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "the armored division reaches the Elbe at Tangermuende, fifty-three miles from Berlin",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R358;R001",
+    "source_locator": "R567: p. 387"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2044,
+     50.8014
+    ]
+   },
+   "properties": {
+    "claim_id": "C0656",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-013D",
+    "unit_name": "13th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-12",
+    "place_id": "PL0457",
+    "location_name": "Siegburg, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "command post at Siegburg as the armored division drives along the Rhine to turn behind the Ruhr defenders",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R571;R566;R001",
+    "source_locator": "R566: p. 366-367"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9022,
+     51.1289
+    ]
+   },
+   "properties": {
+    "claim_id": "C0657",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-086D",
+    "unit_name": "86th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL0458",
+    "location_name": "Attendorn, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "command post at Attendorn while the division fights in the Sauerland south of the Ruhr",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R561;R566;R001",
+    "source_locator": "R566: p. 367"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2044,
+     50.8014
+    ]
+   },
+   "properties": {
+    "claim_id": "C0658",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-097D",
+    "unit_name": "97th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL0457",
+    "location_name": "Siegburg, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "command post at Siegburg as the division fights east of the Rhine and the 13th Armored Division passes through it",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R562;R566;R001",
+    "source_locator": "R566: p. 366, 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7911,
+     51.505
+    ]
+   },
+   "properties": {
+    "claim_id": "C0659",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-104D",
+    "unit_name": "104th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL0453",
+    "location_name": "Nordhausen, Thüringen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "command post at Nordhausen; men of the division find the large underground V-2 factories outside the town",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R339;R567;R001",
+    "source_locator": "R567: p. 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.8667,
+     51.9667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0660",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-083D",
+    "unit_name": "83rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL0459",
+    "location_name": "Barby, Sachsen-Anhalt",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "two battalions of the 329th Infantry cross the Elbe at Barby in assault boats behind a smoke screen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R366;R001",
+    "source_locator": "R567: p. 387, 397"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4653,
+     51.5139
+    ]
+   },
+   "properties": {
+    "claim_id": "C0661",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-095D",
+    "unit_name": "95th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL0460",
+    "location_name": "Dortmund, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "the division captures Dortmund after stiff German resistance",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R581;R531;R001",
+    "source_locator": "R566: p. 364"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4333,
+     52.0667
+    ]
+   },
+   "properties": {
+    "claim_id": "C0662",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0461",
+    "location_name": "Wanzleben, Sachsen-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "corps headquarters at Wanzleben as the Westerhausen bridgehead is withdrawn and the Barby one holds",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R477;R567;R001",
+    "source_locator": "R567: p. 387, 399"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1858,
+     51.3992
+    ]
+   },
+   "properties": {
+    "claim_id": "C0663",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-008D",
+    "unit_name": "8th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0462",
+    "location_name": "Hattingen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "a battalion of the 13th Infantry reaches the Ruhr River at Hattingen, southeast of Essen, late on 14 April",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R369;R001",
+    "source_locator": "R566: p. 367"
+   }
   }
  ]
 }

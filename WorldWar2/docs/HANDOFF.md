@@ -12,22 +12,22 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 **Scope (owner-approved).** US Army ground units on the **Western Front, 6 June 1944 to 8 May 1945**, at army-group, army, corps and division level. No Marines. No air or naval units (the vocabularies reserve them; nothing uses them).
 
-**Where the work stands (26 October 2026).**
+**Where the work stands (27 October 2026).**
 
 | item | value |
 |---|---|
 | Claims | **712** (`C0001` to `C0712`), dated 6 June 1944 to 8 May 1945. By nation: US 573, Germany 75, UK 60, Canada 4 (on the branch `batch5-apr-may-1945`; `main` has 646, `C0001` to `C0646`, US 507) |
 | Claims by month | Jun 212, Jul 58, Aug 140, Sep 109, Oct 8, Nov 15, Dec 32, Jan 1945 22, Feb 15, Mar 35, Apr 1945 48, May 18 |
-| Units in `data/units.csv` | **356**: 141 active (US 84, Germany 34, UK 21, Canada 2), **215 placeholders** (identity only, no claims; none is a US unit) |
+| Units in `data/units.csv` | **358**: 141 active (US 84, Germany 34, UK 21, Canada 2), **217 placeholders** (identity only, no claims; the only US ones are X Corps and XIV Corps, added 27 October 2026, theater `pacific`) |
 | Command relations | 557 (`CR0001` to `CR0558`; `CR0037` was removed), 1,468 evidence links, 24 documented overlaps |
-| Places / references / operations | 503 / 578 (ids to `R584`; `R548`, `R550` and `R554` unused and not to be reused) / 45 |
+| Places / references / operations | 503 / 579 (ids to `R585`; `R548`, `R550` and `R554` unused and not to be reused) / 45 |
 | Conflict groups | 14 (30 claims in groups; 626 preferred, 10 alternate, 10 disputed overall; `G017` is the newest, the 89th Division's Moselle date) |
-| Retired claim ids | 0. Next free claim id: **C0713** (next relation `CR0559`, next place `PL0510`, next reference `R585`, next conflict group `G018`) |
+| Retired claim ids | 0. Next free claim id: **C0713** (next relation `CR0559`, next place `PL0510`, next reference `R586`, next conflict group `G018`) |
 | Done | June 1944 proof of concept (US, UK, Canadian and German units); US Army Batches 1 to 3 (1 July to 31 December 1944) |
 | Done on the branch `batch4-jan-mar-1945` (merged into `main`, 26 October 2026) | **Batch 4 (1 January to 31 March 1945)**, 68 claims; see `docs/roadmap.md`, "Batch 4" and the `docs/changelog.md` entries |
 | Done on the branch `corps-xxii-xxiii` (merged into `main`, 26 October 2026) | **XXII and XXIII Corps** activated: 5 claims (`C0642` to `C0646`), 7 command relations (`CR0472` to `CR0478`), 1 existing relation closed (`CR0097`); see `docs/roadmap.md`, "XXII and XXIII Corps" and the `docs/changelog.md` entry |
 | Done on the branch `corps-followups` (merged into `main` with PR #17, 26 October 2026) | **Follow-ups to the corps task:** `formed_date` of XXII and XXIII Corps set to 1944-01-15 (activation); `CR0447` (95th Division to XIX Corps) closed on 1945-03-30 (table-based end); no claim added (646). See the `docs/changelog.md` entries and `docs/roadmap.md`, open points 1, 2 and 6 |
-| Done on the branch `batch5-apr-may-1945` (**pushed, not merged**; awaiting the spot check, Scott's review and merge) | **Batch 5 (1 April to 8 May 1945)**, 66 claims (`C0647` to `C0712`), 6 placeholders activated (13th, 16th and 20th Armored; 71st, 86th and 97th Infantry), 80 relations (`CR0479` to `CR0558`), 41 earlier relations closed, 3 operations, 19 references, country codes `AT` and `CZ`; see `docs/roadmap.md`, "Batch 5" (including what it does not cover) and the `docs/changelog.md` entries |
+| Done on the branch `batch5-apr-may-1945` (**pushed, not merged; ready for Scott's merge**: spot check done, his four open points answered on 27 October 2026) | **Batch 5 (1 April to 8 May 1945)**, 66 claims (`C0647` to `C0712`), 6 placeholders activated (13th, 16th and 20th Armored; 71st, 86th and 97th Infantry), 80 relations (`CR0479` to `CR0558`), 41 earlier relations closed, 3 operations, 20 references, unit records for X Corps and XIV Corps, country codes `AT` and `CZ`; see `docs/roadmap.md`, "Batch 5" (including what it does not cover) and the `docs/changelog.md` entries |
 | **Not started** | A commanders table, `event_support` and `position` columns, F-004 and F-005, XXII and XXIII Corps rows for April and May, and the gaps listed under "What Batch 5 does NOT cover" in the roadmap |
 
 **What is and is not covered.**
@@ -132,7 +132,7 @@ Run from `/workspace/ww2-unit-locations` (standard-library Python 3 only). One c
 
 | check | command | good baseline on 26 October 2026 |
 |---|---|---|
-| Validator | `python3 scripts/validate.py` | `OK: 141 claim files, 712 claims, 356 units, 14 conflict groups` (Batch 5; `main` before it: 135 claim files, 646 claims); exit 0; **3 known WARNINGs** (GER-COR-084C line 2: more than three opponents; US-ABN-082D line 9: US-COR-008C ended 12 July before the 13 July row; US-ABN-101D line 7: attached entry without a standing parent). Any new ERROR or a new WARNING must be fixed or explained in the row's `notes`. |
+| Validator | `python3 scripts/validate.py` | `OK: 141 claim files, 712 claims, 358 units, 14 conflict groups` (Batch 5; `main` before it: 135 claim files, 646 claims); exit 0; **3 known WARNINGs** (GER-COR-084C line 2: more than three opponents; US-ABN-082D line 9: US-COR-008C ended 12 July before the 13 July row; US-ABN-101D line 7: attached entry without a standing parent). Any new ERROR or a new WARNING must be fixed or explained in the row's `notes`. |
 | Semantic tests | `python3 scripts/semantic_tests.py` | `OK: 68 expectations hold`. If you change data on purpose, change the expectation in the same commit and say why. |
 | Build check | `python3 scripts/build.py --check` (after `build.py`) | `build/ and docs/coverage.md are up to date (12 files)` |
 | References | `python3 scripts/build_references.py --check` | `references are up to date (4 files)` |
@@ -195,6 +195,13 @@ All dates 2026. "Scott decided" = approved by him in chat.
 - **30th Infantry Division one-day V Corps row (4 August):** left unchanged; no relation. The overlap of `CR0266` and `CR0267` on 5 August is documented with the table's dates.
 - **Still open from the review:** event type `attack` of C0048 (part of the claim key). The commander and handover dates of conflict group G003 (LXXXIV Corps) were not touched.
 - **Item 8:** 19 of the 24 overlap explanations were rewritten after reading the tables (see section 4).
+
+**Batch 5 decisions (27 October 2026; Scott answered yes to each of the four open points)**
+- **95th Division, early April 1945:** keep the relations as recorded (the Combat Chronicle version: XIX Corps to 8 April, XVI Corps from 9 April); the disagreement with the CMH table (XIV Corps on 4 April) and the Green Book (Task Force Twaddle under XVI Corps from 7 April) stays annotated on C0647. Nothing reconciled; no value changed.
+- **100th Division from 25 April 1945:** keep the Seventh Army as its parent (CR0355; the CMH table lists no corps from that date) and the 12th Army Group relation as the table has it (CR0523); the conflict with the Green Book (Devers, 6th Army Group, 26 April) stays annotated on C0688. No value changed.
+- **Unit records for X Corps and XIV Corps:** added as `US-COR-010C` and `US-COR-014C`, placeholders, theater `pacific`. **Unexpected finding:** the sources read (Wikipedia, X Corps and XIV Corps) place both corps only in the Pacific in the Second World War, so the CMH table entries "X" (4th Armored Division, 9 April 1945) and "XIV" (95th Division, 4 April 1945) are not confirmed for Europe and may be misprints. The records keep the identity only; no relation was added (none existed). `formed_date` for X Corps 1942-05-15 (activation, Wikipedia text; the infobox's 1 May 1942 not used); XIV Corps blank (no activation date stated). Still open: which corps the two table entries meant.
+- **Country codes `AT` and `CZ`:** kept in the `country` vocabulary.
+- **Branch state:** `batch5-apr-may-1945` is ready for Scott's merge; after he merges, fast-forward both clones, delete the branch (remote and local) and tell him.
 
 **Process decisions**
 - **Quarterly batch split (Batch 4 January to March, Batch 5 April to 8 May 1945):** the roadmap states no reason. The reasoning I give: one batch per quarter keeps the spot-check gate and review round at Batch 3's size (51 claims for October to December), and January to May as one batch would be roughly 110 to 170 claims (my estimate from Batch 3's pace) with 20 or more newly active units. The earlier phrase "US January to May 1945" in `docs/review/questions.md` (question 8) is the whole remainder, not a batch. **Scott has not confirmed the split.** Ask him.

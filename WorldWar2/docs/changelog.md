@@ -5,6 +5,10 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 
 
 
+## batch5-apr-may-1945: status documents after Scott's answers (27 October 2026)
+
+Eleventh and last commit of Batch 5. **Documentation only; no data, schema or script changed.** `README.md` (units 356 to 358), `docs/roadmap.md` (status line, batch-table row 5, the placeholder paragraph, the "does not cover" line for X and XIV Corps, open points 2, 3 and 7 marked as resolved by Scott, references R566 to R584 to R566 to R585) and `docs/HANDOFF.md` (status table: units 356 to 358, placeholders 215 to 217, references 578 to 579, next reference R585 to R586, the Batch 5 row now "ready for Scott's merge", the validator line; new decision-log block "Batch 5 decisions (27 October 2026)"). Old values to new values as listed; reason: Scott answered yes to the four open points on 27 October 2026 and the two corps records were added (the entries above). Next free ids after this branch: `C0713`, `CR0559`, `PL0510`, `R586`, `G018`.
+
 ## batch5-apr-may-1945: Scott's decisions recorded in two claim notes (27 October 2026)
 
 Tenth commit of Batch 5. **Notes only: `data/claims/us/US-INF-095D.csv` (C0647) and `data/claims/us/US-INF-100D.csv` (C0688) each gain one `Review` sentence; `build/all_claims.csv` regenerated. No value, relation, place or unit changed.** Scott answered yes to the four open points of Batch 5 on 27 October 2026: (1) the 95th Division's early-April relations stay as recorded (Combat Chronicle version) with the disagreement annotated (C0647); (2) the 100th Division's parent from 25 April stays the Seventh Army, the table listing no corps (C0688); (3) unit records for X Corps and XIV Corps (previous entry); (4) the country codes `AT` and `CZ` stay (see the entry of the commit that added them). Old value and new value are the same for points 1, 2 and 4; the sentences say so. who_controls grid: 0 changes expected (notes only).

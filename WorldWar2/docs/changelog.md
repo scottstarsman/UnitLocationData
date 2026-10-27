@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## batch5-apr-may-1945: operations (26 October 2026)
+
+Second commit of Batch 5. **`data/operations.csv`: three rows added (42 to 45 operations); `build/operations.csv`, `build/operation_references.csv` regenerated. No claim, unit, place or relation changed.** The three operations are the ones the claims of the next commits use as `operation_id` (the most specific operation that contains the date; the rows of 1 to 8 May use the campaign `OP-CAMP-CENTRAL-EUROPE`, which has the CMH streamer dates 22 March to 11 May 1945).
+
+- **`OP-RUHR-POCKET`** (Ruhr pocket, battle, parent `OP-CAMP-CENTRAL-EUROPE`, 1945-04-01 to 1945-04-18, `date_basis` `official_history`, R566, R576): the ring closed on 1 April (Last Offensive ch. 16 p. 359-362) and organized resistance ended on 18 April (p. 372; Wikipedia, Ruhr pocket, gives the same end). The two sources differ on when the *reduction* began (Wikipedia 1 April with the Ninth Army; the Green Book, map 5, 4 April); the operation row starts on the date of the closing of the ring, which both give.
+- **`OP-HARZ-POCKET`** (Harz pocket, battle, parent `OP-CAMP-CENTRAL-EUROPE`, 1945-04-11 to 1945-04-23, `official_history`, R567): the 1st Division pierced the western fringe on 11 April; the fight ended on 23 April (Last Offensive ch. 17 p. 402-405). The map title ("11-17 April") is shorter than the text; the row follows the text and says so.
+- **`OP-NUREMBERG`** (Battle of Nuremberg (1945), battle, parent `OP-CAMP-CENTRAL-EUROPE`, 1945-04-16 to 1945-04-20, `official_history`, R568, R579): assault began 16 April, the city fell on 20 April (Last Offensive ch. 18 p. 424-425; Wikipedia, a five-day battle).
+- **Not added:** an operation for the Elbe bridgeheads, Leipzig, the Danube crossings, Munich or the Austrian drive (no source read gives them a name and an end date as an operation; their rows use the campaign). Elbe Day (25 April) is an event, not an operation.
+- **Checked:** `validate.py` (OK, 646 claims, 45 operations; the references R566, R567, R568, R576 and R579 are now cited by an operation), `semantic_tests.py`, `build.py`, `build_references.py`.
+
 ## batch5-apr-may-1945: references (26 October 2026)
 
 First commit of Batch 5 (1 April to 8 May 1945, approved by Scott on 26 October 2026; branch `batch5-apr-may-1945`, based on `main` 367e9b7). **`data/references_meta.csv`: 16 rows added (R566 to R581; 559 to 575 references in total, the numbering has gaps); `data/references.csv` and the build files regenerated. No claim, relation, place or unit changed.** Added with `scripts/build_references.py --add` and then described by hand (title, citation, type, reliability, used_for); every URL was opened on 26 October 2026 (HTTP 200).

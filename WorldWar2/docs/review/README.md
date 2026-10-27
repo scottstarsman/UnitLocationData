@@ -79,7 +79,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | claim files (one per active unit) | 135 |
 | conflict groups / claims in a group | 14 / 30 |
 | places (`data/places.csv`) / retired in `data/place_merges.csv` | 441 / 5 |
-| operations / operation relations | 42 / 6 |
+| operations / operation relations | 45 / 6 |
 | command relations (`data/command_relations.csv`) | 477 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 1298 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 24 |

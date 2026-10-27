@@ -104,7 +104,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 
 - **Unit:** Panzer Lehr Division (`GER-PZ-LEHRD`), Germany, division; parent in the claim: `GER-SSPZ-001C`; commander field: unknown
 - **Claim:** `relocation` / `OP-CAMP-NORMANDY`; status preferred; confidence 0.3
-- **Activity:** Panzer Lehr, replaced at Caen by a newly arrived infantry division, moving across the front to the Seventh Army sector west of Saint-Lô
+- **Activity:** Panzer Lehr, replaced at Caen by a new infantry division, moving to the Seventh Army sector west of Saint-Lô
 - **Place:** Saint-Lô sector (`PL0334`, Lower Normandy, FR); point 49.12, -1.09; precision 10 km; point represents: objective; qualifier: destination area west of the Vire; division in transit; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned GER-SSPZ-001C
 - **Notes:** Event date: Breakout and Pursuit ch. 6 p. 102: "Having just been replaced by a newly arrived infantry division, Panzer Lehr was scheduled to go into the Panzer Group West reserve" and was the only strong force available to counterattack the Taute-Vire bridgehead, a shift of "several days"; ch. 7 p. 122: "With Panzer Lehr moving to the Seventh Army sector"; Schramm, OKW war diary (p. 324): before the entry of 8 July the OB West "zog als Rückhalt in den Abschnitt des LXXXIV. AK. westlich der Vire ... die Pz.-Lehr-Div. und die 2. SS-Pz.-Div. heran". The source texts give no single day: 9 July is the day of the CMH account of the move (p. 122) and is an approximation. Event definition: a move in [...]

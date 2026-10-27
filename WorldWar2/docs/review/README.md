@@ -78,7 +78,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | units in `data/units.csv` | 359: 160 active (have claims), 199 placeholders |
 | claim files (one per active unit) | 160 |
 | conflict groups / claims in a group | 22 / 48 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 534 / 5 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 533 / 5 |
 | operations / operation relations | 48 / 6 |
 | command relations (`data/command_relations.csv`) | 592 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 1558 |
@@ -109,7 +109,7 @@ Evidence roles of relation links: asserts_start 999, observed_during 382, assert
 
 References by source family: wikipedia 192, us_army_cmh 170, lexikon_wehrmacht_de 168, ww2byday_com 33, dday_overlord_com 2, erenow_org 2, pegasusarchive_org 2, thesecondwar_pl 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, britishmilitaryhistory_co_uk 1, cgsc_contentdm_oclc_org 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, us_army_unit_history 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 201, encyclopedia 192, official_history 110, assignment_table 62, news_or_web_article 14, archive_document 6, monument_or_memorial 6, unit_history 3, gazetteer_geocoder 2, other 2.
 
-Places by kind: point 430, area 86, line 18.
+Places by kind: point 429, area 86, line 18.
 
 <!-- counts:end -->
 

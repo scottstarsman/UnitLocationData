@@ -3,6 +3,15 @@
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
 
+## german-batch1b-jul-1944: validator warnings cleared (27 October 2026)
+
+Fifth commit of German Batch 1b: validator warnings cleared. Only text fields changed; no date, place, confidence, flag or relation.
+
+- **`current_activity` shortened to 120 characters or less** for 29 new claims (the full wording stays in `notes`).
+- **"Event support:" sentences added** to `C0765`, `C0766` and `C0767` (low-confidence command rows).
+- **Place `PL0537` (Condé-sur-Noireau) removed:** created for a row that was not written and unused; the id is not reused (the next free place id stays `PL0541`; the batch added 15 places, `PL0525` to `PL0540` without `PL0537`).
+- **Validator:** 4 known warnings (3 older ones and `CR0039` / `C0771`, see HANDOFF).
+
 ## german-batch1b-jul-1944: documentation, spot-check corrections and checks (27 October 2026)
 
 Fourth commit of German Batch 1b: documentation and checks. No claim, relation or place added.

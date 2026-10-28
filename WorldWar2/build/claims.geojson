@@ -34405,6 +34405,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.6249,
+     50.3671
+    ]
+   },
+   "properties": {
+    "claim_id": "C1075",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-11-26",
+    "place_id": "PL0626",
+    "location_name": "Ziegenberg (Schloss Adlerhorst), Hesse (the Ziegenberg headquarters is named for 24 October; the visit of 26 November is taken to be at the same headquarters)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Jodl visits OB West at its Ziegenberg headquarters and finds Rundstedt and Model set on the Small Solution",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R638;R002",
+    "source_locator": "R638: p. 23, 31"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6398,
      49.2225
     ]

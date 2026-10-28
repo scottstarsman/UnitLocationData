@@ -15098,7 +15098,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -15519,6 +15519,26 @@
     "country": "NL",
     "region": "Gelderland",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0931,
+     51.5546
+    ]
+   },
+   "properties": {
+    "place_id": "PL0784",
+    "name": "Well, Bergen, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
    }
   }
  ]

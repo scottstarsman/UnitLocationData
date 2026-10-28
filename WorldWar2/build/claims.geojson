@@ -46172,6 +46172,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0931,
+     51.5546
+    ]
+   },
+   "properties": {
+    "claim_id": "C1542",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-19",
+    "place_id": "PL0784",
+    "location_name": "Well, Bergen, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds the Maas front between Venlo and Boxmeer, attached to II Canadian Corps since 29 December; attachment ends",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: pp. 4, 159, 160, 238, 240, 241; R668: p. 443"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.03,
      49.0
     ]
@@ -49732,6 +49773,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 494"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2012,
+     51.6267
+    ]
+   },
+   "properties": {
+    "claim_id": "C1543",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-25",
+    "place_id": "PL0762",
+    "location_name": "Weeze, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Veritable: relieves the 15th Division in XXX Corps west of Weeze; directed on Kervenheim and Winnekendonk",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: pp. 271, 273; R668: p. 494"
    }
   },
   {

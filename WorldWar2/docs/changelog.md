@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## handoff-branching-rule: HANDOFF status rows after the merge of PR #20 (27 October 2026)
+
+Second commit of `handoff-branching-rule` (the branch is still unmerged, so it carries both related documentation commits). **Documentation only; no data, build, schema or script changed.** `docs/HANDOFF.md`: the claims row no longer says the data sit on the German Batch 2 branches (now `main` `ba961f8` after PR #20); the status rows for German Batch 2 and its follow-up say "merged into `main` with PR #20" instead of "pushed, not merged"; the decision-log line on the follow-up's branching says Scott merged both; the German coverage line counts 89 active German units (was 86) and 123 German placeholders (was 130), and names the follow-up. Counts and next ids (954 claims; C0955, CR0674, PL0586, R641, G027) were already current. Left as written because they are historical or older than this merge: the "State of branches at handoff" list, the Batch 4 and Batch 5 open-item texts and the housekeeping list in section 7. Approved by Scott on 27 October 2026 ("Go ahead").
+
 ## handoff-branching-rule: branching rule in HANDOFF section 3 (27 October 2026)
 
 Branch `handoff-branching-rule`, cut from `main` (`ba961f8`, PR #20). **Documentation only; no data, build, schema or script changed.** `docs/HANDOFF.md` section 3 (rules 1, 2, 3 and 5), the task-start line in section 8 (startup checklist step 6) and a decision-log entry: related batches go on one branch with each logical item in its own commit (Scott merges it once; no second branch stacked on an unmerged one for related work), unrelated tasks branch from current `main`, and Scott deletes branches himself. All other standing rules are unchanged. Approved by Scott on 27 October 2026 ("Yes").

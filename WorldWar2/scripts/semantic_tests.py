@@ -607,8 +607,51 @@ def scenario_15_canadian_batch_2_jan_may_1945():
     expect(s + ': C1343 is the first Army claim of 1945', (c['unit_id'], c['date'], c['event_type']), ('CAN-ARMY-001A', '1945-01-18', 'command_change'))
 
 
+def scenario_16_british_batch_1_jun_dec_1944():
+    """British Batch 1 (June to December 1944): the attachments of the 7th Armoured and Guards Armoured Divisions to II Canadian Corps end by 30 July (sourced bound, day inferred); the 7th Armoured Division is with I Corps from 16 August and XII Corps from 31 August; XII Corps is activated and takes the 15th and 59th Divisions; the Guards and 11th Armoured Divisions are in XXX Corps at Brussels and Antwerp; the 1st Airborne Division is in I Airborne Corps at Arnhem; the 52nd Division is with the First Canadian Army at Walcheren."""
+    s = 'scenario 16, British Batch 1 (June to December 1944)'
+    a = intervals('UK-ARM-007D', '1944-07-22')
+    expect(s + ': 7th Armoured Division, 22 Jul: attached to II Canadian Corps is certain (Stacey p. 186)', a[('CAN-COR-002C', 'attached')][0], 'certain')
+    a = intervals('UK-ARM-007D', '1944-08-01')
+    expect(s + ': 7th Armoured Division, 1 Aug: the attachment to II Canadian Corps has ended (latest 30 July, Ellis I pp. 378 and 388); XXX Corps is certain', sorted(a), [('UK-COR-030C', 'assigned')])
+    expect(s + ': 7th Armoured Division, 1 Aug: XXX Corps is certain', a[('UK-COR-030C', 'assigned')][0], 'certain')
+    a = intervals('UK-ARM-GRDD', '1944-07-27')
+    expect(s + ': Guards Armoured Division, 27 Jul: VIII Corps is certain, II Canadian Corps is possible only (end between 25 and 30 July)', sorted(a), [('CAN-COR-002C', 'attached'), ('UK-COR-008C', 'assigned')])
+    a = intervals('UK-ARM-GRDD', '1944-09-03')
+    expect(s + ': Guards Armoured Division, 3 Sep (Brussels): XXX Corps is certain', sorted(a), [('UK-COR-030C', 'assigned')])
+    a = intervals('UK-ARM-007D', '1944-08-20')
+    expect(s + ': 7th Armoured Division, 20 Aug: attached to I Corps (Ellis I p. 432) is possible only, with XXX Corps', sorted(a), [('UK-COR-001C', 'attached'), ('UK-COR-030C', 'assigned')])
+    a = intervals('UK-ARM-007D', '1944-09-05')
+    expect(s + ': 7th Armoured Division, 5 Sep: XII Corps (from 31 August, Ellis I p. 469)', sorted(a), [('UK-COR-012C', 'assigned')])
+    a = intervals('UK-COR-012C', '1944-08-10')
+    expect(s + ': XII Corps, 10 Aug: Second Army is certain', sorted(a), [('UK-ARMY-002A', 'assigned')])
+    a = intervals('UK-INF-043D', '1944-08-10')
+    expect(s + ': 43rd Division, 10 Aug: XXX Corps is certain (Mont Pincon, Ellis I pp. 409-410)', sorted(a), [('UK-COR-030C', 'assigned')])
+    a = intervals('UK-INF-059D', '1944-08-10')
+    expect(s + ': 59th Division, 10 Aug: XII Corps', sorted(a), [('UK-COR-012C', 'assigned')])
+    a = intervals('UK-INF-015D', '1944-08-28')
+    expect(s + ': 15th Division, 28 Aug (Seine crossing): XII Corps', sorted(a), [('UK-COR-012C', 'assigned')])
+    a = intervals('UK-INF-049D', '1944-09-11')
+    expect(s + ': 49th Division, 11 Sep (Le Havre): I Corps', sorted(a), [('UK-COR-001C', 'assigned')])
+    a = intervals('UK-ARM-011D', '1944-09-01')
+    expect(s + ': 11th Armoured Division, 1 Sep: XXX Corps (from 21 August)', sorted(a), [('UK-COR-030C', 'assigned')])
+    a = intervals('UK-ABN-001D', '1944-09-20')
+    expect(s + ': 1st Airborne Division, 20 Sep (Arnhem): I Airborne Corps is certain', sorted(a), [('UK-ABN-001C', 'assigned')])
+    a = intervals('UK-ABN-001C', '1944-09-20')
+    expect(s + ': I Airborne Corps, 20 Sep: First Allied Airborne Army is certain', sorted(a), [('ALL-FAAA-001A', 'assigned')])
+    a = intervals('BEL-INF-001B', '1944-08-25')
+    expect(s + ': 1st Belgian Brigade, 25 Aug: attached to the 6th Airborne Division (Ellis I p. 448)', sorted(a), [('UK-ABN-006D', 'attached')])
+    a = intervals('UK-INF-052D', '1944-11-05')
+    expect(s + ': 52nd Division, 5 Nov (Walcheren): attached to the First Canadian Army (Ellis II pp. 84 and 114)', sorted(a), [('CAN-ARMY-001A', 'attached')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1408']
+    expect(s + ': C1408 is the first British row of the batch', (c['unit_id'], c['date']), ('UK-COR-001C', '1944-07-08'))
+    c = claims['C1468']
+    expect(s + ': C1468 is the last row of the batch (XXX Corps in the Ardennes)', (c['unit_id'], c['date']), ('UK-COR-030C', '1944-12-20'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944):
         before = len(FAILURES)
         try:
             fn()

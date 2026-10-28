@@ -2,6 +2,42 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## british-batch1-jun-dec-1944: British Batch 1, 6 June to 31 December 1944 (28 October 2026)
+
+Branch `british-batch1-jun-dec-1944`, cut from `main` (`c89feaa`, 1,407 claims, 367 units, 24 conflict groups, 243 semantic expectations); compare it with `main` (`https://github.com/scottstarsman/UnitLocationData/compare/main...british-batch1-jun-dec-1944`). Scott on 28 October 2026: "I think the British units should be next. Pick the time period that works best for you and proceed"; the period 6 June to 31 December 1944 was chosen and written in one batch.
+
+### Item 1: references and operations
+
+- **References `R669`, `R670`, `R671` (`data/references_meta.csv`, regenerated into `data/references.csv`):** Wikipedia, Operation Bluecoat; Ellis, *Victory in the West* vol. I (HMSO 1962; archive.org full text); Ellis vol. II (HMSO 1968).
+- **Operations `OP-TRACTABLE` (14 to 21 August 1944, parent `OP-FALAISE`) and `OP-BLUECOAT` (30 July to 7 August, parent `OP-CAMP-NORTHERN-FRANCE`)** appended to `data/operations.csv`. Tractable is the Canadian Batch 1 deferred item; the end follows the closing of the Falaise Gap and the Bluecoat end and name come from Wikipedia (Ellis does not name it); both are inferred values and say so in `notes`.
+
+### Item 2: three Canadian rows re-pointed (changed values)
+
+- **`C1291` (`CAN-COR-002C`), `C1303` (`CAN-INF-003D`), `C1334` (`CAN-ARM-004D`), column `operation_id`: changed.** Old value: `OP-FALAISE`. New value: `OP-TRACTABLE`. Reason: all three describe 14 August 1944 (the first day of Tractable, Stacey pp. 238-241 and Ellis I p. 430); the other Canadian Falaise rows were not changed. A `Review (British Batch 1, 28 October 2026; ...)` sentence in each note gives the old value, the new value and the reason.
+
+### Items 3 to 6: claims and relations
+
+- **Claims `C1408` to `C1468` (61):** July `C1408` to `C1433` (26: Charnwood, Jupiter, the Odon preliminaries, Goodwood, Bluecoat); August `C1434` to `C1456` (23: Bluecoat and Mont Pincon, 21st Army Group and XXX Corps command changes of 4 August, Tractable flank, the Falaise pursuit, the Seine crossings, Amiens and the Somme, Montgomery promoted Field-Marshal on 1 September); September to December `C1457` to `C1468` (12: Brussels and Antwerp, Le Havre, Market Garden with I Airborne Corps and the 1st Airborne Division, the 52nd Division at Walcheren, XXX Corps in the Ardennes). Confidence 0.7 for 40, 0.5 for 19, 0.3 for 2 (`C1423`, `C1456`); all from Ellis, one family.
+- **Inferred values (all annotated in the claim or relation notes):** the claim dates are the days Ellis gives except `C1443` (6th Airborne at Troarn: Ellis I p. 448 gives no day; 21 August is the latest possible day), `C1468` (20 December is the day Montgomery took control of the northern battlefield; the order is earlier), `C1466` (the withdrawal from Arnhem at night, 25-26 September, Ellis II pp. 58 and 97 differ by a day), the closing of `CR0883` (29 August, Ellis I p. 467) and the start of `CR0891` (52nd Division attached to the First Canadian Army, claim date 3 November; Ellis II p. 106 has a brigade relieving Canadians from 18 October).
+- **New relations `CR0873` to `CR0893` (21):** I Corps, XII Corps, VIII Corps, XXX Corps and Second Army standing relations of the divisions and corps (assigned, from the first British row in the new place), `CR0883` (7th Armoured Division attached to I Corps from 16 August to 29 August), `CR0888` (49th Division assigned to I Corps from 10 September), two attached relations of the Belgian and Netherlands brigades to the 6th Airborne Division (listed by `C1443`), the 1st Airborne Division, I Airborne Corps and the 52nd Division relations.
+- **`CR0060`, `CR0063`, `CR0072`, `CR0074`, `CR0076`: closed as inferred values.** Old value: `valid_to` empty, basis `open_at_last_claim`. New value: `valid_to` the day before the first row of the next higher unit (for example `CR0060` 1944-07-18), basis `inferred_from_next_claim`. Reason: the unit's next row names another corps and the sources read do not date the change; the relation note carries the same text ("The old value is ... The new value is ... The reason is ...").
+- **`CR0850` and `CR0851` (7th Armoured and Guards Armoured Divisions attached to II Canadian Corps from 20 July): closed.** Old value: `valid_to` empty, basis `open_at_last_claim`, end unknown. New value: `valid_to` 1944-07-30, `valid_to_earliest` 1944-07-25, basis `inferred_from_next_claim`, end unknown. Reason: Ellis I p. 378 has both divisions attacking with II Canadian Corps on 25 July and p. 388 puts them in XXX Corps and VIII Corps reserve for Bluecoat on 30 July; the day of the end is not dated, so the day of the next operation is the latest possible end.
+- **Added to `data/command_relation_claims.csv`:** 64 evidence links. `CR0883` is evidenced by the I Corps row `C1442` through `listed_by_higher_unit` (`composing_units` of the 7th Armoured Division, start stated 16 August) and the two brigade relations by `C1443`.
+- **Places:** 27 new, `PL0722` to `PL0748` (geocoded with Nominatim, place centres; precision 3 to 20 km), including Mont Pincon, Evrecy, Aunay-sur-Odon, Vernon, Amiens, Brussels, Valkenswaard, Wolfheze and Tienen.
+- **Units activated (`data/units.csv`, `record_status` placeholder to active):** `UK-COR-012C` (XII Corps), `UK-ABN-001C` (I Airborne Corps), `UK-ABN-001D` (1st Airborne Division), `UK-INF-052D` (52nd Division).
+- **Not written (stated scope):** the Polish Armoured Division to I Corps from 28 September (Stacey p. 367), the Polish Parachute Brigade at Arnhem and the Czechoslovak brigade at Dunkirk (no claim of those units exists to evidence the relations); the 43rd Division's move to VIII Corps on 2 September; the 243rd Division German row (deferred earlier); October 1944 to May 1945 for the British formations.
+
+### Item 7: tests
+
+- **`scripts/semantic_tests.py`**: scenario 16 added (19 expectations: the end of the II Canadian Corps attachments of the 7th Armoured and Guards Armoured Divisions, the 7th Armoured Division in XXX Corps, I Corps (attached) and XII Corps, XII Corps under Second Army, the 43rd, 59th, 15th, 49th Divisions and the 11th Armoured Division under their corps, the 1st Airborne Division under I Airborne Corps and First Allied Airborne Army, the Belgian Brigade attached to the 6th Airborne Division, the 52nd Division attached to First Canadian Army, and the ids `C1408` and `C1468`).
+- **`wc_grid` / `cmp_grid`:** before `main` `c89feaa`, after the branch: 1,550 of 10,620 answers changed, 240 new questions (6 units); the US changes are only the date of the last listing of the SHAEF relation (see `grid_british_batch1.md`).
+
+### Item 8: documents
+
+- **Counts:** 61 claims (`C1408` to `C1468`), 21 relations, 64 evidence links, 4 units activated, 27 places, 2 operations (62 in all), 3 references (665 in all). Next free ids: `C1469`, `CR0894`, `PL0749`, `R672`, `G028`.
+- **Checks:** `validate` OK (264 claim files, 1,468 claims, 367 units, 24 conflict groups; 18 warnings, 3 coordinate warnings); `semantic_tests` OK (262 expectations); the full set (`build`, `build_references`, `review_sample --check`, `check_coordinates`, both audits, `check_claim_ids --base origin/main`, `run_checks.sh`) as listed in the HANDOFF.
+- **Documents:** README counts and a British Batch 1 sentence; `docs/HANDOFF.md` (state table, baselines, decision log); `docs/roadmap.md` (table row and section); `docs/sources.md` (Ellis); `docs/coverage.md` and `build/` regenerated.
+
 ## canadian-batch2-jan-may-1945: Canadian Batch 2, January to May 1945 (28 October 2026)
 
 Branch `canadian-batch2-jan-may-1945`, cut from `main` (`92e5f82`, 1,342 claims, 367 units, 24 conflict groups, 221 semantic expectations); compare it with `main` (`https://github.com/scottstarsman/UnitLocationData/compare/main...canadian-batch2-jan-may-1945`). Task approved by Scott on 28 October 2026 (Canadian Batch 2: Canadian Army units on the Western Front, 1 January to 8 May 1945, division level and above; same method, scope, sources and rules as Canadian Batch 1; the 2nd Division at Boxtel of 29 December 1944 as a deferred first row). One source family only (Stacey, `R668`), so no row is at 0.9. Italy is not written: I Canadian Corps, the 1st Division and the 5th Armoured Division appear only from their arrival in the Western Front theatre.

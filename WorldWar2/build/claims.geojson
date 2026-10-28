@@ -30879,6 +30879,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0955",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-10-23",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Fifth Panzer Army headquarters shifts from Army Group G to Army Group B and moves to the vicinity of Aachen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R434;R001",
+    "source_locator": "R434: p. 394"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5661,
      51.2885
     ]
@@ -31036,6 +31077,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R607;R002",
     "source_locator": "R607: p. 338"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3811,
+     50.7129
+    ]
+   },
+   "properties": {
+    "claim_id": "C0960",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-074C",
+    "unit_name": "LXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-02",
+    "place_id": "PL0586",
+    "location_name": "Hürtgen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXIV Corps under Straube cannot plug the gaps opened by the US 28th Division attack at Hürtgen",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-11-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R642;R002",
+    "source_locator": "R642: p. 353"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3811,
+     50.7129
+    ]
+   },
+   "properties": {
+    "claim_id": "C0964",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-04",
+    "place_id": "PL0586",
+    "location_name": "Hürtgen, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "The 156th Panzer Grenadier Regiment of the 116th Panzer Division arrives at Hürtgen",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-11-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R642;R272;R002",
+    "source_locator": "R642: p. 353, 359; R272: table of 1944, November row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3985,
+     50.6671
+    ]
+   },
+   "properties": {
+    "claim_id": "C0965",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-04",
+    "place_id": "PL0588",
+    "location_name": "Kommerscheidt, Nideggen, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 89th Division attacks Kommerscheidt and orders the 1056th Regiment to hold a line from Simonskall",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-11-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R642;R002",
+    "source_locator": "R642: p. 359"
    }
   },
   {
@@ -31453,6 +31617,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C0956",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-11-15",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia (area east of the Roer; no place for the headquarters is named)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army headquarters is disengaged in secret and moves east of the Roer under a cover name",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R434;R001",
+    "source_locator": "R434: p. 395"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C0957",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-15",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia (sector between the First Parachute and Seventh Armies; no command post is named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Fifteenth Army headquarters arrives from Holland to take over the Aachen-Roer sector as Gruppe von Manteuffel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R434;R001",
+    "source_locator": "R434: p. 395"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2035,
+     50.9229
+    ]
+   },
+   "properties": {
+    "claim_id": "C0970",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-11-15",
+    "place_id": "PL0589",
+    "location_name": "Setterich, Baesweiler, North Rhine-Westphalia (reserve position a few miles behind the front; no village is named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "XLVII Panzer Corps is the army group reserve close behind the Aachen-Roer front",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R435;R438;R002",
+    "source_locator": "R435: p. 410; R438: p. 518-519"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2833,
      50.8167
     ]
@@ -31535,6 +31822,293 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2833,
+     50.8167
+    ]
+   },
+   "properties": {
+    "claim_id": "C0958",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL0137",
+    "location_name": "Eschweiler, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXXI Corps holds the front opposite the US VII Corps at the start of Operation Queen",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R435;R641;R001",
+    "source_locator": "R435: p. 410; R641: p. 488"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C0959",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-11-16",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "XII SS Corps holds the front from Loverich through Geilenkirchen to the Maas under Blumentritt",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R438;R002",
+    "source_locator": "R438: p. 519"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "claim_id": "C0961",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL0557",
+    "location_name": "Stolberg (Rhineland), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 12th Division defends Stolberg, the Donnerberg and the Eschweiler woods against the US VII Corps",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R435;R002",
+    "source_locator": "R435: p. 417, 425"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3811,
+     50.7129
+    ]
+   },
+   "properties": {
+    "claim_id": "C0966",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-275D",
+    "unit_name": "275th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL0586",
+    "location_name": "Hürtgen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 275th Division holds the sector deep in the Hürtgen Forest opposite the right wing of the US VII Corps",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R435;R642;R002",
+    "source_locator": "R435: p. 410; R642: p. 346"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1655,
+     50.8247
+    ]
+   },
+   "properties": {
+    "claim_id": "C0963",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-17",
+    "place_id": "PL0587",
+    "location_name": "Broichweiden, Würselen, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "The 3rd Panzer Grenadier Division, falling back to Broichweiden, is hit by the US 120th Infantry before dawn",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R437;R438;R002",
+    "source_locator": "R437: p. 501; R438: p. 519"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2035,
+     50.9229
+    ]
+   },
+   "properties": {
+    "claim_id": "C0968",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-17",
+    "place_id": "PL0589",
+    "location_name": "Setterich, Baesweiler, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "The 9th Panzer Division counterattacks the US 2nd Armored Division penetration near Setterich",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R438;R002",
+    "source_locator": "R438: p. 530"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2035,
+     50.9229
+    ]
+   },
+   "properties": {
+    "claim_id": "C0969",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-17",
+    "place_id": "PL0589",
+    "location_name": "Setterich, Baesweiler, North Rhine-Westphalia (position backing up the 9th Panzer Division; no village is named)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "The 15th Panzer Grenadier Division shifts to a position backing up the 9th Panzer Division",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R438;R002",
+    "source_locator": "R438: p. 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -31576,6 +32150,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2833,
+     50.8167
+    ]
+   },
+   "properties": {
+    "claim_id": "C0962",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-18",
+    "place_id": "PL0137",
+    "location_name": "Eschweiler, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "The 47th Volksgrenadier Division is committed in the southern half of the 12th Division line",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R435;R641;R437;R001",
+    "source_locator": "R435: p. 418; R641: p. 487; R437: p. 502"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8025,
      48.2636
     ]
@@ -31610,6 +32225,88 @@
     "location_temporal_offset_days": -1,
     "reference_ids": "R422;R463;R338;R001",
     "source_locator": "R422: p. 396, 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3811,
+     50.7129
+    ]
+   },
+   "properties": {
+    "claim_id": "C0967",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-344D",
+    "unit_name": "344th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "place_id": "PL0586",
+    "location_name": "Hürtgen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "The 344th Infantry Division moves in behind the 275th Division in the Hürtgen Forest",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R435;R641;R002",
+    "source_locator": "R435: p. 437; R641: p. 465"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3611,
+     50.9221
+    ]
+   },
+   "properties": {
+    "claim_id": "C0972",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-340D",
+    "unit_name": "340th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-21",
+    "place_id": "PL0590",
+    "location_name": "Jülich, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "The first regiment of the 340th Volksgrenadier Division reaches Jülich and begins to relieve the 246th Division",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R440;R002",
+    "source_locator": "R440: p. 559"
    }
   },
   {
@@ -31733,6 +32430,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R634;R637;R633;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C0971",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-11-26",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "The 3rd Fallschirmjäger Division begins to move into the line at Düren to relieve Gruppe Engel",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R641;R180;R001",
+    "source_locator": "R641: p. 488; R180: table of 1944, November row"
    }
   },
   {

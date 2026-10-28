@@ -18,7 +18,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 13
+    "claims_count": 15
    }
   },
   {
@@ -2698,7 +2698,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -8418,7 +8418,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -10998,7 +10998,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -11018,7 +11018,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11558,6 +11558,106 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3811,
+     50.7129
+    ]
+   },
+   "properties": {
+    "place_id": "PL0586",
+    "name": "Hürtgen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1655,
+     50.8247
+    ]
+   },
+   "properties": {
+    "place_id": "PL0587",
+    "name": "Broichweiden, Würselen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3985,
+     50.6671
+    ]
+   },
+   "properties": {
+    "place_id": "PL0588",
+    "name": "Kommerscheidt, Nideggen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2035,
+     50.9229
+    ]
+   },
+   "properties": {
+    "place_id": "PL0589",
+    "name": "Setterich, Baesweiler, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3611,
+     50.9221
+    ]
+   },
+   "properties": {
+    "place_id": "PL0590",
+    "name": "Jülich, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

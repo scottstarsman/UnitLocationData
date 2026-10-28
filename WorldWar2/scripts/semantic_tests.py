@@ -498,8 +498,24 @@ def scenario_12_german_1945_batch_2_apr_may():
     expect(s + ': Twenty-fourth Army, 22 Apr (CMH ch. 18 p. 434): the Nineteenth Army is possible only (an attachment with no sourced end)', a[('GER-ARMY-019A', 'attached')][0], 'possible')
 
 
+def scenario_13_cleanup_open_items_oct28():
+    """Clean-up of open items (28 October 2026): the conflict groups G021 to G025 (G022 and G024 settled, the rest open), the 243rd Division flags and the parent of the 353rd Division."""
+    s = 'scenario 13, clean-up of open items (28 October 2026)'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    status = lambda ids: [claims[i]['claim_status'] for i in ids]
+    expect(s + ': G021 (Army Group B, Kluge): C0714 preferred, C0767 alternate (open, new Lexikon evidence in the notes)', status(['C0714', 'C0767']), ['preferred', 'alternate'])
+    expect(s + ': G022 (Panzer Lehr): C0792 (dated list of 15 July) preferred, the June and Feldgrau month rows alternate', status(['C0792', 'C0790', 'C0791']), ['preferred', 'alternate', 'alternate'])
+    expect(s + ': G023 (12th SS Panzer Division): still no winner', status(['C0782', 'C0783']), ['disputed', 'disputed'])
+    expect(s + ': G024 (716th Division): C0815 (Lexikon text, southern France by 10 July) preferred, the Normandy table row alternate', status(['C0815', 'C0816']), ['preferred', 'alternate'])
+    expect(s + ': G025 (711th Division): still no winner', status(['C0817', 'C0818']), ['disputed', 'disputed'])
+    c = claims['C0197']
+    expect(s + ': 243rd Division, C0197 (29 June): elements surrendered at Cherbourg, the division is not flagged destroyed or disestablished', (c['event_type'], c['destroyed'], c['disestablished']), ('surrender', 'false', 'false'))
+    a = intervals('GER-INF-353D', '1944-09-20')
+    expect(s + ': 353rd Division, 20 Sep (CMH Siegfried Line ch. 4 p. 87, 92): the LXXIV Corps is the parent, not the LXXXIV Corps', sorted(a), [('GER-COR-074C', 'assigned')])
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28):
         before = len(FAILURES)
         try:
             fn()

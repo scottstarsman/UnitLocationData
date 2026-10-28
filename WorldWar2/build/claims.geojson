@@ -5056,7 +5056,7 @@
    "properties": {
     "claim_id": "C0790",
     "conflict_group_id": "G022",
-    "claim_status": "disputed",
+    "claim_status": "alternate",
     "unit_id": "GER-PZ-LEHRD",
     "unit_name": "Panzer Lehr Division",
     "nationality": "Germany",
@@ -8181,24 +8181,24 @@
     "branch": "Army",
     "date": "1944-06-29",
     "place_id": "PL0089",
-    "location_name": "Cherbourg",
-    "location_represents": "main_body",
+    "location_name": "Cherbourg (elements of the division only (the 922nd Grenadier Regiment); not the main body)",
+    "location_represents": "sector_center",
     "precision_km": 5,
     "confidence": 0.3,
-    "event_type": "destruction",
-    "current_activity": "surrendering in the Cherbourg fortress; destroyed",
+    "event_type": "surrender",
+    "current_activity": "elements of the division surrendering in the Cherbourg fortress",
     "operation_id": "OP-CHERBOURG",
     "operation": "Battle of Cherbourg",
     "operation_type": "battle",
     "campaign": "Normandy",
     "operation_name": "Overlord",
     "sub_operation_name": "Cherbourg",
-    "strength_status": "destroyed",
+    "strength_status": "unknown",
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R043;R446;R001",
-    "source_locator": null
+    "reference_ids": "R043;R446;R196;R001",
+    "source_locator": "R196: Einsatz und Unterstellung (text on July to September 1944)"
    }
   },
   {
@@ -9976,7 +9976,7 @@
    "properties": {
     "claim_id": "C0815",
     "conflict_group_id": "G024",
-    "claim_status": "disputed",
+    "claim_status": "preferred",
     "unit_id": "GER-INF-716D",
     "unit_name": "716th Static Infantry Division",
     "nationality": "Germany",
@@ -10001,8 +10001,8 @@
     "location_date": null,
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": null,
-    "reference_ids": "R231;R001",
-    "source_locator": "R231: Einsatz und Unterstellung (to 10 July 1944)"
+    "reference_ids": "R231;R667;R088;R001",
+    "source_locator": "R231: Einsatz und Unterstellung (to 10 July 1944); R667: p. 66; R088: divisional history"
    }
   },
   {
@@ -10985,8 +10985,8 @@
     "location_date": null,
     "location_basis": "representative_point",
     "location_temporal_offset_days": null,
-    "reference_ids": "R278;R001",
-    "source_locator": "R278: table of 1944 (July row)"
+    "reference_ids": "R278;R252;R001",
+    "source_locator": "R278: table of 1944 (July row); R252: text on 18 July"
    }
   },
   {
@@ -11001,7 +11001,7 @@
    "properties": {
     "claim_id": "C0791",
     "conflict_group_id": "G022",
-    "claim_status": "disputed",
+    "claim_status": "alternate",
     "unit_id": "GER-PZ-LEHRD",
     "unit_name": "Panzer Lehr Division",
     "nationality": "Germany",
@@ -11042,7 +11042,7 @@
    "properties": {
     "claim_id": "C0792",
     "conflict_group_id": "G022",
-    "claim_status": "disputed",
+    "claim_status": "preferred",
     "unit_id": "GER-PZ-LEHRD",
     "unit_name": "Panzer Lehr Division",
     "nationality": "Germany",
@@ -11067,8 +11067,8 @@
     "location_date": null,
     "location_basis": "representative_point",
     "location_temporal_offset_days": null,
-    "reference_ids": "R248;R001",
-    "source_locator": "R248: dated list \"15. Juli 1944\""
+    "reference_ids": "R248;R591;R001",
+    "source_locator": "R248: dated list \"15. Juli 1944\"; R591: p. 128"
    }
   },
   {
@@ -11206,7 +11206,7 @@
    "properties": {
     "claim_id": "C0816",
     "conflict_group_id": "G024",
-    "claim_status": "disputed",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-716D",
     "unit_name": "716th Static Infantry Division",
     "nationality": "Germany",
@@ -11272,8 +11272,8 @@
     "location_date": null,
     "location_basis": "representative_point",
     "location_temporal_offset_days": null,
-    "reference_ids": "R229;R001",
-    "source_locator": "R229: table of 1944 (July rows)"
+    "reference_ids": "R229;R247;R252;R001",
+    "source_locator": "R229: table of 1944 (July rows); R247: dated list \"15. Juni 1944\"; R252: dated list \"21. Juni 1944\""
    }
   },
   {
@@ -11313,8 +11313,8 @@
     "location_date": null,
     "location_basis": "representative_point",
     "location_temporal_offset_days": null,
-    "reference_ids": "R594;R001",
-    "source_locator": "R594: German list, LXXXVI Corps"
+    "reference_ids": "R594;R087;R001",
+    "source_locator": "R594: German list, LXXXVI Corps; R087: Goodwood"
    }
   },
   {
@@ -11600,8 +11600,8 @@
     "location_date": "1944-06-29",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -18,
-    "reference_ids": "R588;R107;R001",
-    "source_locator": "R588: p. 169"
+    "reference_ids": "R588;R107;R185;R001",
+    "source_locator": "R588: p. 169; R185: list of commanders"
    }
   },
   {
@@ -12051,8 +12051,8 @@
     "location_date": "1944-07-17",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -2,
-    "reference_ids": "R593;R001",
-    "source_locator": "R593: p. 458, 325-326"
+    "reference_ids": "R593;R185;R001",
+    "source_locator": "R593: p. 458, 325-326; R185: list of commanders"
    }
   },
   {

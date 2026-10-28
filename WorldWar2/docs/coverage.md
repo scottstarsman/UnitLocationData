@@ -49,9 +49,9 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | umbrella | 1 | 0 | 0 |
 | campaign | 9 | 8 | 629 |
 | operation | 19 | 19 | 227 |
-| battle | 18 | 18 | 189 |
+| battle | 20 | 18 | 189 |
 | phase | 2 | 2 | 30 |
-| **All** | **49** | **47** | **1075** |
+| **All** | **51** | **47** | **1075** |
 
 ## Places
 

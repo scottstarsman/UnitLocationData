@@ -30,15 +30,15 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Poland | brigade | 1 | 0 | 0 | 1 | 1 | 0 |
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 6 |
 | UK | army | 0 | 0 | 1 | 1 | 0 | 5 |
-| UK | corps | 0 | 0 | 5 | 5 | 1 | 34 |
-| UK | division | 0 | 0 | 15 | 15 | 7 | 78 |
+| UK | corps | 0 | 0 | 5 | 5 | 1 | 36 |
+| UK | division | 0 | 0 | 15 | 15 | 7 | 86 |
 | UK | brigade | 6 | 0 | 3 | 9 | 6 | 3 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 7 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 43 |
 | US | corps | 2 | 0 | 15 | 17 | 7 | 117 |
 | US | division | 0 | 0 | 60 | 60 | 24 | 403 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **103** | **0** | **264** | **367** | **241** | **1472** |
+| **All** | | **103** | **0** | **264** | **367** | **241** | **1482** |
 
 ## Operations
 
@@ -47,28 +47,28 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 8 | 811 |
-| operation | 33 | 31 | 315 |
-| battle | 20 | 20 | 292 |
+| campaign | 9 | 8 | 812 |
+| operation | 33 | 32 | 320 |
+| battle | 20 | 20 | 296 |
 | phase | 4 | 4 | 54 |
-| **All** | **67** | **63** | **1472** |
+| **All** | **67** | **64** | **1482** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 742 places and 99 alias names for 1472 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 749 places and 99 alias names for 1482 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 638 | 1287 |
+| point | 645 | 1297 |
 | area | 86 | 165 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
 | France (FR) | 453 | 834 |
-| Germany (DE) | 170 | 380 |
-| Netherlands (NL) | 51 | 126 |
-| Belgium (BE) | 46 | 89 |
+| Germany (DE) | 172 | 383 |
+| Netherlands (NL) | 54 | 129 |
+| Belgium (BE) | 48 | 93 |
 | Luxembourg (LU) | 7 | 24 |
 | Austria (AT) | 7 | 8 |
 | United Kingdom (GB) | 5 | 8 |

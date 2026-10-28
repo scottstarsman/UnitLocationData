@@ -4118,7 +4118,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -11018,7 +11018,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -14839,6 +14839,146 @@
     "country": "NL",
     "region": "Noord-Brabant",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2585,
+     50.0802
+    ]
+   },
+   "properties": {
+    "place_id": "PL0750",
+    "name": "Bure, Tellin, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5759,
+     50.1816
+    ]
+   },
+   "properties": {
+    "place_id": "PL0751",
+    "name": "La Roche-en-Ardenne, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8667,
+     50.9974
+    ]
+   },
+   "properties": {
+    "place_id": "PL0752",
+    "name": "Sittard, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8519,
+     51.0654
+    ]
+   },
+   "properties": {
+    "place_id": "PL0753",
+    "name": "Susteren, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9356,
+     51.0258
+    ]
+   },
+   "properties": {
+    "place_id": "PL0754",
+    "name": "Hongen, Selfkant, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9888,
+     51.0667
+    ]
+   },
+   "properties": {
+    "place_id": "PL0755",
+    "name": "Waldfeucht, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7135,
+     51.9284
+    ]
+   },
+   "properties": {
+    "place_id": "PL0756",
+    "name": "Zetten, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
    }
   }
  ]

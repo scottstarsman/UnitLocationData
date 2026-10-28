@@ -43835,6 +43835,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3333,
+     50.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C1473",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-03",
+    "place_id": "PL0210",
+    "location_name": "Marche-en-Famenne, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Ardennes: attacks south-east from the Marche sector, which it relieved from the US VII Corps; two divisions",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R001",
+    "source_locator": "R671: pp. 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3333,
+     50.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C1474",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-03",
+    "place_id": "PL0210",
+    "location_name": "Marche-en-Famenne, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Ardennes: with the 33rd Armoured Brigade clears the area south-east of Marche and takes Grimbiemont; relieved on the 8th",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R001",
+    "source_locator": "R671: pp. 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2585,
+     50.0802
+    ]
+   },
+   "properties": {
+    "claim_id": "C1475",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-01-03",
+    "place_id": "PL0750",
+    "location_name": "Bure, Tellin, Luxembourg (BE)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Ardennes: with the 29th Armoured and 34th Tank Brigades attacks east from east of Givet; hard fight for Bure",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5842,
      49.9622
     ]
@@ -44778,6 +44901,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5759,
+     50.1816
+    ]
+   },
+   "properties": {
+    "claim_id": "C1476",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-11",
+    "place_id": "PL0751",
+    "location_name": "La Roche-en-Ardenne, Luxembourg (BE)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Ardennes: relieves the 53rd Division at Grimbiemont on the 8th; secures Laroche on the 11th",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-11",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.1767,
      48.9751
     ]
@@ -45393,6 +45557,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8667,
+     50.9974
+    ]
+   },
+   "properties": {
+    "claim_id": "C1477",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-16",
+    "place_id": "PL0752",
+    "location_name": "Sittard, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Blackcock: attacks from the Wurm to the Juliana Canal; 7th Armoured Division leads on the left at 07:30",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 242, 243"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8642,
      50.4925
     ]
@@ -45516,6 +45721,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8519,
+     51.0654
+    ]
+   },
+   "properties": {
+    "claim_id": "C1478",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-17",
+    "place_id": "PL0753",
+    "location_name": "Susteren, Limburg (NL)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Blackcock: reaches Susteren on the 17th and has cleared the town by evening after a counter-attack",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 243"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1567,
      49.8681
     ]
@@ -45632,6 +45878,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R001",
     "source_locator": "R668: pp. 456, 458, 459"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9356,
+     51.0258
+    ]
+   },
+   "properties": {
+    "claim_id": "C1479",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-052D",
+    "unit_name": "52nd (Lowland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-18",
+    "place_id": "PL0754",
+    "location_name": "Hongen, Selfkant, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Blackcock: attacks along the Sittard-Heinsberg axis at dawn; a three-mile bridgehead and Hongen by dark",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 244"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7135,
+     51.9284
+    ]
+   },
+   "properties": {
+    "claim_id": "C1482",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-18",
+    "place_id": "PL0756",
+    "location_name": "Zetten, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "Nijmegen bridgehead: German 6th Parachute Division attacks near Zetten; positions regained by the evening of the 21st",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 240, 241"
    }
   },
   {
@@ -46213,6 +46541,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9888,
+     51.0667
+    ]
+   },
+   "properties": {
+    "claim_id": "C1480",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-052D",
+    "unit_name": "52nd (Lowland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-21",
+    "place_id": "PL0755",
+    "location_name": "Waldfeucht, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Blackcock: 155th Brigade enters Waldfeucht early; after fierce fighting the town is cleared by midnight",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-21",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 244, 245"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1259,
      50.2804
     ]
@@ -46534,6 +46903,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R212;R001",
     "source_locator": "R212: table of 1945, 24 January row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C1481",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-24",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Blackcock: comes into action on the 52nd Division right; drives up to the Wurm and meets the US XIII Corps",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 245, 246, 247, 248"
    }
   },
   {

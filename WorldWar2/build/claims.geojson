@@ -53511,6 +53511,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.548,
+     51.6913
+    ]
+   },
+   "properties": {
+    "claim_id": "C1546",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-018C",
+    "unit_name": "XVIII Airborne Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Airborne",
+    "date": "1945-03-24",
+    "place_id": "PL0437",
+    "location_name": "Diersfordt, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Varsity: commands the 6th British and 17th US Airborne Divisions in the drop on the Diersfordter Forst",
+    "operation_id": "OP-VARSITY",
+    "operation": "Operation Varsity",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Varsity",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R543;R002",
+    "source_locator": "R671: p. 285; R543: pp. 298, 299, 300, 310"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]

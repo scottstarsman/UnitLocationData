@@ -48,20 +48,20 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R449 | general | Cross-Channel Attack ch. 9 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-9.html |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 
-### S03. C0197: 243rd Static Infantry Division, 1944-06-29
+### S03. C0199: 709th Static Infantry Division, 1944-06-29
 
-- **Unit:** 243rd Static Infantry Division (`GER-INF-243D`), Germany, division; parent in the claim: `GER-COR-084C`; commander field: Generalmajor Bernhard Klosterkemper
-- **Claim:** `destruction` / `OP-CHERBOURG`; status preferred; confidence 0.3
-- **Activity:** surrendering in the Cherbourg fortress; destroyed
+- **Unit:** 709th Static Infantry Division (`GER-INF-709D`), Germany, division; parent in the claim: `GER-COR-084C`; commander field: Generalleutnant Karl-Wilhelm von Schlieben
+- **Claim:** `destruction` / `OP-CHERBOURG`; status preferred; confidence 0.7
+- **Activity:** destroyed with the fall of Cherbourg
 - **Place:** Cherbourg (`PL0089`, Lower Normandy, FR); point 49.63, -1.62; precision 5 km; point represents: main_body; qualifier: -; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned GER-COR-084C
 - **Engaged with:** US-COR-007C
-- **Notes:** Wikipedia lists the unit as destroyed (commander Klosterkemper, infobox active July 1943 - June 1944); surviving elements surrendered in the Cherbourg fortress 26-29 June. Exact destruction date approximate. [Review (V-001): confidence 0.7 -> 0.3. The notes already say the destruction date is approximate and neither cited source dates the end of the 243rd Infantry Division on 29 June (R446 p. 435 dates the surrender of the last harbour forts, not the division); the confidence rubric gives 0.3 when the date itself is approximate. Nothing else changed.]
+- **Notes:** Division destroyed with the fall of Cherbourg (harbour/arsenal forts surrendered 29 June; some holdouts to 1 July); Wikipedia infobox: active May 1941 - June 1944. Flags reflect that infobox; no formal disbandment order verified.
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
-  | R043 | general | Wikipedia: 243rd Static Infantry Division | encyclopedia | https://en.wikipedia.org/wiki/243rd_Static_Infantry_Division |  |
+  | R085 | general | Wikipedia: 709th Infantry Division | encyclopedia | https://en.wikipedia.org/wiki/709th_Infantry_Division |  |
   | R446 | general | Cross-Channel Attack ch. 10 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-10.html |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 

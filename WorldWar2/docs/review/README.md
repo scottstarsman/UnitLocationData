@@ -84,7 +84,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 1945 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 24 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 11 |
-| references (`data/references.csv`, generated) | 661, of which 477 cited by at least one claim (the others are cited by units or operations) |
+| references (`data/references.csv`, generated) | 661, of which 478 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 38 |
@@ -95,7 +95,7 @@ Claims by echelon: division 794, corps 272, army 138, army_group 41, other 14, r
 
 Claims by branch: Army 829, Armoured 260, Waffen-SS 95, Airborne 47, Luftwaffe 46.
 
-Claims by event type: attack 211, other 163, defense 159, hq_move 148, command_change 144, capture 63, hq_observation 59, arrival 57, landing 43, subordinate_assignment 43, relocation 40, regroup 39, counterattack 30, surrender 28, withdrawal 28, activation 9, redesignation 8, destruction 5.
+Claims by event type: attack 211, other 163, defense 159, hq_move 148, command_change 144, capture 63, hq_observation 59, arrival 57, landing 43, subordinate_assignment 43, relocation 40, regroup 39, counterattack 30, surrender 29, withdrawal 28, activation 9, redesignation 8, destruction 4.
 
 Claims by status: preferred 1242, alternate 19, disputed 16. Claims by confidence: 0.3 273, 0.5 681, 0.7 308, 0.9 15.
 

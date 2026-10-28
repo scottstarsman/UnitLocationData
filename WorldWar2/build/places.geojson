@@ -10098,7 +10098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -13258,7 +13258,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Upper Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -13358,7 +13358,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -13579,6 +13579,146 @@
     "country": "NL",
     "region": "Gelderland",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2971,
+     49.1217
+    ]
+   },
+   "properties": {
+    "place_id": "PL0687",
+    "name": "Bourguébus, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2916,
+     49.0549
+    ]
+   },
+   "properties": {
+    "place_id": "PL0688",
+    "name": "Cintheaux, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1722,
+     48.9689
+    ]
+   },
+   "properties": {
+    "place_id": "PL0689",
+    "name": "Olendon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1142,
+     48.9152
+    ]
+   },
+   "properties": {
+    "place_id": "PL0690",
+    "name": "Damblainville, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4698,
+     51.4679
+    ]
+   },
+   "properties": {
+    "place_id": "PL0691",
+    "name": "Essen (Esschen), Antwerp province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3093,
+     51.6033
+    ]
+   },
+   "properties": {
+    "place_id": "PL0692",
+    "name": "Steenbergen, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3158,
+     51.5891
+    ]
+   },
+   "properties": {
+    "place_id": "PL0693",
+    "name": "Boxtel, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
    }
   }
  ]

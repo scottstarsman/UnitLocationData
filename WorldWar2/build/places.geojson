@@ -8098,7 +8098,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Grevenmacher",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -11318,7 +11318,7 @@
     "precision_km": 25,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -11658,6 +11658,266 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.96,
+     50.9384
+    ]
+   },
+   "properties": {
+    "place_id": "PL0591",
+    "name": "Cologne (Köln), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4038,
+     50.4561
+    ]
+   },
+   "properties": {
+    "place_id": "PL0592",
+    "name": "Hollerath, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1326,
+     50.0483
+    ]
+   },
+   "properties": {
+    "place_id": "PL0593",
+    "name": "Dasburg, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "place_id": "PL0594",
+    "name": "Monschau, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3427,
+     50.3802
+    ]
+   },
+   "properties": {
+    "place_id": "PL0595",
+    "name": "Losheimergraben, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4347,
+     50.2916
+    ]
+   },
+   "properties": {
+    "place_id": "PL0596",
+    "name": "Schnee Eifel (Schneifel) ridge, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1338,
+     50.1388
+    ]
+   },
+   "properties": {
+    "place_id": "PL0597",
+    "name": "Ouren, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1996,
+     49.9389
+    ]
+   },
+   "properties": {
+    "place_id": "PL0598",
+    "name": "Vianden, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Vianden",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3782,
+     50.3325
+    ]
+   },
+   "properties": {
+    "place_id": "PL0599",
+    "name": "Krewinkel, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3005,
+     50.6072
+    ]
+   },
+   "properties": {
+    "place_id": "PL0600",
+    "name": "Simmerath, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.334,
+     50.3573
+    ]
+   },
+   "properties": {
+    "place_id": "PL0601",
+    "name": "Lanzerath, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2134,
+     50.2131
+    ]
+   },
+   "properties": {
+    "place_id": "PL0602",
+    "name": "Winterspelt, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1863,
+     50.147
+    ]
+   },
+   "properties": {
+    "place_id": "PL0603",
+    "name": "Lützkampen, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
     "claims_count": 1
    }
   }

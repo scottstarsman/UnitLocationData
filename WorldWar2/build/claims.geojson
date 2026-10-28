@@ -31207,6 +31207,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.96,
+     50.9384
+    ]
+   },
+   "properties": {
+    "claim_id": "C0973",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-006A",
+    "unit_name": "Sixth Panzer Army (Sixth SS Panzer Army)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-11-07",
+    "place_id": "PL0591",
+    "location_name": "Cologne (Köln), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "The Sixth Panzer Army is ordered to mass near Cologne and is to move into the OB West theater on 7 November",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R434;R175;R002",
+    "source_locator": "R434: p. 394; R175: table of 1944, 10 November row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1846,
      48.6936
     ]
@@ -32840,6 +32881,1031 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R640;R634;R002",
     "source_locator": "R640: p. 213, 228-229; R634: Seventh Army troops, 276th Volks Grenadier Division (in route)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4038,
+     50.4561
+    ]
+   },
+   "properties": {
+    "claim_id": "C0974",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-006A",
+    "unit_name": "Sixth Panzer Army (Sixth SS Panzer Army)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0592",
+    "location_name": "Hollerath, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The Sixth Panzer Army opens the main effort of Wacht am Rhein on the front from Monschau to Krewinkel",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R643;R175;R002",
+    "source_locator": "R644: p. 76-77; R643: listing under the 6th Panzer Army heading; R175: table of 1944, December row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1326,
+     50.0483
+    ]
+   },
+   "properties": {
+    "claim_id": "C0975",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0593",
+    "location_name": "Dasburg, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The Fifth Panzer Army attacks across the Our with the LVIII and XLVII Panzer Corps",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R002",
+    "source_locator": "R393: p. 174; R643: listing under the 5th Panzer Army heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4217,
+     49.8117
+    ]
+   },
+   "properties": {
+    "claim_id": "C0976",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0411",
+    "location_name": "Echternach, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The Seventh Army attacks across the Our and Sauer with the LXXXV and LXXX Corps",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R640;R643;R001",
+    "source_locator": "R640: p. 213; R643: listing under the 7th Army heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C0977",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "LXVII Corps (Corps Monschau) attacks north and south of Monschau with two divisions",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R643;R243;R002",
+    "source_locator": "R644: p. 76, 86; R643: listing under the 6th Panzer Army heading; R243: table of 1944, 15 December row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3427,
+     50.3802
+    ]
+   },
+   "properties": {
+    "claim_id": "C0978",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-12-16",
+    "place_id": "PL0595",
+    "location_name": "Losheimergraben, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "I SS Panzer Corps attacks on the south flank of the Sixth Panzer Army toward Losheimergraben and Büllingen",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R643;R002",
+    "source_locator": "R644: p. 76, 81; R643: listing under the 6th Panzer Army heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4347,
+     50.2916
+    ]
+   },
+   "properties": {
+    "claim_id": "C0979",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-066C",
+    "unit_name": "LXVI Corps (LXVI Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0596",
+    "location_name": "Schnee Eifel (Schneifel) ridge, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "LXVI Corps attacks the US 106th Infantry Division north and south of the Schnee Eifel",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R392;R643;R002",
+    "source_locator": "R392: p. 142; R643: listing under the 5th Panzer Army heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1338,
+     50.1388
+    ]
+   },
+   "properties": {
+    "claim_id": "C0980",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0597",
+    "location_name": "Ouren, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "LVIII Panzer Corps attacks across the Our on both sides of Ouren with the 116th Panzer and 560th VG Divisions",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R259;R002",
+    "source_locator": "R393: p. 174, 195; R643: listing under the 5th Panzer Army heading; R259: table of 1944, 10 December row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1326,
+     50.0483
+    ]
+   },
+   "properties": {
+    "claim_id": "C0981",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0593",
+    "location_name": "Dasburg, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "XLVII Panzer Corps attacks across the Our at Dasburg and Gemünd toward Bastogne",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R261;R002",
+    "source_locator": "R393: p. 174, 177-178; R643: listing under the 5th Panzer Army heading; R261: table of 1944, December row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1996,
+     49.9389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0982",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-085C",
+    "unit_name": "LXXXV Corps (Generalkommando Knieß until July 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0598",
+    "location_name": "Vianden, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "LXXXV Corps attacks across the Our north of the Sauer junction with the 5th Fallschirmjäger and 352nd VG Divisions",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R640;R643;R253;R002",
+    "source_locator": "R640: p. 213, 216; R643: listing under the 7th Army heading; R253: table of 1944, 15 November row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C0983",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-326D",
+    "unit_name": "326th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 326th Volksgrenadier Division, in the West Wall facing Monschau, attacks with all three regiments",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 87"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3782,
+     50.3325
+    ]
+   },
+   "properties": {
+    "claim_id": "C0984",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-16",
+    "place_id": "PL0599",
+    "location_name": "Krewinkel, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 3rd Fallschirmjäger Division strikes the 14th Cavalry Group at Krewinkel and Berterath",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 81"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3427,
+     50.3802
+    ]
+   },
+   "properties": {
+    "claim_id": "C0985",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0595",
+    "location_name": "Losheimergraben, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 12th Volksgrenadier Division attacks toward Losheimergraben and the Büllingen road",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 81"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4038,
+     50.4561
+    ]
+   },
+   "properties": {
+    "claim_id": "C0986",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-277D",
+    "unit_name": "277th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0592",
+    "location_name": "Hollerath, North Rhine-Westphalia (West Wall sector opposite the 393rd Infantry; no town is named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 277th Volksgrenadier Division, opposite the US 393rd Infantry, is to turn its attack north of the armored axis",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 81-82"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3005,
+     50.6072
+    ]
+   },
+   "properties": {
+    "claim_id": "C0987",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-272D",
+    "unit_name": "272nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0600",
+    "location_name": "Simmerath, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The hard-pressed 272nd Volksgrenadier Division holds the Wahlerscheid-Simmerath sector",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 90, 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.334,
+     50.3573
+    ]
+   },
+   "properties": {
+    "claim_id": "C0988",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-16",
+    "place_id": "PL0601",
+    "location_name": "Lanzerath, Liège",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 1st SS Panzer Division stands ready to exploit the 3rd Fallschirmjäger opening by an advance via Lanzerath",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R643;R002",
+    "source_locator": "R644: p. 90; R643: listing under the I SS Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3427,
+     50.3802
+    ]
+   },
+   "properties": {
+    "claim_id": "C0989",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-16",
+    "place_id": "PL0595",
+    "location_name": "Losheimergraben, Liège (assembly area behind the infantry; no village is named)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "The 12th SS Panzer Division waits behind the infantry to open the road to the International Highway",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R643;R002",
+    "source_locator": "R644: p. 82, 90; R643: listing under the I SS Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4347,
+     50.2916
+    ]
+   },
+   "properties": {
+    "claim_id": "C0990",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-018D",
+    "unit_name": "18th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0596",
+    "location_name": "Schnee Eifel (Schneifel) ridge, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 18th Volksgrenadier Division, on the Schnee Eifel, attacks north and south of the ridge",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R392;R643;R002",
+    "source_locator": "R392: p. 142; R643: listing under the LXVI Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2134,
+     50.2131
+    ]
+   },
+   "properties": {
+    "claim_id": "C0991",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-062D",
+    "unit_name": "62nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0602",
+    "location_name": "Winterspelt, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 62nd Volksgrenadier Division moves into the line opposite the 424th Infantry toward Winterspelt",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R392;R643;R002",
+    "source_locator": "R392: p. 152-153; R643: listing under the LXVI Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1863,
+     50.147
+    ]
+   },
+   "properties": {
+    "claim_id": "C0992",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0603",
+    "location_name": "Lützkampen, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 116th Panzer Division attacks north of Lützkampen as the main effort of the LVIII Panzer Corps",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R002",
+    "source_locator": "R393: p. 195, 198; R643: listing under the LVIII Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1338,
+     50.1388
+    ]
+   },
+   "properties": {
+    "claim_id": "C0993",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-560D",
+    "unit_name": "560th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0597",
+    "location_name": "Ouren, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 560th Volksgrenadier Division attacks toward the Our bridges at Ouren",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R002",
+    "source_locator": "R393: p. 195; R643: listing under the LVIII Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1326,
+     50.0483
+    ]
+   },
+   "properties": {
+    "claim_id": "C0994",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0593",
+    "location_name": "Dasburg, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 2nd Panzer Division makes the initial penetration for the XLVII Panzer Corps by a bridge at Dasburg",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R002",
+    "source_locator": "R393: p. 177-178; R643: listing under the XLVII Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1326,
+     50.0483
+    ]
+   },
+   "properties": {
+    "claim_id": "C0995",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0593",
+    "location_name": "Dasburg, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 26th Volksgrenadier Division, in the West Wall at the Our, is to bridge the river at Gemünd",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R002",
+    "source_locator": "R393: p. 177, 180; R643: listing under the XLVII Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.87,
+     50.39
+    ]
+   },
+   "properties": {
+    "claim_id": "C0996",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0573",
+    "location_name": "Eifel region, Rheinland-Pfalz (the Eifel district; no town is named)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Panzer Lehr Division, refitting in the Eifel, is ready to follow the two forward divisions of the XLVII Panzer Corps",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R643;R001",
+    "source_locator": "R393: p. 178; R643: listing under the XLVII Panzer Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1996,
+     49.9389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0997",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-16",
+    "place_id": "PL0598",
+    "location_name": "Vianden, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 5th Fallschirmjäger Division crosses the Our at Roth and wipes out the outpost at Vianden",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R640;R643;R002",
+    "source_locator": "R640: p. 213, 215-216; R643: listing under the LXXXV Corps heading"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1996,
+     49.9389
+    ]
+   },
+   "properties": {
+    "claim_id": "C0998",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-352D",
+    "unit_name": "352nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0598",
+    "location_name": "Vianden, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 352nd Volksgrenadier Division crosses the Our on either side of Gentingen toward Ettelbruck",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R640;R643;R002",
+    "source_locator": "R640: p. 213, 216; R643: listing under the LXXXV Corps heading"
    }
   },
   {

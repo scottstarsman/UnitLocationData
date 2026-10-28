@@ -818,7 +818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -3798,7 +3798,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -7338,7 +7338,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14338,7 +14338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14418,7 +14418,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14458,7 +14458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14518,6 +14518,226 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4511,
+     49.0441
+    ]
+   },
+   "properties": {
+    "place_id": "PL0734",
+    "name": "Grimbosq, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.0831,
+     48.8391
+    ]
+   },
+   "properties": {
+    "place_id": "PL0735",
+    "name": "Brieux, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Orne",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5652,
+     48.849
+    ]
+   },
+   "properties": {
+    "place_id": "PL0736",
+    "name": "Condé-sur-Noireau, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2115,
+     49.0294
+    ]
+   },
+   "properties": {
+    "place_id": "PL0737",
+    "name": "Soignolles, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.5153,
+     49.3562
+    ]
+   },
+   "properties": {
+    "place_id": "PL0738",
+    "name": "Pont-Audemer, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.2955,
+     48.7944
+    ]
+   },
+   "properties": {
+    "place_id": "PL0739",
+    "name": "Gacé, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Orne",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1646,
+     49.2157
+    ]
+   },
+   "properties": {
+    "place_id": "PL0740",
+    "name": "Louviers, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4857,
+     49.0932
+    ]
+   },
+   "properties": {
+    "place_id": "PL0741",
+    "name": "Vernon, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.2212,
+     49.2331
+    ]
+   },
+   "properties": {
+    "place_id": "PL0742",
+    "name": "Saint-Pierre-du-Vauvray, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "place_id": "PL0743",
+    "name": "Amiens, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Somme",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1418,
+     49.9443
+    ]
+   },
+   "properties": {
+    "place_id": "PL0744",
+    "name": "Picquigny, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Somme",
     "claims_count": 1
    }
   }

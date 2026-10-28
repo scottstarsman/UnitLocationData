@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -11418,7 +11418,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 11
+    "claims_count": 14
    }
   },
   {
@@ -13778,7 +13778,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -13818,7 +13818,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 7
    }
   },
   {
@@ -13958,7 +13958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -14979,6 +14979,166 @@
     "country": "NL",
     "region": "Gelderland",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0898,
+     51.8023
+    ]
+   },
+   "properties": {
+    "place_id": "PL0757",
+    "name": "Kranenburg, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "place_id": "PL0758",
+    "name": "Goch, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0142,
+     51.6346
+    ]
+   },
+   "properties": {
+    "place_id": "PL0759",
+    "name": "Afferden, Bergen, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2778,
+     51.6329
+    ]
+   },
+   "properties": {
+    "place_id": "PL0760",
+    "name": "Kervenheim, Kevelaer, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2456,
+     51.5803
+    ]
+   },
+   "properties": {
+    "place_id": "PL0761",
+    "name": "Kevelaer, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2012,
+     51.6267
+    ]
+   },
+   "properties": {
+    "place_id": "PL0762",
+    "name": "Weeze, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4789,
+     51.5728
+    ]
+   },
+   "properties": {
+    "place_id": "PL0763",
+    "name": "Bönninghardt, Alpen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5448,
+     51.5797
+    ]
+   },
+   "properties": {
+    "place_id": "PL0764",
+    "name": "Alpen, Rheinberg, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
    }
   }
  ]

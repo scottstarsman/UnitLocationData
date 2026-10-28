@@ -958,7 +958,7 @@ def check_command_relation_tables(units, vocabs, claims):
                 err(where, 'valid_from_basis claim_date but valid_from %s is not the date of the first linked claim %s' % (r['valid_from'], first))
             if r['valid_from_basis'] != 'claim_date' and not any(l['stated_effective_from'] for l in links):
                 err(where, 'valid_from_basis %s but no linked claim states effective_from' % r['valid_from_basis'])
-            if r['valid_to_basis'] == 'inferred_from_next_claim' and r['valid_to_earliest'] not in {c['date'] for c in (lc or lh)}:
+            if r['valid_to_basis'] == 'inferred_from_next_claim' and r['valid_to_earliest'] not in {c['date'] for c in lc_all}:
                 err(where, 'valid_to_earliest %s must be the date of a linked claim (the last one that lists the relation before the inferred end)' % r['valid_to_earliest'])
             if r['valid_to_basis'] not in crel.END_INFERRED and not any(l['stated_effective_to'] for l in links):
                 err(where, 'valid_to_basis %s but no linked claim states effective_to' % r['valid_to_basis'])

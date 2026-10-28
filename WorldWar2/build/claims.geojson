@@ -46090,6 +46090,334 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.3472,
+     51.6747
+    ]
+   },
+   "properties": {
+    "claim_id": "C1195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AA-LUETTW",
+    "unit_name": "Armee-Abteilung von Lüttwitz",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0639",
+    "location_name": "Lippstadt, North Rhine-Westphalia (northeastern corner of the pocket; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Gruppe von Lüttwitz, two corps under one headquarters, holds the north face of the Ruhr pocket near Lippstadt",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R169;R002",
+    "source_locator": "R566: p. 358, 359; R169: text and table of 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the Ruhr pocket; the headquarters place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Army Group B is encircled in the Ruhr pocket when the First and Ninth Army columns meet at Lippstadt on 1 April",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 359, 368"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0256,
+     50.8751
+    ]
+   },
+   "properties": {
+    "claim_id": "C1214",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0651",
+    "location_name": "Siegen, North Rhine-Westphalia (southern end of the army front; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Fifteenth Army (Zangen) holds the east and southeast face of the Ruhr pocket, Möhne Reservoir to Siegen",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 359"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5334,
+     51.1933
+    ]
+   },
+   "properties": {
+    "claim_id": "C1225",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-053C",
+    "unit_name": "LIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0655",
+    "location_name": "Winterberg, North Rhine-Westphalia (attack base at Winterberg; corps headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "LIII Corps (Bayerlein) renews its attack from Winterberg toward the Eder reservoir on 1 April",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 360"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5334,
+     51.1933
+    ]
+   },
+   "properties": {
+    "claim_id": "C1242",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0655",
+    "location_name": "Winterberg, North Rhine-Westphalia (arrival area at Winterberg; headquarters not placed)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Part of the 176th Division reaches Winterberg later on 1 April and joins the thrust toward the Eder reservoir",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 360"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5334,
+     51.1933
+    ]
+   },
+   "properties": {
+    "claim_id": "C1256",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-01",
+    "place_id": "PL0655",
+    "location_name": "Winterberg, North Rhine-Westphalia (attack area around Winterberg; headquarters not placed)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "3d Panzergrenadier Division sends a column toward Medebach and Hallenberg from the Winterberg area on 1 April",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 360"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6201,
+     51.1096
+    ]
+   },
+   "properties": {
+    "claim_id": "C1265",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-01",
+    "place_id": "PL0661",
+    "location_name": "Hallenberg, North Rhine-Westphalia (attack point at Hallenberg; division headquarters not placed)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Panzer Lehr, down to a Kampfgruppe, attacks toward Hallenberg on 1 April but is stopped by the US 9th Division",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 360, 361"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1267",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1945-04-01",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point; the army front is a perimeter, not one place)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Fifth Panzer Army (Harpe) holds the south and west faces of the Ruhr pocket along the Sieg and the Rhine",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 359"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.0403,
      51.755
     ]
@@ -46165,6 +46493,211 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R568;R002",
     "source_locator": "R568: p. 414-415"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4589,
+     51.2094
+    ]
+   },
+   "properties": {
+    "claim_id": "C1207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-011A",
+    "unit_name": "Eleventh Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL0647",
+    "location_name": "Mühlhausen, Thüringen (area of the early April fighting; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Hitzfeld takes over the new Eleventh Army on 2 April; it fights around Mühlhausen in Thuringia in early April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R662;R002",
+    "source_locator": "R567: p. 381; R662: text and table of 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9435,
+     49.778
+    ]
+   },
+   "properties": {
+    "claim_id": "C1270",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-013C",
+    "unit_name": "XIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-02",
+    "place_id": "PL0644",
+    "location_name": "Würzburg, Bayern (corps sector from Königshofen to the Main at Würzburg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "XIII SS Corps (Simon) tries to hold a line from Königshofen to the Main at Würzburg against the US XXI Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 413, 418, 420"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0635,
+     50.388
+    ]
+   },
+   "properties": {
+    "claim_id": "C1274",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSGEB-006D",
+    "unit_name": "6th SS Mountain Division Nord",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-04-02",
+    "place_id": "PL0663",
+    "location_name": "Limburg an der Lahn, Hessen (representative point for the start of the escape; the end place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "The remnants of the 6th SS Mountain Division, with Brenner, are rounded up on 2 April after three days east of Limburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R567;R002",
+    "source_locator": "R566: p. 349, 350; R567: p. 378"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.146,
+     49.3521
+    ]
+   },
+   "properties": {
+    "claim_id": "C1275",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-04-02",
+    "place_id": "PL0664",
+    "location_name": "Odenwald (representative point at Mosbach) (southern fringe of the Odenwald)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "17th SS Panzergrenadier Division stays in the southern Odenwald after failing to stop the US XXI Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 412, 414"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9435,
+     49.778
+    ]
+   },
+   "properties": {
+    "claim_id": "C1203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-001A",
+    "unit_name": "First Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-03",
+    "place_id": "PL0644",
+    "location_name": "Würzburg, Bayern (sector handed to the First Army; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "Army Group G hands the Würzburg area and the Main line south of it to the First Army on 3 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 414"
    }
   },
   {
@@ -46254,6 +46787,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "claim_id": "C1198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-05",
+    "place_id": "PL0641",
+    "location_name": "Bavaria (representative point at Munich) (representative point for a headquarters whose place is not given)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Schulz takes over Army Group G on 5 April after Hausser is relieved; Hitler gives him the plan in Berlin on 2 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R186;R002",
+    "source_locator": "R568: p. 411, 412; R186: commanders list"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8072,
+     53.0758
+    ]
+   },
+   "properties": {
+    "claim_id": "C1201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL0642",
+    "location_name": "Northwest Germany (representative point at Bremen) (representative point; the headquarters place is not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "OKW takes Army Group H from Kesselring on 6 April; it becomes OB Nordwest under Busch",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R187;R002",
+    "source_locator": "R567: p. 385; R187: text and commanders list"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8072,
+     53.0758
+    ]
+   },
+   "properties": {
+    "claim_id": "C1223",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL0642",
+    "location_name": "Northwest Germany (representative point at Bremen) (representative point; the headquarters place is not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Army Blumentritt is created under OB Nordwest to hold the Weser from Hameln to the coast",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R569;R002",
+    "source_locator": "R567: p. 385; R569: p. 460"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7708,
      50.81
     ]
@@ -46329,6 +46985,334 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R485;R567;R001",
     "source_locator": "R567: p. 376, 380"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C1221",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL0621",
+    "location_name": "Utrecht (representative point in the Netherlands; the headquarters place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Twenty-fifth Army is listed under OB Nordwest from 7 April; CMH has it under Blaskowitz as OB Netherlands",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R173;R002",
+    "source_locator": "R569: p. 460; R173: table of 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6095,
+     51.7266
+    ]
+   },
+   "properties": {
+    "claim_id": "C1208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-011A",
+    "unit_name": "Eleventh Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL0648",
+    "location_name": "Harz mountains (representative point at Braunlage) (destination area of the withdrawal; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "Lucht replaces Hitzfeld at the Eleventh Army on 8 April and is ordered to pull everything into the Harz",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R662;R002",
+    "source_locator": "R567: p. 389, 390; R662: commanders"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6664,
+     49.2178
+    ]
+   },
+   "properties": {
+    "claim_id": "C1231",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-082C",
+    "unit_name": "LXXXII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL0645",
+    "location_name": "Bavarian-Bohemian frontier (representative point at Cham) (representative point; the corps headquarters place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "OKW lets Army Group G put Hahm's LXXXII Corps under the First Army on or about 9 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 421"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2435,
+     51.8883
+    ]
+   },
+   "properties": {
+    "claim_id": "C1210",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-012A",
+    "unit_name": "Twelfth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL0650",
+    "location_name": "Roßlau, Dessau-Roßlau (staff area at Dessau-Roßlau; exact building not given)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Twelfth Army is re-formed on 10 April from the staff of Army Group North; its headquarters is at Dessau-Roßlau",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R663;R567;R002",
+    "source_locator": "R663: text and table of 1945; R567: p. 381, 396"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9697,
+     51.4828
+    ]
+   },
+   "properties": {
+    "claim_id": "C1228",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL0475",
+    "location_name": "Halle (Saale), Sachsen-Anhalt (eastern end of the assigned line)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Hitzfeld's LXVII Corps is told to build a line from the Harz east to Halle while the rest of the army enters the Harz",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R001",
+    "source_locator": "R567: p. 389, 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "claim_id": "C1236",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-10",
+    "place_id": "PL0657",
+    "location_name": "Oldenburg (Oldb), Niedersachsen (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "8th Fallschirmjäger Division is listed on 10 April 1945 under LXXXVI, 1. Fallschirm-Armee at Cloppenburg, Oldenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R656;R002",
+    "source_locator": "R656: table of 1945, 10 April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8072,
+     53.0758
+    ]
+   },
+   "properties": {
+    "claim_id": "C1237",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-04-10",
+    "place_id": "PL0642",
+    "location_name": "Northwest Germany (representative point at Bremen) (representative point; the headquarters place is not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Student takes over the First Parachute Army on 10 April from Blumentritt, who leads the new Army Blumentritt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R659;R002",
+    "source_locator": "R567: p. 385; R659: commanders list and table of 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "claim_id": "C1252",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL0641",
+    "location_name": "Bavaria (representative point at Munich) (representative point for the south; the headquarters town is not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Kesselring and OB West headquarters reach the south on 10 April and order Schulz to take the Seventh Army back",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 423"
    }
   },
   {
@@ -46664,6 +47648,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.2435,
+     51.8883
+    ]
+   },
+   "properties": {
+    "claim_id": "C1211",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-012A",
+    "unit_name": "Twelfth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL0650",
+    "location_name": "Roßlau, Dessau-Roßlau (panzer training school at Roßlau)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Wenck reaches the Twelfth Army command post in a panzer training school at Roßlau on 12 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R002",
+    "source_locator": "R567: p. 396"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8667,
      51.9667
     ]
@@ -46746,6 +47771,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1215",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "Fifteenth Army surrenders on 13 April: Zangen gives himself up to the US 7th Armored Division after losing control",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R664;R002",
+    "source_locator": "R566: p. 370; R664: text of the army page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1230",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "LXXXI Corps (Koechling) surrenders on 13 April, like the Fifteenth Army staff, to the US 7th Armored Division",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4333,
      52.0667
     ]
@@ -46821,6 +47928,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R566;R369;R001",
     "source_locator": "R566: p. 367"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.25,
+     51.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1212",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-012A",
+    "unit_name": "Twelfth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0463",
+    "location_name": "Dessau, Sachsen-Anhalt (bridgehead area at Dessau)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Twelfth Army holds an Elbe bridgehead at Dessau; the US 3d Armored Division meets it on 14 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R001",
+    "source_locator": "R567: p. 399, 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.18,
+     48.7775
+    ]
+   },
+   "properties": {
+    "claim_id": "C1249",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0487",
+    "location_name": "Stuttgart, Baden-Württemberg (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "716th Infantry Division is listed on 14 April 1945 under LXIV, 19. Armee at Schwaben",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R231;R001",
+    "source_locator": "R231: table of 1945, 14 April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.25,
+     51.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1250",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-HUTTN",
+    "unit_name": "Division Ulrich von Hutten",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0463",
+    "location_name": "Dessau, Sachsen-Anhalt (bridgehead area at Dessau)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Ulrich von Hutten defends the Elbe bridgehead around Dessau against the US 3d Armored Division on 14 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R001",
+    "source_locator": "R567: p. 396, 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.25,
+     51.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1251",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-SCHRN",
+    "unit_name": "Division Scharnhorst",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0463",
+    "location_name": "Dessau, Sachsen-Anhalt (bridgehead area at Dessau)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Scharnhorst defends the Elbe bridgehead around Dessau against the US 3d Armored Division on 14 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R001",
+    "source_locator": "R567: p. 396, 401"
    }
   },
   {
@@ -47074,6 +48345,662 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1229",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-074C",
+    "unit_name": "LXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "LXXIV Corps is listed in April 1945 under 15. Armee at Ruhrkessel",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R245;R002",
+    "source_locator": "R245: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1233",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "3rd Fallschirmjäger Division is listed in April 1945 under XII SS, 5. Armee at Remagen, Ruhr-Kessel",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R180;R002",
+    "source_locator": "R180: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1234",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "5th Fallschirmjäger Division is listed in April 1945 as last remnants in the Ruhrkessel",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R181;R002",
+    "source_locator": "R181: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "claim_id": "C1235",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-15",
+    "place_id": "PL0657",
+    "location_name": "Oldenburg (Oldb), Niedersachsen (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "7th Fallschirmjäger Division is listed in April 1945 under II. Fallschirmkorps, 1. Fallschirmarmee at Oldenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R183;R002",
+    "source_locator": "R183: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1241",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "59th Infantry Division is listed in April 1945 under XII SS, 15. Armee at Rhein",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R223;R002",
+    "source_locator": "R223: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1243",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "180th Infantry Division is listed in April 1945 under LIII, Armee-Abteilung Lüttwitz at Rurkessel",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R190;R002",
+    "source_locator": "R190: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2187,
+     49.1423
+    ]
+   },
+   "properties": {
+    "claim_id": "C1244",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0585",
+    "location_name": "Heilbronn, Baden-Württemberg (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "198th Infantry Division is listed in April 1945 under LXXX, 19. Armee at Pfalz, Neckar",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R193;R002",
+    "source_locator": "R193: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5514,
+     53.379
+    ]
+   },
+   "properties": {
+    "claim_id": "C1245",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0658",
+    "location_name": "Lauenburg/Elbe, Schleswig-Holstein (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "245th Infantry Division is listed in April 1945 under II. Fallschirm, 1. Fallschirm-Armee at Lauenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R198;R002",
+    "source_locator": "R198: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1246",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "338th Infantry Division is listed in April 1945 under LXXIV, 15. Armee at Rhein, Ruhr",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R208;R002",
+    "source_locator": "R208: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C1247",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0621",
+    "location_name": "Utrecht (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "346th Infantry Division is listed in April 1945 under LXXXVIII, 25. Armee at Niederlande",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R211;R002",
+    "source_locator": "R211: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1248",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "353rd Infantry Division is listed in April 1945 under LVIII, 5. Panzerarmee at Rhein, Ruhr",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R215;R002",
+    "source_locator": "R215: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1261",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "LVIII Panzer Corps is listed in April 1945 under 5. Panzerarmee at Ruhrkessel",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R259;R002",
+    "source_locator": "R259: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5386,
+     52.9841
+    ]
+   },
+   "properties": {
+    "claim_id": "C1263",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-CLAUS",
+    "unit_name": "Panzer Division von Clausewitz",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0660",
+    "location_name": "Uelzen, Niedersachsen (counterattack at Uelzen)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "Panzer Division von Clausewitz is first identified on 15 April in a counterattack at Uelzen against the British 8 Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R002",
+    "source_locator": "R567: p. 399, 400"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1266",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "The commander and the remnants of Panzer Lehr surrender on 15 April to the US 99th Division",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1269",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-15",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (table row; representative point of the listed area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "XII SS Corps is listed in April 1945 under 5. Panzerarmee at Rhein und Ruhr",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R611;R002",
+    "source_locator": "R611: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C1277",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-361D",
+    "unit_name": "361st Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0621",
+    "location_name": "Utrecht (table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "361st Volks Grenadier Division is listed in April 1945 under LXXXVIII, 25. Armee at Niederlande",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R216;R002",
+    "source_locator": "R216: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -47149,6 +49076,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R355;R568;R579;R001",
     "source_locator": "R568: p. 424"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0775,
+     49.4539
+    ]
+   },
+   "properties": {
+    "claim_id": "C1240",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-GEB-002D",
+    "unit_name": "2nd Mountain Division (2. Gebirgs-Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0476",
+    "location_name": "Nuremberg, Bayern (the approaches to Nuremberg facing the XXI Corps)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "2nd Mountain Division, brought from the Neckar, defends Nuremberg against the US XXI Corps on 16 April",
+    "operation_id": "OP-NUREMBERG",
+    "operation": "Battle of Nuremberg (1945)",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Nuremberg",
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R665;R001",
+    "source_locator": "R568: p. 423, 424; R665: table of 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0775,
+     49.4539
+    ]
+   },
+   "properties": {
+    "claim_id": "C1276",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-04-16",
+    "place_id": "PL0476",
+    "location_name": "Nuremberg, Bayern (east of Nuremberg and inside the city)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "17th SS Panzergrenadier Division, minus one regiment, shores up the faltering LXXXII Corps east of Nuremberg on 16 April",
+    "operation_id": "OP-NUREMBERG",
+    "operation": "Battle of Nuremberg (1945)",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Nuremberg",
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R001",
+    "source_locator": "R568: p. 423, 424"
    }
   },
   {
@@ -47320,6 +49329,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1268",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1945-04-17",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the capture was at a bridge over the Ruhr River)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "Fifth Panzer Army ends in the Ruhr pocket on 17 April; Harpe is taken at a Ruhr bridge by US paratroopers",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R658;R002",
+    "source_locator": "R566: p. 370; R658: text of the army page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.375,
      51.34
     ]
@@ -47354,6 +49404,252 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R526;R567;R001",
     "source_locator": "R567: p. 395"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AA-LUETTW",
+    "unit_name": "Armee-Abteilung von Lüttwitz",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "Gruppe von Lüttwitz ends in the Ruhr pocket by 18 April, when all resistance stopped; no single day is given",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370, 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1226",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-053C",
+    "unit_name": "LIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "LIII Corps ends in the Ruhr pocket by 18 April, when all resistance stopped; no single day is given",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370, 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1257",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-18",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "3d Panzergrenadier Division ends in the Ruhr pocket by 18 April, when all resistance stopped; no single day is given",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370, 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1258",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-18",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "9th Panzer Division ends in the Ruhr pocket by 18 April, when all resistance stopped; no single day is given",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370, 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1260",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-18",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "XLVII Panzer Corps ends in the Ruhr pocket by 18 April, when all resistance stopped; no single day is given",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370, 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1262",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-18",
+    "place_id": "PL0640",
+    "location_name": "Ruhr pocket (representative point at Essen) (representative point inside the pocket; the surrender place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "116th Panzer Division ends in the Ruhr pocket by 18 April, when all resistance stopped; no single day is given",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 370, 372"
    }
   },
   {
@@ -47484,6 +49780,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.0536,
+     48.5203
+    ]
+   },
+   "properties": {
+    "claim_id": "C1227",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-19",
+    "place_id": "PL0656",
+    "location_name": "Tübingen, Baden-Württemberg (area south of Stuttgart toward Tübingen)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "Remnants of two divisions of Grimmeiss's LXIV Corps try to counterattack south toward Tübingen on 19 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 428"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.0775,
      49.4539
     ]
@@ -47518,6 +49855,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R568;R579;R353;R001",
     "source_locator": "R568: p. 424-425"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1605,
+     47.7664
+    ]
+   },
+   "properties": {
+    "claim_id": "C1216",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0652",
+    "location_name": "Lake Constance, northwestern end (representative point at Überlingen) (northwestern end of Lake Constance; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "French forces reach Lake Constance on 21 April and seal off the XVIII SS Corps; Brandenberger and his staff escape",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R002",
+    "source_locator": "R568: p. 431, 433"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1605,
+     47.7664
+    ]
+   },
+   "properties": {
+    "claim_id": "C1219",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-024A",
+    "unit_name": "Twenty-fourth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0652",
+    "location_name": "Lake Constance, northwestern end (representative point at Überlingen) (lake crossing; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "The Twenty-fourth Army, a deception name for headquarters troops on the Swiss frontier, crosses Lake Constance by boat",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R569;R002",
+    "source_locator": "R568: p. 434; R569: p. 472"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.1616,
+     52.6263
+    ]
+   },
+   "properties": {
+    "claim_id": "C1264",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-CLAUS",
+    "unit_name": "Panzer Division von Clausewitz",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0470",
+    "location_name": "Klötze, Sachsen-Anhalt (rear area of the US XIII Corps around Klötze)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "destruction",
+    "current_activity": "US 5th Armored Division destroys the last of Panzer Division von Clausewitz on 21 April in the Klötze area",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "destroyed",
+    "location_date": "1945-04-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R001",
+    "source_locator": "R567: p. 400, 401"
    }
   },
   {
@@ -47600,6 +50060,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R481;R568;R001",
     "source_locator": "R568: p. 425"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "claim_id": "C1209",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-011A",
+    "unit_name": "Eleventh Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-23",
+    "place_id": "PL0649",
+    "location_name": "Blankenburg (Harz), Sachsen-Anhalt (command post near Blankenburg)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "US patrol captures the Eleventh Army staff and Lucht at the command post near Blankenburg on 23 April",
+    "operation_id": "OP-HARZ-POCKET",
+    "operation": "Harz pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Harz pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R662;R002",
+    "source_locator": "R567: p. 404, 405; R662: text of the army page"
    }
   },
   {
@@ -47730,6 +50231,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.6148,
+     47.9977
+    ]
+   },
+   "properties": {
+    "claim_id": "C1272",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-018C",
+    "unit_name": "XVIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-24",
+    "place_id": "PL0662",
+    "location_name": "Bad Dürrheim, Baden-Württemberg (breakout area at Bad Dürrheim)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "XVIII SS Corps breaks out east through Bad Dürrheim toward the Danube on 24 April after being cut off",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R265;R568;R002",
+    "source_locator": "R265: text of the corps page; R568: p. 431"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      13.2258,
      51.3525
     ]
@@ -47812,6 +50354,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "claim_id": "C1253",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-04-25",
+    "place_id": "PL0641",
+    "location_name": "Bavaria (representative point at Munich) (representative point; the headquarters town is not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Hitler's structure of 24-25 April puts Kesselring over Italy, Austria and the Balkans as well as Army Group G",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 445"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7167,
      49.4167
     ]
@@ -47846,6 +50429,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R487;R568;R001",
     "source_locator": "R568: p. 432, 437"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4959,
+     47.9534
+    ]
+   },
+   "properties": {
+    "claim_id": "C1217",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-26",
+    "place_id": "PL0653",
+    "location_name": "Black Forest, southern part (representative point at Donaueschingen) (table row; representative point of the listed area)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Nineteenth Army is listed on 26 April 1945 under Heeresgruppe G at Westen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R170;R002",
+    "source_locator": "R170: table of 1945, 26 April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8072,
+     53.0758
+    ]
+   },
+   "properties": {
+    "claim_id": "C1224",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-26",
+    "place_id": "PL0625",
+    "location_name": "Bremen (the area in front of Bremen)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Army Blumentritt makes a week-long stand in front of Bremen, with sailors as infantry; Bremen falls on 26 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 460"
    }
   },
   {
@@ -47976,6 +50641,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.4959,
+     47.9534
+    ]
+   },
+   "properties": {
+    "claim_id": "C1273",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-018C",
+    "unit_name": "XVIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-27",
+    "place_id": "PL0653",
+    "location_name": "Black Forest, southern part (representative point at Donaueschingen) (southern Black Forest and the breakout area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "destruction",
+    "current_activity": "The XVIII SS Corps ceases to exist on 27 April; its breakout fails and the Black Forest is quiet",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R265;R002",
+    "source_locator": "R568: p. 433; R265: text of the corps page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6664,
+     49.2178
+    ]
+   },
+   "properties": {
+    "claim_id": "C1205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL0645",
+    "location_name": "Bavarian-Bohemian frontier (representative point at Cham) (frontier area; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Kesselring puts the Seventh Army directly under his own command on 28 April, ending its link with Army Group G",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R569;R002",
+    "source_locator": "R568: p. 434; R569: p. 472"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8072,
+     53.0758
+    ]
+   },
+   "properties": {
+    "claim_id": "C1238",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-04-28",
+    "place_id": "PL0642",
+    "location_name": "Northwest Germany (representative point at Bremen) (representative point; the headquarters place is not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Straube takes over the First Parachute Army on 28 April; Student is ordered north of Berlin to lead an army group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R659;R002",
+    "source_locator": "R569: p. 459; R659: commanders list"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4708,
      48.4103
     ]
@@ -48092,6 +50880,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R568;R578;R522;R001",
     "source_locator": "R568: p. 436"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "claim_id": "C1199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-29",
+    "place_id": "PL0641",
+    "location_name": "Bavaria (representative point at Munich) (representative point; the headquarters place is not given)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Kesselring orders Army Group G dissolved on 29 April because it can no longer lead; it is re-formed on 3 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R186;R002",
+    "source_locator": "R186: text of the page"
    }
   },
   {
@@ -48550,6 +51379,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.4712,
+     53.2174
+    ]
+   },
+   "properties": {
+    "claim_id": "C1202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-05-04",
+    "place_id": "PL0643",
+    "location_name": "Timeloberg near Wendisch Evern (Lüneburg Heath), Niedersachsen (signing place of the instrument; not the headquarters of OB Nordwest)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "German forces in the north surrender to Montgomery at Lüneburg Heath on 4 May; hostilities end 5 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R660;R661;R002",
+    "source_locator": "R569: p. 465; R660: text of the instrument; R661: article text"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9689,
+     52.5408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1213",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-012A",
+    "unit_name": "Twelfth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-04",
+    "place_id": "PL0456",
+    "location_name": "Tangermünde, Sachsen-Anhalt (Elbe bridgehead; crossing sites not all named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Twelfth Army and Ninth Army remnants open talks on 4 May with the US Ninth Army to cross the Elbe and surrender",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R663;R001",
+    "source_locator": "R569: p. 465; R663: text of the army page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.7473,
+     47.5026
+    ]
+   },
+   "properties": {
+    "claim_id": "C1220",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-024A",
+    "unit_name": "Twenty-fourth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-04",
+    "place_id": "PL0654",
+    "location_name": "Bregenz, Vorarlberg (frontier area; headquarters place not named)",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Schmidt asks the French for surrender terms for the Twenty-fourth Army at noon on 4 May; the terms are then disputed",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 472, 473"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6664,
+     49.2178
+    ]
+   },
+   "properties": {
+    "claim_id": "C1259",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-04",
+    "place_id": "PL0645",
+    "location_name": "Bavarian-Bohemian frontier (representative point at Cham) (representative point on the frontier; the surrender place is not named)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "The remnants of the 11th Panzer Division, with General von Wietersheim, surrender to the US 90th Division on 4 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 467"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.7333,
      48.1
     ]
@@ -48707,6 +51700,211 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R562;R569;R001",
     "source_locator": "R569: p. 458, 467"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.7333,
+     48.1
+    ]
+   },
+   "properties": {
+    "claim_id": "C1200",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0500",
+    "location_name": "Haar, Bayern (estate at Haar near Munich where the terms were signed; not the headquarters)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "surrender",
+    "current_activity": "Army Group G surrenders at Haar near Munich on 5 May; the terms take effect at noon on 6 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R186;R001",
+    "source_locator": "R569: p. 471, 472; R186: text of the page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.7333,
+     48.1
+    ]
+   },
+   "properties": {
+    "claim_id": "C1204",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-001A",
+    "unit_name": "First Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0500",
+    "location_name": "Haar, Bayern (the army commander signs at an estate at Haar; the army headquarters is not there)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "surrender",
+    "current_activity": "First Army commander Foertsch signs the surrender of Army Group G at Haar on 5 May for Schulz",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R186;R001",
+    "source_locator": "R569: p. 471, 472; R186: text of the page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3933,
+     47.2683
+    ]
+   },
+   "properties": {
+    "claim_id": "C1218",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0499",
+    "location_name": "Innsbruck, Tirol (the Landrat in Innsbruck)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "Brandenberger surrenders the Nineteenth Army to the US VI Corps in Innsbruck at 1500 on 5 May, effective at 1800",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R170;R001",
+    "source_locator": "R569: p. 471; R170: text of the army page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C1222",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0621",
+    "location_name": "Utrecht (representative point in the Netherlands)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "German forces in the Netherlands surrender with the other forces of OB Nordwest; fighting ends at 0800 on 5 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R570;R660;R002",
+    "source_locator": "R569: p. 465; R570: p. 477; R660: text of the instrument"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "claim_id": "C1239",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-05-05",
+    "place_id": "PL0657",
+    "location_name": "Oldenburg (Oldb), Niedersachsen (town of the surrender; headquarters not placed)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "The First Parachute Army surrenders at Oldenburg; the northwest German terms take effect at 0800 on 5 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R659;R660;R002",
+    "source_locator": "R569: p. 465; R659: text of the army page; R660: text of the instrument"
    }
   },
   {
@@ -48878,6 +52076,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.0319,
+     49.2578
+    ]
+   },
+   "properties": {
+    "claim_id": "C1254",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OKW-000H",
+    "unit_name": "Oberkommando der Wehrmacht (OKW)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-07",
+    "place_id": "PL0295",
+    "location_name": "Reims, Marne (school building used by SHAEF at Reims; the signing place, not an OKW headquarters)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "Jodl signs the German surrender at Reims at 0241 on 7 May for OKW; it takes effect at 2301 on 8 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 475"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.3333,
      47.8667
     ]
@@ -48953,6 +52192,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R561;R569;R570;R002",
     "source_locator": "R569: p. 475; R570: p. 476"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8701,
+     50.2306
+    ]
+   },
+   "properties": {
+    "claim_id": "C1206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0646",
+    "location_name": "Karlsbad (Karlovy Vary), Czechia (front of the US 1st Division at Karlsbad)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "The Seventh Army staff gives up at Karlsbad on 8 May, a day after the town surrenders to the US 1st Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 467"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "claim_id": "C1232",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-082C",
+    "unit_name": "LXXXII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0641",
+    "location_name": "Bavaria (representative point at Munich) (representative point; the place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "Separate surrender arrangements for the LXXXII Corps are still being completed on 8 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 474"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3951,
+     52.5174
+    ]
+   },
+   "properties": {
+    "claim_id": "C1255",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OKW-000H",
+    "unit_name": "Oberkommando der Wehrmacht (OKW)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0659",
+    "location_name": "Berlin (the city of Berlin; building not named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "Keitel signs the Act of Military Surrender at Berlin on 8 May for the German High Command, repeating the Reims surrender",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R666;R002",
+    "source_locator": "R569: p. 475; R666: text of the act"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "claim_id": "C1271",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-013C",
+    "unit_name": "XIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-05-08",
+    "place_id": "PL0641",
+    "location_name": "Bavaria (representative point at Munich) (representative point; the place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "Separate surrender arrangements for the XIII SS Corps are still being completed on 8 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 474"
    }
   }
  ]

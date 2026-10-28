@@ -558,8 +558,57 @@ def scenario_14_canadian_batch_1_jun_dec_1944():
     expect(s + ': C1278 is the minimal I Corps evidence claim of 23 July', (c['unit_id'], c['date'], c['event_type']), ('UK-COR-001C', '1944-07-23', 'command_change'))
 
 
+def scenario_15_canadian_batch_2_jan_may_1945():
+    """Canadian Batch 2 (January to May 1945): the Army takes the 30th Corps (Veritable) and loses it to Second Army on 8 March; I Canadian Corps joins from Italy at noon on 15 March and the 1st British Corps leaves the Army at noon on 2 April; II Canadian Corps is with Second Army from 20 March to 1 April (day only, then 23:59); the divisions attached to British corps and II Canadian Corps."""
+    s = 'scenario 15, Canadian Batch 2 (January to May 1945)'
+    a = intervals('UK-COR-001C', '1945-04-02', '11:00')
+    expect(s + ': 1st British Corps, 2 Apr 11:00: First Canadian Army is certain (Stacey p. 545, noon)', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('UK-COR-001C', '1945-04-02', '13:00')
+    expect(s + ': 1st British Corps, 2 Apr 13:00: no Canadian relation any longer (the corps passes to Second Army in the British batch)', sorted(a), [])
+    a = intervals('CAN-COR-001C', '1945-03-15', '11:00')
+    expect(s + ': I Canadian Corps, 15 Mar 11:00: not yet in the theatre relation (Stacey p. 529, noon)', sorted(a), [])
+    a = intervals('CAN-COR-001C', '1945-03-15', '13:00')
+    expect(s + ': I Canadian Corps, 15 Mar 13:00: First Canadian Army is certain', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1945-03-10')
+    expect(s + ': II Canadian Corps, 10 Mar: First Canadian Army is certain', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1945-03-20')
+    expect(s + ': II Canadian Corps, 20 Mar (day only): the Army and Second Army are possible only', sorted(a), [('CAN-ARMY-001A', 'assigned'), ('UK-ARMY-002A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1945-03-25')
+    expect(s + ': II Canadian Corps, 25 Mar: Second Army is certain', sorted(a), [('UK-ARMY-002A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1945-04-01', '23:30')
+    expect(s + ': II Canadian Corps, 1 Apr 23:30 (Stacey p. 545, 23:59): Second Army is still certain', sorted(a), [('UK-ARMY-002A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1945-04-02')
+    expect(s + ': II Canadian Corps, 2 Apr: First Canadian Army is certain', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('UK-COR-030C', '1945-03-09')
+    expect(s + ': 30th British Corps, 9 Mar: the attachment to the Army has ended (18:00 on 8 March, Stacey p. 521)', sorted(a), [('UK-ARMY-002A', 'assigned')])
+    a = intervals('CAN-INF-003D', '1945-02-10')
+    expect(s + ': 3rd Division, 10 Feb: II Canadian Corps assigned and 30th Corps attached (Stacey p. 471)', sorted(a), [('CAN-COR-002C', 'assigned'), ('UK-COR-030C', 'attached')])
+    a = intervals('CAN-INF-003D', '1945-02-20')
+    expect(s + ': 3rd Division, 20 Feb: the attachment to 30th Corps has ended on 15 February (Stacey p. 482)', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('CAN-INF-003D', '1945-03-28', '13:00')
+    expect(s + ': 3rd Division, 28 Mar 13:00: back under II Canadian Corps only (Stacey p. 539, noon)', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('CAN-ARM-004D', '1945-01-24')
+    expect(s + ': 4th Armoured Division, 24 Jan: II Canadian Corps assigned, the Army Reserve relation possible only', sorted(a), [('CAN-ARMY-001A', 'reserve'), ('CAN-COR-002C', 'assigned')])
+    expect(s + ': 4th Armoured Division, 24 Jan: Reserve is possible', a[('CAN-ARMY-001A', 'reserve')][0], 'possible')
+    a = intervals('CAN-ARM-004D', '1945-01-28')
+    expect(s + ': 4th Armoured Division, 28 Jan (Stacey p. 450): I Corps attached and II Canadian Corps assigned', sorted(a), [('CAN-COR-002C', 'assigned'), ('UK-COR-001C', 'attached')])
+    a = intervals('CAN-INF-001D', '1945-04-05')
+    expect(s + ': 1st Division, 5 Apr: I Canadian Corps assigned and II Canadian Corps attached', sorted(a), [('CAN-COR-001C', 'assigned'), ('CAN-COR-002C', 'attached')])
+    a = intervals('CAN-INF-001D', '1945-04-14')
+    expect(s + ': 1st Division, 14 Apr: back under I Canadian Corps only', sorted(a), [('CAN-COR-001C', 'assigned')])
+    a = intervals('CAN-ARM-005D', '1945-04-20')
+    expect(s + ': 5th Armoured Division, 20 Apr: I Canadian Corps', sorted(a), [('CAN-COR-001C', 'assigned')])
+    a = intervals('CAN-ARM-005D', '1945-04-22')
+    expect(s + ': 5th Armoured Division, 22 Apr (Stacey p. 591): II Canadian Corps', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('UK-INF-049D', '1945-04-01')
+    expect(s + ': 49th Division, 1 Apr: attached to I Canadian Corps (Stacey p. 529)', sorted(a)[0], ('CAN-COR-001C', 'attached'))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1343']
+    expect(s + ': C1343 is the first Army claim of 1945', (c['unit_id'], c['date'], c['event_type']), ('CAN-ARMY-001A', '1945-01-18', 'command_change'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945):
         before = len(FAILURES)
         try:
             fn()

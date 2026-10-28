@@ -690,8 +690,47 @@ def scenario_17_british_batch_2_jan_may_1945():
     expect(s + ': C1538 is the last row of the batch (21st Army Group, surrender)', (c['unit_id'], c['date'], c['event_type']), ('UK-AG-021G', '1945-05-04', 'surrender'))
 
 
+def scenario_18_british_batch_2_followup():
+    """British Batch 2 follow-up (28 October 2026): the 3rd Division is in VIII Corps (attached to II Canadian Corps from 29 December to 19 January) and joins XXX Corps by 25 February; the 50th Division is attached to II Canadian Corps from 9 to 29 November 1944; the 49th Division is attached to II Canadian Corps from the end of November; the 59th Division leaves XII Corps by 23 August; XVIII Airborne Corps is attached to the British Second Army from 9 March to 1 April 1945 (Plunder-Varsity) and is under the US First Army again from 2 April."""
+    s = 'scenario 18, British Batch 2 follow-up'
+    a = intervals('UK-INF-003D', '1944-10-01')
+    expect(s + ': 3rd Division, 1 Oct 1944: VIII Corps is certain (Ellis II pp. 4, 159, 238); I Corps is no longer listed', sorted(a), [('UK-COR-008C', 'assigned')])
+    a = intervals('UK-INF-003D', '1945-01-10')
+    expect(s + ': 3rd Division, 10 Jan 1945: VIII Corps and the attachment to II Canadian Corps are both certain (Stacey p. 443)', sorted(a), [('CAN-COR-002C', 'attached'), ('UK-COR-008C', 'assigned')])
+    a = intervals('UK-INF-003D', '1945-02-10')
+    expect(s + ': 3rd Division, 10 Feb: VIII Corps is possible only (end between 19 January and 24 February), the attachment has ended', sorted(a), [('UK-COR-008C', 'assigned')])
+    expect(s + ': 3rd Division, 10 Feb: VIII Corps is possible, not certain', a[('UK-COR-008C', 'assigned')][0], 'possible')
+    a = intervals('UK-INF-003D', '1945-02-26')
+    expect(s + ': 3rd Division, 26 Feb (Veritable, Stacey p. 494): XXX Corps is certain, VIII Corps has ended', sorted(a), [('UK-COR-030C', 'assigned')])
+    a = intervals('UK-INF-050D', '1944-11-15')
+    expect(s + ': 50th Division, 15 Nov: the attachment to II Canadian Corps is certain (Stacey pp. 428, 430)', a[('CAN-COR-002C', 'attached')][0], 'certain')
+    a = intervals('UK-INF-050D', '1944-12-05')
+    expect(s + ': 50th Division, 5 Dec: the attachment to II Canadian Corps has ended (Ellis II p. 159, Stacey p. 430)', sorted(a), [('UK-COR-030C', 'assigned')])
+    a = intervals('UK-INF-049D', '1944-12-04')
+    expect(s + ': 49th Division, 4 Dec: I Corps (assigned) and II Canadian Corps (attached) are both certain (Stacey p. 433)', sorted(a), [('CAN-COR-002C', 'attached'), ('UK-COR-001C', 'assigned')])
+    a = intervals('UK-INF-049D', '1945-02-10')
+    expect(s + ': 49th Division, 10 Feb 1945: the attachment to II Canadian Corps is possible only (end between 18 January and 14 March)', a[('CAN-COR-002C', 'attached')][0], 'possible')
+    a = intervals('UK-INF-059D', '1944-08-10')
+    expect(s + ': 59th Division, 10 Aug: XII Corps is possible only (end between 6 and 23 August, Ellis I p. 453)', a[('UK-COR-012C', 'assigned')][0], 'possible')
+    a = intervals('UK-INF-059D', '1944-08-25')
+    expect(s + ': 59th Division, 25 Aug: no corps (disbanded)', sorted(a), [])
+    a = intervals('US-ABN-018C', '1945-03-24')
+    expect(s + ': XVIII Airborne Corps, 24 Mar: attached to the British Second Army is certain (CMH ch. 14 p. 298, Ellis II p. 285), the US First Army relation has ended', sorted(a), [('ALL-FAAA-001A', 'assigned'), ('UK-ARMY-002A', 'attached')])
+    a = intervals('US-ABN-018C', '1945-04-10')
+    expect(s + ': XVIII Airborne Corps, 10 Apr: back under the US First Army (operational control, CMH ch. 16 p. 362), possible only; the Second Army attachment ended on 1 April', sorted(a), [('ALL-FAAA-001A', 'assigned'), ('US-ARMY-001A', 'operational_control')])
+    a = intervals('US-ABN-018C', '1945-03-01')
+    expect(s + ': XVIII Airborne Corps, 1 Mar: the First Army relation is possible only (end between 19 December and 8 March)', a[('US-ARMY-001A', 'operational_control')][0], 'possible')
+    a = intervals('UK-INF-043D', '1945-03-28')
+    expect(s + ': 43rd Division, 28 Mar (Megchelen): XXX Corps is certain', sorted(a), [('UK-COR-030C', 'assigned')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1539']
+    expect(s + ': C1539 is the first row of the follow-up (50th Division at Neerpelt)', (c['unit_id'], c['date']), ('UK-INF-050D', '1944-09-17'))
+    c = claims['C1546']
+    expect(s + ': C1546 is the last row of the follow-up (XVIII Airborne Corps, Varsity)', (c['unit_id'], c['date'], c['parent_unit_id']), ('US-ABN-018C', '1945-03-24', 'UK-ARMY-002A'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup):
         before = len(FAILURES)
         try:
             fn()

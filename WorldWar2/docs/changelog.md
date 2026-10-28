@@ -32,6 +32,11 @@ The question was recorded as LXXIV Corps (CMH Siegfried Line ch. 4 p. 87) agains
 ### Item 4: stray file `WorldWar2/before.txt`
 
 - **Removed** (`before.txt` at the root of the working copy, `WorldWar2/before.txt` in the GitHub tree; 20,106 bytes). It is a saved text output of `who_controls.py` (Fourth Armored Division, July and August 1944) committed by accident with `02e7272` on 26 October 2026. Checked before removal: no script (`scripts/`, the tools of the publication step, the workflow), schema or document reads or names it; the only mention is the older changelog entry that says it was "left alone"; it is not in `.gitignore`, not in the build, and not listed in `docs/review`. Old value: tracked file; new value: removed. Reason: stray output, no function. No copy was in the Drive folder.
+### Documents and tests
+
+- `data/coordinate_exceptions.csv`, the reason of the `C0815`/`C0816` conflict: old text "both rows are kept disputed and no winner is chosen without a source"; new text: both rows are kept, `C0815` preferred and `C0816` alternate since 28 October 2026, with the CMH reference. Reason: the status change of `G024` (Item 1).
+- `scripts/semantic_tests.py`: scenario 13 added (7 expectations: statuses of `G021` to `G025`, the flags of `C0197`, the parent of the 353rd Division on 20 September 1944); 201 expectations in all.
+- `docs/HANDOFF.md`: state, conflict-group counts (preferred 1,242, alternate 19, disputed 16; the earlier figures 1,157, 16 and 21 were out of date), the conflict bullets and the open-item lists updated; `docs/roadmap.md`: open points marked as settled or still open. README counts unchanged (no claim, unit, relation, place or reference count moved; reference ids now run to `R667`).
 
 ## german-1945-batch2-apr-may: German 1945 Batch 2, German units, 1 April to 8 May 1945 (28 October 2026)
 

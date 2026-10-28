@@ -39981,6 +39981,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8453,
+     51.9188
+    ]
+   },
+   "properties": {
+    "claim_id": "C1545",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-04",
+    "place_id": "PL0783",
+    "location_name": "Elst, Overbetuwe, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Nijmegen Island flooded after dykes blown; repulses a local attack on 4 December; commands the Island from the 6th",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 430, 433"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9305,
      51.7741
     ]
@@ -54201,6 +54242,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 297"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3922,
+     51.8382
+    ]
+   },
+   "properties": {
+    "claim_id": "C1544",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL0785",
+    "location_name": "Megchelen, Oude IJsselstreek, Gelderland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Plunder: comes into action on the night of 26 March and captures Megchelen (Ellis: Mechelen) early on the 28th",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R673;R674;R002",
+    "source_locator": "R671: pp. 293, 294, 295"
    }
   },
   {

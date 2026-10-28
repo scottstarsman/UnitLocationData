@@ -15518,7 +15518,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -15538,6 +15538,26 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3922,
+     51.8382
+    ]
+   },
+   "properties": {
+    "place_id": "PL0785",
+    "name": "Megchelen, Oude IJsselstreek, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
     "claims_count": 1
    }
   }

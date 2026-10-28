@@ -3338,7 +3338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -10758,7 +10758,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -13558,7 +13558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -13578,7 +13578,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -14738,6 +14738,86 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Somme",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "place_id": "PL0745",
+    "name": "Brussels, Belgium",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Brussels",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4582,
+     51.3202
+    ]
+   },
+   "properties": {
+    "place_id": "PL0746",
+    "name": "Valkenswaard, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7924,
+     52.0057
+    ]
+   },
+   "properties": {
+    "place_id": "PL0747",
+    "name": "Wolfheze, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9372,
+     50.8075
+    ]
+   },
+   "properties": {
+    "place_id": "PL0748",
+    "name": "Tienen, Flemish Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Flemish Brabant",
     "claims_count": 1
    }
   }

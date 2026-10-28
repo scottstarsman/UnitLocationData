@@ -12598,7 +12598,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 7
    }
   },
   {
@@ -13798,7 +13798,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -15139,6 +15139,66 @@
     "country": "DE",
     "region": "North Rhine-Westphalia",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5909,
+     51.7307
+    ]
+   },
+   "properties": {
+    "place_id": "PL0765",
+    "name": "Hamminkeln, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6134,
+     51.7703
+    ]
+   },
+   "properties": {
+    "place_id": "PL0766",
+    "name": "Dingden, Hamminkeln, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6815,
+     51.7256
+    ]
+   },
+   "properties": {
+    "place_id": "PL0767",
+    "name": "Brünen, Hamminkeln, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
    }
   }
  ]

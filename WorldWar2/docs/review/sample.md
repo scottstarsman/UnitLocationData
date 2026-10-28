@@ -656,7 +656,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R582 | general | CMH Combat Chronicle: 13th Armored Division (Wayback copy) | official_history | https://web.archive.org/web/2018/https://history.army.mil/html/forcestruc/cbtchron/cc/013ad.htm | R568: p. 437; R569: p. 466 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R568: p. 437; R569: p. 466 |
 
-## Part 2: command relations (20 of 890)
+## Part 2: command relations (20 of 892)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -791,19 +791,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0623 (US-INF-099D, 1945-03-12) | asserts_start | 1945-03-09 | - | CMH ETO-OB assignment table, Corps column: "III" from the row of 9 Mar 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached | R532 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/99ID-ETO.htm [R540: p. 226]; R540 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-11.html [p. 226] |
   | C0668 (US-INF-099D, 1945-04-15) | asserts_start | 1945-03-09 | - | CMH ETO-OB assignment table, Corps column: "III" from the row of 9 Mar 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached | R532 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/99ID-ETO.htm [R566: p. 370]; R566 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-16.html [p. 370] |
 
-### R12. CR0508: 8th Infantry Division -> XVIII Airborne Corps (unspecified_subordination)
-
-- **Subject / higher unit:** `US-INF-008D` / `US-ABN-018C`
-- **Interval:** from 1945-04-02 (assignment_table) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Corps column: "XVIII Abn" from the row of 2 Apr 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C0663 (US-INF-008D, 1945-04-14) | asserts_start | 1945-04-02 | - | CMH ETO-OB assignment table, Corps column: "XVIII Abn" from the row of 2 Apr 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached | R369 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/8ID-ETO.htm [R566: p. 367]; R566 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-16.html [p. 367] |
-  | C0697 (US-INF-008D, 1945-05-03) | asserts_start | 1945-04-02 | - | CMH ETO-OB assignment table, Corps column: "XVIII Abn" from the row of 2 Apr 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached | R369 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/8ID-ETO.htm [R569: p. 464-465]; R569 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-19.html [p. 464-465] |
-
-### R13. CR0564: 9th Panzer Division -> LXXXI Corps (assigned)
+### R12. CR0564: 9th Panzer Division -> LXXXI Corps (assigned)
 
 - **Subject / higher unit:** `GER-PZ-009D` / `GER-COR-081C`
 - **Interval:** from 1944-08-10 (narrative) to 1944-10-14 (earliest 1944-09-16) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -815,7 +803,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0730 (GER-PZ-009D, 1944-08-10) | asserts_start | 1944-08-10 | - | Listed as one of the two LXXXI Corps divisions in line on 10 August (Breakout and Pursuit ch. 25 p. 498) | R403 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-25.html [p. 500, 498] |
   | C0862 (GER-PZ-009D, 1944-09-16) | observed_during | - | - |  | R441 https://www.ibiblio.org/hyperwar/USA/USA-E-Siegfried/USA-E-Siegfried-4.html [p. 87] |
 
-### R14. CR0587: XLVII Panzer Corps -> Panzer Group West (unspecified_subordination)
+### R13. CR0587: XLVII Panzer Corps -> Panzer Group West (unspecified_subordination)
 
 - **Subject / higher unit:** `GER-PZ-047C` / `GER-PZG-WESTA`
 - **Interval:** from 1944-06-28 (narrative) to 1944-08-06 (earliest 1944-07-01) (inferred_from_next_claim); end_unknown false; change_undated true; date_basis narrative; status preferred
@@ -826,7 +814,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0771 (GER-PZ-047C, 1944-07-01) | asserts_start | 1944-06-28 | - | Panzer Group West took control of the four corps on the right (east) on 28 June (Breakout and Pursuit ch. 2 p. 29-30) | R586 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-2.html [p. 30, 29] |
 
-### R15. CR0655: 64th Infantry Division -> LXVII Corps (assigned)
+### R14. CR0655: 64th Infantry Division -> LXVII Corps (assigned)
 
 - **Subject / higher unit:** `GER-INF-064D` / `GER-COR-067C`
 - **Interval:** from 1944-10-15 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -837,18 +825,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C0922 (GER-INF-064D, 1944-10-15) | observed_during | - | - |  | R623 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/64ID-R.htm [table of 1944, October row] |
 
-### R16. CR0658: 347th Infantry Division -> LXXIV Corps (assigned)
-
-- **Subject / higher unit:** `GER-INF-347D` / `GER-COR-074C`
-- **Interval:** from 1944-09-15 (claim_date) to 1944-11-26 (earliest 1944-09-15) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** Lexikon der Wehrmacht, 347th Infantry Division, table 1944: September: LXXIV Corps, 7. Armee; month-level, so the start is the row date and an approximate date Closed on 1944-11-26 (German Batch 3, inferred value; old value: open, open_at_last_claim; new value: valid_to 1944-11-26): the next row of the unit (C1015, 1944-11-27) lists a different higher unit; no source read dates the change, so the day before that row is used.
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C0925 (GER-INF-347D, 1944-09-15) | observed_during | - | - |  | R617 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/347ID-R.htm [table of 1944, September row] |
-
-### R17. CR0765: 9th SS Panzer Division Hohenstaufen -> Sixth Panzer Army (Sixth SS Panzer Army) (assigned)
+### R15. CR0765: 9th SS Panzer Division Hohenstaufen -> Sixth Panzer Army (Sixth SS Panzer Army) (assigned)
 
 - **Subject / higher unit:** `GER-SSPZ-009D` / `GER-PZA-006A`
 - **Interval:** from 1945-01-05 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -859,7 +836,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C1086 (GER-SSPZ-009D, 1945-01-05) | observed_during | - | - |  | R515 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-2.html [p. 38, 33] |
 
-### R18. CR0782: 189th Infantry Division -> LXIV Corps (LXIV Reserve Corps until 5 August 1944) (assigned)
+### R16. CR0782: 189th Infantry Division -> LXIV Corps (LXIV Reserve Corps until 5 August 1944) (assigned)
 
 - **Subject / higher unit:** `GER-INF-189D` / `GER-COR-064C`
 - **Interval:** from 1945-01-20 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -870,7 +847,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C1117 (GER-INF-189D, 1945-01-20) | observed_during | - | - |  | R425 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-29.html [p. 537, 538] |
 
-### R19. CR0853: 1st Polish Armoured Division -> II Canadian Corps (attached)
+### R17. CR0853: 1st Polish Armoured Division -> II Canadian Corps (attached)
 
 - **Subject / higher unit:** `POL-ARM-001D` / `CAN-COR-002C`
 - **Interval:** from 1944-08-05 (narrative) to 1944-09-28 (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -882,7 +859,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1294 (CAN-COR-002C, 1944-09-26) | listed_by_higher_unit | - | 1944-09-28 | Passed under General Crocker on 28 September | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 367] |
   | C1290 (CAN-COR-002C, 1944-08-07) | listed_by_higher_unit | 1944-08-05 | - | Came under General Simonds at 06:00 on 5 August | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [pp. 208, 218, 219, 229] |
 
-### R20. CR0866: 3rd Canadian Infantry Division -> XXX Corps (attached)
+### R18. CR0866: 3rd Canadian Infantry Division -> XXX Corps (attached)
 
 - **Subject / higher unit:** `CAN-INF-003D` / `UK-COR-030C`
 - **Interval:** from 1945-02-08 (inferred) to 1945-02-15 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -893,4 +870,26 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C1379 (CAN-INF-003D, 1945-02-08) | asserts_start | 1945-02-08 | - | The division part in Veritable on the 30th Corps northern flank began at 18:00 on 8 February | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 471] |
   | C1380 (CAN-INF-003D, 1945-02-15) | asserts_end | - | 1945-02-15 | Reverted under the 2nd Canadian Corps on 15 February | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 482] |
+
+### R19. CR0892: 1st Belgian Infantry Brigade (Brigade Piron) -> 6th Airborne Division (attached)
+
+- **Subject / higher unit:** `BEL-INF-001B` / `UK-ABN-006D`
+- **Interval:** from 1944-08-21 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
+- **Note:** The 1st Belgian Infantry Brigade is with the 6th Airborne Division by 21 August 1944, newly arrived from England (Ellis, vol. I, p. 448, listed by the claim C1443); the day it joined is not given, so the claim date is the latest possible start (inferred value). No end is given on the pages read, so the end is unknown.
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C1443 (UK-ABN-006D, 1944-08-21) | listed_by_higher_unit | - | - | Belgian and Dutch contingents newly arrived from England, reinforcing the division | R670 https://archive.org/details/victory-west-vol-1 [p. 448] |
+
+### R20. CR0893: Royal Netherlands Brigade (Prinses Irene) -> 6th Airborne Division (attached)
+
+- **Subject / higher unit:** `NL-INF-IRNEB` / `UK-ABN-006D`
+- **Interval:** from 1944-08-21 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
+- **Note:** The Royal Netherlands Brigade is with the 6th Airborne Division by 21 August 1944, newly arrived from England (Ellis, vol. I, p. 448, listed by the claim C1443); the day it joined is not given, so the claim date is the latest possible start (inferred value). No end is given on the pages read, so the end is unknown.
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C1443 (UK-ABN-006D, 1944-08-21) | listed_by_higher_unit | - | - | Belgian and Dutch contingents newly arrived from England, reinforcing the division | R670 https://archive.org/details/victory-west-vol-1 [p. 448] |
 

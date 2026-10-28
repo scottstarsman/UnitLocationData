@@ -798,7 +798,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -818,7 +818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -1238,7 +1238,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -1398,7 +1398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -3338,7 +3338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -3418,7 +3418,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -3798,7 +3798,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -5038,7 +5038,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -7338,7 +7338,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -10458,7 +10458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -10758,7 +10758,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -13558,7 +13558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -13578,7 +13578,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -13598,7 +13598,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14278,6 +14278,546 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.371,
+     49.2227
+    ]
+   },
+   "properties": {
+    "place_id": "PL0722",
+    "name": "Epron, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5255,
+     49.1121
+    ]
+   },
+   "properties": {
+    "place_id": "PL0723",
+    "name": "Bougy, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5011,
+     49.0999
+    ]
+   },
+   "properties": {
+    "place_id": "PL0724",
+    "name": "Evrecy, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.599,
+     49.1467
+    ]
+   },
+   "properties": {
+    "place_id": "PL0725",
+    "name": "Vendes, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2386,
+     49.2104
+    ]
+   },
+   "properties": {
+    "place_id": "PL0726",
+    "name": "Escoville, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2216,
+     49.1812
+    ]
+   },
+   "properties": {
+    "place_id": "PL0727",
+    "name": "Sannerville, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1821,
+     49.1819
+    ]
+   },
+   "properties": {
+    "place_id": "PL0728",
+    "name": "Troarn, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "place_id": "PL0729",
+    "name": "Saint-Martin-des-Besaces, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.627,
+     48.9713
+    ]
+   },
+   "properties": {
+    "place_id": "PL0730",
+    "name": "Mont Pinçon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8251,
+     48.9316
+    ]
+   },
+   "properties": {
+    "place_id": "PL0731",
+    "name": "Le Bény-Bocage (Souleuvre bridge), Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7174,
+     49.0804
+    ]
+   },
+   "properties": {
+    "place_id": "PL0732",
+    "name": "Amayé-sur-Seulles, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6312,
+     49.0204
+    ]
+   },
+   "properties": {
+    "place_id": "PL0733",
+    "name": "Aunay-sur-Odon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4511,
+     49.0441
+    ]
+   },
+   "properties": {
+    "place_id": "PL0734",
+    "name": "Grimbosq, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.0831,
+     48.8391
+    ]
+   },
+   "properties": {
+    "place_id": "PL0735",
+    "name": "Brieux, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Orne",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5652,
+     48.849
+    ]
+   },
+   "properties": {
+    "place_id": "PL0736",
+    "name": "Condé-sur-Noireau, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2115,
+     49.0294
+    ]
+   },
+   "properties": {
+    "place_id": "PL0737",
+    "name": "Soignolles, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.5153,
+     49.3562
+    ]
+   },
+   "properties": {
+    "place_id": "PL0738",
+    "name": "Pont-Audemer, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.2955,
+     48.7944
+    ]
+   },
+   "properties": {
+    "place_id": "PL0739",
+    "name": "Gacé, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Orne",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1646,
+     49.2157
+    ]
+   },
+   "properties": {
+    "place_id": "PL0740",
+    "name": "Louviers, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4857,
+     49.0932
+    ]
+   },
+   "properties": {
+    "place_id": "PL0741",
+    "name": "Vernon, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.2212,
+     49.2331
+    ]
+   },
+   "properties": {
+    "place_id": "PL0742",
+    "name": "Saint-Pierre-du-Vauvray, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Eure",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "place_id": "PL0743",
+    "name": "Amiens, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Somme",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1418,
+     49.9443
+    ]
+   },
+   "properties": {
+    "place_id": "PL0744",
+    "name": "Picquigny, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Somme",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "place_id": "PL0745",
+    "name": "Brussels, Belgium",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Brussels",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4582,
+     51.3202
+    ]
+   },
+   "properties": {
+    "place_id": "PL0746",
+    "name": "Valkenswaard, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7924,
+     52.0057
+    ]
+   },
+   "properties": {
+    "place_id": "PL0747",
+    "name": "Wolfheze, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9372,
+     50.8075
+    ]
+   },
+   "properties": {
+    "place_id": "PL0748",
+    "name": "Tienen, Flemish Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Flemish Brabant",
     "claims_count": 1
    }
   }

@@ -31371,6 +31371,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8437,
+     48.407
+    ]
+   },
+   "properties": {
+    "claim_id": "C1019",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0612",
+    "location_name": "Raon-l'Étape, Vosges (front from the Rhine-Marne Canal to Saulcy-sur-Meurthe)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXIV Corps (Thumm) holds the right wing of the Nineteenth Army from the canal to Saulcy with five divisions",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R422;R002",
+    "source_locator": "R647: p. 362; R422: p. 389"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C1024",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-085C",
+    "unit_name": "LXXXV Corps (Generalkommando Knieß until July 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort (Belfort Gap area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXXV Corps (Kniess) defends the Belfort Gap; Army Group G learns the staff goes to Army Group B",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R651;R001",
+    "source_locator": "R647: p. 362; R651: p. 409"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C1025",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-159D",
+    "unit_name": "159th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort (Belfort Gap area; the division sector is not given)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 159th Division holds part of the Belfort Gap area under the LXXXV Corps",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R001",
+    "source_locator": "R647: p. 362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C1026",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort (Belfort Gap area; the division sector is not given)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 189th Division holds part of the Belfort Gap area under the LXXXV Corps",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R001",
+    "source_locator": "R647: p. 362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C1027",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort (Belfort Gap area; the division sector is not given)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 338th Division holds part of the Belfort Gap area under the LXXXV Corps",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R001",
+    "source_locator": "R647: p. 362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9474,
+     48.2872
+    ]
+   },
+   "properties": {
+    "claim_id": "C1031",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0617",
+    "location_name": "Saint-Dié-des-Vosges, Vosges (position inferred from the north-to-south order of the line; no village is named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The nearly destroyed 16th VG Division is the southern division of the LXIV Corps line near Saint-Dié",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R422;R002",
+    "source_locator": "R647: p. 362; R422: p. 389"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1846,
      48.6936
     ]
@@ -31856,6 +32102,211 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R418;R002",
     "source_locator": "R418: p. 328, 344"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1016",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-10",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (front from the Rhine-Marne Canal to the Swiss border; the headquarters place is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Nineteenth Army faces VI Corps; Army Group G moves the army boundary to the Rhine-Marne Canal",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R422;R647;R001",
+    "source_locator": "R422: p. 389, 405; R647: p. 361-362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9604,
+     48.2377
+    ]
+   },
+   "properties": {
+    "claim_id": "C1021",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFC-004C",
+    "unit_name": "IV Luftwaffe Field Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-11-10",
+    "place_id": "PL0614",
+    "location_name": "Saulcy-sur-Meurthe, Vosges (boundary point with the LXIV Corps; the corps headquarters is not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "IV Luftwaffe Field Corps (Petersen) holds the Vosges sector south of Saulcy with the 198th and 269th Divisions",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R422;R002",
+    "source_locator": "R422: p. 389, 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8437,
+     48.407
+    ]
+   },
+   "properties": {
+    "claim_id": "C1029",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-708D",
+    "unit_name": "708th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-10",
+    "place_id": "PL0612",
+    "location_name": "Raon-l'Étape, Vosges",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 708th VG Division holds the line through Raon-l'Étape to Étival-Clairefontaine facing the US 100th Division",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R422;R647;R002",
+    "source_locator": "R422: p. 389; R647: p. 362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8652,
+     48.3641
+    ]
+   },
+   "properties": {
+    "claim_id": "C1030",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-10",
+    "place_id": "PL0616",
+    "location_name": "Étival-Clairefontaine, Vosges",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 716th Division, with the 757th Grenadiers, holds the east bank of the Meurthe south from Étival-Clairefontaine",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R422;R647;R002",
+    "source_locator": "R422: p. 389; R647: p. 362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9604,
+     48.2377
+    ]
+   },
+   "properties": {
+    "claim_id": "C1032",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-10",
+    "place_id": "PL0614",
+    "location_name": "Saulcy-sur-Meurthe, Vosges (the sector south of the corps boundary at Saulcy)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 198th Division, most of it facing the US 36th Division, holds the sector south of Saulcy",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R422;R647;R002",
+    "source_locator": "R422: p. 391; R647: p. 362"
    }
   },
   {
@@ -32765,6 +33216,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C1023",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-063C",
+    "unit_name": "LXIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-18",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "redesignation",
+    "current_activity": "The Dehner organization in the Belfort sector becomes the LXIII Corps",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R651;R650;R001",
+    "source_locator": "R651: p. 409; R650: p. 454"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8435,
+     48.5913
+    ]
+   },
+   "properties": {
+    "claim_id": "C1028",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-553D",
+    "unit_name": "553rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-19",
+    "place_id": "PL0615",
+    "location_name": "Blamont, Meurthe-et-Moselle (left wing only; the new line ran from Richeval to Lafrimbolle)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "The left wing of the 553d VG Division withdraws to a new line northeast of Blamont",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R652;R647;R002",
+    "source_locator": "R652: p. 371; R647: p. 362"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8025,
      48.2636
     ]
@@ -32881,6 +33414,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R440;R002",
     "source_locator": "R440: p. 559"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C1034",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-KVOSG",
+    "unit_name": "Corps Command Vosges (Korpskommando Vosges, provisional corps headquarters)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-22",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin (the Strasbourg area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "OB West gives Army Group G a provisional corps headquarters, Corps Command Vosges, for the Strasbourg area",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R652;R001",
+    "source_locator": "R652: p. 378"
    }
   },
   {
@@ -33134,6 +33708,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.4542,
+     48.2594
+    ]
+   },
+   "properties": {
+    "claim_id": "C1020",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-26",
+    "place_id": "PL0613",
+    "location_name": "Sélestat, Bas-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXIV Corps holds the area between Sélestat and Barr with remnants of the 708th VG and 716th Divisions",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R650;R002",
+    "source_locator": "R650: p. 453-454"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1022",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-090C",
+    "unit_name": "LXXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-26",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (High Vosges west of Colmar)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "redesignation",
+    "current_activity": "XC Corps (the former IV Luftwaffe Field Corps) holds the High Vosges west of Colmar",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R423;R650;R001",
+    "source_locator": "R423: p. 436; R650: p. 454"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "claim_id": "C1033",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-26",
+    "place_id": "PL0618",
+    "location_name": "Haguenau, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "The first units of the 256th VG Division reach Haguenau; the rest follow on 28 November",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R652;R002",
+    "source_locator": "R652: p. 379, 386"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6398,
      49.2225
     ]
@@ -33168,6 +33865,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R412;R002",
     "source_locator": "R412: p. 503, 506"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1017",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-27",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (the Colmar bridgehead)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Nineteenth Army is committed to hold the Colmar bridgehead west of the Rhine after Hitler approves the new line",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R423;R001",
+    "source_locator": "R423: p. 436-437"
    }
   },
   {
@@ -33380,6 +34118,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "claim_id": "C1035",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-08",
+    "place_id": "PL0618",
+    "location_name": "Haguenau, Bas-Rhin (front east of Bitche through Haguenau to the Rhine)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "LXXXIX Corps becomes an independent command (Group Hoehne) under Army Group G, east of Bitche to the Rhine",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R648;R653;R002",
+    "source_locator": "R648: p. 467; R653: p. 535"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1167,
      50.2667
     ]
@@ -33414,6 +34193,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R392;R469;R340;R001",
     "source_locator": "R392: p. 139"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1018",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-15",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (the Colmar region)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Rasp replaces Wiese as commander of the Nineteenth Army, now under Army Group Oberrhein",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R648;R424;R170;R649;R001",
+    "source_locator": "R648: p. 485; R424: p. 493; R170: commander list and Gliederung, December 1944; R649: Lebenslauf and Gliederung, December 1944"
    }
   },
   {

@@ -7938,7 +7938,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 5
+    "claims_count": 9
    }
   },
   {
@@ -11138,7 +11138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comté",
-    "claims_count": 1
+    "claims_count": 6
    }
   },
   {
@@ -12078,6 +12078,166 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8437,
+     48.407
+    ]
+   },
+   "properties": {
+    "place_id": "PL0612",
+    "name": "Raon-l'Étape, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4542,
+     48.2594
+    ]
+   },
+   "properties": {
+    "place_id": "PL0613",
+    "name": "Sélestat, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9604,
+     48.2377
+    ]
+   },
+   "properties": {
+    "place_id": "PL0614",
+    "name": "Saulcy-sur-Meurthe, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8435,
+     48.5913
+    ]
+   },
+   "properties": {
+    "place_id": "PL0615",
+    "name": "Blamont, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8652,
+     48.3641
+    ]
+   },
+   "properties": {
+    "place_id": "PL0616",
+    "name": "Étival-Clairefontaine, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9474,
+     48.2872
+    ]
+   },
+   "properties": {
+    "place_id": "PL0617",
+    "name": "Saint-Dié-des-Vosges, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "place_id": "PL0618",
+    "name": "Haguenau, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "place_id": "PL0619",
+    "name": "Strasbourg, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Alsace",
     "claims_count": 1
    }
   }

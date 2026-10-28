@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 7
+    "claims_count": 11
    }
   },
   {
@@ -8538,7 +8538,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Saarland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10798,7 +10798,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -11198,7 +11198,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11318,7 +11318,7 @@
     "precision_km": 25,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -11918,6 +11918,166 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5623,
+     48.7797
+    ]
+   },
+   "properties": {
+    "place_id": "PL0604",
+    "name": "Moyenvic, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3937,
+     48.887
+    ]
+   },
+   "properties": {
+    "place_id": "PL0605",
+    "name": "Delme, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3446,
+     49.0533
+    ]
+   },
+   "properties": {
+    "place_id": "PL0606",
+    "name": "Sanry-sur-Nied, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3532,
+     49.3978
+    ]
+   },
+   "properties": {
+    "place_id": "PL0607",
+    "name": "Kerling-lès-Sierck, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4344,
+     48.8912
+    ]
+   },
+   "properties": {
+    "place_id": "PL0608",
+    "name": "Viviers, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0899,
+     48.9404
+    ]
+   },
+   "properties": {
+    "place_id": "PL0609",
+    "name": "Sarre-Union, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5912,
+     49.3415
+    ]
+   },
+   "properties": {
+    "place_id": "PL0610",
+    "name": "Niedaltdorf, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6398,
+     49.2225
+    ]
+   },
+   "properties": {
+    "place_id": "PL0611",
+    "name": "Falck, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
     "claims_count": 1
    }
   }

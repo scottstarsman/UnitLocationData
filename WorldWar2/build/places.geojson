@@ -798,7 +798,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -818,7 +818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -1238,7 +1238,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -1398,7 +1398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -3418,7 +3418,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -5038,7 +5038,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -10458,7 +10458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -13598,7 +13598,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14278,6 +14278,246 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.371,
+     49.2227
+    ]
+   },
+   "properties": {
+    "place_id": "PL0722",
+    "name": "Epron, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5255,
+     49.1121
+    ]
+   },
+   "properties": {
+    "place_id": "PL0723",
+    "name": "Bougy, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5011,
+     49.0999
+    ]
+   },
+   "properties": {
+    "place_id": "PL0724",
+    "name": "Evrecy, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.599,
+     49.1467
+    ]
+   },
+   "properties": {
+    "place_id": "PL0725",
+    "name": "Vendes, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2386,
+     49.2104
+    ]
+   },
+   "properties": {
+    "place_id": "PL0726",
+    "name": "Escoville, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2216,
+     49.1812
+    ]
+   },
+   "properties": {
+    "place_id": "PL0727",
+    "name": "Sannerville, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1821,
+     49.1819
+    ]
+   },
+   "properties": {
+    "place_id": "PL0728",
+    "name": "Troarn, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "place_id": "PL0729",
+    "name": "Saint-Martin-des-Besaces, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.627,
+     48.9713
+    ]
+   },
+   "properties": {
+    "place_id": "PL0730",
+    "name": "Mont Pinçon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8251,
+     48.9316
+    ]
+   },
+   "properties": {
+    "place_id": "PL0731",
+    "name": "Le Bény-Bocage (Souleuvre bridge), Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7174,
+     49.0804
+    ]
+   },
+   "properties": {
+    "place_id": "PL0732",
+    "name": "Amayé-sur-Seulles, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6312,
+     49.0204
+    ]
+   },
+   "properties": {
+    "place_id": "PL0733",
+    "name": "Aunay-sur-Odon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
     "claims_count": 1
    }
   }

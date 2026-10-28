@@ -9805,6 +9805,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1408",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-08",
+    "place_id": "PL0057",
+    "location_name": "Caen",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Charnwood: I Corps attacks to clear Caen as far as the Orne; by 18:00 on 9 July it reaches the river at Caen",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 310, 311, 312, 316, 317"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3435,
+     49.2146
+    ]
+   },
+   "properties": {
+    "claim_id": "C1409",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-08",
+    "place_id": "PL0040",
+    "location_name": "Biéville-Beuville / Lébisey approach to Caen",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Charnwood: clears the Lebisey area and, with the 33rd Armoured Brigade, takes the high ground round Point 64 above Caen",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 313, 315"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.371,
+     49.2227
+    ]
+   },
+   "properties": {
+    "claim_id": "C1410",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-059D",
+    "unit_name": "59th (Staffordshire) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-08",
+    "place_id": "PL0722",
+    "location_name": "Epron, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Charnwood: two brigades pass through to take Epron and St. Contest; St. Contest and most of la Bijude are taken",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 314, 315"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.3859,
      49.4989
     ]
@@ -10126,6 +10249,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R231;R667;R088;R001",
     "source_locator": "R231: Einsatz und Unterstellung (to 10 July 1944); R667: p. 66; R088: divisional history"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4605,
+     49.1236
+    ]
+   },
+   "properties": {
+    "claim_id": "C1411",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-10",
+    "place_id": "PL0173",
+    "location_name": "Hill 112",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Jupiter: the reinforced division attacks Eterville, Maltot and Hill 112 at 05:00; on the slopes of the hill by 08:00",
+    "operation_id": "OP-JUPITER",
+    "operation": "Operation Jupiter",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Jupiter",
+    "strength_status": "unknown",
+    "location_date": "1944-07-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 316, 317"
    }
   },
   {
@@ -11650,6 +11814,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C1412",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0256",
+    "location_name": "Odon bridgehead",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "XII Corps attacks from the Odon bridgehead to secure the Bougy-Evrecy road before Goodwood",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5255,
+     49.1121
+    ]
+   },
+   "properties": {
+    "claim_id": "C1413",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0723",
+    "location_name": "Bougy, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Preliminary attacks: takes Bougy and Gavrus on the Evrecy road; Esquay is entered but not held",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5011,
+     49.0999
+    ]
+   },
+   "properties": {
+    "claim_id": "C1414",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0724",
+    "location_name": "Evrecy, Calvados",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Preliminary attacks: captures Cahier and holds it with difficulty against heavy counter-attacks",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.599,
+     49.1467
+    ]
+   },
+   "properties": {
+    "claim_id": "C1415",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-15",
+    "place_id": "PL0725",
+    "location_name": "Vendes, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Preliminary attacks: fights for Vendes and its neighbourhood on the XXX Corps front, taking heavy casualties",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.23,
      49.15
     ]
@@ -12347,6 +12675,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1416",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARMY-002A",
+    "unit_name": "Second Army",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Goodwood: Second Army attacks with VIII Corps in the centre, I Corps on the left and II Canadian Corps on the right",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 336, 340"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2569,
+     49.1461
+    ]
+   },
+   "properties": {
+    "claim_id": "C1417",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0529",
+    "location_name": "Cagny, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Goodwood: the three armoured divisions of VIII Corps lead the advance south from the bridgehead east of the Orne",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 335, 336"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2386,
+     49.2104
+    ]
+   },
+   "properties": {
+    "claim_id": "C1418",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-18",
+    "place_id": "PL0726",
+    "location_name": "Escoville, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Goodwood: leads VIII Corps from Escoville; the 29th Armoured Brigade is pinned down south of the railway",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 340, 342"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2569,
+     49.1461
+    ]
+   },
+   "properties": {
+    "claim_id": "C1419",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-18",
+    "place_id": "PL0529",
+    "location_name": "Cagny, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Goodwood: the Grenadier Guards and the 32nd Guards Brigade clear Cagny by about 19:30 after a day of fighting",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 342, 343"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2216,
+     49.1812
+    ]
+   },
+   "properties": {
+    "claim_id": "C1420",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0727",
+    "location_name": "Sannerville, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Goodwood: attacks at 07:45 on the east flank and takes Sannerville and Banneville by midday; Troarn holds out",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 343"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1821,
+     49.1819
+    ]
+   },
+   "properties": {
+    "claim_id": "C1421",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0728",
+    "location_name": "Troarn, Calvados",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Goodwood: I Corps is to hold the east flank area Bures-Troarn-St. Pair-Emieville-Touffreville with the 3rd Division",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 336"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.6303,
      49.0822
     ]
@@ -12381,6 +12955,47 @@
     "location_temporal_offset_days": -2,
     "reference_ids": "R593;R185;R001",
     "source_locator": "R593: p. 458, 325-326; R185: list of commanders"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2971,
+     49.1217
+    ]
+   },
+   "properties": {
+    "claim_id": "C1422",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-19",
+    "place_id": "PL0687",
+    "location_name": "Bourguébus, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Goodwood: at 17:00 sets out to take Four and Bourguebus; Four is captured, Bourguebus holds at nightfall",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 347"
    }
   },
   {
@@ -13823,6 +14438,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.8402,
+     49.2709
+    ]
+   },
+   "properties": {
+    "claim_id": "C1423",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-AG-021G",
+    "unit_name": "21st Army Group",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-07-27",
+    "place_id": "PL0041",
+    "location_name": "Blay",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Montgomery meets his army commanders and orders Second Army to regroup and attack with six divisions from Caumont",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-27",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 386"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1733,
      49.3038
     ]
@@ -14356,6 +15012,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C1424",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARMY-002A",
+    "unit_name": "Second Army",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0071",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: Second Army opens its attack south from Caumont with VIII and XXX Corps",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 386"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "claim_id": "C1425",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0729",
+    "location_name": "Saint-Martin-des-Besaces, Calvados",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: attacks south from Caumont; its spearheads are five or six miles south of the town by the end of the day",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 388, 390, 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.627,
+     48.9713
+    ]
+   },
+   "properties": {
+    "claim_id": "C1426",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0730",
+    "location_name": "Mont Pinçon, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: the 43rd Division is to take Point 361 on Mont Pincon and the 50th the Amaye feature; a baffling first day",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 388, 390, 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C1427",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0071",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: advances from the Caumont ridge at about 07:00 with the 6th Guards Tank Brigade towards Point 309",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 388, 390, 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "claim_id": "C1428",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-30",
+    "place_id": "PL0729",
+    "location_name": "Saint-Martin-des-Besaces, Calvados",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: advances on the right of the 15th Division towards St. Martin-des-Besaces and is ordered to continue at night",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 388, 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7174,
+     49.0804
+    ]
+   },
+   "properties": {
+    "claim_id": "C1430",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0732",
+    "location_name": "Amayé-sur-Seulles, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: two brigades cross the Caen-Caumont road at about 06:00 towards the Amaye-sur-Seulles feature",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 388, 389"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2643,
      48.9481
     ]
@@ -14807,6 +15709,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.8251,
+     48.9316
+    ]
+   },
+   "properties": {
+    "claim_id": "C1429",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-31",
+    "place_id": "PL0731",
+    "location_name": "Le Bény-Bocage (Souleuvre bridge), Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Bluecoat: armoured cars find the Souleuvre bridge intact; the division crosses and holds a bridgehead at Le Beny-Bocage",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 393, 394"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7675,
+     49.0669
+    ]
+   },
+   "properties": {
+    "claim_id": "C1431",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0062",
+    "location_name": "Cahagnes",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Bluecoat: develops a 'right hook' against Cahagnes at first light and takes the village in the afternoon",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "claim_id": "C1432",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-31",
+    "place_id": "PL0729",
+    "location_name": "Saint-Martin-des-Besaces, Calvados",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: ordered up on the left of the 11th Armoured Division; leading troops are south-east of St. Martin by evening",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 394"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.4271,
      49.1274
     ]
@@ -15128,6 +16153,47 @@
     "location_temporal_offset_days": -34,
     "reference_ids": "R077;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6312,
+     49.0204
+    ]
+   },
+   "properties": {
+    "claim_id": "C1433",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-01",
+    "place_id": "PL0733",
+    "location_name": "Aunay-sur-Odon, Calvados",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Bluecoat: ordered through the 43rd Division to take Aunay-sur-Odon; makes slow progress in the Caumont congestion",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 392, 393"
    }
   },
   {

@@ -103,7 +103,7 @@ Placeholder units by nationality: Germany 74, France 13, UK 6, Allied 3, Poland 
 
 Command relations by relationship: assigned 562, unspecified_subordination 182, attached 97, operational_control 28, unknown 28, organic 11, reserve 8, administrative_control 2, coordinating 1.
 
-Command relations: start basis claim_date 412, assignment_table 389, narrative 102, inferred 12, order 4; end basis inferred_from_next_claim 408, open_at_last_claim 355, assignment_table 111, narrative 36, inferred 9; `end_unknown` true 87; `change_undated` true 18; status preferred 917, alternate 2.
+Command relations: start basis claim_date 412, assignment_table 389, narrative 102, inferred 12, order 4; end basis inferred_from_next_claim 409, open_at_last_claim 354, assignment_table 111, narrative 36, inferred 9; `end_unknown` true 87; `change_undated` true 18; status preferred 917, alternate 2.
 
 Evidence roles of relation links: asserts_start 1025, observed_during 1013, asserts_start_and_end 144, listed_by_higher_unit 74, asserts_end 45.
 

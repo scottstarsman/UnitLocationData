@@ -2,6 +2,46 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## canadian-batch1-jun-dec-1944: Canadian Batch 1, July to December 1944 (28 October 2026)
+
+Branch `canadian-batch1-jun-dec-1944`, cut from `main` (`259f572`, 1,277 claims, 367 units, 24 conflict groups, 201 semantic expectations); compare it with `main` (`https://github.com/scottstarsman/UnitLocationData/compare/main...canadian-batch1-jun-dec-1944`). Task approved by Scott on 28 October 2026 ("Let's leave Italy out. We'll do that as a separate theater. Please proceed with the 1944 Canadians"). Scope: First Canadian Army, II Canadian Corps and the 2nd, 3rd and 4th Canadian Divisions (infantry and armoured) from 4 July to 31 December 1944. Not covered: I Canadian Corps, the 5th Canadian Armoured Division, the 1st Canadian Division, independent and armoured brigades, Italy. Attached British, Polish and US formations appear only as command relations.
+
+### Item 1: reference and operations
+
+- **Reference `R668`**: Stacey, The Victory Campaign (Official History of the Canadian Army, Vol. III, canada.ca PDF), source type `official_history`, family `canada_ca`, accessed and checked 28 October 2026. Printed page numbers are cited.
+- **Six operations** appended to `data/operations.csv` (not re-sorted): `OP-ATLANTIC` (18 to 21 July, parent `OP-CAMP-NORMANDY`), `OP-SPRING` (25 July, `OP-CAMP-NORTHERN-FRANCE`), `OP-TOTALIZE` (7 to 10 August, `OP-CAMP-NORTHERN-FRANCE`), `OP-WELLHIT` (17 to 22 September, `OP-CAMP-RHINELAND`), `OP-UNDERGO` (25 September to 1 October, `OP-CAMP-RHINELAND`), `OP-SWITCHBACK` (6 October to 3 November, a phase of `OP-SCHELDT`). Three rows in `data/operation_relations.csv`: Atlantic concurrent with Goodwood, Spring follows Atlantic, Totalize follows Spring. No `OP-TRACTABLE`: the Tractable claims use `OP-FALAISE`.
+- **`schema/vocabularies.json`** (`operation_date_basis`, `official_history`): old text "Dates from an official history: a US Army Green Book or CMH publication."; new text adds "or a national official history such as the Canadian Army official history (Stacey, The Victory Campaign)". Reason: the six new operations take their dates from Stacey.
+
+### Item 2: First Canadian Army, II Canadian Corps and I Corps
+
+- **Claims:** `C1279` to `C1285` (Army, 7), `C1286` to `C1295` (II Canadian Corps, 10), and `C1278` (I Corps, 23 July: a minimal command-change row that exists only so that a higher-unit claim ends `CR0067` and starts `CR0845`). New claim files `CAN-ARMY-001A.csv`, `CAN-COR-002C.csv`; one row appended to `UK-COR-001C.csv`. Units `CAN-ARMY-001A` and `CAN-COR-002C` became active.
+- **Relations:** `CR0844` (Army to 21st Army Group, 23 July 12:00), `CR0845` (I Corps to the Army, 23 July 12:00), `CR0846` (II Canadian Corps to Second Army, 11 July 15:00 to 31 July 12:00), `CR0847` (II Canadian Corps to the Army, 31 July 12:00), `CR0848` (2nd Division to the Corps, 11 July 15:00), `CR0849` (3rd Division to the Corps, 11 July 15:00), `CR0850` and `CR0851` (7th Armoured and Guards Armoured Divisions attached from 20 July, end unknown), `CR0852` (51st Highland Division attached, 4 August 00:00 to 9 August 13:00), `CR0853` (1st Polish Armoured Division attached, 5 August 06:00 to 28 September).
+- **`CR0067` (I Corps under Second Army, assigned): closed.** Old value: `valid_to` empty, basis `open_at_last_claim`. New value: `valid_to` 1944-07-23, time 12:00, basis `narrative`. Reason: Stacey p. 196 (the front held by the corps passed to First Canadian Army at noon on 23 July) and p. 198 (the corps served under the Army). Annotated in the relation note.
+
+### Item 3: 3rd Canadian Infantry Division
+
+- **Claims:** `C1296` to `C1315` (20 rows, 4 July to 13 November; Carpiquet, Caen, Colombelles, Tilly-la-Campagne, Rouvres, Point 168, Trun, Rouen, Boulogne, Calais, the Leopold Canal, Hoofdplaat, Breskens, Nijmegen). Commanders from Appendix G: Keller to 8 August, Blackader acting 8 to 18 August, Spry from 18 August.
+- **`CR0003` (3rd Division under I Corps, assigned): closed.** Old value: `valid_to` empty, basis `open_at_last_claim`. New value: `valid_to` 1944-07-11, time 15:00, basis `narrative`. Reason: Stacey p. 166 (II Canadian Corps took over the Caen front at 15:00 on 11 July with the 3rd Division under command); the division passes to `CR0849`. Annotated in the relation note.
+- **Overlap rows:** three rows in `data/command_relation_overlaps.csv`, kind `transfer_dates_differ`, for same-day handovers at a recorded hour: `CR0003` and `CR0849` (11 July), `CR0067` and `CR0845` (23 July), `CR0846` and `CR0847` (31 July). Under the day-level rule both relations cover the boundary day; the sources give the hour and do not disagree.
+
+### Item 4: 2nd Canadian Infantry Division
+
+- **Claims:** `C1316` to `C1331` (16 rows, 7 July to 7 December; Juno area, Louvigny, Verrieres, Bretteville-sur-Laize, Falaise, the Foret de la Londe, Dieppe, Antwerp, Woensdrecht, Sloedam, Groesbeek). Commanders: Foulkes to 26 September, Keefler acting from 27 September, Matthews from 10 November.
+- **Relation `CR0854`** (2nd Division attached to I Corps, 26 September to midnight 6-7 October, stated start and end). The standing relation to II Canadian Corps is not closed.
+
+### Item 5: 4th Canadian Armoured Division
+
+- **Claims:** `C1332` to `C1342` (11 rows, 31 July to 23 December; Bourguebus, Cintheaux, Olendon, Damblainville, Trun (confidence 0.9: Stacey p. 256 and CMH Breakout and Pursuit p. 532), St. Lambert, Criquebeuf, Antwerp, Esschen, Steenbergen, Boxtel). Commanders: Kitching to 21 August, Foster 22 August to 30 November, Vokes from 1 December.
+- **Relations:** `CR0855` (to II Canadian Corps, assigned, from 31 July, start inferred), `CR0856` (attached to I Corps from 18 October 00:00; end inferred from the next claim, 22 December), `CR0857` (Army Reserve, from 23 December, start is the claim date).
+
+### Places, tests and documents
+
+- **Places:** 29 new, `PL0665` to `PL0693` (geocoded with Nominatim, place centres; precision 3 to 10 km). Existing places reused: Caen, the Caen sector, Juno, Nijmegen, Antwerp, Breskens, Tilburg (not used), Bretteville-sur-Laize, St. Lambert, Walcheren.
+- **Counts:** 65 claims (`C1278` to `C1342`; confidence 0.9 for 1, 0.7 for 32, 0.5 for 26, 0.3 for 6), 14 relations, 83 evidence links (2,028 in all), 3 overlaps (27), 4 units activated (257 active, 110 placeholders). Next free ids: `C1343`, `CR0858`, `PL0694`, `R669`, `G028`.
+- **Checks:** `validate` OK (257 claim files, 1,342 claims, 367 units, 24 conflict groups; 8 warnings: the 7 older ones plus `CAN-INF-002D` line 13, the 7 October claim that ends the I Corps attachment is listed under its operational parent, II Canadian Corps). All 148 quotations in the new notes were checked by script against the Stacey page text and the CMH page. The who_controls grid of 5,020 questions before: 302 answers changed, all for units whose chain passes through I Corps, II Canadian Corps or the Army (CAN-ARM-002B, CAN-INF-003D, UK-COR-001C, UK-ABN-006D, UK-INF-003D, UK-INF-051D, UK-ARM-007D, UK-ARM-GRDD, US-ABN-101D, US-INF-104D); 200 new questions for the new units.
+- **`scripts/semantic_tests.py`**: scenario 14 added (20 expectations: the hour-level handovers of 11, 23 and 31 July, the two temporary attachments to I Corps, the Army Reserve relation, `C1278`); 221 expectations in all.
+- **Documents:** README counts; `docs/HANDOFF.md` (state table, validator and test baselines, decision log); `docs/roadmap.md` (table row and section); `docs/sources.md` (Stacey); `docs/coverage.md` and `build/` regenerated; `docs/review/` sample regenerated.
+
 ## cleanup-open-items-oct28: clean-up of open items (28 October 2026)
 
 Branch `cleanup-open-items-oct28`, cut from `main` (`af8ae06`, 1,277 claims, 367 units, 24 conflict groups, 194 semantic expectations); compare it with `main` (`https://github.com/scottstarsman/UnitLocationData/compare/main...cleanup-open-items-oct28`). Task approved by Scott on 28 October 2026 (clean-up task 1: the open conflict groups `G021` to `G025`, the 243rd Division, the parent of the 353rd Division, the stray file `WorldWar2/before.txt`). Every change below lists old value, new value and reason; the claims were not deleted and no claim was added.

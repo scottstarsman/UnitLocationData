@@ -514,8 +514,52 @@ def scenario_13_cleanup_open_items_oct28():
     expect(s + ': 353rd Division, 20 Sep (CMH Siegfried Line ch. 4 p. 87, 92): the LXXIV Corps is the parent, not the LXXXIV Corps', sorted(a), [('GER-COR-074C', 'assigned')])
 
 
+def scenario_14_canadian_batch_1_jun_dec_1944():
+    """Canadian Batch 1 (July to December 1944): same-day handovers at a recorded hour (3rd Division to II Canadian Corps at 15:00 on 11 July, I Corps to First Canadian Army at noon on 23 July, II Canadian Corps to the Army at noon on 31 July); the temporary attachments of the 2nd Division (26 September to midnight 6-7 October) and the 4th Armoured Division (from midnight 17-18 October) to I Corps; the 4th Armoured Division in Army Reserve in December."""
+    s = 'scenario 14, Canadian Batch 1 (July to December 1944)'
+    a = intervals('CAN-INF-003D', '1944-07-10')
+    expect(s + ': 3rd Division, 10 Jul: I Corps is certain (Stacey p. 146, Montgomery told Dempsey to place the division under 2nd Corps only later)', sorted(a), [('UK-COR-001C', 'assigned')])
+    a = intervals('CAN-INF-003D', '1944-07-11', '12:00')
+    expect(s + ': 3rd Division, 11 Jul 12:00: I Corps is still certain', sorted(a), [('UK-COR-001C', 'assigned')])
+    a = intervals('CAN-INF-003D', '1944-07-11', '16:00')
+    expect(s + ': 3rd Division, 11 Jul 16:00 (Stacey p. 166, 3:00 p.m.): II Canadian Corps is certain and I Corps no longer applies', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('CAN-INF-003D', '1944-07-11')
+    expect(s + ': 3rd Division, 11 Jul without an hour: both corps are possible only', sorted(a), [('CAN-COR-002C', 'assigned'), ('UK-COR-001C', 'assigned')])
+    expect(s + ': 3rd Division, 11 Jul without an hour: I Corps is possible', a[('UK-COR-001C', 'assigned')][0], 'possible')
+    a = intervals('UK-COR-001C', '1944-07-23', '11:00')
+    expect(s + ': I Corps, 23 Jul 11:00: Second Army is certain', sorted(a), [('UK-ARMY-002A', 'assigned')])
+    a = intervals('UK-COR-001C', '1944-07-23', '13:00')
+    expect(s + ': I Corps, 23 Jul 13:00 (Stacey p. 196, noon): First Canadian Army is certain and Second Army no longer applies', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1944-07-20')
+    expect(s + ': II Canadian Corps, 20 Jul: Second Army is certain', sorted(a), [('UK-ARMY-002A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1944-07-31', '13:00')
+    expect(s + ': II Canadian Corps, 31 Jul 13:00 (Stacey pp. 200-201, noon): First Canadian Army is certain', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('CAN-COR-002C', '1944-08-05')
+    expect(s + ': II Canadian Corps, 5 Aug: First Canadian Army is certain', sorted(a), [('CAN-ARMY-001A', 'assigned')])
+    a = intervals('CAN-INF-002D', '1944-09-27')
+    expect(s + ': 2nd Division, 27 Sep (Stacey p. 367): II Canadian Corps assigned and I Corps attached, both certain', sorted(a), [('CAN-COR-002C', 'assigned'), ('UK-COR-001C', 'attached')])
+    a = intervals('CAN-INF-002D', '1944-10-08')
+    expect(s + ': 2nd Division, 8 Oct (Stacey p. 381, midnight 6-7 October): the attachment to I Corps has ended', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('CAN-INF-002D', '1944-07-10')
+    expect(s + ': 2nd Division, 10 Jul: no relation yet (the corps took over on 11 July)', sorted(a), [])
+    a = intervals('CAN-ARM-004D', '1944-08-01')
+    expect(s + ': 4th Armoured Division, 1 Aug (Stacey p. 202): II Canadian Corps is certain', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('CAN-ARM-004D', '1944-10-17', '12:00')
+    expect(s + ': 4th Armoured Division, 17 Oct 12:00: not yet under I Corps', sorted(a), [('CAN-COR-002C', 'assigned')])
+    a = intervals('CAN-ARM-004D', '1944-10-20')
+    expect(s + ': 4th Armoured Division, 20 Oct (Stacey p. 390, midnight of 17 October): I Corps attached and II Canadian Corps assigned', sorted(a), [('CAN-COR-002C', 'assigned'), ('UK-COR-001C', 'attached')])
+    a = intervals('CAN-ARM-004D', '1944-12-24')
+    expect(s + ': 4th Armoured Division, 24 Dec (Stacey p. 443): the attachment to I Corps has ended and the Army Reserve relation applies', sorted(a), [('CAN-ARMY-001A', 'reserve'), ('CAN-COR-002C', 'assigned')])
+    expect(s + ': 4th Armoured Division, 24 Dec: the Army Reserve relation is possible only', a[('CAN-ARMY-001A', 'reserve')][0], 'possible')
+    a = intervals('CAN-ARMY-001A', '1944-07-25')
+    expect(s + ': First Canadian Army, 25 Jul: 21st Army Group is certain', sorted(a), [('UK-AG-021G', 'assigned')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1278']
+    expect(s + ': C1278 is the minimal I Corps evidence claim of 23 July', (c['unit_id'], c['date'], c['event_type']), ('UK-COR-001C', '1944-07-23', 'command_change'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944):
         before = len(FAILURES)
         try:
             fn()

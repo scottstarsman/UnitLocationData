@@ -4,6 +4,9 @@ CR0002,C0001,1,observed_during,,,,,,,,,"Independent (army-level) armoured brigad
 CR0003,C0002,1,observed_during,,,,,,,,,,
 CR0003,C0048,1,observed_during,,,,,,,,,,
 CR0003,C0079,1,observed_during,,,,,,,,,,
+CR0003,C1296,1,observed_during,,,,,,,,,,
+CR0003,C1297,1,observed_during,,,,,,,,,,
+CR0003,C1298,1,asserts_end,,,,,1944-07-11,,15:00,narrative,Passes under II Canadian Corps at 15:00 on 11 July,narrative
 CR0004,C0011,1,observed_during,,,,,,,,,,
 CR0004,C0202,1,observed_during,,,,,,,,,,
 CR0004,C0714,1,observed_during,,,,,,,,,,
@@ -180,6 +183,7 @@ CR0066,C0166,1,observed_during,,,,,,,,,,
 CR0067,C0021,1,observed_during,,,,,,,,,,
 CR0067,C0084,1,observed_during,,,,,,,,,,
 CR0067,C0151,1,observed_during,,,,,,,,,,
+CR0067,C1278,2,asserts_end,,,,,1944-07-23,,12:00,narrative,Leaves Second Army at noon on 23 July,
 CR0068,C0167,1,observed_during,,,,,,,,,,
 CR0068,C0179,1,observed_during,,,,,,,,,,
 CR0068,C0206,1,observed_during,,,,,,,,,,
@@ -1944,3 +1948,82 @@ CR0840,C1264,1,asserts_end,,,,,1945-04-21,,,narrative,The Clausewitz Panzer Divi
 CR0841,C1269,1,observed_during,,,,,,,,,,
 CR0842,C1272,1,observed_during,,,,,,,,,,
 CR0843,C1277,1,observed_during,,,,,,,,,,
+CR0844,C1279,1,asserts_start,1944-07-23,,12:00,,,,,,Operational at noon on 23 July under Montgomery's directive of 21 July,narrative
+CR0844,C1280,1,observed_during,,,,,,,,,,
+CR0844,C1281,1,observed_during,,,,,,,,,,
+CR0844,C1282,1,observed_during,,,,,,,,,,
+CR0844,C1283,1,observed_during,,,,,,,,,,
+CR0844,C1284,1,observed_during,,,,,,,,,,
+CR0844,C1285,1,observed_during,,,,,,,,,,
+CR0845,C1278,1,asserts_start,1944-07-23,,12:00,,,,,,Under First Canadian Army from noon on 23 July,narrative
+CR0845,C1279,2,listed_by_higher_unit,1944-07-23,,12:00,,,,,,Lists I Corps (Stacey: 1st British Corps) as the corps whose front it took over,narrative
+CR0846,C1286,1,asserts_start,1944-07-11,,15:00,,,,,,Took over the Caen front at 15:00 on 11 July; the army is inferred from pp. 146 and 200,narrative
+CR0846,C1287,1,observed_during,,,,,,,,,,
+CR0846,C1288,1,observed_during,,,,,,,,,,
+CR0846,C1289,1,asserts_end,,,,,1944-07-31,,12:00,narrative,Passes to First Canadian Army at noon on 31 July,narrative
+CR0847,C1280,2,listed_by_higher_unit,1944-07-31,,12:00,,,,,,Lists II Canadian Corps as taken under command at noon on 31 July,narrative
+CR0847,C1289,2,asserts_start,1944-07-31,,12:00,,,,,,Taken under command by First Canadian Army at noon on 31 July,narrative
+CR0847,C1290,1,observed_during,,,,,,,,,,
+CR0847,C1291,1,observed_during,,,,,,,,,,
+CR0847,C1292,1,observed_during,,,,,,,,,,
+CR0847,C1293,1,observed_during,,,,,,,,,,
+CR0847,C1294,1,observed_during,,,,,,,,,,
+CR0847,C1295,1,observed_during,,,,,,,,,,
+CR0848,C1286,2,listed_by_higher_unit,1944-07-11,,15:00,,,,,,Listed as under command when the corps took over the front,narrative
+CR0848,C1288,4,listed_by_higher_unit,,,,,,,,,Listed as taking part in the first phase of the attack,
+CR0848,C1290,2,listed_by_higher_unit,,,,,,,,,Assault division of the first phase,
+CR0848,C1295,2,listed_by_higher_unit,,,,,,,,,Right-hand division of the corps front between Cuijk and Groesbeek,
+CR0848,C1317,1,observed_during,,,,,,,,,,
+CR0848,C1318,1,observed_during,,,,,,,,,,
+CR0848,C1319,1,observed_during,,,,,,,,,,
+CR0848,C1320,1,observed_during,,,,,,,,,,
+CR0848,C1321,1,observed_during,,,,,,,,,,
+CR0848,C1322,1,observed_during,,,,,,,,,,
+CR0848,C1323,1,observed_during,,,,,,,,,,
+CR0848,C1324,1,observed_during,,,,,,,,,,
+CR0848,C1325,1,observed_during,,,,,,,,,,
+CR0848,C1326,1,observed_during,,,,,,,,,,
+CR0848,C1327,1,observed_during,,,,,,,,,,
+CR0848,C1328,1,observed_during,,,,,,,,,,
+CR0848,C1329,1,observed_during,,,,,,,,,,
+CR0848,C1330,1,observed_during,,,,,,,,,,
+CR0848,C1331,1,observed_during,,,,,,,,,,
+CR0849,C1298,2,asserts_start,1944-07-11,,15:00,,,,,,Under command of II Canadian Corps from 15:00 on 11 July,narrative
+CR0849,C1299,1,observed_during,,,,,,,,,,
+CR0849,C1300,1,observed_during,,,,,,,,,,
+CR0849,C1301,1,observed_during,,,,,,,,,,
+CR0849,C1302,1,observed_during,,,,,,,,,,
+CR0849,C1303,1,observed_during,,,,,,,,,,
+CR0849,C1304,1,observed_during,,,,,,,,,,
+CR0849,C1305,1,observed_during,,,,,,,,,,
+CR0849,C1306,1,observed_during,,,,,,,,,,
+CR0849,C1307,1,observed_during,,,,,,,,,,
+CR0849,C1308,1,observed_during,,,,,,,,,,
+CR0849,C1309,1,observed_during,,,,,,,,,,
+CR0849,C1310,1,observed_during,,,,,,,,,,
+CR0849,C1311,1,observed_during,,,,,,,,,,
+CR0849,C1312,1,observed_during,,,,,,,,,,
+CR0849,C1313,1,observed_during,,,,,,,,,,
+CR0849,C1314,1,observed_during,,,,,,,,,,
+CR0849,C1315,1,observed_during,,,,,,,,,,
+CR0850,C1288,2,listed_by_higher_unit,1944-07-20,,,,,,,,Listed as under the corps since 20 July,narrative
+CR0851,C1288,3,listed_by_higher_unit,1944-07-20,,,,,,,,Listed as under the corps since 20 July,narrative
+CR0852,C1290,3,listed_by_higher_unit,1944-08-04,,00:00,,1944-08-09,,13:00,narrative,Passed to the corps at midnight 3-4 August and reverted to the 1st British Corps at 13:00 on 9 August,narrative
+CR0853,C1290,4,listed_by_higher_unit,1944-08-05,,06:00,,,,,,Came under General Simonds at 06:00 on 5 August,narrative
+CR0853,C1294,2,listed_by_higher_unit,,,,,1944-09-28,,,narrative,Passed under General Crocker on 28 September,narrative
+CR0854,C1326,2,asserts_start,1944-09-26,,,,,,,,Placed temporarily under the 1st British Corps on 26 September,narrative
+CR0854,C1327,2,asserts_end,,,,,1944-10-07,,00:00,narrative,Passed from the 1st British to the 2nd Canadian Corps at midnight of 6-7 October,narrative
+CR0855,C1332,1,asserts_start,1944-07-31,,,,,,,,"Division relieved the 3rd Division in the line under II Canadian Corps, the relief completed at 04:30 on 31 July",inferred
+CR0855,C1333,1,observed_during,,,,,,,,,,
+CR0855,C1334,1,observed_during,,,,,,,,,,
+CR0855,C1335,1,observed_during,,,,,,,,,,
+CR0855,C1336,1,observed_during,,,,,,,,,,
+CR0855,C1337,1,observed_during,,,,,,,,,,
+CR0855,C1338,1,observed_during,,,,,,,,,,
+CR0855,C1339,1,observed_during,,,,,,,,,,
+CR0855,C1340,1,observed_during,,,,,,,,,,
+CR0855,C1341,1,observed_during,,,,,,,,,,
+CR0856,C1339,2,asserts_start,1944-10-18,,00:00,,,,,,Came under the 1st Corps at midnight on 17 October,narrative
+CR0856,C1340,2,observed_during,,,,,,,,,,
+CR0856,C1341,2,observed_during,,,,,,,,,,
+CR0857,C1342,1,observed_during,,,,,,,,,,

@@ -248,7 +248,7 @@
     "description": "Where the dates of an operation row come from (column date_basis).",
     "values": {
       "cmh_streamer": "Dates of a US Army campaign streamer (Center of Military History).",
-      "official_history": "Dates from a US Army official history (Green Book) or CMH publication.",
+      "official_history": "Dates from an official history: a US Army Green Book or CMH publication, or a national official history such as the Canadian Army official history (Stacey, The Victory Campaign).",
       "secondary": "Dates from Wikipedia or another secondary source.",
       "derived": "Dates set by the dataset authors from several sources, because no single source dates the phase; see notes."
     }

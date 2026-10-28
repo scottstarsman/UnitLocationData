@@ -5778,7 +5778,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Champagne-Ardenne",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -8998,7 +8998,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9138,7 +9138,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -9278,7 +9278,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9378,7 +9378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9398,7 +9398,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9858,7 +9858,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Tirol",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9878,7 +9878,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -11558,7 +11558,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12278,7 +12278,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 4
+    "claims_count": 8
    }
   },
   {
@@ -12358,7 +12358,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bremen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12619,6 +12619,526 @@
     "country": "DE",
     "region": "Baden-Württemberg",
     "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3472,
+     51.6747
+    ]
+   },
+   "properties": {
+    "place_id": "PL0639",
+    "name": "Lippstadt, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "place_id": "PL0640",
+    "name": "Ruhr pocket (representative point at Essen)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 21
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.5754,
+     48.1371
+    ]
+   },
+   "properties": {
+    "place_id": "PL0641",
+    "name": "Bavaria (representative point at Munich)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8072,
+     53.0758
+    ]
+   },
+   "properties": {
+    "place_id": "PL0642",
+    "name": "Northwest Germany (representative point at Bremen)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "DE",
+    "region": "Bremen",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4712,
+     53.2174
+    ]
+   },
+   "properties": {
+    "place_id": "PL0643",
+    "name": "Timeloberg near Wendisch Evern (Lüneburg Heath), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9435,
+     49.778
+    ]
+   },
+   "properties": {
+    "place_id": "PL0644",
+    "name": "Würzburg, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6664,
+     49.2178
+    ]
+   },
+   "properties": {
+    "place_id": "PL0645",
+    "name": "Bavarian-Bohemian frontier (representative point at Cham)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8701,
+     50.2306
+    ]
+   },
+   "properties": {
+    "place_id": "PL0646",
+    "name": "Karlsbad (Karlovy Vary), Czechia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "CZ",
+    "region": "Karlovy Vary",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4589,
+     51.2094
+    ]
+   },
+   "properties": {
+    "place_id": "PL0647",
+    "name": "Mühlhausen, Thüringen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Thüringen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6095,
+     51.7266
+    ]
+   },
+   "properties": {
+    "place_id": "PL0648",
+    "name": "Harz mountains (representative point at Braunlage)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "place_id": "PL0649",
+    "name": "Blankenburg (Harz), Sachsen-Anhalt",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2435,
+     51.8883
+    ]
+   },
+   "properties": {
+    "place_id": "PL0650",
+    "name": "Roßlau, Dessau-Roßlau",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0256,
+     50.8751
+    ]
+   },
+   "properties": {
+    "place_id": "PL0651",
+    "name": "Siegen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1605,
+     47.7664
+    ]
+   },
+   "properties": {
+    "place_id": "PL0652",
+    "name": "Lake Constance, northwestern end (representative point at Überlingen)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4959,
+     47.9534
+    ]
+   },
+   "properties": {
+    "place_id": "PL0653",
+    "name": "Black Forest, southern part (representative point at Donaueschingen)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.7473,
+     47.5026
+    ]
+   },
+   "properties": {
+    "place_id": "PL0654",
+    "name": "Bregenz, Vorarlberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "AT",
+    "region": "Vorarlberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5334,
+     51.1933
+    ]
+   },
+   "properties": {
+    "place_id": "PL0655",
+    "name": "Winterberg, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0536,
+     48.5203
+    ]
+   },
+   "properties": {
+    "place_id": "PL0656",
+    "name": "Tübingen, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "place_id": "PL0657",
+    "name": "Oldenburg (Oldb), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5514,
+     53.379
+    ]
+   },
+   "properties": {
+    "place_id": "PL0658",
+    "name": "Lauenburg/Elbe, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3951,
+     52.5174
+    ]
+   },
+   "properties": {
+    "place_id": "PL0659",
+    "name": "Berlin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "Berlin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5386,
+     52.9841
+    ]
+   },
+   "properties": {
+    "place_id": "PL0660",
+    "name": "Uelzen, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6201,
+     51.1096
+    ]
+   },
+   "properties": {
+    "place_id": "PL0661",
+    "name": "Hallenberg, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6148,
+     47.9977
+    ]
+   },
+   "properties": {
+    "place_id": "PL0662",
+    "name": "Bad Dürrheim, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0635,
+     50.388
+    ]
+   },
+   "properties": {
+    "place_id": "PL0663",
+    "name": "Limburg an der Lahn, Hessen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "DE",
+    "region": "Hessen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.146,
+     49.3521
+    ]
+   },
+   "properties": {
+    "place_id": "PL0664",
+    "name": "Odenwald (representative point at Mosbach)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
    }
   }
  ]

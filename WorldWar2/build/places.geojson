@@ -15480,6 +15480,46 @@
     "region": "Mecklenburg-Vorpommern",
     "claims_count": 1
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4428,
+     51.2292
+    ]
+   },
+   "properties": {
+    "place_id": "PL0782",
+    "name": "Neerpelt, Limburg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8453,
+     51.9188
+    ]
+   },
+   "properties": {
+    "place_id": "PL0783",
+    "name": "Elst, Overbetuwe, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
+   }
   }
  ]
 }

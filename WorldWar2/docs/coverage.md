@@ -47,11 +47,11 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 8 | 814 |
-| operation | 28 | 28 | 305 |
-| battle | 20 | 20 | 295 |
+| campaign | 9 | 8 | 811 |
+| operation | 33 | 30 | 311 |
+| battle | 20 | 20 | 292 |
 | phase | 4 | 4 | 54 |
-| **All** | **62** | **60** | **1468** |
+| **All** | **67** | **62** | **1468** |
 
 ## Places
 

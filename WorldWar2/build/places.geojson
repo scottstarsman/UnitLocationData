@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 7
+    "claims_count": 11
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -10158,7 +10158,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10838,7 +10838,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -11238,7 +11238,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -13138,6 +13138,326 @@
     "precision_km": 25,
     "country": "DE",
     "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5033,
+     49.2854
+    ]
+   },
+   "properties": {
+    "place_id": "PL0665",
+    "name": "Amblie, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.7181,
+     49.1949
+    ]
+   },
+   "properties": {
+    "place_id": "PL0666",
+    "name": "Brionne, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Upper Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2972,
+     49.2041
+    ]
+   },
+   "properties": {
+    "place_id": "PL0667",
+    "name": "Colombelles, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3334,
+     49.1101
+    ]
+   },
+   "properties": {
+    "place_id": "PL0668",
+    "name": "Verrières (Verrières Ridge), Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1725,
+     49.0046
+    ]
+   },
+   "properties": {
+    "place_id": "PL0669",
+    "name": "Rouvres, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0965,
+     49.3058
+    ]
+   },
+   "properties": {
+    "place_id": "PL0670",
+    "name": "Criquebeuf-sur-Seine, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Upper Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4417,
+     49.1841
+    ]
+   },
+   "properties": {
+    "place_id": "PL0671",
+    "name": "Carpiquet, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3064,
+     49.1115
+    ]
+   },
+   "properties": {
+    "place_id": "PL0672",
+    "name": "Tilly-la-Campagne, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4111,
+     49.2654
+    ]
+   },
+   "properties": {
+    "place_id": "PL0673",
+    "name": "Colomby-sur-Thaon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1999,
+     48.8965
+    ]
+   },
+   "properties": {
+    "place_id": "PL0674",
+    "name": "Falaise, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0331,
+     48.8431
+    ]
+   },
+   "properties": {
+    "place_id": "PL0675",
+    "name": "Trun, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.094,
+     49.4405
+    ]
+   },
+   "properties": {
+    "place_id": "PL0676",
+    "name": "Rouen, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Upper Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "place_id": "PL0677",
+    "name": "Boulogne-sur-Mer, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Nord-Pas-de-Calais",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8538,
+     50.9525
+    ]
+   },
+   "properties": {
+    "place_id": "PL0678",
+    "name": "Calais, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Nord-Pas-de-Calais",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4497,
+     51.2364
+    ]
+   },
+   "properties": {
+    "place_id": "PL0679",
+    "name": "Leopold Canal (Leopoldkanaal), East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "BE",
+    "region": "East Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6611,
+     51.3692
+    ]
+   },
+   "properties": {
+    "place_id": "PL0680",
+    "name": "Hoofdplaat, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
     "claims_count": 1
    }
   }

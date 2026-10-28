@@ -9395,6 +9395,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.4417,
+     49.1841
+    ]
+   },
+   "properties": {
+    "claim_id": "C1296",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-04",
+    "place_id": "PL0671",
+    "location_name": "Carpiquet, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Operation Windsor: 8th Brigade takes Carpiquet village and the north hangars, a partial victory",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 153, 155"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -9928,6 +9969,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1297",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-09",
+    "place_id": "PL0057",
+    "location_name": "Caen",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Enters Caen: Stormont, Dundas and Glengarry Highlanders first in; 8th Brigade holds Carpiquet airfield",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: p. 162"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1633,
      49.205
     ]
@@ -10413,6 +10495,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R599;R001",
     "source_locator": "R599: Einsatz und Unterstellung (11 July 1944)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1286",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-11",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Takes over about 8000 yards of the Caen front at 15:00 with the 2nd and 3rd Divisions",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 146, 166"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1298",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-11",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Passes from I Corps to II Canadian Corps at 15:00 when the corps takes over the Caen front",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 153, 166"
    }
   },
   {
@@ -12019,6 +12183,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2972,
+     49.2041
+    ]
+   },
+   "properties": {
+    "claim_id": "C1287",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0667",
+    "location_name": "Colombelles, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Opens Operation Atlantic: 3rd Division attacks Colombelles, Giberville and Mondeville east of the Orne",
+    "operation_id": "OP-ATLANTIC",
+    "operation": "Operation Atlantic",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Atlantic",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 171, 176"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2972,
+     49.2041
+    ]
+   },
+   "properties": {
+    "claim_id": "C1299",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL0667",
+    "location_name": "Colombelles, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Operation Atlantic: 8th Brigade fights through Colombelles steelworks and Giberville, 9th Brigade into Vaucelles",
+    "operation_id": "OP-ATLANTIC",
+    "operation": "Operation Atlantic",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Atlantic",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 171, 172"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.6303,
      49.0822
     ]
@@ -12053,6 +12299,88 @@
     "location_temporal_offset_days": -2,
     "reference_ids": "R593;R185;R001",
     "source_locator": "R593: p. 458, 325-326; R185: list of commanders"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1278",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-23",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Passes from Second Army to First Canadian Army at noon; Stacey calls it 1st British Corps",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 196, 198"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5033,
+     49.2854
+    ]
+   },
+   "properties": {
+    "claim_id": "C1279",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-23",
+    "place_id": "PL0665",
+    "location_name": "Amblie, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Army headquarters becomes operational and takes over the 1st British Corps front",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-23",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 146, 196, 297"
    }
   },
   {
@@ -12873,6 +13201,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R592;R001",
     "source_locator": "R592: p. 240, 228, 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3334,
+     49.1101
+    ]
+   },
+   "properties": {
+    "claim_id": "C1288",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-25",
+    "place_id": "PL0668",
+    "location_name": "Verrières (Verrières Ridge), Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Opens Operation Spring at 03:30: 2nd and 3rd Divisions attack Verrieres Ridge and Tilly-la-Campagne",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 186"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3064,
+     49.1115
+    ]
+   },
+   "properties": {
+    "claim_id": "C1300",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-25",
+    "place_id": "PL0672",
+    "location_name": "Tilly-la-Campagne, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Operation Spring: North Nova Scotia Highlanders attack Tilly-la-Campagne but cannot clear it",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 189"
    }
   },
   {
@@ -14062,6 +14472,129 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R590;R001",
     "source_locator": "R590: p. 323"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5033,
+     49.2854
+    ]
+   },
+   "properties": {
+    "claim_id": "C1280",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0665",
+    "location_name": "Amblie, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Takes II Canadian Corps and the front south of Caen under command at noon",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 201"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1289",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Passes from Second Army to First Canadian Army at noon with the front south of Caen",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 200, 201"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4111,
+     49.2654
+    ]
+   },
+   "properties": {
+    "claim_id": "C1301",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0673",
+    "location_name": "Colomby-sur-Thaon, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Relieved by 4th Armoured Division at 04:30 after 55 days in the line; withdraws for a short rest",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 202"
    }
   },
   {
@@ -16037,6 +16570,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1290",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Opens Operation Totalize at 23:30: night attack down the Caen-Falaise road",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 208, 218, 219, 229"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -16153,6 +16727,47 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R364;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1302",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL0057",
+    "location_name": "Caen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "General Keller wounded when Allied bombers hit divisional tactical headquarters; Blackader takes over",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: p. 224"
    }
   },
   {
@@ -17308,6 +17923,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1725,
+     49.0046
+    ]
+   },
+   "properties": {
+    "claim_id": "C1291",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-14",
+    "place_id": "PL0669",
+    "location_name": "Rouvres, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Opens Operation Tractable by day: 3rd and 4th Divisions cross the Laison valley",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 240, 241"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1725,
+     49.0046
+    ]
+   },
+   "properties": {
+    "claim_id": "C1303",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-14",
+    "place_id": "PL0669",
+    "location_name": "Rouvres, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Operation Tractable: division crosses the Laison valley; 1st Hussars cross at Rouvres, North Shore take Sassy",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 239, 241"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.2109,
      48.6421
     ]
@@ -18087,6 +18784,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1999,
+     48.8965
+    ]
+   },
+   "properties": {
+    "claim_id": "C1304",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0674",
+    "location_name": "Falaise, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Canadian Scottish take Point 168 north of Falaise in a costly afternoon attack; 7th Brigade on Point 159 next day",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 248, 249, 250"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -2.0261,
      48.6494
     ]
@@ -18490,6 +19228,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R404;R077;R001",
     "source_locator": "R404: p. 532"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0331,
+     48.8431
+    ]
+   },
+   "properties": {
+    "claim_id": "C1305",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-18",
+    "place_id": "PL0675",
+    "location_name": "Trun, Orne",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Moves up through the Dives valley to hold the east bank of the Dives from Morteaux-Couliboeuf to Trun",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 256, 259"
    }
   },
   {
@@ -19474,6 +20253,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R404;R001",
     "source_locator": "R404: p. 551, 550"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0908,
+     48.813
+    ]
+   },
+   "properties": {
+    "claim_id": "C1292",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL0514",
+    "location_name": "Saint-Lambert-sur-Dives and Chambois (midpoint)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "The Falaise Gap is finally and completely closed after contact with the Poles",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 259, 264"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0331,
+     48.8431
+    ]
+   },
+   "properties": {
+    "claim_id": "C1306",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL0675",
+    "location_name": "Trun, Orne",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "9th Brigade beats off a German attack at Magny and meets the 53rd Division about Trun as the Gap closes",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 263, 264"
    }
   },
   {
@@ -20670,6 +21531,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.0965,
+     49.3058
+    ]
+   },
+   "properties": {
+    "claim_id": "C1293",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-26",
+    "place_id": "PL0670",
+    "location_name": "Criquebeuf-sur-Seine, Eure",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "First Seine crossing: a platoon crosses near Criquebeuf at 17:00; corps assaults at Pont de l Arche and Elbeuf",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 282, 283, 287"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1332,
      52.6362
     ]
@@ -21203,6 +22105,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.094,
+     49.4405
+    ]
+   },
+   "properties": {
+    "claim_id": "C1307",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-30",
+    "place_id": "PL0676",
+    "location_name": "Rouen, Seine-Maritime",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "9th Brigade patrols enter Rouen; Brigadier Rockingham is first into the main square",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 293"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.49,
      48.96
     ]
@@ -21319,6 +22262,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R411;R162;R001",
     "source_locator": "R411: p. 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.7181,
+     49.1949
+    ]
+   },
+   "properties": {
+    "claim_id": "C1281",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-31",
+    "place_id": "PL0666",
+    "location_name": "Brionne, Eure",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "Main Headquarters moves up from Amblie and opens near Brionne at midnight 30-31 August",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 297"
    }
   },
   {
@@ -26615,6 +27599,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "claim_id": "C1308",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0677",
+    "location_name": "Boulogne-sur-Mer, Pas-de-Calais",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Operation Wellhit: assault on Boulogne after bombing, 8th and 9th Brigades attack at 09:55",
+    "operation_id": "OP-WELLHIT",
+    "operation": "Operation Wellhit",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wellhit",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 339, 340"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -28255,6 +29280,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "claim_id": "C1309",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL0677",
+    "location_name": "Boulogne-sur-Mer, Pas-de-Calais",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "German garrison of Boulogne surrenders: General Heim gives up to Brigadier Rockingham at 16:30",
+    "operation_id": "OP-WELLHIT",
+    "operation": "Operation Wellhit",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wellhit",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 343"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -28911,6 +29977,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.8538,
+     50.9525
+    ]
+   },
+   "properties": {
+    "claim_id": "C1310",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL0678",
+    "location_name": "Calais, Pas-de-Calais",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Operation Undergo: division attacks the western defences of Calais at 10:15 after the bombing",
+    "operation_id": "OP-UNDERGO",
+    "operation": "Operation Undergo",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undergo",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 349"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -28993,6 +30100,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3997,
+     51.2211
+    ]
+   },
+   "properties": {
+    "claim_id": "C1294",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-26",
+    "place_id": "PL0574",
+    "location_name": "Antwerp, Belgium",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Front reduced: 2nd Division placed temporarily under I Corps; the Polish division follows on 28 September",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 367"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5113,
      48.8231
     ]
@@ -29068,6 +30216,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R416;R002",
     "source_locator": "R416: p. 245-246"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3997,
+     51.2211
+    ]
+   },
+   "properties": {
+    "claim_id": "C1282",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL0574",
+    "location_name": "Antwerp, Belgium",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Simonds takes over the Army from Crerar, who is ill; Foulkes takes the corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 373"
    }
   },
   {
@@ -29444,6 +30633,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.8538,
+     50.9525
+    ]
+   },
+   "properties": {
+    "claim_id": "C1311",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL0678",
+    "location_name": "Calais, Pas-de-Calais",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "All resistance in Calais ends by 09:00 after the Canadian Scottish and Regina Rifles finish mopping up",
+    "operation_id": "OP-UNDERGO",
+    "operation": "Operation Undergo",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undergo",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 352, 393"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -29567,6 +30797,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.4497,
+     51.2364
+    ]
+   },
+   "properties": {
+    "claim_id": "C1312",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-06",
+    "place_id": "PL0679",
+    "location_name": "Leopold Canal (Leopoldkanaal), East Flanders",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Operation Switchback: 7th Brigade assaults across the Leopold Canal at 05:30 behind Wasp flamethrowers",
+    "operation_id": "OP-SWITCHBACK",
+    "operation": "Operation Switchback",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Switchback",
+    "strength_status": "unknown",
+    "location_date": "1944-10-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 393"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -29642,6 +30913,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R593;R001",
     "source_locator": "R593: p. 404"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6611,
+     51.3692
+    ]
+   },
+   "properties": {
+    "claim_id": "C1313",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL0680",
+    "location_name": "Hoofdplaat, Zeeland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "9th Brigade lands from Buffaloes on beaches east of Hoofdplaat about 02:00 behind the Leopold line",
+    "operation_id": "OP-SWITCHBACK",
+    "operation": "Operation Switchback",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Switchback",
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 396"
    }
   },
   {
@@ -31207,6 +32519,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C1314",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-03",
+    "place_id": "PL0569",
+    "location_name": "Breskens, Zeeland",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Operation Switchback declared complete at 09:50 after the Breskens pocket is cleared",
+    "operation_id": "OP-SWITCHBACK",
+    "operation": "Operation Switchback",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Switchback",
+    "strength_status": "unknown",
+    "location_date": "1944-11-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 400"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3811,
      50.7129
     ]
@@ -31904,6 +33257,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C1283",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Organized resistance on Walcheren ends; the Battle of the Scheldt is over",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-11-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: p. 426"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1558,
      49.3031
     ]
@@ -32061,6 +33455,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R645;R001",
     "source_locator": "R645: p. 420, 447"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3997,
+     51.2211
+    ]
+   },
+   "properties": {
+    "claim_id": "C1284",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-09",
+    "place_id": "PL0574",
+    "location_name": "Antwerp, Belgium",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Crerar returns and resumes command of the Army at noon; Simonds returns to the corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 426"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C1295",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-09",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "Takes over the Nijmegen sector from 30th Corps; control passes to First Canadian Army at noon",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 428, 430"
    }
   },
   {
@@ -32881,6 +34357,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R418;R001",
     "source_locator": "R418: p. 365"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C1315",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-13",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Relieves the 82nd Airborne Division at midnight 12-13 November and holds the front east of Nijmegen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-13",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: p. 430"
    }
   },
   {
@@ -38006,6 +39523,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R388;R473;R001",
     "source_locator": "R388: p. 433, 432"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C1285",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Warns corps commanders of a possible German attack on the Army front during the Ardennes offensive",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: pp. 442, 443"
    }
   },
   {

@@ -28,17 +28,17 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Netherlands | brigade | 1 | 0 | 0 | 1 | 0 | 0 |
 | Poland | division | 1 | 0 | 0 | 1 | 1 | 0 |
 | Poland | brigade | 1 | 0 | 0 | 1 | 1 | 0 |
-| UK | army_group | 0 | 0 | 1 | 1 | 1 | 6 |
-| UK | army | 0 | 0 | 1 | 1 | 0 | 5 |
-| UK | corps | 0 | 0 | 5 | 5 | 1 | 41 |
-| UK | division | 0 | 0 | 15 | 15 | 7 | 109 |
+| UK | army_group | 0 | 0 | 1 | 1 | 1 | 8 |
+| UK | army | 0 | 0 | 1 | 1 | 0 | 6 |
+| UK | corps | 0 | 0 | 5 | 5 | 1 | 44 |
+| UK | division | 0 | 0 | 15 | 15 | 7 | 131 |
 | UK | brigade | 6 | 0 | 3 | 9 | 6 | 3 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 7 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 43 |
 | US | corps | 2 | 0 | 15 | 17 | 7 | 117 |
 | US | division | 0 | 0 | 60 | 60 | 24 | 403 |
 | US | regiment/battle_group | 0 | 0 | 2 | 2 | 0 | 3 |
-| **All** | | **103** | **0** | **264** | **367** | **241** | **1510** |
+| **All** | | **103** | **0** | **264** | **367** | **241** | **1538** |
 
 ## Operations
 
@@ -47,27 +47,27 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 8 | 813 |
+| campaign | 9 | 8 | 841 |
 | operation | 33 | 33 | 339 |
 | battle | 20 | 20 | 296 |
 | phase | 4 | 4 | 62 |
-| **All** | **67** | **65** | **1510** |
+| **All** | **67** | **65** | **1538** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 760 places and 99 alias names for 1510 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 774 places and 99 alias names for 1538 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 656 | 1325 |
+| point | 670 | 1353 |
 | area | 86 | 165 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
 | France (FR) | 453 | 834 |
-| Germany (DE) | 182 | 409 |
-| Netherlands (NL) | 55 | 131 |
+| Germany (DE) | 195 | 436 |
+| Netherlands (NL) | 56 | 132 |
 | Belgium (BE) | 48 | 93 |
 | Luxembourg (LU) | 7 | 24 |
 | Austria (AT) | 7 | 8 |

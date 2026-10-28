@@ -446,7 +446,7 @@ PL0450,"Haltern am See, North Rhine-Westphalia",,point,51.7500,7.1833,3,DE,North
 PL0451,"Marburg, Hessen",,point,50.8100,8.7708,5,DE,Hessen,R001,Wikipedia (en): Marburg,1,1,1945-04-07,1945-04-07
 PL0452,"Frankfurt am Main, Hessen",Frankfurt,point,50.1106,8.6822,5,DE,Hessen,R001,Wikipedia (en): Frankfurt,2,2,1945-03-25,1945-04-07
 PL0453,"Nordhausen, Thüringen",Nordhausen,point,51.5050,10.7911,5,DE,Thüringen,R001,"Wikipedia (en): Nordhausen, Thuringia",2,2,1945-04-11,1945-04-12
-PL0454,"Hannover, Niedersachsen",Hanover,point,52.3667,9.7167,5,DE,Niedersachsen,R001,Wikipedia (en): Hanover,1,1,1945-04-11,1945-04-11
+PL0454,"Hannover, Niedersachsen",Hanover,point,52.3667,9.7167,5,DE,Niedersachsen,R001,Wikipedia (en): Hanover,2,2,1945-04-08,1945-04-11
 PL0455,"Westerhüsen, Magdeburg",Westerhausen (Magdeburg),point,52.0633,11.6763,3,DE,Sachsen-Anhalt,R002,"OpenStreetMap Nominatim (Westerhüsen, Magdeburg, Germany)",1,1,1945-04-12,1945-04-12
 PL0456,"Tangermünde, Sachsen-Anhalt",Tangermuende,point,52.5408,11.9689,3,DE,Sachsen-Anhalt,R001,Wikipedia (en): Tangermünde,2,2,1945-04-12,1945-05-04
 PL0457,"Siegburg, North Rhine-Westphalia",,point,50.8014,7.2044,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Siegburg,2,2,1945-04-12,1945-04-12
@@ -616,7 +616,7 @@ PL0621,Utrecht,,point,52.0907,5.1216,3,NL,Utrecht,R002,"OpenStreetMap Nominatim 
 PL0622,"Geldern, North Rhine-Westphalia",,point,51.517,6.3228,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Geldern, Germany)",1,1,1944-12-09,1944-12-09
 PL0623,"Breda, Noord-Brabant",,point,51.5888,4.776,5,NL,Noord-Brabant,R002,OpenStreetMap Nominatim (Breda),1,1,1944-11-15,1944-11-15
 PL0624,"Dunkirk, Nord",,point,51.0348,2.3773,3,FR,Nord,R002,"OpenStreetMap Nominatim (Dunkerque, Nord, France)",1,1,1944-12-15,1944-12-15
-PL0625,Bremen,,point,53.0758,8.8072,3,DE,Bremen,R002,"OpenStreetMap Nominatim (Bremen, Germany)",2,2,1944-11-15,1945-04-26
+PL0625,Bremen,,point,53.0758,8.8072,3,DE,Bremen,R002,"OpenStreetMap Nominatim (Bremen, Germany)",7,7,1944-11-15,1945-04-27
 PL0626,"Ziegenberg (Schloss Adlerhorst), Hesse",,point,50.3671,8.6249,1,DE,Hesse,R002,"OpenStreetMap Nominatim (Schloss Ziegenberg, Langenhain-Ziegenberg, Ober-Mörlen, Germany)",3,1,1944-11-26,1945-03-10
 PL0627,"Erstein, Bas-Rhin",,point,48.4227,7.6633,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Erstein, Bas-Rhin, France)",3,3,1945-01-07,1945-01-20
 PL0628,"Lauterbourg, Bas-Rhin",,point,48.9751,8.1767,3,FR,Bas-Rhin,R002,"OpenStreetMap Nominatim (Lauterbourg, Bas-Rhin, France)",6,5,1945-01-07,1945-01-16
@@ -634,7 +634,7 @@ PL0639,"Lippstadt, North Rhine-Westphalia",,point,51.6747,8.3472,5,DE,North Rhin
 PL0640,Ruhr pocket (representative point at Essen),,point,51.4582,7.0158,25,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Essen, Germany)",21,20,1945-04-01,1945-04-18
 PL0641,Bavaria (representative point at Munich),,point,48.1371,11.5754,50,DE,Bayern,R002,"OpenStreetMap Nominatim (München, Germany)",6,4,1945-04-05,1945-05-08
 PL0642,Northwest Germany (representative point at Bremen),,point,53.0758,8.8072,50,DE,Bremen,R002,"OpenStreetMap Nominatim (Bremen, Germany)",4,3,1945-04-06,1945-04-28
-PL0643,"Timeloberg near Wendisch Evern (Lüneburg Heath), Niedersachsen",,point,53.2174,10.4712,5,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Wendisch Evern, Germany)",1,1,1945-05-04,1945-05-04
+PL0643,"Timeloberg near Wendisch Evern (Lüneburg Heath), Niedersachsen",,point,53.2174,10.4712,5,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Wendisch Evern, Germany)",3,2,1945-05-03,1945-05-04
 PL0644,"Würzburg, Bayern",,point,49.778,9.9435,5,DE,Bayern,R002,"OpenStreetMap Nominatim (Würzburg, Germany)",2,2,1945-04-02,1945-04-03
 PL0645,Bavarian-Bohemian frontier (representative point at Cham),,point,49.2178,12.6664,50,DE,Bayern,R002,"OpenStreetMap Nominatim (Cham, Bayern, Germany)",3,3,1945-04-09,1945-05-04
 PL0646,"Karlsbad (Karlovy Vary), Czechia",,point,50.2306,12.8701,5,CZ,Karlovy Vary,R002,"OpenStreetMap Nominatim (Karlovy Vary, Czechia)",1,1,1945-05-08,1945-05-08
@@ -649,9 +649,9 @@ PL0654,"Bregenz, Vorarlberg",,point,47.5026,9.7473,5,AT,Vorarlberg,R002,"OpenStr
 PL0655,"Winterberg, North Rhine-Westphalia",,point,51.1933,8.5334,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Winterberg, Germany)",3,3,1945-04-01,1945-04-01
 PL0656,"Tübingen, Baden-Württemberg",,point,48.5203,9.0536,5,DE,Baden-Württemberg,R002,"OpenStreetMap Nominatim (Tübingen, Germany)",1,1,1945-04-19,1945-04-19
 PL0657,"Oldenburg (Oldb), Niedersachsen",,point,53.139,8.2146,5,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Oldenburg, Niedersachsen, Germany)",8,6,1945-04-10,1945-05-07
-PL0658,"Lauenburg/Elbe, Schleswig-Holstein",,point,53.379,10.5514,5,DE,Schleswig-Holstein,R002,"OpenStreetMap Nominatim (Lauenburg/Elbe, Germany)",1,1,1945-04-15,1945-04-15
+PL0658,"Lauenburg/Elbe, Schleswig-Holstein",,point,53.379,10.5514,5,DE,Schleswig-Holstein,R002,"OpenStreetMap Nominatim (Lauenburg/Elbe, Germany)",3,3,1945-04-15,1945-04-29
 PL0659,Berlin,,point,52.5174,13.3951,10,DE,Berlin,R002,"OpenStreetMap Nominatim (Berlin, Germany)",1,1,1945-05-08,1945-05-08
-PL0660,"Uelzen, Niedersachsen",,point,52.9841,10.5386,5,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Uelzen, Germany)",1,1,1945-04-15,1945-04-15
+PL0660,"Uelzen, Niedersachsen",,point,52.9841,10.5386,5,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Uelzen, Germany)",3,3,1945-04-15,1945-04-18
 PL0661,"Hallenberg, North Rhine-Westphalia",,point,51.1096,8.6201,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Hallenberg, Germany)",1,1,1945-04-01,1945-04-01
 PL0662,"Bad Dürrheim, Baden-Württemberg",,point,47.9977,8.6148,5,DE,Baden-Württemberg,R002,"OpenStreetMap Nominatim (Bad Dürrheim, Germany)",1,1,1945-04-24,1945-04-24
 PL0663,"Limburg an der Lahn, Hessen",,point,50.388,8.0635,50,DE,Hessen,R002,"OpenStreetMap Nominatim (Limburg an der Lahn, Germany)",1,1,1945-04-02,1945-04-02
@@ -759,3 +759,17 @@ PL0764,"Alpen, Rheinberg, North Rhine-Westphalia",,point,51.5797,6.5448,3,DE,Nor
 PL0765,"Hamminkeln, North Rhine-Westphalia",,point,51.7307,6.5909,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Hamminkeln, Germany)",1,1,1945-03-24,1945-03-24
 PL0766,"Dingden, Hamminkeln, North Rhine-Westphalia",,point,51.7703,6.6134,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Dingden, Hamminkeln, Germany)",1,1,1945-03-27,1945-03-27
 PL0767,"Brünen, Hamminkeln, North Rhine-Westphalia",,point,51.7256,6.6815,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Brünen, Hamminkeln, Germany)",1,1,1945-03-27,1945-03-27
+PL0768,Hamburg,,point,53.5502,10.0013,5,DE,Hamburg,R002,"OpenStreetMap Nominatim (Hamburg, Germany)",2,2,1945-03-28,1945-05-03
+PL0769,"Enschede, Overijssel",,point,52.221,6.8941,3,NL,Overijssel,R002,"OpenStreetMap Nominatim (Enschede, Overijssel, Netherlands)",1,1,1945-04-01,1945-04-01
+PL0770,"Lingen (Ems), Niedersachsen",,point,52.5225,7.3166,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Lingen (Ems), Germany)",2,2,1945-04-03,1945-04-06
+PL0771,"Diepholz, Niedersachsen",,point,52.7479,8.7615,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Diepholz, Germany)",1,1,1945-04-05,1945-04-05
+PL0772,"Wildeshausen, Niedersachsen",,point,52.8971,8.4364,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Wildeshausen, Germany)",1,1,1945-04-10,1945-04-10
+PL0773,"Winsen (Aller), Niedersachsen",,point,52.6962,9.8843,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Winsen (Aller), Celle, Germany)",1,1,1945-04-11,1945-04-11
+PL0774,"Celle, Niedersachsen",,point,52.6241,10.0811,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Celle, Germany)",1,1,1945-04-12,1945-04-12
+PL0775,"Bergen-Belsen, Niedersachsen",,point,52.7581,9.9118,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Bergen-Belsen, Lower Saxony, Germany)",1,1,1945-04-15,1945-04-15
+PL0776,"Lüneburg, Niedersachsen",,point,53.2487,10.4079,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Lüneburg, Germany)",1,1,1945-04-18,1945-04-18
+PL0777,"Verden (Aller), Niedersachsen",,point,52.9405,9.236,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Verden (Aller), Germany)",1,1,1945-04-17,1945-04-17
+PL0778,"Zeven, Niedersachsen",,point,53.2954,9.2816,3,DE,Niedersachsen,R002,"OpenStreetMap Nominatim (Zeven, Germany)",1,1,1945-04-27,1945-04-27
+PL0779,"Lübeck, Schleswig-Holstein",,point,53.8664,10.6847,3,DE,Schleswig-Holstein,R002,"OpenStreetMap Nominatim (Lübeck, Germany)",1,1,1945-05-02,1945-05-02
+PL0780,"Travemünde, Lübeck, Schleswig-Holstein",,point,53.9396,10.8587,3,DE,Schleswig-Holstein,R002,"OpenStreetMap Nominatim (Travemünde, Lübeck, Germany)",1,1,1945-05-03,1945-05-03
+PL0781,"Wismar, Mecklenburg-Vorpommern",,point,53.891,11.4648,3,DE,Mecklenburg-Vorpommern,R002,"OpenStreetMap Nominatim (Wismar, Germany)",1,1,1945-05-02,1945-05-02

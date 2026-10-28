@@ -8958,7 +8958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12358,7 +12358,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bremen",
-    "claims_count": 2
+    "claims_count": 7
    }
   },
   {
@@ -12718,7 +12718,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -13018,7 +13018,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Schleswig-Holstein",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -13058,7 +13058,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -15198,6 +15198,286 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.0013,
+     53.5502
+    ]
+   },
+   "properties": {
+    "place_id": "PL0768",
+    "name": "Hamburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Hamburg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8941,
+     52.221
+    ]
+   },
+   "properties": {
+    "place_id": "PL0769",
+    "name": "Enschede, Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3166,
+     52.5225
+    ]
+   },
+   "properties": {
+    "place_id": "PL0770",
+    "name": "Lingen (Ems), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7615,
+     52.7479
+    ]
+   },
+   "properties": {
+    "place_id": "PL0771",
+    "name": "Diepholz, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4364,
+     52.8971
+    ]
+   },
+   "properties": {
+    "place_id": "PL0772",
+    "name": "Wildeshausen, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8843,
+     52.6962
+    ]
+   },
+   "properties": {
+    "place_id": "PL0773",
+    "name": "Winsen (Aller), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.0811,
+     52.6241
+    ]
+   },
+   "properties": {
+    "place_id": "PL0774",
+    "name": "Celle, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9118,
+     52.7581
+    ]
+   },
+   "properties": {
+    "place_id": "PL0775",
+    "name": "Bergen-Belsen, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4079,
+     53.2487
+    ]
+   },
+   "properties": {
+    "place_id": "PL0776",
+    "name": "Lüneburg, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.236,
+     52.9405
+    ]
+   },
+   "properties": {
+    "place_id": "PL0777",
+    "name": "Verden (Aller), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2816,
+     53.2954
+    ]
+   },
+   "properties": {
+    "place_id": "PL0778",
+    "name": "Zeven, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6847,
+     53.8664
+    ]
+   },
+   "properties": {
+    "place_id": "PL0779",
+    "name": "Lübeck, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.8587,
+     53.9396
+    ]
+   },
+   "properties": {
+    "place_id": "PL0780",
+    "name": "Travemünde, Lübeck, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4648,
+     53.891
+    ]
+   },
+   "properties": {
+    "place_id": "PL0781",
+    "name": "Wismar, Mecklenburg-Vorpommern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
     "claims_count": 1
    }
   }

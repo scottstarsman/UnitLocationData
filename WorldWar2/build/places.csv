@@ -29,7 +29,7 @@ PL0027,"Bains-les-Bains, Vosges",,point,47.9962,6.2566,3,FR,Lorraine,R002,"OpenS
 PL0028,"Balleroy, Calvados",,point,49.1809,-0.8370,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Balleroy, Calvados, France)",2,1,1944-07-13,1944-07-14
 PL0029,"Barenton, Manche",,point,48.5997,-0.8324,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Barenton, Manche, France)",3,3,1944-08-06,1944-08-13
 PL0030,Barneville-sur-Mer,,point,49.381,-1.755,1,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-18,1944-06-18
-PL0031,"Bastogne, Luxembourg",,point,50.0042,5.7200,3,BE,Wallonia,R001,Wikipedia (en): Bastogne,3,1,1944-12-19,1944-12-21
+PL0031,"Bastogne, Luxembourg",,point,50.0042,5.7200,3,BE,Wallonia,R001,Wikipedia (en): Bastogne,10,8,1944-12-19,1945-01-09
 PL0032,Baupte,,point,49.3089,-1.36,1,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-13,1944-06-13
 PL0033,Bayeux,,point,49.2794,-0.7028,1,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-07,1944-06-07
 PL0034,"Bayon, Meurthe-et-Moselle",,point,48.4756,6.3158,5,FR,Lorraine,R001,"Wikipedia (en): Bayon, Meurthe-et-Moselle",2,2,1944-09-11,1944-09-11
@@ -335,7 +335,7 @@ PL0339,Saint-Sauveur-le-Vicomte,,point,49.3872,-1.5308,1,FR,Lower Normandy,R001,
 PL0340,"St-Sauveur, Manche",,point,49.2963,-1.1523,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Saint-Sauveur, Manche, France)",1,1,1944-07-25,1944-07-25
 PL0341,"St-Sever Calvados, Calvados",,point,48.8253,-1.0404,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Saint-Sever Calvados, Calvados, France)",1,1,1944-08-06,1944-08-06
 PL0342,"Saint-Tropez, Var",,point,43.2733,6.6396,5,FR,Provence-Alpes-Cote d'Azur,R001,Wikipedia (en): Saint-Tropez,1,1,1944-08-19,1944-08-19
-PL0343,"Saint-Vith, Liège","St Vith, Liege",point,50.2804,6.1259,3,BE,Wallonia,R002,"OpenStreetMap Nominatim (St Vith, Liege, Belgium)",4,4,1944-09-30,1945-01-29
+PL0343,"Saint-Vith, Liège","St Vith, Liege",point,50.2804,6.1259,3,BE,Wallonia,R002,"OpenStreetMap Nominatim (St Vith, Liege, Belgium)",7,7,1944-09-30,1945-01-29
 PL0344,Sword Beach,,area,49.3064,-0.3211,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-06,1944-06-06
 PL0345,Sword/Juno beaches,,area,49.3064,-0.3211,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-06,1944-06-06
 PL0346,"Le Teilleul, Manche",,point,48.5401,-0.8576,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Le Teilleul, Manche, France)",1,1,1944-08-07,1944-08-07
@@ -374,7 +374,7 @@ PL0378,West flank of the Odon salient,,area,49.1389,-0.5283,10,FR,Lower Normandy
 PL0379,"Westmalle, Antwerp",,point,51.2833,4.6833,5,BE,Flanders,R001,Wikipedia (en): Westmalle,1,1,1944-10-23,1944-10-23
 PL0380,West of Carentan,,area,49.304,-1.247,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-15,1944-06-15
 PL0381,West of the Merderet,,area,49.4217,-1.4089,5,FR,Lower Normandy,R001,Wikipedia,2,1,1944-06-10,1944-06-13
-PL0382,"Wiltz, Luxembourg",,point,49.9661,5.9325,3,LU,Diekirch,R001,Wikipedia (en): Wiltz,1,1,1944-12-16,1944-12-16
+PL0382,"Wiltz, Luxembourg",,point,49.9661,5.9325,3,LU,Diekirch,R001,Wikipedia (en): Wiltz,2,2,1944-12-16,1945-01-21
 PL0383,"Zon (Son), Noord-Brabant, Netherlands",,point,51.5177,5.4882,5,NL,North Brabant,R002,"OpenStreetMap Nominatim (Zon, Nord Brabant, Netherlands)",1,1,1944-09-17,1944-09-17
 PL0384,"Veghel, Noord-Brabant, Netherlands",Vechel,point,51.6135,5.5447,5,NL,North Brabant,R002,"OpenStreetMap Nominatim (Veghel, Noord-Brabant, Netherlands; the municipality boundary centroid; the CMH spells it Vechel)",2,1,1944-09-24,1944-09-28
 PL0385,"Slijk-Ewijk, Gelderland, Netherlands",Slik Ewjik,point,51.8875,5.7903,5,NL,Gelderland,R002,"OpenStreetMap Nominatim (Slijk-Ewijk, Overbetuwe, Gelderland, Netherlands; the village centroid). The CMH list prints ""Slik Ewjik, Nord Brabant""; no place of that name in Noord-Brabant was found (Nominatim, 26 October 2026) and Slijk-Ewijk lies in Gelderland, on the Nijmegen-Arnhem ""Island"" where the division served in October 1944, so the region in the CMH list is read as an error",2,1,1944-10-05,1944-11-09
@@ -387,15 +387,15 @@ PL0391,"Morsbronn-les-Bains, Bas-Rhin",,point,48.9008,7.7428,3,FR,Alsace,R001,Wi
 PL0392,"Pont-à-Mousson, Meurthe-et-Moselle",Pont-a-Mousson,point,48.9053,6.0547,3,FR,Lorraine,R001,Wikipedia (en): Pont-à-Mousson,1,1,1945-01-14,1945-01-14
 PL0393,"Ennery, Moselle",,point,49.2267,6.2175,3,FR,Lorraine,R001,"Wikipedia (en): Ennery, Moselle",1,1,1945-01-14,1945-01-14
 PL0394,"Noville, Luxembourg",Noville (Bastogne),point,50.0643,5.7620,3,BE,Luxembourg,R002,"OpenStreetMap Nominatim (Noville, Luxembourg)",1,1,1945-01-15,1945-01-15
-PL0395,"Houffalize, Luxembourg",,point,50.1333,5.7833,3,BE,Luxembourg,R001,Wikipedia (en): Houffalize,1,1,1945-01-16,1945-01-16
+PL0395,"Houffalize, Luxembourg",,point,50.1333,5.7833,3,BE,Luxembourg,R001,Wikipedia (en): Houffalize,6,6,1945-01-02,1945-01-16
 PL0396,"Herrlisheim, Bas-Rhin",Herrlisheim near Strasbourg,point,48.7289,7.9061,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Herrlisheim, Bas-Rhin)",1,1,1945-01-16,1945-01-16
 PL0397,"Suippes, Marne",,point,49.1308,4.5325,5,FR,Champagne-Ardenne,R001,Wikipedia (en): Suippes,1,1,1945-01-16,1945-01-16
 PL0398,"Valkenburg, Limburg",Valkenburg aan de Geul,point,50.8650,5.8311,3,NL,Limburg,R001,Wikipedia (en): Valkenburg aan de Geul,2,1,1945-01-17,1945-02-06
 PL0399,"Diekirch, Luxembourg",,point,49.8681,6.1567,3,LU,Diekirch,R001,Wikipedia (en): Diekirch,1,1,1945-01-18,1945-01-18
 PL0400,"Champlon, Luxembourg",,point,50.1078,5.5034,3,BE,Luxembourg,R002,"OpenStreetMap Nominatim (Champlon, Luxembourg)",1,1,1945-01-19,1945-01-19
 PL0401,"Sarralbe, Moselle",,point,49.0000,7.0300,3,FR,Lorraine,R001,Wikipedia (en): Sarralbe,1,1,1945-01-20,1945-01-20
-PL0402,"Gambsheim, Bas-Rhin",,point,48.6931,7.8842,3,FR,Alsace,R001,Wikipedia (en): Gambsheim,1,1,1945-01-31,1945-01-31
-PL0403,"Colmar, Haut-Rhin",,point,48.0817,7.3556,5,FR,Alsace,R001,Wikipedia (en): Colmar,15,10,1944-09-15,1945-02-04
+PL0402,"Gambsheim, Bas-Rhin",,point,48.6931,7.8842,3,FR,Alsace,R001,Wikipedia (en): Gambsheim,4,4,1945-01-05,1945-01-31
+PL0403,"Colmar, Haut-Rhin",,point,48.0817,7.3556,5,FR,Alsace,R001,Wikipedia (en): Colmar,23,13,1944-09-15,1945-02-04
 PL0404,"Rocherath-Krinkelt, Liège",Krinkelt-Rocherath,point,50.4344,6.3009,3,BE,Liège,R002,"OpenStreetMap Nominatim (Rocherath-Krinkelt, Liège)",1,1,1945-02-01,1945-02-01
 PL0405,"Wahlerscheid, North Rhine-Westphalia",,point,50.5028,6.3270,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Wahlerscheid, Monschau, Germany)",1,1,1945-02-01,1945-02-01
 PL0406,"Heckhuscheid, Rheinland-Pfalz",,point,50.1786,6.2233,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Heckhuscheid,1,1,1945-02-01,1945-02-01
@@ -414,21 +414,21 @@ PL0418,"Osterath, North Rhine-Westphalia",Meerbusch-Osterath,point,51.2691,6.620
 PL0419,"Lobberich, North Rhine-Westphalia",Nettetal-Lobberich,point,51.3000,6.2667,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Lobberich,1,1,1945-03-04,1945-03-04
 PL0420,"Krefeld, North Rhine-Westphalia",,point,51.3333,6.5667,5,DE,North Rhine-Westphalia,R001,Wikipedia (en): Krefeld,2,2,1944-11-12,1945-03-05
 PL0421,"Schmidtheim, North Rhine-Westphalia",Dahlem-Schmidtheim,point,50.4156,6.5586,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Schmidtheim, Dahlem, Germany)",1,1,1945-03-06,1945-03-06
-PL0422,"Ludendorff Bridge, Remagen",Remagen bridge,point,50.5792,7.2442,1,DE,Rheinland-Pfalz,R001,Wikipedia (en): Ludendorff Bridge,1,1,1945-03-07,1945-03-07
+PL0422,"Ludendorff Bridge, Remagen",Remagen bridge,point,50.5792,7.2442,1,DE,Rheinland-Pfalz,R001,Wikipedia (en): Ludendorff Bridge,13,13,1945-03-06,1945-03-17
 PL0423,"Brohl, Rheinland-Pfalz",Brohl-Lützing,point,50.4850,7.3292,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Brohl-Lützing,1,1,1945-03-08,1945-03-08
-PL0424,"Bonn, North Rhine-Westphalia",,point,50.7353,7.1022,5,DE,North Rhine-Westphalia,R001,Wikipedia (en): Bonn,1,1,1945-03-09,1945-03-09
+PL0424,"Bonn, North Rhine-Westphalia",,point,50.7353,7.1022,5,DE,North Rhine-Westphalia,R001,Wikipedia (en): Bonn,2,2,1945-03-08,1945-03-09
 PL0425,"Boulay-Moselle, Moselle",,point,49.1842,6.4942,3,FR,Lorraine,R001,Wikipedia (en): Boulay-Moselle,1,1,1945-03-09,1945-03-09
-PL0426,"Bad Honnef, North Rhine-Westphalia",Honnef,point,50.6450,7.2269,5,DE,North Rhine-Westphalia,R001,Wikipedia (en): Bad Honnef,1,1,1945-03-10,1945-03-10
-PL0427,"Düren, North Rhine-Westphalia",Dueren,point,50.8000,6.4833,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Düren,4,4,1944-11-15,1945-03-11
+PL0426,"Bad Honnef, North Rhine-Westphalia",Honnef,point,50.6450,7.2269,5,DE,North Rhine-Westphalia,R001,Wikipedia (en): Bad Honnef,3,3,1945-03-10,1945-03-13
+PL0427,"Düren, North Rhine-Westphalia",Dueren,point,50.8000,6.4833,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Düren,8,6,1944-11-15,1945-03-11
 PL0428,"Gillenfeld, Rheinland-Pfalz",,point,50.1297,6.9064,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Gillenfeld,1,1,1945-03-12,1945-03-12
 PL0429,"Linz am Rhein, Rheinland-Pfalz",,point,50.5703,7.2847,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Linz am Rhein,1,1,1945-03-12,1945-03-12
 PL0430,"Wimmenau, Bas-Rhin",,point,48.9131,7.4239,3,FR,Alsace,R001,Wikipedia (en): Wimmenau,1,1,1945-03-15,1945-03-15
 PL0431,"Bliesransbach, Saarland",,point,49.1664,7.0915,3,DE,Saarland,R002,"OpenStreetMap Nominatim (Bliesransbach, Kleinblittersdorf, Germany)",1,1,1945-03-15,1945-03-15
 PL0432,"Moselle upstream of Cochem, Rheinland-Pfalz",Cochem; Moselle crossing area of the 89th Division,area,50.1469,7.1667,25,DE,Rheinland-Pfalz,R001,Wikipedia (en): Cochem,3,1,1945-03-15,1945-03-17
 PL0433,"Saarlouis, Saarland",Saarlautern,point,49.3167,6.7500,5,DE,Saarland,R001,Wikipedia (en): Saarlouis,2,2,1944-11-28,1945-03-19
-PL0434,"Ludwigshafen, Rheinland-Pfalz",Ludwigshafen am Rhein,point,49.4811,8.4353,5,DE,Rheinland-Pfalz,R001,Wikipedia (en): Ludwigshafen,1,1,1945-03-20,1945-03-20
-PL0435,"Oppenheim, Rheinland-Pfalz",Oppenheim-Nierstein crossing,point,49.8556,8.3603,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Oppenheim,1,1,1945-03-22,1945-03-22
-PL0436,"Obersteinbach, Bas-Rhin",,point,49.0366,7.6883,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Obersteinbach, Bas-Rhin)",1,1,1945-03-22,1945-03-22
+PL0434,"Ludwigshafen, Rheinland-Pfalz",Ludwigshafen am Rhein,point,49.4811,8.4353,5,DE,Rheinland-Pfalz,R001,Wikipedia (en): Ludwigshafen,3,3,1945-03-20,1945-03-23
+PL0435,"Oppenheim, Rheinland-Pfalz",Oppenheim-Nierstein crossing,point,49.8556,8.3603,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Oppenheim,2,2,1945-03-22,1945-03-26
+PL0436,"Obersteinbach, Bas-Rhin",,point,49.0366,7.6883,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Obersteinbach, Bas-Rhin)",2,2,1945-01-12,1945-03-22
 PL0437,"Diersfordt, North Rhine-Westphalia",Diersfordter Wald,point,51.6913,6.5480,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Diersfordt, North Rhine-Westphalia)",1,1,1945-03-24,1945-03-24
 PL0438,"Germersheim, Rheinland-Pfalz",,point,49.2167,8.3667,3,DE,Rheinland-Pfalz,R001,Wikipedia (en): Germersheim,1,1,1945-03-24,1945-03-24
 PL0439,"Schweighofen, Rheinland-Pfalz",,point,49.0403,7.9957,3,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Schweighofen, Rheinland-Pfalz)",1,1,1945-03-24,1945-03-24
@@ -444,7 +444,7 @@ PL0448,"Beckum, North Rhine-Westphalia",,point,51.7550,8.0403,3,DE,North Rhine-W
 PL0449,"Ohrdruf, Thüringen",,point,50.8281,10.7328,3,DE,Thüringen,R001,Wikipedia (en): Ohrdruf,1,1,1945-04-04,1945-04-04
 PL0450,"Haltern am See, North Rhine-Westphalia",,point,51.7500,7.1833,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Haltern am See,1,1,1945-04-05,1945-04-05
 PL0451,"Marburg, Hessen",,point,50.8100,8.7708,5,DE,Hessen,R001,Wikipedia (en): Marburg,1,1,1945-04-07,1945-04-07
-PL0452,"Frankfurt am Main, Hessen",Frankfurt,point,50.1106,8.6822,5,DE,Hessen,R001,Wikipedia (en): Frankfurt,1,1,1945-04-07,1945-04-07
+PL0452,"Frankfurt am Main, Hessen",Frankfurt,point,50.1106,8.6822,5,DE,Hessen,R001,Wikipedia (en): Frankfurt,2,2,1945-03-25,1945-04-07
 PL0453,"Nordhausen, Thüringen",Nordhausen,point,51.5050,10.7911,5,DE,Thüringen,R001,"Wikipedia (en): Nordhausen, Thuringia",2,2,1945-04-11,1945-04-12
 PL0454,"Hannover, Niedersachsen",Hanover,point,52.3667,9.7167,5,DE,Niedersachsen,R001,Wikipedia (en): Hanover,1,1,1945-04-11,1945-04-11
 PL0455,"Westerhüsen, Magdeburg",Westerhausen (Magdeburg),point,52.0633,11.6763,3,DE,Sachsen-Anhalt,R002,"OpenStreetMap Nominatim (Westerhüsen, Magdeburg, Germany)",1,1,1945-04-12,1945-04-12
@@ -534,7 +534,7 @@ PL0539,Cabourg-Le Havre coast,,area,49.3667,0.0833,25,FR,Lower Normandy,R001,"Re
 PL0540,Thuir,,point,42.6333,2.75,5,FR,Occitanie,R001,Wikipedia article Thuir,1,1,1944-07-10,1944-07-10
 PL0541,Albert Canal front (midpoint of Antwerp and Maastricht),,point,51.0356,5.0418,50,BE,Belgium,R001,"midpoint of the Wikipedia coordinates of Antwerp (51.22, 4.40) and Maastricht (50.85, 5.68); a representative point for the canal line",4,4,1944-09-04,1944-09-04
 PL0542,"Vught, Noord-Brabant",,point,51.6512,5.2368,3,NL,Noord-Brabant,R002,OpenStreetMap Nominatim (Vught),2,1,1944-09-17,1944-09-23
-PL0543,"Koblenz, Rheinland-Pfalz",,point,50.3597,7.5978,5,DE,Rheinland-Pfalz,R001,Wikipedia article Koblenz,2,1,1944-09-01,1944-09-05
+PL0543,"Koblenz, Rheinland-Pfalz",,point,50.3597,7.5978,5,DE,Rheinland-Pfalz,R001,Wikipedia article Koblenz,4,2,1944-09-01,1945-03-16
 PL0544,"Bad Kreuznach, Rheinland-Pfalz",,point,49.85,7.8667,5,DE,Rheinland-Pfalz,R001,Wikipedia article Bad Kreuznach,1,1,1944-09-29,1944-09-29
 PL0545,"Oosterbeek, Gelderland",,point,51.9884,5.842,3,NL,Gelderland,R002,"OpenStreetMap Nominatim (Oosterbeek, Renkum, Gelderland)",2,1,1944-09-14,1944-09-17
 PL0546,"Gérardmer, Vosges",,point,48.0706,6.8777,5,FR,Lorraine,R002,OpenStreetMap Nominatim (Gérardmer),6,2,1944-09-04,1944-10-31
@@ -562,16 +562,16 @@ PL0567,"Thionville, Moselle",,point,49.3579,6.1676,5,FR,Lorraine,R002,OpenStreet
 PL0568,"Tilburg, Noord-Brabant",,point,51.5575,5.0906,5,NL,Noord-Brabant,R001,Wikipedia article Tilburg,10,8,1944-09-17,1944-12-15
 PL0569,"Breskens, Zeeland",,point,51.3958,3.5552,5,NL,Zeeland,R002,OpenStreetMap Nominatim (Breskens),2,1,1944-09-17,1944-10-15
 PL0570,"South Beveland (Zuid-Beveland), Zeeland",,point,51.4672,3.893,10,NL,Zeeland,R002,OpenStreetMap Nominatim (Zuid-Beveland),1,1,1944-09-17,1944-09-17
-PL0571,"Prüm, Rheinland-Pfalz",,point,50.2069,6.4249,5,DE,Rheinland-Pfalz,R002,OpenStreetMap Nominatim (Prüm),1,1,1944-09-15,1944-09-15
-PL0572,"Bitburg, Rheinland-Pfalz",,point,49.9733,6.5249,5,DE,Rheinland-Pfalz,R002,OpenStreetMap Nominatim (Bitburg),2,2,1944-10-15,1945-03-02
-PL0573,"Eifel region, Rheinland-Pfalz",,point,50.39,6.87,25,DE,Rheinland-Pfalz,R001,Wikipedia article Eifel (centre point of the region),14,12,1944-09-15,1944-12-16
+PL0571,"Prüm, Rheinland-Pfalz",,point,50.2069,6.4249,5,DE,Rheinland-Pfalz,R002,OpenStreetMap Nominatim (Prüm),3,3,1944-09-15,1945-02-15
+PL0572,"Bitburg, Rheinland-Pfalz",,point,49.9733,6.5249,5,DE,Rheinland-Pfalz,R002,OpenStreetMap Nominatim (Bitburg),3,3,1944-10-15,1945-03-02
+PL0573,"Eifel region, Rheinland-Pfalz",,point,50.39,6.87,25,DE,Rheinland-Pfalz,R001,Wikipedia article Eifel (centre point of the region),19,16,1944-09-15,1945-03-01
 PL0574,"Antwerp, Belgium",,point,51.2211,4.3997,5,BE,Antwerp,R002,OpenStreetMap Nominatim (Antwerpen),1,1,1944-09-15,1944-09-15
 PL0575,Vosges mountains,,point,48.0,7.0,50,FR,Grand Est,R001,Wikipedia article Vosges (centre point of the range),1,1,1944-09-15,1944-09-15
-PL0576,"Saarbrücken, Saarland",,point,49.2333,7.0,5,DE,Saarland,R001,Wikipedia article Saarbrücken,7,7,1944-09-15,1944-12-15
+PL0576,"Saarbrücken, Saarland",,point,49.2333,7.0,5,DE,Saarland,R001,Wikipedia article Saarbrücken,11,11,1944-09-15,1945-02-28
 PL0577,"Venlo, Limburg",,point,51.3667,6.1667,5,NL,Limburg,R001,Wikipedia article Venlo,4,3,1944-09-15,1944-12-15
-PL0578,"Kleve, North Rhine-Westphalia",,point,51.7896,6.1376,5,DE,North Rhine-Westphalia,R002,OpenStreetMap Nominatim (Kleve),2,1,1944-10-15,1944-12-15
+PL0578,"Kleve, North Rhine-Westphalia",,point,51.7896,6.1376,5,DE,North Rhine-Westphalia,R002,OpenStreetMap Nominatim (Kleve),8,6,1944-10-15,1945-02-15
 PL0579,"Fichtenhain, Krefeld-Fischeln",,point,51.2885,6.5661,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Campus Fichtenhain, Krefeld-Fischeln); the nursing-home buildings of the CMH text are not identified at this point by any source read",1,1,1944-10-27,1944-10-27
-PL0580,"Wuppertal, North Rhine-Westphalia",,point,51.264,7.178,5,DE,North Rhine-Westphalia,R002,OpenStreetMap Nominatim (Wuppertal),1,1,1945-04-15,1945-04-15
+PL0580,"Wuppertal, North Rhine-Westphalia",,point,51.264,7.178,5,DE,North Rhine-Westphalia,R002,OpenStreetMap Nominatim (Wuppertal),2,2,1945-03-09,1945-04-15
 PL0581,"Haan, North Rhine-Westphalia",,point,51.1955,7.0085,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Haan, Kreis Mettmann); the town point stands for the Stadtwald of Haan",1,1,1945-04-17,1945-04-17
 PL0582,Meuse front between Sedan and Montmédy (midpoint),,point,49.6114,5.1553,25,FR,Grand Est,R002,"midpoint of the OpenStreetMap Nominatim points for Sedan (49.7034, 4.9433) and Montmédy (49.5194, 5.3673)",1,1,1944-09-05,1944-09-05
 PL0583,Sector between Bitburg and the Moselle (midpoint of Bitburg and Trier),,point,49.865,6.5832,25,DE,Rheinland-Pfalz,R002,"midpoint of the OpenStreetMap Nominatim point for Bitburg (49.9733, 6.5249) and the Wikipedia point for Trier (49.7567, 6.6414)",1,1,1945-03-02,1945-03-02
@@ -581,15 +581,15 @@ PL0586,"Hürtgen, North Rhine-Westphalia",,point,50.7129,6.3811,5,DE,North Rhine
 PL0587,"Broichweiden, Würselen, North Rhine-Westphalia",,point,50.8247,6.1655,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Broichweiden, Würselen, Germany)",1,1,1944-11-17,1944-11-17
 PL0588,"Kommerscheidt, Nideggen, North Rhine-Westphalia",,point,50.6671,6.3985,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Kommerscheidt, Nideggen, Germany)",1,1,1944-11-04,1944-11-04
 PL0589,"Setterich, Baesweiler, North Rhine-Westphalia",,point,50.9229,6.2035,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Setterich, Baesweiler, Germany)",3,3,1944-11-15,1944-11-17
-PL0590,"Jülich, North Rhine-Westphalia",,point,50.9221,6.3611,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Jülich, Germany)",1,1,1944-11-21,1944-11-21
+PL0590,"Jülich, North Rhine-Westphalia",,point,50.9221,6.3611,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Jülich, Germany)",4,4,1944-11-21,1945-02-23
 PL0591,"Cologne (Köln), North Rhine-Westphalia",,point,50.9384,6.96,10,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Köln, Germany)",1,1,1944-11-07,1944-11-07
 PL0592,"Hollerath, North Rhine-Westphalia",,point,50.4561,6.4038,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Hollerath, Hellenthal, Germany)",2,2,1944-12-16,1944-12-16
 PL0593,"Dasburg, Rheinland-Pfalz",,point,50.0483,6.1326,3,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Dasburg, Germany)",4,4,1944-12-16,1944-12-16
-PL0594,"Monschau, North Rhine-Westphalia",,point,50.5545,6.2408,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Monschau, Germany)",2,2,1944-12-16,1944-12-16
+PL0594,"Monschau, North Rhine-Westphalia",,point,50.5545,6.2408,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Monschau, Germany)",3,3,1944-12-16,1945-02-05
 PL0595,"Losheimergraben, Liège",,point,50.3802,6.3427,3,BE,Liège,R002,"OpenStreetMap Nominatim (Losheimergraben, Büllingen, Belgium)",3,3,1944-12-16,1944-12-16
 PL0596,"Schnee Eifel (Schneifel) ridge, Rheinland-Pfalz",,point,50.2916,6.4347,10,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Schneifel, Germany)",2,2,1944-12-16,1944-12-16
 PL0597,"Ouren, Liège",,point,50.1388,6.1338,3,BE,Liège,R002,"OpenStreetMap Nominatim (Ouren, Burg-Reuland, Belgium)",2,2,1944-12-16,1944-12-16
-PL0598,"Vianden, Luxembourg",,point,49.9389,6.1996,3,LU,Vianden,R002,"OpenStreetMap Nominatim (Vianden, Luxembourg)",3,3,1944-12-16,1944-12-16
+PL0598,"Vianden, Luxembourg",,point,49.9389,6.1996,3,LU,Vianden,R002,"OpenStreetMap Nominatim (Vianden, Luxembourg)",6,6,1944-12-16,1945-01-22
 PL0599,"Krewinkel, Liège",,point,50.3325,6.3782,3,BE,Liège,R002,"OpenStreetMap Nominatim (Krewinkel, Manderfeld, Belgium)",1,1,1944-12-16,1944-12-16
 PL0600,"Simmerath, North Rhine-Westphalia",,point,50.6072,6.3005,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Simmerath, Germany)",1,1,1944-12-16,1944-12-16
 PL0601,"Lanzerath, Liège",,point,50.3573,6.334,3,BE,Liège,R002,"OpenStreetMap Nominatim (Lanzerath, Bullingen Belgium)",1,1,1944-12-16,1944-12-16
@@ -604,17 +604,29 @@ PL0609,"Sarre-Union, Bas-Rhin",,point,48.9404,7.0899,3,FR,Alsace,R002,"OpenStree
 PL0610,"Niedaltdorf, Saarland",,point,49.3415,6.5912,3,DE,Saarland,R002,"OpenStreetMap Nominatim (Niedaltdorf, Germany)",1,1,1944-11-25,1944-11-25
 PL0611,"Falck, Moselle",,point,49.2225,6.6398,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Falck, Moselle, France)",1,1,1944-11-27,1944-11-27
 PL0612,"Raon-l'Étape, Vosges",,point,48.407,6.8437,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Raon-l'Étape, Vosges, France)",2,2,1944-11-07,1944-11-10
-PL0613,"Sélestat, Bas-Rhin",,point,48.2594,7.4542,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Sélestat, Bas-Rhin, France)",1,1,1944-11-26,1944-11-26
+PL0613,"Sélestat, Bas-Rhin",,point,48.2594,7.4542,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Sélestat, Bas-Rhin, France)",2,1,1944-11-26,1945-01-20
 PL0614,"Saulcy-sur-Meurthe, Vosges",,point,48.2377,6.9604,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Saulcy-sur-Meurthe, Vosges, France)",2,2,1944-11-10,1944-11-10
 PL0615,"Blamont, Meurthe-et-Moselle",,point,48.5913,6.8435,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Blamont, Meurthe-et-Moselle, France)",1,1,1944-11-19,1944-11-19
 PL0616,"Étival-Clairefontaine, Vosges",,point,48.3641,6.8652,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Étival-Clairefontaine, Vosges, France)",1,1,1944-11-10,1944-11-10
 PL0617,"Saint-Dié-des-Vosges, Vosges",,point,48.2872,6.9474,5,FR,Lorraine,R002,OpenStreetMap Nominatim (Saint-Dié-des-Vosges),1,1,1944-11-07,1944-11-07
-PL0618,"Haguenau, Bas-Rhin",,point,48.8387,7.8318,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Haguenau, Bas-Rhin, France)",2,2,1944-11-26,1944-12-08
+PL0618,"Haguenau, Bas-Rhin",,point,48.8387,7.8318,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Haguenau, Bas-Rhin, France)",5,4,1944-11-26,1945-01-12
 PL0619,"Strasbourg, Bas-Rhin",,point,48.5833,7.7458,5,FR,Alsace,R001,Wikipedia article Strasbourg,1,1,1944-11-22,1944-11-22
 PL0620,"Middelburg, Zeeland",,point,51.4997,3.6137,3,NL,Zeeland,R002,"OpenStreetMap Nominatim (Middelburg, Zeeland, Netherlands)",1,1,1944-11-06,1944-11-06
-PL0621,Utrecht,,point,52.0907,5.1216,3,NL,Utrecht,R002,"OpenStreetMap Nominatim (Utrecht, Netherlands)",2,2,1944-11-10,1944-11-10
+PL0621,Utrecht,,point,52.0907,5.1216,3,NL,Utrecht,R002,"OpenStreetMap Nominatim (Utrecht, Netherlands)",4,2,1944-11-10,1945-03-28
 PL0622,"Geldern, North Rhine-Westphalia",,point,51.517,6.3228,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Geldern, Germany)",1,1,1944-12-09,1944-12-09
 PL0623,"Breda, Noord-Brabant",,point,51.5888,4.776,5,NL,Noord-Brabant,R002,OpenStreetMap Nominatim (Breda),1,1,1944-11-15,1944-11-15
 PL0624,"Dunkirk, Nord",,point,51.0348,2.3773,3,FR,Nord,R002,"OpenStreetMap Nominatim (Dunkerque, Nord, France)",1,1,1944-12-15,1944-12-15
 PL0625,Bremen,,point,53.0758,8.8072,3,DE,Bremen,R002,"OpenStreetMap Nominatim (Bremen, Germany)",1,1,1944-11-15,1944-11-15
-PL0626,"Ziegenberg (Schloss Adlerhorst), Hesse",,point,50.3671,8.6249,1,DE,Hesse,R002,"OpenStreetMap Nominatim (Schloss Ziegenberg, Langenhain-Ziegenberg, Ober-Mörlen, Germany)",1,1,1944-11-26,1944-11-26
+PL0626,"Ziegenberg (Schloss Adlerhorst), Hesse",,point,50.3671,8.6249,1,DE,Hesse,R002,"OpenStreetMap Nominatim (Schloss Ziegenberg, Langenhain-Ziegenberg, Ober-Mörlen, Germany)",3,1,1944-11-26,1945-03-10
+PL0627,"Erstein, Bas-Rhin",,point,48.4227,7.6633,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Erstein, Bas-Rhin, France)",3,3,1945-01-07,1945-01-20
+PL0628,"Lauterbourg, Bas-Rhin",,point,48.9751,8.1767,3,FR,Bas-Rhin,R002,"OpenStreetMap Nominatim (Lauterbourg, Bas-Rhin, France)",6,5,1945-01-07,1945-01-16
+PL0629,"Hatten, Bas-Rhin",,point,48.9013,7.9757,3,FR,Bas-Rhin,R002,"OpenStreetMap Nominatim (Hatten, Bas-Rhin, France)",2,2,1945-01-09,1945-01-10
+PL0630,"Cernay, Haut-Rhin",,point,47.8087,7.1788,3,FR,Alsace,R002,"OpenStreetMap Nominatim (Cernay, Haut-Rhin, France)",3,3,1945-01-20,1945-01-20
+PL0631,"Mulhouse, Haut-Rhin",,point,47.7467,7.339,5,FR,Alsace,R002,"OpenStreetMap Nominatim (Mulhouse, Haut-Rhin, France)",1,1,1945-01-20,1945-01-20
+PL0632,"Wesel, North Rhine-Westphalia",,point,51.6577,6.6171,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Wesel, Germany)",5,4,1945-03-15,1945-03-28
+PL0633,"Brandscheid, Rheinland-Pfalz",,point,50.2213,6.3094,3,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Brandscheid, Eifelkreis Bitburg-Prüm, Germany)",2,2,1945-02-06,1945-02-06
+PL0634,"Erkelenz, North Rhine-Westphalia",,point,51.081,6.3161,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Erkelenz, Germany)",1,1,1945-02-25,1945-02-25
+PL0635,"Elsdorf, North Rhine-Westphalia",,point,50.9371,6.5698,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Elsdorf, Rhein-Erft-Kreis, Germany)",1,1,1945-02-27,1945-02-27
+PL0636,"Mönchengladbach, North Rhine-Westphalia",,point,51.1947,6.4354,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Mönchengladbach, Germany)",1,1,1945-02-27,1945-02-27
+PL0637,"Rees, North Rhine-Westphalia",,point,51.7581,6.3957,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Rees, Kreis Kleve, Germany)",3,3,1945-03-24,1945-03-24
+PL0638,"Freiburg im Breisgau, Baden-Württemberg",,point,47.9961,7.8494,5,DE,Baden-Württemberg,R002,"OpenStreetMap Nominatim (Freiburg im Breisgau, Germany)",4,1,1945-02-15,1945-03-26

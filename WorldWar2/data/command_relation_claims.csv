@@ -215,6 +215,7 @@ CR0069,C1446,1,observed_during,,,,,,,,,,
 CR0069,C1449,1,observed_during,,,,,,,,,,
 CR0069,C1462,1,observed_during,,,,,,,,,,
 CR0069,C1468,1,observed_during,,,,,,,,,,
+CR0069,C1471,1,observed_during,,,,,,,,,,
 CR0070,C0015,1,observed_during,,,,,,,,,,
 CR0070,C0016,1,observed_during,,,,,,,,,,
 CR0070,C1409,1,observed_during,,,,,,,,,,
@@ -1181,6 +1182,7 @@ CR0328,C0472,1,asserts_start,1944-09-21,,,,,,,,CMH ETO-OB assignment table (sing
 CR0329,C0544,5,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st""; the table row of 1944-11-23 no longer lists it, so the attachment is closed on 1944-11-22",assignment_table
 CR0330,C0544,3,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Second Br (Opns)""; the table row of 1944-11-23 no longer lists it, so the attachment is closed on 1944-11-22",assignment_table
 CR0331,C0544,1,asserts_start_and_end,1944-11-11,,,,1944-11-22,,,assignment_table,"CMH ETO-OB assignment table, corps column: ""30th Br (Opns)""; the table row of 1944-11-23 no longer lists it, so the attachment is closed on 1944-11-22",assignment_table
+CR0331,C1471,2,listed_by_higher_unit,,,,,,,,,"the 84th US Division is temporarily under command of XXX Corps for the Geilenkirchen attack (Ellis, vol. II, p. 161)",narrative
 CR0332,C0544,4,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0332,C0560,4,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0332,C0653,3,asserts_start,1944-11-04,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" Start extrapolated from the CMH table (V-013, decided by Scott on 26 October 2026): valid_from was 11 November 1944 (the table row in force at the first claim that lists the relation) and is now 4 November 1944, the date of the row of the CMH ETO-OB assignment table (R367, ""Assignment and Attachment to Higher Units"", row 4 Nov 44, Army Group Assigned column (""12th"")) in which the entry begins. The unit's first claim in the dataset is C0544 (18 November 1944), so for 4 November 1944 to 17 November 1944 the dataset has no claim for this unit and only the table records the relation. The start basis stays assignment_table: the table is the source of the date, not a claim.",assignment_table
@@ -2165,9 +2167,11 @@ CR0873,C1410,1,observed_during,,,,,,,,,,
 CR0874,C1412,1,observed_during,,,,,,,,,,
 CR0874,C1434,1,observed_during,,,,,,,,,,
 CR0874,C1448,1,observed_during,,,,,,,,,,
+CR0874,C1469,1,observed_during,,,,,,,,,,
 CR0875,C1413,1,observed_during,,,,,,,,,,
 CR0876,C1414,1,observed_during,,,,,,,,,,
 CR0876,C1435,1,observed_during,,,,,,,,,,
+CR0876,C1470,1,observed_during,,,,,,,,,,
 CR0877,C1419,1,observed_during,,,,,,,,,,
 CR0877,C1432,1,observed_during,,,,,,,,,,
 CR0878,C1422,1,observed_during,,,,,,,,,,
@@ -2175,6 +2179,7 @@ CR0879,C1427,1,observed_during,,,,,,,,,,
 CR0880,C1431,1,observed_during,,,,,,,,,,
 CR0880,C1437,1,observed_during,,,,,,,,,,
 CR0880,C1450,1,observed_during,,,,,,,,,,
+CR0880,C1472,1,observed_during,,,,,,,,,,
 CR0881,C1433,1,observed_during,,,,,,,,,,
 CR0881,C1439,1,observed_during,,,,,,,,,,
 CR0881,C1440,1,observed_during,,,,,,,,,,

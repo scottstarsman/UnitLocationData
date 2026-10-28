@@ -3538,7 +3538,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -10378,7 +10378,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -13218,7 +13218,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -13338,7 +13338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -13459,6 +13459,126 @@
     "country": "NL",
     "region": "Zeeland",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3937,
+     49.1565
+    ]
+   },
+   "properties": {
+    "place_id": "PL0681",
+    "name": "Louvigny, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0686,
+     49.3568
+    ]
+   },
+   "properties": {
+    "place_id": "PL0682",
+    "name": "Forêt de la Londe (Forêt domaniale de la Londe-Rouvray), Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Upper Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0791,
+     49.9246
+    ]
+   },
+   "properties": {
+    "place_id": "PL0683",
+    "name": "Dieppe, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Upper Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3278,
+     51.4107
+    ]
+   },
+   "properties": {
+    "place_id": "PL0684",
+    "name": "Woensdrecht, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6899,
+     51.501
+    ]
+   },
+   "properties": {
+    "place_id": "PL0685",
+    "name": "Sloedam (Walcheren causeway), Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     51.7741
+    ]
+   },
+   "properties": {
+    "place_id": "PL0686",
+    "name": "Groesbeek, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
    }
   }
  ]

@@ -418,8 +418,43 @@ def scenario_10_german_batch_3_nov_dec_1944():
     expect(s + ': Fifteenth Army, 15 Nov (CMH ch. 17 p. 395): Army Group B is certain', a[('GER-AG-00BG', 'assigned')][0], 'certain')
 
 
+def scenario_11_german_1945_batch_1_jan_mar():
+    """German 1945 Batch 1 (1 January to 31 March 1945): a dated row closes the earlier relation the day before it; the corps and armies move between army groups on the sourced day (Nordwind, the Colmar Pocket, the Rhineland); the Nineteenth Army ends under OB West; a corps under the Seventh Army moves to the Fifteenth Army on the day of the command change."""
+    s = 'scenario 11, German 1945 Batch 1 (January to March 1945)'
+    a = intervals('GER-SSPZ-001C', '1945-01-03')
+    expect(s + ': I SS Panzer Corps, 3 Jan: Sixth Panzer Army is possible only (end inferred before the 4 Jan row)', a[('GER-PZA-006A', 'assigned')][0], 'possible')
+    a = intervals('GER-SSPZ-001C', '1945-01-04')
+    expect(s + ': I SS Panzer Corps, 4 Jan: Fifth Panzer Army is certain and the Sixth Panzer Army no longer applies', sorted(a), [('GER-PZA-005A', 'assigned')])
+    a = intervals('GER-PZ-039C', '1945-01-09')
+    expect(s + ': XXXIX Panzer Corps, 9 Jan (Nordwind): Army Group G is certain', a[('GER-AG-00GG', 'assigned')][0], 'certain')
+    a = intervals('GER-PZ-039C', '1945-01-12')
+    expect(s + ': XXXIX Panzer Corps, 12 Jan: Army Group Oberrhein is certain and Army Group G no longer applies', sorted(a), [('GER-AG-OBRHG', 'assigned')])
+    a = intervals('GER-PZ-021D', '1945-01-07')
+    expect(s + ': 21st Panzer Division, 7 Jan: XXXIX Panzer Corps is certain', sorted(a), [('GER-PZ-039C', 'assigned')])
+    a = intervals('GER-PZ-021D', '1945-01-12')
+    expect(s + ': 21st Panzer Division, 12 Jan: LXXXIX Corps is certain', sorted(a), [('GER-COR-089C', 'assigned')])
+    a = intervals('GER-ARMY-019A', '1945-01-20')
+    expect(s + ': Nineteenth Army, 20 Jan (Colmar Pocket): Army Group Oberrhein is certain', a[('GER-AG-OBRHG', 'assigned')][0], 'certain')
+    a = intervals('GER-ARMY-019A', '1945-01-29')
+    expect(s + ': Nineteenth Army, 29 Jan: Army Group G is certain and Army Group Oberrhein no longer applies', sorted(a), [('GER-AG-00GG', 'assigned')])
+    a = intervals('GER-ARMY-019A', '1945-03-02')
+    expect(s + ': Nineteenth Army, 2 Mar (CMH Last Offensive ch. 12 p. 237, Lexikon): OB West is certain and Army Group G no longer applies', sorted(a), [('GER-OBW-000H', 'assigned')])
+    a = intervals('GER-INF-338D', '1945-01-20')
+    expect(s + ': 338th Infantry Division, 20 Jan: LXIII Corps is certain', a[('GER-COR-063C', 'assigned')][0], 'certain')
+    a = intervals('GER-INF-338D', '1945-02-25')
+    expect(s + ': 338th Infantry Division, 25 Feb: XII SS Corps is certain and the LXIII Corps no longer applies', sorted(a), [('GER-SSCOR-012C', 'assigned')])
+    a = intervals('GER-COR-053C', '1945-03-05')
+    expect(s + ': LIII Corps, 5 Mar: Seventh Army is possible only (end inferred before the 6 Mar row)', a[('GER-ARMY-007A', 'assigned')][0], 'possible')
+    a = intervals('GER-COR-053C', '1945-03-06')
+    expect(s + ': LIII Corps, 6 Mar: Fifteenth Army is certain and the Seventh Army no longer applies', sorted(a), [('GER-ARMY-015A', 'assigned')])
+    a = intervals('GER-ARMY-001A', '1945-03-23')
+    expect(s + ': First Army, 23 Mar: Army Group G is certain', a[('GER-AG-00GG', 'assigned')][0], 'certain')
+    a = intervals('GER-PZA-005A', '1945-01-22')
+    expect(s + ': Fifth Panzer Army, 22 Jan: Army Group B is certain', a[('GER-AG-00BG', 'assigned')][0], 'certain')
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar):
         before = len(FAILURES)
         try:
             fn()

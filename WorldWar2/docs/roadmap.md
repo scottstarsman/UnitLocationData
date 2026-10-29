@@ -496,5 +496,5 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 
 - US: 6 open starts (the 5th and 8th Infantry entries into combat, the 30th's Rhine crossing, the 4th Armored reserve of 10 January 1945, the 7th Armored rest from 8 November 1944, the 10th Armored attack of 20 February 1945).
 - US: no 8 May 1945 row for the 29th, 30th and 83rd Infantry and the 2nd Armored (the combat chronicles stop before VE Day).
-- US: the 28th Division's rest after the Hürtgen; raising single-source rows to 0.7 against the Green Books.
+- US: the 28th Division's rest after the Hürtgen (the Neufchâteau refit of 22 December 1944 to 2 January 1945 is done); raising single-source rows to 0.7 against the Green Books.
 - US: the 89th Division's disputed Moselle rows stay blank.

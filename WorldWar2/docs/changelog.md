@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-1: 28th Infantry Division refit at Neufchâteau (29 October 2026)
+
+Scott asked for this on 29 October 2026. Source: the CMH combat chronicle, 28th Infantry Division (R724). 2 new claims; no existing row changed; no new place or reference. Next ids: claim C1905, place PL0954, reference R734.
+
+- C1903, 22 December 1944, Neufchâteau (PL0248): refitting start (stated), 0.5. The chronicle says the division withdrew to Neufchâteau for reorganization. Reorganization is recorded as refitting, because the design folds rest into refitting.
+- C1904, 2 January 1945, Verdun (PL0361, a representative point for the Meuse line from Givet to Verdun, 50 km): refitting end (stated), 0.5. The move to the Meuse line ends the refit. It is recorded as the end of the refit, not an in_line start: the next state row is 95 days later, and the chronicle has rehabilitation after 6 March, so a start would overstate the line service.
+
+The refit after the Hürtgen (before 16 December 1944) is still deferred to the official-history pass.
+
 ## activity-rollout-1 second-source pass: 8 May 1945 rows and span closures from the CMH combat chronicles (29 October 2026)
 
 Scott accepted the follow-up's recommendations. This pass uses a second source family, the US Army Center of Military History combat chronicles (public domain; Wayback copies, R723, R724 and R726-R732), and for the 36th Division the Wikipedia article (R733). R725 was drafted and dropped before commit; it is unused and is not to be reused. 16 new claims (C1887-C1902), 3 new places (PL0951 Salzburg, PL0952 Kufstein, PL0953 Kitzbühel). Next ids: claim C1903, place PL0954, reference R734. No existing row changed.

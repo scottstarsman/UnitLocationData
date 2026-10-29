@@ -18415,6 +18415,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2803,
+     49.0803
+    ]
+   },
+   "properties": {
+    "claim_id": "C1547",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL0786",
+    "location_name": "Saint-Aignan-de-Cramesnil, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Totalize phase II: first action; crosses the Bretteville-St. Aignan road and is checked near Robertmesnil",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 224; R670: p. 423"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7407,
      48.3382
     ]
@@ -18531,6 +18572,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R364;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2636,
+     49.0479
+    ]
+   },
+   "properties": {
+    "claim_id": "C1548",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-09",
+    "place_id": "PL0787",
+    "location_name": "Cauvicourt, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "Totalize: clears the woods north of Cauvicourt, takes the village and fights in St. Sylvain",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 229; R670: p. 424"
    }
   },
   {
@@ -20547,6 +20629,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.0802,
+     48.9756
+    ]
+   },
+   "properties": {
+    "claim_id": "C1549",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-15",
+    "place_id": "PL0788",
+    "location_name": "Jort, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "Tractable: switched to the left flank, reaches the Dives at Jort and forces a crossing",
+    "operation_id": "OP-TRACTABLE",
+    "operation": "Operation Tractable",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Tractable",
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 250; R670: p. 431"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -21203,6 +21326,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.1315,
+     48.892
+    ]
+   },
+   "properties": {
+    "claim_id": "C1550",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-18",
+    "place_id": "PL0789",
+    "location_name": "Les Champeaux, Orne",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "Closing the gap: reaches Les Champeaux on the Trun-Vimoutiers road and turns south for Chambois",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 256; R670: p. 442"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6396,
      43.2733
     ]
@@ -21647,6 +21811,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 260"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1061,
+     48.8058
+    ]
+   },
+   "properties": {
+    "claim_id": "C1551",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-19",
+    "place_id": "PL0512",
+    "location_name": "Chambois, Orne (elements (10th Dragoons and 10th Mounted Rifles))",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "Closing the gap: the 10th Dragoons and reconnaissance regiment enter Chambois and meet the US 90th Division",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R001",
+    "source_locator": "R668: p. 261; R670: p. 445"
    }
   },
   {
@@ -22426,6 +22631,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 453"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1334,
+     48.8433
+    ]
+   },
+   "properties": {
+    "claim_id": "C1552",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-21",
+    "place_id": "PL0790",
+    "location_name": "Coudehard, Orne",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "defense",
+    "current_activity": "Falaise gap: the isolated Polish groups on Hill 262 above Coudehard are relieved by the 4th Canadian Armoured Division",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 262, 264; R670: p. 447"
    }
   },
   {
@@ -26205,6 +26451,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.039,
+     50.3738
+    ]
+   },
+   "properties": {
+    "claim_id": "C1553",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-04",
+    "place_id": "PL0791",
+    "location_name": "Hesdin, Pas-de-Calais",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Pursuit: leads the corps across the Somme and is reported in Hesdin by noon",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 324"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.8662,
      50.4665
     ]
@@ -26656,6 +26943,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.2534,
+     50.7516
+    ]
+   },
+   "properties": {
+    "claim_id": "C1554",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-05",
+    "place_id": "PL0792",
+    "location_name": "Saint-Omer, Pas-de-Calais",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Pursuit: occupies St. Omer",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 326; R671: p. 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1778,
      49.1203
     ]
@@ -26690,6 +27018,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R411;R001",
     "source_locator": "R411: p. 45-46"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.8846,
+     50.8522
+    ]
+   },
+   "properties": {
+    "claim_id": "C1555",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-06",
+    "place_id": "PL0793",
+    "location_name": "Ypres (Ieper), West Flanders",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Pursuit: crosses into Belgium and overcomes resistance at Ypres and Passchendaele",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 326"
    }
   },
   {
@@ -26854,6 +27223,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R362;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1244,
+     50.945
+    ]
+   },
+   "properties": {
+    "claim_id": "C1556",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-07",
+    "place_id": "PL0794",
+    "location_name": "Roulers (Roeselare), West Flanders",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Pursuit: reaches Roulers on the way to the Ghent Canal",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 326; R671: p. 15"
    }
   },
   {
@@ -28043,6 +28453,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R001;R668",
     "source_locator": "R671: pp. 14, 15; R668: p. 331"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.725,
+     51.0538
+    ]
+   },
+   "properties": {
+    "claim_id": "C1557",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-11",
+    "place_id": "PL0795",
+    "location_name": "Ghent (Gent), East Flanders",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "Moves to the Ghent area and relieves the 7th British Armoured Division after failing to force the Ghent Canal",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 327; R671: p. 15"
    }
   },
   {
@@ -31535,6 +31986,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.9072,
+     51.2674
+    ]
+   },
+   "properties": {
+    "claim_id": "C1558",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-19",
+    "place_id": "PL0796",
+    "location_name": "Axel, Zeeland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "South of the Scheldt: bridges the Hulst Canal at Kijkuit and occupies Axel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 364; R671: p. 68"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -31856,6 +32348,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R001",
     "source_locator": "R671: p. 39"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.8422,
+     51.2988
+    ]
+   },
+   "properties": {
+    "claim_id": "C1559",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-20",
+    "place_id": "PL0797",
+    "location_name": "Terneuzen, Zeeland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "South of the Scheldt: reaches the estuary at several points; Terneuzen falls to the 3rd Brigade",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 364; R671: p. 68"
    }
   },
   {
@@ -33503,6 +34036,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3997,
+     51.2211
+    ]
+   },
+   "properties": {
+    "claim_id": "C1560",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-28",
+    "place_id": "PL0574",
+    "location_name": "Antwerp, Belgium",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Moved to the area south-east of Antwerp, the division passes under I Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 367; R671: p. 70"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6363,
      49.2133
     ]
@@ -33831,6 +34405,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8627,
+     51.358
+    ]
+   },
+   "properties": {
+    "claim_id": "C1561",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-30",
+    "place_id": "PL0798",
+    "location_name": "Merksplas (Merxplas), Antwerp province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Breaks out of the Turnhout Canal bridgehead to the north-east and takes Merxplas",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 368; R671: p. 100"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.8538,
      50.9525
     ]
@@ -33995,6 +34610,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8731,
+     51.4375
+    ]
+   },
+   "properties": {
+    "claim_id": "C1562",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-03",
+    "place_id": "PL0799",
+    "location_name": "Baarle-Nassau, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Advance on Tilburg: takes Baarle Nassau against heavy opposition",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 381; R671: p. 100"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7903,
      51.8875
     ]
@@ -34029,6 +34685,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R336;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9553,
+     51.4829
+    ]
+   },
+   "properties": {
+    "claim_id": "C1563",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-05",
+    "place_id": "PL0800",
+    "location_name": "Alphen, Alphen-Chaam, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "Advance on Tilburg: takes Alphen, south-west of Tilburg, and is halted there",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 381; R671: p. 100"
    }
   },
   {
@@ -35758,6 +36455,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C1564",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-29",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "Captures Breda in house-to-house fighting on the right flank of I Corps",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 390; R671: p. 125"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8138,
      48.4827
     ]
@@ -37186,6 +37924,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R668;R002",
     "source_locator": "R671: pp. 159, 160; R668: pp. 428, 430"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5256,
+     51.6628
+    ]
+   },
+   "properties": {
+    "claim_id": "C1565",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-09",
+    "place_id": "PL0801",
+    "location_name": "Moerdijk, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Lower Maas: closes on Moerdijk; the last Germans south of the river are eliminated",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 424"
    }
   },
   {
@@ -43671,6 +44450,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9832,
+     51.7141
+    ]
+   },
+   "properties": {
+    "claim_id": "C1566",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-30",
+    "place_id": "PL0715",
+    "location_name": "Kapelsche Veer, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "Winter on the Maas: first attack on the German bridgehead at Kapelsche Veer fails",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 452; R671: p. 239"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -2.79,
      47.51
     ]
@@ -44853,6 +45673,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R545;R002",
     "source_locator": "R545: p. 518"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9832,
+     51.7141
+    ]
+   },
+   "properties": {
+    "claim_id": "C1567",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-07",
+    "place_id": "PL0715",
+    "location_name": "Kapelsche Veer, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Kapelsche Veer: second Polish attack clears the harbour but is again forced back",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 452; R671: p. 239"
    }
   },
   {
@@ -56135,6 +56996,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7407,
+     52.6612
+    ]
+   },
+   "properties": {
+    "claim_id": "C1568",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-08",
+    "place_id": "PL0717",
+    "location_name": "Coevorden, Drenthe",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Rejoins II Canadian Corps; ordered to take over the defence of Coevorden and thrust north through Dalen and Emmen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: pp. 552, 561; R671: p. 313"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -56415,6 +57317,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 306"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9525,
+     52.7529
+    ]
+   },
+   "properties": {
+    "claim_id": "C1569",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-10",
+    "place_id": "PL0802",
+    "location_name": "Emmen, Drenthe (elements (a motorized battalion))",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "North-east Netherlands: a motorized battalion occupies Emmen; reconnaissance meets the French SAS near Westerbork",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 561"
    }
   },
   {
@@ -57160,6 +58103,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1921,
+     53.0067
+    ]
+   },
+   "properties": {
+    "claim_id": "C1570",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-13",
+    "place_id": "PL0803",
+    "location_name": "Bourtange (Boertange), Groningen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "West of the Ems: reaches Boertange, half way from Meppen to the Ems estuary, despite demolitions",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 561"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4333,
      52.0667
     ]
@@ -57522,6 +58506,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 576"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.24,
+     52.7906
+    ]
+   },
+   "properties": {
+    "claim_id": "C1571",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-14",
+    "place_id": "PL0804",
+    "location_name": "Haren (Ems), Niedersachsen (elements (10th Polish Armoured Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "East of the Ems: the 10th Armoured Brigade crosses at Haren and strikes the Kusten Canal defences",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 561"
    }
   },
   {
@@ -58472,6 +59497,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1609,
+     53.2835
+    ]
+   },
+   "properties": {
+    "claim_id": "C1572",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-15",
+    "place_id": "PL0805",
+    "location_name": "Dollart (Dollard) estuary, Groningen (elements (a patrol of the 3rd Polish Infantry Brigade))",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "A patrol of the 3rd Infantry Brigade reaches the North Sea at the Dollart, east of Groningen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 561"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -59415,6 +60481,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1609,
+     53.2835
+    ]
+   },
+   "properties": {
+    "claim_id": "C1573",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-18",
+    "place_id": "PL0805",
+    "location_name": "Dollart (Dollard) estuary, Groningen",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Ellis: the division reaches the Ems estuary near the German border",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 313"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6172,
      51.8006
     ]
@@ -60153,6 +61260,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.411,
+     53.0773
+    ]
+   },
+   "properties": {
+    "claim_id": "C1574",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-22",
+    "place_id": "PL0806",
+    "location_name": "Papenburg, Niedersachsen",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Right bank of the Ems: Papenburg captured; most of the area south of the Leda cleared by the evening of 22 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 561"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.9552,
      51.7903
     ]
@@ -60474,6 +61622,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R569;R002",
     "source_locator": "R569: p. 445"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6136,
+     53.1866
+    ]
+   },
+   "properties": {
+    "claim_id": "C1575",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-25",
+    "place_id": "PL0807",
+    "location_name": "Potshausen, Ostrhauderfehn, Niedersachsen (elements (3rd Infantry Brigade Group))",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Towards Varel: the 3rd Infantry Brigade Group reaches Potshausen on the upper Leda and gains a foothold beyond it",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 598"
    }
   },
   {
@@ -61465,6 +62654,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.646,
+     53.2176
+    ]
+   },
+   "properties": {
+    "claim_id": "C1576",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-01",
+    "place_id": "PL0808",
+    "location_name": "Stickhausen, Detern, Niedersachsen",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Crosses the Jumme and occupies Stickhausen; the 10th Armoured Brigade secures Hesel the same day",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 598"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.9,
      48.3167
     ]
@@ -61827,6 +63057,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 339"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9273,
+     53.2575
+    ]
+   },
+   "properties": {
+    "claim_id": "C1577",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-03",
+    "place_id": "PL0809",
+    "location_name": "Westerstede, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Makes contact with the 4th Canadian Armoured Division at Westerstede",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 598"
    }
   },
   {
@@ -62360,6 +63631,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 339"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9373,
+     53.3577
+    ]
+   },
+   "properties": {
+    "claim_id": "C1578",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-04",
+    "place_id": "PL0810",
+    "location_name": "Astederfeld, Zetel, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "Last advance: infantry and reconnaissance reach Astederfeld, two miles south of Neuenburg, before the cease fire",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 598"
    }
   },
   {
@@ -62975,6 +64287,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R574;R569;R001",
     "source_locator": "R569: p. 466"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1063,
+     53.5279
+    ]
+   },
+   "properties": {
+    "claim_id": "C1579",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-06",
+    "place_id": "PL0811",
+    "location_name": "Wilhelmshaven, Niedersachsen",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "After the cease fire, the division takes over the naval base at Wilhelmshaven and accepts its capitulation",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R035;R002",
+    "source_locator": "R035: section Germany"
    }
   },
   {

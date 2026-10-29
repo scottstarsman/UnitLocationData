@@ -10118,7 +10118,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -12318,7 +12318,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14158,7 +14158,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -14198,7 +14198,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Drenthe",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -15558,6 +15558,526 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2803,
+     49.0803
+    ]
+   },
+   "properties": {
+    "place_id": "PL0786",
+    "name": "Saint-Aignan-de-Cramesnil, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2636,
+     49.0479
+    ]
+   },
+   "properties": {
+    "place_id": "PL0787",
+    "name": "Cauvicourt, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.0802,
+     48.9756
+    ]
+   },
+   "properties": {
+    "place_id": "PL0788",
+    "name": "Jort, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1315,
+     48.892
+    ]
+   },
+   "properties": {
+    "place_id": "PL0789",
+    "name": "Les Champeaux, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1334,
+     48.8433
+    ]
+   },
+   "properties": {
+    "place_id": "PL0790",
+    "name": "Coudehard, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.039,
+     50.3738
+    ]
+   },
+   "properties": {
+    "place_id": "PL0791",
+    "name": "Hesdin, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2534,
+     50.7516
+    ]
+   },
+   "properties": {
+    "place_id": "PL0792",
+    "name": "Saint-Omer, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.8846,
+     50.8522
+    ]
+   },
+   "properties": {
+    "place_id": "PL0793",
+    "name": "Ypres (Ieper), West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "West Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1244,
+     50.945
+    ]
+   },
+   "properties": {
+    "place_id": "PL0794",
+    "name": "Roulers (Roeselare), West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "West Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.725,
+     51.0538
+    ]
+   },
+   "properties": {
+    "place_id": "PL0795",
+    "name": "Ghent (Gent), East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "East Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.9072,
+     51.2674
+    ]
+   },
+   "properties": {
+    "place_id": "PL0796",
+    "name": "Axel, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.8422,
+     51.2988
+    ]
+   },
+   "properties": {
+    "place_id": "PL0797",
+    "name": "Terneuzen, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8627,
+     51.358
+    ]
+   },
+   "properties": {
+    "place_id": "PL0798",
+    "name": "Merksplas (Merxplas), Antwerp province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8731,
+     51.4375
+    ]
+   },
+   "properties": {
+    "place_id": "PL0799",
+    "name": "Baarle-Nassau, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9553,
+     51.4829
+    ]
+   },
+   "properties": {
+    "place_id": "PL0800",
+    "name": "Alphen, Alphen-Chaam, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5256,
+     51.6628
+    ]
+   },
+   "properties": {
+    "place_id": "PL0801",
+    "name": "Moerdijk, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9525,
+     52.7529
+    ]
+   },
+   "properties": {
+    "place_id": "PL0802",
+    "name": "Emmen, Drenthe",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Drenthe",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1921,
+     53.0067
+    ]
+   },
+   "properties": {
+    "place_id": "PL0803",
+    "name": "Bourtange (Boertange), Groningen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Groningen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.24,
+     52.7906
+    ]
+   },
+   "properties": {
+    "place_id": "PL0804",
+    "name": "Haren (Ems), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1609,
+     53.2835
+    ]
+   },
+   "properties": {
+    "place_id": "PL0805",
+    "name": "Dollart (Dollard) estuary, Groningen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Groningen",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.411,
+     53.0773
+    ]
+   },
+   "properties": {
+    "place_id": "PL0806",
+    "name": "Papenburg, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6136,
+     53.1866
+    ]
+   },
+   "properties": {
+    "place_id": "PL0807",
+    "name": "Potshausen, Ostrhauderfehn, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.646,
+     53.2176
+    ]
+   },
+   "properties": {
+    "place_id": "PL0808",
+    "name": "Stickhausen, Detern, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9273,
+     53.2575
+    ]
+   },
+   "properties": {
+    "place_id": "PL0809",
+    "name": "Westerstede, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9373,
+     53.3577
+    ]
+   },
+   "properties": {
+    "place_id": "PL0810",
+    "name": "Astederfeld, Zetel, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1063,
+     53.5279
+    ]
+   },
+   "properties": {
+    "place_id": "PL0811",
+    "name": "Wilhelmshaven, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
     "claims_count": 1
    }
   }

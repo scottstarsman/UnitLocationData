@@ -1658,7 +1658,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Brittany",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -17238,7 +17238,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Provence",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -17538,6 +17538,346 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Ardennes",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4684,
+     43.0283
+    ]
+   },
+   "properties": {
+    "place_id": "PL0890",
+    "name": "Île du Levant, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Provence",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3968,
+     43.0065
+    ]
+   },
+   "properties": {
+    "place_id": "PL0891",
+    "name": "Port-Cros, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Provence",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1218,
+     43.658
+    ]
+   },
+   "properties": {
+    "place_id": "PL0892",
+    "name": "Villeneuve-Loubet, Alpes-Maritimes",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Provence",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5029,
+     43.7753
+    ]
+   },
+   "properties": {
+    "place_id": "PL0893",
+    "name": "Menton, Alpes-Maritimes",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Provence",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9444,
+     44.1963
+    ]
+   },
+   "properties": {
+    "place_id": "PL0894",
+    "name": "Sisteron, Alpes-de-Haute-Provence",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Provence",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7502,
+     44.5219
+    ]
+   },
+   "properties": {
+    "place_id": "PL0895",
+    "name": "Aspres-sur-Buëch, Hautes-Alpes",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Dauphiné",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8731,
+     44.6434
+    ]
+   },
+   "properties": {
+    "place_id": "PL0896",
+    "name": "Marsanne, Drôme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Dauphiné",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8177,
+     44.642
+    ]
+   },
+   "properties": {
+    "place_id": "PL0897",
+    "name": "Condillac, Drôme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Dauphiné",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8223,
+     44.7518
+    ]
+   },
+   "properties": {
+    "place_id": "PL0898",
+    "name": "Loriol-sur-Drôme, Drôme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Dauphiné",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.8996,
+     48.515
+    ]
+   },
+   "properties": {
+    "place_id": "PL0899",
+    "name": "Miniac-Morvan, Ille-et-Vilaine",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.7603,
+     48.5141
+    ]
+   },
+   "properties": {
+    "place_id": "PL0900",
+    "name": "Saint-Brieuc, Côtes-d'Armor",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.1502,
+     48.5618
+    ]
+   },
+   "properties": {
+    "place_id": "PL0901",
+    "name": "Guingamp, Côtes-d'Armor",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.8332,
+     48.5825
+    ]
+   },
+   "properties": {
+    "place_id": "PL0902",
+    "name": "Morlaix, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.5668,
+     48.6841
+    ]
+   },
+   "properties": {
+    "place_id": "PL0903",
+    "name": "Saint-Michel-en-Grève, Côtes-d'Armor",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.0484,
+     48.7795
+    ]
+   },
+   "properties": {
+    "place_id": "PL0904",
+    "name": "Paimpol, Côtes-d'Armor",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.4894,
+     48.2464
+    ]
+   },
+   "properties": {
+    "place_id": "PL0905",
+    "name": "Crozon, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.3311,
+     48.0944
+    ]
+   },
+   "properties": {
+    "place_id": "PL0906",
+    "name": "Douarnenez, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
     "claims_count": 1
    }
   }

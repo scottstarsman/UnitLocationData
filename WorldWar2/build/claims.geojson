@@ -17390,6 +17390,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.8996,
+     48.515
+    ]
+   },
+   "properties": {
+    "claim_id": "C1750",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-03",
+    "place_id": "PL0899",
+    "location_name": "Miniac-Morvan, Ille-et-Vilaine",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "enters Brittany, bypasses Dol and breaks resistance near Miniac with dismounted cavalry",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 389, 390"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.6794,
      48.1147
     ]
@@ -17629,6 +17670,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 400, 401, 402, 409"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.5366,
+     48.2891
+    ]
+   },
+   "properties": {
+    "claim_id": "C1751",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-04",
+    "place_id": "PL0084",
+    "location_name": "Chateauneuf, Ille & Vilaine",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "pushing north towards Saint-Malo meets severe opposition at Châteauneuf, including coastal guns",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 390"
    }
   },
   {
@@ -18408,6 +18490,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R676;R002",
     "source_locator": "R676: section Operation Overlord"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.7603,
+     48.5141
+    ]
+   },
+   "properties": {
+    "claim_id": "C1752",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-06",
+    "place_id": "PL0900",
+    "location_name": "Saint-Brieuc, Côtes-d'Armor",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "finds the three railway bridges at Saint-Brieuc intact; FFI already hold the town",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 391"
    }
   },
   {
@@ -19235,6 +19358,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -3.1502,
+     48.5618
+    ]
+   },
+   "properties": {
+    "claim_id": "C1753",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0901",
+    "location_name": "Guingamp, Côtes-d'Armor",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "takes Guingamp against light resistance late in the day",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -19597,6 +19761,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 420, 421"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.8332,
+     48.5825
+    ]
+   },
+   "properties": {
+    "claim_id": "C1754",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL0902",
+    "location_name": "Morlaix, Finistère",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "enters Morlaix and finds the great railway viaduct intact",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 392"
    }
   },
   {
@@ -20048,6 +20253,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R403;R002",
     "source_locator": "R403: p. 501, 500"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.5668,
+     48.6841
+    ]
+   },
+   "properties": {
+    "claim_id": "C1755",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-11",
+    "place_id": "PL0903",
+    "location_name": "Saint-Michel-en-Grève, Côtes-d'Armor",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "secures the beaches of Saint-Michel-en-Grève for supply landings",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 393"
    }
   },
   {
@@ -22146,6 +22392,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4684,
+     43.0283
+    ]
+   },
+   "properties": {
+    "claim_id": "C1739",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-SSF-001B",
+    "unit_name": "1st Special Service Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0890",
+    "location_name": "Île du Levant, Var (2nd and 3rd Regiments (the 1st Regiment on Port-Cros))",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "lands from rubber boats on Levant (2nd and 3rd Regiments) and Port-Cros (1st Regiment); Levant clear by 2030",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R692;R700;R002",
+    "source_locator": "R692: p. 98"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -22713,6 +23000,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R144;R002",
     "source_locator": "R144: section Normandy invasion"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3968,
+     43.0065
+    ]
+   },
+   "properties": {
+    "claim_id": "C1740",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-SSF-001B",
+    "unit_name": "1st Special Service Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL0891",
+    "location_name": "Port-Cros, Var (1st Regiment)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "1st Regiment takes Port-Cros after the battleship Ramillies shells the fort",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R692;R002",
+    "source_locator": "R692: p. 99"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     43.4714
+    ]
+   },
+   "properties": {
+    "claim_id": "C1744",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TF-BUTLER",
+    "unit_name": "Task Force Butler",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-17",
+    "place_id": "PL0873",
+    "location_name": "Le Muy, Var",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "assembles just north of Le Muy as VI Corps' mobile striking force",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R428;R002",
+    "source_locator": "R428: p. 132"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.0484,
+     48.7795
+    ]
+   },
+   "properties": {
+    "claim_id": "C1756",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-17",
+    "place_id": "PL0904",
+    "location_name": "Paimpol, Côtes-d'Armor",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "with FFI under Colonel Eon, clears Paimpol after a four-day engagement; over 2,000 prisoners",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R400;R002",
+    "source_locator": "R400: p. 393"
    }
   },
   {
@@ -23533,6 +23943,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R670;R001",
     "source_locator": "R668: p. 261; R670: p. 445"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9444,
+     44.1963
+    ]
+   },
+   "properties": {
+    "claim_id": "C1745",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TF-BUTLER",
+    "unit_name": "Task Force Butler",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-19",
+    "place_id": "PL0894",
+    "location_name": "Sisteron, Alpes-de-Haute-Provence",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "reaches Sisteron on the Durance after the action at Digne; patrols west towards the Rhône",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R428;R002",
+    "source_locator": "R428: p. 134"
    }
   },
   {
@@ -24435,6 +24886,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R670;R002",
     "source_locator": "R668: pp. 262, 264; R670: p. 447"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7502,
+     44.5219
+    ]
+   },
+   "properties": {
+    "claim_id": "C1746",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TF-BUTLER",
+    "unit_name": "Task Force Butler",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-21",
+    "place_id": "PL0895",
+    "location_name": "Aspres-sur-Buëch, Hautes-Alpes",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "regroups at Aspres and turns west for Montélimar on Truscott's orders",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R429;R002",
+    "source_locator": "R429: p. 147"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8731,
+     44.6434
+    ]
+   },
+   "properties": {
+    "claim_id": "C1747",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TF-BUTLER",
+    "unit_name": "Task Force Butler",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-21",
+    "place_id": "PL0896",
+    "location_name": "Marsanne, Drôme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "reaches the high ground north of Montélimar; command post at Marsanne by 2330",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R429;R002",
+    "source_locator": "R429: p. 149"
    }
   },
   {
@@ -26205,6 +26738,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1218,
+     43.658
+    ]
+   },
+   "properties": {
+    "claim_id": "C1741",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-SSF-001B",
+    "unit_name": "1st Special Service Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-26",
+    "place_id": "PL0892",
+    "location_name": "Villeneuve-Loubet, Alpes-Maritimes",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "in the centre of the 1st Airborne Task Force, takes Villeneuve-Loubet after hard fighting",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R700;R694;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8177,
+     44.642
+    ]
+   },
+   "properties": {
+    "claim_id": "C1748",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TF-BUTLER",
+    "unit_name": "Task Force Butler",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-26",
+    "place_id": "PL0897",
+    "location_name": "Condillac, Drôme",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "under the 36th Division, attacks west from the Condillac Pass to restore the La Coucourde roadblock",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R429;R002",
+    "source_locator": "R429: p. 162, 154"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1332,
      52.6362
     ]
@@ -26444,6 +27059,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 466"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.4894,
+     48.2464
+    ]
+   },
+   "properties": {
+    "claim_id": "C1757",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-27",
+    "place_id": "PL0905",
+    "location_name": "Crozon, Finistère (a cavalry squadron)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "cavalry squadron cuts the base of the Crozon peninsula and patrols there",
+    "operation_id": "OP-BREST",
+    "operation": "Siege of Brest",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brest",
+    "strength_status": "unknown",
+    "location_date": "1944-08-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R408;R002",
+    "source_locator": "R408: p. 651"
    }
   },
   {
@@ -27018,6 +27674,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R698;R694;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8223,
+     44.7518
+    ]
+   },
+   "properties": {
+    "claim_id": "C1749",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TF-BUTLER",
+    "unit_name": "Task Force Butler",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-29",
+    "place_id": "PL0898",
+    "location_name": "Loriol-sur-Drôme, Drôme (mainly the 3rd Battalion, 157th Infantry)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "built round the 3rd Battalion, 157th Infantry, secures Loriol at the Drôme crossing",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R429;R002",
+    "source_locator": "R429: p. 166"
    }
   },
   {
@@ -35389,6 +36086,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -4.3311,
+     48.0944
+    ]
+   },
+   "properties": {
+    "claim_id": "C1758",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-TDB-001B",
+    "unit_name": "Task Force A (1st Tank Destroyer Brigade)",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-20",
+    "place_id": "PL0906",
+    "location_name": "Douarnenez, Finistère",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "drives to Douarnenez and takes the surrender of an isolated group of 300 Germans",
+    "operation_id": "OP-BREST",
+    "operation": "Siege of Brest",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Brest",
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R408;R002",
+    "source_locator": "R408: p. 652, 653"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -39552,6 +40290,47 @@
     "confidence": 0.3,
     "event_type": "defense",
     "current_activity": "with the 1st Special Service Force holds the southern third of the Franco-Italian Alpine front",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R002",
+    "source_locator": "R647: p. 357"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5029,
+     43.7753
+    ]
+   },
+   "properties": {
+    "claim_id": "C1742",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-SSF-001B",
+    "unit_name": "1st Special Service Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-10-15",
+    "place_id": "PL0893",
+    "location_name": "Menton, Alpes-Maritimes",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "with the 1st Airborne Task Force, holds the southern third of the Franco-Italian Alpine front",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -45181,6 +45960,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 430, 433"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1218,
+     43.658
+    ]
+   },
+   "properties": {
+    "claim_id": "C1743",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-SSF-001B",
+    "unit_name": "1st Special Service Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-12-05",
+    "place_id": "PL0892",
+    "location_name": "Villeneuve-Loubet, Alpes-Maritimes",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "disbanded in a field near Villeneuve-Loubet",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R677;R700;R002",
+    "source_locator": "R677: p. 581"
    }
   },
   {

@@ -969,12 +969,14 @@ def scenario_27_activity_rollout_1():
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_1]
     expect(s + ': batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
-    expect(s + ': batch 1 with its follow-up and second-source pass has 195 activity rows', len(rows), 195)
-    expect(s + ': batch 1 with its follow-up and second-source pass has 168 stated and 27 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (168, 27))
+    expect(s + ': batch 1 with its follow-up and second-source pass has 197 activity rows', len(rows), 197)
+    expect(s + ': batch 1 with its follow-up and second-source pass has 170 stated and 27 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (170, 27))
     # second-source pass (CMH combat chronicles)
     expect(s + ': 79th Division, 1 Feb 1945: in the line on the Moder (span closed 6 Feb)', A('US-INF-079D', '1945-02-01')[:3], ('in_line', 'certain', 'stated'))
     expect(s + ': 79th Division, 1 May 1945: occupation in the Dortmund area', A('US-INF-079D', '1945-05-01')[:3], ('garrison', 'certain', 'stated'))
     expect(s + ': 10th Armored, 8 May 1945: at Innsbruck at the end of the war (point)', A('US-ARM-010D', '1945-05-08'), ('in_line', 'certain', 'stated', 0.5))
+    expect(s + ': 28th Division, 25 Dec 1944: refitting at Neufchateau (stated span to 2 Jan)', A('US-INF-028D', '1944-12-25'), ('refitting', 'certain', 'stated', 0.5))
+    expect(s + ': 28th Division, 10 Jan 1945: no answer after the refit ends', A('US-INF-028D', '1945-01-10'), None)
     expect(s + ': 83rd Division, 10 Mar 1945: no answer after the span closed on 2 Mar', A('US-INF-083D', '1945-03-10'), None)
     # follow-up (October 2026): new rest/refit rows, span closures and closing rows at 8 May 1945
     expect(s + ': 1st Division, 10 Dec 1944: refitting in the rear (stated start, implicit end by the Ardennes start)', A('US-INF-001D', '1944-12-10'), ('refitting', 'certain', 'inferred', 0.3))

@@ -2278,7 +2278,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -4058,7 +4058,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Pays de la Loire",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -5318,7 +5318,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12238,7 +12238,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12398,7 +12398,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -16378,6 +16378,126 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1089,
+     48.7155
+    ]
+   },
+   "properties": {
+    "place_id": "PL0827",
+    "name": "Écouché, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8192,
+     48.6453
+    ]
+   },
+   "properties": {
+    "place_id": "PL0828",
+    "name": "Rambouillet, Seine-et-Oise (Yvelines)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Île-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6361,
+     48.3466
+    ]
+   },
+   "properties": {
+    "place_id": "PL0829",
+    "name": "Rambervillers, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.536,
+     47.9154
+    ]
+   },
+   "properties": {
+    "place_id": "PL0830",
+    "name": "Fessenheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0288,
+     45.6245
+    ]
+   },
+   "properties": {
+    "place_id": "PL0831",
+    "name": "Royan, Charente-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8761,
+     47.7223
+    ]
+   },
+   "properties": {
+    "place_id": "PL0832",
+    "name": "Bad Reichenhall, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
     "claims_count": 1
    }
   }

@@ -11698,7 +11698,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -13498,7 +13498,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -15438,7 +15438,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16238,7 +16238,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -17478,7 +17478,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Ardennes",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -18359,6 +18359,86 @@
     "country": "DE",
     "region": "Westphalia",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2831,
+     50.3822
+    ]
+   },
+   "properties": {
+    "place_id": "PL0931",
+    "name": "Honsfeld, Büllingen, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8084,
+     50.407
+    ]
+   },
+   "properties": {
+    "place_id": "PL0932",
+    "name": "Stoumont, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8465,
+     50.4112
+    ]
+   },
+   "properties": {
+    "place_id": "PL0933",
+    "name": "La Gleize, Stoumont, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.077,
+     50.51
+    ]
+   },
+   "properties": {
+    "place_id": "PL0934",
+    "name": "Porfays, fork in the Eupen road north of Mont Rigi, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
    }
   }
  ]

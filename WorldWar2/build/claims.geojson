@@ -29772,6 +29772,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2267,
+     51.049
+    ]
+   },
+   "properties": {
+    "claim_id": "C1794",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL0822",
+    "location_name": "Beringen, Limburg (BE)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Chill sets up straggler rallying points along the Albert Canal and forms his battle group",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R608;R002",
+    "source_locator": "R608: p. 124"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.8662,
      50.4665
     ]
@@ -35061,6 +35102,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4428,
+     51.2292
+    ]
+   },
+   "properties": {
+    "claim_id": "C1795",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0782",
+    "location_name": "Neerpelt, Limburg (BE)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "committed along the Meuse-Escaut Canal against the British ground advance of Market Garden",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R002",
+    "source_locator": "R605: p. 142"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -39974,6 +40056,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R431;R002",
     "source_locator": "R431: p. 297, 298"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3278,
+     51.4107
+    ]
+   },
+   "properties": {
+    "claim_id": "C1796",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-10-10",
+    "place_id": "PL0684",
+    "location_name": "Woensdrecht, Noord-Brabant (part of the battle group)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "part of the battle group committed with the 6th Parachute Regiment at Woensdrecht",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R443;R002",
+    "source_locator": "R443: p. 221"
    }
   },
   {
@@ -49493,6 +49616,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2831,
+     50.3822
+    ]
+   },
+   "properties": {
+    "claim_id": "C1797",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-PEIPER",
+    "unit_name": "Kampfgruppe Peiper (1st SS Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-12-17",
+    "place_id": "PL0931",
+    "location_name": "Honsfeld, Büllingen, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "attacks at 0400 behind two Panthers and takes Honsfeld by surprise",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R711;R002",
+    "source_locator": "R711: p. 261"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.931,
+     50.3942
+    ]
+   },
+   "properties": {
+    "claim_id": "C1798",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-PEIPER",
+    "unit_name": "Kampfgruppe Peiper (1st SS Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-12-17",
+    "place_id": "PL0885",
+    "location_name": "Stavelot, Liège (advance guard)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "advance guard reaches Stavelot on the Amblève at dusk",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R711;R002",
+    "source_locator": "R711: p. 265"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.077,
+     50.51
+    ]
+   },
+   "properties": {
+    "claim_id": "C1802",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-17",
+    "place_id": "PL0934",
+    "location_name": "Porfays, fork in the Eupen road north of Mont Rigi, Liège (about one hundred paratroopers)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "about one hundred scattered paratroopers reach the rendezvous on the Eupen road north of Mont Rigi",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R711;R712;R002",
+    "source_locator": "R711: p. 271"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4351,
      49.8408
     ]
@@ -49814,6 +50060,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R392;R002",
     "source_locator": "R392: p. 170"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8084,
+     50.407
+    ]
+   },
+   "properties": {
+    "claim_id": "C1799",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-PEIPER",
+    "unit_name": "Kampfgruppe Peiper (1st SS Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-12-19",
+    "place_id": "PL0932",
+    "location_name": "Stoumont, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "bulk of the battle group attacks Stoumont, the last exit west along the Amblève",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R386;R002",
+    "source_locator": "R386: p. 339"
    }
   },
   {
@@ -50600,6 +50887,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8465,
+     50.4112
+    ]
+   },
+   "properties": {
+    "claim_id": "C1800",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-PEIPER",
+    "unit_name": "Kampfgruppe Peiper (1st SS Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-12-22",
+    "place_id": "PL0933",
+    "location_name": "La Gleize, Stoumont, Liège",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "pulled back from Stoumont into an all-round defense at La Gleize",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R695;R002",
+    "source_locator": "R695: p. 373"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -50798,6 +51126,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R391;R002",
     "source_locator": "R391: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C1803",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-23",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia (commander)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "Heydte, wounded, surrenders at Monschau after the battle group disperses",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R713;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8465,
+     50.4112
+    ]
+   },
+   "properties": {
+    "claim_id": "C1801",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-PEIPER",
+    "unit_name": "Kampfgruppe Peiper (1st SS Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-12-24",
+    "place_id": "PL0933",
+    "location_name": "La Gleize, Stoumont, Liège (about 800 men)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "about 800 men break out of La Gleize on foot at 0100, abandoning their vehicles",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R695;R002",
+    "source_locator": "R695: p. 376"
    }
   },
   {

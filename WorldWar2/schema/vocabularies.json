@@ -145,7 +145,8 @@
       "Context": "Background that explains the row but does not belong to it (1).",
       "Later": "What later sources or rows show about the same fact (1).",
       "Search": "What was searched and not found, and where (1).",
-      "Review": "A later review's correction of the row and what it changed (1)."
+      "Review": "A later review's correction of the row and what it changed (1).",
+      "Activity": "The activity_status of the row: its basis and, for a change to an existing row, the old value, the new value and the reason."
     }
   },
   "strength_status": {
@@ -454,6 +455,31 @@
       "full": "A source describes the unit as at full strength.",
       "reduced": "Source states significant losses or reduced combat power.",
       "heavily_depleted": "Source states the unit was a small fraction of its strength."
+    }
+  },
+  "activity_status": {
+    "description": "Optional claim column activity_status: the unit's state of availability, not its action on the day (that is event_type and current_activity). Five values, chosen to be decidable from the official histories; see docs/activity_status_design.md.",
+    "values": {
+      "in_line": "Holding or fighting on a sector of the front (including a quiet sector).",
+      "reserve": "Out of the line but available for commitment: corps, army or army-group reserve, or held back behind the front.",
+      "refitting": "Withdrawn to rest, receive replacements and re-equip; not available for commitment until the refit ends. Includes the German \"rehabilitation\" (Auffrischung).",
+      "garrison": "Holding a fixed place (fortress, port, occupied town) with no field role.",
+      "transit": "Moving between theatres or regions by road, rail or sea, and not available on the way."
+    }
+  },
+  "activity_basis": {
+    "description": "How the activity_status of a row is known.",
+    "values": {
+      "stated": "A source cited on the row says it in words (for example \"resting and refitting\", \"in corps reserve\").",
+      "inferred": "Deduced from the row or from neighbouring rows; the reading carries a confidence of at most 0.3 whatever the row confidence."
+    }
+  },
+  "activity_span": {
+    "description": "The part of an activity span that a row records.",
+    "values": {
+      "start": "The activity begins on the row date.",
+      "end": "The activity of the same value, opened by an earlier start row of the unit, ends on the row date.",
+      "point": "The activity is observed on the row date only; it opens no span."
     }
   }
 }

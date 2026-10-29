@@ -24852,6 +24852,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1999,
+     48.8965
+    ]
+   },
+   "properties": {
+    "claim_id": "C1585",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-30",
+    "place_id": "PL0674",
+    "location_name": "Falaise, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Arrives from England in Normandy and joins the 21st Army Group at Falaise, about 4,000 strong",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R037;R002",
+    "source_locator": "R037: section Siege of Dunkirk"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.49,
      48.96
     ]
@@ -35143,6 +35184,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1586",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-09",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "Takes over the containment of Dunkirk from the 154th Brigade, under First Canadian Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R675;R037;R002",
+    "source_locator": "R668: p. 368; R675: section Siege; R037: section Siege of Dunkirk"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -36653,6 +36735,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 124"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1587",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-28",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Containment of Dunkirk: limited attack on Czechoslovak Independence Day takes over 300 prisoners",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R675;R002",
+    "source_locator": "R668: p. 368; R675: section Siege"
    }
   },
   {
@@ -40794,6 +40917,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R423;R001",
     "source_locator": "R423: p. 436-437"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1588",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-27",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Containment of Dunkirk: passes from First Canadian Army to direct command of the 21st Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 368"
    }
   },
   {
@@ -64943,6 +65107,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 614"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1589",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Still investing Dunkirk at the end of the campaign; the garrison surrenders to Liska on 9 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R671;R675;R002",
+    "source_locator": "R668: p. 368; R671: p. 343; R675: section Siege"
    }
   }
  ]

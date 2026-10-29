@@ -84,7 +84,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2452 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 31 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 11 |
-| references (`data/references.csv`, generated) | 680, of which 508 cited by at least one claim (the others are cited by units or operations) |
+| references (`data/references.csv`, generated) | 680, of which 509 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 38 |
@@ -97,7 +97,7 @@ Claims by branch: Army 1079, Armoured 373, Waffen-SS 95, Airborne 62, Luftwaffe 
 
 Claims by event type: attack 360, other 177, command_change 172, defense 170, hq_move 151, capture 146, arrival 94, hq_observation 61, relocation 56, regroup 51, landing 50, subordinate_assignment 45, surrender 34, counterattack 31, withdrawal 30, activation 15, redesignation 8, destruction 4.
 
-Claims by status: preferred 1620, alternate 19, disputed 16. Claims by confidence: 0.3 315, 0.5 813, 0.7 495, 0.9 32.
+Claims by status: preferred 1620, alternate 19, disputed 16. Claims by confidence: 0.3 314, 0.5 813, 0.7 496, 0.9 32.
 
 Placeholder units by nationality: Germany 74, UK 6, Allied 3, US 2.
 

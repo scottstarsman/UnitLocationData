@@ -35963,6 +35963,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.1577,
+     46.9877
+    ]
+   },
+   "properties": {
+    "claim_id": "C1652",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-010D",
+    "unit_name": "French 10th Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL0849",
+    "location_name": "Nevers, Nièvre",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Reconstituted from Parisian FFI in the Nevers region under General Billotte",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R685;R002",
+    "source_locator": "R685: section History"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -36530,6 +36571,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R053;R002",
     "source_locator": "R053: section French & German campaign (1944-1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.325,
+     45.6932
+    ]
+   },
+   "properties": {
+    "claim_id": "C1649",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARMY-ATLANT",
+    "unit_name": "French Forces of the West (Détachement d'Armée de l'Atlantique from March 1945)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-10-14",
+    "place_id": "PL0847",
+    "location_name": "Cognac, Charente",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Created as the Forces françaises de l'Ouest under General de Larminat, headquarters at Cognac",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R682;R683;R002",
+    "source_locator": "R682: section Les forces françaises devant la poche; R683: section Présentation"
    }
   },
   {
@@ -50846,6 +50928,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1653",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-010D",
+    "unit_name": "French 10th Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-05",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Colmar Pocket: units of the division police up the interior of the pocket",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R425;R685;R001",
+    "source_locator": "R425: p. 551; R685: section History"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9833,
      50.8333
     ]
@@ -51864,6 +51987,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R552;R002",
     "source_locator": "R552: section Collapse of the Colmar Pocket"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1885,
+     47.9278
+    ]
+   },
+   "properties": {
+    "claim_id": "C1654",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-014D",
+    "unit_name": "French 14th Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-09",
+    "place_id": "PL0850",
+    "location_name": "Buhl, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Recreated from FFI units under General Salan, headquarters at Buhl, Haut-Rhin",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R028;R002",
+    "source_locator": "R028: section World War II"
    }
   },
   {
@@ -56251,6 +56415,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 288"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8829,
+     45.6792
+    ]
+   },
+   "properties": {
+    "claim_id": "C1651",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-027D",
+    "unit_name": "French 27th Alpine Infantry Division (27e DIA)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL0848",
+    "location_name": "Col du Petit-Saint-Bernard, Savoie",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Alpine front: the French offensive toward the Little St Bernard Pass",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R684;R002",
+    "source_locator": "R684: section La Libération des Alpes (1944-1945)"
    }
   },
   {
@@ -62039,6 +62244,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0288,
+     45.6245
+    ]
+   },
+   "properties": {
+    "claim_id": "C1650",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-GIRONDE",
+    "unit_name": "French Gironde Marching Division (Division de marche Gironde)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0831",
+    "location_name": "Royan, Charente-Maritime",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Operation Vénérable: leads the ground offensive of the Atlantic detachment against the Royan pocket",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R682;R002",
+    "source_locator": "R682: section Les opérations militaires et les redditions"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -67567,6 +67813,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R671;R675;R002",
     "source_locator": "R668: p. 368; R671: p. 343; R675: section Siege"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1605,
+     47.7664
+    ]
+   },
+   "properties": {
+    "claim_id": "C1655",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-014D",
+    "unit_name": "French 14th Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0652",
+    "location_name": "Lake Constance, northwestern end (representative point at Überlingen)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Ends the war on Lake Constance, protecting the rear of the First French Army",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R028;R002",
+    "source_locator": "R028: section World War II"
    }
   }
  ]

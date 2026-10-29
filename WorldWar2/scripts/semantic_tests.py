@@ -830,8 +830,37 @@ def scenario_22_french_delattre():
     expect(s + ': C1656 (3rd DIA, Strasbourg) and C1657 (1st DB, Ulm) cite R686', ('R686' in claims['C1656']['reference_ids'], 'R686' in claims['C1657']['reference_ids']), (True, True))
 
 
+def scenario_23_brigades_batch_1_uk_can():
+    """Brigades Batch 1 (British and Canadian independent brigades, 1944-45): the 56th Infantry Brigade moves from the 50th Division to the 7th Armoured Division and back on 11-12 June 1944 and is organic to the 49th Division from 20 August (no independent relation after); the 27th Armoured Brigade has no relation after its break-up on 29 July 1944; the 1st Special Service Brigade has no relation while in England (September 1944 to January 1945); the 4th Special Service Brigade is under II Canadian Corps and the 52nd Division at Walcheren; the 2nd Canadian Armoured Brigade is under II Canadian Corps from 11 July 1944 and under I Corps and the Polish Armoured Division at Breda."""
+    s = 'scenario 23, Brigades Batch 1 (British and Canadian)'
+    a = intervals('UK-INF-056B', '1944-06-11')
+    expect(s + ': 56th Brigade, 11 Jun (Tilly): XXX Corps certain, the 7th Armoured Division from that day (Ellis I p. 252)', sorted(a), [('UK-ARM-007D', 'attached'), ('UK-COR-030C', 'assigned')])
+    a = intervals('UK-INF-056B', '1944-06-12')
+    expect(s + ': 56th Brigade, 12 Jun: the handover day, both divisions possible (Ellis I p. 254)', (a[('UK-ARM-007D', 'attached')][0], a[('UK-INF-050D', 'attached')][0]), ('possible', 'possible'))
+    a = intervals('UK-INF-056B', '1944-08-25')
+    expect(s + ': 56th Brigade, 25 Aug: no independent relation (organic to the 49th Division from 20 August)', sorted(a), [])
+    a = intervals('UK-ARM-027B', '1944-08-15')
+    expect(s + ': 27th Armoured Brigade, 15 Aug: no relation after the break-up of 29 July', sorted(a), [])
+    a = intervals('UK-CDO-001B', '1944-10-15')
+    expect(s + ': 1st Special Service Brigade, 15 Oct: no relation (in England from 8-9 September, Wikipedia)', sorted(a), [])
+    a = intervals('UK-CDO-004B', '1944-11-05')
+    expect(s + ': 4th Special Service Brigade, 5 Nov (Walcheren): II Canadian Corps and the 52nd Division both certain (Stacey p. 412)', sorted(a), [('CAN-COR-002C', 'assigned'), ('UK-INF-052D', 'attached')])
+    a = intervals('CAN-ARM-002B', '1944-07-15')
+    expect(s + ': 2nd Canadian Armoured Brigade, 15 Jul: II Canadian Corps (from 11 July, Stacey p. 166) and the 3rd Canadian Division', sorted(a), [('CAN-COR-002C', 'assigned'), ('CAN-INF-003D', 'attached')])
+    a = intervals('CAN-ARM-002B', '1944-10-27')
+    expect(s + ': 2nd Canadian Armoured Brigade, 27 Oct (Breda): I Corps and the Polish Armoured Division (Ellis II p. 126)', sorted(a), [('POL-ARM-001D', 'attached'), ('UK-COR-001C', 'assigned')])
+    a = intervals('UK-ARM-004B', '1945-04-17')
+    expect(s + ': 4th Armoured Brigade, 17 Apr 1945 (Verden): XII Corps and the 53rd Division (Ellis II p. 310)', sorted(a), [('UK-COR-012C', 'assigned'), ('UK-INF-053D', 'attached')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1658']
+    expect(s + ': C1658 is the first row of the batch (4th Armoured Brigade)', (c['unit_id'], c['date']), ('UK-ARM-004B', '1944-06-10'))
+    c = claims['C1713']
+    expect(s + ': C1713 is the last row of the batch (2nd Canadian Armoured Brigade, Blockbuster)', (c['unit_id'], c['date']), ('CAN-ARM-002B', '1945-02-26'))
+    expect(s + ': C1695 (56th Brigade joins the 49th Division) is a representative point at 0.3', (claims['C1695']['parent_unit_id'], claims['C1695']['confidence']), ('UK-INF-049D', '0.3'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can):
         before = len(FAILURES)
         try:
             fn()

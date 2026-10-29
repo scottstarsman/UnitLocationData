@@ -260,13 +260,13 @@ UK-ARM-004B,4th Armoured Brigade,UK,brigade,Armoured,western_europe,,active,1939
 UK-ARM-007D,7th Armoured Division,UK,division,Armoured,western_europe,,active,,,,,,,,WP21AG;WPNORM;WPMG
 UK-ARM-008B,8th Armoured Brigade,UK,brigade,Armoured,western_europe,,active,1941-08,https://en.wikipedia.org/wiki/8th_Armoured_Brigade_(United_Kingdom),,,,,,WPNORM;WPMG
 UK-ARM-011D,11th Armoured Division,UK,division,Armoured,western_europe,,active,1941,https://en.wikipedia.org/wiki/11th_Armoured_Division_(United_Kingdom),,,,,,WP21AG;WPNORM;WPMG
-UK-ARM-027B,27th Armoured Brigade,UK,brigade,Armoured,western_europe,,placeholder,1940-11-26,https://en.wikipedia.org/wiki/27th_Armoured_Brigade_(United_Kingdom),,,,,,WPUNIT
-UK-ARM-033B,33rd Armoured Brigade,UK,brigade,Armoured,western_europe,,placeholder,1944-03-17,https://en.wikipedia.org/wiki/33rd_Armoured_Brigade_(United_Kingdom),,,,,,WPBULGE
+UK-ARM-027B,27th Armoured Brigade,UK,brigade,Armoured,western_europe,,active,1940-11-26,https://en.wikipedia.org/wiki/27th_Armoured_Brigade_(United_Kingdom),,,,,,WPUNIT
+UK-ARM-033B,33rd Armoured Brigade,UK,brigade,Armoured,western_europe,,active,1944-03-17,https://en.wikipedia.org/wiki/33rd_Armoured_Brigade_(United_Kingdom),,,,,,WPBULGE
 UK-ARM-079D,79th Armoured Division,UK,division,Armoured,western_europe,,active,1942-08-14,https://en.wikipedia.org/wiki/79th_Armoured_Division_(United_Kingdom),,,,,,WPNORM
 UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,western_europe,,active,1941-06-17,https://en.wikipedia.org/wiki/Guards_Armoured_Division,,,,,,WP21AG;WPNORM;WPMG;WPBULGE
 UK-ARMY-002A,Second Army,UK,army,Army,western_europe,,active,,,,,,,,WP12AG;WP21AG
-UK-CDO-001B,1st Special Service (Commando) Brigade,UK,brigade,Army,western_europe,,placeholder,,,,,,,Also known as 1st Commando Brigade; includes Royal Marine commandos in part. No US Marine Corps ground units served on the Western Front in this period.,WPUNIT
-UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,western_europe,,placeholder,,,,,,,Also known as 4th Commando Brigade; Royal Marine commandos. No US Marine Corps ground units served on the Western Front in this period.,WPUNIT
+UK-CDO-001B,1st Special Service (Commando) Brigade,UK,brigade,Army,western_europe,,active,,,,,,,Also known as 1st Commando Brigade; includes Royal Marine commandos in part. No US Marine Corps ground units served on the Western Front in this period.,WPUNIT
+UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,western_europe,,active,,,,,,,Also known as 4th Commando Brigade; Royal Marine commandos. No US Marine Corps ground units served on the Western Front in this period.,WPUNIT
 UK-COR-001C,I Corps,UK,corps,Army,western_europe,,active,,,,,,,,WP21AG;WPNORDWIND
 UK-COR-008C,VIII Corps,UK,corps,Army,western_europe,,active,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
 UK-COR-012C,XII Corps,UK,corps,Army,western_europe,,active,,,,,,,,WP12AG;WP21AG;WPMG;WPBULGE
@@ -279,10 +279,12 @@ UK-INF-050D,50th (Northumbrian) Infantry Division,UK,division,Army,western_europ
 UK-INF-051D,51st (Highland) Infantry Division,UK,division,Army,western_europe,,active,,,,,,,,WP21AG;WPNORM
 UK-INF-052D,52nd (Lowland) Infantry Division,UK,division,Army,western_europe,,active,,,,,,,,WP21AG
 UK-INF-053D,53rd (Welsh) Infantry Division,UK,division,Army,western_europe,,active,,,,,,,,WP21AG;WPNORM;WPMG
+UK-INF-056B,56th Infantry Brigade,UK,brigade,Army,western_europe,,active,1944-02-15,https://en.wikipedia.org/wiki/56th_Infantry_Brigade_(United_Kingdom),,,,,"56th (Independent) Infantry Brigade, re-formed in the United Kingdom on 15 February 1944 (Wikipedia). Independent from the Normandy landing to 20 August 1944, when it became an integral part of the 49th (West Riding) Division (Ellis, vol. I, p. 523); only the independent period has rows (Brigades Batch 1).",
 UK-INF-059D,59th (Staffordshire) Infantry Division,UK,division,Army,western_europe,,active,1939,https://en.wikipedia.org/wiki/59th_(Staffordshire)_Infantry_Division,,,,,,WP21AG;WPNORM
-UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,western_europe,,placeholder,1941-09,https://en.wikipedia.org/wiki/6th_Guards_Armoured_Brigade,,,,,Churchill tank brigade (Guards).,WPNORM
+UK-INF-115B,115th Infantry Brigade,UK,brigade,Army,western_europe,,active,,,,,,,"Moved to North-West Europe on 12 February 1945 and served under the direct command of VIII, XII and I Corps (Wikipedia, 115th Brigade (United Kingdom)); not the 155th Brigade of the 52nd Division, which fought at Flushing (Brigades Batch 1).",
+UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,western_europe,,active,1941-09,https://en.wikipedia.org/wiki/6th_Guards_Armoured_Brigade,,,,,Churchill tank brigade (Guards).,WPNORM
 UK-TNK-031B,31st Tank Brigade,UK,brigade,Armoured,western_europe,,active,,,,,,,,WPUNIT
-UK-TNK-034B,34th Tank Brigade,UK,brigade,Armoured,western_europe,,placeholder,1941-12,https://en.wikipedia.org/wiki/34th_Tank_Brigade,,,,,,WPUNIT
+UK-TNK-034B,34th Tank Brigade,UK,brigade,Armoured,western_europe,,active,1941-12,https://en.wikipedia.org/wiki/34th_Tank_Brigade,,,,,,WPUNIT
 US-ABN-017D,17th Airborne Division,US,division,Airborne,western_europe,,active,1942-12-16,https://en.wikipedia.org/wiki/17th_Airborne_Division_(United_States),,,,,Wikipedia infobox start date is marked as a constitution/lineage date; the activation date may differ.,WP12AG;WP21AG;WPBULGE
 US-ABN-018C,XVIII Airborne Corps,US,corps,Airborne,western_europe,,active,1942-01-14,https://en.wikipedia.org/wiki/XVIII_Airborne_Corps,,,,,"Same headquarters throughout: constituted 14 January 1942 as II Armored Corps, redesignated XVIII Corps on 9 October 1943 and XVIII Airborne Corps on 25 August 1944 (Wikipedia, XVIII Airborne Corps). The two earlier US formations also called XVIII Corps (1921-1945 reserve) are different units.",WP12AG;WPBULGE
 US-ABN-082D,82nd Airborne Division,US,division,Airborne,western_europe,,active,,,,,,,,WP12AG;WP21AG;WPNORM;WPMG;WPBULGE

@@ -758,7 +758,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comte",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12458,7 +12458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -16498,6 +16498,126 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     43.1257
+    ]
+   },
+   "properties": {
+    "place_id": "PL0833",
+    "name": "Toulon, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4034,
+     49.0069
+    ]
+   },
+   "properties": {
+    "place_id": "PL0834",
+    "name": "Karlsruhe, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2566,
+     47.9962
+    ]
+   },
+   "properties": {
+    "place_id": "PL0835",
+    "name": "Bains-les-Bains (La Vôge-les-Bains), Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4336,
+     49.3166
+    ]
+   },
+   "properties": {
+    "place_id": "PL0836",
+    "name": "Speyer, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4475,
+     43.5298
+    ]
+   },
+   "properties": {
+    "place_id": "PL0837",
+    "name": "Aix-en-Provence, Bouches-du-Rhône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.541,
+     47.8209
+    ]
+   },
+   "properties": {
+    "place_id": "PL0838",
+    "name": "Chalampé, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
     "claims_count": 1
    }
   }

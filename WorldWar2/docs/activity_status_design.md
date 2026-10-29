@@ -1,6 +1,6 @@
 # Activity status: design note and pilot (October 2026)
 
-Status: **pilot**. The columns exist in every claim file, but only 13 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
+Status: **rollout in progress** (batch 1 of about 6, October 2026: 30 US divisions, 197 rows with the follow-up, the second-source pass and the 28th refit; see section 9). The columns exist in every claim file, but only 43 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
 
 ## 1. Why
 
@@ -95,3 +95,14 @@ The dataset has 387 units and about 1,800 claims. About 120 divisions and fortre
 - Review, tests and the grid are about 10 hours.
 
 **Total: about 80–95 hours**, best done nationality by nationality, in batches of about 15 units, like the brigade batches. Corps, armies and brigades could stay blank; their state is mostly that of their divisions.
+
+## 9. Rollout
+
+Scott approved the rollout on 29 October 2026, in branches of about 30 units, starting with divisions and fortresses; corps, armies and brigades may stay blank.
+
+| batch | units | rows | notes |
+|---|---|---|---|
+| 1 | 30 US divisions (20 infantry, 10 armored) | 113 (89 stated, 24 inferred) | existing rows only, mostly `in_line` points |
+| 1 follow-up | the same 30 | +66 new claims (64 stated, 2 inferred); 7 existing rows changed; 179 in all | rest and refit periods, span closures and closing rows at 8 May 1945, from the Wikipedia division articles (CMH combat chronicles); occupation is `garrison` |
+| 1 second source | the same 30 | +16 new claims; 195 in all | 8 May 1945 rows for 8 more divisions and 4 span closures from the CMH combat chronicles; 4 divisions still have no 8 May row |
+| 1, 28th refit | 28th Infantry Division | +2 (C1903, C1904); 197 in all | Neufchâteau refit, 22 December 1944 to 2 January 1945, from the CMH combat chronicle |

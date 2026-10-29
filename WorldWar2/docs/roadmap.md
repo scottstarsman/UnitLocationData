@@ -149,6 +149,19 @@ Done: `data/operations.csv` (36 rows: the Overlord umbrella, 9 campaigns of whic
 
 Done: `reference_ids` and `source_locator` on every claim (566 claims; 158 with a locator taken from URL page fragments), `data/claim_reference_roles.csv` (619 rows: 564 location, 21 strength, 20 command_relationship, 12 date, 2 event; every other link is `general`), `source_family` on every reference, validator checks (ids exist, one reference per claim, URL citations resolve to the stored ids, role rows match the links, two source families at confidence 0.9 as a warning) and `scripts/migrate_claim_references.py`. Next: add roles by hand while checking sources (only 70 notes name what a source supports, so most links are `general`); add page numbers for the 408 claims without a locator when a source is next read; consider promoting the 0.9 family rule to an error after the next batch, and a rule that confidence 0.7 needs a second family (115 + 240 claims at 0.7 and 0.5 currently rest on one non-geocoder family).
 
+## Activity status pilot (29 October 2026): open questions
+
+The design and the pilot are in `docs/activity_status_design.md`. These questions are open, each with a recommendation:
+
+1. **A separate `rest` value?** Recommendation: no. The sources pair rest with refitting; keep `refitting`.
+2. **Units leaving the theatre** (the 1st Airborne and the Polish brigade to England, I Canadian Corps from Italy). Recommendation: use `transit` start/end rows and close any open span at the departure.
+3. **Mixed states** (the Poles at Moerdijk "rested and re-equipped" while holding the line, Stacey p. 435; one brigade in the line, two at rest). Recommendation: record the main body's state and add subordinate rows only where a source separates them.
+4. **Spans left open in the pilot** (the 1st Airborne, the 50th, the 4th Canadian Armoured and the 3e DIA). Recommendation: close them in the full rollout where a source allows. The open-span "possible" reading stays as the fallback.
+5. **Implicit ends.** Recommendation: keep them, but report them as inferred (0.3). Add an explicit end row whenever a source dates the end.
+6. **Store the activity confidence, or derive it?** Recommendation: derive it, as the pilot does. Add the three columns to `build/claims.geojson` only after the geojson size problem is solved.
+7. **The French divisions have no refit sources yet** (only a reserve point and an in_line start). Recommendation: use the de Lattre or Vigneras material in the French rollout.
+8. **Full rollout.** Recommendation: about 80-95 hours in batches of about 15 divisions by nationality; divisions and fortresses first; corps, armies and brigades blank.
+
 ## Open design questions
 
 - Per-day interpolation versus pure event rows (currently pure events).

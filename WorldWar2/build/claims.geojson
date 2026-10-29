@@ -19399,6 +19399,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -3.36,
+     47.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C1804",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-LORIENT",
+    "unit_name": "Fortress Lorient (Festung Lorient) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL0198",
+    "location_name": "Lorient, Morbihan",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "garrison cut off in Lorient; Fahrmbacher declines Kluge's order to take over Brest",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R398;R001",
+    "source_locator": "R398: p. 343"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -27107,6 +27148,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -2.2139,
+     47.2734
+    ]
+   },
+   "properties": {
+    "claim_id": "C1806",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-STNAZ",
+    "unit_name": "Fortress Saint-Nazaire (Festung St. Nazaire) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-08-27",
+    "place_id": "PL0935",
+    "location_name": "Saint-Nazaire, Loire-Atlantique",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Saint-Nazaire pocket encircled",
+    "operation_id": "OP-BRITTANY",
+    "operation": "Brittany campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Brittany",
+    "strength_status": "unknown",
+    "location_date": "1944-08-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R715;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.8642,
      48.7075
     ]
@@ -28658,6 +28740,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R411;R701;R001",
     "source_locator": "R411: p. 47, 50"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "claim_id": "C1810",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-LAROCH",
+    "unit_name": "Defense Area La Rochelle (Verteidigungsbereich La Rochelle) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL0936",
+    "location_name": "La Rochelle, Charente-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Defense Area La Rochelle left to hold out on the Atlantic coast; siege begins",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R428;R717;R002",
+    "source_locator": "R428: p. 135"
    }
   },
   {
@@ -30872,6 +30995,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R608;R001",
     "source_locator": "R608: p. 127"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1808",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-09-09",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Dunkirk surrounded by the Canadian 2nd Infantry Division; siege begins",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R716;R002",
+    "source_locator": null
    }
   },
   {
@@ -73922,6 +74086,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R028;R002",
     "source_locator": "R028: section World War II"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "claim_id": "C1811",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-LAROCH",
+    "unit_name": "Defense Area La Rochelle (Verteidigungsbereich La Rochelle) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0936",
+    "location_name": "La Rochelle, Charente-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "garrison surrenders; ceremony at 23:45 on 8 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R717;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1809",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-09",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "surrender",
+    "current_activity": "garrison surrenders to the Czechoslovak Independent Armoured Brigade Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R570;R716;R002",
+    "source_locator": "R570: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.36,
+     47.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C1805",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-LORIENT",
+    "unit_name": "Fortress Lorient (Festung Lorient) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-10",
+    "place_id": "PL0198",
+    "location_name": "Lorient, Morbihan",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "surrender",
+    "current_activity": "garrison surrenders to the US 66th Infantry Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R570;R714;R001",
+    "source_locator": "R570: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.2139,
+     47.2734
+    ]
+   },
+   "properties": {
+    "claim_id": "C1807",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-STNAZ",
+    "unit_name": "Fortress Saint-Nazaire (Festung St. Nazaire) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-10",
+    "place_id": "PL0935",
+    "location_name": "Saint-Nazaire, Loire-Atlantique",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "garrison surrenders to the US 66th Infantry Division; Wikipedia gives the Bouvron ceremony on 11 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R570;R715;R002",
+    "source_locator": "R570: p. 477"
    }
   }
  ]

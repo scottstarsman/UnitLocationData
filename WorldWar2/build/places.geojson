@@ -3898,7 +3898,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Brittany",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -12298,7 +12298,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nord",
-    "claims_count": 6
+    "claims_count": 8
    }
   },
   {
@@ -18439,6 +18439,46 @@
     "country": "BE",
     "region": "Liège",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.2139,
+     47.2734
+    ]
+   },
+   "properties": {
+    "place_id": "PL0935",
+    "name": "Saint-Nazaire, Loire-Atlantique",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "place_id": "PL0936",
+    "name": "La Rochelle, Charente-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "claims_count": 2
    }
   }
  ]

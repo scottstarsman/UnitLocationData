@@ -9600,6 +9600,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C1982",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-02",
+    "place_id": "PL0161",
+    "location_name": "Grainville-sur-Odon",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "the 44th Brigade, last in action after Epsom, is relieved by the 53rd (Welsh) Division",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-02",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R029;R001",
+    "source_locator": "R029: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.0938,
      48.8989
     ]
@@ -13782,6 +13823,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2386,
+     49.2104
+    ]
+   },
+   "properties": {
+    "claim_id": "C1978",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-20",
+    "place_id": "PL0726",
+    "location_name": "Escoville, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawn from the line to rest and refit after Goodwood",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-20",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R023;R002",
+    "source_locator": "R023: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3849,
      49.116
     ]
@@ -13898,6 +13980,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 146, 196, 297"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C1983",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-23",
+    "place_id": "PL0071",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relocates to Caumont and relieves the 5th US Infantry Division",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R029;R001",
+    "source_locator": "R029: narrative"
    }
   },
   {
@@ -40268,6 +40391,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6374,
+     48.7182
+    ]
+   },
+   "properties": {
+    "claim_id": "C1923",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-07",
+    "place_id": "PL0955",
+    "location_name": "Moncourt, Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 4th Armored Division in the Salonnes-Moncourt sector and holds defensive positions",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R739;R002",
+    "source_locator": "R739: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -41860,6 +42024,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 390"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6078,
+     48.6417
+    ]
+   },
+   "properties": {
+    "claim_id": "C1927",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-044D",
+    "unit_name": "44th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-18",
+    "place_id": "PL0561",
+    "location_name": "Forêt de Parroy, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "enters combat, relieving the 79th Division near the Forêt de Parroy",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R741;R002",
+    "source_locator": "R741: narrative"
    }
   },
   {
@@ -44238,6 +44443,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R067;R002",
     "source_locator": "R067: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C1954",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-09",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "first action: takes over the defense of the sector north of the Roer between Schmidt and Monschau",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R754;R002",
+    "source_locator": "R754: narrative"
    }
   },
   {
@@ -47648,6 +47894,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.05,
+     50.9
+    ]
+   },
+   "properties": {
+    "claim_id": "C1910",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL0140",
+    "location_name": "Eygelshoven, Limburg",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "short rest after taking Beeck and Lindern",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R749;R001",
+    "source_locator": "R749: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3658,
      49.1401
     ]
@@ -47682,6 +47969,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R336;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.8846,
+     50.8522
+    ]
+   },
+   "properties": {
+    "claim_id": "C1979",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-01",
+    "place_id": "PL0793",
+    "location_name": "Ypres (Ieper), West Flanders",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "placed in reserve around Ypres",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R023;R002",
+    "source_locator": "R023: narrative"
    }
   },
   {
@@ -48215,6 +48543,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R392;R469;R340;R001",
     "source_locator": "R392: p. 139"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3005,
+     50.6072
+    ]
+   },
+   "properties": {
+    "claim_id": "C1940",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-078D",
+    "unit_name": "78th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-13",
+    "place_id": "PL0600",
+    "location_name": "Simmerath, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacks into Simmerath, Witzerath and Bickerath",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R748;R002",
+    "source_locator": "R748: narrative"
    }
   },
   {
@@ -49281,6 +49650,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R648;R424;R002",
     "source_locator": "R648: pp. 464, 486, 488; R424: p. 496"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C1958",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-104D",
+    "unit_name": "104th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-15",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "active defense of its sector near Düren and Merken",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R757;R001",
+    "source_locator": "R757: narrative"
    }
   },
   {
@@ -51092,6 +51502,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1807,
+     50.9931
+    ]
+   },
+   "properties": {
+    "claim_id": "C1941",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL0968",
+    "location_name": "Würm, Geilenkirchen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "returns to the fight, taking Wurm and Mullendorf",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R749;R002",
+    "source_locator": "R749: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6333,
      50.5833
     ]
@@ -52281,6 +52732,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8494,
+     49.8299
+    ]
+   },
+   "properties": {
+    "claim_id": "C1924",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL0956",
+    "location_name": "Rambrouch, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacks at Rambrouch and Grosbous",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R739;R002",
+    "source_locator": "R739: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -52527,6 +53019,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8249,
+     50.1363
+    ]
+   },
+   "properties": {
+    "claim_id": "C1921",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-011D",
+    "unit_name": "11th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL0954",
+    "location_name": "Givet, Ardennes",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defends a 30-mile Meuse sector from Givet to Sedan",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R736;R002",
+    "source_locator": "R736: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0709,
+     49.1095
+    ]
+   },
+   "properties": {
+    "claim_id": "C1928",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-044D",
+    "unit_name": "44th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL0973",
+    "location_name": "Sarreguemines, Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defensive positions east of Sarreguemines on the Blies",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R741;R002",
+    "source_locator": "R741: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6761,
+     50.2931
+    ]
+   },
+   "properties": {
+    "claim_id": "C1936",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL0882",
+    "location_name": "Manhay, Luxembourg (Belgium)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "enters defensive combat along the Ourthe",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R746;R002",
+    "source_locator": "R746: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8465,
      50.4112
     ]
@@ -52561,6 +53176,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R695;R002",
     "source_locator": "R695: p. 376"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C1912",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-24",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "placed in SHAEF reserve",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R751;R001",
+    "source_locator": "R751: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5225,
+     50.4817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1915",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-25",
+    "place_id": "PL0958",
+    "location_name": "Anthisnes, Liège",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "receives reinforcements and supplies at Anthisnes",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R758;R002",
+    "source_locator": "R758: narrative"
    }
   },
   {
@@ -52978,6 +53675,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C1945",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-29",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "thrown into the Bulge battle in Belgium",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-29",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R751;R001",
+    "source_locator": "R751: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9832,
      51.7141
     ]
@@ -53135,6 +53873,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R218;R001",
     "source_locator": "R218: table of 1945, 1 January row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.79,
+     47.51
+    ]
+   },
+   "properties": {
+    "claim_id": "C1948",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-094D",
+    "unit_name": "94th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0386",
+    "location_name": "Brittany port pockets (Lorient to Saint-Nazaire), representative point",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieved in Brittany on New Year's Day",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R752;R001",
+    "source_locator": "R752: narrative"
    }
   },
   {
@@ -54577,6 +55356,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3853,
+     49.535
+    ]
+   },
+   "properties": {
+    "claim_id": "C1949",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-094D",
+    "unit_name": "94th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-07",
+    "place_id": "PL0970",
+    "location_name": "Nennig, Saarland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "takes positions in the Saar-Moselle Triangle facing the Switch Line",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R752;R002",
+    "source_locator": "R752: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4262,
      50.2052
     ]
@@ -54693,6 +55513,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R545;R002",
     "source_locator": "R545: p. 521, 520"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5225,
+     50.4817
+    ]
+   },
+   "properties": {
+    "claim_id": "C1916",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-09",
+    "place_id": "PL0958",
+    "location_name": "Anthisnes, Liège",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "refit at Anthisnes ends",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R758;R002",
+    "source_locator": "R758: narrative"
    }
   },
   {
@@ -55725,6 +56586,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9146,
+     50.1904
+    ]
+   },
+   "properties": {
+    "claim_id": "C1911",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-17",
+    "place_id": "PL0964",
+    "location_name": "Gouvy, Luxembourg (Belgium)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "five-day respite after the Bulge is reduced",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R749;R002",
+    "source_locator": "R749: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1567,
      49.8681
     ]
@@ -55964,6 +56866,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R719;R001",
     "source_locator": "R719: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.931,
+     50.3942
+    ]
+   },
+   "properties": {
+    "claim_id": "C1917",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-18",
+    "place_id": "PL0885",
+    "location_name": "Stavelot, Liège",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "assembles at Stavelot for rehabilitation and training",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R758;R002",
+    "source_locator": "R758: narrative"
    }
   },
   {
@@ -57037,6 +57980,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9146,
+     50.1904
+    ]
+   },
+   "properties": {
+    "claim_id": "C1942",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-22",
+    "place_id": "PL0964",
+    "location_name": "Gouvy, Luxembourg (Belgium)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "resumes the offensive after a five-day respite, taking Gouvy and Beho",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R749;R002",
+    "source_locator": "R749: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1259,
      50.2804
     ]
@@ -57194,6 +58178,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 245, 246, 247, 248"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4217,
+     49.8117
+    ]
+   },
+   "properties": {
+    "claim_id": "C1938",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-25",
+    "place_id": "PL0411",
+    "location_name": "Echternach, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 87th Division along the Sauer near Echternach",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R747;R001",
+    "source_locator": "R747: narrative"
    }
   },
   {
@@ -57604,6 +58629,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R425;R541;R001",
     "source_locator": "R425: p. 548; R541: p. 237"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.75,
+     49.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C1925",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-29",
+    "place_id": "PL0433",
+    "location_name": "Saarlouis, Saarland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defensive positions in the Saarlautern area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R739;R001",
+    "source_locator": "R739: narrative"
    }
   },
   {
@@ -58800,6 +59866,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0358,
+     49.0277
+    ]
+   },
+   "properties": {
+    "claim_id": "C1931",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0963",
+    "location_name": "Willerwald, Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "local raids and patrols from Willerwald",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R742;R002",
+    "source_locator": "R742: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1137,
+     50.2967
+    ]
+   },
+   "properties": {
+    "claim_id": "C1960",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0407",
+    "location_name": "Hünningen, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defensive patrols and training near Hünningen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R758;R002",
+    "source_locator": "R758: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -59169,6 +60317,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5017,
+     48.5894
+    ]
+   },
+   "properties": {
+    "claim_id": "C1908",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-08",
+    "place_id": "PL0199",
+    "location_name": "Lunéville, Meurthe-et-Moselle",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "brief rest at Lunéville after reaching the Rhine",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R746;R001",
+    "source_locator": "R746: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3986,
      50.6325
     ]
@@ -59497,6 +60686,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1326,
+     50.0483
+    ]
+   },
+   "properties": {
+    "claim_id": "C1905",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-02-10",
+    "place_id": "PL0593",
+    "location_name": "Dasburg, Rheinland-Pfalz",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "relieved near Dasburg by the 6th Armored Division; a period of reequipment begins",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R734;R002",
+    "source_locator": "R734: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -59654,6 +60884,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R182;R002",
     "source_locator": "R182: table of 1945, 13 February row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1137,
+     50.2967
+    ]
+   },
+   "properties": {
+    "claim_id": "C1914",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-13",
+    "place_id": "PL0407",
+    "location_name": "Hünningen, Liège",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "relieved for training and rehabilitation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-13",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R754;R002",
+    "source_locator": "R754: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "claim_id": "C1926",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-042D",
+    "unit_name": "42nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-14",
+    "place_id": "PL0618",
+    "location_name": "Haguenau, Bas-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "enters combat as a whole in defensive positions near Haguenau",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-14",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R740;R002",
+    "source_locator": "R740: narrative"
    }
   },
   {
@@ -60317,6 +61629,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8959,
+     49.1863
+    ]
+   },
+   "properties": {
+    "claim_id": "C1934",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-17",
+    "place_id": "PL0971",
+    "location_name": "Forbach, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "the attack jumps off just below the Saar",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-17",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R744;R002",
+    "source_locator": "R744: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1593,
      51.6756
     ]
@@ -60563,6 +61916,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9883,
+     51.1934
+    ]
+   },
+   "properties": {
+    "claim_id": "C1937",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-21",
+    "place_id": "PL0949",
+    "location_name": "Roermond, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 6th British Airborne Division on the Maas near Roermond",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R746;R002",
+    "source_locator": "R746: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5733,
      49.5747
     ]
@@ -60679,6 +62073,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R537;R002",
     "source_locator": "R537: p. 154"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C1959",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-104D",
+    "unit_name": "104th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "moves across the Roer after the defensive period",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R757;R001",
+    "source_locator": "R757: narrative"
    }
   },
   {
@@ -61383,6 +62818,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C1920",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-009D",
+    "unit_name": "9th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-28",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "drive across the Roer launched",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R735;R001",
+    "source_locator": "R735: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6414,
      49.7567
     ]
@@ -61786,6 +63262,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R727;R002",
     "source_locator": "R727: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5931,
+     50.9724
+    ]
+   },
+   "properties": {
+    "claim_id": "C1955",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL0977",
+    "location_name": "Glesch, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "takes the offensive, crossing the Erft Canal near Glesch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R754;R002",
+    "source_locator": "R754: narrative"
    }
   },
   {
@@ -62900,6 +64417,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7055,
+     50.3699
+    ]
+   },
+   "properties": {
+    "claim_id": "C1913",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-09",
+    "place_id": "PL0975",
+    "location_name": "Dollendorf, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "brief rest after taking Dollendorf",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-09",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R751;R002",
+    "source_locator": "R751: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.2269,
      50.645
     ]
@@ -63105,6 +64663,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.2399,
+     48.954
+    ]
+   },
+   "properties": {
+    "claim_id": "C1935",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-071D",
+    "unit_name": "71st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-11",
+    "place_id": "PL0969",
+    "location_name": "Ratzwiller, Bas-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 100th Division at Ratzwiller; first action",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R745;R002",
+    "source_locator": "R745: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.9064,
      50.1297
     ]
@@ -63221,6 +64820,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R540;R001",
     "source_locator": "R540: p. 226"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7055,
+     50.3699
+    ]
+   },
+   "properties": {
+    "claim_id": "C1946",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-13",
+    "place_id": "PL0975",
+    "location_name": "Dollendorf, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "returns to combat after a brief rest",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-13",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R751;R002",
+    "source_locator": "R751: narrative"
    }
   },
   {
@@ -63467,6 +65107,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R027;R002",
     "source_locator": "R027: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.2877,
+     49.8465
+    ]
+   },
+   "properties": {
+    "claim_id": "C1918",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL0957",
+    "location_name": "Saint-Quentin, Aisne",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "moves to St. Quentin for rehabilitation and the reconstruction of lost units",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R758;R002",
+    "source_locator": "R758: narrative"
    }
   },
   {
@@ -64540,6 +66221,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1842,
+     49.3499
+    ]
+   },
+   "properties": {
+    "claim_id": "C1907",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL0974",
+    "location_name": "Neunkirchen, Saarland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "rests after taking Spiesen, Neunkirchen and Erbach",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R742;R002",
+    "source_locator": "R742: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.548,
      51.6913
     ]
@@ -65066,6 +66788,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R726;R002",
     "source_locator": "R726: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.96,
+     50.9384
+    ]
+   },
+   "properties": {
+    "claim_id": "C1943",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-086D",
+    "unit_name": "86th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL0591",
+    "location_name": "Cologne (Köln), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "takes over defensive positions near Weiden, Köln, from the 8th Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R750;R002",
+    "source_locator": "R750: narrative"
    }
   },
   {
@@ -65886,6 +67649,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R673;R674;R002",
     "source_locator": "R671: pp. 293, 294, 295"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3621,
+     49.6303
+    ]
+   },
+   "properties": {
+    "claim_id": "C1932",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL0940",
+    "location_name": "Worms, Rheinland-Pfalz",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "crosses the Rhine at Neuschloss",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R742;R002",
+    "source_locator": "R742: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6916,
+     51.1982
+    ]
+   },
+   "properties": {
+    "claim_id": "C1952",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-097D",
+    "unit_name": "97th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL0945",
+    "location_name": "Neuss, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defensive position on the Rhine opposite Düsseldorf",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R753;R002",
+    "source_locator": "R753: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C1980",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-28",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "crosses the Rhine at Wesel after being held in reserve",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R023;R002",
+    "source_locator": "R023: narrative"
    }
   },
   {
@@ -66877,6 +68763,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.9459,
+     50.1026
+    ]
+   },
+   "properties": {
+    "claim_id": "C1906",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-044D",
+    "unit_name": "44th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0965",
+    "location_name": "Großauheim, Hessen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "crosses the Main at Grosse Auheim and begins a three-week training period",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R741;R002",
+    "source_locator": "R741: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.0403,
      51.755
     ]
@@ -67410,6 +69337,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1950",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-094D",
+    "unit_name": "94th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-03",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "contains the west side of the Ruhr pocket near Krefeld",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R752;R001",
+    "source_locator": "R752: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7328,
      50.8281
     ]
@@ -67649,6 +69617,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 306"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.96,
+     50.9384
+    ]
+   },
+   "properties": {
+    "claim_id": "C1944",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-086D",
+    "unit_name": "86th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-05",
+    "place_id": "PL0591",
+    "location_name": "Cologne (Köln), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "relieved after a short period of patrolling; moves across the Rhine",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R750;R002",
+    "source_locator": "R750: narrative"
    }
   },
   {
@@ -68435,6 +70444,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.2269,
+     50.645
+    ]
+   },
+   "properties": {
+    "claim_id": "C1984",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-013D",
+    "unit_name": "13th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-10",
+    "place_id": "PL0426",
+    "location_name": "Bad Honnef, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "the attack jumps off at Honnef",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R582;R001",
+    "source_locator": "R582: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -68961,6 +71011,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 309"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1919",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-12",
+    "place_id": "PL0967",
+    "location_name": "Essen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "military government duties begin in the Ruhr",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R734;R002",
+    "source_locator": "R734: narrative"
    }
   },
   {
@@ -69658,6 +71749,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R726;R001",
     "source_locator": "R726: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4345,
+     51.5964
+    ]
+   },
+   "properties": {
+    "claim_id": "C1909",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0966",
+    "location_name": "Brambauer, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "moves to Brambauer for rest and rehabilitation",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R746;R002",
+    "source_locator": "R746: narrative"
    }
   },
   {
@@ -70731,6 +72863,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.9689,
+     52.5408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1957",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0456",
+    "location_name": "Tangermünde, Sachsen-Anhalt",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "outposts the Elbe 48 miles from Berlin",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R756;R001",
+    "source_locator": "R756: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -70929,6 +73102,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 554, 555"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.7991,
+     51.0457
+    ]
+   },
+   "properties": {
+    "claim_id": "C1939",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0948",
+    "location_name": "Rochlitz, Sachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "holds a bridgehead across the Mulde near Chemnitz",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R747;R002",
+    "source_locator": "R747: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1951",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-094D",
+    "unit_name": "94th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "military government duties in the Krefeld area",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R752;R001",
+    "source_locator": "R752: narrative"
    }
   },
   {
@@ -71838,6 +74093,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.7262,
+     48.2829
+    ]
+   },
+   "properties": {
+    "claim_id": "C1929",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-044D",
+    "unit_name": "44th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL0972",
+    "location_name": "Ehingen (Donau), Baden-Württemberg",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "attacks after the 10th Armored Division toward the Danube",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R741;R002",
+    "source_locator": "R741: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6172,
      51.8006
     ]
@@ -72241,6 +74537,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 316"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1347,
+     50.4951
+    ]
+   },
+   "properties": {
+    "claim_id": "C1947",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL0976",
+    "location_name": "Plauen, Sachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "defensive positions about 4 miles from the Czech border after Plauen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R751;R002",
+    "source_locator": "R751: narrative"
    }
   },
   {
@@ -74052,6 +76389,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.0775,
+     49.4539
+    ]
+   },
+   "properties": {
+    "claim_id": "C1922",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-016D",
+    "unit_name": "16th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-28",
+    "place_id": "PL0476",
+    "location_name": "Nuremberg, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "security and training mission at Nürnberg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R737;R001",
+    "source_locator": "R737: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9435,
+     49.778
+    ]
+   },
+   "properties": {
+    "claim_id": "C1933",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL0644",
+    "location_name": "Würzburg, Bayern",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "withdrawn from the line for security duty",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R742;R002",
+    "source_locator": "R742: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4708,
      48.4103
     ]
@@ -74414,6 +76833,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R355;R568;R001",
     "source_locator": "R568: p. 436-437"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.6541,
+     48.7031
+    ]
+   },
+   "properties": {
+    "claim_id": "C1956",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-100D",
+    "unit_name": "100th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-30",
+    "place_id": "PL0959",
+    "location_name": "Göppingen, Baden-Württemberg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "occupation duties at Göppingen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R755;R002",
+    "source_locator": "R755: narrative"
    }
   },
   {
@@ -75070,6 +77530,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 598"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.9,
+     48.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C1985",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-013D",
+    "unit_name": "13th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-03",
+    "place_id": "PL0493",
+    "location_name": "Tann, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "ordered to reassemble north of the Inn without crossing",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R582;R001",
+    "source_locator": "R582: narrative"
    }
   },
   {
@@ -76184,6 +78685,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.5667,
+     47.1333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1930",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-044D",
+    "unit_name": "44th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0501",
+    "location_name": "Landeck, Tirol",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the war is over for the division after the German 19th Army surrenders at Innsbruck",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R741;R001",
+    "source_locator": "R741: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      14.2781,
      48.4136
     ]
@@ -76505,6 +79047,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 613"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.9817,
+     49.8814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1953",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-097D",
+    "unit_name": "97th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-07",
+    "place_id": "PL0961",
+    "location_name": "Konstantinovy Lázně, Czech Republic",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "receives the cease-fire order at Konstantinovy Lázně",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R753;R002",
+    "source_locator": "R753: narrative"
    }
   },
   {
@@ -77940,6 +80523,785 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R731;R002",
     "source_locator": "R731: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0158,
+     51.4582
+    ]
+   },
+   "properties": {
+    "claim_id": "C1961",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-05-08",
+    "place_id": "PL0967",
+    "location_name": "Essen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on occupation duty at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R734;R002",
+    "source_locator": "R734: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8069,
+     51.1292
+    ]
+   },
+   "properties": {
+    "claim_id": "C1962",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-009D",
+    "unit_name": "9th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0468",
+    "location_name": "Colditz, Sachsen",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "shifting south to Czechoslovakia when the war ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R735;R001",
+    "source_locator": "R735: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2781,
+     48.4136
+    ]
+   },
+   "properties": {
+    "claim_id": "C1963",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-011D",
+    "unit_name": "11th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0504",
+    "location_name": "Kirchschlag bei Linz, Oberösterreich",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "elements contact Soviet forces",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R736;R001",
+    "source_locator": "R736: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.3775,
+     49.7475
+    ]
+   },
+   "properties": {
+    "claim_id": "C1964",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-016D",
+    "unit_name": "16th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0505",
+    "location_name": "Pilsen (Plzeň), Czech Republic",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "mopping up and patrolling around Pilsen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R737;R001",
+    "source_locator": "R737: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3333,
+     47.8667
+    ]
+   },
+   "properties": {
+    "claim_id": "C1965",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-020D",
+    "unit_name": "20th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0508",
+    "location_name": "Prien am Chiemsee, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "moving toward Salzburg when word comes that hostilities will cease",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R738;R001",
+    "source_locator": "R738: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.2781,
+     48.4136
+    ]
+   },
+   "properties": {
+    "claim_id": "C1966",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0504",
+    "location_name": "Kirchschlag bei Linz, Oberösterreich",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "moving north-east into Czechoslovakia across the Vltava when the cease-fire order arrives",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R739;R001",
+    "source_locator": "R739: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.0465,
+     47.7981
+    ]
+   },
+   "properties": {
+    "claim_id": "C1967",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-042D",
+    "unit_name": "42nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0951",
+    "location_name": "Salzburg, Salzburg",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "across the Austrian border north of Salzburg as the war ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R740;R002",
+    "source_locator": "R740: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9435,
+     49.778
+    ]
+   },
+   "properties": {
+    "claim_id": "C1968",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-063D",
+    "unit_name": "63rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0644",
+    "location_name": "Würzburg, Bayern",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on security duty at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R742;R002",
+    "source_locator": "R742: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.79,
+     47.51
+    ]
+   },
+   "properties": {
+    "claim_id": "C1969",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-066D",
+    "unit_name": "66th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0386",
+    "location_name": "Brittany port pockets (Lorient to Saint-Nazaire), representative point",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "the Lorient and St-Nazaire pockets surrender to the division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R743;R001",
+    "source_locator": "R743: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.31,
+     48.0447
+    ]
+   },
+   "properties": {
+    "claim_id": "C1970",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-071D",
+    "unit_name": "71st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0507",
+    "location_name": "Sierning, Oberösterreich",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "defensive positions on the Enns; contact with Russian forces east of Linz",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R745;R001",
+    "source_locator": "R745: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.7991,
+     51.0457
+    ]
+   },
+   "properties": {
+    "claim_id": "C1971",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0948",
+    "location_name": "Rochlitz, Sachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "holding the Mulde bridgehead near Chemnitz at VE Day",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R747;R002",
+    "source_locator": "R747: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7708,
+     50.81
+    ]
+   },
+   "properties": {
+    "claim_id": "C1972",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-078D",
+    "unit_name": "78th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0451",
+    "location_name": "Marburg, Hessen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "stationed near Marburg at VE Day after the Ruhr pocket",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R748;R001",
+    "source_locator": "R748: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3631,
+     50.4737
+    ]
+   },
+   "properties": {
+    "claim_id": "C1973",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0962",
+    "location_name": "Falkenstein/Vogtl., Sachsen",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding positions near Falkenstein until VE Day",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R751;R002",
+    "source_locator": "R751: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C1974",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-094D",
+    "unit_name": "94th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on military government duty at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R752;R001",
+    "source_locator": "R752: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.2627,
+     48.4627
+    ]
+   },
+   "properties": {
+    "claim_id": "C1975",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0960",
+    "location_name": "Geisenhausen, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "reaches the Inn and Geisenhausen as VE Day comes",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R754;R002",
+    "source_locator": "R754: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.6541,
+     48.7031
+    ]
+   },
+   "properties": {
+    "claim_id": "C1976",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-100D",
+    "unit_name": "100th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0959",
+    "location_name": "Göppingen, Baden-Württemberg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "on occupation duty at Göppingen as the war ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R755;R002",
+    "source_locator": "R755: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9689,
+     52.5408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1977",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0456",
+    "location_name": "Tangermünde, Sachsen-Anhalt",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "patrolling and holding defensive positions on the Elbe at the end of hostilities",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R756;R001",
+    "source_locator": "R756: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6847,
+     53.8664
+    ]
+   },
+   "properties": {
+    "claim_id": "C1981",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0779",
+    "location_name": "Lübeck, Schleswig-Holstein",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "patrolling the countryside and collecting prisoners at the end of the war",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R023;R002",
+    "source_locator": "R023: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.9,
+     48.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C1986",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-013D",
+    "unit_name": "13th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0493",
+    "location_name": "Tann, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "preparing for further advances north of the Inn when the war ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R582;R001",
+    "source_locator": "R582: narrative"
    }
   },
   {

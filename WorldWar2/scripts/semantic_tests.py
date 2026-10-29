@@ -795,8 +795,27 @@ def scenario_20_french_1944_45():
     expect(s + ': C1645 is the last row of the batch (9th Colonial Infantry Division at Ensisheim)', (c['unit_id'], c['date'], c['parent_unit_id']), ('FR-INF-009D', '1945-02-06', 'FR-COR-001C'))
 
 
+def scenario_21_french_followup():
+    s = 'scenario 21, French follow-up (2d French Armored Division winter 1944-1945, Atlantic and Alpine formations)'
+    a = intervals('FR-ARM-002D', '1944-12-10')
+    expect(s + ': 2d French Armored Division, 10 Dec: First French Army operational control from 5 December (Riviera p. 464), Seventh Army standing', sorted(a), [('FR-ARMY-001A', 'operational_control'), ('US-ARMY-007A', 'unspecified_subordination')])
+    a = intervals('FR-ARM-002D', '1944-12-20')
+    expect(s + ': 2d French Armored Division, 20 Dec: II Corps attached (Riviera p. 486)', sorted(a), [('FR-ARMY-001A', 'operational_control'), ('FR-COR-002C', 'attached'), ('US-ARMY-007A', 'unspecified_subordination')])
+    a = intervals('FR-ARM-002D', '1945-01-10')
+    expect(s + ': 2d French Armored Division, 10 Jan 1945: XV Corps of the Seventh Army, not the VI Corps (Riviera pp. 496, 501)', sorted(a), [('US-ARMY-007A', 'unspecified_subordination'), ('US-COR-015C', 'attached')])
+    a = intervals('FR-ARM-002D', '1945-02-01')
+    expect(s + ': 2d French Armored Division, 1 Feb 1945: First French Army from 28 January (Grussenheim)', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination')])
+    a = intervals('FR-INF-GIRONDE', '1945-04-16')
+    expect(s + ': Gironde marching division, 16 Apr 1945 (Royan): Atlantic army detachment', sorted(a), [('FR-ARMY-ATLANT', 'unspecified_subordination')])
+    a = intervals('FR-INF-014D', '1945-04-10')
+    expect(s + ': French 14th Infantry Division, 10 Apr 1945: First French Army', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': C1634 (1st DFL at Lyon) raised to 0.7 with the CMH history', claims['C1634']['confidence'], '0.7')
+    expect(s + ': C1633 (5th Armored Division at Stuttgart) stays 21 April 1945 at 0.3', (claims['C1633']['date'], claims['C1633']['confidence']), ('1945-04-21', '0.3'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup):
         before = len(FAILURES)
         try:
             fn()

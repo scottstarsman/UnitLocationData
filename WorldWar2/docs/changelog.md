@@ -2,6 +2,114 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-2: activity status for 30 more divisions (29 October 2026)
+
+Scott approved batch 2 on 29 October 2026, after batch 1 was merged (PR #41). Branch `activity-rollout-2` from `main` `5929279`.
+
+Units (30): the remaining 28 US divisions (17th Airborne; 9th, 11th, 13th, 16th and 20th Armored; 26th, 42nd, 44th, 63rd, 65th, 66th, 70th, 71st, 75th, 76th, 78th, 84th, 86th, 87th, 94th, 97th, 99th, 100th, 102nd, 103rd, 104th and 106th Infantry) and two British divisions (11th Armoured and 15th (Scottish) Infantry). The 1st Airborne Task Force and the combat commands are left out (they are not divisions).
+
+Sources: for the US divisions, the US Army Center of Military History combat chronicles (public domain; Wayback copies; 25 new references R734-R758, and the existing R582 for the 13th Armored); for the British divisions, the English Wikipedia articles already in the data (R023, R029; CC BY-SA). No copyrighted text is in the repository.
+
+Rows: 142 activity rows in all (124 stated, 18 inferred): in_line 114, refitting 14, garrison 10, reserve 4; spans: 63 start, 58 point, 21 end.
+
+- 60 existing rows labelled (32 US, 28 British). Each one has the old value (blank), the new value and the reason in its notes. One entry into combat (the 100th Division, 12 November 1944, C0541) is a point, not a start, because no source closes it within 90 days.
+- 82 new claims, C1905-C1986 (US 76, British 6), listed below.
+- 24 new places, PL0954-PL0977 (OpenStreetMap Nominatim, R002); the Monschau row reuses PL0594.
+- Next ids: claim C1987, place PL0978, reference R759; relation CR1064 and conflict group G028 are unchanged.
+
+Rules applied, as in batch 1: occupation, military government and security missions are garrison; containing a fortress (Lorient, St-Nazaire, the Ruhr pocket) is in_line; rest, rehabilitation, reequipment and training out of the line are refitting (training alone is inferred); a derived date (for example the day after a dated action) lowers the confidence to 0.3; an inferred value is capped at 0.3; the main-body rule applies (a row for a part of the division gives an inferred value for the division).
+
+New claims:
+
+- C1905, 17th Airborne Division, 10 February 1945, Dasburg, Rheinland-Pfalz (PL0593): refitting start (stated), 0.3. Relieved near Dasburg by the 6th Armored Division; a period of reequipment begins.
+- C1906, 44th Infantry Division, 1 April 1945, Großauheim, Hessen (PL0965): refitting start (inferred), 0.3. Crosses the Main at Grosse Auheim and begins a three-week training period.
+- C1907, 63rd Infantry Division, 23 March 1945, Neunkirchen, Saarland (PL0974): refitting start (stated), 0.3. Rests after taking Spiesen, Neunkirchen and Erbach.
+- C1908, 75th Infantry Division, 8 February 1945, Lunéville, Meurthe-et-Moselle (PL0199): refitting start (stated), 0.3. Brief rest at Lunéville after reaching the Rhine.
+- C1909, 75th Infantry Division, 14 April 1945, Brambauer, North Rhine-Westphalia (PL0966): refitting start (stated), 0.3. Moves to Brambauer for rest and rehabilitation.
+- C1910, 84th Infantry Division, 30 November 1944, Eygelshoven, Limburg (PL0140): refitting start (stated), 0.3. Short rest after taking Beeck and Lindern.
+- C1911, 84th Infantry Division, 17 January 1945, Gouvy, Luxembourg (Belgium) (PL0964): refitting start (stated), 0.3. Five-day respite after the Bulge is reduced.
+- C1912, 87th Infantry Division, 24 December 1944, Metz, Moselle (PL0224): reserve start (stated), 0.3. Placed in SHAEF reserve.
+- C1913, 87th Infantry Division, 9 March 1945, Dollendorf, North Rhine-Westphalia (PL0975): refitting start (stated), 0.3. Brief rest after taking Dollendorf.
+- C1914, 99th Infantry Division, 13 February 1945, Hünningen, Liège (PL0407): refitting start (stated), 0.3. Relieved for training and rehabilitation.
+- C1915, 106th Infantry Division, 25 December 1944, Anthisnes, Liège (PL0958): refitting start (stated), 0.5. Receives reinforcements and supplies at Anthisnes.
+- C1916, 106th Infantry Division, 9 January 1945, Anthisnes, Liège (PL0958): refitting end (stated), 0.5. Refit at Anthisnes ends.
+- C1917, 106th Infantry Division, 18 January 1945, Stavelot, Liège (PL0885): refitting start (stated), 0.5. Assembles at Stavelot for rehabilitation and training.
+- C1918, 106th Infantry Division, 15 March 1945, Saint-Quentin, Aisne (PL0957): refitting start (stated), 0.5. Moves to St. Quentin for rehabilitation and the reconstruction of lost units.
+- C1919, 17th Airborne Division, 12 April 1945, Essen, North Rhine-Westphalia (PL0967): garrison start (stated), 0.3. Military government duties begin in the Ruhr.
+- C1920, 9th Armored Division, 28 February 1945, Düren, North Rhine-Westphalia (PL0427): in_line start (stated), 0.3. Drive across the Roer launched.
+- C1921, 11th Armored Division, 23 December 1944, Givet, Ardennes (PL0954): in_line start (stated), 0.5. Defends a 30-mile Meuse sector from Givet to Sedan.
+- C1922, 16th Armored Division, 28 April 1945, Nuremberg, Bayern (PL0476): garrison start (stated), 0.5. Security and training mission at Nürnberg.
+- C1923, 26th Infantry Division, 7 October 1944, Moncourt, Moselle (PL0955): in_line start (stated), 0.5. Relieves the 4th Armored Division in the Salonnes-Moncourt sector and holds defensive positions.
+- C1924, 26th Infantry Division, 22 December 1944, Rambrouch, Luxembourg (PL0956): in_line start (stated), 0.5. Attacks at Rambrouch and Grosbous.
+- C1925, 26th Infantry Division, 29 January 1945, Saarlouis, Saarland (PL0433): in_line start (stated), 0.5. Defensive positions in the Saarlautern area.
+- C1926, 42nd Infantry Division, 14 February 1945, Haguenau, Bas-Rhin (PL0618): in_line start (stated), 0.5. Enters combat as a whole in defensive positions near Haguenau.
+- C1927, 44th Infantry Division, 18 October 1944, Forêt de Parroy, Meurthe-et-Moselle (PL0561): in_line start (stated), 0.5. Enters combat, relieving the 79th Division near the Forêt de Parroy.
+- C1928, 44th Infantry Division, 23 December 1944, Sarreguemines, Moselle (PL0973): in_line start (stated), 0.5. Defensive positions east of Sarreguemines on the Blies.
+- C1929, 44th Infantry Division, 18 April 1945, Ehingen (Donau), Baden-Württemberg (PL0972): in_line start (stated), 0.3. Attacks after the 10th Armored Division toward the Danube.
+- C1930, 44th Infantry Division, 5 May 1945, Landeck, Tirol (PL0501): in_line end (stated), 0.3. The war is over for the division after the German 19th Army surrenders at Innsbruck.
+- C1931, 63rd Infantry Division, 7 February 1945, Willerwald, Moselle (PL0963): in_line start (stated), 0.5. Local raids and patrols from Willerwald.
+- C1932, 63rd Infantry Division, 28 March 1945, Worms, Rheinland-Pfalz (PL0940): in_line start (stated), 0.3. Crosses the Rhine at Neuschloss.
+- C1933, 63rd Infantry Division, 28 April 1945, Würzburg, Bayern (PL0644): garrison start (stated), 0.3. Withdrawn from the line for security duty.
+- C1934, 70th Infantry Division, 17 February 1945, Forbach, Moselle (PL0971): in_line start (stated), 0.3. The attack jumps off just below the Saar.
+- C1935, 71st Infantry Division, 11 March 1945, Ratzwiller, Bas-Rhin (PL0969): in_line start (stated), 0.5. Relieves the 100th Division at Ratzwiller; first action.
+- C1936, 75th Infantry Division, 23 December 1944, Manhay, Luxembourg (Belgium) (PL0882): in_line start (stated), 0.3. Enters defensive combat along the Ourthe.
+- C1937, 75th Infantry Division, 21 February 1945, Roermond, Limburg (PL0949): in_line start (stated), 0.5. Relieves the 6th British Airborne Division on the Maas near Roermond.
+- C1938, 76th Infantry Division, 25 January 1945, Echternach, Luxembourg (PL0411): in_line start (stated), 0.5. Relieves the 87th Division along the Sauer near Echternach.
+- C1939, 76th Infantry Division, 16 April 1945, Rochlitz, Sachsen (PL0948): in_line start (stated), 0.3. Holds a bridgehead across the Mulde near Chemnitz.
+- C1940, 78th Infantry Division, 13 December 1944, Simmerath, North Rhine-Westphalia (PL0600): in_line start (stated), 0.5. Attacks into Simmerath, Witzerath and Bickerath.
+- C1941, 84th Infantry Division, 18 December 1944, Würm, Geilenkirchen (PL0968): in_line start (stated), 0.5. Returns to the fight, taking Wurm and Mullendorf.
+- C1942, 84th Infantry Division, 22 January 1945, Gouvy, Luxembourg (Belgium) (PL0964): in_line start (stated), 0.3. Resumes the offensive after a five-day respite, taking Gouvy and Beho.
+- C1943, 86th Infantry Division, 24 March 1945, Cologne (Köln), North Rhine-Westphalia (PL0591): in_line start (stated), 0.5. Takes over defensive positions near Weiden, Köln, from the 8th Division.
+- C1944, 86th Infantry Division, 5 April 1945, Cologne (Köln), North Rhine-Westphalia (PL0591): in_line end (stated), 0.3. Relieved after a short period of patrolling; moves across the Rhine.
+- C1945, 87th Infantry Division, 29 December 1944, Bastogne, Luxembourg (PL0031): in_line start (stated), 0.3. Thrown into the Bulge battle in Belgium.
+- C1946, 87th Infantry Division, 13 March 1945, Dollendorf, North Rhine-Westphalia (PL0975): in_line start (stated), 0.3. Returns to combat after a brief rest.
+- C1947, 87th Infantry Division, 20 April 1945, Plauen, Sachsen (PL0976): in_line start (stated), 0.3. Defensive positions about 4 miles from the Czech border after Plauen.
+- C1948, 94th Infantry Division, 1 January 1945, Brittany port pockets (Lorient to Saint-Nazaire), representative point (PL0386): in_line end (stated), 0.5. Relieved in Brittany on New Year's Day.
+- C1949, 94th Infantry Division, 7 January 1945, Nennig, Saarland (PL0970): in_line start (stated), 0.5. Takes positions in the Saar-Moselle Triangle facing the Switch Line.
+- C1950, 94th Infantry Division, 3 April 1945, Krefeld, North Rhine-Westphalia (PL0420): in_line start (stated), 0.5. Contains the west side of the Ruhr pocket near Krefeld.
+- C1951, 94th Infantry Division, 16 April 1945, Krefeld, North Rhine-Westphalia (PL0420): garrison start (stated), 0.3. Military government duties in the Krefeld area.
+- C1952, 97th Infantry Division, 28 March 1945, Neuss, North Rhine-Westphalia (PL0945): in_line start (stated), 0.5. Defensive position on the Rhine opposite Düsseldorf.
+- C1953, 97th Infantry Division, 7 May 1945, Konstantinovy Lázně, Czech Republic (PL0961): in_line end (stated), 0.5. Receives the cease-fire order at Konstantinovy Lázně.
+- C1954, 99th Infantry Division, 9 November 1944, Monschau, North Rhine-Westphalia (PL0594): in_line start (stated), 0.5. First action: takes over the defense of the sector north of the Roer between Schmidt and Monschau.
+- C1955, 99th Infantry Division, 2 March 1945, Glesch, North Rhine-Westphalia (PL0977): in_line start (stated), 0.5. Takes the offensive, crossing the Erft Canal near Glesch.
+- C1956, 100th Infantry Division, 30 April 1945, Göppingen, Baden-Württemberg (PL0959): garrison start (stated), 0.5. Occupation duties at Göppingen.
+- C1957, 102nd Infantry Division, 15 April 1945, Tangermünde, Sachsen-Anhalt (PL0456): in_line start (stated), 0.3. Outposts the Elbe 48 miles from Berlin.
+- C1958, 104th Infantry Division, 15 December 1944, Düren, North Rhine-Westphalia (PL0427): in_line start (stated), 0.5. Active defense of its sector near Düren and Merken.
+- C1959, 104th Infantry Division, 23 February 1945, Düren, North Rhine-Westphalia (PL0427): in_line start (stated), 0.5. Moves across the Roer after the defensive period.
+- C1960, 106th Infantry Division, 7 February 1945, Hünningen, Liège (PL0407): in_line start (stated), 0.5. Defensive patrols and training near Hünningen.
+- C1961, 17th Airborne Division, 8 May 1945, Essen, North Rhine-Westphalia (PL0967): garrison end (stated), 0.3. On occupation duty at the end of the war in Europe.
+- C1962, 9th Armored Division, 8 May 1945, Colditz, Sachsen (PL0468): in_line end (inferred), 0.3. Shifting south to Czechoslovakia when the war ends.
+- C1963, 11th Armored Division, 8 May 1945, Kirchschlag bei Linz, Oberösterreich (PL0504): in_line point (stated), 0.3. Elements contact Soviet forces.
+- C1964, 16th Armored Division, 8 May 1945, Pilsen (Plzeň), Czech Republic (PL0505): in_line end (stated), 0.5. Mopping up and patrolling around Pilsen.
+- C1965, 20th Armored Division, 8 May 1945, Prien am Chiemsee, Bayern (PL0508): in_line point (stated), 0.5. Moving toward Salzburg when word comes that hostilities will cease.
+- C1966, 26th Infantry Division, 8 May 1945, Kirchschlag bei Linz, Oberösterreich (PL0504): in_line point (stated), 0.3. Moving north-east into Czechoslovakia across the Vltava when the cease-fire order arrives.
+- C1967, 42nd Infantry Division, 8 May 1945, Salzburg, Salzburg (PL0951): in_line end (stated), 0.3. Across the Austrian border north of Salzburg as the war ends.
+- C1968, 63rd Infantry Division, 8 May 1945, Würzburg, Bayern (PL0644): garrison end (stated), 0.3. On security duty at the end of the war in Europe.
+- C1969, 66th Infantry Division, 8 May 1945, Brittany port pockets (Lorient to Saint-Nazaire), representative point (PL0386): in_line end (stated), 0.5. The Lorient and St-Nazaire pockets surrender to the division.
+- C1970, 71st Infantry Division, 8 May 1945, Sierning, Oberösterreich (PL0507): in_line end (stated), 0.3. Defensive positions on the Enns; contact with Russian forces east of Linz.
+- C1971, 76th Infantry Division, 8 May 1945, Rochlitz, Sachsen (PL0948): in_line end (stated), 0.3. Holding the Mulde bridgehead near Chemnitz at VE Day.
+- C1972, 78th Infantry Division, 8 May 1945, Marburg, Hessen (PL0451): in_line end (stated), 0.5. Stationed near Marburg at VE Day after the Ruhr pocket.
+- C1973, 87th Infantry Division, 8 May 1945, Falkenstein/Vogtl., Sachsen (PL0962): in_line end (stated), 0.5. Holding positions near Falkenstein until VE Day.
+- C1974, 94th Infantry Division, 8 May 1945, Krefeld, North Rhine-Westphalia (PL0420): garrison end (stated), 0.3. On military government duty at the end of the war in Europe.
+- C1975, 99th Infantry Division, 8 May 1945, Geisenhausen, Bayern (PL0960): in_line end (stated), 0.5. Reaches the Inn and Geisenhausen as VE Day comes.
+- C1976, 100th Infantry Division, 8 May 1945, Göppingen, Baden-Württemberg (PL0959): garrison end (stated), 0.5. On occupation duty at Göppingen as the war ends.
+- C1977, 102nd Infantry Division, 8 May 1945, Tangermünde, Sachsen-Anhalt (PL0456): in_line end (stated), 0.3. Patrolling and holding defensive positions on the Elbe at the end of hostilities.
+- C1978, 11th Armoured Division, 20 July 1944, Escoville, Calvados (PL0726): refitting point (stated), 0.3. Withdrawn from the line to rest and refit after Goodwood.
+- C1979, 11th Armoured Division, 1 December 1944, Ypres (Ieper), West Flanders (PL0793): reserve point (stated), 0.3. Placed in reserve around Ypres.
+- C1980, 11th Armoured Division, 28 March 1945, Wesel, North Rhine-Westphalia (PL0632): in_line start (stated), 0.5. Crosses the Rhine at Wesel after being held in reserve.
+- C1981, 11th Armoured Division, 8 May 1945, Lübeck, Schleswig-Holstein (PL0779): garrison point (inferred), 0.3. Patrolling the countryside and collecting prisoners at the end of the war.
+- C1982, 15th (Scottish) Infantry Division, 2 July 1944, Grainville-sur-Odon (PL0161): in_line end (stated), 0.3. The 44th Brigade, last in action after Epsom, is relieved by the 53rd (Welsh) Division.
+- C1983, 15th (Scottish) Infantry Division, 23 July 1944, Caumont-l'Éventé (PL0071): in_line start (stated), 0.5. Relocates to Caumont and relieves the 5th US Infantry Division.
+- C1984, 13th Armored Division, 10 April 1945, Bad Honnef, North Rhine-Westphalia (PL0426): in_line start (stated), 0.5. The attack jumps off at Honnef.
+- C1985, 13th Armored Division, 3 May 1945, Tann, Bayern (PL0493): in_line end (stated), 0.3. Ordered to reassemble north of the Inn without crossing.
+- C1986, 13th Armored Division, 8 May 1945, Tann, Bayern (PL0493): reserve point (inferred), 0.3. Preparing for further advances north of the Inn when the war ends.
+
+Spans: 21 explicit ends close their starts; the other starts end implicitly at the next start. Still open (10; the 30-day horizon applies): 11th Armored (Meuse, 23 December 1944), 26th (Saarlautern, 29 January 1945), 65th (entry into combat, 9 March 1945), 70th (17 February 1945), 75th (Brambauer rest, 14 April 1945), 84th (Gouvy, 22 January 1945), 104th (Roer, 23 February 1945), 106th (St. Quentin, 15 March 1945), 11th Armoured (Wesel, 28 March 1945) and 15th (Scottish) (Caumont, 23 July 1944).
+
+8 May 1945: 19 of the 30 divisions have a row. No row (the source does not place the division on that day): the 44th, 65th, 70th, 75th, 84th, 86th, 97th (the cease-fire order reached it on 7 May; that row closes its span), 103rd, 104th and 106th Infantry, and the 15th (Scottish).
+
+Tests: scenario 28 (14 expectations; 438 in all).
+
 ## activity-rollout-1: 28th Infantry Division refit at Neufchâteau (29 October 2026)
 
 Scott asked for this on 29 October 2026. Source: the CMH combat chronicle, 28th Infantry Division (R724). 2 new claims; no existing row changed; no new place or reference. Next ids: claim C1905, place PL0954, reference R734.

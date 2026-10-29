@@ -490,6 +490,18 @@ Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
 
+## Activity rollout, batch 2 (29 October 2026): open points
+
+Deferred to the official-history pass (no dated source in the CMH combat chronicles or Wikipedia):
+
+- US, no 8 May 1945 row: the 44th (the war ended for it at Innsbruck on about 5 May), 65th (Linz on 5 May, Erlauf on 9 May), 70th, 75th and 106th (occupation and security duty without a date or place), 84th (on the Elbe, no place named), 86th (securing the XV Corps left flank; no place named), 97th (the cease-fire order on 7 May closes its span), 103rd (Brenner Pass on 4 May) and 104th (Pretzsch on 26 April).
+- US, open spans: the 11th Armored on the Meuse (23 December 1944), the 26th at Saarlautern (29 January 1945), the 65th entry into combat (9 March 1945), the 70th (17 February 1945), the 75th rest at Brambauer (14 April 1945), the 84th at Gouvy (22 January 1945), the 104th across the Roer (23 February 1945) and the 106th at St. Quentin (15 March 1945).
+- US, undated rest and reserve periods: the 26th rest at Metz (December 1944; the span of 7 October runs through it), the 11th Armored rests after Roscheid (20 February 1945) and after the Worms airport (21 March 1945), the 100th Division reserve in late November 1944, the 103rd occupation duty in early April 1945, the 13th Armored occupation duty before 5 April 1945.
+- US: the 87th Division SHAEF reserve area (Metz is used, inferred).
+- British: the 11th Armoured defence of the Meuse between Namur and Givet (December 1944, undated) and its reserve from early March to 28 March 1945; its 8 May row is inferred (garrison).
+- British: the 15th (Scottish) has no 8 May row and no rest periods after July 1944 (Wikipedia gives none).
+- The British official history (Ellis) and the divisional histories are copyrighted: notes from them stay outside the repository.
+
 ## Activity rollout, batch 1 (29 October 2026): open points
 
 The follow-up and second-source passes (29 October 2026) answered the earlier points. These are deferred to a later official-history pass, as Scott decided:

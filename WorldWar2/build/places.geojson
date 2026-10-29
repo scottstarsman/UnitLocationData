@@ -12118,7 +12118,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -16733,6 +16733,46 @@
    "properties": {
     "place_id": "PL0844",
     "name": "Ensisheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2633,
+     49.0955
+    ]
+   },
+   "properties": {
+    "place_id": "PL0845",
+    "name": "Rimling, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4869,
+     48.1459
+    ]
+   },
+   "properties": {
+    "place_id": "PL0846",
+    "name": "Grussenheim, Haut-Rhin",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

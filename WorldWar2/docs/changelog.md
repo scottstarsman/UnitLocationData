@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cleanup-2-late-war-west: follow-up after Scott's answers (29 October 2026)
+
+Scott accepted the five recommendations of the audit (`docs/review/cleanup2_audit.md`). One commit per item.
+
+- **Row-by-row read of the 84 rows with two cited families (open question 1): 6 raised from 0.5 to 0.7, 78 unchanged.** A row was raised only where both source families give the day and the place. In each raised row the place is an area, an objective town or an unsurveyed landmark, so the rubric value is 0.7 (approximate place, two families), not 0.9. Old value 0.5, new value 0.7, with the reason in a Review sentence of each record:
+  - 82nd Airborne Division, landing at Groesbeek, 17 September 1944 (TracesOfWar and the division's Operation Market historical data).
+  - 82nd Airborne Division, command post CHAMPION west of Groesbeek, 17 September 1944 (same two sources).
+  - 4th Armored Division, landing at Utah Beach, 11 July 1944 (USHMM and Wikipedia).
+  - VI Corps, Dragoon assault, 15 August 1944 (CMH Riviera to the Rhine and Wikipedia).
+  - VIII Corps, Avranches entered, 30 July 1944 (CMH Breakout and Pursuit and Wikipedia).
+  - 89th Infantry Division, Rhine crossing at St. Goar, 26 March 1945 (CMH Last Offensive and Wikipedia).
+  The other 78 were left: in them the second family gives only the unit, the army, the operation dates, a month, or a span, or the place rests on one family, or the date or place is inferred or representative.
+
 ## cleanup-2-late-war-west: clean-up of the late-war Western Front data (29 October 2026)
 
 Scott asked for a review and clean-up pass of the Western Front data (6 June 1944 to 8 May 1945, division level and above, all nationalities) using only the sources already in the data. The audit is `docs/review/cleanup2_audit.md`. One commit per item.

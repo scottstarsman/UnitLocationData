@@ -993,15 +993,15 @@ ROLLOUT_2 = ['US-ABN-017D'] + ['US-ARM-%03dD' % n for n in (9, 11, 13, 16, 20)] 
 
 
 def scenario_28_activity_rollout_2():
-    """Activity rollout, batch 2 (October 2026): the remaining 28 US divisions and two British divisions; existing rows labelled, then new rest/refit, line, garrison, span-closing and 8 May 1945 claims (C1905-C1986) from the CMH combat chronicles and Wikipedia."""
+    """Activity rollout, batch 2 (October 2026): the remaining 28 US divisions and two British divisions; existing rows labelled, then new rest/refit, line, garrison, span-closing and 8 May 1945 claims (C1905-C1987) from the CMH combat chronicles and Wikipedia."""
     s = 'scenario 28'
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_2]
     expect(s + ': batch 2 covers 30 units', len({c['unit_id'] for c in rows}), 30)
-    expect(s + ': batch 2 has 142 activity rows', len(rows), 142)
-    expect(s + ': batch 2 has 124 stated and 18 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (124, 18))
+    expect(s + ': batch 2 has 143 activity rows', len(rows), 143)
+    expect(s + ': batch 2 has 125 stated and 18 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (125, 18))
     expect(s + ': 106th Division, 30 Dec 1944: refitting at Anthisnes (stated span to 9 Jan)', A('US-INF-106D', '1944-12-30'), ('refitting', 'certain', 'stated', 0.5))
     expect(s + ': 106th Division, 12 Jan 1945: no answer after the refit ends', A('US-INF-106D', '1945-01-12'), None)
     expect(s + ': 94th Division, 15 Nov 1944: containing the Brittany ports is in the line', A('US-INF-094D', '1944-11-15'), ('in_line', 'certain', 'stated', 0.5))
@@ -1012,6 +1012,7 @@ def scenario_28_activity_rollout_2():
     expect(s + ': 9th Armored, 8 May 1945: shifting south (inferred, capped at 0.3)', A('US-ARM-009D', '1945-05-08'), ('in_line', 'certain', 'inferred', 0.3))
     expect(s + ': 15th (Scottish), 30 Jun 1944: in the line at Epsom (closed 2 Jul)', A('UK-INF-015D', '1944-06-30'), ('in_line', 'certain', 'stated', 0.3))
     expect(s + ': 15th (Scottish), 10 Jul 1944: no answer between Epsom and Caumont', A('UK-INF-015D', '1944-07-10'), None)
+    expect(s + ': 86th Division, 8 May 1945: securing the XV Corps left flank at Burghausen (point)', A('US-INF-086D', '1945-05-08'), ('in_line', 'certain', 'stated', 0.3))
     expect(s + ': 11th Armoured, 5 Apr 1945: open span from the Rhine crossing at Wesel', A('UK-ARM-011D', '1945-04-05'), ('in_line', 'possible', 'stated', 0.5))
 
 

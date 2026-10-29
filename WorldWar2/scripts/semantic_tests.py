@@ -804,18 +804,34 @@ def scenario_21_french_followup():
     a = intervals('FR-ARM-002D', '1945-01-10')
     expect(s + ': 2d French Armored Division, 10 Jan 1945: XV Corps of the Seventh Army, not the VI Corps (Riviera pp. 496, 501)', sorted(a), [('US-ARMY-007A', 'unspecified_subordination'), ('US-COR-015C', 'attached')])
     a = intervals('FR-ARM-002D', '1945-02-01')
-    expect(s + ': 2d French Armored Division, 1 Feb 1945: First French Army from 28 January (Grussenheim)', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination')])
+    expect(s + ': 2d French Armored Division, 1 Feb 1945: First French Army from 19 January (de Lattre p. 373), II Corps from 28 January (Grussenheim; CMH p. 548)', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination'), ('FR-COR-002C', 'unspecified_subordination')])
     a = intervals('FR-INF-GIRONDE', '1945-04-16')
     expect(s + ': Gironde marching division, 16 Apr 1945 (Royan): Atlantic army detachment', sorted(a), [('FR-ARMY-ATLANT', 'unspecified_subordination')])
     a = intervals('FR-INF-014D', '1945-04-10')
     expect(s + ': French 14th Infantry Division, 10 Apr 1945: First French Army', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination')])
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     expect(s + ': C1634 (1st DFL at Lyon) raised to 0.7 with the CMH history', claims['C1634']['confidence'], '0.7')
-    expect(s + ': C1633 (5th Armored Division at Stuttgart) stays 21 April 1945 at 0.3', (claims['C1633']['date'], claims['C1633']['confidence']), ('1945-04-21', '0.3'))
+    expect(s + ': C1633 (5th Armored Division at Stuttgart) stays 21 April 1945, raised to 0.5 by the de Lattre pass', (claims['C1633']['date'], claims['C1633']['confidence']), ('1945-04-21', '0.5'))
+
+
+def scenario_22_french_delattre():
+    s = 'scenario 22, French follow-up de Lattre pass (History of the French First Army, R686)'
+    a = intervals('FR-ARM-002D', '1945-01-18')
+    expect(s + ': 2d French Armored Division, 18 Jan 1945: still Seventh Army and XV Corps', sorted(a), [('US-ARMY-007A', 'unspecified_subordination'), ('US-COR-015C', 'attached')])
+    a = intervals('FR-ARM-002D', '1945-01-20')
+    expect(s + ': 2d French Armored Division, 20 Jan 1945: First French Army from 19 January (de Lattre p. 373)', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination')])
+    a = intervals('FR-INF-014D', '1945-04-30')
+    expect(s + ': French 14th Infantry Division, 30 Apr 1945: I Corps from 23 April (de Lattre p. 479) under the First French Army', sorted(a), [('FR-ARMY-001A', 'unspecified_subordination'), ('FR-COR-001C', 'unspecified_subordination')])
+    a = intervals('FR-INF-003D', '1945-01-20')
+    expect(s + ': 3rd Algerian Infantry Division, 20 Jan 1945: II Corps at Strasbourg from 5 January (de Lattre p. 312)', sorted(a), [('FR-COR-002C', 'unspecified_subordination')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': C1644 (9th DIC at Toulon) raised to 0.7 with de Lattre as a second family', claims['C1644']['confidence'], '0.7')
+    expect(s + ': C1637 (2nd DIM at Belfort) keeps 25 November 1944 and 0.7 despite de Lattre\'s 21 November', (claims['C1637']['date'], claims['C1637']['confidence']), ('1944-11-25', '0.7'))
+    expect(s + ': C1656 (3rd DIA, Strasbourg) and C1657 (1st DB, Ulm) cite R686', ('R686' in claims['C1656']['reference_ids'], 'R686' in claims['C1657']['reference_ids']), (True, True))
 
 
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre):
         before = len(FAILURES)
         try:
             fn()

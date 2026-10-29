@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## rule-copyrighted-notes: notes from copyrighted sources stay private (29 October 2026)
+
+Docs and rules only, from `main` (`941b8b0`), with `main` (`d99fc07`) merged in; no data changed. Scott agreed that notes or extracts from copyrighted sources are kept only on the owner's working computer and in his Google Drive (`WWII Unit Locations` folder) and are never committed to the remote repository.
+
+- **`docs/HANDOFF.md`**, section 3: new standing rule 16.
+- **`CONTRIBUTING.md`**, Rules: new rule 10.
+- **`.gitignore`**: new entries `**/sources/*_notes.md`, `docs/sources/` and `private_notes/`. No tracked file matches them (checked with `git ls-files` and `git check-ignore`).
+- No script changed: the sync tool replays only committed files, so ignored files cannot reach the publishing clone.
+
 ## french-followup-1944-45: de Lattre pass (29 October 2026)
 
 Same unmerged branch `french-followup-1944-45` (head before the pass `a7113df`; `main` `941b8b0` unchanged). Scott approved using Jean de Lattre de Tassigny, *The History of the French First Army* (trans. Malcolm Barnes, Allen & Unwin 1952; archive.org `bwb_W7-ADK-972`, borrow-only). The book was not re-opened: the evidence is the research notes taken from its OCR text layer (about 335 lines, printed pp. 63-525, gap at p. ~263), each line's quote and printed page. A fact only in a note's paraphrase columns, or only in a truncated or garbled quote, is not used on its own; OCR corrections are stated in the row (`ist` = `1st` in CR0959).

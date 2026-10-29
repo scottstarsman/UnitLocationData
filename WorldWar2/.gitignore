@@ -11,3 +11,7 @@ Thumbs.db
 *.zip
 # build/ is generated but intentionally committed
 .cache/
+# notes or extracts from copyrighted sources: kept privately (owner's computer and Drive), never committed
+**/sources/*_notes.md
+docs/sources/
+private_notes/

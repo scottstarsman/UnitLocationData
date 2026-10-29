@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 11
+    "claims_count": 14
    }
   },
   {
@@ -1398,7 +1398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -1838,7 +1838,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -3178,7 +3178,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -3338,7 +3338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 5
+    "claims_count": 7
    }
   },
   {
@@ -3418,7 +3418,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -6758,7 +6758,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -6818,7 +6818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -13558,7 +13558,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -14338,7 +14338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14618,7 +14618,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Eure",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14798,7 +14798,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14838,7 +14838,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -15338,7 +15338,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16798,6 +16798,266 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9819,
+     49.775
+    ]
+   },
+   "properties": {
+    "place_id": "PL0852",
+    "name": "Poix-de-Picardie, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "place_id": "PL0853",
+    "name": "Point 309 area, Saint-Martin-des-Besaces, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1986,
+     51.5661
+    ]
+   },
+   "properties": {
+    "place_id": "PL0854",
+    "name": "Oisterwijk, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "place_id": "PL0855",
+    "name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8661,
+     51.7468
+    ]
+   },
+   "properties": {
+    "place_id": "PL0856",
+    "name": "Erle, Raesfeld, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5929,
+     49.2079
+    ]
+   },
+   "properties": {
+    "place_id": "PL0857",
+    "name": "Audrieu, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6138,
+     49.1792
+    ]
+   },
+   "properties": {
+    "place_id": "PL0858",
+    "name": "Saint-Pierre, Tilly-sur-Seulles, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3411,
+     50.1572
+    ]
+   },
+   "properties": {
+    "place_id": "PL0859",
+    "name": "Doullens, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3435,
+     49.2146
+    ]
+   },
+   "properties": {
+    "place_id": "PL0860",
+    "name": "Lébisey, Hérouville-Saint-Clair, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4262,
+     50.2052
+    ]
+   },
+   "properties": {
+    "place_id": "PL0861",
+    "name": "Grimbiémont, Marche-en-Famenne, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4384,
+     51.6924
+    ]
+   },
+   "properties": {
+    "place_id": "PL0862",
+    "name": "Willemstad, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4698,
+     51.4679
+    ]
+   },
+   "properties": {
+    "place_id": "PL0863",
+    "name": "Essen, Antwerp (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "place_id": "PL0864",
+    "name": "Gennep, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "NL",
+    "region": "Limburg",
     "claims_count": 1
    }
   }

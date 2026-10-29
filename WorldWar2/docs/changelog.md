@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## brigades-uk-can-1944-45: Brigades Batch 1, British and Canadian independent brigades (29 October 2026)
+
+Scott approved 35 independent brigades in three batches; this is Batch 1 (rows 1 to 12 of the planning list). Each period and claim was checked against Ellis (Victory in the West), Stacey (The Victory Campaign) and Wikipedia; where the planning list (written from memory) differed from the sources, the sources were followed and the difference is listed below. Command relations follow the batch convention: a corps is `assigned`, a division `attached` (temporary), and a move into the 79th Armoured Division `organic`. Ends not dated by a source are closed at the next claim (basis `inferred_from_next_claim`). One commit per item.
+
+- **Armoured and tank brigades (32 claims, C1658 to C1689).** 4th Armoured (5), 6th Guards Tank (5), 8th Armoured (5), 27th Armoured (4), 31st Tank (2), 33rd Armoured (4) and 34th Tank (7). Four placeholders became active (27th, 33rd, 6th Guards, 34th). 13 new places; two new Wikipedia references (R687, R688). Inferred values, each annotated in the record (old value: none, the row is new; new value; reason):
+  - 27th Armoured Brigade, 29 July 1944, break-up: a representative point in the Caen sector, confidence 0.3, because no source places the brigade on the day; the date is Ellis's and the Wikipedia regiment list's (29 July), not the 27 July of the Wikipedia lead.
+  - 31st Tank Brigade, 4 September 1944, transfer to the 79th Armoured Division: confidence 0.3, a representative point in the Caen sector because no source places the brigade on the day (its regiments were converting to Crocodiles); the relation to the 79th is `organic` from that date.
+  - 34th Tank Brigade, 6 November 1944, Willemstad: confidence 0.3, the objective named by Wikipedia stands for the brigade's position.
+  - 34th Tank Brigade, 15 July 1944: the XII Corps relation is inferred from Stacey naming Greenline as the XII Corps operation (p. 169), starting on the row date.
+  - 6th Guards Tank Brigade, 27 March 1945: the attachment to XVIII Airborne Corps starts on the row date (Ellis, vol. II, p. 305, gives no date); the few days under the US Ninth Army are not recorded.
+  - Division attachments with no stated end are closed at the next claim under a different parent.
+- **Corrections to the planning list (armour):** 27th Armoured Brigade broken up on 29 July 1944 (Ellis; the list said 27 July); 31st Tank Brigade arrived on 19 June 1944 and its independent period ends on 4 September 1944, when it joined the 79th Armoured Division; 33rd Armoured Brigade is shown "from 79th Armoured Division" in Ellis's Rhine order of battle, so its independent period ends early in 1945 (open question); 34th Tank Brigade: Wikipedia puts it in the 79th Armoured Division in February 1945 while Ellis lists it as independent (open question); the 6th Guards and 34th brigades were renamed Armoured in 1945 (unit ids kept).
+
 ## cleanup-2-late-war-west: follow-up after Scott's answers (29 October 2026)
 
 Scott accepted the five recommendations of the audit (`docs/review/cleanup2_audit.md`). One commit per item.

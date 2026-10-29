@@ -1359,6 +1359,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3211,
+     49.3064
+    ]
+   },
+   "properties": {
+    "claim_id": "C1673",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-027B",
+    "unit_name": "27th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-06",
+    "place_id": "PL0344",
+    "location_name": "Sword Beach",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "D-Day: lands with the 3rd Infantry Division on Sword Beach, spearheading I Corps",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R045;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -2343,6 +2384,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5929,
+     49.2079
+    ]
+   },
+   "properties": {
+    "claim_id": "C1668",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-08",
+    "place_id": "PL0857",
+    "location_name": "Audrieu, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "moves through the 69th Brigade front to exploit south through Audrieu towards the high ground above Villers-Bocage",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 230"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0074,
      49.1788
     ]
@@ -3238,6 +3320,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R449;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1658",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-004B",
+    "unit_name": "4th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-10",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "assembling east of the Orne for the attack south from the airborne bridgehead; not complete on 10 June",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 245, 246, 247, 265"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6138,
+     49.1792
+    ]
+   },
+   "properties": {
+    "claim_id": "C1669",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-10",
+    "place_id": "PL0858",
+    "location_name": "Saint-Pierre, Tilly-sur-Seulles, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "holds Saint Pierre and Point 103 against an early-morning German attack",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 251"
    }
   },
   {
@@ -7591,6 +7755,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C1659",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-004B",
+    "unit_name": "4th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-27",
+    "place_id": "PL0093",
+    "location_name": "Cheux sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "with the 31st Tank Brigade, supports the VIII Corps infantry on the eastern flank of the Odon corridor",
+    "operation_id": "OP-EPSOM",
+    "operation": "Operation Epsom",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown",
+    "location_date": "1944-06-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 275, 280"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5247,
+     49.1669
+    ]
+   },
+   "properties": {
+    "claim_id": "C1677",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-031B",
+    "unit_name": "31st Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-27",
+    "place_id": "PL0093",
+    "location_name": "Cheux sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "with the 4th Armoured Brigade, supports the VIII Corps infantry on the eastern flank of the Odon corridor",
+    "operation_id": "OP-EPSOM",
+    "operation": "Operation Epsom",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown",
+    "location_date": "1944-06-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 277, 280"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.4825,
      49.1489
     ]
@@ -8691,6 +8937,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R446;R112;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5283,
+     49.1389
+    ]
+   },
+   "properties": {
+    "claim_id": "C1660",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-004B",
+    "unit_name": "4th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-29",
+    "place_id": "PL0161",
+    "location_name": "Grainville-sur-Odon (one regiment of the brigade)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "a regiment sweeps the ground between Grainville and the Noyers road after the German counter-attack",
+    "operation_id": "OP-EPSOM",
+    "operation": "Operation Epsom",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown",
+    "location_date": "1944-06-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 283"
    }
   },
   {
@@ -9918,6 +10205,88 @@
     "strength_status": "unknown",
     "location_date": "1944-07-08",
     "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 314, 315"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1674",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-027B",
+    "unit_name": "27th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-08",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Charnwood: supports the three infantry divisions attacking Caen from the north",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R045;R001",
+    "source_locator": "R670: pp. 310, 311, 312"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3435,
+     49.2146
+    ]
+   },
+   "properties": {
+    "claim_id": "C1679",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-033B",
+    "unit_name": "33rd Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-08",
+    "place_id": "PL0860",
+    "location_name": "Lébisey, Hérouville-Saint-Clair, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Charnwood: under the 3rd Division, supports the capture of the high ground round Point 64 north of Caen",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 314, 315"
@@ -11978,6 +12347,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.4605,
+     49.1236
+    ]
+   },
+   "properties": {
+    "claim_id": "C1683",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-15",
+    "place_id": "PL0173",
+    "location_name": "Hill 112",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Greenline: first action, supporting the 15th (Scottish) Division to enlarge the Odon bridgehead beyond Hill 112",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R058;R002",
+    "source_locator": "R668: p. 169"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.23,
      49.15
     ]
@@ -12914,6 +13324,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 336"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2216,
+     49.1812
+    ]
+   },
+   "properties": {
+    "claim_id": "C1675",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-027B",
+    "unit_name": "27th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-18",
+    "place_id": "PL0727",
+    "location_name": "Sannerville, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Goodwood: supports the 3rd Division attack on the left flank from 07:45; Sannerville taken soon after midday",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R045;R002",
+    "source_locator": "R670: p. 343"
    }
   },
   {
@@ -14848,6 +15299,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1676",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-027B",
+    "unit_name": "27th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-29",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "broken up: its three armoured regiments go to other formations",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-29",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R045;R001",
+    "source_locator": "R670: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.3556,
      48.685
     ]
@@ -15251,6 +15743,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 388, 389"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C1663",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-30",
+    "place_id": "PL0071",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Bluecoat: supports the 15th (Scottish) Division attacking south from Caumont",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 390, 391"
    }
   },
   {
@@ -16201,6 +16734,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.8447,
+     49.0119
+    ]
+   },
+   "properties": {
+    "claim_id": "C1664",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-01",
+    "place_id": "PL0853",
+    "location_name": "Point 309 area, Saint-Martin-des-Besaces, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "with the Scottish infantry, breaks up the 21st Panzer Division counter-attacks on the Hill 309 position",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 393"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.19,
      48.9161
     ]
@@ -16931,6 +17505,47 @@
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 408"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C1684",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-05",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "under the 59th Division, reaches the Orne upstream of Grimbosq",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
     "source_locator": "R670: p. 408"
    }
   },
@@ -18490,6 +19105,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R670;R002",
     "source_locator": "R668: p. 224; R670: p. 423"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2971,
+     49.1217
+    ]
+   },
+   "properties": {
+    "claim_id": "C1680",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-033B",
+    "unit_name": "33rd Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL0687",
+    "location_name": "Bourguébus, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Totalize: two armoured columns with the 51st Division east of the Falaise road in the night attack",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 420, 421"
    }
   },
   {
@@ -24893,6 +25549,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.4857,
+     49.0932
+    ]
+   },
+   "properties": {
+    "claim_id": "C1670",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-27",
+    "place_id": "PL0741",
+    "location_name": "Vernon, Eure (some tanks of the brigade)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "tanks ferried across the Seine at Vernon help the 43rd Division beat off attacks on the bridgehead",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-08-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 466"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.8642,
      48.7075
     ]
@@ -25836,6 +26533,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.9819,
+     49.775
+    ]
+   },
+   "properties": {
+    "claim_id": "C1661",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-004B",
+    "unit_name": "4th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-31",
+    "place_id": "PL0852",
+    "location_name": "Poix-de-Picardie, Somme",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "leads XII Corps across the Seine country; by nightfall north of Poix, about twelve miles short of the Somme",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 469, 470"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4711,
      48.5495
     ]
@@ -26239,6 +26977,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R129;R002",
     "source_locator": "R129: section France 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3411,
+     50.1572
+    ]
+   },
+   "properties": {
+    "claim_id": "C1671",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-01",
+    "place_id": "PL0859",
+    "location_name": "Doullens, Somme",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "under the 11th Armoured Division, overcomes resistance in Doullens",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 4"
    }
   },
   {
@@ -27305,6 +28084,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R144;R002",
     "source_locator": "R144: section Belgium and the Netherlands"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1678",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-031B",
+    "unit_name": "31st Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-04",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "leaves the independent brigades: transferred to the 79th Armoured Division to become a Crocodile flame-tank brigade",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R687;R001",
+    "source_locator": "R670: p. 522"
    }
   },
   {
@@ -28699,6 +29519,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R001;R668",
     "source_locator": "R671: pp. 7, 14; R668: p. 331"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C1681",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-033B",
+    "unit_name": "33rd Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-10",
+    "place_id": "PL0169",
+    "location_name": "Le Havre",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Astonia: with the 51st Division, attacks Le Havre from the north at midnight under artificial moonlight",
+    "operation_id": "OP-ASTONIA",
+    "operation": "Operation Astonia",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Astonia",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R001",
+    "source_locator": "R671: p. 14; R668: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C1685",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-10",
+    "place_id": "PL0169",
+    "location_name": "Le Havre",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Astonia: under the 49th Division, attacks the north plateau of Le Havre from 17:30",
+    "operation_id": "OP-ASTONIA",
+    "operation": "Operation Astonia",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Astonia",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R058;R001",
+    "source_locator": "R671: p. 14; R668: p. 332"
    }
   },
   {
@@ -37685,6 +38587,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.4698,
+     51.4679
+    ]
+   },
+   "properties": {
+    "claim_id": "C1686",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-20",
+    "place_id": "PL0863",
+    "location_name": "Essen, Antwerp (BE)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Operation Rebound: tanks and Clarkeforce attack north from the Turnhout area towards Esschen with the 49th Division",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R058;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -38088,6 +39031,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 124"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1986,
+     51.5661
+    ]
+   },
+   "properties": {
+    "claim_id": "C1665",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-27",
+    "place_id": "PL0854",
+    "location_name": "Oisterwijk, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "with a column of the 15th Division, has taken Oisterwijk on the way to Tilburg",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 124, 125"
    }
   },
   {
@@ -38703,6 +39687,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R443;R228;R002;R668",
     "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4384,
+     51.6924
+    ]
+   },
+   "properties": {
+    "claim_id": "C1687",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-06",
+    "place_id": "PL0862",
+    "location_name": "Willemstad, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "with the 49th Division, advances to Willemstad on the Hollands Diep, liberated on 6 November",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R058;R002",
+    "source_locator": null
    }
   },
   {
@@ -47033,6 +48058,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2585,
+     50.0802
+    ]
+   },
+   "properties": {
+    "claim_id": "C1688",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-03",
+    "place_id": "PL0750",
+    "location_name": "Bure, Tellin, Luxembourg (BE)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Ardennes: with the 6th Airborne Division advances east from Givet and fights for Bure",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5842,
      49.9622
     ]
@@ -47846,6 +48912,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R671;R002",
     "source_locator": "R668: p. 452; R671: p. 239"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4262,
+     50.2052
+    ]
+   },
+   "properties": {
+    "claim_id": "C1682",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-033B",
+    "unit_name": "33rd Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-08",
+    "place_id": "PL0861",
+    "location_name": "Grimbiémont, Marche-en-Famenne, Luxembourg (BE)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Ardennes: with the 53rd Division clears south-east of Marche and takes Grimbiémont; relieved there on 8 January",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 184, 190, 191"
    }
   },
   {
@@ -49240,6 +50347,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R668;R002",
     "source_locator": "R671: pp. 4, 159, 160, 238, 240, 241; R668: p. 443"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8667,
+     50.9974
+    ]
+   },
+   "properties": {
+    "claim_id": "C1672",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-19",
+    "place_id": "PL0752",
+    "location_name": "Sittard, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Blackcock: withdrawn on the evening of 19 January to join the 52nd Division advance from the south",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 240, 241, 244"
    }
   },
   {
@@ -52076,6 +53224,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C1689",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-02-09",
+    "place_id": "PL0864",
+    "location_name": "Gennep, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Veritable: tanks accompany the 153rd Brigade clearing the Kiekberg woods on XXX Corps' right",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 256, 261"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -52766,6 +53955,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C1666",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-02-16",
+    "place_id": "PL0855",
+    "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia (one regiment of the brigade)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Veritable: a regiment supports the 7th Canadian Infantry Brigade attack on Louisendorf",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 256, 268"
    }
   },
   {
@@ -57276,6 +58506,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 293, 294, 295"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8661,
+     51.7468
+    ]
+   },
+   "properties": {
+    "claim_id": "C1667",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-03-27",
+    "place_id": "PL0856",
+    "location_name": "Erle, Raesfeld, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "passes through the US airborne troops at the line Schermbeck-Erle at the start of the break-out",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 293, 294, 295, 305"
    }
   },
   {
@@ -62893,6 +64164,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 306, 310, 311"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.236,
+     52.9405
+    ]
+   },
+   "properties": {
+    "claim_id": "C1662",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-004B",
+    "unit_name": "4th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-04-17",
+    "place_id": "PL0777",
+    "location_name": "Verden (Aller), Niedersachsen",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "under the 53rd Division, takes the high ground north of Verden and the town, secured on 17 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 310, 311"
    }
   },
   {

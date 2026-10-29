@@ -2,6 +2,80 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## french-followup-1944-45: de Lattre pass (29 October 2026)
+
+Same unmerged branch `french-followup-1944-45` (head before the pass `a7113df`; `main` `941b8b0` unchanged). Scott approved using Jean de Lattre de Tassigny, *The History of the French First Army* (trans. Malcolm Barnes, Allen & Unwin 1952; archive.org `bwb_W7-ADK-972`, borrow-only). The book was not re-opened: the evidence is the research notes taken from its OCR text layer (about 335 lines, printed pp. 63-525, gap at p. ~263), each line's quote and printed page. A fact only in a note's paraphrase columns, or only in a truncated or garbled quote, is not used on its own; OCR corrections are stated in the row (`ist` = `1st` in CR0959).
+
+### References and documents
+
+- **`R686`** (new): de Lattre, *The History of the French First Army* (1952); `source_type` `unit_history`, `source_family` `delattre_french_first_army` (its own family, independent of CMH and Wikipedia). Now cited by 6 claims.
+- **Research notes**: the notes taken from the book (with a header giving citation, method and known gaps) are kept privately by the project owner (Drive, WWII Unit Locations folder), not in this repository; they were briefly committed on this branch and removed in a later commit. `docs/sources.md`: one row for the source.
+
+### Claims
+
+- **`C1644`** (9th DIC, Toulon, 27 Aug 1944): confidence 0.5 to 0.7. de Lattre pp. 76, 92-93 (St Catherine fort 24 August; Ruhfus's surrender 27 August 23.45) is a second family for the city and day; the quotes do not name the division, the note line does.
+- **`C1633`** (5th DB, Stuttgart, 21 Apr 1945): confidence 0.3 to 0.5. de Lattre pp. 460-466: "when Stuttgart fell on the 21st April"; the link of the day to the division rests on the note's summary, so not 0.7.
+- **`C1634`** (1st DFL, Lyon, 3 Sep 1944): de Lattre p. 128 (08.00 on 3 September) added as a third family; stays 0.7 (city, 10 km).
+- **`C1637`** (2nd DIM, Belfort, 25 Nov 1944): de Lattre pp. 243-246 has Belfort fallen by 21 November; Review note, date and 0.7 unchanged (not reconciled).
+- **`C1656`** (new, 3rd DIA, Strasbourg, 5 Jan 1945, 0.5): de Lattre pp. 309, 312 and CMH *Riviera to the Rhine* pp. 517, 522, 527.
+- **`C1657`** (new, 1st DB, Ulm, 23 Apr 1945, 0.3): CMH *The Last Offensive* p. 431 (French platoon outside Ulm at dusk) and de Lattre pp. 482, 485-486; attribution to the division inferred. New place `PL0851` Ulm (OpenStreetMap).
+
+### Relations
+
+- **`CR0942`** (2DB under the Seventh Army) and **`CR0953`** (2DB attached to the XV Corps): old valid_to 1945-01-27 (inferred); new 1945-01-18 (narrative): de Lattre p. 373, the combat commands Dio and Langlade left the US Seventh Army on 19 January (two of three; the third is not dated). `C1647` now `asserts_end` for both.
+- **`CR0938`** (2DB under the First French Army): old valid_from 1945-01-28 (claim date); new 1945-01-19 (narrative, de Lattre p. 373; `C1648` `asserts_start`).
+- **`CR0958`** (new): 2DB under the French II Corps from 28 January 1945 (claim date; CMH p. 548 "leaving Leclerc's 2d Armored Division with de Monsabert"; de Lattre pp. 352, 369-371); end unknown, earliest 8 February. No XXI Corps relation was added: the note for p. 394 puts the XXI Corps link only in its paraphrase and the CMH history leaves the division with the II Corps.
+- **`CR0959`** (new): 14th DI under the I Corps from 23 April 1945 (de Lattre p. 479, OCR `ist` read as `1st`; p. 459), asserted by `C1655`.
+- **`CR0960`** (new): 3rd DIA under the II Corps from 5 January 1945 (de Lattre p. 312); end inferred (day before the Speyer row), unknown.
+- Notes only: `CR0951`, `CR0952` confirmed (de Lattre pp. 286, 287, 302); `CR0946` confirmed (p. 123); `CR0947` kept at 1 September, with de Lattre's "officially went into action at midnight of the 5th to 6th September" (p. 134) recorded; `CR0956` consistent (p. 406).
+
+### Not done (and why)
+
+- 1st DFL to the Alps army detachment from 1 March 1945 (p. 405-406): no 1st DFL row after January 1945 and no place in the quote, so no relation can be anchored; open point.
+- I Corps activation (5/6 Sep) and II Corps (1 Sep) as claims: no place in the quotes; recorded on `CR0947`/`CR0946` instead.
+- 5th DB at Bregenz (p. 498), 4th DMM at Rouffach (pp. 388-390), 9th DIC at Ensisheim (p. 396), 2nd DB near Obernai-Marlenheim in January (p. 331): the quote does not name the place or the unit, or is truncated.
+
+### Scripts
+
+- **`scripts/semantic_tests.py`:** scenario 21 updated (2DB on 1 Feb 1945 now also under the II Corps; C1633 now 0.5); new scenario 22, de Lattre pass: 7 expectations. Total: 344 expectations hold. No other script changed.
+
+## french-followup-1944-45: French follow-up refinements (29 October 2026)
+
+New branch `french-followup-1944-45` from `main` (`941b8b0`, after PR #32 merged the French batch). Scott on 29 October 2026 accepted the seven recommendations of the French batch and asked for a follow-up. Sources: the CMH histories (*Riviera to the Rhine*, *The Last Offensive*), English Wikipedia and, new, French Wikipedia (`R682` to `R684`, same source family as English Wikipedia). De Lattre's *History of the French First Army* (1952) was not read in this first pass (the archive.org copies are borrow-only); it was used later from research notes, see the de Lattre pass above.
+
+### Claims and relations
+
+- **2d French Armored Division, December 1944 to January 1945 (corrected):**
+  - The VI Corps relation `CR0937` ran from 27 November 1944 to 7 February 1945 (end inferred from the next row). It now ends on 4 December 1944: the 6th Army Group transferred operational control of the division from the Seventh to the First French Army effective 5 December (*Riviera to the Rhine*, p. 464). Old: valid_to 1945-02-07, inferred, earliest 1944-11-28. New: valid_to 1944-12-04, narrative. The link to `C1616` now asserts both start and end.
+  - The Seventh Army relation `CR0942` (standing, unspecified_subordination) ended on 7 February 1945 (inferred). It now ends on 27 January 1945, inferred from the new Grussenheim row (earliest 3 January). It is kept through December because the Seventh Army continued the division's logistical support while the First French Army held operational control (p. 464).
+  - The First French Army relation `CR0938` started on 8 February 1945 (the Fessenheim row). It now starts on 28 January 1945, the new Grussenheim row (claim_date); earliest end now 8 February.
+  - New `CR0951`: First French Army, operational_control, 5 to 27 December 1944 (p. 464; ended by 6th Army Group Letter of Instructions 7 of 28 December, p. 496, note 7).
+  - New `CR0952`: French II Corps, attached, 15 (claim_date) to 27 December 1944 (p. 486).
+  - New `CR0953`: XV Corps, attached, 3 January (claim_date) to 27 January 1945 (end inferred from the next row): the division moved to the Sarre valley as XV Corps reserve (p. 501) and supported its counterattacks (p. 505).
+  - 3 new claims, `C1646` to `C1648`: the push south from the Selestat region (15 December 1944, representative point, 0.3), the XV Corps sector near Rimling (3 January 1945, date approximate, representative point, 0.3) and Grussenheim (28 January 1945, 0.5).
+- **New units (3) and promoted placeholders (2):**
+  - `FR-ARMY-ATLANT`, French Forces of the West (Détachement d'Armée de l'Atlantique from March 1945): 1 claim, `C1649`, creation at Cognac on 14 October 1944 (0.5). The two French Wikipedia articles give 1 March and 25 March 1945 for the renaming; noted in the unit row, not reconciled.
+  - `FR-INF-GIRONDE`, Gironde marching division (General d'Anselme): 1 claim, `C1650`, operation Vénérable against Royan, 15 April 1945 (0.5). `CR0954`: under the Atlantic detachment, unspecified_subordination, from 15 April (claim_date; the subordination is inferred from the single command of the operation).
+  - `FR-INF-027D`, 27th Alpine Infantry Division: 1 claim, `C1651`, the offensive toward the Little St Bernard Pass, 23 March 1945 (representative point, 0.3). `CR0957`: 6th Army Group, unspecified_subordination, from 23 March (claim_date), through General Doyen's Alpine army detachment, which is not a unit.
+  - `FR-INF-010D` (placeholder promoted): 2 claims, `C1652` and `C1653`: reconstituted in the Nevers region on 1 October 1944 (0.3) and policing the interior of the Colmar Pocket from 5 February 1945 (CMH p. 551, representative point Colmar, 0.3). `CR0955`: First French Army from 5 February (claim_date).
+  - `FR-INF-014D` (placeholder promoted): 2 claims, `C1654` and `C1655`: recreated with its headquarters at Buhl on 9 February 1945 (0.3) and on Lake Constance at the end of the war (8 May 1945, date inferred, 0.3). `CR0956`: First French Army from 9 February (claim_date).
+  - Not added: a 1st Alpine Division (no source found), and a division-level La Rochelle force (the sources read describe only a sector under Colonel Chêne and the Oléron brigade).
+- **Karlsruhe (`C1639`):** already kept at 3 April 1945 with the CMH 4 April noted; not changed.
+- **5th Armored Division at Stuttgart (`C1633`):** date confirmed, 21 April 1945: *The Last Offensive*, p. 429, says the boundary changed on the 20th and a French column broke into Stuttgart the next day; the city was clear on 22 April. The division is not named there, so confidence stays 0.3. Quotes and notes refined; date unchanged.
+- **Confidence raised (old 0.5, new 0.7), each annotated in the row:** `C1634` 1st DFL at Lyon, 3 September 1944 (*Riviera to the Rhine*, p. 181); `C1637` 2nd Moroccan Division at Belfort, 25 November 1944 (p. 419); `C1645` 9th Colonial Division at Ensisheim, 6 February 1945 (p. 551; the CMH names the division among the three of the I Corps main effort, so treated as approximate). The other French rows at 0.3 and 0.5 were checked against the CMH chapters; no second source family names the unit at the place, so they are unchanged.
+- **Places:** 6 new, `PL0845` to `PL0850`.
+- **Claim totals:** 10 new (France), 3 at 0.5 and 7 at 0.3; 4 existing rows changed (`C1633`, `C1634`, `C1637`, `C1645`).
+- **Side effect:** the reference tool filled the blank read date (2026-10-27) on `R028` (14th Infantry Division, Wikipedia), as in the French batch.
+
+### Scripts (flag for Scott)
+
+- **`scripts/semantic_tests.py`:** new scenario 21, French follow-up: 8 expectations. Total: 337 expectations hold.
+- **`validate.py` and the build:** not changed.
+
+### Validator warnings
+
+There are 25 warnings, the same as before. None is on a French row.
+
 ## french-1944-45: the French formations (29 October 2026)
 
 New branch `french-1944-45` from `main` (`b021dc2`). It covers the Western Front, 6 June 1944 to 8 May 1945, division level and above; Italy is not covered. Sources: the CMH histories (Blumenson, *Breakout and Pursuit*; Cole, *The Lorraine Campaign*; Clarke and Smith, *Riviera to the Rhine*; MacDonald, *The Last Offensive*) and the Wikipedia unit and battle articles. Five references are new: `R677` (Riviera to the Rhine ch. 30), `R678` (ch. 2), `R679` (ch. 12), `R680` (Wikipedia, 1st Armored Division (France)) and `R681` (Wikipedia, 5th Armored Division (France)). The eleven units were placeholders and are promoted by `promote_placeholders.py`. The nationality folder `data/claims/france` is new. De Lattre's history was not consulted in this pass and is not cited.

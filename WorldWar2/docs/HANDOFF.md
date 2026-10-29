@@ -76,8 +76,7 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 **State of branches at handoff.**
 - GitHub `main` = merge commit `965acfd` (PR #13, Scott merged `open-items-oct26`). Main holds everything described here.
-- `open-items-oct26` is **merged but still exists** locally in both clones and on GitHub. Standing rule: delete the task branch (remote and local) after the merge and tell Scott. Not yet done at handoff; do it only after Scott confirms (it is his branch, and deleting a remote branch is not undoable by you).
-- `handoff-doc` is the branch that added this file (Scott merges it).
+- `open-items-oct26` and `handoff-doc` were merged and later deleted by Scott (on 29 October 2026 only `main` exists on GitHub).
 - Older local branches `command-relations-table` and `unit-ids-in-text-columns` exist in the working copy (history only).
 
 ---
@@ -239,7 +238,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 
 **German Batch 2 decisions (27 October 2026; Scott: "Sounds good. Let's to batch 2")**
 - **Scope and sources:** German units at division level and above, 1 September to 31 October 1944; CMH Green Books, Schramm and the Lexikon tables (three families, none above 0.7); Panzer brigades skipped (they do not meet the division-equivalent rule). Rows that rest on a month-level table or an inferred day are 0.3 and say so.
-- **Model and Army Group B.** The task text "Army Group B (Model to 14 Sep)" is contradicted by the sources read: the Lexikon has Model commanding Army Group B from 17 August 1944 to the capitulation, CMH has him at Oosterbeek on 17 September and ordering on 23 September; he gave up OB West only (Rundstedt reappointed 1 September, assumed command 5 September). No row says he left Army Group B on 14 September. Ask Scott where the 14 September came from.
+- **Model and Army Group B.** The task text "Army Group B (Model to 14 Sep)" is contradicted by the sources read: the Lexikon has Model commanding Army Group B from 17 August 1944 to the capitulation, CMH has him at Oosterbeek on 17 September and ordering on 23 September; he gave up OB West only (Rundstedt reappointed 1 September, assumed command 5 September). No row says he left Army Group B on 14 September.
 - **Event-definition differences, not conflict groups:** Balck takes Army Group G on 18 September (Schramm) against 21 September (CMH, Lexikon) (`C0832`, `C0833`); Rundstedt 1 September (reappointment) against 5 September (command); the XLVII Panzer Corps ordered to Mirecourt on 4 September against holding the Moselle line on 5 September (`C0844`, `C0845`); the 3rd and 5th Fallschirm Division in the Lexikon September corps against Schramm's assignment to the First Parachute Army on 4 September (month-level and day-level rows stay separate).
 - **Relations:** `CR0038` is closed on 20 September (the 21st Panzer Division is in the XLVII Panzer Corps on 21 September, CMH ch. 5 p. 233); `CR0561` is closed on 8 September; 22 other earlier relations were closed as inferred (day before the first row that lists a different higher unit; changelog). `CR0051`/`CR0052` stay (the II SS Panzer Corps parent for the 9th and 10th SS is confirmed on 17 September, CMH ch. 7); `CR0011`/`CR0014`, `G021` to `G025` and the 243rd Division are unchanged (no source read in this batch settles them). The First Parachute Army to Army Group B relation was added because the chains of its units ended at the army.
 - **The Lexikon II SS Panzer Corps September row** ("Auffrischung, Eifel") contradicts CMH (Arnhem on 17 September): no Lexikon row was written for it.
@@ -259,7 +258,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 - Related batches (a batch and its follow-ups or fixups) go on one branch, each logical item in its own commit, merged by Scott once; a second branch is no longer stacked on an unmerged one for related work. Unrelated tasks still get their own branch from current `main`. Nothing else changed: push the branch only, never push or merge `main` without his explicit go-ahead, Scott merges and deletes branches himself, author identity, annotations, no zip, Drive in place. Reason: German Batch 2 and its follow-up were stacked on two branches and had to be compared against each other (PR #20 merged both).
 
 **Process decisions**
-- **Quarterly batch split (Batch 4 January to March, Batch 5 April to 8 May 1945):** the roadmap states no reason. The reasoning I give: one batch per quarter keeps the spot-check gate and review round at Batch 3's size (51 claims for October to December), and January to May as one batch would be roughly 110 to 170 claims (my estimate from Batch 3's pace) with 20 or more newly active units. The earlier phrase "US January to May 1945" in `docs/review/questions.md` (question 8) is the whole remainder, not a batch. **Scott has not confirmed the split.** Ask him.
+- **Quarterly batch split (Batch 4 January to March, Batch 5 April to 8 May 1945):** the roadmap states no reason. The reasoning I give: one batch per quarter keeps the spot-check gate and review round at Batch 3's size (51 claims for October to December), and January to May as one batch would be roughly 110 to 170 claims (my estimate from Batch 3's pace) with 20 or more newly active units. The earlier phrase "US January to May 1945" in `docs/review/questions.md` (question 8) is the whole remainder, not a batch. Scott approved both batches and both were merged (Batch 5 with PR #18), so the split stands (open question removed in clean-up 2, 29 October 2026).
 - **Event-based rows, milestone passes:** a batch is a milestone pass, not a daily record. Batch 3 listed what it did *not* cover; do the same.
 - **German Batch 3 confirmations (Scott, "Yes to all", 28 October 2026):** keep `GER-COR-KVOSG` and `GER-COR-FELDT`; keep both Oberrhein dates (2 and 10 December) and both Army Group H dates (10 and 11 November); Group Hoehne stays read as the LXXXIX Corps (an inference, noted); the Utrecht and Tilburg points stay representative at 0.3; the Netherlands deception "15. Armee" rows stay mapped to `GER-ARMY-025A`; the VG and INF id naming of the 462nd, 708th, 347th, 198th and 269th divisions stays as it is (ids are never renamed). No data changed for these.
 - **German 1945 Batch 1 decisions (28 October 2026, my choices, Scott not yet asked):** one batch for January to March 1945 as approved; the 30th SS Division and the Panzer brigades skipped; the 6th SS Mountain Division stays a placeholder (one passing mention in the sources read); the Lexikon month-level February rows are 0.3 with the 15th as an approximate date; `OP-VERITABLE` not added; `CR0687` and `CR0688` left as they are; the First Parachute Army date difference (20 or 28 March) is group `G027` with CMH preferred; a difference of one day (Manteuffel 8 or 9 March) is stated inside one claim. Seven open points are in `docs/roadmap.md`.
@@ -288,21 +287,14 @@ All dates 2026. "Scott decided" = approved by him in chat.
 ## 7. Open items and next steps (my recommendations)
 
 **First, small housekeeping (ask Scott):**
-1. Merge `handoff-doc`; then delete it and `open-items-oct26` (remote and local) and tell him.
-2. Fix leftover stale counts when a branch next touches those files: `docs/roadmap.md` header was fixed by `handoff-doc`; the snapshot documents `normalization_review.md`, `places_review.md`, `unit_references_review.md` and "41 of 566" in `docs/methodology.md` deliberately keep the old numbers.
-3. Licence choice (CC BY-SA 4.0 and MIT) and the copyright holder are unconfirmed.
+1. Fix leftover stale counts when a branch next touches those files: `docs/roadmap.md` header was fixed by `handoff-doc`; the snapshot documents `normalization_review.md`, `places_review.md`, `unit_references_review.md` and "41 of 566" in `docs/methodology.md` deliberately keep the old numbers.
+2. Licence choice (CC BY-SA 4.0 and MIT) and the copyright holder are unconfirmed.
 
 **Batch 4 (1 January to 31 March 1945) and Batch 5 (1 April to 8 May 1945).** Scope: US Army ground units, army group to division. **Batch 4 was done on 26 October 2026 on the branch `batch4-jan-mar-1945` (awaiting the spot check, Scott's review and merge); the text of this section below describes it as planned.** Batch 5 was approved by Scott on 26 October 2026 and done on 27 October 2026 on the branch `batch5-apr-may-1945` (see the table above and `docs/roadmap.md`, "Batch 5"); all six US placeholders are now active.
 
 *Expected content.* Batch 4: end of the Bulge (January), Colmar pocket, Roer and Rur crossings, Operation Grenade (Ninth Army), Remagen (7 March) and the Rhine crossings, Saar and Palatinate, and the corps and divisions arriving. Batch 5: Ruhr pocket, advance to the Elbe, Bavaria, Austria and Czechoslovakia, the surrenders (7 and 8 May). Claim types: position and event rows (attack, capture, arrival, relocation, hq_move), command relations from the CMH tables, and activations of the new corps and divisions.
 
-*The 27 US placeholders still unfilled (proposed batch from general knowledge of first combat; **confirm each against its CMH ETO-OB table before relying on it**).*
-- **Army and corps (4):** Fifteenth Army (activated January 1945; Batch 4 or 5), XVI Corps (Ninth Army from December; Batch 4), XXII and XXIII Corps (arrive early 1945; Batch 4 or 5, no source read yet).
-- **Armored (8):** 8th, 9th, 11th, 12th, 13th and 14th Armored (Batch 4; the 13th also fights in Batch 5); **16th and 20th Armored (mostly Batch 5)**.
-- **Airborne (1):** 17th Airborne (Bulge to Rhine, Batch 4). The 13th Airborne is **not in the unit table** (it never entered combat); add it only if a source needs it.
-- **Infantry (14):** 42nd, 63rd, 66th, 69th, 70th, 76th, 78th, 89th, 95th, 97th, 99th (Batch 4); **65th, 71st, 86th (mostly Batch 5)**. Several of these (95th, 99th, 78th, 42nd, 70th) fought in late 1944 and Batch 3 left them out.
-
-*Other nations.* Not in scope as subjects today. They appear as higher headquarters (21st Army Group, British Second Army, Canadian First Army, French First Army, 6th Army Group relations). Scott must decide whether to give them rows (below).
+*The 27 US placeholders listed here at handoff were all activated by Batches 4 and 5 and the corps tasks (removed in clean-up 2, 29 October 2026). French, German, British, Canadian, Polish, Belgian, Dutch and Czechoslovak units now have rows too (Scott approved each batch).*
 
 *Pace and effort (estimates, not commitments).* Batch 3 produced 51 claims for a quarter (including 3 added by its review). Expect about 60 to 90 for Batch 4 and 50 to 80 for Batch 5 (my estimate), with roughly 10 to 15 units becoming active in each. Each batch is a long working session or two, plus the review round and the spot-check gate.
 
@@ -312,13 +304,11 @@ All dates 2026. "Scott decided" = approved by him in chat.
 
 *Known risks.* (a) the table-start convention: use option C from the start and annotate every other start; (b) same-unit splits when a source changes wording; (c) transfers whose hour is undocumented (use overlaps, do not invent the hour); (d) the new corps and divisions have claims dated *after* their first listing in the tables; (e) units entering mid-March with only one table row; (f) French First Army and British/Canadian higher units that are placeholders; (g) fast-moving April: many one-day rows, keep to milestones; (h) fetch limits: `history.army.mil` blocks automated fetches, use the Wayback snapshots as before; (i) ids and the duplicate guard get their stress test here.
 
-**Decisions Scott still has to make before or during Batch 4:**
-1. Confirm the quarterly split (Batch 4 January to March, Batch 5 April to 8 May).
-2. **Division level only, or add combat commands** (for example CCB of the 9th Armored at Remagen). Today only two combat commands exist (`US-CCA-002D`, `US-CCR-004D`).
-3. **Whether French, German and British/Canadian units get rows** in 1945. **My advice: finish the US first (Batches 4 and 5), then do the German coverage of June to December 1944**, so the opponents of the US rows have history. German-first is the alternative.
-4. Whether to start the **commanders table** (R1-Q6) and the `event_support`/position columns now or after the US work: my advice is after the US work.
-5. Whether and when to send the **outside-review questions** (`docs/review/questions.md`, ten questions; question 8 is the scaling to 1945). **Not yet sent.** Sending is Scott's call; draft the cover note for him, do not send.
-6. Licence choice and copyright holder.
+**Decisions Scott still has to make** (the quarterly split and the other nations were settled and removed in clean-up 2, 29 October 2026):
+1. **Division level only, or add combat commands** (for example CCB of the 9th Armored at Remagen). Today only two combat commands exist (`US-CCA-002D`, `US-CCR-004D`).
+2. Whether to start the **commanders table** (R1-Q6) and the `event_support`/position columns now or after the US work: my advice is after the US work.
+3. Whether and when to send the **outside-review questions** (`docs/review/questions.md`, ten questions; question 8 is the scaling to 1945). **Not yet sent.** Sending is Scott's call; draft the cover note for him, do not send.
+4. Licence choice and copyright holder.
 
 **Open data points (no decision needed unless Scott asks):** LXXXIV Corps HQ after 12 June; 101st Canadian entries to 16 December versus Mourmelon on 1 December; C0048 `attack` event type; PL0195 and PL0222 sites; six relations still `change_undated` true (the three German pairs CR0040/41 Panzer Lehr, CR0049/50 II SS Panzer Corps, CR0053/54 12th SS); the 3 validator and 3 coordinate warnings above.
 

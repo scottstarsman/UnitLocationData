@@ -21982,6 +21982,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5661,
+     43.4714
+    ]
+   },
+   "properties": {
+    "claim_id": "C1714",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABTF-001D",
+    "unit_name": "1st Airborne Task Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-08-15",
+    "place_id": "PL0873",
+    "location_name": "Le Muy, Var",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "Dragoon: parachute and glider landings round Le Muy; drop badly scattered by fog; blocking the Argens valley",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R426;R692;R693;R002",
+    "source_locator": "R426: p. 77; R692: p. 104"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     43.4714
+    ]
+   },
+   "properties": {
+    "claim_id": "C1718",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-08-15",
+    "place_id": "PL0873",
+    "location_name": "Le Muy, Var",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "parachute drop west of Le Muy; no trooper lands on the assigned zones, battalions scattered from Trans to Lorgues",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R692;R693;R002",
+    "source_locator": "R692: p. 101"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     43.4714
+    ]
+   },
+   "properties": {
+    "claim_id": "C1729",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-509",
+    "unit_name": "509th Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-08-15",
+    "place_id": "PL0873",
+    "location_name": "Le Muy, Var",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "first sizable US unit to drop: about half lands on the zone south-east of Le Muy, part near Saint-Tropez",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R692;R697;R002",
+    "source_locator": "R692: p. 101"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     43.4714
+    ]
+   },
+   "properties": {
+    "claim_id": "C1733",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-551",
+    "unit_name": "551st Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-08-15",
+    "place_id": "PL0873",
+    "location_name": "Le Muy, Var",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "daylight drop into the 517th zone west of Le Muy at 1810, as planned",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R692;R693;R002",
+    "source_locator": "R692: p. 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -22098,6 +22262,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R001",
     "source_locator": "R670: p. 432"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4786,
+     43.4629
+    ]
+   },
+   "properties": {
+    "claim_id": "C1719",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-08-16",
+    "place_id": "PL0874",
+    "location_name": "Les Arcs, Var",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "defense",
+    "current_activity": "beats off the German attack from Vidauban at Les Arcs, then nearly surrounds the town by dusk",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R427;R694;R002",
+    "source_locator": "R427: p. 118, 119"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5661,
+     43.4714
+    ]
+   },
+   "properties": {
+    "claim_id": "C1730",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-509",
+    "unit_name": "509th Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-08-16",
+    "place_id": "PL0873",
+    "location_name": "Le Muy, Var (part of the battalion, with the 550th Glider Infantry Battalion)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "with the 550th Glider Infantry, attacks and takes Le Muy",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R427;R002",
+    "source_locator": "R427: p. 118"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4627,
+     43.5375
+    ]
+   },
+   "properties": {
+    "claim_id": "C1734",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-551",
+    "unit_name": "551st Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-08-16",
+    "place_id": "PL0875",
+    "location_name": "Draguignan, Var",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "clears most of Draguignan by 2300 and captures part of the LXII Corps staff",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R427;R698;R002",
+    "source_locator": "R427: p. 118"
    }
   },
   {
@@ -24237,6 +24524,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7926,
+     43.6505
+    ]
+   },
+   "properties": {
+    "claim_id": "C1720",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-08-22",
+    "place_id": "PL0877",
+    "location_name": "Saint-Cézaire-sur-Siagne, Alpes-Maritimes (Companies G and I)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "on the left of the task force, takes Saint-Cézaire after Fayence and Callian",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R694;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.8192,
      48.6453
     ]
@@ -25467,6 +25795,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.2684,
+     43.7009
+    ]
+   },
+   "properties": {
+    "claim_id": "C1715",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABTF-001D",
+    "unit_name": "1st Airborne Task Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-08-25",
+    "place_id": "PL0876",
+    "location_name": "Nice, Alpes-Maritimes",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "ordered to secure the Seventh Army east flank from the mouth of the Var north to the Larche Pass",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R420;R002",
+    "source_locator": "R420: p. 172"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.558,
      48.2364
     ]
@@ -26608,6 +26977,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 468"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2684,
+     43.7009
+    ]
+   },
+   "properties": {
+    "claim_id": "C1735",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-551",
+    "unit_name": "551st Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-08-29",
+    "place_id": "PL0876",
+    "location_name": "Nice, Alpes-Maritimes",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "enters Nice on the coastal right of the task force",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R698;R694;R002",
+    "source_locator": null
    }
   },
   {
@@ -29109,6 +29519,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R671;R002",
     "source_locator": "R668: p. 326; R671: p. 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3989,
+     43.8726
+    ]
+   },
+   "properties": {
+    "claim_id": "C1721",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-09-05",
+    "place_id": "PL0878",
+    "location_name": "Col de Braus, Alpes-Maritimes (Company D)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Maritime Alps: takes high ground near the Col de Braus; heavy fighting follows",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R694;R002",
+    "source_locator": null
    }
   },
   {
@@ -37193,6 +37644,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.4498,
+     43.8786
+    ]
+   },
+   "properties": {
+    "claim_id": "C1722",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-09-29",
+    "place_id": "PL0879",
+    "location_name": "Sospel, Alpes-Maritimes (a patrol of Company F)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "patrol pushes into Sospel; the Germans withdraw after 51 days",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R694;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8817,
      51.6269
     ]
@@ -39031,6 +39523,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R611;R001",
     "source_locator": "R611: table of 1944, October row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4498,
+     43.8786
+    ]
+   },
+   "properties": {
+    "claim_id": "C1716",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABTF-001D",
+    "unit_name": "1st Airborne Task Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-10-15",
+    "place_id": "PL0879",
+    "location_name": "Sospel, Alpes-Maritimes",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "with the 1st Special Service Force holds the southern third of the Franco-Italian Alpine front",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R647;R002",
+    "source_locator": "R647: p. 357"
    }
   },
   {
@@ -43753,6 +44286,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.3276,
+     49.3838
+    ]
+   },
+   "properties": {
+    "claim_id": "C1717",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABTF-001D",
+    "unit_name": "1st Airborne Task Force",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-11-23",
+    "place_id": "PL0880",
+    "location_name": "Soissons, Aisne",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "task force headquarters dissolved after the airborne units leave the Alpine front",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R677;R693;R002",
+    "source_locator": "R677: p. 581"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4667,
      50.7833
     ]
@@ -44771,6 +45345,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R654;R002",
     "source_locator": "R654: Einsatz"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.3276,
+     49.3838
+    ]
+   },
+   "properties": {
+    "claim_id": "C1723",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-12-10",
+    "place_id": "PL0880",
+    "location_name": "Soissons, Aisne",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "all elements quartered at Soissons under the XVIII Airborne Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R694;R002",
+    "source_locator": null
    }
   },
   {
@@ -47853,6 +48468,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.683,
+     50.367
+    ]
+   },
+   "properties": {
+    "claim_id": "C1736",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-551",
+    "unit_name": "551st Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-12-21",
+    "place_id": "PL0377",
+    "location_name": "Werbomont, Liège",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "arrives at Werbomont and enters the Battle of the Bulge with over 600 men",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R698;R001",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1846,
      48.6936
     ]
@@ -48017,6 +48673,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5101,
+     50.2856
+    ]
+   },
+   "properties": {
+    "claim_id": "C1724",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-12-22",
+    "place_id": "PL0881",
+    "location_name": "Soy, Luxembourg (Belgium) (1st Battalion only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "1st Battalion reaches Soy at twilight and is committed at once against the Soy-Hotton road",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R695;R694;R002",
+    "source_locator": "R695: p. 384"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -48140,6 +48837,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6761,
+     50.2931
+    ]
+   },
+   "properties": {
+    "claim_id": "C1731",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-509",
+    "unit_name": "509th Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-12-23",
+    "place_id": "PL0882",
+    "location_name": "Manhay, Luxembourg (Belgium)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "newly arrived with the 3rd Armored Division for its drive towards the Salmchâteau-La Roche road",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R695;R002",
+    "source_locator": "R695: p. 385, 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6816,
      49.9665
     ]
@@ -48256,6 +48994,88 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R351;R424;R425;R481;R001",
     "source_locator": "R424: p. 512; R425: p. 534"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6761,
+     50.2931
+    ]
+   },
+   "properties": {
+    "claim_id": "C1725",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1944-12-27",
+    "place_id": "PL0882",
+    "location_name": "Manhay, Luxembourg (Belgium) (3rd Battalion)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "3rd Battalion retakes Manhay in a night assault after an eight-battalion concentration",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R694;R002",
+    "source_locator": "R696: p. 598"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5937,
+     50.2846
+    ]
+   },
+   "properties": {
+    "claim_id": "C1732",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-509",
+    "unit_name": "509th Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1944-12-28",
+    "place_id": "PL0883",
+    "location_name": "Sadzot, Luxembourg (Belgium)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "envelops Sadzot from west and east and traps the Germans inside by 1100",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R697;R002",
+    "source_locator": "R696: p. 602"
    }
   },
   {
@@ -48871,6 +49691,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8703,
+     50.3727
+    ]
+   },
+   "properties": {
+    "claim_id": "C1726",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1945-01-03",
+    "place_id": "PL0884",
+    "location_name": "Trois-Ponts, Liège",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "on the 82nd Airborne left, attacks south along the Salm; 2nd Battalion takes Trois-Ponts",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R694;R002",
+    "source_locator": "R515: p. 32"
    }
   },
   {
@@ -49698,6 +50559,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.897,
+     50.3411
+    ]
+   },
+   "properties": {
+    "claim_id": "C1737",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-551",
+    "unit_name": "551st Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1945-01-07",
+    "place_id": "PL0888",
+    "location_name": "Rochelinval, Liège",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "about 250 men attack Rochelinval over open ground without artillery support; Joerg killed",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R698;R694;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4262,
      50.2052
     ]
@@ -50183,6 +51085,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R545;R002",
     "source_locator": "R545: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.931,
+     50.3942
+    ]
+   },
+   "properties": {
+    "claim_id": "C1727",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1945-01-13",
+    "place_id": "PL0885",
+    "location_name": "Stavelot, Liège",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "with the 106th Infantry Division, attacks south from the Ambleve near Stavelot towards Poteaux",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-13",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R515;R694;R002",
+    "source_locator": "R515: p. 45"
    }
   },
   {
@@ -52240,6 +53183,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8101,
+     50.5447
+    ]
+   },
+   "properties": {
+    "claim_id": "C1738",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PIB-551",
+    "unit_name": "551st Parachute Infantry Battalion",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Airborne",
+    "date": "1945-01-27",
+    "place_id": "PL0889",
+    "location_name": "Juslenville, Liège",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "inactivated at Juslenville; the 110 survivors absorbed into the 82nd Airborne Division",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R698;R002",
+    "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.1216,
      52.0907
     ]
@@ -52971,6 +53955,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R425;R685;R001",
     "source_locator": "R425: p. 551; R685: section History"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3936,
+     50.7238
+    ]
+   },
+   "properties": {
+    "claim_id": "C1728",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-PRCT-517",
+    "unit_name": "517th Parachute Regimental Combat Team",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Airborne",
+    "date": "1945-02-05",
+    "place_id": "PL0886",
+    "location_name": "Kleinhau, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "with the 78th Infantry Division, attacks south from Bergstein towards the Schmidt-Nideggen ridge",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R694;R002",
+    "source_locator": null
    }
   },
   {

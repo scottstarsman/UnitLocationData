@@ -9078,7 +9078,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -9698,7 +9698,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9758,7 +9758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Mecklenburg-Vorpommern",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9858,7 +9858,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Tirol",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9938,7 +9938,7 @@
     "precision_km": 3,
     "country": "CZ",
     "region": "Plzeň Region",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11618,7 +11618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 7
+    "claims_count": 9
    }
   },
   {
@@ -12178,7 +12178,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 8
+    "claims_count": 10
    }
   },
   {
@@ -12458,7 +12458,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -18658,7 +18658,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -18758,6 +18758,66 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Bas-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.0465,
+     47.7981
+    ]
+   },
+   "properties": {
+    "place_id": "PL0951",
+    "name": "Salzburg, Salzburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Salzburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1692,
+     47.583
+    ]
+   },
+   "properties": {
+    "place_id": "PL0952",
+    "name": "Kufstein, Tirol",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Tirol",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3911,
+     47.4464
+    ]
+   },
+   "properties": {
+    "place_id": "PL0953",
+    "name": "Kitzbühel, Tirol",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Tirol",
     "claims_count": 1
    }
   }

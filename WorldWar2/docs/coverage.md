@@ -36,11 +36,11 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 7 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 43 |
 | US | corps | 2 | 0 | 15 | 17 | 7 | 118 |
-| US | division | 0 | 0 | 61 | 61 | 25 | 477 |
+| US | division | 0 | 0 | 61 | 61 | 25 | 493 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **69** | **0** | **318** | **387** | **258** | **1886** |
+| **All** | | **69** | **0** | **318** | **387** | **258** | **1902** |
 
 ## Operations
 
@@ -49,29 +49,29 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 1035 |
+| campaign | 9 | 9 | 1051 |
 | operation | 33 | 33 | 434 |
 | battle | 20 | 20 | 341 |
 | phase | 4 | 4 | 76 |
-| **All** | **67** | **66** | **1886** |
+| **All** | **67** | **66** | **1902** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 938 places and 102 alias names for 1886 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 941 places and 102 alias names for 1902 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 834 | 1692 |
+| point | 837 | 1708 |
 | area | 86 | 174 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 535 | 1009 |
-| Germany (DE) | 217 | 504 |
+| France (FR) | 535 | 1011 |
+| Germany (DE) | 217 | 512 |
 | Netherlands (NL) | 83 | 184 |
 | Belgium (BE) | 77 | 138 |
 | Luxembourg (LU) | 9 | 27 |
-| Austria (AT) | 7 | 10 |
+| Austria (AT) | 10 | 15 |
 | United Kingdom (GB) | 5 | 8 |
-| Czechia (CZ) | 5 | 6 |
+| Czechia (CZ) | 5 | 7 |

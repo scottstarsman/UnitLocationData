@@ -58431,6 +58431,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "claim_id": "C1891",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-06",
+    "place_id": "PL0618",
+    "location_name": "Haguenau, Bas-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "ends its defensive stand on the Moder south of Haguenau",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R726;R002",
+    "source_locator": "R726: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3583,
      49.8531
     ]
@@ -58629,6 +58670,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R001",
     "source_locator": "R671: pp. 254, 255"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "claim_id": "C1892",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0618",
+    "location_name": "Haguenau, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "rests after leaving the Moder line",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R726;R002",
+    "source_locator": "R726: narrative"
    }
   },
   {
@@ -61581,6 +61663,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R541;R170;R002",
     "source_locator": "R541: p. 237; R170: table 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6916,
+     51.1982
+    ]
+   },
+   "properties": {
+    "claim_id": "C1896",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-083D",
+    "unit_name": "83rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL0945",
+    "location_name": "Neuss, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "defensive positions on the Rhine established; training renewed",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R727;R002",
+    "source_locator": "R727: narrative"
    }
   },
   {
@@ -64827,6 +64950,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C1893",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "returns to combat and crosses the Rhine",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R726;R002",
+    "source_locator": "R726: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -67697,6 +67861,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3611,
+     50.9221
+    ]
+   },
+   "properties": {
+    "claim_id": "C1888",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL0590",
+    "location_name": "Jülich, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "begins occupation duties at Jülich and Kaiserslautern",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R724;R002",
+    "source_locator": "R724: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6095,
      51.7266
     ]
@@ -69330,6 +69535,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 561"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4653,
+     51.5139
+    ]
+   },
+   "properties": {
+    "claim_id": "C1894",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL0460",
+    "location_name": "Dortmund, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "goes on occupation duty in the Dortmund area after the Ruhr pocket",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R726;R001",
+    "source_locator": "R726: narrative"
    }
   },
   {
@@ -74421,6 +74667,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.1508,
+     48.5397
+    ]
+   },
+   "properties": {
+    "claim_id": "C1902",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-014D",
+    "unit_name": "14th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-02",
+    "place_id": "PL0491",
+    "location_name": "Landshut, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "fires its last rounds",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-02",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R732;R001",
+    "source_locator": "R732: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4972,
      53.3244
     ]
@@ -75316,6 +75603,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R048;R568;R002",
     "source_locator": "R048: section Germany; R568: p. 442"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1692,
+     47.583
+    ]
+   },
+   "properties": {
+    "claim_id": "C1900",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-012D",
+    "unit_name": "12th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-04",
+    "place_id": "PL0952",
+    "location_name": "Kufstein, Tirol",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "relieved by the 36th Infantry Division after crossing the Inn; security duty",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R731;R002",
+    "source_locator": "R731: narrative"
    }
   },
   {
@@ -77202,6 +77530,334 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R027;R001",
     "source_locator": "R027: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.0465,
+     47.7981
+    ]
+   },
+   "properties": {
+    "claim_id": "C1887",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0951",
+    "location_name": "Salzburg, Salzburg",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "in the vicinity of Salzburg when the war in Europe ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R723;R002",
+    "source_locator": "R723: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3611,
+     50.9221
+    ]
+   },
+   "properties": {
+    "claim_id": "C1889",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0590",
+    "location_name": "Jülich, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on occupation duty at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R724;R002",
+    "source_locator": "R724: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3911,
+     47.4464
+    ]
+   },
+   "properties": {
+    "claim_id": "C1890",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0953",
+    "location_name": "Kitzbühel, Tirol",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "based at Kitzbühel at VE Day after relieving the 12th Armored Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R733;R731;R002",
+    "source_locator": "R733: narrative; R731: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4653,
+     51.5139
+    ]
+   },
+   "properties": {
+    "claim_id": "C1895",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0460",
+    "location_name": "Dortmund, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on occupation duty in the Dortmund area at the end of the war",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R726;R001",
+    "source_locator": "R726: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.6331,
+     49.7953
+    ]
+   },
+   "properties": {
+    "claim_id": "C1897",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0503",
+    "location_name": "Tachov, Czech Republic",
+    "location_represents": "approach_route",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "en route to Prague when the war in Europe ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R728;R001",
+    "source_locator": "R728: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4972,
+     53.3244
+    ]
+   },
+   "properties": {
+    "claim_id": "C1898",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0494",
+    "location_name": "Ludwigslust, Mecklenburg-Vorpommern",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "junction with the Russians in Mecklenburg as the war ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R729;R001",
+    "source_locator": "R729: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3933,
+     47.2683
+    ]
+   },
+   "properties": {
+    "claim_id": "C1899",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-010D",
+    "unit_name": "10th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0499",
+    "location_name": "Innsbruck, Tirol",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "reaches Innsbruck as the war in Europe ends",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R730;R001",
+    "source_locator": "R730: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1692,
+     47.583
+    ]
+   },
+   "properties": {
+    "claim_id": "C1901",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-012D",
+    "unit_name": "12th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0952",
+    "location_name": "Kufstein, Tirol",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on security duty at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R731;R002",
+    "source_locator": "R731: narrative"
    }
   },
   {

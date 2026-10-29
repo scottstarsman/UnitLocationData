@@ -47484,6 +47484,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C1656",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-05",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Strasbourg saved: the division takes over the defence of the Strasbourg sector under the II Corps",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R545;R686;R001",
+    "source_locator": "R545: pp. 517, 527; R686: pp. 312, 309"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3206,
      48.8579
     ]
@@ -64246,6 +64287,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R567;R662;R002",
     "source_locator": "R567: p. 404, 405; R662: text of the army page"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9912,
+     48.3985
+    ]
+   },
+   "properties": {
+    "claim_id": "C1657",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-001D",
+    "unit_name": "French 1st Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-23",
+    "place_id": "PL0851",
+    "location_name": "Ulm, Baden-Württemberg",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "A French incursion to Ulm on the Danube: the leading French elements reach the city ahead of the Americans",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R568;R686;R002",
+    "source_locator": "R568: p. 431; R686: pp. 482, 485-486"
    }
   },
   {

@@ -12238,7 +12238,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -16858,6 +16858,26 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9912,
+     48.3985
+    ]
+   },
+   "properties": {
+    "place_id": "PL0851",
+    "name": "Ulm, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
     "claims_count": 1
    }
   }

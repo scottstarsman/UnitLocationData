@@ -10758,7 +10758,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -16079,6 +16079,26 @@
     "country": "DE",
     "region": "Niedersachsen",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8162,
+     51.9592
+    ]
+   },
+   "properties": {
+    "place_id": "PL0812",
+    "name": "Driel, Overbetuwe, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 3
    }
   }
  ]

@@ -449,3 +449,16 @@ Open points for Scott, each with a recommendation: (2) `CR0850` and `CR0851` end
 ## Clean-up 2: late-war Western Front (29 October 2026)
 
 Done on the branch `cleanup-2-late-war-west`: audit `docs/review/cleanup2_audit.md`; 4 duplicate places merged; 1 operation exception; 1 confidence raise; resolved open questions removed from this file, `docs/HANDOFF.md` and `docs/review/verification_results.md`. Open points for Scott are listed at the end of the audit, each with a recommendation.
+
+## Brigades Batch 1: British and Canadian independent brigades (29 October 2026)
+
+Done on the branch `brigades-uk-can-1944-45`: 56 claims (`C1658` to `C1713`) for the twelve British and Canadian brigades of the approved list (rows 1 to 12), with corps and division relations; see `docs/changelog.md` for the rows, the inferred values and the corrections to the planning list. Batches 2 and 3 are not started.
+
+Open points for Scott, each with a recommendation:
+
+1. The 33rd Armoured Brigade appears in Ellis's Rhine-crossing order of battle "from 79th Armoured Division" (vol. II, p. 285), so its independent period ends early in 1945, but no source read dates the move. Recommendation: keep the rows as they are (last row January 1945, XXX Corps) and add an `organic` relation to the 79th Armoured Division only when a source dates it.
+2. The 34th Tank (later Armoured) Brigade: Wikipedia puts it in the 79th Armoured Division in February 1945, while Ellis lists the 34th Armoured Brigade as an independent brigade of XII Corps on 23 March 1945 (vol. II, p. 285). Recommendation: follow Ellis, the ranked source, and record no 79th Armoured Division relation; note the Wikipedia statement only.
+3. The 115th Infantry Brigade has one row, a representative point (0.3) from Ellis's order of battle; Wikipedia gives its corps (VIII, XII and I) without dates. Recommendation: accept, and add rows only if Scott wants a further source (for example the war diaries) for this brigade.
+4. Two new validator warnings, both explained: C1704 (4th Special Service Brigade at Westkapelle, parent II Canadian Corps while the 52nd Division attachment starts the same day, Stacey p. 412) and C1692 (56th Infantry Brigade at Tilly on 11 June; its return to the 50th Division is dated 12 June, Ellis p. 254). Recommendation: accept both as part of the baseline (22 warnings).
+5. The 6th Guards Armoured Brigade was "under United States Ninth Army for a few days" after the Rhine crossing (Ellis, vol. II, p. 305); no source read gives the days, so no relation is recorded. Recommendation: leave it unrecorded.
+6. The 31st Tank Brigade now has two VIII Corps relations for June to September 1944: the earlier `attached` relation (`CR0082`, from the Normandy batch, 26 June) and this batch's `assigned` relation (`CR0979`, from 27 June, by the batch convention that a brigade is assigned to its corps). The grid shows both. Recommendation: keep `CR0979` (the batch convention) and mark `CR0082` as superseded in a later clean-up, with a note; no data was changed here because `CR0082` belongs to an earlier batch.

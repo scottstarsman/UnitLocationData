@@ -2104,6 +2104,20 @@ CR0851,C1288,3,listed_by_higher_unit,1944-07-20,,,,,,,,Listed as under the corps
 CR0852,C1290,3,listed_by_higher_unit,1944-08-04,,00:00,,1944-08-09,,13:00,narrative,Passed to the corps at midnight 3-4 August and reverted to the 1st British Corps at 13:00 on 9 August,narrative
 CR0853,C1290,4,listed_by_higher_unit,1944-08-05,,06:00,,,,,,Came under General Simonds at 06:00 on 5 August,narrative
 CR0853,C1294,2,listed_by_higher_unit,,,,,1944-09-28,,,narrative,Passed under General Crocker on 28 September,narrative
+CR0853,C1547,1,observed_during,,,,,,,,,,
+CR0853,C1548,1,observed_during,,,,,,,,,,
+CR0853,C1549,1,observed_during,,,,,,,,,,
+CR0853,C1550,1,observed_during,,,,,,,,,,
+CR0853,C1551,1,observed_during,,,,,,,,,,
+CR0853,C1552,1,observed_during,,,,,,,,,,
+CR0853,C1553,1,observed_during,,,,,,,,,,
+CR0853,C1554,1,observed_during,,,,,,,,,,
+CR0853,C1555,1,observed_during,,,,,,,,,,
+CR0853,C1556,1,observed_during,,,,,,,,,,
+CR0853,C1557,1,observed_during,,,,,,,,,,
+CR0853,C1558,1,observed_during,,,,,,,,,,
+CR0853,C1559,1,observed_during,,,,,,,,,,
+CR0853,C1560,1,asserts_end,,,,,1944-09-28,,,,Passed under General Crocker (I Corps) on 28 September,narrative
 CR0854,C1326,2,asserts_start,1944-09-26,,,,,,,,Placed temporarily under the 1st British Corps on 26 September,narrative
 CR0854,C1327,2,asserts_end,,,,,1944-10-07,,00:00,narrative,Passed from the 1st British to the 2nd Canadian Corps at midnight of 6-7 October,narrative
 CR0855,C1332,1,asserts_start,1944-07-31,,,,,,,,"Division relieved the 3rd Division in the line under II Canadian Corps, the relief completed at 04:30 on 31 July",inferred
@@ -2235,7 +2249,13 @@ CR0890,C1464,1,observed_during,,,,,,,,,,
 CR0890,C1466,1,observed_during,,,,,,,,,,
 CR0891,C1467,1,observed_during,,,,,,,,,,
 CR0892,C1443,2,listed_by_higher_unit,,,,,,,,,"Belgian and Dutch contingents newly arrived from England, reinforcing the division",inferred
+CR0892,C1590,1,asserts_start,1944-08-13,,,,,,,,Taken under command of the 6th Airborne Division on 13 August (Stacey p. 265),narrative
+CR0892,C1591,1,observed_during,,,,,,,,,,
+CR0892,C1592,1,observed_during,,,,,,,,,,
+CR0892,C1593,1,observed_during,,,,,,,,,,
+CR0892,C1594,1,asserts_end,,,,,1944-08-27,,,,Placed under the 49th Division on 28 August (Wikipedia); the 6th Airborne Division command ends the day before,narrative
 CR0893,C1443,3,listed_by_higher_unit,,,,,,,,,"Belgian and Dutch contingents newly arrived from England, reinforcing the division",inferred
+CR0893,C1601,1,asserts_start,1944-08-13,,,,,,,,Taken under command of the 6th Airborne Division on 13 August (Stacey p. 265),narrative
 CR0894,C1474,1,observed_during,,,,,,,,,,
 CR0894,C1486,1,observed_during,,,,,,,,,,
 CR0894,C1489,1,observed_during,,,,,,,,,,
@@ -2303,3 +2323,85 @@ CR0920,C1482,1,observed_during,,,,,,,,,"the Ellis row of 18 January 1945 (C1482)
 CR0920,C1545,2,asserts_start,1944-11-30,,,,,,,,"Stacey, p. 430: the 49th (West Riding) took the place of the 50th Division at the end of November (read as 30 November); p. 433: reports dykes blown north of Elst on 2 December and is attacked on 4 December",narrative
 CR0921,C1546,1,asserts_start_and_end,1945-03-09,,,,1945-04-01,,,,"MacDonald, ch. 14, p. 298: ""As of 9 March"" the two airborne divisions are attached to the Second Army with the corps headquarters controlling them; Ellis, vol. II, p. 285: the corps is listed under Second Army; ch. 16, pp. 357, 362: the corps is relieved of its British units, which pass to the Second Army, and its headquarters shifts to the First Army (the end is read as 1 April)",narrative
 CR0922,C1546,3,asserts_start,1945-04-02,1945-04-05,,,,,,,"MacDonald, ch. 16, pp. 362, 365: the corps headquarters shifts to the First Army and attacks under it on 6 April; the start is read as 2 April and is no later than 5 April",narrative
+CR0923,C1560,2,asserts_start,1944-09-28,,,,,,,,Came under I Corps on 28 September,narrative
+CR0923,C1561,1,observed_during,,,,,,,,,,
+CR0923,C1562,1,observed_during,,,,,,,,,,
+CR0923,C1563,1,observed_during,,,,,,,,,,
+CR0923,C1564,1,observed_during,,,,,,,,,,
+CR0923,C1565,1,observed_during,,,,,,,,,,
+CR0923,C1566,1,observed_during,,,,,,,,,,
+CR0923,C1567,1,observed_during,,,,,,,,,,
+CR0924,C1568,1,asserts_start,1945-04-08,,,,,,,,Rejoined the 2nd Corps on 8 April,narrative
+CR0924,C1569,1,observed_during,,,,,,,,,,
+CR0924,C1570,1,observed_during,,,,,,,,,,
+CR0924,C1571,1,observed_during,,,,,,,,,,
+CR0924,C1572,1,observed_during,,,,,,,,,,
+CR0924,C1573,1,observed_during,,,,,,,,,,
+CR0924,C1574,1,observed_during,,,,,,,,,,
+CR0924,C1575,1,observed_during,,,,,,,,,,
+CR0924,C1576,1,observed_during,,,,,,,,,,
+CR0924,C1577,1,observed_during,,,,,,,,,,
+CR0924,C1578,1,observed_during,,,,,,,,,,
+CR0924,C1579,1,observed_during,,,,,,,,,,
+CR0925,C1547,2,asserts_start,1944-08-05,,06:00,,,,,,"Stacey p. 208: under Canadian command (II Canadian Corps, First Canadian Army) from 06:00 on 5 August; start inferred for the army from this",
+CR0925,C1548,2,observed_during,,,,,,,,,,
+CR0925,C1549,2,observed_during,,,,,,,,,,
+CR0925,C1550,2,observed_during,,,,,,,,,,
+CR0925,C1551,2,observed_during,,,,,,,,,,
+CR0925,C1552,2,observed_during,,,,,,,,,,
+CR0925,C1553,2,observed_during,,,,,,,,,,
+CR0925,C1554,2,observed_during,,,,,,,,,,
+CR0925,C1555,2,observed_during,,,,,,,,,,
+CR0925,C1556,2,observed_during,,,,,,,,,,
+CR0925,C1557,2,observed_during,,,,,,,,,,
+CR0925,C1558,2,observed_during,,,,,,,,,,
+CR0925,C1559,2,observed_during,,,,,,,,,,
+CR0925,C1560,3,observed_during,,,,,,,,,,
+CR0925,C1561,2,observed_during,,,,,,,,,,
+CR0925,C1562,2,observed_during,,,,,,,,,,
+CR0925,C1563,2,observed_during,,,,,,,,,,
+CR0925,C1564,2,observed_during,,,,,,,,,,
+CR0925,C1565,2,observed_during,,,,,,,,,,
+CR0925,C1566,2,observed_during,,,,,,,,,,
+CR0925,C1567,2,observed_during,,,,,,,,,,
+CR0925,C1568,2,observed_during,,,,,,,,,,
+CR0925,C1569,2,observed_during,,,,,,,,,,
+CR0925,C1570,2,observed_during,,,,,,,,,,
+CR0925,C1571,2,observed_during,,,,,,,,,,
+CR0925,C1572,2,observed_during,,,,,,,,,,
+CR0925,C1573,2,observed_during,,,,,,,,,,
+CR0925,C1574,2,observed_during,,,,,,,,,,
+CR0925,C1575,2,observed_during,,,,,,,,,,
+CR0925,C1576,2,observed_during,,,,,,,,,,
+CR0925,C1577,2,observed_during,,,,,,,,,,
+CR0925,C1578,2,observed_during,,,,,,,,,,
+CR0925,C1579,2,observed_during,,,,,,,,,,
+CR0926,C1580,1,asserts_start,1944-09-17,,,,,,,,Under command of the 1st Airborne Division for the operation (Stacey p. 313),narrative
+CR0926,C1581,1,observed_during,,,,,,,,,,
+CR0926,C1582,1,observed_during,,,,,,,,,,
+CR0926,C1583,1,observed_during,,,,,,,,,,
+CR0926,C1584,1,asserts_end,,,,,1944-09-26,,,,Ordered to march to Nijmegen after the withdrawal of the 1st Airborne Division; end of the attachment inferred,inferred
+CR0927,C1585,1,asserts_start,1944-08-30,,,,,,,,Joined 21st Army Group at Falaise on 30 August (Wikipedia),narrative
+CR0927,C1586,2,observed_during,,,,,,,,,,
+CR0927,C1587,2,observed_during,,,,,,,,,,
+CR0927,C1588,2,observed_during,,,,,,,,,,
+CR0927,C1589,1,observed_during,,,,,,,,,,
+CR0928,C1586,1,asserts_start,1944-10-09,,,,,,,,Took over at Dunkirk under First Canadian Army on 9 October (Stacey p. 368),narrative
+CR0928,C1587,1,observed_during,,,,,,,,,,
+CR0928,C1588,1,asserts_end,,,,,1944-11-27,,,,Passed under direct command of the 21st Army Group on 27 November (Stacey p. 368),narrative
+CR0929,C1590,2,asserts_start,1944-08-13,,,,,,,,"Under General Crerar from the start of the advance (Stacey pp. 265, 323)",narrative
+CR0929,C1591,2,observed_during,,,,,,,,,,
+CR0929,C1592,2,observed_during,,,,,,,,,,
+CR0929,C1593,2,observed_during,,,,,,,,,,
+CR0929,C1594,2,asserts_end,,,,,1944-09-01,,,,Transferred from General Crerar to the Second Army on 2 September (Wikipedia; Stacey p. 323); last row under First Canadian Army,narrative
+CR0930,C1595,1,asserts_start,1944-09-02,,,,,,,,Transferred to the Second Army on 2 September (Wikipedia; Stacey p. 323),narrative
+CR0930,C1596,1,observed_during,,,,,,,,,,
+CR0930,C1597,1,observed_during,,,,,,,,,,
+CR0930,C1598,1,observed_during,,,,,,,,,,
+CR0931,C1599,1,asserts_start,1945-04-12,,,,,,,,"Given to the 1st Canadian Armoured Brigade, which relieved the 5th Division on the island on 12 April (Stacey p. 570)",narrative
+CR0932,C1601,2,asserts_start_and_end,1944-08-13,,,,1944-09-01,,,,"Under General Crerar from 13 August until the transfer to the Second Army on 2 September (Stacey pp. 265, 323; Wikipedia)",narrative
+CR0933,C1602,1,asserts_start,1944-09-02,,,,,,,,Transferred with the Belgian brigade to the Second Army on 2 September (Wikipedia; Stacey p. 323),narrative
+CR0933,C1603,1,observed_during,,,,,,,,,,
+CR0933,C1604,1,observed_during,,,,,,,,,,
+CR0933,C1605,1,observed_during,,,,,,,,,,
+CR0933,C1606,1,observed_during,,,,,,,,,,

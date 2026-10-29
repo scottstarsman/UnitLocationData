@@ -640,7 +640,7 @@ def scenario_16_british_batch_1_jun_dec_1944():
     a = intervals('UK-ABN-001C', '1944-09-20')
     expect(s + ': I Airborne Corps, 20 Sep: First Allied Airborne Army is certain', sorted(a), [('ALL-FAAA-001A', 'assigned')])
     a = intervals('BEL-INF-001B', '1944-08-25')
-    expect(s + ': 1st Belgian Brigade, 25 Aug: attached to the 6th Airborne Division (Ellis I p. 448)', sorted(a), [('UK-ABN-006D', 'attached')])
+    expect(s + ': 1st Belgian Brigade, 25 Aug: attached to the 6th Airborne Division (Ellis I p. 448), under First Canadian Army (Stacey p. 323, added by the Allied contingents batch)', sorted(a), [('CAN-ARMY-001A', 'unspecified_subordination'), ('UK-ABN-006D', 'attached')])
     a = intervals('UK-INF-052D', '1944-11-05')
     expect(s + ': 52nd Division, 5 Nov (Walcheren): attached to the First Canadian Army (Ellis II pp. 84 and 114)', sorted(a), [('CAN-ARMY-001A', 'attached')])
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
@@ -729,8 +729,45 @@ def scenario_18_british_batch_2_followup():
     expect(s + ': C1546 is the last row of the follow-up (XVIII Airborne Corps, Varsity)', (c['unit_id'], c['date'], c['parent_unit_id']), ('US-ABN-018C', '1945-03-24', 'UK-ARMY-002A'))
 
 
+def scenario_19_allied_contingents_1944_45():
+    s = 'scenario 19, Allied contingents (June 1944 to May 1945)'
+    a = intervals('POL-ARM-001D', '1944-08-10')
+    expect(s + ': 1st Polish Armoured Division, 10 Aug: First Canadian Army and II Canadian Corps (Stacey p. 208)', sorted(a), [('CAN-ARMY-001A', 'unspecified_subordination'), ('CAN-COR-002C', 'attached')])
+    a = intervals('POL-ARM-001D', '1944-11-01')
+    expect(s + ': 1st Polish Armoured Division, 1 Nov: I Corps from 28 September (Stacey p. 367)', sorted(a), [('CAN-ARMY-001A', 'unspecified_subordination'), ('UK-COR-001C', 'attached')])
+    a = intervals('POL-ARM-001D', '1945-02-10')
+    expect(s + ': 1st Polish Armoured Division, 10 Feb 1945: I Corps is possible only (Netherlands District undated)', a[('UK-COR-001C', 'attached')][0], 'possible')
+    a = intervals('POL-ARM-001D', '1945-04-20')
+    expect(s + ': 1st Polish Armoured Division, 20 Apr 1945: back in II Canadian Corps from 8 April (Stacey p. 552)', sorted(a), [('CAN-ARMY-001A', 'unspecified_subordination'), ('CAN-COR-002C', 'attached')])
+    a = intervals('POL-ABN-001B', '1944-09-21')
+    expect(s + ': Polish Parachute Brigade, 21 Sep: under the 1st Airborne Division (Stacey p. 313)', sorted(a), [('UK-ABN-001D', 'attached')])
+    a = intervals('POL-ABN-001B', '1944-09-28')
+    expect(s + ': Polish Parachute Brigade, 28 Sep: no relation after Market Garden', sorted(a), [])
+    a = intervals('CZ-ARM-001B', '1944-10-20')
+    expect(s + ': Czechoslovak brigade, 20 Oct: First Canadian Army at Dunkirk (Stacey p. 368)', sorted(a), [('CAN-ARMY-001A', 'attached'), ('UK-AG-021G', 'unspecified_subordination')])
+    a = intervals('CZ-ARM-001B', '1944-12-15')
+    expect(s + ': Czechoslovak brigade, 15 Dec: 21st Army Group only from 27 November (Stacey p. 368)', sorted(a), [('UK-AG-021G', 'unspecified_subordination')])
+    a = intervals('BEL-INF-001B', '1944-08-29')
+    expect(s + ': Belgian brigade, 29 Aug: the 6th Airborne Division command ended on 27 August', sorted(a), [('CAN-ARMY-001A', 'unspecified_subordination')])
+    a = intervals('BEL-INF-001B', '1944-10-01')
+    expect(s + ': Belgian brigade, 1 Oct: Second Army from 2 September', sorted(a), [('UK-ARMY-002A', 'unspecified_subordination')])
+    a = intervals('BEL-INF-001B', '1945-04-18')
+    expect(s + ': Belgian brigade, 18 Apr 1945 (Opheusden): I Canadian Corps (Stacey p. 570)', sorted(a), [('CAN-COR-001C', 'unspecified_subordination')])
+    a = intervals('NL-INF-IRNEB', '1944-08-25')
+    expect(s + ': Princess Irene Brigade, 25 Aug: 6th Airborne Division possible only (end between 21 August and 1 September)', a[('UK-ABN-006D', 'attached')][0], 'possible')
+    a = intervals('NL-INF-IRNEB', '1944-10-24')
+    expect(s + ': Princess Irene Brigade, 24 Oct (Pheasant): Second Army', sorted(a), [('UK-ARMY-002A', 'unspecified_subordination')])
+    a = intervals('NL-INF-IRNEB', '1945-04-25')
+    expect(s + ': Princess Irene Brigade, 25 Apr 1945 (Hedel): no relation (Netherlands District is not a unit)', sorted(a), [])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1547']
+    expect(s + ': C1547 is the first row of the batch (1st Polish Armoured Division, Totalize)', (c['unit_id'], c['date']), ('POL-ARM-001D', '1944-08-08'))
+    c = claims['C1607']
+    expect(s + ': C1607 is the last row of the batch (Princess Irene Brigade at Hedel)', (c['unit_id'], c['date'], c['parent_unit_id']), ('NL-INF-IRNEB', '1945-04-25', ''))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45):
         before = len(FAILURES)
         try:
             fn()

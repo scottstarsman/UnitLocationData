@@ -27,6 +27,7 @@ Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 t
 | British 1 | 6 June - 31 December 1944 (21st Army Group, Second Army, I, VIII, XII, XXX and I Airborne Corps, British infantry, armoured and airborne divisions: Charnwood, Jupiter, Goodwood, Bluecoat, the Falaise pursuit, the Seine and Somme, Brussels and Antwerp, Le Havre, Market Garden, Walcheren, the Ardennes) | **Done on the branch `british-batch1-jun-dec-1944`** (from `main` `c89feaa`; pushed, not merged; compare it with `main`): 61 claims (`C1408` to `C1468`), 4 units activated, 21 relations (`CR0873` to `CR0893`), 27 places, 2 operations, 3 references (`R669` to `R671`); see the section below |
 | British 2 | 22 October 1944 - 4 May 1945 (Pheasant, Clipper, the Ardennes counter-attack, Blackcock, Veritable and Blockbuster, the Rhine crossing, the Elbe, Bremen, Hamburg, the Baltic and the surrender; XXX, XII and VIII Corps, Second Army, 21st Army Group and ten divisions) | **Done on the branch `british-batch2-jan-may-1945`** (from the British Batch 1 head `9b4c775`; pushed, not merged; compare it with `main`): 70 claims (`C1469` to `C1538`), 24 relations (`CR0894` to `CR0917`), 33 places, 5 operations, 1 reference (`R672`); see the section below |
 | British 2 follow-up | 17 September 1944 - 28 March 1945 (the units not covered: 50th, 3rd in January and February 1945, 43rd at Megchelen, 49th, 59th end, and the XVIII Airborne Corps under Second Army) | **Done as follow-up commits on the branch `british-batch2-jan-may-1945`** (pushed, not merged): 8 claims (`C1539` to `C1546`), 5 relations (`CR0918` to `CR0922`), 4 places, 2 references (`R673`, `R674`), an eighteenth semantic scenario; see the British Batch 2 follow-up section below |
+| Allied contingents | 8 August 1944 - 8 May 1945 (the 1st Polish Armoured Division, the Polish Parachute Brigade, the Czechoslovak Armoured Brigade Group, the Belgian (Piron) Brigade and the Princess Irene Brigade; Italy not covered) | **Done on the branch `allied-contingents-1944-45`** (from `main` `85c5c48`; pushed, not merged): 61 claims (`C1547` to `C1607`), 11 relations (`CR0923` to `CR0933`), 41 places, 2 references (`R675`, `R676`); see the section below |
 
 **Not covered in Batch 1 (known gaps):**
 - Regiments, combat commands, separate battalions, cavalry groups and corps troops. Batch 1 is division level and up.
@@ -375,6 +376,30 @@ Done: 65 claims, `C1343` to `C1407` (29 December 1944 to 8 May 1945; confidence 
 Not covered (stated scope): the positions of I Canadian Corps, the 1st Division and the 5th Armoured Division in Italy (a separate theater), the Polish 1st Armoured Division (under II Canadian Corps from 8 April), the Belgian, Dutch and Czech brigades, the 11th Armoured Division under II Canadian Corps, the 2nd Division under the 30th Corps in Veritable (no date), the independent and armoured brigades, combat units below division level, and the Panzer brigades.
 
 Open points for Scott, each with a recommendation: (1) `CR0850` and `CR0851` (7th Armoured and Guards Armoured under II Canadian Corps, from 20 July 1944) still have no sourced end; recommendation: close them in the British batch from the British divisional histories and the Second Army record. (2) The attachments of the Polish, Belgian, Dutch and Czech formations and of the 11th Armoured Division to the Canadian corps are not written; recommendation: do them in the British and Polish batch, where the formations get their own claims. (3) The headquarters places of the Army after 8 March 1945 and of II Canadian Corps are not stated by Stacey (the rows are representative, 0.3 to 0.5); recommendation: leave, or add the headquarters war diaries if a source is found. (4) `OP-VERITABLE` and `OP-BLOCKBUSTER` both end on 10 March 1945 following the casualty period of Stacey p. 522; recommendation: keep and mark as approximate in the next operations review. (5) Plunder has no operation row of its own; recommendation: add `OP-PLUNDER` with the British batch, since Second Army carried the crossing. (6) Only one source family (Stacey) was used, so no row is at 0.9; recommendation: a short second-family pass (CMH The Last Offensive, Nicholson, Wikipedia) on the 27 rows at 0.7 if Scott wants 0.9 rows. (7) The date of the `C1402` row (28 February) is inferred from the last days of February; recommendation: accept, or ask for a date from the divisional war diary. (8) The acting command of the Army from 22 to 29 April 1945 (General Simonds, Stacey) is not written because the commanders table is not approved. (9) The 243rd Division row of 12 September 1944 (Lexikon) is not added (not approved).
+
+## Allied contingents (29 October 2026, branch `allied-contingents-1944-45`)
+
+**Done:** 61 claims, `C1547` to `C1607`, dated 8 August 1944 to 8 May 1945. Confidence: 11 at 0.9, 26 at 0.7, 19 at 0.5 and 5 at 0.3. Sources: Stacey, Ellis and Wikipedia.
+
+| formation | claims | coverage |
+|---|---:|---|
+| 1st Polish Armoured Division | 33 | Totalize, Tractable and the Falaise Gap; the pursuit to Ghent and the Scheldt; Breda and Moerdijk; Kapelsche Veer; Coevorden to Wilhelmshaven |
+| Polish Parachute Brigade | 5 | Market Garden |
+| Czechoslovak Armoured Brigade Group | 5 | Falaise, then Dunkirk |
+| Belgian (Piron) Brigade | 10 | the Normandy coast to Honfleur; Brussels, Leopoldsburg and Thorn; Leuven; Opheusden |
+| Princess Irene Brigade | 8 | Graye-sur-Mer and the coast; Beringen, Borkel, Nijmegen and Grave; Broekhoven; Hedel |
+
+The batch also adds 11 relations, `CR0923` to `CR0933`. `CR0892` and `CR0893` are re-dated, with annotated notes.
+
+**Not covered:**
+- The Polish Parachute Brigade after September 1944.
+- The Polish division's units below division level.
+- The Belgian brigade under the 49th Division (28 August to 1 September 1944): no row dates it.
+- The Belgian and Dutch brigades from the winter of 1944-45 to March 1945.
+- Netherlands District, which is not a unit.
+- Italy.
+- The French formations.
+- The Czechoslovak token force with the US Third Army.
 
 ## British Batch 2 (28 October 2026, branch `british-batch2-jan-may-1945`)
 

@@ -462,3 +462,8 @@ Open points for Scott, each with a recommendation:
 4. Two new validator warnings, both explained: C1704 (4th Special Service Brigade at Westkapelle, parent II Canadian Corps while the 52nd Division attachment starts the same day, Stacey p. 412) and C1692 (56th Infantry Brigade at Tilly on 11 June; its return to the 50th Division is dated 12 June, Ellis p. 254). Recommendation: accept both as part of the baseline (22 warnings).
 5. The 6th Guards Armoured Brigade was "under United States Ninth Army for a few days" after the Rhine crossing (Ellis, vol. II, p. 305); no source read gives the days, so no relation is recorded. Recommendation: leave it unrecorded.
 6. The 31st Tank Brigade now has two VIII Corps relations for June to September 1944: the earlier `attached` relation (`CR0082`, from the Normandy batch, 26 June) and this batch's `assigned` relation (`CR0979`, from 27 June, by the batch convention that a brigade is assigned to its corps). The grid shows both. Recommendation: keep `CR0979` (the batch convention) and mark `CR0082` as superseded in a later clean-up, with a note; no data was changed here because `CR0082` belongs to an earlier batch.
+
+Scott accepted all six recommendations above on 29 October 2026 (Batch 1 merged as PR #36). Points 1 to 5 need no change.
+
+**Pending for the next clean-up:** retire `CR0082` (31st Tank Brigade, the `attached` VIII Corps link of 26 June 1944 that overlaps `CR0979`, the batch-convention `assigned` link), with a note giving the reason (point 6, accepted).
+

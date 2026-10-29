@@ -652,7 +652,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R565 | general | CMH Combat Chronicle: 82d Airborne Division (Wayback copy) | official_history | https://web.archive.org/web/2018/https://history.army.mil/html/forcestruc/cbtchron/cc/082abd.htm | list of assignments in the ETO, entry of 31 March 1945 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R557: p. 46; R337: assignment table (no XXII Corps row); R371: assignment table, row 29 Mar 45; R531: assignment table, row 31 Mar 45; R561: assignment table, row 30 Mar 45; R562: assignment table, row 28 Mar 45; R563: assignment table, row 31 Mar 45; R565: list of assignments in the ETO, entry of 31 March 1945 |
 
-## Part 2: command relations (20 of 956)
+## Part 2: command relations (20 of 957)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 

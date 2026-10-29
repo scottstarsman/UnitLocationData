@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cleanup-3-brigades: Clean-up 3 after the brigade batches (29 October 2026)
+
+Changes to existing records after Brigades Batches 1 to 3. Each item gives the old value, the new value and the reason; the same text is in the record.
+
+- **Item 1, `CR0082` retired (31st Tank Brigade, the `attached` VIII Corps link of 26 June 1944).**
+  - Old value: valid_to 1944-09-03, basis `inferred_from_next_claim`, end_unknown true.
+  - New value: valid_to 1944-06-30, basis `inferred`, end_unknown false.
+  - Its evidence row `C0164` now has the role `asserts_end`, with stated_effective_to 1944-06-30.
+  - Reason: the source gives the attachment only "for Operation Epsom", which ended on 30 June 1944. From then on, `CR0979` (`assigned`, from 27 June) is the VIII Corps link.
+  - The schema has no superseded status, so the relation is ended, not deleted.
+
 ## brigades-german-1944-45: Brigades Batch 3, German brigades, Kampfgruppen and fortress garrisons (29 October 2026)
 
 Batch 3 of the 35 approved brigades (rows 20 to 35 of the planning list): 53 claims (`C1759` to `C1811`) for 19 German units. Sources: the US Army official histories (Cole, The Lorraine Campaign; Cole, The Ardennes; MacDonald, The Siegfried Line Campaign; MacDonald, The Last Offensive; Blumenson, Breakout and Pursuit; Clarke and Smith, Riviera to the Rhine) and Wikipedia. Relations `CR1040` to `CR1063`; places `PL0907` to `PL0936`; references `R701` to `R717`.

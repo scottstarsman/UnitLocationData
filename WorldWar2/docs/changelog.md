@@ -9,7 +9,7 @@ Same unmerged branch `french-followup-1944-45` (head before the pass `a7113df`; 
 ### References and documents
 
 - **`R686`** (new): de Lattre, *The History of the French First Army* (1952); `source_type` `unit_history`, `source_family` `delattre_french_first_army` (its own family, independent of CMH and Wikipedia). Now cited by 6 claims.
-- **`docs/sources/delattre_notes.md`** (new folder `docs/sources/`): the research notes with a header (citation, method, known gaps). `docs/sources.md`: one row for the source.
+- **Research notes**: the notes taken from the book (with a header giving citation, method and known gaps) are kept privately by the project owner (Drive, WWII Unit Locations folder), not in this repository; they were briefly committed on this branch and removed in a later commit. `docs/sources.md`: one row for the source.
 
 ### Claims
 

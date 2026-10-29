@@ -98,6 +98,7 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 13. **Do not start unapproved work.** At handoff, Scott had *not* approved: Batch 4 or 5, a commanders table, `event_support` or `position` columns, F-004 or F-005 work, or sending the outside-review questions.
 14. **Anything external and irreversible** (sending, posting, deleting outside the box, merging, pushing main) needs his explicit approval for that specific action.
 15. **The dataset's own rules** (`CONTRIBUTING.md`): every row needs a source; conflicting claims become separate rows; never invent (`unknown` or blank); ids are never reused; vocabularies are closed; edit `data/` only, never hand-edit `build/`.
+16. **Notes or extracts from copyrighted sources stay private.** Research notes, quote extracts or transcriptions taken from copyrighted books and articles (for example the de Lattre notes) are kept only on the owner's working computer (outside the working copy, e.g. `/workspace/ww2-locations/sources/`) and in Scott's Google Drive, top-level `WWII Unit Locations` folder. They are **never committed** to the repository or pushed to the remote; `.gitignore` excludes `**/sources/*_notes.md`, `docs/sources/` and `private_notes/`. Claims cite such a source by reference id and page with a short quote only; public docs say the notes are kept privately and give no path to them.
 
 ---
 

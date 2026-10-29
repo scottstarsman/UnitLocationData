@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## rule-copyrighted-notes: notes from copyrighted sources stay private (29 October 2026)
+
+Docs and rules only, from `main` (`941b8b0`); no data changed. Scott agreed that notes or extracts from copyrighted sources are kept only on the owner's working computer and in his Google Drive (`WWII Unit Locations` folder) and are never committed to the remote repository.
+
+- **`docs/HANDOFF.md`**, section 3: new standing rule 16.
+- **`CONTRIBUTING.md`**, Rules: new rule 10.
+- **`.gitignore`**: new entries `**/sources/*_notes.md`, `docs/sources/` and `private_notes/`. No tracked file matches them (checked with `git ls-files` and `git check-ignore`).
+- No script changed: the sync tool replays only committed files, so ignored files cannot reach the publishing clone.
+
 ## french-1944-45: the French formations (29 October 2026)
 
 New branch `french-1944-45` from `main` (`b021dc2`). It covers the Western Front, 6 June 1944 to 8 May 1945, division level and above; Italy is not covered. Sources: the CMH histories (Blumenson, *Breakout and Pursuit*; Cole, *The Lorraine Campaign*; Clarke and Smith, *Riviera to the Rhine*; MacDonald, *The Last Offensive*) and the Wikipedia unit and battle articles. Five references are new: `R677` (Riviera to the Rhine ch. 30), `R678` (ch. 2), `R679` (ch. 12), `R680` (Wikipedia, 1st Armored Division (France)) and `R681` (Wikipedia, 5th Armored Division (France)). The eleven units were placeholders and are promoted by `promote_placeholders.py`. The nationality folder `data/claims/france` is new. De Lattre's history was not consulted in this pass and is not cited.

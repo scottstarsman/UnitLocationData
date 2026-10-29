@@ -467,6 +467,31 @@ Scott accepted all six recommendations above on 29 October 2026 (Batch 1 merged 
 
 **Pending for the next clean-up:** retire `CR0082` (31st Tank Brigade, the `attached` VIII Corps link of 26 June 1944 that overlaps `CR0979`, the batch-convention `assigned` link), with a note giving the reason (point 6, accepted).
 
+## Brigades Batch 3: German brigades, Kampfgruppen and fortress garrisons (29 October 2026)
+
+Batch 3 of the 35 approved brigades (rows 20 to 35 of the planning list): 53 claims (`C1759` to `C1811`) for 19 German units. Sources: the US Army official histories (Cole, The Lorraine Campaign; Cole, The Ardennes; MacDonald, The Siegfried Line Campaign; MacDonald, The Last Offensive; Blumenson, Breakout and Pursuit; Clarke and Smith, Riviera to the Rhine) and Wikipedia. Relations `CR1040` to `CR1063`; places `PL0907` to `PL0936`; references `R701` to `R717`.
+
+- **Panzer-Brigades 105, 106, 107, 108, 111, 112 and 113 (24 claims, C1759 to C1782).** The seven placeholders are now active, with formation dates (Wikipedia, List of German brigades).
+- **Panzer-Brigade 150, the Führer-Begleit and Führer-Grenadier Brigades, SS-Panzer-Brigade Westfalen (11 claims, C1783 to C1793).** `GER-PZB-150B` is active. `GER-PG-FUEBE` and `GER-PG-FUEGR` are active, with their echelon changed from division to brigade and their names showing the division from 26 January 1945. `GER-SSPZB-WESTF` is new.
+- **Kampfgruppen Chill, Peiper and von der Heydte (10 claims, C1794 to C1803).** These are new units. `GER-KG-PEIPER` is organic to the 1st SS Panzer Division (`CR1062`), and `GER-KG-CHILL` is organic to the 85th Infantry Division (`CR1061`). `GER-KG-HEYDTE` (Luftwaffe) has no relation.
+- **Fortress garrisons (8 claims, C1804 to C1811).** The garrisons are their own category, with echelon `other`: `GER-FEST-LORIENT` (under the XXV Corps, `CR1063`, until 10 May 1945), `GER-FEST-STNAZ`, `GER-FEST-DUNKIRK` and `GER-FEST-LAROCH` (no relation).
+- **Inferred values** are annotated in the rows: representative points (Albert Canal, Meuse-Escaut Canal), approximate dates (Woensdrecht 10 October, Dunkirk 9 September, La Rochelle 1 September, Führer-Grenadier reserve 31 December), relation starts at row dates, and relation ends taken from dissolution dates.
+- **Panzer-Brigade 103 has no claims.** It served on the Eastern Front only.
+- **Validator:** one new warning, `GER-PZB-108B` line 3 (an attachment to the 246th Volks Grenadier Division with no standing parent stated). It is explained in the row's Relationship note.
+- **Semantic tests:** scenario 25 is new. Organic relations are kept out of `build/command_relations.csv` by design, so the Peiper and Chill checks read the master table.
+
+Open points (each has a recommendation):
+1. **Panzer-Brigade 103 never served in the West** (Wikipedia: Eastern Front; Cole, ch. 12, has Army Group G only asking for it). Recommendation: drop it from the brigade list.
+2. **Garrison echelon:** `other` is used. Recommendation: keep `other`, rather than adding a new echelon value.
+3. **Garrison parents:** only Lorient has a relation (XXV Corps, Blumenson ch. 18). Recommendation: leave Dunkirk, Saint-Nazaire and La Rochelle without a relation until a source names their headquarters.
+4. **Saint-Nazaire surrender:** 10 May (MacDonald) or 11 May (Wikipedia, Bouvron ceremony). 10 May is used, and the other date is noted. Recommendation: keep it that way, with no conflict group.
+5. **La Rochelle surrender:** 8 May (Wikipedia) or 9 May (MacDonald, southwestern coast in general). 8 May is used. Recommendation: keep it.
+6. **Panzer-Brigade 108 in September:** LXXX Corps (MacDonald ch. 3) or II Parachute Corps (Wikipedia). The LXXX Corps is used. Recommendation: keep it.
+7. **Führer-Begleit and Führer-Grenadier:** each keeps one unit id across the change from brigade to division, with the echelon set to brigade. Recommendation: keep one id each.
+8. **Führer-Begleit under the II SS Panzer Corps at the Baraque de Fraiture (23 to 24 December):** no date is given, so there is no relation. Recommendation: leave it out.
+9. **Organic Kampfgruppen and `who_controls`:** the organic ties to the 1st SS Panzer Division and the 85th Infantry Division do not appear in the build view, by design. Recommendation: keep the design.
+10. **Westfalen and von der Heydte:** no command relation is stated in the sources read. Recommendation: leave them without one.
+
 ## Brigades Batch 2: US independent units and task forces (29 October 2026)
 
 Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the seven US units of the approved list (rows 13 to 19): the 1st Special Service Force, the 1st Airborne Task Force, the 517th Parachute Regimental Combat Team, Task Force Butler, Task Force A, and the 509th and 551st Parachute Infantry Battalions, with army, corps, division and task-force relations (`CR1023` to `CR1039`); see `docs/changelog.md` for the rows, the inferred values and the corrections. Batch 3 is not started.

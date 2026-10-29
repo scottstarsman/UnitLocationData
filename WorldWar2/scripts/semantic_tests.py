@@ -889,8 +889,39 @@ def scenario_24_brigades_batch_2_us():
     expect(s + ': C1758 is the last row of the batch (Task Force A, Douarnenez)', (c['unit_id'], c['date']), ('US-TDB-001B', '1944-09-20'))
 
 
+def scenario_25_brigades_batch_3_german():
+    """Brigades Batch 3 (German brigades, Kampfgruppen and fortress garrisons, 1944-45): Panzer-Brigade 106 moves from the First Army to the XIII SS Corps; Panzer-Brigade 112 has no relation after its dissolution on 23 September 1944; the Führer-Begleit Brigade moves from the LXVI Corps to the LVIII and then the XXXIX Panzer Corps; the Führer-Grenadier Brigade goes into the Seventh Army reserve; Kampfgruppe Peiper is organic to the 1st SS Panzer Division; Kampfgruppe Chill is organic to the 85th Infantry Division; Lorient is under the XXV Corps until its surrender on 10 May 1945."""
+    s = 'scenario 25, Brigades Batch 3 (German)'
+    a = intervals('GER-PZB-106B', '1944-09-30')
+    expect(s + ': Panzer-Brigade 106, 30 Sep: First Army and the XIII SS Corps', sorted(a), [('GER-ARMY-001A', 'operational_control'), ('GER-SSCOR-013C', 'assigned')])
+    a = intervals('GER-PZB-112B', '1944-09-30')
+    expect(s + ': Panzer-Brigade 112, 30 Sep: no relation after the dissolution of 23 September', sorted(a), [])
+    a = intervals('GER-PG-FUEBE', '1944-12-22')
+    expect(s + ': Führer-Begleit Brigade, 22 Dec (Rodt): LXVI Corps', sorted(a), [('GER-COR-066C', 'assigned')])
+    a = intervals('GER-PG-FUEBE', '1944-12-28')
+    expect(s + ': Führer-Begleit Brigade, 28 Dec (Herbaimont): XXXIX Panzer Corps', sorted(a), [('GER-PZ-039C', 'assigned')])
+    a = intervals('GER-PG-FUEGR', '1945-01-02')
+    expect(s + ': Führer-Grenadier Brigade, 2 Jan 1945: Seventh Army reserve', [x for x in sorted(a) if x[1] == 'reserve'], [('GER-ARMY-007A', 'reserve')])
+    # organic relations are kept out of build/command_relations.csv by design, so these two read the master table
+    master = common.read_dicts(os.path.join(os.path.dirname(common.BUILD_DIR), 'data', 'command_relations.csv'))[1]
+    org = lambda u: sorted((r['higher_unit_id'], r['relationship']) for r in master if r['subject_unit_id'] == u)
+    expect(s + ': Kampfgruppe Peiper is organic to the 1st SS Panzer Division and has no other relation', org('GER-KG-PEIPER'), [('GER-SSPZ-001D', 'organic')])
+    expect(s + ': Kampfgruppe Chill is organic to the 85th Infantry Division and has no other relation', org('GER-KG-CHILL'), [('GER-INF-085D', 'organic')])
+    a = intervals('GER-KG-PEIPER', '1944-12-19')
+    expect(s + ': Kampfgruppe Peiper, 19 Dec: no non-organic interval (the organic tie is not in the build)', sorted(a), [])
+    a = intervals('GER-FEST-LORIENT', '1945-01-01')
+    expect(s + ': Lorient, 1 Jan 1945: XXV Corps', sorted(a), [('GER-COR-025C', 'assigned')])
+    a = intervals('GER-FEST-LORIENT', '1945-05-11')
+    expect(s + ': Lorient, 11 May 1945: no relation after the surrender', sorted(a), [])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1759']
+    expect(s + ': C1759 is the first row of the batch (Panzer-Brigade 105, Büsbach)', (c['unit_id'], c['date']), ('GER-PZB-105B', '1944-09-15'))
+    c = claims['C1811']
+    expect(s + ': C1811 is the last row of the batch (La Rochelle surrender)', (c['unit_id'], c['date']), ('GER-FEST-LAROCH', '1945-05-08'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german):
         before = len(FAILURES)
         try:
             fn()

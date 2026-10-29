@@ -954,7 +954,7 @@ ROLLOUT_1 = ['US-INF-%03dD' % n for n in (1, 2, 3, 4, 5, 8, 9, 28, 29, 30, 35, 3
 
 
 def scenario_27_activity_rollout_1():
-    """Activity rollout, batch 1 (October 2026): 30 US divisions, existing rows only, no new claims."""
+    """Activity rollout, batch 1 (October 2026): 30 US divisions; existing rows, then the follow-up with new rest/refit, span-closure and 8 May 1945 closing claims (C1821-C1886)."""
     s = 'scenario 27'
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
@@ -969,8 +969,17 @@ def scenario_27_activity_rollout_1():
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_1]
     expect(s + ': batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
-    expect(s + ': batch 1 has 113 activity rows', len(rows), 113)
-    expect(s + ': batch 1 has 89 stated and 24 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (89, 24))
+    expect(s + ': batch 1 with its follow-up has 179 activity rows', len(rows), 179)
+    expect(s + ': batch 1 with its follow-up has 153 stated and 26 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (153, 26))
+    # follow-up (October 2026): new rest/refit rows, span closures and closing rows at 8 May 1945
+    expect(s + ': 1st Division, 10 Dec 1944: refitting in the rear (stated start, implicit end by the Ardennes start)', A('US-INF-001D', '1944-12-10'), ('refitting', 'certain', 'inferred', 0.3))
+    expect(s + ': 1st Division, 10 Jan 1945: in the line in the Ardennes (explicit end 28 Jan)', A('US-INF-001D', '1945-01-10'), ('in_line', 'certain', 'stated', 0.3))
+    expect(s + ': 1st Division, 10 Feb 1945: no answer after the explicit end', A('US-INF-001D', '1945-02-10'), None)
+    expect(s + ': 2nd Division, 22 Sep 1944: brief rest after Brest (stated span)', A('US-INF-002D', '1944-09-22'), ('refitting', 'certain', 'stated', 0.5))
+    expect(s + ': 4th Armored, 12 Dec 1944: relieved on 8 Dec, so no answer', A('US-ARM-004D', '1944-12-12'), None)
+    expect(s + ': 9th Division, 1 May 1945: holding the Mulde line (closed at 8 May)', A('US-INF-009D', '1945-05-01'), ('in_line', 'certain', 'stated', 0.5))
+    expect(s + ': 35th Division, 5 May 1945: occupation at Hanover', A('US-INF-035D', '1945-05-05'), ('garrison', 'certain', 'stated', 0.5))
+    expect(s + ': 7th Armored, 20 Nov 1944: rest near Maastricht, open span', A('US-ARM-007D', '1944-11-20'), ('refitting', 'possible', 'stated', 0.5))
 
 
 def main():

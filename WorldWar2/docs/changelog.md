@@ -13,6 +13,23 @@ Changes to existing records after Brigades Batches 1 to 3. Each item gives the o
   - Reason: the source gives the attachment only "for Operation Epsom", which ended on 30 June 1944. From then on, `CR0979` (`assigned`, from 27 June) is the VIII Corps link.
   - The schema has no superseded status, so the relation is ended, not deleted.
 
+- **Item 2: open-ended relations closed, each with basis `inferred` and the end stated on the unit's last row.**
+  - **Task Force A, `CR1038` (VIII Corps) and `CR1039` (8th Division):**
+    - Old value: valid_to blank, basis `open_at_last_claim`.
+    - New value: valid_to 1944-09-30, valid_to_earliest 1944-09-20.
+    - Evidence row: `C1758`.
+    - Reason: Blumenson (ch. 30, p. 653) says only that the task force "was soon dissolved" after Brest was handed over on 19 September, and that the VIII Corps moved to Belgium from 26 September.
+  - **509th, `CR1031` (3rd Armored Division):**
+    - Old value: valid_to blank, basis `open_at_last_claim`, end_unknown true.
+    - New value: valid_to 1945-01-31, valid_to_earliest 1945-01-01.
+    - Evidence row: `C1732`.
+    - Reason: Wikipedia says its service "concluded at the end of January 1945".
+  - **517th, `CR1025` (XVIII Airborne Corps) and `CR1029` (78th Division):**
+    - Old value: valid_to blank, basis `open_at_last_claim`.
+    - New value: valid_to 1945-02-14, valid_to_earliest 1945-02-05.
+    - Evidence row: `C1728`.
+    - Reason: Wikipedia says that on 15 February 1945 elements of the RCT were assigned to the 13th Airborne Division. No relation to the 13th Airborne Division is added, because no row covers it.
+
 ## brigades-german-1944-45: Brigades Batch 3, German brigades, Kampfgruppen and fortress garrisons (29 October 2026)
 
 Batch 3 of the 35 approved brigades (rows 20 to 35 of the planning list): 53 claims (`C1759` to `C1811`) for 19 German units. Sources: the US Army official histories (Cole, The Lorraine Campaign; Cole, The Ardennes; MacDonald, The Siegfried Line Campaign; MacDonald, The Last Offensive; Blumenson, Breakout and Pursuit; Clarke and Smith, Riviera to the Rhine) and Wikipedia. Relations `CR1040` to `CR1063`; places `PL0907` to `PL0936`; references `R701` to `R717`.

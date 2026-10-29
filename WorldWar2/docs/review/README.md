@@ -103,9 +103,9 @@ Placeholder units by nationality: Germany 64, Allied 3, US 2.
 
 Command relations by relationship: assigned 614, unspecified_subordination 205, attached 151, operational_control 37, unknown 28, organic 15, reserve 9, administrative_control 2, coordinating 1.
 
-Command relations: start basis claim_date 510, assignment_table 389, narrative 145, inferred 14, order 4; end basis inferred_from_next_claim 482, open_at_last_claim 393, assignment_table 111, narrative 61, inferred 15; `end_unknown` true 133; `change_undated` true 18; status preferred 1060, alternate 2.
+Command relations: start basis claim_date 510, assignment_table 389, narrative 145, inferred 14, order 4; end basis inferred_from_next_claim 482, open_at_last_claim 388, assignment_table 111, narrative 61, inferred 20; `end_unknown` true 130; `change_undated` true 18; status preferred 1060, alternate 2.
 
-Evidence roles of relation links: observed_during 1284, asserts_start 1074, asserts_start_and_end 151, listed_by_higher_unit 75, asserts_end 70.
+Evidence roles of relation links: observed_during 1281, asserts_start 1072, asserts_start_and_end 153, listed_by_higher_unit 75, asserts_end 73.
 
 References by source family: wikipedia 230, us_army_cmh 202, lexikon_wehrmacht_de 196, ww2byday_com 33, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, us_army_unit_history 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 230, reference_compilation 230, official_history 145, assignment_table 65, news_or_web_article 19, archive_document 8, monument_or_memorial 6, unit_history 4, gazetteer_geocoder 2, other 2.
 

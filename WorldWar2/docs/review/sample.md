@@ -360,7 +360,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Claim:** `subordinate_assignment` / `OP-CAMP-CENTRAL-EUROPE`; status preferred; confidence 0.7
 - **Activity:** Rejoins II Canadian Corps; ordered to take over the defence of Coevorden and thrust north through Dalen and Emmen
 - **Place:** Coevorden, Drenthe (`PL0717`, Drenthe, NL); point 52.6612, 6.7407; precision 5 km; point represents: objective; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Coevorden, Netherlands)
-- **Command relationships stated by the claim:** attached CAN-COR-002C from 1945-04-08; attached UK-COR-001C; unspecified_subordination CAN-ARMY-001A
+- **Command relationships stated by the claim:** attached CAN-COR-002C from 1945-04-08; unspecified_subordination CAN-ARMY-001A
 - **Notes:** Event date: 8 April 1945 (Stacey, pp. 552 and 561). Event definition: The division rejoins II Canadian Corps on 8 April and the corps orders General Maczek to take over the defence of Coevorden and thrust north through Dalen and Emmen; on the 9th the task is extended to bridging the Ems at Haren. Event support: two source families (Stacey, the Canadian official history and Ellis, the British official history). Stacey, The Victory Campaign, p. 552: "assisted by the 1st Polish Armoured Division, which rejoined the 2nd Corps on 8 April"; p. 561: "On 8 April Headquarters 2nd Canadian Corps ordered General Maczek to take over the defence of Coevorden and thrust northwards through Dalen and Emmen" [...]
 - **Sources cited** (the claim's own locator: R668: pp. 552, 561; R671: p. 313):
 
@@ -872,6 +872,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1565 (POL-ARM-001D, 1944-11-09) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 424] |
   | C1566 (POL-ARM-001D, 1944-12-30) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 452]; R671 https://archive.org/details/victory-west-vol-2 [p. 239] |
   | C1567 (POL-ARM-001D, 1945-01-07) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 452]; R671 https://archive.org/details/victory-west-vol-2 [p. 239] |
+  | C1568 (POL-ARM-001D, 1945-04-08) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [pp. 552, 561]; R671 https://archive.org/details/victory-west-vol-2 [p. 313] |
   | C1569 (POL-ARM-001D, 1945-04-10) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561] |
   | C1570 (POL-ARM-001D, 1945-04-13) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561] |
   | C1571 (POL-ARM-001D, 1945-04-14) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561] |
@@ -884,7 +885,6 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1578 (POL-ARM-001D, 1945-05-04) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 598] |
   | C1579 (POL-ARM-001D, 1945-05-06) | observed_during | - | - |  | R035 https://en.wikipedia.org/wiki/1st_Armoured_Division_(Poland) [section Germany] |
   | C1560 (POL-ARM-001D, 1944-09-28) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 367]; R671 https://archive.org/details/victory-west-vol-2 [p. 70] |
-  | C1568 (POL-ARM-001D, 1945-04-08) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [pp. 552, 561]; R671 https://archive.org/details/victory-west-vol-2 [p. 313] |
 
 ### R18. CR0927: 1st Czechoslovak Independent Armoured Brigade -> 21st Army Group (unspecified_subordination)
 

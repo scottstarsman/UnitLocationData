@@ -14758,7 +14758,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Brussels",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16099,6 +16099,166 @@
     "country": "NL",
     "region": "Gelderland",
     "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2037,
+     49.2788
+    ]
+   },
+   "properties": {
+    "place_id": "PL0813",
+    "name": "Merville-Franceville-Plage, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0747,
+     49.3595
+    ]
+   },
+   "properties": {
+    "place_id": "PL0814",
+    "name": "Deauville, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.2339,
+     49.4197
+    ]
+   },
+   "properties": {
+    "place_id": "PL0815",
+    "name": "Honfleur, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.4231,
+     49.4006
+    ]
+   },
+   "properties": {
+    "place_id": "PL0816",
+    "name": "Foulbec, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2627,
+     51.1193
+    ]
+   },
+   "properties": {
+    "place_id": "PL0817",
+    "name": "Leopoldsburg (Bourg-Léopold), Limburg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8403,
+     51.1611
+    ]
+   },
+   "properties": {
+    "place_id": "PL0818",
+    "name": "Thorn, Maasgouw, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7012,
+     50.8792
+    ]
+   },
+   "properties": {
+    "place_id": "PL0819",
+    "name": "Leuven (Louvain), Flemish Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "BE",
+    "region": "Flemish Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6374,
+     51.926
+    ]
+   },
+   "properties": {
+    "place_id": "PL0820",
+    "name": "Opheusden, Neder-Betuwe, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
    }
   }
  ]

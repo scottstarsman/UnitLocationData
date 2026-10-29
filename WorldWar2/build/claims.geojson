@@ -19563,6 +19563,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2037,
+     49.2788
+    ]
+   },
+   "properties": {
+    "claim_id": "C1590",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-13",
+    "place_id": "PL0813",
+    "location_name": "Merville-Franceville-Plage, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Taken under command of the 6th Airborne Division and deployed on the extreme left of the front, on the coast",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 265; R670: p. 448"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -3.3327,
      47.9138
     ]
@@ -21073,6 +21114,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R593;R404;R636;R001",
     "source_locator": "R593: p. 465; R404: p. 530-531; R636: section Krieg im Westen"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2037,
+     49.2788
+    ]
+   },
+   "properties": {
+    "claim_id": "C1591",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL0813",
+    "location_name": "Merville-Franceville-Plage, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Advance along the Channel coast with the 6th Airborne Division: liberates Merville-Franceville in the evening",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Normandy invasion"
    }
   },
   {
@@ -22720,6 +22802,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.0747,
+     49.3595
+    ]
+   },
+   "properties": {
+    "claim_id": "C1592",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL0814",
+    "location_name": "Deauville, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Advance along the coast: takes Villers-sur-Mer and Deauville",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Normandy invasion"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.8492,
      48.3274
     ]
@@ -23000,6 +23123,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 453"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.2339,
+     49.4197
+    ]
+   },
+   "properties": {
+    "claim_id": "C1593",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL0815",
+    "location_name": "Honfleur, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Advance along the coast: takes Trouville-sur-Mer and Honfleur at the mouth of the Seine",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Normandy invasion"
    }
   },
   {
@@ -24148,6 +24312,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 453"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.4231,
+     49.4006
+    ]
+   },
+   "properties": {
+    "claim_id": "C1594",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-26",
+    "place_id": "PL0816",
+    "location_name": "Foulbec, Eure",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Reunited with its armoured vehicles at Foulbec on the Seine estuary; placed under the 49th Division on 28 August",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-08-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Normandy invasion"
    }
   },
   {
@@ -26533,6 +26738,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "claim_id": "C1595",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL0745",
+    "location_name": "Brussels, Belgium",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Transferred to the Second Army: reaches the Belgian border on 3 September and Brussels on 4 September",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Belgium and the Netherlands"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.8662,
      50.4665
     ]
@@ -28535,6 +28781,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R671;R002",
     "source_locator": "R668: p. 327; R671: p. 15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2627,
+     51.1193
+    ]
+   },
+   "properties": {
+    "claim_id": "C1596",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-11",
+    "place_id": "PL0817",
+    "location_name": "Leopoldsburg (Bourg-Léopold), Limburg (BE)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Albert Canal bridgehead: helps to capture Leopoldsburg (Bourg-Leopold), freeing 900 political prisoners",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Belgium and the Netherlands"
    }
   },
   {
@@ -33906,6 +34193,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 39, 58, 97"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8403,
+     51.1611
+    ]
+   },
+   "properties": {
+    "claim_id": "C1597",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL0818",
+    "location_name": "Thorn, Maasgouw, Limburg (NL)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Reaches the Wessem canal and liberates Thorn, in Dutch Limburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Belgium and the Netherlands"
    }
   },
   {
@@ -39974,6 +40302,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R438;R002",
     "source_locator": "R438: p. 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7012,
+     50.8792
+    ]
+   },
+   "properties": {
+    "claim_id": "C1598",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL0819",
+    "location_name": "Leuven (Louvain), Flemish Brabant",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Relieved from the front on the Wessem canal and moved into reserve at Leuven to reorganise",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R002",
+    "source_locator": "R144: section Belgium and the Netherlands"
    }
   },
   {
@@ -60884,6 +61253,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 313"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6374,
+     51.926
+    ]
+   },
+   "properties": {
+    "claim_id": "C1599",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "BEL-INF-001B",
+    "unit_name": "1st Belgian Infantry Brigade (Brigade Piron)",
+    "nationality": "Belgium",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL0820",
+    "location_name": "Opheusden, Neder-Betuwe, Gelderland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "On the \"island\" under the 1st Canadian Armoured Brigade: Belgian infantry with Calgary tanks seize Opheusden",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 570, 581"
    }
   },
   {

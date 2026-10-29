@@ -34,7 +34,7 @@ Each row with a value also carries an `Activity:` sentence in `notes`, using the
 `scripts/activity.py` applies these reading rules (they are not validation errors):
 
 - **Implicit end.** A `start` of another value ends the open span on the day before. That end is reported as *inferred*.
-- **Open span.** After the last `start` with no later activity row, the value is carried forward as **possible**. This is the same convention as the `who_controls` staleness rule.
+- **Open span.** After the last `start` with no later activity row, the value is carried forward as **possible** for at most 30 days (`OPEN_HORIZON_DAYS`); after that there is no answer. The pilot grid showed why: without the horizon, the 4th Canadian Armoured Division read "refitting" until May 1945.
 - **Point precedence.** A `point` takes precedence over a span on its own date.
 - **After an end.** Once a span ends with an explicit `end`, there is no answer until the next activity row.
 
@@ -80,7 +80,7 @@ The pilot covers 13 units and 25 activity rows: 16 existing rows annotated and 9
 ## 7. Risks
 
 - **Silence read as idleness.** A blank activity could be read as "idle". The answer API returns nothing rather than a guess, and the docs say this.
-- **Open spans.** Open spans run on as "possible" until the next activity row. With sparse activity rows (the 1st Airborne, the 50th), this overstates how long a state lasted. The full rollout should close spans wherever a source allows it.
+- **Open spans.** Even with the 30-day horizon, an open span can overstate how long a state lasted: the 4th Canadian Armoured Division rejoined the pursuit within days of 4 September. The full rollout should close spans wherever a source allows it.
 - **Overlapping states.** The states overlap: a division can be in corps reserve and refitting at once (the 101st in December was both "resting, refitting" and the SHAEF strategic reserve). The pilot records the more specific state, refitting; reserve is used only when nothing more is said.
 - **Partial units.** A division with one brigade in the line and two at rest has no single value. The pilot uses the main body. Subordinate rows can carry their own value.
 - **Inferred values.** These are cheap to add and could crowd out stated ones. The 0.3 cap keeps them visibly weak, and `Activity:` notes must say why the value was inferred.

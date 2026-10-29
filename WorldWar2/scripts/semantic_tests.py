@@ -941,6 +941,7 @@ def scenario_26_activity_pilot():
     expect(s + ': 2e DB, 3 Jan 1945: XV Corps reserve (point)', A('FR-ARM-002D', '1945-01-03')[:3], ('reserve', 'certain', 'stated'))
     expect(s + ': 1st Polish Armoured, 1 Sep 1944: refitting after the gap, implicit end by the pursuit', A('POL-ARM-001D', '1944-09-01')[:3], ('refitting', 'certain', 'inferred'))
     expect(s + ': Polish Parachute Brigade, 23 Sep 1944: in the line at Driel', A('POL-ABN-001B', '1944-09-23')[:2], ('in_line', 'certain'))
+    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: the open refit span is not carried past 30 days', A('CAN-ARM-004D', '1944-12-01'), None)
     expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
     claims = common.load_all_claims()[1]
     tagged = sorted({c['unit_id'] for c in claims if c.get('activity_status')})

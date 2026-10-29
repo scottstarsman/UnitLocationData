@@ -6,7 +6,7 @@ Reads the activity columns of the claim files (activity_status, activity_basis, 
   - a span opened by a `start` row and closed by an `end` row of the same value (both days included) -> that value, status certain;
   - a span opened by a `start` row and closed implicitly by a later `start` row of another value -> that value up to the day before, status
     certain, end inferred;
-  - after an open `start` with no later activity row -> that value, status possible (carried forward, like the staleness rule of who_controls);
+  - after an open `start` with no later activity row -> that value, status possible, for at most OPEN_HORIZON_DAYS (30) days; then no answer;
   - a `point` row -> that value on its date only (it takes precedence over a span on that day);
   - otherwise no answer (blank activity is not 'idle').
 The confidence of an answer is the lowest confidence of the rows that bound it; if either row has activity_basis inferred, the confidence is
@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 
 INFERRED_CAP = 0.3
+OPEN_HORIZON_DAYS = 30   # an open span is carried forward as 'possible' for at most this many days after its start row
 
 
 def load():
@@ -76,6 +77,8 @@ def activity_at(unit, date, index=None):
             c, _s = _conf([last])
             return dict(activity=last['activity_status'], status='certain', support='inferred', confidence=min(c, INFERRED_CAP), from_claim=last['claim_id'],
                         to_claim=nxt['claim_id'], why='span %s ended implicitly by the %s start of %s (end inferred %s)' % (last['claim_id'], nxt['activity_status'], nxt['claim_id'], end))
+    if (datetime.date.fromisoformat(date) - datetime.date.fromisoformat(last['date'])).days > OPEN_HORIZON_DAYS:
+        return None
     c, s = _conf([last])
     return dict(activity=last['activity_status'], status='possible', support=s, confidence=c, from_claim=last['claim_id'], to_claim='',
                 why='open span from %s (%s), no later activity row' % (last['claim_id'], last['date']))

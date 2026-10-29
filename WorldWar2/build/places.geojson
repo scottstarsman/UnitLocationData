@@ -4678,7 +4678,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Champagne-Ardenne",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -5778,7 +5778,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Champagne-Ardenne",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -7578,7 +7578,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10918,7 +10918,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 13
+    "claims_count": 15
    }
   },
   {
@@ -15458,7 +15458,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -15598,7 +15598,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandie",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -18479,6 +18479,26 @@
     "country": "FR",
     "region": "Nouvelle-Aquitaine",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8332,
+     50.1054
+    ]
+   },
+   "properties": {
+    "place_id": "PL0937",
+    "name": "Abbeville, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Picardie",
+    "claims_count": 1
    }
   }
  ]

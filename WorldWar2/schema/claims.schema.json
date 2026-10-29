@@ -408,6 +408,24 @@
       "type": "string",
       "description": "Optional. How the coordinate relates in time and place to date (see vocabulary location_basis). Blank on rows not yet reviewed.",
       "vocabulary": "location_basis"
+    },
+    {
+      "name": "activity_status",
+      "type": "string",
+      "description": "Optional (pilot, October 2026). What the unit was doing in the sense of its availability: in_line, reserve, refitting, garrison or transit (see vocabulary activity_status). Blank on rows not reviewed for activity; blank is not a claim that the unit was idle. Set together with activity_basis and activity_span; see docs/activity_status_design.md.",
+      "vocabulary": "activity_status"
+    },
+    {
+      "name": "activity_basis",
+      "type": "string",
+      "description": "Required when activity_status is set: stated (a source on the row says it in words) or inferred (deduced from the row or neighbouring rows; read at a confidence of at most 0.3). See vocabulary activity_basis.",
+      "vocabulary": "activity_basis"
+    },
+    {
+      "name": "activity_span",
+      "type": "string",
+      "description": "Required when activity_status is set: start (the activity begins on this date and runs until an end row, or until a start row with another activity), end (the open activity of the same value ends on this date) or point (observed on this date only). See vocabulary activity_span.",
+      "vocabulary": "activity_span"
     }
   ]
 }

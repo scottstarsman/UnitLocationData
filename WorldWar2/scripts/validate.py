@@ -581,6 +581,38 @@ def check_note_labels(where, row, labels):
                 % (base + ':', ', '.join(sorted(labels))))
 
 
+ACTIVITY_COLS = ('activity_status', 'activity_basis', 'activity_span')
+
+
+def check_activity(claims):
+    """Activity pilot (docs/activity_status_design.md): the three activity columns are all blank or all set; a row with an activity has an
+    `Activity:` sentence in notes; per unit, in date order, an `end` row closes an open span of the same value started by an earlier `start` row."""
+    by_unit = {}
+    for c in claims:
+        vals = [c.get(k, '') for k in ACTIVITY_COLS]
+        where = '%s %s' % (c['unit_id'], c['claim_id'])
+        if any(vals) and not all(vals):
+            err(where, 'activity_status, activity_basis and activity_span are set together or not at all')
+            continue
+        if not vals[0]:
+            continue
+        if not re.search(r'(^|[.!?] )Activity: ', c['notes']):
+            err(where, 'a row with activity_status needs an `Activity:` sentence in notes (basis; old value, new value and reason for a changed row)')
+        by_unit.setdefault(c['unit_id'], []).append(c)
+    for unit, rows in by_unit.items():
+        rows.sort(key=lambda c: (c['date'], c['claim_id']))
+        open_status = None
+        for c in rows:
+            where = '%s %s' % (unit, c['claim_id'])
+            st, span = c['activity_status'], c['activity_span']
+            if span == 'start':
+                open_status = st
+            elif span == 'end':
+                if open_status != st:
+                    err(where, 'activity_span end of %r without an open %r span (open: %r); add the start row or use point' % (st, st, open_status))
+                open_status = None
+
+
 RETIRED_CLAIMS_CSV = os.path.join(common.ROOT, 'data', 'retired_claims.csv')
 RETIRED_CLAIMS_HEADER = ['claim_id', 'replaced_by_claim_id', 'reason']
 
@@ -1268,6 +1300,7 @@ def main():
     check_operations(all_rows, vocabs)
     check_references(all_rows)
     check_claim_ids(all_rows)
+    check_activity(all_rows)
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
 

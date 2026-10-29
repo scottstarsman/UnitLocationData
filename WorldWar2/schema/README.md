@@ -53,6 +53,9 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `notes` | string | yes | Free text: what the source says, caveats, source conflicts, change history. |  |
 | `location_date` | date | no | Optional. The date the coordinate is actually documented for, when it differs from `date` (for example the date of the command post list the point was taken from). Blank where the coordinate is for the claim's own date or the date is unknown (older rows not yet reviewed). | valid date |
 | `location_basis` | string | no | Optional. How the coordinate relates in time and place to `date` (see vocabulary `location_basis`). Blank on rows not yet reviewed. | vocabulary `location_basis` |
+| `activity_status` | string | no | Pilot (October 2026). in_line, reserve, refitting, garrison or transit (vocabulary `activity_status`); blank = not reviewed for activity. | vocabulary `activity_status` |
+| `activity_basis` | string | with activity_status | stated or inferred; an inferred activity is read at a confidence of at most 0.3. | vocabulary `activity_basis` |
+| `activity_span` | string | with activity_status | start, end or point (vocabulary `activity_span`); see `docs/activity_status_design.md`. | vocabulary `activity_span` |
 
 Primary key: `claim_id` (unique across the whole repository). Rows in each file are sorted by `date`, then `claim_id`.
 
@@ -373,6 +376,7 @@ Use short labelled sentences in `notes` so the sources for each kind of statemen
 | `Commander:` | The source for the commander named in the row (1). |
 | `Context:` | Background that explains the row but does not belong to it (1). |
 | `Later:` | What later sources or rows show about the same fact (1). |
+| `Activity:` | The basis of the row's `activity_status` and, for a change to an existing row, the old value, the new value and the reason (pilot, October 2026; see `docs/activity_status_design.md`). |
 | `Search:` | What was searched and not found, and where (1). |
 | `Review:` | A later review's correction of the row and what it changed (1). |
 

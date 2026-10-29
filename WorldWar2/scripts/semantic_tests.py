@@ -920,8 +920,37 @@ def scenario_25_brigades_batch_3_german():
     expect(s + ': C1811 is the last row of the batch (La Rochelle surrender)', (c['unit_id'], c['date']), ('GER-FEST-LAROCH', '1945-05-08'))
 
 
+def scenario_26_activity_pilot():
+    """Activity pilot (docs/activity_status_design.md): spans, implicit ends, points, open spans, the inferred cap, and blank units."""
+    s = 'scenario 26'
+    import activity
+    idx = activity.load()
+    A = lambda u, d: (lambda a: a and (a['activity'], a['status'], a['support'], a['confidence']))(activity.activity_at(u, d, idx))
+    expect(s + ': 101st Airborne, 1 Nov 1944: in the line on the Island (inferred start, end implicit)', A('US-ABN-101D', '1944-11-01'), ('in_line', 'certain', 'inferred', 0.3))
+    expect(s + ': 101st Airborne, 5 Dec 1944: refitting at Mourmelon (inferred start, stated end)', A('US-ABN-101D', '1944-12-05'), ('refitting', 'certain', 'inferred', 0.3))
+    expect(s + ': 101st Airborne, 18 Dec 1944: last day of the refit', A('US-ABN-101D', '1944-12-18')[0], 'refitting')
+    expect(s + ': 101st Airborne, 20 Dec 1944: no activity after the refit ends (blank is not idle)', A('US-ABN-101D', '1944-12-20'), None)
+    expect(s + ': 82nd Airborne, 17 Dec 1944: refitting near Reims (point)', A('US-ABN-082D', '1944-12-17'), ('refitting', 'certain', 'stated', 0.3))
+    expect(s + ': 82nd Airborne, 16 Dec 1944: the point does not spread to other days', A('US-ABN-082D', '1944-12-16'), None)
+    expect(s + ': 50th Division, 15 Nov 1944: in the line, stated, implicit end by the reserve start', A('UK-INF-050D', '1944-11-15'), ('in_line', 'certain', 'inferred', 0.3))
+    expect(s + ': 50th Division, 10 Dec 1944: reserve, open span', A('UK-INF-050D', '1944-12-10'), ('reserve', 'possible', 'stated', 0.3))
+    expect(s + ': 2nd Canadian Division, 3 Sep 1944: refitting at Dieppe, stated span', A('CAN-INF-002D', '1944-09-03'), ('refitting', 'certain', 'stated', 0.7))
+    expect(s + ': 9th SS Panzer, 10 Sep 1944: refitting (the end is inferred, so the answer is capped)', A('GER-SSPZ-009D', '1944-09-10'), ('refitting', 'certain', 'inferred', 0.3))
+    expect(s + ': Lorient, 1 Jan 1945: garrison, stated span', A('GER-FEST-LORIENT', '1945-01-01')[:3], ('garrison', 'certain', 'stated'))
+    expect(s + ': Lorient, 11 May 1945: no activity after the surrender', A('GER-FEST-LORIENT', '1945-05-11'), None)
+    expect(s + ': 2e DB, 3 Jan 1945: XV Corps reserve (point)', A('FR-ARM-002D', '1945-01-03')[:3], ('reserve', 'certain', 'stated'))
+    expect(s + ': 1st Polish Armoured, 1 Sep 1944: refitting after the gap, implicit end by the pursuit', A('POL-ARM-001D', '1944-09-01')[:3], ('refitting', 'certain', 'inferred'))
+    expect(s + ': Polish Parachute Brigade, 23 Sep 1944: in the line at Driel', A('POL-ABN-001B', '1944-09-23')[:2], ('in_line', 'certain'))
+    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: the open refit span is not carried past 30 days', A('CAN-ARM-004D', '1944-12-01'), None)
+    expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
+    claims = common.load_all_claims()[1]
+    tagged = sorted({c['unit_id'] for c in claims if c.get('activity_status')})
+    expect(s + ': the pilot covers 13 units', len(tagged), 13)
+    expect(s + ': the pilot has 25 activity rows', sum(1 for c in claims if c.get('activity_status')), 25)
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot):
         before = len(FAILURES)
         try:
             fn()

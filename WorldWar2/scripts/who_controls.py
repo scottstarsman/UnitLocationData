@@ -108,6 +108,13 @@ def main(argv):
         print('no relationship interval covers %s on %s in %s' % (who, date, os.path.relpath(path, common.ROOT)))
         return 1
     print('%s on %s%s' % (who, date, (' at ' + time) if time else ''))
+    try:   # activity pilot: printed only for units with activity rows (docs/activity_status_design.md)
+        import activity as _act
+        _a = _act.activity_at(who, date)
+        if _a:
+            print('activity: ' + _act.describe(_a))
+    except ImportError:
+        pass
     for r, st, why in sorted(hits, key=lambda h: (h[0]['relationship'], h[0]['higher_unit_id'])):
         label = ''
         if r['valid_to_basis'] == 'inferred_from_next_claim':

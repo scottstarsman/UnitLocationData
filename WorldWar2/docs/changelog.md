@@ -2,6 +2,34 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-status-pilot: activity status design and pilot (29 October 2026)
+
+Design note: `docs/activity_status_design.md`. Three optional claim columns are added: `activity_status` (in_line, reserve, refitting, garrison, transit), `activity_basis` (stated, inferred) and `activity_span` (start, end, point). There is also a new note label, `Activity:`, a validator check (`check_activity`), `scripts/activity.py`, an `activity:` line in `who_controls`, and semantic scenario 26 (18 expectations). All 318 claim files gained the three blank columns, and existing rows are not backfilled.
+
+Changes to existing rows (old value blank, new value as listed; the reason is in each row's `Activity:` note):
+
+- 101st Airborne: C0571 in_line start (inferred) and C0573 refitting start (inferred).
+- 82nd Airborne: C0217 in_line start (inferred).
+- 50th Division: C1540 in_line start (stated).
+- 2nd Canadian Division: C1324 refitting start (stated).
+- 9th SS Panzer Division: C0886 refitting start (stated) and C0887 refitting end (inferred).
+- 10th SS Panzer Division: C0888 refitting start (stated) and C0889 refitting end (inferred).
+- Lorient: C1804 garrison start (stated) and C1805 garrison end (stated).
+- 2e DB: C1647 reserve point (stated).
+- 3e DIA: C1656 in_line start (stated).
+- 1st Polish Armoured Division: C1553 in_line start (inferred).
+- Polish Parachute Brigade: C1581 in_line start (inferred) and C1584 in_line end (stated).
+
+New claims (C1812-C1820), each with a stated activity:
+
+- 101st Airborne: C1812 in_line end, 27 Nov 1944 (MacDonald and Stacey); C1813 refitting end, 18 Dec 1944 (Cole).
+- 82nd Airborne: C1814 in_line end, 13 Nov 1944 (MacDonald and Stacey); C1815 refitting point near Reims, 17 Dec 1944 (Cole).
+- 1st Airborne: C1816 refitting start at Nijmegen, 26 Sep 1944 (Ellis).
+- 50th Division: C1817 reserve start, about 30 Nov 1944 (Stacey).
+- 4th Canadian Armoured Division: C1818 refitting start east of Abbeville, 4 Sep 1944 (Stacey; new place PL0937).
+- 1st Polish Armoured Division: C1819 refitting start, about 23 Aug 1944 (Stacey).
+- 2nd Canadian Division: C1820 refitting end at Dieppe, 6 Sep 1944 (Stacey).
+
 ## cleanup-3-brigades: Clean-up 3 after the brigade batches (29 October 2026)
 
 Changes to existing records after Brigades Batches 1 to 3. Each item gives the old value, the new value and the reason; the same text is in the record.

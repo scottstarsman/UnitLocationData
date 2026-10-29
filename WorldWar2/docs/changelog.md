@@ -2,6 +2,40 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cleanup-3-brigades: Clean-up 3 after the brigade batches (29 October 2026)
+
+Changes to existing records after Brigades Batches 1 to 3. Each item gives the old value, the new value and the reason; the same text is in the record.
+
+- **Item 1, `CR0082` retired (31st Tank Brigade, the `attached` VIII Corps link of 26 June 1944).**
+  - Old value: valid_to 1944-09-03, basis `inferred_from_next_claim`, end_unknown true.
+  - New value: valid_to 1944-06-30, basis `inferred`, end_unknown false.
+  - Its evidence row `C0164` now has the role `asserts_end`, with stated_effective_to 1944-06-30.
+  - Reason: the source gives the attachment only "for Operation Epsom", which ended on 30 June 1944. From then on, `CR0979` (`assigned`, from 27 June) is the VIII Corps link.
+  - The schema has no superseded status, so the relation is ended, not deleted.
+
+- **Item 2: open-ended relations closed, each with basis `inferred` and the end stated on the unit's last row.**
+  - **Task Force A, `CR1038` (VIII Corps) and `CR1039` (8th Division):**
+    - Old value: valid_to blank, basis `open_at_last_claim`.
+    - New value: valid_to 1944-09-30, valid_to_earliest 1944-09-20.
+    - Evidence row: `C1758`.
+    - Reason: Blumenson (ch. 30, p. 653) says only that the task force "was soon dissolved" after Brest was handed over on 19 September, and that the VIII Corps moved to Belgium from 26 September.
+  - **509th, `CR1031` (3rd Armored Division):**
+    - Old value: valid_to blank, basis `open_at_last_claim`, end_unknown true.
+    - New value: valid_to 1945-01-31, valid_to_earliest 1945-01-01.
+    - Evidence row: `C1732`.
+    - Reason: Wikipedia says its service "concluded at the end of January 1945".
+  - **517th, `CR1025` (XVIII Airborne Corps) and `CR1029` (78th Division):**
+    - Old value: valid_to blank, basis `open_at_last_claim`.
+    - New value: valid_to 1945-02-14, valid_to_earliest 1945-02-05.
+    - Evidence row: `C1728`.
+    - Reason: Wikipedia says that on 15 February 1945 elements of the RCT were assigned to the 13th Airborne Division. No relation to the 13th Airborne Division is added, because no row covers it.
+
+- **Item 3: resolved roadmap items removed.**
+  - The open-point lists of Brigades Batches 1, 2 and 3 are removed from `docs/roadmap.md`. Old value: 6, 7 and 10 numbered points, plus the "Pending for the next clean-up" line. New value: one "Resolved" line per batch.
+  - Reason: Scott accepted all the recommendations (PRs #36, #37 and #38), and the two that needed data changes (`CR0082`, and the open Task Force A, 509th and 517th relations) are done in items 1 and 2.
+  - The roadmap now records that Panzer-Brigade 103 is dropped from the brigade list (Eastern Front only), leaving 34 brigades.
+  - The "not started" remarks for later batches are removed.
+
 ## brigades-german-1944-45: Brigades Batch 3, German brigades, Kampfgruppen and fortress garrisons (29 October 2026)
 
 Batch 3 of the 35 approved brigades (rows 20 to 35 of the planning list): 53 claims (`C1759` to `C1811`) for 19 German units. Sources: the US Army official histories (Cole, The Lorraine Campaign; Cole, The Ardennes; MacDonald, The Siegfried Line Campaign; MacDonald, The Last Offensive; Blumenson, Breakout and Pursuit; Clarke and Smith, Riviera to the Rhine) and Wikipedia. Relations `CR1040` to `CR1063`; places `PL0907` to `PL0936`; references `R701` to `R717`.

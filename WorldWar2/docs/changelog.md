@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## brigades-german-1944-45: Brigades Batch 3, German brigades, Kampfgruppen and fortress garrisons (29 October 2026)
+
+Batch 3 of the 35 approved brigades (rows 20 to 35 of the planning list): 53 claims (`C1759` to `C1811`) for 19 German units. Sources: the US Army official histories (Cole, The Lorraine Campaign; Cole, The Ardennes; MacDonald, The Siegfried Line Campaign; MacDonald, The Last Offensive; Blumenson, Breakout and Pursuit; Clarke and Smith, Riviera to the Rhine) and Wikipedia. Relations `CR1040` to `CR1063`; places `PL0907` to `PL0936`; references `R701` to `R717`.
+
+- **Panzer-Brigades 105, 106, 107, 108, 111, 112 and 113 (24 claims, C1759 to C1782).** The seven placeholders are now active, with formation dates (Wikipedia, List of German brigades).
+- **Panzer-Brigade 150, the Führer-Begleit and Führer-Grenadier Brigades, SS-Panzer-Brigade Westfalen (11 claims, C1783 to C1793).** `GER-PZB-150B` is active. `GER-PG-FUEBE` and `GER-PG-FUEGR` are active, with their echelon changed from division to brigade and their names showing the division from 26 January 1945. `GER-SSPZB-WESTF` is new.
+- **Kampfgruppen Chill, Peiper and von der Heydte (10 claims, C1794 to C1803).** These are new units. `GER-KG-PEIPER` is organic to the 1st SS Panzer Division (`CR1062`), and `GER-KG-CHILL` is organic to the 85th Infantry Division (`CR1061`). `GER-KG-HEYDTE` (Luftwaffe) has no relation.
+- **Fortress garrisons (8 claims, C1804 to C1811).** The garrisons are their own category, with echelon `other`: `GER-FEST-LORIENT` (under the XXV Corps, `CR1063`, until 10 May 1945), `GER-FEST-STNAZ`, `GER-FEST-DUNKIRK` and `GER-FEST-LAROCH` (no relation).
+- **Inferred values** are annotated in the rows: representative points (Albert Canal, Meuse-Escaut Canal), approximate dates (Woensdrecht 10 October, Dunkirk 9 September, La Rochelle 1 September, Führer-Grenadier reserve 31 December), relation starts at row dates, and relation ends taken from dissolution dates.
+- **Panzer-Brigade 103 has no claims.** It served on the Eastern Front only.
+- **Validator:** one new warning, `GER-PZB-108B` line 3 (an attachment to the 246th Volks Grenadier Division with no standing parent stated). It is explained in the row's Relationship note.
+- **Semantic tests:** scenario 25 is new. Organic relations are kept out of `build/command_relations.csv` by design, so the Peiper and Chill checks read the master table.
+
 ## brigades-us-1944-45: Brigades Batch 2, US independent brigades, regiments, battalions and task forces (29 October 2026)
 
 Batch 2 of the 35 approved brigades (rows 13 to 19 of the planning list). Each period and claim was checked against the US Army official histories (Clarke and Smith, Riviera to the Rhine; Blumenson, Breakout and Pursuit; Cole, The Ardennes; MacDonald, The Last Offensive) and Wikipedia; where the planning list (written from memory) differed from the sources, the sources were followed and the difference is listed below. Confidence follows the rubric (0.9 exact place and two source families; 0.7 exact place and one official history; 0.5 one family with an approximate place, or Wikipedia alone; 0.3 representative point or approximate date). Command relations: a corps or army headquarters is `assigned` (or `operational_control` where the source says "direct control"), a division or task force is `attached`; starts and ends not dated by a source are inferred from the row dates and annotated.

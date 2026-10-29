@@ -859,8 +859,38 @@ def scenario_23_brigades_batch_1_uk_can():
     expect(s + ': C1695 (56th Brigade joins the 49th Division) is a representative point at 0.3', (claims['C1695']['parent_unit_id'], claims['C1695']['confidence']), ('UK-INF-049D', '0.3'))
 
 
+def scenario_24_brigades_batch_2_us():
+    """Brigades Batch 2 (US independent units and task forces, 1944-45): the 1st Airborne Task Force is under the Seventh Army's direct (operational) control and has no relation after its dissolution on 23 November 1944; the 1st Special Service Force is under the Seventh Army on D-day and with the task force at the end of August; the 517th moves from the 1st Airborne Task Force to the XVIII Airborne Corps and is attached to the 82nd Airborne Division on 3 January 1945; the 551st has no relation after its inactivation on 27 January 1945; Task Force Butler is under VI Corps and, from 23 August 1944, the 36th Division; Task Force A is under VIII Corps."""
+    s = 'scenario 24, Brigades Batch 2 (US)'
+    a = intervals('US-ABTF-001D', '1944-08-15')
+    expect(s + ': 1st Airborne Task Force, 15 Aug: Seventh Army direct control (Clarke and Smith ch. 3 p. 45)', sorted(a), [('US-ARMY-007A', 'operational_control')])
+    a = intervals('US-ABTF-001D', '1944-12-01')
+    expect(s + ': 1st Airborne Task Force, 1 Dec: no relation after the dissolution of 23 November', sorted(a), [])
+    a = intervals('US-SSF-001B', '1944-08-15')
+    expect(s + ': 1st Special Service Force, 15 Aug (Levant): Seventh Army, not VI Corps', sorted(a), [('US-ARMY-007A', 'operational_control')])
+    a = intervals('US-SSF-001B', '1944-08-26')
+    expect(s + ': 1st Special Service Force, 26 Aug (Villeneuve-Loubet): the 1st Airborne Task Force', sorted(a), [('US-ABTF-001D', 'attached')])
+    a = intervals('US-PRCT-517', '1944-08-16')
+    expect(s + ': 517th, 16 Aug (Les Arcs): the 1st Airborne Task Force', sorted(a), [('US-ABTF-001D', 'attached')])
+    a = intervals('US-PRCT-517', '1945-01-03')
+    expect(s + ': 517th, 3 Jan 1945: XVIII Airborne Corps and the 82nd Airborne Division (MacDonald ch. 2)', sorted(a), [('US-ABN-018C', 'assigned'), ('US-ABN-082D', 'attached')])
+    a = intervals('US-PIB-551', '1945-02-15')
+    expect(s + ': 551st, 15 Feb 1945: no relation after the inactivation of 27 January', sorted(a), [])
+    a = intervals('US-TF-BUTLER', '1944-08-19')
+    expect(s + ': Task Force Butler, 19 Aug (Sisteron): VI Corps only', sorted(a), [('US-COR-006C', 'assigned')])
+    a = intervals('US-TF-BUTLER', '1944-08-26')
+    expect(s + ': Task Force Butler, 26 Aug (Condillac): VI Corps and the 36th Division', sorted(a), [('US-COR-006C', 'assigned'), ('US-INF-036D', 'attached')])
+    a = intervals('US-TDB-001B', '1944-08-08')
+    expect(s + ': Task Force A, 8 Aug (Morlaix): VIII Corps', sorted(a), [('US-COR-008C', 'assigned')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1714']
+    expect(s + ': C1714 is the first row of the batch (1st Airborne Task Force, Le Muy)', (c['unit_id'], c['date']), ('US-ABTF-001D', '1944-08-15'))
+    c = claims['C1758']
+    expect(s + ': C1758 is the last row of the batch (Task Force A, Douarnenez)', (c['unit_id'], c['date']), ('US-TDB-001B', '1944-09-20'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us):
         before = len(FAILURES)
         try:
             fn()

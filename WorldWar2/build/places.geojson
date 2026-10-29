@@ -2278,7 +2278,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -7558,7 +7558,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "North Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -8118,7 +8118,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -8218,7 +8218,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -8318,7 +8318,7 @@
     "precision_km": 1,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 13
+    "claims_count": 14
    }
   },
   {
@@ -10878,7 +10878,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11038,7 +11038,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12358,7 +12358,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -17878,6 +17878,306 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2162,
+     50.7558
+    ]
+   },
+   "properties": {
+    "place_id": "PL0907",
+    "name": "Büsbach, Stolberg, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8582,
+     49.3046
+    ]
+   },
+   "properties": {
+    "place_id": "PL0908",
+    "name": "Mairy-Mainville, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4373,
+     48.8376
+    ]
+   },
+   "properties": {
+    "place_id": "PL0909",
+    "name": "Forêt de Grémecey, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5095,
+     47.7889
+    ]
+   },
+   "properties": {
+    "place_id": "PL0910",
+    "name": "Ottmarsheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7055,
+     48.3181
+    ]
+   },
+   "properties": {
+    "place_id": "PL0911",
+    "name": "Rhinau, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4882,
+     51.5177
+    ]
+   },
+   "properties": {
+    "place_id": "PL0912",
+    "name": "Son, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.947,
+     51.5711
+    ]
+   },
+   "properties": {
+    "place_id": "PL0913",
+    "name": "Overloon, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1112,
+     50.8411
+    ]
+   },
+   "properties": {
+    "place_id": "PL0914",
+    "name": "Bardenberg, Würselen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1341,
+     50.8179
+    ]
+   },
+   "properties": {
+    "place_id": "PL0915",
+    "name": "Würselen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3933,
+     48.3131
+    ]
+   },
+   "properties": {
+    "place_id": "PL0916",
+    "name": "Châtel-sur-Moselle, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6572,
+     48.7363
+    ]
+   },
+   "properties": {
+    "place_id": "PL0917",
+    "name": "Ley, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6237,
+     48.5067
+    ]
+   },
+   "properties": {
+    "place_id": "PL0918",
+    "name": "Vathiménil, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6979,
+     48.5753
+    ]
+   },
+   "properties": {
+    "place_id": "PL0919",
+    "name": "Domjevin, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0557,
+     48.7342
+    ]
+   },
+   "properties": {
+    "place_id": "PL0920",
+    "name": "Sarrebourg, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6141,
+     48.7291
+    ]
+   },
+   "properties": {
+    "place_id": "PL0921",
+    "name": "Bezange-la-Petite, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
     "claims_count": 1
    }
   }

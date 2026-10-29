@@ -28624,6 +28624,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6414,
+     49.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C1760",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-01",
+    "place_id": "PL0417",
+    "location_name": "Trier, Rheinland-Pfalz",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "unloads its new Panther tanks in the Trier rail yards as the First Army reserve",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R411;R701;R001",
+    "source_locator": "R411: p. 47, 50"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3176,
      50.5424
     ]
@@ -30674,6 +30715,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8582,
+     49.3046
+    ]
+   },
+   "properties": {
+    "claim_id": "C1761",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-08",
+    "place_id": "PL0908",
+    "location_name": "Mairy-Mainville, Meurthe-et-Moselle",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "counterattack",
+    "current_activity": "spoiling attack on the US 90th Division west of Thionville is crushed around Mairy; left with nine tanks",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R414;R415;R702;R002",
+    "source_locator": "R414: p. 159; R415: p. 194"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6833,
      50.85
     ]
@@ -32478,6 +32560,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2231,
+     48.2225
+    ]
+   },
+   "properties": {
+    "claim_id": "C1776",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-112B",
+    "unit_name": "Panzer-Brigade 112",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-12",
+    "place_id": "PL0116",
+    "location_name": "Dompaire, Vosges",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "relocation",
+    "current_activity": "debouches from Epinal toward Vittel; the Panther column bivouacs near Dompaire",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R705;R001",
+    "source_locator": "R415: p. 199"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9013,
      49.0476
     ]
@@ -32594,6 +32717,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R415;R048;R001",
     "source_locator": "R415: pp. 185, 199; R048: section Alsace and Lorraine"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2231,
+     48.2225
+    ]
+   },
+   "properties": {
+    "claim_id": "C1777",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-112B",
+    "unit_name": "Panzer-Brigade 112",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-13",
+    "place_id": "PL0116",
+    "location_name": "Dompaire, Vosges",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "destruction",
+    "current_activity": "Panther column is destroyed around Dompaire by the French CCL and US fighter-bombers",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-13",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R705;R001",
+    "source_locator": "R415: p. 195"
    }
   },
   {
@@ -33585,6 +33749,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2162,
+     50.7558
+    ]
+   },
+   "properties": {
+    "claim_id": "C1759",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-105B",
+    "unit_name": "Panzer-Brigade 105",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-15",
+    "place_id": "PL0907",
+    "location_name": "Büsbach, Stolberg, North Rhine-Westphalia (four tanks)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "counterattack",
+    "current_activity": "four tanks sent to counterattack meet US Task Force Mills at Büsbach, Stolberg, and fall back",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R441;R701;R002",
+    "source_locator": "R441: p. 76"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.375,
      47.7178
     ]
@@ -33865,6 +34070,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R668;R002",
     "source_locator": "R671: p. 69; R668: pp. 365, 368"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3933,
+     48.3131
+    ]
+   },
+   "properties": {
+    "claim_id": "C1773",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-111B",
+    "unit_name": "Panzer-Brigade 111",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-16",
+    "place_id": "PL0916",
+    "location_name": "Châtel-sur-Moselle, Vosges (task force)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "counterattack",
+    "current_activity": "a task force of about fifteen Panthers and two infantry battalions strikes the French at Châtel in a pincers attack",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R701;R002",
+    "source_locator": "R415: p. 204"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0557,
+     48.7342
+    ]
+   },
+   "properties": {
+    "claim_id": "C1780",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-113B",
+    "unit_name": "Panzer-Brigade 113",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-16",
+    "place_id": "PL0920",
+    "location_name": "Sarrebourg, Moselle",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "arrives by rail at Sarrebourg, scattered by an air attack while entrained, and reorganizes for the march west",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R706;R002",
+    "source_locator": "R416: p. 218"
    }
   },
   {
@@ -35676,6 +35963,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4882,
+     51.5177
+    ]
+   },
+   "properties": {
+    "claim_id": "C1767",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-107B",
+    "unit_name": "Panzer-Brigade 107",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-19",
+    "place_id": "PL0912",
+    "location_name": "Son, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "strikes toward the Zon bridge to cut the Market Garden corridor; nearly takes the 101st Airborne command post",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R605;R606;R701;R002",
+    "source_locator": "R605: p. 153; R606: p. 187"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2879,
+     49.8775
+    ]
+   },
+   "properties": {
+    "claim_id": "C1770",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-108B",
+    "unit_name": "Panzer-Brigade 108",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-19",
+    "place_id": "PL0412",
+    "location_name": "Wallendorf, Rheinland-Pfalz",
+    "location_represents": "objective",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "attacks the 5th Armored Division bridgehead at Wallendorf, hitting CCR on Hill 407 from the north",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R639;R002",
+    "source_locator": "R639: p. 64"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6237,
+     48.5067
+    ]
+   },
+   "properties": {
+    "claim_id": "C1778",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-112B",
+    "unit_name": "Panzer-Brigade 112",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-19",
+    "place_id": "PL0918",
+    "location_name": "Vathiménil, Meurthe-et-Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "with the 21st Panzer Division, pulled back behind the Meurthe; detachments cut off by the French raid to Vathiménil",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R002",
+    "source_locator": "R415: p. 207"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6141,
+     48.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C1781",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-113B",
+    "unit_name": "Panzer-Brigade 113",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-19",
+    "place_id": "PL0921",
+    "location_name": "Bezange-la-Petite, Moselle",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "forty-two Panthers attack in fog from Bourdonnay via Ley toward Bezange and run into CCA, 4th Armored Division",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R704;R002",
+    "source_locator": "R416: p. 224"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -36120,6 +36571,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R408;R002",
     "source_locator": "R408: p. 652, 653"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6572,
+     48.7363
+    ]
+   },
+   "properties": {
+    "claim_id": "C1774",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-111B",
+    "unit_name": "Panzer-Brigade 111",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-20",
+    "place_id": "PL0917",
+    "location_name": "Ley, Moselle (reserve group (Captain Junghannis))",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "Mark IVs and 88s from its reserve block Abrams's CCA drive on Hill 260 and Hill 241 west of Ommeray, near Ley",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 228, 229"
    }
   },
   {
@@ -36742,6 +37234,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C1768",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-107B",
+    "unit_name": "Panzer-Brigade 107",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-22",
+    "place_id": "PL0384",
+    "location_name": "Veghel, Noord-Brabant, Netherlands",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "with Kampfgruppe Walther, cuts Hell's Highway between Veghel and Uden and turns toward Veghel",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R606;R002",
+    "source_locator": "R606: p. 189"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6483,
+     48.7624
+    ]
+   },
+   "properties": {
+    "claim_id": "C1775",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-111B",
+    "unit_name": "Panzer-Brigade 111",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-22",
+    "place_id": "PL0552",
+    "location_name": "Juvelize, Moselle",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "attack toward Juvelize and Moyenvic is shot to pieces; commander mortally wounded, seven tanks and eighty men left",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R704;R002",
+    "source_locator": "R416: p. 231, 232"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -37063,6 +37637,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R001",
     "source_locator": "R671: p. 42"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6979,
+     48.5753
+    ]
+   },
+   "properties": {
+    "claim_id": "C1779",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-112B",
+    "unit_name": "Panzer-Brigade 112",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-23",
+    "place_id": "PL0919",
+    "location_name": "Domjevin, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "brigade headquarters is chased out of Domjevin by a French patrol; one Panther and six Mark IVs left",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R701;R002",
+    "source_locator": "R416: p. 235, 234"
    }
   },
   {
@@ -38095,6 +38710,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4373,
+     48.8376
+    ]
+   },
+   "properties": {
+    "claim_id": "C1762",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-27",
+    "place_id": "PL0909",
+    "location_name": "Forêt de Grémecey, Moselle",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacks the US 35th Division with the 559th VG Division toward the Forêt de Grémecey",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R416;R002",
+    "source_locator": "R416: p. 246"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -38751,6 +39407,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.947,
+     51.5711
+    ]
+   },
+   "properties": {
+    "claim_id": "C1769",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-107B",
+    "unit_name": "Panzer-Brigade 107",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-01",
+    "place_id": "PL0913",
+    "location_name": "Overloon, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "with Kampfgruppe Walther, uses its tanks as antitank guns before Overloon against the US 7th Armored Division",
+    "operation_id": "OP-SIEGFRIED-LINE",
+    "operation": "Siegfried Line campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Siegfried Line",
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R703;R701;R002",
+    "source_locator": "R703: p. 236, 239"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6078,
+     48.6417
+    ]
+   },
+   "properties": {
+    "claim_id": "C1782",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-113B",
+    "unit_name": "Panzer-Brigade 113",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-01",
+    "place_id": "PL0561",
+    "location_name": "Forêt de Parroy, Meurthe-et-Moselle (two battalions of the 113th Panzer Grenadier Regiment)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "two battalions of its 113th Panzer Grenadier Regiment counterattack the 79th Division in the Forêt de Parroy",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R421;R706;R002",
+    "source_locator": "R421: p. 267"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -39202,6 +39940,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1112,
+     50.8411
+    ]
+   },
+   "properties": {
+    "claim_id": "C1771",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-108B",
+    "unit_name": "Panzer-Brigade 108",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-09",
+    "place_id": "PL0914",
+    "location_name": "Bardenberg, Würselen, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "with the 404th Regiment, drives through Euchen and Birk and breaks into Bardenberg after dark",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R431;R002",
+    "source_locator": "R431: p. 297, 298"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -39236,6 +40015,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R432;R001",
     "source_locator": "R432: p. 307"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1341,
+     50.8179
+    ]
+   },
+   "properties": {
+    "claim_id": "C1772",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-108B",
+    "unit_name": "Panzer-Brigade 108",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-12",
+    "place_id": "PL0915",
+    "location_name": "Würselen, North Rhine-Westphalia (remnants)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "counterattack",
+    "current_activity": "remnants join the 116th Panzer Division attack toward Bardenberg and Euchen from Würselen",
+    "operation_id": "OP-AACHEN",
+    "operation": "Battle of Aachen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Aachen",
+    "strength_status": "unknown",
+    "location_date": "1944-10-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R431;R701;R002",
+    "source_locator": "R431: p. 300"
    }
   },
   {
@@ -45106,6 +45926,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.5095,
+     47.7889
+    ]
+   },
+   "properties": {
+    "claim_id": "C1763",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-23",
+    "place_id": "PL0910",
+    "location_name": "Ottmarsheim, Haut-Rhin",
+    "location_represents": "approach_route",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "leading elements cross the Rhine at Chalampé, reach Ottmarsheim and fight the French 1st Armored Division",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R651;R002",
+    "source_locator": "R651: p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4667,
      50.7833
     ]
@@ -45550,6 +46411,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R638;R002",
     "source_locator": "R638: p. 23, 31"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6633,
+     48.4227
+    ]
+   },
+   "properties": {
+    "claim_id": "C1764",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-26",
+    "place_id": "PL0627",
+    "location_name": "Erstein, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "after the costly Mulhouse counterattack, redeploys north and takes up positions near Erstein",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R650;R002",
+    "source_locator": "R650: p. 454"
    }
   },
   {
@@ -51413,6 +52315,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R698;R694;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7055,
+     48.3181
+    ]
+   },
+   "properties": {
+    "claim_id": "C1765",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-07",
+    "place_id": "PL0911",
+    "location_name": "Rhinau, Bas-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "attacks near Rhinau with the 198th VG Division in Operation Sonnenwende under the LXIV Corps",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R545;R701;R002",
+    "source_locator": "R545: p. 513"
    }
   },
   {
@@ -58957,6 +59900,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 276, 277, 278, 279"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2442,
+     50.5792
+    ]
+   },
+   "properties": {
+    "claim_id": "C1766",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-03-09",
+    "place_id": "PL0422",
+    "location_name": "Ludendorff Bridge, Remagen (company-size remnant)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "a company-size remnant with 5 tanks is among the forces under Bayerlein opposite the Remagen bridgehead",
+    "operation_id": "OP-REMAGEN",
+    "operation": "Battle of Remagen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Remagen",
+    "strength_status": "unknown",
+    "location_date": "1945-03-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R540;R001",
+    "source_locator": "R540: p. 221"
    }
   },
   {

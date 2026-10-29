@@ -52240,6 +52240,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4351,
+     49.8408
+    ]
+   },
+   "properties": {
+    "claim_id": "C1903",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL0248",
+    "location_name": "Neufchâteau, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "withdraws to Neufchâteau for reorganization after the opening of the Ardennes offensive",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R724;R002",
+    "source_locator": "R724: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -53135,6 +53176,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R515;R001",
     "source_locator": "R515: p. 28"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3876,
+     49.162
+    ]
+   },
+   "properties": {
+    "claim_id": "C1904",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-02",
+    "place_id": "PL0361",
+    "location_name": "Verdun, Meuse",
+    "location_represents": "front_line_point",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "moves to a defensive position along the Meuse from Givet to Verdun, ending the reorganization at Neufchâteau",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R724;R001",
+    "source_locator": "R724: narrative"
    }
   },
   {

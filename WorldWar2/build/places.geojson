@@ -10938,7 +10938,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 12
+    "claims_count": 13
    }
   },
   {
@@ -16118,7 +16118,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandie",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -16253,6 +16253,126 @@
    "properties": {
     "place_id": "PL0820",
     "name": "Opheusden, Neder-Betuwe, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4719,
+     49.3294
+    ]
+   },
+   "properties": {
+    "place_id": "PL0821",
+    "name": "Graye-sur-Mer, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2267,
+     51.049
+    ]
+   },
+   "properties": {
+    "place_id": "PL0822",
+    "name": "Beringen, Limburg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4439,
+     51.2983
+    ]
+   },
+   "properties": {
+    "place_id": "PL0823",
+    "name": "Borkel, Valkenswaard, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7411,
+     51.7597
+    ]
+   },
+   "properties": {
+    "place_id": "PL0824",
+    "name": "Grave, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0944,
+     51.5486
+    ]
+   },
+   "properties": {
+    "place_id": "PL0825",
+    "name": "Broekhoven, Tilburg, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "place_id": "PL0826",
+    "name": "Hedel, Maasdriel, Gelderland",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

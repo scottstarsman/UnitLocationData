@@ -2,6 +2,34 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-1 second-source pass: 8 May 1945 rows and span closures from the CMH combat chronicles (29 October 2026)
+
+Scott accepted the follow-up's recommendations. This pass uses a second source family, the US Army Center of Military History combat chronicles (public domain; Wayback copies, R723, R724 and R726-R732), and for the 36th Division the Wikipedia article (R733). R725 was drafted and dropped before commit; it is unused and is not to be reused. 16 new claims (C1887-C1902), 3 new places (PL0951 Salzburg, PL0952 Kufstein, PL0953 Kitzbühel). Next ids: claim C1903, place PL0954, reference R734. No existing row changed.
+
+8 May 1945 rows added (8 divisions):
+
+- C1887 3rd Infantry Division: near Salzburg, in_line point (stated), 0.5.
+- C1889 28th Infantry Division: occupation at Jülich and Kaiserslautern, garrison end (stated), 0.3; it closes C1888, garrison start, 7 April 1945.
+- C1890 36th Infantry Division: Kitzbühel, in_line point (inferred: it relieved the 12th Armored on 4 May, and no source names its state on 8 May), 0.5; two source families.
+- C1895 79th Infantry Division: occupation in the Dortmund area, garrison end (stated), 0.3.
+- C1897 90th Infantry Division: en route to Prague, in_line point (stated), 0.3 (the place is inferred).
+- C1898 7th Armored Division: junction with the Russians in Mecklenburg, in_line point (stated), 0.3 (Ludwigslust is a representative point).
+- C1899 10th Armored Division: Innsbruck, in_line point (stated), 0.5.
+- C1901 12th Armored Division: security duty after its relief by the 36th Division, garrison end (stated), 0.3; it closes C1900, garrison start, 4 May 1945 (Kufstein, inferred).
+
+The 14th Armored already had an 8 May row (C1886). The follow-up report listed it as missing by mistake.
+
+Still without an 8 May row: the 29th, 30th and 83rd Infantry Divisions and the 2nd Armored Division. Their chronicles stop before VE Day (the 29th on the Elbe until 4 May, the 30th at an Elbe contact, the 83rd leaving the Barby bridgehead on 6 May, the 2nd Armored halted on the Elbe on 20 April).
+
+Spans closed (4):
+
+- 79th: C1891 in_line end, 6 February 1945, closes C1832 (13 November 1944). The pass also adds C1892 refitting start, 7 February (the rest in February and March); C1893 in_line start, 24 March; and C1894 garrison start, 14 April.
+- 83rd: C1896 in_line end, 2 March 1945, closes C1836.
+- 14th Armored: C1902 in_line end, 2 May 1945 ("fired its last rounds"), closes C1850.
+- 12th Armored: C1900 garrison start, 4 May 1945, ends C0630 implicitly.
+
+Still open (6): the 5th and 8th Infantry entries into combat, the 30th's Rhine crossing, the 4th Armored reserve of 10 January 1945, the 7th Armored rest from 8 November 1944 and the 10th Armored attack of 20 February 1945. They are deferred to the official-history pass. Tests: scenario 27 has 4 more expectations.
+
 ## activity-rollout-1 follow-up: rest and refit periods, span closures and closing rows (29 October 2026)
 
 Scott approved a follow-up pass on the same branch for the same 30 US divisions. 66 new claims (C1821-C1886), 13 new places (PL0938-PL0950; Blankenburg reuses PL0649), 5 new references (R718-R722, the Wikipedia articles of the 8th, 35th, 45th, 80th and 95th Infantry Divisions). Next ids: claim C1887, place PL0951, reference R723.

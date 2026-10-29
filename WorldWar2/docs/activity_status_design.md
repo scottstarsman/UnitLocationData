@@ -1,6 +1,6 @@
 # Activity status: design note and pilot (October 2026)
 
-Status: **rollout in progress** (batch 1 of about 6, October 2026: 30 US divisions, 179 rows with the follow-up; see section 9). The columns exist in every claim file, but only 43 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
+Status: **rollout in progress** (batch 1 of about 6, October 2026: 30 US divisions, 195 rows with the follow-up and the second-source pass; see section 9). The columns exist in every claim file, but only 43 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
 
 ## 1. Why
 
@@ -104,3 +104,4 @@ Scott approved the rollout on 29 October 2026, in branches of about 30 units, st
 |---|---|---|---|
 | 1 | 30 US divisions (20 infantry, 10 armored) | 113 (89 stated, 24 inferred) | existing rows only, mostly `in_line` points |
 | 1 follow-up | the same 30 | +66 new claims (64 stated, 2 inferred); 7 existing rows changed; 179 in all | rest and refit periods, span closures and closing rows at 8 May 1945, from the Wikipedia division articles (CMH combat chronicles); occupation is `garrison` |
+| 1 second source | the same 30 | +16 new claims; 195 in all | 8 May 1945 rows for 8 more divisions and 4 span closures from the CMH combat chronicles; 4 divisions still have no 8 May row |

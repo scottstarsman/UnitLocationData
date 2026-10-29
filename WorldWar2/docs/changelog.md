@@ -2,9 +2,46 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## french-followup-1944-45: de Lattre pass (29 October 2026)
+
+Same unmerged branch `french-followup-1944-45` (head before the pass `a7113df`; `main` `941b8b0` unchanged). Scott approved using Jean de Lattre de Tassigny, *The History of the French First Army* (trans. Malcolm Barnes, Allen & Unwin 1952; archive.org `bwb_W7-ADK-972`, borrow-only). The book was not re-opened: the evidence is the research notes taken from its OCR text layer (about 335 lines, printed pp. 63-525, gap at p. ~263), each line's quote and printed page. A fact only in a note's paraphrase columns, or only in a truncated or garbled quote, is not used on its own; OCR corrections are stated in the row (`ist` = `1st` in CR0959).
+
+### References and documents
+
+- **`R686`** (new): de Lattre, *The History of the French First Army* (1952); `source_type` `unit_history`, `source_family` `delattre_french_first_army` (its own family, independent of CMH and Wikipedia). Now cited by 6 claims.
+- **`docs/sources/delattre_notes.md`** (new folder `docs/sources/`): the research notes with a header (citation, method, known gaps). `docs/sources.md`: one row for the source.
+
+### Claims
+
+- **`C1644`** (9th DIC, Toulon, 27 Aug 1944): confidence 0.5 to 0.7. de Lattre pp. 76, 92-93 (St Catherine fort 24 August; Ruhfus's surrender 27 August 23.45) is a second family for the city and day; the quotes do not name the division, the note line does.
+- **`C1633`** (5th DB, Stuttgart, 21 Apr 1945): confidence 0.3 to 0.5. de Lattre pp. 460-466: "when Stuttgart fell on the 21st April"; the link of the day to the division rests on the note's summary, so not 0.7.
+- **`C1634`** (1st DFL, Lyon, 3 Sep 1944): de Lattre p. 128 (08.00 on 3 September) added as a third family; stays 0.7 (city, 10 km).
+- **`C1637`** (2nd DIM, Belfort, 25 Nov 1944): de Lattre pp. 243-246 has Belfort fallen by 21 November; Review note, date and 0.7 unchanged (not reconciled).
+- **`C1656`** (new, 3rd DIA, Strasbourg, 5 Jan 1945, 0.5): de Lattre pp. 309, 312 and CMH *Riviera to the Rhine* pp. 517, 522, 527.
+- **`C1657`** (new, 1st DB, Ulm, 23 Apr 1945, 0.3): CMH *The Last Offensive* p. 431 (French platoon outside Ulm at dusk) and de Lattre pp. 482, 485-486; attribution to the division inferred. New place `PL0851` Ulm (OpenStreetMap).
+
+### Relations
+
+- **`CR0942`** (2DB under the Seventh Army) and **`CR0953`** (2DB attached to the XV Corps): old valid_to 1945-01-27 (inferred); new 1945-01-18 (narrative): de Lattre p. 373, the combat commands Dio and Langlade left the US Seventh Army on 19 January (two of three; the third is not dated). `C1647` now `asserts_end` for both.
+- **`CR0938`** (2DB under the First French Army): old valid_from 1945-01-28 (claim date); new 1945-01-19 (narrative, de Lattre p. 373; `C1648` `asserts_start`).
+- **`CR0958`** (new): 2DB under the French II Corps from 28 January 1945 (claim date; CMH p. 548 "leaving Leclerc's 2d Armored Division with de Monsabert"; de Lattre pp. 352, 369-371); end unknown, earliest 8 February. No XXI Corps relation was added: the note for p. 394 puts the XXI Corps link only in its paraphrase and the CMH history leaves the division with the II Corps.
+- **`CR0959`** (new): 14th DI under the I Corps from 23 April 1945 (de Lattre p. 479, OCR `ist` read as `1st`; p. 459), asserted by `C1655`.
+- **`CR0960`** (new): 3rd DIA under the II Corps from 5 January 1945 (de Lattre p. 312); end inferred (day before the Speyer row), unknown.
+- Notes only: `CR0951`, `CR0952` confirmed (de Lattre pp. 286, 287, 302); `CR0946` confirmed (p. 123); `CR0947` kept at 1 September, with de Lattre's "officially went into action at midnight of the 5th to 6th September" (p. 134) recorded; `CR0956` consistent (p. 406).
+
+### Not done (and why)
+
+- 1st DFL to the Alps army detachment from 1 March 1945 (p. 405-406): no 1st DFL row after January 1945 and no place in the quote, so no relation can be anchored; open point.
+- I Corps activation (5/6 Sep) and II Corps (1 Sep) as claims: no place in the quotes; recorded on `CR0947`/`CR0946` instead.
+- 5th DB at Bregenz (p. 498), 4th DMM at Rouffach (pp. 388-390), 9th DIC at Ensisheim (p. 396), 2nd DB near Obernai-Marlenheim in January (p. 331): the quote does not name the place or the unit, or is truncated.
+
+### Scripts
+
+- **`scripts/semantic_tests.py`:** scenario 21 updated (2DB on 1 Feb 1945 now also under the II Corps; C1633 now 0.5); new scenario 22, de Lattre pass: 7 expectations. Total: 344 expectations hold. No other script changed.
+
 ## french-followup-1944-45: French follow-up refinements (29 October 2026)
 
-New branch `french-followup-1944-45` from `main` (`941b8b0`, after PR #32 merged the French batch). Scott on 29 October 2026 accepted the seven recommendations of the French batch and asked for a follow-up. Sources: the CMH histories (*Riviera to the Rhine*, *The Last Offensive*), English Wikipedia and, new, French Wikipedia (`R682` to `R684`, same source family as English Wikipedia). De Lattre's *History of the French First Army* (1952) was not read: the archive.org copies are borrow-only (no public text), so no value rests on it.
+New branch `french-followup-1944-45` from `main` (`941b8b0`, after PR #32 merged the French batch). Scott on 29 October 2026 accepted the seven recommendations of the French batch and asked for a follow-up. Sources: the CMH histories (*Riviera to the Rhine*, *The Last Offensive*), English Wikipedia and, new, French Wikipedia (`R682` to `R684`, same source family as English Wikipedia). De Lattre's *History of the French First Army* (1952) was not read in this first pass (the archive.org copies are borrow-only); it was used later from research notes, see the de Lattre pass above.
 
 ### Claims and relations
 

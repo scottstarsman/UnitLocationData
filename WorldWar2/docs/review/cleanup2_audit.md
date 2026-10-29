@@ -104,6 +104,16 @@ No claim is outside the theatre box (42-56 N, 5 W-17 E) and none is more than 5 
 4. **The 231 date gaps.** Recommendation: leave them; fill the longest US gaps (autumn 1944 to April 1945) only in a later batch, on your go.
 5. **The nine open conflict groups.** Recommendation: leave them until a new source (for example the OKW war diary volume for 1944-45) is read.
 
+## Scott's answers (29 October 2026)
+
+Scott accepted all five recommendations.
+
+1. Done: the 84 rows were read one by one; 6 were raised from 0.5 to 0.7 because both families give the day and the place (82nd Airborne Division landing and command post at Groesbeek, 17 September 1944; 4th Armored Division at Utah Beach, 11 July 1944; VI Corps Dragoon assault, 15 August 1944; VIII Corps at Avranches, 30 July 1944; 89th Infantry Division at St. Goar, 26 March 1945). The other 78 are unchanged.
+2. Done: the four British front-line rows keep their points and now carry a precision of 10 km; validator warnings fall from 24 to 20.
+3. Accepted, no change: the 7th Armored Division command post of 13 August 1944 stays as the CMH list gives it.
+4. Accepted, no change: the 231 date gaps are left for a later batch.
+5. Accepted, no change: the 9 open conflict groups wait for a new source.
+
 ## Appendix: date gaps over 30 days (divisions)
 
 | division | last row | next row | days |

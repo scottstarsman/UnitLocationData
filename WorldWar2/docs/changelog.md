@@ -14,6 +14,8 @@ Scott accepted the five recommendations of the audit (`docs/review/cleanup2_audi
   - VIII Corps, Avranches entered, 30 July 1944 (CMH Breakout and Pursuit and Wikipedia).
   - 89th Infantry Division, Rhine crossing at St. Goar, 26 March 1945 (CMH Last Offensive and Wikipedia).
   The other 78 were left: in them the second family gives only the unit, the army, the operation dates, a month, or a span, or the place rests on one family, or the date or place is inferred or representative.
+- **Four British front-line rows widened to 10 km (open question 2).** Old precision, new precision 10 km; the point Ellis names, the place, the date and the confidence are unchanged; the reason is that each row is a corps or army front, and the sector rule is 10 km. Each record has a Review sentence. Rows: Second Army, 29 August 1944 (Vernon, 5 km); XII Corps, 4 August 1944 (Évrecy, 5 km); XXX Corps, 21 August 1944 (the Touques near Gacé, 3 km) and 17 September 1944 (Valkenswaard, 3 km). Validator warnings fall from 24 to 20.
+- **Open questions 3 to 5 accepted with no change:** the 7th Armored Division command post of 13 August 1944 stays as the CMH list gives it; the 231 date gaps are left for a later batch; the 9 open conflict groups wait for a new source. Recorded in the audit report.
 
 ## cleanup-2-late-war-west: clean-up of the late-war Western Front data (29 October 2026)
 

@@ -2,6 +2,60 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## allied-contingents-1944-45: the Polish, Czechoslovak, Belgian and Dutch formations (29 October 2026)
+
+New branch `allied-contingents-1944-45` from `main` (`85c5c48`). It covers the Western Front, 6 June 1944 to 8 May 1945; Italy is not covered. Sources: Stacey (`R668`), Ellis vol. I and II (`R670`, `R671`) and the Wikipedia unit articles (`R035`, `R037`, `R039`, `R144`), plus two new Wikipedia references: `R675` (Siege of Dunkirk) and `R676` (Princess Irene Brigade). The five units were placeholders and are promoted by `promote_placeholders.py`. Four nationality folders are new under `data/claims/`: `poland`, `czechoslovakia`, `belgium` and `netherlands`. Each unit is its own commit.
+
+### Claims and relations
+
+- **1st Polish Armoured Division:**
+  - 33 claims, `C1547` to `C1579`: 8 August 1944 (Totalize) to 6 May 1945 (Wilhelmshaven). Confidence: 9 at 0.9, 20 at 0.7, 3 at 0.5, 1 at 0.3.
+  - Uses the existing `CR0853` (II Canadian Corps, 5 August to 28 September 1944).
+  - New `CR0923`: I Corps, attached, from 28 September 1944. The end is inferred: 7 April 1945, earliest 7 January. Ellis p. 285 has the division under Netherlands District, which is not a unit, and the change is undated.
+  - New `CR0924`: II Canadian Corps, attached, from 8 April 1945, open.
+  - New `CR0925`: First Canadian Army, unspecified_subordination, from 5 August 1944 (inferred from Stacey p. 208), open (Stacey p. 618: it left Crerar's command in mid-June 1945).
+- **Polish Parachute Brigade:**
+  - 5 claims, `C1580` to `C1584`: Oosterbeek (gliders), Driel (the drop, the crossing and Horrocks's visit) and Nijmegen, 19 to 26 September 1944.
+  - New `CR0926`: 1st Airborne Division, attached, 17 to 26 September 1944. Stacey p. 313 says "under command". Both dates are inferred.
+- **Czechoslovak Armoured Brigade Group:**
+  - 5 claims, `C1585` to `C1589`: Falaise on 30 August 1944, then Dunkirk on 9 October, 28 October, 27 November and 8 May 1945. The last date is representative, at 0.3.
+  - New `CR0927`: 21st Army Group, unspecified_subordination, from 30 August 1944, open.
+  - New `CR0928`: First Canadian Army, attached, 9 October to 27 November 1944 (Stacey p. 368).
+- **Belgian (Piron) Brigade:**
+  - 10 claims, `C1590` to `C1599`: the Normandy coast, Brussels, Leopoldsburg, Thorn and Leuven, then Opheusden on 18 April 1945.
+  - New `CR0929`: First Canadian Army, 13 August to 1 September 1944 (Stacey pp. 265 and 323).
+  - New `CR0930`: Second Army, from 2 September 1944. The end is inferred: 11 April 1945, earliest 17 November 1944.
+  - New `CR0931`: I Canadian Corps, from 12 April 1945 (Stacey p. 570; the 1st Canadian Armoured Brigade is not a unit). All three are unspecified_subordination.
+- **Princess Irene (Royal Netherlands) Brigade:**
+  - 8 claims, `C1600` to `C1607`: Graye-sur-Mer, the Normandy coast, Beringen, Borkel, the Nijmegen bridges (Ellis II p. 42, note), Grave, Broekhoven (Pheasant) and Hedel on 25 April 1945, which has no parent.
+  - New `CR0932`: First Canadian Army, 13 August to 1 September 1944.
+  - New `CR0933`: Second Army, 2 September 1944 to 1 March 1945. The end is inferred: Wikipedia says Netherlands District took over on 2 March.
+- **Places:** 41 new, `PL0786` to `PL0826`.
+- **Claim totals:** 61 (Poland 38, Belgium 10, Netherlands 8, Czechoslovakia 5). Confidence: 11 at 0.9, 26 at 0.7, 19 at 0.5, 5 at 0.3.
+
+### Changed values on existing records (old value, new value, reason; each also in the record note)
+
+- **`CR0892` (Belgian brigade under the 6th Airborne Division):**
+  - Start: 1944-08-21 (basis claim_date, inferred) changed to 1944-08-13 (basis narrative), because Stacey p. 265 dates the start.
+  - End: blank (open_at_last_claim, end unknown) changed to 1944-08-27 (narrative, end_unknown false), because Wikipedia places the brigade under the 49th Division on 28 August.
+  - date_basis: inferred changed to narrative.
+- **`CR0893` (Princess Irene Brigade under the 6th Airborne Division):**
+  - Start: 1944-08-21 changed to 1944-08-13 (narrative), because Stacey p. 265 dates the start.
+  - End: blank (open) changed to 1944-09-01 (inferred_from_next_claim, earliest 1944-08-21), because the brigade passed to the Second Army on 2 September.
+- **`C1568`:** its link to `CR0923` was removed, because the row (8 April 1945) is after that relation's inferred end. The semantic staleness test caught it.
+
+### Scripts (flag for Scott)
+
+- **`scripts/semantic_tests.py`:**
+  - New scenario 19, Allied contingents: 16 expectations.
+  - Scenario 16 changed. The Belgian brigade on 25 August 1944 was expected to have the 6th Airborne Division only; it now also has First Canadian Army (unspecified_subordination), from the new relation `CR0929`.
+  - Total: 317 expectations hold.
+- **`validate.py` and the build:** not changed.
+
+### Validator warnings
+
+There are 25 warnings, 20 before. The 5 new ones are on the Polish Parachute Brigade rows: "attached entry without a standing parent". No source read names a standing parent such as I Airborne Corps, and each row's Relationship note says so.
+
 ## british-batch2-jan-may-1945, follow-up: the units not covered, and the XVIII Airborne Corps (28 October 2026)
 
 Follow-up commits on the same branch `british-batch2-jan-may-1945` (Scott on 28 October 2026 accepted the Batch 2 recommendations, including the one-line `validate.py` change, and approved a deeper pass; the branch was intact on `origin` at `fbc3875`, not merged; no new branch, no force-push). Sources beyond Ellis: Stacey (`R668`), MacDonald, *The Last Offensive* ch. 14 (`R543`) and ch. 16 (`R566`), and two pages of Stichting Opdat Wij Niet Vergeten (`R673`, `R674`, ownv.nl). Nafziger (generalstaff.org) is blocked to the box by Cloudflare (403); only search snippets were reachable and nothing from it is cited.

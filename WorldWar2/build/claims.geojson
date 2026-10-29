@@ -1400,6 +1400,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5717,
+     49.3453
+    ]
+   },
+   "properties": {
+    "claim_id": "C1690",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-056B",
+    "unit_name": "56th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL0156",
+    "location_name": "Gold Beach",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "lands on Gold Beach near Hable de Heurtot as the right-flank reserve brigade of the 50th Division",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R688;R001",
+    "source_locator": "R670: pp. 178, 179, 210, 211"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2585,
+     49.2761
+    ]
+   },
+   "properties": {
+    "claim_id": "C1697",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-001B",
+    "unit_name": "1st Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL0866",
+    "location_name": "Ouistreham, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "lands over the Ouistreham beaches; reaches the airborne area east of the Orne in the afternoon",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R690;R002",
+    "source_locator": "R668: p. 117"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3886,
+     49.3292
+    ]
+   },
+   "properties": {
+    "claim_id": "C1701",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL0867",
+    "location_name": "Saint-Aubin-sur-Mer, Calvados (brigade headquarters with No. 48 Commando)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "landing",
+    "current_activity": "brigade headquarters lands with No. 48 Commando at Saint-Aubin (Nan sector, Juno); landing craft hit mined obstacles",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: pp. 182, 183; R668: p. 77"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -2008,6 +2131,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R449;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C1691",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-056B",
+    "unit_name": "56th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "place_id": "PL0033",
+    "location_name": "Bayeux",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "capture",
+    "current_activity": "takes Bayeux, then holds defensive positions blocking the approaches from Caumont and Saint-Lô",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R688;R001",
+    "source_locator": "R670: p. 231"
    }
   },
   {
@@ -3484,6 +3648,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R142;R141;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C1692",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-056B",
+    "unit_name": "56th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-11",
+    "place_id": "PL0349",
+    "location_name": "Tilly-sur-Seulles",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "commands a tank-infantry group that fights into the middle of Tilly-sur-Seulles; withdrawn at dark",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R688;R001",
+    "source_locator": "R670: pp. 252, 254"
    }
   },
   {
@@ -15791,6 +15996,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.7178,
+     49.1234
+    ]
+   },
+   "properties": {
+    "claim_id": "C1693",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-056B",
+    "unit_name": "56th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0865",
+    "location_name": "Saint-Germain-d'Ectot, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "opens Bluecoat with the 231st Brigade; clears the Saint-Germain-d'Ectot ridge but is stopped on the forward slopes",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R688;R002",
+    "source_locator": "R670: pp. 388, 389, 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2643,
      48.9481
     ]
@@ -17546,6 +17792,47 @@
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 408"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C1694",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-056B",
+    "unit_name": "56th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-05",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "under the 59th Division, follows the German withdrawal to the Orne upstream of Grimbosq, near Thury-Harcourt",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R688;R001",
     "source_locator": "R670: p. 408"
    }
   },
@@ -23410,6 +23697,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R678;R428;R002",
     "source_locator": "R678: p. 28; R428: pp. 137, 138"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C1695",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-056B",
+    "unit_name": "56th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "becomes an integral part of the 49th (West Riding) Division, replacing the 70th Brigade; end of its independent period",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R688;R001",
+    "source_locator": "R670: pp. 523, 528, 529"
    }
   },
   {
@@ -32191,6 +32519,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C1702",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-16",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "takes over the containment of Dunkirk from the 2nd Canadian Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 69; R668: pp. 365, 368"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9305,
      51.7741
     ]
@@ -36291,6 +36660,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.0408,
+     51.2671
+    ]
+   },
+   "properties": {
+    "claim_id": "C1703",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL0871",
+    "location_name": "De Haan, West Flanders",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "relieved at Dunkirk; withdrawn to an assembly area at De Haan to train for Walcheren",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R691;R002",
+    "source_locator": "R671: p. 118; R668: p. 368"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -39366,6 +39776,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.4408,
+     51.5293
+    ]
+   },
+   "properties": {
+    "claim_id": "C1704",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-11-01",
+    "place_id": "PL0868",
+    "location_name": "Westkapelle, Zeeland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "landing",
+    "current_activity": "Infatuate II: assaults Westkapelle through the gap in the dyke; village cleared and battery W 15 taken",
+    "operation_id": "OP-INFATUATE",
+    "operation": "Operation Infatuate",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Infatuate",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: pp. 120, 122; R668: p. 412"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3811,
      50.7129
     ]
@@ -40343,6 +40794,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R001",
     "source_locator": "R668: p. 426"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4967,
+     51.5632
+    ]
+   },
+   "properties": {
+    "claim_id": "C1705",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "place_id": "PL0869",
+    "location_name": "Domburg, Zeeland",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "with fighter-bombers and three tanks, takes the last battery and strong-point between Veere and Domburg",
+    "operation_id": "OP-INFATUATE",
+    "operation": "Operation Infatuate",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Infatuate",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 123"
    }
   },
   {
@@ -43664,6 +44156,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R650;R002",
     "source_locator": "R650: pp. 454, 456"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C1706",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "takes over responsibility for Walcheren and North and South Beveland from the 52nd Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R001",
+    "source_locator": "R668: p. 430"
    }
   },
   {
@@ -50887,6 +51420,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9082,
+     51.1481
+    ]
+   },
+   "properties": {
+    "claim_id": "C1698",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-001B",
+    "unit_name": "1st Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL0870",
+    "location_name": "Brachterbeek, Maasgouw, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Blackcock: under the 7th Armoured Division, clears the country along the Maas north of Echt",
+    "operation_id": "OP-BLACKCOCK",
+    "operation": "Operation Blackcock",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Blackcock",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R690;R002",
+    "source_locator": "R671: p. 245"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9325,
      49.9661
     ]
@@ -55397,6 +55971,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0931,
+     51.5546
+    ]
+   },
+   "properties": {
+    "claim_id": "C1699",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-001B",
+    "unit_name": "1st Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-03-03",
+    "place_id": "PL0784",
+    "location_name": "Well, Bergen, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "under the 52nd Division, patrols enter Well on the Maas",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 274; R668: p. 514"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2667,
      51.3
     ]
@@ -57727,6 +58342,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R684;R002",
     "source_locator": "R684: section La Libération des Alpes (1944-1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4543,
+     51.6615
+    ]
+   },
+   "properties": {
+    "claim_id": "C1696",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-115B",
+    "unit_name": "115th Infantry Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL0697",
+    "location_name": "Xanten, North Rhine-Westphalia (less a part with XXX Corps)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "listed with XII Corps, the assault corps, for the Rhine crossing (part with XXX Corps)",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R689;R002",
+    "source_locator": "R671: p. 285"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C1700",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-001B",
+    "unit_name": "1st Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "crosses the Rhine about two miles downstream of Wesel and attacks the town after the bombing",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R690;R002",
+    "source_locator": "R671: p. 289; R668: p. 535"
    }
   },
   {

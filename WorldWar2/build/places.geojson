@@ -658,7 +658,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 14
+    "claims_count": 15
    }
   },
   {
@@ -3078,7 +3078,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -6818,7 +6818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -6858,7 +6858,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -10818,7 +10818,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12298,7 +12298,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nord",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -12458,7 +12458,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -13758,7 +13758,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -15478,7 +15478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -17058,6 +17058,146 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7178,
+     49.1234
+    ]
+   },
+   "properties": {
+    "place_id": "PL0865",
+    "name": "Saint-Germain-d'Ectot, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2585,
+     49.2761
+    ]
+   },
+   "properties": {
+    "place_id": "PL0866",
+    "name": "Ouistreham, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3886,
+     49.3292
+    ]
+   },
+   "properties": {
+    "place_id": "PL0867",
+    "name": "Saint-Aubin-sur-Mer, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4408,
+     51.5293
+    ]
+   },
+   "properties": {
+    "place_id": "PL0868",
+    "name": "Westkapelle, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4967,
+     51.5632
+    ]
+   },
+   "properties": {
+    "place_id": "PL0869",
+    "name": "Domburg, Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9082,
+     51.1481
+    ]
+   },
+   "properties": {
+    "place_id": "PL0870",
+    "name": "Brachterbeek, Maasgouw, Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0408,
+     51.2671
+    ]
+   },
+   "properties": {
+    "place_id": "PL0871",
+    "name": "De Haan, West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "West Flanders",
     "claims_count": 1
    }
   }

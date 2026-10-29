@@ -452,20 +452,9 @@ Done on the branch `cleanup-2-late-war-west`: audit `docs/review/cleanup2_audit.
 
 ## Brigades Batch 1: British and Canadian independent brigades (29 October 2026)
 
-Done on the branch `brigades-uk-can-1944-45`: 56 claims (`C1658` to `C1713`) for the twelve British and Canadian brigades of the approved list (rows 1 to 12), with corps and division relations; see `docs/changelog.md` for the rows, the inferred values and the corrections to the planning list. Batches 2 and 3 are not started.
+Done on the branch `brigades-uk-can-1944-45`: 56 claims (`C1658` to `C1713`) for the twelve British and Canadian brigades of the approved list (rows 1 to 12), with corps and division relations; see `docs/changelog.md` for the rows, the inferred values and the corrections to the planning list. 
 
-Open points for Scott, each with a recommendation:
-
-1. The 33rd Armoured Brigade appears in Ellis's Rhine-crossing order of battle "from 79th Armoured Division" (vol. II, p. 285), so its independent period ends early in 1945, but no source read dates the move. Recommendation: keep the rows as they are (last row January 1945, XXX Corps) and add an `organic` relation to the 79th Armoured Division only when a source dates it.
-2. The 34th Tank (later Armoured) Brigade: Wikipedia puts it in the 79th Armoured Division in February 1945, while Ellis lists the 34th Armoured Brigade as an independent brigade of XII Corps on 23 March 1945 (vol. II, p. 285). Recommendation: follow Ellis, the ranked source, and record no 79th Armoured Division relation; note the Wikipedia statement only.
-3. The 115th Infantry Brigade has one row, a representative point (0.3) from Ellis's order of battle; Wikipedia gives its corps (VIII, XII and I) without dates. Recommendation: accept, and add rows only if Scott wants a further source (for example the war diaries) for this brigade.
-4. Two new validator warnings, both explained: C1704 (4th Special Service Brigade at Westkapelle, parent II Canadian Corps while the 52nd Division attachment starts the same day, Stacey p. 412) and C1692 (56th Infantry Brigade at Tilly on 11 June; its return to the 50th Division is dated 12 June, Ellis p. 254). Recommendation: accept both as part of the baseline (22 warnings).
-5. The 6th Guards Armoured Brigade was "under United States Ninth Army for a few days" after the Rhine crossing (Ellis, vol. II, p. 305); no source read gives the days, so no relation is recorded. Recommendation: leave it unrecorded.
-6. The 31st Tank Brigade now has two VIII Corps relations for June to September 1944: the earlier `attached` relation (`CR0082`, from the Normandy batch, 26 June) and this batch's `assigned` relation (`CR0979`, from 27 June, by the batch convention that a brigade is assigned to its corps). The grid shows both. Recommendation: keep `CR0979` (the batch convention) and mark `CR0082` as superseded in a later clean-up, with a note; no data was changed here because `CR0082` belongs to an earlier batch.
-
-Scott accepted all six recommendations above on 29 October 2026 (Batch 1 merged as PR #36). Points 1 to 5 need no change.
-
-**Pending for the next clean-up:** retire `CR0082` (31st Tank Brigade, the `attached` VIII Corps link of 26 June 1944 that overlaps `CR0979`, the batch-convention `assigned` link), with a note giving the reason (point 6, accepted).
+Resolved: Scott accepted all six recommendations on 29 October 2026 (PR #36). Points 1 to 5 needed no data change. For point 6, `CR0082` was retired in Clean-up 3 (ended on 30 June 1944, the end of Operation Epsom, with `CR0979` as the standing VIII Corps link). The open points were removed in Clean-up 3.
 
 ## Brigades Batch 3: German brigades, Kampfgruppen and fortress garrisons (29 October 2026)
 
@@ -480,29 +469,10 @@ Batch 3 of the 35 approved brigades (rows 20 to 35 of the planning list): 53 cla
 - **Validator:** one new warning, `GER-PZB-108B` line 3 (an attachment to the 246th Volks Grenadier Division with no standing parent stated). It is explained in the row's Relationship note.
 - **Semantic tests:** scenario 25 is new. Organic relations are kept out of `build/command_relations.csv` by design, so the Peiper and Chill checks read the master table.
 
-Open points (each has a recommendation):
-1. **Panzer-Brigade 103 never served in the West** (Wikipedia: Eastern Front; Cole, ch. 12, has Army Group G only asking for it). Recommendation: drop it from the brigade list.
-2. **Garrison echelon:** `other` is used. Recommendation: keep `other`, rather than adding a new echelon value.
-3. **Garrison parents:** only Lorient has a relation (XXV Corps, Blumenson ch. 18). Recommendation: leave Dunkirk, Saint-Nazaire and La Rochelle without a relation until a source names their headquarters.
-4. **Saint-Nazaire surrender:** 10 May (MacDonald) or 11 May (Wikipedia, Bouvron ceremony). 10 May is used, and the other date is noted. Recommendation: keep it that way, with no conflict group.
-5. **La Rochelle surrender:** 8 May (Wikipedia) or 9 May (MacDonald, southwestern coast in general). 8 May is used. Recommendation: keep it.
-6. **Panzer-Brigade 108 in September:** LXXX Corps (MacDonald ch. 3) or II Parachute Corps (Wikipedia). The LXXX Corps is used. Recommendation: keep it.
-7. **Führer-Begleit and Führer-Grenadier:** each keeps one unit id across the change from brigade to division, with the echelon set to brigade. Recommendation: keep one id each.
-8. **Führer-Begleit under the II SS Panzer Corps at the Baraque de Fraiture (23 to 24 December):** no date is given, so there is no relation. Recommendation: leave it out.
-9. **Organic Kampfgruppen and `who_controls`:** the organic ties to the 1st SS Panzer Division and the 85th Infantry Division do not appear in the build view, by design. Recommendation: keep the design.
-10. **Westfalen and von der Heydte:** no command relation is stated in the sources read. Recommendation: leave them without one.
+Resolved: Scott accepted all ten recommendations on 29 October 2026 (PR #38), with no data change. **Panzer-Brigade 103 is dropped from the brigade list**: it served on the Eastern Front only, so the approved list now has 34 brigades. The open points were removed in Clean-up 3.
 
 ## Brigades Batch 2: US independent units and task forces (29 October 2026)
 
-Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the seven US units of the approved list (rows 13 to 19): the 1st Special Service Force, the 1st Airborne Task Force, the 517th Parachute Regimental Combat Team, Task Force Butler, Task Force A, and the 509th and 551st Parachute Infantry Battalions, with army, corps, division and task-force relations (`CR1023` to `CR1039`); see `docs/changelog.md` for the rows, the inferred values and the corrections. Batch 3 is not started.
+Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the seven US units of the approved list (rows 13 to 19): the 1st Special Service Force, the 1st Airborne Task Force, the 517th Parachute Regimental Combat Team, Task Force Butler, Task Force A, and the 509th and 551st Parachute Infantry Battalions, with army, corps, division and task-force relations (`CR1023` to `CR1039`); see `docs/changelog.md` for the rows, the inferred values and the corrections.
 
-Open points for Scott, each with a recommendation:
-
-1. 18 new validator warnings "attached entry without a standing parent" (the 517th, 509th, 551st and the 1st Special Service Force while attached to the 1st Airborne Task Force or to a division): the sources read give these separate units no standing assignment to a corps or army for those periods. Each row says so in a Relationship sentence. Recommendation: accept them as part of the baseline (41 warnings), as was done for the Polish Parachute Brigade; add an `assigned` relation only when a source (for example a CMH assignment table) gives one.
-2. One more warning, `US-SSF-001B` line 6: the disbandment row of 5 December 1944 asserts the end of the attachment to the 1st Airborne Task Force on 23 November. Recommendation: accept (the same pattern as `US-ABN-082D` line 9).
-3. Task Force A and its relations to VIII Corps and the 8th Division are open at the last row (20 September 1944), so the grid carries them forward as "possible"; Blumenson says only that the task force "was soon dissolved". The same carrying forward shows for the 509th (the 3rd Armored Division after 28 December 1944; it was disbanded on 1 March 1945, Wikipedia) and the 517th (the XVIII Airborne Corps and the 78th Division after 5 February 1945; to the 13th Airborne Division on 15 February, Wikipedia). Recommendation: close these in the next clean-up: Task Force A's relations on 30 September 1944 (inferred, the VIII Corps move to Belgium from 26 September), the 509th's on 31 January 1945 (Wikipedia: its service ended at the end of January) and the 517th's on 14 February 1945 (Wikipedia), each annotated as inferred.
-4. The 1st Special Service Force disbandment: 5 December 1944 near Villeneuve-Loubet (Wikipedia) is used; Clarke and Smith give 6 January 1945 as the formal date. Recommendation: keep 5 December (the event on the ground) with the formal date in the record.
-5. The 551st's raid at "Noirfontaine" on 27-28 December 1944 (Wikipedia) has no row: the only place of that name found, Noirefontaine near Bouillon, is far from the 82nd Airborne front, so the place is doubtful. Recommendation: leave it out unless a unit history places it.
-6. Wikipedia puts the 509th under the 101st Airborne Division from 18 November to 18 December 1944 and the 551st attached to it from 22 November 1944; no row of either unit falls in that period, so no relation is recorded (the dates are in the unit notes). Recommendation: leave unrecorded.
-7. The 1st Special Service Force is recorded as a US unit (nationality US); it was a combined American-Canadian force. Recommendation: keep US, with the unit note, rather than split it.
-
+Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.

@@ -7938,7 +7938,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 23
+    "claims_count": 24
    }
   },
   {
@@ -12118,7 +12118,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12238,7 +12238,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -12898,7 +12898,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -16478,7 +16478,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nouvelle-Aquitaine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16738,6 +16738,146 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2633,
+     49.0955
+    ]
+   },
+   "properties": {
+    "place_id": "PL0845",
+    "name": "Rimling, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4869,
+     48.1459
+    ]
+   },
+   "properties": {
+    "place_id": "PL0846",
+    "name": "Grussenheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.325,
+     45.6932
+    ]
+   },
+   "properties": {
+    "place_id": "PL0847",
+    "name": "Cognac, Charente",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8829,
+     45.6792
+    ]
+   },
+   "properties": {
+    "place_id": "PL0848",
+    "name": "Col du Petit-Saint-Bernard, Savoie",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Auvergne-Rhône-Alpes",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1577,
+     46.9877
+    ]
+   },
+   "properties": {
+    "place_id": "PL0849",
+    "name": "Nevers, Nièvre",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1885,
+     47.9278
+    ]
+   },
+   "properties": {
+    "place_id": "PL0850",
+    "name": "Buhl, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9912,
+     48.3985
+    ]
+   },
+   "properties": {
+    "place_id": "PL0851",
+    "name": "Ulm, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
     "claims_count": 1
    }
   }

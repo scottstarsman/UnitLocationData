@@ -28,6 +28,7 @@ Scope (owner-approved): US Army ground units on the Western Front, 6 June 1944 t
 | British 2 | 22 October 1944 - 4 May 1945 (Pheasant, Clipper, the Ardennes counter-attack, Blackcock, Veritable and Blockbuster, the Rhine crossing, the Elbe, Bremen, Hamburg, the Baltic and the surrender; XXX, XII and VIII Corps, Second Army, 21st Army Group and ten divisions) | **Done on the branch `british-batch2-jan-may-1945`** (from the British Batch 1 head `9b4c775`; pushed, not merged; compare it with `main`): 70 claims (`C1469` to `C1538`), 24 relations (`CR0894` to `CR0917`), 33 places, 5 operations, 1 reference (`R672`); see the section below |
 | British 2 follow-up | 17 September 1944 - 28 March 1945 (the units not covered: 50th, 3rd in January and February 1945, 43rd at Megchelen, 49th, 59th end, and the XVIII Airborne Corps under Second Army) | **Done as follow-up commits on the branch `british-batch2-jan-may-1945`** (pushed, not merged): 8 claims (`C1539` to `C1546`), 5 relations (`CR0918` to `CR0922`), 4 places, 2 references (`R673`, `R674`), an eighteenth semantic scenario; see the British Batch 2 follow-up section below |
 | Allied contingents | 8 August 1944 - 8 May 1945 (the 1st Polish Armoured Division, the Polish Parachute Brigade, the Czechoslovak Armoured Brigade Group, the Belgian (Piron) Brigade and the Princess Irene Brigade; Italy not covered) | **Done on the branch `allied-contingents-1944-45`** (from `main` `85c5c48`; pushed, not merged): 61 claims (`C1547` to `C1607`), 11 relations (`CR0923` to `CR0933`), 41 places, 2 references (`R675`, `R676`); see the section below |
+| French | 9 August 1944 - 4 May 1945 (the 2d French Armored Division from Normandy to Berchtesgaden; the First French Army, its I and II Corps and seven divisions from Toulon to Stuttgart and the Vorarlberg; Italy not covered) | **Done on the branch `french-1944-45`** (from `main` `b021dc2`; pushed, not merged): 38 claims (`C1608` to `C1645`), 17 relations (`CR0934` to `CR0950`), 18 places, 5 references (`R677` to `R681`); see the section below |
 
 **Not covered in Batch 1 (known gaps):**
 - Regiments, combat commands, separate battalions, cavalry groups and corps troops. Batch 1 is division level and up.
@@ -376,6 +377,27 @@ Done: 65 claims, `C1343` to `C1407` (29 December 1944 to 8 May 1945; confidence 
 Not covered (stated scope): the positions of I Canadian Corps, the 1st Division and the 5th Armoured Division in Italy (a separate theater), the Polish 1st Armoured Division (under II Canadian Corps from 8 April), the Belgian, Dutch and Czech brigades, the 11th Armoured Division under II Canadian Corps, the 2nd Division under the 30th Corps in Veritable (no date), the independent and armoured brigades, combat units below division level, and the Panzer brigades.
 
 Open points for Scott, each with a recommendation: (1) `CR0850` and `CR0851` (7th Armoured and Guards Armoured under II Canadian Corps, from 20 July 1944) still have no sourced end; recommendation: close them in the British batch from the British divisional histories and the Second Army record. (2) The attachments of the Polish, Belgian, Dutch and Czech formations and of the 11th Armoured Division to the Canadian corps are not written; recommendation: do them in the British and Polish batch, where the formations get their own claims. (3) The headquarters places of the Army after 8 March 1945 and of II Canadian Corps are not stated by Stacey (the rows are representative, 0.3 to 0.5); recommendation: leave, or add the headquarters war diaries if a source is found. (4) `OP-VERITABLE` and `OP-BLOCKBUSTER` both end on 10 March 1945 following the casualty period of Stacey p. 522; recommendation: keep and mark as approximate in the next operations review. (5) Plunder has no operation row of its own; recommendation: add `OP-PLUNDER` with the British batch, since Second Army carried the crossing. (6) Only one source family (Stacey) was used, so no row is at 0.9; recommendation: a short second-family pass (CMH The Last Offensive, Nicholson, Wikipedia) on the 27 rows at 0.7 if Scott wants 0.9 rows. (7) The date of the `C1402` row (28 February) is inferred from the last days of February; recommendation: accept, or ask for a date from the divisional war diary. (8) The acting command of the Army from 22 to 29 April 1945 (General Simonds, Stacey) is not written because the commanders table is not approved. (9) The 243rd Division row of 12 September 1944 (Lexikon) is not added (not approved).
+
+## French batch (29 October 2026, branch `french-1944-45`)
+
+**Done:** 38 claims, `C1608` to `C1645`, dated 9 August 1944 to 4 May 1945. Confidence: 5 at 0.9, 13 at 0.7, 15 at 0.5 and 5 at 0.3. Sources: the CMH histories (Breakout and Pursuit, The Lorraine Campaign, Riviera to the Rhine, The Last Offensive) and Wikipedia.
+
+| formation | claims | coverage |
+|---|---:|---|
+| 2d French Armored Division | 12 | le Mans, Ecouche and Argentan; Rambouillet and Paris; Dompaire and Rambervillers; Strasbourg and Erstein; the Colmar Pocket; Royan; Bad Reichenhall |
+| First French Army (Army B) | 5 | Toulon; the 6th Army Group; Karlsruhe; Stuttgart |
+| French II Corps | 2 | Bains-les-Bains; the Rhine at Speyer and Germersheim |
+| French I Corps | 3 | Aix-en-Provence; the Colmar Pocket; Chalampe |
+| Seven divisions | 16 | 1st Armored (Delle, Rosenau, Mulhouse), 5th Armored (Stuttgart), 1st DFL (Lyon, Colmar), 2nd Moroccan (Briancon, Belfort, Germersheim, Karlsruhe), 3rd Algerian (Marseille, Speyer), 4th Moroccan Mountain (Rouffach, Vorarlberg), 9th Colonial (Toulon, Ensisheim) |
+
+The batch also adds 17 relations, `CR0934` to `CR0950`. No existing record was changed.
+
+**Not covered:**
+- The 10th and 14th Infantry Divisions (placeholders; no sourced place and date in the pages read).
+- The 1st and 27th Alpine Divisions, the Detachement d'Armee de l'Atlantique and the Royan and La Rochelle forces: no unit rows.
+- The 2d French Armored Division in January 1945 (XV Corps reserve during Nordwind, then south to Strasbourg): not dated in the pages read.
+- Division-to-corps relations other than the three sourced for the I Corps.
+- De Lattre's history; Italy.
 
 ## Allied contingents (29 October 2026, branch `allied-contingents-1944-45`)
 

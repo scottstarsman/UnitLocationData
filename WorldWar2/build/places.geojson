@@ -758,7 +758,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comte",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -2278,7 +2278,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -3958,7 +3958,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Rhone-Alpes",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -4058,7 +4058,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Pays de la Loire",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -5318,7 +5318,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -8638,7 +8638,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -11138,7 +11138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comté",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -12118,7 +12118,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -12238,7 +12238,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12398,7 +12398,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12458,7 +12458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12478,7 +12478,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12938,7 +12938,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Vorarlberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16378,6 +16378,366 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1089,
+     48.7155
+    ]
+   },
+   "properties": {
+    "place_id": "PL0827",
+    "name": "Écouché, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8192,
+     48.6453
+    ]
+   },
+   "properties": {
+    "place_id": "PL0828",
+    "name": "Rambouillet, Seine-et-Oise (Yvelines)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Île-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6361,
+     48.3466
+    ]
+   },
+   "properties": {
+    "place_id": "PL0829",
+    "name": "Rambervillers, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.536,
+     47.9154
+    ]
+   },
+   "properties": {
+    "place_id": "PL0830",
+    "name": "Fessenheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0288,
+     45.6245
+    ]
+   },
+   "properties": {
+    "place_id": "PL0831",
+    "name": "Royan, Charente-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8761,
+     47.7223
+    ]
+   },
+   "properties": {
+    "place_id": "PL0832",
+    "name": "Bad Reichenhall, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     43.1257
+    ]
+   },
+   "properties": {
+    "place_id": "PL0833",
+    "name": "Toulon, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4034,
+     49.0069
+    ]
+   },
+   "properties": {
+    "place_id": "PL0834",
+    "name": "Karlsruhe, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2566,
+     47.9962
+    ]
+   },
+   "properties": {
+    "place_id": "PL0835",
+    "name": "Bains-les-Bains (La Vôge-les-Bains), Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4336,
+     49.3166
+    ]
+   },
+   "properties": {
+    "place_id": "PL0836",
+    "name": "Speyer, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4475,
+     43.5298
+    ]
+   },
+   "properties": {
+    "place_id": "PL0837",
+    "name": "Aix-en-Provence, Bouches-du-Rhône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.541,
+     47.8209
+    ]
+   },
+   "properties": {
+    "place_id": "PL0838",
+    "name": "Chalampé, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9998,
+     47.5065
+    ]
+   },
+   "properties": {
+    "place_id": "PL0839",
+    "name": "Delle, Territoire de Belfort",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5371,
+     47.6375
+    ]
+   },
+   "properties": {
+    "place_id": "PL0840",
+    "name": "Rosenau, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6436,
+     44.8984
+    ]
+   },
+   "properties": {
+    "place_id": "PL0841",
+    "name": "Briançon, Hautes-Alpes",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3778,
+     43.2964
+    ]
+   },
+   "properties": {
+    "place_id": "PL0842",
+    "name": "Marseille, Bouches-du-Rhône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2994,
+     47.9569
+    ]
+   },
+   "properties": {
+    "place_id": "PL0843",
+    "name": "Rouffach, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3529,
+     47.8665
+    ]
+   },
+   "properties": {
+    "place_id": "PL0844",
+    "name": "Ensisheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
     "claims_count": 1
    }
   }

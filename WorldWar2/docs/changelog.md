@@ -2,6 +2,40 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## french-1944-45: the French formations (29 October 2026)
+
+New branch `french-1944-45` from `main` (`b021dc2`). It covers the Western Front, 6 June 1944 to 8 May 1945, division level and above; Italy is not covered. Sources: the CMH histories (Blumenson, *Breakout and Pursuit*; Cole, *The Lorraine Campaign*; Clarke and Smith, *Riviera to the Rhine*; MacDonald, *The Last Offensive*) and the Wikipedia unit and battle articles. Five references are new: `R677` (Riviera to the Rhine ch. 30), `R678` (ch. 2), `R679` (ch. 12), `R680` (Wikipedia, 1st Armored Division (France)) and `R681` (Wikipedia, 5th Armored Division (France)). The eleven units were placeholders and are promoted by `promote_placeholders.py`. The nationality folder `data/claims/france` is new. De Lattre's history was not consulted in this pass and is not cited.
+
+### Claims and relations
+
+- **2d French Armored Division (Leclerc):**
+  - 12 claims, `C1608` to `C1619`: le Mans (9 August 1944), Ecouche, the Ecouche-Argentan line, Rambouillet, Paris (25 August), Dompaire, north of Rambervillers, Strasbourg (23 November), Erstein, Fessenheim (8 February 1945), Royan (18 April) and Bad Reichenhall (4 May).
+  - Corps: `CR0934` XV Corps, attached, 9 to 17 August 1944 (end inferred, earliest 13 August); `CR0935` V Corps, attached, 18 August (first row) to 7 September; `CR0936` XV Corps, attached, 8 September to 26 November (Lorraine p. 185; Riviera p. 454); `CR0937` VI Corps, attached, from 27 November 1944 (end inferred: 7 February 1945, earliest 28 November).
+  - Armies (unspecified_subordination, a French division under American command): `CR0939` Third Army, 9 to 17 August 1944 (end inferred); `CR0940` First Army, 18 August to 7 September; `CR0941` Third Army, 8 to 28 September; `CR0942` Seventh Army, from 29 September 1944 (Riviera p. 254; end inferred: 7 February 1945, earliest 28 November); `CR0938` First French Army, from 8 February 1945 (first row; end inferred: 17 April 1945).
+  - The Royan and Bad Reichenhall rows have no parent: de Larminat's French Forces of the West are not a unit, and the Last Offensive p. 442 says only "recently attached".
+- **First French Army (Army B):** 5 claims, `C1620` to `C1624`: Toulon (20 and 28 August 1944), the activation of the 6th Army Group (15 September, at a representative point, Besancon, 0.3), Karlsruhe (4 April 1945) and Stuttgart (22 April). Relations: `CR0943` Seventh Army, unspecified_subordination, 20 August (first row) to 14 September 1944; `CR0944` Seventh Army, operational_control, 15 to 19 September (Riviera p. 224: Patch directed First French Army operations until 19 September); `CR0945` 6th Army Group, assigned, from 15 September 1944, open.
+- **French II Corps:** 2 claims, `C1625` and `C1626`: the contact near Bains-les-Bains (17 September 1944) and the Rhine crossing at Speyer and Germersheim (31 March 1945). `CR0946` First French Army, assigned, from 1 September 1944 (Riviera p. 198, note 9).
+- **French I Corps:** 3 claims, `C1627` to `C1629`: Aix-en-Provence (1 September 1944), the Colmar Pocket offensive (20 January 1945, representative point Cernay, 0.3) and Chalampe (9 February 1945). `CR0947` First French Army, assigned, from 1 September 1944 (Wikipedia).
+- **Divisions:** 16 claims, `C1630` to `C1645`: 1st Armored Division 3 (Delle, Rosenau on the Rhine on 19 November 1944, Mulhouse); 5th Armored Division 1 (Stuttgart, 21 April 1945, date inferred, 0.3); 1st DFL/1st DMI 2 (Lyon, the Colmar Pocket); 2nd Moroccan 4 (Briancon, Belfort, Germersheim, Karlsruhe); 3rd Algerian 2 (Marseille, Speyer); 4th Moroccan Mountain 2 (Rouffach, the Vorarlberg at a representative point, Bregenz); 9th Colonial 2 (Toulon, Ensisheim). Relations to the I Corps, unspecified_subordination: `CR0948` 1st Armored Division from 18 November 1944 (first row), `CR0949` 4th Moroccan Mountain Division 5 February to 1 May 1945 (end inferred), `CR0950` 9th Colonial Division from 6 February 1945.
+- **Places:** 18 new, `PL0827` to `PL0844`.
+- **Claim totals:** 38 (France). Confidence: 5 at 0.9, 13 at 0.7, 15 at 0.5, 5 at 0.3.
+
+### Inferred values (each also in the record note)
+
+- Representative points (0.3 or a wider precision, location_basis representative_point): the Ecouche-Argentan line (Ecouche), the front north of Rambervillers, the army on 15 September 1944 (Besancon), the II Corps contact (Bains-les-Bains) and crossing (Speyer), the I Corps attack of 20 January 1945 (Cernay), the 1st DFL attack of 23 January 1945 (Selestat) and the 4th Moroccan Mountain Division in the Vorarlberg (Bregenz).
+- The 5th Armored Division row at Stuttgart is dated 21 April 1945 from an unnamed French column in the CMH history; Wikipedia gives only April 1945.
+- Relation starts with basis claim_date and ends with basis inferred_from_next_claim are listed above; each note gives the reason.
+- No existing claim or relation was changed. The reference tool filled the blank read date of the existing Wikipedia references that the batch cites (`R038`, `R048`, `R053`, `R061`, `R070`, `R104`, `R119`, `R129`, `R134` and others) with 2026-10-27, its fixed value, and updated their claim counts.
+
+### Scripts (flag for Scott)
+
+- **`scripts/semantic_tests.py`:** new scenario 20, French batch: 12 expectations. Total: 329 expectations hold.
+- **`validate.py` and the build:** not changed.
+
+### Validator warnings
+
+There are 25 warnings, the same as before the batch. None is on a French row.
+
 ## allied-contingents-1944-45: the Polish, Czechoslovak, Belgian and Dutch formations (29 October 2026)
 
 New branch `allied-contingents-1944-45` from `main` (`85c5c48`). It covers the Western Front, 6 June 1944 to 8 May 1945; Italy is not covered. Sources: Stacey (`R668`), Ellis vol. I and II (`R670`, `R671`) and the Wikipedia unit articles (`R035`, `R037`, `R039`, `R144`), plus two new Wikipedia references: `R675` (Siege of Dunkirk) and `R676` (Princess Irene Brigade). The five units were placeholders and are promoted by `promote_placeholders.py`. Four nationality folders are new under `data/claims/`: `poland`, `czechoslovakia`, `belgium` and `netherlands`. Each unit is its own commit.

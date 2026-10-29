@@ -766,8 +766,37 @@ def scenario_19_allied_contingents_1944_45():
     expect(s + ': C1607 is the last row of the batch (Princess Irene Brigade at Hedel)', (c['unit_id'], c['date'], c['parent_unit_id']), ('NL-INF-IRNEB', '1945-04-25', ''))
 
 
+def scenario_20_french_1944_45():
+    s = 'scenario 20, French batch (August 1944 to May 1945)'
+    a = intervals('FR-ARM-002D', '1944-08-12')
+    expect(s + ': 2d French Armored Division, 12 Aug: XV Corps and Third Army (Breakout and Pursuit p. 497)', sorted(a), [('US-ARMY-003A', 'unspecified_subordination'), ('US-COR-015C', 'attached')])
+    a = intervals('FR-ARM-002D', '1944-08-25')
+    expect(s + ': 2d French Armored Division, 25 Aug (Paris): V Corps and First Army', sorted(a), [('US-ARMY-001A', 'unspecified_subordination'), ('US-COR-005C', 'attached')])
+    a = intervals('FR-ARM-002D', '1944-09-20')
+    expect(s + ': 2d French Armored Division, 20 Sep: XV Corps of the Third Army from 8 September (Lorraine p. 185)', sorted(a), [('US-ARMY-003A', 'unspecified_subordination'), ('US-COR-015C', 'attached')])
+    a = intervals('FR-ARM-002D', '1944-11-23')
+    expect(s + ': 2d French Armored Division, 23 Nov (Strasbourg): XV Corps of the Seventh Army from 29 September (Riviera p. 254)', sorted(a), [('US-ARMY-007A', 'unspecified_subordination'), ('US-COR-015C', 'attached')])
+    a = intervals('FR-ARM-002D', '1944-11-30')
+    expect(s + ': 2d French Armored Division, 30 Nov: VI Corps from 27 November (Riviera p. 454)', sorted(a), [('US-ARMY-007A', 'unspecified_subordination'), ('US-COR-006C', 'attached')])
+    a = intervals('FR-ARMY-001A', '1944-08-28')
+    expect(s + ': Army B, 28 Aug (Toulon): under the Seventh Army', sorted(a), [('US-ARMY-007A', 'unspecified_subordination')])
+    a = intervals('FR-ARMY-001A', '1944-09-17')
+    expect(s + ': First French Army, 17 Sep: 6th Army Group, Patch directing operations until 19 September (Riviera p. 224)', sorted(a), [('US-AG-006G', 'assigned'), ('US-ARMY-007A', 'operational_control')])
+    a = intervals('FR-ARMY-001A', '1945-04-22')
+    expect(s + ': First French Army, 22 Apr 1945 (Stuttgart): 6th Army Group', sorted(a), [('US-AG-006G', 'assigned')])
+    a = intervals('FR-COR-002C', '1945-03-31')
+    expect(s + ': French II Corps, 31 Mar 1945 (Rhine crossing): First French Army from 1 September 1944', sorted(a), [('FR-ARMY-001A', 'assigned')])
+    a = intervals('FR-ARM-001D', '1944-11-19')
+    expect(s + ': French 1st Armored Division, 19 Nov (Rosenau): I Corps', sorted(a), [('FR-COR-001C', 'unspecified_subordination')])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1608']
+    expect(s + ': C1608 is the first row of the batch (2d French Armored Division at le Mans)', (c['unit_id'], c['date'], c['parent_unit_id']), ('FR-ARM-002D', '1944-08-09', 'US-COR-015C'))
+    c = claims['C1645']
+    expect(s + ': C1645 is the last row of the batch (9th Colonial Infantry Division at Ensisheim)', (c['unit_id'], c['date'], c['parent_unit_id']), ('FR-INF-009D', '1945-02-06', 'FR-COR-001C'))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45):
         before = len(FAILURES)
         try:
             fn()

@@ -2,6 +2,103 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-1 follow-up: rest and refit periods, span closures and closing rows (29 October 2026)
+
+Scott approved a follow-up pass on the same branch for the same 30 US divisions. 66 new claims (C1821-C1886), 13 new places (PL0938-PL0950; Blankenburg reuses PL0649), 5 new references (R718-R722, the Wikipedia articles of the 8th, 35th, 45th, 80th and 95th Infantry Divisions). Next ids: claim C1887, place PL0951, reference R723.
+
+Source: the English Wikipedia article of each division, whose Second World War text follows the CMH combat chronicle. One source family per row, so confidence is 0.5 where the source gives a date and names the place, and 0.3 where the date or the place is inferred (each note says which). No row is 0.7 or 0.9. Every new row has an `Event support` quotation and an `Activity:` sentence.
+
+Rules used:
+
+- Occupation duty is recorded as `garrison`.
+- A closing row at 8 May 1945 is added only where the source places the division on or until VE Day. It ends an open span (`end`) or is a `point`. 17 of the 30 divisions have one. The 3rd, 28th, 29th, 30th, 36th, 79th, 83rd and 90th Infantry Divisions and the 2nd, 7th, 10th and 12th Armored Divisions have none, because the source does not say where they were or what they were doing on that day.
+- A batch-1 `start` whose implicit span would run for more than 90 days with no source is changed to a `point`.
+
+Changes to existing rows (the reason is in each row's `Activity:` note):
+
+- 2nd Infantry Division C0046, 5th Armored C0262, 6th Armored C0271, 35th Infantry Division C0424, 80th Infantry Division C0458: activity_span changed from start to point. The next state row is 104 to 262 days later.
+- 95th Infantry Division C0661: point to start. The source has the division holding the Ruhr line until the end of the war. C1881 closes the span.
+- 12th Armored Division C0630: point to start. This ends the St. Avold refit (C1848).
+
+New claims:
+
+Rest and refit periods and the line returns that end them (C1821-C1850):
+
+- C1821 1st Infantry Division, 1944-12-07: refitting start (stated), confidence 0.3; moved to a rear area for refitting and rest after six months of combat.
+- C1822 2nd Infantry Division, 1944-09-19: refitting start (stated), confidence 0.5; brief rest after the fall of Brest.
+- C1823 2nd Infantry Division, 1944-09-26: refitting end (stated), confidence 0.5; end of the brief rest before the move to the St. Vith front.
+- C1824 29th Infantry Division, 1944-12-16: refitting point (stated), confidence 0.3; held in reserve for refitting during the Battle of the Bulge.
+- C1825 30th Infantry Division, 1945-03-03: refitting start (stated), confidence 0.3; moves back for training and rehabilitation after the Roer crossing.
+- C1826 35th Infantry Division, 1944-12-19: refitting start (stated), confidence 0.5; moves to Metz for rest and rehabilitation.
+- C1827 35th Infantry Division, 1944-12-26: in_line start (stated), confidence 0.5; moved to Arlon to join the fighting to relieve Bastogne.
+- C1828 35th Infantry Division, 1945-01-18: refitting point (stated), confidence 0.5; returns to Metz to resume its interrupted rest.
+- C1829 45th Infantry Division, 1944-11-25: in_line start (stated), confidence 0.5; resumes the advance after a one-month rest, attacking the forts north of Mutzig.
+- C1830 45th Infantry Division, 1945-02-17: refitting start (stated), confidence 0.3; pulled off the line for rest and training.
+- C1831 79th Infantry Division, 1944-10-24: refitting start (stated), confidence 0.5; relieved east of Emberménil; rest and training at Lunéville.
+- C1832 79th Infantry Division, 1944-11-13: in_line start (stated), confidence 0.5; returns to combat with an attack from the Mignéville area.
+- C1833 80th Infantry Division, 1944-12-07: refitting start (stated), confidence 0.3; relieved by the 6th Armored Division near Saarbrücken.
+- C1834 80th Infantry Division, 1944-12-17: refitting end (stated), confidence 0.3; returns to combat after ten days of rest.
+- C1835 83rd Infantry Division, 1945-01-22: refitting start (stated), confidence 0.3; moves back to Belgium and the Netherlands for rehabilitation and training.
+- C1836 83rd Infantry Division, 1945-03-01: in_line start (stated), confidence 0.5; advances toward the Rhine in Operation Grenade and takes Neuss.
+- C1837 3rd Armored Division, 1945-01-26: refitting start (stated), confidence 0.3; halts at Lierneux to refit.
+- C1838 3rd Armored Division, 1945-02-25: refitting end (stated), confidence 0.3; end of a month of rest before the attack into Germany.
+- C1839 4th Armored Division, 1944-10-12: refitting start (stated), confidence 0.3; rests briefly after holding the Chambrey-Hénaménil line.
+- C1840 4th Armored Division, 1944-11-09: in_line start (stated), confidence 0.5; returns to combat with an attack near Viviers.
+- C1841 4th Armored Division, 1944-12-08: in_line end (stated), confidence 0.5; relieved after the Saar bridgehead fighting at Baerendorf.
+- C1842 5th Armored Division, 1944-12-22: reserve start (stated), confidence 0.5; withdrawn to Verviers into 12th Army Group reserve.
+- C1843 7th Armored Division, 1944-11-08: refitting start (stated), confidence 0.5; moves to rest areas at and east of Maastricht.
+- C1844 8th Armored Division, 1945-02-01: refitting start (stated), confidence 0.3; rest and refitting at Simpelveld.
+- C1845 8th Armored Division, 1945-02-19: in_line start (stated), confidence 0.5; moves to Roermond to relieve the British 7th Armoured Division.
+- C1846 10th Armored Division, 1945-02-05: refitting start (stated), confidence 0.3; reassembles at Metz and rests briefly.
+- C1847 10th Armored Division, 1945-02-20: in_line start (stated), confidence 0.3; attacks again in the Saar-Moselle triangle.
+- C1848 12th Armored Division, 1945-02-06: refitting start (stated), confidence 0.3; withdraws to the St. Avold area for rest and rehabilitation.
+- C1849 14th Armored Division, 1945-02-12: refitting start (stated), confidence 0.3; rest, rehabilitation and defensive missions.
+- C1850 14th Armored Division, 1945-03-15: in_line start (stated), confidence 0.5; returns to the offensive across the Moder.
+
+Span starts and closures (C1851-C1869):
+
+- C1851 1st Infantry Division, 1944-12-17: in_line start (stated), confidence 0.3; back in the line on the northern shoulder of the Ardennes.
+- C1852 1st Infantry Division, 1945-01-28: in_line end (stated), confidence 0.3; end of the continuous Ardennes fighting before the new attack on the Siegfried Line.
+- C1853 4th Infantry Division, 1945-03-29: in_line start (stated), confidence 0.5; crosses the Rhine at Worms after a short rest.
+- C1854 4th Infantry Division, 1945-05-02: garrison start (stated), confidence 0.5; relieved at Miesbach and placed on occupation duty.
+- C1855 9th Infantry Division, 1945-04-21: in_line start (stated), confidence 0.5; relieves the 3rd Armored Division on the Mulde near Dessau.
+- C1856 30th Infantry Division, 1944-11-29: refitting start (stated), confidence 0.3; moves to rest areas after reaching the Inde at Inden.
+- C1857 30th Infantry Division, 1944-12-17: in_line start (stated), confidence 0.5; rushed south to the Malmedy-Stavelot area against the Ardennes offensive.
+- C1858 30th Infantry Division, 1945-03-24: in_line start (stated), confidence 0.3; assault crossing of the Rhine.
+- C1859 35th Infantry Division, 1945-04-26: garrison start (stated), confidence 0.5; moves to Hanover for occupation and mopping-up duty.
+- C1860 45th Infantry Division, 1945-05-01: garrison start (stated), confidence 0.3; occupying Munich after its capture.
+- C1861 69th Infantry Division, 1945-04-26: garrison start (stated), confidence 0.3; patrols and polices its area between the Mulde and the Elbe after the link-up.
+- C1862 80th Infantry Division, 1945-04-21: garrison start (stated), confidence 0.5; relieved and moved to Nuremberg for occupation duty.
+- C1863 80th Infantry Division, 1945-04-28: in_line start (stated), confidence 0.5; moves to Regensburg and on to the Enns, fighting to the end.
+- C1864 89th Infantry Division, 1945-04-23: in_line start (stated), confidence 0.5; advance halted; patrolling and security, Aue kept under pressure.
+- C1865 3rd Armored Division, 1945-04-24: reserve start (stated), confidence 0.3; moves into corps reserve at Sangerhausen after Dessau.
+- C1866 4th Armored Division, 1944-12-18: in_line start (stated), confidence 0.3; enters the Ardennes fight, racing northwest into Belgium.
+- C1867 5th Armored Division, 1945-02-25: in_line start (stated), confidence 0.3; crosses the Roer to lead the XIII Corps drive to the Rhine.
+- C1868 6th Armored Division, 1945-04-15: in_line start (stated), confidence 0.5; crosses the Mulde at Rochlitz and halts to await the Red Army.
+- C1869 8th Armored Division, 1945-04-23: garrison start (stated), confidence 0.3; occupation duty in an assigned area in the Harz.
+
+Closing rows at 8 May 1945 (C1870-C1886):
+
+- C1870 1st Infantry Division, 1945-05-08: in_line point (stated), confidence 0.5; fighting in western Czechoslovakia when the war in Europe ends.
+- C1871 2nd Infantry Division, 1945-05-08: in_line point (stated), confidence 0.5; attacking toward Pilsen on VE Day.
+- C1872 4th Infantry Division, 1945-05-08: garrison end (inferred), confidence 0.3; on occupation duty at the end of the war in Europe.
+- C1873 5th Infantry Division, 1945-05-08: in_line point (stated), confidence 0.5; reaching Volary and Vimperk in Czechoslovakia as the war ends.
+- C1874 8th Infantry Division, 1945-05-08: in_line point (stated), confidence 0.5; at Schwerin when the war in Europe ends.
+- C1875 9th Infantry Division, 1945-05-08: in_line end (stated), confidence 0.5; holding the Mulde line near Dessau until VE Day.
+- C1876 35th Infantry Division, 1945-05-08: garrison end (stated), confidence 0.5; on occupation duty at Hanover at the end of the war in Europe.
+- C1877 45th Infantry Division, 1945-05-08: garrison end (stated), confidence 0.5; occupying Munich at the end of the war in Europe.
+- C1878 69th Infantry Division, 1945-05-08: garrison end (stated), confidence 0.3; patrolling and policing its area at VE Day.
+- C1879 80th Infantry Division, 1945-05-08: in_line end (stated), confidence 0.5; on the Enns when the cease-fire takes effect.
+- C1880 89th Infantry Division, 1945-05-08: in_line end (stated), confidence 0.5; limited action and patrolling until VE Day.
+- C1881 95th Infantry Division, 1945-05-08: in_line end (stated), confidence 0.5; holding the north bank of the Ruhr at the end of the war.
+- C1882 3rd Armored Division, 1945-05-08: reserve end (inferred), confidence 0.3; in corps reserve at Sangerhausen at the end of the war.
+- C1883 5th Armored Division, 1945-05-08: in_line end (stated), confidence 0.3; mopping up in the Ninth Army sector until VE Day.
+- C1884 6th Armored Division, 1945-05-08: in_line end (stated), confidence 0.5; holding defensive positions on the Mulde at the end of hostilities.
+- C1885 8th Armored Division, 1945-05-08: garrison end (stated), confidence 0.3; on occupation duty at the end of the war.
+- C1886 14th Armored Division, 1945-05-08: garrison point (stated), confidence 0.3; processing prisoners of war and patrolling its area when the war ends.
+
+Spans: 41 batch-1 and follow-up starts are now closed (17 by an explicit end, 24 implicitly by the next start), and 10 are still open (read as possible for 30 days). Tests: scenario 27 has 8 more expectations.
+
 ## activity-rollout-1: activity status, rollout batch 1 (29 October 2026)
 
 Scott approved the rollout on 29 October 2026 in batches of about 30 units. Batch 1 covers 30 US divisions: the 1st, 2nd, 3rd, 4th, 5th, 8th, 9th, 28th, 29th, 30th, 35th, 36th, 45th, 69th, 79th, 80th, 83rd, 89th, 90th and 95th Infantry Divisions and the 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 10th, 12th and 14th Armored Divisions (the US divisions with the most rows; the pilot units are not touched).

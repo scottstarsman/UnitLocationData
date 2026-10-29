@@ -492,7 +492,9 @@ Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). 
 
 ## Activity rollout, batch 1 (29 October 2026): open points
 
-- US: batch 1 annotates existing rows only. Most values are `in_line` points; the rest periods (for example the 2nd and 3rd Armored and the 1st Division in late 1944, the 28th after the Hürtgen) have no rows yet and need new source-backed claims with `refitting` spans.
-- US: ten `in_line` starts (2nd, 5th, 8th, 35th, 69th, 80th and 89th Divisions; 5th, 6th and 7th Armored) and the 4th Armored `reserve` start of 10 January 1945 are open; they read as possible for 30 days. Closing them needs a dated source for the first relief.
+The follow-up pass of 29 October 2026 answered the first points: rest and refit periods, span closures and closing rows at 8 May 1945. These points are still open:
+
+- US: 10 starts are still open, so each reads as possible for 30 days: the 5th and 8th Infantry Division entries into combat (July 1944), the 30th's Rhine crossing, the 79th's return on 13 November 1944, the 83rd's return on 1 March 1945, the 4th Armored reserve of 10 January 1945, the 7th Armored rest near Maastricht from 8 November 1944, the 10th Armored attack of 20 February 1945, the 12th Armored from 20 March 1945 and the 14th Armored from 15 March 1945. Closing them needs a dated relief or the next state from a source.
+- US: 12 divisions have no closing row at 8 May 1945 (see the changelog). The 28th Division's rest after the Hürtgen is not in its Wikipedia article. It needs MacDonald or Cole.
+- US: every follow-up row rests on one source family (Wikipedia, which follows the CMH combat chronicles). A pass against the Green Books could raise rows to 0.7.
 - US: the 89th Division's disputed Moselle rows are left blank until the conflict is settled.
-- US: the end of the war (8 May 1945) is not marked; rows after the last combat row stay blank.

@@ -489,3 +489,10 @@ Resolved: Scott accepted all ten recommendations on 29 October 2026 (PR #38), wi
 Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the seven US units of the approved list (rows 13 to 19): the 1st Special Service Force, the 1st Airborne Task Force, the 517th Parachute Regimental Combat Team, Task Force Butler, Task Force A, and the 509th and 551st Parachute Infantry Battalions, with army, corps, division and task-force relations (`CR1023` to `CR1039`); see `docs/changelog.md` for the rows, the inferred values and the corrections.
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
+
+## Activity rollout, batch 1 (29 October 2026): open points
+
+- US: batch 1 annotates existing rows only. Most values are `in_line` points; the rest periods (for example the 2nd and 3rd Armored and the 1st Division in late 1944, the 28th after the Hürtgen) have no rows yet and need new source-backed claims with `refitting` spans.
+- US: ten `in_line` starts (2nd, 5th, 8th, 35th, 69th, 80th and 89th Divisions; 5th, 6th and 7th Armored) and the 4th Armored `reserve` start of 10 January 1945 are open; they read as possible for 30 days. Closing them needs a dated source for the first relief.
+- US: the 89th Division's disputed Moselle rows are left blank until the conflict is settled.
+- US: the end of the war (8 May 1945) is not marked; rows after the last combat row stay blank.

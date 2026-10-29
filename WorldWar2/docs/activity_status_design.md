@@ -1,6 +1,6 @@
 # Activity status: design note and pilot (October 2026)
 
-Status: **pilot**. The columns exist in every claim file, but only 13 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
+Status: **rollout in progress** (batch 1 of about 6, October 2026: 30 US divisions, 113 rows; see section 9). The columns exist in every claim file, but only 43 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
 
 ## 1. Why
 
@@ -95,3 +95,11 @@ The dataset has 387 units and about 1,800 claims. About 120 divisions and fortre
 - Review, tests and the grid are about 10 hours.
 
 **Total: about 80–95 hours**, best done nationality by nationality, in batches of about 15 units, like the brigade batches. Corps, armies and brigades could stay blank; their state is mostly that of their divisions.
+
+## 9. Rollout
+
+Scott approved the rollout on 29 October 2026, in branches of about 30 units, starting with divisions and fortresses; corps, armies and brigades may stay blank.
+
+| batch | units | rows | notes |
+|---|---|---|---|
+| 1 | 30 US divisions (20 infantry, 10 armored) | 113 (89 stated, 24 inferred) | existing rows only; mostly `in_line` points; spans are not yet closed with new claims (see `docs/changelog.md` and the roadmap) |

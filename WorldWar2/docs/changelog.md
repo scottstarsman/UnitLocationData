@@ -2,6 +2,58 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-1: activity status, rollout batch 1 (29 October 2026)
+
+Scott approved the rollout on 29 October 2026 in batches of about 30 units. Batch 1 covers 30 US divisions: the 1st, 2nd, 3rd, 4th, 5th, 8th, 9th, 28th, 29th, 30th, 35th, 36th, 45th, 69th, 79th, 80th, 83rd, 89th, 90th and 95th Infantry Divisions and the 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 10th, 12th and 14th Armored Divisions (the US divisions with the most rows; the pilot units are not touched).
+
+113 existing rows are annotated (89 stated, 24 inferred): 110 in_line, 3 reserve, no refitting, garrison or transit. No new claim, place, relation or reference; next ids unchanged (C1821, PL0938). No location, date or confidence value changed. Every changed row has an `Activity:` note with the old value (blank), the new value and the reason. Row confidence is unchanged; activity confidence is computed at query time (`scripts/activity.py`).
+
+Reading rules used in this batch:
+
+- A row whose cited source describes the division itself fighting on the date (attacking, landing, capturing, defending) is `in_line`, `point`, `stated`.
+- A row dating the division's entry into combat or into the line is `in_line`, `start`, `stated` (open; read as possible for at most 30 days).
+- A row describing only part of the division (a combat command, task force, regiment, battalion or patrol) is `in_line`, `point`, `inferred` (main-body rule; capped at 0.3).
+- A row naming reserve in words is `reserve` (`point`, or `start` for the 4th Armored pulled back into reserve on 10 January 1945).
+- Command post moves, command changes and arrivals without combat are left blank: they do not show the state.
+- The 6th Armored containing Lorient (15 August 1944) is `in_line`, not `garrison`; garrison is kept for the fortress garrisons.
+- The 4th Armored's entry into combat (17 July 1944) is a point, not a start: a start would run unbroken to its reserve start of 10 January 1945.
+- Disputed rows (89th Division Moselle crossing) are left blank.
+
+Rows changed (old value blank, new value as listed):
+
+- 1st Infantry Division: C0025 in_line point (stated, 1944-06-06); C0045 in_line point (stated, 1944-06-07); C0086 in_line point (stated, 1944-06-12); C0099 in_line point (stated, 1944-06-13); C0506 in_line point (stated, 1944-07-26); C0618 in_line point (stated, 1945-03-09); C0675 in_line point (inferred, 1945-04-19).
+- 2nd Infantry Division: C0046 in_line start (stated, 1944-06-07); C0073 in_line point (stated, 1944-06-10); C0101 in_line point (stated, 1944-06-13); C0348 in_line point (stated, 1944-08-25); C0349 in_line point (stated, 1944-09-18); C0596 in_line point (stated, 1945-02-01); C0667 in_line point (stated, 1945-04-15).
+- 3rd Infantry Division: C0351 in_line point (stated, 1944-08-15); C0677 in_line point (stated, 1945-04-20).
+- 4th Infantry Division: C0027 in_line point (stated, 1944-06-06); C0047 in_line point (stated, 1944-06-07); C0139 in_line point (stated, 1944-06-19); C0153 in_line point (stated, 1944-06-23); C0593 in_line point (inferred, 1945-01-29).
+- 5th Infantry Division: C0367 in_line start (stated, 1944-07-14); C0373 in_line point (stated, 1944-09-10); C0604 in_line point (stated, 1945-02-07); C0631 in_line point (inferred, 1945-03-22).
+- 8th Infantry Division: C0376 in_line start (stated, 1944-07-06); C0379 in_line point (stated, 1944-08-25); C0663 in_line point (inferred, 1945-04-14); C0697 in_line point (stated, 1945-05-03).
+- 9th Infantry Division: C0077 in_line point (stated, 1944-06-10); C0113 in_line point (stated, 1944-06-14); C0135 in_line point (stated, 1944-06-18); C0157 in_line point (stated, 1944-06-25); C0208 in_line point (stated, 1944-06-29); C0597 in_line point (inferred, 1945-02-01); C0672 in_line point (stated, 1945-04-17).
+- 28th Infantry Division: C0547 in_line point (stated, 1944-12-16).
+- 29th Infantry Division: C0026 in_line point (stated, 1944-06-06); C0056 in_line point (stated, 1944-06-08); C0112 in_line point (stated, 1944-06-14); C0130 in_line point (stated, 1944-06-17); C0407 in_line point (stated, 1944-08-25); C0408 in_line point (stated, 1944-09-18).
+- 30th Infantry Division: C0074 in_line point (stated, 1944-06-10); C0118 in_line point (stated, 1944-06-15); C0416 in_line point (stated, 1944-08-06); C0417 in_line point (stated, 1944-08-07); C0673 in_line point (stated, 1945-04-17).
+- 35th Infantry Division: C0424 in_line start (stated, 1944-07-11).
+- 36th Infantry Division: C0436 in_line point (stated, 1944-08-15); C0438 in_line point (stated, 1944-09-08).
+- 45th Infantry Division: C0442 in_line point (stated, 1944-08-15); C0670 in_line point (stated, 1945-04-16); C0694 in_line point (stated, 1945-04-30).
+- 69th Infantry Division: C0608 in_line start (stated, 1945-02-12); C0615 in_line point (stated, 1945-03-06); C0674 in_line point (stated, 1945-04-18).
+- 79th Infantry Division: C0087 in_line point (stated, 1944-06-12); C0140 in_line point (stated, 1944-06-19); C0168 in_line point (stated, 1944-06-26); C0451 in_line point (stated, 1944-08-19).
+- 80th Infantry Division: C0458 in_line start (stated, 1944-08-08); C0606 in_line point (stated, 1945-02-07).
+- 83rd Infantry Division: C0134 in_line point (stated, 1944-06-18); C0660 in_line point (inferred, 1945-04-13).
+- 89th Infantry Division: C0622 in_line start (stated, 1945-03-12); C0638 in_line point (stated, 1945-03-26).
+- 90th Infantry Division: C0029 in_line point (stated, 1944-06-06); C0076 in_line point (stated, 1944-06-10); C0103 in_line point (stated, 1944-06-13); C0125 in_line point (stated, 1944-06-16); C0142 in_line point (inferred, 1944-06-19); C0598 in_line point (stated, 1945-02-01).
+- 95th Infantry Division: C0612 in_line point (inferred, 1945-03-03); C0614 in_line point (stated, 1945-03-05); C0661 in_line point (stated, 1945-04-13).
+- 2nd Armored Division: C0061 reserve point (stated, 1944-06-09); C0100 in_line point (inferred, 1944-06-13); C0507 in_line point (inferred, 1944-07-26); C0654 in_line point (inferred, 1945-04-12).
+- 3rd Armored Division: C0207 in_line point (stated, 1944-06-29); C0508 in_line point (inferred, 1944-07-27); C0239 in_line point (stated, 1944-09-03); C0652 in_line point (stated, 1945-04-11); C0664 in_line point (inferred, 1945-04-15).
+- 4th Armored Division: C0246 in_line point (stated, 1944-07-17); C0247 in_line point (inferred, 1944-07-30); C0249 in_line point (stated, 1944-08-04); C0251 in_line point (inferred, 1944-08-12); C0254 in_line point (inferred, 1944-08-25); C0258 in_line point (stated, 1944-09-11); C0259 in_line point (stated, 1944-09-19); C0556 in_line point (stated, 1944-12-22); C0557 in_line point (stated, 1944-12-26); C0579 reserve start (stated, 1945-01-10); C0648 in_line point (inferred, 1945-04-04).
+- 5th Armored Division: C0262 in_line start (stated, 1944-08-02); C0267 in_line point (inferred, 1944-09-11); C0655 in_line point (stated, 1945-04-12).
+- 6th Armored Division: C0271 in_line start (stated, 1944-07-27); C0275 in_line point (stated, 1944-08-15).
+- 7th Armored Division: C0279 in_line start (stated, 1944-08-13); C0592 in_line point (stated, 1945-01-23).
+- 8th Armored Division: C0602 in_line point (inferred, 1945-02-06); C0637 in_line point (inferred, 1945-03-26).
+- 10th Armored Division: C0611 in_line point (inferred, 1945-03-01).
+- 12th Armored Division: C0585 in_line point (stated, 1945-01-16); C0599 reserve point (stated, 1945-02-04); C0630 in_line point (stated, 1945-03-20); C0634 in_line point (inferred, 1945-03-24).
+- 14th Armored Division: C0594 in_line point (inferred, 1945-01-31); C0635 in_line point (inferred, 1945-03-24); C0693 in_line point (stated, 1945-04-30).
+
+Tests: semantic scenario 27 (11 expectations); scenario 26 now counts the 13 pilot units only.
+
 ## activity-status-pilot: activity status design and pilot (29 October 2026)
 
 Design note: `docs/activity_status_design.md`. Three optional claim columns are added: `activity_status` (in_line, reserve, refitting, garrison, transit), `activity_basis` (stated, inferred) and `activity_span` (start, end, point). There is also a new note label, `Activity:`, a validator check (`check_activity`), `scripts/activity.py`, an `activity:` line in `who_controls`, and semantic scenario 26 (18 expectations). All 318 claim files gained the three blank columns, and existing rows are not backfilled.

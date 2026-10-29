@@ -78,7 +78,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | units in `data/units.csv` | 370: 285 active (have claims), 85 placeholders |
 | claim files (one per active unit) | 285 |
 | conflict groups / claims in a group | 24 / 52 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 844 / 5 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 840 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 959 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2457 |
@@ -97,7 +97,7 @@ Claims by branch: Army 1080, Armoured 374, Waffen-SS 95, Airborne 62, Luftwaffe 
 
 Claims by event type: attack 360, other 177, command_change 172, defense 171, hq_move 151, capture 146, arrival 95, hq_observation 61, relocation 56, regroup 51, landing 50, subordinate_assignment 45, surrender 34, counterattack 31, withdrawal 30, activation 15, redesignation 8, destruction 4.
 
-Claims by status: preferred 1622, alternate 19, disputed 16. Claims by confidence: 0.3 315, 0.5 814, 0.7 496, 0.9 32.
+Claims by status: preferred 1622, alternate 19, disputed 16. Claims by confidence: 0.3 315, 0.5 807, 0.7 503, 0.9 32.
 
 Placeholder units by nationality: Germany 74, UK 6, Allied 3, US 2.
 
@@ -109,7 +109,7 @@ Evidence roles of relation links: observed_during 1126, asserts_start 1050, asse
 
 References by source family: wikipedia 207, lexikon_wehrmacht_de 196, us_army_cmh 194, ww2byday_com 33, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, us_army_unit_history 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 230, encyclopedia 207, official_history 137, assignment_table 65, news_or_web_article 19, archive_document 8, monument_or_memorial 6, unit_history 4, gazetteer_geocoder 2, other 2.
 
-Places by kind: point 740, area 86, line 18.
+Places by kind: point 736, area 86, line 18.
 
 <!-- counts:end -->
 

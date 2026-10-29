@@ -25,7 +25,7 @@ PL0023,"Avranches, Manche",,point,48.6850,-1.3556,5,FR,Lower Normandy,R001,Wikip
 PL0024,Azeville,,point,49.4591,-1.3135,5,FR,Lower Normandy,R002,OSM Nominatim,1,1,1944-06-07,1944-06-07
 PL0025,"Baccarat, Meurthe-et-Moselle",,point,48.4492,6.7389,5,FR,Lorraine,R001,Wikipedia (fr): Baccarat,2,2,1944-10-31,1944-11-12
 PL0026,"Bagnoles de l'Orne, Orne",,point,48.5539,-0.4229,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Bagnoles de l'Orne, Orne, France)",1,1,1944-08-15,1944-08-15
-PL0027,"Bains-les-Bains, Vosges",,point,47.9962,6.2566,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Bains-les-Bains, Vosges, France)",2,2,1944-09-18,1944-09-20
+PL0027,"Bains-les-Bains, Vosges",La Vôge-les-Bains,point,47.9962,6.2566,3,FR,Lorraine,R002,"OpenStreetMap Nominatim (Bains-les-Bains, Vosges, France)",3,3,1944-09-17,1944-09-20
 PL0028,"Balleroy, Calvados",,point,49.1809,-0.8370,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Balleroy, Calvados, France)",2,1,1944-07-13,1944-07-14
 PL0029,"Barenton, Manche",,point,48.5997,-0.8324,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Barenton, Manche, France)",3,3,1944-08-06,1944-08-13
 PL0030,Barneville-sur-Mer,,point,49.381,-1.755,1,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-18,1944-06-18
@@ -167,7 +167,7 @@ PL0167,"Harville, Eure-et-Loire",,point,48.3359,1.3031,3,FR,Centre,R002,"OpenStr
 PL0168,"Hasselt, Limbourg",,point,50.9304,5.3378,25,BE,Flanders,R002,"OpenStreetMap Nominatim (Hasselt, Limbourg, Belgium)",1,1,1944-09-12,1944-09-12
 PL0169,Le Havre,,point,49.49,0.1,5,FR,Haute-Normandie,R001,Wikipedia,5,5,1944-06-06,1944-09-12
 PL0170,"La-Haye-du-Puits, Manche",,point,49.2911,-1.5451,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (La-Haye-du-Puits, Manche, France)",3,3,1944-07-03,1944-07-25
-PL0171,"Hebecrevon, Manche",Hébécrevon,point,49.1269,-1.165,3,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-12,1944-07-27
+PL0171,"Hebecrevon, Manche",Hébécrevon,point,49.1269,-1.165,3,FR,Lower Normandy,R001,Wikipedia,3,3,1944-06-12,1944-07-27
 PL0172,"Heerlen, Limburg",,point,50.8833,5.9833,5,NL,Limburg,R001,Wikipedia (en): Heerlen,2,2,1944-10-16,1944-11-08
 PL0173,Hill 112,,point,49.1236,-0.4605,5,FR,Lower Normandy,R002,OSM Nominatim,4,3,1944-06-28,1944-07-17
 PL0175,"Houdelaincourt, Meuse",,point,48.5495,5.4711,10,FR,Lorraine,R002,"OpenStreetMap Nominatim (Houdelaincourt, Meuse, France)",1,1,1944-09-01,1944-09-01
@@ -329,7 +329,7 @@ PL0333,"Saint-Lô, Manche","Saint-Lô; St-Lo, Manche",point,49.12,-1.09,3,FR,Low
 PL0334,Saint-Lô sector,,area,49.12,-1.09,10,FR,Lower Normandy,R001,Wikipedia,7,4,1944-06-08,1944-07-24
 PL0335,"Saint-Malo, Ille-et-Vilaine",,point,48.6494,-2.0261,3,FR,Brittany,R001,Wikipedia (en): Saint-Malo,1,1,1944-08-17,1944-08-17
 PL0336,"St-Oedenrode, Nord Brabant, Netherlands",,point,51.5646,5.4610,5,NL,North Brabant,R002,"OpenStreetMap Nominatim (St-Oedenrode, Nord Brabant, Netherlands)",3,1,1944-09-20,1944-09-23
-PL0337,"Stolberg, Rhineland",,point,50.7703,6.2296,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Stolberg, Germany)",1,1,1944-09-21,1944-09-21
+PL0337,"Stolberg, Rhineland",Stolberg (Rhineland),point,50.7703,6.2296,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Stolberg, Germany)",4,3,1944-09-16,1944-11-16
 PL0338,"Saint-Sauveur-Lendelin (Château des Mares), Manche",,point,49.1274,-1.4271,5,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Château des Mares, Saint-Sauveur-Lendelin)",1,1,1944-08-01,1944-08-01
 PL0339,Saint-Sauveur-le-Vicomte,,point,49.3872,-1.5308,1,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-16,1944-06-16
 PL0340,"St-Sauveur, Manche",,point,49.2963,-1.1523,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Saint-Sauveur, Manche, France)",1,1,1944-07-25,1944-07-25
@@ -514,12 +514,11 @@ PL0518,"Le Mesnil-Adelée, Manche",,point,48.7011,-1.0747,3,FR,Normandy,R001,Wik
 PL0519,"Juvigny-le-Tertre, Manche",Juvigny,point,48.6775,-1.02,3,FR,Normandy,R001,Wikipedia article Juvigny-le-Tertre,1,1,1944-08-07,1944-08-07
 PL0520,"Chérencé-le-Roussel, Manche",,point,48.7094,-1.0156,3,FR,Normandy,R001,Wikipedia article Chérencé-le-Roussel,1,1,1944-08-07,1944-08-07
 PL0521,"Le Dézert, Manche",le Désert (CMH spelling),point,49.205,-1.1633,3,FR,Normandy,R001,Wikipedia article Le Dézert,3,2,1944-07-09,1944-07-11
-PL0522,"Hébécrevon, Manche",,point,49.1269,-1.165,3,FR,Normandy,R001,Wikipedia article Hébécrevon,1,1,1944-07-25,1944-07-25
 PL0523,"Le Bourg-Saint-Léonard, Orne",le Bourg-St.-Léonard,point,48.7611,0.1061,3,FR,Normandy,R001,Wikipedia article Le Bourg-Saint-Léonard,1,1,1944-08-17,1944-08-17
 PL0524,"Périers, Manche",,point,49.1872,-1.4061,3,FR,Normandy,R001,"Wikipedia article Périers, Manche",7,4,1944-07-04,1944-07-24
 PL0525,Bretteville-sur-Laize,,point,49.0458,-0.3239,5,FR,Lower Normandy,R001,Wikipedia article Bretteville-sur-Laize,5,4,1944-07-06,1944-08-08
 PL0526,Maltot,,point,49.13,-0.4217,3,FR,Lower Normandy,R001,Wikipedia article Maltot,2,2,1944-07-11,1944-07-17
-PL0527,Évrecy,Evrecy,point,49.1006,-0.5019,5,FR,Lower Normandy,R001,Wikipedia article Évrecy,1,1,1944-07-08,1944-07-08
+PL0527,Évrecy,"Evrecy; Evrecy, Calvados",point,49.1006,-0.5019,5,FR,Lower Normandy,R001,Wikipedia article Évrecy,3,3,1944-07-08,1944-08-04
 PL0528,Potigny,,point,48.9719,-0.2467,5,FR,Lower Normandy,R001,Wikipedia article Potigny,1,1,1944-07-11,1944-07-11
 PL0529,"Cagny, Calvados",Cagny,point,49.1461,-0.2569,3,FR,Lower Normandy,R001,"Wikipedia article Cagny, Calvados",3,3,1944-07-18,1944-07-18
 PL0530,Montgardon,,point,49.2811,-1.5717,3,FR,Lower Normandy,R001,Wikipedia article Montgardon,1,1,1944-07-03,1944-07-03
@@ -548,7 +547,6 @@ PL0553,"Arnhem, Gelderland",,point,51.9833,5.9167,5,NL,Gelderland,R001,Wikipedia
 PL0554,"Nijmegen, Gelderland",,point,51.8475,5.8625,5,NL,Gelderland,R001,Wikipedia article Nijmegen,13,11,1944-09-17,1945-04-02
 PL0555,"Best, Noord-Brabant",,point,51.5034,5.3939,3,NL,Noord-Brabant,R002,OpenStreetMap Nominatim (Best),1,1,1944-09-23,1944-09-23
 PL0556,"Neufchâteau, Vosges",,point,48.3569,5.7086,5,FR,Lorraine,R002,"OpenStreetMap Nominatim (Neufchâteau, Vosges)",1,1,1944-09-05,1944-09-05
-PL0557,"Stolberg (Rhineland), North Rhine-Westphalia",,point,50.7703,6.2296,5,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Stolberg, Städteregion Aachen)",3,2,1944-09-16,1944-11-16
 PL0558,"Geilenkirchen, North Rhine-Westphalia",,point,50.9636,6.12,5,DE,North Rhine-Westphalia,R002,OpenStreetMap Nominatim (Geilenkirchen),5,4,1944-09-18,1945-01-24
 PL0559,"Schevenhütte, North Rhine-Westphalia",,point,50.7685,6.3249,3,DE,North Rhine-Westphalia,R002,"OpenStreetMap Nominatim (Schevenhütte, Stolberg)",1,1,1944-09-17,1944-09-17
 PL0560,"Sillegny, Moselle",,point,48.9869,6.1605,3,FR,Lorraine,R002,OpenStreetMap Nominatim (Sillegny),2,2,1944-09-17,1944-09-17
@@ -715,7 +713,6 @@ PL0720,"Barneveld, Gelderland",,point,52.1715,5.6454,5,NL,Gelderland,R002,"OpenS
 PL0721,"Delfzijl, Groningen",,point,53.3326,6.9135,5,NL,Groningen,R002,"OpenStreetMap Nominatim (Delfzijl, Netherlands)",1,1,1945-05-01,1945-05-01
 PL0722,"Epron, Calvados",,point,49.2227,-0.371,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Epron, Calvados, France)",1,1,1944-07-08,1944-07-08
 PL0723,"Bougy, Calvados",,point,49.1121,-0.5255,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Bougy, Calvados, France)",1,1,1944-07-15,1944-07-15
-PL0724,"Evrecy, Calvados",,point,49.0999,-0.5011,5,FR,Calvados,R002,"OpenStreetMap Nominatim (Evrecy, Calvados, France)",2,2,1944-07-15,1944-08-04
 PL0725,"Vendes, Calvados",,point,49.1467,-0.599,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Vendes, Calvados, France)",1,1,1944-07-15,1944-07-15
 PL0726,"Escoville, Calvados",,point,49.2104,-0.2386,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Escoville, Calvados, France)",1,1,1944-07-18,1944-07-18
 PL0727,"Sannerville, Calvados",,point,49.1812,-0.2216,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Sannerville, Calvados, France)",1,1,1944-07-18,1944-07-18
@@ -826,7 +823,6 @@ PL0831,"Royan, Charente-Maritime",,point,45.6245,-1.0288,3,FR,Nouvelle-Aquitaine
 PL0832,"Bad Reichenhall, Bayern",,point,47.7223,12.8761,3,DE,Bayern,R002,"OpenStreetMap Nominatim (Bad Reichenhall, Germany)",1,1,1945-05-04,1945-05-04
 PL0833,"Toulon, Var",,point,43.1257,5.9305,5,FR,Provence-Alpes-Côte d'Azur,R002,"OpenStreetMap Nominatim (Toulon, France)",3,2,1944-08-20,1944-08-28
 PL0834,"Karlsruhe, Baden-Württemberg",,point,49.0069,8.4034,5,DE,Baden-Württemberg,R002,"OpenStreetMap Nominatim (Karlsruhe, Germany)",2,2,1945-04-03,1945-04-04
-PL0835,"Bains-les-Bains (La Vôge-les-Bains), Vosges",,point,47.9962,6.2566,3,FR,Grand Est,R002,"OpenStreetMap Nominatim (Bains-les-Bains, France)",1,1,1944-09-17,1944-09-17
 PL0836,"Speyer, Rheinland-Pfalz",,point,49.3166,8.4336,3,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Speyer, Germany)",2,2,1945-03-31,1945-03-31
 PL0837,"Aix-en-Provence, Bouches-du-Rhône",,point,43.5298,5.4475,5,FR,Provence-Alpes-Côte d'Azur,R002,"OpenStreetMap Nominatim (Aix-en-Provence, France)",1,1,1944-09-01,1944-09-01
 PL0838,"Chalampé, Haut-Rhin",,point,47.8209,7.541,3,FR,Grand Est,R002,"OpenStreetMap Nominatim (Chalampé, France)",1,1,1945-02-09,1945-02-09

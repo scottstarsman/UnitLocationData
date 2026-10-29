@@ -533,12 +533,12 @@
    "properties": {
     "place_id": "PL0027",
     "name": "Bains-les-Bains, Vosges",
-    "alt_names": null,
+    "alt_names": "La Vôge-les-Bains",
     "kind": "point",
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -3378,7 +3378,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -6613,12 +6613,12 @@
    "properties": {
     "place_id": "PL0337",
     "name": "Stolberg, Rhineland",
-    "alt_names": null,
+    "alt_names": "Stolberg (Rhineland)",
     "kind": "point",
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -10306,26 +10306,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -1.165,
-     49.1269
-    ]
-   },
-   "properties": {
-    "place_id": "PL0522",
-    "name": "Hébécrevon, Manche",
-    "alt_names": null,
-    "kind": "point",
-    "precision_km": 3,
-    "country": "FR",
-    "region": "Normandy",
-    "claims_count": 1
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      0.1061,
      48.7611
     ]
@@ -10413,12 +10393,12 @@
    "properties": {
     "place_id": "PL0527",
     "name": "Évrecy",
-    "alt_names": "Evrecy",
+    "alt_names": "Evrecy; Evrecy, Calvados",
     "kind": "point",
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -10979,26 +10959,6 @@
     "country": "FR",
     "region": "Lorraine",
     "claims_count": 1
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     6.2296,
-     50.7703
-    ]
-   },
-   "properties": {
-    "place_id": "PL0557",
-    "name": "Stolberg (Rhineland), North Rhine-Westphalia",
-    "alt_names": null,
-    "kind": "point",
-    "precision_km": 5,
-    "country": "DE",
-    "region": "North Rhine-Westphalia",
-    "claims_count": 3
    }
   },
   {
@@ -14326,26 +14286,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -0.5011,
-     49.0999
-    ]
-   },
-   "properties": {
-    "place_id": "PL0724",
-    "name": "Evrecy, Calvados",
-    "alt_names": null,
-    "kind": "point",
-    "precision_km": 5,
-    "country": "FR",
-    "region": "Calvados",
-    "claims_count": 2
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      -0.599,
      49.1467
     ]
@@ -16539,26 +16479,6 @@
     "country": "DE",
     "region": "Baden-Württemberg",
     "claims_count": 2
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     6.2566,
-     47.9962
-    ]
-   },
-   "properties": {
-    "place_id": "PL0835",
-    "name": "Bains-les-Bains (La Vôge-les-Bains), Vosges",
-    "alt_names": null,
-    "kind": "point",
-    "precision_km": 3,
-    "country": "FR",
-    "region": "Grand Est",
-    "claims_count": 1
    }
   },
   {

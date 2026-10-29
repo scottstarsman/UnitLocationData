@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-2: 86th Infantry Division 8 May 1945 row (29 October 2026)
+
+Scott accepted all batch-2 recommendations on 29 October 2026; the only data change is this one. Source: the CMH combat chronicle, 86th Infantry Division (R750). 1 new claim; no existing row changed; no new place or reference. Next ids: claim C1988, place PL0978, reference R759.
+
+- C1987, 8 May 1945, Burghausen (PL0509): in_line point (stated), 0.3. The chronicle says the division "was securing the left flank of the XV Corps, when the war in Europe ended"; it names no place, so the command post at Burghausen that day (C0712) is used and the confidence stays at 0.3.
+
+Batch 2 now has 143 activity rows (125 stated, 18 inferred) and 20 of the 30 divisions have an 8 May row. The other deferred items stay in the roadmap. Tests: scenario 28 has 15 expectations (439 in all).
+
 ## activity-rollout-2: activity status for 30 more divisions (29 October 2026)
 
 Scott approved batch 2 on 29 October 2026, after batch 1 was merged (PR #41). Branch `activity-rollout-2` from `main` `5929279`.

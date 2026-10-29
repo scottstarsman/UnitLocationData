@@ -74,7 +74,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 1986, dated 1944-06-06 to 1945-05-10 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 1987, dated 1944-06-06 to 1945-05-10 |
 | units in `data/units.csv` | 387: 318 active (have claims), 69 placeholders |
 | claim files (one per active unit) | 318 |
 | conflict groups / claims in a group | 24 / 52 |
@@ -89,15 +89,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 41 |
 
-Claims by nationality: US 783, Germany 693, UK 256, Canada 142, France 50, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
+Claims by nationality: US 784, Germany 693, UK 256, Canada 142, France 50, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
 
-Claims by echelon: division 1234, corps 336, army 161, brigade 143, army_group 45, regiment/battle_group 35, other 22, battalion 10.
+Claims by echelon: division 1235, corps 336, army 161, brigade 143, army_group 45, regiment/battle_group 35, other 22, battalion 10.
 
-Claims by branch: Army 1235, Armoured 506, Waffen-SS 102, Airborne 95, Luftwaffe 48.
+Claims by branch: Army 1236, Armoured 506, Waffen-SS 102, Airborne 95, Luftwaffe 48.
 
-Claims by event type: attack 437, other 224, defense 217, command_change 174, capture 172, hq_move 151, arrival 106, regroup 97, relocation 89, hq_observation 61, landing 60, subordinate_assignment 45, withdrawal 43, counterattack 42, surrender 39, activation 16, redesignation 8, destruction 5.
+Claims by event type: attack 437, other 225, defense 217, command_change 174, capture 172, hq_move 151, arrival 106, regroup 97, relocation 89, hq_observation 61, landing 60, subordinate_assignment 45, withdrawal 43, counterattack 42, surrender 39, activation 16, redesignation 8, destruction 5.
 
-Claims by status: preferred 1951, alternate 19, disputed 16. Claims by confidence: 0.3 420, 0.5 945, 0.7 558, 0.9 63.
+Claims by status: preferred 1952, alternate 19, disputed 16. Claims by confidence: 0.3 421, 0.5 945, 0.7 558, 0.9 63.
 
 Placeholder units by nationality: Germany 64, Allied 3, US 2.
 

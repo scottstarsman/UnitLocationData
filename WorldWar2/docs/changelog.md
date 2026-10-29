@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cleanup-2-late-war-west: clean-up of the late-war Western Front data (29 October 2026)
+
+Scott asked for a review and clean-up pass of the Western Front data (6 June 1944 to 8 May 1945, division level and above, all nationalities) using only the sources already in the data. The audit is `docs/review/cleanup2_audit.md`. One commit per item.
+
+- **Duplicate places merged (4).** Four places were entered twice by different batches: Hébécrevon (Manche), Stolberg (Rhineland), Évrecy (Calvados) and Bains-les-Bains (Vosges). In each pair the older row survives; the newer row is retired in `data/place_merges.csv` (the id is not reused) and its name is kept as an alias of the survivor. Seven claims were re-pointed: the old value is the retired place, the new value is the survivor, the reason is that both rows are the same commune; each claim note says so. Coordinates did not change: for Hébécrevon, Stolberg and Bains-les-Bains the two points were identical; the two Évrecy claims of the British batch keep their own Nominatim point (about 100 m from the Wikipedia point of the survivor) with a `coord_override` that says so.
 ## rule-copyrighted-notes: notes from copyrighted sources stay private (29 October 2026)
 
 Docs and rules only, from `main` (`941b8b0`), with `main` (`d99fc07`) merged in; no data changed. Scott agreed that notes or extracts from copyrighted sources are kept only on the owner's working computer and in his Google Drive (`WWII Unit Locations` folder) and are never committed to the remote repository.

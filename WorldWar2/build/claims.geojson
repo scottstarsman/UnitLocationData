@@ -49780,6 +49780,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2642,
+     50.2888
+    ]
+   },
+   "properties": {
+    "claim_id": "C1785",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-19",
+    "place_id": "PL0924",
+    "location_name": "Schönberg-Bleialf road fork, near Schönberg, Sankt Vith, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "tanks reach the Schönberg-Bleialf road fork and finish off the trapped 423d Infantry about 1400",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R392;R002",
+    "source_locator": "R392: p. 170"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -50149,6 +50190,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0549,
+     50.3757
+    ]
+   },
+   "properties": {
+    "claim_id": "C1783",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-150B",
+    "unit_name": "Panzer-Brigade 150",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-20",
+    "place_id": "PL0922",
+    "location_name": "Ligneuville, Bellevaux-Ligneuville, Liège",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "arrival",
+    "current_activity": "assembles at Ligneuville, five miles south of Malmédy, for an attack on the town",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R386;R707;R002",
+    "source_locator": "R386: p. 360"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -50224,6 +50306,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R698;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0276,
+     50.4265
+    ]
+   },
+   "properties": {
+    "claim_id": "C1784",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-150B",
+    "unit_name": "Panzer-Brigade 150",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-21",
+    "place_id": "PL0923",
+    "location_name": "Malmédy, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "attacks Malmédy before dawn in three groups and is repulsed by the US 30th Infantry Division",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R386;R707;R002",
+    "source_locator": "R386: p. 361"
    }
   },
   {
@@ -50436,6 +50559,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0706,
+     50.2871
+    ]
+   },
+   "properties": {
+    "claim_id": "C1786",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-22",
+    "place_id": "PL0925",
+    "location_name": "Rodt, Sankt Vith, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "captures Rodt and cuts the St. Vith-Vielsalm road",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R387;R002",
+    "source_locator": "R387: p. 417"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -50600,6 +50764,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9348,
+     49.8845
+    ]
+   },
+   "properties": {
+    "claim_id": "C1789",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEGR",
+    "unit_name": "Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL0928",
+    "location_name": "Eschdorf, Esch-sur-Sûre, Luxembourg (part of the brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "part of the brigade is fed piecemeal against the US 26th Infantry Division around Eschdorf",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6816,
      49.9665
     ]
@@ -50675,6 +50880,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R391;R002",
     "source_locator": "R391: p. 552, 553, 554"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4729,
+     50.2579
+    ]
+   },
+   "properties": {
+    "claim_id": "C1787",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-26",
+    "place_id": "PL0926",
+    "location_name": "Hampteau, Hotton, Luxembourg (BE) (first contingent)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "first contingent enters the line opposite Hampteau and attacks at 1400; withdrawn later that afternoon",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 576"
    }
   },
   {
@@ -50764,6 +51010,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8764,
+     49.9101
+    ]
+   },
+   "properties": {
+    "claim_id": "C1790",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEGR",
+    "unit_name": "Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-27",
+    "place_id": "PL0929",
+    "location_name": "Liefrange, Lac de la Haute-Sûre, Luxembourg (two rifle battalions and a few tanks)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "counterattack",
+    "current_activity": "two rifle battalions and a few tanks strike Liefrange to bar a crossing of the Sûre",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 638"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5937,
      50.2846
     ]
@@ -50798,6 +51085,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R696;R697;R002",
     "source_locator": "R696: p. 602"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.553,
+     50.0491
+    ]
+   },
+   "properties": {
+    "claim_id": "C1788",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-28",
+    "place_id": "PL0927",
+    "location_name": "Bois de Herbaimont, Luxembourg (BE) (advance elements)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "advance elements arrive in the Bois de Herbaimont north of the Marche-Bastogne road",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 614"
    }
   },
   {
@@ -50880,6 +51208,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R671;R002",
     "source_locator": "R668: p. 452; R671: p. 239"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9325,
+     49.9661
+    ]
+   },
+   "properties": {
+    "claim_id": "C1791",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEGR",
+    "unit_name": "Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-31",
+    "place_id": "PL0382",
+    "location_name": "Wiltz, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "withdrawn into the Seventh Army reserve at Wiltz",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R001",
+    "source_locator": "R709: p. 641"
    }
   },
   {
@@ -62941,6 +63310,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.7527,
+     51.7177
+    ]
+   },
+   "properties": {
+    "claim_id": "C1792",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZB-WESTF",
+    "unit_name": "SS-Panzer-Brigade Westfalen (SS Ersatzbrigade Westfalen)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Waffen-SS",
+    "date": "1945-03-30",
+    "place_id": "PL0930",
+    "location_name": "Paderborn, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "first engaged against the US 3rd Armored Division on the approach to Paderborn",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R710;R002",
+    "source_locator": "R566: p. 352"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9167,
      50.2667
     ]
@@ -63672,6 +64082,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 307"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7527,
+     51.7177
+    ]
+   },
+   "properties": {
+    "claim_id": "C1793",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZB-WESTF",
+    "unit_name": "SS-Panzer-Brigade Westfalen (SS Ersatzbrigade Westfalen)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Waffen-SS",
+    "date": "1945-04-01",
+    "place_id": "PL0930",
+    "location_name": "Paderborn, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "withdrawal",
+    "current_activity": "relinquishes Paderborn late on 1 April and falls back with up to forty tanks and assault guns",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R710;R002",
+    "source_locator": "R566: p. 360"
    }
   },
   {

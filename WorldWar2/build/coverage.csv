@@ -174,8 +174,6 @@ GER-LL-091D,91st Luftlande Division,Germany,division,Army,active,1944-01-15,true
 GER-PG-003D,3rd Panzergrenadier Division,Germany,division,Armoured,active,,true,6,1944-09-12,1945-04-18,
 GER-PG-015D,15th Panzergrenadier Division,Germany,division,Armoured,active,,true,6,1944-09-13,1945-03-24,GER-COR-066C
 GER-PG-025D,25th Panzergrenadier Division,Germany,division,Armoured,active,1943-06-23,true,4,1944-11-12,1945-01-12,
-GER-PG-FUEBE,Führer-Begleit-Division,Germany,division,Armoured,placeholder,1945-01-26,false,0,,,
-GER-PG-FUEGR,Führer-Grenadier-Division (Führer Grenadier Brigade until 1945),Germany,division,Armoured,placeholder,1945-01-26,false,0,,,GER-COR-053C
 GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,active,1935-10-15,true,8,1944-06-10,1945-01-22,
 GER-PZ-009D,9th Panzer Division,Germany,division,Armoured,active,,true,10,1944-08-10,1945-04-18,GER-SSPZ-002C
 GER-PZ-011D,11th Panzer Division,Germany,division,Armoured,active,1940-08-01,true,8,1944-09-18,1945-05-04,GER-COR-085C
@@ -226,6 +224,8 @@ GER-VG-553D,553rd Volksgrenadier Division,Germany,division,Army,active,1944-10-0
 GER-VG-559D,559th Volksgrenadier Division,Germany,division,Army,active,1944-10-09,true,3,1944-09-24,1944-11-09,GER-SSCOR-013C
 GER-VG-560D,560th Volksgrenadier Division,Germany,division,Army,active,1944-08-10,true,2,1944-12-16,1945-01-03,GER-SSPZ-002C
 GER-VG-708D,708th Volksgrenadier Division,Germany,division,Army,active,1944-09-04,true,2,1944-11-10,1945-01-20,GER-COR-064C
+GER-PG-FUEBE,Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945),Germany,brigade,Armoured,active,1945-01-26,true,4,1944-12-19,1944-12-28,
+GER-PG-FUEGR,Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945),Germany,brigade,Armoured,active,1945-01-26,true,3,1944-12-23,1944-12-31,GER-COR-053C
 GER-PZB-105B,Panzer-Brigade 105,Germany,brigade,Armoured,active,1944-07-28,true,1,1944-09-15,1944-09-15,
 GER-PZB-106B,Panzer-Brigade 106,Germany,brigade,Armoured,active,1944-07-28,true,7,1944-09-01,1945-03-09,
 GER-PZB-107B,Panzer-Brigade 107,Germany,brigade,Armoured,active,1944-07-28,true,3,1944-09-19,1944-10-01,
@@ -233,7 +233,8 @@ GER-PZB-108B,Panzer-Brigade 108,Germany,brigade,Armoured,active,1944-07,true,3,1
 GER-PZB-111B,Panzer-Brigade 111,Germany,brigade,Armoured,active,1944-09-04,true,3,1944-09-16,1944-09-22,
 GER-PZB-112B,Panzer-Brigade 112,Germany,brigade,Armoured,active,1944-09-04,true,4,1944-09-12,1944-09-23,
 GER-PZB-113B,Panzer-Brigade 113,Germany,brigade,Armoured,active,1944-09-04,true,3,1944-09-16,1944-10-01,
-GER-PZB-150B,Panzer-Brigade 150,Germany,brigade,Armoured,placeholder,1944-11,false,0,,,
+GER-PZB-150B,Panzer-Brigade 150,Germany,brigade,Armoured,active,1944-11,true,2,1944-12-20,1944-12-21,
+GER-SSPZB-WESTF,SS-Panzer-Brigade Westfalen (SS Ersatzbrigade Westfalen),Germany,brigade,Waffen-SS,active,1945-03-29,true,2,1945-03-30,1945-04-01,
 GER-FJR-006,6th Fallschirmjäger Regiment,Germany,regiment/battle_group,Luftwaffe,placeholder,,false,0,,,
 GER-KG-002PZ,Kampfgruppe (tank battalion) 2nd Panzer Division,Germany,regiment/battle_group,Armoured,active,,true,1,1944-06-27,1944-06-27,
 GER-KG-265,Kampfgruppe 265th Infantry Division (name of commander not given),Germany,regiment/battle_group,Army,active,,true,1,1944-06-07,1944-06-07,

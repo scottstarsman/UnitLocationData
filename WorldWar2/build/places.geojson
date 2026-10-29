@@ -4338,7 +4338,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12278,7 +12278,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -13158,7 +13158,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -13378,7 +13378,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Nord-Pas-de-Calais",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -13918,7 +13918,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -17199,6 +17199,26 @@
     "country": "BE",
     "region": "West Flanders",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3849,
+     49.116
+    ]
+   },
+   "properties": {
+    "place_id": "PL0872",
+    "name": "Saint-André-sur-Orne, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
    }
   }
  ]

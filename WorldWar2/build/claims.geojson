@@ -3696,6 +3696,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5436,
+     49.1958
+    ]
+   },
+   "properties": {
+    "claim_id": "C1707",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-06-11",
+    "place_id": "PL0221",
+    "location_name": "Le Mesnil-Patry (mainly the 6th Armoured Regiment (1st Hussars) with the Queen's Own Rifles)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.9,
+    "event_type": "attack",
+    "current_activity": "attacks from Norrey-en-Bessin towards Le Mesnil-Patry with the Queen's Own Rifles at short notice; repulsed",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R668;R050;R001",
+    "source_locator": "R670: p. 253; R668: p. 139"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.165,
      49.1269
     ]
@@ -13577,6 +13618,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2972,
+     49.2041
+    ]
+   },
+   "properties": {
+    "claim_id": "C1708",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-18",
+    "place_id": "PL0667",
+    "location_name": "Colombelles, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Atlantic: tanks of the 1st Hussars support the 8th Brigade against Colombelles and Giberville",
+    "operation_id": "OP-ATLANTIC",
+    "operation": "Operation Atlantic",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Atlantic",
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: p. 343; R668: pp. 166, 171, 173"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.6303,
      49.0822
     ]
@@ -13693,6 +13775,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 174, 175"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3849,
+     49.116
+    ]
+   },
+   "properties": {
+    "claim_id": "C1709",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-21",
+    "place_id": "PL0872",
+    "location_name": "Saint-André-sur-Orne, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.9,
+    "event_type": "defense",
+    "current_activity": "under the 2nd Canadian Division, helps beat off four counter-attacks between Point 67 and Saint-André-sur-Orne",
+    "operation_id": "OP-ATLANTIC",
+    "operation": "Operation Atlantic",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Atlantic",
+    "strength_status": "unknown",
+    "location_date": "1944-07-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: p. 350; R668: p. 175"
    }
   },
   {
@@ -19064,6 +19187,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R001",
     "source_locator": "R668: pp. 208, 218, 219, 229"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3849,
+     49.116
+    ]
+   },
+   "properties": {
+    "claim_id": "C1710",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0872",
+    "location_name": "Saint-André-sur-Orne, Calvados (less the 1st Hussars; with the 4th Infantry Brigade under command)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Totalize: Wyman's assault force crosses the start line west of the Falaise road in four armoured columns at 11.30 p.m.",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: p. 420; R668: p. 216"
    }
   },
   {
@@ -36291,6 +36455,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.8538,
+     50.9525
+    ]
+   },
+   "properties": {
+    "claim_id": "C1711",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-25",
+    "place_id": "PL0678",
+    "location_name": "Calais, Pas-de-Calais",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "Undergo: supports the 3rd Canadian Division's attack on Calais",
+    "operation_id": "OP-UNDERGO",
+    "operation": "Operation Undergo",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undergo",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 65; R668: p. 348"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -39482,6 +39687,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 124, 125"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C1712",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-27",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "within a few miles of Breda; put under the Polish Armoured Division to drive for Moerdijk",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 125, 126"
    }
   },
   {
@@ -55103,6 +55349,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 492"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2928,
+     51.7389
+    ]
+   },
+   "properties": {
+    "claim_id": "C1713",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-02-26",
+    "place_id": "PL0705",
+    "location_name": "Calcar (Kalkar), North Rhine-Westphalia (two regiments of the brigade)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Blockbuster: two regiments support the 2nd Canadian Division astride the Goch-Calcar road on the Calcar ridge",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 255; R668: p. 492"
    }
   },
   {

@@ -922,7 +922,8 @@ def scenario_25_brigades_batch_3_german():
 
 # The official-history pass (October 2026) adds rows to units of the earlier activity batches; each batch scenario counts only its own rows,
 # so rows whose notes name the official-history pass are left out of the batch counts (they are counted in scenario 34).
-NOT_OHP = lambda c: 'official-history pass' not in c['notes']
+BATCH35 = lambda c: 'C2031' <= c['claim_id'] <= 'C2058'   # source fixes from de Lattre and Ellis (scenario 35) count only in their own scenario
+NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c)
 
 
 def scenario_26_activity_pilot():
@@ -1114,15 +1115,15 @@ def scenario_33_activity_canada_france():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in CAN_FR and 'Canada and France' in c['notes']]
+    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in CAN_FR and ('Canada and France' in c['notes'] or c['claim_id'] in ('C1997', 'C2002'))]   # C1997 and C2002 were relabelled by the source fixes of 30 October 2026 (scenario 35) and stay rows of this batch
     expect(s + ': the batch covers 13 units', len({c['unit_id'] for c in rows}), 13)
     expect(s + ': the batch has 64 activity rows', len(rows), 64)
-    expect(s + ': the batch has 45 stated and 19 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (45, 19))
+    expect(s + ': the batch has 44 stated and 20 inferred rows (C1997 is inferred reserve since the source fixes of 30 October 2026; it was stated transit)', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (44, 20))
     expect(s + ': 3rd Canadian, 1 Jul 1944: in the line from D-Day (closed 31 Jul)', A('CAN-INF-003D', '1944-07-01'), ('in_line', 'certain', 'stated', 0.5))
     expect(s + ': 3rd Canadian, 5 Aug 1944: rest after 55 days, so no answer', A('CAN-INF-003D', '1944-08-05'), None)
     expect(s + ': 1st Canadian, 8 May 1945: takes control of a German corps area (garrison)', A('CAN-INF-001D', '1945-05-08'), ('garrison', 'certain', 'stated', 0.3))
     expect(s + ': 4th Moroccan Mountain, 8 May 1945: in the Vorarlberg (inferred)', A('FR-INF-004D', '1945-05-08'), ('in_line', 'certain', 'inferred', 0.3))
-    expect(s + ': 5th Armoured (France), 24 Nov 1944: relieved to regroup (inferred reserve)', A('FR-ARM-005D', '1944-11-24'), ('reserve', 'certain', 'inferred', 0.3))
+    expect(s + ': 5th Armoured (France), 24 Nov 1944: fighting on the Seppois roads (inferred in_line; changed from reserve by the source fixes of 30 October 2026, de Lattre p. 268)', A('FR-ARM-005D', '1944-11-24'), ('in_line', 'certain', 'inferred', 0.3))
 
 
 def scenario_34_official_history_pass_1():
@@ -1131,7 +1132,7 @@ def scenario_34_official_history_pass_1():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and not NOT_OHP(c)]
+    rows = [c for c in claims if c.get('activity_status') and 'official-history pass' in c['notes']]
     expect(s + ': the pass has 28 activity rows in 24 units', (len(rows), len({c['unit_id'] for c in rows})), (28, 24))
     expect(s + ': the pass has 12 stated and 16 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (12, 16))
     expect(s + ': 75th Division, 20 Apr 1945: the rest span now ends by the occupation start of 22 Apr (inferred end)', A('US-INF-075D', '1945-04-20'), ('refitting', 'certain', 'inferred', 0.3))
@@ -1142,8 +1143,25 @@ def scenario_34_official_history_pass_1():
     expect(s + ': 712th Infantry (German), 24 Dec 1944: a point does not spread to the next day', A('GER-INF-712D', '1944-12-24'), None)
 
 
+def scenario_35_source_fixes_delattre_ellis():
+    """Source fixes from de Lattre and Ellis (October 2026): 28 new claims (C2031-C2058), 10 changed rows, conflict group G028 (2nd Moroccan Division, 3 April 1945)."""
+    s = 'scenario 35'
+    import activity
+    A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if 'C2031' <= c['claim_id'] <= 'C2058']
+    expect(s + ': the batch adds 28 claims in 14 units', (len(new), len({c['unit_id'] for c in new})), (28, 14))
+    expect(s + ': every new claim carries an activity value', sum(bool(c.get('activity_status')) for c in new), 28)
+    by = {c['claim_id']: c for c in claims}
+    expect(s + ': 4th Moroccan Mountain, 12 Jan 1945: at Lure, not Vieux-Thann', (by['C1997']['place_id'], by['C1997']['activity_status']), ('PL0987', 'reserve'))
+    expect(s + ': group G028: Bruchsal preferred, Karlsruhe alternate', (by['C2050']['claim_status'], by['C1639']['claim_status'], by['C1639']['conflict_group_id']), ('preferred', 'alternate', 'G028'))
+    expect(s + ': 9th Colonial, 4 Apr 1945: takes Karlsruhe (stated in_line)', A('FR-INF-009D', '1945-04-04'), ('in_line', 'certain', 'stated', 0.5))
+    expect(s + ': 15th Panzergrenadier (German), 14 Oct 1944: moving to Venlo (inferred transit)', A('GER-PG-015D', '1944-10-14'), ('transit', 'certain', 'inferred', 0.3))
+    expect(s + ': British 5th Division, 2 May 1945: behind the 11th Armoured at Lübeck (inferred reserve)', A('UK-INF-005D', '1945-05-02'), ('reserve', 'certain', 'inferred', 0.3))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis):
         before = len(FAILURES)
         try:
             fn()

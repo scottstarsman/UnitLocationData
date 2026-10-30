@@ -2,6 +2,44 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## source-fixes-delattre-ellis: corrections and new positions from the de Lattre and Ellis reading notes (30 October 2026)
+
+Scott approved this batch on 30 October 2026 ("Please proceed"), after the reading-method branch was merged. One branch from `main` `647d774`. Sources: de Lattre, *The History of the French First Army* (1952), printed pages and paraphrase only, and Ellis, *Victory in the West*, vol. II, printed pages. The reading notes stay private and are not in this repository. Every changed row carries a `Review (source fixes from de Lattre and Ellis, 30 October 2026 ...)` sentence with the old value, the new value and the reason.
+
+### Changed rows
+
+- French 2nd Moroccan Infantry Division, Briançon, 14 October 1944: confidence 0.5 to 0.3, de Lattre added. Reason: de Lattre has the division retake Briançon and Modane by mid-September (pp. 130-131, 161) and its regiments on the Doubs and Lure front by late September (pp. 187, 191). Kept as an open question.
+- French 4th Moroccan Mountain Division, 12 January 1945: place Vieux-Thann to Lure; location basis inferred to documented on date; confidence 0.3 to 0.5; activity transit (stated) to reserve (inferred). Reason: de Lattre p. 342 has the division still at Lure on 12 January (in army reserve since 20 December, p. 299); it attacks at Vieux-Thann only on 20 January (p. 345, an existing row).
+- French 2nd Moroccan Infantry Division, Karlsruhe, 3 April 1945: conflict group blank to new group 28, status preferred to alternate, confidence 0.5 to 0.3. Reason: de Lattre pp. 434-437 has the division at Bruchsal on 2 and 3 April and gives Karlsruhe on 4 April to the 9th Colonial Division. The new Bruchsal row is the preferred row of the group (a coordinate exception documents the deliberate conflict).
+- French 5th Armoured Division, Dannemarie, 24 November 1944: activity reserve to in_line (inferred, point). Reason: de Lattre p. 268 has its combat command 4 clearing the Seppois roads and reaching Altkirch that day; the evening relief of p. 275 is a regrouping for the next attack. Semantic scenario 33 expectation changed to match.
+- French 2nd Armoured Division, Grussenheim, 28 January 1945: de Lattre added (pp. 357, 363-364), confidence 0.5 to 0.7. Reason: de Lattre names Vésinet's combat command of the division with the legion battalions of the 1st Free French Division at Grussenheim on 28 January, a second source family for place and date; not 0.9 because one combat command was engaged.
+- French 4th Moroccan Mountain Division, Rouffach, 5 February 1945: de Lattre added (pp. 389, 391); date and place kept. De Lattre puts the junction on the evening of 4 February; the one-day difference is stated in the row.
+- French 4th Moroccan Mountain Division, Strasbourg, 16 April 1945: de Lattre added (pp. 453, 468); no other value changed. De Lattre supports the assembly at Strasbourg and the Kehl crossing.
+- French 1st Armoured Division, Ulm, 23 April 1945: note only; de Lattre pp. 481, 485-486 confirm the arrival on the evening of 23 April; the capture on 24 April is a new row.
+- German 15th Panzergrenadier Division, Saarbrücken, 15 October 1944 (month-level Lexikon row) and German 9th Panzer Division, Arnhem, 15 October 1944 (month-level Lexikon row): note only, no value changed; Ellis vol. II p. 159 moves both into Army Group B reserve near Venlo from 14 October (new rows). A coordinate exception documents the 15th Panzergrenadier speed warning.
+
+### New rows (28 claims, 14 units; 17 places; 1 unit)
+
+- French 1st Free French Division: L'Isle-sur-le-Doubs 15 September 1944 (p. 159), Ronchamp 4 October (p. 196), Plancher-les-Mines 20 November (p. 260), Giromagny 22 November (pp. 260, 269), Masevaux 26 November (p. 275).
+- French 3rd Algerian Division: Longegoutte crest 8 October 1944 (p. 199), Saulxures on the Moselotte 9 October (p. 200), Cornimont about 14 October (p. 201, approximate date, 0.3), Gérardmer 20 November (p. 261), La Bresse 21 November (p. 261).
+- French 9th Colonial Division: Leopoldshafen 3 April 1945 (p. 435), Karlsruhe 4 April (p. 436).
+- French 1st Armoured Division: Tuttlingen 21 April 1945 (p. 471), Stockach 21 April (p. 472), Ulm 24 April (pp. 481, 485-486, 490).
+- French 2nd Armoured Division: Sélestat line 4 December 1944 (p. 283).
+- French 4th Moroccan Mountain Division: Cernay 4 February 1945 (p. 387).
+- French 5th Armoured Division: Suarce 22 November 1944 (p. 266), Dannemarie 27 November (pp. 278-279).
+- French 2nd Moroccan Division: Bruchsal 3 April 1945 (pp. 434, 437), preferred row of the new conflict group.
+- German 338th Division: Longegoutte counter-attack 6 October 1944 (p. 199), Bretigney 14 November (pp. 229-230, death of General Oschmann).
+- German LXIII Corps: Belfort-Dannemarie corridor 22 November 1944 (pp. 262-263; representative point, 0.3).
+- German 198th Division: Seppois 26 November 1944 (p. 277), Grussenheim counter-attack 29 January 1945 (p. 364).
+- German 15th Panzergrenadier and 9th Panzer Divisions: Venlo reserve area from 14 October 1944 (Ellis vol. II p. 159; representative point, approximate day, 0.3).
+- British 5th Infantry Division (new unit record): Lübeck, 2 May 1945, behind the 11th Armoured Division (Ellis vol. II p. 337).
+- Every new row has its activity value: 17 stated, 11 inferred; inferred values are capped at 0.3 and say why. No parent unit or command relation was added.
+- New places, coordinates from OpenStreetMap Nominatim: Lure, Bruchsal, Tuttlingen, Stockach, Suarce, L'Isle-sur-le-Doubs, Ronchamp, Plancher-les-Mines, Giromagny, Masevaux, the Longegoutte forest (5 km), Saulxures-sur-Moselotte, Cornimont, La Bresse, Leopoldshafen, Bretigney, Seppois-le-Bas.
+
+### Tests
+
+- Semantic scenario 35 (7 expectations). Earlier scenarios that count batch rows now leave out this batch's new rows (old filter: rows not from the official-history pass; new filter: the same, less this batch; reason: the batch totals stay as approved). Scenario 34 now selects its rows by the official-history pass wording (old: every row outside the earlier filter). Scenario 33 keeps the two relabelled French rows in its count; its stated/inferred totals change from 45/19 to 44/20 because the Lure row is now inferred.
+
 ## official-history-pass-1: 8 May 1945 rows, span closures and blank divisions from the official histories (30 October 2026)
 
 Scott approved the official-history pass on 30 October 2026, after the Canada and France batch was merged (PR #47). Branch `official-history-pass-1` from `main` `1431a82`. Each chunk is its own commit; every commit passes the full checks.

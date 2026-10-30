@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-german-2: activity status for 30 more German divisions (29 October 2026)
+
+Scott approved German batch 2 on 29 October 2026, after German batch 1 was merged (PR #44). Branch `activity-rollout-german-2` from `main` `4ab8655`. Labels only, as decided (no refit spans or 8 May rows).
+
+Units (30): the next unlabelled German divisions by claim count (ties broken by unit id): 159th, 180th, 243rd, 48th, 77th, 176th, 189th, 269th, 347th, 711th, 49th, 64th, 70th, 85th, 271st, 272nd, 712th and 719th Infantry; 6th, 7th and 8th Fallschirmjäger; 16th, 26th, 62nd, 272nd, 326th, 340th, 553rd and 559th Volksgrenadier; Panzer Division Clausewitz.
+
+Rows: 45 existing rows labelled (34 stated, 11 inferred): in_line 42, transit 2, garrison 1; all points. Each has the old value (blank), the new value and the reason in its notes. The 180th, 6th Fallschirmjäger, 85th, 712th and 719th have only order-of-battle listings and stay blank, so 25 units carry values. Left blank on purpose: listings, assignments, surrenders, destructions and disputed rows (36 rows).
+
+Sources: only the references already cited by each row. No new claims, places or references; next ids unchanged (C1997, PL0978, R760, CR1064, G028).
+
+Semantic scenario 31 (8 expectations) checks the batch.
+
 ## activity-rollout-german-1: activity status for 30 German divisions (29 October 2026)
 
 Scott approved German batch 1 on 29 October 2026, after batch 3 was merged (PR #43). Branch `activity-rollout-german-1` from `main` `74caeb3`.

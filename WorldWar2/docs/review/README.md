@@ -74,11 +74,11 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 1996, dated 1944-06-06 to 1945-05-10 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 2002, dated 1944-06-06 to 1945-05-10 |
 | units in `data/units.csv` | 387: 318 active (have claims), 69 placeholders |
 | claim files (one per active unit) | 318 |
 | conflict groups / claims in a group | 24 / 52 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 965 / 9 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 968 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 1062 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2654 |
@@ -89,15 +89,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 41 |
 
-Claims by nationality: US 784, Germany 693, UK 265, Canada 142, France 50, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
+Claims by nationality: US 784, Germany 693, UK 265, Canada 142, France 56, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
 
-Claims by echelon: division 1244, corps 336, army 161, brigade 143, army_group 45, regiment/battle_group 35, other 22, battalion 10.
+Claims by echelon: division 1250, corps 336, army 161, brigade 143, army_group 45, regiment/battle_group 35, other 22, battalion 10.
 
-Claims by branch: Army 1239, Armoured 508, Waffen-SS 102, Airborne 99, Luftwaffe 48.
+Claims by branch: Army 1243, Armoured 510, Waffen-SS 102, Airborne 99, Luftwaffe 48.
 
-Claims by event type: attack 437, other 227, defense 219, command_change 174, capture 172, hq_move 151, arrival 106, regroup 101, relocation 90, hq_observation 61, landing 60, subordinate_assignment 45, withdrawal 43, counterattack 42, surrender 39, activation 16, redesignation 8, destruction 5.
+Claims by event type: attack 439, other 228, defense 219, command_change 174, capture 172, hq_move 151, arrival 106, regroup 103, relocation 91, hq_observation 61, landing 60, subordinate_assignment 45, withdrawal 43, counterattack 42, surrender 39, activation 16, redesignation 8, destruction 5.
 
-Claims by status: preferred 1961, alternate 19, disputed 16. Claims by confidence: 0.3 428, 0.5 947, 0.7 558, 0.9 63.
+Claims by status: preferred 1967, alternate 19, disputed 16. Claims by confidence: 0.3 432, 0.5 949, 0.7 558, 0.9 63.
 
 Placeholder units by nationality: Germany 64, Allied 3, US 2.
 
@@ -109,7 +109,7 @@ Evidence roles of relation links: observed_during 1281, asserts_start 1072, asse
 
 References by source family: wikipedia 237, us_army_cmh 236, lexikon_wehrmacht_de 196, ww2byday_com 33, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, us_army_unit_history 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 237, reference_compilation 230, official_history 179, assignment_table 65, news_or_web_article 19, archive_document 8, monument_or_memorial 6, unit_history 4, gazetteer_geocoder 2, other 2.
 
-Places by kind: point 861, area 86, line 18.
+Places by kind: point 864, area 86, line 18.
 
 <!-- counts:end -->
 

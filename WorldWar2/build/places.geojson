@@ -12198,7 +12198,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12898,7 +12898,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Vorarlberg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -19298,6 +19298,66 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1217,
+     47.8071
+    ]
+   },
+   "properties": {
+    "place_id": "PL0978",
+    "name": "Vieux-Thann, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0144,
+     47.5722
+    ]
+   },
+   "properties": {
+    "place_id": "PL0979",
+    "name": "Vellescot, Territoire de Belfort",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Franche-Comté",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1165,
+     47.6319
+    ]
+   },
+   "properties": {
+    "place_id": "PL0980",
+    "name": "Dannemarie, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
     "claims_count": 1
    }
   }

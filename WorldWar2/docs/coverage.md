@@ -19,8 +19,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | France | division | 0 | 0 | 12 | 12 | 10 | 67 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 30 |
 | Germany | army | 0 | 0 | 15 | 15 | 9 | 93 |
-| Germany | corps | 17 | 0 | 28 | 45 | 41 | 142 |
-| Germany | division | 43 | 0 | 88 | 131 | 112 | 365 |
+| Germany | corps | 17 | 0 | 28 | 45 | 41 | 145 |
+| Germany | division | 43 | 0 | 88 | 131 | 112 | 380 |
 | Germany | brigade | 0 | 0 | 11 | 11 | 11 | 35 |
 | Germany | regiment/battle_group | 1 | 0 | 12 | 13 | 3 | 21 |
 | Germany | battalion | 1 | 0 | 0 | 1 | 0 | 0 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **69** | **0** | **319** | **388** | **258** | **2058** |
+| **All** | | **69** | **0** | **319** | **388** | **258** | **2076** |
 
 ## Operations
 
@@ -49,28 +49,28 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 1193 |
-| operation | 33 | 33 | 435 |
+| campaign | 9 | 9 | 1199 |
+| operation | 33 | 33 | 447 |
 | battle | 20 | 20 | 354 |
 | phase | 4 | 4 | 76 |
-| **All** | **67** | **66** | **2058** |
+| **All** | **67** | **66** | **2076** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 991 places and 120 alias names for 2058 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 1002 places and 132 alias names for 2076 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 887 | 1862 |
-| area | 86 | 176 |
+| point | 898 | 1879 |
+| area | 86 | 177 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 558 | 1056 |
+| France (FR) | 569 | 1073 |
 | Germany (DE) | 238 | 587 |
 | Netherlands (NL) | 83 | 194 |
-| Belgium (BE) | 79 | 150 |
+| Belgium (BE) | 79 | 151 |
 | Luxembourg (LU) | 10 | 29 |
 | Austria (AT) | 12 | 25 |
 | Czechia (CZ) | 6 | 9 |

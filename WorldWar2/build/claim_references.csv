@@ -19,6 +19,7 @@ C0004,R132,general,
 C0004,R137,strength,
 C0004,R448,general,
 C0004,R449,general,
+C0004,R761,general,pp. 21-23
 C0005,R001,location,
 C0005,R057,general,
 C0006,R001,location,
@@ -122,6 +123,7 @@ C0032,R137,general,
 C0032,R150,general,
 C0033,R001,location,
 C0033,R449,general,
+C0033,R761,general,p. 23
 C0034,R001,location,
 C0034,R043,general,
 C0034,R449,general,
@@ -205,6 +207,7 @@ C0059,R449,general,
 C0060,R001,location,
 C0060,R141,general,
 C0060,R449,general,
+C0060,R761,general,p. 23
 C0061,R001,location,
 C0061,R049,general,
 C0061,R449,general,
@@ -231,6 +234,7 @@ C0067,R153,general,
 C0068,R002,location,
 C0068,R077,general,
 C0068,R133,general,
+C0068,R761,general,pp. 31-32
 C0069,R001,location,
 C0069,R141,general,
 C0069,R142,general,
@@ -296,13 +300,16 @@ C0089,R001,location,
 C0089,R109,general,
 C0089,R111,general,
 C0089,R449,command_relationship,p. 378-379
+C0089,R761,general,Annex 3
 C0090,R001,location,
 C0090,R114,general,
 C0090,R141,strength,
 C0091,R001,location,
 C0091,R449,general,
+C0091,R761,general,"p. 39, Annex 3"
 C0092,R001,location,
 C0092,R114,general,
+C0092,R761,general,p. 39
 C0093,R001,location,
 C0093,R140,general,
 C0093,R449,general,
@@ -450,6 +457,7 @@ C0147,R112,general,
 C0147,R446,general,
 C0148,R001,location,
 C0148,R139,general,
+C0148,R761,general,p. 44
 C0149,R002,location,
 C0149,R017,general,
 C0149,R451,general,
@@ -562,9 +570,11 @@ C0186,R139,general,
 C0187,R001,location,
 C0187,R139,general,
 C0187,R446,general,
+C0187,R761,general,p. 49
 C0188,R001,location,
 C0188,R139,general,
 C0188,R446,general,
+C0188,R761,general,p. 52
 C0189,R002,location,
 C0189,R139,general,
 C0190,R001,location,
@@ -587,6 +597,7 @@ C0195,R446,general,
 C0196,R002,location,
 C0196,R139,general,
 C0196,R446,general,
+C0196,R761,general,pp. 54-55
 C0197,R001,location,
 C0197,R043,general,
 C0197,R196,general,Einsatz und Unterstellung (text on July to September 1944)
@@ -603,12 +614,14 @@ C0201,R001,location,
 C0201,R139,general,
 C0201,R446,general,
 C0201,R447,general,
+C0201,R761,general,p. 52
 C0202,R001,location,
 C0202,R139,general,
 C0202,R446,general,
 C0203,R001,location,
 C0203,R139,general,
 C0203,R446,general,
+C0203,R761,general,pp. 52-55
 C0204,R001,location,
 C0204,R120,general,
 C0205,R001,location,
@@ -2128,13 +2141,17 @@ C0767,R593,general,"p. 458, 325-326"
 C0768,R001,location,
 C0768,R252,general,Einsatz und Unterstellung (20 June 1944 entry)
 C0768,R586,general,"p. 30, 29"
+C0768,R761,general,p. 49
 C0769,R001,location,
 C0769,R586,general,"p. 30, 29"
+C0769,R761,general,p. 49
 C0770,R001,location,
 C0770,R262,general,Kommandeure list (29 June 1944)
 C0770,R586,general,"p. 30, 29"
+C0770,R761,general,p. 49
 C0771,R001,location,
 C0771,R586,general,"p. 30, 29"
+C0771,R761,general,p. 49
 C0772,R001,location,
 C0772,R279,general,Einsatz und Unterstellung (6 July 1944 entry)
 C0773,R001,location,
@@ -2197,6 +2214,7 @@ C0792,R591,general,p. 128
 C0793,R001,location,
 C0793,R280,general,Einsatz und Unterstellung (to 6 July 1944)
 C0793,R603,general,p. 60
+C0793,R761,general,pp. 54-55
 C0794,R001,location,
 C0794,R280,general,Einsatz und Unterstellung (6 July 1944 entry)
 C0795,R001,location,
@@ -5067,3 +5085,39 @@ C2058,R002,location,
 C2058,R671,general,p. 337
 C2059,R002,location,
 C2059,R686,general,"pp. 130-131, 161"
+C2060,R002,location,
+C2060,R761,general,"Annex 1, p. 23"
+C2061,R002,location,
+C2061,R761,general,Annex 1
+C2062,R002,location,
+C2062,R761,general,Annex 1
+C2063,R002,location,
+C2063,R761,general,Annex 1
+C2064,R002,location,
+C2064,R761,general,Annex 1
+C2065,R002,location,
+C2065,R761,general,Annex 1
+C2066,R002,location,
+C2066,R761,general,Annex 1
+C2067,R002,location,
+C2067,R761,general,Annex 1
+C2068,R002,location,
+C2068,R761,general,Annex 1
+C2069,R002,location,
+C2069,R761,general,"p. 23, Annex 2"
+C2070,R002,location,
+C2070,R761,general,p. 30
+C2071,R002,location,
+C2071,R761,general,p. 30
+C2072,R002,location,
+C2072,R761,general,p. 37
+C2073,R002,location,
+C2073,R761,general,p. 40
+C2074,R002,location,
+C2074,R761,general,p. 40
+C2075,R002,location,
+C2075,R761,general,"p. 40, Annex 6"
+C2076,R002,location,
+C2076,R761,general,pp. 41-42
+C2077,R002,location,
+C2077,R761,general,p. 45

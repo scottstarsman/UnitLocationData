@@ -78,7 +78,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -4338,7 +4338,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -5198,7 +5198,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -11298,7 +11298,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -14458,7 +14458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -17198,7 +17198,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -18478,7 +18478,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Picardie",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19818,6 +19818,226 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Provence-Alpes-Côte d'Azur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.151,
+     49.0268
+    ]
+   },
+   "properties": {
+    "place_id": "PL1005",
+    "name": "Évreux, Eure",
+    "alt_names": "Evreux",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2153,
+     46.979
+    ]
+   },
+   "properties": {
+    "place_id": "PL1006",
+    "name": "Thouars, Deux-Sèvres",
+    "alt_names": "Thouars",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.355,
+     44.0175
+    ]
+   },
+   "properties": {
+    "place_id": "PL1007",
+    "name": "Montauban, Tarn-et-Garonne",
+    "alt_names": "Montauban",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Occitanie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.58,
+     44.8412
+    ]
+   },
+   "properties": {
+    "place_id": "PL1008",
+    "name": "Bordeaux, Gironde",
+    "alt_names": "Bordeaux",
+    "kind": "point",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Nouvelle-Aquitaine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3601,
+     43.8374
+    ]
+   },
+   "properties": {
+    "place_id": "PL1009",
+    "name": "Nîmes, Gard",
+    "alt_names": "Nimes",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Occitanie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4442,
+     43.6044
+    ]
+   },
+   "properties": {
+    "place_id": "PL1010",
+    "name": "Toulouse, Haute-Garonne",
+    "alt_names": "Toulouse",
+    "kind": "point",
+    "precision_km": 10,
+    "country": "FR",
+    "region": "Occitanie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9406,
+     49.1424
+    ]
+   },
+   "properties": {
+    "place_id": "PL1011",
+    "name": "Bérigny, Manche",
+    "alt_names": "Berigny",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2425,
+     49.2206
+    ]
+   },
+   "properties": {
+    "place_id": "PL1012",
+    "name": "Hérouvillette, Calvados",
+    "alt_names": "Herouvillette",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9791,
+     49.0347
+    ]
+   },
+   "properties": {
+    "place_id": "PL1013",
+    "name": "Torigni-sur-Vire, Manche",
+    "alt_names": "Torigny-les-Villes",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.8211,
+     48.3218
+    ]
+   },
+   "properties": {
+    "place_id": "PL1014",
+    "name": "Nogent-le-Rotrou, Eure-et-Loir",
+    "alt_names": "Nogent-le-Rotrou",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4131,
+     49.196
+    ]
+   },
+   "properties": {
+    "place_id": "PL1015",
+    "name": "Abbaye d'Ardenne, Calvados",
+    "alt_names": "Ardenne Abbey; Saint-Germain-la-Blanche-Herbe",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 1
    }
   }

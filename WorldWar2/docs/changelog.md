@@ -33,6 +33,15 @@ Semantic tests: scenarios 26 to 32 now count only their own batch's rows (`NOT_O
   - C2016, 103rd Infantry, 8 May 1945, Innsbruck: garrison point (inferred), 0.3. In Innsbruck after the Nineteenth Army surrender (The Last Offensive pp. 468, 471).
 - Still without an 8 May 1945 row (no place in the sources read): the 70th, 101st and 106th; the 44th and 97th close their spans on 5 and 7 May (unchanged).
 
+### Chunk 2, Canadian and French divisions (Stacey and de Lattre)
+
+- New place: `PL0984` Sankt Anton am Arlberg (OpenStreetMap Nominatim).
+- 6 new claims, `C2017` to `C2022`, all 8 May 1945 and inferred (0.3):
+  - C2017 to C2020: the 2nd Canadian (Oldenburg), 3rd Canadian (Aurich), 4th Canadian Armoured (Varel) and 5th Canadian Armoured (Delfzijl) Divisions: garrison point. Stacey p. 610 dates the cease fire on the First Canadian Army front to 08:00 on 5 May; p. 597 (3rd Division before Aurich) and p. 594 (5th Armoured's last major operation at Delfzijl). The place is the division's last named place; holding occupied ground after the cease fire is read as garrison.
+  - C2021, French 2nd Moroccan Infantry, Sankt Anton am Arlberg: in_line point. De Lattre pp. 500-501 (paraphrase): the column crosses the Arlberg from 5 to 7 May.
+  - C2022, French 5th Armoured, Bregenz: garrison point. De Lattre pp. 498-499 (paraphrase): Bregenz and Dornbirn on 1 and 2 May; the German Twenty-fourth Army negotiates its surrender on 4 May.
+- Still without an 8 May 1945 row: the French 1st Free French, 1st Armoured, 3rd Algerian, 9th Colonial, 10th, 27th Alpine and Gironde Divisions (de Lattre gives no place for them in the last days), and all nine British divisions listed in the roadmap (Ellis not available).
+
 ## activity-rollout-can-fr: activity status for 3 Canadian and 10 French divisions (29 October 2026)
 
 Scott approved the combined Canada and France batch on 29 October 2026, after German batch 3 was merged (PR #46). Branch `activity-rollout-can-fr` from `main` `7435b2f`.

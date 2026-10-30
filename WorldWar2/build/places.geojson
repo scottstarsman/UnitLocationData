@@ -12898,7 +12898,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Vorarlberg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12958,7 +12958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -14098,7 +14098,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14178,7 +14178,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14238,7 +14238,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19418,6 +19418,26 @@
     "precision_km": 3,
     "country": "AT",
     "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2664,
+     47.1289
+    ]
+   },
+   "properties": {
+    "place_id": "PL0984",
+    "name": "Sankt Anton am Arlberg, Tirol",
+    "alt_names": "St. Anton am Arlberg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Tirol",
     "claims_count": 1
    }
   }

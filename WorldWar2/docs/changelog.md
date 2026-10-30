@@ -42,6 +42,22 @@ Semantic tests: scenarios 26 to 32 now count only their own batch's rows (`NOT_O
   - C2022, French 5th Armoured, Bregenz: garrison point. De Lattre pp. 498-499 (paraphrase): Bregenz and Dornbirn on 1 and 2 May; the German Twenty-fourth Army negotiates its surrender on 4 May.
 - Still without an 8 May 1945 row: the French 1st Free French, 1st Armoured, 3rd Algerian, 9th Colonial, 10th, 27th Alpine and Gironde Divisions (de Lattre gives no place for them in the last days), and all nine British divisions listed in the roadmap (Ellis not available).
 
+### Chunk 3, German divisions that had no activity value
+
+- New places: `PL0985` Villingen, `PL0986` Dinslaken (OpenStreetMap Nominatim).
+- 8 new claims, `C2023` to `C2030`, all points and stated (the source has the division holding or attacking a sector, which is line service):
+  - C2023, 416th Infantry, 15 January 1945, Nennig: in_line, 0.5. Holds the Orscholz Switch; its replacement battalion counterattacks at Butzdorf and Tettingen (The Last Offensive p. 118).
+  - C2024, 6th SS Mountain, 6 March 1945, Trier: in_line, 0.5. Counterattacks across the Ruwer south of Trier (The Last Offensive p. 242).
+  - C2025, 180th Infantry, 24 March 1945, Wesel: in_line, 0.5. Holds the Rhine opposite the US 30th Division (The Last Offensive pp. 304, 308).
+  - C2026, 2nd Fallschirmjäger, 24 March 1945, Dinslaken: in_line, 0.3 (place inferred). Holds the south of the LXIII Corps zone and is sent against the US 79th Division (The Last Offensive pp. 304, 315).
+  - C2027, 6th Fallschirmjäger, 16 February 1945, Calcar: in_line, 0.5. Relieves the 84th Infantry Division between the Cleve-Calcar road and the Rhine (Stacey p. 484).
+  - C2028, 712th Infantry, 23 December 1944, Kapelsche Veer: in_line, 0.5. Kapelsche Veer is brought into its sector (Stacey p. 452).
+  - C2029, 719th Infantry, 24 April 1945, Villingen: in_line, 0.5. Counterattacks the French 27th Infantry Regiment south of Villingen (de Lattre p. 478, paraphrase).
+  - C2030, 85th Infantry, 11 August 1944, Potigny: in_line, 0.3 (place inferred). Takes over the 12th SS Panzer Division's front south of Caen (Stacey p. 248). Operation: the Northern France campaign (the date is after the Normandy campaign).
+- Still blank: the 226th Infantry Division (Stacey p. 332 places only some of its units in the Le Havre garrison; the main body is not placed) and the US 1st Airborne Task Force (not a division; no official-history row read).
+- German refit spans: none added in this chunk (see the roadmap).
+- Semantic scenario 34 (8 expectations).
+
 ## activity-rollout-can-fr: activity status for 3 Canadian and 10 French divisions (29 October 2026)
 
 Scott approved the combined Canada and France batch on 29 October 2026, after German batch 3 was merged (PR #46). Branch `activity-rollout-can-fr` from `main` `7435b2f`.

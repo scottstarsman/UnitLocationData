@@ -1016,8 +1016,31 @@ def scenario_28_activity_rollout_2():
     expect(s + ': 11th Armoured, 5 Apr 1945: open span from the Rhine crossing at Wesel', A('UK-ARM-011D', '1945-04-05'), ('in_line', 'possible', 'stated', 0.5))
 
 
+ROLLOUT_3 = ['UK-ABN-006D', 'UK-ARM-007D', 'UK-ARM-079D', 'UK-ARM-GRDD'] + ['UK-INF-%03dD' % n for n in (3, 43, 49, 51, 52, 53, 59)]
+
+
+def scenario_29_activity_rollout_3():
+    """Activity rollout, batch 3 (October 2026): the remaining 11 British divisions; existing rows labelled, then new rest, transit, line, span-closing and 8 May 1945 claims (C1988-C1996) from Wikipedia and one CMH combat chronicle."""
+    s = 'scenario 29'
+    import activity
+    A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
+    claims = common.load_all_claims()[1]
+    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_3]
+    expect(s + ': batch 3 covers 11 units', len({c['unit_id'] for c in rows}), 11)
+    expect(s + ': batch 3 has 98 activity rows', len(rows), 98)
+    expect(s + ': batch 3 has 89 stated and 9 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (89, 9))
+    expect(s + ': 6th Airborne, 15 Jul 1944: in the line in Normandy (span 6 Jun to 26 Aug)', A('UK-ABN-006D', '1944-07-15'), ('in_line', 'certain', 'stated', 0.5))
+    expect(s + ': 6th Airborne, 10 Sep 1944: back in England, so no answer', A('UK-ABN-006D', '1944-09-10'), None)
+    expect(s + ': 6th Airborne, 10 Feb 1945: on the Maas near Roermond (closed 21 Feb)', A('UK-ABN-006D', '1945-02-10'), ('in_line', 'certain', 'stated', 0.3))
+    expect(s + ': 6th Airborne, 1 Mar 1945: relieved by the US 75th Division, so no answer', A('UK-ABN-006D', '1945-03-01'), None)
+    expect(s + ': 7th Armoured, 8 May 1945: holding Hamburg (inferred, capped at 0.3)', A('UK-ARM-007D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))
+    expect(s + ': 49th Division, 8 May 1945: Utrecht after the surrender (inferred)', A('UK-INF-049D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))
+    expect(s + ': 43rd Division, 29 Aug 1944: rest after the Seine crossing', A('UK-INF-043D', '1944-08-29'), ('refitting', 'certain', 'stated', 0.3))
+    expect(s + ': 3rd Division, 20 Jun 1944: D-Day entry is a point (no closing source), so no answer', A('UK-INF-003D', '1944-06-20'), None)
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3):
         before = len(FAILURES)
         try:
             fn()

@@ -490,6 +490,13 @@ Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
 
+## German activity rollout, batch 1 (29 October 2026): open points
+
+- Labels only: no new rest, refit, span or 8 May 1945 rows. German divisions mostly end in surrender or destruction, which is not an activity state; a later pass could add refit spans from the Lexikon or the official histories (for example the 12th SS refit from 11 July 1944, recorded as a point).
+- The 12th SS Panzer refit at Potigny (11 July 1944) and Panzer Lehr "refitting in the Eifel" (16 December 1944) are points; Panzer Lehr was committed the same day.
+- 56 German divisions remain unlabelled (2 more, the 9th and 10th SS, have pilot values), plus the corps, armies, brigades and battle groups, which may stay blank.
+- Other nationalities with unlabelled divisions: Canada 3, France 10; Belgium, the Netherlands and Czechoslovakia have brigade files only.
+
 ## Activity rollout, batch 3 (29 October 2026): open points
 
 Deferred to the official-history pass (Wikipedia gives no date or place):

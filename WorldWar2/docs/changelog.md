@@ -2,6 +2,23 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-german-1: activity status for 30 German divisions (29 October 2026)
+
+Scott approved German batch 1 on 29 October 2026, after batch 3 was merged (PR #43). Branch `activity-rollout-german-1` from `main` `74caeb3`.
+
+Units (30): the German divisions with the most claims that had no activity values: Panzer Lehr; 1st SS, 2nd SS and 12th SS Panzer; 17th SS Panzergrenadier; 2nd, 9th, 11th, 21st and 116th Panzer; 3rd, 15th and 25th Panzergrenadier; 3rd and 5th Fallschirmjäger; 91st Luftlande; 12th and 246th Volksgrenadier; 59th, 84th, 89th, 198th, 245th, 275th, 338th, 346th, 352nd and 353rd Infantry; 709th and 716th Static. The 9th and 10th SS Panzer Divisions already had values from the pilot and are left as they are.
+
+Sources: only the references already cited by each row (US Army official histories, Ellis, Lexikon der Wehrmacht listings and Wikipedia). No new references, places or claims. No copyrighted text is added.
+
+Rows: 148 existing rows labelled (122 stated, 26 inferred): in_line 117, transit 16, reserve 10, refitting 3, garrison 2. All are points: the German narrative rows are isolated dated events, and no source in hand gives both ends of a span.
+
+- Each row has the old value (blank), the new value and the reason in its notes.
+- Left blank on purpose (77 rows): monthly order-of-battle listings ("is listed in ... under ... Corps"), subordinate assignments, command changes, surrenders and destructions (not one of the five states), and alternate or disputed rows.
+- Rules applied, as in the Allied batches: a fortress or besieged city defended (Cherbourg, Aachen) is in_line; a coastal sector far from the front is garrison; a Kampfgruppe, regiment or contingent in action gives an inferred in_line for the division (main-body rule); an assembly behind the front ready to be committed is inferred reserve; inferred values are capped at 0.3 in the answers.
+- Next ids unchanged: claim C1997, place PL0978, reference R760, relation CR1064, conflict group G028.
+
+Semantic scenario 30 (10 expectations) checks the batch.
+
 ## activity-rollout-3: activity status for the remaining 11 British divisions (29 October 2026)
 
 Scott approved batch 3 on 29 October 2026, after batch 2 was merged (PR #42). Branch `activity-rollout-3` from `main` `6bbafb1`.

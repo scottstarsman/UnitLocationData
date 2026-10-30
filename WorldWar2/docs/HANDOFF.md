@@ -78,11 +78,11 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 | what | where |
 |---|---|
 | **GitHub repo** | `scottstarsman/UnitLocationData` (**private**). The dataset sits under `WorldWar2/`; the repo root has the publish README, `LICENSE`, and `.github/workflows/validate.yml` (CI runs inside `WorldWar2/`). Default branch `main`. |
-| **Working copy (where you edit)** | `/workspace/ww2-unit-locations` (git repo, **no remote**; it is the source that is synced to Drive and replayed to the prep clone). Tree has no `WorldWar2/` prefix. |
-| **Prep clone (publishing)** | `/workspace/UnitLocationData-prep` (clone of the GitHub repo; this is the only place that pushes). Commits replayed here have **different hashes** from the working copy's. |
-| **Tools (not in the repo)** | `/workspace/UnitLocationData-tools`: `sync_to_github_prep.py` (replays working-copy commits into the prep clone; never pushes), `publish_transforms.py` (licences, citation, root README, workflow), `run_checks.sh` (whole verification set), `wc_grid.py` and `cmp_grid.py` (who_controls grid comparison). Its `README.md` lists them. |
-| **Review notes outside the repo** | `/workspace/ww2-locations` (`NOTES_DIR` of the sync tool): `review_changes.md`, `spot_check_batch1/2/3.md`, `temporal_audit.md`, `operations_backfill.md` and the older build scripts. Copied into the publish clone on each replay. |
-| **Drive, primary copy** | Folder **`WWII Unit Locations`** (`1GYCx0u3PEUgl4GACgMZioTFBdpVedjyg`). Inside: **`repo`** (`1e9_bE40eqOgX9477sz4FC_tcFdwDG2Bi`, a file-by-file mirror of the working-copy tree; `docs` is `1SUf51I8OLpdBCtqQuyd7sZdKoHXlJ_t9`, `docs/review` is `1sZj5aIr03qF-EOy9-NHGZCYNM7w2yWp2`), **`review samples`** (`1ZN4bARpJtWvpOcxkjJMsNDB67txqpmzp`: the notes from `/workspace/ww2-locations`), `earlier versions`, and an old `ww2-unit-locations.zip` (**do not rebuild or replace it**). This file is at `repo/docs/HANDOFF.md`. |
+| **Prep clone (the single working and publishing clone)** | `/workspace/UnitLocationData-prep` (clone of the GitHub repo). Edit here, on a task branch cut from up-to-date `main`; this is the only clone that pushes. The dataset is under `WorldWar2/`. |
+| **Retired working copy (history only)** | The old working copy (no remote; edits used to be replayed into the prep clone) was retired on 30 October 2026, as of `main` `647d774`, and archived at `/workspace/archive/ww2-unit-locations.retired-2026-10-30` (with `/workspace/archive/ww2-unit-locations.old-batch5.retired-2026-10-30`). Do not edit or sync it. |
+| **Tools (not in the repo)** | `/workspace/UnitLocationData-tools`: `sync_to_github_prep.py` (historical: replayed working-copy commits into the prep clone; not used since 30 October 2026, its default `--src` still names the retired path), `publish_transforms.py` (licences, citation, root README, workflow), `run_checks.sh` (whole verification set; defaults to `/workspace/UnitLocationData-prep/WorldWar2`), `wc_grid.py` and `cmp_grid.py` (who_controls grid comparison). Its `README.md` lists them. |
+| **Review notes outside the repo** | `/workspace/ww2-locations` (`NOTES_DIR` of the sync tool): `review_changes.md`, `spot_check_batch1/2/3.md`, `temporal_audit.md`, `operations_backfill.md` and the older build scripts. (Historically copied into the publish clone on each replay.) |
+| **Drive, primary copy** | Folder **`WWII Unit Locations`** (`1GYCx0u3PEUgl4GACgMZioTFBdpVedjyg`). Inside: **`repo`** (`1e9_bE40eqOgX9477sz4FC_tcFdwDG2Bi`, a file-by-file mirror of the prep clone's `WorldWar2/` tree, see "Drive sync" in section 5; `docs` is `1SUf51I8OLpdBCtqQuyd7sZdKoHXlJ_t9`, `docs/review` is `1sZj5aIr03qF-EOy9-NHGZCYNM7w2yWp2`), **`review samples`** (`1ZN4bARpJtWvpOcxkjJMsNDB67txqpmzp`: the notes from `/workspace/ww2-locations`), `earlier versions`, and an old `ww2-unit-locations.zip` (**do not rebuild or replace it**). This file is at `repo/docs/HANDOFF.md`. |
 | **Copy of this file** | `/workspace/export/HANDOFF.md` |
 | Scratch from past verification rounds | `/workspace/verify/` (not needed; may be deleted by Scott) |
 
@@ -98,7 +98,7 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 ## 3. STANDING RULES from Scott (follow exactly)
 
-1. **One branch per task; related work shares one branch.** Related batches (for example a batch and its follow-ups or fixups) go on **ONE branch**, with **each logical item in its own commit**; Scott merges that branch once. **Do not stack a second branch on an unmerged one for related work.** An unrelated task gets its own branch from current `main`. Before cutting a branch, make sure the working copy and the prep clone are both on up-to-date `main` (fast-forward only). If the previous task's branch is not merged yet: when the new work is related, add commits to that same branch; when it is unrelated, branch from `main` (the tool's `sync.lastsrc` marker is one marker for the whole prep clone, so if the working copy's new branch does not start from the last replayed commit, check what `git config sync.lastsrc` holds in the prep clone before replaying, and replay only the new commits).
+1. **One branch per task; related work shares one branch.** Related batches (for example a batch and its follow-ups or fixups) go on **ONE branch**, with **each logical item in its own commit**; Scott merges that branch once. **Do not stack a second branch on an unmerged one for related work.** An unrelated task gets its own branch from current `main`. Before cutting a branch, make sure the prep clone is on up-to-date `main` (fast-forward only). If the previous task's branch is not merged yet: when the new work is related, add commits to that same branch; when it is unrelated, branch from `main` (historical: the replay tool's `sync.lastsrc` marker applied only to the retired working-copy workflow).
 2. **Push the branch only.** Never push to or merge `main` without Scott's explicit go-ahead. **Scott merges, and Scott deletes branches himself.** No PR, no zip, unless he asks. The sync tool refuses to commit on `main` without `--allow-main`; never use that flag without his approval.
 3. **After he merges:** fast-forward both clones' `main` and **tell him**. Do not delete the remote task branch (he does that); delete a local task branch only after he has said the branch is merged and he is done with it.
 4. **Author identity** on every commit: Raymond Scott Starsman <scott@starsman.com>.
@@ -160,7 +160,7 @@ Read `README.md` (layout, data model, how to interpret the data), `CONTRIBUTING.
 
 ## 5. Tooling: how to run each check and what "good" looks like
 
-Run from `/workspace/ww2-unit-locations` (standard-library Python 3 only). One command runs all except the id and grid checks: `/workspace/UnitLocationData-tools/run_checks.sh`.
+Run from `/workspace/UnitLocationData-prep/WorldWar2` (standard-library Python 3 only). One command runs all except the id and grid checks: `/workspace/UnitLocationData-tools/run_checks.sh`.
 
 | check | command | good baseline on 26 October 2026 |
 |---|---|---|
@@ -176,22 +176,32 @@ Run from `/workspace/ww2-unit-locations` (standard-library Python 3 only). One c
 | GitHub Actions | `gh run list --repo scottstarsman/UnitLocationData --branch <branch>` after pushing | `validate` completes with success. CI runs validate, coordinates (non-failing), temporal audit (non-failing), build, build `--check` and a clean `git status` of generated files, semantic tests. |
 
 **who_controls grid, before/after method** (proves a data change moved only the answers you intended):
-1. On the task branch **before** your first edit: `cd /workspace/ww2-unit-locations && python3 /workspace/UnitLocationData-tools/wc_grid.py /tmp/before.json` (needs current `build/`; ~10 s; 5,020 answers = every subject unit in `build/command_relations.csv` on 40 weekly dates from 5 June 1944, plus daily answers 5 June to 31 December for US-ABN-082D, GER-PZ-LEHRD, US-ARM-002D).
+1. On the task branch **before** your first edit: `cd /workspace/UnitLocationData-prep/WorldWar2 && python3 /workspace/UnitLocationData-tools/wc_grid.py /tmp/before.json` (needs current `build/`; ~10 s; 5,020 answers = every subject unit in `build/command_relations.csv` on 40 weekly dates from 5 June 1944, plus daily answers 5 June to 31 December for US-ABN-082D, GER-PZ-LEHRD, US-ARM-002D).
 2. After the final edit and `python3 scripts/build.py`: same command to `/tmp/after.json`.
 3. `python3 /workspace/UnitLocationData-tools/cmp_grid.py /tmp/before.json /tmp/after.json 20` prints totals changed, new keys and diffs of the first 20 changed answers.
 4. Report the count and the **reason for every kind of change** (a relation, or its `certain` status, appears earlier; a chain gains a line; etc.). A change you cannot explain means a defect. Zero changes is the right answer for notes-only commits. If the set of subject units grows, new keys are expected; say so.
 
-**Publishing sequence** (replay the working-copy commits into the prep clone, run the checks there, push the branch):
+**Publishing sequence** (edit in the prep clone on the task branch, run the checks there, push the branch):
 ```
-cd /workspace/ww2-unit-locations && git status          # clean, all work committed
-python3 /workspace/UnitLocationData-tools/sync_to_github_prep.py --branch TASK --base main --dry-run
-python3 /workspace/UnitLocationData-tools/sync_to_github_prep.py --branch TASK --base main
-cd /workspace/UnitLocationData-prep/WorldWar2 && python3 scripts/validate.py && python3 scripts/build.py --check && python3 scripts/check_claim_ids.py
+cd /workspace/UnitLocationData-prep && git fetch origin && git checkout main && git merge --ff-only origin/main
+git checkout -b TASK                                             # edit and commit here
+/workspace/UnitLocationData-tools/run_checks.sh
+cd /workspace/UnitLocationData-prep/WorldWar2 && python3 scripts/check_claim_ids.py
 git -C /workspace/UnitLocationData-prep push -u origin TASK     # branch only
 gh run list --repo scottstarsman/UnitLocationData --branch TASK # wait for green
 ```
-Compare link for the report: `https://github.com/scottstarsman/UnitLocationData/compare/main...TASK`.
-Working copy and prep clone must carry the same content (the sync tool replays; the publish clone adds only the licence, citation, root README and workflow). Never edit the prep clone by hand.
+Compare link for the report: `https://github.com/scottstarsman/UnitLocationData/compare/main...TASK`. After Scott merges: fast-forward `main` in the prep clone and delete the local branch.
+Historical (before 30 October 2026): edits were made in a separate working copy and replayed with `sync_to_github_prep.py`; that workflow and its `sync.lastsrc` marker are retired.
+
+**Drive sync** (rclone remote `gdrive`; from the prep clone; copy only, never delete on Drive):
+```
+cd /workspace/UnitLocationData-prep
+EX=(--exclude '.git/**' --exclude '__pycache__/**' --exclude 'docs/sources/**' --exclude '*_notes.md')
+rclone copy WorldWar2 "gdrive:WWII Unit Locations/repo" "${EX[@]}" --checksum --dry-run
+rclone copy WorldWar2 "gdrive:WWII Unit Locations/repo" "${EX[@]}" --checksum
+rclone check WorldWar2 "gdrive:WWII Unit Locations/repo" "${EX[@]}" --checksum --one-way
+```
+Pass the excludes as a quoted bash array (unquoted globs expand and break the command). Private source notes (for example de Lattre, Ellis) go to `WWII Unit Locations/source notes/`, one copy each (replace in place), with the md5 verified after upload; they are never committed. The shared rclone client_id is being retired; Scott may need to create his own.
 
 ---
 
@@ -334,7 +344,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 Do these in order. Do not change any file, branch or Drive item until step 5 is done.
 
 1. **Read, in this order:** this file; `README.md`; `docs/roadmap.md` (status, batch table, "Batch 3" and "Batch 3 review" sections); `CONTRIBUTING.md`; `docs/methodology.md`; `schema/README.md` (sections "Reading a command interval", "What confidence means", "Same-unit splits", "Note labels"); `docs/review/verification_results.md` (sections 4 and 5, "Decisions pending"); `docs/review/responses.md` (index table); the top three entries of `docs/changelog.md`; `/workspace/UnitLocationData-tools/README.md`.
-2. **Check state:** `git -C /workspace/ww2-unit-locations status -sb` and `git -C /workspace/UnitLocationData-prep status -sb`; `git -C /workspace/UnitLocationData-prep fetch origin` and compare `origin/main` with the local `main`; ask whether `handoff-doc` and `open-items-oct26` are merged.
+2. **Check state:** `git -C /workspace/UnitLocationData-prep status -sb`; `git -C /workspace/UnitLocationData-prep fetch origin` and compare `origin/main` with the local `main`; ask whether `handoff-doc` and `open-items-oct26` are merged.
 3. **Run the verification baseline** (`run_checks.sh`, then `check_claim_ids.py` in the prep clone and the grid baseline) and compare each result with the "good baseline" column in section 5. Anything different from the baseline is a finding to report, not a thing to fix silently.
 4. **Check Drive:** list the `WWII Unit Locations` folder and `repo/docs`; confirm `HANDOFF.md` is present once and that no duplicate files exist.
 5. **Confirm understanding back to Scott** in a short, warm message: the scope and state in two lines; the standing rules in section 3 (branch only, he merges, author identity, annotate inferred values, no zip, Drive in place, verification before reporting, email only him); the open decisions in section 7; and ask what he wants first. Wait for his answer.

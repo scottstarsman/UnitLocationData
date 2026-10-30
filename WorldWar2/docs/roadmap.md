@@ -528,6 +528,21 @@ Scott accepted all four recommendations of German batch 1:
 - 56 German divisions remain unlabelled (2 more, the 9th and 10th SS, have pilot values), plus the corps, armies, brigades and battle groups, which may stay blank.
 - Other nationalities with unlabelled divisions: Canada 3, France 10; Belgium, the Netherlands and Czechoslovakia have brigade files only.
 
+## Source fixes from de Lattre and Ellis (30 October 2026): open points
+
+Done on the branch `source-fixes-delattre-ellis` (from `main` `647d774`): 28 new claims in 14 units, 10 changed rows, 17 places, one new unit (British 5th Infantry Division), one conflict group (2nd Moroccan Division, 3 April 1945: Bruchsal preferred, Karlsruhe alternate), semantic scenario 35; see `docs/changelog.md`.
+
+Still open, each with a recommendation:
+
+1. French 2nd Moroccan Division, Briançon on 14 October 1944 (Wikipedia): de Lattre has Briançon retaken by mid-September and the division on the Doubs front by late September. Lowered to 0.3 and kept. Recommendation: retire the row and add a mid-September Alpine row at 0.3 (approximate date), unless Scott prefers to keep the Wikipedia date as a flagged row.
+2. French 4th Moroccan Mountain Division, Rouffach: de Lattre gives the evening of 4 February, Wikipedia 5 February. Recommendation: keep the 5 February row with the difference stated in it (dataset convention for one day).
+3. Constance on 26 April 1945 was entered by Lebel's group (corps troops of the I Corps), not by the 1st Armoured Division. Recommendation: no row; corps groups are not modelled.
+4. German 15th Panzergrenadier and 9th Panzer Divisions: the month-level Lexikon rows of 15 October 1944 (Saarbrücken, Arnhem) sit beside the new Ellis rows of 14 October (Venlo reserve). Recommendation: keep both at 0.3 with their notes; retire the Lexikon rows only if a dated source puts the divisions elsewhere in early October.
+5. German 269th Division: de Lattre gives only late October in the Vosges and mid-January south-east of Benfeld, without a firm day. Recommendation: no row.
+6. British 5th Infantry Division: new unit record with one row (Lübeck, 2 May 1945); its Italian service is another theatre. Recommendation: keep it; add more rows only from Ellis pages that name it.
+
+Deferred (not in this batch, about 30 rows): 1st Armoured Seppois (19 November 1944) and the Burnhaupt encirclement (24-28 November); 2nd Moroccan Héricourt-Lisaine (17 November) and the Thann sector (20 January 1945); 9th Colonial Doubs loop and Hérimoncourt (17 November), Seppois-Pfetterhouse (23 November) and Lörrach to the Swiss frontier (22-24 April 1945); 4th Moroccan Mountain Vieux-Thann (28 January) and Villingen-St Georgen (21-24 April); 5th Armoured Colmar (2 February); 3rd Algerian Château-Lambert (23 November) and Weil der Stadt-Leonberg (20 April); 1st Free French Grosmagny and the Ballon d'Alsace (24 November); US 3rd and 28th Infantry on the Colmar front, 36th Infantry at Germersheim and 12th Armored at Rouffach; the German Nineteenth Army at Avignon in mid-1944; the command changes de Lattre dates (1st Armoured to the I Corps and the 9th Colonial under army control after Karlsruhe; 2nd Armoured and 10th Infantry leaving the army about 10 February 1945). The 719th Division attack south of Villingen on 24 April 1945 and the 4th Moroccan Mountain attack at Vieux-Thann on 20 January 1945 were already rows.
+
 ## Official-history pass 1 (30 October 2026): open points
 
 Done on the branch `official-history-pass-1` (from `main` `1431a82`): 28 new claims (`C2003` to `C2030`), 6 places (`PL0981` to `PL0986`), 1 reference (`R760`, the Ninth Army history Conquer), semantic scenario 34; see `docs/changelog.md`. Closed: 8 May 1945 rows for the US 2nd Armored, 29th, 30th, 65th, 75th, 82nd Airborne, 83rd, 84th, 103rd and 104th; the Canadian 2nd, 3rd, 4th Armoured and 5th Armoured; the French 2nd Moroccan and 5th Armoured; the 75th rest span (ended by its occupation start of 22 April); first activity rows for the German 85th, 180th, 416th, 712th, 719th, 2nd and 6th Fallschirmjäger and 6th SS Mountain Divisions.

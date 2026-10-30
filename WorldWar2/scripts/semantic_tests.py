@@ -920,6 +920,11 @@ def scenario_25_brigades_batch_3_german():
     expect(s + ': C1811 is the last row of the batch (La Rochelle surrender)', (c['unit_id'], c['date']), ('GER-FEST-LAROCH', '1945-05-08'))
 
 
+# The official-history pass (October 2026) adds rows to units of the earlier activity batches; each batch scenario counts only its own rows,
+# so rows whose notes name the official-history pass are left out of the batch counts (they are counted in scenario 34).
+NOT_OHP = lambda c: 'official-history pass' not in c['notes']
+
+
 def scenario_26_activity_pilot():
     """Activity pilot (docs/activity_status_design.md): spans, implicit ends, points, open spans, the inferred cap, and blank units."""
     s = 'scenario 26'
@@ -945,9 +950,9 @@ def scenario_26_activity_pilot():
     expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
     claims = common.load_all_claims()[1]
     pilot = {'US-ABN-101D', 'US-ABN-082D', 'UK-ABN-001D', 'UK-INF-050D', 'CAN-INF-002D', 'CAN-ARM-004D', 'GER-SSPZ-009D', 'GER-SSPZ-010D', 'GER-FEST-LORIENT', 'FR-ARM-002D', 'FR-INF-003D', 'POL-ARM-001D', 'POL-ABN-001B'}
-    tagged = sorted({c['unit_id'] for c in claims if c.get('activity_status') and c['unit_id'] in pilot})
+    tagged = sorted({c['unit_id'] for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in pilot})
     expect(s + ': the pilot covers 13 units', len(tagged), 13)
-    expect(s + ': the pilot has 25 activity rows', sum(1 for c in claims if c.get('activity_status') and c['unit_id'] in pilot), 25)
+    expect(s + ': the pilot has 25 activity rows', sum(1 for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in pilot), 25)
 
 
 ROLLOUT_1 = ['US-INF-%03dD' % n for n in (1, 2, 3, 4, 5, 8, 9, 28, 29, 30, 35, 36, 45, 69, 79, 80, 83, 89, 90, 95)] + ['US-ARM-%03dD' % n for n in (2, 3, 4, 5, 6, 7, 8, 10, 12, 14)]
@@ -967,7 +972,7 @@ def scenario_27_activity_rollout_1():
     expect(s + ': 90th Division, 19 Jun 1944: inferred point is capped at 0.3', A('US-INF-090D', '1944-06-19'), ('in_line', 'certain', 'inferred', 0.3))
     expect(s + ': 12th Armored, 4 Feb 1945: reserve north of Colmar (point)', A('US-ARM-012D', '1945-02-04')[:3], ('reserve', 'certain', 'stated'))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_1]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in ROLLOUT_1]
     expect(s + ': batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
     expect(s + ': batch 1 with its follow-up and second-source pass has 197 activity rows', len(rows), 197)
     expect(s + ': batch 1 with its follow-up and second-source pass has 170 stated and 27 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (170, 27))
@@ -998,7 +1003,7 @@ def scenario_28_activity_rollout_2():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_2]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in ROLLOUT_2]
     expect(s + ': batch 2 covers 30 units', len({c['unit_id'] for c in rows}), 30)
     expect(s + ': batch 2 has 143 activity rows', len(rows), 143)
     expect(s + ': batch 2 has 125 stated and 18 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (125, 18))
@@ -1025,7 +1030,7 @@ def scenario_29_activity_rollout_3():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_3]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in ROLLOUT_3]
     expect(s + ': batch 3 covers 11 units', len({c['unit_id'] for c in rows}), 11)
     expect(s + ': batch 3 has 98 activity rows', len(rows), 98)
     expect(s + ': batch 3 has 89 stated and 9 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (89, 9))
@@ -1048,7 +1053,7 @@ def scenario_30_activity_german_1():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_1]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in GERMAN_1]
     expect(s + ': German batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
     expect(s + ': German batch 1 has 148 activity rows', len(rows), 148)
     expect(s + ': German batch 1 has 122 stated and 26 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (122, 26))
@@ -1070,7 +1075,7 @@ def scenario_31_activity_german_2():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_2]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in GERMAN_2]
     expect(s + ': German batch 2 labels 25 of its 30 units', len({c['unit_id'] for c in rows}), 25)
     expect(s + ': German batch 2 has 45 activity rows', len(rows), 45)
     expect(s + ': German batch 2 has 34 stated and 11 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (34, 11))
@@ -1090,7 +1095,7 @@ def scenario_32_activity_german_3():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_3]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in GERMAN_3]
     expect(s + ': German batch 3 labels 22 of its 26 units', len({c['unit_id'] for c in rows}), 22)
     expect(s + ': German batch 3 has 25 activity rows', len(rows), 25)
     expect(s + ': German batch 3 has 20 stated and 5 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (20, 5))
@@ -1120,8 +1125,25 @@ def scenario_33_activity_canada_france():
     expect(s + ': 5th Armoured (France), 24 Nov 1944: relieved to regroup (inferred reserve)', A('FR-ARM-005D', '1944-11-24'), ('reserve', 'certain', 'inferred', 0.3))
 
 
+def scenario_34_official_history_pass_1():
+    """Official-history pass 1 (October 2026): 8 May 1945 rows, span closures and the first activity rows of 8 blank German divisions (C2003-C2030) from The Last Offensive, Conquer (Ninth Army), Stacey and de Lattre (paraphrased)."""
+    s = 'scenario 34'
+    import activity
+    A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
+    claims = common.load_all_claims()[1]
+    rows = [c for c in claims if c.get('activity_status') and not NOT_OHP(c)]
+    expect(s + ': the pass has 28 activity rows in 24 units', (len(rows), len({c['unit_id'] for c in rows})), (28, 24))
+    expect(s + ': the pass has 12 stated and 16 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (12, 16))
+    expect(s + ': 75th Division, 20 Apr 1945: the rest span now ends by the occupation start of 22 Apr (inferred end)', A('US-INF-075D', '1945-04-20'), ('refitting', 'certain', 'inferred', 0.3))
+    expect(s + ': 75th Division, 25 Apr 1945: occupation zone in the Ruhr (open span)', A('US-INF-075D', '1945-04-25'), ('garrison', 'possible', 'stated', 0.3))
+    expect(s + ': 2nd Armored, 8 May 1945: assembled for Task Force Berlin (inferred garrison)', A('US-ARM-002D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))
+    expect(s + ': 3rd Canadian, 8 May 1945: after the cease fire (inferred garrison)', A('CAN-INF-003D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))
+    expect(s + ': 416th Infantry (German), 15 Jan 1945: holds the Orscholz Switch', A('GER-INF-416D', '1945-01-15'), ('in_line', 'certain', 'stated', 0.5))
+    expect(s + ': 712th Infantry (German), 24 Dec 1944: a point does not spread to the next day', A('GER-INF-712D', '1944-12-24'), None)
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1):
         before = len(FAILURES)
         try:
             fn()

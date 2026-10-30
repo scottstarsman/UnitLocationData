@@ -6,11 +6,11 @@ BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,a
 CAN-ARMY-001A,First Canadian Army,Canada,army,Army,active,1942,true,13,1944-07-23,1945-05-04,
 CAN-COR-001C,I Canadian Corps,Canada,corps,Army,active,1942,true,6,1945-03-15,1945-05-07,
 CAN-COR-002C,II Canadian Corps,Canada,corps,Army,active,1943,true,22,1944-07-11,1945-05-05,
-CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,active,,true,20,1944-07-31,1945-05-04,
-CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,6,1945-02-28,1945-05-01,
+CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,active,,true,21,1944-07-31,1945-05-08,
+CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,7,1945-02-28,1945-05-08,
 CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,active,1939,true,5,1945-04-03,1945-05-08,
-CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,active,1939,true,29,1944-07-07,1945-05-07,
-CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,33,1944-06-06,1945-05-04,
+CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,active,1939,true,30,1944-07-07,1945-05-08,
+CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,34,1944-06-06,1945-05-08,
 CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,active,1942-01-26,true,8,1944-06-06,1945-02-26,
 CZ-ARM-001B,1st Czechoslovak Independent Armoured Brigade,Czechoslovakia,brigade,Armoured,active,1943-09,true,5,1944-08-30,1945-05-08,
 FR-ARMY-001A,French First Army (Army B until 25 September 1944),France,army,Army,active,1944,true,5,1944-08-20,1945-04-22,
@@ -19,9 +19,9 @@ FR-COR-001C,French I Corps,France,corps,Army,active,1943-08-16,true,3,1944-09-01
 FR-COR-002C,French II Corps,France,corps,Army,active,1943-08-16,true,2,1944-09-17,1945-03-31,
 FR-ARM-001D,French 1st Armoured Division,France,division,Armoured,active,,true,4,1944-11-18,1945-04-23,
 FR-ARM-002D,French 2nd Armoured Division,France,division,Armoured,active,1943-08-24,true,15,1944-08-09,1945-05-04,
-FR-ARM-005D,French 5th Armoured Division,France,division,Armoured,active,,true,3,1944-11-21,1945-04-21,
+FR-ARM-005D,French 5th Armoured Division,France,division,Armoured,active,,true,4,1944-11-21,1945-05-08,
 FR-INF-001D,French 1st Infantry Division (1st Free French Division),France,division,Army,active,1940-08-01,true,2,1944-09-03,1945-01-23,
-FR-INF-002D,French 2nd Moroccan Infantry Division,France,division,Army,active,1943-05-01,true,4,1944-10-14,1945-04-03,
+FR-INF-002D,French 2nd Moroccan Infantry Division,France,division,Army,active,1943-05-01,true,5,1944-10-14,1945-05-08,
 FR-INF-003D,French 3rd Algerian Infantry Division,France,division,Army,active,1943-05-01,true,3,1944-08-28,1945-03-31,
 FR-INF-004D,French 4th Moroccan Mountain Division,France,division,Army,active,1943-05-01,true,6,1945-01-12,1945-05-08,
 FR-INF-009D,French 9th Colonial Infantry Division,France,division,Army,active,1943-07-16,true,2,1944-08-27,1945-02-06,
@@ -99,10 +99,10 @@ GER-DIV-405,Division Nr. 405,Germany,division,Army,placeholder,1942-10-05,false,
 GER-DIV-406,406th Landesschützen Division (Division z.b.V. 406),Germany,division,Army,placeholder,,false,0,,,
 GER-DIV-526,Division Nr. 526,Germany,division,Army,placeholder,1942-09-28,false,0,,,GER-COR-074C
 GER-DIV-905,Division Nr. 905,Germany,division,Army,placeholder,1945-01-07,false,0,,,GER-COR-089C
-GER-FJ-002D,2nd Fallschirmjäger Division,Germany,division,Luftwaffe,active,1943-02-13,true,1,1945-02-08,1945-02-08,GER-COR-025C
+GER-FJ-002D,2nd Fallschirmjäger Division,Germany,division,Luftwaffe,active,1943-02-13,true,2,1945-02-08,1945-03-24,GER-COR-025C
 GER-FJ-003D,3rd Fallschirmjäger Division,Germany,division,Luftwaffe,active,1943-10,true,11,1944-06-09,1945-04-15,
 GER-FJ-005D,5th Fallschirmjäger Division,Germany,division,Luftwaffe,active,1944-04,true,8,1944-07-24,1945-04-15,GER-FJ-002C
-GER-FJ-006D,6th Fallschirmjäger Division,Germany,division,Luftwaffe,active,1944-06,true,3,1944-09-04,1945-02-13,GER-SSPZ-001C
+GER-FJ-006D,6th Fallschirmjäger Division,Germany,division,Luftwaffe,active,1944-06,true,4,1944-09-04,1945-02-16,GER-SSPZ-001C
 GER-FJ-007D,7th Fallschirmjäger Division,Germany,division,Luftwaffe,active,1944-10-09,true,3,1945-01-10,1945-04-15,GER-FJ-002C
 GER-FJ-008D,8th Fallschirmjäger Division,Germany,division,Luftwaffe,active,,true,3,1945-01-15,1945-04-10,GER-FJ-002C
 GER-FJ-011D,11th Fallschirmjäger Division,Germany,division,Luftwaffe,placeholder,,false,0,,,GER-FJ-002C
@@ -116,12 +116,12 @@ GER-INF-064D,64th Infantry Division,Germany,division,Army,active,1944-06-26,true
 GER-INF-070D,70th Infantry Division,Germany,division,Army,active,1944-08-01,true,2,1944-09-18,1944-11-06,GER-COR-089C
 GER-INF-077D,77th Infantry Division,Germany,division,Army,active,1944-01-15,true,3,1944-06-10,1944-06-19,GER-COR-074C
 GER-INF-084D,84th Infantry Division,Germany,division,Army,active,1944-02-02,true,6,1944-08-19,1945-03-24,GER-COR-081C
-GER-INF-085D,85th Infantry Division,Germany,division,Army,active,1944-02-02,true,2,1944-12-15,1945-02-15,GER-COR-067C
+GER-INF-085D,85th Infantry Division,Germany,division,Army,active,1944-02-02,true,3,1944-08-11,1945-02-15,GER-COR-067C
 GER-INF-089D,89th Infantry Division,Germany,division,Army,active,1944-01-15,true,4,1944-07-15,1945-02-15,GER-COR-081C
 GER-INF-106D,106th Infantry Division,Germany,division,Army,placeholder,,false,0,,,GER-COR-064C
 GER-INF-159D,159th Infantry Division,Germany,division,Army,active,1944-10-09,true,4,1944-10-15,1945-01-20,GER-COR-086C
 GER-INF-176D,176th Infantry Division,Germany,division,Army,active,1944-10,true,3,1944-11-15,1945-04-01,GER-SSCOR-012C
-GER-INF-180D,180th Infantry Division,Germany,division,Army,active,1944-10-31,true,4,1944-11-15,1945-04-15,GER-COR-086C
+GER-INF-180D,180th Infantry Division,Germany,division,Army,active,1944-10-31,true,5,1944-11-15,1945-04-15,GER-COR-086C
 GER-INF-189D,189th Infantry Division,Germany,division,Army,active,1944-10-08,true,3,1944-11-07,1945-01-20,GER-COR-066C
 GER-INF-190D,190th Infantry Division,Germany,division,Army,placeholder,1944-11-04,false,0,,,GER-FJ-002C
 GER-INF-198D,198th Infantry Division,Germany,division,Army,active,1939-12-01,true,6,1944-09-15,1945-04-15,GER-LFC-004C
@@ -152,15 +152,15 @@ GER-INF-352D,352nd Infantry Division,Germany,division,Army,active,1943-11-05,tru
 GER-INF-353D,353rd Infantry Division,Germany,division,Army,active,1943-11-05,true,8,1944-07-03,1945-04-15,GER-COR-025C
 GER-INF-361D,361st Infantry Division,Germany,division,Army,placeholder,1943-11-26,false,0,,,GER-COR-088C
 GER-INF-363D,363rd Infantry Division,Germany,division,Army,active,1943-12-28,true,1,1944-08-19,1944-08-19,GER-COR-084C
-GER-INF-416D,416th Infantry Division,Germany,division,Army,active,1941-12-20,true,1,1945-01-01,1945-01-01,GER-COR-082C
+GER-INF-416D,416th Infantry Division,Germany,division,Army,active,1941-12-20,true,2,1945-01-01,1945-01-15,GER-COR-082C
 GER-INF-462D,462nd Infantry Division,Germany,division,Army,active,1944-10-19,true,1,1944-09-24,1944-09-24,GER-SSCOR-013C
 GER-INF-703D,703rd Infantry Division,Germany,division,Army,placeholder,1945-03-22,false,0,,,
 GER-INF-708D,708th Infantry Division,Germany,division,Army,active,1941-05-02,true,1,1944-08-10,1944-08-10,GER-COR-080C
 GER-INF-709D,709th Static Infantry Division,Germany,division,Army,active,1941-05-02,true,5,1944-06-06,1944-06-29,GER-COR-084C
 GER-INF-711D,711th Infantry Division,Germany,division,Army,active,1941-05-01,true,3,1944-06-06,1944-07-15,GER-COR-081C
-GER-INF-712D,712th Infantry Division,Germany,division,Army,active,1941-05-05,true,2,1944-11-15,1944-12-15,GER-COR-089C
+GER-INF-712D,712th Infantry Division,Germany,division,Army,active,1941-05-05,true,3,1944-11-15,1944-12-23,GER-COR-089C
 GER-INF-716D,716th Static Infantry Division,Germany,division,Army,active,1941-05-02,true,7,1944-06-06,1945-04-14,GER-COR-084C
-GER-INF-719D,719th Infantry Division,Germany,division,Army,active,1941-05-03,true,2,1944-09-15,1944-12-15,GER-COR-088C
+GER-INF-719D,719th Infantry Division,Germany,division,Army,active,1941-05-03,true,3,1944-09-15,1945-04-24,GER-COR-088C
 GER-INF-HAMBURG,Infanterie-Division Hamburg (324th Infantry Division),Germany,division,Army,placeholder,1945-03-04,false,0,,,GER-COR-086C
 GER-INF-HUTTN,Division Ulrich von Hutten,Germany,division,Army,active,,true,1,1945-04-14,1945-04-14,
 GER-INF-JUTLAND,Infanterie-Division Jütland (325th Infantry Division),Germany,division,Army,placeholder,1944-07-04,false,0,,,GER-COR-086C
@@ -186,7 +186,7 @@ GER-RES-157D,157th Reserve Division,Germany,division,Army,placeholder,1942-10-01
 GER-RES-158D,158th Reserve Division,Germany,division,Army,placeholder,1942-10-01,false,0,,,GER-COR-080C
 GER-RES-165D,165th Reserve Division,Germany,division,Army,placeholder,1942-10-04,false,0,,,GER-COR-089C
 GER-RES-182D,182nd Reserve Division,Germany,division,Army,placeholder,1942-11-26,false,0,,,GER-COR-089C
-GER-SSGEB-006D,6th SS Mountain Division Nord,Germany,division,Waffen-SS,active,1941-02-28,true,1,1945-04-02,1945-04-02,GER-COR-090C
+GER-SSGEB-006D,6th SS Mountain Division Nord,Germany,division,Waffen-SS,active,1941-02-28,true,2,1945-03-06,1945-04-02,GER-COR-090C
 GER-SSGR-030D,30th Waffen Grenadier Division of the SS (Russian No. 2),Germany,division,Waffen-SS,placeholder,,false,0,,,
 GER-SSPG-017D,17th SS Panzergrenadier Division Götz von Berlichingen,Germany,division,Waffen-SS,active,1943-11-15,true,10,1944-06-10,1945-04-16,
 GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,active,1943-10-22,true,9,1944-07-06,1944-12-16,
@@ -318,10 +318,10 @@ US-COR-021C,XXI Corps,US,corps,Army,active,1943-12-02,true,2,1944-12-27,1945-04-
 US-COR-022C,XXII Corps,US,corps,Army,active,1944-01-15,true,4,1944-11-10,1945-03-31,
 US-COR-023C,XXIII Corps,US,corps,Army,active,1944-01-15,true,1,1945-03-28,1945-03-28,
 US-ABN-017D,17th Airborne Division,US,division,Airborne,active,1942-12-16,true,6,1945-01-03,1945-05-08,
-US-ABN-082D,82nd Airborne Division,US,division,Airborne,active,,true,16,1944-06-06,1945-05-03,
+US-ABN-082D,82nd Airborne Division,US,division,Airborne,active,,true,17,1944-06-06,1945-05-08,
 US-ABN-101D,101st Airborne Division,US,division,Airborne,active,,true,25,1944-06-06,1945-05-04,
 US-ABTF-001D,1st Airborne Task Force,US,division,Airborne,active,1944-07-12,true,4,1944-08-15,1944-11-23,
-US-ARM-002D,2nd Armored Division,US,division,Armoured,active,1940-07-15,true,15,1944-06-09,1945-04-12,
+US-ARM-002D,2nd Armored Division,US,division,Armoured,active,1940-07-15,true,17,1944-06-09,1945-05-08,
 US-ARM-003D,3rd Armored Division,US,division,Armoured,active,1941-01-13,true,20,1944-06-23,1945-05-08,
 US-ARM-004D,4th Armored Division,US,division,Armoured,active,1941-01-13,true,25,1944-07-11,1945-04-04,
 US-ARM-005D,5th Armored Division,US,division,Armoured,active,1941-08-28,true,13,1944-07-25,1945-05-08,
@@ -345,26 +345,26 @@ US-INF-008D,8th Infantry Division,US,division,Army,active,,true,10,1944-07-04,19
 US-INF-009D,9th Infantry Division,US,division,Army,active,,true,15,1944-06-10,1945-05-08,
 US-INF-026D,26th Infantry Division,US,division,Army,active,,true,6,1944-09-07,1945-05-08,
 US-INF-028D,28th Infantry Division,US,division,Army,active,,true,17,1944-07-24,1945-05-08,
-US-INF-029D,29th Infantry Division,US,division,Army,active,,true,15,1944-06-06,1944-12-16,
-US-INF-030D,30th Infantry Division,US,division,Army,active,,true,18,1944-06-10,1945-04-17,
+US-INF-029D,29th Infantry Division,US,division,Army,active,,true,16,1944-06-06,1945-05-08,
+US-INF-030D,30th Infantry Division,US,division,Army,active,,true,20,1944-06-10,1945-05-08,
 US-INF-035D,35th Infantry Division,US,division,Army,active,,true,18,1944-07-08,1945-05-08,
 US-INF-036D,36th Infantry Division,US,division,Army,active,,true,6,1944-08-15,1945-05-08,US-COR-006C
 US-INF-042D,42nd Infantry Division,US,division,Army,active,,true,5,1945-02-14,1945-05-08,
 US-INF-044D,44th Infantry Division,US,division,Army,active,,true,7,1944-09-15,1945-05-05,
 US-INF-045D,45th Infantry Division,US,division,Army,active,,true,10,1944-08-15,1945-05-08,US-COR-006C
 US-INF-063D,63rd Infantry Division,US,division,Army,active,1943-01-18,true,7,1945-01-20,1945-05-08,
-US-INF-065D,65th Infantry Division,US,division,Army,active,1943-03-12,true,3,1945-03-09,1945-04-27,
+US-INF-065D,65th Infantry Division,US,division,Army,active,1943-03-12,true,4,1945-03-09,1945-05-08,
 US-INF-066D,66th Infantry Division,US,division,Army,active,1942-12-16,true,3,1945-01-01,1945-05-08,
 US-INF-069D,69th Infantry Division,US,division,Army,active,1943-01-14,true,6,1945-02-12,1945-05-08,
 US-INF-070D,70th Infantry Division,US,division,Army,active,1943-01-18,true,3,1945-01-05,1945-02-17,
 US-INF-071D,71st Infantry Division,US,division,Army,active,1943-07-10,true,4,1945-03-11,1945-05-08,
-US-INF-075D,75th Infantry Division,US,division,Army,active,1942-12-24,true,6,1944-12-22,1945-04-14,
+US-INF-075D,75th Infantry Division,US,division,Army,active,1942-12-24,true,8,1944-12-22,1945-05-08,
 US-INF-076D,76th Infantry Division,US,division,Army,active,,true,5,1945-01-19,1945-05-08,
 US-INF-078D,78th Infantry Division,US,division,Army,active,,true,5,1944-12-13,1945-05-08,
 US-INF-079D,79th Infantry Division,US,division,Army,active,,true,22,1944-06-12,1945-05-08,
 US-INF-080D,80th Infantry Division,US,division,Army,active,,true,17,1944-08-03,1945-05-08,
-US-INF-083D,83rd Infantry Division,US,division,Army,active,,true,12,1944-06-18,1945-04-13,
-US-INF-084D,84th Infantry Division,US,division,Army,active,,true,7,1944-11-18,1945-04-11,
+US-INF-083D,83rd Infantry Division,US,division,Army,active,,true,13,1944-06-18,1945-05-08,
+US-INF-084D,84th Infantry Division,US,division,Army,active,,true,9,1944-11-18,1945-05-08,
 US-INF-086D,86th Infantry Division,US,division,Army,active,,true,6,1945-03-24,1945-05-08,
 US-INF-087D,87th Infantry Division,US,division,Army,active,,true,7,1944-12-04,1945-05-08,
 US-INF-089D,89th Infantry Division,US,division,Army,active,,true,7,1945-03-12,1945-05-08,
@@ -375,8 +375,8 @@ US-INF-097D,97th Infantry Division,US,division,Army,active,,true,4,1945-03-28,19
 US-INF-099D,99th Infantry Division,US,division,Army,active,,true,7,1944-11-09,1945-05-08,
 US-INF-100D,100th Infantry Division,US,division,Army,active,,true,4,1944-11-12,1945-05-08,
 US-INF-102D,102nd Infantry Division,US,division,Army,active,,true,3,1944-11-08,1945-05-08,
-US-INF-103D,103rd Infantry Division,US,division,Army,active,,true,2,1944-11-20,1945-05-04,
-US-INF-104D,104th Infantry Division,US,division,Army,active,,true,5,1944-10-23,1945-04-19,
+US-INF-103D,103rd Infantry Division,US,division,Army,active,,true,3,1944-11-20,1945-05-08,
+US-INF-104D,104th Infantry Division,US,division,Army,active,,true,6,1944-10-23,1945-05-08,
 US-INF-106D,106th Infantry Division,US,division,Army,active,1942-05-15,true,7,1944-12-11,1945-03-15,
 US-SSF-001B,1st Special Service Force,US,brigade,Army,active,,true,5,1944-08-15,1944-12-05,
 US-TDB-001B,Task Force A (1st Tank Destroyer Brigade),US,brigade,Armoured,active,,true,9,1944-08-03,1944-09-20,

@@ -2,6 +2,62 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## official-history-pass-1: 8 May 1945 rows, span closures and blank divisions from the official histories (30 October 2026)
+
+Scott approved the official-history pass on 30 October 2026, after the Canada and France batch was merged (PR #47). Branch `official-history-pass-1` from `main` `1431a82`. Each chunk is its own commit; every commit passes the full checks.
+
+Sources: the US Army official history (CMH, The Last Offensive, chapters already cited), the Ninth Army history *Conquer: The Story of Ninth Army, 1944-1945* (1947, public domain; new reference `R760`), the Canadian official history by Stacey (`R668`, short quotations with printed pages) and de Lattre's history of the French First Army (`R686`, page numbers and paraphrase only; the reading notes stay outside the repository). Ellis's British official history is not available as public text and was not used.
+
+Every row is a new claim with its activity values set; nothing existing was changed (old value of each activity column: none, the row is new). Rows dated 8 May 1945 whose place or state the source does not give for that day are inferred and capped at 0.3, and each says why in its `Activity:` note.
+
+Semantic tests: scenarios 26 to 32 now count only their own batch's rows (`NOT_OHP`): old filter, every activity row of the batch's units; new filter, the same rows less those whose notes name the official-history pass; reason, this pass adds rows to units of those batches, and the batch totals stay as approved.
+
+### Chunk 1, US divisions (Ninth Army history and The Last Offensive)
+
+- New reference `R760`, Conquer: The Story of Ninth Army (Internet Archive, Public Domain Mark; family `us_army_unit_history`). Its short title is written "Conquer, The Story of Ninth Army, 1944-1945" because a leading "Conquer:" would read as a notes label.
+- New places: `PL0981` Gorleben, `PL0982` Münster, `PL0983` Enns (Upper Austria), coordinates from OpenStreetMap Nominatim.
+- 14 new claims, `C2003` to `C2016` (5 stated, 9 inferred):
+  - C2003, 2nd Armored, 21 April 1945, Braunschweig: garrison start (stated), 0.5. Relieved on the Elbe, takes over a military government mission (Conquer p. 308).
+  - C2004, 2nd Armored, 8 May 1945, Braunschweig: garrison point (inferred), 0.3. Assembled south of Braunschweig for Task Force Berlin (Conquer p. 334).
+  - C2005, 30th Infantry, 21 April 1945, Magdeburg: in_line start (stated), 0.5. Relieves the 2nd Armored along the Elbe (Conquer p. 308).
+  - C2006, 30th Infantry, 8 May 1945, Magdeburg: in_line point (inferred), 0.3. The Ninth Army holds the Elbe on order (Conquer pp. 330, 334).
+  - C2007, 83rd Infantry, 8 May 1945, Barby: in_line point (inferred), 0.3. The Barby bridgehead is kept (Conquer pp. 308, 330; The Last Offensive p. 447).
+  - C2008, 84th Infantry, 21 April 1945, Gorleben: in_line point (stated), 0.5. Reaches the Elbe at Gorleben (Conquer p. 309).
+  - C2009, 84th Infantry, 8 May 1945, Gorleben: in_line point (inferred), 0.3. Holds part of the XIII Corps Elbe front (Conquer pp. 309, 330).
+  - C2010, 29th Infantry, 8 May 1945, Münster: reserve point (inferred), 0.3. Assembled east of Münster while elements relieve the 95th Division in Bremen (Conquer pp. 334, 367).
+  - C2011, 75th Infantry, 22 April 1945, Brambauer: garrison start (stated), 0.3. Its Ruhr occupation zone is enlarged (Conquer p. 309); this ends the rest span opened on 14 April (`C1909`) by the implicit-end rule.
+  - C2012, 75th Infantry, 8 May 1945, Brambauer: garrison point (inferred), 0.3 (Conquer p. 334).
+  - C2013, 104th Infantry, 8 May 1945, Halle: in_line point (inferred), 0.3. The Mulde line (The Last Offensive p. 448; Conquer p. 334).
+  - C2014, 82nd Airborne, 8 May 1945, Ludwigslust: in_line point (inferred), 0.3. Holds the agreed line at Ludwigslust (The Last Offensive p. 463).
+  - C2015, 65th Infantry, 8 May 1945, Enns: in_line point (inferred), 0.3. XX Corps on the Enns awaiting the Russians (The Last Offensive p. 466).
+  - C2016, 103rd Infantry, 8 May 1945, Innsbruck: garrison point (inferred), 0.3. In Innsbruck after the Nineteenth Army surrender (The Last Offensive pp. 468, 471).
+- Still without an 8 May 1945 row (no place in the sources read): the 70th, 101st and 106th; the 44th and 97th close their spans on 5 and 7 May (unchanged).
+
+### Chunk 2, Canadian and French divisions (Stacey and de Lattre)
+
+- New place: `PL0984` Sankt Anton am Arlberg (OpenStreetMap Nominatim).
+- 6 new claims, `C2017` to `C2022`, all 8 May 1945 and inferred (0.3):
+  - C2017 to C2020: the 2nd Canadian (Oldenburg), 3rd Canadian (Aurich), 4th Canadian Armoured (Varel) and 5th Canadian Armoured (Delfzijl) Divisions: garrison point. Stacey p. 610 dates the cease fire on the First Canadian Army front to 08:00 on 5 May; p. 597 (3rd Division before Aurich) and p. 594 (5th Armoured's last major operation at Delfzijl). The place is the division's last named place; holding occupied ground after the cease fire is read as garrison.
+  - C2021, French 2nd Moroccan Infantry, Sankt Anton am Arlberg: in_line point. De Lattre pp. 500-501 (paraphrase): the column crosses the Arlberg from 5 to 7 May.
+  - C2022, French 5th Armoured, Bregenz: garrison point. De Lattre pp. 498-499 (paraphrase): Bregenz and Dornbirn on 1 and 2 May; the German Twenty-fourth Army negotiates its surrender on 4 May.
+- Still without an 8 May 1945 row: the French 1st Free French, 1st Armoured, 3rd Algerian, 9th Colonial, 10th, 27th Alpine and Gironde Divisions (de Lattre gives no place for them in the last days), and all nine British divisions listed in the roadmap (Ellis not available).
+
+### Chunk 3, German divisions that had no activity value
+
+- New places: `PL0985` Villingen, `PL0986` Dinslaken (OpenStreetMap Nominatim).
+- 8 new claims, `C2023` to `C2030`, all points and stated (the source has the division holding or attacking a sector, which is line service):
+  - C2023, 416th Infantry, 15 January 1945, Nennig: in_line, 0.5. Holds the Orscholz Switch; its replacement battalion counterattacks at Butzdorf and Tettingen (The Last Offensive p. 118).
+  - C2024, 6th SS Mountain, 6 March 1945, Trier: in_line, 0.5. Counterattacks across the Ruwer south of Trier (The Last Offensive p. 242).
+  - C2025, 180th Infantry, 24 March 1945, Wesel: in_line, 0.5. Holds the Rhine opposite the US 30th Division (The Last Offensive pp. 304, 308).
+  - C2026, 2nd Fallschirmjäger, 24 March 1945, Dinslaken: in_line, 0.3 (place inferred). Holds the south of the LXIII Corps zone and is sent against the US 79th Division (The Last Offensive pp. 304, 315).
+  - C2027, 6th Fallschirmjäger, 16 February 1945, Calcar: in_line, 0.5. Relieves the 84th Infantry Division between the Cleve-Calcar road and the Rhine (Stacey p. 484).
+  - C2028, 712th Infantry, 23 December 1944, Kapelsche Veer: in_line, 0.5. Kapelsche Veer is brought into its sector (Stacey p. 452).
+  - C2029, 719th Infantry, 24 April 1945, Villingen: in_line, 0.5. Counterattacks the French 27th Infantry Regiment south of Villingen (de Lattre p. 478, paraphrase).
+  - C2030, 85th Infantry, 11 August 1944, Potigny: in_line, 0.3 (place inferred). Takes over the 12th SS Panzer Division's front south of Caen (Stacey p. 248). Operation: the Northern France campaign (the date is after the Normandy campaign).
+- Still blank: the 226th Infantry Division (Stacey p. 332 places only some of its units in the Le Havre garrison; the main body is not placed) and the US 1st Airborne Task Force (not a division; no official-history row read).
+- German refit spans: none added in this chunk (see the roadmap).
+- Semantic scenario 34 (8 expectations).
+
 ## activity-rollout-can-fr: activity status for 3 Canadian and 10 French divisions (29 October 2026)
 
 Scott approved the combined Canada and France batch on 29 October 2026, after German batch 3 was merged (PR #46). Branch `activity-rollout-can-fr` from `main` `7435b2f`.

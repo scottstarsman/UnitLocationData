@@ -8218,7 +8218,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -9058,7 +9058,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9318,7 +9318,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -9378,7 +9378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9478,7 +9478,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -9758,7 +9758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Mecklenburg-Vorpommern",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9858,7 +9858,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Tirol",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -10418,7 +10418,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12458,7 +12458,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -12898,7 +12898,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Vorarlberg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12958,7 +12958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -13918,7 +13918,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -14098,7 +14098,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14118,7 +14118,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -14178,7 +14178,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14238,7 +14238,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19078,7 +19078,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -19158,7 +19158,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Saarland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19358,6 +19358,126 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3569,
+     53.0484
+    ]
+   },
+   "properties": {
+    "place_id": "PL0981",
+    "name": "Gorleben, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6252,
+     51.9625
+    ]
+   },
+   "properties": {
+    "place_id": "PL0982",
+    "name": "Münster, Nordrhein-Westfalen",
+    "alt_names": "Munster",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "place_id": "PL0983",
+    "name": "Enns, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2664,
+     47.1289
+    ]
+   },
+   "properties": {
+    "place_id": "PL0984",
+    "name": "Sankt Anton am Arlberg, Tirol",
+    "alt_names": "St. Anton am Arlberg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Tirol",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4599,
+     48.0597
+    ]
+   },
+   "properties": {
+    "place_id": "PL0985",
+    "name": "Villingen, Baden-Württemberg",
+    "alt_names": "Villingen-Schwenningen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7345,
+     51.5624
+    ]
+   },
+   "properties": {
+    "place_id": "PL0986",
+    "name": "Dinslaken, Nordrhein-Westfalen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
     "claims_count": 1
    }
   }

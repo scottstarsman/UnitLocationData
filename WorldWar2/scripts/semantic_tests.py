@@ -1117,8 +1117,8 @@ def scenario_33_activity_canada_france():
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in CAN_FR and ('Canada and France' in c['notes'] or c['claim_id'] in ('C1997', 'C2002'))]   # C1997 and C2002 were relabelled by the source fixes of 30 October 2026 (scenario 35) and stay rows of this batch
     expect(s + ': the batch covers 13 units', len({c['unit_id'] for c in rows}), 13)
-    expect(s + ': the batch has 64 activity rows', len(rows), 64)
-    expect(s + ': the batch has 44 stated and 20 inferred rows (C1997 is inferred reserve since the source fixes of 30 October 2026; it was stated transit)', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (44, 20))
+    expect(s + ': the batch has 63 activity rows (64 before C1636 was retired on 30 October 2026)', len(rows), 63)
+    expect(s + ': the batch has 43 stated and 20 inferred rows (C1636, stated, was retired on 30 October 2026; C1997 is inferred reserve since the source fixes of 30 October 2026; it was stated transit)', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (43, 20))
     expect(s + ': 3rd Canadian, 1 Jul 1944: in the line from D-Day (closed 31 Jul)', A('CAN-INF-003D', '1944-07-01'), ('in_line', 'certain', 'stated', 0.5))
     expect(s + ': 3rd Canadian, 5 Aug 1944: rest after 55 days, so no answer', A('CAN-INF-003D', '1944-08-05'), None)
     expect(s + ': 1st Canadian, 8 May 1945: takes control of a German corps area (garrison)', A('CAN-INF-001D', '1945-05-08'), ('garrison', 'certain', 'stated', 0.3))

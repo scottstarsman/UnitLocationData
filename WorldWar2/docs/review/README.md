@@ -74,11 +74,11 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 2030, dated 1944-06-06 to 1945-05-10 |
-| units in `data/units.csv` | 387: 318 active (have claims), 69 placeholders |
-| claim files (one per active unit) | 318 |
-| conflict groups / claims in a group | 24 / 52 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 974 / 9 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 2058, dated 1944-06-06 to 1945-05-10 |
+| units in `data/units.csv` | 388: 319 active (have claims), 69 placeholders |
+| claim files (one per active unit) | 319 |
+| conflict groups / claims in a group | 25 / 54 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 991 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 1062 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2654 |
@@ -89,15 +89,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 41 |
 
-Claims by nationality: US 798, Germany 701, UK 265, Canada 146, France 58, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
+Claims by nationality: US 798, Germany 708, UK 266, Canada 146, France 78, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
 
-Claims by echelon: division 1278, corps 336, army 161, brigade 143, army_group 45, regiment/battle_group 35, other 22, battalion 10.
+Claims by echelon: division 1305, corps 337, army 161, brigade 143, army_group 45, regiment/battle_group 35, other 22, battalion 10.
 
-Claims by branch: Army 1262, Armoured 515, Waffen-SS 103, Airborne 100, Luftwaffe 50.
+Claims by branch: Army 1282, Armoured 523, Waffen-SS 103, Airborne 100, Luftwaffe 50.
 
-Claims by event type: attack 441, other 244, defense 225, command_change 174, capture 172, hq_move 151, arrival 107, regroup 105, relocation 92, hq_observation 61, landing 60, subordinate_assignment 45, withdrawal 43, counterattack 42, surrender 39, activation 16, redesignation 8, destruction 5.
+Claims by event type: attack 442, other 244, defense 228, capture 187, command_change 174, hq_move 151, arrival 109, regroup 106, relocation 94, hq_observation 61, landing 60, counterattack 45, subordinate_assignment 45, withdrawal 43, surrender 39, activation 17, redesignation 8, destruction 5.
 
-Claims by status: preferred 1995, alternate 19, disputed 16. Claims by confidence: 0.3 451, 0.5 958, 0.7 558, 0.9 63.
+Claims by status: preferred 2022, alternate 20, disputed 16. Claims by confidence: 0.3 456, 0.5 980, 0.7 559, 0.9 63.
 
 Placeholder units by nationality: Germany 64, Allied 3, US 2.
 
@@ -109,7 +109,7 @@ Evidence roles of relation links: observed_during 1281, asserts_start 1072, asse
 
 References by source family: wikipedia 237, us_army_cmh 236, lexikon_wehrmacht_de 196, ww2byday_com 33, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 237, reference_compilation 230, official_history 179, assignment_table 65, news_or_web_article 19, archive_document 8, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 2, other 2.
 
-Places by kind: point 870, area 86, line 18.
+Places by kind: point 887, area 86, line 18.
 
 <!-- counts:end -->
 

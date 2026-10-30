@@ -10758,7 +10758,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -11358,7 +11358,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -12078,7 +12078,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -12418,7 +12418,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -15378,7 +15378,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Schleswig-Holstein",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -16478,7 +16478,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -16698,7 +16698,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16798,7 +16798,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19318,7 +19318,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 1
    }
   },
   {
@@ -19358,7 +19358,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -19478,6 +19478,346 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4947,
+     47.6863
+    ]
+   },
+   "properties": {
+    "place_id": "PL0987",
+    "name": "Lure, Haute-Saône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haute-Saône",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.598,
+     49.1241
+    ]
+   },
+   "properties": {
+    "place_id": "PL0988",
+    "name": "Bruchsal, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8187,
+     47.9844
+    ]
+   },
+   "properties": {
+    "place_id": "PL0989",
+    "name": "Tuttlingen, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0135,
+     47.8531
+    ]
+   },
+   "properties": {
+    "place_id": "PL0990",
+    "name": "Stockach, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0819,
+     47.5649
+    ]
+   },
+   "properties": {
+    "place_id": "PL0991",
+    "name": "Suarce, Territoire de Belfort",
+    "alt_names": "Suarcine",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Territoire de Belfort",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5838,
+     47.4479
+    ]
+   },
+   "properties": {
+    "place_id": "PL0992",
+    "name": "L'Isle-sur-le-Doubs, Doubs",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Doubs",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6329,
+     47.7003
+    ]
+   },
+   "properties": {
+    "place_id": "PL0993",
+    "name": "Ronchamp, Haute-Saône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haute-Saône",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7396,
+     47.7572
+    ]
+   },
+   "properties": {
+    "place_id": "PL0994",
+    "name": "Plancher-les-Mines, Haute-Saône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haute-Saône",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8252,
+     47.7419
+    ]
+   },
+   "properties": {
+    "place_id": "PL0995",
+    "name": "Giromagny, Territoire de Belfort",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Territoire de Belfort",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0089,
+     47.7817
+    ]
+   },
+   "properties": {
+    "place_id": "PL0996",
+    "name": "Masevaux, Haut-Rhin",
+    "alt_names": "Massevaux",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7851,
+     47.9308
+    ]
+   },
+   "properties": {
+    "place_id": "PL0997",
+    "name": "Longegoutte forest, Vosges",
+    "alt_names": "Forêt de Longegoutte",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7697,
+     47.95
+    ]
+   },
+   "properties": {
+    "place_id": "PL0998",
+    "name": "Saulxures-sur-Moselotte, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8398,
+     47.9639
+    ]
+   },
+   "properties": {
+    "place_id": "PL0999",
+    "name": "Cornimont, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8767,
+     48.0066
+    ]
+   },
+   "properties": {
+    "place_id": "PL1000",
+    "name": "La Bresse, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3968,
+     49.0981
+    ]
+   },
+   "properties": {
+    "place_id": "PL1001",
+    "name": "Leopoldshafen, Baden-Württemberg",
+    "alt_names": "Eggenstein-Leopoldshafen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6371,
+     47.4855
+    ]
+   },
+   "properties": {
+    "place_id": "PL1002",
+    "name": "Bretigney, Doubs",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Doubs",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1755,
+     47.5375
+    ]
+   },
+   "properties": {
+    "place_id": "PL1003",
+    "name": "Seppois-le-Bas, Haut-Rhin",
+    "alt_names": "Seppois",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
     "claims_count": 1
    }
   }

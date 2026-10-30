@@ -1,6 +1,6 @@
 # Activity status: design note and pilot (October 2026)
 
-Status: **rollout in progress** (batch 3 of about 6, October 2026: batch 1, 30 US divisions, 197 rows; batch 2, 28 US and 2 British divisions, 143 rows; batch 3, 11 British divisions, 98 rows; see section 9). The columns exist in every claim file, but only 84 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
+Status: **rollout in progress** (batch 3 of about 6, October 2026: batch 1, 30 US divisions, 197 rows; batch 2, 28 US and 2 British divisions, 143 rows; batch 3, 11 British divisions, 98 rows; German batch 1, 30 divisions, 148 rows; see section 9). The columns exist in every claim file, but only 114 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
 
 ## 1. Why
 
@@ -108,4 +108,5 @@ Scott approved the rollout on 29 October 2026, in branches of about 30 units, st
 | 1, 28th refit | 28th Infantry Division | +2 (C1903, C1904); 197 in all | Neufchâteau refit, 22 December 1944 to 2 January 1945, from the CMH combat chronicle |
 | 2 | the remaining 28 US divisions; the British 11th Armoured and 15th (Scottish) Divisions | 142 (124 stated, 18 inferred): 60 existing rows labelled, 82 new claims (C1905-C1986) | done in one pass: labels, rest and refit, garrison, span closures and 8 May 1945 rows; US from the CMH combat chronicles, British from Wikipedia; 19 of 30 divisions have an 8 May row, 10 spans stay open |
 | 3 | the remaining 11 British divisions (6th Airborne; 7th, 79th and Guards Armoured; 3rd, 43rd, 49th, 51st, 52nd, 53rd and 59th Infantry) | 98 (89 stated, 9 inferred): 89 existing rows labelled, 9 new claims (C1988-C1996) | done in one pass from Wikipedia (and the US 75th Division combat chronicle for the 6th Airborne relief); 2 of 11 divisions have an 8 May row; undated rests and reserves deferred |
+| German 1 | 30 German divisions with the most claims | 148 existing rows labelled (122 stated, 26 inferred); no new claims | labels only, all points; order-of-battle listings, assignments, command changes, surrenders and destructions stay blank; 56 German divisions remain |
 | 2, 86th 8 May | 86th Infantry Division | +1 (C1987); 143 in all | in_line point at Burghausen, 0.3, from the CMH combat chronicle; 20 of 30 divisions now have an 8 May row |

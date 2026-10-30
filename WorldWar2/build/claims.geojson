@@ -75405,6 +75405,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.5167,
+     52.2667
+    ]
+   },
+   "properties": {
+    "claim_id": "C2003",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-21",
+    "place_id": "PL0480",
+    "location_name": "Braunschweig, Niedersachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "relieved on the Elbe by the 30th Division; moves to the Braunschweig area on a military government mission",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R001",
+    "source_locator": "R760: p. 308"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6392,
+     52.1317
+    ]
+   },
+   "properties": {
+    "claim_id": "C2005",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-030D",
+    "unit_name": "30th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0472",
+    "location_name": "Magdeburg, Sachsen-Anhalt",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 2d Armored Division along the Elbe and holds the XIX Corps line on the river",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R001",
+    "source_locator": "R760: p. 308"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3569,
+     53.0484
+    ]
+   },
+   "properties": {
+    "claim_id": "C2008",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0981",
+    "location_name": "Gorleben, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "attacks with XIII Corps to clear the west bank of the Elbe and reaches the river at Gorleben",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R002",
+    "source_locator": "R760: p. 309"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.5783,
      49.9481
     ]
@@ -75603,6 +75726,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R568;R001",
     "source_locator": "R568: p. 429"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4345,
+     51.5964
+    ]
+   },
+   "properties": {
+    "claim_id": "C2011",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL0966",
+    "location_name": "Brambauer, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "its occupation zone in the Ruhr is enlarged when the army boundary is moved south",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R002",
+    "source_locator": "R760: p. 309"
    }
   },
   {
@@ -81958,6 +82122,416 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R070;R002",
     "source_locator": "R070: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5167,
+     52.2667
+    ]
+   },
+   "properties": {
+    "claim_id": "C2004",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL0480",
+    "location_name": "Braunschweig, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "assembled south of Braunschweig; passes to direct Ninth Army control as the core of Task Force Berlin",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R001",
+    "source_locator": "R760: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6392,
+     52.1317
+    ]
+   },
+   "properties": {
+    "claim_id": "C2006",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-030D",
+    "unit_name": "30th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0472",
+    "location_name": "Magdeburg, Sachsen-Anhalt",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on the Elbe at the end of the war in Europe; its sector passes to XIII Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R001",
+    "source_locator": "R760: p. 330, p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.8667,
+     51.9667
+    ]
+   },
+   "properties": {
+    "claim_id": "C2007",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-083D",
+    "unit_name": "83rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0459",
+    "location_name": "Barby, Sachsen-Anhalt",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "holds its bridgehead over the Elbe at Barby at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R569;R001",
+    "source_locator": "R760: p. 308, p. 330; R569: p. 447"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3569,
+     53.0484
+    ]
+   },
+   "properties": {
+    "claim_id": "C2009",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0981",
+    "location_name": "Gorleben, Niedersachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "holds part of the XIII Corps front on the Elbe at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R002",
+    "source_locator": "R760: p. 309, p. 330"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6252,
+     51.9625
+    ]
+   },
+   "properties": {
+    "claim_id": "C2010",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0982",
+    "location_name": "Münster, Nordrhein-Westfalen",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "assembled east of Münster under XVI Corps while its elements relieve the 95th Division in Bremen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R002",
+    "source_locator": "R760: p. 334, p. 367"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4345,
+     51.5964
+    ]
+   },
+   "properties": {
+    "claim_id": "C2012",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0966",
+    "location_name": "Brambauer, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on occupation duty in the Ruhr under XVI Corps at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R760;R002",
+    "source_locator": "R760: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9697,
+     51.4828
+    ]
+   },
+   "properties": {
+    "claim_id": "C2013",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-104D",
+    "unit_name": "104th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0475",
+    "location_name": "Halle (Saale), Sachsen-Anhalt",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "on the Mulde line under VII Corps at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R760;R001",
+    "source_locator": "R569: p. 448; R760: p. 334"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4972,
+     53.3244
+    ]
+   },
+   "properties": {
+    "claim_id": "C2014",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-05-08",
+    "place_id": "PL0494",
+    "location_name": "Ludwigslust, Mecklenburg-Vorpommern",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "anchors the right flank of 21 Army Group at Ludwigslust on the line agreed with the Russians",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R001",
+    "source_locator": "R569: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "claim_id": "C2015",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-065D",
+    "unit_name": "65th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0983",
+    "location_name": "Enns, Oberösterreich",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "with XX Corps on the Enns River awaiting the Russians at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R002",
+    "source_locator": "R569: p. 466"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3933,
+     47.2683
+    ]
+   },
+   "properties": {
+    "claim_id": "C2016",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-103D",
+    "unit_name": "103rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0499",
+    "location_name": "Innsbruck, Tirol",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "in Innsbruck and the Brenner area after the German Nineteenth Army surrender",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R569;R001",
+    "source_locator": "R569: p. 468, p. 471"
    }
   },
   {

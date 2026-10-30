@@ -36,11 +36,11 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 7 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 43 |
 | US | corps | 2 | 0 | 15 | 17 | 7 | 118 |
-| US | division | 0 | 0 | 61 | 61 | 25 | 572 |
+| US | division | 0 | 0 | 61 | 61 | 25 | 586 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **69** | **0** | **318** | **387** | **258** | **2002** |
+| **All** | | **69** | **0** | **318** | **387** | **258** | **2016** |
 
 ## Operations
 
@@ -49,29 +49,29 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 1150 |
+| campaign | 9 | 9 | 1164 |
 | operation | 33 | 33 | 435 |
 | battle | 20 | 20 | 341 |
 | phase | 4 | 4 | 76 |
-| **All** | **67** | **66** | **2002** |
+| **All** | **67** | **66** | **2016** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 968 places and 111 alias names for 2002 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 971 places and 112 alias names for 2016 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 864 | 1806 |
+| point | 867 | 1820 |
 | area | 86 | 176 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
 | France (FR) | 545 | 1036 |
-| Germany (DE) | 230 | 559 |
+| Germany (DE) | 232 | 571 |
 | Netherlands (NL) | 83 | 190 |
 | Belgium (BE) | 79 | 150 |
 | Luxembourg (LU) | 10 | 29 |
-| Austria (AT) | 10 | 21 |
+| Austria (AT) | 11 | 23 |
 | Czechia (CZ) | 6 | 9 |
 | United Kingdom (GB) | 5 | 8 |

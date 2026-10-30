@@ -920,6 +920,11 @@ def scenario_25_brigades_batch_3_german():
     expect(s + ': C1811 is the last row of the batch (La Rochelle surrender)', (c['unit_id'], c['date']), ('GER-FEST-LAROCH', '1945-05-08'))
 
 
+# The official-history pass (October 2026) adds rows to units of the earlier activity batches; each batch scenario counts only its own rows,
+# so rows whose notes name the official-history pass are left out of the batch counts (they are counted in scenario 34).
+NOT_OHP = lambda c: 'official-history pass' not in c['notes']
+
+
 def scenario_26_activity_pilot():
     """Activity pilot (docs/activity_status_design.md): spans, implicit ends, points, open spans, the inferred cap, and blank units."""
     s = 'scenario 26'
@@ -945,9 +950,9 @@ def scenario_26_activity_pilot():
     expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
     claims = common.load_all_claims()[1]
     pilot = {'US-ABN-101D', 'US-ABN-082D', 'UK-ABN-001D', 'UK-INF-050D', 'CAN-INF-002D', 'CAN-ARM-004D', 'GER-SSPZ-009D', 'GER-SSPZ-010D', 'GER-FEST-LORIENT', 'FR-ARM-002D', 'FR-INF-003D', 'POL-ARM-001D', 'POL-ABN-001B'}
-    tagged = sorted({c['unit_id'] for c in claims if c.get('activity_status') and c['unit_id'] in pilot})
+    tagged = sorted({c['unit_id'] for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in pilot})
     expect(s + ': the pilot covers 13 units', len(tagged), 13)
-    expect(s + ': the pilot has 25 activity rows', sum(1 for c in claims if c.get('activity_status') and c['unit_id'] in pilot), 25)
+    expect(s + ': the pilot has 25 activity rows', sum(1 for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in pilot), 25)
 
 
 ROLLOUT_1 = ['US-INF-%03dD' % n for n in (1, 2, 3, 4, 5, 8, 9, 28, 29, 30, 35, 36, 45, 69, 79, 80, 83, 89, 90, 95)] + ['US-ARM-%03dD' % n for n in (2, 3, 4, 5, 6, 7, 8, 10, 12, 14)]
@@ -967,7 +972,7 @@ def scenario_27_activity_rollout_1():
     expect(s + ': 90th Division, 19 Jun 1944: inferred point is capped at 0.3', A('US-INF-090D', '1944-06-19'), ('in_line', 'certain', 'inferred', 0.3))
     expect(s + ': 12th Armored, 4 Feb 1945: reserve north of Colmar (point)', A('US-ARM-012D', '1945-02-04')[:3], ('reserve', 'certain', 'stated'))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_1]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in ROLLOUT_1]
     expect(s + ': batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
     expect(s + ': batch 1 with its follow-up and second-source pass has 197 activity rows', len(rows), 197)
     expect(s + ': batch 1 with its follow-up and second-source pass has 170 stated and 27 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (170, 27))
@@ -998,7 +1003,7 @@ def scenario_28_activity_rollout_2():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_2]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in ROLLOUT_2]
     expect(s + ': batch 2 covers 30 units', len({c['unit_id'] for c in rows}), 30)
     expect(s + ': batch 2 has 143 activity rows', len(rows), 143)
     expect(s + ': batch 2 has 125 stated and 18 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (125, 18))
@@ -1025,7 +1030,7 @@ def scenario_29_activity_rollout_3():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in ROLLOUT_3]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in ROLLOUT_3]
     expect(s + ': batch 3 covers 11 units', len({c['unit_id'] for c in rows}), 11)
     expect(s + ': batch 3 has 98 activity rows', len(rows), 98)
     expect(s + ': batch 3 has 89 stated and 9 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (89, 9))
@@ -1048,7 +1053,7 @@ def scenario_30_activity_german_1():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_1]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in GERMAN_1]
     expect(s + ': German batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
     expect(s + ': German batch 1 has 148 activity rows', len(rows), 148)
     expect(s + ': German batch 1 has 122 stated and 26 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (122, 26))
@@ -1070,7 +1075,7 @@ def scenario_31_activity_german_2():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_2]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in GERMAN_2]
     expect(s + ': German batch 2 labels 25 of its 30 units', len({c['unit_id'] for c in rows}), 25)
     expect(s + ': German batch 2 has 45 activity rows', len(rows), 45)
     expect(s + ': German batch 2 has 34 stated and 11 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (34, 11))
@@ -1090,7 +1095,7 @@ def scenario_32_activity_german_3():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_3]
+    rows = [c for c in claims if c.get('activity_status') and NOT_OHP(c) and c['unit_id'] in GERMAN_3]
     expect(s + ': German batch 3 labels 22 of its 26 units', len({c['unit_id'] for c in rows}), 22)
     expect(s + ': German batch 3 has 25 activity rows', len(rows), 25)
     expect(s + ': German batch 3 has 20 stated and 5 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (20, 5))

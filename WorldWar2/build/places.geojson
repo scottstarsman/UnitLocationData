@@ -9058,7 +9058,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -9318,7 +9318,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -9378,7 +9378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9478,7 +9478,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -9758,7 +9758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Mecklenburg-Vorpommern",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -9858,7 +9858,7 @@
     "precision_km": 5,
     "country": "AT",
     "region": "Tirol",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -19078,7 +19078,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -19358,6 +19358,66 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3569,
+     53.0484
+    ]
+   },
+   "properties": {
+    "place_id": "PL0981",
+    "name": "Gorleben, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6252,
+     51.9625
+    ]
+   },
+   "properties": {
+    "place_id": "PL0982",
+    "name": "Münster, Nordrhein-Westfalen",
+    "alt_names": "Munster",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "place_id": "PL0983",
+    "name": "Enns, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
     "claims_count": 1
    }
   }

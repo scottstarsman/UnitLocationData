@@ -1050,8 +1050,8 @@ def scenario_30_activity_german_1():
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_1]
     expect(s + ': German batch 1 covers 30 units', len({c['unit_id'] for c in rows}), 30)
-    expect(s + ': German batch 1 has 147 activity rows', len(rows), 147)
-    expect(s + ': German batch 1 has 122 stated and 25 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (122, 25))
+    expect(s + ': German batch 1 has 148 activity rows', len(rows), 148)
+    expect(s + ': German batch 1 has 122 stated and 26 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (122, 26))
     expect(s + ': German batch 1 rows are all points', {c['activity_span'] for c in rows}, {'point'})
     expect(s + ': 12th SS Panzer, 11 Jul 1944: sent to refit at Potigny', A('GER-SSPZ-012D', '1944-07-11'), ('refitting', 'certain', 'stated', 0.5))
     expect(s + ': 12th SS Panzer, 12 Jul 1944: a point, so no answer the next day', A('GER-SSPZ-012D', '1944-07-12'), None)

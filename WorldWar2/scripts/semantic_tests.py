@@ -1061,8 +1061,28 @@ def scenario_30_activity_german_1():
     expect(s + ': 1st SS Panzer, 16 Dec 1944: ready to exploit (inferred reserve, 0.3)', A('GER-SSPZ-001D', '1944-12-16'), ('reserve', 'certain', 'inferred', 0.3))
 
 
+GERMAN_2 = ['GER-%s' % u for u in 'INF-159D INF-180D INF-243D FJ-006D FJ-007D FJ-008D INF-048D INF-077D INF-176D INF-189D INF-269D INF-347D INF-711D VG-026D VG-326D VG-340D VG-553D VG-559D INF-049D INF-064D INF-070D INF-085D INF-271D INF-272D INF-712D INF-719D PZ-CLAUS VG-016D VG-062D VG-272D'.split()]
+
+
+def scenario_31_activity_german_2():
+    """German activity rollout, batch 2 (October 2026): the next 30 unlabelled German divisions by claim count; existing rows labelled (no new claims). Five of them (180th, 6th Fallschirmjäger, 85th, 712th, 719th) have only order-of-battle listings and stay blank."""
+    s = 'scenario 31'
+    import activity
+    A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
+    claims = common.load_all_claims()[1]
+    rows = [c for c in claims if c.get('activity_status') and c['unit_id'] in GERMAN_2]
+    expect(s + ': German batch 2 labels 25 of its 30 units', len({c['unit_id'] for c in rows}), 25)
+    expect(s + ': German batch 2 has 45 activity rows', len(rows), 45)
+    expect(s + ': German batch 2 has 34 stated and 11 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (34, 11))
+    expect(s + ': German batch 2 rows are all points', {c['activity_span'] for c in rows}, {'point'})
+    expect(s + ': 70th Division, 18 Sep 1944: Walcheren fortress before the attack is garrison', A('GER-INF-070D', '1944-09-18'), ('garrison', 'certain', 'stated', 0.7))
+    expect(s + ': 269th Division, 18 Jan 1945: on its way to the Eastern Front', A('GER-INF-269D', '1945-01-18'), ('transit', 'certain', 'stated', 0.5))
+    expect(s + ': 326th VG, 17 Mar 1945: contingents at Remagen (inferred, 0.3)', A('GER-VG-326D', '1945-03-17'), ('in_line', 'certain', 'inferred', 0.3))
+    expect(s + ': 85th Division: listings only, so no answer', A('GER-INF-085D', '1944-12-15'), None)
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2):
         before = len(FAILURES)
         try:
             fn()

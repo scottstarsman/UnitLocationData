@@ -588,3 +588,11 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 - US: no 8 May 1945 row for the 29th, 30th and 83rd Infantry and the 2nd Armored (the combat chronicles stop before VE Day).
 - US: the 28th Division's rest after the Hürtgen (the Neufchâteau refit of 22 December 1944 to 2 January 1945 is done); raising single-source rows to 0.7 against the Green Books.
 - US: the 89th Division's disputed Moselle rows stay blank.
+
+## FMS B-466 (Geyr von Schweppenburg) batch (30 October 2026): deferred and open points
+
+1. **8th Werfer Brigade (deferred).** B-466 p. 48 has the brigade taken from II Fallschirmjäger Corps and put under I SS Panzer Corps, reaching about 15 km north-east of Vire in the night of 27/28 June 1944. No unit row exists; add `GER-WB-008B` (or the project's id form) first, then the claim at 0.3.
+2. **XLVII Panzer Corps and I SS Panzer Corps before D-Day (deferred).** Annex 1 shows XLVII Panzer Corps near Beauvais or "Gallon" (Gaillon?) and I SS Panzer Corps near Paris-Saint-Germain; the labels are not read with certainty. Recheck the annex strips before adding.
+3. **116th Panzer Division at Amiens before D-Day (deferred).** Annex 1 strip not rechecked.
+4. **Unresolved place readings in B-466** (not used): Bevon and Ivegny (p. 51), Fondes/Fontes (p. 54), Meron la Foterie (p. 49), "Ballerop" (Annexes 4-5, probably Balleroy).
+5. **Dates where B-466 disagrees with preferred rows** (no change made): Panzer Group West command 8 vs 9 June (`C0059`); Eberbach 5 vs 4 July (`C0717`); Caumont 12 vs 13 June (`C0086`/`C0099`, group `G008`); 1st SS Panzer arrival about 20 June vs 28 June to 9 July (`C0772`). Decide whether to add B-466 alternates for these.

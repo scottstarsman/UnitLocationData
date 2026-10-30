@@ -2,7 +2,7 @@ place_id,name,alt_names,kind,latitude,longitude,precision_km,country,region,coor
 PL0001,"Aachen, North Rhine-Westphalia",Aachen,point,50.7756,6.0836,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Aachen,17,12,1944-09-12,1944-12-15
 PL0002,"Ablis, Seine-et-Oise",,point,48.5172,1.8369,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Ablis, France)",1,1,1944-08-22,1944-08-22
 PL0003,"Agay–Saint-Raphaël, Var",,area,43.4314,6.8565,5,FR,Provence-Alpes-Cote d'Azur,R002,"OpenStreetMap Nominatim (Agay–Saint-Raphaël, Var (beaches east of Saint-Raphaël))",1,1,1944-08-15,1944-08-15
-PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",5,3,1944-08-06,1944-08-17
+PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",6,4,1944-06-24,1944-08-17
 PL0005,"Alsdorf, North Rhine-Westphalia",,point,50.8833,6.1667,10,DE,North Rhine-Westphalia,R001,Wikipedia (en): Alsdorf,1,1,1944-11-16,1944-11-16
 PL0006,Amiens-Alencon march route,,line,49.892,2.299,50,FR,Picardie,R001,Wikipedia,1,1,1944-06-10,1944-06-10
 PL0007,"Amne, Sarthe",,point,48.0395,-0.0594,10,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Amne, Sarthe, France)",1,1,1944-08-10,1944-08-10
@@ -215,7 +215,7 @@ PL0217,"Melun, Seine-et-Marne",,point,48.5406,2.6600,10,FR,Ile-de-France,R001,Wi
 PL0218,"Mennecy, Seine-et-Oise",,point,48.5667,2.4347,3,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Mennecy, France)",1,1,1944-08-25,1944-08-25
 PL0219,Merderet crossing / Chef-du-Pont,,area,49.3853,-1.3431,5,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-09,1944-06-09
 PL0220,"Le Mesnil-Herman, Manche",,point,49.0258,-1.1442,5,FR,Lower Normandy,R001,Wikipedia (en): Le Mesnil-Herman,1,1,1944-07-28,1944-07-28
-PL0221,Le Mesnil-Patry,,point,49.1958,-0.5436,1,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-11,1944-06-11
+PL0221,Le Mesnil-Patry,,point,49.1958,-0.5436,1,FR,Lower Normandy,R001,Wikipedia,3,3,1944-06-11,1944-06-16
 PL0222,"Mesnil-St-Martin, Manche","Le-Mesnil-St-Martin, Manche",point,48.9759,-1.2867,50,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Mesnil-Saint-Martin, Manche, France). Search of 26 October 2026 (open item 7, G012): the IGN geocoder (data.geopf.fr, address and place-name layers) has no commune or place called Mesnil-Saint-Martin or Le Mesnil-Saint-Martin in Manche (the nearest names are Le Mesnil-Aumont in Saint-Martin-de-Cenilly, 48.99 N 1.29 W, and Le Mesnil-Rouxelin near Saint-Lo, neither identified with the CMH command post); the point is kept as the wide inferred point it was (precision 50 km).",3,2,1944-07-13,1944-07-18
 PL0223,"Le Mesnil-Veneron, Manche",,point,49.2261,-1.1656,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Le Mesnil-Veneron, Manche, France)",1,1,1944-07-15,1944-07-15
 PL0224,"Metz, Moselle",,point,49.1203,6.1778,5,FR,Lorraine,R001,Wikipedia (en): Metz,15,11,1944-09-05,1945-02-05
@@ -258,7 +258,7 @@ PL0261,"Orléans, Loiret","Orleans, Loiret",point,47.9027,1.9086,3,FR,Centre,R00
 PL0262,"Ormoy, Eure-et-Loire",,point,48.6202,1.4730,10,FR,Centre,R002,"OpenStreetMap Nominatim (Ormoy, Eure-et-Loire, France)",1,1,1944-08-15,1944-08-15
 PL0263,Orne bridgehead,,area,49.2408,-0.2261,5,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-10,1944-06-12
 PL0264,Orne bridgehead east bank,,area,49.2408,-0.2261,5,FR,Lower Normandy,R001,Wikipedia,4,4,1944-06-13,1944-06-23
-PL0265,Orne bridgehead / east of Caen,,area,49.2408,-0.2261,10,FR,Lower Normandy,R001,Wikipedia,9,6,1944-06-10,1944-07-23
+PL0265,Orne bridgehead / east of Caen,,area,49.2408,-0.2261,10,FR,Lower Normandy,R001,Wikipedia,10,6,1944-06-10,1944-07-23
 PL0266,Orne-Dives bridgehead,,area,49.2864,-0.1,5,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-14,1944-06-14
 PL0267,"Ottange, Moselle",,point,49.4431,6.0192,5,FR,Lorraine,R001,Wikipedia (en): Ottange,1,1,1944-11-08,1944-11-08
 PL0268,"Pacy-sur-Eure, Eure",,point,49.0142,1.3813,10,FR,Haute-Normandie,R002,"OpenStreetMap Nominatim (Pacy-sur-Eure, Eure, France)",1,1,1944-08-29,1944-08-29
@@ -563,7 +563,7 @@ PL0570,"South Beveland (Zuid-Beveland), Zeeland",,point,51.4672,3.893,10,NL,Zeel
 PL0571,"Prüm, Rheinland-Pfalz",,point,50.2069,6.4249,5,DE,Rheinland-Pfalz,R002,OpenStreetMap Nominatim (Prüm),3,3,1944-09-15,1945-02-15
 PL0572,"Bitburg, Rheinland-Pfalz",,point,49.9733,6.5249,5,DE,Rheinland-Pfalz,R002,OpenStreetMap Nominatim (Bitburg),3,3,1944-10-15,1945-03-02
 PL0573,"Eifel region, Rheinland-Pfalz",,point,50.39,6.87,25,DE,Rheinland-Pfalz,R001,Wikipedia article Eifel (centre point of the region),19,16,1944-09-15,1945-03-01
-PL0574,"Antwerp, Belgium",,point,51.2211,4.3997,5,BE,Antwerp,R002,OpenStreetMap Nominatim (Antwerpen),10,8,1944-09-04,1945-02-28
+PL0574,"Antwerp, Belgium",,point,51.2211,4.3997,5,BE,Antwerp,R002,OpenStreetMap Nominatim (Antwerpen),11,9,1944-06-06,1945-02-28
 PL0575,Vosges mountains,,point,48.0,7.0,50,FR,Grand Est,R001,Wikipedia article Vosges (centre point of the range),1,1,1944-09-15,1944-09-15
 PL0576,"Saarbrücken, Saarland",,point,49.2333,7.0,5,DE,Saarland,R001,Wikipedia article Saarbrücken,11,11,1944-09-15,1945-02-28
 PL0577,"Venlo, Limburg",,point,51.3667,6.1667,5,NL,Limburg,R001,Wikipedia article Venlo,6,5,1944-09-15,1944-12-15
@@ -721,7 +721,7 @@ PL0729,"Saint-Martin-des-Besaces, Calvados",,point,49.0119,-0.8447,3,FR,Calvados
 PL0730,"Mont Pinçon, Calvados",,point,48.9713,-0.627,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Mont Pincon, Calvados, France)",2,2,1944-07-30,1944-08-06
 PL0731,"Le Bény-Bocage (Souleuvre bridge), Calvados",,point,48.9316,-0.8251,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Le Bény-Bocage, Calvados, France)",1,1,1944-07-31,1944-07-31
 PL0732,"Amayé-sur-Seulles, Calvados",,point,49.0804,-0.7174,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Amayé-sur-Seulles, Calvados, France)",1,1,1944-07-30,1944-07-30
-PL0733,"Aunay-sur-Odon, Calvados",,point,49.0204,-0.6312,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Aunay-sur-Odon, Calvados, France)",2,1,1944-08-01,1944-08-04
+PL0733,"Aunay-sur-Odon, Calvados",,point,49.0204,-0.6312,3,FR,Calvados,R002,"OpenStreetMap Nominatim (Aunay-sur-Odon, Calvados, France)",3,2,1944-06-08,1944-08-04
 PL0734,"Grimbosq, Calvados",,point,49.0441,-0.4511,5,FR,Calvados,R002,"OpenStreetMap Nominatim (Grimbosq, Calvados, France)",1,1,1944-08-05,1944-08-05
 PL0735,"Brieux, Orne",,point,48.8391,-0.0831,3,FR,Orne,R002,"OpenStreetMap Nominatim (Brieux, Orne, France)",1,1,1944-08-06,1944-08-06
 PL0736,"Condé-sur-Noireau, Calvados",,point,48.849,-0.5652,5,FR,Calvados,R002,"OpenStreetMap Nominatim (Condé-sur-Noireau, Calvados, France)",1,1,1944-08-08,1944-08-08
@@ -858,7 +858,7 @@ PL0868,"Westkapelle, Zeeland",,point,51.5293,3.4408,3,NL,Zeeland,R002,"OpenStree
 PL0869,"Domburg, Zeeland",,point,51.5632,3.4967,3,NL,Zeeland,R002,"OpenStreetMap Nominatim (Domburg, Veere, Netherlands)",1,1,1944-11-08,1944-11-08
 PL0870,"Brachterbeek, Maasgouw, Limburg (NL)",,point,51.1481,5.9082,3,NL,Limburg,R002,"OpenStreetMap Nominatim (Brachterbeek, Netherlands)",1,1,1945-01-20,1945-01-20
 PL0871,"De Haan, West Flanders",,point,51.2671,3.0408,3,BE,West Flanders,R002,"OpenStreetMap Nominatim (De Haan, Belgium)",1,1,1944-09-27,1944-09-27
-PL0872,"Saint-André-sur-Orne, Calvados",,point,49.116,-0.3849,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Saint-André-sur-Orne, France)",2,1,1944-07-21,1944-08-07
+PL0872,"Saint-André-sur-Orne, Calvados",,point,49.116,-0.3849,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Saint-André-sur-Orne, France)",3,2,1944-06-10,1944-08-07
 PL0873,"Le Muy, Var",,point,43.4714,6.5661,3,FR,Provence,R002,"OpenStreetMap Nominatim (Le Muy, Var, France)",6,5,1944-08-15,1944-08-17
 PL0874,"Les Arcs, Var",,point,43.4629,6.4786,3,FR,Provence,R002,"OpenStreetMap Nominatim (Les Arcs, Var, France)",1,1,1944-08-16,1944-08-16
 PL0875,"Draguignan, Var",,point,43.5375,6.4627,3,FR,Provence,R002,"OpenStreetMap Nominatim (Draguignan, Var, France)",1,1,1944-08-16,1944-08-16
@@ -922,7 +922,7 @@ PL0933,"La Gleize, Stoumont, Liège",,point,50.4112,5.8465,3,BE,Liège,R002,"Ope
 PL0934,"Porfays, fork in the Eupen road north of Mont Rigi, Liège",,point,50.51,6.077,5,BE,Liège,R002,"OpenStreetMap Nominatim (Mont Rigi, Waimes, Belgium)",1,1,1944-12-17,1944-12-17
 PL0935,"Saint-Nazaire, Loire-Atlantique",,point,47.2734,-2.2139,3,FR,Brittany,R002,"OpenStreetMap Nominatim (Saint-Nazaire, France)",2,1,1944-08-27,1945-05-10
 PL0936,"La Rochelle, Charente-Maritime",,point,46.1597,-1.1516,3,FR,Nouvelle-Aquitaine,R002,"OpenStreetMap Nominatim (La Rochelle, France)",2,1,1944-09-01,1945-05-08
-PL0937,"Abbeville, Somme",,point,50.1054,1.8332,5,FR,Picardie,R001,Wikipedia article coordinates of Abbeville.,1,1,1944-09-04,1944-09-04
+PL0937,"Abbeville, Somme",,point,50.1054,1.8332,5,FR,Picardie,R001,Wikipedia article coordinates of Abbeville.,2,2,1944-06-06,1944-09-04
 PL0938,"Kynšperk nad Ohří, Karlovy Vary",,point,50.1183,12.5311,3,CZ,Karlovy Vary,R002,"OpenStreetMap Nominatim (Kynšperk nad Ohří, Czechia)",1,1,1945-05-08,1945-05-08
 PL0939,"Volary, South Bohemia",,point,48.9096,13.8884,3,CZ,South Bohemia,R002,"OpenStreetMap Nominatim (Volary, Czechia)",1,1,1945-05-08,1945-05-08
 PL0940,"Worms, Rheinland-Pfalz",,point,49.6303,8.3621,3,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Worms, Germany)",2,2,1945-03-28,1945-03-29
@@ -990,3 +990,14 @@ PL1001,"Leopoldshafen, Baden-Württemberg",Eggenstein-Leopoldshafen,point,49.098
 PL1002,"Bretigney, Doubs",,point,47.4855,6.6371,3,FR,Doubs,R002,"OpenStreetMap Nominatim (Bretigney, France)",1,1,1944-11-14,1944-11-14
 PL1003,"Seppois-le-Bas, Haut-Rhin",Seppois,point,47.5375,7.1755,3,FR,Haut-Rhin,R002,"OpenStreetMap Nominatim (Seppois-le-Bas, France)",1,1,1944-11-26,1944-11-26
 PL1004,"Abriès, Hautes-Alpes",Queyras,point,44.8122,6.9463,3,FR,Provence-Alpes-Côte d'Azur,R002,"OpenStreetMap Nominatim (Abriès, France)",1,1,1944-09-15,1944-09-15
+PL1005,"Évreux, Eure",Evreux,point,49.0268,1.1510,5,FR,Normandy,R002,"OpenStreetMap Nominatim (Evreux, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1006,"Thouars, Deux-Sèvres",Thouars,point,46.9790,-0.2153,5,FR,Nouvelle-Aquitaine,R002,"OpenStreetMap Nominatim (Thouars, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1007,"Montauban, Tarn-et-Garonne",Montauban,point,44.0175,1.3550,5,FR,Occitanie,R002,"OpenStreetMap Nominatim (Montauban, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1008,"Bordeaux, Gironde",Bordeaux,point,44.8412,-0.5800,10,FR,Nouvelle-Aquitaine,R002,"OpenStreetMap Nominatim (Bordeaux, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1009,"Nîmes, Gard",Nimes,point,43.8374,4.3601,5,FR,Occitanie,R002,"OpenStreetMap Nominatim (Nimes, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1010,"Toulouse, Haute-Garonne",Toulouse,point,43.6044,1.4442,10,FR,Occitanie,R002,"OpenStreetMap Nominatim (Toulouse, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1011,"Bérigny, Manche",Berigny,point,49.1424,-0.9406,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Berigny, France), searched 30 October 2026",1,1,1944-06-11,1944-06-11
+PL1012,"Hérouvillette, Calvados",Herouvillette,point,49.2206,-0.2425,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Herouvillette, France), searched 30 October 2026",1,1,1944-06-16,1944-06-16
+PL1013,"Torigni-sur-Vire, Manche",Torigny-les-Villes,point,49.0347,-0.9791,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Torigny-les-Villes, France), searched 30 October 2026",1,1,1944-06-17,1944-06-17
+PL1014,"Nogent-le-Rotrou, Eure-et-Loir",Nogent-le-Rotrou,point,48.3218,0.8211,5,FR,Centre-Val de Loire,R002,"OpenStreetMap Nominatim (Nogent-le-Rotrou, France), searched 30 October 2026",1,1,1944-06-06,1944-06-06
+PL1015,"Abbaye d'Ardenne, Calvados",Ardenne Abbey; Saint-Germain-la-Blanche-Herbe,point,49.1960,-0.4131,1,FR,Normandy,R002,"OpenStreetMap Nominatim (Ardenne Abbey, France), searched 30 October 2026",1,1,1944-06-10,1944-06-10

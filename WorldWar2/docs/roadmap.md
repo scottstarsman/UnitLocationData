@@ -532,14 +532,14 @@ Scott accepted all four recommendations of German batch 1:
 
 Done on the branch `source-fixes-delattre-ellis` (from `main` `647d774`): 28 new claims in 14 units, 10 changed rows, 17 places, one new unit (British 5th Infantry Division), one conflict group (2nd Moroccan Division, 3 April 1945: Bruchsal preferred, Karlsruhe alternate), semantic scenario 35; see `docs/changelog.md`.
 
-Still open, each with a recommendation:
+Decided by Scott on 30 October 2026 (all six recommendations accepted; branch `delattre-ellis-decisions`, see `docs/changelog.md`):
 
-1. French 2nd Moroccan Division, Briançon on 14 October 1944 (Wikipedia): de Lattre has Briançon retaken by mid-September and the division on the Doubs front by late September. Lowered to 0.3 and kept. Recommendation: retire the row and add a mid-September Alpine row at 0.3 (approximate date), unless Scott prefers to keep the Wikipedia date as a flagged row.
-2. French 4th Moroccan Mountain Division, Rouffach: de Lattre gives the evening of 4 February, Wikipedia 5 February. Recommendation: keep the 5 February row with the difference stated in it (dataset convention for one day).
-3. Constance on 26 April 1945 was entered by Lebel's group (corps troops of the I Corps), not by the 1st Armoured Division. Recommendation: no row; corps groups are not modelled.
-4. German 15th Panzergrenadier and 9th Panzer Divisions: the month-level Lexikon rows of 15 October 1944 (Saarbrücken, Arnhem) sit beside the new Ellis rows of 14 October (Venlo reserve). Recommendation: keep both at 0.3 with their notes; retire the Lexikon rows only if a dated source puts the divisions elsewhere in early October.
-5. German 269th Division: de Lattre gives only late October in the Vosges and mid-January south-east of Benfeld, without a firm day. Recommendation: no row.
-6. British 5th Infantry Division: new unit record with one row (Lübeck, 2 May 1945); its Italian service is another theatre. Recommendation: keep it; add more rows only from Ellis pages that name it.
+1. French 2nd Moroccan Division, Briançon on 14 October 1944: retired; replaced by a row at Abriès in the Queyras on 15 September 1944 (de Lattre p. 161, 0.3).
+2. French 4th Moroccan Mountain Division, Rouffach: the 5 February row is kept with the one-day difference stated in it.
+3. Constance on 26 April 1945: no row for the 1st Armoured Division (Lebel's corps group entered it; corps groups are not modelled).
+4. German 15th Panzergrenadier and 9th Panzer Divisions: the Lexikon rows of 15 October 1944 stay at 0.3 beside the Venlo rows; retire them only if a dated source puts the divisions elsewhere in early October.
+5. German 269th Division: no row (no firm day in de Lattre).
+6. British 5th Infantry Division: kept. Later item: add rows only from Ellis pages that name the division.
 
 Deferred (not in this batch, about 30 rows): 1st Armoured Seppois (19 November 1944) and the Burnhaupt encirclement (24-28 November); 2nd Moroccan Héricourt-Lisaine (17 November) and the Thann sector (20 January 1945); 9th Colonial Doubs loop and Hérimoncourt (17 November), Seppois-Pfetterhouse (23 November) and Lörrach to the Swiss frontier (22-24 April 1945); 4th Moroccan Mountain Vieux-Thann (28 January) and Villingen-St Georgen (21-24 April); 5th Armoured Colmar (2 February); 3rd Algerian Château-Lambert (23 November) and Weil der Stadt-Leonberg (20 April); 1st Free French Grosmagny and the Ballon d'Alsace (24 November); US 3rd and 28th Infantry on the Colmar front, 36th Infantry at Germersheim and 12th Armored at Rouffach; the German Nineteenth Army at Avignon in mid-1944; the command changes de Lattre dates (1st Armoured to the I Corps and the 9th Colonial under army control after Karlsruhe; 2nd Armoured and 10th Infantry leaving the army about 10 February 1945). The 719th Division attack south of Villingen on 24 April 1945 and the 4th Moroccan Mountain attack at Vieux-Thann on 20 January 1945 were already rows.
 

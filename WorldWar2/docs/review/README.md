@@ -86,7 +86,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 10 |
 | references (`data/references.csv`, generated) | 753, of which 593 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
-| nationalities / retired claim ids / claim-key exceptions | 10 / 0 / 0 |
+| nationalities / retired claim ids / claim-key exceptions | 10 / 1 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 41 |
 
 Claims by nationality: US 798, Germany 708, UK 266, Canada 146, France 78, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
@@ -95,7 +95,7 @@ Claims by echelon: division 1305, corps 337, army 161, brigade 143, army_group 4
 
 Claims by branch: Army 1282, Armoured 523, Waffen-SS 103, Airborne 100, Luftwaffe 50.
 
-Claims by event type: attack 442, other 244, defense 228, capture 187, command_change 174, hq_move 151, arrival 109, regroup 106, relocation 94, hq_observation 61, landing 60, counterattack 45, subordinate_assignment 45, withdrawal 43, surrender 39, activation 17, redesignation 8, destruction 5.
+Claims by event type: attack 442, other 244, defense 228, capture 186, command_change 174, hq_move 151, arrival 110, regroup 106, relocation 94, hq_observation 61, landing 60, counterattack 45, subordinate_assignment 45, withdrawal 43, surrender 39, activation 17, redesignation 8, destruction 5.
 
 Claims by status: preferred 2022, alternate 20, disputed 16. Claims by confidence: 0.3 456, 0.5 980, 0.7 559, 0.9 63.
 

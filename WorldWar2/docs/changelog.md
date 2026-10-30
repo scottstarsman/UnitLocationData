@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## delattre-ellis-decisions: Scott's answers to the six open points of the de Lattre and Ellis batch (30 October 2026)
+
+Scott accepted all six recommendations on 30 October 2026 ("Let's take your recommendations for the questions"). One branch from `main` `ca1a105`. Printed pages of de Lattre, *The History of the French First Army* (1952), paraphrase only.
+
+- **Retired claim.** French 2nd Moroccan Infantry Division, Briançon, 14 October 1944 (Wikipedia, confidence 0.3), the first entry in `data/retired_claims.csv`. Old value: a preferred row at Briançon on 14 October; new value: retired, replaced by the new row below. Reason: de Lattre (pp. 130-131, 161, 187, 191) puts the division's Alpine fighting in mid-September 1944 and the division on the Doubs front by late September, so the 14 October date does not fit.
+- **New claim.** French 2nd Moroccan Infantry Division, Abriès (Queyras, Hautes-Alpes), 15 September 1944, de Lattre p. 161 (with pp. 130-131 for the Alpine context): the commander of the division's 3rd Moroccan Tabor Group is killed near Abriès. Representative point for the Alpine sector, precision 10 km, confidence 0.3, activity in_line (inferred, capped at 0.3).
+- **Places.** New place Abriès, Hautes-Alpes (OpenStreetMap Nominatim). The place Briançon, Hautes-Alpes is removed: its only claim was retired (old row: Briançon, Hautes-Alpes, point 44.8984, 6.6436, precision 3 km, FR, Provence-Alpes-Côte d'Azur, OpenStreetMap Nominatim); its id is not to be reused.
+- **Kept, no value changed.** The Rouffach row of 5 February 1945 (the one-day difference with de Lattre stays stated in the row); the German 15th Panzergrenadier (Saarbrücken) and 9th Panzer (Arnhem) Lexikon rows of 15 October 1944 at 0.3 beside the Venlo rows; the British 5th Infantry Division unit record.
+- **No row, by decision.** Constance on 26 April 1945 for the French 1st Armoured Division (entered by a corps group of the I Corps, which is not modelled); the German 269th Division (no firm day in de Lattre). Recorded in `docs/roadmap.md`.
+
 ## source-fixes-delattre-ellis: corrections and new positions from the de Lattre and Ellis reading notes (30 October 2026)
 
 Scott approved this batch on 30 October 2026 ("Please proceed"), after the reading-method branch was merged. One branch from `main` `647d774`. Sources: de Lattre, *The History of the French First Army* (1952), printed pages and paraphrase only, and Ellis, *Victory in the West*, vol. II, printed pages. The reading notes stay private and are not in this repository. Every changed row carries a `Review (source fixes from de Lattre and Ellis, 30 October 2026 ...)` sentence with the old value, the new value and the reason.

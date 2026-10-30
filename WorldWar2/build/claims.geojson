@@ -34446,6 +34446,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9463,
+     44.8122
+    ]
+   },
+   "properties": {
+    "claim_id": "C2059",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL1004",
+    "location_name": "Abriès, Hautes-Alpes",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Alpine front: the division's 3rd Moroccan Tabor Group fights in the Queyras near Abriès",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 130-131, 161"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.375,
      47.7178
     ]
@@ -41204,47 +41245,6 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R637;R001",
     "source_locator": null
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     6.6436,
-     44.8984
-    ]
-   },
-   "properties": {
-    "claim_id": "C1636",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "FR-INF-002D",
-    "unit_name": "French 2nd Moroccan Infantry Division",
-    "nationality": "France",
-    "theater": "western_europe",
-    "echelon": "division",
-    "branch": "Army",
-    "date": "1944-10-14",
-    "place_id": "PL0841",
-    "location_name": "Briançon, Hautes-Alpes",
-    "location_represents": "objective",
-    "precision_km": 10,
-    "confidence": 0.3,
-    "event_type": "capture",
-    "current_activity": "Alpine front: the division liberates Briancon and Modane",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
-    "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1944-10-14",
-    "location_basis": "documented_on_date",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R053;R686;R002",
-    "source_locator": "R053: section French & German campaign (1944-1945); R686: pp. 161, 187, 191"
    }
   },
   {

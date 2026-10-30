@@ -2,6 +2,29 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-can-fr: activity status for 3 Canadian and 10 French divisions (29 October 2026)
+
+Scott approved the combined Canada and France batch on 29 October 2026, after German batch 3 was merged (PR #46). Branch `activity-rollout-can-fr` from `main` `7435b2f`.
+
+Units (13): the 1st and 3rd Canadian Infantry and 5th Canadian Armoured Divisions; the French 1st Free French, 1st and 5th Armoured, 2nd Moroccan, 4th Moroccan Mountain, 9th Colonial, 10th, 14th and 27th Alpine Infantry Divisions and the Gironde Marching Division.
+
+Sources: the references already cited by each row; for the new claims, the English Wikipedia article on the 4th Moroccan Mountain Division (R070) and de Lattre's history of the French First Army (R686). De Lattre is copyrighted: the new claims give page numbers and a paraphrase only, no quotation, and the reading notes stay outside the repository.
+
+Rows: 64 activity rows (45 stated, 19 inferred): in_line 57, garrison 3, reserve 2, transit 2; spans: 62 point, 1 start, 1 end.
+
+- 58 existing rows labelled (39 Canadian, 19 French). Each has the old value (blank), the new value and the reason in its notes. The 3rd Canadian Division's D-Day landing (6 June 1944) is a start, closed on 31 July 1944 when it was relieved after 55 days in the line. Brigade, battalion, combat-command and patrol rows are inferred under the main-body rule. Boulogne and Royan (fortresses besieged) are in_line; the 1st Canadian Division taking control of a German corps area on 8 May 1945 is garrison; the 10th Division policing the Colmar pocket and the 14th Division protecting the army's rear on 8 May 1945 are inferred garrison. Command changes, activations and one corps hand-over stay blank.
+- 6 new claims, C1997-C2002:
+  - C1997, 4th Moroccan Mountain Division, 12 January 1945, Vieux-Thann (PL0978): transit point (stated), 0.3. Moved from near Lure to the Thann-Cernay front (de Lattre p. 342; location inferred).
+  - C1998, 4th Moroccan Mountain Division, 20 January 1945, Vieux-Thann (PL0978): in_line point (stated), 0.5. Attacks at Vieux-Thann, having relieved the 2nd Moroccan Infantry Division (de Lattre pp. 344-345).
+  - C1999, 4th Moroccan Mountain Division, 16 April 1945, Strasbourg (PL0619): in_line point (stated), 0.3. Crosses the Rhine into Germany after some weeks of rest (Wikipedia; location inferred).
+  - C2000, 4th Moroccan Mountain Division, 8 May 1945, Bregenz (PL0654): in_line point (inferred), 0.3. Ends the war in the Vorarlberg (Wikipedia).
+  - C2001, French 5th Armoured Division, 21 November 1944, Vellescot (PL0979): in_line point (stated), 0.5. Relieves a 1st Armoured Division combat command (de Lattre p. 254).
+  - C2002, French 5th Armoured Division, 24 November 1944, Dannemarie (PL0980): reserve point (inferred), 0.3. Relieved to regroup for the attack on Dannemarie (de Lattre p. 275; location inferred).
+- 3 new places, PL0978-PL0980 (OpenStreetMap Nominatim, R002). No new references.
+- Next ids: claim C2003, place PL0981, reference R760; relation CR1064 and conflict group G028 unchanged.
+
+Semantic scenario 33 (8 expectations) checks the batch.
+
 ## activity-rollout-german-3: activity status for the last 26 German divisions (29 October 2026)
 
 Scott approved German batch 3 on 29 October 2026, after German batch 2 was merged (PR #45). Branch `activity-rollout-german-3` from `main` `fba6690`. Labels only, a quick pass, as decided.

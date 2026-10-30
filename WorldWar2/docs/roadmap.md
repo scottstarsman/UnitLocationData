@@ -490,6 +490,17 @@ Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
 
+## Activity rollout, batch 3 (29 October 2026): open points
+
+Deferred to the official-history pass (Wikipedia gives no date or place):
+
+- No 8 May 1945 row for 9 of the 11 divisions: the 6th Airborne (Wismar on 2 May), Guards Armoured (Zeven on 27 April), 3rd, 51st and 52nd (Bremen in late April), 43rd (Bremen on 26 April), 53rd (Verden on 17 April), and the 79th Armoured and 59th (see below). Only the 7th Armoured (Hamburg) and the 49th (Utrecht) have one, both inferred garrison.
+- Undated reserve and rest periods: the 51st (Highland) reserve on the Meuse in the Ardennes (December 1944), the Guards Armoured reserve on the Meuse (December 1944) and its withdrawal before Market Garden (September 1944), the 6th Airborne's refit in England (September to December 1944, and March 1945 before Varsity), the 3rd Division's move after the surrender.
+- The 79th Armoured Division fought in detachments under other formations: its one row (D-Day) is inferred; a division-level state is not meaningful and the rest stays blank unless Scott wants detachment rows.
+- The 59th (Staffordshire) Division was broken up from 26 August 1944: its last row (6 August) is a point; the break-up has no activity value (it is not one of the five states).
+- Open span: none. The 3rd Division's D-Day entry and the 6th Airborne's Varsity drop are points (no closing source).
+- The British official history (Ellis) and the divisional histories are copyrighted: notes from them stay outside the repository.
+
 ## Activity rollout, batch 2 (29 October 2026): open points
 
 Scott accepted all recommendations on 29 October 2026; the 86th Division's 8 May row was added (C1987, Burghausen). Deferred to the official-history pass (no dated source in the CMH combat chronicles or Wikipedia):

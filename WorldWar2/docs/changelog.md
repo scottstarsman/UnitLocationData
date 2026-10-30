@@ -2,6 +2,39 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-3: activity status for the remaining 11 British divisions (29 October 2026)
+
+Scott approved batch 3 on 29 October 2026, after batch 2 was merged (PR #42). Branch `activity-rollout-3` from `main` `6bbafb1`.
+
+Units (11): the British 6th Airborne, 7th Armoured, 79th Armoured and Guards Armoured Divisions and the 3rd, 43rd (Wessex), 49th (West Riding), 51st (Highland), 52nd (Lowland), 53rd (Welsh) and 59th (Staffordshire) Infantry Divisions.
+
+Sources: the English Wikipedia division articles (R082, R095, R066 and one new reference, R759, for the 43rd (Wessex) Division; CC BY-SA) and, for the 6th Airborne Division's relief on the Maas, the CMH combat chronicle of the US 75th Infantry Division (R746, public domain). No copyrighted text is in the repository.
+
+Rows: 98 activity rows in all (89 stated, 9 inferred): in_line 91, refitting 3, garrison 3, transit 1; spans: 91 point, 4 start, 3 end.
+
+- 89 existing rows labelled. Each one has the old value (blank), the new value and the reason in its notes. Follow-up landings and arrivals (Gold Beach, Juno Beach, "arriving in Normandy") and the two alternate rows stay blank. The 3rd Division's D-Day landing is a point, not a start, because no source closes it within 90 days. The 6th Airborne Division's D-Day landing is a start, closed on 26 August 1944 at Pont-Audemer (the row there says it was never out of the line since 6 June). The 7th Armoured Division's takeover of Hamburg on 3 May 1945 is a garrison start (inferred). Five rows for a brigade or battalion are inferred under the main-body rule (79th Armoured on D-Day, Guards Armoured at Cagny, 52nd at Walcheren and Waldfeucht, 59th on the Orne); one pursuit row is inferred (7th Armoured, 31 August 1944).
+- 9 new claims, C1988-C1996, listed below.
+- No new places. One new reference, R759 (Wikipedia: 43rd (Wessex) Infantry Division).
+- Next ids: claim C1997, place PL0978, reference R760; relation CR1064 and conflict group G028 are unchanged.
+
+Rules applied, as in batches 1 and 2: occupation is garrison; rest and training out of the line are refitting; a derived date lowers the confidence to 0.3; an inferred value is capped at 0.3; the main-body rule applies.
+
+New claims:
+
+- C1988, 6th Airborne Division, 1 September 1944, Pont-Audemer, Eure (PL0738): transit point (stated), 0.3. Returns to England after the Normandy campaign (the source says early September; the location is the point of departure, inferred).
+- C1989, 6th Airborne Division, 26 December 1944, Dinant, Namur (PL0444): in_line start (stated), 0.5. Reaches its places in the defensive line between Dinant and Namur.
+- C1990, 6th Airborne Division, 31 January 1945, Roermond, Limburg (PL0949): in_line start (stated), 0.3. Made responsible for the Maas between Venlo and Roermond (the source says the end of January).
+- C1991, 6th Airborne Division, 21 February 1945, Roermond, Limburg (PL0949): in_line end (stated), 0.5. Relieved on the Maas by the US 75th Infantry Division (date from its combat chronicle); returns to England.
+- C1992, 7th Armoured Division, 25 February 1945, Susteren, Limburg (NL) (PL0753): refitting point (stated), 0.3. Short rest for training (the source says late February; the location is inferred).
+- C1993, 7th Armoured Division, 8 May 1945, Hamburg (PL0768): garrison end (inferred), 0.3. Holds Hamburg at the end of the war in Europe.
+- C1994, 43rd (Wessex) Infantry Division, 29 August 1944, Vernon, Eure (PL0741): refitting point (stated), 0.3. Grounded after the Seine crossing; rests and receives reinforcements.
+- C1995, 49th (West Riding) Infantry Division, 13 September 1944, Le Havre (PL0169): refitting point (stated), 0.3. A few days rest after Le Havre.
+- C1996, 49th (West Riding) Infantry Division, 8 May 1945, Utrecht (PL0621): garrison point (inferred), 0.3. Liberation of Utrecht and Amsterdam after the German surrender.
+
+Changed existing rows (old value blank in every case; the new value and reason are in each row's notes): 89 rows of the 11 divisions, as summarised above.
+
+Semantic scenario 29 (12 expectations) checks the batch.
+
 ## activity-rollout-2: 86th Infantry Division 8 May 1945 row (29 October 2026)
 
 Scott accepted all batch-2 recommendations on 29 October 2026; the only data change is this one. Source: the CMH combat chronicle, 86th Infantry Division (R750). 1 new claim; no existing row changed; no new place or reference. Next ids: claim C1988, place PL0978, reference R759.

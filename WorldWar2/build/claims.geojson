@@ -46910,6 +46910,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0144,
+     47.5722
+    ]
+   },
+   "properties": {
+    "claim_id": "C2001",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-005D",
+    "unit_name": "French 5th Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-21",
+    "place_id": "PL0979",
+    "location_name": "Vellescot, Territoire de Belfort",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the 1st Armoured Division combat command 2 in the Vellescot area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 254"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.7458,
      48.5833
     ]
@@ -47190,6 +47231,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R654;R001",
     "source_locator": "R654: Einsatz"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1165,
+     47.6319
+    ]
+   },
+   "properties": {
+    "claim_id": "C2002",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-005D",
+    "unit_name": "French 5th Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-24",
+    "place_id": "PL0980",
+    "location_name": "Dannemarie, Haut-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "relieved between the river and the canal by the 9th Colonial Infantry Division and regroups to attack Dannemarie",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 275"
    }
   },
   {
@@ -56094,6 +56176,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1217,
+     47.8071
+    ]
+   },
+   "properties": {
+    "claim_id": "C1997",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-12",
+    "place_id": "PL0978",
+    "location_name": "Vieux-Thann, Haut-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "moved from its station near Lure to the Thann-Cernay front for the Colmar offensive",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-12",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 342"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.931,
      50.3942
     ]
@@ -57768,6 +57891,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R690;R002",
     "source_locator": "R671: p. 245"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1217,
+     47.8071
+    ]
+   },
+   "properties": {
+    "claim_id": "C1998",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL0978",
+    "location_name": "Vieux-Thann, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacks at Vieux-Thann at 07:55, having relieved the 2nd Moroccan Infantry Division in its sector",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 344-345"
    }
   },
   {
@@ -73478,6 +73642,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C1999",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "after some weeks of rest, directed toward Strasbourg; crosses the Rhine and enters Germany",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R070;R001",
+    "source_locator": "R070: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.1616,
      52.6263
     ]
@@ -81712,6 +81917,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R066;R002",
     "source_locator": "R066: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.7473,
+     47.5026
+    ]
+   },
+   "properties": {
+    "claim_id": "C2000",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL0654",
+    "location_name": "Bregenz, Vorarlberg",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "in the Vorarlberg at the end of the war in Europe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R070;R002",
+    "source_locator": "R070: narrative"
    }
   },
   {

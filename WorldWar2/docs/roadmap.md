@@ -490,6 +490,14 @@ Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
 
+## Activity rollout, Canada and France (29 October 2026): open points
+
+- Every division in the dataset now has activity values except the nine German divisions without a state-bearing row (see German batch 3) and the US 1st Airborne Task Force (left out in batch 2: not a division).
+- No 8 May 1945 row for the 3rd Canadian (operations suspended at Aurich on 4 May), the 5th Canadian Armoured (Delfzijl on 1 May) and seven French divisions (1st Free French in the Alps; 1st and 5th Armoured; 2nd Moroccan; 9th Colonial; 10th; 27th Alpine; Gironde). Deferred to the official-history pass.
+- Undated rests: the 4th Moroccan Mountain Division's "some weeks of rest" before April 1945; the 2nd Moroccan Division's withdrawal into army reserve in mid-March 1945 (de Lattre p. 414, no day given).
+- The 3rd Canadian Division's rest after 31 July 1944 and its spans from November 1944 (Nijmegen) are points or closed only by the next row: a dated source (Stacey) would allow spans; notes from it stay outside the repository.
+- Next: the single Drive sync, since this is the last activity batch.
+
 ## German activity rollout, batch 3 (29 October 2026): open points
 
 - Labels only, all points: 25 rows in 22 of the last 26 German divisions. This completes the German divisions.

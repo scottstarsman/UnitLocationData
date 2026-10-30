@@ -31,7 +31,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 8 |
 | UK | army | 0 | 0 | 1 | 1 | 0 | 6 |
 | UK | corps | 0 | 0 | 5 | 5 | 1 | 44 |
-| UK | division | 0 | 0 | 15 | 15 | 7 | 146 |
+| UK | division | 0 | 0 | 15 | 15 | 7 | 155 |
 | UK | brigade | 0 | 0 | 11 | 11 | 7 | 52 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 7 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 43 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **69** | **0** | **318** | **387** | **258** | **1987** |
+| **All** | | **69** | **0** | **318** | **387** | **258** | **1996** |
 
 ## Operations
 
@@ -49,28 +49,28 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 1135 |
+| campaign | 9 | 9 | 1144 |
 | operation | 33 | 33 | 435 |
 | battle | 20 | 20 | 341 |
 | phase | 4 | 4 | 76 |
-| **All** | **67** | **66** | **1987** |
+| **All** | **67** | **66** | **1996** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 965 places and 111 alias names for 1987 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 965 places and 111 alias names for 1996 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 861 | 1791 |
+| point | 861 | 1800 |
 | area | 86 | 176 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 542 | 1028 |
-| Germany (DE) | 230 | 558 |
-| Netherlands (NL) | 83 | 186 |
-| Belgium (BE) | 79 | 149 |
+| France (FR) | 542 | 1031 |
+| Germany (DE) | 230 | 559 |
+| Netherlands (NL) | 83 | 190 |
+| Belgium (BE) | 79 | 150 |
 | Luxembourg (LU) | 10 | 29 |
 | Austria (AT) | 10 | 20 |
 | Czechia (CZ) | 6 | 9 |

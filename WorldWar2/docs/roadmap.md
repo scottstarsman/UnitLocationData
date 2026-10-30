@@ -528,6 +528,20 @@ Scott accepted all four recommendations of German batch 1:
 - 56 German divisions remain unlabelled (2 more, the 9th and 10th SS, have pilot values), plus the corps, armies, brigades and battle groups, which may stay blank.
 - Other nationalities with unlabelled divisions: Canada 3, France 10; Belgium, the Netherlands and Czechoslovakia have brigade files only.
 
+## Official-history pass 1 (30 October 2026): open points
+
+Done on the branch `official-history-pass-1` (from `main` `1431a82`): 28 new claims (`C2003` to `C2030`), 6 places (`PL0981` to `PL0986`), 1 reference (`R760`, the Ninth Army history Conquer), semantic scenario 34; see `docs/changelog.md`. Closed: 8 May 1945 rows for the US 2nd Armored, 29th, 30th, 65th, 75th, 82nd Airborne, 83rd, 84th, 103rd and 104th; the Canadian 2nd, 3rd, 4th Armoured and 5th Armoured; the French 2nd Moroccan and 5th Armoured; the 75th rest span (ended by its occupation start of 22 April); first activity rows for the German 85th, 180th, 416th, 712th, 719th, 2nd and 6th Fallschirmjäger and 6th SS Mountain Divisions.
+
+Still open, each with a recommendation:
+
+1. British 8 May rows and undated rests (9 divisions, plus the 11th Armoured and 15th Scottish items). Ellis is not available as public text. Recommendation: leave them blank until Scott can supply page references from Ellis or the divisional histories (notes kept privately).
+2. US without an 8 May row: the 70th, 101st Airborne and 106th (no place in the sources read). Recommendation: take them from the Third and Seventh Army reports if Scott wants them; otherwise leave blank.
+3. US open starts of batch 1 and batch 2 (the 5th, 8th, 26th, 70th, 84th, 104th, 106th, 11th Armored and others): the 30-day horizon already limits them. Recommendation: close them only when a dated relief is found; no guessed ends.
+4. French 8 May rows for the 1st Free French, 1st Armoured, 3rd Algerian, 9th Colonial, 10th, 27th Alpine and Gironde Divisions: de Lattre gives no place for the last days. Recommendation: leave blank.
+5. German refit spans: none added (the Last Offensive and Stacey date few German refits). Recommendation: a separate small pass on the Lexikon der Wehrmacht if wanted.
+6. The pilot divisions kept their pilot rows only (the 4th Canadian Armoured, 1st Polish Armoured, British 1st Airborne and 50th, French 3rd Algerian); their other rows are unlabelled and their pilot spans stay open. Recommendation: label them in one small batch.
+7. Raising single-source rows to 0.7: not done; the rubric gives 0.7 only for an exact place in one authoritative source, and most rows here have an approximate place. Recommendation: no change.
+
 ## Activity rollout, batch 3 (29 October 2026): open points
 
 Deferred to the official-history pass (Wikipedia gives no date or place):

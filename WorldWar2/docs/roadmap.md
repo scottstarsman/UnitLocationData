@@ -490,6 +490,22 @@ Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
 
+## Activity rollout: decisions of 29 October 2026 (after PR #44)
+
+Scott accepted all four recommendations of German batch 1:
+
+1. No German refit spans or 8 May 1945 rows now; they are deferred to the official-history pass.
+2. German batch 2 is the next 30 unlabelled divisions by claim count, labels only; the last 26 follow in German batch 3.
+3. Canada and France are done together as one batch of 13 divisions, adding rows from sources as in the British batches.
+4. The Belgian, Dutch and Czech brigades stay blank (brigades may stay blank under the design).
+
+## German activity rollout, batch 2 (29 October 2026): open points
+
+- Labels only, all points, as decided. 45 rows labelled in 25 of the 30 divisions.
+- Five divisions have only order-of-battle listings and stay blank: the 180th, 6th Fallschirmjäger, 85th, 712th and 719th. They need a narrative source (official-history pass).
+- The 70th Division on Walcheren (18 September 1944) is garrison: the island was held as a fortress before the Allied attack; its surrender on 6 November has no activity value.
+- Ties at two claims were broken by unit id; the 276th and 277th Volksgrenadier and the rest go to German batch 3 (26 divisions).
+
 ## German activity rollout, batch 1 (29 October 2026): open points
 
 - Labels only: no new rest, refit, span or 8 May 1945 rows. German divisions mostly end in surrender or destruction, which is not an activity state; a later pass could add refit spans from the Lexikon or the official histories (for example the 12th SS refit from 11 July 1944, recorded as a point).

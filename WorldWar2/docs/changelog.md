@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## activity-rollout-german-3: activity status for the last 26 German divisions (29 October 2026)
+
+Scott approved German batch 3 on 29 October 2026, after German batch 2 was merged (PR #45). Branch `activity-rollout-german-3` from `main` `fba6690`. Labels only, a quick pass, as decided.
+
+Units (26): the 276th, 277th, 361st, 560th, 708th, 18th, 19th, 36th, 47th, 183rd, 212th, 256th, 352nd and 462nd Volksgrenadier; 226th, 277th, 344th, 363rd, 416th, 462nd and 708th Infantry; Divisions Ulrich von Hutten and Scharnhorst; 2nd Fallschirmjäger; 2nd Mountain; 6th SS Mountain.
+
+Rows: 25 existing rows labelled (20 stated, 5 inferred): in_line 20, transit 3, reserve 2; all points. Each has the old value (blank), the new value and the reason in its notes. The 2nd Fallschirmjäger, 226th and 416th have only listings and the 6th SS Mountain only the round-up of its remnants, so they stay blank; 22 units carry values. Left blank on purpose: 6 rows (listings, a request for help, the round-up).
+
+Sources: only the references already cited by each row. No new claims, places or references; next ids unchanged (C1997, PL0978, R760, CR1064, G028).
+
+Semantic scenario 32 (7 expectations) checks the batch.
+
 ## activity-rollout-german-2: activity status for 30 more German divisions (29 October 2026)
 
 Scott approved German batch 2 on 29 October 2026, after German batch 1 was merged (PR #44). Branch `activity-rollout-german-2` from `main` `4ab8655`. Labels only, as decided (no refit spans or 8 May rows).

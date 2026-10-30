@@ -1,6 +1,6 @@
 # Activity status: design note and pilot (October 2026)
 
-Status: **rollout in progress** (batch 3 of about 6, October 2026: batch 1, 30 US divisions, 197 rows; batch 2, 28 US and 2 British divisions, 143 rows; batch 3, 11 British divisions, 98 rows; German batch 1, 30 divisions, 148 rows; German batch 2, 30 divisions (25 with values), 45 rows; see section 9). The columns exist in every claim file, but only 139 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
+Status: **rollout in progress** (batch 3 of about 6, October 2026: batch 1, 30 US divisions, 197 rows; batch 2, 28 US and 2 British divisions, 143 rows; batch 3, 11 British divisions, 98 rows; German batch 1, 30 divisions, 148 rows; German batch 2, 30 divisions (25 with values), 45 rows; German batch 3, 26 divisions (22 with values), 25 rows; see section 9). The columns exist in every claim file, but only 161 units carry values. All other rows are blank on purpose: there is no backfill. A blank means "not reviewed for activity". It does not mean the unit was idle.
 
 ## 1. Why
 
@@ -110,4 +110,5 @@ Scott approved the rollout on 29 October 2026, in branches of about 30 units, st
 | 3 | the remaining 11 British divisions (6th Airborne; 7th, 79th and Guards Armoured; 3rd, 43rd, 49th, 51st, 52nd, 53rd and 59th Infantry) | 98 (89 stated, 9 inferred): 89 existing rows labelled, 9 new claims (C1988-C1996) | done in one pass from Wikipedia (and the US 75th Division combat chronicle for the 6th Airborne relief); 2 of 11 divisions have an 8 May row; undated rests and reserves deferred |
 | German 1 | 30 German divisions with the most claims | 148 existing rows labelled (122 stated, 26 inferred); no new claims | labels only, all points; order-of-battle listings, assignments, command changes, surrenders and destructions stay blank; 56 German divisions remain |
 | German 2 | the next 30 unlabelled German divisions by claim count | 45 existing rows labelled (34 stated, 11 inferred) in 25 divisions; no new claims | labels only, all points; 5 divisions have listings only and stay blank; 26 German divisions remain for batch 3 |
+| German 3 | the last 26 unlabelled German divisions | 25 existing rows labelled (20 stated, 5 inferred) in 22 divisions; no new claims | labels only, all points; 4 divisions have no state-bearing row; German divisions complete |
 | 2, 86th 8 May | 86th Infantry Division | +1 (C1987); 143 in all | in_line point at Burghausen, 0.3, from the CMH combat chronicle; 20 of 30 divisions now have an 8 May row |

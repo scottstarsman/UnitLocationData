@@ -490,6 +490,13 @@ Done on the branch `brigades-us-1944-45`: 45 claims (`C1714` to `C1758`) for the
 
 Resolved: Scott accepted all seven recommendations on 29 October 2026 (PR #37). For point 3, the open relations of Task Force A, the 509th and the 517th were closed in Clean-up 3. The open points were removed in Clean-up 3.
 
+## German activity rollout, batch 3 (29 October 2026): open points
+
+- Labels only, all points: 25 rows in 22 of the last 26 German divisions. This completes the German divisions.
+- Nine German divisions have no row that carries a state and stay blank until the official-history pass: the 180th, 6th Fallschirmjäger, 85th, 712th and 719th (batch 2) and the 2nd Fallschirmjäger, 226th and 416th (listings only) and the 6th SS Mountain (only the round-up of its remnants on 2 April 1945) (batch 3).
+- The 462nd Volksgrenadier Division as the Metz garrison under attack (9 November 1944) is in_line (a besieged fortress).
+- Next: Canada and France together (13 divisions, rows from sources), then the single Drive sync.
+
 ## Activity rollout: decisions of 29 October 2026 (after PR #44)
 
 Scott accepted all four recommendations of German batch 1:

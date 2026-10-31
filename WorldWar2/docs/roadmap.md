@@ -600,7 +600,7 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 ## FMS 19th Army batch (B-766, B-263, B-463, B-468, B-550; 30 October 2026): deferred and open points
 
 1. **338th Division commander in early October 1944 (`C2051`).** de Lattre p. 199 names Homme de Courbière on 6 October; B-766 p. 23 has Oschmann due to take over on 26 September (doubtful reading). Recommendation: check the Lexikon (or Tessin) commander list for the 338th and set the date of the change; until then keep de Lattre's name.
-2. **Fold3 URLs.** `R762`, `R764` and `R766` cite the Fold3 search for the manuscript number because the first-image address was not recorded. Recommendation: replace them with the first-image URL (as for `R763` and `R765`) at the next Fold3 session.
+2. **Fold3 URLs.** Done on the branch `fold3-links` (30 October 2026): `R761` to `R766` now cite the first page of each manuscript.
 3. **Unread parts.** The German texts of B-468 and B-550, B-263 German pp. 1-9, 11-15 and 17-21, and B-463 pp. 39-41. Recommendation: read only if a row needs a second check.
 4. **Still deferred:** the 1st Armoured at Seppois (19 November; FMS gives only context); the 9th Colonial at Lörrach (April 1945; outside the manuscripts); the 12th Armored at Rouffach, the 3rd Algerian at Château-Lambert and the 1st Free French at the Ballon d'Alsace (not in the FMS).
 5. **Other FMS facts not written:** the B-463 strengths of 28 January 1945 (B-463 p. 7; a second strength set); the 2nd Mountain Division's arrival (date not stated); the Army Group G approval date for the Vosges-ridge withdrawal (24 or 26 November, digit blurred; `C2091` at 0.3).

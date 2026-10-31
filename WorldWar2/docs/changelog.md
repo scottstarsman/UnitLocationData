@@ -2,6 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
+
+Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.
+
+Rules applied (accepted by Scott): no command relation and no parent from a single manuscript (every new row has a blank parent); no Allied dates from the manuscripts; strengths stay in the reading notes; no front-line traces; confidence 0.5 for one source, 0.7 when a second source family agrees, 0.3 for arrivals, approximate days and map positions.
+
+### B-475 (von Zangen, Fifteenth Army, 15 September-10 November 1944)
+
+- **New reference** `R771` (B-475, von Zangen, 1947; archive_document, family `fms_german_manuscript`). Reliability: 10 of 14 checkable facts agree with the dataset (71%).
+- **New places** `PL1057` to `PL1065` (9; OpenStreetMap Nominatim): Moergestel, Dongen, Noordeloos, Geldermalsen, Rijkevorsel, Merksem, Schijndel, Roosendaal and Dordrecht.
+- **New claims** `C2164` to `C2178` (15; each note carries old value none, new value and reason): LXVII Corps command posts at Esschen (23 September) and Breda-South (from 25 September); LXXXVIII Corps at Moergestel (23 September), Dongen (about 24 September, 0.3) and Noordeloos (from 8 November); the LXXXIX Corps staff arriving at Geldermalsen (26/27 September, 0.3); the 712th Division reaching Tilburg (24 September, 0.3); the 711th and 346th relief north of Antwerp (26/27 September, 0.3); the 59th taking the Schijndel sector (28 September); Kampfgruppe Chill arriving south of Tilburg (4 October, 0.3); the 719th taking over south of Tilburg (10/11 October); the 256th VG relieving the 245th near Tilburg and the 245th moving to Roosendaal (23 October, 0.3); the air attack on the Fifteenth Army command post at Dordrecht (about 26 October, 0.3).
+  - Parent blank on all 15 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the 245th Division in line at Bladel-Hapert-Wintelre by 16 September in B-475 against South Beveland on 17 September in `C0893`; the 59th Division at Schijndel-Boxtel in October against the Lexikon row at Arnhem (`C0921`); the LXXXVIII Corps north of the Maas from 6 November against Tilburg on 10 November in `C1044`; the German forces at Arnhem directly under Army Group B (B-475, hedged) against the First Parachute Army from 23 September in `C0855`.
+- **Semantic scenario 43.**
+
 ## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
 
 Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.

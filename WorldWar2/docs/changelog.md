@@ -114,6 +114,16 @@ Scott on 31 October 2026 accepted the batch 4a recommendations (roadmap points 3
 - **Agreement (existing non-map row within 10 km):** one-day 2 of 4 (other Allied 2 of 3, German 0 of 1); three-day 4 of 8 (US 0 of 1, other Allied 4 of 5, German 0 of 2).
 - **Scenario 60** checks the pass. No existing claim row changed. No relation, no conflict group.
 
+### Batch 5a: weekly sheet of 17 October 1944 (all nationalities)
+
+Scott on 31 October 2026 asked to continue the weekly sheets with all nationalities, one commit per sheet, with village places added inline.
+- **Sheet:** `cs000134` (situation 1200 hrs 17 October 1944), on the base sheet of `cs000099` and registered to it by phase correlation (`tools/loc12ag/sheetG_registration.json`; residuals about 1 km).
+- **New claims** `C3436` to `C3569` (134: 39 US, 27 British, Canadian, Polish and French, 68 German; 1 at 0.7, 65 at 0.5, 68 at 0.3; 0.7 only under the 5 km rule of 31 October 2026), written as the earlier map rows (representative point, precision 10 km, parent blank and commander unknown on all: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps). 106 fill gaps between documented dates (no existing non-map row of the unit within three days, rows before and after). 25 rows sit on village, hamlet or locality places found inline (no town within 3 km).
+- **New places** `PL1844` to `PL1922` (OpenStreetMap Nominatim town points within 3 km of the map point, or for readings with no town the nearest named village, hamlet, suburb or locality from OpenStreetMap, searched 31 October 2026; local-language names; Belgian, Dutch and German hamlets marked "1944 municipality to be confirmed" where the present municipality differs).
+- **Not written:** 5 readings of placeholder units (190th Infantry Division, 331st Infantry Division, 406th Landesschützen Division (Division z.b.V. 406), Division Nr. 405, Division Nr. 526), 1 with no named settlement within 3 km (226th Infantry Division). All are in the private notes.
+- **Agreement (existing non-map row of the unit within 10 km):** one-day window 3 of 3: US 1 of 1, British and other Allied 2 of 2, German 0 of 0; three-day window 6 of 18 (33%): US 1 of 1, British and other Allied 3 of 3, German 2 of 14.
+- **Scenario 61** checks the sheet. No existing claim row changed. No relation, no conflict group.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

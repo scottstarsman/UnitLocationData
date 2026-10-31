@@ -25,6 +25,20 @@ Rules applied (accepted by Scott): one reference for the series with the sheet i
 - **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
 - **Semantic scenario 53.**
 
+### Batch 2us: US units on the eight Normandy sheets, 6 June-25 July 1944
+
+Scott on 31 October 2026 asked for US units on every sheet, not only gaps, to measure the maps against the dense US data and to give US units a second source family.
+
+- **Rule added (accepted by Scott):** US rows at 0.5, or 0.7 when another source family has the unit within 10 km and within three days (old window for Allied rows: same or next day; reason: Scott's instruction for US units; British, Canadian and German rows keep the batch 1 rule). US division symbols are read as the main body at the box centre; corps, army and army group headquarters flags are read at the foot of the flag staff (the dot), where the sheet draws one. A division drawn twice (a boxed command post on a staff behind a box at the front, as on the 13 June sheet) is read only at the unstaffed box; the staffed division command posts are not written in this batch (private notes).
+- **New claims** `C2469` to `C2582` (114 US: 92 division rows, 22 corps, army and army group headquarters; 28 at 0.7, 86 at 0.5). Parent blank on all (old none, new blank, reason: no command relation is taken from the maps); commander `unknown` on all (old none, new unknown, reason: the maps name no commander). First rows for the 12th Army Group headquarters on the maps (`US-AG-012G`, 25 July).
+- **New places** `PL1187` to `PL1220` (34; OpenStreetMap Nominatim, communes within 3 km of a map point).
+- **Agreement:** 45 new US rows have an existing row of another source family within three days; 28 are within 10 km (62%). Division rows 28 of 37 (76%); corps and army headquarters 0 of 8, all against objective or sector-centre rows 14-54 km away. Against existing headquarters or main-body rows only: 14 of 19 (74%).
+- **Gaps:** 75 new rows have no existing row of the unit within two days, 49 none within six days.
+- **Not written:** 9 readings with no gazetteer place within 3 km, 1 duplicate (35th Infantry Division, 11 July, same date and event type already present), the dashed XV Corps box of 18 July (en route).
+- **`data/coordinate_exceptions.csv`:** one speed exception added, `C0214`/`C2528` (82nd Airborne Division, Normandy on 11 July, England on 13 July: a sea move after relief); old value none, new value the exception, reason: the 370 km in two days is the Channel crossing. `C2528` says so in its note; `C0214` is unchanged.
+- **`scripts/semantic_tests.py`:** scenario 53 expectation of (echelon, location_represents) pairs, old value division, corps and army only, new value with `('army_group', 'headquarters')`, reason: batch 2us adds the 12th Army Group headquarters under R781. New scenario 54.
+- **No existing row changed.** No relation, no conflict group.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

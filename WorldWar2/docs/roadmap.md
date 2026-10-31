@@ -671,3 +671,7 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 5. **Arrival days in B-235** (Führer-Grenadier-Brigade 27 December, 340th VG 6 January) differ from `C1791` and `C1079`. Recommendation: keep the CMH rows; the B-235 list is from memory.
 6. **Not written:** strengths (tank and battalion counts in all four manuscripts) stay in the reading notes; the dated front lines of the B-475 annex map and the B-763 and B-179 sketches were not traced; Allied dates in the manuscripts were not used.
 
+
+## Future task: exact translations of public-domain FMS manuscripts
+
+Make exact, complete English translations of the scanned German FMS manuscripts used here (B-475, B-235, B-179, B-763 and later ones), including their maps, sketches and figures, working only from free public copies (the Combined Arms Research Library digital collection or NARA RG 338 scans). Do not use Fold3 images for this. Each translation should keep the page and image numbers of the scan so claim locators can cite it, and mark illegible words rather than guess them.

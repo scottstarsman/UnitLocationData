@@ -48,6 +48,10 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** the LXXXIV Corps headquarters at Périers on the sketch of 13-15 June against Saint-Lô in `C0106`, `C0116`, `C0123` and `C0128`; Dollmann's death on 28 June in B-763 against the alternate 29 June in `C0204` (agrees with `C0188`); the 1st SS Panzer Division near Thury-Harcourt and Clinchamps on 27-28 June on the sketches against its arrival at Bretteville on 6 July in `C0772`.
 - **Semantic scenario 46.**
 
+### Roadmap: FMS translation task
+
+- `docs/roadmap.md` gains a future task: exact translations of scanned public-domain FMS manuscripts with maps and figures from free CARL or NARA copies, not Fold3. No data changed.
+
 ## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
 
 Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.

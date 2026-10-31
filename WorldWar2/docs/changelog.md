@@ -39,6 +39,17 @@ Scott on 31 October 2026 asked for US units on every sheet, not only gaps, to me
 - **`scripts/semantic_tests.py`:** scenario 53 expectation of (echelon, location_represents) pairs, old value division, corps and army only, new value with `('army_group', 'headquarters')`, reason: batch 2us adds the 12th Army Group headquarters under R781. New scenario 54.
 - **No existing row changed.** No relation, no conflict group.
 
+### Batch 3a: August 1944, weekly sheets of 1, 8, 15 and 22 August (all nationalities)
+
+- **Sheets read:** cs000057 (1 August, base sheet 3), cs000064 (8 August), cs000071 (15 August), cs000078 (22 August), all at 1200 hrs. The last three are new base sheets; each was fitted from 9 to 13 town junctions (`tools/loc12ag/sheetB_control.json` to `sheetD_control.json`, RMS about 1 km, leave-one-out at most 3.7 km).
+- **New claims** `C2583` to `C2809` (227: 72 US, 81 British, Canadian, Polish and French, 74 German; 34 at 0.7, 119 at 0.5, 74 at 0.3), first map rows for the French 2nd Armoured Division and the 1st Polish Armoured Division. Same rules as batches 1 and 2us; parent blank and commander unknown on all (old none, new blank or unknown, reasons as in batch 1).
+- **New places** `PL1221` to `PL1346` (126; OpenStreetMap Nominatim, communes within 3 km of a map point, now also in Brittany, Maine, Perche and Île-de-France).
+- **Agreement (existing row of the unit within three days, within 10 km):** US 21 of 53 (40%; within one day 11 of 30, 37%), British, Canadian, Polish and French 19 of 37 (51%), German 2 of 8. Lower than in Normandy because units moved 30-200 km in three days during the breakout and pursuit (22 August against rows of 25 August on the Seine); see the roadmap.
+- **Gaps:** 146 new rows have no existing row of the unit within two days (US 32, others 48, German 66).
+- **Not written:** 30 readings with no place within 3 km, 8 placeholder readings (265th, 266th, 276th, 326th, 343rd and 348th Infantry, 16th and 17th Luftwaffe Field Divisions), 1 duplicate, symbols marked destroyed or unlocated (the Loire group of 8 August), en route boxes, combat commands.
+- **`data/coordinate_exceptions.csv`:** two speed exceptions added, `C1608`/`C2653` and `C1611`/`C2766` (French 2nd Armoured Division: 8 August assembly south of Avranches to Le Mans on 9 August, and Argentan on 22 August to Rambouillet on 23 August); old value none, new value the exception, reason: documented road marches of 130 and 144 km. `C2653` and `C2766` say so in their notes; `C1608` and `C1611` are unchanged.
+- **New scenario 55.** No existing row changed. No relation, no conflict group.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

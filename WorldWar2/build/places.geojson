@@ -6978,7 +6978,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 1
    }
   },
   {
@@ -27416,6 +27416,26 @@
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1282,
+     48.8299
+    ]
+   },
+   "properties": {
+    "place_id": "PL1385",
+    "name": "La Tuilerie (not located), near Saint-Aubin-des-Bois, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
     "country": "FR",
     "region": "Normandy",
     "claims_count": 1

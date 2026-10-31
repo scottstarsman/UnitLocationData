@@ -60,6 +60,13 @@ Scott on 31 October 2026 approved adding village-level places for the 42 map rea
 - **`C0383` investigated, not changed** (9th Infantry Division command post, 8 August 1944, `PL0355` La Tuilerie, Calvados, 49.219 N 0.790 W): see the roadmap.
 - **New scenario 56.** No existing claim or place row changed. No relation, no conflict group.
 
+### Place fix: `C0383` (9th Infantry Division command post, 8 August 1944)
+
+Scott on 31 October 2026 approved re-pointing `C0383` (roadmap point 24).
+- **`C0383`:** `place_id` old value `PL0355` (La Tuilerie, Calvados, 49.2190 N 0.7900 W, at Le Tronquay near Bayeux), new value `PL1385`; latitude and longitude old value 49.2190, -0.7900, new value 48.8299, -1.1282; `location_basis` old value `town_centroid`, new value `inferred`. Reason: the old point is about 45 km north of the division, behind the British sector. Evidence: CMH ETO-OB (`R372`) lists the command posts St-Aubin-des-Bois, Calvados (5 August), "La Tuilerie (1 mi SE)", Calvados (8 August) and Forien, Manche (9 August, Saint-Laurent-de-Cuves); the 12th Army Group map of 8 August (`C2651`, `R781`) puts the division near Saint-Michel-de-Montjoie, 10 km from the new point. The exact La Tuilerie was not found: no such name is in OpenStreetMap or in the IGN gazetteer (lieux-dits and addresses) in the 56 communes around Saint-Aubin-des-Bois, Saint-Michel-de-Montjoie and Saint-Laurent-de-Cuves (searched 31 October 2026). The new point is a representative point at Saint-Aubin-des-Bois, the last named command post and the only Calvados commune on the route, precision 10 km. Confidence unchanged (0.5).
+- **New place `PL1385`** (La Tuilerie (not located), near Saint-Aubin-des-Bois, Calvados; OpenStreetMap Nominatim point of Saint-Aubin-des-Bois). `PL0355` is unchanged and still used by `C2621` (21st Army Group, 1 August, near Le Tronquay).
+- **Scenario 56** now expects `C0383` on `PL1385` (old expectation: unchanged on `PL0355`).
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

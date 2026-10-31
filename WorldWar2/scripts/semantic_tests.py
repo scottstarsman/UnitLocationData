@@ -1459,7 +1459,7 @@ def scenario_56_loc_12ag_villages():
     expect(s + ': all on the new places PL1347-PL1384', all('PL1347' <= c['place_id'] <= 'PL1384' for c in b), True)
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank', set(c['parent_unit_id'] for c in b), {''})
-    expect(s + ': the 9th Infantry Division row C0383 is unchanged', [(c['place_id'], c['latitude'], c['confidence']) for c in claims if c['claim_id'] == 'C0383'], [('PL0355', '49.2190', '0.5')])
+    expect(s + ': the 9th Infantry Division row C0383 is re-pointed from PL0355 to PL1385 (place fix of 31 October 2026)', [(c['place_id'], c['latitude'], c['confidence']) for c in claims if c['claim_id'] == 'C0383'], [('PL1385', '48.8299', '0.5')])
 
 
 def main():

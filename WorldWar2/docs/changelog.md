@@ -19,6 +19,17 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** Brandenberger taking command on 1 April (arrived 28 March) in B-745 against 26 March in `C1190`; the LXXX Corps under the Nineteenth Army from 9 April in B-745 against 8 April in `C2123`; the XVIII SS Corps staff dissolved at 2200 on 26 April in B-745 against 27 April in `C1273`; the Twenty-fourth Army shipping its troops across Lake Constance in the night to 26 April in B-745 against 21 April in `C1219`.
 - **Semantic scenario 51.**
 
+### B-151 (Manteuffel, Fifth Panzer Army, September-16 December 1944, English translation from the Internet Archive)
+
+- **New reference** `R780` (B-151; archive_document, family `fms_german_manuscript`). Reliability: 6 of 8 checkable facts agree with the dataset (75%).
+- **New places** `PL1138` to `PL1142` (5; OpenStreetMap Nominatim): Le Hohwald, Manderscheid in the Bernkastel-Wittlich district, Dackscheid, Kyllburg, Gerolstein.
+- **New claims** `C2275` to `C2281` (7; 3 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): Fifth Panzer Army headquarters at Le Hohwald on Manteuffel's arrival (11 September), at Königshoven on the Aachen front (22 October), the operations staff to Manderscheid (23 November) and the forward move to Dackscheid (15 December); the LVIII Panzer Corps at Eisenschmitt (23 November, 0.3, approximate day); the XLVII Panzer Corps staff complete at Kyllburg (8 December, 0.3, arrival); the LXVI Corps headquarters at Gerolstein (4 November, 0.3, corps number printed as 65).
+  - Parent blank on all 7 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **New place rather than reuse:** `PL1066` (Manderscheid, used by `C2179`) has the coordinates of the Manderscheid near Arzfeld in the western Eifel; B-151 places the army staff near Eisenschmitt and Gerolstein, which fits Manderscheid in the Bernkastel-Wittlich district, so the new row uses the new place `PL1139` and `PL1066` and `C2179` are unchanged (open point).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the army staff leaving the Aachen sector on 23 November in B-151 against 15 November in `C0956` and 30 November in `C2179`.
+- **Semantic scenario 52.**
+
 ## fms-german-5: four more FMS manuscripts (B-781, B-831, B-084, B-849; 31 October 2026)
 
 Scott approved reading four more Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-5` from `main` `67a7d83`. The German original is the primary source in B-781, B-084 and B-849, with the English translation used only to check unclear passages; in B-831 the German scan is illegible, so the English translation is the primary text and the reference says so. All four are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

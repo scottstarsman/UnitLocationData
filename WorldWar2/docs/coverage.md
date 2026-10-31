@@ -18,8 +18,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | France | corps | 0 | 0 | 2 | 2 | 2 | 5 |
 | France | division | 0 | 0 | 12 | 12 | 10 | 73 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 37 |
-| Germany | army | 0 | 0 | 15 | 15 | 9 | 150 |
-| Germany | corps | 17 | 0 | 28 | 45 | 41 | 202 |
+| Germany | army | 0 | 0 | 15 | 15 | 9 | 154 |
+| Germany | corps | 17 | 0 | 28 | 45 | 41 | 205 |
 | Germany | division | 43 | 0 | 88 | 131 | 112 | 444 |
 | Germany | brigade | 0 | 0 | 11 | 11 | 11 | 37 |
 | Germany | regiment/battle_group | 1 | 0 | 12 | 13 | 3 | 22 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **69** | **0** | **319** | **388** | **258** | **2273** |
+| **All** | | **69** | **0** | **319** | **388** | **258** | **2280** |
 
 ## Operations
 
@@ -49,26 +49,26 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 1306 |
+| campaign | 9 | 9 | 1313 |
 | operation | 33 | 33 | 474 |
 | battle | 20 | 20 | 412 |
 | phase | 4 | 4 | 81 |
-| **All** | **67** | **66** | **2273** |
+| **All** | **67** | **66** | **2280** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 1124 places and 156 alias names for 2273 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 1129 places and 156 alias names for 2280 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 1020 | 2076 |
+| point | 1025 | 2083 |
 | area | 86 | 177 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 599 | 1138 |
-| Germany (DE) | 308 | 684 |
+| France (FR) | 600 | 1139 |
+| Germany (DE) | 312 | 690 |
 | Netherlands (NL) | 90 | 208 |
 | Belgium (BE) | 87 | 165 |
 | Austria (AT) | 18 | 31 |

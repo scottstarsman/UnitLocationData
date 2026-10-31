@@ -20518,7 +20518,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -21438,7 +21438,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -22478,6 +22478,106 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3267,
+     48.4038
+    ]
+   },
+   "properties": {
+    "place_id": "PL1138",
+    "name": "Le Hohwald, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8126,
+     50.0929
+    ]
+   },
+   "properties": {
+    "place_id": "PL1139",
+    "name": "Manderscheid, Bernkastel-Wittlich, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3881,
+     50.1185
+    ]
+   },
+   "properties": {
+    "place_id": "PL1140",
+    "name": "Dackscheid, Arzfeld, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5922,
+     50.0411
+    ]
+   },
+   "properties": {
+    "place_id": "PL1141",
+    "name": "Kyllburg, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6619,
+     50.2234
+    ]
+   },
+   "properties": {
+    "place_id": "PL1142",
+    "name": "Gerolstein, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
     "claims_count": 1
    }
   }

@@ -33995,6 +33995,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3267,
+     48.4038
+    ]
+   },
+   "properties": {
+    "claim_id": "C2275",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-09-11",
+    "place_id": "PL1138",
+    "location_name": "Le Hohwald, Bas-Rhin (Hochwald 45 km south-west of Strasbourg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Manteuffel arrives at Fifth Panzer Army headquarters at Le Hohwald south-west of Strasbourg",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-09-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: p. 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.3378,
      50.9304
     ]
@@ -45352,6 +45393,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.54,
+     51.0045
+    ]
+   },
+   "properties": {
+    "claim_id": "C2276",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-10-22",
+    "place_id": "PL1039",
+    "location_name": "Königshoven, Bedburg, Nordrhein-Westfalen (Königshoven 15 km east of Jülich)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army headquarters takes over a sector of the Aachen front with its command post at Königshoven",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: p. 11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.6833,
      51.2833
     ]
@@ -46534,6 +46616,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 424"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6619,
+     50.2234
+    ]
+   },
+   "properties": {
+    "claim_id": "C2281",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-066C",
+    "unit_name": "LXVI Corps (LXVI Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-04",
+    "place_id": "PL1142",
+    "location_name": "Gerolstein, Rhineland-Palatinate (Gerolstein in the Eifel)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Manteuffel visits the LXVI Corps headquarters at Gerolstein to plan the Schnee Eifel attack",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: p. 86"
    }
   },
   {
@@ -51215,6 +51338,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8126,
+     50.0929
+    ]
+   },
+   "properties": {
+    "claim_id": "C2277",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-11-23",
+    "place_id": "PL1139",
+    "location_name": "Manderscheid, Bernkastel-Wittlich, Rhineland-Palatinate (Manderscheid in the Eifel)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army operations staff moves from the Aachen sector to Manderscheid in the Eifel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: pp. 11 and 92"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7207,
+     50.0446
+    ]
+   },
+   "properties": {
+    "claim_id": "C2279",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-11-23",
+    "place_id": "PL1085",
+    "location_name": "Eisenschmitt, Rhineland-Palatinate (Eisenschmitt near Manderscheid)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LVIII Panzer Corps headquarters is at Eisenschmitt when the army staff arrives at Manderscheid",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: p. 92"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4667,
      50.7833
     ]
@@ -53798,6 +54003,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5922,
+     50.0411
+    ]
+   },
+   "properties": {
+    "claim_id": "C2280",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-08",
+    "place_id": "PL1141",
+    "location_name": "Kyllburg, Rhineland-Palatinate (Kyllburg in the Eifel)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "XLVII Panzer Corps staff is complete in the Eifel after leaving the Roer sector",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: p. 92"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3228,
      51.517
     ]
@@ -55185,6 +55431,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R766;R765;R002",
     "source_locator": "R766: p. 5, enclosure 4; R765: p. 11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3881,
+     50.1185
+    ]
+   },
+   "properties": {
+    "claim_id": "C2278",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-12-15",
+    "place_id": "PL1140",
+    "location_name": "Dackscheid, Arzfeld, Rhineland-Palatinate (Dackscheid north-east of Waxweiler)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army headquarters moves forward from Manderscheid to Dackscheid on the eve of the offensive",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R780;R002",
+    "source_locator": "R780: p. 104"
    }
   },
   {

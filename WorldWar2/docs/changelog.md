@@ -134,6 +134,16 @@ Scott on 31 October 2026 asked to continue the weekly sheets with all nationalit
 - **Agreement (existing non-map row of the unit within 10 km):** one-day window 1 of 5 (20%): US 1 of 2, British and other Allied 0 of 0, German 0 of 3; three-day window 3 of 14 (21%): US 3 of 5, British and other Allied 0 of 2, German 0 of 7.
 - **Scenario 62** checks the sheet. No existing claim row changed. No relation, no conflict group.
 
+### Batch 5c: weekly sheet of 31 October 1944 (all nationalities)
+
+Scott on 31 October 2026 asked to continue the weekly sheets with all nationalities, one commit per sheet, with village places added inline.
+- **Sheet:** `cs000148` (situation 1200 hrs 31 October 1944), on the base sheet of `cs000099` and registered to it by phase correlation (`tools/loc12ag/sheetG_registration.json`; residuals about 1 km).
+- **New claims** `C3706` to `C3845` (140: 44 US, 25 British, Canadian, Polish and French, 71 German; 0 at 0.7, 69 at 0.5, 71 at 0.3; 0.7 only under the 5 km rule of 31 October 2026), written as the earlier map rows (representative point, precision 10 km, parent blank and commander unknown on all: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps). 116 fill gaps between documented dates (no existing non-map row of the unit within three days, rows before and after). 24 rows sit on village, hamlet or locality places found inline (no town within 3 km).
+- **New places** `PL1980` to `PL2060` (OpenStreetMap Nominatim town points within 3 km of the map point, or for readings with no town the nearest named village, hamlet, suburb or locality from OpenStreetMap, searched 31 October 2026; local-language names; Belgian, Dutch and German hamlets marked "1944 municipality to be confirmed" where the present municipality differs).
+- **Not written:** 6 readings of placeholder units (190th Infantry Division, 331st Infantry Division, 363rd Volksgrenadier Division, 406th Landesschützen Division (Division z.b.V. 406), Division Nr. 405, Fallschirmjäger Division Erdmann), 1 with no named settlement within 3 km (226th Infantry Division). All are in the private notes.
+- **Agreement (existing non-map row of the unit within 10 km):** one-day window 0 of 6 (0%): US 0 of 0, British and other Allied 0 of 0, German 0 of 6; three-day window 3 of 11 (27%): US 0 of 0, British and other Allied 3 of 4, German 0 of 7.
+- **Scenario 63** checks the sheet. No existing claim row changed. No relation, no conflict group.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

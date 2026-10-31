@@ -74,30 +74,30 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 2122, dated 1944-06-06 to 1945-05-10 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 2133, dated 1944-06-06 to 1945-05-10 |
 | units in `data/units.csv` | 388: 319 active (have claims), 69 placeholders |
 | claim files (one per active unit) | 319 |
-| conflict groups / claims in a group | 29 / 62 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 1024 / 9 |
+| conflict groups / claims in a group | 30 / 64 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 1031 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 1062 |
-| relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2655 |
+| relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2663 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 32 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 10 |
-| references (`data/references.csv`, generated) | 760, of which 600 cited by at least one claim (the others are cited by units or operations) |
+| references (`data/references.csv`, generated) | 767, of which 607 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
 | nationalities / retired claim ids / claim-key exceptions | 10 / 1 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 41 |
 
-Claims by nationality: US 800, Germany 764, UK 266, Canada 146, France 84, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
+Claims by nationality: US 800, Germany 775, UK 266, Canada 146, France 84, Poland 39, Belgium 10, Netherlands 8, Czechoslovakia 5.
 
-Claims by echelon: division 1344, corps 353, army 169, brigade 144, army_group 45, regiment/battle_group 35, other 22, battalion 10.
+Claims by echelon: division 1346, corps 354, army 171, brigade 144, army_group 51, regiment/battle_group 35, other 22, battalion 10.
 
-Claims by branch: Army 1322, Armoured 537, Waffen-SS 112, Airborne 100, Luftwaffe 51.
+Claims by branch: Army 1333, Armoured 537, Waffen-SS 112, Airborne 100, Luftwaffe 51.
 
-Claims by event type: attack 450, other 257, defense 232, capture 189, command_change 179, hq_move 153, arrival 117, regroup 111, relocation 95, hq_observation 65, landing 60, subordinate_assignment 51, withdrawal 47, counterattack 46, surrender 39, activation 18, redesignation 8, destruction 5.
+Claims by event type: attack 450, other 258, defense 232, capture 189, command_change 179, hq_move 158, arrival 117, regroup 111, relocation 95, hq_observation 65, landing 60, subordinate_assignment 56, withdrawal 47, counterattack 46, surrender 39, activation 18, redesignation 8, destruction 5.
 
-Claims by status: preferred 2082, alternate 24, disputed 16. Claims by confidence: 0.3 483, 0.5 1013, 0.7 563, 0.9 63.
+Claims by status: preferred 2092, alternate 25, disputed 16. Claims by confidence: 0.3 489, 0.5 1018, 0.7 563, 0.9 63.
 
 Placeholder units by nationality: Germany 64, Allied 3, US 2.
 
@@ -105,11 +105,11 @@ Command relations by relationship: assigned 614, unspecified_subordination 205, 
 
 Command relations: start basis claim_date 510, assignment_table 389, narrative 145, inferred 14, order 4; end basis inferred_from_next_claim 482, open_at_last_claim 388, assignment_table 111, narrative 61, inferred 20; `end_unknown` true 130; `change_undated` true 18; status preferred 1060, alternate 2.
 
-Evidence roles of relation links: observed_during 1282, asserts_start 1072, asserts_start_and_end 153, listed_by_higher_unit 75, asserts_end 73.
+Evidence roles of relation links: observed_during 1290, asserts_start 1072, asserts_start_and_end 153, listed_by_higher_unit 75, asserts_end 73.
 
-References by source family: wikipedia 237, us_army_cmh 236, lexikon_wehrmacht_de 196, ww2byday_com 33, fms_german_manuscript 7, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 237, reference_compilation 230, official_history 179, assignment_table 65, news_or_web_article 19, archive_document 15, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 2, other 2.
+References by source family: wikipedia 237, us_army_cmh 236, lexikon_wehrmacht_de 196, ww2byday_com 33, fms_german_manuscript 14, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 237, reference_compilation 230, official_history 179, assignment_table 65, archive_document 22, news_or_web_article 19, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 2, other 2.
 
-Places by kind: point 920, area 86, line 18.
+Places by kind: point 927, area 86, line 18.
 
 <!-- counts:end -->
 

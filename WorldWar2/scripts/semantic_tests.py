@@ -925,8 +925,9 @@ def scenario_25_brigades_batch_3_german():
 BATCH35 = lambda c: 'C2031' <= c['claim_id'] <= 'C2058'   # source fixes from de Lattre and Ellis (scenario 35) count only in their own scenario
 BATCH36 = lambda c: 'C2060' <= c['claim_id'] <= 'C2077'   # FMS B-466 batch (scenario 36) counts only in its own scenario
 BATCH37 = lambda c: 'C2078' <= c['claim_id'] <= 'C2115'   # FMS 19th Army batch (scenario 37) counts only in its own scenario
+BATCH38 = lambda c: 'C2116' <= c['claim_id'] <= 'C2126'   # FMS B-703 Army Group G batch (scenario 38) counts only in its own scenario
 BATCH39 = lambda c: 'C2127' <= c['claim_id'] <= 'C2134'   # FMS B-811 Fifteenth Army batch (scenario 39) counts only in its own scenario
-NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH39(c)
+NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c)
 
 
 def scenario_26_activity_pilot():
@@ -1198,6 +1199,19 @@ def scenario_37_fms_19army():
     expect(s + ': 189th Division commander Zorn on 20 Jan 1945', by['C1117']['commander'].startswith('Generalmajor Zorn'), True)
 
 
+def scenario_38_fms_b703_armygroupg():
+    """FMS B-703 (Wilutzky, Army Group G, 22 Mar-6 May 1945): 11 new rows, headquarters moves, conflict group G033."""
+    s = 'scenario 38'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH38(c)]
+    by = {c['claim_id']: c for c in claims}
+    expect(s + ': the batch adds 11 claims, all citing R767', (len(new), sum('R767' in c['reference_ids'].split(';') for c in new)), (11, 11))
+    expect(s + ': Army Group G headquarters Michelstadt, Neuenstadt, Waldenbuch, Wallerstein, Schierling, Ampfing, Hohenaschau', tuple(by[i]['place_id'] for i in ('C2116', 'C2117', 'C2118', 'C1198', 'C2119', 'C2120', 'C1199')), ('PL1032', 'PL1033', 'PL1034', 'PL1035', 'PL1036', 'PL1037', 'PL1038'))
+    expect(s + ': group G033: CMH 28 April preferred, FMS 25 April alternate', (by['C1205']['conflict_group_id'], by['C1205']['claim_status'], by['C2126']['conflict_group_id'], by['C2126']['claim_status']), ('G033', 'preferred', 'G033', 'alternate'))
+    expect(s + ': FMS-only transfers keep a blank parent', tuple(by[i]['parent_unit_id'] for i in ('C2122', 'C2123', 'C2125', 'C2126')), ('', '', '', ''))
+    expect(s + ': inferred or approximate days capped at 0.3', tuple(by[i]['confidence'] for i in ('C2116', 'C2120', 'C2126')), ('0.3', '0.3', '0.3'))
+
+
 def scenario_39_fms_b811_15army():
     """FMS B-811 (von Zangen, Fifteenth Army, 15 Nov 1944-22 Feb 1945): 8 new rows, R768 on C1089 and C1140."""
     s = 'scenario 39'
@@ -1212,7 +1226,7 @@ def scenario_39_fms_b811_15army():
 
 
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_39_fms_b811_15army):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army):
         before = len(FAILURES)
         try:
             fn()

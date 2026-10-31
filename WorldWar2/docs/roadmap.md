@@ -543,6 +543,15 @@ Decided by Scott on 30 October 2026 (all six recommendations accepted; branch `d
 
 Deferred (not in this batch, about 30 rows; items marked *resolved* were written on the branch `fms-19army`, 30 October 2026): 1st Armoured Seppois (19 November 1944) and the Burnhaupt encirclement (24-28 November; *resolved*: `C2111`, `C2112`); 2nd Moroccan Héricourt-Lisaine (17 November) and the Thann sector (20 January 1945); 9th Colonial Doubs loop and Hérimoncourt (17 November; *resolved*: `C2107`), Seppois-Pfetterhouse (23 November) and Lörrach to the Swiss frontier (22-24 April 1945); 4th Moroccan Mountain Vieux-Thann (28 January) and Villingen-St Georgen (21-24 April); 5th Armoured Colmar (2 February; *resolved*: `C2110`); 3rd Algerian Château-Lambert (23 November) and Weil der Stadt-Leonberg (20 April); 1st Free French Grosmagny and the Ballon d'Alsace (24 November); US 3rd and 28th Infantry on the Colmar front (*resolved*: `C2108`, `C2109`), 36th Infantry at Germersheim and 12th Armored at Rouffach; the German Nineteenth Army at Avignon in mid-1944; the command changes de Lattre dates (1st Armoured to the I Corps and the 9th Colonial under army control after Karlsruhe; 2nd Armoured and 10th Infantry leaving the army about 10 February 1945). The 719th Division attack south of Villingen on 24 April 1945 and the 4th Moroccan Mountain attack at Vieux-Thann on 20 January 1945 were already rows.
 
+## Official-history pass 2 (31 October 2026): open points
+
+Done on the branch `official-history-pass-2` (from `main` `13be4a4`), chunk 1 (US): 1 claim (`C2160`, 101st Airborne at Berchtesgaden on 8 May 1945, inferred garrison), 1 place (`PL1055`); chunk 2 (Lexikon): 3 claims (`C2161` to `C2163`), 1 place (`PL1056`); chunk 3: 59 pilot rows labelled; semantic scenario 42. Still open, each with a recommendation:
+
+1. US 70th and 106th 8 May rows: The Last Offensive names no place. Recommendation: leave blank unless the Seventh Army or Fifteenth Army report is found as public text.
+2. US open spans (11th Armored, 26th, 70th, 104th, 106th) and undated rests: no dated relief in The Last Offensive chapters read. Recommendation: leave open; the 30-day horizon limits them.
+3. German refit spans (chunk 2, done): 9th Panzer refit at Rheydt (31 October to 15 November 1944, `C2161` to `C2163`). The other Lexikon pages read give no dated late-war refit, and the 226th (Dünkirchen) stays blank because its only row is a month-level listing. Recommendation: no further Lexikon pass; take refits only from dated sources (official histories or FMS manuscripts).
+4. Pilot division rows (chunk 3, done): 59 rows labelled. Left blank: two command-change rows (`C1339`, `C1560`). Still open spans: the British 1st Airborne refit from 26 September 1944 (`C1816`) and the 1st Polish Armoured line span from 4 September 1944 (`C1553`). Recommendation: leave them open; the 30-day horizon limits them.
+
 ## Official-history pass 1 (30 October 2026): open points
 
 Done on the branch `official-history-pass-1` (from `main` `1431a82`): 28 new claims (`C2003` to `C2030`), 6 places (`PL0981` to `PL0986`), 1 reference (`R760`, the Ninth Army history Conquer), semantic scenario 34; see `docs/changelog.md`. Closed: 8 May 1945 rows for the US 2nd Armored, 29th, 30th, 65th, 75th, 82nd Airborne, 83rd, 84th, 103rd and 104th; the Canadian 2nd, 3rd, 4th Armoured and 5th Armoured; the French 2nd Moroccan and 5th Armoured; the 75th rest span (ended by its occupation start of 22 April); first activity rows for the German 85th, 180th, 416th, 712th, 719th, 2nd and 6th Fallschirmjäger and 6th SS Mountain Divisions.
@@ -646,3 +655,9 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 4. German duplicate copies and map sheets: not read in full.
 5. Unit strengths: notes only, not in the dataset.
 6. Map front lines: not traced.
+
+## Official-history pass 2: decisions (Scott, 31 October 2026)
+
+1. No further Lexikon der Wehrmacht pass; take German refits only from dated official histories or the German manuscripts.
+2. The 226th Division's month-level Dunkirk listing stays unlabelled.
+3. The open pilot spans (`C1816`, `C1553`) stay open; the 30-day horizon caps them.

@@ -2,6 +2,36 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
+
+Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.
+
+### Chunk 1, US gaps (The Last Offensive)
+
+- Source: the US Army official history (CMH), MacDonald, The Last Offensive (`R568` chapter 18 and `R569` chapter 19, HyperWar text); paraphrase with printed pages. No new reference.
+- New place: `PL1055` Berchtesgaden, Bayern (OpenStreetMap Nominatim).
+- 1 new claim: C2160, 101st Airborne, 8 May 1945, Berchtesgaden: garrison point (inferred), 0.3. Old value of each activity column: none (the row is new). Reason: the division raced for Berchtesgaden on 4 May (p. 442) and was arranging an SS surrender on 7 May (p. 473); no place is given for 8 May, so the last named objective is used and the state is inferred.
+- Semantic tests: new scenario 42; scenario 34 and the batch filter (`NOT_OHP`) now leave out pass 2 rows (`OHP2`). Old filter: rows whose notes name the official-history pass. New filter: the same less `C2160`. Reason: the pass 2 notes also name the official-history pass, and the pass 1 totals stay as approved.
+- Still open (no dated source in The Last Offensive): 8 May rows for the 70th and 106th; the open spans of the 11th Armored (23 December 1944), 26th (29 January 1945), 70th (17 February 1945), 104th (23 February 1945) and 106th (15 March 1945); the undated rests listed in the roadmap.
+
+### Chunk 2, German refit spans (Lexikon der Wehrmacht)
+
+- Source: Lexikon der Wehrmacht, 9. Panzer-Division (`R610`); short dated facts only, paraphrased. Pages read: 9th, 2nd, 21st and 116th Panzer and the 226th Infantry; only the 9th Panzer page dates a late-1944 refit (the 116th Panzer refit in the Eifel has no date).
+- New place: `PL1056` Rheydt, Mönchengladbach (OpenStreetMap Nominatim).
+- 3 new claims, `C2161` to `C2163` (old value of each activity column: none, the rows are new):
+  - C2161, 9th Panzer, 27 October 1944, Venlo: in_line start (stated), 0.3. Relief attack for the 15th Army in the Venlo-Sittard area (27 to 30 October); representative point.
+  - C2162, 9th Panzer, 31 October 1944, Rheydt: refitting start (stated, derived start day), 0.3. Short refit in the Rheydt area after the attack.
+  - C2163, 9th Panzer, 15 November 1944, Geilenkirchen: in_line start (stated), 0.5. Defensive fighting for Geilenkirchen from 15 November; ends the refit span by the implicit-end rule.
+- Not changed: the 226th Division (Dünkirchen) stays blank. Its only row is a month-level listing, and scenario 32 keeps listings unlabelled.
+- Semantic tests: scenario 42 extended (`OHP2` now covers `C2160` to `C2163`).
+
+### Chunk 3, labels for the pilot divisions
+
+- 59 existing rows labelled; no new claims, places or references. Old value of each activity column: blank. New values and reasons are in each row's `Activity:` note. Rows of the 4th Canadian Armoured (18), 1st Polish Armoured (31), British 1st Airborne (2), British 50th (6) and French 3rd Algerian (2) Divisions; 53 stated and 6 inferred.
+- Rubric as before: the division fighting, capturing, landing or relieving another division in the line is `in_line` (point, stated); orders, arrivals or part of the division in action are `in_line` inferred (0.3 cap); command changes stay blank (`C1339`, `C1560`).
+- Spans: `C1340` (Suitcase, 20 October 1944) is an `in_line` start and ends the 4th Canadian Armoured refit span of 4 September (`C1818`); `C1342` (Army Reserve at Boxtel, 23 December 1944) is a `reserve` start, ended by the `in_line` start `C1389` (Elephant, 26 January 1945); `C1579` (1st Polish Armoured at Wilhelmshaven, 6 May 1945) is a `garrison` start. The British 1st Airborne refit (`C1816`) and the 1st Polish Armoured line span (`C1553`) stay open (no dated end in the sources).
+- Semantic tests: scenario 26, 4th Canadian Armoured on 1 December 1944: old expectation no answer (open refit span past 30 days); new expectation `in_line`, certain, inferred, 0.3 (the Suitcase line span ended by the Boxtel reserve); reason: the pilot rows are now labelled. Scenario 42 counts 63 rows and checks the new spans.
+
 ## 31 October 2026: FMS open-question decisions (branch fms-decisions-oct31)
 
 - `C0957` event definition changed from "the takeover of 15 November" to "the arrival of 15 November". Reason: FMS B-811 p. 2 dates the takeover to 22 November (`C2127`); CMH supports the arrival only. Date, place and confidence unchanged.

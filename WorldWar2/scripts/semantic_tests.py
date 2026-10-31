@@ -928,8 +928,9 @@ BATCH37 = lambda c: 'C2078' <= c['claim_id'] <= 'C2115'   # FMS 19th Army batch 
 BATCH38 = lambda c: 'C2116' <= c['claim_id'] <= 'C2126'   # FMS B-703 Army Group G batch (scenario 38) counts only in its own scenario
 BATCH39 = lambda c: 'C2127' <= c['claim_id'] <= 'C2134'   # FMS B-811 Fifteenth Army batch (scenario 39) counts only in its own scenario
 BATCH40 = lambda c: 'C2135' <= c['claim_id'] <= 'C2136'   # FMS B-701 Army Group B batch (scenario 40) counts only in its own scenario
+OHP2 = lambda c: 'C2160' <= c['claim_id'] <= 'C2163' or 'official-history pass 2' in c['notes']   # official-history pass 2 (scenario 42) counts only in its own scenario
 BATCH41 = lambda c: 'C2137' <= c['claim_id'] <= 'C2159'   # FMS B-078 Army Group G Lorraine and Vosges batch (scenario 41) counts only in its own scenario
-NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c)
+NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c) and not OHP2(c)
 
 
 def scenario_26_activity_pilot():
@@ -953,7 +954,9 @@ def scenario_26_activity_pilot():
     expect(s + ': 2e DB, 3 Jan 1945: XV Corps reserve (point)', A('FR-ARM-002D', '1945-01-03')[:3], ('reserve', 'certain', 'stated'))
     expect(s + ': 1st Polish Armoured, 1 Sep 1944: refitting after the gap, implicit end by the pursuit', A('POL-ARM-001D', '1944-09-01')[:3], ('refitting', 'certain', 'inferred'))
     expect(s + ': Polish Parachute Brigade, 23 Sep 1944: in the line at Driel', A('POL-ABN-001B', '1944-09-23')[:2], ('in_line', 'certain'))
-    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: the open refit span is not carried past 30 days', A('CAN-ARM-004D', '1944-12-01'), None)
+    # Official-history pass 2 (31 October 2026): old expectation None (open refit span past 30 days); new: the refit span now ends on 19 October
+    # and the line span of Suitcase (C1340, 20 October) runs to the reserve start of 23 December (C1342); reason: the pilot rows were labelled.
+    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: in the line between Suitcase and the Boxtel reserve (pass 2 labels)', A('CAN-ARM-004D', '1944-12-01'), ('in_line', 'certain', 'inferred', 0.3))
     expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
     claims = common.load_all_claims()[1]
     pilot = {'US-ABN-101D', 'US-ABN-082D', 'UK-ABN-001D', 'UK-INF-050D', 'CAN-INF-002D', 'CAN-ARM-004D', 'GER-SSPZ-009D', 'GER-SSPZ-010D', 'GER-FEST-LORIENT', 'FR-ARM-002D', 'FR-INF-003D', 'POL-ARM-001D', 'POL-ABN-001B'}
@@ -1138,7 +1141,7 @@ def scenario_34_official_history_pass_1():
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
-    rows = [c for c in claims if c.get('activity_status') and 'official-history pass' in c['notes']]
+    rows = [c for c in claims if c.get('activity_status') and 'official-history pass' in c['notes'] and not OHP2(c)]
     expect(s + ': the pass has 28 activity rows in 24 units', (len(rows), len({c['unit_id'] for c in rows})), (28, 24))
     expect(s + ': the pass has 12 stated and 16 inferred rows', (sum(c['activity_basis'] == 'stated' for c in rows), sum(c['activity_basis'] == 'inferred' for c in rows)), (12, 16))
     expect(s + ': 75th Division, 20 Apr 1945: the rest span now ends by the occupation start of 22 Apr (inferred end)', A('US-INF-075D', '1945-04-20'), ('refitting', 'certain', 'inferred', 0.3))
@@ -1238,6 +1241,22 @@ def scenario_40_fms_b701_armygroupb():
     expect(s + ': II SS Panzer Corps FMS-only row keeps a blank parent at 0.3', (by['C2136']['parent_unit_id'], by['C2136']['confidence']), ('', '0.3'))
 
 
+def scenario_42_official_history_pass_2():
+    """Official-history pass 2 (October 2026): US gaps from The Last Offensive (C2160); Lexikon der Wehrmacht German rows (C2161-C2163); labels for the rows of the five pilot divisions."""
+    s = 'scenario 42'
+    import activity
+    A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
+    claims = common.load_all_claims()[1]
+    rows = [c for c in claims if OHP2(c)]
+    expect(s + ': the pass has 63 activity rows (4 new claims, 59 pilot rows labelled)', sum(bool(c.get('activity_status')) for c in rows), 63)
+    expect(s + ': 4th Canadian Armoured, 10 Oct 1944: refit at Abbeville ended by Suitcase (inferred end)', A('CAN-ARM-004D', '1944-10-10')[:3], ('refitting', 'certain', 'inferred'))
+    expect(s + ': 4th Canadian Armoured, 10 Jan 1945: Army Reserve at Boxtel', A('CAN-ARM-004D', '1945-01-10')[:2], ('reserve', 'certain'))
+    expect(s + ': 1st Polish Armoured, 19 Aug 1944: Chambois', A('POL-ARM-001D', '1944-08-19')[:1], ('in_line',))
+    expect(s + ': 9th Panzer (German), 5 Nov 1944: short refit at Rheydt', A('GER-PZ-009D', '1944-11-05')[:1], ('refitting',))
+    expect(s + ': 9th Panzer (German), 16 Nov 1944: defending Geilenkirchen', A('GER-PZ-009D', '1944-11-16')[:1], ('in_line',))
+    expect(s + ': 101st Airborne, 8 May 1945: Berchtesgaden area (inferred garrison)', A('US-ABN-101D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))
+
+
 def scenario_41_fms_b078_armygroupg():
     """FMS B-078 (von Mellenthin, Army Group G, 14 Nov-early Dec 1944): 23 new rows, R770 on C1012 and C1033."""
     s = 'scenario 41'
@@ -1256,7 +1275,7 @@ def scenario_41_fms_b078_armygroupg():
 
 
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2):
         before = len(FAILURES)
         try:
             fn()

@@ -621,3 +621,10 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 4. **Not written**: Lindern lost 1 December and Linnich 2 December (no German row needs them); the LXVII Corps under the Fifteenth Army about 27 December to 18 January (start date only in B-811); the Roer dams opened by Army Group B order on 6/7 February (consistent with `C0607`); Volks artillery corps and the dated strength notes (p. 82: infantry at two thirds, artillery two thirds to three quarters). Allied identifications from B-811 not used (a British 3rd Division at Elsenborn on appendix 5 is wrong).
 5. **Unread**: the German copy (images 108-254) and its hand-drawn maps; the English maps' lines are illegible in the scan.
 
+## FMS B-701 batch (Army Group B, mid-October 1944-mid-April 1945; 30 October 2026): open points
+
+1. **II SS Panzer Corps on 16 December.** B-701 appendix 4 puts it under the Sixth Panzer Army; the Lexikon row `C1069` and `CR0755` keep it under the army group (zur Verfügung) to 2 January. Recommendation: keep `C2136` at 0.3 with a blank parent until a second family (for example CMH, The Ardennes) dates the subordination.
+2. **Allied dates in B-701 not used**: Brussels 2 September (Ellis: 3 September), Antwerp 5 September (Ellis: 4 September), St Vith "on the first day" (it fell on 21 December). Recommendation: no change; the dataset already follows Ellis.
+3. **Not written**: the Fifteenth and Fifth Panzer Army staff exchange (date printed 28 February; B-811 and `C1158` are consistent but no day is reliable); Model's death (B-701 gives no date); the Roer flood (B-701 about 10 days, B-811 about 14). Recommendation: leave these out.
+4. **Unread**: maps at images 75-79 and the German section; read only if a row needs a second check.
+

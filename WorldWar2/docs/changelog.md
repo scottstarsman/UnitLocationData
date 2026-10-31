@@ -2,9 +2,23 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-b701-armygroupb: Army Group B from Foreign Military Studies B-701 (Reichhelm; 30 October 2026)
+
+Scott approved the reading of the Army Group B manuscript and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the branches `fms-b703-armygroupg` (merged as PR #56; `C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`) and `fms-b811-15army` (merged as PR #57; `C2127` to `C2134`, `PL1039` to `PL1044`, `R768`); the branch `fold3-links` (merged as PR #55) changes citations only. Source: Günther Reichhelm (Ia of Army Group B), B-701, *Summary of Army Group B Engagements from the middle of Oct 44 until the middle of Apr 45* (English translation, dated 29 November 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The maps (images 75-79) and the German section were not read.
+
+- **New reference** `R769` (B-701; archive_document, family `fms_german_manuscript`). Reliability: 20 of 25 checkable facts agree with the dataset, Ellis and the B-811 and B-703 notes (80%). Good for the Ardennes order of battle; Allied dates are often a day off.
+- **New places**: none (next place id stays `PL1045`).
+- **New claims** `C2135` and `C2136` (each note carries old value none, new value and reason):
+  - Fifteenth Army ends its withdrawal across the Scheldt by 23 September 1944, about 82,000 men and 580 guns (`C2135`, Walcheren `PL0549`, 0.7: B-701 p. 8 and Ellis vol. II p. 69 agree on the men; guns 580 against 530).
+  - II SS Panzer Corps (2nd and 9th SS Panzer Divisions) in the Sixth Panzer Army order of battle on 16 December 1944 (`C2136`, representative point in the Eifel `PL0573`, 0.3; parent blank, inferred value: old none, new blank, reason: only B-701 states it, and `CR0755` has the corps under the army group to 2 January).
+- **Changed rows**: none.
+- **Command relation evidence**: `CR0598` gains an observed_during link for `C2135`. No new relation (next id stays `CR1064`).
+- **Semantic scenario 40** (38 and 39 are used by the other two FMS branches); earlier batch counts exclude `C2135` and `C2136`.
+- Open points in `docs/roadmap.md` (FMS B-701 batch).
+
 ## fms-b811-15army: Fifteenth Army from Foreign Military Studies B-811 (von Zangen; 30 October 2026)
 
-Scott approved the reading of the Fifteenth Army and Army Group B manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the branch `fms-b703-armygroupg` (merged as PR #56) (`C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`); the branch `fold3-links` (merged as PR #55) changes citations only. Source: Gustav von Zangen, B-811, *Fifteenth Army (22 Nov 44-9 Mar 45): Defense Battles at the Roer and Rhine*, parts I-V (English translation; parts I-IV dated 15 November 1947, part V 20 December 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The German copy and the German maps were not read.
+Scott approved the reading of the Fifteenth Army and Army Group B manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the branch `fms-b703-armygroupg` (merged as PR #56; `C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`); the branch `fold3-links` (merged as PR #55) changes citations only. Source: Gustav von Zangen, B-811, *Fifteenth Army (22 Nov 44-9 Mar 45): Defense Battles at the Roer and Rhine*, parts I-V (English translation; parts I-IV dated 15 November 1947, part V 20 December 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The German copy and the German maps were not read.
 
 - **New reference** `R768` (B-811; archive_document, family `fms_german_manuscript`). Reliability: 18 of 21 checkable facts agree with the dataset and Ellis (86%). Good for corps and division sectors, reliefs and command-change dates; weak on Allied identifications.
 - **New places** `PL1039` to `PL1044` (6; OpenStreetMap Nominatim): Königshoven (Bedburg), Bleibuir, Linnich, Effeld, Heinsberg and Schöneseiffen.

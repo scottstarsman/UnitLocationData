@@ -77332,6 +77332,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.9414,
+     48.0831
+    ]
+   },
+   "properties": {
+    "claim_id": "C2248",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL1112",
+    "location_name": "Dettenbach, Waldkirch, Baden-Württemberg (2 km south-east of Waldkirch)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Brandenberger takes command of the Nineteenth Army at its command post at Dettenbach near Waldkirch",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report pp. 1-2 and Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0891,
+     48.499
+    ]
+   },
+   "properties": {
+    "claim_id": "C2260",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL1124",
+    "location_name": "Ödsbach, Oberkirch, Baden-Württemberg (Ödsbach 4 km south of Oberkirch)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXIV Corps holds the Upper Rhine front north of the Leopold Canal with its command post at Ödsbach",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 2 and Skizze 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8029,
+     47.8632
+    ]
+   },
+   "properties": {
+    "claim_id": "C2263",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-018C",
+    "unit_name": "XVIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-01",
+    "place_id": "PL1126",
+    "location_name": "St. Trudpert, Münstertal, Baden-Württemberg (St. Trudpert near Obermünstertal)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XVIII SS Corps holds the Upper Rhine front south of Emmendingen with its command post at St. Trudpert",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 3 and Skizze 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7704,
+     47.8532
+    ]
+   },
+   "properties": {
+    "claim_id": "C2267",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-024A",
+    "unit_name": "Twenty-fourth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL1023",
+    "location_name": "Engen, Baden-Württemberg (Engen 12 km north-west of Singen)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Twenty-fourth Army watches the Swiss frontier from its command post at Engen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 4 and Skizze 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.0403,
      51.755
     ]
@@ -77653,6 +77817,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R778;R002",
     "source_locator": "R778: pp. 13-14 and Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6107,
+     48.8337
+    ]
+   },
+   "properties": {
+    "claim_id": "C2269",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL1132",
+    "location_name": "Waldrennach, Neuenbürg, Baden-Württemberg (south-east of Neuenbürg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "716th Infantry Division covers the Enz north flank from its command post at Waldrennach",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report pp. 3 and 30 and Skizze 1"
    }
   },
   {
@@ -79129,6 +79334,252 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R568;R767;R002",
     "source_locator": "R568: p. 421; R767: p. 32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0418,
+     48.3286
+    ]
+   },
+   "properties": {
+    "claim_id": "C2249",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL1113",
+    "location_name": "Jungingen, Zollernalbkreis, Baden-Württemberg (Jungingen near Hechingen)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves from Dettenbach to Jungingen near Hechingen as the north front widens",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 43 and Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4713,
+     48.6681
+    ]
+   },
+   "properties": {
+    "claim_id": "C2261",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL1125",
+    "location_name": "Enzklösterle, Baden-Württemberg (Enzklösterle in the northern Black Forest)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXIV Corps moves its command post from Ödsbach to Enzklösterle facing the new north front",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 41 and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.276,
+     48.8698
+    ]
+   },
+   "properties": {
+    "claim_id": "C2265",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-080C",
+    "unit_name": "LXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL1128",
+    "location_name": "Neckarrems, Remseck am Neckar, Baden-Württemberg (Neckarrems north-east of Stuttgart)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXX Corps holds the Neckar and Enz line with its command post at Neckarrems",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report pp. 41-42 and Skizze 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2078,
+     48.9994
+    ]
+   },
+   "properties": {
+    "claim_id": "C2270",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-559D",
+    "unit_name": "559th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL1133",
+    "location_name": "Mundelsheim, Baden-Württemberg (Mundelsheim on the Neckar)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "559th Volksgrenadier Division holds the Neckar from Heilbronn to Kirchheim with its command post near Mundelsheim",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 42 and Skizze 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.289,
+     48.9803
+    ]
+   },
+   "properties": {
+    "claim_id": "C2271",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL1134",
+    "location_name": "Kleinbottwar, Steinheim an der Murr, Baden-Württemberg (Kleinbottwar)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "198th Infantry Division holds the Neckar line to Bietigheim with its command post at Kleinbottwar",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 42 and Skizze 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1694,
+     48.9197
+    ]
+   },
+   "properties": {
+    "claim_id": "C2272",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL1135",
+    "location_name": "Monrepos, Ludwigsburg, Baden-Württemberg (Monrepos near Ludwigsburg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "47th Volksgrenadier Division holds the Enz to Vaihingen with its command post at Monrepos",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 42 and Skizze 8"
    }
   },
   {
@@ -83400,6 +83851,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.7739,
+     48.6498
+    ]
+   },
+   "properties": {
+    "claim_id": "C2273",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL1136",
+    "location_name": "Gültlingen, Wildberg, Baden-Württemberg (assembly area south of Gültlingen)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "16th Volksgrenadier Division completes its assembly south of Gültlingen for a flank attack across the Nagold",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report pp. 67-69 and Skizze 10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6172,
      51.8006
     ]
@@ -83844,6 +84336,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R751;R002",
     "source_locator": "R751: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0159,
+     47.9119
+    ]
+   },
+   "properties": {
+    "claim_id": "C2250",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL1114",
+    "location_name": "Mühlingen, Konstanz district, Baden-Württemberg (7 km north of Stockach)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves from Jungingen to Mühlingen north of Stockach after the French thrust on Haigerloch",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 91 and Anlage 4"
    }
   },
   {
@@ -84384,6 +84917,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.6125,
+     47.7811
+    ]
+   },
+   "properties": {
+    "claim_id": "C2251",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL1115",
+    "location_name": "Ravensburg, Baden-Württemberg (Ravensburg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army headquarters is shot at by tanks at Mühlingen and re-established at Ravensburg about midnight",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 100 and Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1975,
+     48.1427
+    ]
+   },
+   "properties": {
+    "claim_id": "C2264",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-018C",
+    "unit_name": "XVIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-21",
+    "place_id": "PL1127",
+    "location_name": "Schonach im Schwarzwald, Baden-Württemberg (3 km north-west of Triberg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XVIII SS Corps moves its command post to Schonach near Triberg as it falls back through the Black Forest",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 100 and Skizze 12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.5783,
      49.9481
     ]
@@ -84671,6 +85286,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.6913,
+     47.7916
+    ]
+   },
+   "properties": {
+    "claim_id": "C2252",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL1116",
+    "location_name": "Schlier, Ravensburg district, Baden-Württemberg (Schlier east of Ravensburg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves from Ravensburg to Schlier where contact with OB West is regained",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 104 and Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.4948,
+     48.4129
+    ]
+   },
+   "properties": {
+    "claim_id": "C2266",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-080C",
+    "unit_name": "LXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL1129",
+    "location_name": "Münsingen, Reutlingen district, Baden-Württemberg (Münsingen on the Swabian Alb)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXX Corps headquarters at Münsingen after breaking out of the Stuttgart pocket onto the Swabian Alb",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 105 and Skizze 12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.6861,
+     48.4897
+    ]
+   },
+   "properties": {
+    "claim_id": "C2274",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL1137",
+    "location_name": "Laichingen, Baden-Württemberg (attack from Laichingen toward Wiesensteig)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "189th Infantry Division attacks from Laichingen through Hohenstadt toward Wiesensteig on the Swabian Alb",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 105 and Skizze 12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.9552,
      51.7903
     ]
@@ -84828,6 +85566,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R099;R002",
     "source_locator": "R099: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3169,
+     47.7267
+    ]
+   },
+   "properties": {
+    "claim_id": "C2253",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-23",
+    "place_id": "PL1117",
+    "location_name": "Kempten (Allgäu), Bavaria (main post office in Kempten)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves into the main post office at Kempten as tanks approach Ravensburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 112 and Anlage 4"
    }
   },
   {
@@ -85368,6 +86147,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.3036,
+     47.5434
+    ]
+   },
+   "properties": {
+    "claim_id": "C2254",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-25",
+    "place_id": "PL1118",
+    "location_name": "Burgberg im Allgäu, Bavaria (5 km south-east of Immenstadt)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves to Burgberg near Immenstadt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 128 and Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7167,
      49.4167
     ]
@@ -85655,6 +86475,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.9358,
+     47.6754
+    ]
+   },
+   "properties": {
+    "claim_id": "C2268",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-024A",
+    "unit_name": "Twenty-fourth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-26",
+    "place_id": "PL1130",
+    "location_name": "Eglofs, Argenbühl, Baden-Württemberg (Eglofs in the western Allgäu)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Twenty-fourth Army ships its troops across Lake Constance and sets up its command post at Eglofs",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 130 and Skizze 13"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.0833,
      49.0167
     ]
@@ -85894,6 +86755,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 316"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.8878,
+     47.3989
+    ]
+   },
+   "properties": {
+    "claim_id": "C2255",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-27",
+    "place_id": "PL1119",
+    "location_name": "Lermoos, Tirol (north-east of the Fern Pass)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves to Lermoos north-east of the Fern Pass",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 133 and Anlage 4"
    }
   },
   {
@@ -86188,6 +87090,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.9205,
+     47.3987
+    ]
+   },
+   "properties": {
+    "claim_id": "C2256",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL1120",
+    "location_name": "Ehrwald, Tirol (Ehrwald next to Lermoos)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves from Lermoos to Ehrwald",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 138 and Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4708,
      48.4103
     ]
@@ -86427,6 +87370,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 310, 311, 337"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7682,
+     47.2252
+    ]
+   },
+   "properties": {
+    "claim_id": "C2257",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-29",
+    "place_id": "PL1121",
+    "location_name": "Karrösten, Tirol (Karrösten near Imst)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army staff crosses the Fern Pass in a snowstorm to Karrösten near Imst",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 143 and Anlage 4"
    }
   },
   {
@@ -87001,6 +87985,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 337"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5129,
+     47.1349
+    ]
+   },
+   "properties": {
+    "claim_id": "C2258",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-02",
+    "place_id": "PL1122",
+    "location_name": "Pians, Tirol (Schloss Wiesberg near Pians)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves to Schloss Wiesberg near Pians as Brandenberger decides to seek an armistice",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: report p. 149 and Anlage 4"
    }
   },
   {
@@ -88033,6 +89058,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.583,
+     46.9985
+    ]
+   },
+   "properties": {
+    "claim_id": "C2259",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-04",
+    "place_id": "PL1123",
+    "location_name": "Pfunds, Tirol (Pfunds in the upper Inn valley)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Nineteenth Army command post moves to Pfunds in the upper Inn valley",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: Anlage 4 and Skizze 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.7333,
      48.1
     ]
@@ -88518,6 +89584,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R741;R001",
     "source_locator": "R741: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6286,
+     47.1197
+    ]
+   },
+   "properties": {
+    "claim_id": "C2262",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL1131",
+    "location_name": "Fliess, Tirol (Fliess near Landeck)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXIV Corps command post near Landeck on the day of the surrender",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: Skizze 16"
    }
   },
   {

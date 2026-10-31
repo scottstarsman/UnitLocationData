@@ -2,6 +2,23 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
+
+Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.
+
+Rules applied (accepted by Scott): no command relation and no parent from a single manuscript (every new row has a blank parent); no Allied dates from the manuscripts; strengths stay in the reading notes; no front-line traces; confidence 0.5 for one source, 0.7 when a second source family agrees, 0.3 for arrivals, approximate days, doubtful readings and map positions; disagreements with existing rows stay open points and no existing row is changed. No first claim is given to a placeholder unit (the 257th Volksgrenadier and 106th Infantry Divisions and Divisions Nr. 405 and 905 stay placeholders).
+
+### B-745 (Brandenberger, Nineteenth Army, 1 April-5 May 1945, German original)
+
+- **New reference** `R779` (B-745; archive_document, family `fms_german_manuscript`). Reliability: 8 of 12 checkable facts agree with the dataset (67%).
+- **New places** `PL1112` to `PL1137` (26; OpenStreetMap Nominatim): the Nineteenth Army command posts of Anlage 4 from Dettenbach to Pfunds and the corps and division command posts of 1 and 9 April.
+- **New claims** `C2248` to `C2274` (27; 2 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): the Nineteenth Army command post at Dettenbach on 1 April and its eleven moves to Jungingen, Mühlingen, Ravensburg, Schlier, Kempten, Burgberg, Lermoos, Ehrwald, Karrösten, Pians and Pfunds; the LXIV Corps at Ödsbach (1 April) and Enzklösterle (9 April) and near Landeck on 5 May (0.3, sketch); the XVIII SS Corps at St. Trudpert (1 April) and Schonach (21 April); the LXXX Corps at Neckarrems (9 April) and Münsingen (22 April, 0.3, sketch); the Twenty-fourth Army at Engen (1 April) and Eglofs (26 April); the 716th Division at Waldrennach, the 559th at Mundelsheim, the 198th at Kleinbottwar and the 47th at Monrepos; the 16th Volksgrenadier Division assembled south of Gültlingen (18 April); the 189th Division attack from Laichingen (22 April).
+  - Parent blank on all 27 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Coordinate exceptions:** two speed exceptions added for `C1217` (a Lexikon table row with a representative point at Donaueschingen on 26 April) against the new command posts `C2254` (Kempten) and `C2255` (Burgberg); old value none, new value an explained exception, reason: the table row is not a headquarters position.
+- **Disagreements recorded, no value changed:** Brandenberger taking command on 1 April (arrived 28 March) in B-745 against 26 March in `C1190`; the LXXX Corps under the Nineteenth Army from 9 April in B-745 against 8 April in `C2123`; the XVIII SS Corps staff dissolved at 2200 on 26 April in B-745 against 27 April in `C1273`; the Twenty-fourth Army shipping its troops across Lake Constance in the night to 26 April in B-745 against 21 April in `C1219`.
+- **Semantic scenario 51.**
+
 ## fms-german-5: four more FMS manuscripts (B-781, B-831, B-084, B-849; 31 October 2026)
 
 Scott approved reading four more Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-5` from `main` `67a7d83`. The German original is the primary source in B-781, B-084 and B-849, with the English translation used only to check unclear passages; in B-831 the German scan is illegible, so the English translation is the primary text and the reference says so. All four are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

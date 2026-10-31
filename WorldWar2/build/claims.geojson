@@ -67246,6 +67246,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4543,
+     51.6615
+    ]
+   },
+   "properties": {
+    "claim_id": "C2226",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-02-08",
+    "place_id": "PL0697",
+    "location_name": "Xanten, North Rhine-Westphalia (close west of Xanten)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "First Parachute Army command post moves from Dinxperlo to close west of Xanten as the Anglo-Canadian attack begins",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3986,
      50.6325
     ]
@@ -68640,6 +68681,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2736,
+     51.6686
+    ]
+   },
+   "properties": {
+    "claim_id": "C2235",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-16",
+    "place_id": "PL0696",
+    "location_name": "Udem, Uedem, North Rhine-Westphalia (II Parachute Corps sector Udem-Weeze)",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "8th Parachute Division is brought from the Roermond area to the north wing against the Anglo-Canadian attack",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: pp. 3 and 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1593,
      51.6756
     ]
@@ -69255,6 +69337,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5253,
+     51.527
+    ]
+   },
+   "properties": {
+    "claim_id": "C2227",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-02-22",
+    "place_id": "PL1097",
+    "location_name": "Saalhoff, Kamp-Lintfort, North Rhine-Westphalia (Saalhoff 8 km west of Rheinberg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "First Parachute Army command post moves to Saalhoff west of Rheinberg",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3611,
      50.9221
     ]
@@ -69371,6 +69494,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R757;R001",
     "source_locator": "R757: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3713,
+     51.6994
+    ]
+   },
+   "properties": {
+    "claim_id": "C2230",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-02-24",
+    "place_id": "PL1098",
+    "location_name": "Marienbaum, Xanten, North Rhine-Westphalia (sector Marienbaum)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "XLVII Panzer Corps holds the Marienbaum sector with the 15th Panzergrenadier, 116th Panzer and 6th Parachute Divisions",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 3 and Skizze 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2736,
+     51.6686
+    ]
+   },
+   "properties": {
+    "claim_id": "C2232",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-02-24",
+    "place_id": "PL0696",
+    "location_name": "Udem, Uedem, North Rhine-Westphalia (sector Udem-Weeze)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "II Parachute Corps holds the Udem-Weeze sector with the 7th and 8th Parachute and 84th Divisions",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 3 and Skizze 2"
    }
   },
   {
@@ -70649,6 +70854,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C2228",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-02",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia (close west of Wesel on the west bank)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "First Parachute Army command post moves to close west of Wesel",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 2 and Skizze 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6207,
      51.2691
     ]
@@ -70970,6 +71216,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R002",
     "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4543,
+     51.6615
+    ]
+   },
+   "properties": {
+    "claim_id": "C2231",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-04",
+    "place_id": "PL0697",
+    "location_name": "Xanten, North Rhine-Westphalia (sector from Xanten to east of Sonsbeck)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "XLVII Panzer Corps holds the north of the second bridgehead from Xanten to east of Sonsbeck",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 16 and Skizze 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.376,
+     51.6094
+    ]
+   },
+   "properties": {
+    "claim_id": "C2233",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-03-04",
+    "place_id": "PL1099",
+    "location_name": "Sonsbeck, North Rhine-Westphalia (sector Sonsbeck to Issum)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "II Parachute Corps holds the centre of the second bridgehead from Sonsbeck to Issum",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 16 and Skizze 4"
    }
   },
   {
@@ -71339,6 +71667,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R540;R001",
     "source_locator": "R540: p. 210"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4771,
+     51.6336
+    ]
+   },
+   "properties": {
+    "claim_id": "C2234",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-03-07",
+    "place_id": "PL1100",
+    "location_name": "Birten, Xanten, North Rhine-Westphalia (third bridgehead line Birten-Ossenberg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "II Parachute Corps takes command of all troops left in the Wesel bridgehead on the line Birten-Ossenberg",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 17 and Skizze 4"
    }
   },
   {
@@ -72118,6 +72487,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R002",
     "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C2229",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-10",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia (Wesel Rhine bridges)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "First Parachute Army completes the evacuation of the Wesel bridgehead; the Wesel bridges are blown at 0700",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R777;R002",
+    "source_locator": "R777: p. 18"
    }
   },
   {

@@ -28,6 +28,16 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** none; the LXXXIX Corps command post dated from 10 March in B-831 is a day after its arrival at the Moselle on 9 March in `C1175`, read as consistent.
 - **Semantic scenario 48.**
 
+### B-084 (Schlemm, First Parachute Army, February-10 March 1945, German original)
+
+- **New reference** `R777` (B-084; archive_document, family `fms_german_manuscript`). Reliability: 6 of 8 checkable facts agree with the dataset (75%).
+- **New places** `PL1097` to `PL1100` (4; OpenStreetMap Nominatim): Saalhoff, Marienbaum, Sonsbeck, Birten.
+- **New claims** `C2226` to `C2235` (10; 1 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): First Parachute Army command posts west of Xanten (8 February), at Saalhoff (22 February) and west of Wesel (2 March) and the end of the Wesel bridgehead (10 March); XLVII Panzer Corps sectors at Marienbaum (24 February) and Xanten-Sonsbeck (4 March); II Parachute Corps sectors at Udem-Weeze (24 February) and Sonsbeck-Issum (4 March) and its command of the last bridgehead (7 March); the 8th Parachute Division brought north from Roermond (16 February, 0.3).
+  - Parent blank on all 10 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the 8th Parachute Division on the north wing from 16 February in B-084 against a fight west of Mönchengladbach on 27 February in `C1155`; the 2nd Parachute Division brought from Holland about 27 February in B-084 against the LXXXVI Corps on the lower Rhine on 8 February in `C1129`.
+- **Semantic scenario 49.**
+
 ## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
 
 Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.

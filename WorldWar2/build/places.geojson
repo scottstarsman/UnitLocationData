@@ -12458,7 +12458,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 10
+    "claims_count": 12
    }
   },
   {
@@ -13738,7 +13738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -13758,7 +13758,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 6
+    "claims_count": 8
    }
   },
   {
@@ -21658,6 +21658,86 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5253,
+     51.527
+    ]
+   },
+   "properties": {
+    "place_id": "PL1097",
+    "name": "Saalhoff, Kamp-Lintfort, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3713,
+     51.6994
+    ]
+   },
+   "properties": {
+    "place_id": "PL1098",
+    "name": "Marienbaum, Xanten, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.376,
+     51.6094
+    ]
+   },
+   "properties": {
+    "place_id": "PL1099",
+    "name": "Sonsbeck, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4771,
+     51.6336
+    ]
+   },
+   "properties": {
+    "place_id": "PL1100",
+    "name": "Birten, Xanten, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

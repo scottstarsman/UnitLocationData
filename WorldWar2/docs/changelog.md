@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 31 October 2026: FMS open-question decisions (branch fms-decisions-oct31)
+
+- `C0957` event definition changed from "the takeover of 15 November" to "the arrival of 15 November". Reason: FMS B-811 p. 2 dates the takeover to 22 November (`C2127`); CMH supports the arrival only. Date, place and confidence unchanged.
+- Decisions recorded in `docs/roadmap.md` (Scott, 31 October 2026): no command relations from a single manuscript; no Allied dates from the manuscripts; no reading of German duplicate copies or map sheets; strengths kept in notes only; no tracing of map front lines. No data changed by these.
+
 ## fms-b078-armygroupg: Army Group G in Lorraine and the Vosges from Foreign Military Studies B-078 (von Mellenthin; 31 October 2026)
 
 Scott approved the reading of B-078 and a data branch on 31 October 2026. One branch from `main` `1c2f1bb`. Source: Friedrich Wilhelm von Mellenthin (chief of staff of Army Group G to 3-4 December 1944), B-078, *Kaempfe in Lothringen und in den Vogesen im Herbst 44, Teil IV* (signed Oberursel, 6 June 1946); German typescript, no English translation; NARA M1035 fiche 0078G, read on Fold3, where the set is mis-titled "A-999 to A1000, B018 and B078". A US Government work; the German text is paraphrased in English in the claims. The reading notes stay private and are not in this repository.

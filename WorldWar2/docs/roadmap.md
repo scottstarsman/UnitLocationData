@@ -604,3 +604,12 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 3. **Unread parts.** The German texts of B-468 and B-550, B-263 German pp. 1-9, 11-15 and 17-21, and B-463 pp. 39-41. Recommendation: read only if a row needs a second check.
 4. **Still deferred:** the 1st Armoured at Seppois (19 November; FMS gives only context); the 9th Colonial at Lörrach (April 1945; outside the manuscripts); the 12th Armored at Rouffach, the 3rd Algerian at Château-Lambert and the 1st Free French at the Ballon d'Alsace (not in the FMS).
 5. **Other FMS facts not written:** the B-463 strengths of 28 January 1945 (B-463 p. 7; a second strength set); the 2nd Mountain Division's arrival (date not stated); the Army Group G approval date for the Vosges-ridge withdrawal (24 or 26 November, digit blurred; `C2091` at 0.3).
+
+## FMS B-811 batch (Fifteenth Army, 15 November 1944-22 February 1945; 30 October 2026): open points
+
+1. **Takeover date.** B-811 p. 2 dates the takeover from the Fifth Panzer Army on 22 November; `C0957` (CMH) calls the arrival of 15 November the takeover. Recommendation: reword the `C0957` event definition to "arrival" and keep both rows.
+2. **Relief of the 246th Division in November.** CMH (`C0972`) has the 340th relieve the 246th at Jülich on 21 November; B-811 p. 19 has the 340th replace the 49th and the 363rd replace the 246th. Recommendation: keep CMH; add a note only after a third source.
+3. **FMS-only changes with blank parents** (`C2128`, `C2129`, `C2131`, `C2133`, also `C2130`, `C2132`, `C2134`). Recommendation: add relations only when a second family dates them.
+4. **Not written**: Lindern lost 1 December and Linnich 2 December (no German row needs them); the LXVII Corps under the Fifteenth Army about 27 December to 18 January (start date only in B-811); the Roer dams opened by Army Group B order on 6/7 February (consistent with `C0607`); Volks artillery corps and the dated strength notes (p. 82: infantry at two thirds, artillery two thirds to three quarters). Allied identifications from B-811 not used (a British 3rd Division at Elsenborn on appendix 5 is wrong).
+5. **Unread**: the German copy (images 108-254) and its hand-drawn maps; the English maps' lines are illegible in the scan.
+

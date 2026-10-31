@@ -618,7 +618,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -7778,7 +7778,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -8758,7 +8758,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Namur",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -14818,7 +14818,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -21038,6 +21038,166 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3463,
+     50.1005
+    ]
+   },
+   "properties": {
+    "place_id": "PL1066",
+    "name": "Manderscheid, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0276,
+     50.0548
+    ]
+   },
+   "properties": {
+    "place_id": "PL1067",
+    "name": "Clervaux, Luxembourg",
+    "alt_names": "Clerf",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.535,
+     50.0796
+    ]
+   },
+   "properties": {
+    "place_id": "PL1068",
+    "name": "Ortheuville, Tenneville, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6395,
+     50.2093
+    ]
+   },
+   "properties": {
+    "place_id": "PL1069",
+    "name": "Samrée, La Roche-en-Ardenne, Luxembourg (BE)",
+    "alt_names": "Samree",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.878,
+     50.1766
+    ]
+   },
+   "properties": {
+    "place_id": "PL1070",
+    "name": "Cherain, Gouvy, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4342,
+     50.2676
+    ]
+   },
+   "properties": {
+    "place_id": "PL1071",
+    "name": "Hotton, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1753,
+     50.1554
+    ]
+   },
+   "properties": {
+    "place_id": "PL1072",
+    "name": "Rochefort, Namur",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Namur",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8364,
+     50.189
+    ]
+   },
+   "properties": {
+    "place_id": "PL1073",
+    "name": "Mont-le-Ban, Gouvy, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
     "claims_count": 1
    }
   }

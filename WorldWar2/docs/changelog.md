@@ -18,6 +18,16 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** the 245th Division in line at Bladel-Hapert-Wintelre by 16 September in B-475 against South Beveland on 17 September in `C0893`; the 59th Division at Schijndel-Boxtel in October against the Lexikon row at Arnhem (`C0921`); the LXXXVIII Corps north of the Maas from 6 November against Tilburg on 10 November in `C1044`; the German forces at Arnhem directly under Army Group B (B-475, hedged) against the First Parachute Army from 23 September in `C0855`.
 - **Semantic scenario 43.**
 
+### B-235 (Wagener, Fifth Panzer Army in the Ardennes, November 1944-January 1945)
+
+- **New reference** `R772` (B-235, Wagener, 1945; archive_document, family `fms_german_manuscript`). Reliability: 17 of 19 checkable facts agree with the dataset (89%).
+- **New places** `PL1066` to `PL1073` (8; OpenStreetMap Nominatim): Manderscheid, Clervaux, Ortheuville, Samrée, Cherain, Hotton, Rochefort and Mont-le-Ban.
+- **New claims** `C2179` to `C2191` (13; each note carries old value none, new value and reason): Fifth Panzer Army headquarters at Manderscheid (end of November, 0.3), La Roche (about 26 December, 0.3) and Mont-le-Ban (inferred 27 December, 0.3); the XLVII Panzer Corps taking Clervaux (17 December); the 2nd Panzer Division at the Ortheuville bridge (20 December), within 8 km of Dinant (23 December) and withdrawn to Rochefort (26 December); the 116th Panzer at Samrée and the 560th VG at Cherain (20 December); the LVIII Panzer Corps on the Odeigne-Soy-Hotton line (22 December); Panzer Lehr taking Rochefort (23 December); forward parts of the 15th Panzergrenadier Division at Bastogne (24 December, 0.3); the order of 8 January to fall back to the Laroche-Bastogne line.
+  - Parent blank on all 13 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group.
+- **Disagreements recorded, no value changed:** the Führer-Grenadier-Brigade arrives with the Fifth Panzer Army on 27 December in B-235 against the Seventh Army reserve at Wiltz on 31 December in `C1791`; the 340th VG arrives on 6 January in B-235 against its attack at Bastogne on 4 January in `C1079`. Not used: the fall of St. Vith (22 December in B-235; an Allied date) and the arrival list of the other reinforcements (in the reading notes).
+- **Semantic scenario 44.**
+
 ## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
 
 Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.

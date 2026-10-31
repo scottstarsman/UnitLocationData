@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## official-history-pass-2: US gaps from The Last Offensive (31 October 2026)
+
+Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.
+
+### Chunk 1, US gaps (The Last Offensive)
+
+- Source: the US Army official history (CMH), MacDonald, The Last Offensive (`R568` chapter 18 and `R569` chapter 19, HyperWar text); paraphrase with printed pages. No new reference.
+- New place: `PL1055` Berchtesgaden, Bayern (OpenStreetMap Nominatim).
+- 1 new claim: C2160, 101st Airborne, 8 May 1945, Berchtesgaden: garrison point (inferred), 0.3. Old value of each activity column: none (the row is new). Reason: the division raced for Berchtesgaden on 4 May (p. 442) and was arranging an SS surrender on 7 May (p. 473); no place is given for 8 May, so the last named objective is used and the state is inferred.
+- Semantic tests: new scenario 42; scenario 34 and the batch filter (`NOT_OHP`) now leave out pass 2 rows (`OHP2`). Old filter: rows whose notes name the official-history pass. New filter: the same less `C2160`. Reason: the pass 2 notes also name the official-history pass, and the pass 1 totals stay as approved.
+- Still open (no dated source in The Last Offensive): 8 May rows for the 70th and 106th; the open spans of the 11th Armored (23 December 1944), 26th (29 January 1945), 70th (17 February 1945), 104th (23 February 1945) and 106th (15 March 1945); the undated rests listed in the roadmap.
+
 ## 31 October 2026: FMS open-question decisions (branch fms-decisions-oct31)
 
 - `C0957` event definition changed from "the takeover of 15 November" to "the arrival of 15 November". Reason: FMS B-811 p. 2 dates the takeover to 22 November (`C2127`); CMH supports the arrival only. Date, place and confidence unchanged.

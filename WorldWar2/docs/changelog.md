@@ -2,6 +2,56 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
+
+Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.
+
+Rules applied (accepted by Scott): no command relation and no parent from a single manuscript (every new row has a blank parent); no Allied dates from the manuscripts; strengths stay in the reading notes; no front-line traces; confidence 0.5 for one source, 0.7 when a second source family agrees, 0.3 for arrivals, approximate days and map positions.
+
+### B-475 (von Zangen, Fifteenth Army, 15 September-10 November 1944)
+
+- **New reference** `R771` (B-475, von Zangen, 1947; archive_document, family `fms_german_manuscript`). Reliability: 10 of 14 checkable facts agree with the dataset (71%).
+- **New places** `PL1057` to `PL1065` (9; OpenStreetMap Nominatim): Moergestel, Dongen, Noordeloos, Geldermalsen, Rijkevorsel, Merksem, Schijndel, Roosendaal and Dordrecht.
+- **New claims** `C2164` to `C2178` (15; each note carries old value none, new value and reason): LXVII Corps command posts at Esschen (23 September) and Breda-South (from 25 September); LXXXVIII Corps at Moergestel (23 September), Dongen (about 24 September, 0.3) and Noordeloos (from 8 November); the LXXXIX Corps staff arriving at Geldermalsen (26/27 September, 0.3); the 712th Division reaching Tilburg (24 September, 0.3); the 711th and 346th relief north of Antwerp (26/27 September, 0.3); the 59th taking the Schijndel sector (28 September); Kampfgruppe Chill arriving south of Tilburg (4 October, 0.3); the 719th taking over south of Tilburg (10/11 October); the 256th VG relieving the 245th near Tilburg and the 245th moving to Roosendaal (23 October, 0.3); the air attack on the Fifteenth Army command post at Dordrecht (about 26 October, 0.3).
+  - Parent blank on all 15 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the 245th Division in line at Bladel-Hapert-Wintelre by 16 September in B-475 against South Beveland on 17 September in `C0893`; the 59th Division at Schijndel-Boxtel in October against the Lexikon row at Arnhem (`C0921`); the LXXXVIII Corps north of the Maas from 6 November against Tilburg on 10 November in `C1044`; the German forces at Arnhem directly under Army Group B (B-475, hedged) against the First Parachute Army from 23 September in `C0855`.
+- **Semantic scenario 43.**
+
+### B-235 (Wagener, Fifth Panzer Army in the Ardennes, November 1944-January 1945)
+
+- **New reference** `R772` (B-235, Wagener, 1945; archive_document, family `fms_german_manuscript`). Reliability: 17 of 19 checkable facts agree with the dataset (89%).
+- **New places** `PL1066` to `PL1073` (8; OpenStreetMap Nominatim): Manderscheid, Clervaux, Ortheuville, Samrée, Cherain, Hotton, Rochefort and Mont-le-Ban.
+- **New claims** `C2179` to `C2191` (13; each note carries old value none, new value and reason): Fifth Panzer Army headquarters at Manderscheid (end of November, 0.3), La Roche (about 26 December, 0.3) and Mont-le-Ban (inferred 27 December, 0.3); the XLVII Panzer Corps taking Clervaux (17 December); the 2nd Panzer Division at the Ortheuville bridge (20 December), within 8 km of Dinant (23 December) and withdrawn to Rochefort (26 December); the 116th Panzer at Samrée and the 560th VG at Cherain (20 December); the LVIII Panzer Corps on the Odeigne-Soy-Hotton line (22 December); Panzer Lehr taking Rochefort (23 December); forward parts of the 15th Panzergrenadier Division at Bastogne (24 December, 0.3); the order of 8 January to fall back to the Laroche-Bastogne line.
+  - Parent blank on all 13 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group.
+- **Disagreements recorded, no value changed:** the Führer-Grenadier-Brigade arrives with the Fifth Panzer Army on 27 December in B-235 against the Seventh Army reserve at Wiltz on 31 December in `C1791`; the 340th VG arrives on 6 January in B-235 against its attack at Bastogne on 4 January in `C1079`. Not used: the fall of St. Vith (22 December in B-235; an Allied date) and the arrival list of the other reinforcements (in the reading notes).
+- **Semantic scenario 44.**
+
+### B-179 (Hausser, Seventh Army 25 July-20 August 1944)
+
+- **New reference** `R773` (B-179, Hausser, 1946; archive_document, family `fms_german_manuscript`). The German text (images 77-202) is primary; the English translation (images 2-75) was used only as a check. Reliability: 22 of 24 checkable facts agree with the dataset (92%).
+- **New places** `PL1074` to `PL1078` (5; OpenStreetMap Nominatim): Flers, Senonches, Chênedouit, Nécy and Le Sap.
+- **New claims** `C2192` to `C2202` (11; each note carries old value none, new value and reason): the Seventh Army forward command post north-east of Avranches (28 July), south-east of Mortain (night 30/31 July), at Flers (1 August), Chênedouit (15 August), Nécy (17 August), Villedieu-lès-Bailleul (18 August) and Le Sap, where Hausser hands the army to Funck at noon on 21 August; the XLVII Panzer Corps inserted east of Percy (29 July); the 77th Division staff ordered to hold Avranches (30 July); the 9th Panzer Division assembled west of Alençon (7 August); the 352nd Division blocking west of Chartres (12 August).
+  - Parent blank on all 11 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group.
+- **Disagreements recorded, no value changed:** the LVIII Panzer Corps under the Seventh Army at Mortain from about 8-9 August in B-179 against the takeover of 12 August in `C0739`; the LXXXI Corps under Panzer Group Eberbach on 12 August in B-179 against the Fifth Panzer Army in `C0729`.
+- **Semantic scenario 45.** Scenarios 43 and 44: the check that confidence is 0.5 or 0.3 now compares sets (old value: a list comparison that could pass wrongly; new value: a subset test; reason: the scenario 45 run exposed it).
+
+### B-763 (Pemsel, Seventh Army 6 June-29 July 1944)
+
+- **New reference** `R774` (B-763, Pemsel, 1948; archive_document, family `fms_german_manuscript`). The German text and its 29 Skizzen (images 1-251) are primary; the English translation (images 252-453) was used only to check unclear passages. Reliability: 17 of 20 checkable facts agree with the dataset (85%).
+- **New places** `PL1079` to `PL1082` (4; OpenStreetMap Nominatim): Pontécoulant, Presles, Fervaches and Ouville.
+- **New claims** `C2203` to `C2208` (6, all 0.3 as sketch positions; each note carries old value none, new value and reason): headquarters flags of the XLVII Panzer Corps at Pontécoulant (13-15 June), the Seventh Army forward command post at Presles (16-18 June) and at Le Laurier south-west of Percy (24-26 July), the II Parachute Corps at Fervaches (16-18 June), and the LXXXIV Corps at Saint-Sauveur-Lendelin (13-16 July) and Ouville (24-26 July).
+  - Parent blank on all 6 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **Changed row:** `C2193` (B-179 batch, Seventh Army forward command post north-east of Avranches, 28 July): `reference_ids` old `R773;R001`, new `R773;R774;R001`; `source` and `source_locator` gain B-763 p. 108; confidence stays 0.5 because both are one source family.
+- **Disagreements recorded, no value changed:** the LXXXIV Corps headquarters at Périers on the sketch of 13-15 June against Saint-Lô in `C0106`, `C0116`, `C0123` and `C0128`; Dollmann's death on 28 June in B-763 against the alternate 29 June in `C0204` (agrees with `C0188`); the 1st SS Panzer Division near Thury-Harcourt and Clinchamps on 27-28 June on the sketches against its arrival at Bretteville on 6 July in `C0772`.
+- **Semantic scenario 46.**
+
+### Roadmap: FMS translation task
+
+- `docs/roadmap.md` gains a future task: exact translations of scanned public-domain FMS manuscripts with maps and figures from free CARL or NARA copies, not Fold3. No data changed.
+
 ## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
 
 Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.

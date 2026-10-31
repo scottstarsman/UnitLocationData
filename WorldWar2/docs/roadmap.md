@@ -661,3 +661,17 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 1. No further Lexikon der Wehrmacht pass; take German refits only from dated official histories or the German manuscripts.
 2. The 226th Division's month-level Dunkirk listing stays unlabelled.
 3. The open pilot spans (`C1816`, `C1553`) stay open; the 30-day horizon caps them.
+
+## FMS German four batch (B-475, B-235, B-179, B-763; branch `fms-german-4`, 31 October 2026): open points
+
+1. **Parents left blank** on all 45 new rows (`C2164` to `C2208`) under the rule of no command relation from a single manuscript. Recommendation: fill them only where an existing relation already covers the date, in a later clean-up with the observed_during links.
+2. **245th Division in mid-September 1944.** B-475 has it in line at Bladel-Hapert-Wintelre by 16 September; `C0893` (Ellis) has it on South Beveland on 17 September. Recommendation: check Stacey (Victory Campaign) before any change; keep `C0893`.
+3. **LXXXIV Corps headquarters 13-17 June 1944.** B-763 sketches show it at Périers; `C0106`, `C0116`, `C0123` and `C0128` have Saint-Lô at 0.3. Recommendation: check Harrison (Cross-Channel Attack) and add an alternate in a conflict group if it agrees with B-763.
+4. **LVIII Panzer Corps at Mortain and LXXXI Corps chain on 12 August 1944** (B-179 against `C0739` and `C0729`). Recommendation: leave the rows; record a Context note after a second source.
+5. **Arrival days in B-235** (Führer-Grenadier-Brigade 27 December, 340th VG 6 January) differ from `C1791` and `C1079`. Recommendation: keep the CMH rows; the B-235 list is from memory.
+6. **Not written:** strengths (tank and battalion counts in all four manuscripts) stay in the reading notes; the dated front lines of the B-475 annex map and the B-763 and B-179 sketches were not traced; Allied dates in the manuscripts were not used.
+
+
+## Future task: exact translations of public-domain FMS manuscripts
+
+Make exact, complete English translations of the scanned German FMS manuscripts used here (B-475, B-235, B-179, B-763 and later ones), including their maps, sketches and figures, working only from free public copies (the Combined Arms Research Library digital collection or NARA RG 338 scans). Do not use Fold3 images for this. Each translation should keep the page and image numbers of the scan so claim locators can cite it, and mark illegible words rather than guess them.

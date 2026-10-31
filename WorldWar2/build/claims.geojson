@@ -6033,6 +6033,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.589,
+     48.8784
+    ]
+   },
+   "properties": {
+    "claim_id": "C2203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-06-15",
+    "place_id": "PL1079",
+    "location_name": "Pontécoulant, Condé-en-Normandie, Calvados (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "XLVII Panzer Corps headquarters flag at Pontécoulant on the Seventh Army situation sketch",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 5 and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0586,
      49.1575
     ]
@@ -6805,6 +6846,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R446;R382;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7814,
+     48.8769
+    ]
+   },
+   "properties": {
+    "claim_id": "C2204",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "place_id": "PL1080",
+    "location_name": "Presles, Valdallière, Calvados (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Seventh Army forward command post flag at Presles south of Vire",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 9 and Skizze 12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0856,
+     48.9952
+    ]
+   },
+   "properties": {
+    "claim_id": "C2205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-18",
+    "place_id": "PL1081",
+    "location_name": "Fervaches, Tessy-Bocage, Manche (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "II Parachute Corps headquarters flag at Fervaches south of St-Lô",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 9 and Skizze 14"
    }
   },
   {
@@ -13495,6 +13618,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.4271,
+     49.1274
+    ]
+   },
+   "properties": {
+    "claim_id": "C2206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-16",
+    "place_id": "PL0338",
+    "location_name": "Saint-Sauveur-Lendelin (Château des Mares), Manche (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXIV Corps headquarters flag at Saint-Sauveur-Lendelin south of Périers",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 22 and Skizze 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2997,
      49.2786
     ]
@@ -15955,6 +16119,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.3619,
+     49.0191
+    ]
+   },
+   "properties": {
+    "claim_id": "C2207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-26",
+    "place_id": "PL1082",
+    "location_name": "Ouville, Manche (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXIV Corps headquarters flag at Ouville east of Coutances during the Cobra breakthrough",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 25 and Skizze 26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.19,
+     48.9161
+    ]
+   },
+   "properties": {
+    "claim_id": "C2208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-26",
+    "place_id": "PL0272",
+    "location_name": "Percy, Manche (Le Laurier south-west of Percy)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Seventh Army forward command post at Le Laurier south-west of Percy",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: p. 108 and Skizzen 25-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.4455,
      49.0478
     ]
@@ -16406,6 +16652,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.3556,
+     48.685
+    ]
+   },
+   "properties": {
+    "claim_id": "C2193",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-28",
+    "place_id": "PL0023",
+    "location_name": "Avranches, Manche (about 8 km north-east of Avranches)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to the Villedieu-Avranches road about 8 km north-east of Avranches",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R774;R001",
+    "source_locator": "R773: pp. 12 and 17 (German text); R774: p. 108"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1733,
      49.3038
     ]
@@ -16522,6 +16809,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R045;R001",
     "source_locator": "R670: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.19,
+     48.9161
+    ]
+   },
+   "properties": {
+    "claim_id": "C2192",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-07-29",
+    "place_id": "PL0272",
+    "location_name": "Percy, Manche (east of Percy)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "XLVII Panzer Corps is inserted between the II Parachute and LXXXIV Corps east of Percy",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 13 (German text)"
    }
   },
   {
@@ -17014,6 +17342,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R688;R002",
     "source_locator": "R670: pp. 388, 389, 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3556,
+     48.685
+    ]
+   },
+   "properties": {
+    "claim_id": "C2194",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0023",
+    "location_name": "Avranches, Manche",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "77th Division staff, halted on its march to St. Malo, is ordered to defend Avranches with alarm units",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: p. 17 (German text) and Skizze 4"
    }
   },
   {
@@ -17595,6 +17964,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9397,
+     48.6486
+    ]
+   },
+   "properties": {
+    "claim_id": "C2195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0236",
+    "location_name": "Mortain, Manche (area south-east of Mortain)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves at midnight 30/31 July to the area south-east of Mortain",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: p. 18 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.4271,
      49.1274
     ]
@@ -17998,6 +18408,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 393"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5697,
+     48.7484
+    ]
+   },
+   "properties": {
+    "claim_id": "C2196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL1074",
+    "location_name": "Flers, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to Flers",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 25 (German text) and Skizze 7"
    }
   },
   {
@@ -20301,6 +20752,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.0911,
+     48.4312
+    ]
+   },
+   "properties": {
+    "claim_id": "C2197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0004",
+    "location_name": "Alençon, Orne (assembly area west of Alençon)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "9th Panzer Division completes its assembly west of Alençon without its panzer regiment",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 31 (German text) and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -21565,6 +22057,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R403;R001",
     "source_locator": "R403: p. 502, 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0323,
+     48.5595
+    ]
+   },
+   "properties": {
+    "claim_id": "C2198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-12",
+    "place_id": "PL1075",
+    "location_name": "Senonches, Eure-et-Loir (line Verneuil-Senonches-La Loupe-Courville)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "352nd Division, refitting, blocks west of Chartres on the line Verneuil-Senonches-La Loupe-Courville",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 46 (German text) and Skizze 7"
    }
   },
   {
@@ -23376,6 +23909,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3407,
+     48.7613
+    ]
+   },
+   "properties": {
+    "claim_id": "C2199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL1076",
+    "location_name": "Chênedouit, Putanges-le-Lac, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to Chênedouit",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 50 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -24073,6 +24647,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1159,
+     48.8323
+    ]
+   },
+   "properties": {
+    "claim_id": "C2200",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL1077",
+    "location_name": "Nécy, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to Nécy",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 52 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.3106,
      48.537
     ]
@@ -24394,6 +25009,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R404;R406;R002",
     "source_locator": "R404: p. 533; R406: p. 600"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0206,
+     48.8147
+    ]
+   },
+   "properties": {
+    "claim_id": "C2201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-18",
+    "place_id": "PL0515",
+    "location_name": "Villedieu-lès-Bailleul, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves hastily to Villedieu-lès-Bailleul and loses its radio stations",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: pp. 54 and 56 (German text)"
    }
   },
   {
@@ -25911,6 +26567,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R429;R002",
     "source_locator": "R429: p. 149"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3389,
+     48.8944
+    ]
+   },
+   "properties": {
+    "claim_id": "C2202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL1078",
+    "location_name": "Le Sap, Sap-en-Auge, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Hausser, wounded, reaches the forward command post at Le Sap and at noon hands the army to Funck",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: pp. 60-61 (German text)"
    }
   },
   {
@@ -39284,6 +39981,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.4698,
+     51.4679
+    ]
+   },
+   "properties": {
+    "claim_id": "C2164",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-23",
+    "place_id": "PL0691",
+    "location_name": "Essen (Esschen), Antwerp province",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps command post at Esschen south of Roosendaal when the Fifteenth Army takes over the LXXXVIII Corps",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1806,
+     51.5448
+    ]
+   },
+   "properties": {
+    "claim_id": "C2166",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-23",
+    "place_id": "PL1057",
+    "location_name": "Moergestel, Oisterwijk, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps command post at Moergestel south of Tilburg as the corps passes to the Fifteenth Army",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: pp. 4 and 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -39523,6 +40302,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 42"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9579,
+     51.6429
+    ]
+   },
+   "properties": {
+    "claim_id": "C2167",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-24",
+    "place_id": "PL1058",
+    "location_name": "Dongen, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moves to Dongen north of Tilburg about 24 September",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C2170",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-24",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant (leading regiment only)",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "712th Division, brought from the Scheldt mouth, reaches Tilburg with its leading regiment and comes under the LXXXVIII Corps",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R001",
+    "source_locator": "R771: pp. 13 and 22"
    }
   },
   {
@@ -39933,6 +40794,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R762;R002",
     "source_locator": "R762: pp. ii, 16-19"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C2165",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant (command post at Breda-South)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post moves to Breda-South",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: pp. 16 and 22"
    }
   },
   {
@@ -40514,6 +41416,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2715,
+     51.8826
+    ]
+   },
+   "properties": {
+    "claim_id": "C2169",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL1060",
+    "location_name": "Geldermalsen, West Betuwe, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "LXXXIX Corps staff arrives from the Scheldt at Geldermalsen and takes the army east front with the 712th Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 23 and annex map"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7585,
+     51.3504
+    ]
+   },
+   "properties": {
+    "claim_id": "C2171",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL1061",
+    "location_name": "Rijkevorsel, Antwerp province (area north of Rijkevorsel)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "711th Division, relieved north of Antwerp by the 346th, moves to the area north of Rijkevorsel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4397,
+     51.2439
+    ]
+   },
+   "properties": {
+    "claim_id": "C2172",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL1062",
+    "location_name": "Merksem, Antwerp (front north of Antwerp)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "346th Division relieves the 711th in the front north of Antwerp",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: pp. 16 and 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -40671,6 +41696,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R762;R002",
     "source_locator": "R686: pp. 187-188; R762: pp. 25-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4363,
+     51.6177
+    ]
+   },
+   "properties": {
+    "claim_id": "C2173",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL1063",
+    "location_name": "Schijndel, Meierijstad, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "59th Infantry Division takes over the Schijndel sector from Kampfgruppe Chill",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 25"
    }
   },
   {
@@ -41539,6 +42605,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C2174",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-10-04",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant (south of Tilburg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Kampfgruppe Chill arrives south of Tilburg and throws the enemy back toward Poppel",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R001",
+    "source_locator": "R771: pp. 30 and 31"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7903,
      51.8875
     ]
@@ -42188,6 +43295,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R443;R002",
     "source_locator": "R443: p. 221"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C2175",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-11",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant (south of Tilburg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "719th Division with the weakened 245th takes over the task of Kampfgruppe Chill south of Tilburg",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R001",
+    "source_locator": "R771: p. 37"
    }
   },
   {
@@ -44122,6 +45270,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C2176",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-23",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant (near Tilburg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "First parts of the 256th Volksgrenadier Division relieve the 245th Division near Tilburg",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R001",
+    "source_locator": "R771: p. 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4561,
+     51.5331
+    ]
+   },
+   "properties": {
+    "claim_id": "C2177",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-23",
+    "place_id": "PL1064",
+    "location_name": "Roosendaal, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "245th Division moves from Tilburg to the LXVII Corps area at Roosendaal",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0944,
      51.5486
     ]
@@ -44197,6 +45427,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R093;R001",
     "source_locator": "R093: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "claim_id": "C2178",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-10-26",
+    "place_id": "PL1065",
+    "location_name": "Dordrecht, Zuid-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Allied bombers hit the Fifteenth Army command post at Dordrecht; it stays in working order",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: pp. 46-47 and annex map"
    }
   },
   {
@@ -45878,6 +47149,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R094;R001",
     "source_locator": "R094: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9427,
+     51.9039
+    ]
+   },
+   "properties": {
+    "claim_id": "C2168",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-08",
+    "place_id": "PL1059",
+    "location_name": "Noordeloos, Molenlanden, Zuid-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps command post at Noordeloos north of the Maas after the crossing",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: p. 48 and annex map"
    }
   },
   {
@@ -51256,6 +52568,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3463,
+     50.1005
+    ]
+   },
+   "properties": {
+    "claim_id": "C2179",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-11-30",
+    "place_id": "PL1066",
+    "location_name": "Manderscheid, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army headquarters moves to Manderscheid when the Fifteenth Army relieves it in the Aachen sector",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3658,
      49.1401
     ]
@@ -55315,6 +56668,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0276,
+     50.0548
+    ]
+   },
+   "properties": {
+    "claim_id": "C2180",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-17",
+    "place_id": "PL1067",
+    "location_name": "Clervaux, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "XLVII Panzer Corps takes Clerf with its bridge intact and forces the Clerf sector",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4351,
      49.8408
     ]
@@ -56299,6 +57693,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.535,
+     50.0796
+    ]
+   },
+   "properties": {
+    "claim_id": "C2181",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-20",
+    "place_id": "PL1068",
+    "location_name": "Ortheuville, Tenneville, Luxembourg (BE)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "2nd Panzer Division crosses the Ourthe at Ortheuville and takes the road bridge undestroyed",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6395,
+     50.2093
+    ]
+   },
+   "properties": {
+    "claim_id": "C2182",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-20",
+    "place_id": "PL1069",
+    "location_name": "Samrée, La Roche-en-Ardenne, Luxembourg (BE)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "116th Panzer Division of the LVIII Panzer Corps reaches Samrée",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.878,
+     50.1766
+    ]
+   },
+   "properties": {
+    "claim_id": "C2183",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-560D",
+    "unit_name": "560th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL1070",
+    "location_name": "Cherain, Gouvy, Luxembourg (BE)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "560th Volksgrenadier Division of the LVIII Panzer Corps reaches Cherain north-west of Houffalize",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -56832,6 +58349,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4342,
+     50.2676
+    ]
+   },
+   "properties": {
+    "claim_id": "C2184",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-22",
+    "place_id": "PL1071",
+    "location_name": "Hotton, Luxembourg (BE) (line Odeigne-Soy-Hotton)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "LVIII Panzer Corps pushes forward to the line Odeigne-south of Soy-Hotton where resistance stiffens",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -57242,6 +58800,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1753,
+     50.1554
+    ]
+   },
+   "properties": {
+    "claim_id": "C2185",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL1072",
+    "location_name": "Rochefort, Namur",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Panzer Lehr Division takes Rochefort",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 24"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9167,
+     50.2667
+    ]
+   },
+   "properties": {
+    "claim_id": "C2186",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL0444",
+    "location_name": "Dinant, Namur (about 8 km east of Dinant)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "2nd Panzer Division advances to within 8 km of Dinant",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R001",
+    "source_locator": "R772: p. 24"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8465,
      50.4112
     ]
@@ -57358,6 +58998,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R763;R766;R002",
     "source_locator": "R763: p. 32 (German text); R766: p. 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C2187",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg (forward parts only)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Forward parts of the 15th Panzergrenadier Division arrive in the Bastogne area and come under the 26th Volksgrenadier Division",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R001",
+    "source_locator": "R772: pp. 26 and 31"
    }
   },
   {
@@ -57611,6 +59292,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5759,
+     50.1816
+    ]
+   },
+   "properties": {
+    "claim_id": "C2188",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-12-26",
+    "place_id": "PL0751",
+    "location_name": "La Roche-en-Ardenne, Luxembourg (BE)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army headquarters moves to La Roche",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1753,
+     50.1554
+    ]
+   },
+   "properties": {
+    "claim_id": "C2189",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-26",
+    "place_id": "PL1072",
+    "location_name": "Rochefort, Namur",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "The heavily hit 2nd Panzer Division is allowed to withdraw to Rochefort",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -57727,6 +59490,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R709;R002",
     "source_locator": "R709: p. 638"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8364,
+     50.189
+    ]
+   },
+   "properties": {
+    "claim_id": "C2190",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-12-27",
+    "place_id": "PL1073",
+    "location_name": "Mont-le-Ban, Gouvy, Luxembourg (BE)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Fifth Panzer Army headquarters moves back to Mont-le-Ban",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-27",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R002",
+    "source_locator": "R772: p. 31"
    }
   },
   {
@@ -59654,6 +61458,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 184, 190, 191"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7833,
+     50.1333
+    ]
+   },
+   "properties": {
+    "claim_id": "C2191",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1945-01-08",
+    "place_id": "PL0395",
+    "location_name": "Houffalize, Luxembourg (representative point for the line Laroche-Bastogne)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Fifth Panzer Army is ordered to disengage to the general line Laroche-Bastogne with a new boundary to the Sixth Panzer Army",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R772;R001",
+    "source_locator": "R772: p. 33"
    }
   },
   {

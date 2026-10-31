@@ -78,7 +78,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -458,7 +458,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -618,7 +618,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -4638,7 +4638,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -5338,7 +5338,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -6638,7 +6638,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -7778,7 +7778,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -8758,7 +8758,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Namur",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -10178,7 +10178,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 11
+    "claims_count": 15
    }
   },
   {
@@ -12278,7 +12278,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -13638,7 +13638,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14818,7 +14818,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -20858,6 +20858,526 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1806,
+     51.5448
+    ]
+   },
+   "properties": {
+    "place_id": "PL1057",
+    "name": "Moergestel, Oisterwijk, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9579,
+     51.6429
+    ]
+   },
+   "properties": {
+    "place_id": "PL1058",
+    "name": "Dongen, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9427,
+     51.9039
+    ]
+   },
+   "properties": {
+    "place_id": "PL1059",
+    "name": "Noordeloos, Molenlanden, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2715,
+     51.8826
+    ]
+   },
+   "properties": {
+    "place_id": "PL1060",
+    "name": "Geldermalsen, West Betuwe, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7585,
+     51.3504
+    ]
+   },
+   "properties": {
+    "place_id": "PL1061",
+    "name": "Rijkevorsel, Antwerp province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4397,
+     51.2439
+    ]
+   },
+   "properties": {
+    "place_id": "PL1062",
+    "name": "Merksem, Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4363,
+     51.6177
+    ]
+   },
+   "properties": {
+    "place_id": "PL1063",
+    "name": "Schijndel, Meierijstad, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4561,
+     51.5331
+    ]
+   },
+   "properties": {
+    "place_id": "PL1064",
+    "name": "Roosendaal, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "place_id": "PL1065",
+    "name": "Dordrecht, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3463,
+     50.1005
+    ]
+   },
+   "properties": {
+    "place_id": "PL1066",
+    "name": "Manderscheid, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0276,
+     50.0548
+    ]
+   },
+   "properties": {
+    "place_id": "PL1067",
+    "name": "Clervaux, Luxembourg",
+    "alt_names": "Clerf",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.535,
+     50.0796
+    ]
+   },
+   "properties": {
+    "place_id": "PL1068",
+    "name": "Ortheuville, Tenneville, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6395,
+     50.2093
+    ]
+   },
+   "properties": {
+    "place_id": "PL1069",
+    "name": "Samrée, La Roche-en-Ardenne, Luxembourg (BE)",
+    "alt_names": "Samree",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.878,
+     50.1766
+    ]
+   },
+   "properties": {
+    "place_id": "PL1070",
+    "name": "Cherain, Gouvy, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4342,
+     50.2676
+    ]
+   },
+   "properties": {
+    "place_id": "PL1071",
+    "name": "Hotton, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1753,
+     50.1554
+    ]
+   },
+   "properties": {
+    "place_id": "PL1072",
+    "name": "Rochefort, Namur",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Namur",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8364,
+     50.189
+    ]
+   },
+   "properties": {
+    "place_id": "PL1073",
+    "name": "Mont-le-Ban, Gouvy, Luxembourg (BE)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5697,
+     48.7484
+    ]
+   },
+   "properties": {
+    "place_id": "PL1074",
+    "name": "Flers, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0323,
+     48.5595
+    ]
+   },
+   "properties": {
+    "place_id": "PL1075",
+    "name": "Senonches, Eure-et-Loir",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3407,
+     48.7613
+    ]
+   },
+   "properties": {
+    "place_id": "PL1076",
+    "name": "Chênedouit, Putanges-le-Lac, Orne",
+    "alt_names": "Chenedouit",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1159,
+     48.8323
+    ]
+   },
+   "properties": {
+    "place_id": "PL1077",
+    "name": "Nécy, Orne",
+    "alt_names": "Necy",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3389,
+     48.8944
+    ]
+   },
+   "properties": {
+    "place_id": "PL1078",
+    "name": "Le Sap, Sap-en-Auge, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.589,
+     48.8784
+    ]
+   },
+   "properties": {
+    "place_id": "PL1079",
+    "name": "Pontécoulant, Condé-en-Normandie, Calvados",
+    "alt_names": "Pontecoulant",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7814,
+     48.8769
+    ]
+   },
+   "properties": {
+    "place_id": "PL1080",
+    "name": "Presles, Valdallière, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0856,
+     48.9952
+    ]
+   },
+   "properties": {
+    "place_id": "PL1081",
+    "name": "Fervaches, Tessy-Bocage, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3619,
+     49.0191
+    ]
+   },
+   "properties": {
+    "place_id": "PL1082",
+    "name": "Ouville, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 1
    }
   }

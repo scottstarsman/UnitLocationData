@@ -8538,7 +8538,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Saarland",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -11338,7 +11338,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Saarland",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -11998,7 +11998,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -18618,7 +18618,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 6
    }
   },
   {
@@ -20058,7 +20058,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -20618,6 +20618,206 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9991,
+     49.1028
+    ]
+   },
+   "properties": {
+    "place_id": "PL1045",
+    "name": "Bad Bergzabern, Rheinland-Pfalz",
+    "alt_names": "Bergzabern",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1157,
+     49.2788
+    ]
+   },
+   "properties": {
+    "place_id": "PL1046",
+    "name": "Sankt Ingbert, Saarland",
+    "alt_names": "St. Ingbert",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5306,
+     49.5058
+    ]
+   },
+   "properties": {
+    "place_id": "PL1047",
+    "name": "Orscholz, Mettlach, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5526,
+     49.4474
+    ]
+   },
+   "properties": {
+    "place_id": "PL1048",
+    "name": "Büdingen, Merzig, Saarland",
+    "alt_names": "Buedingen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8287,
+     48.9983
+    ]
+   },
+   "properties": {
+    "place_id": "PL1049",
+    "name": "Hellimer, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4255,
+     49.0509
+    ]
+   },
+   "properties": {
+    "place_id": "PL1050",
+    "name": "Bitche, Moselle",
+    "alt_names": "Bitsch",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9445,
+     49.0366
+    ]
+   },
+   "properties": {
+    "place_id": "PL1051",
+    "name": "Wissembourg, Bas-Rhin",
+    "alt_names": "Weissenburg",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3969,
+     47.7442
+    ]
+   },
+   "properties": {
+    "place_id": "PL1052",
+    "name": "Rixheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2182,
+     48.4787
+    ]
+   },
+   "properties": {
+    "place_id": "PL1053",
+    "name": "Schirmeck, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6375,
+     49.4427
+    ]
+   },
+   "properties": {
+    "place_id": "PL1054",
+    "name": "Merzig, Saarland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Saarland",
     "claims_count": 1
    }
   }

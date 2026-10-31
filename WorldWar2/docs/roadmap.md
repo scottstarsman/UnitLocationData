@@ -628,3 +628,12 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 3. **Not written**: the Fifteenth and Fifth Panzer Army staff exchange (date printed 28 February; B-811 and `C1158` are consistent but no day is reliable); Model's death (B-701 gives no date); the Roer flood (B-701 about 10 days, B-811 about 14). Recommendation: leave these out.
 4. **Unread**: maps at images 75-79 and the German section; read only if a row needs a second check.
 
+## FMS B-078 batch (Army Group G, Lorraine and the Vosges, 14 November-early December 1944; 31 October 2026): open points
+
+1. **553rd VG Division to the LXXXIX Corps in the night 19/20 November**: DONE (31 October 2026). Confirmed by CMH Riviera to the Rhine ch. 21 p. 373; `CR0725` closed on 19 November, new `CR1064`.
+2. **245th and 719th Divisions**: DONE (31 October 2026). Confirmed by CMH Riviera ch. 21 p. 379, Lorraine ch. 12 pp. 535 and 547, Riviera ch. 26 p. 467; `CR0739` and `CR0641` closed, new `CR1065` and `CR1066`. Still open: the Lexikon month row `C1061` (719th in the Netherlands, December). Recommendation: leave it with its Context note.
+3. **Higher Command Vosges**: CHECKED (31 October 2026). CMH Riviera ch. 21 p. 378 says only "the Strasbourg area" and lists Feldkommandantur 987 at Haguenau among its elements; the command post is not named. Recommendation: keep `C1034` (Strasbourg, area) unchanged; B-078 p. 77 (Haguenau) stays a single-family reading.
+4. **21st Panzer Division corps in early December** (B-078: with the LXXXII Corps; `CR0711`: XIII SS Corps). Recommendation: leave `C2153` with a blank parent.
+5. **Allied dates not used**: Mulhouse 21 November (de Lattre: 20 November, 16:00). Metz forts (St. Privat and Haeseler to 29 November; St. Quentin, Driant and Plappeville to 8 December; Jeanne d'Arc to 13 December) are German garrisons with no unit row.
+6. **Not written**: the strength figures (the Panzer Lehr Division about 50 per cent ready with 12 and 20 tanks in its battle groups; the 11th Panzer about 20 tanks; the 21st Panzer about 7 tanks; the 245th weak; 700-800 American against 90 German tanks and assault guns) are in the reading notes only; the Anlage 18 traces (LXXXII Corps 8-19 November) and Anlage 17 (Zabern) lines were not interpreted.
+

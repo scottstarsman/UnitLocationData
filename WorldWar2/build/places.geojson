@@ -5338,7 +5338,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -6638,7 +6638,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -21293,6 +21293,86 @@
    "properties": {
     "place_id": "PL1078",
     "name": "Le Sap, Sap-en-Auge, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.589,
+     48.8784
+    ]
+   },
+   "properties": {
+    "place_id": "PL1079",
+    "name": "Pontécoulant, Condé-en-Normandie, Calvados",
+    "alt_names": "Pontecoulant",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7814,
+     48.8769
+    ]
+   },
+   "properties": {
+    "place_id": "PL1080",
+    "name": "Presles, Valdallière, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0856,
+     48.9952
+    ]
+   },
+   "properties": {
+    "place_id": "PL1081",
+    "name": "Fervaches, Tessy-Bocage, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3619,
+     49.0191
+    ]
+   },
+   "properties": {
+    "place_id": "PL1082",
+    "name": "Ouville, Manche",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

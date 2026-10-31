@@ -6033,6 +6033,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.589,
+     48.8784
+    ]
+   },
+   "properties": {
+    "claim_id": "C2203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-06-15",
+    "place_id": "PL1079",
+    "location_name": "Pontécoulant, Condé-en-Normandie, Calvados (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "XLVII Panzer Corps headquarters flag at Pontécoulant on the Seventh Army situation sketch",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 5 and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0586,
      49.1575
     ]
@@ -6805,6 +6846,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R446;R382;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7814,
+     48.8769
+    ]
+   },
+   "properties": {
+    "claim_id": "C2204",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "place_id": "PL1080",
+    "location_name": "Presles, Valdallière, Calvados (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Seventh Army forward command post flag at Presles south of Vire",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 9 and Skizze 12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0856,
+     48.9952
+    ]
+   },
+   "properties": {
+    "claim_id": "C2205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-18",
+    "place_id": "PL1081",
+    "location_name": "Fervaches, Tessy-Bocage, Manche (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "II Parachute Corps headquarters flag at Fervaches south of St-Lô",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 9 and Skizze 14"
    }
   },
   {
@@ -13495,6 +13618,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.4271,
+     49.1274
+    ]
+   },
+   "properties": {
+    "claim_id": "C2206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-16",
+    "place_id": "PL0338",
+    "location_name": "Saint-Sauveur-Lendelin (Château des Mares), Manche (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXIV Corps headquarters flag at Saint-Sauveur-Lendelin south of Périers",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 22 and Skizze 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2997,
      49.2786
     ]
@@ -15955,6 +16119,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.3619,
+     49.0191
+    ]
+   },
+   "properties": {
+    "claim_id": "C2207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-084C",
+    "unit_name": "LXXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-26",
+    "place_id": "PL1082",
+    "location_name": "Ouville, Manche (from map approximate)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXIV Corps headquarters flag at Ouville east of Coutances during the Cobra breakthrough",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: Skizze 25 and Skizze 26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.19,
+     48.9161
+    ]
+   },
+   "properties": {
+    "claim_id": "C2208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-26",
+    "place_id": "PL0272",
+    "location_name": "Percy, Manche (Le Laurier south-west of Percy)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Seventh Army forward command post at Le Laurier south-west of Percy",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R774;R002",
+    "source_locator": "R774: p. 108 and Skizzen 25-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.4455,
      49.0478
     ]
@@ -16438,8 +16684,8 @@
     "location_date": "1944-07-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R773;R001",
-    "source_locator": "R773: pp. 12 and 17 (German text)"
+    "reference_ids": "R773;R774;R001",
+    "source_locator": "R773: pp. 12 and 17 (German text); R774: p. 108"
    }
   },
   {

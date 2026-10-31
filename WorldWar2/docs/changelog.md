@@ -38,6 +38,16 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** the LVIII Panzer Corps under the Seventh Army at Mortain from about 8-9 August in B-179 against the takeover of 12 August in `C0739`; the LXXXI Corps under Panzer Group Eberbach on 12 August in B-179 against the Fifth Panzer Army in `C0729`.
 - **Semantic scenario 45.** Scenarios 43 and 44: the check that confidence is 0.5 or 0.3 now compares sets (old value: a list comparison that could pass wrongly; new value: a subset test; reason: the scenario 45 run exposed it).
 
+### B-763 (Pemsel, Seventh Army 6 June-29 July 1944)
+
+- **New reference** `R774` (B-763, Pemsel, 1948; archive_document, family `fms_german_manuscript`). The German text and its 29 Skizzen (images 1-251) are primary; the English translation (images 252-453) was used only to check unclear passages. Reliability: 17 of 20 checkable facts agree with the dataset (85%).
+- **New places** `PL1079` to `PL1082` (4; OpenStreetMap Nominatim): Pontécoulant, Presles, Fervaches and Ouville.
+- **New claims** `C2203` to `C2208` (6, all 0.3 as sketch positions; each note carries old value none, new value and reason): headquarters flags of the XLVII Panzer Corps at Pontécoulant (13-15 June), the Seventh Army forward command post at Presles (16-18 June) and at Le Laurier south-west of Percy (24-26 July), the II Parachute Corps at Fervaches (16-18 June), and the LXXXIV Corps at Saint-Sauveur-Lendelin (13-16 July) and Ouville (24-26 July).
+  - Parent blank on all 6 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **Changed row:** `C2193` (B-179 batch, Seventh Army forward command post north-east of Avranches, 28 July): `reference_ids` old `R773;R001`, new `R773;R774;R001`; `source` and `source_locator` gain B-763 p. 108; confidence stays 0.5 because both are one source family.
+- **Disagreements recorded, no value changed:** the LXXXIV Corps headquarters at Périers on the sketch of 13-15 June against Saint-Lô in `C0106`, `C0116`, `C0123` and `C0128`; Dollmann's death on 28 June in B-763 against the alternate 29 June in `C0204` (agrees with `C0188`); the 1st SS Panzer Division near Thury-Harcourt and Clinchamps on 27-28 June on the sketches against its arrival at Bretteville on 6 July in `C0772`.
+- **Semantic scenario 46.**
+
 ## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
 
 Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.

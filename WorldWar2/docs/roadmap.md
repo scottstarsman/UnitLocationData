@@ -549,7 +549,7 @@ Done on the branch `official-history-pass-2` (from `main` `13be4a4`), chunk 1 (U
 
 1. US 70th and 106th 8 May rows: The Last Offensive names no place. Recommendation: leave blank unless the Seventh Army or Fifteenth Army report is found as public text.
 2. US open spans (11th Armored, 26th, 70th, 104th, 106th) and undated rests: no dated relief in The Last Offensive chapters read. Recommendation: leave open; the 30-day horizon limits them.
-3. German refit spans from the Lexikon der Wehrmacht (chunk 2): not started. Recommendation: do it as the next commit on this branch if Scott wants it.
+3. German refit spans (chunk 2, done): 9th Panzer refit at Rheydt (31 October to 15 November 1944, `C2161` to `C2163`). The other Lexikon pages read give no dated late-war refit, and the 226th (Dünkirchen) stays blank because its only row is a month-level listing. Recommendation: no further Lexikon pass; take refits only from dated sources (official histories or FMS manuscripts).
 4. Pilot division rows (chunk 3): not started. Recommendation: do it as a further commit on this branch.
 
 ## Official-history pass 1 (30 October 2026): open points

@@ -14,6 +14,17 @@ Scott approved official-history pass 2 on 31 October 2026, as one branch with on
 - Semantic tests: new scenario 42; scenario 34 and the batch filter (`NOT_OHP`) now leave out pass 2 rows (`OHP2`). Old filter: rows whose notes name the official-history pass. New filter: the same less `C2160`. Reason: the pass 2 notes also name the official-history pass, and the pass 1 totals stay as approved.
 - Still open (no dated source in The Last Offensive): 8 May rows for the 70th and 106th; the open spans of the 11th Armored (23 December 1944), 26th (29 January 1945), 70th (17 February 1945), 104th (23 February 1945) and 106th (15 March 1945); the undated rests listed in the roadmap.
 
+### Chunk 2, German refit spans (Lexikon der Wehrmacht)
+
+- Source: Lexikon der Wehrmacht, 9. Panzer-Division (`R610`); short dated facts only, paraphrased. Pages read: 9th, 2nd, 21st and 116th Panzer and the 226th Infantry; only the 9th Panzer page dates a late-1944 refit (the 116th Panzer refit in the Eifel has no date).
+- New place: `PL1056` Rheydt, Mönchengladbach (OpenStreetMap Nominatim).
+- 3 new claims, `C2161` to `C2163` (old value of each activity column: none, the rows are new):
+  - C2161, 9th Panzer, 27 October 1944, Venlo: in_line start (stated), 0.3. Relief attack for the 15th Army in the Venlo-Sittard area (27 to 30 October); representative point.
+  - C2162, 9th Panzer, 31 October 1944, Rheydt: refitting start (stated, derived start day), 0.3. Short refit in the Rheydt area after the attack.
+  - C2163, 9th Panzer, 15 November 1944, Geilenkirchen: in_line start (stated), 0.5. Defensive fighting for Geilenkirchen from 15 November; ends the refit span by the implicit-end rule.
+- Not changed: the 226th Division (Dünkirchen) stays blank. Its only row is a month-level listing, and scenario 32 keeps listings unlabelled.
+- Semantic tests: scenario 42 extended (`OHP2` now covers `C2160` to `C2163`).
+
 ## 31 October 2026: FMS open-question decisions (branch fms-decisions-oct31)
 
 - `C0957` event definition changed from "the takeover of 15 November" to "the arrival of 15 November". Reason: FMS B-811 p. 2 dates the takeover to 22 November (`C2127`); CMH supports the arrival only. Date, place and confidence unchanged.

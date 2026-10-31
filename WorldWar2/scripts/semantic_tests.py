@@ -928,7 +928,7 @@ BATCH37 = lambda c: 'C2078' <= c['claim_id'] <= 'C2115'   # FMS 19th Army batch 
 BATCH38 = lambda c: 'C2116' <= c['claim_id'] <= 'C2126'   # FMS B-703 Army Group G batch (scenario 38) counts only in its own scenario
 BATCH39 = lambda c: 'C2127' <= c['claim_id'] <= 'C2134'   # FMS B-811 Fifteenth Army batch (scenario 39) counts only in its own scenario
 BATCH40 = lambda c: 'C2135' <= c['claim_id'] <= 'C2136'   # FMS B-701 Army Group B batch (scenario 40) counts only in its own scenario
-OHP2 = lambda c: 'C2160' <= c['claim_id'] <= 'C2160'   # official-history pass 2 (scenario 42) counts only in its own scenario
+OHP2 = lambda c: 'C2160' <= c['claim_id'] <= 'C2163' or 'official-history pass 2' in c['notes']   # official-history pass 2 (scenario 42) counts only in its own scenario
 BATCH41 = lambda c: 'C2137' <= c['claim_id'] <= 'C2159'   # FMS B-078 Army Group G Lorraine and Vosges batch (scenario 41) counts only in its own scenario
 NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c) and not OHP2(c)
 
@@ -1240,13 +1240,15 @@ def scenario_40_fms_b701_armygroupb():
 
 
 def scenario_42_official_history_pass_2():
-    """Official-history pass 2 (October 2026): US gaps from The Last Offensive (C2160)."""
+    """Official-history pass 2 (October 2026): US gaps from The Last Offensive (C2160); Lexikon der Wehrmacht German rows (C2161-C2163)."""
     s = 'scenario 42'
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if OHP2(c)]
-    expect(s + ': the pass adds 1 activity row', sum(bool(c.get('activity_status')) for c in rows), 1)
+    expect(s + ': the pass has 4 activity rows', sum(bool(c.get('activity_status')) for c in rows), 4)
+    expect(s + ': 9th Panzer (German), 5 Nov 1944: short refit at Rheydt', A('GER-PZ-009D', '1944-11-05')[:1], ('refitting',))
+    expect(s + ': 9th Panzer (German), 16 Nov 1944: defending Geilenkirchen', A('GER-PZ-009D', '1944-11-16')[:1], ('in_line',))
     expect(s + ': 101st Airborne, 8 May 1945: Berchtesgaden area (inferred garrison)', A('US-ABN-101D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))
 
 

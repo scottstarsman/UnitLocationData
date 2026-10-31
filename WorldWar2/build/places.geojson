@@ -538,7 +538,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -11098,7 +11098,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comté",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -20238,7 +20238,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Vosges",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -21378,6 +21378,46 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7634,
+     47.8804
+    ]
+   },
+   "properties": {
+    "place_id": "PL1083",
+    "name": "Le Thillot, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4484,
+     47.911
+    ]
+   },
+   "properties": {
+    "place_id": "PL1084",
+    "name": "Hirtzfelden, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
     "claims_count": 1
    }
   }

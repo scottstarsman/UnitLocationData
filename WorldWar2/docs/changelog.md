@@ -2,6 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-5: four more FMS manuscripts (B-781, B-831, B-084, B-849; 31 October 2026)
+
+Scott approved reading four more Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-5` from `main` `67a7d83`. The German original is the primary source in B-781, B-084 and B-849, with the English translation used only to check unclear passages; in B-831 the German scan is illegible, so the English translation is the primary text and the reference says so. All four are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.
+
+Rules applied (accepted by Scott): no command relation and no parent from a single manuscript (every new row has a blank parent); no Allied dates from the manuscripts; strengths stay in the reading notes; no front-line traces; confidence 0.5 for one source, 0.7 when a second source family agrees, 0.3 for arrivals, approximate days, doubtful places and map positions; disagreements with existing rows are recorded as open points and the existing rows are left unchanged.
+
+### B-781 (Wiese, Nineteenth Army, mid-September-18 December 1944, German original)
+
+- **New reference** `R775` (B-781; archive_document, family `fms_german_manuscript`). Reliability: 17 of 19 checkable facts agree with the dataset (89%).
+- **New places** `PL1083` to `PL1084` (2; OpenStreetMap Nominatim): Le Thillot, Hirtzfelden.
+- **New claims** `C2209` to `C2213` (5; all at 0.3; each note carries old value none, new value and reason): the LXVI Corps at Bains-les-Bains, the LXIV Corps at Remiremont, the IV Luftwaffe Field Corps at Le Thillot and the LXXXV Corps at Belfort in mid-September (all 0.3, approximate day); the LXIII Corps flag at Hirtzfelden on the sketch of 6 December (0.3).
+  - Parent blank on all 5 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the LXIII Corps formed just before the attack of 14 November in B-781 against the Dehner organization becoming the LXIII Corps on 18 November in `C1023`; Wiese handing over on 18 December in B-781 (agrees with `C2113`) against 15 December in `C1018`.
+- **Semantic scenario 47.**
+
 ## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
 
 Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.

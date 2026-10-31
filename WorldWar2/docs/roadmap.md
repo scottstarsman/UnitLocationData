@@ -604,3 +604,11 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 3. **Unread parts.** The German texts of B-468 and B-550, B-263 German pp. 1-9, 11-15 and 17-21, and B-463 pp. 39-41. Recommendation: read only if a row needs a second check.
 4. **Still deferred:** the 1st Armoured at Seppois (19 November; FMS gives only context); the 9th Colonial at Lörrach (April 1945; outside the manuscripts); the 12th Armored at Rouffach, the 3rd Algerian at Château-Lambert and the 1st Free French at the Ballon d'Alsace (not in the FMS).
 5. **Other FMS facts not written:** the B-463 strengths of 28 January 1945 (B-463 p. 7; a second strength set); the 2nd Mountain Division's arrival (date not stated); the Army Group G approval date for the Vosges-ridge withdrawal (24 or 26 November, digit blurred; `C2091` at 0.3).
+
+## FMS B-701 batch (Army Group B, mid-October 1944-mid-April 1945; 30 October 2026): open points
+
+1. **II SS Panzer Corps on 16 December.** B-701 appendix 4 puts it under the Sixth Panzer Army; the Lexikon row `C1069` and `CR0755` keep it under the army group (zur Verfügung) to 2 January. Recommendation: keep `C2136` at 0.3 with a blank parent until a second family (for example CMH, The Ardennes) dates the subordination.
+2. **Allied dates in B-701 not used**: Brussels 2 September (Ellis: 3 September), Antwerp 5 September (Ellis: 4 September), St Vith "on the first day" (it fell on 21 December). Recommendation: no change; the dataset already follows Ellis.
+3. **Not written**: the Fifteenth and Fifth Panzer Army staff exchange (date printed 28 February; B-811 and `C1158` are consistent but no day is reliable); Model's death (B-701 gives no date); the Roer flood (B-701 about 10 days, B-811 about 14). Recommendation: leave these out.
+4. **Unread**: maps at images 75-79 and the German section; read only if a row needs a second check.
+

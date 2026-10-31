@@ -2,6 +2,20 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-b701-armygroupb: Army Group B from Foreign Military Studies B-701 (Reichhelm; 30 October 2026)
+
+Scott approved the reading of the Army Group B manuscript and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the unmerged branches `fms-b703-armygroupg` (`C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`) and `fms-b811-15army` (`C2127` to `C2134`, `PL1039` to `PL1044`, `R768`); the unmerged branch `fold3-links` changes citations only. Source: Günther Reichhelm (Ia of Army Group B), B-701, *Summary of Army Group B Engagements from the middle of Oct 44 until the middle of Apr 45* (English translation, dated 29 November 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The maps (images 75-79) and the German section were not read.
+
+- **New reference** `R769` (B-701; archive_document, family `fms_german_manuscript`). Reliability: 20 of 25 checkable facts agree with the dataset, Ellis and the B-811 and B-703 notes (80%). Good for the Ardennes order of battle; Allied dates are often a day off.
+- **New places**: none (next place id stays `PL1045`).
+- **New claims** `C2135` and `C2136` (each note carries old value none, new value and reason):
+  - Fifteenth Army ends its withdrawal across the Scheldt by 23 September 1944, about 82,000 men and 580 guns (`C2135`, Walcheren `PL0549`, 0.7: B-701 p. 8 and Ellis vol. II p. 69 agree on the men; guns 580 against 530).
+  - II SS Panzer Corps (2nd and 9th SS Panzer Divisions) in the Sixth Panzer Army order of battle on 16 December 1944 (`C2136`, representative point in the Eifel `PL0573`, 0.3; parent blank, inferred value: old none, new blank, reason: only B-701 states it, and `CR0755` has the corps under the army group to 2 January).
+- **Changed rows**: none.
+- **Command relation evidence**: `CR0598` gains an observed_during link for `C2135`. No new relation (next id stays `CR1064`).
+- **Semantic scenario 40** (38 and 39 are used by the other two FMS branches); earlier batch counts exclude `C2135` and `C2136`.
+- Open points in `docs/roadmap.md` (FMS B-701 batch).
+
 ## fms-19army: German Nineteenth Army and LXIV Corps from Foreign Military Studies B-766, B-263, B-463, B-468 and B-550 (30 October 2026)
 
 Scott approved the 36 proposed changes on 30 October 2026 after a read-only check of the five manuscripts against the dataset and de Lattre (`R686`). One branch from `main` `664d9eb`. Sources: Botsch, B-766 (16 September-17 November 1944) and B-263 (8 November 1944-10 January 1945); Brandstaedter, B-463 (4 January-21 March 1945); Thumm, B-468 (1 November-31 December 1944) and B-550 (6 December 1944-28 January 1945); NARA M1035, read on Fold3. These are US Government works, and the claims paraphrase them in English. The reading notes stay private and are not in this repository.

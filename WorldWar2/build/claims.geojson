@@ -70731,6 +70731,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.0565,
+     49.6884
+    ]
+   },
+   "properties": {
+    "claim_id": "C2116",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL1032",
+    "location_name": "Michelstadt, Hessen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Army Group G headquarters moves to its fortified command post at Michelstadt (Odenwald) after OKW allows it on 23 March",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: pp. 7, 13-14, 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -71674,6 +71715,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.3293,
+     49.2362
+    ]
+   },
+   "properties": {
+    "claim_id": "C2117",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL1033",
+    "location_name": "Neuenstadt am Kocher, Baden-Württemberg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Army Group G gives up Michelstadt and moves its command post to Neuenstadt in the First Army zone",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3621,
      49.6303
     ]
@@ -71872,6 +71954,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R566;R710;R002",
     "source_locator": "R566: p. 352"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1312,
+     48.6374
+    ]
+   },
+   "properties": {
+    "claim_id": "C2118",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL1034",
+    "location_name": "Waldenbuch, Baden-Württemberg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Army Group G command post moves to Waldenbuch south of Stuttgart",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 23"
    }
   },
   {
@@ -73519,8 +73642,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     11.5754,
-     48.1371
+     10.4791,
+     48.8913
     ]
    },
    "properties": {
@@ -73534,11 +73657,11 @@
     "echelon": "army_group",
     "branch": "Army",
     "date": "1945-04-05",
-    "place_id": "PL0641",
-    "location_name": "Bavaria (representative point at Munich) (representative point for a headquarters whose place is not given)",
+    "place_id": "PL1035",
+    "location_name": "Wallerstein, Bayern",
     "location_represents": "headquarters",
-    "precision_km": 50,
-    "confidence": 0.3,
+    "precision_km": 5,
+    "confidence": 0.5,
     "event_type": "command_change",
     "current_activity": "Schulz takes over Army Group G on 5 April after Hausser is relieved; Hitler gives him the plan in Berlin on 2 April",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -73549,10 +73672,10 @@
     "sub_operation_name": null,
     "strength_status": "unknown",
     "location_date": "1945-04-05",
-    "location_basis": "representative_point",
+    "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R568;R186;R002",
-    "source_locator": "R568: p. 411, 412; R186: commanders list"
+    "reference_ids": "R568;R186;R767;R002",
+    "source_locator": "R568: p. 411, 412; R186: commanders list; R767: p. 29"
    }
   },
   {
@@ -73847,6 +73970,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.598,
+     49.1241
+    ]
+   },
+   "properties": {
+    "claim_id": "C2122",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL0988",
+    "location_name": "Bruchsal, Baden-Württemberg (representative point for the Kraichgau front)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The 16th Volksgrenadier Division passes to the Nineteenth Army when the XC Corps staff is withdrawn",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 34"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7708,
      50.81
     ]
@@ -74134,6 +74298,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.2187,
+     49.1423
+    ]
+   },
+   "properties": {
+    "claim_id": "C2123",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-080C",
+    "unit_name": "LXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL0585",
+    "location_name": "Heilbronn, Baden-Württemberg (representative point; corps place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Army Group G puts the LXXX Corps under the Nineteenth Army after deep breaches near Heilbronn and Karlsruhe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 35"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -74166,8 +74371,8 @@
     "location_date": "1945-04-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R568;R002",
-    "source_locator": "R568: p. 421"
+    "reference_ids": "R568;R767;R002",
+    "source_locator": "R568: p. 421; R767: p. 32"
    }
   },
   {
@@ -74701,6 +74906,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 306, 309"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2124",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-11",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (nearest earlier headquarters; place on 11 April not stated)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The Commander-in-Chief West takes the Nineteenth Army back under his direct command on 10-11 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -16,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: pp. 25, 35"
    }
   },
   {
@@ -78193,6 +78439,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.18,
+     48.7775
+    ]
+   },
+   "properties": {
+    "claim_id": "C2125",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL0487",
+    "location_name": "Stuttgart, Baden-Württemberg (representative point for the First-Nineteenth Army boundary)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The Nineteenth Army gives the 198th Division to the First Army to shore up the boundary near Stuttgart",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R001",
+    "source_locator": "R767: p. 43"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6172,
      51.8006
     ]
@@ -79423,6 +79710,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.1379,
+     48.8375
+    ]
+   },
+   "properties": {
+    "claim_id": "C2119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL1036",
+    "location_name": "Schierling, Bayern",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Army Group G command post moves to Schierling south of Regensburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.9552,
      51.7903
     ]
@@ -80079,6 +80407,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.6664,
+     49.2178
+    ]
+   },
+   "properties": {
+    "claim_id": "C2126",
+    "conflict_group_id": "G033",
+    "claim_status": "alternate",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-25",
+    "place_id": "PL0645",
+    "location_name": "Bavarian-Bohemian frontier (representative point at Cham) (frontier area; headquarters place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "With no signal contact, the Commander-in-Chief West takes direct control of the Seventh Army about 25 April (FMS date)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 45 and appendix f"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7167,
      49.4167
     ]
@@ -80318,6 +80687,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R081;R001",
     "source_locator": "R081: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4191,
+     48.255
+    ]
+   },
+   "properties": {
+    "claim_id": "C2120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-26",
+    "place_id": "PL1037",
+    "location_name": "Ampfing, Bayern",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Army Group G staff moves to Ampfing as the Danube front breaks",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: pp. 47-48"
    }
   },
   {
@@ -80577,7 +80987,7 @@
    },
    "properties": {
     "claim_id": "C1205",
-    "conflict_group_id": null,
+    "conflict_group_id": "G033",
     "claim_status": "preferred",
     "unit_id": "GER-ARMY-007A",
     "unit_name": "Seventh Army",
@@ -80981,8 +81391,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     11.5754,
-     48.1371
+     12.3234,
+     47.7654
     ]
    },
    "properties": {
@@ -80996,11 +81406,11 @@
     "echelon": "army_group",
     "branch": "Army",
     "date": "1945-04-29",
-    "place_id": "PL0641",
-    "location_name": "Bavaria (representative point at Munich) (representative point; the headquarters place is not given)",
+    "place_id": "PL1038",
+    "location_name": "Hohenaschau, Aschau im Chiemgau, Bayern (headquarters moving to Hohenaschau on the evening of 29 April)",
     "location_represents": "headquarters",
-    "precision_km": 50,
-    "confidence": 0.3,
+    "precision_km": 10,
+    "confidence": 0.5,
     "event_type": "other",
     "current_activity": "Kesselring orders Army Group G dissolved on 29 April because it can no longer lead; it is re-formed on 3 May",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -81011,10 +81421,10 @@
     "sub_operation_name": null,
     "strength_status": "unknown",
     "location_date": "1945-04-29",
-    "location_basis": "representative_point",
+    "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R186;R002",
-    "source_locator": "R186: text of the page"
+    "reference_ids": "R186;R767;R002",
+    "source_locator": "R186: text of the page; R767: pp. 48-50"
    }
   },
   {
@@ -81999,6 +82409,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R582;R001",
     "source_locator": "R582: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3234,
+     47.7654
+    ]
+   },
+   "properties": {
+    "claim_id": "C2121",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-05-03",
+    "place_id": "PL1038",
+    "location_name": "Hohenaschau, Aschau im Chiemgau, Bayern (staff left at Hohenaschau on 29 April; place of the re-formed staff not stated)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Kesselring orders the Army Group G staff re-formed on 3 May to carry out the capitulation in the northern Alps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R767;R002",
+    "source_locator": "R767: p. 50"
    }
   },
   {

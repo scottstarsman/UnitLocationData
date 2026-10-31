@@ -2,6 +2,27 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-b703-armygroupg: Army Group G from Foreign Military Studies B-703 (Wilutzky; 30 October 2026)
+
+Scott approved the reading of the Army Group G manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c` (the unmerged branch `fold3-links` changes only citations of existing rows and adds no ids). Source: Horst Wilutzky (Ia of Army Group G), B-703, *The Fighting of Heeresgruppe G in the West: the final battle in central and southern Germany until the surrender (22 Mar-6 May 1945)*, English translation, with Schulz's statement and Hausser's commentary; NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. A-999 (Army Group G, 20 September-8 November 1944) was not found as separate pages in its Fold3 set and is left open.
+
+- **New reference** `R767` (B-703; archive_document, family `fms_german_manuscript`). Reliability: 18 of 23 checkable facts agree with the dataset, Ellis and de Lattre (78%). Good for army group headquarters moves and subordination changes; weak and sometimes late on Allied crossings. Year written: the signature is dated 12 January 1947 but the preface says September-October 1947; 1947 is used.
+- **New places** `PL1032` to `PL1038` (7; OpenStreetMap Nominatim): Michelstadt, Neuenstadt am Kocher, Waldenbuch, Wallerstein, Schierling, Ampfing and Hohenaschau. Inferred value: the manuscript's "Neuenstadt" is taken to be Neuenstadt am Kocher (the town of that name in the First Army zone).
+- **New claims** `C2116` to `C2126` (11; each note carries old value none, new value and reason):
+  - Army Group G headquarters: Michelstadt (24 March, 0.3, inferred arrival day; old none, new 24 March, reason: first full day after permission on 23 March), Neuenstadt (28 March), Waldenbuch (30 March), Schierling (22 April), Ampfing (26 April, 0.3; the night of 25/26 April), re-formed for the capitulation on 3 May (0.3, place fallback Hohenaschau).
+  - Subordination changes stated only by B-703, parent left blank (inferred value: old none, new blank, reason: not yet in the command relations table): 16th Volksgrenadier Division to the Nineteenth Army (6 April), LXXX Corps to the Nineteenth Army (8 April), 198th Division to the First Army (18 April). All 0.3 (representative points).
+  - Nineteenth Army back under the Commander-in-Chief West on 10-11 April (`C2124`, 0.3; linked to `CR0815`).
+  - Seventh Army directly under the Commander-in-Chief West about 25 April (`C2126`, alternate, 0.3).
+- **Changed rows** (old value, new value and reason in each row's Review sentence):
+  - `C1198` (Schulz takes over, 5 April): place `PL0641` (representative point at Munich) to `PL1035` (Wallerstein); precision 50 to 5 km; location basis representative_point to documented_on_date; confidence 0.3 to 0.5; `R767` added. Reason: B-703 p. 29 names the command post of 5 April.
+  - `C1199` (dissolution order, 29 April): place `PL0641` to `PL1038` (Hohenaschau); precision 50 to 10 km; basis representative_point to documented_on_date; confidence 0.3 to 0.5; parent blank to `GER-OBW-000H`; `R767` added. Reason: B-703 pp. 48-50 names the place and agrees with the Lexikon on the date.
+  - `C1205` (Seventh Army under Kesselring, 28 April): conflict group blank to `G033`. Reason: B-703 dates the same transfer about 25 April; CMH stays preferred.
+  - `C1231` (LXXXII Corps to the First Army, 9 April): `R767` added; event support one to two families; confidence stays 0.3 (representative point).
+- **Command relation evidence**: `CR0594` gains observed_during links for `C2116` to `C2121` and `C1199`; `CR0815` for `C2124`. No new relation (next id stays `CR1064`).
+- **New conflict group** `G033` (Seventh Army transfer, 25 vs 28 April).
+- **Semantic scenario 38**; scenario counts of earlier batches exclude `C2116` to `C2126`.
+- Open points in `docs/roadmap.md` (FMS B-703 batch).
+
 ## fold3-links: first-page Fold3 URLs for the FMS references (30 October 2026)
 
 Scott approved this on 30 October 2026. One branch from `main` `535b12c`. Each reference's `full_citation` gains a `Link review (branch fold3-links ...)` sentence giving the old URL, the new URL and the reason. In every claim and coordinate exception that cited an old URL, the `source` is updated to the new one. No claim values, ids or confidences changed.

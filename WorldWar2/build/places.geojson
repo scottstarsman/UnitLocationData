@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -11518,7 +11518,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -12578,7 +12578,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -12638,7 +12638,7 @@
     "precision_km": 50,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 8
+    "claims_count": 6
    }
   },
   {
@@ -12718,7 +12718,7 @@
     "precision_km": 50,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -19498,7 +19498,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -20359,6 +20359,146 @@
     "country": "FR",
     "region": "Alsace",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0565,
+     49.6884
+    ]
+   },
+   "properties": {
+    "place_id": "PL1032",
+    "name": "Michelstadt, Hessen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Hessen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.3293,
+     49.2362
+    ]
+   },
+   "properties": {
+    "place_id": "PL1033",
+    "name": "Neuenstadt am Kocher, Baden-Württemberg",
+    "alt_names": "Neuenstadt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1312,
+     48.6374
+    ]
+   },
+   "properties": {
+    "place_id": "PL1034",
+    "name": "Waldenbuch, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4791,
+     48.8913
+    ]
+   },
+   "properties": {
+    "place_id": "PL1035",
+    "name": "Wallerstein, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1379,
+     48.8375
+    ]
+   },
+   "properties": {
+    "place_id": "PL1036",
+    "name": "Schierling, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.4191,
+     48.255
+    ]
+   },
+   "properties": {
+    "place_id": "PL1037",
+    "name": "Ampfing, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.3234,
+     47.7654
+    ]
+   },
+   "properties": {
+    "place_id": "PL1038",
+    "name": "Hohenaschau, Aschau im Chiemgau, Bayern",
+    "alt_names": "Hohenaschau im Chiemgau",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 2
    }
   }
  ]

@@ -144,6 +144,12 @@ Scott on 31 October 2026 asked to continue the weekly sheets with all nationalit
 - **Agreement (existing non-map row of the unit within 10 km):** one-day window 0 of 6 (0%): US 0 of 0, British and other Allied 0 of 0, German 0 of 6; three-day window 3 of 11 (27%): US 0 of 0, British and other Allied 3 of 4, German 0 of 7.
 - **Scenario 63** checks the sheet. No existing claim row changed. No relation, no conflict group.
 
+### Confidence rule applied to earlier map rows (roadmap point 40)
+
+Scott on 31 October 2026 approved lowering the earlier map rows that reached 0.7 under the old 10 km rule.
+- **Changed:** 54 `R781` claims (`C2298` to `C3269`, listed in roadmap point 40): confidence old value 0.7, new value 0.5, reason: the agreeing non-map row is more than 5 and at most 10 km away, and a map row reaches 0.7 only with agreement within 5 km (rule of 31 October 2026). Each row's notes carry the same old/new/reason text. No other value changed.
+- **Roadmap:** point 40 resolved; Scott's decisions on points 41-50 recorded (keep the existing rows on the differences over 20 km for the German review, keep the doubtful labels of 31 October 1944 at 0.3 and check them against FMS and Lexikon, defer the placeholder units to the unit clean-up).
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

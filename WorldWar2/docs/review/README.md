@@ -97,7 +97,7 @@ Claims by branch: Army 2513, Armoured 883, Waffen-SS 208, Airborne 140, Luftwaff
 
 Claims by event type: other 1439, hq_observation 486, attack 457, defense 246, hq_move 203, capture 192, command_change 184, arrival 127, regroup 120, relocation 96, landing 60, subordinate_assignment 58, withdrawal 57, counterattack 49, surrender 39, activation 18, redesignation 8, destruction 5.
 
-Claims by status: preferred 3803, alternate 25, disputed 16. Claims by confidence: 0.3 1154, 0.5 1953, 0.7 674, 0.9 63.
+Claims by status: preferred 3803, alternate 25, disputed 16. Claims by confidence: 0.3 1154, 0.5 2007, 0.7 620, 0.9 63.
 
 Placeholder units by nationality: Germany 64, Allied 3, US 2.
 

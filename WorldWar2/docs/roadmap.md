@@ -615,7 +615,7 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 
 ## FMS B-811 batch (Fifteenth Army, 15 November 1944-22 February 1945; 30 October 2026): open points
 
-1. **Takeover date.** B-811 p. 2 dates the takeover from the Fifth Panzer Army on 22 November; `C0957` (CMH) calls the arrival of 15 November the takeover. Recommendation: reword the `C0957` event definition to "arrival" and keep both rows.
+1. **Takeover date.** B-811 p. 2 dates the takeover from the Fifth Panzer Army on 22 November; `C0957` (CMH) calls the arrival of 15 November the takeover. Recommendation: reword the `C0957` event definition to "arrival" and keep both rows. **Done 31 October 2026 (Scott approved).**
 2. **Relief of the 246th Division in November.** CMH (`C0972`) has the 340th relieve the 246th at Jülich on 21 November; B-811 p. 19 has the 340th replace the 49th and the 363rd replace the 246th. Recommendation: keep CMH; add a note only after a third source.
 3. **FMS-only changes with blank parents** (`C2128`, `C2129`, `C2131`, `C2133`, also `C2130`, `C2132`, `C2134`). Recommendation: add relations only when a second family dates them.
 4. **Not written**: Lindern lost 1 December and Linnich 2 December (no German row needs them); the LXVII Corps under the Fifteenth Army about 27 December to 18 January (start date only in B-811); the Roer dams opened by Army Group B order on 6/7 February (consistent with `C0607`); Volks artillery corps and the dated strength notes (p. 82: infantry at two thirds, artillery two thirds to three quarters). Allied identifications from B-811 not used (a British 3rd Division at Elsenborn on appendix 5 is wrong).
@@ -637,3 +637,12 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 5. **Allied dates not used**: Mulhouse 21 November (de Lattre: 20 November, 16:00). Metz forts (St. Privat and Haeseler to 29 November; St. Quentin, Driant and Plappeville to 8 December; Jeanne d'Arc to 13 December) are German garrisons with no unit row.
 6. **Not written**: the strength figures (the Panzer Lehr Division about 50 per cent ready with 12 and 20 tanks in its battle groups; the 11th Panzer about 20 tanks; the 21st Panzer about 7 tanks; the 245th weak; 700-800 American against 90 German tanks and assault guns) are in the reading notes only; the Anlage 18 traces (LXXXII Corps 8-19 November) and Anlage 17 (Zabern) lines were not interpreted.
 
+
+## FMS open questions decided (Scott, 31 October 2026)
+
+1. Command relations from a single manuscript: not added; wait for a second source family (about eight held back in the notes).
+2. `C0957` reworded from takeover to arrival: done.
+3. Allied dates from the manuscripts: not used; notes only.
+4. German duplicate copies and map sheets: not read in full.
+5. Unit strengths: notes only, not in the dataset.
+6. Map front lines: not traced.

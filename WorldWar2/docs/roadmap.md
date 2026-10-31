@@ -604,3 +604,12 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 3. **Unread parts.** The German texts of B-468 and B-550, B-263 German pp. 1-9, 11-15 and 17-21, and B-463 pp. 39-41. Recommendation: read only if a row needs a second check.
 4. **Still deferred:** the 1st Armoured at Seppois (19 November; FMS gives only context); the 9th Colonial at Lörrach (April 1945; outside the manuscripts); the 12th Armored at Rouffach, the 3rd Algerian at Château-Lambert and the 1st Free French at the Ballon d'Alsace (not in the FMS).
 5. **Other FMS facts not written:** the B-463 strengths of 28 January 1945 (B-463 p. 7; a second strength set); the 2nd Mountain Division's arrival (date not stated); the Army Group G approval date for the Vosges-ridge withdrawal (24 or 26 November, digit blurred; `C2091` at 0.3).
+
+## FMS B-703 batch (Army Group G, 22 March-6 May 1945; 30 October 2026): open points
+
+1. **Subordination changes stated only by B-703** (`C2122` 16th VG to the Nineteenth Army on 6 April; `C2123` LXXX Corps to the Nineteenth Army on 8 April, while `CR0669` keeps it under the First Army to 18 April; `C2125` 198th Division to the First Army on 18 April). Parents are blank. Recommendation: add relations only when a second family dates them; otherwise leave them as notes.
+2. **Nineteenth Army under Army Group G about 3-11 April 1945.** B-703 pp. 25 and 35 say the army group took it over on its own authority and lost it again on 10-11 April; the Lexikon row `C1217` lists it under Army Group G on 26 April and `CR0815` keeps it under OB West from 2 March. Recommendation: add a disputed short relation only if the Lexikon or CMH supports it.
+3. **Allied dates in B-703 not used**: Danube crossing at Dillingen 25 April (dataset `C0679`: 22 April); Rhine crossing north of Mannheim 27 March (Ellis: Worms, 26 March); 10th Armored at Crailsheim 5 April (no US row). Hausser's commentary says the 6th SS Mountain Division fought through to German lines (CMH `C1274`: rounded up on 2 April). No change made.
+4. **A-999** (Army Group G, 20 September-8 November 1944): not found as separate pages in the Fold3 set "A-999 to A1000, B018 and B078", whose first 189 images are B-078 (Mellenthin). Recommendation: search the set's later images or use B-078 instead.
+5. **Unread**: the German original of B-703 (spot-checked only) and the box contents of the six orders of battle and ten traced maps (illegible in the scan).
+

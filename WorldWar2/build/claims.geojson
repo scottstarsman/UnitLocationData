@@ -2097,6 +2097,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1861,
+     49.418
+    ]
+   },
+   "properties": {
+    "claim_id": "C2813",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL1350",
+    "location_name": "La Madeleine (Sainte-Marie-du-Mont), Manche (near La Madeleine (Sainte-Marie-du-Mont))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "4th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000001 situation 1200 hrs 6 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -6607,6 +6648,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0336,
+     49.4086
+    ]
+   },
+   "properties": {
+    "claim_id": "C2814",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "place_id": "PL1351",
+    "location_name": "Le Pont du Hable (Cricqueville-en-Bessin), Calvados (near Le Pont du Hable (Cricqueville-en-Bessin))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "First Army shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000008 situation 1200 hrs 13 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.09,
      49.12
     ]
@@ -10084,6 +10166,47 @@
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R001",
+    "source_locator": "R781: sheet cs000015 situation 1200 hrs 20 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0458,
+     49.1073
+    ]
+   },
+   "properties": {
+    "claim_id": "C2810",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-20",
+    "place_id": "PL1347",
+    "location_name": "La Chevalerie (Saint-Lô), Manche (near La Chevalerie (Saint-Lô))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "353rd Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000015 situation 1200 hrs 20 June 1944"
    }
   },
@@ -17185,6 +17308,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.6668,
+     49.1216
+    ]
+   },
+   "properties": {
+    "claim_id": "C2811",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-04",
+    "place_id": "PL1348",
+    "location_name": "Sermentot, Calvados (near Sermentot)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "2nd SS Panzer Division Das Reich shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000029 situation 1200 hrs 4 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6172,
+     49.5986
+    ]
+   },
+   "properties": {
+    "claim_id": "C2815",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-07-04",
+    "place_id": "PL1352",
+    "location_name": "L'Orangerie (Martinvast), Manche (near L'Orangerie (Martinvast))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "101st Airborne Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000029 situation 1200 hrs 4 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8958,
+     49.1423
+    ]
+   },
+   "properties": {
+    "claim_id": "C2816",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-04",
+    "place_id": "PL1353",
+    "location_name": "La Perquelevée (La Bazoque), Calvados (near La Perquelevée (La Bazoque))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "2nd Armored Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000029 situation 1200 hrs 4 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9234,
+     49.2845
+    ]
+   },
+   "properties": {
+    "claim_id": "C2817",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-04",
+    "place_id": "PL1354",
+    "location_name": "Bellefontaine (Bernesq), Calvados (near Bellefontaine (Bernesq))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000029 situation 1200 hrs 4 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -20651,6 +20938,129 @@
     "confidence": 0.5,
     "event_type": "hq_observation",
     "current_activity": "XIX Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000036 situation 1200 hrs 11 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6109,
+     49.6001
+    ]
+   },
+   "properties": {
+    "claim_id": "C2818",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-07-11",
+    "place_id": "PL1352",
+    "location_name": "L'Orangerie (Martinvast), Manche (near L'Orangerie (Martinvast))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "101st Airborne Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000036 situation 1200 hrs 11 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1628,
+     49.4169
+    ]
+   },
+   "properties": {
+    "claim_id": "C2819",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-005D",
+    "unit_name": "5th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-11",
+    "place_id": "PL1350",
+    "location_name": "La Madeleine (Sainte-Marie-du-Mont), Manche (near La Madeleine (Sainte-Marie-du-Mont))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "5th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000036 situation 1200 hrs 11 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9232,
+     49.2823
+    ]
+   },
+   "properties": {
+    "claim_id": "C2820",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-11",
+    "place_id": "PL1354",
+    "location_name": "Bellefontaine (Bernesq), Calvados (near Bellefontaine (Bernesq))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORMANDY",
     "operation": "Normandy campaign",
     "operation_type": "campaign",
@@ -24997,6 +25407,88 @@
     "confidence": 0.5,
     "event_type": "hq_observation",
     "current_activity": "V Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000043 situation 1200 hrs 18 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4724,
+     49.2277
+    ]
+   },
+   "properties": {
+    "claim_id": "C2812",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-18",
+    "place_id": "PL1349",
+    "location_name": "La Landelle (Vesly), Manche (near La Landelle (Vesly))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "77th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000043 situation 1200 hrs 18 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.349,
+     49.2605
+    ]
+   },
+   "properties": {
+    "claim_id": "C2821",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-18",
+    "place_id": "PL1355",
+    "location_name": "La Perruque (Sainteny), Manche (near La Perruque (Sainteny))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "4th Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORMANDY",
     "operation": "Normandy campaign",
     "operation_type": "campaign",
@@ -33298,6 +33790,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.2463,
+     48.8925
+    ]
+   },
+   "properties": {
+    "claim_id": "C2822",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL1356",
+    "location_name": "La Grande Mancellière (Percy), Manche (near La Grande Mancellière (Percy))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "4th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4509,
+     48.8605
+    ]
+   },
+   "properties": {
+    "claim_id": "C2823",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-008D",
+    "unit_name": "8th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL1357",
+    "location_name": "Le Vaumesnil (Hudimesnil), Manche (near Le Vaumesnil (Hudimesnil))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "8th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8883,
+     49.2009
+    ]
+   },
+   "properties": {
+    "claim_id": "C2824",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL1358",
+    "location_name": "Le Neufbourg (Le Molay-Littry), Calvados (near Le Neufbourg (Le Molay-Littry))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7131,
+     48.9695
+    ]
+   },
+   "properties": {
+    "claim_id": "C2825",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-01",
+    "place_id": "PL1359",
+    "location_name": "La Tautainerie (Montchauvet), Calvados (near La Tautainerie (Montchauvet))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "21st Panzer Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9063,
+     48.8913
+    ]
+   },
+   "properties": {
+    "claim_id": "C2826",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-08-01",
+    "place_id": "PL1360",
+    "location_name": "Étouvy, Calvados (near Étouvy)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "II Fallschirmjäger Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.532,
+     48.7489
+    ]
+   },
+   "properties": {
+    "claim_id": "C2827",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-01",
+    "place_id": "PL1361",
+    "location_name": "Champeaux, Manche (near Champeaux)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "17th SS Panzergrenadier Division Götz von Berlichingen shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.19,
      48.9161
     ]
@@ -38464,6 +39202,457 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9196,
+     48.8717
+    ]
+   },
+   "properties": {
+    "claim_id": "C2828",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1362",
+    "location_name": "Coulonces, Calvados (near Coulonces)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "2nd Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9412,
+     48.8259
+    ]
+   },
+   "properties": {
+    "claim_id": "C2829",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1363",
+    "location_name": "Saint-Martin-de-Tallevende, Calvados (near Saint-Martin-de-Tallevende)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "29th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0121,
+     48.8006
+    ]
+   },
+   "properties": {
+    "claim_id": "C2830",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1364",
+    "location_name": "Champ-du-Boult, Calvados (near Champ-du-Boult)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "28th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7144,
+     48.2297
+    ]
+   },
+   "properties": {
+    "claim_id": "C2831",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1365",
+    "location_name": "Le Chalonge (Alexain), Mayenne (near Le Chalonge (Alexain))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "90th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.638,
+     48.0232
+    ]
+   },
+   "properties": {
+    "claim_id": "C2832",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-005D",
+    "unit_name": "5th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL1366",
+    "location_name": "Les Pochés (Bazougers), Mayenne (near Les Pochés (Bazougers))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "5th Armored Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.694,
+     48.9424
+    ]
+   },
+   "properties": {
+    "claim_id": "C2833",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1367",
+    "location_name": "La Flague (Saint-Jean-le-Blanc), Calvados (near La Flague (Saint-Jean-le-Blanc))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "43rd (Wessex) Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7784,
+     48.9039
+    ]
+   },
+   "properties": {
+    "claim_id": "C2834",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1368",
+    "location_name": "La Marvindière (Montchamp), Calvados (near La Marvindière (Montchamp))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "15th (Scottish) Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8512,
+     48.8547
+    ]
+   },
+   "properties": {
+    "claim_id": "C2835",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL1369",
+    "location_name": "La Morlière de Bas (Vaudry), Calvados (near La Morlière de Bas (Vaudry))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "11th Armoured Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6362,
+     48.8865
+    ]
+   },
+   "properties": {
+    "claim_id": "C2836",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL1370",
+    "location_name": "La Sauvagère (Valdallière), Calvados (near La Sauvagère (Valdallière))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "21st Panzer Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9424,
+     48.7302
+    ]
+   },
+   "properties": {
+    "claim_id": "C2837",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL1371",
+    "location_name": "La Bruyère de Bas (Sourdeval), Manche (near La Bruyère de Bas (Sourdeval))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "84th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9233,
+     48.6901
+    ]
+   },
+   "properties": {
+    "claim_id": "C2838",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-08",
+    "place_id": "PL1372",
+    "location_name": "La Haute Barre (Saint-Clément), Manche (near La Haute Barre (Saint-Clément))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "2nd Panzer Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7407,
      48.3382
     ]
@@ -43466,6 +44655,293 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9696,
+     48.8107
+    ]
+   },
+   "properties": {
+    "claim_id": "C2839",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL1373",
+    "location_name": "Les Moulins (Saint-Manvieu-Bocage), Calvados (near Les Moulins (Saint-Manvieu-Bocage))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XIX Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8216,
+     48.6351
+    ]
+   },
+   "properties": {
+    "claim_id": "C2840",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL1374",
+    "location_name": "Le Fiel de l'Étang (Barenton), Manche (near Le Fiel de l'Étang (Barenton))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "28th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2904,
+     48.5918
+    ]
+   },
+   "properties": {
+    "claim_id": "C2841",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-15",
+    "place_id": "PL1375",
+    "location_name": "La Sallière Gouvrion (Magny-le-Désert), Orne (near La Sallière Gouvrion (Magny-le-Désert))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "3rd Armored Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1586,
+     48.7147
+    ]
+   },
+   "properties": {
+    "claim_id": "C2842",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-005D",
+    "unit_name": "5th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-15",
+    "place_id": "PL1376",
+    "location_name": "La Cochère, Orne (near La Cochère)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "5th Armored Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.8309,
+     48.3677
+    ]
+   },
+   "properties": {
+    "claim_id": "C2843",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-15",
+    "place_id": "PL1377",
+    "location_name": "Radray (Condeau), Orne (near Radray (Condeau))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "7th Armored Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6346,
+     48.9202
+    ]
+   },
+   "properties": {
+    "claim_id": "C2844",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL1378",
+    "location_name": "La Saulnerie (Lénault), Calvados (near La Saulnerie (Lénault))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "43rd (Wessex) Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0339,
+     48.8748
+    ]
+   },
+   "properties": {
+    "claim_id": "C2845",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-15",
+    "place_id": "PL1379",
+    "location_name": "Le Roncenay-Authenay, Eure (near Le Roncenay-Authenay)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Panzer Lehr Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -48367,6 +49843,211 @@
     "confidence": 0.3,
     "event_type": "other",
     "current_activity": "Panzer Lehr Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1745,
+     48.6384
+    ]
+   },
+   "properties": {
+    "claim_id": "C2846",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL1380",
+    "location_name": "Boisville (Sées), Orne (near Boisville (Sées))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1248,
+     48.7857
+    ]
+   },
+   "properties": {
+    "claim_id": "C2847",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-019C",
+    "unit_name": "XIX Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL1381",
+    "location_name": "Panlatte, Eure (near Panlatte)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XIX Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1207,
+     48.4326
+    ]
+   },
+   "properties": {
+    "claim_id": "C2848",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-005D",
+    "unit_name": "5th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL1382",
+    "location_name": "La Fontaine Pesée (Étampes), Seine-et-Oise (near La Fontaine Pesée (Étampes))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "5th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9012,
+     48.0577
+    ]
+   },
+   "properties": {
+    "claim_id": "C2849",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL1383",
+    "location_name": "Herblay (Artenay), Loiret (near Herblay (Artenay))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII Corps shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0013,
+     48.784
+    ]
+   },
+   "properties": {
+    "claim_id": "C2850",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL1384",
+    "location_name": "Crennes, Orne (near Crennes)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "50th (Northumbrian) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
     "operation": "Northern France campaign",
     "operation_type": "campaign",

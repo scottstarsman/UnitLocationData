@@ -7098,7 +7098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -7158,7 +7158,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -30426,26 +30426,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     2.2071,
-     48.8924
-    ]
-   },
-   "properties": {
-    "place_id": "PL1535",
-    "name": "Nanterre, Hauts-de-Seine",
-    "alt_names": null,
-    "kind": "point",
-    "precision_km": 3,
-    "country": "FR",
-    "region": "Île-de-France",
-    "claims_count": 1
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      3.5555,
      51.3179
     ]
@@ -31166,26 +31146,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.4718,
-     49.2528
-    ]
-   },
-   "properties": {
-    "place_id": "PL1572",
-    "name": "Ornes, Meuse",
-    "alt_names": null,
-    "kind": "point",
-    "precision_km": 3,
-    "country": "FR",
-    "region": "Grand Est",
-    "claims_count": 1
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      5.5403,
      49.197
     ]
@@ -31353,6 +31313,526 @@
    "properties": {
     "place_id": "PL1581",
     "name": "Vincey, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4956,
+     48.9255
+    ]
+   },
+   "properties": {
+    "place_id": "PL1582",
+    "name": "Les Tropins (Dhuys et Morin-en-Brie), Aisne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.554,
+     48.9298
+    ]
+   },
+   "properties": {
+    "place_id": "PL1583",
+    "name": "Artonges, Aisne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.2166,
+     48.675
+    ]
+   },
+   "properties": {
+    "place_id": "PL1584",
+    "name": "Neuville-les-Bois, Eure-et-Loir",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6758,
+     48.0468
+    ]
+   },
+   "properties": {
+    "place_id": "PL1585",
+    "name": "Montassis (Bonchamp-lès-Laval), Mayenne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Pays de la Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.859,
+     50.5444
+    ]
+   },
+   "properties": {
+    "place_id": "PL1586",
+    "name": "Colroy (Herchies), Hainaut",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Hainaut",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9857,
+     50.1226
+    ]
+   },
+   "properties": {
+    "place_id": "PL1587",
+    "name": "Gozin (Beauraing), Namur",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Namur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6994,
+     48.0242
+    ]
+   },
+   "properties": {
+    "place_id": "PL1588",
+    "name": "Beaumont (Cunfin), Aube",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.4584,
+     49.7132
+    ]
+   },
+   "properties": {
+    "place_id": "PL1589",
+    "name": "La Roussie (Le Havre), Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.211,
+     49.8179
+    ]
+   },
+   "properties": {
+    "place_id": "PL1590",
+    "name": "Le Petit Plachy (Plachy-Buyon), Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.2831,
+     50.6449
+    ]
+   },
+   "properties": {
+    "place_id": "PL1591",
+    "name": "Templeuve, Hainaut",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Hainaut",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5548,
+     48.9696
+    ]
+   },
+   "properties": {
+    "place_id": "PL1592",
+    "name": "La Brette (Courtisols), Marne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.3236,
+     51.2005
+    ]
+   },
+   "properties": {
+    "place_id": "PL1593",
+    "name": "Sijsele, West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "West-Vlaanderen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.4172,
+     50.9944
+    ]
+   },
+   "properties": {
+    "place_id": "PL1594",
+    "name": "Coudekerque-Village, Nord",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0976,
+     51.1128
+    ]
+   },
+   "properties": {
+    "place_id": "PL1595",
+    "name": "Gestel (Meerhout), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerpen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3604,
+     51.4951
+    ]
+   },
+   "properties": {
+    "place_id": "PL1596",
+    "name": "Zoomvliet (Heerle), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.187,
+     51.4584
+    ]
+   },
+   "properties": {
+    "place_id": "PL1597",
+    "name": "Baarschot, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1282,
+     50.5513
+    ]
+   },
+   "properties": {
+    "place_id": "PL1598",
+    "name": "Porfays (Membach), Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Liège",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2098,
+     50.5142
+    ]
+   },
+   "properties": {
+    "place_id": "PL1599",
+    "name": "Leykaul (Kalterherberg), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2516,
+     51.4069
+    ]
+   },
+   "properties": {
+    "place_id": "PL1600",
+    "name": "Heieind (Hoogeloon), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1137,
+     51.1722
+    ]
+   },
+   "properties": {
+    "place_id": "PL1601",
+    "name": "Heidehuizen (Mol), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerpen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2477,
+     51.0887
+    ]
+   },
+   "properties": {
+    "place_id": "PL1602",
+    "name": "Korspel (Beringen), Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9378,
+     51.4181
+    ]
+   },
+   "properties": {
+    "place_id": "PL1603",
+    "name": "L'Air Pur (Baarle-Nassau), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5563,
+     48.1491
+    ]
+   },
+   "properties": {
+    "place_id": "PL1604",
+    "name": "Mossoux (La Baffe), Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5499,
+     47.8449
+    ]
+   },
+   "properties": {
+    "place_id": "PL1605",
+    "name": "Cartaubry (Amont-et-Effreney), Haute-Saône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bourgogne-Franche-Comté",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1435,
+     50.7531
+    ]
+   },
+   "properties": {
+    "place_id": "PL1606",
+    "name": "Driescher Hof (Aachen), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3234,
+     48.4351
+    ]
+   },
+   "properties": {
+    "place_id": "PL1607",
+    "name": "Haut de l'Étang (Villacourt), Meurthe-et-Moselle",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

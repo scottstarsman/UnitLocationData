@@ -48960,6 +48960,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.54,
+     51.0045
+    ]
+   },
+   "properties": {
+    "claim_id": "C2127",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-22",
+    "place_id": "PL1039",
+    "location_name": "Königshoven, Bedburg, Nordrhein-Westfalen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Fifteenth Army, as Group von Manteuffel, takes over the Aachen-Roer front from the Fifth Panzer Army on 22 November",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: p. 2 and appendices 7a-7c"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.0899,
      48.9404
     ]
@@ -50641,6 +50682,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C2129",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-04",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen (representative point for the corps sector at the Wurm and Linnich)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "XLVII Panzer Corps is ordered to hand its Linnich sector to the XII SS Corps and leave for the Ardennes",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: pp. 16-18"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0984,
+     51.0654
+    ]
+   },
+   "properties": {
+    "claim_id": "C2130",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-04",
+    "place_id": "PL1043",
+    "location_name": "Heinsberg, Nordrhein-Westfalen (north of Heinsberg; exact place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "The 59th Infantry Division arrives on foot from Holland north of Heinsberg, fit only for defence",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: p. 18"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1218,
      43.658
     ]
@@ -51085,6 +51208,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R694;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5728,
+     50.5913
+    ]
+   },
+   "properties": {
+    "claim_id": "C2128",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-074C",
+    "unit_name": "LXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-10",
+    "place_id": "PL1040",
+    "location_name": "Bleibuir, Mechernich, Nordrhein-Westfalen (corps command post on the mid-December chart)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXXIV Corps and its sector pass from the Seventh Army to the Fifteenth Army about 10 December",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "nearest_later_command_post",
+    "location_temporal_offset_days": 5,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: pp. 23, 63, 68"
    }
   },
   {
@@ -53955,6 +54119,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R055;R002",
     "source_locator": "R055: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1032,
+     51.1251
+    ]
+   },
+   "properties": {
+    "claim_id": "C2131",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-12-17",
+    "place_id": "PL1042",
+    "location_name": "Effeld, Wassenberg, Nordrhein-Westfalen (corps command post on the mid-December chart)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Corps group Felber takes over the east of the XII SS Corps sector; the corps keeps the 176th Division salient",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: pp. 42, 68"
    }
   },
   {
@@ -59488,8 +59693,8 @@
     "location_date": "1945-01-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R515;R002",
-    "source_locator": "R515: p. 45, 46"
+    "reference_ids": "R515;R768;R002",
+    "source_locator": "R515: p. 45, 46; R768: p. 48"
    }
   },
   {
@@ -61260,6 +61465,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C2133",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-062D",
+    "unit_name": "62nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-25",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia (Monschau area; exact place not stated)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "The 62nd Volksgrenadier Division relieves the 246th Division near Monschau (LXXIV Corps) about 24-25 January",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: pp. 55, 68"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9832,
      51.7141
     ]
@@ -61581,6 +61827,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R766;R002",
     "source_locator": "R766: p. 11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0984,
+     51.0654
+    ]
+   },
+   "properties": {
+    "claim_id": "C2132",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-28",
+    "place_id": "PL1043",
+    "location_name": "Heinsberg, Nordrhein-Westfalen (representative point for the Heinsberg salient; behind the Roer)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "The 176th Infantry Division fights its main body back behind the Roer from the Heinsberg salient by 28 January",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: pp. 49-52"
    }
   },
   {
@@ -62237,6 +62524,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R764;R001",
     "source_locator": "R686: p. 375; R764: p. 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3971,
+     50.5196
+    ]
+   },
+   "properties": {
+    "claim_id": "C2134",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-02",
+    "place_id": "PL1044",
+    "location_name": "Schöneseiffen, Schleiden, Nordrhein-Westfalen (first area reached; brought up battalion by battalion)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "The 12th Volksgrenadier Division reaches the Schöneseiffen area during the US attack toward the Urft dam",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R768;R002",
+    "source_locator": "R768: p. 57 and appendix 6"
    }
   },
   {
@@ -64613,8 +64941,8 @@
     "location_date": "1945-02-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R259;R001",
-    "source_locator": "R259: table of 1945, February row"
+    "reference_ids": "R259;R768;R001",
+    "source_locator": "R259: table of 1945, February row; R768: p. 91"
    }
   },
   {

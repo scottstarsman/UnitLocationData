@@ -926,7 +926,8 @@ BATCH35 = lambda c: 'C2031' <= c['claim_id'] <= 'C2058'   # source fixes from de
 BATCH36 = lambda c: 'C2060' <= c['claim_id'] <= 'C2077'   # FMS B-466 batch (scenario 36) counts only in its own scenario
 BATCH37 = lambda c: 'C2078' <= c['claim_id'] <= 'C2115'   # FMS 19th Army batch (scenario 37) counts only in its own scenario
 BATCH38 = lambda c: 'C2116' <= c['claim_id'] <= 'C2126'   # FMS B-703 Army Group G batch (scenario 38) counts only in its own scenario
-NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c)
+BATCH39 = lambda c: 'C2127' <= c['claim_id'] <= 'C2134'   # FMS B-811 Fifteenth Army batch (scenario 39) counts only in its own scenario
+NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c)
 
 
 def scenario_26_activity_pilot():
@@ -1211,8 +1212,21 @@ def scenario_38_fms_b703_armygroupg():
     expect(s + ': inferred or approximate days capped at 0.3', tuple(by[i]['confidence'] for i in ('C2116', 'C2120', 'C2126')), ('0.3', '0.3', '0.3'))
 
 
+def scenario_39_fms_b811_15army():
+    """FMS B-811 (von Zangen, Fifteenth Army, 15 Nov 1944-22 Feb 1945): 8 new rows, R768 on C1089 and C1140."""
+    s = 'scenario 39'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH39(c)]
+    by = {c['claim_id']: c for c in claims}
+    expect(s + ': the batch adds 8 claims, all citing R768', (len(new), sum('R768' in c['reference_ids'].split(';') for c in new)), (8, 8))
+    expect(s + ': Fifteenth Army takes over at Königshoven on 22 November 1944', (by['C2127']['date'], by['C2127']['place_id']), ('1944-11-22', 'PL1039'))
+    expect(s + ': FMS-only changes keep a blank parent', tuple(by[i]['parent_unit_id'] for i in ('C2128', 'C2129', 'C2131', 'C2133')), ('', '', '', ''))
+    expect(s + ': arrivals and approximate days capped at 0.3', tuple(by[i]['confidence'] for i in ('C2130', 'C2132', 'C2134')), ('0.3', '0.3', '0.3'))
+    expect(s + ': B-811 added as second source to C1089 and C1140', tuple('R768' in by[i]['reference_ids'] for i in ('C1089', 'C1140')), (True, True))
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army):
         before = len(FAILURES)
         try:
             fn()

@@ -2,9 +2,32 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-b811-15army: Fifteenth Army from Foreign Military Studies B-811 (von Zangen; 30 October 2026)
+
+Scott approved the reading of the Fifteenth Army and Army Group B manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the branch `fms-b703-armygroupg` (merged as PR #56) (`C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`); the branch `fold3-links` (merged as PR #55) changes citations only. Source: Gustav von Zangen, B-811, *Fifteenth Army (22 Nov 44-9 Mar 45): Defense Battles at the Roer and Rhine*, parts I-V (English translation; parts I-IV dated 15 November 1947, part V 20 December 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The German copy and the German maps were not read.
+
+- **New reference** `R768` (B-811; archive_document, family `fms_german_manuscript`). Reliability: 18 of 21 checkable facts agree with the dataset and Ellis (86%). Good for corps and division sectors, reliefs and command-change dates; weak on Allied identifications.
+- **New places** `PL1039` to `PL1044` (6; OpenStreetMap Nominatim): Königshoven (Bedburg), Bleibuir, Linnich, Effeld, Heinsberg and Schöneseiffen.
+- **New claims** `C2127` to `C2134` (8; each note carries old value none, new value and reason):
+  - Fifteenth Army takes over the Aachen-Roer front as Group von Manteuffel on 22 November 1944 at Königshoven (`C2127`, 0.5). CMH `C0957` keeps the arrival of 15 November; the two rows are different events.
+  - LXXIV Corps to the Fifteenth Army about 10 December (`C2128`, Bleibuir, 0.5).
+  - XLVII Panzer Corps hands over its Linnich sector and leaves for the Ardennes on 4 December (`C2129`, 0.5).
+  - 59th Infantry Division arrives north of Heinsberg about 4 December (`C2130`, 0.3).
+  - Corps group Felber takes over the east of the XII SS Corps sector by 17 December; XII SS Corps at Effeld (`C2131`, 0.3).
+  - 176th Division back behind the Roer by about 28 January 1945 (`C2132`, 0.3).
+  - 62nd Volksgrenadier Division relieves the 246th near Monschau about 25 January (`C2133`, 0.3; inferred value: old none, new 25 January, reason: the night of 24/25 January).
+  - 12th Volksgrenadier Division reaches Schöneseiffen about 2 February (`C2134`, 0.3).
+  - The parent is blank on the seven rows other than `C2127` (inferred value: old none, new blank, reason: the change is stated only by B-811 and is not yet in the command relations table).
+- **Changed rows** (old value, new value and reason in each row's Review sentence):
+  - `C1089` (LXVII Corps to the Sixth Panzer Army, 17 January): `R768` added; event support one to two families; date and confidence unchanged.
+  - `C1140` (LVIII Panzer Corps under the Fifteenth Army, February): `R768` added as a second family; confidence stays 0.3 (approximate day).
+- **Command relation evidence**: `CR0598` gains an observed_during link for `C2127`. No new relation (next id stays `CR1064`).
+- **Semantic scenario 39** (38 is used by `fms-b703-armygroupg`); earlier batch counts exclude `C2127` to `C2134`.
+- Open points in `docs/roadmap.md` (FMS B-811 batch).
+
 ## fms-b703-armygroupg: Army Group G from Foreign Military Studies B-703 (Wilutzky; 30 October 2026)
 
-Scott approved the reading of the Army Group G manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c` (the unmerged branch `fold3-links` changes only citations of existing rows and adds no ids). Source: Horst Wilutzky (Ia of Army Group G), B-703, *The Fighting of Heeresgruppe G in the West: the final battle in central and southern Germany until the surrender (22 Mar-6 May 1945)*, English translation, with Schulz's statement and Hausser's commentary; NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. A-999 (Army Group G, 20 September-8 November 1944) was not found as separate pages in its Fold3 set and is left open.
+Scott approved the reading of the Army Group G manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c` (the branch `fold3-links`, merged as PR #55, changes only citations of existing rows and adds no ids). Source: Horst Wilutzky (Ia of Army Group G), B-703, *The Fighting of Heeresgruppe G in the West: the final battle in central and southern Germany until the surrender (22 Mar-6 May 1945)*, English translation, with Schulz's statement and Hausser's commentary; NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. A-999 (Army Group G, 20 September-8 November 1944) was not found as separate pages in its Fold3 set and is left open.
 
 - **New reference** `R767` (B-703; archive_document, family `fms_german_manuscript`). Reliability: 18 of 23 checkable facts agree with the dataset, Ellis and de Lattre (78%). Good for army group headquarters moves and subordination changes; weak and sometimes late on Allied crossings. Year written: the signature is dated 12 January 1947 but the preface says September-October 1947; 1947 is used.
 - **New places** `PL1032` to `PL1038` (7; OpenStreetMap Nominatim): Michelstadt, Neuenstadt am Kocher, Waldenbuch, Wallerstein, Schierling, Ampfing and Hohenaschau. Inferred value: the manuscript's "Neuenstadt" is taken to be Neuenstadt am Kocher (the town of that name in the First Army zone).

@@ -101,6 +101,19 @@ Scott on 31 October 2026 asked to continue the weekly sheets from 26 September w
 - **Checks:** validator warnings 45 to 61 and coordinate warnings 19 to 23 (non-failing prompts; new map rows against nearby objective, front-line or sector rows); no exception added.
 - **Scenario 59** checks the batch.
 
+### Rule of 31 October 2026: map rows are coarse filler
+
+Scott on 31 October 2026 decided that the situation-map rows are coarse filler and never outrank a text row: from now on a map row is set to 0.7 (two source families) only when an existing non-map row of the unit agrees **within 5 km** (old value: within 10 km) on the same day (US: within three days). Applies to new rows from village pass 3 on; earlier rows are not changed. `tools/loc12ag` generation and the `R781` reliability note now say so (reliability_note old value "0.7 when another family agrees within 10 km on the same or the next day", new value adds the 5 km rule and its date). 54 of the 106 earlier map rows at 0.7 rest on agreement of 5-10 km (roadmap point 40, for Scott's decision).
+
+### Village pass 3 (batch 4a readings with no town within 3 km)
+
+Scott on 31 October 2026 accepted the batch 4a recommendations (roadmap points 35 to 38) and asked for village pass 3.
+- **New places** `PL1801` to `PL1843` (43; OpenStreetMap Nominatim village, hamlet, suburb and locality points within 3 km of the map point, searched 31 October 2026; names in the local language, Dutch, German or French; Belgian, Dutch and German hamlets marked "1944 municipality to be confirmed").
+- **New claims** `C3391` to `C3435` (45: 11 US, 20 British, Canadian, Polish and French, 14 German; 31 at 0.5, 14 at 0.3, none at 0.7 under the 5 km rule), written as the other map rows (parent blank and commander unknown on all: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps).
+- **Not written (2):** 226th Infantry and First Canadian Army on 10 October, no named settlement within 3 km (the Flemish coast polders and the Braakman). A forest compartment (Quart en Réserve) was passed over for the next hamlet (La Malhache) for XV Corps on 3 October.
+- **Agreement (existing non-map row within 10 km):** one-day 2 of 4 (other Allied 2 of 3, German 0 of 1); three-day 4 of 8 (US 0 of 1, other Allied 4 of 5, German 0 of 2).
+- **Scenario 60** checks the pass. No existing claim row changed. No relation, no conflict group.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

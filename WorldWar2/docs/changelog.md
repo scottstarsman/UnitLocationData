@@ -2,6 +2,69 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-19army: German Nineteenth Army and LXIV Corps from Foreign Military Studies B-766, B-263, B-463, B-468 and B-550 (30 October 2026)
+
+Scott approved the 36 proposed changes on 30 October 2026 after a read-only check of the five manuscripts against the dataset and de Lattre (`R686`). One branch from `main` `664d9eb`. Sources: Botsch, B-766 (16 September-17 November 1944) and B-263 (8 November 1944-10 January 1945); Brandstaedter, B-463 (4 January-21 March 1945); Thumm, B-468 (1 November-31 December 1944) and B-550 (6 December 1944-28 January 1945); NARA M1035, read on Fold3. These are US Government works, and the claims paraphrase them in English. The reading notes stay private and are not in this repository.
+
+- **New references** `R762` (B-766), `R763` (B-263), `R764` (B-463, strength alias `FMS B-463`), `R765` (B-468) and `R766` (B-550). All are archive_document, family `fms_german_manuscript`. Reliability (share of checkable facts that agree):
+  - B-766: 70%.
+  - B-263: 62%.
+  - B-463: 62%.
+  - B-468: 60%.
+  - B-550: 40%.
+
+  All five are good for German dates, headquarters and orders of battle, and poor for Allied unit identifications. B-468 and B-550 are used for German facts only. Arrival and departure dates are capped at 0.3.
+- **New places** `PL1016` to `PL1031` (16; OpenStreetMap Nominatim): Guebwiller, Kirchhofen, Widensolen, Biffontaine, Illfurth, Orbey (Urbeis), Sigolsheim, Engen, Le Ménil, Remiremont, Éloyes, Hérimoncourt, Burnhaupt-le-Haut, Riedwihr, Ribeauvillé and Munster. The approval estimated about 9; seven more were needed because places such as Remiremont and Munster were not yet in the table. Inferred value: "Urbeis" in B-263 and B-550 is taken to be Orbey (German Urbeis), not Urbeis in the Bas-Rhin.
+- **New claims** `C2078` to `C2115` (38). Each note carries old value (none), new value and reason.
+  - 29 from the check:
+    - Nineteenth Army headquarters at Guebwiller (6 October 1944 move; 4 January 1945) and Kirchhofen (5 February 1945).
+    - LXIV Corps at Remiremont (22 September), Biffontaine (22 October), Colmar (6 December), Ribeauvillé (13 December attack) and Widensolen (command post on 26 January 1945; Thumm relieved and Grimmeiss named on 28 January).
+    - LXVI Corps to the Fifth Panzer Army (29 September); LXXXIX Corps under the army (16 October); LXIII Corps on the Ill south-west of Illfurth (about 26 November, 0.3); XC Corps taken from the army (6 December).
+    - 198th Division: Éloyes (25 September, 0.3), Dannemarie (21 November), Sélestat (27 November arrival, 0.3) and departure (17 March 1945, 0.3).
+    - 189th merged into the 198th (27 September, 0.3); 189th at Sigolsheim (December).
+    - 269th arrives (31 October, 0.3). 716th relieves the 16th at Saint-Dié (14 November). 16th VG at Orbey (24 December).
+    - Panzer-Brigade 106 arrives at Belfort (1 October, 0.3).
+    - French 4th Moroccan Mountain identified at Le Ménil (6 October, 0.3). French 1st Armoured at Plancher-les-Mines (28 September, 0.7, de Lattre and B-766).
+    - February 1945 mergers of the 708th, 189th and 716th Divisions (0.3; not marked disestablished, because cadres were kept).
+    - A.O.K. 24 (reconnaissance staff Donaueschingen) at Engen (0.3).
+  - 6 rows that resolve roadmap deferred items:
+    - 9th Colonial Division at Hérimoncourt (17 November 1944, 0.7).
+    - US 3rd Division over the Ill at Riedwihr (23 January 1945, 0.7).
+    - US 28th Division at Colmar (2 February, 0.5).
+    - French 5th Armoured into Colmar (2 February, 0.7).
+    - The Burnhaupt encirclement: 5th Armoured (28 November) and 1st Armoured (29 November), 0.5 each.
+  - 3 alternates, at 0.3; the preferred row and its confidence are unchanged:
+    - `C2113` (Rasp, 18 December 1944, B-263), group `G030` with `C1018` (15 December).
+    - `C2114` (Foertsch, 20 February 1945, B-463), `G031` with `C1188` (15 February).
+    - `C2115` (Obstfelder, 5 March 1945, B-463), `G032` with `C1189` (1 March).
+- **Changed rows.** Each carries a `Review (FMS 19th Army batch, 30 October 2026)` sentence with old value, new value and reason:
+  - `C1018`, `C1188`, `C1189`: conflict_group_id blank to `G030`, `G031`, `G032`.
+  - `C1016`: `R762` added; the B-766 date of 13 November is the day CMH gives for the boundary change becoming effective. This supports the row, so no alternate was added.
+  - `C1054`, `C1117`: commander unknown to Generalmajor Zorn (B-468 p. 11; rank inferred from "Brig Gen"); `R765` added.
+  - Strength fill of 13 January 1945 (B-463 p. 7, infantry fighting strength, scope sub_force; `R764` added):
+    - `C1118` (198th): 421.
+    - `C1119` (708th): 1,240.
+    - `C1117` (189th): 968.
+    - `C1120` (16th VG): 1,728.
+    - `C1121` (338th): 1,735.
+    - `C1122` (159th): 1,830.
+    - `C1123` (716th): 1,864.
+    - `C1113` (269th): 613.
+  - `C2051`: commander unchanged. de Lattre p. 199 does name Homme de Courbière on 6 October, so the planned correction to Oschmann was not made. B-766 p. 23 has Oschmann due to take over on 26 September (a doubtful reading); recorded as an open point.
+- **FMS date errors noted, no value changed:**
+  - `C1615`: Strasbourg 26 November in B-468.
+  - `C1630`: Delle 14 November in B-263.
+  - `C1099`, `C1100`: Sonnenwende 8 January in B-550.
+  - `C1642`: link-up 3 February in B-463.
+  - `C1763`: Rixheim 25 November in B-263.
+  - `C1125` to `C1127`: Army Group G before 23 January in B-463.
+- **Checks.**
+  - Semantic scenario 37 (8 expectations); the batch is excluded from the counts of scenarios 26 to 35 (`BATCH37`).
+  - One coordinate exception: the 198th Division's first elements are near Sélestat on 27 November (`C2090`), 83 km from Seppois (`C2054`, 26 November); a documented move by road and rail.
+  - Validator warnings unchanged (42).
+  - who_controls grid: 12,460 answers, 0 changed, 0 new keys.
+- **Not changed (deferred):** 1st Armoured at Seppois (19 November), still de Lattre only; 9th Colonial at Lörrach (April 1945), outside the manuscripts; the other de Lattre deferred items. See `docs/roadmap.md`.
+
 ## fms-b466-geyr: German positions and command dates from Foreign Military Studies MS B-466 (30 October 2026)
 
 Scott approved the data changes on 30 October 2026 after a read-only check of the source against the dataset and Ellis (vol. I). One branch from `main` `c8a077f`. Source: Geyr von Schweppenburg, *Die Invasion (Geschichte der Panzergruppe West)*, FMS MS B-466 (1947), NARA M1035, read on Fold3 (German typescript, printed pages; annexes by number). A US Government work; the claims paraphrase it in English. The reading notes stay private and are not in this repository.

@@ -498,7 +498,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -7938,7 +7938,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 24
+    "claims_count": 28
    }
   },
   {
@@ -10758,7 +10758,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 7
+    "claims_count": 9
    }
   },
   {
@@ -11098,7 +11098,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comté",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -12078,7 +12078,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -12158,7 +12158,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12578,7 +12578,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 4
+    "claims_count": 10
    }
   },
   {
@@ -16378,7 +16378,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19338,7 +19338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -19618,7 +19618,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Haute-Saône",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -20038,6 +20038,326 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2113,
+     47.9095
+    ]
+   },
+   "properties": {
+    "place_id": "PL1016",
+    "name": "Guebwiller, Haut-Rhin",
+    "alt_names": "Gebweiler",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.741,
+     47.9227
+    ]
+   },
+   "properties": {
+    "place_id": "PL1017",
+    "name": "Kirchhofen, Baden-Württemberg",
+    "alt_names": "Ehrenkirchen-Kirchhofen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4809,
+     48.0631
+    ]
+   },
+   "properties": {
+    "place_id": "PL1018",
+    "name": "Widensolen, Haut-Rhin",
+    "alt_names": "Widensohlen",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8052,
+     48.2113
+    ]
+   },
+   "properties": {
+    "place_id": "PL1019",
+    "name": "Biffontaine, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.267,
+     47.674
+    ]
+   },
+   "properties": {
+    "place_id": "PL1020",
+    "name": "Illfurth, Haut-Rhin",
+    "alt_names": "Illfurt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1622,
+     48.1273
+    ]
+   },
+   "properties": {
+    "place_id": "PL1021",
+    "name": "Orbey, Haut-Rhin",
+    "alt_names": "Urbeis",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.314,
+     48.1343
+    ]
+   },
+   "properties": {
+    "place_id": "PL1022",
+    "name": "Sigolsheim, Haut-Rhin",
+    "alt_names": "Siegolsheim",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7704,
+     47.8532
+    ]
+   },
+   "properties": {
+    "place_id": "PL1023",
+    "name": "Engen, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7836,
+     47.9081
+    ]
+   },
+   "properties": {
+    "place_id": "PL1024",
+    "name": "Le Ménil, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5913,
+     48.0159
+    ]
+   },
+   "properties": {
+    "place_id": "PL1025",
+    "name": "Remiremont, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6112,
+     48.0927
+    ]
+   },
+   "properties": {
+    "place_id": "PL1026",
+    "name": "Éloyes, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vosges",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.882,
+     47.4419
+    ]
+   },
+   "properties": {
+    "place_id": "PL1027",
+    "name": "Hérimoncourt, Doubs",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Doubs",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1463,
+     47.7317
+    ]
+   },
+   "properties": {
+    "place_id": "PL1028",
+    "name": "Burnhaupt-le-Haut, Haut-Rhin",
+    "alt_names": "Burnhaupt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4391,
+     48.132
+    ]
+   },
+   "properties": {
+    "place_id": "PL1029",
+    "name": "Riedwihr, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3249,
+     48.1925
+    ]
+   },
+   "properties": {
+    "place_id": "PL1030",
+    "name": "Ribeauvillé, Haut-Rhin",
+    "alt_names": "Rappoltsweiler",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1372,
+     48.0409
+    ]
+   },
+   "properties": {
+    "place_id": "PL1031",
+    "name": "Munster, Haut-Rhin",
+    "alt_names": "Münster",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Alsace",
     "claims_count": 1
    }
   }

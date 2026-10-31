@@ -48673,6 +48673,293 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1157,
+     49.2788
+    ]
+   },
+   "properties": {
+    "claim_id": "C2138",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-001A",
+    "unit_name": "First Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "place_id": "PL1046",
+    "location_name": "Sankt Ingbert, Saarland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "First Army headquarters flag at St. Ingbert on the Army Group G situation map of the evening of 20 November",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: Anlage 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2113,
+     47.9095
+    ]
+   },
+   "properties": {
+    "claim_id": "C2140",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "place_id": "PL1016",
+    "location_name": "Guebwiller, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Nineteenth Army headquarters flag at Gebweiler on the Army Group G situation map of the evening of 20 November",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: Anlage 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5306,
+     49.5058
+    ]
+   },
+   "properties": {
+    "claim_id": "C2141",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-416D",
+    "unit_name": "416th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "place_id": "PL1047",
+    "location_name": "Orscholz, Mettlach, Saarland (Orscholz switch position)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 416th Division holds the Orscholz switch under the LXXXII Corps after falling back a few km north",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 68 and Anlagen 16 and 18"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5526,
+     49.4474
+    ]
+   },
+   "properties": {
+    "claim_id": "C2142",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-019D",
+    "unit_name": "19th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "place_id": "PL1048",
+    "location_name": "Büdingen, Merzig, Saarland (Saar heights position south of Büdingen)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 19th Division holds the Saar heights position; a penetration east of Launstroff is sealed off south of Büdingen",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: pp. 68-69"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5526,
+     49.4474
+    ]
+   },
+   "properties": {
+    "claim_id": "C2143",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-025D",
+    "unit_name": "25th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-20",
+    "place_id": "PL1048",
+    "location_name": "Büdingen, Merzig, Saarland (wood south of Büdingen)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "A counterattack by the 25th Panzergrenadier Division seals off the penetration south of Büdingen",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 69"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7072,
+     49.1043
+    ]
+   },
+   "properties": {
+    "claim_id": "C2144",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-036D",
+    "unit_name": "36th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-20",
+    "place_id": "PL0944",
+    "location_name": "Saint-Avold, Moselle (south of St. Avold)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 36th Division of the XIII SS Corps is pushed back by continuous attacks south of St. Avold",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 72 and Anlage 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8287,
+     48.9983
+    ]
+   },
+   "properties": {
+    "claim_id": "C2145",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-20",
+    "place_id": "PL1049",
+    "location_name": "Hellimer, Moselle (line Hellimer - Nelling - Munster - Insviller)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 11th Panzer Division holds a mobile defence on the line Hellimer - Nelling - Munster - Insviller",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 73 and Anlage 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3611,
      50.9221
     ]
@@ -49061,7 +49348,7 @@
     "location_name": "Sarre-Union, Bas-Rhin",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "arrival",
     "current_activity": "Panzer Lehr Division, released by OKW to the First Army, reaches the Sarre-Union area after a 300-mile march",
     "operation_id": "OP-LORRAINE",
@@ -49074,8 +49361,8 @@
     "location_date": "1944-11-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R646;R002",
-    "source_locator": "R646: p. 464-465"
+    "reference_ids": "R646;R770;R002",
+    "source_locator": "R646: p. 464-465; R770: p. 81"
    }
   },
   {
@@ -49206,6 +49493,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7072,
+     49.1043
+    ]
+   },
+   "properties": {
+    "claim_id": "C2146",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-11-23",
+    "place_id": "PL0944",
+    "location_name": "Saint-Avold, Moselle (south-east of St. Avold)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "The 17th SS Panzergrenadier Division relieves the fought-out 559th Division south-east of St. Avold",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 79"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7072,
+     49.1043
+    ]
+   },
+   "properties": {
+    "claim_id": "C2147",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-559D",
+    "unit_name": "559th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-23",
+    "place_id": "PL0944",
+    "location_name": "Saint-Avold, Moselle (south-east of St. Avold)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "The completely fought-out 559th Division is relieved south-east of St. Avold, to be refitted as a battle group",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 79"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4255,
+     49.0509
+    ]
+   },
+   "properties": {
+    "claim_id": "C2148",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-553D",
+    "unit_name": "553rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-23",
+    "place_id": "PL1050",
+    "location_name": "Bitche, Moselle (assembly area after the breakout from Zabern)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "The 553rd Division breaks out north from the Zabern area in small groups and gathers near Bitsch",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: pp. 67 and 85"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4667,
      50.7833
     ]
@@ -49329,6 +49739,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0899,
+     48.9404
+    ]
+   },
+   "properties": {
+    "claim_id": "C2151",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-24",
+    "place_id": "PL0609",
+    "location_name": "Sarre-Union, Bas-Rhin (from south of Sarre-Union toward Pfalzburg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "The half-refitted Panzer Lehr Division counterattacks from south of Sarre-Union about 16:00 in two battle groups",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: pp. 81-82 and Anlage 19"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5912,
      49.3415
     ]
@@ -49445,6 +49896,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R720;R002",
     "source_locator": "R720: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9445,
+     49.0366
+    ]
+   },
+   "properties": {
+    "claim_id": "C2149",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL1051",
+    "location_name": "Wissembourg, Bas-Rhin (corps command post)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "The LXXXIX Corps relieves Higher Command Vosges in the sector Ingwiller - Haguenau - Rhine; corps post at Weissenburg",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: pp. 83-84"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3969,
+     47.7442
+    ]
+   },
+   "properties": {
+    "claim_id": "C2155",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-25",
+    "place_id": "PL1052",
+    "location_name": "Rixheim, Haut-Rhin (Ill ridge near Rixheim)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "Panzer Brigade 106 attacks south-west from east of Mulhouse and is stopped near Rixheim after a few km",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 85"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2182,
+     48.4787
+    ]
+   },
+   "properties": {
+    "claim_id": "C2156",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-708D",
+    "unit_name": "708th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL1053",
+    "location_name": "Schirmeck, Bas-Rhin (Bruche valley)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "The fought-out 708th Division is pushed back south-east over the Bruche valley near Schirmeck",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 86"
    }
   },
   {
@@ -49676,7 +50250,7 @@
     "location_name": "Haguenau, Bas-Rhin",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "arrival",
     "current_activity": "The first units of the 256th VG Division reach Haguenau; the rest follow on 28 November",
     "operation_id": "OP-VOSGES",
@@ -49689,8 +50263,8 @@
     "location_date": "1944-11-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R652;R002",
-    "source_locator": "R652: p. 379, 386"
+    "reference_ids": "R652;R770;R002",
+    "source_locator": "R652: p. 379, 386; R770: pp. 77-79"
    }
   },
   {
@@ -50149,6 +50723,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.9445,
+     49.0366
+    ]
+   },
+   "properties": {
+    "claim_id": "C2150",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-27",
+    "place_id": "PL1051",
+    "location_name": "Wissembourg, Bas-Rhin (Weissenburg area, committed between Ingwiller and Merzweiler)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "First parts of the 245th Division arrive from Holland in the Weissenburg area and go straight into the line",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: pp. 79 and 84"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -50477,6 +51092,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0899,
+     48.9404
+    ]
+   },
+   "properties": {
+    "claim_id": "C2152",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-30",
+    "place_id": "PL0609",
+    "location_name": "Sarre-Union, Bas-Rhin (line Voellerdingen - Domfessel - Lorentzen)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "OKW orders the Panzer Lehr Division out of the line in the night 30 November/1 December for the Ardennes",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: p. 93 and Anlagen 19 and 20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3658,
      49.1401
     ]
@@ -50552,6 +51208,293 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R023;R002",
     "source_locator": "R023: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.75,
+     49.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C2153",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-021D",
+    "unit_name": "21st Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-02",
+    "place_id": "PL0433",
+    "location_name": "Saarlouis, Saarland (Westwall on both sides of Saarlautern)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "The 21st Panzer Division goes back behind the Saar in the night 1/2 December to hold the Westwall at Saarlautern",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R001",
+    "source_locator": "R770: p. 91"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9991,
+     49.1028
+    ]
+   },
+   "properties": {
+    "claim_id": "C2137",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-12-03",
+    "place_id": "PL1045",
+    "location_name": "Bad Bergzabern, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Army Group G headquarters flag at Bergzabern on the situation map of 3 December; chief of staff changes on 4 December",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: Anlage 20 and Anlage 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1157,
+     49.2788
+    ]
+   },
+   "properties": {
+    "claim_id": "C2139",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-001A",
+    "unit_name": "First Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-03",
+    "place_id": "PL1046",
+    "location_name": "Sankt Ingbert, Saarland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "First Army headquarters still at St. Ingbert on the map of 3 December; Obstfelder now commands the army",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: Anlage 20 and Anlage 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.75,
+     49.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C2154",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-03",
+    "place_id": "PL0433",
+    "location_name": "Saarlouis, Saarland (Saar front near Saarlautern)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "The 719th Division, just arrived from Denmark, is in the LXXXII Corps line on the Saar near Saarlautern",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R001",
+    "source_locator": "R770: pp. 92, 100 and Anlagen 20 and 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6375,
+     49.4427
+    ]
+   },
+   "properties": {
+    "claim_id": "C2157",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-082C",
+    "unit_name": "LXXXII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-03",
+    "place_id": "PL1054",
+    "location_name": "Merzig, Saarland (corps flag near Merzig and Fremersdorf)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "The LXXXII Corps under Hahm holds the Westwall on the Saar near Merzig on the map of 3 December",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: Anlagen 20 and 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0,
+     49.2333
+    ]
+   },
+   "properties": {
+    "claim_id": "C2158",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-013C",
+    "unit_name": "XIII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-12-03",
+    "place_id": "PL0576",
+    "location_name": "Saarbrücken, Saarland (front arc south and south-west of Saarbrücken)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The XIII SS Corps under Simon holds a front arc before the Westwall south and south-west of Saarbrücken",
+    "operation_id": "OP-LORRAINE",
+    "operation": "Lorraine campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Lorraine",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R001",
+    "source_locator": "R770: pp. 92, 97 and Anlagen 20 and 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4255,
+     49.0509
+    ]
+   },
+   "properties": {
+    "claim_id": "C2159",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-361D",
+    "unit_name": "361st Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-03",
+    "place_id": "PL1050",
+    "location_name": "Bitche, Moselle (between Bitsch and Saar-Union)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 361st Volksgrenadier Division is on the LXXXIX Corps front between Bitsch and Sarre-Union on the map of 3 December",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R770;R002",
+    "source_locator": "R770: Anlagen 20 and 21"
    }
   },
   {

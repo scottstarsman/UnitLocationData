@@ -48,6 +48,10 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** organised fighting ended effective 15 April in B-849 against the Fifteenth Army surrender of 13 April in `C1215`; the LXXXI Corps commanding general captured on the evening of 11 April (doubtful reading) with Burdach from 12 April in B-849 against Köchling surrendering on 13 April in `C1230`.
 - **Semantic scenario 50.**
 
+### Open points
+
+- `docs/roadmap.md` gains the nine open points of this batch with a recommendation each. No data changed.
+
 ## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
 
 Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.

@@ -23,6 +23,18 @@ Scott approved the reading of the Army Group G manuscripts and a data branch on 
 - **Semantic scenario 38**; scenario counts of earlier batches exclude `C2116` to `C2126`.
 - Open points in `docs/roadmap.md` (FMS B-703 batch).
 
+## fold3-links: first-page Fold3 URLs for the FMS references (30 October 2026)
+
+Scott approved this on 30 October 2026. One branch from `main` `535b12c`. Each reference's `full_citation` gains a `Link review (branch fold3-links ...)` sentence giving the old URL, the new URL and the reason. In every claim and coordinate exception that cited an old URL, the `source` is updated to the new one. No claim values, ids or confidences changed.
+
+- `R761` (B-466): `https://www.fold3.com/image/158929558` to `https://www.fold3.com/image/158929549/b-466-panzer-group-west-mid-1943-5-jul-1944-page-1-...`. Reason: the old URL was a later image, not the first page.
+- `R762` (B-766): the Fold3 search `?keywords=B-766` to `https://www.fold3.com/image/160256297/b-766-nineteenth-army-16-sep-17-nov-1944-page-1-...`. Reason: a placeholder search link replaced by the first page.
+- `R763` (B-263): `https://www.fold3.com/image/153641910` to `https://www.fold3.com/image/153641895/b-263-nineteenth-army-8-nov-1944-10-jan-1945-page-1-...`. Reason: the old URL was a later image.
+- `R764` (B-463): the Fold3 search `?keywords=B-463` to `https://www.fold3.com/image/153793978/b-463-nineteenth-army-4-jan-21-mar-1945-page-1-...`. Reason: a placeholder search link.
+- `R765` (B-468): `https://www.fold3.com/image/158929726` to `https://www.fold3.com/image/158929720/b-468-lxiv-corps-1-nov-31-dec-1944-page-1-...`. Reason: the old URL was a later image.
+- `R766` (B-550): the Fold3 search `?keywords=B-550` to `https://www.fold3.com/image/160245654/b-550-lxiv-corps-6-dec-1944-28-jan-1945-page-1-...`. Reason: a placeholder search link.
+- The full new URLs are in `data/references_meta.csv`. Rows touched: 20 claim files cite `R761`; 22 claim files cite `R762` to `R766`; 2 coordinate exceptions.
+
 ## fms-19army: German Nineteenth Army and LXIV Corps from Foreign Military Studies B-766, B-263, B-463, B-468 and B-550 (30 October 2026)
 
 Scott approved the 36 proposed changes on 30 October 2026 after a read-only check of the five manuscripts against the dataset and de Lattre (`R686`). One branch from `main` `664d9eb`. Sources: Botsch, B-766 (16 September-17 November 1944) and B-263 (8 November 1944-10 January 1945); Brandstaedter, B-463 (4 January-21 March 1945); Thumm, B-468 (1 November-31 December 1944) and B-550 (6 December 1944-28 January 1945); NARA M1035, read on Fold3. These are US Government works, and the claims paraphrase them in English. The reading notes stay private and are not in this repository.

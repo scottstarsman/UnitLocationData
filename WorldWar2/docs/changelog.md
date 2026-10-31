@@ -13,9 +13,15 @@ Scott approved the reading of B-078 and a data branch on 31 October 2026. One br
 - **Changed rows** (old value, new value and reason in each row's Review sentence):
   - `C1012` (Panzer Lehr at Sarre-Union, 23 November) and `C1033` (256th VG at Haguenau, 26 November): `R770` added; event support one to two families; confidence 0.5 to 0.7.
   - Relations `CR0708`, `CR0710` and `CR0715`: valid_to_earliest moved to the new last listed claim (1944-11-01 to 1944-11-25; 1944-11-07 to 1944-12-03; 1944-11-23 to 1944-11-30); valid_to unchanged.
-- **Command relation evidence**: 16 observed_during links for the new rows with a parent. No new relation (next id stays `CR1064`). No conflict group (next stays `G034`).
+- **Command relation evidence**: 16 observed_during links for the new rows with a parent. No new relation in the first commit (see the CMH check below for `CR1064` to `CR1066`). No conflict group (next stays `G034`).
 - **Semantic scenario 41**; earlier batch counts exclude `C2137` to `C2159`.
 - Open points in `docs/roadmap.md` (FMS B-078 batch).
+- **CMH check of the three disagreements** (second commit, 31 October 2026; Scott asked for it):
+  - 553rd VG Division: confirmed by CMH Riviera to the Rhine ch. 21 p. 373 (`R652`). `CR0725` (LXIV Corps) valid_to 1945-01-04 to 1944-11-19 (basis inferred_from_next_claim to narrative; link from `C1028` changed from observed_during to asserts_end); new relation `CR1064` (LXXXIX Corps, 20 November 1944 to 4 January 1945); `C2148` parent blank to `GER-COR-089C` (confidence stays 0.3, inferred arrival day).
+  - 245th Division: confirmed by CMH Riviera ch. 21 p. 379 (`R652`), Lorraine ch. 12 p. 547 (`R653`) and Riviera ch. 26 p. 467. `CR0739` (LXVII Corps, Holland) valid_to 1945-01-06 to 1944-11-26; new relation `CR1065` (LXXXIX Corps, 27 November 1944 to 6 January 1945); `C2150` parent blank to `GER-COR-089C` (stays 0.3, arrival).
+  - 719th Division: confirmed by CMH Lorraine ch. 12 p. 535 (`R653`). `CR0641` (LXXXVIII Corps, Holland) valid_to 1944-12-14 to 1944-12-02; new relation `CR1066` (LXXXII Corps, 3 to 14 December 1944); `C2154` parent blank to `GER-COR-082C`, confidence 0.5 to 0.7; Context note on the Lexikon month row `C1061` (no value changed).
+  - Higher Command Vosges: CMH Riviera ch. 21 p. 378 places it only "in the Strasbourg area" and names Feldkommandantur 987 at Haguenau among its elements; it does not name the command post. `C1034` is left unchanged.
+  - No new reference (the CMH chapters are `R652` and `R653`); next relation id `CR1067`.
 
 ## fms-b701-armygroupb: Army Group B from Foreign Military Studies B-701 (Reichhelm; 30 October 2026)
 

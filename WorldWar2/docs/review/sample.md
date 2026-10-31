@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R729 | general | CMH Combat Chronicle: 7th Armored Division (Wayback copy) | official_history | https://web.archive.org/web/2018/https://history.army.mil/html/forcestruc/cbtchron/cc/007ad.htm | narrative |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R729: narrative |
 
-## Part 2: command relations (20 of 1062)
+## Part 2: command relations (20 of 1065)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 

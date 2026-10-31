@@ -1246,7 +1246,11 @@ def scenario_41_fms_b078_armygroupg():
     by = {c['claim_id']: c for c in claims}
     expect(s + ': the batch adds 23 claims, all citing R770', (len(new), sum('R770' in c['reference_ids'].split(';') for c in new)), (23, 23))
     expect(s + ': headquarters flags Bergzabern, St. Ingbert, Gebweiler', tuple(by[i]['place_id'] for i in ('C2137', 'C2138', 'C2140')), ('PL1045', 'PL1046', 'PL1016'))
-    expect(s + ': rows that differ from the relations table keep a blank parent', tuple(by[i]['parent_unit_id'] for i in ('C2148', 'C2150', 'C2153', 'C2154')), ('', '', '', ''))
+    expect(s + ': CMH check: 553rd and 245th under LXXXIX Corps, 719th under LXXXII Corps; 21st Panzer stays blank', tuple(by[i]['parent_unit_id'] for i in ('C2148', 'C2150', 'C2153', 'C2154')), ('GER-COR-089C', 'GER-COR-089C', '', 'GER-COR-082C'))
+    import csv
+    rels = {r['relation_id']: r for r in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'command_relations.csv'), encoding='utf-8'))}
+    expect(s + ': Holland and LXIV relations closed, three new relations', tuple(rels[i]['valid_to'] for i in ('CR0725', 'CR0739', 'CR0641', 'CR1064', 'CR1065', 'CR1066')), ('1944-11-19', '1944-11-26', '1944-12-02', '1945-01-04', '1945-01-06', '1944-12-14'))
+    expect(s + ': 719th on the Saar raised to 0.7 with CMH', by['C2154']['confidence'], '0.7')
     expect(s + ': approximate nights and arrivals capped at 0.3', tuple(by[i]['confidence'] for i in ('C2146', 'C2147', 'C2148', 'C2150', 'C2156')), ('0.3',) * 5)
     expect(s + ': B-078 as second family raises C1012 and C1033 to 0.7', tuple((by[i]['confidence'], 'R770' in by[i]['reference_ids']) for i in ('C1012', 'C1033')), (('0.7', True), ('0.7', True)))
 

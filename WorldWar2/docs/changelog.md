@@ -2,6 +2,29 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## loc-12ag-maps: HQ 12th Army Group situation maps, pass 1 (31 October 2026)
+
+Scott approved a pass over the Library of Congress series *HQ 12th Army Group situation maps* (public domain, 416 daily sheets 6 June 1944 to 26 July 1945) on 31 October 2026: one sheet a week at the 1200 hrs situation, in batches, one commit per batch, on branch `loc-12ag-maps` from `main` `62e97c3`. The maps are a separate source family (contemporary Allied situation maps): Allied units from their own reports and German units from G-2 estimates.
+
+Rules applied (accepted by Scott): one reference for the series with the sheet id and situation date in each claim's `source_locator`; division points read as the main body and corps or army symbols as the headquarters at a precision of 10 km; German units at confidence 0.3; Allied units at 0.5, or 0.7 when another source family has the unit within 10 km on the same or the next day; no command relation and no parent from the maps (every new row has a blank parent); no front-line trace; units shown en route, marked as elements, unlocated or doubtful, and brigades and regiments stay in the private reading notes; placeholder units get no first claim; a unit shown between documented dates gets a claim; a disagreement with an existing row is logged as an open question and the existing row is unchanged. Commander is `unknown` on every new row because the maps name none. Reading notes are private.
+
+### Tools (commit 1)
+
+- **New helper folder** `tools/loc12ag/` (not part of the build or the checks): `sheet_index.csv` (416 sheets by date, no missing day; 50 weekly sheets flagged for pass 1), `georef.py` (graticule fit through a Lambert conformal conic plane and an affine transform with residuals in km; registration of other scans of the same base sheet by phase correlation) and `sheet3_control.json` (base sheet 3, Normandy, 14 graticule ticks, RMS about 1 km). Needs numpy and Pillow.
+
+### Batch 1: Normandy, 6 June-25 July 1944 (8 weekly sheets)
+
+- **New reference** `R781` (the map series; archive_document, family `loc_12ag_situation_maps`).
+- **Sheets read:** cs000001 (6 June), cs000008 (13 June), cs000015 (20 June), cs000022 (27 June), cs000029 (4 July), cs000036 (11 July), cs000043 (18 July), cs000050 (25 July), all at 1200 hrs.
+- **New places** `PL1143` to `PL1186` (44; OpenStreetMap Nominatim): Normandy communes within 3 km of a map point where no existing place was within 3 km.
+- **New claims** `C2282` to `C2468` (187: 108 German at 0.3, 69 British and 10 Canadian; 10 Allied rows at 0.7 and 69 at 0.5; each note carries old value none, new value and reason). Event type `other` for division points and `hq_observation` for corps and army headquarters; `location_basis` documented_on_date; each row keeps its own map point in `coord_override` within 3 km of its place.
+  - Parent blank on all 187 (inferred value: old none, new blank, reason: no command relation is taken from the situation maps).
+  - Commander `unknown` on all 187 (old none, new unknown, reason: the maps name no commander).
+- **Agreement with the dataset:** 73 new rows have an existing row of the same unit within three days; 42 of them are within 10 km (58%). Most of the 31 others compare the map's main-body point with an objective or front-line point 10-20 km away; the larger differences are open points in `docs/roadmap.md`.
+- **Not written:** seven readings of placeholder units (265th, 266th and 276th Infantry Divisions), three readings with no gazetteer place within 3 km, and every symbol marked elements, unlocated, doubtful or en route (private notes).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Semantic scenario 53.**
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

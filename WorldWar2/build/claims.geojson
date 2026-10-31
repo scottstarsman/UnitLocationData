@@ -16406,6 +16406,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.3556,
+     48.685
+    ]
+   },
+   "properties": {
+    "claim_id": "C2193",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-28",
+    "place_id": "PL0023",
+    "location_name": "Avranches, Manche (about 8 km north-east of Avranches)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to the Villedieu-Avranches road about 8 km north-east of Avranches",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: pp. 12 and 17 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1733,
      49.3038
     ]
@@ -16522,6 +16563,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R045;R001",
     "source_locator": "R670: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.19,
+     48.9161
+    ]
+   },
+   "properties": {
+    "claim_id": "C2192",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-07-29",
+    "place_id": "PL0272",
+    "location_name": "Percy, Manche (east of Percy)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "XLVII Panzer Corps is inserted between the II Parachute and LXXXIV Corps east of Percy",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 13 (German text)"
    }
   },
   {
@@ -17014,6 +17096,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R688;R002",
     "source_locator": "R670: pp. 388, 389, 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3556,
+     48.685
+    ]
+   },
+   "properties": {
+    "claim_id": "C2194",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-30",
+    "place_id": "PL0023",
+    "location_name": "Avranches, Manche",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "77th Division staff, halted on its march to St. Malo, is ordered to defend Avranches with alarm units",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: p. 17 (German text) and Skizze 4"
    }
   },
   {
@@ -17595,6 +17718,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9397,
+     48.6486
+    ]
+   },
+   "properties": {
+    "claim_id": "C2195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-31",
+    "place_id": "PL0236",
+    "location_name": "Mortain, Manche (area south-east of Mortain)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves at midnight 30/31 July to the area south-east of Mortain",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: p. 18 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.4271,
      49.1274
     ]
@@ -17998,6 +18162,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 393"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5697,
+     48.7484
+    ]
+   },
+   "properties": {
+    "claim_id": "C2196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL1074",
+    "location_name": "Flers, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to Flers",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 25 (German text) and Skizze 7"
    }
   },
   {
@@ -20301,6 +20506,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.0911,
+     48.4312
+    ]
+   },
+   "properties": {
+    "claim_id": "C2197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-07",
+    "place_id": "PL0004",
+    "location_name": "Alençon, Orne (assembly area west of Alençon)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "9th Panzer Division completes its assembly west of Alençon without its panzer regiment",
+    "operation_id": "OP-LUTTICH",
+    "operation": "Operation Lüttich",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Lüttich",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 31 (German text) and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.1984,
      48.0077
     ]
@@ -21565,6 +21811,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R403;R001",
     "source_locator": "R403: p. 502, 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0323,
+     48.5595
+    ]
+   },
+   "properties": {
+    "claim_id": "C2198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-12",
+    "place_id": "PL1075",
+    "location_name": "Senonches, Eure-et-Loir (line Verneuil-Senonches-La Loupe-Courville)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "352nd Division, refitting, blocks west of Chartres on the line Verneuil-Senonches-La Loupe-Courville",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 46 (German text) and Skizze 7"
    }
   },
   {
@@ -23376,6 +23663,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3407,
+     48.7613
+    ]
+   },
+   "properties": {
+    "claim_id": "C2199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL1076",
+    "location_name": "Chênedouit, Putanges-le-Lac, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to Chênedouit",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 50 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -24073,6 +24401,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1159,
+     48.8323
+    ]
+   },
+   "properties": {
+    "claim_id": "C2200",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL1077",
+    "location_name": "Nécy, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves to Nécy",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: p. 52 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.3106,
      48.537
     ]
@@ -24394,6 +24763,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R404;R406;R002",
     "source_locator": "R404: p. 533; R406: p. 600"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0206,
+     48.8147
+    ]
+   },
+   "properties": {
+    "claim_id": "C2201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-18",
+    "place_id": "PL0515",
+    "location_name": "Villedieu-lès-Bailleul, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army forward command post moves hastily to Villedieu-lès-Bailleul and loses its radio stations",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R001",
+    "source_locator": "R773: pp. 54 and 56 (German text)"
    }
   },
   {
@@ -25911,6 +26321,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R429;R002",
     "source_locator": "R429: p. 149"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3389,
+     48.8944
+    ]
+   },
+   "properties": {
+    "claim_id": "C2202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL1078",
+    "location_name": "Le Sap, Sap-en-Auge, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Hausser, wounded, reaches the forward command post at Le Sap and at noon hands the army to Funck",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R773;R002",
+    "source_locator": "R773: pp. 60-61 (German text)"
    }
   },
   {

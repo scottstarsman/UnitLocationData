@@ -2,7 +2,7 @@ place_id,name,alt_names,kind,latitude,longitude,precision_km,country,region,coor
 PL0001,"Aachen, North Rhine-Westphalia",Aachen,point,50.7756,6.0836,3,DE,North Rhine-Westphalia,R001,Wikipedia (en): Aachen,17,12,1944-09-12,1944-12-15
 PL0002,"Ablis, Seine-et-Oise",,point,48.5172,1.8369,10,FR,Ile-de-France,R002,"OpenStreetMap Nominatim (Ablis, France)",1,1,1944-08-22,1944-08-22
 PL0003,"Agay–Saint-Raphaël, Var",,area,43.4314,6.8565,5,FR,Provence-Alpes-Cote d'Azur,R002,"OpenStreetMap Nominatim (Agay–Saint-Raphaël, Var (beaches east of Saint-Raphaël))",1,1,1944-08-15,1944-08-15
-PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",6,4,1944-06-24,1944-08-17
+PL0004,"Alençon, Orne","Alencon, Orne",point,48.4312,0.0911,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Alencon, Orne, France)",7,5,1944-06-24,1944-08-17
 PL0005,"Alsdorf, North Rhine-Westphalia",,point,50.8833,6.1667,10,DE,North Rhine-Westphalia,R001,Wikipedia (en): Alsdorf,1,1,1944-11-16,1944-11-16
 PL0006,Amiens-Alencon march route,,line,49.892,2.299,50,FR,Picardie,R001,Wikipedia,1,1,1944-06-10,1944-06-10
 PL0007,"Amne, Sarthe",,point,48.0395,-0.0594,10,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Amne, Sarthe, France)",1,1,1944-08-10,1944-08-10
@@ -21,7 +21,7 @@ PL0019,Authie,,point,49.2067,-0.4306,5,FR,Lower Normandy,R001,Wikipedia,2,2,1944
 PL0020,Authie-Carpiquet line,,line,49.2067,-0.4306,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-08,1944-06-08
 PL0021,"Auw, Rhineland",Auw bei Prüm,point,50.3004,6.3380,25,DE,Rheinland-Pfalz,R002,"OpenStreetMap Nominatim (Auw bei Prüm, Rheinland-Pfalz, Germany); Wikipedia (en) Auw bei Prüm 50.3007, 6.3380 agrees (0.04 km)",2,1,1944-09-18,1944-09-21
 PL0022,"Avranches–Brécey gap, Manche",,area,48.7100,-1.2600,10,FR,Lower Normandy,,midpoint of Wikipedia (en) Avranches and Brécey,1,1,1944-08-01,1944-08-01
-PL0023,"Avranches, Manche",,point,48.6850,-1.3556,5,FR,Lower Normandy,R001,Wikipedia (en): Avranches,3,3,1944-07-30,1944-07-31
+PL0023,"Avranches, Manche",,point,48.6850,-1.3556,5,FR,Lower Normandy,R001,Wikipedia (en): Avranches,5,5,1944-07-28,1944-07-31
 PL0024,Azeville,,point,49.4591,-1.3135,5,FR,Lower Normandy,R002,OSM Nominatim,1,1,1944-06-07,1944-06-07
 PL0025,"Baccarat, Meurthe-et-Moselle",,point,48.4492,6.7389,5,FR,Lorraine,R001,Wikipedia (fr): Baccarat,3,3,1944-10-16,1944-11-12
 PL0026,"Bagnoles de l'Orne, Orne",,point,48.5539,-0.4229,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Bagnoles de l'Orne, Orne, France)",1,1,1944-08-15,1944-08-15
@@ -230,7 +230,7 @@ PL0232,"Montélimar, Drôme",,point,44.5581,4.7508,10,FR,Rhone-Alpes,R001,Wikipe
 PL0233,"Montsuer, Mayenne",,point,48.1348,-0.5540,3,FR,Pays de la Loire,R002,"OpenStreetMap Nominatim (Montsûrs, Mayenne, France)",2,1,1944-08-08,1944-08-09
 PL0234,"Moon-sur-Elle, Manche",,point,49.2116,-1.0445,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Moon-sur-Elle, Manche, France)",2,1,1944-07-08,1944-07-11
 PL0235,Mortagne-au-Perche–Brezolles assembly area,,area,48.5208,0.5483,25,FR,Lower Normandy,R001,Wikipedia (en): Mortagne-au-Perche,1,1,1944-08-19,1944-08-19
-PL0236,"Mortain, Manche",,point,48.6486,-0.9397,3,FR,Lower Normandy,R001,Wikipedia (en): Mortain,8,7,1944-08-06,1944-08-12
+PL0236,"Mortain, Manche",,point,48.6486,-0.9397,3,FR,Lower Normandy,R001,Wikipedia (en): Mortain,9,7,1944-07-31,1944-08-12
 PL0237,Mouen,,point,49.1489,-0.4825,5,FR,Lower Normandy,R001,Wikipedia,2,2,1944-06-28,1944-06-28
 PL0238,"Mourmelon-le-Grand, Marne",,point,49.1401,4.3658,5,FR,Champagne-Ardenne,R001,Wikipedia (en): Mourmelon-le-Grand,3,1,1944-12-01,1944-12-18
 PL0239,Moving south from Cherbourg to VIII Corps zone,,area,49.2908,-1.5411,25,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-28,1944-06-28
@@ -265,7 +265,7 @@ PL0268,"Pacy-sur-Eure, Eure",,point,49.0142,1.3813,10,FR,Haute-Normandie,R002,"O
 PL0269,"Palaiseau, Essonne",,point,48.7145,2.2457,5,FR,Ile-de-France,R001,Wikipedia (en): Palaiseau,1,1,1944-09-03,1944-09-03
 PL0270,Panzer Lehr sector,,area,49.1711,-0.5786,10,FR,Lower Normandy,R001,Wikipedia,1,1,1944-06-27,1944-06-27
 PL0271,Paris,,point,48.8567,2.3522,5,FR,Ile-de-France,R001,Wikipedia (en): Paris,4,4,1944-08-25,1944-08-29
-PL0272,"Percy, Manche",,point,48.9161,-1.1900,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Percy, Manche, France)",1,1,1944-08-02,1944-08-02
+PL0272,"Percy, Manche",,point,48.9161,-1.1900,10,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (Percy, Manche, France)",2,2,1944-07-29,1944-08-02
 PL0273,"Phalsbourg, Moselle",,point,48.7700,7.2600,5,FR,Lorraine,R001,Wikipedia (en): Phalsbourg,1,1,1944-12-27,1944-12-27
 PL0274,"La Pinsonniere, Manche",,point,49.0640,-1.3413,3,FR,Lower Normandy,R002,"OpenStreetMap Nominatim (La Pinsonniere, Manche, France)",1,1,1944-08-12,1944-08-12
 PL0275,"Pithiviers, Loiret",,point,48.1725,2.2525,5,FR,Centre,R001,Wikipedia (en): Pithiviers,1,1,1944-08-26,1944-08-26
@@ -507,7 +507,7 @@ PL0511,"Saint-Lambert-sur-Dives, Orne",St. Lambert,point,48.8201,0.0755,3,FR,Nor
 PL0512,"Chambois, Orne",Chambois,point,48.8058,0.1061,3,FR,Normandy,R001,"Wikipedia article Chambois, Orne",3,3,1944-08-19,1944-08-20
 PL0513,Forêt de Gouffern,Fôret de Gouffern; Gouffern forest,area,48.7299,0.1044,10,FR,Normandy,R002,Nominatim result Forêt de la Petite Gouffern (forest area),2,2,1944-08-19,1944-08-19
 PL0514,Saint-Lambert-sur-Dives and Chambois (midpoint),St. Lambert-Chambois crossing area,area,48.813,0.0908,5,FR,Normandy,R001,"Midpoint of Nominatim Saint-Lambert-sur-Dives (48.8201, 0.0755) and Wikipedia Chambois, Orne (48.8058, 0.1061)",3,3,1944-08-20,1944-08-21
-PL0515,"Villedieu-lès-Bailleul, Orne",,point,48.8147,0.0206,3,FR,Normandy,R001,Wikipedia article Villedieu-lès-Bailleul,1,1,1944-08-20,1944-08-20
+PL0515,"Villedieu-lès-Bailleul, Orne",,point,48.8147,0.0206,3,FR,Normandy,R001,Wikipedia article Villedieu-lès-Bailleul,2,2,1944-08-18,1944-08-20
 PL0516,"Fresnay-sur-Sarthe, Sarthe",,point,48.2825,0.0219,3,FR,Pays de la Loire,R001,Wikipedia article Fresnay-sur-Sarthe,1,1,1944-08-10,1944-08-10
 PL0517,"Tinchebray, Orne",,point,48.7636,-0.7331,3,FR,Normandy,R001,Wikipedia article Tinchebray,1,1,1944-08-06,1944-08-06
 PL0518,"Le Mesnil-Adelée, Manche",,point,48.7011,-1.0747,3,FR,Normandy,R001,Wikipedia article Le Mesnil-Adelée,1,1,1944-08-07,1944-08-07
@@ -1059,3 +1059,8 @@ PL1070,"Cherain, Gouvy, Luxembourg (BE)",,point,50.1766,5.8780,3,BE,Luxembourg,R
 PL1071,"Hotton, Luxembourg (BE)",,point,50.2676,5.4342,3,BE,Luxembourg,R002,"OpenStreetMap Nominatim (Hotton, Belgium), searched 31 October 2026",1,1,1944-12-22,1944-12-22
 PL1072,"Rochefort, Namur",,point,50.1554,5.1753,3,BE,Namur,R002,"OpenStreetMap Nominatim (Rochefort, Namur, Belgium), searched 31 October 2026",2,2,1944-12-23,1944-12-26
 PL1073,"Mont-le-Ban, Gouvy, Luxembourg (BE)",,point,50.1890,5.8364,3,BE,Luxembourg,R002,"OpenStreetMap Nominatim (Mont-le-Ban, Belgium), searched 31 October 2026",1,1,1944-12-27,1944-12-27
+PL1074,"Flers, Orne",,point,48.7484,-0.5697,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Flers, Orne, France), searched 31 October 2026",1,1,1944-08-01,1944-08-01
+PL1075,"Senonches, Eure-et-Loir",,point,48.5595,1.0323,3,FR,Centre-Val de Loire,R002,"OpenStreetMap Nominatim (Senonches, France), searched 31 October 2026",1,1,1944-08-12,1944-08-12
+PL1076,"Chênedouit, Putanges-le-Lac, Orne",Chenedouit,point,48.7613,-0.3407,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Chênedouit, France), searched 31 October 2026",1,1,1944-08-15,1944-08-15
+PL1077,"Nécy, Orne",Necy,point,48.8323,-0.1159,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Nécy, France), searched 31 October 2026",1,1,1944-08-17,1944-08-17
+PL1078,"Le Sap, Sap-en-Auge, Orne",,point,48.8944,0.3389,3,FR,Normandy,R002,"OpenStreetMap Nominatim (Le Sap, Orne, France), searched 31 October 2026",1,1,1944-08-21,1944-08-21

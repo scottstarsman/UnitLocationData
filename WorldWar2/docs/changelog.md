@@ -28,6 +28,16 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** the Führer-Grenadier-Brigade arrives with the Fifth Panzer Army on 27 December in B-235 against the Seventh Army reserve at Wiltz on 31 December in `C1791`; the 340th VG arrives on 6 January in B-235 against its attack at Bastogne on 4 January in `C1079`. Not used: the fall of St. Vith (22 December in B-235; an Allied date) and the arrival list of the other reinforcements (in the reading notes).
 - **Semantic scenario 44.**
 
+### B-179 (Hausser, Seventh Army 25 July-20 August 1944)
+
+- **New reference** `R773` (B-179, Hausser, 1946; archive_document, family `fms_german_manuscript`). The German text (images 77-202) is primary; the English translation (images 2-75) was used only as a check. Reliability: 22 of 24 checkable facts agree with the dataset (92%).
+- **New places** `PL1074` to `PL1078` (5; OpenStreetMap Nominatim): Flers, Senonches, Chênedouit, Nécy and Le Sap.
+- **New claims** `C2192` to `C2202` (11; each note carries old value none, new value and reason): the Seventh Army forward command post north-east of Avranches (28 July), south-east of Mortain (night 30/31 July), at Flers (1 August), Chênedouit (15 August), Nécy (17 August), Villedieu-lès-Bailleul (18 August) and Le Sap, where Hausser hands the army to Funck at noon on 21 August; the XLVII Panzer Corps inserted east of Percy (29 July); the 77th Division staff ordered to hold Avranches (30 July); the 9th Panzer Division assembled west of Alençon (7 August); the 352nd Division blocking west of Chartres (12 August).
+  - Parent blank on all 11 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group.
+- **Disagreements recorded, no value changed:** the LVIII Panzer Corps under the Seventh Army at Mortain from about 8-9 August in B-179 against the takeover of 12 August in `C0739`; the LXXXI Corps under Panzer Group Eberbach on 12 August in B-179 against the Fifth Panzer Army in `C0729`.
+- **Semantic scenario 45.** Scenarios 43 and 44: the check that confidence is 0.5 or 0.3 now compares sets (old value: a list comparison that could pass wrongly; new value: a subset test; reason: the scenario 45 run exposed it).
+
 ## official-history-pass-2: US gaps, a German refit span and the pilot-division labels (31 October 2026)
 
 Scott approved official-history pass 2 on 31 October 2026, as one branch with one commit per source. Branch `official-history-pass-2` from `main` `13be4a4`.

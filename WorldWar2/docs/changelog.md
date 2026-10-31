@@ -2,6 +2,56 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-5: four more FMS manuscripts (B-781, B-831, B-084, B-849; 31 October 2026)
+
+Scott approved reading four more Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-5` from `main` `67a7d83`. The German original is the primary source in B-781, B-084 and B-849, with the English translation used only to check unclear passages; in B-831 the German scan is illegible, so the English translation is the primary text and the reference says so. All four are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.
+
+Rules applied (accepted by Scott): no command relation and no parent from a single manuscript (every new row has a blank parent); no Allied dates from the manuscripts; strengths stay in the reading notes; no front-line traces; confidence 0.5 for one source, 0.7 when a second source family agrees, 0.3 for arrivals, approximate days, doubtful places and map positions; disagreements with existing rows are recorded as open points and the existing rows are left unchanged.
+
+### B-781 (Wiese, Nineteenth Army, mid-September-18 December 1944, German original)
+
+- **New reference** `R775` (B-781; archive_document, family `fms_german_manuscript`). Reliability: 17 of 19 checkable facts agree with the dataset (89%).
+- **New places** `PL1083` to `PL1084` (2; OpenStreetMap Nominatim): Le Thillot, Hirtzfelden.
+- **New claims** `C2209` to `C2213` (5; all at 0.3; each note carries old value none, new value and reason): the LXVI Corps at Bains-les-Bains, the LXIV Corps at Remiremont, the IV Luftwaffe Field Corps at Le Thillot and the LXXXV Corps at Belfort in mid-September (all 0.3, approximate day); the LXIII Corps flag at Hirtzfelden on the sketch of 6 December (0.3).
+  - Parent blank on all 5 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the LXIII Corps formed just before the attack of 14 November in B-781 against the Dehner organization becoming the LXIII Corps on 18 November in `C1023`; Wiese handing over on 18 December in B-781 (agrees with `C2113`) against 15 December in `C1018`.
+- **Semantic scenario 47.**
+
+### B-831 (Felber, Seventh Army, 20 February-26 March 1945, English translation as primary text because the German scan is illegible)
+
+- **New reference** `R776` (B-831; archive_document, family `fms_german_manuscript`). Reliability: 9 of 9 checkable facts agree with the dataset (100%).
+- **New places** `PL1085` to `PL1096` (12; OpenStreetMap Nominatim): Eisenschmitt, Dierfeld, Krastel, Nieder-Olm, Kirchheimbolanden, Bensheim, Heigenbrücken, Wißmannsdorf, Salm, Pohlbach, Schifferstadt, Boppard.
+- **New claims** `C2214` to `C2225` (12; 1 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): Seventh Army command posts at Eisenschmitt (21 February), Dierfeld (4 March), Krastel (10 March), Nieder-Olm (16 March), Kirchheimbolanden (17 March), Bensheim (21 March) and Heigenbrücken (26 March); LIII Corps at Wißmannsdorf (20 February) and Salm (2 March, 0.3, place uncertain); LXXX Corps at Pohlbach (5 March) and Schifferstadt (21 March); LXXXIX Corps at Boppard (15 March).
+  - Parent blank on all 12 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** none; the LXXXIX Corps command post dated from 10 March in B-831 is a day after its arrival at the Moselle on 9 March in `C1175`, read as consistent.
+- **Semantic scenario 48.**
+
+### B-084 (Schlemm, First Parachute Army, February-10 March 1945, German original)
+
+- **New reference** `R777` (B-084; archive_document, family `fms_german_manuscript`). Reliability: 6 of 8 checkable facts agree with the dataset (75%).
+- **New places** `PL1097` to `PL1100` (4; OpenStreetMap Nominatim): Saalhoff, Marienbaum, Sonsbeck, Birten.
+- **New claims** `C2226` to `C2235` (10; 1 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): First Parachute Army command posts west of Xanten (8 February), at Saalhoff (22 February) and west of Wesel (2 March) and the end of the Wesel bridgehead (10 March); XLVII Panzer Corps sectors at Marienbaum (24 February) and Xanten-Sonsbeck (4 March); II Parachute Corps sectors at Udem-Weeze (24 February) and Sonsbeck-Issum (4 March) and its command of the last bridgehead (7 March); the 8th Parachute Division brought north from Roermond (16 February, 0.3).
+  - Parent blank on all 10 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** the 8th Parachute Division on the north wing from 16 February in B-084 against a fight west of Mönchengladbach on 27 February in `C1155`; the 2nd Parachute Division brought from Holland about 27 February in B-084 against the LXXXVI Corps on the lower Rhine on 8 February in `C1129`.
+- **Semantic scenario 49.**
+
+### B-849 (von Zangen, Fifteenth Army in the Ruhr pocket, 31 March-15 April 1945, German original)
+
+- **New reference** `R778` (B-849; archive_document, family `fms_german_manuscript`). Reliability: 9 of 11 checkable facts agree with the dataset (82%).
+- **New places** `PL1101` to `PL1111` (11; OpenStreetMap Nominatim): Niederberndorf, Dahle, Altastenberg, Bad Fredeburg, Meschede, Iserlohn, Medebach, Niedersfeld, Grafschaft, Stottmert, Wixberg.
+- **New claims** `C2236` to `C2247` (12; 1 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): Fifteenth Army command posts at Niederberndorf (30 March), Stottmert (10 April), Dahle (11 April) and Wixberg (12 April); LIII Corps at Altastenberg (31 March); LXXIV and LXXXI Corps takeovers of 8 April; XLVII Panzer Corps east of Iserlohn (14 April); Panzer Lehr leaving Winterberg (3 April); the 3rd Panzergrenadier Division at Medebach (2 April); the 176th Division thrown back to Niedersfeld (5 April); the first parts of the 338th Division at Grafschaft (5 April, 0.3).
+  - Parent blank on all 12 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** organised fighting ended effective 15 April in B-849 against the Fifteenth Army surrender of 13 April in `C1215`; the LXXXI Corps commanding general captured on the evening of 11 April (doubtful reading) with Burdach from 12 April in B-849 against Köchling surrendering on 13 April in `C1230`.
+- **Semantic scenario 50.**
+
+### Open points
+
+- `docs/roadmap.md` gains the nine open points of this batch with a recommendation each. No data changed.
+
 ## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
 
 Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.

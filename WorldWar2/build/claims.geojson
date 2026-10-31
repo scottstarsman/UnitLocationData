@@ -38833,6 +38833,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5913,
+     48.0159
+    ]
+   },
+   "properties": {
+    "claim_id": "C2078",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL1025",
+    "location_name": "Remiremont, Vosges",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the corps left wing is pushed back onto the Moselle after the Americans cross the river and enter Remiremont",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: p. 10, Skizze 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -39817,6 +39858,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6112,
+     48.0927
+    ]
+   },
+   "properties": {
+    "claim_id": "C2079",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL1026",
+    "location_name": "Éloyes, Vosges",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "counter-attack from Le Tholy toward the Moselle at Éloyes against the US 36th Division; broken off",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: pp. ii, 16-19"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -40350,6 +40432,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C2085",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-27",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges (central Vosges)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "remnants merged into the 198th Division; the staff group Degener takes over the name 189th Division",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: pp. 22, 27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -40466,6 +40589,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R421;R002",
     "source_locator": "R421: pp. 254, 256"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7396,
+     47.7572
+    ]
+   },
+   "properties": {
+    "claim_id": "C2080",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-001D",
+    "unit_name": "French 1st Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-28",
+    "place_id": "PL0994",
+    "location_name": "Plancher-les-Mines, Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "the division's salient reaches Plancher-les-Mines; a German armoured group retakes the village on 29 September",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R762;R002",
+    "source_locator": "R686: pp. 187-188; R762: pp. 25-30"
    }
   },
   {
@@ -40671,6 +40835,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R694;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6361,
+     48.3466
+    ]
+   },
+   "properties": {
+    "claim_id": "C2081",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-066C",
+    "unit_name": "LXVI Corps (LXVI Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-29",
+    "place_id": "PL0829",
+    "location_name": "Rambervillers, Vosges (sector south of Rambervillers)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "the corps leaves the Nineteenth Army and passes to the Fifth Panzer Army at midnight",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: p. 30, Skizze 4"
    }
   },
   {
@@ -41088,6 +41293,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.85,
+     47.64
+    ]
+   },
+   "properties": {
+    "claim_id": "C2082",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-106B",
+    "unit_name": "Panzer-Brigade 106",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-01",
+    "place_id": "PL0564",
+    "location_name": "Belfort, Territoire de Belfort (Burgundian Gate)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "arrives in the Nineteenth Army area with Panzer-Abteilung 103 and is directed to the Belfort area",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R001",
+    "source_locator": "R762: pp. 33-38"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -41409,6 +41655,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 199"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7836,
+     47.9081
+    ]
+   },
+   "properties": {
+    "claim_id": "C2083",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-06",
+    "place_id": "PL1024",
+    "location_name": "Le Ménil, Vosges",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "identified by the Germans in the IV Luftwaffe Field Corps sector at Le Ménil",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: p. 46"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2113,
+     47.9095
+    ]
+   },
+   "properties": {
+    "claim_id": "C2084",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-10-06",
+    "place_id": "PL1016",
+    "location_name": "Guebwiller, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army command post moves in the evening from east of Gérardmer to Guebwiller (Gebweiler)",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: p. 48, Skizze 4"
    }
   },
   {
@@ -43220,6 +43548,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7389,
+     48.4492
+    ]
+   },
+   "properties": {
+    "claim_id": "C2086",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-16",
+    "place_id": "PL0025",
+    "location_name": "Baccarat, Meurthe-et-Moselle",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "comes under the Nineteenth Army with the 21st Panzer, 716th and 16th Divisions on the army right wing",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R001",
+    "source_locator": "R762: pp. 55-56, Skizze 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3997,
      51.2211
     ]
@@ -43582,6 +43951,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 123, 124"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8052,
+     48.2113
+    ]
+   },
+   "properties": {
+    "claim_id": "C2088",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-22",
+    "place_id": "PL1019",
+    "location_name": "Biffontaine, Vosges",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "corps crisis near Bruyères; the enemy is stopped at the Forêt de Belmont and Biffontaine",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: p. 56"
    }
   },
   {
@@ -44115,6 +44525,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R607;R002",
     "source_locator": "R607: p. 338"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8777,
+     48.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C2087",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-269D",
+    "unit_name": "269th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-31",
+    "place_id": "PL0546",
+    "location_name": "Gérardmer, Vosges",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "arrives from Norway and comes under the IV Luftwaffe Field Corps",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-10-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R762;R002",
+    "source_locator": "R762: pp. 56, 61, Skizze 7"
    }
   },
   {
@@ -45835,8 +46286,8 @@
     "location_date": "1944-11-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R422;R647;R001",
-    "source_locator": "R422: p. 389, 405; R647: p. 361-362"
+    "reference_ids": "R422;R647;R762;R001",
+    "source_locator": "R422: p. 389, 405; R647: p. 361-362; R762: pp. 66-67, Skizze 8"
    }
   },
   {
@@ -46787,6 +47238,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9474,
+     48.2872
+    ]
+   },
+   "properties": {
+    "claim_id": "C2102",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL0617",
+    "location_name": "Saint-Dié-des-Vosges, Vosges (west of Saint-Dié and Taintrux)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "relieves the battle-weary 16th Division west of Saint-Dié and at Taintrux",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R765;R002",
+    "source_locator": "R765: p. 3, Annex 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -47566,6 +48058,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.882,
+     47.4419
+    ]
+   },
+   "properties": {
+    "claim_id": "C2107",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL1027",
+    "location_name": "Hérimoncourt, Doubs (Doubs loop)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "clears the Doubs loop and Hérimoncourt toward the Swiss frontier",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R762;R002",
+    "source_locator": "R686: pp. 237-238; R762: p. 74"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -48215,6 +48748,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 261"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1165,
+     47.6319
+    ]
+   },
+   "properties": {
+    "claim_id": "C2089",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-21",
+    "place_id": "PL0980",
+    "location_name": "Dannemarie, Haut-Rhin (south-west of Dannemarie)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "assembles south-west of Dannemarie under the LXIII Corps for the attack toward the Swiss frontier",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R002",
+    "source_locator": "R763: pp. 14, 19, 26 (German text)"
    }
   },
   {
@@ -49206,6 +49780,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.267,
+     47.674
+    ]
+   },
+   "properties": {
+    "claim_id": "C2091",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-063C",
+    "unit_name": "LXIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-26",
+    "place_id": "PL1020",
+    "location_name": "Illfurth, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "withdraws the Burgundian Gate front to the Vosges-ridge position with contact to the Ill south-west of Illfurth",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R002",
+    "source_locator": "R763: pp. 26-27 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6398,
      49.2225
     ]
@@ -49411,6 +50026,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.4542,
+     48.2594
+    ]
+   },
+   "properties": {
+    "claim_id": "C2090",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-27",
+    "place_id": "PL0613",
+    "location_name": "Sélestat, Bas-Rhin (LXIV Corps sector in the Rhine plain)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "first elements arrive with the LXIV Corps in the Rhine plain after moving by road and rail",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R002",
+    "source_locator": "R763: p. 27 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -49493,6 +50149,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1463,
+     47.7317
+    ]
+   },
+   "properties": {
+    "claim_id": "C2111",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-005D",
+    "unit_name": "French 5th Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-28",
+    "place_id": "PL1028",
+    "location_name": "Burnhaupt-le-Haut, Haut-Rhin",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "its combat commands make the contact that closes the Burnhaupt pocket",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 281"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3724,
      50.861
     ]
@@ -49527,6 +50224,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R055;R002",
     "source_locator": "R055: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1463,
+     47.7317
+    ]
+   },
+   "properties": {
+    "claim_id": "C2112",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-001D",
+    "unit_name": "French 1st Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-29",
+    "place_id": "PL1028",
+    "location_name": "Burnhaupt-le-Haut, Haut-Rhin",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "combat command 3 enters Burnhaupt at the end of the encirclement",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 282"
    }
   },
   {
@@ -49944,6 +50682,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1372,
+     48.0409
+    ]
+   },
+   "properties": {
+    "claim_id": "C2092",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-090C",
+    "unit_name": "LXXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-06",
+    "place_id": "PL1031",
+    "location_name": "Munster, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "the corps (formerly the IV Luftwaffe Field Corps) is taken from the Nineteenth Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R002",
+    "source_locator": "R763: p. 31 (German text), appendices 6 and 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C2103",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-06",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "takes over the Colmar sector; the front line is about 10 km from the city",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R766;R001",
+    "source_locator": "R766: p. 1, enclosure 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9305,
      51.7741
     ]
@@ -50354,13 +51174,54 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3249,
+     48.1925
+    ]
+   },
+   "properties": {
+    "claim_id": "C2093",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-13",
+    "place_id": "PL1030",
+    "location_name": "Ribeauvillé, Haut-Rhin",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "local attack toward the heights of Ribeauvillé and Sélestat ordered by Army Group Oberrhein; it fails",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R765;R002",
+    "source_locator": "R763: p. 33; R765: pp. 11-12, Annex 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3556,
      48.0817
     ]
    },
    "properties": {
     "claim_id": "C1018",
-    "conflict_group_id": null,
+    "conflict_group_id": "G030",
     "claim_status": "preferred",
     "unit_id": "GER-ARMY-019A",
     "unit_name": "Nineteenth Army (Germany)",
@@ -50591,8 +51452,8 @@
     "location_date": "1944-12-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R191;R001",
-    "source_locator": "R191: table of 1944, December row"
+    "reference_ids": "R191;R765;R001",
+    "source_locator": "R191: table of 1944, December row; R765: p. 11"
    }
   },
   {
@@ -51454,6 +52315,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R757;R001",
     "source_locator": "R757: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.314,
+     48.1343
+    ]
+   },
+   "properties": {
+    "claim_id": "C2104",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-15",
+    "place_id": "PL1022",
+    "location_name": "Sigolsheim, Haut-Rhin (north-west of Colmar)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "heavy fighting north-west of Colmar for Bennwihr, Sigolsheim and Kientzheim; its sector is narrowed",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R766;R765;R002",
+    "source_locator": "R766: p. 5, enclosure 4; R765: p. 11"
    }
   },
   {
@@ -53306,6 +54208,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C2113",
+    "conflict_group_id": "G030",
+    "claim_status": "alternate",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (the Colmar region)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Rasp replaces Wiese as commander (date as given by Botsch, chief of staff)",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R001",
+    "source_locator": "R763: p. 37 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6333,
      50.5833
     ]
@@ -55028,6 +55971,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1622,
+     48.1273
+    ]
+   },
+   "properties": {
+    "claim_id": "C2094",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-24",
+    "place_id": "PL1021",
+    "location_name": "Orbey, Haut-Rhin (hills east of Urbeis)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Christmas attack to improve the front south-east of Urbeis (Orbey); no success",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R763;R766;R002",
+    "source_locator": "R763: p. 32 (German text); R766: p. 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -56538,6 +57522,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R515;R001",
     "source_locator": "R515: p. 34"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2113,
+     47.9095
+    ]
+   },
+   "properties": {
+    "claim_id": "C2095",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-01-04",
+    "place_id": "PL1016",
+    "location_name": "Guebwiller, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "army headquarters at Guebwiller when Brandstaedter takes over as chief of staff",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 3"
    }
   },
   {
@@ -58627,8 +59652,8 @@
     "location_date": "1945-01-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R545;R425;R001",
-    "source_locator": "R545: p. 518, 517; R425: p. 538"
+    "reference_ids": "R545;R425;R764;R001",
+    "source_locator": "R545: p. 518, 517; R425: p. 538; R764: p. 7"
    }
   },
   {
@@ -59201,8 +60226,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R001",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R765;R764;R001",
+    "source_locator": "R425: p. 537, 538; R765: p. 11; R764: p. 7"
    }
   },
   {
@@ -59242,8 +60267,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R002",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R764;R002",
+    "source_locator": "R425: p. 537, 538; R764: p. 7"
    }
   },
   {
@@ -59283,8 +60308,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R001",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R764;R001",
+    "source_locator": "R425: p. 537, 538; R764: p. 7"
    }
   },
   {
@@ -59324,8 +60349,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R001",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R764;R001",
+    "source_locator": "R425: p. 537, 538; R764: p. 7"
    }
   },
   {
@@ -59365,8 +60390,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R002",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R764;R002",
+    "source_locator": "R425: p. 537, 538; R764: p. 7"
    }
   },
   {
@@ -59406,8 +60431,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R002",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R764;R002",
+    "source_locator": "R425: p. 537, 538; R764: p. 7"
    }
   },
   {
@@ -59447,8 +60472,8 @@
     "location_date": "1945-01-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R425;R002",
-    "source_locator": "R425: p. 537, 538"
+    "reference_ids": "R425;R764;R002",
+    "source_locator": "R425: p. 537, 538; R764: p. 7"
    }
   },
   {
@@ -60071,6 +61096,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.4391,
+     48.132
+    ]
+   },
+   "properties": {
+    "claim_id": "C2108",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-23",
+    "place_id": "PL1029",
+    "location_name": "Riedwihr, Haut-Rhin (east of the Ill north of Colmar)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "crosses the Ill north of Colmar and fights the German counter-attack at Riedwihr and Holtzwihr",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R764;R766;R002",
+    "source_locator": "R686: p. 356; R764: p. 17; R766: p. 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.0,
      49.2333
     ]
@@ -60276,6 +61342,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.4809,
+     48.0631
+    ]
+   },
+   "properties": {
+    "claim_id": "C2105",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-26",
+    "place_id": "PL1018",
+    "location_name": "Widensolen, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "the army group and army commanders visit the corps command post at Widensolen",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R766;R002",
+    "source_locator": "R766: p. 10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8101,
      50.5447
     ]
@@ -60433,6 +61540,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R040;R002",
     "source_locator": "R040: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4809,
+     48.0631
+    ]
+   },
+   "properties": {
+    "claim_id": "C2106",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-064C",
+    "unit_name": "LXIV Corps (LXIV Reserve Corps until 5 August 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-28",
+    "place_id": "PL1018",
+    "location_name": "Widensolen, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Thumm is relieved by Himmler's order; General der Artillerie Grimmeiss succeeds him",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-28",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R766;R002",
+    "source_locator": "R766: p. 11"
    }
   },
   {
@@ -61019,6 +62167,88 @@
     ]
    },
    "properties": {
+    "claim_id": "C2109",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-02",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "its 109th Infantry crosses the Ill to the Colmar Canal and halts so that French armour can enter Colmar first",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R001",
+    "source_locator": "R686: pp. 374-375"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C2110",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-005D",
+    "unit_name": "French 5th Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-02",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "combat command 4 enters Colmar; the lead tank reaches the Place Rapp at 11.30",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R764;R001",
+    "source_locator": "R686: p. 375; R764: p. 23"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
     "claim_id": "C0599",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -61376,6 +62606,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R021;R001",
     "source_locator": "R021: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.741,
+     47.9227
+    ]
+   },
+   "properties": {
+    "claim_id": "C2096",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-05",
+    "place_id": "PL1017",
+    "location_name": "Kirchhofen, Baden-Württemberg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "army headquarters moves to Kirchhofen on the east bank of the Rhine",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: pp. 23, 25"
    }
   },
   {
@@ -63480,7 +64751,7 @@
    },
    "properties": {
     "claim_id": "C1188",
-    "conflict_group_id": null,
+    "conflict_group_id": "G031",
     "claim_status": "preferred",
     "unit_id": "GER-ARMY-019A",
     "unit_name": "Nineteenth Army (Germany)",
@@ -63590,6 +64861,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2097",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-708D",
+    "unit_name": "708th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (Upper Rhine east bank)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "merged into the 198th Division after crossing the Rhine",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 31"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2098",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (Upper Rhine east bank)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "merged into the 16th Volksgrenadier Division after crossing the Rhine",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 31"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2099",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-716D",
+    "unit_name": "716th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (Upper Rhine east bank)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "merged into the 159th Division after crossing the Rhine",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 31"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.7704,
+     47.8532
+    ]
+   },
+   "properties": {
+    "claim_id": "C2101",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-024A",
+    "unit_name": "Twenty-fourth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL1023",
+    "location_name": "Engen, Baden-Württemberg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "reconnaissance staff Donaueschingen (cover name A.O.K. 24) under the Nineteenth Army; command post at Engen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: pp. 31, 38"
    }
   },
   {
@@ -64000,6 +65435,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R021;R001",
     "source_locator": "R021: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2114",
+    "conflict_group_id": "G031",
+    "claim_status": "alternate",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (representative point for the Upper Rhine east bank; headquarters place not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Foertsch replaces Rasp as commander (date as given by Brandstaedter, chief of staff)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 34"
    }
   },
   {
@@ -65202,7 +66678,7 @@
    },
    "properties": {
     "claim_id": "C1189",
-    "conflict_group_id": null,
+    "conflict_group_id": "G032",
     "claim_status": "preferred",
     "unit_id": "GER-ARMY-019A",
     "unit_name": "Nineteenth Army (Germany)",
@@ -65845,6 +67321,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R531;R538;R001",
     "source_locator": "R538: p. 178"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2115",
+    "conflict_group_id": "G032",
+    "claim_status": "alternate",
+    "unit_id": "GER-ARMY-019A",
+    "unit_name": "Nineteenth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-05",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (representative point for the Upper Rhine east bank; headquarters place not named)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Obstfelder replaces Foertsch as commander (date as given by Brandstaedter, chief of staff)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 34"
    }
   },
   {
@@ -67854,6 +69371,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R540;R001",
     "source_locator": "R540: p. 232"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C2100",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (Upper Rhine east bank)",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "leaves the Nineteenth Army area, the last of its former bridgehead divisions",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R764;R002",
+    "source_locator": "R764: p. 32"
    }
   },
   {

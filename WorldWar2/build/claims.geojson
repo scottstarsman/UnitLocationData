@@ -69009,6 +69009,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4433,
+     49.9879
+    ]
+   },
+   "properties": {
+    "claim_id": "C2221",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-053C",
+    "unit_name": "LIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL1092",
+    "location_name": "Wißmannsdorf, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LIII Corps command post at Wißmannsdorf north-west of Bitburg as Felber takes over the Seventh Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0142,
      51.6346
     ]
@@ -69125,6 +69166,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R746;R082;R002",
     "source_locator": "R746: narrative; R082: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7207,
+     50.0446
+    ]
+   },
+   "properties": {
+    "claim_id": "C2214",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-21",
+    "place_id": "PL1085",
+    "location_name": "Eisenschmitt, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moves to Eisenschmitt after fighter-bombers wreck the headquarters near Bitburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: p. 16 and Annex I,3"
    }
   },
   {
@@ -70526,6 +70608,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6904,
+     50.1525
+    ]
+   },
+   "properties": {
+    "claim_id": "C2222",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-053C",
+    "unit_name": "LIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL1093",
+    "location_name": "Salm, Gerolstein, Rhineland-Palatinate (Salm; identification with Salm near Gerolstein uncertain)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LIII Corps command post moves to Salm before the corps passes to the Fifteenth Army on 6 March",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6207,
      51.2691
     ]
@@ -70813,6 +70936,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8904,
+     50.0848
+    ]
+   },
+   "properties": {
+    "claim_id": "C2215",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL1086",
+    "location_name": "Dierfeld, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moves to Dierfeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5667,
      51.3333
     ]
@@ -70888,6 +71052,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R764;R002",
     "source_locator": "R764: p. 34"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8753,
+     49.914
+    ]
+   },
+   "properties": {
+    "claim_id": "C2223",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-080C",
+    "unit_name": "LXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-05",
+    "place_id": "PL1094",
+    "location_name": "Pohlbach, Klausen, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXX Corps command post moves from a forest camp near Zemmern to Pohlbach",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
    }
   },
   {
@@ -71879,6 +72084,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3912,
+     50.0505
+    ]
+   },
+   "properties": {
+    "claim_id": "C2216",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL1087",
+    "location_name": "Krastel, Bell (Hunsrück), Rhineland-Palatinate (Krastel south-west of Kastellaun)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moves to Krastel south-west of Kastellaun in the Hunsrück",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -72453,6 +72699,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.5886,
+     50.2313
+    ]
+   },
+   "properties": {
+    "claim_id": "C2225",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL1096",
+    "location_name": "Boppard, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXXIX Corps command post moves to Boppard on the Rhine",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1667,
      50.1469
     ]
@@ -72528,6 +72815,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R541;R001",
     "source_locator": "R541: p. 251"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2033,
+     49.9094
+    ]
+   },
+   "properties": {
+    "claim_id": "C2217",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-16",
+    "place_id": "PL1088",
+    "location_name": "Nieder-Olm, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moves through Seibersbach and Gensingen to Nieder-Olm",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: p. 34 and Annex I,3"
    }
   },
   {
@@ -72945,6 +73273,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0107,
+     49.6644
+    ]
+   },
+   "properties": {
+    "claim_id": "C2218",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL1089",
+    "location_name": "Kirchheimbolanden, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moves to Kirchheimbolanden",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -73102,6 +73471,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 531"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6228,
+     49.681
+    ]
+   },
+   "properties": {
+    "claim_id": "C2219",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-21",
+    "place_id": "PL1090",
+    "location_name": "Bensheim, Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army staff crosses the Rhine at Altrip and sets up its command post at Bensheim",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: p. 42 and Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3714,
+     49.3865
+    ]
+   },
+   "properties": {
+    "claim_id": "C2224",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-080C",
+    "unit_name": "LXXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-21",
+    "place_id": "PL1095",
+    "location_name": "Schifferstadt, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXX Corps command post moves through Maikammer to Schifferstadt in the Ludwigshafen bridgehead",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
    }
   },
   {
@@ -74537,6 +74988,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R170;R002",
     "source_locator": "R170: commander list"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.37,
+     50.0351
+    ]
+   },
+   "properties": {
+    "claim_id": "C2220",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-26",
+    "place_id": "PL1091",
+    "location_name": "Heigenbrücken, Bavaria",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moves east of the Main to Heigenbrücken in the Spessart",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R776;R002",
+    "source_locator": "R776: Annex I,3"
    }
   },
   {

@@ -18,6 +18,16 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** the LXIII Corps formed just before the attack of 14 November in B-781 against the Dehner organization becoming the LXIII Corps on 18 November in `C1023`; Wiese handing over on 18 December in B-781 (agrees with `C2113`) against 15 December in `C1018`.
 - **Semantic scenario 47.**
 
+### B-831 (Felber, Seventh Army, 20 February-26 March 1945, English translation as primary text because the German scan is illegible)
+
+- **New reference** `R776` (B-831; archive_document, family `fms_german_manuscript`). Reliability: 9 of 9 checkable facts agree with the dataset (100%).
+- **New places** `PL1085` to `PL1096` (12; OpenStreetMap Nominatim): Eisenschmitt, Dierfeld, Krastel, Nieder-Olm, Kirchheimbolanden, Bensheim, Heigenbrücken, Wißmannsdorf, Salm, Pohlbach, Schifferstadt, Boppard.
+- **New claims** `C2214` to `C2225` (12; 1 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): Seventh Army command posts at Eisenschmitt (21 February), Dierfeld (4 March), Krastel (10 March), Nieder-Olm (16 March), Kirchheimbolanden (17 March), Bensheim (21 March) and Heigenbrücken (26 March); LIII Corps at Wißmannsdorf (20 February) and Salm (2 March, 0.3, place uncertain); LXXX Corps at Pohlbach (5 March) and Schifferstadt (21 March); LXXXIX Corps at Boppard (15 March).
+  - Parent blank on all 12 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** none; the LXXXIX Corps command post dated from 10 March in B-831 is a day after its arrival at the Moselle on 9 March in `C1175`, read as consistent.
+- **Semantic scenario 48.**
+
 ## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
 
 Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.

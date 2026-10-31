@@ -90,6 +90,17 @@ Scott on 31 October 2026 accepted the recommendations of roadmap points 26 to 31
 - **`scripts/semantic_tests.py`:** scenario 53 expectation "every row keeps its own map point", old value all R781 rows, new value all R781 rows except `C3018` and `C3070`, reason: those two now sit on the town point by Scott's decision (point 31).
 - **New scenario 58.** No other existing row changed. No relation, no conflict group.
 
+### Batch 4a: weekly sheets 26 September, 3 and 10 October 1944 (all nationalities)
+
+Scott on 31 October 2026 asked to continue the weekly sheets from 26 September with all nationalities, US included.
+- **Sheets:** `cs000113` (26 September), `cs000120` (3 October), `cs000127` (10 October), all on the base sheet of `cs000099` and registered to it by phase correlation (`tools/loc12ag/sheetG_registration.json`; residuals about 1 km). The claim note gives the fit figures of the base sheet (13 towns, RMS 1.6 km, leave-one-out at most 4.9 km).
+- **New claims** `C3108` to `C3390` (283: 97 US, 55 British, Canadian, Polish and French, 131 German; 8 at 0.7, 144 at 0.5, 131 at 0.3), written as the earlier map rows (representative point, precision 10 km, parent blank and commander unknown on all: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps). 214 fill gaps between documented dates (no existing non-map row of the unit within three days, rows before and after).
+- **New places** `PL1608` to `PL1800` (193; OpenStreetMap Nominatim town points within 3 km of the map point, searched 31 October 2026; local-language names, for example Vlissingen, not the French exonym Flessingue).
+- **Not written:** 47 readings with no town within 3 km (for village pass 3), 17 readings of placeholder units (47th, 190th, 331st, 348th Infantry, 363rd Volksgrenadier, 30th SS, 136th z.b.V., Divisions Nr. 405 and 526), 1 duplicate. All are in the private notes.
+- **Agreement (existing non-map row of the unit within 10 km):** one-day window 3 of 14 (21%): US 2 of 3, British and other Allied 1 of 5, German 0 of 6; three-day window 11 of 33 (33%): US 7 of 11 (64%), British and other Allied 2 of 8 (25%), German 2 of 14 (14%).
+- **Checks:** validator warnings 45 to 61 and coordinate warnings 19 to 23 (non-failing prompts; new map rows against nearby objective, front-line or sector rows); no exception added.
+- **Scenario 59** checks the batch.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

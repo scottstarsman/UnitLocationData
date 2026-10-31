@@ -655,3 +655,9 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 4. German duplicate copies and map sheets: not read in full.
 5. Unit strengths: notes only, not in the dataset.
 6. Map front lines: not traced.
+
+## Official-history pass 2: decisions (Scott, 31 October 2026)
+
+1. No further Lexikon der Wehrmacht pass; take German refits only from dated official histories or the German manuscripts.
+2. The 226th Division's month-level Dunkirk listing stays unlabelled.
+3. The open pilot spans (`C1816`, `C1553`) stay open; the 30-day horizon caps them.

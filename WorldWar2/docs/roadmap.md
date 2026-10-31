@@ -545,12 +545,12 @@ Deferred (not in this batch, about 30 rows; items marked *resolved* were written
 
 ## Official-history pass 2 (31 October 2026): open points
 
-Done on the branch `official-history-pass-2` (from `main` `13be4a4`), chunk 1 (US): 1 claim (`C2160`, 101st Airborne at Berchtesgaden on 8 May 1945, inferred garrison), 1 place (`PL1055`), semantic scenario 42. Still open, each with a recommendation:
+Done on the branch `official-history-pass-2` (from `main` `13be4a4`), chunk 1 (US): 1 claim (`C2160`, 101st Airborne at Berchtesgaden on 8 May 1945, inferred garrison), 1 place (`PL1055`); chunk 2 (Lexikon): 3 claims (`C2161` to `C2163`), 1 place (`PL1056`); chunk 3: 59 pilot rows labelled; semantic scenario 42. Still open, each with a recommendation:
 
 1. US 70th and 106th 8 May rows: The Last Offensive names no place. Recommendation: leave blank unless the Seventh Army or Fifteenth Army report is found as public text.
 2. US open spans (11th Armored, 26th, 70th, 104th, 106th) and undated rests: no dated relief in The Last Offensive chapters read. Recommendation: leave open; the 30-day horizon limits them.
 3. German refit spans (chunk 2, done): 9th Panzer refit at Rheydt (31 October to 15 November 1944, `C2161` to `C2163`). The other Lexikon pages read give no dated late-war refit, and the 226th (Dünkirchen) stays blank because its only row is a month-level listing. Recommendation: no further Lexikon pass; take refits only from dated sources (official histories or FMS manuscripts).
-4. Pilot division rows (chunk 3): not started. Recommendation: do it as a further commit on this branch.
+4. Pilot division rows (chunk 3, done): 59 rows labelled. Left blank: two command-change rows (`C1339`, `C1560`). Still open spans: the British 1st Airborne refit from 26 September 1944 (`C1816`) and the 1st Polish Armoured line span from 4 September 1944 (`C1553`). Recommendation: leave them open; the 30-day horizon limits them.
 
 ## Official-history pass 1 (30 October 2026): open points
 

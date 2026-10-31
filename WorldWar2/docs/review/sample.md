@@ -411,7 +411,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Place:** Lingeves / Tilly-sur-Seulles sector (`PL0192`, Lower Normandy, FR); point 49.1761, -0.6253; precision 5 km; point represents: front_line_point; qualifier: point = Tilly; coordinate source: R001: Wikipedia
 - **Command relationships stated by the claim:** assigned UK-COR-030C
 - **Engaged with:** GER-PZ-LEHRD
-- **Notes:** Attacked with two brigades toward La Senaudiere, La Belle Epine, Lingevres and Verrieres 14 June; 50th Division vs Panzer Lehr continued for days.
+- **Notes:** Attacked with two brigades toward La Senaudiere, La Belle Epine, Lingevres and Verrieres 14 June; 50th Division vs Panzer Lehr continued for days. Activity: in_line, span point, stated; in official-history pass 2 (October 2026, pilot-division labelling) the old value of activity_status is blank and the new value is in_line (point, stated); reason: the cited source describes the division itself fighting (attacking, capturing, landing or defending) on this date, which is line service.
 - **Sources cited** (the claim's own locator: none):
 
   | reference | role | title | type | link | page or locator |

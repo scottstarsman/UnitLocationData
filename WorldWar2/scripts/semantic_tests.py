@@ -954,7 +954,9 @@ def scenario_26_activity_pilot():
     expect(s + ': 2e DB, 3 Jan 1945: XV Corps reserve (point)', A('FR-ARM-002D', '1945-01-03')[:3], ('reserve', 'certain', 'stated'))
     expect(s + ': 1st Polish Armoured, 1 Sep 1944: refitting after the gap, implicit end by the pursuit', A('POL-ARM-001D', '1944-09-01')[:3], ('refitting', 'certain', 'inferred'))
     expect(s + ': Polish Parachute Brigade, 23 Sep 1944: in the line at Driel', A('POL-ABN-001B', '1944-09-23')[:2], ('in_line', 'certain'))
-    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: the open refit span is not carried past 30 days', A('CAN-ARM-004D', '1944-12-01'), None)
+    # Official-history pass 2 (31 October 2026): old expectation None (open refit span past 30 days); new: the refit span now ends on 19 October
+    # and the line span of Suitcase (C1340, 20 October) runs to the reserve start of 23 December (C1342); reason: the pilot rows were labelled.
+    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: in the line between Suitcase and the Boxtel reserve (pass 2 labels)', A('CAN-ARM-004D', '1944-12-01'), ('in_line', 'certain', 'inferred', 0.3))
     expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
     claims = common.load_all_claims()[1]
     pilot = {'US-ABN-101D', 'US-ABN-082D', 'UK-ABN-001D', 'UK-INF-050D', 'CAN-INF-002D', 'CAN-ARM-004D', 'GER-SSPZ-009D', 'GER-SSPZ-010D', 'GER-FEST-LORIENT', 'FR-ARM-002D', 'FR-INF-003D', 'POL-ARM-001D', 'POL-ABN-001B'}
@@ -1240,13 +1242,16 @@ def scenario_40_fms_b701_armygroupb():
 
 
 def scenario_42_official_history_pass_2():
-    """Official-history pass 2 (October 2026): US gaps from The Last Offensive (C2160); Lexikon der Wehrmacht German rows (C2161-C2163)."""
+    """Official-history pass 2 (October 2026): US gaps from The Last Offensive (C2160); Lexikon der Wehrmacht German rows (C2161-C2163); labels for the rows of the five pilot divisions."""
     s = 'scenario 42'
     import activity
     A = lambda u, d: (lambda r: r and (r['activity'], r['status'], r['support'], r['confidence']))(activity.activity_at(u, d))
     claims = common.load_all_claims()[1]
     rows = [c for c in claims if OHP2(c)]
-    expect(s + ': the pass has 4 activity rows', sum(bool(c.get('activity_status')) for c in rows), 4)
+    expect(s + ': the pass has 63 activity rows (4 new claims, 59 pilot rows labelled)', sum(bool(c.get('activity_status')) for c in rows), 63)
+    expect(s + ': 4th Canadian Armoured, 10 Oct 1944: refit at Abbeville ended by Suitcase (inferred end)', A('CAN-ARM-004D', '1944-10-10')[:3], ('refitting', 'certain', 'inferred'))
+    expect(s + ': 4th Canadian Armoured, 10 Jan 1945: Army Reserve at Boxtel', A('CAN-ARM-004D', '1945-01-10')[:2], ('reserve', 'certain'))
+    expect(s + ': 1st Polish Armoured, 19 Aug 1944: Chambois', A('POL-ARM-001D', '1944-08-19')[:1], ('in_line',))
     expect(s + ': 9th Panzer (German), 5 Nov 1944: short refit at Rheydt', A('GER-PZ-009D', '1944-11-05')[:1], ('refitting',))
     expect(s + ': 9th Panzer (German), 16 Nov 1944: defending Geilenkirchen', A('GER-PZ-009D', '1944-11-16')[:1], ('in_line',))
     expect(s + ': 101st Airborne, 8 May 1945: Berchtesgaden area (inferred garrison)', A('US-ABN-101D', '1945-05-08'), ('garrison', 'certain', 'inferred', 0.3))

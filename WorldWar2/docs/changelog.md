@@ -4,7 +4,7 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 
 ## fms-b701-armygroupb: Army Group B from Foreign Military Studies B-701 (Reichhelm; 30 October 2026)
 
-Scott approved the reading of the Army Group B manuscript and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the unmerged branches `fms-b703-armygroupg` (`C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`) and `fms-b811-15army` (`C2127` to `C2134`, `PL1039` to `PL1044`, `R768`); the unmerged branch `fold3-links` changes citations only. Source: Günther Reichhelm (Ia of Army Group B), B-701, *Summary of Army Group B Engagements from the middle of Oct 44 until the middle of Apr 45* (English translation, dated 29 November 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The maps (images 75-79) and the German section were not read.
+Scott approved the reading of the Army Group B manuscript and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the branches `fms-b703-armygroupg` (merged as PR #56; `C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`) and `fms-b811-15army` (merged as PR #57; `C2127` to `C2134`, `PL1039` to `PL1044`, `R768`); the branch `fold3-links` (merged as PR #55) changes citations only. Source: Günther Reichhelm (Ia of Army Group B), B-701, *Summary of Army Group B Engagements from the middle of Oct 44 until the middle of Apr 45* (English translation, dated 29 November 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The maps (images 75-79) and the German section were not read.
 
 - **New reference** `R769` (B-701; archive_document, family `fms_german_manuscript`). Reliability: 20 of 25 checkable facts agree with the dataset, Ellis and the B-811 and B-703 notes (80%). Good for the Ardennes order of battle; Allied dates are often a day off.
 - **New places**: none (next place id stays `PL1045`).
@@ -15,6 +15,62 @@ Scott approved the reading of the Army Group B manuscript and a data branch on 3
 - **Command relation evidence**: `CR0598` gains an observed_during link for `C2135`. No new relation (next id stays `CR1064`).
 - **Semantic scenario 40** (38 and 39 are used by the other two FMS branches); earlier batch counts exclude `C2135` and `C2136`.
 - Open points in `docs/roadmap.md` (FMS B-701 batch).
+
+## fms-b811-15army: Fifteenth Army from Foreign Military Studies B-811 (von Zangen; 30 October 2026)
+
+Scott approved the reading of the Fifteenth Army and Army Group B manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c`. Ids start after the branch `fms-b703-armygroupg` (merged as PR #56; `C2116` to `C2126`, `PL1032` to `PL1038`, `R767`, `G033`); the branch `fold3-links` (merged as PR #55) changes citations only. Source: Gustav von Zangen, B-811, *Fifteenth Army (22 Nov 44-9 Mar 45): Defense Battles at the Roer and Rhine*, parts I-V (English translation; parts I-IV dated 15 November 1947, part V 20 December 1947); NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. The German copy and the German maps were not read.
+
+- **New reference** `R768` (B-811; archive_document, family `fms_german_manuscript`). Reliability: 18 of 21 checkable facts agree with the dataset and Ellis (86%). Good for corps and division sectors, reliefs and command-change dates; weak on Allied identifications.
+- **New places** `PL1039` to `PL1044` (6; OpenStreetMap Nominatim): Königshoven (Bedburg), Bleibuir, Linnich, Effeld, Heinsberg and Schöneseiffen.
+- **New claims** `C2127` to `C2134` (8; each note carries old value none, new value and reason):
+  - Fifteenth Army takes over the Aachen-Roer front as Group von Manteuffel on 22 November 1944 at Königshoven (`C2127`, 0.5). CMH `C0957` keeps the arrival of 15 November; the two rows are different events.
+  - LXXIV Corps to the Fifteenth Army about 10 December (`C2128`, Bleibuir, 0.5).
+  - XLVII Panzer Corps hands over its Linnich sector and leaves for the Ardennes on 4 December (`C2129`, 0.5).
+  - 59th Infantry Division arrives north of Heinsberg about 4 December (`C2130`, 0.3).
+  - Corps group Felber takes over the east of the XII SS Corps sector by 17 December; XII SS Corps at Effeld (`C2131`, 0.3).
+  - 176th Division back behind the Roer by about 28 January 1945 (`C2132`, 0.3).
+  - 62nd Volksgrenadier Division relieves the 246th near Monschau about 25 January (`C2133`, 0.3; inferred value: old none, new 25 January, reason: the night of 24/25 January).
+  - 12th Volksgrenadier Division reaches Schöneseiffen about 2 February (`C2134`, 0.3).
+  - The parent is blank on the seven rows other than `C2127` (inferred value: old none, new blank, reason: the change is stated only by B-811 and is not yet in the command relations table).
+- **Changed rows** (old value, new value and reason in each row's Review sentence):
+  - `C1089` (LXVII Corps to the Sixth Panzer Army, 17 January): `R768` added; event support one to two families; date and confidence unchanged.
+  - `C1140` (LVIII Panzer Corps under the Fifteenth Army, February): `R768` added as a second family; confidence stays 0.3 (approximate day).
+- **Command relation evidence**: `CR0598` gains an observed_during link for `C2127`. No new relation (next id stays `CR1064`).
+- **Semantic scenario 39** (38 is used by `fms-b703-armygroupg`); earlier batch counts exclude `C2127` to `C2134`.
+- Open points in `docs/roadmap.md` (FMS B-811 batch).
+
+## fms-b703-armygroupg: Army Group G from Foreign Military Studies B-703 (Wilutzky; 30 October 2026)
+
+Scott approved the reading of the Army Group G manuscripts and a data branch on 30 October 2026. One branch from `main` `535b12c` (the branch `fold3-links`, merged as PR #55, changes only citations of existing rows and adds no ids). Source: Horst Wilutzky (Ia of Army Group G), B-703, *The Fighting of Heeresgruppe G in the West: the final battle in central and southern Germany until the surrender (22 Mar-6 May 1945)*, English translation, with Schulz's statement and Hausser's commentary; NARA M1035, read on Fold3. A US Government work, paraphrased in English in the claims. The reading notes stay private and are not in this repository. A-999 (Army Group G, 20 September-8 November 1944) was not found as separate pages in its Fold3 set and is left open.
+
+- **New reference** `R767` (B-703; archive_document, family `fms_german_manuscript`). Reliability: 18 of 23 checkable facts agree with the dataset, Ellis and de Lattre (78%). Good for army group headquarters moves and subordination changes; weak and sometimes late on Allied crossings. Year written: the signature is dated 12 January 1947 but the preface says September-October 1947; 1947 is used.
+- **New places** `PL1032` to `PL1038` (7; OpenStreetMap Nominatim): Michelstadt, Neuenstadt am Kocher, Waldenbuch, Wallerstein, Schierling, Ampfing and Hohenaschau. Inferred value: the manuscript's "Neuenstadt" is taken to be Neuenstadt am Kocher (the town of that name in the First Army zone).
+- **New claims** `C2116` to `C2126` (11; each note carries old value none, new value and reason):
+  - Army Group G headquarters: Michelstadt (24 March, 0.3, inferred arrival day; old none, new 24 March, reason: first full day after permission on 23 March), Neuenstadt (28 March), Waldenbuch (30 March), Schierling (22 April), Ampfing (26 April, 0.3; the night of 25/26 April), re-formed for the capitulation on 3 May (0.3, place fallback Hohenaschau).
+  - Subordination changes stated only by B-703, parent left blank (inferred value: old none, new blank, reason: not yet in the command relations table): 16th Volksgrenadier Division to the Nineteenth Army (6 April), LXXX Corps to the Nineteenth Army (8 April), 198th Division to the First Army (18 April). All 0.3 (representative points).
+  - Nineteenth Army back under the Commander-in-Chief West on 10-11 April (`C2124`, 0.3; linked to `CR0815`).
+  - Seventh Army directly under the Commander-in-Chief West about 25 April (`C2126`, alternate, 0.3).
+- **Changed rows** (old value, new value and reason in each row's Review sentence):
+  - `C1198` (Schulz takes over, 5 April): place `PL0641` (representative point at Munich) to `PL1035` (Wallerstein); precision 50 to 5 km; location basis representative_point to documented_on_date; confidence 0.3 to 0.5; `R767` added. Reason: B-703 p. 29 names the command post of 5 April.
+  - `C1199` (dissolution order, 29 April): place `PL0641` to `PL1038` (Hohenaschau); precision 50 to 10 km; basis representative_point to documented_on_date; confidence 0.3 to 0.5; parent blank to `GER-OBW-000H`; `R767` added. Reason: B-703 pp. 48-50 names the place and agrees with the Lexikon on the date.
+  - `C1205` (Seventh Army under Kesselring, 28 April): conflict group blank to `G033`. Reason: B-703 dates the same transfer about 25 April; CMH stays preferred.
+  - `C1231` (LXXXII Corps to the First Army, 9 April): `R767` added; event support one to two families; confidence stays 0.3 (representative point).
+- **Command relation evidence**: `CR0594` gains observed_during links for `C2116` to `C2121` and `C1199`; `CR0815` for `C2124`. No new relation (next id stays `CR1064`).
+- **New conflict group** `G033` (Seventh Army transfer, 25 vs 28 April).
+- **Semantic scenario 38**; scenario counts of earlier batches exclude `C2116` to `C2126`.
+- Open points in `docs/roadmap.md` (FMS B-703 batch).
+
+## fold3-links: first-page Fold3 URLs for the FMS references (30 October 2026)
+
+Scott approved this on 30 October 2026. One branch from `main` `535b12c`. Each reference's `full_citation` gains a `Link review (branch fold3-links ...)` sentence giving the old URL, the new URL and the reason. In every claim and coordinate exception that cited an old URL, the `source` is updated to the new one. No claim values, ids or confidences changed.
+
+- `R761` (B-466): `https://www.fold3.com/image/158929558` to `https://www.fold3.com/image/158929549/b-466-panzer-group-west-mid-1943-5-jul-1944-page-1-...`. Reason: the old URL was a later image, not the first page.
+- `R762` (B-766): the Fold3 search `?keywords=B-766` to `https://www.fold3.com/image/160256297/b-766-nineteenth-army-16-sep-17-nov-1944-page-1-...`. Reason: a placeholder search link replaced by the first page.
+- `R763` (B-263): `https://www.fold3.com/image/153641910` to `https://www.fold3.com/image/153641895/b-263-nineteenth-army-8-nov-1944-10-jan-1945-page-1-...`. Reason: the old URL was a later image.
+- `R764` (B-463): the Fold3 search `?keywords=B-463` to `https://www.fold3.com/image/153793978/b-463-nineteenth-army-4-jan-21-mar-1945-page-1-...`. Reason: a placeholder search link.
+- `R765` (B-468): `https://www.fold3.com/image/158929726` to `https://www.fold3.com/image/158929720/b-468-lxiv-corps-1-nov-31-dec-1944-page-1-...`. Reason: the old URL was a later image.
+- `R766` (B-550): the Fold3 search `?keywords=B-550` to `https://www.fold3.com/image/160245654/b-550-lxiv-corps-6-dec-1944-28-jan-1945-page-1-...`. Reason: a placeholder search link.
+- The full new URLs are in `data/references_meta.csv`. Rows touched: 20 claim files cite `R761`; 22 claim files cite `R762` to `R766`; 2 coordinate exceptions.
 
 ## fms-19army: German Nineteenth Army and LXIV Corps from Foreign Military Studies B-766, B-263, B-463, B-468 and B-550 (30 October 2026)
 

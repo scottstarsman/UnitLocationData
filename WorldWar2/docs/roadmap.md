@@ -600,10 +600,26 @@ The follow-up and second-source passes (29 October 2026) answered the earlier po
 ## FMS 19th Army batch (B-766, B-263, B-463, B-468, B-550; 30 October 2026): deferred and open points
 
 1. **338th Division commander in early October 1944 (`C2051`).** de Lattre p. 199 names Homme de Courbière on 6 October; B-766 p. 23 has Oschmann due to take over on 26 September (doubtful reading). Recommendation: check the Lexikon (or Tessin) commander list for the 338th and set the date of the change; until then keep de Lattre's name.
-2. **Fold3 URLs.** `R762`, `R764` and `R766` cite the Fold3 search for the manuscript number because the first-image address was not recorded. Recommendation: replace them with the first-image URL (as for `R763` and `R765`) at the next Fold3 session.
+2. **Fold3 URLs.** Done on the branch `fold3-links` (30 October 2026): `R761` to `R766` now cite the first page of each manuscript.
 3. **Unread parts.** The German texts of B-468 and B-550, B-263 German pp. 1-9, 11-15 and 17-21, and B-463 pp. 39-41. Recommendation: read only if a row needs a second check.
 4. **Still deferred:** the 1st Armoured at Seppois (19 November; FMS gives only context); the 9th Colonial at Lörrach (April 1945; outside the manuscripts); the 12th Armored at Rouffach, the 3rd Algerian at Château-Lambert and the 1st Free French at the Ballon d'Alsace (not in the FMS).
 5. **Other FMS facts not written:** the B-463 strengths of 28 January 1945 (B-463 p. 7; a second strength set); the 2nd Mountain Division's arrival (date not stated); the Army Group G approval date for the Vosges-ridge withdrawal (24 or 26 November, digit blurred; `C2091` at 0.3).
+
+## FMS B-703 batch (Army Group G, 22 March-6 May 1945; 30 October 2026): open points
+
+1. **Subordination changes stated only by B-703** (`C2122` 16th VG to the Nineteenth Army on 6 April; `C2123` LXXX Corps to the Nineteenth Army on 8 April, while `CR0669` keeps it under the First Army to 18 April; `C2125` 198th Division to the First Army on 18 April). Parents are blank. Recommendation: add relations only when a second family dates them; otherwise leave them as notes.
+2. **Nineteenth Army under Army Group G about 3-11 April 1945.** B-703 pp. 25 and 35 say the army group took it over on its own authority and lost it again on 10-11 April; the Lexikon row `C1217` lists it under Army Group G on 26 April and `CR0815` keeps it under OB West from 2 March. Recommendation: add a disputed short relation only if the Lexikon or CMH supports it.
+3. **Allied dates in B-703 not used**: Danube crossing at Dillingen 25 April (dataset `C0679`: 22 April); Rhine crossing north of Mannheim 27 March (Ellis: Worms, 26 March); 10th Armored at Crailsheim 5 April (no US row). Hausser's commentary says the 6th SS Mountain Division fought through to German lines (CMH `C1274`: rounded up on 2 April). No change made.
+4. **A-999** (Army Group G, 20 September-8 November 1944): not found as separate pages in the Fold3 set "A-999 to A1000, B018 and B078", whose first 189 images are B-078 (Mellenthin). Recommendation: search the set's later images or use B-078 instead.
+5. **Unread**: the German original of B-703 (spot-checked only) and the box contents of the six orders of battle and ten traced maps (illegible in the scan).
+
+## FMS B-811 batch (Fifteenth Army, 15 November 1944-22 February 1945; 30 October 2026): open points
+
+1. **Takeover date.** B-811 p. 2 dates the takeover from the Fifth Panzer Army on 22 November; `C0957` (CMH) calls the arrival of 15 November the takeover. Recommendation: reword the `C0957` event definition to "arrival" and keep both rows.
+2. **Relief of the 246th Division in November.** CMH (`C0972`) has the 340th relieve the 246th at Jülich on 21 November; B-811 p. 19 has the 340th replace the 49th and the 363rd replace the 246th. Recommendation: keep CMH; add a note only after a third source.
+3. **FMS-only changes with blank parents** (`C2128`, `C2129`, `C2131`, `C2133`, also `C2130`, `C2132`, `C2134`). Recommendation: add relations only when a second family dates them.
+4. **Not written**: Lindern lost 1 December and Linnich 2 December (no German row needs them); the LXVII Corps under the Fifteenth Army about 27 December to 18 January (start date only in B-811); the Roer dams opened by Army Group B order on 6/7 February (consistent with `C0607`); Volks artillery corps and the dated strength notes (p. 82: infantry at two thirds, artillery two thirds to three quarters). Allied identifications from B-811 not used (a British 3rd Division at Elsenborn on appendix 5 is wrong).
+5. **Unread**: the German copy (images 108-254) and its hand-drawn maps; the English maps' lines are illegible in the scan.
 
 ## FMS B-701 batch (Army Group B, mid-October 1944-mid-April 1945; 30 October 2026): open points
 

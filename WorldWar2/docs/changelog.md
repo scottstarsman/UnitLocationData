@@ -38,6 +38,16 @@ Rules applied (accepted by Scott): no command relation and no parent from a sing
 - **Disagreements recorded, no value changed:** the 8th Parachute Division on the north wing from 16 February in B-084 against a fight west of Mönchengladbach on 27 February in `C1155`; the 2nd Parachute Division brought from Holland about 27 February in B-084 against the LXXXVI Corps on the lower Rhine on 8 February in `C1129`.
 - **Semantic scenario 49.**
 
+### B-849 (von Zangen, Fifteenth Army in the Ruhr pocket, 31 March-15 April 1945, German original)
+
+- **New reference** `R778` (B-849; archive_document, family `fms_german_manuscript`). Reliability: 9 of 11 checkable facts agree with the dataset (82%).
+- **New places** `PL1101` to `PL1111` (11; OpenStreetMap Nominatim): Niederberndorf, Dahle, Altastenberg, Bad Fredeburg, Meschede, Iserlohn, Medebach, Niedersfeld, Grafschaft, Stottmert, Wixberg.
+- **New claims** `C2236` to `C2247` (12; 1 at 0.3 and the rest at 0.5; each note carries old value none, new value and reason): Fifteenth Army command posts at Niederberndorf (30 March), Stottmert (10 April), Dahle (11 April) and Wixberg (12 April); LIII Corps at Altastenberg (31 March); LXXIV and LXXXI Corps takeovers of 8 April; XLVII Panzer Corps east of Iserlohn (14 April); Panzer Lehr leaving Winterberg (3 April); the 3rd Panzergrenadier Division at Medebach (2 April); the 176th Division thrown back to Niedersfeld (5 April); the first parts of the 338th Division at Grafschaft (5 April, 0.3).
+  - Parent blank on all 12 (inferred value: old none, new blank, reason: no command relation from a single manuscript).
+- **No existing row changed.** No relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed:** organised fighting ended effective 15 April in B-849 against the Fifteenth Army surrender of 13 April in `C1215`; the LXXXI Corps commanding general captured on the evening of 11 April (doubtful reading) with Burdach from 12 April in B-849 against Köchling surrendering on 13 April in `C1230`.
+- **Semantic scenario 50.**
+
 ## fms-german-4: four German FMS manuscripts read in the original (B-475, B-235, B-179, B-763; 31 October 2026)
 
 Scott approved reading four German Foreign Military Studies manuscripts on Fold3 and one data branch for all four on 31 October 2026, one commit per manuscript. Branch `fms-german-4` from `main` `81e0aec`. The German original is the primary source in each; the English translation (B-179 and B-763 only) was used to check unclear passages. All four are US Government works; the claims paraphrase the German text in English. The reading notes stay private and are not in this repository.

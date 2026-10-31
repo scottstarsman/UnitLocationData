@@ -76430,6 +76430,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.222,
+     51.1962
+    ]
+   },
+   "properties": {
+    "claim_id": "C2236",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL1101",
+    "location_name": "Niederberndorf, Schmallenberg, North Rhine-Westphalia (Niederberndorf 6 km north-west of Schmallenberg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifteenth Army command post at Niederberndorf as von Zangen takes over the east front of the Ruhr pocket",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9167,
      50.2667
     ]
@@ -76710,6 +76751,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R544;R061;R002",
     "source_locator": "R544: p. 322; R061: section French & German campaign (1944-1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4678,
+     51.1889
+    ]
+   },
+   "properties": {
+    "claim_id": "C2240",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-053C",
+    "unit_name": "LIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL1103",
+    "location_name": "Altastenberg, Winterberg, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LIII Corps (Bayerlein) command post at Altastenberg west of Winterberg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 8 and Anlage 1"
    }
   },
   {
@@ -77537,6 +77619,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.7045,
+     51.1975
+    ]
+   },
+   "properties": {
+    "claim_id": "C2245",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-02",
+    "place_id": "PL1107",
+    "location_name": "Medebach, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "3rd Panzergrenadier Division bypasses Medebach to Goddelsheim in the breakout attack but loses Medebach in the evening",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: pp. 13-14 and Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      9.9435,
      49.778
     ]
@@ -77906,6 +78029,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.5334,
+     51.1933
+    ]
+   },
+   "properties": {
+    "claim_id": "C2244",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-03",
+    "place_id": "PL0655",
+    "location_name": "Winterberg, North Rhine-Westphalia (heights west of Winterberg)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Panzer Lehr Division gives up Winterberg without a fight and takes position on the heights west of the town",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7328,
      50.8281
     ]
@@ -78227,6 +78391,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R750;R002",
     "source_locator": "R750: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5296,
+     51.2603
+    ]
+   },
+   "properties": {
+    "claim_id": "C2246",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-05",
+    "place_id": "PL1108",
+    "location_name": "Niedersfeld, Winterberg, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "176th Division, nearly smashed, is thrown back through Hildfeld to Niedersfeld",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 18 and Anlage 2b"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3263,
+     51.1459
+    ]
+   },
+   "properties": {
+    "claim_id": "C2247",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-05",
+    "place_id": "PL1109",
+    "location_name": "Grafschaft, Schmallenberg, North Rhine-Westphalia (east of Grafschaft near Schmallenberg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "First parts of the 338th Division arrive with Sperrverband Ahlfen east of Grafschaft near Schmallenberg",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: pp. 18-19 and Anlage 3"
    }
   },
   {
@@ -78767,6 +79013,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.3119,
+     51.1886
+    ]
+   },
+   "properties": {
+    "claim_id": "C2241",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-074C",
+    "unit_name": "LXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL1104",
+    "location_name": "Bad Fredeburg, Schmallenberg, North Rhine-Westphalia (sector of Sperrverband Ahlfen and the 338th and Panzer Lehr Divisions)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "LXXIV Corps (Püchler) takes over the south part of the former LIII Corps sector at 1200",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 19 and Anlage 2b"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2859,
+     51.3437
+    ]
+   },
+   "properties": {
+    "claim_id": "C2242",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL1105",
+    "location_name": "Meschede, North Rhine-Westphalia (sector of Sperrverband Wirtz and the 176th and 3rd Panzergrenadier Divisions)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "LXXXI Corps (Köchling) takes over the north part of the former LIII Corps sector and Sperrverband Wirtz around Meschede",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: pp. 19-21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -79136,6 +79464,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.6979,
+     51.1613
+    ]
+   },
+   "properties": {
+    "claim_id": "C2237",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL1110",
+    "location_name": "Stottmert, Herscheid, North Rhine-Westphalia (Stottmert 7 km south-east of Lüdenscheid)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifteenth Army command post moves to Stottmert south-east of Lüdenscheid",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 23 and Anlage 2d"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -79375,6 +79744,47 @@
     "location_temporal_offset_days": -16,
     "reference_ids": "R767;R002",
     "source_locator": "R767: pp. 25, 35"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.751,
+     51.3
+    ]
+   },
+   "properties": {
+    "claim_id": "C2238",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-11",
+    "place_id": "PL1102",
+    "location_name": "Dahle, Altena, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifteenth Army command post moves from Stottmert to Dahle after the breakthrough south of Arnsberg",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 25 and Anlage 2d"
    }
   },
   {
@@ -79744,6 +80154,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R734;R002",
     "source_locator": "R734: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6599,
+     51.3164
+    ]
+   },
+   "properties": {
+    "claim_id": "C2239",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL1111",
+    "location_name": "Wixberg, Altena, North Rhine-Westphalia (Wixberg north of Altena)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifteenth Army command post moves to Wixberg north of Altena",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: pp. 26-27"
    }
   },
   {
@@ -80482,6 +80933,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R746;R002",
     "source_locator": "R746: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7,
+     51.3747
+    ]
+   },
+   "properties": {
+    "claim_id": "C2243",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-14",
+    "place_id": "PL1106",
+    "location_name": "Iserlohn, North Rhine-Westphalia (line Schwerte-Sümmern-east of Iserlohn)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "XLVII Panzer Corps falls back over the Ruhr and holds the line Schwerte-Sümmern-east of Iserlohn",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R778;R002",
+    "source_locator": "R778: p. 26"
    }
   },
   {

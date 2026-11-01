@@ -8,6 +8,10 @@ Scott approved a pass over the Library of Congress series *HQ 12th Army Group si
 
 Rules applied (accepted by Scott): one reference for the series with the sheet id and situation date in each claim's `source_locator`; division points read as the main body and corps or army symbols as the headquarters at a precision of 10 km; German units at confidence 0.3; Allied units at 0.5, or 0.7 when another source family has the unit within 10 km on the same or the next day; no command relation and no parent from the maps (every new row has a blank parent); no front-line trace; units shown en route, marked as elements, unlocated or doubtful, and brigades and regiments stay in the private reading notes; placeholder units get no first claim; a unit shown between documented dates gets a claim; a disagreement with an existing row is logged as an open question and the existing row is unchanged. Commander is `unknown` on every new row because the maps name none. Reading notes are private.
 
+### Registration data in the repository (1 November 2026)
+
+- `tools/loc12ag/sheetG_registration.json` checked against the working transforms (27 weekly sheets, `cs000106`-`cs000289`, all identical); new `tools/loc12ag/pixel_to_latlon.py` reproduces every map coordinate from the sheet pixel; README updated. No data rows changed.
+
 ### Grid-reading audit (1 November 2026)
 
 - **Scope:** every map row on the branch was placed by hand from grid-labelled tiles (from the first batch on 31 October 2026; there is no automatic symbol finder in the pipeline). All 4323 readings of batches 1-5w were checked by an automatic symbol detector around each reading; 1119 readings had one unambiguous symbol nearby (615 within 1 km, 416 at 1-3 km, 88 more than 3 km away), 3075 had several symbols nearby and 129 none, so those could not be checked automatically.

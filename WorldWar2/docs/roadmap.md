@@ -954,7 +954,15 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 182. **Placeholder units on the sheet** (). Recommendation: decide in the unit clean-up with points 29 and 38.
 
 - 8 May 1945 (`cs000338`) completion: the ten previously unread sections were read (k1, k4, k5, k8, k9, k10, k13, k17, k18, k20). 19 readings: 11 written, 7 skipped as duplicates of existing 8 May text rows (US-INF-104D, US-INF-075D, US-INF-069D, US-ABN-017D, US-INF-078D, US-INF-079D, US-INF-094D), 1 with no gazetteer place within 3 km (FR-ARM-005D).
-- 8 May 1945 (`cs000338`) completion, not written: Canadian boxes in the Groningen/Emden area (dashed, labels unreadable), British 49th Division (cut at the sheet edge), Twelfth Army Group HQ (no unit id), French 4th Moroccan Mountain and the unlabelled French boxes near Ulm/Bregenz, the "4 FR" box near Tuttlingen (label ambiguous). Sections k4, k13, k17 and k20 hold no unit boxes.
+- 8 May 1945 (`cs000338`) completion, not written: Canadian boxes in the Groningen/Emden area (dashed, labels unreadable), British 49th Division (cut at the sheet edge), Twelfth Army Group HQ (no unit id), French 4th Moroccan Mountain and the unlabelled French boxes near Ulm/Bregenz, the "4 FR" box near Tuttlingen (label ambiguous). Sections k4, k13 and k17 hold no unit boxes (k20 corrected in roadmap point 190).
 - 8 May 1945 (`cs000338`) completion: none of the new map rows is more than 20 km from a text row.
+
+186. **Batch 5zf (8 May 1945 (completion, k20), `C6978` to `C6980`): agreement.** One-day window 0 of 1: US 0 of 1, British and other Allied 0 of 0, German 0 of 0; three-day window 0 of 2: US 0 of 2, British and other Allied 0 of 0, German 0 of 0. 0 of 3 rows fill gaps. Recommendation: accept; the German figure compares intelligence estimates with Lexikon der Wehrmacht, FMS and sector rows.
+187. **Differences over 20 km** (existing rows within three days): XX Corps (`C6979`, 52.8 km from `C0709`, -2 days); 20th Armored Division (`C6980`, 32.0 km from `C0711`, +0 days). Recommendation: keep the existing rows; most German ones are against main-body or sector rows drawn from Lexikon der Wehrmacht pages or the FMS manuscripts; check them in the German review.
+188. **Placeholder units on the sheet** (). Recommendation: decide in the unit clean-up with points 29 and 38.
+
+- 8 May 1945 (`cs000338`) completion, section k20 (Inn valley to Linz): 7 readings; 3 written (US-COR-015C, US-COR-020C, US-ARM-020D), 3 skipped as duplicates of existing 8 May text rows (US-INF-065D, US-INF-086D, US-INF-003D), 1 with no gazetteer place within 3 km (US-INF-080D). A partly hidden "7?" division box east of Passau not written.
+- 8 May 1945 (`cs000338`) completion: corrects roadmap point 184 — section k20 does hold unit boxes; k4, k13 and k17 hold none.
+- 8 May 1945 (`cs000338`) completion: US-COR-020C lies 52.8 km from C0709 (2 days off) and US-ARM-020D 32.0 km from same-day C0711; text rows kept.
 
 Resume point: sheet of 9 May 1945 (`cs000339`).

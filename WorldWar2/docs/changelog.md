@@ -180,6 +180,15 @@ Scott on 31 October 2026 asked to place the 11 unplaced readings of `cs000163` o
 - **Still unplaced:** 7 readings (85th Infantry, 10th SS Panzer, 51st, 43rd, XXX Corps, 361st, 16th) with no named settlement within 3 km that Nominatim can return; they need the Overpass radius search (roadmap point 58).
 - No existing claim row changed.
 
+### Village pass 5: GeoNames for the radius search (readings of 14 November 1944)
+
+The OpenStreetMap Overpass service (main server and two mirrors) was unreachable from 31 October to 1 November 2026, so Scott on 1 November 2026 asked to switch the "named place within 3 km" search to an offline GeoNames gazetteer.
+- **Method:** the free GeoNames country dumps NL, BE, LU, DE and FR (download.geonames.org/export/dump/, downloaded 1 November 2026, kept on the box only, never committed); populated places (feature class P: PPL, PPLL, PPLX, PPLF, PPLS, PPLA-PPLA4, PPLC, PPLG; historical and abandoned places excluded) searched locally within 3 km of the map point; nearest village preferred within 1 km of the nearest place. Nominatim (1.1 s between requests, retries with backoff) is used only to name the municipality and region. New reference **`R782`** (GeoNames, CC BY 4.0) is the coordinate reference of the places found this way.
+- **New claims** `C4122` to `C4127` (6: 10th SS Panzer at Hoekelum, 51st Division at Boshoven, XXX Corps at Schootshei, 43rd Division at Heiwik, 361st at La Hoube, 16th at Hirtengaerten), written as the other rows of the sheet (0.3 German, 0.5 others; parent blank, commander unknown: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps).
+- **New places** `PL2206` to `PL2211` (GeoNames points, local names).
+- **Still unplaced:** the 85th Infantry Division (point on the water of the Haringvliet, no populated place within 3 km).
+- No existing claim row changed.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

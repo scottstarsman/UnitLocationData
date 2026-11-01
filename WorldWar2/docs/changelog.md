@@ -172,6 +172,14 @@ Scott on 31 October 2026 asked to continue the weekly sheets with all nationalit
 - **Also not written** (roadmap point 58): doubtful or unlabelled flags and 11 readings left without a place because the Overpass service failed. Open questions: roadmap points 55-58.
 - **Scenario 65** checks the sheet. No existing claim row changed. No relation, no conflict group.
 
+### Village pass 4: readings of 14 November 1944 left without a place
+
+Scott on 31 October 2026 asked to place the 11 unplaced readings of `cs000163` once the lookup answered again (Nominatim with 1.1 s between requests and retries with backoff; the Overpass radius search still failed).
+- **New claims** `C4118` to `C4121` (4: First Canadian Army at Hoevenen, 245th Infantry Division at Cillaarshoek, 49th and 53rd Infantry Divisions at Leenderstrijp and Bocholt), written as the other rows of the sheet (0.3 German, 0.5 others; parent blank, commander unknown: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps).
+- **New places** `PL2202` to `PL2205` (OpenStreetMap, searched 31 October 2026; local names).
+- **Still unplaced:** 7 readings (85th Infantry, 10th SS Panzer, 51st, 43rd, XXX Corps, 361st, 16th) with no named settlement within 3 km that Nominatim can return; they need the Overpass radius search (roadmap point 58).
+- No existing claim row changed.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

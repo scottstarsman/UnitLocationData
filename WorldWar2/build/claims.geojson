@@ -124277,6 +124277,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3798,
+     51.2853
+    ]
+   },
+   "properties": {
+    "claim_id": "C4118",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL2202",
+    "location_name": "Hoevenen, Antwerp (near Hoevenen)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "First Canadian Army shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5268,
+     51.7666
+    ]
+   },
+   "properties": {
+    "claim_id": "C4119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL2203",
+    "location_name": "Cillaarshoek (Strijen), Zuid-Holland (near Cillaarshoek (Strijen))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "245th Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5114,
+     51.3151
+    ]
+   },
+   "properties": {
+    "claim_id": "C4120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL2204",
+    "location_name": "Leenderstrijp, Noord-Brabant (near Leenderstrijp)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6302,
+     51.1825
+    ]
+   },
+   "properties": {
+    "claim_id": "C4121",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL2205",
+    "location_name": "Bocholt, Limburg (near Bocholt)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "53rd (Welsh) Infantry Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]

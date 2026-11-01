@@ -74,11 +74,11 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 5798, dated 1944-06-06 to 1945-05-10 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 5932, dated 1944-06-06 to 1945-05-10 |
 | units in `data/units.csv` | 388: 319 active (have claims), 69 placeholders |
 | claim files (one per active unit) | 319 |
 | conflict groups / claims in a group | 30 / 64 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 2596 / 9 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 2600 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 1065 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2683 |
@@ -89,15 +89,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 1 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 41 |
 
-Claims by nationality: Germany 2391, US 2094, UK 748, Canada 295, France 176, Poland 68, Belgium 13, Netherlands 8, Czechoslovakia 5.
+Claims by nationality: Germany 2438, US 2156, UK 762, Canada 299, France 182, Poland 69, Belgium 13, Netherlands 8, Czechoslovakia 5.
 
-Claims by echelon: division 3899, corps 1062, army 481, brigade 194, army_group 94, regiment/battle_group 36, other 22, battalion 10.
+Claims by echelon: division 3994, corps 1090, army 492, brigade 194, army_group 94, regiment/battle_group 36, other 22, battalion 10.
 
-Claims by branch: Army 4028, Armoured 1178, Waffen-SS 256, Airborne 171, Luftwaffe 165.
+Claims by branch: Army 4132, Armoured 1197, Waffen-SS 259, Airborne 176, Luftwaffe 168.
 
-Claims by event type: other 2815, hq_observation 1064, attack 457, defense 246, hq_move 203, capture 192, command_change 184, arrival 127, regroup 120, relocation 96, landing 60, subordinate_assignment 58, withdrawal 57, counterattack 49, surrender 39, activation 18, redesignation 8, destruction 5.
+Claims by event type: other 2910, hq_observation 1103, attack 457, defense 246, hq_move 203, capture 192, command_change 184, arrival 127, regroup 120, relocation 96, landing 60, subordinate_assignment 58, withdrawal 57, counterattack 49, surrender 39, activation 18, redesignation 8, destruction 5.
 
-Claims by status: preferred 5757, alternate 25, disputed 16. Claims by confidence: 0.3 2000, 0.5 3107, 0.7 628, 0.9 63.
+Claims by status: preferred 5891, alternate 25, disputed 16. Claims by confidence: 0.3 2047, 0.5 3194, 0.7 628, 0.9 63.
 
 Placeholder units by nationality: Germany 64, Allied 3, US 2.
 
@@ -109,7 +109,7 @@ Evidence roles of relation links: observed_during 1308, asserts_start 1073, asse
 
 References by source family: wikipedia 237, us_army_cmh 236, lexikon_wehrmacht_de 196, ww2byday_com 33, fms_german_manuscript 20, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, geonames 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 237, reference_compilation 230, official_history 179, assignment_table 65, archive_document 29, news_or_web_article 19, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 3, other 2.
 
-Places by kind: point 2492, area 86, line 18.
+Places by kind: point 2496, area 86, line 18.
 
 <!-- counts:end -->
 

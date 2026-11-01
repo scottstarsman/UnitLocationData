@@ -9,38 +9,38 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Allied | army | 1 | 0 | 0 | 1 | 1 | 0 |
 | Allied | other | 2 | 0 | 0 | 2 | 0 | 0 |
 | Belgium | brigade | 0 | 0 | 1 | 1 | 1 | 13 |
-| Canada | army | 0 | 0 | 1 | 1 | 1 | 43 |
-| Canada | corps | 0 | 0 | 2 | 2 | 2 | 62 |
-| Canada | division | 0 | 0 | 5 | 5 | 3 | 198 |
+| Canada | army | 0 | 0 | 1 | 1 | 1 | 44 |
+| Canada | corps | 0 | 0 | 2 | 2 | 2 | 63 |
+| Canada | division | 0 | 0 | 5 | 5 | 3 | 200 |
 | Canada | brigade | 0 | 0 | 1 | 1 | 1 | 8 |
 | Czechoslovakia | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
-| France | army | 0 | 0 | 2 | 2 | 2 | 20 |
-| France | corps | 0 | 0 | 2 | 2 | 2 | 25 |
-| France | division | 0 | 0 | 12 | 12 | 10 | 155 |
+| France | army | 0 | 0 | 2 | 2 | 2 | 21 |
+| France | corps | 0 | 0 | 2 | 2 | 2 | 26 |
+| France | division | 0 | 0 | 12 | 12 | 10 | 159 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 48 |
-| Germany | army | 0 | 0 | 15 | 15 | 9 | 262 |
-| Germany | corps | 17 | 0 | 28 | 45 | 41 | 488 |
-| Germany | division | 43 | 0 | 88 | 131 | 112 | 1652 |
+| Germany | army | 0 | 0 | 15 | 15 | 9 | 266 |
+| Germany | corps | 17 | 0 | 28 | 45 | 41 | 498 |
+| Germany | division | 43 | 0 | 88 | 131 | 112 | 1669 |
 | Germany | brigade | 0 | 0 | 11 | 11 | 11 | 83 |
 | Germany | regiment/battle_group | 1 | 0 | 12 | 13 | 3 | 22 |
 | Germany | battalion | 1 | 0 | 0 | 1 | 0 | 0 |
 | Germany | other | 2 | 0 | 6 | 8 | 0 | 22 |
 | Netherlands | brigade | 0 | 0 | 1 | 1 | 0 | 8 |
-| Poland | division | 0 | 0 | 1 | 1 | 1 | 67 |
+| Poland | division | 0 | 0 | 1 | 1 | 1 | 68 |
 | Poland | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 23 |
-| UK | army | 0 | 0 | 1 | 1 | 0 | 39 |
-| UK | corps | 0 | 0 | 5 | 5 | 1 | 156 |
-| UK | division | 0 | 0 | 16 | 16 | 7 | 534 |
+| UK | army | 0 | 0 | 1 | 1 | 0 | 40 |
+| UK | corps | 0 | 0 | 5 | 5 | 1 | 159 |
+| UK | division | 0 | 0 | 16 | 16 | 7 | 544 |
 | UK | brigade | 0 | 0 | 11 | 11 | 7 | 52 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 23 |
-| US | army | 0 | 0 | 5 | 5 | 3 | 161 |
-| US | corps | 2 | 0 | 15 | 17 | 7 | 443 |
-| US | division | 0 | 0 | 61 | 61 | 25 | 1672 |
+| US | army | 0 | 0 | 5 | 5 | 3 | 165 |
+| US | corps | 2 | 0 | 15 | 17 | 7 | 455 |
+| US | division | 0 | 0 | 61 | 61 | 25 | 1709 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **69** | **0** | **319** | **388** | **258** | **6333** |
+| **All** | | **69** | **0** | **319** | **388** | **258** | **6442** |
 
 ## Operations
 
@@ -49,29 +49,29 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 5366 |
+| campaign | 9 | 9 | 5475 |
 | operation | 33 | 33 | 474 |
 | battle | 20 | 20 | 412 |
 | phase | 4 | 4 | 81 |
-| **All** | **67** | **66** | **6333** |
+| **All** | **67** | **66** | **6442** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 2634 places and 156 alias names for 6333 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 2663 places and 156 alias names for 6442 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 2530 | 6136 |
+| point | 2559 | 6245 |
 | area | 86 | 177 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1360 | 2882 |
-| Germany (DE) | 590 | 1685 |
-| Netherlands (NL) | 338 | 930 |
-| Belgium (BE) | 259 | 612 |
-| Luxembourg (LU) | 58 | 176 |
+| France (FR) | 1364 | 2904 |
+| Germany (DE) | 615 | 1752 |
+| Netherlands (NL) | 338 | 947 |
+| Belgium (BE) | 259 | 614 |
+| Luxembourg (LU) | 58 | 177 |
 | Austria (AT) | 18 | 31 |
 | Czechia (CZ) | 6 | 9 |
 | United Kingdom (GB) | 5 | 8 |

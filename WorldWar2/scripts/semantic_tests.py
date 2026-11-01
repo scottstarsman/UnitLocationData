@@ -1838,7 +1838,7 @@ def scenario_85_loc_12ag_apr3():
     b = [c for c in claims if 'C6521' <= c['claim_id'] <= 'C6602']
     expect(s + ': batch 5y adds 82 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (82, 82))
     expect(s + ': all on the sheet of 3 April 1945', sorted(set(c['date'] for c in b)), ['1945-04-03'])
-    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))  # no German box written on this sheet (roadmap point 149)
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
     expect(s + ': places are existing or new PL2734-PL2810', all(c['place_id'] <= 'PL2810' for c in b), True)

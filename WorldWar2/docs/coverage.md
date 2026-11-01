@@ -69,9 +69,9 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 |---|---:|---:|
 | France (FR) | 1364 | 2904 |
 | Germany (DE) | 615 | 1752 |
-| Netherlands (NL) | 338 | 947 |
+| Netherlands (NL) | 338 | 946 |
 | Belgium (BE) | 259 | 614 |
-| Luxembourg (LU) | 58 | 177 |
+| Luxembourg (LU) | 58 | 178 |
 | Austria (AT) | 18 | 31 |
 | Czechia (CZ) | 6 | 9 |
 | United Kingdom (GB) | 5 | 8 |

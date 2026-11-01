@@ -44298,7 +44298,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Liège",
-    "claims_count": 9
+    "claims_count": 1
    }
   },
   {
@@ -51899,6 +51899,26 @@
     "country": "DE",
     "region": "North Rhine-Westphalia",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2,
+     50.65
+    ]
+   },
+   "properties": {
+    "place_id": "PL2611",
+    "name": "Roetgen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 8
    }
   }
  ]

@@ -8,6 +8,12 @@ Scott approved a pass over the Library of Congress series *HQ 12th Army Group si
 
 Rules applied (accepted by Scott): one reference for the series with the sheet id and situation date in each claim's `source_locator`; division points read as the main body and corps or army symbols as the headquarters at a precision of 10 km; German units at confidence 0.3; Allied units at 0.5, or 0.7 when another source family has the unit within 10 km on the same or the next day; no command relation and no parent from the maps (every new row has a blank parent); no front-line trace; units shown en route, marked as elements, unlocated or doubtful, and brigades and regiments stay in the private reading notes; placeholder units get no first claim; a unit shown between documented dates gets a claim; a disagreement with an existing row is logged as an open question and the existing row is unchanged. Commander is `unknown` on every new row because the maps name none. Reading notes are private.
 
+### Roetgen place and name-merge guard (1 November 2026)
+
+- **New place** `PL2611` Roetgen, North Rhine-Westphalia (GeoNames `R782`, PPLA4 id 2844277; old value none, new value this row, reason: central Roetgen readings were named "Rott" by reverse geocoding and merged by name into `PL2002` Rott, about 4 km away).
+- **Re-pointed** `C4880`, `C4988`, `C5103`, `C5216`, `C5337`, `C5455`, `C5588`, `C5717` (78th Infantry Division): place_id old value `PL2230` (Petergensfeld, 3.7 km), new value `PL2611` (Roetgen, 2.8-2.9 km); location_qualifier old 'near Petergensfeld', new 'near Roetgen'; reason: Roetgen is nearer the reading and was the true gazetteer candidate. Notes added to each row.
+- **Tool** `tools/loc12ag/name_merge.py`: prefer the municipality name within 1.5 km of a GeoNames seat; refuse a name merge into an existing place more than 3 km away. `PL2002` unchanged.
+
 ### Tools (commit 1)
 
 - **New helper folder** `tools/loc12ag/` (not part of the build or the checks): `sheet_index.csv` (416 sheets by date, no missing day; 50 weekly sheets flagged for pass 1), `georef.py` (graticule fit through a Lambert conformal conic plane and an affine transform with residuals in km; registration of other scans of the same base sheet by phase correlation) and `sheet3_control.json` (base sheet 3, Normandy, 14 graticule ticks, RMS about 1 km). Needs numpy and Pillow.

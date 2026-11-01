@@ -104,6 +104,9 @@ def master(unit, higher, relationship, valid_from):
 # 78th Division rows re-pointed from Petergensfeld to the new place PL2611 Roetgen on 1 November 2026 (roadmap point 115)
 ROETGEN = {'C4880', 'C4988', 'C5103', 'C5216', 'C5337', 'C5455', 'C5588', 'C5717'}
 
+# rows of batches 5s-5u re-read on 1 November 2026 (Lorraine, Alsace and Netherlands tiles); new places PL2627-PL2633
+REREAD = {'C5850', 'C5845', 'C5844', 'C5867', 'C5802', 'C5984', 'C5979', 'C5978', 'C6001', 'C6053', 'C6011', 'C6015', 'C5994', 'C5936', 'C6118', 'C6112', 'C6135', 'C6145', 'C6128', 'C6070'}
+
 def scenario_0_staleness():
     """R1-N-001: a standing relationship is certain only up to its last listing."""
     s = 'staleness (US-INF-029D, last claim 1944-09-29)'
@@ -1757,7 +1760,7 @@ def scenario_79_loc_12ag_feb20():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2612-PL2615', all(c['place_id'] <= 'PL2615' for c in b), True)
+    expect(s + ': places are existing or new PL2612-PL2615', all(c['place_id'] <= 'PL2615' or c['claim_id'] in REREAD for c in b), True)
 
 
 def scenario_80_loc_12ag_feb27():
@@ -1765,12 +1768,12 @@ def scenario_80_loc_12ag_feb27():
     s = 'scenario 80'
     claims = common.load_all_claims()[1]
     b = [c for c in claims if 'C5934' <= c['claim_id'] <= 'C6067']
-    expect(s + ': batch 5t adds 134 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (134, 134))
+    expect(s + ': batch 5t adds 134 claims, all citing R781; C6028 and C6002 removed on the re-read of 1 November 2026', (len(b), sum(LOC12AG(c) for c in b)), (132, 132))
     expect(s + ': all on the sheet of 27 February 1945', sorted(set(c['date'] for c in b)), ['1945-02-27'])
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2616-PL2620', all(c['place_id'] <= 'PL2620' for c in b), True)
+    expect(s + ': places are existing or new PL2616-PL2620', all(c['place_id'] <= 'PL2620' or c['claim_id'] in REREAD for c in b), True)
 
 
 def scenario_81_loc_12ag_mar06():
@@ -1778,12 +1781,12 @@ def scenario_81_loc_12ag_mar06():
     s = 'scenario 81'
     claims = common.load_all_claims()[1]
     b = [c for c in claims if 'C6068' <= c['claim_id'] <= 'C6203']
-    expect(s + ': batch 5u adds 136 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (136, 136))
+    expect(s + ': batch 5u adds 136 claims, all citing R781; C6162, C6187 and C6136 removed on the re-read of 1 November 2026', (len(b), sum(LOC12AG(c) for c in b)), (133, 133))
     expect(s + ': all on the sheet of 6 March 1945', sorted(set(c['date'] for c in b)), ['1945-03-06'])
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2621-PL2626', all(c['place_id'] <= 'PL2626' for c in b), True)
+    expect(s + ': places are existing or new PL2621-PL2626', all(c['place_id'] <= 'PL2626' or c['claim_id'] in REREAD for c in b), True)
 
 
 def main():

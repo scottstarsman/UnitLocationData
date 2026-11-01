@@ -484,6 +484,17 @@ Scott on 31 October 2026 asked to continue the weekly sheets with all nationalit
 - **Agreement (existing non-map row of the unit within 10 km):** one-day window 2 of 11 (18%): US 2 of 11, British and other Allied 0 of 0, German 0 of 0; three-day window 2 of 12 (17%): US 2 of 11, British and other Allied 0 of 1, German 0 of 0.
 - **Scenario 90** checks the sheet. No existing claim row changed. No relation, no conflict group.
 - **Place fixes before commit (batch 5zd):** Last weekly sheet Reason: the gazetteer match used a different point for the same name than the registered place row, so the validator found the place more than 5 km away.
+- **Place fixes before commit (batch 5ze):** Completion of 8 May sheet Reason: the gazetteer match used a different point for the same name than the registered place row, so the validator found the place more than 5 km away.
+
+### Batch 5ze: weekly sheet of 8 May 1945 (completion) (all nationalities)
+
+Scott on 31 October 2026 asked to continue the weekly sheets with all nationalities, one commit per sheet, with village places added inline.
+- **Sheet:** `cs000338` (situation 1200 hrs 8 May 1945; completion of the unread sections), on the smaller-scale base sheet of `cs000324`, same registration as batch 5zd, registered by feature matching to the sheet of the previous week (`cs000331`; SIFT; match statistics not recorded) and through it to `cs000099` (`tools/loc12ag/sheetG_registration.json`); the same south-east offset as on `cs000156` applies (roadmap point 54).
+- **New claims** `C6967` to `C6977` (11: 7 US, 4 British, Canadian, Polish and French, 0 German; 0 at 0.7, 11 at 0.5, 0 at 0.3; 0.7 only under the 5 km rule of 31 October 2026), written as the earlier map rows (representative point, precision 10 km, parent blank and commander unknown on all: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps). 0 fill gaps between documented dates (no existing non-map row of the unit within three days, rows before and after). 1 rows sit on village, hamlet or locality places found inline (no town within 3 km).
+- **New places** `PL3133` to `PL3144` (OpenStreetMap Nominatim town points within 3 km of the map point, or for readings with no town the nearest named village, hamlet, suburb or locality from OpenStreetMap, searched 31 October 2026; local-language names; Belgian, Dutch and German hamlets marked "1944 municipality to be confirmed" where the present municipality differs).
+- **Not written:** 0 readings of placeholder units (), 1 with no named settlement within 3 km (French 5th Armoured Division), 7 duplicate. All are in the private notes.
+- **Agreement (existing non-map row of the unit within 10 km):** one-day window 0 of 1: US 0 of 1, British and other Allied 0 of 0, German 0 of 0; three-day window 0 of 1: US 0 of 1, British and other Allied 0 of 0, German 0 of 0.
+- **Scenario 91** checks the sheet. No existing claim row changed. No relation, no conflict group.
 
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 

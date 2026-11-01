@@ -946,7 +946,15 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 176. **Placeholder units on the sheet** (). Recommendation: decide in the unit clean-up with points 29 and 38.
 
 - 8 May 1945 (`cs000338`), same smaller-scale base sheet; town check passes (Köln, Leipzig, München, Hannover). Four place rows from the lookup had blank or wrong regions (PL3101 Roupov, PL3108 Cebiv, PL3123 Frýdava listed as "Normandy", PL3126 Moorfleet) and were corrected by hand.
-- 8 May 1945 (`cs000338`): only tiles k2, k3, k6, k7, k11, k12, k14, k15, k16, k19 were read (usage limit); 31 predicted units in the unread west/north/south-west tiles not written (incl. US-ARMY-009A, US-ARMY-015A, FR-ARMY-001A, FR-COR-001C, POL-ARM-001D). Also not written: SIXTH Army Group (no unit id), XVIII Airborne Corps, Guards box, boundary corps markers. 25 readings skipped as duplicates of existing 8 May text rows.
+- 8 May 1945 (`cs000338`): only tiles k2, k3, k6, k7, k11, k12, k14, k15, k16, k19 were read (usage limit); 31 predicted units in the unread west/north/south-west tiles not written (incl. US-ARMY-009A, US-ARMY-015A, FR-ARMY-001A, FR-COR-001C, POL-ARM-001D). Also not written: SIXTH Army Group (no unit id), XVIII Airborne Corps, Guards box, boundary corps markers. 25 readings skipped as duplicates of existing 8 May text rows. **Update 1 Nov 2026:** the ten unread sections have since been read (batch 5ze, `C6967`–`C6977`, roadmap point 183); 11 of the missing units written, 7 already present as text rows.
 - 8 May 1945 (`cs000338`): five map rows 24–83 km from same-day text rows (largest US-INF-090D 83.3 km vs C1897); text rows kept.
+
+180. **Batch 5ze (8 May 1945 (completion), `C6967` to `C6977`): agreement.** One-day window 0 of 1: US 0 of 1, British and other Allied 0 of 0, German 0 of 0; three-day window 0 of 1: US 0 of 1, British and other Allied 0 of 0, German 0 of 0. 0 of 11 rows fill gaps. Recommendation: accept; the German figure compares intelligence estimates with Lexikon der Wehrmacht, FMS and sector rows.
+181. **Differences over 20 km** (existing rows within three days): none. Recommendation: keep the existing rows; most German ones are against main-body or sector rows drawn from Lexikon der Wehrmacht pages or the FMS manuscripts; check them in the German review.
+182. **Placeholder units on the sheet** (). Recommendation: decide in the unit clean-up with points 29 and 38.
+
+- 8 May 1945 (`cs000338`) completion: the ten previously unread sections were read (k1, k4, k5, k8, k9, k10, k13, k17, k18, k20). 19 readings: 11 written, 7 skipped as duplicates of existing 8 May text rows (US-INF-104D, US-INF-075D, US-INF-069D, US-ABN-017D, US-INF-078D, US-INF-079D, US-INF-094D), 1 with no gazetteer place within 3 km (FR-ARM-005D).
+- 8 May 1945 (`cs000338`) completion, not written: Canadian boxes in the Groningen/Emden area (dashed, labels unreadable), British 49th Division (cut at the sheet edge), Twelfth Army Group HQ (no unit id), French 4th Moroccan Mountain and the unlabelled French boxes near Ulm/Bregenz, the "4 FR" box near Tuttlingen (label ambiguous). Sections k4, k13, k17 and k20 hold no unit boxes.
+- 8 May 1945 (`cs000338`) completion: none of the new map rows is more than 20 km from a text row.
 
 Resume point: sheet of 9 May 1945 (`cs000339`).

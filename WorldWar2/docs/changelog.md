@@ -417,6 +417,17 @@ Scott on 31 October 2026 asked to continue the weekly sheets with all nationalit
 - **Scenario 84** checks the sheet. No existing claim row changed. No relation, no conflict group.
 - **Place fixes before commit (batch 5x):** Read from own sheet, new layout, fresh tiles Reason: the gazetteer match used a different point for the same name than the registered place row, so the validator found the place more than 5 km away.
 
+### Batch 5y: weekly sheet of 3 April 1945 (all nationalities)
+
+Scott on 31 October 2026 asked to continue the weekly sheets with all nationalities, one commit per sheet, with village places added inline.
+- **Sheet:** `cs000303` (situation 1200 hrs 3 April 1945), on a new small-scale base sheet (roadmap point 147), registered by feature matching to the sheet of the previous week (`cs000296`; SIFT, 6217 inlier matches, median residual 1.61 px) and through it to `cs000099` (`tools/loc12ag/sheetG_registration.json`); the same south-east offset as on `cs000156` applies (roadmap point 54).
+- **New claims** `C6521` to `C6602` (82: 67 US, 15 British, Canadian, Polish and French, 0 German; 1 at 0.7, 81 at 0.5, 0 at 0.3; 0.7 only under the 5 km rule of 31 October 2026), written as the earlier map rows (representative point, precision 10 km, parent blank and commander unknown on all: old value none, new value blank or unknown, reason: no command relation or commander is taken from the situation maps). 65 fill gaps between documented dates (no existing non-map row of the unit within three days, rows before and after). 20 rows sit on village, hamlet or locality places found inline (no town within 3 km).
+- **New places** `PL2734` to `PL2810` (OpenStreetMap Nominatim town points within 3 km of the map point, or for readings with no town the nearest named village, hamlet, suburb or locality from OpenStreetMap, searched 31 October 2026; local-language names; Belgian, Dutch and German hamlets marked "1944 municipality to be confirmed" where the present municipality differs).
+- **Not written:** 0 readings of placeholder units (), 1 with no named settlement within 3 km (III Corps). All are in the private notes.
+- **Agreement (existing non-map row of the unit within 10 km):** one-day window 3 of 5 (60%): US 2 of 3, British and other Allied 1 of 2, German 0 of 0; three-day window 6 of 13 (46%): US 5 of 7, British and other Allied 1 of 6, German 0 of 0.
+- **Scenario 85** checks the sheet. No existing claim row changed. No relation, no conflict group.
+- **Place fixes before commit (batch 5y):** Read from own sheet, new small-scale base sheet, fresh tiles Reason: the gazetteer match used a different point for the same name than the registered place row, so the validator found the place more than 5 km away.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

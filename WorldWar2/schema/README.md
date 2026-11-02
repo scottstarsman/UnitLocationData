@@ -451,6 +451,8 @@ To cite a new source: see CONTRIBUTING.md ("How to cite a new source").
 
 ## strength_json
 
+Machine-readable schema: [json/strength_json.schema.json](json/strength_json.schema.json); all JSON-in-cell columns: [../docs/json_fields.md](../docs/json_fields.md).
+
 A JSON object (blank if no source gives figures):
 
 ```json

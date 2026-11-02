@@ -101,6 +101,18 @@ def master(unit, higher, relationship, valid_from):
     return rows[0] if rows else {k: '' for k in _ROWS[0]}
 
 
+# 78th Division rows re-pointed from Petergensfeld to the new place PL2611 Roetgen on 1 November 2026 (roadmap point 115)
+ROETGEN = {'C4880', 'C4988', 'C5103', 'C5216', 'C5337', 'C5455', 'C5588', 'C5717'}
+
+# rows of batches 5s-5u re-read on 1 November 2026 (Lorraine, Alsace and Netherlands tiles); new places PL2627-PL2633
+REREAD = {'C5850', 'C5845', 'C5844', 'C5867', 'C5802', 'C5984', 'C5979', 'C5978', 'C6001', 'C6053', 'C6011', 'C6015', 'C5994', 'C5936', 'C6118', 'C6112', 'C6135', 'C6145', 'C6128', 'C6070'}
+
+# map rows re-pointed to an existing nearer place by the grid-reading audit of 1 November 2026
+AUDIT = {'C6243', 'C6106', 'C6342', 'C4552', 'C3930', 'C6182', 'C6065', 'C3112', 'C6067', 'C5287', 'C6302', 'C6033', 'C5964', 'C5255', 'C6245', 'C6167', 'C4778'}
+# Visual audit of 2 November 2026 (roadmap point 199 onwards): rows moved to their symbol may take a new place; their notes say so.
+AUDIT |= {c['claim_id'] for c in common.load_all_claims()[1] if 'Visual audit 2 Nov 2026' in c['notes'] and '; place PL' in c['notes']}
+LOWERED = {c['claim_id'] for c in common.load_all_claims()[1] if 'Review (visual audit confidence, 2 November 2026)' in c['notes']}
+
 def scenario_0_staleness():
     """R1-N-001: a standing relationship is certain only up to its last listing."""
     s = 'staleness (US-INF-029D, last claim 1944-09-29)'
@@ -940,7 +952,8 @@ BATCH49 = lambda c: 'C2226' <= c['claim_id'] <= 'C2235'   # FMS B-084 batch (sce
 BATCH50 = lambda c: 'C2236' <= c['claim_id'] <= 'C2247'   # FMS B-849 batch (scenario 50) counts only in its own scenario
 BATCH51 = lambda c: 'C2248' <= c['claim_id'] <= 'C2274'   # FMS B-745 (Brandenberger, German original) batch (scenario 51) counts only in its own scenario
 BATCH52 = lambda c: 'C2275' <= c['claim_id'] <= 'C2281'   # FMS B-151 (Manteuffel, English translation from the Internet Archive) batch (scenario 52) counts only in its own scenario
-NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c) and not OHP2(c) and not BATCH43(c) and not BATCH44(c) and not BATCH45(c) and not BATCH46(c) and not BATCH47(c) and not BATCH48(c) and not BATCH49(c) and not BATCH50(c) and not BATCH51(c) and not BATCH52(c)
+LOC12AG = lambda c: 'R781' in c['reference_ids'].split(';')   # 12th Army Group situation maps (scenario 53) count only in their own scenario
+NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not LOC12AG(c) and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c) and not OHP2(c) and not BATCH43(c) and not BATCH44(c) and not BATCH45(c) and not BATCH46(c) and not BATCH47(c) and not BATCH48(c) and not BATCH49(c) and not BATCH50(c) and not BATCH51(c) and not BATCH52(c)
 
 
 def scenario_26_activity_pilot():
@@ -1406,8 +1419,540 @@ def scenario_52_fms_b151():
     expect(s + ': the existing Manderscheid row C2179 is not changed', [(c['place_id'], c['confidence']) for c in claims if c['claim_id'] == 'C2179'], [('PL1066', '0.3')])
 
 
+def scenario_53_loc_12ag_maps():
+    """HQ 12th Army Group situation maps (R781), pass 1 batch 1: 187 rows C2282-C2468 from eight weekly Normandy sheets, blank parents, no existing row changed."""
+    s = 'scenario 53'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if LOC12AG(c)]
+    b1 = [c for c in new if 'C2282' <= c['claim_id'] <= 'C2468']
+    expect(s + ': batch 1 adds 187 claims, all citing R781', (len(b1), sum('R781' in c['reference_ids'].split(';') for c in b1)), (187, 187))
+    expect(s + ': batch 1 covers the eight weekly sheets 6 June-25 July 1944', sorted(set(c['date'] for c in b1)), ['1944-06-06', '1944-06-13', '1944-06-20', '1944-06-27', '1944-07-04', '1944-07-11', '1944-07-18', '1944-07-25'])
+    expect(s + ': no parent is taken from the situation maps', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': German rows are intelligence estimates at 0.3', set(c['confidence'] for c in new if c['unit_id'].startswith('GER-')), {'0.3'})
+    expect(s + ': Allied rows are 0.5 or 0.7 only', set(c['confidence'] for c in new if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}, True)
+    expect(s + ': every row cites a sheet in its locator, keeps its own map point and says old value none', all(c['source_locator'].startswith('R781: sheet cs') and (c['coord_override'] or c['claim_id'] in ('C3018', 'C3070')) and 'old value none' in c['notes'] for c in new), True)
+    expect(s + ': division and brigade points are the main body and corps or army points the headquarters (brigades from batch 3b)', set((c['echelon'], c['location_represents']) for c in new), {('division', 'main_body'), ('brigade', 'main_body'), ('corps', 'headquarters'), ('army', 'headquarters'), ('army_group', 'headquarters')})
+    expect(s + ': no placeholder unit gets a first claim', set(c['unit_id'] for c in new) & {'GER-INF-265D', 'GER-INF-266D', 'GER-INF-276D', 'GER-LFD-016D'}, set())
+    expect(s + ': the existing Guards Armoured row of 18 July (Goodwood) is unchanged', [(c['place_id'], c['confidence']) for c in claims if c['claim_id'] == 'C1419'], [('PL0529', '0.7')])
+
+
+def scenario_54_loc_12ag_us_backfill():
+    """HQ 12th Army Group situation maps (R781), batch 2us: 114 US rows C2469-C2582 on the eight Normandy sheets, US divisions as main body, corps, army and army group headquarters at the flag-staff foot."""
+    s = 'scenario 54'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C2469' <= c['claim_id'] <= 'C2582']
+    expect(s + ': batch 2us adds 114 US claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b), set(c['nationality'] for c in b)), (114, 114, {'US'}))
+    expect(s + ': on the eight weekly Normandy sheets', sorted(set(c['date'] for c in b)), ['1944-06-06', '1944-06-13', '1944-06-20', '1944-06-27', '1944-07-04', '1944-07-11', '1944-07-18', '1944-07-25'])
+    expect(s + ': US rows are 0.5, or 0.7 with a second family within 10 km and three days', set(c['confidence'] for c in b if c['claim_id'] not in LOWERED), {'0.5', '0.7'})
+    expect(s + ': parents stay blank', set(c['parent_unit_id'] for c in b), {''})
+    expect(s + ': the 12th Army Group and Third Army headquarters of 25 July are read', sorted(c['unit_id'] for c in b if c['echelon'] in ('army_group', 'army') and c['date'] == '1944-07-25'), ['US-AG-012G', 'US-ARMY-001A', 'US-ARMY-003A'])
+    expect(s + ': the existing 82nd Airborne England row C0214 is unchanged', [(c['place_id'], c['confidence']) for c in claims if c['claim_id'] == 'C0214'], [('PL0189', '0.7')])
+
+
+def scenario_55_loc_12ag_august_1():
+    """HQ 12th Army Group situation maps (R781), batch 3a: 227 rows C2583-C2809 on the weekly sheets of 1, 8, 15 and 22 August 1944 (three new base sheets fitted from town junctions), all nationalities."""
+    s = 'scenario 55'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C2583' <= c['claim_id'] <= 'C2809']
+    expect(s + ': batch 3a adds 227 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (227, 227))
+    expect(s + ': on the four weekly sheets 1-22 August 1944', sorted(set(c['date'] for c in b)), ['1944-08-01', '1944-08-08', '1944-08-15', '1944-08-22'])
+    expect(s + ': US, British, Canadian, Polish, French and German units', sorted(set(c['nationality'] for c in b)), ['Canada', 'France', 'Germany', 'Poland', 'UK', 'US'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank', set(c['parent_unit_id'] for c in b), {''})
+    expect(s + ': the French 2nd Armoured Division rows C1608 and C1611 are unchanged', [(c['claim_id'], c['place_id'], c['confidence']) for c in claims if c['claim_id'] in ('C1608', 'C1611')], [('C1608', 'PL0206', '0.7'), ('C1611', 'PL0828', '0.7')])
+
+
+def scenario_56_loc_12ag_villages():
+    """HQ 12th Army Group situation maps (R781), village places: 41 rows C2810-C2850 for map readings of batches 1, 2us and 3a that had no town within 3 km, on 38 new hamlet and village places PL1347-PL1384."""
+    s = 'scenario 56'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C2810' <= c['claim_id'] <= 'C2850']
+    expect(s + ': the village pass adds 41 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (41, 41))
+    expect(s + ': all on the new places PL1347-PL1384', all('PL1347' <= c['place_id'] <= 'PL1384' or c['claim_id'] in AUDIT for c in b), True)
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank', set(c['parent_unit_id'] for c in b), {''})
+    expect(s + ': the 9th Infantry Division row C0383 is re-pointed from PL0355 to PL1385 (place fix of 31 October 2026)', [(c['place_id'], c['latitude'], c['confidence']) for c in claims if c['claim_id'] == 'C0383'], [('PL1385', '48.8299', '0.5')])
+
+
+def scenario_57_loc_12ag_late_august_september():
+    """HQ 12th Army Group situation maps (R781), batch 3b: 231 rows C2851-C3081 on the weekly sheets of 29 August and 5, 12 and 19 September 1944 (three new base sheets fitted from town junctions; 19 September registered to 12 September), all nationalities."""
+    s = 'scenario 57'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C2851' <= c['claim_id'] <= 'C3081']
+    expect(s + ': batch 3b adds 231 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (231, 231))
+    expect(s + ': on the four weekly sheets 29 August-19 September 1944', sorted(set(c['date'] for c in b)), ['1944-08-29', '1944-09-05', '1944-09-12', '1944-09-19'])
+    expect(s + ': US, British, Canadian, Polish, Belgian, French and German units', sorted(set(c['nationality'] for c in b)), ['Belgium', 'Canada', 'France', 'Germany', 'Poland', 'UK', 'US'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': the place fix C0383 holds', [(c['place_id'], c['location_basis']) for c in claims if c['claim_id'] == 'C0383'], [('PL1385', 'inferred')])
+
+
+def scenario_58_loc_12ag_villages_2():
+    """HQ 12th Army Group situation maps (R781), village pass 2: 26 rows C3082-C3107 for batch 3b readings with no town within 3 km (places PL1582-PL1607); the 12th Army Group rows C3018 and C3070 moved from the box centre to Versailles and Verdun."""
+    s = 'scenario 58'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3082' <= c['claim_id'] <= 'C3107']
+    expect(s + ': village pass 2 adds 26 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (26, 26))
+    expect(s + ': all on new village places PL1582-PL1607', all('PL1582' <= c['place_id'] <= 'PL1607' or c['claim_id'] in AUDIT for c in b), True)
+    expect(s + ': German rows at 0.3, parents blank, commanders unknown', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({'0.3'}, {''}, {'unknown'}))
+    expect(s + ': the 12th Army Group rows sit at the towns (roadmap point 31)', sorted((c['claim_id'], c['place_id'], c['latitude']) for c in claims if c['claim_id'] in ('C3018', 'C3070')), [('C3018', 'PL0364', '48.8053'), ('C3070', 'PL0361', '49.1620')])
+
+
+def scenario_59_loc_12ag_october_1():
+    """HQ 12th Army Group situation maps (R781), batch 4a: 283 rows C3108-C3390 on the weekly sheets of 26 September and 3 and 10 October 1944 (registered to the 12 September base sheet), all nationalities."""
+    s = 'scenario 59'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3108' <= c['claim_id'] <= 'C3390']
+    expect(s + ': batch 4a adds 283 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (283, 283))
+    expect(s + ': on the three weekly sheets 26 September-10 October 1944', sorted(set(c['date'] for c in b)), ['1944-09-26', '1944-10-03', '1944-10-10'])
+    expect(s + ': US, British, Canadian, Polish, French and German units', sorted(set(c['nationality'] for c in b)), ['Canada', 'France', 'Germany', 'Poland', 'UK', 'US'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': places are existing or new PL1608-PL1800', all(c['place_id'] < 'PL1801' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_60_loc_12ag_villages_3():
+    """HQ 12th Army Group situation maps (R781), village pass 3: 45 rows C3391-C3435 for batch 4a readings with no town within 3 km (places PL1801-PL1843); first rows under the 5 km rule of 31 October 2026."""
+    s = 'scenario 60'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3391' <= c['claim_id'] <= 'C3435']
+    expect(s + ': village pass 3 adds 45 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (45, 45))
+    expect(s + ': all on new village places PL1801-PL1843', all('PL1801' <= c['place_id'] <= 'PL1843' or c['claim_id'] in AUDIT for c in b), True)
+    expect(s + ': German rows at 0.3, parents blank, commanders unknown', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({'0.3'}, {''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+
+
+def scenario_61_loc_12ag_october_2():
+    """HQ 12th Army Group situation maps (R781), batch 5a: 134 rows C3436-C3569 on the weekly sheet of 17 October 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 61'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3436' <= c['claim_id'] <= 'C3569']
+    expect(s + ': batch 5a adds 134 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (134, 134))
+    expect(s + ': all on the sheet of 17 October 1944', sorted(set(c['date'] for c in b)), ['1944-10-17'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL1844-PL1922', all(c['place_id'] <= 'PL1922' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_62_loc_12ag_october_3():
+    """HQ 12th Army Group situation maps (R781), batch 5b: 136 rows C3570-C3705 on the weekly sheet of 24 October 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 62'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3570' <= c['claim_id'] <= 'C3705']
+    expect(s + ': batch 5b adds 136 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (136, 136))
+    expect(s + ': all on the sheet of 24 October 1944', sorted(set(c['date'] for c in b)), ['1944-10-24'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL1923-PL1979', all(c['place_id'] <= 'PL1979' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_63_loc_12ag_october_4():
+    """HQ 12th Army Group situation maps (R781), batch 5c: 140 rows C3706-C3845 on the weekly sheet of 31 October 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 63'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3706' <= c['claim_id'] <= 'C3845']
+    expect(s + ': batch 5c adds 140 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (140, 140))
+    expect(s + ': all on the sheet of 31 October 1944', sorted(set(c['date'] for c in b)), ['1944-10-31'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL1980-PL2060', all(c['place_id'] <= 'PL2060' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_64_loc_12ag_nov07():
+    """HQ 12th Army Group situation maps (R781), batch 5d: 138 rows C3846-C3983 on the weekly sheet of 7 November 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 64'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3846' <= c['claim_id'] <= 'C3983']
+    expect(s + ': batch 5d adds 138 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (138, 138))
+    expect(s + ': all on the sheet of 7 November 1944', sorted(set(c['date'] for c in b)), ['1944-11-07'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2061-PL2128', all(c['place_id'] <= 'PL2128' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_65_loc_12ag_nov14():
+    """HQ 12th Army Group situation maps (R781), batch 5e: 134 rows C3984-C4117 on the weekly sheet of 14 November 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 65'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C3984' <= c['claim_id'] <= 'C4117']
+    expect(s + ': batch 5e adds 134 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (134, 134))
+    expect(s + ': all on the sheet of 14 November 1944', sorted(set(c['date'] for c in b)), ['1944-11-14'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2129-PL2201', all(c['place_id'] <= 'PL2201' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_66_loc_12ag_nov21():
+    """HQ 12th Army Group situation maps (R781), batch 5f: 138 rows C4128-C4265 on the weekly sheet of 21 November 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 66'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4128' <= c['claim_id'] <= 'C4265']
+    expect(s + ': batch 5f adds 138 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (138, 138))
+    expect(s + ': all on the sheet of 21 November 1944', sorted(set(c['date'] for c in b)), ['1944-11-21'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2212-PL2290', all(c['place_id'] <= 'PL2290' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_67_loc_12ag_nov28():
+    """HQ 12th Army Group situation maps (R781), batch 5g: 138 rows C4266-C4403 on the weekly sheet of 28 November 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 67'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4266' <= c['claim_id'] <= 'C4403']
+    expect(s + ': batch 5g adds 138 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (138, 138))
+    expect(s + ': all on the sheet of 28 November 1944', sorted(set(c['date'] for c in b)), ['1944-11-28'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2291-PL2347', all(c['place_id'] <= 'PL2347' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_68_loc_12ag_dec05():
+    """HQ 12th Army Group situation maps (R781), batch 5h: 128 rows C4404-C4531 on the weekly sheet of 5 December 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 68'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4404' <= c['claim_id'] <= 'C4531']
+    expect(s + ': batch 5h adds 128 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (128, 128))
+    expect(s + ': all on the sheet of 5 December 1944', sorted(set(c['date'] for c in b)), ['1944-12-05'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2348-PL2381', all(c['place_id'] <= 'PL2381' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_69_loc_12ag_dec12():
+    """HQ 12th Army Group situation maps (R781), batch 5i: 129 rows C4532-C4660 on the weekly sheet of 12 December 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 69'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4532' <= c['claim_id'] <= 'C4660']
+    expect(s + ': batch 5i adds 129 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (129, 129))
+    expect(s + ': all on the sheet of 12 December 1944', sorted(set(c['date'] for c in b)), ['1944-12-12'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2382-PL2411', all(c['place_id'] <= 'PL2411' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_70_loc_12ag_dec19():
+    """HQ 12th Army Group situation maps (R781), batch 5j: 136 rows C4661-C4796 on the weekly sheet of 19 December 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 70'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4661' <= c['claim_id'] <= 'C4796']
+    expect(s + ': batch 5j adds 136 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (136, 136))
+    expect(s + ': all on the sheet of 19 December 1944', sorted(set(c['date'] for c in b)), ['1944-12-19'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2412-PL2458', all(c['place_id'] <= 'PL2458' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_71_loc_12ag_dec26():
+    """HQ 12th Army Group situation maps (R781), batch 5k: 118 rows C4797-C4914 on the weekly sheet of 26 December 1944 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 71'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4797' <= c['claim_id'] <= 'C4914']
+    expect(s + ': batch 5k adds 118 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (118, 118))
+    expect(s + ': all on the sheet of 26 December 1944', sorted(set(c['date'] for c in b)), ['1944-12-26'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2459-PL2498', all(c['place_id'] <= 'PL2498' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_72_loc_12ag_jan02():
+    """HQ 12th Army Group situation maps (R781), batch 5l: 119 rows C4915-C5033 on the weekly sheet of 2 January 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 72'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C4915' <= c['claim_id'] <= 'C5033']
+    expect(s + ': batch 5l adds 119 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (119, 119))
+    expect(s + ': all on the sheet of 2 January 1945', sorted(set(c['date'] for c in b)), ['1945-01-02'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2499-PL2519', all(c['place_id'] <= 'PL2519' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_73_loc_12ag_jan09():
+    """HQ 12th Army Group situation maps (R781), batch 5m: 119 rows C5034-C5152 on the weekly sheet of 9 January 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 73'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5034' <= c['claim_id'] <= 'C5152']
+    expect(s + ': batch 5m adds 119 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (119, 119))
+    expect(s + ': all on the sheet of 9 January 1945', sorted(set(c['date'] for c in b)), ['1945-01-09'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2520-PL2529', all(c['place_id'] <= 'PL2529' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_74_loc_12ag_jan16():
+    """HQ 12th Army Group situation maps (R781), batch 5n: 125 rows C5153-C5277 on the weekly sheet of 16 January 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 74'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5153' <= c['claim_id'] <= 'C5277']
+    expect(s + ': batch 5n adds 125 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (125, 125))
+    expect(s + ': all on the sheet of 16 January 1945', sorted(set(c['date'] for c in b)), ['1945-01-16'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2530-PL2553', all(c['place_id'] <= 'PL2553' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_75_loc_12ag_jan23():
+    """HQ 12th Army Group situation maps (R781), batch 5o: 123 rows C5278-C5400 on the weekly sheet of 23 January 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 75'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5278' <= c['claim_id'] <= 'C5400']
+    expect(s + ': batch 5o adds 123 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (123, 123))
+    expect(s + ': all on the sheet of 23 January 1945', sorted(set(c['date'] for c in b)), ['1945-01-23'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2554-PL2575', all(c['place_id'] <= 'PL2575' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_76_loc_12ag_jan30():
+    """HQ 12th Army Group situation maps (R781), batch 5p: 134 rows C5401-C5534 on the weekly sheet of 30 January 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 76'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5401' <= c['claim_id'] <= 'C5534']
+    expect(s + ': batch 5p adds 134 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (134, 134))
+    expect(s + ': all on the sheet of 30 January 1945', sorted(set(c['date'] for c in b)), ['1945-01-30'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2576-PL2605', all(c['place_id'] <= 'PL2605' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_77_loc_12ag_feb06():
+    """HQ 12th Army Group situation maps (R781), batch 5q: 134 rows C5535-C5668 on the weekly sheet of 6 February 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 77'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5535' <= c['claim_id'] <= 'C5668']
+    expect(s + ': batch 5q adds 134 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (134, 134))
+    expect(s + ': all on the sheet of 6 February 1945', sorted(set(c['date'] for c in b)), ['1945-02-06'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2606-PL2607', all(c['place_id'] <= 'PL2607' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_78_loc_12ag_feb13():
+    """HQ 12th Army Group situation maps (R781), batch 5r: 131 rows C5669-C5799 on the weekly sheet of 13 February 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 78'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5669' <= c['claim_id'] <= 'C5799']
+    expect(s + ': batch 5r adds 131 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (131, 131))
+    expect(s + ': all on the sheet of 13 February 1945', sorted(set(c['date'] for c in b)), ['1945-02-13'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2608-PL2610', all(c['place_id'] <= 'PL2610' or (c['place_id'] == 'PL2611' and c['claim_id'] in ROETGEN) or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_79_loc_12ag_feb20():
+    """HQ 12th Army Group situation maps (R781), batch 5s: 134 rows C5800-C5933 on the weekly sheet of 20 February 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 79'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5800' <= c['claim_id'] <= 'C5933']
+    expect(s + ': batch 5s adds 134 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (134, 134))
+    expect(s + ': all on the sheet of 20 February 1945', sorted(set(c['date'] for c in b)), ['1945-02-20'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2612-PL2615', all(c['place_id'] <= 'PL2615' or c['claim_id'] in REREAD or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_80_loc_12ag_feb27():
+    """HQ 12th Army Group situation maps (R781), batch 5t: 134 rows C5934-C6067 on the weekly sheet of 27 February 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 80'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C5934' <= c['claim_id'] <= 'C6067']
+    expect(s + ': batch 5t adds 134 claims, all citing R781; C6028 and C6002 removed on the re-read of 1 November 2026', (len(b), sum(LOC12AG(c) for c in b)), (132, 132))
+    expect(s + ': all on the sheet of 27 February 1945', sorted(set(c['date'] for c in b)), ['1945-02-27'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2616-PL2620', all(c['place_id'] <= 'PL2620' or c['claim_id'] in REREAD or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_81_loc_12ag_mar06():
+    """HQ 12th Army Group situation maps (R781), batch 5u: 136 rows C6068-C6203 on the weekly sheet of 6 March 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 81'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6068' <= c['claim_id'] <= 'C6203']
+    expect(s + ': batch 5u adds 136 claims, all citing R781; C6162, C6187 and C6136 removed on the re-read of 1 November 2026', (len(b), sum(LOC12AG(c) for c in b)), (133, 133))
+    expect(s + ': all on the sheet of 6 March 1945', sorted(set(c['date'] for c in b)), ['1945-03-06'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2621-PL2626', all(c['place_id'] <= 'PL2626' or c['claim_id'] in REREAD or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_82_loc_12ag_mar13():
+    """HQ 12th Army Group situation maps (R781), batch 5v: 135 rows C6205-C6339 on the weekly sheet of 13 March 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 82'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6205' <= c['claim_id'] <= 'C6339']
+    expect(s + ': batch 5v adds 135 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (135, 135))
+    expect(s + ': all on the sheet of 13 March 1945', sorted(set(c['date'] for c in b)), ['1945-03-13'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2634-PL2649', all(c['place_id'] <= 'PL2649' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_83_loc_12ag_mar20():
+    """HQ 12th Army Group situation maps (R781), batch 5w: 109 rows C6340-C6448 on the weekly sheet of 20 March 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 83'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6340' <= c['claim_id'] <= 'C6448']
+    expect(s + ': batch 5w adds 109 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (109, 109))
+    expect(s + ': all on the sheet of 20 March 1945', sorted(set(c['date'] for c in b)), ['1945-03-20'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2650-PL2678', all(c['place_id'] <= 'PL2678' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_84_loc_12ag_mar27():
+    """HQ 12th Army Group situation maps (R781), batch 5x: 72 rows C6449-C6520 on the weekly sheet of 27 March 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 84'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6449' <= c['claim_id'] <= 'C6520']
+    expect(s + ': batch 5x adds 72 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (72, 72))
+    expect(s + ': all on the sheet of 27 March 1945', sorted(set(c['date'] for c in b)), ['1945-03-27'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), ({'0.3'}, True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2679-PL2733', all(c['place_id'] <= 'PL2733' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_85_loc_12ag_apr3():
+    """HQ 12th Army Group situation maps (R781), batch 5y: 83 rows C6521-C6603 on the weekly sheet of 3 April 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 85'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6521' <= c['claim_id'] <= 'C6603']
+    expect(s + ': batch 5y adds 83 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (83, 83))
+    expect(s + ': all on the sheet of 3 April 1945', sorted(set(c['date'] for c in b)), ['1945-04-03'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))  # no German box written on this sheet (roadmap point 149)
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2734-PL2810', all(c['place_id'] <= 'PL2810' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_86_loc_12ag_apr10():
+    """HQ 12th Army Group situation maps (R781), batch 5z: 81 rows C6604-C6684 on the weekly sheet of 10 April 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 86'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6604' <= c['claim_id'] <= 'C6684']
+    expect(s + ': batch 5z adds 81 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (81, 81))
+    expect(s + ': all on the sheet of 10 April 1945', sorted(set(c['date'] for c in b)), ['1945-04-10'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))  # no German box written on this sheet (roadmap point 155)
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2811-PL2883', all(c['place_id'] <= 'PL2883' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_87_loc_12ag_apr17():
+    """HQ 12th Army Group situation maps (R781), batch 5za: 81 rows C6685-C6765 on the weekly sheet of 17 April 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 87'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6685' <= c['claim_id'] <= 'C6765']
+    expect(s + ': batch 5za adds 81 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (81, 81))
+    expect(s + ': all on the sheet of 17 April 1945', sorted(set(c['date'] for c in b)), ['1945-04-17'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2884-PL2951', all(c['place_id'] <= 'PL2951' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_88_loc_12ag_apr24():
+    """HQ 12th Army Group situation maps (R781), batch 5zb: 88 rows C6766-C6853 on the weekly sheet of 24 April 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 88'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6766' <= c['claim_id'] <= 'C6853']
+    expect(s + ': batch 5zb adds 88 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (88, 88))
+    expect(s + ': all on the sheet of 24 April 1945', sorted(set(c['date'] for c in b)), ['1945-04-24'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL2952-PL3026', all(c['place_id'] <= 'PL3026' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_89_loc_12ag_may01():
+    """HQ 12th Army Group situation maps (R781), batch 5zc: 81 rows C6854-C6934 on the weekly sheet of 1 May 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 89'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6854' <= c['claim_id'] <= 'C6934']
+    expect(s + ': batch 5zc adds 81 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (81, 81))
+    expect(s + ': all on the sheet of 1 May 1945', sorted(set(c['date'] for c in b)), ['1945-05-01'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL3027-PL3087', all(c['place_id'] <= 'PL3087' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_90_loc_12ag_may08():
+    """HQ 12th Army Group situation maps (R781), batch 5zd: 32 rows C6935-C6966 on the weekly sheet of 8 May 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 90'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6935' <= c['claim_id'] <= 'C6966']
+    expect(s + ': batch 5zd adds 32 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (32, 32))
+    expect(s + ': all on the sheet of 8 May 1945', sorted(set(c['date'] for c in b)), ['1945-05-08'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL3088-PL3132', all(c['place_id'] <= 'PL3132' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_91_loc_12ag_may08b():
+    """HQ 12th Army Group situation maps (R781), batch 5ze: 11 rows C6967-C6977 on the weekly sheet of 8 May 1945 (completion) (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 91'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6967' <= c['claim_id'] <= 'C6977']
+    expect(s + ': batch 5ze adds 11 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (11, 11))
+    expect(s + ': all on the sheet of 8 May 1945 (completion)', sorted(set(c['date'] for c in b)), ['1945-05-08'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL3133-PL3144', all(c['place_id'] <= 'PL3144' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_92_loc_12ag_may08c():
+    """HQ 12th Army Group situation maps (R781), batch 5zf: 3 rows C6978-C6980 on the weekly sheet of 8 May 1945 (completion, k20) (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 92'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6978' <= c['claim_id'] <= 'C6980']
+    expect(s + ': batch 5zf adds 3 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (3, 3))
+    expect(s + ': all on the sheet of 8 May 1945 (completion, k20)', sorted(set(c['date'] for c in b)), ['1945-05-08'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL3145-PL3150', all(c['place_id'] <= 'PL3150' or c['claim_id'] in AUDIT for c in b), True)
+
+
+def scenario_93_loc_12ag_may09():
+    """HQ 12th Army Group situation maps (R781), batch 5zg: 81 rows C6981-C7061 on the weekly sheet of 9 May 1945 (registered to the 12 September base sheet), all nationalities, villages inline, 5 km rule."""
+    s = 'scenario 93'
+    claims = common.load_all_claims()[1]
+    b = [c for c in claims if 'C6981' <= c['claim_id'] <= 'C7061']
+    expect(s + ': batch 5zg adds 81 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (81, 81))
+    expect(s + ': all on the sheet of 9 May 1945', sorted(set(c['date'] for c in b)), ['1945-05-09'])
+    expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}), (set(), True))
+    expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
+    expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
+    expect(s + ': places are existing or new PL3151-PL3160', all(c['place_id'] <= 'PL3160' or c['claim_id'] in AUDIT for c in b), True)
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09):
         before = len(FAILURES)
         try:
             fn()

@@ -196,6 +196,24 @@ def operations_table(ops, rows):
     return out, ('\n'.join(md) + '\n').encode('utf-8')
 
 
+def json_columns():
+    """Columns of build/all_claims.csv that hold JSON in a cell (registry schema/json/fields.json)."""
+    reg = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'schema', 'json', 'fields.json')))
+    return [f['column'] for f in reg['fields'] if 'build/all_claims.csv' in f.get('also_in', [])]
+
+
+def all_claims_json(header, rows):
+    """build/all_claims.json: the rows and columns of build/all_claims.csv, values unchanged as strings, except that
+    JSON-in-cell columns (docs/json_fields.md) are parsed into nested objects (null when blank). One claim per line."""
+    jc = set(json_columns())
+    lines = []
+    for r in rows:
+        o = {c: ((json.loads(r[c]) if r[c] != '' else None) if c in jc else r[c]) for c in header}
+        lines.append(json.dumps(o, ensure_ascii=False, separators=(',', ':')))
+    return ('{"description":"Typed export of build/all_claims.csv; JSON-in-cell columns are nested objects (see docs/json_fields.md)",'
+            '"json_columns":' + json.dumps(sorted(jc)) + ',"claims":[\n' + ',\n'.join(lines) + '\n]}\n').encode('utf-8')
+
+
 def outputs():
     """Return {relative path: bytes} for every generated file (paths under docs/ are relative to the repository root)."""
     header, rows = common.load_all_claims()
@@ -205,6 +223,7 @@ def outputs():
     header = all_claims_header(header)   # the derived columns (command_relationships, place and derived-value columns, operations) are not claim-file columns
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows)}
+    out['all_claims.json'] = all_claims_json(header, rows)
     feats = []
     for r in rows:
         props = {}

@@ -982,4 +982,6 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 
 202. **Visual audit, sheets 5w–5y (1 November 2026).** `cs000289` (20 March), `cs000296` (27 March) and `cs000303` (3 April 1945) checked the same way. Checked 264, moved 17, unresolved 44 (all on `cs000289`, logged as in point 200). New places `PL3219` to `PL3222`. From 27 March the readings sit on their symbols almost without exception. Recommendation: as point 200.
 
-Resume point: visual audit of the remaining sheets after `cs000303` (5z onwards). Next roadmap point 203.
+203. **Visual audit, sheets 5z–5zb (1 November 2026).** `cs000310` (10 April), `cs000317` (17 April) and `cs000324` (24 April 1945) checked the same way. Checked 250, moved 1 (`C6746`), unresolved 2 (`C6610`, `C6662`). No new places. Recommendation for the two unresolved rows: re-read the 10th and 14th Armored Division boxes on `cs000310` or drop the two readings.
+
+Resume point: visual audit of the remaining sheets after `cs000324`. Next roadmap point 204.

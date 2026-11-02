@@ -533,6 +533,13 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 5z–5zb (1 November 2026)
+
+Same method as the 5r–5t audit (roadmap point 203).
+- **`cs000310` (10 April 1945):** 81 checked, 0 moved, 2 unresolved. **`cs000317` (17 April):** 81 checked, 1 moved, 0 unresolved. **`cs000324` (24 April):** 88 checked, 0 moved, 0 unresolved. Town registration checked on each sheet.
+- **Moved row:** `C6746` (102nd Infantry Division, 17 April), 5.2 km to its box, place `PL2925` -> `PL2993`; old/new values in the row's notes.
+- **Unresolved rows:** `C6610` (10th Armored, marker on the German 553 box) and `C6662` (14th Armored, marker on an infantry box labelled 3), kept unchanged with a note.
+
 ### Visual audit 5w–5y (1 November 2026)
 
 Same method as the 5r–5t audit (roadmap point 202).

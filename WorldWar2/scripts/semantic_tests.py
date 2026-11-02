@@ -1973,6 +1973,14 @@ def scenario_94_unit_lineage():
     expect_in(s + ': a missing unit_note link is reported', msgs([row(1, 'C', 'A')]), 'unit_note of')
     nb = lineage.neighbours([row(1, 'A', 'B'), row(2, 'B', 'C')])
     expect(s + ': neighbours of B', nb['B'], (['A'], ['C']))
+    import csv as _csv
+    h2, rows = lineage.load()
+    expect(s + ': nine lineage rows UL001-UL009', [r['lineage_id'] for r in rows], ['UL%03d' % i for i in range(1, 10)])
+    expect(s + ': the data passes the checker', lineage.check(h2, rows, {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}, vocabs,
+           {r['reference_id'] for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8'))}), [])
+    b = {r['unit_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'build', 'units.csv'), newline='', encoding='utf-8'))}
+    expect(s + ': 352nd lineage in build/units.csv', (b['GER-INF-352D']['successor_unit_ids'], b['GER-VG-352D']['predecessor_unit_ids']), ('GER-VG-352D', 'GER-INF-352D'))
+    expect(s + ': number-reuse cases have no link (276, 326, 361, 708)', [b['GER-VG-%dD' % n]['predecessor_unit_ids'] for n in (276, 326, 361, 708)], ['', '', '', ''])
 
 
 def main():

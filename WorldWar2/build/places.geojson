@@ -1758,7 +1758,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -3338,7 +3338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Haute-Normandie",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -10818,7 +10818,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -10918,7 +10918,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 17
+    "claims_count": 19
    }
   },
   {
@@ -11198,7 +11198,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -24178,7 +24178,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -40478,7 +40478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -45758,7 +45758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -48978,7 +48978,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -65238,6 +65238,306 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1896,
+     49.0144
+    ]
+   },
+   "properties": {
+    "place_id": "PL3278",
+    "name": "Soulles, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9746,
+     49.06
+    ]
+   },
+   "properties": {
+    "place_id": "PL3279",
+    "name": "La Chapelle-du-Fest, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0871,
+     49.1476
+    ]
+   },
+   "properties": {
+    "place_id": "PL3280",
+    "name": "Le Mesnil-Rouxelin, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7798,
+     48.9898
+    ]
+   },
+   "properties": {
+    "place_id": "PL3281",
+    "name": "Brémoy, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2924,
+     48.7548
+    ]
+   },
+   "properties": {
+    "place_id": "PL3282",
+    "name": "Ménil-Gondouin, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.7715,
+     48.4706
+    ]
+   },
+   "properties": {
+    "place_id": "PL3283",
+    "name": "Auneau, Eure-et-Loir",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.93,
+     51.3289
+    ]
+   },
+   "properties": {
+    "place_id": "PL3284",
+    "name": "Turnhout, Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5831,
+     51.0063
+    ]
+   },
+   "properties": {
+    "place_id": "PL3285",
+    "name": "As, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.988,
+     50.7209
+    ]
+   },
+   "properties": {
+    "place_id": "PL3286",
+    "name": "Moresnet, Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4452,
+     51.2089
+    ]
+   },
+   "properties": {
+    "place_id": "PL3287",
+    "name": "Maldegem, East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.7176,
+     51.2577
+    ]
+   },
+   "properties": {
+    "place_id": "PL3288",
+    "name": "Boekhoute, East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2846,
+     50.5484
+    ]
+   },
+   "properties": {
+    "place_id": "PL3289",
+    "name": "Rohren (Monschau), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4667,
+     50.8833
+    ]
+   },
+   "properties": {
+    "place_id": "PL3290",
+    "name": "Niederzier, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2962,
+     51.4916
+    ]
+   },
+   "properties": {
+    "place_id": "PL3291",
+    "name": "Pont (Geldern), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1264,
+     51.8101
+    ]
+   },
+   "properties": {
+    "place_id": "PL3292",
+    "name": "Rindern (Kleve), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

@@ -1,6 +1,6 @@
 # JSON-in-cell fields
 
-Some CSV columns hold a JSON value inside one cell. This page lists every such column. The machine-readable definitions are in [`schema/json/`](../schema/json/): `fields.json` is the registry (table, column, schema file), and each column has its own JSON Schema (draft 2020-12). `scripts/check_json_fields.py` validates every non-blank cell against its schema, and `scripts/export_json.py` writes `build/all_claims.json`, where these cells appear as nested objects.
+Some CSV columns hold a JSON value inside one cell. This page lists every such column. The machine-readable definitions are in [`schema/json/`](../schema/json/): `fields.json` is the registry (table, column, schema file), and each column has its own JSON Schema (draft 2020-12). `scripts/check_json_fields.py` validates every non-blank cell against its schema, and `scripts/build.py` writes `build/all_claims.json`: the same rows and columns as `build/all_claims.csv`, values unchanged as strings, except that these cells appear as nested objects (`null` when blank). The CSV columns and values are not changed.
 
 A survey of all tables under `data/` on 2 November 2026 found one such column: `strength_json`. No other column holds JSON (lists elsewhere, for example `composing_units` and `reference_ids`, are `;`-separated text, not JSON).
 

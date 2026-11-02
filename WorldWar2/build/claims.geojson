@@ -127598,6 +127598,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3735,
+     51.0913
+    ]
+   },
+   "properties": {
+    "claim_id": "C7119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-11-17",
+    "place_id": "PL3303",
+    "location_name": "Venrath (Erkelenz), North Rhine-Westphalia (Venrath (corps command post from 20.00 hrs))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps command post at Venrath",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R790;R002",
+    "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -127837,6 +127878,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R680;R651;R002",
     "source_locator": "R680: section Combat for Alsace November 14, 1944 to February 9, 1945; R651: p. 420"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2154,
+     51.0478
+    ]
+   },
+   "properties": {
+    "claim_id": "C7120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-11-18",
+    "place_id": "PL3304",
+    "location_name": "Doverack (Hückelhoven), North Rhine-Westphalia (Doverack (advanced corps command post from 09.00 hrs))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps advanced command post at Doverack",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R790;R002",
+    "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
    }
   },
   {

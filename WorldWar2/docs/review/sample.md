@@ -570,7 +570,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 - **Unit:** XX Corps (`US-COR-020C`), US, corps; parent in the claim: `none`; commander field: unknown
 - **Claim:** `hq_observation` / `OP-CAMP-RHINELAND`; status preferred; confidence 0.5
 - **Activity:** XX Corps shown on the 12th Army Group situation map
-- **Place:** Husange, Moselle (`PL2242`, Grand Est, FR); point 49.4175, 6.1926 (claim override of the place point 49.403, 6.2212); precision 10 km; point represents: headquarters; qualifier: near Husange; coordinate source: R002: OpenStreetMap Nominatim (Husange, Moselle), searched 31 October 2026
+- **Place:** Rastenne, Grand Est (`PL3175`, Grand Est, FR); point 49.3978, 6.1482 (claim override of the place point 49.4031, 6.1525); precision 10 km; point represents: headquarters; qualifier: near Rastenne; coordinate source: R782: GeoNames (village Rastenne, id 12307724), point from the GeoNames dump of 1 November 2026, searched offline within 3 km; region from the nearest registered plac [...]
 - **Command relationships stated by the claim:** none
 - **Notes:** Event date: 12th Army Group situation map sheet cs000254 (situation 1200 hrs 13 February 1945) shows the headquarters symbol labelled 020C for the XX Corps at this point. Event definition: a dated position on a contemporary Allied situation map read as the headquarters; the map shows no movement and the date is the map's situation time. Event support: one source family (12th Army Group situation maps). Location: Husange, Moselle (place PL2242) with a precision of 10 km. Location approximate: symbol centre georeferenced from 13 town junctions of the base sheet by an affine fit (about 1.6 km RMS, at most 4.9 km leave-one-out) and read 2.6 km from the place point. Review (batch 5r on 31 October [...]
 - **Sources cited** (the claim's own locator: R781: sheet cs000254 situation 1200 hrs 13 February 1945):
@@ -578,7 +578,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000254 situation 1200 hrs 13 February 1945 |
-  | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000254 situation 1200 hrs 13 February 1945 |
+  | R782 | location | GeoNames gazetteer (country dumps) | gazetteer_geocoder | https://download.geonames.org/export/dump/ | R781: sheet cs000254 situation 1200 hrs 13 February 1945 |
 
 ### S38. C6695: 100th Infantry Division, 1945-04-17
 

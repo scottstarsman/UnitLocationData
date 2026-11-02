@@ -109,6 +109,8 @@ REREAD = {'C5850', 'C5845', 'C5844', 'C5867', 'C5802', 'C5984', 'C5979', 'C5978'
 
 # map rows re-pointed to an existing nearer place by the grid-reading audit of 1 November 2026
 AUDIT = {'C6243', 'C6106', 'C6342', 'C4552', 'C3930', 'C6182', 'C6065', 'C3112', 'C6067', 'C5287', 'C6302', 'C6033', 'C5964', 'C5255', 'C6245', 'C6167', 'C4778'}
+# Visual audit of 2 November 2026 (roadmap point 199 onwards): rows moved to their symbol may take a new place; their notes say so.
+AUDIT |= {c['claim_id'] for c in common.load_all_claims()[1] if 'Visual audit 2 Nov 2026' in c['notes'] and '; place PL' in c['notes']}
 
 def scenario_0_staleness():
     """R1-N-001: a standing relationship is certain only up to its last listing."""

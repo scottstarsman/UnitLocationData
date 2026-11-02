@@ -2,6 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA captured German records, T-315 roll 940 (47th Volksgrenadier Division; 2 November 2026)
+
+Scott approved reading NARA captured-records microfilm as new sources on 2 November 2026, starting with T-315 roll 940 (NAID 346435955) and then the T-311 Army Group B rolls, one commit per roll. Branch `nara-microfilm` from `main` `e0d85d7`. The roll was downloaded from the public NARA catalog and read in the German original, all 142 frames (PDF pages 1-145) including the two hand-drawn maps; the reading notes stay private and are not in this repository.
+
+Rules applied: no command relation and no parent from a single source (every new row has a blank parent); strengths stay in the reading notes; confidence 0.5 for a dated document naming the division sector, 0.3 where the sector is given only by a boundary; disagreements stay open points and no existing row is changed.
+
+### T-315 roll 940 (47th Volksgrenadier Division Ia orders, 31 October 1944-13 March 1945)
+
+- **New reference** `R783` (archive_document, family `nara_captured_german_records`). Reliability: 4 of 5 checkable facts agree with the dataset.
+- **New claims** `C7062` to `C7068` (7; 6 at 0.5, 1 at 0.3; each note carries old value none, new value and reason): 47th Volksgrenadier Division on the Rur east bank at Düren on 18 December 1944 (LXXXI Corps order); in the former 245th Infantry Division sector in the Haguenau Forest on 3 February 1945 (LXXXIX Corps); on the Moder near Schweighouse on 10 February; rear positions near Morsbronn and Forstheim on 20 February (XC Corps); on the Moder at Mertzwiller and Uberach between the 36th and 257th Volksgrenadier Divisions on 6 March; on the Moder line Niedermodern-Schweighouse on 12 March; 16th Volksgrenadier Division on the XC Corps right wing near Bitche on 28 February 1945 (0.3, a misfiled corps copy).
+  - Parent blank on all 7 (old value none, new value blank, reason: no command relation from a single source); commander unknown (old value none, new value unknown, reason: the documents cited name no division commander).
+- **No new places** (existing `PL0391`, `PL0427`, `PL0618`, `PL1050`, `PL2568`, `PL2604`).
+- **No existing row changed**, no relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreement recorded, no value changed:** the 12th Army Group map rows `C5237` and `C5357` (16 and 23 January 1945) still put the division near Ahrem, while its own papers have it in Alsace by 3 February (roadmap point 218).
+- **Semantic scenario 96.**
+
 ## loc-12ag-maps: HQ 12th Army Group situation maps, pass 1 (31 October 2026)
 
 Scott approved a pass over the Library of Congress series *HQ 12th Army Group situation maps* (public domain, 416 daily sheets 6 June 1944 to 26 July 1945) on 31 October 2026: one sheet a week at the 1200 hrs situation, in batches, one commit per batch, on branch `loc-12ag-maps` from `main` `62e97c3`. The maps are a separate source family (contemporary Allied situation maps): Allied units from their own reports and German units from G-2 estimates.

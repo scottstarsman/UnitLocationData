@@ -158,6 +158,23 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 
 Rows are sorted by `unit_id`. Units with `record_status = placeholder` have no claim file; they exist so that `parent_unit_id`, command relations, `engaged_with` and `composing_units` ids resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with the existence of a claim file, that the nationality is a row of `data/nationalities.csv` and the unit id starts with that row's code, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
 
+### data/unit_lineage.csv (hand-maintained; `schema/unit_lineage.schema.json`)
+
+Lineage links between unit records. A renamed, rebuilt or merged formation keeps its own record in `data/units.csv` (see [../docs/methodology.md](../docs/methodology.md), "One record per lineage page"); a row here says that the successor record continues the predecessor record, from when, of what kind and on what source. It is not a command relation and never changes a claim.
+
+| column | type | required | meaning | constraints |
+|---|---|---|---|---|
+| `lineage_id` | string | yes | Stable key `UL001` onward. Never reused. | pattern `^UL\d{3,}$`, unique |
+| `predecessor_unit_id` | string | yes | The earlier unit record. | a `unit_id` of `data/units.csv` |
+| `successor_unit_id` | string | yes | The later unit record. | a `unit_id`, not the predecessor |
+| `kind` | string | yes | How the successor continues the predecessor. | vocabulary `lineage_kind` |
+| `effective_date` | string | yes | When the successor takes over the lineage. | `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, 1939-1945; not before the predecessor's `formed_date` |
+| `date_basis` | string | yes | Where the date comes from. | vocabulary `relationship_date_basis` |
+| `reference_ids` | string | yes | `;`-separated reference ids. | each in `data/references_meta.csv` |
+| `note` | string | no | What the source says (paraphrased) and any conflicting date. |  |
+
+Rules checked by `scripts/validate.py` (through `scripts/lineage.py`): unique ids, sorted by `lineage_id`; no duplicate predecessor-successor pair; the links form no cycle (a unit cannot be its own ancestor); both ends exist. Both linked units carry a `unit_note` that names the other record. Build outputs `build/units.csv` and `build/units.json` repeat `data/units.csv` and add `predecessor_unit_ids` and `successor_unit_ids` (`;`-separated in the CSV, lists in the JSON), derived from this table.
+
 ## nationalities columns (`data/nationalities.csv`)
 
 Lookup table, hand-maintained, sorted by `code`. It is the single list of nations: `units.nationality`, `claims.nationality` and `operations.nationality_scope` are foreign keys to its `name`, and the adjective used in names (the derived display names of `engaged_with_names`, `composing_units_names` and the `higher_name` of `build/command_relations.csv`) comes from here instead of from code.
@@ -498,6 +515,17 @@ Meaning of the `relationship` column of `data/command_relations.csv` (and of the
 | `coordinating` | This formation coordinated the unit's operations with others without commanding it (for example 21st Army Group's coordination of both army groups until 1 September 1944). |
 | `reserve` | The unit was held in this formation's (or the high command's) reserve. |
 | `unknown` | A formation is named by the source but how it relates to the unit is not stated (for example AFHQ's retained supply, administration and civil-affairs responsibility in the area overrun on 15 September 1944, a theater function not stated as control of the unit). |
+
+### lineage_kind
+
+Meaning of the kind column of data/unit_lineage.csv: how a successor unit record continues a predecessor record. Each unit record stays separate; a lineage row only links them.
+
+| value | meaning |
+|---|---|
+| `redesignation` | The same formation takes a new designation; personnel and organisation continue (for example the 462nd Infantry Division becoming the 462nd Volksgrenadier Division). |
+| `reconstitution_from_remnants` | The predecessor was destroyed or broken up and the successor was formed with its remnants (usually together with a new or forming formation), as the source states. |
+| `absorbed_into` | The predecessor (for example a division still forming) was merged into or renamed as the successor and ceased to exist on its own. |
+| `formed_from_remnants` | A different kind of formation was formed from the remnants of the predecessor (for example a panzer brigade formed from the remnants of a panzergrenadier division). |
 
 ### relationship_date_basis
 

@@ -41,6 +41,7 @@ import build_references  # noqa: E402
 import command_relations  # noqa: E402
 import operations  # noqa: E402
 import places as placesmod  # noqa: E402
+import lineage  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
@@ -196,6 +197,24 @@ def operations_table(ops, rows):
     return out, ('\n'.join(md) + '\n').encode('utf-8')
 
 
+def units_outputs(units_table):
+    """build/units.csv and build/units.json: data/units.csv unchanged plus predecessor_unit_ids and successor_unit_ids from
+    data/unit_lineage.csv (';'-separated in the CSV, lists in the JSON; ordered by effective date)."""
+    uheader, urows = units_table
+    nb = lineage.neighbours(lineage.load()[1])
+    header = list(uheader) + ['predecessor_unit_ids', 'successor_unit_ids']
+    rows, objs = [], []
+    for u in urows:
+        pre, suc = nb.get(u['unit_id'], ([], []))
+        rows.append([u[c] for c in uheader] + [';'.join(pre), ';'.join(suc)])
+        o = {c: u[c] for c in uheader}
+        o['predecessor_unit_ids'], o['successor_unit_ids'] = list(pre), list(suc)
+        objs.append(json.dumps(o, ensure_ascii=False, separators=(',', ':')))
+    js = ('{"description":"data/units.csv with predecessor_unit_ids and successor_unit_ids from data/unit_lineage.csv",'
+          '"units":[\n' + ',\n'.join(objs) + '\n]}\n').encode('utf-8')
+    return common.csv_bytes(header, rows), js
+
+
 def json_columns():
     """Columns of build/all_claims.csv that hold JSON in a cell (registry schema/json/fields.json)."""
     reg = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'schema', 'json', 'fields.json')))
@@ -237,6 +256,7 @@ def outputs():
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    out['units.csv'], out['units.json'] = units_outputs(common.read_dicts(common.UNITS_CSV))
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(command_relations.load(), units, rows))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)

@@ -533,6 +533,12 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 3a–3e (1 November 2026)
+
+Same method (roadmap point 209).
+- **`cs000134`:** 134 checked, 0 moved. **`cs000141`:** 136 checked, 0 moved. **`cs000148`:** 140 checked, 0 moved. **`cs000156`:** 138 checked, 0 moved. **`cs000163`:** 144 checked, 0 moved.
+No unresolved rows; a few markers sit 2.5–3 km from their box (under the threshold, not moved).
+
 ### Visual audit 2f–2j (1 November 2026)
 
 Same method (roadmap point 208).

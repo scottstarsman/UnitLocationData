@@ -533,6 +533,15 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 1f–1j (1 November 2026)
+
+Same method (roadmap point 206). `cs000044` has no map rows.
+- **`cs000036`:** 53 checked, 12 moved: 12th SS Panzer `C2391` (7.1 km), 1st SS Panzer `C2390` (6.7 km), 10th SS Panzer `C2389` (9.7 km), 9th SS Panzer `C2387` (3.3 km), 277th `C2388` (5.5 km), 346th `C2393` (3.6 km), British 3rd `C2406` (6.0 km), 43rd `C2404` (5.9 km), 49th `C2402` (3.0 km), 51st `C2407` (4.2 km), 53rd `C2403` (4.1 km), 6th Airborne `C2408` (4.6 km); most were placed on a neighbouring division's box in the crowded Caen sector.
+- **`cs000043`:** 52 checked, 2 moved (II Canadian Corps `C2440`, 4.5 km; 352nd `C2414`, 3.5 km).
+- **`cs000050`:** 47 checked, 8 moved (271st `C2452`, 7.1 km; 277th `C2449`, 5.8 km; 272nd `C2453`, 3.7 km; 346th `C2457`, 3.3 km; 9th SS Panzer `C2450`, 7.0 km; 10th SS Panzer `C2451`, 7.9 km; 1st SS Panzer `C2454`, 4.2 km; XLVII Panzer Corps `C2448`, 4.5 km, new place `PL3228`).
+- **`cs000057`:** 67 checked, 0 moved.
+No unresolved rows. Old/new values and place changes in each row's notes.
+
 ### Visual audit 1a–1e (1 November 2026)
 
 Same method as the 5r–5t audit (roadmap point 205); these early sheets are at about 0.042 km per pixel.

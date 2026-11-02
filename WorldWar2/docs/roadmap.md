@@ -988,3 +988,4 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 
 Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next is the visual audit of the earlier sheets `cs000001` to `cs000247`. Next roadmap point 205.
 205. **Visual audit, sheets 1a–1e (1 November 2026).** `cs000001` to `cs000029` checked the same way. Checked 161, moved 12, unresolved 0. New places `PL3224` to `PL3227`. Recommendation: none; continue with `cs000036`.
+206. **Visual audit, sheets 1f–1j (1 November 2026).** `cs000036` to `cs000057` checked the same way. Checked 219, moved 22, unresolved 0. New place `PL3228`. The Caen sector of late June and July 1944 is the densest part of the series: markers there often sit on the neighbouring division's box. Recommendation: none beyond this audit; continue with `cs000064`.

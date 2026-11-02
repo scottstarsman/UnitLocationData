@@ -1,0 +1,95 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "unit_lineage",
+  "title": "Unit lineage links (data/unit_lineage.csv)",
+  "description": "Hand-maintained. One row per lineage link between two unit records of data/units.csv: the successor continues the predecessor (redesignation, reconstitution, absorption or formation from remnants). Unit records are never merged; the link is dated and sourced. Not a command relation.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "lineage_id",
+  "foreignKeys": [
+    {
+      "fields": "predecessor_unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "successor_unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "lineage_id",
+      "type": "string",
+      "description": "Stable key UL001 onward. Never reused.",
+      "constraints": {
+        "required": true,
+        "pattern": "^UL\\d{3,}$"
+      }
+    },
+    {
+      "name": "predecessor_unit_id",
+      "type": "string",
+      "description": "The earlier unit record (a unit_id of data/units.csv).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "successor_unit_id",
+      "type": "string",
+      "description": "The later unit record (a unit_id of data/units.csv); differs from the predecessor.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "kind",
+      "type": "string",
+      "description": "How the successor continues the predecessor.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "lineage_kind"
+    },
+    {
+      "name": "effective_date",
+      "type": "string",
+      "description": "Date the successor takes over the lineage: YYYY, YYYY-MM or YYYY-MM-DD. Not before the predecessor's formed_date (when set).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "date_basis",
+      "type": "string",
+      "description": "Where the date comes from (vocabulary relationship_date_basis).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "relationship_date_basis"
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "';'-separated reference ids of data/references_meta.csv; at least one.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "What the source says (paraphrased), and any conflicting date.",
+      "constraints": {
+        "required": false
+      }
+    }
+  ]
+}

@@ -1081,6 +1081,18 @@ def check_deferred_relations(units, vocabs, claims):
         err(where, 'no rows (D01 ...)')
 
 
+def check_lineage(units, vocabs):
+    """data/unit_lineage.csv (scripts/lineage.py): header, ids, unit ids exist, kind and date basis in the vocabularies, real dates
+    not before the predecessor's formed_date, references exist, no duplicate pair, no cycle, both linked units' unit_note names the other."""
+    import lineage
+    import csv as _csv
+    with open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8') as fh:
+        ref_ids = {r['reference_id'] for r in _csv.DictReader(fh)}
+    h, rows = lineage.load()
+    for where, msg in lineage.check(h, rows, units, vocabs, ref_ids):
+        err(where, msg)
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -1303,6 +1315,7 @@ def main():
     check_activity(all_rows)
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
+    check_lineage(units, vocabs)
 
     # ---- foreign keys declared in the schemas ----
     import build_references as br

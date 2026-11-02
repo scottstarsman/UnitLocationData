@@ -1830,7 +1830,7 @@ def scenario_84_loc_12ag_mar27():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2679-PL2733', all(c['place_id'] <= 'PL2733' for c in b), True)
+    expect(s + ': places are existing or new PL2679-PL2733', all(c['place_id'] <= 'PL2733' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_85_loc_12ag_apr3():
@@ -1843,7 +1843,7 @@ def scenario_85_loc_12ag_apr3():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))  # no German box written on this sheet (roadmap point 149)
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2734-PL2810', all(c['place_id'] <= 'PL2810' for c in b), True)
+    expect(s + ': places are existing or new PL2734-PL2810', all(c['place_id'] <= 'PL2810' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_86_loc_12ag_apr10():
@@ -1856,7 +1856,7 @@ def scenario_86_loc_12ag_apr10():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))  # no German box written on this sheet (roadmap point 155)
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2811-PL2883', all(c['place_id'] <= 'PL2883' for c in b), True)
+    expect(s + ': places are existing or new PL2811-PL2883', all(c['place_id'] <= 'PL2883' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_87_loc_12ag_apr17():
@@ -1869,7 +1869,7 @@ def scenario_87_loc_12ag_apr17():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2884-PL2951', all(c['place_id'] <= 'PL2951' for c in b), True)
+    expect(s + ': places are existing or new PL2884-PL2951', all(c['place_id'] <= 'PL2951' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_88_loc_12ag_apr24():
@@ -1882,7 +1882,7 @@ def scenario_88_loc_12ag_apr24():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL2952-PL3026', all(c['place_id'] <= 'PL3026' for c in b), True)
+    expect(s + ': places are existing or new PL2952-PL3026', all(c['place_id'] <= 'PL3026' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_89_loc_12ag_may01():
@@ -1895,7 +1895,7 @@ def scenario_89_loc_12ag_may01():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL3027-PL3087', all(c['place_id'] <= 'PL3087' for c in b), True)
+    expect(s + ': places are existing or new PL3027-PL3087', all(c['place_id'] <= 'PL3087' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_90_loc_12ag_may08():
@@ -1908,7 +1908,7 @@ def scenario_90_loc_12ag_may08():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL3088-PL3132', all(c['place_id'] <= 'PL3132' for c in b), True)
+    expect(s + ': places are existing or new PL3088-PL3132', all(c['place_id'] <= 'PL3132' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_91_loc_12ag_may08b():
@@ -1921,7 +1921,7 @@ def scenario_91_loc_12ag_may08b():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL3133-PL3144', all(c['place_id'] <= 'PL3144' for c in b), True)
+    expect(s + ': places are existing or new PL3133-PL3144', all(c['place_id'] <= 'PL3144' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_92_loc_12ag_may08c():
@@ -1934,7 +1934,7 @@ def scenario_92_loc_12ag_may08c():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL3145-PL3150', all(c['place_id'] <= 'PL3150' for c in b), True)
+    expect(s + ': places are existing or new PL3145-PL3150', all(c['place_id'] <= 'PL3150' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_93_loc_12ag_may09():
@@ -1947,7 +1947,7 @@ def scenario_93_loc_12ag_may09():
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), (set(), True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
-    expect(s + ': places are existing or new PL3151-PL3160', all(c['place_id'] <= 'PL3160' for c in b), True)
+    expect(s + ': places are existing or new PL3151-PL3160', all(c['place_id'] <= 'PL3160' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def main():

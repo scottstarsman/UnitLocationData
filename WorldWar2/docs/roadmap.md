@@ -980,4 +980,6 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 
 201. **Visual audit, sheets 5u–5v (1 November 2026).** `cs000275` (6 March) and `cs000282` (13 March 1945) checked the same way (roadmap point 199 annotation in the row notes). Checked 269, moved 59, unresolved 148 (logged as in point 200). New places `PL3199` to `PL3218`. The unresolved share is high for German rows: most German readings have no hatched symbol of that unit within 12 km on these sheets. Recommendation: as point 200.
 
-Resume point: visual audit of the remaining sheets after `cs000282` (5w onwards). Next roadmap point 202.
+202. **Visual audit, sheets 5w–5y (1 November 2026).** `cs000289` (20 March), `cs000296` (27 March) and `cs000303` (3 April 1945) checked the same way. Checked 264, moved 17, unresolved 44 (all on `cs000289`, logged as in point 200). New places `PL3219` to `PL3222`. From 27 March the readings sit on their symbols almost without exception. Recommendation: as point 200.
+
+Resume point: visual audit of the remaining sheets after `cs000303` (5z onwards). Next roadmap point 203.

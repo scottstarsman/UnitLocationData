@@ -3038,3 +3038,9 @@ Follows the review in [normalization_review.md](normalization_review.md) (items 
 - **Single-source vocabularies.** Echelon rank and display order, relationship groups (standing, active), `higher_than_organic` and `source_type` are new entries of `schema/vocabularies.json`; `validate.py`, `build.py`, `audit_temporal_relationships.py` and `who_controls.py` read them through `scripts/common.py`. `operations.py` and `build_references.py` read their vocabularies from the same file; the `nationality` and `operation_scope` entries were removed (the table replaces them).
 - **Foreign keys.** `foreignKeys` in `claims.schema.json` and `units.schema.json`, the new `relations.schema.json` for the side tables, enforced by `validate.py`; `theater` is now one of the repeated unit columns checked on every claim.
 - **Derived outputs.** `build/all_claims.csv`: columns `command_relationships` (all 566 rows) and `parent_unit_id` (15 rows) changed. `build/command_relations.csv`: `higher_name` normalised to `<adjective> <unit_name>` in 64 of 315 rows (it was inconsistent between claims, for example "First Army" and "US First Army"); no other column changed. `build/operations.csv`: `nationality_scope` in 2 rows. All other generated files are byte-identical.
+
+### Visual audit 3p–3q (1 November 2026)
+
+Same method and per-sheet 3 km threshold (31 chip px on these sheets; roadmap point 212). Town labels (Eindhoven, Tilburg, Breda, Köln, Huy, Maastricht) sit on their circles, so registration holds.
+- **`cs000240`:** 134 checked, 14 moved, 4 unresolved. **`cs000247`:** 134 checked, 25 moved, 37 unresolved.
+New places `PL3261` to `PL3262`. Unresolved on `cs000247` are mostly German, French, and US corps or divisions whose symbol is not drawn near the reading on the 15 April sheet; they are kept with a note. Moves under 3 km are not applied.

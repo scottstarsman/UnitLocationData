@@ -10318,7 +10318,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 2
+    "claims_count": 1
    }
   },
   {
@@ -25998,7 +25998,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Île-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -27418,7 +27418,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -28078,7 +28078,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Île-de-France",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -28338,7 +28338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -31338,7 +31338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -31358,7 +31358,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -64258,6 +64258,66 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6626,
+     48.9085
+    ]
+   },
+   "properties": {
+    "place_id": "PL3229",
+    "name": "Les Molinots, Hauts-de-France",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6833,
+     48.9667
+    ]
+   },
+   "properties": {
+    "place_id": "PL3230",
+    "name": "La Ville-sous-Orbais, Hauts-de-France",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6054,
+     48.9156
+    ]
+   },
+   "properties": {
+    "place_id": "PL3231",
+    "name": "Corrobert, Hauts-de-France",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
     "claims_count": 1
    }
   }

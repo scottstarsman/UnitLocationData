@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-311 roll 278 (Army Group B Ic/Ia/Adjutant; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 278 (NAID 272194963, 1454 images) read in the German original on 2 November 2026 with OCR triage; key Ia pages image-checked. Reading notes private.
+
+Rules applied: Ic Allied/enemy-picture → notes only; claim only clear German Gef.Stand/date+place; court Standort list of 17 March 1945 left for Scott; no parent from a single source.
+
+### T-311 roll 278 (65881/6–/7 Ic; 75145/2 Ia Heeresbefehle; 85604 Adjutant)
+
+- **New reference** `R789` (archive_document, family `nara_captured_german_records`): NAID 272194963, 1454 images. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). Ic Oct–Dec folders are Allied Feindbild. Ia 75145/2 is mostly Wehrmacht-Ordnungstruppen / Auffangzone orders; the clearest dated place list (Kommandant Auffangzone Nord, 17 March 1945, image 1112) names military-court Standorte and a 62nd VGD Auffangstelle at Hennef — held in private notes for Scott rather than claimed as Gef.Stände. Adjutant Normandy Anlagen: no tight HQ place on pass 1. No existing row changed; next claim id still `C7119`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged (47 VGD not on the 17 March list).
+
 ## nara-microfilm: NARA T-311 roll 277 (Army Group B Ic Meldungen; 2 November 2026)
 
 Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 277 (NAID 272193915, 1046 images) read in the German original on 2 November 2026 with OCR triage; sampled pages image-checked. Reading notes private.

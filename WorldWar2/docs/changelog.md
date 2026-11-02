@@ -533,6 +533,12 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 2f–2j (1 November 2026)
+
+Same method (roadmap point 208).
+- **`cs000099`:** 59 checked, 0 moved. **`cs000106`:** 71 checked, 1 moved (US 5th Armored `C3069`, 6.7 km, `PL0412` -> `PL2617`). **`cs000113`:** 98 checked, 1 moved (German 712th `C3110`, 7.3 km, new `PL3232`). **`cs000120`:** 110 checked, 0 moved. **`cs000127`:** 120 checked, 0 moved.
+No unresolved rows. Old/new values in each row's notes.
+
 ### Visual audit 2a–2e (1 November 2026)
 
 Same method (roadmap point 207).

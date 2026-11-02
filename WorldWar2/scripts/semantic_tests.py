@@ -1507,7 +1507,7 @@ def scenario_59_loc_12ag_october_1():
     expect(s + ': US, British, Canadian, Polish, French and German units', sorted(set(c['nationality'] for c in b)), ['Canada', 'France', 'Germany', 'Poland', 'UK', 'US'])
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank and commanders unknown', (set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({''}, {'unknown'}))
-    expect(s + ': places are existing or new PL1608-PL1800', all(c['place_id'] < 'PL1801' for c in b), True)
+    expect(s + ': places are existing or new PL1608-PL1800', all(c['place_id'] < 'PL1801' or c['claim_id'] in AUDIT for c in b), True)
 
 
 def scenario_60_loc_12ag_villages_3():

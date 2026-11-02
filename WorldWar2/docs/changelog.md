@@ -533,6 +533,12 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 3k–3o (1 November 2026)
+
+Same method and per-sheet 3 km threshold (roadmap point 211).
+- **`cs000205`:** 118 checked, 13 moved, 2 noted but not moved (no place within 3 km), 4 unresolved. **`cs000212`:** 119 checked, 17 moved, 6 unresolved. **`cs000219`:** 119 checked, 24 moved, 1 noted, 13 unresolved. **`cs000226`:** 125 checked, 22 moved, 9 unresolved. **`cs000233`:** 123 checked, 23 moved, 17 unresolved.
+New places `PL3240` to `PL3260`. Unresolved rows are mostly German corps and Volksgrenadier rows whose symbol is not drawn on the sheet near the reading (for example LXXIV and LXXXII Corps, 36th and 256th Volksgrenadier) and a few British rows west of the Maas; they are kept with a note. Moves under 3 km are not applied.
+
 ### Visual audit 3f–3j (1 November 2026)
 
 Same method (roadmap point 210). The 3 km threshold is now measured per sheet (km per chip pixel from the sheet registration): about 31 chip px from `cs000099` on, not the 61 px of the first sheets.

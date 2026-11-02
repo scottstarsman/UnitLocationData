@@ -3044,3 +3044,9 @@ Follows the review in [normalization_review.md](normalization_review.md) (items 
 Same method and per-sheet 3 km threshold (31 chip px on these sheets; roadmap point 212). Town labels (Eindhoven, Tilburg, Breda, Köln, Huy, Maastricht) sit on their circles, so registration holds.
 - **`cs000240`:** 134 checked, 14 moved, 4 unresolved. **`cs000247`:** 134 checked, 25 moved, 37 unresolved.
 New places `PL3261` to `PL3262`. Unresolved on `cs000247` are mostly German, French, and US corps or divisions whose symbol is not drawn near the reading on the 15 April sheet; they are kept with a note. Moves under 3 km are not applied.
+
+### Re-check of 2m–2r with each sheet's own 3 km limit (1 November 2026)
+
+The first pass of `cs000078` to `cs000113` used too wide a pixel tolerance; each sheet was re-checked at its own 3 km limit (40–41 chip px on `cs000078` to `cs000092`, 31 chip px from `cs000099`). Roadmap point 213.
+- **`cs000078`:** 57 checked, 6 moved (army, corps and 21st Army Group headquarters set beside their flag boxes). **`cs000085`:** 63 checked, 0 moved. **`cs000092`:** 64 checked, 1 moved. **`cs000099`:** 59 checked, 0 moved (the 12th Army Group flag is drawn about 4 km north of Versailles; the row stays at Versailles, its headquarters town). **`cs000106`:** 71 checked, 2 moved. **`cs000113`:** 98 checked, 4 moved. None unresolved.
+New places `PL3263` to `PL3267`. Moves under 3 km are not applied.

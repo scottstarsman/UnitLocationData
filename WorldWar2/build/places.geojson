@@ -518,7 +518,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -658,7 +658,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -7338,7 +7338,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 4
    }
   },
   {
@@ -8418,7 +8418,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 14
+    "claims_count": 15
    }
   },
   {
@@ -14418,7 +14418,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 2
+    "claims_count": 1
    }
   },
   {
@@ -22938,7 +22938,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -25858,7 +25858,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -25878,7 +25878,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Pays de la Loire",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -26158,7 +26158,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -27338,7 +27338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -28938,7 +28938,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Flanders",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -30738,7 +30738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 7
    }
   },
   {
@@ -30758,7 +30758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 4
    }
   },
   {
@@ -33778,7 +33778,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -35738,7 +35738,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -35758,7 +35758,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 0
    }
   },
   {
@@ -38158,7 +38158,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -64938,6 +64938,106 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7651,
+     48.9719
+    ]
+   },
+   "properties": {
+    "place_id": "PL3263",
+    "name": "Montamy, Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.2042,
+     48.6732
+    ]
+   },
+   "properties": {
+    "place_id": "PL3264",
+    "name": "Marmouille, Lower Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3399,
+     48.5102
+    ]
+   },
+   "properties": {
+    "place_id": "PL3265",
+    "name": "Saint-Ouen-le-Brisoult, Lower Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.2597,
+     50.848
+    ]
+   },
+   "properties": {
+    "place_id": "PL3266",
+    "name": "Dilbeek, Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4844,
+     51.1691
+    ]
+   },
+   "properties": {
+    "place_id": "PL3267",
+    "name": "Veldkant, Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
     "claims_count": 1
    }
   }

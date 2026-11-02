@@ -1467,7 +1467,7 @@ def scenario_56_loc_12ag_villages():
     claims = common.load_all_claims()[1]
     b = [c for c in claims if 'C2810' <= c['claim_id'] <= 'C2850']
     expect(s + ': the village pass adds 41 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (41, 41))
-    expect(s + ': all on the new places PL1347-PL1384', all('PL1347' <= c['place_id'] <= 'PL1384' for c in b), True)
+    expect(s + ': all on the new places PL1347-PL1384', all('PL1347' <= c['place_id'] <= 'PL1384' or c['claim_id'] in AUDIT for c in b), True)
     expect(s + ': German rows at 0.3, others 0.5 or 0.7', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['confidence'] for c in b if not c['unit_id'].startswith('GER-')) <= {'0.5', '0.7'}), ({'0.3'}, True))
     expect(s + ': parents stay blank', set(c['parent_unit_id'] for c in b), {''})
     expect(s + ': the 9th Infantry Division row C0383 is re-pointed from PL0355 to PL1385 (place fix of 31 October 2026)', [(c['place_id'], c['latitude'], c['confidence']) for c in claims if c['claim_id'] == 'C0383'], [('PL1385', '48.8299', '0.5')])
@@ -1516,7 +1516,7 @@ def scenario_60_loc_12ag_villages_3():
     claims = common.load_all_claims()[1]
     b = [c for c in claims if 'C3391' <= c['claim_id'] <= 'C3435']
     expect(s + ': village pass 3 adds 45 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (45, 45))
-    expect(s + ': all on new village places PL1801-PL1843', all('PL1801' <= c['place_id'] <= 'PL1843' for c in b), True)
+    expect(s + ': all on new village places PL1801-PL1843', all('PL1801' <= c['place_id'] <= 'PL1843' or c['claim_id'] in AUDIT for c in b), True)
     expect(s + ': German rows at 0.3, parents blank, commanders unknown', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({'0.3'}, {''}, {'unknown'}))
     expect(s + ': 5 km rule: no row at 0.7 unless its note names agreement within 5 km', all(c['confidence'] != '0.7' or 'within 5 km' in c['notes'] for c in b), True)
 

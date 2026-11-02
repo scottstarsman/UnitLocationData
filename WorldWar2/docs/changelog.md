@@ -533,6 +533,11 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 1a–1e (1 November 2026)
+
+Same method as the 5r–5t audit (roadmap point 205); these early sheets are at about 0.042 km per pixel.
+- **`cs000001`:** 6 checked, 1 moved (`C2285`, 716th Infantry Division, 8.2 km, `PL1144` -> `PL0668`). **`cs000008`:** 27 checked, 2 moved (`C2302`, 6th Airborne, 3.1 km, `PL0726` -> `PL1167`; `C2287`, 91st Air Landing, 3.8 km, `PL0339` -> new `PL3224`). **`cs000015`:** 38 checked, 2 moved (`C2317`, 50th Division, 3.9 km, `PL1148` -> `PL1162`; `C2311`, 12th SS Panzer, 4.6 km, `PL0293` -> `PL0227`). **`cs000022`:** 45 checked, 2 moved (`C2338`, 1st SS Panzer, 3.5 km, place unchanged; `C2339`, I SS Panzer Corps, 4.5 km, `PL1161` -> new `PL3225`). **`cs000029`:** 45 checked, 5 moved (`C2375`, 51st Division, 3.6 km, `PL0860` -> `PL1163`; `C2367`, 59th Division, 3.7 km, `PL0821` -> new `PL3226`; `C2359`, 10th SS Panzer, 9.3 km, `PL1166` -> `PL0293`; `C2365`, I SS Panzer Corps, 5.8 km, `PL1168` -> `PL1161` (the "UNLOCATED" note on this sheet belongs to Panzer Lehr, not the corps); `C2353`, 17th SS Panzergrenadier, 3.8 km, `PL1165` -> new `PL3227`). No unresolved rows. Town registration checked on each sheet. Old/new values in each row's notes.
+
 ### Visual audit 5zc–5zg (1 November 2026)
 
 Same method as the 5r–5t audit (roadmap point 204).

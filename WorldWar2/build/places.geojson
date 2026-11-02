@@ -4458,7 +4458,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -6658,7 +6658,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 1
    }
   },
   {
@@ -13178,7 +13178,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -14318,7 +14318,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 3
+    "claims_count": 2
    }
   },
   {
@@ -16218,7 +16218,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandie",
-    "claims_count": 3
+    "claims_count": 2
    }
   },
   {
@@ -16958,7 +16958,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 6
+    "claims_count": 5
    }
   },
   {
@@ -22618,7 +22618,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 3
+    "claims_count": 2
    }
   },
   {
@@ -22698,7 +22698,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 3
+    "claims_count": 2
    }
   },
   {
@@ -22978,7 +22978,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -22998,7 +22998,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -23038,7 +23038,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 3
+    "claims_count": 2
    }
   },
   {
@@ -23058,7 +23058,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 6
+    "claims_count": 5
    }
   },
   {
@@ -23078,7 +23078,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -23098,7 +23098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 3
+    "claims_count": 2
    }
   },
   {
@@ -64158,6 +64158,86 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Saxe",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.4441,
+     49.3775
+    ]
+   },
+   "properties": {
+    "place_id": "PL3224",
+    "name": "Neuville, Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3405,
+     48.9694
+    ]
+   },
+   "properties": {
+    "place_id": "PL3225",
+    "name": "Tournebu, Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.423,
+     49.3306
+    ]
+   },
+   "properties": {
+    "place_id": "PL3226",
+    "name": "Bernières-sur-Mer, Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2638,
+     49.203
+    ]
+   },
+   "properties": {
+    "place_id": "PL3227",
+    "name": "Le Rivet, Normandy",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 1
    }
   }

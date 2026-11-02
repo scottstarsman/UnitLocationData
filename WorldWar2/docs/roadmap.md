@@ -987,3 +987,4 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 204. **Visual audit, sheets 5zc–5zg (1 November 2026).** `cs000331`, `cs000338` and `cs000339` checked the same way. Checked 208, moved 2 (`C6944`, `C7058`), unresolved 0. New place `PL3223`. On `cs000339` most markers sit 1.5–2.5 km south of their box centres (a small registration bias, under the 3 km threshold, so not moved). Recommendation: refit the `cs000339` registration with more town junctions in a later pass if Scott wants sub-3 km accuracy; no change now.
 
 Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next is the visual audit of the earlier sheets `cs000001` to `cs000247`. Next roadmap point 205.
+205. **Visual audit, sheets 1a–1e (1 November 2026).** `cs000001` to `cs000029` checked the same way. Checked 161, moved 12, unresolved 0. New places `PL3224` to `PL3227`. Recommendation: none; continue with `cs000036`.

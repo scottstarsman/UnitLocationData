@@ -481,5 +481,14 @@
       "end": "The activity of the same value, opened by an earlier start row of the unit, ends on the row date.",
       "point": "The activity is observed on the row date only; it opens no span."
     }
+  },
+  "lineage_kind": {
+    "description": "Meaning of the kind column of data/unit_lineage.csv: how a successor unit record continues a predecessor record. Each unit record stays separate; a lineage row only links them.",
+    "values": {
+      "redesignation": "The same formation takes a new designation; personnel and organisation continue (for example the 462nd Infantry Division becoming the 462nd Volksgrenadier Division).",
+      "reconstitution_from_remnants": "The predecessor was destroyed or broken up and the successor was formed with its remnants (usually together with a new or forming formation), as the source states.",
+      "absorbed_into": "The predecessor (for example a division still forming) was merged into or renamed as the successor and ceased to exist on its own.",
+      "formed_from_remnants": "A different kind of formation was formed from the remnants of the predecessor (for example a panzer brigade formed from the remnants of a panzergrenadier division)."
+    }
   }
 }

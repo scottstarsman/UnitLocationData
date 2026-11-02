@@ -106,7 +106,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
 ### S07. C5899: French 1st Infantry Division (1st Free French Division), 1945-02-20
 
 - **Unit:** French 1st Infantry Division (1st Free French Division) (`FR-INF-001D`), France, division; parent in the claim: `none`; commander field: unknown
-- **Claim:** `other` / `OP-CAMP-RHINELAND`; status preferred; confidence 0.5
+- **Claim:** `other` / `OP-CAMP-RHINELAND`; status preferred; confidence 0.3
 - **Activity:** French 1st Infantry Division (1st Free French Division) shown on the 12th Army Group situation map
 - **Place:** Illhaeusern, Haut-Rhin (`PL2372`, Grand Est, FR); point 48.1768, 7.4104 (claim override of the place point 48.1841, 7.4341); precision 10 km; point represents: main_body; qualifier: near Illhaeusern; coordinate source: R002: OpenStreetMap Nominatim (Illhaeusern, Haut-Rhin), searched 31 October 2026
 - **Command relationships stated by the claim:** none

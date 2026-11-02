@@ -3056,3 +3056,7 @@ New places `PL3263` to `PL3267`. Moves under 3 km are not applied.
 `cs000120` to `cs000163` re-checked at 31 chip px (0.097 km per chip px). Roadmap point 214.
 - **`cs000120`:** 111 checked, 0 moved. **`cs000127`:** 121 checked, 3 moved (Canadian corps and divisions). **`cs000134`:** 135 checked, 0 moved. **`cs000141`:** 137 checked, 0 moved. **`cs000148`:** 141 checked, 7 moved. **`cs000156`:** 139 checked, 11 moved. **`cs000163`:** 144 checked, 3 moved. None unresolved.
 New places `PL3268` to `PL3277`. The 12th Army Group row on `cs000163` stays at its headquarters town. Moves under 3 km are not applied.
+
+### Confidence of audit-unresolved map rows (2 November 2026)
+
+Scott approved on 2 November 2026: the 434 map rows the visual audit could not confirm within 3 km of their unit's symbol are set to confidence 0.3. 216 Allied rows changed from 0.5 to 0.3 (US 138, UK 50, France 20, Canada 7, Poland 1), each annotated with old value 0.5, new value 0.3, reason: visual audit could not confirm symbol position within 3 km. The 218 German rows were already 0.3 and keep their audit note. Roadmap point 215.

@@ -533,6 +533,13 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 5u–5v (1 November 2026)
+
+Same method as the 5r–5t audit (roadmap point 201).
+- **`cs000275` (6 March 1945):** 134 checked, 30 moved, 70 unresolved. **`cs000282` (13 March):** 135 checked, 29 moved, 78 unresolved.
+- **Moved rows:** old/new latitude/longitude, distance and old/new place in each row's notes; reason: marker more than 3 km from the labelled symbol. New places `PL3199` to `PL3218`.
+- **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

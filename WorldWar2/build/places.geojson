@@ -5718,7 +5718,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -5998,7 +5998,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -10418,7 +10418,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -10898,7 +10898,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 14
+    "claims_count": 15
    }
   },
   {
@@ -12278,7 +12278,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -13298,7 +13298,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -15778,7 +15778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -20578,7 +20578,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -20898,7 +20898,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -21038,7 +21038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -32398,7 +32398,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -40478,7 +40478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -44338,7 +44338,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -65533,6 +65533,206 @@
    "properties": {
     "place_id": "PL3292",
     "name": "Rindern (Kleve), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.0677,
+     49.2182
+    ]
+   },
+   "properties": {
+    "place_id": "PL3293",
+    "name": "Putot-en-Auge, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1441,
+     48.6511
+    ]
+   },
+   "properties": {
+    "place_id": "PL3294",
+    "name": "Vieux-Pont (Argentan), Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5429,
+     51.3562
+    ]
+   },
+   "properties": {
+    "place_id": "PL3295",
+    "name": "Gooreind (Wuustwezel), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7636,
+     51.4175
+    ]
+   },
+   "properties": {
+    "place_id": "PL3296",
+    "name": "Minderhout (Hoogstraten), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.147,
+     51.487
+    ]
+   },
+   "properties": {
+    "place_id": "PL3297",
+    "name": "Hilvarenbeek, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6894,
+     52.0667
+    ]
+   },
+   "properties": {
+    "place_id": "PL3298",
+    "name": "Driesprong (Ede), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0368,
+     51.8905
+    ]
+   },
+   "properties": {
+    "place_id": "PL3299",
+    "name": "Pannerden, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2697,
+     51.6897
+    ]
+   },
+   "properties": {
+    "place_id": "PL3300",
+    "name": "Keppeln (Uedem), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1274,
+     51.8038
+    ]
+   },
+   "properties": {
+    "place_id": "PL3301",
+    "name": "Wasserburg (Rindern, Kleve), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.306,
+     51.4005
+    ]
+   },
+   "properties": {
+    "place_id": "PL3302",
+    "name": "Wankum (Wachtendonk), North Rhine-Westphalia",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

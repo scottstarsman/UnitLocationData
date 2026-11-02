@@ -2,6 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-311 roll 3 (Army Group B Ia/Ic; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 3 (NAID 271847205, 1378 images) read in the German original on 2 November 2026 with OCR triage; every claimed page image-checked. Reading notes private.
+
+Rules applied: no command relation and no parent from a single source; strengths stay in notes; confidence 0.5 for dated documents naming a command post or place; disagreements logged without changing existing rows; Ic Dec Feindlage Allied picture kept in notes only.
+
+### T-311 roll 3 (Ic Feindlagekarten Dec 1944; Ia Führer-Befehle, Tagesmeldungen Jun–Aug 1944, Op.Befehle Sep 1944)
+
+- **New reference** `R786` (archive_document, family `nara_captured_german_records`): NAID 271847205, 1378 images.
+- **New claims** `C7095` to `C7118` (24; all at 0.5; each note carries old value none, new value and reason): 346th Infantry Division command post at Putot-en-Auge (13 June); 84th Infantry Division assembling northwest of Falaise (1 August); 89th Infantry Division command post at Falaise (4 August); Panzer Group Eberbach at Vieux-Pont (13 August); 116th Panzer Division at Sées (12 August); 1st SS Panzer Division on the road at Rânes (13 August); Fifteenth Army command post at Dordrecht from 12 September; seventeen command posts from the 28 September 1944, 20.00 hrs Turnhout–Roermond Gliederung (LXVII Corps Breda; 346th Gooreind; 711th Minderhout; 719th Baarle-Nassau; LXXXVIII Corps Dongen; 245th Hilvarenbeek; 59th Boxtel; 85th/Kampfgruppe Chill St. Michielsgestel; XII SS Corps Driesprong; 9th SS Arnhem; 10th SS Pannerden; II Fallschirmjäger Corps Keppeln; 84th Wasserburg near Kleve; LXXXVI Corps Wankum; 180th Veulen; Fallschirmjäger Division Erdmann Belfeld; 176th Haus Effeld).
+  - Parent blank on all 24; commander unknown. No existing row changed.
+- **New places** `PL3293` to `PL3302` (10, OpenStreetMap Nominatim, searched 2 November 2026).
+- **No relation, no conflict group** (next `CR1067`, `G034`).
+- **Disagreements / notes recorded:** Fifteenth Army at Dordrecht on 12 September is three days earlier than FMS B-475 (15 September) — roadmap point 222; II SS Panzer Corps “Deutekom” and 190th Infantry Division “Grafenthal” left unclaimed (uncertain places); Ic Dec maps and Italy 1943 folder not claimed.
+- **Semantic scenario 98.** 47th Volksgrenadier Division Jan–Mar 1945 gap unchanged.
+
 ## nara-microfilm: NARA captured German records, T-315 roll 940 (47th Volksgrenadier Division; 2 November 2026)
 
 Scott approved reading NARA captured-records microfilm as new sources on 2 November 2026, starting with T-315 roll 940 (NAID 346435955) and then the T-311 Army Group B rolls, one commit per roll (roll 4 done the same day). Branch `nara-microfilm` from `main` `e0d85d7`. The roll was downloaded from the public NARA catalog and read in the German original, all 142 frames (PDF pages 1-145) including the two hand-drawn maps; the reading notes stay private and are not in this repository.

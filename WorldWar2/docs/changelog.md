@@ -3050,3 +3050,9 @@ New places `PL3261` to `PL3262`. Unresolved on `cs000247` are mostly German, Fre
 The first pass of `cs000078` to `cs000113` used too wide a pixel tolerance; each sheet was re-checked at its own 3 km limit (40–41 chip px on `cs000078` to `cs000092`, 31 chip px from `cs000099`). Roadmap point 213.
 - **`cs000078`:** 57 checked, 6 moved (army, corps and 21st Army Group headquarters set beside their flag boxes). **`cs000085`:** 63 checked, 0 moved. **`cs000092`:** 64 checked, 1 moved. **`cs000099`:** 59 checked, 0 moved (the 12th Army Group flag is drawn about 4 km north of Versailles; the row stays at Versailles, its headquarters town). **`cs000106`:** 71 checked, 2 moved. **`cs000113`:** 98 checked, 4 moved. None unresolved.
 New places `PL3263` to `PL3267`. Moves under 3 km are not applied.
+
+### Re-check of 2s–2y with each sheet's own 3 km limit (1 November 2026)
+
+`cs000120` to `cs000163` re-checked at 31 chip px (0.097 km per chip px). Roadmap point 214.
+- **`cs000120`:** 111 checked, 0 moved. **`cs000127`:** 121 checked, 3 moved (Canadian corps and divisions). **`cs000134`:** 135 checked, 0 moved. **`cs000141`:** 137 checked, 0 moved. **`cs000148`:** 141 checked, 7 moved. **`cs000156`:** 139 checked, 11 moved. **`cs000163`:** 144 checked, 3 moved. None unresolved.
+New places `PL3268` to `PL3277`. The 12th Army Group row on `cs000163` stays at its headquarters town. Moves under 3 km are not applied.

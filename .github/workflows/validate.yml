@@ -21,6 +21,8 @@ jobs:
           python-version: "3.x"
       - name: Validate claims and units
         run: python scripts/validate.py
+      - name: JSON-in-cell fields match schema/json schemas
+        run: python scripts/check_json_fields.py
       - name: Coordinate checks (warnings only)
         run: python scripts/check_coordinates.py
         continue-on-error: true

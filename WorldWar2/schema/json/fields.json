@@ -1,0 +1,14 @@
+{
+  "description": "Registry of CSV columns whose cells hold JSON. Each entry names the table glob, the column, and the JSON Schema file (relative to this folder) every non-blank cell must satisfy. scripts/check_json_fields.py reads it.",
+  "fields": [
+    {
+      "table": "data/claims/*/*.csv",
+      "column": "strength_json",
+      "schema": "strength_json.schema.json",
+      "blank_allowed": true,
+      "also_in": [
+        "build/all_claims.csv"
+      ]
+    }
+  ]
+}

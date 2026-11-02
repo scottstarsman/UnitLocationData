@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "strength_json.schema.json",
+  "title": "strength_json",
+  "description": "Sourced strength figures for one claim, stored as a JSON object in the strength_json column of data/claims/*/*.csv (blank when no source gives figures). Enumerations mirror schema/vocabularies.json (strength_json_basis, strength_json_vehicle_count_type, strength_json_scope, strength_json_status).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "basis",
+    "as_of",
+    "source"
+  ],
+  "properties": {
+    "basis": {
+      "type": "string",
+      "enum": [
+        "authorized_organization",
+        "estimate",
+        "reported_actual"
+      ],
+      "description": "What kind of figure it is (vocabulary strength_json_basis)."
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date the figure applies to (YYYY-MM-DD); may differ from the row date."
+    },
+    "personnel": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of personnel."
+    },
+    "vehicles": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "description": "Vehicle type name -> count. Guns are not vehicles."
+    },
+    "vehicle_count_type": {
+      "type": "string",
+      "enum": [
+        "on_hand",
+        "operational",
+        "unknown"
+      ],
+      "description": "What the vehicle counts mean; required with vehicles, not allowed without."
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "sector",
+        "sub_force",
+        "whole_unit"
+      ],
+      "description": "What part of the unit the figures cover; required with personnel."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "full",
+        "heavily_depleted",
+        "reduced"
+      ],
+      "description": "Qualitative strength a source states; destroyed is not allowed (derived from the destroyed flag)."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Readable citation; must resolve through data/references_meta.csv."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional caveat."
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "personnel"
+      ]
+    },
+    {
+      "required": [
+        "vehicles"
+      ]
+    },
+    {
+      "required": [
+        "status"
+      ]
+    }
+  ],
+  "dependentRequired": {
+    "personnel": [
+      "scope"
+    ],
+    "vehicles": [
+      "vehicle_count_type"
+    ],
+    "vehicle_count_type": [
+      "vehicles"
+    ]
+  },
+  "examples": [
+    {
+      "basis": "reported_actual",
+      "as_of": "1944-06-16",
+      "vehicles": {
+        "tanks": 85
+      },
+      "vehicle_count_type": "operational",
+      "status": "reduced",
+      "source": "Wikipedia Operation Perch",
+      "note": "division reported 85 tanks operational on 16 June"
+    },
+    {
+      "basis": "estimate",
+      "as_of": "1944-06-10",
+      "personnel": 15976,
+      "scope": "whole_unit",
+      "status": "full",
+      "source": "Wikipedia 3rd Parachute Division"
+    },
+    {
+      "basis": "estimate",
+      "as_of": "1944-06-18",
+      "status": "heavily_depleted",
+      "source": "CMH Cross-Channel Attack ch. X"
+    }
+  ]
+}

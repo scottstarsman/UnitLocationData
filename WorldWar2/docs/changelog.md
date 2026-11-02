@@ -3060,3 +3060,7 @@ New places `PL3268` to `PL3277`. The 12th Army Group row on `cs000163` stays at 
 ### Confidence of audit-unresolved map rows (2 November 2026)
 
 Scott approved on 2 November 2026: the 434 map rows the visual audit could not confirm within 3 km of their unit's symbol are set to confidence 0.3. 216 Allied rows changed from 0.5 to 0.3 (US 138, UK 50, France 20, Canada 7, Poland 1), each annotated with old value 0.5, new value 0.3, reason: visual audit could not confirm symbol position within 3 km. The 218 German rows were already 0.3 and keep their audit note. Roadmap point 215.
+
+### JSON-in-cell field definitions (2 November 2026)
+
+Scott approved on 2 November 2026. A survey of every table under `data/` found one column holding JSON in a cell, `strength_json` (31 claims). It is documented in `docs/json_fields.md` with a JSON Schema in `schema/json/strength_json.schema.json` (registry `schema/json/fields.json`). New checker `scripts/check_json_fields.py` validates every cell against its schema (also the copy in `build/all_claims.csv`) and checks that the schema enumerations equal `schema/vocabularies.json`; it runs in CI and in the local pre-push checks. New typed export `build/all_claims.json` (nested objects for JSON cells); no CSV column or value changed. Malformed cells found: none (62 cells checked, 0 problems), so no source row was changed.

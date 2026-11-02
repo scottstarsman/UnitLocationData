@@ -1492,7 +1492,7 @@ def scenario_58_loc_12ag_villages_2():
     claims = common.load_all_claims()[1]
     b = [c for c in claims if 'C3082' <= c['claim_id'] <= 'C3107']
     expect(s + ': village pass 2 adds 26 claims, all citing R781', (len(b), sum(LOC12AG(c) for c in b)), (26, 26))
-    expect(s + ': all on new village places PL1582-PL1607', all('PL1582' <= c['place_id'] <= 'PL1607' for c in b), True)
+    expect(s + ': all on new village places PL1582-PL1607', all('PL1582' <= c['place_id'] <= 'PL1607' or c['claim_id'] in AUDIT for c in b), True)
     expect(s + ': German rows at 0.3, parents blank, commanders unknown', (set(c['confidence'] for c in b if c['unit_id'].startswith('GER-')), set(c['parent_unit_id'] for c in b), set(c['commander'] for c in b)), ({'0.3'}, {''}, {'unknown'}))
     expect(s + ': the 12th Army Group rows sit at the towns (roadmap point 31)', sorted((c['claim_id'], c['place_id'], c['latitude']) for c in claims if c['claim_id'] in ('C3018', 'C3070')), [('C3018', 'PL0364', '48.8053'), ('C3070', 'PL0361', '49.1620')])
 

@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-311 roll 277 (Army Group B Ic Meldungen; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 277 (NAID 272193915, 1046 images) read in the German original on 2 November 2026 with OCR triage; sampled pages image-checked. Reading notes private.
+
+Rules applied: Ic Allied/enemy-picture → notes only; claim only clear German date+place; no command relation and no parent from a single source; strengths stay in notes.
+
+### T-311 roll 277 (Ic Meldungen Jul–Sep 1944; items 65881/4–/5)
+
+- **New reference** `R788` (archive_document, family `nara_captured_german_records`): NAID 272193915, 1046 images, items 65881/4 and 65881/5. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). The roll is Ic daily teletypes (Allied Feindbild from AOK 7/15/1, Pz.AOK 5 / Pz.Gr.West, Fallsch.AOK 1, Ob.West). Per Scott (2 November 2026), German-perceived Allied positions stay in the private reading notes; no clear German own-side dated command-post places were found. No existing row changed; next claim id still `C7119`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged.
+
 ## nara-microfilm: NARA T-311 roll 276 (Army Group B Ic Meldungen; 2 November 2026)
 
 Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 276 (NAID 272192913, 1000 images) read in the German original on 2 November 2026 with OCR triage; sampled pages image-checked. Reading notes private.

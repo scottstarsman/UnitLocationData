@@ -16858,7 +16858,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -65779,6 +65779,46 @@
     "country": "DE",
     "region": "North Rhine-Westphalia",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7867,
+     50.3298
+    ]
+   },
+   "properties": {
+    "place_id": "PL3305",
+    "name": "Nohn (Gerolstein), Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3582,
+     51.1634
+    ]
+   },
+   "properties": {
+    "place_id": "PL3306",
+    "name": "Gerkerath (Mönchengladbach), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
    }
   }
  ]

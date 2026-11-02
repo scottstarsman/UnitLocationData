@@ -533,6 +533,12 @@ Scott on 1 November 2026 asked to check every unchecked map reading by eye on it
 - **Unresolved rows:** kept unchanged, note "unresolved, not moved: <reason>".
 - **Tests:** `semantic_tests.py` accepts a new place on rows whose notes carry the audit annotation.
 
+### Visual audit 3f–3j (1 November 2026)
+
+Same method (roadmap point 210). The 3 km threshold is now measured per sheet (km per chip pixel from the sheet registration): about 31 chip px from `cs000099` on, not the 61 px of the first sheets.
+- **`cs000170`:** 138 checked, 0 moved. **`cs000177`:** 138 checked, 1 moved (`C4398`, 4.4 km). **`cs000184`:** 128 checked, 8 moved, 2 unresolved (`C4440`, `C4517`), new place `PL3233`. **`cs000191`:** 129 checked, 8 moved (largest `C4629`, 24.8 km), 2 unresolved (`C4633`, `C4577`), new place `PL3234`. **`cs000198`:** 136 checked, 10 moved, new places `PL3235` to `PL3239`.
+Each moved row carries old/new coordinates, distance and reason in its notes; unresolved rows are kept with a note (no symbol of the unit found within about 12 km).
+
 ### Visual audit 3a–3e (1 November 2026)
 
 Same method (roadmap point 209).

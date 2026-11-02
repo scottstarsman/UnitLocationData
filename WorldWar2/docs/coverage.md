@@ -57,20 +57,20 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3217 places and 156 alias names for 7055 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3224 places and 156 alias names for 7055 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3113 | 6858 |
+| point | 3120 | 6858 |
 | area | 86 | 177 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1385 | 2900 |
-| Germany (DE) | 1102 | 2341 |
-| Netherlands (NL) | 356 | 956 |
-| Belgium (BE) | 265 | 612 |
+| France (FR) | 1386 | 2900 |
+| Germany (DE) | 1105 | 2340 |
+| Netherlands (NL) | 358 | 958 |
+| Belgium (BE) | 266 | 611 |
 | Luxembourg (LU) | 65 | 177 |
 | Austria (AT) | 25 | 39 |
 | Czechia (CZ) | 14 | 22 |

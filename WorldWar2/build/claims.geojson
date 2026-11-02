@@ -139447,8 +139447,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     7.048,
-     48.0882
+     6.9894,
+     48.089
     ]
    },
    "properties": {
@@ -139462,8 +139462,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-11-28",
-    "place_id": "PL2336",
-    "location_name": "Le Valtin, Vosges (near Le Valtin)",
+    "place_id": "PL1920",
+    "location_name": "Le Surceneux (Xonrupt-Longemer), Vosges (near Le Surceneux (Xonrupt-Longemer))",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.3,
@@ -141538,8 +141538,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.7879,
-     51.463
+     5.9931,
+     51.4668
     ]
    },
    "properties": {
@@ -141553,8 +141553,8 @@
     "echelon": "division",
     "branch": "Armoured",
     "date": "1944-12-05",
-    "place_id": "PL2037",
-    "location_name": "Voort (Deurne), Noord-Brabant (near Voort (Deurne))",
+    "place_id": "PL2294",
+    "location_name": "Meterik, Limburg (near Meterik)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -142194,8 +142194,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.0748,
-     50.9303
+     6.1947,
+     50.9533
     ]
    },
    "properties": {
@@ -142209,8 +142209,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-05",
-    "place_id": "PL1865",
-    "location_name": "Siepenbusch, North Rhine-Westphalia (near Siepenbusch)",
+    "place_id": "PL2228",
+    "location_name": "Immendorf, North Rhine-Westphalia (near Immendorf)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -142235,8 +142235,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1208,
-     50.9584
+     6.1952,
+     50.9738
     ]
    },
    "properties": {
@@ -142250,8 +142250,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-05",
-    "place_id": "PL0558",
-    "location_name": "Geilenkirchen, North Rhine-Westphalia (near Geilenkirchen)",
+    "place_id": "PL1549",
+    "location_name": "Gereonsweiler, North Rhine-Westphalia (near Gereonsweiler)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -142276,8 +142276,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1079,
-     50.8577
+     6.2446,
+     50.8918
     ]
    },
    "properties": {
@@ -142291,8 +142291,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-05",
-    "place_id": "PL0914",
-    "location_name": "Bardenberg, Würselen, North Rhine-Westphalia (near Bardenberg)",
+    "place_id": "PL2001",
+    "location_name": "Siersdorf, North Rhine-Westphalia (near Siersdorf)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -142317,8 +142317,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1755,
-     50.8983
+     6.2371,
+     50.9283
     ]
    },
    "properties": {
@@ -142332,8 +142332,8 @@
     "echelon": "division",
     "branch": "Armoured",
     "date": "1944-12-05",
-    "place_id": "PL0005",
-    "location_name": "Alsdorf, North Rhine-Westphalia (near Alsdorf)",
+    "place_id": "PL1942",
+    "location_name": "Ederen, North Rhine-Westphalia (near Ederen)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -142349,7 +142349,7 @@
     "location_date": "1944-12-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R001",
+    "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944"
    }
   },
@@ -142440,8 +142440,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.0929,
-     50.7663
+     6.1563,
+     50.7849
     ]
    },
    "properties": {
@@ -142455,13 +142455,54 @@
     "echelon": "division",
     "branch": "Armoured",
     "date": "1944-12-05",
-    "place_id": "PL0001",
-    "location_name": "Aachen, North Rhine-Westphalia (near Aachen)",
+    "place_id": "PL3233",
+    "location_name": "Eilendorf, Nordrhein-Westfalen (near Eilendorf)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
     "event_type": "other",
     "current_activity": "3rd Armored Division shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R782",
+    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.266,
+     50.7958
+    ]
+   },
+   "properties": {
+    "claim_id": "C4449",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-05",
+    "place_id": "PL0137",
+    "location_name": "Eschweiler, North Rhine-Westphalia (near Eschweiler)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "1st Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -142481,49 +142522,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.2147,
-     50.7884
-    ]
-   },
-   "properties": {
-    "claim_id": "C4449",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "US-INF-001D",
-    "unit_name": "1st Infantry Division",
-    "nationality": "US",
-    "theater": "western_europe",
-    "echelon": "division",
-    "branch": "Army",
-    "date": "1944-12-05",
-    "place_id": "PL1838",
-    "location_name": "Atsch (Stolberg), North Rhine-Westphalia (near Atsch (Stolberg))",
-    "location_represents": "main_body",
-    "precision_km": 10,
-    "confidence": 0.5,
-    "event_type": "other",
-    "current_activity": "1st Infantry Division shown on the 12th Army Group situation map",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
-    "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1944-12-05",
-    "location_basis": "documented_on_date",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     6.2056,
-     50.7552
+     6.2782,
+     50.7569
     ]
    },
    "properties": {
@@ -142537,8 +142537,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-05",
-    "place_id": "PL0907",
-    "location_name": "Büsbach, Stolberg, North Rhine-Westphalia (near Büsbach)",
+    "place_id": "PL1946",
+    "location_name": "Mausbach, North Rhine-Westphalia (near Mausbach)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -146868,8 +146868,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.458,
-     51.2581
+     5.5138,
+     51.3181
     ]
    },
    "properties": {
@@ -146883,8 +146883,8 @@
     "echelon": "army",
     "branch": "Army",
     "date": "1944-12-12",
-    "place_id": "PL1497",
-    "location_name": "Hamont-Achel, Limburg (near Hamont-Achel)",
+    "place_id": "PL2204",
+    "location_name": "Leenderstrijp, Noord-Brabant (near Leenderstrijp)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -146950,8 +146950,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.7254,
-     51.842
+     5.661,
+     51.8428
     ]
    },
    "properties": {
@@ -146965,8 +146965,8 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-12-12",
-    "place_id": "PL2340",
-    "location_name": "Wezel (Wijchen), Gelderland (near Wezel (Wijchen))",
+    "place_id": "PL1634",
+    "location_name": "Hernen, Gelderland (near Hernen)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -146982,7 +146982,7 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R782",
+    "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
    }
   },
@@ -147770,8 +147770,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.0748,
-     50.9303
+     6.1622,
+     50.9395
     ]
    },
    "properties": {
@@ -147785,8 +147785,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-12",
-    "place_id": "PL1865",
-    "location_name": "Siepenbusch, North Rhine-Westphalia (near Siepenbusch)",
+    "place_id": "PL2228",
+    "location_name": "Immendorf, North Rhine-Westphalia (near Immendorf)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -147811,8 +147811,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1208,
-     50.9584
+     6.1949,
+     50.9609
     ]
    },
    "properties": {
@@ -147826,8 +147826,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-12",
-    "place_id": "PL0558",
-    "location_name": "Geilenkirchen, North Rhine-Westphalia (near Geilenkirchen)",
+    "place_id": "PL1549",
+    "location_name": "Gereonsweiler, North Rhine-Westphalia (near Gereonsweiler)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -147852,8 +147852,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1079,
-     50.8577
+     6.2685,
+     50.8944
     ]
    },
    "properties": {
@@ -147867,8 +147867,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-12",
-    "place_id": "PL0914",
-    "location_name": "Bardenberg, Würselen, North Rhine-Westphalia (near Bardenberg)",
+    "place_id": "PL2001",
+    "location_name": "Siersdorf, North Rhine-Westphalia (near Siersdorf)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -147893,8 +147893,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1756,
-     50.899
+     6.2442,
+     50.9266
     ]
    },
    "properties": {
@@ -147908,8 +147908,8 @@
     "echelon": "division",
     "branch": "Armoured",
     "date": "1944-12-12",
-    "place_id": "PL0005",
-    "location_name": "Alsdorf, North Rhine-Westphalia (near Alsdorf)",
+    "place_id": "PL1942",
+    "location_name": "Ederen, North Rhine-Westphalia (near Ederen)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -147925,7 +147925,7 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R001",
+    "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
    }
   },
@@ -148016,8 +148016,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.0929,
-     50.7663
+     6.1998,
+     50.7606
     ]
    },
    "properties": {
@@ -148031,8 +148031,8 @@
     "echelon": "division",
     "branch": "Armoured",
     "date": "1944-12-12",
-    "place_id": "PL0001",
-    "location_name": "Aachen, North Rhine-Westphalia (near Aachen)",
+    "place_id": "PL0907",
+    "location_name": "Büsbach, Stolberg, North Rhine-Westphalia (near Büsbach)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -148048,7 +148048,7 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R001",
+    "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
    }
   },
@@ -150435,8 +150435,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     7.2786,
-     49.1476
+     7.5905,
+     49.238
     ]
    },
    "properties": {
@@ -150450,8 +150450,8 @@
     "echelon": "army",
     "branch": "Army",
     "date": "1944-12-12",
-    "place_id": "PL2365",
-    "location_name": "Medelsheim, Saarland (near Medelsheim)",
+    "place_id": "PL3234",
+    "location_name": "Staffelhof, Rhineland-Palatinate (near Staffelhof)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.3,
@@ -150467,7 +150467,7 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
+    "reference_ids": "R781;R782",
     "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
    }
   },
@@ -155642,8 +155642,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     4.5224,
-     51.625
+     4.4738,
+     51.6411
     ]
    },
    "properties": {
@@ -155657,8 +155657,8 @@
     "echelon": "division",
     "branch": "Armoured",
     "date": "1944-12-19",
-    "place_id": "PL1982",
-    "location_name": "Noordhoek, Noord-Brabant (near Noordhoek)",
+    "place_id": "PL3235",
+    "location_name": "Fijnaart, Noord-Brabant (near Fijnaart)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -155674,7 +155674,7 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
+    "reference_ids": "R781;R782",
     "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
    }
   },
@@ -155683,8 +155683,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     4.4824,
-     51.2494
+     4.4808,
+     51.2873
     ]
    },
    "properties": {
@@ -155698,8 +155698,8 @@
     "echelon": "army",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL2213",
-    "location_name": "Schoten, Antwerp (near Schoten)",
+    "place_id": "PL3236",
+    "location_name": "Brasschaat, Antwerp (near Brasschaat)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -155715,7 +155715,7 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
+    "reference_ids": "R781;R782",
     "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
    }
   },
@@ -155806,8 +155806,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.7255,
-     51.8428
+     5.62,
+     51.879
     ]
    },
    "properties": {
@@ -155821,8 +155821,8 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL2340",
-    "location_name": "Wezel (Wijchen), Gelderland (near Wezel (Wijchen))",
+    "place_id": "PL1927",
+    "location_name": "Afferden, Gelderland (near Afferden)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -155838,7 +155838,7 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R782",
+    "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
    }
   },
@@ -156134,8 +156134,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.658,
-     51.5004
+     5.5701,
+     51.5273
     ]
    },
    "properties": {
@@ -156149,8 +156149,8 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL1995",
-    "location_name": "Aarle-Rixtel, Noord-Brabant (near Aarle-Rixtel)",
+    "place_id": "PL1690",
+    "location_name": "Mariahout, Noord-Brabant (near Mariahout)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -156216,8 +156216,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.6669,
-     52.0508
+     6.6249,
+     52.0759
     ]
    },
    "properties": {
@@ -156231,8 +156231,8 @@
     "echelon": "army",
     "branch": "Luftwaffe",
     "date": "1944-12-19",
-    "place_id": "PL2341",
-    "location_name": "Zwilbroek (Zwillbrock), North Rhine-Westphalia (near Zwilbroek (Zwillbrock))",
+    "place_id": "PL3237",
+    "location_name": "Hupsel, Gelderland (near Hupsel)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.3,
@@ -156298,8 +156298,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     5.7472,
-     51.3128
+     5.76,
+     51.3695
     ]
    },
    "properties": {
@@ -156313,8 +156313,8 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL2296",
-    "location_name": "Budschop, Limburg (near Budschop)",
+    "place_id": "PL2117",
+    "location_name": "Heusden, Noord-Brabant (near Heusden)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -156626,8 +156626,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.2596,
-     50.9226
+     6.186,
+     50.9368
     ]
    },
    "properties": {
@@ -156641,8 +156641,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL1942",
-    "location_name": "Ederen, North Rhine-Westphalia (near Ederen)",
+    "place_id": "PL2228",
+    "location_name": "Immendorf, North Rhine-Westphalia (near Immendorf)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,
@@ -158143,8 +158143,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.971,
-     49.4721
+     7.0189,
+     49.4534
     ]
    },
    "properties": {
@@ -158158,8 +158158,8 @@
     "echelon": "corps",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL2311",
-    "location_name": "Dörsdorf, Saarland (near Dörsdorf)",
+    "place_id": "PL3238",
+    "location_name": "Sotzweiler, Saarland (near Sotzweiler)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.3,
@@ -158175,7 +158175,7 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
+    "reference_ids": "R781;R782",
     "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
    }
   },
@@ -158553,8 +158553,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     6.1673,
-     48.739
+     6.2345,
+     48.7317
     ]
    },
    "properties": {
@@ -158568,8 +158568,8 @@
     "echelon": "army",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL1883",
-    "location_name": "Champigneulles, Meurthe-et-Moselle (near Champigneulles)",
+    "place_id": "PL3239",
+    "location_name": "Agincourt, Grand Est (near Agincourt)",
     "location_represents": "headquarters",
     "precision_km": 10,
     "confidence": 0.5,
@@ -158585,7 +158585,7 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
+    "reference_ids": "R781;R782",
     "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
    }
   },
@@ -158840,8 +158840,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     7.937,
-     48.9855
+     7.8773,
+     48.9852
     ]
    },
    "properties": {
@@ -158855,8 +158855,8 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1944-12-19",
-    "place_id": "PL2431",
-    "location_name": "Riedseltz, Bas-Rhin (near Riedseltz)",
+    "place_id": "PL2664",
+    "location_name": "Memmelshoffen, Bas-Rhin (near Memmelshoffen)",
     "location_represents": "main_body",
     "precision_km": 10,
     "confidence": 0.5,

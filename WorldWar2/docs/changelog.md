@@ -507,6 +507,12 @@ Scott on 31 October 2026 asked to continue the weekly sheets with all nationalit
 - **Agreement (existing non-map row of the unit within 10 km):** one-day window 0 of 1: US 0 of 1, British and other Allied 0 of 0, German 0 of 0; three-day window 0 of 2: US 0 of 2, British and other Allied 0 of 0, German 0 of 0.
 - **Scenario 92** checks the sheet. No existing claim row changed. No relation, no conflict group.
 
+### Outlier re-check (1 November 2026)
+
+Scott on 1 November 2026 asked to re-check by eye the three largest map-vs-text outliers on their own sheets (roadmap point 192).
+- **`C6772`** (24 April 1945, `cs000324`): old unit `US-INF-080D`, new unit `US-INF-076D`, coordinates unchanged (50.8726, 12.7171). Reason: the box under the marker is labelled 76, not 80; the row moved from `US-INF-080D.csv` to `US-INF-076D.csv` with a note. No 80th Infantry Division box was found near Chemnitz on that sheet.
+- **`C6878`** (`US-INF-063D`, 1 May 1945) and **`C6912`** (`US-ABN-101D`, 1 May 1945): confirmed on `cs000331`, marker on the labelled symbol; notes extended, no change.
+
 ## fms-german-6: two more FMS manuscripts (B-745, B-151; 31 October 2026)
 
 Scott approved reading B-745 on Fold3 and B-151 from the Internet Archive and one data branch for the two on 31 October 2026, one commit per manuscript. Branch `fms-german-6` from `main` `1082707`. B-745 is read in the German original. B-151 is read in the US Army English translation from the Internet Archive because neither B-151 nor its sequel B-151a is on the Fold3 M1035 fiche and the German original is held only at the Bundesarchiv; the item was catalogued as B-151a but every page is B-151. Both are US Government works; the claims paraphrase them in English. The reading notes stay private and are not in this repository.

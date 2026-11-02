@@ -965,4 +965,6 @@ Batch 1 read the eight weekly Normandy sheets of 6 June to 25 July 1944 (`C2282`
 - 8 May 1945 (`cs000338`) completion: corrects roadmap point 184 — section k20 does hold unit boxes; k4, k13 and k17 hold none.
 - 8 May 1945 (`cs000338`) completion: US-COR-020C lies 52.8 km from C0709 (2 days off) and US-ARM-020D 32.0 km from same-day C0711; text rows kept.
 
+192. **Outlier re-check (1 November 2026).** `C6772` was a misread: the box is the 76th Infantry Division, not the 80th; row moved to `US-INF-076D` (old/new in the row note). `C6878` (63rd) and `C6912` (101st Airborne) confirmed on their sheet. The 80th Infantry Division has no map row for 24 April 1945; its box on `cs000324` was not found and could be looked for in a later audit.
+
 Resume point: sheet of 9 May 1945 (`cs000339`).

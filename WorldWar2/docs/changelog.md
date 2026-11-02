@@ -8,6 +8,13 @@ Scott approved reading NARA captured-records microfilm as new sources on 2 Novem
 
 Rules applied: no command relation and no parent from a single source (every new row has a blank parent); strengths stay in the reading notes; confidence 0.5 for a dated document naming the division sector, 0.3 where the sector is given only by a boundary; disagreements stay open points and no existing row is changed.
 
+### T-311 roll 2 (Army Group B Ic Feindlagekarten, July-November 1944)
+
+- **New reference** `R785` (archive_document, family `nara_captured_german_records`): NAID 271846540, 663 images, items 65881/8-/12. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). The roll is almost only Ic enemy situation maps. Per Scott (2 November 2026), German-perceived Allied positions from Ic maps stay in the private reading notes and are listed for a later decision; own-side corps stamps on the Eindhoven-Trier sheets were too coarse for dated place rows. No existing row changed; next claim id still `C7095`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged.
+
 ### T-311 roll 4 (Army Group B Ia operations orders and daily reports, 9 June-15 October 1944)
 
 - **New reference** `R784` (archive_document, family `nara_captured_german_records`): NAIDs 271848586 (images 1-1500) and 271850087 (images 1501-1651), Heeresgruppe B Ia items 75805-75810, read in the German original, all 1651 images; claims cite the catalog image number and the stamped folder page. Reliability: 8 of 16 checkable facts agree within 15 km (rows of the same unit within 4 days).

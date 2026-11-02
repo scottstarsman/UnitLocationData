@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent } from 'react';
 import type { Atlas, Claim, Filters, Mode } from './types';
 import { adjacentEvent, buildIndex, dayNumber, daysBetween, echelonMark, formatDate, histories, historyColors, humanize, isCalendarDate, isoDay, matches, operationSet, situation } from './engine';
 import { MapView } from './MapView';
@@ -19,7 +20,7 @@ function Icon({ name, size = 18 }: { name: string; size?: number }) {
 function safeLink(url: string) { try { const parsed = new URL(url); return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : undefined; } catch { return undefined; } }
 const initialParams = new URLSearchParams(window.location.search);
 
-function trapDialogFocus(event: React.KeyboardEvent<HTMLElement>) {
+function trapDialogFocus(event: ReactKeyboardEvent<HTMLElement>) {
   if (event.key !== 'Tab') return;
   const controls = [...event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input, select, [tabindex="0"]')];
   const first = controls[0], last = controls.at(-1);
@@ -31,11 +32,34 @@ function DateField({ value, min, max, label, id, onCommit }: { value: string; mi
   const [draft, setDraft] = useState(value);
   useEffect(() => setDraft(value), [value]);
   const valid = (v: string) => isCalendarDate(v) && v >= min && v <= max;
-  return <input id={id} aria-label={label} type="date" value={draft} min={min} max={max}
-    onChange={e => { const v = e.target.value; setDraft(v); if (valid(v)) onCommit(v); }}
-    onInput={e => { const v = e.currentTarget.value; setDraft(v); if (valid(v)) onCommit(v); }}
-    onBlur={e => { const v = e.currentTarget.value; if (valid(v)) onCommit(v); else setDraft(value); }}
-    onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); }}/ >;
+  return (
+    <input
+      id={id}
+      aria-label={label}
+      type="date"
+      value={draft}
+      min={min}
+      max={max}
+      onChange={e => {
+        const v = e.target.value;
+        setDraft(v);
+        if (valid(v)) onCommit(v);
+      }}
+      onInput={e => {
+        const v = e.currentTarget.value;
+        setDraft(v);
+        if (valid(v)) onCommit(v);
+      }}
+      onBlur={e => {
+        const v = e.currentTarget.value;
+        if (valid(v)) onCommit(v);
+        else setDraft(value);
+      }}
+      onKeyDown={e => {
+        if (e.key === 'Enter') e.currentTarget.blur();
+      }}
+    />
+  );
 }
 
 export default function App() {
@@ -165,7 +189,7 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
             const last = (index.get(u.unit_id) ?? []).filter(c => c.date <= date && c.claim_status !== 'alternate').at(-1);
             return <div key={u.unit_id} className={`formation-row ${detail?.unit_id === u.unit_id ? 'active' : ''}`}>
               <button className="formation-name" onClick={() => chooseUnit(u.unit_id)}><span className="formation-echelon">{echelonMark(u.echelon)}</span><strong>{u.unit_name}</strong><span className="formation-meta"><i className={visibleUnits.has(u.unit_id) ? 'status-dot visible' : 'status-dot'}/>{u.nationality} · {last ? `last ${formatDate(last.date, true)}` : u.claim_rows ? 'not yet observed' : 'no claims'}</span></button>
-              <label className="unit-check" style={{ '--track-color': chosen >= 0 ? historyColors[chosen % historyColors.length] : undefined } as React.CSSProperties}><input type="checkbox" aria-label={`Include ${u.nationality} ${u.unit_name} in movement history`} checked={chosen >= 0} onChange={() => toggleUnit(u.unit_id)}/><span>{chosen >= 0 ? '✓' : '+'}</span></label>
+              <label className="unit-check" style={{ '--track-color': chosen >= 0 ? historyColors[chosen % historyColors.length] : undefined } as CSSProperties}><input type="checkbox" aria-label={`Include ${u.nationality} ${u.unit_name} in movement history`} checked={chosen >= 0} onChange={() => toggleUnit(u.unit_id)}/><span>{chosen >= 0 ? '✓' : '+'}</span></label>
             </div>;
           })}
           {!filteredUnits.length && <div className="list-empty"><strong>No matching formations</strong><p>Try another name or clear the filters.</p><button className="text-button" onClick={() => { setSearch(''); setFilters(f => ({ ...f, nationality: '', echelon: '', operation: '' })); }}>Clear search & filters</button></div>}
@@ -182,8 +206,8 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
           {!(mode === 'history' && !selected.length) && mapPositions.length === 0 && (mode === 'situation' || !tracks.some(t => t.points.length)) && <div className="map-empty"><h3>No observations to show</h3><p>Try a later date, a wider history range, or a different filter.</p></div>}
         </div>
         <div className="observation-options"><label>Last observation within <select aria-label="Maximum observation age" value={filters.maxAge ?? 'all'} onChange={e => setFilters(f => ({ ...f, maxAge: e.target.value === 'all' ? null : Number(e.target.value) }))}><option value="0">Selected day only</option><option value="7">7 days</option><option value="14">14 days</option><option value="30">30 days</option><option value="all">Any time before date</option></select></label><label className="check-label"><input type="checkbox" checked={filters.includeAlternates} onChange={e => setFilters(f => ({ ...f, includeAlternates: e.target.checked }))}/> Alternate claims</label><button className="text-button" onClick={() => setShowHelp(true)}><Icon name="info" size={14}/> Reading this map</button></div>
-        {selected.length > 0 && <div className="selection-tray"><span className="eyebrow">HISTORY SET</span><div className="selection-chips">{selected.map((id, i) => <button key={id} title={`Remove ${unitMap.get(id)?.unit_name}`} onClick={() => toggleUnit(id)} style={{ '--track-color': historyColors[i % historyColors.length] } as React.CSSProperties}><i/>{unitMap.get(id)?.unit_name ?? id}<Icon name="close" size={11}/></button>)}</div><button className="text-button clear-selection" onClick={() => setSelected([])}>Clear</button></div>}
-        <section className="time-panel" aria-label="Time controls"><div className="time-controls"><button className="icon-button" title="Previous observation date" aria-label="Previous observation date" disabled={!events.some(d => d < date)} onClick={() => stepEvent(-1)}><Icon name="previous"/></button><button className="play-button" aria-label={playing ? 'Pause playback' : 'Play timeline'} onClick={() => { if (!playing && date >= sliderEnd) setDate(sliderStart); setFocusedId(''); setPlaying(p => !p); }}><Icon name={playing ? 'pause' : 'play'}/></button><button className="icon-button" title="Next observation date" aria-label="Next observation date" disabled={!events.some(d => d > date)} onClick={() => stepEvent(1)}><Icon name="next"/></button><select className="speed-select" aria-label="Playback speed" value={speed} onChange={e => setSpeed(Number(e.target.value))}><option value="1">1 day/s</option><option value="2">2 days/s</option><option value="5">5 days/s</option><option value="10">10 days/s</option></select><div className="current-date"><label htmlFor="selected-date">SELECTED DATE</label><DateField id="selected-date" label="Selected date" value={date} min={sliderStart} max={sliderEnd} onCommit={changeDate}/></div><div className="day-steppers"><button className="icon-button" aria-label="Previous day" disabled={date <= sliderStart} onClick={() => changeDate(isoDay(dayNumber(date) - 1))}>−</button><button className="icon-button" aria-label="Next day" disabled={date >= sliderEnd} onClick={() => changeDate(isoDay(dayNumber(date) + 1))}>+</button></div></div><div className="slider-track"><input type="range" aria-label="Situation date slider" aria-valuetext={formatDate(date)} min={dayNumber(sliderStart)} max={dayNumber(sliderEnd)} value={dayNumber(date)} style={{ '--progress': `${progress}%` } as React.CSSProperties} onChange={e => changeDate(isoDay(Number(e.target.value)))}/><div className="slider-labels"><span>{formatDate(sliderStart)}</span><span>{daysBetween(sliderStart, sliderEnd) + 1} DAYS OF RECORD</span><span>{formatDate(sliderEnd)}</span></div></div></section>
+        {selected.length > 0 && <div className="selection-tray"><span className="eyebrow">HISTORY SET</span><div className="selection-chips">{selected.map((id, i) => <button key={id} title={`Remove ${unitMap.get(id)?.unit_name}`} onClick={() => toggleUnit(id)} style={{ '--track-color': historyColors[i % historyColors.length] } as CSSProperties}><i/>{unitMap.get(id)?.unit_name ?? id}<Icon name="close" size={11}/></button>)}</div><button className="text-button clear-selection" onClick={() => setSelected([])}>Clear</button></div>}
+        <section className="time-panel" aria-label="Time controls"><div className="time-controls"><button className="icon-button" title="Previous observation date" aria-label="Previous observation date" disabled={!events.some(d => d < date)} onClick={() => stepEvent(-1)}><Icon name="previous"/></button><button className="play-button" aria-label={playing ? 'Pause playback' : 'Play timeline'} onClick={() => { if (!playing && date >= sliderEnd) setDate(sliderStart); setFocusedId(''); setPlaying(p => !p); }}><Icon name={playing ? 'pause' : 'play'}/></button><button className="icon-button" title="Next observation date" aria-label="Next observation date" disabled={!events.some(d => d > date)} onClick={() => stepEvent(1)}><Icon name="next"/></button><select className="speed-select" aria-label="Playback speed" value={speed} onChange={e => setSpeed(Number(e.target.value))}><option value="1">1 day/s</option><option value="2">2 days/s</option><option value="5">5 days/s</option><option value="10">10 days/s</option></select><div className="current-date"><label htmlFor="selected-date">SELECTED DATE</label><DateField id="selected-date" label="Selected date" value={date} min={sliderStart} max={sliderEnd} onCommit={changeDate}/></div><div className="day-steppers"><button className="icon-button" aria-label="Previous day" disabled={date <= sliderStart} onClick={() => changeDate(isoDay(dayNumber(date) - 1))}>−</button><button className="icon-button" aria-label="Next day" disabled={date >= sliderEnd} onClick={() => changeDate(isoDay(dayNumber(date) + 1))}>+</button></div></div><div className="slider-track"><input type="range" aria-label="Situation date slider" aria-valuetext={formatDate(date)} min={dayNumber(sliderStart)} max={dayNumber(sliderEnd)} value={dayNumber(date)} style={{ '--progress': `${progress}%` } as CSSProperties} onChange={e => changeDate(isoDay(Number(e.target.value)))}/><div className="slider-labels"><span>{formatDate(sliderStart)}</span><span>{daysBetween(sliderStart, sliderEnd) + 1} DAYS OF RECORD</span><span>{formatDate(sliderEnd)}</span></div></div></section>
       </main>
 
       {detailsOpen && <aside className="detail-panel"><div className="detail-heading"><span className="eyebrow">FORMATION RECORD</span><button className="icon-button" aria-label="Close formation details" onClick={() => setDetailsOpen(false)}><Icon name="close" size={17}/></button></div>

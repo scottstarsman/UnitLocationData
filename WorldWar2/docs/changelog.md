@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## confidence-corroborated: confidence raised where two independent source families agree (3 November 2026)
+
+Approved by Scott on 3 November 2026.
+
+- **Rule** documented in `docs/methodology.md` (confidence rubric, "Corroboration rule"): a row that gains an agreeing reference from a second `source_family` (geocoders excluded) is raised to 0.7; not for same-family pairs, conflict groups or rows named in an open map-conflict roadmap point.
+- **Raised:** `C2181` (2d Panzer Division, Ortheuville, 20 Dec 1944) and `C2182` (116th Panzer Division, Samrée, 20 Dec 1944): confidence old value 0.5, new value 0.7, reason: FMS B-235 (`R772`) and Cole (`R388`, `R386`) agree.
+- **Held, not changed:** `C1903` (28th Division, Neufchâteau; `R724` CMH Combat Chronicle and Cole are both `us_army_cmh`, one family); `C4787` (map row, roadmap point 233) and `C7136` (roadmap point 224), until Scott decides those map-conflict points.
+- **Other rows with two or more families** (about 290 below 0.7) were given their confidence by other rules (inferred dates, representative points, CP-gap bands, compilation caps) and are not changed.
+- **Semantic scenario 116.** Scenarios 44 (FMS B-235 rows at 0.5 or 0.3 only) and 114 (corroborated rows' confidence) updated to expect 0.7 on `C2181` and `C2182` (old expectation 0.5, new 0.7, reason: this rule).
+
 ## cole-ardennes: 79th Volksgrenadier Division promoted from placeholder, Cole positions (3 November 2026)
 
 Approved by Scott on 3 November 2026. Source: Cole, *The Ardennes*, ch. 21 (`R391`). Reading notes private.

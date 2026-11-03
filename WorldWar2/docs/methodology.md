@@ -121,6 +121,8 @@ Special cases: headquarters rows are 1 (exact), 5 (named town or village, approx
 | 0.5 | exact location with one secondary source (Wikipedia, local-history page), or approximate location with one source family |
 | 0.3 | position inferred or a representative point (HQ not tied to the date, unverified beach, front-line representative point), or the date itself is approximate |
 
+**Corroboration rule (3 November 2026, approved by Scott).** When a second reference from a different `source_family` (geocoders excluded) is added to an existing row and agrees on unit, date and place, the row is raised to 0.7 if it was lower, with old value, new value and reason in `notes`. It does not apply when both references are in the same family (for example a CMH Combat Chronicle and a CMH Green Book), to rows in a conflict group, or to rows named in an open map-conflict point in `docs/roadmap.md` until Scott decides that point. Rows that already had two families when built keep the confidence they were given by the other rules (for example the 0.5 cap on ww2byday compilations); the rule is not applied retroactively to them.
+
 Caps: the preferred claim of a conflict group is at most 0.7; alternate and disputed claims at most 0.5. Confidence measures the claim's date/place support, not the importance of the unit. Only these four levels are used, so scores are comparable.
 
 ## Conflict policy

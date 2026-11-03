@@ -11035,6 +11035,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.1095,
+     48.6975
+    ]
+   },
+   "properties": {
+    "claim_id": "C7125",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-25",
+    "place_id": "PL3307",
+    "location_name": "Almenêches, Orne (wood 4 km NE of Almenêches (division command post at the start of the march))",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "9th SS Panzer Division command post in a wood NE of Almenêches",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R792;R002",
+    "source_locator": "R792: images 295-296 (NAID 267509462), 9. SS-Pz.Div. Abt. Ia march order of 25 June 1944 for the night 25/26 June, item 11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.5247,
      49.1669
     ]
@@ -18736,6 +18777,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 316, 317"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5834,
+     49.0117
+    ]
+   },
+   "properties": {
+    "claim_id": "C7126",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-10",
+    "place_id": "PL3308",
+    "location_name": "Bonnemaison, Calvados (Ht. Bosq, 1 km S of Bonnemaison (division command post from 12.00 hrs))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "9th SS Panzer Division command post south of Bonnemaison",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R792;R002",
+    "source_locator": "R792: images 299-300 (NAID 267509462), 9. SS-Pz.Div. Abt. Ia Nr. 610/44 g.Kdos, Divisionsbefehl Nr. 11 of 9 July 1944, item 8"
    }
   },
   {

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-354 roll 129 (2nd SS Panzer / 17th SS Panzergrenadier regimental files; 3 November 2026)
+
+Roll 129 (NAID 267486794, 675 frames) read in the German original on 2-3 November 2026 by OCR and triage, key frames read in full. Reading notes private.
+
+- **New reference** `R800`.
+- **New claims** `C7139` to `C7141` (each note carries old value none, new value and reason): 2nd SS Panzer Division (SS-Panzer-Regiment 2) at Figeac on 8 June 1944 on the march north (0.5); 17th SS Panzergrenadier Division (II./SS-Panzergrenadier-Regiment 37) at Montigny-lès-Metz on 6 September and at Augny against the Dornot Moselle crossing on 8 September 1944 (0.5). Parent blank on all 3 (old value none, new value blank, reason: no command relation from a single source; the 462nd Division subordination is in the notes only).
+- **New places** `PL3316` Figeac, `PL3317` Montigny-lès-Metz (OpenStreetMap Nominatim, searched 3 November 2026); `PL1662` Augny reused.
+- **No existing row changed; no conflicts.**
+- **Semantic scenario 106.**
+
 ## nara-microfilm: NARA T-315 roll 828 (26th Volksgrenadier Division; 2 November 2026)
 
 Roll 828 (NAID 346295326, 566 pages) read in the German original on 2 November 2026, all pages by OCR; the Bastogne report (pages 437-441) read in full and image-checked. Most of the roll is the 26th Panzer Division in Italy (1943-44), outside the theatre. Reading notes private.

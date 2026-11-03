@@ -3245,6 +3245,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.0324,
+     44.6092
+    ]
+   },
+   "properties": {
+    "claim_id": "C7139",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-08",
+    "place_id": "PL3316",
+    "location_name": "Figeac, Lot (SS-Panzer-Regiment 2 staff and I. Abteilung billeted at Figeac on the march north; next day ordered to Tulle)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Das Reich panzer regiment halts at Figeac",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R800;R002",
+    "source_locator": "R800: frame 74 (NAID 267486794), SS-Panzer-Regiment 2 order of 8 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0074,
      49.1788
     ]
@@ -61793,6 +61834,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.153,
+     49.1
+    ]
+   },
+   "properties": {
+    "claim_id": "C7140",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-06",
+    "place_id": "PL3317",
+    "location_name": "Montigny-lès-Metz, Moselle (II./SS-Panzergrenadier-Regiment 37 moves to Montigny - Flanville; command post in Montigny town hall)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "17th SS Panzergrenadier battalion at Montigny near Metz",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R800;R002",
+    "source_locator": "R800: frame 365 (NAID 267486794), II./SS-PGR 37 daily report of 7 September 1944 for 6 September"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -62278,6 +62360,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R784;R002",
     "source_locator": "R784: image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1219,
+     49.0594
+    ]
+   },
+   "properties": {
+    "claim_id": "C7141",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-08",
+    "place_id": "PL1662",
+    "location_name": "Augny, Moselle (II./SS-Panzergrenadier-Regiment 37 command post at the château east of Augny; counterattacks at Corny - Jouy against the Moselle crossing at Dornot; battalion under the 462nd Division)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "17th SS Panzergrenadier battalion counters the Dornot crossing",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R800;R002",
+    "source_locator": "R800: frame 373 (NAID 267486794), II./SS-PGR 37 daily report of 8 September 1944"
    }
   },
   {

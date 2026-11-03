@@ -32938,7 +32938,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -65998,6 +65998,46 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0324,
+     44.6092
+    ]
+   },
+   "properties": {
+    "place_id": "PL3316",
+    "name": "Figeac, Lot",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Occitanie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.153,
+     49.1
+    ]
+   },
+   "properties": {
+    "place_id": "PL3317",
+    "name": "Montigny-lès-Metz, Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
     "claims_count": 1
    }
   }

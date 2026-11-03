@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## confidence-corroborated: C7136 raised after roadmap point 224 closed (3 November 2026)
+
+Approved by Scott on 3 November 2026.
+
+- **Raised:** `C7136` (26th Volksgrenadier Division, Longvilly, 19 Dec 1944): confidence old value 0.3, new value 0.7, reason: NARA T-315 roll 828 (`R799`, captured German records) and Cole (`R384`, `us_army_cmh`) agree, and roadmap point 224 is closed with this row preferred in `G034`.
+- **Semantic scenarios 114 and 116** now expect 0.7 on `C7136` (old expectation 0.3, new 0.7, reason: this raise).
+
 ## confidence-corroborated: Cole map-row conflicts resolved as conflict groups (3 November 2026)
 
 Approved by Scott on 3 November 2026. Nothing deleted.

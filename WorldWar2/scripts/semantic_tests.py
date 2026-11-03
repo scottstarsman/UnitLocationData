@@ -2230,7 +2230,7 @@ def scenario_114_cole_ardennes_corroborations():
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     want = {'C4787': ['R781', 'R384', 'R002'], 'C1903': ['R724', 'R385', 'R002'], 'C7136': ['R799', 'R384', 'R002'], 'C2181': ['R772', 'R388', 'R002'], 'C2182': ['R772', 'R388', 'R386', 'R002']}
     expect(s + ': Cole appended to the reference list of each corroborated row', {k: claims[k]['reference_ids'].split(';') for k in want}, want)
-    expect(s + ': corroborated rows keep their place; confidence as set by the corroboration rule', {k: (claims[k]['place_id'], claims[k]['confidence']) for k in want}, {'C4787': ('PL2444', '0.5'), 'C1903': ('PL0248', '0.5'), 'C7136': ('PL3315', '0.3'), 'C2181': ('PL1068', '0.7'), 'C2182': ('PL1069', '0.7')})  # C2181 and C2182 raised to 0.7 by the corroboration rule (scenario 116)
+    expect(s + ': corroborated rows keep their place; confidence as set by the corroboration rule', {k: (claims[k]['place_id'], claims[k]['confidence']) for k in want}, {'C4787': ('PL2444', '0.5'), 'C1903': ('PL0248', '0.5'), 'C7136': ('PL3315', '0.7'), 'C2181': ('PL1068', '0.7'), 'C2182': ('PL1069', '0.7')})  # C2181 and C2182 raised to 0.7 by the corroboration rule (scenario 116)
 
 def scenario_115_cole_ardennes_79th_vgd():
     """Cole, The Ardennes: GER-VG-079D promoted from placeholder with its first claims."""
@@ -2245,7 +2245,7 @@ def scenario_116_confidence_corroborated():
     s = 'scenario 116'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     expect(s + ': raised rows', {k: claims[k]['confidence'] for k in ('C2181', 'C2182')}, {'C2181': '0.7', 'C2182': '0.7'})
-    expect(s + ': held rows (same family or open map-conflict point)', {k: claims[k]['confidence'] for k in ('C1903', 'C4787', 'C7136')}, {'C1903': '0.5', 'C4787': '0.5', 'C7136': '0.3'})
+    expect(s + ': held rows (same family or open map-conflict point)', {k: claims[k]['confidence'] for k in ('C1903', 'C4787', 'C7136')}, {'C1903': '0.5', 'C4787': '0.5', 'C7136': '0.7'})  # C7136 raised after roadmap 224 closed (Scott, 3 Nov 2026)
 
 def scenario_117_map_row_conflicts():
     """Cole map-row conflicts: text rows preferred, 12th Army Group map rows alternate (G034-G049)."""

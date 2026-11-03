@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapters XII-XIV (23 August - 1 October 1944) (3 November 2026)
+
+Third chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 279-356 read (the Seine, the pursuit to the Somme and Antwerp, Arnhem and the strategy debate, the Channel ports). Nothing deleted.
+
+- **Corroborations:** Stacey appended to `reference_ids`, `source` and `source_locator` on 14 rows (old and new values and the page recorded in each row's `notes`).
+- **Confidence raised by the corroboration rule**, old 0.5, new 0.7: `C0229` (2nd U.S. Armored at Le Neubourg, 25 Aug), `C0886` (9th SS Panzer sent to the Arnhem area, 3 Sep).
+- **Appended without a change of confidence:** `C1450`, `C1453`, `C1457`, `C1458`, `C1464`, `C1465`, `C1466`, `C0825` (already 0.7); `C1612`, `C0823`, `C0298` (already two or more families); `C1808` (0.3, not 0.5).
+- **New claims** `C7255`-`C7314` (60; 22 German, 38 Allied), blank parents: German Seine rearguard (331st Division west of Bourgtheroulde; 86th and 81st Corps lines; 9th SS, 10th SS, 21st Panzer, 116th Panzer, 2nd SS Panzer remnants; 17th Luftwaffe Field Division at Igoville; 74th Corps in the Foret de la Londe; 331st last across the Seine), 67th Corps Somme line, Fifth Panzer Army HQ overrun at Saleux (31 Aug), 719th Division leaving Dordrecht, 347th Division at Cappellen, 89th Corps Scheldt ferrying, 245th/711th Division boundary at Moerbrugge, Le Havre and Boulogne garrison elements (226th, 64th); Canadian and British pursuit (Bernay, Honfleur, Bourgtheroulde, Elbeuf, Foret de Brotonne, Caudebec, Buchy, St. Saens, Totes, Lillebonne, Pont Remy, Abbeville, St. Valery-en-Caux, Le Havre outskirts, Montreuil, Boulogne, St. Omer, Moerbrugge, Aeltre, Bourbourg, Ostend, Bruges, Bray Dunes, Bergues, Mardick, Cassel, Ghent, Calais, Cape Gris Nez); Market Garden (101st at Eindhoven, Guards link-up, 82nd at Grave, 1st Airborne at the Arnhem bridge, 43rd Division from Nijmegen).
+- **New conflict group** `G050` (roadmap point 239): II SS Panzer Corps HQ order of 5 September 1944. `C0853` (R608, Arnhem) preferred; `C7288` (Stacey p. 313 n., Eindhoven) alternate at 0.3.
+- **Places** `PL3371`-`PL3394` (OpenStreetMap Nominatim). Placeholders `GER-INF-331D` and `GER-LFD-017D` promoted to active (first claims).
+- **Semantic scenario 120.**
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapters VIII-XI (24 July - 23 August 1944) (3 November 2026)
 
 Second chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 188-278 and Maps 3-5 and Sketches 12-22 read. Nothing deleted.

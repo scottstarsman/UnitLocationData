@@ -3494,3 +3494,31 @@ FMS B-093 (Eugen Meindl, written at Allendorf, 31 March 1947; German original wi
 - **Semantic tests:** scenario 131 added; scenario 129 expectation for `C5809` changed from ungrouped to G058; the Stacey scenarios (118-122) now require the new rows to cite Stacey first (old: reference_ids exactly R668;R002), because FMS corroborations are appended to some of them.
 - Reading notes (private, Drive only): `FMS_B-093_notes.md`.
 
+## fms-fold3-netherlands: FMS B-717, Student, First Parachute Army and Army Group H (3 November 2026)
+
+FMS B-717 (Kurt Student, written in hospital at Rotenburg/Hannover, 20 November 1947, as a supplement to Geyer's MS B-147; English translation and German original; NARA M1035 fiche 0690, 47 images) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R807` (`fms_german_manuscript`). Student writes from memory and gives few dates. Of 14 checkable facts, 11 agree with the dataset. The differences:
+- the 59th Division at Boxtel against `C0890` (Tilburg, in transit), about 20 km apart;
+- the 3rd Parachute Division re-raised at Hengelo-Coevorden against Meindl's Wahn (`C7690`);
+- the Army Group H handover on 31 January against 28-29 January (`C1128`, `C7443`; roadmap 252).
+
+- **New claims:** `C7722`-`C7747` (26: 22 German, 4 Allied; blank parents; 0.5 for dated command posts in the text, otherwise 0.3). They cover:
+  - Army Group B at Verviers (5 Sep), Terborg (17 Sep) and Krefeld (about 25 Sep).
+  - The LXXXVIII Corps command post at Moergestel (5 Sep), and Chill given the Beringen sector (6 Sep).
+  - The First Parachute Army command posts at Tilburg, Vught, Terborg and Dinxperlo.
+  - The 6th Parachute Regiment at Tilburg, Balen and Veghel, and the Guards and 11th Armoured Divisions at Beverloo.
+  - Erdmann's division detraining at Helmond, the 176th at Maastricht, and the 59th at Boxtel.
+  - The 363rd Volksgrenadier Division attack via Kesteren, with the 101st Airborne opposite.
+  - The XLVII Panzer Corps and 15th Panzergrenadier attack at Meijel, with the US 7th Armored (identification uncertain).
+  - Army Group H at Hilversum (end of October), and the 2nd, 3rd and 5th Parachute Divisions re-raising.
+- **Dates from other rows:** the Meijel rows and the Veghel row take their dates from `C2161` and `C1768`; this is stated in each row's notes.
+- **New places:** `PL3544` Balen, `PL3545` Terborg, `PL3546` Dinxperlo, `PL3547` Kesteren, `PL3548` Hengelo (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-717 is appended on 13 rows. The old and new values are in each row's notes.
+  - `C0854`: confidence old value 0.5, new value 0.7. Reason: corroboration rule. The CMH row and an FMS manuscript agree on the II SS Panzer Corps at Arnhem on 17 September.
+  - `C0825`, `C0827`, `C1767`, `C1768`: unchanged, already 0.7 or more.
+  - `C0856`: unchanged, same family as B-093.
+  - `C0826`, `C0908`, `C1037`, `C2161`, `C7131`, `C7133`, `C7438`: unchanged. Agreement is undated or approximate.
+- **Not added:** Student's "51st Highland Division at Gheel" (mid-September). It conflicts with `C1460` (the 51st at Le Havre on 11 September) and is kept in the reading notes only.
+- **Placeholder units promoted** (scripts/promote_placeholders.py): `GER-FJR-006` and `GER-VG-363D`, record_status old value placeholder, new value active (they now have claims).
+- **Roadmap:** 240 updated (still open, new recommendation); 252 and 253 opened (253: speed warnings between the new Meijel rows and stale 12th Army Group map rows).
+- **Semantic tests:** scenario 132.
+- Reading notes (private, Drive only): `FMS_B-717_notes.md`.

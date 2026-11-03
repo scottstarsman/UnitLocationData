@@ -3998,7 +3998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -7178,7 +7178,7 @@
     "precision_km": 10,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -7558,7 +7558,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "North Brabant",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -8278,7 +8278,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 15
+    "claims_count": 16
    }
   },
   {
@@ -10678,7 +10678,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 19
+    "claims_count": 21
    }
   },
   {
@@ -12958,7 +12958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 13
+    "claims_count": 15
    }
   },
   {
@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -16138,7 +16138,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Limburg",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -16198,7 +16198,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -16238,7 +16238,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Limburg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -20878,7 +20878,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -34878,7 +34878,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -44138,7 +44138,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 4
    }
   },
   {
@@ -68558,7 +68558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Holland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -70559,6 +70559,106 @@
     "country": "DE",
     "region": "North Rhine-Westphalia",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1697,
+     51.1708
+    ]
+   },
+   "properties": {
+    "place_id": "PL3544",
+    "name": "Balen, Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3615,
+     51.9212
+    ]
+   },
+   "properties": {
+    "place_id": "PL3545",
+    "name": "Terborg (Oude IJsselstreek), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.488,
+     51.8638
+    ]
+   },
+   "properties": {
+    "place_id": "PL3546",
+    "name": "Dinxperlo (Aalten), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5832,
+     51.9316
+    ]
+   },
+   "properties": {
+    "place_id": "PL3547",
+    "name": "Kesteren (Neder-Betuwe), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7924,
+     52.2659
+    ]
+   },
+   "properties": {
+    "place_id": "PL3548",
+    "name": "Hengelo, Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
    }
   }
  ]

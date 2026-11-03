@@ -271549,6 +271549,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7830",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-20",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps under Twenty-Fifth Army holds Tiel-Opheusden-Lek-Arnhem-Emmerich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.1, English p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6228,
      49.681
     ]
@@ -273059,6 +273100,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 538"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7831",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "346th Infantry Division holds either side of Arnhem from Renkum to Emmerich",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8883,
+     52.0463
+    ]
+   },
+   "properties": {
+    "claim_id": "C7832",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-361D",
+    "unit_name": "361st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL3511",
+    "location_name": "Deelen (Arnhem), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "361st Division (less one regiment) held on the Deelen heath against airlandings",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.1, Anlage 1"
    }
   },
   {
@@ -277617,6 +277740,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2576,
+     51.9029
+    ]
+   },
+   "properties": {
+    "claim_id": "C7833",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL3567",
+    "location_name": "Zeddam (Montferland), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps ordered back behind the IJssel and the Twente Canal from the line Babberich-Zeddam-Terborg-Varsseveld",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.2, English p.2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1948,
+     52.1397
+    ]
+   },
+   "properties": {
+    "claim_id": "C7834",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-361D",
+    "unit_name": "361st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL0700",
+    "location_name": "Zutphen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "361st Division put on the west bank of the IJssel from Doesburg to Zutphen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.2, English p.2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9167,
      50.2667
     ]
@@ -277979,6 +278184,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 542"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3437,
+     52.1715
+    ]
+   },
+   "properties": {
+    "claim_id": "C7835",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-31",
+    "place_id": "PL3484",
+    "location_name": "Lochem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "6th Parachute Division put in behind the Twente Canal between Zutphen and Hengelo",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.2, English p.2"
    }
   },
   {
@@ -279166,8 +279412,8 @@
     "location_date": "1945-04-02",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 546"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: p. 546; R810: German p.2-3, English pp.2-3"
    }
   },
   {
@@ -283152,6 +283398,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2566,
+     52.5118
+    ]
+   },
+   "properties": {
+    "claim_id": "C7836",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-03",
+    "place_id": "PL3568",
+    "location_name": "Dalfsen, Overijssel",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps under Army Group Student; command post moved to Dalfsen east of Zwolle",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.2, English p.2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7328,
      50.8281
     ]
@@ -283309,6 +283596,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2979,
+     52.2075
+    ]
+   },
+   "properties": {
+    "claim_id": "C7837",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-04",
+    "place_id": "PL3569",
+    "location_name": "Harfsen (Lochem), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division contains a small bridgehead at Harfsen; attacks at Lochem and south of Goor repelled",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.3, English p.3"
    }
   },
   {
@@ -283635,8 +283963,8 @@
     "location_date": "1945-04-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 550"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: p. 550; R810: German p.2, English p.2"
    }
   },
   {
@@ -283924,6 +284252,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 552"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.495,
+     52.2347
+    ]
+   },
+   "properties": {
+    "claim_id": "C7838",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL3570",
+    "location_name": "Markelo (Hof van Twente), Overijssel",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps front pulled back to north of Joppe-Markelo-Goor; again under Twenty-Fifth Army",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.4, English p.4"
    }
   },
   {
@@ -288646,6 +289015,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4216,
+     52.282
+    ]
+   },
+   "properties": {
+    "claim_id": "C7839",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL3487",
+    "location_name": "Holten, Overijssel",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps fights on the line Deventer-Holten-south of Hellendoorn",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.4, English p.4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -289662,8 +290072,8 @@
     "location_date": "1945-04-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 570, 573"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: pp. 570, 573; R810: German p.5, English p.5"
    }
   },
   {
@@ -290756,7 +291166,7 @@
     "location_name": "Zwolle, Overijssel (7th Brigade)",
     "location_represents": "objective",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "capture",
     "current_activity": "7th Brigade occupies Zwolle",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -290769,8 +291179,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 556"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: p. 556; R810: German p.5, English p.5"
    }
   },
   {
@@ -290935,6 +291345,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0944,
+     52.509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7840",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL3489",
+    "location_name": "Zwolle, Overijssel",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps gives up Zwolle and goes back behind the IJssel",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.5, English p.5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0467,
+     52.2336
+    ]
+   },
+   "properties": {
+    "claim_id": "C7841",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-361D",
+    "unit_name": "361st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL3509",
+    "location_name": "Teuge (Voorst), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "361st Division mostly behind the Apeldoorn Canal, left wing between Teuge and Terwolde",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.5, English p.5"
    }
   },
   {
@@ -296742,7 +297234,7 @@
     "location_name": "Voorthuizen (Barneveld), Gelderland",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "withdrawal",
     "current_activity": "elements try to escape westward through Voorthuizen and are beaten back",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -296755,8 +297247,8 @@
     "location_date": "1945-04-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 578"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: p. 578; R810: German p.5-6, English pp.5-6"
    }
   },
   {
@@ -296798,6 +297290,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 580"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5783,
+     52.2477
+    ]
+   },
+   "properties": {
+    "claim_id": "C7842",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL3571",
+    "location_name": "Putten, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved to Putten as the corps breaks off westward",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.6, English p.6"
    }
   },
   {
@@ -297534,8 +298067,8 @@
     "location_date": "1945-04-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 578-579"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: pp. 578-579; R810: German p.6, English p.6"
    }
   },
   {
@@ -297659,6 +298192,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 581"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6454,
+     52.1715
+    ]
+   },
+   "properties": {
+    "claim_id": "C7843",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-18",
+    "place_id": "PL0720",
+    "location_name": "Barneveld, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Parts of the 6th Parachute Division attack via Barneveld toward Lunteren to reopen the Apeldoorn-Amersfoort road",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.6, English p.6"
    }
   },
   {
@@ -297905,6 +298479,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 601"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5783,
+     52.2477
+    ]
+   },
+   "properties": {
+    "claim_id": "C7844",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-19",
+    "place_id": "PL3571",
+    "location_name": "Putten, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Regiment 18 of the 6th Parachute Division and artillery repulse the 5th Canadian Armoured Division thrust on Putten",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.6-7, English pp.6-7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5783,
+     52.2477
+    ]
+   },
+   "properties": {
+    "claim_id": "C7845",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-005D",
+    "unit_name": "5th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-19",
+    "place_id": "PL3571",
+    "location_name": "Putten, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "5th Canadian Armoured Division tanks thrust from east of Barneveld toward Putten (German account)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.6, English p.6"
    }
   },
   {
@@ -298354,8 +299010,8 @@
     "location_date": "1945-04-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: Map 13 (The Western Netherlands, 1st Canadian Corps operations, 2-25 April 1945)"
+    "reference_ids": "R668;R810;R002",
+    "source_locator": "R668: Map 13 (The Western Netherlands, 1st Canadian Corps operations, 2-25 April 1945); R810: German p.7, English p.7"
    }
   },
   {
@@ -298397,6 +299053,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Map 13 (The Western Netherlands, 1st Canadian Corps operations, 2-25 April 1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6376,
+     52.3401
+    ]
+   },
+   "properties": {
+    "claim_id": "C7846",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-361D",
+    "unit_name": "361st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL3514",
+    "location_name": "Harderwijk, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Foot elements of the 361st Division shipped from Harderwijk across the IJsselmeer to Amsterdam",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.7, English p.7"
    }
   },
   {
@@ -299668,6 +300365,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 601"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4134,
+     52.0805
+    ]
+   },
+   "properties": {
+    "claim_id": "C7847",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-22",
+    "place_id": "PL3572",
+    "location_name": "Woudenberg, Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division holds the Grebbe line from Woudenberg to Soest",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4089,
+     52.1638
+    ]
+   },
+   "properties": {
+    "claim_id": "C7848",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL3537",
+    "location_name": "Amersfoort, Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps holds the Grebbe line from Woudenberg via Amersfoort and the Eem to the IJsselmeer",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.7, English p.7"
    }
   },
   {

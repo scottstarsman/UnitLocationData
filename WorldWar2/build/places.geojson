@@ -10898,7 +10898,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 25
+    "claims_count": 27
    }
   },
   {
@@ -13818,7 +13818,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -14218,7 +14218,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69378,7 +69378,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69438,7 +69438,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Overijssel",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69478,7 +69478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Overijssel",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69878,7 +69878,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69918,7 +69918,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69978,7 +69978,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -70438,7 +70438,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -71018,6 +71018,126 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2576,
+     51.9029
+    ]
+   },
+   "properties": {
+    "place_id": "PL3567",
+    "name": "Zeddam (Montferland), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2566,
+     52.5118
+    ]
+   },
+   "properties": {
+    "place_id": "PL3568",
+    "name": "Dalfsen, Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2979,
+     52.2075
+    ]
+   },
+   "properties": {
+    "place_id": "PL3569",
+    "name": "Harfsen (Lochem), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.495,
+     52.2347
+    ]
+   },
+   "properties": {
+    "place_id": "PL3570",
+    "name": "Markelo (Hof van Twente), Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5783,
+     52.2477
+    ]
+   },
+   "properties": {
+    "place_id": "PL3571",
+    "name": "Putten, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4134,
+     52.0805
+    ]
+   },
+   "properties": {
+    "place_id": "PL3572",
+    "name": "Woudenberg, Utrecht",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Utrecht",
     "claims_count": 1
    }
   }

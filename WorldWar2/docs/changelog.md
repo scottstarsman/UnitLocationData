@@ -3593,3 +3593,16 @@ FMS B-774 (Heinz von Prittwitz und Gaffron, corps operations officer, Steimbel, 
 - **Corroborations:** B-774 appended on 5 rows (reference_ids, source and source_locator; old and new values in each row's notes). No raises: `C2168`, `C2174`, `C2177` are the same family (FMS B-475); `C7352` (Stacey) agrees only on an undated sector; `C7790` is in conflict group G059 and held.
 - **Roadmap:** 240 updated (recommend closure, both rows kept as phases); 257 and 258 opened.
 - **Tests:** scenario 135 added.
+
+## fms-fold3-netherlands: FMS B-762, Prittwitz und Gaffron, LXXXVIII Corps in Holland (3 November 2026)
+
+FMS B-762 (Heinz von Prittwitz und Gaffron, Steimbel, 17 December 1947; comment by Brandenberger, 9 March 1948; NARA M1035 fiche 0750G, 33 images, German with the English translation and two sketches) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R810` (`fms_german_manuscript`). It covers LXXXVIII Corps from 22 March to the capitulation. It agrees with Stacey on Zwolle (14 April) and the 6th Parachute Division breaking west on 17 April; the one difference is the capitulation date (10 May, against 5 and 7 May; roadmap 259).
+
+- **New claims:** `C7830`-`C7848` (19: 18 German, 1 Allied; blank parents): the corps sector about 20 March; the 346th and 361st Divisions on 24 March (sketch, 0.3); the withdrawal of 30 March behind the IJssel and Twente Canal; the 6th Parachute Division under the corps; the command post at Dalfsen under Army Group Student (3 April); Harfsen (4 April); the lines of 6 and 10 April; Zwolle given up (14 April); the 361st Division on the Apeldoorn Canal; the command post at Putten; the attack via Barneveld (18 April) and the defence of Putten (19 April, with the 5th Canadian Armoured Division row from the German account); the 361st Division shipped from Harderwijk (20 April); the Grebbe line (about 22 April).
+- **New places:** `PL3567` Zeddam, `PL3568` Dalfsen, `PL3569` Harfsen, `PL3570` Markelo, `PL3571` Putten, `PL3572` Woudenberg (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-762 appended on 7 rows (old and new values in each row's notes).
+  - `C7587` (3rd Canadian Division occupies Zwolle, 14 April): confidence old value 0.5, new value 0.7. Reason: corroboration rule; Stacey and B-762 agree on date and place.
+  - `C7631` (6th Parachute Division escapes west through Voorthuizen, 17 April): confidence old value 0.5, new value 0.7. Reason: corroboration rule; Stacey and B-762 agree on date and place.
+  - `C7579`, `C7580`, `C7621`, `C7632`, `C7679`: unchanged; agreement approximate in date or place, or map-only support (`C7679`).
+- **Roadmap:** 259 opened.
+- **Tests:** scenario 136 added.

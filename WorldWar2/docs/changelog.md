@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XX end (re-read) and chapter XXI (The 1st Corps in the western Netherlands, 1-22 April 1945) (3 November 2026)
+
+Ninth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 554-562 re-read in full (only skimmed in the previous commit) and pages 565-587 read. Nothing deleted, no confidence changed on existing rows.
+
+- 46 new claims `C7593`-`C7638` (9 German, 37 Allied; sector rows at 0.3; blank parents; places `PL3495`-`PL3516`). Chapter XX end: Beilen, the Groningen street fighting, Meppel, the Ijsselmeer causeway, Wierden, Sogel counter-attack, Borger, Friesoythe, the Kusten Canal handover, the 7th Parachute Division/marine regiment at Edewechterdamm under the 2nd Parachute Corps (held at 0.3: Stacey says the identification was revised), Blijham, the Polish relief west of the Ems, Wagenborgen, the 2nd Division and 43rd Division towards Oldenburg/Delmenhorst, the 5th Armoured relief order. Chapter XXI: the 49th Division on the island (Elst, Oosterhout, Doornenburg, Huissen), Randwijk, the 5th Armoured at Didam, the 1st Canadian Armoured Brigade and Belgians holding the island to Tiel, the German 30th Corps, Twenty-Fifth Army (Festung Holland), 346th and 361st Divisions, the Arnhem assault (Westervoort, Arnhem), Teuge, Dieren, Apeldoorn, Operation Cleanser (Deelen, Otterloo headquarters fight, Voorthuizen, Harderwijk), Velp, Ede, the Grebbe Line front, Nijkerk, the 33rd Armoured Brigade and 4th Commando Brigade under Netherlands District.
+- Not added because a row already holds the same fact and cites `R668`: the 1st Canadian Corps taking over the Nijmegen sector on 15 March, the 5th Armoured taking over the western island on 31 March (`C1403`), the Belgians at Opheusden on 18 April (`C1599`). Scenario 126.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XX (The Rhine crossing and the advance to the North Sea, March-April 1945) (3 November 2026)
 
 Eighth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 527-575 read (text; the chapter's maps not yet viewed). Nothing deleted. Most Canadian divisional moves in this chapter were already in the data from the first Canadian batches (`C1373`-`C1399`, `C1568`-`C1572`, already citing `R668`), so this commit adds the German side, brigade-level places and command changes.

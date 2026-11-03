@@ -11,16 +11,16 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Belgium | brigade | 0 | 0 | 1 | 1 | 1 | 13 |
 | Canada | army | 0 | 0 | 1 | 1 | 1 | 45 |
 | Canada | corps | 0 | 0 | 2 | 2 | 2 | 66 |
-| Canada | division | 0 | 0 | 5 | 5 | 3 | 214 |
+| Canada | division | 0 | 0 | 5 | 5 | 3 | 217 |
 | Canada | brigade | 0 | 0 | 1 | 1 | 1 | 8 |
 | Czechoslovakia | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
 | France | army | 0 | 0 | 2 | 2 | 2 | 27 |
 | France | corps | 0 | 0 | 2 | 2 | 2 | 31 |
 | France | division | 0 | 0 | 12 | 12 | 10 | 177 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 49 |
-| Germany | army | 0 | 0 | 15 | 15 | 9 | 271 |
-| Germany | corps | 17 | 0 | 28 | 45 | 41 | 518 |
-| Germany | division | 38 | 0 | 93 | 131 | 112 | 1775 |
+| Germany | army | 0 | 0 | 15 | 15 | 9 | 272 |
+| Germany | corps | 17 | 0 | 28 | 45 | 41 | 519 |
+| Germany | division | 38 | 0 | 93 | 131 | 112 | 1780 |
 | Germany | brigade | 0 | 0 | 11 | 11 | 11 | 84 |
 | Germany | regiment/battle_group | 1 | 0 | 12 | 13 | 3 | 22 |
 | Germany | battalion | 1 | 0 | 0 | 1 | 0 | 0 |
@@ -30,8 +30,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Poland | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 23 |
 | UK | army | 0 | 0 | 1 | 1 | 0 | 47 |
-| UK | corps | 0 | 0 | 5 | 5 | 1 | 179 |
-| UK | division | 0 | 0 | 16 | 16 | 7 | 598 |
+| UK | corps | 0 | 0 | 5 | 5 | 1 | 180 |
+| UK | division | 0 | 0 | 16 | 16 | 7 | 603 |
 | UK | brigade | 0 | 0 | 11 | 11 | 7 | 54 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 23 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 203 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **64** | **0** | **324** | **388** | **258** | **7232** |
+| **All** | | **64** | **0** | **324** | **388** | **258** | **7248** |
 
 ## Operations
 
@@ -49,25 +49,25 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 6217 |
-| operation | 33 | 33 | 517 |
-| battle | 20 | 20 | 417 |
+| campaign | 9 | 9 | 6220 |
+| operation | 33 | 33 | 520 |
+| battle | 20 | 20 | 427 |
 | phase | 4 | 4 | 81 |
-| **All** | **67** | **66** | **7232** |
+| **All** | **67** | **66** | **7248** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3346 places and 166 alias names for 7232 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3355 places and 166 alias names for 7248 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3242 | 7034 |
+| point | 3251 | 7050 |
 | area | 86 | 178 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1422 | 2946 |
+| France (FR) | 1431 | 2962 |
 | Germany (DE) | 1130 | 2365 |
 | Netherlands (NL) | 368 | 988 |
 | Belgium (BE) | 305 | 670 |

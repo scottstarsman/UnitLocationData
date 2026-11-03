@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapters VIII-XI (24 July - 23 August 1944) (3 November 2026)
+
+Second chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 188-278 and Maps 3-5 and Sketches 12-22 read. Nothing deleted.
+
+- **Corroborations:** Stacey appended to `reference_ids`, `source` and `source_locator` on 13 rows (old and new values and the page recorded in each row's `notes`).
+- **Confidence raised by the corroboration rule**, old 0.5, new 0.7: `C0329`, `C0330`, `C0724`, `C0726`, `C0746`, `C0747`, `C1424`, `C1610`, `C7143` (9 rows).
+- **Appended without a change of confidence:** `C1436`, `C1437`, `C0732` (already 0.7); `C0294` (already two families).
+- **New claims** `C7239`-`C7254` (16; 7 German, 9 Allied), blank parents: Panzer Group West HQ at Livarot (24 Jul, Sketch 12); 89th Division at Tilly-la-Campagne (8 Aug); 12th SS Panzer at Quesnay Wood (10 Aug); 271st Division at Grimbosq (7 Aug); 708th Division commander captured at Trun (19 Aug); II SS Panzer Corps attacking from Camembert (20 Aug); 84th Division commander Menny captured at Magny (21 Aug); 53rd Division meets the 9th Canadian Brigade at Trun (21 Aug); 49th Division takes Vimont (15 Aug); 51st Division takes Saint-Pierre-sur-Dives (16 Aug); I Corps takes Livarot (20 Aug); 7th Armoured in Lisieux (22 Aug); 6th Airborne at Pont-l'Évêque (22 Aug); 2nd Canadian Division at Vimoutiers (21 Aug) and Orbec (22 Aug); 4th Canadian Armoured at Point 195 (10 Aug).
+- **Places** `PL3362`-`PL3370` (OpenStreetMap Nominatim).
+- **Conflicts:** none new; map rows (`R781`) left as they are.
+- **Semantic scenario 119.**
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapters I-VII (to 24 July 1944) (3 November 2026)
 
 Approved by Scott on 3 November 2026 ("let's work Stacey"). Reference `R668` (already in the dataset, family `canada_ca`); page numbers are the printed pages. Nothing deleted.

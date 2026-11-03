@@ -27312,6 +27312,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.152,
+     49.0053
+    ]
+   },
+   "properties": {
+    "claim_id": "C7239",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-WESTA",
+    "unit_name": "Panzer Group West",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-07-24",
+    "place_id": "PL3362",
+    "location_name": "Livarot, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Panzer Group West headquarters shown at Livarot",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1319,
      49.1678
     ]
@@ -30980,7 +31021,7 @@
     "location_name": "Caumont-l'Éventé",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Bluecoat: Second Army opens its attack south from Caumont with VIII and XXX Corps",
     "operation_id": "OP-BLUECOAT",
@@ -30993,8 +31034,8 @@
     "location_date": "1944-07-30",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: p. 386"
+    "reference_ids": "R670;R668;R001",
+    "source_locator": "R670: p. 386; R668: p.201"
    }
   },
   {
@@ -36487,8 +36528,8 @@
     "location_date": "1944-08-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: p. 408"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: p. 408; R668: p.215"
    }
   },
   {
@@ -36528,8 +36569,8 @@
     "location_date": "1944-08-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 409, 410"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: pp. 409, 410; R668: p.215"
    }
   },
   {
@@ -37130,7 +37171,7 @@
     "location_name": "Mortain, Manche",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "army attack from the Mortain area toward Avranches (Operation Luttich) with the XLVII Panzer Corps",
     "operation_id": "OP-LUTTICH",
@@ -37143,8 +37184,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R402;R001",
-    "source_locator": "R402: p. 462-463"
+    "reference_ids": "R402;R668;R001",
+    "source_locator": "R402: p. 462-463; R668: pp.214, 233"
    }
   },
   {
@@ -37184,8 +37225,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R402;R001",
-    "source_locator": "R402: p. 462, 461"
+    "reference_ids": "R402;R668;R001",
+    "source_locator": "R402: p. 462, 461; R668: p.214, Sketch 18"
    }
   },
   {
@@ -37555,6 +37596,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R773;R002",
     "source_locator": "R773: p. 31 (German text) and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4511,
+     49.0441
+    ]
+   },
+   "properties": {
+    "claim_id": "C7242",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-271D",
+    "unit_name": "271st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL0734",
+    "location_name": "Grimbosq, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "opposing the 59th Division Orne bridgehead at Grimbosq",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 221"
    }
   },
   {
@@ -40842,6 +40924,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3064,
+     49.1115
+    ]
+   },
+   "properties": {
+    "claim_id": "C7240",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL0672",
+    "location_name": "Tilly-la-Campagne, Calvados (front astride the Falaise road)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding Tilly-la-Campagne and the Falaise road front against Totalize",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 214, 220"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7407,
      48.3382
     ]
@@ -41245,6 +41368,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R403;R001",
     "source_locator": "R403: p. 498"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2548,
+     49.0021
+    ]
+   },
+   "properties": {
+    "claim_id": "C7241",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-10",
+    "place_id": "PL3363",
+    "location_name": "Bois de Quesnay, Calvados (Quesnay Wood)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding Quesnay Wood against the 3rd Canadian Division",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 230"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2673,
+     49.0166
+    ]
+   },
+   "properties": {
+    "claim_id": "C7254",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-10",
+    "place_id": "PL3370",
+    "location_name": "Point 195, Grainville-Langannerie, Calvados (Point 195, approximate)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Argylls take Point 195",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 229"
    }
   },
   {
@@ -41968,7 +42173,7 @@
     "location_name": "Argentan, Orne",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "halting at Argentan on Bradley's order",
     "operation_id": "OP-FALAISE",
@@ -41981,8 +42186,8 @@
     "location_date": "1944-08-13",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R403;R001",
-    "source_locator": "R403: p. 503, 504"
+    "reference_ids": "R403;R668;R001",
+    "source_locator": "R403: p. 503, 504; R668: p.245"
    }
   },
   {
@@ -42801,8 +43006,8 @@
     "location_date": "1944-08-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R426;R427;R146;R001",
-    "source_locator": "R426: p. 75"
+    "reference_ids": "R426;R427;R146;R668;R001",
+    "source_locator": "R426: p. 75; R668: p.269"
    }
   },
   {
@@ -46254,6 +46459,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1972,
+     49.1222
+    ]
+   },
+   "properties": {
+    "claim_id": "C7247",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0538",
+    "location_name": "Vimont",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "takes Vimont",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 266"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -46493,6 +46739,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R427;R698;R002",
     "source_locator": "R427: p. 118"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0364,
+     48.9874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7248",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-16",
+    "place_id": "PL3366",
+    "location_name": "Saint-Pierre-sur-Dives, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "captures St-Pierre-sur-Dives",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 266"
    }
   },
   {
@@ -47380,7 +47667,7 @@
     "location_name": "Écouché, Orne",
     "location_represents": "front_line_point",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "Holds the Ecouche-Argentan line on the southern shoulder of the gap under the V Corps",
     "operation_id": "OP-FALAISE",
@@ -47393,8 +47680,8 @@
     "location_date": "1944-08-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R404;R406;R002",
-    "source_locator": "R404: p. 533; R406: p. 600"
+    "reference_ids": "R404;R406;R668;R002",
+    "source_locator": "R404: p. 533; R406: p. 600; R668: p.252"
    }
   },
   {
@@ -47544,7 +47831,7 @@
     "location_name": "Mantes-la-Jolie, Yvelines (Mantes-Gassicourt, Seine crossing)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "79th Division crossing the Seine at Mantes-Gassicourt",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -47557,8 +47844,8 @@
     "location_date": "1944-08-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R405;R001",
-    "source_locator": "R405: p. 573, 577"
+    "reference_ids": "R405;R668;R001",
+    "source_locator": "R405: p. 573, 577; R668: p.251"
    }
   },
   {
@@ -48036,7 +48323,7 @@
     "location_name": "Fontaine-l'Abbé, Eure (Fifth Panzer Army command post at Fontaine-l'Abbé, 6 km east of Bernay)",
     "location_represents": "headquarters",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "Fifth Panzer Army command post at Fontaine-l'Abbé",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -48049,8 +48336,49 @@
     "location_date": "1944-08-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R801;R002",
-    "source_locator": "R801: frame 991 (NAID 271845202), report of 20 August 1944, order telephoned from Beauvais on 19 August"
+    "reference_ids": "R801;R668;R002",
+    "source_locator": "R801: frame 991 (NAID 271845202), report of 20 August 1944, order telephoned from Beauvais on 19 August; R668: p.261"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0331,
+     48.8431
+    ]
+   },
+   "properties": {
+    "claim_id": "C7243",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-708D",
+    "unit_name": "708th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-19",
+    "place_id": "PL0675",
+    "location_name": "Trun, Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "divisional commander captured at Trun",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 260"
    }
   },
   {
@@ -48200,7 +48528,7 @@
     "location_name": "Falaise pocket",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "subordinate_assignment",
     "current_activity": "Model subordinates the Seventh Army to the Fifth Panzer Army (Dietrich)",
     "operation_id": "OP-FALAISE",
@@ -48213,8 +48541,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R405;R001",
-    "source_locator": "R405: p. 576"
+    "reference_ids": "R405;R668;R001",
+    "source_locator": "R405: p. 576; R668: p.261"
    }
   },
   {
@@ -48446,7 +48774,7 @@
     "location_name": "Saint-Lambert-sur-Dives, Orne (between Magny and St. Lambert; crossing area)",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "II Parachute Corps breakout column reaches the Dives between Magny and St. Lambert about 0030",
     "operation_id": "OP-FALAISE",
@@ -48459,8 +48787,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R002",
-    "source_locator": "R404: p. 543, 542, 538"
+    "reference_ids": "R404;R668;R002",
+    "source_locator": "R404: p. 543, 542, 538; R668: pp.262-3"
    }
   },
   {
@@ -48487,7 +48815,7 @@
     "location_name": "Saint-Lambert-sur-Dives, Orne (Dives crossing area)",
     "location_represents": "main_body",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "command_change",
     "current_activity": "Schimpf seriously wounded at the Dives; Meindl, the corps commander, takes over the 3rd Parachute Division",
     "operation_id": "OP-FALAISE",
@@ -48500,8 +48828,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R002",
-    "source_locator": "R404: p. 543, 542"
+    "reference_ids": "R404;R668;R002",
+    "source_locator": "R404: p. 543, 542; R668: p.262"
    }
   },
   {
@@ -48707,6 +49035,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R688;R001",
     "source_locator": "R670: pp. 523, 528, 529"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1774,
+     48.8933
+    ]
+   },
+   "properties": {
+    "claim_id": "C7244",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002C",
+    "unit_name": "II SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-08-20",
+    "place_id": "PL3364",
+    "location_name": "Camembert, Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "attacking westward from the Camembert area to open the gap",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 261-2, Map 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.152,
+     49.0053
+    ]
+   },
+   "properties": {
+    "claim_id": "C7249",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL3362",
+    "location_name": "Livarot, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "takes Livarot",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 266"
    }
   },
   {
@@ -49076,6 +49486,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R773;R002",
     "source_locator": "R773: pp. 60-61 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0432,
+     48.8335
+    ]
+   },
+   "properties": {
+    "claim_id": "C7245",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL3365",
+    "location_name": "Magny (Dives), Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "divisional commander Menny captured near Magny",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 263"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0331,
+     48.8431
+    ]
+   },
+   "properties": {
+    "claim_id": "C7246",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL0675",
+    "location_name": "Trun, Orne (about Trun)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "leading troops meet the 9th Canadian Brigade about Trun",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 264"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1971,
+     48.9297
+    ]
+   },
+   "properties": {
+    "claim_id": "C7252",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-21",
+    "place_id": "PL3368",
+    "location_name": "Vimoutiers, Orne",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "5th Brigade occupies Vimoutiers",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 268"
    }
   },
   {
@@ -51536,6 +52069,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.23,
+     49.15
+    ]
+   },
+   "properties": {
+    "claim_id": "C7250",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-22",
+    "place_id": "PL0193",
+    "location_name": "Lisieux",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "fighting in Lisieux",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 266"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1833,
+     49.285
+    ]
+   },
+   "properties": {
+    "claim_id": "C7251",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-08-22",
+    "place_id": "PL3367",
+    "location_name": "Pont-l'Évêque, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "fighting at Pont-l'Évêque on the Touques",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 266"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.4057,
+     49.0211
+    ]
+   },
+   "properties": {
+    "claim_id": "C7253",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-22",
+    "place_id": "PL3369",
+    "location_name": "Orbec, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "advances to Orbec",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 268"
    }
   },
   {

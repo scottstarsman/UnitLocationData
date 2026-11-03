@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey follow-up, open conflict points resolved as conflict groups (3 November 2026)
+
+Scott approved on 3 November 2026 resolving the open Stacey roadmap points by their recorded recommendations, keeping all data (alternates kept, nothing deleted, no confidence lowered).
+
+- **New conflict groups** `G051`-`G057`, text row `preferred`, map or weaker row `alternate`. Each row's notes record conflict_group_id old value blank, new value Gnnn, and claim_status old value preferred, new value preferred/alternate, with the reason.
+  - G051 C7238/C2368 (point 237); G052 C7375/C3420 (241); G053 C7436/C1285 (243); G054 C7479/C5680 (244); G055 C7501/C5870 (245, map row only); G056 C7510/C6058 (247); G057 C7598/C6663 (248).
+- **Note only:** C0778 (point 238) now names both relieving formations (1st SS Panzer Division per Stacey, 272nd Infantry Division per the Lexikon).
+- **Closed:** roadmap points 237, 238, 241, 242 (no data change, C0222 kept), 243, 244, 247 and 248.
+- **Still open, data unchanged:** 240 (Chill; keep both until a German source), 245 (the C1495/C7501 Afferden date pair), 246 (2nd Parachute Corps; keep both until Schlemm or Meindl), 249 (Straube sector). Scenario 129.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, remaining maps and sketches; map-row conflict sweep (3 November 2026)
 
 Eleventh commit of the approved Stacey pass (`R668`). Viewed the remaining maps and sketches: Map 9 (Ardennes crisis), Sketch 34 (threat across the Maas, mid-December 1944), Sketch 35 (Kapelsche Veer), Sketch 37 (Moyland Wood), Map 10 (Veritable), Sketch 38 (Hochwald Gap), Map 11 (Blockbuster), Sketches 40-44 (Rhineland, closing to the Rhine, Varsity, the Rhine left flank, Zutphen and Deventer), Map 12 (advance on the northern front), Map 13 (western Netherlands), Sketch 47 (advance across Germany), Sketch 49 (march to Wismar), Map 14 (final phase). Pages 474, 475, 510, 511, 545, 546, 656 and 657 are photographs and 702 is a table. Most map content repeats text rows already in the data; only facts with no row within a few days were added. Nothing deleted, no existing row changed.

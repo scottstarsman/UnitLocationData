@@ -7632,6 +7632,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0518,
+     43.7084
+    ]
+   },
+   "properties": {
+    "claim_id": "C7135",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "place_id": "PL3314",
+    "location_name": "Dax, Landes (Dax (corps headquarters; first echelon leaves by train at 22.30 for the invasion front))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "LXXXVI Corps leaves Dax for Normandy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R798;R002",
+    "source_locator": "R798: pages 497-500 (NAID 318191275), Ia Kriegstagebuch Nr. 5, entry of 15 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0586,
      49.1575
     ]

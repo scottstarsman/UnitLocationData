@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-314 roll 1607 (LXXXVI Corps; 2 November 2026)
+
+Roll 1607 (NAID 318191275, 871 pages) read in the German original on 2 November 2026, pages 1-742 by OCR with the June 1944 KTB pages image-checked; pages 743-871 (Anlagen and the Ic overlay of 27-28 June) did not render on the box in time and are left for a second pass. Reading notes private.
+
+- **New reference** `R798` (archive_document, family `nara_captured_german_records`).
+- **New claim** `C7135`: LXXXVI Corps at Dax on 15 June 1944, first echelon leaving for the invasion front at 22.30 (0.5; old value none, new value this row, reason: dated war-diary entry). Parent blank (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New place** `PL3314` Dax (OpenStreetMap Nominatim, searched 2 November 2026).
+- **No existing row changed**; no relation, no conflict group. The 1943 KTB is before the dataset period; anti-partisan operations around Pau (12-15 June) and the 159th Reserve Division take-over are in the private notes.
+- **Semantic scenario 104.**
+
 ## nara-microfilm: NARA T-354 roll 149 (9th SS Panzer Division; 2 November 2026)
 
 Roll 149 (NAIDs 267512013 and 267513015, 1408 images, items 78013/19-/28) read in the German original on 2 November 2026 with full OCR; the claimed order image-checked. Reading notes private. The earlier note that T-354/149 had no scan was wrong: the scans sit under the folders T354-149A and T354-149B (old value: no scan, new value: read, reason: catalog object paths found through the catalog API).

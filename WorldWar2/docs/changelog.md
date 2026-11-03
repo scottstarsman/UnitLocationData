@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: Cole, The Ardennes: Fifth Panzer Army before Bastogne and the Meuse (chs. 13, 19, 22, 24) (3 November 2026)
+
+Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.
+
+- **New references** none (the rows cite the existing chapter references).
+- **New claims** `C7146`-`C7155` (each note carries old value none, new value and reason; inferred dates are marked with old value, new value and reason): Panzer Lehr Division takes Mageret, 18 December (0.7), and attacks Humain, 25 December (0.7); 2d Panzer Division attacks Noville, 19 December (0.7), and its main column is halted southwest of Conneux, 25 December (0.5, date inferred from the paragraph); 9th Panzer Division takes over the Marloie-Hedrée position, 25 December (0.7); 15th Panzer Grenadier Division regiment bivouacs west of Flamisoul, 24 December (0.7); 26th Volksgrenadier Division (78th Regiment) attacks north of Bizory, 20 December (0.7); 3d Panzer Grenadier Division main body in the Bois de Fragotte near Chenogne, 30 December (0.5, the transcription prints the day as 'the 8th'); 1st SS Panzer Division attacks via Lutrebois, 30 December (0.7); Führer-Begleit-Brigade tank group at rest in Fosset, 31 December (0.7). Parent blank on all rows (old value none, new value blank, reason: no command relation from a single source). Strengths from Cole are kept in the private notes only.
+- **New places** `PL3320` to `PL3328` (Mageret, Humain, Conneux, Marloie, Flamisoul, Bizory, Chenogne, Lutrebois, Fosset; OpenStreetMap Nominatim, searched 3 November 2026; local names, Cole's spellings Conneaux and Flamizoulle kept as alternative names).
+- **No existing row changed.** Conflicts with 12th Army Group map rows and one FMS row are logged as roadmap points 226, 227, 228 with a recommendation each (text rows outrank map rows; existing rows are not changed on conflict).
+- **Semantic scenario 109.**
+
 ## nara-microfilm: NARA T-315 roll 2145 (347th Infantry Division; 3 November 2026)
 
 Roll 2145 (NAID 347778909, 1346 pages) read in the German original on 3 November 2026. Pages 1-820 were read by OCR and the rest by samples. The 1944 orders used here were read in full. Reading notes private.

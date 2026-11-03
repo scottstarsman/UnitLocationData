@@ -157938,6 +157938,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.785,
+     50.0144
+    ]
+   },
+   "properties": {
+    "claim_id": "C7146",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-18",
+    "place_id": "PL3320",
+    "location_name": "Mageret (Bastogne), Luxembourg province (a kampfgruppe that came by the side road through Benonchamps)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "takes Mageret on the Longvilly-Bastogne road",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R384;R002",
+    "source_locator": "R384: p. 297"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6333,
      50.5833
     ]
@@ -163842,6 +163883,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.762,
+     50.0643
+    ]
+   },
+   "properties": {
+    "claim_id": "C7148",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-19",
+    "place_id": "PL0394",
+    "location_name": "Noville, Luxembourg (advance guard and main body on the Bourcy road)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacks Team Desobry at Noville north of Bastogne",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R389;R002",
+    "source_locator": "R389: p. 452"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -164368,6 +164450,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R772;R002",
     "source_locator": "R772: p. 20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7643,
+     50.0196
+    ]
+   },
+   "properties": {
+    "claim_id": "C7152",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3325",
+    "location_name": "Bizory (Bastogne), Luxembourg province (78th Grenadier Regiment, under Panzer Lehr command for the northern hook)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "78th Regiment tries to pass north of Bizory toward Luzery and is halted at the Bourcy-Bastogne railway",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R389;R002",
+    "source_locator": "R389: p. 456"
    }
   },
   {
@@ -165646,6 +165769,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6293,
+     50.0326
+    ]
+   },
+   "properties": {
+    "claim_id": "C7151",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL3324",
+    "location_name": "Flamisoul (Sainte-Ode), Luxembourg province (Kampfgruppe Maucke (115th Panzergrenadier Regiment with tanks))",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "regiment of the incoming division bivouacs west of Flamisoul before the Christmas attack on Bastogne",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R389;R002",
+    "source_locator": "R389: p. 476"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -165721,6 +165885,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R799;R002",
     "source_locator": "R799: page 439 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2552,
+     50.2053
+    ]
+   },
+   "properties": {
+    "claim_id": "C7147",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-25",
+    "place_id": "PL3321",
+    "location_name": "Humain (Marche-en-Famenne), Luxembourg province (a platoon of Panthers with a rifle company; a second group drives on Havrenne and Buissonville)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacks Humain and Havrenne to reopen the road to the 2d Panzer Division",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 570"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0604,
+     50.2496
+    ]
+   },
+   "properties": {
+    "claim_id": "C7149",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-25",
+    "place_id": "PL3322",
+    "location_name": "Conneux (Ciney), Namur (main column under Major von Cochenhausen (a tank battalion and a panzer grenadier regiment))",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "main column halted in the woods southwest of Conneux, cut off in the Celles pocket",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 567"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.316,
+     50.2004
+    ]
+   },
+   "properties": {
+    "claim_id": "C7150",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-25",
+    "place_id": "PL3323",
+    "location_name": "Marloie (Marche-en-Famenne), Luxembourg province (first march column)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "first march column takes over the Marloie-Hedrée blocking position south of Marche",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 571"
    }
   },
   {
@@ -171222,6 +171509,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6196,
+     49.991
+    ]
+   },
+   "properties": {
+    "claim_id": "C7153",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-30",
+    "place_id": "PL3326",
+    "location_name": "Chenogne (Vaux-sur-Sûre), Luxembourg province (main body in the Bois de Fragotte between Chenogne and Senonchamps)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "main body in the Bois de Fragotte checks Task Force Karsteter (11th Armored Division) north of Villeroux",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 616"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7342,
+     49.959
+    ]
+   },
+   "properties": {
+    "claim_id": "C7154",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-30",
+    "place_id": "PL3327",
+    "location_name": "Lutrebois (Bastogne), Luxembourg province (eastern assault force with the 167th Volksgrenadier Division)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacks via Lutrebois toward Assenois to cut the Bastogne corridor",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 619"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9325,
      49.9661
     ]
@@ -171256,6 +171625,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R709;R001",
     "source_locator": "R709: p. 641"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.56,
+     50.0288
+    ]
+   },
+   "properties": {
+    "claim_id": "C7155",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-31",
+    "place_id": "PL3328",
+    "location_name": "Fosset (Sainte-Ode), Luxembourg province (Remer's tank group and one grenadier battalion)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "tank group and one grenadier battalion rest at Fosset as XLVII Panzer Corps reserve",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 646"
    }
   },
   {

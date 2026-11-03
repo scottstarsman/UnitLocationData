@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: 79th Volksgrenadier Division promoted from placeholder, Cole positions (3 November 2026)
+
+Approved by Scott on 3 November 2026. Source: Cole, *The Ardennes*, ch. 21 (`R391`). Reading notes private.
+
+- **Unit promoted:** in `units.csv` the `record_status` of `GER-VG-079D` goes from placeholder to active (old value placeholder, new value active, reason: the unit now has claims; `scripts/promote_placeholders.py`, as for `GER-FJ-ERDMD` and `GER-INF-190D` in `959072a`). New claim file `data/claims/germany/GER-VG-079D.csv`.
+- **New claims** `C7222`-`C7224` (0.7; parents blank, old value none, new value blank, reason: no command relation from a single source; commander old value none, new value Alois Weber, reason: named by Cole p. 534): initial assembly area at Bourscheid 24 Dec (date inferred, old value none, new value 1944-12-24, reason: given in Cole's account of 24 Dec; precision 5 km for an assembly area); defense of the Bourscheid bridgehead around Kehmen 25 Dec; last full attack on Ringel Hill 30 Dec (objective).
+- **New place** `PL3353` Ringel (Esch-sur-Sûre) (OpenStreetMap Nominatim, searched 3 November 2026). Bourscheid (`PL2587`) and Kehmen (`PL1769`) already existed.
+- **January 1945:** Cole gives no dated 79th VGD position after 30 December, so no January row is added.
+- **Semantic scenario 115.**
+
 ## cole-ardennes: Cole, The Ardennes, second pass: Cole as a corroborating source on existing rows (3 November 2026)
 
 - **Corroborations, no new mechanism.** The dataset has no separate corroboration table; a row with several sources lists every reference in `reference_ids`, every URL in `source` (joined by ` | `) and a locator per reference in `source_locator`. That existing multi-reference mechanism is used here. Five rows get a Cole chapter appended: `C4787` (101st Airborne, Mande-Saint-Étienne, 19 Dec; `R384` p. 307), `C1903` (28th Division, Neufchâteau, 22 Dec; `R385` p. 328), `C7136` (26th Volksgrenadier Division, Longvilly, 19 Dec; `R384` p. 304), `C2181` (2d Panzer Division, Ortheuville, 20 Dec; `R388` p. 429), `C2182` (116th Panzer Division, Samrée, 20 Dec; `R388` p. 429, `R386` p. 358). Each note records old and new `reference_ids` and the reason.

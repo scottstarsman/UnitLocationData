@@ -35078,7 +35078,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -51438,7 +51438,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66738,6 +66738,26 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0106,
+     49.9159
+    ]
+   },
+   "properties": {
+    "place_id": "PL3353",
+    "name": "Ringel (Esch-sur-Sûre), Luxembourg",
+    "alt_names": "Ringel Hill",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Luxembourg",
     "claims_count": 1
    }
   }

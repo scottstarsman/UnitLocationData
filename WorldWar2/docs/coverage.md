@@ -20,7 +20,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 49 |
 | Germany | army | 0 | 0 | 15 | 15 | 9 | 271 |
 | Germany | corps | 17 | 0 | 28 | 45 | 41 | 517 |
-| Germany | division | 41 | 0 | 90 | 131 | 112 | 1765 |
+| Germany | division | 40 | 0 | 91 | 131 | 112 | 1768 |
 | Germany | brigade | 0 | 0 | 11 | 11 | 11 | 84 |
 | Germany | regiment/battle_group | 1 | 0 | 12 | 13 | 3 | 22 |
 | Germany | battalion | 1 | 0 | 0 | 1 | 0 | 0 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **67** | **0** | **321** | **388** | **258** | **7215** |
+| **All** | | **66** | **0** | **322** | **388** | **258** | **7218** |
 
 ## Operations
 
@@ -50,18 +50,18 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
 | campaign | 9 | 9 | 6209 |
-| operation | 33 | 33 | 508 |
+| operation | 33 | 33 | 511 |
 | battle | 20 | 20 | 417 |
 | phase | 4 | 4 | 81 |
-| **All** | **67** | **66** | **7215** |
+| **All** | **67** | **66** | **7218** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3337 places and 165 alias names for 7215 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3338 places and 166 alias names for 7218 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3233 | 7017 |
+| point | 3234 | 7020 |
 | area | 86 | 178 |
 | line | 18 | 20 |
 
@@ -71,7 +71,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | Germany (DE) | 1130 | 2365 |
 | Netherlands (NL) | 368 | 988 |
 | Belgium (BE) | 305 | 670 |
-| Luxembourg (LU) | 75 | 190 |
+| Luxembourg (LU) | 76 | 193 |
 | Austria (AT) | 25 | 39 |
 | Czechia (CZ) | 14 | 22 |
 | United Kingdom (GB) | 5 | 8 |

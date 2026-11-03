@@ -89181,6 +89181,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9579,
+     51.6429
+    ]
+   },
+   "properties": {
+    "claim_id": "C7795",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL1058",
+    "location_name": "Dongen, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps command post at Dongen under Fifteenth Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.1, English p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.147,
+     51.487
+    ]
+   },
+   "properties": {
+    "claim_id": "C7796",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL3297",
+    "location_name": "Hilvarenbeek, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "245th Infantry Division holds the corps right from Maerle to Hilvarenbeek",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3158,
+     51.5891
+    ]
+   },
+   "properties": {
+    "claim_id": "C7797",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL0693",
+    "location_name": "Boxtel, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "59th Infantry Division holds the corps centre south of Moergestel and Boxtel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4363,
+     51.6177
+    ]
+   },
+   "properties": {
+    "claim_id": "C7798",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-085D",
+    "unit_name": "85th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL1063",
+    "location_name": "Schijndel, Meierijstad, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "85th Infantry Division holds the corps left north of Schijndel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -94010,8 +94174,8 @@
     "location_date": "1944-10-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R001",
-    "source_locator": "R771: pp. 30 and 31"
+    "reference_ids": "R771;R809;R001",
+    "source_locator": "R771: pp. 30 and 31; R809: German p.3, English p.3"
    }
   },
   {
@@ -94135,6 +94299,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 381"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0428,
+     51.4476
+    ]
+   },
+   "properties": {
+    "claim_id": "C7799",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-085D",
+    "unit_name": "85th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-04",
+    "place_id": "PL3559",
+    "location_name": "Poppel (Ravels), Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "Parts of the 85th Division counterattack the penetration north of Poppel on the Turnhout-Tilburg road",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.3, English p.3"
    }
   },
   {
@@ -94962,6 +95167,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.2872,
+     51.4945
+    ]
+   },
+   "properties": {
+    "claim_id": "C7800",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-085D",
+    "unit_name": "85th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-07",
+    "place_id": "PL3409",
+    "location_name": "Bergen op Zoom, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "85th Division released to LXVII Corps; first parts trucked to Bergen op Zoom",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.3-4, English pp.3-4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.7851,
      47.9308
     ]
@@ -95609,8 +95855,8 @@
     "location_date": "1944-10-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 385"
+    "reference_ids": "R668;R809;R002",
+    "source_locator": "R668: p. 385; R809: German p.1, English p.1, Anlage 1"
    }
   },
   {
@@ -100989,6 +101235,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4373,
+     51.8874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7802",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-12",
+    "place_id": "PL1630",
+    "location_name": "Tiel, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXXXVIII Corps also takes over the LXXXIX Corps sector as far as Tiel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.4-5, English p.5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6414,
      49.7567
     ]
@@ -102335,6 +102622,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R808;R807;R002",
     "source_locator": "R808: German p.1, English p.1; R807: English p.17"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C7801",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-15",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "First infantry of the new 256th Volksgrenadier Division arrive to replace the 245th",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.4, English p.4"
    }
   },
   {
@@ -108934,8 +109262,8 @@
     "location_date": "1944-10-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R002",
-    "source_locator": "R771: p. 45"
+    "reference_ids": "R771;R809;R002",
+    "source_locator": "R771: p. 45; R809: German pp.3-4, English p.4"
    }
   },
   {
@@ -115667,6 +115995,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3653,
+     51.6509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7803",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-27",
+    "place_id": "PL1635",
+    "location_name": "Sint-Michielsgestel, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "7th Armoured Division takes the crossings at Sint-Michielsgestel on the Schijndel-Vught road",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.5, English p.5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4363,
+     51.6177
+    ]
+   },
+   "properties": {
+    "claim_id": "C7804",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL1063",
+    "location_name": "Schijndel, Meierijstad, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "51st Division (as identified by the Germans) attacks either side of the Schijndel-Vught road",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.5, English p.5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3653,
+     51.6509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7805",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL1635",
+    "location_name": "Sint-Michielsgestel, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "59th Infantry Division hit either side of the Schijndel-Vught road; new line on the Dommel from Haaren to north of Esch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.5, English p.5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1552,
+     51.7292
+    ]
+   },
+   "properties": {
+    "claim_id": "C7806",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL1743",
+    "location_name": "Herpt, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved from Dongen to Herpt south-east of Heusden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.3773,
      51.0348
     ]
@@ -115783,6 +116275,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 403-4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3031,
+     51.6889
+    ]
+   },
+   "properties": {
+    "claim_id": "C7807",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-28",
+    "place_id": "PL0749",
+    "location_name": "'s-Hertogenbosch, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "destruction",
+    "current_activity": "712th Infantry Division smashed south-east of 's-Hertogenbosch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.6, English p.6"
    }
   },
   {
@@ -116029,6 +116562,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Map 8 (The Battle of the Scheldt, October-November 1944), facing p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1986,
+     51.5661
+    ]
+   },
+   "properties": {
+    "claim_id": "C7808",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-29",
+    "place_id": "PL0854",
+    "location_name": "Oisterwijk, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "256th Volksgrenadier Division hit astride the Boxtel-Oisterwijk railway while still deploying",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.6-7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C7809",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-29",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps orders Tilburg evacuated without a fight; new line behind the Wilhelmina canal",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.7, English p.7"
    }
   },
   {
@@ -122801,6 +123416,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.946,
+     51.6875
+    ]
+   },
+   "properties": {
+    "claim_id": "C7810",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-01",
+    "place_id": "PL3560",
+    "location_name": "Waspik (Waalwijk), Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "7th Armoured Division thrusts between Dongen and Loon op Zand toward Waspik and Sprang",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.8, English p.8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9607,
+     51.7706
+    ]
+   },
+   "properties": {
+    "claim_id": "C7811",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-01",
+    "place_id": "PL3561",
+    "location_name": "Almkerk (Altena), Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved from Genderen to Almkerk",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.9, English p.9"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3031,
+     51.6889
+    ]
+   },
+   "properties": {
+    "claim_id": "C7812",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-01",
+    "place_id": "PL0749",
+    "location_name": "'s-Hertogenbosch, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "59th Infantry Division back over the Afwateringskanaal; 's-Hertogenbosch given up",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.8-9, English p.9"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3811,
      50.7129
     ]
@@ -123252,6 +123990,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8746,
+     51.6961
+    ]
+   },
+   "properties": {
+    "claim_id": "C7813",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-03",
+    "place_id": "PL3562",
+    "location_name": "Raamsdonksveer (Geertruidenberg), Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "256th Volksgrenadier Division crosses to the north bank of the Maas; Keizersveer bridge blown",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.9-10, English pp.9-10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3811,
      50.7129
     ]
@@ -123450,6 +124229,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.089,
+     51.736
+    ]
+   },
+   "properties": {
+    "claim_id": "C7814",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL3563",
+    "location_name": "Genderen (Altena), Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "256th Volksgrenadier Division holds the Maas from the Biesbosch to east of Genderen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.12, English p.12, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "claim_id": "C7815",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL0826",
+    "location_name": "Hedel, Maasdriel, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "59th Infantry Division holds the Maas from Hedel (with the bridgehead) to Rossum",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.12, English p.12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4373,
+     51.8874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7816",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL1630",
+    "location_name": "Tiel, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "712th Infantry Division holds the Waal north of Rossum to Opheusden on the Leck",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.12, English p.12"
    }
   },
   {
@@ -130008,8 +130910,8 @@
     "location_date": "1944-11-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R002",
-    "source_locator": "R771: p. 48 and annex map"
+    "reference_ids": "R771;R809;R002",
+    "source_locator": "R771: p. 48 and annex map; R809: German p.12, English p.12"
    }
   },
   {
@@ -137971,6 +138873,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2715,
+     51.8826
+    ]
+   },
+   "properties": {
+    "claim_id": "C7817",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-15",
+    "place_id": "PL1060",
+    "location_name": "Geldermalsen, West Betuwe, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved to Geldermalsen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.12, English p.12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2833,
      50.8167
     ]
@@ -138456,6 +139399,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R790;R002",
     "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.089,
+     51.736
+    ]
+   },
+   "properties": {
+    "claim_id": "C7818",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL3563",
+    "location_name": "Genderen (Altena), Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "256th Volksgrenadier Division pulled out of the Maas front",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.15, English p.15"
    }
   },
   {
@@ -146499,6 +147483,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "claim_id": "C7819",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL0826",
+    "location_name": "Hedel, Maasdriel, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "711th Infantry Division takes over the whole Maas sector from the Biesbosch to Rossum",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.15, English p.15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "claim_id": "C7820",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL0826",
+    "location_name": "Hedel, Maasdriel, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "59th Infantry Division given up by LXXXVIII Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.15, English p.15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4217,
      49.8117
     ]
@@ -153018,6 +154084,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1777,
+     52.0081
+    ]
+   },
+   "properties": {
+    "claim_id": "C7821",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-28",
+    "place_id": "PL3564",
+    "location_name": "Houten, Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps staff moved to Houten south-east of Utrecht",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.16, English p.16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3724,
      50.861
     ]
@@ -159284,6 +160391,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: German p.7, English p.7, Sketch 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2046,
+     52.129
+    ]
+   },
+   "properties": {
+    "claim_id": "C7822",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-05",
+    "place_id": "PL2291",
+    "location_name": "Bilthoven, Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps staff moved to Bilthoven north-east of Utrecht",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.16, English p.16"
    }
   },
   {
@@ -175445,6 +176593,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7823",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXXXVIII Corps also takes over the Leck sector either side of Arnhem with the 6th Parachute Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.16, English p.16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -177570,6 +178759,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R390;R002",
     "source_locator": "R390: p. 492"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9265,
+     51.8865
+    ]
+   },
+   "properties": {
+    "claim_id": "C7824",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-22",
+    "place_id": "PL3565",
+    "location_name": "Haalderen (Lingewaard), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "A 6th Parachute Division battalion attacks Haalderen north-east of Nijmegen and fails",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.16, English p.16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2046,
+     52.129
+    ]
+   },
+   "properties": {
+    "claim_id": "C7825",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL2291",
+    "location_name": "Bilthoven, Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Reinhard leaves LXXXVIII Corps; Schwalbe takes command",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.18, English p.18"
    }
   },
   {
@@ -198150,8 +199421,8 @@
     "location_date": "1945-01-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R808;R002",
-    "source_locator": "R808: German p.8, English p.8"
+    "reference_ids": "R808;R809;R002",
+    "source_locator": "R808: German p.8, English p.8; R809: German p.19, English p.20"
    }
   },
   {
@@ -204835,6 +206106,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: pp. 344-345"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7135,
+     51.9284
+    ]
+   },
+   "properties": {
+    "claim_id": "C7826",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002D",
+    "unit_name": "2nd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-01-20",
+    "place_id": "PL0756",
+    "location_name": "Zetten, Gelderland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "2nd Parachute Division attack on Zetten fails with heavy losses",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.19, English p.20"
    }
   },
   {
@@ -217955,6 +219267,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R764;R002",
     "source_locator": "R764: pp. 23, 25"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4373,
+     51.8874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7827",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-05",
+    "place_id": "PL1630",
+    "location_name": "Tiel, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "712th Infantry Division pulled out; SS Brigade Niederland takes its sector",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.20, English p.22"
    }
   },
   {
@@ -241496,6 +242849,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7828",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-25",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "346th Infantry Division replaces the 2nd Parachute Division under LXXXVIII Corps",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.20, English p.22"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2736,
      51.6686
     ]
@@ -264900,6 +266294,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: English Sketch 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6191,
+     52.0865
+    ]
+   },
+   "properties": {
+    "claim_id": "C7829",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL3566",
+    "location_name": "Lunteren (Ede), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved from Bilthoven to Lunteren",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R809;R002",
+    "source_locator": "R809: German p.20, English p.23"
    }
   },
   {

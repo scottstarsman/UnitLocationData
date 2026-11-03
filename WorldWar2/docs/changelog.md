@@ -3583,3 +3583,13 @@ FMS B-368 (Rudolf Langhaeuser, Allendorf, 6 February 1947; attested by Plocher, 
 - **Semantic tests:** scenario 134.
 - Reading notes (private, Drive only): `FMS_B-368_notes.md`.
 
+
+## fms-fold3-netherlands: FMS B-774, Prittwitz und Gaffron, LXXXVIII Corps (3 November 2026)
+
+FMS B-774 (Heinz von Prittwitz und Gaffron, corps operations officer, Steimbel, 17 December 1947; comments by Drews and Brandenberger; NARA M1035, German text with the English translation) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R809` (`fms_german_manuscript`). It covers LXXXVIII Corps from 1 October 1944 to 21 March 1945. The differences from the dataset, all dates: the 256th Volksgrenadier Division's first infantry on 15 October against 23 October (roadmap 257); Reinhard's replacement by Schwalbe on 22 December against 23-24 December (roadmap 258); 's-Hertogenbosch given up on 1 November against its capture on 27 October (`C1470`; kept, different events).
+
+- **New claims:** `C7795`-`C7829` (35: 33 German, 2 Allied; blank parents). They cover the corps command posts (Dongen, Herpt, Almkerk, Geldermalsen, Houten, Bilthoven, Lunteren), the 1 October line (245th, 59th, 85th Divisions), the 85th Division at Poppel and its move to Bergen op Zoom, the arrival and withdrawal of the 256th Volksgrenadier Division, the October offensive (7th Armoured and 51st Divisions as identified by the Germans; the 712th Division smashed at 's-Hertogenbosch; Tilburg evacuated), the withdrawal over the Maas, the Maas line of 5 November, the 711th Division taking the whole Maas sector, the Arnhem sector from 19 December, Haalderen, the change of commander, Zetten, and the 712th and 346th Divisions in early 1945.
+- **New places:** `PL3559` Poppel, `PL3560` Waspik, `PL3561` Almkerk, `PL3562` Raamsdonksveer, `PL3563` Genderen, `PL3564` Houten, `PL3565` Haalderen, `PL3566` Lunteren (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-774 appended on 5 rows (reference_ids, source and source_locator; old and new values in each row's notes). No raises: `C2168`, `C2174`, `C2177` are the same family (FMS B-475); `C7352` (Stacey) agrees only on an undated sector; `C7790` is in conflict group G059 and held.
+- **Roadmap:** 240 updated (recommend closure, both rows kept as phases); 257 and 258 opened.
+- **Tests:** scenario 135 added.

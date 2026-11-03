@@ -10898,7 +10898,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 23
+    "claims_count": 25
    }
   },
   {
@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 21
+    "claims_count": 23
    }
   },
   {
@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -14778,7 +14778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 8
+    "claims_count": 10
    }
   },
   {
@@ -14918,7 +14918,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -16318,7 +16318,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -16838,7 +16838,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -20898,7 +20898,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -20938,7 +20938,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -20998,7 +20998,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -32298,7 +32298,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 4
+    "claims_count": 7
    }
   },
   {
@@ -32398,7 +32398,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -34558,7 +34558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -45518,7 +45518,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 15
+    "claims_count": 17
    }
   },
   {
@@ -65638,7 +65638,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -67878,7 +67878,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -70858,6 +70858,166 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0428,
+     51.4476
+    ]
+   },
+   "properties": {
+    "place_id": "PL3559",
+    "name": "Poppel (Ravels), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.946,
+     51.6875
+    ]
+   },
+   "properties": {
+    "place_id": "PL3560",
+    "name": "Waspik (Waalwijk), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9607,
+     51.7706
+    ]
+   },
+   "properties": {
+    "place_id": "PL3561",
+    "name": "Almkerk (Altena), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8746,
+     51.6961
+    ]
+   },
+   "properties": {
+    "place_id": "PL3562",
+    "name": "Raamsdonksveer (Geertruidenberg), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.089,
+     51.736
+    ]
+   },
+   "properties": {
+    "place_id": "PL3563",
+    "name": "Genderen (Altena), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1777,
+     52.0081
+    ]
+   },
+   "properties": {
+    "place_id": "PL3564",
+    "name": "Houten, Utrecht",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Utrecht",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9265,
+     51.8865
+    ]
+   },
+   "properties": {
+    "place_id": "PL3565",
+    "name": "Haalderen (Lingewaard), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6191,
+     52.0865
+    ]
+   },
+   "properties": {
+    "place_id": "PL3566",
+    "name": "Lunteren (Ede), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
     "claims_count": 1
    }
   }

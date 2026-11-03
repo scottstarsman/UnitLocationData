@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XIX (Operation "Blockbuster" and the end of the Rhineland battle, 22 February - 11 March 1945) (3 November 2026)
+
+Seventh chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 492-522 read. Nothing deleted.
+
+- 61 new claims `C7502`-`C7562` (22 German, 39 Allied; 19 sector rows at 0.3; blank parents; places `PL3466`-`PL3478`): the line-up of 25 February (43rd Division Moyland-Rhine, 4th Canadian Armoured in the Cleve area, 11th Armoured to the Reichswald edge, 52nd at Afferden, 51st south of Goch, 53rd short of Weeze, 32nd Guards Brigade west of Goch; German 86th Corps Weeze-Venlo, 63rd Corps to Roermond, 6th Parachute Division at Calcar, 116th Panzer at Keppeln, 7th Parachute Regiment in Udem, 7th and half the 8th Parachute Divisions south of Udem); Blockbuster (Keppeln, Pauls-Berg, Stein, Gochfortzberg, Calcar, Schmachdarm, the Hochwald gap with the 24th Parachute Regiment and the Parachute Army Assault Battalion, Tuschen Wald); the German reshuffle (2nd Parachute Division elements to Krefeld, the 2nd Parachute Corps taking the 190th Division, 116th Panzer to Alpen, 180th Division at the Hochwald, 6th Parachute Division back 3 km); the 30th Corps advance (Winnekendonk, Weeze, Langstraat, Geldern, Issum, Kapellen, Bonninghardt, Die Leucht, Winkelscher Busch, Sonsbeck, Alpen, Menzelen); Xanten (129th Brigade, 6th Parachute Division); Veen; Schlemm's last command post; US 19th and 16th Corps at Neuss, Munchen-Gladbach, Roermond and Rheinberg, and the 16th Corps under Crerar on 9 March.
+- 12 rows appended with `R668` (reference_ids, source, source_locator; old and new values in each row's notes). 5 raised 0.5 to 0.7 under the corroboration rule: `C2229`, `C2230`, `C2232`, `C2234` (second family `canada_ca` agrees with the German manuscripts `R777`) and `C1503` (agrees with `uk_official_history`). 7 appended with no change: `C1496`, `C1497`, `C1498`, `C1500`, `C1501` (already 0.7) and `C1502` (0.3).
+- Claim-key exception `C1500`/`C7544` (Calcar and Kehrum, two places on about 3 March). Coordinate exception `C6058`/`C7510` (LXIII Corps map symbol at Freiburg). `scripts/semantic_tests.py` scenario 49 now allows 0.7 on its rows only where `R668` corroborates (old expectation: 0.5 or 0.3 only). Roadmap 247; scenario 124.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XVIII (Operation "Veritable", 8-21 February 1945) (3 November 2026)
 
 Sixth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 457-491 read. Nothing deleted.

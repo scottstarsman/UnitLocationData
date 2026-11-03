@@ -1323,7 +1323,8 @@ def scenario_43_fms_b475_german():
     new = [c for c in claims if BATCH43(c)]
     expect(s + ': the batch adds 15 claims, all citing R771', (len(new), sum('R771' in c['reference_ids'].split(';') for c in new)), (15, 15))
     expect(s + ': no parent is set from a single manuscript', sorted(set(c['parent_unit_id'] for c in new)), [''])
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 9 arrivals, approximate days and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 9)
 
 
@@ -1345,7 +1346,8 @@ def scenario_45_fms_b179_german():
     new = [c for c in claims if BATCH45(c)]
     expect(s + ': the batch adds 11 claims, all citing R773', (len(new), sum('R773' in c['reference_ids'].split(';') for c in new)), (11, 11))
     expect(s + ': no parent is set from a single manuscript', sorted(set(c['parent_unit_id'] for c in new)), [''])
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 0 arrivals, approximate days and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 0)
 
 
@@ -1356,7 +1358,8 @@ def scenario_46_fms_b763_german():
     new = [c for c in claims if BATCH46(c)]
     expect(s + ': the batch adds 6 claims, all citing R774', (len(new), sum('R774' in c['reference_ids'].split(';') for c in new)), (6, 6))
     expect(s + ': no parent is set from a single manuscript', sorted(set(c['parent_unit_id'] for c in new)), [''])
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 6 arrivals, approximate days and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 6)
     by = {c['claim_id']: c for c in claims}
     expect(s + ': B-763 added to the B-179 forward command post row without raising it', (by['C2193']['reference_ids'], by['C2193']['confidence']), ('R773;R774;R001', '0.5'))
@@ -1369,7 +1372,8 @@ def scenario_47_fms_b781():
     new = [c for c in claims if BATCH47(c)]
     expect(s + ': the batch adds 5 claims, all citing R775', (len(new), sum('R775' in c['reference_ids'].split(';') for c in new)), (5, 5))
     expect(s + ': no parent is set from a single manuscript', set(c['parent_unit_id'] for c in new), {''})
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 5 arrivals, approximate days, doubtful places and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 5)
     expect(s + ': every row has a place, a source locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R775: ') and 'old value none' in c['notes'] for c in new), True)
 
@@ -1381,7 +1385,8 @@ def scenario_48_fms_b831():
     new = [c for c in claims if BATCH48(c)]
     expect(s + ': the batch adds 12 claims, all citing R776', (len(new), sum('R776' in c['reference_ids'].split(';') for c in new)), (12, 12))
     expect(s + ': no parent is set from a single manuscript', set(c['parent_unit_id'] for c in new), {''})
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 1 arrivals, approximate days, doubtful places and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 1)
     expect(s + ': every row has a place, a source locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R776: ') and 'old value none' in c['notes'] for c in new), True)
 
@@ -1393,7 +1398,8 @@ def scenario_49_fms_b084():
     new = [c for c in claims if BATCH49(c)]
     expect(s + ': the batch adds 10 claims, all citing R777', (len(new), sum('R777' in c['reference_ids'].split(';') for c in new)), (10, 10))
     expect(s + ': no parent is set from a single manuscript', set(c['parent_unit_id'] for c in new), {''})
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 1 arrivals, approximate days, doubtful places and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 1)
     expect(s + ': every row has a place, a source locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R777: ') and 'old value none' in c['notes'] for c in new), True)
 
@@ -1405,7 +1411,8 @@ def scenario_50_fms_b849():
     new = [c for c in claims if BATCH50(c)]
     expect(s + ': the batch adds 12 claims, all citing R778', (len(new), sum('R778' in c['reference_ids'].split(';') for c in new)), (12, 12))
     expect(s + ': no parent is set from a single manuscript', set(c['parent_unit_id'] for c in new), {''})
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 1 arrivals, approximate days, doubtful places and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 1)
     expect(s + ': every row has a place, a source locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R778: ') and 'old value none' in c['notes'] for c in new), True)
 
@@ -1417,7 +1424,8 @@ def scenario_51_fms_b745():
     new = [c for c in claims if BATCH51(c)]
     expect(s + ': the batch adds 27 claims, all citing R779', (len(new), sum('R779' in c['reference_ids'].split(';') for c in new)), (27, 27))
     expect(s + ': no parent is set from a single manuscript', set(c['parent_unit_id'] for c in new), {''})
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 2 arrivals, approximate days, doubtful readings and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 2)
     expect(s + ': every row has a place, a source locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R779: ') and 'old value none' in c['notes'] for c in new), True)
     expect(s + ': the Nineteenth Army gets the 11 command posts of Anlage 4 after 1 April in date order', [c['date'] for c in new if c['unit_id'] == 'GER-ARMY-019A' and c['event_type'] == 'hq_move'], ['1945-04-09', '1945-04-20', '1945-04-21', '1945-04-22', '1945-04-23', '1945-04-25', '1945-04-27', '1945-04-28', '1945-04-29', '1945-05-02', '1945-05-04'])
@@ -1431,7 +1439,8 @@ def scenario_52_fms_b151():
     new = [c for c in claims if BATCH52(c)]
     expect(s + ': the batch adds 7 claims, all citing R780', (len(new), sum('R780' in c['reference_ids'].split(';') for c in new)), (7, 7))
     expect(s + ': no parent is set from a single manuscript', set(c['parent_unit_id'] for c in new), {''})
-    expect(s + ': confidence is 0.5 or 0.3 only', set(c['confidence'] for c in new) <= {'0.3', '0.5'}, True)
+    # 0.7 allowed only where a second source family corroborates (Stacey R668, 3 November 2026: C2229, C2230, C2232)
+    expect(s + ': confidence is 0.5 or 0.3 only, or 0.7 with a corroborating R668', all(c['confidence'] in ('0.3', '0.5') or (c['confidence'] == '0.7' and 'R668' in c['reference_ids'].split(';')) for c in new), True)
     expect(s + ': 3 arrivals, approximate days, doubtful readings and map positions capped at 0.3', sum(c['confidence'] == '0.3' for c in new), 3)
     expect(s + ': every row has a place, a source locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R780: ') and 'old value none' in c['notes'] for c in new), True)
     expect(s + ': the Fifth Panzer Army gets four headquarters rows from Le Hohwald to Dackscheid', [(c['date'], c['place_id']) for c in new if c['unit_id'] == 'GER-PZA-005A'], [('1944-09-11', 'PL1138'), ('1944-10-22', 'PL1039'), ('1944-11-23', 'PL1139'), ('1944-12-15', 'PL1140')])
@@ -2318,8 +2327,17 @@ def scenario_123_stacey_veritable():
     expect(s + ': Panzer Lehr arrives at Marienbaum on 18 February', any(claims[c]['unit_id'] == 'GER-PZ-LEHRD' and claims[c]['date'] == '1945-02-18' and claims[c]['place_id'] == 'PL1098' for c in new), True)
     expect(s + ': C1485 cites R668 and was raised to 0.7', ('R668' in claims['C1485']['reference_ids'].split(';'), claims['C1485']['confidence']), (True, '0.7'))
 
+def scenario_124_stacey_blockbuster():
+    """Stacey, The Victory Campaign, chapter XIX (Blockbuster, 22 February - 11 March 1945): new claims C7502-C7562 and R668 corroborations."""
+    s = 'scenario 124'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%d' % i for i in range(7502, 7563)]
+    expect(s + ': new rows cite only Stacey (plus geocoder) and have blank parents', all(claims[c]['reference_ids'].split(';')[0] == 'R668' and claims[c]['parent_unit_id'] == '' for c in new), True)
+    expect(s + ': the 116th Panzer Division is ordered back to Alpen on 3 March', any(claims[c]['unit_id'] == 'GER-PZ-116D' and claims[c]['date'] == '1945-03-03' and claims[c]['place_id'] == 'PL0764' for c in new), True)
+    expect(s + ': C2232 cites R668 and was raised to 0.7', ('R668' in claims['C2232']['reference_ids'].split(';'), claims['C2232']['confidence']), (True, '0.7'))
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster):
         before = len(FAILURES)
         try:
             fn()

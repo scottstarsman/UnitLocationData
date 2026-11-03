@@ -2220,6 +2220,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2046,
+     52.129
+    ]
+   },
+   "properties": {
+    "claim_id": "C7849",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL2291",
+    "location_name": "Bilthoven, Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Reinhard as commander of army troops in the Netherlands holds the Dutch sea front",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.1 (Fold3 image 7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -58873,8 +58914,8 @@
     "location_date": "1944-08-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R802;R002",
-    "source_locator": "R802: pages 568-572 (NAID 347778909), 347. I.D. Ia Nr. 1596/44 g.Kdos. of 30 August 1944"
+    "reference_ids": "R802;R811;R002",
+    "source_locator": "R802: pages 568-572 (NAID 347778909), 347. I.D. Ia Nr. 1596/44 g.Kdos. of 30 August 1944; R811: German p.1"
    }
   },
   {
@@ -59531,6 +59572,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 297"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8662,
+     50.4665
+    ]
+   },
+   "properties": {
+    "claim_id": "C7850",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-31",
+    "place_id": "PL0242",
+    "location_name": "Namur, Namur",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "347th Infantry Division drawn from the Netherlands sea front to the Charleville-Namur area",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.1 (Fold3 image 7)"
    }
   },
   {
@@ -60636,8 +60718,49 @@
     "location_date": "1944-09-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 302"
+    "reference_ids": "R668;R811;R002",
+    "source_locator": "R668: p. 302; R811: German pp.1-4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.93,
+     51.3289
+    ]
+   },
+   "properties": {
+    "claim_id": "C7853",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL3284",
+    "location_name": "Turnhout, Antwerp",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Chill, on his way to the Rhineland to refit the 85th Division, learns of the fall of Brussels at Turnhout and decides on his own to defend the Albert Canal",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.8-9 (Fold3 image 14-15)"
    }
   },
   {
@@ -61087,8 +61210,8 @@
     "location_date": "1944-09-04",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R593;R807;R001",
-    "source_locator": "R593: p. 366; R807: English p.3, German p.3"
+    "reference_ids": "R593;R807;R811;R001",
+    "source_locator": "R593: p. 366; R807: English p.3, German p.3; R811: German p.6"
    }
   },
   {
@@ -61333,8 +61456,8 @@
     "location_date": "1944-09-04",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 5; R668: p. 301"
+    "reference_ids": "R671;R668;R811;R002",
+    "source_locator": "R671: p. 5; R668: p. 301; R811: German p.3"
    }
   },
   {
@@ -61497,8 +61620,8 @@
     "location_date": "1944-09-04",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R608;R002",
-    "source_locator": "R608: p. 124"
+    "reference_ids": "R608;R811;R002",
+    "source_locator": "R608: p. 124; R811: German pp.8-9"
    }
   },
   {
@@ -61663,6 +61786,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Sketch 25 (The Coastal Belt, 4-12 September 1944)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2046,
+     52.129
+    ]
+   },
+   "properties": {
+    "claim_id": "C7851",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL2291",
+    "location_name": "Bilthoven, Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps at Bilthoven ordered by the WBN to take over the Albert Canal from Antwerp to Hasselt from early 5 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.1-2 (Fold3 image 7-8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5256,
+     51.6628
+    ]
+   },
+   "properties": {
+    "claim_id": "C7852",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL0801",
+    "location_name": "Moerdijk, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "719th Infantry Division, not yet fully relieved at Hoek van Holland, marches south over the Moerdijk bridges toward the Albert Canal",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.2-4 (Fold3 image 8-10)"
    }
   },
   {
@@ -64982,8 +65187,90 @@
     "location_date": "1944-09-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English p.6, German p.6"
+    "reference_ids": "R807;R811;R002",
+    "source_locator": "R807: English p.6, German p.6; R811: German pp.5-6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1806,
+     51.5448
+    ]
+   },
+   "properties": {
+    "claim_id": "C7854",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL1057",
+    "location_name": "Moergestel, Oisterwijk, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved from Bilthoven to Moergestel east of Tilburg; Student arrives and takes the corps under command",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.5-6 (Fold3 image 11-12)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2267,
+     51.049
+    ]
+   },
+   "properties": {
+    "claim_id": "C7855",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL0822",
+    "location_name": "Beringen, Limburg (BE)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "III Battalion, Infantry Regiment 723 (719th Division) at Beringen on the Albert Canal; the Dutch Waffen-SS battalion at the crossing north of Hasselt",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.5 (Fold3 image 11)"
    }
   },
   {
@@ -65351,8 +65638,8 @@
     "location_date": "1944-09-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English p.6, German p.6"
+    "reference_ids": "R807;R811;R002",
+    "source_locator": "R807: English p.6, German p.6; R811: German pp.8-9"
    }
   },
   {
@@ -65392,8 +65679,90 @@
     "location_date": "1944-09-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English p.7, German p.7"
+    "reference_ids": "R807;R811;R002",
+    "source_locator": "R807: English p.7, German p.7; R811: German p.9"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4397,
+     51.2439
+    ]
+   },
+   "properties": {
+    "claim_id": "C7856",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL1062",
+    "location_name": "Merksem, Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "719th Division holds the north bank of the Albert Canal either side of Merksem north of Antwerp until about 12 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.8-9 (Fold3 image 14-15)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4397,
+     51.2439
+    ]
+   },
+   "properties": {
+    "claim_id": "C7857",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-06",
+    "place_id": "PL1062",
+    "location_name": "Merksem, Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Parts of a British armoured division (identified by Reinhard as the 7th) attack the Albert Canal at Merksem (German account)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.8 (Fold3 image 14)"
    }
   },
   {
@@ -65720,8 +66089,90 @@
     "location_date": "1944-09-07",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English pp.5, 7, German pp.5, 7"
+    "reference_ids": "R807;R811;R002",
+    "source_locator": "R807: English pp.5, 7, German pp.5, 7; R811: German pp.9-10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2267,
+     51.049
+    ]
+   },
+   "properties": {
+    "claim_id": "C7858",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL0822",
+    "location_name": "Beringen, Limburg (BE)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "719th Division garrison surprised at Beringen; the bridge and town lost to a few enemy tanks",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.8, 10 (Fold3 image 14, 16)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0879,
+     51.0676
+    ]
+   },
+   "properties": {
+    "claim_id": "C7859",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL3573",
+    "location_name": "Tessenderlo, Limburg (BE)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "Chill counter-attacks the Beringen bridgehead from his forward command post at Tessenderlo with weak reserves and 1-2 battalions of Regiment von der Heydte",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.9-10 (Fold3 image 15-16)"
    }
   },
   {
@@ -65925,8 +66376,8 @@
     "location_date": "1944-09-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R002",
-    "source_locator": "R784: image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944"
+    "reference_ids": "R784;R811;R002",
+    "source_locator": "R784: image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944; R811: German pp.8-9"
    }
   },
   {
@@ -66376,8 +66827,8 @@
     "location_date": "1944-09-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English p.7, German p.7"
+    "reference_ids": "R807;R811;R002",
+    "source_locator": "R807: English p.7, German p.7; R811: German p.10"
    }
   },
   {
@@ -66788,6 +67239,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R807;R002",
     "source_locator": "R807: English p.7, German p.8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3639,
+     51.1237
+    ]
+   },
+   "properties": {
+    "claim_id": "C7860",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-ERDMD",
+    "unit_name": "Fallschirmjäger Division Erdmann",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-09",
+    "place_id": "PL1499",
+    "location_name": "Hechtel, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "Parachute Division Erdmann, not under the corps, approaches Hechtel from the north-east; Student's uncoordinated counter-attacks on the Beringen bridgehead fail",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.10 (Fold3 image 16)"
    }
   },
   {
@@ -67362,6 +67854,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 330"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9903,
+     51.1611
+    ]
+   },
+   "properties": {
+    "claim_id": "C7861",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-10",
+    "place_id": "PL3574",
+    "location_name": "Geel (Gheel), Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division Group Chill fights around and south of Geel after the enemy crosses the Albert Canal there",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.11 (Fold3 image 17)"
    }
   },
   {
@@ -71214,8 +71747,8 @@
     "location_date": "1944-09-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R786;R002",
-    "source_locator": "R786: images 1052-1053 (NAID 271847205), stamped pages 615-616, HGr B Ia Nr. 7284/44 g.Kdos of 11 September 1944, 22.30 hrs (Model)"
+    "reference_ids": "R786;R811;R002",
+    "source_locator": "R786: images 1052-1053 (NAID 271847205), stamped pages 615-616, HGr B Ia Nr. 7284/44 g.Kdos of 11 September 1944, 22.30 hrs (Model); R811: German p.17"
    }
   },
   {
@@ -71790,6 +72323,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R807;R002",
     "source_locator": "R807: English p.9, German p.10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8363,
+     51.1765
+    ]
+   },
+   "properties": {
+    "claim_id": "C7864",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-14",
+    "place_id": "PL3575",
+    "location_name": "Herentals (Heerenthals), Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps front taken back on Model's order to the line Herentals-Maas-Schelde link canal",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.11 (Fold3 image 17)"
    }
   },
   {
@@ -73355,6 +73929,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9678,
+     51.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C7862",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL1544",
+    "location_name": "Kasterlee, Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division Group Chill wins a defensive success at the Aart crossing against the 15th Scottish Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.11 (Fold3 image 17)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9678,
+     51.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C7863",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL1544",
+    "location_name": "Kasterlee, Antwerp",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "15th (Scottish) Division attacks Division Group Chill near Geel and the Aart crossing (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.11 (Fold3 image 17)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.375,
      47.7178
     ]
@@ -73806,6 +74462,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2346,
+     51.3712
+    ]
+   },
+   "properties": {
+    "claim_id": "C7865",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-16",
+    "place_id": "PL3576",
+    "location_name": "Bladel, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "245th Infantry Division arrives from the Scheldt and is put in east of the line Bladel-Wintelre to cover Division Chill",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.11-12 (Fold3 image 17-18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9305,
      51.7741
     ]
@@ -73866,7 +74563,7 @@
     "location_name": "Landing zones between Son and Veghel (centred at Sint-Oedenrode), Noord-Brabant, Netherlands",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "parachute and glider landing between Son and Veghel (Market Garden)",
     "operation_id": "OP-MARKET-GARDEN",
@@ -73879,8 +74576,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R336;R002",
-    "source_locator": null
+    "reference_ids": "R336;R811;R002",
+    "source_locator": "R811: German pp.13-14"
    }
   },
   {
@@ -74371,8 +75068,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R608;R443;R001",
-    "source_locator": "R608: p. 136; R443: p. 219"
+    "reference_ids": "R608;R443;R811;R001",
+    "source_locator": "R608: p. 136; R443: p. 219; R811: German p.14"
    }
   },
   {
@@ -74535,8 +75232,8 @@
     "location_date": "1944-09-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 30, 31, 34"
+    "reference_ids": "R671;R811;R002",
+    "source_locator": "R671: pp. 30, 31, 34; R811: German p.11"
    }
   },
   {
@@ -74822,8 +75519,8 @@
     "location_date": "1944-09-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English p.11, German p.12"
+    "reference_ids": "R807;R811;R002",
+    "source_locator": "R807: English p.11, German p.12; R811: German pp.14-15"
    }
   },
   {
@@ -74865,6 +75562,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R807;R002",
     "source_locator": "R807: English pp.11-12, German p.12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1806,
+     51.5448
+    ]
+   },
+   "properties": {
+    "claim_id": "C7867",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL1057",
+    "location_name": "Moergestel, Oisterwijk, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps at Moergestel reacts to the airborne landings; Tilburg police battalion and flak sent via Best to the Son heath",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.13-14 (Fold3 image 19-20)"
    }
   },
   {
@@ -75521,6 +76259,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 341-2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3939,
+     51.5034
+    ]
+   },
+   "properties": {
+    "claim_id": "C7868",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0555",
+    "location_name": "Best, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "Parts of the 245th Division with Infantry Regiment 723 remnants stop the airborne enemy spreading west over Best",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.14 (Fold3 image 20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3939,
+     51.5034
+    ]
+   },
+   "properties": {
+    "claim_id": "C7869",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-18",
+    "place_id": "PL0555",
+    "location_name": "Best, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "101st Airborne Division troops pressing west toward Best; prisoners identified (German account)",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.14 (Fold3 image 20)"
    }
   },
   {
@@ -76544,8 +77364,8 @@
     "location_date": "1944-09-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000106 situation 1200 hrs 19 September 1944"
+    "reference_ids": "R781;R811;R002",
+    "source_locator": "R781: sheet cs000106 situation 1200 hrs 19 September 1944; R811: German p.11"
    }
   },
   {
@@ -79095,6 +79915,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4882,
+     51.5177
+    ]
+   },
+   "properties": {
+    "claim_id": "C7870",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL0912",
+    "location_name": "Son, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "59th Infantry Division attacks from Boxtel through the Son heath, then is thrown back to the Best-Sint-Oedenrode road",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.14-15 (Fold3 image 20-21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9579,
+     51.6429
+    ]
+   },
+   "properties": {
+    "claim_id": "C7871",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL1058",
+    "location_name": "Dongen, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved from Moergestel to Dongen north-west of Tilburg",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.15 (Fold3 image 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -79669,6 +80571,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.165,
+     51.362
+    ]
+   },
+   "properties": {
+    "claim_id": "C7866",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-20",
+    "place_id": "PL3577",
+    "location_name": "Reusel, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "245th Division pushed back to the line Reusel-Middelbeers and holds after heavy fighting",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.12-13 (Fold3 image 18-19)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8731,
+     51.4375
+    ]
+   },
+   "properties": {
+    "claim_id": "C7872",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-20",
+    "place_id": "PL0799",
+    "location_name": "Baarle-Nassau, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXXXVIII Corps placed under the Fifteenth Army at Dordrecht; its right sector passes to LXVII Corps",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.17 (Fold3 image 23)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5447,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C7873",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-20",
+    "place_id": "PL0384",
+    "location_name": "Veghel, Noord-Brabant, Netherlands",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Two battalions of the 59th Division with an anti-tank company attack Veghel on Student's order and fail",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.15-16 (Fold3 image 21-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -80113,6 +81138,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: German p.4, English p.4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0338,
+     51.5056
+    ]
+   },
+   "properties": {
+    "claim_id": "C7874",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-21",
+    "place_id": "PL1751",
+    "location_name": "Goirle, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Division Group Chill pulled from the front to become army reserve at Goirle",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.15 (Fold3 image 21)"
    }
   },
   {
@@ -81432,6 +82498,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.474,
+     51.6494
+    ]
+   },
+   "properties": {
+    "claim_id": "C7875",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-23",
+    "place_id": "PL1688",
+    "location_name": "Heeswijk-Dinther, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Group Chill attacks beyond Schijndel toward the Sint-Oedenrode-Veghel road and repels enemy east of the Zuid-Willemsvaart near Dinther",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.15-16 (Fold3 image 21-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -81710,8 +82817,8 @@
     "location_date": "1944-09-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R002",
-    "source_locator": "R771: p. 16"
+    "reference_ids": "R771;R811;R002",
+    "source_locator": "R771: p. 16; R811: German p.15"
    }
   },
   {
@@ -81876,6 +82983,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 366"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4938,
+     51.5853
+    ]
+   },
+   "properties": {
+    "claim_id": "C7876",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-24",
+    "place_id": "PL3578",
+    "location_name": "Koevering (Meierijstad), Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Parts of the 59th Division with a corps anti-tank company temporarily cut the enemy supply road at Koevering",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.16 (Fold3 image 22)"
    }
   },
   {
@@ -87409,8 +88557,8 @@
     "location_date": "1944-09-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R002",
-    "source_locator": "R771: p. 25"
+    "reference_ids": "R771;R811;R002",
+    "source_locator": "R771: p. 25; R811: German pp.16-17"
    }
   },
   {
@@ -87655,8 +88803,8 @@
     "location_date": "1944-09-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R786;R002",
-    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+    "reference_ids": "R786;R811;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs); R811: German p.17"
    }
   },
   {
@@ -87737,8 +88885,8 @@
     "location_date": "1944-09-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R786;R002",
-    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+    "reference_ids": "R786;R811;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs); R811: German pp.15-17"
    }
   },
   {
@@ -88149,6 +89297,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 367"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.147,
+     51.487
+    ]
+   },
+   "properties": {
+    "claim_id": "C7879",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL3297",
+    "location_name": "Hilvarenbeek, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "245th Division withdrawn to the line north of Poppel-north of Hilvarenbeek-Oirschot",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.17 (Fold3 image 23)"
    }
   },
   {
@@ -88894,6 +90083,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.461,
+     51.5646
+    ]
+   },
+   "properties": {
+    "claim_id": "C7877",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-30",
+    "place_id": "PL3579",
+    "location_name": "Sint-Oedenrode (St. Oedenrode), Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "59th Division and Group Chill in defence 4-5 km west of the Best-Sint-Oedenrode-Veghel road",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Market Garden",
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.16 (Fold3 image 22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.434,
+     51.7277
+    ]
+   },
+   "properties": {
+    "claim_id": "C7878",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-30",
+    "place_id": "PL1687",
+    "location_name": "Nuland, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "712th Infantry Division, very weak, comes under LXXXVIII Corps on the line Middelrode-Nuland east of 's-Hertogenbosch",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Market Garden",
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.16 (Fold3 image 22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1552,
+     51.7292
+    ]
+   },
+   "properties": {
+    "claim_id": "C7880",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-30",
+    "place_id": "PL1743",
+    "location_name": "Herpt, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved to Herpt south-east of Heusden (as dated by Reinhard)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.18 (Fold3 image 24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.8538,
      50.9525
     ]
@@ -89254,8 +90566,8 @@
     "location_date": "1944-10-01",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.1, Anlage 1"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.1, Anlage 1; R811: German p.17"
    }
   },
   {
@@ -89461,6 +90773,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 381"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.434,
+     51.7277
+    ]
+   },
+   "properties": {
+    "claim_id": "C7881",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-02",
+    "place_id": "PL1687",
+    "location_name": "Nuland, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "A British armoured division (Reinhard thinks the 7th) identified from prisoners opposite the 712th Division east of 's-Hertogenbosch (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.18 (Fold3 image 24)"
    }
   },
   {
@@ -89828,8 +91181,8 @@
     "location_date": "1944-10-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000120 situation 1200 hrs 3 October 1944"
+    "reference_ids": "R781;R811;R002",
+    "source_locator": "R781: sheet cs000120 situation 1200 hrs 3 October 1944; R811: German p.18"
    }
   },
   {
@@ -94174,8 +95527,8 @@
     "location_date": "1944-10-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R809;R001",
-    "source_locator": "R771: pp. 30 and 31; R809: German p.3, English p.3"
+    "reference_ids": "R771;R809;R811;R001",
+    "source_locator": "R771: pp. 30 and 31; R809: German p.3, English p.3; R811: German p.17"
    }
   },
   {
@@ -94338,8 +95691,8 @@
     "location_date": "1944-10-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.3, English p.3"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.3, English p.3; R811: German p.17"
    }
   },
   {
@@ -94668,6 +96021,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R807;R002",
     "source_locator": "R807: English p.14, German p.15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "claim_id": "C7882",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL0826",
+    "location_name": "Hedel, Maasdriel, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps holds a bridgehead at Hedel on the Maas north of 's-Hertogenbosch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.18-20, 23 (Fold3 image 24-26, 29)"
    }
   },
   {
@@ -101267,8 +102661,8 @@
     "location_date": "1944-10-12",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.4-5, English p.5"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.4-5, English p.5; R811: German p.23"
    }
   },
   {
@@ -102661,8 +104055,8 @@
     "location_date": "1944-10-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.4, English p.4"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.4, English p.4; R811: German p.22"
    }
   },
   {
@@ -108738,6 +110132,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0338,
+     51.5056
+    ]
+   },
+   "properties": {
+    "claim_id": "C7884",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-CHILL",
+    "unit_name": "Kampfgruppe Chill",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-10-20",
+    "place_id": "PL1751",
+    "location_name": "Goirle, Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Division Group Chill pulled out of the Goirle area on Fifteenth Army orders for a crisis south of Bergen op Zoom (as dated by Reinhard)",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.22 (Fold3 image 28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -108861,6 +110296,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1986,
+     51.5661
+    ]
+   },
+   "properties": {
+    "claim_id": "C7883",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-21",
+    "place_id": "PL0854",
+    "location_name": "Oisterwijk, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Left wing of the 245th Division taken back step by step to the Oisterwijk area",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.21 (Fold3 image 27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8642,
      50.4925
     ]
@@ -108975,8 +110451,8 @@
     "location_date": "1944-10-22",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 123, 124"
+    "reference_ids": "R671;R811;R002",
+    "source_locator": "R671: pp. 123, 124; R811: German pp.20, 22"
    }
   },
   {
@@ -109221,8 +110697,8 @@
     "location_date": "1944-10-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R001",
-    "source_locator": "R771: p. 45"
+    "reference_ids": "R771;R811;R001",
+    "source_locator": "R771: p. 45; R811: German p.22"
    }
   },
   {
@@ -109262,8 +110738,8 @@
     "location_date": "1944-10-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R809;R002",
-    "source_locator": "R771: p. 45; R809: German pp.3-4, English p.4"
+    "reference_ids": "R771;R809;R811;R002",
+    "source_locator": "R771: p. 45; R809: German pp.3-4, English p.4; R811: German p.22"
    }
   },
   {
@@ -116109,8 +117585,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.5, English p.5"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.5, English p.5; R811: German p.20"
    }
   },
   {
@@ -116314,8 +117790,8 @@
     "location_date": "1944-10-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.6, English p.6"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.6, English p.6; R811: German p.20"
    }
   },
   {
@@ -116642,8 +118118,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.7, English p.7"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.7, English p.7; R811: German p.22"
    }
   },
   {
@@ -116685,6 +118161,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.089,
+     51.736
+    ]
+   },
+   "properties": {
+    "claim_id": "C7886",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-30",
+    "place_id": "PL3563",
+    "location_name": "Genderen (Altena), Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXXXVIII Corps command post moved to Genderen",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.23 (Fold3 image 29)"
    }
   },
   {
@@ -122965,6 +124482,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0487,
+     51.6411
+    ]
+   },
+   "properties": {
+    "claim_id": "C7885",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-31",
+    "place_id": "PL3580",
+    "location_name": "Loon op Zand, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps line at the end of October: Dongen-Wilhelmina Canal-Loon op Zand-Zandkant-canal west of 's-Hertogenbosch",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.22-23 (Fold3 image 28-29)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5623,
      48.7797
     ]
@@ -123448,8 +125006,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.8, English p.8"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.8, English p.8; R811: German p.24"
    }
   },
   {
@@ -123489,8 +125047,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.9, English p.9"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.9, English p.9; R811: German p.25"
    }
   },
   {
@@ -123785,6 +125343,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9855,
+     51.6918
+    ]
+   },
+   "properties": {
+    "claim_id": "C7887",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-02",
+    "place_id": "PL3581",
+    "location_name": "Capelle (Waalwijk), Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps front pulled back to 3 km south of Raamsdonksveer-south of Capelle-Baardwijk-Kromvoirt bridge-Engelen",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.24 (Fold3 image 30)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1898,
+     51.7822
+    ]
+   },
+   "properties": {
+    "claim_id": "C7888",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-02",
+    "place_id": "PL3582",
+    "location_name": "Zaltbommel, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Remnants of the 712th Division withdrawn via Heusden to refit south of Zaltbommel",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.24 (Fold3 image 30)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9607,
+     51.7706
+    ]
+   },
+   "properties": {
+    "claim_id": "C7889",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-02",
+    "place_id": "PL3561",
+    "location_name": "Almkerk (Altena), Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "256th Volksgrenadier Division command post at Almkerk",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.25 (Fold3 image 31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.5552,
      51.3958
     ]
@@ -124022,8 +125703,8 @@
     "location_date": "1944-11-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.9-10, English pp.9-10"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.9-10, English pp.9-10; R811: German pp.25-26"
    }
   },
   {
@@ -124195,6 +125876,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7645,
+     51.3844
+    ]
+   },
+   "properties": {
+    "claim_id": "C7890",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-04",
+    "place_id": "PL2117",
+    "location_name": "Heusden, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVIII Corps front withdrawn to the north bank of the Maas, bridgeheads at Raamsdonksveer, Heusden and Hedel",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.25-26 (Fold3 image 31-32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.1138,
      51.6573
     ]
@@ -124268,8 +125990,8 @@
     "location_date": "1944-11-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.12, English p.12, Anlage 1"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.12, English p.12, Anlage 1; R811: German p.26"
    }
   },
   {
@@ -124309,8 +126031,8 @@
     "location_date": "1944-11-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.12, English p.12"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.12, English p.12; R811: German pp.26-27"
    }
   },
   {
@@ -124350,8 +126072,49 @@
     "location_date": "1944-11-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.12, English p.12"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.12, English p.12; R811: German pp.26-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "claim_id": "C7891",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL0826",
+    "location_name": "Hedel, Maasdriel, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps front on the north bank of the Maas from the Biesbosch via the Hedel bridgehead to east of Rossum, then the Waal to Tiel and Ochten and north to Opheusden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.26-27 (Fold3 image 32-33)"
    }
   },
   {
@@ -130910,8 +132673,8 @@
     "location_date": "1944-11-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R809;R002",
-    "source_locator": "R771: p. 48 and annex map; R809: German p.12, English p.12"
+    "reference_ids": "R771;R809;R811;R002",
+    "source_locator": "R771: p. 48 and annex map; R809: German p.12, English p.12; R811: German p.25"
    }
   },
   {
@@ -131853,8 +133616,8 @@
     "location_date": "1944-11-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R251;R434;R001",
-    "source_locator": "R251: table of 1944, 10 November row; R434: p. 395"
+    "reference_ids": "R251;R434;R811;R001",
+    "source_locator": "R251: table of 1944, 10 November row; R434: p. 395; R811: German p.30"
    }
   },
   {
@@ -138905,8 +140668,8 @@
     "location_date": "1944-11-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.12, English p.12"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.12, English p.12; R811: German p.27"
    }
   },
   {
@@ -139438,8 +141201,8 @@
     "location_date": "1944-11-17",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.15, English p.15"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.15, English p.15; R811: German p.28"
    }
   },
   {
@@ -139848,8 +141611,8 @@
     "location_date": "1944-11-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R808;R002",
-    "source_locator": "R808: German p.3, English p.3, Anlage 2"
+    "reference_ids": "R808;R811;R002",
+    "source_locator": "R808: German p.3, English p.3, Anlage 2; R811: German p.28"
    }
   },
   {
@@ -147515,8 +149278,8 @@
     "location_date": "1944-11-25",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.15, English p.15"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.15, English p.15; R811: German p.28"
    }
   },
   {
@@ -147556,8 +149319,8 @@
     "location_date": "1944-11-25",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.15, English p.15"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.15, English p.15; R811: German p.28"
    }
   },
   {
@@ -148296,6 +150059,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R770;R652;R653;R002",
     "source_locator": "R770: pp. 79 and 84; R652: ch. 21 p. 379; R653: ch. 12 p. 547"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2597,
+     51.7449
+    ]
+   },
+   "properties": {
+    "claim_id": "C7892",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-27",
+    "place_id": "PL0826",
+    "location_name": "Hedel, Maasdriel, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Hedel bridgehead evacuated voluntarily with army approval",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.27 (Fold3 image 33)"
    }
   },
   {
@@ -154116,8 +155920,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.16, English p.16"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.16, English p.16; R811: German p.29"
    }
   },
   {
@@ -154405,6 +156209,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R772;R002",
     "source_locator": "R772: p. 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7893",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "6th Parachute Division on the Lek either side of Arnhem comes under LXXXVIII Corps; the corps has three divisions in line",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.28 (Fold3 image 34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "claim_id": "C7894",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL1065",
+    "location_name": "Dordrecht, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "711th Infantry Division, weak, holds the corps right on the north bank of the Maas from the Biesbosch and Dordrecht to the Hedel bridge",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.28 (Fold3 image 34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4373,
+     51.8874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7895",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL1630",
+    "location_name": "Tiel, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "712th Infantry Division in the corps centre from the Hedel bridge via Rossum-Tiel-Ochten to the Lek at Opheusden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.27-28 (Fold3 image 33-34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8833,
+     51.9582
+    ]
+   },
+   "properties": {
+    "claim_id": "C7896",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-11-30",
+    "place_id": "PL1819",
+    "location_name": "Elden (Arnhem), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division on the north bank of the Lek from east of Rhenen to the railway bridge west of Arnhem, and forward in the Rhine-Waal angle 2 km west of Elden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.28 (Fold3 image 34)"
    }
   },
   {
@@ -154774,6 +156742,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R770;R002",
     "source_locator": "R770: Anlagen 20 and 21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5671,
+     51.9076
+    ]
+   },
+   "properties": {
+    "claim_id": "C7897",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-03",
+    "place_id": "PL3583",
+    "location_name": "Ochten (Neder-Betuwe), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "712th Division forced into a considerable rearward regrouping by the flooding of the Betuwe",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R811;R002",
+    "source_locator": "R811: German p.29 (Fold3 image 35)"
    }
   },
   {
@@ -160430,8 +162439,8 @@
     "location_date": "1944-12-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.16, English p.16"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.16, English p.16; R811: German p.30"
    }
   },
   {
@@ -178798,8 +180807,8 @@
     "location_date": "1944-12-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.16, English p.16"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.16, English p.16; R811: German p.29"
    }
   },
   {
@@ -178839,8 +180848,8 @@
     "location_date": "1944-12-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.18, English p.18"
+    "reference_ids": "R809;R811;R002",
+    "source_locator": "R809: German p.18, English p.18; R811: German p.30"
    }
   },
   {
@@ -180069,8 +182078,8 @@
     "location_date": "1944-12-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 447"
+    "reference_ids": "R668;R811;R002",
+    "source_locator": "R668: p. 447; R811: German p.30"
    }
   },
   {

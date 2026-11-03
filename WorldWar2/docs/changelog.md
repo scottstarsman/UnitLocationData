@@ -3234,3 +3234,7 @@ Roll 440 (7. Fallschirmjäger-Division Ia item 77125, 576 pages) read in the Ger
 ## nara-microfilm: NARA T-314 roll 1607, second pass on pages 743-871 (3 November 2026)
 
 Pages 743-871 of roll 1607 (`R798`), left over from the first pass, rendered and read in the German original on 3 November 2026 (pages 836 and 843 unreadable). They hold LXXXVI Corps Anlagen of 3-14 June 1944 and section activity reports for January-June 1944. They confirm `C7135` (Dax, 15 June 1944) and agree with `C2076` (the Orne sector, late June). The move of the corps command post to Herm (16 February 1944) falls before the dataset period. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-354 roll 130 (2nd SS Panzer Division files 1940-45; 3 November 2026)
+
+Roll 130 (NAID 267487470, 1278 frames) read in the German original on 3 November 2026. Frames 1-875, which hold the 1943-45 material, were read by OCR. The remaining frames (1940-41, and the 3rd SS Panzer Division 1938-41) fall before the dataset period. The 1944-45 papers are personnel and replacement paperwork with no places, plus a war game of 6 October 1944 set in Luxembourg (frames 56-59). The war game describes an exercise, not a real position, and is not used. **No claims, places or references added; no existing row changed.** Reading notes private.

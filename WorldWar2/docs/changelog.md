@@ -2,6 +2,12 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: Cole, The Ardennes, second pass: Cole as a corroborating source on existing rows (3 November 2026)
+
+- **Corroborations, no new mechanism.** The dataset has no separate corroboration table; a row with several sources lists every reference in `reference_ids`, every URL in `source` (joined by ` | `) and a locator per reference in `source_locator`. That existing multi-reference mechanism is used here. Five rows get a Cole chapter appended: `C4787` (101st Airborne, Mande-Saint-Étienne, 19 Dec; `R384` p. 307), `C1903` (28th Division, Neufchâteau, 22 Dec; `R385` p. 328), `C7136` (26th Volksgrenadier Division, Longvilly, 19 Dec; `R384` p. 304), `C2181` (2d Panzer Division, Ortheuville, 20 Dec; `R388` p. 429), `C2182` (116th Panzer Division, Samrée, 20 Dec; `R388` p. 429, `R386` p. 358). Each note records old and new `reference_ids` and the reason.
+- **No value changed:** coordinates, dates, places and confidence are unchanged (`C4787` is a map row). Raising confidence where two source families now agree is left for Scott's review.
+- **Semantic scenario 114.**
+
 ## cole-ardennes: Cole, The Ardennes, second pass: US and British division, corps and army positions (chs. 5-24) (3 November 2026)
 
 Second pass of Cole (approved by Scott on 3 November 2026), US and British formations. Reading notes private.

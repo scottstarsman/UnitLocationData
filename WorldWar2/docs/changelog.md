@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: Cole, The Ardennes, second pass: US and British division, corps and army positions (chs. 5-24) (3 November 2026)
+
+Second pass of Cole (approved by Scott on 3 November 2026), US and British formations. Reading notes private.
+
+- **New claims** `C7179`-`C7221` (43 rows; each note quotes Cole's full sentence and carries old value none, new value and reason; inferred dates and the one widened precision are marked with old value, new value and reason): command posts and headquarters (V Corps Eupen 16 Dec; First Army Spa 16 Dec; 7th Armored Heerlen 16 Dec; 2d Division Wirtzfeld 17 Dec; 99th Division Elsenborn 18 Dec; 106th Division Vielsalm 18 Dec; 28th Division Sibret 19 Dec and Vaux-lez-Rosières 21 Dec; 3d Armored Hotton 20 Dec and Erezée 21 Dec; III Corps Arlon 20 Dec; 4th Division by its 12th Infantry command post at Junglinster 16 Dec, 0.5), and dated positions of the 1st, 2d, 5th, 9th, 26th, 30th, 35th, 75th, 80th, 84th and 87th Infantry, the 2d, 3d, 4th, 6th, 7th, 9th, 10th and 11th Armored and the 17th, 82d and 101st Airborne Divisions, the British 30 Corps (Boxtel, 19 Dec) and the British 43d (west of Maastricht, 20 Dec, 0.5) and 53d Divisions (relief of the 84th at Marche, 1 Jan). Parents blank on all rows; strengths kept in the private notes.
+- **New places** `PL3338` to `PL3352` (Waimes, Bütgenbach, Höfen, Sibret, Vaux-lez-Rosières, Eisenborn, Érezée, Celles, Heiderscheid, Grosbous, Chaumont, Scheidgen, Junglinster, Charleville-Mézières, Moircy; OpenStreetMap Nominatim, searched 3 November 2026).
+- **Not added because Cole is already cited on the matching row:** `C0545` (VIII Corps to Neufchâteau 18 Dec), `C0519` (First Army to Chaudfontaine), `C0550` (10th Armored from Thionville), `C0551` (82d Airborne to Werbomont), `C0552` (XVIII Airborne Corps), `C0557` (4th Armored at Assenois), `C1725` (517th at Manhay), `C1732` (509th at Sadzot). The 28th Division at Neufchâteau on 22 Dec and the 101st Airborne at Mande-Saint-Étienne on 19 Dec are recorded as corroborations in the next commit.
+- **No existing row changed.** Disagreements logged as roadmap points 233-236 with a recommendation each.
+- **Semantic scenario 113.**
+
 ## cole-ardennes: Cole, The Ardennes, second pass: German facts left from the first pass (chs. 6, 14, 16, 21-23) (3 November 2026)
 
 Second, complete pass of Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), approved by Scott on 3 November 2026. Reading notes private.

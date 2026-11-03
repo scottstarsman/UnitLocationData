@@ -30,17 +30,17 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Poland | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 23 |
 | UK | army | 0 | 0 | 1 | 1 | 0 | 47 |
-| UK | corps | 0 | 0 | 5 | 5 | 1 | 178 |
-| UK | division | 0 | 0 | 16 | 16 | 7 | 595 |
+| UK | corps | 0 | 0 | 5 | 5 | 1 | 179 |
+| UK | division | 0 | 0 | 16 | 16 | 7 | 597 |
 | UK | brigade | 0 | 0 | 11 | 11 | 7 | 52 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 23 |
-| US | army | 0 | 0 | 5 | 5 | 3 | 202 |
-| US | corps | 2 | 0 | 15 | 17 | 7 | 552 |
-| US | division | 0 | 0 | 61 | 61 | 25 | 2061 |
+| US | army | 0 | 0 | 5 | 5 | 3 | 203 |
+| US | corps | 2 | 0 | 15 | 17 | 7 | 554 |
+| US | division | 0 | 0 | 61 | 61 | 25 | 2098 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **67** | **0** | **321** | **388** | **258** | **7172** |
+| **All** | | **67** | **0** | **321** | **388** | **258** | **7215** |
 
 ## Operations
 
@@ -49,29 +49,29 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 1 | 0 | 0 |
-| campaign | 9 | 9 | 6166 |
+| campaign | 9 | 9 | 6209 |
 | operation | 33 | 33 | 508 |
 | battle | 20 | 20 | 417 |
 | phase | 4 | 4 | 81 |
-| **All** | **67** | **66** | **7172** |
+| **All** | **67** | **66** | **7215** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3322 places and 160 alias names for 7172 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3337 places and 165 alias names for 7215 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3218 | 6975 |
-| area | 86 | 177 |
+| point | 3233 | 7017 |
+| area | 86 | 178 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1414 | 2931 |
-| Germany (DE) | 1129 | 2364 |
-| Netherlands (NL) | 368 | 985 |
-| Belgium (BE) | 297 | 641 |
-| Luxembourg (LU) | 70 | 182 |
+| France (FR) | 1415 | 2933 |
+| Germany (DE) | 1130 | 2365 |
+| Netherlands (NL) | 368 | 988 |
+| Belgium (BE) | 305 | 670 |
+| Luxembourg (LU) | 75 | 190 |
 | Austria (AT) | 25 | 39 |
 | Czechia (CZ) | 14 | 22 |
 | United Kingdom (GB) | 5 | 8 |

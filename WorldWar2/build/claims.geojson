@@ -157159,6 +157159,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0313,
+     50.6306
+    ]
+   },
+   "properties": {
+    "claim_id": "C7179",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-005C",
+    "unit_name": "V Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0139",
+    "location_name": "Eupen, Liege",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "V Corps headquarters at Eupen",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 86"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8642,
+     50.4925
+    ]
+   },
+   "properties": {
+    "claim_id": "C7190",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARMY-001A",
+    "unit_name": "First Army",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL0311",
+    "location_name": "Spa, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "army command post at Spa",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R711;R002",
+    "source_locator": "R711: p. 259"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9833,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7191",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL0172",
+    "location_name": "Heerlen, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Heerlen",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R383;R002",
+    "source_locator": "R383: p. 274"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2523,
+     49.7118
+    ]
+   },
+   "properties": {
+    "claim_id": "C7210",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-16",
+    "place_id": "PL3350",
+    "location_name": "Junglinster, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "12th Infantry command post at Junglinster",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R805;R002",
+    "source_locator": "R805: p. 241"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -157610,6 +157774,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2619,
+     50.4284
+    ]
+   },
+   "properties": {
+    "claim_id": "C7182",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-17",
+    "place_id": "PL2241",
+    "location_name": "Wirtzfeld, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Wirtzfeld",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R644;R002",
+    "source_locator": "R644: p. 104"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     50.2833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7192",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-17",
+    "place_id": "PL0367",
+    "location_name": "Vielsalm, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "CCB reaches Vielsalm",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R383;R002",
+    "source_locator": "R383: p. 275"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4351,
      49.8408
     ]
@@ -157965,6 +158211,170 @@
     "operation_type": "operation",
     "campaign": "Rhineland",
     "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R384;R002",
+    "source_locator": "R384: p. 297"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2214,
+     50.4573
+    ]
+   },
+   "properties": {
+    "claim_id": "C7184",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-099D",
+    "unit_name": "99th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL0132",
+    "location_name": "Elsenborn, Liege",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division headquarters at Elsenborn",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R804;R002",
+    "source_locator": "R804: p. 118"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0276,
+     50.4265
+    ]
+   },
+   "properties": {
+    "claim_id": "C7186",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-030D",
+    "unit_name": "30th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL0923",
+    "location_name": "Malmédy, Liège",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "moves to Malmédy with the 120th Infantry leading",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R386;R002",
+    "source_locator": "R386: p. 335"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     50.2833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7187",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-106D",
+    "unit_name": "106th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL0367",
+    "location_name": "Vielsalm, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "command post moves to Vielsalm",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R383;R002",
+    "source_locator": "R383: p. 288"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8368,
+     50.0249
+    ]
+   },
+   "properties": {
+    "claim_id": "C7194",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-009D",
+    "unit_name": "9th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-18",
+    "place_id": "PL3315",
+    "location_name": "Longvilly (Bastogne), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "CCR holds Longvilly",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
     "sub_operation_name": null,
     "strength_status": "unknown",
     "location_date": "1944-12-18",
@@ -164047,6 +164457,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1223,
+     50.4724
+    ]
+   },
+   "properties": {
+    "claim_id": "C7180",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL3338",
+    "location_name": "Waimes, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "16th Infantry detrucks on the Waimes front",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R804;R002",
+    "source_locator": "R804: p. 130"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6352,
+     49.9683
+    ]
+   },
+   "properties": {
+    "claim_id": "C7188",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL3341",
+    "location_name": "Sibret (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves from Wiltz to Sibret",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R393;R002",
+    "source_locator": "R393: p. 208"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3158,
+     51.5891
+    ]
+   },
+   "properties": {
+    "claim_id": "C7211",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL0693",
+    "location_name": "Boxtel, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "ordered from Boxtel to the Liège-Brussels area",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 557"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -164744,6 +165277,293 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2054,
+     50.4267
+    ]
+   },
+   "properties": {
+    "claim_id": "C7181",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3339",
+    "location_name": "Bütgenbach, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "26th Infantry holds Bütgenbach on the 2d Division flank",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R804;R002",
+    "source_locator": "R804: p. 128"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2214,
+     50.4573
+    ]
+   },
+   "properties": {
+    "claim_id": "C7183",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-002D",
+    "unit_name": "2nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL0132",
+    "location_name": "Elsenborn, Liege",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "withdraws from the twin villages to the Elsenborn ridge",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R804;R002",
+    "source_locator": "R804: p. 123"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2569,
+     50.5353
+    ]
+   },
+   "properties": {
+    "claim_id": "C7185",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-009D",
+    "unit_name": "9th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3340",
+    "location_name": "Höfen (Monschau), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "takes over the Monschau-Höfen sector",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R804;R002",
+    "source_locator": "R804: p. 133"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1845,
+     49.6912
+    ]
+   },
+   "properties": {
+    "claim_id": "C7195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-010D",
+    "unit_name": "10th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-20",
+    "place_id": "PL3343",
+    "location_name": "Eisenborn (Junglinster), Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "regroup",
+    "current_activity": "CCA assembles around Eisenborn",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R805;R002",
+    "source_locator": "R805: p. 257"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4342,
+     50.2676
+    ]
+   },
+   "properties": {
+    "claim_id": "C7198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-20",
+    "place_id": "PL1071",
+    "location_name": "Hotton, Luxembourg (BE)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "forward command post moves to Hotton",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R386;R002",
+    "source_locator": "R386: p. 353"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8167,
+     49.6833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL0012",
+    "location_name": "Arlon, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "corps command post at Arlon",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 514"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C7212",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL0202",
+    "location_name": "Maastricht area, Albert Canal–Meuse",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "west of Maastricht",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 561"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -164983,6 +165803,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R695;R002",
     "source_locator": "R695: p. 378"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5647,
+     49.9119
+    ]
+   },
+   "properties": {
+    "claim_id": "C7189",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL3342",
+    "location_name": "Vaux-lez-Rosières (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "command post moves to Vaux-lez-Rosières",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R385;R002",
+    "source_locator": "R385: p. 324"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5427,
+     50.2945
+    ]
+   },
+   "properties": {
+    "claim_id": "C7199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-21",
+    "place_id": "PL3344",
+    "location_name": "Érezée, Luxembourg province",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "division command post at Erezée",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R695;R002",
+    "source_locator": "R695: p. 378"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3333,
+     50.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C7200",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL0210",
+    "location_name": "Marche-en-Famenne, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "holds Marche and the Hotton-Marche line",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R388;R002",
+    "source_locator": "R388: p. 431"
    }
   },
   {
@@ -165564,6 +166507,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9517,
+     49.8402
+    ]
+   },
+   "properties": {
+    "claim_id": "C7205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL3347",
+    "location_name": "Grosbous, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "104th Infantry holds Grosbous",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 522"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3603,
+     49.7806
+    ]
+   },
+   "properties": {
+    "claim_id": "C7209",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-005D",
+    "unit_name": "5th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL3349",
+    "location_name": "Scheidgen (Consdorf), Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "10th Infantry attacks from the Scheidgen-Michelshof crossroad",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R390;R002",
+    "source_locator": "R390: p. 492"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -166097,6 +167122,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     50.2833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7193",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL0367",
+    "location_name": "Vielsalm, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "last of CCA crosses the Salm at Vielsalm",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R387;R002",
+    "source_locator": "R387: p. 419"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9669,
+     49.8893
+    ]
+   },
+   "properties": {
+    "claim_id": "C7204",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-080D",
+    "unit_name": "80th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL3346",
+    "location_name": "Heiderscheid (Esch-sur-Sûre), Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "319th Infantry holds Heiderscheid",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 536"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6712,
+     49.92
+    ]
+   },
+   "properties": {
+    "claim_id": "C7207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL3348",
+    "location_name": "Chaumont (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "CCB assault reaches Chaumont",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 529"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8465,
      50.4112
     ]
@@ -166466,6 +167614,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5738,
+     50.3225
+    ]
+   },
+   "properties": {
+    "claim_id": "C7202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-075D",
+    "unit_name": "75th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-24",
+    "place_id": "PL2595",
+    "location_name": "Fanzel, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "289th Infantry starts forward from Fanzel",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R002",
+    "source_locator": "R696: p. 591"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7924,
+     49.8498
+    ]
+   },
+   "properties": {
+    "claim_id": "C7208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-004D",
+    "unit_name": "4th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL2532",
+    "location_name": "Bigonville, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "CCR takes Bigonville",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 552"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8249,
+     50.1363
+    ]
+   },
+   "properties": {
+    "claim_id": "C7215",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-011D",
+    "unit_name": "11th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL0954",
+    "location_name": "Givet, Ardennes",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "part of the division reaches the west bank of the Meuse, Givet-Semois sector",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 560"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -166746,6 +168017,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R696;R002",
     "source_locator": "R696: p. 591"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8703,
+     50.3727
+    ]
+   },
+   "properties": {
+    "claim_id": "C7197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-25",
+    "place_id": "PL0884",
+    "location_name": "Trois-Ponts, Liège",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "pulls back to the Trois-Ponts-Vaux-Chavanne line",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R002",
+    "source_locator": "R696: p. 587"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0058,
+     50.2313
+    ]
+   },
+   "properties": {
+    "claim_id": "C7201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-25",
+    "place_id": "PL3345",
+    "location_name": "Celles (Houyet), Namur",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "CCB attacks to capture Celles",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 568"
    }
   },
   {
@@ -171960,6 +173313,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C7196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-26",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "defense",
+    "current_activity": "siege of Bastogne ends with contact with the 4th Armored Division",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R389;R002",
+    "source_locator": "R389: p. 480"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9348,
+     49.8845
+    ]
+   },
+   "properties": {
+    "claim_id": "C7206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-26",
+    "place_id": "PL0928",
+    "location_name": "Eschdorf, Esch-sur-Sûre, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Eschdorf cleared",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 543"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -172158,6 +173593,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R696;R002",
     "source_locator": "R696: p. 600"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7207,
+     49.7736
+    ]
+   },
+   "properties": {
+    "claim_id": "C7217",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-017D",
+    "unit_name": "17th Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-12-27",
+    "place_id": "PL3351",
+    "location_name": "Charleville-Mézières, Ardennes",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "closes at Charleville",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 560"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.779,
+     49.9021
+    ]
+   },
+   "properties": {
+    "claim_id": "C7219",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-27",
+    "place_id": "PL2502",
+    "location_name": "Surré, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacks across the Sûre at Surré",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 607"
    }
   },
   {
@@ -172411,6 +173928,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4351,
+     49.8408
+    ]
+   },
+   "properties": {
+    "claim_id": "C7216",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-011D",
+    "unit_name": "11th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-29",
+    "place_id": "PL0248",
+    "location_name": "Neufchâteau, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "forced march to the Neufchâteau area",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 617"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7342,
+     49.959
+    ]
+   },
+   "properties": {
+    "claim_id": "C7220",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-29",
+    "place_id": "PL3327",
+    "location_name": "Lutrebois (Bastogne), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "134th Infantry attacks Lutrebois",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 609"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9832,
      51.7141
     ]
@@ -172527,6 +174126,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R709;R002",
     "source_locator": "R709: p. 619"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4681,
+     49.9895
+    ]
+   },
+   "properties": {
+    "claim_id": "C7218",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-30",
+    "place_id": "PL3352",
+    "location_name": "Moircy (Libramont-Chevigny), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "345th Infantry attacks Moircy",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 643"
    }
   },
   {
@@ -172732,6 +174372,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R752;R001",
     "source_locator": "R752: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3333,
+     50.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C7213",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0210",
+    "location_name": "Marche-en-Famenne, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "relieves the US 84th Infantry Division at Marche",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 577"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3333,
+     50.2167
+    ]
+   },
+   "properties": {
+    "claim_id": "C7214",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0210",
+    "location_name": "Marche-en-Famenne, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "relieved by the British 53d Division and moves north",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R708;R002",
+    "source_locator": "R708: p. 577"
    }
   },
   {
@@ -177693,6 +179415,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.785,
+     50.0144
+    ]
+   },
+   "properties": {
+    "claim_id": "C7221",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-02",
+    "place_id": "PL3320",
+    "location_name": "Mageret (Bastogne), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "attacks from Mageret toward Arloncourt",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R709;R002",
+    "source_locator": "R709: p. 632"
    }
   },
   {

@@ -3606,3 +3606,15 @@ FMS B-762 (Heinz von Prittwitz und Gaffron, Steimbel, 17 December 1947; comment 
   - `C7579`, `C7580`, `C7621`, `C7632`, `C7679`: unchanged; agreement approximate in date or place, or map-only support (`C7679`).
 - **Roadmap:** 259 opened.
 - **Tests:** scenario 136 added.
+
+## fms-fold3-netherlands: roadmap 240 closed and 253 resolved (3 November 2026)
+
+Scott approved both recommendations on 3 November 2026 (message t293u).
+
+- **Roadmap 240 (Battle Group Chill, 4-6 October 1944):** closed. `C2174` and `C7799` (4 October, first parts of the 85th Division attack north of Poppel) and `C7348` (6 October, the division heavily committed covering Tilburg) are consecutive phases, not a conflict; kept ungrouped. No data changed.
+- **Roadmap 253 (stale 12th Army Group map symbols, `R781`):** the map rows are kept as alternates; nothing deleted, all confidences unchanged at 0.3. Reason: the text rows put the units on the Peel front (Student, Ellis) or the First Parachute Army front (Stacey, Schlemm) while the map symbols, 310-400 km south, look stale from the units' Lorraine and Alsace periods; map rows never outrank text.
+  - G061 (new): `C7741` (XLVII Panzer Corps, Meijel, 27 October) preferred; `C3681` (24 October) and `C3823` (31 October): conflict_group_id old value blank, new value G061; claim_status old value preferred, new value alternate.
+  - G062 (new): `C7742` (15th Panzergrenadier Division, Meijel, 27 October) preferred; `C3679` (24 October): conflict_group_id old value blank, new value G062; claim_status old value preferred, new value alternate.
+  - G056 (extended): `C5924` (20 February 1945) and `C6192` (6 March 1945), LXIII Corps at Freiburg: conflict_group_id old value blank, new value G056; claim_status old value preferred, new value alternate; `C7510` stays preferred.
+  - `C2056` (Ellis, 14 October) not grouped: a different date that agrees with the preferred rows.
+- **Tests:** scenario 137 added.

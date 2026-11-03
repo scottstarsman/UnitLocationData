@@ -1011,3 +1011,7 @@ Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next
 ### NARA T-314 roll 1605 (2 November 2026)
 
 223. **338th Infantry Division, late August 1944 (open, 2 November 2026).** T-314 roll 1605 (`R796`) puts the division command post at Carpentras on 24 August 1944 (`C7129`) during the Rhône withdrawal, but the 12th Army Group map rows `C2866` (29 August, near Fournaudin, Yonne) and `C2922` (5 September, near Arrelles, Aube) are about 550 km further north. The map rows are kept (existing rows are not changed on conflict); a likely misidentified unit on the maps. Needs a check against FMS B-468/B-515 or Wiese (B-781) before any change.
+
+### NARA T-315 roll 828 (2 November 2026)
+
+224. **26th Volksgrenadier Division, 19 December 1944 (open, 2 November 2026).** The division report of 5 January 1945 (`R799`) has the division advancing on Bastogne and taking Longvilly by 19 December (`C7136`), while the 12th Army Group map row `C4724` puts it near Dasburg, about 20 km east. The map row is kept (map rows never outrank text rows, but existing rows are not changed on conflict); candidate for lowering or retiring on Scott's decision.

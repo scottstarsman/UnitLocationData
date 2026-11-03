@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-315 roll 828 (26th Volksgrenadier Division; 2 November 2026)
+
+Roll 828 (NAID 346295326, 566 pages) read in the German original on 2 November 2026, all pages by OCR; the Bastogne report (pages 437-441) read in full and image-checked. Most of the roll is the 26th Panzer Division in Italy (1943-44), outside the theatre. Reading notes private.
+
+- **New reference** `R799`.
+- **New claims** `C7136` to `C7138` (each note carries old value none, new value and reason): 26th Volksgrenadier Division takes Longvilly and Arloncourt in the advance on Bastogne (19 December 1944, 0.3, date by paragraph); commands the whole Bastogne encirclement front from 22 December, 06.00 (0.5); attacks Bastogne from the northwest on 25 December, 03.00 (0.5). Parent blank on all 3 (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New place** `PL3315` Longvilly (OpenStreetMap Nominatim, searched 2 November 2026); `PL0031` Bastogne reused.
+- **No existing row changed.** **Disagreement recorded** (roadmap point 224): map row `C4724` (19 December, near Dasburg) versus the report.
+- **Semantic scenario 105.**
+
 ## nara-microfilm: NARA T-314 roll 1607 (LXXXVI Corps; 2 November 2026)
 
 Roll 1607 (NAID 318191275, 871 pages) read in the German original on 2 November 2026, pages 1-742 by OCR with the June 1944 KTB pages image-checked; pages 743-871 (Anlagen and the Ic overlay of 27-28 June) did not render on the box in time and are left for a second pass. Reading notes private.

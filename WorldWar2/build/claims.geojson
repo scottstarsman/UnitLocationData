@@ -163514,6 +163514,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8368,
+     50.0249
+    ]
+   },
+   "properties": {
+    "claim_id": "C7136",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL3315",
+    "location_name": "Longvilly (Bastogne), Luxembourg province (advancing on Bastogne; I./Grenadier-Regiment 77 takes Longvilly and Arloncourt)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "26th Volksgrenadier Division takes Longvilly",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R799;R002",
+    "source_locator": "R799: pages 437-438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -164621,6 +164662,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C7137",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg (takes command of the whole Bastogne encirclement front at 06.00 (about 40 km))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "26th Volksgrenadier Division commands the Bastogne encirclement",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R799;R002",
+    "source_locator": "R799: page 438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -165311,6 +165393,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R758;R002",
     "source_locator": "R758: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C7138",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-25",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg (attack on Bastogne at 03.00 with two reinforced regiments, main effort from the northwest)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "26th Volksgrenadier Division attacks Bastogne",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R799;R002",
+    "source_locator": "R799: page 439 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
    }
   },
   {

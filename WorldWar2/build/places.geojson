@@ -618,7 +618,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 12
+    "claims_count": 14
    }
   },
   {
@@ -65978,6 +65978,26 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nouvelle-Aquitaine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8368,
+     50.0249
+    ]
+   },
+   "properties": {
+    "place_id": "PL3315",
+    "name": "Longvilly (Bastogne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
     "claims_count": 1
    }
   }

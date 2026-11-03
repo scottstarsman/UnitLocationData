@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: Cole, The Ardennes: Seventh Army on the southern flank (chs. 9, 10, 19, 20, 21) (3 November 2026)
+
+Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.
+
+- **New references** `R805`.
+- **New claims** `C7156`-`C7162` (each note carries old value none, new value and reason; inferred dates are marked with old value, new value and reason): Seventh Army headquarters at Ingendorf, 20 December (0.7); 212th Volksgrenadier Division takes Echternach, probably late on 20 December (0.5, Cole's own 'probable'), attacks through Lauterborn, 21 December (0.7), and completes its withdrawal over the Bollendorf bridge, night of 26 December (0.7); 276th Volksgrenadier Division attacks from Waldbillig, 21 December (0.7); 352d Volksgrenadier Division (914th Regiment) enters Ettelbruck, 22 December (0.7); 5th Parachute Division advance guard north of Martelange by the evening of 20 December (0.5, date inferred from the paragraph). Parent blank on all rows (old value none, new value blank, reason: no command relation from a single source). Strengths from Cole are kept in the private notes only.
+- **New places** `PL3329` to `PL3332` (Lauterborn, Waldbillig, Ettelbruck, Martelange; OpenStreetMap Nominatim, searched 3 November 2026).
+- **No existing row changed.** Conflicts with 12th Army Group map rows and one FMS row are logged as roadmap points 229, 230 with a recommendation each (text rows outrank map rows; existing rows are not changed on conflict).
+- **Semantic scenario 110.**
+
 ## cole-ardennes: Cole, The Ardennes: Fifth Panzer Army before Bastogne and the Meuse (chs. 13, 19, 22, 24) (3 November 2026)
 
 Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.

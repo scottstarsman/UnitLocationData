@@ -8078,7 +8078,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -8098,7 +8098,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Grevenmacher",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -63618,7 +63618,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66253,6 +66253,86 @@
    "properties": {
     "place_id": "PL3328",
     "name": "Fosset (Sainte-Ode), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3888,
+     49.7979
+    ]
+   },
+   "properties": {
+    "place_id": "PL3329",
+    "name": "Lauterborn (Echternach), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Grevenmacher",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2866,
+     49.7953
+    ]
+   },
+   "properties": {
+    "place_id": "PL3330",
+    "name": "Waldbillig, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Grevenmacher",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0985,
+     49.847
+    ]
+   },
+   "properties": {
+    "place_id": "PL3331",
+    "name": "Ettelbruck, Luxembourg",
+    "alt_names": "Ettelbrück",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Diekirch",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7376,
+     49.8313
+    ]
+   },
+   "properties": {
+    "place_id": "PL3332",
+    "name": "Martelange, Luxembourg province",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

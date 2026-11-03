@@ -164498,6 +164498,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.45,
+     49.9333
+    ]
+   },
+   "properties": {
+    "claim_id": "C7156",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3196",
+    "location_name": "Ingendorf, Rhineland-Palatinate (army headquarters)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "army headquarters at Ingendorf southwest of Bitburg orders the 352d Volksgrenadier Division forward",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R640;R002",
+    "source_locator": "R640: p. 226"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4217,
+     49.8117
+    ]
+   },
+   "properties": {
+    "claim_id": "C7157",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-212D",
+    "unit_name": "212th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL0411",
+    "location_name": "Echternach, Luxembourg (division commander with the 212th Fusilier Battalion and assault guns)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "takes Echternach, where Company E, 12th Infantry, surrenders",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R805;R002",
+    "source_locator": "R805: p. 257"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7376,
+     49.8313
+    ]
+   },
+   "properties": {
+    "claim_id": "C7161",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-20",
+    "place_id": "PL3332",
+    "location_name": "Martelange, Luxembourg province (advance guard)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "advance guard crosses the Arlon-Bastogne road north of Martelange to form the southern blocking line",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R389;R002",
+    "source_locator": "R389: p. 465"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -164614,6 +164737,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R386;R707;R002",
     "source_locator": "R386: p. 361"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3888,
+     49.7979
+    ]
+   },
+   "properties": {
+    "claim_id": "C7158",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-212D",
+    "unit_name": "212th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL3329",
+    "location_name": "Lauterborn (Echternach), Luxembourg (212th Fusilier Battalion)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "fusilier battalion attacks along the Echternach-Luxembourg road through Lauterborn toward Scheidgen",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R390;R002",
+    "source_locator": "R390: p. 484"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2866,
+     49.7953
+    ]
+   },
+   "properties": {
+    "claim_id": "C7159",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-276D",
+    "unit_name": "276th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL3330",
+    "location_name": "Waldbillig, Luxembourg (988th Regiment and a few assault guns)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "limited attack from Waldbillig toward Christnach",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R390;R002",
+    "source_locator": "R390: p. 483"
    }
   },
   {
@@ -165106,6 +165311,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R799;R002",
     "source_locator": "R799: page 438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0985,
+     49.847
+    ]
+   },
+   "properties": {
+    "claim_id": "C7160",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-352D",
+    "unit_name": "352nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL3331",
+    "location_name": "Ettelbruck, Luxembourg (914th Regiment; the artillery regiment east of the town)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "914th Regiment enters Ettelbruck as the 318th Infantry arrives from the south",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R391;R002",
+    "source_locator": "R391: p. 516"
    }
   },
   {
@@ -171133,6 +171379,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3583,
+     49.8531
+    ]
+   },
+   "properties": {
+    "claim_id": "C7162",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-212D",
+    "unit_name": "212th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-26",
+    "place_id": "PL0410",
+    "location_name": "Bollendorf, Rheinland-Pfalz (division)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "withdrawal",
+    "current_activity": "completes its withdrawal back over the Sauer by the Bollendorf bridge",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R390;R002",
+    "source_locator": "R390: p. 506"
    }
   },
   {

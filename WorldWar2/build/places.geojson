@@ -7098,7 +7098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -10698,7 +10698,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 18
+    "claims_count": 19
    }
   },
   {
@@ -12238,7 +12238,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -14118,7 +14118,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 6
+    "claims_count": 9
    }
   },
   {
@@ -14698,7 +14698,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Brussels",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14778,7 +14778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -14938,7 +14938,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -15638,7 +15638,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -16098,7 +16098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandie",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -19838,7 +19838,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -48698,7 +48698,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -67378,7 +67378,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -67398,7 +67398,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "West Flanders",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -68498,6 +68498,206 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.9647,
+     49.3419
+    ]
+   },
+   "properties": {
+    "place_id": "PL3441",
+    "name": "Moulineaux, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.9972,
+     49.3123
+    ]
+   },
+   "properties": {
+    "place_id": "PL3442",
+    "name": "Orival, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "place_id": "PL3443",
+    "name": "Hilversum, Noord-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8401,
+     50.7476
+    ]
+   },
+   "properties": {
+    "place_id": "PL3444",
+    "name": "Colembert, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9468,
+     50.791
+    ]
+   },
+   "properties": {
+    "place_id": "PL3445",
+    "name": "Bois de Courtebourne (Licques), Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.5863,
+     50.9809
+    ]
+   },
+   "properties": {
+    "place_id": "PL3446",
+    "name": "Hondschoote, Nord",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "place_id": "PL3447",
+    "name": "west of Dordrecht, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9739,
+     51.8296
+    ]
+   },
+   "properties": {
+    "place_id": "PL3448",
+    "name": "Gorinchem, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.329,
+     51.7533
+    ]
+   },
+   "properties": {
+    "place_id": "PL3449",
+    "name": "Hoenzadriel, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9589,
+     51.5083
+    ]
+   },
+   "properties": {
+    "place_id": "PL3450",
+    "name": "Venray (Maas front Venlo-Boxmeer), Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
     "claims_count": 1
    }
   }

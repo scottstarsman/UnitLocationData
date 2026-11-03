@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XVII (November 1944 - January 1945) and Sketches 20, 23, 25, Map 6 (3 November 2026)
+
+- 31 new claims `C7414`-`C7444` (13 German, 18 Allied; blank parents; places `PL3441`-`PL3450`). Fifteen are text rows from chapter XVII (Reichswald front of the 84th and 190th Divisions; German 30th and 88th Corps and the planned thrust across the Maas, Reinhard replaced by Schwalbe; 711th Division sent east; 6th Parachute Division at Kapelsche Veer to 30-31 January; 47th Royal Marine Commando Operation Horse; Lake Superior raid on Hoenzadriel; Headquarters First Canadian Army at Tilburg; 30th Corps back to Boxtel; 3rd British Division under the 2nd Canadian Corps; Blaskowitz replaces Student). Sixteen are map rows at 0.3 from Sketches 20, 23, 25 and Map 6 (headquarters symbols and divisional axes, August-September 1944).
+- 1 row appended: `C0934` (Army Group B, Oosterbeek) now also cites `R668` (Sketch 23); old R434-only citation, new R434;R668; confidence unchanged (map fact).
+- Most other chapter XVII facts were already in the data from the first Stacey pass (rows `C1285`-`C2028`); they were checked and left as they are.
+- Two speed warnings explained in `data/coordinate_exceptions.csv` (`C7421`/`C3018`, `C7425`/`C2945`). Roadmap 242-243; scenario 122.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapters XV-XVI (13 September - 10 November 1944) (3 November 2026)
 
 Fourth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 358-427 read (the Battle of the Scheldt: the Antwerp sector and the Antwerp-Turnhout Canal, Woensdrecht, Operation "Suitcase", "Switchback" in the Breskens Pocket, "Vitality" in South Beveland, the Walcheren causeway, "Infatuate" at Flushing and Westkapelle, the clearing to the Maas), plus Map 7 (Boulogne) and Map 8 (the Scheldt). Nothing deleted.

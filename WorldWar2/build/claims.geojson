@@ -163924,6 +163924,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3009,
+     50.4344
+    ]
+   },
+   "properties": {
+    "claim_id": "C7163",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-19",
+    "place_id": "PL0404",
+    "location_name": "Rocherath-Krinkelt, Liège (advancing troops relieving the 12th SS Panzer Division)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "takes over the attack at the twin villages Krinkelt-Rocherath from the 12th SS Panzer Division",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R804;R002",
+    "source_locator": "R804: p. 121"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -165851,6 +165892,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6826,
+     50.2564
+    ]
+   },
+   "properties": {
+    "claim_id": "C7165",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-560D",
+    "unit_name": "560th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL3333",
+    "location_name": "Odeigne (Manhay), Luxembourg province (1130th Regiment (fewer than 500 men) with an assault gun platoon)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "1130th Regiment slips into Odeigne and attacks Freyneux",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R002",
+    "source_locator": "R696: p. 583"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8465,
      50.4112
     ]
@@ -166056,6 +166138,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6761,
+     50.2931
+    ]
+   },
+   "properties": {
+    "claim_id": "C7164",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-24",
+    "place_id": "PL0882",
+    "location_name": "Manhay, Luxembourg (Belgium) (3d and 4th Panzergrenadier Regiments astride the Liège highway)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "takes the Manhay crossroads late on 24 December",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R002",
+    "source_locator": "R696: p. 590"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -166254,6 +166377,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R708;R002",
     "source_locator": "R708: p. 571"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8083,
+     50.3076
+    ]
+   },
+   "properties": {
+    "claim_id": "C7166",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-25",
+    "place_id": "PL3334",
+    "location_name": "Odrimont (Lierneux), Liège (19th SS Panzergrenadier Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "arrival",
+    "current_activity": "19th SS Panzergrenadier Regiment reaches Odrimont after crossing the Salm at Vielsalm",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R696;R002",
+    "source_locator": "R696: p. 600"
    }
   },
   {
@@ -171420,6 +171584,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R390;R002",
     "source_locator": "R390: p. 506"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1022,
+     50.7353
+    ]
+   },
+   "properties": {
+    "claim_id": "C7167",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-26",
+    "place_id": "PL0424",
+    "location_name": "Bonn, North Rhine-Westphalia (division in OKW reserve)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "stays idle in OKW reserve in an assembly area just west of Bonn",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R803;R002",
+    "source_locator": "R803: p. 667"
    }
   },
   {

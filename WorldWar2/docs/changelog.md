@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: Cole, The Ardennes: Sixth Panzer Army, II SS Panzer Corps and OKW reserve (chs. 6, 23, 25) (3 November 2026)
+
+Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.
+
+- **New references** `R804`, `R803`.
+- **New claims** `C7163`-`C7167` (each note carries old value none, new value and reason; inferred dates are marked with old value, new value and reason): 3d Panzer Grenadier Division takes over the attack at Krinkelt-Rocherath, 19 December (0.7); 560th Volksgrenadier Division (1130th Regiment) at Odeigne, 23 December (0.7); 2d SS Panzer Division takes Manhay, 24 December (0.7); 9th SS Panzer Division (19th Regiment) at Odrimont, 25 December (0.7); 10th SS Panzer Division idle in OKW reserve west of Bonn, late December (0.3, undated in Cole; 26 December used). Parent blank on all rows (old value none, new value blank, reason: no command relation from a single source). Strengths from Cole are kept in the private notes only.
+- **New places** `PL3333` Odeigne and `PL3334` Odrimont (OpenStreetMap Nominatim, searched 3 November 2026).
+- **No existing row changed.** Conflicts with 12th Army Group map rows and one FMS row are logged as roadmap points 231, 232 with a recommendation each (text rows outrank map rows; existing rows are not changed on conflict).
+- **Semantic scenario 111.**
+
 ## cole-ardennes: Cole, The Ardennes: Seventh Army on the southern flank (chs. 9, 10, 19, 20, 21) (3 November 2026)
 
 Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.

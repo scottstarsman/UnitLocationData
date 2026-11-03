@@ -7958,7 +7958,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Liège",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -8358,7 +8358,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -17398,7 +17398,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Ardennes",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -66333,6 +66333,46 @@
    "properties": {
     "place_id": "PL3332",
     "name": "Martelange, Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6826,
+     50.2564
+    ]
+   },
+   "properties": {
+    "place_id": "PL3333",
+    "name": "Odeigne (Manhay), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8083,
+     50.3076
+    ]
+   },
+   "properties": {
+    "place_id": "PL3334",
+    "name": "Odrimont (Lierneux), Liège",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

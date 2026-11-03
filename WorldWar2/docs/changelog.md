@@ -3230,3 +3230,7 @@ Rows `UL001` to `UL009`, each checked against the Lexikon der Wehrmacht pages (w
 ## nara-microfilm: NARA T-315 roll 440 (7th Parachute Division miscellaneous file; 3 November 2026)
 
 Roll 440 (7. Fallschirmjäger-Division Ia item 77125, 576 pages) read in the German original on 2-3 November 2026, all pages by OCR. Almost all of it is administration of the Fallschirm-Jäger-Lehr-Regiment, April-August 1944 (not a dataset unit). The one division document, 13 February 1945 (page 8), cites the LXXXVI Corps and agrees with existing row `C1131` but gives no place. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-314 roll 1607, second pass on pages 743-871 (3 November 2026)
+
+Pages 743-871 of roll 1607 (`R798`), left over from the first pass, rendered and read in the German original on 3 November 2026 (pages 836 and 843 unreadable). They hold LXXXVI Corps Anlagen of 3-14 June 1944 and section activity reports for January-June 1944. They confirm `C7135` (Dax, 15 June 1944) and agree with `C2076` (the Orne sector, late June). The move of the corps command post to Herm (16 February 1944) falls before the dataset period. **No claims, places or references added; no existing row changed.** Reading notes private.

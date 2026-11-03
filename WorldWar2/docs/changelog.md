@@ -2,6 +2,176 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-315 roll 2145 (347th Infantry Division; 3 November 2026)
+
+Roll 2145 (NAID 347778909, 1346 pages) read in the German original on 3 November 2026. Pages 1-820 were read by OCR and the rest by samples. The 1944 orders used here were read in full. Reading notes private.
+
+- **New reference** `R802`.
+- **New claims** `C7144`-`C7145` (each note carries old value none, new value and reason): 347th Infantry Division holds the North Holland coastal sector from Den Helder to Festung IJmuiden, 21 June 1944 (0.5), and is withdrawn from it for rail transport on 30 August 1944 (0.5). Both rows use Alkmaar as the representative point. Parent blank on both (old value none, new value blank, reason: no command relation from a single source).
+- **New place** `PL3319` Alkmaar (OpenStreetMap Nominatim, searched 3 November 2026).
+- **No existing row changed; no conflicts** (agrees with `C2917`, 5 September in Belgium).
+- **Semantic scenario 108.**
+
+## nara-microfilm: NARA T-311 roll 1 (Army Group B; 3 November 2026)
+
+Roll 1 (NAID 271845202, 1337 frames) read in the German original on 3 November 2026: all frames by OCR, the key report (frames 991-993) read in full. Reading notes private.
+
+- **New reference** `R801`.
+- **New claims** `C7142`-`C7143` (each note carries old value none, new value and reason): Army Group B headquarters moves on 19 August 1944 from La Roche-Guyon to 'W 2', identified as Margival (0.5); Fifth Panzer Army command post at Fontaine-l'Abbé on 19 August (0.5). Parent blank on both (old value none, new value blank, reason: no command relation from a single source).
+- **New place** `PL3318` Fontaine-l'Abbé (OpenStreetMap Nominatim, searched 3 November 2026); `PL0212` Margival reused.
+- **No existing row changed.** **Disagreement recorded** (roadmap point 225): `C0715` (19 August, La Roche-Guyon).
+- **Semantic scenario 107.**
+
+## nara-microfilm: NARA T-354 roll 129 (2nd SS Panzer / 17th SS Panzergrenadier regimental files; 3 November 2026)
+
+Roll 129 (NAID 267486794, 675 frames) read in the German original on 2-3 November 2026 by OCR and triage, key frames read in full. Reading notes private.
+
+- **New reference** `R800`.
+- **New claims** `C7139` to `C7141` (each note carries old value none, new value and reason): 2nd SS Panzer Division (SS-Panzer-Regiment 2) at Figeac on 8 June 1944 on the march north (0.5); 17th SS Panzergrenadier Division (II./SS-Panzergrenadier-Regiment 37) at Montigny-lès-Metz on 6 September and at Augny against the Dornot Moselle crossing on 8 September 1944 (0.5). Parent blank on all 3 (old value none, new value blank, reason: no command relation from a single source; the 462nd Division subordination is in the notes only).
+- **New places** `PL3316` Figeac, `PL3317` Montigny-lès-Metz (OpenStreetMap Nominatim, searched 3 November 2026); `PL1662` Augny reused.
+- **No existing row changed; no conflicts.**
+- **Semantic scenario 106.**
+
+## nara-microfilm: NARA T-315 roll 828 (26th Volksgrenadier Division; 2 November 2026)
+
+Roll 828 (NAID 346295326, 566 pages) read in the German original on 2 November 2026, all pages by OCR; the Bastogne report (pages 437-441) read in full and image-checked. Most of the roll is the 26th Panzer Division in Italy (1943-44), outside the theatre. Reading notes private.
+
+- **New reference** `R799`.
+- **New claims** `C7136` to `C7138` (each note carries old value none, new value and reason): 26th Volksgrenadier Division takes Longvilly and Arloncourt in the advance on Bastogne (19 December 1944, 0.3, date by paragraph); commands the whole Bastogne encirclement front from 22 December, 06.00 (0.5); attacks Bastogne from the northwest on 25 December, 03.00 (0.5). Parent blank on all 3 (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New place** `PL3315` Longvilly (OpenStreetMap Nominatim, searched 2 November 2026); `PL0031` Bastogne reused.
+- **No existing row changed.** **Disagreement recorded** (roadmap point 224): map row `C4724` (19 December, near Dasburg) versus the report.
+- **Semantic scenario 105.**
+
+## nara-microfilm: NARA T-314 roll 1607 (LXXXVI Corps; 2 November 2026)
+
+Roll 1607 (NAID 318191275, 871 pages) read in the German original on 2 November 2026, pages 1-742 by OCR with the June 1944 KTB pages image-checked; pages 743-871 (Anlagen and the Ic overlay of 27-28 June) did not render on the box in time and are left for a second pass. Reading notes private.
+
+- **New reference** `R798` (archive_document, family `nara_captured_german_records`).
+- **New claim** `C7135`: LXXXVI Corps at Dax on 15 June 1944, first echelon leaving for the invasion front at 22.30 (0.5; old value none, new value this row, reason: dated war-diary entry). Parent blank (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New place** `PL3314` Dax (OpenStreetMap Nominatim, searched 2 November 2026).
+- **No existing row changed**; no relation, no conflict group. The 1943 KTB is before the dataset period; anti-partisan operations around Pau (12-15 June) and the 159th Reserve Division take-over are in the private notes.
+- **Semantic scenario 104.**
+
+## nara-microfilm: NARA T-354 roll 149 (9th SS Panzer Division; 2 November 2026)
+
+Roll 149 (NAIDs 267512013 and 267513015, 1408 images, items 78013/19-/28) read in the German original on 2 November 2026 with full OCR; the claimed order image-checked. Reading notes private. The earlier note that T-354/149 had no scan was wrong: the scans sit under the folders T354-149A and T354-149B (old value: no scan, new value: read, reason: catalog object paths found through the catalog API).
+
+- **New reference** `R797` (archive_document, family `nara_captured_german_records`).
+- **New claims** `C7131` to `C7134` from the II SS Panzer Corps order of about 7 October 1944 (each note carries old value none, new value and reason): 116th Panzer Division in line in the Betuwe east of Valburg until the night of 7/8 October (0.3, sector) and assembling around Velp on 8 October (0.5); 9th Panzer Division sector up to the road De Laar - Laarstraat (0.3, sector, at Elden); 9th SS Panzer Division as Sperrverband Harzer in the former 116th Panzer Division sector from 8 October, 12.00 hrs (0.3, sector, at Elst). Parent blank on all 4 (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New place** `PL3313` Velp (OpenStreetMap Nominatim, searched 2 November 2026); existing places `PL1692` Valburg, `PL1819` Elden, `PL0783` Elst reused.
+- **No existing row changed**; no relation, no conflict group. The 3 December 1944 Ib supply order (assembly before the Ardennes offensive, Euskirchen area) and the 1941-March 1944 folders (before the dataset period) are kept in private notes.
+- **Semantic scenario 103.**
+
+## nara-microfilm: NARA T-314 roll 1605 (LXXXV Corps; 2 November 2026)
+
+Scott approved reading the NARA captured-records rolls one commit per roll. Roll 1605 (NAID 318190527, 18 pages, item 76141) read in the German original on 2 November 2026, every page; the claimed page image-checked. Reading notes private.
+
+- **New reference** `R796` (archive_document, family `nara_captured_german_records`).
+- **New claims** `C7127` to `C7130` (each note carries old value none, new value and reason): LXXXV Corps command post at Courthézon on 24 August 1944 (0.5) and the area northeast of Pierrelatte from 25 August (0.3, area only); 198th Infantry Division command post at Travaillan and 338th Infantry Division command post at Carpentras on 24 August (0.5). Parent blank on all 4 (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New places** `PL3309` to `PL3312` (OpenStreetMap Nominatim, searched 2 November 2026).
+- **No existing row changed**; no relation, no conflict group. **Disagreement recorded** (roadmap point 223): 338th Infantry Division map rows `C2866` and `C2922` (29 August, 5 September) are about 550 km north of the 24 August Rhône position; existing rows kept.
+- **Semantic scenario 102.**
+
+## nara-microfilm: changelog catch-up for R790-R795 (2 November 2026)
+
+The commits for `R790` to `R795` updated the data, `HANDOFF.md` and the review counts but not this changelog; this section records them (no data change in this commit).
+
+- **T-354 roll 120** (XII SS Corps Korps-/Korück-Befehle Nov 1944-Mar 1945, XIII SS Corps Ia files; NAID 267474782, German original): reference `R790`; claims `C7119` (XII SS Corps command post Venrath from 20.00 hrs, 17 November 1944) and `C7120` (advanced command post Doverack from 09.00 hrs, 18 November 1944), both 0.5, parent blank (old value none, new value blank, reason: no command relation from a single source); places `PL3303` to `PL3304`; semantic scenario 99.
+- **T-315 roll 1298** (116th Panzer Division Ia Anlagen and KTB copy 25 January-27 February 1945; NAID 346868644): reference `R791`; claims `C7121` (Nohn, 28 January 1945), `C7122` (Gerkerath, 29 January), `C7123` (Gerkerath still, 2 February) and `C7124` (Louisendorf from the evening of 11 February), all division command posts at 0.5, parent blank; places `PL3305` to `PL3306` (Louisendorf reuses `PL0855`); semantic scenario 100.
+- **T-354 roll 147** (9th SS Panzer Division 1943-44 files and Normandy Divisionsbefehle; NAID 267509462): reference `R792`; claims `C7125` (wood 4 km NE of Almenêches, 25 June 1944) and `C7126` (Ht. Bosq 1 km S of Bonnemaison from 12.00 hrs, 10 July 1944), both 0.5, parent blank; places `PL3307` to `PL3308`; semantic scenario 101. Checked against `C0784` (8 July, near Évrecy): consistent, no change.
+- **T-315 roll 2226** (553rd Volksgrenadier Division; NAID 347851473): reference `R793`, no claims (posts headed Div.Gef.St. without a place).
+- **T-315 roll 2233** (559th Volksgrenadier Division Ic and artillery files; NAID 347856068): reference `R794`, no claims (no division command-post place); also filled the catalog link of `R793` (old value blank, new value NAID 347851473 link, reason: catalog id found).
+- **T-315 roll 2152** (361st Infantry Division Gefechtsbericht, Eastern Front; NAID 347782540): reference `R795`, no claims (outside the western_europe theatre).
+- No existing row changed in any of these commits; no relation, no conflict group.
+
+## nara-microfilm: NARA T-311 roll 278 (Army Group B Ic/Ia/Adjutant; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 278 (NAID 272194963, 1454 images) read in the German original on 2 November 2026 with OCR triage; key Ia pages image-checked. Reading notes private.
+
+Rules applied: Ic Allied/enemy-picture → notes only; claim only clear German Gef.Stand/date+place; court Standort list of 17 March 1945 left for Scott; no parent from a single source.
+
+### T-311 roll 278 (65881/6–/7 Ic; 75145/2 Ia Heeresbefehle; 85604 Adjutant)
+
+- **New reference** `R789` (archive_document, family `nara_captured_german_records`): NAID 272194963, 1454 images. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). Ic Oct–Dec folders are Allied Feindbild. Ia 75145/2 is mostly Wehrmacht-Ordnungstruppen / Auffangzone orders; the clearest dated place list (Kommandant Auffangzone Nord, 17 March 1945, image 1112) names military-court Standorte and a 62nd VGD Auffangstelle at Hennef — held in private notes for Scott rather than claimed as Gef.Stände. Adjutant Normandy Anlagen: no tight HQ place on pass 1. No existing row changed; next claim id still `C7119`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged (47 VGD not on the 17 March list).
+
+## nara-microfilm: NARA T-311 roll 277 (Army Group B Ic Meldungen; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 277 (NAID 272193915, 1046 images) read in the German original on 2 November 2026 with OCR triage; sampled pages image-checked. Reading notes private.
+
+Rules applied: Ic Allied/enemy-picture → notes only; claim only clear German date+place; no command relation and no parent from a single source; strengths stay in notes.
+
+### T-311 roll 277 (Ic Meldungen Jul–Sep 1944; items 65881/4–/5)
+
+- **New reference** `R788` (archive_document, family `nara_captured_german_records`): NAID 272193915, 1046 images, items 65881/4 and 65881/5. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). The roll is Ic daily teletypes (Allied Feindbild from AOK 7/15/1, Pz.AOK 5 / Pz.Gr.West, Fallsch.AOK 1, Ob.West). Per Scott (2 November 2026), German-perceived Allied positions stay in the private reading notes; no clear German own-side dated command-post places were found. No existing row changed; next claim id still `C7119`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged.
+
+## nara-microfilm: NARA T-311 roll 276 (Army Group B Ic Meldungen; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 276 (NAID 272192913, 1000 images) read in the German original on 2 November 2026 with OCR triage; sampled pages image-checked. Reading notes private.
+
+Rules applied: Ic Allied/enemy-picture → notes only; claim only clear German date+place; no command relation and no parent from a single source; strengths stay in notes.
+
+### T-311 roll 276 (Ic Meldungen Jul–Dec 1944; Italy 1943 Anlage)
+
+- **New reference** `R787` (archive_document, family `nara_captured_german_records`): NAID 272192913, 1000 images, items 49354, 65881/1, 65881/2. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). The roll is Ic daily Feindbild (Morgen-/Abendmeldungen) plus an Italy 1943 political/disarmament Anlage. Per Scott (2 November 2026), German-perceived Allied positions stay in the private reading notes; no clear German own-side dated command-post places were found. No existing row changed; next claim id still `C7119`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged.
+
+## nara-microfilm: NARA T-311 roll 3 (Army Group B Ia/Ic; 2 November 2026)
+
+Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 3 (NAID 271847205, 1378 images) read in the German original on 2 November 2026 with OCR triage; every claimed page image-checked. Reading notes private.
+
+Rules applied: no command relation and no parent from a single source; strengths stay in notes; confidence 0.5 for dated documents naming a command post or place; disagreements logged without changing existing rows; Ic Dec Feindlage Allied picture kept in notes only.
+
+### T-311 roll 3 (Ic Feindlagekarten Dec 1944; Ia Führer-Befehle, Tagesmeldungen Jun–Aug 1944, Op.Befehle Sep 1944)
+
+- **New reference** `R786` (archive_document, family `nara_captured_german_records`): NAID 271847205, 1378 images.
+- **New claims** `C7095` to `C7118` (24; all at 0.5; each note carries old value none, new value and reason): 346th Infantry Division command post at Putot-en-Auge (13 June); 84th Infantry Division assembling northwest of Falaise (1 August); 89th Infantry Division command post at Falaise (4 August); Panzer Group Eberbach at Vieux-Pont (13 August); 116th Panzer Division at Sées (12 August); 1st SS Panzer Division on the road at Rânes (13 August); Fifteenth Army command post at Dordrecht from 12 September; seventeen command posts from the 28 September 1944, 20.00 hrs Turnhout–Roermond Gliederung (LXVII Corps Breda; 346th Gooreind; 711th Minderhout; 719th Baarle-Nassau; LXXXVIII Corps Dongen; 245th Hilvarenbeek; 59th Boxtel; 85th/Kampfgruppe Chill St. Michielsgestel; XII SS Corps Driesprong; 9th SS Arnhem; 10th SS Pannerden; II Fallschirmjäger Corps Keppeln; 84th Wasserburg near Kleve; LXXXVI Corps Wankum; 180th Veulen; Fallschirmjäger Division Erdmann Belfeld; 176th Haus Effeld).
+  - Parent blank on all 24; commander unknown. No existing row changed.
+- **New places** `PL3293` to `PL3302` (10, OpenStreetMap Nominatim, searched 2 November 2026).
+- **No relation, no conflict group** (next `CR1067`, `G034`).
+- **Disagreements / notes recorded:** Fifteenth Army at Dordrecht on 12 September is three days earlier than FMS B-475 (15 September) — roadmap point 222; II SS Panzer Corps “Deutekom” and 190th Infantry Division “Grafenthal” left unclaimed (uncertain places); Ic Dec maps and Italy 1943 folder not claimed.
+- **Semantic scenario 98.** 47th Volksgrenadier Division Jan–Mar 1945 gap unchanged.
+
+## nara-microfilm: NARA captured German records, T-315 roll 940 (47th Volksgrenadier Division; 2 November 2026)
+
+Scott approved reading NARA captured-records microfilm as new sources on 2 November 2026, starting with T-315 roll 940 (NAID 346435955) and then the T-311 Army Group B rolls, one commit per roll (roll 4 done the same day). Branch `nara-microfilm` from `main` `e0d85d7`. The roll was downloaded from the public NARA catalog and read in the German original, all 142 frames (PDF pages 1-145) including the two hand-drawn maps; the reading notes stay private and are not in this repository.
+
+Rules applied: no command relation and no parent from a single source (every new row has a blank parent); strengths stay in the reading notes; confidence 0.5 for a dated document naming the division sector, 0.3 where the sector is given only by a boundary; disagreements stay open points and no existing row is changed.
+
+### T-311 roll 2 (Army Group B Ic Feindlagekarten, July-November 1944)
+
+- **New reference** `R785` (archive_document, family `nara_captured_german_records`): NAID 271846540, 663 images, items 65881/8-/12. Read in the German original on 2 November 2026.
+- **No new claims** (pass 1). The roll is almost only Ic enemy situation maps. Per Scott (2 November 2026), German-perceived Allied positions from Ic maps stay in the private reading notes and are listed for a later decision; own-side corps stamps on the Eindhoven-Trier sheets were too coarse for dated place rows. No existing row changed; next claim id still `C7095`.
+- **Semantic scenario:** none (zero claims).
+- **47th Volksgrenadier Division Jan-Mar 1945 gap:** unchanged.
+
+### T-311 roll 4 (Army Group B Ia operations orders and daily reports, 9 June-15 October 1944)
+
+- **New reference** `R784` (archive_document, family `nara_captured_german_records`): NAIDs 271848586 (images 1-1500) and 271850087 (images 1501-1651), Heeresgruppe B Ia items 75805-75810, read in the German original, all 1651 images; claims cite the catalog image number and the stamped folder page. Reliability: 8 of 16 checkable facts agree within 15 km (rows of the same unit within 4 days).
+- **New claims** `C7069` to `C7094` (26; 23 at 0.5, 3 at 0.3; each note carries old value none, new value and reason), mostly command posts named in the daily reports: II Parachute Corps (Bois de Soulles), 3rd Parachute Division (La Chapelle-du-Fest), 352nd Infantry Division (Le Mesnil-Rouxelin) and 2nd Panzer Division (Brémoy) on 14 June 1944; the 709th Infantry Division in Cherbourg (22 June); the 89th Infantry Division moving into the area east of Le Havre (25 June); the 2nd SS Panzer Division assembling at Torigni-sur-Vire - Canisy - Beaucoudray (4 July); the 84th Infantry Division (Ménil-Gondouin) and the 48th Infantry Division (Auneau) on 17 August; the 85th (Turnhout) and 176th (As) Infantry Divisions and LXXXI Corps (Moresnet) on 8 September; LXVII Corps (Maldegem) and LXXXIX Corps (Boekhoute) on 9 September; LXXIV Corps at Rohren from 11 September; the 183rd Volksgrenadier Division at Waldenrath and Birgden (20 September); LXXXI Corps at Niederzier (22 September and 10 October) and Güsten (4 October); Parachute Division Erdmann at Veulen (27 September); the 180th and 190th Infantry Divisions in the corridor south of Nijmegen, the 64th Infantry Division in the Breskens pocket (5 October) and the 70th on Walcheren (6 October); LXXXVI Corps (Pont) and the 84th Infantry Division (Rindern) on 9 October.
+  - Parent blank on all 26 (old value none, new value blank, reason: no command relation from a single source); commander unknown (old value none, new value unknown, reason: the reports cited name no commander). New claim files for `GER-FJ-ERDMD` and `GER-INF-190D` (first rows for these units); in `units.csv` their `record_status` goes from placeholder to active (old value placeholder, new value active, reason: the units now have claims; `scripts/promote_placeholders.py`). The 190th Infantry Division row predates the unit formation date of 4 November 1944 (roadmap point 221).
+- **New places** `PL3278` to `PL3292` (15, OpenStreetMap Nominatim, searched 2 November 2026).
+- **No existing row changed**, no relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreements recorded, no value changed** (roadmap points 219 to 221): the 12th Army Group map rows `C3405` and `C3193` (3 October 1944) put the 64th and 70th Infantry Divisions north of the Waal, where these reports have them in the Breskens pocket and on Walcheren on 5-6 October; LXXXI Corps is at Niederzier on 22 September and 10 October but at Güsten on 4 October in the same files.
+- **Semantic scenario 97.** The roll has no 1945 material, so the 47th Volksgrenadier Division January-March 1945 gap is unchanged.
+
+### T-315 roll 940 (47th Volksgrenadier Division Ia orders, 31 October 1944-13 March 1945)
+
+- **New reference** `R783` (archive_document, family `nara_captured_german_records`). Reliability: 4 of 5 checkable facts agree with the dataset.
+- **New claims** `C7062` to `C7068` (7; 6 at 0.5, 1 at 0.3; each note carries old value none, new value and reason): 47th Volksgrenadier Division on the Rur east bank at Düren on 18 December 1944 (LXXXI Corps order); in the former 245th Infantry Division sector in the Haguenau Forest on 3 February 1945 (LXXXIX Corps); on the Moder near Schweighouse on 10 February; rear positions near Morsbronn and Forstheim on 20 February (XC Corps); on the Moder at Mertzwiller and Uberach between the 36th and 257th Volksgrenadier Divisions on 6 March; on the Moder line Niedermodern-Schweighouse on 12 March; 16th Volksgrenadier Division on the XC Corps right wing near Bitche on 28 February 1945 (0.3, a misfiled corps copy).
+  - Parent blank on all 7 (old value none, new value blank, reason: no command relation from a single source); commander unknown (old value none, new value unknown, reason: the documents cited name no division commander).
+- **No new places** (existing `PL0391`, `PL0427`, `PL0618`, `PL1050`, `PL2568`, `PL2604`).
+- **No existing row changed**, no relation, no conflict group (next `CR1067`, `G034`).
+- **Disagreement recorded, no value changed:** the 12th Army Group map rows `C5237` and `C5357` (16 and 23 January 1945) still put the division near Ahrem, while its own papers have it in Alsace by 3 February (roadmap point 218).
+- **Semantic scenario 96.**
+
 ## loc-12ag-maps: HQ 12th Army Group situation maps, pass 1 (31 October 2026)
 
 Scott approved a pass over the Library of Congress series *HQ 12th Army Group situation maps* (public domain, 416 daily sheets 6 June 1944 to 26 July 1945) on 31 October 2026: one sheet a week at the 1200 hrs situation, in batches, one commit per batch, on branch `loc-12ag-maps` from `main` `62e97c3`. The maps are a separate source family (contemporary Allied situation maps): Allied units from their own reports and German units from G-2 estimates.
@@ -3080,3 +3250,23 @@ Rows `UL001` to `UL009`, each checked against the Lexikon der Wehrmacht pages (w
 ### Coverage report and source-review queue (2 November 2026)
 
 Scott approved on 2 November 2026 (outside-review points 4 and 5). New `scripts/coverage.py`, run by `scripts/build.py`, writes `build/coverage_by_unit.csv` (319 units), `build/coverage_by_month.csv` (96 nationality-months) and `build/review_queue.csv` (319 units ranked; weights gap 0.30, map-only 0.25, low confidence 0.15, single source family 0.15, empty months 0.15). Explained in `docs/coverage_report.md`; findings in `docs/coverage_summary.md`. Semantic scenario 95. Derived outputs only: no claim, unit or place changed. Roadmap point 217.
+
+## nara-microfilm: NARA T-315 roll 440 (7th Parachute Division miscellaneous file; 3 November 2026)
+
+Roll 440 (7. Fallschirmjäger-Division Ia item 77125, 576 pages) read in the German original on 2-3 November 2026, all pages by OCR. Almost all of it is administration of the Fallschirm-Jäger-Lehr-Regiment, April-August 1944 (not a dataset unit). The one division document, 13 February 1945 (page 8), cites the LXXXVI Corps and agrees with existing row `C1131` but gives no place. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-314 roll 1607, second pass on pages 743-871 (3 November 2026)
+
+Pages 743-871 of roll 1607 (`R798`), left over from the first pass, rendered and read in the German original on 3 November 2026 (pages 836 and 843 unreadable). They hold LXXXVI Corps Anlagen of 3-14 June 1944 and section activity reports for January-June 1944. They confirm `C7135` (Dax, 15 June 1944) and agree with `C2076` (the Orne sector, late June). The move of the corps command post to Herm (16 February 1944) falls before the dataset period. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-354 roll 130 (2nd SS Panzer Division files 1940-45; 3 November 2026)
+
+Roll 130 (NAID 267487470, 1278 frames) read in the German original on 3 November 2026. Frames 1-875, which hold the 1943-45 material, were read by OCR. The remaining frames (1940-41, and the 3rd SS Panzer Division 1938-41) fall before the dataset period. The 1944-45 papers are personnel and replacement paperwork with no places, plus a war game of 6 October 1944 set in Luxembourg (frames 56-59). The war game describes an exercise, not a real position, and is not used. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-315 roll 1725 (246th Infantry Division, Eastern Front 1943-44; 3 November 2026)
+
+Roll 1725 (1441 pages) checked in the German original on 3 November 2026: the target cards and 13 sample pages spread across the roll. The whole roll covers the Eastern Front (VI and LIII Corps, Vitebsk-Dukhovshchina area) from July 1943 to January 1944, outside the dataset's theatre and period. It was not read page by page. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-315 roll 303 (5th Mountain Division 1943 / 5th Parachute Division 1944; 3 November 2026)
+
+Roll 303 (603 pages) read in the German original on 3 November 2026. The 5th Mountain Division part (1943, outside the period) was sampled. The 5th Parachute Division file (27 March-5 December 1944, pages 220-603) was read in full by OCR. It holds discipline, court, personnel and gas-defence papers. Its command-post headers give no place and mention no dated unit location. **No claims, places or references added; no existing row changed.** Reading notes private.

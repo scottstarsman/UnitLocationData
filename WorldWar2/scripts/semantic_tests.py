@@ -950,10 +950,23 @@ BATCH47 = lambda c: 'C2209' <= c['claim_id'] <= 'C2213'   # FMS B-781 batch (sce
 BATCH48 = lambda c: 'C2214' <= c['claim_id'] <= 'C2225'   # FMS B-831 batch (scenario 48) counts only in its own scenario
 BATCH49 = lambda c: 'C2226' <= c['claim_id'] <= 'C2235'   # FMS B-084 batch (scenario 49) counts only in its own scenario
 BATCH50 = lambda c: 'C2236' <= c['claim_id'] <= 'C2247'   # FMS B-849 batch (scenario 50) counts only in its own scenario
+BATCH96 = lambda c: 'C7062' <= c['claim_id'] <= 'C7068'   # NARA T-315 roll 940 (47th VGD Ia files) batch (scenario 96)
+BATCH97 = lambda c: 'C7069' <= c['claim_id'] <= 'C7094'   # NARA T-311 roll 4 (Army Group B Ia files) batch (scenario 97)
+BATCH101 = lambda c: 'C7125' <= c['claim_id'] <= 'C7126'   # NARA T-354 roll 147 (scenario 101)
+BATCH100 = lambda c: 'C7121' <= c['claim_id'] <= 'C7124'   # NARA T-315 roll 1298 (scenario 100)
+BATCH99 = lambda c: 'C7119' <= c['claim_id'] <= 'C7120'   # NARA T-354 roll 120 (scenario 99)
+BATCH102 = lambda c: 'C7127' <= c['claim_id'] <= 'C7130'   # NARA T-314 roll 1605 (LXXXV Corps files) (scenario 102)
+BATCH103 = lambda c: 'C7131' <= c['claim_id'] <= 'C7134'   # NARA T-354 roll 149 (9th SS Panzer Division files) (scenario 103)
+BATCH104 = lambda c: 'C7135' <= c['claim_id'] <= 'C7135'   # NARA T-314 roll 1607 (LXXXVI Corps files) (scenario 104)
+BATCH105 = lambda c: 'C7136' <= c['claim_id'] <= 'C7138'   # NARA T-315 roll 828 (26th Volksgrenadier Division Bastogne report) (scenario 105)
+BATCH106 = lambda c: 'C7139' <= c['claim_id'] <= 'C7141'   # NARA T-354 roll 129 (2nd SS Panzer and 17th SS Panzergrenadier Division regimental files) (scenario 106)
+BATCH107 = lambda c: 'C7142' <= c['claim_id'] <= 'C7143'   # NARA T-311 roll 1 (Army Group B quartermaster and intelligence files 1944) (scenario 107)
+BATCH108 = lambda c: 'C7144' <= c['claim_id'] <= 'C7145'   # NARA T-315 roll 2145 (347th Infantry Division, North Holland 1943-44) (scenario 108)
+BATCH98 = lambda c: 'C7095' <= c['claim_id'] <= 'C7118'   # NARA T-311 roll 3 (Army Group B Ia/Ic files) batch (scenario 98)
 BATCH51 = lambda c: 'C2248' <= c['claim_id'] <= 'C2274'   # FMS B-745 (Brandenberger, German original) batch (scenario 51) counts only in its own scenario
 BATCH52 = lambda c: 'C2275' <= c['claim_id'] <= 'C2281'   # FMS B-151 (Manteuffel, English translation from the Internet Archive) batch (scenario 52) counts only in its own scenario
 LOC12AG = lambda c: 'R781' in c['reference_ids'].split(';')   # 12th Army Group situation maps (scenario 53) count only in their own scenario
-NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not LOC12AG(c) and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c) and not OHP2(c) and not BATCH43(c) and not BATCH44(c) and not BATCH45(c) and not BATCH46(c) and not BATCH47(c) and not BATCH48(c) and not BATCH49(c) and not BATCH50(c) and not BATCH51(c) and not BATCH52(c)
+NOT_OHP = lambda c: 'official-history pass' not in c['notes'] and not LOC12AG(c) and not BATCH35(c) and not BATCH36(c) and not BATCH37(c) and not BATCH38(c) and not BATCH39(c) and not BATCH40(c) and not BATCH41(c) and not OHP2(c) and not BATCH43(c) and not BATCH44(c) and not BATCH45(c) and not BATCH46(c) and not BATCH47(c) and not BATCH48(c) and not BATCH49(c) and not BATCH50(c) and not BATCH51(c) and not BATCH52(c) and not BATCH96(c) and not BATCH97(c)
 
 
 def scenario_26_activity_pilot():
@@ -2016,8 +2029,144 @@ def scenario_95_coverage_report():
     expect(s + ': build/review_queue.csv ranks every unit with claims once', (len(b), len({r['unit_id'] for r in b}), b[0]['rank']), (len(common.load_all_claims()[1]) and len({x['unit_id'] for x in common.load_all_claims()[1]}), len(b), '1'))
 
 
+def scenario_96_nara_t315_r940():
+    """NARA T-315 roll 940 (47th VGD Ia files, German original): 7 new rows C7062-C7068 citing R783, blank parents, no existing row changed."""
+    s = 'scenario 96'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH96(c)]
+    expect(s + ': the batch adds 7 claims, all citing R783', (len(new), sum('R783' in c['reference_ids'].split(';') for c in new)), (7, 7))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': six 47th VGD rows and one 16th VGD row', sorted(c['unit_id'] for c in new), ['GER-VG-016D'] + ['GER-VG-047D'] * 6)
+    expect(s + ': confidence 0.5 except the 16th VGD boundary sector at 0.3', sorted(c['confidence'] for c in new), ['0.3'] + ['0.5'] * 6)
+    expect(s + ': the 47th VGD Jan-Mar 1945 gap is filled from 3 Feb to 12 Mar', [c['date'] for c in new if c['unit_id'] == 'GER-VG-047D' and c['date'] >= '1945'], ['1945-02-03', '1945-02-10', '1945-02-20', '1945-03-06', '1945-03-12'])
+    expect(s + ': every row has a place, a frame locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R783: frame') and 'old value none' in c['notes'] for c in new), True)
+    expect(s + ': no conflict group is opened', set(c['conflict_group_id'] for c in new), {''})
+
+
+
+def scenario_101_nara_t354_r147():
+    """NARA T-354 roll 147 (9th SS Panzer Division, German original): 2 new rows C7125-C7126 citing R792, blank parents, 2 new places."""
+    s = 'scenario 101'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH101(c)]
+    expect(s + ': the batch adds 2 claims, all citing R792', (len(new), sum('R792' in c['reference_ids'].split(';') for c in new)), (2, 2))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': Almenêches then Bonnemaison', [c['place_id'] for c in sorted(new, key=lambda c: c['date'])], ['PL3307', 'PL3308'])
+
+def scenario_102_nara_t314_r1605():
+    """NARA T-314 roll 1605 (LXXXV Corps files) (German original): 4 new rows C7127-C7130 citing R796, blank parents."""
+    s = 'scenario 102'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH102(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 4 claims, all citing R796', (len(new), sum('R796' in c['reference_ids'].split(';') for c in new)), (4, 4))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL3309', 'PL3310', 'PL3311', 'PL3312'])
+
+def scenario_103_nara_t354_r149():
+    """NARA T-354 roll 149 (9th SS Panzer Division files) (German original): 4 new rows C7131-C7134 citing R797, blank parents."""
+    s = 'scenario 103'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH103(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 4 claims, all citing R797', (len(new), sum('R797' in c['reference_ids'].split(';') for c in new)), (4, 4))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL1692', 'PL3313', 'PL1819', 'PL0783'])
+
+def scenario_104_nara_t314_r1607():
+    """NARA T-314 roll 1607 (LXXXVI Corps files) (German original): 1 new rows C7135-C7135 citing R798, blank parents."""
+    s = 'scenario 104'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH104(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 1 claims, all citing R798', (len(new), sum('R798' in c['reference_ids'].split(';') for c in new)), (1, 1))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL3314'])
+
+def scenario_105_nara_t315_r828():
+    """NARA T-315 roll 828 (26th Volksgrenadier Division Bastogne report) (German original): 3 new rows C7136-C7138 citing R799, blank parents."""
+    s = 'scenario 105'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH105(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 3 claims, all citing R799', (len(new), sum('R799' in c['reference_ids'].split(';') for c in new)), (3, 3))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL3315', 'PL0031', 'PL0031'])
+
+def scenario_106_nara_t354_r129():
+    """NARA T-354 roll 129 (2nd SS Panzer and 17th SS Panzergrenadier Division regimental files) (German original): 3 new rows C7139-C7141 citing R800, blank parents."""
+    s = 'scenario 106'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH106(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 3 claims, all citing R800', (len(new), sum('R800' in c['reference_ids'].split(';') for c in new)), (3, 3))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL3316', 'PL3317', 'PL1662'])
+
+def scenario_107_nara_t311_r1():
+    """NARA T-311 roll 1 (Army Group B quartermaster and intelligence files 1944) (German original): 2 new rows C7142-C7143 citing R801, blank parents."""
+    s = 'scenario 107'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH107(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 2 claims, all citing R801', (len(new), sum('R801' in c['reference_ids'].split(';') for c in new)), (2, 2))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL0212', 'PL3318'])
+
+def scenario_108_nara_t315_r2145():
+    """NARA T-315 roll 2145 (347th Infantry Division, North Holland 1943-44) (German original): 2 new rows C7144-C7145 citing R802, blank parents."""
+    s = 'scenario 108'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH108(c)], key=lambda c: (c['date'], c['claim_id']))
+    expect(s + ': the batch adds 2 claims, all citing R802', (len(new), sum('R802' in c['reference_ids'].split(';') for c in new)), (2, 2))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in date order', [c['place_id'] for c in new], ['PL3319', 'PL3319'])
+
+def scenario_100_nara_t315_r1298():
+    """NARA T-315 roll 1298 (116th Panzer Division KTB copy, German original): 4 new rows C7121-C7124 citing R791, blank parents, 2 new places."""
+    s = 'scenario 100'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH100(c)]
+    expect(s + ': the batch adds 4 claims, all citing R791', (len(new), sum('R791' in c['reference_ids'].split(';') for c in new)), (4, 4))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': Nohn, Gerkerath twice, Louisendorf', [c['place_id'] for c in sorted(new, key=lambda c: c['date'])], ['PL3305', 'PL3306', 'PL3306', 'PL0855'])
+    expect(s + ': every row at confidence 0.5', set(c['confidence'] for c in new), {'0.5'})
+
+def scenario_99_nara_t354_r120():
+    """NARA T-354 roll 120 (XII SS Corps Korpsbefehl, German original): 2 new rows C7119-C7120 citing R790, blank parents, 2 new places."""
+    s = 'scenario 99'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH99(c)]
+    expect(s + ': the batch adds 2 claims, all citing R790', (len(new), sum('R790' in c['reference_ids'].split(';') for c in new)), (2, 2))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': XII SS Corps at Venrath then Doverack', [c['place_id'] for c in sorted(new, key=lambda c: c['date'])], ['PL3303', 'PL3304'])
+    expect(s + ': every row at confidence 0.5', set(c['confidence'] for c in new), {'0.5'})
+
+def scenario_98_nara_t311_r3():
+    """NARA T-311 roll 3 (Army Group B Ia/Ic files, German original): 24 new rows C7095-C7118 citing R786, blank parents, 10 new places, no existing row changed."""
+    s = 'scenario 98'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH98(c)]
+    expect(s + ': the batch adds 24 claims, all citing R786', (len(new), sum('R786' in c['reference_ids'].split(';') for c in new)), (24, 24))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': dates run from 13 June to 28 September 1944', (min(c['date'] for c in new), max(c['date'] for c in new)), ('1944-06-13', '1944-09-28'))
+    expect(s + ': seventeen 28 September 1944 command-post rows from the Turnhout-Roermond OOB', sum(1 for c in new if c['date'] == '1944-09-28'), 17)
+    expect(s + ': Panzer Group Eberbach at Vieux Pont and 89th Infantry Division at Falaise', sorted(c['unit_id'] for c in new if c['claim_id'] in ('C7097', 'C7098')), ['GER-INF-089D', 'GER-PZG-EBERB'])
+    expect(s + ': every row at confidence 0.5', set(c['confidence'] for c in new), {'0.5'})
+    expect(s + ': every row has a place, an image locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R786: image') and 'old value none' in c['notes'] for c in new), True)
+    expect(s + ': no conflict group is opened', set(c['conflict_group_id'] for c in new), {''})
+
+def scenario_97_nara_t311_r4():
+    """NARA T-311 roll 4 (Army Group B Ia files, German original): 26 new rows C7069-C7094 citing R784, blank parents, 15 new places, no existing row changed."""
+    s = 'scenario 97'
+    claims = common.load_all_claims()[1]
+    new = [c for c in claims if BATCH97(c)]
+    expect(s + ': the batch adds 26 claims, all citing R784', (len(new), sum('R784' in c['reference_ids'].split(';') for c in new)), (26, 26))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': dates run from 14 June to 10 October 1944', (min(c['date'] for c in new), max(c['date'] for c in new)), ('1944-06-14', '1944-10-10'))
+    expect(s + ': four LXXXI Corps rows (Moresnet, Niederzier twice, Güsten)', sorted(c['place_id'] for c in new if c['unit_id'] == 'GER-COR-081C'), ['PL2303', 'PL3286', 'PL3290', 'PL3290'])
+    expect(s + ': 14 June 1944 command posts of II Parachute Corps, 3rd Parachute, 352nd and 2nd Panzer Divisions', sorted(c['unit_id'] for c in new if c['date'] == '1944-06-14'), ['GER-FJ-002C', 'GER-FJ-003D', 'GER-INF-352D', 'GER-PZ-002D'])
+    expect(s + ': confidence 0.5 except three area rows at 0.3', sorted(c['confidence'] for c in new), ['0.3'] * 3 + ['0.5'] * 23)
+    expect(s + ': every row has a place, an image locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R784: image') and 'old value none' in c['notes'] for c in new), True)
+    expect(s + ': no conflict group is opened', set(c['conflict_group_id'] for c in new), {''})
+
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145):
         before = len(FAILURES)
         try:
             fn()

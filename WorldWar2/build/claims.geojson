@@ -3245,6 +3245,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.0324,
+     44.6092
+    ]
+   },
+   "properties": {
+    "claim_id": "C7139",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-08",
+    "place_id": "PL3316",
+    "location_name": "Figeac, Lot (SS-Panzer-Regiment 2 staff and I. Abteilung billeted at Figeac on the march north; next day ordered to Tulle)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Das Reich panzer regiment halts at Figeac",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R800;R002",
+    "source_locator": "R800: frame 74 (NAID 267486794), SS-Panzer-Regiment 2 order of 8 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0074,
      49.1788
     ]
@@ -6689,6 +6730,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.0677,
+     49.2182
+    ]
+   },
+   "properties": {
+    "claim_id": "C7095",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-13",
+    "place_id": "PL3293",
+    "location_name": "Putot-en-Auge, Calvados (Putot (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "346th Infantry Division command post at Putot",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: image 411 (NAID 271847205), stamped page 702, HGr B Ia Nr. 3384/44 g.Kdos of 13 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.09,
      49.12
     ]
@@ -7099,6 +7181,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1896,
+     49.0144
+    ]
+   },
+   "properties": {
+    "claim_id": "C7069",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-14",
+    "place_id": "PL3278",
+    "location_name": "Soulles, Manche (Bois de Soulles, 14 km southwest of Saint-Lô (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "II Parachute Corps command post in the Bois de Soulles",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9746,
+     49.06
+    ]
+   },
+   "properties": {
+    "claim_id": "C7070",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-14",
+    "place_id": "PL3279",
+    "location_name": "La Chapelle-du-Fest, Manche (La Chapelle-du-Fest, 10 km southeast of Saint-Lô (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "3rd Parachute Division command post at La Chapelle-du-Fest",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0871,
+     49.1476
+    ]
+   },
+   "properties": {
+    "claim_id": "C7071",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-14",
+    "place_id": "PL3280",
+    "location_name": "Le Mesnil-Rouxelin, Manche (Le Mesnil-Rouxelin, 4 km north of Saint-Lô (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "352nd Infantry Division command post at Le Mesnil-Rouxelin",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7798,
+     48.9898
+    ]
+   },
+   "properties": {
+    "claim_id": "C7072",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-14",
+    "place_id": "PL3281",
+    "location_name": "Brémoy, Calvados (Brémoy, about 10 km south of Caumont (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "2nd Panzer Division command post at Brémoy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.09,
      49.12
     ]
@@ -7420,6 +7666,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R774;R002",
     "source_locator": "R774: Skizze 5 and Skizze 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0518,
+     43.7084
+    ]
+   },
+   "properties": {
+    "claim_id": "C7135",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-15",
+    "place_id": "PL3314",
+    "location_name": "Dax, Landes (Dax (corps headquarters; first echelon leaves by train at 22.30 for the invasion front))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "LXXXVI Corps leaves Dax for Normandy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R798;R002",
+    "source_locator": "R798: pages 497-500 (NAID 318191275), Ia Kriegstagebuch Nr. 5, entry of 15 June 1944"
    }
   },
   {
@@ -10215,6 +10502,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8171,
+     52.6009
+    ]
+   },
+   "properties": {
+    "claim_id": "C7144",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-21",
+    "place_id": "PL3319",
+    "location_name": "Alkmaar, Noord-Holland (coastal-defence sector (K.V.A. 347) of North Holland from the islands and Den Helder to Festung IJmuiden; point = Alkmaar)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "347th Infantry Division holds the North Holland coast",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R802;R002",
+    "source_locator": "R802: pages 536-541 (NAID 347778909), 347. I.D. K.V.A. Ia Nr. 767/44 g.Kdos. of 21 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.8402,
      49.2709
     ]
@@ -10290,6 +10618,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R112;R446;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C7073",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-709D",
+    "unit_name": "709th Static Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-22",
+    "place_id": "PL0089",
+    "location_name": "Cherbourg (Fortress Cherbourg)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "709th Infantry Division in Fortress Cherbourg with remnants of the 77th and 243rd Divisions",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 347 (NAID 271848586), stamped page 35, HGr B Ia 3749/44 g.K.Chefs. (Rommel) of 22 June 1944, quoting a radio message of Generalleutnant von Schlieben"
    }
   },
   {
@@ -10741,6 +11110,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R446;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C7074",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-25",
+    "place_id": "PL0169",
+    "location_name": "Le Havre (area east of Le Havre (division moving in))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "89th Infantry Division moving into the area east of Le Havre",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 356 (NAID 271848586), stamped page 44, HGr B Ia (Rommel to OB West) of 25 June 1944, 21.00 hrs"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1095,
+     48.6975
+    ]
+   },
+   "properties": {
+    "claim_id": "C7125",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-25",
+    "place_id": "PL3307",
+    "location_name": "Almenêches, Orne (wood 4 km NE of Almenêches (division command post at the start of the march))",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "9th SS Panzer Division command post in a wood NE of Almenêches",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R792;R002",
+    "source_locator": "R792: images 295-296 (NAID 267509462), 9. SS-Pz.Div. Abt. Ia march order of 25 June 1944 for the night 25/26 June, item 11"
    }
   },
   {
@@ -17472,6 +17923,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1567,
+     49.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C7075",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-002D",
+    "unit_name": "2nd SS Panzer Division Das Reich",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-04",
+    "place_id": "PL1222",
+    "location_name": "Canisy, Manche (assembly area Torigni-sur-Vire - Canisy - Beaucoudray)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "2nd SS Panzer Division assembling in the area Torigni-sur-Vire - Canisy - Beaucoudray",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 439 (NAID 271848586), stamped page 126, HGr B Ia \"Versammlung der 2. SS Pz.Div. Das Reich\", situation 4 July 1944, 18.00 hrs"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -18408,6 +18900,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 316, 317"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5834,
+     49.0117
+    ]
+   },
+   "properties": {
+    "claim_id": "C7126",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-10",
+    "place_id": "PL3308",
+    "location_name": "Bonnemaison, Calvados (Ht. Bosq, 1 km S of Bonnemaison (division command post from 12.00 hrs))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "9th SS Panzer Division command post south of Bonnemaison",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R792;R002",
+    "source_locator": "R792: images 299-300 (NAID 267509462), 9. SS-Pz.Div. Abt. Ia Nr. 610/44 g.Kdos, Divisionsbefehl Nr. 11 of 9 July 1944, item 8"
    }
   },
   {
@@ -34036,6 +34569,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2467,
+     48.9719
+    ]
+   },
+   "properties": {
+    "claim_id": "C7096",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL0528",
+    "location_name": "Potigny (Potigny–Tournebu–Angoville–Leffard area (northwest of Falaise); division command post unchanged, place not named)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "84th Infantry Division main body assembling northwest of Falaise",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: image 703 (NAID 271847205), stamped page 992, HGr B Ia Nr. 5441/44 g.Kdos (Nachtrag zur Tagesmeldung 1.8.) of 2 August 1944, 02.00 hrs"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.19,
      48.9161
     ]
@@ -34603,6 +35177,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R400;R002",
     "source_locator": "R400: p. 390"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1999,
+     48.8965
+    ]
+   },
+   "properties": {
+    "claim_id": "C7097",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-04",
+    "place_id": "PL0674",
+    "location_name": "Falaise, Calvados (Falaise (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "89th Infantry Division command post at Falaise",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: image 731 (NAID 271847205), stamped page 1020, HGr B Ia Nr. 5572/44 g.Kdos (Stand der Bewegungen 4.8. früh) of 4 August 1944"
    }
   },
   {
@@ -40555,6 +41170,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.1735,
+     48.6034
+    ]
+   },
+   "properties": {
+    "claim_id": "C7099",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-12",
+    "place_id": "PL0306",
+    "location_name": "Sées, Orne (Sées)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "116th Panzer Division engages superior enemy at Sées",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: image 293 (NAID 271847205), HGr B Ia Nr. 6044/44 g.Kdos of 13 August 1944 describing 12 August"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.8324,
      48.5997
     ]
@@ -41040,6 +41696,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R403;R002",
     "source_locator": "R403: p. 504"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1441,
+     48.6511
+    ]
+   },
+   "properties": {
+    "claim_id": "C7098",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZG-EBERB",
+    "unit_name": "Panzer Group Eberbach",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-13",
+    "place_id": "PL3294",
+    "location_name": "Vieux-Pont (Argentan), Orne (Vieux Pont (group command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Panzer Group Eberbach command post at Vieux Pont",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 293-294 (NAID 271847205), HGr B Ia Nr. 6044/44 g.Kdos of 13 August 1944, 18.30 hrs (von Kluge)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2109,
+     48.6421
+    ]
+   },
+   "properties": {
+    "claim_id": "C7100",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-13",
+    "place_id": "PL0291",
+    "location_name": "Ranes, Orne (road both sides of Rânes, marching east)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "1st SS Panzer Division reaches the road at Rânes marching east",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: image 294 (NAID 271847205), HGr B Ia Nr. 6044/44 g.Kdos of 13 August 1944, 18.30 hrs"
    }
   },
   {
@@ -45680,6 +46418,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2924,
+     48.7548
+    ]
+   },
+   "properties": {
+    "claim_id": "C7076",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL3282",
+    "location_name": "Ménil-Gondouin, Orne (Ménil-Gondouin (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "84th Infantry Division command post at Ménil-Gondouin",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1250 (NAID 271848586), stamped page 673, HGr B Ia 6242/44 g.Kdos (Letzte Meldung) of 17 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.7715,
+     48.4706
+    ]
+   },
+   "properties": {
+    "claim_id": "C7077",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-048D",
+    "unit_name": "48th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-17",
+    "place_id": "PL3283",
+    "location_name": "Auneau, Eure-et-Loir (Auneau, 10 km east of Chartres (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "48th Infantry Division command post at Auneau",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1250 (NAID 271848586), stamped page 673, HGr B Ia 6242/44 g.Kdos (Letzte Meldung) of 17 August 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.3106,
      48.537
     ]
@@ -46575,6 +47395,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R428;R002",
     "source_locator": "R428: p. 134"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4025,
+     49.4353
+    ]
+   },
+   "properties": {
+    "claim_id": "C7142",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-08-19",
+    "place_id": "PL0212",
+    "location_name": "Margival (new army group headquarters 'W 2' (Wolfsschlucht II, Margival), reached about 17.00 after leaving La Roche-Guyon at 06.00)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Army Group B headquarters moves to Margival",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R801;R002",
+    "source_locator": "R801: frames 991-993 (NAID 271845202), report of 20 August 1944 on the C-in-C's drive of 19 August"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6926,
+     49.0913
+    ]
+   },
+   "properties": {
+    "claim_id": "C7143",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-19",
+    "place_id": "PL3318",
+    "location_name": "Fontaine-l'Abbé, Eure (Fifth Panzer Army command post at Fontaine-l'Abbé, 6 km east of Bernay)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifth Panzer Army command post at Fontaine-l'Abbé",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R801;R002",
+    "source_locator": "R801: frame 991 (NAID 271845202), report of 20 August 1944, order telephoned from Beauvais on 19 August"
    }
   },
   {
@@ -50477,6 +51379,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8835,
+     44.0867
+    ]
+   },
+   "properties": {
+    "claim_id": "C7127",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-085C",
+    "unit_name": "LXXXV Corps (Generalkommando Knieß until July 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL3309",
+    "location_name": "Courthézon, Vaucluse (Courthézon (corps command post, stays on 24 August))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXV Corps command post at Courthézon",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: pages 9-11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9,
+     44.1817
+    ]
+   },
+   "properties": {
+    "claim_id": "C7128",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL3310",
+    "location_name": "Travaillan, Vaucluse (Travaillan, 10 km NE of Orange (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "198th Infantry Division command post at Travaillan",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: pages 10-11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0488,
+     44.0554
+    ]
+   },
+   "properties": {
+    "claim_id": "C7129",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL3311",
+    "location_name": "Carpentras, Vaucluse (Carpentras (division command post at the junction point))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "338th Infantry Division command post at Carpentras",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: pages 10-11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.713,
      51.468
     ]
@@ -51372,6 +52397,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R420;R002",
     "source_locator": "R420: p. 172"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6977,
+     44.3778
+    ]
+   },
+   "properties": {
+    "claim_id": "C7130",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-085C",
+    "unit_name": "LXXXV Corps (Generalkommando Knieß until July 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-25",
+    "place_id": "PL3312",
+    "location_name": "Pierrelatte, Drôme (area northeast of Pierrelatte (corps command post from 25 August))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXV Corps command post northeast of Pierrelatte",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: page 11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 7"
    }
   },
   {
@@ -55513,6 +56579,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R037;R002",
     "source_locator": "R037: section Siege of Dunkirk"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8171,
+     52.6009
+    ]
+   },
+   "properties": {
+    "claim_id": "C7145",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-30",
+    "place_id": "PL3319",
+    "location_name": "Alkmaar, Noord-Holland (pulled out of the North Holland coastal sector on Army Group B's order; entraining from 30 August at Beverwijk, Haarlem, Alkmaar and other stations)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "347th Infantry Division leaves the North Holland coast",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R802;R002",
+    "source_locator": "R802: pages 568-572 (NAID 347778909), 347. I.D. Ia Nr. 1596/44 g.Kdos. of 30 August 1944"
    }
   },
   {
@@ -60891,6 +61998,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.153,
+     49.1
+    ]
+   },
+   "properties": {
+    "claim_id": "C7140",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-06",
+    "place_id": "PL3317",
+    "location_name": "Montigny-lès-Metz, Moselle (II./SS-Panzergrenadier-Regiment 37 moves to Montigny - Flanville; command post in Montigny town hall)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "17th SS Panzergrenadier battalion at Montigny near Metz",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R800;R002",
+    "source_locator": "R800: frame 365 (NAID 267486794), II./SS-PGR 37 daily report of 7 September 1944 for 6 September"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -61260,6 +62408,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.93,
+     51.3289
+    ]
+   },
+   "properties": {
+    "claim_id": "C7078",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-085D",
+    "unit_name": "85th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL3284",
+    "location_name": "Turnhout, Antwerp (Turnhout (division command post); sector Herentals - Hasselt)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "85th Infantry Division with its command post at Turnhout holds the sector Herentals - Hasselt",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5831,
+     51.0063
+    ]
+   },
+   "properties": {
+    "claim_id": "C7079",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL3285",
+    "location_name": "As, Limburg (As (division command post); sector Hasselt - Maastricht)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "176th Infantry Division with its command post at As holds the sector Hasselt - Maastricht",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.988,
+     50.7209
+    ]
+   },
+   "properties": {
+    "claim_id": "C7080",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL3286",
+    "location_name": "Moresnet, Liège (Moresnet, 6 km southwest of Aachen (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps command post at Moresnet",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1219,
+     49.0594
+    ]
+   },
+   "properties": {
+    "claim_id": "C7141",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-08",
+    "place_id": "PL1662",
+    "location_name": "Augny, Moselle (II./SS-Panzergrenadier-Regiment 37 command post at the château east of Augny; counterattacks at Corny - Jouy against the Moselle crossing at Dornot; battalion under the 462nd Division)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "17th SS Panzergrenadier battalion counters the Dornot crossing",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R800;R002",
+    "source_locator": "R800: frame 373 (NAID 267486794), II./SS-PGR 37 daily report of 8 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6833,
      50.85
     ]
@@ -61376,6 +62688,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R716;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4452,
+     51.2089
+    ]
+   },
+   "properties": {
+    "claim_id": "C7081",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-09",
+    "place_id": "PL3287",
+    "location_name": "Maldegem, East Flanders (Maldegem (corps command post); sector Zeebrugge - Brugge - Bellem)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps command post at Maldegem",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.7176,
+     51.2577
+    ]
+   },
+   "properties": {
+    "claim_id": "C7082",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-09",
+    "place_id": "PL3288",
+    "location_name": "Boekhoute, East Flanders (Boekhoute, 24 km north of Ghent (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXIX Corps command post at Boekhoute",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944"
    }
   },
   {
@@ -62565,6 +63959,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R780;R002",
     "source_locator": "R780: p. 8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2846,
+     50.5484
+    ]
+   },
+   "properties": {
+    "claim_id": "C7083",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-074C",
+    "unit_name": "LXXIV Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-11",
+    "place_id": "PL3289",
+    "location_name": "Rohren (Monschau), North Rhine-Westphalia (Rohren, 3 km east of Monschau (corps command post from 11 September 06.00))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXIV Corps command post at Rohren from 11 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1115 (NAID 271848586), stamped page 538, HGr B Ia 7247/44 g.Kdos of 11 September 1944"
    }
   },
   {
@@ -65599,6 +67034,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000099 situation 1200 hrs 12 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "claim_id": "C7101",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL1065",
+    "location_name": "Dordrecht, Zuid-Holland (Dordrecht (army command post from 12 September))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifteenth Army command post at Dordrecht",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1052-1053 (NAID 271847205), stamped pages 615-616, HGr B Ia Nr. 7284/44 g.Kdos of 11 September 1944, 22.30 hrs (Model)"
    }
   },
   {
@@ -72904,6 +74380,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.056,
+     51.0389
+    ]
+   },
+   "properties": {
+    "claim_id": "C7084",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-20",
+    "place_id": "PL2464",
+    "location_name": "Waldenrath, North Rhine-Westphalia (Waldenrath and Birgden (reached in attack))",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "183rd Volksgrenadier Division reaches Waldenrath and Birgden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1065 (NAID 271848586), stamped page 489, HGr B Ia 759x/44 g.Kdos (Mittagsmeldung) of 20 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -73635,6 +75152,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R762;R002",
     "source_locator": "R762: p. 10, Skizze 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4667,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7085",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL3290",
+    "location_name": "Niederzier, North Rhine-Westphalia (Niederzier, southeast of Jülich (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps command post at Niederzier",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 1052 (NAID 271848586), stamped page 476, HGr B Ia 7670/44 g.Kdos (Mittagsmeldung) of 22 September 1944"
    }
   },
   {
@@ -79628,6 +81186,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9554,
+     51.4823
+    ]
+   },
+   "properties": {
+    "claim_id": "C7086",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-ERDMD",
+    "unit_name": "Fallschirmjäger Division Erdmann",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-27",
+    "place_id": "PL2039",
+    "location_name": "Veulen, Limburg (Veulen, 5 km south of Venray (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Parachute Division Erdmann command post at Veulen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 882 (NAID 271848586), stamped page 1280, HGr B Ia Tagesmeldung of 27 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -79826,6 +81425,703 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R771;R002",
     "source_locator": "R771: p. 25"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C7102",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant (Breda (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps command post at Breda",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5429,
+     51.3562
+    ]
+   },
+   "properties": {
+    "claim_id": "C7103",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL3295",
+    "location_name": "Gooreind (Wuustwezel), Antwerp (Gooreind (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "346th Infantry Division command post at Gooreind",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7636,
+     51.4175
+    ]
+   },
+   "properties": {
+    "claim_id": "C7104",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL3296",
+    "location_name": "Minderhout (Hoogstraten), Antwerp (Minderhout (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "711th Infantry Division command post at Minderhout",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8731,
+     51.4375
+    ]
+   },
+   "properties": {
+    "claim_id": "C7105",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL0799",
+    "location_name": "Baarle-Nassau, Noord-Brabant (Baarle-Nassau (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "719th Infantry Division command post at Baarle-Nassau",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9579,
+     51.6429
+    ]
+   },
+   "properties": {
+    "claim_id": "C7106",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL1058",
+    "location_name": "Dongen, Noord-Brabant (Dongen (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps command post at Dongen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.147,
+     51.487
+    ]
+   },
+   "properties": {
+    "claim_id": "C7107",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL3297",
+    "location_name": "Hilvarenbeek, Noord-Brabant (Hilvarenbeek (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "245th Infantry Division command post at Hilvarenbeek",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3158,
+     51.5891
+    ]
+   },
+   "properties": {
+    "claim_id": "C7108",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL0693",
+    "location_name": "Boxtel, Noord-Brabant (Boxtel (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "59th Infantry Division command post at Boxtel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3653,
+     51.6509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7109",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-085D",
+    "unit_name": "85th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL1635",
+    "location_name": "Sint-Michielsgestel, Noord-Brabant (St. Michielsgestel (Kampfgruppe Chill command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "85th Infantry Division (Kampfgruppe Chill) command post at St. Michielsgestel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6894,
+     52.0667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7110",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-28",
+    "place_id": "PL3298",
+    "location_name": "Driesprong (Ede), Gelderland (Driesprong (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps command post at Driesprong",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7111",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-28",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland (Arnheim (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "9th SS Panzer Division command post at Arnhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0368,
+     51.8905
+    ]
+   },
+   "properties": {
+    "claim_id": "C7112",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-28",
+    "place_id": "PL3299",
+    "location_name": "Pannerden, Gelderland (Pannerden (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "10th SS Panzer Division command post at Pannerden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2697,
+     51.6897
+    ]
+   },
+   "properties": {
+    "claim_id": "C7113",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-28",
+    "place_id": "PL3300",
+    "location_name": "Keppeln (Uedem), North Rhine-Westphalia (Keppeln (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "II Fallschirmjäger Corps command post at Keppeln",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1274,
+     51.8038
+    ]
+   },
+   "properties": {
+    "claim_id": "C7114",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL3301",
+    "location_name": "Wasserburg (Rindern, Kleve), North Rhine-Westphalia (Wasserburg near Kleve (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "84th Infantry Division command post at Wasserburg near Kleve",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.306,
+     51.4005
+    ]
+   },
+   "properties": {
+    "claim_id": "C7115",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL3302",
+    "location_name": "Wankum (Wachtendonk), North Rhine-Westphalia (Wankum (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVI Corps command post at Wankum",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9554,
+     51.4823
+    ]
+   },
+   "properties": {
+    "claim_id": "C7116",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL2039",
+    "location_name": "Veulen, Limburg (Veulen (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "180th Infantry Division command post at Veulen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1128,
+     51.311
+    ]
+   },
+   "properties": {
+    "claim_id": "C7117",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-ERDMD",
+    "unit_name": "Fallschirmjäger Division Erdmann",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-28",
+    "place_id": "PL2232",
+    "location_name": "Belfeld, Limburg (Belfeld (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fallschirmjäger Division Erdmann command post at Belfeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1032,
+     51.1251
+    ]
+   },
+   "properties": {
+    "claim_id": "C7118",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL1042",
+    "location_name": "Effeld, Wassenberg, Nordrhein-Westfalen (Haus Effeld near Effeld (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "176th Infantry Division command post at Haus Effeld near Effeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R786;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
    }
   },
   {
@@ -85245,6 +87541,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4296,
+     50.9546
+    ]
+   },
+   "properties": {
+    "claim_id": "C7087",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-04",
+    "place_id": "PL2303",
+    "location_name": "Güsten, North Rhine-Westphalia (Güsten, 6 km northeast of Jülich (corps headquarters))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps headquarters at Güsten",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 89 (NAID 271848586), stamped page 1002, HGr B Ia 8176/44 g.Kdos (Krebs) of 4 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7903,
      51.8875
     ]
@@ -85320,6 +87657,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R671;R002",
     "source_locator": "R668: p. 381; R671: p. 100"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C7088",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland (corridor south of Nijmegen (Kampfgruppe Walther))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "180th Infantry Division in heavy defensive fighting in the corridor south of Nijmegen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 76 (NAID 271848586), stamped page 989, HGr B Ia 8200/44 g.Kdos of 5 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C7089",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland (corridor south of Nijmegen (Kampfgruppe Knaust))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "190th Infantry Division in heavy defensive fighting in the corridor south of Nijmegen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 76 (NAID 271848586), stamped page 989, HGr B Ia 8200/44 g.Kdos of 5 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C7090",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-064D",
+    "unit_name": "64th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL0569",
+    "location_name": "Breskens, Zeeland (Festung Schelde Süd (Breskens pocket))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "64th Infantry Division in Festung Schelde Süd",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 103 (NAID 271848586), stamped page 1016, HGr B Ia 6680/44 of 5 October 1944"
    }
   },
   {
@@ -85491,6 +87951,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C7091",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-06",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland (Walcheren island)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "70th Infantry Division occupying Walcheren",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 126 (NAID 271848586), stamped page 1039, HGr B Ia 7895/44 g.Kdos of 6 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3278,
      51.4107
     ]
@@ -85573,6 +88074,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7885,
+     51.911
+    ]
+   },
+   "properties": {
+    "claim_id": "C7131",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-07",
+    "place_id": "PL1692",
+    "location_name": "Valburg, Gelderland (front line on the railway embankment west of De Goudene Klomp - Linge - Rhine east of Valburg (division sector until the night of 7/8 October))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "116th Panzer Division in line in the Betuwe east of Valburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: images 9-10 and 14-19 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos (copy and teleprinter text), items 2-3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.7851,
      47.9308
     ]
@@ -85607,6 +88149,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 199"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9751,
+     51.9958
+    ]
+   },
+   "properties": {
+    "claim_id": "C7132",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-08",
+    "place_id": "PL3313",
+    "location_name": "Velp (Rheden), Gelderland (assembly area around Velp after relief, for a 150 km march from the evening of 8 October)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "116th Panzer Division assembling around Velp",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: images 9-10 and 15 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos, item 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8833,
+     51.9582
+    ]
+   },
+   "properties": {
+    "claim_id": "C7133",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-08",
+    "place_id": "PL1819",
+    "location_name": "Elden (Arnhem), Gelderland (front line in the Betuwe up to and including the road De Laar - Laarstraat (taken over in the night of 7/8 October))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "9th Panzer Division in line south of Arnhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: image 10 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos, items 5 and 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8453,
+     51.9188
+    ]
+   },
+   "properties": {
+    "claim_id": "C7134",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-10-08",
+    "place_id": "PL0783",
+    "location_name": "Elst, Overbetuwe, Gelderland (Sperrverband Harzer sector of the former 116th Panzer Division up to the road De Laar - De Goudene Klomp (command from 12.00 hrs))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "9th SS Panzer Division (Sperrverband Harzer) in line in the Betuwe",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: image 10 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos, items 4 and 7"
    }
   },
   {
@@ -85853,6 +88518,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 200"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2962,
+     51.4916
+    ]
+   },
+   "properties": {
+    "claim_id": "C7092",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL3291",
+    "location_name": "Pont (Geldern), North Rhine-Westphalia (Pont, 4 km south-southwest of Geldern (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVI Corps command post at Pont",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 926 (NAID 271848586), stamped page 1324, HGr B Ia 8367/44 g.Kdos (Tagesmeldung) of 9 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1264,
+     51.8101
+    ]
+   },
+   "properties": {
+    "claim_id": "C7093",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL3292",
+    "location_name": "Rindern (Kleve), North Rhine-Westphalia (Rindern, 3 km north-northwest of Kleve (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "84th Infantry Division command post at Rindern",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 926 (NAID 271848586), stamped page 1324, HGr B Ia 8367/44 g.Kdos (Tagesmeldung) of 9 October 1944"
    }
   },
   {
@@ -90814,6 +93561,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000127 situation 1200 hrs 10 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4667,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7094",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-10",
+    "place_id": "PL3290",
+    "location_name": "Niederzier, North Rhine-Westphalia (Niederzier (corps command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps command post at Niederzier",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: image 930 (NAID 271848586), stamped page 1328, HGr B Ia 8406/44 g.Kdos (Tagesmeldung) of 10 October 1944"
    }
   },
   {
@@ -125548,6 +128336,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3735,
+     51.0913
+    ]
+   },
+   "properties": {
+    "claim_id": "C7119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-11-17",
+    "place_id": "PL3303",
+    "location_name": "Venrath (Erkelenz), North Rhine-Westphalia (Venrath (corps command post from 20.00 hrs))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps command post at Venrath",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R790;R002",
+    "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -125787,6 +128616,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R680;R651;R002",
     "source_locator": "R680: section Combat for Alsace November 14, 1944 to February 9, 1945; R651: p. 420"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2154,
+     51.0478
+    ]
+   },
+   "properties": {
+    "claim_id": "C7120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-11-18",
+    "place_id": "PL3304",
+    "location_name": "Doverack (Hückelhoven), North Rhine-Westphalia (Doverack (advanced corps command post from 09.00 hrs))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps advanced command post at Doverack",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R790;R002",
+    "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
    }
   },
   {
@@ -155027,6 +157897,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C7062",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia (Düren, Rur east bank)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "47th Volksgrenadier Division holds the Rur east bank at Düren under LXXXI Corps; division commander forward in the Düren Pionier-Kaserne",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R001",
+    "source_locator": "R783: frames 83-84 (PDF pages 86-87), Gen.Kdo LXXXI A.K. Ia 836/44 g.Kdos of 18 December 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6333,
      50.5833
     ]
@@ -160890,6 +163801,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8368,
+     50.0249
+    ]
+   },
+   "properties": {
+    "claim_id": "C7136",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL3315",
+    "location_name": "Longvilly (Bastogne), Luxembourg province (advancing on Bastogne; I./Grenadier-Regiment 77 takes Longvilly and Arloncourt)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "26th Volksgrenadier Division takes Longvilly",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R799;R002",
+    "source_locator": "R799: pages 437-438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -161997,6 +164949,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C7137",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-22",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg (takes command of the whole Bastogne encirclement front at 06.00 (about 40 km))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "26th Volksgrenadier Division commands the Bastogne encirclement",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R799;R002",
+    "source_locator": "R799: page 438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -162687,6 +165680,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R758;R002",
     "source_locator": "R758: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.72,
+     50.0042
+    ]
+   },
+   "properties": {
+    "claim_id": "C7138",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-25",
+    "place_id": "PL0031",
+    "location_name": "Bastogne, Luxembourg (attack on Bastogne at 03.00 with two reinforced regiments, main effort from the northwest)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "26th Volksgrenadier Division attacks Bastogne",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R799;R002",
+    "source_locator": "R799: page 439 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
    }
   },
   {
@@ -193239,6 +196273,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7867,
+     50.3298
+    ]
+   },
+   "properties": {
+    "claim_id": "C7121",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-28",
+    "place_id": "PL3305",
+    "location_name": "Nohn (Gerolstein), Rhineland-Palatinate (Nohn (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "116th Panzer Division command post at Nohn",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R791;R002",
+    "source_locator": "R791: image 18 (NAID 346868644), KTB copy p. 2, entry of 28 January 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1259,
      50.2804
     ]
@@ -193478,6 +196553,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 364"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3582,
+     51.1634
+    ]
+   },
+   "properties": {
+    "claim_id": "C7122",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-29",
+    "place_id": "PL3306",
+    "location_name": "Gerkerath (Mönchengladbach), North Rhine-Westphalia (Gerkerath (new division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "116th Panzer Division command post at Gerkerath",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R791;R002",
+    "source_locator": "R791: image 19 (NAID 346868644), KTB copy p. 3, entries of 28-29 January 1945"
    }
   },
   {
@@ -199423,6 +202539,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R768;R002",
     "source_locator": "R768: p. 57 and appendix 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3582,
+     51.1634
+    ]
+   },
+   "properties": {
+    "claim_id": "C7123",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-02",
+    "place_id": "PL3306",
+    "location_name": "Gerkerath (Mönchengladbach), North Rhine-Westphalia (Gerkerath (division command post, still))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "116th Panzer Division command post at Gerkerath",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R791;R002",
+    "source_locator": "R791: image 21 (NAID 346868644), KTB copy p. 5, entry of 2 February 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8318,
+     48.8387
+    ]
+   },
+   "properties": {
+    "claim_id": "C7063",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL0618",
+    "location_name": "Haguenau, Bas-Rhin (Hagenauer Wald sector north of Haguenau)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "47th Volksgrenadier Division has taken over the former 245th Infantry Division sector in the Haguenau Forest under LXXXIX Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R002",
+    "source_locator": "R783: frame 105 (PDF page 108), 47 V.G.D. Ia 216/45 of 3 February 1945 to Gen.Kdo LXXXIX A.K."
    }
   },
   {
@@ -206810,6 +210008,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7281,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C7064",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-10",
+    "place_id": "PL2604",
+    "location_name": "Schweighouse-sur-Moder, Bas-Rhin (Moder line near Schweighouse)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "47th Volksgrenadier Division continues to defend the Moder in its present positions",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R782",
+    "source_locator": "R783: frames 87-88 (PDF pages 90-91), 47 V.G.D. Ia 280/45 of 10 February 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -206844,6 +210083,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 264"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C7124",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-11",
+    "place_id": "PL0855",
+    "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia (Louisendorf (division command post from the evening))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "116th Panzer Division command post at Louisendorf",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R791;R002",
+    "source_locator": "R791: image 27 (NAID 346868644), KTB copy p. 11, entry of 11 February 1945"
    }
   },
   {
@@ -219151,6 +222431,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7428,
+     48.9008
+    ]
+   },
+   "properties": {
+    "claim_id": "C7065",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL0391",
+    "location_name": "Morsbronn-les-Bains, Bas-Rhin (rear positions near Morsbronn and Forstheim)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "47th Volksgrenadier Division builds rear positions Annemarie and Beate near Morsbronn and Forstheim under XC Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R001",
+    "source_locator": "R783: frames 15-16 (PDF pages 18-19), 47 V.G.D. Ia 359/45 of 20 February 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0142,
      51.6346
     ]
@@ -225786,6 +229107,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R735;R001",
     "source_locator": "R735: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4255,
+     49.0509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7068",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL1050",
+    "location_name": "Bitche, Moselle (sector from the XC Corps right boundary to the Biesenberg, 8 km east of Bitche)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "16th Volksgrenadier Division holds the XC Corps right wing near Bitche",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R002",
+    "source_locator": "R783: frame 141 (PDF page 144), Gen.Kdo XC A.K. Abt Stopi 380/45 g.Kdos of 28 February 1945 (copy filed with the 47th VGD papers)"
    }
   },
   {
@@ -232517,6 +235879,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.6823,
+     48.866
+    ]
+   },
+   "properties": {
+    "claim_id": "C7066",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-06",
+    "place_id": "PL2568",
+    "location_name": "Mertzwiller, Bas-Rhin (Moder line Uberach-Mertzwiller, between 36th and 257th VGD)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "47th Volksgrenadier Division on the Moder at Mertzwiller and Uberach between the 36th and 257th Volksgrenadier Divisions",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R002",
+    "source_locator": "R783: frame 114 (PDF page 117), telex of 47 V.G.D. Ia of 6 March 1945 21:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.2442,
      50.5792
     ]
@@ -233658,6 +237061,47 @@
     "location_temporal_offset_days": -1,
     "reference_ids": "R532;R540;R001",
     "source_locator": "R540: p. 226"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7281,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C7067",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-047D",
+    "unit_name": "47th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL2604",
+    "location_name": "Schweighouse-sur-Moder, Bas-Rhin (Moder line Niedermodern-Schweighouse)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "47th Volksgrenadier Division holds the Moder line Niedermodern-Uberach-Mertzwiller-Schweighouse under XC Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R782",
+    "source_locator": "R783: frames 21-22 and 43 (PDF pages 24-25 and 46), 47 V.G.D. Ia 114/45 of 11 March and daily report of 12 March 1945"
    }
   },
   {

@@ -175,6 +175,10 @@ Lineage links between unit records. A renamed, rebuilt or merged formation keeps
 
 Rules checked by `scripts/validate.py` (through `scripts/lineage.py`): unique ids, sorted by `lineage_id`; no duplicate predecessor-successor pair; the links form no cycle (a unit cannot be its own ancestor); both ends exist. Both linked units carry a `unit_note` that names the other record. Build outputs `build/units.csv` and `build/units.json` repeat `data/units.csv` and add `predecessor_unit_ids` and `successor_unit_ids` (`;`-separated in the CSV, lists in the JSON), derived from this table.
 
+### Coverage outputs (`build/coverage_by_unit.csv`, `build/coverage_by_month.csv`, `build/review_queue.csv`)
+
+Derived by `scripts/coverage.py` during `scripts/build.py`; columns and ranking are defined in [../docs/coverage_report.md](../docs/coverage_report.md). They read the claims, units and reference families and change nothing.
+
 ## nationalities columns (`data/nationalities.csv`)
 
 Lookup table, hand-maintained, sorted by `code`. It is the single list of nations: `units.nationality`, `claims.nationality` and `operations.nationality_scope` are foreign keys to its `name`, and the adjective used in names (the derived display names of `engaged_with_names`, `composing_units_names` and the `higher_name` of `build/command_relations.csv`) comes from here instead of from code.

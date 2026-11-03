@@ -3247,6 +3247,10 @@ Rows `UL001` to `UL009`, each checked against the Lexikon der Wehrmacht pages (w
 
 `data/units.csv` `unit_note`, 18 units: GER-INF-047D, GER-VG-047D, GER-INF-272D, GER-VG-272D, GER-INF-277D, GER-VG-277D, GER-INF-347D, GER-VG-347D, GER-INF-352D, GER-VG-352D, GER-INF-363D, GER-VG-363D, GER-INF-462D, GER-VG-462D, GER-PG-025D: old value blank, new value a "Lineage: ..." sentence naming the linked record and row; GER-PZB-107B, GER-PZG-WESTA, GER-PZA-005A: old value the existing note, new value the same note with a "Lineage: ..." sentence appended. Reason: Scott approved the lineage table on 2 November 2026; the methodology asks for a unit_note on each linked record.
 
+### Coverage report and source-review queue (2 November 2026)
+
+Scott approved on 2 November 2026 (outside-review points 4 and 5). New `scripts/coverage.py`, run by `scripts/build.py`, writes `build/coverage_by_unit.csv` (319 units), `build/coverage_by_month.csv` (96 nationality-months) and `build/review_queue.csv` (319 units ranked; weights gap 0.30, map-only 0.25, low confidence 0.15, single source family 0.15, empty months 0.15). Explained in `docs/coverage_report.md`; findings in `docs/coverage_summary.md`. Semantic scenario 95. Derived outputs only: no claim, unit or place changed. Roadmap point 217.
+
 ## nara-microfilm: NARA T-315 roll 440 (7th Parachute Division miscellaneous file; 3 November 2026)
 
 Roll 440 (7. Fallschirmjäger-Division Ia item 77125, 576 pages) read in the German original on 2-3 November 2026, all pages by OCR. Almost all of it is administration of the Fallschirm-Jäger-Lehr-Regiment, April-August 1944 (not a dataset unit). The one division document, 13 February 1945 (page 8), cites the LXXXVI Corps and agrees with existing row `C1131` but gives no place. **No claims, places or references added; no existing row changed.** Reading notes private.

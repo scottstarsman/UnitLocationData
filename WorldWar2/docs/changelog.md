@@ -2,6 +2,72 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: 79th Volksgrenadier Division promoted from placeholder, Cole positions (3 November 2026)
+
+Approved by Scott on 3 November 2026. Source: Cole, *The Ardennes*, ch. 21 (`R391`). Reading notes private.
+
+- **Unit promoted:** in `units.csv` the `record_status` of `GER-VG-079D` goes from placeholder to active (old value placeholder, new value active, reason: the unit now has claims; `scripts/promote_placeholders.py`, as for `GER-FJ-ERDMD` and `GER-INF-190D` in `959072a`). New claim file `data/claims/germany/GER-VG-079D.csv`.
+- **New claims** `C7222`-`C7224` (0.7; parents blank, old value none, new value blank, reason: no command relation from a single source; commander old value none, new value Alois Weber, reason: named by Cole p. 534): initial assembly area at Bourscheid 24 Dec (date inferred, old value none, new value 1944-12-24, reason: given in Cole's account of 24 Dec; precision 5 km for an assembly area); defense of the Bourscheid bridgehead around Kehmen 25 Dec; last full attack on Ringel Hill 30 Dec (objective).
+- **New place** `PL3353` Ringel (Esch-sur-Sûre) (OpenStreetMap Nominatim, searched 3 November 2026). Bourscheid (`PL2587`) and Kehmen (`PL1769`) already existed.
+- **January 1945:** Cole gives no dated 79th VGD position after 30 December, so no January row is added.
+- **Semantic scenario 115.**
+
+## cole-ardennes: Cole, The Ardennes, second pass: Cole as a corroborating source on existing rows (3 November 2026)
+
+- **Corroborations, no new mechanism.** The dataset has no separate corroboration table; a row with several sources lists every reference in `reference_ids`, every URL in `source` (joined by ` | `) and a locator per reference in `source_locator`. That existing multi-reference mechanism is used here. Five rows get a Cole chapter appended: `C4787` (101st Airborne, Mande-Saint-Étienne, 19 Dec; `R384` p. 307), `C1903` (28th Division, Neufchâteau, 22 Dec; `R385` p. 328), `C7136` (26th Volksgrenadier Division, Longvilly, 19 Dec; `R384` p. 304), `C2181` (2d Panzer Division, Ortheuville, 20 Dec; `R388` p. 429), `C2182` (116th Panzer Division, Samrée, 20 Dec; `R388` p. 429, `R386` p. 358). Each note records old and new `reference_ids` and the reason.
+- **No value changed:** coordinates, dates, places and confidence are unchanged (`C4787` is a map row). Raising confidence where two source families now agree is left for Scott's review.
+- **Semantic scenario 114.**
+
+## cole-ardennes: Cole, The Ardennes, second pass: US and British division, corps and army positions (chs. 5-24) (3 November 2026)
+
+Second pass of Cole (approved by Scott on 3 November 2026), US and British formations. Reading notes private.
+
+- **New claims** `C7179`-`C7221` (43 rows; each note quotes Cole's full sentence and carries old value none, new value and reason; inferred dates and the one widened precision are marked with old value, new value and reason): command posts and headquarters (V Corps Eupen 16 Dec; First Army Spa 16 Dec; 7th Armored Heerlen 16 Dec; 2d Division Wirtzfeld 17 Dec; 99th Division Elsenborn 18 Dec; 106th Division Vielsalm 18 Dec; 28th Division Sibret 19 Dec and Vaux-lez-Rosières 21 Dec; 3d Armored Hotton 20 Dec and Erezée 21 Dec; III Corps Arlon 20 Dec; 4th Division by its 12th Infantry command post at Junglinster 16 Dec, 0.5), and dated positions of the 1st, 2d, 5th, 9th, 26th, 30th, 35th, 75th, 80th, 84th and 87th Infantry, the 2d, 3d, 4th, 6th, 7th, 9th, 10th and 11th Armored and the 17th, 82d and 101st Airborne Divisions, the British 30 Corps (Boxtel, 19 Dec) and the British 43d (west of Maastricht, 20 Dec, 0.5) and 53d Divisions (relief of the 84th at Marche, 1 Jan). Parents blank on all rows; strengths kept in the private notes.
+- **New places** `PL3338` to `PL3352` (Waimes, Bütgenbach, Höfen, Sibret, Vaux-lez-Rosières, Eisenborn, Érezée, Celles, Heiderscheid, Grosbous, Chaumont, Scheidgen, Junglinster, Charleville-Mézières, Moircy; OpenStreetMap Nominatim, searched 3 November 2026).
+- **Not added because Cole is already cited on the matching row:** `C0545` (VIII Corps to Neufchâteau 18 Dec), `C0519` (First Army to Chaudfontaine), `C0550` (10th Armored from Thionville), `C0551` (82d Airborne to Werbomont), `C0552` (XVIII Airborne Corps), `C0557` (4th Armored at Assenois), `C1725` (517th at Manhay), `C1732` (509th at Sadzot). The 28th Division at Neufchâteau on 22 Dec and the 101st Airborne at Mande-Saint-Étienne on 19 Dec are recorded as corroborations in the next commit.
+- **No existing row changed.** Disagreements logged as roadmap points 233-236 with a recommendation each.
+- **Semantic scenario 113.**
+
+## cole-ardennes: Cole, The Ardennes, second pass: German facts left from the first pass (chs. 6, 14, 16, 21-23) (3 November 2026)
+
+Second, complete pass of Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), approved by Scott on 3 November 2026. Reading notes private.
+
+- **New claims** `C7168`-`C7178` (each note quotes Cole's full sentence and carries old value none, new value and reason; inferred dates marked with old value, new value and reason): 116th Panzer Division at Bertogne 19 December, attacking Hotton 21 December and at Verdenne 24 December (0.7); 12th SS Panzer Division forward command post at Büllingen 19 December (0.5, Cole: 'it appears'); 2d SS Panzer Division takes Grandménil 25 December (0.7); 9th SS Panzer Division attacks Erria 27 December (0.5, 'two nights later'); LXVII Corps attack of 28 December: 246th Volksgrenadier Division from near Rocherath and 12th Volksgrenadier Division northwest of Wirtzfeld (0.7); 352d Volksgrenadier Division leaves Ettelbruck 24 December (0.7); Seventh Army headquarters at Wiltz about 22 December (0.5); 5th Parachute Division loses Bigonville 24 December (0.5). Parents blank on all rows.
+- **New places** `PL3335` Verdenne, `PL3336` Grandménil, `PL3337` Erria (OpenStreetMap Nominatim, searched 3 November 2026).
+- **Not added:** the 79th Volksgrenadier Division counterattack from Eschdorf on 24 December (p. 536) and the 167th Volksgrenadier Division at Lutrebois on 30 December, because both units are placeholders in `data/units.csv`; Scott can decide whether to promote them.
+- **No existing row changed.** The Wiltz row adds to roadmap point 229 (Seventh Army headquarters) and the Bertogne row to point 227 (116th Panzer Division map row `C4710`).
+- **Semantic scenario 112.**
+
+## cole-ardennes: Cole, The Ardennes: Sixth Panzer Army, II SS Panzer Corps and OKW reserve (chs. 6, 23, 25) (3 November 2026)
+
+Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.
+
+- **New references** `R804`, `R803`.
+- **New claims** `C7163`-`C7167` (each note carries old value none, new value and reason; inferred dates are marked with old value, new value and reason): 3d Panzer Grenadier Division takes over the attack at Krinkelt-Rocherath, 19 December (0.7); 560th Volksgrenadier Division (1130th Regiment) at Odeigne, 23 December (0.7); 2d SS Panzer Division takes Manhay, 24 December (0.7); 9th SS Panzer Division (19th Regiment) at Odrimont, 25 December (0.7); 10th SS Panzer Division idle in OKW reserve west of Bonn, late December (0.3, undated in Cole; 26 December used). Parent blank on all rows (old value none, new value blank, reason: no command relation from a single source). Strengths from Cole are kept in the private notes only.
+- **New places** `PL3333` Odeigne and `PL3334` Odrimont (OpenStreetMap Nominatim, searched 3 November 2026).
+- **No existing row changed.** Conflicts with 12th Army Group map rows and one FMS row are logged as roadmap points 231, 232 with a recommendation each (text rows outrank map rows; existing rows are not changed on conflict).
+- **Semantic scenario 111.**
+
+## cole-ardennes: Cole, The Ardennes: Seventh Army on the southern flank (chs. 9, 10, 19, 20, 21) (3 November 2026)
+
+Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.
+
+- **New references** `R805`.
+- **New claims** `C7156`-`C7162` (each note carries old value none, new value and reason; inferred dates are marked with old value, new value and reason): Seventh Army headquarters at Ingendorf, 20 December (0.7); 212th Volksgrenadier Division takes Echternach, probably late on 20 December (0.5, Cole's own 'probable'), attacks through Lauterborn, 21 December (0.7), and completes its withdrawal over the Bollendorf bridge, night of 26 December (0.7); 276th Volksgrenadier Division attacks from Waldbillig, 21 December (0.7); 352d Volksgrenadier Division (914th Regiment) enters Ettelbruck, 22 December (0.7); 5th Parachute Division advance guard north of Martelange by the evening of 20 December (0.5, date inferred from the paragraph). Parent blank on all rows (old value none, new value blank, reason: no command relation from a single source). Strengths from Cole are kept in the private notes only.
+- **New places** `PL3329` to `PL3332` (Lauterborn, Waldbillig, Ettelbruck, Martelange; OpenStreetMap Nominatim, searched 3 November 2026).
+- **No existing row changed.** Conflicts with 12th Army Group map rows and one FMS row are logged as roadmap points 229, 230 with a recommendation each (text rows outrank map rows; existing rows are not changed on conflict).
+- **Semantic scenario 110.**
+
+## cole-ardennes: Cole, The Ardennes: Fifth Panzer Army before Bastogne and the Meuse (chs. 13, 19, 22, 24) (3 November 2026)
+
+Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.
+
+- **New references** none (the rows cite the existing chapter references).
+- **New claims** `C7146`-`C7155` (each note carries old value none, new value and reason; inferred dates are marked with old value, new value and reason): Panzer Lehr Division takes Mageret, 18 December (0.7), and attacks Humain, 25 December (0.7); 2d Panzer Division attacks Noville, 19 December (0.7), and its main column is halted southwest of Conneux, 25 December (0.5, date inferred from the paragraph); 9th Panzer Division takes over the Marloie-Hedrée position, 25 December (0.7); 15th Panzer Grenadier Division regiment bivouacs west of Flamisoul, 24 December (0.7); 26th Volksgrenadier Division (78th Regiment) attacks north of Bizory, 20 December (0.7); 3d Panzer Grenadier Division main body in the Bois de Fragotte near Chenogne, 30 December (0.5, the transcription prints the day as 'the 8th'); 1st SS Panzer Division attacks via Lutrebois, 30 December (0.7); Führer-Begleit-Brigade tank group at rest in Fosset, 31 December (0.7). Parent blank on all rows (old value none, new value blank, reason: no command relation from a single source). Strengths from Cole are kept in the private notes only.
+- **New places** `PL3320` to `PL3328` (Mageret, Humain, Conneux, Marloie, Flamisoul, Bizory, Chenogne, Lutrebois, Fosset; OpenStreetMap Nominatim, searched 3 November 2026; local names, Cole's spellings Conneaux and Flamizoulle kept as alternative names).
+- **No existing row changed.** Conflicts with 12th Army Group map rows and one FMS row are logged as roadmap points 226, 227, 228 with a recommendation each (text rows outrank map rows; existing rows are not changed on conflict).
+- **Semantic scenario 109.**
+
 ## nara-microfilm: NARA T-315 roll 2145 (347th Infantry Division; 3 November 2026)
 
 Roll 2145 (NAID 347778909, 1346 pages) read in the German original on 3 November 2026. Pages 1-820 were read by OCR and the rest by samples. The 1944 orders used here were read in full. Reading notes private.

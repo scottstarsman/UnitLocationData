@@ -21,6 +21,7 @@ Usage: python scripts/semantic_tests.py          (run python scripts/build.py fi
 Standard library only.
 """
 import contextlib
+import csv
 import io
 import os
 import re
@@ -962,6 +963,11 @@ BATCH105 = lambda c: 'C7136' <= c['claim_id'] <= 'C7138'   # NARA T-315 roll 828
 BATCH106 = lambda c: 'C7139' <= c['claim_id'] <= 'C7141'   # NARA T-354 roll 129 (2nd SS Panzer and 17th SS Panzergrenadier Division regimental files) (scenario 106)
 BATCH107 = lambda c: 'C7142' <= c['claim_id'] <= 'C7143'   # NARA T-311 roll 1 (Army Group B quartermaster and intelligence files 1944) (scenario 107)
 BATCH108 = lambda c: 'C7144' <= c['claim_id'] <= 'C7145'   # NARA T-315 roll 2145 (347th Infantry Division, North Holland 1943-44) (scenario 108)
+BATCH109 = lambda c: 'C7146' <= c['claim_id'] <= 'C7155'   # Cole, The Ardennes: Fifth Panzer Army before Bastogne and the Meuse (chs. 13, 19, 22, 24) (scenario 109)
+BATCH110 = lambda c: 'C7156' <= c['claim_id'] <= 'C7162'   # Cole, The Ardennes: Seventh Army on the southern flank (chs. 9, 10, 19, 20, 21) (scenario 110)
+BATCH111 = lambda c: 'C7163' <= c['claim_id'] <= 'C7167'   # Cole, The Ardennes: Sixth Panzer Army, II SS Panzer Corps and OKW reserve (chs. 6, 23, 25) (scenario 111)
+BATCH112 = lambda c: 'C7168' <= c['claim_id'] <= 'C7178'   # Cole, The Ardennes, second pass: German facts left from the first pass (chs. 6, 14, 16, 21-23) (scenario 112)
+BATCH113 = lambda c: 'C7179' <= c['claim_id'] <= 'C7221'   # Cole, The Ardennes, second pass: US and British division, corps and army positions (chs. 5-24) (scenario 113)
 BATCH98 = lambda c: 'C7095' <= c['claim_id'] <= 'C7118'   # NARA T-311 roll 3 (Army Group B Ia/Ic files) batch (scenario 98)
 BATCH51 = lambda c: 'C2248' <= c['claim_id'] <= 'C2274'   # FMS B-745 (Brandenberger, German original) batch (scenario 51) counts only in its own scenario
 BATCH52 = lambda c: 'C2275' <= c['claim_id'] <= 'C2281'   # FMS B-151 (Manteuffel, English translation from the Internet Archive) batch (scenario 52) counts only in its own scenario
@@ -2165,8 +2171,77 @@ def scenario_97_nara_t311_r4():
     expect(s + ': no conflict group is opened', set(c['conflict_group_id'] for c in new), {''})
 
 
+def scenario_109_cole_ardennes_fifth_army():
+    """Cole, The Ardennes: Fifth Panzer Army before Bastogne and the Meuse (chs. 13, 19, 22, 24): 10 new rows C7146-C7155 citing Cole chapter references, blank parents."""
+    s = 'scenario 109'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH109(c)], key=lambda c: (c['claim_id']))
+    cole = {'R384', 'R389', 'R390', 'R391', 'R640', 'R696', 'R708', 'R709', 'R803', 'R804', 'R805'}
+    expect(s + ': the batch adds 10 claims, all citing a Cole chapter', (len(new), sum(bool(cole & set(c['reference_ids'].split(';'))) for c in new)), (10, 10))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': all rows are German and preferred', set((c['nationality'], c['claim_status']) for c in new), {('Germany', 'preferred')})
+    expect(s + ': places in claim-id order', [c['place_id'] for c in new], ['PL3320', 'PL3321', 'PL0394', 'PL3322', 'PL3323', 'PL3324', 'PL3325', 'PL3326', 'PL3327', 'PL3328'])
+
+def scenario_110_cole_ardennes_seventh_army():
+    """Cole, The Ardennes: Seventh Army on the southern flank (chs. 9, 10, 19, 20, 21): 7 new rows C7156-C7162 citing Cole chapter references, blank parents."""
+    s = 'scenario 110'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH110(c)], key=lambda c: (c['claim_id']))
+    cole = {'R384', 'R389', 'R390', 'R391', 'R640', 'R696', 'R708', 'R709', 'R803', 'R804', 'R805'}
+    expect(s + ': the batch adds 7 claims, all citing a Cole chapter', (len(new), sum(bool(cole & set(c['reference_ids'].split(';'))) for c in new)), (7, 7))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': all rows are German and preferred', set((c['nationality'], c['claim_status']) for c in new), {('Germany', 'preferred')})
+    expect(s + ': places in claim-id order', [c['place_id'] for c in new], ['PL3196', 'PL0411', 'PL3329', 'PL3330', 'PL3331', 'PL3332', 'PL0410'])
+
+def scenario_111_cole_ardennes_sixth_army():
+    """Cole, The Ardennes: Sixth Panzer Army, II SS Panzer Corps and OKW reserve (chs. 6, 23, 25): 5 new rows C7163-C7167 citing Cole chapter references, blank parents."""
+    s = 'scenario 111'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH111(c)], key=lambda c: (c['claim_id']))
+    cole = {'R384', 'R389', 'R390', 'R391', 'R640', 'R696', 'R708', 'R709', 'R803', 'R804', 'R805'}
+    expect(s + ': the batch adds 5 claims, all citing a Cole chapter', (len(new), sum(bool(cole & set(c['reference_ids'].split(';'))) for c in new)), (5, 5))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': all rows are German and preferred', set((c['nationality'], c['claim_status']) for c in new), {('Germany', 'preferred')})
+    expect(s + ': places in claim-id order', [c['place_id'] for c in new], ['PL0404', 'PL0882', 'PL3333', 'PL3334', 'PL0424'])
+
+def scenario_112_cole_ardennes_pass2_german():
+    """Cole, The Ardennes, second pass: German facts left from the first pass (chs. 6, 14, 16, 21-23)."""
+    s = 'scenario 112'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH112(c)], key=lambda c: (c['claim_id']))
+    cole = {'R383', 'R384', 'R385', 'R386', 'R387', 'R388', 'R389', 'R390', 'R391', 'R392', 'R393', 'R640', 'R644', 'R695', 'R696', 'R708', 'R709', 'R711', 'R803', 'R804', 'R805'}
+    expect(s + ': the batch adds 11 claims, all citing a Cole chapter', (len(new), sum(bool(cole & set(c['reference_ids'].split(';'))) for c in new)), (11, 11))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in claim-id order', [c['place_id'] for c in new], ['PL2501', 'PL1071', 'PL3335', 'PL0055', 'PL3336', 'PL3337', 'PL0404', 'PL2241', 'PL3331', 'PL0382', 'PL2532'])
+
+def scenario_113_cole_ardennes_pass2_allied():
+    """Cole, The Ardennes, second pass: US and British division, corps and army positions (chs. 5-24)."""
+    s = 'scenario 113'
+    claims = common.load_all_claims()[1]
+    new = sorted([c for c in claims if BATCH113(c)], key=lambda c: (c['claim_id']))
+    cole = {'R383', 'R384', 'R385', 'R386', 'R387', 'R388', 'R389', 'R390', 'R391', 'R392', 'R393', 'R640', 'R644', 'R695', 'R696', 'R708', 'R709', 'R711', 'R803', 'R804', 'R805'}
+    expect(s + ': the batch adds 43 claims, all citing a Cole chapter', (len(new), sum(bool(cole & set(c['reference_ids'].split(';'))) for c in new)), (43, 43))
+    expect(s + ': no parent is set from a single source', set(c['parent_unit_id'] for c in new), {''})
+    expect(s + ': places in claim-id order', [c['place_id'] for c in new], ['PL0139', 'PL3338', 'PL3339', 'PL2241', 'PL0132', 'PL0132', 'PL3340', 'PL0923', 'PL0367', 'PL3341', 'PL3342', 'PL0311', 'PL0172', 'PL0367', 'PL0367', 'PL3315', 'PL3343', 'PL0031', 'PL0884', 'PL1071', 'PL3344', 'PL0210', 'PL3345', 'PL2595', 'PL0012', 'PL3346', 'PL3347', 'PL0928', 'PL3348', 'PL2532', 'PL3349', 'PL3350', 'PL0693', 'PL0202', 'PL0210', 'PL0210', 'PL0954', 'PL0248', 'PL3351', 'PL3352', 'PL2502', 'PL3327', 'PL3320'])
+
+def scenario_114_cole_ardennes_corroborations():
+    """Cole, The Ardennes, second pass: Cole added as a corroborating source on five existing rows."""
+    s = 'scenario 114'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    want = {'C4787': ['R781', 'R384', 'R002'], 'C1903': ['R724', 'R385', 'R002'], 'C7136': ['R799', 'R384', 'R002'], 'C2181': ['R772', 'R388', 'R002'], 'C2182': ['R772', 'R388', 'R386', 'R002']}
+    expect(s + ': Cole appended to the reference list of each corroborated row', {k: claims[k]['reference_ids'].split(';') for k in want}, want)
+    expect(s + ': corroborated rows keep their place and confidence', {k: (claims[k]['place_id'], claims[k]['confidence']) for k in want}, {'C4787': ('PL2444', '0.5'), 'C1903': ('PL0248', '0.5'), 'C7136': ('PL3315', '0.3'), 'C2181': ('PL1068', '0.5'), 'C2182': ('PL1069', '0.5')})
+
+def scenario_115_cole_ardennes_79th_vgd():
+    """Cole, The Ardennes: GER-VG-079D promoted from placeholder with its first claims."""
+    s = 'scenario 115'
+    claims = [c for c in common.load_all_claims()[1] if c['unit_id'] == 'GER-VG-079D']
+    expect(s + ': the 79th VGD has three claims, Bourscheid, Kehmen, Ringel', [(c['claim_id'], c['date'], c['place_id']) for c in sorted(claims, key=lambda c: c['claim_id'])], [('C7222', '1944-12-24', 'PL2587'), ('C7223', '1944-12-25', 'PL1769'), ('C7224', '1944-12-30', 'PL3353')])
+    expect(s + ': parents blank, all cite Cole ch. 21', (set(c['parent_unit_id'] for c in claims), set(c['reference_ids'] for c in claims)), ({''}, {'R391;R002'}))
+    expect(s + ': the unit is active', [r['record_status'] for r in csv.DictReader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'units.csv'), encoding='utf-8')) if r['unit_id'] == 'GER-VG-079D'], ['active'])
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd):
         before = len(FAILURES)
         try:
             fn()

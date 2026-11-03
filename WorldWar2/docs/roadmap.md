@@ -1021,3 +1021,33 @@ Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next
 ### NARA T-311 roll 1 (3 November 2026)
 
 225. **Army Group B headquarters, 19 August 1944 (open, 3 November 2026).** The army group report of 20 August 1944 (`R801`) has the headquarters leave La Roche-Guyon at 06.00 on 19 August for 'W 2' (Margival, `C7142`), while `C0715` keeps it at La Roche-Guyon on 19 August at 0.3. Existing row kept; candidate for re-dating to 18 August on Scott's decision.
+
+### Cole, The Ardennes (Fifth Panzer Army before Bastogne and the Meuse (chs. 13, 19, 22, 24); 3 November 2026)
+
+226. **Panzer Lehr Division, 19 and 23-24 December 1944 (open, 3 November 2026).** Cole (`R384`, ch. 13, p. 297; `C7146`) has a Panzer Lehr kampfgruppe in Mageret before midnight on 18 December and the division at Wardin and before Bastogne on 19 December, while the 12th Army Group map row `C4752` puts it at Wahlhausen on 19 December, about 15 km north-east. Cole (`R388`, ch. 18, pp. 437-440) also has the main attack on Rochefort start after midnight on 23-24 December and the town taken on 24 December, while `C2185` (FMS B-235) dates the capture to 23 December. Existing rows kept. Recommendation: lower `C4752` to 0.3 as a lagging map position; keep `C2185` and add an evening-23/24 December note on Scott's decision.
+
+227. **2d and 116th Panzer Divisions, 19 December 1944 (open, 3 November 2026).** Cole (`R389`, ch. 19, pp. 449-452; `C7148`) has the 2d Panzer Division attacking Noville on 19 December, and (ch. 13, p. 317) the 116th Panzer Division at Bertogne and Salle that day, while the 12th Army Group map rows `C4790` (Leidenborn) and `C4710` (Atzerath) put them 35-40 km east, near the Our. Existing rows kept. Recommendation: lower both map rows to 0.3 or retire them as lagging positions on Scott's decision.
+
+228. **3d Panzer Grenadier Division, 19 December 1944 and 2 January 1945 (open, 3 November 2026).** Cole has the division at Krinkelt-Rocherath on 19 December (`R804`, ch. 6, p. 121; `C7163`) and in the Bois de Fragotte near Chenogne from 30 December to 1 January (`R709`, ch. 24, pp. 616-621; `C7153`), while the 12th Army Group map rows `C4768` (Thorr, 19 December) and `C4993` (Schöneseiffen, 2 January) put it far to the north-east. Existing rows kept. Recommendation: retire `C4993` (the division had been moved to Bastogne by Hitler's order, Cole p. 580) and lower `C4768` to 0.3, on Scott's decision.
+
+### Cole, The Ardennes (Seventh Army on the southern flank (chs. 9, 10, 19, 20, 21); 3 November 2026)
+
+229. **Seventh Army headquarters, 19-22 December 1944 (open, 3 November 2026).** Cole (`R640`, ch. 9, p. 226; `C7156`) puts Seventh Army headquarters at Ingendorf, south-west of Bitburg, on 20 December, and an army command post at Wiltz about 22 December (ch. 21, p. 522), while the 12th Army Group map rows `C4722`, `C4845` and `C4958` keep it at Leimbach. Existing rows kept. Recommendation: lower the Leimbach rows to 0.3; consider a Wiltz forward command post row after a second source (FMS B-235 or Brandenberger).
+
+230. **Seventh Army divisions, 19 December 1944 (open, 3 November 2026).** Cole (chs. 9, 10 and 20) has the 212th Volksgrenadier Division fighting at Echternach and Berdorf, the 276th at Müllerthal and Waldbillig, the 352d at Diekirch and the 5th Parachute Division at Wiltz on 19 December, all west of the Sauer and Our; the 12th Army Group map rows `C4726` (Franzenheim), `C4792` (Euren), `C4761` (Echternach) and `C4791` (Gentingen) put them east of the river or at its crossing. Existing rows kept. Recommendation: lower `C4726`, `C4792` and `C4791` to 0.3 as lagging positions; `C4761` (352d at Echternach) is likely a misread label and should be checked against the sheet, on Scott's decision.
+
+### Cole, The Ardennes (Sixth Panzer Army, II SS Panzer Corps and OKW reserve (chs. 6, 23, 25); 3 November 2026)
+
+231. **560th Volksgrenadier Division, 26 December 1944 and 2 January 1945 (open, 3 November 2026).** Cole (`R696`, ch. 23, pp. 580-593; `C7165`) has the division between the Aisne and the Ourthe (Odeigne, Freyneux, Amonines) from 23 December, while the 12th Army Group map rows `C4898` and `C5004` put it at Oberwampach, about 30 km south-east. Existing rows kept. Recommendation: lower both to 0.3; the label may belong to another division, on Scott's decision.
+
+232. **LXVII Corps, 19 December 1944 to 2 January 1945 (open, 3 November 2026).** Cole (chs. 5, 6 and 23, pp. 76, 579-581, 604) has the LXVII Corps (Hitzfeld) on the Monschau-Elsenborn front throughout and attacking there on 28 December, while the 12th Army Group map rows `C4662`, `C4798` and `C4916` put it at Zweth near Rotterdam. Existing rows kept. Recommendation: treat the three rows as a misidentified label (probably another corps in the Netherlands) and retire them after a check of the sheets, on Scott's decision.
+
+### Cole, The Ardennes, second pass (US and British; 3 November 2026)
+
+233. **101st Airborne Division, 19 December 1944 (open, 3 November 2026).** Cole (`R384`, ch. 13, p. 307) has McAuliffe select an assembly area around Mande-Saint-Étienne, and the 12th Army Group map row `C4787` agrees; the text row `C0553` places the arrival at Bastogne itself, about 6 km east. Existing row kept. Recommendation: keep `C0553` (the division did arrive at Bastogne) and add a location qualifier naming the Mande-Saint-Étienne assembly area, on Scott's decision.
+
+234. **28th Infantry Division, 19 December 1944 (open, 3 November 2026).** Cole (`R393`, ch. 8, p. 208; `C7188`) moves the division headquarters from Wiltz to Sibret on the morning of 19 December; the 12th Army Group map row `C4715` puts the division near Liefrange, about 17 km east. Existing row kept. Recommendation: the map symbol probably marks the remnants of the 109th or 110th Infantry, not the division; lower `C4715` to 0.3.
+
+235. **11th Armored Division, 23-24 December 1944 (open, 3 November 2026).** `C1921` has the division defending the Meuse from Givet on 23 December; Cole (`R708`, ch. 22, p. 560; `C7215`) says the sector was given to VIII Corps on 23 December and part of the division reached the west bank on the following day. Existing row kept. Recommendation: re-date `C1921` to 24 December or mark it as the date of assignment, on Scott's decision.
+
+236. **British 30 Corps, 19 December 1944 (open, 3 November 2026).** Cole (`R708`, ch. 22, p. 557; `C7211`) has Horrocks ordered at 1730 on 19 December to move 30 Corps from Boxtel to the Liège-Brussels area; the 12th Army Group map row `C4688` shows the corps near Schootshei (Rotem), about 64 km south-east. Existing row kept. Recommendation: lower `C4688` to 0.3 (the symbol may show the corps' leading elements or a lagging position).

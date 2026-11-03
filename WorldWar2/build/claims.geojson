@@ -87746,6 +87746,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7885,
+     51.911
+    ]
+   },
+   "properties": {
+    "claim_id": "C7131",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-07",
+    "place_id": "PL1692",
+    "location_name": "Valburg, Gelderland (front line on the railway embankment west of De Goudene Klomp - Linge - Rhine east of Valburg (division sector until the night of 7/8 October))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "116th Panzer Division in line in the Betuwe east of Valburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: images 9-10 and 14-19 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos (copy and teleprinter text), items 2-3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.7851,
      47.9308
     ]
@@ -87780,6 +87821,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 199"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9751,
+     51.9958
+    ]
+   },
+   "properties": {
+    "claim_id": "C7132",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-08",
+    "place_id": "PL3313",
+    "location_name": "Velp (Rheden), Gelderland (assembly area around Velp after relief, for a 150 km march from the evening of 8 October)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "116th Panzer Division assembling around Velp",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: images 9-10 and 15 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos, item 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8833,
+     51.9582
+    ]
+   },
+   "properties": {
+    "claim_id": "C7133",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-08",
+    "place_id": "PL1819",
+    "location_name": "Elden (Arnhem), Gelderland (front line in the Betuwe up to and including the road De Laar - Laarstraat (taken over in the night of 7/8 October))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "9th Panzer Division in line south of Arnhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: image 10 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos, items 5 and 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8453,
+     51.9188
+    ]
+   },
+   "properties": {
+    "claim_id": "C7134",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-10-08",
+    "place_id": "PL0783",
+    "location_name": "Elst, Overbetuwe, Gelderland (Sperrverband Harzer sector of the former 116th Panzer Division up to the road De Laar - De Goudene Klomp (command from 12.00 hrs))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "9th SS Panzer Division (Sperrverband Harzer) in line in the Betuwe",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R797;R002",
+    "source_locator": "R797: image 10 (NAID 267512013), Gen.Kdo. II. SS-Pz.Korps Tgb.Nr. 926/44 g.Kdos, items 4 and 7"
    }
   },
   {

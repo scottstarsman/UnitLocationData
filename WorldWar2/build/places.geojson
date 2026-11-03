@@ -15458,7 +15458,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -33538,7 +33538,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -36078,7 +36078,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 12
+    "claims_count": 13
    }
   },
   {
@@ -65938,6 +65938,26 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Auvergne-Rhone-Alpes",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9751,
+     51.9958
+    ]
+   },
+   "properties": {
+    "place_id": "PL3313",
+    "name": "Velp (Rheden), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
     "claims_count": 1
    }
   }

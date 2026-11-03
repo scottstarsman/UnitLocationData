@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-354 roll 149 (9th SS Panzer Division; 2 November 2026)
+
+Roll 149 (NAIDs 267512013 and 267513015, 1408 images, items 78013/19-/28) read in the German original on 2 November 2026 with full OCR; the claimed order image-checked. Reading notes private. The earlier note that T-354/149 had no scan was wrong: the scans sit under the folders T354-149A and T354-149B (old value: no scan, new value: read, reason: catalog object paths found through the catalog API).
+
+- **New reference** `R797` (archive_document, family `nara_captured_german_records`).
+- **New claims** `C7131` to `C7134` from the II SS Panzer Corps order of about 7 October 1944 (each note carries old value none, new value and reason): 116th Panzer Division in line in the Betuwe east of Valburg until the night of 7/8 October (0.3, sector) and assembling around Velp on 8 October (0.5); 9th Panzer Division sector up to the road De Laar - Laarstraat (0.3, sector, at Elden); 9th SS Panzer Division as Sperrverband Harzer in the former 116th Panzer Division sector from 8 October, 12.00 hrs (0.3, sector, at Elst). Parent blank on all 4 (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New place** `PL3313` Velp (OpenStreetMap Nominatim, searched 2 November 2026); existing places `PL1692` Valburg, `PL1819` Elden, `PL0783` Elst reused.
+- **No existing row changed**; no relation, no conflict group. The 3 December 1944 Ib supply order (assembly before the Ardennes offensive, Euskirchen area) and the 1941-March 1944 folders (before the dataset period) are kept in private notes.
+- **Semantic scenario 103.**
+
 ## nara-microfilm: NARA T-314 roll 1605 (LXXXV Corps; 2 November 2026)
 
 Scott approved reading the NARA captured-records rolls one commit per roll. Roll 1605 (NAID 318190527, 18 pages, item 76141) read in the German original on 2 November 2026, every page; the claimed page image-checked. Reading notes private.

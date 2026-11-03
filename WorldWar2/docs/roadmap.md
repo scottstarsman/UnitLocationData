@@ -1007,3 +1007,7 @@ Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next
 ### NARA T-311 roll 3 (2 November 2026)
 
 222. Fifteenth Army command post at Dordrecht: NARA T-311 roll 3 order of 11 September 1944 sets Armee-Gef.Stand from **12 September**; FMS B-475 has the move on **15 September**. Existing FMS row unchanged; new claim `C7101` at 12 September.
+
+### NARA T-314 roll 1605 (2 November 2026)
+
+223. **338th Infantry Division, late August 1944 (open, 2 November 2026).** T-314 roll 1605 (`R796`) puts the division command post at Carpentras on 24 August 1944 (`C7129`) during the Rhône withdrawal, but the 12th Army Group map rows `C2866` (29 August, near Fournaudin, Yonne) and `C2922` (5 September, near Arrelles, Aube) are about 550 km further north. The map rows are kept (existing rows are not changed on conflict); a likely misidentified unit on the maps. Needs a check against FMS B-468/B-515 or Wiese (B-781) before any change.

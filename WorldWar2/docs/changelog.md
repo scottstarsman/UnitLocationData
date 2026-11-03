@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-314 roll 1605 (LXXXV Corps; 2 November 2026)
+
+Scott approved reading the NARA captured-records rolls one commit per roll. Roll 1605 (NAID 318190527, 18 pages, item 76141) read in the German original on 2 November 2026, every page; the claimed page image-checked. Reading notes private.
+
+- **New reference** `R796` (archive_document, family `nara_captured_german_records`).
+- **New claims** `C7127` to `C7130` (each note carries old value none, new value and reason): LXXXV Corps command post at Courthézon on 24 August 1944 (0.5) and the area northeast of Pierrelatte from 25 August (0.3, area only); 198th Infantry Division command post at Travaillan and 338th Infantry Division command post at Carpentras on 24 August (0.5). Parent blank on all 4 (old value none, new value blank, reason: no command relation from a single source); commander unknown.
+- **New places** `PL3309` to `PL3312` (OpenStreetMap Nominatim, searched 2 November 2026).
+- **No existing row changed**; no relation, no conflict group. **Disagreement recorded** (roadmap point 223): 338th Infantry Division map rows `C2866` and `C2922` (29 August, 5 September) are about 550 km north of the 24 August Rhône position; existing rows kept.
+- **Semantic scenario 102.**
+
 ## nara-microfilm: changelog catch-up for R790-R795 (2 November 2026)
 
 The commits for `R790` to `R795` updated the data, `HANDOFF.md` and the review counts but not this changelog; this section records them (no data change in this commit).

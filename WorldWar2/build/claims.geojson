@@ -51174,6 +51174,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8835,
+     44.0867
+    ]
+   },
+   "properties": {
+    "claim_id": "C7127",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-085C",
+    "unit_name": "LXXXV Corps (Generalkommando Knieß until July 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL3309",
+    "location_name": "Courthézon, Vaucluse (Courthézon (corps command post, stays on 24 August))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXV Corps command post at Courthézon",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: pages 9-11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9,
+     44.1817
+    ]
+   },
+   "properties": {
+    "claim_id": "C7128",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-198D",
+    "unit_name": "198th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL3310",
+    "location_name": "Travaillan, Vaucluse (Travaillan, 10 km NE of Orange (division command post))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "198th Infantry Division command post at Travaillan",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: pages 10-11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0488,
+     44.0554
+    ]
+   },
+   "properties": {
+    "claim_id": "C7129",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-24",
+    "place_id": "PL3311",
+    "location_name": "Carpentras, Vaucluse (Carpentras (division command post at the junction point))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "338th Infantry Division command post at Carpentras",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: pages 10-11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.713,
      51.468
     ]
@@ -52069,6 +52192,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R420;R002",
     "source_locator": "R420: p. 172"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6977,
+     44.3778
+    ]
+   },
+   "properties": {
+    "claim_id": "C7130",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-085C",
+    "unit_name": "LXXXV Corps (Generalkommando Knieß until July 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-25",
+    "place_id": "PL3312",
+    "location_name": "Pierrelatte, Drôme (area northeast of Pierrelatte (corps command post from 25 August))",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXV Corps command post northeast of Pierrelatte",
+    "operation_id": "OP-CAMP-SOUTHERN-FRANCE",
+    "operation": "Southern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Southern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R796;R002",
+    "source_locator": "R796: page 11 (NAID 318190527), Gen.Kdo. LXXXV. A.K. Abt. Ia Nr. 1110/44 g.Kdos, Korpsbefehl of 23 August 1944, item 7"
    }
   },
   {

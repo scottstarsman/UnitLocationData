@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey follow-up, five units added (3 November 2026)
+
+Scott approved on 3 November 2026 adding the units Stacey names that had no unit row. No placeholders existed, so five active units were added to `data/units.csv` (blank parents, no formation dates): `GER-INF-471D` 471st Infantry Division, `GER-INF-490D` 490th Infantry Division, `GER-SSGR-034D` 34th SS Volunteer Grenadier Division Landstorm Nederland, `GER-AA-STRAUB` Armee-Abteilung Straube, `CAN-ARM-001B` 1st Canadian Armoured Brigade.
+
+- 6 new claims `C7683`-`C7688` from facts already read in Stacey (`R668`), blank parents, existing places, strengths in notes only: 471st and 490th at Oldenburg (27 April estimate, 0.3), 490th's Battle Group Lier at Kirchhatten (23 April, 0.3), 34th SS on the southern Grebbe Line at Rhenen (18 April, 0.3), Straube at the Bad Zwischenahn surrender meeting (5 May, 0.3), 1st Canadian Armoured Brigade's Belgians at Opheusden (18 April, 0.5).
+- Re-pointed (old/new/reason in notes): `C7681` (Map 14 label) from `GER-FJA-001A` to `GER-AA-STRAUB`; `C7616` (the island sector from 12 April) from `CAN-COR-001C` to `CAN-ARM-001B`. `C1238` stays under the First Parachute Army (a change of commander of that army). Note on `C7644` updated. Roadmap 249 stays open. Scenario 130.
+
 ## stacey-victory-campaign: Stacey follow-up, open conflict points resolved as conflict groups (3 November 2026)
 
 Scott approved on 3 November 2026 resolving the open Stacey roadmap points by their recorded recommendations, keeping all data (alternates kept, nothing deleted, no confidence lowered).

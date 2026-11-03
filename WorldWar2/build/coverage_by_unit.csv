@@ -1,10 +1,11 @@
 unit_id,unit_name,nationality,echelon,branch,first_claim_date,last_claim_date,span_days,claim_count,conf_0_9,conf_0_7,conf_0_5,conf_0_3_or_less,map_only_rows,map_only_share,source_families,source_family_list,longest_gap_days,longest_gap_from,longest_gap_to,empty_months,empty_month_list
 BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,1944-08-13,1945-04-18,248,14,0,3,9,2,3,0.214,4,canada_ca;loc_12ag_situation_maps;uk_official_history;wikipedia,146,1944-11-17,1945-04-12,5,1944-10;1944-12;1945-01;1945-02;1945-03
+CAN-ARM-001B,1st Canadian Armoured Brigade,Canada,brigade,Armoured,1945-04-12,1945-04-18,6,2,0,0,1,1,0,0.000,1,canada_ca,6,1945-04-12,1945-04-18,0,
 CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,1944-06-06,1945-05-04,332,9,2,4,3,0,0,0.000,4,canada_ca;uk_official_history;veterans_gc_ca;wikipedia,122,1944-10-27,1945-02-26,5,1944-11;1944-12;1945-01;1945-03;1945-04
 CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,1944-07-31,1945-05-09,282,90,1,11,74,4,33,0.367,3,canada_ca;loc_12ag_situation_maps;us_army_cmh,22,1945-03-10,1945-04-01,0,
 CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,1945-02-28,1945-05-08,69,17,0,3,10,4,1,0.059,2,canada_ca;loc_12ag_situation_maps,31,1945-02-28,1945-03-31,0,
 CAN-ARMY-001A,First Canadian Army,Canada,army,Army,1944-06-18,1945-05-04,320,47,0,4,36,7,31,0.660,2,canada_ca;loc_12ag_situation_maps,32,1945-04-02,1945-05-04,0,
-CAN-COR-001C,I Canadian Corps,Canada,corps,Army,1945-03-15,1945-05-07,53,9,0,2,4,3,0,0.000,1,canada_ca,19,1945-03-15,1945-04-03,0,
+CAN-COR-001C,I Canadian Corps,Canada,corps,Army,1945-03-15,1945-05-07,53,8,0,2,4,2,0,0.000,1,canada_ca,19,1945-03-15,1945-04-03,0,
 CAN-COR-002C,II Canadian Corps,Canada,corps,Army,1944-06-29,1945-05-09,314,68,0,8,48,12,37,0.544,2,canada_ca;loc_12ag_situation_maps,12,1944-06-29,1944-07-11,0,
 CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,1945-04-03,1945-05-08,35,12,0,1,9,2,0,0.000,1,canada_ca,18,1945-04-20,1945-05-08,0,
 CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,1944-07-07,1945-05-09,306,119,0,25,80,14,37,0.311,2,canada_ca;loc_12ag_situation_maps,8,1945-03-20,1945-03-28,0,
@@ -27,6 +28,7 @@ FR-INF-014D,French 14th Infantry Division,France,division,Army,1945-02-09,1945-0
 FR-INF-027D,French 27th Alpine Infantry Division (27e DIA),France,division,Army,1945-03-23,1945-03-23,0,1,0,0,0,1,0,0.000,1,wikipedia,0,,,0,
 FR-INF-GIRONDE,French Gironde Marching Division (Division de marche Gironde),France,division,Army,1945-04-15,1945-04-15,0,1,0,0,1,0,0,0.000,1,wikipedia,0,,,0,
 GER-AA-LUETTW,Armee-Abteilung von Lüttwitz,Germany,army,Army,1945-04-01,1945-04-18,17,2,0,0,1,1,0,0.000,2,lexikon_wehrmacht_de;us_army_cmh,17,1945-04-01,1945-04-18,0,
+GER-AA-STRAUB,Armee-Abteilung Straube,Germany,army,Army,1945-05-01,1945-05-05,4,2,0,0,0,2,0,0.000,1,canada_ca,4,1945-05-01,1945-05-05,0,
 GER-AG-00BG,Army Group B,Germany,army_group,Army,1944-06-06,1945-04-17,315,20,1,3,3,13,6,0.300,12,battle_of_arnhem_com;bundesarchiv_ehri;canada_ca;erenow_org;historynet;konfliktlandschaften;lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;okw_kriegstagebuch_schramm;us_army_cmh;wikipedia,138,1944-11-14,1945-04-01,4,1944-12;1945-01;1945-02;1945-03
 GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,army_group,Army,1944-09-04,1945-05-05,243,22,1,0,9,12,5,0.227,5,fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;okw_kriegstagebuch_schramm;us_army_cmh,57,1944-12-03,1945-01-29,1,1945-02
 GER-AG-00HG,Army Group H (Heeresgruppe H),Germany,army_group,Army,1944-11-10,1945-05-04,175,5,0,1,0,4,0,0.000,5,avalon_law_yale_edu;canada_ca;lexikon_wehrmacht_de;us_army_cmh;wikipedia,79,1944-11-10,1945-01-28,3,1944-12;1945-02;1945-03
@@ -70,7 +72,7 @@ GER-FJ-006D,6th Fallschirmjäger Division,Germany,division,Luftwaffe,1944-08-22,
 GER-FJ-007D,7th Fallschirmjäger Division,Germany,division,Luftwaffe,1944-10-31,1945-04-21,172,20,0,1,3,16,10,0.500,4,canada_ca;lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh,49,1945-02-25,1945-04-15,1,1945-03
 GER-FJ-008D,8th Fallschirmjäger Division,Germany,division,Luftwaffe,1945-01-15,1945-04-10,85,8,0,0,6,2,0,0.000,4,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;us_army_cmh,35,1945-03-06,1945-04-10,0,
 GER-FJ-ERDMD,Fallschirmjäger Division Erdmann,Germany,division,Luftwaffe,1944-09-27,1944-09-28,1,2,0,0,2,0,0,0.000,1,nara_captured_german_records,1,1944-09-27,1944-09-28,0,
-GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,1944-09-04,1945-05-05,243,35,0,2,5,28,19,0.543,7,avalon_law_yale_edu;canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;okw_kriegstagebuch_schramm;us_army_cmh,28,1944-10-10,1944-11-07,0,
+GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,1944-09-04,1945-05-05,243,34,0,2,5,27,19,0.559,7,avalon_law_yale_edu;canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;okw_kriegstagebuch_schramm;us_army_cmh,28,1944-10-10,1944-11-07,0,
 GER-GEB-002D,2nd Mountain Division (2. Gebirgs-Division),Germany,division,Army,1945-04-16,1945-04-16,0,1,0,0,1,0,0,0.000,2,lexikon_wehrmacht_de;us_army_cmh,0,,,0,
 GER-INF-048D,48th Infantry Division,Germany,division,Army,1944-08-17,1944-11-14,89,15,0,0,2,13,11,0.733,4,lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;us_army_cmh,12,1944-08-17,1944-08-29,0,
 GER-INF-049D,49th Infantry Division,Germany,division,Army,1944-08-29,1944-12-05,98,16,0,0,1,15,14,0.875,3,lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh,7,1944-08-29,1944-09-05,0,
@@ -107,6 +109,8 @@ GER-INF-361D,361st Infantry Division,Germany,division,Army,1945-04-05,1945-04-17
 GER-INF-363D,363rd Infantry Division,Germany,division,Army,1944-08-01,1944-08-19,18,4,0,0,1,3,3,0.750,2,loc_12ag_situation_maps;us_army_cmh,7,1944-08-01,1944-08-08,0,
 GER-INF-416D,416th Infantry Division,Germany,division,Army,1944-10-10,1945-01-15,97,13,0,0,3,10,10,0.769,4,fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh,14,1945-01-01,1945-01-15,0,
 GER-INF-462D,462nd Infantry Division,Germany,division,Army,1944-09-24,1944-11-28,65,8,0,0,1,7,7,0.875,3,lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh,23,1944-09-24,1944-10-17,0,
+GER-INF-471D,471st Infantry Division,Germany,division,Army,1945-04-27,1945-04-27,0,1,0,0,0,1,0,0.000,1,canada_ca,0,,,0,
+GER-INF-490D,490th Infantry Division,Germany,division,Army,1945-04-23,1945-04-27,4,2,0,0,0,2,0,0.000,1,canada_ca,4,1945-04-23,1945-04-27,0,
 GER-INF-708D,708th Infantry Division,Germany,division,Army,1944-08-08,1944-09-05,28,5,0,0,2,3,3,0.600,3,canada_ca;loc_12ag_situation_maps;us_army_cmh,17,1944-08-19,1944-09-05,0,
 GER-INF-709D,709th Static Infantry Division,Germany,division,Army,1944-06-06,1944-06-29,23,6,0,3,2,1,0,0.000,3,nara_captured_german_records;us_army_cmh;wikipedia,14,1944-06-06,1944-06-20,0,
 GER-INF-711D,711th Infantry Division,Germany,division,Army,1944-06-06,1945-01-09,217,33,0,0,3,30,25,0.758,7,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;us_army_cmh;wikipedia,18,1944-09-08,1944-09-26,0,
@@ -165,6 +169,7 @@ GER-SSCOR-013C,XIII SS Corps,Germany,corps,Waffen-SS,1944-09-24,1945-05-08,226,1
 GER-SSCOR-014C,XIV SS Corps,Germany,corps,Waffen-SS,1945-01-05,1945-03-20,74,9,0,0,1,8,8,0.889,2,loc_12ag_situation_maps;us_army_cmh,25,1945-01-05,1945-01-30,0,
 GER-SSCOR-018C,XVIII SS Corps,Germany,corps,Waffen-SS,1945-01-30,1945-04-27,87,12,0,1,3,8,8,0.667,4,fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh,20,1945-04-01,1945-04-21,0,
 GER-SSGEB-006D,6th SS Mountain Division Nord,Germany,division,Waffen-SS,1945-03-06,1945-04-02,27,3,0,0,1,2,1,0.333,2,loc_12ag_situation_maps;us_army_cmh,21,1945-03-06,1945-03-27,0,
+GER-SSGR-034D,34th SS Volunteer Grenadier Division Landstorm Nederland,Germany,division,Waffen-SS,1945-04-18,1945-04-18,0,1,0,0,0,1,0,0.000,1,canada_ca,0,,,0,
 GER-SSPG-017D,17th SS Panzergrenadier Division Götz von Berlichingen,Germany,division,Waffen-SS,1944-06-06,1945-04-16,314,52,0,2,8,42,38,0.731,6,fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;us_army_cmh;wikipedia,21,1944-08-15,1944-09-05,0,
 GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,1944-06-06,1945-01-04,212,16,0,1,5,10,7,0.438,7,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nafziger_naf;us_army_cmh;wikipedia,53,1944-10-24,1944-12-16,1,1944-11
 GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,1944-06-06,1944-12-30,207,27,0,2,8,17,14,0.519,8,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nafziger_naf;nara_captured_german_records;okw_kriegstagebuch_schramm;us_army_cmh,28,1944-10-17,1944-11-14,0,

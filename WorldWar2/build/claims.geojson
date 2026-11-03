@@ -283652,15 +283652,15 @@
     "claim_id": "C7616",
     "conflict_group_id": null,
     "claim_status": "preferred",
-    "unit_id": "CAN-COR-001C",
-    "unit_name": "I Canadian Corps",
+    "unit_id": "CAN-ARM-001B",
+    "unit_name": "1st Canadian Armoured Brigade",
     "nationality": "Canada",
     "theater": "western_europe",
-    "echelon": "corps",
-    "branch": "Army",
+    "echelon": "brigade",
+    "branch": "Armoured",
     "date": "1945-04-12",
     "place_id": "PL1630",
-    "location_name": "Tiel, Gelderland (1st Canadian Armoured Brigade)",
+    "location_name": "Tiel, Gelderland",
     "location_represents": "sector_center",
     "precision_km": 10,
     "confidence": 0.3,
@@ -291803,6 +291803,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5722,
+     51.9609
+    ]
+   },
+   "properties": {
+    "claim_id": "C7686",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSGR-034D",
+    "unit_name": "34th SS Volunteer Grenadier Division Landstorm Nederland",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-04-18",
+    "place_id": "PL1629",
+    "location_name": "Rhenen, Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "defends the southern Grebbe Line facing the 49th (West Riding) Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 581"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6374,
+     51.926
+    ]
+   },
+   "properties": {
+    "claim_id": "C7688",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-001B",
+    "unit_name": "1st Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-04-18",
+    "place_id": "PL0820",
+    "location_name": "Opheusden, Neder-Betuwe, Gelderland (Belgian infantry and B Squadron, The Calgary Regiment, under the brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Belgian infantry under the brigade, with a squadron of the Calgary Regiment, seize Opheusden on the island",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 581"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6172,
      51.8006
     ]
@@ -294048,6 +294130,47 @@
     "strength_status": "unknown",
     "location_date": "1945-04-23",
     "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 601"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3496,
+     53.021
+    ]
+   },
+   "properties": {
+    "claim_id": "C7684",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-490D",
+    "unit_name": "490th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-23",
+    "place_id": "PL3525",
+    "location_name": "Kirchhatten (Hatten), Lower Saxony (Battle Group Lier)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Battle Group Lier, under the nominal control of the division, defends Kirchhatten",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-23",
+    "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 601"
@@ -299183,6 +299306,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "claim_id": "C7683",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-471D",
+    "unit_name": "471st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-27",
+    "place_id": "PL0657",
+    "location_name": "Oldenburg (Oldb), Niedersachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "division staff controlling battle groups on the 86th Corps' eastern flank (intelligence estimate)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 597, 603"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "claim_id": "C7685",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-490D",
+    "unit_name": "490th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-27",
+    "place_id": "PL0657",
+    "location_name": "Oldenburg (Oldb), Niedersachsen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "division staff controlling battle groups on the 86th Corps' eastern flank (intelligence estimate)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 597, 603"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -303660,12 +303865,12 @@
     "claim_id": "C7681",
     "conflict_group_id": null,
     "claim_status": "preferred",
-    "unit_id": "GER-FJA-001A",
-    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "unit_id": "GER-AA-STRAUB",
+    "unit_name": "Armee-Abteilung Straube",
     "nationality": "Germany",
     "theater": "western_europe",
     "echelon": "army",
-    "branch": "Luftwaffe",
+    "branch": "Army",
     "date": "1945-05-01",
     "place_id": "PL0714",
     "location_name": "Aurich, Niedersachsen",
@@ -305777,6 +305982,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R779;R002",
     "source_locator": "R779: Skizze 16"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.046,
+     53.1614
+    ]
+   },
+   "properties": {
+    "claim_id": "C7687",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AA-STRAUB",
+    "unit_name": "Armee-Abteilung Straube",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0701",
+    "location_name": "Bad Zwischenahn, Niedersachsen (surrender meeting place, not a headquarters)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "Straube reports to Simonds at the Bad Zwischenahn surrender meeting; about 30,000 German troops in the sector",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 613"
    }
   },
   {

@@ -10898,7 +10898,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 19
+    "claims_count": 23
    }
   },
   {
@@ -13918,7 +13918,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -14118,7 +14118,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -15458,7 +15458,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -20938,7 +20938,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -21698,7 +21698,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -65958,7 +65958,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -68658,7 +68658,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69298,7 +69298,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69458,7 +69458,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Drenthe",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -70773,6 +70773,86 @@
    "properties": {
     "place_id": "PL3554",
     "name": "Repelen (Moers), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2057,
+     51.8001
+    ]
+   },
+   "properties": {
+    "place_id": "PL3555",
+    "name": "Gameren (Zaltbommel), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3466,
+     51.8137
+    ]
+   },
+   "properties": {
+    "place_id": "PL3556",
+    "name": "Heesselt (West Betuwe), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0914,
+     51.8173
+    ]
+   },
+   "properties": {
+    "place_id": "PL3557",
+    "name": "Brakel (Zaltbommel), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3141,
+     51.7867
+    ]
+   },
+   "properties": {
+    "place_id": "PL3558",
+    "name": "Grieth (Kalkar), North Rhine-Westphalia",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

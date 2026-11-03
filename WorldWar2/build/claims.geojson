@@ -102301,6 +102301,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5506,
+     52.9972
+    ]
+   },
+   "properties": {
+    "claim_id": "C7778",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-10-15",
+    "place_id": "PL3488",
+    "location_name": "Assen, Drenthe",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "6th Parachute Division re-formed in the Assen-Meppel-Coevorden area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R807;R002",
+    "source_locator": "R808: German p.1, English p.1; R807: English p.17"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9833,
      50.8833
     ]
@@ -138791,6 +138832,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7779",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-11-19",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "6th Parachute Division takes over the II SS Panzer Corps sector either side of Arnhem under LXXXVIII Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.3, English p.3, Anlage 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7781",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-363D",
+    "unit_name": "363rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-19",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "363rd Volksgrenadier Division relieved in the Arnhem sector by the 6th Parachute Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.3, English p.3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7782",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-11-19",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "10th SS Panzer Division relieved in the Arnhem sector by the 6th Parachute Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.3, English p.3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8025,
      48.2636
     ]
@@ -139399,6 +139563,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R777;R002",
     "source_locator": "R777: German p.1, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9751,
+     51.9958
+    ]
+   },
+   "properties": {
+    "claim_id": "C7780",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-11-20",
+    "place_id": "PL3313",
+    "location_name": "Velp (Rheden), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "6th Parachute Division command post at Velp east of Arnhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.3, English p.3, Anlage 2"
    }
   },
   {
@@ -146246,6 +146451,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8453,
+     51.9188
+    ]
+   },
+   "properties": {
+    "claim_id": "C7783",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL0783",
+    "location_name": "Elst, Overbetuwe, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Elements of the 50th Division opposite the 6th Parachute Division on the Island south of Arnhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.4, English p.4"
    }
   },
   {
@@ -153542,8 +153788,8 @@
     "location_date": "1944-12-04",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 430, 433"
+    "reference_ids": "R668;R808;R002",
+    "source_locator": "R668: pp. 430, 433; R808: German p.4, English p.4"
    }
   },
   {
@@ -159578,6 +159824,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7784",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002D",
+    "unit_name": "2nd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-10",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Re-formed 2nd Parachute Division relieves the 6th Parachute Division at Arnhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.5, English p.6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1167,
      50.2667
     ]
@@ -159612,6 +159899,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R392;R469;R340;R001",
     "source_locator": "R392: p. 139"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2057,
+     51.8001
+    ]
+   },
+   "properties": {
+    "claim_id": "C7785",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-11",
+    "place_id": "PL3555",
+    "location_name": "Gameren (Zaltbommel), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "6th Parachute Division takes over the 711th Division sector; command post at Gameren",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.5, English p.6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3466,
+     51.8137
+    ]
+   },
+   "properties": {
+    "claim_id": "C7786",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-11",
+    "place_id": "PL3556",
+    "location_name": "Heesselt (West Betuwe), Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "711th Infantry Division relieved on the Waal near Heesselt by the 6th Parachute Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-11",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.5, English p.6"
    }
   },
   {
@@ -165350,8 +165719,8 @@
     "location_date": "1944-12-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R182;R001",
-    "source_locator": "R182: table of 1944, December row"
+    "reference_ids": "R182;R808;R001",
+    "source_locator": "R182: table of 1944, December row; R808: German p.3, English p.3"
    }
   },
   {
@@ -176060,6 +176429,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9739,
+     51.8296
+    ]
+   },
+   "properties": {
+    "claim_id": "C7787",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-20",
+    "place_id": "PL3448",
+    "location_name": "Gorinchem, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division holds an 80 km front from the Hollandsch Diep to east of Rhenen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.5, English p.6, Anlage 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -184825,8 +185235,8 @@
     "location_date": "1944-12-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 452; R671: p. 239"
+    "reference_ids": "R668;R671;R808;R002",
+    "source_locator": "R668: p. 452; R671: p. 239; R808: German p.8, English p.8"
    }
   },
   {
@@ -185099,7 +185509,7 @@
     "location_name": "Kapelsche Veer, Noord-Brabant",
     "location_represents": "front_line_point",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "relieves the 712th Division at the Kapelsche Veer bridgehead and holds it",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -185112,8 +185522,8 @@
     "location_date": "1944-12-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R807;R002",
-    "source_locator": "R668: p. 454; R807: English p.18, German p.20"
+    "reference_ids": "R668;R807;R808;R002",
+    "source_locator": "R668: p. 454; R807: English p.18, German p.20; R808: German p.8, English p.8, Anlage 3"
    }
   },
   {
@@ -191631,8 +192041,8 @@
     "location_date": "1945-01-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 452; R671: p. 239"
+    "reference_ids": "R668;R671;R808;R002",
+    "source_locator": "R668: p. 452; R671: p. 239; R808: German p.8, English p.8"
    }
   },
   {
@@ -191756,6 +192166,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R752;R002",
     "source_locator": "R752: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0914,
+     51.8173
+    ]
+   },
+   "properties": {
+    "claim_id": "C7788",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-01-07",
+    "place_id": "PL3557",
+    "location_name": "Brakel (Zaltbommel), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "6th Parachute Division command post moved to Brakel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.5, English p.6"
    }
   },
   {
@@ -197330,8 +197781,8 @@
     "location_date": "1945-01-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 455"
+    "reference_ids": "R668;R808;R002",
+    "source_locator": "R668: p. 455; R808: German pp.7-8, English p.8"
    }
   },
   {
@@ -197660,6 +198111,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: German pp.8-9, English pp.8-9"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9832,
+     51.7141
+    ]
+   },
+   "properties": {
+    "claim_id": "C7790",
+    "conflict_group_id": "G059",
+    "claim_status": "alternate",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-01-15",
+    "place_id": "PL0715",
+    "location_name": "Kapelsche Veer, Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Kapelsche Veer bridgehead given up on higher orders",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.8, English p.8"
    }
   },
   {
@@ -203236,6 +203728,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 457"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2715,
+     51.8826
+    ]
+   },
+   "properties": {
+    "claim_id": "C7789",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-01-17",
+    "place_id": "PL1060",
+    "location_name": "Geldermalsen, West Betuwe, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "6th Parachute Division command post moved to Geldermalsen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.5, English p.6"
    }
   },
   {
@@ -216287,7 +216820,7 @@
    },
    "properties": {
     "claim_id": "C7442",
-    "conflict_group_id": null,
+    "conflict_group_id": "G059",
     "claim_status": "preferred",
     "unit_id": "GER-FJ-006D",
     "unit_name": "6th Fallschirmjäger Division",
@@ -225046,8 +225579,8 @@
     "location_date": "1945-02-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 478"
+    "reference_ids": "R668;R808;R002",
+    "source_locator": "R668: p. 478; R808: German p.9, English p.10"
    }
   },
   {
@@ -225171,6 +225704,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: German p.11, English p.11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2928,
+     51.7389
+    ]
+   },
+   "properties": {
+    "claim_id": "C7791",
+    "conflict_group_id": "G060",
+    "claim_status": "alternate",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-10",
+    "place_id": "PL0705",
+    "location_name": "Calcar (Kalkar), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Division command echelon relieves the 84th Division staff south of Emmerich as Kampfgruppe Plocher",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.9, English p.10"
    }
   },
   {
@@ -232189,6 +232763,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3713,
+     51.6994
+    ]
+   },
+   "properties": {
+    "claim_id": "C7792",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-15",
+    "place_id": "PL1098",
+    "location_name": "Marienbaum, Xanten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "17th and 18th Parachute Regiments arrive by rail at Marienbaum",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.11, English p.11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2308,
      51.7291
     ]
@@ -232236,7 +232851,7 @@
    },
    "properties": {
     "claim_id": "C2027",
-    "conflict_group_id": null,
+    "conflict_group_id": "G060",
     "claim_status": "preferred",
     "unit_id": "GER-FJ-006D",
     "unit_name": "6th Fallschirmjäger Division",
@@ -232713,8 +233328,8 @@
     "location_date": "1945-02-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 485"
+    "reference_ids": "R668;R808;R002",
+    "source_locator": "R668: p. 485; R808: German p.11, English p.11"
    }
   },
   {
@@ -232795,8 +233410,8 @@
     "location_date": "1945-02-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 485"
+    "reference_ids": "R668;R808;R002",
+    "source_locator": "R668: p. 485; R808: German p.11, English p.11"
    }
   },
   {
@@ -239437,8 +240052,8 @@
     "location_date": "1945-02-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 487"
+    "reference_ids": "R668;R808;R002",
+    "source_locator": "R668: p. 487; R808: German p.12, English p.12"
    }
   },
   {
@@ -240626,8 +241241,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R777;R002",
-    "source_locator": "R668: p. 495; R777: German p.3, English p.2, Skizze 2"
+    "reference_ids": "R668;R777;R808;R002",
+    "source_locator": "R668: p. 495; R777: German p.3, English p.2, Skizze 2; R808: German p.12, English p.12"
    }
   },
   {
@@ -241079,6 +241694,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 500-501"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3141,
+     51.7867
+    ]
+   },
+   "properties": {
+    "claim_id": "C7793",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-26",
+    "place_id": "PL3558",
+    "location_name": "Grieth (Kalkar), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division holds Grieth and Wissel against tank attacks",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.12, English p.12"
    }
   },
   {
@@ -257684,6 +258340,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: English p.20, Sketch 6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4538,
+     51.7376
+    ]
+   },
+   "properties": {
+    "claim_id": "C7794",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-10",
+    "place_id": "PL3480",
+    "location_name": "Haffen (Rees), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "6th Parachute Division withdrawn to the east bank of the Rhine west of Wesel",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R808;R002",
+    "source_locator": "R808: German p.13, English p.14"
    }
   },
   {

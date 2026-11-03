@@ -3554,3 +3554,32 @@ Of 13 checkable facts, 10 agree with the dataset. The differences:
 - **Semantic tests:** scenario 133.
 - Reading notes (private, Drive only): `FMS_B-084_notes.md`.
 
+## fms-fold3-netherlands: FMS B-368, Langhaeuser, 6th Parachute Division (3 November 2026)
+
+FMS B-368 (Rudolf Langhaeuser, Allendorf, 6 February 1947; attested by Plocher, reviewed by Geyer; NARA M1035 fiche 0363G, 57 images, German with the English translation and Anlagen 1-4; the narrative ends on 10 March 1945) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R808` (`fms_german_manuscript`). Of 12 checkable facts, 8 agree with the dataset. The differences, all dates:
+- the Kapelsche Veer given up in mid-January, against 30-31 January (G059);
+- the relief of the 84th Division staff about 10 February, against 16 February (G060);
+- the 711th Division leaving about 11 December, against 26 December (roadmap 256);
+- the 80 km front by about 20 December while Stacey has the 712th Division at the Kapelsche Veer until 31 December.
+
+- **New claims:** `C7778`-`C7794` (17: 16 German, 1 Allied; blank parents). They cover:
+  - The re-forming at Assen-Meppel-Coevorden (October 1944).
+  - The Arnhem sector from 19 November, with the command post at Velp; the 363rd Volksgrenadier and 10th SS Panzer Divisions relieved; the 50th Division opposite.
+  - The 2nd Parachute Division's relief of the division at Arnhem (about 10 December).
+  - The Waal and Maas sector, with command posts at Gameren (11 December), Brakel (7 January) and Geldermalsen (17 January), and the 711th Division relieved near Heesselt.
+  - The 80 km front (about 20 December) and the Kapelsche Veer given up.
+  - Kampfgruppe Plocher (about 10 February), the regiments arriving at Marienbaum, and Grieth and Wissel.
+  - The east-bank sector Haffen-Hamminkeln (10 March).
+- **New places:** `PL3555` Gameren, `PL3556` Heesselt, `PL3557` Brakel, `PL3558` Grieth (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-368 appended on 11 rows, with old and new values in each row's notes.
+  - `C7438`: confidence old value 0.5, new value 0.7. Reason: corroboration rule. Stacey and B-368 agree on the division at the Kapelsche Veer in its second commitment.
+  - `C1566`, `C1567`: unchanged, already 0.7 or more.
+  - `C7511`: unchanged, same family as B-084.
+  - `C1057`, `C1545`, `C7439`, `C7459`, `C7484`, `C7485`, `C7488`: unchanged. Agreement is undated or approximate. `C1545` and `C7459` are candidates for a raise if Scott accepts undated agreement.
+- **Conflict groups:**
+  - **G059 (roadmap 254):** `C7442` preferred. `C7790`: conflict_group_id old value blank, new value G059; claim_status old value preferred, new value alternate; confidence unchanged (0.3).
+  - **G060 (roadmap 255):** `C2027` preferred. `C7791`: conflict_group_id old value blank, new value G060; claim_status old value preferred, new value alternate; confidence unchanged (0.3).
+  - Reason for both: the official history from contemporary records is preferred over the memory-based manuscript. Nothing deleted.
+- **Semantic tests:** scenario 134.
+- Reading notes (private, Drive only): `FMS_B-368_notes.md`.
+

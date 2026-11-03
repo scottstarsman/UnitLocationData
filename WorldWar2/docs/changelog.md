@@ -3482,3 +3482,154 @@ Roll 1725 (1441 pages) checked in the German original on 3 November 2026: the ta
 ## nara-microfilm: NARA T-315 roll 303 (5th Mountain Division 1943 / 5th Parachute Division 1944; 3 November 2026)
 
 Roll 303 (603 pages) read in the German original on 3 November 2026. The 5th Mountain Division part (1943, outside the period) was sampled. The 5th Parachute Division file (27 March-5 December 1944, pages 220-603) was read in full by OCR. It holds discipline, court, personnel and gas-defence papers. Its command-post headers give no place and mention no dated unit location. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## fms-fold3-netherlands: FMS B-093, Meindl, II Parachute Corps in the Rhineland (3 November 2026)
+
+FMS B-093 (Eugen Meindl, written at Allendorf, 31 March 1947; German original with the English translation by H. Heitman and Hoehne's 1950 index; NARA M1035 fiche 0089G, 75 images) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R806` (source family `fms_german_manuscript`). Of 12 checkable facts, 8 agree with the dataset; the differences are the fall of Xanten (7 March, against Stacey's 8 March; roadmap 250), the Wesel bridgehead command (6 March, against `C2234`'s 7 March; roadmap 251), the 8th Parachute Division forming at Roermond (against `C1132`, a Kleve listing row) and the II Parachute Corps staff at St. Hubert near Kempen in December (against `C1071`, a Tilburg listing row).
+
+- **New claims:** `C7689`-`C7721` (33, all German, blank parents, 0.5 for dated command posts in the text, 0.3 for sectors, approximate dates and sketch positions). They cover the II Parachute Corps command posts from Wahn and Kleve (September 1944), the Reichswald bunker (November), St. Hubert near Kempen (December), Sonsbeck (19 February 1945), Hoerstgen (3 March), Westermann's farm north of Alpsray (4 March), Perrich (6 March, uncertain reading of "Ferrich"), east of Bislich (10 March) and south-east of Bocholt (12 March), plus division sectors (84th, 190th, 180th Infantry; 6th, 7th, 8th Parachute; 116th Panzer) and the XLVII Panzer Corps moves.
+- **New places:** `PL3539` Alpsray (Rheinberg), `PL3540` Perrich (Wesel), `PL3541` Ossenberg (Rheinberg), `PL3542` Bislich (Wesel), `PL3543` Bocholt (OpenStreetMap Nominatim, `R002`).
+- **Corroborations (B-093 appended to reference_ids, source and source_locator; old and new values in each row's notes):** `C0856` (confidence old value 0.5, new value 0.7; reason: corroboration rule, the CMH row and an FMS manuscript agree on the corps taking the Nijmegen-Reichswald sector on 20-23 September); `C2226`, `C2232` (same source family, unchanged); `C7113`, `C7430`, `C7431`, `C7499`, `C7500`, `C7566` (sector or sketch agreement or a roadmap row, confidence unchanged).
+- **Conflict group G058 (roadmap 246 closed):** `C7704` (Sonsbeck command post, 19 February) preferred; `C5809` (12th Army Group map, Varsselder, 20 February) conflict_group_id old value blank, new value G058; claim_status old value preferred, new value alternate; confidence unchanged (0.3); reason: Meindl names Sonsbeck as his command post from 19 February to 3 March. Nothing deleted.
+- **Semantic tests:** scenario 131 added; scenario 129 expectation for `C5809` changed from ungrouped to G058; the Stacey scenarios (118-122) now require the new rows to cite Stacey first (old: reference_ids exactly R668;R002), because FMS corroborations are appended to some of them.
+- Reading notes (private, Drive only): `FMS_B-093_notes.md`.
+
+## fms-fold3-netherlands: FMS B-717, Student, First Parachute Army and Army Group H (3 November 2026)
+
+FMS B-717 (Kurt Student, written in hospital at Rotenburg/Hannover, 20 November 1947, as a supplement to Geyer's MS B-147; English translation and German original; NARA M1035 fiche 0690, 47 images) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R807` (`fms_german_manuscript`). Student writes from memory and gives few dates. Of 14 checkable facts, 11 agree with the dataset. The differences:
+- the 59th Division at Boxtel against `C0890` (Tilburg, in transit), about 20 km apart;
+- the 3rd Parachute Division re-raised at Hengelo-Coevorden against Meindl's Wahn (`C7690`);
+- the Army Group H handover on 31 January against 28-29 January (`C1128`, `C7443`; roadmap 252).
+
+- **New claims:** `C7722`-`C7747` (26: 22 German, 4 Allied; blank parents; 0.5 for dated command posts in the text, otherwise 0.3). They cover:
+  - Army Group B at Verviers (5 Sep), Terborg (17 Sep) and Krefeld (about 25 Sep).
+  - The LXXXVIII Corps command post at Moergestel (5 Sep), and Chill given the Beringen sector (6 Sep).
+  - The First Parachute Army command posts at Tilburg, Vught, Terborg and Dinxperlo.
+  - The 6th Parachute Regiment at Tilburg, Balen and Veghel, and the Guards and 11th Armoured Divisions at Beverloo.
+  - Erdmann's division detraining at Helmond, the 176th at Maastricht, and the 59th at Boxtel.
+  - The 363rd Volksgrenadier Division attack via Kesteren, with the 101st Airborne opposite.
+  - The XLVII Panzer Corps and 15th Panzergrenadier attack at Meijel, with the US 7th Armored (identification uncertain).
+  - Army Group H at Hilversum (end of October), and the 2nd, 3rd and 5th Parachute Divisions re-raising.
+- **Dates from other rows:** the Meijel rows and the Veghel row take their dates from `C2161` and `C1768`; this is stated in each row's notes.
+- **New places:** `PL3544` Balen, `PL3545` Terborg, `PL3546` Dinxperlo, `PL3547` Kesteren, `PL3548` Hengelo (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-717 is appended on 13 rows. The old and new values are in each row's notes.
+  - `C0854`: confidence old value 0.5, new value 0.7. Reason: corroboration rule. The CMH row and an FMS manuscript agree on the II SS Panzer Corps at Arnhem on 17 September.
+  - `C0825`, `C0827`, `C1767`, `C1768`: unchanged, already 0.7 or more.
+  - `C0856`: unchanged, same family as B-093.
+  - `C0826`, `C0908`, `C1037`, `C2161`, `C7131`, `C7133`, `C7438`: unchanged. Agreement is undated or approximate.
+- **Not added:** Student's "51st Highland Division at Gheel" (mid-September). It conflicts with `C1460` (the 51st at Le Havre on 11 September) and is kept in the reading notes only.
+- **Placeholder units promoted** (scripts/promote_placeholders.py): `GER-FJR-006` and `GER-VG-363D`, record_status old value placeholder, new value active (they now have claims).
+- **Roadmap:** 240 updated (still open, new recommendation); 252 and 253 opened (253: speed warnings between the new Meijel rows and stale 12th Army Group map rows).
+- **Semantic tests:** scenario 132.
+- Reading notes (private, Drive only): `FMS_B-717_notes.md`.
+
+## fms-fold3-netherlands: FMS B-084, Schlemm, First Parachute Army, re-read in full (3 November 2026)
+
+FMS B-084 (`R777`, Alfred Schlemm, Island Farm, 21 April 1946; NARA M1035, 76 images, German with the English translation and Appendices 1-4) was re-read in full in the Fold3 viewer on 3 November 2026. The first reading had taken only `C2226`-`C2235`.
+
+`data/references_meta.csv`, row R777:
+- **reliability_note:** old value the note from the first reading (31 October 2026), new value the same note plus a sentence on the full re-read and the LXV/LXIII naming.
+- **used_for:** old value covered the Rhineland battle, new value covers 20 November 1944 to 10 March 1945.
+- **Reason:** the scope of the reading was widened.
+
+Of 13 checkable facts, 10 agree with the dataset. The differences:
+- The fall of Xanten: "2-3 March" against 8 March (roadmap 250 updated).
+- The Wesel bridges blown at 07:00 on 10 March, against Meindl's about 05:00. Reading notes only.
+- Abraham's corps: "LXV Corps" in the text, shown on Skizze 2 near Kaldenkirchen while the redraw puts it at Moers. The rows use GER-COR-063C with a note.
+
+- **New claims:** `C7748`-`C7777` (30, all German, blank parents). They cover:
+  - Schlemm taking command on 20 November.
+  - The end-January positions: the army at Dinxperlo, II Parachute Corps at St. Hubert, LXXXVI Corps at Appeldorn, and the 8th Parachute Division's Roer bridgehead.
+  - Abraham's corps: subordinated about 18 February, near Kaldenkirchen on 25 February, its southern front and command post at Moers on 27 February, the Issum-Homberg sector on 4 March, Repelen on 5 March, and its staff to the east bank on 6 March.
+  - The 15th Panzergrenadier and Panzer Lehr Divisions put under it.
+  - LXXXVI Corps at Geldern on 25 February and 1 March, and its staff withdrawn on 3 March.
+  - The XLVII Panzer Corps staff to the east bank on 6 March. B-093 is cited as well, but it is the same family, so the row stays at 0.5.
+  - Four division rows for 24 February and nine for 4 March, all at 0.3 except the 15th Panzergrenadier at Marienbaum (0.5).
+- **New places:** `PL3549` Appeldorn, `PL3550` Sint Odiliënberg, `PL3551` Kaldenkirchen, `PL3552` Moers, `PL3553` Kamp-Lintfort, `PL3554` Repelen (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** R777 appended on 9 rows, with old and new values in each row's notes. All confidences are unchanged, for these reasons:
+  - `C7510`: conflict group G056.
+  - `C7707`, `C7710`: same family.
+  - `C7509`, `C7511`, `C7512`, `C7514`, `C7515`: Schlemm's 24 February against the Stacey 25 February rows.
+  - `C7531`: approximate date.
+- **Semantic tests:** scenario 133.
+- Reading notes (private, Drive only): `FMS_B-084_notes.md`.
+
+## fms-fold3-netherlands: FMS B-368, Langhaeuser, 6th Parachute Division (3 November 2026)
+
+FMS B-368 (Rudolf Langhaeuser, Allendorf, 6 February 1947; attested by Plocher, reviewed by Geyer; NARA M1035 fiche 0363G, 57 images, German with the English translation and Anlagen 1-4; the narrative ends on 10 March 1945) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R808` (`fms_german_manuscript`). Of 12 checkable facts, 8 agree with the dataset. The differences, all dates:
+- the Kapelsche Veer given up in mid-January, against 30-31 January (G059);
+- the relief of the 84th Division staff about 10 February, against 16 February (G060);
+- the 711th Division leaving about 11 December, against 26 December (roadmap 256);
+- the 80 km front by about 20 December while Stacey has the 712th Division at the Kapelsche Veer until 31 December.
+
+- **New claims:** `C7778`-`C7794` (17: 16 German, 1 Allied; blank parents). They cover:
+  - The re-forming at Assen-Meppel-Coevorden (October 1944).
+  - The Arnhem sector from 19 November, with the command post at Velp; the 363rd Volksgrenadier and 10th SS Panzer Divisions relieved; the 50th Division opposite.
+  - The 2nd Parachute Division's relief of the division at Arnhem (about 10 December).
+  - The Waal and Maas sector, with command posts at Gameren (11 December), Brakel (7 January) and Geldermalsen (17 January), and the 711th Division relieved near Heesselt.
+  - The 80 km front (about 20 December) and the Kapelsche Veer given up.
+  - Kampfgruppe Plocher (about 10 February), the regiments arriving at Marienbaum, and Grieth and Wissel.
+  - The east-bank sector Haffen-Hamminkeln (10 March).
+- **New places:** `PL3555` Gameren, `PL3556` Heesselt, `PL3557` Brakel, `PL3558` Grieth (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-368 appended on 11 rows, with old and new values in each row's notes.
+  - `C7438`: confidence old value 0.5, new value 0.7. Reason: corroboration rule. Stacey and B-368 agree on the division at the Kapelsche Veer in its second commitment.
+  - `C1566`, `C1567`: unchanged, already 0.7 or more.
+  - `C7511`: unchanged, same family as B-084.
+  - `C1057`, `C1545`, `C7439`, `C7459`, `C7484`, `C7485`, `C7488`: unchanged. Agreement is undated or approximate. `C1545` and `C7459` are candidates for a raise if Scott accepts undated agreement.
+- **Conflict groups:**
+  - **G059 (roadmap 254):** `C7442` preferred. `C7790`: conflict_group_id old value blank, new value G059; claim_status old value preferred, new value alternate; confidence unchanged (0.3).
+  - **G060 (roadmap 255):** `C2027` preferred. `C7791`: conflict_group_id old value blank, new value G060; claim_status old value preferred, new value alternate; confidence unchanged (0.3).
+  - Reason for both: the official history from contemporary records is preferred over the memory-based manuscript. Nothing deleted.
+- **Semantic tests:** scenario 134.
+- Reading notes (private, Drive only): `FMS_B-368_notes.md`.
+
+
+## fms-fold3-netherlands: FMS B-774, Prittwitz und Gaffron, LXXXVIII Corps (3 November 2026)
+
+FMS B-774 (Heinz von Prittwitz und Gaffron, corps operations officer, Steimbel, 17 December 1947; comments by Drews and Brandenberger; NARA M1035, German text with the English translation) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R809` (`fms_german_manuscript`). It covers LXXXVIII Corps from 1 October 1944 to 21 March 1945. The differences from the dataset, all dates: the 256th Volksgrenadier Division's first infantry on 15 October against 23 October (roadmap 257); Reinhard's replacement by Schwalbe on 22 December against 23-24 December (roadmap 258); 's-Hertogenbosch given up on 1 November against its capture on 27 October (`C1470`; kept, different events).
+
+- **New claims:** `C7795`-`C7829` (35: 32 German, 3 Allied; blank parents). They cover the corps command posts (Dongen, Herpt, Almkerk, Geldermalsen, Houten, Bilthoven, Lunteren), the 1 October line (245th, 59th, 85th Divisions), the 85th Division at Poppel and its move to Bergen op Zoom, the arrival and withdrawal of the 256th Volksgrenadier Division, the October offensive (7th Armoured and 51st Divisions as identified by the Germans; the 712th Division smashed at 's-Hertogenbosch; Tilburg evacuated), the withdrawal over the Maas, the Maas line of 5 November, the 711th Division taking the whole Maas sector, the Arnhem sector from 19 December, Haalderen, the change of commander, Zetten, and the 712th and 346th Divisions in early 1945.
+- **New places:** `PL3559` Poppel, `PL3560` Waspik, `PL3561` Almkerk, `PL3562` Raamsdonksveer, `PL3563` Genderen, `PL3564` Houten, `PL3565` Haalderen, `PL3566` Lunteren (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-774 appended on 5 rows (reference_ids, source and source_locator; old and new values in each row's notes). No raises: `C2168`, `C2174`, `C2177` are the same family (FMS B-475); `C7352` (Stacey) agrees only on an undated sector; `C7790` is in conflict group G059 and held.
+- **Roadmap:** 240 updated (recommend closure, both rows kept as phases); 257 and 258 opened.
+- **Tests:** scenario 135 added.
+
+## fms-fold3-netherlands: FMS B-762, Prittwitz und Gaffron, LXXXVIII Corps in Holland (3 November 2026)
+
+FMS B-762 (Heinz von Prittwitz und Gaffron, Steimbel, 17 December 1947; comment by Brandenberger, 9 March 1948; NARA M1035 fiche 0750G, 33 images, German with the English translation and two sketches) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R810` (`fms_german_manuscript`). It covers LXXXVIII Corps from 22 March to the capitulation. It agrees with Stacey on Zwolle (14 April) and the 6th Parachute Division breaking west on 17 April; the one difference is the capitulation date (10 May, against 5 and 7 May; roadmap 259).
+
+- **New claims:** `C7830`-`C7848` (19: 18 German, 1 Allied; blank parents): the corps sector about 20 March; the 346th and 361st Divisions on 24 March (sketch, 0.3); the withdrawal of 30 March behind the IJssel and Twente Canal; the 6th Parachute Division under the corps; the command post at Dalfsen under Army Group Student (3 April); Harfsen (4 April); the lines of 6 and 10 April; Zwolle given up (14 April); the 361st Division on the Apeldoorn Canal; the command post at Putten; the attack via Barneveld (18 April) and the defence of Putten (19 April, with the 5th Canadian Armoured Division row from the German account); the 361st Division shipped from Harderwijk (20 April); the Grebbe line (about 22 April).
+- **New places:** `PL3567` Zeddam, `PL3568` Dalfsen, `PL3569` Harfsen, `PL3570` Markelo, `PL3571` Putten, `PL3572` Woudenberg (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** B-762 appended on 7 rows (old and new values in each row's notes).
+  - `C7587` (3rd Canadian Division occupies Zwolle, 14 April): confidence old value 0.5, new value 0.7. Reason: corroboration rule; Stacey and B-762 agree on date and place.
+  - `C7631` (6th Parachute Division escapes west through Voorthuizen, 17 April): confidence old value 0.5, new value 0.7. Reason: corroboration rule; Stacey and B-762 agree on date and place.
+  - `C7579`, `C7580`, `C7621`, `C7632`, `C7679`: unchanged; agreement approximate in date or place, or map-only support (`C7679`).
+- **Roadmap:** 259 opened.
+- **Tests:** scenario 136 added.
+
+## fms-fold3-netherlands: roadmap 240 closed and 253 resolved (3 November 2026)
+
+Scott approved both recommendations on 3 November 2026 (message t293u).
+
+- **Roadmap 240 (Battle Group Chill, 4-6 October 1944):** closed. `C2174` and `C7799` (4 October, first parts of the 85th Division attack north of Poppel) and `C7348` (6 October, the division heavily committed covering Tilburg) are consecutive phases, not a conflict; kept ungrouped. No data changed.
+- **Roadmap 253 (stale 12th Army Group map symbols, `R781`):** the map rows are kept as alternates; nothing deleted, all confidences unchanged at 0.3. Reason: the text rows put the units on the Peel front (Student, Ellis) or the First Parachute Army front (Stacey, Schlemm) while the map symbols, 310-400 km south, look stale from the units' Lorraine and Alsace periods; map rows never outrank text.
+  - G061 (new): `C7741` (XLVII Panzer Corps, Meijel, 27 October) preferred; `C3681` (24 October) and `C3823` (31 October): conflict_group_id old value blank, new value G061; claim_status old value preferred, new value alternate.
+  - G062 (new): `C7742` (15th Panzergrenadier Division, Meijel, 27 October) preferred; `C3679` (24 October): conflict_group_id old value blank, new value G062; claim_status old value preferred, new value alternate.
+  - G056 (extended): `C5924` (20 February 1945) and `C6192` (6 March 1945), LXIII Corps at Freiburg: conflict_group_id old value blank, new value G056; claim_status old value preferred, new value alternate; `C7510` stays preferred.
+  - `C2056` (Ellis, 14 October) not grouped: a different date that agrees with the preferred rows.
+- **Tests:** scenario 137 added.
+
+## fms-fold3-netherlands: FMS B-156, Reinhard, LXXXVIII Corps from the Albert Canal to the lower Maas (3 November 2026)
+
+FMS B-156 (Hans W. Reinhard, commanding general of LXXXVIII Corps, Allendorf, 8 June 1946; subject index by Gustav Hoehne, about 1950; NARA M1035 fiche 0150G, 43 images, German only) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R811` (`fms_german_manuscript`). It covers the corps from June 1944 (the Dutch sea front) and in detail from 4 September to 21 December 1944. It agrees with the dataset on the command post sequence (Bilthoven, Moergestel, Dongen, Genderen, Almkerk, Noordeloos, Geldermalsen, Houten, Bilthoven) and on the handover to Schwalbe on 24 December (roadmap 258 updated). The differences, all dates: Herpt at the end of September against 27 October (roadmap 260); the attack on 's-Hertogenbosch in the first third of October against 22-28 October (roadmap 260, no new row); Chill to Bergen op Zoom on 20/21 October against 7-8 October (roadmap 261); the 6th Parachute Division under the corps at the end of November against 19 December (roadmap 262); the 245th Division at Bladel about 16 September against South Beveland on 17 September (roadmap 263).
+
+- **Source family:** B-156 is one family with B-475, B-717, B-774 and B-762 (all FMS manuscripts written in Allied custody in 1946-47, partly by officers of the same staff), so it raises no row supported only by FMS manuscripts.
+- **New claims:** `C7849`-`C7897` (49: 45 German, 4 Allied from the German account; blank parents): Reinhard on the Dutch sea front (June); the 347th Division leaving for the Charleville-Namur area; the Bilthoven order of 4 September; the 719th Division over the Moerdijk bridges, at Beringen, at Merksem (with the British armoured attack there, identification uncertain) and the loss of Beringen; Chill's decision at Turnhout (2 September), his counter-attack from Tessenderlo, Geel and the Aart crossing (with the 15th Scottish Division); Division Erdmann at Hechtel; the withdrawal to the Herentals canal line; the 245th Division at Bladel, Reusel and Best; the corps at Moergestel on 17 September; the 101st Airborne at Best; the 59th Division at Son, Veghel, Koevering and west of the Best-Sint-Oedenrode road; the command posts Dongen (19-20 September), Herpt (end of September, as dated), Genderen (end of October); the corps under the Fifteenth Army (about 20 September); Chill at Goirle, Dinther and his move of 20/21 October; the 712th Division at Nuland, Zaltbommel, Tiel and Ochten; the Hedel bridgehead (held from early October, given up at the end of November); the lines of end October and early November; the Maas crossing; the 256th Volksgrenadier Division command post at Almkerk; the three-division line at the end of November (711th, 712th, 6th Parachute).
+- **Inferred values:** `C7858` (719th Division, loss of Beringen): date old value none, new value 1944-09-07, reason: the text dates the event 6 September forenoon and the unit already has a row on 6 September (Merksem).  `C7866` (245th Division at Reusel-Middelbeers): date old value 1944-09-17 (first entry on this branch), new value 1944-09-20, reason: the text gives no day ("soon" after about 16 September). `C7876` (59th Division at Koevering): date old value none, new value 1944-09-24, reason: the text gives no day; placed in its sequence.
+- **New places:** `PL3573` Tessenderlo, `PL3574` Geel, `PL3575` Herentals, `PL3576` Bladel, `PL3577` Reusel (coordinates old value 51.4571, 5.1770, the Nominatim hit, new value 51.3620, 5.1650, the village centre, reason: the text means the village), `PL3578` Koevering, `PL3579` Sint-Oedenrode, `PL3580` Loon op Zand, `PL3581` Capelle, `PL3582` Zaltbommel, `PL3583` Ochten (OpenStreetMap Nominatim, `R002`).
+- **Uncertain readings (kept in the notes of the rows):** Infantry Regiment "743" at Merksem; "Tenderloo" (Tessenderlo) "west of Baden"; the crossing "Aart"; the panzer formation "102"; "Gorindon" (Gorinchem); "Hoesselt" (probably Heesselt); "Gent" (probably Gendt); "Honten" (Houten); "Halderen" (Haalderen); the date "4." or "A." September on p.36.
+- **Corroborations:** B-156 appended on 51 rows (reference_ids, source and source_locator; old and new values in each row's notes).
+  - `C0220` (101st Airborne Division lands between Son and Veghel, 17 September): confidence old value 0.5, new value 0.7. Reason: corroboration rule; the CMH order of battle and B-156 agree on unit, date and place.
+  - 50 rows unchanged: 34 are FMS-only rows (same family); 16 agree only approximately in date or place, are map rows (`C3028`, `C3200`), are already 0.7 (`C1458`, `C1462`) or are named in a roadmap point (`C7435`).
+- **Roadmap:** 258 updated (third source dates the handover 24 December; grouping recommended); 260-263 opened.
+- **Tests:** scenario 138 added.

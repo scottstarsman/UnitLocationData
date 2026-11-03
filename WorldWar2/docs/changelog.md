@@ -2,6 +2,36 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## confidence-corroborated: C7136 raised after roadmap point 224 closed (3 November 2026)
+
+Approved by Scott on 3 November 2026.
+
+- **Raised:** `C7136` (26th Volksgrenadier Division, Longvilly, 19 Dec 1944): confidence old value 0.3, new value 0.7, reason: NARA T-315 roll 828 (`R799`, captured German records) and Cole (`R384`, `us_army_cmh`) agree, and roadmap point 224 is closed with this row preferred in `G034`.
+- **Semantic scenarios 114 and 116** now expect 0.7 on `C7136` (old expectation 0.3, new 0.7, reason: this raise).
+
+## confidence-corroborated: Cole map-row conflicts resolved as conflict groups (3 November 2026)
+
+Approved by Scott on 3 November 2026. Nothing deleted.
+
+- **New conflict groups** `G034`-`G049`, one for each unit and date pair in roadmap points 224, 226-232, 234 and 236. In each group the text row (Cole, or the NARA report for `C7136`) is `preferred` and the 12th Army Group map row(s) are `alternate`. Notes record conflict_group_id old value blank, new value Gnnn, and claim_status old value preferred, new value preferred/alternate, with the reason (text rows outrank map rows). Rows without one get an "Event definition:" sentence, because the paired rows have different event types.
+  - G034 C7136/C4724; G035 C7146/C4752; G036 C7148/C4790; G037 C7168/C4710; G038 C7163/C4768; G039 C7153/C4993; G040 C7156/C4722; G041 C7177/C4845, C4958; G042 C7157/C4726; G043 C7159/C4792; G044 C7160/C4761; G045 C7161/C4791; G046 C7165/C4898, C5004; G047 C0977/C4662, C4798, C4916; G048 C7188/C4715; G049 C7211/C4688.
+- **Confidence lowered:** `C4715` (28th Division, Liefrange) and `C4688` (30 Corps, Schootshei) go from 0.5 to 0.3, reason: lagging position or part of the unit (roadmap recommendation). The other map rows were already 0.3.
+- **Sheet checks:** `C4761` (352d near Echternach) is clearly labelled 352 on cs000198, so it is a lagging position, not a misread label. `C4662`, `C4798` and `C4916` (LXVII Corps near Schiedam) read LXVII on the sheets, so they are a stale symbol from the corps' time in the Netherlands, not another corps. All are kept as alternates.
+- **C2185** (Panzer Lehr, 23 December, FMS) gets a note only: Cole dates the action to the night of 23/24 December. No value changed.
+- **Not changed:** roadmap 233 (`C0553` and `C4787`, which agree with Cole on Mande-Saint-Étienne) and 235 (`C1921`, text against text) stay open.
+- **Roadmap points** 224, 226-232, 234 and 236 are closed.
+- **Semantic scenario 117.** The `LOWERED` set in `scripts/semantic_tests.py` (rows deliberately lowered below the sheet rule) now also takes rows lowered by this review (`C4715`, `C4688`).
+
+## confidence-corroborated: confidence raised where two independent source families agree (3 November 2026)
+
+Approved by Scott on 3 November 2026.
+
+- **Rule** documented in `docs/methodology.md` (confidence rubric, "Corroboration rule"): a row that gains an agreeing reference from a second `source_family` (geocoders excluded) is raised to 0.7; not for same-family pairs, conflict groups or rows named in an open map-conflict roadmap point.
+- **Raised:** `C2181` (2d Panzer Division, Ortheuville, 20 Dec 1944) and `C2182` (116th Panzer Division, Samrée, 20 Dec 1944): confidence old value 0.5, new value 0.7, reason: FMS B-235 (`R772`) and Cole (`R388`, `R386`) agree.
+- **Held, not changed:** `C1903` (28th Division, Neufchâteau; `R724` CMH Combat Chronicle and Cole are both `us_army_cmh`, one family); `C4787` (map row, roadmap point 233) and `C7136` (roadmap point 224), until Scott decides those map-conflict points.
+- **Other rows with two or more families** (about 290 below 0.7) were given their confidence by other rules (inferred dates, representative points, CP-gap bands, compilation caps) and are not changed.
+- **Semantic scenario 116.** Scenarios 44 (FMS B-235 rows at 0.5 or 0.3 only) and 114 (corroborated rows' confidence) updated to expect 0.7 on `C2181` and `C2182` (old expectation 0.5, new 0.7, reason: this rule).
+
 ## cole-ardennes: 79th Volksgrenadier Division promoted from placeholder, Cole positions (3 November 2026)
 
 Approved by Scott on 3 November 2026. Source: Cole, *The Ardennes*, ch. 21 (`R391`). Reading notes private.

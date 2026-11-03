@@ -77,7 +77,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | claims (rows of `data/claims/`, `build/all_claims.csv`) | 7218, dated 1944-06-06 to 1945-05-10 |
 | units in `data/units.csv` | 388: 322 active (have claims), 66 placeholders |
 | claim files (one per active unit) | 322 |
-| conflict groups / claims in a group | 30 / 64 |
+| conflict groups / claims in a group | 46 / 100 |
 | places (`data/places.csv`) / retired in `data/place_merges.csv` | 3338 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 1065 |
@@ -97,7 +97,7 @@ Claims by branch: Army 5117, Armoured 1408, Waffen-SS 292, Airborne 214, Luftwaf
 
 Claims by event type: other 3706, hq_observation 1491, attack 483, defense 275, hq_move 208, capture 199, command_change 184, arrival 140, regroup 128, relocation 105, withdrawal 62, landing 60, subordinate_assignment 58, counterattack 49, surrender 39, activation 18, redesignation 8, destruction 5.
 
-Claims by status: preferred 7177, alternate 25, disputed 16. Claims by confidence: 0.3 2448, 0.5 3993, 0.7 714, 0.9 63.
+Claims by status: preferred 7157, alternate 45, disputed 16. Claims by confidence: 0.3 2450, 0.5 3989, 0.7 716, 0.9 63.
 
 Placeholder units by nationality: Germany 61, Allied 3, US 2.
 

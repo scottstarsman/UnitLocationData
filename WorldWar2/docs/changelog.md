@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: changelog catch-up for R790-R795 (2 November 2026)
+
+The commits for `R790` to `R795` updated the data, `HANDOFF.md` and the review counts but not this changelog; this section records them (no data change in this commit).
+
+- **T-354 roll 120** (XII SS Corps Korps-/Korück-Befehle Nov 1944-Mar 1945, XIII SS Corps Ia files; NAID 267474782, German original): reference `R790`; claims `C7119` (XII SS Corps command post Venrath from 20.00 hrs, 17 November 1944) and `C7120` (advanced command post Doverack from 09.00 hrs, 18 November 1944), both 0.5, parent blank (old value none, new value blank, reason: no command relation from a single source); places `PL3303` to `PL3304`; semantic scenario 99.
+- **T-315 roll 1298** (116th Panzer Division Ia Anlagen and KTB copy 25 January-27 February 1945; NAID 346868644): reference `R791`; claims `C7121` (Nohn, 28 January 1945), `C7122` (Gerkerath, 29 January), `C7123` (Gerkerath still, 2 February) and `C7124` (Louisendorf from the evening of 11 February), all division command posts at 0.5, parent blank; places `PL3305` to `PL3306` (Louisendorf reuses `PL0855`); semantic scenario 100.
+- **T-354 roll 147** (9th SS Panzer Division 1943-44 files and Normandy Divisionsbefehle; NAID 267509462): reference `R792`; claims `C7125` (wood 4 km NE of Almenêches, 25 June 1944) and `C7126` (Ht. Bosq 1 km S of Bonnemaison from 12.00 hrs, 10 July 1944), both 0.5, parent blank; places `PL3307` to `PL3308`; semantic scenario 101. Checked against `C0784` (8 July, near Évrecy): consistent, no change.
+- **T-315 roll 2226** (553rd Volksgrenadier Division; NAID 347851473): reference `R793`, no claims (posts headed Div.Gef.St. without a place).
+- **T-315 roll 2233** (559th Volksgrenadier Division Ic and artillery files; NAID 347856068): reference `R794`, no claims (no division command-post place); also filled the catalog link of `R793` (old value blank, new value NAID 347851473 link, reason: catalog id found).
+- **T-315 roll 2152** (361st Infantry Division Gefechtsbericht, Eastern Front; NAID 347782540): reference `R795`, no claims (outside the western_europe theatre).
+- No existing row changed in any of these commits; no relation, no conflict group.
+
 ## nara-microfilm: NARA T-311 roll 278 (Army Group B Ic/Ia/Adjutant; 2 November 2026)
 
 Scott approved reading NARA T-311 Army Group B rolls one commit per roll. Branch `nara-microfilm`. Roll 278 (NAID 272194963, 1454 images) read in the German original on 2 November 2026 with OCR triage; key Ia pages image-checked. Reading notes private.

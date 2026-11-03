@@ -3238,3 +3238,7 @@ Pages 743-871 of roll 1607 (`R798`), left over from the first pass, rendered and
 ## nara-microfilm: NARA T-354 roll 130 (2nd SS Panzer Division files 1940-45; 3 November 2026)
 
 Roll 130 (NAID 267487470, 1278 frames) read in the German original on 3 November 2026. Frames 1-875, which hold the 1943-45 material, were read by OCR. The remaining frames (1940-41, and the 3rd SS Panzer Division 1938-41) fall before the dataset period. The 1944-45 papers are personnel and replacement paperwork with no places, plus a war game of 6 October 1944 set in Luxembourg (frames 56-59). The war game describes an exercise, not a real position, and is not used. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-315 roll 1725 (246th Infantry Division, Eastern Front 1943-44; 3 November 2026)
+
+Roll 1725 (1441 pages) checked in the German original on 3 November 2026: the target cards and 13 sample pages spread across the roll. The whole roll covers the Eastern Front (VI and LIII Corps, Vitebsk-Dukhovshchina area) from July 1943 to January 1944, outside the dataset's theatre and period. It was not read page by page. **No claims, places or references added; no existing row changed.** Reading notes private.

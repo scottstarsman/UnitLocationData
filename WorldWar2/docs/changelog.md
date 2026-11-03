@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-315 roll 2145 (347th Infantry Division; 3 November 2026)
+
+Roll 2145 (NAID 347778909, 1346 pages) read in the German original on 3 November 2026. Pages 1-820 were read by OCR and the rest by samples. The 1944 orders used here were read in full. Reading notes private.
+
+- **New reference** `R802`.
+- **New claims** `C7144`-`C7145` (each note carries old value none, new value and reason): 347th Infantry Division holds the North Holland coastal sector from Den Helder to Festung IJmuiden, 21 June 1944 (0.5), and is withdrawn from it for rail transport on 30 August 1944 (0.5). Both rows use Alkmaar as the representative point. Parent blank on both (old value none, new value blank, reason: no command relation from a single source).
+- **New place** `PL3319` Alkmaar (OpenStreetMap Nominatim, searched 3 November 2026).
+- **No existing row changed; no conflicts** (agrees with `C2917`, 5 September in Belgium).
+- **Semantic scenario 108.**
+
 ## nara-microfilm: NARA T-311 roll 1 (Army Group B; 3 November 2026)
 
 Roll 1 (NAID 271845202, 1337 frames) read in the German original on 3 November 2026: all frames by OCR, the key report (frames 991-993) read in full. Reading notes private.

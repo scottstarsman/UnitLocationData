@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapters XXII-XXIV and appendices (the German surrender, its aftermath, administration; 22 April - 8 May 1945) (3 November 2026)
+
+Tenth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 589-645 and appendices A-G (pp. 647-667) read. Nothing deleted, no confidence changed on existing rows.
+
+- 33 new claims `C7639`-`C7671` (7 German, 26 Allied; sector rows at 0.3; blank parents; places `PL3517`-`PL3530`): 5th Armoured relief at Groningen and the Delfzijl perimeter and Marsum; Leer and Loga; the 2nd Parachute Corps and 86th Corps as Stacey's intelligence estimate (0.3; the 471st and 490th Divisions have no unit row and are named in notes only); Moorburg; Osterscheps, Edewecht, Querenstede, Bad Zwischenahn; the 2nd Canadian Armoured Brigade at Grabstede; the 2nd Division at Ahlhorn, Huntlosen, Kirchhatten and Hude; the 43rd and 51st Divisions; the 3rd British Division under the 2nd Canadian Corps; the 6th Airborne at Lembeck; the US 18th Airborne Corps at Bleckede; Operation Faust at Rhenen; the 49th and 1st Canadian Divisions taking over the 88th and 30th German Corps areas (7-8 May); and from Montgomery's directives printed as Appendices D and E, the 21st and 2nd Panzer Divisions (30 June 1944) and the 7th Armoured, 51st Division and 34th Tank Brigade transfer to Second Army (18 October 1944).
+- Not added: the Bad Zwischenahn surrender meeting (5 May) and the Oldenburg conference (7 May), already held by `C1360` and `C1378`; facts after the campaign end date (the 3rd Division's move to Utrecht on 16 May, the 4th Armoured at Almelo late May, June-July disbandments), which no campaign streamer covers. Scenario 127.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XX end (re-read) and chapter XXI (The 1st Corps in the western Netherlands, 1-22 April 1945) (3 November 2026)
 
 Ninth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 554-562 re-read in full (only skimmed in the previous commit) and pages 565-587 read. Nothing deleted, no confidence changed on existing rows.

@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 15
+    "claims_count": 16
    }
   },
   {
@@ -1398,7 +1398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 8
+    "claims_count": 10
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -12238,7 +12238,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 13
+    "claims_count": 15
    }
   },
   {
@@ -12958,7 +12958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -13838,7 +13838,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -13998,7 +13998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -14078,7 +14078,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -14178,7 +14178,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -14238,7 +14238,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -32278,7 +32278,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 0
+    "claims_count": 1
    }
   },
   {
@@ -62758,7 +62758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Basse-Saxe",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -65638,7 +65638,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69778,7 +69778,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Lower Saxony",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -70018,6 +70018,286 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8772,
+     53.3406
+    ]
+   },
+   "properties": {
+    "place_id": "PL3517",
+    "name": "Marsum (Eemsdelta), Groningen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Groningen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8936,
+     53.2912
+    ]
+   },
+   "properties": {
+    "place_id": "PL3518",
+    "name": "Moorburg (Westerstede), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9282,
+     53.1242
+    ]
+   },
+   "properties": {
+    "place_id": "PL3519",
+    "name": "Osterscheps (Edewecht), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9855,
+     53.1284
+    ]
+   },
+   "properties": {
+    "place_id": "PL3520",
+    "name": "Edewecht, Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9591,
+     53.1594
+    ]
+   },
+   "properties": {
+    "place_id": "PL3521",
+    "name": "Querenstede (Bad Zwischenahn), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9958,
+     53.3693
+    ]
+   },
+   "properties": {
+    "place_id": "PL3522",
+    "name": "Grabstede (Bockhorn), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2161,
+     52.9
+    ]
+   },
+   "properties": {
+    "place_id": "PL3523",
+    "name": "Ahlhorn (Großenkneten), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.275,
+     52.9908
+    ]
+   },
+   "properties": {
+    "place_id": "PL3524",
+    "name": "Huntlosen (Großenkneten), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3496,
+     53.021
+    ]
+   },
+   "properties": {
+    "place_id": "PL3525",
+    "name": "Kirchhatten (Hatten), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5451,
+     53.0345
+    ]
+   },
+   "properties": {
+    "place_id": "PL3526",
+    "name": "Ganderkesee, Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0019,
+     51.7583
+    ]
+   },
+   "properties": {
+    "place_id": "PL3527",
+    "name": "Lembeck (Dorsten), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.73,
+     53.2933
+    ]
+   },
+   "properties": {
+    "place_id": "PL3528",
+    "name": "Bleckede, Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.2697,
+     52.0749
+    ]
+   },
+   "properties": {
+    "place_id": "PL3529",
+    "name": "The Hague (Den Haag), Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5632,
+     51.8206
+    ]
+   },
+   "properties": {
+    "place_id": "PL3530",
+    "name": "Megen (Oss), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
     "claims_count": 1
    }
   }

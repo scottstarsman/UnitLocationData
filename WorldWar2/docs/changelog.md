@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XX (The Rhine crossing and the advance to the North Sea, March-April 1945) (3 November 2026)
+
+Eighth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 527-575 read (text; the chapter's maps not yet viewed). Nothing deleted. Most Canadian divisional moves in this chapter were already in the data from the first Canadian batches (`C1373`-`C1399`, `C1568`-`C1572`, already citing `R668`), so this commit adds the German side, brigade-level places and command changes.
+
+- 30 new claims `C7563`-`C7592` (10 German, 20 Allied; 11 sector rows at 0.3; blank parents; places `PL3479`-`PL3494`): 1st Canadian Division in the Reichswald and under Simonds (3 April); 2nd Canadian Corps under Second Army (11/20 March) and Simonds' command post near Bienen; 1st Canadian Corps under Crerar (15 March); 1st British Corps back to Dempsey (2 April); German 47th Panzer Corps headquarters at Silvolde, 2nd Parachute Corps Emmerich-Xanten, 86th Corps at Wesel, Schlemm wounded and Blumentritt in command; 15th Scottish across between Wesel and Rees; 154th Brigade at Speldrop (Rennie killed); 15th Panzer Grenadier Division at Bienen; 43rd Division into the bridgehead; 6th Parachute and 346th Divisions at Emmerich; 's-Heerenberg; 6th Parachute Division on the Twente Canal; 361st Division and 88th Corps at Zutphen; Deventer, Gorssel, Holten, Assen, Zwolle, Harlingen, Makkum; 4th Armoured at Meppen, Sogel and the Kusten Canal.
+- 3 rows appended with `R668`: `C1181` raised 0.5 to 0.7 (second family `canada_ca` agrees with MacDonald, The Last Offensive, `R543`); `C1508` and `C0633` (already 0.7). Three Polish rows (`C1568`, `C1571`, `C1572`) and the airborne landings already cite Stacey or another row for the same fact, so no duplicate rows were added. Scenario 125.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapter XIX (Operation "Blockbuster" and the end of the Rhineland battle, 22 February - 11 March 1945) (3 November 2026)
 
 Seventh chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 492-522 read. Nothing deleted.

@@ -8678,7 +8678,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -11358,7 +11358,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 7
+    "claims_count": 9
    }
   },
   {
@@ -11378,7 +11378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 23
+    "claims_count": 24
    }
   },
   {
@@ -12558,7 +12558,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -13778,7 +13778,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 13
+    "claims_count": 18
    }
   },
   {
@@ -13798,7 +13798,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -13898,7 +13898,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14958,7 +14958,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -15058,7 +15058,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -15078,7 +15078,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 13
+    "claims_count": 15
    }
   },
   {
@@ -17038,7 +17038,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -18718,7 +18718,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -21718,7 +21718,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -36838,7 +36838,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -50758,7 +50758,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 9
+    "claims_count": 11
    }
   },
   {
@@ -52598,7 +52598,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 0
+    "claims_count": 1
    }
   },
   {
@@ -70459,6 +70459,106 @@
     "country": "DE",
     "region": "Lower Saxony",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5444,
+     51.5374
+    ]
+   },
+   "properties": {
+    "place_id": "PL3539",
+    "name": "Alpsray (Rheinberg), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5488,
+     51.6527
+    ]
+   },
+   "properties": {
+    "place_id": "PL3540",
+    "name": "Perrich (Wesel), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5838,
+     51.5705
+    ]
+   },
+   "properties": {
+    "place_id": "PL3541",
+    "name": "Ossenberg (Rheinberg), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4932,
+     51.679
+    ]
+   },
+   "properties": {
+    "place_id": "PL3542",
+    "name": "Bislich (Wesel), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6149,
+     51.8383
+    ]
+   },
+   "properties": {
+    "place_id": "PL3543",
+    "name": "Bocholt, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
    }
   }
  ]

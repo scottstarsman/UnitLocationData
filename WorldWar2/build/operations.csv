@@ -13,8 +13,8 @@ OP-BULGE,Battle of the Bulge,Ardennes,Ardennes counteroffensive; Ardennes offens
 OP-CAMP-ARDENNES-ALSACE,Ardennes-Alsace campaign,Ardennes-Alsace,,campaign,,Ardennes-Alsace campaign,0,1944-12-16,1945-01-25,cmh_streamer,All,86,196,1944-12-11,1945-01-27,R507;R508
 OP-CAMP-CENTRAL-EUROPE,Central Europe campaign,Central Europe,,campaign,,Central Europe campaign,0,1945-03-22,1945-05-11,cmh_streamer,All,1012,1080,1945-03-06,1945-05-10,R507;R508
 OP-CAMP-NORMANDY,Normandy campaign,Normandy,,campaign,OP-OVERLORD,Operation Overlord > Normandy campaign,1,1944-06-06,1944-07-24,cmh_streamer,All,480,664,1944-06-06,1944-08-22,R507;R508
-OP-CAMP-NORTHERN-FRANCE,Northern France campaign,Northern France,,campaign,OP-OVERLORD,Operation Overlord > Northern France campaign,1,1944-07-25,1944-09-14,cmh_streamer,All,702,974,1944-07-24,1944-09-26,R507;R508
-OP-CAMP-RHINELAND,Rhineland campaign,Rhineland,,campaign,,Rhineland campaign,0,1944-09-15,1945-03-21,cmh_streamer,All,3763,4034,1944-09-05,1945-03-20,R507;R508
+OP-CAMP-NORTHERN-FRANCE,Northern France campaign,Northern France,,campaign,OP-OVERLORD,Operation Overlord > Northern France campaign,1,1944-07-25,1944-09-14,cmh_streamer,All,702,976,1944-07-24,1944-09-26,R507;R508
+OP-CAMP-RHINELAND,Rhineland campaign,Rhineland,,campaign,,Rhineland campaign,0,1944-09-15,1945-03-21,cmh_streamer,All,3786,4131,1944-09-05,1945-03-20,R507;R508
 OP-CAMP-SOUTHERN-FRANCE,Southern France campaign,Southern France,,campaign,,Southern France campaign,0,1944-08-15,1944-09-14,cmh_streamer,All,6,47,1944-08-15,1944-09-11,R507;R508
 OP-CARENTAN,Battle of Carentan,Battle of Carentan,,battle,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Battle of Carentan,2,1944-06-10,1944-06-14,secondary,Allied,3,6,1944-06-10,1944-06-13,R111
 OP-CHARNWOOD,Operation Charnwood,Charnwood,,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Charnwood,2,1944-07-08,1944-07-09,secondary,Allied,10,10,1944-07-08,1944-07-09,R596
@@ -31,7 +31,7 @@ OP-GOODWOOD,Operation Goodwood,Goodwood,,operation,OP-CAMP-NORMANDY,Operation Ov
 OP-GRENADE,Operation Grenade,Grenade,,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Grenade,1,1945-02-23,1945-03-10,secondary,Allied,10,10,1945-02-23,1945-03-05,R553
 OP-HARZ-POCKET,Harz pocket,Harz pocket,Battle of the Harz Mountains,battle,OP-CAMP-CENTRAL-EUROPE,Central Europe campaign > Harz pocket,1,1945-04-11,1945-04-23,official_history,Allied,3,3,1945-04-17,1945-04-23,R567
 OP-HUERTGEN,Battle of the Hürtgen Forest,Hürtgen Forest,Huertgen Forest; Hurtgen Forest,battle,OP-SIEGFRIED-LINE,Siegfried Line campaign > Battle of the Hürtgen Forest,1,1944-11-02,1944-12-14,derived,Allied,5,5,1944-11-02,1944-11-20,R642;R655;R510
-OP-INFATUATE,Operation Infatuate,Infatuate,Walcheren operation,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Infatuate,1,1944-11-01,1944-11-08,official_history,Allied,5,5,1944-11-01,1944-11-08,R668;R671
+OP-INFATUATE,Operation Infatuate,Infatuate,Walcheren operation,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Infatuate,1,1944-11-01,1944-11-08,official_history,Allied,15,15,1944-11-01,1944-11-08,R668;R671
 OP-JUPITER,Operation Jupiter,Jupiter,,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Jupiter,2,1944-07-10,1944-07-11,secondary,Allied,3,3,1944-07-10,1944-07-11,R597
 OP-LORRAINE,Lorraine campaign,Lorraine,,campaign,,Lorraine campaign,0,1944-09-01,1944-12-18,secondary,Allied,106,108,1944-09-01,1944-12-15,R496;R511
 OP-LUTTICH,Operation Lüttich,Lüttich,Operation Liège,operation,,Operation Lüttich,0,1944-08-07,1944-08-13,secondary,Germany,7,7,1944-08-07,1944-08-07,R494
@@ -42,20 +42,20 @@ OP-MORTAIN,Battle of Mortain,Mortain,Mortain counterattack,battle,OP-CAMP-NORTHE
 OP-NEPTUNE,Operation Neptune,Neptune,Normandy landings; D-Day assault phase,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Neptune,2,1944-06-06,1944-06-30,secondary,Allied,48,50,1944-06-06,1944-06-23,R506;R137
 OP-NORDWIND,Operation Nordwind,Nordwind,Operation Northwind; Unternehmen Nordwind,operation,OP-CAMP-ARDENNES-ALSACE,Ardennes-Alsace campaign > Operation Nordwind,1,1944-12-31,1945-01-25,secondary,Allied,25,25,1945-01-03,1945-01-20,R012
 OP-NUREMBERG,Battle of Nuremberg (1945),Nuremberg,Fall of Nuremberg,battle,OP-CAMP-CENTRAL-EUROPE,Central Europe campaign > Battle of Nuremberg (1945),1,1945-04-16,1945-04-20,official_history,Allied,4,4,1945-04-16,1945-04-20,R568;R579
-OP-OVERLORD,Operation Overlord,Overlord,Normandy invasion,umbrella,,Operation Overlord,0,1944-06-06,1944-08-30,secondary,Allied,0,1638,1944-06-06,1944-09-26,R490
+OP-OVERLORD,Operation Overlord,Overlord,Normandy invasion,umbrella,,Operation Overlord,0,1944-06-06,1944-08-30,secondary,Allied,0,1640,1944-06-06,1944-09-26,R490
 OP-PARIS,Liberation of Paris,Paris,,battle,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Liberation of Paris,2,1944-08-19,1944-08-25,secondary,Allied,5,5,1944-08-23,1944-08-29,R134
 OP-PERCH,Operation Perch,Perch,,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Perch,2,1944-06-07,1944-06-14,secondary,Allied,21,21,1944-06-07,1944-06-14,R141
-OP-PHEASANT,Operation Pheasant,Pheasant,Liberation of North Brabant,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Pheasant,1,1944-10-20,1944-11-04,secondary,Allied,9,9,1944-10-20,1944-10-27,R671;R672
+OP-PHEASANT,Operation Pheasant,Pheasant,Liberation of North Brabant,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Pheasant,1,1944-10-20,1944-11-04,secondary,Allied,22,22,1944-10-20,1944-11-02,R671;R672
 OP-PLUNDER,Operation Plunder,Plunder,Rhine crossing; Crossing of the Rhine,operation,OP-CAMP-CENTRAL-EUROPE,Central Europe campaign > Operation Plunder,1,1945-03-23,1945-03-27,official_history,Allied,9,9,1945-03-23,1945-03-27,R668;R671
-OP-PURSUIT,Pursuit across France,Pursuit,,phase,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Pursuit across France,2,1944-08-19,1944-09-14,derived,Allied,99,99,1944-08-19,1944-09-17,R509;R168
+OP-PURSUIT,Pursuit across France,Pursuit,,phase,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Pursuit across France,2,1944-08-19,1944-09-14,derived,Allied,101,101,1944-08-19,1944-09-17,R509;R168
 OP-QUEEN,Operation Queen,Roer,Roer offensive; Roer plain offensive,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Queen,1,1944-11-16,1944-12-16,secondary,Allied,9,15,1944-11-16,1944-12-20,R500
 OP-REMAGEN,Battle of Remagen,Remagen,Remagen bridgehead,battle,,Battle of Remagen,0,1945-03-07,1945-03-25,secondary,Allied,18,18,1945-03-07,1945-03-17,R556
 OP-ROER-PLAIN,Battle of the Roer Plain,Roer Plain,Drive to the Roer,battle,OP-QUEEN,Rhineland campaign > Operation Queen > Battle of the Roer Plain,2,1944-11-16,1944-12-09,official_history,Allied,6,6,1944-11-17,1944-11-21,R438;R510
 OP-RUHR-POCKET,Ruhr pocket,Ruhr pocket,Reduction of the Ruhr pocket; Ruhr encirclement,battle,OP-CAMP-CENTRAL-EUROPE,Central Europe campaign > Ruhr pocket,1,1945-04-01,1945-04-18,official_history,Allied,48,48,1945-04-01,1945-04-18,R566;R576
-OP-SCHELDT,Battle of the Scheldt,Scheldt,,battle,OP-CAMP-RHINELAND,Rhineland campaign > Battle of the Scheldt,1,1944-10-02,1944-11-08,secondary,Allied,15,18,1944-09-10,1944-11-08,R499
+OP-SCHELDT,Battle of the Scheldt,Scheldt,,battle,OP-CAMP-RHINELAND,Rhineland campaign > Battle of the Scheldt,1,1944-10-02,1944-11-08,secondary,Allied,44,67,1944-09-10,1944-11-08,R499
 OP-SIEGFRIED-LINE,Siegfried Line campaign,Siegfried Line,,campaign,,Siegfried Line campaign,0,1944-08-28,1944-12-16,secondary,Allied,45,50,1944-09-05,1944-12-15,R497;R510
 OP-SPRING,Operation Spring,Spring,,operation,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Operation Spring,2,1944-07-25,1944-07-25,official_history,Allied,8,8,1944-07-24,1944-07-25,R668
-OP-SWITCHBACK,Operation Switchback,Switchback,Clearing of the Breskens pocket,phase,OP-SCHELDT,Rhineland campaign > Battle of the Scheldt > Operation Switchback,2,1944-10-06,1944-11-03,official_history,Allied,3,3,1944-10-06,1944-11-03,R668
+OP-SWITCHBACK,Operation Switchback,Switchback,Clearing of the Breskens pocket,phase,OP-SCHELDT,Rhineland campaign > Battle of the Scheldt > Operation Switchback,2,1944-10-06,1944-11-03,official_history,Allied,23,23,1944-10-06,1944-11-03,R668
 OP-TONGA,Operation Tonga,Tonga,British 6th Airborne Division landings,operation,OP-NEPTUNE,Operation Overlord > Normandy campaign > Operation Neptune > Operation Tonga,3,1944-06-05,1944-06-07,secondary,Allied,2,2,1944-06-06,1944-06-07,R142
 OP-TOTALIZE,Operation Totalize,Totalize,,operation,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Operation Totalize,2,1944-08-07,1944-08-10,official_history,Allied,11,11,1944-08-07,1944-08-10,R668
 OP-TRACTABLE,Operation Tractable,Tractable,Tallulah (earlier name),operation,OP-FALAISE,Operation Overlord > Northern France campaign > Battle of the Falaise Pocket > Operation Tractable,3,1944-08-14,1944-08-21,official_history,Allied,5,5,1944-08-14,1944-08-15,R668;R670
@@ -65,4 +65,4 @@ OP-VARSITY,Operation Varsity,Varsity,,operation,OP-CAMP-CENTRAL-EUROPE,Central E
 OP-VERITABLE,Operation Veritable,Veritable,Battle of the Reichswald; Battle of the Rhineland (Canadian Army),operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Veritable,1,1945-02-08,1945-03-10,official_history,Allied,30,51,1945-02-08,1945-03-10,R668
 OP-VOSGES,Battle of the Vosges,Vosges,,battle,OP-CAMP-RHINELAND,Rhineland campaign > Battle of the Vosges,1,1944-09-15,1945-02-15,secondary,Allied,79,79,1944-09-15,1944-12-15,R505;R422
 OP-WACHT-AM-RHEIN,Operation Wacht am Rhein,Wacht am Rhein,Watch on the Rhine,operation,,Operation Wacht am Rhein,0,1944-12-16,1945-01-25,secondary,Germany,81,81,1944-12-16,1944-12-31,R502
-OP-WELLHIT,Operation Wellhit,Wellhit,Capture of Boulogne,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Wellhit,1,1944-09-17,1944-09-22,official_history,Allied,5,5,1944-09-06,1944-09-22,R668
+OP-WELLHIT,Operation Wellhit,Wellhit,Capture of Boulogne,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Wellhit,1,1944-09-17,1944-09-22,official_history,Allied,7,7,1944-09-06,1944-09-22,R668

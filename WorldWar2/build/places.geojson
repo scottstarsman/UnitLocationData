@@ -12258,7 +12258,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 7
    }
   },
   {
@@ -12458,7 +12458,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 14
+    "claims_count": 17
    }
   },
   {
@@ -13738,7 +13738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -13758,7 +13758,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 11
+    "claims_count": 14
    }
   },
   {
@@ -18718,7 +18718,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -21698,7 +21698,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -21718,7 +21718,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 7
    }
   },
   {
@@ -36838,7 +36838,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -70618,7 +70618,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -70658,6 +70658,126 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.351,
+     51.7241
+    ]
+   },
+   "properties": {
+    "place_id": "PL3549",
+    "name": "Appeldorn (Kalkar), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0014,
+     51.1431
+    ]
+   },
+   "properties": {
+    "place_id": "PL3550",
+    "name": "Sint Odiliënberg (Roerdalen), Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1979,
+     51.3207
+    ]
+   },
+   "properties": {
+    "place_id": "PL3551",
+    "name": "Kaldenkirchen (Nettetal), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6284,
+     51.4513
+    ]
+   },
+   "properties": {
+    "place_id": "PL3552",
+    "name": "Moers, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5479,
+     51.5018
+    ]
+   },
+   "properties": {
+    "place_id": "PL3553",
+    "name": "Kamp-Lintfort, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6007,
+     51.4887
+    ]
+   },
+   "properties": {
+    "place_id": "PL3554",
+    "name": "Repelen (Moers), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

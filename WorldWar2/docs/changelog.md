@@ -3522,3 +3522,35 @@ FMS B-717 (Kurt Student, written in hospital at Rotenburg/Hannover, 20 November 
 - **Roadmap:** 240 updated (still open, new recommendation); 252 and 253 opened (253: speed warnings between the new Meijel rows and stale 12th Army Group map rows).
 - **Semantic tests:** scenario 132.
 - Reading notes (private, Drive only): `FMS_B-717_notes.md`.
+
+## fms-fold3-netherlands: FMS B-084, Schlemm, First Parachute Army, re-read in full (3 November 2026)
+
+FMS B-084 (`R777`, Alfred Schlemm, Island Farm, 21 April 1946; NARA M1035, 76 images, German with the English translation and Appendices 1-4) was re-read in full in the Fold3 viewer on 3 November 2026. The first reading had taken only `C2226`-`C2235`.
+
+`data/references_meta.csv`, row R777:
+- **reliability_note:** old value the note from the first reading (31 October 2026), new value the same note plus a sentence on the full re-read and the LXV/LXIII naming.
+- **used_for:** old value covered the Rhineland battle, new value covers 20 November 1944 to 10 March 1945.
+- **Reason:** the scope of the reading was widened.
+
+Of 13 checkable facts, 10 agree with the dataset. The differences:
+- The fall of Xanten: "2-3 March" against 8 March (roadmap 250 updated).
+- The Wesel bridges blown at 07:00 on 10 March, against Meindl's about 05:00. Reading notes only.
+- Abraham's corps: "LXV Corps" in the text, shown on Skizze 2 near Kaldenkirchen while the redraw puts it at Moers. The rows use GER-COR-063C with a note.
+
+- **New claims:** `C7748`-`C7777` (30, all German, blank parents). They cover:
+  - Schlemm taking command on 20 November.
+  - The end-January positions: the army at Dinxperlo, II Parachute Corps at St. Hubert, LXXXVI Corps at Appeldorn, and the 8th Parachute Division's Roer bridgehead.
+  - Abraham's corps: subordinated about 18 February, near Kaldenkirchen on 25 February, its southern front and command post at Moers on 27 February, the Issum-Homberg sector on 4 March, Repelen on 5 March, and its staff to the east bank on 6 March.
+  - The 15th Panzergrenadier and Panzer Lehr Divisions put under it.
+  - LXXXVI Corps at Geldern on 25 February and 1 March, and its staff withdrawn on 3 March.
+  - The XLVII Panzer Corps staff to the east bank on 6 March. B-093 is cited as well, but it is the same family, so the row stays at 0.5.
+  - Four division rows for 24 February and nine for 4 March, all at 0.3 except the 15th Panzergrenadier at Marienbaum (0.5).
+- **New places:** `PL3549` Appeldorn, `PL3550` Sint Odiliënberg, `PL3551` Kaldenkirchen, `PL3552` Moers, `PL3553` Kamp-Lintfort, `PL3554` Repelen (OpenStreetMap Nominatim, `R002`).
+- **Corroborations:** R777 appended on 9 rows, with old and new values in each row's notes. All confidences are unchanged, for these reasons:
+  - `C7510`: conflict group G056.
+  - `C7707`, `C7710`: same family.
+  - `C7509`, `C7511`, `C7512`, `C7514`, `C7515`: Schlemm's 24 February against the Stacey 25 February rows.
+  - `C7531`: approximate date.
+- **Semantic tests:** scenario 133.
+- Reading notes (private, Drive only): `FMS_B-084_notes.md`.
+

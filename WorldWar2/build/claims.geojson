@@ -221447,6 +221447,334 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0648,
+     51.7549
+    ]
+   },
+   "properties": {
+    "claim_id": "C7445",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0698",
+    "location_name": "Reichswald (forest), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holds the Reichswald sector, right wing of the 86th Corps, with the 2nd Parachute Regiment attached",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 462-463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2456,
+     51.5803
+    ]
+   },
+   "properties": {
+    "claim_id": "C7446",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL3451",
+    "location_name": "Kevelaer (86th Corps sector Reichswald-Maas)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "86th Corps (Straube) holds the front from the Reichswald south along the Maas with the 84th and 180th Divisions",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 462"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C7447",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0864",
+    "location_name": "Gennep, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "deployed along the Maas as the left wing of the 86th Corps",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 462"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3228,
+     51.517
+    ]
+   },
+   "properties": {
+    "claim_id": "C7449",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-07",
+    "place_id": "PL0622",
+    "location_name": "Geldern, North Rhine-Westphalia (part of the division)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "part of the division at Geldern, edged north by Schlemm",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.338,
+     51.2571
+    ]
+   },
+   "properties": {
+    "claim_id": "C7450",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-02-07",
+    "place_id": "PL3453",
+    "location_name": "Dülken (Viersen), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Army Group H armoured reserve held at Dulken with the 116th Panzer and 15th Panzer Grenadier Divisions",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.338,
+     51.2571
+    ]
+   },
+   "properties": {
+    "claim_id": "C7451",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-07",
+    "place_id": "PL3453",
+    "location_name": "Dülken (Viersen), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "in Army Group H reserve under the 47th Panzer Corps at Dulken",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.338,
+     51.2571
+    ]
+   },
+   "properties": {
+    "claim_id": "C7452",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-07",
+    "place_id": "PL3453",
+    "location_name": "Dülken (Viersen), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "in Army Group H reserve under the 47th Panzer Corps at Dulken",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3031,
+     51.6889
+    ]
+   },
+   "properties": {
+    "claim_id": "C7453",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-07",
+    "place_id": "PL0749",
+    "location_name": "'s-Hertogenbosch, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "strung out along the lower Maas, keeping the enemy expecting an attack on northern Holland",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Veritable",
+    "strength_status": "unknown",
+    "location_date": "1945-02-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 464"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -221630,7 +221958,7 @@
     "location_name": "Reichswald (forest), North Rhine-Westphalia",
     "location_represents": "objective",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Veritable: 05:00 artillery programme; at 10:30 the barrage lifts and the corps attack towards the Reichswald begins",
     "operation_id": "OP-VERITABLE",
@@ -221643,8 +221971,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 257"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 257; R668: pp. 464-469"
    }
   },
   {
@@ -221671,7 +221999,7 @@
     "location_name": "Reichswald (forest), North Rhine-Westphalia",
     "location_represents": "objective",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Veritable: clears the south-west corner of the Reichswald; the 154th Brigade takes the ridge by 04:00",
     "operation_id": "OP-VERITABLE",
@@ -221684,8 +222012,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 258"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 258; R668: pp. 468-469"
    }
   },
   {
@@ -221712,7 +222040,7 @@
     "location_name": "Reichswald (forest), North Rhine-Westphalia",
     "location_represents": "objective",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Veritable: takes the Brandenberg hill by 14:00; through the Siegfried defences by 02:00 on the 9th",
     "operation_id": "OP-VERITABLE",
@@ -221725,8 +222053,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 258, 259"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: pp. 258, 259; R668: p. 469"
    }
   },
   {
@@ -221766,8 +222094,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 259"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 259; R668: p. 470"
    }
   },
   {
@@ -221898,6 +222226,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9516,
+     51.7591
+    ]
+   },
+   "properties": {
+    "claim_id": "C7448",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-08",
+    "place_id": "PL3452",
+    "location_name": "Bruuk (Groesbeek), Gelderland (a battalion, 1222nd Grenadier Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "a battalion of the 1222nd Grenadier Regiment holds up the 154th Brigade at Bruuk",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 469"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9738,
+     51.8235
+    ]
+   },
+   "properties": {
+    "claim_id": "C7454",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-08",
+    "place_id": "PL3454",
+    "location_name": "Zyfflich (Kranenburg), North Rhine-Westphalia (7th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "7th Brigade (Regina Rifles) clears Zyfflich by 8 p.m.; 8th Brigade takes Zandpol by 9 p.m.",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 471-472"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3986,
      50.6325
     ]
@@ -221958,7 +222368,7 @@
     "location_name": "Reichswald (forest), North Rhine-Westphalia",
     "location_represents": "objective",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Veritable: the 153rd Brigade clears the Kiekberg woods; the 152nd Brigade takes the lead in the Reichswald",
     "operation_id": "OP-VERITABLE",
@@ -221971,8 +222381,8 @@
     "location_date": "1945-02-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 261"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 261; R668: p. 469"
    }
   },
   {
@@ -222012,8 +222422,8 @@
     "location_date": "1945-02-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 261"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 261; R668: p. 474"
    }
   },
   {
@@ -222053,8 +222463,8 @@
     "location_date": "1945-02-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 262"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 262; R668: pp. 474-475"
    }
   },
   {
@@ -222185,6 +222595,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0771,
+     51.8438
+    ]
+   },
+   "properties": {
+    "claim_id": "C7455",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-09",
+    "place_id": "PL3455",
+    "location_name": "Keeken (Kleve), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "takes Niel, Leuth, Kekerdom, Millingen, Keeken and Mehr across the flooded Waal Flats",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 472-474"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1157,
+     51.6945
+    ]
+   },
+   "properties": {
+    "claim_id": "C7456",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-09",
+    "place_id": "PL3456",
+    "location_name": "Asperden (Goch), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "committed on the evening of 8 February; arriving by battalions, takes up positions left of the 84th Division between Asperden and the Maas",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 475-477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C7458",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-09",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "waits in the southern outskirts of Nijmegen; 129th Brigade sets off for Kranenburg and Cleve at 6 p.m.",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -222217,8 +222750,8 @@
     "location_date": "1945-02-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 262"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 262; R668: p. 478"
    }
   },
   {
@@ -222313,6 +222846,170 @@
     ]
    },
    "properties": {
+    "claim_id": "C7457",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-02-10",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Rundstedt moves up the armoured reserve and puts Headquarters 47th Panzer Corps in control of the battle",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7459",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-10",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia (16th Parachute Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "16th Parachute Regiment, newly arrived from west of Arnhem, engages the 129th Brigade at the south-west edge of Cleve",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 478"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C7467",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-10",
+    "place_id": "PL0864",
+    "location_name": "Gennep, Limburg (NL) (153rd Brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "153rd Brigade enters Ottersum; 5th Black Watch crosses the Niers to take Gennep, night 10-11 February",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1264,
+     51.8101
+    ]
+   },
+   "properties": {
+    "claim_id": "C7471",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-10",
+    "place_id": "PL3292",
+    "location_name": "Rindern (Kleve), North Rhine-Westphalia (9th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "9th Brigade attacks in Buffaloes at 4:30 p.m.: S.D. and G. Highlanders reach Donsbruggen and Rindern; H.L.I. of Canada stopped at Duffelward",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 480"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
     "claim_id": "C1492",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -222340,8 +223037,8 @@
     "location_date": "1945-02-11",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 264"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 264; R668: p. 478"
    }
   },
   {
@@ -222383,6 +223080,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R791;R002",
     "source_locator": "R791: image 27 (NAID 346868644), KTB copy p. 11, entry of 11 February 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2736,
+     51.6686
+    ]
+   },
+   "properties": {
+    "claim_id": "C7461",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-02-11",
+    "place_id": "PL0696",
+    "location_name": "Udem, Uedem, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "moves westward during the night 11-12 February to its assembly area at Udem for a counter-attack",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 478"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.04,
+     51.7145
+    ]
+   },
+   "properties": {
+    "claim_id": "C7468",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-11",
+    "place_id": "PL3460",
+    "location_name": "Hekkens (Goch), North Rhine-Westphalia (154th Brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "154th Brigade takes Hekkens, the southern anchor of the Reichswald defences",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1399,
+     51.8257
+    ]
+   },
+   "properties": {
+    "claim_id": "C7472",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-11",
+    "place_id": "PL1695",
+    "location_name": "Wardhausen, North Rhine-Westphalia (9th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "9th Brigade holds the whole line of the Spoy Canal (Rindern to Wardhausen) by midnight; 7th Brigade withdrawn to Beek",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 480-481"
    }
   },
   {
@@ -222465,6 +223285,293 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R027;R002",
     "source_locator": "R027: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1631,
+     51.7631
+    ]
+   },
+   "properties": {
+    "claim_id": "C7460",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL2218",
+    "location_name": "Hau, North Rhine-Westphalia (214th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "214th Brigade takes Materborn village on the 11th and Hau by daybreak on the 12th, then beats off the 47th Panzer Corps counter-attack",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 478-479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0648,
+     51.7549
+    ]
+   },
+   "properties": {
+    "claim_id": "C7462",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-12",
+    "place_id": "PL0698",
+    "location_name": "Reichswald (forest), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "attacks westward into the Reichswald as the main blow of the 47th Panzer Corps; repulsed by the 53rd Division",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 478-480"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0648,
+     51.7549
+    ]
+   },
+   "properties": {
+    "claim_id": "C7463",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-12",
+    "place_id": "PL0698",
+    "location_name": "Reichswald (forest), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "attacks on the right of the 47th Panzer Corps counter-attack towards the Reichswald south of Cleve",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 478-479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1933,
+     51.7625
+    ]
+   },
+   "properties": {
+    "claim_id": "C7465",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL3458",
+    "location_name": "Bedburg (Bedburg-Hau), North Rhine-Westphalia (one regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "a regiment hurried in from across the Rhine and committed east of Bedburg under Fiebig",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1662,
+     51.8234
+    ]
+   },
+   "properties": {
+    "claim_id": "C7466",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL3459",
+    "location_name": "Griethausen (Kleve), North Rhine-Westphalia (1052nd Grenadier Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "1052nd Grenadier Regiment withdraws from the flooded villages; Griethausen and Kellen taken without opposition",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 479-481"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0648,
+     51.7549
+    ]
+   },
+   "properties": {
+    "claim_id": "C7470",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL0698",
+    "location_name": "Reichswald (forest), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "fights off the 15th Panzer Grenadier Division counter-attacks in the Reichswald",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7473",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia (7th Brigade)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "7th Brigade relieves the 227th Brigade in Cleve; 9th Brigade takes Griethausen and Kellen",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 481"
    }
   },
   {
@@ -227925,6 +229032,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1995,
+     51.7679
+    ]
+   },
+   "properties": {
+    "claim_id": "C7464",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-13",
+    "place_id": "PL3457",
+    "location_name": "Hasselt (Bedburg-Hau), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "with the 84th Division remnant under command, breaks off the attack and takes up a line Erfgen-Hasselt-Tannenbusch",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1995,
+     51.7679
+    ]
+   },
+   "properties": {
+    "claim_id": "C7479",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-13",
+    "place_id": "PL3457",
+    "location_name": "Hasselt (Bedburg-Hau), North Rhine-Westphalia (46th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "46th Brigade reaches Hasselt on the Cleve-Calcar road, then fights into Moyland Wood (to 16 February)",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 483"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.8318,
      48.8387
     ]
@@ -227959,6 +229148,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R740;R002",
     "source_locator": "R740: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2014,
+     51.81
+    ]
+   },
+   "properties": {
+    "claim_id": "C7474",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-14",
+    "place_id": "PL3461",
+    "location_name": "Warbeyen (Kleve), North Rhine-Westphalia (9th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "North Nova Scotia Highlanders clear Warbeyen and Hurendeich to the Rhine bank",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 481"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C7475",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-14",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "still in 30th Corps reserve at Nijmegen, with no opening yet for the armoured division",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 482"
    }
   },
   {
@@ -228039,8 +229310,8 @@
     "location_date": "1945-02-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R234;R002",
-    "source_locator": "R234: table of 1945, February row"
+    "reference_ids": "R234;R668;R002",
+    "source_locator": "R234: table of 1945, February row; R668: pp. 462-463"
    }
   },
   {
@@ -228663,6 +229934,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0752,
+     51.7073
+    ]
+   },
+   "properties": {
+    "claim_id": "C7469",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL1696",
+    "location_name": "Kessel, North Rhine-Westphalia (154th Brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "154th Brigade, across the Niers in Buffaloes since the 13th, takes Kessel on the night 14-15 February",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 479"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7480",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "hands its front to the 3rd Canadian Division and goes into 30th Corps reserve to prepare the Goch assault (46th Brigade left under the 3rd Canadian Division)",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 483"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2308,
      51.7291
     ]
@@ -228682,7 +230035,7 @@
     "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia (one regiment of the brigade)",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Veritable: a regiment supports the 7th Canadian Infantry Brigade attack on Louisendorf",
     "operation_id": "OP-VERITABLE",
@@ -228695,8 +230048,8 @@
     "location_date": "1945-02-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 256, 268"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: pp. 256, 268; R668: pp. 483-484"
    }
   },
   {
@@ -228786,6 +230139,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C7476",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-052D",
+    "unit_name": "52nd (Lowland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-16",
+    "place_id": "PL0864",
+    "location_name": "Gennep, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "arrives from the 8th Corps in the Venlo area and takes over the 51st Division's right front by the Maas",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "claim_id": "C7477",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-16",
+    "place_id": "PL0758",
+    "location_name": "Goch, North Rhine-Westphalia (214th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "214th Brigade cuts the Goch-Calcar road; 4th Somerset L.I. night attack takes the ridge overlooking Goch",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1583,
+     51.7038
+    ]
+   },
+   "properties": {
+    "claim_id": "C7478",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-16",
+    "place_id": "PL3462",
+    "location_name": "Pfalzdorf (Goch), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "destruction",
+    "current_activity": "overrun by the 43rd Division east and south of the Forest of Cleve",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 482"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C7481",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-16",
+    "place_id": "PL0855",
+    "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia (7th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "7th Brigade enters the battle: Royal Winnipeg Rifles take the Louisendorf high ground; Regina Rifles held in Moyland Wood",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 483-484"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2388,
+     51.7534
+    ]
+   },
+   "properties": {
+    "claim_id": "C7483",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-16",
+    "place_id": "PL0711",
+    "location_name": "Moyland, Bedburg-Hau, North Rhine-Westphalia (60th Panzer Grenadier Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "60th Panzer Grenadier Regiment, with the 346th Fusilier Battalion, holds the Moyland Wood salient",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 484-485"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7486",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-16",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia (4th Brigade)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "4th Brigade arrives in the Cleve area, waiting to relieve the 7th Brigade",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 485"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1593,
      51.6756
     ]
@@ -228818,8 +230417,8 @@
     "location_date": "1945-02-17",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 267"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 267; R668: p. 482"
    }
   },
   {
@@ -228909,6 +230508,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2388,
+     51.7534
+    ]
+   },
+   "properties": {
+    "claim_id": "C7485",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-17",
+    "place_id": "PL0711",
+    "location_name": "Moyland, Bedburg-Hau, North Rhine-Westphalia (19th and 21st Parachute Regiments)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "19th and 21st Parachute Regiments temporarily reinforce the 6th Parachute Division at Moyland and Calcar",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 485"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1593,
      51.6756
     ]
@@ -228941,8 +230581,172 @@
     "location_date": "1945-02-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 267"
+    "reference_ids": "R671;R668;R002",
+    "source_locator": "R671: p. 267; R668: pp. 490-491"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2928,
+     51.7389
+    ]
+   },
+   "properties": {
+    "claim_id": "C7484",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-18",
+    "place_id": "PL0705",
+    "location_name": "Calcar (Kalkar), North Rhine-Westphalia (18th Parachute Regiment)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "18th Parachute Regiment arrives at Calcar on the night 17-18 February, followed by the 17th; a battalion holds Moyland Wood",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 485"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3713,
+     51.6994
+    ]
+   },
+   "properties": {
+    "claim_id": "C7491",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-18",
+    "place_id": "PL1098",
+    "location_name": "Marienbaum, Xanten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "arrives at Marienbaum, between Calcar and Xanten, under the 47th Panzer Corps",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 488-489"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "claim_id": "C7495",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-18",
+    "place_id": "PL0758",
+    "location_name": "Goch, North Rhine-Westphalia (153rd Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "153rd Brigade enters the southern part of Goch at 11 p.m.; mops up south-west of Goch to 21 February",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 490-491"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0142,
+     51.6346
+    ]
+   },
+   "properties": {
+    "claim_id": "C7501",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-052D",
+    "unit_name": "52nd (Lowland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-18",
+    "place_id": "PL0759",
+    "location_name": "Afferden, Bergen, Limburg (NL)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "finishes clearing the Afferden area along the right bank of the Maas after fighting for Kasteel Blijenbeek",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 491"
    }
   },
   {
@@ -229025,6 +230829,252 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R099;R002",
     "source_locator": "R099: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2388,
+     51.7534
+    ]
+   },
+   "properties": {
+    "claim_id": "C7482",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-19",
+    "place_id": "PL0711",
+    "location_name": "Moyland, Bedburg-Hau, North Rhine-Westphalia (7th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "7th Brigade fights for Moyland Wood: Canadian Scottish at Heselerfeld (17th), Regina Rifles into the wood (18th), Canadian Scottish company destroyed (19th)",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 484-485"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C7492",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-19",
+    "place_id": "PL0855",
+    "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia (a battle group)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "a battle group counter-attacks the 4th Canadian Brigade on the Goch-Calcar road from 8 p.m.",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 489"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C7494",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-19",
+    "place_id": "PL0855",
+    "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "counter-attacks the Essex Scottish on the Goch-Calcar road",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 489"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "claim_id": "C7496",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-19",
+    "place_id": "PL0758",
+    "location_name": "Goch, North Rhine-Westphalia (71st Brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "71st Brigade secures the factory area in the north-west corner of Goch",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 491"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "claim_id": "C7499",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-02-19",
+    "place_id": "PL0758",
+    "location_name": "Goch, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "headquarters takes over the front on both sides of Goch with the 7th Parachute Division and the 84th Division remnant",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 491"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2012,
+     51.6267
+    ]
+   },
+   "properties": {
+    "claim_id": "C7500",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-19",
+    "place_id": "PL3465",
+    "location_name": "south of Goch",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "under the 2nd Parachute Corps south of Goch; the 21st Parachute Regiment sent back from Moyland too late",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 491"
    }
   },
   {
@@ -234731,6 +236781,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2308,
+     51.7291
+    ]
+   },
+   "properties": {
+    "claim_id": "C7490",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL0855",
+    "location_name": "Louisendorf, Bedburg-Hau, North Rhine-Westphalia (4th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "4th Brigade holds the Goch-Calcar road farms (Schwanenhof, Gottern) against Panzer Lehr and the 116th Panzer, 19-20 February",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 487-490"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "claim_id": "C7497",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL0758",
+    "location_name": "Goch, North Rhine-Westphalia (227th Brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "227th Brigade captures Buchholt east of Goch",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 491"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2394,
+     51.6938
+    ]
+   },
+   "properties": {
+    "claim_id": "C7498",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL3464",
+    "location_name": "Halvenboom (Goch), North Rhine-Westphalia (214th Brigade)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "214th Brigade seizes Halvenboom, 1000 yards south of the Calcar road",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 490-491"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0142,
      51.6346
     ]
@@ -234895,6 +237068,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2388,
+     51.7534
+    ]
+   },
+   "properties": {
+    "claim_id": "C7487",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-21",
+    "place_id": "PL0711",
+    "location_name": "Moyland, Bedburg-Hau, North Rhine-Westphalia (7th Brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "The Royal Winnipeg Rifles clear the eastern end of Moyland Wood",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 486-487"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3327,
+     51.7521
+    ]
+   },
+   "properties": {
+    "claim_id": "C7488",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-21",
+    "place_id": "PL3463",
+    "location_name": "Honnepel (Kalkar), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "pulls its front back from Moyland to the line Calcar-Honnepel",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 487"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5733,
      49.5747
     ]
@@ -234970,6 +237225,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R777;R002",
     "source_locator": "R777: p. 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2388,
+     51.7534
+    ]
+   },
+   "properties": {
+    "claim_id": "C7489",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-22",
+    "place_id": "PL0711",
+    "location_name": "Moyland, Bedburg-Hau, North Rhine-Westphalia (5th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "5th Brigade's Regiment de Maisonneuve enters Moyland village unopposed",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 485, 487"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2736,
+     51.6686
+    ]
+   },
+   "properties": {
+    "claim_id": "C7493",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-22",
+    "place_id": "PL0696",
+    "location_name": "Udem, Uedem, North Rhine-Westphalia (area west of Udem)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "withdrawn on the night 21-22 February to the area west of Udem, then sent to the Munchen-Gladbach sector",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 490"
    }
   },
   {

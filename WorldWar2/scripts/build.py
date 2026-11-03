@@ -42,6 +42,7 @@ import command_relations  # noqa: E402
 import operations  # noqa: E402
 import places as placesmod  # noqa: E402
 import lineage  # noqa: E402
+import coverage as coveragemod  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
@@ -255,6 +256,7 @@ def outputs():
     out['claims.geojson'] = (json.dumps(gj, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
+    out.update(coveragemod.outputs(common.read_dicts(common.UNITS_CSV)[1], rows))
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     out['units.csv'], out['units.json'] = units_outputs(common.read_dicts(common.UNITS_CSV))
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(command_relations.load(), units, rows))

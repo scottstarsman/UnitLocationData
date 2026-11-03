@@ -10358,7 +10358,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -13118,7 +13118,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -13258,7 +13258,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -22718,7 +22718,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -64198,7 +64198,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66758,6 +66758,166 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.2732,
+     48.6978
+    ]
+   },
+   "properties": {
+    "place_id": "PL3354",
+    "name": "Le Merlerault, Orne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.539,
+     49.4568
+    ]
+   },
+   "properties": {
+    "place_id": "PL3355",
+    "name": "Saint Peter Port, Guernsey",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "GB",
+    "region": "Channel Islands",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4775,
+     49.2063
+    ]
+   },
+   "properties": {
+    "place_id": "PL3356",
+    "name": "Rots, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3752,
+     49.2963
+    ]
+   },
+   "properties": {
+    "place_id": "PL3357",
+    "name": "Douvres-la-Délivrande, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3434,
+     49.2144
+    ]
+   },
+   "properties": {
+    "place_id": "PL3358",
+    "name": "Lebisey (Hérouville-Saint-Clair), Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3725,
+     49.1171
+    ]
+   },
+   "properties": {
+    "place_id": "PL3359",
+    "name": "Saint-Martin-de-Fontenay, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2169,
+     49.0564
+    ]
+   },
+   "properties": {
+    "place_id": "PL3360",
+    "name": "Saint-Sylvain, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4508,
+     49.1556
+    ]
+   },
+   "properties": {
+    "place_id": "PL3361",
+    "name": "Verson, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 1
    }
   }

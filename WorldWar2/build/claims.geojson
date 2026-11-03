@@ -66,7 +66,7 @@
     "location_name": "Juno Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Juno Beach and advancing inland toward Caen",
     "operation_id": "OP-NEPTUNE",
@@ -79,8 +79,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R063;R001",
-    "source_locator": null
+    "reference_ids": "R137;R063;R668;R001",
+    "source_locator": "R668: pp. 104-112"
    }
   },
   {
@@ -161,8 +161,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R448;R449;R042;R132;R137;R013;R761;R001",
-    "source_locator": "R761: pp. 21-23"
+    "reference_ids": "R448;R449;R042;R132;R137;R013;R761;R668;R001",
+    "source_locator": "R761: pp. 21-23; R668: pp. 115, 124"
    }
   },
   {
@@ -366,8 +366,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R132;R448;R088;R001;R137",
-    "source_locator": null
+    "reference_ids": "R132;R448;R088;R137;R668;R001",
+    "source_locator": "R668: pp. 66, 124, 130"
    }
   },
   {
@@ -489,8 +489,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R132;R448;R001",
-    "source_locator": null
+    "reference_ids": "R132;R448;R668;R001",
+    "source_locator": "R668: p. 64"
    }
   },
   {
@@ -599,7 +599,7 @@
     "location_name": "Sword Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Sword Beach and linking with 6th Airborne",
     "operation_id": "OP-NEPTUNE",
@@ -612,8 +612,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R147;R142;R064;R001",
-    "source_locator": null
+    "reference_ids": "R147;R142;R064;R668;R001",
+    "source_locator": "R668: pp. 76, 114"
    }
   },
   {
@@ -640,7 +640,7 @@
     "location_name": "Biéville-Beuville / Lébisey approach to Caen",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "advancing on Caen; halted by 21st Panzer counterattack",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -653,8 +653,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R147;R137;R002",
-    "source_locator": null
+    "reference_ids": "R147;R137;R668;R002",
+    "source_locator": "R668: pp. 114-115"
    }
   },
   {
@@ -681,7 +681,7 @@
     "location_name": "Gold Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Gold Beach; overran 716th Division",
     "operation_id": "OP-NEPTUNE",
@@ -694,8 +694,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R071;R001",
-    "source_locator": null
+    "reference_ids": "R137;R071;R668;R001",
+    "source_locator": "R668: pp. 76, 100, 114"
    }
   },
   {
@@ -845,7 +845,7 @@
     "location_name": "Sword/Juno beaches (I Corps sector, point = Sword)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Juno and Sword beaches",
     "operation_id": "OP-NEPTUNE",
@@ -858,8 +858,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R130;R001",
-    "source_locator": null
+    "reference_ids": "R137;R130;R668;R001",
+    "source_locator": "R668: pp. 72, 91"
    }
   },
   {
@@ -927,7 +927,7 @@
     "location_name": "Gold Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Gold Beach and linking with I Corps",
     "operation_id": "OP-NEPTUNE",
@@ -940,8 +940,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R161;R001",
-    "source_locator": null
+    "reference_ids": "R137;R161;R668;R001",
+    "source_locator": "R668: pp. 72, 100"
    }
   },
   {
@@ -968,7 +968,7 @@
     "location_name": "Drop zones west of Utah Beach (Saint-Come-du-Mont / Sainte-Marie-du-Mont area)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "parachuting behind Utah Beach to seize causeways and bridges",
     "operation_id": "OP-NEPTUNE",
@@ -981,8 +981,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R106;R019;R150;R001",
-    "source_locator": null
+    "reference_ids": "R137;R106;R019;R150;R668;R001",
+    "source_locator": "R668: pp. 93, 113"
    }
   },
   {
@@ -1009,7 +1009,7 @@
     "location_name": "Omaha Beach (Colleville-sur-Mer sector)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Omaha Beach (Colleville sector)",
     "operation_id": "OP-NEPTUNE",
@@ -1022,8 +1022,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R040;R001",
-    "source_locator": null
+    "reference_ids": "R137;R040;R668;R001",
+    "source_locator": "R668: p. 113"
    }
   },
   {
@@ -1050,7 +1050,7 @@
     "location_name": "Omaha Beach (Vierville-sur-Mer sector)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Omaha Beach (Vierville sector)",
     "operation_id": "OP-NEPTUNE",
@@ -1063,8 +1063,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R047;R001",
-    "source_locator": null
+    "reference_ids": "R137;R047;R668;R001",
+    "source_locator": "R668: p. 113"
    }
   },
   {
@@ -1104,8 +1104,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R069;R381;R001",
-    "source_locator": null
+    "reference_ids": "R137;R069;R381;R668;R001",
+    "source_locator": "R668: p. 113"
    }
   },
   {
@@ -1145,8 +1145,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R106;R446;R097;R150;R001",
-    "source_locator": null
+    "reference_ids": "R106;R446;R097;R150;R668;R001",
+    "source_locator": "R668: p. 113"
    }
   },
   {
@@ -1255,7 +1255,7 @@
     "location_name": "Omaha Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Omaha Beach",
     "operation_id": "OP-NEPTUNE",
@@ -1268,8 +1268,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R152;R001",
-    "source_locator": null
+    "reference_ids": "R137;R152;R668;R001",
+    "source_locator": "R668: p. 72"
    }
   },
   {
@@ -1296,7 +1296,7 @@
     "location_name": "Utah Beach",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "assaulting Utah Beach",
     "operation_id": "OP-NEPTUNE",
@@ -1309,8 +1309,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R150;R001",
-    "source_locator": null
+    "reference_ids": "R137;R150;R668;R001",
+    "source_locator": "R668: p. 72"
    }
   },
   {
@@ -2138,6 +2138,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.2732,
+     48.6978
+    ]
+   },
+   "properties": {
+    "claim_id": "C7225",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-06",
+    "place_id": "PL3354",
+    "location_name": "Le Merlerault, Orne",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "corps headquarters at Le Merlerault when the invasion begins",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 122"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.539,
+     49.4568
+    ]
+   },
+   "properties": {
+    "claim_id": "C7226",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-319D",
+    "unit_name": "319th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL3355",
+    "location_name": "Saint Peter Port, Guernsey",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "garrisoning the Channel Islands",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 64"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -2170,8 +2252,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R761;R001",
-    "source_locator": "R761: p. 23"
+    "reference_ids": "R449;R761;R668;R001",
+    "source_locator": "R761: p. 23; R668: pp. 129-130"
    }
   },
   {
@@ -2854,7 +2936,7 @@
     "location_name": "Authie",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "holding Authie-Carpiquet line against Canadian advance",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -2867,8 +2949,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R001",
-    "source_locator": null
+    "reference_ids": "R449;R668;R001",
+    "source_locator": "R668: pp. 132, 136"
    }
   },
   {
@@ -3072,8 +3154,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R378;R451;R167;R002",
-    "source_locator": null
+    "reference_ids": "R378;R451;R167;R668;R002",
+    "source_locator": "R668: p. 142"
    }
   },
   {
@@ -3441,8 +3523,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R449;R761;R001",
-    "source_locator": "R761: p. 23"
+    "reference_ids": "R141;R449;R761;R668;R001",
+    "source_locator": "R761: p. 23; R668: p. 142"
    }
   },
   {
@@ -4371,7 +4453,7 @@
     "location_name": "Le Mesnil-Patry",
     "location_represents": "objective",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "attacking Le Mesnil-Patry; costly failure",
     "operation_id": "OP-PERCH",
@@ -4384,8 +4466,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R001",
-    "source_locator": null
+    "reference_ids": "R141;R668;R001",
+    "source_locator": "R668: p. 139"
    }
   },
   {
@@ -4550,6 +4632,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R761;R002",
     "source_locator": "R761: p. 37"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4775,
+     49.2063
+    ]
+   },
+   "properties": {
+    "claim_id": "C7230",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-11",
+    "place_id": "PL3356",
+    "location_name": "Rots, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "No. 46 (Royal Marine) Commando, under the 8th Canadian Brigade, clears the Mue valley to Rots",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 138"
    }
   },
   {
@@ -4999,8 +5122,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R761;R001",
-    "source_locator": "R761: p. 39, Annex 3"
+    "reference_ids": "R449;R761;R668;R001",
+    "source_locator": "R761: p. 39, Annex 3; R668: p. 142"
    }
   },
   {
@@ -5191,7 +5314,7 @@
     "location_name": "Villers-Bocage",
     "location_represents": "objective",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "ambushed at Villers-Bocage; withdrawing to brigade box",
     "operation_id": "OP-PERCH",
@@ -5204,8 +5327,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R114;R001",
-    "source_locator": null
+    "reference_ids": "R114;R668;R001",
+    "source_locator": "R668: p. 142"
    }
   },
   {
@@ -8247,6 +8370,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.488,
+     49.2598
+    ]
+   },
+   "properties": {
+    "claim_id": "C7229",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "place_id": "PL1149",
+    "location_name": "Le Fresne-Camilly, Calvados (north-east of Le Fresne-Camilly)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "divisional headquarters north-east of Camilly; Le Mesnil-Patry occupied without opposition the night before",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 140"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3752,
+     49.2963
+    ]
+   },
+   "properties": {
+    "claim_id": "C7231",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-06-17",
+    "place_id": "PL3357",
+    "location_name": "Douvres-la-Délivrande, Calvados",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "No. 41 (Royal Marine) Commando takes the Douvres radar stations",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 144"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.6124,
      49.4179
     ]
@@ -8484,8 +8689,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R446;R382;R001",
-    "source_locator": null
+    "reference_ids": "R446;R382;R668;R001",
+    "source_locator": "R668: p. 146"
    }
   },
   {
@@ -8568,6 +8773,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R774;R002",
     "source_locator": "R774: Skizze 9 and Skizze 14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5033,
+     49.2854
+    ]
+   },
+   "properties": {
+    "claim_id": "C7227",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "place_id": "PL0665",
+    "location_name": "Amblie, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "army commander crosses to France and opens a small tactical headquarters at Amblie",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 146"
    }
   },
   {
@@ -11054,7 +11300,7 @@
     "location_name": "Fontenay-le-Pesnel",
     "location_represents": "objective",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "launching Operation Martlet against Panzer Lehr and 12th SS",
     "operation_id": "OP-MARTLET",
@@ -11067,8 +11313,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R014;R001",
-    "source_locator": null
+    "reference_ids": "R139;R014;R668;R001",
+    "source_locator": "R668: p. 147"
    }
   },
   {
@@ -11423,7 +11669,7 @@
     "location_name": "Cheux",
     "location_represents": "front_line_point",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "leading Epsom and fighting at Cheux",
     "operation_id": "OP-EPSOM",
@@ -11436,8 +11682,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R001",
-    "source_locator": null
+    "reference_ids": "R139;R668;R001",
+    "source_locator": "R668: p. 147"
    }
   },
   {
@@ -11587,7 +11833,7 @@
     "location_name": "Epsom attack area (point = Cheux, first-day objective)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "launching Operation Epsom west of Caen",
     "operation_id": "OP-EPSOM",
@@ -11600,8 +11846,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R140;R001",
-    "source_locator": null
+    "reference_ids": "R139;R140;R668;R001",
+    "source_locator": "R668: pp. 145-147"
    }
   },
   {
@@ -12079,7 +12325,7 @@
     "location_name": "Mondrainville (Odon bridge area)",
     "location_represents": "objective",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "capture",
     "current_activity": "forming bridgehead across the Odon",
     "operation_id": "OP-EPSOM",
@@ -12092,8 +12338,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R001",
-    "source_locator": null
+    "reference_ids": "R139;R668;R001",
+    "source_locator": "R668: p. 147"
    }
   },
   {
@@ -14388,8 +14634,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R446;R139;R761;R001",
-    "source_locator": "R761: p. 52"
+    "reference_ids": "R446;R139;R761;R668;R001",
+    "source_locator": "R761: p. 52; R668: p. 149"
    }
   },
   {
@@ -15003,8 +15249,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R446;R139;R761;R001",
-    "source_locator": "R761: pp. 52-55"
+    "reference_ids": "R446;R139;R761;R668;R001",
+    "source_locator": "R761: pp. 52-55; R668: p. 147"
    }
   },
   {
@@ -15292,6 +15538,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R001",
     "source_locator": "R670: p. 283"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5033,
+     49.2854
+    ]
+   },
+   "properties": {
+    "claim_id": "C7228",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-29",
+    "place_id": "PL0665",
+    "location_name": "Amblie, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "corps tactical headquarters opens at Amblie; no operational responsibility yet",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 152"
    }
   },
   {
@@ -17964,6 +18251,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.4508,
+     49.1556
+    ]
+   },
+   "properties": {
+    "claim_id": "C7238",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-04",
+    "place_id": "PL3361",
+    "location_name": "Verson, Calvados (troops in Verson and Fontaine-Étoupefour)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "troops occupy Verson and Fontaine-Étoupefour on the flank of Operation Windsor; withdrawn that night",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 155"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -18242,8 +18570,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R591;R278;R001",
-    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries)"
+    "reference_ids": "R591;R278;R668;R001",
+    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries); R668: pp. 158-161"
    }
   },
   {
@@ -18406,8 +18734,8 @@
     "location_date": "1944-07-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 313, 315"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: pp. 313, 315; R668: pp. 157, 162"
    }
   },
   {
@@ -18447,8 +18775,8 @@
     "location_date": "1944-07-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 314, 315"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: pp. 314, 315; R668: pp. 157, 162"
    }
   },
   {
@@ -18531,6 +18859,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: pp. 314, 315"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3434,
+     49.2144
+    ]
+   },
+   "properties": {
+    "claim_id": "C7232",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-016D",
+    "unit_name": "16th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-07-08",
+    "place_id": "PL3358",
+    "location_name": "Lebisey (Hérouville-Saint-Clair), Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "defending north-east of Caen against Charnwood; badly mauled by the 3rd British Division",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 158, 161-163"
    }
   },
   {
@@ -18898,8 +19267,8 @@
     "location_date": "1944-07-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 316, 317"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: pp. 316, 317; R668: p. 166"
    }
   },
   {
@@ -19062,8 +19431,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R591;R001",
-    "source_locator": "R591: p. 137, 135"
+    "reference_ids": "R591;R668;R001",
+    "source_locator": "R591: p. 137, 135; R668: p. 165"
    }
   },
   {
@@ -19131,7 +19500,7 @@
     "location_name": "Maltot-Caen front sector (sector between Maltot and Caen)",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "1st SS Panzer Division takes over a front sector between Maltot and Caen (the day of Operation Jupiter)",
     "operation_id": "OP-JUPITER",
@@ -19144,8 +19513,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R279;R001",
-    "source_locator": "R279: Einsatz und Unterstellung (11 July 1944 entry)"
+    "reference_ids": "R279;R668;R001",
+    "source_locator": "R279: Einsatz und Unterstellung (11 July 1944 entry); R668: p. 164"
    }
   },
   {
@@ -22657,7 +23026,7 @@
     "location_name": "Odon bridgehead",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "XII Corps attacks from the Odon bridgehead to secure the Bougy-Evrecy road before Goodwood",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -22670,8 +23039,8 @@
     "location_date": "1944-07-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: p. 334"
+    "reference_ids": "R670;R668;R001",
+    "source_locator": "R670: p. 334; R668: pp. 166, 169"
    }
   },
   {
@@ -22711,8 +23080,8 @@
     "location_date": "1944-07-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: p. 334"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: p. 334; R668: p. 169"
    }
   },
   {
@@ -23039,8 +23408,8 @@
     "location_date": "1944-06-29",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -18,
-    "reference_ids": "R588;R107;R185;R001",
-    "source_locator": "R588: p. 169; R185: list of commanders"
+    "reference_ids": "R588;R107;R185;R668;R001",
+    "source_locator": "R588: p. 169; R185: list of commanders; R668: p. 178"
    }
   },
   {
@@ -23326,8 +23695,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R278;R600;R002",
-    "source_locator": "R278: Einsatz und Unterstellung (18 July 1944 entry); R600: p. 193"
+    "reference_ids": "R278;R600;R668;R002",
+    "source_locator": "R278: Einsatz und Unterstellung (18 July 1944 entry); R600: p. 193; R668: pp. 177-178"
    }
   },
   {
@@ -23695,8 +24064,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 340, 342"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: pp. 340, 342; R668: p. 170"
    }
   },
   {
@@ -23736,8 +24105,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: pp. 342, 343"
+    "reference_ids": "R670;R668;R001",
+    "source_locator": "R670: pp. 342, 343; R668: p. 170"
    }
   },
   {
@@ -23777,8 +24146,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: p. 343"
+    "reference_ids": "R670;R668;R002",
+    "source_locator": "R670: p. 343; R668: p. 170"
    }
   },
   {
@@ -26731,6 +27100,211 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R592;R001",
     "source_locator": "R592: p. 227"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3064,
+     49.1115
+    ]
+   },
+   "properties": {
+    "claim_id": "C7233",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-24",
+    "place_id": "PL0672",
+    "location_name": "Tilly-la-Campagne, Calvados (line from near Cagny to Verrières)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding the line from near Cagny to Verrières under the I SS Panzer Corps on the eve of Spring",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 185"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3725,
+     49.1171
+    ]
+   },
+   "properties": {
+    "claim_id": "C7234",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-272D",
+    "unit_name": "272nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-24",
+    "place_id": "PL3359",
+    "location_name": "Saint-Martin-de-Fontenay, Calvados (front from Verrières to the Orne)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "holding the front from Verrières to the Orne, reinforced by battalions of the 2nd Panzer and 9th SS Panzer Divisions",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 185"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3239,
+     49.0458
+    ]
+   },
+   "properties": {
+    "claim_id": "C7235",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-24",
+    "place_id": "PL0525",
+    "location_name": "Bretteville-sur-Laize (north-west of Bretteville-sur-Laize (balance of the division))",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "balance of the division in close reserve north-west of Bretteville-sur-Laize",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: p. 185"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3405,
+     48.9694
+    ]
+   },
+   "properties": {
+    "claim_id": "C7236",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-24",
+    "place_id": "PL3225",
+    "location_name": "Tournebu, Normandy (north-west of Tournebu (main body))",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "main body moving to the area north-west of Tournebu after being ordered east from Caumont on 22 July",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 183-185"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2169,
+     49.0564
+    ]
+   },
+   "properties": {
+    "claim_id": "C7237",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-24",
+    "place_id": "PL3360",
+    "location_name": "Saint-Sylvain, Calvados (east of Saint-Sylvain)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "in reserve east of Saint-Sylvain behind the I SS Panzer Corps",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: pp. 178, 185"
    }
   },
   {

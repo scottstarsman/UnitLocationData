@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, chapters I-VII (to 24 July 1944) (3 November 2026)
+
+Approved by Scott on 3 November 2026 ("let's work Stacey"). Reference `R668` (already in the dataset, family `canada_ca`); page numbers are the printed pages. Nothing deleted.
+
+- **Corroborations (existing multi-reference mechanism):** Stacey appended to `reference_ids`, `source` and `source_locator` on 43 rows whose unit, date and place it confirms. Each row's `notes` records the old and new `reference_ids` and `source_locator` and the page.
+- **Confidence raised by the corroboration rule** (second source family, `canada_ca`, agrees with a single earlier family), old value 0.5, new value 0.7: `C0002`, `C0015`, `C0016`, `C0017`, `C0021`, `C0023`, `C0024`, `C0025`, `C0026`, `C0031`, `C0032`, `C0049`, `C0079`, `C0096`, `C0156`, `C0163`, `C0167`, `C0179`, `C0773`, `C1412` (20 rows).
+- **Appended without a change of confidence:** conflict-group rows `C0054` (G005), `C0188` (G001), `C0714` (G021); rows that already had two families (`C0027`, `C0033`, `C0091`, `C0781`, not retroactive); rows already at 0.7 or 0.9 (`C0004`, `C0009`, `C0012`, `C0028`, `C0060`, `C0137`, `C0203`, `C0753`, `C0776`, `C1409`-`C1411`, `C1413`, `C1418`-`C1420`).
+- **New claims** `C7225`-`C7238` (14; 8 German, 6 Allied), blank parents: I SS Panzer Corps headquarters at Le Merlerault (6 June); 319th Division in the Channel Islands (6 June, representative point, 0.3); First Canadian Army tactical headquarters at Amblie (18 June); 2nd Canadian Corps tactical headquarters at Amblie (29 June); 3rd Canadian Division headquarters north-east of Camilly (17 June); 4th Special Service Brigade at Rots (No. 46 RM Commando, 11 June) and Douvres radar (No. 41 RM Commando, 17 June); 16th Luftwaffe Field Division north-east of Caen (8 July); 43rd Division at Verson (4 July); and the German dispositions on the eve of Spring (24 July): 1st SS Panzer, 272nd Infantry, 9th SS Panzer, 2nd Panzer and 116th Panzer Divisions.
+- **Places** `PL3354`-`PL3361` (OpenStreetMap Nominatim). `PL3355` Saint Peter Port is recorded with country `GB` (the country vocabulary has no Channel Islands code).
+- **Units promoted from placeholder to active** (`scripts/promote_placeholders.py`): `GER-INF-319D`, `GER-LFD-016D`.
+- **Roadmap points** 237 (43rd Division on 4 July: Stacey against map row `C2368`) and 238 (12th SS Panzer Division relieved on 11 July: by the 1st SS Panzer Division in Stacey, by the 272nd Division in `C0778`).
+- **Semantic scenario 118.** Scenario 27 now expects 0.7 for the 1st Division on D-Day (`C0025`; old expectation 0.5, new 0.7, reason: corroboration rule).
+
 ## confidence-corroborated: C7136 raised after roadmap point 224 closed (3 November 2026)
 
 Approved by Scott on 3 November 2026.

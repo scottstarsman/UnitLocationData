@@ -3,14 +3,14 @@ ALL-FAAA-001A,First Allied Airborne Army,Allied,army,Airborne,placeholder,1944-0
 ALL-AFHQ-000H,Allied Force Headquarters (AFHQ),Allied,other,Army,placeholder,,false,0,,,
 ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,other,Army,placeholder,,false,0,,,
 BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,active,1943-01,true,13,1944-08-13,1945-04-18,
-CAN-ARMY-001A,First Canadian Army,Canada,army,Army,active,1942,true,44,1944-06-27,1945-05-04,
+CAN-ARMY-001A,First Canadian Army,Canada,army,Army,active,1942,true,45,1944-06-18,1945-05-04,
 CAN-COR-001C,I Canadian Corps,Canada,corps,Army,active,1942,true,6,1945-03-15,1945-05-07,
-CAN-COR-002C,II Canadian Corps,Canada,corps,Army,active,1943,true,59,1944-07-11,1945-05-09,
+CAN-COR-002C,II Canadian Corps,Canada,corps,Army,active,1943,true,60,1944-06-29,1945-05-09,
 CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,active,,true,54,1944-07-31,1945-05-09,
 CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,8,1945-02-28,1945-05-08,
 CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,active,1939,true,5,1945-04-03,1945-05-08,
 CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,active,1939,true,68,1944-07-07,1945-05-09,
-CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,78,1944-06-06,1945-05-09,
+CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,79,1944-06-06,1945-05-09,
 CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,active,1942-01-26,true,8,1944-06-06,1945-02-26,
 CZ-ARM-001B,1st Czechoslovak Independent Armoured Brigade,Czechoslovakia,brigade,Armoured,active,1943-09,true,5,1944-08-30,1945-05-08,
 FR-ARMY-001A,French First Army (Army B until 25 September 1944),France,army,Army,active,1944,true,26,1944-08-20,1945-05-09,
@@ -79,7 +79,7 @@ GER-SSCOR-012C,XII SS Corps,Germany,corps,Waffen-SS,active,,true,17,1944-09-28,1
 GER-SSCOR-013C,XIII SS Corps,Germany,corps,Waffen-SS,active,,true,13,1944-09-24,1945-05-08,GER-ARMY-001A
 GER-SSCOR-014C,XIV SS Corps,Germany,corps,Waffen-SS,active,1944-11-10,true,9,1945-01-05,1945-03-20,
 GER-SSCOR-018C,XVIII SS Corps,Germany,corps,Waffen-SS,active,1944-12,true,12,1945-01-30,1945-04-27,
-GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,active,1943-07-27,true,15,1944-06-07,1945-01-04,GER-ARMY-007A
+GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,active,1943-07-27,true,16,1944-06-06,1945-01-04,GER-ARMY-007A
 GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,active,1942-07,true,16,1944-06-24,1945-01-03,GER-PZA-005A
 GER-VAK-388C,Volks-Artillerie-Korps 388,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
 GER-VAK-401C,Volks-Artillerie-Korps 401,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
@@ -135,11 +135,11 @@ GER-INF-265D,265th Infantry Division,Germany,division,Army,placeholder,1943-05-2
 GER-INF-266D,266th Infantry Division,Germany,division,Army,placeholder,1943-05-20,false,0,,,GER-COR-074C
 GER-INF-269D,269th Infantry Division,Germany,division,Army,active,1939-08-26,true,14,1944-10-31,1945-01-23,GER-LFC-004C
 GER-INF-271D,271st Infantry Division,Germany,division,Army,active,,true,7,1944-07-12,1944-08-15,GER-SSPZ-002C
-GER-INF-272D,272nd Infantry Division,Germany,division,Army,active,,true,10,1944-07-11,1944-09-05,GER-SSPZ-001C
+GER-INF-272D,272nd Infantry Division,Germany,division,Army,active,,true,11,1944-07-11,1944-09-05,GER-SSPZ-001C
 GER-INF-275D,275th Infantry Division,Germany,division,Army,active,1943-11-17,true,22,1944-06-27,1945-01-23,GER-COR-025C
 GER-INF-276D,276th Infantry Division,Germany,division,Army,placeholder,1940-05-22,false,0,,,GER-COR-086C
 GER-INF-277D,277th Infantry Division,Germany,division,Army,active,1940-05-22,true,7,1944-07-11,1944-08-20,GER-SSPZ-002C
-GER-INF-319D,319th Infantry Division,Germany,division,Army,placeholder,1940-11-15,false,0,,,
+GER-INF-319D,319th Infantry Division,Germany,division,Army,active,1940-11-15,true,1,1944-06-06,1944-06-06,
 GER-INF-326D,326th Infantry Division,Germany,division,Army,placeholder,1942-11-09,false,0,,,GER-FJ-002C
 GER-INF-331D,331st Infantry Division,Germany,division,Army,placeholder,,false,0,,,GER-COR-082C
 GER-INF-338D,338th Infantry Division,Germany,division,Army,active,1942-11-09,true,28,1944-08-24,1945-04-15,GER-COR-085C
@@ -166,7 +166,7 @@ GER-INF-HUTTN,Division Ulrich von Hutten,Germany,division,Army,active,,true,1,19
 GER-INF-JUTLAND,Infanterie-Division Jütland (325th Infantry Division),Germany,division,Army,placeholder,1944-07-04,false,0,,,GER-COR-086C
 GER-INF-POTSDAM,Infanterie-Division Potsdam,Germany,division,Army,placeholder,,false,0,,,
 GER-INF-SCHRN,Division Scharnhorst,Germany,division,Army,active,,true,1,1945-04-14,1945-04-14,
-GER-LFD-016D,16th Luftwaffe Field Division,Germany,division,Luftwaffe,placeholder,1942-12-01,false,0,,,GER-COR-088C
+GER-LFD-016D,16th Luftwaffe Field Division,Germany,division,Luftwaffe,active,1942-12-01,true,1,1944-07-08,1944-07-08,GER-COR-088C
 GER-LFD-017D,17th Luftwaffe Field Division,Germany,division,Luftwaffe,placeholder,1942-12-01,false,0,,,GER-COR-081C
 GER-LFD-018D,18th Luftwaffe Field Division,Germany,division,Luftwaffe,placeholder,1942-12-01,false,0,,,GER-COR-082C
 GER-LFD-019D,19th Luftwaffe Field Division (19. Luftwaffen-Sturm-Division),Germany,division,Luftwaffe,placeholder,1943-03-01,false,0,,,
@@ -174,11 +174,11 @@ GER-LL-091D,91st Luftlande Division,Germany,division,Army,active,1944-01-15,true
 GER-PG-003D,3rd Panzergrenadier Division,Germany,division,Armoured,active,,true,35,1944-09-12,1945-04-18,
 GER-PG-015D,15th Panzergrenadier Division,Germany,division,Armoured,active,,true,25,1944-09-12,1945-03-24,GER-COR-066C
 GER-PG-025D,25th Panzergrenadier Division,Germany,division,Armoured,active,1943-06-23,true,19,1944-11-12,1945-03-13,
-GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,active,1935-10-15,true,27,1944-06-06,1945-01-22,
+GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,active,1935-10-15,true,28,1944-06-06,1945-01-22,
 GER-PZ-009D,9th Panzer Division,Germany,division,Armoured,active,,true,30,1944-06-06,1945-04-18,GER-SSPZ-002C
 GER-PZ-011D,11th Panzer Division,Germany,division,Armoured,active,1940-08-01,true,29,1944-06-06,1945-05-04,GER-COR-085C
 GER-PZ-021D,21st Panzer Division,Germany,division,Armoured,active,1941-08-01,true,50,1944-06-06,1945-03-13,
-GER-PZ-116D,116th Panzer Division,Germany,division,Armoured,active,1944-03-28,true,40,1944-07-15,1945-04-18,GER-SSPZ-002C
+GER-PZ-116D,116th Panzer Division,Germany,division,Armoured,active,1944-03-28,true,41,1944-07-15,1945-04-18,GER-SSPZ-002C
 GER-PZ-CLAUS,Panzer Division von Clausewitz,Germany,division,Army,active,,true,2,1945-04-15,1945-04-21,
 GER-PZ-LEHRD,Panzer Lehr Division,Germany,division,Armoured,active,1944-01-10,true,46,1944-06-06,1945-04-15,
 GER-RES-148D,148th Reserve Division,Germany,division,Army,placeholder,1942-10-01,false,0,,,GER-COR-062C
@@ -189,9 +189,9 @@ GER-RES-182D,182nd Reserve Division,Germany,division,Army,placeholder,1942-11-26
 GER-SSGEB-006D,6th SS Mountain Division Nord,Germany,division,Waffen-SS,active,1941-02-28,true,3,1945-03-06,1945-04-02,GER-COR-090C
 GER-SSGR-030D,30th Waffen Grenadier Division of the SS (Russian No. 2),Germany,division,Waffen-SS,placeholder,,false,0,,,
 GER-SSPG-017D,17th SS Panzergrenadier Division Götz von Berlichingen,Germany,division,Waffen-SS,active,1943-11-15,true,52,1944-06-06,1945-04-16,
-GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,active,1943-10-22,true,26,1944-06-06,1944-12-30,
+GER-SSPZ-001D,1st SS Panzer Division Leibstandarte SS Adolf Hitler,Germany,division,Waffen-SS,active,1943-10-22,true,27,1944-06-06,1944-12-30,
 GER-SSPZ-002D,2nd SS Panzer Division Das Reich,Germany,division,Waffen-SS,active,1943-10-22,true,27,1944-06-06,1945-01-03,
-GER-SSPZ-009D,9th SS Panzer Division Hohenstaufen,Germany,division,Waffen-SS,active,1943-10-03,true,27,1944-06-25,1945-01-05,
+GER-SSPZ-009D,9th SS Panzer Division Hohenstaufen,Germany,division,Waffen-SS,active,1943-10-03,true,28,1944-06-25,1945-01-05,
 GER-SSPZ-010D,10th SS Panzer Division Frundsberg,Germany,division,Waffen-SS,active,1943-10-26,true,24,1944-06-29,1945-01-16,
 GER-SSPZ-012D,12th SS Panzer Division Hitlerjugend,Germany,division,Waffen-SS,active,1943-07-20,true,40,1944-06-06,1945-01-04,
 GER-VG-009D,9th Volksgrenadier Division,Germany,division,Army,placeholder,1944-10-13,false,0,,,GER-COR-053C
@@ -276,7 +276,7 @@ UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,active,1941-06-17,true
 UK-INF-003D,3rd Infantry Division,UK,division,Army,active,,true,50,1944-06-06,1945-05-01,
 UK-INF-005D,5th Infantry Division,UK,division,Army,active,,true,2,1945-04-24,1945-05-02,
 UK-INF-015D,15th (Scottish) Infantry Division,UK,division,Army,active,1939,true,55,1944-06-14,1945-04-29,
-UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,active,,true,60,1944-06-24,1945-05-09,
+UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,active,,true,61,1944-06-24,1945-05-09,
 UK-INF-049D,49th (West Riding) Infantry Division,UK,division,Army,active,,true,48,1944-06-13,1945-05-08,
 UK-INF-050D,50th (Northumbrian) Infantry Division,UK,division,Army,active,,true,34,1944-06-06,1944-12-05,
 UK-INF-051D,51st (Highland) Infantry Division,UK,division,Army,active,,true,54,1944-06-07,1945-05-09,
@@ -288,7 +288,7 @@ UK-ARM-008B,8th Armoured Brigade,UK,brigade,Armoured,active,1941-08,true,6,1944-
 UK-ARM-027B,27th Armoured Brigade,UK,brigade,Armoured,active,1940-11-26,true,4,1944-06-06,1944-07-29,
 UK-ARM-033B,33rd Armoured Brigade,UK,brigade,Armoured,active,1944-03-17,true,4,1944-07-08,1945-01-08,
 UK-CDO-001B,1st Special Service (Commando) Brigade,UK,brigade,Army,active,,true,4,1944-06-06,1945-03-23,
-UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,active,,true,6,1944-06-06,1944-11-30,
+UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,active,,true,8,1944-06-06,1944-11-30,
 UK-INF-056B,56th Infantry Brigade,UK,brigade,Army,active,1944-02-15,true,6,1944-06-06,1944-08-20,
 UK-INF-115B,115th Infantry Brigade,UK,brigade,Army,active,,true,1,1945-03-23,1945-03-23,
 UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,active,1941-09,true,5,1944-07-30,1945-03-27,

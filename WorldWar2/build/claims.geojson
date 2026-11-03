@@ -164662,6 +164662,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C7672",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-15",
+    "place_id": "PL3531",
+    "location_name": "Gennep, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "holds the east bank of the Maas opposite Cuijk and Boxmeer (map)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 34 (The Threat across the Maas, mid-December 1944), facing p. 440"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9325,
      49.9661
     ]
@@ -272861,6 +272902,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7392,
+     52.1363
+    ]
+   },
+   "properties": {
+    "claim_id": "C7673",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-01",
+    "place_id": "PL3532",
+    "location_name": "Ladbergen, North Rhine-Westphalia (1st Canadian Parachute Battalion (3rd Parachute Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "1st Canadian Parachute Battalion route reaches Ladbergen (map label 1 Apr)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.0403,
      51.755
     ]
@@ -277412,6 +277494,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.9169,
+     52.2881
+    ]
+   },
+   "properties": {
+    "claim_id": "C7674",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-04",
+    "place_id": "PL3533",
+    "location_name": "Minden, North Rhine-Westphalia (1st Canadian Parachute Battalion (3rd Parachute Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "route reaches the Weser at Minden (map label 4 Apr)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1833,
      51.75
     ]
@@ -278553,6 +278676,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 557"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5065,
+     52.4283
+    ]
+   },
+   "properties": {
+    "claim_id": "C7675",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-08",
+    "place_id": "PL3534",
+    "location_name": "Ricklingen (Garbsen), Lower Saxony (1st Canadian Parachute Battalion (3rd Parachute Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "route at Ricklingen, west of Hanover (map label 8 Apr)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
    }
   },
   {
@@ -284949,6 +285113,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 558-559"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.0811,
+     52.6241
+    ]
+   },
+   "properties": {
+    "claim_id": "C7676",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-14",
+    "place_id": "PL0774",
+    "location_name": "Celle, Niedersachsen (1st Canadian Parachute Battalion (3rd Parachute Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "route reaches Celle (map label 14 Apr)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
    }
   },
   {
@@ -292254,6 +292459,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4089,
+     52.1638
+    ]
+   },
+   "properties": {
+    "claim_id": "C7679",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL3537",
+    "location_name": "Amersfoort, Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "label on the Grebbe Line front about Amersfoort (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Map 13 (The Western Netherlands, 1st Canadian Corps operations, 2-25 April 1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4373,
+     51.8874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7680",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL1630",
+    "location_name": "Tiel, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "label south of the Lek between Rhenen, Tiel and Zaltbommel (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Map 13 (The Western Netherlands, 1st Canadian Corps operations, 2-25 April 1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      9.1605,
      47.7664
     ]
@@ -292985,6 +293272,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 598"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3811,
+     53.1579
+    ]
+   },
+   "properties": {
+    "claim_id": "C7677",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-21",
+    "place_id": "PL3535",
+    "location_name": "Kolkhagen (Barnstedt), Lower Saxony (1st Canadian Parachute Battalion (3rd Parachute Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "route at Kolkhagen, south of Lüneburg (map label 21 Apr)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
    }
   },
   {
@@ -299839,6 +300167,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.753,
+     53.3689
+    ]
+   },
+   "properties": {
+    "claim_id": "C7678",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-006D",
+    "unit_name": "6th Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1945-04-30",
+    "place_id": "PL3536",
+    "location_name": "Bahlendorf (Boizenburg), Mecklenburg-Vorpommern (1st Canadian Parachute Battalion (3rd Parachute Brigade))",
+    "location_represents": "approach_route",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "crosses the Elbe; route at Bahlendorf beyond Lauenburg (map label 30 Apr)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.9135,
      53.3326
     ]
@@ -303276,6 +303645,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000331 situation 1200 hrs 1 May 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3583,
+     53.5095
+    ]
+   },
+   "properties": {
+    "claim_id": "C7681",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-05-01",
+    "place_id": "PL0714",
+    "location_name": "Aurich, Niedersachsen",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Armeeabteilung Straube label across the Emden-Wilhelmshaven peninsula, Aurich to Varel (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Map 14 (The Final Phase, 2nd Canadian Corps front, 23 April - 5 May 1945)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5852,
+     53.5505
+    ]
+   },
+   "properties": {
+    "claim_id": "C7682",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL3538",
+    "location_name": "Wesermünde (Bremerhaven), Bremen",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "elements east of the Weser about Wesermünde (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R668;R002",
+    "source_locator": "R668: Map 14 (The Final Phase, 2nd Canadian Corps front, 23 April - 5 May 1945)"
    }
   },
   {

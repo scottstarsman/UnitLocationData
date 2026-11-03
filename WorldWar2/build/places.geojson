@@ -14098,7 +14098,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -15278,7 +15278,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -32298,7 +32298,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -70298,6 +70298,166 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "place_id": "PL3531",
+    "name": "Gennep, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7392,
+     52.1363
+    ]
+   },
+   "properties": {
+    "place_id": "PL3532",
+    "name": "Ladbergen, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.9169,
+     52.2881
+    ]
+   },
+   "properties": {
+    "place_id": "PL3533",
+    "name": "Minden, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5065,
+     52.4283
+    ]
+   },
+   "properties": {
+    "place_id": "PL3534",
+    "name": "Ricklingen (Garbsen), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3811,
+     53.1579
+    ]
+   },
+   "properties": {
+    "place_id": "PL3535",
+    "name": "Kolkhagen (Barnstedt), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.753,
+     53.3689
+    ]
+   },
+   "properties": {
+    "place_id": "PL3536",
+    "name": "Bahlendorf (Boizenburg), Mecklenburg-Vorpommern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Mecklenburg-Vorpommern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4089,
+     52.1638
+    ]
+   },
+   "properties": {
+    "place_id": "PL3537",
+    "name": "Amersfoort, Utrecht",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Utrecht",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5852,
+     53.5505
+    ]
+   },
+   "properties": {
+    "place_id": "PL3538",
+    "name": "Wesermünde (Bremerhaven), Bremen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
     "claims_count": 1
    }
   }

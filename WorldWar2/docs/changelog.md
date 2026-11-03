@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## stacey-victory-campaign: Stacey, The Victory Campaign, remaining maps and sketches; map-row conflict sweep (3 November 2026)
+
+Eleventh commit of the approved Stacey pass (`R668`). Viewed the remaining maps and sketches: Map 9 (Ardennes crisis), Sketch 34 (threat across the Maas, mid-December 1944), Sketch 35 (Kapelsche Veer), Sketch 37 (Moyland Wood), Map 10 (Veritable), Sketch 38 (Hochwald Gap), Map 11 (Blockbuster), Sketches 40-44 (Rhineland, closing to the Rhine, Varsity, the Rhine left flank, Zutphen and Deventer), Map 12 (advance on the northern front), Map 13 (western Netherlands), Sketch 47 (advance across Germany), Sketch 49 (march to Wismar), Map 14 (final phase). Pages 474, 475, 510, 511, 545, 546, 656 and 657 are photographs and 702 is a table. Most map content repeats text rows already in the data; only facts with no row within a few days were added. Nothing deleted, no existing row changed.
+
+- 11 new map rows `C7672`-`C7682` at 0.3 (5 German, 6 Allied; blank parents; places `PL3531`-`PL3538`): the 190th Infantry Division opposite Cuijk and Boxmeer (mid-December 1944); the 1st Canadian Parachute Battalion route with the 6th Airborne Division (Ladbergen, Minden, Ricklingen, Celle, Kolkhagen, Bahlendorf, 1-30 April); the 88th German Corps at Amersfoort and the 30th German Corps near Tiel (Map 13); Armeeabteilung Straube (First Parachute Army) and elements of Army Blumentritt (Map 14).
+- Map-row conflict sweep over all Stacey rows `C7225`-`C7682` (same unit, within two days, farther apart than the precisions allow): 68 pairs, nearly all brigade-level rows against division points or movement over two days. Two new open points: roadmap 248 (4th Canadian Armoured, `C6663` map row against Stacey text rows at Sogel and Borger) and 249 (Armeeabteilung Straube map row against `C1238`). Scenario 128.
+
 ## stacey-victory-campaign: Stacey, The Victory Campaign, chapters XXII-XXIV and appendices (the German surrender, its aftermath, administration; 22 April - 8 May 1945) (3 November 2026)
 
 Tenth chapter group of the approved Stacey pass (`R668`, family `canada_ca`). Printed pages 589-645 and appendices A-G (pp. 647-667) read. Nothing deleted, no confidence changed on existing rows.

@@ -3252,3 +3252,7 @@ Roll 130 (NAID 267487470, 1278 frames) read in the German original on 3 November
 ## nara-microfilm: NARA T-315 roll 1725 (246th Infantry Division, Eastern Front 1943-44; 3 November 2026)
 
 Roll 1725 (1441 pages) checked in the German original on 3 November 2026: the target cards and 13 sample pages spread across the roll. The whole roll covers the Eastern Front (VI and LIII Corps, Vitebsk-Dukhovshchina area) from July 1943 to January 1944, outside the dataset's theatre and period. It was not read page by page. **No claims, places or references added; no existing row changed.** Reading notes private.
+
+## nara-microfilm: NARA T-315 roll 303 (5th Mountain Division 1943 / 5th Parachute Division 1944; 3 November 2026)
+
+Roll 303 (603 pages) read in the German original on 3 November 2026. The 5th Mountain Division part (1943, outside the period) was sampled. The 5th Parachute Division file (27 March-5 December 1944, pages 220-603) was read in full by OCR. It holds discipline, court, personnel and gas-defence papers. Its command-post headers give no place and mention no dated unit location. **No claims, places or references added; no existing row changed.** Reading notes private.

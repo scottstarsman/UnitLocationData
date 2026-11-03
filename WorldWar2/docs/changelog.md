@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## nara-microfilm: NARA T-311 roll 1 (Army Group B; 3 November 2026)
+
+Roll 1 (NAID 271845202, 1337 frames) read in the German original on 3 November 2026: all frames by OCR, the key report (frames 991-993) read in full. Reading notes private.
+
+- **New reference** `R801`.
+- **New claims** `C7142`-`C7143` (each note carries old value none, new value and reason): Army Group B headquarters moves on 19 August 1944 from La Roche-Guyon to 'W 2', identified as Margival (0.5); Fifth Panzer Army command post at Fontaine-l'Abbé on 19 August (0.5). Parent blank on both (old value none, new value blank, reason: no command relation from a single source).
+- **New place** `PL3318` Fontaine-l'Abbé (OpenStreetMap Nominatim, searched 3 November 2026); `PL0212` Margival reused.
+- **No existing row changed.** **Disagreement recorded** (roadmap point 225): `C0715` (19 August, La Roche-Guyon).
+- **Semantic scenario 107.**
+
 ## nara-microfilm: NARA T-354 roll 129 (2nd SS Panzer / 17th SS Panzergrenadier regimental files; 3 November 2026)
 
 Roll 129 (NAID 267486794, 675 frames) read in the German original on 2-3 November 2026 by OCR and triage, key frames read in full. Reading notes private.

@@ -1015,3 +1015,7 @@ Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next
 ### NARA T-315 roll 828 (2 November 2026)
 
 224. **26th Volksgrenadier Division, 19 December 1944 (open, 2 November 2026).** The division report of 5 January 1945 (`R799`) has the division advancing on Bastogne and taking Longvilly by 19 December (`C7136`), while the 12th Army Group map row `C4724` puts it near Dasburg, about 20 km east. The map row is kept (map rows never outrank text rows, but existing rows are not changed on conflict); candidate for lowering or retiring on Scott's decision.
+
+### NARA T-311 roll 1 (3 November 2026)
+
+225. **Army Group B headquarters, 19 August 1944 (open, 3 November 2026).** The army group report of 20 August 1944 (`R801`) has the headquarters leave La Roche-Guyon at 06.00 on 19 August for 'W 2' (Margival, `C7142`), while `C0715` keeps it at La Roche-Guyon on 19 August at 0.3. Existing row kept; candidate for re-dating to 18 August on Scott's decision.

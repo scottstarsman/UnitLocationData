@@ -47361,6 +47361,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.4025,
+     49.4353
+    ]
+   },
+   "properties": {
+    "claim_id": "C7142",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-08-19",
+    "place_id": "PL0212",
+    "location_name": "Margival (new army group headquarters 'W 2' (Wolfsschlucht II, Margival), reached about 17.00 after leaving La Roche-Guyon at 06.00)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Army Group B headquarters moves to Margival",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R801;R002",
+    "source_locator": "R801: frames 991-993 (NAID 271845202), report of 20 August 1944 on the C-in-C's drive of 19 August"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6926,
+     49.0913
+    ]
+   },
+   "properties": {
+    "claim_id": "C7143",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-08-19",
+    "place_id": "PL3318",
+    "location_name": "Fontaine-l'Abbé, Eure (Fifth Panzer Army command post at Fontaine-l'Abbé, 6 km east of Bernay)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifth Panzer Army command post at Fontaine-l'Abbé",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R801;R002",
+    "source_locator": "R801: frame 991 (NAID 271845202), report of 20 August 1944, order telephoned from Beauvais on 19 August"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.9286,
      48.7394
     ]

@@ -4158,7 +4158,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Picardie",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66038,6 +66038,26 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6926,
+     49.0913
+    ]
+   },
+   "properties": {
+    "place_id": "PL3318",
+    "name": "Fontaine-l'Abbé, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
     "claims_count": 1
    }
   }

@@ -1098,7 +1098,7 @@
     "precision_km": 25,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -7518,7 +7518,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Diekirch",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -7958,7 +7958,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Liège",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -21158,7 +21158,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -44518,7 +44518,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Liège",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -49718,7 +49718,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -50338,7 +50338,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -66318,7 +66318,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Diekirch",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66373,6 +66373,66 @@
    "properties": {
     "place_id": "PL3334",
     "name": "Odrimont (Lierneux), Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3983,
+     50.2341
+    ]
+   },
+   "properties": {
+    "place_id": "PL3335",
+    "name": "Verdenne (Marche-en-Famenne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6625,
+     50.2924
+    ]
+   },
+   "properties": {
+    "place_id": "PL3336",
+    "name": "Grandménil (Manhay), Luxembourg province",
+    "alt_names": "Grandmenil",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7791,
+     50.3324
+    ]
+   },
+   "properties": {
+    "place_id": "PL3337",
+    "name": "Erria (Lierneux), Liège",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## cole-ardennes: Cole, The Ardennes, second pass: German facts left from the first pass (chs. 6, 14, 16, 21-23) (3 November 2026)
+
+Second, complete pass of Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), approved by Scott on 3 November 2026. Reading notes private.
+
+- **New claims** `C7168`-`C7178` (each note quotes Cole's full sentence and carries old value none, new value and reason; inferred dates marked with old value, new value and reason): 116th Panzer Division at Bertogne 19 December, attacking Hotton 21 December and at Verdenne 24 December (0.7); 12th SS Panzer Division forward command post at Büllingen 19 December (0.5, Cole: 'it appears'); 2d SS Panzer Division takes Grandménil 25 December (0.7); 9th SS Panzer Division attacks Erria 27 December (0.5, 'two nights later'); LXVII Corps attack of 28 December: 246th Volksgrenadier Division from near Rocherath and 12th Volksgrenadier Division northwest of Wirtzfeld (0.7); 352d Volksgrenadier Division leaves Ettelbruck 24 December (0.7); Seventh Army headquarters at Wiltz about 22 December (0.5); 5th Parachute Division loses Bigonville 24 December (0.5). Parents blank on all rows.
+- **New places** `PL3335` Verdenne, `PL3336` Grandménil, `PL3337` Erria (OpenStreetMap Nominatim, searched 3 November 2026).
+- **Not added:** the 79th Volksgrenadier Division counterattack from Eschdorf on 24 December (p. 536) and the 167th Volksgrenadier Division at Lutrebois on 30 December, because both units are placeholders in `data/units.csv`; Scott can decide whether to promote them.
+- **No existing row changed.** The Wiltz row adds to roadmap point 229 (Seventh Army headquarters) and the Bertogne row to point 227 (116th Panzer Division map row `C4710`).
+- **Semantic scenario 112.**
+
 ## cole-ardennes: Cole, The Ardennes: Sixth Panzer Army, II SS Panzer Corps and OKW reserve (chs. 6, 23, 25) (3 November 2026)
 
 Hugh M. Cole, *The Ardennes: Battle of the Bulge* (CMH 1965, public domain), read in full from the HyperWar transcription on 3 November 2026 (Scott approved the reading on 3 November 2026). Reading notes private.

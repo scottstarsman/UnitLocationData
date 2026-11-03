@@ -74,11 +74,11 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 7161, dated 1944-06-06 to 1945-05-10 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 7172, dated 1944-06-06 to 1945-05-10 |
 | units in `data/units.csv` | 388: 321 active (have claims), 67 placeholders |
 | claim files (one per active unit) | 321 |
 | conflict groups / claims in a group | 30 / 64 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 3319 / 9 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 3322 / 9 |
 | operations / operation relations | 67 / 14 |
 | command relations (`data/command_relations.csv`) | 1065 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2683 |
@@ -89,15 +89,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 1 / 0 |
 | controlled vocabularies in `schema/vocabularies.json` | 42 |
 
-Claims by nationality: US 2882, Germany 2719, UK 895, Canada 330, France 235, Poland 74, Belgium 13, Netherlands 8, Czechoslovakia 5.
+Claims by nationality: US 2882, Germany 2730, UK 895, Canada 330, France 235, Poland 74, Belgium 13, Netherlands 8, Czechoslovakia 5.
 
-Claims by echelon: division 4870, corps 1343, army 590, brigade 195, army_group 95, regiment/battle_group 36, other 22, battalion 10.
+Claims by echelon: division 4880, corps 1343, army 591, brigade 195, army_group 95, regiment/battle_group 36, other 22, battalion 10.
 
-Claims by branch: Army 5083, Armoured 1392, Waffen-SS 289, Airborne 211, Luftwaffe 186.
+Claims by branch: Army 5087, Armoured 1395, Waffen-SS 292, Airborne 211, Luftwaffe 187.
 
-Claims by event type: other 3706, hq_observation 1481, attack 469, defense 268, hq_move 204, capture 195, command_change 184, arrival 130, regroup 127, relocation 102, landing 60, subordinate_assignment 58, withdrawal 58, counterattack 49, surrender 39, activation 18, redesignation 8, destruction 5.
+Claims by event type: other 3706, hq_observation 1483, attack 474, defense 269, hq_move 204, capture 196, command_change 184, arrival 131, regroup 127, relocation 102, landing 60, withdrawal 59, subordinate_assignment 58, counterattack 49, surrender 39, activation 18, redesignation 8, destruction 5.
 
-Claims by status: preferred 7120, alternate 25, disputed 16. Claims by confidence: 0.3 2448, 0.5 3985, 0.7 665, 0.9 63.
+Claims by status: preferred 7131, alternate 25, disputed 16. Claims by confidence: 0.3 2448, 0.5 3989, 0.7 672, 0.9 63.
 
 Placeholder units by nationality: Germany 62, Allied 3, US 2.
 
@@ -109,7 +109,7 @@ Evidence roles of relation links: observed_during 1308, asserts_start 1073, asse
 
 References by source family: us_army_cmh 239, wikipedia 237, lexikon_wehrmacht_de 196, ww2byday_com 33, fms_german_manuscript 20, nara_captured_german_records 20, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, geonames 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: encyclopedia 237, reference_compilation 230, official_history 182, assignment_table 65, archive_document 49, news_or_web_article 19, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 3, other 2.
 
-Places by kind: point 3215, area 86, line 18.
+Places by kind: point 3218, area 86, line 18.
 
 <!-- counts:end -->
 

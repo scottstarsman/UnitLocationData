@@ -5798,7 +5798,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Brittany",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -73898,6 +73898,46 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.911,
+     48.4036
+    ]
+   },
+   "properties": {
+    "place_id": "PL3711",
+    "name": "Quintin, Côtes-d'Armor",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.746,
+     48.364
+    ]
+   },
+   "properties": {
+    "place_id": "PL3712",
+    "name": "Huelgoat, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
     "claims_count": 1
    }
   }

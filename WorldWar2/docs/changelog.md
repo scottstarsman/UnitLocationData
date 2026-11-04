@@ -3822,3 +3822,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims:** `C8210` (corps command post Les Chéris, 6 June 1944, 0.5) and `C8211` (Pont-Brocard, 10 June 1944, 0.5); parents blank. Place `PL3710`.
 - **Corroborations (no confidence raised, FMS family):** `R830` appended to `C0052`, `C0065`, `C0089`, `C0802`, `C0803`, `C0804`, `C0763`.
 - **Notes only:** losses of 300-400 men a day. Roadmap 297-298. Scenario 158.
+
+## fms-fold3-german-2: FMS B-240 German original with English check, Blauensteiner, II Parachute Corps early May-6 June 1944 (4 November 2026)
+
+- **Source:** FMS B-240 (`R831`, new; not previously a reference), German pages 4-7 primary, English pages 57-60 checked; editor's summary (Valentine) in notes only.
+- **New claims:** `C8212` (corps at Quintin), `C8213` (3rd Parachute Division at Huelgoat), `C8214` (5th Parachute Division at Rennes), all 0.3 with the inferred date 1944-06-06 (old value none; reason: positions held from early May until the move order of 6 June, and no campaign covers May 1944); parents blank. Places `PL3711`-`PL3712`.
+- **Corroborations (no confidence raised, FMS family):** `R831` appended to `C8210`, `C0052` (move order of 6 June).
+- **Notes only:** strengths and equipment. Roadmap 299-300. Scenario 159.

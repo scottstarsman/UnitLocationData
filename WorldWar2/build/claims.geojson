@@ -269941,8 +269941,8 @@
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R813;R002",
-    "source_locator": "R806: English p.20, Sketch 6; R813: German pp.12-13 (Fold3 images 35-36)"
+    "reference_ids": "R806;R813;R826;R002",
+    "source_locator": "R806: English p.20, Sketch 6; R813: German pp.12-13 (Fold3 images 35-36); R826: German p.2 (Fold3 page 4) and English p.2 (Fold3 page 24)"
    }
   },
   {
@@ -270556,8 +270556,8 @@
     "location_date": "1945-03-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R817;R002",
-    "source_locator": "R806: English p.20; R817: German p.1 (Fold3 image 5)"
+    "reference_ids": "R806;R817;R826;R002",
+    "source_locator": "R806: English p.20; R817: German p.1 (Fold3 image 5); R826: German p.5 (Fold3 page 7) and English p.5 (Fold3 page 27)"
    }
   },
   {
@@ -283225,8 +283225,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R668;R814;R817;R002",
-    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71); R817: German pp.3-4 (Fold3 images 7-8)"
+    "reference_ids": "R543;R668;R814;R817;R826;R002",
+    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71); R817: German pp.3-4 (Fold3 images 7-8); R826: German p.6 (Fold3 page 8) and English p.6 (Fold3 page 28)"
    }
   },
   {
@@ -283266,8 +283266,8 @@
     "location_date": "1945-03-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R814;R002",
-    "source_locator": "R543: p. 314; R814: German pp.11-13 (Fold3 images 70-72)"
+    "reference_ids": "R543;R814;R826;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-13 (Fold3 images 70-72); R826: German p.6 (Fold3 page 8) and English p.6 (Fold3 page 28)"
    }
   },
   {
@@ -283307,8 +283307,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R814;R817;R822;R002",
-    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9); R822: German p.-5- (Fold3 page 83)"
+    "reference_ids": "R543;R814;R817;R822;R826;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9); R822: German p.-5- (Fold3 page 83); R826: German p.5 (Fold3 page 7) and English p.6 (Fold3 page 28)"
    }
   },
   {
@@ -288031,6 +288031,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6149,
+     51.8383
+    ]
+   },
+   "properties": {
+    "claim_id": "C8189",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-03-27",
+    "place_id": "PL3543",
+    "location_name": "Bocholt, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "II Parachute Corps forced back to a resistance line about 3 km south and east of Bocholt; its command post becomes the front line",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.9 (Fold3 page 11) and English p.9 (Fold3 page 31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5875,
      51.0883
     ]
@@ -288186,8 +288227,8 @@
     "location_date": "1945-03-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R544;R002",
-    "source_locator": "R543: p. 302, 301; R544: p. 338"
+    "reference_ids": "R543;R544;R826;R002",
+    "source_locator": "R543: p. 302, 301; R544: p. 338; R826: German p.1 (Fold3 page 3) and English p.1 (Fold3 page 23), cover letter"
    }
   },
   {
@@ -289261,6 +289302,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0048,
+     52.0761
+    ]
+   },
+   "properties": {
+    "claim_id": "C8190",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-03-29",
+    "place_id": "PL3692",
+    "location_name": "Ahaus, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "II Parachute Corps falls back fighting to the general line Neede-Alstätte-Ahaus",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Plunder",
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.9 (Fold3 page 11) and English p.10 (Fold3 page 32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.15,
      50.6833
     ]
@@ -290238,6 +290320,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: Skizze 3 (Fold3 image 130), German p.19 (Fold3 image 78)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0264,
+     52.2085
+    ]
+   },
+   "properties": {
+    "claim_id": "C8191",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-03-31",
+    "place_id": "PL3699",
+    "location_name": "Gronau (Westfalen), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "II Parachute Corps command post in a hamlet near Gronau",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.10 (Fold3 page 12) and English p.10 (Fold3 page 32)"
    }
   },
   {
@@ -295814,6 +295937,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R822;R002",
     "source_locator": "R822: German p.-14- (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2959,
+     52.3927
+    ]
+   },
+   "properties": {
+    "claim_id": "C8192",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-04-03",
+    "place_id": "PL3693",
+    "location_name": "Emsbüren, Lower Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "II Parachute Corps command post moved under enemy pressure to Emsbüren",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.10 (Fold3 page 12) and English p.10 (Fold3 page 32)"
    }
   },
   {
@@ -302504,6 +302668,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7072,
+     53.1009
+    ]
+   },
+   "properties": {
+    "claim_id": "C8193",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-04-11",
+    "place_id": "PL3694",
+    "location_name": "Hollenermoor (Saterland), Lower Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "II Parachute Corps command post in the school at \"Hollener-Moos\"",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-11",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.11 (Fold3 page 13) and English p.12 (Fold3 page 34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.6763,
      52.0633
     ]
@@ -303358,6 +303563,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R822;R002",
     "source_locator": "R822: German p.-21- (Fold3 page 99)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8592,
+     53.0206
+    ]
+   },
+   "properties": {
+    "claim_id": "C8195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-12",
+    "place_id": "PL3500",
+    "location_name": "Friesoythe, Lower Saxony",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "7th Parachute Division holds the Küsten Canal sector Friesoythe-Vehne-Moos",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.12 (Fold3 page 14) and English p.13 (Fold3 page 35)"
    }
   },
   {
@@ -310654,8 +310900,8 @@
     "location_date": "1945-04-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 559"
+    "reference_ids": "R668;R826;R002",
+    "source_locator": "R668: p. 559; R826: German p.11 (Fold3 page 13) and English p.12 (Fold3 page 34)"
    }
   },
   {
@@ -313485,6 +313731,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7613,
+     53.2809
+    ]
+   },
+   "properties": {
+    "claim_id": "C8194",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-04-21",
+    "place_id": "PL3695",
+    "location_name": "Jübberde (Uplengen), Lower Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "II Parachute Corps command post in the school at Jübberde",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.12 (Fold3 page 14) and English p.12 (Fold3 page 34)"
    }
   },
   {
@@ -324357,6 +324644,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.8559,
+     54.1684
+    ]
+   },
+   "properties": {
+    "claim_id": "C8196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-05-01",
+    "place_id": "PL3696",
+    "location_name": "Nortorf, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "II Parachute Corps staff, corps troops and a third of 7th Parachute Division cross the Elbe; corps command post at Nortorf",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.9,
      48.3167
     ]
@@ -326482,6 +326810,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 613"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.6311,
+     54.4209
+    ]
+   },
+   "properties": {
+    "claim_id": "C8197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-05-05",
+    "place_id": "PL3697",
+    "location_name": "Brekendorf, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "II Parachute Corps moves to (Gross) Breckendorf south-east of Schleswig, where the capitulation reaches it",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1395,
+     53.8972
+    ]
+   },
+   "properties": {
+    "claim_id": "C8198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-05-05",
+    "place_id": "PL3698",
+    "location_name": "Brunsbüttel, Schleswig-Holstein",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "two thirds of 7th Parachute Division remain about Brunsbüttelkoog at the capitulation",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R826;R002",
+    "source_locator": "R826: German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)"
    }
   },
   {

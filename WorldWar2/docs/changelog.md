@@ -3785,3 +3785,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3681`-`PL3691`.
 - **Not entered:** uncertain place names and unnamed French units (roadmap 285).
 - **Tests:** scenario 153. Next free: `C8189`, `PL3692`, `R826`, `G064`, scenario 154, roadmap 286.
+
+## fms-fold3-german-2: FMS B-674 German original with English check, Meindl, II Parachute Corps 10 March-10 May 1945 (4 November 2026)
+
+- **Source:** FMS B-674 (`R826`, new; not previously a reference), German pages 1-20 primary (very faint), English translation (Fold3 pages 21-41) used to check and to read faint command-post names and dates (recorded in row notes and private notes); Geyer supplement of 14 September 1947.
+- **New claims:** `C8189`-`C8198` (10 rows; II Parachute Corps 8, 7th Parachute Division 2), parents blank. Inferred values: `C8193` place Hollenermoor (Saterland) for "Hollener-Moos" (old none, new PL3694, 0.3); `C8197` place Brekendorf for "Gr. Breckendorf" (old none, new PL3697, 0.3); `C8195` date 1945-04-12 (old none) from the order of the text.
+- **Corroborations (no confidence raised, FMS family):** `R826` appended to `C7716`, `C7717`, `C1181`, `C1182`, `C1183`, `C1192`, `C7603`.
+- **Places:** `PL3692`-`PL3699` (Ahaus, Emsbüren, Hollenermoor, Jübberde, Nortorf, Brekendorf, Brunsbüttel, Gronau (Westfalen)).
+- **Not entered:** [?] readings (Ostendorf, Niederdorf, Uploh, "Jasenburg", "Edderrecht", "Siegen"); strengths (notes only); 21st Parachute Division (no unit file).
+- **Roadmap:** 286-288. Scenario 154.

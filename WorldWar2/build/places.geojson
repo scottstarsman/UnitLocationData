@@ -7518,7 +7518,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Diekirch",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -11258,7 +11258,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -11778,7 +11778,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Vianden",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -51438,7 +51438,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -66338,7 +66338,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -74659,6 +74659,306 @@
     "country": "FR",
     "region": "Centre-Val de Loire",
     "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5716,
+     49.9211
+    ]
+   },
+   "properties": {
+    "place_id": "PL3749",
+    "name": "Sülm, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1353,
+     49.9531
+    ]
+   },
+   "properties": {
+    "place_id": "PL3750",
+    "name": "Putscheid, Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Vianden",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0814,
+     49.9492
+    ]
+   },
+   "properties": {
+    "place_id": "PL3751",
+    "name": "Hoscheid (Parc Hosingen), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1231,
+     49.9625
+    ]
+   },
+   "properties": {
+    "place_id": "PL3752",
+    "name": "Weiler (Putscheid), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Vianden",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.882,
+     49.9405
+    ]
+   },
+   "properties": {
+    "place_id": "PL3753",
+    "name": "Nothum (Lac de la Haute-Sûre), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Wiltz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.857,
+     49.9522
+    ]
+   },
+   "properties": {
+    "place_id": "PL3754",
+    "name": "Berlé (Winseler), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Wiltz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7075,
+     49.9491
+    ]
+   },
+   "properties": {
+    "place_id": "PL3755",
+    "name": "Losange (Vaux-sur-Sûre), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7478,
+     49.9346
+    ]
+   },
+   "properties": {
+    "place_id": "PL3756",
+    "name": "Villers-la-Bonne-Eau (Bastogne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8428,
+     49.9734
+    ]
+   },
+   "properties": {
+    "place_id": "PL3757",
+    "name": "Doncols (Winseler), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Wiltz",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7876,
+     49.9314
+    ]
+   },
+   "properties": {
+    "place_id": "PL3758",
+    "name": "Harlange (Lac de la Haute-Sûre), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Wiltz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8876,
+     50.0138
+    ]
+   },
+   "properties": {
+    "place_id": "PL3759",
+    "name": "Derenbach (Wincrange), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7799,
+     49.914
+    ]
+   },
+   "properties": {
+    "place_id": "PL3760",
+    "name": "Dodenburg, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0525,
+     49.9739
+    ]
+   },
+   "properties": {
+    "place_id": "PL3761",
+    "name": "Consthum (Parc Hosingen), Luxembourg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7608,
+     49.9413
+    ]
+   },
+   "properties": {
+    "place_id": "PL3762",
+    "name": "Lutremange (Bastogne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6867,
+     49.9438
+    ]
+   },
+   "properties": {
+    "place_id": "PL3763",
+    "name": "Hompré (Vaux-sur-Sûre), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
    }
   }
  ]

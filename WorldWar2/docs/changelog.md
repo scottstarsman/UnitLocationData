@@ -3937,3 +3937,7 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Conflict kept:** `C8214` (B-240: Rennes, May) against Tressaint/Dinan (B-820); both rows kept, roadmap 323. No conflict group needed (different dates).
 - **Open:** roadmap 323-324. **Tests:** scenario 171. Next free: `C8284`, `PL3747`, `R842`, `G065`, scenario 172, roadmap 325.
 
+
+## fms-fold3-german-2: 5th Parachute Division Rennes and Dinan as a move (4 November 2026)
+
+- Scott decided that `C8214` (Rennes, 15 May 1944, B-240) and `C8281` (Tressaint near Dinan, 6 June 1944, B-820) are successive positions, a move, not a conflict. Notes on both rows updated; roadmap 323 marked resolved (old: conflict; new: move; reason: Scott's decision). No values, confidences or IDs changed.

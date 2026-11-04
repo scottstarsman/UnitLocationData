@@ -4155,3 +4155,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Claim-key exception:** `C0936`/`C8485`.
 - **Places:** `PL3828`-`PL3836` (Nominatim, `R002`).
 - Roadmap 342 updated; scenario 194. Next free: `C8488`, `PL3837`, `R859`, `CR1084`, `G073`, scenario 195, roadmap 346.
+
+## fms-fold3-german-2: B-709 maps (Anlagen 2-8, map-derived rows under R855) (4 November 2026)
+
+- **Source:** `R855` map appendices, Anlagen 2-8 (Fold3 viewer pages 199-200 and 202-223; page 201 is a slate), hand-drawn and signed by Reuther; read from images saved privately with Scott's approval (never committed). Anlage 3 is an organization diagram with no positions; Anlage 6 is an overview at 1:250,000 (the appendix index says 1:100,000). R855 preface updated: old value "the sketches and maps (about 199-222) and the appendix sketches 2-8 unread", new value "map appendices read 4 November 2026"; reason: this reading.
+- **New claims (old value none; all map-derived, confidence 0.3):** `C8488` Gruppe Witte Düsseldorf from 29 Mar; `C8489` LXXXI Corps CP near Burscheid/Dabringhausen 10 Mar; `C8490` LXIII Corps CP north of the Ruhr 10 Mar; `C8491` 59th Infantry Division at Hitdorf 10 Mar; `C8492` Panzer Lehr moving east across the Wupper 10 Mar; `C8493` 3rd Parachute Division Troisdorf 10 Apr; `C8494` Dhünn line south of Burscheid 14 Apr; `C8495` remnants north of Burscheid 15 Apr; `C8496` 363rd flag at Hilden 15 Apr; `C8497` 353rd remnants towards Hückeswagen 13 Apr (alternate); `C8498` 353rd near Winterscheid 8 Apr; `C8499` 183rd VGD ? at Wiehl 10 Apr; `C8500` LVIII Panzer Corps by Waldbröl 8 Apr.
+- **Map-support citations (confidence unchanged; a map never raises a row):** `C8477` (confirms the Wahnerheide reading), `C8479`, `C8475`, `C8474`, `C8476`, `C8484`, `C8482`, `C8428`, `C8429`, `C8432`, `C8431`, `C8275` (`R855` added to its reference_ids).
+- **Conflict group:** G073 `C8480` (text, Lindlar, preferred, unchanged) vs `C8497` (map, east of Wermelskirchen, alternate); conflict_group_id on `C8480` old value blank, new value G073.
+- **Places:** `PL3837` Troisdorf, `PL3838` Burscheid, `PL3839` Hilden, `PL3840` Hückeswagen, `PL3841` Winterscheid, `PL3842` Wiehl (Nominatim, `R002`).
+- No air, naval or company-level units are drawn; nothing entered by domain.
+- Roadmap 346; scenario 195. Next free: `C8501`, `PL3843`, `R859`, `CR1084`, `G074`, scenario 196, roadmap 347.

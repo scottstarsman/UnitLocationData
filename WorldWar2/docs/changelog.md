@@ -3910,3 +3910,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 
 - **Fix:** the local verification script, old value `UnitLocationData-tools/run_checks.sh` (outside the repo; piped every step through `grep`/`tail`, so it exited 0 even when `validate.py` reported errors), new value `scripts/run_checks.sh` in the repo (`set -u -o pipefail`; each step's own exit status is recorded and any failure ends with `CHECKS FAILED: ...` and exit 1). Steps: validate, check_json_fields, semantic_tests, build --check, build_references --check, review_sample --check, check_coordinates, audit_command_location, audit_temporal_relationships, check_claim_ids (when origin/main is available). The tools copy is now a wrapper that calls it.
 - **Proof:** a temporary row dated 1938-05-15 (`C8214`) made validate, semantic_tests and build --check fail and the script exit 1; after reverting the row it prints `ALL CHECKS PASSED` and exits 0. No data changed.
+
+## fms-fold3-german-2: FMS B-249 German original, von Zangen, Fifteenth Army in northern France and Holland 28 August-10 November 1944 (4 November 2026)
+
+- **Source:** FMS B-249 (`R839`, new; not previously a reference, only named in the texts of `R771` and `R837`), German original read in full (Fold3 images 1-98), English translation (images 99-188) only spot-checked; signed 15 November 1945 [?]. Parts III-V were submitted separately as B-475 (`R771`).
+- **New claims (parents blank):** Fifteenth Army command posts `C8262` Tourcoing 28 August, `C8263` Wondelgem 4 September, `C8264` Middelburg 6 September; LXXXIX Corps `C8265` Aire-sur-la-Lys 1 September, `C8266` Schoondijke 16 September; LXXXVI Corps `C8267` Bernâtre 2 September, `C8268` Waregem 6 September, `C8269` Eeklo 8 September (0.3, [?] reading; map agrees); 59th Division `C8270` Béthune 2 September, `C8271` Oudenaarde 6 September; 712th Division `C8272` Avelgem 6 September; 70th Division `C8273` Gent 6 September, `C8274` 's-Heer Arendskerke about 20 October (0.3, inferred day). 0.5 unless stated.
+- **New places:** `PL3737`-`PL3744` (Tourcoing, Wondelgem, Aire-sur-la-Lys, Bernâtre, Waregem, Avelgem, Oudenaarde, Béthune; Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R839` appended to `C8237`, `C8256`, `C8257`, `C7310`, `C1809` (Dunkirk handed over 9 May 1945), `C1036`.
+- **Not entered as preferred:** Boulogne held "to about mid-November" (roadmap 319b). Sketch-map labels used only as support or at 0.3. No conflict group needed.
+- **Open:** roadmap 319-320. **Tests:** scenario 169. Next free: `C8275`, `PL3745`, `R840`, `G065`, scenario 170, roadmap 321.
+

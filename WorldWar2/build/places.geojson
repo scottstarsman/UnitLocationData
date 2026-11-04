@@ -12218,7 +12218,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -15698,7 +15698,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "East Flanders",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -40918,7 +40918,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -67718,7 +67718,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "East Flanders",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -67978,7 +67978,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -74418,6 +74418,166 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1606,
+     50.7235
+    ]
+   },
+   "properties": {
+    "place_id": "PL3737",
+    "name": "Tourcoing, Nord",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.7124,
+     51.0886
+    ]
+   },
+   "properties": {
+    "place_id": "PL3738",
+    "name": "Wondelgem (Gent), East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "East Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3956,
+     50.6384
+    ]
+   },
+   "properties": {
+    "place_id": "PL3739",
+    "name": "Aire-sur-la-Lys, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0907,
+     50.1973
+    ]
+   },
+   "properties": {
+    "place_id": "PL3740",
+    "name": "Bernâtre, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4324,
+     50.8868
+    ]
+   },
+   "properties": {
+    "place_id": "PL3741",
+    "name": "Waregem, West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4497,
+     50.7775
+    ]
+   },
+   "properties": {
+    "place_id": "PL3742",
+    "name": "Avelgem, West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6041,
+     50.8434
+    ]
+   },
+   "properties": {
+    "place_id": "PL3743",
+    "name": "Oudenaarde, East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "East Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.6389,
+     50.5309
+    ]
+   },
+   "properties": {
+    "place_id": "PL3744",
+    "name": "Béthune, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
     "claims_count": 1
    }
   }

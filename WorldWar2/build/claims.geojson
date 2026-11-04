@@ -56709,6 +56709,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.1606,
+     50.7235
+    ]
+   },
+   "properties": {
+    "claim_id": "C8262",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-28",
+    "place_id": "PL3737",
+    "location_name": "Tourcoing, Nord",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifteenth Army headquarters at Tourcoing north-east of Lille when von Zangen takes command",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.3 (Fold3 page 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.3813,
      49.0142
     ]
@@ -60759,8 +60800,8 @@
     "location_date": "1944-08-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R836;R002",
-    "source_locator": "R836: German p.25 (Fold3 page 32)"
+    "reference_ids": "R836;R839;R002",
+    "source_locator": "R836: German p.25 (Fold3 page 32); R839: German p.15 (Fold3 page 23)"
    }
   },
   {
@@ -61465,6 +61506,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3956,
+     50.6384
+    ]
+   },
+   "properties": {
+    "claim_id": "C8265",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL3739",
+    "location_name": "Aire-sur-la-Lys, Pas-de-Calais",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXIX Corps command post at Aire-sur-la-Lys while its divisions are freed from the coast and sent toward Arras and Douai",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.18 (Fold3 page 26)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3176,
      50.5424
     ]
@@ -62032,6 +62114,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R838;R002",
     "source_locator": "R838: German p.49 (Fold3 page 123)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0907,
+     50.1973
+    ]
+   },
+   "properties": {
+    "claim_id": "C8267",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL3740",
+    "location_name": "Bernâtre, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVI Corps command post at Bernâtre while it links with LXVII Corps on the line Ailly-Brucamps-Domart-Bernaville",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.19 (Fold3 page 27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.6389,
+     50.5309
+    ]
+   },
+   "properties": {
+    "claim_id": "C8270",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL3744",
+    "location_name": "Béthune, Pas-de-Calais",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the 59th Infantry Division reaches Lillers-Béthune-La Bassée with two regimental groups and goes over to the defence against stronger enemy forces",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.18 (Fold3 page 26)"
    }
   },
   {
@@ -63221,6 +63385,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R838;R002",
     "source_locator": "R838: German p.56 (Fold3 page 130)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.7124,
+     51.0886
+    ]
+   },
+   "properties": {
+    "claim_id": "C8263",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL3738",
+    "location_name": "Wondelgem (Gent), East Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifteenth Army command post moves from Tourcoing via Gent to Wondelgem north-west of Gent after heavy bombing",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.23 (Fold3 page 31)"
    }
   },
   {
@@ -67287,6 +67492,211 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.6137,
+     51.4997
+    ]
+   },
+   "properties": {
+    "claim_id": "C8264",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL0620",
+    "location_name": "Middelburg, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Fifteenth Army command post moves in the night 5/6 September, after a short halt at Vlissingen, to Middelburg on Walcheren",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.40 (Fold3 page 48)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4324,
+     50.8868
+    ]
+   },
+   "properties": {
+    "claim_id": "C8268",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL3741",
+    "location_name": "Waregem, West Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVI Corps command post at Waregem as the corps attacks across the Scheldt either side of Oudenaarde",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.33 (Fold3 page 41)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6041,
+     50.8434
+    ]
+   },
+   "properties": {
+    "claim_id": "C8271",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL3743",
+    "location_name": "Oudenaarde, East Flanders",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "the 59th Infantry Division attacks across the Scheldt at and south of Oudenaarde, gaining the east bank only briefly",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.33 (Fold3 page 41)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4497,
+     50.7775
+    ]
+   },
+   "properties": {
+    "claim_id": "C8272",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL3742",
+    "location_name": "Avelgem, West Flanders",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "the 712th Infantry Division, marching via Menen, gains bridgeheads on the east bank of the Scheldt at Avelgem and Berchem",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.33 (Fold3 page 41)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.725,
+     51.0538
+    ]
+   },
+   "properties": {
+    "claim_id": "C8273",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL0795",
+    "location_name": "Ghent (Gent), East Flanders",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the 70th Infantry Division, under the army, blocks the Lys and the Scheldt on both sides of Gent and fights enemy tanks",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.40 (Fold3 page 48)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -67729,8 +68139,8 @@
     "location_date": "1944-09-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R838;R002",
-    "source_locator": "R838: German p.61 (Fold3 page 135)"
+    "reference_ids": "R838;R839;R002",
+    "source_locator": "R838: German p.61 (Fold3 page 135); R839: German p.34 (Fold3 page 42)"
    }
   },
   {
@@ -68387,6 +68797,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R807;R811;R002",
     "source_locator": "R807: English p.7, German p.7; R811: German p.10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5665,
+     51.191
+    ]
+   },
+   "properties": {
+    "claim_id": "C8269",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL3401",
+    "location_name": "Eecloo (Eeklo), East Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVI Corps command post at Eeklo while it holds the blocking line either side of Gent",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.34 (Fold3 page 42)"
    }
   },
   {
@@ -73387,8 +73838,8 @@
     "location_date": "1944-09-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 332, 335-6"
+    "reference_ids": "R668;R839;R002",
+    "source_locator": "R668: pp. 332, 335-6; R839: German p.57 (Fold3 page 65)"
    }
   },
   {
@@ -73715,8 +74166,8 @@
     "location_date": "1944-09-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R838;R002",
-    "source_locator": "R838: German p.65 (Fold3 page 139)"
+    "reference_ids": "R838;R839;R002",
+    "source_locator": "R838: German p.65 (Fold3 page 139); R839: German p.42 (Fold3 page 50)"
    }
   },
   {
@@ -76177,6 +76628,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.11-12 (Fold3 image 17-18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.556,
+     51.3536
+    ]
+   },
+   "properties": {
+    "claim_id": "C8266",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-16",
+    "place_id": "PL3414",
+    "location_name": "Schoondijke (Sluis), Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXXXIX Corps takes command of the two Scheldt fortresses with its command post first at Schoondijke, then Middelburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.44 (Fold3 page 52)"
    }
   },
   {
@@ -112346,6 +112838,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.8234,
+     51.492
+    ]
+   },
+   "properties": {
+    "claim_id": "C8274",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-20",
+    "place_id": "PL2061",
+    "location_name": "'s-Heer Arendskerke, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "with Walcheren flooded, the 70th Infantry Division moves its command post to 's-Heer Arendskerke south-west of Goes",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R839;R002",
+    "source_locator": "R839: German p.52 (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -128491,8 +129024,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R443;R228;R002;R668",
-    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407"
+    "reference_ids": "R443;R228;R839;R002;R668",
+    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61)"
    }
   },
   {
@@ -335008,8 +335541,8 @@
     "location_date": "1945-05-09",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R570;R716;R002",
-    "source_locator": "R570: p. 477"
+    "reference_ids": "R570;R716;R839;R002",
+    "source_locator": "R570: p. 477; R839: German p.57 (Fold3 page 65)"
    }
   },
   {

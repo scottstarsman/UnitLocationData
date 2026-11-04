@@ -3920,3 +3920,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Not entered as preferred:** Boulogne held "to about mid-November" (roadmap 319b). Sketch-map labels used only as support or at 0.3. No conflict group needed.
 - **Open:** roadmap 319-320. **Tests:** scenario 169. Next free: `C8275`, `PL3745`, `R840`, `G065`, scenario 170, roadmap 321.
 
+## fms-fold3-german-2: FMS B-508 German original, Lackner, 2nd Parachute Division east of the Rhine and in the Ruhr pocket 8 March-16 April 1945 (4 November 2026)
+
+- **Source:** FMS B-508 (`R840`, new; no earlier reference), German only (no English translation in the file), undated (review stamp 13 May 1947 [?]; index 17 March 1951); Fold3 viewer pages 11-32 read in full.
+- **New claims (2nd Parachute Division, parents blank):** `C8275` Wesel-Uerdingen sector about 9 March (0.3), `C8276` Ruhr mouth-Uerdingen 16 March, `C8277` north-east of Bottrop 29 March, `C8278` behind the Rhine-Herne canal at Essen 1 April, `C8279` south of the Ruhr Steele-Witten 10 April, `C8280` overrun at Hattingen-Hasslinghausen [?] 16 April (0.5 unless stated).
+- **New place:** `PL3745` Duisburg (Nominatim).
+- **Corroborations:** none; no existing row matches closely enough (roadmap 321). Map pages not used for rows.
+- **Open:** roadmap 321-322. **Tests:** scenario 170. Next free: `C8281`, `PL3746`, `R841`, `G065`, scenario 171, roadmap 323.
+

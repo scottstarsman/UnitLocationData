@@ -3843,3 +3843,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claim:** `C8221` (corps commander reports at Elbeuf on the Seine, about 25 August 1944; 0.3; inferred date old none, new 1944-08-25, day illegible), parent blank. No new places.
 - **Corroborations (no confidence raised, FMS family):** `R833` appended to `C0745`, `C0746`, `C0747` (break-out of 19-20 August over the Dives toward Coudehard).
 - **Not entered:** uncertain readings (roadmap 304-305). Scenario 161.
+
+## fms-fold3-german-2: FMS B-101 English translation, Hitzfeld, LXVII Corps 26 January-21 March 1945 (4 November 2026)
+
+- **Source:** FMS B-101 (`R834`, new; not previously a reference), English translation only, no German original (Fold3 pages 62-131; index Höhne 19 September 1950).
+- **New claims (LXVII Corps, parent blank):** `C8222` Kronenburg 26 January (0.3, [?] reading; date set to the report's opening date, old none, new 1945-01-26), `C8223` Brück on the Ahr 7 March (0.5), `C8224` Rheinbrohl 10 March (0.5), `C8225` Altwied 12 March (0.5), `C8226` Neuwied about 19 March (0.3; inferred date old none, new 1945-03-19, day read 19 or 16).
+- **New places:** `PL3713` Kronenburg, `PL3714` Brück (Ahrbrück), `PL3715` Altwied, `PL3716` Rheinbrohl, `PL3717` Neuwied (Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R834` appended to `C1160` (Remagen bridgehead to LXVII Corps at 0100 on 7 March), `C1169` (272nd VGD), `C1167` (26th VGD) opposite the Remagen bridgehead.
+- **Not entered:** units without ids and uncertain command posts (roadmap 306-307). Strengths in the private notes only. Scenario 162.

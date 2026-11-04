@@ -218700,6 +218700,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4775,
+     50.3639
+    ]
+   },
+   "properties": {
+    "claim_id": "C8222",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-26",
+    "place_id": "PL3713",
+    "location_name": "Kronenburg (Dahlem), Nordrhein-Westfalen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps under the Fifteenth Army with its command post at Kronenburg [?] at the start of the West Wall fighting",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R834;R002",
+    "source_locator": "R834: English p.5 (Fold3 page 72)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8101,
      50.5447
     ]
@@ -269121,8 +269162,8 @@
     "location_date": "1945-03-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R540;R001",
-    "source_locator": "R540: p. 210"
+    "reference_ids": "R540;R834;R001",
+    "source_locator": "R540: p. 210; R834: English p.29 (Fold3 page 96)"
    }
   },
   {
@@ -269328,6 +269369,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R813;R002",
     "source_locator": "R813: German p.11 (Fold3 image 34, English p.10-11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.98,
+     50.5007
+    ]
+   },
+   "properties": {
+    "claim_id": "C8223",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-07",
+    "place_id": "PL3714",
+    "location_name": "Brück (Ahrbrück), Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post moves from Falkenberg [?] to Brück on the Ahr early on 7 March for the attack toward Gelsdorf",
+    "operation_id": "OP-REMAGEN",
+    "operation": "Battle of Remagen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Remagen",
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R834;R002",
+    "source_locator": "R834: English p.25 (Fold3 page 92)"
    }
   },
   {
@@ -270852,6 +270934,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3302,
+     50.4977
+    ]
+   },
+   "properties": {
+    "claim_id": "C8224",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL3716",
+    "location_name": "Rheinbrohl, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "LXVII Corps staff crosses the Rhine by the emergency ferry from Brohl to Rheinbrohl early on 10 March",
+    "operation_id": "OP-REMAGEN",
+    "operation": "Battle of Remagen",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Remagen",
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R834;R002",
+    "source_locator": "R834: English p.50 (Fold3 page 117)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -271378,6 +271501,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R817;R826;R002",
     "source_locator": "R806: English p.20; R817: German p.1 (Fold3 image 5); R826: German p.5 (Fold3 page 7) and English p.5 (Fold3 page 27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4668,
+     50.4828
+    ]
+   },
+   "properties": {
+    "claim_id": "C8225",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL3715",
+    "location_name": "Altwied (Neuwied), Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXVII Corps holds the Rhine front from Leubsdorf to Vallendar with its command post at Altwied",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R834;R002",
+    "source_locator": "R834: English p.52 (Fold3 page 119)"
    }
   },
   {
@@ -277854,8 +278018,8 @@
     "location_date": "1945-03-17",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R540;R001",
-    "source_locator": "R540: p. 232"
+    "reference_ids": "R540;R834;R001",
+    "source_locator": "R540: p. 232; R834: English p.52 (Fold3 page 119); English p.53 (Fold3 page 120)"
    }
   },
   {
@@ -277936,8 +278100,8 @@
     "location_date": "1945-03-17",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R540;R001",
-    "source_locator": "R540: p. 232"
+    "reference_ids": "R540;R834;R001",
+    "source_locator": "R540: p. 232; R834: English p.52 (Fold3 page 119); English p.53 (Fold3 page 120)"
    }
   },
   {
@@ -278348,6 +278512,47 @@
     "location_temporal_offset_days": 1,
     "reference_ids": "R524;R541;R001",
     "source_locator": "R541: p. 258"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4663,
+     50.4302
+    ]
+   },
+   "properties": {
+    "claim_id": "C8226",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-19",
+    "place_id": "PL3717",
+    "location_name": "Neuwied, Rheinland-Pfalz",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "LXVII Corps loses Neuwied and the Wied sector on its left wing about 19 March",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R834;R002",
+    "source_locator": "R834: English p.54 (Fold3 page 121)"
    }
   },
   {

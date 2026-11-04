@@ -177577,6 +177577,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1353,
+     49.9531
+    ]
+   },
+   "properties": {
+    "claim_id": "C8310",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-014",
+    "unit_name": "Fallschirmjäger-Regiment 14 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-16",
+    "place_id": "PL3750",
+    "location_name": "Putscheid, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "after crossing the Our at Stolzembourg the regiment is near Putscheid in the afternoon",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.22 (Fold3 page 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1996,
+     49.9389
+    ]
+   },
+   "properties": {
+    "claim_id": "C8317",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJPI-005",
+    "unit_name": "Fallschirm-Pionier-Bataillon 5 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-12-16",
+    "place_id": "PL0598",
+    "location_name": "Vianden, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "engineer assault troops take Vianden by surprise",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.22 (Fold3 page 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -178173,6 +178255,88 @@
     "confidence": 0.5,
     "event_type": "attack",
     "current_activity": "the Panzer Lehr Division is with the right neighbour at Consthum",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.24 (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0641,
+     49.9102
+    ]
+   },
+   "properties": {
+    "claim_id": "C8314",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-015",
+    "unit_name": "Fallschirmjäger-Regiment 15 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-17",
+    "place_id": "PL2587",
+    "location_name": "Bourscheid, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "the regiment holds the undamaged Wiltz crossing at Bourscheid",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.24 (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1996,
+     49.9389
+    ]
+   },
+   "properties": {
+    "claim_id": "C8320",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-STUG-011B",
+    "unit_name": "Sturmgeschütz-Brigade 11",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-12-17",
+    "place_id": "PL0598",
+    "location_name": "Vianden, Luxembourg",
+    "location_represents": "approach_route",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "with the Roth bridge unfinished, the brigade crosses the Our by a ford near Vianden",
     "operation_id": "OP-WACHT-AM-RHEIN",
     "operation": "Operation Wacht am Rhein",
     "operation_type": "operation",
@@ -186187,6 +186351,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.882,
+     49.9405
+    ]
+   },
+   "properties": {
+    "claim_id": "C8311",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-014",
+    "unit_name": "Fallschirmjäger-Regiment 14 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-20",
+    "place_id": "PL3753",
+    "location_name": "Nothum (Lac de la Haute-Sûre), Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "the regiment takes the Nothum crossroads after a night fight with Sherman tanks",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.29 (Fold3 page 97)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9325,
+     49.9661
+    ]
+   },
+   "properties": {
+    "claim_id": "C8318",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJPI-005",
+    "unit_name": "Fallschirm-Pionier-Bataillon 5 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-12-20",
+    "place_id": "PL0382",
+    "location_name": "Wiltz, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "two companies of the battalion take Wiltz by midday",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.29 (Fold3 page 97)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -186701,6 +186947,47 @@
     "confidence": 0.5,
     "event_type": "capture",
     "current_activity": "in the evening Sturmgeschütz-Brigade 11 reports Martelange taken",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.31 (Fold3 page 99)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7376,
+     49.8313
+    ]
+   },
+   "properties": {
+    "claim_id": "C8321",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-STUG-011B",
+    "unit_name": "Sturmgeschütz-Brigade 11",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL3332",
+    "location_name": "Martelange, Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "in the evening the brigade reports Martelange taken",
     "operation_id": "OP-WACHT-AM-RHEIN",
     "operation": "Operation Wacht am Rhein",
     "operation_type": "operation",
@@ -188271,6 +188558,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.32 (Fold3 page 100)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8007,
+     49.8918
+    ]
+   },
+   "properties": {
+    "claim_id": "C8316",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-013",
+    "unit_name": "Fallschirmjäger-Regiment 13 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-23",
+    "place_id": "PL2557",
+    "location_name": "Boulaide, Luxembourg",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "the first parts of the regiment, returned to the division, are sent into the area Tintange-Boulaide-Surre",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.33 (Fold3 page 101)"
    }
   },
   {
@@ -194592,6 +194920,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7096,
+     49.9212
+    ]
+   },
+   "properties": {
+    "claim_id": "C8319",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJPI-005",
+    "unit_name": "Fallschirm-Pionier-Bataillon 5 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-12-26",
+    "place_id": "PL2485",
+    "location_name": "Sainlez, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "the battalion fights at Sainlez with heavy losses and stops the enemy advance on Losange and Villers-la-Bonne-Eau",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.35 (Fold3 page 103)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -195311,6 +195680,88 @@
     "confidence": 0.5,
     "event_type": "hq_observation",
     "current_activity": "division command post at the railway crossing north of Doncols",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.35 (Fold3 page 103)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7478,
+     49.9346
+    ]
+   },
+   "properties": {
+    "claim_id": "C8312",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-014",
+    "unit_name": "Fallschirmjäger-Regiment 14 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-28",
+    "place_id": "PL3756",
+    "location_name": "Villers-la-Bonne-Eau (Bastogne), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the regiment holds the sector Lutrebois-Villers-la-Bonne-Eau",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.35 (Fold3 page 103)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7876,
+     49.9314
+    ]
+   },
+   "properties": {
+    "claim_id": "C8315",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-015",
+    "unit_name": "Fallschirmjäger-Regiment 15 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-28",
+    "place_id": "PL3758",
+    "location_name": "Harlange (Lac de la Haute-Sûre), Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the regiment holds in and near Harlange",
     "operation_id": "OP-WACHT-AM-RHEIN",
     "operation": "Operation Wacht am Rhein",
     "operation_type": "operation",
@@ -202855,6 +203306,47 @@
     "confidence": 0.5,
     "event_type": "other",
     "current_activity": "the whole division artillery is saved and stands in firing positions around Derenbach",
+    "operation_id": "OP-WACHT-AM-RHEIN",
+    "operation": "Operation Wacht am Rhein",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wacht am Rhein",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R843;R002",
+    "source_locator": "R843: German p.40 (Fold3 page 108)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8428,
+     49.9734
+    ]
+   },
+   "properties": {
+    "claim_id": "C8313",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-014",
+    "unit_name": "Fallschirmjäger-Regiment 14 (5th Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1945-01-08",
+    "place_id": "PL3757",
+    "location_name": "Doncols (Winseler), Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the regiment, sent to the Doncols area on the night of 7/8 January, is completely smashed in the woods south of Doncols",
     "operation_id": "OP-WACHT-AM-RHEIN",
     "operation": "Operation Wacht am Rhein",
     "operation_type": "operation",

@@ -4145,3 +4145,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **No new claims or places:** the interview names no dated places beyond those already entered.
 - **Citations (no raises; same Historical Division family):** `R858` appended to `C8213` (3rd Parachute Division training in Brittany, 15 January-8 June 1944) and `C8219` (16 July 1944 Meindl-Hausser conference: Saint-Lô untenable, withdrawal agreed).
 - Roadmap 345; scenario 193. Next free: `C8474`, `PL3828`, `R859`, `CR1084`, `G073`, scenario 194, roadmap 346.
+
+## fms-fold3-german-2: FMS B-709 second pass (rest of Part II, Part III Ruhr pocket 1-16 April 1945, Appendix I), R855 extended (4 November 2026)
+
+- **Reference R855 (extended, not new):** author old value "Ulrich Ulms", new value "Oberst i.G. Ulms (chief of staff) and Major i.G. Karl Reuther (Ia), signed by Reuther"; reason: the typescript ends "/S/ Karl Reuther" (typed p.-87-) and the Gruppe West covering note of 8 December 1947 names both. The preface (full_citation) now records the second pass (typed -44- to -87-, covering note, Appendix I) and what is still unread: the German original, the sketches and maps; Part IV is a separate draft not in this document. Every earlier R855 row carries an old/new/reason note on the author.
+- **New claims (old value none; English only, at most 0.5):** XII SS Corps `C8474` CP Markusmühle west of Dabringhausen 5 Apr, `C8475` CP Haan 14 Apr, `C8476` command echelon to Solingen-Nord [?] and end about noon 16 Apr (0.3); 3rd Parachute Division `C8477` CP near Wahnerheide [?] 6 Apr (0.3), `C8478` counterattack from Rösrath towards Eil 12 Apr; 353rd Division `C8479` CP south of Drabenderhöhe 9 Apr, `C8480` overrun near Lindlar 13 Apr (0.3); `C8481` 183rd VGD at Waldbröl 8 Apr; `C8482` 363rd VGD Wupper flank position, main effort Opladen 11 Apr; `C8483` Kampfgruppe 59th Division at Leverkusen under the corps 4 Apr; `C8484` Gruppe Witte into the Kettwig switch position 14 Apr; Army Group B `C8485` Model at the corps CP in Haan 15 Apr and `C8486` in the woods between Haan and Hilden 16 Apr (0.3); `C8487` Fifth Panzer Army CP near Ohligs 14 Apr.
+- **New unit:** `GER-KG-WITTE` (Kampfgruppe rule; parent blank).
+- **Citations (no raises):** `R855` appended to `C1233`, `C1241`, `C2247`.
+- **Claim-key exception:** `C0936`/`C8485`.
+- **Places:** `PL3828`-`PL3836` (Nominatim, `R002`).
+- Roadmap 342 updated; scenario 194. Next free: `C8488`, `PL3837`, `R859`, `CR1084`, `G073`, scenario 195, roadmap 346.

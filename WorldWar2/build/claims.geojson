@@ -306563,6 +306563,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9881,
+     51.0325
+    ]
+   },
+   "properties": {
+    "claim_id": "C8483",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL3835",
+    "location_name": "Leverkusen",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Kampfgruppe of the 59th Infantry Division on either side of Leverkusen comes under XII SS Corps and is put under the 3rd Parachute Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-56- (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1833,
      51.75
     ]
@@ -306841,8 +306882,8 @@
     "location_date": "1945-04-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R778;R002",
-    "source_locator": "R778: pp. 18-19 and Anlage 3"
+    "reference_ids": "R778;R855;R002",
+    "source_locator": "R778: pp. 18-19 and Anlage 3; R855: typed p.-56- (Fold3 page 60)"
    }
   },
   {
@@ -306966,6 +307007,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R818;R002",
     "source_locator": "R818: German p.1 (Fold3 image 5, English p.1, Fold3 image 27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.191,
+     51.0928
+    ]
+   },
+   "properties": {
+    "claim_id": "C8474",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-05",
+    "place_id": "PL3828",
+    "location_name": "Dabringhausen (Wermelskirchen) (Markusmühle, just west of Dabringhausen)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XII SS Corps staff moves into the former LXXXI Corps command post at Markusmühle, just west of Dabringhausen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-56- (Fold3 page 60)"
    }
   },
   {
@@ -307335,6 +307417,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R822;R002",
     "source_locator": "R822: German p.-17- (Fold3 page 95)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1219,
+     50.8898
+    ]
+   },
+   "properties": {
+    "claim_id": "C8477",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-06",
+    "place_id": "PL3829",
+    "location_name": "Wahner Heide (Köln-Porz)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "3rd Parachute Division holds the Rhine and Sieg front south of Leverkusen to the Friedrich-Wilhelms-Hütte, reserves north of Troisdorf, command post near Wahnerheide [?]",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-60- (Fold3 page 65)"
    }
   },
   {
@@ -308285,6 +308408,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.6159,
+     50.8752
+    ]
+   },
+   "properties": {
+    "claim_id": "C8481",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL3833",
+    "location_name": "Waldbröl, Oberbergischer Kreis",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "183rd Volksgrenadier Division, sent from the Rhine on 6 April to LVIII Panzer Corps, committed either side of Waldbröl and caught by the US attack",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-61-, -66- (Fold3 page 66, 71)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -308729,6 +308893,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R845",
     "source_locator": "R845: German p.128 and p.130 (Fold3 images 260, 262)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4577,
+     50.9435
+    ]
+   },
+   "properties": {
+    "claim_id": "C8479",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL3831",
+    "location_name": "Drabenderhöhe (Wiehl) (forest south of Drabenderhöhe)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "353rd Infantry Division, pierced on the Sieg, command post in the forest south of Drabenderhöhe; put under XII SS Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-66- (Fold3 page 71)"
    }
   },
   {
@@ -313246,6 +313451,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0028,
+     51.0669
+    ]
+   },
+   "properties": {
+    "claim_id": "C8482",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-363D",
+    "unit_name": "363rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-11",
+    "place_id": "PL3834",
+    "location_name": "Opladen (Leverkusen)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "363rd Division ordered to build a flank position along the Wupper from the Rhine to Bergneukirchen, main effort between the Rhine and Opladen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-74- (Fold3 page 79)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.6763,
      52.0633
     ]
@@ -314189,6 +314435,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1825,
+     50.8964
+    ]
+   },
+   "properties": {
+    "claim_id": "C8478",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-12",
+    "place_id": "PL3830",
+    "location_name": "Rösrath, Rheinisch-Bergischer Kreis",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "3rd Parachute Division attacks west from the forest between Rösrath and Rath towards Eil and the Rhine; Rösrath lost to US tanks from the south",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-75-, -76- (Fold3 page 80, 81)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8667,
      51.9667
     ]
@@ -314674,6 +314961,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 585"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.378,
+     51.0186
+    ]
+   },
+   "properties": {
+    "claim_id": "C8480",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL3832",
+    "location_name": "Lindlar, Oberbergischer Kreis",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "353rd Infantry Division ceases to exist; its last remnants and staff probably overrun near Lindlar",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-81- (Fold3 page 86)"
    }
   },
   {
@@ -315665,6 +315993,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0085,
+     51.1955
+    ]
+   },
+   "properties": {
+    "claim_id": "C8475",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-14",
+    "place_id": "PL0581",
+    "location_name": "Haan, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XII SS Corps command post moved to Haan as US infantry crosses the Dhünn in front of the old post",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-82-, -85- (Fold3 page 87, 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9323,
+     51.3605
+    ]
+   },
+   "properties": {
+    "claim_id": "C8484",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-WITTE",
+    "unit_name": "Kampfgruppe (Gruppe) Witte",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL2342",
+    "location_name": "Kettwig vor der Brücke (Essen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Gruppe Witte withdraws into the Kettwig switch position; on the morning of 14 April the corps right wing is on the Ruhr near Kettwig",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-79- (Fold3 page 84)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0042,
+     51.1611
+    ]
+   },
+   "properties": {
+    "claim_id": "C8487",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-005A",
+    "unit_name": "Fifth Panzer Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1945-04-14",
+    "place_id": "PL3836",
+    "location_name": "Ohligs (Solingen) (vicinity of Ohligs)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifth Panzer Army command post in the vicinity of Ohligs; the corps Ia is given the break-out order there",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-82- (Fold3 page 87)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.25,
      51.8333
     ]
@@ -315984,8 +316435,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R180;R002",
-    "source_locator": "R180: table of 1945, April row"
+    "reference_ids": "R180;R855;R002",
+    "source_locator": "R180: table of 1945, April row; R855: typed p.-56-, -59- (Fold3 page 60, 64)"
    }
   },
   {
@@ -316107,8 +316558,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R223;R002",
-    "source_locator": "R223: table of 1945, April row"
+    "reference_ids": "R223;R855;R002",
+    "source_locator": "R223: table of 1945, April row; R855: typed p.-56- (Fold3 page 60)"
    }
   },
   {
@@ -316977,6 +317428,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0085,
+     51.1955
+    ]
+   },
+   "properties": {
+    "claim_id": "C8485",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL0581",
+    "location_name": "Haan, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Model and Harpe visit the XII SS Corps command post at Haan and order resistance to continue on 16 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-85- (Fold3 page 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -317790,6 +318282,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: German p.33-34 (Fold3 images 92-93), Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0846,
+     51.1722
+    ]
+   },
+   "properties": {
+    "claim_id": "C8476",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-04-16",
+    "place_id": "PL3055",
+    "location_name": "Solingen, Nordrhein-Westfalen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "XII SS Corps command echelon leaves Haan before US tanks for Solingen-Nord [?]; the group ends its command about noon and sets out towards Burg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-87- (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0085,
+     51.1955
+    ]
+   },
+   "properties": {
+    "claim_id": "C8486",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0581",
+    "location_name": "Haan, North Rhine-Westphalia (woods between Haan and Hilden)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Model, with a very small staff, resolves to await the end in the woods between Haan and Hilden",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: typed p.-86- (Fold3 page 91)"
    }
   },
   {

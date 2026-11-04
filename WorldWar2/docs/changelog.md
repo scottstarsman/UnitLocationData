@@ -3928,3 +3928,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Corroborations:** none; no existing row matches closely enough (roadmap 321). Map pages not used for rows.
 - **Open:** roadmap 321-322. **Tests:** scenario 170. Next free: `C8281`, `PL3746`, `R841`, `G065`, scenario 171, roadmap 323.
 
+## fms-fold3-german-2: FMS B-820 German original with English check, Wilke, 5th Parachute Division 6 June-24 July 1944 (4 November 2026)
+
+- **Source:** FMS B-820 (`R841`, new; no earlier reference), undated; German original (Fold3 images 13-20) primary, English translation (images 1-12) checked; German readings win, differences in the private notes.
+- **New claims (5th Parachute Division, parents blank, all 0.3):** `C8281` command post at Tressaint [?] near Dinan, sector St-Michel-St-Brieuc, 6 June; `C8282` staff leaves Brittany 18 June; `C8283` north-west of St-Lô about Marigny, 27 June (sketch map).
+- **New place:** `PL3746` Tressaint (Lanvallay) (Nominatim).
+- **Corroboration (no raise):** `R841` appended to `C0761` (Périers).
+- **Conflict kept:** `C8214` (B-240: Rennes, May) against Tressaint/Dinan (B-820); both rows kept, roadmap 323. No conflict group needed (different dates).
+- **Open:** roadmap 323-324. **Tests:** scenario 171. Next free: `C8284`, `PL3747`, `R842`, `G065`, scenario 172, roadmap 325.
+

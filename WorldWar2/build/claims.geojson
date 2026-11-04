@@ -2671,6 +2671,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -2.0144,
+     48.4369
+    ]
+   },
+   "properties": {
+    "claim_id": "C8281",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-06",
+    "place_id": "PL3746",
+    "location_name": "Tressaint (Lanvallay), Côtes-d'Armor",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "5th Parachute Division command post at Tressaint [?], 4 km south-south-east of Dinan, with the division holding the Brittany coast from St-Michel to St-Brieuc",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R841;R002",
+    "source_locator": "R841: German p.1 (Fold3 page 14)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -9641,6 +9682,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -2.0144,
+     48.4369
+    ]
+   },
+   "properties": {
+    "claim_id": "C8282",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-18",
+    "place_id": "PL3746",
+    "location_name": "Tressaint (Lanvallay), Côtes-d'Armor",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "the 5th Parachute Division staff leaves its Brittany sector for the Normandy front with the last battalion of Fallschirmjäger-Regiment 14",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R841;R002",
+    "source_locator": "R841: German p.2 (Fold3 page 15)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.6681,
      49.3353
     ]
@@ -15210,6 +15292,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000022 situation 1200 hrs 27 June 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2389,
+     49.0997
+    ]
+   },
+   "properties": {
+    "claim_id": "C8283",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-27",
+    "place_id": "PL0213",
+    "location_name": "Marigny, Manche",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "remnants of the 5th Parachute Division in the line north-west of St-Lô near Marigny, as shown on the division sketch for 24 June-1 July",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R841;R002",
+    "source_locator": "R841: German pp.5-6 (Fold3 pages 18-19)"
    }
   },
   {
@@ -28082,8 +28205,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R592;R001",
-    "source_locator": "R592: p. 227"
+    "reference_ids": "R592;R841;R001",
+    "source_locator": "R592: p. 227; R841: German pp.5-6 (Fold3 pages 18-19)"
    }
   },
   {

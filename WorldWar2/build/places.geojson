@@ -4178,7 +4178,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -74598,6 +74598,26 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.0144,
+     48.4369
+    ]
+   },
+   "properties": {
+    "place_id": "PL3746",
+    "name": "Tressaint (Lanvallay), Côtes-d'Armor",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bretagne",
     "claims_count": 2
    }
   }

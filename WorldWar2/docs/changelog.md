@@ -4118,3 +4118,14 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **G067** (28 February) is outside the period read: no change. No new conflict group.
 - **Places:** `PL3804` Düsseldorf, `PL3805` Ratingen, `PL3806` Mettmann, `PL3807` Schloss Eller, `PL3808` Hubbelrath, `PL3809` Hitdorf, `PL3810` Zons (Nominatim, `R002`).
 - Roadmap 342; scenario 190. Next free: `C8438`, `PL3811`, `R856`, `CR1084`, `G069`, scenario 191, roadmap 343.
+
+## fms-fold3-german-2: FMS B-730 English translation (Brandenberger, Seventh Army 1-20 September 1944) as R856 (4 November 2026)
+
+- **Source:** `R856`, English narrative (typed pp.-3- to -107-) and sketches 1-7 read; the German narrative was NOT read, so every row is English only (at most 0.5; flagged in the reference and roadmap 343). Sketch-derived positions are map-derived (at most 0.3, never preferred).
+- **New claims (old value none; reasons in each row):** Seventh Army command posts `C8438` Flines 1 Sep, `C8439` Wavre 2 Sep, `C8440` Schloss Hex 3 Sep, `C8441` Chaudfontaine and `C8442` Limbourg 7 Sep, `C8443` Monschau 9 Sep, `C8444` camp "Falke" east of Münstereifel 11 Sep; 116th Panzer `C8445` Fleurus-Gembloux 4 Sep, `C8447` Russon-Fort de Lantin 7 Sep, `C8452` north of Plombières 12 Sep, `C8453` south front of Aachen 13 Sep; 347th `C8446` Namur 4 Sep, `C8455` Udenbreth 14 Sep; 275th `C8448` Maastricht-Eijsden 8 Sep, `C8458` remnants at Linnich 19 Sep; 49th `C8449` Visé-Jupille 8 Sep; Panzer-Brigade 105 `C8450` Limbourg 10 Sep; 89th `C8451` Jalhay 10 Sep; 9th Panzer `C8454` Oberforstbach-Roetgen 13 Sep; 353rd CP `C8456` Schevenhütte 12 Sep; 183rd VGD CP `C8457` Floverich and `C8462` Geilenkirchen (Sketch 7, 0.3) 18 Sep; I SS Panzer Corps `C8459` Ormont-Heinerscheid 14 Sep and `C8461` Meuse Lustin-Charleville 4 Sep (0.3); 2nd Panzer `C8460` east of Heinerscheid 12 Sep.
+- **Raises:** `C0866` confidence old value 0.5, new value 0.7 (CMH plus FMS, Margraten-Epen 12 Sep); `C7084` old value 0.5, new value 0.7 (NARA plus FMS, 183rd VGD Birgden 20 Sep).
+- **Citations (no raises):** `R856` appended to `C0867`, `C0865`, `C0868`.
+- **Conflict groups:** G069 `C7286` (preferred, unchanged) vs `C8446` (alternate); G070 `C0861` (preferred, unchanged) vs `C8452` (alternate); G071 `C8457` text (preferred) vs `C8462` sketch (alternate). conflict_group_id old value blank, new value as given, on `C7286` and `C0861`.
+- **Claim-key exception:** `C8441`/`C8442` (two command-post moves on 7 September).
+- **Places:** `PL3811`-`PL3822` (Nominatim, `R002`).
+- Roadmap 343; scenario 191. Next free: `C8463`, `PL3823`, `R857`, `CR1084`, `G072`, scenario 192, roadmap 344.

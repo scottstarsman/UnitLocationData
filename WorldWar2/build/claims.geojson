@@ -63351,6 +63351,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.1834,
+     50.4269
+    ]
+   },
+   "properties": {
+    "claim_id": "C8438",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL3811",
+    "location_name": "Flines-lez-Raches, Nord",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Seventh Army command echelon at Flines, 10 km north-east of Douai",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-3- (Fold3 page 154)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3176,
      50.5424
     ]
@@ -64089,6 +64130,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.6104,
+     50.717
+    ]
+   },
+   "properties": {
+    "claim_id": "C8439",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL3812",
+    "location_name": "Wavre, Walloon Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moved to Wavre as US tanks approach Mons",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-5- (Fold3 page 156)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.952,
      50.455
     ]
@@ -64622,6 +64704,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3568,
+     50.7688
+    ]
+   },
+   "properties": {
+    "claim_id": "C8440",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-03",
+    "place_id": "PL3813",
+    "location_name": "Heks (Hex), Heers",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moved to Schloss Hex, 10 km west of Tongeren",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-7- (Fold3 page 158)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0418,
      51.0356
     ]
@@ -65120,7 +65243,7 @@
    },
    "properties": {
     "claim_id": "C7286",
-    "conflict_group_id": null,
+    "conflict_group_id": "G069",
     "claim_status": "preferred",
     "unit_id": "GER-INF-347D",
     "unit_name": "347th Infantry Division",
@@ -65394,6 +65517,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R839;R002",
     "source_locator": "R839: German p.23 (Fold3 page 31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5497,
+     50.4829
+    ]
+   },
+   "properties": {
+    "claim_id": "C8445",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-04",
+    "place_id": "PL3815",
+    "location_name": "Fleurus, Hainaut",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "116th Panzer Division under LXXIV Corps in the Fleurus-Gembloux area north-east of Charleroi",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-9- (Fold3 page 160)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8662,
+     50.4665
+    ]
+   },
+   "properties": {
+    "claim_id": "C8446",
+    "conflict_group_id": "G069",
+    "claim_status": "alternate",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL0242",
+    "location_name": "Namur, Namur",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "347th Infantry Division holds Namur and the Meuse south to Lustin until Namur falls on 4 September",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-9-, -10- (Fold3 page 160, 161)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9167,
+     50.2667
+    ]
+   },
+   "properties": {
+    "claim_id": "C8461",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-04",
+    "place_id": "PL0444",
+    "location_name": "Dinant, Namur",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "I SS Panzer Corps on the east bank of the Meuse from Lustin to Charleville, main effort either side of Dinant",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-10-, -16- (Fold3 page 161, 167)"
    }
   },
   {
@@ -70116,6 +70362,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6333,
+     50.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8441",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL0088",
+    "location_name": "Chaudfontaine, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moved to Chaudfontaine east of Liège",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-33- (Fold3 page 184)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9406,
+     50.6145
+    ]
+   },
+   "properties": {
+    "claim_id": "C8442",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL3814",
+    "location_name": "Limbourg, Liège province",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post blasted out of Chaudfontaine by US tanks and moved to Limbourg",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-34- (Fold3 page 185)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4421,
+     50.7471
+    ]
+   },
+   "properties": {
+    "claim_id": "C8447",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-07",
+    "place_id": "PL3816",
+    "location_name": "Rutten (Russon), Tongeren",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "116th Panzer Division withdraws to the line Russon-Fort de Lantin south-east of Tongeren",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-33- (Fold3 page 184)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -70818,6 +71187,88 @@
     ]
    },
    "properties": {
+    "claim_id": "C8448",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-275D",
+    "unit_name": "275th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "275th Infantry Division, rebuilt from stragglers at Maastricht, put in on the Meuse from north-west of Maastricht by Eijsden to Argenteau",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-38-, -39- (Fold3 page 189, 190)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6936,
+     50.7348
+    ]
+   },
+   "properties": {
+    "claim_id": "C8449",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-049D",
+    "unit_name": "49th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL3817",
+    "location_name": "Visé, Liège province",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "49th Infantry Division remnants defend the east bank of the Meuse south of Visé to Jupille",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-39- (Fold3 page 190)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
     "claim_id": "C0839",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -71257,6 +71708,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.10 (Fold3 image 16)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C8443",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-09",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moved from Limbourg to Monschau by the chief of staff",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-45- (Fold3 page 196)"
    }
   },
   {
@@ -71872,6 +72364,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.11 (Fold3 image 17)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9406,
+     50.6145
+    ]
+   },
+   "properties": {
+    "claim_id": "C8450",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-105B",
+    "unit_name": "Panzer-Brigade 105",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-10",
+    "place_id": "PL3814",
+    "location_name": "Limbourg, Liège province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Panzer-Brigade 105 fights the 3rd US Armored Division in the Limbourg area and stops the breakthrough",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-50-, -53- (Fold3 page 201, 204)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9648,
+     50.5593
+    ]
+   },
+   "properties": {
+    "claim_id": "C8451",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-089D",
+    "unit_name": "89th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-10",
+    "place_id": "PL3818",
+    "location_name": "Jalhay, Liège province",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "89th Infantry Division blocks the roads from Verviers and Eupen in the woods south of Eupen and south-east of Jalhay",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-51-, -57- (Fold3 page 202, 208)"
    }
   },
   {
@@ -72658,6 +73232,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7636,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C8444",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-11",
+    "place_id": "PL3652",
+    "location_name": "Bad Münstereifel, North Rhine-Westphalia (former OKW camp, 5 km east of Münstereifel)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Seventh Army command post moved to the former OKW camp \"Falke\" 5 km east of Münstereifel",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-57- (Fold3 page 208)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.3378,
      50.9304
     ]
@@ -73033,7 +73648,7 @@
    },
    "properties": {
     "claim_id": "C0861",
-    "conflict_group_id": null,
+    "conflict_group_id": "G070",
     "claim_status": "preferred",
     "unit_id": "GER-PZ-116D",
     "unit_name": "116th Panzer Division",
@@ -73087,7 +73702,7 @@
     "location_name": "Maastricht, Limburg",
     "location_represents": "sector_center",
     "precision_km": 25,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "The 49th Infantry Division holds the Dutch-Belgian border line east of the 275th Division on the LXXXI Corps north wing",
     "operation_id": "OP-SIEGFRIED-LINE",
@@ -73100,8 +73715,8 @@
     "location_date": "1944-09-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R442;R001",
-    "source_locator": "R442: p. 98, 103"
+    "reference_ids": "R442;R856;R001",
+    "source_locator": "R442: p. 98, 103; R856: English typed p.-69- (Fold3 page 220)"
    }
   },
   {
@@ -73141,8 +73756,8 @@
     "location_date": "1944-09-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R442;R616;R001",
-    "source_locator": "R442: p. 98, 103; R616: table of 1944, September row"
+    "reference_ids": "R442;R616;R856;R001",
+    "source_locator": "R442: p. 98, 103; R616: table of 1944, September row; R856: English typed p.-53-, -54- (Fold3 page 204, 205)"
    }
   },
   {
@@ -75815,6 +76430,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4564,
+     47.9641
+    ]
+   },
+   "properties": {
+    "claim_id": "C8452",
+    "conflict_group_id": "G070",
+    "claim_status": "alternate",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-12",
+    "place_id": "PL0277",
+    "location_name": "Plombieres, Vosges",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "116th Panzer Division, out of the Hombourg-Moresnet line, has fallen back to the woods north of Plombières on the Dutch-Belgian border",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-69-, -70- (Fold3 page 220, 221)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3249,
+     50.7685
+    ]
+   },
+   "properties": {
+    "claim_id": "C8456",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL3819",
+    "location_name": "Schevenhütte (Stolberg)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "353rd Infantry Division command post at Schevenhütte, 7 km east of Stolberg",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-71- (Fold3 page 222)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0897,
+     50.0984
+    ]
+   },
+   "properties": {
+    "claim_id": "C8460",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-12",
+    "place_id": "PL3822",
+    "location_name": "Heinerscheid (Clervaux)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "2nd Panzer Division, across the Our at Burg Reuland, drives the enemy back out of its West Wall sector east of Heinerscheid",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-74- (Fold3 page 225)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9013,
      49.0476
     ]
@@ -76143,6 +76881,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0836,
+     50.7756
+    ]
+   },
+   "properties": {
+    "claim_id": "C8453",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-13",
+    "place_id": "PL0001",
+    "location_name": "Aachen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "116th Panzer Division arrives before nightfall and seals the penetration of the West Wall south of Aachen",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-82-, -86- (Fold3 page 233, 237)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2,
+     50.65
+    ]
+   },
+   "properties": {
+    "claim_id": "C8454",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-13",
+    "place_id": "PL2611",
+    "location_name": "Roetgen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "9th Panzer Division (remnants) holds the West Wall sector Oberforstbach-Roetgen",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-72-, -87- (Fold3 page 223, 238)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.8619,
      48.5661
     ]
@@ -76382,6 +77202,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.11 (Fold3 image 17)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3898,
+     50.4179
+    ]
+   },
+   "properties": {
+    "claim_id": "C8455",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-14",
+    "place_id": "PL3256",
+    "location_name": "Udenbreth, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "347th Infantry Division breaks through to the West Wall at Udenbreth and takes over the sector west of Hellenthal",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-83-, -88- (Fold3 page 234, 239)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4435,
+     50.3298
+    ]
+   },
+   "properties": {
+    "claim_id": "C8459",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-14",
+    "place_id": "PL3821",
+    "location_name": "Ormont, Vulkaneifel",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "I SS Panzer Corps holds the West Wall from Ormont to east of Heinerscheid",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-102- (Fold3 page 253)"
    }
   },
   {
@@ -79004,8 +79906,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R441;R002",
-    "source_locator": "R441: p. 87"
+    "reference_ids": "R441;R856;R002",
+    "source_locator": "R441: p. 87; R856: English typed p.-71- (Fold3 page 222)"
    }
   },
   {
@@ -80152,8 +81054,8 @@
     "location_date": "1944-09-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R442;R002",
-    "source_locator": "R442: p. 109-112"
+    "reference_ids": "R442;R856;R002",
+    "source_locator": "R442: p. 109-112; R856: English typed p.-98- (Fold3 page 249)"
    }
   },
   {
@@ -80605,6 +81507,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R813;R002",
     "source_locator": "R813: German p.2 (Fold3 image 25, English p.2)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1843,
+     50.9386
+    ]
+   },
+   "properties": {
+    "claim_id": "C8457",
+    "conflict_group_id": "G071",
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL3820",
+    "location_name": "Floverich (Baesweiler)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "183rd Volksgrenadier Division, first units in, holds Birgden-Geilenkirchen-Marienberg with its command post at Floverich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-98- (Fold3 page 249)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8462",
+    "conflict_group_id": "G071",
+    "claim_status": "alternate",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "183rd Volksgrenadier Division command post marked at Geilenkirchen on 18 September (Sketch 7)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: Sketch 7 (Fold3 page 266)"
    }
   },
   {
@@ -84261,6 +85245,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8458",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-275D",
+    "unit_name": "275th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "275th Infantry Division, pulled back through the 183rd VGD, collects its remnants (about 400 men) at Linnich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R856;R002",
+    "source_locator": "R856: English typed p.-100- (Fold3 page 251)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -84772,7 +85797,7 @@
     "location_name": "Waldenrath, North Rhine-Westphalia (Waldenrath and Birgden (reached in attack))",
     "location_represents": "main_body",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "183rd Volksgrenadier Division reaches Waldenrath and Birgden",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -84785,8 +85810,8 @@
     "location_date": "1944-09-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R002",
-    "source_locator": "R784: image 1065 (NAID 271848586), stamped page 489, HGr B Ia 759x/44 g.Kdos (Mittagsmeldung) of 20 September 1944"
+    "reference_ids": "R784;R856;R002",
+    "source_locator": "R784: image 1065 (NAID 271848586), stamped page 489, HGr B Ia 759x/44 g.Kdos (Mittagsmeldung) of 20 September 1944; R856: English typed p.-100- (Fold3 page 251)"
    }
   },
   {

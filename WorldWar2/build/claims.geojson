@@ -230622,8 +230622,8 @@
     "location_date": "1945-01-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R819;R002",
-    "source_locator": "R819: German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+    "reference_ids": "R819;R852;R002",
+    "source_locator": "R819: German p.2 (Fold3 image 26, English p.2, Fold3 image 4); R852: German p.9 (Fold3 image 78)"
    }
   },
   {
@@ -255345,8 +255345,8 @@
     "location_date": "1945-02-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.Anlage 7d (Fold3 page 65)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.Anlage 7d (Fold3 page 65); R852: German p.9, 20, 23 (Fold3 images 78, 89, 92)"
    }
   },
   {
@@ -255468,8 +255468,8 @@
     "location_date": "1945-02-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-2- (Fold3 page 43)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-2- (Fold3 page 43); R852: German p.14 (Fold3 image 83)"
    }
   },
   {
@@ -256206,8 +256206,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R538;R815;R821;R002",
-    "source_locator": "R538: p. 167; R815: German p.20 (Fold3 image 29); R821: German p.-3- and -8- (Fold3 page 44 and 49)"
+    "reference_ids": "R538;R815;R821;R852;R002",
+    "source_locator": "R538: p. 167; R815: German p.20 (Fold3 image 29); R821: German p.-3- and -8- (Fold3 page 44 and 49); R852: German p.15-16 (Fold3 images 84-85)"
    }
   },
   {
@@ -257231,8 +257231,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-8- (Fold3 page 49)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-8- (Fold3 page 49); R852: German p.18, Anlage 2 (Fold3 images 87, 118)"
    }
   },
   {
@@ -263832,8 +263832,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-16a- (Fold3 page 58)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-16a- (Fold3 page 58); R852: German p.24 (Fold3 image 93)"
    }
   },
   {
@@ -263873,8 +263873,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-15- (Fold3 page 56)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-15- (Fold3 page 56); R852: German p.25-27 (Fold3 images 94-96)"
    }
   },
   {
@@ -263914,8 +263914,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-14- and -15- (Fold3 page 55 and 56)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-14- and -15- (Fold3 page 55 and 56); R852: German p.25, Anlage 3 (Fold3 images 94, 119)"
    }
   },
   {
@@ -263955,8 +263955,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-15- (Fold3 page 56)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-15- (Fold3 page 56); R852: German p.25 (Fold3 image 94)"
    }
   },
   {
@@ -263996,8 +263996,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R821;R002",
-    "source_locator": "R821: German p.-14- (Fold3 page 55)"
+    "reference_ids": "R821;R852;R002",
+    "source_locator": "R821: German p.-14- (Fold3 page 55); R852: German p.25-26 (Fold3 images 94-95)"
    }
   },
   {
@@ -264244,6 +264244,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776",
     "source_locator": "R776: English p.20a-20b (Fold3 images 21-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4354,
+     51.1947
+    ]
+   },
+   "properties": {
+    "claim_id": "C8403",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-POLR-MGLAD",
+    "unit_name": "Polizei-Regiment Mönchengladbach",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL0636",
+    "location_name": "Mönchengladbach, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Mönchengladbach garrisoned by a Polizei-Regiment reinforced by Volkssturm, under the corps and then the 183rd Volksgrenadier Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.24-25 (Fold3 images 93-94) and Anlage 3 (image 119)"
    }
   },
   {
@@ -264872,7 +264913,7 @@
    },
    "properties": {
     "claim_id": "C8095",
-    "conflict_group_id": null,
+    "conflict_group_id": "G067",
     "claim_status": "preferred",
     "unit_id": "GER-SSCOR-012C",
     "unit_name": "XII SS Corps",
@@ -265228,6 +265269,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R821;R002",
     "source_locator": "R821: German p.-19- (Fold3 page 61)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4354,
+     51.1947
+    ]
+   },
+   "properties": {
+    "claim_id": "C8393",
+    "conflict_group_id": "G067",
+    "claim_status": "alternate",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-02-28",
+    "place_id": "PL0636",
+    "location_name": "Mönchengladbach, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "corps command post moved in the night of 27/28 February into Mönchengladbach (a basement), after the command group left Beeck for Winkeln early on 27 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.28 (Fold3 image 97)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4814,
+     51.2531
+    ]
+   },
+   "properties": {
+    "claim_id": "C8397",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL3790",
+    "location_name": "Neersen (Willich)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "division command post just north-west of Neersen on the evening of 28 February; about 600 infantry left",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.32 (Fold3 image 101)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4354,
+     51.1947
+    ]
+   },
+   "properties": {
+    "claim_id": "C8400",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL0636",
+    "location_name": "Mönchengladbach, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "division (one regimental Kampfgruppe of about 500 men, with the Polizei-Regiment Mönchengladbach under it) holds at Mönchengladbach",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.32 (Fold3 image 101)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4458,
+     51.1675
+    ]
+   },
+   "properties": {
+    "claim_id": "C8401",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-28",
+    "place_id": "PL1056",
+    "location_name": "Rheydt, Mönchengladbach",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the planned attack is caught in its assembly area by a US tank attack; tank battle on Wickrath - Rheydt; Wickrath given up, Rheydt and Mönchengladbach held; division command post at the north-east edge of Mönchengladbach",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.30-32 (Fold3 images 99-101)"
    }
   },
   {
@@ -265595,8 +265800,8 @@
     "location_date": "1945-03-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 508"
+    "reference_ids": "R668;R852;R002",
+    "source_locator": "R668: p. 508; R852: German p.35 (Fold3 image 104)"
    }
   },
   {
@@ -265843,6 +266048,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R829;R002",
     "source_locator": "R829: p.15 (Fold3 page 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6315,
+     51.3055
+    ]
+   },
+   "properties": {
+    "claim_id": "C8394",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-03-01",
+    "place_id": "PL3788",
+    "location_name": "Bösinghoven (Ossum-Bösinghoven, Meerbusch)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "corps command post moved about midday from Unterbruch (under machine-gun fire) to Hoxhöfe south of Krefeld and in the evening to a group of farms west of Ossum-Bösinghoven",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.36 (Fold3 image 105)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4589,
+     51.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C8398",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL3668",
+    "location_name": "Anrath (Willich), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "division command post north of Anrath, ordered to stop the enemy crossing the canal on both sides of Neersen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.37 (Fold3 image 106)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6916,
+     51.1982
+    ]
+   },
+   "properties": {
+    "claim_id": "C8402",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL0945",
+    "location_name": "Neuss, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "the 338th Infantry Division has moved to Neuss, out of the corps area (found out later)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.36 (Fold3 image 105) and Anlage 4 (image 120)"
    }
   },
   {
@@ -266424,6 +266752,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8395",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-03-02",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "corps command post early on 2 March in a housing estate at the north-west edge of Krefeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.37 (Fold3 image 106)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.45,
+     51.3167
+    ]
+   },
+   "properties": {
+    "claim_id": "C8399",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL2634",
+    "location_name": "St. Tönis, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "after costly fighting between Neersen and St. Tönis the weak parts of the 176th and 183rd Divisions are shattered; remnants pass to LXIII Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.37-38 (Fold3 images 106-107)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6207,
      51.2691
     ]
@@ -266991,6 +267401,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R815;R002",
     "source_locator": "R815: German p.23 (Fold3 image 32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8312,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8396",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-03-03",
+    "place_id": "PL3789",
+    "location_name": "Lintorf (Ratingen)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "corps staff, left without troops after its divisions passed to LXIII Corps, crosses the Rhine at Duisburg in the night of 2/3 March and reports first at Lintorf (east of Angermund) to Fifth Panzer Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R852;R002",
+    "source_locator": "R852: German p.39 (Fold3 image 108)"
    }
   },
   {

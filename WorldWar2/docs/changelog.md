@@ -4076,3 +4076,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Citations (no raises):** `R851` appended to `C8377`, `C0981`, `C7149`, `C8382`, `C7151`, `C7153`, `C8386`, `C8385`.
 - **Places:** `PL3785` Bande, `PL3786` Hachiville (Helzingen), `PL3787` Breitfeld (Nominatim, `R002`).
 - Not entered: roadmap 338 (Steinbach CP 9-14 January uncertain reading). Scenario 186. Next free: `C8393`, `PL3788`, `R852`, `CR1078`, `G067`, scenario 187, roadmap 339.
+
+## fms-fold3-german-2: FMS B-410 German original (Ulms, XII SS Corps 26 January-4 March 1945) as R852 (4 November 2026)
+
+- **Source:** `R852` FMS B-410, written at Allendorf 7 March 1947 by the corps chief of staff; German original (images 61-120) read in full as primary; English spot-checked. One FMS family with B-812 (`R821`): no raises. Strengths recorded in the private notes only.
+- **New unit (old value none):** `GER-POLR-MGLAD` Polizei-Regiment Mönchengladbach, blank parent, under the independent-units rule (dated place 27 February); branch Army because the vocabulary has no police value.
+- **New claims (old value none; reasons in each row):** corps command posts `C8393` Mönchengladbach night 27/28 Feb (alternate in new `G067`), `C8394` west of Ossum-Bösinghoven 1 Mar, `C8395` north-west edge of Krefeld 2 Mar, `C8396` Lintorf after crossing the Rhine at Duisburg 3 Mar; `C8397` 176th Division CP north-west of Neersen 28 Feb, `C8398` north of Anrath 1 Mar, `C8399` shattered at Neersen-St. Tönis 2 Mar; `C8400` 183rd VGD at Mönchengladbach 28 Feb; `C8401` Panzer Lehr tank battle Wickrath-Rheydt 28 Feb; `C8402` 338th Division to Neuss 1 Mar; `C8403` Polizei-Regiment garrison of Mönchengladbach 27 Feb. All 0.5.
+- **Changed:** `C8095` conflict_group_id old blank, new `G067`, reason: B-410 gives Mönchengladbach for the same night; B-812 stays preferred. `C8100` context note only (attack did not take place per B-410).
+- **Citations (no raises):** `R852` appended to `C8020`, `C8080`, `C8094`, `C8083`, `C8090`, `C1153`, `C8096`, `C8097`, `C8098`, `C8099`, `C7530`.
+- **Places:** `PL3788` Bösinghoven, `PL3789` Lintorf, `PL3790` Neersen (Nominatim, `R002`).
+- Roadmap 339; scenario 187. Next free: `C8404`, `PL3791`, `R853`, `CR1078`, `G068`, scenario 188, roadmap 340.

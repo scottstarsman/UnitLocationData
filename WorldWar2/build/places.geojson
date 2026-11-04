@@ -8278,7 +8278,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 18
+    "claims_count": 19
    }
   },
   {
@@ -12538,7 +12538,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 8
    }
   },
   {
@@ -18638,7 +18638,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -20858,7 +20858,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -52378,7 +52378,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 0
+    "claims_count": 1
    }
   },
   {
@@ -73058,7 +73058,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -75438,6 +75438,66 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6315,
+     51.3055
+    ]
+   },
+   "properties": {
+    "place_id": "PL3788",
+    "name": "Bösinghoven (Ossum-Bösinghoven, Meerbusch)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8312,
+     51.3333
+    ]
+   },
+   "properties": {
+    "place_id": "PL3789",
+    "name": "Lintorf (Ratingen)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4814,
+     51.2531
+    ]
+   },
+   "properties": {
+    "place_id": "PL3790",
+    "name": "Neersen (Willich)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

@@ -2478,7 +2478,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -73878,6 +73878,26 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.244,
+     49.0138
+    ]
+   },
+   "properties": {
+    "place_id": "PL3710",
+    "name": "Pont-Brocard (Dangy), Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 1
    }
   }

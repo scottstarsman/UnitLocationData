@@ -3815,3 +3815,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims:** `C8201`-`C8209` (9 rows: 326th, 352nd and 246th Volksgrenadier Divisions, 2nd Panzer Division), all 0.3, every date inferred (old value none, new value and reason in each row). Parents blank. No corps rows because of the exchange with Rothkirch (roadmap 294).
 - **Corroborations (no confidence raised, FMS family):** `R829` appended to `C1156`, `C1159`.
 - **Places:** `PL3701`-`PL3709`. Roadmap 294-296. Scenario 157.
+
+## fms-fold3-german-2: FMS B-261 German original with English check, Blauensteiner, II Parachute Corps Normandy 6 June-24 July 1944 (4 November 2026)
+
+- **Source:** FMS B-261 (`R830`, new; neither B-261 nor Meindl's Normandy report was a reference), German pages 18-22 primary (exact dates), English pages 4-8 checked.
+- **New claims:** `C8210` (corps command post Les Chéris, 6 June 1944, 0.5) and `C8211` (Pont-Brocard, 10 June 1944, 0.5); parents blank. Place `PL3710`.
+- **Corroborations (no confidence raised, FMS family):** `R830` appended to `C0052`, `C0065`, `C0089`, `C0802`, `C0803`, `C0804`, `C0763`.
+- **Notes only:** losses of 300-400 men a day. Roadmap 297-298. Scenario 158.

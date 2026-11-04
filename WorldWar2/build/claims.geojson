@@ -2466,6 +2466,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.29,
+     48.617
+    ]
+   },
+   "properties": {
+    "claim_id": "C8210",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-06",
+    "place_id": "PL0126",
+    "location_name": "Ducey-Les Chéris, Manche",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "II Parachute Corps alerted about 0100 by Seventh Army and sent to Normandy with the 3rd Parachute Division under LXXXIV Corps; command post Les Chéris south-east of Avranches",
+    "operation_id": "OP-OVERLORD",
+    "operation": "Operation Overlord",
+    "operation_type": "umbrella",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R830;R002",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -3441,8 +3482,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R125;R001",
-    "source_locator": null
+    "reference_ids": "R449;R125;R830;R001",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4)"
    }
   },
   {
@@ -4097,8 +4138,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R065;R001",
-    "source_locator": null
+    "reference_ids": "R449;R065;R830;R001",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.2 (Fold3 page 5)"
    }
   },
   {
@@ -4803,6 +4844,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.244,
+     49.0138
+    ]
+   },
+   "properties": {
+    "claim_id": "C8211",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-10",
+    "place_id": "PL3710",
+    "location_name": "Pont-Brocard (Dangy), Manche",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "II Parachute Corps takes over the Saint-Lô sector with the 352nd Infantry, 3rd Parachute and 17th SS Panzergrenadier Divisions; command post moved to Pont-Brocard",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R830;R002",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.2 (Fold3 page 5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.5436,
      49.1958
     ]
@@ -5409,8 +5491,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R109;R111;R449;R761;R001",
-    "source_locator": "R449: p. 378-379; R761: Annex 3"
+    "reference_ids": "R109;R111;R449;R761;R830;R001",
+    "source_locator": "R449: p. 378-379; R761: Annex 3; R830: German p.2 (Fold3 page 20) and English p.2 (Fold3 page 5)"
    }
   },
   {
@@ -20210,8 +20292,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R588;R001",
-    "source_locator": "R588: p. 148, 157"
+    "reference_ids": "R588;R830;R001",
+    "source_locator": "R588: p. 148, 157; R830: German p.3 (Fold3 page 21) and English p.3 (Fold3 page 6)"
    }
   },
   {
@@ -24269,8 +24351,8 @@
     "location_date": null,
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": null,
-    "reference_ids": "R588;R180;R001",
-    "source_locator": "R588: p. 174, 173; R180: Einsatz und Unterstellung (18 July 1944 entry)"
+    "reference_ids": "R588;R180;R830;R001",
+    "source_locator": "R588: p. 174, 173; R180: Einsatz und Unterstellung (18 July 1944 entry); R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)"
    }
   },
   {
@@ -24310,8 +24392,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R180;R588;R001",
-    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174"
+    "reference_ids": "R180;R588;R830;R001",
+    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)"
    }
   },
   {
@@ -27631,8 +27713,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R592;R001",
-    "source_locator": "R592: p. 227"
+    "reference_ids": "R592;R830;R001",
+    "source_locator": "R592: p. 227; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)"
    }
   },
   {

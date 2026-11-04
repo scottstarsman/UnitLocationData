@@ -3836,3 +3836,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims:** `C8215` (352nd Division around Saint-Clair, 9 June), `C8216` (3rd Parachute Division at the Forêt de Cerisy, 12 June), `C8217` (17th SS around Saint-Lô, 12 June), `C8218` (352nd Division about 6 km north of Saint-Lô, end of June; inferred date old none, new 1944-06-30), `C8219` (corps command post Fervaches, 16 July), `C8220` (352nd Division south of Saint-Lô toward Canisy, English only; inferred date old none, new 1944-07-19). Parents blank; no new places.
 - **Corroborations (no confidence raised, FMS family):** `R832` appended to `C8212`, `C8213`, `C8214`, `C8210`, `C0052`, `C0057`, `C0081`, `C2205`, `C0803`, `C0804`.
 - **Roadmap:** 297 resolved; 301-303 added. Scenario 160.
+
+## fms-fold3-german-2: FMS B-346 German original, Blauensteiner, II Parachute Corps in northern France 25 July-25 August 1944 (4 November 2026)
+
+- **Source:** FMS B-346 (`R833`, new; not previously a reference), German only, very faint scan (Fold3 pages 21-47; cover Höhne 12 January 1951).
+- **New claim:** `C8221` (corps commander reports at Elbeuf on the Seine, about 25 August 1944; 0.3; inferred date old none, new 1944-08-25, day illegible), parent blank. No new places.
+- **Corroborations (no confidence raised, FMS family):** `R833` appended to `C0745`, `C0746`, `C0747` (break-out of 19-20 August over the Dives toward Coudehard).
+- **Not entered:** uncertain readings (roadmap 304-305). Scenario 161.

@@ -49730,8 +49730,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R001",
-    "source_locator": "R404: p. 547, 548, 538"
+    "reference_ids": "R404;R833;R001",
+    "source_locator": "R404: p. 547, 548, 538; R833: German p.11 (Fold3 page 36)"
    }
   },
   {
@@ -49771,8 +49771,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R668;R002",
-    "source_locator": "R404: p. 543, 542, 538; R668: pp.262-3"
+    "reference_ids": "R404;R668;R833;R002",
+    "source_locator": "R404: p. 543, 542, 538; R668: pp.262-3; R833: German pp.11-12 (Fold3 pages 36-37)"
    }
   },
   {
@@ -49812,8 +49812,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R668;R002",
-    "source_locator": "R404: p. 543, 542; R668: p.262"
+    "reference_ids": "R404;R668;R833;R002",
+    "source_locator": "R404: p. 543, 542; R668: p.262; R833: German p.11 (Fold3 page 36)"
    }
   },
   {
@@ -54898,6 +54898,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Sketch 20 (The Pursuit to the Seine, 22-30 August 1944), facing p. 279"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0109,
+     49.2871
+    ]
+   },
+   "properties": {
+    "claim_id": "C8221",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-08-25",
+    "place_id": "PL1410",
+    "location_name": "Elbeuf, Seine-Maritime",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "after the break-out from the Falaise pocket the II Parachute Corps commander reports at Elbeuf on the Seine",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R833;R002",
+    "source_locator": "R833: German p.13 (Fold3 page 38)"
    }
   },
   {

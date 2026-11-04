@@ -3894,3 +3894,14 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Map-label command posts** (Noordeloos, Almkerk, Geldermalsen): no new rows; existing `C2168` (Noordeloos, text p.48) and `C2169` (Geldermalsen, 0.3) unchanged; Almkerk cited on `C7811` without a raise.
 - **Open:** roadmap 317-318. **Tests:** scenario 167. Next free: `C8262`, `PL3737`, `R839`, `G065`, scenario 168, roadmap 319.
 
+## fms-fold3-german-2: pre-invasion dates allowed (4 November 2026)
+
+- **Decision (Scott, 4 November 2026):** pre-invasion data may be entered with real dates; the dataset may eventually cover the whole war.
+- **Validator:** `scripts/operations.py` old rule "every claim needs a CMH campaign streamer covering its date" (an effective 6 June 1944 floor), new rule: a streamer is required only from the first streamer date (6 June 1944); dates before 1 September 1939 are an error (sanity bound). README, HANDOFF and schema README updated.
+- **New operation:** `OP-PRE-INVASION` (umbrella, 1 September 1939-5 June 1944, derived).
+- **Re-dated rows (forced 6 June notes):**
+  - `C8212` (II Parachute Corps, Quintin): date old value 1944-06-06, new value 1944-05-05; operation_id old value OP-CAMP-NORMANDY, new value OP-PRE-INVASION; confidence 0.3 unchanged. Reason: B-240 has the move in early May; day inferred.
+  - `C8213` (3rd Parachute Division, Huelgoat) and `C8214` (5th Parachute Division, Rennes): date old value 1944-06-06, new value 1944-05-15; operation_id as above; confidence 0.3 unchanged. Reason: B-240 gives early or mid-May; day inferred.
+  - `C8234` (LXVII Corps, Amiens): date old value 1944-06-06, new value 1944-06-05; operation_id as above; confidence 0.3 unchanged. Reason: B-236 has the corps in position before 7 June, B-596 at Amiens from about January 1944; day inferred as the eve of the invasion.
+- **Not changed:** `C2060`-`C2068` (R761 armoured dawn positions on 6 June) are D-Day positions, not forced dates. **Tests:** scenario 168; scenario 164 expectation updated.
+

@@ -48,12 +48,12 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 1 | 1 | 1 |
-| campaign | 9 | 9 | 6761 |
+| umbrella | 2 | 2 | 5 |
+| campaign | 9 | 9 | 6757 |
 | operation | 33 | 33 | 722 |
 | battle | 20 | 20 | 511 |
 | phase | 4 | 4 | 260 |
-| **All** | **67** | **67** | **8255** |
+| **All** | **68** | **68** | **8255** |
 
 ## Places
 

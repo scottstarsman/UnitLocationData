@@ -6,6 +6,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -2.911,
+     48.4036
+    ]
+   },
+   "properties": {
+    "claim_id": "C8212",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-05-05",
+    "place_id": "PL3711",
+    "location_name": "Quintin, Côtes-d'Armor",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "II Parachute Corps staff and corps troops at Quintin in Brittany as OB West reserve until ordered to Normandy on 6 June",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R831;R832;R002",
+    "source_locator": "R831: German p.1 (Fold3 page 4) and English p.12 (Fold3 page 57); R832: German p.6 (Fold3 page 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.746,
+     48.364
+    ]
+   },
+   "properties": {
+    "claim_id": "C8213",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3712",
+    "location_name": "Huelgoat, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "3rd Parachute Division in the Huelgoat area in Brittany, forming and training under II Parachute Corps",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R831;R832;R002",
+    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58); R832: German p.3 (Fold3 page 8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6794,
+     48.1147
+    ]
+   },
+   "properties": {
+    "claim_id": "C8214",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-005D",
+    "unit_name": "5th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL0296",
+    "location_name": "Rennes, Ille-et-Vilaine",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "5th Parachute Division in the Rennes area, forming under II Parachute Corps",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R831;R832;R002",
+    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.14 (Fold3 page 59); R832: German p.5 (Fold3 page 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C8234",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-05",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps headquarters at Amiens on the Channel coast either side of the Somme mouth before Sponheimer takes over",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R838;R002",
+    "source_locator": "R836: German p.4 (Fold3 page 11); R838: German p.3 (Fold3 page 77)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.4153,
      49.3353
     ]
@@ -2500,170 +2664,6 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R830;R831;R832;R002",
     "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4); R831: German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59); R832: German p.7 (Fold3 page 12)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -2.911,
-     48.4036
-    ]
-   },
-   "properties": {
-    "claim_id": "C8212",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "GER-FJ-002C",
-    "unit_name": "II Fallschirmjäger Corps",
-    "nationality": "Germany",
-    "theater": "western_europe",
-    "echelon": "corps",
-    "branch": "Luftwaffe",
-    "date": "1944-06-06",
-    "place_id": "PL3711",
-    "location_name": "Quintin, Côtes-d'Armor",
-    "location_represents": "headquarters",
-    "precision_km": 5,
-    "confidence": 0.3,
-    "event_type": "relocation",
-    "current_activity": "II Parachute Corps staff and corps troops at Quintin in Brittany as OB West reserve until ordered to Normandy on 6 June",
-    "operation_id": "OP-CAMP-NORMANDY",
-    "operation": "Normandy campaign",
-    "operation_type": "campaign",
-    "campaign": "Normandy",
-    "operation_name": "Overlord",
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1944-06-06",
-    "location_basis": "documented_on_date",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R832;R002",
-    "source_locator": "R831: German p.1 (Fold3 page 4) and English p.12 (Fold3 page 57); R832: German p.6 (Fold3 page 11)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -3.746,
-     48.364
-    ]
-   },
-   "properties": {
-    "claim_id": "C8213",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "GER-FJ-003D",
-    "unit_name": "3rd Fallschirmjäger Division",
-    "nationality": "Germany",
-    "theater": "western_europe",
-    "echelon": "division",
-    "branch": "Luftwaffe",
-    "date": "1944-06-06",
-    "place_id": "PL3712",
-    "location_name": "Huelgoat, Finistère",
-    "location_represents": "main_body",
-    "precision_km": 10,
-    "confidence": 0.3,
-    "event_type": "other",
-    "current_activity": "3rd Parachute Division in the Huelgoat area in Brittany, forming and training under II Parachute Corps",
-    "operation_id": "OP-CAMP-NORMANDY",
-    "operation": "Normandy campaign",
-    "operation_type": "campaign",
-    "campaign": "Normandy",
-    "operation_name": "Overlord",
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1944-06-06",
-    "location_basis": "representative_point",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R832;R002",
-    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58); R832: German p.3 (Fold3 page 8)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -1.6794,
-     48.1147
-    ]
-   },
-   "properties": {
-    "claim_id": "C8214",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "GER-FJ-005D",
-    "unit_name": "5th Fallschirmjäger Division",
-    "nationality": "Germany",
-    "theater": "western_europe",
-    "echelon": "division",
-    "branch": "Luftwaffe",
-    "date": "1944-06-06",
-    "place_id": "PL0296",
-    "location_name": "Rennes, Ille-et-Vilaine",
-    "location_represents": "main_body",
-    "precision_km": 10,
-    "confidence": 0.3,
-    "event_type": "other",
-    "current_activity": "5th Parachute Division in the Rennes area, forming under II Parachute Corps",
-    "operation_id": "OP-CAMP-NORMANDY",
-    "operation": "Normandy campaign",
-    "operation_type": "campaign",
-    "campaign": "Normandy",
-    "operation_name": "Overlord",
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1944-06-06",
-    "location_basis": "representative_point",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R832;R002",
-    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.14 (Fold3 page 59); R832: German p.5 (Fold3 page 10)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     2.2957,
-     49.8942
-    ]
-   },
-   "properties": {
-    "claim_id": "C8234",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "GER-COR-067C",
-    "unit_name": "LXVII Corps",
-    "nationality": "Germany",
-    "theater": "western_europe",
-    "echelon": "corps",
-    "branch": "Army",
-    "date": "1944-06-06",
-    "place_id": "PL0743",
-    "location_name": "Amiens, Somme",
-    "location_represents": "headquarters",
-    "precision_km": 5,
-    "confidence": 0.3,
-    "event_type": "hq_observation",
-    "current_activity": "LXVII Corps headquarters at Amiens on the Channel coast either side of the Somme mouth before Sponheimer takes over",
-    "operation_id": "OP-CAMP-NORMANDY",
-    "operation": "Normandy campaign",
-    "operation_type": "campaign",
-    "campaign": "Normandy",
-    "operation_name": "Overlord",
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1944-06-06",
-    "location_basis": "documented_on_date",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R836;R838;R002",
-    "source_locator": "R836: German p.4 (Fold3 page 11); R838: German p.3 (Fold3 page 77)"
    }
   },
   {

@@ -74,12 +74,12 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 8255, dated 1944-06-06 to 1945-05-10 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 8255, dated 1944-05-05 to 1945-05-10 |
 | units in `data/units.csv` | 393: 338 active (have claims), 55 placeholders |
 | claim files (one per active unit) | 338 |
 | conflict groups / claims in a group | 61 / 133 |
 | places (`data/places.csv`) / retired in `data/place_merges.csv` | 3721 / 9 |
-| operations / operation relations | 67 / 14 |
+| operations / operation relations | 68 / 14 |
 | command relations (`data/command_relations.csv`) | 1065 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 2683 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 32 |

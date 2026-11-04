@@ -254730,8 +254730,8 @@
     "location_date": "1945-03-02",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R815;R002",
-    "source_locator": "R815: German p.25 (Fold3 image 34)"
+    "reference_ids": "R815;R816;R002",
+    "source_locator": "R815: German p.25 (Fold3 image 34); R816: B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101), Skizze (Fold3 image 103)"
    }
   },
   {
@@ -254771,8 +254771,8 @@
     "location_date": "1945-03-02",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R815;R002",
-    "source_locator": "R815: German p.25 (Fold3 image 34), Skizze 5 (Fold3 image 88)"
+    "reference_ids": "R815;R816;R002",
+    "source_locator": "R815: German p.25 (Fold3 image 34), Skizze 5 (Fold3 image 88); R816: B-148 Ziffer 3, p.5 (Fold3 image 101)"
    }
   },
   {
@@ -256174,6 +256174,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0775,
+     51.9279
+    ]
+   },
+   "properties": {
+    "claim_id": "C8003",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL3617",
+    "location_name": "Zevenaar, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "346th Infantry Division with 4 battalions taking over the Rhine sector from the IJssel mouth to Emmerich",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R816;R002",
+    "source_locator": "R816: B-148 Ziffer 3, p.5 (Fold3 image 101), Skizze (Fold3 image 102-103)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C8004",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-361D",
+    "unit_name": "361st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL0621",
+    "location_name": "Utrecht",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "361st Infantry Division (personnel only, no weapons) about Utrecht; not employable",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R816;R002",
+    "source_locator": "R816: B-148 Ziffer 3, pp.2, 5 (Fold3 image 98, 101)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5667,
      51.3333
     ]
@@ -256493,8 +256575,8 @@
     "location_date": "1945-03-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R815;R002",
-    "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 88)"
+    "reference_ids": "R815;R816;R002",
+    "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 88); R816: B-148 Ziffer 3, p.1 (Fold3 image 97)"
    }
   },
   {
@@ -256534,8 +256616,8 @@
     "location_date": "1945-03-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R815;R002",
-    "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 78)"
+    "reference_ids": "R815;R816;R002",
+    "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 78); R816: B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101)"
    }
   },
   {

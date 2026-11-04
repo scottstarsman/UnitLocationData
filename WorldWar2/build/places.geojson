@@ -12238,7 +12238,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 16
+    "claims_count": 17
    }
   },
   {
@@ -72018,6 +72018,26 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0775,
+     51.9279
+    ]
+   },
+   "properties": {
+    "place_id": "PL3617",
+    "name": "Zevenaar, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Gelderland",
     "claims_count": 1
    }
   }

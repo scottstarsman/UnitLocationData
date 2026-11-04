@@ -3749,3 +3749,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3655`-`PL3666`.
 - **Open:** roadmap 278-280.
 - **Coordinates:** none changed, no new exceptions; warnings 137 (unchanged). **Tests:** scenario 149. Next free: `C8150`, `PL3667`, `R823`, `G064`, scenario 150, roadmap 281.
+
+## fms-fold3-german-2: FMS B-200, von Lüttwitz, XLVII Panzer Corps answers to questions (4 November 2026)
+
+- **Source:** FMS B-200 (`R823`, new; Allendorf, June 1946, German, two pages answering five questions on B-197/"B-198").
+- **New claim:** `C8150` (XLVII Panzer Corps line at the west edge of Recklinghausen, 30 March, 0.3; also cites `R822`). Place `PL3667` Recklinghausen.
+- **Corroboration (1):** `R823` appended to `C8133` (Beckum); no raise (same author and family).
+- **Not entered:** the 15 km gap and 36-hour courier figures, communication times (notes only).
+- **Open:** roadmap 281. **Tests:** scenario 150. Next free: `C8151`, `PL3668`, `R824`, `G064`, scenario 151, roadmap 282.

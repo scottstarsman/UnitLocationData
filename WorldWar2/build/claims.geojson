@@ -288113,6 +288113,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1979,
+     51.6141
+    ]
+   },
+   "properties": {
+    "claim_id": "C8150",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-30",
+    "place_id": "PL3667",
+    "location_name": "Recklinghausen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "XLVII Panzer Corps falls back, with First Parachute Army approval, to the line Drewer-Hüls-west edge of Recklinghausen-Zeche Ewald-Zeche Graf Bismarck",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Plunder",
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R823;R822;R002",
+    "source_locator": "R823: p.2 (Fold3 page 116); R822: German p.-11- (Fold3 page 89)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9167,
      50.2667
     ]
@@ -289498,8 +289539,8 @@
     "location_date": "1945-04-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R822;R002",
-    "source_locator": "R822: German p.-12- (Fold3 page 90)"
+    "reference_ids": "R822;R823;R002",
+    "source_locator": "R822: German p.-12- (Fold3 page 90); R823: p.1 and 2 (Fold3 page 115 and 116)"
    }
   },
   {

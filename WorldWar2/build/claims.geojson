@@ -255764,6 +255764,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1691,
+     51.9459
+    ]
+   },
+   "properties": {
+    "claim_id": "C7950",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-05",
+    "place_id": "PL3599",
+    "location_name": "Coesfeld, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "245th Infantry Division (no infantry) in army group reserve about Coesfeld-Billerbeck-Dülmen; not fit for action",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.5 (Fold3 image 64, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5586,
      50.4156
     ]
@@ -263554,6 +263595,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1948,
+     52.1397
+    ]
+   },
+   "properties": {
+    "claim_id": "C7941",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL0700",
+    "location_name": "Zutphen, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Army Group H command post at Voorden near Zutphen (until 16 March)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116), German p.10 (Fold3 image 69)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -270114,6 +270196,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4089,
+     52.1638
+    ]
+   },
+   "properties": {
+    "claim_id": "C7951",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL3537",
+    "location_name": "Amersfoort, Utrecht",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Shattered 190th Infantry Division moved by slow rail transport to Amersfoort-Utrecht to refit under Twenty-fifth Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.3, 5 (Fold3 image 62, 64, English p.5), Skizze 1 (Fold3 image 124)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0944,
+     52.509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7952",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-406",
+    "unit_name": "406th Landesschützen Division (Division z.b.V. 406)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL3489",
+    "location_name": "Zwolle, Overijssel",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Staff of Division z.b.V. 406 used as the staff of the 149th Field Training Division raised at Zwolle",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.6 (Fold3 image 65, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1667,
      50.1469
     ]
@@ -270681,6 +270845,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R002",
     "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9085,
+     52.3078
+    ]
+   },
+   "properties": {
+    "claim_id": "C7942",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL3593",
+    "location_name": "Oldenzaal, Overijssel",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Army Group H command post moved to Oldenzaal (17-30 March)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116), Skizze 2 (Fold3 image 128)"
    }
   },
   {
@@ -275476,8 +275681,8 @@
     "location_date": "1945-03-21",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 536"
+    "reference_ids": "R668;R814;R002",
+    "source_locator": "R668: p. 536; R814: German p.12 (Fold3 image 71)"
    }
   },
   {
@@ -275601,6 +275806,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R541;R002",
     "source_locator": "R541: p. 260, 263"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7345,
+     51.5624
+    ]
+   },
+   "properties": {
+    "claim_id": "C7949",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL0986",
+    "location_name": "Dinslaken, Nordrhein-Westfalen",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXVII Corps (Division Hamburg staff, 2nd Parachute Division) on the left of the First Parachute Army north of Dinslaken",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.5 (Fold3 image 64, English p.4-5), Skizze 1 (Fold3 image 125)"
    }
   },
   {
@@ -276009,8 +276255,8 @@
     "location_date": "1945-03-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 533"
+    "reference_ids": "R668;R814;R002",
+    "source_locator": "R668: p. 533; R814: German p.5 (Fold3 image 64)"
    }
   },
   {
@@ -276050,8 +276296,8 @@
     "location_date": "1945-03-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R806;R002",
-    "source_locator": "R668: p. 533; R806: English p.20, Sketch 6"
+    "reference_ids": "R668;R806;R814;R002",
+    "source_locator": "R668: p. 533; R806: English p.20, Sketch 6; R814: German pp.4-5 (Fold3 images 63-64)"
    }
   },
   {
@@ -276091,8 +276337,49 @@
     "location_date": "1945-03-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 533"
+    "reference_ids": "R668;R814;R002",
+    "source_locator": "R668: p. 533; R814: German pp.4-5 (Fold3 images 63-64)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C7953",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Twenty-fifth Army headquarters symbol at Hilversum on Skizze 1 (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 1 (Fold3 image 124)"
    }
   },
   {
@@ -276296,8 +276583,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R668;R002",
-    "source_locator": "R543: p. 314, 301; R668: p. 533"
+    "reference_ids": "R543;R668;R814;R002",
+    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71)"
    }
   },
   {
@@ -276337,8 +276624,8 @@
     "location_date": "1945-03-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R002",
-    "source_locator": "R543: p. 314"
+    "reference_ids": "R543;R814;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-13 (Fold3 images 70-72)"
    }
   },
   {
@@ -276365,7 +276652,7 @@
     "location_name": "Rees, North Rhine-Westphalia (around Rees)",
     "location_represents": "front_line_point",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "counterattack",
     "current_activity": "15th Panzergrenadier Division counterattacks around Rees on 24 March and fails to dislodge the British",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -276378,8 +276665,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R002",
-    "source_locator": "R543: p. 314"
+    "reference_ids": "R543;R814;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71)"
    }
   },
   {
@@ -276706,8 +276993,8 @@
     "location_date": "1945-03-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R002",
-    "source_locator": "R543: p. 304, p. 308"
+    "reference_ids": "R543;R814;R002",
+    "source_locator": "R543: p. 304, p. 308; R814: German pp.5, 13 (Fold3 images 64, 72)"
    }
   },
   {
@@ -276734,7 +277021,7 @@
     "location_name": "Dinslaken, Nordrhein-Westfalen",
     "location_represents": "sector_center",
     "precision_km": 25,
-    "confidence": 0.3,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "holds the southern part of the LXIII Corps zone on the Rhine and is sent against the US 79th Division",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -276747,8 +277034,8 @@
     "location_date": "1945-03-24",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R002",
-    "source_locator": "R543: p. 304, p. 315"
+    "reference_ids": "R543;R814;R002",
+    "source_locator": "R543: p. 304, p. 315; R814: German p.5 (Fold3 image 64), Skizze 1 (Fold3 image 125)"
    }
   },
   {
@@ -276961,6 +277248,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9647,
+     51.6604
+    ]
+   },
+   "properties": {
+    "claim_id": "C7956",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-24",
+    "place_id": "PL3600",
+    "location_name": "Dorsten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "XLVII Panzer Corps (less 15th Panzergrenadier Division) ordered to Dorsten-Kirchhellen to counterattack on 25 March",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.11-13 (Fold3 image 70-72, English p.25-27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -277077,6 +277405,211 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 538"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C7954",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-25",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "General der Kavallerie Kleffel takes over the Twenty-fifth Army from Blumentritt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 1 (Fold3 image 108)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1833,
+     51.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C7955",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-25",
+    "place_id": "PL0450",
+    "location_name": "Haltern am See, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Blumentritt takes over the First Parachute Army after Schlemm is put out of action by a bomb hit and Straube deputises",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.12 (Fold3 image 71, English p.26), Anlage 1 (Fold3 image 108)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9201,
+     51.6037
+    ]
+   },
+   "properties": {
+    "claim_id": "C7957",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-25",
+    "place_id": "PL3601",
+    "location_name": "Kirchhellen (Bottrop), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "190th Infantry Division ordered by truck and rail from the Netherlands to Dorsten-Kirchhellen; slowed by fuel shortage",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.13-14 (Fold3 image 72-73, English p.27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.766,
+     51.6415
+    ]
+   },
+   "properties": {
+    "claim_id": "C7958",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-25",
+    "place_id": "PL3602",
+    "location_name": "Hünxe, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "Elements of the 116th Panzer Division attack from Kirchhellen to the woods east of Hünxe and Bruckhausen, then stall",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.14 (Fold3 image 73, English p.27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9201,
+     51.6037
+    ]
+   },
+   "properties": {
+    "claim_id": "C7959",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-25",
+    "place_id": "PL3601",
+    "location_name": "Kirchhellen (Bottrop), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "LXVII Corps takes its right wing back to the Autobahn and links up with XLVII Panzer Corps",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.14 (Fold3 image 73, English p.27)"
    }
   },
   {
@@ -277323,6 +277856,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R002",
     "source_locator": "R776: Annex I,3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9201,
+     51.6037
+    ]
+   },
+   "properties": {
+    "claim_id": "C7960",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-26",
+    "place_id": "PL3601",
+    "location_name": "Kirchhellen (Bottrop), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "180th Infantry Division and LXVII Corps placed under XLVII Panzer Corps for unity of command",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.14 (Fold3 image 73, English p.28)"
    }
   },
   {
@@ -280519,8 +281093,8 @@
     "location_date": "1945-03-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R544;R002",
-    "source_locator": "R543: p. 319; R544: p. 338"
+    "reference_ids": "R543;R544;R814;R002",
+    "source_locator": "R543: p. 319; R544: p. 338; R814: German pp.13-18 (Fold3 images 72-77)"
    }
   },
   {
@@ -281184,6 +281758,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0439,
+     52.8461
+    ]
+   },
+   "properties": {
+    "claim_id": "C7961",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL3603",
+    "location_name": "Cloppenburg, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "245th Infantry Division (train and supply troops only) moved in long bounds to the Cloppenburg area",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.15 (Fold3 image 74, English p.29)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8504,
+     52.1885
+    ]
+   },
+   "properties": {
+    "claim_id": "C7965",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-471D",
+    "unit_name": "471st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL3606",
+    "location_name": "Lengerich (Westfalen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division z.b.V. 471 (Heckel) committed on the line Rheine-Lengerich-Iburg to block the Teutoburger Wald passes",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.19 (Fold3 image 78, English p.32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3621,
      49.6303
     ]
@@ -281259,6 +281915,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 604"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1833,
+     51.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C7962",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-29",
+    "place_id": "PL0450",
+    "location_name": "Haltern am See, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "LXXXVI Corps local front north of the Lippe side canal broken through; remnants fight scattered toward Münster",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.18-19 (Fold3 image 77-78, English p.30-31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4136,
+     51.9751
+    ]
+   },
+   "properties": {
+    "claim_id": "C7963",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-29",
+    "place_id": "PL3604",
+    "location_name": "Havixbeck, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "First Parachute Army command post at Havixbeck, 15 km west of Münster",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.18 (Fold3 image 77, English p.31), Skizze 2 (Fold3 image 128)"
    }
   },
   {
@@ -281585,8 +282323,49 @@
     "location_date": "1945-03-30",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.2, English p.2"
+    "reference_ids": "R810;R814;R002",
+    "source_locator": "R810: German p.2, English p.2; R814: Skizzen 2-3 (Fold3 images 128, 130)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3437,
+     52.1715
+    ]
+   },
+   "properties": {
+    "claim_id": "C7967",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL3484",
+    "location_name": "Lochem, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Army Group H front about 30/31 March along the IJssel to Brummen, then Voorden-Lochem-Goor-Hengelo-Bentheim-Rheine",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.19 (Fold3 image 78, English p.31-32)"
    }
   },
   {
@@ -281995,8 +282774,131 @@
     "location_date": "1945-03-31",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.2, English p.2"
+    "reference_ids": "R810;R814;R002",
+    "source_locator": "R810: German p.2, English p.2; R814: Skizze 3 (Fold3 image 130)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9338,
+     52.5681
+    ]
+   },
+   "properties": {
+    "claim_id": "C7943",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL3594",
+    "location_name": "Bersenbrück, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Army Group H command post moved to north-west of Bersenbrück (31 March-3 April)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116), Skizze 3 (Fold3 image 130), Skizze 4 (Fold3 image 132)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0448,
+     52.1544
+    ]
+   },
+   "properties": {
+    "claim_id": "C7964",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-31",
+    "place_id": "PL3605",
+    "location_name": "Bad Iburg, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "First Parachute Army command post moved to Iburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.18 (Fold3 image 77, English p.31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6252,
+     51.9625
+    ]
+   },
+   "properties": {
+    "claim_id": "C7966",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL0982",
+    "location_name": "Münster, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXXXVI Corps parts at Münster on Skizze 3 after a two-day defence (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 3 (Fold3 image 130), German p.19 (Fold3 image 78)"
    }
   },
   {
@@ -283227,6 +284129,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 567"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3166,
+     52.5225
+    ]
+   },
+   "properties": {
+    "claim_id": "C7968",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL0770",
+    "location_name": "Lingen (Ems), Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Armeegruppe Student formed (LXXXVIII Corps, II Parachute Corps, WBN) with headquarters north of Lingen (Skizze 4)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.22-23 (Fold3 image 81-82), Skizze 4 (Fold3 image 132)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3166,
+     52.5225
+    ]
+   },
+   "properties": {
+    "claim_id": "C7969",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-04-02",
+    "place_id": "PL0770",
+    "location_name": "Lingen (Ems), Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "II Parachute Corps concentrated toward Lingen for Student's local attacks, tearing a gap either side of Oldenzaal",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.23 (Fold3 image 82, English p.22)"
    }
   },
   {
@@ -287416,6 +288400,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.6286,
+     53.0481
+    ]
+   },
+   "properties": {
+    "claim_id": "C7944",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL3504",
+    "location_name": "Delmenhorst, Lower Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Army Group H command post near Delmenhorst (4-7 April; reading uncertain)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1833,
      51.75
     ]
@@ -287817,8 +288842,8 @@
     "location_date": "1945-04-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R567;R187;R002",
-    "source_locator": "R567: p. 385; R187: text and commanders list"
+    "reference_ids": "R567;R187;R814;R002",
+    "source_locator": "R567: p. 385; R187: text and commanders list; R814: German pp.51-52, Anlage 3 (Fold3 images 110-111)"
    }
   },
   {
@@ -287858,8 +288883,8 @@
     "location_date": "1945-04-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R567;R569;R002",
-    "source_locator": "R567: p. 385; R569: p. 460"
+    "reference_ids": "R567;R569;R814;R002",
+    "source_locator": "R567: p. 385; R569: p. 460; R814: German pp.24-26 (Fold3 images 83-85)"
    }
   },
   {
@@ -288072,6 +289097,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0439,
+     52.8461
+    ]
+   },
+   "properties": {
+    "claim_id": "C7970",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-04-06",
+    "place_id": "PL3603",
+    "location_name": "Cloppenburg, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "First Parachute Army front on 6 April along the Küstenkanal south of Papenburg-Friesoythe-Cloppenburg-Harpstedt-Bassum",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.25 (Fold3 image 84, English p.23)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7708,
      50.81
     ]
@@ -288270,6 +289336,211 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 557"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.0811,
+     52.6241
+    ]
+   },
+   "properties": {
+    "claim_id": "C7971",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL0774",
+    "location_name": "Celle, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Staff of Army Student (Blumentritt) organising the Weser defence; command post first Stadthagen, later Celle",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.24 (Fold3 image 83, English p.23), Skizze 5 (Fold3 image 139)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8592,
+     53.0206
+    ]
+   },
+   "properties": {
+    "claim_id": "C7972",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-07",
+    "place_id": "PL3500",
+    "location_name": "Friesoythe, Lower Saxony",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "7th Parachute Division west of Friesoythe on Skizze 5 (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 5 (Fold3 image 138)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8592,
+     53.0206
+    ]
+   },
+   "properties": {
+    "claim_id": "C7973",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-07",
+    "place_id": "PL3500",
+    "location_name": "Friesoythe, Lower Saxony",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "8th Parachute Division at Friesoythe on Skizze 5 (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 5 (Fold3 image 138)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4364,
+     52.8971
+    ]
+   },
+   "properties": {
+    "claim_id": "C7974",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-471D",
+    "unit_name": "471st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL0772",
+    "location_name": "Wildeshausen, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division z.b.V. 471 at Wildeshausen on Skizze 5 (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 5 (Fold3 image 138)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4364,
+     52.8971
+    ]
+   },
+   "properties": {
+    "claim_id": "C7975",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-07",
+    "place_id": "PL0772",
+    "location_name": "Wildeshausen, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "15th Panzergrenadier Division south of Delmenhorst-Wildeshausen on Skizze 5 (map)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 5 (Fold3 image 138)"
    }
   },
   {
@@ -288646,6 +289917,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.8399,
+     52.9844
+    ]
+   },
+   "properties": {
+    "claim_id": "C7945",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBNW-000H",
+    "unit_name": "Oberbefehlshaber Nordwest (OB Nordwest)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL3595",
+    "location_name": "Soltau, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "OB Nordwest command post north of Soltau (8 April)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -289015,6 +290327,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.2833,
+     53.5167
+    ]
+   },
+   "properties": {
+    "claim_id": "C7946",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBNW-000H",
+    "unit_name": "Oberbefehlshaber Nordwest (OB Nordwest)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-04-09",
+    "place_id": "PL3596",
+    "location_name": "Wohltorf (Reinbek), Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "OB Nordwest command post at Reinbek-Wohltorf east of Hamburg (9-23 April)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.2435,
      51.8883
     ]
@@ -289170,8 +290523,8 @@
     "location_date": "1945-04-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R567;R659;R002",
-    "source_locator": "R567: p. 385; R659: commanders list and table of 1945"
+    "reference_ids": "R567;R659;R814;R002",
+    "source_locator": "R567: p. 385; R659: commanders list and table of 1945; R814: German p.26 (Fold3 image 85), Anlage 3 (Fold3 image 111)"
    }
   },
   {
@@ -293762,8 +295115,8 @@
     "location_date": "1945-04-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 570"
+    "reference_ids": "R668;R814;R002",
+    "source_locator": "R668: p. 570; R814: German p.27 (Fold3 image 86)"
    }
   },
   {
@@ -295771,8 +297124,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R198;R002",
-    "source_locator": "R198: table of 1945, April row"
+    "reference_ids": "R198;R814;R002",
+    "source_locator": "R198: table of 1945, April row; R814: German pp.36-38 (Fold3 images 95-97)"
    }
   },
   {
@@ -295976,8 +297329,8 @@
     "location_date": "1945-04-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R567;R002",
-    "source_locator": "R567: p. 399, 400"
+    "reference_ids": "R567;R814;R002",
+    "source_locator": "R567: p. 399, 400; R814: German p.34 (Fold3 image 93), Anlage 4 (Fold3 image 112)"
    }
   },
   {
@@ -297044,6 +298397,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 580"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5386,
+     52.9841
+    ]
+   },
+   "properties": {
+    "claim_id": "C7976",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-039C",
+    "unit_name": "XXXIX Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-16",
+    "place_id": "PL0660",
+    "location_name": "Uelzen, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "XXXIX Panzer Corps (Decker) attacks south from Uelzen with Panzer Division Clausewitz and Kampfgruppe Putlos",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.33-34 (Fold3 image 92-93), Anlage 4 (Fold3 image 112)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5386,
+     52.9841
+    ]
+   },
+   "properties": {
+    "claim_id": "C7978",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0660",
+    "location_name": "Uelzen, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "84th Infantry Division remnants used as flank cover in the XXXIX Panzer Corps attack south from Uelzen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.34 (Fold3 image 93), Anlage 4 (Fold3 image 112)"
    }
   },
   {
@@ -302012,6 +303447,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.694,
+     53.8255
+    ]
+   },
+   "properties": {
+    "claim_id": "C7979",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-04-18",
+    "place_id": "PL3608",
+    "location_name": "Cuxhaven, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "II Parachute Corps begins its move north toward the Cuxhaven-Bremerhaven assembly area for Holstein",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.31-32 (Fold3 image 90-91), Skizze 6 (Fold3 image 141)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6172,
      51.8006
     ]
@@ -302333,6 +303809,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R810;R002",
     "source_locator": "R810: German p.6, English p.6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6613,
+     52.5781
+    ]
+   },
+   "properties": {
+    "claim_id": "C7977",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-039C",
+    "unit_name": "XXXIX Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-19",
+    "place_id": "PL3607",
+    "location_name": "Gifhorn, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "XXXIX Panzer Corps reaches Gifhorn, disrupting American supply; contact lost when Twelfth Army takes over on 20 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.34-35 (Fold3 image 93-94)"
    }
   },
   {
@@ -308449,6 +309966,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.9302,
+     54.2117
+    ]
+   },
+   "properties": {
+    "claim_id": "C7947",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBNW-000H",
+    "unit_name": "Oberbefehlshaber Nordwest (OB Nordwest)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-04-24",
+    "place_id": "PL3597",
+    "location_name": "Langwedel (Holstein), Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "OB Nordwest command post at Langwedel, 22 km south-west of Kiel (24 April-3 May)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116), Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8833,
+     53.9167
+    ]
+   },
+   "properties": {
+    "claim_id": "C7980",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-24",
+    "place_id": "PL3609",
+    "location_name": "Bad Bramstedt, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Army Blumentritt headquarters at Bad Bramstedt (from 24 April)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      13.2258,
      51.3525
     ]
@@ -309670,8 +311269,8 @@
     "location_date": "1945-04-27",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 597, 603"
+    "reference_ids": "R668;R814;R002",
+    "source_locator": "R668: pp. 597, 603; R814: Anlage 5 (Fold3 image 113)"
    }
   },
   {
@@ -309793,8 +311392,8 @@
     "location_date": "1945-04-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R569;R659;R002",
-    "source_locator": "R569: p. 459; R659: commanders list"
+    "reference_ids": "R569;R659;R814;R002",
+    "source_locator": "R569: p. 459; R659: commanders list; R814: Anlage 5 (Fold3 image 114), Skizze 6 (Fold3 image 141)"
    }
   },
   {
@@ -310089,6 +311688,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.5514,
+     53.379
+    ]
+   },
+   "properties": {
+    "claim_id": "C7981",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL0658",
+    "location_name": "Lauenburg/Elbe, Schleswig-Holstein",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "245th Infantry Division with the Elbe garrison and five tanks resists the British crossing at Lauenburg until 1 May",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.36-38 (Fold3 image 95-97)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2146,
+     53.139
+    ]
+   },
+   "properties": {
+    "claim_id": "C7983",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AA-STRAUB",
+    "unit_name": "Armee-Abteilung Straube",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL0657",
+    "location_name": "Oldenburg (Oldb), Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Armeeabteilung Straube (LXXXVI Corps staff) replaces the First Parachute Army staff in its whole sector",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 5 (Fold3 image 114), Skizze 6 (Fold3 image 141)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4708,
      48.4103
     ]
@@ -310326,8 +312007,8 @@
     "location_date": "1945-04-29",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 310, 311, 337"
+    "reference_ids": "R671;R814;R002",
+    "source_locator": "R671: pp. 310, 311, 337; R814: German p.38 (Fold3 image 97)"
    }
   },
   {
@@ -310738,6 +312419,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7743,
+     53.7011
+    ]
+   },
+   "properties": {
+    "claim_id": "C7982",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-30",
+    "place_id": "PL3610",
+    "location_name": "Ratzeburg, Schleswig-Holstein",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Last parts of the 8th Parachute Division cross the Elbe and move toward Ratzeburg (reading uncertain)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.38 (Fold3 image 97)"
    }
   },
   {
@@ -314221,8 +315943,8 @@
     "location_date": "1945-05-01",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: Map 14 (The Final Phase, 2nd Canadian Corps front, 23 April - 5 May 1945)"
+    "reference_ids": "R668;R814;R002",
+    "source_locator": "R668: Map 14 (The Final Phase, 2nd Canadian Corps front, 23 April - 5 May 1945); R814: Anlage 5 (Fold3 image 114)"
    }
   },
   {
@@ -315287,8 +317009,8 @@
     "location_date": "1945-05-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R569;R660;R661;R002",
-    "source_locator": "R569: p. 465; R660: text of the instrument; R661: article text"
+    "reference_ids": "R569;R660;R661;R814;R002",
+    "source_locator": "R569: p. 465; R660: text of the instrument; R661: article text; R814: German p.38 (Fold3 image 97)"
    }
   },
   {
@@ -315781,6 +317503,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 600"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5588,
+     54.7119
+    ]
+   },
+   "properties": {
+    "claim_id": "C7948",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBNW-000H",
+    "unit_name": "Oberbefehlshaber Nordwest (OB Nordwest)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-05-04",
+    "place_id": "PL3598",
+    "location_name": "Kollerup (Großsolt), Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "OB Nordwest command post at Kollerup south of Flensburg (from 4 May to the end)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116)"
    }
   },
   {

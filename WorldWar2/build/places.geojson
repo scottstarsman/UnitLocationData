@@ -8878,7 +8878,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -12958,7 +12958,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 15
+    "claims_count": 16
    }
   },
   {
@@ -12978,7 +12978,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Schleswig-Holstein",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -13018,7 +13018,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -13818,7 +13818,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -15198,7 +15198,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -15238,7 +15238,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -15278,7 +15278,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -19378,7 +19378,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Nordrhein-Westfalen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19458,7 +19458,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Nordrhein-Westfalen",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -68558,7 +68558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Holland",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -69378,7 +69378,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69478,7 +69478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Overijssel",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69698,7 +69698,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Lower Saxony",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -69778,7 +69778,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Lower Saxony",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -70438,7 +70438,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -71538,6 +71538,366 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg (NL)",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9085,
+     52.3078
+    ]
+   },
+   "properties": {
+    "place_id": "PL3593",
+    "name": "Oldenzaal, Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9338,
+     52.5681
+    ]
+   },
+   "properties": {
+    "place_id": "PL3594",
+    "name": "Bersenbrück, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8399,
+     52.9844
+    ]
+   },
+   "properties": {
+    "place_id": "PL3595",
+    "name": "Soltau, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2833,
+     53.5167
+    ]
+   },
+   "properties": {
+    "place_id": "PL3596",
+    "name": "Wohltorf (Reinbek), Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.9302,
+     54.2117
+    ]
+   },
+   "properties": {
+    "place_id": "PL3597",
+    "name": "Langwedel (Holstein), Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5588,
+     54.7119
+    ]
+   },
+   "properties": {
+    "place_id": "PL3598",
+    "name": "Kollerup (Großsolt), Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1691,
+     51.9459
+    ]
+   },
+   "properties": {
+    "place_id": "PL3599",
+    "name": "Coesfeld, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9647,
+     51.6604
+    ]
+   },
+   "properties": {
+    "place_id": "PL3600",
+    "name": "Dorsten, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9201,
+     51.6037
+    ]
+   },
+   "properties": {
+    "place_id": "PL3601",
+    "name": "Kirchhellen (Bottrop), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.766,
+     51.6415
+    ]
+   },
+   "properties": {
+    "place_id": "PL3602",
+    "name": "Hünxe, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0439,
+     52.8461
+    ]
+   },
+   "properties": {
+    "place_id": "PL3603",
+    "name": "Cloppenburg, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4136,
+     51.9751
+    ]
+   },
+   "properties": {
+    "place_id": "PL3604",
+    "name": "Havixbeck, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0448,
+     52.1544
+    ]
+   },
+   "properties": {
+    "place_id": "PL3605",
+    "name": "Bad Iburg, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8504,
+     52.1885
+    ]
+   },
+   "properties": {
+    "place_id": "PL3606",
+    "name": "Lengerich (Westfalen), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.6613,
+     52.5781
+    ]
+   },
+   "properties": {
+    "place_id": "PL3607",
+    "name": "Gifhorn, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.694,
+     53.8255
+    ]
+   },
+   "properties": {
+    "place_id": "PL3608",
+    "name": "Cuxhaven, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8833,
+     53.9167
+    ]
+   },
+   "properties": {
+    "place_id": "PL3609",
+    "name": "Bad Bramstedt, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.7743,
+     53.7011
+    ]
+   },
+   "properties": {
+    "place_id": "PL3610",
+    "name": "Ratzeburg, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 10,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
     "claims_count": 1
    }
   }

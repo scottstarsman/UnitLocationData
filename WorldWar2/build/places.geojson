@@ -4478,7 +4478,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -4978,7 +4978,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Picardie",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -74638,7 +74638,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 0
+    "claims_count": 1
    }
   },
   {
@@ -75099,6 +75099,106 @@
     "country": "DE",
     "region": "North Rhine-Westphalia",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9315,
+     49.0625
+    ]
+   },
+   "properties": {
+    "place_id": "PL3771",
+    "name": "Longuesse, Val-d'Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Ile-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9672,
+     49.1009
+    ]
+   },
+   "properties": {
+    "place_id": "PL3772",
+    "name": "Us, Val-d'Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Ile-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3645,
+     49.273
+    ]
+   },
+   "properties": {
+    "place_id": "PL3773",
+    "name": "Mello, Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5418,
+     50.2941
+    ]
+   },
+   "properties": {
+    "place_id": "PL3774",
+    "name": "Artres, Nord",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9101,
+     49.005
+    ]
+   },
+   "properties": {
+    "place_id": "PL3775",
+    "name": "Meulan-en-Yvelines, Yvelines",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Ile-de-France",
+    "claims_count": 2
    }
   }
  ]

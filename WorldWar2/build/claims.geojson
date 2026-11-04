@@ -55479,6 +55479,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.9315,
+     49.0625
+    ]
+   },
+   "properties": {
+    "claim_id": "C8355",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-25",
+    "place_id": "PL3771",
+    "location_name": "Longuesse, Val-d'Oise",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "at nightfall the division moves on I SS Panzer Corps order from its security line north of Paris to the area south of Longuesse [?], about 12 km west of Pontoise; Battalion Schmitt covers Pontoise",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.1 (Fold3 image 30)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.558,
      48.2364
     ]
@@ -56005,6 +56046,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 286-7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9101,
+     49.005
+    ]
+   },
+   "properties": {
+    "claim_id": "C8356",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-26",
+    "place_id": "PL3775",
+    "location_name": "Meulan-en-Yvelines, Yvelines",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "about noon the division holds the security line on the north bank of the Seine between the 18th Luftwaffe Field Division and the army boundary, with the Fallschirm-Lehr-Regiment at Meulan and Battalion Reiter in the Poissy loop",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.1-2 (Fold3 images 30-31), sketch Anlage 3 (image 50)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9101,
+     49.005
+    ]
+   },
+   "properties": {
+    "claim_id": "C8363",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-LEHR",
+    "unit_name": "Fallschirm-Lehr-Regiment",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-08-26",
+    "place_id": "PL3775",
+    "location_name": "Meulan-en-Yvelines, Yvelines",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the Fallschirm-Lehr-Regiment at Meulan on the Seine is attacked frontally and from the rear by enemy tanks crossing the river; encircled companies break out at dark",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.2 and p.4 (Fold3 images 31, 33), sketch Anlage 3 (image 50)"
    }
   },
   {
@@ -57153,6 +57276,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R845;R002",
     "source_locator": "R845: German p.70 (Fold3 image 201), p.135 (image 267)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.9672,
+     49.1009
+    ]
+   },
+   "properties": {
+    "claim_id": "C8357",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-28",
+    "place_id": "PL3772",
+    "location_name": "Us, Val-d'Oise",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "division command post moved in the forenoon to Us, 2 km north-east of Vigny, after the line fell back to the heights south-west of Longuesse in the night of 27/28 August",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.3 (Fold3 image 32)"
    }
   },
   {
@@ -60563,6 +60727,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3645,
+     49.273
+    ]
+   },
+   "properties": {
+    "claim_id": "C8358",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-30",
+    "place_id": "PL3773",
+    "location_name": "Mello, Oise",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "withdrawal by day to the Thérain sector; division command post at the mill in Mello at the exit towards Cires-lès-Mello",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.5-6 (Fold3 images 34-35)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.49,
      48.96
     ]
@@ -61253,6 +61458,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R838;R002",
     "source_locator": "R838: German p.43 (Fold3 page 117)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.8263,
+     49.4179
+    ]
+   },
+   "properties": {
+    "claim_id": "C8359",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-31",
+    "place_id": "PL3747",
+    "location_name": "Compiègne",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "main defence effort at Compiègne with outposts on the Aronde; enemy attacks from the south and from the east bank of the Oise repulsed in the evening and night",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.7 (Fold3 image 36)"
    }
   },
   {
@@ -61957,6 +62203,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.0,
+     49.5806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8360",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-01",
+    "place_id": "PL0253",
+    "location_name": "Noyon, Oise",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the division protects the left flank and the Oise crossings at Noyon; in the evening enemy attacks on Noyon stopped by the Fallschirm-Lehr-Regiment; command post at Quesnoy [?] south of Guiscard",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.8-9 (Fold3 images 37-38)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0,
+     49.5806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8364",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-LEHR",
+    "unit_name": "Fallschirm-Lehr-Regiment",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-09-01",
+    "place_id": "PL0253",
+    "location_name": "Noyon, Oise",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the regiment stops enemy attempts to enter Noyon from the south; at midnight 1/2 September it reports attacks along its whole front",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.8 (Fold3 image 37)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3176,
      50.5424
     ]
@@ -62613,6 +62941,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.5418,
+     50.2941
+    ]
+   },
+   "properties": {
+    "claim_id": "C8361",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-02",
+    "place_id": "PL3774",
+    "location_name": "Artres, Nord",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "after withdrawing on its own decision at 03:00 from Noyon and crossing the Somme canal at Jussy, the division assembles south-east of Valenciennes with its command post at Artres, 5 km south of Valenciennes; now under LVIII Panzer Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.13-16 (Fold3 images 42-45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5418,
+     50.2941
+    ]
+   },
+   "properties": {
+    "claim_id": "C8365",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-LEHR",
+    "unit_name": "Fallschirm-Lehr-Regiment",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-09-02",
+    "place_id": "PL3774",
+    "location_name": "Artres, Nord",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the regiment digs in at Artres covering the Valenciennes-Solesmes road; it cannot block Valenciennes because enemy tanks have passed towards Mons by about 17:00",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.15-16 (Fold3 images 44-45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.952,
      50.455
     ]
@@ -63098,6 +63508,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R847",
     "source_locator": "R847: English p.1 (Fold3 image 5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.952,
+     50.455
+    ]
+   },
+   "properties": {
+    "claim_id": "C8362",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-03",
+    "place_id": "PL0228",
+    "location_name": "Mons, Hainaut",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "breaking out east by night via Bavai, the division commander is captured by US tanks south of Mons at about 08:10; only the Fallschirm-Lehr-Regiment escapes the pocket",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R849;R002",
+    "source_locator": "R849: German p.18-19 (Fold3 images 47-48)"
    }
   },
   {

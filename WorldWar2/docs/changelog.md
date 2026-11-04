@@ -4039,3 +4039,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims (old value: none; claim parents blank):** `C8348` FJR 9 at Vire early August 1944 (0.3, `R846`); `C8349` Kampfgruppe Katzmann to II Parachute Corps near Bergen, early October 1944 (0.3, map, `R813`); `C8350` Kampfgruppe Walther cuts the road at Veghel 22 September 1944 (0.5, `R784`); `C8351` Kampfgruppe Walther headquarters Venray 27 September 1944 (0.5, `R784`); `C8352` Kampfgruppe Hobe formed south of Trier 27 February 1945 (0.3, `R776`); `C8353` Korps Ems on the Lower Weser 10 April 1945 (0.3, `R844;R845`); `C8354` stellv. Generalkommando XI at Hannover 9 April 1945 (0.3, `R845`).
 - **Sweep of the private notes for other independent regiments and Kampfgruppen:** candidates with dated places still to enter are listed in roadmap 335. Left out: Regiment "Crosan" (uncertain name), Stäbe Holste/Nordküste/Witthöft (no dated place).
 - **Roadmap:** 332-334 annotated; 335 added. Scenario 182. Next free: `C8355`, `PL3771`, `R849`, `CR1077`, `G066`, scenario 183, roadmap 336.
+
+## fms-fold3-german-2: FMS A-898 German original (Heyking, 6th Fallschirmjäger Division, Seine to Mons 25 August-3 September 1944) as R849 (4 November 2026)
+
+- **Source:** `R849` FMS A-898, Part II, Oberursel February 1946. German original primary (images 25-52 read in full), English as a check; **the maps on images 53-65 were not transcribed**.
+- **New unit (old value: none):** `GER-FJR-LEHR` Fallschirm-Lehr-Regiment (regiment; parent blank under Scott's independent-units rule).
+- **New claims (old value: none; parents blank):** 6th Fallschirmjäger Division `C8355` south of Longuesse [?] 25 August (0.3), `C8356` Seine line at Meulan 26 August, `C8357` command post Us 28 August, `C8358` command post Mello 30 August, `C8359` Compiègne 31 August, `C8360` Noyon 1 September, `C8361` command post Artres 2 September (0.5 each), `C8362` commander captured south of Mons 3 September (0.3); Fallschirm-Lehr-Regiment `C8363` Meulan 26 August, `C8364` Noyon 1 September, `C8365` Artres 2 September (0.5).
+- **Places:** `PL3771` Longuesse, `PL3772` Us, `PL3773` Mello, `PL3774` Artres, `PL3775` Meulan-en-Yvelines (Nominatim).
+- **Roadmap:** 336. Scenario 183. Next free: `C8366`, `PL3776`, `R850`, `CR1077`, `G066`, scenario 184, roadmap 337.

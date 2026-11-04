@@ -3867,3 +3867,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New places:** `PL3725` Naours, `PL3726` Canteleu, `PL3727` Crécy-en-Ponthieu (Nominatim).
 - **Corroborations (no confidence raised, FMS family):** `R836` appended to `C7274`, `C7081`, `C2164`, `C7321`, `C7364`.
 - **Not entered:** roadmap 311-312 (346th/348th reading, 17.10/17.9 date and 711th/719th figure in notes only). Scenario 164.
+
+## fms-fold3-german-2: FMS B-798 German original, Warning, LXVII Corps between the Scheldt and the Maas 15 September-25 November 1944 (4 November 2026)
+
+- **Source:** FMS B-798 (`R837`, new; not previously a reference), German only, Neustadt November 1947, covering memo 15 April 1948 (Fold3 pages 55-112; lessons items 1-2 on page 102 not captured; pages after 112 not checked).
+- **New claims (LXVII Corps, parent blank):** `C8243` Esschen 15 September (0.5), `C8244` Dordrecht 1 November (0.5, Püchler), `C8245` Rotterdam-Hillegersberg about 15 November (0.3, approximate date).
+- **New place:** `PL3728` Hillegersberg (Rotterdam) (Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R837` appended to `C2164`, `C2165`, `C7321`, `C8241`.
+- **Roadmap:** 311 updated with the B-798 command-post dates; 313-314 added. Scenario 165.

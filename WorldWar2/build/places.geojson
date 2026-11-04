@@ -13638,7 +13638,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -21038,7 +21038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -74238,6 +74238,26 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4929,
+     51.9549
+    ]
+   },
+   "properties": {
+    "place_id": "PL3728",
+    "name": "Hillegersberg (Rotterdam), Zuid-Holland",
+    "alt_names": "Hillegersberg-Schiebroek",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
     "claims_count": 1
    }
   }

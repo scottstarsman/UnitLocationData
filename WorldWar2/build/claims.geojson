@@ -135215,8 +135215,8 @@
     "location_date": "1944-11-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R686;R002",
-    "source_locator": "R686: pp. 229-230"
+    "reference_ids": "R686;R825;R002",
+    "source_locator": "R686: pp. 229-230; R825: German p.4 (Fold3 page 8)"
    }
   },
   {
@@ -141169,6 +141169,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7273,
+     47.5889
+    ]
+   },
+   "properties": {
+    "claim_id": "C8178",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL3681",
+    "location_name": "Couthenans, Haute-Saône",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "189th Infantry Division command post hit by the opening barrage and moved to about 2 km west of Couthenans",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.4 (Fold3 page 8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5886,
+     47.5319
+    ]
+   },
+   "properties": {
+    "claim_id": "C8179",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL3682",
+    "location_name": "Gémonval, Doubs",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "189th Infantry Division left wing at Gémonval; flank opened by the 338th Division setback west of Arcey",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.4 and 5 (Fold3 page 8 and 9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -141661,6 +141743,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6585,
+     47.5224
+    ]
+   },
+   "properties": {
+    "claim_id": "C8180",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-15",
+    "place_id": "PL3686",
+    "location_name": "Arcey, Doubs",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "338th Division loses Arcey",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.4 and 7 (Fold3 page 8 and 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2833,
      50.8167
     ]
@@ -141941,6 +142064,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R824;R002",
     "source_locator": "R824: p.2 (Fold3 page 7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7043,
+     47.5617
+    ]
+   },
+   "properties": {
+    "claim_id": "C8181",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL3683",
+    "location_name": "Trémoins, Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "189th Infantry Division reconnaissance battle group pushed back from Échenans to Aibre-Semondans; II./Grenadier Regiment 1212 forms a new front at Trémoins",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.9 (Fold3 page 13)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7736,
+     47.6024
+    ]
+   },
+   "properties": {
+    "claim_id": "C8182",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL3684",
+    "location_name": "Échenans-sous-Mont-Vaudois, Haute-Saône",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "189th Infantry Division command post moved to Échenans north of Fort Vaudois",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.11 (Fold3 page 15)"
    }
   },
   {
@@ -142276,6 +142481,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7625,
+     47.5752
+    ]
+   },
+   "properties": {
+    "claim_id": "C8183",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL3685",
+    "location_name": "Héricourt, Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "189th Infantry Division regiments cling to Tavey and the west edge of Héricourt; enemy tanks seize the Lizaine bridge in Héricourt",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.12 and 13 and 14 (Fold3 page 16 and 17 and 18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7983,
+     47.51
+    ]
+   },
+   "properties": {
+    "claim_id": "C8184",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL3691",
+    "location_name": "Montbéliard, Doubs",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "338th Division has no troops west of the Lizaine; its parts suspected about Montbéliard",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.11 and 12 (Fold3 page 15 and 16)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -142604,6 +142891,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8682,
+     47.6029
+    ]
+   },
+   "properties": {
+    "claim_id": "C8185",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-18",
+    "place_id": "PL3687",
+    "location_name": "Andelnans, Territoire de Belfort",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "189th Infantry Division command post moved to Andelnans",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.16 (Fold3 page 20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7591,
+     47.5968
+    ]
+   },
+   "properties": {
+    "claim_id": "C8186",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-18",
+    "place_id": "PL3688",
+    "location_name": "Mont Vaudois (Héricourt), Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "189th Infantry Division holds the Vaudois line; Fort Vaudois abandoned by its fortress garrison and re-occupied by two companies",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.14 and 17 (Fold3 page 18 and 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8435,
      48.5913
     ]
@@ -142843,6 +143212,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R824;R002",
     "source_locator": "R824: p.6 (Fold3 page 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9144,
+     47.609
+    ]
+   },
+   "properties": {
+    "claim_id": "C8187",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-19",
+    "place_id": "PL3689",
+    "location_name": "Vézelois, Territoire de Belfort",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "189th Infantry Division command post moved to Vézelois; Degener hands over to Oberst i.G. Zorn at 1700",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.20 (Fold3 page 24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8347,
+     47.622
+    ]
+   },
+   "properties": {
+    "claim_id": "C8188",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-189D",
+    "unit_name": "189th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-19",
+    "place_id": "PL3690",
+    "location_name": "Bavilliers, Territoire de Belfort",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "about 250 men of Grenadier Regiment 1213 reassembled at Bavilliers; the division holds the west position",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R825;R002",
+    "source_locator": "R825: German p.18 and 19 and 20 (Fold3 page 22 and 23 and 24)"
    }
   },
   {

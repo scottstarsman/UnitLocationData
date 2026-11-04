@@ -3776,3 +3776,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Corroborations (2):** `R808` appended to `C1369` and `C1380` (2nd and 3rd Canadian Divisions opposite the division at Calcar); no raises.
 - **Translation and internal differences:** recorded in the private notes and roadmap 284.
 - **Open:** roadmap 284. **Tests:** scenario 152. Next free: `C8178`, `PL3681`, `R825`, `G064`, scenario 153, roadmap 285.
+
+## fms-fold3-german-2: FMS B-369 German original, Degener, 189th Infantry Division west of Belfort 14-19 November 1944 (4 November 2026)
+
+- **Source:** FMS B-369 (`R825`, new), German pages 1-28 primary, English sampled.
+- **New claims:** 11 rows `C8178`-`C8188` (189th Division command posts west of Couthenans, Échenans-sous-Mont-Vaudois, Andelnans and Vézelois, the change of command to Oberst i.G. Zorn on 19 November, Gémonval, Trémoins, Héricourt, Fort Vaudois, Bavilliers; 338th Division at Arcey and Montbéliard).
+- **Corroboration (1):** `R825` appended to `C2052` (338th attacked 14 November); no raise.
+- **Places:** `PL3681`-`PL3691`.
+- **Not entered:** uncertain place names and unnamed French units (roadmap 285).
+- **Tests:** scenario 153. Next free: `C8189`, `PL3692`, `R826`, `G064`, scenario 154, roadmap 286.

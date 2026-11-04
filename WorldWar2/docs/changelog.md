@@ -4067,3 +4067,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Independent units:** Führer-Begleit-Brigade (existing `GER-PG-FUEBE`) gets `C8383`; Führer-Grenadier-Brigade only planned, not entered; Volkswerfer brigade and Volksartillerie-Korps unnumbered, not entered (roadmap 337).
 - Scenario 185. Next free: `C8387`, `PL3785`, `R851`, `CR1077`, `G067`, scenario 186, roadmap 338.
 - Scenario 114 expectation updated: `C7136` and `C2181` reference_ids now include `R850` (old lists without it), reason: A-939 citation.
+
+## fms-fold3-german-2: FMS A-940 German original (Lüttwitz, answers on XLVII Panzer Corps in the Ardennes, 27 February 1946) as R851 (4 November 2026)
+
+- **Source:** `R851` FMS A-940, answers to the Historical Division questionnaire of 11 February 1946; German original (images 2-47) read in full as primary; English (48-75) checked. Same author as A-939 (`R850`): one source family, no raises.
+- **New units (old value none):** `GER-GR-078` Grenadier-Regiment 78, parent `GER-VG-026D` (organic relation `CR1077`), under the small-units rule; `GER-ARMY-LUETT` Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944), blank parent under the independent-units rule.
+- **New claims (old value none; reasons in each row):** `C8387` Regiment 78 breaks Hosingen 17 Dec (0.5); `C8388` 2nd Panzer takes Bande and sets up its CP 23 Dec (0.5); `C8389`/`C8390` Armeegruppe Lüttwitz formed 30 Dec and dissolved 31 Dec (0.3, representative point at Bertogne from the sketch); `C8391` corps CP Helzingen (Hachiville) 14-17 Jan and `C8392` Breitfeld 17-21 Jan (0.3, sketch V).
+- **Citations (no raises):** `R851` appended to `C8377`, `C0981`, `C7149`, `C8382`, `C7151`, `C7153`, `C8386`, `C8385`.
+- **Places:** `PL3785` Bande, `PL3786` Hachiville (Helzingen), `PL3787` Breitfeld (Nominatim, `R002`).
+- Not entered: roadmap 338 (Steinbach CP 9-14 January uncertain reading). Scenario 186. Next free: `C8393`, `PL3788`, `R852`, `CR1078`, `G067`, scenario 187, roadmap 339.

@@ -177732,8 +177732,8 @@
     "location_date": "1944-12-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R393;R643;R261;R850;R002",
-    "source_locator": "R393: p. 174, 177-178; R643: listing under the 5th Panzer Army heading; R261: table of 1944, December row; R850: German p.3-4 (Fold3 images 9-10)"
+    "reference_ids": "R393;R643;R261;R850;R851;R002",
+    "source_locator": "R393: p. 174, 177-178; R643: listing under the 5th Panzer Army heading; R261: table of 1944, December row; R850: German p.3-4 (Fold3 images 9-10); R851: German answer to question 8 (image 16)"
    }
   },
   {
@@ -179659,8 +179659,49 @@
     "location_date": "1944-12-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R850;R002",
-    "source_locator": "R850: German p.6 (Fold3 image 12)"
+    "reference_ids": "R850;R851;R002",
+    "source_locator": "R850: German p.6 (Fold3 image 12); R851: German answer to question 5 (image 14)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0911,
+     50.0144
+    ]
+   },
+   "properties": {
+    "claim_id": "C8387",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-GR-078",
+    "unit_name": "Grenadier-Regiment 78 (26th Volksgrenadier Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-12-17",
+    "place_id": "PL2487",
+    "location_name": "Hosingen, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "the US defence of Hosingen is broken only when Regiment 78 of the 26th Volksgrenadier Division arrives",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R851;R002",
+    "source_locator": "R851: German answer to question 5 (Fold3 image 14)"
    }
   },
   {
@@ -190205,6 +190246,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4155,
+     50.1666
+    ]
+   },
+   "properties": {
+    "claim_id": "C8388",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-23",
+    "place_id": "PL3785",
+    "location_name": "Bande (Nassogne), Luxembourg province",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "the division takes Bande without a fight and sets up its command post there; Lüttwitz visits it on the forenoon of 24 December",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R851;R002",
+    "source_locator": "R851: German answer to question 16 (Fold3 image 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8465,
      50.4112
     ]
@@ -190401,8 +190483,8 @@
     "location_date": "1944-12-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R389;R002",
-    "source_locator": "R389: p. 476"
+    "reference_ids": "R389;R851;R002",
+    "source_locator": "R389: p. 476; R851: German annex to question 13 (images 23-26)"
    }
   },
   {
@@ -190811,8 +190893,8 @@
     "location_date": "1944-12-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R850;R002",
-    "source_locator": "R850: German p.14-15 (Fold3 images 20-21)"
+    "reference_ids": "R850;R851;R002",
+    "source_locator": "R850: German p.14-15 (Fold3 images 20-21); R851: German answer to question 9 (image 18)"
    }
   },
   {
@@ -190975,8 +191057,8 @@
     "location_date": "1944-12-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R708;R850;R002",
-    "source_locator": "R708: p. 567; R850: German p.15-16 (Fold3 images 21-22)"
+    "reference_ids": "R708;R850;R851;R002",
+    "source_locator": "R708: p. 567; R850: German p.15-16 (Fold3 images 21-22); R851: German answers to questions 9-10 (images 18-19), sketch I (images 36-39)"
    }
   },
   {
@@ -197822,8 +197904,8 @@
     "location_date": "1944-12-30",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R709;R850;R002",
-    "source_locator": "R709: p. 616; R850: German p.22-23 (Fold3 images 28-29)"
+    "reference_ids": "R709;R850;R851;R002",
+    "source_locator": "R709: p. 616; R850: German p.22-23 (Fold3 images 28-29); R851: German annex to question 13 (images 23-26)"
    }
   },
   {
@@ -197947,6 +198029,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R391;R002",
     "source_locator": "R391: p. 539"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6521,
+     50.09
+    ]
+   },
+   "properties": {
+    "claim_id": "C8389",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-LUETT",
+    "unit_name": "Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-30",
+    "place_id": "PL2501",
+    "location_name": "Bertogne, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps) formed for the attack south of Bastogne to reclose the ring",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R851;R002",
+    "source_locator": "R851: German answer to question 11 (Fold3 images 19-20), sketch II and III \"Armee Gruppe Lüttwitz 30.12.44\" (images 44-47)"
    }
   },
   {
@@ -198111,6 +198234,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R813;R002",
     "source_locator": "R813: German p.6 (Fold3 image 29, English p.6)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6521,
+     50.09
+    ]
+   },
+   "properties": {
+    "claim_id": "C8390",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-LUETT",
+    "unit_name": "Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-12-31",
+    "place_id": "PL2501",
+    "location_name": "Bertogne, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Armeegruppe Lüttwitz dissolved after the failed attack",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R851;R002",
+    "source_locator": "R851: German answer to question 11f (Fold3 image 20)"
    }
   },
   {
@@ -210737,8 +210901,8 @@
     "location_date": "1945-01-14",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R850;R002",
-    "source_locator": "R850: German correction sheet p.34 (Fold3 image 34), replacing p.26 (image 32)"
+    "reference_ids": "R850;R851;R002",
+    "source_locator": "R850: German correction sheet p.34 (Fold3 image 34), replacing p.26 (image 32); R851: German annex to question 13 (images 23-26)"
    }
   },
   {
@@ -210778,8 +210942,49 @@
     "location_date": "1945-01-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R850;R002",
-    "source_locator": "R850: German correction sheet p.34 (Fold3 image 34)"
+    "reference_ids": "R850;R851;R002",
+    "source_locator": "R850: German correction sheet p.34 (Fold3 image 34); R851: German annex to question 13 (images 23-26)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9232,
+     50.1075
+    ]
+   },
+   "properties": {
+    "claim_id": "C8391",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-01-14",
+    "place_id": "PL3786",
+    "location_name": "Hachiville (Helzingen, Wincrange)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "corps command post marked \"XLVII 14.-17.I. Helzingen\" on sketch V",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R851;R002",
+    "source_locator": "R851: sketch V (Fold3 images 27-35)"
    }
   },
   {
@@ -216684,6 +216889,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R808;R002",
     "source_locator": "R808: German p.5, English p.6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1527,
+     50.2634
+    ]
+   },
+   "properties": {
+    "claim_id": "C8392",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-01-17",
+    "place_id": "PL3787",
+    "location_name": "Breitfeld (Sankt Vith), Liège province",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "corps command post marked \"XLVII 17.-21.I. Breitfeld\" on sketch V",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R851;R002",
+    "source_locator": "R851: sketch V (Fold3 images 27-35)"
    }
   },
   {

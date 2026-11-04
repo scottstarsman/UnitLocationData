@@ -49438,7 +49438,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -49718,7 +49718,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -75373,6 +75373,66 @@
    "properties": {
     "place_id": "PL3784",
     "name": "Mabompré (Houffalize), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4155,
+     50.1666
+    ]
+   },
+   "properties": {
+    "place_id": "PL3785",
+    "name": "Bande (Nassogne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9232,
+     50.1075
+    ]
+   },
+   "properties": {
+    "place_id": "PL3786",
+    "name": "Hachiville (Helzingen, Wincrange)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "LU",
+    "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1527,
+     50.2634
+    ]
+   },
+   "properties": {
+    "place_id": "PL3787",
+    "name": "Breitfeld (Sankt Vith), Liège province",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

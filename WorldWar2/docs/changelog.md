@@ -3697,3 +3697,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Corroborations (7):** `R817` appended to `C7719`, `C7717`, `C7720`, `C1181`, `C1183`, `C7835`, `C7579` (same FMS family as B-093/B-762/B-414; no raises).
 - **Conflict kept:** roadmap 267 (6th Parachute Division at Emmerich on 28 March in Stacey `C7574` against Terborg-Varsseveld in B-453; Elden map rows `C6213`/`C6348` against the Millingen sector).
 - **Coordinates:** no changes; no new warnings. **Tests:** scenario 144. Next free: `C8013`, `PL3619`, `R818`, `G063`, scenario 145, roadmap 268.
+
+
+### FMS B-580 (Langhaeuser, 6th Parachute Division, 5th and 6th commitments, about 1 April-10 May 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R818`, Rudolf Langhaeuser, MS B-580 (signed Steinlager Allendorf, 1 June 1947), German original Fold3 images 1-24 primary (printed pp.1-11, Anlage 6 and 7 overlays), English images 25-40 checked. Translation differences recorded: lively enemy "Sabotaetigkeit" (sabotage) rendered "fighter bombers"; eastern for western flank (p.9) and bank (p.10); 14 April where the faint German reads 10 April; the 7 June 1947 comment sheet signed Oberst Geyer in the German is "Col. Meyer" in the English. Continues B-453 (`R817`).
+- **New claims (7, all 0.3):** `C8013` (quarters at Holten behind the Twente Canal, early April), `C8014` (Deventer-Holten line, about 10 April), `C8015` (Olst-Raalte-Lemelerveld line), `C8016` (Zwolle bridgehead, Heino and Lierderholthuis), `C8017` (IJssel west bank, regimental posts Vaassen-Epe-Wapenveld, about 15 April), `C8018` (Grebbe line Woudenberg-Amersfoort-Baarn, last days of April), `C8019` (capitulation of Festung Holland, 10 May; assembly area "Oesterberg" unidentified).
+- **Places:** `PL3619`-`PL3621` (Raalte, Heino, Epe).
+- **Corroborations (8):** `R818` appended to `C7579`, `C7837`, `C7631`, `C7843`, `C7844`, `C7847`, `C7841`, `C7580` (same FMS family as B-762; no raises).
+- **Open:** roadmap 268 (dating of the Holten line and of the move to the IJssel west bank).
+- **Coordinates:** no changes; no new warnings. Three new `current_activity` texts shortened. **Tests:** scenario 145. Next free: `C8020`, `PL3622`, `R819`, `G063`, scenario 146, roadmap 269.

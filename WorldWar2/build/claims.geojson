@@ -285275,8 +285275,8 @@
     "location_date": "1945-04-02",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R810;R817;R002",
-    "source_locator": "R668: p. 546; R810: German p.2-3, English pp.2-3; R817: German pp.8-9 (Fold3 images 12-13)"
+    "reference_ids": "R668;R810;R817;R818;R002",
+    "source_locator": "R668: p. 546; R810: German p.2-3, English pp.2-3; R817: German pp.8-9 (Fold3 images 12-13); R818: German p.1 (Fold3 image 5)"
    }
   },
   {
@@ -289580,8 +289580,8 @@
     "location_date": "1945-04-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.3, English p.3"
+    "reference_ids": "R810;R818;R002",
+    "source_locator": "R810: German p.3, English p.3; R818: German pp.2-3 (Fold3 images 6-7)"
    }
   },
   {
@@ -289949,8 +289949,8 @@
     "location_date": "1945-04-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R810;R002",
-    "source_locator": "R668: p. 550; R810: German p.2, English p.2"
+    "reference_ids": "R668;R810;R818;R002",
+    "source_locator": "R668: p. 550; R810: German p.2, English p.2; R818: Anlage 6 (Fold3 images 16, 22)"
    }
   },
   {
@@ -289992,6 +289992,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 550"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4216,
+     52.282
+    ]
+   },
+   "properties": {
+    "claim_id": "C8013",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-05",
+    "place_id": "PL3487",
+    "location_name": "Holten, Overijssel",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "6th Parachute Division quarters at Holten behind the Twente Canal; reorganising until about 8-9 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.1 (Fold3 image 5, English p.1, Fold3 image 27)"
    }
   },
   {
@@ -295370,6 +295411,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4216,
+     52.282
+    ]
+   },
+   "properties": {
+    "claim_id": "C8014",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-10",
+    "place_id": "PL3487",
+    "location_name": "Holten, Overijssel",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "6th Parachute Division falls back to the line Deventer-Holten-hills north of Holten (to south of Hellendoorn)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.2-4 (Fold3 image 6-8, English p.3-4, Fold3 image 29-30), Anlage 6 (Fold3 image 16-23)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -296429,6 +296511,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 571"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3078,
+     52.3874
+    ]
+   },
+   "properties": {
+    "claim_id": "C8015",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-12",
+    "place_id": "PL3619",
+    "location_name": "Raalte, Overijssel",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "6th Parachute Division falls back to the line Olst-Raalte-west of Lemelerveld, holding contact with the IJssel",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.4 (Fold3 image 8, English p.4, Fold3 image 30), Anlage 6 (Fold3 image 16-23)"
    }
   },
   {
@@ -297739,8 +297862,49 @@
     "location_date": "1945-04-14",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.5, English p.5"
+    "reference_ids": "R810;R818;R002",
+    "source_locator": "R810: German p.5, English p.5; R818: German p.6 (Fold3 image 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2338,
+     52.4362
+    ]
+   },
+   "properties": {
+    "claim_id": "C8016",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-14",
+    "place_id": "PL3620",
+    "location_name": "Heino (Raalte), Overijssel",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division holds the Zwolle bridgehead; strongpoints Heino (Regt 18) and Lierderholthuis (Regt 17)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.5 (Fold3 image 9, English p.4-5, Fold3 image 30-31), Anlage 6 (Fold3 image 16-23)"
    }
   },
   {
@@ -298971,6 +299135,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 577"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9632,
+     52.327
+    ]
+   },
+   "properties": {
+    "claim_id": "C8017",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-15",
+    "place_id": "PL3621",
+    "location_name": "Epe, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "6th Parachute Division on the IJssel west bank Apeldoorn-Zwolle bridge; regimental posts Vaassen, Epe, Wapenveld",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.5-6 (Fold3 image 9-10, English p.5-6, Fold3 image 31-32), Anlage 6 (Fold3 image 16-23)"
    }
   },
   {
@@ -303643,8 +303848,8 @@
     "location_date": "1945-04-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R810;R002",
-    "source_locator": "R668: p. 578; R810: German p.5-6, English pp.5-6"
+    "reference_ids": "R668;R810;R818;R002",
+    "source_locator": "R668: p. 578; R810: German p.5-6, English pp.5-6; R818: German pp.6-7 (Fold3 images 10-11)"
    }
   },
   {
@@ -304627,8 +304832,8 @@
     "location_date": "1945-04-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.6, English p.6"
+    "reference_ids": "R810;R818;R002",
+    "source_locator": "R810: German p.6, English p.6; R818: German pp.6-7 (Fold3 images 10-11)"
    }
   },
   {
@@ -304955,8 +305160,8 @@
     "location_date": "1945-04-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.6-7, English pp.6-7"
+    "reference_ids": "R810;R818;R002",
+    "source_locator": "R810: German p.6-7, English pp.6-7; R818: German p.7 (Fold3 image 11)"
    }
   },
   {
@@ -306882,8 +307087,8 @@
     "location_date": "1945-04-22",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.7, English p.7"
+    "reference_ids": "R810;R818;R002",
+    "source_locator": "R810: German p.7, English p.7; R818: German pp.8-9 (Fold3 images 12-13)"
    }
   },
   {
@@ -312952,6 +313157,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: Anlage 5 (Fold3 image 114), Skizze 6 (Fold3 image 141)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4089,
+     52.1638
+    ]
+   },
+   "properties": {
+    "claim_id": "C8018",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-28",
+    "place_id": "PL3537",
+    "location_name": "Amersfoort, Utrecht",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division behind the Grebbe line Woudenberg-Amersfoort-Baarn, outposts at Hoevelaken and Nijkerk",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.8-10 (Fold3 image 12-14, English p.9-11, Fold3 image 35-37), Anlage 7 (Fold3 image 24)"
    }
   },
   {
@@ -328245,6 +328491,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R570;R715;R002",
     "source_locator": "R570: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4089,
+     52.1638
+    ]
+   },
+   "properties": {
+    "claim_id": "C8019",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-05-10",
+    "place_id": "PL3537",
+    "location_name": "Amersfoort, Utrecht",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "6th Parachute Division capitulates with Festung Holland; outposts at Hoevelaken and Bunschoten fought for",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R818;R002",
+    "source_locator": "R818: German p.10 (Fold3 image 14, English p.10-11, Fold3 image 36-37)"
    }
   }
  ]

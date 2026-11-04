@@ -69438,7 +69438,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Overijssel",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -70438,7 +70438,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -72053,6 +72053,66 @@
    "properties": {
     "place_id": "PL3618",
     "name": "Varsseveld (Oude IJsselstreek), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3078,
+     52.3874
+    ]
+   },
+   "properties": {
+    "place_id": "PL3619",
+    "name": "Raalte, Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2338,
+     52.4362
+    ]
+   },
+   "properties": {
+    "place_id": "PL3620",
+    "name": "Heino (Raalte), Overijssel",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Overijssel",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9632,
+     52.327
+    ]
+   },
+   "properties": {
+    "place_id": "PL3621",
+    "name": "Epe, Gelderland",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

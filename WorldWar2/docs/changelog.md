@@ -3801,3 +3801,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claim:** `C8199` (7th Parachute Division extracted from the Leer-Bad Zwischenahn line, end of April; inferred date old none, new 1945-04-28, 0.3), parent blank. No new places.
 - **Corroborations (no confidence raised, FMS family):** `R827` appended to `C7716`, `C1181`, `C1183`, `C1236`, `C8192`, `C8195`.
 - **Not entered:** strengths (notes only; about 1,000 per division against B-674's 3,500-4,000); uncertain capitulation place; facts without a unit file. Roadmap 289-290. Scenario 155.
+
+## fms-fold3-german-2: FMS B-051 German typescript, Meindl, II Parachute Corps Part III Rhineland 15 September 1944-21 March 1945 (4 November 2026)
+
+- **Source:** FMS B-051 (`R828`, new; not previously a reference; Fold3 lists it as "See MS # B-093", but it is a separate first typescript with different details), German only, Fold3 pages 38-67.
+- **New claim:** `C8200` (II Parachute Corps staff first at Flüren near Wesel, 10 March 1945, 0.3, hard-to-read name), parent blank. Place `PL3700`.
+- **Corroborations (no confidence raised, FMS family):** `R828` appended to `C7689`, `C7690`, `C7691`, `C7692`, `C7695`, `C7696`, `C7699`, `C7701`, `C7702`, `C7703`, `C7704`, `C7705`, `C7706`, `C7707`, `C7708`, `C7709`, `C7710`, `C7715`, `C7716`.
+- **Differences from B-093:** roadmap 291-293 (evacuation approved 9 March 1830 against refused; Aufklärungs-Abteilung 12 at Keppeln; 7th Parachute Division to the Ardennes in mid-December). No conflict rows. Scenario 156.

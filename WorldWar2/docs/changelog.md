@@ -3941,3 +3941,7 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 ## fms-fold3-german-2: 5th Parachute Division Rennes and Dinan as a move (4 November 2026)
 
 - Scott decided that `C8214` (Rennes, 15 May 1944, B-240) and `C8281` (Tressaint near Dinan, 6 June 1944, B-820) are successive positions, a move, not a conflict. Notes on both rows updated; roadmap 323 marked resolved (old: conflict; new: move; reason: Scott's decision). No values, confidences or IDs changed.
+
+## fms-fold3-german-2: FMS B-509 logged as out of scope (4 November 2026)
+
+- FMS B-509 (Bülowius, II Fliegerkorps) is air command, not ground data, and no fitting unit id exists: no rows, no reference; roadmap 325. Next free roadmap: 326.

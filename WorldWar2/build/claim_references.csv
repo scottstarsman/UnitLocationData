@@ -49,6 +49,7 @@ C0011,R107,general,
 C0011,R137,general,
 C0011,R165,general,
 C0011,R448,general,
+C0011,R845,general,German p.32 (Fold3 image 163)
 C0012,R001,location,
 C0012,R132,general,
 C0012,R448,general,
@@ -57,6 +58,7 @@ C0013,R001,location,
 C0013,R121,general,
 C0013,R137,general,
 C0013,R447,general,
+C0013,R845,general,"German p.29 and p.32 (Fold3 images 160, 163)"
 C0014,R001,location,
 C0014,R096,general,
 C0014,R448,general,
@@ -199,6 +201,9 @@ C0051,R449,general,
 C0052,R001,location,
 C0052,R125,general,
 C0052,R449,general,
+C0052,R830,general,German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4)
+C0052,R831,general,German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59)
+C0052,R832,general,German p.8 (Fold3 page 13)
 C0053,R001,location,
 C0053,R449,general,
 C0054,R002,location,
@@ -217,6 +222,7 @@ C0057,R059,general,
 C0057,R137,general,
 C0057,R141,general,
 C0057,R449,strength,
+C0057,R832,general,German p.8 (Fold3 page 13)
 C0058,R001,location,
 C0058,R065,general,
 C0058,R449,general,
@@ -241,9 +247,12 @@ C0064,R001,location,
 C0064,R054,general,
 C0064,R141,general,
 C0064,R449,general,
+C0064,R854,general,German p.3 (Fold3 image 7)
 C0065,R001,location,
 C0065,R065,strength,
 C0065,R449,general,
+C0065,R830,general,German p.1 (Fold3 page 19) and English p.2 (Fold3 page 5)
+C0065,R853,general,German p.14 (Fold3 image 20)
 C0066,R001,location,
 C0066,R091,general,
 C0066,R446,general,
@@ -295,6 +304,7 @@ C0081,R001,location,
 C0081,R115,general,
 C0081,R132,general,
 C0081,R446,general,
+C0081,R832,general,German p.9 (Fold3 page 14)
 C0082,R001,location,
 C0082,R114,general,
 C0082,R141,general,
@@ -322,6 +332,7 @@ C0089,R109,general,
 C0089,R111,general,
 C0089,R449,command_relationship,p. 378-379
 C0089,R761,general,Annex 3
+C0089,R830,general,German p.2 (Fold3 page 20) and English p.2 (Fold3 page 5)
 C0090,R001,location,
 C0090,R114,general,
 C0090,R141,strength,
@@ -335,6 +346,7 @@ C0092,R761,general,p. 39
 C0093,R001,location,
 C0093,R140,general,
 C0093,R449,general,
+C0093,R854,general,"German p.1 and p.4 (Fold3 images 5, 8)"
 C0094,R001,location,
 C0094,R008,general,
 C0094,R140,general,
@@ -426,6 +438,7 @@ C0128,R112,general,
 C0129,R001,location,
 C0129,R013,general,
 C0129,R154,general,
+C0129,R845,general,German p.53 (Fold3 image 184)
 C0130,R001,location,
 C0130,R449,general,
 C0131,R150,command_relationship,
@@ -697,6 +710,7 @@ C0219,R336,general,
 C0220,R002,location,
 C0220,R336,general,
 C0220,R811,general,German pp.13-14
+C0220,R812,general,printed p.16 (Fold3 image 31)
 C0221,R002,location,
 C0221,R336,general,
 C0222,R002,location,
@@ -1519,6 +1533,7 @@ C0544,R367,general,
 C0544,R439,general,"p. 545, 549"
 C0544,R440,general,p. 565
 C0544,R467,general,
+C0544,R824,general,p.6 and 8 (Fold3 page 11 and 13)
 C0545,R002,location,
 C0545,R383,general,p. 287
 C0545,R385,general,p. 314
@@ -1569,6 +1584,7 @@ C0556,R391,general,"p. 509, 524"
 C0556,R462,general,
 C0557,R002,location,
 C0557,R391,general,"p. 552, 553, 554"
+C0557,R843,general,German p.35 (Fold3 page 103)
 C0558,R001,location,
 C0558,R391,general,"p. 509, 524"
 C0558,R471,general,
@@ -2059,6 +2075,7 @@ C0714,R107,general,
 C0714,R185,general,list of commanders
 C0714,R588,general,p. 169
 C0714,R668,general,p. 178
+C0714,R845,general,German p.60 (Fold3 image 191)
 C0715,R001,location,
 C0715,R404,general,"p. 532, 535"
 C0716,R001,location,
@@ -2132,12 +2149,15 @@ C0744,R001,location,
 C0744,R404,general,"p. 550, 548"
 C0745,R001,location,
 C0745,R404,general,"p. 547, 548, 538"
+C0745,R833,general,German p.11 (Fold3 page 36)
 C0746,R002,location,
 C0746,R404,general,"p. 543, 542, 538"
 C0746,R668,general,pp.262-3
+C0746,R833,general,German pp.11-12 (Fold3 pages 36-37)
 C0747,R002,location,
 C0747,R404,general,"p. 543, 542"
 C0747,R668,general,p.262
+C0747,R833,general,German p.11 (Fold3 page 36)
 C0748,R002,location,
 C0748,R404,general,"p. 550, 540"
 C0749,R001,location,
@@ -2168,15 +2188,19 @@ C0760,R001,location,
 C0760,R592,general,p. 227
 C0761,R001,location,
 C0761,R592,general,p. 227
+C0761,R841,general,German pp.5-6 (Fold3 pages 18-19)
 C0762,R001,location,
 C0762,R592,general,p. 227
 C0763,R001,location,
 C0763,R592,general,p. 227
+C0763,R830,general,German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)
+C0763,R846,general,German p.1 (Fold3 image 8)
 C0764,R002,location,
 C0764,R402,general,p. 459
 C0764,R403,general,p. 482
 C0765,R001,location,
 C0765,R593,general,p. 324
+C0765,R845,general,German p.59 (Fold3 image 190)
 C0766,R001,location,
 C0766,R593,general,p. 324
 C0767,R001,location,
@@ -2196,6 +2220,7 @@ C0770,R761,general,p. 49
 C0771,R001,location,
 C0771,R586,general,"p. 30, 29"
 C0771,R761,general,p. 49
+C0771,R854,general,German p.4 (Fold3 image 8)
 C0772,R001,location,
 C0772,R279,general,Einsatz und Unterstellung (6 July 1944 entry)
 C0773,R001,location,
@@ -2281,14 +2306,21 @@ C0800,R603,general,p. 60
 C0801,R001,location,
 C0801,R180,general,Einsatz und Unterstellung (11 July 1944 entry)
 C0801,R588,general,"p. 157, 148"
+C0801,R853,general,German p.17 (Fold3 image 23)
 C0802,R001,location,
 C0802,R588,general,"p. 148, 157"
+C0802,R830,general,German p.3 (Fold3 page 21) and English p.3 (Fold3 page 6)
 C0803,R001,location,
 C0803,R180,general,Einsatz und Unterstellung (18 July 1944 entry)
 C0803,R588,general,"p. 174, 173"
+C0803,R830,general,German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)
+C0803,R832,general,"English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
 C0804,R001,location,
 C0804,R180,general,Einsatz und Unterstellung (18 July 1944 entry)
 C0804,R588,general,p. 174
+C0804,R830,general,German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)
+C0804,R832,general,"English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
+C0804,R853,general,German p.18 (Fold3 image 24)
 C0805,R002,location,
 C0805,R248,general,Einsatz und Unterstellung (night 13/14 July 1944)
 C0805,R591,general,p. 128
@@ -2336,6 +2368,7 @@ C0821,R001,location,
 C0821,R594,general,"German list, II SS Panzer Corps"
 C0822,R001,location,
 C0822,R593,general,p. 364
+C0822,R845,general,"German p.70 and p.84 (Fold3 images 201, 215)"
 C0823,R001,location,
 C0823,R410,general,p. 700
 C0823,R411,general,p. 42
@@ -2423,6 +2456,7 @@ C0856,R001,location,
 C0856,R606,general,p. 193
 C0856,R806,general,"German pp.2-4, English pp.2-4"
 C0856,R807,general,"English p.12, German p.12"
+C0856,R813,general,German pp.2-3 (Fold3 images 25-26)
 C0857,R002,location,
 C0857,R606,general,p. 191-192
 C0858,R002,location,
@@ -2444,13 +2478,17 @@ C0864,R441,general,p. 88
 C0864,R442,general,p. 109
 C0865,R002,location,
 C0865,R442,general,p. 109-112
+C0865,R856,general,English typed p.-98- (Fold3 page 249)
 C0866,R001,location,
 C0866,R442,general,"p. 98, 103"
+C0866,R856,general,English typed p.-69- (Fold3 page 220)
 C0867,R001,location,
 C0867,R442,general,"p. 98, 103"
 C0867,R616,general,"table of 1944, September row"
+C0867,R856,general,"English typed p.-53-, -54- (Fold3 page 204, 205)"
 C0868,R002,location,
 C0868,R441,general,p. 87
+C0868,R856,general,English typed p.-71- (Fold3 page 222)
 C0869,R001,location,
 C0869,R593,general,p. 404
 C0870,R001,location,
@@ -2670,6 +2708,7 @@ C0958,R435,general,p. 410
 C0958,R641,general,p. 488
 C0959,R002,location,
 C0959,R438,general,p. 519
+C0959,R848,general,text p.2 (Fold3 image 7)
 C0960,R002,location,
 C0960,R642,general,p. 353
 C0961,R002,location,
@@ -2678,6 +2717,7 @@ C0962,R001,location,
 C0962,R435,general,p. 418
 C0962,R437,general,p. 502
 C0962,R641,general,p. 487
+C0962,R820,general,German p.15 (Fold3 page 182)
 C0963,R002,location,
 C0963,R437,general,p. 501
 C0963,R438,general,p. 519
@@ -2694,14 +2734,17 @@ C0967,R435,general,p. 437
 C0967,R641,general,p. 465
 C0968,R002,location,
 C0968,R438,general,p. 530
+C0968,R824,general,p.2 and 5 (Fold3 page 7 and 10)
 C0969,R002,location,
 C0969,R438,general,p. 540
+C0969,R824,general,p.5 (Fold3 page 10)
 C0970,R002,location,
 C0970,R435,general,p. 410
 C0970,R438,general,p. 518-519
 C0971,R001,location,
 C0971,R180,general,"table of 1944, November row"
 C0971,R641,general,p. 488
+C0971,R820,general,German p.16 (Fold3 page 183)
 C0972,R002,location,
 C0972,R440,general,p. 559
 C0973,R002,location,
@@ -2735,10 +2778,13 @@ C0981,R002,location,
 C0981,R261,general,"table of 1944, December row"
 C0981,R393,general,"p. 174, 177-178"
 C0981,R643,general,listing under the 5th Panzer Army heading
+C0981,R850,general,German p.3-4 (Fold3 images 9-10)
+C0981,R851,general,German answer to question 8 (image 16)
 C0982,R002,location,
 C0982,R253,general,"table of 1944, 15 November row"
 C0982,R640,general,"p. 213, 216"
 C0982,R643,general,listing under the 7th Army heading
+C0982,R843,general,German p.22 (Fold3 page 90)
 C0983,R002,location,
 C0983,R644,general,p. 87
 C0984,R002,location,
@@ -2770,15 +2816,18 @@ C0993,R643,general,listing under the LVIII Panzer Corps heading
 C0994,R002,location,
 C0994,R393,general,p. 177-178
 C0994,R643,general,listing under the XLVII Panzer Corps heading
+C0994,R850,general,German p.4 (Fold3 image 10)
 C0995,R002,location,
 C0995,R393,general,"p. 177, 180"
 C0995,R643,general,listing under the XLVII Panzer Corps heading
+C0995,R850,general,German p.4 (Fold3 image 10)
 C0996,R001,location,
 C0996,R393,general,p. 178
 C0996,R643,general,listing under the XLVII Panzer Corps heading
 C0997,R002,location,
 C0997,R640,general,"p. 213, 215-216"
 C0997,R643,general,listing under the LXXXV Corps heading
+C0997,R843,general,German p.22 (Fold3 page 90)
 C0998,R002,location,
 C0998,R640,general,"p. 213, 216"
 C0998,R643,general,listing under the LXXXV Corps heading
@@ -2879,15 +2928,18 @@ C1036,R002,location,
 C1036,R228,general,"table of 1944, November row"
 C1036,R443,general,"p. 219, 228-229"
 C1036,R668,general,p. 407
+C1036,R839,general,German p.53 (Fold3 page 61)
 C1037,R002,location,
 C1037,R187,general,Lebenslauf
 C1037,R434,general,p. 395
 C1037,R807,general,"English p.15, German p.18"
+C1037,R815,general,German p.2 (Fold3 image 11)
 C1038,R001,location,
 C1038,R434,general,p. 395
 C1039,R002,location,
 C1039,R173,general,"Einsatz and table of 1944, 10 November row"
 C1039,R434,general,p. 395
+C1039,R815,general,"German p.2 (Fold3 image 11), Skizze 1 (Fold3 image 79)"
 C1040,R001,location,
 C1040,R654,general,"Einsatz and table of 1944, 12 November row"
 C1041,R001,location,
@@ -2994,6 +3046,7 @@ C1088,R638,general,p. 23
 C1089,R002,location,
 C1089,R515,general,"p. 45, 46"
 C1089,R768,general,p. 48
+C1089,R820,general,German p.49 (Fold3 page 216)
 C1090,R001,location,
 C1090,R515,general,"p. 50, 51"
 C1091,R002,location,
@@ -3004,6 +3057,7 @@ C1092,R002,location,
 C1092,R515,general,p. 51
 C1093,R002,location,
 C1093,R515,general,"p. 50, 51"
+C1093,R850,general,German p.27 (Fold3 image 33)
 C1094,R002,location,
 C1094,R515,general,"p. 50, 51"
 C1095,R002,location,
@@ -3091,6 +3145,8 @@ C1128,R002,location,
 C1128,R187,general,"Lebenslauf, commander list"
 C1128,R425,general,p. 548
 C1128,R538,general,p. 177
+C1128,R815,general,Anlage 1 (Fold3 image 61)
+C1128,R819,general,German p.4 (Fold3 image 28)
 C1129,R002,location,
 C1129,R179,general,"table of 1945, 8 February row"
 C1130,R002,location,
@@ -3142,17 +3198,24 @@ C1150,R174,general,commander list
 C1150,R535,general,p. 107
 C1151,R002,location,
 C1151,R537,general,p. 154
+C1151,R821,general,German p.-4- (Fold3 page 45)
 C1152,R002,location,
 C1152,R537,general,p. 154
+C1152,R821,general,German p.-4- (Fold3 page 45)
 C1153,R002,location,
 C1153,R538,general,p. 167
+C1153,R815,general,German p.20 (Fold3 image 29)
+C1153,R821,general,German p.-3- and -8- (Fold3 page 44 and 49)
+C1153,R852,general,German p.15-16 (Fold3 images 84-85)
 C1154,R002,location,
 C1154,R537,general,p. 154
 C1154,R538,general,p. 169
+C1154,R821,general,German p.-17- and -18- (Fold3 page 59 and 60)
 C1155,R002,location,
 C1155,R538,general,p. 173
 C1156,R002,location,
 C1156,R535,general,p. 114
+C1156,R829,general,p.14 (Fold3 page 20)
 C1157,R001,location,
 C1157,R537,general,p. 140
 C1157,R539,general,p. 186
@@ -3163,12 +3226,15 @@ C1158,R539,general,p. 186
 C1158,R540,general,"p. 209, 210"
 C1159,R001,location,
 C1159,R540,general,p. 210
+C1159,R829,general,p.18 (Fold3 page 25)
 C1160,R001,location,
 C1160,R540,general,p. 210
+C1160,R834,general,English p.29 (Fold3 page 96)
 C1161,R001,location,
 C1161,R540,general,p. 221
 C1162,R001,location,
 C1162,R540,general,p. 221
+C1162,R855,general,English typed p.-37- (Fold3 page 41)
 C1163,R001,location,
 C1163,R540,general,p. 221
 C1164,R002,location,
@@ -3180,10 +3246,12 @@ C1166,R001,location,
 C1166,R540,general,p. 226
 C1167,R001,location,
 C1167,R540,general,p. 232
+C1167,R834,general,English pp.52-53 (Fold3 pages 119-120)
 C1168,R001,location,
 C1168,R540,general,p. 232
 C1169,R001,location,
 C1169,R540,general,p. 232
+C1169,R834,general,English pp.52-53 (Fold3 pages 119-120)
 C1170,R001,location,
 C1170,R540,general,p. 232
 C1171,R001,location,
@@ -3210,15 +3278,28 @@ C1180,R542,general,p. 293
 C1181,R002,location,
 C1181,R543,general,"p. 314, 301"
 C1181,R668,general,p. 533
+C1181,R814,general,German pp.10-12 (Fold3 images 69-71)
+C1181,R817,general,German pp.3-4 (Fold3 images 7-8)
+C1181,R826,general,German p.6 (Fold3 page 8) and English p.6 (Fold3 page 28)
+C1181,R827,general,p.2 (Fold3 page 7)
 C1182,R002,location,
 C1182,R543,general,p. 314
+C1182,R814,general,German pp.11-13 (Fold3 images 70-72)
+C1182,R826,general,German p.6 (Fold3 page 8) and English p.6 (Fold3 page 28)
 C1183,R002,location,
 C1183,R543,general,p. 314
+C1183,R814,general,German pp.11-12 (Fold3 images 70-71)
+C1183,R817,general,German p.5 (Fold3 image 9)
+C1183,R822,general,German p.-5- (Fold3 page 83)
+C1183,R826,general,German p.5 (Fold3 page 7) and English p.6 (Fold3 page 28)
+C1183,R827,general,p.2 (Fold3 page 7)
 C1184,R002,location,
 C1184,R543,general,p. 317
 C1185,R002,location,
 C1185,R543,general,p. 319
 C1185,R544,general,p. 338
+C1185,R814,general,German pp.13-18 (Fold3 images 72-77)
+C1185,R822,general,German p.-9- (Fold3 page 87)
 C1186,R002,location,
 C1186,R544,general,p. 339
 C1186,R658,general,commander list
@@ -3236,6 +3317,7 @@ C1191,R541,general,p. 237
 C1192,R002,location,
 C1192,R543,general,"p. 302, 301"
 C1192,R544,general,p. 338
+C1192,R826,general,"German p.1 (Fold3 page 3) and English p.1 (Fold3 page 23), cover letter"
 C1193,R002,location,
 C1193,R659,general,commander list
 C1194,R002,location,
@@ -3261,10 +3343,12 @@ C1200,R569,general,"p. 471, 472"
 C1201,R002,location,
 C1201,R187,general,text and commanders list
 C1201,R567,general,p. 385
+C1201,R814,general,"German pp.51-52, Anlage 3 (Fold3 images 110-111)"
 C1202,R002,location,
 C1202,R569,general,p. 465
 C1202,R660,general,text of the instrument
 C1202,R661,general,article text
+C1202,R814,general,German p.38 (Fold3 image 97)
 C1203,R002,location,
 C1203,R568,general,p. 414
 C1204,R001,location,
@@ -3278,9 +3362,11 @@ C1206,R569,general,p. 467
 C1207,R002,location,
 C1207,R567,general,p. 381
 C1207,R662,general,text and table of 1945
+C1207,R835,general,English pp.13-14 (Fold3 pages 109-110)
 C1208,R002,location,
 C1208,R567,general,"p. 389, 390"
 C1208,R662,general,commanders
+C1208,R835,general,English p.19 (Fold3 page 115)
 C1209,R002,location,
 C1209,R567,general,"p. 404, 405"
 C1209,R662,general,text of the army page
@@ -3321,6 +3407,7 @@ C1222,R660,general,text of the instrument
 C1223,R002,location,
 C1223,R567,general,p. 385
 C1223,R569,general,p. 460
+C1223,R814,general,German pp.24-26 (Fold3 images 83-85)
 C1224,R002,location,
 C1224,R569,general,p. 460
 C1225,R002,location,
@@ -3342,18 +3429,22 @@ C1232,R002,location,
 C1232,R569,general,p. 474
 C1233,R002,location,
 C1233,R180,general,"table of 1945, April row"
+C1233,R855,general,"typed p.-56-, -59- (Fold3 page 60, 64)"
 C1234,R002,location,
 C1234,R181,general,"table of 1945, April row"
 C1235,R002,location,
 C1235,R183,general,"table of 1945, April row"
 C1236,R002,location,
 C1236,R656,general,"table of 1945, 10 April row"
+C1236,R827,general,p.4 (Fold3 page 9)
 C1237,R002,location,
 C1237,R567,general,p. 385
 C1237,R659,general,commanders list and table of 1945
+C1237,R814,general,"German p.26 (Fold3 image 85), Anlage 3 (Fold3 image 111)"
 C1238,R002,location,
 C1238,R569,general,p. 459
 C1238,R659,general,commanders list
+C1238,R814,general,"Anlage 5 (Fold3 image 114), Skizze 6 (Fold3 image 141)"
 C1239,R002,location,
 C1239,R569,general,p. 465
 C1239,R659,general,text of the army page
@@ -3363,14 +3454,17 @@ C1240,R568,general,"p. 423, 424"
 C1240,R665,general,table of 1945
 C1241,R002,location,
 C1241,R223,general,"table of 1945, April row"
+C1241,R855,general,typed p.-56- (Fold3 page 60)
 C1242,R002,location,
 C1242,R566,general,p. 360
 C1243,R002,location,
 C1243,R190,general,"table of 1945, April row"
+C1243,R822,general,German p.-19- (Fold3 page 97)
 C1244,R002,location,
 C1244,R193,general,"table of 1945, April row"
 C1245,R002,location,
 C1245,R198,general,"table of 1945, April row"
+C1245,R814,general,German pp.36-38 (Fold3 images 95-97)
 C1246,R002,location,
 C1246,R208,general,"table of 1945, April row"
 C1247,R002,location,
@@ -3408,6 +3502,8 @@ C1262,R002,location,
 C1262,R566,general,"p. 370, 372"
 C1263,R002,location,
 C1263,R567,general,"p. 399, 400"
+C1263,R814,general,"German p.34 (Fold3 image 93), Anlage 4 (Fold3 image 112)"
+C1263,R844,general,German p.12 (Fold3 image 52)
 C1264,R001,location,
 C1264,R567,general,"p. 400, 401"
 C1265,R002,location,
@@ -3625,6 +3721,7 @@ C1368,R002,location,
 C1368,R668,general,"pp. 456, 470, 472"
 C1369,R002,location,
 C1369,R668,general,"pp. 484, 487"
+C1369,R808,general,German p.12 (Fold3 page 16)
 C1370,R002,location,
 C1370,R668,general,p. 492
 C1371,R002,location,
@@ -3647,6 +3744,7 @@ C1379,R002,location,
 C1379,R668,general,p. 471
 C1380,R002,location,
 C1380,R668,general,p. 482
+C1380,R808,general,German p.12 (Fold3 page 16)
 C1381,R002,location,
 C1381,R668,general,p. 502
 C1382,R002,location,
@@ -3856,6 +3954,7 @@ C1471,R002,location,
 C1471,R671,general,"pp. 161, 162"
 C1472,R002,location,
 C1472,R671,general,"pp. 161, 162"
+C1472,R824,general,p.6 (Fold3 page 11)
 C1473,R001,location,
 C1473,R671,general,"pp. 190, 191"
 C1474,R001,location,
@@ -3995,6 +4094,7 @@ C1531,R002,location,
 C1531,R671,general,p. 337
 C1532,R002,location,
 C1532,R671,general,"pp. 310, 311, 337"
+C1532,R814,general,German p.38 (Fold3 image 97)
 C1533,R002,location,
 C1533,R671,general,p. 337
 C1534,R002,location,
@@ -4660,6 +4760,7 @@ C1787,R002,location,
 C1787,R708,general,p. 576
 C1788,R002,location,
 C1788,R709,general,p. 614
+C1788,R850,general,German p.21-22 (Fold3 images 27-28)
 C1789,R002,location,
 C1789,R391,general,p. 522
 C1790,R002,location,
@@ -4692,6 +4793,7 @@ C1801,R695,general,p. 376
 C1802,R002,location,
 C1802,R711,general,p. 271
 C1802,R712,general,
+C1802,R857,general,"German p.27, 28 (Fold3 image 95, 97)"
 C1803,R002,location,
 C1803,R713,general,
 C1804,R001,location,
@@ -4710,6 +4812,7 @@ C1808,R716,general,
 C1809,R002,location,
 C1809,R570,general,p. 477
 C1809,R716,general,
+C1809,R839,general,German p.57 (Fold3 page 65)
 C1810,R002,location,
 C1810,R428,general,p. 135
 C1810,R717,general,
@@ -5015,6 +5118,7 @@ C1958,R001,location,
 C1958,R757,general,narrative
 C1959,R001,location,
 C1959,R757,general,narrative
+C1959,R821,general,German p.-3- and -5- (Fold3 page 44 and 46)
 C1960,R002,location,
 C1960,R758,general,narrative
 C1961,R002,location,
@@ -5151,8 +5255,11 @@ C2024,R001,location,
 C2024,R541,general,p. 242
 C2025,R002,location,
 C2025,R543,general,"p. 304, p. 308"
+C2025,R814,general,"German pp.5, 13 (Fold3 images 64, 72)"
+C2025,R822,general,German p.-6- (Fold3 page 84)
 C2026,R002,location,
 C2026,R543,general,"p. 304, p. 315"
+C2026,R814,general,"German p.5 (Fold3 image 64), Skizze 1 (Fold3 image 125)"
 C2027,R002,location,
 C2027,R668,general,p. 484
 C2028,R002,location,
@@ -5205,6 +5312,7 @@ C2051,R002,location,
 C2051,R686,general,p. 199
 C2052,R002,location,
 C2052,R686,general,pp. 229-230
+C2052,R825,general,German p.4 (Fold3 page 8)
 C2053,R002,location,
 C2053,R686,general,pp. 262-263
 C2054,R002,location,
@@ -5237,6 +5345,7 @@ C2067,R002,location,
 C2067,R761,general,Annex 1
 C2068,R002,location,
 C2068,R761,general,Annex 1
+C2068,R854,general,German p.2 (Fold3 image 6)
 C2069,R002,location,
 C2069,R761,general,"p. 23, Annex 2"
 C2070,R002,location,
@@ -5245,6 +5354,7 @@ C2071,R002,location,
 C2071,R761,general,p. 30
 C2072,R002,location,
 C2072,R761,general,p. 37
+C2072,R853,general,German p.14-15 (Fold3 images 20-21)
 C2073,R002,location,
 C2073,R761,general,p. 40
 C2074,R002,location,
@@ -5274,6 +5384,7 @@ C2085,R002,location,
 C2085,R762,general,"pp. 22, 27"
 C2086,R001,location,
 C2086,R762,general,"pp. 55-56, Skizze 6"
+C2086,R771,general,German p.45 (Fold3 page 53)
 C2087,R002,location,
 C2087,R762,general,"pp. 56, 61, Skizze 7"
 C2088,R002,location,
@@ -5363,20 +5474,31 @@ C2126,R002,location,
 C2126,R767,general,p. 45 and appendix f
 C2127,R002,location,
 C2127,R768,general,p. 2 and appendices 7a-7c
+C2127,R820,general,German p.2 (Fold3 page 169)
 C2128,R002,location,
 C2128,R768,general,"pp. 23, 63, 68"
+C2128,R820,general,German p.23 (Fold3 page 190)
 C2129,R002,location,
 C2129,R768,general,pp. 16-18
+C2129,R820,general,German p.18 (Fold3 page 185)
+C2129,R824,general,p.30 (Fold3 page 35)
+C2129,R848,general,text p.9 (Fold3 image 14)
 C2130,R002,location,
 C2130,R768,general,p. 18
+C2130,R820,general,German p.18-19 (Fold3 page 185-186)
 C2131,R002,location,
 C2131,R768,general,"pp. 42, 68"
+C2131,R820,general,German p.25-42-43 (Fold3 page 192-209-210)
 C2132,R002,location,
 C2132,R768,general,pp. 49-52
+C2132,R819,general,German p.2 (Fold3 image 26)
+C2132,R820,general,German p.53 (Fold3 page 220)
 C2133,R002,location,
 C2133,R768,general,"pp. 55, 68"
+C2133,R820,general,German p.57 (Fold3 page 225)
 C2134,R002,location,
 C2134,R768,general,p. 57 and appendix 6
+C2134,R820,general,German p.58-59 (Fold3 page 226-227)
 C2135,R001,location,
 C2135,R671,general,p. 69
 C2135,R769,general,p. 8
@@ -5444,8 +5566,11 @@ C2163,R002,location,
 C2163,R610,general,narrative
 C2164,R002,location,
 C2164,R771,general,p. 16
+C2164,R836,general,German p.35 (Fold3 page 42)
+C2164,R837,general,German p.4 (Fold3 page 60)
 C2165,R002,location,
 C2165,R771,general,pp. 16 and 22
+C2165,R837,general,German p.13 (Fold3 page 69)
 C2166,R002,location,
 C2166,R771,general,pp. 4 and 16
 C2167,R002,location,
@@ -5485,9 +5610,11 @@ C2179,R002,location,
 C2179,R772,general,p. 3
 C2180,R002,location,
 C2180,R772,general,p. 14
+C2180,R850,general,German p.6-7 (Fold3 images 12-13)
 C2181,R002,location,
 C2181,R388,general,p. 429
 C2181,R772,general,p. 21
+C2181,R850,general,German p.9 (Fold3 image 15)
 C2182,R002,location,
 C2182,R386,general,p. 358
 C2182,R388,general,p. 429
@@ -5498,6 +5625,7 @@ C2184,R002,location,
 C2184,R772,general,p. 23
 C2185,R002,location,
 C2185,R772,general,p. 24
+C2185,R850,general,German p.13 (Fold3 image 19)
 C2186,R001,location,
 C2186,R772,general,p. 24
 C2187,R001,location,
@@ -5506,12 +5634,14 @@ C2188,R002,location,
 C2188,R772,general,p. 30
 C2189,R002,location,
 C2189,R772,general,p. 30
+C2189,R850,general,German p.19-20 (Fold3 images 25-26)
 C2190,R002,location,
 C2190,R772,general,p. 31
 C2191,R001,location,
 C2191,R772,general,p. 33
 C2192,R002,location,
 C2192,R773,general,p. 13 (German text)
+C2192,R854,general,German p.6 (Fold3 image 10)
 C2193,R001,location,
 C2193,R773,general,pp. 12 and 17 (German text)
 C2193,R774,general,p. 108
@@ -5539,6 +5669,7 @@ C2204,R002,location,
 C2204,R774,general,Skizze 9 and Skizze 12
 C2205,R002,location,
 C2205,R774,general,Skizze 9 and Skizze 14
+C2205,R832,general,German p.34 (Fold3 page 39)
 C2206,R002,location,
 C2206,R774,general,Skizze 22 and Skizze 23
 C2207,R002,location,
@@ -5589,6 +5720,8 @@ C2228,R777,general,p. 2 and Skizze 4
 C2229,R002,location,
 C2229,R668,general,"pp. 519, 522"
 C2229,R777,general,p. 18
+C2229,R813,general,German pp.12-13 (Fold3 images 35-36)
+C2229,R815,general,German pp.29-30 (Fold3 images 38-39)
 C2230,R002,location,
 C2230,R668,general,p. 495
 C2230,R777,general,p. 3 and Skizze 2
@@ -5598,13 +5731,16 @@ C2232,R002,location,
 C2232,R668,general,p. 495
 C2232,R777,general,p. 3 and Skizze 2
 C2232,R806,general,"English pp.12-13, Sketch 4"
+C2232,R813,general,"German p.9 (Fold3 image 32), Sketch 3"
 C2233,R002,location,
 C2233,R777,general,p. 16 and Skizze 4
 C2234,R002,location,
 C2234,R668,general,p. 519
 C2234,R777,general,p. 17 and Skizze 4
+C2234,R813,general,German p.11 (Fold3 image 34)
 C2235,R002,location,
 C2235,R777,general,pp. 3 and 5
+C2235,R813,general,German p.9 (Fold3 image 32)
 C2236,R002,location,
 C2236,R778,general,p. 8
 C2237,R002,location,
@@ -5621,6 +5757,7 @@ C2242,R002,location,
 C2242,R778,general,pp. 19-21
 C2243,R002,location,
 C2243,R778,general,p. 26
+C2243,R822,general,German p.-21- and -22- (Fold3 page 99 and 100)
 C2244,R002,location,
 C2244,R778,general,p. 16
 C2245,R002,location,
@@ -5629,6 +5766,7 @@ C2246,R002,location,
 C2246,R778,general,p. 18 and Anlage 2b
 C2247,R002,location,
 C2247,R778,general,pp. 18-19 and Anlage 3
+C2247,R855,general,typed p.-56- (Fold3 page 60)
 C2248,R002,location,
 C2248,R779,general,report pp. 1-2 and Anlage 4
 C2249,R002,location,
@@ -5687,6 +5825,7 @@ C2275,R002,location,
 C2275,R780,general,p. 8
 C2276,R002,location,
 C2276,R780,general,p. 11
+C2276,R845,general,German p.90 (Fold3 image 222)
 C2277,R002,location,
 C2277,R780,general,pp. 11 and 92
 C2278,R002,location,
@@ -10936,6 +11075,7 @@ C4898,R002,location,
 C4898,R781,general,sheet cs000205 situation 1200 hrs 26 December 1944
 C4899,R002,location,
 C4899,R781,general,sheet cs000205 situation 1200 hrs 26 December 1944
+C4899,R843,general,German p.35 (Fold3 page 103)
 C4900,R002,location,
 C4900,R781,general,sheet cs000205 situation 1200 hrs 26 December 1944
 C4901,R781,general,sheet cs000205 situation 1200 hrs 26 December 1944
@@ -15280,6 +15420,7 @@ C7069,R002,location,
 C7069,R784,general,"image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
 C7070,R002,location,
 C7070,R784,general,"image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
+C7070,R853,general,German p.15 (Fold3 image 21)
 C7071,R002,location,
 C7071,R784,general,"image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
 C7072,R002,location,
@@ -15303,12 +15444,15 @@ C7080,R002,location,
 C7080,R784,general,"image 807 (NAID 271848586), stamped page 1205, HGr B Ia Tagesmeldung of 8 September 1944"
 C7081,R002,location,
 C7081,R784,general,"image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944"
+C7081,R836,general,German p.31 (Fold3 page 38)
+C7081,R838,general,German pp.61-64 (Fold3 pages 135-138)
 C7082,R002,location,
 C7082,R784,general,"image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944"
 C7083,R002,location,
 C7083,R784,general,"image 1115 (NAID 271848586), stamped page 538, HGr B Ia 7247/44 g.Kdos of 11 September 1944"
 C7084,R002,location,
 C7084,R784,general,"image 1065 (NAID 271848586), stamped page 489, HGr B Ia 759x/44 g.Kdos (Mittagsmeldung) of 20 September 1944"
+C7084,R856,general,English typed p.-100- (Fold3 page 251)
 C7085,R002,location,
 C7085,R784,general,"image 1052 (NAID 271848586), stamped page 476, HGr B Ia 7670/44 g.Kdos (Mittagsmeldung) of 22 September 1944"
 C7086,R002,location,
@@ -15371,6 +15515,7 @@ C7112,R786,general,"images 1362-1364 (NAID 271847205), stamped pages 915-917, HG
 C7113,R002,location,
 C7113,R786,general,"images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
 C7113,R806,general,English Sketch 1 (end of September 1944)
+C7113,R813,general,Sketch 1 (Fold3 image 40)
 C7114,R002,location,
 C7114,R786,general,"images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs)"
 C7115,R002,location,
@@ -15385,6 +15530,7 @@ C7119,R002,location,
 C7119,R790,general,"images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
 C7120,R002,location,
 C7120,R790,general,"images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
+C7120,R845,general,"German p.90 and p.98 (Fold3 images 222, 230)"
 C7121,R002,location,
 C7121,R791,general,"image 18 (NAID 346868644), KTB copy p. 2, entry of 28 January 1945"
 C7122,R002,location,
@@ -15420,10 +15566,14 @@ C7135,R798,general,"pages 497-500 (NAID 318191275), Ia Kriegstagebuch Nr. 5, ent
 C7136,R002,location,
 C7136,R384,general,p. 304
 C7136,R799,general,"pages 437-438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 2"
+C7136,R850,general,German p.8 (Fold3 image 14)
 C7137,R002,location,
 C7137,R799,general,"page 438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+C7137,R843,general,German p.31 (Fold3 page 99)
+C7137,R850,general,German p.10-12 (Fold3 images 16-18)
 C7138,R002,location,
 C7138,R799,general,"page 439 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+C7138,R850,general,German p.18 (Fold3 image 24)
 C7139,R002,location,
 C7139,R800,general,"frame 74 (NAID 267486794), SS-Panzer-Regiment 2 order of 8 June 1944"
 C7140,R002,location,
@@ -15437,27 +15587,40 @@ C7143,R668,general,p.261
 C7143,R801,general,"frame 991 (NAID 271845202), report of 20 August 1944, order telephoned from Beauvais on 19 August"
 C7144,R002,location,
 C7144,R802,general,"pages 536-541 (NAID 347778909), 347. I.D. K.V.A. Ia Nr. 767/44 g.Kdos. of 21 June 1944"
+C7144,R812,general,"printed p.4 (Fold3 image 19), App 1"
 C7145,R002,location,
 C7145,R802,general,"pages 568-572 (NAID 347778909), 347. I.D. Ia Nr. 1596/44 g.Kdos. of 30 August 1944"
 C7145,R811,general,German p.1
+C7145,R812,general,printed p.7 (Fold3 image 22)
 C7146,R002,location,
 C7146,R384,general,p. 297
+C7146,R850,general,German p.7-8 (Fold3 images 13-14)
 C7147,R002,location,
 C7147,R708,general,p. 570
+C7147,R850,general,German p.16-17 (Fold3 images 22-23)
 C7148,R002,location,
 C7148,R389,general,p. 452
+C7148,R850,general,German p.8 (Fold3 image 14)
 C7149,R002,location,
 C7149,R708,general,p. 567
+C7149,R850,general,German p.15-16 (Fold3 images 21-22)
+C7149,R851,general,"German answers to questions 9-10 (images 18-19), sketch I (images 36-39)"
 C7150,R002,location,
 C7150,R708,general,p. 571
+C7150,R850,general,German p.16 (Fold3 image 22)
 C7151,R002,location,
 C7151,R389,general,p. 476
+C7151,R851,general,German annex to question 13 (images 23-26)
 C7152,R002,location,
 C7152,R389,general,p. 456
+C7152,R850,general,German p.8-10 (Fold3 images 14-16)
 C7153,R002,location,
 C7153,R709,general,p. 616
+C7153,R850,general,German p.22-23 (Fold3 images 28-29)
+C7153,R851,general,German annex to question 13 (images 23-26)
 C7154,R002,location,
 C7154,R709,general,p. 619
+C7154,R843,general,German p.36 (Fold3 page 104)
 C7155,R002,location,
 C7155,R709,general,p. 646
 C7156,R002,location,
@@ -15506,6 +15669,7 @@ C7177,R002,location,
 C7177,R391,general,p. 522
 C7178,R002,location,
 C7178,R391,general,p. 552
+C7178,R843,general,German p.34 (Fold3 page 102)
 C7179,R002,location,
 C7179,R644,general,p. 86
 C7180,R002,location,
@@ -15566,6 +15730,7 @@ C7207,R002,location,
 C7207,R391,general,p. 529
 C7208,R002,location,
 C7208,R391,general,p. 552
+C7208,R843,general,German p.34 (Fold3 page 102)
 C7209,R002,location,
 C7209,R390,general,p. 492
 C7210,R002,location,
@@ -15622,6 +15787,7 @@ C7235,R002,location,
 C7235,R668,general,p. 185
 C7236,R002,location,
 C7236,R668,general,pp. 183-185
+C7236,R854,general,German p.6 (Fold3 image 10)
 C7237,R002,location,
 C7237,R668,general,"pp. 178, 185"
 C7238,R002,location,
@@ -15698,6 +15864,8 @@ C7273,R002,location,
 C7273,R668,general,p. 295
 C7274,R002,location,
 C7274,R668,general,pp. 296-7
+C7274,R836,general,German pp.21-23 (Fold3 pages 28-30)
+C7274,R838,general,German pp.34-35 (Fold3 pages 108-109)
 C7275,R002,location,
 C7275,R668,general,p. 298
 C7276,R002,location,
@@ -15721,6 +15889,7 @@ C7284,R668,general,p. 300
 C7285,R002,location,
 C7285,R668,general,p. 302
 C7285,R811,general,German pp.1-4
+C7285,R812,general,"printed pp.4, 7 (Fold3 images 19, 22)"
 C7286,R002,location,
 C7286,R668,general,p. 302
 C7287,R002,location,
@@ -15749,8 +15918,10 @@ C7298,R002,location,
 C7298,R668,general,pp. 326-7
 C7299,R002,location,
 C7299,R668,general,p. 327
+C7299,R838,general,German pp.59-62 (Fold3 pages 133-136)
 C7300,R002,location,
 C7300,R668,general,p. 327
+C7300,R838,general,German pp.59-62 (Fold3 pages 133-136)
 C7301,R002,location,
 C7301,R668,general,p. 327
 C7302,R002,location,
@@ -15771,6 +15942,7 @@ C7309,R002,location,
 C7309,R668,general,p. 330
 C7310,R002,location,
 C7310,R668,general,"pp. 332, 335-6"
+C7310,R839,general,German p.57 (Fold3 page 65)
 C7311,R002,location,
 C7311,R668,general,p. 345
 C7312,R002,location,
@@ -15793,6 +15965,8 @@ C7320,R002,location,
 C7320,R668,general,p. 366
 C7321,R002,location,
 C7321,R668,general,p. 366
+C7321,R836,general,German p.35 (Fold3 page 42)
+C7321,R837,general,German p.13 (Fold3 page 69)
 C7322,R002,location,
 C7322,R668,general,p. 367
 C7323,R002,location,
@@ -15868,6 +16042,7 @@ C7357,R002,location,
 C7357,R668,general,p. 390
 C7358,R002,location,
 C7358,R668,general,p. 390
+C7358,R771,general,German pp.45-46 (Fold3 pages 53-54)
 C7359,R002,location,
 C7359,R668,general,p. 390
 C7360,R002,location,
@@ -15880,6 +16055,7 @@ C7363,R002,location,
 C7363,R668,general,p. 391
 C7364,R002,location,
 C7364,R668,general,p. 391
+C7364,R836,general,German p.49 (Fold3 page 56)
 C7365,R002,location,
 C7365,R668,general,p. 395
 C7366,R002,location,
@@ -16025,6 +16201,7 @@ C7434,R668,general,pp. 446-447
 C7435,R002,location,
 C7435,R668,general,p. 447
 C7435,R811,general,German p.30
+C7435,R812,general,Historical Division summary p.ii (Fold3 image 7)
 C7436,R002,location,
 C7436,R668,general,p. 447
 C7437,R002,location,
@@ -16044,6 +16221,7 @@ C7442,R002,location,
 C7442,R668,general,pp. 456-457
 C7443,R002,location,
 C7443,R668,general,p. 457
+C7443,R815,general,Anlage 1 (Fold3 image 61)
 C7444,R002,location,
 C7444,R668,general,p. 443
 C7445,R002,location,
@@ -16056,8 +16234,10 @@ C7448,R002,location,
 C7448,R668,general,p. 469
 C7449,R002,location,
 C7449,R668,general,p. 463
+C7449,R815,general,German p.12 (Fold3 image 21)
 C7450,R002,location,
 C7450,R668,general,p. 463
+C7450,R815,general,German p.12 (Fold3 image 21)
 C7451,R002,location,
 C7451,R668,general,p. 463
 C7452,R002,location,
@@ -16072,11 +16252,13 @@ C7456,R002,location,
 C7456,R668,general,pp. 475-477
 C7457,R002,location,
 C7457,R668,general,p. 477
+C7457,R815,general,German pp.15-16 (Fold3 images 24-25)
 C7458,R002,location,
 C7458,R668,general,p. 477
 C7459,R002,location,
 C7459,R668,general,p. 478
 C7459,R808,general,"German p.9, English p.10"
+C7459,R819,general,German p.14 (Fold3 image 38)
 C7460,R002,location,
 C7460,R668,general,pp. 478-479
 C7461,R002,location,
@@ -16089,6 +16271,7 @@ C7464,R002,location,
 C7464,R668,general,p. 479
 C7465,R002,location,
 C7465,R668,general,p. 479
+C7465,R815,general,German p.16 (Fold3 image 25)
 C7466,R002,location,
 C7466,R668,general,pp. 479-481
 C7467,R002,location,
@@ -16144,6 +16327,7 @@ C7490,R002,location,
 C7490,R668,general,pp. 487-490
 C7491,R002,location,
 C7491,R668,general,pp. 488-489
+C7491,R815,general,German p.17 (Fold3 image 26)
 C7492,R002,location,
 C7492,R668,general,p. 489
 C7493,R002,location,
@@ -16161,6 +16345,7 @@ C7498,R668,general,pp. 490-491
 C7499,R002,location,
 C7499,R668,general,p. 491
 C7499,R806,general,"German p.12, English p.12, Sketch 3"
+C7499,R813,general,German p.9 (Fold3 image 32)
 C7500,R002,location,
 C7500,R668,general,p. 491
 C7500,R806,general,"German p.12, English p.12, Sketch 3"
@@ -16231,13 +16416,17 @@ C7529,R002,location,
 C7529,R668,general,p. 508
 C7530,R002,location,
 C7530,R668,general,p. 508
+C7530,R852,general,German p.35 (Fold3 image 104)
 C7531,R002,location,
 C7531,R668,general,p. 509
 C7531,R777,general,"German p.10, English p.8"
+C7531,R815,general,German p.21 (Fold3 image 30)
 C7532,R002,location,
 C7532,R668,general,p. 509
+C7532,R813,general,German p.10 (Fold3 image 33)
 C7533,R002,location,
 C7533,R668,general,p. 509
+C7533,R813,general,German p.10 (Fold3 image 33)
 C7534,R002,location,
 C7534,R668,general,p. 510
 C7535,R002,location,
@@ -16258,6 +16447,7 @@ C7542,R002,location,
 C7542,R668,general,p. 514
 C7543,R002,location,
 C7543,R668,general,p. 514
+C7543,R813,general,German p.10 (Fold3 image 33)
 C7544,R002,location,
 C7544,R668,general,p. 514
 C7545,R002,location,
@@ -16268,6 +16458,7 @@ C7547,R002,location,
 C7547,R668,general,p. 515
 C7548,R002,location,
 C7548,R668,general,p. 515
+C7548,R815,general,German p.29 (Fold3 image 38)
 C7549,R002,location,
 C7549,R668,general,p. 515
 C7550,R002,location,
@@ -16302,13 +16493,18 @@ C7564,R002,location,
 C7564,R668,general,p. 531
 C7565,R002,location,
 C7565,R668,general,p. 533
+C7565,R814,general,German p.5 (Fold3 image 64)
+C7565,R822,general,German p.-1- (Fold3 page 79)
 C7566,R002,location,
 C7566,R668,general,p. 533
 C7566,R806,general,"English p.20, Sketch 6"
+C7566,R814,general,German pp.4-5 (Fold3 images 63-64)
 C7567,R002,location,
 C7567,R668,general,p. 533
+C7567,R814,general,German pp.4-5 (Fold3 images 63-64)
 C7568,R002,location,
 C7568,R668,general,p. 536
+C7568,R814,general,German p.12 (Fold3 image 71)
 C7569,R002,location,
 C7569,R668,general,p. 536
 C7570,R002,location,
@@ -16332,9 +16528,12 @@ C7578,R668,general,p. 545
 C7579,R002,location,
 C7579,R668,general,p. 546
 C7579,R810,general,"German p.2-3, English pp.2-3"
+C7579,R817,general,German pp.8-9 (Fold3 images 12-13)
+C7579,R818,general,German p.1 (Fold3 image 5)
 C7580,R002,location,
 C7580,R668,general,p. 550
 C7580,R810,general,"German p.2, English p.2"
+C7580,R818,general,"Anlage 6 (Fold3 images 16, 22)"
 C7581,R002,location,
 C7581,R668,general,p. 550
 C7582,R002,location,
@@ -16382,6 +16581,7 @@ C7602,R002,location,
 C7602,R668,general,p. 559
 C7603,R002,location,
 C7603,R668,general,p. 559
+C7603,R826,general,German p.11 (Fold3 page 13) and English p.12 (Fold3 page 34)
 C7604,R002,location,
 C7604,R668,general,p. 561
 C7605,R002,location,
@@ -16414,6 +16614,7 @@ C7618,R002,location,
 C7618,R668,general,p. 570
 C7619,R002,location,
 C7619,R668,general,p. 570
+C7619,R814,general,German p.27 (Fold3 image 86)
 C7620,R002,location,
 C7620,R668,general,p. 571
 C7621,R002,location,
@@ -16440,6 +16641,7 @@ C7630,R668,general,p. 578
 C7631,R002,location,
 C7631,R668,general,p. 578
 C7631,R810,general,"German p.5-6, English pp.5-6"
+C7631,R818,general,German pp.6-7 (Fold3 images 10-11)
 C7632,R002,location,
 C7632,R668,general,pp. 578-579
 C7632,R810,general,"German p.6, English p.6"
@@ -16542,10 +16744,12 @@ C7680,R002,location,
 C7680,R668,general,"Map 13 (The Western Netherlands, 1st Canadian Corps operations, 2-25 April 1945)"
 C7681,R002,location,
 C7681,R668,general,"Map 14 (The Final Phase, 2nd Canadian Corps front, 23 April - 5 May 1945)"
+C7681,R814,general,Anlage 5 (Fold3 image 114)
 C7682,R002,location,
 C7682,R668,general,"Map 14 (The Final Phase, 2nd Canadian Corps front, 23 April - 5 May 1945)"
 C7683,R002,location,
 C7683,R668,general,"pp. 597, 603"
+C7683,R814,general,Anlage 5 (Fold3 image 113)
 C7684,R002,location,
 C7684,R668,general,p. 601
 C7685,R002,location,
@@ -16558,70 +16762,112 @@ C7688,R002,location,
 C7688,R668,general,p. 581
 C7689,R002,location,
 C7689,R806,general,German p.1
+C7689,R813,general,German p.1 (Fold3 image 24)
+C7689,R828,general,p.2 (Fold3 page 43)
+C7689,R847,general,English p.1 (Fold3 image 5)
 C7690,R002,location,
 C7690,R806,general,German p.1
+C7690,R813,general,German p.1 (Fold3 image 24)
+C7690,R828,general,p.2 (Fold3 page 43)
 C7691,R002,location,
 C7691,R806,general,"German p.2, English p.2"
+C7691,R813,general,German p.2 (Fold3 image 25)
+C7691,R828,general,p.3 (Fold3 page 44)
 C7692,R002,location,
 C7692,R806,general,"German pp.3-4, English p.4, Sketch 1"
+C7692,R813,general,German p.2 (Fold3 image 25)
+C7692,R828,general,p.4 (Fold3 page 45)
 C7693,R002,location,
 C7693,R806,general,"German p.4, English p.4"
 C7694,R002,location,
 C7694,R806,general,"German p.4, English p.4"
 C7695,R002,location,
 C7695,R806,general,"German p.5, English p.5"
+C7695,R813,general,"German p.3 (Fold3 image 26), Sketch 1"
+C7695,R828,general,p.5 (Fold3 page 46)
 C7696,R002,location,
 C7696,R806,general,"German pp.5-6, English pp.5-6"
+C7696,R813,general,"German p.3 (Fold3 image 26), Sketch 1"
+C7696,R828,general,p.5 (Fold3 page 46)
 C7697,R002,location,
 C7697,R806,general,"German p.7, English p.7"
 C7698,R002,location,
 C7698,R806,general,"German pp.7-8, English pp.7-8, Sketch 2"
+C7698,R813,general,German pp.5-6 (Fold3 images 28-29)
 C7699,R002,location,
 C7699,R806,general,"German p.7, English p.7, Sketch 2"
+C7699,R813,general,German p.6 (Fold3 image 29)
+C7699,R828,general,p.7 (Fold3 page 48)
 C7700,R002,location,
 C7700,R806,general,"German p.8, English p.8, Sketch 2"
+C7700,R813,general,German p.6 (Fold3 image 29)
 C7701,R002,location,
 C7701,R806,general,"German p.8, English p.8"
+C7701,R828,general,p.7 (Fold3 page 48)
 C7702,R002,location,
 C7702,R806,general,"German pp.8-9, English pp.8-9"
+C7702,R813,general,German p.5 (Fold3 image 28)
+C7702,R828,general,p.9 (Fold3 page 50)
 C7703,R002,location,
 C7703,R806,general,"German p.11, English p.11"
+C7703,R828,general,p.10 (Fold3 page 51)
 C7704,R002,location,
 C7704,R806,general,"German p.12, English p.12, Sketch 3"
+C7704,R828,general,p.10 (Fold3 page 51)
 C7705,R002,location,
 C7705,R806,general,"German p.12, Sketch 3"
+C7705,R828,general,p.10 (Fold3 page 51)
 C7706,R002,location,
 C7706,R806,general,"German p.15, English p.15, Sketch 4"
+C7706,R828,general,p.15 (Fold3 page 56)
 C7707,R002,location,
 C7707,R777,general,"German p.16, English p.9, Skizze 4"
 C7707,R806,general,English p.16
+C7707,R828,general,p.16 (Fold3 page 57)
 C7708,R002,location,
 C7708,R806,general,English p.16
+C7708,R828,general,p.16 (Fold3 page 57)
 C7709,R002,location,
 C7709,R806,general,English p.16
+C7709,R828,general,p.16 (Fold3 page 57)
 C7710,R002,location,
 C7710,R777,general,"German p.17, English p.14"
 C7710,R806,general,English p.17
+C7710,R815,general,German p.29 (Fold3 image 38)
+C7710,R828,general,p.17 (Fold3 page 58)
 C7711,R002,location,
 C7711,R806,general,English p.17
+C7711,R815,general,German p.29 (Fold3 image 38)
 C7712,R002,location,
 C7712,R806,general,English p.17
+C7712,R815,general,German p.29 (Fold3 image 38)
 C7713,R002,location,
 C7713,R806,general,"English p.18, Sketch 5"
+C7713,R813,general,German p.10 (Fold3 image 33)
 C7714,R002,location,
 C7714,R806,general,"English p.18, Sketch 5"
 C7715,R002,location,
 C7715,R806,general,English p.19
+C7715,R813,general,German p.12 (Fold3 image 35)
+C7715,R828,general,p.19 (Fold3 page 60)
 C7716,R002,location,
 C7716,R806,general,"English p.20, Sketch 6"
+C7716,R813,general,German pp.12-13 (Fold3 images 35-36)
+C7716,R826,general,German p.2 (Fold3 page 4) and English p.2 (Fold3 page 24)
+C7716,R827,general,p.1 (Fold3 page 6)
+C7716,R828,general,p.20 (Fold3 page 61)
 C7717,R002,location,
 C7717,R806,general,English p.20
+C7717,R817,general,German p.1 (Fold3 image 5)
+C7717,R826,general,German p.5 (Fold3 page 7) and English p.5 (Fold3 page 27)
 C7718,R002,location,
 C7718,R806,general,English p.20
 C7719,R002,location,
 C7719,R806,general,English Sketch 6
+C7719,R817,general,German pp.1-2 (Fold3 images 5-6)
 C7720,R002,location,
 C7720,R806,general,English Sketch 6
+C7720,R817,general,German p.1 (Fold3 image 5)
 C7721,R002,location,
 C7721,R806,general,English Sketch 6
 C7722,R002,location,
@@ -16670,8 +16916,11 @@ C7740,R002,location,
 C7740,R807,general,"English p.14, German p.15"
 C7741,R002,location,
 C7741,R807,general,"English pp.14-15, German pp.16-17"
+C7741,R824,general,p.1 (Fold3 page 6)
+C7741,R848,general,text p.1 (Fold3 image 6)
 C7742,R002,location,
 C7742,R807,general,"English p.15, German p.16"
+C7742,R824,general,p.1 (Fold3 page 6)
 C7743,R002,location,
 C7743,R807,general,"English p.14, German p.16"
 C7744,R002,location,
@@ -16700,6 +16949,7 @@ C7755,R002,location,
 C7755,R777,general,"German p.10, English pp.7-8"
 C7756,R002,location,
 C7756,R777,general,"German p.10, English p.7"
+C7756,R815,general,German pp.21-23 (Fold3 images 30-32)
 C7757,R002,location,
 C7757,R777,general,"German p.11, English p.8"
 C7758,R002,location,
@@ -16708,15 +16958,18 @@ C7759,R002,location,
 C7759,R777,general,"Skizze 3, English Appendix 3"
 C7760,R002,location,
 C7760,R777,general,"German p.15, English p.9"
+C7760,R815,general,German pp.28-29 (Fold3 images 37-38)
 C7761,R002,location,
 C7761,R777,general,"German p.16, English p.9, Skizze 4"
 C7762,R002,location,
 C7762,R777,general,English Appendix 4 (Skizze 4)
 C7763,R002,location,
 C7763,R777,general,"German p.17, English p.14"
+C7763,R815,general,German p.29 (Fold3 image 38)
 C7764,R002,location,
 C7764,R777,general,"German p.17, English p.14"
 C7764,R806,general,English p.17
+C7764,R815,general,German p.29 (Fold3 image 38)
 C7765,R002,location,
 C7765,R777,general,"German p.3, English p.2, Skizze 2"
 C7766,R002,location,
@@ -16821,6 +17074,7 @@ C7810,R002,location,
 C7810,R809,general,"German p.8, English p.8"
 C7810,R811,general,German p.24
 C7811,R002,location,
+C7811,R771,general,annex map (Fold3 page 65)
 C7811,R809,general,"German p.9, English p.9"
 C7811,R811,general,German p.25
 C7812,R002,location,
@@ -16835,6 +17089,7 @@ C7815,R002,location,
 C7815,R809,general,"German p.12, English p.12"
 C7815,R811,general,German pp.26-27
 C7816,R002,location,
+C7816,R771,general,German p.46 (Fold3 page 54)
 C7816,R809,general,"German p.12, English p.12"
 C7816,R811,general,German pp.26-27
 C7817,R002,location,
@@ -16867,26 +17122,34 @@ C7826,R002,location,
 C7826,R809,general,"German p.19, English p.20"
 C7827,R002,location,
 C7827,R809,general,"German p.20, English p.22"
+C7827,R819,general,German p.14 (Fold3 image 38)
 C7828,R002,location,
 C7828,R809,general,"German p.20, English p.22"
+C7828,R819,general,German p.14 (Fold3 image 38)
 C7829,R002,location,
 C7829,R809,general,"German p.20, English p.23"
 C7830,R002,location,
 C7830,R810,general,"German p.1, English p.1, Anlage 1"
+C7830,R819,general,Skizze 1 (Fold3 images 41-42)
 C7831,R002,location,
 C7831,R810,general,"German p.1, Anlage 1"
+C7831,R819,general,German p.15 (Fold3 image 39)
 C7832,R002,location,
 C7832,R810,general,"German p.1, Anlage 1"
 C7833,R002,location,
 C7833,R810,general,"German p.2, English p.2"
 C7834,R002,location,
 C7834,R810,general,"German p.2, English p.2"
+C7834,R814,general,"Skizzen 2-3 (Fold3 images 128, 130)"
 C7835,R002,location,
 C7835,R810,general,"German p.2, English p.2"
+C7835,R814,general,Skizze 3 (Fold3 image 130)
+C7835,R817,general,German p.8 (Fold3 image 12)
 C7836,R002,location,
 C7836,R810,general,"German p.2, English p.2"
 C7837,R002,location,
 C7837,R810,general,"German p.3, English p.3"
+C7837,R818,general,German pp.2-3 (Fold3 images 6-7)
 C7838,R002,location,
 C7838,R810,general,"German p.4, English p.4"
 C7839,R002,location,
@@ -16895,24 +17158,30 @@ C7840,R002,location,
 C7840,R810,general,"German p.5, English p.5"
 C7841,R002,location,
 C7841,R810,general,"German p.5, English p.5"
+C7841,R818,general,German p.6 (Fold3 image 10)
 C7842,R002,location,
 C7842,R810,general,"German p.6, English p.6"
 C7843,R002,location,
 C7843,R810,general,"German p.6, English p.6"
+C7843,R818,general,German pp.6-7 (Fold3 images 10-11)
 C7844,R002,location,
 C7844,R810,general,"German p.6-7, English pp.6-7"
+C7844,R818,general,German p.7 (Fold3 image 11)
 C7845,R002,location,
 C7845,R810,general,"German p.6, English p.6"
 C7846,R002,location,
 C7846,R810,general,"German p.7, English p.7"
 C7847,R002,location,
 C7847,R810,general,"German p.7, English p.7"
+C7847,R818,general,German pp.8-9 (Fold3 images 12-13)
 C7848,R002,location,
 C7848,R810,general,"German p.7, English p.7"
 C7849,R002,location,
 C7849,R811,general,German p.1 (Fold3 image 7)
+C7849,R812,general,"printed pp.1, 4 (Fold3 images 16, 19)"
 C7850,R002,location,
 C7850,R811,general,German p.1 (Fold3 image 7)
+C7850,R812,general,printed p.7 (Fold3 image 22)
 C7851,R002,location,
 C7851,R811,general,German p.1-2 (Fold3 image 7-8)
 C7852,R002,location,
@@ -16921,6 +17190,7 @@ C7853,R002,location,
 C7853,R811,general,German p.8-9 (Fold3 image 14-15)
 C7854,R002,location,
 C7854,R811,general,German p.5-6 (Fold3 image 11-12)
+C7854,R812,general,printed p.7 (Fold3 image 22)
 C7855,R002,location,
 C7855,R811,general,German p.5 (Fold3 image 11)
 C7856,R002,location,
@@ -17007,3 +17277,1278 @@ C7896,R002,location,
 C7896,R811,general,German p.28 (Fold3 image 34)
 C7897,R002,location,
 C7897,R811,general,German p.29 (Fold3 image 35)
+C7898,R002,location,
+C7898,R812,general,"printed p.1, 4 (Fold3 image 16, 19), App 1 (Fold3 image 64-65)"
+C7899,R002,location,
+C7899,R812,general,"printed p.1, 3 (Fold3 image 16, 18), App 1 (Fold3 image 64-65)"
+C7900,R002,location,
+C7900,R812,general,"printed p.4 (Fold3 image 19), App 1 (Fold3 image 64-65)"
+C7901,R002,location,
+C7901,R812,general,"printed p.4, 7, 10, 15 (Fold3 image 19, 22, 25, 30), App 1 (Fold3 image 64-65)"
+C7902,R002,location,
+C7902,R812,general,"printed p.4 (Fold3 image 19), App 1 (Fold3 image 64-65)"
+C7903,R002,location,
+C7903,R812,general,"printed p.4-5, 8, 15 (Fold3 image 19-20, 23, 30), App 1 (Fold3 image 64-65)"
+C7904,R002,location,
+C7904,R812,general,"printed p.7, 13 (Fold3 image 22, 28)"
+C7905,R002,location,
+C7905,R812,general,"printed p.4-5 (Fold3 image 19-20), App 1 (Fold3 image 64-65)"
+C7906,R002,location,
+C7906,R812,general,"printed p.4-5, 8, 10, 15 (Fold3 image 19-20, 23, 25, 30), App 1 (Fold3 image 64-65)"
+C7907,R002,location,
+C7907,R813,general,"German p.1-2 (Fold3 image 24-25, English p.1-2)"
+C7908,R002,location,
+C7908,R813,general,"German p.2 (Fold3 image 25, English p.2)"
+C7909,R002,location,
+C7909,R813,general,"German p.2 (Fold3 image 25, English p.2)"
+C7910,R002,location,
+C7910,R813,general,"German p.3 (Fold3 image 26, English p.2)"
+C7911,R002,location,
+C7911,R813,general,"German p.3 (Fold3 image 26, English p.3)"
+C7912,R002,location,
+C7912,R813,general,"German p.3 (Fold3 image 26, English p.3)"
+C7913,R002,location,
+C7913,R813,general,"Sketch 1 (Fold3 image 40, overlay Fold3 image 37)"
+C7914,R002,location,
+C7914,R813,general,Sketch 1 (Fold3 image 40)
+C7915,R002,location,
+C7915,R813,general,"German p.3 (Fold3 image 26, English p.3), Sketch 1 (Fold3 image 40)"
+C7916,R002,location,
+C7916,R813,general,"German p.3-4 (Fold3 image 26-27, English p.3-4)"
+C7917,R002,location,
+C7917,R813,general,"German p.5-6 (Fold3 image 28-29, English p.5)"
+C7918,R002,location,
+C7918,R813,general,"German p.5 (Fold3 image 28, English p.5)"
+C7919,R002,location,
+C7919,R813,general,"German p.6 (Fold3 image 29, English p.5)"
+C7920,R002,location,
+C7920,R813,general,"German p.5-6 (Fold3 image 28-29, English p.5)"
+C7921,R002,location,
+C7921,R813,general,"German p.5-6 (Fold3 image 28-29, English p.5)"
+C7922,R002,location,
+C7922,R813,general,"German p.6 (Fold3 image 29, English p.6), Sketch 2 (Fold3 image 41)"
+C7923,R002,location,
+C7923,R813,general,Sketch 2 (Fold3 image 41)
+C7924,R002,location,
+C7924,R813,general,Sketch 2 (Fold3 image 41)
+C7925,R002,location,
+C7925,R813,general,"German p.6 (Fold3 image 29, English p.6)"
+C7926,R002,location,
+C7926,R813,general,"German p.6 (Fold3 image 29, English p.6)"
+C7927,R002,location,
+C7927,R813,general,"German p.6 (Fold3 image 29, English p.6)"
+C7928,R002,location,
+C7928,R813,general,"German p.8 (Fold3 image 31, English p.8)"
+C7929,R002,location,
+C7929,R813,general,"German p.8-9 (Fold3 image 31-32, English p.8)"
+C7930,R002,location,
+C7930,R813,general,"German p.9 (Fold3 image 32, English p.8)"
+C7930,R815,general,German pp.17-18 (Fold3 images 26-27)
+C7931,R002,location,
+C7931,R813,general,"German p.9 (Fold3 image 32, English p.8)"
+C7931,R815,general,German p.18 (Fold3 image 27)
+C7932,R002,location,
+C7932,R813,general,"German p.9 (Fold3 image 32, English p.8)"
+C7932,R815,general,German p.18 (Fold3 image 27)
+C7933,R002,location,
+C7933,R813,general,"German p.9 (Fold3 image 32, English p.8-9)"
+C7934,R002,location,
+C7934,R813,general,Sketch 3 (Fold3 image 42)
+C7935,R002,location,
+C7935,R813,general,"German p.10 (Fold3 image 33, English p.9-10)"
+C7936,R002,location,
+C7936,R813,general,"German p.10 (Fold3 image 33, English p.10)"
+C7936,R815,general,German p.29 (Fold3 image 38)
+C7937,R002,location,
+C7937,R813,general,"German p.11 (Fold3 image 34, English p.10-11)"
+C7938,R002,location,
+C7938,R813,general,"German p.11 (Fold3 image 34, English p.10)"
+C7939,R002,location,
+C7939,R813,general,"German p.11 (Fold3 image 34, English p.10-11)"
+C7940,R002,location,
+C7940,R813,general,"German p.12 (Fold3 image 35, English p.11)"
+C7941,R002,location,
+C7941,R814,general,"Anlage 6 (Fold3 image 116), German p.10 (Fold3 image 69)"
+C7942,R002,location,
+C7942,R814,general,"Anlage 6 (Fold3 image 116), Skizze 2 (Fold3 image 128)"
+C7943,R002,location,
+C7943,R814,general,"Anlage 6 (Fold3 image 116), Skizze 3 (Fold3 image 130), Skizze 4 (Fold3 image 132)"
+C7944,R002,location,
+C7944,R814,general,Anlage 6 (Fold3 image 116)
+C7945,R002,location,
+C7945,R814,general,Anlage 6 (Fold3 image 116)
+C7946,R002,location,
+C7946,R814,general,Anlage 6 (Fold3 image 116)
+C7946,R845,general,German p.129-130 (Fold3 images 261-262)
+C7947,R002,location,
+C7947,R814,general,"Anlage 6 (Fold3 image 116), Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123)"
+C7947,R845,general,German p.130 (Fold3 image 262)
+C7948,R002,location,
+C7948,R814,general,Anlage 6 (Fold3 image 116)
+C7949,R002,location,
+C7949,R814,general,"German p.5 (Fold3 image 64, English p.4-5), Skizze 1 (Fold3 image 125)"
+C7950,R002,location,
+C7950,R814,general,"German p.5 (Fold3 image 64, English p.5)"
+C7951,R002,location,
+C7951,R814,general,"German p.3, 5 (Fold3 image 62, 64, English p.5), Skizze 1 (Fold3 image 124)"
+C7952,R002,location,
+C7952,R814,general,"German p.6 (Fold3 image 65, English p.5)"
+C7953,R002,location,
+C7953,R814,general,Skizze 1 (Fold3 image 124)
+C7954,R002,location,
+C7954,R814,general,Anlage 1 (Fold3 image 108)
+C7955,R002,location,
+C7955,R814,general,"German p.12 (Fold3 image 71, English p.26), Anlage 1 (Fold3 image 108)"
+C7956,R002,location,
+C7956,R814,general,"German p.11-13 (Fold3 image 70-72, English p.25-27)"
+C7956,R822,general,German p.-6- (Fold3 page 84)
+C7957,R002,location,
+C7957,R814,general,"German p.13-14 (Fold3 image 72-73, English p.27)"
+C7957,R822,general,German p.-7- (Fold3 page 85)
+C7958,R002,location,
+C7958,R814,general,"German p.14 (Fold3 image 73, English p.27)"
+C7958,R822,general,German p.-8- (Fold3 page 86)
+C7959,R002,location,
+C7959,R814,general,"German p.14 (Fold3 image 73, English p.27)"
+C7960,R002,location,
+C7960,R814,general,"German p.14 (Fold3 image 73, English p.28)"
+C7960,R822,general,German p.-6- and -7- (Fold3 page 84 and 85)
+C7961,R002,location,
+C7961,R814,general,"German p.15 (Fold3 image 74, English p.29)"
+C7962,R002,location,
+C7962,R814,general,"German p.18-19 (Fold3 image 77-78, English p.30-31)"
+C7963,R002,location,
+C7963,R814,general,"German p.18 (Fold3 image 77, English p.31), Skizze 2 (Fold3 image 128)"
+C7963,R845,general,German p.122 (Fold3 image 254)
+C7964,R002,location,
+C7964,R814,general,"German p.18 (Fold3 image 77, English p.31)"
+C7964,R845,general,German p.123 (Fold3 image 255)
+C7965,R002,location,
+C7965,R814,general,"German p.19 (Fold3 image 78, English p.32)"
+C7966,R002,location,
+C7966,R814,general,"Skizze 3 (Fold3 image 130), German p.19 (Fold3 image 78)"
+C7967,R002,location,
+C7967,R814,general,"German p.19 (Fold3 image 78, English p.31-32)"
+C7968,R002,location,
+C7968,R814,general,"German p.22-23 (Fold3 image 81-82), Skizze 4 (Fold3 image 132)"
+C7969,R002,location,
+C7969,R814,general,"German p.23 (Fold3 image 82, English p.22)"
+C7970,R002,location,
+C7970,R814,general,"German p.25 (Fold3 image 84, English p.23)"
+C7971,R002,location,
+C7971,R814,general,"German p.24 (Fold3 image 83, English p.23), Skizze 5 (Fold3 image 139)"
+C7971,R845,general,"German p.126 and p.130 (Fold3 images 258, 262)"
+C7972,R002,location,
+C7972,R814,general,Skizze 5 (Fold3 image 138)
+C7973,R002,location,
+C7973,R814,general,Skizze 5 (Fold3 image 138)
+C7974,R002,location,
+C7974,R814,general,Skizze 5 (Fold3 image 138)
+C7975,R002,location,
+C7975,R814,general,Skizze 5 (Fold3 image 138)
+C7976,R002,location,
+C7976,R814,general,"German p.33-34 (Fold3 image 92-93), Anlage 4 (Fold3 image 112)"
+C7976,R844,general,German p.12 (Fold3 image 52)
+C7977,R002,location,
+C7977,R814,general,German p.34-35 (Fold3 image 93-94)
+C7977,R844,general,German p.12-13 (Fold3 images 52-53)
+C7978,R002,location,
+C7978,R814,general,"German p.34 (Fold3 image 93), Anlage 4 (Fold3 image 112)"
+C7979,R002,location,
+C7979,R814,general,"German p.31-32 (Fold3 image 90-91), Skizze 6 (Fold3 image 141)"
+C7980,R002,location,
+C7980,R814,general,"Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123)"
+C7980,R844,general,"Skizze 4 (Fold3 images 70, 78-79)"
+C7981,R002,location,
+C7981,R814,general,German p.36-38 (Fold3 image 95-97)
+C7981,R844,general,German p.15-16 (Fold3 images 55-56)
+C7982,R002,location,
+C7982,R814,general,German p.38 (Fold3 image 97)
+C7983,R002,location,
+C7983,R814,general,"Anlage 5 (Fold3 image 114), Skizze 6 (Fold3 image 141)"
+C7984,R002,location,
+C7984,R815,general,"Skizze 1 (Fold3 image 79), typed Skizze 1 (Fold3 image 74)"
+C7985,R002,location,
+C7985,R815,general,German p.2 (Fold3 image 11)
+C7986,R002,location,
+C7986,R815,general,"German p.4, 7 (Fold3 image 13, 16)"
+C7987,R002,location,
+C7987,R815,general,German p.15-16 (Fold3 image 24-25)
+C7988,R002,location,
+C7988,R815,general,German p.16 (Fold3 image 25)
+C7988,R819,general,German p.14 (Fold3 image 38)
+C7989,R002,location,
+C7989,R815,general,German p.19 (Fold3 image 28)
+C7990,R002,location,
+C7990,R815,general,"German p.20 (Fold3 image 29), Anlage 4 (Fold3 image 73)"
+C7991,R002,location,
+C7991,R815,general,German p.20 (Fold3 image 29)
+C7992,R002,location,
+C7992,R815,general,German p.20-22 (Fold3 image 29-31)
+C7993,R002,location,
+C7993,R815,general,"German p.21 (Fold3 image 30), Anlage 4 (Fold3 image 73)"
+C7994,R002,location,
+C7994,R815,general,German p.21-23 (Fold3 image 30-32)
+C7995,R002,location,
+C7995,R815,general,German p.22 (Fold3 image 31)
+C7996,R002,location,
+C7996,R815,general,German p.23 (Fold3 image 32)
+C7997,R002,location,
+C7997,R815,general,German p.23 (Fold3 image 32)
+C7998,R002,location,
+C7998,R815,general,"German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 88)"
+C7998,R816,general,"B-148 Ziffer 3, p.1 (Fold3 image 97)"
+C7999,R002,location,
+C7999,R815,general,German p.28-29 (Fold3 image 37-38)
+C8000,R002,location,
+C8000,R815,general,German p.25 (Fold3 image 34)
+C8000,R816,general,"B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101), Skizze (Fold3 image 103)"
+C8000,R819,general,"German pp.4, 15 (Fold3 images 28, 39)"
+C8001,R002,location,
+C8001,R815,general,"German p.25 (Fold3 image 34), Skizze 5 (Fold3 image 88)"
+C8001,R816,general,"B-148 Ziffer 3, p.5 (Fold3 image 101)"
+C8002,R002,location,
+C8002,R815,general,"German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 78)"
+C8002,R816,general,"B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101)"
+C8003,R002,location,
+C8003,R816,general,"B-148 Ziffer 3, p.5 (Fold3 image 101), Skizze (Fold3 image 102-103)"
+C8003,R819,general,German p.15 (Fold3 image 39)
+C8004,R002,location,
+C8004,R816,general,"B-148 Ziffer 3, pp.2, 5 (Fold3 image 98, 101)"
+C8005,R002,location,
+C8005,R817,general,"German p.1-2 (Fold3 image 5-6, English p.1-2)"
+C8006,R002,location,
+C8006,R817,general,"German p.4-5 (Fold3 image 8-9, English p.4-5), Anlage 5 (Fold3 image 14-22)"
+C8007,R002,location,
+C8007,R817,general,"German p.5-6 (Fold3 image 9-10, English p.6)"
+C8008,R002,location,
+C8008,R817,general,"German p.6 (Fold3 image 10, English p.6), Anlage 5 (Fold3 image 14-22)"
+C8009,R002,location,
+C8009,R817,general,"German p.6 (Fold3 image 10, English p.6)"
+C8010,R002,location,
+C8010,R817,general,"German p.6-7 (Fold3 image 10-11, English p.6-7)"
+C8011,R002,location,
+C8011,R817,general,"German p.7-8 (Fold3 image 11-12, English p.7-8), Anlage 5 (Fold3 image 14-22)"
+C8012,R002,location,
+C8012,R817,general,"German p.8-9 (Fold3 image 12-13, English p.8-9), Anlage 5 (Fold3 image 14-22)"
+C8013,R002,location,
+C8013,R818,general,"German p.1 (Fold3 image 5, English p.1, Fold3 image 27)"
+C8014,R002,location,
+C8014,R818,general,"German p.2-4 (Fold3 image 6-8, English p.3-4, Fold3 image 29-30), Anlage 6 (Fold3 image 16-23)"
+C8015,R002,location,
+C8015,R818,general,"German p.4 (Fold3 image 8, English p.4, Fold3 image 30), Anlage 6 (Fold3 image 16-23)"
+C8016,R002,location,
+C8016,R818,general,"German p.5 (Fold3 image 9, English p.4-5, Fold3 image 30-31), Anlage 6 (Fold3 image 16-23)"
+C8017,R002,location,
+C8017,R818,general,"German p.5-6 (Fold3 image 9-10, English p.5-6, Fold3 image 31-32), Anlage 6 (Fold3 image 16-23)"
+C8018,R002,location,
+C8018,R818,general,"German p.8-10 (Fold3 image 12-14, English p.9-11, Fold3 image 35-37), Anlage 7 (Fold3 image 24)"
+C8019,R002,location,
+C8019,R818,general,"German p.10 (Fold3 image 14, English p.10-11, Fold3 image 36-37)"
+C8020,R002,location,
+C8020,R819,general,"German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+C8020,R852,general,German p.9 (Fold3 image 78)
+C8021,R002,location,
+C8021,R819,general,"German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+C8022,R002,location,
+C8022,R819,general,"German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+C8023,R002,location,
+C8023,R819,general,"German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+C8024,R002,location,
+C8024,R819,general,"German pp.2 and 5 (Fold3 images 26 and 29, English pp.2 and 5, Fold3 images 4 and 7)"
+C8025,R002,location,
+C8025,R819,general,"German pp.4-5 (Fold3 images 28-29, English pp.4-5, Fold3 images 6-7)"
+C8026,R002,location,
+C8026,R819,general,"German pp.3-5 (Fold3 images 27-29, English pp.3-5, Fold3 images 5-7)"
+C8027,R002,location,
+C8027,R819,general,"German pp.4, 11-13 (Fold3 images 28, 35-37, English pp.4, 11-13, Fold3 images 6, 13-15), Skizze 1 (Fold3 images 41-42)"
+C8028,R002,location,
+C8028,R819,general,"Skizze 1 (Fold3 images 41-42, English Fold3 images 19-20)"
+C8029,R002,location,
+C8029,R819,general,"Skizze 1 (Fold3 images 41-42, English Fold3 images 19-20)"
+C8030,R002,location,
+C8030,R819,general,"German p.11 (Fold3 image 35, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+C8031,R002,location,
+C8031,R819,general,"German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+C8032,R002,location,
+C8032,R819,general,"German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+C8033,R002,location,
+C8033,R819,general,"German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+C8034,R002,location,
+C8034,R819,general,"German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+C8035,R002,location,
+C8035,R819,general,"German p.14 (Fold3 image 38, English p.14, Fold3 image 16)"
+C8036,R002,location,
+C8036,R819,general,"German pp.15-16 (Fold3 images 39-40, English p.15, Fold3 image 17)"
+C8037,R002,location,
+C8037,R819,general,"German p.16 (Fold3 image 40, English pp.15-16, Fold3 images 17-18)"
+C8037,R845,general,German p.112 (Fold3 image 244)
+C8038,R002,location,
+C8038,R819,general,"German p.15 (Fold3 image 39, English p.14, Fold3 image 16), Skizze 1 (Fold3 image 42)"
+C8039,R002,location,
+C8039,R819,general,"German p.6 (Fold3 image 30, English p.6, Fold3 image 8)"
+C8040,R002,location,
+C8040,R771,general,German p.48 (Fold3 page 56)
+C8040,R820,general,German p.2 (Fold3 page 169)
+C8041,R002,location,
+C8041,R820,general,German p.7-15 (Fold3 page 174-182)
+C8042,R002,location,
+C8042,R820,general,German p.15 (Fold3 page 182)
+C8043,R002,location,
+C8043,R820,general,German p.16-19 (Fold3 page 183-186)
+C8044,R002,location,
+C8044,R820,general,German p.16 (Fold3 page 183)
+C8045,R002,location,
+C8045,R820,general,German p.16 (Fold3 page 183)
+C8046,R002,location,
+C8046,R820,general,German p.16 (Fold3 page 183)
+C8047,R002,location,
+C8047,R820,general,German p.16-17 (Fold3 page 183-184)
+C8047,R824,general,p.20 (Fold3 page 25)
+C8048,R002,location,
+C8048,R820,general,German p.16-17 (Fold3 page 183-184)
+C8049,R002,location,
+C8049,R820,general,German p.17 (Fold3 page 184)
+C8049,R824,general,p.28 and 29 (Fold3 page 33 and 34)
+C8050,R002,location,
+C8050,R820,general,German p.17 (Fold3 page 184)
+C8050,R824,general,p.27 and 28 (Fold3 page 32 and 33)
+C8051,R002,location,
+C8051,R820,general,German p.18-21 (Fold3 page 185-188)
+C8052,R002,location,
+C8052,R820,general,German p.18-21 (Fold3 page 185-188)
+C8053,R002,location,
+C8053,R820,general,German p.18 (Fold3 page 185)
+C8054,R002,location,
+C8054,R820,general,"German p.18 (Fold3 page 185), Anlage 1 (Fold3 page 230)"
+C8055,R002,location,
+C8055,R820,general,German p.19 (Fold3 page 186)
+C8056,R002,location,
+C8056,R820,general,German p.19-20 (Fold3 page 186-187)
+C8057,R002,location,
+C8057,R820,general,German p.19-21 (Fold3 page 186-188)
+C8058,R002,location,
+C8058,R820,general,German p.21 (Fold3 page 188)
+C8059,R002,location,
+C8059,R820,general,German p.21 (Fold3 page 188)
+C8060,R002,location,
+C8060,R820,general,German p.24 (Fold3 page 191)
+C8061,R002,location,
+C8061,R820,general,German p.24 (Fold3 page 191)
+C8062,R002,location,
+C8062,R820,general,German p.23-24 (Fold3 page 190-191)
+C8063,R002,location,
+C8063,R820,general,"German p.24-25 (Fold3 page 191-192), Anlage 7c (Fold3 page 238)"
+C8064,R002,location,
+C8064,R820,general,German p.44 (Fold3 page 211)
+C8065,R002,location,
+C8065,R820,general,"German p.46-47 (Fold3 page 213-214), Anlage 5 (Fold3 page 234)"
+C8066,R002,location,
+C8066,R820,general,"German p.48 (Fold3 page 215), Anlage 5 (Fold3 page 234)"
+C8067,R002,location,
+C8067,R820,general,"German p.47-48 (Fold3 page 214-215), Anlage 5 (Fold3 page 234)"
+C8068,R002,location,
+C8068,R820,general,"German p.48-49 (Fold3 page 215-216), Anlage 5 (Fold3 page 234)"
+C8069,R002,location,
+C8069,R820,general,German p.53 (Fold3 page 220)
+C8070,R002,location,
+C8070,R820,general,German p.53 (Fold3 page 220)
+C8071,R002,location,
+C8071,R820,general,German p.57 (Fold3 page 225)
+C8072,R002,location,
+C8072,R820,general,German p.63 (Fold3 page 247)
+C8073,R002,location,
+C8073,R820,general,German p.63 (Fold3 page 247)
+C8074,R002,location,
+C8074,R820,general,German p.58 (Fold3 page 226)
+C8075,R002,location,
+C8075,R820,general,German p.58-59 (Fold3 page 226-227)
+C8076,R002,location,
+C8076,R820,general,"German p.59 (Fold3 page 227), Anlage 6 (Fold3 page 235)"
+C8077,R002,location,
+C8077,R820,general,German p.59 (Fold3 page 227)
+C8078,R002,location,
+C8078,R820,general,German p.59 (Fold3 page 227)
+C8079,R002,location,
+C8079,R821,general,German p.Anlage 7d (Fold3 page 65)
+C8080,R002,location,
+C8080,R821,general,German p.Anlage 7d (Fold3 page 65)
+C8080,R852,general,"German p.9, 20, 23 (Fold3 images 78, 89, 92)"
+C8081,R002,location,
+C8081,R821,general,German p.Anlage 7d (Fold3 page 65)
+C8082,R002,location,
+C8082,R821,general,German p.Anlage 7d (Fold3 page 65)
+C8083,R002,location,
+C8083,R821,general,German p.-2- (Fold3 page 43)
+C8083,R852,general,German p.14 (Fold3 image 83)
+C8084,R002,location,
+C8084,R821,general,German p.-3- (Fold3 page 44)
+C8085,R002,location,
+C8085,R821,general,German p.-3- (Fold3 page 44)
+C8086,R002,location,
+C8086,R821,general,German p.-5- (Fold3 page 46)
+C8087,R002,location,
+C8087,R821,general,German p.-4- (Fold3 page 45)
+C8088,R002,location,
+C8088,R821,general,German p.-4- (Fold3 page 45)
+C8089,R002,location,
+C8089,R821,general,German p.-6- and -7- (Fold3 page 47 and 48)
+C8090,R002,location,
+C8090,R821,general,German p.-8- (Fold3 page 49)
+C8090,R852,general,"German p.18, Anlage 2 (Fold3 images 87, 118)"
+C8091,R002,location,
+C8091,R821,general,German p.-10- and -13- and -17- (Fold3 page 51 and 54 and 59)
+C8092,R002,location,
+C8092,R821,general,German p.-10- and -11- (Fold3 page 51 and 52)
+C8093,R002,location,
+C8093,R821,general,German p.-10- (Fold3 page 51)
+C8094,R002,location,
+C8094,R821,general,German p.-16a- (Fold3 page 58)
+C8094,R852,general,German p.24 (Fold3 image 93)
+C8095,R002,location,
+C8095,R821,general,German p.-16a- (Fold3 page 58)
+C8096,R002,location,
+C8096,R821,general,German p.-15- (Fold3 page 56)
+C8096,R852,general,German p.25-27 (Fold3 images 94-96)
+C8097,R002,location,
+C8097,R821,general,German p.-14- and -15- (Fold3 page 55 and 56)
+C8097,R852,general,"German p.25, Anlage 3 (Fold3 images 94, 119)"
+C8098,R002,location,
+C8098,R821,general,German p.-15- (Fold3 page 56)
+C8098,R852,general,German p.25 (Fold3 image 94)
+C8099,R002,location,
+C8099,R821,general,German p.-14- (Fold3 page 55)
+C8099,R852,general,German p.25-26 (Fold3 images 94-95)
+C8100,R002,location,
+C8100,R821,general,German p.-18- (Fold3 page 60)
+C8101,R002,location,
+C8101,R821,general,German p.-18- (Fold3 page 60)
+C8102,R002,location,
+C8102,R821,general,German p.-17- and -18- (Fold3 page 59 and 60)
+C8103,R002,location,
+C8103,R821,general,German p.-18- (Fold3 page 60)
+C8104,R002,location,
+C8104,R821,general,German p.-18- (Fold3 page 60)
+C8105,R002,location,
+C8105,R821,general,German p.-18- (Fold3 page 60)
+C8106,R002,location,
+C8106,R821,general,German p.-19- (Fold3 page 61)
+C8107,R002,location,
+C8107,R821,general,German p.-19- (Fold3 page 61)
+C8108,R002,location,
+C8108,R821,general,German p.-19- (Fold3 page 61)
+C8109,R002,location,
+C8109,R821,general,German p.-3- (Fold3 page 44)
+C8110,R002,location,
+C8110,R821,general,German p.-3- (Fold3 page 44)
+C8111,R002,location,
+C8111,R821,general,German p.-3- (Fold3 page 44)
+C8112,R002,location,
+C8112,R821,general,German p.-5- (Fold3 page 46)
+C8113,R002,location,
+C8113,R821,general,German p.-9- (Fold3 page 50)
+C8114,R002,location,
+C8114,R821,general,German p.-12- (Fold3 page 53)
+C8115,R002,location,
+C8115,R821,general,German p.-17- (Fold3 page 59)
+C8116,R002,location,
+C8116,R821,general,German p.-17- (Fold3 page 59)
+C8117,R002,location,
+C8117,R821,general,German p.-17- (Fold3 page 59)
+C8118,R002,location,
+C8118,R821,general,German p.-14- (Fold3 page 55)
+C8119,R002,location,
+C8119,R822,general,German p.-1- (Fold3 page 79)
+C8120,R002,location,
+C8120,R822,general,German p.-1- (Fold3 page 79)
+C8121,R002,location,
+C8121,R822,general,German p.-3- (Fold3 page 81)
+C8122,R002,location,
+C8122,R822,general,German p.-3- (Fold3 page 81)
+C8123,R002,location,
+C8123,R822,general,German p.-6- (Fold3 page 84)
+C8124,R002,location,
+C8124,R822,general,German p.-7- (Fold3 page 85)
+C8125,R002,location,
+C8125,R822,general,German p.-7- (Fold3 page 85)
+C8126,R002,location,
+C8126,R822,general,German p.-7- and -8- (Fold3 page 85 and 86)
+C8127,R002,location,
+C8127,R822,general,German p.-9- (Fold3 page 87)
+C8128,R002,location,
+C8128,R822,general,German p.-9- (Fold3 page 87)
+C8129,R002,location,
+C8129,R822,general,German p.-9- (Fold3 page 87)
+C8130,R002,location,
+C8130,R822,general,German p.-9- (Fold3 page 87)
+C8131,R002,location,
+C8131,R822,general,German p.-12- (Fold3 page 90)
+C8132,R002,location,
+C8132,R822,general,German p.-12- (Fold3 page 90)
+C8133,R002,location,
+C8133,R822,general,German p.-12- (Fold3 page 90)
+C8133,R823,general,p.1 and 2 (Fold3 page 115 and 116)
+C8134,R002,location,
+C8134,R822,general,German p.-13- (Fold3 page 91)
+C8135,R002,location,
+C8135,R822,general,German p.-13- (Fold3 page 91)
+C8136,R002,location,
+C8136,R822,general,German p.-14- (Fold3 page 92)
+C8137,R002,location,
+C8137,R822,general,German p.-14- (Fold3 page 92)
+C8138,R002,location,
+C8138,R822,general,German p.-15- and -16- (Fold3 page 93 and 94)
+C8139,R002,location,
+C8139,R822,general,German p.-17- (Fold3 page 95)
+C8140,R002,location,
+C8140,R822,general,German p.-17- (Fold3 page 95)
+C8141,R002,location,
+C8141,R822,general,German p.-18- and -19- (Fold3 page 96 and 97)
+C8142,R002,location,
+C8142,R822,general,German p.-18- (Fold3 page 96)
+C8143,R002,location,
+C8143,R822,general,German p.-20- (Fold3 page 98)
+C8144,R002,location,
+C8144,R822,general,German p.-20- (Fold3 page 98)
+C8145,R002,location,
+C8145,R822,general,German p.-20- (Fold3 page 98)
+C8146,R002,location,
+C8146,R822,general,German p.-21- (Fold3 page 99)
+C8147,R002,location,
+C8147,R822,general,German p.-22- (Fold3 page 100)
+C8148,R002,location,
+C8148,R822,general,German p.-22- and -23- (Fold3 page 100 and 101)
+C8149,R002,location,
+C8149,R822,general,German p.-23- (Fold3 page 101)
+C8150,R002,location,
+C8150,R822,general,German p.-11- (Fold3 page 89)
+C8150,R823,general,p.2 (Fold3 page 116)
+C8151,R002,location,
+C8151,R824,general,p.1 (Fold3 page 6)
+C8151,R848,general,text p.1 (Fold3 image 6)
+C8152,R002,location,
+C8152,R824,general,p.1 and 2 (Fold3 page 6 and 7)
+C8153,R002,location,
+C8153,R824,general,p.2 (Fold3 page 7)
+C8154,R002,location,
+C8154,R824,general,p.2 (Fold3 page 7)
+C8155,R002,location,
+C8155,R824,general,p.5 (Fold3 page 10)
+C8155,R845,general,German p.94 (Fold3 image 226)
+C8155,R848,general,text p.3-5 (Fold3 images 8-10)
+C8156,R002,location,
+C8156,R824,general,p.5 and 6 (Fold3 page 10 and 11)
+C8157,R002,location,
+C8157,R824,general,p.6 (Fold3 page 11)
+C8158,R002,location,
+C8158,R824,general,p.7 (Fold3 page 12)
+C8159,R002,location,
+C8159,R824,general,"p.7 (Fold3 page 12), Anlage 1 (Fold3 pages 43 and 47)"
+C8160,R002,location,
+C8160,R824,general,p.3 and 7 (Fold3 page 8 and 12)
+C8160,R848,general,text p.5 (Fold3 image 10)
+C8161,R002,location,
+C8161,R824,general,p.7 and 12 (Fold3 page 12 and 17)
+C8162,R002,location,
+C8162,R824,general,"p.12 and 16 (Fold3 page 17 and 21), Anlage 1 (Fold3 pages 43 and 47)"
+C8163,R002,location,
+C8163,R824,general,Anlage 1 (Fold3 pages 43 and 47) and p.11 (Fold3 page 16)
+C8164,R002,location,
+C8164,R824,general,Anlage 1 (Fold3 pages 43 and 47)
+C8165,R002,location,
+C8165,R824,general,"p.17 (Fold3 page 22), Anlage 1 (Fold3 pages 43 and 47)"
+C8166,R002,location,
+C8166,R824,general,p.18 and 19 (Fold3 page 23 and 24)
+C8166,R848,general,text p.7-8 (Fold3 images 12-13)
+C8167,R002,location,
+C8167,R824,general,p.21 (Fold3 page 26)
+C8168,R002,location,
+C8168,R824,general,p.20 (Fold3 page 25)
+C8169,R002,location,
+C8169,R824,general,p.23 and 24 (Fold3 page 28 and 29)
+C8170,R002,location,
+C8170,R824,general,p.23 (Fold3 page 28)
+C8171,R002,location,
+C8171,R824,general,p.25 and 26 (Fold3 page 30 and 31)
+C8171,R845,general,"German p.94-95 and p.101 (Fold3 images 226-227, 233)"
+C8171,R848,general,text p.8 (Fold3 image 13)
+C8172,R002,location,
+C8172,R824,general,p.27 (Fold3 page 32)
+C8173,R002,location,
+C8173,R824,general,p.28 (Fold3 page 33)
+C8174,R002,location,
+C8174,R824,general,p.24 and 25 and 29 (Fold3 page 29 and 30 and 34)
+C8175,R002,location,
+C8175,R824,general,"p.30 (Fold3 page 35), Anlage 4 (Fold3 pages 46 and 50)"
+C8176,R002,location,
+C8176,R824,general,"p.27 and 30 (Fold3 page 32 and 35), Anlage 4 (Fold3 pages 46 and 50)"
+C8177,R002,location,
+C8177,R808,general,"German p.10 (Fold3 page 14), Anlage 4 (Fold3 page 22)"
+C8178,R002,location,
+C8178,R825,general,German p.4 (Fold3 page 8)
+C8179,R002,location,
+C8179,R825,general,German p.4 and 5 (Fold3 page 8 and 9)
+C8180,R002,location,
+C8180,R825,general,German p.4 and 7 (Fold3 page 8 and 11)
+C8181,R002,location,
+C8181,R825,general,German p.9 (Fold3 page 13)
+C8182,R002,location,
+C8182,R825,general,German p.11 (Fold3 page 15)
+C8183,R002,location,
+C8183,R825,general,German p.12 and 13 and 14 (Fold3 page 16 and 17 and 18)
+C8184,R002,location,
+C8184,R825,general,German p.11 and 12 (Fold3 page 15 and 16)
+C8185,R002,location,
+C8185,R825,general,German p.16 (Fold3 page 20)
+C8186,R002,location,
+C8186,R825,general,German p.14 and 17 (Fold3 page 18 and 21)
+C8187,R002,location,
+C8187,R825,general,German p.20 (Fold3 page 24)
+C8188,R002,location,
+C8188,R825,general,German p.18 and 19 and 20 (Fold3 page 22 and 23 and 24)
+C8189,R002,location,
+C8189,R826,general,German p.9 (Fold3 page 11) and English p.9 (Fold3 page 31)
+C8190,R002,location,
+C8190,R826,general,German p.9 (Fold3 page 11) and English p.10 (Fold3 page 32)
+C8191,R002,location,
+C8191,R826,general,German p.10 (Fold3 page 12) and English p.10 (Fold3 page 32)
+C8192,R002,location,
+C8192,R826,general,German p.10 (Fold3 page 12) and English p.10 (Fold3 page 32)
+C8192,R827,general,p.3 (Fold3 page 8)
+C8193,R002,location,
+C8193,R826,general,German p.11 (Fold3 page 13) and English p.12 (Fold3 page 34)
+C8194,R002,location,
+C8194,R826,general,German p.12 (Fold3 page 14) and English p.12 (Fold3 page 34)
+C8195,R002,location,
+C8195,R826,general,German p.12 (Fold3 page 14) and English p.13 (Fold3 page 35)
+C8195,R827,general,p.4 (Fold3 page 9)
+C8196,R002,location,
+C8196,R826,general,German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)
+C8197,R002,location,
+C8197,R826,general,German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)
+C8198,R002,location,
+C8198,R826,general,German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)
+C8199,R002,location,
+C8199,R827,general,p.5 (Fold3 page 10)
+C8200,R002,location,
+C8200,R828,general,p.21 (Fold3 page 62)
+C8201,R002,location,
+C8201,R829,general,p.5 (Fold3 page 11)
+C8202,R002,location,
+C8202,R829,general,p.12 (Fold3 page 18)
+C8203,R002,location,
+C8203,R829,general,p.15 (Fold3 page 21)
+C8204,R002,location,
+C8204,R829,general,p.15 (Fold3 page 21)
+C8205,R002,location,
+C8205,R829,general,p.15 (Fold3 page 21)
+C8206,R002,location,
+C8206,R829,general,p.21 (Fold3 page 27)
+C8207,R002,location,
+C8207,R829,general,p.21 (Fold3 page 27)
+C8208,R002,location,
+C8208,R829,general,p.28 (Fold3 page 34)
+C8209,R002,location,
+C8209,R829,general,p.32 (Fold3 page 38)
+C8210,R002,location,
+C8210,R830,general,German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4)
+C8210,R831,general,German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59)
+C8210,R832,general,German p.7 (Fold3 page 12)
+C8211,R002,location,
+C8211,R830,general,German p.1 (Fold3 page 19) and English p.2 (Fold3 page 5)
+C8212,R002,location,
+C8212,R831,general,German p.1 (Fold3 page 4) and English p.12 (Fold3 page 57)
+C8212,R832,general,German p.6 (Fold3 page 11)
+C8213,R002,location,
+C8213,R831,general,German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58)
+C8213,R832,general,German p.3 (Fold3 page 8)
+C8213,R853,general,"Skizze 1 (Fold3 images 35, 39) and German p.3-4 (images 9-10)"
+C8213,R858,general,p.-1- (Fold3 page 5)
+C8214,R002,location,
+C8214,R831,general,German p.3 (Fold3 page 6) and English p.14 (Fold3 page 59)
+C8214,R832,general,German p.5 (Fold3 page 10)
+C8215,R002,location,
+C8215,R832,general,German p.8 (Fold3 page 13)
+C8216,R002,location,
+C8216,R832,general,German p.9 (Fold3 page 14)
+C8217,R002,location,
+C8217,R832,general,German p.9 (Fold3 page 14)
+C8218,R002,location,
+C8218,R832,general,German p.31 (Fold3 page 36)
+C8219,R002,location,
+C8219,R832,general,German p.35 (Fold3 page 40)
+C8219,R858,general,p.-2- (Fold3 page 6)
+C8220,R002,location,
+C8220,R832,general,"English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
+C8221,R002,location,
+C8221,R833,general,German p.13 (Fold3 page 38)
+C8221,R847,general,English p.1 (Fold3 image 5)
+C8222,R002,location,
+C8222,R834,general,English p.5 (Fold3 page 72)
+C8223,R002,location,
+C8223,R834,general,English p.25 (Fold3 page 92)
+C8224,R002,location,
+C8224,R834,general,English p.50 (Fold3 page 117)
+C8225,R002,location,
+C8225,R834,general,English p.52 (Fold3 page 119)
+C8226,R002,location,
+C8226,R834,general,English p.54 (Fold3 page 121)
+C8227,R002,location,
+C8227,R835,general,English p.6 (Fold3 page 102)
+C8228,R002,location,
+C8228,R835,general,English p.7 (Fold3 page 103)
+C8229,R002,location,
+C8229,R835,general,English p.10 (Fold3 page 106)
+C8230,R002,location,
+C8230,R835,general,English p.13 (Fold3 page 109)
+C8231,R002,location,
+C8231,R835,general,English p.14 (Fold3 page 110)
+C8232,R002,location,
+C8232,R835,general,English p.20 (Fold3 page 116)
+C8233,R002,location,
+C8233,R835,general,English p.23 (Fold3 page 119)
+C8234,R002,location,
+C8234,R836,general,German p.4 (Fold3 page 11)
+C8234,R838,general,German p.3 (Fold3 page 77)
+C8235,R002,location,
+C8235,R836,general,German p.9 (Fold3 page 16)
+C8235,R838,general,German p.24 (Fold3 page 98)
+C8236,R002,location,
+C8236,R836,general,German pp.12-13 (Fold3 pages 19-20)
+C8236,R838,general,German p.24 (Fold3 page 98)
+C8237,R002,location,
+C8237,R836,general,German p.25 (Fold3 page 32)
+C8237,R839,general,German p.15 (Fold3 page 23)
+C8238,R002,location,
+C8238,R836,general,German p.32 (Fold3 page 39)
+C8239,R002,location,
+C8239,R836,general,German pp.34-35 (Fold3 pages 41-42)
+C8240,R002,location,
+C8240,R836,general,German p.45 (Fold3 page 52)
+C8241,R002,location,
+C8241,R836,general,German p.50 (Fold3 page 57)
+C8241,R837,general,German p.37 (Fold3 page 93)
+C8242,R002,location,
+C8242,R836,general,German p.52 (Fold3 page 59)
+C8243,R002,location,
+C8243,R771,general,German p.4 (Fold3 page 12)
+C8243,R837,general,German p.4 (Fold3 page 60)
+C8244,R002,location,
+C8244,R837,general,German p.40 (Fold3 page 96)
+C8245,R002,location,
+C8245,R837,general,German p.44 (Fold3 page 100)
+C8246,R002,location,
+C8246,R838,general,German p.31 (Fold3 page 105)
+C8247,R002,location,
+C8247,R838,general,German p.36 (Fold3 page 110)
+C8248,R002,location,
+C8248,R838,general,German p.40 (Fold3 page 114)
+C8249,R002,location,
+C8249,R838,general,German p.43 (Fold3 page 117)
+C8250,R002,location,
+C8250,R838,general,German p.46 (Fold3 page 120)
+C8251,R002,location,
+C8251,R838,general,German p.49 (Fold3 page 123)
+C8252,R002,location,
+C8252,R838,general,German p.51 (Fold3 page 125)
+C8253,R002,location,
+C8253,R838,general,German p.56 (Fold3 page 130)
+C8254,R002,location,
+C8254,R838,general,German p.58 (Fold3 page 132)
+C8255,R002,location,
+C8255,R838,general,German p.59 (Fold3 page 133)
+C8256,R002,location,
+C8256,R838,general,German p.61 (Fold3 page 135)
+C8256,R839,general,German p.34 (Fold3 page 42)
+C8257,R002,location,
+C8257,R838,general,German p.65 (Fold3 page 139)
+C8257,R839,general,German p.42 (Fold3 page 50)
+C8258,R002,location,
+C8258,R838,general,German p.57 (Fold3 page 131)
+C8259,R002,location,
+C8259,R838,general,German p.57 (Fold3 page 131)
+C8260,R002,location,
+C8260,R771,general,German pp.47-48 (Fold3 pages 55-56)
+C8261,R002,location,
+C8261,R771,general,German pp.47-48 (Fold3 pages 55-56)
+C8262,R002,location,
+C8262,R839,general,German p.3 (Fold3 page 11)
+C8263,R002,location,
+C8263,R839,general,German p.23 (Fold3 page 31)
+C8264,R002,location,
+C8264,R839,general,German p.40 (Fold3 page 48)
+C8265,R002,location,
+C8265,R839,general,German p.18 (Fold3 page 26)
+C8266,R002,location,
+C8266,R839,general,German p.44 (Fold3 page 52)
+C8267,R002,location,
+C8267,R839,general,German p.19 (Fold3 page 27)
+C8268,R002,location,
+C8268,R839,general,German p.33 (Fold3 page 41)
+C8269,R002,location,
+C8269,R839,general,German p.34 (Fold3 page 42)
+C8270,R002,location,
+C8270,R839,general,German p.18 (Fold3 page 26)
+C8271,R002,location,
+C8271,R839,general,German p.33 (Fold3 page 41)
+C8272,R002,location,
+C8272,R839,general,German p.33 (Fold3 page 41)
+C8273,R002,location,
+C8273,R839,general,German p.40 (Fold3 page 48)
+C8274,R002,location,
+C8274,R839,general,German p.52 (Fold3 page 60)
+C8275,R002,location,
+C8275,R840,general,German p.1 (Fold3 page 15)
+C8275,R855,general,"Anlage 4 sketch, Fold3 page 204"
+C8276,R002,location,
+C8276,R840,general,German p.1 (Fold3 page 15)
+C8277,R002,location,
+C8277,R840,general,German p.2 (Fold3 page 16)
+C8278,R002,location,
+C8278,R840,general,German p.2 (Fold3 page 16)
+C8279,R002,location,
+C8279,R840,general,German p.3 (Fold3 page 17)
+C8280,R002,location,
+C8280,R840,general,German pp.3-4 (Fold3 pages 17-18)
+C8281,R002,location,
+C8281,R841,general,German p.1 (Fold3 page 14)
+C8282,R002,location,
+C8282,R841,general,German p.2 (Fold3 page 15)
+C8283,R002,location,
+C8283,R841,general,German pp.5-6 (Fold3 pages 18-19)
+C8284,R002,location,
+C8284,R842,general,German p.3 (Fold3 page 12)
+C8285,R002,location,
+C8285,R842,general,German p.3 (Fold3 page 12)
+C8286,R002,location,
+C8286,R843,general,German p.1 (Fold3 page 69)
+C8287,R002,location,
+C8287,R843,general,German p.17 (Fold3 page 85)
+C8288,R002,location,
+C8288,R843,general,German p.22 (Fold3 page 90)
+C8289,R002,location,
+C8289,R843,general,German p.24 (Fold3 page 92)
+C8290,R002,location,
+C8290,R843,general,German p.25 (Fold3 page 93)
+C8291,R002,location,
+C8291,R843,general,German p.26 (Fold3 page 94)
+C8292,R002,location,
+C8292,R843,general,German p.29 (Fold3 page 97)
+C8293,R002,location,
+C8293,R843,general,German p.29 (Fold3 page 97)
+C8294,R002,location,
+C8294,R843,general,German p.30 (Fold3 page 98)
+C8295,R002,location,
+C8295,R843,general,German p.31 (Fold3 page 99)
+C8296,R002,location,
+C8296,R843,general,German p.32 (Fold3 page 100)
+C8297,R002,location,
+C8297,R843,general,German p.35 (Fold3 page 103)
+C8298,R002,location,
+C8298,R843,general,German p.35 (Fold3 page 103)
+C8299,R002,location,
+C8299,R843,general,German p.39 (Fold3 page 107)
+C8300,R002,location,
+C8300,R843,general,German p.40 (Fold3 page 108)
+C8301,R002,location,
+C8301,R843,general,German p.40 (Fold3 page 108)
+C8302,R002,location,
+C8302,R843,general,German p.5 (Fold3 page 73)
+C8303,R002,location,
+C8303,R843,general,German p.24 (Fold3 page 92)
+C8304,R002,location,
+C8304,R843,general,German p.31 (Fold3 page 99)
+C8305,R002,location,
+C8305,R843,general,German p.32 (Fold3 page 100)
+C8306,R002,location,
+C8306,R843,general,German p.31 (Fold3 page 99)
+C8307,R002,location,
+C8307,R843,general,German p.36 (Fold3 page 104)
+C8308,R002,location,
+C8308,R843,general,German p.39 (Fold3 page 107)
+C8309,R002,location,
+C8309,R843,general,German p.6 (Fold3 page 74)
+C8310,R002,location,
+C8310,R843,general,German p.22 (Fold3 page 90)
+C8311,R002,location,
+C8311,R843,general,German p.29 (Fold3 page 97)
+C8312,R002,location,
+C8312,R843,general,German p.35 (Fold3 page 103)
+C8313,R002,location,
+C8313,R843,general,German p.40 (Fold3 page 108)
+C8314,R002,location,
+C8314,R843,general,German p.24 (Fold3 page 92)
+C8315,R002,location,
+C8315,R843,general,German p.35 (Fold3 page 103)
+C8316,R002,location,
+C8316,R843,general,German p.33 (Fold3 page 101)
+C8317,R002,location,
+C8317,R843,general,German p.22 (Fold3 page 90)
+C8318,R002,location,
+C8318,R843,general,German p.29 (Fold3 page 97)
+C8319,R002,location,
+C8319,R843,general,German p.35 (Fold3 page 103)
+C8320,R002,location,
+C8320,R843,general,German p.24 (Fold3 page 92)
+C8321,R002,location,
+C8321,R843,general,German p.31 (Fold3 page 99)
+C8322,R002,location,
+C8322,R844,general,"German p.1 (Fold3 image 41), Skizze 4 (image 70)"
+C8322,R845,general,German p.126 (Fold3 image 258)
+C8323,R002,location,
+C8323,R844,general,"German p.11 (Fold3 image 51), Skizze 4 (image 70)"
+C8323,R845,general,German p.130 (Fold3 image 262)
+C8324,R002,location,
+C8324,R844,general,"German p.12 (Fold3 image 52), Skizze 4 (images 70, 78-79)"
+C8325,R002,location,
+C8325,R844,general,"Skizze 4 (Fold3 images 70, 78-79)"
+C8325,R845,general,German p.130 (Fold3 image 262)
+C8326,R002,location,
+C8326,R844,general,"German p.20 (Fold3 image 60), Skizze 4 (image 70)"
+C8326,R845,general,German p.130 (Fold3 image 262)
+C8327,R002,location,
+C8327,R844,general,"German p.19 (Fold3 image 59), Anlagen 2-3 (images 72-73)"
+C8328,R002,location,
+C8328,R844,general,"German p.20 (Fold3 image 60), Skizze 4 (image 70)"
+C8328,R845,general,German p.130 (Fold3 image 262)
+C8329,R002,location,
+C8329,R844,general,"German p.5 (Fold3 image 45), Skizze 1 (image 75)"
+C8329,R845,general,German p.127-128 (Fold3 images 259-260)
+C8330,R002,location,
+C8330,R844,general,German p.16 (Fold3 image 56)
+C8331,R002,location,
+C8331,R844,general,"German p.21 (Fold3 image 61), Skizze 4 (image 70)"
+C8331,R845,general,German p.134 (Fold3 image 266)
+C8332,R002,location,
+C8332,R845,general,"German p.32 (Fold3 image 163), p.29 (image 160)"
+C8333,R002,location,
+C8333,R845,general,"German p.32 (Fold3 image 163), p.29 (image 160)"
+C8334,R002,location,
+C8334,R845,general,"German p.32 (Fold3 image 163), p.135 (image 267)"
+C8335,R002,location,
+C8335,R845,general,"German p.32 (Fold3 image 163), p.63 (image 194)"
+C8336,R002,location,
+C8336,R845,general,"German p.80 (Fold3 image 211), p.70 (image 201), p.135 (image 267)"
+C8337,R002,location,
+C8337,R845,general,"German p.70 (Fold3 image 201), p.135 (image 267)"
+C8338,R002,location,
+C8338,R845,general,German p.88-89 (Fold3 images 219-220)
+C8339,R002,location,
+C8339,R845,general,German p.90 (Fold3 image 222)
+C8340,R002,location,
+C8340,R845,general,German p.90 (Fold3 image 222)
+C8341,R002,location,
+C8341,R845,general,German p.106 (Fold3 image 238)
+C8342,R002,location,
+C8342,R845,general,"German p.112 (Fold3 image 244), p.116 (image 248)"
+C8343,R846,general,"German p.1 and p.5 (Fold3 images 8, 10), questions (images 6-7)"
+C8344,R846,general,"German p.8 and p.11-12 (Fold3 images 13, 16-17)"
+C8345,R847,general,English p.1 (Fold3 image 5)
+C8346,R848,general,text p.2-3 (Fold3 images 7-8)
+C8347,R845,general,
+C8347,R848,general,"text p.9 (Fold3 image 14), R845: German p.94 and p.107 (Fold3 images 226, 239)"
+C8348,R846,general,"German p.8 and p.11-12 (Fold3 images 13, 16-17)"
+C8349,R813,general,"German sketch (Fold3 B-262 sketch image), text early October"
+C8350,R784,general,"Army Group B daily reports 22-23 September 1944 (frames c-0865, c-0871)"
+C8351,R784,general,"Army Group B daily report 27 September 1944 (frame c-0882, image-checked)"
+C8352,R776,general,English p.20a-20b (Fold3 images 21-22)
+C8353,R844,general,"German p.5 (Fold3 image 45), R845: German p.127-128 (Fold3 images 259-260)"
+C8353,R845,general,
+C8354,R845,general,"German p.128 and p.130 (Fold3 images 260, 262)"
+C8355,R002,location,
+C8355,R849,general,German p.1 (Fold3 image 30)
+C8356,R002,location,
+C8356,R849,general,"German p.1-2 (Fold3 images 30-31), sketch Anlage 3 (image 50)"
+C8357,R002,location,
+C8357,R849,general,German p.3 (Fold3 image 32)
+C8358,R002,location,
+C8358,R849,general,German p.5-6 (Fold3 images 34-35)
+C8359,R002,location,
+C8359,R849,general,German p.7 (Fold3 image 36)
+C8360,R002,location,
+C8360,R849,general,German p.8-9 (Fold3 images 37-38)
+C8361,R002,location,
+C8361,R849,general,German p.13-16 (Fold3 images 42-45)
+C8362,R002,location,
+C8362,R849,general,German p.18-19 (Fold3 images 47-48)
+C8363,R002,location,
+C8363,R849,general,"German p.2 and p.4 (Fold3 images 31, 33), sketch Anlage 3 (image 50)"
+C8364,R002,location,
+C8364,R849,general,German p.8 (Fold3 image 37)
+C8365,R002,location,
+C8365,R849,general,German p.15-16 (Fold3 images 44-45)
+C8366,R002,location,
+C8366,R388,general,p. 420-421
+C8367,R002,location,
+C8367,R841,general,"appendix map (Fold3 image 12, German sketch)"
+C8368,R002,location,
+C8368,R810,general,"German p.7, English p.7"
+C8369,R002,location,
+C8369,R810,general,"German p.7, English p.7"
+C8370,R002,location,
+C8370,R385,general,p. 323-324
+C8371,R002,location,
+C8371,R822,general,German p.-14- (Fold3 page 92)
+C8372,R002,location,
+C8372,R814,general,"German p.33-34 (Fold3 images 92-93), Anlage 4"
+C8373,R002,location,
+C8373,R784,general,"Army Group B reports of 1 August 1944 (T311-004 notes, image 473 block)"
+C8374,R002,location,
+C8374,R791,general,KTB copy entries of 25-29 January 1945
+C8375,R002,location,
+C8375,R695,general,p. 378-381
+C8376,R002,location,
+C8376,R850,general,German p.4 (Fold3 image 10)
+C8377,R002,location,
+C8377,R850,general,German p.6 (Fold3 image 12)
+C8377,R851,general,German answer to question 5 (image 14)
+C8378,R002,location,
+C8378,R850,general,German p.7 (Fold3 image 13)
+C8379,R002,location,
+C8379,R850,general,German p.8 (Fold3 image 14)
+C8380,R002,location,
+C8380,R850,general,German p.10 (Fold3 image 16)
+C8381,R002,location,
+C8381,R850,general,German p.12 (Fold3 image 18)
+C8382,R002,location,
+C8382,R850,general,German p.14-15 (Fold3 images 20-21)
+C8382,R851,general,German answer to question 9 (image 18)
+C8383,R002,location,
+C8383,R850,general,German p.22 (Fold3 image 28)
+C8384,R002,location,
+C8384,R850,general,"sketch map ""Lage am 28.XII.44 19 Uhr"" (Fold3 images 36, 40-45)"
+C8385,R002,location,
+C8385,R850,general,"German correction sheet p.34 (Fold3 image 34), replacing p.26 (image 32)"
+C8385,R851,general,German annex to question 13 (images 23-26)
+C8386,R002,location,
+C8386,R850,general,German correction sheet p.34 (Fold3 image 34)
+C8386,R851,general,German annex to question 13 (images 23-26)
+C8387,R002,location,
+C8387,R851,general,German answer to question 5 (Fold3 image 14)
+C8388,R002,location,
+C8388,R851,general,German answer to question 16 (Fold3 image 21)
+C8389,R002,location,
+C8389,R851,general,"German answer to question 11 (Fold3 images 19-20), sketch II and III ""Armee Gruppe Lüttwitz 30.12.44"" (images 44-47)"
+C8390,R002,location,
+C8390,R851,general,German answer to question 11f (Fold3 image 20)
+C8391,R002,location,
+C8391,R851,general,sketch V (Fold3 images 27-35)
+C8392,R002,location,
+C8392,R851,general,sketch V (Fold3 images 27-35)
+C8393,R002,location,
+C8393,R852,general,German p.28 (Fold3 image 97)
+C8394,R002,location,
+C8394,R852,general,German p.36 (Fold3 image 105)
+C8395,R002,location,
+C8395,R852,general,German p.37 (Fold3 image 106)
+C8396,R002,location,
+C8396,R852,general,German p.39 (Fold3 image 108)
+C8396,R855,general,"English typed p.-1- (Fold3 page 5), English typed p.-2- (Fold3 page 6)"
+C8397,R002,location,
+C8397,R852,general,German p.32 (Fold3 image 101)
+C8398,R002,location,
+C8398,R852,general,German p.37 (Fold3 image 106)
+C8399,R002,location,
+C8399,R852,general,German p.37-38 (Fold3 images 106-107)
+C8400,R002,location,
+C8400,R852,general,German p.32 (Fold3 image 101)
+C8401,R002,location,
+C8401,R852,general,German p.30-32 (Fold3 images 99-101)
+C8402,R002,location,
+C8402,R852,general,German p.36 (Fold3 image 105) and Anlage 4 (image 120)
+C8403,R002,location,
+C8403,R852,general,German p.24-25 (Fold3 images 93-94) and Anlage 3 (image 119)
+C8404,R002,location,
+C8404,R853,general,German p.3 (Fold3 image 9)
+C8405,R002,location,
+C8405,R853,general,"German p.3-4 (Fold3 images 9-10) and Skizze 1 (images 35, 39)"
+C8406,R002,location,
+C8406,R853,general,"German p.15 (Fold3 image 21),  English p.15 as a check"
+C8407,R002,location,
+C8407,R853,general,"German p.15 (Fold3 image 21), Skizze 2 (image 40), Skizze 4 (images 38, 45)"
+C8408,R002,location,
+C8408,R853,general,"German p.15 and p.19 (Fold3 images 21, 25), Skizze 2 (image 40), Skizze 4 (image 45)"
+C8409,R002,location,
+C8409,R853,general,"German p.15 (Fold3 image 21),  Skizze 2 (image 40),  Skizze 4 (image 45)"
+C8410,R002,location,
+C8410,R853,general,"German p.17 (Fold3 image 23),  English p.16 as a check (see context)"
+C8411,R002,location,
+C8411,R853,general,German p.17-18 (Fold3 images 23-24)
+C8412,R002,location,
+C8412,R853,general,"Skizze 1 (Fold3 images 35, 39)"
+C8413,R002,location,
+C8413,R853,general,"Skizze 1 (Fold3 images 35, 39)"
+C8414,R002,location,
+C8414,R853,general,"Skizze 1 (Fold3 images 35, 39)"
+C8415,R002,location,
+C8415,R853,general,"Skizze 1 (Fold3 images 35, 39)"
+C8416,R002,location,
+C8416,R853,general,"Skizze 1 (Fold3 images 35, 39)"
+C8417,R002,location,
+C8417,R853,general,"Skizze 1 (Fold3 images 35, 39)"
+C8418,R002,location,
+C8418,R854,general,German p.1-2 (Fold3 images 5-6)
+C8419,R002,location,
+C8419,R854,general,"German p.1 and p.4 (Fold3 images 5, 8)"
+C8420,R002,location,
+C8420,R854,general,"German p.1 and p.4 (Fold3 images 5, 8)"
+C8421,R002,location,
+C8421,R854,general,"German p.2 and p.6 (Fold3 images 6, 10)"
+C8422,R002,location,
+C8422,R854,general,German p.4 (Fold3 image 8)
+C8423,R002,location,
+C8423,R854,general,German p.6 (Fold3 image 10)
+C8424,R002,location,
+C8424,R854,general,"German p.2 and p.6 (Fold3 images 6, 10)"
+C8425,R002,location,
+C8425,R854,general,"German p.2-3 (Fold3 images 6-7), Pemsel comment p.2 (image 12)"
+C8426,R002,location,
+C8426,R854,general,German p.5 (Fold3 image 9)
+C8427,R002,location,
+C8427,R854,general,"German p.1 and p.5 (Fold3 images 5, 9)"
+C8428,R002,location,
+C8428,R855,general,"English typed p.-3- (Fold3 page 7), Anlage 2 sketch, Fold3 page 199"
+C8429,R002,location,
+C8429,R855,general,"English typed p.-34- (Fold3 page 38), Anlage 2 sketch, Fold3 pages 199-200"
+C8430,R002,location,
+C8430,R855,general,"English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+C8431,R002,location,
+C8431,R855,general,"English typed p.-39- (Fold3 page 43), Anlage 5 sketch, Fold3 page 208"
+C8432,R002,location,
+C8432,R855,general,"English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18), Anlage 4 and 5 sketches, Fold3 pages 204 and 207"
+C8433,R002,location,
+C8433,R855,general,English typed p.-5- (Fold3 page 9)
+C8434,R002,location,
+C8434,R855,general,"English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+C8435,R002,location,
+C8435,R855,general,English typed p.-36- (Fold3 page 40)
+C8436,R002,location,
+C8436,R855,general,English typed p.-37- (Fold3 page 41)
+C8437,R002,location,
+C8437,R855,general,"English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+C8438,R002,location,
+C8438,R856,general,English typed p.-3- (Fold3 page 154)
+C8439,R002,location,
+C8439,R856,general,English typed p.-5- (Fold3 page 156)
+C8440,R002,location,
+C8440,R856,general,English typed p.-7- (Fold3 page 158)
+C8441,R002,location,
+C8441,R856,general,English typed p.-33- (Fold3 page 184)
+C8442,R002,location,
+C8442,R856,general,English typed p.-34- (Fold3 page 185)
+C8443,R002,location,
+C8443,R856,general,English typed p.-45- (Fold3 page 196)
+C8444,R002,location,
+C8444,R856,general,English typed p.-57- (Fold3 page 208)
+C8445,R002,location,
+C8445,R856,general,English typed p.-9- (Fold3 page 160)
+C8446,R002,location,
+C8446,R856,general,"English typed p.-9-, -10- (Fold3 page 160, 161)"
+C8447,R002,location,
+C8447,R856,general,English typed p.-33- (Fold3 page 184)
+C8448,R002,location,
+C8448,R856,general,"English typed p.-38-, -39- (Fold3 page 189, 190)"
+C8449,R002,location,
+C8449,R856,general,English typed p.-39- (Fold3 page 190)
+C8450,R002,location,
+C8450,R856,general,"English typed p.-50-, -53- (Fold3 page 201, 204)"
+C8451,R002,location,
+C8451,R856,general,"English typed p.-51-, -57- (Fold3 page 202, 208)"
+C8452,R002,location,
+C8452,R856,general,"English typed p.-69-, -70- (Fold3 page 220, 221)"
+C8453,R002,location,
+C8453,R856,general,"English typed p.-82-, -86- (Fold3 page 233, 237)"
+C8454,R002,location,
+C8454,R856,general,"English typed p.-72-, -87- (Fold3 page 223, 238)"
+C8455,R002,location,
+C8455,R856,general,"English typed p.-83-, -88- (Fold3 page 234, 239)"
+C8456,R002,location,
+C8456,R856,general,English typed p.-71- (Fold3 page 222)
+C8457,R002,location,
+C8457,R856,general,English typed p.-98- (Fold3 page 249)
+C8458,R002,location,
+C8458,R856,general,English typed p.-100- (Fold3 page 251)
+C8459,R002,location,
+C8459,R856,general,English typed p.-102- (Fold3 page 253)
+C8460,R002,location,
+C8460,R856,general,English typed p.-74- (Fold3 page 225)
+C8461,R002,location,
+C8461,R856,general,"English typed p.-10-, -16- (Fold3 page 161, 167)"
+C8462,R002,location,
+C8462,R856,general,Sketch 7 (Fold3 page 266)
+C8463,R002,location,
+C8463,R857,general,German p.1 (Fold3 image 52)
+C8464,R002,location,
+C8464,R857,general,"German p.1, 2 (Fold3 image 52, 54)"
+C8465,R002,location,
+C8465,R857,general,"German p.3, 4 (Fold3 image 55, 56)"
+C8466,R002,location,
+C8466,R857,general,"German p.5, 6 (Fold3 image 57, 59)"
+C8467,R002,location,
+C8467,R857,general,German p.16 (Fold3 image 75)
+C8468,R002,location,
+C8468,R857,general,"German p.16, 17 (Fold3 image 75, 77)"
+C8469,R002,location,
+C8469,R857,general,German p.26 (Fold3 image 93)
+C8470,R002,location,
+C8470,R857,general,"German p.27, 28 (Fold3 image 95, 97)"
+C8471,R002,location,
+C8471,R857,general,"German p.29, 33 (Fold3 image 98, 104)"
+C8472,R002,location,
+C8472,R857,general,"German p.31, 33 (Fold3 image 101, 104)"
+C8473,R002,location,
+C8473,R857,general,"German p.31, 32 (Fold3 image 101, 102)"
+C8474,R002,location,
+C8474,R855,general,"typed p.-56- (Fold3 page 60), Anlage 8 sketch, Fold3 pages 222-223"
+C8475,R002,location,
+C8475,R855,general,"typed p.-82-, -85- (Fold3 page 87, 90), Anlage 8 sketch, Fold3 pages 222-223"
+C8476,R002,location,
+C8476,R855,general,"typed p.-87- (Fold3 page 92), Anlage 8 sketch, Fold3 pages 222-223"
+C8477,R002,location,
+C8477,R855,general,"typed p.-60- (Fold3 page 65), Anlage 7 sketch, Fold3 page 218"
+C8478,R002,location,
+C8478,R855,general,"typed p.-75-, -76- (Fold3 page 80, 81)"
+C8479,R002,location,
+C8479,R855,general,"typed p.-66- (Fold3 page 71), Anlage 7 sketch, Fold3 pages 216-217"
+C8480,R002,location,
+C8480,R855,general,typed p.-81- (Fold3 page 86)
+C8481,R002,location,
+C8481,R855,general,"typed p.-61-, -66- (Fold3 page 66, 71)"
+C8482,R002,location,
+C8482,R855,general,"typed p.-74- (Fold3 page 79), Anlage 8 sketch, Fold3 pages 222-223"
+C8483,R002,location,
+C8483,R855,general,typed p.-56- (Fold3 page 60)
+C8484,R002,location,
+C8484,R855,general,"typed p.-79- (Fold3 page 84), Anlage 8 sketch, Fold3 pages 220-221"
+C8485,R002,location,
+C8485,R855,general,typed p.-85- (Fold3 page 90)
+C8486,R002,location,
+C8486,R855,general,typed p.-86- (Fold3 page 91)
+C8487,R002,location,
+C8487,R855,general,typed p.-82- (Fold3 page 87)
+C8488,R002,location,
+C8488,R855,general,"Anlage 5 sketch, Fold3 pages 207-208"
+C8489,R002,location,
+C8489,R855,general,"Anlage 4 sketch, Fold3 pages 204-206"
+C8490,R002,location,
+C8490,R855,general,"Anlage 4 sketch, Fold3 pages 204-206"
+C8491,R002,location,
+C8491,R855,general,"Anlage 4 sketch, Fold3 pages 204-206"
+C8492,R002,location,
+C8492,R855,general,"Anlage 5 sketch, Fold3 pages 207-208"
+C8493,R002,location,
+C8493,R855,general,"Anlage 7 sketch, Fold3 pages 216-219"
+C8494,R002,location,
+C8494,R855,general,"Anlage 8 sketch, Fold3 pages 220-223"
+C8495,R002,location,
+C8495,R855,general,"Anlage 8 sketch, Fold3 pages 220-223"
+C8496,R002,location,
+C8496,R855,general,"Anlage 8 sketch, Fold3 pages 220-223"
+C8497,R002,location,
+C8497,R855,general,"Anlage 8 sketch, Fold3 pages 220-223"
+C8498,R002,location,
+C8498,R855,general,"Anlage 7 sketch, Fold3 pages 216-219"
+C8499,R002,location,
+C8499,R855,general,"Anlage 7 sketch, Fold3 pages 216-219"
+C8500,R002,location,
+C8500,R855,general,"Anlage 7 sketch, Fold3 pages 216-219"

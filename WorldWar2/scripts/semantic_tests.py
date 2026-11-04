@@ -2041,7 +2041,7 @@ def scenario_95_coverage_report():
     expect(s + ': the weights sum to 1', round(sum(cv.WEIGHTS.values()), 6), 1.0)
     import csv as _csv
     b = list(_csv.DictReader(open(os.path.join(common.ROOT, 'build', 'review_queue.csv'), newline='', encoding='utf-8')))
-    expect(s + ': build/review_queue.csv ranks every unit with claims once', (len(b), len({r['unit_id'] for r in b}), b[0]['rank']), (len(common.load_all_claims()[1]) and len({x['unit_id'] for x in common.load_all_claims()[1]}), len(b), '1'))
+    expect(s + ': build/review_queue.csv ranks every unit with claims once', (len(b), len({r['unit_id'] for r in b}), b[0]['rank']), (len({x['unit_id'] for x in common.load_all_claims()[1]} - common.non_ground_unit_ids()), len(b), '1'))  # ground units only (domain, 4 November 2026)
 
 
 def scenario_96_nara_t315_r940():
@@ -2175,7 +2175,7 @@ def scenario_97_nara_t311_r4():
     expect(s + ': dates run from 14 June to 10 October 1944', (min(c['date'] for c in new), max(c['date'] for c in new)), ('1944-06-14', '1944-10-10'))
     expect(s + ': four LXXXI Corps rows (Moresnet, Niederzier twice, Güsten)', sorted(c['place_id'] for c in new if c['unit_id'] == 'GER-COR-081C'), ['PL2303', 'PL3286', 'PL3290', 'PL3290'])
     expect(s + ': 14 June 1944 command posts of II Parachute Corps, 3rd Parachute, 352nd and 2nd Panzer Divisions', sorted(c['unit_id'] for c in new if c['date'] == '1944-06-14'), ['GER-FJ-002C', 'GER-FJ-003D', 'GER-INF-352D', 'GER-PZ-002D'])
-    expect(s + ': confidence 0.5 except three area rows at 0.3', sorted(c['confidence'] for c in new), ['0.3'] * 3 + ['0.5'] * 23)
+    expect(s + ': confidence 0.5 except three area rows at 0.3 (C7070 raised to 0.7 by FMS B-541 and C7084 by FMS B-730, 4 November 2026)', sorted(c['confidence'] for c in new), ['0.3'] * 3 + ['0.5'] * 21 + ['0.7'] * 2)
     expect(s + ': every row has a place, an image locator and an old value none note', all(c['place_id'] and c['source_locator'].startswith('R784: image') and 'old value none' in c['notes'] for c in new), True)
     expect(s + ': no conflict group is opened', set(c['conflict_group_id'] for c in new), {''})
 
@@ -2237,7 +2237,7 @@ def scenario_114_cole_ardennes_corroborations():
     """Cole, The Ardennes, second pass: Cole added as a corroborating source on five existing rows."""
     s = 'scenario 114'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
-    want = {'C4787': ['R781', 'R384', 'R002'], 'C1903': ['R724', 'R385', 'R002'], 'C7136': ['R799', 'R384', 'R002'], 'C2181': ['R772', 'R388', 'R002'], 'C2182': ['R772', 'R388', 'R386', 'R002']}
+    want = {'C4787': ['R781', 'R384', 'R002'], 'C1903': ['R724', 'R385', 'R002'], 'C7136': ['R799', 'R384', 'R850', 'R002'], 'C2181': ['R772', 'R388', 'R850', 'R002'], 'C2182': ['R772', 'R388', 'R386', 'R002']}
     expect(s + ': Cole appended to the reference list of each corroborated row', {k: claims[k]['reference_ids'].split(';') for k in want}, want)
     expect(s + ': corroborated rows keep their place; confidence as set by the corroboration rule', {k: (claims[k]['place_id'], claims[k]['confidence']) for k in want}, {'C4787': ('PL2444', '0.5'), 'C1903': ('PL0248', '0.5'), 'C7136': ('PL3315', '0.7'), 'C2181': ('PL1068', '0.7'), 'C2182': ('PL1069', '0.7')})  # C2181 and C2182 raised to 0.7 by the corroboration rule (scenario 116)
 
@@ -2466,8 +2466,500 @@ def scenario_138_fms_b156_reinhard():
     expect(s + ': corps command posts Bilthoven, Moergestel, Dongen', [claims[c]['place_id'] for c in ('C7851', 'C7854', 'C7871')], ['PL2291', 'PL1057', 'PL1058'])
     expect(s + ': C0220 raised; C7723, C7825 and C7435 held', tuple(claims[c]['confidence'] for c in ('C0220', 'C7723', 'C7825', 'C7435')), ('0.7', '0.5', '0.5', '0.3'))
 
+def scenario_139_fms_b343_reinhard():
+    """FMS B-343 (Reinhard, LXXXVIII Corps on the Dutch coast, 6 June-5 September 1944): claims C7898-C7906 cite R812; command posts Bilthoven, Hilversum, Schagen, Amstelveen, Dordrecht; FMS-only rows held."""
+    s = 'scenario 139'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%d' % i for i in range(7898, 7907)]
+    expect(s + ': new rows cite R812 first, blank parents, at most 0.5', all(claims[c]['reference_ids'].split(';')[0] == 'R812' and claims[c]['parent_unit_id'] == '' and float(claims[c]['confidence']) <= 0.5 for c in new), True)
+    expect(s + ': command posts 6 June 1944', [claims[c]['place_id'] for c in ('C7898', 'C7899', 'C7900', 'C7902', 'C7905')], ['PL2291', 'PL3443', 'PL3584', 'PL3586', 'PL1065'])
+    expect(s + ': corroborations held (same family or approximate)', tuple(claims[c]['confidence'] for c in ('C7849', 'C7144', 'C7145', 'C0220')), ('0.3', '0.5', '0.5', '0.7'))
+
+def scenario_140_fms_b262_blauensteiner():
+    """FMS B-262 (Blauensteiner, II Parachute Corps 19 September 1944-10 March 1945): claims C7907-C7940 cite R813; Wasserburg, Vorst; C7532 and C7533 raised; roadmap 264 rows kept ungrouped."""
+    s = 'scenario 140'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%d' % i for i in range(7907, 7941)]
+    expect(s + ': new rows cite R813 first, blank parents, at most 0.5', all(claims[c]['reference_ids'].split(';')[0] == 'R813' and claims[c]['parent_unit_id'] == '' and float(claims[c]['confidence']) <= 0.5 for c in new), True)
+    expect(s + ': Wasserburg and Vorst', [claims[c]['place_id'] for c in ('C7907', 'C7922')], ['PL3301', 'PL3590'])
+    expect(s + ': C7532 and C7533 raised; C7700 held', tuple(claims[c]['confidence'] for c in ('C7532', 'C7533', 'C7700')), ('0.7', '0.7', '0.3'))
+    expect(s + ': roadmap 264 rows ungrouped', [claims[c]['conflict_group_id'] for c in ('C7917', 'C7918', 'C7701')], ['', '', ''])
+
+def scenario_141_fms_b414_geyer():
+    """FMS B-414 (Geyer, Army Group H / OB Nordwest 10 March-9 May 1945): claims C7941-C7983 cite R814; Anlage 6 command posts; C2026 and C1183 raised; roadmap 265 rows kept out of G027."""
+    s = 'scenario 141'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%d' % i for i in range(7941, 7984)]
+    expect(s + ': new rows cite R814 first, blank parents, at most 0.5', all(claims[c]['reference_ids'].split(';')[0] == 'R814' and claims[c]['parent_unit_id'] == '' and float(claims[c]['confidence']) <= 0.5 for c in new), True)
+    expect(s + ': command posts Oldenzaal, Bersenbrück, Wohltorf, Langwedel, Kollerup', [claims[c]['place_id'] for c in ('C7942', 'C7943', 'C7946', 'C7947', 'C7948')], ['PL3593', 'PL3594', 'PL3596', 'PL3597', 'PL3598'])
+    expect(s + ': OB Nordwest rows on GER-OBNW-000H', set(claims[c]['unit_id'] for c in ('C7945', 'C7946', 'C7947', 'C7948')), {'GER-OBNW-000H'})
+    expect(s + ': C2026 and C1183 raised; C7566 held', tuple(claims[c]['confidence'] for c in ('C2026', 'C1183', 'C7566')), ('0.7', '0.7', '0.3'))
+    expect(s + ': roadmap 265 rows not grouped', [claims[c]['conflict_group_id'] for c in ('C7955', 'C7954', 'C7568')], ['', '', ''])
+
+def scenario_142_fms_b147_geyer():
+    """FMS B-147 (Geyer, Army Group H 10 November 1944-10 March 1945): claims C7984-C8002 cite R815; Rheindahlen, Isselburg; no raises."""
+    s = 'scenario 142'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%d' % i for i in range(7984, 8003)]
+    expect(s + ': new rows cite R815 first, blank parents, at most 0.5', all(claims[c]['reference_ids'].split(';')[0] == 'R815' and claims[c]['parent_unit_id'] == '' and float(claims[c]['confidence']) <= 0.5 for c in new), True)
+    expect(s + ': Panzer Lehr to Rheindahlen; 15th Panzergrenadier parts at Isselburg', [claims[c]['place_id'] for c in ('C7990', 'C8002')], ['PL3611', 'PL3616'])
+    expect(s + ': corroborated rows not raised', tuple(claims[c]['confidence'] for c in ('C7450', 'C7931', 'C7443')), ('0.5', '0.3', '0.3'))
+
+def scenario_143_fms_b148_geyer():
+    """FMS B-148 (Geyer, June 1946 answers): only real German dispositions of about 4 March 1945; C8003-C8004 cite R816; corroborated B-147 rows unchanged."""
+    s = 'scenario 143'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new rows cite R816 first at 0.3', [(claims[c]['reference_ids'].split(';')[0], claims[c]['confidence']) for c in ('C8003', 'C8004')], [('R816', '0.3'), ('R816', '0.3')])
+    expect(s + ': 346th at Zevenaar, 361st at Utrecht', [claims[c]['place_id'] for c in ('C8003', 'C8004')], ['PL3617', 'PL0621'])
+    expect(s + ': B-147 rows corroborated, not raised', [('R816' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8000', 'C8002')], [(True, '0.3'), (True, '0.3')])
+
+def scenario_144_fms_b453_langhaeuser():
+    """FMS B-453 (Langhaeuser, 6th Parachute Division, about 11 Mar-1 Apr 1945): C8005-C8012 cite R817; FMS corroborations not raised."""
+    s = 'scenario 144'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8005, 8013)]
+    expect(s + ': new rows cite R817 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R817'] * 8)
+    expect(s + ': Terborg 26 March at 0.5, Varsseveld 29 March at 0.3', [(claims[c]['place_id'], claims[c]['confidence']) for c in ('C8010', 'C8011')], [('PL3545', '0.5'), ('PL3618', '0.3')])
+    expect(s + ': same-family corroborations not raised', [('R817' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C7719', 'C7835', 'C1183')], [(True, '0.3'), (True, '0.3'), (True, '0.7')])
+
+def scenario_145_fms_b580_langhaeuser():
+    """FMS B-580 (Langhaeuser, 6th Parachute Division, 1 Apr-10 May 1945): C8013-C8019 cite R818; FMS corroborations not raised."""
+    s = 'scenario 145'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8013, 8020)]
+    expect(s + ': new rows cite R818 first at 0.3', [(claims[c]['reference_ids'].split(';')[0], claims[c]['confidence']) for c in new], [('R818', '0.3')] * 7)
+    expect(s + ': Raalte, Heino, Epe, then Amersfoort to the surrender', [claims[c]['place_id'] for c in ('C8015', 'C8016', 'C8017', 'C8018', 'C8019')], ['PL3619', 'PL3620', 'PL3621', 'PL3537', 'PL3537'])
+    expect(s + ': same-family corroborations not raised', [('R818' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C7844', 'C7631', 'C7847')], [(True, '0.5'), (True, '0.7'), (True, '0.3')])
+
+def scenario_146_fms_b365_blumentritt():
+    """FMS B-365 (Blumentritt, Twenty-fifth Army 3 Feb-28 Mar 1945): C8020-C8039 cite R819; FMS corroborations not raised."""
+    s = 'scenario 146'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8020, 8040)]
+    expect(s + ': new rows cite R819 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R819'] * 20)
+    expect(s + ': Wegberg, Tetz, Hilversum takeover and air attack', [(claims[c]['place_id'], claims[c]['confidence']) for c in ('C8020', 'C8023', 'C8026', 'C8036', 'C8037')], [('PL3622', '0.5'), ('PL3623', '0.3'), ('PL3443', '0.5'), ('PL3443', '0.5'), ('PL3443', '0.3')])
+    expect(s + ': same-family corroborations not raised', [('R819' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8000', 'C8003', 'C7831')], [(True, '0.3'), (True, '0.3'), (True, '0.3')])
+
+def scenario_147_fms_b811_german():
+    """FMS B-811 German original (von Zangen): C8040-C8078 cite R820; G063 Königshoven preferred over Aachen; no raises."""
+    s = 'scenario 147'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8040, 8079)]
+    expect(s + ': new rows cite R820 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R820'] * 39)
+    expect(s + ': G063 Königshoven preferred, Aachen alternate', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8040', 'C0957')], [('G063', 'preferred'), ('G063', 'alternate')])
+    expect(s + ': same-manuscript corroborations not raised', [('R820' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C2127', 'C2132', 'C0971')], [(True, '0.5'), (True, '0.3'), (True, '0.5')])
+
+def scenario_148_fms_b812_german():
+    """FMS B-812 German original (von Zangen): C8079-C8118 cite R821; corroborations not raised."""
+    s = 'scenario 148'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8079, 8119)]
+    expect(s + ': new rows cite R821 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R821'] * 40)
+    expect(s + ': army HQ at Hülchrath', (claims['C8079']['unit_id'], claims['C8079']['place_id'], claims['C8079']['date']), ('GER-ARMY-015A', 'PL3637', '1945-02-23'))
+    expect(s + ': FMS corroborations not raised', [('R821' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1153', 'C1154', 'C1151')], [(True, '0.7'), (True, '0.7'), (True, '0.5')])
+
+def scenario_149_fms_b197_german():
+    """FMS B-197 German original (von Lüttwitz): C8119-C8149 cite R822; corroborations not raised."""
+    s = 'scenario 149'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8119, 8150)]
+    expect(s + ': new rows cite R822 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R822'] * 31)
+    expect(s + ': corps staff overrun at Iserlohn', (claims['C8149']['unit_id'], claims['C8149']['place_id'], claims['C8149']['event_type']), ('GER-PZ-047C', 'PL1106', 'surrender'))
+    expect(s + ': FMS corroborations not raised', [('R822' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1183', 'C1185', 'C7565')], [(True, '0.7'), (True, '0.5'), (True, '0.5')])
+
+def scenario_150_fms_b200():
+    """FMS B-200 (von Lüttwitz answers): C8150 cites R823 and R822; C8133 corroborated without a raise."""
+    s = 'scenario 150'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new row', (claims['C8150']['reference_ids'], claims['C8150']['place_id']), ('R823;R822;R002', 'PL3667'))
+    expect(s + ': corroboration not raised', ('R823' in claims['C8133']['reference_ids'], claims['C8133']['confidence']), (True, '0.5'))
+
+def scenario_151_fms_b367_german():
+    """FMS B-367 German original (von Lüttwitz): C8151-C8176 cite R824; corroborations not raised."""
+    s = 'scenario 151'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8151, 8177)]
+    expect(s + ': new rows cite R824 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R824'] * 26)
+    expect(s + ': FMS corroborations not raised', [('R824' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1472', 'C8049')], [(True, '0.7'), (True, '0.5')])
+    expect(s + ': Lindern 30 November kept as two preferred rows', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8169', 'C8048')], [('', 'preferred'), ('', 'preferred')])
+
+def scenario_152_fms_b368_reread():
+    """FMS B-368 German re-read: same reference R808 (same Fold3 file); C8177 cites R808; corroborations not raised."""
+    s = 'scenario 152'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new row cites R808', (claims['C8177']['unit_id'], claims['C8177']['reference_ids']), ('GER-INF-346D', 'R808;R002'))
+    expect(s + ': corroborations not raised', [('R808' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1369', 'C1380')], [(True, '0.5'), (True, '0.5')])
+
+def scenario_153_fms_b369_german():
+    """FMS B-369 German original (Degener): C8178-C8188 cite R825; corroboration not raised."""
+    s = 'scenario 153'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8178, 8189)]
+    expect(s + ': new rows cite R825 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R825'] * 11)
+    expect(s + ': corroboration not raised', ('R825' in claims['C2052']['reference_ids'], claims['C2052']['confidence']), (True, '0.5'))
+
+def scenario_154_fms_b674_german():
+    """FMS B-674 German original (Meindl) with English check: C8189-C8198 cite R826; corroborations not raised."""
+    s = 'scenario 154'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8189, 8199)]
+    expect(s + ': new rows cite R826 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R826'] * 10)
+    expect(s + ': Jübberde command post', (claims['C8194']['unit_id'], claims['C8194']['place_id'], claims['C8194']['confidence']), ('GER-FJ-002C', 'PL3695', '0.3'))
+    expect(s + ': corroborations not raised', [('R826' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C7716', 'C7717', 'C1181')], [(True, '0.5'), (True, '0.5'), (True, '0.7')])
+
+def scenario_155_fms_b327():
+    """FMS B-327 English translation (Blauensteiner): C8199 cites R827; corroborations not raised."""
+    s = 'scenario 155'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new row', (claims['C8199']['reference_ids'].split(';')[0], claims['C8199']['unit_id'], claims['C8199']['place_id']), ('R827', 'GER-FJ-007D', 'PL0701'))
+    expect(s + ': corroborations not raised', [('R827' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C7716', 'C8195', 'C1236')], [(True, '0.5'), (True, '0.5'), (True, '0.5')])
+
+def scenario_156_fms_b051_german():
+    """FMS B-051 German typescript (Meindl): C8200 cites R828; B-093 rows cited, not raised."""
+    s = 'scenario 156'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new row', (claims['C8200']['reference_ids'].split(';')[0], claims['C8200']['place_id'], claims['C8200']['confidence']), ('R828', 'PL3700', '0.3'))
+    expect(s + ': B-093 rows cited, not raised', [('R828' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C7691', 'C7704', 'C7716')], [(True, '0.5'), (True, '0.5'), (True, '0.5')])
+
+def scenario_157_fms_b052():
+    """FMS B-052 English translation (von Oriola): C8201-C8209 cite R829 at 0.3; no XIII Corps rows; corroborations not raised."""
+    s = 'scenario 157'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8201, 8210)]
+    expect(s + ': new rows cite R829 first at 0.3', [(claims[c]['reference_ids'].split(';')[0], claims[c]['confidence']) for c in new], [('R829', '0.3')] * 9)
+    expect(s + ': no corps rows', sorted(set(claims[c]['unit_id'] for c in new)), ['GER-PZ-002D', 'GER-VG-246D', 'GER-VG-326D', 'GER-VG-352D'])
+    expect(s + ': corroborations not raised', [('R829' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1156', 'C1159')], [(True, '0.5'), (True, '0.5')])
+
+def scenario_158_fms_b261_german():
+    """FMS B-261 German original (Blauensteiner): C8210-C8211 cite R830; Normandy rows cited, not raised."""
+    s = 'scenario 158'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8210', 'C8211')], [('R830', 'PL0126', '0.5'), ('R830', 'PL3710', '0.5')])
+    expect(s + ': corroborations not raised', [('R830' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C0052', 'C0803', 'C0763')], [(True, '0.7'), (True, '0.7'), (True, '0.5')])
+
+def scenario_159_fms_b240_german():
+    """FMS B-240 German original (Blauensteiner): C8212-C8214 Brittany positions cite R831 at 0.3; C8210 cited, not raised."""
+    s = 'scenario 159'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new rows', [(claims[c]['unit_id'], claims[c]['place_id'], claims[c]['reference_ids'].split(';')[0], claims[c]['confidence']) for c in ('C8212', 'C8213', 'C8214')], [('GER-FJ-002C', 'PL3711', 'R831', '0.3'), ('GER-FJ-003D', 'PL3712', 'R831', '0.3'), ('GER-FJ-005D', 'PL0296', 'R831', '0.3')])
+    expect(s + ': corroborations not raised', [('R831' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8210', 'C0052')], [(True, '0.5'), (True, '0.7')])
+
+def scenario_160_fms_b401_german():
+    """FMS B-401 German original (Meindl): C8215-C8220 cite R832; English-only row flagged; corroborations not raised."""
+    s = 'scenario 160'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8215, 8221)]
+    expect(s + ': new rows cite R832 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R832'] * 6)
+    expect(s + ': English-only row at 0.3 and flagged', (claims['C8220']['confidence'], 'English continuation' in claims['C8220']['notes']), ('0.3', True))
+    expect(s + ': corroborations not raised', [('R832' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8210', 'C0803', 'C2205')], [(True, '0.5'), (True, '0.7'), (True, '0.3')])
+
+def scenario_161_fms_b346_german():
+    """FMS B-346 German original (Blauensteiner, very faint): C8221 Elbeuf at 0.3; Falaise break-out rows cited, not raised."""
+    s = 'scenario 161'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new row', (claims['C8221']['reference_ids'].split(';')[0], claims['C8221']['place_id'], claims['C8221']['confidence']), ('R833', 'PL1410', '0.3'))
+    expect(s + ': corroborations not raised', [('R833' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C0745', 'C0746', 'C0747')], [(True, '0.5'), (True, '0.7'), (True, '0.7')])
+
+def scenario_162_fms_b101():
+    """FMS B-101 English translation (Hitzfeld, LXVII Corps): C8222-C8226; Remagen and Rhine-front rows cited, not raised."""
+    s = 'scenario 162'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8222, 8227)]
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R834', 'PL3713', '0.3'), ('R834', 'PL3714', '0.5'), ('R834', 'PL3716', '0.5'), ('R834', 'PL3715', '0.5'), ('R834', 'PL3717', '0.3')])
+    expect(s + ': corroborations not raised', [('R834' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1160', 'C1169', 'C1167')], [(True, '0.7'), (True, '0.5'), (True, '0.5')])
+
+def scenario_163_fms_b309():
+    """FMS B-309 English translation (Hitzfeld, LXVII Corps 22 Mar-19 Apr 1945): C8227-C8233; Eleventh Army rows cited, not raised."""
+    s = 'scenario 163'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8227, 8234)]
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R835', 'PL3718', '0.5'), ('R835', 'PL3719', '0.5'), ('R835', 'PL3720', '0.3'), ('R835', 'PL3721', '0.5'), ('R835', 'PL3722', '0.3'), ('R835', 'PL3723', '0.3'), ('R835', 'PL3724', '0.5')])
+    expect(s + ': corroborations not raised', [('R835' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1207', 'C1208')], [(True, '0.5'), (True, '0.7')])
+
+def scenario_164_fms_b236_german():
+    """FMS B-236 German original (Sponheimer, LXVII Corps 7 Jun-30 Oct 1944): C8234-C8242; Somme, Bruges and Antwerp rows cited, not raised."""
+    s = 'scenario 164'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8234, 8243)]
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R836', 'PL0743', '0.3'), ('R836', 'PL3725', '0.5'), ('R836', 'PL3726', '0.5'), ('R836', 'PL3727', '0.3'), ('R836', 'PL1610', '0.5'), ('R836', 'PL0691', '0.3'), ('R836', 'PL0623', '0.5'), ('R836', 'PL3438', '0.5'), ('R836', 'PL1065', '0.5')])
+    expect(s + ': pre-invasion row re-dated (scenario 168)', claims['C8234']['date'], '1944-06-05')
+    expect(s + ': corroborations not raised', [('R836' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C7274', 'C7081', 'C2164', 'C7321', 'C7364')], [(True, '0.3'), (True, '0.5'), (True, '0.5'), (True, '0.3'), (True, '0.3')])
+
+def scenario_165_fms_b798_german():
+    """FMS B-798 German original (Warning, LXVII Corps 15 Sep-25 Nov 1944): C8243-C8245; Esschen, Breda-Ginneken and Zevenbergen rows cited, not raised."""
+    s = 'scenario 165'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C8243', 'C8244', 'C8245']
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R837', 'PL0691', '0.5'), ('R837', 'PL1065', '0.5'), ('R837', 'PL3728', '0.3')])
+    expect(s + ': corroborations not raised', [('R837' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C2164', 'C2165', 'C7321', 'C8241')], [(True, '0.5'), (True, '0.5'), (True, '0.3'), (True, '0.5')])
+    expect(s + ': B-236 rows kept', [claims[c]['claim_status'] for c in ('C8240', 'C8242')], ['preferred', 'preferred'])
+
+def scenario_166_fms_b596_german():
+    """FMS B-596 German original (Gerber, LXVII Corps spring 1944-15 Sep 1944): C8246-C8259; Naours, Canteleu, Abbeville, Maldegem and Moerbrugge rows cited, not raised."""
+    s = 'scenario 166'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8246, 8260)]
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R838', 'GER-COR-067C', 'PL0676', '0.3'), ('R838', 'GER-COR-067C', 'PL3729', '0.5'), ('R838', 'GER-COR-067C', 'PL3730', '0.5'), ('R838', 'GER-COR-067C', 'PL3731', '0.5'), ('R838', 'GER-COR-067C', 'PL0937', '0.5'), ('R838', 'GER-COR-067C', 'PL3727', '0.5'), ('R838', 'GER-COR-067C', 'PL3732', '0.5'), ('R838', 'GER-COR-067C', 'PL3733', '0.5'), ('R838', 'GER-COR-067C', 'PL3734', '0.5'), ('R838', 'GER-COR-067C', 'PL3735', '0.3'), ('R838', 'GER-COR-067C', 'PL3287', '0.5'), ('R838', 'GER-COR-067C', 'PL2062', '0.5'), ('R838', 'GER-INF-711D', 'PL3736', '0.5'), ('R838', 'GER-INF-245D', 'PL3734', '0.5')])
+    expect(s + ': conflict group G064', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8249', 'C8237')], [('G064', 'preferred'), ('G064', 'alternate')])
+    expect(s + ': corroborations not raised', [('R838' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8234', 'C8235', 'C8236', 'C7274', 'C7081', 'C7299', 'C7300')], [(True, '0.3'), (True, '0.5'), (True, '0.5'), (True, '0.3'), (True, '0.5'), (True, '0.5'), (True, '0.5')])
+
+def scenario_167_fms_b475_reread():
+    """FMS B-475 German re-read: same reference R771 (citation corrected); C8260-C8261; corroborations not raised."""
+    s = 'scenario 167'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8260', 'C8261')], [('R771', 'GER-COR-067C', 'PL0801', '0.5'), ('R771', 'GER-COR-067C', 'PL0801', '0.5')])
+    expect(s + ': corroborations not raised', [('R771' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8243', 'C7816', 'C8040', 'C2086', 'C7358', 'C7811')], [(True, '0.5'), (True, '0.3'), (True, '0.5'), (True, '0.5'), (True, '0.3'), (True, '0.5')])
+
+def scenario_168_pre_invasion_dates():
+    """Pre-invasion dates allowed (Scott, 4 November 2026): C8212-C8214 and C8234 re-dated from the forced 6 June, under OP-PRE-INVASION, at 0.3."""
+    s = 'scenario 168'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': re-dated rows', [(claims[c]['date'], claims[c]['operation_id'], claims[c]['confidence']) for c in ('C8212', 'C8213', 'C8214', 'C8234')], [('1944-05-05', 'OP-PRE-INVASION', '0.3'), ('1944-05-15', 'OP-PRE-INVASION', '0.3'), ('1944-05-15', 'OP-PRE-INVASION', '0.3'), ('1944-06-05', 'OP-PRE-INVASION', '0.3')])
+
+def scenario_169_fms_b249_german():
+    """FMS B-249 German original (von Zangen, Fifteenth Army 28 Aug-10 Nov 1944): C8262-C8274; Dunkirk and other rows cited, not raised."""
+    s = 'scenario 169'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8262, 8275)]
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R839', 'GER-ARMY-015A', 'PL3737', '0.5'), ('R839', 'GER-ARMY-015A', 'PL3738', '0.5'), ('R839', 'GER-ARMY-015A', 'PL0620', '0.5'), ('R839', 'GER-COR-089C', 'PL3739', '0.5'), ('R839', 'GER-COR-089C', 'PL3414', '0.5'), ('R839', 'GER-COR-086C', 'PL3740', '0.5'), ('R839', 'GER-COR-086C', 'PL3741', '0.5'), ('R839', 'GER-COR-086C', 'PL3401', '0.3'), ('R839', 'GER-INF-059D', 'PL3744', '0.5'), ('R839', 'GER-INF-059D', 'PL3743', '0.5'), ('R839', 'GER-INF-712D', 'PL3742', '0.5'), ('R839', 'GER-INF-070D', 'PL0795', '0.5'), ('R839', 'GER-INF-070D', 'PL2061', '0.3')])
+    expect(s + ': corroborations not raised', [('R839' in claims[c]['reference_ids'], claims[c]['confidence'], claims[c]['claim_status']) for c in ('C8237', 'C1809')], [(True, '0.3', 'alternate'), (True, '0.9', 'preferred')])
+
+def scenario_170_fms_b508_german():
+    """FMS B-508 German original (Lackner, 2nd Parachute Division 8 Mar-16 Apr 1945): C8275-C8280."""
+    s = 'scenario 170'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8275, 8281)]
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in new], [('R840', 'GER-FJ-002D', 'PL3745', '0.3'), ('R840', 'GER-FJ-002D', 'PL3745', '0.5'), ('R840', 'GER-FJ-002D', 'PL2138', '0.5'), ('R840', 'GER-FJ-002D', 'PL0967', '0.5'), ('R840', 'GER-FJ-002D', 'PL0462', '0.5'), ('R840', 'GER-FJ-002D', 'PL0462', '0.5')])
+
+def scenario_171_fms_b820_german():
+    """FMS B-820 (Wilke, 5th Parachute Division 6 Jun-24 Jul 1944): C8281-C8283 at 0.3; C8214 (Rennes) kept."""
+    s = 'scenario 171'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': new rows', [(claims[c]['reference_ids'].split(';')[0], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8281', 'C8282', 'C8283')], [('R841', 'PL3746', '0.3'), ('R841', 'PL3746', '0.3'), ('R841', 'PL0213', '0.3')])
+    expect(s + ': B-240 row kept', (claims['C8214']['place_id'], claims['C8214']['claim_status']), ('PL0296', 'preferred'))
+
+def scenario_172_unit_domain():
+    """Unit domain: air/naval units (II Fliegerkorps, B-509) are kept out of the main outputs and written to build/other_domains/."""
+    s = 'scenario 172'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': domain', (common.unit_domain(units['GER-FLK-002C']), common.unit_domain(units['GER-FJ-005D'])), ('air', 'ground'))
+    main = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
+    other = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'other_domains', 'claims.csv'))[1]}
+    expect(s + ': split', ('C8284' in main, sorted(other)), (False, ['C8284', 'C8285', 'C8332', 'C8333']))  # C8332/C8333 added with B-283 (R845)
+    bu = common.read_dicts(os.path.join(common.BUILD_DIR, 'units.csv'))
+    expect(s + ': main units unchanged', ('domain' in bu[0], any(u['unit_id'] == 'GER-FLK-002C' for u in bu[1])), (False, False))
+
+def scenario_173_fms_b023_german():
+    """FMS B-023 German original (Heilmann, 5th Parachute Division, Ardennes): C8286-C8309; C7137 raised to 0.7, other corroborations not raised."""
+    s = 'scenario 173'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8286, 8310)]
+    expect(s + ': new rows cite R843', [claims[c]['reference_ids'] for c in new], ['R843;R002'] * 24)
+    expect(s + ': sample rows', [(claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8291', 'C8298', 'C8302', 'C8305')], [('GER-FJ-005D', 'PL3752', '0.5'), ('GER-FJ-005D', 'PL3757', '0.5'), ('GER-COR-085C', 'PL3760', '0.3'), ('GER-PZ-LEHRD', 'PL3755', '0.5')])
+    expect(s + ': corroborations', [('R843' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C0997', 'C7137', 'C4899')], [(True, '0.5'), (True, '0.7'), (True, '0.3')])
+
+def scenario_174_small_units_b023():
+    """Small-units rule: B-023 regiments, engineers and assault guns with organic/attached relations; claim parents blank."""
+    s = 'scenario 174'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    new = ['C%04d' % i for i in range(8310, 8322)]
+    expect(s + ': blank parents', [claims[c]['parent_unit_id'] for c in new], [''] * 12)
+    expect(s + ': units', [claims[c]['unit_id'] for c in ('C8310', 'C8314', 'C8316', 'C8317', 'C8321')], ['GER-FJR-014', 'GER-FJR-015', 'GER-FJR-013', 'GER-FJPI-005', 'GER-STUG-011B'])
+
+def scenario_175_fms_b361_german():
+    """FMS B-361 (Blumentritt): headquarters sequence C8322-C8328, C8329-C8330; C7980 cited, not raised."""
+    s = 'scenario 175'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': hq places', [claims['C%04d' % i]['place_id'] for i in range(8322, 8329)], ['PL0774', 'PL3595', 'PL3764', 'PL3765', 'PL3766', 'PL3766', 'PL3767'])
+    expect(s + ': other rows', [(claims[c]['unit_id'], claims[c]['confidence']) for c in ('C8329', 'C8330', 'C7980')], [('GER-MARI-002D', '0.5'), ('GER-INF-245D', '0.5'), ('GER-ARMY-BLUMT', '0.3')])
+
+def scenario_176_post_surrender():
+    """OP-POST-SURRENDER umbrella: C8331 (Blumentritt staff dissolved 31 May 1945) needs no campaign."""
+    s = 'scenario 176'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C8331']
+    expect(s + ': dissolution row', (c['date'], c['operation_id'], c['place_id'], c['disestablished']), ('1945-05-31', 'OP-POST-SURRENDER', 'PL3767', 'true'))
+
+def scenario_178_b283():
+    """FMS B-283 (R845): Luftflotte 3 (air) and Marinegruppe West (naval) at Paris on 6 June 1944; OB West at Verzy; the Brussels/Antwerp conflict G065."""
+    s = 'scenario 178'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': air/naval rows', [(claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8332', 'C8333')], [('GER-LFL-003A', 'PL0271', '0.5'), ('GER-MGW-000H', 'PL0271', '0.5')])
+    expect(s + ': Verzy', (claims['C8336']['place_id'], claims['C8336']['date']), ('PL3768', '1944-08-18'))
+    expect(s + ': G065', sorted((claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C2062', 'C8335')), [('G065', 'alternate'), ('G065', 'preferred')])
+    expect(s + ': support only', ('R845' in claims['C8322']['reference_ids'], claims['C8322']['confidence']), (True, '0.5'))
+
+
+def scenario_179_a969():
+    """FMS A-969 (R846, Meindl): two 0.3 rows for II Parachute Corps and a supporting citation on C0763."""
+    s = 'scenario 179'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': rows', [(claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8343', 'C8344')], [('GER-FJ-002C', 'PL0333', '0.3'), ('GER-FJ-002C', 'PL1272', '0.3')])
+    expect(s + ': support', ('R846' in claims['C0763']['reference_ids'], claims['C0763']['confidence']), (True, '0.5'))
+
+
+def scenario_180_a859():
+    """FMS A-859 (R847, Meindl, English only): 3rd Parachute Division destroyed in the Meuse area (0.3); support on C8221 and C7689."""
+    s = 'scenario 180'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': row', (claims['C8345']['unit_id'], claims['C8345']['destroyed'], claims['C8345']['confidence']), ('GER-FJ-003D', 'true', '0.3'))
+    expect(s + ': support', all('R847' in claims[c]['reference_ids'] for c in ('C8221', 'C7689')), True)
+
+
+def scenario_181_ethint43():
+    """ETHINT-43 (R848, Lüttwitz interview, capped at 0.5): XLVII Panzer Corps takes the Geilenkirchen sector 19 November; XII SS Corps takes it back 5 December (with B-283)."""
+    s = 'scenario 181'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': rows', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C8346', 'C8347')], [('GER-PZ-047C', '1944-11-19', 'R848', '0.5'), ('GER-SSCOR-012C', '1944-12-05', 'R848;R845', '0.5')])
+    expect(s + ': support', all('R848' in claims[c]['reference_ids'] for c in ('C2129', 'C8166')), True)
+
+
+def scenario_182_independent_units():
+    """Scott's independent-units rule (4 November 2026): Kampfgruppen and independent corps have units with blank parents; FJR 9 has its organic parent."""
+    s = 'scenario 182'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': parents', [units[u]['parent_unit_id'] for u in ('GER-FJR-009', 'GER-KG-WALTH', 'GER-COR-EMS')], ['GER-FJ-003D', '', ''])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': Walther', (claims['C8351']['place_id'], claims['C8351']['confidence']), ('PL3450', '0.5'))
+
+
+def scenario_183_a898():
+    """FMS A-898 (R849, Heyking): 6th Fallschirmjäger Division Seine to Mons; Fallschirm-Lehr-Regiment as an independent regiment (blank parent)."""
+    s = 'scenario 183'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': Lehr regiment', (units['GER-FJR-LEHR']['echelon'], units['GER-FJR-LEHR']['parent_unit_id']), ('regiment/battle_group', ''))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': Mello and Artres', [(claims[c]['place_id'], claims[c]['confidence']) for c in ('C8358', 'C8361')], [('PL3773', '0.5'), ('PL3774', '0.5')])
+
+
+def scenario_184_kampfgruppen():
+    """Roadmap 335: ten Kampfgruppen as their own units with blank parents."""
+    s = 'scenario 184'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': parents blank', [units[u]['parent_unit_id'] for u in ('GER-KG-KRAG', 'GER-KG-BAYER')], ['', ''])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': Kunkel', (claims['C8370']['place_id'], claims['C8370']['date']), ('PL3341', '1944-12-21'))
+
+
+def scenario_185_a939():
+    """FMS A-939 (R850, Lüttwitz): XLVII Panzer Corps in the Ardennes; Sibret conflict G066 (Cole preferred); citations without raises."""
+    s = 'scenario 185'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': Sibret conflict', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8370', 'C8380')], [('G066', 'preferred'), ('G066', 'alternate')])
+    expect(s + ': Engreux sketch', (claims['C8384']['place_id'], claims['C8384']['confidence']), ('PL3780', '0.3'))
+    expect(s + ': citation no raise', ('R850' in claims['C7137']['reference_ids'], claims['C7137']['confidence']), (True, '0.7'))
+
+
+def scenario_186_a940():
+    """FMS A-940 (R851, Lüttwitz answers): Regiment 78 under the 26th VGD; Armeegruppe Lüttwitz 30-31 December; January corps command posts."""
+    s = 'scenario 186'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': parents', (units['GER-GR-078']['parent_unit_id'], units['GER-ARMY-LUETT']['parent_unit_id']), ('GER-VG-026D', ''))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': Bande and CPs', [(claims[c]['place_id'], claims[c]['confidence']) for c in ('C8388', 'C8391', 'C8392')], [('PL3785', '0.5'), ('PL3786', '0.3'), ('PL3787', '0.3')])
+    expect(s + ': Armeegruppe dissolved', claims['C8390']['disestablished'], 'true')
+
+
+def scenario_187_b410():
+    """FMS B-410 (R852, Ulms): XII SS Corps command posts; Polizei-Regiment Mönchengladbach as an independent regiment; G067 corps CP 28 February."""
+    s = 'scenario 187'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': police regiment', (units['GER-POLR-MGLAD']['echelon'], units['GER-POLR-MGLAD']['parent_unit_id']), ('regiment/battle_group', ''))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': G067', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8095', 'C8393')], [('G067', 'preferred'), ('G067', 'alternate')])
+    expect(s + ': CPs', [claims[c]['place_id'] for c in ('C8394', 'C8395', 'C8396')], ['PL3788', 'PL0420', 'PL3789'])
+
+
+def scenario_188_b541():
+    """FMS B-541 (R853, Schimpf): 3rd Fallschirmjäger Division sub-units traced to the division; Brittany billets; C7070 raised by NARA plus FMS."""
+    s = 'scenario 188'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': sub-units', [units[u]['parent_unit_id'] for u in ('GER-FJR-005', 'GER-FJR-008', 'GER-FJPI-003', 'GER-FJFLAK-003')], ['GER-FJ-003D'] * 4)
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': Brittany', [claims[c]['place_id'] for c in ('C8412', 'C8413', 'C8416')], ['PL3794', 'PL3795', 'PL3798'])
+    expect(s + ': July not June', claims['C8410']['date'], '1944-07-11')
+    expect(s + ': C7070 raised', claims['C7070']['confidence'], '0.7')
+    expect(s + ': claim parents blank', [claims[c]['parent_unit_id'] for c in ('C8407', 'C8408', 'C8409')], ['', '', ''])
+
+
+def scenario_189_b673():
+    """FMS B-673 (R854, Lüttwitz): XLVII Panzer Corps command posts; G068 corps HQ 15 June; 276th and 326th Infantry Divisions promoted."""
+    s = 'scenario 189'
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': promoted', [units[u]['record_status'] for u in ('GER-INF-276D', 'GER-INF-326D')], ['active', 'active'])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': G068', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C2203', 'C8420')], [('G068', 'alternate'), ('G068', 'preferred')])
+    expect(s + ': CPs', [claims[c]['place_id'] for c in ('C8418', 'C8419', 'C8420')], ['PL3800', 'PL1079', 'PL3801'])
+
+
+def scenario_190_b709():
+    """FMS B-709 (R855, Ulms and Reuther, English partial read): XII SS Corps and divisions on the Rhine at Düsseldorf, March 1945."""
+    s = 'scenario 190'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': corps CPs', [claims[c]['place_id'] for c in ('C8428', 'C8429')], ['PL3805', 'PL3806'])
+    expect(s + ': division posts', [claims[c]['place_id'] for c in ('C8430', 'C8432', 'C8434')], ['PL3804', 'PL3789', 'PL3807'])
+    expect(s + ': no row above 0.5', max(claims['C84%02d' % i]['confidence'] for i in range(28, 38)), '0.5')
+
+
+def scenario_191_b730():
+    """FMS B-730 (R856, Brandenberger, English only): Seventh Army 1-20 September 1944."""
+    s = 'scenario 191'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': army CPs', [claims[c]['place_id'] for c in ('C8438', 'C8441', 'C8442', 'C8443')], ['PL3811', 'PL0088', 'PL3814', 'PL0594'])
+    expect(s + ': groups', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C7286', 'C8446', 'C0861', 'C8452', 'C8457', 'C8462')], [('G069', 'preferred'), ('G069', 'alternate'), ('G070', 'preferred'), ('G070', 'alternate'), ('G071', 'preferred'), ('G071', 'alternate')])
+    expect(s + ': raises', [claims[c]['confidence'] for c in ('C0866', 'C7084')], ['0.7', '0.7'])
+    expect(s + ': no row above 0.5', max(claims['C84%02d' % i]['confidence'] for i in range(38, 63)), '0.5')
+    expect(s + ': sketch row', claims['C8462']['confidence'], '0.3')
+
+
+def scenario_192_b823():
+    """FMS B-823 (R857, von der Heydte, German original): Kampfgruppe von der Heydte, December 1944."""
+    s = 'scenario 192'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': kampfgruppe places', [claims[c]['place_id'] for c in ('C8465', 'C8466', 'C8470', 'C8473')], ['PL3823', 'PL3824', 'PL3826', 'PL0594'])
+    expect(s + ': G072', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C1803', 'C8473')], [('G072', 'preferred'), ('G072', 'alternate')])
+    expect(s + ': sketch rows at 0.3', [claims[c]['confidence'] for c in ('C8471', 'C8472')], ['0.3', '0.3'])
+    expect(s + ': no row above 0.5', max(claims['C84%02d' % i]['confidence'] for i in range(63, 74)), '0.5')
+
+
+def scenario_193_ethint78():
+    """ETHINT-78 (R858, Meindl and Schimpf interview): citations only."""
+    s = 'scenario 193'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': cited', ['R858' in claims[c]['reference_ids'].split(';') for c in ('C8213', 'C8219')], [True, True])
+    expect(s + ': no raise', [claims[c]['confidence'] for c in ('C8213', 'C8219')], ['0.3', '0.5'])
+    expect(s + ': no new rows', any('R858: ' in c['source_locator'] and c['claim_id'] >= 'C8474' for c in claims.values()), False)
+
+
+def scenario_194_b709_second_pass():
+    """FMS B-709 second pass (R855 extended, Ulms and Reuther, English only): XII SS Corps in the Ruhr pocket, April 1945."""
+    s = 'scenario 194'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': corps CPs', [claims[c]['place_id'] for c in ('C8474', 'C8475')], ['PL3828', 'PL0581'])
+    expect(s + ': gruppe witte', claims['C8484']['unit_id'], 'GER-KG-WITTE')
+    expect(s + ': no row above 0.5', max(claims['C84%02d' % i]['confidence'] for i in range(74, 88)), '0.5')
+    expect(s + ': author corrected', 'Karl Reuther' in open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'references_meta.csv'), encoding='utf-8').read(), True)
+
+
+def scenario_195_b709_maps():
+    """B-709 map appendices (R855, map-derived): rows at 0.3, never preferred over text."""
+    s = 'scenario 195'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': all map rows at 0.3', set(claims['C8%03d' % i]['confidence'] for i in range(488, 501)), {'0.3'})
+    expect(s + ': G073', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8480', 'C8497')], [('G073', 'preferred'), ('G073', 'alternate')])
+    expect(s + ': witte at Duesseldorf', (claims['C8488']['unit_id'], claims['C8488']['place_id']), ('GER-KG-WITTE', 'PL3804'))
+    expect(s + ': map support does not raise', claims['C8477']['confidence'], '0.3')
+
+
+def scenario_177_blumentritt_relations():
+    """B-361 single-source relations CR1072-CR1075."""
+    s = 'scenario 177'
+    rel = {r['relation_id']: r for r in csv.DictReader(open(REL_PATH, encoding='utf-8'))}
+    expect(s + ': relations', [(rel[c]['subject_unit_id'], rel[c]['higher_unit_id'], rel[c]['relationship'], rel[c]['valid_from'], rel[c]['valid_to']) for c in ('CR1072', 'CR1073', 'CR1074', 'CR1075')],
+           [('GER-MARI-002D', 'GER-ARMY-BLUMT', 'unspecified_subordination', '1945-04-10', ''), ('GER-PZ-039C', 'GER-ARMY-BLUMT', 'operational_control', '1945-04-15', '1945-04-17'), ('GER-PZ-CLAUS', 'GER-PZ-039C', 'operational_control', '1945-04-15', '1945-04-17'), ('GER-INF-245D', 'GER-OBNW-000H', 'reserve', '1945-04-28', '')])
+
 def main():
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps):
         before = len(FAILURES)
         try:
             fn()

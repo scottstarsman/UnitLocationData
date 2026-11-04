@@ -152,6 +152,12 @@
       "type": "string",
       "description": "Semicolon-separated source tokens (vocabulary source_token) naming where the unit was found when the placeholder was created. A listing is not evidence of any date or place.",
       "vocabulary_list": "source_token"
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "Domain of the unit: ground, air or naval. Blank means ground (the default). Only ground units go into the main build outputs (all_claims, claims.geojson, units, coverage, places, operations, command_relations); air and naval units are collected for later use and their claims are written to build/other_domains/ only (Scott's decision, 4 November 2026).",
+      "vocabulary": "domain"
     }
   ]
 }

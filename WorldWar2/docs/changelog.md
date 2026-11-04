@@ -3633,3 +3633,542 @@ FMS B-156 (Hans W. Reinhard, commanding general of LXXXVIII Corps, Allendorf, 8 
   - 50 rows unchanged: 34 are FMS-only rows (same family); 16 agree only approximately in date or place, are map rows (`C3028`, `C3200`), are already 0.7 (`C1458`, `C1462`) or are named in a roadmap point (`C7435`).
 - **Roadmap:** 258 updated (third source dates the handover 24 December; grouping recommended); 260-263 opened.
 - **Tests:** scenario 138 added.
+
+## fms-fold3-german-2: FMS B-343, Reinhard, LXXXVIII Corps on the Netherlands coast (3 November 2026)
+
+FMS B-343 (Hans W. Reinhard, commanding general of LXXXVIII Corps, Allendorf, May 1946; subject index by Gustav Hoehne, Koenigstein, 12 January 1951; NARA M1035, 66 images on Fold3) was read in full in the Fold3 viewer on 3 November 2026 and added as reference `R812` (`fms_german_manuscript`). Images 32-62 of the Fold3 set are a bound English copy of MS B-156, already entered from the German original as `R811`; they were not entered again. Only B-343's own text (images 1-31: summary, preface, Chapter One) and its appendices (App 1 troop dispositions map, App 2 order of battle, images 63-66) were used.
+
+- **New claims** `C7898`-`C7906` (9, all German; blank parents; strengths in the notes only): corps command post Bilthoven (`C7898`, 0.5), WBN headquarters Hilversum (`C7899`, 0.5), command posts of the 347th Infantry Division at Schagen (`C7900`), 16th Luftwaffe Field Division at Amstelveen (`C7902`) and 719th Infantry Division at Dordrecht (`C7905`), all 6 June 1944 at 0.5; the three division sectors (`C7901`, `C7903`, `C7906`, 0.3, representative points Den Helder, Noordwijk, Hoek van Holland); the 16th Luftwaffe Field Division sent to Normandy about mid-June (`C7904`, 0.3).
+- **Inferred dates:** `C7901`, `C7903`, `C7906`: date old value none (text 6 June), new value 1944-06-07; reason: the 6 June row of each division is its command post, and the coordinate checks take one place per unit and day.
+- **App 1 map:** no separate map rows; the regiment, battalion and Ost battalion positions (Infantry Regiments 860, 861, 723, 743; Luftwaffe regiments 31, 32, 46; Caucasian, Turkoman, Georgian, Volga Tatar and Armenian Ost battalions) have no units in the dataset and are kept in the sector row notes; the map's division and corps command posts agree with the text.
+- **Places:** `PL3584` Schagen, `PL3585` Den Helder, `PL3586` Amstelveen, `PL3587` Noordwijk, `PL3588` Hoek van Holland (Nominatim).
+- **Corroborations (8, no raises):** `R812` appended to `C7849`, `C7854`, `C7435`, `C7145`, `C7850`, `C7285`, `C0220` (same source family as another FMS reference already on the row, confidence unchanged) and `C7144` (NARA 347th Division records, 21 June: approximate date and place, unchanged at 0.5). Each row's notes give the old and new `reference_ids` and `source_locator`.
+- **Noted, not opened:** B-343 sends the 347th Division to the Charleroi-Namur area, B-156 to Charleville-Namur (`C7850` kept at Namur); B-343 puts the 719th Division reserve battalion at Bergen op Zoom, App 1 near Steenbergen (notes only). No roadmap point opened; next roadmap point 264.
+- **Operation:** the June rows use `OP-CAMP-NORMANDY` (the campaign covering the dates). `docs/review` sample regenerated (it was stale on `main`).
+- **Tests:** scenario 139 added. Next free: `C7907`, `PL3589`, `R813`, `G063`, scenario 140, roadmap 264.
+
+## fms-fold3-german-2: FMS B-262, Blauensteiner, II Parachute Corps between Maas and Rhine (3 November 2026)
+
+FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute Corps, Allendorf, 20 December 1946; subject index by Alfred Zerbel, 16 November 1950; NARA M1035 fiches 0253 and 0257G, 42 images on Fold3) was read in full on 3 November 2026 and added as reference `R813` (`fms_german_manuscript`). The German original (images 20-42) is the primary source; the English translation (images 1-19) was used only to check it. Differences in the translation, all corrected in the rows: Wehrkreiskommando VII for VI (Korps Feldt); "beginning of December" for mid-December (command post Vorst to St. Hubert); two parachute regiments for one (Fallschirmjäger-Regiment 2 under the 190th Division); "Hanten" for Xanten.
+
+- **New claims** `C7907`-`C7940` (34, all German; blank parents; strengths in the notes only), places `PL3589` Bergen (Limburg), `PL3590` Vorst, `PL3591` Elmpter Wald, `PL3592` Linne. Corps move to the Wasserburg at Kleve (18 September, 0.5), Korps Feldt north of the Reichswald, the defence line Cuijk-Groesbeek-Erlekom, the 190th and 84th Division staffs, Kampfgruppe Katzmann and the extension to Bergen, the failed mid-October night attack at Groesbeek, the move to Roermond-Venlo, the Venlo bridgehead (180th), the 7th and 8th Parachute Divisions, the Vorst command post, the 7th Parachute Division to Strasbourg, the planned Well-Velden attack, the Linne salient, Division 406, LXIII Corps taking the old sector, the Goch sector, Repelen, Alpen and the Wesel bridgehead (15th Panzergrenadier, 116th Panzer and Panzer Lehr remnants).
+- **Sketch (map) rows at 0.3:** `C7913` (190th, Sketch 1), `C7914` (corps headquarters near Keppeln, Sketch 1, reading uncertain), `C7923`, `C7924` (7th and 8th Parachute Divisions, Sketch 2), `C7934` (15th Panzergrenadier near Udem, Sketch 3). Other sketch labels (corps boundaries, the 84th Division on Sketch 1, HQ symbols near Birten/Veen on Sketch 3) duplicate text rows, fall on a day with another row for the unit, or are illegible; they are in the notes only.
+- **Inferred dates:** `C7909` 22 September (old value none, new value 1944-09-22; reason: the change to defence after 19 September has no day, and the corps has rows on 19-21 September); `C7927` 25 January 1945 (old value none, new value 1945-01-25; reason: "end of January", before the corps row of 31 January); `C7925` 31 December 1944 (old value none, new value 1944-12-31; reason: "end of December", kept after the 12th Army Group map row of 26 December to avoid an impossible move speed). Each row says so.
+- **Placeholder promoted:** `GER-DIV-406` (record_status placeholder to active) for `C7931`.
+- **Corroborations (24):** `R813` appended to `C7689`, `C7690`, `C7691`, `C7692`, `C0856`, `C7113`, `C7695`, `C7696`, `C7700`, `C7698`, `C7702`, `C7699`, `C2235`, `C7499`, `C2232`, `C7543`, `C2234`, `C7715`, `C2229`, `C7713`, `C7716` (confidence unchanged: same source family as B-093/B-084, or approximate), and `C7532` and `C7533` (Stacey, 28 February 1945, Kevelaer: the 190th Division passes to the 2nd Parachute Corps): confidence old value 0.3, new value 0.7; reason: corroboration rule, a second source family (`fms_german_manuscript`) agrees on unit, date and named place.
+- **Validator tidy-up (same commit, before push):** over-long `current_activity` texts on new rows shortened to their first clause (the full text stays in the notes); corps sector rows set to `sector_center` at 10 km.
+- **Coordinate exception:** speed `C4949`-`C7925` added to `data/coordinate_exceptions.csv` (stale 12th Army Group map symbol of 2 January against the end-December move to Strasbourg; C1106 has the division at Hatten on 10 January).
+- **Roadmap:** 264 opened (handover of the Reichswald, end of November against mid-December; rows kept, not grouped).
+- **Tests:** scenario 140 added. Next free: `C7941`, `PL3593`, `R814`, `G063`, scenario 141, roadmap 265.
+
+
+### FMS B-414 (Geyer, Army Group H / OB Nordwest, 10 March-9 May 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R814`, Oberst i.G. Rolf Geyer, *Darstellung des Verlaufs der Kämpfe auf deutscher Seite bei Heeresgruppe H vom 10.3. bis 9.5.1945*, MS B-414 (written 20 April 1946 at Bruges/Allendorf; German index by Koch-Erpach, 3 February 1951), read on Fold3 (141 images). The German original (images 54-141, with Anlagen 1-6 and Skizzen 1-6) is primary; the English translation (images 1-53) was used only to check. Translation errors recorded: the front of 30/31 March ran along the IJssel to Brummen, not the Lippe; LXVII Corps, not LXIII; Bislich, not Mislich; Schlemm "ausgefallen" (put out of action), not killed; XXXXVII (XLVII) Panzer Corps, not XXXVII; Ahaus, not Almaus; Goor, not Goch.
+- **New claims (43, all German, blank parents):** `C7941`-`C7983`. Anlage 6 command posts as text rows (`C7941`-`C7948`: Zutphen for Voorden-Zutphen, Oldenzaal, north-west of Bersenbrück, Delmenhorst at 0.3 for an uncertain reading, north of Soltau, Reinbek-Wohltorf, Langwedel (Skizze 6 has nearby Nortorf from 23 April; kept in the note), Kollerup); the March grouping (LXVII Corps at Dinslaken, 245th at Coesfeld, 190th to Amersfoort, Division 406 staff to the 149th Field Training Division at Zwolle, Twenty-fifth Army at Hilversum); the Rhine crossing (Kleffel and Blumentritt from 25 March, XLVII Panzer Corps to Dorsten-Kirchhellen, 190th to Kirchhellen, 116th Panzer at Hünxe on 25 March, LXVII Corps back to the Autobahn, 180th and LXVII under XLVII Panzer Corps on 26 March); 28 March-6 April (245th to Cloppenburg, LXXXVI Corps broken north of the Lippe side canal and at Münster, First Parachute Army command posts Havixbeck and Iburg, Division 471 on Rheine-Lengerich-Iburg, the IJssel-Lochem-Rheine front, Armeegruppe Student north of Lingen, II Parachute Corps toward Lingen, the 6 April Küstenkanal-Cloppenburg front, Student/Blumentritt staff at Celle); Skizze 5 positions (7th and 8th Parachute Divisions at Friesoythe, 471 and 15th Panzergrenadier at Wildeshausen); April-May (XXXIX Panzer Corps from Uelzen to Gifhorn, 84th remnants, II Parachute Corps to Cuxhaven-Bremerhaven, Blumentritt at Bad Bramstedt, 245th at Lauenburg 28 April-1 May, 8th Parachute Division toward Ratzeburg [?], Armeeabteilung Straube).
+- **Places:** `PL3593`-`PL3610` (Oldenzaal, Bersenbrück, Soltau, Wohltorf, Langwedel, Kollerup, Coesfeld, Dorsten, Kirchhellen, Hünxe, Cloppenburg, Havixbeck, Bad Iburg, Lengerich, Gifhorn, Cuxhaven, Bad Bramstedt, Ratzeburg).
+- **Placeholder promoted:** `GER-OBNW-000H` (OB Nordwest) for `C7945`-`C7948`.
+- **Corroborations (23):** `R814` appended to `C1201`, `C1202`, `C7566`, `C1181`, `C7567`, `C7565`, `C1182`, `C2025`, `C1185`, `C7568`, `C1238`, `C1237`, `C1223`, `C7619`, `C1263`, `C1245`, `C1532`, `C7834`, `C7835`, `C7683`, `C7681` (confidence unchanged: same FMS family, approximate, representative point, map-only or already 0.7), and raised: `C2026` (2nd Parachute Division at Dinslaken, 24 March) and `C1183` (15th Panzergrenadier counterattack at Rees, 24 March): confidence old value 0.3 and 0.5, new value 0.7; reason: corroboration rule, a second source family (`fms_german_manuscript`) agrees with `us_army_cmh` on unit, date and named place.
+- **Coordinates:** no existing coordinates were changed. Four new speed warnings are explained in `data/coordinate_exceptions.csv` (`C6166`/`C7950`, `C7943`/`C7967`, `C1223`/`C7971`, `C7603`/`C7979`). Before commit, seven new `current_activity` texts were shortened (full text in the definition), the 22-23 March rows moved to `OP-CAMP-CENTRAL-EUROPE` (the Rhineland campaign ends 21 March), and `C7977` (corps reaches Gifhorn) set to 10 km precision as a corps-level point.
+- **Roadmap:** 265 (Schlemm, Blumentritt and Kleffel dates; not added to G027) and 266 (245th Division in Alsace or at Coesfeld in early March) opened.
+- **Tests:** scenario 141 added. Next free: `C7984`, `PL3611`, `R815`, `G063`, scenario 142, roadmap 267.
+
+
+### FMS B-147 (Geyer, Army Group H in the Rhineland, 10 November 1944-10 March 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R815`, Oberst i.G. Rolf Geyer (Ia Army Group H), *Operation "Rheinland" ... Darstellung des Verlaufs der Kämpfe auf der deutschen Seite vom 10.11.1944-10.3.1945 (Heeresgruppe "H")*, MS B-147 (1946; German original only; index by Gustav Höhne, 21 September 1950), read on Fold3 (combined B-147/148, 107 images; B-147 images 1-89).
+- **New claims (19, all German, blank parents):** `C7984`-`C8002`: XXX Corps about Rotterdam on Skizze 1 (map, 0.3); the Twenty-fifth Army taking over the AOK 15 sector about 25 November (Christiansen) and given the Rhine bank to Emmerich about 2 March; the First Parachute Army back to the Maas by 25 November, out of the Roermond bend (Venlo-Kaldenkirchen-Waldniel), on Uerdingen-Krefeld-Kempen-Wachtendonck, on Rheinhausen-Aldekerk-Geldern, the Xanten-Sonsbeck-Rheinberg front and the 6 March bridgehead line; XLVII Panzer Corps to Xanten under the army on 9 February; the 34th SS Division into the Maas-Waal front; Panzer Lehr at Sonsbeck (23 February) and taken to Rheindahlen (24 February); Division 406 at Dülken-Viersen and on the Elmpter Forst-Waldniel security line; the 2nd Parachute Division turned south of Krefeld; the 15th Panzergrenadier Division to Sonsbeck (26 February) and its parts north of Isselburg (early March); the 245th arriving about Borken.
+- **Places:** `PL3611`-`PL3616` (Rheindahlen, Waldniel, Kempen, Aldekerk, Borken, Isselburg).
+- **Corroborations (24):** `R815` appended to `C1037`, `C1039`, `C7443`, `C1128` (Anlage 1 dates Blaskowitz to 1 February), `C7449`, `C7450`, `C7457`, `C7465`, `C7491`, `C7930`, `C7931`, `C7932`, `C1153`, `C7531`, `C7756`, `C7760`, `C7764`, `C7763`, `C7710`, `C7711`, `C7548`, `C7712`, `C7936`, `C2229`; no raises (same FMS family as B-093/B-262/B-414, approximate, or already 0.7).
+- **Coordinates:** no existing coordinates changed. One new speed warning explained (`C8001`/`C6032`, 245th Division, roadmap 266 updated). Before commit five new `current_activity` texts were shortened and the 23-25 February rows set to `OP-CAMP-RHINELAND` (Blockbuster starts 26 February).
+- **Tests:** scenario 142 added. Next free: `C8003`, `PL3617`, `R816`, `G063`, scenario 143, roadmap 267.
+
+
+### FMS B-148 (Geyer, answers to the Historical Division, June 1946; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R816`, Oberst i.G. Rolf Geyer, replies of 13 June 1946 (Allendorf) to Historical Division questions of 30 May 1946, MS B-148, German original, Fold3 images 90-104 of the combined B-147/148 file (Höhne index note 21 September 1950: no entries). The reference link is the shared first image with `?ms=B-148` so that it differs from `R815`.
+- **Entered only real German dispositions of about 4 March 1945** (the situation-map date of Ziffer 3). Geyer's hypothetical British attack at Emmerich-Rees, its objectives and the assumed Allied order of battle are not unit locations and are in the notes only.
+- **New claims (2):** `C8003` (346th Infantry Division with 4 battalions taking over the Rhine sector from the IJssel mouth to Emmerich; Zevenaar as representative point, 0.3) and `C8004` (361st Infantry Division about Utrecht, personnel only, not employable, 0.3). Place `PL3617` (Zevenaar).
+- **Corroborations (4):** `R816` appended to `C7998`, `C8000`, `C8001`, `C8002` (same FMS family as B-147; no raises). Division Karst (Bocholt-Borken-Haltern), the Volkssturm and gendarmerie battalions and the AOK 25 artillery group north of Emmerich have no unit ids; notes only. Ziffer 1 (AOK 15 passed to Army Group B under the cover name Fifth Panzer Army; AOK 25 kept the name AOK 15 until the Ardennes offensive) is context in the notes and in `C7985`.
+- **Coordinates:** no changes; no new warnings. **Tests:** scenario 143. Next free: `C8005`, `PL3618`, `R817`, `G063`, scenario 144, roadmap 267.
+
+
+### FMS B-453 (Langhaeuser, 6th Parachute Division "Vierter Einsatz", about 11 March-1 April 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R817`, Rudolf Langhaeuser, MS B-453 (English translation dated 31 March 1947), German original Fold3 images 1-22 primary (printed pp.1-9 and Anlage 5), English images 23-34 checked (Mariacheen for Marienbaum, Mengelo for Hengelo, the violet line of 25 March omitted). Continues B-368 (`R808`), same author.
+- **New claims (8):** `C8005` (6th Parachute Division takes over the Rhine sector Emmerich-Kalkar/Isselburg about 11 March, command post Millingen, 0.3), `C8006` (24 March, Millingen and Rees lost, 0.5), `C8008` (25 March, Anholt, 0.3), `C8010` (26 March, Terborg, to LXXXVIII Corps, 0.5), `C8011` (27-29 March, railway line at Varsseveld, 0.3), `C8012` (30 March, Twente Canal, Lochem representative, 0.3); `C8007` (346th Division at Emmerich, 25 March, 0.3); `C8009` (8th Parachute Division loses Isselburg, 26 March, 0.3).
+- **Places:** `PL3618` (Varsseveld).
+- **Corroborations (7):** `R817` appended to `C7719`, `C7717`, `C7720`, `C1181`, `C1183`, `C7835`, `C7579` (same FMS family as B-093/B-762/B-414; no raises).
+- **Conflict kept:** roadmap 267 (6th Parachute Division at Emmerich on 28 March in Stacey `C7574` against Terborg-Varsseveld in B-453; Elden map rows `C6213`/`C6348` against the Millingen sector).
+- **Coordinates:** no changes; no new warnings. **Tests:** scenario 144. Next free: `C8013`, `PL3619`, `R818`, `G063`, scenario 145, roadmap 268.
+
+
+### FMS B-580 (Langhaeuser, 6th Parachute Division, 5th and 6th commitments, about 1 April-10 May 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R818`, Rudolf Langhaeuser, MS B-580 (signed Steinlager Allendorf, 1 June 1947), German original Fold3 images 1-24 primary (printed pp.1-11, Anlage 6 and 7 overlays), English images 25-40 checked. Translation differences recorded: lively enemy "Sabotaetigkeit" (sabotage) rendered "fighter bombers"; eastern for western flank (p.9) and bank (p.10); 14 April where the faint German reads 10 April; the 7 June 1947 comment sheet signed Oberst Geyer in the German is "Col. Meyer" in the English. Continues B-453 (`R817`).
+- **New claims (7, all 0.3):** `C8013` (quarters at Holten behind the Twente Canal, early April), `C8014` (Deventer-Holten line, about 10 April), `C8015` (Olst-Raalte-Lemelerveld line), `C8016` (Zwolle bridgehead, Heino and Lierderholthuis), `C8017` (IJssel west bank, regimental posts Vaassen-Epe-Wapenveld, about 15 April), `C8018` (Grebbe line Woudenberg-Amersfoort-Baarn, last days of April), `C8019` (capitulation of Festung Holland, 10 May; assembly area "Oesterberg" unidentified).
+- **Places:** `PL3619`-`PL3621` (Raalte, Heino, Epe).
+- **Corroborations (8):** `R818` appended to `C7579`, `C7837`, `C7631`, `C7843`, `C7844`, `C7847`, `C7841`, `C7580` (same FMS family as B-762; no raises).
+- **Open:** roadmap 268 (dating of the Holten line and of the move to the IJssel west bank).
+- **Coordinates:** no changes; no new warnings. Three new `current_activity` texts shortened. **Tests:** scenario 145. Next free: `C8020`, `PL3622`, `R819`, `G063`, scenario 146, roadmap 269.
+
+
+### FMS B-365 (Blumentritt, Twenty-fifth Army, 3 February-28 March 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R819`, Günther Blumentritt, MS B-365 (Allendorf, January 1947, signed 30 January 1947), German original Fold3 images 25-42 primary (printed pp.1-16, Skizze 1), English images 3-20 checked. Translation differences recorded: Wegberg illegible in the English; St. Odilienberg 6 km (German) against 8 km (English) south of Roermond (the map distance is about 6 km); Tetz south-east of Linnich (German) unreadable in the English; coast fortifications since 1940 (German) against 1943 (English); the move of the 346th Division to Emmerich truncated in the English; sketch label 712 (German) against 718 (English).
+- **New claims (20; 0.5 for dated places in the text, otherwise 0.3; parents blank):** `C8020` (XII SS Corps quarters at Wegberg, handover to Bayerlein, 31 January), `C8021`-`C8023` (176th at St. Odilienberg, 183rd at Myhl, 59th at Tetz on the Roer, end of January; division order inferred from the listing), `C8024` (OB West at Ziegenberg, 1 February), `C8025` (Army Group H east of Zutphen, 2 February), `C8026` (Twenty-fifth Army taken over at Hilversum, 3 February), `C8027` (army front Texel-Schouwen and Biesbosch-Emmerich, boundary at Emmerich), `C8028`-`C8029` (XXX Corps west half, LXXXVIII Corps east half of the water front, Skizze 1), `C8030` (346th on Schouwen and Goeree), `C8031`-`C8034` (712th, 711th, 2nd and 6th Parachute Divisions, Skizze 1), `C8035` (331st arrives in central Holland, February), `C8036` (air attack on Hilversum headquarters, 20 March), `C8037` (handover to Kleffel, 27 March), `C8038` (I Canadian Corps opposite, dated 20 March by inference), `C8039` (1st Polish Armoured Division on the Waal and lower Maas).
+- **Inferred values:** each annotated in the row notes with old value none, new value and reason (division order on the Roer, representative points for sketch and sector rows, the 331st date, the Kleffel handover place, the I Canadian Corps date).
+- **Places:** `PL3622` Wegberg, `PL3623` Tetz (Linnich).
+- **Corroborations (10):** `R819` appended to `C2132`, `C1128`, `C7827`, `C7988`, `C7828`, `C7459`, `C8000`, `C8003`, `C7831`, `C7830` (same FMS family or general statements; no raises). Strengths (about 5,000 Netherlands SS) in notes only.
+- **Open:** roadmap 265 updated (27 March, a fourth date for the Kleffel handover); new roadmap 269 (711th Division named in February) and 270 (I Canadian Corps before 15 March; 346th on Schouwen against the Hoeksche Waard map rows).
+- **Coordinates:** no existing coordinates changed. **Tests:** scenario 146. Next free: `C8040`, `PL3624`, `R820`, `G063`, scenario 147, roadmap 271.
+
+
+### FMS B-811 German original (von Zangen, Fifteenth Army, 22 November 1944-early February 1945; branch `fms-fold3-german-2`, 4 November 2026)
+- **Source:** `R820`, Gustav-Adolf von Zangen, MS B-811, German original (Teile I-IV of 15 November 1947, pp.1-61; Teil V of 20 December 1947, pp.62-70, breaking off mid-sentence), Anlagen 1-7c and the Drews and Brandenberger Stellungnahmen (28 March 1948); Fold3 pages 168-254. No English in this file; the English translation of the same manuscript is `R768` (read 30 October 2026). The reference link is Fold3 page 169 (ms p.2), the nearest captured image to the start. Anlagen 3-4 were not read and uncertain chart readings (commanders on Anlagen 7a-7c) are kept out of rows.
+- **New claims (39, `C8040`-`C8078`; 0.5 for dated places in the text, 0.3 otherwise; parents blank):** Fifteenth Army staff at Königshoven 15 November (`C8040`); 12th Volksgrenadier at Eschweiler and Langerwehe; 3rd Parachute at Merode, Lucherberg, and in late December and early February; 47th Volksgrenadier to Zülpich and forward of Düren; 3rd Panzergrenadier at Inden and Schleiden; XLVII Panzer Corps at Lindern and Brachelen; 9th Panzer at Lindern and Heinsberg; 10th SS Panzer at Linnich; 15th Panzergrenadier and 183rd about Heinsberg-Himmerich; 116th Panzer at Mönchengladbach; 340th Volksgrenadier about Jülich; LXXXI Corps at Jülich (7 December) and Pier (10 December); 272nd Volksgrenadier at Bergstein, Konzen and Strauch; 353rd at Brandenberg and Düren; LXXIV Corps command change (Püchler, 16 December); 59th relieving the 340th; LXVII Corps, 277th, 89th and 3rd Parachute about Elsenborn; 363rd at Düren; 62nd Volksgrenadier at Harperscheid; Allied rows from the German account at 0.3 (US 104th at Inden, US 102nd at Linnich, British 7th Armoured at Sittard and St. Odilienberg, US 9th Division at Dreiborn).
+- **Inferred values:** each annotated in the row notes (old value none, new value, reason): dates of the Lindern counterattack, Bergstein and Brandenberg situation, 7th Armoured at St. Odilienberg; places of the LXXIV Corps command change (Bleibuir), the 59th relief (Linnich), the 340th (Jülich) and the 3rd Parachute insertion (Nideggen).
+- **Conflict group G063:** `C8040` (Königshoven, preferred) and `C0957` (MacDonald, Aachen, 15 November; claim_status old value preferred, new value alternate; reason: Aachen was in American hands, so the point is a sector point). Nothing deleted.
+- **Places:** `PL3624`-`PL3636` (Langerwehe, Lindern, Lucherberg, Brandenberg, Pier, Nideggen, Dreiborn, Zülpich, Brachelen, Harperscheid, Schleiden, Strauch, Bergstein).
+- **Corroborations (11):** `R820` appended to the R768 rows `C2127`-`C2134` and `C1089` (same manuscript) and to `C0962`, `C0971`; no raises (FMS one family; it cannot supply non-FMS agreement).
+- **Open:** roadmap 271 (272nd at Bergstein against Simmerath), 272 (LXXIV Corps to the Fifth Panzer Army 4 or 5 February), 273 (R768 and R820, one manuscript).
+- **Coordinates:** no existing coordinates changed; 3 explained exceptions added (`conflict` C0957/C8040 for G063; `speed` C8040/C3986 and C8064/C4779, both 12th Army Group map lag); warnings 138 to 137 (the old C0957 speed warning is now covered by the group). **Tests:** scenario 147. Next free: `C8079`, `PL3637`, `R821`, `G064`, scenario 148, roadmap 274.
+
+
+## fms-fold3-german-2: FMS B-812 German original, von Zangen, Fifteenth Army 23-28 February 1945 (3 November 2026)
+
+- **Source:** FMS B-812 (`R821`), German original (Fold3 pages 38-71) primary, the English translation in the same file (pages 1-37) a check only. B-812 was not yet a reference (R768 and R820 are B-811), so a new reference id; no duplicate-reference point needed.
+- **New claims:** 40 rows `C8079`-`C8118` (30 German, 10 Allied from the German account; blank parents): army, corps and divisional positions 23-28 February (Hülchrath, Beeck, south of Elsdorf, Blessem, Baal, Linnich, Jülich, Düren, Lechenich, Gevenich, Stockheim, Lövenich, Titz, Elsdorf, Winkeln, Kleinenbroich, Waldniel, Rheindahlen, Wickrath, Mönchengladbach, Garzweiler, Grevenbroich, Harff, Paffendorf, Sindorf, Kerpen, Gymnich, Erp, north of Münstereifel) and US divisions and XIII Corps from the German account at 0.3.
+- **Translation differences (recorded in the private notes):** German "3 Pz.-Divn." (three Panzer divisions) against English "the 3. Pz Div"; German adds the corps request that XII SS Corps close the gap (p.-11-); the English p.6 obscured item b) is the 338th Division in the German; the English p.8 obscured US divisions are the 8th (south) and 104th (north); English "II. SS-Corps" is XII SS; "smoke units" for Nebelwerfer.
+- **Inferred values:** each annotated in the row notes (old value none, new value, reason): places Beeck (Wegberg) for "Beek (n. Erkelenz)" and Winkeln (Mönchengladbach); date of the 353rd at Stockheim (24 February).
+- **Corroborations (5):** `R821` appended to `C1151`, `C1152`, `C1153`, `C1154`, `C1959`; no raises (FMS one family).
+- **Places:** `PL3637`-`PL3654`.
+- **Open:** roadmap 274-277.
+- **Coordinates:** none changed; 2 explained exceptions (`speed` C6050/C8091 and C8102/C6050, 12th Army Group map lag); warnings 137 (unchanged). **Tests:** scenario 148. Next free: `C8119`, `PL3655`, `R822`, `G064`, scenario 149, roadmap 278.
+
+## fms-fold3-german-2: FMS B-197 German original, von Lüttwitz, XLVII Panzer Corps 8 March-16 April 1945 (4 November 2026)
+
+- **Source:** FMS B-197 (`R822`), German only (no English translation in the Fold3 run); text pages headed "MS # B-198" (roadmap 279). Neither B-197 nor B-198 was an existing reference, so a new reference id.
+- **New claims:** 31 rows `C8119`-`C8149` (29 German, 2 Allied from the German account; blank parents): corps command posts (Silvolde, Schloss Lembeck, Datteln area, Haus Bodelschwingh, Dortmund-Sölde, Evingsen, Veserde, Löhnen south of Iserlohn) and the staff overrun south of Iserlohn on 15 April; 116th Panzer (Varsseveld, Polsum, Beckum, Soest, Hamm, Iserlohn), 15th Panzergrenadier (Isselburg), 180th and 190th Divisions (Haltern, Kirchhellen, Erkenschwick line, Brambauer, Kirchlinde, Unna, Dortmund), First Parachute Army staff south of Borken, LIII Corps at Dortmund, 2nd Parachute Division staff at Witten, US 8th Armored (Gladbeck, Polsum).
+- **Inferred values:** each annotated in the row notes: place Datteln for "Bockum, 3 km west of Datteln"; date of the Dortmund-Sölde move (2 April).
+- **Corroborations (10):** `R822` appended to `C7565`, `C7956`, `C7960`, `C1185`, `C2243`, `C1183`, `C7957`, `C7958`, `C2025`, `C1243`; no raises (FMS one family).
+- **Places:** `PL3655`-`PL3666`.
+- **Open:** roadmap 278-280.
+- **Coordinates:** none changed, no new exceptions; warnings 137 (unchanged). **Tests:** scenario 149. Next free: `C8150`, `PL3667`, `R823`, `G064`, scenario 150, roadmap 281.
+
+## fms-fold3-german-2: FMS B-200, von Lüttwitz, XLVII Panzer Corps answers to questions (4 November 2026)
+
+- **Source:** FMS B-200 (`R823`, new; Allendorf, June 1946, German, two pages answering five questions on B-197/"B-198").
+- **New claim:** `C8150` (XLVII Panzer Corps line at the west edge of Recklinghausen, 30 March, 0.3; also cites `R822`). Place `PL3667` Recklinghausen.
+- **Corroboration (1):** `R823` appended to `C8133` (Beckum); no raise (same author and family).
+- **Not entered:** the 15 km gap and 36-hour courier figures, communication times (notes only).
+- **Open:** roadmap 281. **Tests:** scenario 150. Next free: `C8151`, `PL3668`, `R824`, `G064`, scenario 151, roadmap 282.
+
+## fms-fold3-german-2: FMS B-367 German original, von Lüttwitz, XLVII Panzer Corps in the Rhineland 23 October-5 December 1944 (4 November 2026)
+
+- **Source:** FMS B-367 (`R824`, new), German only (Allendorf, 11 January 1947), with Anlagen 1-4.
+- **New claims:** 26 rows `C8151`-`C8176` (22 German, 4 Allied from the German account; blank parents): corps at Krefeld, Anrath, Venrath, Katzem; 9th Panzer (Linnich battle group, Prummern, Beeck, Heinsberg refit, Randerath, Lindern), 15th Panzergrenadier (Dremmen, Süggerath, Hilfarth command post, Würm, Leiffarth, Himmerich), 10th SS Panzer (Ederen, Klein-Bouslar command post, Lindern, Linnich, Körrenzig), 116th Panzer refit west of Mönchengladbach, a 340th Volksgrenadier battalion destroyed at Floßdorf (unit inferred from "Division Tolsdorff"), US 2nd Armored, 84th and 102nd.
+- **Inferred values:** dates "second week of November" (Anrath) and "first half of November" (Linnich battle group); unit of the Floßdorf battalion.
+- **Corroborations (10):** `R824` appended to `C7741`, `C7742`, `C0968`, `C0969`, `C1472`, `C0544`, `C8047`, `C8049`, `C8050`, `C2129`; no raises. The 43rd Division at Tripsrath on 18 November is a corroboration of `C1472`, not a new row.
+- **Claim-key exception:** `C8048`/`C8169` (Lindern 30 November, outcome differs); roadmap 282.
+- **Places:** `PL3668`-`PL3680`.
+- **Coordinates:** none changed; 1 explained exception (`speed` C8152/C3966, map lag); warnings 137.
+- **Open:** roadmap 282-283. **Tests:** scenario 151. Next free: `C8177`, `PL3681`, `R825`, `G064`, scenario 152, roadmap 284.
+
+## fms-fold3-german-2: FMS B-368 re-read, German original primary (Langhaeuser, 6th Parachute Division) (4 November 2026)
+
+- **Source:** B-368 is already `R808` (same Fold3 file, read 3 November 2026); German pages 5-34 re-read as primary, English pages 35-57 as a check. No new reference.
+- **New claim:** `C8177` (346th Infantry Division arriving on the north bank of the Rhine about Emmerich, about 10 February 1945, 0.3).
+- **Corroborations (2):** `R808` appended to `C1369` and `C1380` (2nd and 3rd Canadian Divisions opposite the division at Calcar); no raises.
+- **Translation and internal differences:** recorded in the private notes and roadmap 284.
+- **Open:** roadmap 284. **Tests:** scenario 152. Next free: `C8178`, `PL3681`, `R825`, `G064`, scenario 153, roadmap 285.
+
+## fms-fold3-german-2: FMS B-369 German original, Degener, 189th Infantry Division west of Belfort 14-19 November 1944 (4 November 2026)
+
+- **Source:** FMS B-369 (`R825`, new), German pages 1-28 primary, English sampled.
+- **New claims:** 11 rows `C8178`-`C8188` (189th Division command posts west of Couthenans, Échenans-sous-Mont-Vaudois, Andelnans and Vézelois, the change of command to Oberst i.G. Zorn on 19 November, Gémonval, Trémoins, Héricourt, Fort Vaudois, Bavilliers; 338th Division at Arcey and Montbéliard).
+- **Corroboration (1):** `R825` appended to `C2052` (338th attacked 14 November); no raise.
+- **Places:** `PL3681`-`PL3691`.
+- **Not entered:** uncertain place names and unnamed French units (roadmap 285).
+- **Tests:** scenario 153. Next free: `C8189`, `PL3692`, `R826`, `G064`, scenario 154, roadmap 286.
+
+## fms-fold3-german-2: FMS B-674 German original with English check, Meindl, II Parachute Corps 10 March-10 May 1945 (4 November 2026)
+
+- **Source:** FMS B-674 (`R826`, new; not previously a reference), German pages 1-20 primary (very faint), English translation (Fold3 pages 21-41) used to check and to read faint command-post names and dates (recorded in row notes and private notes); Geyer supplement of 14 September 1947.
+- **New claims:** `C8189`-`C8198` (10 rows; II Parachute Corps 8, 7th Parachute Division 2), parents blank. Inferred values: `C8193` place Hollenermoor (Saterland) for "Hollener-Moos" (old none, new PL3694, 0.3); `C8197` place Brekendorf for "Gr. Breckendorf" (old none, new PL3697, 0.3); `C8195` date 1945-04-12 (old none) from the order of the text.
+- **Corroborations (no confidence raised, FMS family):** `R826` appended to `C7716`, `C7717`, `C1181`, `C1182`, `C1183`, `C1192`, `C7603`.
+- **Places:** `PL3692`-`PL3699` (Ahaus, Emsbüren, Hollenermoor, Jübberde, Nortorf, Brekendorf, Brunsbüttel, Gronau (Westfalen)).
+- **Not entered:** [?] readings (Ostendorf, Niederdorf, Uploh, "Jasenburg", "Edderrecht", "Siegen"); strengths (notes only); 21st Parachute Division (no unit file).
+- **Roadmap:** 286-288. Scenario 154.
+
+## fms-fold3-german-2: FMS B-327 English translation, Blauensteiner, II Parachute Corps 10 March-10 May 1945 (4 November 2026)
+
+- **Source:** FMS B-327 (`R827`, new; not previously a reference), English translation only (no German original in the Fold3 set), with Meindl's supplement (28 December 1946) and Geyer's note (10 January 1947).
+- **New claim:** `C8199` (7th Parachute Division extracted from the Leer-Bad Zwischenahn line, end of April; inferred date old none, new 1945-04-28, 0.3), parent blank. No new places.
+- **Corroborations (no confidence raised, FMS family):** `R827` appended to `C7716`, `C1181`, `C1183`, `C1236`, `C8192`, `C8195`.
+- **Not entered:** strengths (notes only; about 1,000 per division against B-674's 3,500-4,000); uncertain capitulation place; facts without a unit file. Roadmap 289-290. Scenario 155.
+
+## fms-fold3-german-2: FMS B-051 German typescript, Meindl, II Parachute Corps Part III Rhineland 15 September 1944-21 March 1945 (4 November 2026)
+
+- **Source:** FMS B-051 (`R828`, new; not previously a reference; Fold3 lists it as "See MS # B-093", but it is a separate first typescript with different details), German only, Fold3 pages 38-67.
+- **New claim:** `C8200` (II Parachute Corps staff first at Flüren near Wesel, 10 March 1945, 0.3, hard-to-read name), parent blank. Place `PL3700`.
+- **Corroborations (no confidence raised, FMS family):** `R828` appended to `C7689`, `C7690`, `C7691`, `C7692`, `C7695`, `C7696`, `C7699`, `C7701`, `C7702`, `C7703`, `C7704`, `C7705`, `C7706`, `C7707`, `C7708`, `C7709`, `C7710`, `C7715`, `C7716`.
+- **Differences from B-093:** roadmap 291-293 (evacuation approved 9 March 1830 against refused; Aufklärungs-Abteilung 12 at Keppeln; 7th Parachute Division to the Ardennes in mid-December). No conflict rows. Scenario 156.
+
+## fms-fold3-german-2: FMS B-052 English translation, von Oriola, XIII Corps 18 February-21 March 1945 (4 November 2026)
+
+- **Source:** FMS B-052 (`R829`, new; not previously a reference), English translation only (June 1946, from memory; most pages undated; printed pages 17-19 filmed out of order as Fold3 pages 24, 25, 23).
+- **New claims:** `C8201`-`C8209` (9 rows: 326th, 352nd and 246th Volksgrenadier Divisions, 2nd Panzer Division), all 0.3, every date inferred (old value none, new value and reason in each row). Parents blank. No corps rows because of the exchange with Rothkirch (roadmap 294).
+- **Corroborations (no confidence raised, FMS family):** `R829` appended to `C1156`, `C1159`.
+- **Places:** `PL3701`-`PL3709`. Roadmap 294-296. Scenario 157.
+
+## fms-fold3-german-2: FMS B-261 German original with English check, Blauensteiner, II Parachute Corps Normandy 6 June-24 July 1944 (4 November 2026)
+
+- **Source:** FMS B-261 (`R830`, new; neither B-261 nor Meindl's Normandy report was a reference), German pages 18-22 primary (exact dates), English pages 4-8 checked.
+- **New claims:** `C8210` (corps command post Les Chéris, 6 June 1944, 0.5) and `C8211` (Pont-Brocard, 10 June 1944, 0.5); parents blank. Place `PL3710`.
+- **Corroborations (no confidence raised, FMS family):** `R830` appended to `C0052`, `C0065`, `C0089`, `C0802`, `C0803`, `C0804`, `C0763`.
+- **Notes only:** losses of 300-400 men a day. Roadmap 297-298. Scenario 158.
+
+## fms-fold3-german-2: FMS B-240 German original with English check, Blauensteiner, II Parachute Corps early May-6 June 1944 (4 November 2026)
+
+- **Source:** FMS B-240 (`R831`, new; not previously a reference), German pages 4-7 primary, English pages 57-60 checked; editor's summary (Valentine) in notes only.
+- **New claims:** `C8212` (corps at Quintin), `C8213` (3rd Parachute Division at Huelgoat), `C8214` (5th Parachute Division at Rennes), all 0.3 with the inferred date 1944-06-06 (old value none; reason: positions held from early May until the move order of 6 June, and no campaign covers May 1944); parents blank. Places `PL3711`-`PL3712`.
+- **Corroborations (no confidence raised, FMS family):** `R831` appended to `C8210`, `C0052` (move order of 6 June).
+- **Notes only:** strengths and equipment. Roadmap 299-300. Scenario 159.
+
+## fms-fold3-german-2: FMS B-401 German original with English continuation, Meindl, II Parachute Corps late winter 1943-24 July 1944 (4 November 2026)
+
+- **Source:** FMS B-401 (`R832`, new; resolves roadmap 297), German original Fold3 pages 6-41 primary (dated 11 April 1946; English sheet May 1946); the German scan stops about 17-18 July, so later facts come from the English continuation (bundle Fold3 pages 49-56), stated in each such row.
+- **New claims:** `C8215` (352nd Division around Saint-Clair, 9 June), `C8216` (3rd Parachute Division at the Forêt de Cerisy, 12 June), `C8217` (17th SS around Saint-Lô, 12 June), `C8218` (352nd Division about 6 km north of Saint-Lô, end of June; inferred date old none, new 1944-06-30), `C8219` (corps command post Fervaches, 16 July), `C8220` (352nd Division south of Saint-Lô toward Canisy, English only; inferred date old none, new 1944-07-19). Parents blank; no new places.
+- **Corroborations (no confidence raised, FMS family):** `R832` appended to `C8212`, `C8213`, `C8214`, `C8210`, `C0052`, `C0057`, `C0081`, `C2205`, `C0803`, `C0804`.
+- **Roadmap:** 297 resolved; 301-303 added. Scenario 160.
+
+## fms-fold3-german-2: FMS B-346 German original, Blauensteiner, II Parachute Corps in northern France 25 July-25 August 1944 (4 November 2026)
+
+- **Source:** FMS B-346 (`R833`, new; not previously a reference), German only, very faint scan (Fold3 pages 21-47; cover Höhne 12 January 1951).
+- **New claim:** `C8221` (corps commander reports at Elbeuf on the Seine, about 25 August 1944; 0.3; inferred date old none, new 1944-08-25, day illegible), parent blank. No new places.
+- **Corroborations (no confidence raised, FMS family):** `R833` appended to `C0745`, `C0746`, `C0747` (break-out of 19-20 August over the Dives toward Coudehard).
+- **Not entered:** uncertain readings (roadmap 304-305). Scenario 161.
+
+## fms-fold3-german-2: FMS B-101 English translation, Hitzfeld, LXVII Corps 26 January-21 March 1945 (4 November 2026)
+
+- **Source:** FMS B-101 (`R834`, new; not previously a reference), English translation only, no German original (Fold3 pages 62-131; index Höhne 19 September 1950).
+- **New claims (LXVII Corps, parent blank):** `C8222` Kronenburg 26 January (0.3, [?] reading; date set to the report's opening date, old none, new 1945-01-26), `C8223` Brück on the Ahr 7 March (0.5), `C8224` Rheinbrohl 10 March (0.5), `C8225` Altwied 12 March (0.5), `C8226` Neuwied about 19 March (0.3; inferred date old none, new 1945-03-19, day read 19 or 16).
+- **New places:** `PL3713` Kronenburg, `PL3714` Brück (Ahrbrück), `PL3715` Altwied, `PL3716` Rheinbrohl, `PL3717` Neuwied (Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R834` appended to `C1160` (Remagen bridgehead to LXVII Corps at 0100 on 7 March), `C1169` (272nd VGD), `C1167` (26th VGD) opposite the Remagen bridgehead.
+- **Not entered:** units without ids and uncertain command posts (roadmap 306-307). Strengths in the private notes only. Scenario 162.
+
+## fms-fold3-german-2: FMS B-309 English translation, Hitzfeld, LXVII Corps 22 March-19 April 1945 (4 November 2026)
+
+- **Source:** FMS B-309 (`R835`, new; not previously a reference), English translation only, no German original (Allendorf, 22 August 1946; Fold3 pages 91-131).
+- **New claims (parents blank):** LXVII Corps `C8227` Lich 27 March (0.5), `C8228` Ulrichstein 29 March (0.5), `C8229` Elgershausen 31 March (0.3, [?] reading; date set to the first day after the night arrival, old none, new 1945-03-31), `C8230` Gertenbach 2 April (0.5), `C8232` Steinthaleben about 11 April (0.3; inferred date old none, new 1945-04-11, typed 11.12.4), `C8233` Thale, battle ended 1915 on 19 April (0.5); Eleventh Army `C8231` Adelebsen 3 April (0.3).
+- **New places:** `PL3718`-`PL3724` (Lich, Ulrichstein, Elgershausen, Gertenbach, Adelebsen, Steinthaleben, Thale; Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R835` appended to `C1207` and `C1208` (Eleventh Army command 2-8 April).
+- **Not entered:** roadmap 308-310 (308 needs Scott's decision on B-414 rows C7949/C7959). Scenario 163.
+
+## fms-fold3-german-2: FMS B-236 German original, Sponheimer, LXVII Corps 7 June-30 October 1944 (4 November 2026)
+
+- **Source:** FMS B-236 (`R836`, new; not previously a reference), German only, written at Allendorf 21 October 1946 from memory without records (Fold3 pages 1-60).
+- **New claims (LXVII Corps, parent blank):** `C8234` Amiens 6 June (0.3; pre-invasion position dated 6 June as with B-240: date old none, new 1944-06-06, reason: campaign coverage), `C8235` Naours 7 June (0.5), `C8236` Canteleu 8 August (0.5), `C8237` Crécy-en-Ponthieu about 31 August (0.3; inferred date old none, new 1944-08-31), `C8238` Vlissingen 15 September (0.5), `C8239` Esschen 17 September (0.3; 17.9 against a 17.10 [?] reading), `C8240` Breda 5 October (0.5), `C8241` Zevenbergen 27 October (0.5), `C8242` Dordrecht 30 October (0.5).
+- **New places:** `PL3725` Naours, `PL3726` Canteleu, `PL3727` Crécy-en-Ponthieu (Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R836` appended to `C7274`, `C7081`, `C2164`, `C7321`, `C7364`.
+- **Not entered:** roadmap 311-312 (346th/348th reading, 17.10/17.9 date and 711th/719th figure in notes only). Scenario 164.
+
+## fms-fold3-german-2: FMS B-798 German original, Warning, LXVII Corps between the Scheldt and the Maas 15 September-25 November 1944 (4 November 2026)
+
+- **Source:** FMS B-798 (`R837`, new; not previously a reference), German only, Neustadt November 1947, covering memo 15 April 1948 (Fold3 pages 55-112; lessons items 1-2 on page 102 not captured; pages after 112 not checked).
+- **New claims (LXVII Corps, parent blank):** `C8243` Esschen 15 September (0.5), `C8244` Dordrecht 1 November (0.5, Püchler), `C8245` Rotterdam-Hillegersberg about 15 November (0.3, approximate date).
+- **New place:** `PL3728` Hillegersberg (Rotterdam) (Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R837` appended to `C2164`, `C2165`, `C7321`, `C8241`.
+- **Roadmap:** 311 updated with the B-798 command-post dates; 313-314 added. Scenario 165.
+
+## fms-fold3-german-2: FMS B-596 German original, Gerber, LXVII Corps spring 1944-15 September 1944 (4 November 2026)
+
+- **Source:** FMS B-596 (`R838`, new; not previously a reference), German only, undated (map stamp about 13 May 1946 [?]) (Fold3 pages 72-161).
+- **New claims (parents blank):** LXVII Corps command posts `C8246` Rouen about 20 August (0.3), `C8247` Clères 28 August, `C8248` Londinières 29 August, `C8249` Gamaches 31 August, `C8250` Abbeville 1 September, `C8251` east of Crécy 2 September, `C8252` Fressin 3 September, `C8253` Longuenesse 4 September, `C8254` Poperinge 5 September, `C8255` north of Roeselare 6 September (0.3), `C8256` Maldegem 7 September, `C8257` Oostburg 13 September (0.5 unless stated); `C8258` 711th Division at Becelaere and `C8259` 245th Division at Poperinge, 5 September (0.5).
+- **New places:** `PL3729`-`PL3736` (Clères, Londinières, Gamaches, Fressin, Longuenesse, Poperinge, Roeselare, Beselare; Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R838` appended to `C8234`, `C8235`, `C8236`, `C7274`, `C7081`, `C7299`, `C7300`.
+- **Conflict group:** `G064` (31 August: `C8249` Gamaches preferred, `C8237` Crécy alternate, old status preferred, reason: B-236 gives no day).
+- **Conflicts kept:** roadmap 315 (116th Panzer and 6th Parachute 13/17 June against 13/17 July; 85th Division 31 or 21 July [?]); not entered: roadmap 316. Scenario 166.
+
+## fms-fold3-german-2: FMS B-475 re-read, German original primary (von Zangen, Fifteenth Army 15 September-10 November 1944) (4 November 2026)
+
+- **Source:** B-475 is already `R771` (same Fold3 file, German read 31 October 2026); the German text (printed pp.1-54, Fold3 images 9-62) and annex map re-read in full as primary; the English translation was only spot-checked. No new reference (`R839` unused).
+- **Reference correction:** `R771` full_citation, old value "German typescript, no English translation; ... read on Fold3 (images 1-75; images 76 onward are B-476).", new value "German typescript (Fold3 images 1-75 ...) followed by an English translation (Fold3 images 76-127, only spot-checked ...); B-476 begins after image 127 ...". Reason: the re-read found the English translation on images 76-127.
+- **New claims (parents blank):** `C8260` LXVII Corps holding the Dintelsoord-Willemstad-Moerdijk bridgeheads, 7 November (0.5); `C8261` LXVII Corps last troops over the Moerdijk bridge, bridge blown, 9 November (0.5).
+- **Corroborations (no confidence raised, FMS family):** `R771` appended to `C8243`, `C7816`, `C8040`, `C2086`, `C7358`, and `C7811` (annex map label only).
+- **Map-label command posts** (Noordeloos, Almkerk, Geldermalsen): no new rows; existing `C2168` (Noordeloos, text p.48) and `C2169` (Geldermalsen, 0.3) unchanged; Almkerk cited on `C7811` without a raise.
+- **Open:** roadmap 317-318. **Tests:** scenario 167. Next free: `C8262`, `PL3737`, `R839`, `G065`, scenario 168, roadmap 319.
+
+## fms-fold3-german-2: pre-invasion dates allowed (4 November 2026)
+
+- **Decision (Scott, 4 November 2026):** pre-invasion data may be entered with real dates; the dataset may eventually cover the whole war.
+- **Validator:** `scripts/operations.py` old rule "every claim needs a CMH campaign streamer covering its date" (an effective 6 June 1944 floor), new rule: a streamer is required only from the first streamer date (6 June 1944); dates before 1 September 1939 are an error (sanity bound). README, HANDOFF and schema README updated.
+- **New operation:** `OP-PRE-INVASION` (umbrella, 1 September 1939-5 June 1944, derived).
+- **Re-dated rows (forced 6 June notes):**
+  - `C8212` (II Parachute Corps, Quintin): date old value 1944-06-06, new value 1944-05-05; operation_id old value OP-CAMP-NORMANDY, new value OP-PRE-INVASION; confidence 0.3 unchanged. Reason: B-240 has the move in early May; day inferred.
+  - `C8213` (3rd Parachute Division, Huelgoat) and `C8214` (5th Parachute Division, Rennes): date old value 1944-06-06, new value 1944-05-15; operation_id as above; confidence 0.3 unchanged. Reason: B-240 gives early or mid-May; day inferred.
+  - `C8234` (LXVII Corps, Amiens): date old value 1944-06-06, new value 1944-06-05; operation_id as above; confidence 0.3 unchanged. Reason: B-236 has the corps in position before 7 June, B-596 at Amiens from about January 1944; day inferred as the eve of the invasion.
+- **Not changed:** `C2060`-`C2068` (R761 armoured dawn positions on 6 June) are D-Day positions, not forced dates. **Tests:** scenario 168; scenario 164 expectation updated.
+
+
+## fms-fold3-german-2: run_checks exits non-zero on any failing step (4 November 2026)
+
+- **Fix:** the local verification script, old value `UnitLocationData-tools/run_checks.sh` (outside the repo; piped every step through `grep`/`tail`, so it exited 0 even when `validate.py` reported errors), new value `scripts/run_checks.sh` in the repo (`set -u -o pipefail`; each step's own exit status is recorded and any failure ends with `CHECKS FAILED: ...` and exit 1). Steps: validate, check_json_fields, semantic_tests, build --check, build_references --check, review_sample --check, check_coordinates, audit_command_location, audit_temporal_relationships, check_claim_ids (when origin/main is available). The tools copy is now a wrapper that calls it.
+- **Proof:** a temporary row dated 1938-05-15 (`C8214`) made validate, semantic_tests and build --check fail and the script exit 1; after reverting the row it prints `ALL CHECKS PASSED` and exits 0. No data changed.
+
+## fms-fold3-german-2: FMS B-249 German original, von Zangen, Fifteenth Army in northern France and Holland 28 August-10 November 1944 (4 November 2026)
+
+- **Source:** FMS B-249 (`R839`, new; not previously a reference, only named in the texts of `R771` and `R837`), German original read in full (Fold3 images 1-98), English translation (images 99-188) only spot-checked; signed 15 November 1945 [?]. Parts III-V were submitted separately as B-475 (`R771`).
+- **New claims (parents blank):** Fifteenth Army command posts `C8262` Tourcoing 28 August, `C8263` Wondelgem 4 September, `C8264` Middelburg 6 September; LXXXIX Corps `C8265` Aire-sur-la-Lys 1 September, `C8266` Schoondijke 16 September; LXXXVI Corps `C8267` Bernâtre 2 September, `C8268` Waregem 6 September, `C8269` Eeklo 8 September (0.3, [?] reading; map agrees); 59th Division `C8270` Béthune 2 September, `C8271` Oudenaarde 6 September; 712th Division `C8272` Avelgem 6 September; 70th Division `C8273` Gent 6 September, `C8274` 's-Heer Arendskerke about 20 October (0.3, inferred day). 0.5 unless stated.
+- **New places:** `PL3737`-`PL3744` (Tourcoing, Wondelgem, Aire-sur-la-Lys, Bernâtre, Waregem, Avelgem, Oudenaarde, Béthune; Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R839` appended to `C8237`, `C8256`, `C8257`, `C7310`, `C1809` (Dunkirk handed over 9 May 1945), `C1036`.
+- **Not entered as preferred:** Boulogne held "to about mid-November" (roadmap 319b). Sketch-map labels used only as support or at 0.3. No conflict group needed.
+- **Open:** roadmap 319-320. **Tests:** scenario 169. Next free: `C8275`, `PL3745`, `R840`, `G065`, scenario 170, roadmap 321.
+
+## fms-fold3-german-2: FMS B-508 German original, Lackner, 2nd Parachute Division east of the Rhine and in the Ruhr pocket 8 March-16 April 1945 (4 November 2026)
+
+- **Source:** FMS B-508 (`R840`, new; no earlier reference), German only (no English translation in the file), undated (review stamp 13 May 1947 [?]; index 17 March 1951); Fold3 viewer pages 11-32 read in full.
+- **New claims (2nd Parachute Division, parents blank):** `C8275` Wesel-Uerdingen sector about 9 March (0.3), `C8276` Ruhr mouth-Uerdingen 16 March, `C8277` north-east of Bottrop 29 March, `C8278` behind the Rhine-Herne canal at Essen 1 April, `C8279` south of the Ruhr Steele-Witten 10 April, `C8280` overrun at Hattingen-Hasslinghausen [?] 16 April (0.5 unless stated).
+- **New place:** `PL3745` Duisburg (Nominatim).
+- **Corroborations:** none; no existing row matches closely enough (roadmap 321). Map pages not used for rows.
+- **Open:** roadmap 321-322. **Tests:** scenario 170. Next free: `C8281`, `PL3746`, `R841`, `G065`, scenario 171, roadmap 323.
+
+## fms-fold3-german-2: FMS B-820 German original with English check, Wilke, 5th Parachute Division 6 June-24 July 1944 (4 November 2026)
+
+- **Source:** FMS B-820 (`R841`, new; no earlier reference), undated; German original (Fold3 images 13-20) primary, English translation (images 1-12) checked; German readings win, differences in the private notes.
+- **New claims (5th Parachute Division, parents blank, all 0.3):** `C8281` command post at Tressaint [?] near Dinan, sector St-Michel-St-Brieuc, 6 June; `C8282` staff leaves Brittany 18 June; `C8283` north-west of St-Lô about Marigny, 27 June (sketch map).
+- **New place:** `PL3746` Tressaint (Lanvallay) (Nominatim).
+- **Corroboration (no raise):** `R841` appended to `C0761` (Périers).
+- **Conflict kept:** `C8214` (B-240: Rennes, May) against Tressaint/Dinan (B-820); both rows kept, roadmap 323. No conflict group needed (different dates).
+- **Open:** roadmap 323-324. **Tests:** scenario 171. Next free: `C8284`, `PL3747`, `R842`, `G065`, scenario 172, roadmap 325.
+
+
+## fms-fold3-german-2: 5th Parachute Division Rennes and Dinan as a move (4 November 2026)
+
+- Scott decided that `C8214` (Rennes, 15 May 1944, B-240) and `C8281` (Tressaint near Dinan, 6 June 1944, B-820) are successive positions, a move, not a conflict. Notes on both rows updated; roadmap 323 marked resolved (old: conflict; new: move; reason: Scott's decision). No values, confidences or IDs changed.
+
+## fms-fold3-german-2: FMS B-509 logged as out of scope (4 November 2026)
+
+- FMS B-509 (Bülowius, II Fliegerkorps) is air command, not ground data, and no fitting unit id exists: no rows, no reference; roadmap 325. Next free roadmap: 326.
+
+## fms-fold3-german-2: unit domain (air, naval) and FMS B-509 II Fliegerkorps (4 November 2026)
+
+- **Scott's decision:** collect air units and ships wherever sources give them; not used yet.
+- **Schema:** `data/units.csv` gains a last column `domain` (old value: no column; new value: blank = ground, or `air` / `naval`; reason: keep non-ground units apart). Vocabulary `domain`; validator checks the value. `scripts/build.py` leaves air and naval units and their claims out of every main output and writes them to `build/other_domains/claims.csv` and `build/other_domains/units.csv`; `build/units.csv` keeps its old columns. All existing units are blank (ground).
+- **B-509 (`R842`, new):** unit `GER-FLK-002C` II Fliegerkorps (domain air); `C8284` headquarters Compiègne and `C8285` advanced command post St. Piat [?], both 6 June 1944 at 0.3 (old value: no rows; new value: 6 June; reason: the corps operated 6-28 June, no day given); places `PL3747`-`PL3748`; claim-key exception for the pair. Roadmap 325 resolved.
+- **Backlog:** roadmap 326 lists air and naval units found in earlier notes (not entered). **Tests:** scenario 172. Next free: `C8286`, `PL3749`, `R843`, `G065`, scenario 173, roadmap 327.
+
+## fms-fold3-german-2: flak domain and zero-claim places decided (4 November 2026)
+
+- **Decisions (Scott, 4 November 2026), docs only, no data changed:** flak units are domain ground (roadmap 326 flak line: old value "domain to decide, air or ground", new value "domain ground"; reason: Scott's decision); places with no claims (such as `PL3747` Compiègne and `PL3748` Saint-Piat, used only by air claims) stay in `build/places.*` (old value: question whether to hide them; new value: kept; reason: a place about which no claim is made is acceptable). `schema/README.md` (domain paragraph) and roadmap 326 updated.
+
+## fms-fold3-german-2: FMS B-023 German original with English check, Heilmann, 5th Parachute Division in the Ardennes 1 December 1944-12 January 1945 (4 November 2026)
+
+- **Source:** FMS B-023 (`R843`, new), German original (Fold3 images 62-117) read in full as primary, English translation (images 1-61) checked against it; undated, German index sheet 20 July 1950 [?]. The English garbles several facts (15 for 16 December, Martelange for Harlange, Regiment 15 for 13, 50 casualties for 50 dead); the German is followed.
+- **New claims (parents blank; 0.5 unless stated):** 5th Parachute Division `C8286` Bitburg-Oberweis-Sülm area end of November (0.3; old value none, new value 30 November, reason: only "end of November"), `C8287` map exercise at Sülm 13 December (0.3), `C8288` Regiment 14 at Putscheid 16 December, `C8289` Regiment 15 at the Bourscheid crossing 17 December, `C8290` Hoscheid 18 December, `C8291` command post Weiler 19 December, `C8292` Nothum crossroads and `C8293` Wiltz taken 20 December (claim-key exception), `C8294` command post Berlé 21 December, `C8295` Martelange reported taken 21 December, `C8296` forward command post Losange 23 December, `C8297` front Lutrebois-Harlange-Bavigne 27 December, `C8298` command post north of Doncols 28 December, `C8299` Harlange, Villers-la-Bonne-Eau and Lutremange given up 7 January, `C8300` squeezed round Doncols and `C8301` artillery at Derenbach 8 January; LXXXV Corps `C8302` command post near Dodenburg early December (0.3; old value none, new value 5 December, reason: only "early December"); Panzer Lehr Division `C8303` Consthum 17 December, `C8304` Lutremange 22 December, `C8305` staff at Losange 23 December; 26th Volksgrenadier Division `C8306` commander at Hompré 22 December (0.3); 1st SS Panzer Division `C8307` Lutremange-Villers-la-Bonne-Eau about 29 December (0.3; old value none, new value 29 December, reason: placed only between 28 December and the attack of `C7154`), `C8308` withdrawn 6 January; US 28th Infantry Division `C8309` opposite Vianden 15 December (0.3, German intelligence).
+- **New places:** `PL3749`-`PL3763` (Sülm, Putscheid, Hoscheid, Weiler, Nothum, Berlé, Losange, Villers-la-Bonne-Eau, Doncols, Harlange, Derenbach, Dodenburg, Consthum, Lutremange, Hompré; Nominatim).
+- **Corroborations:** `R843` appended to `C0997`, `C0982`, `C7178`, `C7208`, `C7154`, `C0557`, `C4899` (confidence unchanged: no exact day or place in the manuscript, map row, or already at the rubric level) and `C7137` (26th Volksgrenadier Division closing the Bastogne ring, 22 December): confidence old value 0.5, new value 0.7, reason: an independent family (FMS) agrees with the captured German records (`R799`) on the day and the approximate place.
+- **Strengths in notes only** (fighting value IV on 1 December; about 2,000 men of the fighting reserve at Trier; 30 assault guns, about half ready; 50 dead from the Westwall to Bastogne). **Open:** roadmap 327-328. **Tests:** scenario 173. Next free: `C8310`, `PL3764`, `R844`, `G065`, scenario 174, roadmap 329.
+
+## fms-fold3-german-2: small units traced to a division; B-023 regiments, engineer battalion and assault-gun brigade (4 November 2026)
+
+- **Rule (Scott, 4 November 2026):** units down to company level are recorded only when a source traces them to a parent division or higher; untraceable small units are left out; divisions and above stay the focus. Documented in HANDOFF section 3 (rule 17) and `schema/README.md`. No validator change was needed: `regiment/battle_group` and `battalion` were already allowed. The claim `parent_unit_id` stays blank (standing rule); the link is the units.csv organic parent plus a relation.
+- **New units:** `GER-FJR-013`, `GER-FJR-014`, `GER-FJR-015` (regiments), `GER-FJPI-005` (Fallschirm-Pionier-Bataillon 5), all with units.csv `parent_unit_id` old value blank (new rows), new value `GER-FJ-005D`, reason: B-023 order of battle (German p.1-2); `GER-STUG-011B` Sturmgeschütz-Brigade 11 (brigade, Army; no organic parent, reason: an army assault-gun brigade attached for the offensive).
+- **Relations:** `CR1067`-`CR1070` organic and `CR1071` attached to `GER-FJ-005D`; start = first claim (basis claim_date, inferred), open at the last claim; links observed_during.
+- **Claims (R843, blank parents):** `C8310`-`C8313` Regiment 14 (Putscheid, Nothum, Lutrebois-Villers-la-Bonne-Eau, Doncols), `C8314`-`C8315` Regiment 15 (Bourscheid, Harlange), `C8316` Regiment 13 (Tintange-Boulaide-Surre), `C8317`-`C8319` engineers (Vianden, Wiltz, Sainlez about 26 December, 0.3; old value none, new value 26 December, reason: only "the following days" after 25 December), `C8320`-`C8321` assault guns (ford near Vianden, Martelange). The division rows stay. Scenario 174.
+
+## fms-fold3-german-2: empty-places warning removed (4 November 2026)
+
+- `scripts/validate.py`: old behaviour, a warning "place ... has no claim: remove it or add the claim" for every place with no claim; new behaviour, no warning; reason: Scott accepts places with no claims (4 November 2026). The coord_reference_id check for places with claims is unchanged. No data changed.
+
+## fms-fold3-german-2: FMS B-361 German original, Blumentritt, Armee Blumentritt 10 April-31 May 1945 (4 November 2026)
+
+- **Source:** FMS B-361 (`R844`, new), German original (Fold3 images 35-79) read in full; the English translation (images 1-34) was **not** checked. Allendorf, February 1947.
+- **Headquarters sequence (`GER-ARMY-BLUMT`, sketch 4 and text):** `C8322` Celle 10 April (0.5), `C8323` camp east of Soltau about 12 April (0.3; old value none, new value 12 April, reason: "11 or 12 April"), `C8324` Nutzfelde [?] about 14 April (0.3; new value 14 April, reason: between "to about 13" and "to about 15 April"), `C8325` Gülzow [?] about 16 April to 23 April (0.3; new value 16 April, reason: follows No. 3), No. 5 Bad Bramstedt area from 24 April = existing `C7980` (R844 appended), `C8326` Hohenaspe from 3 May (0.5), `C8327` capitulation on the battlefield 5 May (0.5), `C8328` Wentorf near Bergedorf about 10 May (0.3, approximate day). The dissolution of the staff at Wentorf on 31 May is not a row: no campaign streamer covers the date (roadmap 330).
+- **Units under the army:** new unit `GER-MARI-002D` 2nd Marine Infantry Division (domain ground, branch Navy) with `C8329` on the Aller at Verden 10 April (0.5); `C8330` 245th Infantry Division counter-attack towards Lauenburg 29 April (0.5). Subordination (2nd Marine Division, Korps Ems with the 15th Panzergrenadier Division, Stäbe Holste and Witthöft, XXXIX Panzer Corps with Panzer Division Clausewitz, II Parachute Corps with the 8th Parachute Division, the 245th Division as OB Nordwest reserve) is recorded in the claim notes and roadmap 330, not as relations (single source, parents blank).
+- **New places:** `PL3764`-`PL3767` (Nutzfelde, Gülzow, Hohenaspe, Wentorf bei Hamburg; Nominatim).
+- **Corroborations (no raises, FMS family or no exact day):** `R844` appended to `C7976`, `C7977`, `C1263`, `C7980`, `C7981`.
+- **Open:** roadmap 329-330. **Tests:** scenario 175. Next free: `C8331`, `PL3768`, `R845`, `CR1072`, `G065`, scenario 176, roadmap 331.
+
+## fms-fold3-german-2: echelon company added (4 November 2026)
+
+- `schema/vocabularies.json`: echelon values old value (army_group ... battalion, other, air/naval values), new value adds `company`; also added to `echelon_rank.display_order` and `echelon_id_letter.no_letter` (rank 0 was already listed). Reason: Scott approved on 4 November 2026 recording companies traced to a parent division or higher (small-units rule). `schema/README.md` and HANDOFF rule 17 updated. No data changed.
+
+## fms-fold3-german-2: post-surrender umbrella OP-POST-SURRENDER; Blumentritt staff dissolution (4 November 2026)
+
+- **New operation:** `OP-POST-SURRENDER` (umbrella, 12 May-31 December 1945, derived; end a working bound: old value none, new value 1945-12-31, reason: no source defines an end). Reason: Scott approved on 4 November 2026 a holding umbrella like `OP-PRE-INVASION` for rows after the last CMH streamer (Central Europe, ends 11 May 1945).
+- **Validator (`scripts/operations.py`):** old behaviour, "no CMH campaign streamer covers the date" for any date after 11 May 1945; new behaviour, a claim dated after the last streamer ends needs no campaign (as before 6 June 1944). `schema/README.md` (op_type) and HANDOFF updated.
+- **New claim:** `C8331` Armee Blumentritt staff dissolved at Wentorf, 31 May 1945 (`R844`, German p.21; 0.5; disestablished true; `OP-POST-SURRENDER`); old value none (left out for lack of a campaign, roadmap 330), new value this claim. Scenario 176. Next free: `C8332`.
+
+## fms-fold3-german-2: Armee Blumentritt subordinations from B-361; roadmap 330 resolved (4 November 2026)
+
+- **Decision (Scott, 4 November 2026, "Yes to all"):** add the units under Armee Blumentritt as command relations even on one source, marked single-source, with the dates the source gives.
+- **New relations (old value: none; each note says single source):** `CR1072` `GER-MARI-002D` -> `GER-ARMY-BLUMT` unspecified_subordination from 10 April 1945 (narrative), open at the last claim (link `C8329`, asserts_start); `CR1073` `GER-PZ-039C` -> `GER-ARMY-BLUMT` operational_control 15-17 April (start narrative; end inferred, reason: the handover to AOK 12 follows the 16/17 April thrust; link `C7976`); `CR1074` `GER-PZ-CLAUS` -> `GER-PZ-039C` operational_control 15-17 April (same; link `C1263`; CMH `CR0840` kept); `CR1075` `GER-INF-245D` -> `GER-OBNW-000H` reserve from 28 April (claim_date: the text gives no start), end unknown (links `C7981`, `C8330`; Lexikon `CR0833` kept).
+- **Not written** (no unit row, or contradicted by dataset rows): listed in `docs/deferred_relations.md`.
+- **Roadmap:** 330 resolved; 329(a) resolved (Celle rows kept). Scenario 177. Next free: `C8332`, `PL3768`, `R845`, `CR1076`, `G065`, scenario 178, roadmap 331.
+
+## fms-fold3-german-2: FMS B-283 German original (Blumentritt, March 1946) as R845 (4 November 2026)
+
+- **Source:** `R845` FMS B-283, Blumentritt, Evaluation of German Command and Troops (questionnaire answers, March 1946, from memory). German original primary (images 132-270 read in full); **the English translation was not checked, and the closing essay (images 271-289) was only skimmed (no locations)**. Same FMS family as all other manuscripts and the same author as B-361 (`R844`): no confidence raises.
+- **New units (old value: none):** `GER-LFL-003A` Luftflotte 3 (domain air), `GER-MGW-000H` Naval Group Command West (domain naval).
+- **New claims (old value: none; parents blank):** `C8332` Luftflotte 3 and `C8333` Marinegruppe West at Paris, 6 June 1944 (0.5); `C8334` Armeegruppe G north of Toulouse (?) 6 June (0.3, representative point); `C8335` 1st SS Panzer Division near Brussels 6 June (0.3, alternate in new group `G065`; `C2062` conflict_group_id old blank, new `G065`, stays preferred); `C8336` OB West to Verzy about 18 August (0.5); `C8337` OB West to Habay end of August (0.3; date 28 August inferred, reason "end of August"); `C8338` XII SS Corps headquarters north-east of Erkelenz, Blumentritt takes over 21 October (0.3); `C8339` 176th Division staff at Effeld and `C8340` 183rd Volksgrenadier Division staff at Rurich, mid-November (0.3; date 16 November inferred from the battle start); `C8341` OB West at Ziegenberg, conference of 12 December 1944 (0.5); `C8342` First Parachute Army staff north of Dorsten (Wulfen) 28/29 March 1945 (0.3).
+- **Places:** `PL3768` Verzy, `PL3769` Rurich, `PL3770` Wulfen (Nominatim).
+- **Supporting citations (`R845` appended, confidence unchanged, each note gives old and new reference_ids):** `C0011`, `C0013`, `C0129`, `C0714`, `C0765`, `C0822`, `C2276`, `C7120`, `C7946`, `C7947`, `C7963`, `C7964`, `C7971`, `C8037`, `C8155`, `C8171`, `C8322`, `C8323`, `C8325`, `C8326`, `C8328`, `C8329`, `C8331`.
+- **Roadmap:** 331 (conflicts, open), 332 (facts not entered, open). Scenario 178 (scenario 172 now also expects C8332 and C8333 among the air/naval rows). Next free: `C8343`, `PL3771`, `R846`, `CR1076`, `G066`, scenario 179, roadmap 333.
+
+## fms-fold3-german-2: FMS A-969 German original (Meindl, II Parachute Corps 26 July-5 August 1944) as R846 (4 November 2026)
+
+- **Source:** `R846` FMS A-969, Meindl's answers of 5 January 1946 to the Theater Historian's fourteen questions. German original read in full (images 8-17), English sampled as a check. Same FMS family as all other manuscripts: no confidence raises. The text gives almost no days.
+- **New claims (old value: none; parents blank; 0.3, representative points, dates inferred from the questions, reason in each note):** `C8343` II Parachute Corps withdrawal begins from the Saint-Lô front, 26 July 1944 (`OP-COBRA`); `C8344` II Parachute Corps defends Vire, early August (date 2 August from the question on the British attack; `OP-BLUECOAT`).
+- **Supporting citation:** `R846` appended to `C0763` (352nd Division at Saint-Lô under the corps); reference_ids old `R592;R830;R001`, new `R592;R830;R846;R001`; confidence unchanged.
+- **Roadmap:** 333 (facts not entered, open). Scenario 179. Next free: `C8345`, `PL3771`, `R847`, `CR1076`, `G066`, scenario 180, roadmap 334.
+
+## fms-fold3-german-2: FMS A-859 (Meindl, letter of 28 February 1946, English only) as R847 (4 November 2026)
+
+- **Source:** `R847` FMS A-859, Meindl's two-page letter; **no German original on the fiche** (only the German cover sheet), so the English translation is the only text. Same FMS family: no confidence raises.
+- **New claim (old value: none; parent blank):** `C8345` 3rd Parachute Division destroyed in the Meuse area, 0.3, destroyed true, representative point Namur (50 km); date 3 September 1944 inferred (old value none, new value 1944-09-03, reason: the month is hidden in the viewer, August or September; the letter covers 21 August-3 September).
+- **Supporting citations (`R847` appended, confidence unchanged):** `C8221` (corps east of the Seine after 21 August), `C7689` (corps to Köln-Wahn to reorganise).
+- Scenario 180. Next free: `C8346`, `PL3771`, `R848`, `CR1076`, `G066`, scenario 181, roadmap 334.
+
+## fms-fold3-german-2: ETHINT-43 (Lüttwitz interview, XLVII Panzer Corps 24 October-5 December 1944, English only) as R848 (4 November 2026)
+
+- **Source:** `R848` ETHINT-43, interview of 24 November 1945 written up in English; no German original; same family and author as B-367 (`R824`). Rows capped at 0.5 (interview from memory).
+- **New claims (old value: none; parents blank; 0.5, representative points):** `C8346` XLVII Panzer Corps takes over the Geilenkirchen sector from XII SS Corps, 19 November 1944; `C8347` XII SS Corps takes the sector back to Linnich when XLVII Panzer Corps leaves on 5 December 1944 (`R848;R845`: B-283 agrees without a day).
+- **Supporting citations (`R848` appended, confidence unchanged):** `C0959`, `C2129`, `C7741`, `C8151`, `C8155`, `C8160`, `C8166`, `C8171`.
+- **Roadmap:** 334 (facts not entered, open). Scenario 181. Next free: `C8348`, `PL3771`, `R849`, `CR1076`, `G066`, scenario 182, roadmap 335.
+
+## fms-fold3-german-2: independent units of regiment size or larger (Scott, 4 November 2026, 08:53)
+
+- **Rule (HANDOFF rule 17, schema/README):** old: every unit below division level needed a parent traced to a division or higher; new: independent units of regiment size or larger and Kampfgruppen get their own entries even with no parent; units smaller than a regiment still need a traced parent (Heavy Panzer Battalion 506 stays out).
+- **New units (old value: none):** `GER-FJR-009` Fallschirmjäger-Regiment 9 (units.csv parent `GER-FJ-003D`, organic relation `CR1076`, link `C8348`); `GER-KG-KATZM` Kampfgruppe Katzmann, `GER-KG-WALTH` Kampfgruppe Walther, `GER-KG-HOBE` Kampfgruppe Hobe, `GER-COR-EMS` Korps Ems, `GER-WK-XI` stellv. Generalkommando XI (parents blank).
+- **New claims (old value: none; claim parents blank):** `C8348` FJR 9 at Vire early August 1944 (0.3, `R846`); `C8349` Kampfgruppe Katzmann to II Parachute Corps near Bergen, early October 1944 (0.3, map, `R813`); `C8350` Kampfgruppe Walther cuts the road at Veghel 22 September 1944 (0.5, `R784`); `C8351` Kampfgruppe Walther headquarters Venray 27 September 1944 (0.5, `R784`); `C8352` Kampfgruppe Hobe formed south of Trier 27 February 1945 (0.3, `R776`); `C8353` Korps Ems on the Lower Weser 10 April 1945 (0.3, `R844;R845`); `C8354` stellv. Generalkommando XI at Hannover 9 April 1945 (0.3, `R845`).
+- **Sweep of the private notes for other independent regiments and Kampfgruppen:** candidates with dated places still to enter are listed in roadmap 335. Left out: Regiment "Crosan" (uncertain name), Stäbe Holste/Nordküste/Witthöft (no dated place).
+- **Roadmap:** 332-334 annotated; 335 added. Scenario 182. Next free: `C8355`, `PL3771`, `R849`, `CR1077`, `G066`, scenario 183, roadmap 336.
+
+## fms-fold3-german-2: FMS A-898 German original (Heyking, 6th Fallschirmjäger Division, Seine to Mons 25 August-3 September 1944) as R849 (4 November 2026)
+
+- **Source:** `R849` FMS A-898, Part II, Oberursel February 1946. German original primary (images 25-52 read in full), English as a check; **the maps on images 53-65 were not transcribed**.
+- **New unit (old value: none):** `GER-FJR-LEHR` Fallschirm-Lehr-Regiment (regiment; parent blank under Scott's independent-units rule).
+- **New claims (old value: none; parents blank):** 6th Fallschirmjäger Division `C8355` south of Longuesse [?] 25 August (0.3), `C8356` Seine line at Meulan 26 August, `C8357` command post Us 28 August, `C8358` command post Mello 30 August, `C8359` Compiègne 31 August, `C8360` Noyon 1 September, `C8361` command post Artres 2 September (0.5 each), `C8362` commander captured south of Mons 3 September (0.3); Fallschirm-Lehr-Regiment `C8363` Meulan 26 August, `C8364` Noyon 1 September, `C8365` Artres 2 September (0.5).
+- **Places:** `PL3771` Longuesse, `PL3772` Us, `PL3773` Mello, `PL3774` Artres, `PL3775` Meulan-en-Yvelines (Nominatim).
+- **Roadmap:** 336. Scenario 183. Next free: `C8366`, `PL3776`, `R850`, `CR1077`, `G066`, scenario 184, roadmap 337.
+
+## fms-fold3-german-2: roadmap 335 Kampfgruppen (4 November 2026)
+
+- **Rule:** Scott's independent-units rule of 4 November 2026 08:53 (Kampfgruppen get their own entries, parents blank).
+- **New units (old value: none):** `GER-KG-KRAG`, `GER-KG-MALMANN`, `GER-KG-WOLPERT`, `GER-KG-DEWALD`, `GER-KG-KUNKEL`, `GER-KG-HAMM`, `GER-KG-PUTLOS`, `GER-KG-BACHERER`, `GER-KG-GROLLMANN`, `GER-KG-BAYER`.
+- **New claims (old value: none):** `C8366` Krag Salmchâteau 23 Dec 1944 (0.5, `R388`); `C8367` Malmann near Lozon 26 Jun 1944 (0.3, map, `R841`); `C8368` Wolpert to Huizen and `C8369` Dewald to Eemdijk from about 22 Apr 1945 (0.3, `R810`); `C8370` Kunkel takes Sibret 21 Dec 1944 (0.5, `R385`); `C8371` Hamm station about 3 Apr 1945 (0.3, `R822`); `C8372` Putlos from Uelzen about 16 Apr 1945 (0.3, `R814`); `C8373` Bacherer at Pontaubault 1 Aug 1944 (0.5, `R784`); `C8374` Grollmann at Wanlo about 29 Jan 1945 (0.5, `R791`); `C8375` Bayer attacks Hotton 21 Dec 1944 (0.5, `R695`).
+- **Places:** `PL3776` Salmchâteau, `PL3777` Huizen, `PL3778` Eemdijk, `PL3779` Wanlo.
+- **Not entered (11, reasons in roadmap 335):** Hellmich, Plocher, von Mühlen, Degener, Fuchs, Runge, Lutze, Keil, Fink, Knaust, Koenig.
+- Roadmap 335 resolved. Scenario 184. Next free: `C8376`, `PL3780`, `R850`, `CR1077`, `G066`, scenario 185, roadmap 337.
+
+## fms-fold3-german-2: FMS A-939 German original (Lüttwitz, XLVII Panzer Corps in the Ardennes, 15 December 1944-20 January 1945) as R850 (4 November 2026)
+
+- **Source:** `R850` FMS A-939; German original primary (text images 7-33, correction sheet image 34, sketches 35-46, read in full); English (images 47-76) spot-checked only. For the January withdrawal the corrected German list (p.34, Oberursel March 1946) is used over the uncorrected English list.
+- **New claims (old value none, new value the row; reasons in each row's notes):** `C8376` XLVII Panzer Corps CP near Karlshausen 16 Dec (0.3, representative point); `C8377` 26th VGD takes Hosingen 17 Dec; `C8378` 2nd Panzer at Allerborn 18 Dec; `C8379` Panzer Lehr takes Neffe 19 Dec; `C8380` Kampfgruppe Kunkel takes Sibret 20 Dec (alternate in new `G066`); `C8381` 2nd Panzer at Hargimont 22 Dec; `C8382` Panzer Lehr at Ciergnon 24 Dec; `C8383` Führer-Begleit-Brigade attack on Sibret repulsed 28 Dec; `C8384` corps CP Engreux on the 28 Dec sketch (0.3, map); `C8385` corps line Achouffe-Mabompré-Noville 14/15 Jan (0.3, representative point, corrected list); `C8386` 15th Panzergrenadier Division assembles Steinbach-Limerle 14 Jan (corrected list only). Others 0.5.
+- **Changed:** `C8370` conflict_group_id old blank, new `G066`, reason: A-939 dates Sibret one day earlier; Cole stays preferred.
+- **Citations (no confidence raises; all FMS manuscripts are one source family):** `R850` appended to `C0981`, `C0994`, `C0995`, `C2180`, `C7146`, `C7136`, `C7148`, `C7152`, `C2181`, `C7137`, `C2185`, `C7149`, `C7150`, `C7147`, `C7138`, `C2189`, `C1788`, `C7153`, `C1093`.
+- **Places:** `PL3780` Engreux, `PL3781` Neffe, `PL3782` Hargimont, `PL3783` Ciergnon, `PL3784` Mabompré (Nominatim, `R002`).
+- **Independent units:** Führer-Begleit-Brigade (existing `GER-PG-FUEBE`) gets `C8383`; Führer-Grenadier-Brigade only planned, not entered; Volkswerfer brigade and Volksartillerie-Korps unnumbered, not entered (roadmap 337).
+- Scenario 185. Next free: `C8387`, `PL3785`, `R851`, `CR1077`, `G067`, scenario 186, roadmap 338.
+- Scenario 114 expectation updated: `C7136` and `C2181` reference_ids now include `R850` (old lists without it), reason: A-939 citation.
+
+## fms-fold3-german-2: FMS A-940 German original (Lüttwitz, answers on XLVII Panzer Corps in the Ardennes, 27 February 1946) as R851 (4 November 2026)
+
+- **Source:** `R851` FMS A-940, answers to the Historical Division questionnaire of 11 February 1946; German original (images 2-47) read in full as primary; English (48-75) checked. Same author as A-939 (`R850`): one source family, no raises.
+- **New units (old value none):** `GER-GR-078` Grenadier-Regiment 78, parent `GER-VG-026D` (organic relation `CR1077`), under the small-units rule; `GER-ARMY-LUETT` Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944), blank parent under the independent-units rule.
+- **New claims (old value none; reasons in each row):** `C8387` Regiment 78 breaks Hosingen 17 Dec (0.5); `C8388` 2nd Panzer takes Bande and sets up its CP 23 Dec (0.5); `C8389`/`C8390` Armeegruppe Lüttwitz formed 30 Dec and dissolved 31 Dec (0.3, representative point at Bertogne from the sketch); `C8391` corps CP Helzingen (Hachiville) 14-17 Jan and `C8392` Breitfeld 17-21 Jan (0.3, sketch V).
+- **Citations (no raises):** `R851` appended to `C8377`, `C0981`, `C7149`, `C8382`, `C7151`, `C7153`, `C8386`, `C8385`.
+- **Places:** `PL3785` Bande, `PL3786` Hachiville (Helzingen), `PL3787` Breitfeld (Nominatim, `R002`).
+- Not entered: roadmap 338 (Steinbach CP 9-14 January uncertain reading). Scenario 186. Next free: `C8393`, `PL3788`, `R852`, `CR1078`, `G067`, scenario 187, roadmap 339.
+
+## fms-fold3-german-2: FMS B-410 German original (Ulms, XII SS Corps 26 January-4 March 1945) as R852 (4 November 2026)
+
+- **Source:** `R852` FMS B-410, written at Allendorf 7 March 1947 by the corps chief of staff; German original (images 61-120) read in full as primary; English spot-checked. One FMS family with B-812 (`R821`): no raises. Strengths recorded in the private notes only.
+- **New unit (old value none):** `GER-POLR-MGLAD` Polizei-Regiment Mönchengladbach, blank parent, under the independent-units rule (dated place 27 February); branch Army because the vocabulary has no police value.
+- **New claims (old value none; reasons in each row):** corps command posts `C8393` Mönchengladbach night 27/28 Feb (alternate in new `G067`), `C8394` west of Ossum-Bösinghoven 1 Mar, `C8395` north-west edge of Krefeld 2 Mar, `C8396` Lintorf after crossing the Rhine at Duisburg 3 Mar; `C8397` 176th Division CP north-west of Neersen 28 Feb, `C8398` north of Anrath 1 Mar, `C8399` shattered at Neersen-St. Tönis 2 Mar; `C8400` 183rd VGD at Mönchengladbach 28 Feb; `C8401` Panzer Lehr tank battle Wickrath-Rheydt 28 Feb; `C8402` 338th Division to Neuss 1 Mar; `C8403` Polizei-Regiment garrison of Mönchengladbach 27 Feb. All 0.5.
+- **Changed:** `C8095` conflict_group_id old blank, new `G067`, reason: B-410 gives Mönchengladbach for the same night; B-812 stays preferred. `C8100` context note only (attack did not take place per B-410).
+- **Citations (no raises):** `R852` appended to `C8020`, `C8080`, `C8094`, `C8083`, `C8090`, `C1153`, `C8096`, `C8097`, `C8098`, `C8099`, `C7530`.
+- **Places:** `PL3788` Bösinghoven, `PL3789` Lintorf, `PL3790` Neersen (Nominatim, `R002`).
+- Roadmap 339; scenario 187. Next free: `C8404`, `PL3791`, `R853`, `CR1078`, `G068`, scenario 188, roadmap 340.
+
+## fms-fold3-german-2: FMS B-541 German original (Schimpf, 3rd Fallschirmjäger Division January-July 1944) as R853 (4 November 2026)
+
+- **Source:** `R853` FMS B-541, written at Allendorf 22 April 1947 by the division commander from memory; German original (images 1-46, text, Pemsel comment, Skizzen 1-4) read in full as primary; English (images 47-80) spot-read. The English p.16 "11 June" for the Saint-Lô offensive is a mistranslation of 11.7.; the German is used. One FMS family: no raise from FMS alone.
+- **New units (old value none; small-units rule, traced to the division; claim parents blank):** `GER-FJR-005`, `GER-FJR-008`, `GER-FJPI-003`, `GER-FJFLAK-003` (flak is ground), `GER-FJPZJ-003`, `GER-FJNA-003`; organic relations `CR1078`-`CR1083`. `CR1076` (`GER-FJR-009`) valid_from old value 1944-08-02, new value 1944-05-15, reason: earlier claims added (first claim date, inferred).
+- **New claims (old value none; reasons in each row):** division `C8404` staff at Joinville mid-January 1944 (date inferred from "early January"), `C8405` move to Huelgoat 28 January, `C8406` staff moved 2 km east of Condé-sur-Vire after the air attack of 16 June, `C8410` Saint-Georges-d'Elle penetration 11 July; regiments 19 June `C8407` Regiment 8 right (Lamberville, sketch, 0.3), `C8408` Regiment 5 centre (Bérigny, 0.5), `C8409` Regiment 9 left (south of Couvains, sketch, 0.3); `C8411` Regiment 8 relieves Regiment 9 15-17 July (place inferred, 0.3); Skizze 1 Brittany billets (date inferred 1944-05-15 inside 28 January-8 June, 0.3) `C8412` Regiment 8 Sizun, `C8413` Regiment 9 Daoulas, `C8414` anti-tank battalion Landerneau, `C8415` signal battalion Berrien, `C8416` flak battalion Brennilis, `C8417` engineer battalion Châteauneuf-du-Faou.
+- **Citations:** `R853` appended to `C8213`, `C0065`, `C2072`, `C0801`, `C0804` (no change of confidence) and `C7070` (confidence old value 0.5, new value 0.7, reason: corroboration rule, FMS agrees with the NARA captured records on the La Chapelle-du-Fest command post).
+- **Places:** `PL3791` Joinville, `PL3792` Couvains, `PL3793` Saint-Georges-d'Elle, `PL3794` Sizun, `PL3795` Daoulas, `PL3796` Landerneau, `PL3797` Berrien, `PL3798` Brennilis, `PL3799` Châteauneuf-du-Faou (Nominatim, `R002`).
+- Roadmap 340; scenario 188. Next free: `C8418`, `PL3800`, `R854`, `CR1084`, `G068`, scenario 189, roadmap 341.
+
+## fms-fold3-german-2: FMS B-673 German original (Lüttwitz, XLVII Panzer Corps in Normandy 11 June-27 July 1944) as R854 (4 November 2026)
+
+- **Source:** `R854` FMS B-673 (6 text pages plus the Pemsel comment), written in 1947 by the then commander of the 2nd Panzer Division as a stand-in for the corps staff; German original (images 1-12) read in full as primary, English (images 13-24) spot-checked; the Batch 3 chronology supersedes the rough first notes. One FMS family: no raises.
+- **Units:** `GER-INF-276D` and `GER-INF-326D` record_status old value placeholder, new value active; reason: dated places in B-673. The text's "326. V.G.D." is entered under the 326th Infantry Division (hindsight name).
+- **New claims (old value none; reasons in each row):** corps `C8418` command post Gaillon end of May (date inferred, 0.3), `C8419` Pontécoulant 11 June (0.5), `C8420` Saint-Jean-le-Blanc 15 June (0.5, alternate in new `G068`), `C8421` relieved by LXXIV Corps and moved south of Saint-Lô 27 July (0.3); `C8422` 2nd Panzer Division reconnaissance battalion to the Caumont heights 11 June (0.5); `C8423` 2nd Panzer Division to I SS Panzer Corps, Caen area 21 July (0.3); `C8424` 326th Division takes over at Caumont 21 July (place inferred, 0.3); `C8425` 116th Panzer Division stays at Beauvais 9 June (0.5); `C8426` 276th Division relieves Panzer Lehr at Hottot 19 June (0.5); `C8427` Panzer Lehr relief complete 25 June (0.3).
+- **Changed:** `C2203` conflict_group_id old blank, new `G068`, reason: B-673 puts the corps HQ at Saint-Jean-le-Blanc the same day; `C2203` stays preferred.
+- **Citations (no raises):** `R854` appended to `C2068`, `C0064`, `C0093`, `C0771`, `C2192`, `C7236`.
+- **Places:** `PL3800` Gaillon, `PL3801` Saint-Jean-le-Blanc, `PL3802` Beauvais, `PL3803` Hottot-les-Bagues (Nominatim, `R002`).
+- Roadmap 341; scenario 189. Next free: `C8428`, `PL3804`, `R855`, `CR1084`, `G069`, scenario 190, roadmap 342.
+
+## fms-fold3-german-2: G068 correction (map rows never outrank text rows) (4 November 2026)
+
+- `C8420` (B-673 text, XLVII Panzer Corps HQ Saint-Jean-le-Blanc 15 June) claim_status old value alternate, new value preferred; `C2203` (B-763 situation-map flag, Pontécoulant) old value preferred, new value alternate; reason: Scott's standing rule that map-derived rows never outrank text rows. All other conflict groups checked (G001-G068): no other group has a map-derived row preferred over a text row. Scenario 189 updated.
+
+## fms-fold3-german-2: FMS B-709 English translation, partial read (Ulms, XII SS Corps on the Rhine 3 March-1 April 1945) as R855 (4 November 2026)
+
+- **Source:** `R855` FMS B-709 by Oberst i.G. Ulrich Ulms (not "Klemm", an OCR error), same author as B-410. **Partial read:** only the typed English pp.-1- to -43- (Fold3 pages 5-47; Part I and most of Part II); typed -41- and parts of -11-, -20-, -21-, -28- unread; Part III (Ruhr pocket 1-16 April), Part IV, the sketches and the German original are unread. English only, so no row is above the usual text level and none is raised. One FMS family with B-410 and B-812.
+- **New claims (old value none; reasons in each row):** corps command posts `C8428` Ratingen after 4 March (date inferred 1945-03-05) and `C8429` 2 km north-east of Mettmann 9 March; `C8430` 176th Division takes command in Düsseldorf 7 March; `C8431` 176th withdrawn to the Meschede area 30 March; `C8432` 183rd VGD northern sector, command post Lintorf 8 March; `C8433` 338th command post in the Düsseldorf government building after 4 March; `C8434` 338th southern sector to Baumberg, command post Schloss Eller 8 March; `C8435` 338th raid on Zons about 24 March (0.3); `C8436` Hitdorf foothold wiped out 30 March (0.3); `C8437` Panzer Lehr armoured group to Hubbelrath about 7 March. Others 0.5.
+- **Citations (no raises):** `R855` appended to `C8396` (Lintorf, same author) and `C1162` (Panzer Lehr mobile elements withdrawn south 10 March; place not confirmed).
+- **G067** (28 February) is outside the period read: no change. No new conflict group.
+- **Places:** `PL3804` Düsseldorf, `PL3805` Ratingen, `PL3806` Mettmann, `PL3807` Schloss Eller, `PL3808` Hubbelrath, `PL3809` Hitdorf, `PL3810` Zons (Nominatim, `R002`).
+- Roadmap 342; scenario 190. Next free: `C8438`, `PL3811`, `R856`, `CR1084`, `G069`, scenario 191, roadmap 343.
+
+## fms-fold3-german-2: FMS B-730 English translation (Brandenberger, Seventh Army 1-20 September 1944) as R856 (4 November 2026)
+
+- **Source:** `R856`, English narrative (typed pp.-3- to -107-) and sketches 1-7 read; the German narrative was NOT read, so every row is English only (at most 0.5; flagged in the reference and roadmap 343). Sketch-derived positions are map-derived (at most 0.3, never preferred).
+- **New claims (old value none; reasons in each row):** Seventh Army command posts `C8438` Flines 1 Sep, `C8439` Wavre 2 Sep, `C8440` Schloss Hex 3 Sep, `C8441` Chaudfontaine and `C8442` Limbourg 7 Sep, `C8443` Monschau 9 Sep, `C8444` camp "Falke" east of Münstereifel 11 Sep; 116th Panzer `C8445` Fleurus-Gembloux 4 Sep, `C8447` Russon-Fort de Lantin 7 Sep, `C8452` north of Plombières 12 Sep, `C8453` south front of Aachen 13 Sep; 347th `C8446` Namur 4 Sep, `C8455` Udenbreth 14 Sep; 275th `C8448` Maastricht-Eijsden 8 Sep, `C8458` remnants at Linnich 19 Sep; 49th `C8449` Visé-Jupille 8 Sep; Panzer-Brigade 105 `C8450` Limbourg 10 Sep; 89th `C8451` Jalhay 10 Sep; 9th Panzer `C8454` Oberforstbach-Roetgen 13 Sep; 353rd CP `C8456` Schevenhütte 12 Sep; 183rd VGD CP `C8457` Floverich and `C8462` Geilenkirchen (Sketch 7, 0.3) 18 Sep; I SS Panzer Corps `C8459` Ormont-Heinerscheid 14 Sep and `C8461` Meuse Lustin-Charleville 4 Sep (0.3); 2nd Panzer `C8460` east of Heinerscheid 12 Sep.
+- **Raises:** `C0866` confidence old value 0.5, new value 0.7 (CMH plus FMS, Margraten-Epen 12 Sep); `C7084` old value 0.5, new value 0.7 (NARA plus FMS, 183rd VGD Birgden 20 Sep).
+- **Citations (no raises):** `R856` appended to `C0867`, `C0865`, `C0868`.
+- **Conflict groups:** G069 `C7286` (preferred, unchanged) vs `C8446` (alternate); G070 `C0861` (preferred, unchanged) vs `C8452` (alternate); G071 `C8457` text (preferred) vs `C8462` sketch (alternate). conflict_group_id old value blank, new value as given, on `C7286` and `C0861`.
+- **Claim-key exception:** `C8441`/`C8442` (two command-post moves on 7 September).
+- **Places:** `PL3811`-`PL3822` (Nominatim, `R002`).
+- Roadmap 343; scenario 191. Next free: `C8463`, `PL3823`, `R857`, `CR1084`, `G072`, scenario 192, roadmap 344.
+
+## fms-fold3-german-2: FMS B-823 German original (von der Heydte, Kampfgruppe von der Heydte 25 October-22 December 1944) as R857 (4 November 2026)
+
+- **Source:** `R857`, German original pp.1-32 read as primary and the sketch p.33 (map-derived, at most 0.3); English translation typed pp.1-41 read as a check.
+- **New claims (old value none; reasons in each row):** `C8463` 6th Parachute Regiment Bergen op Zoom 25 Oct (the date is only in the German); `C8464` First Parachute Army CP Dinxperlo 8 Dec; Kampfgruppe von der Heydte (`GER-KG-HEYDTE`, existing unit) `C8465` formed at Aalten 9 Dec, `C8466` billeted at Oerlinghausen 10 Dec, `C8469` take-off Lippspringe/Paderborn 16 Dec, `C8470` drop and first hedgehog at Baraque Michel 17 Dec, `C8471` second hedgehog 3 km north 18 Dec (0.3), `C8472` dissolved near height 584 by Neu-Hattlich 20 Dec (0.3), `C8473` von der Heydte captured at Monschau 22 Dec; `C8467` Army Group B CP Jagdhaus Haniel east of Münstereifel 12 Dec; `C8468` Sixth SS Panzer Army CP south of it 12 Dec (0.3).
+- **Citations (no raises):** `R857` appended to `C1802`.
+- **Conflict group:** G072 `C1803` (23 December, preferred, unchanged) vs `C8473` (22 December, alternate); conflict_group_id on `C1803` old value blank, new value G072.
+- **Places:** `PL3823` Aalten, `PL3824` Oerlinghausen, `PL3825` Bad Lippspringe, `PL3826` Baraque Michel, `PL3827` Neu-Hattlich (Nominatim, `R002`).
+- Roadmap 344; scenario 192. Next free: `C8474`, `PL3828`, `R858`, `CR1084`, `G073`, scenario 193, roadmap 345.
+
+## fms-fold3-german-2: ETHINT-78 (Meindl and Schimpf interview, 3rd Parachute Division in Normandy) as R858 (4 November 2026)
+
+- **Source:** `R858`, typed English interview record pp.-1- and -2- (Fold3 images 5-6) read in full; English only, no German record known.
+- **No new claims or places:** the interview names no dated places beyond those already entered.
+- **Citations (no raises; same Historical Division family):** `R858` appended to `C8213` (3rd Parachute Division training in Brittany, 15 January-8 June 1944) and `C8219` (16 July 1944 Meindl-Hausser conference: Saint-Lô untenable, withdrawal agreed).
+- Roadmap 345; scenario 193. Next free: `C8474`, `PL3828`, `R859`, `CR1084`, `G073`, scenario 194, roadmap 346.
+
+## fms-fold3-german-2: FMS B-709 second pass (rest of Part II, Part III Ruhr pocket 1-16 April 1945, Appendix I), R855 extended (4 November 2026)
+
+- **Reference R855 (extended, not new):** author old value "Ulrich Ulms", new value "Oberst i.G. Ulms (chief of staff) and Major i.G. Karl Reuther (Ia), signed by Reuther"; reason: the typescript ends "/S/ Karl Reuther" (typed p.-87-) and the Gruppe West covering note of 8 December 1947 names both. The preface (full_citation) now records the second pass (typed -44- to -87-, covering note, Appendix I) and what is still unread: the German original, the sketches and maps; Part IV is a separate draft not in this document. Every earlier R855 row carries an old/new/reason note on the author.
+- **New claims (old value none; English only, at most 0.5):** XII SS Corps `C8474` CP Markusmühle west of Dabringhausen 5 Apr, `C8475` CP Haan 14 Apr, `C8476` command echelon to Solingen-Nord [?] and end about noon 16 Apr (0.3); 3rd Parachute Division `C8477` CP near Wahnerheide [?] 6 Apr (0.3), `C8478` counterattack from Rösrath towards Eil 12 Apr; 353rd Division `C8479` CP south of Drabenderhöhe 9 Apr, `C8480` overrun near Lindlar 13 Apr (0.3); `C8481` 183rd VGD at Waldbröl 8 Apr; `C8482` 363rd VGD Wupper flank position, main effort Opladen 11 Apr; `C8483` Kampfgruppe 59th Division at Leverkusen under the corps 4 Apr; `C8484` Gruppe Witte into the Kettwig switch position 14 Apr; Army Group B `C8485` Model at the corps CP in Haan 15 Apr and `C8486` in the woods between Haan and Hilden 16 Apr (0.3); `C8487` Fifth Panzer Army CP near Ohligs 14 Apr.
+- **New unit:** `GER-KG-WITTE` (Kampfgruppe rule; parent blank).
+- **Citations (no raises):** `R855` appended to `C1233`, `C1241`, `C2247`.
+- **Claim-key exception:** `C0936`/`C8485`.
+- **Places:** `PL3828`-`PL3836` (Nominatim, `R002`).
+- Roadmap 342 updated; scenario 194. Next free: `C8488`, `PL3837`, `R859`, `CR1084`, `G073`, scenario 195, roadmap 346.
+
+## fms-fold3-german-2: B-709 maps (Anlagen 2-8, map-derived rows under R855) (4 November 2026)
+
+- **Source:** `R855` map appendices, Anlagen 2-8 (Fold3 viewer pages 199-200 and 202-223; page 201 is a slate), hand-drawn and signed by Reuther; read from images saved privately with Scott's approval (never committed). Anlage 3 is an organization diagram with no positions; Anlage 6 is an overview at 1:250,000 (the appendix index says 1:100,000). R855 preface updated: old value "the sketches and maps (about 199-222) and the appendix sketches 2-8 unread", new value "map appendices read 4 November 2026"; reason: this reading.
+- **New claims (old value none; all map-derived, confidence 0.3):** `C8488` Gruppe Witte Düsseldorf from 29 Mar; `C8489` LXXXI Corps CP near Burscheid/Dabringhausen 10 Mar; `C8490` LXIII Corps CP north of the Ruhr 10 Mar; `C8491` 59th Infantry Division at Hitdorf 10 Mar; `C8492` Panzer Lehr moving east across the Wupper 10 Mar; `C8493` 3rd Parachute Division Troisdorf 10 Apr; `C8494` Dhünn line south of Burscheid 14 Apr; `C8495` remnants north of Burscheid 15 Apr; `C8496` 363rd flag at Hilden 15 Apr; `C8497` 353rd remnants towards Hückeswagen 13 Apr (alternate); `C8498` 353rd near Winterscheid 8 Apr; `C8499` 183rd VGD ? at Wiehl 10 Apr; `C8500` LVIII Panzer Corps by Waldbröl 8 Apr.
+- **Map-support citations (confidence unchanged; a map never raises a row):** `C8477` (confirms the Wahnerheide reading), `C8479`, `C8475`, `C8474`, `C8476`, `C8484`, `C8482`, `C8428`, `C8429`, `C8432`, `C8431`, `C8275` (`R855` added to its reference_ids).
+- **Conflict group:** G073 `C8480` (text, Lindlar, preferred, unchanged) vs `C8497` (map, east of Wermelskirchen, alternate); conflict_group_id on `C8480` old value blank, new value G073.
+- **Places:** `PL3837` Troisdorf, `PL3838` Burscheid, `PL3839` Hilden, `PL3840` Hückeswagen, `PL3841` Winterscheid, `PL3842` Wiehl (Nominatim, `R002`).
+- No air, naval or company-level units are drawn; nothing entered by domain.
+- Roadmap 346; scenario 195. Next free: `C8501`, `PL3843`, `R859`, `CR1084`, `G074`, scenario 196, roadmap 347.
+
+## fms-fold3-german-2: Scott's decisions on G073 and Kampfgruppe Mitte (4 November 2026)
+
+- **G073 reviewed by Scott:** confirmed as is; `C8480` (text, Lindlar) stays preferred and `C8497` (map) stays the alternate; claim_status unchanged on both; a review note was added to both rows.
+- **Kampfgruppe Mitte merged into `GER-KG-WITTE`:** alternate names old value none, new value "Kampfgruppe Mitte" (recorded in the unit note, since units.csv has no alias column); reason: the B-709 Anlage 5 map shows Witte taking over Düsseldorf from the 176th from 29 March; Scott approved 4 November 2026. No separate Kampfgruppe Mitte unit entry or claim row existed, so no unit_id link changed and no source or reference wording changed.
+- Roadmap 346 (a) and (b) marked resolved; (c) and (d) stay open.
+- Next free: `C8501`, `PL3843`, `R859`, `CR1084`, `G074`, scenario 196, roadmap 347.

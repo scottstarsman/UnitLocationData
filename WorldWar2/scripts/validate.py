@@ -808,7 +808,7 @@ def check_places(claims, vocabs):
     for d in out:
         cs = used.get(d['place_id'], [])
         if not cs:
-            warn(d['_where'], 'place %s %r has no claim: remove it or add the claim' % (d['place_id'], d['name']))
+            pass   # a place with no claims is accepted (Scott, 4 November 2026); the warning was removed
         elif d['coord_reference_id'] and not any(d['coord_reference_id'] in br.parse_ids(c['reference_ids']) for c in cs):
             err(d['_where'], 'coord_reference_id %s is not in the reference_ids of any claim at the place' % d['coord_reference_id'])
     return out
@@ -1132,6 +1132,8 @@ def main():
                 err('data/units.csv', 'unit_name %r is used by both %s and %s (names must be unique within a nationality)' % (u['unit_name'], seen_names[key], uid))
             seen_names[key] = uid
             where = 'data/units.csv unit %s' % uid
+            if u.get('domain', '') not in ('', 'ground', 'air', 'naval'):
+                err(where, 'domain %r must be blank (ground), ground, air or naval' % u['domain'])
             nat = nats.get(u['nationality'])
             if nat and uid.split('-')[0] != nat['code']:
                 err(where, 'unit_id prefix %s is not the code %s of nationality %s' % (uid.split('-')[0], nat['code'], u['nationality']))

@@ -109,6 +109,7 @@ def load():
 
 # ---------------------------------------------------------------- checks
 
+WAR_START = '1939-09-01'   # sanity bound only: the dataset may cover the whole war (decision Scott, 4 November 2026)
 ID_RE = re.compile(r'OP-[A-Z0-9]+(-[A-Z0-9]+)*')
 ISO = re.compile(r'\d{4}-\d{2}-\d{2}')
 
@@ -236,6 +237,10 @@ def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
             lab = 'an umbrella' if op['op_type'] == 'umbrella' else 'its operation'
             w(wh, 'dated %s, outside %s (%s %s to %s): choose the operation that covers the date (the campaign if none does) or add the claim to data/operation_exceptions.csv with a reason; %s must not label rows outside its dates'
               % (c['date'], oid, op['name'], op['start_date'], op['end_date'], lab))
-        if not ops.labels(oid, c['date'])['campaign']:
+        if c['date'] < WAR_START:
+            e(wh, 'dated %s, before the sanity bound %s (outbreak of the war in Europe)' % (c['date'], WAR_START))
+        elif not ops.labels(oid, c['date'])['campaign'] and not (ops.streamers and (c['date'] < ops.streamers[0]['start_date'] or c['date'] > max(s['end_date'] for s in ops.streamers))):
+            # no streamer floor or ceiling: a claim dated before the first CMH streamer (6 June 1944) or after the last one ends (11 May 1945)
+            # needs no campaign (decisions Scott, 4 November 2026: OP-PRE-INVASION and OP-POST-SURRENDER hold such rows)
             e(wh, 'no CMH campaign streamer covers the date %s' % c['date'])
     return E, W

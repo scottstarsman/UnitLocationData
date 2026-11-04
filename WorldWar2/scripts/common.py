@@ -158,6 +158,16 @@ def attach_unit_names(rows):
     return unit_refs.attach(rows)
 
 
+def unit_domain(u):
+    """Domain of a units.csv row: ground (blank), air or naval."""
+    return u.get('domain') or 'ground'
+
+
+def non_ground_unit_ids():
+    """unit_ids whose domain is air or naval (kept out of the main build outputs)."""
+    return {u['unit_id'] for u in read_dicts(UNITS_CSV)[1] if unit_domain(u) != 'ground'}
+
+
 def load_all_claims():
     """Return (header, rows) with every claim as a dict, sorted by date then claim_id. `header` is the claim-file header; each row also has the
     derived keys command_relationships (see attach_command_relationships) and the place and derived-value keys of attach_places, and the unit-name keys of attach_unit_names."""

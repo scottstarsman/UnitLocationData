@@ -3995,3 +3995,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Validator (`scripts/operations.py`):** old behaviour, "no CMH campaign streamer covers the date" for any date after 11 May 1945; new behaviour, a claim dated after the last streamer ends needs no campaign (as before 6 June 1944). `schema/README.md` (op_type) and HANDOFF updated.
 - **New claim:** `C8331` Armee Blumentritt staff dissolved at Wentorf, 31 May 1945 (`R844`, German p.21; 0.5; disestablished true; `OP-POST-SURRENDER`); old value none (left out for lack of a campaign, roadmap 330), new value this claim. Scenario 176. Next free: `C8332`.
 
+## fms-fold3-german-2: Armee Blumentritt subordinations from B-361; roadmap 330 resolved (4 November 2026)
+
+- **Decision (Scott, 4 November 2026, "Yes to all"):** add the units under Armee Blumentritt as command relations even on one source, marked single-source, with the dates the source gives.
+- **New relations (old value: none; each note says single source):** `CR1072` `GER-MARI-002D` -> `GER-ARMY-BLUMT` unspecified_subordination from 10 April 1945 (narrative), open at the last claim (link `C8329`, asserts_start); `CR1073` `GER-PZ-039C` -> `GER-ARMY-BLUMT` operational_control 15-17 April (start narrative; end inferred, reason: the handover to AOK 12 follows the 16/17 April thrust; link `C7976`); `CR1074` `GER-PZ-CLAUS` -> `GER-PZ-039C` operational_control 15-17 April (same; link `C1263`; CMH `CR0840` kept); `CR1075` `GER-INF-245D` -> `GER-OBNW-000H` reserve from 28 April (claim_date: the text gives no start), end unknown (links `C7981`, `C8330`; Lexikon `CR0833` kept).
+- **Not written** (no unit row, or contradicted by dataset rows): listed in `docs/deferred_relations.md`.
+- **Roadmap:** 330 resolved; 329(a) resolved (Celle rows kept). Scenario 177. Next free: `C8332`, `PL3768`, `R845`, `CR1076`, `G065`, scenario 178, roadmap 331.
+

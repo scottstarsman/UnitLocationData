@@ -631,7 +631,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 1070)
+## Part 2: command relations (20 of 1074)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 

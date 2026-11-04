@@ -4017,3 +4017,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims (old value: none; parents blank; 0.3, representative points, dates inferred from the questions, reason in each note):** `C8343` II Parachute Corps withdrawal begins from the Saint-Lô front, 26 July 1944 (`OP-COBRA`); `C8344` II Parachute Corps defends Vire, early August (date 2 August from the question on the British attack; `OP-BLUECOAT`).
 - **Supporting citation:** `R846` appended to `C0763` (352nd Division at Saint-Lô under the corps); reference_ids old `R592;R830;R001`, new `R592;R830;R846;R001`; confidence unchanged.
 - **Roadmap:** 333 (facts not entered, open). Scenario 179. Next free: `C8345`, `PL3771`, `R847`, `CR1076`, `G066`, scenario 180, roadmap 334.
+
+## fms-fold3-german-2: FMS A-859 (Meindl, letter of 28 February 1946, English only) as R847 (4 November 2026)
+
+- **Source:** `R847` FMS A-859, Meindl's two-page letter; **no German original on the fiche** (only the German cover sheet), so the English translation is the only text. Same FMS family: no confidence raises.
+- **New claim (old value: none; parent blank):** `C8345` 3rd Parachute Division destroyed in the Meuse area, 0.3, destroyed true, representative point Namur (50 km); date 3 September 1944 inferred (old value none, new value 1944-09-03, reason: the month is hidden in the viewer, August or September; the letter covers 21 August-3 September).
+- **Supporting citations (`R847` appended, confidence unchanged):** `C8221` (corps east of the Seine after 21 August), `C7689` (corps to Köln-Wahn to reorganise).
+- Scenario 180. Next free: `C8346`, `PL3771`, `R848`, `CR1076`, `G066`, scenario 181, roadmap 334.

@@ -55429,8 +55429,8 @@
     "location_date": "1944-08-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R833;R002",
-    "source_locator": "R833: German p.13 (Fold3 page 38)"
+    "reference_ids": "R833;R847;R002",
+    "source_locator": "R833: German p.13 (Fold3 page 38); R847: English p.1 (Fold3 image 5)"
    }
   },
   {
@@ -63016,6 +63016,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R838;R002",
     "source_locator": "R838: German p.51 (Fold3 page 125)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8662,
+     50.4665
+    ]
+   },
+   "properties": {
+    "claim_id": "C8345",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-03",
+    "place_id": "PL0242",
+    "location_name": "Namur, Namur",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the 3rd Parachute Division, left behind east of the Seine when the corps went to Köln-Wahn, is completely destroyed in the Meuse area",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "destroyed",
+    "location_date": "1944-09-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R847",
+    "source_locator": "R847: English p.1 (Fold3 image 5)"
    }
   },
   {
@@ -76257,8 +76298,8 @@
     "location_date": "1944-09-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R813;R828;R002",
-    "source_locator": "R806: German p.1; R813: German p.1 (Fold3 image 24); R828: p.2 (Fold3 page 43)"
+    "reference_ids": "R806;R813;R828;R847;R002",
+    "source_locator": "R806: German p.1; R813: German p.1 (Fold3 image 24); R828: p.2 (Fold3 page 43); R847: English p.1 (Fold3 image 5)"
    }
   },
   {

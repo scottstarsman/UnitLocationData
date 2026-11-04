@@ -5558,7 +5558,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -13018,7 +13018,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -21158,7 +21158,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -24158,7 +24158,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66518,7 +66518,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -72918,7 +72918,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -75199,6 +75199,86 @@
     "country": "FR",
     "region": "Ile-de-France",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9059,
+     50.2655
+    ]
+   },
+   "properties": {
+    "place_id": "PL3776",
+    "name": "Salmchâteau (Vielsalm), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2406,
+     52.2965
+    ]
+   },
+   "properties": {
+    "place_id": "PL3777",
+    "name": "Huizen, Noord-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3293,
+     52.2539
+    ]
+   },
+   "properties": {
+    "place_id": "PL3778",
+    "name": "Eemdijk (Bunschoten), Utrecht",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Utrecht",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4165,
+     51.095
+    ]
+   },
+   "properties": {
+    "place_id": "PL3779",
+    "name": "Wanlo (Mönchengladbach), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
    }
   }
  ]

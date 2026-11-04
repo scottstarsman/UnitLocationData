@@ -12921,6 +12921,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.2632,
+     49.1428
+    ]
+   },
+   "properties": {
+    "claim_id": "C8367",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-MALMANN",
+    "unit_name": "Kampfgruppe Malmann",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-06-26",
+    "place_id": "PL1221",
+    "location_name": "Lozon, Manche",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Kampfgruppe Malmann (about a regiment) marked north-west of Saint-Lô on 26 June 1944 near Lozon",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R841;R002",
+    "source_locator": "R841: appendix map (Fold3 image 12, German sketch)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.5607,
      49.152
     ]
@@ -36530,6 +36571,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R786;R002",
     "source_locator": "R786: image 703 (NAID 271847205), stamped page 992, HGr B Ia Nr. 5441/44 g.Kdos (Nachtrag zur Tagesmeldung 1.8.) of 2 August 1944, 02.00 hrs"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3497,
+     48.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C8373",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-BACHERER",
+    "unit_name": "Kampfgruppe Bacherer",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-08-01",
+    "place_id": "PL0283",
+    "location_name": "Pontaubault, Manche",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Kampfgruppe Bacherer on the south bank of the Sélune on both sides of Pontaubault",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R784;R002",
+    "source_locator": "R784: Army Group B reports of 1 August 1944 (T311-004 notes, image 473 block)"
    }
   },
   {
@@ -188155,6 +188237,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6352,
+     49.9683
+    ]
+   },
+   "properties": {
+    "claim_id": "C8370",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-KUNKEL",
+    "unit_name": "Kampfgruppe Kunkel (26th Volksgrenadier Division reconnaissance group)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL3341",
+    "location_name": "Sibret (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Kampfgruppe Kunkel takes Sibret in the morning and goes on towards Senonchamps, round the west of Bastogne",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R385;R002",
+    "source_locator": "R385: p. 323-324"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4342,
+     50.2676
+    ]
+   },
+   "properties": {
+    "claim_id": "C8375",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-BAYER",
+    "unit_name": "Kampfgruppe Bayer (116th Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL1071",
+    "location_name": "Hotton, Luxembourg (BE)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Kampfgruppe Bayer of the 116th Panzer Division attacks Hotton and is repulsed",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R695;R002",
+    "source_locator": "R695: p. 378-381"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1846,
      48.6936
     ]
@@ -189747,6 +189911,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.33 (Fold3 page 101)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9059,
+     50.2655
+    ]
+   },
+   "properties": {
+    "claim_id": "C8366",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-KRAG",
+    "unit_name": "Kampfgruppe Krag (2nd SS Panzer Division reconnaissance group)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Waffen-SS",
+    "date": "1944-12-23",
+    "place_id": "PL3776",
+    "location_name": "Salmchâteau (Vielsalm), Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Kampfgruppe Krag, having cut the Salmchâteau-Baraque de Fraiture road on 22 December and attacked Joubiéval, enters the southern part of Salmchâteau in the evening",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R388;R002",
+    "source_locator": "R388: p. 420-421"
    }
   },
   {
@@ -223777,6 +223982,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R815;R002",
     "source_locator": "R668: p. 457; R815: Anlage 1 (Fold3 image 61)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4165,
+     51.095
+    ]
+   },
+   "properties": {
+    "claim_id": "C8374",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-GROLLMANN",
+    "unit_name": "Kampfgruppe Grollmann (116th Panzer Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-01-29",
+    "place_id": "PL3779",
+    "location_name": "Wanlo (Mönchengladbach), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "after the move to the Erkelenz area Kampfgruppe Grollmann of the 116th Panzer Division is at Wanlo",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R791;R002",
+    "source_locator": "R791: KTB copy entries of 25-29 January 1945"
    }
   },
   {
@@ -301971,6 +302217,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8152,
+     51.6806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8371",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HAMM",
+    "unit_name": "Kampfgruppe Hamm",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-03",
+    "place_id": "PL3661",
+    "location_name": "Hamm, North Rhine-Westphalia",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "the enemy crosses the rail bridge into Hamm station against Kampfgruppe Hamm (one Landesschützen battalion, two Flak battalions) and takes parts of it",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-14- (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7328,
      50.8281
     ]
@@ -313451,6 +313738,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.5386,
+     52.9841
+    ]
+   },
+   "properties": {
+    "claim_id": "C8372",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-PUTLOS",
+    "unit_name": "Kampfgruppe Putlos",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL0660",
+    "location_name": "Uelzen, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Kampfgruppe Putlos attacks south from Uelzen with XXXIX Panzer Corps and Panzer Division Clausewitz",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.33-34 (Fold3 images 92-93), Anlage 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.1616,
      52.6263
     ]
@@ -320780,6 +321108,88 @@
     "strength_status": "unknown",
     "location_date": "1945-04-22",
     "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2406,
+     52.2965
+    ]
+   },
+   "properties": {
+    "claim_id": "C8368",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-WOLPERT",
+    "unit_name": "Kampfgruppe (Gruppe) Wolpert",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL3777",
+    "location_name": "Huizen, Noord-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "on the Grebbe line Gruppe Wolpert holds the IJsselmeer shore sector to Huizen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R810;R002",
+    "source_locator": "R810: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3293,
+     52.2539
+    ]
+   },
+   "properties": {
+    "claim_id": "C8369",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-DEWALD",
+    "unit_name": "Kampfgruppe Dewald",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL3778",
+    "location_name": "Eemdijk (Bunschoten), Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "on the Grebbe line Kampfgruppe Dewald holds the Eem sector to Eemdijk, between the 6th Fallschirmjäger Division and Gruppe Wolpert",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
     "reference_ids": "R810;R002",
     "source_locator": "R810: German p.7, English p.7"

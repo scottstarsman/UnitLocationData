@@ -4047,3 +4047,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims (old value: none; parents blank):** 6th Fallschirmjäger Division `C8355` south of Longuesse [?] 25 August (0.3), `C8356` Seine line at Meulan 26 August, `C8357` command post Us 28 August, `C8358` command post Mello 30 August, `C8359` Compiègne 31 August, `C8360` Noyon 1 September, `C8361` command post Artres 2 September (0.5 each), `C8362` commander captured south of Mons 3 September (0.3); Fallschirm-Lehr-Regiment `C8363` Meulan 26 August, `C8364` Noyon 1 September, `C8365` Artres 2 September (0.5).
 - **Places:** `PL3771` Longuesse, `PL3772` Us, `PL3773` Mello, `PL3774` Artres, `PL3775` Meulan-en-Yvelines (Nominatim).
 - **Roadmap:** 336. Scenario 183. Next free: `C8366`, `PL3776`, `R850`, `CR1077`, `G066`, scenario 184, roadmap 337.
+
+## fms-fold3-german-2: roadmap 335 Kampfgruppen (4 November 2026)
+
+- **Rule:** Scott's independent-units rule of 4 November 2026 08:53 (Kampfgruppen get their own entries, parents blank).
+- **New units (old value: none):** `GER-KG-KRAG`, `GER-KG-MALMANN`, `GER-KG-WOLPERT`, `GER-KG-DEWALD`, `GER-KG-KUNKEL`, `GER-KG-HAMM`, `GER-KG-PUTLOS`, `GER-KG-BACHERER`, `GER-KG-GROLLMANN`, `GER-KG-BAYER`.
+- **New claims (old value: none):** `C8366` Krag Salmchâteau 23 Dec 1944 (0.5, `R388`); `C8367` Malmann near Lozon 26 Jun 1944 (0.3, map, `R841`); `C8368` Wolpert to Huizen and `C8369` Dewald to Eemdijk from about 22 Apr 1945 (0.3, `R810`); `C8370` Kunkel takes Sibret 21 Dec 1944 (0.5, `R385`); `C8371` Hamm station about 3 Apr 1945 (0.3, `R822`); `C8372` Putlos from Uelzen about 16 Apr 1945 (0.3, `R814`); `C8373` Bacherer at Pontaubault 1 Aug 1944 (0.5, `R784`); `C8374` Grollmann at Wanlo about 29 Jan 1945 (0.5, `R791`); `C8375` Bayer attacks Hotton 21 Dec 1944 (0.5, `R695`).
+- **Places:** `PL3776` Salmchâteau, `PL3777` Huizen, `PL3778` Eemdijk, `PL3779` Wanlo.
+- **Not entered (11, reasons in roadmap 335):** Hellmich, Plocher, von Mühlen, Degener, Fuchs, Runge, Lutze, Keil, Fink, Knaust, Koenig.
+- Roadmap 335 resolved. Scenario 184. Next free: `C8376`, `PL3780`, `R850`, `CR1077`, `G066`, scenario 185, roadmap 337.

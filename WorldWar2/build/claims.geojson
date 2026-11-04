@@ -612,8 +612,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R107;R137;R448;R165;R001",
-    "source_locator": null
+    "reference_ids": "R107;R137;R448;R165;R845;R001",
+    "source_locator": "R845: German p.32 (Fold3 image 163)"
    }
   },
   {
@@ -694,8 +694,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R121;R447;R137;R001",
-    "source_locator": null
+    "reference_ids": "R121;R447;R137;R845;R001",
+    "source_locator": "R845: German p.29 and p.32 (Fold3 images 160, 163)"
    }
   },
   {
@@ -1775,7 +1775,7 @@
    },
    "properties": {
     "claim_id": "C2062",
-    "conflict_group_id": null,
+    "conflict_group_id": "G065",
     "claim_status": "preferred",
     "unit_id": "GER-SSPZ-001D",
     "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
@@ -2705,6 +2705,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R841;R002",
     "source_locator": "R841: German p.1 (Fold3 page 14)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4442,
+     43.6044
+    ]
+   },
+   "properties": {
+    "claim_id": "C8334",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00GG",
+    "unit_name": "Army Group G (Heeresgruppe G; Armeegruppe G until late 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL1010",
+    "location_name": "Toulouse, Haute-Garonne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Armeegruppe G command post north of Toulouse on 6 June 1944",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.32 (Fold3 image 163), p.135 (image 267)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "claim_id": "C8335",
+    "conflict_group_id": "G065",
+    "claim_status": "alternate",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-06",
+    "place_id": "PL0745",
+    "location_name": "Brussels, Belgium",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "1st SS Panzer Division, OKW strategic reserve, near Brussels on 6 June 1944 (released about 8 June)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.32 (Fold3 image 163), p.63 (image 194)"
    }
   },
   {
@@ -9099,8 +9181,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R154;R013;R001",
-    "source_locator": null
+    "reference_ids": "R154;R013;R845;R001",
+    "source_locator": "R845: German p.53 (Fold3 image 184)"
    }
   },
   {
@@ -17135,8 +17217,8 @@
     "location_date": "1944-07-02",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -1,
-    "reference_ids": "R593;R001",
-    "source_locator": "R593: p. 324"
+    "reference_ids": "R593;R845;R001",
+    "source_locator": "R593: p. 324; R845: German p.59 (Fold3 image 190)"
    }
   },
   {
@@ -24556,8 +24638,8 @@
     "location_date": "1944-06-29",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -18,
-    "reference_ids": "R588;R107;R185;R668;R001",
-    "source_locator": "R588: p. 169; R185: list of commanders; R668: p. 178"
+    "reference_ids": "R588;R107;R185;R668;R845;R001",
+    "source_locator": "R588: p. 169; R185: list of commanders; R668: p. 178; R845: German p.60 (Fold3 image 191)"
    }
   },
   {
@@ -48960,6 +49042,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.1639,
+     49.1471
+    ]
+   },
+   "properties": {
+    "claim_id": "C8336",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-08-18",
+    "place_id": "PL3768",
+    "location_name": "Verzy, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "on OKW order the OB West command staff moves from Saint-Germain to the village of Verzy about 40 km south-east of Reims",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.80 (Fold3 image 211), p.70 (image 201), p.135 (image 267)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6396,
      43.2733
     ]
@@ -56873,6 +56996,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6486,
+     49.7297
+    ]
+   },
+   "properties": {
+    "claim_id": "C8337",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-08-28",
+    "place_id": "PL0164",
+    "location_name": "Habay-la-Neuve, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "end of August, on OKW order, the OB West staff moves to a village north-west of Arlon (Habay); nearly overrun there",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.70 (Fold3 image 201), p.135 (image 267)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.3813,
      49.0142
     ]
@@ -61251,8 +61415,8 @@
     "location_date": "1944-09-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R593;R001",
-    "source_locator": "R593: p. 364"
+    "reference_ids": "R593;R845;R001",
+    "source_locator": "R593: p. 364; R845: German p.70 and p.84 (Fold3 images 201, 215)"
    }
   },
   {
@@ -113166,6 +113330,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3161,
+     51.081
+    ]
+   },
+   "properties": {
+    "claim_id": "C8338",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-10-21",
+    "place_id": "PL0634",
+    "location_name": "Erkelenz, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Blumentritt arrives at the corps headquarters north-east of Erkelenz and takes over XII SS Corps (commander sick)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-21",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.88-89 (Fold3 images 219-220)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8642,
      50.4925
     ]
@@ -113362,8 +113567,8 @@
     "location_date": "1944-10-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R780;R002",
-    "source_locator": "R780: p. 11"
+    "reference_ids": "R780;R845;R002",
+    "source_locator": "R780: p. 11; R845: German p.90 (Fold3 image 222)"
    }
   },
   {
@@ -144449,6 +144654,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1032,
+     51.1251
+    ]
+   },
+   "properties": {
+    "claim_id": "C8339",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL1042",
+    "location_name": "Effeld, Wassenberg, Nordrhein-Westfalen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "176th Infantry Division staff at Effeld (6 km NNW of Wassenberg) during the November battle at Geilenkirchen; not attacked",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.90 (Fold3 image 222)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2712,
+     51.014
+    ]
+   },
+   "properties": {
+    "claim_id": "C8340",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-16",
+    "place_id": "PL3769",
+    "location_name": "Rurich (Hückelhoven), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "183rd Volksgrenadier Division staff at Rurich (6 km N of Linnich) at the start of the November battle, later forward to Randerath [?]",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.90 (Fold3 image 222)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1655,
      50.8247
     ]
@@ -144768,8 +145055,8 @@
     "location_date": "1944-11-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R002",
-    "source_locator": "R824: p.5 (Fold3 page 10)"
+    "reference_ids": "R824;R845;R002",
+    "source_locator": "R824: p.5 (Fold3 page 10); R845: German p.94 (Fold3 image 226)"
    }
   },
   {
@@ -145137,8 +145424,8 @@
     "location_date": "1944-11-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R790;R002",
-    "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
+    "reference_ids": "R790;R845;R002",
+    "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5; R845: German p.90 and p.98 (Fold3 images 222, 230)"
    }
   },
   {
@@ -161701,8 +161988,8 @@
     "location_date": "1944-12-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R002",
-    "source_locator": "R824: p.25 and 26 (Fold3 page 30 and 31)"
+    "reference_ids": "R824;R845;R002",
+    "source_locator": "R824: p.25 and 26 (Fold3 page 30 and 31); R845: German p.94-95 and p.101 (Fold3 images 226-227, 233)"
    }
   },
   {
@@ -174495,6 +174782,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R820;R002",
     "source_locator": "R820: German p.23-24 (Fold3 page 190-191)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6249,
+     50.3671
+    ]
+   },
+   "properties": {
+    "claim_id": "C8341",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-12-12",
+    "place_id": "PL0626",
+    "location_name": "Ziegenberg (Schloss Adlerhorst), Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Hitler's conference with Rundstedt, Model, the army and corps commanders on the Ardennes offensive at OB West headquarters, Ziegenberg near Bad Nauheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.106 (Fold3 image 238)"
    }
   },
   {
@@ -292491,8 +292819,8 @@
     "location_date": "1945-03-27",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R819;R002",
-    "source_locator": "R819: German p.16 (Fold3 image 40, English pp.15-16, Fold3 images 17-18)"
+    "reference_ids": "R819;R845;R002",
+    "source_locator": "R819: German p.16 (Fold3 image 40, English pp.15-16, Fold3 images 17-18); R845: German p.112 (Fold3 image 244)"
    }
   },
   {
@@ -293525,6 +293853,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.022,
+     51.7243
+    ]
+   },
+   "properties": {
+    "claim_id": "C8342",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-28",
+    "place_id": "PL3770",
+    "location_name": "Wulfen (Dorsten), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Blumentritt finds the First Parachute Army staff in a village north of Dorsten on the morning after the night of 28/29 March and takes over from the sick Schlemm (the change of command itself is C1192)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R845;R002",
+    "source_locator": "R845: German p.112 (Fold3 image 244), p.116 (image 248)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3621,
      49.6303
     ]
@@ -293680,8 +294049,8 @@
     "location_date": "1945-03-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.18 (Fold3 image 77, English p.31), Skizze 2 (Fold3 image 128)"
+    "reference_ids": "R814;R845;R002",
+    "source_locator": "R814: German p.18 (Fold3 image 77, English p.31), Skizze 2 (Fold3 image 128); R845: German p.122 (Fold3 image 254)"
    }
   },
   {
@@ -294869,8 +295238,8 @@
     "location_date": "1945-03-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.18 (Fold3 image 77, English p.31)"
+    "reference_ids": "R814;R845;R002",
+    "source_locator": "R814: German p.18 (Fold3 image 77, English p.31); R845: German p.123 (Fold3 image 255)"
    }
   },
   {
@@ -302044,8 +302413,8 @@
     "location_date": "1945-04-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.24 (Fold3 image 83, English p.23), Skizze 5 (Fold3 image 139)"
+    "reference_ids": "R814;R845;R002",
+    "source_locator": "R814: German p.24 (Fold3 image 83, English p.23), Skizze 5 (Fold3 image 139); R845: German p.126 and p.130 (Fold3 images 258, 262)"
    }
   },
   {
@@ -303151,8 +303520,8 @@
     "location_date": "1945-04-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: Anlage 6 (Fold3 image 116)"
+    "reference_ids": "R814;R845;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116); R845: German p.129-130 (Fold3 images 261-262)"
    }
   },
   {
@@ -307210,8 +307579,8 @@
     "location_date": "1945-04-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: German p.1 (Fold3 image 41), Skizze 4 (image 70)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: German p.1 (Fold3 image 41), Skizze 4 (image 70); R845: German p.126 (Fold3 image 258)"
    }
   },
   {
@@ -307251,8 +307620,8 @@
     "location_date": "1945-04-10",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: German p.5 (Fold3 image 45), Skizze 1 (image 75)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: German p.5 (Fold3 image 45), Skizze 1 (image 75); R845: German p.127-128 (Fold3 images 259-260)"
    }
   },
   {
@@ -308563,8 +308932,8 @@
     "location_date": "1945-04-12",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: German p.11 (Fold3 image 51), Skizze 4 (image 70)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: German p.11 (Fold3 image 51), Skizze 4 (image 70); R845: German p.130 (Fold3 image 262)"
    }
   },
   {
@@ -312130,8 +312499,8 @@
     "location_date": "1945-04-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: Skizze 4 (Fold3 images 70, 78-79)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: Skizze 4 (Fold3 images 70, 78-79); R845: German p.130 (Fold3 image 262)"
    }
   },
   {
@@ -323733,8 +324102,8 @@
     "location_date": "1945-04-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: Anlage 6 (Fold3 image 116), Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123)"
+    "reference_ids": "R814;R845;R002",
+    "source_locator": "R814: Anlage 6 (Fold3 image 116), Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123); R845: German p.130 (Fold3 image 262)"
    }
   },
   {
@@ -330703,8 +331072,8 @@
     "location_date": "1945-05-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70); R845: German p.130 (Fold3 image 262)"
    }
   },
   {
@@ -341199,8 +341568,8 @@
     "location_date": "1945-05-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70); R845: German p.130 (Fold3 image 262)"
    }
   },
   {
@@ -341240,8 +341609,8 @@
     "location_date": "1945-05-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R844;R002",
-    "source_locator": "R844: German p.21 (Fold3 image 61), Skizze 4 (image 70)"
+    "reference_ids": "R844;R845;R002",
+    "source_locator": "R844: German p.21 (Fold3 image 61), Skizze 4 (image 70); R845: German p.134 (Fold3 image 266)"
    }
   }
  ]

@@ -3238,7 +3238,7 @@
     "precision_km": 10,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -12338,7 +12338,7 @@
     "precision_km": 1,
     "country": "DE",
     "region": "Hesse",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -12498,7 +12498,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -14698,7 +14698,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Brussels",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -19938,7 +19938,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Occitanie",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -20578,7 +20578,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -75039,6 +75039,66 @@
     "country": "DE",
     "region": "Schleswig-Holstein",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.1639,
+     49.1471
+    ]
+   },
+   "properties": {
+    "place_id": "PL3768",
+    "name": "Verzy, Marne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2712,
+     51.014
+    ]
+   },
+   "properties": {
+    "place_id": "PL3769",
+    "name": "Rurich (Hückelhoven), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.022,
+     51.7243
+    ]
+   },
+   "properties": {
+    "place_id": "PL3770",
+    "name": "Wulfen (Dorsten), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
    }
   }
  ]

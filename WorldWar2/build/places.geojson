@@ -11698,7 +11698,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -67878,7 +67878,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -70618,7 +70618,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -72738,7 +72738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -76138,6 +76138,106 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Clervaux",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5774,
+     51.9142
+    ]
+   },
+   "properties": {
+    "place_id": "PL3823",
+    "name": "Aalten, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6736,
+     51.9492
+    ]
+   },
+   "properties": {
+    "place_id": "PL3824",
+    "name": "Oerlinghausen, Lippe",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.8167,
+     51.7833
+    ]
+   },
+   "properties": {
+    "place_id": "PL3825",
+    "name": "Bad Lippspringe, Paderborn district",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0624,
+     50.5188
+    ]
+   },
+   "properties": {
+    "place_id": "PL3826",
+    "name": "Baraque Michel (Jalhay), Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1563,
+     50.5747
+    ]
+   },
+   "properties": {
+    "place_id": "PL3827",
+    "name": "Neu-Hattlich (Eupen), Liège",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
     "claims_count": 1
    }
   }

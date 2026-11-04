@@ -30,7 +30,7 @@ FR-INF-010D,French 10th Infantry Division,France,division,Army,active,1944-10-01
 FR-INF-014D,French 14th Infantry Division,France,division,Army,active,1945-02-09,true,4,1945-02-09,1945-05-08,
 FR-INF-027D,French 27th Alpine Infantry Division (27e DIA),France,division,Army,active,1944-12,true,1,1945-03-23,1945-03-23,
 FR-INF-GIRONDE,French Gironde Marching Division (Division de marche Gironde),France,division,Army,active,1945-04,true,1,1945-04-15,1945-04-15,
-GER-AG-00BG,Army Group B,Germany,army_group,Army,active,1939-10-12,true,23,1944-06-06,1945-04-17,
+GER-AG-00BG,Army Group B,Germany,army_group,Army,active,1939-10-12,true,24,1944-06-06,1945-04-17,
 GER-AG-00GG,Army Group G (Heeresgruppe G; Armeegruppe G until late 1944),Germany,army_group,Army,active,1944-04-28,true,23,1944-06-06,1945-05-05,
 GER-AG-00HG,Army Group H (Heeresgruppe H),Germany,army_group,Army,active,1944-11-11,true,12,1944-10-31,1945-05-04,
 GER-AG-OBRHG,Army Group Upper Rhine (Heeresgruppe Oberrhein),Germany,army_group,Army,active,,true,3,1945-01-05,1945-01-29,
@@ -46,9 +46,9 @@ GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,army,Army,active,1944-10-17,t
 GER-ARMY-025A,Twenty-fifth Army (Germany),Germany,army,Army,active,1944-11-10,true,13,1944-11-10,1945-05-05,
 GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,active,,true,14,1945-04-02,1945-05-31,
 GER-ARMY-LUETT,"Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944)",Germany,army,Army,active,1944-12-30,true,2,1944-12-30,1944-12-31,
-GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,52,1944-09-04,1945-05-05,
+GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,53,1944-09-04,1945-05-05,
 GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,active,,true,36,1944-08-18,1945-04-17,GER-AG-00BG
-GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,active,1944-09-14,true,8,1944-11-07,1945-01-23,GER-AG-00BG
+GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,active,1944-09-14,true,9,1944-11-07,1945-01-23,GER-AG-00BG
 GER-PZG-EBERB,Panzer Group Eberbach,Germany,army,Armoured,active,,true,2,1944-08-12,1944-08-13,
 GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,active,,true,9,1944-06-09,1944-08-05,
 GER-COR-012C,XII Corps,Germany,corps,Army,placeholder,1936-10-01,false,0,,,
@@ -246,7 +246,7 @@ GER-PZB-150B,Panzer-Brigade 150,Germany,brigade,Armoured,active,1944-11,true,2,1
 GER-SSPZB-WESTF,SS-Panzer-Brigade Westfalen (SS Ersatzbrigade Westfalen),Germany,brigade,Waffen-SS,active,1945-03-29,true,2,1945-03-30,1945-04-01,
 GER-STUG-011B,Sturmgeschütz-Brigade 11,Germany,brigade,Army,active,,true,2,1944-12-17,1944-12-21,
 GER-FJR-005,Fallschirmjäger-Regiment 5 (3rd Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,1,1944-06-19,1944-06-19,
-GER-FJR-006,6th Fallschirmjäger Regiment,Germany,regiment/battle_group,Luftwaffe,active,,true,3,1944-09-06,1944-09-22,
+GER-FJR-006,6th Fallschirmjäger Regiment,Germany,regiment/battle_group,Luftwaffe,active,,true,4,1944-09-06,1944-10-25,
 GER-FJR-008,Fallschirmjäger-Regiment 8 (3rd Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,3,1944-05-15,1944-07-15,
 GER-FJR-009,Fallschirmjäger-Regiment 9 (3rd Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,3,1944-05-15,1944-08-02,
 GER-FJR-013,Fallschirmjäger-Regiment 13 (5th Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,1,1944-12-23,1944-12-23,
@@ -265,7 +265,7 @@ GER-KG-FREY,Kampfgruppe Frey,Germany,regiment/battle_group,Waffen-SS,active,,tru
 GER-KG-GROLLMANN,Kampfgruppe Grollmann (116th Panzer Division),Germany,regiment/battle_group,Army,active,,true,1,1945-01-29,1945-01-29,
 GER-KG-HAMM,Kampfgruppe Hamm,Germany,regiment/battle_group,Army,active,,true,1,1945-04-03,1945-04-03,
 GER-KG-HEINTZ,Kampfgruppe Heintz,Germany,regiment/battle_group,Army,active,,true,1,1944-06-08,1944-06-08,
-GER-KG-HEYDTE,Kampfgruppe von der Heydte (Operation Stösser),Germany,regiment/battle_group,Luftwaffe,active,1944-12,true,2,1944-12-17,1944-12-23,
+GER-KG-HEYDTE,Kampfgruppe von der Heydte (Operation Stösser),Germany,regiment/battle_group,Luftwaffe,active,1944-12,true,9,1944-12-09,1944-12-23,
 GER-KG-HOBE,Kampfgruppe Hobe,Germany,regiment/battle_group,Army,active,,true,1,1945-02-27,1945-02-27,
 GER-KG-KATZM,Kampfgruppe Katzmann,Germany,regiment/battle_group,Army,active,,true,1,1944-10-05,1944-10-05,
 GER-KG-KRAG,Kampfgruppe Krag (2nd SS Panzer Division reconnaissance group),Germany,regiment/battle_group,Waffen-SS,active,,true,1,1944-12-23,1944-12-23,

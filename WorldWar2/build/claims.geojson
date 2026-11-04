@@ -122637,6 +122637,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.2872,
+     51.4945
+    ]
+   },
+   "properties": {
+    "claim_id": "C8463",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-006",
+    "unit_name": "6th Fallschirmjäger Regiment",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-10-25",
+    "place_id": "PL3409",
+    "location_name": "Bergen op Zoom, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "6th Parachute Regiment in the Bergen op Zoom area after the South Beveland isthmus fighting; von der Heydte hands over the regiment",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.1 (Fold3 image 52)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.6868,
      51.769
     ]
@@ -172001,6 +172042,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.488,
+     51.8638
+    ]
+   },
+   "properties": {
+    "claim_id": "C8464",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1944-12-08",
+    "place_id": "PL3546",
+    "location_name": "Dinxperlo (Aalten), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "First Parachute Army command post at Dinxperlo, a few km south of Aalten; Student, Schlemm and Meindl confer there",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.1, 2 (Fold3 image 52, 54)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3228,
      51.517
     ]
@@ -172035,6 +172117,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R654;R002",
     "source_locator": "R654: Einsatz"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5774,
+     51.9142
+    ]
+   },
+   "properties": {
+    "claim_id": "C8465",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-09",
+    "place_id": "PL3823",
+    "location_name": "Aalten, Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Kampfgruppe von der Heydte formed at Aalten from 100 men per regiment of II Parachute Corps and school volunteers, about 1,200 men",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.3, 4 (Fold3 image 55, 56)"
    }
   },
   {
@@ -172199,6 +172322,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R820;R002",
     "source_locator": "R820: German p.21 (Fold3 page 188)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6736,
+     51.9492
+    ]
+   },
+   "properties": {
+    "claim_id": "C8466",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-10",
+    "place_id": "PL3824",
+    "location_name": "Oerlinghausen, Lippe",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Kampfgruppe von der Heydte moved by truck to the Senne and billeted in Oerlinghausen and nearby villages",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.5, 6 (Fold3 image 57, 59)"
    }
   },
   {
@@ -177741,6 +177905,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7636,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C8467",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-12-12",
+    "place_id": "PL3652",
+    "location_name": "Bad Münstereifel, North Rhine-Westphalia (Jagdhaus Haniel, east of Münstereifel)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Army Group B (Model) command post at Jagdhaus Haniel east of Münstereifel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.16 (Fold3 image 75)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7636,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C8468",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-006A",
+    "unit_name": "Sixth Panzer Army (Sixth SS Panzer Army)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1944-12-12",
+    "place_id": "PL3652",
+    "location_name": "Bad Münstereifel, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Sixth SS Panzer Army command post a few km south of the Army Group B post, in the 1940 OKH huts and bunkers, camouflaged as \"Aufstellungsstab 6\"",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.16, 17 (Fold3 image 75, 77)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3005,
      50.6072
     ]
@@ -180939,6 +181185,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.8167,
+     51.7833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8469",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-16",
+    "place_id": "PL3825",
+    "location_name": "Bad Lippspringe, Paderborn district",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Kampfgruppe von der Heydte at the Lippspringe and Paderborn airfields for take-off of the night drop",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.26 (Fold3 image 93)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -181135,8 +181422,8 @@
     "location_date": "1944-12-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R711;R712;R002",
-    "source_locator": "R711: p. 271"
+    "reference_ids": "R711;R712;R857;R002",
+    "source_locator": "R711: p. 271; R857: German p.27, 28 (Fold3 image 95, 97)"
    }
   },
   {
@@ -181711,6 +181998,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R851;R002",
     "source_locator": "R851: German answer to question 5 (Fold3 image 14)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0624,
+     50.5188
+    ]
+   },
+   "properties": {
+    "claim_id": "C8470",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-17",
+    "place_id": "PL3826",
+    "location_name": "Baraque Michel (Jalhay), Liège",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "Kampfgruppe von der Heydte jumps at the ordered drop zone by Baraque Michel; by 08:00 about 150 men in a hedgehog in the forest near the road junction",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.27, 28 (Fold3 image 95, 97)"
    }
   },
   {
@@ -182326,6 +182654,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R850;R002",
     "source_locator": "R850: German p.7 (Fold3 image 13)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0624,
+     50.5188
+    ]
+   },
+   "properties": {
+    "claim_id": "C8471",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-18",
+    "place_id": "PL3826",
+    "location_name": "Baraque Michel (Jalhay), Liège (about 3 km north of Baraque Michel)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Kampfgruppe von der Heydte, about 300 men, in a second hedgehog on a height about 3 km north of the first, no contact with own troops",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.29, 33 (Fold3 image 98, 104)"
    }
   },
   {
@@ -189918,6 +190287,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1563,
+     50.5747
+    ]
+   },
+   "properties": {
+    "claim_id": "C8472",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-20",
+    "place_id": "PL3827",
+    "location_name": "Neu-Hattlich (Eupen), Liège (near height 584, west bank of the Helle)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Kampfgruppe von der Heydte, stopped by US outposts towards Neu-Hattlich, dissolved at noon near height 584 on the west bank of the Helle; groups of three try for the German lines",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.31, 33 (Fold3 image 101, 104)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -191435,6 +191845,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2408,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C8473",
+    "conflict_group_id": "G072",
+    "claim_status": "alternate",
+    "unit_id": "GER-KG-HEYDTE",
+    "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-12-22",
+    "place_id": "PL0594",
+    "location_name": "Monschau, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "von der Heydte, hiding in one of the first houses of Monschau, captured by the Americans on the morning of 22 December",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R857;R002",
+    "source_locator": "R857: German p.31, 32 (Fold3 image 101, 102)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4569,
      50.3517
     ]
@@ -191646,7 +192097,7 @@
    },
    "properties": {
     "claim_id": "C1803",
-    "conflict_group_id": null,
+    "conflict_group_id": "G072",
     "claim_status": "preferred",
     "unit_id": "GER-KG-HEYDTE",
     "unit_name": "Kampfgruppe von der Heydte (Operation Stösser)",

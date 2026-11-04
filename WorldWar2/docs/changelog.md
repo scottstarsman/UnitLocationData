@@ -4129,3 +4129,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Claim-key exception:** `C8441`/`C8442` (two command-post moves on 7 September).
 - **Places:** `PL3811`-`PL3822` (Nominatim, `R002`).
 - Roadmap 343; scenario 191. Next free: `C8463`, `PL3823`, `R857`, `CR1084`, `G072`, scenario 192, roadmap 344.
+
+## fms-fold3-german-2: FMS B-823 German original (von der Heydte, Kampfgruppe von der Heydte 25 October-22 December 1944) as R857 (4 November 2026)
+
+- **Source:** `R857`, German original pp.1-32 read as primary and the sketch p.33 (map-derived, at most 0.3); English translation typed pp.1-41 read as a check.
+- **New claims (old value none; reasons in each row):** `C8463` 6th Parachute Regiment Bergen op Zoom 25 Oct (the date is only in the German); `C8464` First Parachute Army CP Dinxperlo 8 Dec; Kampfgruppe von der Heydte (`GER-KG-HEYDTE`, existing unit) `C8465` formed at Aalten 9 Dec, `C8466` billeted at Oerlinghausen 10 Dec, `C8469` take-off Lippspringe/Paderborn 16 Dec, `C8470` drop and first hedgehog at Baraque Michel 17 Dec, `C8471` second hedgehog 3 km north 18 Dec (0.3), `C8472` dissolved near height 584 by Neu-Hattlich 20 Dec (0.3), `C8473` von der Heydte captured at Monschau 22 Dec; `C8467` Army Group B CP Jagdhaus Haniel east of Münstereifel 12 Dec; `C8468` Sixth SS Panzer Army CP south of it 12 Dec (0.3).
+- **Citations (no raises):** `R857` appended to `C1802`.
+- **Conflict group:** G072 `C1803` (23 December, preferred, unchanged) vs `C8473` (22 December, alternate); conflict_group_id on `C1803` old value blank, new value G072.
+- **Places:** `PL3823` Aalten, `PL3824` Oerlinghausen, `PL3825` Bad Lippspringe, `PL3826` Baraque Michel, `PL3827` Neu-Hattlich (Nominatim, `R002`).
+- Roadmap 344; scenario 192. Next free: `C8474`, `PL3828`, `R858`, `CR1084`, `G073`, scenario 193, roadmap 345.

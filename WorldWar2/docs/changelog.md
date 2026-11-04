@@ -3794,3 +3794,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3692`-`PL3699` (Ahaus, Emsbüren, Hollenermoor, Jübberde, Nortorf, Brekendorf, Brunsbüttel, Gronau (Westfalen)).
 - **Not entered:** [?] readings (Ostendorf, Niederdorf, Uploh, "Jasenburg", "Edderrecht", "Siegen"); strengths (notes only); 21st Parachute Division (no unit file).
 - **Roadmap:** 286-288. Scenario 154.
+
+## fms-fold3-german-2: FMS B-327 English translation, Blauensteiner, II Parachute Corps 10 March-10 May 1945 (4 November 2026)
+
+- **Source:** FMS B-327 (`R827`, new; not previously a reference), English translation only (no German original in the Fold3 set), with Meindl's supplement (28 December 1946) and Geyer's note (10 January 1947).
+- **New claim:** `C8199` (7th Parachute Division extracted from the Leer-Bad Zwischenahn line, end of April; inferred date old none, new 1945-04-28, 0.3), parent blank. No new places.
+- **Corroborations (no confidence raised, FMS family):** `R827` appended to `C7716`, `C1181`, `C1183`, `C1236`, `C8192`, `C8195`.
+- **Not entered:** strengths (notes only; about 1,000 per division against B-674's 3,500-4,000); uncertain capitulation place; facts without a unit file. Roadmap 289-290. Scenario 155.

@@ -269941,8 +269941,8 @@
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R813;R826;R002",
-    "source_locator": "R806: English p.20, Sketch 6; R813: German pp.12-13 (Fold3 images 35-36); R826: German p.2 (Fold3 page 4) and English p.2 (Fold3 page 24)"
+    "reference_ids": "R806;R813;R826;R827;R002",
+    "source_locator": "R806: English p.20, Sketch 6; R813: German pp.12-13 (Fold3 images 35-36); R826: German p.2 (Fold3 page 4) and English p.2 (Fold3 page 24); R827: p.1 (Fold3 page 6)"
    }
   },
   {
@@ -283225,8 +283225,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R668;R814;R817;R826;R002",
-    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71); R817: German pp.3-4 (Fold3 images 7-8); R826: German p.6 (Fold3 page 8) and English p.6 (Fold3 page 28)"
+    "reference_ids": "R543;R668;R814;R817;R826;R827;R002",
+    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71); R817: German pp.3-4 (Fold3 images 7-8); R826: German p.6 (Fold3 page 8) and English p.6 (Fold3 page 28); R827: p.2 (Fold3 page 7)"
    }
   },
   {
@@ -283307,8 +283307,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R814;R817;R822;R826;R002",
-    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9); R822: German p.-5- (Fold3 page 83); R826: German p.5 (Fold3 page 7) and English p.6 (Fold3 page 28)"
+    "reference_ids": "R543;R814;R817;R822;R826;R827;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9); R822: German p.-5- (Fold3 page 83); R826: German p.5 (Fold3 page 7) and English p.6 (Fold3 page 28); R827: p.2 (Fold3 page 7)"
    }
   },
   {
@@ -295976,8 +295976,8 @@
     "location_date": "1945-04-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R826;R002",
-    "source_locator": "R826: German p.10 (Fold3 page 12) and English p.10 (Fold3 page 32)"
+    "reference_ids": "R826;R827;R002",
+    "source_locator": "R826: German p.10 (Fold3 page 12) and English p.10 (Fold3 page 32); R827: p.3 (Fold3 page 8)"
    }
   },
   {
@@ -298518,8 +298518,8 @@
     "location_date": "1945-04-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R656;R002",
-    "source_locator": "R656: table of 1945, 10 April row"
+    "reference_ids": "R656;R827;R002",
+    "source_locator": "R656: table of 1945, 10 April row; R827: p.4 (Fold3 page 9)"
    }
   },
   {
@@ -303602,8 +303602,8 @@
     "location_date": "1945-04-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R826;R002",
-    "source_locator": "R826: German p.12 (Fold3 page 14) and English p.13 (Fold3 page 35)"
+    "reference_ids": "R826;R827;R002",
+    "source_locator": "R826: German p.12 (Fold3 page 14) and English p.13 (Fold3 page 35); R827: p.4 (Fold3 page 9)"
    }
   },
   {
@@ -320414,6 +320414,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R818;R002",
     "source_locator": "R818: German p.8-10 (Fold3 image 12-14, English p.9-11, Fold3 image 35-37), Anlage 7 (Fold3 image 24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.046,
+     53.1614
+    ]
+   },
+   "properties": {
+    "claim_id": "C8199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-28",
+    "place_id": "PL0701",
+    "location_name": "Bad Zwischenahn, Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "7th Parachute Division, after heavy fighting, extracted by shortening the front to the line Leer-Bad Zwischenahn and replaced by a new combat group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R827;R002",
+    "source_locator": "R827: p.5 (Fold3 page 10)"
    }
   },
   {

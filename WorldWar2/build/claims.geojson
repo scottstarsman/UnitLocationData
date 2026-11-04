@@ -134272,8 +134272,8 @@
     "location_date": "1944-11-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R434;R187;R807;R002",
-    "source_locator": "R434: p. 395; R187: Lebenslauf; R807: English p.15, German p.18"
+    "reference_ids": "R434;R187;R807;R815;R002",
+    "source_locator": "R434: p. 395; R187: Lebenslauf; R807: English p.15, German p.18; R815: German p.2 (Fold3 image 11)"
    }
   },
   {
@@ -134354,8 +134354,8 @@
     "location_date": "1944-11-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R173;R434;R002",
-    "source_locator": "R173: Einsatz and table of 1944, 10 November row; R434: p. 395"
+    "reference_ids": "R173;R434;R815;R002",
+    "source_locator": "R173: Einsatz and table of 1944, 10 November row; R434: p. 395; R815: German p.2 (Fold3 image 11), Skizze 1 (Fold3 image 79)"
    }
   },
   {
@@ -134479,6 +134479,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 426"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4778,
+     51.9244
+    ]
+   },
+   "properties": {
+    "claim_id": "C7984",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-10",
+    "place_id": "PL2554",
+    "location_name": "Rotterdam, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "XXX Corps about Rotterdam-The Hague on Skizze 1 (map)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: Skizze 1 (Fold3 image 79), typed Skizze 1 (Fold3 image 74)"
    }
   },
   {
@@ -150100,6 +150141,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R809;R811;R002",
     "source_locator": "R809: German p.15, English p.15; R811: German p.28"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C7985",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL0621",
+    "location_name": "Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Twenty-fifth Army staff (formed from AOK 15 and WBN staffs) takes over the AOK 15 sector under Christiansen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.2 (Fold3 image 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7986",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1944-11-25",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "First Parachute Army taken back to the Maas position, holding bridgeheads at Venlo and Roermond",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.4, 7 (Fold3 image 13, 16)"
    }
   },
   {
@@ -215329,8 +215452,8 @@
     "location_date": "1945-01-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R538;R425;R187;R002",
-    "source_locator": "R538: p. 177; R425: p. 548; R187: Lebenslauf, commander list"
+    "reference_ids": "R538;R425;R187;R815;R002",
+    "source_locator": "R538: p. 177; R425: p. 548; R187: Lebenslauf, commander list; R815: Anlage 1 (Fold3 image 61)"
    }
   },
   {
@@ -215862,8 +215985,8 @@
     "location_date": "1945-01-29",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 457"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: p. 457; R815: Anlage 1 (Fold3 image 61)"
    }
   },
   {
@@ -228859,8 +228982,8 @@
     "location_date": "1945-02-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 463"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: p. 463; R815: German p.12 (Fold3 image 21)"
    }
   },
   {
@@ -228900,8 +229023,8 @@
     "location_date": "1945-02-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 463"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: p. 463; R815: German p.12 (Fold3 image 21)"
    }
   },
   {
@@ -229975,6 +230098,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4543,
+     51.6615
+    ]
+   },
+   "properties": {
+    "claim_id": "C7987",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-02-09",
+    "place_id": "PL0697",
+    "location_name": "Xanten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "XLVII Panzer Corps moved via Geldern to the Xanten area and placed under the First Parachute Army to retake Kleve",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.15-16 (Fold3 image 24-25)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -230130,8 +230294,8 @@
     "location_date": "1945-02-10",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 477"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: p. 477; R815: German pp.15-16 (Fold3 images 24-25)"
    }
   },
   {
@@ -230786,8 +230950,8 @@
     "location_date": "1945-02-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 479"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: p. 479; R815: German p.16 (Fold3 image 25)"
    }
   },
   {
@@ -238125,8 +238289,8 @@
     "location_date": "1945-02-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 488-489"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: pp. 488-489; R815: German p.17 (Fold3 image 26)"
    }
   },
   {
@@ -244521,8 +244685,8 @@
     "location_date": "1945-02-20",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R813;R002",
-    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8)"
+    "reference_ids": "R813;R815;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8); R815: German pp.17-18 (Fold3 images 26-27)"
    }
   },
   {
@@ -244562,8 +244726,49 @@
     "location_date": "1945-02-20",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R813;R002",
-    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8)"
+    "reference_ids": "R813;R815;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8); R815: German p.18 (Fold3 image 27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4373,
+     51.8874
+    ]
+   },
+   "properties": {
+    "claim_id": "C7988",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSGR-034D",
+    "unit_name": "34th SS Volunteer Grenadier Division Landstorm Nederland",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-02-20",
+    "place_id": "PL1630",
+    "location_name": "Tiel, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "34th (Netherlands) SS Division put into the stripped Maas-Waal front of the Twenty-fifth Army",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.16 (Fold3 image 25)"
    }
   },
   {
@@ -245136,8 +245341,8 @@
     "location_date": "1945-02-23",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R813;R002",
-    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8)"
+    "reference_ids": "R813;R815;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8); R815: German p.18 (Fold3 image 27)"
    }
   },
   {
@@ -245179,6 +245384,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R813;R002",
     "source_locator": "R813: German p.9 (Fold3 image 32, English p.8-9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.376,
+     51.6094
+    ]
+   },
+   "properties": {
+    "claim_id": "C7989",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-23",
+    "place_id": "PL1099",
+    "location_name": "Sonsbeck, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Panzer Lehr Division in army group reserve about Sonsbeck when the American attack begins",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.19 (Fold3 image 28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.338,
+     51.2571
+    ]
+   },
+   "properties": {
+    "claim_id": "C7991",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-406",
+    "unit_name": "406th Landesschützen Division (Division z.b.V. 406)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL3453",
+    "location_name": "Dülken (Viersen), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "A regiment of Division z.b.V. 406 (no heavy weapons or signals) arriving about Dülken-Viersen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.20 (Fold3 image 29)"
    }
   },
   {
@@ -245432,6 +245719,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3615,
+     51.1483
+    ]
+   },
+   "properties": {
+    "claim_id": "C7990",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-24",
+    "place_id": "PL3611",
+    "location_name": "Rheindahlen (Mönchengladbach), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Panzer Lehr Division taken by OB West to Rheindahlen with the 338th Division for a counterattack",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.20 (Fold3 image 29), Anlage 4 (Fold3 image 73)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3161,
      51.081
     ]
@@ -245464,8 +245792,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R538;R002",
-    "source_locator": "R538: p. 167"
+    "reference_ids": "R538;R815;R002",
+    "source_locator": "R538: p. 167; R815: German p.20 (Fold3 image 29)"
    }
   },
   {
@@ -246416,6 +246744,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.273,
+     51.213
+    ]
+   },
+   "properties": {
+    "claim_id": "C7992",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-406",
+    "unit_name": "406th Landesschützen Division (Division z.b.V. 406)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-25",
+    "place_id": "PL3612",
+    "location_name": "Waldniel (Schwalmtal), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Training regiment of Division z.b.V. 406 ordered to form a security line Elmpter Forst-Brüggen-Waldniel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.20-22 (Fold3 image 29-31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2736,
      51.6686
     ]
@@ -246655,6 +247024,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R808;R002",
     "source_locator": "R808: German p.12, English p.12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C7993",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002D",
+    "unit_name": "2nd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-26",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Rest of the 2nd Parachute Division, still arriving, turned to the area south of Krefeld",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.21 (Fold3 image 30), Anlage 4 (Fold3 image 73)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.376,
+     51.6094
+    ]
+   },
+   "properties": {
+    "claim_id": "C7994",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-26",
+    "place_id": "PL1099",
+    "location_name": "Sonsbeck, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "15th Panzergrenadier Division pulled from the north front to assemble at Sonsbeck for a move north of Krefeld",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.21-23 (Fold3 image 30-32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1979,
+     51.3207
+    ]
+   },
+   "properties": {
+    "claim_id": "C7995",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-02-26",
+    "place_id": "PL3551",
+    "location_name": "Kaldenkirchen (Nettetal), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "First Parachute Army left wing taken out of the Roermond bend to Venlo-Kaldenkirchen-Waldniel",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.22 (Fold3 image 31)"
    }
   },
   {
@@ -252598,8 +253090,8 @@
     "location_date": "1945-02-27",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R002",
-    "source_locator": "R777: German p.10, English p.7"
+    "reference_ids": "R777;R815;R002",
+    "source_locator": "R777: German p.10, English p.7; R815: German pp.21-23 (Fold3 images 30-32)"
    }
   },
   {
@@ -253049,8 +253541,8 @@
     "location_date": "1945-02-28",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R777;R002",
-    "source_locator": "R668: p. 509; R777: German p.10, English p.8"
+    "reference_ids": "R668;R777;R815;R002",
+    "source_locator": "R668: p. 509; R777: German p.10, English p.8; R815: German p.21 (Fold3 image 30)"
    }
   },
   {
@@ -253174,6 +253666,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R777;R002",
     "source_locator": "R777: German p.11, English p.8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4195,
+     51.3642
+    ]
+   },
+   "properties": {
+    "claim_id": "C7996",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-02-28",
+    "place_id": "PL3613",
+    "location_name": "Kempen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "First Parachute Army left wing back to the line Uerdingen-Krefeld-Kempen-Wachtendonck",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.23 (Fold3 image 32)"
    }
   },
   {
@@ -254165,6 +254698,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2428,
+     51.8322
+    ]
+   },
+   "properties": {
+    "claim_id": "C8000",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL0699",
+    "location_name": "Emmerich am Rhein, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Twenty-fifth Army given the Rhine bank up to and including Emmerich, committing the 346th Division",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.25 (Fold3 image 34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8583,
+     51.8445
+    ]
+   },
+   "properties": {
+    "claim_id": "C8001",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL3615",
+    "location_name": "Borken (Westfalen), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "245th Infantry Division (no infantry) arriving about Borken to refit",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.25 (Fold3 image 34), Skizze 5 (Fold3 image 88)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6207,
      51.2691
     ]
@@ -254689,8 +255304,49 @@
     "location_date": "1945-03-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R002",
-    "source_locator": "R777: German p.15, English p.9"
+    "reference_ids": "R777;R815;R002",
+    "source_locator": "R777: German p.15, English p.9; R815: German pp.28-29 (Fold3 images 37-38)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4166,
+     51.4391
+    ]
+   },
+   "properties": {
+    "claim_id": "C7997",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-03",
+    "place_id": "PL3614",
+    "location_name": "Aldekerk (Kerken), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "After Krefeld falls, left wing on the line Rheinhausen-Rumeln-Kapellen-Aldekerk-Nieukerk-Geldern",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.23 (Fold3 image 32)"
    }
   },
   {
@@ -255798,6 +256454,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: German p.5 (Fold3 image 64, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.376,
+     51.6094
+    ]
+   },
+   "properties": {
+    "claim_id": "C7998",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-05",
+    "place_id": "PL1099",
+    "location_name": "Sonsbeck, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "First Parachute Army closed front Xanten-Sonsbeck-Issum-Rheinberg-Orsoy",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 88)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4614,
+     51.8344
+    ]
+   },
+   "properties": {
+    "claim_id": "C8002",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-05",
+    "place_id": "PL3616",
+    "location_name": "Isselburg, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Parts of the 15th Panzergrenadier Division assemble north of Isselburg to refit as army group reserve",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 78)"
    }
   },
   {
@@ -261536,8 +262274,8 @@
     "location_date": "1945-03-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 515"
+    "reference_ids": "R668;R815;R002",
+    "source_locator": "R668: p. 515; R815: German p.29 (Fold3 image 38)"
    }
   },
   {
@@ -261782,8 +262520,8 @@
     "location_date": "1945-03-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R777;R002",
-    "source_locator": "R806: English p.17; R777: German p.17, English p.14"
+    "reference_ids": "R806;R777;R815;R002",
+    "source_locator": "R806: English p.17; R777: German p.17, English p.14; R815: German p.29 (Fold3 image 38)"
    }
   },
   {
@@ -261823,8 +262561,8 @@
     "location_date": "1945-03-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English p.17"
+    "reference_ids": "R806;R815;R002",
+    "source_locator": "R806: English p.17; R815: German p.29 (Fold3 image 38)"
    }
   },
   {
@@ -261864,8 +262602,8 @@
     "location_date": "1945-03-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English p.17"
+    "reference_ids": "R806;R815;R002",
+    "source_locator": "R806: English p.17; R815: German p.29 (Fold3 image 38)"
    }
   },
   {
@@ -261905,8 +262643,8 @@
     "location_date": "1945-03-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R002",
-    "source_locator": "R777: German p.17, English p.14"
+    "reference_ids": "R777;R815;R002",
+    "source_locator": "R777: German p.17, English p.14; R815: German p.29 (Fold3 image 38)"
    }
   },
   {
@@ -261946,8 +262684,8 @@
     "location_date": "1945-03-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R806;R002",
-    "source_locator": "R777: German p.17, English p.14; R806: English p.17"
+    "reference_ids": "R777;R806;R815;R002",
+    "source_locator": "R777: German p.17, English p.14; R806: English p.17; R815: German p.29 (Fold3 image 38)"
    }
   },
   {
@@ -261987,8 +262725,49 @@
     "location_date": "1945-03-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R813;R002",
-    "source_locator": "R813: German p.10 (Fold3 image 33, English p.10)"
+    "reference_ids": "R813;R815;R002",
+    "source_locator": "R813: German p.10 (Fold3 image 33, English p.10); R815: German p.29 (Fold3 image 38)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4789,
+     51.5728
+    ]
+   },
+   "properties": {
+    "claim_id": "C7999",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-06",
+    "place_id": "PL0763",
+    "location_name": "Bönninghardt, Alpen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Wesel bridgehead line Xanten-Veen-Bönninghardter Forst-Millingen-Ossenberg",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-06",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R815;R002",
+    "source_locator": "R815: German p.28-29 (Fold3 image 37-38)"
    }
   },
   {
@@ -263463,8 +264242,8 @@
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R668;R813;R002",
-    "source_locator": "R777: p. 18; R668: pp. 519, 522; R813: German pp.12-13 (Fold3 images 35-36)"
+    "reference_ids": "R777;R668;R813;R815;R002",
+    "source_locator": "R777: p. 18; R668: pp. 519, 522; R813: German pp.12-13 (Fold3 images 35-36); R815: German pp.29-30 (Fold3 images 38-39)"
    }
   },
   {

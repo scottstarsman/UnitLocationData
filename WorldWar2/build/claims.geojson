@@ -6,6 +6,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1378,
+     48.4433
+    ]
+   },
+   "properties": {
+    "claim_id": "C8404",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-01-15",
+    "place_id": "PL3791",
+    "location_name": "Joinville, Haute-Marne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "3rd Parachute Division forming in the Châlons-sur-Marne - Bar-le-Duc - Joinville area, division staff at Joinville",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-01-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.3 (Fold3 image 9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.746,
+     48.364
+    ]
+   },
+   "properties": {
+    "claim_id": "C8405",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-01-28",
+    "place_id": "PL3712",
+    "location_name": "Huelgoat, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "3rd Parachute Division moves by rail to Brittany (Monts d'Arrée - Huelgoat) to complete training",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-01-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.3-4 (Fold3 images 9-10) and Skizze 1 (images 35, 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -2.911,
      48.4036
     ]
@@ -79,8 +161,8 @@
     "location_date": "1944-05-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R832;R002",
-    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58); R832: German p.3 (Fold3 page 8)"
+    "reference_ids": "R831;R832;R853;R002",
+    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58); R832: German p.3 (Fold3 page 8); R853: Skizze 1 (Fold3 images 35, 39) and German p.3-4 (images 9-10)"
    }
   },
   {
@@ -122,6 +204,252 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R831;R832;R002",
     "source_locator": "R831: German p.3 (Fold3 page 6) and English p.14 (Fold3 page 59); R832: German p.5 (Fold3 page 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.079,
+     48.4055
+    ]
+   },
+   "properties": {
+    "claim_id": "C8412",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-008",
+    "unit_name": "Fallschirmjäger-Regiment 8 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3794",
+    "location_name": "Sizun, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Fallschirmjäger-Regiment 8 billeted at Sizun (Skizze 1, Brittany billets 28 January-8 June 1944)",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: Skizze 1 (Fold3 images 35, 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.2594,
+     48.3616
+    ]
+   },
+   "properties": {
+    "claim_id": "C8413",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-009",
+    "unit_name": "Fallschirmjäger-Regiment 9 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3795",
+    "location_name": "Daoulas, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Fallschirmjäger-Regiment 9 billeted at Daoulas (Skizze 1, Brittany billets 28 January-8 June 1944)",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: Skizze 1 (Fold3 images 35, 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.2558,
+     48.4515
+    ]
+   },
+   "properties": {
+    "claim_id": "C8414",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJPZJ-003",
+    "unit_name": "Fallschirm-Panzerjäger-Abteilung 3 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3796",
+    "location_name": "Landerneau, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Fallschirm-Panzerjäger-Abteilung 3 billeted at Landerneau (Skizze 1, Brittany billets 28 January-8 June 1944)",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: Skizze 1 (Fold3 images 35, 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.7497,
+     48.4037
+    ]
+   },
+   "properties": {
+    "claim_id": "C8415",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJNA-003",
+    "unit_name": "Fallschirm-Nachrichten-Abteilung 3 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3797",
+    "location_name": "Berrien, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Fallschirm-Nachrichten-Abteilung 3 billeted at Berrien (Skizze 1, Brittany billets 28 January-8 June 1944)",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: Skizze 1 (Fold3 images 35, 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.8512,
+     48.3576
+    ]
+   },
+   "properties": {
+    "claim_id": "C8416",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJFLAK-003",
+    "unit_name": "Fallschirm-Flak-Abteilung 3 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3798",
+    "location_name": "Brennilis, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Fallschirm-Flak-Abteilung 3 billeted at Brennilis (Skizze 1, Brittany billets 28 January-8 June 1944)",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: Skizze 1 (Fold3 images 35, 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.8129,
+     48.1863
+    ]
+   },
+   "properties": {
+    "claim_id": "C8417",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJPI-003",
+    "unit_name": "Fallschirm-Pionier-Bataillon 3 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL3799",
+    "location_name": "Châteauneuf-du-Faou, Finistère",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Fallschirm-Pionier-Bataillon 3 billeted at Châteauneuf-du-Faou (Skizze 1, Brittany billets 28 January-8 June 1944)",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: Skizze 1 (Fold3 images 35, 39)"
    }
   },
   {
@@ -4507,8 +4835,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R065;R830;R001",
-    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.2 (Fold3 page 5)"
+    "reference_ids": "R449;R065;R830;R853;R001",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.2 (Fold3 page 5); R853: German p.14 (Fold3 image 20)"
    }
   },
   {
@@ -5450,8 +5778,8 @@
     "location_date": "1944-06-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R761;R002",
-    "source_locator": "R761: p. 37"
+    "reference_ids": "R761;R853;R002",
+    "source_locator": "R761: p. 37; R853: German p.14-15 (Fold3 images 20-21)"
    }
   },
   {
@@ -8266,7 +8594,7 @@
     "location_name": "La Chapelle-du-Fest, Manche (La Chapelle-du-Fest, 10 km southeast of Saint-Lô (division command post))",
     "location_represents": "headquarters",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "3rd Parachute Division command post at La Chapelle-du-Fest",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -8279,8 +8607,8 @@
     "location_date": "1944-06-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R002",
-    "source_locator": "R784: image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944"
+    "reference_ids": "R784;R853;R002",
+    "source_locator": "R784: image 1619 (NAID 271850087), stamped page 355, HGr B Ia 3467/44 g.Kdos (Tagesmeldung) of 14 June 1944; R853: German p.15 (Fold3 image 21)"
    }
   },
   {
@@ -9019,6 +9347,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R761;R002",
     "source_locator": "R761: p. 40"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0379,
+     49.0521
+    ]
+   },
+   "properties": {
+    "claim_id": "C8406",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-16",
+    "place_id": "PL0098",
+    "location_name": "Conde-sur-Vire, Manche (group of houses 2 km east of Condé-sur-Vire (division staff quarters))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "division staff quarters bombed in the wood 1 km west of La Chapelle-du-Fest and moved to a group of houses 2 km east of Condé-sur-Vire",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.15 (Fold3 image 21),  English p.15 as a check"
    }
   },
   {
@@ -10085,6 +10454,129 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R446;R407;R398;R001",
     "source_locator": "R407: p. 36; R398: p. 344"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9088,
+     49.0852
+    ]
+   },
+   "properties": {
+    "claim_id": "C8407",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-008",
+    "unit_name": "Fallschirmjäger-Regiment 8 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-19",
+    "place_id": "PL1145",
+    "location_name": "Lamberville, Manche",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Fallschirmjäger-Regiment 8 holds the right (eastern) sector of the division front",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.15 (Fold3 image 21), Skizze 2 (image 40), Skizze 4 (images 38, 45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9406,
+     49.1424
+    ]
+   },
+   "properties": {
+    "claim_id": "C8408",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-005",
+    "unit_name": "Fallschirmjäger-Regiment 5 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-19",
+    "place_id": "PL1011",
+    "location_name": "Bérigny, Manche",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Fallschirmjäger-Regiment 5 holds the centre sector of the division front about Bérigny",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.15 and p.19 (Fold3 images 21, 25), Skizze 2 (image 40), Skizze 4 (image 45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0075,
+     49.1657
+    ]
+   },
+   "properties": {
+    "claim_id": "C8409",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-009",
+    "unit_name": "Fallschirmjäger-Regiment 9 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-19",
+    "place_id": "PL3792",
+    "location_name": "Couvains, Manche (south of Couvains)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Fallschirmjäger-Regiment 9 holds the left (western) sector of the division front south of Couvains",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.15 (Fold3 image 21),  Skizze 2 (image 40),  Skizze 4 (image 45)"
    }
   },
   {
@@ -20866,8 +21358,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R588;R180;R001",
-    "source_locator": "R588: p. 157, 148; R180: Einsatz und Unterstellung (11 July 1944 entry)"
+    "reference_ids": "R588;R180;R853;R001",
+    "source_locator": "R588: p. 157, 148; R180: Einsatz und Unterstellung (11 July 1944 entry); R853: German p.17 (Fold3 image 23)"
    }
   },
   {
@@ -23212,6 +23704,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.9706,
+     49.1485
+    ]
+   },
+   "properties": {
+    "claim_id": "C8410",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-07-11",
+    "place_id": "PL3793",
+    "location_name": "Saint-Georges-d'Elle, Manche",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "US offensive on Saint-Lô: local penetrations at Saint-Georges-d'Elle and Saint-Quentin sealed off; Hill 192 lost by evening",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.17 (Fold3 image 23),  English p.16 as a check (see context)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.6,
      49.09
     ]
@@ -24442,6 +24975,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0075,
+     49.1657
+    ]
+   },
+   "properties": {
+    "claim_id": "C8411",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJR-008",
+    "unit_name": "Fallschirmjäger-Regiment 8 (3rd Fallschirmjäger Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-07-15",
+    "place_id": "PL3792",
+    "location_name": "Couvains, Manche (left sector of the division (formerly Regiment 9))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Fallschirmjäger-Regiment 8 shifts from the right wing to relieve the badly hit Regiment 9 on the left, company by company",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R853;R002",
+    "source_locator": "R853: German p.17-18 (Fold3 images 23-24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.23,
      49.15
     ]
@@ -25048,8 +25622,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R180;R588;R830;R832;R001",
-    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7); R832: English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
+    "reference_ids": "R180;R588;R830;R832;R853;R001",
+    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7); R832: English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/); R853: German p.18 (Fold3 image 24)"
    }
   },
   {

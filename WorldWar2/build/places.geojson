@@ -1938,7 +1938,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -19958,7 +19958,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -22638,7 +22638,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -73938,7 +73938,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Brittany",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -75498,6 +75498,186 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1378,
+     48.4433
+    ]
+   },
+   "properties": {
+    "place_id": "PL3791",
+    "name": "Joinville, Haute-Marne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0075,
+     49.1657
+    ]
+   },
+   "properties": {
+    "place_id": "PL3792",
+    "name": "Couvains, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9706,
+     49.1485
+    ]
+   },
+   "properties": {
+    "place_id": "PL3793",
+    "name": "Saint-Georges-d'Elle, Manche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.079,
+     48.4055
+    ]
+   },
+   "properties": {
+    "place_id": "PL3794",
+    "name": "Sizun, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.2594,
+     48.3616
+    ]
+   },
+   "properties": {
+    "place_id": "PL3795",
+    "name": "Daoulas, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.2558,
+     48.4515
+    ]
+   },
+   "properties": {
+    "place_id": "PL3796",
+    "name": "Landerneau, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.7497,
+     48.4037
+    ]
+   },
+   "properties": {
+    "place_id": "PL3797",
+    "name": "Berrien, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.8512,
+     48.3576
+    ]
+   },
+   "properties": {
+    "place_id": "PL3798",
+    "name": "Brennilis, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3.8129,
+     48.1863
+    ]
+   },
+   "properties": {
+    "place_id": "PL3799",
+    "name": "Châteauneuf-du-Faou, Finistère",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Brittany",
     "claims_count": 1
    }
   }

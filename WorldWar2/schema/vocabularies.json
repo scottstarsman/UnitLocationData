@@ -45,6 +45,7 @@
       "division": "Division.",
       "brigade": "Independent brigade.",
       "regiment/battle_group": "Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command.",
+      "company": "Company-sized unit (company, battery, squadron of a ground unit), recorded only when a source traces it up the chain to a parent division or higher (Scott, 4 November 2026; for example H Company, 116th Infantry, 29th Division); rank 0, no echelon letter in the id.",
       "battalion": "Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`.",
       "other": "Higher or special headquarters that fit no level above (for example OB West).",
       "air_force": "Reserved for later: air force, air fleet or air army headquarters (not yet used).",
@@ -328,6 +329,7 @@
       "brigade",
       "regiment/battle_group",
       "battalion",
+      "company",
       "other"
     ]
   },
@@ -343,7 +345,8 @@
     },
     "no_letter": [
       "regiment/battle_group",
-      "battalion"
+      "battalion",
+      "company"
     ],
     "combat_command_pattern": "^[A-Z]+-CC[A-Z]-[0-9]+D$"
   },

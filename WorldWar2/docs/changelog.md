@@ -3985,3 +3985,7 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Corroborations (no raises, FMS family or no exact day):** `R844` appended to `C7976`, `C7977`, `C1263`, `C7980`, `C7981`.
 - **Open:** roadmap 329-330. **Tests:** scenario 175. Next free: `C8331`, `PL3768`, `R845`, `CR1072`, `G065`, scenario 176, roadmap 331.
 
+## fms-fold3-german-2: echelon company added (4 November 2026)
+
+- `schema/vocabularies.json`: echelon values old value (army_group ... battalion, other, air/naval values), new value adds `company`; also added to `echelon_rank.display_order` and `echelon_id_letter.no_letter` (rank 0 was already listed). Reason: Scott approved on 4 November 2026 recording companies traced to a parent division or higher (small-units rule). `schema/README.md` and HANDOFF rule 17 updated. No data changed.
+

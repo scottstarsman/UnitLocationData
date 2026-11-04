@@ -4010,3 +4010,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3768` Verzy, `PL3769` Rurich, `PL3770` Wulfen (Nominatim).
 - **Supporting citations (`R845` appended, confidence unchanged, each note gives old and new reference_ids):** `C0011`, `C0013`, `C0129`, `C0714`, `C0765`, `C0822`, `C2276`, `C7120`, `C7946`, `C7947`, `C7963`, `C7964`, `C7971`, `C8037`, `C8155`, `C8171`, `C8322`, `C8323`, `C8325`, `C8326`, `C8328`, `C8329`, `C8331`.
 - **Roadmap:** 331 (conflicts, open), 332 (facts not entered, open). Scenario 178 (scenario 172 now also expects C8332 and C8333 among the air/naval rows). Next free: `C8343`, `PL3771`, `R846`, `CR1076`, `G066`, scenario 179, roadmap 333.
+
+## fms-fold3-german-2: FMS A-969 German original (Meindl, II Parachute Corps 26 July-5 August 1944) as R846 (4 November 2026)
+
+- **Source:** `R846` FMS A-969, Meindl's answers of 5 January 1946 to the Theater Historian's fourteen questions. German original read in full (images 8-17), English sampled as a check. Same FMS family as all other manuscripts: no confidence raises. The text gives almost no days.
+- **New claims (old value: none; parents blank; 0.3, representative points, dates inferred from the questions, reason in each note):** `C8343` II Parachute Corps withdrawal begins from the Saint-Lô front, 26 July 1944 (`OP-COBRA`); `C8344` II Parachute Corps defends Vire, early August (date 2 August from the question on the British attack; `OP-BLUECOAT`).
+- **Supporting citation:** `R846` appended to `C0763` (352nd Division at Saint-Lô under the corps); reference_ids old `R592;R830;R001`, new `R592;R830;R846;R001`; confidence unchanged.
+- **Roadmap:** 333 (facts not entered, open). Scenario 179. Next free: `C8345`, `PL3771`, `R847`, `CR1076`, `G066`, scenario 180, roadmap 334.

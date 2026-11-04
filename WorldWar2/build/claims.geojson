@@ -28369,8 +28369,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R592;R830;R001",
-    "source_locator": "R592: p. 227; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)"
+    "reference_ids": "R592;R830;R846;R001",
+    "source_locator": "R592: p. 227; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7); R846: German p.1 (Fold3 image 8)"
    }
   },
   {
@@ -31446,6 +31446,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R774;R002",
     "source_locator": "R774: p. 108 and Skizzen 25-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C8343",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-07-26",
+    "place_id": "PL0333",
+    "location_name": "Saint-Lô, Manche",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "after the defensive success at and north-east of Saint-Lô the corps (3rd Parachute Division permanently under it) begins its stepwise withdrawal by successive resistance lines",
+    "operation_id": "OP-COBRA",
+    "operation": "Operation Cobra",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Cobra",
+    "strength_status": "unknown",
+    "location_date": "1944-07-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R846",
+    "source_locator": "R846: German p.1 and p.5 (Fold3 images 8, 10), questions (images 6-7)"
    }
   },
   {
@@ -36653,6 +36694,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R485;R455;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     48.82
+    ]
+   },
+   "properties": {
+    "claim_id": "C8344",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-08-02",
+    "place_id": "PL1272",
+    "location_name": "Vire Normandie, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "the corps defends the town of Vire in the first days with Fallschirmjäger-Regiment 9 and Fallschirm-Aufklärungs-Abteilung 12, takes over 6-8 km of the right neighbour's sector after the British break-in from Saint-Denis-Maisoncelles, and later hands Vire and the heights south-west of it to an Army division (343rd [?])",
+    "operation_id": "OP-BLUECOAT",
+    "operation": "Operation Bluecoat",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Bluecoat",
+    "strength_status": "unknown",
+    "location_date": "1944-08-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R846",
+    "source_locator": "R846: German p.8 and p.11-12 (Fold3 images 13, 16-17)"
    }
   },
   {

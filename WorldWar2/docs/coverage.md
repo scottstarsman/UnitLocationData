@@ -19,7 +19,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | France | division | 0 | 0 | 12 | 12 | 10 | 177 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 61 |
 | Germany | army | 0 | 0 | 16 | 16 | 9 | 325 |
-| Germany | corps | 16 | 0 | 29 | 45 | 41 | 730 |
+| Germany | corps | 16 | 0 | 29 | 45 | 41 | 732 |
 | Germany | division | 33 | 0 | 102 | 135 | 112 | 2226 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 86 |
 | Germany | regiment/battle_group | 0 | 0 | 16 | 16 | 3 | 44 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **55** | **0** | **344** | **399** | **258** | **8332** |
+| **All** | | **55** | **0** | **344** | **399** | **258** | **8334** |
 
 ## Operations
 
@@ -50,24 +50,24 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 |---|---:|---:|---:|
 | umbrella | 3 | 3 | 6 |
 | campaign | 9 | 9 | 6796 |
-| operation | 33 | 33 | 756 |
+| operation | 33 | 33 | 758 |
 | battle | 20 | 20 | 514 |
 | phase | 4 | 4 | 260 |
-| **All** | **69** | **69** | **8332** |
+| **All** | **69** | **69** | **8334** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3755 places and 168 alias names for 8332 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3755 places and 168 alias names for 8334 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3651 | 8125 |
+| point | 3651 | 8127 |
 | area | 86 | 187 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1487 | 3070 |
+| France (FR) | 1487 | 3072 |
 | Germany (DE) | 1317 | 2853 |
 | Netherlands (NL) | 482 | 1365 |
 | Belgium (BE) | 339 | 759 |

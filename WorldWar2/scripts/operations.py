@@ -239,7 +239,8 @@ def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
               % (c['date'], oid, op['name'], op['start_date'], op['end_date'], lab))
         if c['date'] < WAR_START:
             e(wh, 'dated %s, before the sanity bound %s (outbreak of the war in Europe)' % (c['date'], WAR_START))
-        elif not ops.labels(oid, c['date'])['campaign'] and not (ops.streamers and c['date'] < ops.streamers[0]['start_date']):
-            # no streamer floor: a claim dated before the first CMH streamer (6 June 1944) needs no campaign (decision Scott, 4 November 2026)
+        elif not ops.labels(oid, c['date'])['campaign'] and not (ops.streamers and (c['date'] < ops.streamers[0]['start_date'] or c['date'] > max(s['end_date'] for s in ops.streamers))):
+            # no streamer floor or ceiling: a claim dated before the first CMH streamer (6 June 1944) or after the last one ends (11 May 1945)
+            # needs no campaign (decisions Scott, 4 November 2026: OP-PRE-INVASION and OP-POST-SURRENDER hold such rows)
             e(wh, 'no CMH campaign streamer covers the date %s' % c['date'])
     return E, W

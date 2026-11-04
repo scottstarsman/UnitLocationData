@@ -3989,3 +3989,9 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 
 - `schema/vocabularies.json`: echelon values old value (army_group ... battalion, other, air/naval values), new value adds `company`; also added to `echelon_rank.display_order` and `echelon_id_letter.no_letter` (rank 0 was already listed). Reason: Scott approved on 4 November 2026 recording companies traced to a parent division or higher (small-units rule). `schema/README.md` and HANDOFF rule 17 updated. No data changed.
 
+## fms-fold3-german-2: post-surrender umbrella OP-POST-SURRENDER; Blumentritt staff dissolution (4 November 2026)
+
+- **New operation:** `OP-POST-SURRENDER` (umbrella, 12 May-31 December 1945, derived; end a working bound: old value none, new value 1945-12-31, reason: no source defines an end). Reason: Scott approved on 4 November 2026 a holding umbrella like `OP-PRE-INVASION` for rows after the last CMH streamer (Central Europe, ends 11 May 1945).
+- **Validator (`scripts/operations.py`):** old behaviour, "no CMH campaign streamer covers the date" for any date after 11 May 1945; new behaviour, a claim dated after the last streamer ends needs no campaign (as before 6 June 1944). `schema/README.md` (op_type) and HANDOFF updated.
+- **New claim:** `C8331` Armee Blumentritt staff dissolved at Wentorf, 31 May 1945 (`R844`, German p.21; 0.5; disestablished true; `OP-POST-SURRENDER`); old value none (left out for lack of a campaign, roadmap 330), new value this claim. Scenario 176. Next free: `C8332`.
+

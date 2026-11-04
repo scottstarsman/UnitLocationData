@@ -341202,6 +341202,47 @@
     "reference_ids": "R844;R002",
     "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70)"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.25,
+     53.5
+    ]
+   },
+   "properties": {
+    "claim_id": "C8331",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-31",
+    "place_id": "PL3767",
+    "location_name": "Wentorf bei Hamburg, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "the army staff at Wentorf is dissolved on 31 May; Blumentritt and his chief of staff report the dissolution to British Second Army at Lüneburg and are flown to England on 1 June",
+    "operation_id": "OP-POST-SURRENDER",
+    "operation": "Western Europe after the German surrender",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Post-surrender",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.21 (Fold3 image 61), Skizze 4 (image 70)"
+   }
   }
  ]
 }

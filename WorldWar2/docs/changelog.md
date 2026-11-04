@@ -3768,3 +3768,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3668`-`PL3680`.
 - **Coordinates:** none changed; 1 explained exception (`speed` C8152/C3966, map lag); warnings 137.
 - **Open:** roadmap 282-283. **Tests:** scenario 151. Next free: `C8177`, `PL3681`, `R825`, `G064`, scenario 152, roadmap 284.
+
+## fms-fold3-german-2: FMS B-368 re-read, German original primary (Langhaeuser, 6th Parachute Division) (4 November 2026)
+
+- **Source:** B-368 is already `R808` (same Fold3 file, read 3 November 2026); German pages 5-34 re-read as primary, English pages 35-57 as a check. No new reference.
+- **New claim:** `C8177` (346th Infantry Division arriving on the north bank of the Rhine about Emmerich, about 10 February 1945, 0.3).
+- **Corroborations (2):** `R808` appended to `C1369` and `C1380` (2nd and 3rd Canadian Divisions opposite the division at Calcar); no raises.
+- **Translation and internal differences:** recorded in the private notes and roadmap 284.
+- **Open:** roadmap 284. **Tests:** scenario 152. Next free: `C8178`, `PL3681`, `R825`, `G064`, scenario 153, roadmap 285.

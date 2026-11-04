@@ -74207,8 +74207,8 @@
     "location_date": "1944-09-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German p.1"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German p.1; R813: German p.1 (Fold3 image 24)"
    }
   },
   {
@@ -74248,8 +74248,8 @@
     "location_date": "1944-09-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German p.1"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German p.1; R813: German p.1 (Fold3 image 24)"
    }
   },
   {
@@ -76710,6 +76710,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.14 (Fold3 image 20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1274,
+     51.8038
+    ]
+   },
+   "properties": {
+    "claim_id": "C7907",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-18",
+    "place_id": "PL3301",
+    "location_name": "Wasserburg (Rindern, Kleve), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "II Parachute Corps ordered by Army Group B from the Cologne area to Kleve",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.1-2 (Fold3 image 24-25, English p.1-2)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0898,
+     51.8023
+    ]
+   },
+   "properties": {
+    "claim_id": "C7908",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-FELDT",
+    "unit_name": "Korps Feldt (Generalkommando Feldt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0757",
+    "location_name": "Kranenburg, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Korps Feldt (alert units of Wehrkreis VI, flak, Luftwaffe ground staff, RAD) fighting the airborne enemy north of",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.2 (Fold3 image 25, English p.2)"
    }
   },
   {
@@ -80275,8 +80357,8 @@
     "location_date": "1944-09-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German p.2, English p.2"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German p.2, English p.2; R813: German p.2 (Fold3 image 25)"
    }
   },
   {
@@ -80931,8 +81013,8 @@
     "location_date": "1944-09-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German pp.3-4, English p.4, Sketch 1"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German pp.3-4, English p.4, Sketch 1; R813: German p.2 (Fold3 image 25)"
    }
   },
   {
@@ -81548,6 +81630,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.15 (Fold3 image 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7910",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-21",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "190th Infantry Division staff arrives and is given command of the front between Maas and Rhine under II Parachute Corps",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-21",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.3 (Fold3 image 26, English p.2)"
    }
   },
   {
@@ -82293,6 +82416,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9305,
+     51.7741
+    ]
+   },
+   "properties": {
+    "claim_id": "C7909",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-22",
+    "place_id": "PL0686",
+    "location_name": "Groesbeek, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "II Parachute Corps goes over to the defence on the line Cuijk-east of Groesbeek-Erlekom after pushing the enemy",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.2 (Fold3 image 25, English p.2)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -82489,8 +82653,8 @@
     "location_date": "1944-09-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R606;R806;R807;R001",
-    "source_locator": "R606: p. 193; R806: German pp.2-4, English pp.2-4; R807: English p.12, German p.12"
+    "reference_ids": "R606;R806;R807;R813;R001",
+    "source_locator": "R606: p. 193; R806: German pp.2-4, English pp.2-4; R807: English p.12, German p.12; R813: German pp.2-3 (Fold3 images 25-26)"
    }
   },
   {
@@ -82901,6 +83065,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.15-16 (Fold3 image 21-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0898,
+     51.8023
+    ]
+   },
+   "properties": {
+    "claim_id": "C7911",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-23",
+    "place_id": "PL0757",
+    "location_name": "Kranenburg, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "84th Infantry Division staff inserted north of the Reichswald; the arrived parachutists placed under it",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.3 (Fold3 image 26, English p.3)"
    }
   },
   {
@@ -83926,6 +84131,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R807;R002",
     "source_locator": "R807: English p.12, German p.13"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C7912",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL0864",
+    "location_name": "Gennep, Limburg (NL)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "First elements of the 190th Infantry Division arrive",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.3 (Fold3 image 26, English p.3)"
    }
   },
   {
@@ -88279,6 +88525,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9945,
+     51.696
+    ]
+   },
+   "properties": {
+    "claim_id": "C7913",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-26",
+    "place_id": "PL0864",
+    "location_name": "Gennep, Limburg (NL)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "190th Infantry Division shown at the south edge of the Reichswald about Gennep-Goch on Sketch 1 (map)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: Sketch 1 (Fold3 image 40, overlay Fold3 image 37)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2697,
+     51.6897
+    ]
+   },
+   "properties": {
+    "claim_id": "C7914",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-26",
+    "place_id": "PL3300",
+    "location_name": "Keppeln (Uedem), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "II Parachute Corps headquarters symbol near Keppeln east of Goch on Sketch 1 (map; reading uncertain)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: Sketch 1 (Fold3 image 40)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5113,
      48.8231
     ]
@@ -89418,8 +89746,8 @@
     "location_date": "1944-09-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R786;R806;R002",
-    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs); R806: English Sketch 1 (end of September 1944)"
+    "reference_ids": "R786;R806;R813;R002",
+    "source_locator": "R786: images 1362-1364 (NAID 271847205), stamped pages 915-917, HGr B Ia Nr. 7970/44 g.Kdos of 29 September 1944, 12.30 hrs (Gliederung im Abschnitt Turnhout–Roermond, 28.9., 20.00 hrs); R806: English Sketch 1 (end of September 1944); R813: Sketch 1 (Fold3 image 40)"
    }
   },
   {
@@ -96431,6 +96759,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.18-20, 23 (Fold3 image 24-26, 29)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0787,
+     51.5896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7915",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-10-05",
+    "place_id": "PL3589",
+    "location_name": "Bergen (Limburg), Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "II Parachute Corps sector extended south to Bergen with Kampfgruppe Katzmann (reinforced regimental group)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.3 (Fold3 image 26, English p.3), Sketch 1 (Fold3 image 40)"
    }
   },
   {
@@ -104590,6 +104959,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 397"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     51.7741
+    ]
+   },
+   "properties": {
+    "claim_id": "C7916",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-16",
+    "place_id": "PL0686",
+    "location_name": "Groesbeek, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "84th Infantry Division night attack toward Nijmegen ordered by Army Group B stalls in defensive fire at Groesbeek",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.3-4 (Fold3 image 26-27, English p.3-4)"
    }
   },
   {
@@ -124637,8 +125047,8 @@
     "location_date": "1944-10-31",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German p.5, English p.5"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German p.5, English p.5; R813: German p.3 (Fold3 image 26), Sketch 1"
    }
   },
   {
@@ -124678,8 +125088,8 @@
     "location_date": "1944-10-31",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German pp.5-6, English pp.5-6"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German pp.5-6, English pp.5-6; R813: German p.3 (Fold3 image 26), Sketch 1"
    }
   },
   {
@@ -156749,6 +157159,211 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7917",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-11-30",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "II Parachute Corps relieved in the Reichswald by LXXXVI Corps and takes over the sector Roermond-Venlo",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.5-6 (Fold3 image 28-29, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0648,
+     51.7549
+    ]
+   },
+   "properties": {
+    "claim_id": "C7918",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-086C",
+    "unit_name": "LXXXVI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL0698",
+    "location_name": "Reichswald (forest), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXXXVI Corps relieves II Parachute Corps in the Reichswald sector (as dated by Blauensteiner)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.5 (Fold3 image 28, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7919",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "A battalion of the 180th Infantry Division holds the Venlo bridgehead, which falls after very heavy artillery fire",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.6 (Fold3 image 29, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7920",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-11-30",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "7th Parachute Division withdrawn from west of the Maas over the river either side of Venlo",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.5-6 (Fold3 image 28-29, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9883,
+     51.1934
+    ]
+   },
+   "properties": {
+    "claim_id": "C7921",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-11-30",
+    "place_id": "PL0949",
+    "location_name": "Roermond, Limburg",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "8th Parachute Division being raised on the Maas between Roermond and Venlo from the parachutists drawn from the",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.5-6 (Fold3 image 28-29, English p.5)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3658,
      49.1401
     ]
@@ -156824,6 +157439,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R023;R002",
     "source_locator": "R023: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4283,
+     51.3047
+    ]
+   },
+   "properties": {
+    "claim_id": "C7922",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-12-01",
+    "place_id": "PL3590",
+    "location_name": "Vorst (Tönisvorst), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "II Parachute Corps command post at Vorst at the beginning of December (text and Sketch 2)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.6 (Fold3 image 29, English p.6), Sketch 2 (Fold3 image 41)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7923",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-01",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "7th Parachute Division flag at Venlo on Sketch 2 (map)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: Sketch 2 (Fold3 image 41)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0798,
+     51.211
+    ]
+   },
+   "properties": {
+    "claim_id": "C7924",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-01",
+    "place_id": "PL3591",
+    "location_name": "Elmpter Wald (Niederkrüchten), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "8th Parachute Division flag near the Elmpter Wald on Sketch 2 (map)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: Sketch 2 (Fold3 image 41)"
    }
   },
   {
@@ -162767,8 +163505,8 @@
     "location_date": "1944-12-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German p.7, English p.7, Sketch 2"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German p.7, English p.7, Sketch 2; R813: German p.6 (Fold3 image 29)"
    }
   },
   {
@@ -170147,8 +170885,8 @@
     "location_date": "1944-12-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German pp.7-8, English pp.7-8, Sketch 2"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German pp.7-8, English pp.7-8, Sketch 2; R813: German pp.5-6 (Fold3 images 28-29)"
    }
   },
   {
@@ -170188,8 +170926,8 @@
     "location_date": "1944-12-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German p.8, English p.8, Sketch 2"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German p.8, English p.8, Sketch 2; R813: German p.6 (Fold3 image 29)"
    }
   },
   {
@@ -188647,6 +189385,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C7926",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-28",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "190th Infantry Division relieves the 7th Parachute Division on the Maas in the II Parachute Corps sector",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.6 (Fold3 image 29, English p.6)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.3158,
      51.5891
     ]
@@ -189173,6 +189952,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R807;R808;R002",
     "source_locator": "R668: p. 454; R807: English p.18, German p.20; R808: German p.8, English p.8, Anlage 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C7925",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-31",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "7th Parachute Division relieved by the 190th Division and moved to the Strasbourg area",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.6 (Fold3 image 29, English p.6)"
    }
   },
   {
@@ -201758,8 +202578,8 @@
     "location_date": "1945-01-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: German pp.8-9, English pp.8-9"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: German pp.8-9, English pp.8-9; R813: German p.5 (Fold3 image 28)"
    }
   },
   {
@@ -214265,6 +215085,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R768;R002",
     "source_locator": "R768: pp. 55, 68"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0931,
+     51.5546
+    ]
+   },
+   "properties": {
+    "claim_id": "C7927",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-01-25",
+    "place_id": "PL0784",
+    "location_name": "Well, Bergen, Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "II Parachute Corps in the sector Well-Velden prepares an attack toward Venray-Horst, cancelled early February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.6 (Fold3 image 29, English p.6)"
    }
   },
   {
@@ -236535,6 +237396,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0787,
+     51.5896
+    ]
+   },
+   "properties": {
+    "claim_id": "C7928",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-15",
+    "place_id": "PL3589",
+    "location_name": "Bergen (Limburg), Limburg (NL)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "190th Infantry Division extends its sector north to Bergen as the 180th Division is drawn into the Reichswald battle",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.8 (Fold3 image 31, English p.8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9417,
+     51.156
+    ]
+   },
+   "properties": {
+    "claim_id": "C7929",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-02-15",
+    "place_id": "PL3592",
+    "location_name": "Linne (Maasgouw), Limburg (NL)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "II Parachute Corps takes the salient south of the Roer near Linne back to the Roer",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.8-9 (Fold3 image 31-32, English p.8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2308,
      51.7291
     ]
@@ -236649,8 +237592,8 @@
     "location_date": "1945-02-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R002",
-    "source_locator": "R777: pp. 3 and 5"
+    "reference_ids": "R777;R813;R002",
+    "source_locator": "R777: pp. 3 and 5; R813: German p.9 (Fold3 image 32)"
    }
   },
   {
@@ -237592,8 +238535,8 @@
     "location_date": "1945-02-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R806;R002",
-    "source_locator": "R668: p. 491; R806: German p.12, English p.12, Sketch 3"
+    "reference_ids": "R668;R806;R813;R002",
+    "source_locator": "R668: p. 491; R806: German p.12, English p.12, Sketch 3; R813: German p.9 (Fold3 image 32)"
    }
   },
   {
@@ -243546,6 +244489,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2736,
+     51.6686
+    ]
+   },
+   "properties": {
+    "claim_id": "C7930",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-20",
+    "place_id": "PL0696",
+    "location_name": "Udem, Uedem, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "First parts of the 8th Parachute Division march from the corps left flank to the area east of the Reichswald",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9883,
+     51.1934
+    ]
+   },
+   "properties": {
+    "claim_id": "C7931",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-406",
+    "unit_name": "406th Landesschützen Division (Division z.b.V. 406)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL0949",
+    "location_name": "Roermond, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Division 406 with two training regiments replaces the 8th Parachute Division on the II Parachute Corps left flank",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0142,
      51.6346
     ]
@@ -244079,6 +245104,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9883,
+     51.1934
+    ]
+   },
+   "properties": {
+    "claim_id": "C7932",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-063C",
+    "unit_name": "LXIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0949",
+    "location_name": "Roermond, Limburg",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LXIII Corps takes over the former II Parachute Corps sector on the Maas",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1593,
+     51.6756
+    ]
+   },
+   "properties": {
+    "claim_id": "C7933",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-02-23",
+    "place_id": "PL0758",
+    "location_name": "Goch, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "15th Panzergrenadier and 7th Parachute Divisions in the Goch sector placed under II Parachute Corps",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.9 (Fold3 image 32, English p.8-9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3713,
      51.6994
     ]
@@ -244152,8 +245259,8 @@
     "location_date": "1945-02-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R668;R806;R002",
-    "source_locator": "R777: p. 3 and Skizze 2; R668: p. 495; R806: English pp.12-13, Sketch 4"
+    "reference_ids": "R777;R668;R806;R813;R002",
+    "source_locator": "R777: p. 3 and Skizze 2; R668: p. 495; R806: English pp.12-13, Sketch 4; R813: German p.9 (Fold3 image 32), Sketch 3"
    }
   },
   {
@@ -245261,6 +246368,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R809;R002",
     "source_locator": "R809: German p.20, English p.22"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2736,
+     51.6686
+    ]
+   },
+   "properties": {
+    "claim_id": "C7934",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-25",
+    "place_id": "PL0696",
+    "location_name": "Udem, Uedem, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "15th Panzergrenadier Division flag near Udem on Sketch 3 (map)",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: Sketch 3 (Fold3 image 42)"
    }
   },
   {
@@ -251929,7 +253077,7 @@
     "location_name": "Kevelaer, North Rhine-Westphalia",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.3,
+    "confidence": 0.7,
     "event_type": "subordinate_assignment",
     "current_activity": "takes over the 190th Division and extends its responsibility south to Kempen; 86th Corps headquarters evacuated across the Rhine",
     "operation_id": "OP-BLOCKBUSTER",
@@ -251942,8 +253090,8 @@
     "location_date": "1945-02-28",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 509"
+    "reference_ids": "R668;R813;R002",
+    "source_locator": "R668: p. 509; R813: German p.10 (Fold3 image 33)"
    }
   },
   {
@@ -251970,7 +253118,7 @@
     "location_name": "Kevelaer, North Rhine-Westphalia",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.3,
+    "confidence": 0.7,
     "event_type": "subordinate_assignment",
     "current_activity": "passes to the 2nd Parachute Corps",
     "operation_id": "OP-BLOCKBUSTER",
@@ -251983,8 +253131,8 @@
     "location_date": "1945-02-28",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 509"
+    "reference_ids": "R668;R813;R002",
+    "source_locator": "R668: p. 509; R813: German p.10 (Fold3 image 33)"
    }
   },
   {
@@ -252477,6 +253625,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R777;R002",
     "source_locator": "R777: Skizze 3, English Appendix 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6007,
+     51.4887
+    ]
+   },
+   "properties": {
+    "claim_id": "C7935",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL3554",
+    "location_name": "Repelen (Moers), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "190th Infantry Division extends its left wing to Repelen",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.10 (Fold3 image 33, English p.9-10)"
    }
   },
   {
@@ -253377,8 +254566,8 @@
     "location_date": "1945-03-03",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 514"
+    "reference_ids": "R668;R813;R002",
+    "source_locator": "R668: p. 514; R813: German p.10 (Fold3 image 33)"
    }
   },
   {
@@ -260725,6 +261914,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5448,
+     51.5797
+    ]
+   },
+   "properties": {
+    "claim_id": "C7936",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-06",
+    "place_id": "PL0764",
+    "location_name": "Alpen, Rheinberg, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Alpen lost in the 7th Parachute Division sector; front taken back to the railway Birten-Alpen-Millingen",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.10 (Fold3 image 33, English p.10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.2442,
      50.5792
     ]
@@ -260839,8 +262069,8 @@
     "location_date": "1945-03-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R668;R002",
-    "source_locator": "R777: p. 17 and Skizze 4; R668: p. 519"
+    "reference_ids": "R777;R668;R813;R002",
+    "source_locator": "R777: p. 17 and Skizze 4; R668: p. 519; R813: German p.11 (Fold3 image 34)"
    }
   },
   {
@@ -260882,6 +262112,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 519"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4771,
+     51.6336
+    ]
+   },
+   "properties": {
+    "claim_id": "C7937",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-07",
+    "place_id": "PL1100",
+    "location_name": "Birten, Xanten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "15th Panzergrenadier Division remnants (battalion strength) left in the Wesel bridgehead under II Parachute Corps",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.11 (Fold3 image 34, English p.10-11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4771,
+     51.6336
+    ]
+   },
+   "properties": {
+    "claim_id": "C7938",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-07",
+    "place_id": "PL1100",
+    "location_name": "Birten, Xanten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "116th Panzer Division remnants (battalion strength) left in the Wesel bridgehead under II Parachute Corps",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.11 (Fold3 image 34, English p.10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4771,
+     51.6336
+    ]
+   },
+   "properties": {
+    "claim_id": "C7939",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-07",
+    "place_id": "PL1100",
+    "location_name": "Birten, Xanten, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Panzer Lehr Division remnants (battalion strength) in the Wesel bridgehead under II Parachute Corps",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.11 (Fold3 image 34, English p.10-11)"
    }
   },
   {
@@ -261290,8 +262643,8 @@
     "location_date": "1945-03-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English p.18, Sketch 5"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: English p.18, Sketch 5; R813: German p.10 (Fold3 image 33)"
    }
   },
   {
@@ -261333,6 +262686,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R002",
     "source_locator": "R806: English p.18, Sketch 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6006,
+     51.5467
+    ]
+   },
+   "properties": {
+    "claim_id": "C7940",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-03-08",
+    "place_id": "PL0440",
+    "location_name": "Rheinberg, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Wesel bridgehead front pressed back to east of Xanten and the road Grünthal-Rheinberg-Ossenberg",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R813;R002",
+    "source_locator": "R813: German p.12 (Fold3 image 35, English p.11)"
    }
   },
   {
@@ -261823,8 +263217,8 @@
     "location_date": "1945-03-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English p.19"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: English p.19; R813: German p.12 (Fold3 image 35)"
    }
   },
   {
@@ -262028,8 +263422,8 @@
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R668;R002",
-    "source_locator": "R777: p. 18; R668: pp. 519, 522"
+    "reference_ids": "R777;R668;R813;R002",
+    "source_locator": "R777: p. 18; R668: pp. 519, 522; R813: German pp.12-13 (Fold3 images 35-36)"
    }
   },
   {
@@ -262110,8 +263504,8 @@
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English p.20, Sketch 6"
+    "reference_ids": "R806;R813;R002",
+    "source_locator": "R806: English p.20, Sketch 6; R813: German pp.12-13 (Fold3 images 35-36)"
    }
   },
   {

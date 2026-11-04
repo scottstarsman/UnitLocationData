@@ -8678,7 +8678,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -11358,7 +11358,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 9
+    "claims_count": 14
    }
   },
   {
@@ -11378,7 +11378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 24
+    "claims_count": 25
    }
   },
   {
@@ -12198,7 +12198,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -13538,7 +13538,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -13738,7 +13738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 10
+    "claims_count": 12
    }
   },
   {
@@ -13778,7 +13778,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 18
+    "claims_count": 19
    }
   },
   {
@@ -14938,7 +14938,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 7
    }
   },
   {
@@ -14958,7 +14958,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -15078,7 +15078,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 15
+    "claims_count": 16
    }
   },
   {
@@ -15478,7 +15478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -17038,7 +17038,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 6
+    "claims_count": 8
    }
   },
   {
@@ -18718,7 +18718,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 9
+    "claims_count": 12
    }
   },
   {
@@ -21738,7 +21738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 7
    }
   },
   {
@@ -65698,7 +65698,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -65718,7 +65718,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -70778,7 +70778,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -71458,6 +71458,86 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0787,
+     51.5896
+    ]
+   },
+   "properties": {
+    "place_id": "PL3589",
+    "name": "Bergen (Limburg), Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg (NL)",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4283,
+     51.3047
+    ]
+   },
+   "properties": {
+    "place_id": "PL3590",
+    "name": "Vorst (Tönisvorst), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0798,
+     51.211
+    ]
+   },
+   "properties": {
+    "place_id": "PL3591",
+    "name": "Elmpter Wald (Niederkrüchten), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9417,
+     51.156
+    ]
+   },
+   "properties": {
+    "place_id": "PL3592",
+    "name": "Linne (Maasgouw), Limburg (NL)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg (NL)",
     "claims_count": 1
    }
   }

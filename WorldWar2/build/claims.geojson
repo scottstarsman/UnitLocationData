@@ -2498,8 +2498,8 @@
     "location_date": "1944-06-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R830;R831;R002",
-    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4); R831: German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59)"
+    "reference_ids": "R830;R831;R832;R002",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4); R831: German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59); R832: German p.7 (Fold3 page 12)"
    }
   },
   {
@@ -2539,8 +2539,8 @@
     "location_date": "1944-06-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R002",
-    "source_locator": "R831: German p.1 (Fold3 page 4) and English p.12 (Fold3 page 57)"
+    "reference_ids": "R831;R832;R002",
+    "source_locator": "R831: German p.1 (Fold3 page 4) and English p.12 (Fold3 page 57); R832: German p.6 (Fold3 page 11)"
    }
   },
   {
@@ -2580,8 +2580,8 @@
     "location_date": "1944-06-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R002",
-    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58)"
+    "reference_ids": "R831;R832;R002",
+    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.13 (Fold3 page 58); R832: German p.3 (Fold3 page 8)"
    }
   },
   {
@@ -2621,8 +2621,8 @@
     "location_date": "1944-06-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R831;R002",
-    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.14 (Fold3 page 59)"
+    "reference_ids": "R831;R832;R002",
+    "source_locator": "R831: German p.3 (Fold3 page 6) and English p.14 (Fold3 page 59); R832: German p.5 (Fold3 page 10)"
    }
   },
   {
@@ -3605,8 +3605,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R125;R830;R831;R001",
-    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4); R831: German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59)"
+    "reference_ids": "R449;R125;R830;R831;R832;R001",
+    "source_locator": "R830: German p.1 (Fold3 page 19) and English p.1 (Fold3 page 4); R831: German p.4 (Fold3 page 7) and English p.14 (Fold3 page 59); R832: German p.8 (Fold3 page 13)"
    }
   },
   {
@@ -3933,8 +3933,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R141;R059;R137;R001",
-    "source_locator": null
+    "reference_ids": "R449;R141;R059;R137;R832;R001",
+    "source_locator": "R832: German p.8 (Fold3 page 13)"
    }
   },
   {
@@ -4140,6 +4140,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R106;R150;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0293,
+     49.1917
+    ]
+   },
+   "properties": {
+    "claim_id": "C8215",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-09",
+    "place_id": "PL1196",
+    "location_name": "Saint-Clair-sur-l'Elle, Manche",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "352nd Infantry Division still around Saint-Clair with its west wing on the Vire as II Parachute Corps arrives",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R832;R002",
+    "source_locator": "R832: German p.8 (Fold3 page 13)"
    }
   },
   {
@@ -5286,8 +5327,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R115;R446;R132;R001",
-    "source_locator": null
+    "reference_ids": "R115;R446;R132;R832;R001",
+    "source_locator": "R832: German p.9 (Fold3 page 14)"
    }
   },
   {
@@ -5575,6 +5616,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R111;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8917,
+     49.1833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8216",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-12",
+    "place_id": "PL0149",
+    "location_name": "Forêt de Cerisy",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "3rd Parachute Division fighting units arrive on 12 June and take over the Forêt de Cerisy front",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R832;R002",
+    "source_locator": "R832: German p.9 (Fold3 page 14)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C8217",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPG-017D",
+    "unit_name": "17th SS Panzergrenadier Division Götz von Berlichingen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-12",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "17th SS Panzergrenadier Division arrives around Saint-Lô; committed west of the Vire toward Carentan instead of north of the Forêt de Cerisy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R832;R002",
+    "source_locator": "R832: German p.9 (Fold3 page 14)"
    }
   },
   {
@@ -9386,8 +9509,8 @@
     "location_date": "1944-06-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R774;R002",
-    "source_locator": "R774: Skizze 9 and Skizze 14"
+    "reference_ids": "R774;R832;R002",
+    "source_locator": "R774: Skizze 9 and Skizze 14; R832: German p.34 (Fold3 page 39)"
    }
   },
   {
@@ -16358,6 +16481,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 653 (Appendix D)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C8218",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-30",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "352nd Infantry Division forced back to about 6 km north of Saint-Lô; corps commits its last reserve",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R832;R002",
+    "source_locator": "R832: German p.31 (Fold3 page 36)"
    }
   },
   {
@@ -24073,6 +24237,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0856,
+     48.9952
+    ]
+   },
+   "properties": {
+    "claim_id": "C8219",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-07-16",
+    "place_id": "PL1081",
+    "location_name": "Fervaches, Tessy-Bocage, Manche",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Hausser confers with Meindl at the II Parachute Corps command post near Fervaches; Meindl asks to give up Saint-Lô",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R832;R002",
+    "source_locator": "R832: German p.35 (Fold3 page 40)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2997,
      49.2786
     ]
@@ -24474,8 +24679,8 @@
     "location_date": null,
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": null,
-    "reference_ids": "R588;R180;R830;R001",
-    "source_locator": "R588: p. 174, 173; R180: Einsatz und Unterstellung (18 July 1944 entry); R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)"
+    "reference_ids": "R588;R180;R830;R832;R001",
+    "source_locator": "R588: p. 174, 173; R180: Einsatz und Unterstellung (18 July 1944 entry); R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7); R832: English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
    }
   },
   {
@@ -24515,8 +24720,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R180;R588;R830;R001",
-    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7)"
+    "reference_ids": "R180;R588;R830;R832;R001",
+    "source_locator": "R180: Einsatz und Unterstellung (18 July 1944 entry); R588: p. 174; R830: German p.3 (Fold3 page 21) and English p.4 (Fold3 page 7); R832: English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
    }
   },
   {
@@ -27223,6 +27428,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R002",
     "source_locator": "R670: p. 347"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1567,
+     49.0706
+    ]
+   },
+   "properties": {
+    "claim_id": "C8220",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-352D",
+    "unit_name": "352nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-19",
+    "place_id": "PL1222",
+    "location_name": "Canisy, Manche",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "after the fall of Saint-Lô the 352nd Infantry Division covers south of the town along Saint-Thomas-Canisy and withdraws over the Vire",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R832;R002",
+    "source_locator": "R832: English p.37 (bundle Fold3 page 52, https://www.fold3.com/image/160230997/)"
    }
   },
   {

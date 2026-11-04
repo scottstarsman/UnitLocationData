@@ -3829,3 +3829,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims:** `C8212` (corps at Quintin), `C8213` (3rd Parachute Division at Huelgoat), `C8214` (5th Parachute Division at Rennes), all 0.3 with the inferred date 1944-06-06 (old value none; reason: positions held from early May until the move order of 6 June, and no campaign covers May 1944); parents blank. Places `PL3711`-`PL3712`.
 - **Corroborations (no confidence raised, FMS family):** `R831` appended to `C8210`, `C0052` (move order of 6 June).
 - **Notes only:** strengths and equipment. Roadmap 299-300. Scenario 159.
+
+## fms-fold3-german-2: FMS B-401 German original with English continuation, Meindl, II Parachute Corps late winter 1943-24 July 1944 (4 November 2026)
+
+- **Source:** FMS B-401 (`R832`, new; resolves roadmap 297), German original Fold3 pages 6-41 primary (dated 11 April 1946; English sheet May 1946); the German scan stops about 17-18 July, so later facts come from the English continuation (bundle Fold3 pages 49-56), stated in each such row.
+- **New claims:** `C8215` (352nd Division around Saint-Clair, 9 June), `C8216` (3rd Parachute Division at the Forêt de Cerisy, 12 June), `C8217` (17th SS around Saint-Lô, 12 June), `C8218` (352nd Division about 6 km north of Saint-Lô, end of June; inferred date old none, new 1944-06-30), `C8219` (corps command post Fervaches, 16 July), `C8220` (352nd Division south of Saint-Lô toward Canisy, English only; inferred date old none, new 1944-07-19). Parents blank; no new places.
+- **Corroborations (no confidence raised, FMS family):** `R832` appended to `C8212`, `C8213`, `C8214`, `C8210`, `C0052`, `C0057`, `C0081`, `C2205`, `C0803`, `C0804`.
+- **Roadmap:** 297 resolved; 301-303 added. Scenario 160.

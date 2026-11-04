@@ -12978,7 +12978,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Schleswig-Holstein",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -15278,7 +15278,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -15338,7 +15338,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -71598,7 +71598,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Niedersachsen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -74958,6 +74958,86 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5159,
+     53.2682
+    ]
+   },
+   "properties": {
+    "place_id": "PL3764",
+    "name": "Nutzfelde (Scharnebeck), Lower Saxony",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Lower Saxony",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4904,
+     53.4419
+    ]
+   },
+   "properties": {
+    "place_id": "PL3765",
+    "name": "Gülzow (Herzogtum Lauenburg), Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5277,
+     53.9891
+    ]
+   },
+   "properties": {
+    "place_id": "PL3766",
+    "name": "Hohenaspe, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.25,
+     53.5
+    ]
+   },
+   "properties": {
+    "place_id": "PL3767",
+    "name": "Wentorf bei Hamburg, Schleswig-Holstein",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Schleswig-Holstein",
     "claims_count": 1
    }
   }

@@ -307178,6 +307178,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.0811,
+     52.6241
+    ]
+   },
+   "properties": {
+    "claim_id": "C8322",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL0774",
+    "location_name": "Celle, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Blumentritt arrives at Celle on the morning of 10 April and takes over the army front between Weser and Elbe from Student; command post No. 1 at Celle on 10-11 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.1 (Fold3 image 41), Skizze 4 (image 70)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.236,
+     52.9405
+    ]
+   },
+   "properties": {
+    "claim_id": "C8329",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-MARI-002D",
+    "unit_name": "2nd Marine Infantry Division (2. Marine-Infanterie-Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Navy",
+    "date": "1945-04-10",
+    "place_id": "PL0777",
+    "location_name": "Verden (Aller), Niedersachsen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "the 2nd Marine Infantry Division, under Armee Blumentritt, stands on the Aller on both sides of Verden to near Schwarmstedt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.5 (Fold3 image 45), Skizze 1 (image 75)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -308442,6 +308524,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R826;R827;R002",
     "source_locator": "R826: German p.12 (Fold3 page 14) and English p.13 (Fold3 page 35); R827: p.4 (Fold3 page 9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8399,
+     52.9844
+    ]
+   },
+   "properties": {
+    "claim_id": "C8323",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL3595",
+    "location_name": "Soltau, Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "army staff moves to a Reich Labour Service camp east of Soltau on the Soltau-Lüneburg road (command post No. 2, to about 13 April)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.11 (Fold3 image 51), Skizze 4 (image 70)"
    }
   },
   {
@@ -309884,6 +310007,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.5159,
+     53.2682
+    ]
+   },
+   "properties": {
+    "claim_id": "C8324",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL3764",
+    "location_name": "Nutzfelde (Scharnebeck), Lower Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "command post No. 3 at Nutzfelde [?] north-east of Lüneburg, to about 15 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.12 (Fold3 image 52), Skizze 4 (images 70, 78-79)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.25,
      51.8333
     ]
@@ -310654,8 +310818,8 @@
     "location_date": "1945-04-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R567;R814;R002",
-    "source_locator": "R567: p. 399, 400; R814: German p.34 (Fold3 image 93), Anlage 4 (Fold3 image 112)"
+    "reference_ids": "R567;R814;R844;R002",
+    "source_locator": "R567: p. 399, 400; R814: German p.34 (Fold3 image 93), Anlage 4 (Fold3 image 112); R844: German p.12 (Fold3 image 52)"
    }
   },
   {
@@ -311843,8 +312007,8 @@
     "location_date": "1945-04-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.33-34 (Fold3 image 92-93), Anlage 4 (Fold3 image 112)"
+    "reference_ids": "R814;R844;R002",
+    "source_locator": "R814: German p.33-34 (Fold3 image 92-93), Anlage 4 (Fold3 image 112); R844: German p.12 (Fold3 image 52)"
    }
   },
   {
@@ -311927,6 +312091,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R840;R002",
     "source_locator": "R840: German pp.3-4 (Fold3 pages 17-18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.4904,
+     53.4419
+    ]
+   },
+   "properties": {
+    "claim_id": "C8325",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL3765",
+    "location_name": "Gülzow (Herzogtum Lauenburg), Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "command post No. 4 near Gülzow [?] by Lauenburg, until 23 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: Skizze 4 (Fold3 images 70, 78-79)"
    }
   },
   {
@@ -317296,8 +317501,8 @@
     "location_date": "1945-04-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.34-35 (Fold3 image 93-94)"
+    "reference_ids": "R814;R844;R002",
+    "source_locator": "R814: German p.34-35 (Fold3 image 93-94); R844: German p.12-13 (Fold3 images 52-53)"
    }
   },
   {
@@ -323569,8 +323774,8 @@
     "location_date": "1945-04-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123)"
+    "reference_ids": "R814;R844;R002",
+    "source_locator": "R814: Skizze 6 (Fold3 image 141), German p.64 (Fold3 image 123); R844: Skizze 4 (Fold3 images 70, 78-79)"
    }
   },
   {
@@ -325250,8 +325455,8 @@
     "location_date": "1945-04-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.36-38 (Fold3 image 95-97)"
+    "reference_ids": "R814;R844;R002",
+    "source_locator": "R814: German p.36-38 (Fold3 image 95-97); R844: German p.15-16 (Fold3 images 55-56)"
    }
   },
   {
@@ -325744,6 +325949,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 597-598"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5514,
+     53.379
+    ]
+   },
+   "properties": {
+    "claim_id": "C8330",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-29",
+    "place_id": "PL0658",
+    "location_name": "Lauenburg/Elbe, Schleswig-Holstein",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "by order of OB Nordwest the 245th Infantry Division, assembled near Schwarzenbek, counter-attacks towards Lauenburg west of the Elbe-Trave Canal against the British Elbe crossing, its last action",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.16 (Fold3 image 56)"
    }
   },
   {
@@ -330425,6 +330671,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.5277,
+     53.9891
+    ]
+   },
+   "properties": {
+    "claim_id": "C8326",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-03",
+    "place_id": "PL3766",
+    "location_name": "Hohenaspe, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "command post No. 6 at Hohenaspe from 3 May; the staff stays there after the capitulation",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8333,
      47.7833
     ]
@@ -331853,6 +332140,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R826;R002",
     "source_locator": "R826: German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.5277,
+     53.9891
+    ]
+   },
+   "properties": {
+    "claim_id": "C8327",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL3766",
+    "location_name": "Hohenaspe, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "\"capitulation on the battlefield\" for the army area takes effect early on 5 May; orders of the day issued by \"Armeegruppe Blumentritt\" from its headquarters",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.19 (Fold3 image 59), Anlagen 2-3 (images 72-73)"
    }
   },
   {
@@ -340832,6 +341160,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R818;R002",
     "source_locator": "R818: German p.10 (Fold3 image 14, English p.10-11, Fold3 image 36-37)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.25,
+     53.5
+    ]
+   },
+   "properties": {
+    "claim_id": "C8328",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-BLUMT",
+    "unit_name": "Army Blumentritt (Armee Blumentritt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-10",
+    "place_id": "PL3767",
+    "location_name": "Wentorf bei Hamburg, Schleswig-Holstein",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "with British Second Army approval the staff moves from Hohenaspe to Wentorf near Bergedorf (command post No. 7)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R844;R002",
+    "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70)"
    }
   }
  ]

@@ -3976,3 +3976,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 
 - `scripts/validate.py`: old behaviour, a warning "place ... has no claim: remove it or add the claim" for every place with no claim; new behaviour, no warning; reason: Scott accepts places with no claims (4 November 2026). The coord_reference_id check for places with claims is unchanged. No data changed.
 
+## fms-fold3-german-2: FMS B-361 German original, Blumentritt, Armee Blumentritt 10 April-31 May 1945 (4 November 2026)
+
+- **Source:** FMS B-361 (`R844`, new), German original (Fold3 images 35-79) read in full; the English translation (images 1-34) was **not** checked. Allendorf, February 1947.
+- **Headquarters sequence (`GER-ARMY-BLUMT`, sketch 4 and text):** `C8322` Celle 10 April (0.5), `C8323` camp east of Soltau about 12 April (0.3; old value none, new value 12 April, reason: "11 or 12 April"), `C8324` Nutzfelde [?] about 14 April (0.3; new value 14 April, reason: between "to about 13" and "to about 15 April"), `C8325` Gülzow [?] about 16 April to 23 April (0.3; new value 16 April, reason: follows No. 3), No. 5 Bad Bramstedt area from 24 April = existing `C7980` (R844 appended), `C8326` Hohenaspe from 3 May (0.5), `C8327` capitulation on the battlefield 5 May (0.5), `C8328` Wentorf near Bergedorf about 10 May (0.3, approximate day). The dissolution of the staff at Wentorf on 31 May is not a row: no campaign streamer covers the date (roadmap 330).
+- **Units under the army:** new unit `GER-MARI-002D` 2nd Marine Infantry Division (domain ground, branch Navy) with `C8329` on the Aller at Verden 10 April (0.5); `C8330` 245th Infantry Division counter-attack towards Lauenburg 29 April (0.5). Subordination (2nd Marine Division, Korps Ems with the 15th Panzergrenadier Division, Stäbe Holste and Witthöft, XXXIX Panzer Corps with Panzer Division Clausewitz, II Parachute Corps with the 8th Parachute Division, the 245th Division as OB Nordwest reserve) is recorded in the claim notes and roadmap 330, not as relations (single source, parents blank).
+- **New places:** `PL3764`-`PL3767` (Nutzfelde, Gülzow, Hohenaspe, Wentorf bei Hamburg; Nominatim).
+- **Corroborations (no raises, FMS family or no exact day):** `R844` appended to `C7976`, `C7977`, `C1263`, `C7980`, `C7981`.
+- **Open:** roadmap 329-330. **Tests:** scenario 175. Next free: `C8331`, `PL3768`, `R845`, `CR1072`, `G065`, scenario 176, roadmap 331.
+

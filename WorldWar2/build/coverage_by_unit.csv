@@ -41,7 +41,7 @@ GER-ARMY-015A,Fifteenth Army,Germany,army,Army,1944-08-28,1945-04-13,228,43,0,2,
 GER-ARMY-019A,Nineteenth Army (Germany),Germany,army,Army,1944-09-18,1945-05-05,229,51,0,1,24,26,16,0.314,5,fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;okw_kriegstagebuch_schramm;us_army_cmh,21,1945-03-05,1945-03-26,0,
 GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,army,Army,1945-02-15,1945-05-04,78,5,0,0,3,2,0,0.000,2,fms_german_manuscript;us_army_cmh,45,1945-02-15,1945-04-01,1,1945-03
 GER-ARMY-025A,Twenty-fifth Army (Germany),Germany,army,Army,1944-11-10,1945-05-05,176,13,0,0,4,9,0,0.000,5,avalon_law_yale_edu;canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;us_army_cmh,70,1944-11-25,1945-02-03,2,1944-12;1945-01
-GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,1945-04-02,1945-05-01,29,6,0,0,1,5,0,0.000,3,canada_ca;fms_german_manuscript;us_army_cmh,17,1945-04-07,1945-04-24,0,
+GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,1945-04-02,1945-05-10,38,13,0,0,4,9,0,0.000,3,canada_ca;fms_german_manuscript;us_army_cmh,8,1945-04-16,1945-04-24,0,
 GER-COR-030C,XXX Corps,Germany,corps,Army,1944-11-10,1945-05-08,179,6,0,0,0,6,0,0.000,2,canada_ca;fms_german_manuscript,68,1945-02-03,1945-04-12,2,1945-01;1945-03
 GER-COR-053C,LIII Corps,Germany,corps,Army,1944-12-15,1945-04-18,124,9,0,1,4,4,0,0.000,3,fms_german_manuscript;lexikon_wehrmacht_de;us_army_cmh,37,1944-12-15,1945-01-21,0,
 GER-COR-063C,LXIII Corps,Germany,corps,Army,1944-11-18,1945-03-20,122,21,0,0,2,19,8,0.381,5,canada_ca;delattre_french_first_army;fms_german_manuscript;loc_12ag_situation_maps;us_army_cmh,45,1944-12-06,1945-01-20,0,
@@ -97,7 +97,7 @@ GER-INF-190D,190th Infantry Division,Germany,division,Army,1944-09-21,1945-04-10
 GER-INF-198D,198th Infantry Division,Germany,division,Army,1944-08-24,1945-04-18,237,42,0,0,6,36,27,0.643,6,delattre_french_first_army;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;us_army_cmh,22,1944-08-24,1944-09-15,0,
 GER-INF-226D,226th Infantry Division,Germany,division,Army,1944-09-05,1944-12-15,101,3,0,0,0,3,1,0.333,4,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps,94,1944-09-12,1944-12-15,2,1944-10;1944-11
 GER-INF-243D,243rd Static Infantry Division,Germany,division,Army,1944-06-06,1944-08-01,56,7,0,0,2,5,3,0.429,4,lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh;wikipedia,15,1944-07-03,1944-07-18,0,
-GER-INF-245D,245th Infantry Division,Germany,division,Army,1944-09-05,1945-04-28,235,46,0,0,7,39,24,0.522,6,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;us_army_cmh,18,1945-03-28,1945-04-15,0,
+GER-INF-245D,245th Infantry Division,Germany,division,Army,1944-09-05,1945-04-29,236,47,0,0,8,39,24,0.511,6,canada_ca;fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;nara_captured_german_records;us_army_cmh,18,1945-03-28,1945-04-15,0,
 GER-INF-269D,269th Infantry Division,Germany,division,Army,1944-10-31,1945-01-23,84,14,0,0,1,13,10,0.714,4,fms_german_manuscript;lexikon_wehrmacht_de;loc_12ag_situation_maps;us_army_cmh,17,1944-11-28,1944-12-15,0,
 GER-INF-271D,271st Infantry Division,Germany,division,Army,1944-07-12,1944-08-15,34,8,0,0,3,5,5,0.625,3,canada_ca;lexikon_wehrmacht_de;loc_12ag_situation_maps,7,1944-07-18,1944-07-25,0,
 GER-INF-272D,272nd Infantry Division,Germany,division,Army,1944-07-11,1944-09-05,56,11,0,0,3,8,8,0.727,3,canada_ca;lexikon_wehrmacht_de;loc_12ag_situation_maps,7,1944-07-25,1944-08-01,0,
@@ -141,6 +141,7 @@ GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,1944-09-15,1945-01
 GER-LFD-016D,16th Luftwaffe Field Division,Germany,division,Luftwaffe,1944-06-06,1944-07-08,32,4,0,0,2,2,0,0.000,2,canada_ca;fms_german_manuscript,23,1944-06-15,1944-07-08,0,
 GER-LFD-017D,17th Luftwaffe Field Division,Germany,division,Luftwaffe,1944-08-27,1944-08-27,0,1,0,0,1,0,0,0.000,1,canada_ca,0,,,0,
 GER-LL-091D,91st Luftlande Division,Germany,division,Army,1944-06-06,1944-08-01,56,10,0,0,3,7,6,0.600,3,loc_12ag_situation_maps;us_army_cmh;wikipedia,13,1944-06-20,1944-07-03,0,
+GER-MARI-002D,2nd Marine Infantry Division (2. Marine-Infanterie-Division),Germany,division,Navy,1945-04-10,1945-04-10,0,1,0,0,1,0,0,0.000,1,fms_german_manuscript,0,,,0,
 GER-OBNW-000H,Oberbefehlshaber Nordwest (OB Nordwest),Germany,other,Army,1945-04-08,1945-05-04,26,4,0,0,4,0,0,0.000,1,fms_german_manuscript,15,1945-04-09,1945-04-24,0,
 GER-OBW-000H,Oberbefehlshaber West (OB West),Germany,other,Army,1944-06-06,1945-04-25,323,14,0,2,5,7,0,0.000,5,canada_ca;fms_german_manuscript;okw_kriegstagebuch_schramm;us_army_cmh;wikipedia,60,1944-07-03,1944-09-01,3,1944-08;1944-10;1944-12
 GER-OKW-000H,Oberkommando der Wehrmacht (OKW),Germany,other,Army,1945-05-07,1945-05-08,1,2,0,2,0,0,0,0.000,2,avalon_law_yale_edu;us_army_cmh,1,1945-05-07,1945-05-08,0,

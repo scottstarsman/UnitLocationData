@@ -3851,3 +3851,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New places:** `PL3713` Kronenburg, `PL3714` Brück (Ahrbrück), `PL3715` Altwied, `PL3716` Rheinbrohl, `PL3717` Neuwied (Nominatim).
 - **Corroborations (no confidence raised, FMS family):** `R834` appended to `C1160` (Remagen bridgehead to LXVII Corps at 0100 on 7 March), `C1169` (272nd VGD), `C1167` (26th VGD) opposite the Remagen bridgehead.
 - **Not entered:** units without ids and uncertain command posts (roadmap 306-307). Strengths in the private notes only. Scenario 162.
+
+## fms-fold3-german-2: FMS B-309 English translation, Hitzfeld, LXVII Corps 22 March-19 April 1945 (4 November 2026)
+
+- **Source:** FMS B-309 (`R835`, new; not previously a reference), English translation only, no German original (Allendorf, 22 August 1946; Fold3 pages 91-131).
+- **New claims (parents blank):** LXVII Corps `C8227` Lich 27 March (0.5), `C8228` Ulrichstein 29 March (0.5), `C8229` Elgershausen 31 March (0.3, [?] reading; date set to the first day after the night arrival, old none, new 1945-03-31), `C8230` Gertenbach 2 April (0.5), `C8232` Steinthaleben about 11 April (0.3; inferred date old none, new 1945-04-11, typed 11.12.4), `C8233` Thale, battle ended 1915 on 19 April (0.5); Eleventh Army `C8231` Adelebsen 3 April (0.3).
+- **New places:** `PL3718`-`PL3724` (Lich, Ulrichstein, Elgershausen, Gertenbach, Adelebsen, Steinthaleben, Thale; Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R835` appended to `C1207` and `C1208` (Eleventh Army command 2-8 April).
+- **Not entered:** roadmap 308-310 (308 needs Scott's decision on B-414 rows C7949/C7959). Scenario 163.

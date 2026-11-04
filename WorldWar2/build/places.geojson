@@ -10898,7 +10898,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 28
+    "claims_count": 31
    }
   },
   {
@@ -12238,7 +12238,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 17
+    "claims_count": 19
    }
   },
   {
@@ -12338,7 +12338,7 @@
     "precision_km": 1,
     "country": "DE",
     "region": "Hesse",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -13798,7 +13798,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -13818,7 +13818,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -14778,7 +14778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -20898,7 +20898,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -32258,7 +32258,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -50778,7 +50778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -51398,7 +51398,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -68478,7 +68478,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -68558,7 +68558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Holland",
-    "claims_count": 5
+    "claims_count": 8
    }
   },
   {
@@ -68658,7 +68658,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -72118,6 +72118,46 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2777,
+     51.1424
+    ]
+   },
+   "properties": {
+    "place_id": "PL3622",
+    "name": "Wegberg, North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3147,
+     50.9623
+    ]
+   },
+   "properties": {
+    "place_id": "PL3623",
+    "name": "Tetz (Linnich), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

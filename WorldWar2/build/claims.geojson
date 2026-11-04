@@ -215452,8 +215452,8 @@
     "location_date": "1945-01-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R538;R425;R187;R815;R002",
-    "source_locator": "R538: p. 177; R425: p. 548; R187: Lebenslauf, commander list; R815: Anlage 1 (Fold3 image 61)"
+    "reference_ids": "R538;R425;R187;R815;R819;R002",
+    "source_locator": "R538: p. 177; R425: p. 548; R187: Lebenslauf, commander list; R815: Anlage 1 (Fold3 image 61); R819: German p.4 (Fold3 image 28)"
    }
   },
   {
@@ -215616,8 +215616,8 @@
     "location_date": "1945-01-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R768;R002",
-    "source_locator": "R768: pp. 49-52"
+    "reference_ids": "R768;R819;R002",
+    "source_locator": "R768: pp. 49-52; R819: German p.2 (Fold3 image 26)"
    }
   },
   {
@@ -221857,6 +221857,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2777,
+     51.1424
+    ]
+   },
+   "properties": {
+    "claim_id": "C8020",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-01-31",
+    "place_id": "PL3622",
+    "location_name": "Wegberg, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Blumentritt hands the deputy command of XII SS Corps to Bayerlein at the corps staff quarters at Wegberg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0014,
+     51.1431
+    ]
+   },
+   "properties": {
+    "claim_id": "C8021",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-31",
+    "place_id": "PL1628",
+    "location_name": "Sint Odiliënberg, Limburg",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "176th Division on the east bank of the Roer at the XII SS Corps right wing, St. Odilienberg; weak outposts west of the river",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-31",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.191,
+     51.0983
+    ]
+   },
+   "properties": {
+    "claim_id": "C8022",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-31",
+    "place_id": "PL2585",
+    "location_name": "Myhl, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "183rd Volksgrenadier Division on the east bank of the Roer in the XII SS Corps centre; weak outposts west of the river",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-31",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3147,
+     50.9623
+    ]
+   },
+   "properties": {
+    "claim_id": "C8023",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-31",
+    "place_id": "PL3623",
+    "location_name": "Tetz (Linnich), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "59th Division on the east bank of the Roer at the XII SS Corps left wing, Tetz south-east of Linnich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-31",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.2 (Fold3 image 26, English p.2, Fold3 image 4)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3009,
      50.4344
     ]
@@ -222014,6 +222178,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R099;R001",
     "source_locator": "R099: section on the Second World War"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6249,
+     50.3671
+    ]
+   },
+   "properties": {
+    "claim_id": "C8024",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-OBW-000H",
+    "unit_name": "Oberbefehlshaber West (OB West)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL0626",
+    "location_name": "Ziegenberg (Schloss Adlerhorst), Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "OB West staff at Ziegenberg north-west of Bad Nauheim; Blumentritt reports there on 1 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German pp.2 and 5 (Fold3 images 26 and 29, English pp.2 and 5, Fold3 images 4 and 7)"
    }
   },
   {
@@ -222185,6 +222390,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1948,
+     52.1397
+    ]
+   },
+   "properties": {
+    "claim_id": "C8025",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-02-02",
+    "place_id": "PL0700",
+    "location_name": "Zutphen, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Army Group H headquarters east of Zutphen on the IJssel; Blumentritt reports to Blaskowitz on 2 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German pp.4-5 (Fold3 images 28-29, English pp.4-5, Fold3 images 6-7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.8318,
      48.8387
     ]
@@ -222219,6 +222465,416 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R783;R002",
     "source_locator": "R783: frame 105 (PDF page 108), 47 V.G.D. Ia 216/45 of 3 February 1945 to Gen.Kdo LXXXIX A.K."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C8026",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Blumentritt takes over the newly formed Twenty-fifth Army at its headquarters at Hilversum",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German pp.3-5 (Fold3 images 27-29, English pp.3-5, Fold3 images 5-7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2428,
+     51.8322
+    ]
+   },
+   "properties": {
+    "claim_id": "C8027",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL0699",
+    "location_name": "Emmerich am Rhein, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Twenty-fifth Army front from Texel to Schouwen and the Biesbosch to Emmerich; boundary with the First Parachute Army through Emmerich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German pp.4, 11-13 (Fold3 images 28, 35-37, English pp.4, 11-13, Fold3 images 6, 13-15), Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9739,
+     51.8296
+    ]
+   },
+   "properties": {
+    "claim_id": "C8028",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL3448",
+    "location_name": "Gorinchem, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "XXX Corps (Kleffel) holds the western half of the Twenty-fifth Army water front (Skizze 1)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: Skizze 1 (Fold3 images 41-42, English Fold3 images 19-20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8029",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXXXVIII Corps (Schwalbe) holds the eastern half of the Twenty-fifth Army water front to Emmerich (Skizze 1)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: Skizze 1 (Fold3 images 41-42, English Fold3 images 19-20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.1138,
+     51.6573
+    ]
+   },
+   "properties": {
+    "claim_id": "C8030",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL3439",
+    "location_name": "Zijpe (Schouwen-Duiveland), Zeeland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "346th Infantry Division on Schouwen and Goeree, left wing facing south to the Biesbosch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.11 (Fold3 image 35, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C8031",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-712D",
+    "unit_name": "712th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL0621",
+    "location_name": "Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "712th Division, a division in name only, on the Twenty-fifth Army water front; Skizze 1 places it north of Utrecht",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4778,
+     51.9244
+    ]
+   },
+   "properties": {
+    "claim_id": "C8032",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL2554",
+    "location_name": "Rotterdam, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "711th Division, a division in name only, named on the Twenty-fifth Army water front; Skizze 1 places it toward Rotterdam",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8033",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002D",
+    "unit_name": "2nd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-03",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "2nd Parachute Division on the Twenty-fifth Army water front at and east of Arnhem (Skizze 1)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8034",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-02-03",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division on the Twenty-fifth Army water front west of Arnhem (Skizze 1)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.12 (Fold3 image 36, English p.12, Fold3 image 14), Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9579,
+     51.6429
+    ]
+   },
+   "properties": {
+    "claim_id": "C8039",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-03",
+    "place_id": "PL1058",
+    "location_name": "Dongen, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "1st Polish Armoured Division with the Canadians on the south bank of the Waal and lower Maas (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.6 (Fold3 image 30, English p.6, Fold3 image 8)"
    }
   },
   {
@@ -222668,8 +223324,8 @@
     "location_date": "1945-02-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.20, English p.22"
+    "reference_ids": "R809;R819;R002",
+    "source_locator": "R809: German p.20, English p.22; R819: German p.14 (Fold3 image 38)"
    }
   },
   {
@@ -230335,8 +230991,8 @@
     "location_date": "1945-02-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R808;R002",
-    "source_locator": "R668: p. 478; R808: German p.9, English p.10"
+    "reference_ids": "R668;R808;R819;R002",
+    "source_locator": "R668: p. 478; R808: German p.9, English p.10; R819: German p.14 (Fold3 image 38)"
    }
   },
   {
@@ -244767,8 +245423,49 @@
     "location_date": "1945-02-20",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R815;R002",
-    "source_locator": "R815: German p.16 (Fold3 image 25)"
+    "reference_ids": "R815;R819;R002",
+    "source_locator": "R815: German p.16 (Fold3 image 25); R819: German p.14 (Fold3 image 38)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1216,
+     52.0907
+    ]
+   },
+   "properties": {
+    "claim_id": "C8035",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-331D",
+    "unit_name": "331st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-20",
+    "place_id": "PL0621",
+    "location_name": "Utrecht",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "new, weak 331st Infantry Division arrives in central Holland as army group reserve in regimental groups",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.14 (Fold3 image 38, English p.14, Fold3 image 16)"
    }
   },
   {
@@ -246694,8 +247391,8 @@
     "location_date": "1945-02-25",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.20, English p.22"
+    "reference_ids": "R809;R819;R002",
+    "source_locator": "R809: German p.20, English p.22; R819: German p.14 (Fold3 image 38)"
    }
   },
   {
@@ -254730,8 +255427,8 @@
     "location_date": "1945-03-02",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R815;R816;R002",
-    "source_locator": "R815: German p.25 (Fold3 image 34); R816: B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101), Skizze (Fold3 image 103)"
+    "reference_ids": "R815;R816;R819;R002",
+    "source_locator": "R815: German p.25 (Fold3 image 34); R816: B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101), Skizze (Fold3 image 103); R819: German pp.4, 15 (Fold3 images 28, 39)"
    }
   },
   {
@@ -256206,8 +256903,8 @@
     "location_date": "1945-03-04",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R816;R002",
-    "source_locator": "R816: B-148 Ziffer 3, p.5 (Fold3 image 101), Skizze (Fold3 image 102-103)"
+    "reference_ids": "R816;R819;R002",
+    "source_locator": "R816: B-148 Ziffer 3, p.5 (Fold3 image 101), Skizze (Fold3 image 102-103); R819: German p.15 (Fold3 image 39)"
    }
   },
   {
@@ -276460,8 +277157,90 @@
     "location_date": "1945-03-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.1, English p.1, Anlage 1"
+    "reference_ids": "R810;R819;R002",
+    "source_locator": "R810: German p.1, English p.1, Anlage 1; R819: Skizze 1 (Fold3 images 41-42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C8036",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-20",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "13-15 fighters attack the Twenty-fifth Army headquarters at Hilversum; staff wounded, one officer and one NCO killed",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German pp.15-16 (Fold3 images 39-40, English p.15, Fold3 image 17)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3031,
+     51.6889
+    ]
+   },
+   "properties": {
+    "claim_id": "C8038",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-001C",
+    "unit_name": "I Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-20",
+    "place_id": "PL0749",
+    "location_name": "'s-Hertogenbosch, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "I Canadian Corps with four divisions and the 1st Polish Division identified opposite the Twenty-fifth Army south front (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.15 (Fold3 image 39, English p.14, Fold3 image 16), Skizze 1 (Fold3 image 42)"
    }
   },
   {
@@ -278100,8 +278879,8 @@
     "location_date": "1945-03-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R002",
-    "source_locator": "R810: German p.1, Anlage 1"
+    "reference_ids": "R810;R819;R002",
+    "source_locator": "R810: German p.1, Anlage 1; R819: German p.15 (Fold3 image 39)"
    }
   },
   {
@@ -282079,6 +282858,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000296 situation 1200 hrs 27 March 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C8037",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-025A",
+    "unit_name": "Twenty-fifth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-03-27",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Blumentritt hands the Twenty-fifth Army to General der Kavallerie Kleffel on 27 March and leaves for the First Parachute Army",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-27",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R819;R002",
+    "source_locator": "R819: German p.16 (Fold3 image 40, English pp.15-16, Fold3 images 17-18)"
    }
   },
   {

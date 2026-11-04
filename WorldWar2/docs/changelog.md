@@ -4095,3 +4095,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Citations:** `R853` appended to `C8213`, `C0065`, `C2072`, `C0801`, `C0804` (no change of confidence) and `C7070` (confidence old value 0.5, new value 0.7, reason: corroboration rule, FMS agrees with the NARA captured records on the La Chapelle-du-Fest command post).
 - **Places:** `PL3791` Joinville, `PL3792` Couvains, `PL3793` Saint-Georges-d'Elle, `PL3794` Sizun, `PL3795` Daoulas, `PL3796` Landerneau, `PL3797` Berrien, `PL3798` Brennilis, `PL3799` Châteauneuf-du-Faou (Nominatim, `R002`).
 - Roadmap 340; scenario 188. Next free: `C8418`, `PL3800`, `R854`, `CR1084`, `G068`, scenario 189, roadmap 341.
+
+## fms-fold3-german-2: FMS B-673 German original (Lüttwitz, XLVII Panzer Corps in Normandy 11 June-27 July 1944) as R854 (4 November 2026)
+
+- **Source:** `R854` FMS B-673 (6 text pages plus the Pemsel comment), written in 1947 by the then commander of the 2nd Panzer Division as a stand-in for the corps staff; German original (images 1-12) read in full as primary, English (images 13-24) spot-checked; the Batch 3 chronology supersedes the rough first notes. One FMS family: no raises.
+- **Units:** `GER-INF-276D` and `GER-INF-326D` record_status old value placeholder, new value active; reason: dated places in B-673. The text's "326. V.G.D." is entered under the 326th Infantry Division (hindsight name).
+- **New claims (old value none; reasons in each row):** corps `C8418` command post Gaillon end of May (date inferred, 0.3), `C8419` Pontécoulant 11 June (0.5), `C8420` Saint-Jean-le-Blanc 15 June (0.5, alternate in new `G068`), `C8421` relieved by LXXIV Corps and moved south of Saint-Lô 27 July (0.3); `C8422` 2nd Panzer Division reconnaissance battalion to the Caumont heights 11 June (0.5); `C8423` 2nd Panzer Division to I SS Panzer Corps, Caen area 21 July (0.3); `C8424` 326th Division takes over at Caumont 21 July (place inferred, 0.3); `C8425` 116th Panzer Division stays at Beauvais 9 June (0.5); `C8426` 276th Division relieves Panzer Lehr at Hottot 19 June (0.5); `C8427` Panzer Lehr relief complete 25 June (0.3).
+- **Changed:** `C2203` conflict_group_id old blank, new `G068`, reason: B-673 puts the corps HQ at Saint-Jean-le-Blanc the same day; `C2203` stays preferred.
+- **Citations (no raises):** `R854` appended to `C2068`, `C0064`, `C0093`, `C0771`, `C2192`, `C7236`.
+- **Places:** `PL3800` Gaillon, `PL3801` Saint-Jean-le-Blanc, `PL3802` Beauvais, `PL3803` Hottot-les-Bagues (Nominatim, `R002`).
+- Roadmap 341; scenario 189. Next free: `C8428`, `PL3804`, `R855`, `CR1084`, `G069`, scenario 190, roadmap 342.

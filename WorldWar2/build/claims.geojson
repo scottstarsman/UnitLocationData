@@ -457,6 +457,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.3336,
+     49.1606
+    ]
+   },
+   "properties": {
+    "claim_id": "C8418",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-05-31",
+    "place_id": "PL3800",
+    "location_name": "Gaillon, Eure",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "XLVII Panzer Corps headquarters arrives from the Eastern Front with its command post at Gaillon on the Seine",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.1-2 (Fold3 images 5-6)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.2957,
      49.8942
     ]
@@ -2375,8 +2416,8 @@
     "location_date": "1944-06-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R761;R002",
-    "source_locator": "R761: Annex 1"
+    "reference_ids": "R761;R854;R002",
+    "source_locator": "R761: Annex 1; R854: German p.2 (Fold3 image 6)"
    }
   },
   {
@@ -4721,6 +4762,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.0823,
+     49.4301
+    ]
+   },
+   "properties": {
+    "claim_id": "C8425",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-09",
+    "place_id": "PL3802",
+    "location_name": "Beauvais, Oise",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "116th Panzer Division stays in the Beauvais area refitting when the 2nd Panzer Division leaves for Normandy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.2-3 (Fold3 images 6-7), Pemsel comment p.2 (image 12)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.247,
      49.304
     ]
@@ -4794,8 +4876,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R141;R054;R001",
-    "source_locator": null
+    "reference_ids": "R449;R141;R054;R854;R001",
+    "source_locator": "R854: German p.3 (Fold3 image 7)"
    }
   },
   {
@@ -5828,6 +5910,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.589,
+     48.8784
+    ]
+   },
+   "properties": {
+    "claim_id": "C8419",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-06-11",
+    "place_id": "PL1079",
+    "location_name": "Pontécoulant, Condé-en-Normandie, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "XLVII Panzer Corps headquarters moves to Pontécoulant",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.1 and p.4 (Fold3 images 5, 8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C8422",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-11",
+    "place_id": "PL0071",
+    "location_name": "Caumont-l'Éventé (reconnaissance battalion and an anti-tank company)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "2nd Panzer Division reconnaissance battalion, reinforced by an anti-tank company, sent to the Caumont heights",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.4 (Fold3 image 8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.165,
      49.1269
     ]
@@ -6434,8 +6598,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R449;R140;R001",
-    "source_locator": null
+    "reference_ids": "R449;R140;R854;R001",
+    "source_locator": "R854: German p.1 and p.4 (Fold3 images 5, 8)"
    }
   },
   {
@@ -8991,7 +9155,7 @@
    },
    "properties": {
     "claim_id": "C2203",
-    "conflict_group_id": null,
+    "conflict_group_id": "G068",
     "claim_status": "preferred",
     "unit_id": "GER-PZ-047C",
     "unit_name": "XLVII Panzer Corps",
@@ -9101,6 +9265,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R812;R002",
     "source_locator": "R812: printed p.7, 13 (Fold3 image 22, 28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6542,
+     48.9348
+    ]
+   },
+   "properties": {
+    "claim_id": "C8420",
+    "conflict_group_id": "G068",
+    "claim_status": "alternate",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-06-15",
+    "place_id": "PL3801",
+    "location_name": "Saint-Jean-le-Blanc, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XLVII Panzer Corps headquarters moves to Saint-Jean-le-Blanc and stays there to 27 July",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.1 and p.4 (Fold3 images 5, 8)"
    }
   },
   {
@@ -10577,6 +10782,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R853;R002",
     "source_locator": "R853: German p.15 (Fold3 image 21),  Skizze 2 (image 40),  Skizze 4 (image 45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6495,
+     49.1535
+    ]
+   },
+   "properties": {
+    "claim_id": "C8426",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-276D",
+    "unit_name": "276th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "place_id": "PL3803",
+    "location_name": "Hottot-les-Bagues, Calvados",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "276th Infantry Division begins relieving parts of the Panzer Lehr Division at Hottot",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.5 (Fold3 image 9)"
    }
   },
   {
@@ -12914,6 +13160,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R792;R002",
     "source_locator": "R792: images 295-296 (NAID 267509462), 9. SS-Pz.Div. Abt. Ia march order of 25 June 1944 for the night 25/26 June, item 11"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6495,
+     49.1535
+    ]
+   },
+   "properties": {
+    "claim_id": "C8427",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-06-25",
+    "place_id": "PL3803",
+    "location_name": "Hottot-les-Bagues, Calvados",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Panzer Lehr Division relief by the 276th Infantry Division complete; the division leaves XLVII Panzer Corps",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.1 and p.5 (Fold3 images 5, 9)"
    }
   },
   {
@@ -17545,8 +17832,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R586;R761;R001",
-    "source_locator": "R586: p. 30, 29; R761: p. 49"
+    "reference_ids": "R586;R761;R854;R001",
+    "source_locator": "R586: p. 30, 29; R761: p. 49; R854: German p.4 (Fold3 image 8)"
    }
   },
   {
@@ -28501,6 +28788,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C8423",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-21",
+    "place_id": "PL0059",
+    "location_name": "Caen sector",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "2nd Panzer Division hands its sector to the 326th Division and goes to I SS Panzer Corps in the Caen area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-21",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.6 (Fold3 image 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8039,
+     49.0911
+    ]
+   },
+   "properties": {
+    "claim_id": "C8424",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-326D",
+    "unit_name": "326th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-21",
+    "place_id": "PL0071",
+    "location_name": "Caumont-l'Éventé",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "326th Infantry Division takes over the 2nd Panzer Division sector at Caumont",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-21",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.2 and p.6 (Fold3 images 6, 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.2261,
      49.2408
     ]
@@ -29148,8 +29517,8 @@
     "location_date": "1944-07-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 183-185"
+    "reference_ids": "R668;R854;R002",
+    "source_locator": "R668: pp. 183-185; R854: German p.6 (Fold3 image 10)"
    }
   },
   {
@@ -32273,6 +32642,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.09,
+     49.12
+    ]
+   },
+   "properties": {
+    "claim_id": "C8421",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-07-27",
+    "place_id": "PL0334",
+    "location_name": "Saint-Lô sector (area south of Saint-Lô)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "XLVII Panzer Corps relieved by LXXIV Corps and moved to the area south of Saint-Lô",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-27",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R854;R002",
+    "source_locator": "R854: German p.2 and p.6 (Fold3 images 6, 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1733,
      49.3038
     ]
@@ -32756,8 +33166,8 @@
     "location_date": "1944-07-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R773;R002",
-    "source_locator": "R773: p. 13 (German text)"
+    "reference_ids": "R773;R854;R002",
+    "source_locator": "R773: p. 13 (German text); R854: German p.6 (Fold3 image 10)"
    }
   },
   {

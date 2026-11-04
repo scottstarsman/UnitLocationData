@@ -1178,7 +1178,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 16
+    "claims_count": 17
    }
   },
   {
@@ -1398,7 +1398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 10
+    "claims_count": 12
    }
   },
   {
@@ -6558,7 +6558,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -21318,7 +21318,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -75679,6 +75679,86 @@
     "country": "FR",
     "region": "Brittany",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.3336,
+     49.1606
+    ]
+   },
+   "properties": {
+    "place_id": "PL3800",
+    "name": "Gaillon, Eure",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6542,
+     48.9348
+    ]
+   },
+   "properties": {
+    "place_id": "PL3801",
+    "name": "Saint-Jean-le-Blanc, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0823,
+     49.4301
+    ]
+   },
+   "properties": {
+    "place_id": "PL3802",
+    "name": "Beauvais, Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6495,
+     49.1535
+    ]
+   },
+   "properties": {
+    "place_id": "PL3803",
+    "name": "Hottot-les-Bagues, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
    }
   }
  ]

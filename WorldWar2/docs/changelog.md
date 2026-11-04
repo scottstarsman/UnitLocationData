@@ -3905,3 +3905,8 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
   - `C8234` (LXVII Corps, Amiens): date old value 1944-06-06, new value 1944-06-05; operation_id as above; confidence 0.3 unchanged. Reason: B-236 has the corps in position before 7 June, B-596 at Amiens from about January 1944; day inferred as the eve of the invasion.
 - **Not changed:** `C2060`-`C2068` (R761 armoured dawn positions on 6 June) are D-Day positions, not forced dates. **Tests:** scenario 168; scenario 164 expectation updated.
 
+
+## fms-fold3-german-2: run_checks exits non-zero on any failing step (4 November 2026)
+
+- **Fix:** the local verification script, old value `UnitLocationData-tools/run_checks.sh` (outside the repo; piped every step through `grep`/`tail`, so it exited 0 even when `validate.py` reported errors), new value `scripts/run_checks.sh` in the repo (`set -u -o pipefail`; each step's own exit status is recorded and any failure ends with `CHECKS FAILED: ...` and exit 1). Steps: validate, check_json_fields, semantic_tests, build --check, build_references --check, review_sample --check, check_coordinates, audit_command_location, audit_temporal_relationships, check_claim_ids (when origin/main is available). The tools copy is now a wrapper that calls it.
+- **Proof:** a temporary row dated 1938-05-15 (`C8214`) made validate, semantic_tests and build --check fail and the script exit 1; after reverting the row it prints `ALL CHECKS PASSED` and exits 0. No data changed.

@@ -264702,6 +264702,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3962,
+     51.8086
+    ]
+   },
+   "properties": {
+    "claim_id": "C8005",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-11",
+    "place_id": "PL0706",
+    "location_name": "Millingen am Rhein, Rees, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "6th Parachute Division takes over the Rhine sector Emmerich (excl.)-opposite Kalkar under II Parachute Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.1-2 (Fold3 image 5-6, English p.1-2)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.9064,
      50.1297
     ]
@@ -264857,8 +264898,8 @@
     "location_date": "1945-03-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English p.20"
+    "reference_ids": "R806;R817;R002",
+    "source_locator": "R806: English p.20; R817: German p.1 (Fold3 image 5)"
    }
   },
   {
@@ -270925,8 +270966,8 @@
     "location_date": "1945-03-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English Sketch 6"
+    "reference_ids": "R806;R817;R002",
+    "source_locator": "R806: English Sketch 6; R817: German pp.1-2 (Fold3 images 5-6)"
    }
   },
   {
@@ -270966,8 +271007,8 @@
     "location_date": "1945-03-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R806;R002",
-    "source_locator": "R806: English Sketch 6"
+    "reference_ids": "R806;R817;R002",
+    "source_locator": "R806: English Sketch 6; R817: German p.1 (Fold3 image 5)"
    }
   },
   {
@@ -277444,8 +277485,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R668;R814;R002",
-    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71)"
+    "reference_ids": "R543;R668;R814;R817;R002",
+    "source_locator": "R543: p. 314, 301; R668: p. 533; R814: German pp.10-12 (Fold3 images 69-71); R817: German pp.3-4 (Fold3 images 7-8)"
    }
   },
   {
@@ -277526,8 +277567,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R814;R002",
-    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71)"
+    "reference_ids": "R543;R814;R817;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9)"
    }
   },
   {
@@ -278150,6 +278191,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3962,
+     51.8086
+    ]
+   },
+   "properties": {
+    "claim_id": "C8006",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-24",
+    "place_id": "PL0706",
+    "location_name": "Millingen am Rhein, Rees, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "6th Parachute Division loses Millingen and Rees; evening line Emmerich-Praest-Millingen-Haldern",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.4-5 (Fold3 image 8-9, English p.4-5), Anlage 5 (Fold3 image 14-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -278478,6 +278560,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2428,
+     51.8322
+    ]
+   },
+   "properties": {
+    "claim_id": "C8007",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-25",
+    "place_id": "PL0699",
+    "location_name": "Emmerich am Rhein, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "346th Infantry Division takes the brunt of the attack on both sides of Emmerich",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.5-6 (Fold3 image 9-10, English p.6)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4276,
+     51.8466
+    ]
+   },
+   "properties": {
+    "claim_id": "C8008",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-25",
+    "place_id": "PL1691",
+    "location_name": "Anholt, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division bends its left flank north-east; heavy fighting at Anholt as the gap to the left widens",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.6 (Fold3 image 10, English p.6), Anlage 5 (Fold3 image 14-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.6515,
      51.6213
     ]
@@ -278758,6 +278922,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: German p.14 (Fold3 image 73, English p.28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4614,
+     51.8344
+    ]
+   },
+   "properties": {
+    "claim_id": "C8009",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-26",
+    "place_id": "PL3616",
+    "location_name": "Isselburg, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "8th Parachute Division loses Isselburg after heavy fighting (as given by the 6th Parachute Division commander)",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.6 (Fold3 image 10, English p.6)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3615,
+     51.9212
+    ]
+   },
+   "properties": {
+    "claim_id": "C8010",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-26",
+    "place_id": "PL3545",
+    "location_name": "Terborg (Oude IJsselstreek), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "6th Parachute Division crosses the Oude IJssel at Terborg by night; new line Terborg-Varsseveld",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.6-7 (Fold3 image 10-11, English p.6-7)"
    }
   },
   {
@@ -282865,6 +283111,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4636,
+     51.9438
+    ]
+   },
+   "properties": {
+    "claim_id": "C8011",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-29",
+    "place_id": "PL3618",
+    "location_name": "Varsseveld (Oude IJsselstreek), Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division on the railway Doetinchem-Terborg-Varsseveld; flak batteries repel an envelopment at Varsseveld",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.7-8 (Fold3 image 11-12, English p.7-8), Anlage 5 (Fold3 image 14-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.15,
      50.6833
     ]
@@ -283227,6 +283514,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: German p.19 (Fold3 image 78, English p.31-32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3437,
+     52.1715
+    ]
+   },
+   "properties": {
+    "claim_id": "C8012",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-30",
+    "place_id": "PL3484",
+    "location_name": "Lochem, Gelderland",
+    "location_represents": "front_line_point",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "6th Parachute Division occupies the Twente Canal line Zutphen (excl.)-Hengelo (excl.), about 40 km, east flank open",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R817;R002",
+    "source_locator": "R817: German p.8-9 (Fold3 image 12-13, English p.8-9), Anlage 5 (Fold3 image 14-22)"
    }
   },
   {
@@ -283635,8 +283963,8 @@
     "location_date": "1945-03-31",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R810;R814;R002",
-    "source_locator": "R810: German p.2, English p.2; R814: Skizze 3 (Fold3 image 130)"
+    "reference_ids": "R810;R814;R817;R002",
+    "source_locator": "R810: German p.2, English p.2; R814: Skizze 3 (Fold3 image 130); R817: German p.8 (Fold3 image 12)"
    }
   },
   {
@@ -284947,8 +285275,8 @@
     "location_date": "1945-04-02",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R810;R002",
-    "source_locator": "R668: p. 546; R810: German p.2-3, English pp.2-3"
+    "reference_ids": "R668;R810;R817;R002",
+    "source_locator": "R668: p. 546; R810: German p.2-3, English pp.2-3; R817: German pp.8-9 (Fold3 images 12-13)"
    }
   },
   {

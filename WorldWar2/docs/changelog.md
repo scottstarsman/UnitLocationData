@@ -3688,3 +3688,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claims (2):** `C8003` (346th Infantry Division with 4 battalions taking over the Rhine sector from the IJssel mouth to Emmerich; Zevenaar as representative point, 0.3) and `C8004` (361st Infantry Division about Utrecht, personnel only, not employable, 0.3). Place `PL3617` (Zevenaar).
 - **Corroborations (4):** `R816` appended to `C7998`, `C8000`, `C8001`, `C8002` (same FMS family as B-147; no raises). Division Karst (Bocholt-Borken-Haltern), the Volkssturm and gendarmerie battalions and the AOK 25 artillery group north of Emmerich have no unit ids; notes only. Ziffer 1 (AOK 15 passed to Army Group B under the cover name Fifth Panzer Army; AOK 25 kept the name AOK 15 until the Ardennes offensive) is context in the notes and in `C7985`.
 - **Coordinates:** no changes; no new warnings. **Tests:** scenario 143. Next free: `C8005`, `PL3618`, `R817`, `G063`, scenario 144, roadmap 267.
+
+
+### FMS B-453 (Langhaeuser, 6th Parachute Division "Vierter Einsatz", about 11 March-1 April 1945; branch `fms-fold3-german-2`, 3 November 2026)
+- **Source:** `R817`, Rudolf Langhaeuser, MS B-453 (English translation dated 31 March 1947), German original Fold3 images 1-22 primary (printed pp.1-9 and Anlage 5), English images 23-34 checked (Mariacheen for Marienbaum, Mengelo for Hengelo, the violet line of 25 March omitted). Continues B-368 (`R808`), same author.
+- **New claims (8):** `C8005` (6th Parachute Division takes over the Rhine sector Emmerich-Kalkar/Isselburg about 11 March, command post Millingen, 0.3), `C8006` (24 March, Millingen and Rees lost, 0.5), `C8008` (25 March, Anholt, 0.3), `C8010` (26 March, Terborg, to LXXXVIII Corps, 0.5), `C8011` (27-29 March, railway line at Varsseveld, 0.3), `C8012` (30 March, Twente Canal, Lochem representative, 0.3); `C8007` (346th Division at Emmerich, 25 March, 0.3); `C8009` (8th Parachute Division loses Isselburg, 26 March, 0.3).
+- **Places:** `PL3618` (Varsseveld).
+- **Corroborations (7):** `R817` appended to `C7719`, `C7717`, `C7720`, `C1181`, `C1183`, `C7835`, `C7579` (same FMS family as B-093/B-762/B-414; no raises).
+- **Conflict kept:** roadmap 267 (6th Parachute Division at Emmerich on 28 March in Stacey `C7574` against Terborg-Varsseveld in B-453; Elden map rows `C6213`/`C6348` against the Millingen sector).
+- **Coordinates:** no changes; no new warnings. **Tests:** scenario 144. Next free: `C8013`, `PL3619`, `R818`, `G063`, scenario 145, roadmap 268.

@@ -111567,6 +111567,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8151",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-10-23",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "XLVII Panzer Corps staff, relieved in the Vosges by LXXXIX Corps on 17 October, complete in the Krefeld area as Army Group B reserve",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.1 (Fold3 page 6)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0944,
      51.5486
     ]
@@ -118159,8 +118200,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English pp.14-15, German pp.16-17"
+    "reference_ids": "R807;R824;R002",
+    "source_locator": "R807: English pp.14-15, German pp.16-17; R824: p.1 (Fold3 page 6)"
    }
   },
   {
@@ -118200,8 +118241,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R002",
-    "source_locator": "R807: English p.15, German p.16"
+    "reference_ids": "R807;R824;R002",
+    "source_locator": "R807: English p.15, German p.16; R824: p.1 (Fold3 page 6)"
    }
   },
   {
@@ -133543,6 +133584,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4589,
+     51.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C8152",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-11-08",
+    "place_id": "PL3668",
+    "location_name": "Anrath (Willich), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post at Anrath; divisions moved to the Mönchengladbach area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.1 and 2 (Fold3 page 6 and 7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1558,
      49.3031
     ]
@@ -134520,6 +134602,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R815;R002",
     "source_locator": "R815: Skizze 1 (Fold3 image 79), typed Skizze 1 (Fold3 image 74)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8153",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-10",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "a battle group of 9th Panzer Division moved to the Linnich area west of the Roer",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.2 (Fold3 page 7)"
    }
   },
   {
@@ -141784,6 +141907,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3735,
+     51.0913
+    ]
+   },
+   "properties": {
+    "claim_id": "C8154",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-11-16",
+    "place_id": "PL3303",
+    "location_name": "Venrath (Erkelenz), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "XLVII Panzer Corps staff reaches XII SS Corps at Venrath about 2000 on the first day of the Roer offensive",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.2 (Fold3 page 7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1655,
      50.8247
     ]
@@ -141857,8 +142021,8 @@
     "location_date": "1944-11-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R438;R002",
-    "source_locator": "R438: p. 530"
+    "reference_ids": "R438;R824;R002",
+    "source_locator": "R438: p. 530; R824: p.2 and 5 (Fold3 page 7 and 10)"
    }
   },
   {
@@ -141898,8 +142062,8 @@
     "location_date": "1944-11-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R438;R002",
-    "source_locator": "R438: p. 540"
+    "reference_ids": "R438;R824;R002",
+    "source_locator": "R438: p. 540; R824: p.5 (Fold3 page 10)"
    }
   },
   {
@@ -142071,6 +142235,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1683,
+     50.9681
+    ]
+   },
+   "properties": {
+    "claim_id": "C8155",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-17",
+    "place_id": "PL3669",
+    "location_name": "Prummern (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "mass of 9th Panzer Division moves into the line Prummern-Puffendorf, taking the 183rd Volksgrenadier remnants under command",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.5 (Fold3 page 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -142103,8 +142308,8 @@
     "location_date": "1944-11-16",
     "location_basis": "nearest_earlier_command_post",
     "location_temporal_offset_days": -2,
-    "reference_ids": "R439;R440;R467;R367;R001",
-    "source_locator": "R439: p. 545, 549; R440: p. 565"
+    "reference_ids": "R439;R440;R467;R367;R824;R001",
+    "source_locator": "R439: p. 545, 549; R440: p. 565; R824: p.6 and 8 (Fold3 page 11 and 13)"
    }
   },
   {
@@ -142267,8 +142472,8 @@
     "location_date": "1944-11-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 161, 162"
+    "reference_ids": "R671;R824;R002",
+    "source_locator": "R671: pp. 161, 162; R824: p.6 (Fold3 page 11)"
    }
   },
   {
@@ -142351,6 +142556,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R790;R002",
     "source_locator": "R790: images 823-824 (NAID 267474782), Gen.Kdo. XII. SS-A.K. Abt. Ia Nr. 443/44 g.Kdos, Korpsbefehl of 17 November 1944 for 18 November, item 5"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1508,
+     51.0428
+    ]
+   },
+   "properties": {
+    "claim_id": "C8156",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-18",
+    "place_id": "PL3670",
+    "location_name": "Dremmen (Heinsberg), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "15th Panzergrenadier Division placed under the corps and moved to the area Lindern-Dremmen-Himmerich",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.5 and 6 (Fold3 page 10 and 11)"
    }
   },
   {
@@ -142556,6 +142802,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R808;R002",
     "source_locator": "R808: German p.3, English p.3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.149,
+     50.9764
+    ]
+   },
+   "properties": {
+    "claim_id": "C8157",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-19",
+    "place_id": "PL3672",
+    "location_name": "Süggerath (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "15th Panzergrenadier Division committed on the line Tripsrath-Süggerath; Süggerath lost at dawn on 20 November",
+    "operation_id": "OP-CLIPPER",
+    "operation": "Operation Clipper",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Clipper",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.6 (Fold3 page 11)"
    }
   },
   {
@@ -143212,6 +143499,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R808;R002",
     "source_locator": "R808: German p.3, English p.3, Anlage 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.221,
+     50.9606
+    ]
+   },
+   "properties": {
+    "claim_id": "C8158",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-20",
+    "place_id": "PL1549",
+    "location_name": "Gereonsweiler, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 2nd Armored Division takes Gereonsweiler and Ederen against dug-in Tigers (German account)",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.7 (Fold3 page 12)"
    }
   },
   {
@@ -149041,6 +149369,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3555,
+     51.0335
+    ]
+   },
+   "properties": {
+    "claim_id": "C8159",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-11-21",
+    "place_id": "PL3673",
+    "location_name": "Katzem (Erkelenz), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post moved to Katzem; chief of staff wounded",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.7 (Fold3 page 12), Anlage 1 (Fold3 pages 43 and 47)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.7458,
      48.5833
     ]
@@ -149280,6 +149649,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R820;R002",
     "source_locator": "R820: German p.7-15 (Fold3 page 174-182)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1874,
+     50.9827
+    ]
+   },
+   "properties": {
+    "claim_id": "C8160",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-22",
+    "place_id": "PL3674",
+    "location_name": "Beeck (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "heavily weakened 9th Panzer Division defends the sector railway-Beeck-road fork east of Beeck",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.3 and 7 (Fold3 page 8 and 12)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2479,
+     50.9466
+    ]
+   },
+   "properties": {
+    "claim_id": "C8161",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-11-22",
+    "place_id": "PL1942",
+    "location_name": "Ederen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "first elements of 10th SS Panzer Division arrive and are committed from the Ederen area",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.7 and 12 (Fold3 page 12 and 17)"
    }
   },
   {
@@ -150312,6 +150763,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0984,
+     51.0654
+    ]
+   },
+   "properties": {
+    "claim_id": "C8162",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-25",
+    "place_id": "PL1043",
+    "location_name": "Heinsberg, Nordrhein-Westfalen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "9th Panzer Division staff and most rear parts relieved and moved south of Heinsberg to refit",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.12 and 16 (Fold3 page 17 and 21), Anlage 1 (Fold3 pages 43 and 47)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2167,
+     51.0359
+    ]
+   },
+   "properties": {
+    "claim_id": "C8163",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-25",
+    "place_id": "PL3675",
+    "location_name": "Hilfarth (Hückelhoven), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "15th Panzergrenadier Division command post at Hilfarth",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: Anlage 1 (Fold3 pages 43 and 47) and p.11 (Fold3 page 16)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3332,
+     50.9727
+    ]
+   },
+   "properties": {
+    "claim_id": "C8164",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-11-25",
+    "place_id": "PL3676",
+    "location_name": "Boslar (Linnich), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "10th SS Panzer Division command post at Klein-Bouslar",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: Anlage 1 (Fold3 pages 43 and 47)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4217,
      49.8117
     ]
@@ -150756,6 +151330,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R763;R002",
     "source_locator": "R763: pp. 26-27 (German text)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4354,
+     51.1947
+    ]
+   },
+   "properties": {
+    "claim_id": "C8165",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-26",
+    "place_id": "PL0636",
+    "location_name": "Mönchengladbach, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "116th Panzer Division staff arrives west of Mönchengladbach to refit as army group reserve",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.17 (Fold3 page 22), Anlage 1 (Fold3 pages 43 and 47)"
    }
   },
   {
@@ -157232,8 +157847,131 @@
     "location_date": "1944-11-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R820;R002",
-    "source_locator": "R820: German p.16-17 (Fold3 page 183-184)"
+    "reference_ids": "R820;R824;R002",
+    "source_locator": "R820: German p.16-17 (Fold3 page 183-184); R824: p.20 (Fold3 page 25)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2078,
+     50.9969
+    ]
+   },
+   "properties": {
+    "claim_id": "C8166",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-11-29",
+    "place_id": "PL3625",
+    "location_name": "Lindern (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "enemy breaks into Lindern in the 10th SS Panzer Division sector; penetrations between Lindern and Linnich",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.18 and 19 (Fold3 page 23 and 24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2078,
+     50.9969
+    ]
+   },
+   "properties": {
+    "claim_id": "C8167",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-29",
+    "place_id": "PL3625",
+    "location_name": "Lindern (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 84th Division confirmed before the corps front in the attack on Lindern (German account)",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-29",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.21 (Fold3 page 26)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1776,
+     51.0154
+    ]
+   },
+   "properties": {
+    "claim_id": "C8168",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-29",
+    "place_id": "PL3677",
+    "location_name": "Randerath (Heinsberg), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "9th Panzer Division with a new battalion and about seven Panzer IV marches from north of Heinsberg to south of Randerath to counterattack Lindern",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.20 (Fold3 page 25)"
    }
   },
   {
@@ -157856,6 +158594,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2078,
+     50.9969
+    ]
+   },
+   "properties": {
+    "claim_id": "C8169",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-30",
+    "place_id": "PL3625",
+    "location_name": "Lindern (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "9th Panzer Division attacks Lindern at about 1900; assault parties enter but cannot hold",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.23 and 24 (Fold3 page 28 and 29)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1807,
+     50.9931
+    ]
+   },
+   "properties": {
+    "claim_id": "C8170",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-30",
+    "place_id": "PL0968",
+    "location_name": "Würm, Geilenkirchen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "15th Panzergrenadier Division loses Beeck; new line south edge of Würm-railway-north of Lindern",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.23 (Fold3 page 28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3658,
      49.1401
     ]
@@ -158061,6 +158881,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8171",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-01",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "enemy in north-west and centre of Linnich; south and east Linnich still held by 10th SS Panzer Division with alert units",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.25 and 26 (Fold3 page 30 and 31)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8172",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 102nd Division identified before Linnich by prisoners (German account)",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.27 (Fold3 page 32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -158134,8 +159036,8 @@
     "location_date": "1944-12-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R820;R002",
-    "source_locator": "R820: German p.17 (Fold3 page 184)"
+    "reference_ids": "R820;R824;R002",
+    "source_locator": "R820: German p.17 (Fold3 page 184); R824: p.28 and 29 (Fold3 page 33 and 34)"
    }
   },
   {
@@ -158175,8 +159077,90 @@
     "location_date": "1944-12-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R820;R002",
-    "source_locator": "R820: German p.17 (Fold3 page 184)"
+    "reference_ids": "R820;R824;R002",
+    "source_locator": "R820: German p.17 (Fold3 page 184); R824: p.27 and 28 (Fold3 page 32 and 33)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1892,
+     50.9944
+    ]
+   },
+   "properties": {
+    "claim_id": "C8173",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-02",
+    "place_id": "PL3678",
+    "location_name": "Leiffarth (Geilenkirchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "15th Panzergrenadier Division loses Leiffarth after village fighting",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-12-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.28 (Fold3 page 33)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2852,
+     50.9579
+    ]
+   },
+   "properties": {
+    "claim_id": "C8174",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-340D",
+    "unit_name": "340th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-02",
+    "place_id": "PL3680",
+    "location_name": "Floßdorf (Linnich), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "battalion of Division Tolsdorff west of the Roer cut off at Floßdorf and destroyed",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-12-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.24 and 25 and 29 (Fold3 page 29 and 30 and 34)"
    }
   },
   {
@@ -158594,6 +159578,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1914,
+     51.0238
+    ]
+   },
+   "properties": {
+    "claim_id": "C8175",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-03",
+    "place_id": "PL1862",
+    "location_name": "Himmerich, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "15th Panzergrenadier Division responsible for the whole corps sector west of the Roer; command post Himmerich",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.30 (Fold3 page 35), Anlage 4 (Fold3 pages 46 and 50)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2821,
+     51.001
+    ]
+   },
+   "properties": {
+    "claim_id": "C8176",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-010D",
+    "unit_name": "10th SS Panzer Division Frundsberg",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-12-03",
+    "place_id": "PL3679",
+    "location_name": "Körrenzig (Linnich), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "10th SS Panzer Division with a new infantry regiment holds the corps sector on the east bank of the Roer",
+    "operation_id": "OP-ROER-PLAIN",
+    "operation": "Battle of the Roer Plain",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": "Roer Plain",
+    "strength_status": "unknown",
+    "location_date": "1944-12-03",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R824;R002",
+    "source_locator": "R824: p.27 and 30 (Fold3 page 32 and 35), Anlage 4 (Fold3 pages 46 and 50)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1778,
      49.1203
     ]
@@ -158790,8 +159856,8 @@
     "location_date": "1944-12-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R768;R820;R002",
-    "source_locator": "R768: pp. 16-18; R820: German p.18 (Fold3 page 185)"
+    "reference_ids": "R768;R820;R824;R002",
+    "source_locator": "R768: pp. 16-18; R820: German p.18 (Fold3 page 185); R824: p.30 (Fold3 page 35)"
    }
   },
   {

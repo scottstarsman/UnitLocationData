@@ -3757,3 +3757,14 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Corroboration (1):** `R823` appended to `C8133` (Beckum); no raise (same author and family).
 - **Not entered:** the 15 km gap and 36-hour courier figures, communication times (notes only).
 - **Open:** roadmap 281. **Tests:** scenario 150. Next free: `C8151`, `PL3668`, `R824`, `G064`, scenario 151, roadmap 282.
+
+## fms-fold3-german-2: FMS B-367 German original, von Lüttwitz, XLVII Panzer Corps in the Rhineland 23 October-5 December 1944 (4 November 2026)
+
+- **Source:** FMS B-367 (`R824`, new), German only (Allendorf, 11 January 1947), with Anlagen 1-4.
+- **New claims:** 26 rows `C8151`-`C8176` (22 German, 4 Allied from the German account; blank parents): corps at Krefeld, Anrath, Venrath, Katzem; 9th Panzer (Linnich battle group, Prummern, Beeck, Heinsberg refit, Randerath, Lindern), 15th Panzergrenadier (Dremmen, Süggerath, Hilfarth command post, Würm, Leiffarth, Himmerich), 10th SS Panzer (Ederen, Klein-Bouslar command post, Lindern, Linnich, Körrenzig), 116th Panzer refit west of Mönchengladbach, a 340th Volksgrenadier battalion destroyed at Floßdorf (unit inferred from "Division Tolsdorff"), US 2nd Armored, 84th and 102nd.
+- **Inferred values:** dates "second week of November" (Anrath) and "first half of November" (Linnich battle group); unit of the Floßdorf battalion.
+- **Corroborations (10):** `R824` appended to `C7741`, `C7742`, `C0968`, `C0969`, `C1472`, `C0544`, `C8047`, `C8049`, `C8050`, `C2129`; no raises. The 43rd Division at Tripsrath on 18 November is a corroboration of `C1472`, not a new row.
+- **Claim-key exception:** `C8048`/`C8169` (Lindern 30 November, outcome differs); roadmap 282.
+- **Places:** `PL3668`-`PL3680`.
+- **Coordinates:** none changed; 1 explained exception (`speed` C8152/C3966, map lag); warnings 137.
+- **Open:** roadmap 282-283. **Tests:** scenario 151. Next free: `C8177`, `PL3681`, `R825`, `G064`, scenario 152, roadmap 284.

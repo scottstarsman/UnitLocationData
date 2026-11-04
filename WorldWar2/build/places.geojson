@@ -10578,7 +10578,7 @@
     "precision_km": 50,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -21038,7 +21038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -45518,7 +45518,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
-    "claims_count": 19
+    "claims_count": 20
    }
   },
   {
@@ -68558,7 +68558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Holland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -71358,6 +71358,106 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7414,
+     52.7882
+    ]
+   },
+   "properties": {
+    "place_id": "PL3584",
+    "name": "Schagen, Noord-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7936,
+     52.9509
+    ]
+   },
+   "properties": {
+    "place_id": "PL3585",
+    "name": "Den Helder, Noord-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8597,
+     52.3028
+    ]
+   },
+   "properties": {
+    "place_id": "PL3586",
+    "name": "Amstelveen, Noord-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4797,
+     52.2695
+    ]
+   },
+   "properties": {
+    "place_id": "PL3587",
+    "name": "Noordwijk, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.1315,
+     51.9772
+    ]
+   },
+   "properties": {
+    "place_id": "PL3588",
+    "name": "Hoek van Holland, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
     "claims_count": 1
    }
   }

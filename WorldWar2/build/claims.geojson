@@ -2252,8 +2252,213 @@
     "location_date": "1944-06-06",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.1 (Fold3 image 7)"
+    "reference_ids": "R811;R812;R002",
+    "source_locator": "R811: German p.1 (Fold3 image 7); R812: printed pp.1, 4 (Fold3 images 16, 19)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2046,
+     52.129
+    ]
+   },
+   "properties": {
+    "claim_id": "C7898",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL2291",
+    "location_name": "Bilthoven, Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXVIII Corps (Reinhard as Befehlshaber des Heeres in den Niederlanden) command post at Bilthoven near Utrecht",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.1, 4 (Fold3 image 16, 19), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C7899",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-WBN-000H",
+    "unit_name": "Wehrmachtbefehlshaber der Niederlande",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Wehrmachtbefehlshaber in den Niederlanden (WBN) headquarters at Hilversum",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.1, 3 (Fold3 image 16, 18), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7414,
+     52.7882
+    ]
+   },
+   "properties": {
+    "claim_id": "C7900",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL3584",
+    "location_name": "Schagen, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "347th Infantry Division command post at Schagen",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.4 (Fold3 image 19), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8597,
+     52.3028
+    ]
+   },
+   "properties": {
+    "claim_id": "C7902",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-016D",
+    "unit_name": "16th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-06",
+    "place_id": "PL3586",
+    "location_name": "Amstelveen, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "16th Luftwaffe Field Division command post at Amstelveen just south of Amsterdam",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.4 (Fold3 image 19), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "claim_id": "C7905",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL1065",
+    "location_name": "Dordrecht, Zuid-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "719th Infantry Division command post at Dordrecht",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.4-5 (Fold3 image 19-20), App 1 (Fold3 image 64-65)"
    }
   },
   {
@@ -2910,6 +3115,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R688;R001",
     "source_locator": "R670: p. 231"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7936,
+     52.9509
+    ]
+   },
+   "properties": {
+    "claim_id": "C7901",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "place_id": "PL3585",
+    "location_name": "Den Helder, Noord-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "347th Infantry Division holds the sea front from Terschelling (incl.) to about 3 km north of IJmuiden",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.4, 7, 10, 15 (Fold3 image 19, 22, 25, 30), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4797,
+     52.2695
+    ]
+   },
+   "properties": {
+    "claim_id": "C7903",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-016D",
+    "unit_name": "16th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-07",
+    "place_id": "PL3587",
+    "location_name": "Noordwijk, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "16th Luftwaffe Field Division holds the sea front from IJmuiden (incl.) to Scheveningen (incl.)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.4-5, 8, 15 (Fold3 image 19-20, 23, 30), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.1315,
+     51.9772
+    ]
+   },
+   "properties": {
+    "claim_id": "C7906",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-719D",
+    "unit_name": "719th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "place_id": "PL3588",
+    "location_name": "Hoek van Holland, Zuid-Holland",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "719th Infantry Division holds the sea front from south of Scheveningen to Schouwen (incl.)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.4-5, 8, 10, 15 (Fold3 image 19-20, 23, 25, 30), App 1 (Fold3 image 64-65)"
    }
   },
   {
@@ -7878,6 +8206,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.7268,
+     49.1507
+    ]
+   },
+   "properties": {
+    "claim_id": "C7904",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-016D",
+    "unit_name": "16th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-15",
+    "place_id": "PL0536",
+    "location_name": "Normandy front (area named only as Normandie)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "16th Luftwaffe Field Division withdrawn from the Dutch coast and sent to Normandy",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R812;R002",
+    "source_locator": "R812: printed p.7, 13 (Fold3 image 22, 28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0586,
      49.1575
     ]
@@ -10821,8 +11190,8 @@
     "location_date": "1944-06-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R802;R002",
-    "source_locator": "R802: pages 536-541 (NAID 347778909), 347. I.D. K.V.A. Ia Nr. 767/44 g.Kdos. of 21 June 1944"
+    "reference_ids": "R802;R812;R002",
+    "source_locator": "R802: pages 536-541 (NAID 347778909), 347. I.D. K.V.A. Ia Nr. 767/44 g.Kdos. of 21 June 1944; R812: printed p.4 (Fold3 image 19), App 1"
    }
   },
   {
@@ -58914,8 +59283,8 @@
     "location_date": "1944-08-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R802;R811;R002",
-    "source_locator": "R802: pages 568-572 (NAID 347778909), 347. I.D. Ia Nr. 1596/44 g.Kdos. of 30 August 1944; R811: German p.1"
+    "reference_ids": "R802;R811;R812;R002",
+    "source_locator": "R802: pages 568-572 (NAID 347778909), 347. I.D. Ia Nr. 1596/44 g.Kdos. of 30 August 1944; R811: German p.1; R812: printed p.7 (Fold3 image 22)"
    }
   },
   {
@@ -59611,8 +59980,8 @@
     "location_date": "1944-08-31",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.1 (Fold3 image 7)"
+    "reference_ids": "R811;R812;R002",
+    "source_locator": "R811: German p.1 (Fold3 image 7); R812: printed p.7 (Fold3 image 22)"
    }
   },
   {
@@ -60718,8 +61087,8 @@
     "location_date": "1944-09-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R811;R002",
-    "source_locator": "R668: p. 302; R811: German pp.1-4"
+    "reference_ids": "R668;R811;R812;R002",
+    "source_locator": "R668: p. 302; R811: German pp.1-4; R812: printed pp.4, 7 (Fold3 images 19, 22)"
    }
   },
   {
@@ -65228,8 +65597,8 @@
     "location_date": "1944-09-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.5-6 (Fold3 image 11-12)"
+    "reference_ids": "R811;R812;R002",
+    "source_locator": "R811: German p.5-6 (Fold3 image 11-12); R812: printed p.7 (Fold3 image 22)"
    }
   },
   {
@@ -74576,8 +74945,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R336;R811;R002",
-    "source_locator": "R811: German pp.13-14"
+    "reference_ids": "R336;R811;R812;R002",
+    "source_locator": "R811: German pp.13-14; R812: printed p.16 (Fold3 image 31)"
    }
   },
   {
@@ -182078,8 +182447,8 @@
     "location_date": "1944-12-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R811;R002",
-    "source_locator": "R668: p. 447; R811: German p.30"
+    "reference_ids": "R668;R811;R812;R002",
+    "source_locator": "R668: p. 447; R811: German p.30; R812: Historical Division summary p.ii (Fold3 image 7)"
    }
   },
   {

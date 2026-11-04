@@ -3808,3 +3808,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claim:** `C8200` (II Parachute Corps staff first at Flüren near Wesel, 10 March 1945, 0.3, hard-to-read name), parent blank. Place `PL3700`.
 - **Corroborations (no confidence raised, FMS family):** `R828` appended to `C7689`, `C7690`, `C7691`, `C7692`, `C7695`, `C7696`, `C7699`, `C7701`, `C7702`, `C7703`, `C7704`, `C7705`, `C7706`, `C7707`, `C7708`, `C7709`, `C7710`, `C7715`, `C7716`.
 - **Differences from B-093:** roadmap 291-293 (evacuation approved 9 March 1830 against refused; Aufklärungs-Abteilung 12 at Keppeln; 7th Parachute Division to the Ardennes in mid-December). No conflict rows. Scenario 156.
+
+## fms-fold3-german-2: FMS B-052 English translation, von Oriola, XIII Corps 18 February-21 March 1945 (4 November 2026)
+
+- **Source:** FMS B-052 (`R829`, new; not previously a reference), English translation only (June 1946, from memory; most pages undated; printed pages 17-19 filmed out of order as Fold3 pages 24, 25, 23).
+- **New claims:** `C8201`-`C8209` (9 rows: 326th, 352nd and 246th Volksgrenadier Divisions, 2nd Panzer Division), all 0.3, every date inferred (old value none, new value and reason in each row). Parents blank. No corps rows because of the exchange with Rothkirch (roadmap 294).
+- **Corroborations (no confidence raised, FMS family):** `R829` appended to `C1156`, `C1159`.
+- **Places:** `PL3701`-`PL3709`. Roadmap 294-296. Scenario 157.

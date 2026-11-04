@@ -242234,6 +242234,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4269,
+     50.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C8201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-326D",
+    "unit_name": "326th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-18",
+    "place_id": "PL3701",
+    "location_name": "Plütscheid, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "326th Volksgrenadier Division command post north of Plütscheid on the left of XIII Corps between Prüm and Waxweiler",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-18",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.5 (Fold3 page 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2928,
      51.7389
     ]
@@ -251869,6 +251910,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6144,
+     49.9016
+    ]
+   },
+   "properties": {
+    "claim_id": "C8202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-352D",
+    "unit_name": "352nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-26",
+    "place_id": "PL3702",
+    "location_name": "Auw an der Kyll, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "352nd Volksgrenadier Division command post at Auw on the left of the new corps sector of von Oriola after the exchange with Rothkirch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.12 (Fold3 page 18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2197,
      51.0608
     ]
@@ -252024,8 +252106,8 @@
     "location_date": "1945-02-27",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R535;R002",
-    "source_locator": "R535: p. 114"
+    "reference_ids": "R535;R829;R002",
+    "source_locator": "R535: p. 114; R829: p.14 (Fold3 page 20)"
    }
   },
   {
@@ -259700,6 +259782,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6897,
+     50.0164
+    ]
+   },
+   "properties": {
+    "claim_id": "C8203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-01",
+    "place_id": "PL3703",
+    "location_name": "Gransdorf, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "2nd Panzer Division command post at Gransdorf, the former corps command post, after the withdrawal to the Kyll position",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.15 (Fold3 page 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6991,
+     49.945
+    ]
+   },
+   "properties": {
+    "claim_id": "C8204",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-352D",
+    "unit_name": "352nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL3704",
+    "location_name": "Herforst, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "352nd Volksgrenadier Division command post at Herforst (later Niersbach) on the Kyll position",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.15 (Fold3 page 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6022,
+     50.1056
+    ]
+   },
+   "properties": {
+    "claim_id": "C8205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-246D",
+    "unit_name": "246th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL3705",
+    "location_name": "Usch, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "246th Volksgrenadier Division, brought up to relieve the 99th Volksgrenadier Division, command post at Usch",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.15 (Fold3 page 21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5249,
      49.9733
     ]
@@ -262192,8 +262397,8 @@
     "location_date": "1945-03-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R540;R001",
-    "source_locator": "R540: p. 210"
+    "reference_ids": "R540;R829;R001",
+    "source_locator": "R540: p. 210; R829: p.18 (Fold3 page 25)"
    }
   },
   {
@@ -269164,6 +269369,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R822;R002",
     "source_locator": "R822: German p.-1- (Fold3 page 79)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2274,
+     49.9561
+    ]
+   },
+   "properties": {
+    "claim_id": "C8206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-08",
+    "place_id": "PL3706",
+    "location_name": "Raversbeuren, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "2nd Panzer Division command post at Raversbeuren behind the Mosel position",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.21 (Fold3 page 27)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1874,
+     49.9241
+    ]
+   },
+   "properties": {
+    "claim_id": "C8207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-246D",
+    "unit_name": "246th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-08",
+    "place_id": "PL3707",
+    "location_name": "Irmenach, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "246th Volksgrenadier Division command post at Irmenach behind the Mosel position",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.21 (Fold3 page 27)"
    }
   },
   {
@@ -277494,6 +277781,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.5743,
+     49.8314
+    ]
+   },
+   "properties": {
+    "claim_id": "C8208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-18",
+    "place_id": "PL3708",
+    "location_name": "Langenthal (Nahe), Rhineland-Palatinate",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "2nd Panzer Division attack south of the Soonwald toward Bad Kreuznach fails; division thrown back to Langenthal",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.28 (Fold3 page 34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -282243,6 +282571,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R819;R002",
     "source_locator": "R819: German p.15 (Fold3 image 39, English p.14, Fold3 image 16), Skizze 1 (Fold3 image 42)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8239,
+     49.59
+    ]
+   },
+   "properties": {
+    "claim_id": "C8209",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-246D",
+    "unit_name": "246th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-20",
+    "place_id": "PL3709",
+    "location_name": "Schweisweiler, Rhineland-Palatinate",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "246th Volksgrenadier Division overrun by tanks; remnants assemble at Schweisweiler",
+    "operation_id": "OP-UNDERTONE",
+    "operation": "Operation Undertone",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undertone",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R829;R002",
+    "source_locator": "R829: p.32 (Fold3 page 38)"
    }
   },
   {

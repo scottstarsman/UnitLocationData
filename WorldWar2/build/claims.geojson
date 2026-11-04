@@ -247514,8 +247514,8 @@
     "location_date": "1945-02-23",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R537;R002",
-    "source_locator": "R537: p. 154"
+    "reference_ids": "R537;R821;R002",
+    "source_locator": "R537: p. 154; R821: German p.-4- (Fold3 page 45)"
    }
   },
   {
@@ -247555,8 +247555,8 @@
     "location_date": "1945-02-23",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R537;R002",
-    "source_locator": "R537: p. 154"
+    "reference_ids": "R537;R821;R002",
+    "source_locator": "R537: p. 154; R821: German p.-4- (Fold3 page 45)"
    }
   },
   {
@@ -247596,8 +247596,8 @@
     "location_date": "1945-02-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R757;R001",
-    "source_locator": "R757: narrative"
+    "reference_ids": "R757;R821;R001",
+    "source_locator": "R757: narrative; R821: German p.-3- and -5- (Fold3 page 44 and 46)"
    }
   },
   {
@@ -247762,6 +247762,539 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R815;R002",
     "source_locator": "R815: German p.20 (Fold3 image 29)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.662,
+     51.1239
+    ]
+   },
+   "properties": {
+    "claim_id": "C8079",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL3637",
+    "location_name": "Hülchrath (Grevenbroich), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Fifteenth Army headquarters at Hülchrath, north-east of Grevenbroich, at the start of the Roer offensive",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.Anlage 7d (Fold3 page 65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3061,
+     51.1339
+    ]
+   },
+   "properties": {
+    "claim_id": "C8080",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-02-23",
+    "place_id": "PL3638",
+    "location_name": "Beeck (Wegberg), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps command post at \"Beek (n. Erkelenz)\"",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.Anlage 7d (Fold3 page 65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5698,
+     50.9371
+    ]
+   },
+   "properties": {
+    "claim_id": "C8081",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-081C",
+    "unit_name": "LXXXI Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0635",
+    "location_name": "Elsdorf, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXXXI Corps command post south of Elsdorf",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.Anlage 7d (Fold3 page 65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7971,
+     50.8116
+    ]
+   },
+   "properties": {
+    "claim_id": "C8082",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-058C",
+    "unit_name": "LVIII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-02-23",
+    "place_id": "PL3639",
+    "location_name": "Blessem (Erftstadt), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LVIII Panzer Corps command post at Blessem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.Anlage 7d (Fold3 page 65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2729,
+     51.033
+    ]
+   },
+   "properties": {
+    "claim_id": "C8083",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL2234",
+    "location_name": "Baal, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "183rd Division reinforcements attack in vain over Baal toward Rurich; new front either side of Baal-Lövenich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-2- (Fold3 page 43)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8084",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "59th Division attacked at 0330 after heavy artillery fire; enemy crosses the Roer either side of Linnich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-3- (Fold3 page 44)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3611,
+     50.9221
+    ]
+   },
+   "properties": {
+    "claim_id": "C8085",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-363D",
+    "unit_name": "363rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0590",
+    "location_name": "Jülich, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "363rd Volksgrenadier Division attacked; enemy crossings north of Jülich and north-east of Merken",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-3- (Fold3 page 44)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C8086",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "12th Volksgrenadier Division attacked at Stammeln-Huchem, Birkesdorf and south Düren; heavy fighting in Düren",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-5- (Fold3 page 46)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7652,
+     50.8001
+    ]
+   },
+   "properties": {
+    "claim_id": "C8087",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-23",
+    "place_id": "PL3643",
+    "location_name": "Lechenich (Erftstadt), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "9th Panzer Division, from the Lechenich area, placed under LXXXI Corps on the evening of 23 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-4- (Fold3 page 45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8109",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 84th Division crosses the Roer either side of Linnich (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-3- (Fold3 page 44)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8110",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 102nd Division crosses the Roer either side of Linnich (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-3- (Fold3 page 44)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3611,
+     50.9221
+    ]
+   },
+   "properties": {
+    "claim_id": "C8111",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0590",
+    "location_name": "Jülich, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 29th Division crosses the Roer at Jülich (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-3- (Fold3 page 44)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4833,
+     50.8
+    ]
+   },
+   "properties": {
+    "claim_id": "C8112",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-008D",
+    "unit_name": "8th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-23",
+    "place_id": "PL0427",
+    "location_name": "Düren, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 8th Division enters Düren from the south (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-5- (Fold3 page 46)"
    }
   },
   {
@@ -248056,6 +248589,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3076,
+     50.9883
+    ]
+   },
+   "properties": {
+    "claim_id": "C8088",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-24",
+    "place_id": "PL3641",
+    "location_name": "Gevenich (Linnich), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "11th Panzer Division retakes Gevenich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-4- (Fold3 page 45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5246,
+     50.7563
+    ]
+   },
+   "properties": {
+    "claim_id": "C8089",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-24",
+    "place_id": "PL2385",
+    "location_name": "Stockheim, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "353rd Division loses Krauthausen and Niederau; new line on the east edge of the woods west of Stockheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-6- and -7- (Fold3 page 47 and 48)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3161,
      51.081
     ]
@@ -248088,8 +248703,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R538;R815;R002",
-    "source_locator": "R538: p. 167; R815: German p.20 (Fold3 image 29)"
+    "reference_ids": "R538;R815;R821;R002",
+    "source_locator": "R538: p. 167; R815: German p.20 (Fold3 image 29); R821: German p.-3- and -8- (Fold3 page 44 and 49)"
    }
   },
   {
@@ -249081,6 +249696,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3219,
+     51.0328
+    ]
+   },
+   "properties": {
+    "claim_id": "C8090",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-25",
+    "place_id": "PL3640",
+    "location_name": "Lövenich (Erkelenz), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "battalion of the 176th Division in Lövenich, the focal point; Lövenich lost on 25 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-8- (Fold3 page 49)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4667,
+     50.8833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8113",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-25",
+    "place_id": "PL3290",
+    "location_name": "Niederzier, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 3rd Armored Division thrusts from Niederzier toward Steinstrass (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-9- (Fold3 page 50)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2736,
      51.6686
     ]
@@ -249450,6 +250147,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.427,
+     51.0075
+    ]
+   },
+   "properties": {
+    "claim_id": "C8091",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-26",
+    "place_id": "PL3642",
+    "location_name": "Titz, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "11th Panzer Division with its main body about Titz; escapes being cut off there on 27 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-10- and -13- and -17- (Fold3 page 51 and 54 and 59)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5698,
+     50.9371
+    ]
+   },
+   "properties": {
+    "claim_id": "C8092",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-26",
+    "place_id": "PL0635",
+    "location_name": "Elsdorf, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "tank fighting between Steinstrass and Elsdorf; 9th Panzer Division holds Elsdorf and blocks the way to the Erft",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-10- and -11- (Fold3 page 51 and 52)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5698,
+     50.9371
+    ]
+   },
+   "properties": {
+    "claim_id": "C8093",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-363D",
+    "unit_name": "363rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-26",
+    "place_id": "PL0635",
+    "location_name": "Elsdorf, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "363rd Volksgrenadier Division loses Mersch, Stetternich and Hambach; new line Elsdorf-Etzweiler-Manheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-10- (Fold3 page 51)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4893,
+     50.7468
+    ]
+   },
+   "properties": {
+    "claim_id": "C8114",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-001D",
+    "unit_name": "1st Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-26",
+    "place_id": "PL3653",
+    "location_name": "Kreuzau, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 1st Division crosses at Kreuzau (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-12- (Fold3 page 53)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2197,
      51.0608
     ]
@@ -249523,8 +250384,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R538;R537;R002",
-    "source_locator": "R538: p. 169; R537: p. 154"
+    "reference_ids": "R538;R537;R821;R002",
+    "source_locator": "R538: p. 169; R537: p. 154; R821: German p.-17- and -18- (Fold3 page 59 and 60)"
    }
   },
   {
@@ -255395,6 +256256,416 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3723,
+     51.2066
+    ]
+   },
+   "properties": {
+    "claim_id": "C8094",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-02-27",
+    "place_id": "PL3654",
+    "location_name": "Winkeln (Mönchengladbach), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps command post at Winkeln west of Mönchengladbach",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-16a- (Fold3 page 58)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.273,
+     51.213
+    ]
+   },
+   "properties": {
+    "claim_id": "C8096",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL3612",
+    "location_name": "Waldniel (Schwalmtal), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "176th Division strongpoint front Birgelen-Arsbeck-Waldniel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-15- (Fold3 page 56)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3615,
+     51.1483
+    ]
+   },
+   "properties": {
+    "claim_id": "C8097",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL3611",
+    "location_name": "Rheindahlen (Mönchengladbach), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "183rd Division (remnants) halts the US XIII Corps just north of Rheindahlen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-14- and -15- (Fold3 page 55 and 56)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.489,
+     51.483
+    ]
+   },
+   "properties": {
+    "claim_id": "C8098",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL3202",
+    "location_name": "Wickrath, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "338th Division hardly attacked in the area Gerrath-Venrath-Wanlo-Wickrathsberg-Wickrath, with heavy anti-tank battalion 668 attached",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-15- (Fold3 page 56)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4354,
+     51.1947
+    ]
+   },
+   "properties": {
+    "claim_id": "C8099",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-27",
+    "place_id": "PL0636",
+    "location_name": "Mönchengladbach, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "first elements of Panzer Lehr Division north of Mönchengladbach in the afternoon",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-14- (Fold3 page 55)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6947,
+     50.8696
+    ]
+   },
+   "properties": {
+    "claim_id": "C8105",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-003D",
+    "unit_name": "3rd Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-27",
+    "place_id": "PL3650",
+    "location_name": "Kerpen, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "3rd Panzergrenadier Division back to Busch Huberts and west of Kerpen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-18- (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5042,
+     51.0652
+    ]
+   },
+   "properties": {
+    "claim_id": "C8115",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL3648",
+    "location_name": "Garzweiler (Jüchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 29th Division attacks either side of Garzweiler against the 59th Division (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-17- (Fold3 page 59)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5042,
+     51.0652
+    ]
+   },
+   "properties": {
+    "claim_id": "C8116",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-030D",
+    "unit_name": "30th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL3648",
+    "location_name": "Garzweiler (Jüchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 30th Division attacks either side of Garzweiler against the 59th Division (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-17- (Fold3 page 59)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5042,
+     51.0652
+    ]
+   },
+   "properties": {
+    "claim_id": "C8117",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-002D",
+    "unit_name": "2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-27",
+    "place_id": "PL3648",
+    "location_name": "Garzweiler (Jüchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 2nd Armored Division attacks either side of Garzweiler against the 59th Division (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-17- (Fold3 page 59)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3615,
+     51.1483
+    ]
+   },
+   "properties": {
+    "claim_id": "C8118",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-013C",
+    "unit_name": "XIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-27",
+    "place_id": "PL3611",
+    "location_name": "Rheindahlen (Mönchengladbach), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US XIII Corps halted just north of Rheindahlen (German account)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-14- (Fold3 page 55)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.0,
      49.2333
     ]
@@ -256003,6 +257274,375 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R815;R002",
     "source_locator": "R815: German p.23 (Fold3 image 32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5519,
+     51.1956
+    ]
+   },
+   "properties": {
+    "claim_id": "C8095",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-02-28",
+    "place_id": "PL3646",
+    "location_name": "Kleinenbroich (Korschenbroich), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XII SS Corps command post moved from Winkeln to Kleinenbroich in the night 27-28 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-16a- (Fold3 page 58)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5042,
+     51.0652
+    ]
+   },
+   "properties": {
+    "claim_id": "C8100",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-28",
+    "place_id": "PL3648",
+    "location_name": "Garzweiler (Jüchen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "Panzer Lehr Division attacks from the north-east to help retake Garzweiler; the task is not carried out",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-18- (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5875,
+     51.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C8101",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL0446",
+    "location_name": "Grevenbroich, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "remnants of the 59th Division fall back to the east bank of the Erft either side of Grevenbroich",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-18- (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5396,
+     51.0229
+    ]
+   },
+   "properties": {
+    "claim_id": "C8102",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-011D",
+    "unit_name": "11th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-28",
+    "place_id": "PL3649",
+    "location_name": "Harff (Bedburg), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "11th Panzer Division on the east bank of the Erft except for a small bridgehead at Harff",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-17- and -18- (Fold3 page 59 and 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6087,
+     50.9628
+    ]
+   },
+   "properties": {
+    "claim_id": "C8103",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-009D",
+    "unit_name": "9th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-28",
+    "place_id": "PL3644",
+    "location_name": "Paffendorf (Bergheim), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "9th Panzer Division rolled up by the US 3rd Armored from the south; battle groups on the east bank of the Erft; enemy bridgehead at Glesch and Paffendorf",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-18- (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.672,
+     50.9076
+    ]
+   },
+   "properties": {
+    "claim_id": "C8104",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-363D",
+    "unit_name": "363rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL3645",
+    "location_name": "Sindorf (Kerpen), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "363rd Volksgrenadier Division loses Thorr and Sindorf in the evening, opening the way to Bergheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-18- (Fold3 page 60)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7434,
+     50.8361
+    ]
+   },
+   "properties": {
+    "claim_id": "C8106",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-012D",
+    "unit_name": "12th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL3651",
+    "location_name": "Gymnich (Erftstadt), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "12th Volksgrenadier Division, after losing Wissersheim, holds Gymnich-east of Pingsheim in the evening",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-19- (Fold3 page 61)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7225,
+     50.7668
+    ]
+   },
+   "properties": {
+    "claim_id": "C8107",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-353D",
+    "unit_name": "353rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL2351",
+    "location_name": "Erp, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "353rd Division with its main body forward of Erp and at Müddersheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-19- (Fold3 page 61)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7636,
+     50.5545
+    ]
+   },
+   "properties": {
+    "claim_id": "C8108",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-28",
+    "place_id": "PL3652",
+    "location_name": "Bad Münstereifel, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Fifteenth Army commander reaches the new army command post north of Münstereifel after the change of command ordered on 28 February",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R821;R002",
+    "source_locator": "R821: German p.-19- (Fold3 page 61)"
    }
   },
   {

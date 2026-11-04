@@ -3728,3 +3728,14 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Open:** roadmap 271 (272nd at Bergstein against Simmerath), 272 (LXXIV Corps to the Fifth Panzer Army 4 or 5 February), 273 (R768 and R820, one manuscript).
 - **Coordinates:** no existing coordinates changed; 3 explained exceptions added (`conflict` C0957/C8040 for G063; `speed` C8040/C3986 and C8064/C4779, both 12th Army Group map lag); warnings 138 to 137 (the old C0957 speed warning is now covered by the group). **Tests:** scenario 147. Next free: `C8079`, `PL3637`, `R821`, `G064`, scenario 148, roadmap 274.
 
+
+## fms-fold3-german-2: FMS B-812 German original, von Zangen, Fifteenth Army 23-28 February 1945 (3 November 2026)
+
+- **Source:** FMS B-812 (`R821`), German original (Fold3 pages 38-71) primary, the English translation in the same file (pages 1-37) a check only. B-812 was not yet a reference (R768 and R820 are B-811), so a new reference id; no duplicate-reference point needed.
+- **New claims:** 40 rows `C8079`-`C8118` (30 German, 10 Allied from the German account; blank parents): army, corps and divisional positions 23-28 February (Hülchrath, Beeck, south of Elsdorf, Blessem, Baal, Linnich, Jülich, Düren, Lechenich, Gevenich, Stockheim, Lövenich, Titz, Elsdorf, Winkeln, Kleinenbroich, Waldniel, Rheindahlen, Wickrath, Mönchengladbach, Garzweiler, Grevenbroich, Harff, Paffendorf, Sindorf, Kerpen, Gymnich, Erp, north of Münstereifel) and US divisions and XIII Corps from the German account at 0.3.
+- **Translation differences (recorded in the private notes):** German "3 Pz.-Divn." (three Panzer divisions) against English "the 3. Pz Div"; German adds the corps request that XII SS Corps close the gap (p.-11-); the English p.6 obscured item b) is the 338th Division in the German; the English p.8 obscured US divisions are the 8th (south) and 104th (north); English "II. SS-Corps" is XII SS; "smoke units" for Nebelwerfer.
+- **Inferred values:** each annotated in the row notes (old value none, new value, reason): places Beeck (Wegberg) for "Beek (n. Erkelenz)" and Winkeln (Mönchengladbach); date of the 353rd at Stockheim (24 February).
+- **Corroborations (5):** `R821` appended to `C1151`, `C1152`, `C1153`, `C1154`, `C1959`; no raises (FMS one family).
+- **Places:** `PL3637`-`PL3654`.
+- **Open:** roadmap 274-277.
+- **Coordinates:** none changed; 2 explained exceptions (`speed` C6050/C8091 and C8102/C6050, 12th Army Group map lag); warnings 137 (unchanged). **Tests:** scenario 148. Next free: `C8119`, `PL3655`, `R822`, `G064`, scenario 149, roadmap 278.

@@ -4165,3 +4165,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3837` Troisdorf, `PL3838` Burscheid, `PL3839` Hilden, `PL3840` Hückeswagen, `PL3841` Winterscheid, `PL3842` Wiehl (Nominatim, `R002`).
 - No air, naval or company-level units are drawn; nothing entered by domain.
 - Roadmap 346; scenario 195. Next free: `C8501`, `PL3843`, `R859`, `CR1084`, `G074`, scenario 196, roadmap 347.
+
+## fms-fold3-german-2: Scott's decisions on G073 and Kampfgruppe Mitte (4 November 2026)
+
+- **G073 reviewed by Scott:** confirmed as is; `C8480` (text, Lindlar) stays preferred and `C8497` (map) stays the alternate; claim_status unchanged on both; a review note was added to both rows.
+- **Kampfgruppe Mitte merged into `GER-KG-WITTE`:** alternate names old value none, new value "Kampfgruppe Mitte" (recorded in the unit note, since units.csv has no alias column); reason: the B-709 Anlage 5 map shows Witte taking over Düsseldorf from the 176th from 29 March; Scott approved 4 November 2026. No separate Kampfgruppe Mitte unit entry or claim row existed, so no unit_id link changed and no source or reference wording changed.
+- Roadmap 346 (a) and (b) marked resolved; (c) and (d) stay open.
+- Next free: `C8501`, `PL3843`, `R859`, `CR1084`, `G074`, scenario 196, roadmap 347.

@@ -70,6 +70,7 @@ GER-COR-086C,LXXXVI Corps,Germany,corps,Army,active,1942-11-19,true,48,1944-06-1
 GER-COR-088C,LXXXVIII Corps,Germany,corps,Army,active,1942-06-08,true,71,1944-06-06,1945-05-07,GER-WBN-000H
 GER-COR-089C,LXXXIX Corps,Germany,corps,Army,active,1942-08-02,true,17,1944-09-01,1945-03-16,GER-ARMY-015A
 GER-COR-090C,LXXXX Corps,Germany,corps,Army,active,1942-11-15,true,3,1944-11-26,1945-01-12,GER-ARMY-001A
+GER-COR-EMS,Korps Ems (General Rasp),Germany,corps,Army,active,,true,1,1945-04-10,1945-04-10,
 GER-COR-FELDT,Korps Feldt (Generalkommando Feldt),Germany,corps,Army,active,1944-09-09,true,9,1944-09-18,1944-12-09,
 GER-COR-KVOSG,"Corps Command Vosges (Korpskommando Vosges, provisional corps headquarters)",Germany,corps,Army,active,1944-11-22,true,1,1944-11-22,1944-11-22,
 GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,86,1944-05-05,1945-05-05,GER-ARMY-007A
@@ -95,6 +96,7 @@ GER-VAK-408C,Volks-Artillerie-Korps 408,Germany,corps,Army,placeholder,1944-10-1
 GER-VAK-409C,Volks-Artillerie-Korps 409,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
 GER-VAK-410C,Volks-Artillerie-Korps 410,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
 GER-VAK-766C,Volks-Artillerie-Korps 766,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
+GER-WK-XI,Stellvertretendes Generalkommando XI (Wehrkreis XI),Germany,corps,Army,active,,true,1,1945-04-09,1945-04-09,
 GER-DIV-136ZBV,Division z.b.V. 136,Germany,division,Army,placeholder,,false,0,,,GER-COR-089C
 GER-DIV-172,Division Nr. 172,Germany,division,Army,placeholder,,false,0,,,
 GER-DIV-405,Division Nr. 405,Germany,division,Army,placeholder,1942-10-05,false,0,,,GER-COR-064C
@@ -243,6 +245,7 @@ GER-PZB-150B,Panzer-Brigade 150,Germany,brigade,Armoured,active,1944-11,true,2,1
 GER-SSPZB-WESTF,SS-Panzer-Brigade Westfalen (SS Ersatzbrigade Westfalen),Germany,brigade,Waffen-SS,active,1945-03-29,true,2,1945-03-30,1945-04-01,
 GER-STUG-011B,Sturmgeschütz-Brigade 11,Germany,brigade,Army,active,,true,2,1944-12-17,1944-12-21,
 GER-FJR-006,6th Fallschirmjäger Regiment,Germany,regiment/battle_group,Luftwaffe,active,,true,3,1944-09-06,1944-09-22,
+GER-FJR-009,Fallschirmjäger-Regiment 9 (3rd Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,1,1944-08-02,1944-08-02,
 GER-FJR-013,Fallschirmjäger-Regiment 13 (5th Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,1,1944-12-23,1944-12-23,
 GER-FJR-014,Fallschirmjäger-Regiment 14 (5th Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,4,1944-12-16,1945-01-08,
 GER-FJR-015,Fallschirmjäger-Regiment 15 (5th Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,2,1944-12-17,1944-12-28,
@@ -253,10 +256,13 @@ GER-KG-CHILL,Kampfgruppe Chill,Germany,regiment/battle_group,Army,active,1944-09
 GER-KG-FREY,Kampfgruppe Frey,Germany,regiment/battle_group,Waffen-SS,active,,true,1,1944-06-28,1944-06-28,
 GER-KG-HEINTZ,Kampfgruppe Heintz,Germany,regiment/battle_group,Army,active,,true,1,1944-06-08,1944-06-08,
 GER-KG-HEYDTE,Kampfgruppe von der Heydte (Operation Stösser),Germany,regiment/battle_group,Luftwaffe,active,1944-12,true,2,1944-12-17,1944-12-23,
+GER-KG-HOBE,Kampfgruppe Hobe,Germany,regiment/battle_group,Army,active,,true,1,1945-02-27,1945-02-27,
+GER-KG-KATZM,Kampfgruppe Katzmann,Germany,regiment/battle_group,Army,active,,true,1,1944-10-05,1944-10-05,
 GER-KG-MEYER,Kampfgruppe Meyer,Germany,regiment/battle_group,Army,active,,true,1,1944-06-06,1944-06-06,
 GER-KG-PEIPER,Kampfgruppe Peiper (1st SS Panzer Division),Germany,regiment/battle_group,Waffen-SS,active,1944-12-16,true,5,1944-12-17,1944-12-24,
 GER-KG-ROHRBACH,Kampfgruppe Rohrbach,Germany,regiment/battle_group,Army,active,,true,1,1944-06-07,1944-06-07,
 GER-KG-VONLUCK,Kampfgruppe von Luck,Germany,regiment/battle_group,Armoured,active,,true,1,1944-06-23,1944-06-23,
+GER-KG-WALTH,Kampfgruppe Walther,Germany,regiment/battle_group,Army,active,,true,2,1944-09-22,1944-09-27,
 GER-KG-WEIDINGER,Kampfgruppe Weidinger,Germany,regiment/battle_group,Waffen-SS,active,,true,3,1944-06-27,1944-06-29,
 GER-FJPI-005,Fallschirm-Pionier-Bataillon 5 (5th Fallschirmjäger Division),Germany,battalion,Luftwaffe,active,,true,3,1944-12-16,1944-12-26,
 GER-SSHPZ-101,SS Heavy Panzer Battalion 101,Germany,battalion,Waffen-SS,placeholder,,false,0,,,

@@ -808,7 +808,7 @@ def check_places(claims, vocabs):
     for d in out:
         cs = used.get(d['place_id'], [])
         if not cs:
-            warn(d['_where'], 'place %s %r has no claim: remove it or add the claim' % (d['place_id'], d['name']))
+            pass   # a place with no claims is accepted (Scott, 4 November 2026); the warning was removed
         elif d['coord_reference_id'] and not any(d['coord_reference_id'] in br.parse_ids(c['reference_ids']) for c in cs):
             err(d['_where'], 'coord_reference_id %s is not in the reference_ids of any claim at the place' % d['coord_reference_id'])
     return out

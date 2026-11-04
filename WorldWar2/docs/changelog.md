@@ -3972,3 +3972,7 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Relations:** `CR1067`-`CR1070` organic and `CR1071` attached to `GER-FJ-005D`; start = first claim (basis claim_date, inferred), open at the last claim; links observed_during.
 - **Claims (R843, blank parents):** `C8310`-`C8313` Regiment 14 (Putscheid, Nothum, Lutrebois-Villers-la-Bonne-Eau, Doncols), `C8314`-`C8315` Regiment 15 (Bourscheid, Harlange), `C8316` Regiment 13 (Tintange-Boulaide-Surre), `C8317`-`C8319` engineers (Vianden, Wiltz, Sainlez about 26 December, 0.3; old value none, new value 26 December, reason: only "the following days" after 25 December), `C8320`-`C8321` assault guns (ford near Vianden, Martelange). The division rows stay. Scenario 174.
 
+## fms-fold3-german-2: empty-places warning removed (4 November 2026)
+
+- `scripts/validate.py`: old behaviour, a warning "place ... has no claim: remove it or add the claim" for every place with no claim; new behaviour, no warning; reason: Scott accepts places with no claims (4 November 2026). The coord_reference_id check for places with claims is unchanged. No data changed.
+

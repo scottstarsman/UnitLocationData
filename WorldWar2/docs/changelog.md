@@ -4138,3 +4138,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Conflict group:** G072 `C1803` (23 December, preferred, unchanged) vs `C8473` (22 December, alternate); conflict_group_id on `C1803` old value blank, new value G072.
 - **Places:** `PL3823` Aalten, `PL3824` Oerlinghausen, `PL3825` Bad Lippspringe, `PL3826` Baraque Michel, `PL3827` Neu-Hattlich (Nominatim, `R002`).
 - Roadmap 344; scenario 192. Next free: `C8474`, `PL3828`, `R858`, `CR1084`, `G073`, scenario 193, roadmap 345.
+
+## fms-fold3-german-2: ETHINT-78 (Meindl and Schimpf interview, 3rd Parachute Division in Normandy) as R858 (4 November 2026)
+
+- **Source:** `R858`, typed English interview record pp.-1- and -2- (Fold3 images 5-6) read in full; English only, no German record known.
+- **No new claims or places:** the interview names no dated places beyond those already entered.
+- **Citations (no raises; same Historical Division family):** `R858` appended to `C8213` (3rd Parachute Division training in Brittany, 15 January-8 June 1944) and `C8219` (16 July 1944 Meindl-Hausser conference: Saint-Lô untenable, withdrawal agreed).
+- Roadmap 345; scenario 193. Next free: `C8474`, `PL3828`, `R859`, `CR1084`, `G073`, scenario 194, roadmap 346.

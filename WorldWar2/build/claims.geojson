@@ -113977,8 +113977,8 @@
     "location_date": "1944-10-23",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R002",
-    "source_locator": "R824: p.1 (Fold3 page 6)"
+    "reference_ids": "R824;R848;R002",
+    "source_locator": "R824: p.1 (Fold3 page 6); R848: text p.1 (Fold3 image 6)"
    }
   },
   {
@@ -120578,8 +120578,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R807;R824;R002",
-    "source_locator": "R807: English pp.14-15, German pp.16-17; R824: p.1 (Fold3 page 6)"
+    "reference_ids": "R807;R824;R848;R002",
+    "source_locator": "R807: English pp.14-15, German pp.16-17; R824: p.1 (Fold3 page 6); R848: text p.1 (Fold3 image 6)"
    }
   },
   {
@@ -144563,8 +144563,8 @@
     "location_date": "1944-11-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R438;R002",
-    "source_locator": "R438: p. 519"
+    "reference_ids": "R438;R848;R002",
+    "source_locator": "R438: p. 519; R848: text p.2 (Fold3 image 7)"
    }
   },
   {
@@ -145178,8 +145178,8 @@
     "location_date": "1944-11-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R845;R002",
-    "source_locator": "R824: p.5 (Fold3 page 10); R845: German p.94 (Fold3 image 226)"
+    "reference_ids": "R824;R845;R848;R002",
+    "source_locator": "R824: p.5 (Fold3 page 10); R845: German p.94 (Fold3 image 226); R848: text p.3-5 (Fold3 images 8-10)"
    }
   },
   {
@@ -146000,6 +146000,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R825;R002",
     "source_locator": "R825: German p.18 and 19 and 20 (Fold3 page 22 and 23 and 24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8346",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-11-19",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "XLVII Panzer Corps, told on 18 November, takes responsibility for the Geilenkirchen sector (about 7 km, held by the 183rd Volksgrenadier Division) from XII SS Corps and brings forward the 9th Panzer and 15th Panzergrenadier Divisions",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R848",
+    "source_locator": "R848: text p.2-3 (Fold3 images 7-8)"
    }
   },
   {
@@ -152845,8 +152886,8 @@
     "location_date": "1944-11-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R002",
-    "source_locator": "R824: p.3 and 7 (Fold3 page 8 and 12)"
+    "reference_ids": "R824;R848;R002",
+    "source_locator": "R824: p.3 and 7 (Fold3 page 8 and 12); R848: text p.5 (Fold3 image 10)"
    }
   },
   {
@@ -161045,8 +161086,8 @@
     "location_date": "1944-11-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R002",
-    "source_locator": "R824: p.18 and 19 (Fold3 page 23 and 24)"
+    "reference_ids": "R824;R848;R002",
+    "source_locator": "R824: p.18 and 19 (Fold3 page 23 and 24); R848: text p.7-8 (Fold3 images 12-13)"
    }
   },
   {
@@ -162111,8 +162152,8 @@
     "location_date": "1944-12-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R824;R845;R002",
-    "source_locator": "R824: p.25 and 26 (Fold3 page 30 and 31); R845: German p.94-95 and p.101 (Fold3 images 226-227, 233)"
+    "reference_ids": "R824;R845;R848;R002",
+    "source_locator": "R824: p.25 and 26 (Fold3 page 30 and 31); R845: German p.94-95 and p.101 (Fold3 images 226-227, 233); R848: text p.8 (Fold3 image 13)"
    }
   },
   {
@@ -163054,8 +163095,8 @@
     "location_date": "1944-12-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R768;R820;R824;R002",
-    "source_locator": "R768: pp. 16-18; R820: German p.18 (Fold3 page 185); R824: p.30 (Fold3 page 35)"
+    "reference_ids": "R768;R820;R824;R848;R002",
+    "source_locator": "R768: pp. 16-18; R820: German p.18 (Fold3 page 185); R824: p.30 (Fold3 page 35); R848: text p.9 (Fold3 image 14)"
    }
   },
   {
@@ -168714,6 +168755,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.5 (Fold3 page 73)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2676,
+     50.9806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8347",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-12-05",
+    "place_id": "PL1041",
+    "location_name": "Linnich, Nordrhein-Westfalen",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "after XLVII Panzer Corps is withdrawn on 5 December (to the Ardennes) XII SS Corps, originally in the zone, takes over its sector again, to Linnich",
+    "operation_id": "OP-QUEEN",
+    "operation": "Operation Queen",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Roer",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R848;R845",
+    "source_locator": "R848: text p.9 (Fold3 image 14), R845: German p.94 and p.107 (Fold3 images 226, 239)"
    }
   },
   {

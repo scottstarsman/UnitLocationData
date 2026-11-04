@@ -4024,3 +4024,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New claim (old value: none; parent blank):** `C8345` 3rd Parachute Division destroyed in the Meuse area, 0.3, destroyed true, representative point Namur (50 km); date 3 September 1944 inferred (old value none, new value 1944-09-03, reason: the month is hidden in the viewer, August or September; the letter covers 21 August-3 September).
 - **Supporting citations (`R847` appended, confidence unchanged):** `C8221` (corps east of the Seine after 21 August), `C7689` (corps to Köln-Wahn to reorganise).
 - Scenario 180. Next free: `C8346`, `PL3771`, `R848`, `CR1076`, `G066`, scenario 181, roadmap 334.
+
+## fms-fold3-german-2: ETHINT-43 (Lüttwitz interview, XLVII Panzer Corps 24 October-5 December 1944, English only) as R848 (4 November 2026)
+
+- **Source:** `R848` ETHINT-43, interview of 24 November 1945 written up in English; no German original; same family and author as B-367 (`R824`). Rows capped at 0.5 (interview from memory).
+- **New claims (old value: none; parents blank; 0.5, representative points):** `C8346` XLVII Panzer Corps takes over the Geilenkirchen sector from XII SS Corps, 19 November 1944; `C8347` XII SS Corps takes the sector back to Linnich when XLVII Panzer Corps leaves on 5 December 1944 (`R848;R845`: B-283 agrees without a day).
+- **Supporting citations (`R848` appended, confidence unchanged):** `C0959`, `C2129`, `C7741`, `C8151`, `C8155`, `C8160`, `C8166`, `C8171`.
+- **Roadmap:** 334 (facts not entered, open). Scenario 181. Next free: `C8348`, `PL3771`, `R849`, `CR1076`, `G066`, scenario 182, roadmap 335.

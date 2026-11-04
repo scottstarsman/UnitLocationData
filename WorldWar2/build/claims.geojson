@@ -2630,6 +2630,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C8234",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-06",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps headquarters at Amiens on the Channel coast either side of the Somme mouth before Sponheimer takes over",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.4 (Fold3 page 11)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]
@@ -3402,6 +3443,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R812;R002",
     "source_locator": "R812: printed p.4-5, 8, 10, 15 (Fold3 image 19-20, 23, 25, 30), App 1 (Fold3 image 64-65)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2748,
+     50.0341
+    ]
+   },
+   "properties": {
+    "claim_id": "C8235",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-06-07",
+    "place_id": "PL3725",
+    "location_name": "Naours, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "on the change of command LXVII Corps moves its headquarters from Amiens to Naours, north of Amiens",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.9 (Fold3 page 16)"
    }
   },
   {
@@ -41949,6 +42031,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.0352,
+     49.4508
+    ]
+   },
+   "properties": {
+    "claim_id": "C8236",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL3726",
+    "location_name": "Canteleu, Seine-Maritime",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps takes over the LXXXI Corps coast sector from the Somme to the Seine with its headquarters at Canteleu west of Rouen",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German pp.12-13 (Fold3 pages 19-20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7407,
      48.3382
     ]
@@ -56495,8 +56618,8 @@
     "location_date": "1944-08-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 296-7"
+    "reference_ids": "R668;R836;R002",
+    "source_locator": "R668: pp. 296-7; R836: German pp.21-23 (Fold3 pages 28-30)"
    }
   },
   {
@@ -60474,6 +60597,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R812;R002",
     "source_locator": "R811: German p.1 (Fold3 image 7); R812: printed p.7 (Fold3 image 22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8841,
+     50.2521
+    ]
+   },
+   "properties": {
+    "claim_id": "C8237",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-31",
+    "place_id": "PL3727",
+    "location_name": "Crécy-en-Ponthieu, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps headquarters in the woods near Crécy-en-Ponthieu while it holds the Somme either side of Abbeville",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.25 (Fold3 page 32)"
    }
   },
   {
@@ -67852,8 +68016,8 @@
     "location_date": "1944-09-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R002",
-    "source_locator": "R784: image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944"
+    "reference_ids": "R784;R836;R002",
+    "source_locator": "R784: image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944; R836: German p.31 (Fold3 page 38)"
    }
   },
   {
@@ -74872,6 +75036,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.5698,
+     51.4481
+    ]
+   },
+   "properties": {
+    "claim_id": "C8238",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL1610",
+    "location_name": "Vlissingen, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "LXVII Corps staff, relieved by LXXXIX Corps, is ferried from Breskens to Vlissingen on the morning of 15 September",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.32 (Fold3 page 39)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.375,
      47.7178
     ]
@@ -76464,6 +76669,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.13-14 (Fold3 image 19-20)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4698,
+     51.4679
+    ]
+   },
+   "properties": {
+    "claim_id": "C8239",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-17",
+    "place_id": "PL0691",
+    "location_name": "Essen (Esschen), Antwerp province",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps takes over a new sector north of Antwerp from the Scheldt to west of Turnhout with its headquarters at Essen (Esschen)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German pp.34-35 (Fold3 pages 41-42)"
    }
   },
   {
@@ -83391,8 +83637,8 @@
     "location_date": "1944-09-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R771;R002",
-    "source_locator": "R771: p. 16"
+    "reference_ids": "R771;R836;R002",
+    "source_locator": "R771: p. 16; R836: German p.35 (Fold3 page 42)"
    }
   },
   {
@@ -83514,8 +83760,8 @@
     "location_date": "1944-09-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 366"
+    "reference_ids": "R668;R836;R002",
+    "source_locator": "R668: p. 366; R836: German p.35 (Fold3 page 42)"
    }
   },
   {
@@ -97292,6 +97538,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R813;R002",
     "source_locator": "R813: German p.3 (Fold3 image 26, English p.3), Sketch 1 (Fold3 image 40)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C8240",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps headquarters moves from Esschen to Breda, nearer the left flank, on 4 or 5 October",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.45 (Fold3 page 52)"
    }
   },
   {
@@ -117872,8 +118159,8 @@
     "location_date": "1944-10-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 391"
+    "reference_ids": "R668;R836;R002",
+    "source_locator": "R668: p. 391; R836: German p.49 (Fold3 page 56)"
    }
   },
   {
@@ -118947,6 +119234,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.6062,
+     51.645
+    ]
+   },
+   "properties": {
+    "claim_id": "C8241",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL3438",
+    "location_name": "Zevenbergen, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post ordered to near the north of Zevenbergen for the line Bergen op Zoom-Breda-Dongen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.50 (Fold3 page 57)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.3773,
      51.0348
     ]
@@ -119514,6 +119842,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.23 (Fold3 image 29)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "claim_id": "C8242",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-10-30",
+    "place_id": "PL1065",
+    "location_name": "Dordrecht, Zuid-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Sponheimer hands LXVII Corps to his deputy and the corps command post moves to the south exit of Dordrecht on 30 October",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R836;R002",
+    "source_locator": "R836: German p.52 (Fold3 page 59)"
    }
   },
   {

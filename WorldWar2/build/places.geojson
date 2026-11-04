@@ -12278,7 +12278,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -13638,7 +13638,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14658,7 +14658,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Somme",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -21038,7 +21038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -31898,7 +31898,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -68458,7 +68458,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -74178,6 +74178,66 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2748,
+     50.0341
+    ]
+   },
+   "properties": {
+    "place_id": "PL3725",
+    "name": "Naours, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0352,
+     49.4508
+    ]
+   },
+   "properties": {
+    "place_id": "PL3726",
+    "name": "Canteleu, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8841,
+     50.2521
+    ]
+   },
+   "properties": {
+    "place_id": "PL3727",
+    "name": "Crécy-en-Ponthieu, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
     "claims_count": 1
    }
   }

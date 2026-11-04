@@ -3859,3 +3859,11 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New places:** `PL3718`-`PL3724` (Lich, Ulrichstein, Elgershausen, Gertenbach, Adelebsen, Steinthaleben, Thale; Nominatim).
 - **Corroborations (no confidence raised, FMS family):** `R835` appended to `C1207` and `C1208` (Eleventh Army command 2-8 April).
 - **Not entered:** roadmap 308-310 (308 needs Scott's decision on B-414 rows C7949/C7959). Scenario 163.
+
+## fms-fold3-german-2: FMS B-236 German original, Sponheimer, LXVII Corps 7 June-30 October 1944 (4 November 2026)
+
+- **Source:** FMS B-236 (`R836`, new; not previously a reference), German only, written at Allendorf 21 October 1946 from memory without records (Fold3 pages 1-60).
+- **New claims (LXVII Corps, parent blank):** `C8234` Amiens 6 June (0.3; pre-invasion position dated 6 June as with B-240: date old none, new 1944-06-06, reason: campaign coverage), `C8235` Naours 7 June (0.5), `C8236` Canteleu 8 August (0.5), `C8237` Crécy-en-Ponthieu about 31 August (0.3; inferred date old none, new 1944-08-31), `C8238` Vlissingen 15 September (0.5), `C8239` Esschen 17 September (0.3; 17.9 against a 17.10 [?] reading), `C8240` Breda 5 October (0.5), `C8241` Zevenbergen 27 October (0.5), `C8242` Dordrecht 30 October (0.5).
+- **New places:** `PL3725` Naours, `PL3726` Canteleu, `PL3727` Crécy-en-Ponthieu (Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R836` appended to `C7274`, `C7081`, `C2164`, `C7321`, `C7364`.
+- **Not entered:** roadmap 311-312 (346th/348th reading, 17.10/17.9 date and 711th/719th figure in notes only). Scenario 164.

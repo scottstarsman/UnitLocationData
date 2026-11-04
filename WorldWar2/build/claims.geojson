@@ -177732,8 +177732,8 @@
     "location_date": "1944-12-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R393;R643;R261;R002",
-    "source_locator": "R393: p. 174, 177-178; R643: listing under the 5th Panzer Army heading; R261: table of 1944, December row"
+    "reference_ids": "R393;R643;R261;R850;R002",
+    "source_locator": "R393: p. 174, 177-178; R643: listing under the 5th Panzer Army heading; R261: table of 1944, December row; R850: German p.3-4 (Fold3 images 9-10)"
    }
   },
   {
@@ -178265,8 +178265,8 @@
     "location_date": "1944-12-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R393;R643;R002",
-    "source_locator": "R393: p. 177-178; R643: listing under the XLVII Panzer Corps heading"
+    "reference_ids": "R393;R643;R850;R002",
+    "source_locator": "R393: p. 177-178; R643: listing under the XLVII Panzer Corps heading; R850: German p.4 (Fold3 image 10)"
    }
   },
   {
@@ -178306,8 +178306,8 @@
     "location_date": "1944-12-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R393;R643;R002",
-    "source_locator": "R393: p. 177, 180; R643: listing under the XLVII Panzer Corps heading"
+    "reference_ids": "R393;R643;R850;R002",
+    "source_locator": "R393: p. 177, 180; R643: listing under the XLVII Panzer Corps heading; R850: German p.4 (Fold3 image 10)"
    }
   },
   {
@@ -178889,6 +178889,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2279,
+     50.0225
+    ]
+   },
+   "properties": {
+    "claim_id": "C8376",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-16",
+    "place_id": "PL2616",
+    "location_name": "Karlshausen, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "corps command post in a forest camp 2 km north-west of Karlshausen at the start of the offensive",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.4 (Fold3 image 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -179331,8 +179372,8 @@
     "location_date": "1944-12-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R772;R002",
-    "source_locator": "R772: p. 14"
+    "reference_ids": "R772;R850;R002",
+    "source_locator": "R772: p. 14; R850: German p.6-7 (Fold3 images 12-13)"
    }
   },
   {
@@ -179579,6 +179620,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.24 (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0911,
+     50.0144
+    ]
+   },
+   "properties": {
+    "claim_id": "C8377",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-17",
+    "place_id": "PL2487",
+    "location_name": "Hosingen, Luxembourg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "after costly fighting the division takes Hosingen at midday (22 officers and about 400 men captured) and Drauffelt in the night",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.6 (Fold3 image 12)"
    }
   },
   {
@@ -179946,8 +180028,8 @@
     "location_date": "1944-12-18",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R384;R002",
-    "source_locator": "R384: p. 297"
+    "reference_ids": "R384;R850;R002",
+    "source_locator": "R384: p. 297; R850: German p.7-8 (Fold3 images 13-14)"
    }
   },
   {
@@ -180153,6 +180235,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.25 (Fold3 page 93)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9025,
+     50.0457
+    ]
+   },
+   "properties": {
+    "claim_id": "C8378",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-18",
+    "place_id": "PL2556",
+    "location_name": "Allerborn, Luxembourg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "advancing in two battle groups from Clervaux the division reaches the Allerborn road junction and near midnight destroys a US armoured group 1 km east of Allerborn (over 20 tanks counted)",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.7 (Fold3 image 13)"
    }
   },
   {
@@ -186055,8 +186178,8 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R799;R384;R002",
-    "source_locator": "R799: pages 437-438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 2; R384: p. 304"
+    "reference_ids": "R799;R384;R850;R002",
+    "source_locator": "R799: pages 437-438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 2; R384: p. 304; R850: German p.8 (Fold3 image 14)"
    }
   },
   {
@@ -186096,8 +186219,8 @@
     "location_date": "1944-12-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R389;R002",
-    "source_locator": "R389: p. 452"
+    "reference_ids": "R389;R850;R002",
+    "source_locator": "R389: p. 452; R850: German p.8 (Fold3 image 14)"
    }
   },
   {
@@ -186426,6 +186549,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.26 (Fold3 page 94)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7623,
+     50.0054
+    ]
+   },
+   "properties": {
+    "claim_id": "C8379",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-19",
+    "place_id": "PL3781",
+    "location_name": "Neffe (Bastogne), Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "after reaching Mageret at 03:00 the division takes the station and château of Neffe about 06:00 and advances towards Bastogne, stopped at Mont",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.8 (Fold3 image 14)"
    }
   },
   {
@@ -186875,8 +187039,8 @@
     "location_date": "1944-12-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R772;R388;R002",
-    "source_locator": "R772: p. 21; R388: p. 429"
+    "reference_ids": "R772;R388;R850;R002",
+    "source_locator": "R772: p. 21; R388: p. 429; R850: German p.9 (Fold3 image 15)"
    }
   },
   {
@@ -186998,8 +187162,8 @@
     "location_date": "1944-12-20",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R389;R002",
-    "source_locator": "R389: p. 456"
+    "reference_ids": "R389;R850;R002",
+    "source_locator": "R389: p. 456; R850: German p.8-10 (Fold3 images 14-16)"
    }
   },
   {
@@ -187663,6 +187827,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6352,
+     49.9683
+    ]
+   },
+   "properties": {
+    "claim_id": "C8380",
+    "conflict_group_id": "G066",
+    "claim_status": "alternate",
+    "unit_id": "GER-KG-KUNKEL",
+    "unit_name": "Kampfgruppe Kunkel (26th Volksgrenadier Division reconnaissance group)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3341",
+    "location_name": "Sibret (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "the 26th Volksgrenadier Division reconnaissance battalion, sent round the south of Bastogne, takes Sibret at 21:00",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.10 (Fold3 image 16)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -188243,7 +188448,7 @@
    },
    "properties": {
     "claim_id": "C8370",
-    "conflict_group_id": null,
+    "conflict_group_id": "G066",
     "claim_status": "preferred",
     "unit_id": "GER-KG-KUNKEL",
     "unit_name": "Kampfgruppe Kunkel (26th Volksgrenadier Division reconnaissance group)",
@@ -188802,8 +189007,8 @@
     "location_date": "1944-12-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R799;R843;R002",
-    "source_locator": "R799: page 438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3; R843: German p.31 (Fold3 page 99)"
+    "reference_ids": "R799;R843;R850;R002",
+    "source_locator": "R799: page 438 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3; R843: German p.31 (Fold3 page 99); R850: German p.10-12 (Fold3 images 16-18)"
    }
   },
   {
@@ -189132,6 +189337,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.31 (Fold3 page 99)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3145,
+     50.1826
+    ]
+   },
+   "properties": {
+    "claim_id": "C8381",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-002D",
+    "unit_name": "2nd Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-22",
+    "place_id": "PL3782",
+    "location_name": "Hargimont (Marche-en-Famenne), Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "after meeting strong enemy 2 km south-east of Marche about 17:00 the division turns on corps order via Hargimont and enters it, taking it finally on the forenoon of 23 December",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.12 (Fold3 image 18)"
    }
   },
   {
@@ -189581,8 +189827,8 @@
     "location_date": "1944-12-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R772;R002",
-    "source_locator": "R772: p. 24"
+    "reference_ids": "R772;R850;R002",
+    "source_locator": "R772: p. 24; R850: German p.13 (Fold3 image 19)"
    }
   },
   {
@@ -190533,6 +190779,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0899,
+     50.1666
+    ]
+   },
+   "properties": {
+    "claim_id": "C8382",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL3783",
+    "location_name": "Ciergnon (Houyet), Namur province",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "the division clears Rochefort, forms a bridgehead and a battle group reaches Ciergnon; at 18:00 the corps stops it there to free Buissonville and Humain",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.14-15 (Fold3 images 20-21)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -190606,8 +190893,8 @@
     "location_date": "1944-12-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R799;R002",
-    "source_locator": "R799: page 439 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3"
+    "reference_ids": "R799;R850;R002",
+    "source_locator": "R799: page 439 (NAID 346295326), 26. VGD Ia report of 5 January 1945, section 3; R850: German p.18 (Fold3 image 24)"
    }
   },
   {
@@ -190647,8 +190934,8 @@
     "location_date": "1944-12-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R708;R002",
-    "source_locator": "R708: p. 570"
+    "reference_ids": "R708;R850;R002",
+    "source_locator": "R708: p. 570; R850: German p.16-17 (Fold3 images 22-23)"
    }
   },
   {
@@ -190688,8 +190975,8 @@
     "location_date": "1944-12-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R708;R002",
-    "source_locator": "R708: p. 567"
+    "reference_ids": "R708;R850;R002",
+    "source_locator": "R708: p. 567; R850: German p.15-16 (Fold3 images 21-22)"
    }
   },
   {
@@ -190729,8 +191016,8 @@
     "location_date": "1944-12-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R708;R002",
-    "source_locator": "R708: p. 571"
+    "reference_ids": "R708;R850;R002",
+    "source_locator": "R708: p. 571; R850: German p.16 (Fold3 image 22)"
    }
   },
   {
@@ -191221,8 +191508,8 @@
     "location_date": "1944-12-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R772;R002",
-    "source_locator": "R772: p. 30"
+    "reference_ids": "R772;R850;R002",
+    "source_locator": "R772: p. 30; R850: German p.19-20 (Fold3 images 25-26)"
    }
   },
   {
@@ -196756,8 +197043,8 @@
     "location_date": "1944-12-28",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R709;R002",
-    "source_locator": "R709: p. 614"
+    "reference_ids": "R709;R850;R002",
+    "source_locator": "R709: p. 614; R850: German p.21-22 (Fold3 images 27-28)"
    }
   },
   {
@@ -197134,6 +197421,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6352,
+     49.9683
+    ]
+   },
+   "properties": {
+    "claim_id": "C8383",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-28",
+    "place_id": "PL3341",
+    "location_name": "Sibret (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "the Führer-Begleit-Brigade, arrived in the Bois de Herbaimont on 27 December, attacks Sibret from Chenogne in the morning to reclose the Bastogne ring and is repulsed",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German p.22 (Fold3 image 28)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7019,
+     50.1216
+    ]
+   },
+   "properties": {
+    "claim_id": "C8384",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1944-12-28",
+    "place_id": "PL3780",
+    "location_name": "Engreux (Houffalize), Luxembourg province",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "corps command post marked at Engreux on the situation sketch of 28 December, 19:00",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: sketch map \"Lage am 28.XII.44 19 Uhr\" (Fold3 images 36, 40-45)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.3158,
      51.5891
     ]
@@ -197453,8 +197822,8 @@
     "location_date": "1944-12-30",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R709;R002",
-    "source_locator": "R709: p. 616"
+    "reference_ids": "R709;R850;R002",
+    "source_locator": "R709: p. 616; R850: German p.22-23 (Fold3 images 28-29)"
    }
   },
   {
@@ -210336,6 +210705,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7364,
+     50.1107
+    ]
+   },
+   "properties": {
+    "claim_id": "C8385",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-01-14",
+    "place_id": "PL3784",
+    "location_name": "Mabompré (Houffalize), Luxembourg province",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "corps line for the night of 14/15 January: Achouffe - east of Bonnerue - Mabompré - Noville",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-14",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German correction sheet p.34 (Fold3 image 34), replacing p.26 (image 32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9022,
+     50.145
+    ]
+   },
+   "properties": {
+    "claim_id": "C8386",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-14",
+    "place_id": "PL2609",
+    "location_name": "Steinbach, Luxembourg",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "the 15th Panzergrenadier Division assembles in the Steinbach-Limerle area; on 16 January committed on the Ourthe north of Steinbach",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1945-01-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R850;R002",
+    "source_locator": "R850: German correction sheet p.34 (Fold3 image 34)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.762,
      50.0643
     ]
@@ -217543,8 +217994,8 @@
     "location_date": "1945-01-22",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R515;R002",
-    "source_locator": "R515: p. 50, 51"
+    "reference_ids": "R515;R850;R002",
+    "source_locator": "R515: p. 50, 51; R850: German p.27 (Fold3 image 33)"
    }
   },
   {

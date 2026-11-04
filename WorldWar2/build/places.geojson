@@ -49438,7 +49438,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -50818,7 +50818,7 @@
     "precision_km": 3,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -51878,7 +51878,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Luxembourg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -52018,7 +52018,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -66518,7 +66518,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Wallonia",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -75278,6 +75278,106 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7019,
+     50.1216
+    ]
+   },
+   "properties": {
+    "place_id": "PL3780",
+    "name": "Engreux (Houffalize), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7623,
+     50.0054
+    ]
+   },
+   "properties": {
+    "place_id": "PL3781",
+    "name": "Neffe (Bastogne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3145,
+     50.1826
+    ]
+   },
+   "properties": {
+    "place_id": "PL3782",
+    "name": "Hargimont (Marche-en-Famenne), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0899,
+     50.1666
+    ]
+   },
+   "properties": {
+    "place_id": "PL3783",
+    "name": "Ciergnon (Houyet), Namur province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7364,
+     50.1107
+    ]
+   },
+   "properties": {
+    "place_id": "PL3784",
+    "name": "Mabompré (Houffalize), Luxembourg province",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Wallonia",
     "claims_count": 1
    }
   }

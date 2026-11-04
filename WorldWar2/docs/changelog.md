@@ -4056,3 +4056,14 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3776` Salmchâteau, `PL3777` Huizen, `PL3778` Eemdijk, `PL3779` Wanlo.
 - **Not entered (11, reasons in roadmap 335):** Hellmich, Plocher, von Mühlen, Degener, Fuchs, Runge, Lutze, Keil, Fink, Knaust, Koenig.
 - Roadmap 335 resolved. Scenario 184. Next free: `C8376`, `PL3780`, `R850`, `CR1077`, `G066`, scenario 185, roadmap 337.
+
+## fms-fold3-german-2: FMS A-939 German original (Lüttwitz, XLVII Panzer Corps in the Ardennes, 15 December 1944-20 January 1945) as R850 (4 November 2026)
+
+- **Source:** `R850` FMS A-939; German original primary (text images 7-33, correction sheet image 34, sketches 35-46, read in full); English (images 47-76) spot-checked only. For the January withdrawal the corrected German list (p.34, Oberursel March 1946) is used over the uncorrected English list.
+- **New claims (old value none, new value the row; reasons in each row's notes):** `C8376` XLVII Panzer Corps CP near Karlshausen 16 Dec (0.3, representative point); `C8377` 26th VGD takes Hosingen 17 Dec; `C8378` 2nd Panzer at Allerborn 18 Dec; `C8379` Panzer Lehr takes Neffe 19 Dec; `C8380` Kampfgruppe Kunkel takes Sibret 20 Dec (alternate in new `G066`); `C8381` 2nd Panzer at Hargimont 22 Dec; `C8382` Panzer Lehr at Ciergnon 24 Dec; `C8383` Führer-Begleit-Brigade attack on Sibret repulsed 28 Dec; `C8384` corps CP Engreux on the 28 Dec sketch (0.3, map); `C8385` corps line Achouffe-Mabompré-Noville 14/15 Jan (0.3, representative point, corrected list); `C8386` 15th Panzergrenadier Division assembles Steinbach-Limerle 14 Jan (corrected list only). Others 0.5.
+- **Changed:** `C8370` conflict_group_id old blank, new `G066`, reason: A-939 dates Sibret one day earlier; Cole stays preferred.
+- **Citations (no confidence raises; all FMS manuscripts are one source family):** `R850` appended to `C0981`, `C0994`, `C0995`, `C2180`, `C7146`, `C7136`, `C7148`, `C7152`, `C2181`, `C7137`, `C2185`, `C7149`, `C7150`, `C7147`, `C7138`, `C2189`, `C1788`, `C7153`, `C1093`.
+- **Places:** `PL3780` Engreux, `PL3781` Neffe, `PL3782` Hargimont, `PL3783` Ciergnon, `PL3784` Mabompré (Nominatim, `R002`).
+- **Independent units:** Führer-Begleit-Brigade (existing `GER-PG-FUEBE`) gets `C8383`; Führer-Grenadier-Brigade only planned, not entered; Volkswerfer brigade and Volksartillerie-Korps unnumbered, not entered (roadmap 337).
+- Scenario 185. Next free: `C8387`, `PL3785`, `R851`, `CR1077`, `G067`, scenario 186, roadmap 338.
+- Scenario 114 expectation updated: `C7136` and `C2181` reference_ids now include `R850` (old lists without it), reason: A-939 citation.

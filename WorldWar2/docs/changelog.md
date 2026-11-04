@@ -3739,3 +3739,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Places:** `PL3637`-`PL3654`.
 - **Open:** roadmap 274-277.
 - **Coordinates:** none changed; 2 explained exceptions (`speed` C6050/C8091 and C8102/C6050, 12th Army Group map lag); warnings 137 (unchanged). **Tests:** scenario 148. Next free: `C8119`, `PL3655`, `R822`, `G064`, scenario 149, roadmap 278.
+
+## fms-fold3-german-2: FMS B-197 German original, von Lüttwitz, XLVII Panzer Corps 8 March-16 April 1945 (4 November 2026)
+
+- **Source:** FMS B-197 (`R822`), German only (no English translation in the Fold3 run); text pages headed "MS # B-198" (roadmap 279). Neither B-197 nor B-198 was an existing reference, so a new reference id.
+- **New claims:** 31 rows `C8119`-`C8149` (29 German, 2 Allied from the German account; blank parents): corps command posts (Silvolde, Schloss Lembeck, Datteln area, Haus Bodelschwingh, Dortmund-Sölde, Evingsen, Veserde, Löhnen south of Iserlohn) and the staff overrun south of Iserlohn on 15 April; 116th Panzer (Varsseveld, Polsum, Beckum, Soest, Hamm, Iserlohn), 15th Panzergrenadier (Isselburg), 180th and 190th Divisions (Haltern, Kirchhellen, Erkenschwick line, Brambauer, Kirchlinde, Unna, Dortmund), First Parachute Army staff south of Borken, LIII Corps at Dortmund, 2nd Parachute Division staff at Witten, US 8th Armored (Gladbeck, Polsum).
+- **Inferred values:** each annotated in the row notes: place Datteln for "Bockum, 3 km west of Datteln"; date of the Dortmund-Sölde move (2 April).
+- **Corroborations (10):** `R822` appended to `C7565`, `C7956`, `C7960`, `C1185`, `C2243`, `C1183`, `C7957`, `C7958`, `C2025`, `C1243`; no raises (FMS one family).
+- **Places:** `PL3655`-`PL3666`.
+- **Open:** roadmap 278-280.
+- **Coordinates:** none changed, no new exceptions; warnings 137 (unchanged). **Tests:** scenario 149. Next free: `C8150`, `PL3667`, `R823`, `G064`, scenario 150, roadmap 281.

@@ -45,7 +45,7 @@ GER-ARMY-019A,Nineteenth Army (Germany),Germany,army,Army,active,1943-08-26,true
 GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,army,Army,active,1944-10-17,true,5,1945-02-15,1945-05-04,
 GER-ARMY-025A,Twenty-fifth Army (Germany),Germany,army,Army,active,1944-11-10,true,13,1944-11-10,1945-05-05,
 GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,active,,true,6,1945-04-02,1945-05-01,
-GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,50,1944-09-04,1945-05-05,
+GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,51,1944-09-04,1945-05-05,
 GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,active,,true,36,1944-08-18,1945-04-17,GER-AG-00BG
 GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,active,1944-09-14,true,8,1944-11-07,1945-01-23,GER-AG-00BG
 GER-PZG-EBERB,Panzer Group Eberbach,Germany,army,Armoured,active,,true,2,1944-08-12,1944-08-13,
@@ -54,7 +54,7 @@ GER-COR-012C,XII Corps,Germany,corps,Army,placeholder,1936-10-01,false,0,,,
 GER-COR-013C,XIII Corps,Germany,corps,Army,placeholder,1937-10-01,false,0,,,GER-ARMY-007A
 GER-COR-025C,XXV Corps,Germany,corps,Army,placeholder,1938-11-24,false,0,,,GER-ARMY-007A
 GER-COR-030C,XXX Corps,Germany,corps,Army,active,1939-08-26,true,6,1944-11-10,1945-05-08,
-GER-COR-053C,LIII Corps,Germany,corps,Army,active,1941-02-15,true,8,1944-12-15,1945-04-18,GER-ARMY-007A
+GER-COR-053C,LIII Corps,Germany,corps,Army,active,1941-02-15,true,9,1944-12-15,1945-04-18,GER-ARMY-007A
 GER-COR-062C,LXII Corps (LXII Reserve Corps until 5 August 1944),Germany,corps,Army,placeholder,1944-08-05,false,0,,,GER-ARMY-019A
 GER-COR-063C,LXIII Corps,Germany,corps,Army,active,,true,21,1944-11-18,1945-03-20,
 GER-COR-064C,LXIV Corps (LXIV Reserve Corps until 5 August 1944),Germany,corps,Army,active,1944-08-05,true,37,1944-09-15,1945-05-05,GER-ARMY-001A
@@ -75,7 +75,7 @@ GER-COR-KVOSG,"Corps Command Vosges (Korpskommando Vosges, provisional corps hea
 GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,70,1944-06-08,1945-04-27,GER-ARMY-007A
 GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,active,,true,21,1944-09-15,1945-01-23,
 GER-PZ-039C,XXXIX Panzer Corps,Germany,corps,Armoured,active,1942-07-09,true,6,1944-12-15,1945-04-19,
-GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,44,1944-06-13,1945-04-18,GER-PZA-005A
+GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,54,1944-06-13,1945-04-18,GER-PZA-005A
 GER-PZ-058C,LVIII Panzer Corps,Germany,corps,Armoured,active,1943-07-28,true,17,1944-06-06,1945-04-15,GER-PZA-005A
 GER-SSCOR-012C,XII SS Corps,Germany,corps,Waffen-SS,active,,true,21,1944-09-28,1945-04-15,GER-PZA-005A
 GER-SSCOR-013C,XIII SS Corps,Germany,corps,Waffen-SS,active,,true,13,1944-09-24,1945-05-08,GER-ARMY-001A
@@ -101,7 +101,7 @@ GER-DIV-405,Division Nr. 405,Germany,division,Army,placeholder,1942-10-05,false,
 GER-DIV-406,406th Landesschützen Division (Division z.b.V. 406),Germany,division,Army,active,,true,4,1945-02-20,1945-03-15,
 GER-DIV-526,Division Nr. 526,Germany,division,Army,placeholder,1942-09-28,false,0,,,GER-COR-074C
 GER-DIV-905,Division Nr. 905,Germany,division,Army,placeholder,1945-01-07,false,0,,,GER-COR-089C
-GER-FJ-002D,2nd Fallschirmjäger Division,Germany,division,Luftwaffe,active,1943-02-13,true,10,1944-10-31,1945-03-24,GER-COR-025C
+GER-FJ-002D,2nd Fallschirmjäger Division,Germany,division,Luftwaffe,active,1943-02-13,true,11,1944-10-31,1945-04-08,GER-COR-025C
 GER-FJ-003D,3rd Fallschirmjäger Division,Germany,division,Luftwaffe,active,1943-10,true,31,1944-06-09,1945-04-15,
 GER-FJ-005D,5th Fallschirmjäger Division,Germany,division,Luftwaffe,active,1944-04,true,21,1944-07-24,1945-04-15,GER-FJ-002C
 GER-FJ-006D,6th Fallschirmjäger Division,Germany,division,Luftwaffe,active,1944-06,true,75,1944-08-22,1945-05-10,GER-SSPZ-001C
@@ -123,9 +123,9 @@ GER-INF-089D,89th Infantry Division,Germany,division,Army,active,1944-01-15,true
 GER-INF-106D,106th Infantry Division,Germany,division,Army,placeholder,,false,0,,,GER-COR-064C
 GER-INF-159D,159th Infantry Division,Germany,division,Army,active,1944-10-09,true,23,1944-09-19,1945-03-27,GER-COR-086C
 GER-INF-176D,176th Infantry Division,Germany,division,Army,active,1944-10,true,35,1944-09-08,1945-04-05,GER-SSCOR-012C
-GER-INF-180D,180th Infantry Division,Germany,division,Army,active,1944-10-31,true,41,1944-09-26,1945-04-15,GER-COR-086C
+GER-INF-180D,180th Infantry Division,Germany,division,Army,active,1944-10-31,true,44,1944-09-26,1945-04-15,GER-COR-086C
 GER-INF-189D,189th Infantry Division,Germany,division,Army,active,1944-10-08,true,25,1944-09-19,1945-04-22,GER-COR-066C
-GER-INF-190D,190th Infantry Division,Germany,division,Army,active,1944-11-04,true,18,1944-09-21,1945-03-25,GER-FJ-002C
+GER-INF-190D,190th Infantry Division,Germany,division,Army,active,1944-11-04,true,23,1944-09-21,1945-04-10,GER-FJ-002C
 GER-INF-198D,198th Infantry Division,Germany,division,Army,active,1939-12-01,true,42,1944-08-24,1945-04-18,GER-LFC-004C
 GER-INF-226D,226th Infantry Division,Germany,division,Army,active,1944-06-26,true,3,1944-09-05,1944-12-15,GER-COR-067C
 GER-INF-242D,242nd Infantry Division,Germany,division,Army,placeholder,1943-07-09,false,0,,,GER-COR-062C
@@ -176,13 +176,13 @@ GER-LFD-018D,18th Luftwaffe Field Division,Germany,division,Luftwaffe,placeholde
 GER-LFD-019D,19th Luftwaffe Field Division (19. Luftwaffen-Sturm-Division),Germany,division,Luftwaffe,placeholder,1943-03-01,false,0,,,
 GER-LL-091D,91st Luftlande Division,Germany,division,Army,active,1944-01-15,true,10,1944-06-06,1944-08-01,
 GER-PG-003D,3rd Panzergrenadier Division,Germany,division,Armoured,active,,true,38,1944-09-12,1945-04-18,
-GER-PG-015D,15th Panzergrenadier Division,Germany,division,Armoured,active,,true,39,1944-09-12,1945-04-07,GER-COR-066C
+GER-PG-015D,15th Panzergrenadier Division,Germany,division,Armoured,active,,true,40,1944-09-12,1945-04-07,GER-COR-066C
 GER-PG-025D,25th Panzergrenadier Division,Germany,division,Armoured,active,1943-06-23,true,19,1944-11-12,1945-03-13,
 GER-PZ-002D,2nd Panzer Division,Germany,division,Armoured,active,1935-10-15,true,29,1944-06-06,1945-01-22,
 GER-PZ-009D,9th Panzer Division,Germany,division,Armoured,active,,true,35,1944-06-06,1945-04-18,GER-SSPZ-002C
 GER-PZ-011D,11th Panzer Division,Germany,division,Armoured,active,1940-08-01,true,32,1944-06-06,1945-05-04,GER-COR-085C
 GER-PZ-021D,21st Panzer Division,Germany,division,Armoured,active,1941-08-01,true,52,1944-06-06,1945-03-13,
-GER-PZ-116D,116th Panzer Division,Germany,division,Armoured,active,1944-03-28,true,55,1944-07-15,1945-04-18,GER-SSPZ-002C
+GER-PZ-116D,116th Panzer Division,Germany,division,Armoured,active,1944-03-28,true,62,1944-07-15,1945-04-18,GER-SSPZ-002C
 GER-PZ-CLAUS,Panzer Division von Clausewitz,Germany,division,Army,active,,true,2,1945-04-15,1945-04-21,
 GER-PZ-LEHRD,Panzer Lehr Division,Germany,division,Armoured,active,1944-01-10,true,57,1944-06-06,1945-04-15,
 GER-RES-148D,148th Reserve Division,Germany,division,Army,placeholder,1942-10-01,false,0,,,GER-COR-062C
@@ -333,7 +333,7 @@ US-ARM-004D,4th Armored Division,US,division,Armoured,active,1941-01-13,true,61,
 US-ARM-005D,5th Armored Division,US,division,Armoured,active,1941-08-28,true,48,1944-07-25,1945-05-09,
 US-ARM-006D,6th Armored Division,US,division,Armoured,active,1942-02-15,true,45,1944-07-18,1945-05-09,
 US-ARM-007D,7th Armored Division,US,division,Armoured,active,1942-03-01,true,36,1944-08-10,1945-05-08,
-US-ARM-008D,8th Armored Division,US,division,Armoured,active,1942-04-01,true,18,1945-01-14,1945-05-09,
+US-ARM-008D,8th Armored Division,US,division,Armoured,active,1942-04-01,true,20,1945-01-14,1945-05-09,
 US-ARM-009D,9th Armored Division,US,division,Armoured,active,1942-07-15,true,26,1944-10-24,1945-05-08,
 US-ARM-010D,10th Armored Division,US,division,Armoured,active,1942-07-15,true,35,1944-11-07,1945-05-09,
 US-ARM-011D,11th Armored Division,US,division,Armoured,active,1942-08-15,true,18,1944-12-23,1945-05-08,

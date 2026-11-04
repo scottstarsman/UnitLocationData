@@ -267572,6 +267572,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C8119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-08",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "XLVII Panzer Corps staff pulled out of the Wesel bridgehead in the night 7-8 March and given the Rhine front Emmerich-Wesel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-1- (Fold3 page 79)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1022,
      50.7353
     ]
@@ -268672,6 +268713,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R817;R002",
     "source_locator": "R817: German p.1-2 (Fold3 image 5-6, English p.1-2)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3869,
+     51.9135
+    ]
+   },
+   "properties": {
+    "claim_id": "C8120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-11",
+    "place_id": "PL3479",
+    "location_name": "Silvolde (Oude IJsselstreek), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps relieved by II Parachute Corps and moved to Silvolde as Army Group H reserve",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-1- (Fold3 page 79)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4636,
+     51.9438
+    ]
+   },
+   "properties": {
+    "claim_id": "C8121",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-11",
+    "place_id": "PL3618",
+    "location_name": "Varsseveld (Oude IJsselstreek), Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "116th Panzer Division refitting in the area Halle-Westendorp-Varsseveld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-3- (Fold3 page 81)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4614,
+     51.8344
+    ]
+   },
+   "properties": {
+    "claim_id": "C8122",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-11",
+    "place_id": "PL3616",
+    "location_name": "Isselburg, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "15th Panzergrenadier Division refitting in the area Dinxperlo-Isselburg-Werth-north-west of Bocholt",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-3- (Fold3 page 81)"
    }
   },
   {
@@ -281175,8 +281339,8 @@
     "location_date": "1945-03-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R814;R002",
-    "source_locator": "R668: p. 533; R814: German p.5 (Fold3 image 64)"
+    "reference_ids": "R668;R814;R822;R002",
+    "source_locator": "R668: p. 533; R814: German p.5 (Fold3 image 64); R822: German p.-1- (Fold3 page 79)"
    }
   },
   {
@@ -281585,8 +281749,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R814;R817;R002",
-    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9)"
+    "reference_ids": "R543;R814;R817;R822;R002",
+    "source_locator": "R543: p. 314; R814: German pp.11-12 (Fold3 images 70-71); R817: German p.5 (Fold3 image 9); R822: German p.-5- (Fold3 page 83)"
    }
   },
   {
@@ -281913,8 +282077,8 @@
     "location_date": "1945-03-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R814;R002",
-    "source_locator": "R543: p. 304, p. 308; R814: German pp.5, 13 (Fold3 images 64, 72)"
+    "reference_ids": "R543;R814;R822;R002",
+    "source_locator": "R543: p. 304, p. 308; R814: German pp.5, 13 (Fold3 images 64, 72); R822: German p.-6- (Fold3 page 84)"
    }
   },
   {
@@ -282200,8 +282364,8 @@
     "location_date": "1945-03-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.11-13 (Fold3 image 70-72, English p.25-27)"
+    "reference_ids": "R814;R822;R002",
+    "source_locator": "R814: German p.11-13 (Fold3 image 70-72, English p.25-27); R822: German p.-6- (Fold3 page 84)"
    }
   },
   {
@@ -282243,6 +282407,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R817;R002",
     "source_locator": "R817: German p.4-5 (Fold3 image 8-9, English p.4-5), Anlage 5 (Fold3 image 14-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8583,
+     51.8445
+    ]
+   },
+   "properties": {
+    "claim_id": "C8123",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1945-03-24",
+    "place_id": "PL3615",
+    "location_name": "Borken (Westfalen), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "First Parachute Army staff south of Borken, where the XLVII Panzer Corps commander reports in the night",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-6- (Fold3 page 84)"
    }
   },
   {
@@ -282487,8 +282692,8 @@
     "location_date": "1945-03-25",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.13-14 (Fold3 image 72-73, English p.27)"
+    "reference_ids": "R814;R822;R002",
+    "source_locator": "R814: German p.13-14 (Fold3 image 72-73, English p.27); R822: German p.-7- (Fold3 page 85)"
    }
   },
   {
@@ -282528,8 +282733,8 @@
     "location_date": "1945-03-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.14 (Fold3 image 73, English p.27)"
+    "reference_ids": "R814;R822;R002",
+    "source_locator": "R814: German p.14 (Fold3 image 73, English p.27); R822: German p.-8- (Fold3 page 86)"
    }
   },
   {
@@ -282653,6 +282858,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R817;R002",
     "source_locator": "R817: German p.6 (Fold3 image 10, English p.6), Anlage 5 (Fold3 image 14-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0019,
+     51.7583
+    ]
+   },
+   "properties": {
+    "claim_id": "C8124",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-25",
+    "place_id": "PL3527",
+    "location_name": "Lembeck (Dorsten), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XLVII Panzer Corps command post first at Schloss Lembeck; takes command of the sector Lippe-Emscher Canal at 1800",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-7- (Fold3 page 85)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1833,
+     51.75
+    ]
+   },
+   "properties": {
+    "claim_id": "C8125",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-25",
+    "place_id": "PL0450",
+    "location_name": "Haltern am See, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "190th Division arriving from Holland in the area Haltern-Dülmen, ordered to Kirchhellen-Kolonie Rheinbaben",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-7- (Fold3 page 85)"
    }
   },
   {
@@ -282938,8 +283225,8 @@
     "location_date": "1945-03-26",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.14 (Fold3 image 73, English p.28)"
+    "reference_ids": "R814;R822;R002",
+    "source_locator": "R814: German p.14 (Fold3 image 73, English p.28); R822: German p.-6- and -7- (Fold3 page 84 and 85)"
    }
   },
   {
@@ -283022,6 +283309,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R817;R002",
     "source_locator": "R817: German p.6-7 (Fold3 image 10-11, English p.6-7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9201,
+     51.6037
+    ]
+   },
+   "properties": {
+    "claim_id": "C8126",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-26",
+    "place_id": "PL3601",
+    "location_name": "Kirchhellen (Bottrop), North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "190th Division in the corps south sector by the evening of 26 March",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-7- and -8- (Fold3 page 85 and 86)"
    }
   },
   {
@@ -286259,8 +286587,8 @@
     "location_date": "1945-03-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R544;R814;R002",
-    "source_locator": "R543: p. 319; R544: p. 338; R814: German pp.13-18 (Fold3 images 72-77)"
+    "reference_ids": "R543;R544;R814;R822;R002",
+    "source_locator": "R543: p. 319; R544: p. 338; R814: German pp.13-18 (Fold3 images 72-77); R822: German p.-9- (Fold3 page 87)"
    }
   },
   {
@@ -287006,6 +287334,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9877,
+     51.5718
+    ]
+   },
+   "properties": {
+    "claim_id": "C8127",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-008D",
+    "unit_name": "8th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-28",
+    "place_id": "PL3656",
+    "location_name": "Gladbeck, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "first enemy tanks (US 8th Armored Division) reach the west edge of Gladbeck (German account)",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Plunder",
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-9- (Fold3 page 87)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3385,
+     51.6514
+    ]
+   },
+   "properties": {
+    "claim_id": "C8128",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-28",
+    "place_id": "PL3655",
+    "location_name": "Datteln, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post moved to Bockum, 3 km west of Datteln",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Plunder",
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-9- (Fold3 page 87)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3621,
      49.6303
     ]
@@ -287204,6 +287614,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R817;R002",
     "source_locator": "R817: German p.7-8 (Fold3 image 11-12, English p.7-8), Anlage 5 (Fold3 image 14-22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0528,
+     51.6264
+    ]
+   },
+   "properties": {
+    "claim_id": "C8129",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-29",
+    "place_id": "PL3657",
+    "location_name": "Polsum (Marl), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "counterattack",
+    "current_activity": "116th Panzer Division retakes Polsum by counterthrust after the US 8th Armored breaks in",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Plunder",
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-9- (Fold3 page 87)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0528,
+     51.6264
+    ]
+   },
+   "properties": {
+    "claim_id": "C8130",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-008D",
+    "unit_name": "8th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-29",
+    "place_id": "PL3657",
+    "location_name": "Polsum (Marl), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "US 8th Armored Division breaks into Polsum and is thrown out (German account)",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Plunder",
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-9- (Fold3 page 87)"
    }
   },
   {
@@ -288892,6 +289384,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3385,
+     51.6514
+    ]
+   },
+   "properties": {
+    "claim_id": "C8131",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL3655",
+    "location_name": "Datteln, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "180th and 190th Divisions fall back to the line Flaesheim-Erkenschwick-Suderwich",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-12- (Fold3 page 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2606,
+     51.6399
+    ]
+   },
+   "properties": {
+    "claim_id": "C8132",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL2779",
+    "location_name": "Oer-Erkenschwick, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "190th and 180th Divisions fall back to the line Flaesheim-Erkenschwick-Suderwich",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-12- (Fold3 page 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0403,
+     51.755
+    ]
+   },
+   "properties": {
+    "claim_id": "C8133",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-01",
+    "place_id": "PL0448",
+    "location_name": "Beckum, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "parts of 116th Panzer Division (tank workshop and repaired tanks) fighting at Beckum",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-12- (Fold3 page 90)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.368,
+     51.5528
+    ]
+   },
+   "properties": {
+    "claim_id": "C8134",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-01",
+    "place_id": "PL3658",
+    "location_name": "Bodelschwingh (Dortmund), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post at Haus Bodelschwingh, 4 km north-west of Dortmund",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-13- (Fold3 page 91)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.0403,
      51.755
     ]
@@ -289459,6 +290115,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: German p.23 (Fold3 image 82, English p.22)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1061,
+     51.5725
+    ]
+   },
+   "properties": {
+    "claim_id": "C8135",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-02",
+    "place_id": "PL3659",
+    "location_name": "Soest, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "116th Panzer Division assembles about Soest for an attack north over Beckum, then toward Paderborn, then is sent to Hamm",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-13- (Fold3 page 91)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.587,
+     51.4977
+    ]
+   },
+   "properties": {
+    "claim_id": "C8136",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-02",
+    "place_id": "PL3660",
+    "location_name": "Sölde (Dortmund), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post moved to Dortmund-Sölde",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-14- (Fold3 page 92)"
    }
   },
   {
@@ -293443,6 +294181,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8152,
+     51.6806
+    ]
+   },
+   "properties": {
+    "claim_id": "C8137",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-03",
+    "place_id": "PL3661",
+    "location_name": "Hamm, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "116th Panzer Division arrives in and south of Hamm and attacks the rail bridge at about 2300",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-14- (Fold3 page 92)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7328,
      50.8281
     ]
@@ -293682,6 +294461,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: Anlage 6 (Fold3 image 116)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4345,
+     51.5964
+    ]
+   },
+   "properties": {
+    "claim_id": "C8138",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL0966",
+    "location_name": "Brambauer, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "enemy attacks over the Emscher Canal and Lippe break into Waltrop and Ickern and take Brambauer in the 180th Division area",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-15- and -16- (Fold3 page 93 and 94)"
    }
   },
   {
@@ -294427,6 +295247,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.1061,
+     51.5725
+    ]
+   },
+   "properties": {
+    "claim_id": "C8139",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-06",
+    "place_id": "PL3659",
+    "location_name": "Soest, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "remnants of 116th Panzer Division shifted to Soest as Hamm is finally lost; Soest encircled from three sides",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-17- (Fold3 page 95)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.7708,
      50.81
     ]
@@ -294837,6 +295698,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3704,
+     51.5205
+    ]
+   },
+   "properties": {
+    "claim_id": "C8140",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL3662",
+    "location_name": "Kirchlinde (Dortmund), North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "heavy penetration against the 190th Division to Kirchlinde",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-17- (Fold3 page 95)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6095,
      51.7266
     ]
@@ -295240,6 +296142,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: Anlage 6 (Fold3 image 116)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4653,
+     51.5139
+    ]
+   },
+   "properties": {
+    "claim_id": "C8141",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-053C",
+    "unit_name": "LIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL0460",
+    "location_name": "Dortmund, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "LIII Corps (Bayerlein) takes over the 116th Panzer, 180th and 190th Divisions on the north front at Dortmund",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-18- and -19- (Fold3 page 96 and 97)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3351,
+     51.437
+    ]
+   },
+   "properties": {
+    "claim_id": "C8142",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002D",
+    "unit_name": "2nd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-08",
+    "place_id": "PL3663",
+    "location_name": "Witten, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "2nd Parachute Division staff takes command on the north front with its command post at Witten",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-18- (Fold3 page 96)"
    }
   },
   {
@@ -299511,6 +300495,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7278,
+     51.3055
+    ]
+   },
+   "properties": {
+    "claim_id": "C8143",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-10",
+    "place_id": "PL3664",
+    "location_name": "Evingsen (Altena), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post moved to Evingsen, 6 km south of Iserlohn",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-20- (Fold3 page 98)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.689,
+     51.5348
+    ]
+   },
+   "properties": {
+    "claim_id": "C8144",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL3665",
+    "location_name": "Unna, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "190th Division staff takes unified command of the replacement, Flak and alert battalions either side of Unna",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-20- (Fold3 page 98)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4653,
+     51.5139
+    ]
+   },
+   "properties": {
+    "claim_id": "C8145",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-180D",
+    "unit_name": "180th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL0460",
+    "location_name": "Dortmund, North Rhine-Westphalia",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "180th Division responsible for Dortmund only",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-20- (Fold3 page 98)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -300618,6 +301725,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.6012,
+     51.3256
+    ]
+   },
+   "properties": {
+    "claim_id": "C8146",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-12",
+    "place_id": "PL3666",
+    "location_name": "Veserde (Nachrodt-Wiblingwerde), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post moved to Veserde, 2 km south-east of Hohenlimburg",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-21- (Fold3 page 99)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8667,
      51.9667
     ]
@@ -301634,8 +302782,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R778;R002",
-    "source_locator": "R778: p. 26"
+    "reference_ids": "R778;R822;R002",
+    "source_locator": "R778: p. 26; R822: German p.-21- and -22- (Fold3 page 99 and 100)"
    }
   },
   {
@@ -301964,6 +303112,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R818;R002",
     "source_locator": "R818: German p.5 (Fold3 image 9, English p.4-5, Fold3 image 30-31), Anlage 6 (Fold3 image 16-23)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7,
+     51.3747
+    ]
+   },
+   "properties": {
+    "claim_id": "C8147",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-14",
+    "place_id": "PL1106",
+    "location_name": "Iserlohn, North Rhine-Westphalia",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "116th Panzer Division thrown back from the Ruhr toward Iserlohn as the enemy takes Menden",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-22- (Fold3 page 100)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7,
+     51.3747
+    ]
+   },
+   "properties": {
+    "claim_id": "C8148",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-14",
+    "place_id": "PL1106",
+    "location_name": "Iserlohn, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XLVII Panzer Corps command post moved to Försterei Löhnen, 2 km south of Iserlohn",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-22- and -23- (Fold3 page 100 and 101)"
    }
   },
   {
@@ -302454,8 +303684,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R190;R002",
-    "source_locator": "R190: table of 1945, April row"
+    "reference_ids": "R190;R822;R002",
+    "source_locator": "R190: table of 1945, April row; R822: German p.-19- (Fold3 page 97)"
    }
   },
   {
@@ -303235,6 +304465,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R818;R002",
     "source_locator": "R818: German p.5-6 (Fold3 image 9-10, English p.5-6, Fold3 image 31-32), Anlage 6 (Fold3 image 16-23)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7,
+     51.3747
+    ]
+   },
+   "properties": {
+    "claim_id": "C8149",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-04-15",
+    "place_id": "PL1106",
+    "location_name": "Iserlohn, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "XLVII Panzer Corps orders the cease-fire; its staff is overrun south of Iserlohn at 1600",
+    "operation_id": "OP-RUHR-POCKET",
+    "operation": "Ruhr pocket",
+    "operation_type": "battle",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": "Ruhr pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R822;R002",
+    "source_locator": "R822: German p.-23- (Fold3 page 101)"
    }
   },
   {

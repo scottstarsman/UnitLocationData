@@ -75683,8 +75683,8 @@
     "location_date": "1944-09-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R837;R002",
-    "source_locator": "R837: German p.4 (Fold3 page 60)"
+    "reference_ids": "R837;R771;R002",
+    "source_locator": "R837: German p.4 (Fold3 page 60); R771: German p.4 (Fold3 page 12)"
    }
   },
   {
@@ -106310,8 +106310,8 @@
     "location_date": "1944-10-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R762;R001",
-    "source_locator": "R762: pp. 55-56, Skizze 6"
+    "reference_ids": "R762;R771;R001",
+    "source_locator": "R762: pp. 55-56, Skizze 6; R771: German p.45 (Fold3 page 53)"
    }
   },
   {
@@ -119471,8 +119471,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 390"
+    "reference_ids": "R668;R771;R002",
+    "source_locator": "R668: p. 390; R771: German pp.45-46 (Fold3 pages 53-54)"
    }
   },
   {
@@ -127343,8 +127343,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R811;R002",
-    "source_locator": "R809: German p.9, English p.9; R811: German p.25"
+    "reference_ids": "R809;R811;R771;R002",
+    "source_locator": "R809: German p.9, English p.9; R811: German p.25; R771: annex map (Fold3 page 65)"
    }
   },
   {
@@ -128409,8 +128409,8 @@
     "location_date": "1944-11-05",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R811;R002",
-    "source_locator": "R809: German p.12, English p.12; R811: German pp.26-27"
+    "reference_ids": "R809;R811;R771;R002",
+    "source_locator": "R809: German p.12, English p.12; R811: German pp.26-27; R771: German p.46 (Fold3 page 54)"
    }
   },
   {
@@ -134609,6 +134609,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.5256,
+     51.6628
+    ]
+   },
+   "properties": {
+    "claim_id": "C8260",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-07",
+    "place_id": "PL0801",
+    "location_name": "Moerdijk, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "LXVII Corps holds the last bridgeheads south of the Maas around Dintelsoord, Willemstad and Moerdijk on 7 November, covering the Moerdijk bridges",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: German pp.47-48 (Fold3 pages 55-56)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1846,
      48.6936
     ]
@@ -135545,6 +135586,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R754;R002",
     "source_locator": "R754: narrative"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5256,
+     51.6628
+    ]
+   },
+   "properties": {
+    "claim_id": "C8261",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-09",
+    "place_id": "PL0801",
+    "location_name": "Moerdijk, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "the last LXVII Corps troops cross the Maas over the Moerdijk bridge on 9 November and the bridge is blown behind them",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R771;R002",
+    "source_locator": "R771: German pp.47-48 (Fold3 pages 55-56)"
    }
   },
   {
@@ -143251,8 +143333,8 @@
     "location_date": "1944-11-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R820;R002",
-    "source_locator": "R820: German p.2 (Fold3 page 169)"
+    "reference_ids": "R820;R771;R002",
+    "source_locator": "R820: German p.2 (Fold3 page 169); R771: German p.48 (Fold3 page 56)"
    }
   },
   {

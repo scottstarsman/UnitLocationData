@@ -3884,3 +3884,13 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Corroborations (no confidence raised, FMS family):** `R838` appended to `C8234`, `C8235`, `C8236`, `C7274`, `C7081`, `C7299`, `C7300`.
 - **Conflict group:** `G064` (31 August: `C8249` Gamaches preferred, `C8237` Crécy alternate, old status preferred, reason: B-236 gives no day).
 - **Conflicts kept:** roadmap 315 (116th Panzer and 6th Parachute 13/17 June against 13/17 July; 85th Division 31 or 21 July [?]); not entered: roadmap 316. Scenario 166.
+
+## fms-fold3-german-2: FMS B-475 re-read, German original primary (von Zangen, Fifteenth Army 15 September-10 November 1944) (4 November 2026)
+
+- **Source:** B-475 is already `R771` (same Fold3 file, German read 31 October 2026); the German text (printed pp.1-54, Fold3 images 9-62) and annex map re-read in full as primary; the English translation was only spot-checked. No new reference (`R839` unused).
+- **Reference correction:** `R771` full_citation, old value "German typescript, no English translation; ... read on Fold3 (images 1-75; images 76 onward are B-476).", new value "German typescript (Fold3 images 1-75 ...) followed by an English translation (Fold3 images 76-127, only spot-checked ...); B-476 begins after image 127 ...". Reason: the re-read found the English translation on images 76-127.
+- **New claims (parents blank):** `C8260` LXVII Corps holding the Dintelsoord-Willemstad-Moerdijk bridgeheads, 7 November (0.5); `C8261` LXVII Corps last troops over the Moerdijk bridge, bridge blown, 9 November (0.5).
+- **Corroborations (no confidence raised, FMS family):** `R771` appended to `C8243`, `C7816`, `C8040`, `C2086`, `C7358`, and `C7811` (annex map label only).
+- **Map-label command posts** (Noordeloos, Almkerk, Geldermalsen): no new rows; existing `C2168` (Noordeloos, text p.48) and `C2169` (Geldermalsen, 0.3) unchanged; Almkerk cited on `C7811` without a raise.
+- **Open:** roadmap 317-318. **Tests:** scenario 167. Next free: `C8262`, `PL3737`, `R839`, `G065`, scenario 168, roadmap 319.
+

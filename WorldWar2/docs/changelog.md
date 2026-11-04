@@ -3945,3 +3945,10 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 ## fms-fold3-german-2: FMS B-509 logged as out of scope (4 November 2026)
 
 - FMS B-509 (Bülowius, II Fliegerkorps) is air command, not ground data, and no fitting unit id exists: no rows, no reference; roadmap 325. Next free roadmap: 326.
+
+## fms-fold3-german-2: unit domain (air, naval) and FMS B-509 II Fliegerkorps (4 November 2026)
+
+- **Scott's decision:** collect air units and ships wherever sources give them; not used yet.
+- **Schema:** `data/units.csv` gains a last column `domain` (old value: no column; new value: blank = ground, or `air` / `naval`; reason: keep non-ground units apart). Vocabulary `domain`; validator checks the value. `scripts/build.py` leaves air and naval units and their claims out of every main output and writes them to `build/other_domains/claims.csv` and `build/other_domains/units.csv`; `build/units.csv` keeps its old columns. All existing units are blank (ground).
+- **B-509 (`R842`, new):** unit `GER-FLK-002C` II Fliegerkorps (domain air); `C8284` headquarters Compiègne and `C8285` advanced command post St. Piat [?], both 6 June 1944 at 0.3 (old value: no rows; new value: 6 June; reason: the corps operated 6-28 June, no day given); places `PL3747`-`PL3748`; claim-key exception for the pair. Roadmap 325 resolved.
+- **Backlog:** roadmap 326 lists air and naval units found in earlier notes (not entered). **Tests:** scenario 172. Next free: `C8286`, `PL3749`, `R843`, `G065`, scenario 173, roadmap 327.

@@ -74620,6 +74620,46 @@
     "region": "Bretagne",
     "claims_count": 2
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.8263,
+     49.4179
+    ]
+   },
+   "properties": {
+    "place_id": "PL3747",
+    "name": "Compiègne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.5846,
+     48.5467
+    ]
+   },
+   "properties": {
+    "place_id": "PL3748",
+    "name": "Saint-Piat",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "claims_count": 0
+   }
   }
  ]
 }

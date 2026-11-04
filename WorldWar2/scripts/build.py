@@ -23,6 +23,9 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   data/references.csv                   the references table (one row per distinct source cited; derived from the claims and
                                         data/references_meta.csv by scripts/build_references.py, which build.py calls)
   build/claim_references.csv            claim_id -> reference_id links, one row per link and role (role event | date | location | command_relationship | strength | general; locator = page or section), built from the claims' stored reference_ids
+  build/other_domains/claims.csv        claims of air and naval units (data/units.csv domain air or naval), same columns as all_claims.csv; these units
+                                        are left out of every other output here (collected for later use)
+  build/other_domains/units.csv         the air and naval units with their domain
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
 Do not hand-edit anything in build/: edit data/claims/, data/command_relations.csv or data/command_relation_claims.csv and re-run this script.
@@ -122,6 +125,7 @@ def ech_rank(e):
 def coverage(claim_rows):
     """Return (rows for coverage.csv, text of docs/coverage.md)."""
     _h, units = common.read_dicts(common.UNITS_CSV)
+    units = [u for u in units if common.unit_domain(u) == 'ground']
     per = {}
     for r in claim_rows:
         d = per.setdefault(r['unit_id'], [])
@@ -237,12 +241,17 @@ def all_claims_json(header, rows):
 def outputs():
     """Return {relative path: bytes} for every generated file (paths under docs/ are relative to the repository root)."""
     header, rows = common.load_all_claims()
+    other = common.non_ground_unit_ids()   # air and naval units: collected, kept out of the main outputs (units.csv domain)
+    other_rows = [r for r in rows if r['unit_id'] in other]
+    rows = [r for r in rows if r['unit_id'] not in other]
     ops = operations.load()
+    for r in other_rows:
+        r.update(ops.labels(r['operation_id'], r['date']))
     for r in rows:
         r.update(ops.labels(r['operation_id'], r['date']))
     header = all_claims_header(header)   # the derived columns (command_relationships, place and derived-value columns, operations) are not claim-file columns
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
-    out = {'all_claims.csv': table(rows)}
+    out = {'all_claims.csv': table(rows), 'other_domains/claims.csv': table(other_rows)}
     out['all_claims.json'] = all_claims_json(header, rows)
     feats = []
     for r in rows:
@@ -256,9 +265,13 @@ def outputs():
     out['claims.geojson'] = (json.dumps(gj, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
-    out.update(coveragemod.outputs(common.read_dicts(common.UNITS_CSV)[1], rows))
-    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
-    out['units.csv'], out['units.json'] = units_outputs(common.read_dicts(common.UNITS_CSV))
+    uh, urows = common.read_dicts(common.UNITS_CSV)
+    uh = [c for c in uh if c != 'domain']   # the main units outputs keep their columns; domain is listed in build/other_domains/units.csv
+    ground = [u for u in urows if u['unit_id'] not in other]
+    out.update(coveragemod.outputs(ground, rows))
+    units = {u['unit_id']: u for u in ground}
+    out['units.csv'], out['units.json'] = units_outputs((uh, ground))
+    out['other_domains/units.csv'] = common.csv_bytes(uh + ['domain'], [[u[c] for c in uh + ['domain']] for u in urows if u['unit_id'] in other])
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(command_relations.load(), units, rows))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)

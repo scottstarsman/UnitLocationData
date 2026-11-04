@@ -190,6 +190,14 @@
       "false": "False."
     }
   },
+  "domain": {
+    "description": "Domain of a unit in data/units.csv (column domain; blank means ground).",
+    "values": {
+      "ground": "Ground forces (the default; blank means ground). Includes Luftwaffe ground formations such as parachute and field divisions.",
+      "air": "Air commands and flying units (for example Fliegerkorps). Collected, not yet used in the main outputs.",
+      "naval": "Naval commands and ships. Collected, not yet used in the main outputs."
+    }
+  },
   "record_status": {
     "description": "Research state of a unit record in data/units.csv.",
     "values": {

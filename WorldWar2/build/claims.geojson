@@ -2662,8 +2662,8 @@
     "location_date": "1944-06-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R836;R002",
-    "source_locator": "R836: German p.4 (Fold3 page 11)"
+    "reference_ids": "R836;R838;R002",
+    "source_locator": "R836: German p.4 (Fold3 page 11); R838: German p.3 (Fold3 page 77)"
    }
   },
   {
@@ -3482,8 +3482,8 @@
     "location_date": "1944-06-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R836;R002",
-    "source_locator": "R836: German p.9 (Fold3 page 16)"
+    "reference_ids": "R836;R838;R002",
+    "source_locator": "R836: German p.9 (Fold3 page 16); R838: German p.24 (Fold3 page 98)"
    }
   },
   {
@@ -42063,8 +42063,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R836;R002",
-    "source_locator": "R836: German pp.12-13 (Fold3 pages 19-20)"
+    "reference_ids": "R836;R838;R002",
+    "source_locator": "R836: German pp.12-13 (Fold3 pages 19-20); R838: German p.24 (Fold3 page 98)"
    }
   },
   {
@@ -50231,6 +50231,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.094,
+     49.4405
+    ]
+   },
+   "properties": {
+    "claim_id": "C8246",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-20",
+    "place_id": "PL0676",
+    "location_name": "Rouen, Seine-Maritime",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps headquarters moves from Canteleu into the city of Rouen about 20 August",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.31 (Fold3 page 105)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.0908,
      48.813
     ]
@@ -56618,8 +56659,49 @@
     "location_date": "1944-08-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R836;R002",
-    "source_locator": "R668: pp. 296-7; R836: German pp.21-23 (Fold3 pages 28-30)"
+    "reference_ids": "R668;R836;R838;R002",
+    "source_locator": "R668: pp. 296-7; R836: German pp.21-23 (Fold3 pages 28-30); R838: German pp.34-35 (Fold3 pages 108-109)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1084,
+     49.5991
+    ]
+   },
+   "properties": {
+    "claim_id": "C8247",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-28",
+    "place_id": "PL3729",
+    "location_name": "Clères, Seine-Maritime",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post moves to the area of Clères at 1200 on 28 August as the corps withdraws from the Seine toward the Somme",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.36 (Fold3 page 110)"
    }
   },
   {
@@ -59743,6 +59825,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.4025,
+     49.8324
+    ]
+   },
+   "properties": {
+    "claim_id": "C8248",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-29",
+    "place_id": "PL3730",
+    "location_name": "Londinières, Seine-Maritime",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post moves to the area of Londinières on the evening of 29 August",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.40 (Fold3 page 114)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4512,
      48.5305
     ]
@@ -60610,8 +60733,8 @@
    },
    "properties": {
     "claim_id": "C8237",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G064",
+    "claim_status": "alternate",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
     "nationality": "Germany",
@@ -60638,6 +60761,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R836;R002",
     "source_locator": "R836: German p.25 (Fold3 page 32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.5557,
+     49.9855
+    ]
+   },
+   "properties": {
+    "claim_id": "C8249",
+    "conflict_group_id": "G064",
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-08-31",
+    "place_id": "PL3731",
+    "location_name": "Gamaches, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps command post at Gamaches until the evening of 31 August, then in the north part of Abbeville",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.43 (Fold3 page 117)"
    }
   },
   {
@@ -61260,6 +61424,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.8332,
+     50.1054
+    ]
+   },
+   "properties": {
+    "claim_id": "C8250",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL0937",
+    "location_name": "Abbeville, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps command post at Abbeville while it defends the Somme with the 226th and 245th Divisions",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.46 (Fold3 page 120)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3176,
      50.5424
     ]
@@ -61793,6 +61998,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.8841,
+     50.2521
+    ]
+   },
+   "properties": {
+    "claim_id": "C8251",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL3727",
+    "location_name": "Crécy-en-Ponthieu, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "LXVII Corps command post just east of Crécy as the corps falls back from the Somme toward the Authie and the Canche",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.49 (Fold3 page 123)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.952,
      50.455
     ]
@@ -62196,6 +62442,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 324"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0554,
+     50.4466
+    ]
+   },
+   "properties": {
+    "claim_id": "C8252",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-03",
+    "place_id": "PL3732",
+    "location_name": "Fressin, Pas-de-Calais",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post at Hesdin until 0900 on 3 September, then at Fressin 8 km north of Hesdin",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.51 (Fold3 page 125)"
    }
   },
   {
@@ -62893,6 +63180,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.2-4 (Fold3 image 8-10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2448,
+     50.738
+    ]
+   },
+   "properties": {
+    "claim_id": "C8253",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL3733",
+    "location_name": "Longuenesse, Pas-de-Calais",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post at Longuenesse just south of St-Omer from 1600 on 4 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.56 (Fold3 page 130)"
    }
   },
   {
@@ -66303,6 +66631,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.7265,
+     50.8557
+    ]
+   },
+   "properties": {
+    "claim_id": "C8254",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL3734",
+    "location_name": "Poperinge, West Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps staff crosses the canal and moves via Cassel to Poperinge on 5 September for the planned break-out east",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.58 (Fold3 page 132)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0244,
+     50.8481
+    ]
+   },
+   "properties": {
+    "claim_id": "C8258",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL3736",
+    "location_name": "Beselare (Zonnebeke), West Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "the 711th Infantry Division, newly under LXVII Corps, assembles around Becelaere and Ypres with its command post at Becelaere from 2100 on 5 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.57 (Fold3 page 131)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.7265,
+     50.8557
+    ]
+   },
+   "properties": {
+    "claim_id": "C8259",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-245D",
+    "unit_name": "245th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-05",
+    "place_id": "PL3734",
+    "location_name": "Poperinge, West Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "the 245th Infantry Division holds the canal Calais-St-Omer until 2100 on 5 September, then assembles around Poperinge with its command post there",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.57 (Fold3 page 131)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1778,
      49.1203
     ]
@@ -66795,6 +67246,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.1244,
+     50.945
+    ]
+   },
+   "properties": {
+    "claim_id": "C8255",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-06",
+    "place_id": "PL3735",
+    "location_name": "Roeselare, West Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps command post moves from Poperinge to north of Roeselare on 6 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.59 (Fold3 page 133)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -67205,6 +67697,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.4452,
+     51.2089
+    ]
+   },
+   "properties": {
+    "claim_id": "C8256",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL3287",
+    "location_name": "Maldegem, East Flanders",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "after the break-out is called off LXVII Corps falls back behind the Ostend-Bruges-Ghent canal with its command post at Maldegem",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.61 (Fold3 page 135)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -67606,8 +68139,8 @@
     "location_date": "1944-09-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 327"
+    "reference_ids": "R668;R838;R002",
+    "source_locator": "R668: p. 327; R838: German pp.59-62 (Fold3 pages 133-136)"
    }
   },
   {
@@ -67647,8 +68180,8 @@
     "location_date": "1944-09-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 327"
+    "reference_ids": "R668;R838;R002",
+    "source_locator": "R668: p. 327; R838: German pp.59-62 (Fold3 pages 133-136)"
    }
   },
   {
@@ -68016,8 +68549,8 @@
     "location_date": "1944-09-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R836;R002",
-    "source_locator": "R784: image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944; R836: German p.31 (Fold3 page 38)"
+    "reference_ids": "R784;R836;R838;R002",
+    "source_locator": "R784: image 810 (NAID 271848586), stamped page 1208, HGr B Ia Tagesmeldung of 9 September 1944; R836: German p.31 (Fold3 page 38); R838: German pp.61-64 (Fold3 pages 135-138)"
    }
   },
   {
@@ -73143,6 +73676,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 361-3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4896,
+     51.3272
+    ]
+   },
+   "properties": {
+    "claim_id": "C8257",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-13",
+    "place_id": "PL2062",
+    "location_name": "Oostburg, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "LXVII Corps hands its sector to LXXXIX Corps and moves its command post to Oostburg early on 13 September",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R838;R002",
+    "source_locator": "R838: German p.65 (Fold3 page 139)"
    }
   },
   {

@@ -3875,3 +3875,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **New place:** `PL3728` Hillegersberg (Rotterdam) (Nominatim).
 - **Corroborations (no confidence raised, FMS family):** `R837` appended to `C2164`, `C2165`, `C7321`, `C8241`.
 - **Roadmap:** 311 updated with the B-798 command-post dates; 313-314 added. Scenario 165.
+
+## fms-fold3-german-2: FMS B-596 German original, Gerber, LXVII Corps spring 1944-15 September 1944 (4 November 2026)
+
+- **Source:** FMS B-596 (`R838`, new; not previously a reference), German only, undated (map stamp about 13 May 1946 [?]) (Fold3 pages 72-161).
+- **New claims (parents blank):** LXVII Corps command posts `C8246` Rouen about 20 August (0.3), `C8247` Clères 28 August, `C8248` Londinières 29 August, `C8249` Gamaches 31 August, `C8250` Abbeville 1 September, `C8251` east of Crécy 2 September, `C8252` Fressin 3 September, `C8253` Longuenesse 4 September, `C8254` Poperinge 5 September, `C8255` north of Roeselare 6 September (0.3), `C8256` Maldegem 7 September, `C8257` Oostburg 13 September (0.5 unless stated); `C8258` 711th Division at Becelaere and `C8259` 245th Division at Poperinge, 5 September (0.5).
+- **New places:** `PL3729`-`PL3736` (Clères, Londinières, Gamaches, Fressin, Longuenesse, Poperinge, Roeselare, Beselare; Nominatim).
+- **Corroborations (no confidence raised, FMS family):** `R838` appended to `C8234`, `C8235`, `C8236`, `C7274`, `C7081`, `C7299`, `C7300`.
+- **Conflict group:** `G064` (31 August: `C8249` Gamaches preferred, `C8237` Crécy alternate, old status preferred, reason: B-236 gives no day).
+- **Conflicts kept:** roadmap 315 (116th Panzer and 6th Parachute 13/17 June against 13/17 July; 85th Division 31 or 21 July [?]); not entered: roadmap 316. Scenario 166.

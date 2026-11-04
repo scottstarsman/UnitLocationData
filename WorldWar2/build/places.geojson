@@ -13338,7 +13338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Upper Normandy",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -18478,7 +18478,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Picardie",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -40938,7 +40938,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -65438,7 +65438,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Flanders",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -74238,7 +74238,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -74258,6 +74258,166 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.1084,
+     49.5991
+    ]
+   },
+   "properties": {
+    "place_id": "PL3729",
+    "name": "Clères, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.4025,
+     49.8324
+    ]
+   },
+   "properties": {
+    "place_id": "PL3730",
+    "name": "Londinières, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.5557,
+     49.9855
+    ]
+   },
+   "properties": {
+    "place_id": "PL3731",
+    "name": "Gamaches, Somme",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0554,
+     50.4466
+    ]
+   },
+   "properties": {
+    "place_id": "PL3732",
+    "name": "Fressin, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2448,
+     50.738
+    ]
+   },
+   "properties": {
+    "place_id": "PL3733",
+    "name": "Longuenesse, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.7265,
+     50.8557
+    ]
+   },
+   "properties": {
+    "place_id": "PL3734",
+    "name": "Poperinge, West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1244,
+     50.945
+    ]
+   },
+   "properties": {
+    "place_id": "PL3735",
+    "name": "Roeselare, West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0244,
+     50.8481
+    ]
+   },
+   "properties": {
+    "place_id": "PL3736",
+    "name": "Beselare (Zonnebeke), West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
     "claims_count": 1
    }
   }

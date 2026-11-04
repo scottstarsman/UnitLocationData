@@ -4109,3 +4109,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 ## fms-fold3-german-2: G068 correction (map rows never outrank text rows) (4 November 2026)
 
 - `C8420` (B-673 text, XLVII Panzer Corps HQ Saint-Jean-le-Blanc 15 June) claim_status old value alternate, new value preferred; `C2203` (B-763 situation-map flag, Pontécoulant) old value preferred, new value alternate; reason: Scott's standing rule that map-derived rows never outrank text rows. All other conflict groups checked (G001-G068): no other group has a map-derived row preferred over a text row. Scenario 189 updated.
+
+## fms-fold3-german-2: FMS B-709 English translation, partial read (Ulms, XII SS Corps on the Rhine 3 March-1 April 1945) as R855 (4 November 2026)
+
+- **Source:** `R855` FMS B-709 by Oberst i.G. Ulrich Ulms (not "Klemm", an OCR error), same author as B-410. **Partial read:** only the typed English pp.-1- to -43- (Fold3 pages 5-47; Part I and most of Part II); typed -41- and parts of -11-, -20-, -21-, -28- unread; Part III (Ruhr pocket 1-16 April), Part IV, the sketches and the German original are unread. English only, so no row is above the usual text level and none is raised. One FMS family with B-410 and B-812.
+- **New claims (old value none; reasons in each row):** corps command posts `C8428` Ratingen after 4 March (date inferred 1945-03-05) and `C8429` 2 km north-east of Mettmann 9 March; `C8430` 176th Division takes command in Düsseldorf 7 March; `C8431` 176th withdrawn to the Meschede area 30 March; `C8432` 183rd VGD northern sector, command post Lintorf 8 March; `C8433` 338th command post in the Düsseldorf government building after 4 March; `C8434` 338th southern sector to Baumberg, command post Schloss Eller 8 March; `C8435` 338th raid on Zons about 24 March (0.3); `C8436` Hitdorf foothold wiped out 30 March (0.3); `C8437` Panzer Lehr armoured group to Hubbelrath about 7 March. Others 0.5.
+- **Citations (no raises):** `R855` appended to `C8396` (Lintorf, same author) and `C1162` (Panzer Lehr mobile elements withdrawn south 10 March; place not confirmed).
+- **G067** (28 February) is outside the period read: no change. No new conflict group.
+- **Places:** `PL3804` Düsseldorf, `PL3805` Ratingen, `PL3806` Mettmann, `PL3807` Schloss Eller, `PL3808` Hubbelrath, `PL3809` Hitdorf, `PL3810` Zons (Nominatim, `R002`).
+- Roadmap 342; scenario 190. Next free: `C8438`, `PL3811`, `R856`, `CR1084`, `G069`, scenario 191, roadmap 343.

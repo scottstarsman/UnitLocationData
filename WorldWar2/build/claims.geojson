@@ -268424,8 +268424,8 @@
     "location_date": "1945-03-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R852;R002",
-    "source_locator": "R852: German p.39 (Fold3 image 108)"
+    "reference_ids": "R852;R855;R002",
+    "source_locator": "R852: German p.39 (Fold3 image 108); R855: English typed p.-1- (Fold3 page 5), English typed p.-2- (Fold3 page 6)"
    }
   },
   {
@@ -269335,6 +269335,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7763,
+     51.2254
+    ]
+   },
+   "properties": {
+    "claim_id": "C8433",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL3804",
+    "location_name": "Düsseldorf",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "338th Infantry Division command post in the government building in Düsseldorf after 4 March",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-5- (Fold3 page 9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5667,
      51.3333
     ]
@@ -269697,6 +269738,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R815;R816;R002",
     "source_locator": "R815: German p.27 (Fold3 image 36), Skizze 5 (Fold3 image 78); R816: B-148 Ziffer 3, pp.4-5 (Fold3 images 100-101)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8494,
+     51.2973
+    ]
+   },
+   "properties": {
+    "claim_id": "C8428",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-03-05",
+    "place_id": "PL3805",
+    "location_name": "Ratingen",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "XII SS Corps command post at Ratingen after 4 March",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-3- (Fold3 page 7)"
    }
   },
   {
@@ -276264,6 +276346,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7763,
+     51.2254
+    ]
+   },
+   "properties": {
+    "claim_id": "C8430",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-07",
+    "place_id": "PL3804",
+    "location_name": "Düsseldorf",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "176th Infantry Division takes command in the Düsseldorf sector; its commander is commandant of the fester Platz Düsseldorf",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.904,
+     51.2566
+    ]
+   },
+   "properties": {
+    "claim_id": "C8437",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-LEHRD",
+    "unit_name": "Panzer Lehr Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-07",
+    "place_id": "PL3808",
+    "location_name": "Hubbelrath (Düsseldorf) (armoured group (one Panzergrenadier battalion, 10 tanks))",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "regroup",
+    "current_activity": "Panzer Lehr armoured group (a weak Panzergrenadier battalion and 10 Panzer IV) moved to Hubbelrath, then the Mettmann area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3292,
      50.485
     ]
@@ -276879,6 +277043,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8312,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8432",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-183D",
+    "unit_name": "183rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-08",
+    "place_id": "PL3789",
+    "location_name": "Lintorf (Ratingen)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "183rd Volksgrenadier Division takes over the northern corps sector, command post Lintorf",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8493,
+     51.1951
+    ]
+   },
+   "properties": {
+    "claim_id": "C8434",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-08",
+    "place_id": "PL3807",
+    "location_name": "Schloss Eller (Düsseldorf)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "338th Infantry Division takes over the southern corps sector up to and including Baumberg, command post Schloss Eller",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1022,
      50.7353
     ]
@@ -276993,8 +277239,8 @@
     "location_date": "1945-03-09",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R540;R001",
-    "source_locator": "R540: p. 221"
+    "reference_ids": "R540;R855;R001",
+    "source_locator": "R540: p. 221; R855: English typed p.-37- (Fold3 page 41)"
    }
   },
   {
@@ -277405,6 +277651,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R840;R002",
     "source_locator": "R840: German p.1 (Fold3 page 15)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9778,
+     51.2528
+    ]
+   },
+   "properties": {
+    "claim_id": "C8429",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSCOR-012C",
+    "unit_name": "XII SS Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1945-03-09",
+    "place_id": "PL3806",
+    "location_name": "Mettmann (group of houses about 2 km north-east of Mettmann)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "XII SS Corps command post moves to a group of houses about 2 km north-east of Mettmann",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-34- (Fold3 page 38)"
    }
   },
   {
@@ -292049,6 +292336,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8448,
+     51.1232
+    ]
+   },
+   "properties": {
+    "claim_id": "C8435",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL3810",
+    "location_name": "Zons (Dormagen)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "338th Infantry Division raid across the Rhine on the factory grounds near Zons; the company is lost",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-36- (Fold3 page 40)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -297987,6 +298315,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R823;R822;R002",
     "source_locator": "R823: p.2 (Fold3 page 116); R822: German p.-11- (Fold3 page 89)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2859,
+     51.3437
+    ]
+   },
+   "properties": {
+    "claim_id": "C8431",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-176D",
+    "unit_name": "176th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL1105",
+    "location_name": "Meschede, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "176th Infantry Division withdrawn from the Rhine and set on the march to the Meschede area",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-39- (Fold3 page 43)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9183,
+     51.0615
+    ]
+   },
+   "properties": {
+    "claim_id": "C8436",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-338D",
+    "unit_name": "338th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL3809",
+    "location_name": "Hitdorf (Leverkusen)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "reserve battalion of the 338th Infantry Division and the corps assault company wipe out a US foothold on the east bank at Hitdorf",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R855;R002",
+    "source_locator": "R855: English typed p.-37- (Fold3 page 41)"
    }
   },
   {

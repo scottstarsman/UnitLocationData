@@ -2888,7 +2888,7 @@ def scenario_189_b673():
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     expect(s + ': promoted', [units[u]['record_status'] for u in ('GER-INF-276D', 'GER-INF-326D')], ['active', 'active'])
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
-    expect(s + ': G068', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C2203', 'C8420')], [('G068', 'preferred'), ('G068', 'alternate')])
+    expect(s + ': G068', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C2203', 'C8420')], [('G068', 'alternate'), ('G068', 'preferred')])
     expect(s + ': CPs', [claims[c]['place_id'] for c in ('C8418', 'C8419', 'C8420')], ['PL3800', 'PL1079', 'PL3801'])
 
 

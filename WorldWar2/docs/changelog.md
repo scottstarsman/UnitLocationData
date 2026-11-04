@@ -4105,3 +4105,7 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Citations (no raises):** `R854` appended to `C2068`, `C0064`, `C0093`, `C0771`, `C2192`, `C7236`.
 - **Places:** `PL3800` Gaillon, `PL3801` Saint-Jean-le-Blanc, `PL3802` Beauvais, `PL3803` Hottot-les-Bagues (Nominatim, `R002`).
 - Roadmap 341; scenario 189. Next free: `C8428`, `PL3804`, `R855`, `CR1084`, `G069`, scenario 190, roadmap 342.
+
+## fms-fold3-german-2: G068 correction (map rows never outrank text rows) (4 November 2026)
+
+- `C8420` (B-673 text, XLVII Panzer Corps HQ Saint-Jean-le-Blanc 15 June) claim_status old value alternate, new value preferred; `C2203` (B-763 situation-map flag, Pontécoulant) old value preferred, new value alternate; reason: Scott's standing rule that map-derived rows never outrank text rows. All other conflict groups checked (G001-G068): no other group has a map-derived row preferred over a text row. Scenario 189 updated.

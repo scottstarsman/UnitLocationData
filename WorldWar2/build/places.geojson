@@ -72198,7 +72198,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 4
    }
   },
   {
@@ -76538,6 +76538,46 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5016,
+     50.4737
+    ]
+   },
+   "properties": {
+    "place_id": "PL3843",
+    "name": "Oberbieber (Neuwied)",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6704,
+     50.4389
+    ]
+   },
+   "properties": {
+    "place_id": "PL3844",
+    "name": "Höhr-Grenzhausen, Westerwaldkreis",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
     "claims_count": 1
    }
   }

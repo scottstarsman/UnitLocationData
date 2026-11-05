@@ -4183,3 +4183,7 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - Scenario 196. Next free: `C8503`, `PL3845`, `R859`, `CR1084`, `G078`, scenario 197, roadmap 347.
 
 - **C8048 retired (roadmap 282, Scott 4 November 2026):** `C8048` (B-811, 9th Panzer Division retakes Lindern, 30 November 1944) old value claim, new value retired in `data/retired_claims.csv`, not replaced; reason: B-367 has the attack enter Lindern and then called off, MacDonald has Lindern in US hands from 29 November, and a conflict group with `C8169` is rejected by the validator (same date and place). Claim-key exception `C8048`/`C8169` removed. `C8169` unchanged (preferred, 0.5). Roadmap 282 resolved. Next free ids unchanged.
+
+## map-overlay-plan: map overlay tool plan (5 November 2026)
+
+- Added `docs/map_overlay_plan.md`, a short plan for overlaying claims on the LoC 12th Army Group sheets (R781) and the B-709 sketches. It is a plan only; no data, code or claims changed.

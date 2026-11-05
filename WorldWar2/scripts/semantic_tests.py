@@ -2544,8 +2544,9 @@ def scenario_147_fms_b811_german():
     """FMS B-811 German original (von Zangen): C8040-C8078 cite R820; G063 Königshoven preferred over Aachen; no raises."""
     s = 'scenario 147'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
-    new = ['C%04d' % i for i in range(8040, 8079)]
-    expect(s + ': new rows cite R820 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R820'] * 39)
+    # Scott 4 Nov 2026 (roadmap 282): old list C8040-C8078; new list without C8048, which is retired.
+    new = ['C%04d' % i for i in range(8040, 8079) if i != 8048]
+    expect(s + ': new rows cite R820 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R820'] * 38)  # old 39, new 38 (C8048 retired)
     expect(s + ': G063 Königshoven preferred, Aachen alternate', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8040', 'C0957')], [('G063', 'preferred'), ('G063', 'alternate')])
     expect(s + ': same-manuscript corroborations not raised', [('R820' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C2127', 'C2132', 'C0971')], [(True, '0.5'), (True, '0.3'), (True, '0.5')])
 
@@ -2581,7 +2582,8 @@ def scenario_151_fms_b367_german():
     new = ['C%04d' % i for i in range(8151, 8177)]
     expect(s + ': new rows cite R824 first', [claims[c]['reference_ids'].split(';')[0] for c in new], ['R824'] * 26)
     expect(s + ': FMS corroborations not raised', [('R824' in claims[c]['reference_ids'], claims[c]['confidence']) for c in ('C1472', 'C8049')], [(True, '0.7'), (True, '0.5')])
-    expect(s + ': Lindern 30 November kept as two preferred rows', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8169', 'C8048')], [('', 'preferred'), ('', 'preferred')])
+    # Scott 4 Nov 2026 (roadmap 282): old expectation C8169 and C8048 both preferred; new: C8048 retired (scenario 196).
+    expect(s + ': Lindern 30 November: C8169 preferred, C8048 retired', (claims['C8169']['claim_status'], 'C8048' in claims), ('preferred', False))
 
 def scenario_152_fms_b368_reread():
     """FMS B-368 German re-read: same reference R808 (same Fold3 file); C8177 cites R808; corroborations not raised."""
@@ -2959,7 +2961,7 @@ def scenario_196_scott_decisions_nov04():
     expect(s + ': G074/G075', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8501', 'C7949', 'C8502', 'C7959')], [('G074', 'preferred'), ('G074', 'alternate'), ('G075', 'preferred'), ('G075', 'alternate')])
     expect(s + ': G076/G077', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C2165', 'C8240', 'C8244', 'C8242')], [('G076', 'preferred'), ('G076', 'alternate'), ('G077', 'preferred'), ('G077', 'alternate')])
     expect(s + ': reviewed groups keep status', [claims[c]['claim_status'] for c in ('C8457', 'C1803', 'C8420', 'C8249')], ['preferred'] * 4)
-    expect(s + ': C8048 at the rubric floor', claims['C8048']['confidence'], '0.3')
+    expect(s + ': C8048 retired', 'C8048' in claims, False)
 
 
 def scenario_177_blumentritt_relations():

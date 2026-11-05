@@ -4181,3 +4181,5 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - **Roadmap 282, `C8048`:** Scott asked to lower it (B-367 `C8169`: Lindern entered, then the attack called off); confidence old value 0.3, new value 0.3 (unchanged), reason: 0.3 is already the lowest rubric level (0.3/0.5/0.7/0.9); claim-key exception with `C8169` kept; open for Scott whether to make it alternate or retire it.
 - **Places:** `PL3843` Oberbieber, `PL3844` Höhr-Grenzhausen (Nominatim, `R002`).
 - Scenario 196. Next free: `C8503`, `PL3845`, `R859`, `CR1084`, `G078`, scenario 197, roadmap 347.
+
+- **C8048 retired (roadmap 282, Scott 4 November 2026):** `C8048` (B-811, 9th Panzer Division retakes Lindern, 30 November 1944) old value claim, new value retired in `data/retired_claims.csv`, not replaced; reason: B-367 has the attack enter Lindern and then called off, MacDonald has Lindern in US hands from 29 November, and a conflict group with `C8169` is rejected by the validator (same date and place). Claim-key exception `C8048`/`C8169` removed. `C8169` unchanged (preferred, 0.5). Roadmap 282 resolved. Next free ids unchanged.

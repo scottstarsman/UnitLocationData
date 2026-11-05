@@ -88900,7 +88900,7 @@
    },
    "properties": {
     "claim_id": "C2165",
-    "conflict_group_id": null,
+    "conflict_group_id": "G076",
     "claim_status": "preferred",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
@@ -101733,8 +101733,8 @@
    },
    "properties": {
     "claim_id": "C8240",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G076",
+    "claim_status": "alternate",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
     "nationality": "Germany",
@@ -124201,8 +124201,8 @@
    },
    "properties": {
     "claim_id": "C8242",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G077",
+    "claim_status": "alternate",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
     "nationality": "Germany",
@@ -131130,7 +131130,7 @@
    },
    "properties": {
     "claim_id": "C8244",
-    "conflict_group_id": null,
+    "conflict_group_id": "G077",
     "claim_status": "preferred",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
@@ -292424,8 +292424,8 @@
    },
    "properties": {
     "claim_id": "C7949",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G074",
+    "claim_status": "alternate",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
     "nationality": "Germany",
@@ -292452,6 +292452,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: German p.5 (Fold3 image 64, English p.4-5), Skizze 1 (Fold3 image 125)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5016,
+     50.4737
+    ]
+   },
+   "properties": {
+    "claim_id": "C8501",
+    "conflict_group_id": "G074",
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL3843",
+    "location_name": "Oberbieber (Neuwied)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXVII Corps front on the Wied sector, the enemy at the line Dasbach-east of Oberbieber-forest east of Bendorf, 26th VGD encircled at Oberbieber",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R835;R002",
+    "source_locator": "R835: English p.-3- (Fold3 page 99)"
    }
   },
   {
@@ -292985,6 +293026,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R002",
     "source_locator": "R814: Skizze 1 (Fold3 image 124)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6704,
+     50.4389
+    ]
+   },
+   "properties": {
+    "claim_id": "C8502",
+    "conflict_group_id": "G075",
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-067C",
+    "unit_name": "LXVII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL3844",
+    "location_name": "Höhr-Grenzhausen, Westerwaldkreis",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "LXVII Corps fighting withdrawal east of the Rhine: the enemy crosses the Autobahn and attacks Grenzhausen on the corps left",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R835;R002",
+    "source_locator": "R835: English p.-4- (Fold3 page 100)"
    }
   },
   {
@@ -294310,8 +294392,8 @@
    },
    "properties": {
     "claim_id": "C7959",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G075",
+    "claim_status": "alternate",
     "unit_id": "GER-COR-067C",
     "unit_name": "LXVII Corps",
     "nationality": "Germany",

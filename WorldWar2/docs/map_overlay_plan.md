@@ -1,4 +1,4 @@
-# Map overlay tool: plan (5 November 2026, decisions recorded; not implemented)
+# Map overlay tool: plan (5 November 2026, decisions recorded; tool exists)
 
 ## Goal
 Overlay the dataset's claims on period maps so a reviewer can see, for one date and one sheet, where each claim puts a unit and where the map puts it. The output is review prompts only: map-derived evidence stays at confidence 0.3 or lower and never outranks text. No claim changes automatically.
@@ -17,7 +17,7 @@ One date and one sheet, for example 27 June 1944, scan `cs000022` (base sheet 3,
 4. Write `overlay_<sheet>_<date>.png` and a CSV with one row per claim, both in a scratch folder.
 5. The reviewer clicks or enters the pixel of the map's symbol for that unit. The CSV then gets the map lat/lon and the distance.
 
-Script: `tools/map_overlay/overlay.py`. It needs numpy and Pillow like the `loc12ag` tools. It is not part of the build or `run_checks.sh`.
+Script: `tools/map_overlay/overlay.py` (implemented). It needs numpy and Pillow like the `loc12ag` tools. It is not part of the build or `run_checks.sh`.
 
 ## Georeferencing options
 | Option | How | Pros | Cons |
@@ -46,5 +46,8 @@ Automatic symbol detection or OCR; creating or changing claims; batch runs over 
 4. The overlay includes preferred and alternate rows (alternates drawn in a distinct style).
 5. Hand-picked town GCPs are acceptable later for the B-709 sketches (phase 2).
 
+## Status
+`tools/map_overlay/overlay.py` and `tools/map_overlay/README.md` exist on `map-overlay-plan` (5 November 2026). Scott's decisions above are unchanged. Overlay PNG and CSV outputs stay in a scratch folder (or Drive for review) and are not committed. The script is not part of the build or `run_checks.sh`.
+
 ## Suggested next step
-On a new branch, add `tools/map_overlay/overlay.py` plus a README, run the pilot sheet, and report the per-sheet summary and a handful of flagged rows for review. One branch per task, push the branch only.
+Review the pilot CSV for 27 June 1944 / `cs000022` (copy it to Drive when wanted) and fill in map-symbol pixels so distances and flags can be computed. One branch per task, push the branch only.

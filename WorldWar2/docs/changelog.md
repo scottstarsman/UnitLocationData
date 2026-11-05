@@ -4187,3 +4187,4 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 ## map-overlay-plan: map overlay tool plan (5 November 2026)
 
 - Added `docs/map_overlay_plan.md`, a short plan for overlaying claims on the LoC 12th Army Group sheets (R781) and the B-709 sketches. It is a plan only; no data, code or claims changed.
+- Recorded Scott's decisions of 5 November 2026 in `docs/map_overlay_plan.md`. Old value: an "Open questions for Scott" section listing 5 questions. New value: a "Decisions" section recording static PNG plus CSV, pilot 27 June 1944 `cs000022`, flags in a review CSV in Drive, preferred and alternate rows, and hand-picked town GCPs later for B-709. Reason: Scott answered the questions. No code or data changed.

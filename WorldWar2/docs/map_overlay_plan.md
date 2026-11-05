@@ -1,10 +1,10 @@
-# Map overlay tool: plan (5 November 2026, not implemented)
+# Map overlay tool: plan (5 November 2026, decisions recorded; not implemented)
 
 ## Goal
 Overlay the dataset's claims on period maps so a reviewer can see, for one date and one sheet, where each claim puts a unit and where the map puts it. The output is review prompts only: map-derived evidence stays at confidence 0.3 or lower and never outranks text. No claim changes automatically.
 
 ## Inputs
-- Claims: `data/claims/<country>/*.csv`, joined to `data/places.csv` (lat/lon, precision) and `data/units.csv`. Default: preferred rows, with alternates on a toggle.
+- Claims: `data/claims/<country>/*.csv`, joined to `data/places.csv` (lat/lon, precision) and `data/units.csv`. Preferred and alternate rows (decision 4).
 - LoC 12th Army Group situation maps (R781): Drive "LoC 12th Army Group maps", 416 daily sheets. `tools/loc12ag/sheet_index.csv` maps date to sheet. `tools/loc12ag/georef.py` and `sheet*_control.json` already fit the base sheets (graticule GCPs, Lambert conformal conic projection plus an affine fit, about 1 km RMS) and register other scans of the same base sheet by phase correlation.
 - B-709 sketch maps: Drive "source maps/B-709". These are hand sketches with no graticule, and their rows are already at 0.3. They are a phase-2 input.
 - Map images stay in Drive or scratch folders only and are never committed. Overlay outputs (PNG/HTML) also stay outside the repo.
@@ -39,12 +39,12 @@ Plan: use A for LoC sheets in v1, C as an optional HTML viewer in v2, and B only
 ## Out of scope for v1
 Automatic symbol detection or OCR; creating or changing claims; batch runs over all 416 sheets; B-709 sketches; Fold3 material; rebuilding or uploading the dataset zip; command-relation lines.
 
-## Open questions for Scott
-1. Should v1 be a static PNG plus CSV, or a Leaflet HTML viewer?
-2. Which date and sheet should be the pilot? The default is 27 June 1944 (`cs000022`).
-3. Should flagged distances feed `roadmap.md` items, a new review CSV, or private notes only?
-4. Should overlay outputs live in Drive (for example "map overlays/"), and should they include alternate rows?
-5. For B-709: is a manual-GCP fit acceptable given the sketch distortion, or is a visual check only enough?
+## Decisions (Scott, 5 November 2026)
+1. Output: static PNG plus CSV (no Leaflet viewer in v1).
+2. Pilot: 27 June 1944, scan `cs000022` (base sheet 3).
+3. Accuracy flags go to a review CSV kept in Drive, not to the repo.
+4. The overlay includes preferred and alternate rows (alternates drawn in a distinct style).
+5. Hand-picked town GCPs are acceptable later for the B-709 sketches (phase 2).
 
 ## Suggested next step
-Once Scott answers questions 1-2: on a new branch, add `tools/map_overlay/overlay.py` plus a README, run the pilot sheet, and report the per-sheet summary and a handful of flagged rows for review. One branch per task, push the branch only.
+On a new branch, add `tools/map_overlay/overlay.py` plus a README, run the pilot sheet, and report the per-sheet summary and a handful of flagged rows for review. One branch per task, push the branch only.

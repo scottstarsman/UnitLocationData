@@ -63,6 +63,9 @@ BBOX = {  # theater -> (lat_min, lat_max, lon_min, lon_max); loose, only to catc
     'mediterranean': (28.0, 48.0, -10.0, 40.0),
     'north_africa': (15.0, 38.0, -20.0, 40.0),
     'eastern_front': (40.0, 72.0, 10.0, 70.0),
+    'balkans': (34.0, 47.5, 13.0, 30.0),
+    'scandinavia': (54.0, 72.0, 4.0, 32.0),
+    'home_germany': (45.5, 56.0, 5.5, 24.0),   # the Reich of 1937 plus Austria, the Sudetenland, the Protectorate and the annexed Polish areas
     'pacific': (-50.0, 60.0, 90.0, 180.0),
     'cbi': (0.0, 40.0, 60.0, 125.0),
 }

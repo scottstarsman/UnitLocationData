@@ -85,7 +85,7 @@ class Operations:
             return dict(operation='', operation_type='', campaign='', operation_name='', sub_operation_name='', operation_path='')
         leaf = ch[0]
         camp = next((c for c in ch if c['date_basis'] == 'cmh_streamer' and c['op_type'] == 'campaign' and self.contains(c, date)), None)
-        if camp is None:
+        if camp is None and leaf['theater'] == 'western_europe':   # the CMH streamers are European-African-Middle Eastern Western Front campaigns: no fallback for other theaters
             camp = next((c for c in self.streamers if self.contains(c, date)), None)
         ops = [c for c in ch if c['op_type'] in ('operation', 'umbrella') and self.contains(c, date)]
         top = ops[-1] if ops else None
@@ -174,6 +174,8 @@ def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
                         and (r['start_date'] < par['start_date'] or r['end_date'] > par['end_date']) and not r['parent_date_exception'].strip():
                     w(wh, 'dates %s to %s fall outside the parent %s (%s to %s): fix the dates or explain in parent_date_exception'
                       % (r['start_date'], r['end_date'], p, par['start_date'], par['end_date']))
+                if par['theater'] != r['theater']:
+                    e(wh, 'theater %s differs from the parent %s (%s): an operation stays in its parent\'s theater' % (r['theater'], p, par['theater']))
                 if par['op_type'] in ('battle', 'phase') and r['op_type'] in ('umbrella', 'campaign', 'operation'):
                     w(wh, 'a %s is a child of a %s (%s)' % (r['op_type'], par['op_type'], p))
         elif r['parent_date_exception'].strip():
@@ -237,10 +239,14 @@ def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
             lab = 'an umbrella' if op['op_type'] == 'umbrella' else 'its operation'
             w(wh, 'dated %s, outside %s (%s %s to %s): choose the operation that covers the date (the campaign if none does) or add the claim to data/operation_exceptions.csv with a reason; %s must not label rows outside its dates'
               % (c['date'], oid, op['name'], op['start_date'], op['end_date'], lab))
+        th = c.get('theater', 'western_europe')
+        if th != op['theater']:
+            # theater decision (Scott, 9 November 2026): rows outside the Western Front keep their data under a per-front operation of their own theater
+            e(wh, 'theater %s differs from the theater of its operation %s (%s): use the operation of the row\'s front (for example OP-FRONT-EASTERN or OP-HOME-GERMANY)' % (th, oid, op['theater']))
         if c['date'] < WAR_START:
             e(wh, 'dated %s, before the sanity bound %s (outbreak of the war in Europe)' % (c['date'], WAR_START))
-        elif not ops.labels(oid, c['date'])['campaign'] and not (ops.streamers and (c['date'] < ops.streamers[0]['start_date'] or c['date'] > max(s['end_date'] for s in ops.streamers))):
+        elif th == 'western_europe' and not ops.labels(oid, c['date'])['campaign'] and not (ops.streamers and (c['date'] < ops.streamers[0]['start_date'] or c['date'] > max(s['end_date'] for s in ops.streamers))):
             # no streamer floor or ceiling: a claim dated before the first CMH streamer (6 June 1944) or after the last one ends (11 May 1945)
-            # needs no campaign (decisions Scott, 4 November 2026: OP-PRE-INVASION and OP-POST-SURRENDER hold such rows)
+            # needs no campaign (decisions Scott, 4 November 2026: OP-PRE-INVASION and OP-POST-SURRENDER hold such rows); rows of other theaters need none either
             e(wh, 'no CMH campaign streamer covers the date %s' % c['date'])
     return E, W

@@ -48,7 +48,7 @@ GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,active,,tr
 GER-ARMY-LUETT,"Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944)",Germany,army,Army,active,1944-12-30,true,2,1944-12-30,1944-12-31,
 GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,53,1944-09-04,1945-05-05,
 GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,active,,true,37,1944-08-18,1945-04-17,GER-AG-00BG
-GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,active,1944-09-14,true,9,1944-11-07,1945-01-23,GER-AG-00BG
+GER-PZA-006A,Sixth Panzer Army (Sixth SS Panzer Army),Germany,army,Armoured,active,1944-09-14,true,10,1944-11-07,1945-05-08,GER-AG-00BG
 GER-PZG-EBERB,Panzer Group Eberbach,Germany,army,Armoured,active,,true,2,1944-08-12,1944-08-13,
 GER-PZG-WESTA,Panzer Group West,Germany,army,Armoured,active,,true,9,1944-06-09,1944-08-05,
 GER-COR-012C,XII Corps,Germany,corps,Army,active,1936-10-01,true,10,1940-07-01,1945-03-22,
@@ -205,17 +205,17 @@ GER-SSPZ-010D,10th SS Panzer Division Frundsberg,Germany,division,Waffen-SS,acti
 GER-SSPZ-012D,12th SS Panzer Division Hitlerjugend,Germany,division,Waffen-SS,active,1943-07-20,true,41,1944-06-06,1945-01-04,
 GER-VG-009D,9th Volksgrenadier Division,Germany,division,Army,active,1944-10-13,true,8,1944-11-15,1945-04-16,GER-COR-053C
 GER-VG-012D,12th Volksgrenadier Division,Germany,division,Army,active,1944-08-12,true,24,1944-09-14,1945-02-28,GER-COR-081C
-GER-VG-016D,16th Volksgrenadier Division,Germany,division,Army,active,1944-10-09,true,27,1944-10-10,1945-04-18,GER-COR-064C
+GER-VG-016D,16th Volksgrenadier Division,Germany,division,Army,active,1944-10-09,true,28,1944-10-10,1945-05-05,GER-COR-064C
 GER-VG-018D,18th Volksgrenadier Division,Germany,division,Army,active,1944-09-02,true,8,1944-11-07,1944-12-19,GER-COR-066C
 GER-VG-019D,19th Volksgrenadier Division,Germany,division,Army,active,1944-10-09,true,22,1944-10-10,1945-03-20,GER-COR-082C
-GER-VG-026D,26th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,17,1944-11-21,1945-03-17,GER-COR-066C
+GER-VG-026D,26th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,18,1944-11-21,1945-04-21,GER-COR-066C
 GER-VG-036D,36th Volksgrenadier Division,Germany,division,Army,active,1944-10-09,true,25,1944-10-10,1945-03-13,GER-COR-080C
 GER-VG-047D,47th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,19,1944-11-18,1945-04-09,GER-COR-081C
 GER-VG-062D,62nd Volksgrenadier Division,Germany,division,Army,active,1944-09-22,true,14,1944-12-16,1945-03-17,GER-COR-066C
 GER-VG-079D,79th Volksgrenadier Division,Germany,division,Army,active,1944-10-27,true,3,1944-12-24,1944-12-30,GER-COR-053C
 GER-VG-167D,167th Volksgrenadier Division,Germany,division,Army,active,1944-10,true,11,1944-11-15,1945-04-04,GER-COR-013C
 GER-VG-183D,183rd Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,37,1944-09-18,1945-04-10,GER-SSPZ-002C
-GER-VG-212D,212th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,22,1944-11-14,1945-03-13,GER-COR-080C
+GER-VG-212D,212th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,23,1944-11-14,1945-04-28,GER-COR-080C
 GER-VG-246D,246th Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,26,1944-10-03,1945-03-20,GER-COR-081C
 GER-VG-256D,256th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,30,1944-10-15,1945-03-20,GER-COR-089C
 GER-VG-257D,257th Volksgrenadier Division,Germany,division,Army,active,1944-10-13,true,23,1944-10-13,1945-04-24,GER-COR-090C
@@ -223,12 +223,12 @@ GER-VG-272D,272nd Volksgrenadier Division,Germany,division,Army,active,1944-09-1
 GER-VG-276D,276th Volksgrenadier Division,Germany,division,Army,active,1944-09-04,true,6,1944-12-16,1945-03-27,GER-COR-080C
 GER-VG-277D,277th Volksgrenadier Division,Germany,division,Army,active,1944-09-04,true,19,1944-11-21,1945-03-17,GER-COR-074C
 GER-VG-326D,326th Volksgrenadier Division,Germany,division,Army,active,1944-09-04,true,18,1944-12-12,1945-03-17,GER-COR-067C
-GER-VG-340D,340th Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,12,1944-11-21,1945-03-13,GER-COR-081C
+GER-VG-340D,340th Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,13,1944-11-21,1945-03-17,GER-COR-081C
 GER-VG-347D,347th Volksgrenadier Division,Germany,division,Army,active,,true,1,1945-05-07,1945-05-07,GER-COR-012C
 GER-VG-352D,352nd Volksgrenadier Division,Germany,division,Army,active,1944-09-21,true,11,1944-12-05,1945-03-01,GER-COR-085C
 GER-VG-361D,361st Volksgrenadier Division,Germany,division,Army,active,1944-08-23,true,20,1944-10-03,1945-04-15,GER-COR-089C
 GER-VG-363D,363rd Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,9,1944-10-05,1945-04-15,GER-SSCOR-012C
-GER-VG-462D,462nd Volksgrenadier Division,Germany,division,Army,active,1944-11,true,2,1944-11-09,1944-11-15,GER-COR-082C
+GER-VG-462D,462nd Volksgrenadier Division,Germany,division,Army,active,1944-11,true,3,1944-11-09,1944-12-13,GER-COR-082C
 GER-VG-553D,553rd Volksgrenadier Division,Germany,division,Army,active,1944-07-11,true,24,1944-09-19,1945-03-27,GER-SSCOR-013C
 GER-VG-559D,559th Volksgrenadier Division,Germany,division,Army,active,1944-07-11,true,26,1944-09-24,1945-04-09,GER-SSCOR-013C
 GER-VG-560D,560th Volksgrenadier Division,Germany,division,Army,active,1944-08-10,true,8,1944-12-16,1945-01-09,GER-SSPZ-002C

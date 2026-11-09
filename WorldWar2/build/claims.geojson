@@ -187007,6 +187007,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8946",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-462D",
+    "unit_name": "462nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-13",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle (Fort Jeanne d'Arc (Feste Kaiserin), west of Metz)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "the garrison of Fort Jeanne d'Arc (Feste Kaiserin), the last Metz fort, surrenders",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R323;R645;R001",
+    "source_locator": "R323: section 1; R645: p. 448"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -301315,6 +301356,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3109,
+     50.6453
+    ]
+   },
+   "properties": {
+    "claim_id": "C8950",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-340D",
+    "unit_name": "340th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL4004",
+    "location_name": "Rottbitze, Bad Honnef (Rottbitze (Remagen bridgehead))",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the division is counted as broken up after the loss of Rottbitze",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R318;R002",
+    "source_locator": "R318: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.5743,
      49.8314
     ]
@@ -343135,6 +343217,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "claim_id": "C8947",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0649",
+    "location_name": "Blankenburg (Harz), Sachsen-Anhalt (south of Blankenburg (Harz))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the last remnants of the division capitulate south of Blankenburg (Harz)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R313;R002",
+    "source_locator": "R313: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.5783,
      49.9481
     ]
@@ -350269,6 +350392,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.4544,
+     48.0364
+    ]
+   },
+   "properties": {
+    "claim_id": "C8951",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-212D",
+    "unit_name": "212th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL4005",
+    "location_name": "Forstenrieder Park, Landkreis München (Forstenrieder Park, south of Munich)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the last splinters of the division in the Forstenrieder Park are counted as broken up",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R309;R002",
+    "source_locator": "R309: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4708,
      48.4103
     ]
@@ -356952,6 +357116,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.1692,
+     47.583
+    ]
+   },
+   "properties": {
+    "claim_id": "C8948",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0952",
+    "location_name": "Kufstein, Tirol (Kufstein area)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the last splinters of the division capitulate in the Kufstein area",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R305;R002",
+    "source_locator": "R305: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      14.2781,
      48.4136
     ]
@@ -362644,6 +362849,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R864;R002",
     "source_locator": "R864: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4191,
+     48.039
+    ]
+   },
+   "properties": {
+    "claim_id": "C8949",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-006A",
+    "unit_name": "Sixth Panzer Army (Sixth SS Panzer Army)",
+    "nationality": "Germany",
+    "theater": "eastern_front",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL4003",
+    "location_name": "Steyr, Oberösterreich (on the Enns near Steyr)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the remnants of the army surrender to the Americans on the Enns near Steyr",
+    "operation_id": "OP-FRONT-EASTERN",
+    "operation": "Eastern Front",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Eastern Front",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R175;R002",
+    "source_locator": "R175: section 1"
    }
   },
   {

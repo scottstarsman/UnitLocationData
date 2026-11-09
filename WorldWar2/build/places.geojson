@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 23
+    "claims_count": 24
    }
   },
   {
@@ -12798,7 +12798,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -18778,7 +18778,7 @@
     "precision_km": 3,
     "country": "AT",
     "region": "Tirol",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -79739,6 +79739,66 @@
     "country": "FR",
     "region": "Normandy",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4191,
+     48.039
+    ]
+   },
+   "properties": {
+    "place_id": "PL4003",
+    "name": "Steyr, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3109,
+     50.6453
+    ]
+   },
+   "properties": {
+    "place_id": "PL4004",
+    "name": "Rottbitze, Bad Honnef",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4544,
+     48.0364
+    ]
+   },
+   "properties": {
+    "place_id": "PL4005",
+    "name": "Forstenrieder Park, Landkreis München",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
    }
   }
  ]

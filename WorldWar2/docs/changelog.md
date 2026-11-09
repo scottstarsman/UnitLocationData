@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-b709-b730: FMS B-709 German original (Ulms and Reuther) as R859 (8 November 2026)
+
+- **Source:** `R859` (new), German original of FMS B-709, *Das XII. SS-A.K. an der Rheinfront und im Ruhrkessel, 3.3. bis 16.4.1945*, same Fold3 item as the English translation `R855`. German narrative read 8 November 2026 (viewer pages 106–111 and 133–198; **viewer 112–132 unread**). Maps were not re-read (already under R855). Same FMS family as R855 and B-410 (`R852`): no confidence raises.
+- **Reference R855 (extended):** reliability and full_citation updated — old value "English translation only (German not checked) / German original unread"; new value "German original read as R859 (gap 112–132)"; reason: this reading.
+- **New claims (2):** `C8503` (363rd Volksgrenadier Division takes over the former 338th Rhine sector about 6 April, representative point Schloss Eller `PL3807`, precision 10 km); `C8504` (3rd Parachute Division / local battle commandant holding Siegburg as a strongpoint about 8 April, `PL0457`; division CP remains Wahnerheide `C8477`).
+- **Supporting citations (39 rows, confidence unchanged):** `R859` appended to `C8396`, `C8428`, `C8429`, `C8430`, `C8432`, `C8434`, `C8437`, `C1162`, `C8435`, `C8436`, `C8488`, `C8431`, `C8474`, `C8483`, `C2247`, `C8481`, `C8477`, `C8479`, `C8498`, `C8500`, `C8493`, `C8499`, `C8482`, `C8478`, `C8480`, `C8497`, `C8475`, `C8484`, `C8487`, `C8494`, `C8495`, `C8496`, `C8485`, `C8486`, `C8476`, `C8491`, `C8492`, `C8489`, `C8490`. Each row notes old/new `reference_ids` and that confidence is unchanged (same FMS family).
+- **Not entered / roadmap 347:** unread German pages 112–132; faint early division-number misreads (170/15/333); crossing-place Dinslaken vs Duisburg; mill name Marienmühle vs Markusmühle (same `PL3828`); Btl / Kpf.Gr. v. Rautenfeld (spellings also Rautenberg, Kautenfeld); orphan Panzerjäger-Abteilung 668 and unnamed flak; command relations left blank.
+- **Places:** none new (reused `PL3807`, `PL0457`). **Groups:** none new. **Units:** none new.
+- Roadmap 342 updated; roadmap 347 opened; scenario 197. Next free: `C8505`, `PL3845`, `R860`, `CR1084`, `G078`, scenario 198, roadmap 348.
+
 ## stacey-victory-campaign: Stacey follow-up, five units added (3 November 2026)
 
 Scott approved on 3 November 2026 adding the units Stacey names that had no unit row. No placeholders existed, so five active units were added to `data/units.csv` (blank parents, no formation dates): `GER-INF-471D` 471st Infantry Division, `GER-INF-490D` 490th Infantry Division, `GER-SSGR-034D` 34th SS Volunteer Grenadier Division Landstorm Nederland, `GER-AA-STRAUB` Armee-Abteilung Straube, `CAN-ARM-001B` 1st Canadian Armoured Brigade.

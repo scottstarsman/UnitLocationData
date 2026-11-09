@@ -39,6 +39,7 @@ FIRST_ARMY, THIRD_ARMY, NINTH_ARMY, SEVENTH_ARMY = 'US-ARMY-001A', 'US-ARMY-003A
 ARMY_GROUP_12, ARMY_GROUP_21 = 'US-AG-012G', 'UK-AG-021G'
 CORPS_VII, CORPS_VIII, CORPS_XVIII_ABN, CORPS_VI, CORPS_BRIT_I = 'US-COR-007C', 'US-COR-008C', 'US-ABN-018C', 'US-COR-006C', 'UK-COR-001C'
 DIV_84, DIV_104, DIV_45, DIV_29 = 'US-INF-084D', 'US-INF-104D', 'US-INF-045D', 'US-INF-029D'
+DIV_7AD = 'US-ARM-007D'
 
 FAILURES = []
 CHECKED = [0]
@@ -116,17 +117,25 @@ LOWERED = {c['claim_id'] for c in common.load_all_claims()[1] if 'Review (visual
 
 def scenario_0_staleness():
     """R1-N-001: a standing relationship is certain only up to its last listing."""
-    s = 'staleness (US-INF-029D, last claim 1944-09-29)'
-    row = master(DIV_29, 'US-ARMY-001A', 'assigned', '1944-09-21')
-    expect(s + ': last_listed_date of the assignment to First Army', row['last_listed_date'], '1944-09-29')
+    # Until the command-chain repair (wf-health-fixes, 9 November 2026) this scenario used the 29th Infantry Division's assignment to First Army
+    # (valid_from 1944-09-21, last listed 1944-09-29, open). The repair closed it from the CMH table already cited (valid_to 1944-10-21, basis
+    # assignment_table), so the open example is now the 7th Armored Division's assignment to First Army (valid_from 1944-12-16, last listed
+    # 1945-01-23, open; a roadmap item because the 7th Armored Division ETO-OB page has no table in any capture).
+    s = 'staleness (US-ARM-007D, last claim 1945-01-23)'
+    row = master(DIV_7AD, 'US-ARMY-001A', 'assigned', '1944-12-16')
+    expect(s + ': last_listed_date of the assignment to First Army', row['last_listed_date'], '1945-01-23')
     expect(s + ': its end is not recorded', row['valid_to_basis'], 'open_at_last_claim')
-    expect(s + ': 1944-09-29 (last listing) is certain', intervals(DIV_29, '1944-09-29')[('US-ARMY-001A', 'assigned')][0], 'certain')
-    st, why = intervals(DIV_29, '1944-12-31')[('US-ARMY-001A', 'assigned')]
-    expect(s + ': 1944-12-31 (93 days after) is possible, not certain', st, 'possible')
-    expect_in(s + ': the reason names the last listing and the distance', why, 'after the last claim that lists it (1944-09-29, 93 days earlier)')
+    expect(s + ': 1945-01-23 (last listing) is certain', intervals(DIV_7AD, '1945-01-23')[('US-ARMY-001A', 'assigned')][0], 'certain')
+    st, why = intervals(DIV_7AD, '1945-04-26')[('US-ARMY-001A', 'assigned')]
+    expect(s + ': 1945-04-26 (93 days after) is possible, not certain', st, 'possible')
+    expect_in(s + ': the reason names the last listing and the distance', why, 'after the last claim that lists it (1945-01-23, 93 days earlier)')
     expect_in(s + ': the reason says the standing relationship is carried forward', why, 'carried forward until a replacement is recorded')
-    stale = {k: v[0] for k, v in intervals(DIV_29, '1944-12-31').items()}
-    expect(s + ': every interval of the division on 1944-12-31 is possible', set(stale.values()), {'possible'})
+    stale = {k: v[0] for k, v in intervals(DIV_7AD, '1945-04-26').items()}
+    expect(s + ': every interval of the division on 1945-04-26 is possible', set(stale.values()), {'possible'})
+    # the repaired 29th Infantry Division row: a sourced (table) end is not capped by the last listing
+    row = master(DIV_29, 'US-ARMY-001A', 'assigned', '1944-09-21')
+    expect(s + ': the 29th Infantry Division assignment to First Army now ends 1944-10-21 (assignment table)', (row['valid_to'], row['valid_to_basis']), ('1944-10-21', 'assignment_table'))
+    expect(s + ': ...and 1944-10-15 is certain although the last listing is 1944-09-29', intervals(DIV_29, '1944-10-15')[('US-ARMY-001A', 'assigned')][0], 'certain')
     # an inferred end: certain up to the last listing, possible after it (the rule that already applied)
     inferred = [r for r in _ROWS if r['valid_to_basis'] == 'inferred_from_next_claim']
     expect(s + ': last_listed_date equals valid_to_earliest for every inferred end', [r['relation_id'] for r in inferred if r['last_listed_date'] != r['valid_to_earliest']], [])
@@ -170,7 +179,9 @@ def scenario_2_viii_corps():
     first = master(CORPS_VIII, FIRST_ARMY, 'assigned', '1944-10-22')
     third = master(CORPS_VIII, THIRD_ARMY, 'assigned', '1944-12-20')
     expect(s + ': First Army assignment ends 1944-12-20 (narrative, earliest end 12-19)', (first['valid_to'], first['valid_to_basis'], first['valid_to_earliest'], first['valid_to_time']), ('1944-12-20', 'narrative', '1944-12-19', ''))
-    expect(s + ': Third Army assignment starts 1944-12-20 (narrative, no hour), open', (third['valid_from'], third['valid_from_basis'], third['valid_from_time'], third['valid_to']), ('1944-12-20', 'narrative', '', ''))
+    # command-chain repair (wf-health-fixes, 9 November 2026): the Third Army assignment, open until then, now ends 1945-04-21 from the CMH table
+    # of the 6th Armored Division (VIII Corps under Third Army on 17 April, under First Army from 22 April).
+    expect(s + ': Third Army assignment starts 1944-12-20 (narrative, no hour), ends 1945-04-21 (assignment table)', (third['valid_from'], third['valid_from_basis'], third['valid_from_time'], third['valid_to'], third['valid_to_basis']), ('1944-12-20', 'narrative', '', '1945-04-21', 'assignment_table'))
     a = intervals(CORPS_VIII, '1944-12-19')
     expect(s + ': 19 Dec: First Army, certain; no Third Army', (a[(FIRST_ARMY, 'assigned')][0], (THIRD_ARMY, 'assigned') in a), ('certain', False))
     expect(s + ': 19 Dec: chain starts with First Army, certain', chain(CORPS_VIII, '1944-12-19')[0], ('US First Army', 'assigned', 'certain'))
@@ -180,12 +191,14 @@ def scenario_2_viii_corps():
     expect(s + ': 20 Dec at 12:00: still UNKNOWN (the hour of the transfer is not recorded)', chain(CORPS_VIII, '1944-12-20', '12:00')[0], ('UNKNOWN', ['US First Army', 'US Third Army'], None))
     a = intervals(CORPS_VIII, '1944-12-21')
     expect(s + ': 21 Dec: only Third Army covers the day', sorted(k[0] for k in a), [THIRD_ARMY])
-    # data differs from the natural expectation "certain after 20 Dec": the assignment was last listed on 20 Dec, so from 21 Dec it is carried forward.
-    # The note of the relation says the first day certainly under Third Army is 21 Dec (Green Book, p399), but the table has no field for that
-    # knowledge: the tool can only say "possible: last listed 20 Dec". The expectation records the tool's answer, not the historian's.
-    expect(s + ': 21 Dec: Third Army is possible (last listed 20 Dec; carried forward)', a[(THIRD_ARMY, 'assigned')][0], 'possible')
-    expect_in(s + ': 21 Dec: the reason names the last listing', a[(THIRD_ARMY, 'assigned')][1], 'after the last claim that lists it (1944-12-20, 1 day earlier)')
-    expect(s + ': 21 Dec: chain starts with Third Army', chain(CORPS_VIII, '1944-12-21')[0], ('US Third Army', 'assigned', 'possible'))
+    # Until the command-chain repair (wf-health-fixes, 9 November 2026) the assignment was open and last listed on 20 Dec, so from 21 Dec the tool
+    # answered "possible: carried forward". The relation now has a sourced end (assignment table, 1945-04-21), and a sourced end is never capped by
+    # the last listing (scenario 0), so 21 Dec is certain, which is also what the note of the relation says (first day certainly under Third Army:
+    # 21 Dec, Green Book p399).
+    expect(s + ': 21 Dec: Third Army is certain (sourced end, not capped by the last listing)', a[(THIRD_ARMY, 'assigned')][0], 'certain')
+    expect(s + ': 21 Dec: chain starts with Third Army', chain(CORPS_VIII, '1944-12-21')[0], ('US Third Army', 'assigned', 'certain'))
+    a = intervals(CORPS_VIII, '1945-04-22')
+    expect(s + ': 22 Apr 1945: only First Army covers the day (Third Army ended 21 Apr)', sorted(k[0] for k in a), [FIRST_ARMY])
 
 
 def scenario_3_84th_division():
@@ -1459,8 +1472,9 @@ def scenario_53_loc_12ag_maps():
     expect(s + ': German rows are intelligence estimates at 0.3', set(c['confidence'] for c in new if c['unit_id'].startswith('GER-')), {'0.3'})
     expect(s + ': Allied rows are 0.5 or 0.7 only', set(c['confidence'] for c in new if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}, True)
     expect(s + ': every row cites a sheet in its locator, keeps its own map point and says old value none', all(c['source_locator'].startswith('R781: sheet cs') and (c['coord_override'] or c['claim_id'] in ('C3018', 'C3070')) and 'old value none' in c['notes'] for c in new), True)
-    expect(s + ': division and brigade points are the main body and corps or army points the headquarters (brigades from batch 3b)', set((c['echelon'], c['location_represents']) for c in new), {('division', 'main_body'), ('brigade', 'main_body'), ('corps', 'headquarters'), ('army', 'headquarters'), ('army_group', 'headquarters')})
-    expect(s + ': no placeholder unit gets a first claim', set(c['unit_id'] for c in new) & {'GER-INF-265D', 'GER-INF-266D', 'GER-INF-276D', 'GER-LFD-016D'}, set())
+    expect(s + ': division and brigade points are the main body and corps or army points the headquarters (brigades from batch 3b)', set((c['echelon'], c['location_represents']) for c in new), {('division', 'main_body'), ('brigade', 'main_body'), ('regiment/battle_group', 'main_body'), ('corps', 'headquarters'), ('army', 'headquarters'), ('army_group', 'headquarters')})  # battle group added for the 265th Kampfgruppe map row (placeholder promotion pass, 9 November 2026)
+    # the 266th was promoted with its own first claims in the placeholder promotion pass (wf-health-fixes, 9 November 2026), so its map rows are allowed now
+    expect(s + ': no placeholder unit gets a first claim', set(c['unit_id'] for c in new) & {'GER-INF-265D', 'GER-INF-266D', 'GER-INF-276D', 'GER-LFD-016D'}, {'GER-INF-266D'})
     expect(s + ': the existing Guards Armoured row of 18 July (Goodwood) is unchanged', [(c['place_id'], c['confidence']) for c in claims if c['claim_id'] == 'C1419'], [('PL0529', '0.7')])
 
 
@@ -2003,7 +2017,7 @@ def scenario_94_unit_lineage():
     expect(s + ': neighbours of B', nb['B'], (['A'], ['C']))
     import csv as _csv
     h2, rows = lineage.load()
-    expect(s + ': nine lineage rows UL001-UL009', [r['lineage_id'] for r in rows], ['UL%03d' % i for i in range(1, 10)])
+    expect(s + ': eleven lineage rows UL001-UL011', [r['lineage_id'] for r in rows], ['UL%03d' % i for i in range(1, 12)])
     expect(s + ': the data passes the checker', lineage.check(h2, rows, {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}, vocabs,
            {r['reference_id'] for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8'))}), [])
     b = {r['unit_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'build', 'units.csv'), newline='', encoding='utf-8'))}

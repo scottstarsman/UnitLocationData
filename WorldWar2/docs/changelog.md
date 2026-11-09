@@ -4183,3 +4183,12 @@ FMS B-262 (Oberst i.G. Ernst Blauensteiner, chief of staff of the II Parachute C
 - Scenario 196. Next free: `C8503`, `PL3845`, `R859`, `CR1084`, `G078`, scenario 197, roadmap 347.
 
 - **C8048 retired (roadmap 282, Scott 4 November 2026):** `C8048` (B-811, 9th Panzer Division retakes Lindern, 30 November 1944) old value claim, new value retired in `data/retired_claims.csv`, not replaced; reason: B-367 has the attack enter Lindern and then called off, MacDonald has Lindern in US hands from 29 November, and a conflict group with `C8169` is rejected by the validator (same date and place). Claim-key exception `C8048`/`C8169` removed. `C8169` unchanged (preferred, 0.5). Roadmap 282 resolved. Next free ids unchanged.
+
+## map-overlay-plan: map overlay tool plan (5 November 2026)
+
+- Added `docs/map_overlay_plan.md`, a short plan for overlaying claims on the LoC 12th Army Group sheets (R781) and the B-709 sketches. It is a plan only; no data, code or claims changed.
+- Recorded Scott's decisions of 5 November 2026 in `docs/map_overlay_plan.md`. Old value: an "Open questions for Scott" section listing 5 questions. New value: a "Decisions" section recording static PNG plus CSV, pilot 27 June 1944 `cs000022`, flags in a review CSV in Drive, preferred and alternate rows, and hand-picked town GCPs later for B-709. Reason: Scott answered the questions. No code or data changed.
+
+## map-overlay-plan: map overlay tool (5 November 2026)
+
+- Added `tools/map_overlay/overlay.py` and `tools/map_overlay/README.md`. Old value: plan document only (`docs/map_overlay_plan.md`), no tool. New value: a CLI MVP that selects preferred and alternate claims within ±1 day of a sheet date, projects them with `tools/loc12ag/georef.py` `Fit.inv`, draws a marker, label and precision circle on the scan, and writes `overlay_<sheet>_<date>.png` plus a review CSV to a scratch folder. Reason: Scott asked to leave `map-overlay-plan` open and build the tool on it. Overlay outputs are not committed. No claim data rows changed.

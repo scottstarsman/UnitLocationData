@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — FMS B-709 German gap-fill viewer 112–132 (R859; branch fms-german-b709-b730)
+
+- **Source:** `R859` gap-fill of German viewer pages 112–132 (printed pp.5–25), read 8–9 November 2026. Same FMS family as R855/R852: no confidence raises.
+- **Supporting citations / annotations (no new claim ids):** `C8396` (Duisburg confirmed; Dinslaken withdrawn); `C8430` (chunk 1b “17. V.G.D.”/Landau treated as faint vs 176th); `C8432` / `C8434` (Lintorf / Schloss Eller ordered CPs and 8 March sector takeover on printed pp.15–16); `C8437` (Hubbelrath on printed p.15; keep Panzer Lehr vs early 2. Pz association); `C8474` (mill name still open after chunk 1b).
+- **Reference R859 / R855:** full_citation and reliability_note updated — old value “viewer 112–132 unread”; new value “112–132 filled; Duisburg confirmed; early 17/353/2.Pz readings uncertain”; reason: this gap-fill.
+- **Not entered / roadmap 347:** Marienmühle vs Markusmühle still open; early 17 VGD / 353 at Neuss / 2. Pz Hubbelrath not entered as competing rows; neighbour Uerdingen/Rheinhausen evacuations without named XII SS unit; Rautenfeld spelling; orphans; parents blank.
+- **Roadmap 347:** unread-pages item removed; Duisburg resolved; mill name remains open.
+
 ## fms-german-b709-b730: FMS B-730 German original (Brandenberger) as R860 (8 November 2026)
 
 - **Source:** `R860` (new), German original of FMS B-730, *Der Kampf der 7. Armee im Verband der Heeresgruppe B …*, 1.–13. (20.) September 1944. Viewer pages 1–139 read (narrative through p.106; Skizzen 1–7 through p.139). Same FMS family as English `R856`: no confidence raises. Sketch-derived rows at most 0.3.

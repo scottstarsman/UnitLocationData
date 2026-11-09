@@ -10,7 +10,7 @@ field values from schema/relations.schema.json, unique ids and natural keys, for
 date rules (valid_to not before valid_from, ranges, bases, end_unknown), the evidence agrees with the master (role against the stated dates, seq, same unit, first
 listing and sourced dates), and every contradictory overlap (same relationship class, different higher units of one echelon) is documented or an error.
 The rebuilt per-claim entries (what the old command_relationships column held) are still checked: valid keys, relationship values and resolving unit_ids (an entry with unit_id null must be relationship unknown with a note),
-every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch, theater) equal the unit table.
+every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch) equal the unit table (theater is per row and must match the row's operation).
 Nationalities (data/nationalities.csv): header, unique code and name, alliance and kind vocabularies, adjective set; every unit's nationality is a row of the table,
 its unit_id prefix is the row's code and its claim folder is the lower-case name.
 Unit references in claims (scripts/unit_refs.py, see schema/README.md): engaged_with and composing_units are `;` lists of unit_ids (or the sentinel `unknown` alone),

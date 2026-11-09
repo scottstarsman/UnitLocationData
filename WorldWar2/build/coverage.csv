@@ -86,15 +86,15 @@ GER-SSCOR-018C,XVIII SS Corps,Germany,corps,Waffen-SS,active,1944-12,true,12,194
 GER-SSPZ-001C,I SS Panzer Corps,Germany,corps,Waffen-SS,active,1943-07-27,true,19,1944-06-06,1945-01-04,GER-ARMY-007A
 GER-SSPZ-002C,II SS Panzer Corps,Germany,corps,Waffen-SS,active,1942-07,true,18,1944-06-24,1945-01-03,GER-PZA-005A
 GER-VAK-388C,Volks-Artillerie-Korps 388,Germany,corps,Army,active,1944-10-20,true,2,1944-11-17,1944-11-22,
-GER-VAK-401C,Volks-Artillerie-Korps 401,Germany,corps,Army,active,1944-10-20,true,3,1944-11-08,1944-12-10,
+GER-VAK-401C,Volks-Artillerie-Korps 401,Germany,corps,Army,active,1944-10-20,true,4,1944-11-08,1945-04-15,
 GER-VAK-402C,Volks-Artillerie-Korps 402,Germany,corps,Army,active,1944-10-20,true,2,1944-11-10,1945-03-23,
-GER-VAK-403C,Volks-Artillerie-Korps 403,Germany,corps,Army,active,1944-10-20,true,1,1944-11-22,1944-11-22,
+GER-VAK-403C,Volks-Artillerie-Korps 403,Germany,corps,Army,active,1944-10-20,true,2,1944-11-22,1945-01-15,
 GER-VAK-404C,Volks-Artillerie-Korps 404,Germany,corps,Army,active,1944-10-20,true,3,1944-11-25,1944-12-15,
-GER-VAK-405C,Volks-Artillerie-Korps 405,Germany,corps,Army,active,1944-10-20,true,1,1944-11-13,1944-11-13,
-GER-VAK-406C,Volks-Artillerie-Korps 406,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
+GER-VAK-405C,Volks-Artillerie-Korps 405,Germany,corps,Army,active,1944-10-20,true,2,1944-11-13,1945-01-25,
+GER-VAK-406C,Volks-Artillerie-Korps 406,Germany,corps,Army,active,1944-10-20,true,1,1945-03-21,1945-03-21,
 GER-VAK-407C,Volks-Artillerie-Korps 407,Germany,corps,Army,active,1944-10-20,true,2,1944-11-22,1945-02-20,
-GER-VAK-408C,Volks-Artillerie-Korps 408,Germany,corps,Army,active,1944-10-15,true,1,1944-12-10,1944-12-10,
-GER-VAK-409C,Volks-Artillerie-Korps 409,Germany,corps,Army,active,1944-10-20,true,1,1944-12-05,1944-12-05,
+GER-VAK-408C,Volks-Artillerie-Korps 408,Germany,corps,Army,active,1944-10-15,true,4,1944-12-01,1945-04-24,
+GER-VAK-409C,Volks-Artillerie-Korps 409,Germany,corps,Army,active,1944-10-20,true,2,1944-10-20,1944-12-05,
 GER-VAK-410C,Volks-Artillerie-Korps 410,Germany,corps,Army,placeholder,1944-10-20,false,0,,,
 GER-VAK-766C,Volks-Artillerie-Korps 766,Germany,corps,Army,active,1944-10-20,true,4,1944-10-22,1945-01-05,
 GER-WK-XI,Stellvertretendes Generalkommando XI (Wehrkreis XI),Germany,corps,Army,active,,true,1,1945-04-09,1945-04-09,
@@ -123,7 +123,7 @@ GER-INF-077D,77th Infantry Division,Germany,division,Army,active,1944-01-15,true
 GER-INF-084D,84th Infantry Division,Germany,division,Army,active,1944-02-02,true,49,1944-08-01,1945-04-16,GER-COR-081C
 GER-INF-085D,85th Infantry Division,Germany,division,Army,active,1944-02-02,true,31,1944-08-11,1945-03-13,GER-COR-067C
 GER-INF-089D,89th Infantry Division,Germany,division,Army,active,1944-01-15,true,25,1944-06-25,1945-02-15,GER-COR-081C
-GER-INF-106D,106th Infantry Division,Germany,division,Army,active,,true,18,1940-11-22,1945-04-19,GER-COR-064C
+GER-INF-106D,106th Infantry Division,Germany,division,Army,active,,true,19,1940-11-22,1945-04-19,GER-COR-064C
 GER-INF-159D,159th Infantry Division,Germany,division,Army,active,1944-10-09,true,23,1944-09-19,1945-03-27,GER-COR-086C
 GER-INF-176D,176th Infantry Division,Germany,division,Army,active,1944-10,true,41,1944-09-08,1945-04-05,GER-SSCOR-012C
 GER-INF-180D,180th Infantry Division,Germany,division,Army,active,1944-10-31,true,44,1944-09-26,1945-04-15,GER-COR-086C
@@ -213,7 +213,7 @@ GER-VG-036D,36th Volksgrenadier Division,Germany,division,Army,active,1944-10-09
 GER-VG-047D,47th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,19,1944-11-18,1945-04-09,GER-COR-081C
 GER-VG-062D,62nd Volksgrenadier Division,Germany,division,Army,active,1944-09-22,true,14,1944-12-16,1945-03-17,GER-COR-066C
 GER-VG-079D,79th Volksgrenadier Division,Germany,division,Army,active,1944-10-27,true,3,1944-12-24,1944-12-30,GER-COR-053C
-GER-VG-167D,167th Volksgrenadier Division,Germany,division,Army,active,1944-10,true,9,1944-12-24,1945-04-04,GER-COR-013C
+GER-VG-167D,167th Volksgrenadier Division,Germany,division,Army,active,1944-10,true,11,1944-11-15,1945-04-04,GER-COR-013C
 GER-VG-183D,183rd Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,37,1944-09-18,1945-04-10,GER-SSPZ-002C
 GER-VG-212D,212th Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,22,1944-11-14,1945-03-13,GER-COR-080C
 GER-VG-246D,246th Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,26,1944-10-03,1945-03-20,GER-COR-081C

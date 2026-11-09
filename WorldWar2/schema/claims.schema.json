@@ -90,8 +90,7 @@
       "unit_name",
       "nationality",
       "echelon",
-      "branch",
-      "theater"
+      "branch"
     ]
   },
   "fields": [
@@ -142,7 +141,7 @@
     {
       "name": "theater",
       "type": "string",
-      "description": "Primary theater of the claim (see vocabulary).",
+      "description": "Theater of this claim row (see vocabulary): the front or rear area where the unit was on the claim date. Not repeated from data/units.csv: a row may differ from the unit's primary theater. Must equal the theater of the claim's operation_id.",
       "constraints": {
         "required": true
       },

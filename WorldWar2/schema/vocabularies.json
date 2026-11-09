@@ -1,16 +1,19 @@
 {
   "_comment": "Controlled vocabularies for the claims and units tables. scripts/validate.py enforces these. To add a value, edit this file and schema/README.md in the same pull request.",
   "theater": {
-    "description": "Primary theater of operations the claim belongs to. One value per claim row; a unit's primary theater is recorded once in data/units.csv.",
+    "description": "Theater of the claim row: the front or rear area where the unit was on the claim date (a row may differ from the unit's primary theater in data/units.csv; see the Theater section of schema/README.md). The claim's operation must carry the same theater.",
     "values": {
-      "western_europe": "Northwest Europe and France, from the Normandy landings through the end of the war in the West (also Netherlands, Belgium, Luxembourg, Germany west of the Elbe), and southern France from the Dragoon landings (15 August 1944) on, because the project's Western Front scope includes the Riviera-to-Rhine campaign.",
-      "mediterranean": "Italy, Sicily, the Balkans and Greece, and the Mediterranean Sea (southern France only before the Dragoon landing, for example staging in Italy or Corsica; from 15 August 1944 southern France is western_europe).",
+      "western_europe": "Northwest Europe and France: the 1940 campaign in the West, the 1940-1944 occupation of France, Belgium, the Netherlands, Luxembourg and the Channel Islands, staging in Great Britain, and the campaign from the Normandy landings to the end of the war in the West (including Germany, Austria and Czechoslovakia as the Western Allies advanced), plus southern France from the Dragoon landings (15 August 1944) on, because the project's Western Front scope includes the Riviera-to-Rhine campaign.",
+      "mediterranean": "Italy, Sicily, Sardinia, Corsica and the Mediterranean Sea (southern France only before the Dragoon landing, for example staging in Italy or Corsica; from 15 August 1944 southern France is western_europe).",
       "north_africa": "Libya, Egypt, Tunisia, Algeria and Morocco campaigns (1940-1943).",
-      "eastern_front": "Germany/Axis versus the USSR (Soviet Union, Poland, Baltic, Romania, Hungary, Finland).",
+      "eastern_front": "Germany/Axis versus the USSR (Soviet Union, Poland, Baltic, Romania, Hungary, Slovakia, Finland), including German territory as the Red Army reached it (East Prussia, Silesia, Pomerania, the Oder front, Berlin).",
+      "balkans": "Yugoslavia, Albania, Greece, Bulgaria and the Aegean islands (German occupation, anti-partisan operations and the 1941 and 1944-1945 campaigns).",
+      "scandinavia": "Norway and Denmark (the 1940 invasion and the occupation to May 1945). Finland is eastern_front.",
+      "home_germany": "Germany as then constituted (the 1937 Reich plus annexed Austria, the Sudetenland, the Protectorate of Bohemia and Moravia and the annexed Polish areas) as a rear or home area: forming, training, refitting and the replacement army (BdE), at places that were not then in a combat zone. Rows in Germany in the path of the Western Allies are western_europe; rows in the path of the Red Army are eastern_front.",
       "pacific": "Pacific Ocean areas and Southwest Pacific, including Japan, the Philippines and the Dutch East Indies.",
       "cbi": "China-Burma-India theater (China, Burma, India, Indochina).",
       "atlantic": "Atlantic Ocean, Arctic convoys and other naval or air units whose operations are mainly at sea.",
-      "other": "Anything that does not fit above (for example East Africa, Middle East, home-front units). Explain in notes."
+      "other": "Anything that does not fit above (for example East Africa or the Middle East). Explain in notes."
     }
   },
   "relationship": {
@@ -463,7 +466,9 @@
       "LT": "Lithuania",
       "RU": "Russia",
       "UA": "Ukraine",
-      "MD": "Moldova"
+      "MD": "Moldova",
+      "HU": "Hungary",
+      "SK": "Slovakia"
     }
   },
   "strength_json_status": {

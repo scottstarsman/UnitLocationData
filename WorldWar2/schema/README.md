@@ -21,7 +21,7 @@ When you change a column or vocabulary, edit the JSON files and this page togeth
 | `claim_status` | string | yes | preferred, alternate or disputed (see vocabulary). | vocabulary `claim_status` |
 | `unit_id` | string | yes | Stable unit key, NATION-TYPE-NUMBER+ECHELONLETTER (for example US-INF-029D). Must exist in data/units.csv and match the file name. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$` |
 | `date` | date | yes | Date of the claim, YYYY-MM-DD. |  |
-| `theater` | string | yes | Primary theater of the claim (see vocabulary). | vocabulary `theater` |
+| `theater` | string | yes | Theater of this row: the front or rear area where the unit was on the claim date (see vocabulary and "Theater" below). Not repeated from `data/units.csv`: a row may differ from the unit's primary theater. Must equal the `theater` of the row's `operation_id`. | vocabulary `theater` |
 | `nationality` | string | yes | Nationality of the unit: US, UK, Canada, Germany (extend as needed). Matches the data/claims/<nationality>/ folder in lowercase. | vocabulary `nationality` |
 | `unit_name` | string | yes | Unit name only, for example "29th Infantry Division". |  |
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
@@ -144,7 +144,7 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 | `nationality` | string | yes | Nationality: the `name` of a row of [`data/nationalities.csv`](#nationalities-columns-datanationalitiescsv) (US, UK, Canada, Germany, Poland, France, Belgium, Netherlands, Czechoslovakia, Allied ...). | foreign key to `nationalities.name` |
 | `echelon` | string | yes | Organisational level (see vocabulary). | vocabulary `echelon` |
 | `branch` | string | yes | Service or arm (see vocabulary). | vocabulary `branch` |
-| `theater` | string | yes | Primary theater of the unit (single value; claim rows carry their own theater). | vocabulary `theater` |
+| `theater` | string | yes | Primary theater of the unit (single value). Claim rows carry their own theater, which may differ (since 9 November 2026). | vocabulary `theater` |
 | `parent_unit_id` | string | no | Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use the claim column `parent_unit_id` and the command relations (`data/command_relations.csv`) for time-dependent parents. | pattern `^[A-Z]{2,4}(-[A-Z0-9]+)+$`; foreign key to `units` |
 | `record_status` | string | yes | `placeholder` (identity only, no claim file; not a claim about location), `partial` (claim file known to be incomplete) or `active` (claim file exists). Exactly the placeholders have no claim file (the validator checks it). The former column `parent_only` said the same and was removed. | vocabulary `record_status` |
 | `formed_date` | string | no | Formation or activation date of the unit, or of the designation the record uses (see `unit_note`), as given by `formed_date_source`: `YYYY-MM-DD`, `YYYY-MM` or `YYYY`; blank if unknown. It is not the date the unit arrived in the theater. | pattern `^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$`; must be a real date |
@@ -228,7 +228,7 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | command_relation_claims | `relation_id` / `claim_id` | command_relations.`relation_id` / claims.`claim_id` |
 | command_relation_overlaps | `relation_id_a`, `relation_id_b` | command_relations.`relation_id` |
 
-Not foreign keys: `conflict_group_id` (a group exists as the set of claims that share the id), `engaged_note` and `composing_text` (free text; the validator checks they do not repeat the name of a unit that has an id). `claims.schema.json` also declares `repeatedColumns`: the columns repeated from the unit table on every claim (`unit_name`, `nationality`, `echelon`, `branch`, `theater`) must equal `data/units.csv`. The primary keys of the side tables, and the natural keys declared as `uniqueTogether` (the command-relation tables), are checked for uniqueness.
+Not foreign keys: `conflict_group_id` (a group exists as the set of claims that share the id), `engaged_note` and `composing_text` (free text; the validator checks they do not repeat the name of a unit that has an id). `claims.schema.json` also declares `repeatedColumns`: the columns repeated from the unit table on every claim (`unit_name`, `nationality`, `echelon`, `branch`) must equal `data/units.csv` (`theater` was repeated too until 9 November 2026; it is now per row, see "Theater" under Vocabularies). The primary keys of the side tables, and the natural keys declared as `uniqueTogether` (the command-relation tables), are checked for uniqueness.
 
 ## unit_id pattern
 
@@ -426,12 +426,12 @@ Claims point at one operation row through `operation_id`. The operations table r
 | `start_date`, `end_date` | Inclusive `YYYY-MM-DD`. |
 | `date_basis` | `cmh_streamer`, `official_history`, `secondary` or `derived` (a note says how). |
 | `parent_date_exception` | Why the row's dates fall outside its parent's (blank when they do not). Without it the validator warns. |
-| `theater` | A `theater` vocabulary value. |
+| `theater` | A `theater` vocabulary value. A child operation has its parent's theater, and a claim has its operation's theater (validator errors). One holding umbrella per front labels rows outside the Western Front operations: `OP-FRONT-EASTERN`, `OP-FRONT-MEDITERRANEAN`, `OP-FRONT-BALKANS`, `OP-FRONT-SCANDINAVIA`, `OP-FRONT-NORTH-AFRICA`, `OP-HOME-GERMANY` (all `date_basis derived`, dates in their notes). |
 | `nationality_scope` | A nationality `name` from `data/nationalities.csv` (`Allied`, `Germany`, ...) or `All`: whose name or concept the row is (a German codename is its own row, linked to the Allied battle). Foreign key to `nationalities.name` (also allowing `All`). |
 | `reference_ids` | `;`-separated `reference_id`s from `data/references.csv` that source the name and dates. |
 | `notes` | Contested boundaries, placement decisions, what the row is for. Required when `reference_ids` is empty or the dates are `derived`. |
 
-`op_type`: `umbrella` is a planning or command umbrella that contains campaigns (Overlord), or a holding umbrella for dates no campaign covers (`OP-PRE-INVASION`, 1 September 1939-5 June 1944: a claim dated before the first CMH streamer needs no campaign; a claim dated before 1 September 1939 is an error; `OP-POST-SURRENDER`, 12 May-31 December 1945 (end a working bound): a claim dated after the last streamer ends needs no campaign); `campaign` is a CMH campaign streamer (`date_basis cmh_streamer`: Normandy, Northern France, Southern France, Rhineland, Ardennes-Alsace, Central Europe) or a named campaign of the official histories (Brittany, Lorraine, Siegfried Line); `operation` is a named operation (Cobra, Epsom, Market Garden); `battle` a battle or siege; `phase` a stretch of a larger operation without a name of its own. The CMH streamers are the only rows that give a claim its derived `campaign`; the others sit in the tree for context.
+`op_type`: `umbrella` is a planning or command umbrella that contains campaigns (Overlord), or a holding umbrella for dates no campaign covers (`OP-PRE-INVASION`, 1 September 1939-5 June 1944: a claim dated before the first CMH streamer needs no campaign; a claim dated before 1 September 1939 is an error; `OP-POST-SURRENDER`, 12 May-31 December 1945 (end a working bound): a claim dated after the last streamer ends needs no campaign; both are `western_europe`; rows of other theaters use the per-front umbrellas `OP-FRONT-*` and `OP-HOME-GERMANY`, which need no campaign at any date); `campaign` is a CMH campaign streamer (`date_basis cmh_streamer`: Normandy, Northern France, Southern France, Rhineland, Ardennes-Alsace, Central Europe) or a named campaign of the official histories (Brittany, Lorraine, Siegfried Line); `operation` is a named operation (Cobra, Epsom, Market Garden); `battle` a battle or siege; `phase` a stretch of a larger operation without a name of its own. The CMH streamers are the only rows that give a claim its derived `campaign`; the others sit in the tree for context.
 
 Examples of the tree: Operation Overlord > Normandy campaign > Operation Neptune > Operation Tonga; Operation Overlord > Northern France campaign > Operation Cobra; Northern France > Brittany campaign > Siege of Brest; Ardennes-Alsace campaign > Battle of the Bulge > Siege of Bastogne; Southern France campaign > Operation Dragoon. Rows that span two campaigns (Lorraine, Siegfried Line) have no parent.
 
@@ -490,18 +490,23 @@ Keys: `basis` (required), `as_of` (required, `YYYY-MM-DD`, may differ from the r
 
 ### theater
 
-Primary theater of operations the claim belongs to. One value per claim row; a unit's primary theater is recorded once in data/units.csv.
+Theater of the claim row: the front or rear area where the unit was on the claim date (a row may differ from the unit's primary theater in data/units.csv; see the Theater section of schema/README.md). The claim's operation must carry the same theater.
 
 | value | meaning |
 |---|---|
-| `western_europe` | Northwest Europe and France, from the Normandy landings through the end of the war in the West (also Netherlands, Belgium, Luxembourg, Germany west of the Elbe), and southern France from the Dragoon landings (15 August 1944) on, because the project's Western Front scope includes the Riviera-to-Rhine campaign. |
-| `mediterranean` | Italy, Sicily, the Balkans and Greece, and the Mediterranean Sea (southern France only before the Dragoon landing, for example staging in Italy or Corsica; from 15 August 1944 southern France is western_europe). |
+| `western_europe` | Northwest Europe and France: the 1940 campaign in the West, the 1940-1944 occupation of France, Belgium, the Netherlands, Luxembourg and the Channel Islands, staging in Great Britain, and the campaign from the Normandy landings to the end of the war in the West (including Germany, Austria and Czechoslovakia as the Western Allies advanced), plus southern France from the Dragoon landings (15 August 1944) on, because the project's Western Front scope includes the Riviera-to-Rhine campaign. |
+| `mediterranean` | Italy, Sicily, Sardinia, Corsica and the Mediterranean Sea (southern France only before the Dragoon landing, for example staging in Italy or Corsica; from 15 August 1944 southern France is western_europe). |
 | `north_africa` | Libya, Egypt, Tunisia, Algeria and Morocco campaigns (1940-1943). |
-| `eastern_front` | Germany/Axis versus the USSR (Soviet Union, Poland, Baltic, Romania, Hungary, Finland). |
+| `eastern_front` | Germany/Axis versus the USSR (Soviet Union, Poland, Baltic, Romania, Hungary, Slovakia, Finland), including German territory as the Red Army reached it (East Prussia, Silesia, Pomerania, the Oder front, Berlin). |
+| `balkans` | Yugoslavia, Albania, Greece, Bulgaria and the Aegean islands (German occupation, anti-partisan operations and the 1941 and 1944-1945 campaigns). |
+| `scandinavia` | Norway and Denmark (the 1940 invasion and the occupation to May 1945). Finland is eastern_front. |
+| `home_germany` | Germany as then constituted (the 1937 Reich plus annexed Austria, the Sudetenland, the Protectorate of Bohemia and Moravia and the annexed Polish areas) as a rear or home area: forming, training, refitting and the replacement army (BdE), at places that were not then in a combat zone. Rows in Germany in the path of the Western Allies are western_europe; rows in the path of the Red Army are eastern_front. |
 | `pacific` | Pacific Ocean areas and Southwest Pacific, including Japan, the Philippines and the Dutch East Indies. |
 | `cbi` | China-Burma-India theater (China, Burma, India, Indochina). |
 | `atlantic` | Atlantic Ocean, Arctic convoys and other naval or air units whose operations are mainly at sea. |
-| `other` | Anything that does not fit above (for example East Africa, Middle East, home-front units). Explain in notes. |
+| `other` | Anything that does not fit above (for example East Africa or the Middle East). Explain in notes. |
+
+**Theater (decision Scott, 9 November 2026: keep out-of-theater data, each row with its own theater).** Until 9 November 2026 `theater` was one of the columns repeated from `data/units.csv`, so every claim of a unit had the unit's primary theater and rows on other fronts could not be told apart. Now each claim row carries the theater of its own place and date; the unit's `theater` stays its primary theater. Rules: (1) the claim's operation has the same theater (`scripts/operations.py`, error); (2) the CMH campaign streamers are Western Front campaigns, so only `western_europe` rows dated 6 June 1944-11 May 1945 need one (rows of other theaters are filed under their front's holding umbrella and get a blank derived `campaign`); (3) `scripts/check_coordinates.py` has a loose bounding box for each theater. Choosing the value: `western_europe` for the 1940 campaign in the West, the occupation of France and the Low Countries, staging in Britain and the 1944-1945 campaign (also inside Germany, Austria and Czechoslovakia as the Western Allies advanced); `eastern_front` for Poland 1939, the USSR, the Baltic, Romania, Hungary, Slovakia and German territory once the Red Army reached it; `home_germany` for forming, training, refitting and the replacement army inside the Reich of the time at places not then in a combat zone; `scandinavia` for Norway and Denmark; `balkans` and `mediterranean` as in the table. The backfill of 9 November 2026 is described in `docs/methodology.md` ("Theater").
 
 ### nationality
 

@@ -78438,7 +78438,7 @@
     "precision_km": 3,
     "country": "MD",
     "region": "Chișinău",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -78618,6 +78618,186 @@
     "precision_km": 3,
     "country": "PL",
     "region": "West Pomeranian",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     15.3103,
+     48.6198
+    ]
+   },
+   "properties": {
+    "place_id": "PL3947",
+    "name": "Döllersheim (Truppenübungsplatz Allentsteig), Niederösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Niederösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.8214,
+     48.5895
+    ]
+   },
+   "properties": {
+    "place_id": "PL3948",
+    "name": "Piešťany (Pistyan), Trnava Region",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "SK",
+    "region": "Trnava Region",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.4049,
+     53.1109
+    ]
+   },
+   "properties": {
+    "place_id": "PL3949",
+    "name": "Rotenburg (Wümme), Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     18.4108,
+     47.191
+    ]
+   },
+   "properties": {
+    "place_id": "PL3950",
+    "name": "Székesfehérvár (Stuhlweißenburg), Fejér",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "HU",
+    "region": "Fejér",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.464,
+     50.8589
+    ]
+   },
+   "properties": {
+    "place_id": "PL3951",
+    "name": "Brzeg (Brieg), Opole",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "PL",
+    "region": "Opole",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.5495,
+     52.3412
+    ]
+   },
+   "properties": {
+    "place_id": "PL3952",
+    "name": "Frankfurt (Oder), Brandenburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Brandenburg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     16.779,
+     48.0255
+    ]
+   },
+   "properties": {
+    "place_id": "PL3953",
+    "name": "Bruck an der Leitha, Niederösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Niederösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     13.4354,
+     52.4811
+    ]
+   },
+   "properties": {
+    "place_id": "PL3954",
+    "name": "Berlin-Neukölln, Berlin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Berlin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.898,
+     48.369
+    ]
+   },
+   "properties": {
+    "place_id": "PL3955",
+    "name": "Augsburg, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
     "claims_count": 1
    }
   }

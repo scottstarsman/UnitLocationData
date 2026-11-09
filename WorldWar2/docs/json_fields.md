@@ -32,6 +32,10 @@ Examples:
 {"basis":"estimate","as_of":"1944-06-18","status":"heavily_depleted","source":"CMH Cross-Channel Attack ch. X"}
 ```
 
+## theater in the JSON outputs (not a JSON cell)
+
+`theater` is a plain vocabulary column, not JSON, but it appears in the JSON outputs: `build/all_claims.json` (one string per row) and the feature properties of `build/claims.geojson`. Since 9 November 2026 it is the row's own theater (values in `schema/vocabularies.json`, rules in `schema/README.md`, "Theater"), so one unit's rows may carry different values (for example `GER-INF-106D`: `home_germany` at Wahn in 1940, `eastern_front` 1941-1944, `western_europe` in 1942-1943 and 1945). A consumer that wants the Western Front only filters on `theater == "western_europe"`.
+
 ## Adding a JSON column
 
 Add a schema file to `schema/json/`, an entry to `schema/json/fields.json`, and a section to this page in the same change.

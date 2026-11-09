@@ -95372,6 +95372,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5017,
+     48.5894
+    ]
+   },
+   "properties": {
+    "claim_id": "C8582",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-29",
+    "place_id": "PL0199",
+    "location_name": "Lunéville, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army (attached), Third Army, 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-27",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R362;R001",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 29 Sep 44, and Command Posts, row 27 Sep 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8817,
      51.6269
     ]
@@ -96390,6 +96431,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R809;R002",
     "source_locator": "R809: German p.1, Anlage 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.3205,
+     49.54
+    ]
+   },
+   "properties": {
+    "claim_id": "C8527",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL0018",
+    "location_name": "Aumeville-Lestre, Manche",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R344;R002",
+    "source_locator": "R344: Assignment and Attachment to Higher Units, row 1 Oct 44, and Command Posts, row 30 Sep 44"
    }
   },
   {
@@ -116569,6 +116651,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9082,
+     50.95
+    ]
+   },
+   "properties": {
+    "claim_id": "C8550",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-22",
+    "place_id": "PL0260",
+    "location_name": "Oorsbeck, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIX Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -23,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 22 Oct 44, and Command Posts, row 29 Sep 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.6833,
      51.2833
     ]
@@ -131281,6 +131404,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R837;R002",
     "source_locator": "R837: German p.40 (Fold3 page 96)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7204,
+     48.2115
+    ]
+   },
+   "properties": {
+    "claim_id": "C8569",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-01",
+    "place_id": "PL1564",
+    "location_name": "Bruyères, Vosges",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-31",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 1 Nov 44, and Command Posts, row 31 Oct"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5706,
+     48.5975
+    ]
+   },
+   "properties": {
+    "claim_id": "C8583",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-01",
+    "place_id": "PL3883",
+    "location_name": "vicinity of Croismare, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army (attached), 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-14",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -18,
+    "reference_ids": "R362;R002",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 1 Nov 44, and Command Posts, row 14-24 Oct 44"
    }
   },
   {
@@ -156954,6 +157159,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7081,
+     48.7309
+    ]
+   },
+   "properties": {
+    "claim_id": "C8584",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-25",
+    "place_id": "PL2395",
+    "location_name": "Brumath, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R362;R002",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 25 Nov 44, and Command Posts, row 24 Nov 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4217,
      49.8117
     ]
@@ -171632,6 +171878,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7581,
+     48.184
+    ]
+   },
+   "properties": {
+    "claim_id": "C8570",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-05",
+    "place_id": "PL3877",
+    "location_name": "vicinity of Laveline-devant-Bruyères, Vosges",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, French First Army (Army B until 25 September 1944) (operational control), Seventh Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 5 Dec 44, and Command Posts, row 27 Nov"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6529,
+     48.7003
+    ]
+   },
+   "properties": {
+    "claim_id": "C8585",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-05",
+    "place_id": "PL3884",
+    "location_name": "Mittelschaeffolsheim, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -9,
+    "reference_ids": "R362;R002",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 5 Dec 44, and Command Posts, row 26 Nov 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1372,
      48.0409
     ]
@@ -172247,6 +172575,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8591",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-09",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R368;R001",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 9 Dec 44, and Command Posts, row 8 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.3276,
      49.3838
     ]
@@ -172568,6 +172937,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R808;R002",
     "source_locator": "R808: German p.5, English p.6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8947,
+     49.0941
+    ]
+   },
+   "properties": {
+    "claim_id": "C8508",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-11",
+    "place_id": "PL3846",
+    "location_name": "Farschviller, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-05",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 11 Dec 44, and Command Posts, row 5 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1285,
+     48.9991
+    ]
+   },
+   "properties": {
+    "claim_id": "C8592",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-11",
+    "place_id": "PL2391",
+    "location_name": "Oermingen, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-10",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 11 Dec 44, and Command Posts, row 10 Dec 44"
    }
   },
   {
@@ -178069,6 +178520,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1837,
+     49.0441
+    ]
+   },
+   "properties": {
+    "claim_id": "C8528",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-12",
+    "place_id": "PL3858",
+    "location_name": "Achen, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-10",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R344;R002",
+    "source_locator": "R344: Assignment and Attachment to Higher Units, row 12 Dec 44, and Command Posts, row 10 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3005,
      50.6072
     ]
@@ -179579,6 +180071,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.6 (Fold3 page 74)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3249,
+     48.1925
+    ]
+   },
+   "properties": {
+    "claim_id": "C8571",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-15",
+    "place_id": "PL1030",
+    "location_name": "Ribeauvillé, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-10",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -5,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 15 Dec 44, and Command Posts, row 10 Dec"
    }
   },
   {
@@ -182777,6 +183310,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R857;R002",
     "source_locator": "R857: German p.29, 33 (Fold3 image 98, 104)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8947,
+     49.0941
+    ]
+   },
+   "properties": {
+    "claim_id": "C8509",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-18",
+    "place_id": "PL3846",
+    "location_name": "Farschviller, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-05",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -13,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 18 Dec 44, and Command Posts, row 5 Dec"
    }
   },
   {
@@ -190410,6 +190984,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6352,
+     49.9683
+    ]
+   },
+   "properties": {
+    "claim_id": "C8531",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3341",
+    "location_name": "Sibret (Vaux-sur-Sûre), Luxembourg province",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 20 Dec 44, and Command Posts, row 19 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2828,
+     50.8963
+    ]
+   },
+   "properties": {
+    "claim_id": "C8551",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3865",
+    "location_name": "Aldenhoven, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIX Corps, Ninth Army, 21st Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -27,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 20 Dec 44, and Command Posts, row 23 Nov 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1129,
+     50.9214
+    ]
+   },
+   "properties": {
+    "claim_id": "C8600",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL3893",
+    "location_name": "vicinity of Übach-Palenberg, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps, Ninth Army, 21st Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -26,
+    "reference_ids": "R337;R002",
+    "source_locator": "R337: Assignment and Attachment to Higher Units, row 20Dec44, and Command Posts, row 24Nov44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -191059,6 +191756,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R695;R002",
     "source_locator": "R695: p. 378-381"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7746,
+     49.1241
+    ]
+   },
+   "properties": {
+    "claim_id": "C8510",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-21",
+    "place_id": "PL3847",
+    "location_name": "Hombourg-Haut, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 21 Dec 44, and Command Posts, row 19 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.219,
+     49.0684
+    ]
+   },
+   "properties": {
+    "claim_id": "C8593",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-21",
+    "place_id": "PL3887",
+    "location_name": "Gros-Réderching, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-15",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 21 Dec 44, and Command Posts, row 15 Dec 44"
    }
   },
   {
@@ -192829,6 +193608,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2828,
+     50.8963
+    ]
+   },
+   "properties": {
+    "claim_id": "C8552",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL3865",
+    "location_name": "Aldenhoven, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps, Ninth Army, 21st Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -30,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 23 Dec 44, and Command Posts, row 23 Nov 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8560",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R350;R001",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 23 Dec 44, and Command Posts, row 23 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8572",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-23",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R351;R001",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 23 Dec 44, and Command Posts, row 23 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8465,
      50.4112
     ]
@@ -193444,6 +194346,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8561",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-24",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R350;R001",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 24 Dec 44, and Command Posts, row 23 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -193847,6 +194790,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R391;R002",
     "source_locator": "R391: p. 537"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8511",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-25",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R360;R001",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 25 Dec 44, and Command Posts, row 24 Dec"
    }
   },
   {
@@ -199225,6 +200209,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8099,
+     49.7266
+    ]
+   },
+   "properties": {
+    "claim_id": "C8562",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-26",
+    "place_id": "PL3870",
+    "location_name": "Tontelange (Attert), Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 26 Dec 44, and Command Posts, row 26 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3174,
+     49.2974
+    ]
+   },
+   "properties": {
+    "claim_id": "C8594",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-26",
+    "place_id": "PL3888",
+    "location_name": "Pontfaverger-Moronvilliers, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 26 Dec 44, and Command Posts, row 25 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -199587,6 +200653,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.35 (Fold3 page 103)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8573",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-27",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XXI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-23",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R351;R001",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 27 Dec 44, and Command Posts, row 23 Dec"
    }
   },
   {
@@ -200127,6 +201234,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1067,
+     49.7507
+    ]
+   },
+   "properties": {
+    "claim_id": "C8512",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-28",
+    "place_id": "PL3848",
+    "location_name": "vicinity of Mersch, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 28 Dec 44, and Command Posts, row 26 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.3158,
      51.5891
     ]
@@ -200373,6 +201521,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3174,
+     49.2974
+    ]
+   },
+   "properties": {
+    "claim_id": "C8595",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-29",
+    "place_id": "PL3888",
+    "location_name": "Pontfaverger-Moronvilliers, Marne",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 29 Dec 44, and Command Posts, row 25 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9832,
      51.7141
     ]
@@ -200612,6 +201801,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R851;R002",
     "source_locator": "R851: German answer to question 11 (Fold3 images 19-20), sketch II and III \"Armee Gruppe Lüttwitz 30.12.44\" (images 44-47)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9985,
+     48.6698
+    ]
+   },
+   "properties": {
+    "claim_id": "C8574",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-30",
+    "place_id": "PL3878",
+    "location_name": "vicinity of Lorquin, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 30 Dec 44, and Command Posts, row 28 Dec"
    }
   },
   {
@@ -206482,6 +207712,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9985,
+     48.6698
+    ]
+   },
+   "properties": {
+    "claim_id": "C8575",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-03",
+    "place_id": "PL3878",
+    "location_name": "vicinity of Lorquin, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 3 Jan 45, and Command Posts, row 28 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5842,
      49.9622
     ]
@@ -207015,6 +208286,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.7207,
+     49.7736
+    ]
+   },
+   "properties": {
+    "claim_id": "C8532",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-05",
+    "place_id": "PL3351",
+    "location_name": "Charleville-Mézières, Ardennes",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 5 Jan 45, and Command Posts, row 2 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3206,
      48.8579
     ]
@@ -207090,6 +208402,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.39 (Fold3 page 107)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7207,
+     49.7736
+    ]
+   },
+   "properties": {
+    "claim_id": "C8533",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-06",
+    "place_id": "PL3351",
+    "location_name": "Charleville-Mézières, Ardennes",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 6 Jan 45, and Command Posts, row 2 Jan"
    }
   },
   {
@@ -207787,6 +209140,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R843;R002",
     "source_locator": "R843: German p.40 (Fold3 page 108)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7207,
+     49.7736
+    ]
+   },
+   "properties": {
+    "claim_id": "C8534",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-08",
+    "place_id": "PL3351",
+    "location_name": "Charleville-Mézières, Ardennes",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 8 Jan 45, and Command Posts, row 2 Jan"
    }
   },
   {
@@ -212796,6 +214190,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.7207,
+     49.7736
+    ]
+   },
+   "properties": {
+    "claim_id": "C8535",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-09",
+    "place_id": "PL3351",
+    "location_name": "Charleville-Mézières, Ardennes",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Fifteenth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -7,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 9 Jan 45, and Command Posts, row 2 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8085,
      50.0587
     ]
@@ -213527,6 +214962,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R851;R002",
     "source_locator": "R851: sketch V (Fold3 images 27-35)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4497,
+     49.9708
+    ]
+   },
+   "properties": {
+    "claim_id": "C8596",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-14",
+    "place_id": "PL3889",
+    "location_name": "Freux (Libramont-Chevigny), Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-13",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 14 Jan 45, and Command Posts, row 13 Jan 45"
    }
   },
   {
@@ -219151,6 +220627,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.7207,
+     49.7736
+    ]
+   },
+   "properties": {
+    "claim_id": "C8536",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-16",
+    "place_id": "PL3351",
+    "location_name": "Charleville-Mézières, Ardennes",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army (attached), Fifteenth Army, 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -14,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 16 Jan 45, and Command Posts, row 2 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8642,
      50.4925
     ]
@@ -219807,6 +221324,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6854,
+     49.88
+    ]
+   },
+   "properties": {
+    "claim_id": "C8563",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-18",
+    "place_id": "PL3871",
+    "location_name": "Strainchamps, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -10,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 18 Jan 45, and Command Posts, row 8 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3061,
+     48.9937
+    ]
+   },
+   "properties": {
+    "claim_id": "C8576",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-18",
+    "place_id": "PL2473",
+    "location_name": "Montbronn, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -14,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 18 Jan 45, and Command Posts, row 4 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5034,
      50.1078
     ]
@@ -219964,6 +221563,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 240, 241, 244"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1851,
+     48.2477
+    ]
+   },
+   "properties": {
+    "claim_id": "C8537",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-19",
+    "place_id": "PL3859",
+    "location_name": "Sainte-Marie-aux-Mines, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army (attached), Fifteenth Army, 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 19 Jan 45, and Command Posts, row 17 Jan"
    }
   },
   {
@@ -220579,6 +222219,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R809;R002",
     "source_locator": "R809: German p.19, English p.20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1851,
+     48.2477
+    ]
+   },
+   "properties": {
+    "claim_id": "C8538",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL3859",
+    "location_name": "Sainte-Marie-aux-Mines, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under French II Corps, Seventh Army (attached), Fifteenth Army, 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 20 Jan 45, and Command Posts, row 17 Jan"
    }
   },
   {
@@ -226162,6 +227843,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.7293,
+     48.7199
+    ]
+   },
+   "properties": {
+    "claim_id": "C8564",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-23",
+    "place_id": "PL3872",
+    "location_name": "Bourdonnay, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-23",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 23 Jan 45, and Command Posts, row 23 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.0,
      49.2333
     ]
@@ -226442,6 +228164,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R820;R002",
     "source_locator": "R820: German p.57 (Fold3 page 225)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2904,
+     49.6869
+    ]
+   },
+   "properties": {
+    "claim_id": "C8597",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-25",
+    "place_id": "PL3890",
+    "location_name": "Rodenbourg (Junglinster), Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-16",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -9,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 25 Jan 45, and Command Posts, row 16 Jan 45"
    }
   },
   {
@@ -226900,6 +228663,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4942,
+     49.1842
+    ]
+   },
+   "properties": {
+    "claim_id": "C8529",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-28",
+    "place_id": "PL0425",
+    "location_name": "Boulay-Moselle, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-28",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R344;R001",
+    "source_locator": "R344: Assignment and Attachment to Higher Units, row 28 Jan 45, and Command Posts, row 28 Jan 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1851,
+     48.2477
+    ]
+   },
+   "properties": {
+    "claim_id": "C8539",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-28",
+    "place_id": "PL3859",
+    "location_name": "Sainte-Marie-aux-Mines, Haut-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XXI Corps, Seventh Army (attached), Fifteenth Army, 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -11,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 28 Jan 45, and Command Posts, row 17 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1259,
      50.2804
     ]
@@ -227262,6 +229107,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R791;R002",
     "source_locator": "R791: KTB copy entries of 25-29 January 1945"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1767,
+     48.9751
+    ]
+   },
+   "properties": {
+    "claim_id": "C8610",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-039C",
+    "unit_name": "XXXIX Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-01-29",
+    "place_id": "PL0628",
+    "location_name": "Lauterbourg, Bas-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Army Group Oberrhein dissolved on 29 January; its forces pass to Army Group G",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": -17,
+    "reference_ids": "R425;R649;R002",
+    "source_locator": "R425: p. 548; R649: Einsatz, Gliederung"
    }
   },
   {
@@ -232804,6 +234690,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.5115,
+     48.9726
+    ]
+   },
+   "properties": {
+    "claim_id": "C8565",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-30",
+    "place_id": "PL3873",
+    "location_name": "Lacroix-sur-Meuse, Meuse",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army, 21st Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-30",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 30 Jan 45, and Command Posts, row 30 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.8842,
      48.6931
     ]
@@ -234519,6 +236446,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R820;R002",
     "source_locator": "R820: German p.59 (Fold3 page 227)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1757,
+     50.8774
+    ]
+   },
+   "properties": {
+    "claim_id": "C8553",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-04",
+    "place_id": "PL3866",
+    "location_name": "Schaufenberg (Alsdorf), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIX Corps, Ninth Army, 21st Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-28",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -38,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 4 Feb 45, and Command Posts, row 28 Dec 44"
    }
   },
   {
@@ -240717,6 +242685,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0547,
+     48.9053
+    ]
+   },
+   "properties": {
+    "claim_id": "C8586",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-06",
+    "place_id": "PL0392",
+    "location_name": "Pont-à-Mousson, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-06",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R362;R001",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 6 Feb 45, and Command Posts, row 6 Feb 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3583,
      49.8531
     ]
@@ -242767,6 +244776,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7924,
+     49.8498
+    ]
+   },
+   "properties": {
+    "claim_id": "C8603",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-10",
+    "place_id": "PL2532",
+    "location_name": "Bigonville, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Bradley orders Patton to give up the III Corps headquarters to First Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R657;R002",
+    "source_locator": "R657: p. 96"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -242965,6 +245015,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 480-481"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0276,
+     50.0548
+    ]
+   },
+   "properties": {
+    "claim_id": "C8513",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-11",
+    "place_id": "PL1067",
+    "location_name": "Clervaux, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-11",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 11 Feb 45, and Command Posts, row 11 Feb"
    }
   },
   {
@@ -243334,6 +245425,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 481"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7924,
+     49.8498
+    ]
+   },
+   "properties": {
+    "claim_id": "C8604",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-12",
+    "place_id": "PL2532",
+    "location_name": "Bigonville, Luxembourg",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under First Army in the CMH tables of the 1st and 78th Infantry Divisions",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -6,
+    "reference_ids": "R343;R529;R002",
+    "source_locator": "R343: Assignment and Attachment to Higher Units, row 12 Feb 45; R529: Assignment and Attachment to Higher Units, row 12 Feb 45"
    }
   },
   {
@@ -248999,6 +251131,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8942,
+     48.6763
+    ]
+   },
+   "properties": {
+    "claim_id": "C8540",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-14",
+    "place_id": "PL3860",
+    "location_name": "Toul, Meurthe-et-Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army (attached), Fifteenth Army, 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-14",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 14 Feb 45, and Command Posts, row 14 Feb"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1376,
      51.7896
     ]
@@ -250434,6 +252607,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.503,
+     50.8065
+    ]
+   },
+   "properties": {
+    "claim_id": "C8587",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-17",
+    "place_id": "PL3885",
+    "location_name": "'s Herenelderen, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army (attached), Seventh Army, 12th Army Group (attached), 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-17",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R362;R002",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 17 Feb 45, and Command Posts, row 17 Feb 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1593,
      51.6756
     ]
@@ -251124,6 +253338,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R806;R828;R002",
     "source_locator": "R806: German p.12, Sketch 3; R828: p.10 (Fold3 page 51)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6617,
+     50.5055
+    ]
+   },
+   "properties": {
+    "claim_id": "C8541",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-19",
+    "place_id": "PL3861",
+    "location_name": "Sprimont, Liège",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-19",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 19 Feb 45, and Command Posts, row 19 Feb"
    }
   },
   {
@@ -257356,6 +259611,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R808;R002",
     "source_locator": "R668: p. 487; R808: German p.12, English p.12"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.327,
+     50.5028
+    ]
+   },
+   "properties": {
+    "claim_id": "C8542",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-21",
+    "place_id": "PL0405",
+    "location_name": "Wahlerscheid, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under V Corps, First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 21 Feb 45, and Command Posts, row 21 Feb"
    }
   },
   {
@@ -268720,6 +271016,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9833,
+     50.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8588",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL0409",
+    "location_name": "Simpelveld, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps, Ninth Army (attached), Seventh Army, 12th Army Group (attached), 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
+    "reference_ids": "R362;R001",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 1 Mar 45, and Command Posts, row 21 Feb 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5249,
      49.9733
     ]
@@ -277986,6 +280323,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9833,
+     50.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8589",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-07",
+    "place_id": "PL0409",
+    "location_name": "Simpelveld, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army (attached), Seventh Army, 12th Army Group (attached), 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-21",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -14,
+    "reference_ids": "R362;R001",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 7 Mar 45, and Command Posts, row 21 Feb 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3292,
      50.485
     ]
@@ -278676,6 +281054,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18); R859: German printed pp.41, 52, 55 (Fold3 viewer pages 148, 158, 161), German printed pp.15-16 (Fold3 viewer pages 122-123)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2677,
+     50.0872
+    ]
+   },
+   "properties": {
+    "claim_id": "C8514",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-08",
+    "place_id": "PL3849",
+    "location_name": "Arzfeld, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XV Corps, Seventh Army (attached), 6th Army Group (attached)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-26",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -10,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 8 Mar 45, and Command Posts, row 26 Feb"
    }
   },
   {
@@ -279872,6 +282291,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5263,
+     50.232
+    ]
+   },
+   "properties": {
+    "claim_id": "C8521",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL3853",
+    "location_name": "Schwirzheim, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army (attached), 6th Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R357;R002",
+    "source_locator": "R357: Assignment and Attachment to Higher Units, row 10 Mar 45, and Command Posts, row 6 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -280439,6 +282899,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R834;R002",
     "source_locator": "R834: English p.52 (Fold3 page 119)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.313,
+     50.2987
+    ]
+   },
+   "properties": {
+    "claim_id": "C8599",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-090D",
+    "unit_name": "90th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL3892",
+    "location_name": "Polch, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R370;R002",
+    "source_locator": "R370: Assignment and Attachment to Higher Units, row 12 Mar 45, and Command Posts, row 12 Mar"
    }
   },
   {
@@ -286883,6 +289384,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6831,
+     50.4489
+    ]
+   },
+   "properties": {
+    "claim_id": "C8543",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-16",
+    "place_id": "PL2285",
+    "location_name": "Mülheim, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
+    "reference_ids": "R345;R782",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 16 Mar 45, and Command Posts, row 8 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1667,
      50.1469
     ]
@@ -292254,6 +294796,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7062,
+     48.7841
+    ]
+   },
+   "properties": {
+    "claim_id": "C8522",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-20",
+    "place_id": "PL3854",
+    "location_name": "Batzendorf, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R357;R002",
+    "source_locator": "R357: Assignment and Attachment to Higher Units, row 20 Mar 45, and Command Posts, row 20 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6228,
      49.681
     ]
@@ -292575,6 +295158,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R835;R002",
     "source_locator": "R835: English p.-3- (Fold3 page 99)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2812,
+     50.3721
+    ]
+   },
+   "properties": {
+    "claim_id": "C8544",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL2668",
+    "location_name": "Mendig, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under V Corps, First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -5,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 22 Mar 45, and Command Posts, row 17 Mar"
    }
   },
   {
@@ -293149,6 +295773,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R835;R002",
     "source_locator": "R835: English p.-4- (Fold3 page 100)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.1086,
+     49.5683
+    ]
+   },
+   "properties": {
+    "claim_id": "C8515",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-23",
+    "place_id": "PL3850",
+    "location_name": "Ebertsheim, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-21",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 23 Mar 45, and Command Posts, row 21 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2033,
+     49.9094
+    ]
+   },
+   "properties": {
+    "claim_id": "C8530",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-026D",
+    "unit_name": "26th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL1088",
+    "location_name": "Nieder-Olm, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R344;R002",
+    "source_locator": "R344: Assignment and Attachment to Higher Units, row 23 Mar 45, and Command Posts, row 23 Mar 45"
    }
   },
   {
@@ -294181,6 +296887,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.1086,
+     49.5683
+    ]
+   },
+   "properties": {
+    "claim_id": "C8516",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-24",
+    "place_id": "PL3850",
+    "location_name": "Ebertsheim, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-21",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 24 Mar 45, and Command Posts, row 21 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -294666,6 +297413,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R822;R002",
     "source_locator": "R822: German p.-7- (Fold3 page 85)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7062,
+     48.7841
+    ]
+   },
+   "properties": {
+    "claim_id": "C8523",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-25",
+    "place_id": "PL3854",
+    "location_name": "Batzendorf, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XXI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-20",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -5,
+    "reference_ids": "R357;R002",
+    "source_locator": "R357: Assignment and Attachment to Higher Units, row 25 Mar 45, and Command Posts, row 20 Mar"
    }
   },
   {
@@ -299265,6 +302053,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.833,
+     50.1532
+    ]
+   },
+   "properties": {
+    "claim_id": "C8517",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-28",
+    "place_id": "PL3851",
+    "location_name": "Hochstadt, Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 28 Mar 45, and Command Posts, row 28 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2812,
+     50.3721
+    ]
+   },
+   "properties": {
+    "claim_id": "C8545",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL2668",
+    "location_name": "Mendig, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -11,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 28 Mar 45, and Command Posts, row 17 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3621,
      49.6303
     ]
@@ -299709,6 +302579,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: Anlage 5 sketch, Fold3 pages 207-208; R859: German printed pp.56, 60-61 (Fold3 viewer pages 163, 166-167)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4458,
+     51.1675
+    ]
+   },
+   "properties": {
+    "claim_id": "C8554",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-29",
+    "place_id": "PL1056",
+    "location_name": "Rheydt, Mönchengladbach",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army, 21st Army Group (attached), 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -27,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 29 Mar 45, and Command Posts, row 2 Mar 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9991,
+     49.1028
+    ]
+   },
+   "properties": {
+    "claim_id": "C8577",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-29",
+    "place_id": "PL1045",
+    "location_name": "Bad Bergzabern, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-25",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 29 Mar 45, and Command Posts, row 25 Mar"
    }
   },
   {
@@ -301800,6 +304752,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R840;R002",
     "source_locator": "R840: German p.2 (Fold3 page 16)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8601",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps (administrative control), Fifteenth Army (operational control), Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -20,
+    "reference_ids": "R337;R001",
+    "source_locator": "R337: Assignment and Attachment to Higher Units, row 1Apr45, and Command Posts, row 12Mar45"
    }
   },
   {
@@ -306645,6 +309638,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.4048,
+     51.0117
+    ]
+   },
+   "properties": {
+    "claim_id": "C8579",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-03",
+    "place_id": "PL3880",
+    "location_name": "Homberg (Efze), Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XX Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R528;R002",
+    "source_locator": "R528: Assignment and Attachment to Higher Units, row 3 Apr 45, and Command Posts, row 3 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7328,
      50.8281
     ]
@@ -306966,6 +310000,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: typed p.-56- (Fold3 page 60); R859: German printed pp.60, 64 (Fold3 viewer pages 166, 170)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1299,
+     51.6656
+    ]
+   },
+   "properties": {
+    "claim_id": "C8555",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL3867",
+    "location_name": "vicinity of Hüls (Marl), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 4 Apr 45, and Command Posts, row 3 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0527,
+     51.5799
+    ]
+   },
+   "properties": {
+    "claim_id": "C8566",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL3874",
+    "location_name": "Buer (Gelsenkirchen-Nord), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 4 Apr 45, and Command Posts, row 1 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8602",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-102D",
+    "unit_name": "102nd Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -23,
+    "reference_ids": "R337;R001",
+    "source_locator": "R337: Assignment and Attachment to Higher Units, row 4Apr45, and Command Posts, row 12Mar45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.9257,
+     50.9424
+    ]
+   },
+   "properties": {
+    "claim_id": "C8605",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL2764",
+    "location_name": "Langendorf, Hessen",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under First Army in the CMH table of the 9th Infantry Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R372;R002",
+    "source_locator": "R372: Assignment and Attachment to Higher Units, row 4 Apr 45"
    }
   },
   {
@@ -307417,6 +310615,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: typed p.-56- (Fold3 page 60), Anlage 8 sketch, Fold3 pages 222-223; R859: German printed p.60 (Fold3 viewer page 166)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1299,
+     51.6656
+    ]
+   },
+   "properties": {
+    "claim_id": "C8556",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-05",
+    "place_id": "PL3867",
+    "location_name": "vicinity of Hüls (Marl), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 5 Apr 45, and Command Posts, row 3 Apr 45"
    }
   },
   {
@@ -308326,6 +311565,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0237,
+     50.504
+    ]
+   },
+   "properties": {
+    "claim_id": "C8546",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL3862",
+    "location_name": "Frickhofen, Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -9,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 7 Apr 45, and Command Posts, row 29 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.0007,
+     51.5647
+    ]
+   },
+   "properties": {
+    "claim_id": "C8590",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-079D",
+    "unit_name": "79th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-07",
+    "place_id": "PL3886",
+    "location_name": "vicinity of Butendorf (Gladbeck), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R362;R002",
+    "source_locator": "R362: Assignment and Attachment to Higher Units, row 7 Apr 45, and Command Posts, row 6 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.6095,
      51.7266
     ]
@@ -308975,6 +312296,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R859;R855;R002",
     "source_locator": "R859: German printed pp.69-73 (Fold3 viewer pages 175-179); R855: typed pp.-66- to -70-"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.8585,
+     49.6561
+    ]
+   },
+   "properties": {
+    "claim_id": "C8524",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL3855",
+    "location_name": "Kirchheim, Bavaria",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-03",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -5,
+    "reference_ids": "R357;R002",
+    "source_locator": "R357: Assignment and Attachment to Higher Units, row 8 Apr 45, and Command Posts, row 3 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.0575,
+     51.1869
+    ]
+   },
+   "properties": {
+    "claim_id": "C8580",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL3881",
+    "location_name": "Eschwege, Hesse",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R528;R002",
+    "source_locator": "R528: Assignment and Attachment to Higher Units, row 8 Apr 45, and Command Posts, row 8 Apr 45"
    }
   },
   {
@@ -313697,6 +317100,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0951,
+     50.8685
+    ]
+   },
+   "properties": {
+    "claim_id": "C8547",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL3863",
+    "location_name": "Herzogenrath, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Fifteenth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 10 Apr 45, and Command Posts, row 10 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.7911,
      51.505
     ]
@@ -315091,6 +318535,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.4446,
+     51.7718
+    ]
+   },
+   "properties": {
+    "claim_id": "C8557",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL3868",
+    "location_name": "Lüdinghausen, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps (operational control), Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 12 Apr 45, and Command Posts, row 9 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8667,
      51.9667
     ]
@@ -315658,6 +319143,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223; R859: German printed p.84 (Fold3 viewer page 190)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0951,
+     50.8685
+    ]
+   },
+   "properties": {
+    "claim_id": "C8548",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL3863",
+    "location_name": "Herzogenrath, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XXII Corps, Fifteenth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 10 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.0155,
+     52.3072
+    ]
+   },
+   "properties": {
+    "claim_id": "C8567",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL3875",
+    "location_name": "Grasleben, Lower Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIX Corps (operational control), XIII Corps (administrative control), Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr"
    }
   },
   {
@@ -319143,6 +322710,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: typed p.-86- (Fold3 page 91); R859: German printed pp.88-89 (Fold3 viewer pages 194-195)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6973,
+     52.4063
+    ]
+   },
+   "properties": {
+    "claim_id": "C8568",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL3876",
+    "location_name": "Burgstall, Saxony-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R350;R002",
+    "source_locator": "R350: Assignment and Attachment to Higher Units, row 16 Aor 45, and Command Posts, row 15 Apr"
    }
   },
   {
@@ -323209,6 +326817,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.135,
+     51.0492
+    ]
+   },
+   "properties": {
+    "claim_id": "C8518",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-17",
+    "place_id": "PL3852",
+    "location_name": "Zeitz, Saxony-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 17 Apr 45, and Command Posts, row 14 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4446,
+     51.7718
+    ]
+   },
+   "properties": {
+    "claim_id": "C8558",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL3868",
+    "location_name": "Lüdinghausen, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XIII Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 17 Apr 45, and Command Posts, row 9 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6265,
+     50.7432
+    ]
+   },
+   "properties": {
+    "claim_id": "C8607",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL2905",
+    "location_name": "Langendembach, Thüringen",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Third Army in the CMH table of the 6th Armored Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 17 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.375,
      51.34
     ]
@@ -324555,6 +328286,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R835;R002",
     "source_locator": "R835: English p.23 (Fold3 page 119)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3371,
+     51.2479
+    ]
+   },
+   "properties": {
+    "claim_id": "C8606",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-003C",
+    "unit_name": "III Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-19",
+    "place_id": "PL2875",
+    "location_name": "Dornheim (Schmallenberg), North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Third Army in the CMH tables; the corps moves from the Ruhr to the Third Army right wing",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -2,
+    "reference_ids": "R532;R561;R520;R568;R782",
+    "source_locator": "R532: Assignment and Attachment to Higher Units, row 19 Apr 45; R561: Assignment and Attachment to Higher Units, row 22 Apr 45; R520: Assignment and Attachment to Higher Units, row 23 Apr 45; R568: p. 424"
    }
   },
   {
@@ -326564,6 +330336,170 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R810;R002",
     "source_locator": "R810: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.135,
+     51.0492
+    ]
+   },
+   "properties": {
+    "claim_id": "C8519",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-22",
+    "place_id": "PL3852",
+    "location_name": "Zeitz, Saxony-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -8,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 22 Apr 45, and Command Posts, row 14 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.8008,
+     50.9159
+    ]
+   },
+   "properties": {
+    "claim_id": "C8581",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-076D",
+    "unit_name": "76th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL3882",
+    "location_name": "Burgstädt, Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -4,
+    "reference_ids": "R528;R002",
+    "source_locator": "R528: Assignment and Attachment to Higher Units, row 22 Apr 45, and Command Posts, row 18 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.1716,
+     50.5557
+    ]
+   },
+   "properties": {
+    "claim_id": "C8598",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-087D",
+    "unit_name": "87th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL3891",
+    "location_name": "Jocketa, Saxony",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, First Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -5,
+    "reference_ids": "R368;R002",
+    "source_locator": "R368: Assignment and Attachment to Higher Units, row 22 Apr 45, and Command Posts, row 17 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.6265,
+     50.7432
+    ]
+   },
+   "properties": {
+    "claim_id": "C8608",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL2905",
+    "location_name": "Langendembach, Thüringen",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under First Army in the CMH tables; the corps stays on the Mulde for transfer to First Army",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -5,
+    "reference_ids": "R360;R528;R368;R568;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 22 Apr 45; R528: Assignment and Attachment to Higher Units, row 22 Apr 45; R368: Assignment and Attachment to Higher Units, row 22 Apr 45; R568: p. 424"
    }
   },
   {
@@ -331696,6 +335632,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.769,
+     49.4432
+    ]
+   },
+   "properties": {
+    "claim_id": "C8549",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-028D",
+    "unit_name": "28th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-26",
+    "place_id": "PL3864",
+    "location_name": "Kaiserslautern, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XXIII Corps, Fifteenth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-23",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -3,
+    "reference_ids": "R345;R002",
+    "source_locator": "R345: Assignment and Attachment to Higher Units, row 26 Apr 45, and Command Posts, row 23 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.0833,
      49.0167
     ]
@@ -332140,6 +336117,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: pp. 597, 603"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7724,
+     49.5009
+    ]
+   },
+   "properties": {
+    "claim_id": "C8578",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-036D",
+    "unit_name": "36th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-27",
+    "place_id": "PL3879",
+    "location_name": "Otterberg, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XXI Corps, Seventh Army, 6th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -23,
+    "reference_ids": "R351;R002",
+    "source_locator": "R351: Assignment and Attachment to Higher Units, row 27 Apr 45, and Command Posts, row 4 Apr"
    }
   },
   {
@@ -337395,6 +341413,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.4266,
+     47.9105
+    ]
+   },
+   "properties": {
+    "claim_id": "C8525",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-02",
+    "place_id": "PL3856",
+    "location_name": "Wolfratshausen, Bavaria",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -1,
+    "reference_ids": "R357;R002",
+    "source_locator": "R357: Assignment and Attachment to Higher Units, row 2 May 45, and Command Posts, row 1 May"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4972,
      53.3244
     ]
@@ -338584,6 +342643,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.9912,
+     51.9532
+    ]
+   },
+   "properties": {
+    "claim_id": "C8559",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-029D",
+    "unit_name": "29th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-04",
+    "place_id": "PL3869",
+    "location_name": "Warendorf, North Rhine-Westphalia",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under XVI Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R346;R002",
+    "source_locator": "R346: Assignment and Attachment to Higher Units, row 4 May 45, and Command Posts, row 4 May 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.7333,
      48.1
     ]
@@ -339479,6 +343579,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R035;R002",
     "source_locator": "R035: section Germany"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.135,
+     51.0492
+    ]
+   },
+   "properties": {
+    "claim_id": "C8520",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-006D",
+    "unit_name": "6th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-06",
+    "place_id": "PL3852",
+    "location_name": "Zeitz, Saxony-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under VIII Corps, Ninth Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -22,
+    "reference_ids": "R360;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 6 May 45, and Command Posts, row 14 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.8474,
+     49.4544
+    ]
+   },
+   "properties": {
+    "claim_id": "C8526",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-004D",
+    "unit_name": "4th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-06",
+    "place_id": "PL3857",
+    "location_name": "Amberg, Bavaria",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under III Corps, Third Army, 12th Army Group",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-06",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R357;R002",
+    "source_locator": "R357: Assignment and Attachment to Higher Units, row 6 May 45, and Command Posts, row 6 May"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.0933,
+     50.7135
+    ]
+   },
+   "properties": {
+    "claim_id": "C8609",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-008C",
+    "unit_name": "VIII Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-05-06",
+    "place_id": "PL2972",
+    "location_name": "Lunzig, Thüringen",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Listed under Ninth Army in the CMH tables of the 6th Armored and 76th Infantry Divisions",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-24",
+    "location_basis": "nearest_earlier_command_post",
+    "location_temporal_offset_days": -12,
+    "reference_ids": "R360;R528;R002",
+    "source_locator": "R360: Assignment and Attachment to Higher Units, row 6 May 45; R528: Assignment and Attachment to Higher Units, row 11 May 45"
    }
   },
   {

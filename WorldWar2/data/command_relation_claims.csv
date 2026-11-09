@@ -541,7 +541,7 @@ CR0153,C0512,1,asserts_start_and_end,1944-09-05,1944-09-10,,,1944-09-15,,,assign
 CR0154,C0276,1,asserts_start,1944-09-16,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0154,C0277,2,asserts_start,1944-09-20,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
 CR0154,C0513,1,asserts_start,1944-09-16,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third""",assignment_table
-CR0155,C0277,1,asserts_start,1944-09-20,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0155,C0277,1,asserts_start_and_end,1944-09-20,,,,1944-12-10,,,assignment_table,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the table row of 11 Dec 44 no longer lists it, so the relation is closed on 1944-12-10 (added in the command-chain repair, wf-health-fixes, 9 November 2026, approved by Scott)",assignment_table
 CR0156,C0278,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0156,C0279,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0156,C0280,3,asserts_start,1944-08-10,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
@@ -935,7 +935,7 @@ CR0246,C0398,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Arm
 CR0246,C0399,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0246,C0400,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
 CR0246,C0401,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0246,C0547,2,asserts_start,1944-11-19,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0246,C0547,2,asserts_start_and_end,1944-11-19,,,,1944-12-19,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First""; the table row of 20 Dec 44 no longer lists it, so the relation is closed on 1944-12-19 (added in the command-chain repair, wf-health-fixes, 9 November 2026, approved by Scott)",assignment_table
 CR0247,C0393,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0247,C0394,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
 CR0247,C0395,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th""",assignment_table
@@ -984,7 +984,7 @@ CR0257,C0409,1,asserts_start,1944-09-05,,,,,,,,CMH ETO-OB assignment table (sing
 CR0258,C0408,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0258,C0409,2,asserts_start,1944-09-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth""",assignment_table
 CR0259,C0410,2,asserts_start,1944-09-21,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
-CR0259,C0411,2,asserts_start,1944-09-21,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First""",assignment_table
+CR0259,C0411,2,asserts_start_and_end,1944-09-21,,,,1944-10-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First""; the table row of 22 Oct 44 no longer lists it, so the relation is closed on 1944-10-21 (added in the command-chain repair, wf-health-fixes, 9 November 2026, approved by Scott)",assignment_table
 CR0260,C0410,1,asserts_start,1944-09-21,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0260,C0411,1,asserts_start,1944-09-21,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0261,C0074,1,observed_during,,,,,,,,,parent not verified,
@@ -1064,7 +1064,7 @@ CR0282,C0431,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (sing
 CR0282,C0432,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0282,C0433,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
 CR0282,C0434,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
-CR0282,C0435,1,asserts_start,1944-08-13,,,,,,,,CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps),assignment_table
+CR0282,C0435,1,asserts_start_and_end,1944-08-13,,,,1944-12-22,,,assignment_table,"CMH ETO-OB assignment table (single corps column; the table does not say assigned or attached for corps); the table row of 23 Dec 44 no longer lists it, so the relation is closed on 1944-12-22 (added in the command-chain repair, wf-health-fixes, 9 November 2026, approved by Scott)",assignment_table
 CR0283,C0436,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0283,C0437,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
 CR0283,C0438,3,asserts_start,1944-07-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""AFHQ""",assignment_table
@@ -1393,7 +1393,7 @@ CR0432,C0613,1,observed_during,,,,,,,,,"Ninth Army (Simpson) used the XVI Corps 
 CR0432,C0636,1,observed_during,,,,,,,,,"Ninth Army (Simpson) used the XVI Corps as one of its corps in the new sector (Last Offensive p. 136); the source gives no assignment date or kind, so the relation starts at this claim.",
 CR0433,C0604,1,asserts_start_and_end,1944-12-21,,,,1945-03-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" from the row of 21 Dec 44; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); valid_to is the day before the first row that no longer lists it (28 Mar 45); the single corps column does not say assigned or attached",assignment_table
 CR0433,C0631,1,asserts_start_and_end,1944-12-21,,,,1945-03-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" from the row of 21 Dec 44; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); valid_to is the day before the first row that no longer lists it (28 Mar 45); the single corps column does not say assigned or attached",assignment_table
-CR0434,C0605,1,asserts_start,1945-01-25,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XII"" from the row of 25 Jan 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); the table lists it until 2 April 1945 (first row without it 3 Apr 45); the end is left open here because Batch 4 stops on 31 March 1945 and no claim in the batch reaches it; the single corps column does not say assigned or attached",assignment_table
+CR0434,C0605,1,asserts_start_and_end,1945-01-25,,,,1945-04-02,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" from the row of 25 Jan 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); the table lists it until 2 April 1945 (first row without it 3 Apr 45); the end is left open here because Batch 4 stops on 31 March 1945 and no claim in the batch reaches it; the single corps column does not say assigned or attached; the table row of 3 Apr 45 no longer lists it, so the relation is closed on 1945-04-02 (added in the command-chain repair, wf-health-fixes, 9 November 2026, approved by Scott)",assignment_table
 CR0435,C0606,1,asserts_start_and_end,1944-12-26,,,,1945-03-09,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" from the row of 26 Dec 44; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); valid_to is the day before the first row that no longer lists it (10 Mar 45); the single corps column does not say assigned or attached",assignment_table
 CR0436,C0608,3,asserts_start,1945-01-18,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" from the row of 18 Jan 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table",assignment_table
 CR0436,C0615,3,asserts_start,1945-01-18,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" from the row of 18 Jan 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table",assignment_table
@@ -2711,3 +2711,357 @@ CR1082,C8414,1,observed_during,,,,,,,,,,
 CR1083,C8415,1,observed_during,,,,,,,,,,
 CR1081,C8416,1,observed_during,,,,,,,,,,
 CR1080,C8417,1,observed_during,,,,,,,,,,
+CR1084,C8508,1,asserts_start_and_end,1944-12-11,,,,1944-12-17,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""III"" (row 11 Dec 44)",assignment_table
+CR0154,C8508,2,asserts_start_and_end,1944-09-16,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 11 Dec 44)",assignment_table
+CR0151,C8508,3,asserts_start_and_end,1944-08-01,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 11 Dec 44)",assignment_table
+CR1085,C8509,1,asserts_start_and_end,1944-12-18,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 18 Dec 44)",assignment_table
+CR0154,C8509,2,asserts_start_and_end,1944-09-16,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 18 Dec 44)",assignment_table
+CR0151,C8509,3,asserts_start_and_end,1944-08-01,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 18 Dec 44)",assignment_table
+CR1086,C8510,1,asserts_start_and_end,1944-12-21,,,,1944-12-24,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 21 Dec 44)",assignment_table
+CR0154,C8510,2,asserts_start_and_end,1944-09-16,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 21 Dec 44)",assignment_table
+CR0151,C8510,3,asserts_start_and_end,1944-08-01,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 21 Dec 44)",assignment_table
+CR1087,C8511,1,asserts_start_and_end,1944-12-25,,,,1944-12-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 25 Dec 44)",assignment_table
+CR0154,C8511,2,asserts_start_and_end,1944-09-16,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 25 Dec 44)",assignment_table
+CR0151,C8511,3,asserts_start_and_end,1944-08-01,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 25 Dec 44)",assignment_table
+CR1088,C8512,1,asserts_start_and_end,1944-12-28,,,,1945-02-10,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""III"" (row 28 Dec 44)",assignment_table
+CR0154,C8512,2,asserts_start_and_end,1944-09-16,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 28 Dec 44)",assignment_table
+CR0151,C8512,3,asserts_start_and_end,1944-08-01,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 28 Dec 44)",assignment_table
+CR1089,C8513,1,asserts_start_and_end,1945-02-11,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 11 Feb 45)",assignment_table
+CR0154,C8513,2,asserts_start_and_end,1944-09-16,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 11 Feb 45)",assignment_table
+CR0151,C8513,3,asserts_start_and_end,1944-08-01,,,,1945-03-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 11 Feb 45)",assignment_table
+CR1090,C8514,1,asserts_start_and_end,1945-03-08,,,,1945-03-22,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 8 Mar 45)",assignment_table
+CR1091,C8514,2,asserts_start_and_end,1945-03-08,,,,1945-03-22,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 8 Mar 45)",assignment_table
+CR1092,C8514,3,asserts_start_and_end,1945-03-08,,,,1945-03-22,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 8 Mar 45)",assignment_table
+CR1093,C8515,1,asserts_start_and_end,1945-03-23,,,,1945-03-23,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 23 Mar 45)",assignment_table
+CR1094,C8515,2,asserts_start_and_end,1945-03-23,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 23 Mar 45)",assignment_table
+CR1095,C8515,3,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 23 Mar 45)",assignment_table
+CR1096,C8516,1,asserts_start_and_end,1945-03-24,,,,1945-03-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 24 Mar 45)",assignment_table
+CR1094,C8516,2,asserts_start_and_end,1945-03-23,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 24 Mar 45)",assignment_table
+CR1095,C8516,3,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 24 Mar 45)",assignment_table
+CR1097,C8517,1,asserts_start_and_end,1945-03-28,,,,1945-04-16,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 28 Mar 45)",assignment_table
+CR1094,C8517,2,asserts_start_and_end,1945-03-23,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 28 Mar 45)",assignment_table
+CR1095,C8517,3,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 28 Mar 45)",assignment_table
+CR1098,C8518,1,asserts_start,1945-04-17,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 17 Apr 45)",assignment_table
+CR1094,C8518,2,asserts_start_and_end,1945-03-23,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 17 Apr 45)",assignment_table
+CR1095,C8518,3,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 17 Apr 45)",assignment_table
+CR1098,C8519,1,asserts_start,1945-04-17,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 22 Apr 45)",assignment_table
+CR1099,C8519,2,asserts_start_and_end,1945-04-22,,,,1945-05-05,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 22 Apr 45)",assignment_table
+CR1095,C8519,3,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 22 Apr 45)",assignment_table
+CR1098,C8520,1,asserts_start,1945-04-17,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 6 May 45)",assignment_table
+CR1100,C8520,2,asserts_start,1945-05-06,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 6 May 45)",assignment_table
+CR1095,C8520,3,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 6 May 45)",assignment_table
+CR1101,C8521,1,asserts_start_and_end,1945-03-10,,,,1945-03-19,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 10 Mar 45)",assignment_table
+CR1102,C8521,2,asserts_start_and_end,1945-03-10,,,,1945-03-19,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 10 Mar 45)",assignment_table
+CR0221,C8521,3,asserts_start_and_end,1944-08-01,,,,1945-03-19,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 10 Mar 45)",assignment_table
+CR1103,C8522,1,asserts_start_and_end,1945-03-20,,,,1945-03-24,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 20 Mar 45)",assignment_table
+CR1104,C8522,2,asserts_start_and_end,1945-03-20,,,,1945-05-01,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 20 Mar 45)",assignment_table
+CR1105,C8522,3,asserts_start_and_end,1945-03-20,,,,1945-05-01,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 20 Mar 45)",assignment_table
+CR1106,C8523,1,asserts_start_and_end,1945-03-25,,,,1945-04-07,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XXI"" (row 25 Mar 45)",assignment_table
+CR1104,C8523,2,asserts_start_and_end,1945-03-20,,,,1945-05-01,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 25 Mar 45)",assignment_table
+CR1105,C8523,3,asserts_start_and_end,1945-03-20,,,,1945-05-01,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 25 Mar 45)",assignment_table
+CR1104,C8524,1,asserts_start_and_end,1945-03-20,,,,1945-05-01,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 8 Apr 45)",assignment_table
+CR1105,C8524,2,asserts_start_and_end,1945-03-20,,,,1945-05-01,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 8 Apr 45)",assignment_table
+CR1107,C8525,1,asserts_start,1945-05-02,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 2 May 45)",assignment_table
+CR1108,C8525,2,asserts_start,1945-05-02,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 2 May 45)",assignment_table
+CR1109,C8526,1,asserts_start,1945-05-06,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""III"" (row 6 May 45)",assignment_table
+CR1107,C8526,2,asserts_start,1945-05-02,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 6 May 45)",assignment_table
+CR1108,C8526,3,asserts_start,1945-05-02,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 6 May 45)",assignment_table
+CR1110,C8527,1,asserts_start_and_end,1944-10-01,,,,1944-12-11,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 1 Oct 44)",assignment_table
+CR0242,C8527,2,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 1 Oct 44)",assignment_table
+CR0239,C8527,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 1 Oct 44)",assignment_table
+CR1111,C8528,1,asserts_start_and_end,1944-12-12,,,,1945-01-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""III"" (row 12 Dec 44)",assignment_table
+CR0242,C8528,2,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 12 Dec 44)",assignment_table
+CR0239,C8528,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 12 Dec 44)",assignment_table
+CR1112,C8529,1,asserts_start_and_end,1945-01-28,,,,1945-03-22,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 28 Jan 45)",assignment_table
+CR0242,C8529,2,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 28 Jan 45)",assignment_table
+CR0239,C8529,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 28 Jan 45)",assignment_table
+CR1113,C8530,1,asserts_start,1945-03-23,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 23 Mar 45)",assignment_table
+CR0242,C8530,2,asserts_start,1944-09-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 23 Mar 45)",assignment_table
+CR0239,C8530,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 23 Mar 45)",assignment_table
+CR0249,C8531,1,asserts_start_and_end,1944-11-19,,,,1945-01-07,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 20 Dec 44)",assignment_table
+CR1114,C8531,2,asserts_start_and_end,1944-12-20,,,,1945-01-08,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 20 Dec 44)",assignment_table
+CR0247,C8531,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 20 Dec 44)",assignment_table
+CR0249,C8532,1,asserts_start_and_end,1944-11-19,,,,1945-01-07,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 5 Jan 45)",assignment_table
+CR1114,C8532,2,asserts_start_and_end,1944-12-20,,,,1945-01-08,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 5 Jan 45)",assignment_table
+CR0247,C8532,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 5 Jan 45)",assignment_table
+CR0249,C8533,1,asserts_start_and_end,1944-11-19,,,,1945-01-07,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 6 Jan 45)",assignment_table
+CR1114,C8533,2,asserts_start_and_end,1944-12-20,,,,1945-01-08,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 6 Jan 45)",assignment_table
+CR0247,C8533,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 6 Jan 45)",assignment_table
+CR1114,C8534,1,asserts_start_and_end,1944-12-20,,,,1945-01-08,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 8 Jan 45)",assignment_table
+CR0247,C8534,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 8 Jan 45)",assignment_table
+CR1115,C8535,1,asserts_start_and_end,1945-01-09,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 9 Jan 45)",assignment_table
+CR0247,C8535,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 9 Jan 45)",assignment_table
+CR1116,C8536,1,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 16 Jan 45)",assignment_table
+CR1115,C8536,2,asserts_start_and_end,1945-01-09,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 16 Jan 45)",assignment_table
+CR1117,C8536,3,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 16 Jan 45)",assignment_table
+CR0247,C8536,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 16 Jan 45)",assignment_table
+CR1116,C8537,1,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 19 Jan 45)",assignment_table
+CR1115,C8537,2,asserts_start_and_end,1945-01-09,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 19 Jan 45)",assignment_table
+CR1117,C8537,3,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 19 Jan 45)",assignment_table
+CR0247,C8537,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 19 Jan 45)",assignment_table
+CR1118,C8538,1,asserts_start_and_end,1945-01-20,,,,1945-01-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""Fr II"" (row 20 Jan 45)",assignment_table
+CR1116,C8538,2,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 20 Jan 45)",assignment_table
+CR1115,C8538,3,asserts_start_and_end,1945-01-09,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 20 Jan 45)",assignment_table
+CR1117,C8538,4,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 20 Jan 45)",assignment_table
+CR0247,C8538,5,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 20 Jan 45)",assignment_table
+CR1119,C8539,1,asserts_start_and_end,1945-01-28,,,,1945-02-13,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XXI"" (row 28 Jan 45)",assignment_table
+CR1116,C8539,2,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 28 Jan 45)",assignment_table
+CR1115,C8539,3,asserts_start_and_end,1945-01-09,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 28 Jan 45)",assignment_table
+CR1117,C8539,4,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 28 Jan 45)",assignment_table
+CR0247,C8539,5,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 28 Jan 45)",assignment_table
+CR1116,C8540,1,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 14 Feb 45)",assignment_table
+CR1115,C8540,2,asserts_start_and_end,1945-01-09,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 14 Feb 45)",assignment_table
+CR1117,C8540,3,asserts_start_and_end,1945-01-16,,,,1945-02-18,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th"" (row 14 Feb 45)",assignment_table
+CR0247,C8540,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 14 Feb 45)",assignment_table
+CR0247,C8541,1,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 19 Feb 45)",assignment_table
+CR1120,C8542,1,asserts_start_and_end,1945-02-21,,,,1945-03-15,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""V"" (row 21 Feb 45)",assignment_table
+CR1121,C8542,2,asserts_start_and_end,1945-02-21,,,,1945-03-15,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 21 Feb 45)",assignment_table
+CR0247,C8542,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 21 Feb 45)",assignment_table
+CR1122,C8543,1,asserts_start_and_end,1945-03-16,,,,1945-03-21,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 16 Mar 45)",assignment_table
+CR1123,C8543,2,asserts_start_and_end,1945-03-16,,,,1945-03-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 16 Mar 45)",assignment_table
+CR0247,C8543,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 16 Mar 45)",assignment_table
+CR1124,C8544,1,asserts_start_and_end,1945-03-22,,,,1945-03-27,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""V"" (row 22 Mar 45)",assignment_table
+CR1125,C8544,2,asserts_start_and_end,1945-03-22,,,,1945-04-09,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 22 Mar 45)",assignment_table
+CR0247,C8544,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 22 Mar 45)",assignment_table
+CR1126,C8545,1,asserts_start_and_end,1945-03-28,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""III"" (row 28 Mar 45)",assignment_table
+CR1125,C8545,2,asserts_start_and_end,1945-03-22,,,,1945-04-09,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 28 Mar 45)",assignment_table
+CR0247,C8545,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 28 Mar 45)",assignment_table
+CR1125,C8546,1,asserts_start_and_end,1945-03-22,,,,1945-04-09,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 7 Apr 45)",assignment_table
+CR0247,C8546,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 7 Apr 45)",assignment_table
+CR1127,C8547,1,asserts_start,1945-04-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 10 Apr 45)",assignment_table
+CR0247,C8547,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 10 Apr 45)",assignment_table
+CR1128,C8548,1,asserts_start_and_end,1945-04-13,,,,1945-04-25,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XXII"" (row 13 Apr 45)",assignment_table
+CR1127,C8548,2,asserts_start,1945-04-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 13 Apr 45)",assignment_table
+CR0247,C8548,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 13 Apr 45)",assignment_table
+CR1129,C8549,1,asserts_start,1945-04-26,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XXIII"" (row 26 Apr 45)",assignment_table
+CR1127,C8549,2,asserts_start,1945-04-10,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Fifteenth"" (row 26 Apr 45)",assignment_table
+CR0247,C8549,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 26 Apr 45)",assignment_table
+CR0260,C8550,1,asserts_start_and_end,1944-09-21,,,,1944-12-22,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIX"" (row 22 Oct 44)",assignment_table
+CR1130,C8550,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 22 Oct 44)",assignment_table
+CR0252,C8550,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 22 Oct 44)",assignment_table
+CR0260,C8551,1,asserts_start_and_end,1944-09-21,,,,1944-12-22,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIX"" (row 20 Dec 44)",assignment_table
+CR1130,C8551,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 20 Dec 44)",assignment_table
+CR1131,C8551,3,asserts_start_and_end,1944-12-20,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st"" (row 20 Dec 44)",assignment_table
+CR0252,C8551,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 20 Dec 44)",assignment_table
+CR1132,C8552,1,asserts_start_and_end,1944-12-23,,,,1945-02-03,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIII"" (row 23 Dec 44)",assignment_table
+CR1130,C8552,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 23 Dec 44)",assignment_table
+CR1131,C8552,3,asserts_start_and_end,1944-12-20,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st"" (row 23 Dec 44)",assignment_table
+CR0252,C8552,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 23 Dec 44)",assignment_table
+CR1133,C8553,1,asserts_start_and_end,1945-02-04,,,,1945-03-28,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIX"" (row 4 Feb 45)",assignment_table
+CR1130,C8553,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 4 Feb 45)",assignment_table
+CR1131,C8553,3,asserts_start_and_end,1944-12-20,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st"" (row 4 Feb 45)",assignment_table
+CR0252,C8553,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 4 Feb 45)",assignment_table
+CR1134,C8554,1,asserts_start_and_end,1945-03-29,,,,1945-04-04,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 29 Mar 45)",assignment_table
+CR1130,C8554,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 29 Mar 45)",assignment_table
+CR1131,C8554,3,asserts_start_and_end,1944-12-20,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st"" (row 29 Mar 45)",assignment_table
+CR0252,C8554,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 29 Mar 45)",assignment_table
+CR1134,C8555,1,asserts_start_and_end,1945-03-29,,,,1945-04-04,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 4 Apr 45)",assignment_table
+CR1130,C8555,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 4 Apr 45)",assignment_table
+CR0252,C8555,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 4 Apr 45)",assignment_table
+CR1130,C8556,1,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 5 Apr 45)",assignment_table
+CR0252,C8556,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 5 Apr 45)",assignment_table
+CR1135,C8557,1,asserts_start_and_end,1945-04-12,,,,1945-04-16,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XVI (Opns)"" (row 12 Apr 45)",assignment_table
+CR1130,C8557,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 12 Apr 45)",assignment_table
+CR0252,C8557,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 12 Apr 45)",assignment_table
+CR1136,C8558,1,asserts_start_and_end,1945-04-17,,,,1945-05-03,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIII"" (row 17 Apr 45)",assignment_table
+CR1130,C8558,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 17 Apr 45)",assignment_table
+CR0252,C8558,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 17 Apr 45)",assignment_table
+CR1137,C8559,1,asserts_start,1945-05-04,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 4 May 45)",assignment_table
+CR1130,C8559,2,asserts_start,1944-10-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 4 May 45)",assignment_table
+CR0252,C8559,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 4 May 45)",assignment_table
+CR0275,C8560,1,asserts_start_and_end,1944-04-26,,,,1945-01-22,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 23 Dec 44)",assignment_table
+CR0278,C8560,2,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 23 Dec 44)",assignment_table
+CR1138,C8561,1,asserts_start_and_end,1944-12-24,,,,1944-12-25,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 24 Dec 44)",assignment_table
+CR0275,C8561,2,asserts_start_and_end,1944-04-26,,,,1945-01-22,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 24 Dec 44)",assignment_table
+CR0278,C8561,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 24 Dec 44)",assignment_table
+CR1139,C8562,1,asserts_start_and_end,1944-12-26,,,,1945-01-17,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""III"" (row 26 Dec 44)",assignment_table
+CR0275,C8562,2,asserts_start_and_end,1944-04-26,,,,1945-01-22,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 26 Dec 44)",assignment_table
+CR0278,C8562,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 26 Dec 44)",assignment_table
+CR1140,C8563,1,asserts_start_and_end,1945-01-18,,,,1945-01-22,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 18 Jan 45)",assignment_table
+CR0275,C8563,2,asserts_start_and_end,1944-04-26,,,,1945-01-22,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 18 Jan 45)",assignment_table
+CR0278,C8563,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 18 Jan 45)",assignment_table
+CR1141,C8564,1,asserts_start_and_end,1945-01-23,,,,1945-01-29,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 23 Jan 45)",assignment_table
+CR1142,C8564,2,asserts_start_and_end,1945-01-23,,,,1945-01-29,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 23 Jan 45)",assignment_table
+CR0278,C8564,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 23 Jan 45)",assignment_table
+CR1143,C8565,1,asserts_start_and_end,1945-01-30,,,,1945-04-12,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 30 Jan 45)",assignment_table
+CR1144,C8565,2,asserts_start,1945-01-30,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 30 Jan 45)",assignment_table
+CR1145,C8565,3,asserts_start_and_end,1945-01-30,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""Br 21st"" (row 30 Jan 45)",assignment_table
+CR0278,C8565,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 30 Jan 45)",assignment_table
+CR1143,C8566,1,asserts_start_and_end,1945-01-30,,,,1945-04-12,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 4 Apr 45)",assignment_table
+CR1144,C8566,2,asserts_start,1945-01-30,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 4 Apr 45)",assignment_table
+CR0278,C8566,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 4 Apr 45)",assignment_table
+CR1146,C8567,1,asserts_start_and_end,1945-04-13,,,,1945-04-15,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIX (Opns)"" (row 13 Apr 45)",assignment_table
+CR1147,C8567,2,asserts_start_and_end,1945-04-13,,,,1945-04-15,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIII (Adm)"" (row 13 Apr 45)",assignment_table
+CR1144,C8567,3,asserts_start,1945-01-30,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 13 Apr 45)",assignment_table
+CR0278,C8567,4,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 13 Apr 45)",assignment_table
+CR1148,C8568,1,asserts_start,1945-04-16,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XIII"" (row 16 Aor 45)",assignment_table
+CR1144,C8568,2,asserts_start,1945-01-30,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 16 Aor 45)",assignment_table
+CR0278,C8568,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 16 Aor 45)",assignment_table
+CR0285,C8569,1,asserts_start_and_end,1944-07-13,,,,1944-12-26,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 1 Nov 44)",assignment_table
+CR0287,C8569,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 1 Nov 44)",assignment_table
+CR0286,C8569,3,asserts_start_and_end,1944-09-15,,,,1944-12-04,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 1 Nov 44)",assignment_table
+CR0285,C8570,1,asserts_start_and_end,1944-07-13,,,,1944-12-26,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 5 Dec 44)",assignment_table
+CR1149,C8570,2,asserts_start_and_end,1944-12-05,,,,1944-12-14,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""First Fr A (Opn)"" (row 5 Dec 44)",assignment_table
+CR0287,C8570,3,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 5 Dec 44)",assignment_table
+CR0285,C8571,1,asserts_start_and_end,1944-07-13,,,,1944-12-26,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 15 Dec 44)",assignment_table
+CR0287,C8571,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 15 Dec 44)",assignment_table
+CR1150,C8571,3,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 15 Dec 44)",assignment_table
+CR0285,C8572,1,asserts_start_and_end,1944-07-13,,,,1944-12-26,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 23 Dec 44)",assignment_table
+CR0287,C8572,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 23 Dec 44)",assignment_table
+CR1150,C8572,3,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 23 Dec 44)",assignment_table
+CR1151,C8573,1,asserts_start_and_end,1944-12-27,,,,1944-12-29,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XXI"" (row 27 Dec 44)",assignment_table
+CR0287,C8573,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 27 Dec 44)",assignment_table
+CR1150,C8573,3,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 27 Dec 44)",assignment_table
+CR0287,C8574,1,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 30 Dec 44)",assignment_table
+CR1150,C8574,2,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 30 Dec 44)",assignment_table
+CR1152,C8575,1,asserts_start_and_end,1945-01-03,,,,1945-01-17,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 3 Jan 45)",assignment_table
+CR0287,C8575,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 3 Jan 45)",assignment_table
+CR1150,C8575,3,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 3 Jan 45)",assignment_table
+CR1153,C8576,1,asserts_start_and_end,1945-01-18,,,,1945-03-28,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 18 Jan 45)",assignment_table
+CR0287,C8576,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 18 Jan 45)",assignment_table
+CR1150,C8576,3,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 18 Jan 45)",assignment_table
+CR0287,C8577,1,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 29 Mar 45)",assignment_table
+CR1150,C8577,2,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 29 Mar 45)",assignment_table
+CR1154,C8578,1,asserts_start,1945-04-27,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XXI"" (row 27 Apr 45)",assignment_table
+CR0287,C8578,2,asserts_start,1944-09-15,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 27 Apr 45)",assignment_table
+CR1150,C8578,3,asserts_start,1944-12-15,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 27 Apr 45)",assignment_table
+CR1155,C8579,1,asserts_start_and_end,1945-04-03,,,,1945-04-07,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XX"" (row 3 Apr 45)",assignment_table
+CR0405,C8579,2,asserts_start_and_end,1945-01-19,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 3 Apr 45)",assignment_table
+CR0404,C8579,3,asserts_start,1945-01-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 3 Apr 45)",assignment_table
+CR1156,C8580,1,asserts_start,1945-04-08,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 8 Apr 45)",assignment_table
+CR0405,C8580,2,asserts_start_and_end,1945-01-19,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 8 Apr 45)",assignment_table
+CR0404,C8580,3,asserts_start,1945-01-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 8 Apr 45)",assignment_table
+CR1156,C8581,1,asserts_start,1945-04-08,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 22 Apr 45)",assignment_table
+CR1157,C8581,2,asserts_start_and_end,1945-04-22,,,,1945-05-10,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 22 Apr 45)",assignment_table
+CR0404,C8581,3,asserts_start,1945-01-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 22 Apr 45)",assignment_table
+CR0310,C8582,1,asserts_start_and_end,1944-09-07,,,,1944-12-04,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 29 Sep 44)",assignment_table
+CR1158,C8582,2,asserts_start_and_end,1944-09-29,,,,1944-11-24,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 29 Sep 44)",assignment_table
+CR0309,C8582,3,asserts_start_and_end,1944-09-07,,,,1944-10-31,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 29 Sep 44)",assignment_table
+CR1159,C8582,4,asserts_start_and_end,1944-09-29,,,,1944-11-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th (Sup & Opn)"" (row 29 Sep 44)",assignment_table
+CR0305,C8582,5,asserts_start_and_end,1944-08-01,,,,1944-11-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 29 Sep 44)",assignment_table
+CR0310,C8583,1,asserts_start_and_end,1944-09-07,,,,1944-12-04,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 1 Nov 44)",assignment_table
+CR1158,C8583,2,asserts_start_and_end,1944-09-29,,,,1944-11-24,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Seventh"" (row 1 Nov 44)",assignment_table
+CR1159,C8583,3,asserts_start_and_end,1944-09-29,,,,1944-11-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""6th (Sup & Opn)"" (row 1 Nov 44)",assignment_table
+CR0305,C8583,4,asserts_start_and_end,1944-08-01,,,,1944-11-24,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 1 Nov 44)",assignment_table
+CR0310,C8584,1,asserts_start_and_end,1944-09-07,,,,1944-12-04,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 25 Nov 44)",assignment_table
+CR1160,C8584,2,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 25 Nov 44)",assignment_table
+CR1161,C8584,3,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 25 Nov 44)",assignment_table
+CR1162,C8585,1,asserts_start_and_end,1944-12-05,,,,1945-02-05,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VI"" (row 5 Dec 44)",assignment_table
+CR1160,C8585,2,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 5 Dec 44)",assignment_table
+CR1161,C8585,3,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 5 Dec 44)",assignment_table
+CR1160,C8586,1,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 6 Feb 45)",assignment_table
+CR1161,C8586,2,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 6 Feb 45)",assignment_table
+CR1163,C8587,1,asserts_start_and_end,1945-02-17,,,,1945-02-28,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 17 Feb 45)",assignment_table
+CR1164,C8587,2,asserts_start_and_end,1945-02-17,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Ninth"" (row 17 Feb 45)",assignment_table
+CR1160,C8587,3,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 17 Feb 45)",assignment_table
+CR1165,C8587,4,asserts_start_and_end,1945-02-17,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""12th"" (row 17 Feb 45)",assignment_table
+CR1161,C8587,5,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 17 Feb 45)",assignment_table
+CR1166,C8588,1,asserts_start_and_end,1945-03-01,,,,1945-03-06,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIII"" (row 1 Mar 45)",assignment_table
+CR1164,C8588,2,asserts_start_and_end,1945-02-17,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Ninth"" (row 1 Mar 45)",assignment_table
+CR1160,C8588,3,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 1 Mar 45)",assignment_table
+CR1165,C8588,4,asserts_start_and_end,1945-02-17,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""12th"" (row 1 Mar 45)",assignment_table
+CR1161,C8588,5,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 1 Mar 45)",assignment_table
+CR1167,C8589,1,asserts_start,1945-03-07,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 7 Mar 45)",assignment_table
+CR1164,C8589,2,asserts_start_and_end,1945-02-17,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Ninth"" (row 7 Mar 45)",assignment_table
+CR1160,C8589,3,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 7 Mar 45)",assignment_table
+CR1165,C8589,4,asserts_start_and_end,1945-02-17,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""12th"" (row 7 Mar 45)",assignment_table
+CR1161,C8589,5,asserts_start_and_end,1944-11-25,,,,1945-04-06,,,assignment_table,"CMH ETO-OB assignment table, Army Group Assigned column: ""6th"" (row 7 Mar 45)",assignment_table
+CR1167,C8590,1,asserts_start,1945-03-07,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XVI"" (row 7 Apr 45)",assignment_table
+CR1168,C8590,2,asserts_start,1945-04-07,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 7 Apr 45)",assignment_table
+CR1169,C8590,3,asserts_start,1945-04-07,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 7 Apr 45)",assignment_table
+CR0340,C8591,1,asserts_start_and_end,1944-12-04,,,,1944-12-10,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""III"" (row 9 Dec 44)",assignment_table
+CR0339,C8591,2,asserts_start_and_end,1944-11-25,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 9 Dec 44)",assignment_table
+CR1170,C8591,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 9 Dec 44)",assignment_table
+CR1171,C8592,1,asserts_start_and_end,1944-12-11,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 11 Dec 44)",assignment_table
+CR0339,C8592,2,asserts_start_and_end,1944-11-25,,,,1944-12-20,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 11 Dec 44)",assignment_table
+CR1170,C8592,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 11 Dec 44)",assignment_table
+CR1172,C8593,1,asserts_start_and_end,1944-12-21,,,,1944-12-25,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XV"" (row 21 Dec 44)",assignment_table
+CR1173,C8593,2,asserts_start_and_end,1944-12-21,,,,1944-12-25,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Seventh"" (row 21 Dec 44)",assignment_table
+CR1170,C8593,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 21 Dec 44)",assignment_table
+CR1170,C8594,1,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 26 Dec 44)",assignment_table
+CR1174,C8595,1,asserts_start_and_end,1944-12-29,,,,1945-01-13,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 29 Dec 44)",assignment_table
+CR1175,C8595,2,asserts_start_and_end,1944-12-29,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 29 Dec 44)",assignment_table
+CR1170,C8595,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 29 Dec 44)",assignment_table
+CR1176,C8596,1,asserts_start_and_end,1945-01-14,,,,1945-01-24,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 14 Jan 45)",assignment_table
+CR1175,C8596,2,asserts_start_and_end,1944-12-29,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 14 Jan 45)",assignment_table
+CR1170,C8596,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 14 Jan 45)",assignment_table
+CR1177,C8597,1,asserts_start,1945-01-25,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 25 Jan 45)",assignment_table
+CR1175,C8597,2,asserts_start_and_end,1944-12-29,,,,1945-04-21,,,assignment_table,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 25 Jan 45)",assignment_table
+CR1170,C8597,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 25 Jan 45)",assignment_table
+CR1177,C8598,1,asserts_start,1945-01-25,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""VIII"" (row 22 Apr 45)",assignment_table
+CR1178,C8598,2,asserts_start,1945-04-22,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""First"" (row 22 Apr 45)",assignment_table
+CR1170,C8598,3,asserts_start,1944-12-09,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12th"" (row 22 Apr 45)",assignment_table
+CR1179,C8599,1,asserts_start,1945-03-12,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XII"" (row 12 Mar 45)",assignment_table
+CR0343,C8599,2,asserts_start,1944-03-05,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Third"" (row 12 Mar 45)",assignment_table
+CR0346,C8599,3,asserts_start,1944-08-01,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th"" (row 12 Mar 45)",assignment_table
+CR0359,C8600,1,asserts_start_and_end,1944-11-07,,,,1945-03-31,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIII"" (row 20Dec44)",assignment_table
+CR0358,C8600,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 20Dec44)",assignment_table
+CR1180,C8600,3,asserts_start_and_end,1944-12-20,,,,1945-03-31,,,assignment_table,"CMH ETO-OB assignment table, Army Group Attached column: ""British 21 st"" (row 20Dec44)",assignment_table
+CR0357,C8600,4,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th"" (row 20Dec44)",assignment_table
+CR1181,C8601,1,asserts_start_and_end,1945-04-01,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Corps column: ""XIII (Admin)"" (row 1Apr45)",assignment_table
+CR1182,C8601,2,asserts_start_and_end,1945-04-01,,,,1945-04-03,,,assignment_table,"CMH ETO-OB assignment table, Army Attached column: ""Fifteenth (Operations)"" (row 1Apr45)",assignment_table
+CR0358,C8601,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 1Apr45)",assignment_table
+CR0357,C8601,4,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th"" (row 1Apr45)",assignment_table
+CR1183,C8602,1,asserts_start,1945-04-04,,,,,,,,"CMH ETO-OB assignment table, Corps column: ""XIII"" (row 4Apr45)",assignment_table
+CR0358,C8602,2,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Assigned column: ""Ninth"" (row 4Apr45)",assignment_table
+CR0357,C8602,3,asserts_start,1944-08-28,,,,,,,,"CMH ETO-OB assignment table, Army Group Assigned column: ""12 th"" (row 4Apr45)",assignment_table
+CR0179,C8603,1,asserts_end,,,,1945-02-10,1945-02-11,1945-02-10,,inferred,The Last Offensive p. 96: Bradley orders Patton on 10 February to give up the III Corps headquarters to First Army; hand-over day not given,inferred
+CR1184,C8604,1,asserts_start,1945-02-11,1945-02-12,,1945-02-10,,,,,"CMH ETO-OB tables (1st and 78th Infantry Divisions), row 12 Feb 45: Corps III, Army First; ordered 10 February (The Last Offensive p. 96)",inferred
+CR1184,C8605,1,asserts_start_and_end,1945-02-11,1945-02-12,,,1945-04-18,1945-04-04,,assignment_table,"CMH ETO-OB table (9th Infantry Division), row 4 Apr 45: Corps III, Army First; the 99th Infantry Division table lists Third Army from 19 April",assignment_table
+CR1185,C8606,1,asserts_start,1945-04-19,,,,,,,,"CMH ETO-OB tables (99th, 86th Infantry and 14th Armored Divisions), rows of 19, 22 and 23 Apr 45: Corps III, Army Third",assignment_table
+CR0189,C8607,1,asserts_end,,,,,1945-04-21,,,assignment_table,"CMH ETO-OB table (6th Armored Division), row 17 Apr 45: Corps VIII, Army Third; row 22 Apr 45: Army First",assignment_table
+CR1186,C8608,1,asserts_start,1945-04-22,,,,,,,,"CMH ETO-OB tables (6th Armored, 76th and 87th Infantry Divisions), row 22 Apr 45: Corps VIII, Army First",assignment_table
+CR1186,C8609,1,asserts_start_and_end,1945-04-22,,,,1945-05-10,1945-05-05,,assignment_table,CMH ETO-OB tables: Ninth Army from the 6th Armored Division row of 6 May 45 and the 76th Infantry Division row of 11 May 45,assignment_table
+CR1187,C8609,2,asserts_start,1945-05-06,1945-05-11,,,,,,,"CMH ETO-OB tables: Corps VIII, Army Ninth from the 6th Armored Division row of 6 May 45 (76th Infantry Division: 11 May 45)",assignment_table
+CR0736,C7830,1,observed_during,,,,,,,,,B-762 (Prittwitz): about 20 March the corps holds the Tiel-Arnhem-Emmerich front under Twenty-Fifth Army,
+CR0736,C7836,1,asserts_end,,,,,1945-04-03,,,narrative,B-762 p. 2: on 3 April the corps staff with the 6th Parachute Division leaves Twenty-Fifth Army for Armee-Gruppe Student,narrative
+CR1188,C7838,1,asserts_start,1945-04-06,,,,,,,,B-762 p. 4: on 6 April the corps returns to Twenty-Fifth Army because Student's headquarters is cut off,narrative
+CR0682,C7452,1,observed_during,,,,,,,,,"Stacey p. 463: one of the two divisions of the 47th Panzer Corps, the armoured reserve at Dulken",
+CR1189,C7756,1,observed_during,,,,,,,,,,
+CR1189,C7777,1,observed_during,,,,,,,,,,
+CR1190,C8002,1,observed_during,,,,,,,,,,
+CR1191,C8044,1,asserts_start,1944-11-27,1944-11-28,,,,,,,B-811 p. 16: put in again at once with LXXIV Corps on 27-28 November,narrative
+CR1191,C8060,1,asserts_start_and_end,1944-11-27,1944-11-28,,,1944-12-08,,,narrative,B-811 p. 24: under LXXIV Corps only until 8 December,narrative
+CR1192,C7062,1,asserts_start,1944-12-09,1944-12-18,,,,,,,LXXXI Corps order Ia 836/44 of 18 December: the corps holds the Rur east bank in the 47th Volksgrenadier Division sector; start the day after the LXXIV Corps period (B-811 p. 24),inferred
+CR1193,C7063,1,observed_during,,,,,,,,,,
+CR1194,C7065,1,observed_during,,,,,,,,,,
+CR1194,C7067,1,observed_during,,,,,,,,,,
+CR1043,C1765,2,asserts_end,,,,,1945-01-31,1945-01-07,,inferred,Inferred value: the brigade attacks with the LXIV Corps of the Nineteenth Army on 7 January; with the LXIV Corps relation it ends with January (Fifteenth Army reserve in February),inferred
+CR0775,C8610,1,asserts_end,,,,,1945-01-29,,,narrative,Riviera to the Rhine p. 548; Lexikon: Army Group Oberrhein dissolved on 29 January 1945,narrative
+CR1195,C8022,1,observed_during,,,,,,,,,,
+CR1195,C8400,1,observed_during,,,,,,,,,,
+CR1195,C8432,1,observed_during,,,,,,,,,,
+CR1196,C8481,1,asserts_start,1945-04-06,1945-04-08,,,,,,,"B-709: sent to LVIII Panzer Corps about 6 April, committed on 8 April",narrative
+CR1197,C7910,1,observed_during,,,,,,,,,,
+CR1197,C7696,1,observed_during,,,,,,,,,,
+CR1197,C7926,1,observed_during,,,,,,,,,,
+CR1198,C7768,1,observed_during,,,,,,,,,,
+CR1199,C7533,1,observed_during,,,,,,,,,,
+CR1199,C7543,1,observed_during,,,,,,,,,,
+CR1200,C7951,1,observed_during,,,,,,,,,,
+CR1201,C8125,1,observed_during,,,,,,,,,,
+CR1201,C8126,1,observed_during,,,,,,,,,,
+CR1202,C8072,1,observed_during,,,,,,,,,,
+CR1203,C8503,1,observed_during,,,,,,,,,,
+CR1203,C8482,1,observed_during,,,,,,,,,,
+CR1204,C7433,1,observed_during,,,,,,,,,,
+CR1204,C8028,1,observed_during,,,,,,,,,,
+CR1205,C7580,1,observed_during,,,,,,,,,,
+CR1206,C7965,1,observed_during,,,,,,,,,,
+CR1207,C7974,1,observed_during,,,,,,,,,,
+CR1207,C7683,1,observed_during,,,,,,,,,,
+CR1208,C7902,1,observed_during,,,,,,,,,,
+CR1208,C7904,1,asserts_end,,,,,1944-06-15,,,narrative,B-343 p. 7: about the middle of June 1944 the division leaves the corps for Normandy,narrative
+CR1209,C7086,1,observed_during,,,,,,,,,,
+CR1210,C7988,1,observed_during,,,,,,,,,,
+CR1211,C7931,1,observed_during,,,,,,,,,,
+CR1212,C8353,1,observed_during,,,,,,,,,,
+CR1213,C8354,1,observed_during,,,,,,,,,,
+CR1214,C8035,1,observed_during,,,,,,,,,,
+CR1215,C1635,1,observed_during,,,,,,,,,,
+CR1216,C7616,1,observed_during,,,,,,,,,,
+CR1216,C7688,1,observed_during,,,,,,,,,,
+CR1217,C8350,1,observed_during,,,,,,,,,,
+CR1217,C8351,1,observed_during,,,,,,,,,,
+CR1218,C8349,1,observed_during,,,,,,,,,,
+CR1219,C8403,1,observed_during,,,,,,,,,,

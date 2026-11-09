@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 22
+    "claims_count": 23
    }
   },
   {
@@ -12298,7 +12298,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nord",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -13998,7 +13998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -55438,7 +55438,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Hessen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79718,6 +79718,26 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Brandenburg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.108,
+     49.4939
+    ]
+   },
+   "properties": {
+    "place_id": "PL4002",
+    "name": "Le Havre, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 2
    }
   }

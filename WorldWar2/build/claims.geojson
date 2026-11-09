@@ -3901,6 +3901,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.108,
+     49.4939
+    ]
+   },
+   "properties": {
+    "claim_id": "C8944",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-017D",
+    "unit_name": "17th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL4002",
+    "location_name": "Le Havre, Seine-Maritime (Le Havre sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "17th Luftwaffe Field Division under LXXXI Corps",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R268;R002",
+    "source_locator": "R268: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.3336,
      49.1606
     ]
@@ -53750,6 +53791,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R692;R002",
     "source_locator": "R692: p. 104"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C8943",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-226D",
+    "unit_name": "226th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (Dunkirk sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "226th Infantry Division under LXVII Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R194;R002",
+    "source_locator": "R194: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.108,
+     49.4939
+    ]
+   },
+   "properties": {
+    "claim_id": "C8945",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-017D",
+    "unit_name": "17th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-15",
+    "place_id": "PL4002",
+    "location_name": "Le Havre, Seine-Maritime (Le Havre sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "17th Luftwaffe Field Division under LXVII Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R268;R002",
+    "source_locator": "R268: table 1944"
    }
   },
   {
@@ -116610,6 +116733,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.568,
+     53.2191
+    ]
+   },
+   "properties": {
+    "claim_id": "C8942",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-15",
+    "place_id": "PL0709",
+    "location_name": "Groningen, Groningen (Groningen sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "256th Volksgrenadier Division under LXXXIX Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R311;R002",
+    "source_locator": "R311: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9833,
      50.8833
     ]
@@ -154774,6 +154938,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R304;R002",
     "source_locator": "R304: Einsatz und Unterstellung, table of 1944, November row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8941",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-462D",
+    "unit_name": "462nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-15",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle (Metz sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "462nd Volksgrenadier Division under LXXXII Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R323;R001",
+    "source_locator": "R323: table 1944"
    }
   },
   {
@@ -315084,6 +315289,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: English typed p.-37- (Fold3 page 41); R859: German printed p.41 (Fold3 viewer page 148)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0546,
+     51.175
+    ]
+   },
+   "properties": {
+    "claim_id": "C8940",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-30",
+    "place_id": "PL2787",
+    "location_name": "Hemfurth-Edersee, Hessen (dam at the east end of the Eder-See (Hemfurth))",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "7th Armored Division of III Corps seizes the dam at the east end of the Eder-See",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 354"
    }
   },
   {

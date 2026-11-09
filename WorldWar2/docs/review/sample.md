@@ -103,20 +103,20 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R675 | general | Wikipedia: Siege of Dunkirk (1944-1945) | encyclopedia | https://en.wikipedia.org/wiki/Siege_of_Dunkirk_(1944%E2%80%931945) | section Siege |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R668: p. 368; R671: p. 343; R675: section Siege |
 
-### S07. C5899: French 1st Infantry Division (1st Free French Division), 1945-02-20
+### S07. C4507: French 2nd Armoured Division, 1944-12-05
 
-- **Unit:** French 1st Infantry Division (1st Free French Division) (`FR-INF-001D`), France, division; parent in the claim: `none`; commander field: unknown
-- **Claim:** `other` / `OP-CAMP-RHINELAND`; status preferred; confidence 0.3
-- **Activity:** French 1st Infantry Division (1st Free French Division) shown on the 12th Army Group situation map
-- **Place:** Illhaeusern, Haut-Rhin (`PL2372`, Grand Est, FR); point 48.1768, 7.4104 (claim override of the place point 48.1841, 7.4341); precision 10 km; point represents: main_body; qualifier: near Illhaeusern; coordinate source: R002: OpenStreetMap Nominatim (Illhaeusern, Haut-Rhin), searched 31 October 2026
+- **Unit:** French 2nd Armoured Division (`FR-ARM-002D`), France, division; parent in the claim: `none`; commander field: unknown
+- **Claim:** `other` / `OP-CAMP-RHINELAND`; status alternate; confidence 0.5; conflict group G084
+- **Activity:** French 2nd Armoured Division shown on the 12th Army Group situation map
+- **Place:** Holtzheim, Bas-Rhin (`PL2324`, Grand Est, FR); point 48.5626, 7.6319 (claim override of the place point 48.5596, 7.6432); precision 10 km; point represents: main_body; qualifier: near Holtzheim; coordinate source: R002: OpenStreetMap Nominatim (Holtzheim, Bas-Rhin), searched 31 October 2026
 - **Command relationships stated by the claim:** none
-- **Notes:** Event date: 12th Army Group situation map sheet cs000261 (situation 1200 hrs 20 February 1945) shows the division symbol labelled 001D for the French 1st Infantry Division (1st Free French Division) at this point. Event definition: a dated position on a contemporary Allied situation map read as the main body; the map shows no movement and the date is the map's situation time. Event support: one source family (12th Army Group situation maps). Location: Illhaeusern, Haut-Rhin (place PL2372) with a precision of 10 km. Location approximate: symbol centre georeferenced from 13 town junctions of the base sheet by an affine fit (about 1.6 km RMS, at most 4.9 km leave-one-out) and read 1.9 km from t [...]
-- **Sources cited** (the claim's own locator: R781: sheet cs000261 situation 1200 hrs 20 February 1945):
+- **Notes:** Event date: 12th Army Group situation map sheet cs000184 (situation 1200 hrs 5 December 1944) shows the division symbol labelled 2 FR for the French 2nd Armoured Division at this point. Event definition: a dated position on a contemporary Allied situation map read as the main body; the map shows no movement and the date is the map's situation time. Event support: one source family (12th Army Group situation maps). Location: Holtzheim, Bas-Rhin (place PL2324) with a precision of 10 km. Location approximate: symbol centre georeferenced from 13 town junctions of the base sheet by an affine fit (about 1.6 km RMS, at most 4.9 km leave-one-out) and read 0.9 km from the place point. Review (open qu [...]
+- **Sources cited** (the claim's own locator: R781: sheet cs000184 situation 1200 hrs 5 December 1944):
 
   | reference | role | title | type | link | page or locator |
   |---|---|---|---|---|---|
-  | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000261 situation 1200 hrs 20 February 1945 |
-  | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000261 situation 1200 hrs 20 February 1945 |
+  | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000184 situation 1200 hrs 5 December 1944 |
+  | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000184 situation 1200 hrs 5 December 1944 |
 
 ### S08. C1626: French II Corps, 1945-03-31
 
@@ -366,24 +366,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R670 | general | Ellis, Victory in the West, vol. I: The Battle of Normandy | official_history | https://archive.org/details/victory-west-vol-1 | p. 424 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R668: p. 229; R670: p. 424 |
 
-### S24. C0055: 51st (Highland) Infantry Division, 1944-06-08
-
-- **Unit:** 51st (Highland) Infantry Division (`UK-INF-051D`), UK, division; parent in the claim: `UK-COR-001C`; commander field: Major-General D.C. Bullen-Smith
-- **Claim:** `landing` / `OP-CAMP-NORMANDY`; status alternate; confidence 0.5; conflict group G010
-- **Activity:** completing landing in the beachhead
-- **Place:** Juno/Sword (`PL0181`, Lower Normandy, FR); point 49.3353, -0.4153; precision 10 km; point represents: sector_center; qualifier: landed via Juno; point = Juno Beach; coordinate source: R001: Wikipedia
-- **Command relationships stated by the claim:** assigned UK-COR-001C
-- **Notes:** Wikipedia Battle for Caen: 'not until D+7 (8 June) was all of the 51st (Highland) Division ashore' (D+7 would be 13 June; 8 June is D+2). Differs from the 6-7 June landing in the preferred row; may describe completion of landing rather than start. [Review (V-005): references added. R008 (Wikipedia, Allied forces in the Normandy campaign) lists the 51st (Highland) Infantry Division as landing on 6-7 June on Juno under Major-General D.C. Bullen-Smith. R072 (Wikipedia, 51st (Highland) Infantry Division) says most of the division landed on 7 June 1944 as part of British I Corps and lists Bullen-Smith as commander from August 1943 to July 1944. Nothing else changed.]
-- **Sources cited** (the claim's own locator: none):
-
-  | reference | role | title | type | link | page or locator |
-  |---|---|---|---|---|---|
-  | R013 | general | Wikipedia: Battle for Caen | encyclopedia | https://en.wikipedia.org/wiki/Battle_for_Caen |  |
-  | R072 | command_relationship | Wikipedia: 51st (Highland) Infantry Division | encyclopedia | https://en.wikipedia.org/wiki/51st_(Highland)_Infantry_Division |  |
-  | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
-  | R008 | location | Wikipedia: List of Allied forces in the Normandy campaign | encyclopedia | https://en.wikipedia.org/wiki/List_of_Allied_forces_in_the_Normandy_campaign |  |
-
-### S25. C0146: 21st Army Group, 1944-06-22
+### S24. C0146: 21st Army Group, 1944-06-22
 
 - **Unit:** 21st Army Group (`UK-AG-021G`), UK, army_group; parent in the claim: `ALL-SHAEF-000H`; commander field: General Sir Bernard Montgomery
 - **Claim:** `hq_move` / `OP-NEPTUNE`; status disputed; confidence 0.5; conflict group G006
@@ -399,7 +382,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R378 | general | Europe Remembers: General Montgomery's tactical HQ at Château de Creullet | monument_or_memorial | https://www.europeremembers.com/en/pois/2293/general-montgomerys-tactical-hq-at-chateau-de-creullet |  |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ |  |
 
-### S26. C2340: 11th Armoured Division, 1944-06-27
+### S25. C2340: 11th Armoured Division, 1944-06-27
 
 - **Unit:** 11th Armoured Division (`UK-ARM-011D`), UK, division; parent in the claim: `none`; commander field: unknown
 - **Claim:** `other` / `OP-CAMP-NORMANDY`; status preferred; confidence 0.5
@@ -414,7 +397,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000022 situation 1200 hrs 27 June 1944 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000022 situation 1200 hrs 27 June 1944 |
 
-### S27. C0205: 11th Armoured Division, 1944-06-29
+### S26. C0205: 11th Armoured Division, 1944-06-29
 
 - **Unit:** 11th Armoured Division (`UK-ARM-011D`), UK, division; parent in the claim: `UK-COR-008C`; commander field: Major-General George P.B. Roberts
 - **Claim:** `withdrawal` / `OP-EPSOM`; status preferred; confidence 0.7
@@ -431,7 +414,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R446 | general | Cross-Channel Attack ch. 10 | official_history | https://www.ibiblio.org/hyperwar/USA/USA-E-XChannel/USA-E-XChannel-10.html |  |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php |  |
 
-### S28. C1438: XXX Corps, 1944-08-04
+### S27. C1438: XXX Corps, 1944-08-04
 
 - **Unit:** XXX Corps (`UK-COR-030C`), UK, corps; parent in the claim: `UK-ARMY-002A`; commander field: Lieutenant-General Brian Horrocks
 - **Claim:** `command_change` / `OP-BLUECOAT`; status preferred; confidence 0.5
@@ -445,6 +428,21 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   |---|---|---|---|---|---|
   | R670 | general | Ellis, Victory in the West, vol. I: The Battle of Normandy | official_history | https://archive.org/details/victory-west-vol-1 | pp. 400, 401, 402, 409 |
   | R001 | location | Wikipedia article coordinates (MediaWiki API) | gazetteer_geocoder | https://en.wikipedia.org/w/api.php | R670: pp. 400, 401, 402, 409 |
+
+### S28. C1463: I Airborne Corps, 1944-09-17
+
+- **Unit:** I Airborne Corps (`UK-ABN-001C`), UK, corps; parent in the claim: `ALL-FAAA-001A`; commander field: Lieutenant-General F. A. M. Browning
+- **Claim:** `landing` / `OP-MARKET-GARDEN`; status preferred; confidence 0.7
+- **Activity:** Market Garden: corps headquarters lands by glider and sets up near Groesbeek; no contact with the 1st Division
+- **Place:** Groesbeek, Gelderland (`PL0686`, Gelderland, NL); point 51.7741, 5.9305; precision 3 km; point represents: headquarters; qualifier: -; coordinate source: R002: OpenStreetMap Nominatim (Groesbeek, Netherlands)
+- **Command relationships stated by the claim:** assigned ALL-FAAA-001A
+- **Notes:** Event date: 17 September 1944 (Ellis, vol. II, pp. 34, 35). Event definition: On 17 September General Browning's I Airborne Corps Headquarters, in gliders, is flown in by the Royal Air Force and set up near Groesbeek; communication is established with England and with Second Army but not with the 1st or 101st Airborne Divisions; the corps commands the British 1st and the United States 82nd and 101st Airborne Divisions (pp. 27, 30 and 34-35). Event support: one source family (Ellis, the British official history). Ellis, Victory in the West, vol. II, p. 34: "Browning's I Airborne Corps Headquarters, in gliders"; p. 35: "was flown in by the Royal Air Force and set up near Groesbeek". Location: [...]
+- **Sources cited** (the claim's own locator: R671: pp. 34, 35):
+
+  | reference | role | title | type | link | page or locator |
+  |---|---|---|---|---|---|
+  | R671 | general | Ellis, Victory in the West, vol. II: The Defeat of Germany | official_history | https://archive.org/details/victory-west-vol-2 | pp. 34, 35 |
+  | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R671: pp. 34, 35 |
 
 ### S29. C7527: 1st Special Service (Commando) Brigade, 1945-02-28
 

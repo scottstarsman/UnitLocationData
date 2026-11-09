@@ -19,8 +19,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | France | division | 0 | 0 | 12 | 12 | 10 | 177 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 65 |
 | Germany | army | 0 | 0 | 17 | 17 | 10 | 338 |
-| Germany | corps | 3 | 0 | 44 | 47 | 41 | 804 |
-| Germany | division | 5 | 0 | 130 | 135 | 112 | 2490 |
+| Germany | corps | 1 | 0 | 46 | 47 | 41 | 841 |
+| Germany | division | 0 | 0 | 135 | 135 | 112 | 2524 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 88 |
 | Germany | regiment/battle_group | 0 | 0 | 36 | 36 | 3 | 82 |
 | Germany | battalion | 1 | 0 | 5 | 6 | 0 | 7 |
@@ -40,7 +40,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **14** | **0** | **412** | **426** | **259** | **8848** |
+| **All** | | **7** | **0** | **419** | **426** | **259** | **8919** |
 
 ## Operations
 
@@ -48,38 +48,39 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 9 | 6 | 91 |
-| campaign | 9 | 9 | 7140 |
+| umbrella | 9 | 6 | 118 |
+| campaign | 9 | 9 | 7184 |
 | operation | 33 | 33 | 783 |
 | battle | 20 | 20 | 549 |
 | phase | 4 | 4 | 285 |
-| **All** | **75** | **72** | **8848** |
+| **All** | **75** | **72** | **8919** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3953 places and 183 alias names for 8848 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 3984 places and 183 alias names for 8919 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3849 | 8639 |
+| point | 3880 | 8710 |
 | area | 86 | 189 |
 | line | 18 | 20 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1543 | 3278 |
-| Germany (DE) | 1406 | 3048 |
-| Netherlands (NL) | 487 | 1388 |
-| Belgium (BE) | 364 | 811 |
+| France (FR) | 1544 | 3289 |
+| Germany (DE) | 1419 | 3082 |
+| Netherlands (NL) | 487 | 1390 |
+| Belgium (BE) | 365 | 816 |
 | Luxembourg (LU) | 89 | 233 |
 | Austria (AT) | 27 | 41 |
 | Czechia (CZ) | 14 | 22 |
+| Russia (RU) | 11 | 12 |
 | United Kingdom (GB) | 6 | 9 |
-| Poland (PL) | 5 | 5 |
-| Russia (RU) | 4 | 4 |
-| Ukraine (UA) | 3 | 3 |
+| Poland (PL) | 8 | 8 |
+| Belarus (BY) | 5 | 5 |
+| Ukraine (UA) | 4 | 5 |
+| Denmark (DK) | 1 | 2 |
 | Moldova (MD) | 1 | 2 |
-| Denmark (DK) | 1 | 1 |
 | Hungary (HU) | 1 | 1 |
 | Lithuania (LT) | 1 | 1 |
 | Slovakia (SK) | 1 | 1 |

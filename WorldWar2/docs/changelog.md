@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## fms-german-b709-b730: FMS B-730 German original (Brandenberger) as R860 (8 November 2026)
+
+- **Source:** `R860` (new), German original of FMS B-730, *Der Kampf der 7. Armee im Verband der Heeresgruppe B …*, 1.–13. (20.) September 1944. Viewer pages 1–139 read (narrative through p.106; Skizzen 1–7 through p.139). Same FMS family as English `R856`: no confidence raises. Sketch-derived rows at most 0.3.
+- **Reference R856 (extended):** reliability/full_citation updated — German original now R860 (was unread).
+- **New place:** `PL3845` Saint-Denis (Mons), Hainaut.
+- **New claims (3):** `C8505` (Seventh Army CP St-Denis 1 Sep, text 0.5; claim-key with `C8438`); `C8506` (49th Division Westwall entry 19 Sep, Skizze 7, 0.3); `C8507` (I SS Panzer Corps CP Gerolstein 14 Sep, Skizze 7, 0.3).
+- **Supporting citations (30 rows, confidence unchanged):** `R860` appended to all prior R856 rows (`C8438`–`C8462` set and the earlier rows that already cited R856: `C0865`–`C0868`, `C7084`).
+- **Not entered / roadmap 348:** Kampfgruppe Piebig (spelling); LXXIV vs LXXXIV re-parenting; 2. SS “Weinheim” sketch reading; assault-gun brigade 394; orphans; command relations. **Roadmap 347** (B-709 German 112–132) left open.
+- Scenario 198. Next free: `C8508`, `PL3846`, `R861`, `CR1084`, `G078`, scenario 199, roadmap 349.
+
 ## fms-german-b709-b730: FMS B-709 German original (Ulms and Reuther) as R859 (8 November 2026)
 
 - **Source:** `R859` (new), German original of FMS B-709, *Das XII. SS-A.K. an der Rheinfront und im Ruhrkessel, 3.3. bis 16.4.1945*, same Fold3 item as the English translation `R855`. German narrative read 8 November 2026 (viewer pages 106–111 and 133–198; **viewer 112–132 unread**). Maps were not re-read (already under R855). Same FMS family as R855 and B-410 (`R852`): no confidence raises.

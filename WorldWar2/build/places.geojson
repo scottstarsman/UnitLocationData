@@ -10978,7 +10978,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -22578,7 +22578,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -76578,6 +76578,26 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.0277,
+     50.4929
+    ]
+   },
+   "properties": {
+    "place_id": "PL3845",
+    "name": "Saint-Denis (Mons), Hainaut",
+    "alt_names": "St-Denis (north of Mons)",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Hainaut",
     "claims_count": 1
    }
   }

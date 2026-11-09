@@ -744,6 +744,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C8838",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1942-10-10",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Division Nr. 405 moved to Strasbourg",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1942-10-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R176;R001",
+    "source_locator": "R176: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.838,
      47.0239
     ]
@@ -1147,6 +1188,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R270;R002",
     "source_locator": "R270: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.1315,
+     51.9772
+    ]
+   },
+   "properties": {
+    "claim_id": "C8856",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-249D",
+    "unit_name": "249th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1943-03-22",
+    "place_id": "PL3588",
+    "location_name": "Hoek van Holland, Zuid-Holland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "249th Infantry Division set up as a cover name for the Hoek van Holland troops",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1943-03-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R199;R002",
+    "source_locator": "R199: Einsatz und Unterstellung"
    }
   },
   {
@@ -98242,6 +98324,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.9318,
+     48.5488
+    ]
+   },
+   "properties": {
+    "claim_id": "C8839",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-26",
+    "place_id": "PL1668",
+    "location_name": "Petitmont, Meurthe-et-Moselle (near Petitmont)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Division Nr. 405 shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000113 situation 1200 hrs 26 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5113,
      48.8231
     ]
@@ -105943,6 +106066,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 382"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9387,
+     48.5516
+    ]
+   },
+   "properties": {
+    "claim_id": "C8840",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-03",
+    "place_id": "PL1668",
+    "location_name": "Petitmont, Meurthe-et-Moselle (near Petitmont)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Division Nr. 405 shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000120 situation 1200 hrs 3 October 1944"
    }
   },
   {
@@ -120505,6 +120669,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1344,
+     48.5526
+    ]
+   },
+   "properties": {
+    "claim_id": "C8841",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-17",
+    "place_id": "PL2289",
+    "location_name": "Turquestein-Blancrupt, Moselle (near Turquestein-Blancrupt)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Division Nr. 405 shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R782",
+    "source_locator": "R781: sheet cs000134 situation 1200 hrs 17 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3997,
      51.2211
     ]
@@ -127632,6 +127837,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 398"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1579,
+     48.5725
+    ]
+   },
+   "properties": {
+    "claim_id": "C8842",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-24",
+    "place_id": "PL2124",
+    "location_name": "Glandmont (Abreschviller), Moselle (near Glandmont (Abreschviller))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Division Nr. 405 shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000141 situation 1200 hrs 24 October 1944"
    }
   },
   {
@@ -151986,6 +152232,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R825;R002",
     "source_locator": "R825: German p.4 and 5 (Fold3 page 8 and 9)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5859,
+     48.3924
+    ]
+   },
+   "properties": {
+    "claim_id": "C8843",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL2334",
+    "location_name": "Westhouse, Bas-Rhin (near Westhouse)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Division Nr. 405 shown on the 12th Army Group situation map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R781;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
    }
   },
   {
@@ -241742,6 +242029,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.989,
+     48.7733
+    ]
+   },
+   "properties": {
+    "claim_id": "C8827",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-30",
+    "place_id": "PL3956",
+    "location_name": "Dalhunden, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Division Nr. 905 command post at Dalhunden",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.8842,
      48.6931
     ]
@@ -243259,6 +243587,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.9517,
+     48.7631
+    ]
+   },
+   "properties": {
+    "claim_id": "C8828",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL3957",
+    "location_name": "Drusenheim, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Division Nr. 905 pulled back to the line Drusenheim wood - south edge of Drusenheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R783;R002",
+    "source_locator": "R178: Einsatz und Unterstellung, table of 1945, February row; R783: frame 86 (PDF page 89), LXXXIX Corps situation of 7 February 1945 (copy filed with the 47th VGD papers)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3556,
      48.0817
     ]
@@ -243826,6 +244195,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R809;R819;R002",
     "source_locator": "R809: German p.20, English p.22; R819: German p.14 (Fold3 image 38)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.905,
+     48.8005
+    ]
+   },
+   "properties": {
+    "claim_id": "C8829",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-05",
+    "place_id": "PL2515",
+    "location_name": "Schirrhein, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "Division Nr. 905 pulled back to the line Schirrhein - Drusenheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
    }
   },
   {
@@ -280692,6 +281102,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.236,
+     52.9405
+    ]
+   },
+   "properties": {
+    "claim_id": "C8846",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-HAMBURG",
+    "unit_name": "Infanterie-Division Hamburg (324th Infantry Division)",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL0777",
+    "location_name": "Verden (Aller), Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Infanterie-Division Hamburg formed, staff at Verden",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R238;R002",
+    "source_locator": "R238: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5667,
      51.3333
     ]
@@ -289835,6 +290286,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6171,
+     51.6577
+    ]
+   },
+   "properties": {
+    "claim_id": "C8847",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-HAMBURG",
+    "unit_name": "Infanterie-Division Hamburg (324th Infantry Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL0632",
+    "location_name": "Wesel, North Rhine-Westphalia (front at Wesel)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Infanterie-Division Hamburg arrives at the front by Wesel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R238;R002",
+    "source_locator": "R238: Einsatz und Unterstellung, table of 1945, 7 March row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -290443,6 +290935,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R370;R002",
     "source_locator": "R370: Assignment and Attachment to Higher Units, row 12 Mar 45, and Command Posts, row 12 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9044,
+     48.7557
+    ]
+   },
+   "properties": {
+    "claim_id": "C8830",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL3958",
+    "location_name": "Rohrwiller, Bas-Rhin (sector south of the boundary Lauterbourg - Rohrwiller)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division Nr. 905 holds the sector south of its boundary with the 257th Volksgrenadier Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R783;R002",
+    "source_locator": "R783: frames 6-7 (PDF pages 9-10), Gen.Kdo XC A.K. order of 12 March 1945 (copy filed with the 47th VGD papers)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6812,
+     51.5975
+    ]
+   },
+   "properties": {
+    "claim_id": "C8848",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-HAMBURG",
+    "unit_name": "Infanterie-Division Hamburg (324th Infantry Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-12",
+    "place_id": "PL3965",
+    "location_name": "Voerde (Niederrhein), Nordrhein-Westfalen (Wesel-Emscher sector)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.7,
+    "event_type": "other",
+    "current_activity": "Division Hamburg relieves the 190th Division in the Wesel-Emscher sector",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R840;R238;R002",
+    "source_locator": "R840: German p.1 (Fold3 page 15); R238: Einsatz und Unterstellung"
    }
   },
   {
@@ -296805,6 +297379,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0572,
+     48.8014
+    ]
+   },
+   "properties": {
+    "claim_id": "C8831",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-15",
+    "place_id": "PL2548",
+    "location_name": "Fort-Louis, Bas-Rhin",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Nr. 905 in heavy defensive fighting at Fort-Louis",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1667,
      50.1469
     ]
@@ -297003,6 +297618,47 @@
     "location_temporal_offset_days": -8,
     "reference_ids": "R345;R782",
     "source_locator": "R345: Assignment and Attachment to Higher Units, row 16 Mar 45, and Command Posts, row 8 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0546,
+     48.8441
+    ]
+   },
+   "properties": {
+    "claim_id": "C8832",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-16",
+    "place_id": "PL3959",
+    "location_name": "Roppenheim, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Division Nr. 905 command post moves from Fort-Louis to Roppenheim",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
    }
   },
   {
@@ -297502,6 +298158,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0989,
+     48.9097
+    ]
+   },
+   "properties": {
+    "claim_id": "C8833",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL3960",
+    "location_name": "Schaffhouse-près-Seltz, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Division Nr. 905 command post at Schaffhouse-près-Seltz",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.5743,
      49.8314
     ]
@@ -297577,6 +298274,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R001",
     "source_locator": "R686: p. 413"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9445,
+     49.0366
+    ]
+   },
+   "properties": {
+    "claim_id": "C8834",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-18",
+    "place_id": "PL1051",
+    "location_name": "Wissembourg, Bas-Rhin (Lauter sector east of Altenstadt)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Nr. 905 takes over a West Wall sector on the Lauter by Wissembourg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
    }
   },
   {
@@ -297700,6 +298438,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R542;R001",
     "source_locator": "R542: p. 265"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9708,
+     49.0704
+    ]
+   },
+   "properties": {
+    "claim_id": "C8835",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-19",
+    "place_id": "PL3961",
+    "location_name": "Oberotterbach, Rheinland-Pfalz",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Nr. 905 stops American breakthroughs at Oberotterbach and Steinfeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
    }
   },
   {
@@ -302709,6 +303488,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0369,
+     49.0483
+    ]
+   },
+   "properties": {
+    "claim_id": "C8836",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-21",
+    "place_id": "PL3962",
+    "location_name": "Steinfeld (Pfalz), Rheinland-Pfalz",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Division Nr. 905 fighting in the Steinfeld area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3603,
      49.8556
     ]
@@ -302948,6 +303768,88 @@
     "location_temporal_offset_days": -5,
     "reference_ids": "R345;R002",
     "source_locator": "R345: Assignment and Attachment to Higher Units, row 22 Mar 45, and Command Posts, row 17 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7345,
+     51.5624
+    ]
+   },
+   "properties": {
+    "claim_id": "C8849",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-HAMBURG",
+    "unit_name": "Infanterie-Division Hamburg (324th Infantry Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL0986",
+    "location_name": "Dinslaken, Nordrhein-Westfalen (north of Dinslaken)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division Hamburg staff under LXVII Corps north of Dinslaken",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.5 (Fold3 image 64), Skizze 1 (Fold3 image 125)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6116,
+     52.4574
+    ]
+   },
+   "properties": {
+    "claim_id": "C8858",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-703D",
+    "unit_name": "703rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-22",
+    "place_id": "PL3968",
+    "location_name": "IJmuiden, Noord-Holland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "703rd Infantry Division set up as a cover name for the troops of Festung IJmuiden",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R225;R002",
+    "source_locator": "R225: Einsatz und Unterstellung"
    }
   },
   {
@@ -305654,6 +306556,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R822;R002",
     "source_locator": "R822: German p.-7- and -8- (Fold3 page 85 and 86)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.5245,
+     49.0533
+    ]
+   },
+   "properties": {
+    "claim_id": "C8837",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-905",
+    "unit_name": "Division Nr. 905",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-26",
+    "place_id": "PL3963",
+    "location_name": "Weingarten (Baden), Baden-Württemberg",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "remnants of Division Nr. 905 merged into the 16th Volksgrenadier Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R178;R002",
+    "source_locator": "R178: Einsatz und Unterstellung"
    }
   },
   {
@@ -312713,6 +313656,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.0488,
+     48.5197
+    ]
+   },
+   "properties": {
+    "claim_id": "C8844",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL3964",
+    "location_name": "Bottenau, Baden-Württemberg",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Division Nr. 405 command post at Bottenau south-west of Oberkirch",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R176;R002",
+    "source_locator": "R779: German p.8 (Fold3 image 8), Skizze 1 (Fold3 page 200); R176: table of 1945, February and April rows"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.0403,
      51.755
     ]
@@ -318166,6 +319150,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     13.0454,
+     52.5399
+    ]
+   },
+   "properties": {
+    "claim_id": "C8851",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-POTSDAM",
+    "unit_name": "Infanterie-Division Potsdam",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL3966",
+    "location_name": "Döberitz (Truppenübungsplatz), Brandenburg",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "activation",
+    "current_activity": "Infanterie-Division Döberitz (from 8 April Potsdam) formed at the Döberitz training area",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R866;R002",
+    "source_locator": "R866: Einsatz und Unterstellung, table of 1945, 4 April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1833,
      51.75
     ]
@@ -320455,6 +321480,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R528;R002",
     "source_locator": "R528: Assignment and Attachment to Higher Units, row 8 Apr 45, and Command Posts, row 8 Apr 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "claim_id": "C8852",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-POTSDAM",
+    "unit_name": "Infanterie-Division Potsdam",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL0649",
+    "location_name": "Blankenburg (Harz), Sachsen-Anhalt (sector between Wernigerode and Quedlinburg)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.7,
+    "event_type": "relocation",
+    "current_activity": "Infanterie-Division Potsdam moved to the Harz for a sector between Wernigerode and Quedlinburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R866;R567;R002",
+    "source_locator": "R866: Einsatz und Unterstellung, table of 1945, 8 April row; R567: p. 395"
    }
   },
   {
@@ -326858,6 +327924,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1858,
+     51.3992
+    ]
+   },
+   "properties": {
+    "claim_id": "C8850",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-HAMBURG",
+    "unit_name": "Infanterie-Division Hamburg (324th Infantry Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL0462",
+    "location_name": "Hattingen, North Rhine-Westphalia (west edge of Hattingen)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Division Hamburg links with the 2nd Parachute Division at the west edge of Hattingen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R840;R001",
+    "source_locator": "R840: German pp.3-4 (Fold3 pages 17-18)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9594,
+     51.7228
+    ]
+   },
+   "properties": {
+    "claim_id": "C8853",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-POTSDAM",
+    "unit_name": "Infanterie-Division Potsdam",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL3967",
+    "location_name": "Treseburg, Sachsen-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Infanterie-Division Potsdam command post at Treseburg in the Bode valley",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R866;R002",
+    "source_locator": "R866: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8667,
      51.9667
     ]
@@ -330220,6 +331368,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.1315,
+     51.9772
+    ]
+   },
+   "properties": {
+    "claim_id": "C8857",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-249D",
+    "unit_name": "249th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL3588",
+    "location_name": "Hoek van Holland, Zuid-Holland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "249th Infantry Division (fortress Hoek van Holland) listed under XXX Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R199;R002",
+    "source_locator": "R199: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6116,
+     52.4574
+    ]
+   },
+   "properties": {
+    "claim_id": "C8859",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-703D",
+    "unit_name": "703rd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-15",
+    "place_id": "PL3968",
+    "location_name": "IJmuiden, Noord-Holland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "703rd Infantry Division (Festung IJmuiden) listed under the 25th Army",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R225;R002",
+    "source_locator": "R225: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -331238,6 +332468,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R864;R002",
     "source_locator": "R864: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9429,
+     48.4696
+    ]
+   },
+   "properties": {
+    "claim_id": "C8845",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-DIV-405",
+    "unit_name": "Division Nr. 405",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL2369",
+    "location_name": "Offenburg, Baden-Württemberg (south of Offenburg)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Division Nr. 405 outflanked again while falling back south from Offenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R779;R002",
+    "source_locator": "R779: German p.71 (Fold3 image 71)"
    }
   },
   {
@@ -335468,6 +336739,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "claim_id": "C8854",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-POTSDAM",
+    "unit_name": "Infanterie-Division Potsdam",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL0649",
+    "location_name": "Blankenburg (Harz), Sachsen-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "hq_move",
+    "current_activity": "Infanterie-Division Potsdam command post moves to Blankenburg; division to LXVII Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R866;R835;R002",
+    "source_locator": "R866: Einsatz und Unterstellung; R835: English pp.20-23 (Fold3 pages 116-119), part C"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.375,
      51.34
     ]
@@ -337429,6 +338741,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R810;R002",
     "source_locator": "R810: German p.7, English p.7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "claim_id": "C8855",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-POTSDAM",
+    "unit_name": "Infanterie-Division Potsdam",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL0649",
+    "location_name": "Blankenburg (Harz), Sachsen-Anhalt",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Infanterie-Division Potsdam dissolved by its commander",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R866;R002",
+    "source_locator": "R866: Einsatz und Unterstellung"
    }
   },
   {

@@ -63383,8 +63383,49 @@
     "location_date": "1944-09-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-3- (Fold3 page 154)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-3- (Fold3 page 154); R860: German printed IX / viewer p.11 (CP list), typed p.3 (viewer p.14)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.0277,
+     50.4929
+    ]
+   },
+   "properties": {
+    "claim_id": "C8505",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-007A",
+    "unit_name": "Seventh Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL3845",
+    "location_name": "Saint-Denis (Mons), Hainaut (about 10 km north of Mons (German CP list; same day as Flines C8438))",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Seventh Army command post listed at St-Denis, about 10 km north of Mons, on 1 September (with Flines)",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R860;R856;R002",
+    "source_locator": "R860: German printed IX / viewer p.11 (CP list); R856: English Sketch 1 names St Denis (different date on that sketch)"
    }
   },
   {
@@ -64162,8 +64203,8 @@
     "location_date": "1944-09-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-5- (Fold3 page 156)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-5- (Fold3 page 156); R860: German printed IX / viewer p.11, typed p.6 (viewer p.17)"
    }
   },
   {
@@ -64736,8 +64777,8 @@
     "location_date": "1944-09-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-7- (Fold3 page 158)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-7- (Fold3 page 158); R860: German printed IX / viewer p.11 (Hex 3–6 Sep), typed narrative about 3 Sep"
    }
   },
   {
@@ -65556,8 +65597,8 @@
     "location_date": "1944-09-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-9- (Fold3 page 160)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-9- (Fold3 page 160); R860: German typed pp.8–9 (viewer pp.19–20)"
    }
   },
   {
@@ -65597,8 +65638,8 @@
     "location_date": "1944-09-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-9-, -10- (Fold3 page 160, 161)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-9-, -10- (Fold3 page 160, 161); R860: German typed pp.8–9 (viewer pp.19–20)"
    }
   },
   {
@@ -65638,8 +65679,8 @@
     "location_date": "1944-09-04",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-10-, -16- (Fold3 page 161, 167)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-10-, -16- (Fold3 page 161, 167); R860: German typed pp.6–10 (viewer pp.17–21)"
    }
   },
   {
@@ -70394,8 +70435,8 @@
     "location_date": "1944-09-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-33- (Fold3 page 184)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-33- (Fold3 page 184); R860: German printed IX / viewer p.11 (Chaudfontaine 6–7 Sep), printed p.33 (viewer p.44)"
    }
   },
   {
@@ -70435,8 +70476,8 @@
     "location_date": "1944-09-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-34- (Fold3 page 185)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-34- (Fold3 page 185); R860: German printed p.33 (viewer p.44), printed IX / viewer p.11 (Limbourg 7–9 Sep)"
    }
   },
   {
@@ -70476,8 +70517,8 @@
     "location_date": "1944-09-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-33- (Fold3 page 184)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-33- (Fold3 page 184); R860: German printed pp.35–36 (viewer pp.46–47)"
    }
   },
   {
@@ -71214,8 +71255,8 @@
     "location_date": "1944-09-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-38-, -39- (Fold3 page 189, 190)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-38-, -39- (Fold3 page 189, 190); R860: German printed pp.36– (viewer p.47+), narrative of 8 Sep Maas bridgehead"
    }
   },
   {
@@ -71255,8 +71296,8 @@
     "location_date": "1944-09-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-39- (Fold3 page 190)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-39- (Fold3 page 190); R860: German printed p.36 (viewer p.47)"
    }
   },
   {
@@ -71747,8 +71788,8 @@
     "location_date": "1944-09-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-45- (Fold3 page 196)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-45- (Fold3 page 196); R860: German printed IX / viewer p.11 (Monschau 9–11 Sep)"
    }
   },
   {
@@ -72403,8 +72444,8 @@
     "location_date": "1944-09-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-50-, -53- (Fold3 page 201, 204)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-50-, -53- (Fold3 page 201, 204); R860: German narrative about 8–10 Sep (viewer ~47–59)"
    }
   },
   {
@@ -72444,8 +72485,8 @@
     "location_date": "1944-09-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-51-, -57- (Fold3 page 202, 208)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-51-, -57- (Fold3 page 202, 208); R860: German narrative about 10 Sep (viewer ~59+)"
    }
   },
   {
@@ -73264,8 +73305,8 @@
     "location_date": "1944-09-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-57- (Fold3 page 208)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-57- (Fold3 page 208); R860: German printed IX / viewer p.11 (Lager Falke from 11 Sep)"
    }
   },
   {
@@ -73715,8 +73756,8 @@
     "location_date": "1944-09-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R442;R856;R001",
-    "source_locator": "R442: p. 98, 103; R856: English typed p.-69- (Fold3 page 220)"
+    "reference_ids": "R442;R856;R860;R001",
+    "source_locator": "R442: p. 98, 103; R856: English typed p.-69- (Fold3 page 220); R860: German narrative about 12 Sep LXXXI sector"
    }
   },
   {
@@ -73756,8 +73797,8 @@
     "location_date": "1944-09-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R442;R616;R856;R001",
-    "source_locator": "R442: p. 98, 103; R616: table of 1944, September row; R856: English typed p.-53-, -54- (Fold3 page 204, 205)"
+    "reference_ids": "R442;R616;R856;R860;R001",
+    "source_locator": "R442: p. 98, 103; R616: table of 1944, September row; R856: English typed p.-53-, -54- (Fold3 page 204, 205); R860: German narrative about 8–13 Sep Maas / Maastricht"
    }
   },
   {
@@ -76462,8 +76503,8 @@
     "location_date": "1944-09-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-69-, -70- (Fold3 page 220, 221)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-69-, -70- (Fold3 page 220, 221); R860: German narrative about 11–12 Sep"
    }
   },
   {
@@ -76503,8 +76544,8 @@
     "location_date": "1944-09-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-71- (Fold3 page 222)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-71- (Fold3 page 222); R860: German narrative about mid-September Westwall / Schevenhütte sector"
    }
   },
   {
@@ -76544,8 +76585,8 @@
     "location_date": "1944-09-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-74- (Fold3 page 225)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-74- (Fold3 page 225); R860: German narrative / Skizze 6–7 (viewer ~131–139)"
    }
   },
   {
@@ -76913,8 +76954,8 @@
     "location_date": "1944-09-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-82-, -86- (Fold3 page 233, 237)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-82-, -86- (Fold3 page 233, 237); R860: German printed pp.75–77 (viewer pp.86–88), Skizze 7 (116. Pz.Div. 12.9.)"
    }
   },
   {
@@ -76954,8 +76995,8 @@
     "location_date": "1944-09-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-72-, -87- (Fold3 page 223, 238)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-72-, -87- (Fold3 page 223, 238); R860: German printed pp.75–77 (viewer pp.86–88), Skizze 7 (9. Pz.Div. 12.9.)"
    }
   },
   {
@@ -77241,8 +77282,8 @@
     "location_date": "1944-09-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-83-, -88- (Fold3 page 234, 239)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-83-, -88- (Fold3 page 234, 239); R860: German Skizze 7 (347. Div. 14.9.), narrative about 14 Sep"
    }
   },
   {
@@ -77282,8 +77323,49 @@
     "location_date": "1944-09-14",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-102- (Fold3 page 253)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-102- (Fold3 page 253); R860: German Skizze 7 (I. SS-Pz.K. / Ormont sector ~14.9.)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6619,
+     50.2234
+    ]
+   },
+   "properties": {
+    "claim_id": "C8507",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-09-14",
+    "place_id": "PL1142",
+    "location_name": "Gerolstein, Rhineland-Palatinate (Skizze 7 command-post symbol (14.9.))",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "I SS Panzer Corps command post marked at Gerolstein on 14 September (Skizze 7)",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R860;R002",
+    "source_locator": "R860: German Skizze 7 (viewer pp.137-139), I. SS-Pz.K. near Gerolstein (14.9.)"
    }
   },
   {
@@ -79906,8 +79988,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R441;R856;R002",
-    "source_locator": "R441: p. 87; R856: English typed p.-71- (Fold3 page 222)"
+    "reference_ids": "R441;R856;R860;R002",
+    "source_locator": "R441: p. 87; R856: English typed p.-71- (Fold3 page 222); R860: German narrative about mid-September Aachen / Hürtgen approaches"
    }
   },
   {
@@ -81054,8 +81136,8 @@
     "location_date": "1944-09-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R442;R856;R002",
-    "source_locator": "R442: p. 109-112; R856: English typed p.-98- (Fold3 page 249)"
+    "reference_ids": "R442;R856;R860;R002",
+    "source_locator": "R442: p. 109-112; R856: English typed p.-98- (Fold3 page 249); R860: German printed p.87 (viewer p.99), Skizze 7 (183. V.G.D. 18.9.)"
    }
   },
   {
@@ -81546,8 +81628,8 @@
     "location_date": "1944-09-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-98- (Fold3 page 249)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-98- (Fold3 page 249); R860: German printed p.87 (viewer p.99), Skizze 7 (183. V.G.D. 18.9.)"
    }
   },
   {
@@ -81587,8 +81669,8 @@
     "location_date": "1944-09-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: Sketch 7 (Fold3 page 266)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: Sketch 7 (Fold3 page 266); R860: German Skizze 7 (183. V.G.D. 18.9.), printed p.87–88"
    }
   },
   {
@@ -85277,8 +85359,49 @@
     "location_date": "1944-09-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R856;R002",
-    "source_locator": "R856: English typed p.-100- (Fold3 page 251)"
+    "reference_ids": "R856;R860;R002",
+    "source_locator": "R856: English typed p.-100- (Fold3 page 251); R860: German printed pp.87–88 (viewer pp.99–100)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8506",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-049D",
+    "unit_name": "49th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia (Westwall entry date on Skizze 7 (representative point Geilenkirchen sector))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "49th Infantry Division marked entering the Westwall on 19 September (Skizze 7)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R860;R002",
+    "source_locator": "R860: German Skizze 7 (viewer pp.137-139), label 49. Div. (19.9.)"
    }
   },
   {
@@ -85810,8 +85933,8 @@
     "location_date": "1944-09-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R856;R002",
-    "source_locator": "R784: image 1065 (NAID 271848586), stamped page 489, HGr B Ia 759x/44 g.Kdos (Mittagsmeldung) of 20 September 1944; R856: English typed p.-100- (Fold3 page 251)"
+    "reference_ids": "R784;R856;R860;R002",
+    "source_locator": "R784: image 1065 (NAID 271848586), stamped page 489, HGr B Ia 759x/44 g.Kdos (Mittagsmeldung) of 20 September 1944; R856: English typed p.-100- (Fold3 page 251); R860: German printed pp.87–88 (viewer pp.99–100)"
    }
   },
   {
@@ -269859,8 +269982,8 @@
     "location_date": "1945-03-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R852;R855;R002",
-    "source_locator": "R852: German p.39 (Fold3 image 108); R855: English typed p.-1- (Fold3 page 5), English typed p.-2- (Fold3 page 6)"
+    "reference_ids": "R852;R855;R859;R002",
+    "source_locator": "R852: German p.39 (Fold3 image 108); R855: English typed p.-1- (Fold3 page 5), English typed p.-2- (Fold3 page 6); R859: German printed p.2 (Fold3 viewer page 109), German printed pp.5, 7 (Fold3 viewer pages 112, 114)"
    }
   },
   {
@@ -271212,8 +271335,8 @@
     "location_date": "1945-03-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-3- (Fold3 page 7), Anlage 2 sketch, Fold3 page 199"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-3- (Fold3 page 7), Anlage 2 sketch, Fold3 page 199; R859: German printed p.4 (Fold3 viewer page 111)"
    }
   },
   {
@@ -277813,8 +277936,8 @@
     "location_date": "1945-03-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18); R859: German printed pp.35, 54-55 (Fold3 viewer pages 142, 160-161), German printed pp.11-16 (Fold3 viewer pages 118-123)"
    }
   },
   {
@@ -277854,8 +277977,8 @@
     "location_date": "1945-03-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18); R859: German printed pp.42, 52 (Fold3 viewer pages 149, 158), German printed p.15 (Fold3 viewer page 122)"
    }
   },
   {
@@ -278510,8 +278633,8 @@
     "location_date": "1945-03-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18), Anlage 4 and 5 sketches, Fold3 pages 204 and 207"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18), Anlage 4 and 5 sketches, Fold3 pages 204 and 207; R859: German printed pp.35, 39, 55 (Fold3 viewer pages 142, 146, 161), German printed pp.15-16 (Fold3 viewer pages 122-123)"
    }
   },
   {
@@ -278551,8 +278674,8 @@
     "location_date": "1945-03-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-13- (Fold3 page 17), English typed p.-14- (Fold3 page 18); R859: German printed pp.41, 52, 55 (Fold3 viewer pages 148, 158, 161), German printed pp.15-16 (Fold3 viewer pages 122-123)"
    }
   },
   {
@@ -278674,8 +278797,8 @@
     "location_date": "1945-03-09",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R540;R855;R001",
-    "source_locator": "R540: p. 221; R855: English typed p.-37- (Fold3 page 41)"
+    "reference_ids": "R540;R855;R859;R001",
+    "source_locator": "R540: p. 221; R855: English typed p.-37- (Fold3 page 41); R859: German printed p.42 (Fold3 viewer page 149)"
    }
   },
   {
@@ -279125,8 +279248,8 @@
     "location_date": "1945-03-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-34- (Fold3 page 38), Anlage 2 sketch, Fold3 pages 199-200"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-34- (Fold3 page 38), Anlage 2 sketch, Fold3 pages 199-200; R859: German printed p.39 (Fold3 viewer page 146)"
    }
   },
   {
@@ -279617,8 +279740,8 @@
     "location_date": "1945-03-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 4 sketch, Fold3 pages 204-206"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 4 sketch, Fold3 pages 204-206; R859: German printed pp.37, 60 (Fold3 viewer pages 144, 166)"
    }
   },
   {
@@ -279658,8 +279781,8 @@
     "location_date": "1945-03-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 4 sketch, Fold3 pages 204-206"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 4 sketch, Fold3 pages 204-206; R859: German printed pp.51, 82 (Fold3 viewer pages 157, 188)"
    }
   },
   {
@@ -279699,8 +279822,8 @@
     "location_date": "1945-03-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 4 sketch, Fold3 pages 204-206"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 4 sketch, Fold3 pages 204-206; R859: German printed pp.42, 64 (Fold3 viewer pages 149, 170)"
    }
   },
   {
@@ -279740,8 +279863,8 @@
     "location_date": "1945-03-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 5 sketch, Fold3 pages 207-208"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 5 sketch, Fold3 pages 207-208; R859: German printed pp.42, 52 (Fold3 viewer pages 149, 158)"
    }
   },
   {
@@ -294049,8 +294172,8 @@
     "location_date": "1945-03-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-36- (Fold3 page 40)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-36- (Fold3 page 40); R859: German printed p.40 (Fold3 viewer page 147)"
    }
   },
   {
@@ -299584,8 +299707,8 @@
     "location_date": "1945-03-29",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 5 sketch, Fold3 pages 207-208"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 5 sketch, Fold3 pages 207-208; R859: German printed pp.56, 60-61 (Fold3 viewer pages 163, 166-167)"
    }
   },
   {
@@ -300076,8 +300199,8 @@
     "location_date": "1945-03-30",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-39- (Fold3 page 43), Anlage 5 sketch, Fold3 page 208"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-39- (Fold3 page 43), Anlage 5 sketch, Fold3 page 208; R859: German printed p.42 (Fold3 viewer page 149)"
    }
   },
   {
@@ -300117,8 +300240,8 @@
     "location_date": "1945-03-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: English typed p.-37- (Fold3 page 41)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: English typed p.-37- (Fold3 page 41); R859: German printed p.41 (Fold3 viewer page 148)"
    }
   },
   {
@@ -306841,8 +306964,8 @@
     "location_date": "1945-04-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-56- (Fold3 page 60)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-56- (Fold3 page 60); R859: German printed pp.60, 64 (Fold3 viewer pages 166, 170)"
    }
   },
   {
@@ -307128,8 +307251,8 @@
     "location_date": "1945-04-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R778;R855;R002",
-    "source_locator": "R778: pp. 18-19 and Anlage 3; R855: typed p.-56- (Fold3 page 60)"
+    "reference_ids": "R778;R855;R859;R002",
+    "source_locator": "R778: pp. 18-19 and Anlage 3; R855: typed p.-56- (Fold3 page 60); R859: German printed p.60 (Fold3 viewer page 166)"
    }
   },
   {
@@ -307292,8 +307415,8 @@
     "location_date": "1945-04-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-56- (Fold3 page 60), Anlage 8 sketch, Fold3 pages 222-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-56- (Fold3 page 60), Anlage 8 sketch, Fold3 pages 222-223; R859: German printed p.60 (Fold3 viewer page 166)"
    }
   },
   {
@@ -307702,8 +307825,49 @@
     "location_date": "1945-04-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-60- (Fold3 page 65), Anlage 7 sketch, Fold3 page 218"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-60- (Fold3 page 65), Anlage 7 sketch, Fold3 page 218; R859: German printed pp.64-65, 73-74 (Fold3 viewer pages 170-171, 179-180)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.8493,
+     51.1951
+    ]
+   },
+   "properties": {
+    "claim_id": "C8503",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-363D",
+    "unit_name": "363rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL3807",
+    "location_name": "Schloss Eller (Düsseldorf) (former 338th Infantry Division Rhine sector (corps centre))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "363rd Volksgrenadier Division (shattered remnants) takes over the former 338th Infantry Division sector on the Rhine as the 338th moves east by rail",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R859;R855;R002",
+    "source_locator": "R859: German printed pp.60-63 (Fold3 viewer pages 166-169); R855: typed p.-56- (Fold3 page 60)"
    }
   },
   {
@@ -308686,8 +308850,8 @@
     "location_date": "1945-04-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-61-, -66- (Fold3 page 66, 71)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-61-, -66- (Fold3 page 66, 71); R859: German printed pp.61, 71 (Fold3 viewer pages 167, 177)"
    }
   },
   {
@@ -308727,8 +308891,8 @@
     "location_date": "1945-04-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219; R859: German printed pp.68-69 (Fold3 viewer pages 174-175)"
    }
   },
   {
@@ -308768,8 +308932,49 @@
     "location_date": "1945-04-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219; R859: German printed pp.68-72 (Fold3 viewer pages 174-178)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2044,
+     50.8014
+    ]
+   },
+   "properties": {
+    "claim_id": "C8504",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-003D",
+    "unit_name": "3rd Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-08",
+    "place_id": "PL0457",
+    "location_name": "Siegburg, North Rhine-Westphalia (Siegburg strongpoint under a local battle commandant (division CP remains Wahnerheide))",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Siegburg held as a strongpoint under XII SS Corps / 3rd Parachute Division during the Sieg battle of 6–10 April",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R859;R855;R002",
+    "source_locator": "R859: German printed pp.69-73 (Fold3 viewer pages 175-179); R855: typed pp.-66- to -70-"
    }
   },
   {
@@ -309260,8 +309465,8 @@
     "location_date": "1945-04-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-66- (Fold3 page 71), Anlage 7 sketch, Fold3 pages 216-217"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-66- (Fold3 page 71), Anlage 7 sketch, Fold3 pages 216-217; R859: German printed pp.69-72 (Fold3 viewer pages 175-178)"
    }
   },
   {
@@ -313442,8 +313647,8 @@
     "location_date": "1945-04-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219; R859: German printed pp.73-74 (Fold3 viewer pages 179-180)"
    }
   },
   {
@@ -313483,8 +313688,8 @@
     "location_date": "1945-04-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 7 sketch, Fold3 pages 216-219; R859: German printed pp.71, 77 (Fold3 viewer pages 177, 183)"
    }
   },
   {
@@ -313893,8 +314098,8 @@
     "location_date": "1945-04-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-74- (Fold3 page 79), Anlage 8 sketch, Fold3 pages 222-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-74- (Fold3 page 79), Anlage 8 sketch, Fold3 pages 222-223; R859: German printed pp.78, 83-86 (Fold3 viewer pages 184, 189-192)"
    }
   },
   {
@@ -314877,8 +315082,8 @@
     "location_date": "1945-04-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-75-, -76- (Fold3 page 80, 81)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-75-, -76- (Fold3 page 80, 81); R859: German printed pp.78-79 (Fold3 viewer pages 184-185)"
    }
   },
   {
@@ -315410,8 +315615,8 @@
     "location_date": "1945-04-13",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-81- (Fold3 page 86)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-81- (Fold3 page 86); R859: German printed p.84 (Fold3 viewer page 190)"
    }
   },
   {
@@ -315451,8 +315656,8 @@
     "location_date": "1945-04-13",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223; R859: German printed p.84 (Fold3 viewer page 190)"
    }
   },
   {
@@ -316476,8 +316681,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-82-, -85- (Fold3 page 87, 90), Anlage 8 sketch, Fold3 pages 222-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-82-, -85- (Fold3 page 87, 90), Anlage 8 sketch, Fold3 pages 222-223; R859: German printed pp.85, 87 (Fold3 viewer pages 191, 193)"
    }
   },
   {
@@ -316517,8 +316722,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-79- (Fold3 page 84), Anlage 8 sketch, Fold3 pages 220-221"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-79- (Fold3 page 84), Anlage 8 sketch, Fold3 pages 220-221; R859: German printed pp.82-83 (Fold3 viewer pages 188-189)"
    }
   },
   {
@@ -316558,8 +316763,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-82- (Fold3 page 87)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-82- (Fold3 page 87); R859: German printed pp.85, 89 (Fold3 viewer pages 191, 195)"
    }
   },
   {
@@ -316599,8 +316804,8 @@
     "location_date": "1945-04-14",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223; R859: German printed pp.85-86 (Fold3 viewer pages 191-192)"
    }
   },
   {
@@ -317952,8 +318157,8 @@
     "location_date": "1945-04-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-85- (Fold3 page 90)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-85- (Fold3 page 90); R859: German printed p.87 (Fold3 viewer page 193)"
    }
   },
   {
@@ -317993,8 +318198,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223; R859: German printed p.86 (Fold3 viewer page 192)"
    }
   },
   {
@@ -318034,8 +318239,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: Anlage 8 sketch, Fold3 pages 220-223; R859: German printed pp.86-87 (Fold3 viewer pages 192-193)"
    }
   },
   {
@@ -318895,8 +319100,8 @@
     "location_date": "1945-04-16",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-87- (Fold3 page 92), Anlage 8 sketch, Fold3 pages 222-223"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-87- (Fold3 page 92), Anlage 8 sketch, Fold3 pages 222-223; R859: German printed p.89 (Fold3 viewer page 195)"
    }
   },
   {
@@ -318936,8 +319141,8 @@
     "location_date": "1945-04-16",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R855;R002",
-    "source_locator": "R855: typed p.-86- (Fold3 page 91)"
+    "reference_ids": "R855;R859;R002",
+    "source_locator": "R855: typed p.-86- (Fold3 page 91); R859: German printed pp.88-89 (Fold3 viewer pages 194-195)"
    }
   },
   {

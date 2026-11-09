@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — German placeholders, chunk B3: SS Heavy Panzer Battalion 101 (branch `placeholders-14-theater`, commit B3)
+
+- **Why:** roadmap 365 (Scott, 9 November 2026): the battalion is kept only with a traceable parent chain (I SS Panzer Corps), otherwise dropped with a note. The chain is traceable: Ellis, Victory in the West vol. I (`R670`), p. 333, chart "Opposing forces in the British Sector—mid July", lists the 101 SS Heavy Tank Battalion in the Caen sector under I SS Panzer Corps (Panzer Group West), as does the existing claim `C0160` (composing units). `record_status` old value placeholder, new value active.
+- **Claims: 2, `C8931`-`C8932`** (old value none; both `western_europe`): `C8931` Villers-Bocage (`PL0373`), 13 June 1944, attack, 0.5 (Ellis p. 254 for the place and day; Ellis does not name the Tiger unit, the identification is Wikipedia `R114`, as in the existing rows `C0096`, `C0097`); `C8932` Caen sector (`PL0057`, representative point, 25 km), 15 July 1944, 0.3, parent `GER-SSPZ-001C` (one family and a sector).
+- **Relation:** `CR1272` SS Heavy Panzer Battalion 101 -> I SS Panzer Corps (assigned, from 1944-07-15; old value none).
+- **Not entered:** the battalion's history after mid-July 1944 has no source read in this pass (roadmap 369).
+- **Tests:** `scripts/semantic_tests.py` scenario 202. **Docs:** roadmap 365 closed.
+
 ## 9 November 2026 — German placeholders, chunk B2: XII and XIII Corps, Division Nr. 172 and 526, Jutland, 30th SS, Division z.b.V. 136 (branch `placeholders-14-theater`, commit B2)
 
 - **Why:** as chunk B1 (Scott, 9 November 2026, roadmap 365; two families wherever possible, one family at 0.3 with the reason; rows of every front and period kept, each with its theater). Old value for every unit: `record_status` placeholder, no claim file; new value: active (set by `scripts/promote_placeholders.py`). Every new row says "old value none" in its review sentence.

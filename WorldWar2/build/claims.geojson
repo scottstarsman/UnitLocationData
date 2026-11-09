@@ -11896,6 +11896,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.65611,
+     49.08056
+    ]
+   },
+   "properties": {
+    "claim_id": "C8931",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSHPZ-101",
+    "unit_name": "SS Heavy Panzer Battalion 101",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Waffen-SS",
+    "date": "1944-06-13",
+    "place_id": "PL0373",
+    "location_name": "Villers-Bocage (Villers-Bocage and Point 213 on the Caen road)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Tiger tanks of SS Heavy Panzer Battalion 101 ambush the 22nd Armoured Brigade at Villers-Bocage",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R114;R001",
+    "source_locator": "R670: p. 254; R114: Battle section"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.09,
      49.12
     ]
@@ -29150,6 +29191,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R853;R002",
     "source_locator": "R853: German p.17-18 (Fold3 images 23-24)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C8932",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSHPZ-101",
+    "unit_name": "SS Heavy Panzer Battalion 101",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Waffen-SS",
+    "date": "1944-07-15",
+    "place_id": "PL0057",
+    "location_name": "Caen (Caen sector)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "SS Heavy Panzer Battalion 101 with I SS Panzer Corps in the Caen sector",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 333 (chart \"Opposing forces in the British Sector - mid July\")"
    }
   },
   {

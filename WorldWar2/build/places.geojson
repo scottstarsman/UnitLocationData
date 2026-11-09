@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 21
+    "claims_count": 22
    }
   },
   {
@@ -10778,7 +10778,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -11378,7 +11378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 25
+    "claims_count": 26
    }
   },
   {
@@ -77878,7 +77878,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79679,6 +79679,46 @@
     "country": "FR",
     "region": "Grand Est",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2252,
+     48.8895
+    ]
+   },
+   "properties": {
+    "place_id": "PL4000",
+    "name": "Nomeny, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3357,
+     51.7567
+    ]
+   },
+   "properties": {
+    "place_id": "PL4001",
+    "name": "Cottbus, Brandenburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Brandenburg",
+    "claims_count": 2
    }
   }
  ]

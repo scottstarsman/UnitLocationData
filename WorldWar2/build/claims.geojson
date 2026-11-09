@@ -69480,7 +69480,7 @@
     "location_represents": "headquarters",
     "precision_km": 5,
     "confidence": 0.5,
-    "event_type": "other",
+    "event_type": "activation",
     "current_activity": "Chill, on his way to the Rhineland to refit the 85th Division, learns of the fall of Brussels at Turnhout and decides on his own to defend the Albert Canal",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
     "operation": "Northern France campaign",
@@ -82477,7 +82477,7 @@
     "location_represents": "main_body",
     "precision_km": 3,
     "confidence": 0.9,
-    "event_type": "destruction",
+    "event_type": "attack",
     "current_activity": "Panther column is destroyed around Dompaire by the French CCL and US fighter-bombers",
     "operation_id": "OP-LORRAINE",
     "operation": "Lorraine campaign",
@@ -92010,6 +92010,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.8163,
+     49.6865
+    ]
+   },
+   "properties": {
+    "claim_id": "C8933",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-025D",
+    "unit_name": "25th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-20",
+    "place_id": "PL3909",
+    "location_name": "Grafenwöhr, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Kampfgruppe 25th Panzergrenadier Division forming at Grafenwöhr",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R282;R002",
+    "source_locator": "R282: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -93697,7 +93738,7 @@
    },
    "properties": {
     "claim_id": "C1779",
-    "conflict_group_id": null,
+    "conflict_group_id": "G112",
     "claim_status": "preferred",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
@@ -98412,8 +98453,8 @@
    },
    "properties": {
     "claim_id": "C3181",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -102307,7 +102348,7 @@
    },
    "properties": {
     "claim_id": "C1782",
-    "conflict_group_id": null,
+    "conflict_group_id": "G111",
     "claim_status": "preferred",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
@@ -105259,8 +105300,8 @@
    },
    "properties": {
     "claim_id": "C3252",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -105792,8 +105833,8 @@
    },
    "properties": {
     "claim_id": "C3265",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -109599,6 +109640,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2252,
+     48.8895
+    ]
+   },
+   "properties": {
+    "claim_id": "C8936",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-553D",
+    "unit_name": "553rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL4000",
+    "location_name": "Nomeny, Meurthe-et-Moselle (Nomeny-Chenicourt)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "553rd Volksgrenadier Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R325;R002",
+    "source_locator": "R325: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5113,
+     48.8231
+    ]
+   },
+   "properties": {
+    "claim_id": "C8937",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-559D",
+    "unit_name": "559th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL0547",
+    "location_name": "Château-Salins, Moselle (near Château-Salins)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "559th Volksgrenadier Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R326;R002",
+    "source_locator": "R326: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3278,
      51.4107
     ]
@@ -112762,8 +112885,8 @@
    },
    "properties": {
     "claim_id": "C3363",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -113213,8 +113336,8 @@
    },
    "properties": {
     "claim_id": "C3374",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -120921,8 +121044,8 @@
    },
    "properties": {
     "claim_id": "C3539",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -121536,8 +121659,8 @@
    },
    "properties": {
     "claim_id": "C3554",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -122548,6 +122671,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 398"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8935",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-462D",
+    "unit_name": "462nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-19",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle (Metz (Lexikon table, October 1944))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "462nd Infantry Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R219;R001",
+    "source_locator": "R219: section 1"
    }
   },
   {
@@ -127932,8 +128096,8 @@
    },
    "properties": {
     "claim_id": "C3674",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -128342,8 +128506,8 @@
    },
    "properties": {
     "claim_id": "C3684",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -130775,7 +130939,7 @@
     "location_represents": "front_line_point",
     "precision_km": 5,
     "confidence": 0.5,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "712th Infantry Division smashed south-east of 's-Hertogenbosch",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
@@ -136009,8 +136173,8 @@
    },
    "properties": {
     "claim_id": "C3817",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -136132,8 +136296,8 @@
    },
    "properties": {
     "claim_id": "C3820",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -137362,8 +137526,8 @@
    },
    "properties": {
     "claim_id": "C7744",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G110",
+    "claim_status": "alternate",
     "unit_id": "GER-AG-00HG",
     "unit_name": "Army Group H (Heeresgruppe H)",
     "nationality": "Germany",
@@ -139071,6 +139235,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R811;R002",
     "source_locator": "R811: German p.25-26 (Fold3 image 31-32)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C8934",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-04",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia (Kleve-Goch area (Reichswald))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "190th Infantry Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R192;R002",
+    "source_locator": "R192: section 1"
    }
   },
   {
@@ -146833,7 +147038,7 @@
    },
    "properties": {
     "claim_id": "C1037",
-    "conflict_group_id": null,
+    "conflict_group_id": "G110",
     "claim_status": "preferred",
     "unit_id": "GER-AG-00HG",
     "unit_name": "Army Group H (Heeresgruppe H)",
@@ -146847,7 +147052,7 @@
     "location_represents": "sector_center",
     "precision_km": 50,
     "confidence": 0.3,
-    "event_type": "command_change",
+    "event_type": "activation",
     "current_activity": "Army Group H (Student) assumes command of the First Parachute Army and the Netherlands-based army",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
@@ -173128,7 +173333,7 @@
     "location_represents": "front_line_point",
     "precision_km": 3,
     "confidence": 0.3,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "battalion of Division Tolsdorff west of the Roer cut off at Floßdorf and destroyed",
     "operation_id": "OP-ROER-PLAIN",
     "operation": "Battle of the Roer Plain",
@@ -237683,6 +237888,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     14.3357,
+     51.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C8938",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-26",
+    "place_id": "PL4001",
+    "location_name": "Cottbus, Brandenburg (Cottbus area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Führer-Begleit-Brigade enlarged to a division",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R283;R002",
+    "source_locator": "R283: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3357,
+     51.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C8939",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEGR",
+    "unit_name": "Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-26",
+    "place_id": "PL4001",
+    "location_name": "Cottbus, Brandenburg (Cottbus area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Führer-Grenadier-Brigade enlarged to a division",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R284;R002",
+    "source_locator": "R284: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8101,
      50.5447
     ]
@@ -262139,7 +262426,7 @@
     "location_represents": "front_line_point",
     "precision_km": 5,
     "confidence": 0.5,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "overrun by the 43rd Division east and south of the Forest of Cleve",
     "operation_id": "OP-VERITABLE",
     "operation": "Operation Veritable",
@@ -307608,7 +307895,7 @@
     "location_represents": "sector_center",
     "precision_km": 25,
     "confidence": 0.5,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "84th Division, in the LXXXVI Corps, collapses under the Allied airborne attack on 24 March",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",

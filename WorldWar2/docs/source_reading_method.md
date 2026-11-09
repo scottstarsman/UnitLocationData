@@ -27,6 +27,7 @@ For each fact: date or date range, unit, place, what happened, parent formation,
 - **Strength and condition:** losses, tank and troop strength, units cut to a cadre, rebuilt, merged, renamed or disbanded.
 - **Front lines:** dated front-line traces, including those read from maps.
 - **Uncertainty:** vague dating, contradictions with other sources, and anything unreadable in the scan.
+- **Every front and period (Scott, 9 November 2026).** "As you review a source, keep in mind that we may use it for more than this period of time (if applicable). Keep notes and data even if it applies to other fronts and time periods. This is a general rule that applies to every resource analysis." Capture dated facts for the Eastern Front, Italy, the Balkans, Scandinavia, the home areas and the years before June 1944 as fully as Western Front facts, and mark them as other front or period in the notes.
 
 ## Notes file layout
 1. Header: source details, method, pass history, coverage and limits (which nationalities and dates the source is thin on).

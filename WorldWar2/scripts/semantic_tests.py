@@ -1472,8 +1472,9 @@ def scenario_53_loc_12ag_maps():
     expect(s + ': German rows are intelligence estimates at 0.3', set(c['confidence'] for c in new if c['unit_id'].startswith('GER-')), {'0.3'})
     expect(s + ': Allied rows are 0.5 or 0.7 only', set(c['confidence'] for c in new if not c['unit_id'].startswith('GER-') and c['claim_id'] not in LOWERED) <= {'0.5', '0.7'}, True)
     expect(s + ': every row cites a sheet in its locator, keeps its own map point and says old value none', all(c['source_locator'].startswith('R781: sheet cs') and (c['coord_override'] or c['claim_id'] in ('C3018', 'C3070')) and 'old value none' in c['notes'] for c in new), True)
-    expect(s + ': division and brigade points are the main body and corps or army points the headquarters (brigades from batch 3b)', set((c['echelon'], c['location_represents']) for c in new), {('division', 'main_body'), ('brigade', 'main_body'), ('corps', 'headquarters'), ('army', 'headquarters'), ('army_group', 'headquarters')})
-    expect(s + ': no placeholder unit gets a first claim', set(c['unit_id'] for c in new) & {'GER-INF-265D', 'GER-INF-266D', 'GER-INF-276D', 'GER-LFD-016D'}, set())
+    expect(s + ': division and brigade points are the main body and corps or army points the headquarters (brigades from batch 3b)', set((c['echelon'], c['location_represents']) for c in new), {('division', 'main_body'), ('brigade', 'main_body'), ('regiment/battle_group', 'main_body'), ('corps', 'headquarters'), ('army', 'headquarters'), ('army_group', 'headquarters')})  # battle group added for the 265th Kampfgruppe map row (placeholder promotion pass, 9 November 2026)
+    # the 266th was promoted with its own first claims in the placeholder promotion pass (wf-health-fixes, 9 November 2026), so its map rows are allowed now
+    expect(s + ': no placeholder unit gets a first claim', set(c['unit_id'] for c in new) & {'GER-INF-265D', 'GER-INF-266D', 'GER-INF-276D', 'GER-LFD-016D'}, {'GER-INF-266D'})
     expect(s + ': the existing Guards Armoured row of 18 July (Goodwood) is unchanged', [(c['place_id'], c['confidence']) for c in claims if c['claim_id'] == 'C1419'], [('PL0529', '0.7')])
 
 
@@ -2016,7 +2017,7 @@ def scenario_94_unit_lineage():
     expect(s + ': neighbours of B', nb['B'], (['A'], ['C']))
     import csv as _csv
     h2, rows = lineage.load()
-    expect(s + ': nine lineage rows UL001-UL009', [r['lineage_id'] for r in rows], ['UL%03d' % i for i in range(1, 10)])
+    expect(s + ': eleven lineage rows UL001-UL011', [r['lineage_id'] for r in rows], ['UL%03d' % i for i in range(1, 12)])
     expect(s + ': the data passes the checker', lineage.check(h2, rows, {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}, vocabs,
            {r['reference_id'] for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8'))}), [])
     b = {r['unit_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'build', 'units.csv'), newline='', encoding='utf-8'))}

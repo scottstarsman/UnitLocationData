@@ -3318,7 +3318,7 @@
     "precision_km": 25,
     "country": "BE",
     "region": "Flanders",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -3938,7 +3938,7 @@
     "precision_km": 5,
     "country": "LU",
     "region": "Luxembourg",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -5358,7 +5358,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 1
+    "claims_count": 5
    }
   },
   {
@@ -16278,7 +16278,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -77558,6 +77558,66 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9419,
+     48.2021
+    ]
+   },
+   "properties": {
+    "place_id": "PL3894",
+    "name": "Vittel, Vosges",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Grand Est",
+    "claims_count": 6
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3716,
+     50.9879
+    ]
+   },
+   "properties": {
+    "place_id": "PL3895",
+    "name": "Zonhoven, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5797,
+     50.7331
+    ]
+   },
+   "properties": {
+    "place_id": "PL3896",
+    "name": "Rimbach (Oberirsen), Landkreis Altenkirchen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
     "claims_count": 1
    }
   }

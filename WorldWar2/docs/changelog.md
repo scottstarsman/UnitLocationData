@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Army-group and army headquarters rows, Western Front (branch `wf-health-fixes`, commit 2 of 3)
+
+- **Why:** the Western Front health audit (9 November 2026, issue 2) found long gaps in the army-group headquarters rows: 12th Army Group nothing after 20 December 1944, 6th Army Group 4 rows in all, 21st Army Group nothing from 22 November 1944 to 2 May 1945, Army Group B nothing from 12 December 1944 to 1 April 1945. Scott approved filling them from text sources on 9 November 2026 ("Yes, start the fixes in that order").
+- **New claims `C8611`-`C8626` (16), all text-sourced headquarters rows** (`location_represents` headquarters; town centre, precision 5 km, `location_basis` `town_centroid` except `C8625`; each note gives old value none, new value the row, and the reason; parents left blank):
+  - **6th Army Group (10):** Vittel 27 October and 7 November 1944 (de Lattre, `R686` pp. 206, 220); Vittel, Heritage Hotel, 24 November 1944 (Riviera to the Rhine ch. 24 p. 438, `R423`, 0.7); advanced command post at Phalsbourg from 14 December and on 22 December (`R686` pp. 299, 301); Vittel 27 December 1944, 5 and 11 January 1945 (`R686` pp. 302-303, 311-313, 323-324); Phalsbourg 18 and 27 March 1945 (`R686` pp. 413, 419; the 27 March row also The Last Offensive ch. 15, `R544`, 0.7).
+  - **12th Army Group (1):** Luxembourg City 19 March 1945 (The Last Offensive ch. 13, `R542` p. 265, 0.7).
+  - **21st Army Group (3):** Montgomery's command post at Zonhoven 28 November 1944 (Ellis vol. II, `R671` p. 165, 0.7) and at Hasselt 25 and 28 December 1944 (p. 190, 197; 0.5 and 0.7).
+  - **Army Group B (1):** command post at Rimbach, 7 km north-west of Altenkirchen, about 10 March 1945 (FMS B-709 English, `R855` typed p. -15-, 0.3 for the approximate date).
+  - **First Canadian Army (1):** headquarters at Grave on 12 April 1945 (Stacey, `R668` pp. 571-572, 0.5), in the audit's 2 April-4 May gap.
+- **New places:** `PL3894` Vittel, `PL3895` Zonhoven, `PL3896` Rimbach (Oberirsen) (OpenStreetMap Nominatim, `R002`, searched 9 November 2026). Existing places reused: `PL0273` Phalsbourg, `PL0200` Luxembourg City, `PL0168` Hasselt, `PL0824` Grave.
+- **Not filled (roadmap 355):** the sources already read give no headquarters place for 12th Army Group from 20 December 1944 to 19 March 1945 and after 19 March, for 21st Army Group from 28 December 1944 to 3 May 1945, for Army Group B from 12 December 1944 to 10 March 1945, Army Group G (December to March), Army Group H (November to January), the German First Army (January to February), the US Fifteenth Army and the Sixth Panzer Army after 23 January. Sixteen rows were added, not the 25-40 the audit estimated: no position was entered without a page that names it.
+- **Checked against existing rows:** the US Seventh Army (late December, Saverne, Riviera p. 499) and the German Fifteenth Army (Biedenkopf, 29 March, Last Offensive p. 353) and Eleventh Army (Blankenburg, 23 April) already have rows within a few km and days; nothing added.
+
 ## 9 November 2026 — Command-chain repair, Western Front (branch `wf-health-fixes`, commit 1 of 3)
 
 - **Why:** the Western Front health audit (9 November 2026) found standing relations left open long after their last listing, so `who_controls` answered "possible" for months where the sources already give the chain, and units with claims but no command relation. Scott approved the repair on 9 November 2026 ("Yes, start the fixes in that order").

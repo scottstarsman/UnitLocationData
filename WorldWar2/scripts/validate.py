@@ -45,7 +45,10 @@ higher headquarters, a named higher headquarters without a unit id, a command re
 ended before it, a location_date that differs from date without a temporal location_basis, a corps/army/army-group headquarters that is
 only a town centroid (precision under 5 km), a corps or army sector recorded as an exact front_line_point, a conflict group whose rows
 have different event types and no 'Event definition:' in notes, a current_activity that is long
-(probably several actions in one row) or hedged ("probably", "likely"), and an engaged_with plus engaged_note list longer than three.
+(probably several actions in one row) or hedged ("probably", "likely"), an engaged_with plus engaged_note list longer than three, and a
+non-alternate claim dated before the unit's formed_date or after an end row or a lineage successor date (an activation after an end
+starts a new life; absorbed_into is not the successor's formation; a 3-day tail after an end and a 7-day window around a lineage date
+are allowed; see check_lifespan).
 Errors also cover effective_time /
 effective_to_time that are not HH:MM, location_date / location_temporal_offset_days / location_basis inconsistencies and a landing row whose coordinate is a
 town centroid or a command post of another date.
@@ -58,6 +61,8 @@ Coordinate checks live in scripts/check_coordinates.py.
 
 Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found; warnings do not count)
 """
+import calendar
+import collections
 import datetime
 import json
 import os
@@ -1081,6 +1086,150 @@ def check_deferred_relations(units, vocabs, claims):
         err(where, 'no rows (D01 ...)')
 
 
+
+LIFESPAN_END_GRACE_DAYS = 3
+LIFESPAN_LINEAGE_GRACE_DAYS = 7
+
+
+def _lifespan_date(s, pad='mid'):
+    """Parse YYYY, YYYY-MM or YYYY-MM-DD. pad='mid' (audit D()) uses the 15th or 1 July;
+    pad='end' uses the last day of the month or 31 December (after a lineage successor)."""
+    s = (s or '').strip()
+    if not s:
+        return None
+    if len(s) == 10:
+        return datetime.date.fromisoformat(s)
+    if len(s) == 7:
+        y, m = int(s[:4]), int(s[5:])
+        day = calendar.monthrange(y, m)[1] if pad == 'end' else 15
+        return datetime.date(y, m, day)
+    if len(s) == 4:
+        return datetime.date(int(s), 12, 31) if pad == 'end' else datetime.date(int(s), 7, 1)
+    return None
+
+
+def is_end_row(row):
+    """A claim that ends a life: destruction, or destroyed / disestablished set.
+    Surrender alone is not an end: many surrender rows record an enemy capitulation
+    the unit accepted, not the unit's own end (consistency-fix-1 audit)."""
+    return row['event_type'] == 'destruction' or row['destroyed'] == 'true' or row['disestablished'] == 'true'
+
+
+def lifespan_issues(units, claims, lineage_rows=None):
+    """Return one dict per non-alternate claim that falls outside the unit's life.
+
+    Port of the consistency-fix-1 audit (scratch life2.py, 9 November 2026):
+    - ignore claim_status alternate (kept on purpose in a conflict group);
+    - an activation row after an end row starts a new life (re-formation);
+    - an absorbed_into lineage link is not read as the successor's formation;
+    - a 3-day tail after an end row and a 7-day window around a lineage date
+      are allowed (month-precision lineage dates expand to the last day of the
+      month when testing 'after the successor').
+    Does not change the validator exit code; check_lifespan emits WARNING lines.
+    """
+    import lineage as _lineage
+    if lineage_rows is None:
+        _h, lineage_rows = _lineage.load()
+    by_unit = collections.defaultdict(list)
+    pref = collections.defaultdict(list)
+    for c in claims:
+        by_unit[c['unit_id']].append(c)
+        if c['claim_status'] == 'preferred':
+            pref[c['unit_id']].append(c)
+    for v in by_unit.values():
+        v.sort(key=lambda c: (c['date'], c['claim_id']))
+    for v in pref.values():
+        v.sort(key=lambda c: (c['date'], c['claim_id']))
+
+    issues = []
+
+    def add(unit_id, claim, reason, life_start, life_end, detail):
+        issues.append({
+            'unit_id': unit_id,
+            'claim_id': claim['claim_id'],
+            'date': claim['date'],
+            'reason': reason,
+            'life_start': life_start,
+            'life_end': life_end,
+            'detail': detail,
+        })
+
+    for unit_id, rows in by_unit.items():
+        unit = units.get(unit_id)
+        if not unit:
+            continue
+        formed = unit.get('formed_date') or ''
+        if formed:
+            for c in rows:
+                if c['claim_status'] == 'alternate':
+                    continue
+                if c['date'] < formed and c['event_type'] != 'activation':
+                    add(unit_id, c, 'before_formed_date', formed, None,
+                        'before formed_date %s' % formed)
+
+        ends = [c for c in pref[unit_id] if is_end_row(c)]
+        if ends:
+            end = min(ends, key=lambda c: (c['date'], c['claim_id']))
+            later = [c for c in pref[unit_id] if c['date'] > end['date']]
+            react = [c for c in later if c['event_type'] == 'activation']
+            if react:
+                later = [c for c in later if c['date'] < react[0]['date']]
+            end_d = _lifespan_date(end['date'])
+            kind = end['event_type'] if end['event_type'] != 'other' else (
+                'destroyed' if end['destroyed'] == 'true' else 'disestablished')
+            for c in later:
+                if (_lifespan_date(c['date']) - end_d).days > LIFESPAN_END_GRACE_DAYS:
+                    add(unit_id, c, 'after_end_row', None, end['date'],
+                        'after end row %s %s (%s)' % (end['claim_id'], end['date'], kind))
+
+        for link in lineage_rows:
+            if link['predecessor_unit_id'] != unit_id:
+                continue
+            sd = _lifespan_date(link['effective_date'], pad='end')
+            if not sd:
+                continue
+            later = [c for c in pref[unit_id] if c['date'] > sd.isoformat()
+                     and (_lifespan_date(c['date']) - sd).days > LIFESPAN_LINEAGE_GRACE_DAYS]
+            react = [c for c in later if c['event_type'] == 'activation']
+            if react:
+                later = [c for c in later if c['date'] < react[0]['date']]
+            life_end = sd.isoformat()
+            for c in later:
+                add(unit_id, c, 'after_lineage_successor', None, life_end,
+                    'more than %d days after lineage successor %s from %s (%s)' % (
+                        LIFESPAN_LINEAGE_GRACE_DAYS, link['successor_unit_id'],
+                        life_end, link['lineage_id']))
+
+        for link in lineage_rows:
+            if link['successor_unit_id'] != unit_id or link['kind'] == 'absorbed_into':
+                continue
+            mid = _lifespan_date(link['effective_date'], pad='mid')
+            if not mid:
+                continue
+            earlier = [c for c in pref[unit_id]
+                       if (mid - _lifespan_date(c['date'])).days > LIFESPAN_LINEAGE_GRACE_DAYS]
+            for c in earlier:
+                add(unit_id, c, 'before_lineage_formation', link['effective_date'], None,
+                    'more than %d days before formation from %s on %s (%s, %s)' % (
+                        LIFESPAN_LINEAGE_GRACE_DAYS, link['predecessor_unit_id'],
+                        link['effective_date'], link['lineage_id'], link['kind']))
+    issues.sort(key=lambda x: (x['unit_id'], x['date'], x['claim_id'], x['reason']))
+    return issues
+
+
+def check_lifespan(units, claims):
+    """Warning-only lifespan check; never changes the exit code."""
+    for issue in lifespan_issues(units, claims):
+        bounds = []
+        if issue['life_start']:
+            bounds.append('life starts %s' % issue['life_start'])
+        if issue['life_end']:
+            bounds.append('life ended %s' % issue['life_end'])
+        warn('%s %s' % (issue['unit_id'], issue['claim_id']),
+             'dated %s, %s (%s)' % (issue['date'], issue['detail'],
+                                    '; '.join(bounds) if bounds else 'life bounds unknown'))
+
+
 def check_lineage(units, vocabs):
     """data/unit_lineage.csv (scripts/lineage.py): header, ids, unit ids exist, kind and date basis in the vocabularies, real dates
     not before the predecessor's formed_date, references exist, no duplicate pair, no cycle, both linked units' unit_note names the other."""
@@ -1318,6 +1467,7 @@ def main():
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
+    check_lifespan(units, all_rows)
 
     # ---- foreign keys declared in the schemas ----
     import build_references as br

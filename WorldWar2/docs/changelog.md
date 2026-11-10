@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 10 November 2026 — Lifespan check as a validator warning (branch `lifespan-check`)
+
+- **Why:** Scott approved roadmap 370(b) on 10 November 2026: add the consistency-fix-1 lifespan audit to the validator as a warning first, not an error.
+- **Validator (`scripts/validate.py`):** new `check_lifespan` / `lifespan_issues`. A non-alternate claim dated before the unit's `formed_date` or after an end row (`destruction`, or `destroyed` / `disestablished` set) or more than 7 days after a lineage successor date is a WARNING (unit id, claim id, date, life bounds). An activation row after an end row starts a new life; alternate rows are ignored; an `absorbed_into` lineage link is not read as the successor's formation. A 3-day tail after an end row and a 7-day window around a lineage date are allowed (a month-precision lineage date expands to the last day of the month when testing "after the successor"). The exit code is unchanged, so `run_checks.sh` and CI still pass. Surrender alone is not treated as an end: many surrender rows record an enemy capitulation the unit accepted, not the unit's own end (treating them as ends would have flagged 9 further units, including Allied ones such as the 3rd Canadian Infantry Division and US VII Corps).
+- **Current data:** 1 warning, `GER-INF-JUTLAND` `C8908` (10 April 1945), more than 7 days after lineage successor `GER-VG-019D` from 3 August 1944 (`UL014`). This is the known leftover of roadmap 370(a) (no place for the 9 March 1945 re-formation, so no activation row); not a false positive; no data changed.
+- **Tests:** `scripts/semantic_tests.py` scenario 208 (the check reports only `C8908`; alternates after a brigade end, a re-formation, and `absorbed_into` are not flagged).
+- **Docs:** roadmap 370(b) closed; new roadmap 373 (switch the warning to a hard error after a source pass or two shows no false positives); `docs/methodology.md` "Review guardrails"; `docs/HANDOFF.md` section 5.
+
 ## 9 November 2026 — Triage count correction, roadmap 372 (branch `midwar-ends`, commit 5)
 
 - **Roadmap 372 split:** old value "22 mid-war, 67 war's end, 67 unknown", new value "23 mid-war, 67 war's end, 66 unknown". Reason: of the two units reclassified in chunk 2, only the 277th VGD came from mid-war; the 344th Infantry Division was in the unknown list (24-1=23 mid-war, 65+2=67 war's end, 67-1=66 unknown).

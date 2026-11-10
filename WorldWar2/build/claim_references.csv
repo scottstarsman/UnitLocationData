@@ -5,10 +5,12 @@ C0001,R050,general,
 C0001,R137,general,
 C0001,R141,general,
 C0001,R456,general,
+C0001,R670,general,"pp. 181, 182"
 C0002,R001,location,
 C0002,R063,general,
 C0002,R137,general,
 C0002,R668,general,pp. 104-112
+C0002,R670,general,"pp. 181, 182"
 C0003,R001,location,
 C0003,R025,strength,
 C0003,R140,general,
@@ -300,6 +302,7 @@ C0078,R449,general,
 C0079,R001,location,
 C0079,R141,general,
 C0079,R668,general,p. 139
+C0079,R670,general,p. 253
 C0080,R001,location,
 C0080,R141,general,
 C0080,R142,general,
@@ -3572,16 +3575,21 @@ C1286,R001,location,
 C1286,R668,general,"pp. 146, 166"
 C1287,R002,location,
 C1287,R668,general,"pp. 171, 176"
+C1287,R670,general,"pp. 338, 344"
 C1288,R002,location,
 C1288,R668,general,p. 186
+C1288,R670,general,"pp. 378, 379"
 C1289,R001,location,
 C1289,R668,general,"pp. 200, 201"
 C1290,R001,location,
 C1290,R668,general,"pp. 208, 218, 219, 229"
+C1290,R670,general,"pp. 420, 421"
 C1291,R002,location,
 C1291,R668,general,"pp. 240, 241"
+C1291,R670,general,p. 430
 C1292,R001,location,
 C1292,R668,general,"pp. 259, 264"
+C1292,R670,general,p. 447
 C1293,R002,location,
 C1293,R668,general,"pp. 282, 283, 287"
 C1294,R002,location,
@@ -3590,6 +3598,7 @@ C1295,R001,location,
 C1295,R668,general,"pp. 428, 430"
 C1296,R002,location,
 C1296,R668,general,"pp. 153, 155"
+C1296,R670,general,"pp. 309, 310"
 C1297,R001,location,
 C1297,R668,general,p. 162
 C1297,R670,general,pp. 311–316
@@ -3597,14 +3606,17 @@ C1298,R001,location,
 C1298,R668,general,"pp. 153, 166"
 C1299,R002,location,
 C1299,R668,general,"pp. 171, 172"
+C1299,R670,general,"pp. 338, 344"
 C1300,R002,location,
 C1300,R668,general,p. 189
+C1300,R670,general,"pp. 378, 379"
 C1301,R002,location,
 C1301,R668,general,p. 202
 C1302,R001,location,
 C1302,R668,general,p. 224
 C1303,R002,location,
 C1303,R668,general,"pp. 239, 241"
+C1303,R670,general,p. 430
 C1304,R002,location,
 C1304,R668,general,"pp. 248, 249, 250"
 C1305,R002,location,
@@ -3633,15 +3645,18 @@ C1316,R001,location,
 C1316,R668,general,p. 152
 C1317,R002,location,
 C1317,R668,general,"pp. 171, 172, 174"
+C1317,R670,general,p. 344
 C1318,R002,location,
 C1318,R668,general,"pp. 174, 175"
 C1319,R002,location,
 C1319,R668,general,p. 186
+C1319,R670,general,p. 379
 C1320,R001,location,
 C1320,R668,general,p. 224
 C1320,R670,general,"pp. 422, 423"
 C1321,R002,location,
 C1321,R668,general,p. 250
+C1321,R670,general,p. 432
 C1322,R002,location,
 C1322,R668,general,p. 250
 C1323,R002,location,
@@ -3668,6 +3683,7 @@ C1333,R002,location,
 C1333,R668,general,p. 224
 C1334,R002,location,
 C1334,R668,general,p. 241
+C1334,R670,general,"pp. 430, 431"
 C1335,R002,location,
 C1335,R668,general,p. 250
 C1336,R002,location,
@@ -3676,6 +3692,7 @@ C1336,R668,general,p. 256
 C1336,R670,general,p. 442
 C1337,R002,location,
 C1337,R668,general,p. 260
+C1337,R670,general,p. 445
 C1338,R002,location,
 C1338,R668,general,"pp. 283, 287"
 C1339,R002,location,
@@ -19778,3 +19795,5 @@ C9011,R001,location,
 C9011,R671,general,p. 262
 C9012,R002,location,
 C9012,R671,general,p. 262
+C9013,R002,location,
+C9013,R670,general,"pp. 378, 379"

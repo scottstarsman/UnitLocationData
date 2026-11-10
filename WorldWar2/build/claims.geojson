@@ -4097,8 +4097,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R008;R050;R137;R456;R141;R001",
-    "source_locator": null
+    "reference_ids": "R008;R050;R137;R456;R141;R670;R001",
+    "source_locator": "R670: pp. 181, 182"
    }
   },
   {
@@ -4138,8 +4138,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R063;R668;R001",
-    "source_locator": "R668: pp. 104-112"
+    "reference_ids": "R137;R063;R668;R670;R001",
+    "source_locator": "R668: pp. 104-112; R670: pp. 181, 182"
    }
   },
   {
@@ -9345,8 +9345,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R668;R001",
-    "source_locator": "R668: p. 139"
+    "reference_ids": "R141;R668;R670;R001",
+    "source_locator": "R668: p. 139; R670: p. 253"
    }
   },
   {
@@ -22260,8 +22260,8 @@
     "location_date": "1944-07-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 153, 155"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 153, 155; R670: pp. 309, 310"
    }
   },
   {
@@ -30050,8 +30050,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 171, 176"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 171, 176; R670: pp. 338, 344"
    }
   },
   {
@@ -30091,8 +30091,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 171, 172"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 171, 172; R670: pp. 338, 344"
    }
   },
   {
@@ -30132,8 +30132,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 171, 172, 174"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 171, 172, 174; R670: p. 344"
    }
   },
   {
@@ -34273,8 +34273,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 186"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 186; R670: pp. 378, 379"
    }
   },
   {
@@ -34314,8 +34314,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 189"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 189; R670: pp. 378, 379"
    }
   },
   {
@@ -34355,8 +34355,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 186"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 186; R670: p. 379"
    }
   },
   {
@@ -36284,6 +36284,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3064,
+     49.1115
+    ]
+   },
+   "properties": {
+    "claim_id": "C9013",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-25",
+    "place_id": "PL0672",
+    "location_name": "Tilly-la-Campagne, Calvados (with the 3rd Canadian Infantry Division, attacking from Bourguébus)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Spring: tanks support the 3rd Canadian Infantry Division in the attack on Tilly-la-Campagne; the supporting squadron is practically wiped out and the survivors are forced back to Bourguébus",
+    "operation_id": "OP-SPRING",
+    "operation": "Operation Spring",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Spring",
+    "strength_status": "unknown",
+    "location_date": "1944-07-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: pp. 378, 379"
    }
   },
   {
@@ -44359,8 +44400,8 @@
     "location_date": "1944-08-07",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: pp. 208, 218, 219, 229"
+    "reference_ids": "R668;R670;R001",
+    "source_locator": "R668: pp. 208, 218, 219, 229; R670: pp. 420, 421"
    }
   },
   {
@@ -49976,8 +50017,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 240, 241"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 240, 241; R670: p. 430"
    }
   },
   {
@@ -50017,8 +50058,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 239, 241"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 239, 241; R670: p. 430"
    }
   },
   {
@@ -50058,8 +50099,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 241"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 241; R670: pp. 430, 431"
    }
   },
   {
@@ -54240,8 +54281,8 @@
     "location_date": "1944-08-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 250"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 250; R670: p. 432"
    }
   },
   {
@@ -56085,8 +56126,8 @@
     "location_date": "1944-08-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 260"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 260; R670: p. 445"
    }
   },
   {
@@ -57110,8 +57151,8 @@
     "location_date": "1944-08-21",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: pp. 259, 264"
+    "reference_ids": "R668;R670;R001",
+    "source_locator": "R668: pp. 259, 264; R670: p. 447"
    }
   },
   {

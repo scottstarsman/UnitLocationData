@@ -50,4 +50,4 @@ Automatic symbol detection or OCR; creating or changing claims; batch runs over 
 `tools/map_overlay/overlay.py` and `tools/map_overlay/README.md` exist on `map-overlay-plan` (5 November 2026). Scott's decisions above are unchanged. Overlay PNG and CSV outputs stay in a scratch folder (or Drive for review) and are not committed. The script is not part of the build or `run_checks.sh`.
 
 ## Suggested next step
-Review the pilot CSV for 27 June 1944 / `cs000022` (copy it to Drive when wanted) and fill in map-symbol pixels so distances and flags can be computed. One branch per task, push the branch only.
+Review the pilot CSV for 27 June 1944 / `cs000022` (copy it to Drive when wanted) and fill in map-symbol pixels so distances and flags can be computed. One branch per task, push the branch and open a PR when it is ready; do not merge it.

@@ -54,3 +54,7 @@ Every claim row cites its own sources in the `source` column. This page lists wh
 - **No copied text**: `notes` and `current_activity` were written by the dataset authors from the sources; do not paste long passages from copyrighted pages.
 - **Contributors** should only add facts they can source and must be able to license their contribution under the repository licences.
 - The licence choices (data CC BY-SA 4.0, code MIT) are final. Anyone planning a specific reuse should read the Wikipedia share-alike terms for themselves; nothing here is legal advice.
+
+## Source nationality balance (10 November 2026)
+
+A survey of how claims split by source nationality, the units and months with no own-nation source, and a recommended reading order for free British, Canadian, French, Polish and Dutch histories, is in [`docs/source_balance.md`](source_balance.md) (roadmap 374). No claims were added in that survey. References have no nationality field; the survey classifies them from `source_family`.

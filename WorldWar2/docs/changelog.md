@@ -2,6 +2,12 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 10 November 2026 — Source nationality balance survey and PR rule (branch `source-balance`)
+
+- **Why:** Scott asked for a source-balance pass across nationalities (British, Canadian, German, French, Polish, Dutch) rather than mainly US sources, starting with a survey and plan and no new claims. The same day he also asked that a pull request be opened when a branch is ready to merge.
+- **Survey (docs only, no data change):** new [`docs/source_balance.md`](source_balance.md) and roadmap 374. References have no nationality field; each was classified from `source_family` (publisher or author as a fallback). US sources are cited by 70.9% of the 8,963 claims (66.0% exclusively), largely the 12th Army Group maps (53.9%). Own-nation support: US 95.5%, Canada 62.4%, Germany 43.1%, UK 18.2%, France 17.9%, Poland / Netherlands / Belgium / Czechoslovakia 0%. No Polish-authored reference exists. Recommended next reads, in order: leftover Ellis facts already noted from vols I–II; free DHH CMHQ/AHQ reports; leftover de Lattre facts; de Jong deel 10 (NIOD, free); Joslen *Orders of Battle*. A Polish official or memoir source and the French *grandes unités* volumes would need Scott (purchase or library).
+- **Branching rule (HANDOFF standing rule 2, startup checklist, `docs/map_overlay_plan.md`).** Old rule: push the branch only; no PR, no zip, unless he asks. New rule: when a branch is ready, push it and open a pull request to `main`; never merge it yourself. Scott still merges and still deletes the remote branch. No zip unless he asks. Reason: Scott, 10 November 2026. A decision-log entry was added next to the 27 October branching rule, which is otherwise unchanged.
+
 ## 10 November 2026 — Lifespan check as a validator warning (branch `lifespan-check`)
 
 - **Why:** Scott approved roadmap 370(b) on 10 November 2026: add the consistency-fix-1 lifespan audit to the validator as a warning first, not an error.

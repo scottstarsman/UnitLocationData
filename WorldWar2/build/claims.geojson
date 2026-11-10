@@ -101850,6 +101850,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C8974",
+    "conflict_group_id": "G117",
+    "claim_status": "alternate",
+    "unit_id": "GER-INF-159D",
+    "unit_name": "159th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-29",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (Alsace (Colmar, October 1944 table row))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "the 159th Reserve Division becomes the 159th Infantry Division (date of the reserve division page)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R871;R001",
+    "source_locator": "R871: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8817,
      51.6269
     ]
@@ -110043,6 +110084,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R326;R002",
     "source_locator": "R326: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C8973",
+    "conflict_group_id": "G117",
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-159D",
+    "unit_name": "159th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (Alsace (Colmar, October 1944 table row))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "the 159th Reserve Division becomes the 159th Infantry Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R613;R001",
+    "source_locator": "R613: section 1"
    }
   },
   {
@@ -123053,7 +123135,7 @@
    },
    "properties": {
     "claim_id": "C8935",
-    "conflict_group_id": null,
+    "conflict_group_id": "G116",
     "claim_status": "preferred",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
@@ -152368,8 +152450,8 @@
    },
    "properties": {
     "claim_id": "C4078",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G116",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
     "nationality": "Germany",
@@ -162454,8 +162536,8 @@
    },
    "properties": {
     "claim_id": "C4240",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G116",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
     "nationality": "Germany",
@@ -170736,8 +170818,8 @@
    },
    "properties": {
     "claim_id": "C4371",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G116",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
     "nationality": "Germany",

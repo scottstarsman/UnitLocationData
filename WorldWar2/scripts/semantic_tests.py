@@ -3165,6 +3165,7 @@ def scenario_207_midwar_ends():
     expect(s + ': every chunk 1 end row is flagged disestablished, destroyed or a surrender', all(claims[c]['disestablished'] == 'true' or claims[c]['destroyed'] == 'true' or claims[c]['event_type'] == 'surrender' for c in ends), True)
     expect(s + ': one-family Lexikon rows are 0.3', sorted({claims[c]['confidence'] for c in ends}), ['0.3'])
     expect(s + ': chunk 2 brigade end rows are preferred in G114 and G115 with the late map rows alternate', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8971', 'C3816', 'C8972', 'C4046')], [('G114', 'preferred'), ('G114', 'alternate'), ('G115', 'preferred'), ('G115', 'alternate')])
+    expect(s + ': roadmap 370 groups G116 (462nd map rows) and G117 (159th redesignation dates)', [(claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C8935', 'C4371', 'C8973', 'C8974')], [('G116', 'preferred'), ('G116', 'alternate'), ('G117', 'preferred'), ('G117', 'alternate')])
     expect(s + ': Panzer-Brigade 107 ends with its Baumholder row', claims['C8955']['disestablished'], 'true')
 
 def main():

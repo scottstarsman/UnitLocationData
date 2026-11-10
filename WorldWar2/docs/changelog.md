@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Roadmap 370, 371 and 357 review (branch `midwar-ends`, commit 4)
+
+- **Roadmap 370 (c), 159th Infantry Division:** new redesignation rows `C8973` (9 October 1944, Lexikon infantry division page `R613`, preferred) and `C8974` (29 September 1944, reserve division page `R871`, alternate) in conflict group `G117`, at the October 1944 table place (Colmar, 50 km, `Location caveat`), 0.3.
+- **Roadmap 370 (d), 462nd Infantry Division:** `C8935` conflict_group_id old value blank, new value `G116` (preferred); map rows `C4078`, `C4240`, `C4371` claim_status old value preferred, new value alternate, conflict_group_id old value blank, new value `G116`, reason: the 462nd was redesignated a Volksgrenadier division by the beginning of November 1944 (lineage `UL007`), so the old label on the map is stale.
+- **Coordinate exceptions:** 3 conflict-distance rows for `G116`.
+- **Roadmap 371:** the 7th Armored Division ETO-OB table re-read (archived copy); `CR0409` and `CR0156` confirmed (in force on 8 May 1945). No relation changed; the remaining items are documented with their reasons in roadmap 371.
+- **Roadmap 357:** each of the 83 pairs re-classified: 16 closed (text row is an objective or approach route), 10 closed (text row is a command post of another date: a sequence), 1 resolved earlier (`G113`), 56 still open with the reason (41 a day apart, 15 on the same day). No data changed.
+- **Roadmap 370 (a) and (b)** stay open with the reason in the roadmap.
+
 ## 9 November 2026 — Mid-war German ends, chunk 2: Panzer-Brigades 108 and 111 (branch `midwar-ends`, commit 3)
 
 - **End rows:** `C8971` Panzer-Brigade 111 disbanded and absorbed by the 11th Panzer Division with effect from 1 October 1944 (Lexikon, new reference `R880`, and Wikipedia `R701`: two families, approximate place Arracourt, 0.5); `C8972` Panzer-Brigade 108 disbanded with effect from 30 October 1944 after being pulled out north-east of Aachen-Geilenkirchen (Lexikon, new reference `R881`, 0.3; the unit record's Wikipedia note says only "November 1944").

@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Mid-war German ends, chunk 1: ten units (branch `midwar-ends`, commit 2)
+
+- **End rows (10, Lexikon der Wehrmacht after Tessin, one family, 0.3):** `C8961` LXXXIX Corps, staff captured 29 March 1945 after encirclement in the Taunus (point Idstein, new place `PL4009`, 25 km); `C8962` 19th VGD officially disbanded 26 March 1945 (Kaiserslautern area, 25 km); `C8963` 77th Infantry Division lost with the fall of Saint-Malo, 15 August 1944 (destroyed; the disbandment order of 15 September 1944 is in the notes); `C8964` 91st Luftlande Division disbanded 10 August 1944 (last recorded place Subligny, 50 km); `C8965` 17th Luftwaffe Field Division scattered between Ghent and Sint-Niklaas and disbanded 28 September 1944 (point Lokeren, new place `PL4011`); `C8966` Panzer-Brigade 150 disbanded 25 December 1944 (last recorded place Malmedy); `C8967` 272nd VGD, destroyed by the end of March, officially disbanded 12 April 1945 (last recorded place, Remagen front, 50 km); `C8968` Korps Feldt disbanded 19 December 1944 by order of the First Parachute Army (Geldern sector); `C8969` 79th VGD scattered between Idar-Oberstein and Baumholder 18 March 1945 and `C8970` disbanded after crossing the Rhine, 24 March 1945 (Palatinate Forest point, new place `PL4012`, 50 km). Rows whose source gives no place carry a `Location caveat` sentence naming the point used.
+- **Edit:** `C8955` (Panzer-Brigade 107 at Baumholder, 9 November 1944) `disestablished` old value false, new value true, reason: the brigade was dissolved on 7 November 1944 into the 25th Panzergrenadier Division (R879); a lineage row is not possible (cycle with `UL008`).
+- **Tests:** scenario 115 now reads only the 79th VGD rows before `C8961`; new scenario 207.
+- **Place:** a duplicate Kaiserslautern place created by the geocoder was removed before commit; `C8962` uses the existing `PL3864` (id `PL4010` is skipped).
+
 ## 9 November 2026 — Mid-war German ends, step 1: priority rule and triage of roadmap 372 (branch `midwar-ends`, commit 1)
 
 - **New standing rule (Scott, 9 November 2026):** end rows for German units that ended at the war's end are low priority (future work); mid-war ends still matter. Recorded in HANDOFF rule 20, `docs/methodology.md` (last bullet) and roadmap 372.

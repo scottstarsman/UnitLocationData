@@ -102301,6 +102301,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "claim_id": "C8954",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-105B",
+    "unit_name": "Panzer-Brigade 105",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-30",
+    "place_id": "PL0337",
+    "location_name": "Stolberg, Rhineland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "the brigade is pulled out of the line at Stolberg and refilled",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R878;R002",
+    "source_locator": "R878: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.8538,
      50.9525
     ]
@@ -146902,6 +146943,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R771;R002",
     "source_locator": "R771: German pp.47-48 (Fold3 pages 55-56)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3362,
+     49.6158
+    ]
+   },
+   "properties": {
+    "claim_id": "C8955",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-107B",
+    "unit_name": "Panzer-Brigade 107",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-09",
+    "place_id": "PL2695",
+    "location_name": "Baumholder, Rhineland-Palatinate",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "the brigade arrives by rail at the Baumholder training area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R879;R002",
+    "source_locator": "R879: section 1"
    }
   },
   {
@@ -354738,6 +354820,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.22,
+     48.0615
+    ]
+   },
+   "properties": {
+    "claim_id": "C8953",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-416D",
+    "unit_name": "416th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL4007",
+    "location_name": "Wasserburg am Inn, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the remnants of the division are broken up by American units at Wasserburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R218;R002",
+    "source_locator": "R218: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.9,
      48.3167
     ]
@@ -357150,6 +357273,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R305;R002",
     "source_locator": "R305: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0976,
+     53.636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8952",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-05",
+    "place_id": "PL4006",
+    "location_name": "Lamstedt, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the division goes into British captivity at Lamstedt with the OB Nordwest capitulation",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R609;R002",
+    "source_locator": "R609: section 1"
    }
   },
   {

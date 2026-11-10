@@ -6618,7 +6618,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -53598,7 +53598,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79793,6 +79793,46 @@
    "properties": {
     "place_id": "PL4005",
     "name": "Forstenrieder Park, Landkreis München",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0976,
+     53.636
+    ]
+   },
+   "properties": {
+    "place_id": "PL4006",
+    "name": "Lamstedt, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.22,
+     48.0615
+    ]
+   },
+   "properties": {
+    "place_id": "PL4007",
+    "name": "Wasserburg am Inn, Bayern",
     "alt_names": null,
     "kind": "point",
     "precision_km": 3,

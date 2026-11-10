@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Consistency fix 3, chunk B: more German end rows (branch `wf-consistency-fixes`, commit 4)
+
+- **End rows (2):** `C8952` 15th Panzergrenadier Division, British captivity at Lamstedt (new place `PL4006`) with the OB Nordwest capitulation, 5 May 1945 (Lexikon `R609`, 0.3); `C8953` 416th Infantry Division, remnants broken up by American units at Wasserburg am Inn (new place `PL4007`), 1 May 1945 (Lexikon, 0.3).
+- **Panzer brigades (new references `R878`, `R879`, the Lexikon pages of Panzer-Brigade 105 and 107):** lineage `UL019` Panzer-Brigade 105 absorbed into the 9th Panzer Division, October 1944 (month only), with row `C8954` (withdrawn from the line at Stolberg and refilled at the end of September 1944, under the 9th Panzer Division, 0.3; relation `CR1281`). Panzer-Brigade 107: row `C8955` (arrival by rail at Baumholder on 9 November 1944, used to re-form the 25th Panzergrenadier Division, 0.3); no lineage row, because `UL008` already links the 25th Panzergrenadier Division to the brigade and the validator does not allow a lineage cycle; the end is in `unit_note`.
+- **Audit rule (scratch tool, not in the repository):** a `YYYY-MM` lineage date now covers the whole month, so rows within the month are not "after" it.
+- **Left open:** roadmap 372 (updated).
+
 ## 9 November 2026 — Consistency fix 3, chunk A: end rows for German units whose claims stop (branch `wf-consistency-fixes`, commit 3)
 
 - **Why:** fix 3 of the four consistency fixes Scott approved on 9 November 2026. Audit on the branch after fix 2: 173 German units whose last preferred row is not an end (`surrender`, `destruction`, `redesignation`, a `destroyed` or `disestablished` flag) and that are not a lineage predecessor; 132 of them are divisions, corps, armies or brigades, 98 with a Lexikon der Wehrmacht page in the references. The pages were read for a dated end with a named place. The 8 May rule is not used for German units. Nothing is deleted.

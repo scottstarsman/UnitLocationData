@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Mid-war German ends, step 1: priority rule and triage of roadmap 372 (branch `midwar-ends`, commit 1)
+
+- **New standing rule (Scott, 9 November 2026):** end rows for German units that ended at the war's end are low priority (future work); mid-war ends still matter. Recorded in HANDOFF rule 20, `docs/methodology.md` (last bullet) and roadmap 372.
+- **Triage of roadmap 372 (156 units):** 24 mid-war formations, 65 war's end (60 formations, 5 battle groups), 67 unknown (31 formations, 36 battalions and battle groups); the lists are in roadmap 372. No data changed.
+
 ## 9 November 2026 — Consistency fix 4: weak map-against-text pairs (branch `wf-consistency-fixes`, commit 6)
 
 - **Map rows capped (62):** every 12th Army Group situation-map row (`R781`) in the pairs of roadmap 357 and 358 that stood above 0.3 (0.5 or 0.7) is now 0.3, so no map row outranks its text row; each row's notes give the old value, the new value and the reason. No row was deleted.

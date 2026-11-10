@@ -5,10 +5,12 @@ C0001,R050,general,
 C0001,R137,general,
 C0001,R141,general,
 C0001,R456,general,
+C0001,R670,general,"pp. 181, 182"
 C0002,R001,location,
 C0002,R063,general,
 C0002,R137,general,
 C0002,R668,general,pp. 104-112
+C0002,R670,general,"pp. 181, 182"
 C0003,R001,location,
 C0003,R025,strength,
 C0003,R140,general,
@@ -21,6 +23,7 @@ C0004,R137,strength,
 C0004,R448,general,
 C0004,R449,general,
 C0004,R668,general,"pp. 115, 124"
+C0004,R670,general,"pp. 198, 201, 203, 204"
 C0004,R761,general,pp. 21-23
 C0005,R001,location,
 C0005,R057,general,
@@ -34,12 +37,14 @@ C0007,R449,general,
 C0008,R001,location,
 C0008,R087,general,
 C0008,R448,general,
+C0008,R670,general,"pp. 198, 200"
 C0009,R001,location,
 C0009,R088,general,
 C0009,R132,general,
 C0009,R137,strength,
 C0009,R448,general,
 C0009,R668,general,"pp. 66, 124, 130"
+C0009,R670,general,"pp. 198, 200, 201, 207"
 C0010,R001,location,
 C0010,R102,general,
 C0010,R447,command_relationship,"p. 237-238, 259-260"
@@ -71,6 +76,7 @@ C0016,R002,location,
 C0016,R137,general,
 C0016,R147,general,
 C0016,R668,general,pp. 114-115
+C0016,R670,general,"pp. 202, 203"
 C0017,R001,location,
 C0017,R071,general,
 C0017,R137,general,
@@ -83,6 +89,7 @@ C0018,R375,general,
 C0019,R001,location,
 C0019,R008,general,
 C0019,R137,general,
+C0019,R670,general,p. 202
 C0020,R001,location,
 C0020,R008,general,
 C0020,R014,general,
@@ -233,6 +240,7 @@ C0060,R001,location,
 C0060,R141,general,
 C0060,R449,general,
 C0060,R668,general,p. 142
+C0060,R670,general,p. 237
 C0060,R761,general,p. 23
 C0061,R001,location,
 C0061,R049,general,
@@ -267,6 +275,7 @@ C0068,R761,general,pp. 31-32
 C0069,R001,location,
 C0069,R141,general,
 C0069,R142,general,
+C0069,R670,general,p. 248
 C0070,R001,location,
 C0070,R141,general,
 C0070,R449,general,
@@ -297,6 +306,7 @@ C0078,R449,general,
 C0079,R001,location,
 C0079,R141,general,
 C0079,R668,general,p. 139
+C0079,R670,general,p. 253
 C0080,R001,location,
 C0080,R141,general,
 C0080,R142,general,
@@ -356,6 +366,7 @@ C0095,R066,general,
 C0096,R001,location,
 C0096,R114,general,
 C0096,R668,general,p. 142
+C0096,R670,general,"pp. 254, 255"
 C0097,R001,location,
 C0097,R114,general,
 C0097,R141,general,
@@ -393,6 +404,7 @@ C0110,R001,location,
 C0110,R142,general,
 C0111,R001,location,
 C0111,R141,general,
+C0111,R670,general,p. 256
 C0112,R001,location,
 C0112,R449,general,
 C0113,R001,location,
@@ -513,6 +525,7 @@ C0154,R140,general,
 C0155,R001,location,
 C0155,R014,general,
 C0155,R139,general,
+C0155,R670,general,"pp. 276, 277"
 C0156,R001,location,
 C0156,R014,general,
 C0156,R139,general,
@@ -535,11 +548,14 @@ C0161,R139,general,
 C0161,R446,general,
 C0162,R001,location,
 C0162,R139,general,
+C0162,R670,general,p. 278
 C0163,R001,location,
 C0163,R139,general,
 C0163,R668,general,p. 147
+C0163,R670,general,"pp. 277, 278"
 C0164,R001,location,
 C0164,R140,command_relationship,
+C0164,R670,general,p. 277
 C0165,R001,location,
 C0165,R068,general,
 C0165,R139,command_relationship,
@@ -561,6 +577,7 @@ C0169,R112,general,
 C0169,R446,general,
 C0170,R002,location,
 C0170,R139,general,
+C0170,R670,general,p. 280
 C0171,R001,location,
 C0171,R139,general,
 C0171,R140,general,
@@ -578,6 +595,7 @@ C0175,R139,general,
 C0176,R002,location,
 C0176,R066,general,
 C0176,R139,general,
+C0176,R670,general,p. 280
 C0177,R001,location,
 C0177,R008,general,
 C0177,R073,general,
@@ -619,6 +637,7 @@ C0188,R668,general,p. 149
 C0188,R761,general,p. 52
 C0189,R002,location,
 C0189,R139,general,
+C0189,R670,general,p. 281
 C0190,R001,location,
 C0190,R139,general,
 C0191,R001,location,
@@ -2238,6 +2257,7 @@ C0776,R001,location,
 C0776,R278,general,Einsatz und Unterstellung (7 and 9 July 1944 entries)
 C0776,R591,general,"p. 121-122, 122"
 C0776,R668,general,pp. 158-161
+C0776,R670,general,p. 310
 C0777,R001,location,
 C0777,R278,general,Einsatz und Unterstellung (9 July 1944 entry)
 C0777,R591,general,p. 122
@@ -3561,16 +3581,21 @@ C1286,R001,location,
 C1286,R668,general,"pp. 146, 166"
 C1287,R002,location,
 C1287,R668,general,"pp. 171, 176"
+C1287,R670,general,"pp. 338, 344"
 C1288,R002,location,
 C1288,R668,general,p. 186
+C1288,R670,general,"pp. 378, 379"
 C1289,R001,location,
 C1289,R668,general,"pp. 200, 201"
 C1290,R001,location,
 C1290,R668,general,"pp. 208, 218, 219, 229"
+C1290,R670,general,"pp. 420, 421"
 C1291,R002,location,
 C1291,R668,general,"pp. 240, 241"
+C1291,R670,general,p. 430
 C1292,R001,location,
 C1292,R668,general,"pp. 259, 264"
+C1292,R670,general,p. 447
 C1293,R002,location,
 C1293,R668,general,"pp. 282, 283, 287"
 C1294,R002,location,
@@ -3579,20 +3604,25 @@ C1295,R001,location,
 C1295,R668,general,"pp. 428, 430"
 C1296,R002,location,
 C1296,R668,general,"pp. 153, 155"
+C1296,R670,general,"pp. 309, 310"
 C1297,R001,location,
 C1297,R668,general,p. 162
+C1297,R670,general,pp. 311–316
 C1298,R001,location,
 C1298,R668,general,"pp. 153, 166"
 C1299,R002,location,
 C1299,R668,general,"pp. 171, 172"
+C1299,R670,general,"pp. 338, 344"
 C1300,R002,location,
 C1300,R668,general,p. 189
+C1300,R670,general,"pp. 378, 379"
 C1301,R002,location,
 C1301,R668,general,p. 202
 C1302,R001,location,
 C1302,R668,general,p. 224
 C1303,R002,location,
 C1303,R668,general,"pp. 239, 241"
+C1303,R670,general,p. 430
 C1304,R002,location,
 C1304,R668,general,"pp. 248, 249, 250"
 C1305,R002,location,
@@ -3621,14 +3651,18 @@ C1316,R001,location,
 C1316,R668,general,p. 152
 C1317,R002,location,
 C1317,R668,general,"pp. 171, 172, 174"
+C1317,R670,general,p. 344
 C1318,R002,location,
 C1318,R668,general,"pp. 174, 175"
 C1319,R002,location,
 C1319,R668,general,p. 186
+C1319,R670,general,p. 379
 C1320,R001,location,
 C1320,R668,general,p. 224
+C1320,R670,general,"pp. 422, 423"
 C1321,R002,location,
 C1321,R668,general,p. 250
+C1321,R670,general,p. 432
 C1322,R002,location,
 C1322,R668,general,p. 250
 C1323,R002,location,
@@ -3655,19 +3689,23 @@ C1333,R002,location,
 C1333,R668,general,p. 224
 C1334,R002,location,
 C1334,R668,general,p. 241
+C1334,R670,general,"pp. 430, 431"
 C1335,R002,location,
 C1335,R668,general,p. 250
 C1336,R002,location,
 C1336,R404,general,p. 532
 C1336,R668,general,p. 256
+C1336,R670,general,p. 442
 C1337,R002,location,
 C1337,R668,general,p. 260
+C1337,R670,general,p. 445
 C1338,R002,location,
 C1338,R668,general,"pp. 283, 287"
 C1339,R002,location,
 C1339,R668,general,p. 390
 C1340,R002,location,
 C1340,R668,general,p. 390
+C1340,R671,general,p. 109
 C1341,R002,location,
 C1341,R668,general,p. 424
 C1342,R002,location,
@@ -3786,6 +3824,7 @@ C1397,R002,location,
 C1397,R668,general,"pp. 529, 551"
 C1398,R002,location,
 C1398,R668,general,"pp. 551, 552"
+C1398,R671,general,p. 314
 C1399,R002,location,
 C1399,R668,general,"pp. 573, 574"
 C1400,R002,location,
@@ -4161,6 +4200,7 @@ C1554,R668,general,p. 326
 C1554,R671,general,p. 6
 C1555,R002,location,
 C1555,R668,general,p. 326
+C1555,R671,general,p. 15
 C1556,R002,location,
 C1556,R668,general,p. 326
 C1556,R671,general,p. 15
@@ -15786,6 +15826,7 @@ C7231,R002,location,
 C7231,R668,general,p. 144
 C7232,R002,location,
 C7232,R668,general,"pp. 158, 161-163"
+C7232,R670,general,p. 310
 C7233,R002,location,
 C7233,R668,general,p. 185
 C7234,R002,location,
@@ -15803,6 +15844,7 @@ C7239,R002,location,
 C7239,R668,general,Sketch 12
 C7240,R002,location,
 C7240,R668,general,"pp. 214, 220"
+C7240,R670,general,p. 420
 C7241,R002,location,
 C7241,R668,general,p. 230
 C7242,R002,location,
@@ -15815,6 +15857,7 @@ C7245,R002,location,
 C7245,R668,general,p. 263
 C7246,R002,location,
 C7246,R668,general,p. 264
+C7246,R670,general,"pp. 447, 448"
 C7247,R002,location,
 C7247,R668,general,p. 266
 C7248,R002,location,
@@ -15931,6 +15974,7 @@ C7300,R668,general,p. 327
 C7300,R838,general,German pp.59-62 (Fold3 pages 133-136)
 C7301,R002,location,
 C7301,R668,general,p. 327
+C7301,R671,general,p. 15
 C7302,R002,location,
 C7302,R668,general,p. 327
 C7303,R002,location,
@@ -16039,10 +16083,12 @@ C7352,R668,general,p. 385
 C7352,R809,general,"German p.1, English p.1, Anlage 1"
 C7353,R002,location,
 C7353,R668,general,pp. 389-90
+C7353,R671,general,p. 109
 C7354,R002,location,
 C7354,R668,general,p. 390
 C7355,R002,location,
 C7355,R668,general,p. 390
+C7355,R671,general,p. 110
 C7356,R002,location,
 C7356,R668,general,p. 390
 C7357,R002,location,
@@ -16056,6 +16102,7 @@ C7360,R002,location,
 C7360,R668,general,p. 390
 C7361,R002,location,
 C7361,R668,general,pp. 390-1
+C7361,R671,general,p. 125
 C7362,R002,location,
 C7362,R668,general,p. 391
 C7363,R002,location,
@@ -16129,14 +16176,18 @@ C7396,R002,location,
 C7396,R668,general,"pp. 410, 413"
 C7397,R002,location,
 C7397,R668,general,p. 414
+C7397,R671,general,"pp. 118, 119"
 C7398,R002,location,
 C7398,R668,general,p. 414
+C7398,R671,general,"pp. 118, 119"
 C7399,R002,location,
 C7399,R668,general,pp. 415-17
+C7399,R671,general,p. 123
 C7400,R002,location,
 C7400,R668,general,p. 417
 C7401,R002,location,
 C7401,R668,general,p. 426
+C7401,R671,general,p. 123
 C7402,R002,location,
 C7402,R668,general,p. 426
 C7403,R002,location,
@@ -16629,6 +16680,7 @@ C7621,R668,general,"pp. 570, 573"
 C7621,R810,general,"German p.5, English p.5"
 C7622,R002,location,
 C7622,R668,general,p. 571
+C7622,R671,general,p. 314
 C7623,R002,location,
 C7623,R668,general,p. 571
 C7624,R002,location,
@@ -19675,3 +19727,89 @@ C8973,R001,location,
 C8973,R613,general,section 1
 C8974,R001,location,
 C8974,R871,general,section 1
+C8975,R001,location,
+C8975,R671,general,p. 14
+C8976,R002,location,
+C8976,R671,general,p. 61
+C8977,R002,location,
+C8977,R671,general,p. 65
+C8978,R002,location,
+C8978,R671,general,pp. 111–113
+C8979,R001,location,
+C8979,R670,general,p. 280
+C8980,R002,location,
+C8980,R671,general,p. 100
+C8981,R002,location,
+C8981,R671,general,p. 124
+C8982,R002,location,
+C8982,R671,general,p. 124
+C8983,R002,location,
+C8983,R671,general,p. 124
+C8984,R002,location,
+C8984,R671,general,p. 124
+C8985,R001,location,
+C8985,R671,general,"pp. 124, 125"
+C8986,R002,location,
+C8986,R671,general,p. 124
+C8987,R002,location,
+C8987,R671,general,p. 124
+C8988,R002,location,
+C8988,R671,general,p. 125
+C8989,R002,location,
+C8989,R671,general,p. 125
+C8990,R002,location,
+C8990,R671,general,p. 99
+C8991,R002,location,
+C8991,R671,general,p. 99
+C8992,R002,location,
+C8992,R671,general,p. 99
+C8993,R002,location,
+C8993,R671,general,p. 99
+C8994,R002,location,
+C8994,R671,general,p. 159
+C8995,R002,location,
+C8995,R671,general,p. 159
+C8996,R002,location,
+C8996,R671,general,"pp. 120, 122"
+C8997,R002,location,
+C8997,R671,general,p. 123
+C8998,R002,location,
+C8998,R671,general,p. 123
+C8999,R001,location,
+C8999,R671,general,p. 159
+C9000,R001,location,
+C9000,R670,general,p. 310
+C9001,R001,location,
+C9001,R670,general,p. 389
+C9002,R001,location,
+C9002,R670,general,"pp. 420, 421"
+C9003,R001,location,
+C9003,R670,general,p. 430
+C9004,R002,location,
+C9004,R671,general,p. 244
+C9005,R002,location,
+C9005,R671,general,p. 258
+C9006,R001,location,
+C9006,R671,general,p. 262
+C9007,R002,location,
+C9007,R671,general,p. 267
+C9008,R002,location,
+C9008,R671,general,p. 314
+C9009,R002,location,
+C9009,R671,general,p. 314
+C9010,R002,location,
+C9010,R670,general,p. 421
+C9011,R001,location,
+C9011,R671,general,p. 262
+C9012,R002,location,
+C9012,R671,general,p. 262
+C9013,R002,location,
+C9013,R670,general,"pp. 378, 379"
+C9014,R001,location,
+C9014,R670,general,"pp. 236, 237"
+C9015,R002,location,
+C9015,R670,general,p. 421
+C9016,R001,location,
+C9016,R670,general,p. 261
+C9017,R002,location,
+C9017,R670,general,p. 449

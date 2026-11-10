@@ -48468,6 +48468,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.3657,
+     48.7451
+    ]
+   },
+   "properties": {
+    "claim_id": "C8964",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LL-091D",
+    "unit_name": "91st Luftlande Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-10",
+    "place_id": "PL1241",
+    "location_name": "Subligny, Manche (Normandy (last recorded place, Subligny))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the division is disbanded after its losses in Normandy",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R237;R002",
+    "source_locator": "R237: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.0911,
      48.4312
     ]
@@ -53873,6 +53914,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R268;R002",
     "source_locator": "R268: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.0261,
+     48.6494
+    ]
+   },
+   "properties": {
+    "claim_id": "C8963",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-077D",
+    "unit_name": "77th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0335",
+    "location_name": "Saint-Malo, Ille-et-Vilaine (Saint-Malo)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the division is lost with the fall of Saint-Malo",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "destroyed",
+    "location_date": "1944-08-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R233;R001",
+    "source_locator": "R233: section 1"
    }
   },
   {
@@ -101358,6 +101440,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.9442,
+     51.1484
+    ]
+   },
+   "properties": {
+    "claim_id": "C8965",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-017D",
+    "unit_name": "17th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-28",
+    "place_id": "PL4011",
+    "location_name": "Lokeren, Oost-Vlaanderen (between Ghent and Sint-Niklaas)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the division, scattered between Ghent and Sint-Niklaas, is officially disbanded",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R268;R002",
+    "source_locator": "R268: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6363,
      49.2133
     ]
@@ -101720,6 +101843,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R213;R856;R001",
     "source_locator": "R213: Einsatz und Unterstellung; R856: notes on Maastricht bridgehead (early September)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C8974",
+    "conflict_group_id": "G117",
+    "claim_status": "alternate",
+    "unit_id": "GER-INF-159D",
+    "unit_name": "159th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-29",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (Alsace (Colmar, October 1944 table row))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "the 159th Reserve Division becomes the 159th Infantry Division (date of the reserve division page)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R871;R001",
+    "source_locator": "R871: section 1"
    }
   },
   {
@@ -102827,6 +102991,47 @@
     "location_temporal_offset_days": -1,
     "reference_ids": "R344;R002",
     "source_locator": "R344: Assignment and Attachment to Higher Units, row 1 Oct 44, and Command Posts, row 30 Sep 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5339,
+     48.7244
+    ]
+   },
+   "properties": {
+    "claim_id": "C8971",
+    "conflict_group_id": "G114",
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-111B",
+    "unit_name": "Panzer-Brigade 111",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-01",
+    "place_id": "PL0015",
+    "location_name": "Arracourt, Meurthe-et-Moselle (Arracourt area (last fighting))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "the brigade is disbanded and absorbed by the 11th Panzer Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R880;R701;R001",
+    "source_locator": "R880: section 1; R701: Panzer brigades"
    }
   },
   {
@@ -105792,8 +105997,8 @@
    },
    "properties": {
     "claim_id": "C3260",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -109886,6 +110091,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3556,
+     48.0817
+    ]
+   },
+   "properties": {
+    "claim_id": "C8973",
+    "conflict_group_id": "G117",
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-159D",
+    "unit_name": "159th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL0403",
+    "location_name": "Colmar, Haut-Rhin (Alsace (Colmar, October 1944 table row))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "the 159th Reserve Division becomes the 159th Infantry Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R613;R001",
+    "source_locator": "R613: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3278,
      51.4107
     ]
@@ -112926,8 +113172,8 @@
    },
    "properties": {
     "claim_id": "C3360",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -121126,8 +121372,8 @@
    },
    "properties": {
     "claim_id": "C3536",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -122889,7 +123135,7 @@
    },
    "properties": {
     "claim_id": "C8935",
-    "conflict_group_id": null,
+    "conflict_group_id": "G116",
     "claim_status": "preferred",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
@@ -128137,8 +128383,8 @@
    },
    "properties": {
     "claim_id": "C3670",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -131616,6 +131862,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8972",
+    "conflict_group_id": "G115",
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-108B",
+    "unit_name": "Panzer-Brigade 108",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-30",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia (north-east of Aachen-Geilenkirchen)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the brigade is disbanded after being pulled out of the line north-east of Aachen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R881;R002",
+    "source_locator": "R881: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8138,
      48.4827
     ]
@@ -133918,8 +134205,8 @@
    },
    "properties": {
     "claim_id": "C3757",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G115",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-108B",
     "unit_name": "Panzer-Brigade 108",
     "nationality": "Germany",
@@ -136337,8 +136624,8 @@
    },
    "properties": {
     "claim_id": "C3816",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -150851,8 +151138,8 @@
    },
    "properties": {
     "claim_id": "C4046",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G115",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-108B",
     "unit_name": "Panzer-Brigade 108",
     "nationality": "Germany",
@@ -152163,8 +152450,8 @@
    },
    "properties": {
     "claim_id": "C4078",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G116",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
     "nationality": "Germany",
@@ -162249,8 +162536,8 @@
    },
    "properties": {
     "claim_id": "C4240",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G116",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
     "nationality": "Germany",
@@ -170531,8 +170818,8 @@
    },
    "properties": {
     "claim_id": "C4371",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G116",
+    "claim_status": "alternate",
     "unit_id": "GER-INF-462D",
     "unit_name": "462nd Infantry Division",
     "nationality": "Germany",
@@ -198405,6 +198692,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3228,
+     51.517
+    ]
+   },
+   "properties": {
+    "claim_id": "C8968",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-FELDT",
+    "unit_name": "Korps Feldt (Generalkommando Feldt)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-19",
+    "place_id": "PL0622",
+    "location_name": "Geldern, North Rhine-Westphalia (corps sector south of Goch to south of Geldern)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Korps Feldt is disbanded with immediate effect by order of the First Parachute Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R654;R002",
+    "source_locator": "R654: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.13,
      49.6114
     ]
@@ -203728,6 +204056,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R177;R002",
     "source_locator": "R177: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0276,
+     50.4265
+    ]
+   },
+   "properties": {
+    "claim_id": "C8966",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-150B",
+    "unit_name": "Panzer-Brigade 150",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-25",
+    "place_id": "PL0923",
+    "location_name": "Malmédy, Liège (Malmedy area (last recorded place))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the brigade is disbanded",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R271;R002",
+    "source_locator": "R271: section 1"
    }
   },
   {
@@ -301643,6 +302012,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3362,
+     49.6158
+    ]
+   },
+   "properties": {
+    "claim_id": "C8969",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-079D",
+    "unit_name": "79th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-18",
+    "place_id": "PL2695",
+    "location_name": "Baumholder, Rhineland-Palatinate (between Idar-Oberstein and Baumholder)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the division is scattered on the march between Idar-Oberstein and Baumholder",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R330;R002",
+    "source_locator": "R330: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -309105,6 +309515,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8923,
+     49.3107
+    ]
+   },
+   "properties": {
+    "claim_id": "C8970",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-079D",
+    "unit_name": "79th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-24",
+    "place_id": "PL4012",
+    "location_name": "Pfälzerwald, Rheinland-Pfalz (Rhine crossing from the Palatinate (point not named))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the remnants are taken across the Rhine and the division is disbanded",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R330;R002",
+    "source_locator": "R330: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -310082,6 +310533,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R178;R002",
     "source_locator": "R178: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.769,
+     49.4432
+    ]
+   },
+   "properties": {
+    "claim_id": "C8962",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-019D",
+    "unit_name": "19th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-26",
+    "place_id": "PL3864",
+    "location_name": "Kaiserslautern, Rhineland-Palatinate (Kaiserslautern area)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the division is officially disbanded; the staff and a battle group remain",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R308;R002",
+    "source_locator": "R308: section 1"
    }
   },
   {
@@ -314920,6 +315412,47 @@
     "location_temporal_offset_days": -4,
     "reference_ids": "R351;R002",
     "source_locator": "R351: Assignment and Attachment to Higher Units, row 29 Mar 45, and Command Posts, row 25 Mar"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2902,
+     50.2147
+    ]
+   },
+   "properties": {
+    "claim_id": "C8961",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-089C",
+    "unit_name": "LXXXIX Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-29",
+    "place_id": "PL4009",
+    "location_name": "Idstein, Hessen (encircled corps area in the Taunus (capture place not given))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the corps staff is captured after the corps is encircled east of the Rhine",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R249;R002",
+    "source_locator": "R249: section 1"
    }
   },
   {
@@ -331648,6 +332181,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R866;R002",
     "source_locator": "R866: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2442,
+     50.5792
+    ]
+   },
+   "properties": {
+    "claim_id": "C8967",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-272D",
+    "unit_name": "272nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL0422",
+    "location_name": "Ludendorff Bridge, Remagen (Remagen bridgehead front (last recorded place))",
+    "location_represents": "sector_center",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the division, destroyed by the end of March, is officially disbanded",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R314;R001",
+    "source_locator": "R314: section 1"
    }
   },
   {

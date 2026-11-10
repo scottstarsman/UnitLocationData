@@ -2,6 +2,39 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Triage count correction, roadmap 372 (branch `midwar-ends`, commit 5)
+
+- **Roadmap 372 split:** old value "22 mid-war, 67 war's end, 67 unknown", new value "23 mid-war, 67 war's end, 66 unknown". Reason: of the two units reclassified in chunk 2, only the 277th VGD came from mid-war; the 344th Infantry Division was in the unknown list (24-1=23 mid-war, 65+2=67 war's end, 67-1=66 unknown).
+- **344th Infantry Division wording:** roadmap 372 old value "moved the 277th VGD and the 344th Infantry Division from mid-war to war's end", new value "moved the 277th VGD from mid-war to war's end and the 344th Infantry Division from unknown to war's end"; the chunk 2 entry below now names where each unit moved from. Reason: the 344th was triaged as unknown in commit 1. Docs only; no data changed.
+
+## 9 November 2026 — Roadmap 370, 371 and 357 review (branch `midwar-ends`, commit 4)
+
+- **Roadmap 370 (c), 159th Infantry Division:** new redesignation rows `C8973` (9 October 1944, Lexikon infantry division page `R613`, preferred) and `C8974` (29 September 1944, reserve division page `R871`, alternate) in conflict group `G117`, at the October 1944 table place (Colmar, 50 km, `Location caveat`), 0.3.
+- **Roadmap 370 (d), 462nd Infantry Division:** `C8935` conflict_group_id old value blank, new value `G116` (preferred); map rows `C4078`, `C4240`, `C4371` claim_status old value preferred, new value alternate, conflict_group_id old value blank, new value `G116`, reason: the 462nd was redesignated a Volksgrenadier division by the beginning of November 1944 (lineage `UL007`), so the old label on the map is stale.
+- **Coordinate exceptions:** 3 conflict-distance rows for `G116`.
+- **Roadmap 371:** the 7th Armored Division ETO-OB table re-read (archived copy); `CR0409` and `CR0156` confirmed (in force on 8 May 1945). No relation changed; the remaining items are documented with their reasons in roadmap 371.
+- **Roadmap 357:** each of the 83 pairs re-classified: 16 closed (text row is an objective or approach route), 10 closed (text row is a command post of another date: a sequence), 1 resolved earlier (`G113`), 56 still open with the reason (41 a day apart, 15 on the same day). No data changed.
+- **Roadmap 370 (a) and (b)** stay open with the reason in the roadmap.
+
+## 9 November 2026 — Mid-war German ends, chunk 2: Panzer-Brigades 108 and 111 (branch `midwar-ends`, commit 3)
+
+- **End rows:** `C8971` Panzer-Brigade 111 disbanded and absorbed by the 11th Panzer Division with effect from 1 October 1944 (Lexikon, new reference `R880`, and Wikipedia `R701`: two families, approximate place Arracourt, 0.5); `C8972` Panzer-Brigade 108 disbanded with effect from 30 October 1944 after being pulled out north-east of Aachen-Geilenkirchen (Lexikon, new reference `R881`, 0.3; the unit record's Wikipedia note says only "November 1944").
+- **Conflict groups:** `G114` (111): the end row is preferred; the 12th Army Group map rows `C3260`, `C3360`, `C3536`, `C3670`, `C3816` (3-31 October 1944) are alternates. `G115` (108): the end row is preferred; map rows `C3757` (31 October) and `C4046` (14 November) are alternates. Each edited row gives claim_status and conflict_group_id old value, new value and reason (stale map symbol after the disbandment).
+- **Coordinate exceptions:** 5 conflict-distance rows for `G114` and `G115` (stale weekly map positions).
+- **Reclassified in the triage (roadmap 372):** the 277th VGD (its staff was captured on 9 March 1945, but remnants fought on to the Harz in April) and the 344th Infantry Division (the first 344th was disbanded at Linfort on 14 October 1944 and the 91st Infantry Division then forming was renamed 344th, which went to the Eastern Front at the end of December 1944 and ended at Berlin) are war's-end units, not mid-war conflicts. The 277th VGD moved from mid-war and the 344th Infantry Division from unknown (corrected in commit 5).
+
+## 9 November 2026 — Mid-war German ends, chunk 1: ten units (branch `midwar-ends`, commit 2)
+
+- **End rows (10, Lexikon der Wehrmacht after Tessin, one family, 0.3):** `C8961` LXXXIX Corps, staff captured 29 March 1945 after encirclement in the Taunus (point Idstein, new place `PL4009`, 25 km); `C8962` 19th VGD officially disbanded 26 March 1945 (Kaiserslautern area, 25 km); `C8963` 77th Infantry Division lost with the fall of Saint-Malo, 15 August 1944 (destroyed; the disbandment order of 15 September 1944 is in the notes); `C8964` 91st Luftlande Division disbanded 10 August 1944 (last recorded place Subligny, 50 km); `C8965` 17th Luftwaffe Field Division scattered between Ghent and Sint-Niklaas and disbanded 28 September 1944 (point Lokeren, new place `PL4011`); `C8966` Panzer-Brigade 150 disbanded 25 December 1944 (last recorded place Malmedy); `C8967` 272nd VGD, destroyed by the end of March, officially disbanded 12 April 1945 (last recorded place, Remagen front, 50 km); `C8968` Korps Feldt disbanded 19 December 1944 by order of the First Parachute Army (Geldern sector); `C8969` 79th VGD scattered between Idar-Oberstein and Baumholder 18 March 1945 and `C8970` disbanded after crossing the Rhine, 24 March 1945 (Palatinate Forest point, new place `PL4012`, 50 km). Rows whose source gives no place carry a `Location caveat` sentence naming the point used.
+- **Edit:** `C8955` (Panzer-Brigade 107 at Baumholder, 9 November 1944) `disestablished` old value false, new value true, reason: the brigade was dissolved on 7 November 1944 into the 25th Panzergrenadier Division (R879); a lineage row is not possible (cycle with `UL008`).
+- **Tests:** scenario 115 now reads only the 79th VGD rows before `C8961`; new scenario 207.
+- **Place:** a duplicate Kaiserslautern place created by the geocoder was removed before commit; `C8962` uses the existing `PL3864` (id `PL4010` is skipped).
+
+## 9 November 2026 — Mid-war German ends, step 1: priority rule and triage of roadmap 372 (branch `midwar-ends`, commit 1)
+
+- **New standing rule (Scott, 9 November 2026):** end rows for German units that ended at the war's end are low priority (future work); mid-war ends still matter. Recorded in HANDOFF rule 20, `docs/methodology.md` (last bullet) and roadmap 372.
+- **Triage of roadmap 372 (156 units):** 24 mid-war formations, 65 war's end (60 formations, 5 battle groups), 67 unknown (31 formations, 36 battalions and battle groups); the lists are in roadmap 372. No data changed.
+
 ## 9 November 2026 — Consistency fix 4: weak map-against-text pairs (branch `wf-consistency-fixes`, commit 6)
 
 - **Map rows capped (62):** every 12th Army Group situation-map row (`R781`) in the pairs of roadmap 357 and 358 that stood above 0.3 (0.5 or 0.7) is now 0.3, so no map row outranks its text row; each row's notes give the old value, the new value and the reason. No row was deleted.

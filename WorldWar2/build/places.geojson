@@ -298,7 +298,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -6578,7 +6578,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Brittany",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -7938,7 +7938,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 31
+    "claims_count": 33
    }
   },
   {
@@ -8318,7 +8318,7 @@
     "precision_km": 1,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 15
+    "claims_count": 16
    }
   },
   {
@@ -10978,7 +10978,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 12
+    "claims_count": 13
    }
   },
   {
@@ -12258,7 +12258,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -18198,7 +18198,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Liège",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -24558,7 +24558,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -53598,7 +53598,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -76978,7 +76978,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79858,6 +79858,66 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2902,
+     50.2147
+    ]
+   },
+   "properties": {
+    "place_id": "PL4009",
+    "name": "Idstein, Hessen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Hessen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.9442,
+     51.1484
+    ]
+   },
+   "properties": {
+    "place_id": "PL4011",
+    "name": "Lokeren, Oost-Vlaanderen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Oost-Vlaanderen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8923,
+     49.3107
+    ]
+   },
+   "properties": {
+    "place_id": "PL4012",
+    "name": "Pfälzerwald, Rheinland-Pfalz",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
     "claims_count": 1
    }
   }

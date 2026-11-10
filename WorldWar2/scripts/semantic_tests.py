@@ -3143,6 +3143,8 @@ def scenario_205_german_end_rows():
     expect(s + ': one-family end rows are 0.3', sorted({claims[c]['confidence'] for c in ('C8947', 'C8948', 'C8949', 'C8950', 'C8951')}), ['0.3'])
     expect(s + ': chunk B end rows', [(claims[c]['unit_id'], claims[c]['event_type']) for c in ('C8952', 'C8953')], [('GER-PG-015D', 'surrender'), ('GER-INF-416D', 'destruction')])
     expect(s + ': Panzer-Brigade 105 ends in the 9th Panzer Division (month only)', (lin['UL019']['successor_unit_id'], lin['UL019']['effective_date']), ('GER-PZ-009D', '1944-10'))
+    expect(s + ': chunk C Twelfth Army surrender on the Elbe (two families)', (claims['C8956']['unit_id'], claims['C8956']['date'], claims['C8956']['confidence']), ('GER-ARMY-012A', '1945-05-07', '0.5'))
+    expect(s + ': chunk C Enns-line rows are eastern-front and 50 km', sorted({(claims[c]['theater'], claims[c]['precision_km']) for c in ('C8958', 'C8959')}), [('eastern_front', '50')])
     expect(s + ': the 49th Infantry Division ends in the 246th VGD', (lin['UL015']['predecessor_unit_id'], lin['UL015']['successor_unit_id'], lin['UL015']['kind']), ('GER-INF-049D', 'GER-VG-246D', 'absorbed_into'))
 
 def main():

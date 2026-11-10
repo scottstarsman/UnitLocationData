@@ -8998,7 +8998,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -19398,7 +19398,7 @@
     "precision_km": 3,
     "country": "AT",
     "region": "Oberösterreich",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -79838,6 +79838,26 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.0158,
+     52.54
+    ]
+   },
+   "properties": {
+    "place_id": "PL4008",
+    "name": "Fischbeck (Elbe), Sachsen-Anhalt",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
     "claims_count": 1
    }
   }

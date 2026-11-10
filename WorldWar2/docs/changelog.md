@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Consistency fix 3, chunk C: Elbe and Enns surrenders (branch `wf-consistency-fixes`, commit 5)
+
+- **End rows (4):** `C8956` Twelfth Army, bulk across the Elbe at Tangermünde and Fischbeck into American captivity by 7 May 1945 (Lexikon and MacDonald, The Last Offensive p. 464: two families, 0.5); `C8957` XXXIX Panzer Corps gathers at Fischbeck (new place `PL4008`) and begins to cross the Elbe, 4 May 1945 (Lexikon, 0.3); `C8958` 12th SS Panzer Division and `C8959` 9th SS Panzer Division cross the Enns demarcation line into American captivity, 8 May 1945 (Lexikon, 0.3, `eastern_front`; the town of Enns is a representative point, precision 50 km, because only the river is named).
+- **Read and left open (roadmap 372 updated):** all remaining Lexikon pages of the audit list were scanned for a dated end with a place; the further units found have a date without a place or a place without a date (listed in roadmap 372).
+
 ## 9 November 2026 — Consistency fix 3, chunk B: more German end rows (branch `wf-consistency-fixes`, commit 4)
 
 - **End rows (2):** `C8952` 15th Panzergrenadier Division, British captivity at Lamstedt (new place `PL4006`) with the OB Nordwest capitulation, 5 May 1945 (Lexikon `R609`, 0.3); `C8953` 416th Infantry Division, remnants broken up by American units at Wasserburg am Inn (new place `PL4007`), 1 May 1945 (Lexikon, 0.3).

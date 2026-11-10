@@ -356542,6 +356542,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.0158,
+     52.54
+    ]
+   },
+   "properties": {
+    "claim_id": "C8957",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-039C",
+    "unit_name": "XXXIX Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-05-04",
+    "place_id": "PL4008",
+    "location_name": "Fischbeck (Elbe), Sachsen-Anhalt (Fischbeck, east bank of the Elbe opposite Tangermünde)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the corps gathers at Fischbeck and begins crossing the Elbe into American captivity",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R260;R002",
+    "source_locator": "R260: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.7333,
      48.1
     ]
@@ -357929,6 +357970,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R862;R617;R002",
     "source_locator": "R862: Einsatz und Unterstellung, table of 1945, May row; R617: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9689,
+     52.5408
+    ]
+   },
+   "properties": {
+    "claim_id": "C8956",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-012A",
+    "unit_name": "Twelfth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-07",
+    "place_id": "PL0456",
+    "location_name": "Tangermünde, Sachsen-Anhalt (Elbe crossings at Tangermünde and Fischbeck)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "the bulk of the army crosses the Elbe at Tangermünde and Fischbeck into American captivity",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R663;R569;R001",
+    "source_locator": "R663: section 1; R569: p. 464"
    }
   },
   {
@@ -363054,6 +363136,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R175;R002",
     "source_locator": "R175: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "claim_id": "C8958",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "eastern_front",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-05-08",
+    "place_id": "PL0983",
+    "location_name": "Enns, Oberösterreich (Enns demarcation line (representative point: town of Enns))",
+    "location_represents": "front_line_point",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the remnants cross the Enns demarcation line into American captivity",
+    "operation_id": "OP-FRONT-EASTERN",
+    "operation": "Eastern Front",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Eastern Front",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R278;R002",
+    "source_locator": "R278: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "claim_id": "C8959",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "eastern_front",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-05-08",
+    "place_id": "PL0983",
+    "location_name": "Enns, Oberösterreich (Enns demarcation line (representative point: town of Enns))",
+    "location_represents": "front_line_point",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the remnants cross the Enns demarcation line into American captivity",
+    "operation_id": "OP-FRONT-EASTERN",
+    "operation": "Eastern Front",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Eastern Front",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R281;R002",
+    "source_locator": "R281: section 1"
    }
   },
   {

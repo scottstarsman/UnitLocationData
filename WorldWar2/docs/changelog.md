@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 10 November 2026 — Ellis leftovers, chunk 5: German units in the British and Canadian sectors (branch `ellis-leftovers`)
+
+- **Why:** Continue the Ellis leftover-entry pass (roadmap 374) with German units in the British and Canadian sectors. Each fact was re-checked against the Ellis text. Ellis was added as a supporting official citation only where it names the same place on the same date. Confidence was left unchanged (several rows already have more than one family; two Allied official histories are not treated here as a reason to raise a German-unit row).
+- **Supporting citations (8 existing rows).** Ellis vol. I added: `C0009` (716th Infantry Division, Juno–Sword coastal sector, 6 June); `C0008` (711th Infantry Division, coast east of the Orne/Dives, 6 June); `C0004` (21st Panzer Division counter-attack between Caen and the sea, 6 June); `C0060` (Panzer Lehr Division arrives at Tilly-sur-Seulles, 9 June); `C0170` (12th SS Panzer Division loses Rauray, 27 June); `C7232` (16th Luftwaffe Field Division at Lebisey, 8 July); `C0776` (12th SS Panzer Division in the Charnwood line at Caen, 8 July); `C7240` (89th Infantry Division holds the Totalize front including Tilly-la-Campagne, 8 August). Not cited: C0049 (12th SS at Authie, 8 June), because Ellis dates the Authie commitment to 7 June; C0003 (12th SS held at Lisieux on 6 June), because Ellis places the division south of Rouen that day.
+- **New claims (1, `C9014`).** 12th SS Panzer Division first elements committed at Authie on 7 June to stem the Canadian advance (`PL0019`, 0.5). Existing C0033 (arrival, Caen-sector assembly areas, same day) is a different event type. No new places, relations, references or conflict groups. Next free: `C9015`, `CR1282`, `PL4017`, `R882`, `UL020`, `G119`.
+- **Tests:** scenario 213.
+- **Left to do:** remaining named places still only on weekly maps; then re-measure source-balance shares, grid compare, update PR #84, CI and Drive sync. Roadmap 374 stays open.
+
 ## 10 November 2026 — Ellis leftovers, chunk 4: Polish re-check and Canadian supporting citations (branch `ellis-leftovers`)
 
 - **Why:** Continue the Ellis leftover-entry pass (roadmap 374) with more Polish (1st Polish Armoured) and Canadian confirmations, as supporting official citations. Each leftover note was re-checked against the Ellis text. Ellis and Stacey are not treated as independent families for Canadian-unit facts (citation added, confidence not raised).

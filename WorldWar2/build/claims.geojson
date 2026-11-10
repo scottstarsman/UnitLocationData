@@ -4220,8 +4220,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R448;R449;R042;R132;R137;R013;R761;R668;R001",
-    "source_locator": "R761: pp. 21-23; R668: pp. 115, 124"
+    "reference_ids": "R448;R449;R042;R132;R137;R013;R761;R668;R670;R001",
+    "source_locator": "R761: pp. 21-23; R668: pp. 115, 124; R670: pp. 198, 201, 203, 204"
    }
   },
   {
@@ -4384,8 +4384,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R448;R087;R001",
-    "source_locator": null
+    "reference_ids": "R448;R087;R670;R001",
+    "source_locator": "R670: pp. 198, 200"
    }
   },
   {
@@ -4425,8 +4425,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R132;R448;R088;R137;R668;R001",
-    "source_locator": "R668: pp. 66, 124, 130"
+    "reference_ids": "R132;R448;R088;R137;R668;R670;R001",
+    "source_locator": "R668: pp. 66, 124, 130; R670: pp. 198, 200, 201, 207"
    }
   },
   {
@@ -7637,6 +7637,47 @@
     ]
    },
    "properties": {
+    "claim_id": "C9014",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-06-07",
+    "place_id": "PL0019",
+    "location_name": "Authie (on the left of the 21st Panzer Division)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "First elements reach the front and are committed at once on the left of the 21st Panzer Division, to stem the Canadian advance at Authie",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: pp. 236, 237"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4306,
+     49.2067
+    ]
+   },
+   "properties": {
     "claim_id": "C0048",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -8279,8 +8320,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R449;R761;R668;R001",
-    "source_locator": "R761: p. 23; R668: p. 142"
+    "reference_ids": "R141;R449;R761;R668;R670;R001",
+    "source_locator": "R761: p. 23; R668: p. 142; R670: p. 237"
    }
   },
   {
@@ -17586,8 +17627,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R002",
-    "source_locator": null
+    "reference_ids": "R139;R670;R002",
+    "source_locator": "R670: p. 280"
    }
   },
   {
@@ -24515,8 +24556,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R591;R278;R668;R001",
-    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries); R668: pp. 158-161"
+    "reference_ids": "R591;R278;R668;R670;R001",
+    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries); R668: pp. 158-161; R670: p. 310"
    }
   },
   {
@@ -24843,8 +24884,8 @@
     "location_date": "1944-07-08",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 158, 161-163"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 158, 161-163; R670: p. 310"
    }
   },
   {
@@ -47967,8 +48008,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 214, 220"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: pp. 214, 220; R670: p. 420"
    }
   },
   {

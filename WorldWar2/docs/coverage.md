@@ -20,7 +20,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 65 |
 | Germany | army | 0 | 0 | 17 | 17 | 10 | 340 |
 | Germany | corps | 1 | 0 | 46 | 47 | 41 | 844 |
-| Germany | division | 0 | 0 | 135 | 135 | 112 | 2552 |
+| Germany | division | 0 | 0 | 135 | 135 | 112 | 2553 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 95 |
 | Germany | regiment/battle_group | 0 | 0 | 36 | 36 | 3 | 82 |
 | Germany | battalion | 0 | 0 | 6 | 6 | 0 | 9 |
@@ -41,7 +41,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **420** | **427** | **259** | **9002** |
+| **All** | | **7** | **0** | **420** | **427** | **259** | **9003** |
 
 ## Operations
 
@@ -50,25 +50,25 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 9 | 6 | 125 |
-| campaign | 9 | 9 | 7230 |
+| campaign | 9 | 9 | 7231 |
 | operation | 33 | 33 | 811 |
 | battle | 20 | 20 | 551 |
 | phase | 4 | 4 | 285 |
-| **All** | **75** | **72** | **9002** |
+| **All** | **75** | **72** | **9003** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4000 places and 185 alias names for 9002 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4000 places and 185 alias names for 9003 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3896 | 8792 |
+| point | 3896 | 8793 |
 | area | 86 | 189 |
 | line | 18 | 21 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1547 | 3314 |
+| France (FR) | 1547 | 3315 |
 | Germany (DE) | 1428 | 3110 |
 | Netherlands (NL) | 489 | 1413 |
 | Belgium (BE) | 366 | 819 |

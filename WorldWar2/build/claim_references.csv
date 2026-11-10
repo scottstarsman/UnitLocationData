@@ -23,6 +23,7 @@ C0004,R137,strength,
 C0004,R448,general,
 C0004,R449,general,
 C0004,R668,general,"pp. 115, 124"
+C0004,R670,general,"pp. 198, 201, 203, 204"
 C0004,R761,general,pp. 21-23
 C0005,R001,location,
 C0005,R057,general,
@@ -36,12 +37,14 @@ C0007,R449,general,
 C0008,R001,location,
 C0008,R087,general,
 C0008,R448,general,
+C0008,R670,general,"pp. 198, 200"
 C0009,R001,location,
 C0009,R088,general,
 C0009,R132,general,
 C0009,R137,strength,
 C0009,R448,general,
 C0009,R668,general,"pp. 66, 124, 130"
+C0009,R670,general,"pp. 198, 200, 201, 207"
 C0010,R001,location,
 C0010,R102,general,
 C0010,R447,command_relationship,"p. 237-238, 259-260"
@@ -237,6 +240,7 @@ C0060,R001,location,
 C0060,R141,general,
 C0060,R449,general,
 C0060,R668,general,p. 142
+C0060,R670,general,p. 237
 C0060,R761,general,p. 23
 C0061,R001,location,
 C0061,R049,general,
@@ -573,6 +577,7 @@ C0169,R112,general,
 C0169,R446,general,
 C0170,R002,location,
 C0170,R139,general,
+C0170,R670,general,p. 280
 C0171,R001,location,
 C0171,R139,general,
 C0171,R140,general,
@@ -2252,6 +2257,7 @@ C0776,R001,location,
 C0776,R278,general,Einsatz und Unterstellung (7 and 9 July 1944 entries)
 C0776,R591,general,"p. 121-122, 122"
 C0776,R668,general,pp. 158-161
+C0776,R670,general,p. 310
 C0777,R001,location,
 C0777,R278,general,Einsatz und Unterstellung (9 July 1944 entry)
 C0777,R591,general,p. 122
@@ -15820,6 +15826,7 @@ C7231,R002,location,
 C7231,R668,general,p. 144
 C7232,R002,location,
 C7232,R668,general,"pp. 158, 161-163"
+C7232,R670,general,p. 310
 C7233,R002,location,
 C7233,R668,general,p. 185
 C7234,R002,location,
@@ -15837,6 +15844,7 @@ C7239,R002,location,
 C7239,R668,general,Sketch 12
 C7240,R002,location,
 C7240,R668,general,"pp. 214, 220"
+C7240,R670,general,p. 420
 C7241,R002,location,
 C7241,R668,general,p. 230
 C7242,R002,location,
@@ -19797,3 +19805,5 @@ C9012,R002,location,
 C9012,R671,general,p. 262
 C9013,R002,location,
 C9013,R670,general,"pp. 378, 379"
+C9014,R001,location,
+C9014,R670,general,"pp. 236, 237"

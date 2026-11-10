@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -1398,7 +1398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 12
+    "claims_count": 13
    }
   },
   {
@@ -10518,7 +10518,7 @@
     "precision_km": 10,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -11378,7 +11378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 26
+    "claims_count": 27
    }
   },
   {
@@ -13818,7 +13818,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -14878,7 +14878,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -14958,7 +14958,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -15518,7 +15518,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandie",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69018,7 +69018,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -69858,7 +69858,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79959,6 +79959,46 @@
     "country": "NL",
     "region": "Limburg",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1222,
+     49.0175
+    ]
+   },
+   "properties": {
+    "place_id": "PL4015",
+    "name": "Ernes, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Calvados",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0642,
+     51.7894
+    ]
+   },
+   "properties": {
+    "place_id": "PL4016",
+    "name": "Nütterden (Kranenburg), North Rhine-Westphalia",
+    "alt_names": "Nutterden",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 2
    }
   }
  ]

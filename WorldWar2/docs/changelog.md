@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 10 November 2026 — Ellis leftovers, end of pass: source-balance re-measure (branch `ellis-leftovers`)
+
+- **Why:** Close the leftover-entry pass (the first recommended step of roadmap 374) by re-measuring source-balance shares and comparing the who_controls grid against main. No further claim rows were added in this commit.
+- **Docs:** [`docs/source_balance.md`](source_balance.md) and roadmap 374 now record the before/after shares. On main `a8b9509`: 8,963 claims. On this branch: 9,006 claims (8,856 preferred, 134 alternate, 16 disputed). UK own-nation support 18.2% (187 of 1,030) → 23.1% (247 of 1,071); only US or Wikipedia 67.2% → 63.9%. Canadian own-nation 62.4% (311 of 498) → 62.3% (311 of 499); Ellis is not a second independent family for Canadian-unit facts. Polish own-nation unchanged at 0% (0 of 81). Claims citing Ellis 229 (2.6%) → 324 (3.6%) (`R670` 89 → 140, `R671` 140 → 184). US citing / exclusive 70.9% / 66.0% → 70.6% / 65.7% (absolute US counts unchanged). The 79th Armoured Division left the no-own-nation list (1 Wikipedia-only row → 16 Ellis-supported claims).
+- **Grid:** who_controls standard grid, main `a8b9509` versus this branch: 14,900 answers, 9 changed, 0 new keys. No command answer changed. All nine differences are activity lines: eight new `in_line` observations on dates of new Ellis claims (`C8990` 3rd Division, `C8991` 11th Armoured, `C8994` 15th Division, `C8995` 6th Guards Tank Brigade, `C8998` 52nd Division, `C9002` and `C9003` 79th Armoured, `C9016` 50th Division); one confidence update on the existing 11th Armoured observation `C0162` (0.5 → 0.7) after the Ellis supporting citation.
+- **Left to do:** remaining recommended steps of roadmap 374 (CMHQ/AHQ reports, de Lattre leftovers, de Jong, Joslen, and a Polish-authored source). This commit does not merge the branch.
+
 ## 10 November 2026 — Ellis leftovers, chunk 6: named places still only on weekly maps (branch `ellis-leftovers`)
 
 - **Why:** Close the Ellis leftover-entry pass (roadmap 374) with remaining named places that Ellis states on a dated day, but which were present in the table only as a weekly 12th Army Group map dot at a different named place (or had no text row). Ellis was not added to those map rows. Leftover notes were re-checked; many candidates already have text rows (for example 15th Division at Mondrainville, 50th Division at Amayé-sur-Seulles, 7th Armoured at Aunay-sur-Odon) or were too loosely dated to enter (51st Division at Poussy-la-Campagne / St. Sylvain, whose "course of the day" on vol. I p. 425 follows the morning of 11 August).

@@ -1,6 +1,6 @@
 # Source nationality balance (survey, 10 November 2026)
 
-Survey and plan only: no claims were added or changed. Branch `source-balance`. Method and figures from `data/references.csv` and `build/all_claims.csv` on main `a8b9509` (8,963 claims, of which 8,814 preferred, 133 alternate, 16 disputed).
+Survey and plan, then a re-measure after the first recommended step. The tables in this page are the baseline from `data/references.csv` and `build/all_claims.csv` on main `a8b9509` (8,963 claims, of which 8,814 preferred, 133 alternate, 16 disputed), taken on branch `source-balance` when no claims were added or changed. After the Ellis leftover-entry pass the same script was run again; those shares are in [Ellis leftover-entry pass (re-measured 10 November 2026)](#ellis-leftover-entry-pass-re-measured-10-november-2026).
 
 The review queue already hints at own-nation official histories by unit nationality (`docs/coverage_report.md`). This page measures how far the citations actually go, names the thinnest areas, and lists free non-US sources worth reading next.
 
@@ -116,9 +116,41 @@ These four are already references. How they were read is taken from `docs/source
 
 **Stacey, *The Victory Campaign* (`R668`, family `canada_ca`).** Canadian official history, Vol. III, 1960. Free PDF from DND/DHH, confirmed live (HTTP 200): [canada.ca official-histories page](https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/official-histories/book-1960-army-ww2-3.html) and the file `book-1960-army-ww2-3-en.pdf`. Cited by 773 claims. Canadian Batches 1 and 2, the allied-contingents batch, and a cover-to-cover pass on branch `stacey-victory-campaign` (3 November 2026) already used it. A new cover-to-cover reading is not the first need; a second Canadian family would help the remaining map-only Canadian rows.
 
-**Ellis, *Victory in the West*, vol. I (`R670`) and vol. II (`R671`, family `uk_official_history`).** British official history, HMSO 1962 and 1968. Free full-text scans on the Internet Archive: [vol. I](https://archive.org/details/victory-west-vol-1) and [vol. II](https://archive.org/details/victory-west-vol-2). Cited by 89 and 140 claims (229 claims cite one or both). British Batches 1 and 2 and the official-history passes used selected pages. Private notes from 30 October 2026 record a cover-to-cover reading of both volumes (narrative, appendices and maps). Compared with an earlier state of `main`, those notes marked on the order of 350 (vol. I) and 610 (vol. II) facts as not then in the dataset, plus many units then absent. Some of those facts may have been entered since; a leftover-entry pass should re-check against current `main` before writing rows. This is the largest unused pool of already-read, free, official non-US material.
+**Ellis, *Victory in the West*, vol. I (`R670`) and vol. II (`R671`, family `uk_official_history`).** British official history, HMSO 1962 and 1968. Free full-text scans on the Internet Archive: [vol. I](https://archive.org/details/victory-west-vol-1) and [vol. II](https://archive.org/details/victory-west-vol-2). Cited by 89 and 140 claims (229 claims cite one or both) on main `a8b9509`. After the leftover-entry pass: 140 and 184 (324 claims cite one or both). British Batches 1 and 2 and the official-history passes used selected pages. Private notes from 30 October 2026 record a cover-to-cover reading of both volumes (narrative, appendices and maps). Compared with an earlier state of `main`, those notes marked on the order of 350 (vol. I) and 610 (vol. II) facts as not then in the dataset, plus many units then absent. Some of those facts may have been entered since; a leftover-entry pass should re-check against current `main` before writing rows. This is the largest unused pool of already-read, free, official non-US material.
 
 **de Lattre, *The History of the French First Army* (`R686`).** Army commander's account, English translation 1952 (French original Plon 1949). Internet Archive copies are borrow-only / print-disabled (the cited item is `bwb_W7-ADK-972`; another scan, `historyoffrenchf0000latt`, is the same). In copyright. Cited by 69 claims (42 of 235 French unit claims). Private notes already exist; compared with an earlier `main` they marked on the order of 140 facts as not then entered. The French First Army, I and II Corps, and March 1945 still have no de Lattre row.
+
+
+## Ellis leftover-entry pass (re-measured 10 November 2026)
+
+The first recommended step — entering leftover facts already noted from Ellis, *Victory in the West*, vols I and II — was completed on branch `ellis-leftovers` (PR #84) on 10 November 2026, in six chunks (`C8975`–`C9017`). The method is unchanged: the same survey script, run on `build/all_claims.csv` of that branch (9,006 claims, of which 8,856 preferred, 134 alternate, 16 disputed). The tables above remain the baseline on main `a8b9509`.
+
+### Shares before and after
+
+| Measure | On main `a8b9509` | After the leftover pass |
+|---|---|---|
+| Claims (preferred / alternate / disputed) | 8,963 (8,814 / 133 / 16) | 9,006 (8,856 / 134 / 16) |
+| US sources, citing / exclusive | 70.9% / 66.0% | 70.6% / 65.7% |
+| 12th Army Group maps, share of all claims | 53.9% | 53.6% |
+| British official (Ellis), claims citing | 229 (2.6%) | 324 (3.6%) |
+| Ellis vol. I / vol. II (`R670` / `R671`) | 89 / 140 | 140 / 184 |
+| UK sources, citing / exclusive | 2.6% / 1.4% | 3.6% / 1.8% |
+| Canadian official (Stacey), claims citing | 774 (8.6%) | 774 (8.6%) |
+| Canada sources, exclusive | 6.3% | 5.9% |
+| UK units, own-nation / only US or Wikipedia | 18.2% (187 of 1,030) / 67.2% (692) | 23.1% (247 of 1,071) / 63.9% (684) |
+| Canadian units, own-nation / only US or Wikipedia | 62.4% (311 of 498) / 36.9% | 62.3% (311 of 499) / 36.9% |
+| Polish units, own-nation | 0.0% (0 of 81) | 0.0% (0 of 81) |
+| German units, own-nation | 43.1% | 43.1% |
+| US units, own-nation | 95.5% | 95.5% |
+| Non-US, non-German units with no own-nation source | 14 | 13 |
+
+Canadian exclusive-source share fell (6.3% to 5.9%) because Ellis was added as a supporting official citation on existing Stacey rows; those claims now cite two source nationalities. Canadian own-nation support is almost unchanged: Ellis is not treated as a second independent family for Canadian-unit facts, and the one new Canadian claim (`C9013`) cites only Ellis, so the own-nation count stayed at 311 while the denominator rose by one. Polish own-nation support stays at zero: there is still no Polish-authored reference. Two existing Polish rows gained an Ellis citation in chunk 1; leftover notes for later Polish named places were re-checked and were not entered where the Ellis text does not confirm the same place and date.
+
+British own-nation support rose from 18.2% to 23.1% (187 to 247 claims). The 79th Armoured Division, which had a single Wikipedia-only D-Day row, now has 16 Ellis-supported claims and has left the no-own-nation list. October and November 1944 improved (3.9% to 19.3%, and 8.1% to 15.7%); December 1944 is still thin (5.1% to 6.7%). May 1945 is unchanged at 20.0%, which still matches the leftover from official-history pass 1: Ellis gives no 8 May positions.
+
+US citing and exclusive shares dipped only because 43 new claims that do not cite a US source were added; the absolute US counts are unchanged (6,355 citing, 5,915 exclusive).
+
+The remaining recommended steps (CMHQ/AHQ reports, de Lattre leftovers, de Jong, Joslen, and a Polish-authored source) are unchanged.
 
 ## Candidate sources not yet in the references
 
@@ -127,7 +159,7 @@ Checked for a free official or openly released text, 10 November 2026.
 | Source | Nationality | Covers | Already a reference? | Availability | Estimated value |
 |---|---|---|---|---|---|
 | Canadian Military Headquarters (CMHQ) reports, 1940–1948, and Army Headquarters (AHQ) reports, 1948–1959 | Canadian official (preliminary narratives that fed Stacey) | Day-level Canadian operations in NW Europe, plus several reports from German sources | No | Free official PDFs from DHH. Index: [CMHQ](https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/military-headquarters-1940-1948.html), [AHQ](https://www.canada.ca/en/department-national-defence/services/military-history/history-heritage/official-military-history-lineages/reports/army-headquarters-1948-1959.html). Example files confirmed live: CMHQ 152, AHQ 54. | High. A second Canadian family for the 184 claims that are still only US or Wikipedia (especially Dec 1944 and Jan 1945), more HQ and day-level detail than Stacey, and German opposition (AHQ 50, 69, 77). Start with the NW Europe operational set: CMHQ 147, 162, 169, 183, 184, 188, 154, 173, 185, 186, 152, 181; AHQ 54, 58, 65, 32, 39, 19, 50, 69, 77. |
-| Joslen, *Orders of Battle: United Kingdom and Colonial Formations and Units in the Second World War, 1939–1945* (HMSO, 1960, 2 vols) | British official | Formation dates, brigade composition, command changes, units in and out of the theatre | No (already named in the roadmap as a needed British OOB source) | Free PDFs are listed on the [General Staff UK official histories page](https://www.generalstaff.org/WW2/Hist_UK/UK_Official_Histories.htm). UK Crown copyright in published works lasts 50 years from the end of the year of publication, so the 1960 volumes are past that term; this is not legal advice. That host has blocked automated requests from this box (HTTP 403), as it has for Nafziger, so a copy may need to be saved in a browser or taken from an Internet Archive scan. | Medium-high for `formed_date`, independent brigades (including the 79th Armoured Division) and relation dates; thin on day-to-day places. |
+| Joslen, *Orders of Battle: United Kingdom and Colonial Formations and Units in the Second World War, 1939–1945* (HMSO, 1960, 2 vols) | British official | Formation dates, brigade composition, command changes, units in and out of the theatre | No (already named in the roadmap as a needed British OOB source) | Free PDFs are listed on the [General Staff UK official histories page](https://www.generalstaff.org/WW2/Hist_UK/UK_Official_Histories.htm). UK Crown copyright in published works lasts 50 years from the end of the year of publication, so the 1960 volumes are past that term; this is not legal advice. That host has blocked automated requests from this box (HTTP 403), as it has for Nafziger, so a copy may need to be saved in a browser or taken from an Internet Archive scan. | Medium-high for `formed_date`, independent brigades and relation dates; thin on day-to-day places. (The 79th Armoured Division now has Ellis text rows from the leftover-entry pass, but Joslen is still the better source for its composition and attachments.) |
 | Loe de Jong, *Het Koninkrijk der Nederlanden in de Tweede Wereldoorlog*, deel 10a and 10b (*Het laatste jaar*) | Dutch official | The last year of occupation and the liberation of the Netherlands, 1944–1945 | No | Free from the [NIOD digital library](https://niod.contentdm.oclc.org/digital/collection/p21083coll6). Text is offered for download under CC BY 4.0 (photographs omitted). | Medium. Gives the Princess Irene Brigade (8 claims, no Dutch source) an own-nation history and adds Dutch-theatre detail for Canadian and British units. |
 | *Les grandes unités françaises: historiques succincts*, tomes 5.1–5.3 (campagnes de France et d'Allemagne, 1944–1945) and tome 6 (FFI, Atlantic and Alps) | French official (SHAT / Service historique de la Défense) | Succinct official histories of French armies, corps and divisions, 1944–1945 | No | Catalogue entries exist at SHD and in departmental archives; no free full-text PDF was found. | High if a copy can be obtained: would cover the French First Army, I and II Corps, and the divisions that de Lattre does not date in March 1945. Needs Scott (library or purchase). |
 | IPN, *Pancerz i odwaga. Szlak 1 Dywizji Pancernej gen. Stanisława Maczka* (2024) | Polish (Institute of National Remembrance) | The route of the 1st Polish Armoured Division | No | [IPN book page](https://ipn.gov.pl/pl/wydawnictwo/ksiazki/217316,Pancerz-i-odwaga-Szlak-1-Dywizji-Pancernej-gen-Stanislawa-Maczka.html): table of contents is free; the book itself is a paid e-book, not a free full PDF. | High for the 76-claim division with no Polish source, if Scott is willing to buy it. |
@@ -144,7 +176,7 @@ Checked for a free official or openly released text, 10 November 2026.
 
 Favour the biggest gaps and free access. Entering leftover facts from sources already read comes before opening a new book.
 
-1. **Ellis leftover-entry pass** (vols I and II, `R670` and `R671`). Already read, free, official, and the largest unused pool. This is the natural first step toward British source balance: 67.2% of UK claims (692 of 1,030) still have only a US or Wikipedia source, and October–December 1944 are the thinnest British months. The same pass can add Ellis (and already-noted Stacey) text against the 35 map-only rows of the 1st Polish Armoured Division. Re-check each candidate fact against current `main`. No new access needed.
+1. **Ellis leftover-entry pass** (vols I and II, `R670` and `R671`) — **done, 10 November 2026**, on branch `ellis-leftovers` (PR #84), in six chunks (`C8975`–`C9017`). Own-nation support for UK units rose from 18.2% to 23.1%; claims that cite Ellis rose from 229 to 324. Polish own-nation support is still 0% (no Polish-authored reference was added; leftover Polish notes were re-checked and only facts the Ellis text confirms were entered). See the re-measure section below. Remaining British map-only rows, especially December 1944 and May 1945, need a later source (Joslen for order of battle, or a divisional history).
 
 2. **Canadian CMHQ and AHQ reports** for North-West Europe (the operational set listed above). Free official PDFs, not yet cited. Best second family for the 184 Canadian claims that remain US-or-Wikipedia-only, and for headquarters places Stacey does not give (roadmap leftover from Canadian Batch 2). Also useful for German units facing First Canadian Army.
 
@@ -152,7 +184,7 @@ Favour the biggest gaps and free access. Entering leftover facts from sources al
 
 4. **de Jong, deel 10a and 10b**, from the NIOD library. Free, official, openly licensed. First own-nation source for the Princess Irene Brigade, and Dutch-theatre context for Canadian and British units in the Netherlands.
 
-5. **Joslen, *Orders of Battle***. Free official British OOB, already on the roadmap. Use it for formation dates, independent brigades (including the 79th Armoured Division, which has only a Wikipedia row) and relation dates, not as a place source. May need Scott to save the PDFs if the General Staff host remains blocked from this box.
+5. **Joslen, *Orders of Battle***. Free official British OOB, already on the roadmap. Use it for formation dates, independent brigades and relation dates, not as a place source. The 79th Armoured Division now has Ellis-supported place rows; Joslen is still wanted for composition and attachments. May need Scott to save the PDFs if the General Staff host remains blocked from this box.
 
 ## What would need Scott
 

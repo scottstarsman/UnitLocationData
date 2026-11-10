@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 10 November 2026 — Ellis leftovers, chunk 6: named places still only on weekly maps (branch `ellis-leftovers`)
+
+- **Why:** Close the Ellis leftover-entry pass (roadmap 374) with remaining named places that Ellis states on a dated day, but which were present in the table only as a weekly 12th Army Group map dot at a different named place (or had no text row). Ellis was not added to those map rows. Leftover notes were re-checked; many candidates already have text rows (for example 15th Division at Mondrainville, 50th Division at Amayé-sur-Seulles, 7th Armoured at Aunay-sur-Odon) or were too loosely dated to enter (51st Division at Poussy-la-Campagne / St. Sylvain, whose "course of the day" on vol. I p. 425 follows the morning of 11 August).
+- **New claims (3, `C9015`–`C9017`).** `C9015` 51st (Highland) Division captures St. Aignan, Cramesnil and Garcelles-Secqueville by first light on 8 August (Totalize, existing place `PL0786`; the same-day map row `C2671` stays at Tilly-la-Campagne). `C9016` 50th (Northumbrian) Division drives the enemy out of Tilly-sur-Seulles on 19 June and pushes south to the outskirts of Hottot (existing place `PL0349`; earlier attack row `C0108` on 14 June is kept; the 20 June map row `C2317` stays at Lingèvres). `C9017` 7th Armoured Division's infantry take Livarot on 20 August, tanks going on to Fervaques and turning north for Lisieux (existing place `PL3362`; the 22 August Stacey row `C7250` at Lisieux is a later, different place). No supporting citations, new places, relations, references or conflict groups. Next free: `C9018`, `CR1282`, `PL4017`, `R882`, `UL020`, `G119`.
+- **Tests:** scenario 214.
+- **Left to do:** re-measure source-balance shares, grid compare, update PR #84, confirm CI and Drive sync. This is the last data chunk of the leftover pass.
+
 ## 10 November 2026 — Ellis leftovers, chunk 5: German units in the British and Canadian sectors (branch `ellis-leftovers`)
 
 - **Why:** Continue the Ellis leftover-entry pass (roadmap 374) with German units in the British and Canadian sectors. Each fact was re-checked against the Ellis text. Ellis was added as a supporting official citation only where it names the same place on the same date. Confidence was left unchanged (several rows already have more than one family; two Allied official histories are not treated here as a reason to raise a German-unit row).

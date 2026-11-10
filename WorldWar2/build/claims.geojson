@@ -14602,6 +14602,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.6253,
+     49.1761
+    ]
+   },
+   "properties": {
+    "claim_id": "C9016",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-050D",
+    "unit_name": "50th (Northumbrian) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "place_id": "PL0349",
+    "location_name": "Tilly-sur-Seulles (then south to the outskirts of Hottot-les-Bagues)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Drives the enemy out of Tilly-sur-Seulles and pushes south to the outskirts of Hottot",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 261"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.62,
      49.63
     ]
@@ -48222,6 +48263,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2803,
+     49.0803
+    ]
+   },
+   "properties": {
+    "claim_id": "C9015",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-08",
+    "place_id": "PL0786",
+    "location_name": "Saint-Aignan-de-Cramesnil, Calvados (with the 33rd Armoured Brigade, east of the Falaise road; also Cramesnil and Garcelles-Secqueville)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Totalize: infantry of the 51st Division dismount before daybreak; by first light Garcelles-Secqueville, Cramesnil and St. Aignan are captured with 140 prisoners",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 421"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7407,
      48.3382
     ]
@@ -57153,6 +57235,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R838;R002",
     "source_locator": "R838: German p.31 (Fold3 page 105)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.152,
+     49.0053
+    ]
+   },
+   "properties": {
+    "claim_id": "C9017",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-20",
+    "place_id": "PL3362",
+    "location_name": "Livarot, Calvados (tanks capture Fervaques on the Touques and turn north for Lisieux)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Infantry take Livarot; tanks go on to capture Fervaques on the Touques and turn north for Lisieux",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R002",
+    "source_locator": "R670: p. 449"
    }
   },
   {

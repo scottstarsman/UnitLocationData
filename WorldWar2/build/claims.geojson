@@ -102957,6 +102957,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5339,
+     48.7244
+    ]
+   },
+   "properties": {
+    "claim_id": "C8971",
+    "conflict_group_id": "G114",
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-111B",
+    "unit_name": "Panzer-Brigade 111",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-01",
+    "place_id": "PL0015",
+    "location_name": "Arracourt, Meurthe-et-Moselle (Arracourt area (last fighting))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "the brigade is disbanded and absorbed by the 11th Panzer Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R880;R701;R001",
+    "source_locator": "R880: section 1; R701: Panzer brigades"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -105915,8 +105956,8 @@
    },
    "properties": {
     "claim_id": "C3260",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -113049,8 +113090,8 @@
    },
    "properties": {
     "claim_id": "C3360",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -121249,8 +121290,8 @@
    },
    "properties": {
     "claim_id": "C3536",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -128260,8 +128301,8 @@
    },
    "properties": {
     "claim_id": "C3670",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -131739,6 +131780,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.12,
+     50.9636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8972",
+    "conflict_group_id": "G115",
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-108B",
+    "unit_name": "Panzer-Brigade 108",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-30",
+    "place_id": "PL0558",
+    "location_name": "Geilenkirchen, North Rhine-Westphalia (north-east of Aachen-Geilenkirchen)",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "the brigade is disbanded after being pulled out of the line north-east of Aachen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R881;R002",
+    "source_locator": "R881: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.8138,
      48.4827
     ]
@@ -134041,8 +134123,8 @@
    },
    "properties": {
     "claim_id": "C3757",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G115",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-108B",
     "unit_name": "Panzer-Brigade 108",
     "nationality": "Germany",
@@ -136460,8 +136542,8 @@
    },
    "properties": {
     "claim_id": "C3816",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G114",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-111B",
     "unit_name": "Panzer-Brigade 111",
     "nationality": "Germany",
@@ -150974,8 +151056,8 @@
    },
    "properties": {
     "claim_id": "C4046",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G115",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-108B",
     "unit_name": "Panzer-Brigade 108",
     "nationality": "Germany",

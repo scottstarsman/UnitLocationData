@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Triage count correction, roadmap 372 (branch `midwar-ends`, commit 5)
+
+- **Roadmap 372 split:** old value "22 mid-war, 67 war's end, 67 unknown", new value "23 mid-war, 67 war's end, 66 unknown". Reason: of the two units reclassified in chunk 2, only the 277th VGD came from mid-war; the 344th Infantry Division was in the unknown list (24-1=23 mid-war, 65+2=67 war's end, 67-1=66 unknown).
+- **344th Infantry Division wording:** roadmap 372 old value "moved the 277th VGD and the 344th Infantry Division from mid-war to war's end", new value "moved the 277th VGD from mid-war to war's end and the 344th Infantry Division from unknown to war's end"; the chunk 2 entry below now names where each unit moved from. Reason: the 344th was triaged as unknown in commit 1. Docs only; no data changed.
+
 ## 9 November 2026 — Roadmap 370, 371 and 357 review (branch `midwar-ends`, commit 4)
 
 - **Roadmap 370 (c), 159th Infantry Division:** new redesignation rows `C8973` (9 October 1944, Lexikon infantry division page `R613`, preferred) and `C8974` (29 September 1944, reserve division page `R871`, alternate) in conflict group `G117`, at the October 1944 table place (Colmar, 50 km, `Location caveat`), 0.3.
@@ -16,7 +21,7 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 - **End rows:** `C8971` Panzer-Brigade 111 disbanded and absorbed by the 11th Panzer Division with effect from 1 October 1944 (Lexikon, new reference `R880`, and Wikipedia `R701`: two families, approximate place Arracourt, 0.5); `C8972` Panzer-Brigade 108 disbanded with effect from 30 October 1944 after being pulled out north-east of Aachen-Geilenkirchen (Lexikon, new reference `R881`, 0.3; the unit record's Wikipedia note says only "November 1944").
 - **Conflict groups:** `G114` (111): the end row is preferred; the 12th Army Group map rows `C3260`, `C3360`, `C3536`, `C3670`, `C3816` (3-31 October 1944) are alternates. `G115` (108): the end row is preferred; map rows `C3757` (31 October) and `C4046` (14 November) are alternates. Each edited row gives claim_status and conflict_group_id old value, new value and reason (stale map symbol after the disbandment).
 - **Coordinate exceptions:** 5 conflict-distance rows for `G114` and `G115` (stale weekly map positions).
-- **Reclassified in the triage (roadmap 372):** the 277th VGD (its staff was captured on 9 March 1945, but remnants fought on to the Harz in April) and the 344th Infantry Division (the first 344th was disbanded at Linfort on 14 October 1944 and the 91st Infantry Division then forming was renamed 344th, which went to the Eastern Front at the end of December 1944 and ended at Berlin) are war's-end units, not mid-war conflicts.
+- **Reclassified in the triage (roadmap 372):** the 277th VGD (its staff was captured on 9 March 1945, but remnants fought on to the Harz in April) and the 344th Infantry Division (the first 344th was disbanded at Linfort on 14 October 1944 and the 91st Infantry Division then forming was renamed 344th, which went to the Eastern Front at the end of December 1944 and ended at Berlin) are war's-end units, not mid-war conflicts. The 277th VGD moved from mid-war and the 344th Infantry Division from unknown (corrected in commit 5).
 
 ## 9 November 2026 — Mid-war German ends, chunk 1: ten units (branch `midwar-ends`, commit 2)
 

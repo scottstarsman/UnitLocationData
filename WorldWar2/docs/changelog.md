@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 9 November 2026 — Consistency fix 4: weak map-against-text pairs (branch `wf-consistency-fixes`, commit 6)
+
+- **Map rows capped (62):** every 12th Army Group situation-map row (`R781`) in the pairs of roadmap 357 and 358 that stood above 0.3 (0.5 or 0.7) is now 0.3, so no map row outranks its text row; each row's notes give the old value, the new value and the reason. No row was deleted.
+- **Conflict group `G113`:** 75th Infantry Division, text row `C0595` (Colmar, 31 January 1945) preferred and map row `C5492` (Rogery, 30 January) alternate, because Clarke and Smith, Riviera to the Rhine p. 549, say the division began moving into the First French Army area on 27 January.
+- **New text row `C8960`:** 3rd Armored Division clears Dessau on 23 April 1945 (MacDonald, The Last Offensive p. 400: the attack began on 21 April, two days of house-to-house fighting, and one more day against a hold-out on the railroad to Rosslau; 0.5). It agrees with map row `C6809` (24 April, Kochstedt). The Wikipedia row `C1865` (corps reserve at Sangerhausen, 24 April) is kept with a context note; the pair stays open because the CMH text does not date the move.
+- **Context notes:** `C2658` (1st Infantry Division near Mayenne on 8 August 1944, supported by Blumenson, Breakout and Pursuit p. 445).
+- **Roadmap 358 decided:** the four headquarters-against-front pairs are kept as rows that may both hold (a corps or division symbol and a front or headquarters point 28-40 km apart); the two Canadian second text rows already sit against map rows that are alternates in `G082` and `G083`. Map rows of these pairs are capped as above.
+- **Left open:** roadmap 357 (updated): the other pairs have no better dated text in the six CMH volumes read.
+
 ## 9 November 2026 — Consistency fix 3, chunk C: Elbe and Enns surrenders (branch `wf-consistency-fixes`, commit 5)
 
 - **End rows (4):** `C8956` Twelfth Army, bulk across the Elbe at Tangermünde and Fischbeck into American captivity by 7 May 1945 (Lexikon and MacDonald, The Last Offensive p. 464: two families, 0.5); `C8957` XXXIX Panzer Corps gathers at Fischbeck (new place `PL4008`) and begins to cross the Elbe, 4 May 1945 (Lexikon, 0.3); `C8958` 12th SS Panzer Division and `C8959` 9th SS Panzer Division cross the Enns demarcation line into American captivity, 8 May 1945 (Lexikon, 0.3, `eastern_front`; the town of Enns is a representative point, precision 50 km, because only the river is named).

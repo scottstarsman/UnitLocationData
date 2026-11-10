@@ -3901,6 +3901,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.108,
+     49.4939
+    ]
+   },
+   "properties": {
+    "claim_id": "C8944",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-017D",
+    "unit_name": "17th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-05-15",
+    "place_id": "PL4002",
+    "location_name": "Le Havre, Seine-Maritime (Le Havre sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "17th Luftwaffe Field Division under LXXXI Corps",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-05-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R268;R002",
+    "source_locator": "R268: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.3336,
      49.1606
     ]
@@ -19336,7 +19377,7 @@
     "location_name": "Fort du Roule (near Fort du Roule)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.7,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "79th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -35408,7 +35449,7 @@
     "location_name": "Angoville-sur-Ay, Manche (near Angoville-sur-Ay)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "79th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -35982,7 +36023,7 @@
     "location_name": "Doville, Manche (near Doville)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "VIII Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -36064,7 +36105,7 @@
     "location_name": "Monfréville, Calvados (near Monfréville)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.7,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "First Army shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -38893,7 +38934,7 @@
     "location_name": "Lozon, Manche (near Lozon)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "XV Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -39221,7 +39262,7 @@
     "location_name": "Quettreville-sur-Sienne, Manche (near Quettreville-sur-Sienne)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "VIII Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -44879,7 +44920,7 @@
     "location_name": "Canisy, Manche (near Canisy)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "First Army shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -45084,7 +45125,7 @@
     "location_name": "Champrepus, Manche (near Champrepus)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "3rd Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -45412,7 +45453,7 @@
     "location_name": "Saint-Georges-Buttavent, Mayenne (near Saint-Georges-Buttavent)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "1st Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -45453,7 +45494,7 @@
     "location_name": "Olivet, Mayenne (near Olivet)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "XV Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -53757,6 +53798,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C8943",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-226D",
+    "unit_name": "226th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (Dunkirk sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "226th Infantry Division under LXVII Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R194;R002",
+    "source_locator": "R194: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.108,
+     49.4939
+    ]
+   },
+   "properties": {
+    "claim_id": "C8945",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-017D",
+    "unit_name": "17th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-15",
+    "place_id": "PL4002",
+    "location_name": "Le Havre, Seine-Maritime (Le Havre sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "17th Luftwaffe Field Division under LXVII Corps",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R268;R002",
+    "source_locator": "R268: table 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -57466,7 +57589,7 @@
     "location_name": "Saint-Martin-l'Aiguillon, Orne (near Saint-Martin-l'Aiguillon)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "4th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -65092,7 +65215,7 @@
     "location_name": "La Noë-Poulain, Eure (near La Noë-Poulain)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "I Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -65707,7 +65830,7 @@
     "location_name": "Chaumont, Orne (near Chaumont)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "Second Army shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -65871,7 +65994,7 @@
     "location_name": "Follainville-Dennemont, Yvelines (near Follainville-Dennemont)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "79th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -69480,7 +69603,7 @@
     "location_represents": "headquarters",
     "precision_km": 5,
     "confidence": 0.5,
-    "event_type": "other",
+    "event_type": "activation",
     "current_activity": "Chill, on his way to the Rhineland to refit the 85th Division, learns of the fall of Brussels at Turnhout and decides on his own to defend the Albert Canal",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
     "operation": "Northern France campaign",
@@ -73333,7 +73456,7 @@
     "location_name": "Dieppe, Seine-Maritime (near Dieppe)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.7,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -73374,7 +73497,7 @@
     "location_name": "Wailly-Beaucamp, Pas-de-Calais (near Wailly-Beaucamp)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -73456,7 +73579,7 @@
     "location_name": "Saigneville, Somme (near Saigneville)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "II Canadian Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -79606,7 +79729,7 @@
     "location_name": "Rexpoëde, Nord (near Rexpoëde)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "II Canadian Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -82477,7 +82600,7 @@
     "location_represents": "main_body",
     "precision_km": 3,
     "confidence": 0.9,
-    "event_type": "destruction",
+    "event_type": "attack",
     "current_activity": "Panther column is destroyed around Dompaire by the French CCL and US fighter-bombers",
     "operation_id": "OP-LORRAINE",
     "operation": "Lorraine campaign",
@@ -92010,6 +92133,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     11.8163,
+     49.6865
+    ]
+   },
+   "properties": {
+    "claim_id": "C8933",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-025D",
+    "unit_name": "25th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-20",
+    "place_id": "PL3909",
+    "location_name": "Grafenwöhr, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Kampfgruppe 25th Panzergrenadier Division forming at Grafenwöhr",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R282;R002",
+    "source_locator": "R282: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -93697,7 +93861,7 @@
    },
    "properties": {
     "claim_id": "C1779",
-    "conflict_group_id": null,
+    "conflict_group_id": "G112",
     "claim_status": "preferred",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
@@ -97482,7 +97646,7 @@
     "location_name": "Les Attaques, Pas-de-Calais (near Les Attaques)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "II Canadian Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -98412,8 +98576,8 @@
    },
    "properties": {
     "claim_id": "C3181",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -102137,6 +102301,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2296,
+     50.7703
+    ]
+   },
+   "properties": {
+    "claim_id": "C8954",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-105B",
+    "unit_name": "Panzer-Brigade 105",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-30",
+    "place_id": "PL0337",
+    "location_name": "Stolberg, Rhineland",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "the brigade is pulled out of the line at Stolberg and refilled",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R878;R002",
+    "source_locator": "R878: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.8538,
      50.9525
     ]
@@ -102307,7 +102512,7 @@
    },
    "properties": {
     "claim_id": "C1782",
-    "conflict_group_id": null,
+    "conflict_group_id": "G111",
     "claim_status": "preferred",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
@@ -105259,8 +105464,8 @@
    },
    "properties": {
     "claim_id": "C3252",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -105792,8 +105997,8 @@
    },
    "properties": {
     "claim_id": "C3265",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -109599,6 +109804,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2252,
+     48.8895
+    ]
+   },
+   "properties": {
+    "claim_id": "C8936",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-553D",
+    "unit_name": "553rd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL4000",
+    "location_name": "Nomeny, Meurthe-et-Moselle (Nomeny-Chenicourt)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "553rd Volksgrenadier Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R325;R002",
+    "source_locator": "R325: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5113,
+     48.8231
+    ]
+   },
+   "properties": {
+    "claim_id": "C8937",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-559D",
+    "unit_name": "559th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-09",
+    "place_id": "PL0547",
+    "location_name": "Château-Salins, Moselle (near Château-Salins)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "559th Volksgrenadier Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-09",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R326;R002",
+    "source_locator": "R326: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3278,
      51.4107
     ]
@@ -112762,8 +113049,8 @@
    },
    "properties": {
     "claim_id": "C3363",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -113213,8 +113500,8 @@
    },
    "properties": {
     "claim_id": "C3374",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -113759,7 +114046,7 @@
     "location_name": "Moerkerkebrug, Flanders (near Moerkerkebrug)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -116480,6 +116767,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R200;R001",
     "source_locator": "R200: table of 1944, October (remnants): XXV Corps row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.568,
+     53.2191
+    ]
+   },
+   "properties": {
+    "claim_id": "C8942",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-256D",
+    "unit_name": "256th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-15",
+    "place_id": "PL0709",
+    "location_name": "Groningen, Groningen (Groningen sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "256th Volksgrenadier Division under LXXXIX Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R311;R002",
+    "source_locator": "R311: table 1944"
    }
   },
   {
@@ -120921,8 +121249,8 @@
    },
    "properties": {
     "claim_id": "C3539",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -121536,8 +121864,8 @@
    },
    "properties": {
     "claim_id": "C3554",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -122548,6 +122876,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 398"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8935",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-462D",
+    "unit_name": "462nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-19",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle (Metz (Lexikon table, October 1944))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "462nd Infantry Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R219;R001",
+    "source_locator": "R219: section 1"
    }
   },
   {
@@ -124747,7 +125116,7 @@
     "location_name": "Trent (Zeeland), Noord-Brabant (near Trent (Zeeland))",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "XII Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -127932,8 +128301,8 @@
    },
    "properties": {
     "claim_id": "C3674",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -128342,8 +128711,8 @@
    },
    "properties": {
     "claim_id": "C3684",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -130775,7 +131144,7 @@
     "location_represents": "front_line_point",
     "precision_km": 5,
     "confidence": 0.5,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "712th Infantry Division smashed south-east of 's-Hertogenbosch",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
@@ -136009,8 +136378,8 @@
    },
    "properties": {
     "claim_id": "C3817",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G111",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-113B",
     "unit_name": "Panzer-Brigade 113",
     "nationality": "Germany",
@@ -136132,8 +136501,8 @@
    },
    "properties": {
     "claim_id": "C3820",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G112",
+    "claim_status": "alternate",
     "unit_id": "GER-PZB-112B",
     "unit_name": "Panzer-Brigade 112",
     "nationality": "Germany",
@@ -137362,8 +137731,8 @@
    },
    "properties": {
     "claim_id": "C7744",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G110",
+    "claim_status": "alternate",
     "unit_id": "GER-AG-00HG",
     "unit_name": "Army Group H (Heeresgruppe H)",
     "nationality": "Germany",
@@ -139078,6 +139447,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C8934",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-190D",
+    "unit_name": "190th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-04",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia (Kleve-Goch area (Reichswald))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "190th Infantry Division takes its new designation",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-04",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R192;R002",
+    "source_locator": "R192: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.1138,
      51.6573
     ]
@@ -139876,7 +140286,7 @@
     "location_name": "Linkeroever (Antwerpen), Antwerp (near Linkeroever (Antwerpen))",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "First Canadian Army shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -141844,7 +142254,7 @@
     "location_name": "Stein, Limburg (near Stein)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "XIII Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -143607,7 +144017,7 @@
     "location_name": "Chambley, Meurthe-et-Moselle (near Chambley)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "10th Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -146540,6 +146950,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3362,
+     49.6158
+    ]
+   },
+   "properties": {
+    "claim_id": "C8955",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-107B",
+    "unit_name": "Panzer-Brigade 107",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-09",
+    "place_id": "PL2695",
+    "location_name": "Baumholder, Rhineland-Palatinate",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "the brigade arrives by rail at the Baumholder training area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R879;R002",
+    "source_locator": "R879: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -2.4342,
      53.0148
     ]
@@ -146833,7 +147284,7 @@
    },
    "properties": {
     "claim_id": "C1037",
-    "conflict_group_id": null,
+    "conflict_group_id": "G110",
     "claim_status": "preferred",
     "unit_id": "GER-AG-00HG",
     "unit_name": "Army Group H (Heeresgruppe H)",
@@ -146847,7 +147298,7 @@
     "location_represents": "sector_center",
     "precision_km": 50,
     "confidence": 0.3,
-    "event_type": "command_change",
+    "event_type": "activation",
     "current_activity": "Army Group H (Student) assumes command of the First Parachute Army and the Netherlands-based army",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
@@ -154569,6 +155020,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R304;R002",
     "source_locator": "R304: Einsatz und Unterstellung, table of 1944, November row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8941",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-462D",
+    "unit_name": "462nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-15",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle (Metz sector (Lexikon month row))",
+    "location_represents": "sector_center",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "462nd Volksgrenadier Division under LXXXII Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R323;R001",
+    "source_locator": "R323: table 1944"
    }
   },
   {
@@ -173128,7 +173620,7 @@
     "location_represents": "front_line_point",
     "precision_km": 3,
     "confidence": 0.3,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "battalion of Division Tolsdorff west of the Roer cut off at Floßdorf and destroyed",
     "operation_id": "OP-ROER-PLAIN",
     "operation": "Battle of the Roer Plain",
@@ -175341,7 +175833,7 @@
     "location_name": "Panningen, Limburg (near Panningen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -177678,7 +178170,7 @@
     "location_name": "Éton, Meuse (near Éton)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "III Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -186597,6 +187089,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1778,
+     49.1203
+    ]
+   },
+   "properties": {
+    "claim_id": "C8946",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-462D",
+    "unit_name": "462nd Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-13",
+    "place_id": "PL0224",
+    "location_name": "Metz, Moselle (Fort Jeanne d'Arc (Feste Kaiserin), west of Metz)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "surrender",
+    "current_activity": "the garrison of Fort Jeanne d'Arc (Feste Kaiserin), the last Metz fort, surrenders",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R323;R645;R001",
+    "source_locator": "R323: section 1; R645: p. 448"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -193053,7 +193586,7 @@
     "location_name": "Beek, Limburg (near Beek)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "43rd (Wessex) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -193217,7 +193750,7 @@
     "location_name": "Gereonsweiler, North Rhine-Westphalia (near Gereonsweiler)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "84th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -194857,7 +195390,7 @@
     "location_name": "Bliesbruck, Moselle (near Bliesbruck)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "35th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -194939,7 +195472,7 @@
     "location_name": "Herbitzheim, Bas-Rhin (near Herbitzheim)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "XII Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -195021,7 +195554,7 @@
     "location_name": "Bidestroff, Moselle (near Bidestroff)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "4th Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -213553,7 +214086,7 @@
     "location_name": "Ebersmunster, Bas-Rhin (near Ebersmunster)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "French 2nd Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -228354,7 +228887,7 @@
     "location_name": "Val-Meer, Limburg (near Val-Meer)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "First Army shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -237683,6 +238216,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     14.3357,
+     51.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C8938",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEBE",
+    "unit_name": "Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-26",
+    "place_id": "PL4001",
+    "location_name": "Cottbus, Brandenburg (Cottbus area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Führer-Begleit-Brigade enlarged to a division",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R283;R002",
+    "source_locator": "R283: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3357,
+     51.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C8939",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-FUEGR",
+    "unit_name": "Führer-Grenadier-Brigade (Führer-Grenadier-Division from 26 January 1945)",
+    "nationality": "Germany",
+    "theater": "home_germany",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-26",
+    "place_id": "PL4001",
+    "location_name": "Cottbus, Brandenburg (Cottbus area)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "Führer-Grenadier-Brigade enlarged to a division",
+    "operation_id": "OP-HOME-GERMANY",
+    "operation": "Germany as a rear or home area",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Home Germany",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R284;R002",
+    "source_locator": "R284: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8101,
      50.5447
     ]
@@ -241474,7 +242089,7 @@
     "location_name": "Lochwiller, Bas-Rhin (near Lochwiller)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "14th Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -242240,8 +242855,8 @@
    },
    "properties": {
     "claim_id": "C5492",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G113",
+    "claim_status": "alternate",
     "unit_id": "US-INF-075D",
     "unit_name": "75th Infantry Division",
     "nationality": "US",
@@ -242253,7 +242868,7 @@
     "location_name": "Rogery, Luxembourg (near Rogery)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "75th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -244249,7 +244864,7 @@
    },
    "properties": {
     "claim_id": "C0595",
-    "conflict_group_id": null,
+    "conflict_group_id": "G113",
     "claim_status": "preferred",
     "unit_id": "US-INF-075D",
     "unit_name": "75th Infantry Division",
@@ -257997,7 +258612,7 @@
     "location_name": "Vic-sur-Seille, Moselle (near Vic-sur-Seille)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "42nd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -262139,7 +262754,7 @@
     "location_represents": "front_line_point",
     "precision_km": 5,
     "confidence": 0.5,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "overrun by the 43rd Division east and south of the Forest of Cleve",
     "operation_id": "OP-VERITABLE",
     "operation": "Operation Veritable",
@@ -268739,7 +269354,7 @@
     "location_name": "Val-Meer, Limburg (near Val-Meer)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "75th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -273331,7 +273946,7 @@
     "location_name": "Niftrik, Gelderland (near Niftrik)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "II Canadian Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -284401,7 +285016,7 @@
     "location_name": "Wardhausen, North Rhine-Westphalia (near Wardhausen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -287476,7 +288091,7 @@
     "location_name": "Leuth, North Rhine-Westphalia (near Leuth)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.7,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "XVI Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -300823,6 +301438,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3109,
+     50.6453
+    ]
+   },
+   "properties": {
+    "claim_id": "C8950",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-340D",
+    "unit_name": "340th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-17",
+    "place_id": "PL4004",
+    "location_name": "Rottbitze, Bad Honnef (Rottbitze (Remagen bridgehead))",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the division is counted as broken up after the loss of Rottbitze",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R318;R002",
+    "source_locator": "R318: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.5743,
      49.8314
     ]
@@ -303138,7 +303794,7 @@
     "location_name": "Olsbrücken, Rhineland-Palatinate (near Olsbrücken)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "12th Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -307608,7 +308264,7 @@
     "location_represents": "sector_center",
     "precision_km": 25,
     "confidence": 0.5,
-    "event_type": "destruction",
+    "event_type": "defense",
     "current_activity": "84th Division, in the LXXXVI Corps, collapses under the Allied airborne attack on 24 March",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",
@@ -309575,7 +310231,7 @@
     "location_name": "Kevelaer, North Rhine-Westphalia (near Kevelaer)",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "hq_observation",
     "current_activity": "Second Army shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -311502,7 +312158,7 @@
     "location_name": "Sippersfeld, Rhineland-Palatinate (near Sippersfeld)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "63rd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -314797,6 +315453,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R855;R859;R002",
     "source_locator": "R855: English typed p.-37- (Fold3 page 41); R859: German printed p.41 (Fold3 viewer page 148)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0546,
+     51.175
+    ]
+   },
+   "properties": {
+    "claim_id": "C8940",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-007D",
+    "unit_name": "7th Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-30",
+    "place_id": "PL2787",
+    "location_name": "Hemfurth-Edersee, Hessen (dam at the east end of the Eder-See (Hemfurth))",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "7th Armored Division of III Corps seizes the dam at the east end of the Eder-See",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R566;R002",
+    "source_locator": "R566: p. 354"
    }
   },
   {
@@ -319169,7 +319866,7 @@
     "location_name": "Leeden, North Rhine-Westphalia (near Leeden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "6th Airborne Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -336266,7 +336963,7 @@
     "location_name": "Paimar, Baden-Württemberg (near Paimar)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "44th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -342602,6 +343299,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.9552,
+     51.7903
+    ]
+   },
+   "properties": {
+    "claim_id": "C8947",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-026D",
+    "unit_name": "26th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0649",
+    "location_name": "Blankenburg (Harz), Sachsen-Anhalt (south of Blankenburg (Harz))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the last remnants of the division capitulate south of Blankenburg (Harz)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R313;R002",
+    "source_locator": "R313: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.5783,
      49.9481
     ]
@@ -343702,6 +344440,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 601"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.25,
+     51.8333
+    ]
+   },
+   "properties": {
+    "claim_id": "C8960",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ARM-003D",
+    "unit_name": "3rd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-23",
+    "place_id": "PL0463",
+    "location_name": "Dessau, Sachsen-Anhalt",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "clears Dessau after two days of house-to-house fighting; a hold-out along the railroad to Rosslau takes another day",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R567;R001",
+    "source_locator": "R567: p. 400"
    }
   },
   {
@@ -345778,7 +346557,7 @@
     "location_name": "Kochstedt (Dessau-Roßlau), Sachsen-Anhalt (near Kochstedt (Dessau-Roßlau))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "3rd Armored Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -347541,7 +348320,7 @@
     "location_name": "Hausen am Andelsbach, Baden-Württemberg (near Hausen am Andelsbach)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "French 1st Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -349729,6 +350508,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R827;R002",
     "source_locator": "R827: p.5 (Fold3 page 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4544,
+     48.0364
+    ]
+   },
+   "properties": {
+    "claim_id": "C8951",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-212D",
+    "unit_name": "212th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-28",
+    "place_id": "PL4005",
+    "location_name": "Forstenrieder Park, Landkreis München (Forstenrieder Park, south of Munich)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the last splinters of the division in the Forstenrieder Park are counted as broken up",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R309;R002",
+    "source_locator": "R309: section 1"
    }
   },
   {
@@ -352625,7 +353445,7 @@
     "location_name": "Weßling, Landkreis Starnberg (near Weßling)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "4th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -354034,6 +354854,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R826;R002",
     "source_locator": "R826: German p.13 (Fold3 page 15) and English p.14 (Fold3 page 36)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.22,
+     48.0615
+    ]
+   },
+   "properties": {
+    "claim_id": "C8953",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-416D",
+    "unit_name": "416th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL4007",
+    "location_name": "Wasserburg am Inn, Bayern",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "destruction",
+    "current_activity": "the remnants of the division are broken up by American units at Wasserburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R218;R002",
+    "source_locator": "R218: section 1"
    }
   },
   {
@@ -355722,6 +356583,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.0158,
+     52.54
+    ]
+   },
+   "properties": {
+    "claim_id": "C8957",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-039C",
+    "unit_name": "XXXIX Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-05-04",
+    "place_id": "PL4008",
+    "location_name": "Fischbeck (Elbe), Sachsen-Anhalt (Fischbeck, east bank of the Elbe opposite Tangermünde)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the corps gathers at Fischbeck and begins crossing the Elbe into American captivity",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R260;R002",
+    "source_locator": "R260: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.7333,
      48.1
     ]
@@ -356419,6 +357321,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     12.1692,
+     47.583
+    ]
+   },
+   "properties": {
+    "claim_id": "C8948",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-VG-016D",
+    "unit_name": "16th Volksgrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-05",
+    "place_id": "PL0952",
+    "location_name": "Kufstein, Tirol (Kufstein area)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the last splinters of the division capitulate in the Kufstein area",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R305;R002",
+    "source_locator": "R305: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0976,
+     53.636
+    ]
+   },
+   "properties": {
+    "claim_id": "C8952",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-05",
+    "place_id": "PL4006",
+    "location_name": "Lamstedt, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the division goes into British captivity at Lamstedt with the OB Nordwest capitulation",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R609;R002",
+    "source_locator": "R609: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      14.2781,
      48.4136
     ]
@@ -357027,6 +358011,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R862;R617;R002",
     "source_locator": "R862: Einsatz und Unterstellung, table of 1945, May row; R617: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.9689,
+     52.5408
+    ]
+   },
+   "properties": {
+    "claim_id": "C8956",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-012A",
+    "unit_name": "Twelfth Army (Germany)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-05-07",
+    "place_id": "PL0456",
+    "location_name": "Tangermünde, Sachsen-Anhalt (Elbe crossings at Tangermünde and Fischbeck)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "surrender",
+    "current_activity": "the bulk of the army crosses the Elbe at Tangermünde and Fischbeck into American captivity",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R663;R569;R001",
+    "source_locator": "R663: section 1; R569: p. 464"
    }
   },
   {
@@ -360456,7 +361481,7 @@
     "location_name": "Lohne, North Rhine-Westphalia (near Lohne)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "95th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -361358,7 +362383,7 @@
     "location_name": "Kašovice, okres Klatovy (near Kašovice)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "90th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -362118,6 +363143,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     14.4191,
+     48.039
+    ]
+   },
+   "properties": {
+    "claim_id": "C8949",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZA-006A",
+    "unit_name": "Sixth Panzer Army (Sixth SS Panzer Army)",
+    "nationality": "Germany",
+    "theater": "eastern_front",
+    "echelon": "army",
+    "branch": "Armoured",
+    "date": "1945-05-08",
+    "place_id": "PL4003",
+    "location_name": "Steyr, Oberösterreich (on the Enns near Steyr)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the remnants of the army surrender to the Americans on the Enns near Steyr",
+    "operation_id": "OP-FRONT-EASTERN",
+    "operation": "Eastern Front",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Eastern Front",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R175;R002",
+    "source_locator": "R175: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "claim_id": "C8958",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "eastern_front",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-05-08",
+    "place_id": "PL0983",
+    "location_name": "Enns, Oberösterreich (Enns demarcation line (representative point: town of Enns))",
+    "location_represents": "front_line_point",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the remnants cross the Enns demarcation line into American captivity",
+    "operation_id": "OP-FRONT-EASTERN",
+    "operation": "Eastern Front",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Eastern Front",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R278;R002",
+    "source_locator": "R278: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4794,
+     48.2141
+    ]
+   },
+   "properties": {
+    "claim_id": "C8959",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "eastern_front",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1945-05-08",
+    "place_id": "PL0983",
+    "location_name": "Enns, Oberösterreich (Enns demarcation line (representative point: town of Enns))",
+    "location_represents": "front_line_point",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "the remnants cross the Enns demarcation line into American captivity",
+    "operation_id": "OP-FRONT-EASTERN",
+    "operation": "Eastern Front",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Eastern Front",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R281;R002",
+    "source_locator": "R281: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.3773,
      51.0348
     ]
@@ -362465,7 +363613,7 @@
     "location_name": "Niederpframmern, Landkreis Ebersberg (near Niederpframmern)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "42nd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -362834,7 +363982,7 @@
     "location_name": "Freihalden, Arrondissement de Guntzbourg (near Freihalden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "63rd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -362875,7 +364023,7 @@
     "location_name": "Lohne, North Rhine-Westphalia (near Lohne)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "95th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -363367,7 +364515,7 @@
     "location_name": "Lauf an der Pegnitz, Bayern (near Lauf an der Pegnitz)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "4th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -363654,7 +364802,7 @@
     "location_name": "Bernloh (Warngau), Bayern (near Bernloh (Warngau))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "101st Airborne Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -363695,7 +364843,7 @@
     "location_name": "Hude (Oldenburg), Oldenbourg (arrondissement) (near Hude (Oldenburg))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -363777,7 +364925,7 @@
     "location_name": "Dardesheim (Osterwieck), Sachsen-Anhalt (near Dardesheim (Osterwieck))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "83rd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -364146,7 +365294,7 @@
     "location_name": "Moorsee (Nordenham), Niedersachsen (near Moorsee (Nordenham))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -364392,7 +365540,7 @@
     "location_name": "Kašovice, okres Klatovy (near Kašovice)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "90th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -364597,7 +365745,7 @@
     "location_name": "Rödgen, Sachsen (near Rödgen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "104th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -364638,7 +365786,7 @@
     "location_name": "Hulsberg, Märkischer Kreis (near Hulsberg)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "75th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
@@ -364679,7 +365827,7 @@
     "location_name": "Etzoldshain, Sachsen (near Etzoldshain)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.3,
     "event_type": "other",
     "current_activity": "69th Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",

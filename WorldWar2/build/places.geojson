@@ -4398,7 +4398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 21
+    "claims_count": 24
    }
   },
   {
@@ -6618,7 +6618,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -8998,7 +8998,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -9138,7 +9138,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -10778,7 +10778,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -11378,7 +11378,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 25
+    "claims_count": 26
    }
   },
   {
@@ -12298,7 +12298,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nord",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -12798,7 +12798,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Sachsen-Anhalt",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -13998,7 +13998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Groningen",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -18778,7 +18778,7 @@
     "precision_km": 3,
     "country": "AT",
     "region": "Tirol",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -19398,7 +19398,7 @@
     "precision_km": 3,
     "country": "AT",
     "region": "Oberösterreich",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -53598,7 +53598,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rhineland-Palatinate",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -55438,7 +55438,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Hessen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -77878,7 +77878,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Bayern",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79678,6 +79678,186 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2252,
+     48.8895
+    ]
+   },
+   "properties": {
+    "place_id": "PL4000",
+    "name": "Nomeny, Meurthe-et-Moselle",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lorraine",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.3357,
+     51.7567
+    ]
+   },
+   "properties": {
+    "place_id": "PL4001",
+    "name": "Cottbus, Brandenburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Brandenburg",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.108,
+     49.4939
+    ]
+   },
+   "properties": {
+    "place_id": "PL4002",
+    "name": "Le Havre, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     14.4191,
+     48.039
+    ]
+   },
+   "properties": {
+    "place_id": "PL4003",
+    "name": "Steyr, Oberösterreich",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Oberösterreich",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3109,
+     50.6453
+    ]
+   },
+   "properties": {
+    "place_id": "PL4004",
+    "name": "Rottbitze, Bad Honnef",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.4544,
+     48.0364
+    ]
+   },
+   "properties": {
+    "place_id": "PL4005",
+    "name": "Forstenrieder Park, Landkreis München",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0976,
+     53.636
+    ]
+   },
+   "properties": {
+    "place_id": "PL4006",
+    "name": "Lamstedt, Niedersachsen",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Niedersachsen",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.22,
+     48.0615
+    ]
+   },
+   "properties": {
+    "place_id": "PL4007",
+    "name": "Wasserburg am Inn, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     12.0158,
+     52.54
+    ]
+   },
+   "properties": {
+    "place_id": "PL4008",
+    "name": "Fischbeck (Elbe), Sachsen-Anhalt",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Sachsen-Anhalt",
     "claims_count": 1
    }
   }

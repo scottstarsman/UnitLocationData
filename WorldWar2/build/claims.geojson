@@ -4699,7 +4699,7 @@
     "location_name": "Biéville-Beuville / Lébisey approach to Caen",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.7,
+    "confidence": 0.9,
     "event_type": "attack",
     "current_activity": "advancing on Caen; halted by 21st Panzer counterattack",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -4712,8 +4712,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R147;R137;R668;R002",
-    "source_locator": "R668: pp. 114-115"
+    "reference_ids": "R147;R137;R668;R670;R002",
+    "source_locator": "R668: pp. 114-115; R670: pp. 202, 203"
    }
   },
   {
@@ -4822,7 +4822,7 @@
     "location_name": "Gold/Juno/Sword (point = Sword Beach)",
     "location_represents": "sector_center",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "landing",
     "current_activity": "supporting assault landings with specialist armour",
     "operation_id": "OP-NEPTUNE",
@@ -4835,8 +4835,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R137;R008;R001",
-    "source_locator": null
+    "reference_ids": "R137;R008;R670;R001",
+    "source_locator": "R670: p. 202"
    }
   },
   {
@@ -8717,7 +8717,7 @@
     "location_name": "Orne bridgehead (Bréville-Ranville area)",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "defense",
     "current_activity": "defending Orne bridgehead and expanding it east",
     "operation_id": "OP-CAMP-NORMANDY",
@@ -8730,8 +8730,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R142;R001",
-    "source_locator": null
+    "reference_ids": "R141;R142;R670;R001",
+    "source_locator": "R670: p. 248"
    }
   },
   {
@@ -10357,7 +10357,7 @@
     "location_name": "Villers-Bocage",
     "location_represents": "objective",
     "precision_km": 1,
-    "confidence": 0.7,
+    "confidence": 0.9,
     "event_type": "attack",
     "current_activity": "ambushed at Villers-Bocage; withdrawing to brigade box",
     "operation_id": "OP-PERCH",
@@ -10370,8 +10370,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R114;R668;R001",
-    "source_locator": "R668: p. 142"
+    "reference_ids": "R114;R668;R670;R001",
+    "source_locator": "R668: p. 142; R670: pp. 254, 255"
    }
   },
   {
@@ -12202,7 +12202,7 @@
     "location_name": "Brigade box west of Villers-Bocage (Hill 174 area)",
     "location_represents": "main_body",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "withdrawal",
     "current_activity": "withdrawing to brigade box near Hill 174",
     "operation_id": "OP-PERCH",
@@ -12215,8 +12215,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R001",
-    "source_locator": null
+    "reference_ids": "R141;R670;R001",
+    "source_locator": "R670: p. 256"
    }
   },
   {
@@ -16753,7 +16753,7 @@
     "location_name": "Fontenay-le-Pesnel",
     "location_represents": "objective",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "attacking in Operation Martlet; Tessel Wood taken",
     "operation_id": "OP-MARTLET",
@@ -16766,8 +16766,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R014;R001",
-    "source_locator": null
+    "reference_ids": "R139;R014;R670;R001",
+    "source_locator": "R670: pp. 276, 277"
    }
   },
   {
@@ -17163,7 +17163,7 @@
     "location_name": "Cheux",
     "location_represents": "front_line_point",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "reaching ridge south of Cheux; engaged by 12th SS",
     "operation_id": "OP-EPSOM",
@@ -17176,8 +17176,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R001",
-    "source_locator": null
+    "reference_ids": "R139;R670;R001",
+    "source_locator": "R670: p. 278"
    }
   },
   {
@@ -17204,7 +17204,7 @@
     "location_name": "Cheux",
     "location_represents": "front_line_point",
     "precision_km": 1,
-    "confidence": 0.7,
+    "confidence": 0.9,
     "event_type": "attack",
     "current_activity": "leading Epsom and fighting at Cheux",
     "operation_id": "OP-EPSOM",
@@ -17217,8 +17217,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R668;R001",
-    "source_locator": "R668: p. 147"
+    "reference_ids": "R139;R668;R670;R001",
+    "source_locator": "R668: p. 147; R670: pp. 277, 278"
    }
   },
   {
@@ -17245,7 +17245,7 @@
     "location_name": "Cheux",
     "location_represents": "sector_center",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "supporting 15th Division in Epsom",
     "operation_id": "OP-EPSOM",
@@ -17258,8 +17258,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R140;R001",
-    "source_locator": null
+    "reference_ids": "R140;R670;R001",
+    "source_locator": "R670: p. 277"
    }
   },
   {
@@ -17819,7 +17819,7 @@
     "location_name": "Rauray",
     "location_represents": "objective",
     "precision_km": 1,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "capture",
     "current_activity": "capturing Rauray from 12th SS",
     "operation_id": "OP-MARTLET",
@@ -17832,8 +17832,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R066;R002",
-    "source_locator": null
+    "reference_ids": "R139;R066;R670;R002",
+    "source_locator": "R670: p. 280"
    }
   },
   {
@@ -20055,6 +20055,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.5158,
+     49.1394
+    ]
+   },
+   "properties": {
+    "claim_id": "C8979",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-015D",
+    "unit_name": "15th (Scottish) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-27",
+    "place_id": "PL0227",
+    "location_name": "Mondrainville",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "capture",
+    "current_activity": "Epsom: takes Colleville, Tourville and Mondrainville on the eastern road toward the Odon",
+    "operation_id": "OP-EPSOM",
+    "operation": "Operation Epsom",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Epsom",
+    "strength_status": "unknown",
+    "location_date": "1944-06-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 280"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.4825,
      49.1489
     ]
@@ -20320,7 +20361,7 @@
     "location_name": "Hill 112 (Odon salient)",
     "location_represents": "front_line_point",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "attacking Hill 112; fighting 12th SS counterattacks",
     "operation_id": "OP-EPSOM",
@@ -20333,8 +20374,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R139;R002",
-    "source_locator": null
+    "reference_ids": "R139;R670;R002",
+    "source_locator": "R670: p. 281"
    }
   },
   {
@@ -25048,8 +25089,8 @@
     "location_date": "1944-07-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: p. 162"
+    "reference_ids": "R668;R670;R001",
+    "source_locator": "R668: p. 162; R670: pp. 311–316"
    }
   },
   {
@@ -44646,8 +44687,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: p. 224"
+    "reference_ids": "R668;R670;R001",
+    "source_locator": "R668: p. 224; R670: pp. 422, 423"
    }
   },
   {
@@ -55183,8 +55224,8 @@
     "location_date": "1944-08-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R404;R002",
-    "source_locator": "R668: p. 256; R404: p. 532"
+    "reference_ids": "R668;R404;R670;R002",
+    "source_locator": "R668: p. 256; R404: p. 532; R670: p. 442"
    }
   },
   {
@@ -57261,7 +57302,7 @@
     "location_name": "Trun, Orne (about Trun)",
     "location_represents": "main_body",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "arrival",
     "current_activity": "leading troops meet the 9th Canadian Brigade about Trun",
     "operation_id": "OP-FALAISE",
@@ -57274,8 +57315,8 @@
     "location_date": "1944-08-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 264"
+    "reference_ids": "R668;R670;R002",
+    "source_locator": "R668: p. 264; R670: pp. 447, 448"
    }
   },
   {
@@ -75150,8 +75191,8 @@
     "location_date": "1944-09-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 326"
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 326; R671: p. 15"
    }
   },
   {
@@ -77405,8 +77446,8 @@
     "location_date": "1944-09-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 327"
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: p. 327; R671: p. 15"
    }
   },
   {
@@ -78350,6 +78391,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R856;R860;R002",
     "source_locator": "R856: English typed p.-51-, -57- (Fold3 page 202, 208); R860: German narrative about 10 Sep (viewer ~59+)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C8975",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-079D",
+    "unit_name": "79th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-10",
+    "place_id": "PL0169",
+    "location_name": "Le Havre",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Astonia: 22nd Dragoons flails breach the minefields at Le Havre ahead of the 49th Division",
+    "operation_id": "OP-ASTONIA",
+    "operation": "Operation Astonia",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Astonia",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R001",
+    "source_locator": "R671: p. 14"
    }
   },
   {
@@ -86796,6 +86878,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R408;R209;R002",
     "source_locator": "R408: p. 651; R209: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "claim_id": "C8976",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-031B",
+    "unit_name": "31st Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-17",
+    "place_id": "PL0677",
+    "location_name": "Boulogne-sur-Mer, Pas-de-Calais",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Wellhit: armoured assault teams (flails, Crocodiles and AVREs) support the 3rd Canadian Infantry Division at Boulogne",
+    "operation_id": "OP-WELLHIT",
+    "operation": "Operation Wellhit",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wellhit",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 61"
    }
   },
   {
@@ -95324,6 +95447,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R813;R002",
     "source_locator": "R813: German p.3 (Fold3 image 26, English p.3)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8538,
+     50.9525
+    ]
+   },
+   "properties": {
+    "claim_id": "C8977",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-031B",
+    "unit_name": "31st Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-25",
+    "place_id": "PL0678",
+    "location_name": "Calais, Pas-de-Calais",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Undergo: flails, AVREs and Crocodiles of the 31st Tank Brigade support the 3rd Canadian Infantry Division at Calais",
+    "operation_id": "OP-UNDERGO",
+    "operation": "Operation Undergo",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undergo",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: p. 65"
    }
   },
   {
@@ -123271,7 +123435,7 @@
     "location_name": "Wuustwezel, Antwerp (axis Brecht-Wuestwezel)",
     "location_represents": "approach_route",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "attack",
     "current_activity": "Operation \"Suitcase\": attacks on the axis Brecht-Wuestwezel",
     "operation_id": "OP-PHEASANT",
@@ -123284,8 +123448,8 @@
     "location_date": "1944-10-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 389-90"
+    "reference_ids": "R668;R671;R002",
+    "source_locator": "R668: pp. 389-90; R671: p. 109"
    }
   },
   {
@@ -130461,6 +130625,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 403"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.9143,
+     51.4249
+    ]
+   },
+   "properties": {
+    "claim_id": "C8978",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-079D",
+    "unit_name": "79th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-26",
+    "place_id": "PL3427",
+    "location_name": "Hoedekenskerke (Borsele), Zeeland (South Beveland landing; left of the bridgehead toward Ellewoutsdijk)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "landing",
+    "current_activity": "Scheldt: Buffaloes of the 1st Assault Brigade R.E. (79th Armoured Division) land the 52nd Division on South Beveland at Ellewoutsdijk",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-26",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R671;R002",
+    "source_locator": "R671: pp. 111–113"
    }
   },
   {

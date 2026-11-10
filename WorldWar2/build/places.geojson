@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 23
+    "claims_count": 24
    }
   },
   {
@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -14778,7 +14778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -16838,7 +16838,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -17118,7 +17118,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -17138,7 +17138,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -20898,7 +20898,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 12
+    "claims_count": 13
    }
   },
   {
@@ -20998,7 +20998,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -34618,7 +34618,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 15
+    "claims_count": 16
    }
   },
   {
@@ -44138,7 +44138,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -68378,7 +68378,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -68698,7 +68698,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 2
+    "claims_count": 6
    }
   },
   {
@@ -70878,7 +70878,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -71298,7 +71298,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79918,6 +79918,46 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4193,
+     51.6648
+    ]
+   },
+   "properties": {
+    "place_id": "PL4013",
+    "name": "Middelrode, Noord-Brabant",
+    "alt_names": "Middlerode",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.15,
+     51.3667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4014",
+    "name": "Blerick, Venlo, Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
     "claims_count": 1
    }
   }

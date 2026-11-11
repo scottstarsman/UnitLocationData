@@ -74,30 +74,30 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 9110, dated 1939-09-16 to 1945-05-31 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 9123, dated 1939-09-16 to 1945-05-31 |
 | units in `data/units.csv` | 430: 423 active (have claims), 7 placeholders |
 | claim files (one per active unit) | 423 |
 | conflict groups / claims in a group | 119 / 266 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 4036 / 9 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 4042 / 9 |
 | operations / operation relations | 75 / 14 |
 | command relations (`data/command_relations.csv`) | 1280 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 3159 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 34 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 10 |
-| references (`data/references.csv`, generated) | 878, of which 760 cited by at least one claim (the others are cited by units or operations) |
+| references (`data/references.csv`, generated) | 879, of which 761 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
 | nationalities / retired claim ids / claim-key exceptions | 10 / 2 / 11 |
 | controlled vocabularies in `schema/vocabularies.json` | 43 |
 
-Claims by nationality: Germany 4038, US 3072, UK 1106, Canada 542, France 235, Poland 85, Belgium 15, Netherlands 11, Czechoslovakia 6.
+Claims by nationality: Germany 4039, US 3073, UK 1108, Canada 551, France 235, Poland 85, Belgium 15, Netherlands 11, Czechoslovakia 6.
 
-Claims by echelon: division 6198, corps 1716, army 667, brigade 252, army_group 129, regiment/battle_group 96, other 33, battalion 19.
+Claims by echelon: division 6209, corps 1717, army 667, brigade 253, army_group 129, regiment/battle_group 96, other 33, battalion 19.
 
-Claims by branch: Army 6319, Armoured 1737, Luftwaffe 467, Waffen-SS 357, Airborne 229, Navy 1.
+Claims by branch: Army 6324, Armoured 1745, Luftwaffe 467, Waffen-SS 357, Airborne 229, Navy 1.
 
-Claims by event type: other 3889, hq_observation 1658, defense 672, attack 645, capture 360, hq_move 355, arrival 240, command_change 213, relocation 212, subordinate_assignment 205, regroup 180, withdrawal 166, counterattack 82, landing 71, surrender 70, activation 51, redesignation 26, destruction 15.
+Claims by event type: other 3891, hq_observation 1658, defense 673, attack 648, capture 363, hq_move 355, arrival 240, relocation 216, command_change 213, subordinate_assignment 205, regroup 180, withdrawal 166, counterattack 82, landing 71, surrender 70, activation 51, redesignation 26, destruction 15.
 
-Claims by status: preferred 8956, alternate 138, disputed 16. Claims by confidence: 0.3 3371, 0.5 4772, 0.7 895, 0.9 72.
+Claims by status: preferred 8969, alternate 138, disputed 16. Claims by confidence: 0.3 3376, 0.5 4780, 0.7 895, 0.9 72.
 
 Placeholder units by nationality: Allied 3, US 2, Germany 1, UK 1.
 
@@ -107,9 +107,9 @@ Command relations: start basis claim_date 615, assignment_table 492, narrative 1
 
 Evidence roles of relation links: observed_during 1457, asserts_start 1209, asserts_start_and_end 326, asserts_end 92, listed_by_higher_unit 75.
 
-References by source family: us_army_cmh 241, wikipedia 237, lexikon_wehrmacht_de 215, fms_german_manuscript 75, ww2byday_com 33, nara_captured_german_records 20, canada_dhh_reports 4, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, geonames 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 249, encyclopedia 237, official_history 184, archive_document 108, assignment_table 65, news_or_web_article 19, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 3, other 2.
+References by source family: us_army_cmh 241, wikipedia 237, lexikon_wehrmacht_de 215, fms_german_manuscript 75, ww2byday_com 33, nara_captured_german_records 20, canada_dhh_reports 5, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, geonames 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 249, encyclopedia 237, official_history 184, archive_document 109, assignment_table 65, news_or_web_article 19, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 3, other 2.
 
-Places by kind: point 3932, area 86, line 18.
+Places by kind: point 3938, area 86, line 18.
 
 <!-- counts:end -->
 

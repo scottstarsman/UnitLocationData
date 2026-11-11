@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 12
+    "claims_count": 13
    }
   },
   {
@@ -14138,7 +14138,7 @@
     "precision_km": 10,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -21738,7 +21738,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -69158,7 +69158,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69198,7 +69198,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -69238,7 +69238,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -76158,7 +76158,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -80718,6 +80718,126 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2479,
+     51.7041
+    ]
+   },
+   "properties": {
+    "place_id": "PL4053",
+    "name": "Verkält (Uedem), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2919,
+     51.6832
+    ]
+   },
+   "properties": {
+    "place_id": "PL4054",
+    "name": "Kirsel (Uedem), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3809,
+     51.6454
+    ]
+   },
+   "properties": {
+    "place_id": "PL4055",
+    "name": "Labbeck (Sonsbeck), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4653,
+     51.8792
+    ]
+   },
+   "properties": {
+    "place_id": "PL4056",
+    "name": "Wamel (West Maas en Waal), Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8819,
+     51.7525
+    ]
+   },
+   "properties": {
+    "place_id": "PL4057",
+    "name": "Mook (Mook en Middelaar), Limburg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5796,
+     51.63
+    ]
+   },
+   "properties": {
+    "place_id": "PL4058",
+    "name": "Büderich (Wesel), North Rhine-Westphalia",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "North Rhine-Westphalia",
     "claims_count": 1
    }
   }

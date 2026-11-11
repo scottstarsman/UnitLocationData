@@ -6,13 +6,13 @@ BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,a
 CAN-ARMY-001A,First Canadian Army,Canada,army,Army,active,1942,true,50,1944-06-18,1945-05-04,
 CAN-COR-001C,I Canadian Corps,Canada,corps,Army,active,1942,true,11,1945-03-15,1945-05-07,
 CAN-COR-002C,II Canadian Corps,Canada,corps,Army,active,1943,true,70,1944-06-29,1945-05-09,
-CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,active,,true,97,1944-07-31,1945-05-09,
-CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,23,1945-02-28,1945-05-08,
+CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,active,,true,101,1944-07-31,1945-05-09,
+CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,24,1945-02-28,1945-05-08,
 CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,active,1939,true,18,1945-03-23,1945-05-08,
-CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,active,1939,true,125,1944-07-07,1945-05-09,
-CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,128,1944-06-06,1945-05-09,
+CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,active,1939,true,127,1944-07-07,1945-05-09,
+CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,129,1944-06-06,1945-05-09,
 CAN-ARM-001B,1st Canadian Armoured Brigade,Canada,brigade,Armoured,active,,true,3,1945-04-12,1945-05-07,
-CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,active,1942-01-26,true,17,1944-06-06,1945-05-04,
+CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,active,1942-01-26,true,18,1944-06-06,1945-05-04,
 CZ-ARM-001B,1st Czechoslovak Independent Armoured Brigade,Czechoslovakia,brigade,Armoured,active,1943-09,true,6,1944-08-30,1945-05-08,
 FR-ARMY-001A,French First Army (Army B until 25 September 1944),France,army,Army,active,1944,true,26,1944-08-20,1945-05-09,
 FR-ARMY-ATLANT,French Forces of the West (Détachement d'Armée de l'Atlantique from March 1945),France,army,Army,active,1944-10-14,true,1,1944-10-14,1944-10-14,
@@ -77,7 +77,7 @@ GER-COR-KVOSG,"Corps Command Vosges (Korpskommando Vosges, provisional corps hea
 GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,86,1944-05-05,1945-05-05,GER-ARMY-007A
 GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,active,,true,21,1944-09-15,1945-01-23,
 GER-PZ-039C,XXXIX Panzer Corps,Germany,corps,Armoured,active,1942-07-09,true,8,1944-12-15,1945-05-04,
-GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,69,1944-05-31,1945-04-18,GER-PZA-005A
+GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,70,1944-05-31,1945-04-18,GER-PZA-005A
 GER-PZ-058C,LVIII Panzer Corps,Germany,corps,Armoured,active,1943-07-28,true,18,1944-06-06,1945-04-15,GER-PZA-005A
 GER-SSCOR-012C,XII SS Corps,Germany,corps,Waffen-SS,active,,true,32,1944-09-28,1945-04-16,GER-PZA-005A
 GER-SSCOR-013C,XIII SS Corps,Germany,corps,Waffen-SS,active,,true,13,1944-09-24,1945-05-08,GER-ARMY-001A
@@ -310,8 +310,8 @@ UK-ABN-006D,6th Airborne Division,UK,division,Airborne,active,1943,true,50,1944-
 UK-ARM-007D,7th Armoured Division,UK,division,Armoured,active,,true,75,1944-06-07,1945-05-08,
 UK-ARM-011D,11th Armoured Division,UK,division,Armoured,active,1941,true,69,1944-06-13,1945-05-08,
 UK-ARM-079D,79th Armoured Division,UK,division,Armoured,active,1942-08-14,true,17,1944-06-06,1945-04-12,
-UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,active,1941-06-17,true,39,1944-06-28,1945-04-27,
-UK-INF-003D,3rd Infantry Division,UK,division,Army,active,,true,58,1944-06-06,1945-05-01,
+UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,active,1941-06-17,true,40,1944-06-28,1945-04-27,
+UK-INF-003D,3rd Infantry Division,UK,division,Army,active,,true,59,1944-06-06,1945-05-01,
 UK-INF-005D,5th Infantry Division,UK,division,Army,active,,true,3,1945-04-20,1945-05-02,
 UK-INF-015D,15th (Scottish) Infantry Division,UK,division,Army,active,1939,true,64,1944-06-14,1945-04-29,
 UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,active,,true,77,1944-06-24,1945-05-09,
@@ -387,7 +387,7 @@ US-INF-026D,26th Infantry Division,US,division,Army,active,,true,42,1944-09-07,1
 US-INF-028D,28th Infantry Division,US,division,Army,active,,true,73,1944-07-24,1945-05-08,
 US-INF-029D,29th Infantry Division,US,division,Army,active,,true,67,1944-06-06,1945-05-08,
 US-INF-030D,30th Infantry Division,US,division,Army,active,,true,70,1944-06-10,1945-05-09,
-US-INF-035D,35th Infantry Division,US,division,Army,active,,true,71,1944-07-08,1945-05-09,
+US-INF-035D,35th Infantry Division,US,division,Army,active,,true,72,1944-07-08,1945-05-09,
 US-INF-036D,36th Infantry Division,US,division,Army,active,,true,46,1944-08-15,1945-05-09,US-COR-006C
 US-INF-042D,42nd Infantry Division,US,division,Army,active,,true,25,1944-12-26,1945-05-09,
 US-INF-044D,44th Infantry Division,US,division,Army,active,,true,35,1944-09-15,1945-05-05,

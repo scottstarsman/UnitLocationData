@@ -275107,8 +275107,8 @@
     "location_date": "1945-02-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R777;R002",
-    "source_locator": "R777: German p.3, English p.2, Skizze 2"
+    "reference_ids": "R777;R886;R002",
+    "source_locator": "R777: German p.3, English p.2, Skizze 2; R886: para 9"
    }
   },
   {
@@ -275239,6 +275239,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2479,
+     51.7041
+    ]
+   },
+   "properties": {
+    "claim_id": "C9122",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-24",
+    "place_id": "PL4053",
+    "location_name": "Verkält (Uedem), North Rhine-Westphalia (9th Brigade)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "The 9th Brigade holds the Verkält area before Blockbuster",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R782",
+    "source_locator": "R886: para 22"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3161,
      51.081
     ]
@@ -275353,8 +275394,8 @@
     "location_date": "1945-02-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 271, 273; R668: p. 494"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: pp. 271, 273; R668: p. 494; R886: para 21"
    }
   },
   {
@@ -275517,8 +275558,8 @@
     "location_date": "1945-02-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 494"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 494; R886: para 21"
    }
   },
   {
@@ -275558,8 +275599,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 494"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 494; R886: para 20"
    }
   },
   {
@@ -275640,8 +275681,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 494"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 494; R886: para 21"
    }
   },
   {
@@ -275681,8 +275722,8 @@
     "location_date": "1945-02-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 494"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 494; R886: para 21"
    }
   },
   {
@@ -275722,8 +275763,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 494"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 494; R886: para 21"
    }
   },
   {
@@ -275886,8 +275927,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R777;R808;R002",
-    "source_locator": "R668: p. 495; R777: German p.3, English p.2, Skizze 2; R808: German p.12, English p.12"
+    "reference_ids": "R668;R777;R808;R886;R002",
+    "source_locator": "R668: p. 495; R777: German p.3, English p.2, Skizze 2; R808: German p.12, English p.12; R886: para 9"
    }
   },
   {
@@ -276460,8 +276501,8 @@
     "location_date": "1945-02-26",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 492"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 492; R886: para 35"
    }
   },
   {
@@ -276542,8 +276583,8 @@
     "location_date": "1945-02-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 498-499"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: pp. 498-499; R886: para 42"
    }
   },
   {
@@ -276583,8 +276624,8 @@
     "location_date": "1945-02-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 500-501"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: pp. 500-501; R886: paras 45, 55"
    }
   },
   {
@@ -277198,8 +277239,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 502"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 502; R886: paras 56, 72"
    }
   },
   {
@@ -277239,8 +277280,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 494, 505"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: pp. 494, 505; R886: paras 62, 79"
    }
   },
   {
@@ -277280,8 +277321,8 @@
     "location_date": "1945-02-27",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 271, 273; R668: p. 502"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: pp. 271, 273; R668: p. 502; R886: para 61"
    }
   },
   {
@@ -281544,8 +281585,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000268 situation 1200 hrs 27 February 1945"
+    "reference_ids": "R781;R886;R002",
+    "source_locator": "R781: sheet cs000268 situation 1200 hrs 27 February 1945; R886: para 82"
    }
   },
   {
@@ -282774,8 +282815,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 502, 508"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: pp. 502, 508; R886: paras 61, 81"
    }
   },
   {
@@ -282815,8 +282856,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 503"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 503; R886: para 76"
    }
   },
   {
@@ -282856,8 +282897,8 @@
     "location_date": "1945-02-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 505"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 505; R886: paras 71, 77"
    }
   },
   {
@@ -283758,8 +283799,8 @@
     "location_date": "1945-02-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 506"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 506; R886: para 85"
    }
   },
   {
@@ -283799,8 +283840,8 @@
     "location_date": "1945-02-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 506"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 506; R886: para 84"
    }
   },
   {
@@ -283840,8 +283881,8 @@
     "location_date": "1945-02-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 508"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 508; R886: paras 73, 82"
    }
   },
   {
@@ -283881,8 +283922,8 @@
     "location_date": "1945-02-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 508"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 508; R886: paras 73, 82"
    }
   },
   {
@@ -284865,8 +284906,8 @@
     "location_date": "1945-03-01",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 273; R668: p. 514"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: p. 273; R668: p. 514; R886: para 99"
    }
   },
   {
@@ -285070,8 +285111,8 @@
     "location_date": "1945-03-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 510"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 510; R886: para 91"
    }
   },
   {
@@ -285448,6 +285489,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2919,
+     51.6832
+    ]
+   },
+   "properties": {
+    "claim_id": "C9123",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-01",
+    "place_id": "PL4054",
+    "location_name": "Kirsel (Uedem), North Rhine-Westphalia (10th Brigade, south-east of Kirsel)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "The 10th Brigade, relieved in the Hochwald gap, concentrates south-east of Kirsel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R782",
+    "source_locator": "R886: para 91"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5249,
      49.9733
     ]
@@ -285808,8 +285890,8 @@
     "location_date": "1945-03-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 513"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 513; R886: paras 95, 105"
    }
   },
   {
@@ -285849,8 +285931,8 @@
     "location_date": "1945-03-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 514"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 514; R886: para 121"
    }
   },
   {
@@ -285890,8 +285972,8 @@
     "location_date": "1945-03-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 514"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 514; R886: paras 99, 109"
    }
   },
   {
@@ -285931,8 +286013,8 @@
     "location_date": "1945-03-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 514"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 514; R886: para 109"
    }
   },
   {
@@ -286218,8 +286300,8 @@
     "location_date": "1945-03-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 274; R668: p. 514"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: p. 274; R668: p. 514; R886: para 121"
    }
   },
   {
@@ -286259,8 +286341,8 @@
     "location_date": "1945-03-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 274"
+    "reference_ids": "R671;R886;R002",
+    "source_locator": "R671: p. 274; R886: para 121"
    }
   },
   {
@@ -286300,8 +286382,8 @@
     "location_date": "1945-03-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 274; R668: pp. 503, 514"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: p. 274; R668: pp. 503, 514; R886: para 101"
    }
   },
   {
@@ -286587,8 +286669,8 @@
     "location_date": "1945-03-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 514"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 514; R886: para 101"
    }
   },
   {
@@ -286753,6 +286835,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R852;R855;R859;R002",
     "source_locator": "R852: German p.39 (Fold3 image 108); R855: English typed p.-1- (Fold3 page 5), English typed p.-2- (Fold3 page 6); R859: German printed p.2 (Fold3 viewer page 109), German printed pp.5, 7 (Fold3 viewer pages 112, 114)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3732,
+     51.6751
+    ]
+   },
+   "properties": {
+    "claim_id": "C9128",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-03",
+    "place_id": "PL0716",
+    "location_name": "Hochwald (forest), Xanten, North Rhine-Westphalia (6th and 4th Brigades)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 6th Brigade clears the eastern Hochwald; the 4th Brigade holds the north-west of the forest",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: para 115"
    }
   },
   {
@@ -286956,8 +287079,8 @@
     "location_date": "1945-03-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 514"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 514; R886: paras 114, 124"
    }
   },
   {
@@ -286997,8 +287120,8 @@
     "location_date": "1945-03-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 515"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 515; R886: para 128"
    }
   },
   {
@@ -287038,8 +287161,8 @@
     "location_date": "1945-03-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 515"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 515; R886: para 132"
    }
   },
   {
@@ -287744,6 +287867,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3809,
+     51.6454
+    ]
+   },
+   "properties": {
+    "claim_id": "C9124",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-04",
+    "place_id": "PL4055",
+    "location_name": "Labbeck (Sonsbeck), North Rhine-Westphalia (10th Brigade battle group)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The Argylls and the 29th Reconnaissance Regiment attack Labbeck and push toward Haneshof",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R782",
+    "source_locator": "R886: para 127"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.361,
+     51.5483
+    ]
+   },
+   "properties": {
+    "claim_id": "C9131",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-04",
+    "place_id": "PL3473",
+    "location_name": "Kapellen (Geldern), North Rhine-Westphalia (185th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "The 185th Brigade firm on Kapellen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: paras 121, 128"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5667,
      51.3333
     ]
@@ -287940,8 +288145,8 @@
     "location_date": "1945-03-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 516"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 516; R886: para 131"
    }
   },
   {
@@ -288268,8 +288473,8 @@
     "location_date": "1945-03-06",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 276; R668: p. 515"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: p. 276; R668: p. 515; R886: para 140"
    }
   },
   {
@@ -293926,8 +294131,8 @@
     "location_date": "1945-03-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 515"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 515; R886: para 141"
    }
   },
   {
@@ -294008,8 +294213,8 @@
     "location_date": "1945-03-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 516"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 516; R886: paras 134, 138"
    }
   },
   {
@@ -294090,8 +294295,8 @@
     "location_date": "1945-03-06",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 516"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 516; R886: para 132"
    }
   },
   {
@@ -294919,6 +295124,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4561,
+     51.6135
+    ]
+   },
+   "properties": {
+    "claim_id": "C9125",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-07",
+    "place_id": "PL3477",
+    "location_name": "Veen (Alpen), North Rhine-Westphalia (10th Brigade attacking Veen)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Attack on Veen; crossroads at Dornemannshof south-east of the village taken by midnight",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: paras 149-150"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3292,
      50.485
     ]
@@ -295115,8 +295361,8 @@
     "location_date": "1945-03-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 517"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 517; R886: para 154"
    }
   },
   {
@@ -295197,8 +295443,8 @@
     "location_date": "1945-03-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 518"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 518; R886: para 154"
    }
   },
   {
@@ -295279,8 +295525,8 @@
     "location_date": "1945-03-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 521-522"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: pp. 521-522; R886: para 152"
    }
   },
   {
@@ -295657,6 +295903,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.3789,
+     51.5847
+    ]
+   },
+   "properties": {
+    "claim_id": "C9132",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-08",
+    "place_id": "PL3475",
+    "location_name": "Winkelscher Busch (Sonsbeck), North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Static in the Winkelscher Busch area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: para 152"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1022,
      50.7353
     ]
@@ -295935,8 +296222,8 @@
     "location_date": "1945-03-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 276, 277, 278, 279; R668: p. 521"
+    "reference_ids": "R671;R668;R886;R002",
+    "source_locator": "R671: pp. 276, 277, 278, 279; R668: p. 521; R886: para 157"
    }
   },
   {
@@ -296058,8 +296345,8 @@
     "location_date": "1945-03-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 519-520"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: pp. 519-520; R886: para 162"
    }
   },
   {
@@ -296386,8 +296673,8 @@
     "location_date": "1945-03-10",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 521"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 521; R886: para 168"
    }
   },
   {
@@ -296509,8 +296796,8 @@
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 522"
+    "reference_ids": "R668;R886;R002",
+    "source_locator": "R668: p. 522; R886: para 168"
    }
   },
   {
@@ -297010,6 +297297,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4771,
+     51.6336
+    ]
+   },
+   "properties": {
+    "claim_id": "C9129",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-10",
+    "place_id": "PL1100",
+    "location_name": "Birten, Xanten, North Rhine-Westphalia (5th Brigade)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "The 5th Brigade south-east of Birten; the division's task ends",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: paras 159, 168"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -297413,6 +297741,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R829;R002",
     "source_locator": "R776: Annex I,3 (Fold3 image 76); R829: printed p. 9"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5796,
+     51.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C9133",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-035D",
+    "unit_name": "35th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-11",
+    "place_id": "PL4058",
+    "location_name": "Büderich (Wesel), North Rhine-Westphalia (Fort Blücher)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Enters Fort Blücher opposite Wesel, ending Blockbuster",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R782",
+    "source_locator": "R886: para 169"
    }
   },
   {
@@ -298108,8 +298477,8 @@
     "location_date": "1945-03-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000282 situation 1200 hrs 13 March 1945"
+    "reference_ids": "R781;R886;R002",
+    "source_locator": "R781: sheet cs000282 situation 1200 hrs 13 March 1945; R886: para 179"
    }
   },
   {
@@ -298149,8 +298518,8 @@
     "location_date": "1945-03-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000282 situation 1200 hrs 13 March 1945"
+    "reference_ids": "R781;R886;R002",
+    "source_locator": "R781: sheet cs000282 situation 1200 hrs 13 March 1945; R886: para 179"
    }
   },
   {
@@ -303447,6 +303816,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3158,
+     51.5891
+    ]
+   },
+   "properties": {
+    "claim_id": "C9126",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-13",
+    "place_id": "PL0693",
+    "location_name": "Boxtel, Noord-Brabant (10th Brigade at Boxtel; armoured brigade south of Tilburg)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Out of the line; resting around Boxtel and south of Tilburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-13",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: para 179"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8819,
+     51.7525
+    ]
+   },
+   "properties": {
+    "claim_id": "C9130",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-03-13",
+    "place_id": "PL4057",
+    "location_name": "Mook (Mook en Middelaar), Limburg (between Mook and the west side of the Reichswald)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Resting on the rising ground between Mook and the west side of the Reichswald",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-13",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R782",
+    "source_locator": "R886: para 179"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.4239,
      48.9131
     ]
@@ -305570,8 +306021,49 @@
     "location_date": "1945-03-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R885;R002",
-    "source_locator": "R885: para 26"
+    "reference_ids": "R885;R886;R002",
+    "source_locator": "R885: para 26; R886: para 189"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5774,
+     51.9142
+    ]
+   },
+   "properties": {
+    "claim_id": "C9134",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-047C",
+    "unit_name": "XLVII Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Armoured",
+    "date": "1945-03-19",
+    "place_id": "PL3823",
+    "location_name": "Aalten, Gelderland (Borken north to Aalten-Zelhem)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Mobile reserve located from Borken north to Aalten and Zelhem",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R002",
+    "source_locator": "R886: para 190"
    }
   },
   {
@@ -310697,6 +311189,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R541;R542;R002",
     "source_locator": "R776: Annex I,3 (Fold3 image 76); R541: p. 259; R542: p. 267"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4653,
+     51.8792
+    ]
+   },
+   "properties": {
+    "claim_id": "C9127",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-005D",
+    "unit_name": "5th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-21",
+    "place_id": "PL4056",
+    "location_name": "Wamel (West Maas en Waal), Gelderland (Westminster Regiment (Motor))",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "The Westminster Regiment (Motor) takes over the line at Wamel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-21",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R886;R782",
+    "source_locator": "R886: para 193"
    }
   },
   {

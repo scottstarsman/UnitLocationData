@@ -2,16 +2,16 @@ unit_id,unit_name,nationality,echelon,branch,record_status,formed_date,has_claim
 ALL-FAAA-001A,First Allied Airborne Army,Allied,army,Airborne,placeholder,1944-08-02,false,0,,,
 ALL-AFHQ-000H,Allied Force Headquarters (AFHQ),Allied,other,Army,placeholder,,false,0,,,
 ALL-SHAEF-000H,Supreme Headquarters Allied Expeditionary Force (SHAEF),Allied,other,Army,placeholder,,false,0,,,
-BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,active,1943-01,true,14,1944-08-13,1945-04-18,
+BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,active,1943-01,true,15,1944-08-13,1945-04-18,
 CAN-ARMY-001A,First Canadian Army,Canada,army,Army,active,1942,true,50,1944-06-18,1945-05-04,
-CAN-COR-001C,I Canadian Corps,Canada,corps,Army,active,1942,true,9,1945-03-15,1945-05-07,
+CAN-COR-001C,I Canadian Corps,Canada,corps,Army,active,1942,true,11,1945-03-15,1945-05-07,
 CAN-COR-002C,II Canadian Corps,Canada,corps,Army,active,1943,true,70,1944-06-29,1945-05-09,
 CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,active,,true,96,1944-07-31,1945-05-09,
-CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,18,1945-02-28,1945-05-08,
-CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,active,1939,true,12,1945-04-03,1945-05-08,
+CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,active,1941-02-27,true,20,1945-02-28,1945-05-08,
+CAN-INF-001D,1st Canadian Infantry Division,Canada,division,Army,active,1939,true,17,1945-04-03,1945-05-08,
 CAN-INF-002D,2nd Canadian Infantry Division,Canada,division,Army,active,1939,true,121,1944-07-07,1945-05-09,
 CAN-INF-003D,3rd Canadian Infantry Division,Canada,division,Army,active,,true,123,1944-06-06,1945-05-09,
-CAN-ARM-001B,1st Canadian Armoured Brigade,Canada,brigade,Armoured,active,,true,2,1945-04-12,1945-04-18,
+CAN-ARM-001B,1st Canadian Armoured Brigade,Canada,brigade,Armoured,active,,true,3,1945-04-12,1945-05-07,
 CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,active,1942-01-26,true,14,1944-06-06,1945-05-04,
 CZ-ARM-001B,1st Czechoslovak Independent Armoured Brigade,Czechoslovakia,brigade,Armoured,active,1943-09,true,6,1944-08-30,1945-05-08,
 FR-ARMY-001A,French First Army (Army B until 25 September 1944),France,army,Army,active,1944,true,26,1944-08-20,1945-05-09,
@@ -150,7 +150,7 @@ GER-INF-331D,331st Infantry Division,Germany,division,Army,active,,true,4,1944-0
 GER-INF-338D,338th Infantry Division,Germany,division,Army,active,1942-11-09,true,36,1944-08-24,1945-04-15,GER-COR-085C
 GER-INF-343D,343rd Infantry Division,Germany,division,Army,active,1942-10-01,true,6,1942-10-01,1944-09-17,GER-COR-025C
 GER-INF-344D,344th Infantry Division,Germany,division,Army,active,1942-09-25,true,12,1944-08-22,1944-12-19,GER-COR-067C
-GER-INF-346D,346th Infantry Division,Germany,division,Army,active,1942-09-21,true,50,1944-06-06,1945-04-15,GER-COR-081C
+GER-INF-346D,346th Infantry Division,Germany,division,Army,active,1942-09-21,true,51,1944-06-06,1945-04-17,GER-COR-081C
 GER-INF-347D,347th Infantry Division,Germany,division,Army,active,1942-10-03,true,36,1944-06-06,1945-03-20,GER-COR-088C
 GER-INF-348D,348th Infantry Division,Germany,division,Army,active,1942-09-14,true,11,1942-11-15,1944-09-29,GER-COR-067C
 GER-INF-352D,352nd Infantry Division,Germany,division,Army,active,1943-11-05,true,20,1944-06-06,1944-08-12,GER-COR-084C
@@ -226,7 +226,7 @@ GER-VG-326D,326th Volksgrenadier Division,Germany,division,Army,active,1944-09-0
 GER-VG-340D,340th Volksgrenadier Division,Germany,division,Army,active,1944-09-15,true,13,1944-11-21,1945-03-17,GER-COR-081C
 GER-VG-347D,347th Volksgrenadier Division,Germany,division,Army,active,,true,1,1945-05-07,1945-05-07,GER-COR-012C
 GER-VG-352D,352nd Volksgrenadier Division,Germany,division,Army,active,1944-09-21,true,11,1944-12-05,1945-03-01,GER-COR-085C
-GER-VG-361D,361st Volksgrenadier Division,Germany,division,Army,active,1944-08-23,true,20,1944-10-03,1945-04-15,GER-COR-089C
+GER-VG-361D,361st Volksgrenadier Division,Germany,division,Army,active,1944-08-23,true,24,1944-10-03,1945-05-07,GER-COR-089C
 GER-VG-363D,363rd Volksgrenadier Division,Germany,division,Army,active,1944-09-17,true,9,1944-10-05,1945-04-15,GER-SSCOR-012C
 GER-VG-462D,462nd Volksgrenadier Division,Germany,division,Army,active,1944-11,true,3,1944-11-09,1944-12-13,GER-COR-082C
 GER-VG-553D,553rd Volksgrenadier Division,Germany,division,Army,active,1944-07-11,true,24,1944-09-19,1945-03-27,GER-SSCOR-013C
@@ -315,7 +315,7 @@ UK-INF-003D,3rd Infantry Division,UK,division,Army,active,,true,57,1944-06-06,19
 UK-INF-005D,5th Infantry Division,UK,division,Army,active,,true,2,1945-04-24,1945-05-02,
 UK-INF-015D,15th (Scottish) Infantry Division,UK,division,Army,active,1939,true,64,1944-06-14,1945-04-29,
 UK-INF-043D,43rd (Wessex) Infantry Division,UK,division,Army,active,,true,75,1944-06-24,1945-05-09,
-UK-INF-049D,49th (West Riding) Infantry Division,UK,division,Army,active,,true,68,1944-06-13,1945-05-08,
+UK-INF-049D,49th (West Riding) Infantry Division,UK,division,Army,active,,true,70,1944-06-13,1945-05-08,
 UK-INF-050D,50th (Northumbrian) Infantry Division,UK,division,Army,active,,true,36,1944-06-06,1944-12-05,
 UK-INF-051D,51st (Highland) Infantry Division,UK,division,Army,active,,true,70,1944-06-07,1945-05-09,
 UK-INF-052D,52nd (Lowland) Infantry Division,UK,division,Army,active,,true,51,1944-09-26,1945-05-09,

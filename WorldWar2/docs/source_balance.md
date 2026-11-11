@@ -152,6 +152,28 @@ US citing and exclusive shares dipped only because 43 new claims that do not cit
 
 The remaining recommended steps (CMHQ/AHQ reports, de Lattre leftovers, de Jong, Joslen, and a Polish-authored source) are unchanged.
 
+## CMHQ/AHQ reports pass (re-measured 11 November 2026)
+
+The second recommended step — reading the free DHH CMHQ/AHQ reports as a second Canadian family — was done on branch `cmhq-ahq-reports` (PR #85) on 11 November 2026, in twelve chunks: CMHQ Reports 173, 186, 155, 188, 183, 184 and 181 and AHQ Reports 39, 32, 19, 65 and 58 (`R882`-`R893`, family `canada_dhh_reports`). 548 existing rows gained a supporting citation (49 confidence raises), 226 claims were added (`C9018`-`C9243`) and 73 places (`PL4017`-`PL4089`). The same survey script was run on `build/all_claims.csv` of `main` `dbdfffe` (after PR #84) and of the branch, with one change: the new family `canada_dhh_reports` is classified as Canadian official and counts as own-nation for Canadian units (it is not own-nation for Polish, British or German units).
+
+### Shares before and after
+
+| Measure | On main `dbdfffe` (after the Ellis pass) | After the CMHQ/AHQ pass |
+|---|---|---|
+| Claims | 9,006 | 9,232 |
+| Claims citing a DHH report (`canada_dhh_reports`) | 0 | 749 (8.1%) |
+| Canada sources, citing / exclusive | 8.6% (774) / 5.9% | 12.3% (1,136) / 8.2% |
+| Canadian units, own-nation / only US or Wikipedia | 62.3% (311 of 499) / 36.9% (184) | 76.4% (450 of 589) / 23.3% (137) |
+| Canadian units, December 1944 / January 1945 own-nation | 23.1% / 16.7% | 69.0% / 56.8% |
+| Polish units, own-nation / only US or Wikipedia | 0.0% (0 of 81) / 45.7% (37) | 0.0% (0 of 90) / 32.2% (29) |
+| UK units, own-nation | 23.1% (247 of 1,071) | 21.8% (247 of 1,135) |
+| German units, own-nation | 43.1% | 42.5% |
+| US sources, citing / exclusive | 70.6% / 65.7% | 68.8% / 63.1% |
+| 12th Army Group maps, share of all claims | 53.6% | 52.3% |
+| Non-US, non-German units with no own-nation source | 13 | 13 |
+
+Canadian own-nation support rose from 62.3% to 76.4%, and the two thin months named above, December 1944 and January 1945, rose from 23.1% and 16.7% to 69.0% and 56.8% (mostly CMHQ Report No. 173, *The Watch on the Maas*). The baseline figure of 62.4% in the tables above is on main `a8b9509`; on `dbdfffe` it was 62.3%. Polish own-nation support stays at zero, because the reports are Canadian-authored; but the Polish division gained 9 report-based rows and its map-only rows fell from 35 to 27. British own-nation share fell slightly because the new British rows of First Canadian Army formations cite the Canadian reports, not Ellis. The remaining recommended steps (de Lattre leftovers, de Jong, Joslen, and a Polish-authored source) are unchanged.
+
 ## Candidate sources not yet in the references
 
 Checked for a free official or openly released text, 10 November 2026.
@@ -178,7 +200,7 @@ Favour the biggest gaps and free access. Entering leftover facts from sources al
 
 1. **Ellis leftover-entry pass** (vols I and II, `R670` and `R671`) — **done, 10 November 2026**, on branch `ellis-leftovers` (PR #84), in six chunks (`C8975`–`C9017`). Own-nation support for UK units rose from 18.2% to 23.1%; claims that cite Ellis rose from 229 to 324. Polish own-nation support is still 0% (no Polish-authored reference was added; leftover Polish notes were re-checked and only facts the Ellis text confirms were entered). See the re-measure section below. Remaining British map-only rows, especially December 1944 and May 1945, need a later source (Joslen for order of battle, or a divisional history).
 
-2. **Canadian CMHQ and AHQ reports** for North-West Europe (the operational set listed above). Free official PDFs, not yet cited. Best second family for the 184 Canadian claims that remain US-or-Wikipedia-only, and for headquarters places Stacey does not give (roadmap leftover from Canadian Batch 2). Also useful for German units facing First Canadian Army.
+2. **Canadian CMHQ and AHQ reports** for North-West Europe (the operational set listed above) — **done, 11 November 2026**, on branch `cmhq-ahq-reports` (PR #85): twelve reports, `R882`-`R893`; Canadian own-nation support 62.3% → 76.4%. See the re-measure section above. Free official PDFs, not yet cited. Best second family for the 184 Canadian claims that remain US-or-Wikipedia-only, and for headquarters places Stacey does not give (roadmap leftover from Canadian Batch 2). Also useful for German units facing First Canadian Army.
 
 3. **de Lattre leftover-entry pass** (`R686`). Notes already exist. Aim at the French First Army, I and II Corps, and March 1945 (currently no French source that month). Access stays the existing Internet Archive lending copy (borrow-only, in copyright). No purchase if that copy still opens.
 

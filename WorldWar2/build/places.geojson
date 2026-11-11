@@ -11198,7 +11198,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -12218,7 +12218,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -12278,7 +12278,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -13398,7 +13398,7 @@
     "precision_km": 10,
     "country": "BE",
     "region": "East Flanders",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -15698,7 +15698,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "East Flanders",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -20978,7 +20978,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -67678,7 +67678,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -68058,7 +68058,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -68238,7 +68238,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -68318,7 +68318,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -71198,7 +71198,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -80838,6 +80838,66 @@
     "precision_km": 3,
     "country": "DE",
     "region": "North Rhine-Westphalia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4986,
+     51.2725
+    ]
+   },
+   "properties": {
+    "place_id": "PL4059",
+    "name": "Sint Kruis (Sluis), Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3694,
+     51.635
+    ]
+   },
+   "properties": {
+    "place_id": "PL4060",
+    "name": "Dinteloord (Steenbergen), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.675,
+     51.5017
+    ]
+   },
+   "properties": {
+    "place_id": "PL4061",
+    "name": "Arnemuiden (Middelburg), Zeeland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zeeland",
     "claims_count": 1
    }
   }

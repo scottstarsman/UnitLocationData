@@ -70403,6 +70403,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.8363,
+     51.1765
+    ]
+   },
+   "properties": {
+    "claim_id": "C9138",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-085D",
+    "unit_name": "85th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL3575",
+    "location_name": "Herentals (Heerenthals), Antwerp (Escaut and Albert Canal line, Herentals to Hasselt)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Disposed thinly along the Escaut and Albert Canals east of Antwerp, through Herentals to Hasselt",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 35"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.952,
      50.455
     ]
@@ -78111,6 +78152,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.6137,
+     51.4997
+    ]
+   },
+   "properties": {
+    "claim_id": "C9139",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-09",
+    "place_id": "PL0620",
+    "location_name": "Middelburg, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Army headquarters in the former 70th Division bunkers at Middelburg",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 41"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8091,
      48.4825
     ]
@@ -83024,6 +83106,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000099 situation 1200 hrs 12 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C9140",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-064D",
+    "unit_name": "64th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL0569",
+    "location_name": "Breskens, Zeeland (Breskens area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Ordered to defend the Breskens area to the last",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 36"
    }
   },
   {
@@ -92051,6 +92174,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.4397,
+     51.2439
+    ]
+   },
+   "properties": {
+    "claim_id": "C9141",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL1062",
+    "location_name": "Merksem, Antwerp (sector from Lillo to Merksem)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holding the sector from Lillo to Merksem north of Antwerp, with the 70th Division's 1018th Regiment attached",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 41"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -96388,8 +96552,8 @@
     "location_date": "1944-09-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000113 situation 1200 hrs 26 September 1944"
+    "reference_ids": "R781;R888;R002",
+    "source_locator": "R781: sheet cs000113 situation 1200 hrs 26 September 1944; R888: para 82"
    }
   },
   {
@@ -103727,8 +103891,8 @@
     "location_date": "1944-10-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 381"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 381; R888: para 178"
    }
   },
   {
@@ -108360,8 +108524,8 @@
     "location_date": "1944-10-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 381"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 381; R888: para 180"
    }
   },
   {
@@ -108729,8 +108893,8 @@
     "location_date": "1944-10-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 381"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 381; R888: para 180"
    }
   },
   {
@@ -108770,8 +108934,8 @@
     "location_date": "1944-10-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 381"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 381; R888: para 180"
    }
   },
   {
@@ -109057,8 +109221,8 @@
     "location_date": "1944-10-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R784;R002",
-    "source_locator": "R784: image 103 (NAID 271848586), stamped page 1016, HGr B Ia 6680/44 of 5 October 1944"
+    "reference_ids": "R784;R888;R002",
+    "source_locator": "R784: image 103 (NAID 271848586), stamped page 1016, HGr B Ia 6680/44 of 5 October 1944; R888: paras 111, 127"
    }
   },
   {
@@ -109098,8 +109262,8 @@
     "location_date": "1944-10-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 381-2"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 381-2; R888: para 180"
    }
   },
   {
@@ -109358,6 +109522,129 @@
     ]
    },
    "properties": {
+    "claim_id": "C9142",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-05",
+    "place_id": "PL0679",
+    "location_name": "Leopold Canal (Leopoldkanaal), East Flanders (Leopold Canal front (Watervliet-Moerkerke))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Contains the enemy behind the Leopold Canal with feints south of Watervliet and east of Moerkerke",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 119"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6399,
+     51.3485
+    ]
+   },
+   "properties": {
+    "claim_id": "C9143",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-711D",
+    "unit_name": "711th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL3399",
+    "location_name": "Brecht, Antwerp (St Leonard-Brecht area)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Reinforced; in contact near St Leonard and Brecht (intelligence)",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 179"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6399,
+     51.3485
+    ]
+   },
+   "properties": {
+    "claim_id": "C9144",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-05",
+    "place_id": "PL3399",
+    "location_name": "Brecht, Antwerp (St Leonard-Brecht area)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Depleted, about three battalions, near St Leonard and Brecht (intelligence)",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 179"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4497,
+     51.2364
+    ]
+   },
+   "properties": {
     "claim_id": "C1312",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -109385,8 +109672,8 @@
     "location_date": "1944-10-06",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 393"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 393; R888: paras 120-123"
    }
   },
   {
@@ -109590,8 +109877,8 @@
     "location_date": "1944-10-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 382"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 382; R888: para 180"
    }
   },
   {
@@ -109713,8 +110000,8 @@
     "location_date": "1944-10-07",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 381"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 381; R888: para 184"
    }
   },
   {
@@ -109836,8 +110123,8 @@
     "location_date": "1944-10-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 382-3"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 382-3; R888: para 184"
    }
   },
   {
@@ -110123,8 +110410,8 @@
     "location_date": "1944-10-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 383"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 383; R888: paras 186-187"
    }
   },
   {
@@ -110287,8 +110574,8 @@
     "location_date": "1944-10-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 396"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 396; R888: paras 138-140"
    }
   },
   {
@@ -110533,8 +110820,8 @@
     "location_date": "1944-10-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 383"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 383; R888: para 188"
    }
   },
   {
@@ -115207,8 +115494,8 @@
     "location_date": "1944-10-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000127 situation 1200 hrs 10 October 1944"
+    "reference_ids": "R781;R888;R002",
+    "source_locator": "R781: sheet cs000127 situation 1200 hrs 10 October 1944; R888: para 192"
    }
   },
   {
@@ -115781,8 +116068,8 @@
     "location_date": "1944-10-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 397"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 397; R888: para 141"
    }
   },
   {
@@ -115986,8 +116273,8 @@
     "location_date": "1944-10-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 397"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 397; R888: para 144"
    }
   },
   {
@@ -116232,8 +116519,8 @@
     "location_date": "1944-10-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 384"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 384; R888: para 193"
    }
   },
   {
@@ -116273,8 +116560,8 @@
     "location_date": "1944-10-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 395"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 395; R888: para 125"
    }
   },
   {
@@ -116519,8 +116806,8 @@
     "location_date": "1944-10-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 393, 397"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 393, 397; R888: para 147"
    }
   },
   {
@@ -117749,8 +118036,8 @@
     "location_date": "1944-10-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 384"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 384; R888: para 196"
    }
   },
   {
@@ -117831,8 +118118,8 @@
     "location_date": "1944-10-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 397"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 397; R888: para 152"
    }
   },
   {
@@ -123539,6 +123826,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.4497,
+     51.2364
+    ]
+   },
+   "properties": {
+    "claim_id": "C9145",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-052D",
+    "unit_name": "52nd (Lowland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-17",
+    "place_id": "PL0679",
+    "location_name": "Leopold Canal (Leopoldkanaal), East Flanders (157th Brigade on the Leopold Canal)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "The 157th Brigade relieves the 10th Canadian Brigade on the Leopold Canal",
+    "operation_id": "OP-SWITCHBACK",
+    "operation": "Operation Switchback",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Switchback",
+    "strength_status": "unknown",
+    "location_date": "1944-10-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 153"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3997,
      51.2211
     ]
@@ -123776,8 +124104,8 @@
     "location_date": "1944-10-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 397-8"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 397-8; R888: para 155"
    }
   },
   {
@@ -123817,8 +124145,8 @@
     "location_date": "1944-10-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 398"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 398; R888: para 155"
    }
   },
   {
@@ -123860,6 +124188,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R219;R001",
     "source_locator": "R219: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.4986,
+     51.2725
+    ]
+   },
+   "properties": {
+    "claim_id": "C9146",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-19",
+    "place_id": "PL4059",
+    "location_name": "Sint Kruis (Sluis), Zeeland (7th Reconnaissance Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "The 7th Reconnaissance Regiment joins the 157th Brigade at St Kruis, linking the bridgeheads",
+    "operation_id": "OP-SWITCHBACK",
+    "operation": "Operation Switchback",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Switchback",
+    "strength_status": "unknown",
+    "location_date": "1944-10-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R782",
+    "source_locator": "R888: para 154"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4803,
+     51.0281
+    ]
+   },
+   "properties": {
+    "claim_id": "C9147",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-INF-104D",
+    "unit_name": "104th Infantry Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-19",
+    "place_id": "PL3431",
+    "location_name": "Malines (Mechelen), Antwerp (Malines area, before moving up)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "About to be brought up from Malines to join 1 British Corps",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-19",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 205"
    }
   },
   {
@@ -123981,8 +124391,8 @@
     "location_date": "1944-10-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: pp. 389-90; R671: p. 109"
+    "reference_ids": "R668;R671;R888;R002",
+    "source_locator": "R668: pp. 389-90; R671: p. 109; R888: para 206"
    }
   },
   {
@@ -124309,8 +124719,8 @@
     "location_date": "1944-10-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 398"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 398; R888: para 157"
    }
   },
   {
@@ -124637,8 +125047,8 @@
     "location_date": "1944-10-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 390; R671: p. 110"
+    "reference_ids": "R668;R671;R888;R002",
+    "source_locator": "R668: p. 390; R671: p. 110; R888: para 212"
    }
   },
   {
@@ -124965,8 +125375,8 @@
     "location_date": "1944-10-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 391"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 391; R888: para 228"
    }
   },
   {
@@ -125375,8 +125785,8 @@
     "location_date": "1944-10-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R668;R002",
-    "source_locator": "R781: sheet cs000141 situation 1200 hrs 24 October 1944; R668: p. 391"
+    "reference_ids": "R781;R668;R888;R002",
+    "source_locator": "R781: sheet cs000141 situation 1200 hrs 24 October 1944; R668: p. 391; R888: para 229"
    }
   },
   {
@@ -130746,8 +131156,8 @@
     "location_date": "1944-10-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 391"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 391; R888: para 229"
    }
   },
   {
@@ -130828,8 +131238,8 @@
     "location_date": "1944-10-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 398"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 398; R888: para 158"
    }
   },
   {
@@ -131042,6 +131452,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.409,
+     51.3685
+    ]
+   },
+   "properties": {
+    "claim_id": "C9148",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-064D",
+    "unit_name": "64th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-24",
+    "place_id": "PL3418",
+    "location_name": "Cadzand (Sluis), Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Divisional headquarters believed to be at Cadzand (intelligence)",
+    "operation_id": "OP-SWITCHBACK",
+    "operation": "Operation Switchback",
+    "operation_type": "phase",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Switchback",
+    "strength_status": "unknown",
+    "location_date": "1944-10-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 161"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.5415,
      51.4017
     ]
@@ -131074,8 +131525,8 @@
     "location_date": "1944-10-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 398"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 398; R888: para 159"
    }
   },
   {
@@ -131115,8 +131566,8 @@
     "location_date": "1944-10-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 402-3"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 402-3; R888: para 231"
    }
   },
   {
@@ -131279,8 +131730,8 @@
     "location_date": "1944-10-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 390"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 390; R888: para 215"
    }
   },
   {
@@ -131320,8 +131771,8 @@
     "location_date": "1944-10-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 401"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 401; R888: para 162"
    }
   },
   {
@@ -131361,8 +131812,8 @@
     "location_date": "1944-10-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 403"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 403; R888: para 232"
    }
   },
   {
@@ -131402,8 +131853,8 @@
     "location_date": "1944-10-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 403"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 403; R888: para 236"
    }
   },
   {
@@ -131445,6 +131896,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: pp. 111–113"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.9143,
+     51.4249
+    ]
+   },
+   "properties": {
+    "claim_id": "C9149",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-26",
+    "place_id": "PL3427",
+    "location_name": "Hoedekenskerke (Borsele), Zeeland (89th Fortress Depot Regiment, South Beveland south coast)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Its 89th Fortress Depot Regiment meets the 52nd Division landing on the south coast of South Beveland",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: paras 44, 237"
    }
   },
   {
@@ -131689,8 +132181,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 390"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 390; R888: para 217"
    }
   },
   {
@@ -131730,8 +132222,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 390"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 390; R888: para 216"
    }
   },
   {
@@ -131812,8 +132304,8 @@
     "location_date": "1944-10-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 390"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 390; R888: para 217"
    }
   },
   {
@@ -132354,6 +132846,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C9150",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-10-27",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant (south-east of Breda)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Closing on Breda from the south-east",
+    "operation_id": "OP-PHEASANT",
+    "operation": "Operation Pheasant",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Pheasant",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 217"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.3773,
      51.0348
     ]
@@ -132468,8 +133001,8 @@
     "location_date": "1944-10-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 403-4"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 403-4; R888: para 241"
    }
   },
   {
@@ -132591,8 +133124,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 401"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 401; R888: para 161"
    }
   },
   {
@@ -132673,8 +133206,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 404"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 404; R888: para 245"
    }
   },
   {
@@ -132714,8 +133247,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 404"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 404; R888: para 245"
    }
   },
   {
@@ -132919,8 +133452,8 @@
     "location_date": "1944-10-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 401"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 401; R888: para 164"
    }
   },
   {
@@ -133126,6 +133659,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 159"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.675,
+     51.5017
+    ]
+   },
+   "properties": {
+    "claim_id": "C9151",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-10-30",
+    "place_id": "PL4061",
+    "location_name": "Arnemuiden (Middelburg), Zeeland (eastern Walcheren (Arnemuiden-Nieuwland-Kleverskerke))",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Troops back from South Beveland concentrating around Arnemuiden, Nieuwland and Kleverskerke (intelligence)",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-10-30",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R782",
+    "source_locator": "R888: para 250"
    }
   },
   {
@@ -133616,8 +134190,8 @@
     "location_date": "1944-10-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000148 situation 1200 hrs 31 October 1944"
+    "reference_ids": "R781;R888;R002",
+    "source_locator": "R781: sheet cs000148 situation 1200 hrs 31 October 1944; R888: para 221"
    }
   },
   {
@@ -139110,8 +139684,8 @@
     "location_date": "1944-10-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 404-6"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 404-6; R888: para 249"
    }
   },
   {
@@ -139151,8 +139725,8 @@
     "location_date": "1944-10-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 404"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 404; R888: para 253"
    }
   },
   {
@@ -139602,8 +140176,8 @@
     "location_date": "1944-11-01",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 120, 122; R668: p. 412"
+    "reference_ids": "R671;R668;R888;R002",
+    "source_locator": "R671: pp. 120, 122; R668: p. 412; R888: para 291"
    }
   },
   {
@@ -139643,8 +140217,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 401-2"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 401-2; R888: para 165"
    }
   },
   {
@@ -139684,8 +140258,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 401-2"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 401-2; R888: para 165"
    }
   },
   {
@@ -139725,8 +140299,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 405-6"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: pp. 405-6; R888: para 252"
    }
   },
   {
@@ -139807,8 +140381,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 414; R671: pp. 118, 119"
+    "reference_ids": "R668;R671;R888;R002",
+    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: para 291"
    }
   },
   {
@@ -139848,8 +140422,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 414; R671: pp. 118, 119"
+    "reference_ids": "R668;R671;R888;R002",
+    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: paras 288, 291"
    }
   },
   {
@@ -139930,8 +140504,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 427"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 427; R888: para 224"
    }
   },
   {
@@ -140340,8 +140914,8 @@
     "location_date": "1944-11-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 402"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 402; R888: para 166"
    }
   },
   {
@@ -140381,8 +140955,8 @@
     "location_date": "1944-11-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: pp. 415-17; R671: p. 123"
+    "reference_ids": "R668;R671;R888;R002",
+    "source_locator": "R668: pp. 415-17; R671: p. 123; R888: para 300"
    }
   },
   {
@@ -140668,8 +141242,8 @@
     "location_date": "1944-11-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002;R668",
-    "source_locator": "R671: pp. 111, 114; R668: p. 407"
+    "reference_ids": "R671;R668;R888;R002",
+    "source_locator": "R671: pp. 111, 114; R668: p. 407; R888: paras 252, 303"
    }
   },
   {
@@ -140750,8 +141324,8 @@
     "location_date": "1944-11-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 407"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 407; R888: para 254"
    }
   },
   {
@@ -140791,8 +141365,8 @@
     "location_date": "1944-11-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 417"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 417; R888: para 302"
    }
   },
   {
@@ -140955,8 +141529,8 @@
     "location_date": "1944-11-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 424"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 424; R888: para 224"
    }
   },
   {
@@ -141119,8 +141693,8 @@
     "location_date": "1944-11-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 427"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: p. 427; R888: para 224"
    }
   },
   {
@@ -141292,6 +141866,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.725,
+     51.0538
+    ]
+   },
+   "properties": {
+    "claim_id": "C9152",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL0795",
+    "location_name": "Ghent (Gent), East Flanders (rest area, Ghent)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Withdrawn to Ghent for a week's rest after Switchback",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 166"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4803,
+     51.0281
+    ]
+   },
+   "properties": {
+    "claim_id": "C9153",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL3431",
+    "location_name": "Malines (Mechelen), Antwerp (rest area, Antwerp-Malines-Brussels)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Resting in the Antwerp, Malines and Brussels area",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R002",
+    "source_locator": "R888: para 254"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3694,
+     51.635
+    ]
+   },
+   "properties": {
+    "claim_id": "C9154",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL4060",
+    "location_name": "Dinteloord (Steenbergen), Noord-Brabant",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Enters Dinteloord first and meets the Canadians on the outskirts",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R888;R782",
+    "source_locator": "R888: para 224"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.6137,
      51.4997
     ]
@@ -141324,8 +142021,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R443;R228;R839;R002;R668",
-    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61)"
+    "reference_ids": "R443;R228;R839;R668;R888;R002",
+    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61); R888: para 303"
    }
   },
   {
@@ -141406,8 +142103,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 426; R671: p. 123"
+    "reference_ids": "R668;R671;R888;R002",
+    "source_locator": "R668: p. 426; R671: p. 123; R888: para 303"
    }
   },
   {
@@ -147884,8 +148581,8 @@
     "location_date": "1944-11-08",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 123"
+    "reference_ids": "R671;R888;R002",
+    "source_locator": "R671: p. 123; R888: para 304"
    }
   },
   {
@@ -148048,8 +148745,8 @@
     "location_date": "1944-11-08",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: Map 8 (The Battle of the Scheldt, October-November 1944), facing p. 427"
+    "reference_ids": "R668;R888;R002",
+    "source_locator": "R668: Map 8 (The Battle of the Scheldt, October-November 1944), facing p. 427; R888: para 225"
    }
   },
   {
@@ -148499,8 +149196,8 @@
     "location_date": "1944-11-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R882;R002",
-    "source_locator": "R668: p. 424; R882: para 27"
+    "reference_ids": "R668;R882;R888;R002",
+    "source_locator": "R668: p. 424; R882: para 27; R888: para 225"
    }
   },
   {

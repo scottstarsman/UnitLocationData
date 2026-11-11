@@ -21358,8 +21358,8 @@
     "location_date": "1944-06-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 152"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: p. 152; R892: para 14"
    }
   },
   {
@@ -22342,8 +22342,8 @@
     "location_date": "1944-07-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 153, 155; R670: pp. 309, 310"
+    "reference_ids": "R668;R670;R892;R002",
+    "source_locator": "R668: pp. 153, 155; R670: pp. 309, 310; R892: paras 31, 38"
    }
   },
   {
@@ -24319,6 +24319,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.4417,
+     49.1841
+    ]
+   },
+   "properties": {
+    "claim_id": "C9230",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-04",
+    "place_id": "PL0671",
+    "location_name": "Carpiquet, Calvados (10th Canadian Armoured Regiment with the 8th Brigade)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Supports the 8th Canadian Infantry Brigade's attack on Carpiquet (Operation Windsor)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: para 31, appendix B"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1747,
      49.4157
     ]
@@ -24524,6 +24565,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.4634,
+     49.2341
+    ]
+   },
+   "properties": {
+    "claim_id": "C9225",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-07",
+    "place_id": "PL4086",
+    "location_name": "Lasson, Calvados (7th Canadian Infantry Brigade about Lasson and Cairon)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Assembles about Lasson and Cairon for Charnwood (the 7th Brigade)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R782",
+    "source_locator": "R892: para 55"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0445,
      49.2116
     ]
@@ -24597,8 +24679,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R591;R278;R668;R670;R001",
-    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries); R668: pp. 158-161; R670: p. 310"
+    "reference_ids": "R591;R278;R668;R670;R892;R001",
+    "source_locator": "R591: p. 121-122, 122; R278: Einsatz und Unterstellung (7 and 9 July 1944 entries); R668: pp. 158-161; R670: p. 310; R892: para 59"
    }
   },
   {
@@ -24679,8 +24761,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R591;R596;R001",
-    "source_locator": "R591: p. 121, 122; R596: infobox"
+    "reference_ids": "R591;R596;R892;R001",
+    "source_locator": "R591: p. 121, 122; R596: infobox; R892: para 77"
    }
   },
   {
@@ -24761,8 +24843,8 @@
     "location_date": "1944-07-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R668;R002",
-    "source_locator": "R670: pp. 313, 315; R668: pp. 157, 162"
+    "reference_ids": "R670;R668;R892;R002",
+    "source_locator": "R670: pp. 313, 315; R668: pp. 157, 162; R892: para 57"
    }
   },
   {
@@ -24802,8 +24884,8 @@
     "location_date": "1944-07-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R668;R002",
-    "source_locator": "R670: pp. 314, 315; R668: pp. 157, 162"
+    "reference_ids": "R670;R668;R892;R002",
+    "source_locator": "R670: pp. 314, 315; R668: pp. 157, 162; R892: para 62"
    }
   },
   {
@@ -24925,8 +25007,8 @@
     "location_date": "1944-07-08",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 158, 161-163; R670: p. 310"
+    "reference_ids": "R668;R670;R892;R002",
+    "source_locator": "R668: pp. 158, 161-163; R670: p. 310; R892: para 57"
    }
   },
   {
@@ -24968,6 +25050,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R001",
     "source_locator": "R670: p. 310"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4261,
+     49.2195
+    ]
+   },
+   "properties": {
+    "claim_id": "C9231",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-08",
+    "place_id": "PL1287",
+    "location_name": "Buron, Calvados (27th Canadian Armoured Regiment at Buron and Gruchy)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Supports the 3rd Canadian Infantry Division in Charnwood; the 27th Canadian Armoured Regiment fights with the infantry at Buron and Gruchy",
+    "operation_id": "OP-CHARNWOOD",
+    "operation": "Operation Charnwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Charnwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 49, 60, appendix C"
    }
   },
   {
@@ -25048,8 +25171,8 @@
     "location_date": null,
     "location_basis": "town_centroid",
     "location_temporal_offset_days": null,
-    "reference_ids": "R278;R591;R001",
-    "source_locator": "R278: Einsatz und Unterstellung (9 July 1944 entry); R591: p. 122"
+    "reference_ids": "R278;R591;R892;R001",
+    "source_locator": "R278: Einsatz und Unterstellung (9 July 1944 entry); R591: p. 122; R892: para 79"
    }
   },
   {
@@ -25212,8 +25335,8 @@
     "location_date": "1944-07-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R001",
-    "source_locator": "R668: p. 162; R670: pp. 311–316"
+    "reference_ids": "R668;R670;R892;R001",
+    "source_locator": "R668: p. 162; R670: pp. 311–316; R892: para 70"
    }
   },
   {
@@ -25622,8 +25745,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R278;R600;R001",
-    "source_locator": "R278: Einsatz und Unterstellung (11 July 1944 entry); R600: p. 191"
+    "reference_ids": "R278;R600;R892;R001",
+    "source_locator": "R278: Einsatz und Unterstellung (11 July 1944 entry); R600: p. 191; R892: para 99"
    }
   },
   {
@@ -25827,8 +25950,8 @@
     "location_date": "1944-07-11",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: pp. 146, 166"
+    "reference_ids": "R668;R892;R001",
+    "source_locator": "R668: pp. 146, 166; R892: para 115"
    }
   },
   {
@@ -28296,6 +28419,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3937,
+     49.1565
+    ]
+   },
+   "properties": {
+    "claim_id": "C9238",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-13",
+    "place_id": "PL0681",
+    "location_name": "Louvigny, Calvados (elements at Louvigny)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Comes into Louvigny to let the 12th SS Panzer Division get back (Allied intelligence)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: para 99"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4217,
+     49.13
+    ]
+   },
+   "properties": {
+    "claim_id": "C9240",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-13",
+    "place_id": "PL0526",
+    "location_name": "Maltot (part of the division in the Maltot area)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Back in part on the right of the 10th SS Panzer Division in the Maltot area (Allied intelligence)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R001",
+    "source_locator": "R892: para 99"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.837,
      49.1809
     ]
@@ -29476,8 +29681,8 @@
     "location_date": null,
     "location_basis": "representative_point",
     "location_temporal_offset_days": null,
-    "reference_ids": "R593;R600;R001",
-    "source_locator": "R593: p. 325; R600: p. 192"
+    "reference_ids": "R593;R600;R892;R001",
+    "source_locator": "R593: p. 325; R600: p. 192; R892: para 99"
    }
   },
   {
@@ -29813,6 +30018,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2216,
+     49.1812
+    ]
+   },
+   "properties": {
+    "claim_id": "C9236",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LFD-016D",
+    "unit_name": "16th Luftwaffe Field Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-07-17",
+    "place_id": "PL0727",
+    "location_name": "Sannerville, Calvados (front from the Bois de Bavent to the Caen-Mezidon railway)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds the 86 Corps front from the Bois de Bavent to the Caen-Mezidon railway (German map of 17 July)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 41, 131, 151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7533,
      49.0093
     ]
@@ -29927,8 +30173,8 @@
     "location_date": null,
     "location_basis": "representative_point",
     "location_temporal_offset_days": null,
-    "reference_ids": "R600;R593;R279;R001",
-    "source_locator": "R600: p. 193; R593: p. 326; R279: Einsatz und Unterstellung"
+    "reference_ids": "R600;R593;R279;R892;R001",
+    "source_locator": "R600: p. 193; R593: p. 326; R279: Einsatz und Unterstellung; R892: para 165"
    }
   },
   {
@@ -29968,8 +30214,8 @@
     "location_date": null,
     "location_basis": "operational_area",
     "location_temporal_offset_days": null,
-    "reference_ids": "R278;R600;R668;R002",
-    "source_locator": "R278: Einsatz und Unterstellung (18 July 1944 entry); R600: p. 193; R668: pp. 177-178"
+    "reference_ids": "R278;R600;R668;R892;R002",
+    "source_locator": "R278: Einsatz und Unterstellung (18 July 1944 entry); R600: p. 193; R668: pp. 177-178; R892: para 181"
    }
   },
   {
@@ -30173,8 +30419,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 171, 172; R670: pp. 338, 344"
+    "reference_ids": "R668;R670;R892;R002",
+    "source_locator": "R668: pp. 171, 172; R670: pp. 338, 344; R892: para 149"
    }
   },
   {
@@ -30214,8 +30460,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 171, 172, 174; R670: p. 344"
+    "reference_ids": "R668;R670;R892;R002",
+    "source_locator": "R668: pp. 171, 172, 174; R670: p. 344; R892: para 158"
    }
   },
   {
@@ -30419,8 +30665,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R668;R002",
-    "source_locator": "R670: p. 343; R668: p. 170"
+    "reference_ids": "R670;R668;R892;R002",
+    "source_locator": "R670: p. 343; R668: p. 170; R892: para 160"
    }
   },
   {
@@ -30542,8 +30788,8 @@
     "location_date": "1944-07-18",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R668;R002",
-    "source_locator": "R670: p. 343; R668: pp. 166, 171, 173"
+    "reference_ids": "R670;R668;R892;R002",
+    "source_locator": "R670: p. 343; R668: pp. 166, 171, 173; R892: para 150"
    }
   },
   {
@@ -31731,8 +31977,8 @@
     "location_date": "1944-07-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R001",
-    "source_locator": "R781: sheet cs000043 situation 1200 hrs 18 July 1944"
+    "reference_ids": "R781;R892;R001",
+    "source_locator": "R781: sheet cs000043 situation 1200 hrs 18 July 1944; R892: para 136"
    }
   },
   {
@@ -32920,8 +33166,8 @@
     "location_date": "1944-07-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 174, 175"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: pp. 174, 175; R892: para 194"
    }
   },
   {
@@ -32970,6 +33216,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3334,
+     49.1101
+    ]
+   },
+   "properties": {
+    "claim_id": "C9237",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-272D",
+    "unit_name": "272nd Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-20",
+    "place_id": "PL0668",
+    "location_name": "Verrières (Verrières Ridge), Calvados (right wing of the division)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Its right wing is struck by the Canadian attack on the Verrieres ridge",
+    "operation_id": "OP-ATLANTIC",
+    "operation": "Operation Atlantic",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Atlantic",
+    "strength_status": "unknown",
+    "location_date": "1944-07-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 190, 202"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3849,
      49.116
     ]
@@ -33002,8 +33289,8 @@
     "location_date": "1944-07-21",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R668;R002",
-    "source_locator": "R670: p. 350; R668: p. 175"
+    "reference_ids": "R670;R668;R892;R002",
+    "source_locator": "R670: p. 350; R668: p. 175; R892: para 204"
    }
   },
   {
@@ -33043,8 +33330,8 @@
     "location_date": "1944-07-21",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R854;R002",
-    "source_locator": "R854: German p.6 (Fold3 image 10)"
+    "reference_ids": "R854;R892;R002",
+    "source_locator": "R854: German p.6 (Fold3 image 10); R892: para 202"
    }
   },
   {
@@ -33093,6 +33380,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3334,
+     49.1101
+    ]
+   },
+   "properties": {
+    "claim_id": "C9239",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001D",
+    "unit_name": "1st SS Panzer Division Leibstandarte SS Adolf Hitler",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-21",
+    "place_id": "PL0668",
+    "location_name": "Verrières (Verrières Ridge), Calvados (battle-group on the Verrieres ridge)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "counterattack",
+    "current_activity": "A battle-group, with one of the 2nd Panzer Division under the 1st SS Panzer Regiment, counter-attacks the Canadians on the Verrieres ridge",
+    "operation_id": "OP-ATLANTIC",
+    "operation": "Operation Atlantic",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Atlantic",
+    "strength_status": "unknown",
+    "location_date": "1944-07-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: para 202"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      25.1438,
      50.0833
     ]
@@ -33134,6 +33462,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2971,
+     49.1217
+    ]
+   },
+   "properties": {
+    "claim_id": "C9226",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-22",
+    "place_id": "PL0687",
+    "location_name": "Bourguébus, Calvados (sector east of the Falaise road, Bras to Grentheville)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds the sector east of the Falaise road from Bras and Hubert-Folie to Bourguebus, Soliers, Four and Grentheville",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 194, 205, 234"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3849,
+     49.116
+    ]
+   },
+   "properties": {
+    "claim_id": "C9228",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-22",
+    "place_id": "PL0872",
+    "location_name": "Saint-André-sur-Orne, Calvados (6th and 5th Brigades at St Andre-sur-Orne and Etavaux)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds St Andre-sur-Orne against armoured counter-attacks and clears the Etavaux pocket",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 204, 232"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2169,
+     49.0564
+    ]
+   },
+   "properties": {
+    "claim_id": "C9235",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-22",
+    "place_id": "PL3360",
+    "location_name": "Saint-Sylvain, Calvados (elements in the St Sylvain area)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Elements arrive in the St Sylvain area from Fifteenth Army",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 229, 317"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.2261,
      49.2408
     ]
@@ -33166,8 +33617,8 @@
     "location_date": "1944-07-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: pp. 196, 198"
+    "reference_ids": "R668;R892;R001",
+    "source_locator": "R668: pp. 196, 198; R892: para 218"
    }
   },
   {
@@ -33207,8 +33658,8 @@
     "location_date": "1944-07-23",
     "location_basis": "nearest_later_command_post",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 146, 196, 297"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: pp. 146, 196, 297; R892: para 217"
    }
   },
   {
@@ -33658,8 +34109,8 @@
     "location_date": "1944-07-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 185"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: p. 185; R892: para 235"
    }
   },
   {
@@ -33699,8 +34150,8 @@
     "location_date": "1944-07-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 185"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: p. 185; R892: para 277"
    }
   },
   {
@@ -33740,8 +34191,8 @@
     "location_date": "1944-07-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 185"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: p. 185; R892: para 228"
    }
   },
   {
@@ -33781,8 +34232,8 @@
     "location_date": "1944-07-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R854;R002",
-    "source_locator": "R668: pp. 183-185; R854: German p.6 (Fold3 image 10)"
+    "reference_ids": "R668;R854;R892;R002",
+    "source_locator": "R668: pp. 183-185; R854: German p.6 (Fold3 image 10); R892: para 228"
    }
   },
   {
@@ -33822,8 +34273,8 @@
     "location_date": "1944-07-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 178, 185"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: pp. 178, 185; R892: para 229"
    }
   },
   {
@@ -34396,8 +34847,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 189; R670: pp. 378, 379"
+    "reference_ids": "R668;R670;R892;R002",
+    "source_locator": "R668: p. 189; R670: pp. 378, 379; R892: para 252"
    }
   },
   {
@@ -34437,8 +34888,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 186; R670: p. 379"
+    "reference_ids": "R668;R670;R892;R002",
+    "source_locator": "R668: p. 186; R670: p. 379; R892: paras 260, 266"
    }
   },
   {
@@ -34970,8 +35421,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944"
+    "reference_ids": "R781;R892;R002",
+    "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944; R892: para 277"
    }
   },
   {
@@ -35011,8 +35462,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944"
+    "reference_ids": "R781;R892;R002",
+    "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944; R892: para 277"
    }
   },
   {
@@ -35421,8 +35872,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944"
+    "reference_ids": "R781;R892;R002",
+    "source_locator": "R781: sheet cs000050 situation 1200 hrs 25 July 1944; R892: para 273"
    }
   },
   {
@@ -36405,8 +36856,8 @@
     "location_date": "1944-07-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 378, 379"
+    "reference_ids": "R670;R892;R002",
+    "source_locator": "R670: pp. 378, 379; R892: para 255"
    }
   },
   {
@@ -37316,6 +37767,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.2971,
+     49.1217
+    ]
+   },
+   "properties": {
+    "claim_id": "C9227",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-28",
+    "place_id": "PL0687",
+    "location_name": "Bourguébus, Calvados (sector east of the Falaise road, positions unchanged since 21 July)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds the sector east of the Falaise road, unchanged since 21 July, facing the strongpoints of Tilly-la-Campagne and La Hogue",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 281, 323"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3334,
+     49.1101
+    ]
+   },
+   "properties": {
+    "claim_id": "C9229",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-28",
+    "place_id": "PL0668",
+    "location_name": "Verrières (Verrières Ridge), Calvados (4th Brigade at Verrieres, 6th Brigade at St Andre-sur-Orne)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds the line from St Andre-sur-Orne to Verrieres on two brigades; the Essex Scottish relieve the Royal Regiment of Canada",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: paras 280, 323, 327"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.1733,
      49.3038
     ]
@@ -37473,6 +38006,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R773;R854;R002",
     "source_locator": "R773: p. 13 (German text); R854: German p.6 (Fold3 image 10)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3324,
+     49.1546
+    ]
+   },
+   "properties": {
+    "claim_id": "C9233",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-07-29",
+    "place_id": "PL1155",
+    "location_name": "Cormelles-le-Royal, Calvados (headquarters near Cormelles)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Divisional headquarters near Cormelles, with the 4th Canadian Armoured Brigade between Cormelles and Ifs and the 10th Brigade east of Fleury-sur-Orne",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: para 328"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2261,
+     49.2408
+    ]
+   },
+   "properties": {
+    "claim_id": "C9234",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-07-29",
+    "place_id": "PL0265",
+    "location_name": "Orne bridgehead / east of Caen (corps sector east of the Orne, Cagny to the sea)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds the First Canadian Army sector east of the Orne from Cagny to the sea and is ordered to feint toward Vimont",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R001",
+    "source_locator": "R892: paras 218, 301, 321"
    }
   },
   {
@@ -38054,6 +38669,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3937,
+     49.1565
+    ]
+   },
+   "properties": {
+    "claim_id": "C9232",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-07-30",
+    "place_id": "PL0681",
+    "location_name": "Louvigny, Calvados (brigade headquarters; regiments between Fleury-sur-Orne and the Faubourg de Vaucelles)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Brigade headquarters moves across the Orne to Louvigny for rest and refitting",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R002",
+    "source_locator": "R892: para 331"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.2643,
      48.9481
     ]
@@ -38414,8 +39070,8 @@
     "location_date": "1944-07-31",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: pp. 200, 201"
+    "reference_ids": "R668;R892;R001",
+    "source_locator": "R668: pp. 200, 201; R892: para 335"
    }
   },
   {
@@ -38455,8 +39111,8 @@
     "location_date": "1944-07-31",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 202"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: p. 202; R892: para 330"
    }
   },
   {
@@ -38496,8 +39152,8 @@
     "location_date": "1944-07-31",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 202"
+    "reference_ids": "R668;R892;R002",
+    "source_locator": "R668: p. 202; R892: para 329"
    }
   },
   {
@@ -40464,8 +41120,8 @@
     "location_date": "1944-08-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R891;R002",
-    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944; R891: para 4"
+    "reference_ids": "R781;R891;R892;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944; R891: para 4; R892: para 332"
    }
   },
   {
@@ -40874,8 +41530,8 @@
     "location_date": "1944-08-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+    "reference_ids": "R781;R892;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944; R892: para 332"
    }
   },
   {
@@ -41489,8 +42145,8 @@
     "location_date": "1944-08-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+    "reference_ids": "R781;R892;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944; R892: para 324"
    }
   },
   {

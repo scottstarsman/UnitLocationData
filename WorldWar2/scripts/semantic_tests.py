@@ -1014,7 +1014,9 @@ def scenario_26_activity_pilot():
     expect(s + ': Polish Parachute Brigade, 23 Sep 1944: in the line at Driel', A('POL-ABN-001B', '1944-09-23')[:2], ('in_line', 'certain'))
     # Official-history pass 2 (31 October 2026): old expectation None (open refit span past 30 days); new: the refit span now ends on 19 October
     # and the line span of Suitcase (C1340, 20 October) runs to the reserve start of 23 December (C1342); reason: the pilot rows were labelled.
-    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: in the line between Suitcase and the Boxtel reserve (pass 2 labels)', A('CAN-ARM-004D', '1944-12-01'), ('in_line', 'certain', 'inferred', 0.3))
+    # CMHQ/AHQ report pass (11 November 2026): old expectation ('in_line', 'certain', 'inferred', 0.3); new ('in_line', 'certain', 'stated', 0.5);
+    # reason: CMHQ Report No. 173 (para 78) dates the division's return to the Lith-Raamsdonk sector to 1 December (new point row C9028, stated).
+    expect(s + ': 4th Canadian Armoured, 1 Dec 1944: in the line, back in the Lith-Raamsdonk sector (CMHQ 173 point row)', A('CAN-ARM-004D', '1944-12-01'), ('in_line', 'certain', 'stated', 0.5))
     expect(s + ': a unit outside the pilot has no activity (no backfill)', A('US-INF-001D', '1944-12-01'), None)
     claims = common.load_all_claims()[1]
     pilot = {'US-ABN-101D', 'US-ABN-082D', 'UK-ABN-001D', 'UK-INF-050D', 'CAN-INF-002D', 'CAN-ARM-004D', 'GER-SSPZ-009D', 'GER-SSPZ-010D', 'GER-FEST-LORIENT', 'FR-ARM-002D', 'FR-INF-003D', 'POL-ARM-001D', 'POL-ABN-001B'}
@@ -3322,10 +3324,275 @@ def scenario_214_ellis_leftovers_chunk6():
            ('UK-ARM-007D', '1944-08-20', 'PL3362', '1944-08-22', 'PL0193'))
 
 
+def scenario_215_cmhq173_watch_on_the_maas():
+    """CMHQ/AHQ report pass, CMHQ Report No. 173 (The Watch on the Maas, 9 Nov 1944-8 Feb 1945): supporting citations, raises, new rows and G119."""
+    s = 'scenario 215'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R882 is CMHQ Report No. 173 in its own family', (meta['R882']['source_family'], 'cmhq173' in meta['R882']['url']), ('canada_dhh_reports', True))
+    expect(s + ': 3rd Canadian Division map row south of Nijmegen, 2 Jan 1945, gains R882 and is raised to 0.7', ('R882' in refs('C4926'), claims['C4926']['confidence']), (True, '0.7'))
+    expect(s + ': Stacey row (2nd Canadian Division, Groesbeek, 10 Nov 1944) gains R882 without a raise', ('R882' in refs('C1330'), claims['C1330']['confidence']), (True, '0.5'))
+    expect(s + ': G119: 4th Canadian Armoured on the Maas on 9 Jan 1945 is preferred over the Bavel map row',
+           (claims['C9031']['conflict_group_id'], claims['C9031']['claim_status'], claims['C5037']['conflict_group_id'], claims['C5037']['claim_status'], claims['C5037']['confidence']),
+           ('G119', 'preferred', 'G119', 'alternate', '0.5'))
+    expect(s + ': 2nd Canadian Armoured Brigade takes over the Western Approaches on 11 Nov 1944 (new place Wijchen)',
+           (claims['C9022']['unit_id'], claims['C9022']['date'], claims['C9022']['place_id'], claims['C9022']['confidence']), ('CAN-ARM-002B', '1944-11-11', 'PL4017', '0.3'))
+    expect(s + ': II Canadian Corps main headquarters at Wijchen on 22 Nov 1944',
+           (claims['C9018']['unit_id'], claims['C9018']['location_represents'], claims['C9018']['place_id'], claims['C9018']['confidence']), ('CAN-COR-002C', 'headquarters', 'PL4017', '0.5'))
+    expect(s + ': map-read rows from the report are capped at 0.3', sorted({claims[c]['confidence'] for c in ('C9019', 'C9020', 'C9021', 'C9032', 'C9034')}), ['0.3'])
+    expect(s + ': FMS row with an approximate date is cited but not raised (Zetten, 2nd Parachute Division)', ('R882' in refs('C7826'), claims['C7826']['confidence']), (True, '0.3'))
+    # gap check (11 November 2026): holes found by checking every fact of the report against the dataset are filled at 0.3
+    for cid, uid in (('C9048', 'UK-TNK-034B'), ('C9049', 'UK-TNK-034B'), ('C9050', 'UK-ARM-079D'), ('C9051', 'UK-TNK-006GB'), ('C9052', 'NL-INF-IRNEB'), ('C9053', 'UK-CDO-004B'), ('C9054', 'CAN-ARM-002B')):
+        expect(s + ': gap-check row %s (%s) cites the report at 0.3' % (cid, uid), (claims[cid]['unit_id'], 'R882' in refs(cid), claims[cid]['confidence']), (uid, True, '0.3'))
+
+
+def scenario_216_ahq039_western_netherlands():
+    """CMHQ/AHQ report pass, AHQ Report No. 39 (I Canadian Corps in the western Netherlands, 15 Mar-5 May 1945): citations, new rows, G120."""
+    s = 'scenario 216'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R883 is AHQ Report No. 39 in the DHH reports family', (meta['R883']['source_family'], 'ahq039' in meta['R883']['url']), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R883 without a raise (same Historical Section)', [(('R883' in refs(c)), claims[c]['confidence']) for c in ('C1361', 'C7626', 'C7633')], [(True, '0.3'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': G120: I Canadian Corps headquarters at Wijchen on 15 Mar 1945 is preferred over the Stacey sector point at Nijmegen',
+           (claims['C9055']['conflict_group_id'], claims['C9055']['claim_status'], claims['C9055']['place_id'], claims['C7578']['conflict_group_id'], claims['C7578']['claim_status'], claims['C7578']['confidence']),
+           ('G120', 'preferred', 'PL4017', 'G120', 'alternate', '0.3'))
+    expect(s + ': 1st Canadian Division headquarters north of Kootwijkerbroek on 28 Apr 1945 (new place)',
+           (claims['C9064']['unit_id'], claims['C9064']['location_represents'], claims['C9064']['place_id'], claims['C9064']['confidence']), ('CAN-INF-001D', 'headquarters', 'PL4028', '0.5'))
+    expect(s + ': 361st Volksgrenadier Division surrenders at Culemborg from 7 May 1945', (claims['C9072']['unit_id'], claims['C9072']['event_type'], claims['C9072']['place_id']), ('GER-VG-361D', 'surrender', 'PL4030'))
+    expect(s + ': inferred rows stay at 0.3 (Belgian brigade on the Waal; the 1st Division station outside Brussels was later settled to Itegem at 0.5 by CMHQ Report No. 181, scenario 226)', [claims[c]['confidence'] for c in ('C9067', 'C9073')], ['0.3', '0.5'])
+    expect(s + ': every R883 row new in this pass is unique by unit and date', len({(claims[c]['unit_id'], claims[c]['date']) for c in claims if 'C9055' <= c <= 'C9073'}), 19)
+
+
+def scenario_217_ahq032_concluding_phase():
+    """CMHQ/AHQ report pass, AHQ Report No. 32 (First Canadian Army, 2 Apr-5 May 1945): citations, new rows, G121, G122."""
+    s = 'scenario 217'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R884 is AHQ Report No. 32 in the DHH reports family', (meta['R884']['source_family'], 'ahq032' in meta['R884']['url']), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R884 without a raise (same Historical Section)', [(('R884' in refs(c)), claims[c]['confidence']) for c in ('C7590', 'C1375', 'C7651')], [(True, '0.5'), (True, '0.7'), (True, '0.5')])
+    expect(s + ': British official-history rows gain R884 and stay at 0.7', [(('R884' in refs(c)), claims[c]['confidence']) for c in ('C1520', 'C1536')], [(True, '0.7'), (True, '0.7')])
+    expect(s + ': the 53rd Division map row near Hoya is cited, not raised (brigade only)', (('R884' in refs('C6631')), claims['C6631']['confidence']), (True, '0.5'))
+    expect(s + ': G121: 5th Canadian Armoured Division headquarters at Barneveld on 20 Apr 1945 is preferred over the inferred Groningen row',
+           (claims['C9074']['conflict_group_id'], claims['C9074']['claim_status'], claims['C9074']['place_id'], claims['C7609']['conflict_group_id'], claims['C7609']['claim_status'], claims['C7609']['confidence']),
+           ('G121', 'preferred', 'PL0720', 'G121', 'alternate', '0.3'))
+    expect(s + ': G122: Polish armour at Papenburg on 21 Apr 1945 is preferred over the inferred Delfzijl row',
+           (claims['C9075']['conflict_group_id'], claims['C9075']['claim_status'], claims['C7605']['conflict_group_id'], claims['C7605']['claim_status']),
+           ('G122', 'preferred', 'G122', 'alternate'))
+    expect(s + ': 2nd Canadian Armoured Brigade fills its April hole (Westerscheps, Godensholt, Westerstede)', [(claims[c]['unit_id'], claims[c]['date']) for c in ('C9078', 'C9079', 'C9080')],
+           [('CAN-ARM-002B', '1945-04-28'), ('CAN-ARM-002B', '1945-04-30'), ('CAN-ARM-002B', '1945-05-03')])
+    expect(s + ': intelligence and concentration-area rows stay at 0.3', [claims[c]['confidence'] for c in ('C9102', 'C9103', 'C9104')], ['0.3', '0.3', '0.3'])
+    expect(s + ': every R884 row new in this pass is unique by unit and date', len({(claims[c]['unit_id'], claims[c]['date']) for c in claims if 'C9074' <= c <= 'C9104'}), 31)
+
+
+def scenario_218_ahq019_rhine_crossing():
+    """CMHQ/AHQ report pass, AHQ Report No. 19 (Operation Plunder, 23 Mar-1 Apr 1945): citations, notes, new rows; and the AHQ 32 URL fix."""
+    s = 'scenario 218'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R885 is AHQ Report No. 19 in the DHH reports family (part 1 URL)', (meta['R885']['source_family'], meta['R885']['url'].endswith('ahq019-1.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': R884 points at an existing part file, not the missing ahq032.pdf', meta['R884']['url'].endswith('ahq032-1.pdf'), True)
+    expect(s + ': Stacey rows gain R885 without a raise', [(('R885' in refs(c)), claims[c]['confidence']) for c in ('C1382', 'C7576', 'C1393')], [(True, '0.7'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': British official-history rows gain R885 and stay at 0.7', [(('R885' in refs(c)), claims[c]['confidence']) for c in ('C1506', 'C1512')], [(True, '0.7'), (True, '0.7')])
+    expect(s + ': the 43rd Division map row near Moyland keeps its value; the 6th Parachute Division Twente Canal row gets no conflict group',
+           (claims['C6452']['confidence'], claims['C6452']['conflict_group_id'], claims['C8012']['conflict_group_id'], claims['C8012']['claim_status']), ('0.5', '', '', 'preferred'))
+    expect(s + ': 51st Division fills its 25 Mar-2 Apr hole (Rees, Isselburg, Dinxperlo)', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id']) for c in ('C9108', 'C9109', 'C9110')],
+           [('UK-INF-051D', '1945-03-26', 'PL0637'), ('UK-INF-051D', '1945-03-28', 'PL3616'), ('UK-INF-051D', '1945-03-30', 'PL3546')])
+    expect(s + ': Montgomery tactical headquarters at Venlo on 27 Mar 1945', (claims['C9107']['unit_id'], claims['C9107']['location_represents'], claims['C9107']['place_id']), ('UK-AG-021G', 'headquarters', 'PL0577'))
+    expect(s + ': intelligence and approximate rows stay at 0.3', [claims[c]['confidence'] for c in ('C9105', 'C9111', 'C9114', 'C9115', 'C9117', 'C9119', 'C9120', 'C9121')], ['0.3'] * 8)
+    expect(s + ': every R885 row new in this pass is unique by unit and date', len({(claims[c]['unit_id'], claims[c]['date']) for c in claims if 'C9105' <= c <= 'C9121'}), 17)
+
+
+def scenario_219_cmhq186_blockbuster():
+    """CMHQ/AHQ report pass, CMHQ Report No. 186 (Operation Blockbuster, 26 Feb-23 Mar 1945): citations without raises and hole rows."""
+    s = 'scenario 219'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R886 is CMHQ Report No. 186 in the DHH reports family', (meta['R886']['source_family'], meta['R886']['url'].endswith('cmhq-reports/cmhq186.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R886 without a raise', [(('R886' in refs(c)), claims[c]['confidence']) for c in ('C1371', 'C1381', 'C7559')], [(True, '0.7'), (True, '0.7'), (True, '0.5')])
+    expect(s + ': rows on two families and the Ellis-only row gain R886 and stay at 0.7', [(('R886' in refs(c)), claims[c]['confidence']) for c in ('C1497', 'C1501', 'C1499')], [(True, '0.7')] * 3)
+    expect(s + ': map rows cited, not raised (part of the division, a strip, a day apart)', [(('R886' in refs(c)), claims[c]['confidence']) for c in ('C6212', 'C6211', 'C6039')], [(True, '0.3'), (True, '0.5'), (True, '0.3')])
+    expect(s + ': 4th Canadian Armoured Division fills its 28 Feb-8 Mar hole (Kirsel, Labbeck, Veen)', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id']) for c in ('C9123', 'C9124', 'C9125')],
+           [('CAN-ARM-004D', '1945-03-01', 'PL4054'), ('CAN-ARM-004D', '1945-03-04', 'PL4055'), ('CAN-ARM-004D', '1945-03-07', 'PL3477')])
+    expect(s + ': 35th US Division at Fort Blücher (Büderich) on 11 Mar 1945', (claims['C9133']['unit_id'], claims['C9133']['date'], claims['C9133']['place_id'], claims['C9133']['location_qualifier']), ('US-INF-035D', '1945-03-11', 'PL4058', 'Fort Blücher'))
+    expect(s + ': rest areas after the battle are refitting rows', [(claims[c]['activity_status'], claims[c]['confidence']) for c in ('C9126', 'C9130')], [('refitting', '0.3'), ('refitting', '0.3')])
+    expect(s + ': intelligence and one-battalion rows stay at 0.3', [claims[c]['confidence'] for c in ('C9127', 'C9134')], ['0.3', '0.3'])
+    expect(s + ': every R886 row new in this pass is unique by unit and date', len({(claims[c]['unit_id'], claims[c]['date']) for c in claims if 'C9122' <= c <= 'C9134'}), 13)
+
+
+def scenario_220_cmhq155_veritable():
+    """CMHQ/AHQ report pass, CMHQ Report No. 155 (Operation Veritable, preliminary report, 8-25 Feb 1945): citations without raises, hole rows and operation fixes."""
+    s = 'scenario 220'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R887 is CMHQ Report No. 155 in the DHH reports family', (meta['R887']['source_family'], meta['R887']['url'].endswith('cmhq-reports/cmhq155.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R887 without a raise', [(('R887' in refs(c)), claims[c]['confidence']) for c in ('C1368', 'C7454', 'C7487')], [(True, '0.7'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': two-family rows gain R887 and keep their confidence', [(('R887' in refs(c)), claims[c]['confidence']) for c in ('C1487', 'C1492', 'C1380')], [(True, '0.7'), (True, '0.7'), (True, '0.5')])
+    expect(s + ': rows a day or two from the report are cited, not raised', [(('R887' in refs(c)), claims[c]['confidence']) for c in ('C7469', 'C7501', 'C7507')], [(True, '0.5')] * 3)
+    expect(s + ': hole rows (84th Division intelligence, 53rd Division at Asperden, 43rd Division back at Cleve)', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C9135', 'C9136', 'C9137')],
+           [('GER-INF-084D', '1945-02-03', 'PL0698', '0.3'), ('UK-INF-053D', '1945-02-16', 'PL3456', '0.5'), ('UK-INF-043D', '1945-02-22', 'PL0578', '0.3')])
+    expect(s + ': hole rows carry the Veritable operation after 8 Feb', [claims[c]['operation_id'] for c in ('C9135', 'C9136', 'C9137')], ['OP-CAMP-RHINELAND', 'OP-VERITABLE', 'OP-VERITABLE'])
+    expect(s + ': chunk 5 rows moved to Veritable or Blockbuster', [claims[c]['operation_id'] for c in ('C9122', 'C9123', 'C9129', 'C9132', 'C9126')], ['OP-VERITABLE', 'OP-BLOCKBUSTER', 'OP-BLOCKBUSTER', 'OP-BLOCKBUSTER', 'OP-CAMP-RHINELAND'])
+
+
+def scenario_221_cmhq188_scheldt():
+    """CMHQ/AHQ report pass, CMHQ Report No. 188 (Canadian operations 1 Oct-8 Nov 1944, the clearing of the Scheldt Estuary): citations without raises and hole rows."""
+    s = 'scenario 221'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R888 is CMHQ Report No. 188 in the DHH reports family', (meta['R888']['source_family'], meta['R888']['url'].endswith('cmhq-reports/cmhq188.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R888 without a raise', [(('R888' in refs(c)), claims[c]['confidence']) for c in ('C1312', 'C1313', 'C7371', 'C7391')], [(True, '0.5'), (True, '0.7'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': two-family rows gain R888 and keep their confidence', [(('R888' in refs(c)), claims[c]['confidence']) for c in ('C7353', 'C1704', 'C7401')], [(True, '0.7'), (True, '0.9'), (True, '0.7')])
+    expect(s + ': a map row with only a battalion on the date, and a map row on a line, are cited not raised', [(('R888' in refs(c)), claims[c]['confidence']) for c in ('C3423', 'C3712')], [(True, '0.5'), (True, '0.5')])
+    expect(s + ': a row already on CMHQ Report No. 173 is cited, not raised', (('R888' in refs('C1565')), claims['C1565']['confidence']), (True, '0.7'))
+    expect(s + ': hole rows (units, dates, places, confidence)', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C9138', 'C9142', 'C9146', 'C9152', 'C9154')],
+           [('GER-INF-085D', '1944-09-02', 'PL3575', '0.3'), ('CAN-ARM-004D', '1944-10-05', 'PL0679', '0.3'), ('CAN-INF-003D', '1944-10-19', 'PL4059', '0.3'), ('CAN-INF-003D', '1944-11-05', 'PL0795', '0.3'), ('UK-INF-049D', '1944-11-05', 'PL4060', '0.5')])
+    expect(s + ': hole rows carry the operation of their date', [claims[c]['operation_id'] for c in ('C9138', 'C9142', 'C9145', 'C9150', 'C9152')], ['OP-CAMP-NORTHERN-FRANCE', 'OP-SCHELDT', 'OP-SWITCHBACK', 'OP-PHEASANT', 'OP-CAMP-RHINELAND'])
+    expect(s + ': rest-area rows are refitting', [claims[c]['activity_status'] for c in ('C9152', 'C9153')], ['refitting', 'refitting'])
+    expect(s + ': no conflict group opened by this report', [claims[c]['conflict_group_id'] for c in ('C1705', 'C9154', 'C9150')], ['', '', ''])
+
+
+def scenario_222_cmhq183_pursuit():
+    """CMHQ/AHQ report pass, CMHQ Report No. 183 (First Canadian Army in the pursuit, 23 Aug-30 Sep 1944): citations without raises and hole rows."""
+    s = 'scenario 222'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R889 is CMHQ Report No. 183 in the DHH reports family', (meta['R889']['source_family'], meta['R889']['url'].endswith('cmhq-reports/cmhq183.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R889 without a raise', [(('R889' in refs(c)), claims[c]['confidence']) for c in ('C7253', 'C7298', 'C7305', 'C7319')], [(True, '0.7'), (True, '0.5'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': two-family rows gain R889 and keep their confidence', [(('R889' in refs(c)), claims[c]['confidence']) for c in ('C1554', 'C1558', 'C1560')], [(True, '0.7'), (True, '0.9'), (True, '0.7')])
+    expect(s + ': Ellis rows for British formations are cited, not raised', [(('R889' in refs(c)), claims[c]['confidence']) for c in ('C1443', 'C9017', 'C1445')], [(True, '0.5'), (True, '0.5'), (True, '0.7')])
+    expect(s + ': map rows matched only by a brigade or battalion, or by a broad area, are cited not raised', [(('R889' in refs(c)), claims[c]['confidence']) for c in ('C2785', 'C2790', 'C3093')], [(True, '0.5'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': a row already on CMHQ Report No. 188 is cited, not raised', (('R889' in refs('C9140')), claims['C9140']['confidence']), (True, '0.3'))
+    expect(s + ': hole rows (units, dates, places, confidence)', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C9155', 'C9165', 'C9170', 'C9185', 'C9192')],
+           [('CAN-ARM-002B', '1944-08-23', 'PL4062', '0.5'), ('POL-ARM-001D', '1944-09-02', 'PL0937', '0.3'), ('BEL-INF-001B', '1944-08-19', 'PL4073', '0.5'), ('UK-CDO-004B', '1944-08-31', 'PL4072', '0.5'), ('GER-INF-711D', '1944-09-20', 'PL4081', '0.3')])
+    expect(s + ': hole rows carry the operation of their date', [claims[c]['operation_id'] for c in ('C9171', 'C9155', 'C9189', 'C9191')], ['OP-CAMP-NORTHERN-FRANCE', 'OP-PURSUIT', 'OP-CAMP-NORTHERN-FRANCE', 'OP-CAMP-RHINELAND'])
+    expect(s + ': rest and reserve rows', [claims[c]['activity_status'] for c in ('C9191', 'C9181')], ['refitting', 'reserve'])
+    expect(s + ': the 2nd Canadian Division\'s Dieppe stay is cited on the existing span rows, with no new point row', ([('R889' in refs(c)) for c in ('C1324', 'C1820')], [c for c in claims if c >= 'C9155' and len(c) == 5 and claims[c]['unit_id'] == 'CAN-INF-002D' and claims[c]['date'] == '1944-09-03']), ([True, True], []))
+    expect(s + ': the French Boos is a new place, not the German one', (claims['C9164']['place_id'] != 'PL2488', claims['C9164']['country']), (True, 'FR'))
+    expect(s + ': no conflict group opened by this report', [claims[c]['conflict_group_id'] for c in ('C9160', 'C9190', 'C9181')], ['', '', ''])
+
+
+def scenario_223_cmhq184_channel_ports():
+    """CMHQ/AHQ report pass, CMHQ Report No. 184 (clearing the Channel ports, 3 Sep 44-6 Feb 45): citations without raises and hole rows."""
+    s = 'scenario 223'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R890 is CMHQ Report No. 184 in the DHH reports family', (meta['R890']['source_family'], meta['R890']['url'].endswith('cmhq-reports/cmhq184.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': Stacey rows gain R890 without a raise', [(('R890' in refs(c)), claims[c]['confidence']) for c in ('C1308', 'C7312', 'C1310', 'C7314')], [(True, '0.7'), (True, '0.5'), (True, '0.7'), (True, '0.5')])
+    expect(s + ': two-family rows gain R890 and keep their confidence', [(('R890' in refs(c)), claims[c]['confidence']) for c in ('C1459', 'C1711', 'C1586')], [(True, '0.7'), (True, '0.7'), (True, '0.7')])
+    expect(s + ': an Ellis row for the 79th Armoured Division is cited, not raised', (('R890' in refs('C8975')), claims['C8975']['confidence']), (True, '0.5'))
+    expect(s + ': map rows matched only by a brigade, or by a broad area, are cited not raised', [(('R890' in refs(c)), claims[c]['confidence']) for c in ('C3024', 'C3399', 'C2969')], [(True, '0.5'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': rows on another DHH report are cited, not raised', [(('R890' in refs(c)), claims[c]['confidence']) for c in ('C9186', 'C1588')], [(True, '0.3'), (True, '0.5')])
+    expect(s + ': the Dunkirk surrender row keeps its date and confidence', (('R890' in refs('C1809')), claims['C1809']['date'], claims['C1809']['confidence']), (True, '1945-05-09', '0.9'))
+    expect(s + ': hole rows (units, dates, places, confidence)', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C9193', 'C9194', 'C9196', 'C9201', 'C9206')],
+           [('UK-COR-001C', '1944-09-10', claims['C1461']['place_id'], '0.5'), ('CAN-INF-003D', '1944-09-10', 'PL0677', '0.3'), ('CAN-ARM-002B', '1944-09-17', 'PL0677', '0.3'), ('GER-FEST-DUNKIRK', '1944-09-18', 'PL0624', '0.5'), ('CZ-ARM-001B', '1944-10-06', 'PL0624', '0.5')])
+    expect(s + ': hole rows carry the operation of their date', [claims[c]['operation_id'] for c in ('C9193', 'C9194', 'C9195', 'C9198', 'C9202')], ['OP-ASTONIA', 'OP-PURSUIT', 'OP-WELLHIT', 'OP-UNDERGO', 'OP-CAMP-RHINELAND'])
+    expect(s + ': part-of-formation and intelligence rows stay at 0.3', [claims[c]['confidence'] for c in ('C9195', 'C9197', 'C9198', 'C9199', 'C9200')], ['0.3'] * 5)
+    expect(s + ': no Czechoslovak or Dunkirk-garrison row after the brigade left First Canadian Army (27 November 1944) comes from this report', [c for c in claims if 'C9193' <= c <= 'C9207' and len(c) == 5 and claims[c]['date'] > '1944-11-27'], [])
+    expect(s + ': no conflict group opened by this report', [claims[c]['conflict_group_id'] for c in ('C9193', 'C9201', 'C9207')], ['', '', ''])
+
+
+def scenario_224_ahq065_falaise():
+    """CMHQ/AHQ report pass, AHQ Report No. 65 (Canadian operations 1-23 August 1944): map raises, citations without raises and hole rows."""
+    s = 'scenario 224'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    import csv as _csv
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': R891 is AHQ Report No. 65 in the DHH reports family', (meta['R891']['source_family'], meta['R891']['url'].endswith('ahq-reports/ahq065.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': map rows agreeing within 5 km on the same date are raised to 0.7', [(('R891' in refs(c)), claims[c]['confidence']) for c in ('C2669', 'C2671', 'C2737')], [(True, '0.7')] * 3)
+    expect(s + ': map rows matched only in part or by a broad area are cited, not raised', [(('R891' in refs(c)), claims[c]['confidence']) for c in ('C2615', 'C2670', 'C2736')], [(True, '0.5')] * 3)
+    expect(s + ': Stacey rows gain R891 without a raise', [(('R891' in refs(c)), claims[c]['confidence']) for c in ('C1333', 'C1335', 'C1305', 'C7241')], [(True, '0.7'), (True, '0.5'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': Ellis rows for British formations are cited, not raised', [(('R891' in refs(c)), claims[c]['confidence']) for c in ('C9015', 'C1441', 'C9003')], [(True, '0.5')] * 3)
+    expect(s + ': two-family Polish rows keep their confidence', [(('R891' in refs(c)), claims[c]['confidence']) for c in ('C1547', 'C1551', 'C1552')], [(True, '0.7'), (True, '0.9'), (True, '0.9')])
+    expect(s + ': hole rows (units, dates, places, confidence)', [(claims[c]['unit_id'], claims[c]['date'], places[claims[c]['place_id']]['name'], claims[c]['confidence']) for c in ('C9208', 'C9209', 'C9212', 'C9215', 'C9219')],
+           [('CAN-INF-002D', '1944-08-05', 'Saint-André-sur-Orne, Calvados', '0.5'), ('CAN-INF-002D', '1944-08-13', 'Tournebu, Normandy', '0.5'), ('CAN-ARM-004D', '1944-08-05', 'Bourguébus, Calvados', '0.5'),
+            ('CAN-ARM-002B', '1944-08-14', 'Bons-Tassilly, Calvados', '0.5'), ('UK-INF-051D', '1944-08-10', 'Saint-Sylvain, Calvados', '0.5')])
+    expect(s + ': hole rows carry the operation of their date', [claims[c]['operation_id'] for c in ('C9208', 'C9210', 'C9211', 'C9215', 'C9216', 'C9221')],
+           ['OP-CAMP-NORTHERN-FRANCE', 'OP-TOTALIZE', 'OP-FALAISE', 'OP-TRACTABLE', 'OP-TRACTABLE', 'OP-CAMP-NORTHERN-FRANCE'])
+    expect(s + ': part, sector and intelligence rows stay at 0.3', [claims[c]['confidence'] for c in ('C9210', 'C9211', 'C9213', 'C9214', 'C9216', 'C9217', 'C9218', 'C9220', 'C9221', 'C9222', 'C9223', 'C9224')], ['0.3'] * 12)
+    import datetime
+    new = [claims[c] for c in claims if 'C9208' <= c <= 'C9224' and len(c) == 5]
+    def gap_ok(r):
+        others = [o for o in claims.values() if o['unit_id'] == r['unit_id'] and o['claim_id'] != r['claim_id']]
+        d = datetime.date.fromisoformat(r['date'])
+        return all(abs((datetime.date.fromisoformat(o['date']) - d).days) >= 2 for o in others)
+    expect(s + ': every new row is at least two days from any other row of its unit', [r['claim_id'] for r in new if not gap_ok(r)], [])
+    expect(s + ': no new row is outside 1-23 August 1944', [r['claim_id'] for r in new if not ('1944-08-01' <= r['date'] <= '1944-08-23')], [])
+    expect(s + ': no conflict group opened by this report', [r['conflict_group_id'] for r in new], [''] * 17)
+
+
+def scenario_225_ahq058_july():
+    """CMHQ/AHQ report pass, AHQ Report No. 58 (Canadian operations in July 1944): map raises, citations without raises, review flags and hole rows."""
+    import datetime
+    import csv as _csv
+    s = 'scenario 225'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': R892 is AHQ Report No. 58 in the DHH reports family', (meta['R892']['source_family'], meta['R892']['url'].endswith('ahq-reports/ahq058.pdf')), ('canada_dhh_reports', True))
+    expect(s + ': German map rows agreeing within 5 km on 25 July are cited but stay at 0.3', [(('R892' in refs(c)), claims[c]['confidence']) for c in ('C2453', 'C2454')], [(True, '0.3')] * 2)
+    expect(s + ': Stacey rows gain R892 without a raise', [(('R892' in refs(c)), claims[c]['confidence']) for c in ('C1301', 'C1318', 'C1279', 'C1278')], [(True, '0.5'), (True, '0.7'), (True, '0.5'), (True, '0.5')])
+    expect(s + ': part-only matches are cited, not raised', [(('R892' in refs(c)), claims[c]['confidence']) for c in ('C9013', 'C2464', 'C8423', 'C2625')], [(True, '0.5'), (True, '0.5'), (True, '0.3'), (True, '0.3')])
+    expect(s + ': a row already on another DHH report keeps its value', (('R892' in refs('C2615')), claims['C2615']['confidence']), (True, '0.5'))
+    expect(s + ': flagged rows keep their values and do not cite the report', [(('R892' in refs(c)), claims[c]['confidence'], 'AHQ Report No. 58' in claims[c]['notes']) for c in ('C2422', 'C2419', 'C2450', 'C0780')],
+           [(False, '0.3', True), (False, '0.3', True), (False, '0.3', True), (False, '0.5', True)])
+    expect(s + ': hole rows (units, dates, places, confidence)', [(claims[c]['unit_id'], claims[c]['date'], places[claims[c]['place_id']]['name'], claims[c]['confidence']) for c in ('C9225', 'C9228', 'C9229', 'C9232', 'C9233', 'C9235')],
+           [('CAN-INF-003D', '1944-07-07', 'Lasson, Calvados', '0.3'), ('CAN-INF-002D', '1944-07-22', 'Saint-André-sur-Orne, Calvados', '0.5'), ('CAN-INF-002D', '1944-07-28', 'Verrières (Verrières Ridge), Calvados', '0.5'),
+            ('CAN-ARM-002B', '1944-07-30', 'Louvigny, Calvados', '0.5'), ('CAN-ARM-004D', '1944-07-29', 'Cormelles-le-Royal, Calvados', '0.5'), ('GER-PZ-116D', '1944-07-22', 'Saint-Sylvain, Calvados', '0.3')])
+    expect(s + ': hole rows carry the operation of their date', [claims[c]['operation_id'] for c in ('C9225', 'C9227', 'C9231', 'C9234', 'C9237', 'C9239')],
+           ['OP-CAMP-NORMANDY', 'OP-CAMP-NORTHERN-FRANCE', 'OP-CHARNWOOD', 'OP-CAMP-NORTHERN-FRANCE', 'OP-ATLANTIC', 'OP-ATLANTIC'])
+    expect(s + ': part, sector and intelligence rows stay at 0.3', [claims[c]['confidence'] for c in ('C9225', 'C9226', 'C9227', 'C9230', 'C9231', 'C9234', 'C9236', 'C9237', 'C9238', 'C9239', 'C9240')], ['0.3'] * 11)
+    new = [claims[c] for c in claims if 'C9225' <= c <= 'C9240' and len(c) == 5]
+    def gap_ok(r):
+        others = [o for o in claims.values() if o['unit_id'] == r['unit_id'] and o['claim_id'] != r['claim_id']]
+        d = datetime.date.fromisoformat(r['date'])
+        return all(abs((datetime.date.fromisoformat(o['date']) - d).days) >= 2 for o in others)
+    expect(s + ': every new row is at least two days from any other row of its unit', [r['claim_id'] for r in new if not gap_ok(r)], [])
+    expect(s + ': no new row is outside July 1944', [r['claim_id'] for r in new if not ('1944-07-01' <= r['date'] <= '1944-07-31')], [])
+    expect(s + ': no conflict group opened by this report', [r['conflict_group_id'] for r in new], [''] * 16)
+
+
+def scenario_226_cmhq181_goldflake():
+    """CMHQ/AHQ report pass, CMHQ Report No. 181 (Operation Goldflake, February-March 1945): the Itegem correction, a flagged row and hole rows."""
+    import csv as _csv
+    s = 'scenario 226'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    meta = {r['reference_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': R893 is CMHQ Report No. 181 in the DHH reports family', (meta['R893']['source_family'], meta['R893']['url'].endswith('cmhq-reports/cmhq181.pdf')), ('canada_dhh_reports', True))
+    c = claims['C9073']
+    expect(s + ': the 1st Canadian Division station "Itogon" is now Itegem at 0.5, citing both reports and GeoNames', (places[c['place_id']]['name'], c['confidence'], refs('C9073')), ('Itegem (Heist-op-den-Berg), Antwerp', '0.5', ['R883', 'R893', 'R782']))
+    expect(s + ': the Antwerp row of the 5th Canadian Armoured Division is flagged, not changed', (('R893' in refs('C1402')), claims['C1402']['confidence'], 'Dixmude' in claims['C1402']['notes']), (False, '0.3', True))
+    expect(s + ': hole rows (units, dates, places, confidence, activity)', [(claims[x]['unit_id'], claims[x]['date'], places[claims[x]['place_id']]['name'], claims[x]['confidence'], claims[x]['activity_status']) for x in ('C9241', 'C9242', 'C9243')],
+           [('CAN-COR-001C', '1945-02-24', 'Marseille, Bouches-du-Rhône', '0.5', 'transit'), ('CAN-COR-001C', '1945-03-03', 'Ronse (Renaix), East Flanders', '0.5', 'transit'), ('CAN-ARM-001B', '1945-03-12', 'Lauwe (Menen), West Flanders', '0.5', 'refitting')])
+    expect(s + ': the corps arrives in Belgium before it takes over at Nijmegen', [claims[x]['date'] for x in ('C9242', 'C9055')], ['1945-03-03', '1945-03-15'])
+
+
 
 def main():
 
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps, scenario_196_scott_decisions_nov04, scenario_197_b709_german, scenario_198_b730_german, scenario_199_theater, scenario_200_placeholders_b1, scenario_201_placeholders_b2, scenario_202_placeholders_b3, scenario_203_lifespan, scenario_204_command_relations, scenario_205_german_end_rows, scenario_206_map_text_weak_pairs, scenario_207_midwar_ends, scenario_208_lifespan_check, scenario_209_ellis_leftovers_chunk1, scenario_210_ellis_leftovers_chunk2, scenario_211_ellis_leftovers_chunk3, scenario_212_ellis_leftovers_chunk4, scenario_213_ellis_leftovers_chunk5, scenario_214_ellis_leftovers_chunk6):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps, scenario_196_scott_decisions_nov04, scenario_197_b709_german, scenario_198_b730_german, scenario_199_theater, scenario_200_placeholders_b1, scenario_201_placeholders_b2, scenario_202_placeholders_b3, scenario_203_lifespan, scenario_204_command_relations, scenario_205_german_end_rows, scenario_206_map_text_weak_pairs, scenario_207_midwar_ends, scenario_208_lifespan_check, scenario_209_ellis_leftovers_chunk1, scenario_210_ellis_leftovers_chunk2, scenario_211_ellis_leftovers_chunk3, scenario_212_ellis_leftovers_chunk4, scenario_213_ellis_leftovers_chunk5, scenario_214_ellis_leftovers_chunk6, scenario_215_cmhq173_watch_on_the_maas, scenario_216_ahq039_western_netherlands, scenario_217_ahq032_concluding_phase, scenario_218_ahq019_rhine_crossing, scenario_219_cmhq186_blockbuster, scenario_220_cmhq155_veritable, scenario_221_cmhq188_scheldt, scenario_222_cmhq183_pursuit, scenario_223_cmhq184_channel_ports, scenario_224_ahq065_falaise, scenario_225_ahq058_july, scenario_226_cmhq181_goldflake):
         before = len(FAILURES)
         try:
             fn()

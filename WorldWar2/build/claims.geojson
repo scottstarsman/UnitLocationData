@@ -249737,6 +249737,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0648,
+     51.7549
+    ]
+   },
+   "properties": {
+    "claim_id": "C9135",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-084D",
+    "unit_name": "84th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL0698",
+    "location_name": "Reichswald (forest), North Rhine-Westphalia (sector Erlekom to Middelaar)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds the Reichswald sector from the Rhine bend near Erlekom to Middelaar",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R887;R002",
+    "source_locator": "R887: para 43"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3556,
      48.0817
     ]
@@ -256534,8 +256575,8 @@
     "location_date": "1945-02-07",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R001",
-    "source_locator": "R671: pp. 254, 255"
+    "reference_ids": "R671;R887;R001",
+    "source_locator": "R671: pp. 254, 255; R887: para 56"
    }
   },
   {
@@ -257108,8 +257149,8 @@
     "location_date": "1945-02-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 456, 470, 472"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 456, 470, 472; R887: para 57"
    }
   },
   {
@@ -257231,8 +257272,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 258; R668: pp. 468-469"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 258; R668: pp. 468-469; R887: para 60"
    }
   },
   {
@@ -257272,8 +257313,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 258, 259; R668: p. 469"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: pp. 258, 259; R668: p. 469; R887: para 59"
    }
   },
   {
@@ -257313,8 +257354,8 @@
     "location_date": "1945-02-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 259; R668: p. 470"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 259; R668: p. 470; R887: para 58"
    }
   },
   {
@@ -257518,8 +257559,8 @@
     "location_date": "1945-02-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 471-472"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 471-472; R887: para 62"
    }
   },
   {
@@ -257682,8 +257723,8 @@
     "location_date": "1945-02-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 261; R668: p. 469"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 261; R668: p. 469; R887: para 69"
    }
   },
   {
@@ -257723,8 +257764,8 @@
     "location_date": "1945-02-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 261; R668: p. 474"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 261; R668: p. 474; R887: para 68"
    }
   },
   {
@@ -257764,8 +257805,8 @@
     "location_date": "1945-02-09",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 262; R668: pp. 474-475"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 262; R668: pp. 474-475; R887: para 67"
    }
   },
   {
@@ -257928,8 +257969,8 @@
     "location_date": "1945-02-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 472-474"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 472-474; R887: paras 62, 66"
    }
   },
   {
@@ -258174,8 +258215,8 @@
     "location_date": "1945-02-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 262; R668: p. 478"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 262; R668: p. 478; R887: para 73"
    }
   },
   {
@@ -258338,8 +258379,8 @@
     "location_date": "1945-02-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R808;R819;R002",
-    "source_locator": "R668: p. 478; R808: German p.9, English p.10; R819: German p.14 (Fold3 image 38)"
+    "reference_ids": "R668;R808;R819;R887;R002",
+    "source_locator": "R668: p. 478; R808: German p.9, English p.10; R819: German p.14 (Fold3 image 38); R887: para 83"
    }
   },
   {
@@ -258379,8 +258420,8 @@
     "location_date": "1945-02-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 479"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 479; R887: para 72"
    }
   },
   {
@@ -258420,8 +258461,8 @@
     "location_date": "1945-02-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 480"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 480; R887: para 74"
    }
   },
   {
@@ -258666,8 +258707,8 @@
     "location_date": "1945-02-11",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 264; R668: p. 478"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 264; R668: p. 478; R887: paras 72, 78"
    }
   },
   {
@@ -258789,8 +258830,8 @@
     "location_date": "1945-02-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 479"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 479; R887: para 76"
    }
   },
   {
@@ -258830,8 +258871,8 @@
     "location_date": "1945-02-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 480-481"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 480-481; R887: para 79"
    }
   },
   {
@@ -258994,8 +259035,8 @@
     "location_date": "1945-02-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 478-479"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 478-479; R887: para 77"
    }
   },
   {
@@ -259035,8 +259076,8 @@
     "location_date": "1945-02-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 478-480"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 478-480; R887: para 77"
    }
   },
   {
@@ -259076,8 +259117,8 @@
     "location_date": "1945-02-12",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 478-479"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 478-479; R887: para 77"
    }
   },
   {
@@ -259199,8 +259240,8 @@
     "location_date": "1945-02-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 479"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 479; R887: para 77"
    }
   },
   {
@@ -264816,8 +264857,8 @@
     "location_date": "1945-02-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 483"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 483; R887: para 78"
    }
   },
   {
@@ -264980,8 +265021,8 @@
     "location_date": "1945-02-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 481"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 481; R887: para 79"
    }
   },
   {
@@ -265554,8 +265595,8 @@
     "location_date": "1945-02-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 482, 484"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 482, 484; R887: para 84"
    }
   },
   {
@@ -265595,8 +265636,8 @@
     "location_date": "1945-02-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R808;R002",
-    "source_locator": "R668: p. 482; R808: German p.12 (Fold3 page 16)"
+    "reference_ids": "R668;R808;R887;R002",
+    "source_locator": "R668: p. 482; R808: German p.12 (Fold3 page 16); R887: para 90"
    }
   },
   {
@@ -265800,8 +265841,8 @@
     "location_date": "1945-02-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 479"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 479; R887: paras 76, 87"
    }
   },
   {
@@ -265841,8 +265882,8 @@
     "location_date": "1945-02-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 483"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 483; R887: paras 86, 88"
    }
   },
   {
@@ -266210,8 +266251,8 @@
     "location_date": "1945-02-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 482"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 482; R887: para 86"
    }
   },
   {
@@ -266333,8 +266374,8 @@
     "location_date": "1945-02-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 483-484"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 483-484; R887: para 90"
    }
   },
   {
@@ -266424,6 +266465,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1157,
+     51.6945
+    ]
+   },
+   "properties": {
+    "claim_id": "C9136",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-16",
+    "place_id": "PL3456",
+    "location_name": "Asperden (Goch), North Rhine-Westphalia (Asperden bridge site)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Captures the Asperden bridge site after two days of fighting",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R887;R002",
+    "source_locator": "R887: para 88"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1593,
      51.6756
     ]
@@ -266456,8 +266538,8 @@
     "location_date": "1945-02-17",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 267; R668: p. 482"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 267; R668: p. 482; R887: para 89"
    }
   },
   {
@@ -266661,8 +266743,8 @@
     "location_date": "1945-02-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 267; R668: pp. 490-491"
+    "reference_ids": "R671;R668;R887;R002",
+    "source_locator": "R671: p. 267; R668: pp. 490-491; R887: paras 99, 100"
    }
   },
   {
@@ -266825,8 +266907,8 @@
     "location_date": "1945-02-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 491"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 491; R887: para 87"
    }
   },
   {
@@ -267030,8 +267112,8 @@
     "location_date": "1945-02-19",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R808;R002",
-    "source_locator": "R668: pp. 484, 487; R808: German p.12 (Fold3 page 16)"
+    "reference_ids": "R668;R808;R887;R002",
+    "source_locator": "R668: pp. 484, 487; R808: German p.12 (Fold3 page 16); R887: paras 92, 94"
    }
   },
   {
@@ -267112,8 +267194,8 @@
     "location_date": "1945-02-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 484-485"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 484-485; R887: para 92"
    }
   },
   {
@@ -267153,8 +267235,8 @@
     "location_date": "1945-02-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 489"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 489; R887: para 94"
    }
   },
   {
@@ -267235,8 +267317,8 @@
     "location_date": "1945-02-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 491"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: p. 491; R887: para 99"
    }
   },
   {
@@ -273795,8 +273877,8 @@
     "location_date": "1945-02-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 486-487"
+    "reference_ids": "R668;R887;R002",
+    "source_locator": "R668: pp. 486-487; R887: para 95"
    }
   },
   {
@@ -274043,6 +274125,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R002",
     "source_locator": "R668: p. 490"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1376,
+     51.7896
+    ]
+   },
+   "properties": {
+    "claim_id": "C9137",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-22",
+    "place_id": "PL0578",
+    "location_name": "Kleve, North Rhine-Westphalia (Cleve area)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Relieved by the 15th Division and back in the Cleve area under the 2nd Canadian Corps",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Veritable",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-22",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R887;R002",
+    "source_locator": "R887: paras 96, 102"
    }
   },
   {
@@ -275261,11 +275384,11 @@
     "confidence": 0.5,
     "event_type": "defense",
     "current_activity": "The 9th Brigade holds the Verkält area before Blockbuster",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-VERITABLE",
+    "operation": "Operation Veritable",
+    "operation_type": "operation",
     "campaign": "Rhineland",
-    "operation_name": null,
+    "operation_name": "Veritable",
     "sub_operation_name": null,
     "strength_status": "unknown",
     "location_date": "1945-02-24",
@@ -275394,8 +275517,8 @@
     "location_date": "1945-02-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R886;R002",
-    "source_locator": "R671: pp. 271, 273; R668: p. 494; R886: para 21"
+    "reference_ids": "R671;R668;R886;R887;R002",
+    "source_locator": "R671: pp. 271, 273; R668: p. 494; R886: para 21; R887: para 104"
    }
   },
   {
@@ -275558,8 +275681,8 @@
     "location_date": "1945-02-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R886;R002",
-    "source_locator": "R668: p. 494; R886: para 21"
+    "reference_ids": "R668;R886;R887;R002",
+    "source_locator": "R668: p. 494; R886: para 21; R887: para 96"
    }
   },
   {
@@ -275763,8 +275886,8 @@
     "location_date": "1945-02-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R886;R002",
-    "source_locator": "R668: p. 494; R886: para 21"
+    "reference_ids": "R668;R886;R887;R002",
+    "source_locator": "R668: p. 494; R886: para 21; R887: para 103"
    }
   },
   {
@@ -285511,12 +285634,12 @@
     "confidence": 0.3,
     "event_type": "relocation",
     "current_activity": "The 10th Brigade, relieved in the Hochwald gap, concentrates south-east of Kirsel",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-01",
     "location_basis": "representative_point",
@@ -286864,12 +286987,12 @@
     "confidence": 0.5,
     "event_type": "attack",
     "current_activity": "The 6th Brigade clears the eastern Hochwald; the 4th Brigade holds the north-west of the forest",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-03",
     "location_basis": "documented_on_date",
@@ -287889,12 +288012,12 @@
     "confidence": 0.5,
     "event_type": "attack",
     "current_activity": "The Argylls and the 29th Reconnaissance Regiment attack Labbeck and push toward Haneshof",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-04",
     "location_basis": "documented_on_date",
@@ -287930,12 +288053,12 @@
     "confidence": 0.5,
     "event_type": "capture",
     "current_activity": "The 185th Brigade firm on Kapellen",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-04",
     "location_basis": "documented_on_date",
@@ -295146,12 +295269,12 @@
     "confidence": 0.5,
     "event_type": "attack",
     "current_activity": "Attack on Veen; crossroads at Dornemannshof south-east of the village taken by midnight",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-07",
     "location_basis": "documented_on_date",
@@ -295925,12 +296048,12 @@
     "confidence": 0.5,
     "event_type": "other",
     "current_activity": "Static in the Winkelscher Busch area",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-08",
     "location_basis": "documented_on_date",
@@ -297319,12 +297442,12 @@
     "confidence": 0.5,
     "event_type": "capture",
     "current_activity": "The 5th Brigade south-east of Birten; the division's task ends",
-    "operation_id": "OP-CAMP-RHINELAND",
-    "operation": "Rhineland campaign",
-    "operation_type": "campaign",
+    "operation_id": "OP-BLOCKBUSTER",
+    "operation": "Operation Blockbuster",
+    "operation_type": "phase",
     "campaign": "Rhineland",
-    "operation_name": null,
-    "sub_operation_name": null,
+    "operation_name": "Veritable",
+    "sub_operation_name": "Blockbuster",
     "strength_status": "unknown",
     "location_date": "1945-03-10",
     "location_basis": "documented_on_date",

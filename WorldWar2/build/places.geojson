@@ -3318,7 +3318,7 @@
     "precision_km": 25,
     "country": "BE",
     "region": "Flanders",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -10818,7 +10818,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 26
+    "claims_count": 27
    }
   },
   {
@@ -51618,7 +51618,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 5
+    "claims_count": 7
    }
   },
   {
@@ -80018,7 +80018,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -80138,6 +80138,26 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8569,
+     51.7017
+    ]
+   },
+   "properties": {
+    "place_id": "PL4024",
+    "name": "Geertruidenberg, Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
     "claims_count": 1
    }
   }

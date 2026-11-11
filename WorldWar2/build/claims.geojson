@@ -176860,7 +176860,7 @@
     "precision_km": 3,
     "confidence": 0.5,
     "event_type": "attack",
-    "current_activity": "II and III Battalions of the 16th Parachute Regiment, with a company of the divisional tank battalion, attack the 49th Division near Haalderen",
+    "current_activity": "Two battalions of the 16th Parachute Regiment with tanks attack the 49th Division near Haalderen",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -182682,7 +182682,7 @@
     "precision_km": 3,
     "confidence": 0.5,
     "event_type": "hq_move",
-    "current_activity": "Divisional headquarters at Hooge Heide; division concentrated between St Michielsgestel and Dinther after leaving the island",
+    "current_activity": "Divisional headquarters at Hooge Heide; division concentrated between St Michielsgestel and Dinther",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -194551,6 +194551,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3378,
+     50.9304
+    ]
+   },
+   "properties": {
+    "claim_id": "C9048",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-12-18",
+    "place_id": "PL0168",
+    "location_name": "Hasselt, Limbourg",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Ordered to concentrate beyond the Meuse at Hasselt instead of moving north for Veritable",
+    "operation_id": "OP-BULGE",
+    "operation": "Battle of the Bulge",
+    "operation_type": "battle",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": "Ardennes",
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 93"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.6333,
      50.5833
     ]
@@ -205765,7 +205806,7 @@
     "precision_km": 5,
     "confidence": 0.5,
     "event_type": "relocation",
-    "current_activity": "Moves into the area south and east of Breda under I British Corps, behind the Wilhelmina canal facing Dongen and Oosterhout",
+    "current_activity": "Moves into the area south and east of Breda under I British Corps, behind the Wilhelmina canal",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -214231,6 +214272,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9050",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-079D",
+    "unit_name": "79th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-01",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Divisional headquarters flag at Eindhoven on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: Appx C (map), Appx E (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7833,
      50.1333
     ]
@@ -219377,7 +219459,7 @@
     "precision_km": 3,
     "confidence": 0.3,
     "event_type": "hq_observation",
-    "current_activity": "Brigade widely scattered: headquarters near II Canadian Corps headquarters, 10th Armoured Regiment at Grave, 6th Armoured Regiment north of Nijmegen as counter-attack force",
+    "current_activity": "Brigade widely scattered; headquarters near II Canadian Corps headquarters, regiments at Grave and north of Nijmegen",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -219882,6 +219964,47 @@
     "location_temporal_offset_days": -6,
     "reference_ids": "R351;R002",
     "source_locator": "R351: Assignment and Attachment to Higher Units, row 3 Jan 45, and Command Posts, row 28 Dec"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C9052",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-01-03",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Walcheren and Beveland garrison comes under First Canadian Army and passes to I British Corps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-03",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R001",
+    "source_locator": "R882: para 131"
    }
   },
   {
@@ -220538,6 +220661,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R302;R001",
     "source_locator": "R302: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8569,
+     51.7017
+    ]
+   },
+   "properties": {
+    "claim_id": "C9053",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-01-05",
+    "place_id": "PL4024",
+    "location_name": "Geertruidenberg, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "No. 47 (Royal Marine) Commando patrols at Geertruidenberg on the Maas",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-05",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: paras 110, 131, 134"
    }
   },
   {
@@ -227221,6 +227385,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R808;R002",
     "source_locator": "R668: p. 455; R808: German pp.7-8, English p.8"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.725,
+     51.8092
+    ]
+   },
+   "properties": {
+    "claim_id": "C9054",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-13",
+    "place_id": "PL4017",
+    "location_name": "Wijchen, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Whole brigade on the II Canadian Corps front in static corps reserve",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-13",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: paras 139, 152, 164, 188"
    }
   },
   {
@@ -234916,7 +235121,7 @@
     "precision_km": 5,
     "confidence": 0.5,
     "event_type": "defense",
-    "current_activity": "Groesbeek sector: 4th Brigade in the north half, 6th on the left, 5th in reserve; enemy forming up near Katerbosch and Middelaar",
+    "current_activity": "Holds the Groesbeek sector with the 4th and 6th Brigades forward and the 5th in reserve",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -248663,6 +248868,88 @@
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
     "reference_ids": "R882;R002",
+    "source_locator": "R882: Appx E (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9049",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-02-01",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Brigade (less 107th Regiment RAC) shown at Eindhoven on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: Appx E (map), para 170"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C9051",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-02-01",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Shown at Tilburg on the First Canadian Army disposition map before Veritable",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R001",
     "source_locator": "R882: Appx E (map)"
    }
   },

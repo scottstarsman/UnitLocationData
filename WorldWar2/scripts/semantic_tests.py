@@ -3343,6 +3343,9 @@ def scenario_215_cmhq173_watch_on_the_maas():
            (claims['C9018']['unit_id'], claims['C9018']['location_represents'], claims['C9018']['place_id'], claims['C9018']['confidence']), ('CAN-COR-002C', 'headquarters', 'PL4017', '0.5'))
     expect(s + ': map-read rows from the report are capped at 0.3', sorted({claims[c]['confidence'] for c in ('C9019', 'C9020', 'C9021', 'C9032', 'C9034')}), ['0.3'])
     expect(s + ': FMS row with an approximate date is cited but not raised (Zetten, 2nd Parachute Division)', ('R882' in refs('C7826'), claims['C7826']['confidence']), (True, '0.3'))
+    # gap check (11 November 2026): holes found by checking every fact of the report against the dataset are filled at 0.3
+    for cid, uid in (('C9048', 'UK-TNK-034B'), ('C9049', 'UK-TNK-034B'), ('C9050', 'UK-ARM-079D'), ('C9051', 'UK-TNK-006GB'), ('C9052', 'NL-INF-IRNEB'), ('C9053', 'UK-CDO-004B'), ('C9054', 'CAN-ARM-002B')):
+        expect(s + ': gap-check row %s (%s) cites the report at 0.3' % (cid, uid), (claims[cid]['unit_id'], 'R882' in refs(cid), claims[cid]['confidence']), (uid, True, '0.3'))
 
 
 

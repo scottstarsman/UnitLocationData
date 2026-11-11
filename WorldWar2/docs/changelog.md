@@ -2,6 +2,22 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 11 November 2026 — CMHQ/AHQ reports, chunk 1b: gap check of CMHQ Report No. 173
+
+Approved by Scott (roadmap 374, step 2; branch `cmhq-ahq-reports`). Every fact recorded from CMHQ Report No. 173 (`R882`) was checked against the dataset after chunk 1. Of 294 facts, 128 are now on rows that cite the report, 62 are covered by other rows within a week (command, brigade-level or non-specific facts), 83 concern units outside the dataset (regiments, battalions, German placeholders of the intelligence summaries) or general context, and 21 had no row of the unit within a week. Seven of those 21 holes are filled here, all at confidence 0.3; the rest are left (a move with no place, a doubtful place reading in the Ardennes, a relief with no destination, a corps operation without a headquarters place, or a fact within a week of an existing row).
+
+- New claims (old value none, new value the row; reason given in each row's Review sentence):
+  - `C9048` 34th Tank Brigade, 18 December 1944, ordered to concentrate at Hasselt instead of moving north (operation `OP-BULGE`; an order, not an arrival).
+  - `C9049` 34th Tank Brigade, 1 February 1945, Eindhoven (Appx E map).
+  - `C9050` 79th Armoured Division headquarters, 1 January 1945, Eindhoven (Appx C map; again on Appx E).
+  - `C9051` 6th Guards Tank Brigade, 1 February 1945, Tilburg (Appx E map).
+  - `C9052` Royal Netherlands Brigade, 3 January 1945, Walcheren garrison passes to First Canadian Army and I British Corps.
+  - `C9053` 4th Commando Brigade, 5 January 1945, No. 47 (RM) Commando patrolling at Geertruidenberg (new place `PL4024`, GeoNames 2755669).
+  - `C9054` 2nd Canadian Armoured Brigade, 11-13 January 1945, static corps reserve, headquarters inferred near II Canadian Corps headquarters at Wijchen; the regiments' detached tasks at Zetten (18 January) and near Boxmeer (24 January) are given in the notes, not as brigade positions.
+- Wording fixes on rows new in this branch (no values from main changed): `current_activity` of `C9024`, `C9026`, `C9030`, `C9036`, `C9044` shortened to 120 characters or less (the detail is already in the notes), clearing validator warnings.
+- Tests: scenario 215 gains seven expectations (each gap-check row cites `R882` at 0.3).
+- Next free: C9055, CR1282, PL4025, R883, UL020, G120.
+
 ## 11 November 2026 — CMHQ/AHQ reports, chunk 1: CMHQ Report No. 173, The Watch on the Maas (branch `cmhq-ahq-reports`)
 
 - **Why:** Roadmap 374, step 2 (approved by Scott): read the free DHH CMHQ/AHQ reports as a second Canadian source family. CMHQ Report No. 173 covers First Canadian Army on the Maas and in the Nijmegen salient, 9 November 1944-8 February 1945, the months where Canadian rows rested mostly on the 12th Army Group maps. Read in full (narrative paras 1-203, Appx A, and the disposition maps Appx B, C and E viewed as images); private reading notes, not committed.

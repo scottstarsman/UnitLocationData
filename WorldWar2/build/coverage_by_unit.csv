@@ -1,7 +1,7 @@
 unit_id,unit_name,nationality,echelon,branch,first_claim_date,last_claim_date,span_days,claim_count,conf_0_9,conf_0_7,conf_0_5,conf_0_3_or_less,map_only_rows,map_only_share,source_families,source_family_list,longest_gap_days,longest_gap_from,longest_gap_to,empty_months,empty_month_list
 BEL-INF-001B,1st Belgian Infantry Brigade (Brigade Piron),Belgium,brigade,Army,1944-08-13,1945-04-18,248,14,0,3,9,2,3,0.214,4,canada_ca;loc_12ag_situation_maps;uk_official_history;wikipedia,146,1944-11-17,1945-04-12,5,1944-10;1944-12;1945-01;1945-02;1945-03
 CAN-ARM-001B,1st Canadian Armoured Brigade,Canada,brigade,Armoured,1945-04-12,1945-04-18,6,2,0,0,1,1,0,0.000,1,canada_ca,6,1945-04-12,1945-04-18,0,
-CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,1944-06-06,1945-05-04,332,13,2,4,4,3,0,0.000,5,canada_ca;canada_dhh_reports;uk_official_history;veterans_gc_ca;wikipedia,67,1945-02-26,1945-05-04,3,1944-12;1945-03;1945-04
+CAN-ARM-002B,2nd Canadian Armoured Brigade,Canada,brigade,Armoured,1944-06-06,1945-05-04,332,14,2,4,4,4,0,0.000,5,canada_ca;canada_dhh_reports;uk_official_history;veterans_gc_ca;wikipedia,67,1945-02-26,1945-05-04,3,1944-12;1945-03;1945-04
 CAN-ARM-004D,4th Canadian Armoured Division,Canada,division,Armoured,1944-07-31,1945-05-09,282,96,1,20,70,5,24,0.250,5,canada_ca;canada_dhh_reports;loc_12ag_situation_maps;uk_official_history;us_army_cmh,22,1945-03-10,1945-04-01,0,
 CAN-ARM-005D,5th Canadian Armoured Division,Canada,division,Armoured,1945-02-28,1945-05-08,69,18,0,3,10,5,1,0.056,3,canada_ca;fms_german_manuscript;loc_12ag_situation_maps,31,1945-02-28,1945-03-31,0,
 CAN-ARMY-001A,First Canadian Army,Canada,army,Army,1944-06-18,1945-05-04,320,50,0,4,36,10,31,0.620,3,canada_ca;canada_dhh_reports;loc_12ag_situation_maps,26,1944-06-27,1944-07-23,0,
@@ -291,7 +291,7 @@ GER-VG-560D,560th Volksgrenadier Division,Germany,division,Army,1944-12-16,1945-
 GER-VG-708D,708th Volksgrenadier Division,Germany,division,Army,1944-11-10,1945-03-20,130,14,0,0,1,13,10,0.714,3,fms_german_manuscript;loc_12ag_situation_maps;us_army_cmh,32,1944-12-19,1945-01-20,0,
 GER-WBN-000H,Wehrmachtbefehlshaber der Niederlande,Germany,other,Army,1944-06-06,1944-09-15,101,2,0,0,1,1,0,0.000,2,canada_ca;fms_german_manuscript,101,1944-06-06,1944-09-15,2,1944-07;1944-08
 GER-WK-XI,Stellvertretendes Generalkommando XI (Wehrkreis XI),Germany,corps,Army,1945-04-09,1945-04-09,0,1,0,0,0,1,0,0.000,1,fms_german_manuscript,0,,,0,
-NL-INF-IRNEB,Royal Netherlands Brigade (Prinses Irene),Netherlands,brigade,Army,1944-08-06,1945-04-25,262,10,0,1,6,3,0,0.000,4,canada_ca;canada_dhh_reports;uk_official_history;wikipedia,149,1944-11-27,1945-04-25,4,1944-12;1945-01;1945-02;1945-03
+NL-INF-IRNEB,Royal Netherlands Brigade (Prinses Irene),Netherlands,brigade,Army,1944-08-06,1945-04-25,262,11,0,1,6,4,0,0.000,4,canada_ca;canada_dhh_reports;uk_official_history;wikipedia,112,1945-01-03,1945-04-25,3,1944-12;1945-02;1945-03
 POL-ABN-001B,1st Polish Independent Parachute Brigade,Poland,brigade,Airborne,1944-09-19,1944-09-26,7,5,2,2,1,0,0,0.000,3,canada_ca;uk_official_history;wikipedia,2,1944-09-19,1944-09-21,0,
 POL-ARM-001D,1st Polish Armoured Division,Poland,division,Armoured,1944-08-01,1945-05-06,278,78,9,24,38,7,29,0.372,6,canada_ca;canada_dhh_reports;fms_german_manuscript;loc_12ag_situation_maps;uk_official_history;wikipedia,19,1945-03-20,1945-04-08,0,
 UK-ABN-001C,I Airborne Corps,UK,corps,Airborne,1944-09-17,1944-10-03,16,3,0,1,2,0,2,0.667,2,loc_12ag_situation_maps;uk_official_history,9,1944-09-17,1944-09-26,0,
@@ -304,11 +304,11 @@ UK-ARM-008B,8th Armoured Brigade,UK,brigade,Armoured,1944-06-06,1945-02-10,249,7
 UK-ARM-011D,11th Armoured Division,UK,division,Armoured,1944-06-13,1945-05-08,329,68,0,16,40,12,41,0.603,6,canada_ca;fms_german_manuscript;loc_12ag_situation_maps;uk_official_history;us_army_cmh;wikipedia,14,1944-12-05,1944-12-19,0,
 UK-ARM-027B,27th Armoured Brigade,UK,brigade,Armoured,1944-06-06,1944-07-29,53,4,0,1,2,1,0,0.000,2,uk_official_history;wikipedia,32,1944-06-06,1944-07-08,0,
 UK-ARM-033B,33rd Armoured Brigade,UK,brigade,Armoured,1944-07-08,1945-04-13,279,7,0,0,6,1,0,0.000,3,canada_ca;canada_dhh_reports;uk_official_history,95,1945-01-08,1945-04-13,4,1944-10;1944-12;1945-02;1945-03
-UK-ARM-079D,79th Armoured Division,UK,division,Armoured,1944-06-06,1945-04-12,310,16,0,1,15,0,0,0.000,2,uk_official_history;wikipedia,52,1945-02-18,1945-04-11,1,1945-03
+UK-ARM-079D,79th Armoured Division,UK,division,Armoured,1944-06-06,1945-04-12,310,17,0,1,15,1,0,0.000,3,canada_dhh_reports;uk_official_history;wikipedia,52,1945-02-18,1945-04-11,1,1945-03
 UK-ARM-GRDD,Guards Armoured Division,UK,division,Armoured,1944-06-28,1945-04-27,303,36,0,7,27,2,21,0.583,5,canada_ca;fms_german_manuscript;loc_12ag_situation_maps;uk_official_history;wikipedia,78,1944-11-28,1945-02-14,2,1944-12;1945-01
 UK-ARMY-002A,Second Army,UK,army,Army,1944-06-06,1945-05-09,337,47,0,1,40,6,41,0.872,4,canada_ca;loc_12ag_situation_maps;uk_official_history;wikipedia,21,1944-06-27,1944-07-18,0,
 UK-CDO-001B,1st Special Service (Commando) Brigade,UK,brigade,Army,1944-06-06,1945-03-23,290,6,0,3,1,2,0,0.000,3,canada_ca;uk_official_history;wikipedia,228,1944-06-06,1945-01-20,6,1944-07;1944-08;1944-09;1944-10;1944-11;1944-12
-UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,1944-06-06,1945-04-13,311,14,1,5,4,4,0,0.000,5,canada_ca;canada_dhh_reports;fms_german_manuscript;uk_official_history;wikipedia,91,1944-06-17,1944-09-16,5,1944-07;1944-08;1944-12;1945-02;1945-03
+UK-CDO-004B,4th Special Service (Commando) Brigade,UK,brigade,Army,1944-06-06,1945-04-13,311,15,1,5,4,5,0,0.000,5,canada_ca;canada_dhh_reports;fms_german_manuscript;uk_official_history;wikipedia,91,1944-06-17,1944-09-16,5,1944-07;1944-08;1944-12;1945-02;1945-03
 UK-COR-001C,I Corps,UK,corps,Army,1944-06-06,1945-04-02,300,46,0,6,33,7,31,0.674,4,canada_ca;loc_12ag_situation_maps;uk_official_history;wikipedia,24,1944-07-23,1944-08-16,0,
 UK-COR-008C,VIII Corps,UK,corps,Army,1944-06-26,1945-05-01,309,46,0,4,41,1,38,0.826,5,canada_ca;fms_german_manuscript;loc_12ag_situation_maps;uk_official_history;wikipedia,18,1944-06-30,1944-07-18,0,
 UK-COR-012C,XII Corps,UK,corps,Army,1944-07-15,1945-05-09,298,40,0,2,35,3,31,0.775,4,canada_ca;fms_german_manuscript;loc_12ag_situation_maps;uk_official_history,66,1945-01-16,1945-03-23,1,1945-02
@@ -325,9 +325,9 @@ UK-INF-053D,53rd (Welsh) Infantry Division,UK,division,Army,1944-06-27,1945-05-0
 UK-INF-056B,56th Infantry Brigade,UK,brigade,Army,1944-06-06,1944-08-20,75,6,1,4,0,1,0,0.000,2,uk_official_history;wikipedia,49,1944-06-11,1944-07-30,0,
 UK-INF-059D,59th (Staffordshire) Infantry Division,UK,division,Army,1944-06-27,1944-08-15,49,10,0,2,7,1,7,0.700,4,canada_ca;loc_12ag_situation_maps;uk_official_history;wikipedia,7,1944-06-27,1944-07-04,0,
 UK-INF-115B,115th Infantry Brigade,UK,brigade,Army,1945-03-23,1945-03-23,0,1,0,0,0,1,0,0.000,2,uk_official_history;wikipedia,0,,,0,
-UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,1944-07-30,1945-03-27,240,7,0,1,6,0,0,0.000,2,canada_ca;uk_official_history,102,1944-10-30,1945-02-09,4,1944-09;1944-11;1944-12;1945-01
+UK-TNK-006GB,6th Guards Tank Brigade,UK,brigade,Armoured,1944-07-30,1945-03-27,240,8,0,1,6,1,0,0.000,3,canada_ca;canada_dhh_reports;uk_official_history,94,1944-10-30,1945-02-01,4,1944-09;1944-11;1944-12;1945-01
 UK-TNK-031B,31st Tank Brigade,UK,brigade,Armoured,1944-06-26,1944-09-25,91,5,0,1,3,1,0,0.000,2,uk_official_history;wikipedia,69,1944-06-27,1944-09-04,2,1944-07;1944-08
-UK-TNK-034B,34th Tank Brigade,UK,brigade,Armoured,1944-07-15,1945-02-09,209,9,0,1,6,2,0,0.000,4,canada_ca;canada_dhh_reports;uk_official_history;wikipedia,55,1944-11-09,1945-01-03,1,1944-12
+UK-TNK-034B,34th Tank Brigade,UK,brigade,Armoured,1944-07-15,1945-02-09,209,11,0,1,6,4,0,0.000,4,canada_ca;canada_dhh_reports;uk_official_history;wikipedia,39,1944-11-09,1944-12-18,0,
 US-ABN-017D,17th Airborne Division,US,division,Airborne,1944-12-27,1945-05-09,133,21,0,3,11,7,14,0.667,4,canada_ca;loc_12ag_situation_maps;us_army_cmh;wikipedia,26,1945-01-04,1945-01-30,0,
 US-ABN-018C,XVIII Airborne Corps,US,corps,Airborne,1944-08-25,1945-04-30,248,15,0,1,9,5,11,0.733,6,canada_ca;loc_12ag_situation_maps;uk_official_history;us_army_cmh;wikipedia;ww2byday_com,116,1944-08-25,1944-12-19,3,1944-09;1944-10;1944-11
 US-ABN-082D,82nd Airborne Division,US,division,Airborne,1944-06-06,1945-05-09,337,50,2,6,36,6,31,0.620,8,airborneinnormandy_com;canada_ca;cgsc_contentdm_oclc_org;loc_12ag_situation_maps;tracesofwar_com;us_army_cmh;wikipedia;ww2byday_com,30,1944-07-13,1944-08-12,0,

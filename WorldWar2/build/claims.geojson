@@ -305497,6 +305497,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4932,
+     51.679
+    ]
+   },
+   "properties": {
+    "claim_id": "C9119",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-19",
+    "place_id": "PL3542",
+    "location_name": "Bislich (Wesel), North Rhine-Westphalia (Rhine east bank between Xanten and Wesel)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Identified holding the Rhine between Xanten and Wesel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4538,
+     51.7376
+    ]
+   },
+   "properties": {
+    "claim_id": "C9121",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-19",
+    "place_id": "PL3480",
+    "location_name": "Haffen (Rees), North Rhine-Westphalia (Rhine east bank between Rees and Xanten)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Identified holding the Rhine between Rees and Xanten",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.4353,
      49.4811
     ]
@@ -311187,8 +311269,8 @@
     "location_date": "1945-03-23",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 288"
+    "reference_ids": "R671;R885;R002",
+    "source_locator": "R671: p. 288; R885: para 48"
    }
   },
   {
@@ -311310,8 +311392,8 @@
     "location_date": "1945-03-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R690;R002",
-    "source_locator": "R671: p. 289; R668: p. 535"
+    "reference_ids": "R671;R668;R690;R885;R002",
+    "source_locator": "R671: p. 289; R668: p. 535; R885: para 49"
    }
   },
   {
@@ -311392,8 +311474,8 @@
     "location_date": "1945-03-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R814;R822;R002",
-    "source_locator": "R668: p. 533; R814: German p.5 (Fold3 image 64); R822: German p.-1- (Fold3 page 79)"
+    "reference_ids": "R668;R814;R822;R885;R002",
+    "source_locator": "R668: p. 533; R814: German p.5 (Fold3 image 64); R822: German p.-1- (Fold3 page 79); R885: para 32"
    }
   },
   {
@@ -311433,8 +311515,8 @@
     "location_date": "1945-03-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R806;R814;R002",
-    "source_locator": "R668: p. 533; R806: English p.20, Sketch 6; R814: German pp.4-5 (Fold3 images 63-64)"
+    "reference_ids": "R668;R806;R814;R885;R002",
+    "source_locator": "R668: p. 533; R806: English p.20, Sketch 6; R814: German pp.4-5 (Fold3 images 63-64); R885: para 29"
    }
   },
   {
@@ -311474,8 +311556,8 @@
     "location_date": "1945-03-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R814;R002",
-    "source_locator": "R668: p. 533; R814: German pp.4-5 (Fold3 images 63-64)"
+    "reference_ids": "R668;R814;R885;R002",
+    "source_locator": "R668: p. 533; R814: German pp.4-5 (Fold3 images 63-64); R885: para 28"
    }
   },
   {
@@ -311729,6 +311811,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.45,
+     52.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C9105",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZ-116D",
+    "unit_name": "116th Panzer Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-23",
+    "place_id": "PL4050",
+    "location_name": "Ruurlo (Berkelland), Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Reserve behind the Rhine front, centred on Ruurlo",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R782",
+    "source_locator": "R885: para 32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.548,
      51.6913
     ]
@@ -311761,8 +311884,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R543;R549;R521;R668;R002",
-    "source_locator": "R543: p. 310-311; R668: p. 537"
+    "reference_ids": "R543;R549;R521;R668;R885;R002",
+    "source_locator": "R543: p. 310-311; R668: p. 537; R885: para 56"
    }
   },
   {
@@ -312048,8 +312171,8 @@
     "location_date": "1945-03-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 531, 537, 538"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: pp. 531, 537, 538; R885: paras 50, 61"
    }
   },
   {
@@ -312089,8 +312212,8 @@
     "location_date": "1945-03-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 289, 290, 291"
+    "reference_ids": "R671;R885;R002",
+    "source_locator": "R671: pp. 289, 290, 291; R885: para 49"
    }
   },
   {
@@ -312130,8 +312253,8 @@
     "location_date": "1945-03-24",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 290, 291; R668: pp. 532, 537"
+    "reference_ids": "R671;R668;R885;R002",
+    "source_locator": "R671: pp. 290, 291; R668: pp. 532, 537; R885: para 53"
    }
   },
   {
@@ -312499,8 +312622,8 @@
     "location_date": "1945-03-24",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 538"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: p. 538; R885: para 60"
    }
   },
   {
@@ -312836,6 +312959,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4371,
+     51.6889
+    ]
+   },
+   "properties": {
+    "claim_id": "C9106",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-006GB",
+    "unit_name": "6th Guards Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-03-24",
+    "place_id": "PL2696",
+    "location_name": "Wardt, North Rhine-Westphalia (Rhine bank near Wardt)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Moves to the Rhine bank near Wardt and rafts across to the airborne bridgehead that night",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 55"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.6822,
      50.1106
     ]
@@ -312950,8 +313114,8 @@
     "location_date": "1945-03-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 538"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: p. 538; R885: para 72"
    }
   },
   {
@@ -313854,6 +314018,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R308;R002",
     "source_locator": "R308: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3957,
+     51.7581
+    ]
+   },
+   "properties": {
+    "claim_id": "C9108",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-26",
+    "place_id": "PL0637",
+    "location_name": "Rees, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Rees cleared; the division links up with the 15th Division east of the Alter Rhein",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 75"
    }
   },
   {
@@ -317100,6 +317305,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.1667,
+     51.3667
+    ]
+   },
+   "properties": {
+    "claim_id": "C9107",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-AG-021G",
+    "unit_name": "21st Army Group",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-03-27",
+    "place_id": "PL0577",
+    "location_name": "Venlo, Limburg (tactical headquarters (Montgomery's command post))",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Field Marshal Montgomery's tactical headquarters at Venlo",
+    "operation_id": "OP-PLUNDER",
+    "operation": "Operation Plunder",
+    "operation_type": "operation",
+    "campaign": "Central Europe",
+    "operation_name": "Plunder",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R001",
+    "source_locator": "R885: para 80"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5875,
      51.0883
     ]
@@ -317460,8 +317706,8 @@
     "location_date": "1945-03-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 541, 542, 543"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: pp. 541, 542, 543; R885: para 85"
    }
   },
   {
@@ -317542,8 +317788,8 @@
     "location_date": "1945-03-28",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R673;R674;R002",
-    "source_locator": "R671: pp. 293, 294, 295"
+    "reference_ids": "R671;R673;R674;R885;R002",
+    "source_locator": "R671: pp. 293, 294, 295; R885: para 87"
    }
   },
   {
@@ -318207,6 +318453,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4614,
+     51.8344
+    ]
+   },
+   "properties": {
+    "claim_id": "C9109",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL3616",
+    "location_name": "Isselburg, North Rhine-Westphalia",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "The 153rd Brigade enters Isselburg; the division hands over east of Rees to the 3rd Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 87"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3957,
+     51.7581
+    ]
+   },
+   "properties": {
+    "claim_id": "C9111",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-003D",
+    "unit_name": "3rd Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-28",
+    "place_id": "PL0637",
+    "location_name": "Rees, North Rhine-Westphalia (east of Rees)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Takes over the 51st Division's commitments east of Rees",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-28",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 87"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.3621,
      49.6303
     ]
@@ -318444,8 +318772,8 @@
     "location_date": "1945-03-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R822;R002",
-    "source_locator": "R822: German p.-9- (Fold3 page 87)"
+    "reference_ids": "R822;R885;R002",
+    "source_locator": "R822: German p.-9- (Fold3 page 87); R885: para 106"
    }
   },
   {
@@ -318781,6 +319109,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8583,
+     51.8445
+    ]
+   },
+   "properties": {
+    "claim_id": "C9114",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-012C",
+    "unit_name": "XII Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-29",
+    "place_id": "PL3615",
+    "location_name": "Borken (Westfalen), North Rhine-Westphalia (leading troops at Borken and Rhede)",
+    "location_represents": "front_line_point",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Leading troops reach Borken and Rhede",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-29",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.15,
      50.6833
     ]
@@ -318895,8 +319264,8 @@
     "location_date": "1945-03-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 546"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: p. 546; R885: para 101"
    }
   },
   {
@@ -319355,6 +319724,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.488,
+     51.8638
+    ]
+   },
+   "properties": {
+    "claim_id": "C9110",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL3546",
+    "location_name": "Dinxperlo (Aalten), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Advances north-east from Anholt to Dinxperlo",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.488,
+     51.8638
+    ]
+   },
+   "properties": {
+    "claim_id": "C9113",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-30",
+    "place_id": "PL3546",
+    "location_name": "Dinxperlo (Aalten), Gelderland (south of Dinxperlo)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Assembles south of Dinxperlo ready for the drive on Aalten",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 103"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6149,
+     51.8383
+    ]
+   },
+   "properties": {
+    "claim_id": "C9115",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-03-30",
+    "place_id": "PL3543",
+    "location_name": "Bocholt, North Rhine-Westphalia (facing the XII Corps thrust on Bocholt)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Rearguard action against the XII Corps thrust on Bocholt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 106"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6111,
+     52.0417
+    ]
+   },
+   "properties": {
+    "claim_id": "C9120",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-007D",
+    "unit_name": "7th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-03-30",
+    "place_id": "PL4052",
+    "location_name": "Groenlo (Oost Gelre), Gelderland (falling back on Groenlo)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Forward line broken; apparently falling back on Groenlo",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R782",
+    "source_locator": "R885: para 107"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9167,
      50.2667
     ]
@@ -319715,8 +320248,8 @@
     "location_date": "1945-03-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 542"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: p. 542; R885: paras 119-121"
    }
   },
   {
@@ -320004,6 +320537,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R864;R002",
     "source_locator": "R864: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3869,
+     51.9135
+    ]
+   },
+   "properties": {
+    "claim_id": "C9112",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-31",
+    "place_id": "PL3479",
+    "location_name": "Silvolde (Oude IJsselstreek), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Seizes Silvolde and enters Varsseveld on the drive north from Anholt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: para 112"
    }
   },
   {
@@ -320412,8 +320986,8 @@
     "location_date": "1945-04-01",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 541, 546"
+    "reference_ids": "R668;R885;R002",
+    "source_locator": "R668: pp. 541, 546; R885: para 137"
    }
   },
   {
@@ -320453,8 +321027,8 @@
     "location_date": "1945-04-01",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 307"
+    "reference_ids": "R671;R885;R002",
+    "source_locator": "R671: p. 307; R885: para 141"
    }
   },
   {
@@ -321070,6 +321644,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R779;R176;R002",
     "source_locator": "R779: German p.8 (Fold3 image 8), Skizze 1 (Fold3 page 200); R176: table of 1945, February and April rows"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3615,
+     51.9212
+    ]
+   },
+   "properties": {
+    "claim_id": "C9116",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL3545",
+    "location_name": "Terborg (Oude IJsselstreek), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Black Watch clear Terborg; the Calgary Highlanders reach Doetinchem",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R002",
+    "source_locator": "R885: paras 126-129, 134"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2319,
+     51.9375
+    ]
+   },
+   "properties": {
+    "claim_id": "C9117",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-01",
+    "place_id": "PL4051",
+    "location_name": "Kilder (Montferland), Gelderland (858th Grenadier Regiment)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "858th Grenadier Regiment prisoners taken at Kilder",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R782",
+    "source_locator": "R885: para 133"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.45,
+     52.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C9118",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-008B",
+    "unit_name": "8th Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-04-01",
+    "place_id": "PL4050",
+    "location_name": "Ruurlo (Berkelland), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Clears Ruurlo and attacks Lochem with the 43rd Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R885;R782",
+    "source_locator": "R885: para 142"
    }
   },
   {

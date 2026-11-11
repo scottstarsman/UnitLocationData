@@ -10678,7 +10678,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -10818,7 +10818,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -11178,7 +11178,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 24
+    "claims_count": 26
    }
   },
   {
@@ -12278,7 +12278,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 7
+    "claims_count": 9
    }
   },
   {
@@ -12298,7 +12298,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nord",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -13538,7 +13538,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 6
+    "claims_count": 8
    }
   },
   {
@@ -13678,7 +13678,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -15458,7 +15458,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -21018,7 +21018,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -42038,7 +42038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 6
    }
   },
   {
@@ -48898,7 +48898,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -65378,7 +65378,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Flanders",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -68558,7 +68558,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Holland",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -70798,7 +70798,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -70998,7 +70998,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79999,6 +79999,146 @@
     "country": "DE",
     "region": "North Rhine-Westphalia",
     "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.725,
+     51.8092
+    ]
+   },
+   "properties": {
+    "place_id": "PL4017",
+    "name": "Wijchen, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8444,
+     51.765
+    ]
+   },
+   "properties": {
+    "place_id": "PL4018",
+    "name": "Heumen, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4173,
+     51.6963
+    ]
+   },
+   "properties": {
+    "place_id": "PL4019",
+    "name": "Hooge Heide (Berlicum), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4125,
+     51.8242
+    ]
+   },
+   "properties": {
+    "place_id": "PL4020",
+    "name": "Oud-Beijerland, Zuid-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Zuid-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6326,
+     51.572
+    ]
+   },
+   "properties": {
+    "place_id": "PL4021",
+    "name": "Etten (Etten-Leur), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.267,
+     51.7345
+    ]
+   },
+   "properties": {
+    "place_id": "PL4022",
+    "name": "Fort Crèvecoeur ('s-Hertogenbosch), Noord-Brabant",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5955,
+     51.3921
+    ]
+   },
+   "properties": {
+    "place_id": "PL4023",
+    "name": "Wuustwezel (Westwezel), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
+    "claims_count": 1
    }
   }
  ]

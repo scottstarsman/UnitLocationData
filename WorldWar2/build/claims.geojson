@@ -148417,8 +148417,8 @@
     "location_date": "1944-11-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: pp. 428, 430"
+    "reference_ids": "R668;R882;R001",
+    "source_locator": "R668: pp. 428, 430; R882: para 23"
    }
   },
   {
@@ -148458,8 +148458,8 @@
     "location_date": "1944-11-09",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 159, 160; R668: pp. 428, 430"
+    "reference_ids": "R671;R668;R882;R002",
+    "source_locator": "R671: pp. 159, 160; R668: pp. 428, 430; R882: paras 23, 63"
    }
   },
   {
@@ -148499,8 +148499,8 @@
     "location_date": "1944-11-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 424"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 424; R882: para 27"
    }
   },
   {
@@ -148665,6 +148665,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R879;R002",
     "source_locator": "R879: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6326,
+     51.572
+    ]
+   },
+   "properties": {
+    "claim_id": "C9039",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-TNK-034B",
+    "unit_name": "34th Tank Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-09",
+    "place_id": "PL4021",
+    "location_name": "Etten (Etten-Leur), Noord-Brabant",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "In I British Corps reserve at Etten, between Roosendaal and Breda",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: paras 27, 49"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9043",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-09",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Contains the Dunkirk garrison under army command",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 24, 59"
    }
   },
   {
@@ -149155,8 +149237,8 @@
     "location_date": "1944-11-10",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 428, 430"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: pp. 428, 430; R882: paras 25, 39, 74"
    }
   },
   {
@@ -149328,6 +149410,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7645,
+     51.3844
+    ]
+   },
+   "properties": {
+    "claim_id": "C9027",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-11-10",
+    "place_id": "PL2117",
+    "location_name": "Heusden, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Moves into the line on the Maas between Maren and Raamsdonk, relieving the 7th Armoured Division and 11th Hussars",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.1676,
      49.3579
     ]
@@ -149362,6 +149485,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R419;R002",
     "source_locator": "R419: p. 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.725,
+     51.8092
+    ]
+   },
+   "properties": {
+    "claim_id": "C9022",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-11",
+    "place_id": "PL4017",
+    "location_name": "Wijchen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Takes over the Western Approaches of the Nijmegen bridgehead from the 8th Armoured Brigade",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 25"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5955,
+     51.3921
+    ]
+   },
+   "properties": {
+    "claim_id": "C9042",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-11-11",
+    "place_id": "PL4023",
+    "location_name": "Wuustwezel (Westwezel), Antwerp",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Ordered to concentrate at Westwezel before relieving a 52nd Division brigade on Walcheren",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-11",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 44"
    }
   },
   {
@@ -149729,8 +149934,8 @@
     "location_date": "1944-11-13",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: p. 430"
+    "reference_ids": "R668;R882;R001",
+    "source_locator": "R668: p. 430; R882: para 25"
    }
   },
   {
@@ -150016,8 +150221,8 @@
     "location_date": "1944-11-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944; R882: paras 44, 46"
    }
   },
   {
@@ -150413,7 +150618,7 @@
     "location_name": "Waalwijk, Noord-Brabant (near Waalwijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -150426,8 +150631,8 @@
     "location_date": "1944-11-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944; R882: para 27"
    }
   },
   {
@@ -150700,7 +150905,7 @@
     "location_name": "Linden, Noord-Brabant (near Linden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -150713,8 +150918,8 @@
     "location_date": "1944-11-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000163 situation 1200 hrs 14 November 1944; R882: paras 25, 39, 64, 74-75, Appx A"
    }
   },
   {
@@ -157651,6 +157856,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1719,
+     52.2241
+    ]
+   },
+   "properties": {
+    "claim_id": "C9047",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00HG",
+    "unit_name": "Army Group H (Heeresgruppe H)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL3443",
+    "location_name": "Hilversum, Noord-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Army Group H (Student) headquarters believed near Hilversum",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 54, 101"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.05,
      50.9
     ]
@@ -159528,8 +159774,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: paras 54-55"
    }
   },
   {
@@ -159651,8 +159897,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: para 55"
    }
   },
   {
@@ -159720,7 +159966,7 @@
     "location_name": "Oudheusden, Noord-Brabant (near Oudheusden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -159733,8 +159979,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: paras 27, 49"
    }
   },
   {
@@ -159856,8 +160102,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R782",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R782",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: paras 44, 46"
    }
   },
   {
@@ -159966,7 +160212,7 @@
     "location_name": "Zetten, Gelderland (near Zetten)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "101st Airborne Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -159979,8 +160225,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: para 39"
    }
   },
   {
@@ -160007,7 +160253,7 @@
     "location_name": "Driel, Overbetuwe, Gelderland (near Driel)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "50th (Northumbrian) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -160020,8 +160266,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: paras 23, 39, 43, 63"
    }
   },
   {
@@ -160089,7 +160335,7 @@
     "location_name": "Nijmegen, Gelderland (near Nijmegen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -160102,8 +160348,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R001",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R001",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -160130,7 +160376,7 @@
     "location_name": "Berg en Dal, Gelderland (near Berg en Dal)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -160143,8 +160389,8 @@
     "location_date": "1944-11-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000170 situation 1200 hrs 21 November 1944; R882: paras 25, 39, 64, 74-75, Appx A"
    }
   },
   {
@@ -165646,6 +165892,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.725,
+     51.8092
+    ]
+   },
+   "properties": {
+    "claim_id": "C9018",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-11-22",
+    "place_id": "PL4017",
+    "location_name": "Wijchen, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Main headquarters at Wijchen; corps holds the Nijmegen salient from the Maas at Middelaar to the Waal",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 39, Appx A"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.0899,
      48.9404
     ]
@@ -166220,6 +166507,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.4125,
+     51.8242
+    ]
+   },
+   "properties": {
+    "claim_id": "C9045",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-24",
+    "place_id": "PL4020",
+    "location_name": "Oud-Beijerland, Zuid-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "Divisional headquarters reported back at its former location, Oud-Beijerland",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 55"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5912,
      49.3415
     ]
@@ -166539,8 +166867,8 @@
     "location_date": "1944-11-25",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R808;R002",
-    "source_locator": "R808: German p.4, English p.4"
+    "reference_ids": "R808;R882;R002",
+    "source_locator": "R808: German p.4, English p.4; R882: paras 39, 43"
    }
   },
   {
@@ -166917,6 +167245,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8444,
+     51.765
+    ]
+   },
+   "properties": {
+    "claim_id": "C9023",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-25",
+    "place_id": "PL4018",
+    "location_name": "Heumen, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Corps reserve: one regiment east of the Maas-Waal canal, the rest west of it near the Grave-Nijmegen road",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 37"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4561,
+     51.5331
+    ]
+   },
+   "properties": {
+    "claim_id": "C9040",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-033B",
+    "unit_name": "33rd Armoured Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-25",
+    "place_id": "PL1064",
+    "location_name": "Roosendaal, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Replaces the 34th Tank Brigade in I British Corps reserve at Etten, with headquarters at Roosendaal",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 49"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4217,
      49.8117
     ]
@@ -167154,8 +167564,8 @@
     "location_date": "1944-11-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R652;R770;R002",
-    "source_locator": "R652: p. 379, 386; R770: pp. 77-79"
+    "reference_ids": "R652;R770;R882;R002",
+    "source_locator": "R652: p. 379, 386; R770: pp. 77-79; R882: para 55"
    }
   },
   {
@@ -167523,8 +167933,8 @@
     "location_date": "1944-11-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 368"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 368; R882: paras 24, 49, 59"
    }
   },
   {
@@ -167564,8 +167974,8 @@
     "location_date": "1944-11-27",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R606;R668;R002",
-    "source_locator": "R606: p. 205; R668: p. 430"
+    "reference_ids": "R606;R668;R882;R002",
+    "source_locator": "R606: p. 205; R668: p. 430; R882: para 65"
    }
   },
   {
@@ -167771,6 +168181,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R820;R002",
     "source_locator": "R820: German p.15 (Fold3 page 182)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C9041",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-11-27",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Part of the Walcheren garrison under the 4th Special Service Brigade",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-27",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R001",
+    "source_locator": "R882: paras 44, 49"
    }
   },
   {
@@ -168343,8 +168794,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944; R882: paras 46, 49"
    }
   },
   {
@@ -168535,7 +168986,7 @@
     "location_name": "Wely (Dodewaard), Gelderland (near Wely (Dodewaard))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "51st (Highland) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -168548,8 +168999,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944; R882: para 65"
    }
   },
   {
@@ -168576,7 +169027,7 @@
     "location_name": "Elst, Overbetuwe, Gelderland (near Elst)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "50th (Northumbrian) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -168589,8 +169040,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944; R882: paras 23, 39, 43, 63"
    }
   },
   {
@@ -168617,7 +169068,7 @@
     "location_name": "Wezel (Wijchen), Gelderland (near Wezel (Wijchen))",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "II Canadian Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -168630,8 +169081,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R782",
-    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944"
+    "reference_ids": "R781;R882;R782",
+    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944; R882: Appx A (para 39 order of 22 Nov)"
    }
   },
   {
@@ -168658,7 +169109,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -168671,8 +169122,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -168699,7 +169150,7 @@
     "location_name": "Malden, Gelderland (near Malden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -168712,8 +169163,8 @@
     "location_date": "1944-11-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000177 situation 1200 hrs 28 November 1944; R882: paras 25, 39, 64, 74-75, Appx A"
    }
   },
   {
@@ -174124,8 +174575,8 @@
     "location_date": "1944-11-30",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R001",
-    "source_locator": "R668: p. 430"
+    "reference_ids": "R668;R882;R001",
+    "source_locator": "R668: p. 430; R882: para 49"
    }
   },
   {
@@ -174789,6 +175240,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8453,
+     51.9188
+    ]
+   },
+   "properties": {
+    "claim_id": "C9035",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-30",
+    "place_id": "PL0783",
+    "location_name": "Elst, Overbetuwe, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Takes the 50th Division's place in the right (C) sector of the Nijmegen island",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-30",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 43, 65"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3658,
      49.1401
     ]
@@ -175110,6 +175602,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R299;R002",
     "source_locator": "R299: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7645,
+     51.3844
+    ]
+   },
+   "properties": {
+    "claim_id": "C9028",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-01",
+    "place_id": "PL2117",
+    "location_name": "Heusden, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Returns to its former positions on the Maas in the Lith-Raamsdonk sector",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 78"
    }
   },
   {
@@ -175969,8 +176502,8 @@
     "location_date": "1944-12-04",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R808;R002",
-    "source_locator": "R668: pp. 430, 433; R808: German p.4, English p.4"
+    "reference_ids": "R668;R808;R882;R002",
+    "source_locator": "R668: pp. 430, 433; R808: German p.4, English p.4; R882: paras 69, 71"
    }
   },
   {
@@ -176299,6 +176832,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R865;R002",
     "source_locator": "R865: p. 552"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9265,
+     51.8865
+    ]
+   },
+   "properties": {
+    "claim_id": "C9044",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-006D",
+    "unit_name": "6th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-12-04",
+    "place_id": "PL3565",
+    "location_name": "Haalderen (Lingewaard), Gelderland",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "II and III Battalions of the 16th Parachute Regiment, with a company of the divisional tank battalion, attack the 49th Division near Haalderen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 69"
    }
   },
   {
@@ -177022,7 +177596,7 @@
     "location_name": "Wezel (Wijchen), Gelderland (near Wezel (Wijchen))",
     "location_represents": "headquarters",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "II Canadian Corps shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -177035,8 +177609,8 @@
     "location_date": "1944-12-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R782",
-    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944"
+    "reference_ids": "R781;R882;R782",
+    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944; R882: Appx A (para 39 order of 22 Nov)"
    }
   },
   {
@@ -177063,7 +177637,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -177076,8 +177650,8 @@
     "location_date": "1944-12-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -177104,7 +177678,7 @@
     "location_name": "Malden, Gelderland (near Malden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -177117,8 +177691,8 @@
     "location_date": "1944-12-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000184 situation 1200 hrs 5 December 1944; R882: paras 25, 39, 64, 74-75, Appx A"
    }
   },
   {
@@ -181627,8 +182201,8 @@
     "location_date": "1944-12-05",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 438"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 438; R882: paras 78, 80"
    }
   },
   {
@@ -182087,6 +182661,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4173,
+     51.6963
+    ]
+   },
+   "properties": {
+    "claim_id": "C9036",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-06",
+    "place_id": "PL4019",
+    "location_name": "Hooge Heide (Berlicum), Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Divisional headquarters at Hooge Heide; division concentrated between St Michielsgestel and Dinther after leaving the island",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 70"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9305,
      51.7741
     ]
@@ -182119,8 +182734,8 @@
     "location_date": "1944-12-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 435"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 435; R882: paras 25, 39, 74"
    }
   },
   {
@@ -182613,6 +183228,47 @@
     "location_temporal_offset_days": -1,
     "reference_ids": "R368;R001",
     "source_locator": "R368: Assignment and Attachment to Higher Units, row 9 Dec 44, and Command Posts, row 8 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.267,
+     51.7345
+    ]
+   },
+   "properties": {
+    "claim_id": "C9029",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-09",
+    "place_id": "PL4022",
+    "location_name": "Fort Crèvecoeur ('s-Hertogenbosch), Noord-Brabant (Lake Superior Regiment (Motor))",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Lake Superior Regiment (Motor) occupies Fort Crèvecoeur after the garrison withdraws",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 81"
    }
   },
   {
@@ -183377,7 +184033,7 @@
     "location_name": "Waalwijk, Noord-Brabant (near Waalwijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -183390,8 +184046,8 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944; R882: paras 78, 81-82"
    }
   },
   {
@@ -183582,7 +184238,7 @@
     "location_name": "Sint-Michielsgestel, Noord-Brabant (near Sint-Michielsgestel)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "51st (Highland) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -183595,8 +184251,8 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944; R882: para 70"
    }
   },
   {
@@ -183664,7 +184320,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -183677,8 +184333,8 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -183705,7 +184361,7 @@
     "location_name": "Malden, Gelderland (near Malden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -183718,8 +184374,8 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944; R882: paras 25, 39, 64, 74-75, Appx A"
    }
   },
   {
@@ -184115,7 +184771,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -184128,8 +184784,8 @@
     "location_date": "1944-12-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000191 situation 1200 hrs 12 December 1944; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -188852,6 +189508,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3158,
+     51.5891
+    ]
+   },
+   "properties": {
+    "claim_id": "C9037",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-030C",
+    "unit_name": "XXX Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-13",
+    "place_id": "PL0693",
+    "location_name": "Boxtel, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Corps headquarters comes under First Canadian Army and sets up at Boxtel for Veritable planning",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 87, 95"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.26,
      48.77
     ]
@@ -193116,6 +193813,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.93,
+     51.3289
+    ]
+   },
+   "properties": {
+    "claim_id": "C9038",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-17",
+    "place_id": "PL3284",
+    "location_name": "Turnhout, Antwerp",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Divisional headquarters, administrative group and two brigade groups concentrated at Turnhout and Herentals",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 93"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4351,
      49.8408
     ]
@@ -194365,7 +195103,7 @@
     "location_name": "Waalwijk, Noord-Brabant (near Waalwijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -194378,8 +195116,8 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944; R882: paras 78, 81-82"
    }
   },
   {
@@ -194652,7 +195390,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -194665,8 +195403,8 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -194693,7 +195431,7 @@
     "location_name": "Malden, Gelderland (near Malden)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -194706,8 +195444,8 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944; R882: paras 25, 39, 64, 74-75, Appx A"
    }
   },
   {
@@ -195144,7 +195882,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -195157,8 +195895,8 @@
     "location_date": "1944-12-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000198 situation 1200 hrs 19 December 1944; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -199995,8 +200733,8 @@
     "location_date": "1944-12-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R708;R002",
-    "source_locator": "R708: p. 557"
+    "reference_ids": "R708;R882;R002",
+    "source_locator": "R708: p. 557; R882: para 87"
    }
   },
   {
@@ -202045,8 +202783,8 @@
     "location_date": "1944-12-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 447"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 447; R882: Appx C (map)"
    }
   },
   {
@@ -202334,6 +203072,47 @@
     "location_temporal_offset_days": -6,
     "reference_ids": "R368;R002",
     "source_locator": "R368: Assignment and Attachment to Higher Units, row 21 Dec 44, and Command Posts, row 15 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7645,
+     51.3844
+    ]
+   },
+   "properties": {
+    "claim_id": "C9033",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-21",
+    "place_id": "PL2117",
+    "location_name": "Heusden, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Takes over the Maas line from Lith and Bokhoven to Heusden and Waspik",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 97"
    }
   },
   {
@@ -203398,8 +204177,8 @@
     "location_date": "1944-12-23",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 443"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 443; R882: para 98"
    }
   },
   {
@@ -204965,6 +205744,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C9030",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant (south and east of Breda, behind the Wilhelmina canal)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Moves into the area south and east of Breda under I British Corps, behind the Wilhelmina canal facing Dongen and Oosterhout",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 111, 127, Appx C (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -206132,7 +206952,7 @@
     "location_name": "Vlijmen, Noord-Brabant (near Vlijmen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "1st Polish Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -206145,8 +206965,8 @@
     "location_date": "1944-12-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944; R882: para 97"
    }
   },
   {
@@ -206337,7 +207157,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -206350,8 +207170,8 @@
     "location_date": "1944-12-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -206391,8 +207211,8 @@
     "location_date": "1944-12-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944; R882: para 109"
    }
   },
   {
@@ -206829,7 +207649,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -206842,8 +207662,8 @@
     "location_date": "1944-12-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000205 situation 1200 hrs 26 December 1944; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -211525,6 +212345,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2057,
+     51.8001
+    ]
+   },
+   "properties": {
+    "claim_id": "C9046",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-COR-088C",
+    "unit_name": "LXXXVIII Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-12-27",
+    "place_id": "PL3555",
+    "location_name": "Gameren (Zaltbommel), Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Corps headquarters (Reinhardt) reported at Gameren in the Bommelerwaard",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 114"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5937,
      50.2846
     ]
@@ -212172,8 +213033,8 @@
     "location_date": "1944-12-29",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 443"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 443; R882: paras 119, 130, 139"
    }
   },
   {
@@ -212336,8 +213197,8 @@
     "location_date": "1944-12-29",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 443"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 443; R882: para 119"
    }
   },
   {
@@ -212500,8 +213361,8 @@
     "location_date": "1944-12-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R808;R002",
-    "source_locator": "R668: p. 452; R671: p. 239; R808: German p.8, English p.8"
+    "reference_ids": "R668;R671;R808;R882;R002",
+    "source_locator": "R668: p. 452; R671: p. 239; R808: German p.8, English p.8; R882: paras 127, 135"
    }
   },
   {
@@ -212910,8 +213771,8 @@
     "location_date": "1944-12-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R807;R808;R002",
-    "source_locator": "R668: p. 454; R807: English p.18, German p.20; R808: German p.8, English p.8, Anlage 3"
+    "reference_ids": "R668;R807;R808;R882;R002",
+    "source_locator": "R668: p. 454; R807: English p.18, German p.20; R808: German p.8, English p.8, Anlage 3; R882: paras 120, 127"
    }
   },
   {
@@ -213288,6 +214149,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.725,
+     51.8092
+    ]
+   },
+   "properties": {
+    "claim_id": "C9019",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-002C",
+    "unit_name": "II Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL4017",
+    "location_name": "Wijchen, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Corps headquarters flag at Wijchen on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: Appx C (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C9020",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Army headquarters flag at Tilburg on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R001",
+    "source_locator": "R882: Appx C (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7833,
      50.1333
     ]
@@ -213553,7 +214496,7 @@
     "location_name": "Bavel, Noord-Brabant (near Bavel)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -213566,8 +214509,8 @@
     "location_date": "1945-01-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945; R882: paras 111, 127, 132, Appx C (map)"
    }
   },
   {
@@ -213635,7 +214578,7 @@
     "location_name": "Drunen, Noord-Brabant (near Drunen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "1st Polish Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -213648,8 +214591,8 @@
     "location_date": "1945-01-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945; R882: para 127, Appx C (map)"
    }
   },
   {
@@ -213840,7 +214783,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -213853,8 +214796,8 @@
     "location_date": "1945-01-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -214045,7 +214988,7 @@
     "location_name": "Castenray, Limburg (near Castenray)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -214058,8 +215001,8 @@
     "location_date": "1945-01-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945; R882: paras 123, 130, 138, Appx C (map)"
    }
   },
   {
@@ -214291,7 +215234,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -214304,8 +215247,8 @@
     "location_date": "1945-01-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000212 situation 1200 hrs 2 January 1945; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -218413,6 +219356,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.725,
+     51.8092
+    ]
+   },
+   "properties": {
+    "claim_id": "C9024",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-01-02",
+    "place_id": "PL4017",
+    "location_name": "Wijchen, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Brigade widely scattered: headquarters near II Canadian Corps headquarters, 10th Armoured Regiment at Grave, 6th Armoured Regiment north of Nijmegen as counter-attack force",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R782",
+    "source_locator": "R882: para 139, Appx C (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5842,
      49.9622
     ]
@@ -219962,8 +220946,8 @@
     "location_date": "1945-01-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R808;R002",
-    "source_locator": "R668: p. 452; R671: p. 239; R808: German p.8, English p.8"
+    "reference_ids": "R668;R671;R808;R882;R002",
+    "source_locator": "R668: p. 452; R671: p. 239; R808: German p.8, English p.8; R882: paras 127, 135"
    }
   },
   {
@@ -220715,8 +221699,8 @@
    },
    "properties": {
     "claim_id": "C5037",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G119",
+    "claim_status": "alternate",
     "unit_id": "CAN-ARM-004D",
     "unit_name": "4th Canadian Armoured Division",
     "nationality": "Canada",
@@ -221015,7 +221999,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -221028,8 +222012,8 @@
     "location_date": "1945-01-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000219 situation 1200 hrs 9 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000219 situation 1200 hrs 9 January 1945; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -221220,7 +222204,7 @@
     "location_name": "Castenray, Limburg (near Castenray)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -221233,8 +222217,8 @@
     "location_date": "1945-01-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000219 situation 1200 hrs 9 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000219 situation 1200 hrs 9 January 1945; R882: paras 123, 130, 138, Appx C (map)"
    }
   },
   {
@@ -221425,7 +222409,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -221438,8 +222422,8 @@
     "location_date": "1945-01-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000219 situation 1200 hrs 9 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000219 situation 1200 hrs 9 January 1945; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -225629,6 +226613,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2091,
+     51.6943
+    ]
+   },
+   "properties": {
+    "claim_id": "C9031",
+    "conflict_group_id": "G119",
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-01-09",
+    "place_id": "PL2460",
+    "location_name": "Vlijmen, Noord-Brabant",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Takes over the Maas front north of 's-Hertogenbosch and from Waalwijk to Heusden from the 1st Polish Armoured Division",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 136, 143"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.8085,
      50.0587
     ]
@@ -226073,6 +227098,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: pp. 299, 342"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     51.7741
+    ]
+   },
+   "properties": {
+    "claim_id": "C9025",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-12",
+    "place_id": "PL0686",
+    "location_name": "Groesbeek, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Resumes responsibility for the Groesbeek sector (brigades in position 2030 hours)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: paras 150, 152"
    }
   },
   {
@@ -227083,7 +228149,7 @@
     "location_name": "Vlijmen, Noord-Brabant (near Vlijmen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -227096,8 +228162,8 @@
     "location_date": "1945-01-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945; R882: paras 136, 143, 162-163, 198, Appx E (map)"
    }
   },
   {
@@ -227178,8 +228244,8 @@
     "location_date": "1945-01-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945; R882: paras 145, 161, 177, Appx E (map)"
    }
   },
   {
@@ -227329,7 +228395,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -227342,8 +228408,8 @@
     "location_date": "1945-01-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -227383,8 +228449,8 @@
     "location_date": "1945-01-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945; R882: paras 152, 165, 188"
    }
   },
   {
@@ -227739,7 +228805,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -227752,8 +228818,8 @@
     "location_date": "1945-01-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000226 situation 1200 hrs 16 January 1945; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -232713,8 +233779,8 @@
     "location_date": "1945-01-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 240, 241"
+    "reference_ids": "R671;R882;R002",
+    "source_locator": "R671: pp. 240, 241; R882: para 164"
    }
   },
   {
@@ -233082,8 +234148,8 @@
     "location_date": "1945-01-19",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 4, 159, 160, 238, 240, 241; R668: p. 443"
+    "reference_ids": "R671;R668;R882;R002",
+    "source_locator": "R671: pp. 4, 159, 160, 238, 240, 241; R668: p. 443; R882: para 167"
    }
   },
   {
@@ -233779,8 +234845,8 @@
     "location_date": "1945-01-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R809;R002",
-    "source_locator": "R809: German p.19, English p.20"
+    "reference_ids": "R809;R882;R002",
+    "source_locator": "R809: German p.19, English p.20; R882: para 164"
    }
   },
   {
@@ -233822,6 +234888,47 @@
     "location_temporal_offset_days": -3,
     "reference_ids": "R345;R002",
     "source_locator": "R345: Assignment and Attachment to Higher Units, row 20 Jan 45, and Command Posts, row 17 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     51.7741
+    ]
+   },
+   "properties": {
+    "claim_id": "C9026",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL0686",
+    "location_name": "Groesbeek, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Groesbeek sector: 4th Brigade in the north half, 6th on the left, 5th in reserve; enemy forming up near Katerbosch and Middelaar",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: para 165"
    }
   },
   {
@@ -234463,7 +235570,7 @@
     "location_name": "Vlijmen, Noord-Brabant (near Vlijmen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -234476,8 +235583,8 @@
     "location_date": "1945-01-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945; R882: paras 136, 143, 162-163, 198, Appx E (map)"
    }
   },
   {
@@ -234558,8 +235665,8 @@
     "location_date": "1945-01-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945; R882: paras 145, 161, 177, Appx E (map)"
    }
   },
   {
@@ -234709,7 +235816,7 @@
     "location_name": "Nijmegen-Zuid (Nijmegen), Gelderland (near Nijmegen-Zuid (Nijmegen))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "3rd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -234722,8 +235829,8 @@
     "location_date": "1945-01-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945; R882: paras 25, 39, 109, 129, 150, 166, 188, Appx C (map)"
    }
   },
   {
@@ -235119,7 +236226,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -235132,8 +236239,8 @@
     "location_date": "1945-01-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000233 situation 1200 hrs 23 January 1945; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -239929,8 +241036,8 @@
     "location_date": "1945-01-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 452, 453"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: pp. 452, 453; R882: paras 180-185"
    }
   },
   {
@@ -241023,7 +242130,7 @@
     "location_name": "Drunen, Noord-Brabant (near Drunen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -241036,8 +242143,8 @@
     "location_date": "1945-01-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000240 situation 1200 hrs 30 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000240 situation 1200 hrs 30 January 1945; R882: paras 136, 143, 162-163, 198, Appx E (map)"
    }
   },
   {
@@ -241118,8 +242225,8 @@
     "location_date": "1945-01-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000240 situation 1200 hrs 30 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000240 situation 1200 hrs 30 January 1945; R882: paras 145, 161, 177, Appx E (map)"
    }
   },
   {
@@ -241679,7 +242786,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -241692,8 +242799,8 @@
     "location_date": "1945-01-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000240 situation 1200 hrs 30 January 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000240 situation 1200 hrs 30 January 1945; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {
@@ -246776,8 +247883,8 @@
     "location_date": "1945-01-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 454"
+    "reference_ids": "R668;R882;R002",
+    "source_locator": "R668: p. 454; R882: paras 180-185"
    }
   },
   {
@@ -247434,6 +248541,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R819;R002",
     "source_locator": "R819: German pp.2 and 5 (Fold3 images 26 and 29, English pp.2 and 5, Fold3 images 4 and 7)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C9021",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARMY-001A",
+    "unit_name": "First Canadian Army",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Army headquarters flag at Tilburg on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R001",
+    "source_locator": "R882: Appx E (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2368,
+     51.6512
+    ]
+   },
+   "properties": {
+    "claim_id": "C9032",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-01",
+    "place_id": "PL0542",
+    "location_name": "Vught, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Divisional headquarters flag at Vught on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: Appx E (map)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.776,
+     51.5888
+    ]
+   },
+   "properties": {
+    "claim_id": "C9034",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-02-01",
+    "place_id": "PL0623",
+    "location_name": "Breda, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Divisional headquarters flag at Breda (Ginneken) on the First Canadian Army disposition map",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R882;R002",
+    "source_locator": "R882: Appx E (map)"
    }
   },
   {
@@ -249223,7 +250453,7 @@
     "location_name": "Drunen, Noord-Brabant (near Drunen)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -249236,8 +250466,8 @@
     "location_date": "1945-02-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945; R882: paras 136, 143, 162-163, 198, Appx E (map)"
    }
   },
   {
@@ -249318,8 +250548,8 @@
     "location_date": "1945-02-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945; R882: paras 145, 161, 177, Appx E (map)"
    }
   },
   {
@@ -249482,8 +250712,8 @@
     "location_date": "1945-02-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945; R882: paras 188, 201, Appx E (map)"
    }
   },
   {
@@ -249523,8 +250753,8 @@
     "location_date": "1945-02-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945; R882: paras 152, 165, 188"
    }
   },
   {
@@ -249879,7 +251109,7 @@
     "location_name": "Slijk-Ewijk, Gelderland, Netherlands (near Slijk-Ewijk)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "49th (West Riding) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -249892,8 +251122,8 @@
     "location_date": "1945-02-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945"
+    "reference_ids": "R781;R882;R002",
+    "source_locator": "R781: sheet cs000247 situation 1200 hrs 6 February 1945; R882: paras 43, 69, 71, 96, 128, 164, Appx C, E (maps)"
    }
   },
   {

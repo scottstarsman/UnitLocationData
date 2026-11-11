@@ -303781,8 +303781,8 @@
    },
    "properties": {
     "claim_id": "C7578",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G120",
+    "claim_status": "alternate",
     "unit_id": "CAN-COR-001C",
     "unit_name": "I Canadian Corps",
     "nationality": "Canada",
@@ -304191,7 +304191,7 @@
    },
    "properties": {
     "claim_id": "C9055",
-    "conflict_group_id": null,
+    "conflict_group_id": "G120",
     "claim_status": "preferred",
     "unit_id": "CAN-COR-001C",
     "unit_name": "I Canadian Corps",
@@ -311681,6 +311681,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R814;R293;R002",
     "source_locator": "R814: Fold3 p. 19 (printed p. 5), German original Fold3 p. 344 line of the same list; R293: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "claim_id": "C9073",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-001D",
+    "unit_name": "1st Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-23",
+    "place_id": "PL0745",
+    "location_name": "Brussels, Belgium (outside Brussels (station typed \"Itogon\"))",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Arrives from Italy and is stationed outside Brussels to re-equip",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-23",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R883;R002",
+    "source_locator": "R883: para 32"
    }
   },
   {

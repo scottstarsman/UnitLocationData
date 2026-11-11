@@ -71009,8 +71009,8 @@
     "location_date": "1944-09-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 300; R889: para 150"
+    "reference_ids": "R668;R889;R890;R002",
+    "source_locator": "R668: p. 300; R889: para 150; R890: para 7"
    }
   },
   {
@@ -76298,8 +76298,8 @@
     "location_date": "1944-09-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 345; R889: para 183"
+    "reference_ids": "R668;R889;R890;R002",
+    "source_locator": "R668: p. 345; R889: para 183; R890: paras 91-92"
    }
   },
   {
@@ -76831,8 +76831,8 @@
     "location_date": "1944-09-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 326; R889: para 183"
+    "reference_ids": "R668;R889;R890;R002",
+    "source_locator": "R668: p. 326; R889: para 183; R890: para 41"
    }
   },
   {
@@ -79701,8 +79701,8 @@
     "location_date": "1944-09-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R001;R668",
-    "source_locator": "R671: pp. 7, 14; R668: p. 331"
+    "reference_ids": "R671;R668;R890;R001",
+    "source_locator": "R671: pp. 7, 14; R668: p. 331; R890: paras 20-27"
    }
   },
   {
@@ -80029,8 +80029,8 @@
     "location_date": "1944-09-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R001",
-    "source_locator": "R671: p. 14"
+    "reference_ids": "R671;R890;R001",
+    "source_locator": "R671: p. 14; R890: paras 13, 30"
    }
   },
   {
@@ -80072,6 +80072,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R002",
     "source_locator": "R889: paras 196-197"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1,
+     49.49
+    ]
+   },
+   "properties": {
+    "claim_id": "C9193",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-COR-001C",
+    "unit_name": "I Corps",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1944-09-10",
+    "place_id": "PL0169",
+    "location_name": "Le Havre",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Opens Operation Astonia, the assault on Le Havre, with the 49th and 51st Divisions",
+    "operation_id": "OP-ASTONIA",
+    "operation": "Operation Astonia",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Astonia",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R001",
+    "source_locator": "R890: paras 8, 19-24"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "claim_id": "C9194",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-10",
+    "place_id": "PL0677",
+    "location_name": "Boulogne-sur-Mer, Pas-de-Calais (investing Boulogne (Hardelot to the Gris Nez high ground))",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Investing Boulogne: brigades round the city from Hardelot to the Gris Nez high ground",
+    "operation_id": "OP-PURSUIT",
+    "operation": "Pursuit across France",
+    "operation_type": "phase",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": "Pursuit",
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: paras 41, 48"
    }
   },
   {
@@ -80644,8 +80726,8 @@
     "location_date": "1944-09-11",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R001;R668",
-    "source_locator": "R671: pp. 14, 15; R668: p. 331"
+    "reference_ids": "R671;R668;R890;R001",
+    "source_locator": "R671: pp. 14, 15; R668: p. 331; R890: paras 24, 28"
    }
   },
   {
@@ -81464,8 +81546,8 @@
     "location_date": "1944-09-12",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R889;R001",
-    "source_locator": "R671: p. 15; R668: p. 331; R889: para 239"
+    "reference_ids": "R671;R668;R889;R890;R001",
+    "source_locator": "R671: p. 15; R668: p. 331; R889: para 239; R890: para 29"
    }
   },
   {
@@ -81628,8 +81710,8 @@
     "location_date": "1944-09-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000099 situation 1200 hrs 12 September 1944"
+    "reference_ids": "R781;R890;R002",
+    "source_locator": "R781: sheet cs000099 situation 1200 hrs 12 September 1944; R890: paras 45, 51"
    }
   },
   {
@@ -84498,8 +84580,8 @@
     "location_date": "1944-09-13",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R066;R001",
-    "source_locator": "R066: narrative"
+    "reference_ids": "R066;R890;R001",
+    "source_locator": "R066: narrative; R890: para 28"
    }
   },
   {
@@ -87122,8 +87204,8 @@
     "location_date": "1944-09-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 365; R889: paras 219, 254"
+    "reference_ids": "R668;R889;R890;R002",
+    "source_locator": "R668: p. 365; R889: paras 219, 254; R890: para 138"
    }
   },
   {
@@ -87163,8 +87245,8 @@
     "location_date": "1944-09-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 69; R668: pp. 365, 368"
+    "reference_ids": "R671;R668;R890;R002",
+    "source_locator": "R671: p. 69; R668: pp. 365, 368; R890: paras 137, 140"
    }
   },
   {
@@ -87411,6 +87493,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R839;R002",
     "source_locator": "R839: German p.44 (Fold3 page 52)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9200",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-226D",
+    "unit_name": "226th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-16",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (elements in the Dunkirk garrison)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Elements in the Dunkirk garrison, identified by prisoners (intelligence)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 139, Appendix \"D\""
    }
   },
   {
@@ -88106,8 +88229,8 @@
     "location_date": "1944-09-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 339, 340"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: pp. 339, 340; R890: paras 54-67"
    }
   },
   {
@@ -88393,8 +88516,8 @@
     "location_date": "1944-09-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 328; R889: para 204"
+    "reference_ids": "R668;R889;R890;R002",
+    "source_locator": "R668: p. 328; R889: para 204; R890: para 140"
    }
   },
   {
@@ -88682,6 +88805,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R782",
     "source_locator": "R889: paras 251-252"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "claim_id": "C9195",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-079D",
+    "unit_name": "79th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-17",
+    "place_id": "PL0677",
+    "location_name": "Boulogne-sur-Mer, Pas-de-Calais (31st Tank Brigade assault armour with the 3rd Canadian Division)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Assault armour (flails, AVREs, Crocodiles, Kangaroos) with the 3rd Canadian Division at Boulogne",
+    "operation_id": "OP-WELLHIT",
+    "operation": "Operation Wellhit",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wellhit",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: paras 45, 57, Appendix \"B\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.6119,
+     50.726
+    ]
+   },
+   "properties": {
+    "claim_id": "C9196",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-17",
+    "place_id": "PL0677",
+    "location_name": "Boulogne-sur-Mer, Pas-de-Calais (10th Canadian Armoured Regiment squadrons at Boulogne)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Less one regiment, under the 3rd Canadian Division for Wellhit; Fort Garry Horse squadrons with the 8th and 9th Brigades",
+    "operation_id": "OP-WELLHIT",
+    "operation": "Operation Wellhit",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Wellhit",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 57, Appendix \"B\""
    }
   },
   {
@@ -89336,8 +89541,8 @@
     "location_date": "1944-09-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 341-2"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: pp. 341-2; R890: paras 69-73"
    }
   },
   {
@@ -89664,8 +89869,49 @@
     "location_date": "1944-09-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R889;R002",
-    "source_locator": "R889: paras 205, 212"
+    "reference_ids": "R889;R890;R002",
+    "source_locator": "R889: paras 205, 212; R890: para 140"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9201",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Ignores the 2nd Canadian Division's surrender ultimatum; shelled from 1100",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: paras 139-140"
    }
   },
   {
@@ -90525,8 +90771,8 @@
     "location_date": "1944-09-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000106 situation 1200 hrs 19 September 1944"
+    "reference_ids": "R781;R890;R002",
+    "source_locator": "R781: sheet cs000106 situation 1200 hrs 19 September 1944; R890: para 78"
    }
   },
   {
@@ -95117,8 +95363,8 @@
     "location_date": "1944-09-22",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 343"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: p. 343; R890: paras 85-88"
    }
   },
   {
@@ -95486,8 +95732,8 @@
     "location_date": "1944-09-22",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: Map 7 (The Capture of Boulogne, 17-22 September 1944)"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: Map 7 (The Capture of Boulogne, 17-22 September 1944); R890: para 87"
    }
   },
   {
@@ -95527,8 +95773,8 @@
     "location_date": "1944-09-22",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: Map 7 (The Capture of Boulogne, 17-22 September 1944)"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: Map 7 (The Capture of Boulogne, 17-22 September 1944); R890: para 83"
    }
   },
   {
@@ -96438,6 +96684,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9197",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-23",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (Dunkirk perimeter)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Containing Dunkirk with patrols and mortaring until relieved on 26 September",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-23",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 141"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5447,
      51.6135
     ]
@@ -97208,8 +97495,8 @@
     "location_date": "1944-09-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 349"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: p. 349; R890: paras 108-112"
    }
   },
   {
@@ -97331,8 +97618,8 @@
     "location_date": "1944-09-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: p. 65; R668: p. 348"
+    "reference_ids": "R671;R668;R890;R002",
+    "source_locator": "R671: p. 65; R668: p. 348; R890: para 107, Appendix \"C\""
    }
   },
   {
@@ -97579,6 +97866,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R002",
     "source_locator": "R671: p. 65"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.8538,
+     50.9525
+    ]
+   },
+   "properties": {
+    "claim_id": "C9198",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-079D",
+    "unit_name": "79th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-25",
+    "place_id": "PL0678",
+    "location_name": "Calais, Pas-de-Calais (31st Tank Brigade assault armour with the 3rd Canadian Division)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Assault armour (flails, AVREs, Crocodiles, Kangaroos) with the 3rd Canadian Division at Calais",
+    "operation_id": "OP-UNDERGO",
+    "operation": "Operation Undergo",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undergo",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 107, Appendix \"C\""
    }
   },
   {
@@ -101759,8 +102087,8 @@
     "location_date": "1944-09-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000113 situation 1200 hrs 26 September 1944"
+    "reference_ids": "R781;R890;R002",
+    "source_locator": "R781: sheet cs000113 situation 1200 hrs 26 September 1944; R890: paras 110, 124"
    }
   },
   {
@@ -102661,8 +102989,8 @@
     "location_date": "1944-09-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 368"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: p. 368; R890: para 141"
    }
   },
   {
@@ -104014,8 +104342,8 @@
     "location_date": "1944-09-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 352-4"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: pp. 352-4; R890: para 128"
    }
   },
   {
@@ -104139,6 +104467,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R871;R001",
     "source_locator": "R871: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.5834,
+     50.8711
+    ]
+   },
+   "properties": {
+    "claim_id": "C9199",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-29",
+    "place_id": "PL3394",
+    "location_name": "Cap Gris-Nez, Pas-de-Calais (6th Canadian Armoured Regiment)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "The 6th Canadian Armoured Regiment supports the 9th Brigade's capture of Cap Gris Nez",
+    "operation_id": "OP-UNDERGO",
+    "operation": "Operation Undergo",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Undergo",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: paras 124, 128"
    }
   },
   {
@@ -104834,8 +105203,8 @@
     "location_date": "1944-10-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 352, 393"
+    "reference_ids": "R668;R890;R002",
+    "source_locator": "R668: pp. 352, 393; R890: paras 133-134"
    }
   },
   {
@@ -110583,6 +110952,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9202",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-10-04",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "other",
+    "current_activity": "Truce for the evacuation of civilians (3-6 October)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 145"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7903,
      51.8875
     ]
@@ -111526,6 +111936,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9206",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-10-06",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (Dunkirk perimeter)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Arrives at Dunkirk to relieve the 154th (Highland) Brigade",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 147"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.3278,
      51.4107
     ]
@@ -112173,8 +112624,8 @@
     "location_date": "1944-10-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R675;R037;R002",
-    "source_locator": "R668: p. 368; R675: section Siege; R037: section Siege of Dunkirk"
+    "reference_ids": "R668;R675;R037;R890;R002",
+    "source_locator": "R668: p. 368; R675: section Siege; R037: section Siege of Dunkirk; R890: para 148"
    }
   },
   {
@@ -117669,6 +118120,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R781;R002",
     "source_locator": "R781: sheet cs000127 situation 1200 hrs 10 October 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9203",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-10-10",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (sortie on the western perimeter near Loon-Plage)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "A sortie toward Loon-Plage, on the western side, is driven back by noon",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 150, Appendix \"D\""
    }
   },
   {
@@ -126163,6 +126655,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9204",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-10-20",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (attack on the western perimeter, east of Loon-Plage)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Battle group of about 300 attacks a post three km east of Loon-Plage",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.0836,
      50.7756
     ]
@@ -134477,8 +135010,8 @@
     "location_date": "1944-10-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R675;R002",
-    "source_locator": "R668: p. 368; R675: section Siege"
+    "reference_ids": "R668;R675;R890;R002",
+    "source_locator": "R668: p. 368; R675: section Siege; R890: para 153"
    }
   },
   {
@@ -143540,6 +144073,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R888;R782",
     "source_locator": "R888: para 224"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9205",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FEST-DUNKIRK",
+    "unit_name": "Fortress Dunkirk (Festung Dünkirchen) garrison",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "other",
+    "branch": "Army",
+    "date": "1944-11-05",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Raided by the 2nd Czechoslovak Armoured Regiment; truce on 6 November to bury the dead",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 154"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3773,
+     51.0348
+    ]
+   },
+   "properties": {
+    "claim_id": "C9207",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CZ-ARM-001B",
+    "unit_name": "1st Czechoslovak Independent Armoured Brigade",
+    "nationality": "Czechoslovakia",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-11-05",
+    "place_id": "PL0624",
+    "location_name": "Dunkirk, Nord (Dunkirk perimeter)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 2nd Czechoslovak Armoured Regiment's reconnaissance in force; about 60 casualties, 160 prisoners",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R890;R002",
+    "source_locator": "R890: para 154"
    }
   },
   {
@@ -170188,8 +170803,8 @@
     "location_date": "1944-11-27",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R882;R002",
-    "source_locator": "R668: p. 368; R882: paras 24, 49, 59"
+    "reference_ids": "R668;R882;R890;R002",
+    "source_locator": "R668: p. 368; R882: paras 24, 49, 59; R890: para 159"
    }
   },
   {
@@ -367890,8 +368505,8 @@
     "location_date": "1945-05-08",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R675;R002",
-    "source_locator": "R668: p. 368; R671: p. 343; R675: section Siege"
+    "reference_ids": "R668;R671;R675;R890;R002",
+    "source_locator": "R668: p. 368; R671: p. 343; R675: section Siege; R890: para 164"
    }
   },
   {
@@ -372810,8 +373425,8 @@
     "location_date": "1945-05-09",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R570;R716;R839;R002",
-    "source_locator": "R570: p. 477; R839: German p.57 (Fold3 page 65)"
+    "reference_ids": "R570;R716;R839;R890;R002",
+    "source_locator": "R570: p. 477; R839: German p.57 (Fold3 page 65); R890: para 164"
    }
   },
   {

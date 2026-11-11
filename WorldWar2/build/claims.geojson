@@ -279626,6 +279626,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.3778,
+     43.2964
+    ]
+   },
+   "properties": {
+    "claim_id": "C9241",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-001C",
+    "unit_name": "I Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-24",
+    "place_id": "PL0842",
+    "location_name": "Marseille, Bouches-du-Rhône (first flight of corps headquarters; staging camp near Calas)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Corps headquarters lands at Marseilles from Naples in Operation Goldflake",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R893;R002",
+    "source_locator": "R893: paras 18, 20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3161,
      51.081
     ]
@@ -291229,6 +291270,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.6005,
+     50.7457
+    ]
+   },
+   "properties": {
+    "claim_id": "C9242",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-COR-001C",
+    "unit_name": "I Canadian Corps",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-03-03",
+    "place_id": "PL4087",
+    "location_name": "Ronse (Renaix), East Flanders (dispersal point at Renaix)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Corps headquarters reaches its dispersal point at Renaix in Belgium and comes under 21st Army Group",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R893;R782",
+    "source_locator": "R893: paras 21, 32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2667,
      51.3
     ]
@@ -302456,6 +302538,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R840;R238;R002",
     "source_locator": "R840: German p.1 (Fold3 page 15); R238: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1869,
+     50.7948
+    ]
+   },
+   "properties": {
+    "claim_id": "C9243",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-001B",
+    "unit_name": "1st Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-03-12",
+    "place_id": "PL4088",
+    "location_name": "Lauwe (Menen), West Flanders (brigade headquarters at Lauwe; tanks off-loaded at Menin)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Brigade headquarters arrives at Lauwe in Belgium from Italy; the tanks off-loaded at Menin on 10 March",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R893;R782",
+    "source_locator": "R893: paras 27-28, 32"
    }
   },
   {
@@ -316649,8 +316772,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     4.3525,
-     50.8467
+     4.7286,
+     51.1033
     ]
    },
    "properties": {
@@ -316664,13 +316787,13 @@
     "echelon": "division",
     "branch": "Army",
     "date": "1945-03-23",
-    "place_id": "PL0745",
-    "location_name": "Brussels, Belgium (outside Brussels (station typed \"Itogon\"))",
+    "place_id": "PL4089",
+    "location_name": "Itegem (Heist-op-den-Berg), Antwerp (divisional headquarters at Itegem (AHQ Report No. 39 types it \"Itogon\"))",
     "location_represents": "main_body",
-    "precision_km": 5,
-    "confidence": 0.3,
+    "precision_km": 3,
+    "confidence": 0.5,
     "event_type": "arrival",
-    "current_activity": "Arrives from Italy and is stationed outside Brussels to re-equip",
+    "current_activity": "Arrives from Italy; divisional headquarters at Itegem while the division re-equips",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",
     "operation_type": "campaign",
@@ -316679,10 +316802,10 @@
     "sub_operation_name": null,
     "strength_status": "unknown",
     "location_date": "1945-03-23",
-    "location_basis": "inferred",
+    "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R883;R002",
-    "source_locator": "R883: para 32"
+    "reference_ids": "R883;R893;R782",
+    "source_locator": "R883: para 32; R893: paras 31-32"
    }
   },
   {

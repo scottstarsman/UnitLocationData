@@ -14698,7 +14698,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Brussels",
-    "claims_count": 6
+    "claims_count": 5
    }
   },
   {
@@ -16598,7 +16598,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Provence-Alpes-Côte d'Azur",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -81398,6 +81398,66 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6005,
+     50.7457
+    ]
+   },
+   "properties": {
+    "place_id": "PL4087",
+    "name": "Ronse (Renaix), East Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "East Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1869,
+     50.7948
+    ]
+   },
+   "properties": {
+    "place_id": "PL4088",
+    "name": "Lauwe (Menen), West Flanders",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "West Flanders",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7286,
+     51.1033
+    ]
+   },
+   "properties": {
+    "place_id": "PL4089",
+    "name": "Itegem (Heist-op-den-Berg), Antwerp",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Antwerp",
     "claims_count": 1
    }
   }

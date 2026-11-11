@@ -321815,6 +321815,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2111,
+     51.9608
+    ]
+   },
+   "properties": {
+    "claim_id": "C9085",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL4038",
+    "location_name": "Wehl (Doetinchem), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Regina Rifles take Wehl; the 9th Brigade advances from Elten toward Loerbeek",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 6, 10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      9.9435,
      49.778
     ]
@@ -322011,8 +322052,8 @@
     "location_date": "1945-04-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 307"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: p. 307; R884: para 58"
    }
   },
   {
@@ -326612,6 +326653,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2306,
+     52.1375
+    ]
+   },
+   "properties": {
+    "claim_id": "C9086",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-04",
+    "place_id": "PL4039",
+    "location_name": "Warnsveld (Zutphen), Gelderland (approaches to Warnsveld)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 9th Brigade fights at Leesten toward Warnsveld on the approaches to Zutphen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 22, 26, 87"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.1833,
      51.75
     ]
@@ -327341,8 +327423,8 @@
     "location_date": "1945-04-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 550"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 550; R884: paras 89, 93"
    }
   },
   {
@@ -327794,6 +327876,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R255;R568;R002",
     "source_locator": "R255: Einsatz und Unterstellung; R568: p. 414"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0699,
+     52.5172
+    ]
+   },
+   "properties": {
+    "claim_id": "C9093",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-011D",
+    "unit_name": "11th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-06",
+    "place_id": "PL4044",
+    "location_name": "Stolzenau, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Holds a bridgehead over the Weser at Stolzenau with the 1st Commando Brigade",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 106"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0699,
+     52.5172
+    ]
+   },
+   "properties": {
+    "claim_id": "C9094",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-001B",
+    "unit_name": "1st Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL4044",
+    "location_name": "Stolzenau, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Reinforces the 11th Armoured Division bridgehead over the Weser at Stolzenau",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 106"
    }
   },
   {
@@ -328694,8 +328858,8 @@
     "location_date": "1945-04-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 557"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 557; R884: para 155"
    }
   },
   {
@@ -329154,6 +329318,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.2875,
+     52.25
+    ]
+   },
+   "properties": {
+    "claim_id": "C9087",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-08",
+    "place_id": "PL4040",
+    "location_name": "Bathmen (Deventer), Overijssel",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Zutphen cleared by the 8th Brigade; the 9th Brigade takes Bathmen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 129-130"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1404,
+     52.8086
+    ]
+   },
+   "properties": {
+    "claim_id": "C9091",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-08",
+    "place_id": "PL4042",
+    "location_name": "Hoya, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "The 22nd Armoured Brigade captures Hoya on the Weser",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 107, 196"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -329473,8 +329719,8 @@
     "location_date": "1945-04-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 558"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 558; R884: para 158"
    }
   },
   {
@@ -329721,6 +329967,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R883;R002",
     "source_locator": "R883: para 32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6767,
+     52.5167
+    ]
+   },
+   "properties": {
+    "claim_id": "C9095",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-09",
+    "place_id": "PL4045",
+    "location_name": "Fürstenau (Osnabrück), Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Reaches the Fürstenau area on the XXX Corps left",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-09",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 195"
    }
   },
   {
@@ -330006,8 +330293,8 @@
     "location_date": "1945-04-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 561"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 561; R884: para 169"
    }
   },
   {
@@ -331236,8 +331523,8 @@
     "location_date": "1945-04-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000310 situation 1200 hrs 10 April 1945"
+    "reference_ids": "R781;R884;R002",
+    "source_locator": "R781: sheet cs000310 situation 1200 hrs 10 April 1945; R884: para 196"
    }
   },
   {
@@ -333450,8 +333737,8 @@
     "location_date": "1945-04-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R883;R002",
-    "source_locator": "R668: pp. 550-551; R883: para 32"
+    "reference_ids": "R668;R883;R884;R002",
+    "source_locator": "R668: pp. 550-551; R883: para 32; R884: para 120"
    }
   },
   {
@@ -333491,8 +333778,8 @@
     "location_date": "1945-04-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 558"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 558; R884: para 160"
    }
   },
   {
@@ -334149,6 +334436,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R883;R002",
     "source_locator": "R883: para 30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4514,
+     52.3883
+    ]
+   },
+   "properties": {
+    "claim_id": "C9082",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-10",
+    "place_id": "PL4036",
+    "location_name": "Hellendoorn, Overijssel",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 5th Brigade takes Hellendoorn and Lemele and halts before Ommen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 141"
    }
   },
   {
@@ -334967,8 +335295,8 @@
     "location_date": "1945-04-12",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 309"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: p. 309; R884: para 325"
    }
   },
   {
@@ -335131,8 +335459,8 @@
     "location_date": "1945-04-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 554"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 554; R884: para 235"
    }
   },
   {
@@ -335878,6 +336206,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7724,
+     52.8855
+    ]
+   },
+   "properties": {
+    "claim_id": "C9081",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-12",
+    "place_id": "PL4034",
+    "location_name": "Vrees, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Armoured brigade group enters Vrees; the 10th Brigade at Neuscharrel",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 277"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2338,
+     52.4362
+    ]
+   },
+   "properties": {
+    "claim_id": "C9088",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-12",
+    "place_id": "PL3620",
+    "location_name": "Heino (Raalte), Overijssel",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 9th Brigade clears Heino and bridges the Overijsselsch Canal north of it",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 213"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.8667,
      51.9667
     ]
@@ -336156,8 +336566,8 @@
     "location_date": "1945-04-13",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 554"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 554; R884: para 240"
    }
   },
   {
@@ -336527,6 +336937,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R350;R002",
     "source_locator": "R350: Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.3787,
+     52.785
+    ]
+   },
+   "properties": {
+    "claim_id": "C9101",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-053D",
+    "unit_name": "53rd (Welsh) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-13",
+    "place_id": "PL4049",
+    "location_name": "Rethem (Aller), Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Almost clears Rethem on the Aller",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 196, 328"
    }
   },
   {
@@ -336935,8 +337386,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 561"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 561; R884: para 263"
    }
   },
   {
@@ -337099,8 +337550,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R810;R002",
-    "source_locator": "R668: p. 556; R810: German p.5, English p.5"
+    "reference_ids": "R668;R810;R884;R002",
+    "source_locator": "R668: p. 556; R810: German p.5, English p.5; R884: para 219"
    }
   },
   {
@@ -337140,8 +337591,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 554-555"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 554-555; R884: para 246"
    }
   },
   {
@@ -337181,8 +337632,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 556"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 556; R884: para 215"
    }
   },
   {
@@ -337222,8 +337673,8 @@
     "location_date": "1945-04-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 558-559"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 558-559; R884: para 287"
    }
   },
   {
@@ -337757,6 +338208,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R779;R002",
     "source_locator": "R779: German pp. 60-61 (report pp. 54-55), Skizze 9"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0439,
+     52.8461
+    ]
+   },
+   "properties": {
+    "claim_id": "C9097",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-14",
+    "place_id": "PL3603",
+    "location_name": "Cloppenburg, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Enters Cloppenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: paras 195, 333"
    }
   },
   {
@@ -338698,8 +339190,8 @@
     "location_date": "1945-04-15",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 309"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: p. 309; R884: para 325"
    }
   },
   {
@@ -338903,8 +339395,8 @@
     "location_date": "1945-04-15",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 561"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 561; R884: para 264"
    }
   },
   {
@@ -339404,6 +339896,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.5928,
+     52.861
+    ]
+   },
+   "properties": {
+    "claim_id": "C9092",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-007D",
+    "unit_name": "7th Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-15",
+    "place_id": "PL4043",
+    "location_name": "Walsrode, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Reaches Walsrode on the drive toward Soltau and the Elbe",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 328"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]
@@ -339600,8 +340133,8 @@
     "location_date": "1945-04-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 554, 555"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 554, 555; R884: para 256"
    }
   },
   {
@@ -339764,8 +340297,8 @@
     "location_date": "1945-04-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 556"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 556; R884: para 217"
    }
   },
   {
@@ -339928,8 +340461,8 @@
     "location_date": "1945-04-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R883;R002",
-    "source_locator": "R668: p. 574; R883: para 74"
+    "reference_ids": "R668;R883;R884;R002",
+    "source_locator": "R668: p. 574; R883: para 74; R884: para 315"
    }
   },
   {
@@ -340748,8 +341281,8 @@
     "location_date": "1945-04-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R883;R002",
-    "source_locator": "R668: pp. 575, 576; R883: para 77"
+    "reference_ids": "R668;R883;R884;R002",
+    "source_locator": "R668: pp. 575, 576; R883: para 77; R884: para 315"
    }
   },
   {
@@ -344397,8 +344930,8 @@
     "location_date": "1945-04-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R883;R002",
-    "source_locator": "R668: p. 575; R883: para 77"
+    "reference_ids": "R668;R883;R884;R002",
+    "source_locator": "R668: p. 575; R883: para 77; R884: para 315"
    }
   },
   {
@@ -345217,8 +345750,8 @@
     "location_date": "1945-04-18",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 310, 311"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: pp. 310, 311; R884: para 326"
    }
   },
   {
@@ -345504,8 +346037,8 @@
     "location_date": "1945-04-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 556"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 556; R884: para 225"
    }
   },
   {
@@ -346037,8 +346570,8 @@
     "location_date": "1945-04-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 601"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 601; R884: para 555"
    }
   },
   {
@@ -346078,8 +346611,8 @@
     "location_date": "1945-04-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 601"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 601; R884: para 555"
    }
   },
   {
@@ -346333,6 +346866,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.581,
+     52.986
+    ]
+   },
+   "properties": {
+    "claim_id": "C9096",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-19",
+    "place_id": "PL4046",
+    "location_name": "Visselhövede, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Clears Visselhövede under XII Corps and closes on Zeven",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 330, 739"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4364,
+     52.8971
+    ]
+   },
+   "properties": {
+    "claim_id": "C9102",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PG-015D",
+    "unit_name": "15th Panzergrenadier Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-19",
+    "place_id": "PL0772",
+    "location_name": "Wildeshausen, Niedersachsen (north of Wildeshausen)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Panzergrenadier regiments identified north of Wildeshausen and south of Delmenhorst",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 578"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.0439,
+     52.8461
+    ]
+   },
+   "properties": {
+    "claim_id": "C9103",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-008D",
+    "unit_name": "8th Fallschirmjäger Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1945-04-19",
+    "place_id": "PL3603",
+    "location_name": "Cloppenburg, Niedersachsen (north of the Cloppenburg forest)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "24th and 22nd Parachute Regiments identified north of the Cloppenburg forest opposite the 2nd Canadian Division",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 578"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.0775,
      49.4539
     ]
@@ -346406,8 +347062,8 @@
     "location_date": "1945-04-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 562"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 562; R884: para 557"
    }
   },
   {
@@ -346667,8 +347323,8 @@
    },
    "properties": {
     "claim_id": "C7609",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G121",
+    "claim_status": "alternate",
     "unit_id": "CAN-ARM-005D",
     "unit_name": "5th Canadian Armoured Division",
     "nationality": "Canada",
@@ -346900,6 +347556,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R866;R002",
     "source_locator": "R866: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6454,
+     52.1715
+    ]
+   },
+   "properties": {
+    "claim_id": "C9074",
+    "conflict_group_id": "G121",
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-005D",
+    "unit_name": "5th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-20",
+    "place_id": "PL0720",
+    "location_name": "Barneveld, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Divisional headquarters at Barneveld before the move north to pass under II Canadian Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 660"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.5386,
+     52.9841
+    ]
+   },
+   "properties": {
+    "claim_id": "C9104",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-005D",
+    "unit_name": "5th Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL0660",
+    "location_name": "Uelzen, Niedersachsen (south-west of Uelzen)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Arriving from another theatre; concentrates south-west of Uelzen under VIII Corps",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 325"
    }
   },
   {
@@ -347528,8 +348266,8 @@
    },
    "properties": {
     "claim_id": "C7605",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
+    "conflict_group_id": "G122",
+    "claim_status": "alternate",
     "unit_id": "POL-ARM-001D",
     "unit_name": "1st Polish Armoured Division",
     "nationality": "Poland",
@@ -347595,8 +348333,8 @@
     "location_date": "1945-04-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 598"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 598; R884: para 445"
    }
   },
   {
@@ -347761,6 +348499,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R313;R002",
     "source_locator": "R313: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.411,
+     53.0773
+    ]
+   },
+   "properties": {
+    "claim_id": "C9075",
+    "conflict_group_id": "G122",
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-21",
+    "place_id": "PL0806",
+    "location_name": "Papenburg, Niedersachsen (outskirts of Papenburg)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Armour reaches the outskirts of Papenburg; the 3rd Polish Infantry Brigade crosses the Kusten Canal",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 356"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7455,
+     52.0717
+    ]
+   },
+   "properties": {
+    "claim_id": "C9098",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-049D",
+    "unit_name": "49th (West Riding) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL3515",
+    "location_name": "Ede, Gelderland",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds Ede, Bennekom and Wageningen along the line Barneveld-Lunteren-Ede-Wageningen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: para 718"
    }
   },
   {
@@ -348210,8 +349030,8 @@
     "location_date": "1945-04-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 561-562"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 561-562; R884: para 364"
    }
   },
   {
@@ -348251,8 +349071,8 @@
     "location_date": "1945-04-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 601"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 601; R884: para 562"
    }
   },
   {
@@ -348588,6 +349408,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.568,
+     53.2191
+    ]
+   },
+   "properties": {
+    "claim_id": "C9076",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-005D",
+    "unit_name": "5th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-22",
+    "place_id": "PL0709",
+    "location_name": "Groningen, Groningen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Divisional headquarters reaches Groningen; the 11th Brigade takes over Friesland from Heerenveen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: paras 662-663"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.0263,
+     53.0142
+    ]
+   },
+   "properties": {
+    "claim_id": "C9100",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-052D",
+    "unit_name": "52nd (Lowland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL4047",
+    "location_name": "Achim (Verden), Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Captures Achim and Uphusen south-east of Bremen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 741"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      10.9552,
      51.7903
     ]
@@ -348825,8 +349727,8 @@
     "location_date": "1945-04-23",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 601"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 601; R884: para 569"
    }
   },
   {
@@ -352843,8 +353745,8 @@
     "location_date": "1945-04-24",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 592"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 592; R884: paras 662, 666"
    }
   },
   {
@@ -353417,8 +354319,8 @@
     "location_date": "1945-04-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 599"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 599; R884: para 456"
    }
   },
   {
@@ -353786,8 +354688,8 @@
     "location_date": "1945-04-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 599-600"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 599-600; R884: para 456"
    }
   },
   {
@@ -353911,6 +354813,47 @@
     "location_temporal_offset_days": -3,
     "reference_ids": "R345;R002",
     "source_locator": "R345: Assignment and Attachment to Higher Units, row 26 Apr 45, and Command Posts, row 23 Apr"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2799,
+     53.3143
+    ]
+   },
+   "properties": {
+    "claim_id": "C9089",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-26",
+    "place_id": "PL4041",
+    "location_name": "Ditzum (Jemgum), Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "The 8th Brigade clears the Rheiderland: Ditzum, Pogum and Jemgum",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 384"
    }
   },
   {
@@ -354410,6 +355353,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.0306,
+     53.2733
+    ]
+   },
+   "properties": {
+    "claim_id": "C9077",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-005D",
+    "unit_name": "5th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-27",
+    "place_id": "PL4035",
+    "location_name": "Woldendorp (Eemsdelta), Groningen",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Westminster Regiment clears Woldendorp in the Delfzijl pocket",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 691"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.6664,
      49.2178
     ]
@@ -354565,8 +355549,8 @@
     "location_date": "1945-04-28",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 595, 596"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 595, 596; R884: para 388"
    }
   },
   {
@@ -355066,6 +356050,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.9015,
+     53.127
+    ]
+   },
+   "properties": {
+    "claim_id": "C9078",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-04-28",
+    "place_id": "PL4032",
+    "location_name": "Westerscheps (Edewecht), Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Brigade force (Frank Force) advances from Westerscheps toward Rothenmethen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 478, 490"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4708,
      48.4103
     ]
@@ -355262,8 +356287,8 @@
     "location_date": "1945-04-29",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 337"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: p. 337; R884: para 749"
    }
   },
   {
@@ -355385,8 +356410,8 @@
     "location_date": "1945-04-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 593"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 593; R884: para 700"
    }
   },
   {
@@ -355426,8 +356451,8 @@
     "location_date": "1945-04-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 597-598"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 597-598; R884: para 388"
    }
   },
   {
@@ -355469,6 +356494,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R844;R002",
     "source_locator": "R844: German p.16 (Fold3 image 56)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4561,
+     53.1132
+    ]
+   },
+   "properties": {
+    "claim_id": "C9083",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-29",
+    "place_id": "PL3153",
+    "location_name": "Hude (Oldenburg), Oldenbourg (arrondissement)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Régiment de Maisonneuve clears Hude; the 4th Brigade north of Hasterort",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: paras 615, 623"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6136,
+     53.1866
+    ]
+   },
+   "properties": {
+    "claim_id": "C9090",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-04-29",
+    "place_id": "PL0807",
+    "location_name": "Potshausen, Ostrhauderfehn, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 3rd Polish Infantry Brigade develops the route Potshausen-Stickhausen; the armoured brigade pulls out to pass through Leer",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: paras 361, 363"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1464,
+     53.4851
+    ]
+   },
+   "properties": {
+    "claim_id": "C9099",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-29",
+    "place_id": "PL4048",
+    "location_name": "Bremervörde, Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Takes over the capture of Bremervörde",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-29",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: para 744"
    }
   },
   {
@@ -355672,8 +356820,8 @@
     "location_date": "1945-04-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 600"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 600; R884: para 505"
    }
   },
   {
@@ -355754,8 +356902,8 @@
     "location_date": "1945-04-30",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: Sketch 49 (March to Wismar, 1st Canadian Parachute Battalion, 27 March - 2 May 1945), p. 605; R884: para 751"
    }
   },
   {
@@ -355804,6 +356952,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8258,
+     53.175
+    ]
+   },
+   "properties": {
+    "claim_id": "C9079",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-04-30",
+    "place_id": "PL4033",
+    "location_name": "Godensholt (Apen), Lower Saxony",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Godensholt entered; the road south-west of Ocholt cut",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 507, 509"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.9135,
      53.3326
     ]
@@ -355836,8 +357025,8 @@
     "location_date": "1945-05-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 593, 594"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: pp. 593, 594; R884: para 710"
    }
   },
   {
@@ -355877,8 +357066,8 @@
     "location_date": "1945-05-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 598"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 598; R884: para 434"
    }
   },
   {
@@ -359412,6 +360601,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.2216,
+     53.0976
+    ]
+   },
+   "properties": {
+    "claim_id": "C9084",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL4037",
+    "location_name": "Bümmerstede (Oldenburg), Lower Saxony (south of Bümmerstede)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "The 6th Brigade south of Bümmerstede on the southern approaches to Oldenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R782",
+    "source_locator": "R884: paras 631, 635"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.9,
      48.3167
     ]
@@ -359485,8 +360715,8 @@
     "location_date": "1945-05-02",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 337"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: p. 337; R884: para 752"
    }
   },
   {
@@ -360018,8 +361248,8 @@
     "location_date": "1945-05-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 603"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 603; R884: para 648"
    }
   },
   {
@@ -360100,8 +361330,8 @@
     "location_date": "1945-05-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 338"
+    "reference_ids": "R671;R884;R002",
+    "source_locator": "R671: p. 338; R884: para 754"
    }
   },
   {
@@ -360182,8 +361412,8 @@
     "location_date": "1945-05-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 598"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 598; R884: para 435"
    }
   },
   {
@@ -360307,6 +361537,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R844;R845;R002",
     "source_locator": "R844: German p.20 (Fold3 image 60), Skizze 4 (image 70); R845: German p.130 (Fold3 image 262)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.9273,
+     53.2575
+    ]
+   },
+   "properties": {
+    "claim_id": "C9080",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1945-05-03",
+    "place_id": "PL0809",
+    "location_name": "Westerstede, Niedersachsen",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Brigade forces clear Lindern, Mansie and Westerloy; the Royal Canadian Dragoons reach Westerstede and meet the Poles",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R884;R002",
+    "source_locator": "R884: paras 435, 523, 533"
    }
   },
   {
@@ -361043,8 +362314,8 @@
     "location_date": "1945-05-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 600"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 600; R884: para 549"
    }
   },
   {
@@ -361576,8 +362847,8 @@
     "location_date": "1945-05-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 613"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 613; R884: para 781"
    }
   },
   {
@@ -361617,8 +362888,8 @@
     "location_date": "1945-05-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 614"
+    "reference_ids": "R668;R884;R002",
+    "source_locator": "R668: p. 614; R884: para 783"
    }
   },
   {

@@ -40464,8 +40464,8 @@
     "location_date": "1944-08-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944"
+    "reference_ids": "R781;R891;R002",
+    "source_locator": "R781: sheet cs000057 situation 1200 hrs 1 August 1944; R891: para 4"
    }
   },
   {
@@ -42523,6 +42523,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.1821,
+     49.1819
+    ]
+   },
+   "properties": {
+    "claim_id": "C9224",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-346D",
+    "unit_name": "346th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-03",
+    "place_id": "PL0728",
+    "location_name": "Troarn, Calvados (about Troarn)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "In the centre of 86 Corps about Troarn (intelligence)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-03",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: para 10"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.6794,
      48.1147
     ]
@@ -43213,6 +43254,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R667;R241;R002",
     "source_locator": "R667: p. 67; R241: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3849,
+     49.116
+    ]
+   },
+   "properties": {
+    "claim_id": "C9208",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-05",
+    "place_id": "PL0872",
+    "location_name": "Saint-André-sur-Orne, Calvados (St Andre-sur-Orne to Verrieres front)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds the St Andre-sur-Orne and Verrieres front; the Royal Highland Regiment attacks May-sur-Orne and is repulsed",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 31-33"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2971,
+     49.1217
+    ]
+   },
+   "properties": {
+    "claim_id": "C9212",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-05",
+    "place_id": "PL0687",
+    "location_name": "Bourguébus, Calvados (Bourguebus-Four-Soliers sector)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds the Bourguebus-Four-Soliers sector; patrols toward Tilly-la-Campagne and La Hogue",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 23, 34, 43"
    }
   },
   {
@@ -44482,8 +44605,8 @@
     "location_date": "1944-08-07",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R001",
-    "source_locator": "R668: pp. 208, 218, 219, 229; R670: pp. 420, 421"
+    "reference_ids": "R668;R670;R891;R001",
+    "source_locator": "R668: pp. 208, 218, 219, 229; R670: pp. 420, 421; R891: para 55"
    }
   },
   {
@@ -44523,8 +44646,8 @@
     "location_date": "1944-08-07",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R668;R002",
-    "source_locator": "R670: p. 420; R668: p. 216"
+    "reference_ids": "R670;R668;R891;R002",
+    "source_locator": "R670: p. 420; R668: p. 216; R891: para 48"
    }
   },
   {
@@ -44728,8 +44851,49 @@
     "location_date": "1944-08-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: pp. 420, 421"
+    "reference_ids": "R670;R891;R001",
+    "source_locator": "R670: pp. 420, 421; R891: para 49"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.1821,
+     49.1819
+    ]
+   },
+   "properties": {
+    "claim_id": "C9220",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-CDO-004B",
+    "unit_name": "4th Special Service (Commando) Brigade",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL0728",
+    "location_name": "Troarn, Calvados (western approaches to Troarn)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Sent by the 6th Airborne Division toward Troarn, replacing the 146th Brigade of the 49th Division",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 43-44"
    }
   },
   {
@@ -44933,8 +45097,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R001",
-    "source_locator": "R668: p. 224; R670: pp. 422, 423"
+    "reference_ids": "R668;R670;R891;R001",
+    "source_locator": "R668: p. 224; R670: pp. 422, 423; R891: paras 75, 92"
    }
   },
   {
@@ -44974,8 +45138,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 224"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: p. 224; R891: paras 77, 80"
    }
   },
   {
@@ -45056,8 +45220,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 224; R670: p. 423"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: p. 224; R670: p. 423; R891: para 78"
    }
   },
   {
@@ -46191,7 +46355,7 @@
     "location_name": "Verrières (Verrières Ridge), Calvados (near Verrières (Verrières Ridge))",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "4th Canadian Armoured Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -46204,8 +46368,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+    "reference_ids": "R781;R891;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944; R891: paras 68, 74"
    }
   },
   {
@@ -46245,8 +46409,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+    "reference_ids": "R781;R891;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944; R891: paras 62, 65, 70"
    }
   },
   {
@@ -46273,7 +46437,7 @@
     "location_name": "Tilly-la-Campagne, Calvados (near Tilly-la-Campagne)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "51st (Highland) Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -46286,8 +46450,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944"
+    "reference_ids": "R781;R891;R002",
+    "source_locator": "R781: sheet cs000064 situation 1200 hrs 8 August 1944; R891: paras 54, 65, 78"
    }
   },
   {
@@ -48049,8 +48213,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 214, 220; R670: p. 420"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: pp. 214, 220; R670: p. 420; R891: para 58"
    }
   },
   {
@@ -48254,8 +48418,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: p. 421"
+    "reference_ids": "R670;R891;R002",
+    "source_locator": "R670: p. 421; R891: para 65"
    }
   },
   {
@@ -48295,8 +48459,8 @@
     "location_date": "1944-08-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: p. 421"
+    "reference_ids": "R670;R891;R002",
+    "source_locator": "R670: p. 421; R891: paras 54, 65"
    }
   },
   {
@@ -48459,8 +48623,8 @@
     "location_date": "1944-08-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 229; R670: p. 424"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: p. 229; R670: p. 424; R891: para 95"
    }
   },
   {
@@ -48787,8 +48951,8 @@
     "location_date": "1944-08-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 230"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: p. 230; R891: para 107"
    }
   },
   {
@@ -48828,8 +48992,8 @@
     "location_date": "1944-08-10",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 229"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: p. 229; R891: paras 100-104"
    }
   },
   {
@@ -48871,6 +49035,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R237;R002",
     "source_locator": "R237: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2548,
+     49.0021
+    ]
+   },
+   "properties": {
+    "claim_id": "C9210",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-10",
+    "place_id": "PL3363",
+    "location_name": "Bois de Quesnay, Calvados (8th Brigade attack on the Quesnay woods)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "The 8th Brigade attacks the Quesnay woods at night and is withdrawn to Cintheaux and Gaumesnil",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 97, 108"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2169,
+     49.0564
+    ]
+   },
+   "properties": {
+    "claim_id": "C9219",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-051D",
+    "unit_name": "51st (Highland) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-10",
+    "place_id": "PL3360",
+    "location_name": "Saint-Sylvain, Calvados",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Relieves the Poles at St Sylvain after its capture",
+    "operation_id": "OP-TOTALIZE",
+    "operation": "Operation Totalize",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Totalize",
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 96, 105"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3377,
+     48.9876
+    ]
+   },
+   "properties": {
+    "claim_id": "C9222",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-271D",
+    "unit_name": "271st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-10",
+    "place_id": "PL4084",
+    "location_name": "Moulines, Calvados (infantry believed to be of the division)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "Infantry seen at Moulines, believed to be of the division, withdrawing west of the Laize",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R782",
+    "source_locator": "R891: para 116"
    }
   },
   {
@@ -48994,6 +49281,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R668;R001",
     "source_locator": "R668: p. 248"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2673,
+     49.0166
+    ]
+   },
+   "properties": {
+    "claim_id": "C9214",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-11",
+    "place_id": "PL3370",
+    "location_name": "Point 195, Grainville-Langannerie, Calvados (10th Canadian Armoured Regiment on the Hill 195 ridge)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "The 10th Canadian Armoured Regiment relieves the 4th Canadian Armoured Division's armour on the Hill 195 ridge with the 9th Brigade",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-11",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 114, 117"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2169,
+     49.0564
+    ]
+   },
+   "properties": {
+    "claim_id": "C9217",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-11",
+    "place_id": "PL3360",
+    "location_name": "Saint-Sylvain, Calvados (St Sylvain sector)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Takes over the St Sylvain sector and patrols toward Maizieres for a Laison crossing",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-11",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 105, 111, 115"
    }
   },
   {
@@ -49445,6 +49814,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R784;R861;R001",
     "source_locator": "R784: c-0605 (p. 290), order of 12.8.44; R861: p. 385"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2594,
+     49.0252
+    ]
+   },
+   "properties": {
+    "claim_id": "C9211",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-003D",
+    "unit_name": "3rd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-12",
+    "place_id": "PL4082",
+    "location_name": "Bretteville-le-Rabet, Calvados (sector from the ridge south of Grainville-Langannerie to Soignolles)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds a broad sector from the ridge south of Grainville-Langannerie to Soignolles",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R782",
+    "source_locator": "R891: paras 114-115, 152"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2636,
+     49.0479
+    ]
+   },
+   "properties": {
+    "claim_id": "C9213",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-004D",
+    "unit_name": "4th Canadian Armoured Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-12",
+    "place_id": "PL0787",
+    "location_name": "Cauvicourt, Calvados (rest area about Robertmesnil and Cauvicourt)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Resting and refitting in reserve about Robertmesnil and Cauvicourt after Totalize",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-12",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 113, 121"
    }
   },
   {
@@ -50026,6 +50477,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3405,
+     48.9694
+    ]
+   },
+   "properties": {
+    "claim_id": "C9209",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-INF-002D",
+    "unit_name": "2nd Canadian Infantry Division",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-13",
+    "place_id": "PL3225",
+    "location_name": "Tournebu, Normandy (Tournebu and the Laize at Clair-Tizon)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "West of the Laize: the 4th Brigade takes Tournebu and Points 184 and 151; the 5th Brigade makes a bridgehead at Clair-Tizon",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R782",
+    "source_locator": "R891: paras 117-119"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2741,
+     49.0113
+    ]
+   },
+   "properties": {
+    "claim_id": "C9218",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "POL-ARM-001D",
+    "unit_name": "1st Polish Armoured Division",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-08-13",
+    "place_id": "PL4083",
+    "location_name": "Grainville-Langannerie, Calvados (hills south-west of Grainville-Langannerie)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Relieves the 9th Canadian Infantry Brigade on the hills south-west of Grainville-Langannerie",
+    "operation_id": "OP-FALAISE",
+    "operation": "Battle of the Falaise Pocket",
+    "operation_type": "battle",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Falaise",
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R782",
+    "source_locator": "R891: paras 161, 175"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2548,
+     49.0021
+    ]
+   },
+   "properties": {
+    "claim_id": "C9221",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-08-13",
+    "place_id": "PL3363",
+    "location_name": "Bois de Quesnay, Calvados (defended localities between Quesnay and La Bu-sur-Rouvres)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "A string of defended localities north of the Laison between Quesnay and La Bu-sur-Rouvres, with about 50 88-mm guns (intelligence)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: paras 151, 155"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3405,
+     48.9694
+    ]
+   },
+   "properties": {
+    "claim_id": "C9223",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-271D",
+    "unit_name": "271st Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-13",
+    "place_id": "PL3225",
+    "location_name": "Tournebu, Normandy (elements identified by prisoners)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Over 200 prisoners of the division taken by the 4th Canadian Infantry Brigade at Tournebu",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-13",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R782",
+    "source_locator": "R891: para 119"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -3.3327,
      47.9138
     ]
@@ -50140,8 +50755,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 240, 241; R670: p. 430"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: pp. 240, 241; R670: p. 430; R891: para 163"
    }
   },
   {
@@ -50181,8 +50796,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 239, 241; R670: p. 430"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: pp. 239, 241; R670: p. 430; R891: paras 157, 165"
    }
   },
   {
@@ -50222,8 +50837,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 241; R670: pp. 430, 431"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: p. 241; R670: pp. 430, 431; R891: paras 164, 167"
    }
   },
   {
@@ -50263,8 +50878,8 @@
     "location_date": "1944-08-14",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R002",
-    "source_locator": "R670: pp. 425, 430"
+    "reference_ids": "R670;R891;R002",
+    "source_locator": "R670: pp. 425, 430; R891: paras 157, 176"
    }
   },
   {
@@ -50304,8 +50919,49 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: p. 430"
+    "reference_ids": "R670;R891;R001",
+    "source_locator": "R670: p. 430; R891: para 166"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2333,
+     48.9667
+    ]
+   },
+   "properties": {
+    "claim_id": "C9215",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-14",
+    "place_id": "PL4085",
+    "location_name": "Bons-Tassilly, Calvados (slopes east of Tassilly (two of the three regiments))",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Leads the 3rd Canadian Infantry Division column across the Laison in Tractable; by evening the 6th and 10th Canadian Armoured Regiments are on the slopes east of Tassilly",
+    "operation_id": "OP-TRACTABLE",
+    "operation": "Operation Tractable",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Tractable",
+    "strength_status": "unknown",
+    "location_date": "1944-08-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R782",
+    "source_locator": "R891: paras 157, 162, 169, 177"
    }
   },
   {
@@ -51124,8 +51780,8 @@
     "location_date": "1944-08-15",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 248, 249, 250"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: pp. 248, 249, 250; R891: para 180"
    }
   },
   {
@@ -51165,8 +51821,8 @@
     "location_date": "1944-08-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 250; R670: p. 431"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: p. 250; R670: p. 431; R891: para 185"
    }
   },
   {
@@ -52805,8 +53461,8 @@
     "location_date": "1944-08-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+    "reference_ids": "R781;R891;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944; R891: para 176"
    }
   },
   {
@@ -52833,7 +53489,7 @@
     "location_name": "Saint-Germain-le-Vasson, Calvados (near Saint-Germain-le-Vasson)",
     "location_represents": "main_body",
     "precision_km": 10,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "2nd Canadian Infantry Division shown on the 12th Army Group situation map",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -52846,8 +53502,8 @@
     "location_date": "1944-08-15",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R002",
-    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944"
+    "reference_ids": "R781;R891;R002",
+    "source_locator": "R781: sheet cs000071 situation 1200 hrs 15 August 1944; R891: paras 176-177, 183"
    }
   },
   {
@@ -54404,8 +55060,8 @@
     "location_date": "1944-08-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 250; R670: p. 432"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: p. 250; R670: p. 432; R891: para 187"
    }
   },
   {
@@ -54445,8 +55101,8 @@
     "location_date": "1944-08-16",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 250"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: p. 250; R891: para 191"
    }
   },
   {
@@ -55593,8 +56249,8 @@
     "location_date": "1944-08-18",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 256, 259"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: pp. 256, 259; R891: para 204"
    }
   },
   {
@@ -55634,8 +56290,8 @@
     "location_date": "1944-08-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 250; R889: para 11"
+    "reference_ids": "R668;R889;R891;R002",
+    "source_locator": "R668: p. 250; R889: para 11; R891: paras 189, 204"
    }
   },
   {
@@ -55675,8 +56331,8 @@
     "location_date": "1944-08-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R404;R670;R002",
-    "source_locator": "R668: p. 256; R404: p. 532; R670: p. 442"
+    "reference_ids": "R668;R404;R670;R891;R002",
+    "source_locator": "R668: p. 256; R404: p. 532; R670: p. 442; R891: para 203"
    }
   },
   {
@@ -56372,8 +57028,8 @@
     "location_date": "1944-08-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: p. 260; R670: p. 445"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: p. 260; R670: p. 445; R891: para 209"
    }
   },
   {
@@ -56413,8 +57069,8 @@
     "location_date": "1944-08-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R001",
-    "source_locator": "R668: p. 261; R670: p. 445"
+    "reference_ids": "R668;R670;R891;R001",
+    "source_locator": "R668: p. 261; R670: p. 445; R891: paras 205, 214"
    }
   },
   {
@@ -56577,8 +57233,8 @@
     "location_date": "1944-08-19",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 260"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: p. 260; R891: para 212"
    }
   },
   {
@@ -56702,6 +57358,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R002",
     "source_locator": "R889: para 51"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0755,
+     48.8201
+    ]
+   },
+   "properties": {
+    "claim_id": "C9216",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "CAN-ARM-002B",
+    "unit_name": "2nd Canadian Armoured Brigade",
+    "nationality": "Canada",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-08-19",
+    "place_id": "PL0511",
+    "location_name": "Saint-Lambert-sur-Dives, Orne (line between St Lambert-sur-Dives and Trun)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Under the 4th Canadian Armoured Division, sent with the 9th Brigade to thicken the line between St Lambert-sur-Dives and Trun",
+    "operation_id": "OP-TRACTABLE",
+    "operation": "Operation Tractable",
+    "operation_type": "operation",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Tractable",
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R891;R002",
+    "source_locator": "R891: para 212"
    }
   },
   {
@@ -57151,8 +57848,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R668;R833;R002",
-    "source_locator": "R404: p. 543, 542; R668: p.262; R833: German p.11 (Fold3 page 36)"
+    "reference_ids": "R404;R668;R833;R891;R002",
+    "source_locator": "R404: p. 543, 542; R668: p.262; R833: German p.11 (Fold3 page 36); R891: para 222"
    }
   },
   {
@@ -57643,8 +58340,8 @@
     "location_date": "1944-08-21",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: pp. 263, 264"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: pp. 263, 264; R891: para 217"
    }
   },
   {
@@ -57807,8 +58504,8 @@
     "location_date": "1944-08-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R670;R002",
-    "source_locator": "R668: pp. 262, 264; R670: p. 447"
+    "reference_ids": "R668;R670;R891;R002",
+    "source_locator": "R668: pp. 262, 264; R670: p. 447; R891: paras 216, 229"
    }
   },
   {
@@ -57971,8 +58668,8 @@
     "location_date": "1944-08-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 263"
+    "reference_ids": "R668;R891;R002",
+    "source_locator": "R668: p. 263; R891: para 227"
    }
   },
   {
@@ -58053,8 +58750,8 @@
     "location_date": "1944-08-21",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R889;R002",
-    "source_locator": "R668: p. 268; R889: para 21"
+    "reference_ids": "R668;R889;R891;R002",
+    "source_locator": "R668: p. 268; R889: para 21; R891: para 232"
    }
   },
   {
@@ -59693,8 +60390,8 @@
     "location_date": "1944-08-22",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R781;R889;R002",
-    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944; R889: para 11"
+    "reference_ids": "R781;R889;R891;R002",
+    "source_locator": "R781: sheet cs000078 situation 1200 hrs 22 August 1944; R889: para 11; R891: para 233"
    }
   },
   {

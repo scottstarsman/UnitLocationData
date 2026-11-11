@@ -10098,7 +10098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -13558,7 +13558,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14358,7 +14358,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Calvados",
-    "claims_count": 11
+    "claims_count": 13
    }
   },
   {
@@ -15538,7 +15538,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandie",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -17198,7 +17198,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -64198,7 +64198,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -66898,7 +66898,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -66958,7 +66958,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -67098,7 +67098,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -81298,6 +81298,86 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2594,
+     49.0252
+    ]
+   },
+   "properties": {
+    "place_id": "PL4082",
+    "name": "Bretteville-le-Rabet, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2741,
+     49.0113
+    ]
+   },
+   "properties": {
+    "place_id": "PL4083",
+    "name": "Grainville-Langannerie, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3377,
+     48.9876
+    ]
+   },
+   "properties": {
+    "place_id": "PL4084",
+    "name": "Moulines, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.2333,
+     48.9667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4085",
+    "name": "Bons-Tassilly, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
     "claims_count": 1
    }
   }

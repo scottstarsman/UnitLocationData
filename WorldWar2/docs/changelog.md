@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong 10a-1 follow-up: raise C1036 (70th Division surrender at Middelburg, 6 November 1944) to 0.9 (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026): raise `C1036` given four agreeing sources, at the level the existing confidence rules allow.
+
+- **`C1036` confidence:** old value: `0.5`; new value: `0.9`. Reason: four independent source families already cited on the row agree on the unit, the date and the place (CMH `R443`, Stacey `R668` and CMHQ 188 `R888`, Lexikon `R228`, de Jong `R894`; FMS `R839` also agrees). The place is Middelburg, the named town of the surrender, precision 3 km (an exact location under the rubric). The rubric gives `0.9` for an exact location where two or more families agree (compare `C1640`, the Marseille garrison surrender, `0.9` at 5 km). The corroboration rule of 3 November 2026 only auto-raises a newly corroborated row to `0.7` and was not applied retroactively, which is why the row was left at `0.5` and listed for Scott. It is not in a conflict group, so the `0.7` cap does not apply. No other field is changed.
+- **Tests:** new scenario 239.
+
 ## 12 November 2026 — de Jong 10a-1 follow-up: Irene Brigade landing 7 August and Second Army attachment 4 September as alternates (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. Verified in the printed book: p. 41, footnote 1, the brigade was disembarked on 7 August (no place named) and inserted in the Allied front on 12 August; p. 268, footnote 4, it was attached to the First Canadian Army on arrival in Normandy and attached to the British Second Army on 4 September, then ordered from the Seine area to Brussels.

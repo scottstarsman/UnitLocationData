@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Lattre leftovers, chunk 5: the Toulon plan and German units in southern France, August-September 1944 (branch `delattre-leftovers`)
+
+Approved by Scott (roadmap 374, step 3). Source and method as in chunks 1-4: de Lattre, *The History of the French First Army* (`R686`), entered from the private pass-2 notes (pass-1 lines where the pass-2 line was terse), paraphrase only, the book not re-opened. The German rows are the French account's reading of the enemy, not German records, and each row says so. All seven rows are `0.3` (a plan or one axis only, or part of a formation, or the account's report of the enemy).
+
+- **Supporting citations:** none in this chunk.
+- **New claims (7, `C9341`-`C9347`; old value none, new value the row):**
+  - The Toulon plan of 20 August 1944, `approach_route` rows at `0.3` (a plan, one axis each): 1st Division on the coast axis at Hyères (`C9341`), 3rd Algerian Division on the north and west axis at Toulon (`C9342`), 9th Colonial Division at La Valette-du-Var (`C9343`).
+  - German units: 11th Panzer Division at Avignon (20 August, `C9344`), at Aix-en-Provence (22 August, `C9345`) and a Kampfgruppe at Étalans (5 September, `C9346`); 716th Static Division at Givry (5 September, `C9347`).
+- **New places (4, `PL4139`-`PL4142`):** Hyères, La Valette-du-Var, Givry and Étalans from the offline GeoNames dump (`R782`).
+- **Left out on purpose (needs Scott's decision):** four Italian-theater rows the notes support (9th Colonial Division at Portoferraio and Porto Longone on Elba, 18 and 19 June 1944; the Army at Naples, 23 July, and at Taranto, 10 August; theater `mediterranean`, operation `OP-FRONT-MEDITERRANEAN`). `places.csv` has no `IT` in its country vocabulary (`schema/vocabularies.json`), so the places cannot be created without extending the vocabulary; that is a schema change, so it was not made here. Corsica has only unit lists (no dated event), so no row. The 14th Division and 27th Alpine Division lines name no place.
+- **Tests:** new scenario 231.
+
 ## 12 November 2026 — de Lattre leftovers, chunk 4: XXI Corps and the 3rd US Division, German units as the French account describes them, two command relations (branch `delattre-leftovers`)
 
 Approved by Scott (roadmap 374, step 3). Source and method as in chunks 1-3: de Lattre, *The History of the French First Army* (`R686`), entered from the private pass-2 notes (pass-1 lines where the pass-2 line was terse), paraphrase only, the book not re-opened. The US and German rows record units the French account places at a named place on a stated day; the German rows are the account's reading of the enemy opposite, not German records, and each says so. `0.5` = one family, an exact place and stated day; `0.3` = two units named together, elements or a detachment only, or an inferred day.

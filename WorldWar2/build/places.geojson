@@ -16458,7 +16458,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Provence-Alpes-Côte d'Azur",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -16518,7 +16518,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Provence-Alpes-Côte d'Azur",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -81498,7 +81498,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Vaucluse",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -82438,6 +82438,86 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.1286,
+     43.1204
+    ]
+   },
+   "properties": {
+    "place_id": "PL4139",
+    "name": "Hyères, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Var",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9832,
+     43.1376
+    ]
+   },
+   "properties": {
+    "place_id": "PL4140",
+    "name": "La Valette-du-Var, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Var",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.7426,
+     46.782
+    ]
+   },
+   "properties": {
+    "place_id": "PL4141",
+    "name": "Givry, Saône-et-Loire",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Saône-et-Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2732,
+     47.1512
+    ]
+   },
+   "properties": {
+    "place_id": "PL4142",
+    "name": "Étalans, Doubs",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Doubs",
     "claims_count": 1
    }
   }

@@ -2,6 +2,24 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong, deel 10a-1, chunk 2: Market-Garden, the Nijmegen bridges and Dutch intelligence reports on the SS divisions, September 1944 (branch `dejong-10a1`)
+
+Approved by Scott (roadmap 374, step 4). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. Where the page names a Dutch source (the Eindhoven municipal diary, a local history, Boeree, N. A. de Groot, the archive of the intelligence group Albrecht) or a German document, the row says so and counts as independent; where de Jong follows MacDonald, Ellis or Stacey the row is cited without a raise.
+
+- **Supporting citations (7; old value of `reference_ids`, new value with `R894` added):**
+  - Confidence raised: `C7289` 101st Airborne Division at Eindhoven, 18 September (p. 372): old value 0.5, new value 0.7, reason: the Eindhoven municipal diary that de Jong quotes agrees with Stacey on place and day. `C7290` Guards Armoured Division at Eindhoven, 18 September (p. 374): old value 0.5, new value 0.7, reason: the same diary and a local history agree with Stacey (the row stays in conflict group G098). `C1465` Guards Armoured Division at the Nijmegen bridge, 20 September (pp. 381-382): old value 0.7, new value 0.9, reason: a third independent family (a Dutch official history using MacDonald and the Dutch historian de Groot) beside Ellis and Stacey.
+  - Cited with the confidence unchanged (reason on each row): `C1462` (XXX Corps at Valkenswaard, 17 September), `C7869` (101st at Best, 18 September), `C0934` (Army Group B at Oosterbeek, 14 September; derivative of MacDonald), `C1464` (1st Airborne landing, 17 September).
+- **New claims (18, `C9357`-`C9374`; old value none, new value the row):**
+  - Corridor: Guards Armoured Division at Valkenswaard, 17 September (`C9357`) and at Grave, 19 September (`C9361`); 107th Panzer Brigade tanks stopped at the Dommel bridge north-east of Eindhoven, 18 September (`C9358`); elements of the 59th Division at Best, 18 September (`C9359`); 101st Airborne paratroopers across the canal at Son, 18 September (`C9360`).
+  - Nijmegen and Arnhem: 82nd Airborne second lift at Groesbeek, 18 September (`C9362`); at Mook, 20 September (`C9363`); the Waal assault crossing at Nijmegen, 20 September (`C9364`); 1st Airborne headquarters in the Hartenstein hotel at Oosterbeek, 18 September (`C9365`, `0.5`).
+  - Dutch intelligence (group Albrecht) on the 9th SS Panzer Division Hohenstaufen: staff probably at Doetinchem, 14 September (`C9366`); perhaps at Eefde, 15 September (`C9367`); assembly point at Arnhem, 16 September (`C9368`).
+  - German documents quoted by de Jong: First Parachute Army headquarters at Vught, 15 September (`C9369`, `0.5`); Model visited at Oosterbeek, 15 September (`C9370`); Fifteenth Army headquarters presumably at Dordrecht, 16 September (`C9371`).
+  - 43rd (Wessex) Division on the Betuwe road: armoured cars and a column at Driel, 22 September (`C9372`); the Dorsets' Rhine crossing at Driel, 25 September (`C9373`); three battalions on the Rhine bank, 26 September (`C9374`).
+  - All `0.3` except the two marked `0.5`.
+- **New places (2, `PL4147`-`PL4148`):** Doetinchem and Eefde from the offline GeoNames dump (`R782`).
+- **Not entered (flagged in the roadmap):** de Jong says about 550 Polish parachutists, flown from England and dropped at Grave (the drop is not dated on the page), joined the Betuwe bank of the Rhine on 25-26 September (p. 401); the brigade's own rows (C1580-C1584) give other places and days, so no row is added and the point is listed for Scott's decision.
+- **Tests:** new scenario 234.
+
 ## 12 November 2026 — de Jong, deel 10a-1, chunk 1: German dispositions, the Scheldt crossing, the Irene Brigade and the Guards, September 1944 (branch `dejong-10a1`)
 
 Approved by Scott (roadmap 374, step 4). New source `R894`: L. de Jong, *Het Koninkrijk der Nederlanden in de Tweede Wereldoorlog*, deel 10a (Het laatste jaar, eerste helft), chapters 1-7 (printed pp. 1-531), read directly in NIOD's page-tagged CC-BY edition, printed page cited, paraphrase only. New source family `niod_dejong_koninkrijk` (Dutch official history, counted as Dutch own-nation in the source-balance survey). Private reading notes are kept outside the repository. De Jong's account of the Allied and German operations leans on MacDonald, Ellis and Stacey; where the page names a Dutch source the row is treated as independent, otherwise it is cited without a raise and says so.

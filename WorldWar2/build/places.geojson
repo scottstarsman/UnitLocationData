@@ -10678,7 +10678,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -10738,7 +10738,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 4
+    "claims_count": 6
    }
   },
   {
@@ -10898,7 +10898,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 31
+    "claims_count": 32
    }
   },
   {
@@ -10918,7 +10918,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 23
+    "claims_count": 24
    }
   },
   {
@@ -10938,7 +10938,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -13538,7 +13538,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -14718,7 +14718,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16038,7 +16038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 4
+    "claims_count": 7
    }
   },
   {
@@ -16278,7 +16278,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -17978,7 +17978,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -21038,7 +21038,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -51618,7 +51618,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -80818,7 +80818,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -82598,6 +82598,46 @@
     "precision_km": 3,
     "country": "IT",
     "region": "Apulia",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2889,
+     51.965
+    ]
+   },
+   "properties": {
+    "place_id": "PL4147",
+    "name": "Doetinchem, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.225,
+     52.1667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4148",
+    "name": "Eefde, Gelderland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Gelderland",
     "claims_count": 1
    }
   }

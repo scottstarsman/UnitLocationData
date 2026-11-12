@@ -12,7 +12,7 @@ Authorship, not the holding archive, decides nationality:
 
 - FMS manuscripts (German officers, US Army Historical Division / Fold3) and NARA captured German records count as **German**.
 - The 12th Army Group situation maps (`R781`) count as **US**.
-- Stacey and Veterans Affairs Canada count as **Canadian official**; Ellis as **British official**; de Lattre as **French**.
+- Stacey and Veterans Affairs Canada count as **Canadian official**; Ellis as **British official**; de Lattre as **French**; de Jong (`niod_dejong_koninkrijk`) as **Dutch official history**, counted as Dutch own-nation.
 - Wikipedia (any language) is its own bucket and is **never** treated as an own-nation source.
 - `thesecondwar_pl` is a Polish website used for two US corps pages; it is counted as Other, not as a Polish official history.
 - French local-history sites (Ouest-France, D-Day Overlord, Wikimanche and the like) are a weak French group, used mainly for headquarters places, not official campaign histories.
@@ -192,6 +192,21 @@ The third recommended step was done on branch `delattre-leftovers` on 12 Novembe
 
 French own-nation support rose from 17.9% to 46.1% and March 1945, which had none, to 21.4%. The French First Army, I Corps, II Corps and the 10th Division now have an own-nation source; the 14th and 27th Divisions, the Atlantic Army and the Gironde detachment still have none. De Lattre's own wording is partisan on the disputes with Devers and SHAEF, and the German rows record his reading of the enemy, so they enter at 0.3. Chunk 6 added `IT` to the `places.csv` country vocabulary (Scott approved, 12 November 2026) and entered the four Italy and Elba rows (theater `mediterranean`, `C9348`-`C9351`, places `PL4143`-`PL4146`). Remaining recommended steps: de Jong, Joslen, and a Polish-authored source.
 
+## de Jong deel 10a-1 pass (re-measured 12 November 2026)
+
+The fourth recommended step was started on branch `dejong-10a1` on 12 November 2026, in four chunks, from NIOD's CC-BY edition of L. de Jong, *Het Koninkrijk der Nederlanden in de Tweede Wereldoorlog*, deel 10a part 1 (`R894`, chapters 1-7, printed pp. 1-531; family `niod_dejong_koninkrijk`, new bucket "Dutch official history"). 29 existing rows gained a supporting citation (5 raises), 27 claims were added (`C9352`-`C9378`) and 2 places (`PL4147`-`PL4148`). The same survey script was run on `build/all_claims.csv` of `main` `e8deff6` and of the branch.
+
+| Measure | On main `e8deff6` | After the de Jong pass |
+|---|---|---|
+| Claims | 9,340 | 9,367 |
+| Claims citing de Jong (`niod_dejong_koninkrijk`) | 0 | 56 (0.6%) |
+| Dutch sources, citing / exclusive | 0.0% (2) / 0.0% | 0.6% (57) / 0.3% (27) |
+| Dutch units, own-nation / only US or Wikipedia | 0.0% (0 of 14) / 42.9% (6) | 38.9% (7 of 18) / 27.8% (5) |
+| Dutch units, September 1944 own-nation | 0.0% (0 of 5) | 42.9% (3 of 7); off the high US-or-Wikipedia-only month list |
+| US sources, citing / exclusive | 68.0% / 62.3% | 67.8% / 62.1% |
+
+Own-nation support for the Princess Irene Brigade, the only Dutch unit in the table, rose from none to 7 of its 18 rows (Beeringen, Grave, the Maas-Waal canal bridges, Tilburg, Walcheren). De Jong is an official history, but his military narrative leans on MacDonald, Ellis and Stacey: where the page names a Dutch source (the Eindhoven municipal diary, local historians such as de Groot and Boeree, the Albrecht archive, Nauta's letter, Dutch Commando recollections, Rauter's report) or a German document, the row counts him as an independent family; where he follows the Allied histories the row is cited without a raise (24 of the 29 citations). The Dutch share is still small in absolute terms (57 claims): volume 10a part 2 and volume 10b, and the Dutch-resistance units, are the remaining Dutch work. Remaining recommended steps: de Jong 10a-2 and 10b, Joslen, and a Polish-authored source.
+
 ## Candidate sources not yet in the references
 
 Checked for a free official or openly released text, 10 November 2026.
@@ -222,7 +237,7 @@ Favour the biggest gaps and free access. Entering leftover facts from sources al
 
 3. **de Lattre leftover-entry pass** (`R686`). Notes already exist. Aim at the French First Army, I and II Corps, and March 1945 (currently no French source that month). Access stays the existing Internet Archive lending copy (borrow-only, in copyright). No purchase if that copy still opens.
 
-4. **de Jong, deel 10a and 10b**, from the NIOD library. Free, official, openly licensed. First own-nation source for the Princess Irene Brigade, and Dutch-theatre context for Canadian and British units in the Netherlands.
+4. **de Jong, deel 10a and 10b**, from the NIOD library (10a part 1, chapters 1-7, done on `dejong-10a1`, 12 November 2026; 10a part 2 and 10b remain). Free, official, openly licensed. First own-nation source for the Princess Irene Brigade, and Dutch-theatre context for Canadian and British units in the Netherlands.
 
 5. **Joslen, *Orders of Battle***. Free official British OOB, already on the roadmap. Use it for formation dates, independent brigades and relation dates, not as a place source. The 79th Armoured Division now has Ellis-supported place rows; Joslen is still wanted for composition and attachments. May need Scott to save the PDFs if the General Staff host remains blocked from this box.
 

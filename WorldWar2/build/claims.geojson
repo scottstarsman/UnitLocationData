@@ -62531,6 +62531,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9305,
+     43.1257
+    ]
+   },
+   "properties": {
+    "claim_id": "C9275",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-23",
+    "place_id": "PL0833",
+    "location_name": "Toulon, Var (2nd Brigade only)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "2nd Brigade fights in Toulon",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 84, 90"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.8492,
      48.3274
     ]
@@ -79464,6 +79505,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.1158,
+     46.4546
+    ]
+   },
+   "properties": {
+    "claim_id": "C9276",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL4111",
+    "location_name": "Paray-le-Monial, Saône-et-Loire (detachment only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Detachment reaches Paray-le-Monial",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 144-146"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -85935,6 +86017,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R888;R889;R002",
     "source_locator": "R888: para 36; R889: para 246"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.337,
+     47.6229
+    ]
+   },
+   "properties": {
+    "claim_id": "C9277",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-12",
+    "place_id": "PL4112",
+    "location_name": "Montbard, Côte-d'Or (Savary squadron only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Squadron makes contact with the 2nd Armoured Division at Montbard",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 154"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.337,
+     47.6229
+    ]
+   },
+   "properties": {
+    "claim_id": "C9313",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-002D",
+    "unit_name": "French 2nd Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-12",
+    "place_id": "PL4112",
+    "location_name": "Montbard, Côte-d'Or (1st Spahis (1st R.M.S.M.) only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Spahis make contact with the 1st Free French Division at Montbard",
+    "operation_id": "OP-DRAGOON",
+    "operation": "Operation Dragoon",
+    "operation_type": "operation",
+    "campaign": "Southern France",
+    "operation_name": "Dragoon",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 154"
    }
   },
   {
@@ -96110,6 +96274,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.4947,
+     47.6863
+    ]
+   },
+   "properties": {
+    "claim_id": "C9278",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-20",
+    "place_id": "PL0987",
+    "location_name": "Lure, Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Stopped on the road from Lure to L'Isle-sur-le-Doubs",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 183"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2296,
      50.7703
     ]
@@ -99506,6 +99711,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R890;R002",
     "source_locator": "R890: para 107, Appendix \"C\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5803,
+     47.648
+    ]
+   },
+   "properties": {
+    "claim_id": "C9279",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL4113",
+    "location_name": "Lyoffans, Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Captures Lyoffans and the villages beyond",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 187"
    }
   },
   {
@@ -105656,6 +105902,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R268;R002",
     "source_locator": "R268: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6276,
+     47.6561
+    ]
+   },
+   "properties": {
+    "claim_id": "C9280",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-28",
+    "place_id": "PL4114",
+    "location_name": "Frédéric-Fontaine, Haute-Saône",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Holds Frédéric-Fontaine",
+    "operation_id": "OP-VOSGES",
+    "operation": "Battle of the Vosges",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Vosges",
+    "strength_status": "unknown",
+    "location_date": "1944-09-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 188"
    }
   },
   {
@@ -160767,6 +161054,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5886,
+     47.5319
+    ]
+   },
+   "properties": {
+    "claim_id": "C9288",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL3682",
+    "location_name": "Gémonval, Doubs",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Attacks between Gémonval and the Doubs",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 230-231"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6901,
+     47.4522
+    ]
+   },
+   "properties": {
+    "claim_id": "C9302",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-14",
+    "place_id": "PL4124",
+    "location_name": "Colombier-Fontaine, Doubs",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Attacks south of the Doubs at Colombier-Fontaine",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 230-231"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.4833,
      50.8
     ]
@@ -162400,6 +162769,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R882;R002",
     "source_locator": "R882: paras 54, 101"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7625,
+     47.5752
+    ]
+   },
+   "properties": {
+    "claim_id": "C9289",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-17",
+    "place_id": "PL3685",
+    "location_name": "Héricourt, Haute-Saône",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Takes Héricourt and crosses the Lisaine",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 236-237"
    }
   },
   {
@@ -170894,6 +171304,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.8735,
+     47.6902
+    ]
+   },
+   "properties": {
+    "claim_id": "C9281",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-23",
+    "place_id": "PL4115",
+    "location_name": "Éloie, Territoire de Belfort",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Attacks at Éloie and Rougegoutte",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 270"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.4667,
      50.7833
     ]
@@ -171174,6 +171625,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: pp. 268-269"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.846,
+     47.823
+    ]
+   },
+   "properties": {
+    "claim_id": "C9282",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-24",
+    "place_id": "PL4116",
+    "location_name": "Ballon d'Alsace, Haut-Rhin / Vosges / Territoire de Belfort",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Legion battalion takes the summit of the Ballon d'Alsace",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 270"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.9669,
+     47.7353
+    ]
+   },
+   "properties": {
+    "claim_id": "C9283",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-24",
+    "place_id": "PL4117",
+    "location_name": "Rougemont-le-Château, Territoire de Belfort (combat team 3 and Heavy Commando only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Combat team 3 closes on Rougemont-le-Château",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-11-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 270-271"
    }
   },
   {
@@ -207179,6 +207712,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1622,
+     48.1273
+    ]
+   },
+   "properties": {
+    "claim_id": "C9296",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-20",
+    "place_id": "PL1021",
+    "location_name": "Orbey, Haut-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Attacks repeatedly in the Orbey area",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 299"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.72,
      50.0042
     ]
@@ -224276,6 +224850,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7055,
+     48.3181
+    ]
+   },
+   "properties": {
+    "claim_id": "C9284",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-02",
+    "place_id": "PL0911",
+    "location_name": "Rhinau, Bas-Rhin",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "relocation",
+    "current_activity": "Takes over the Rhinau sector from the 2nd Armoured Division",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 316"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5842,
      49.9622
     ]
@@ -225622,6 +226237,47 @@
     "location_temporal_offset_days": -4,
     "reference_ids": "R345;R002",
     "source_locator": "R345: Assignment and Attachment to Higher Units, row 6 Jan 45, and Command Posts, row 2 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8547,
+     48.676
+    ]
+   },
+   "properties": {
+    "claim_id": "C9297",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-06",
+    "place_id": "PL4099",
+    "location_name": "Kilstett, Bas-Rhin (northern sub-sector only)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds the Kilstett and Hoerdt moles",
+    "operation_id": "OP-NORDWIND",
+    "operation": "Operation Nordwind",
+    "operation_type": "operation",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": "Nordwind",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 328"
    }
   },
   {
@@ -239979,6 +240635,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1788,
+     47.8087
+    ]
+   },
+   "properties": {
+    "claim_id": "C9290",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL0630",
+    "location_name": "Cernay, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Attacks toward Cernay",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 344-346"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.303,
+     47.7692
+    ]
+   },
+   "properties": {
+    "claim_id": "C9303",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-20",
+    "place_id": "PL4125",
+    "location_name": "Pfastatt, Haut-Rhin (5th Company, 23rd Colonial Infantry Regiment only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Fords the Doller and takes the Pfastatt dye-works",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 346"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9325,
      49.9661
     ]
@@ -240423,6 +241161,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 332"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3265,
+     47.791
+    ]
+   },
+   "properties": {
+    "claim_id": "C9304",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-22",
+    "place_id": "PL4096",
+    "location_name": "Kingersheim, Haut-Rhin (6th and 23rd Colonial Infantry Regiments)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds Kingersheim against the counter-attack",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 349-350"
    }
   },
   {
@@ -245719,6 +246498,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.3712,
+     48.2316
+    ]
+   },
+   "properties": {
+    "claim_id": "C9285",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-23",
+    "place_id": "PL4118",
+    "location_name": "Saint-Hippolyte, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "2nd Brigade crosses the Ill at Saint-Hippolyte",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 357"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.0,
      49.2333
     ]
@@ -246737,6 +247557,47 @@
     "location_temporal_offset_days": -11,
     "reference_ids": "R345;R002",
     "source_locator": "R345: Assignment and Attachment to Higher Units, row 28 Jan 45, and Command Posts, row 17 Jan"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.4869,
+     48.1459
+    ]
+   },
+   "properties": {
+    "claim_id": "C9286",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-28",
+    "place_id": "PL0846",
+    "location_name": "Grussenheim, Haut-Rhin",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Captures Grussenheim with Vésinet's combat command",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-28",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 364"
    }
   },
   {
@@ -252894,6 +253755,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.1788,
+     47.8087
+    ]
+   },
+   "properties": {
+    "claim_id": "C9310",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-01-30",
+    "place_id": "PL0630",
+    "location_name": "Cernay, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Pincer on Cernay from Vieux-Thann",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-01-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 380"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.8842,
      48.6931
     ]
@@ -253878,6 +254780,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.544,
+     48.1647
+    ]
+   },
+   "properties": {
+    "claim_id": "C9287",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-001D",
+    "unit_name": "French 1st Infantry Division (1st Free French Division)",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL4119",
+    "location_name": "Marckolsheim, Bas-Rhin",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "capture",
+    "current_activity": "Takes Marckolsheim",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 371"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3556,
      48.0817
     ]
@@ -254698,6 +255641,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.2415,
+     47.8095
+    ]
+   },
+   "properties": {
+    "claim_id": "C9291",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-03",
+    "place_id": "PL4120",
+    "location_name": "Wittelsheim, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Line runs from Wittelsheim to Rossallmend",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 386"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      7.3556,
      48.0817
     ]
@@ -254937,6 +255921,47 @@
     "location_temporal_offset_days": -38,
     "reference_ids": "R346;R002",
     "source_locator": "R346: Assignment and Attachment to Higher Units, row 4 Feb 45, and Command Posts, row 28 Dec 44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2286,
+     47.8885
+    ]
+   },
+   "properties": {
+    "claim_id": "C9311",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-004D",
+    "unit_name": "French 4th Moroccan Mountain Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-04",
+    "place_id": "PL4128",
+    "location_name": "Soultz-Haut-Rhin, Haut-Rhin (Loth's Spahi group only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Spahi group bursts into Soultz",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-04",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 388"
    }
   },
   {
@@ -255388,6 +256413,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 392"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3529,
+     47.8956
+    ]
+   },
+   "properties": {
+    "claim_id": "C9305",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-05",
+    "place_id": "PL4097",
+    "location_name": "Réguisheim, Haut-Rhin (21st Colonial Infantry Regiment only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "21st Colonial Infantry Regiment crosses the Ill at Réguisheim",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-05",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 390-391"
    }
   },
   {
@@ -263260,6 +264326,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R671;R001",
     "source_locator": "R671: p. 262"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.541,
+     47.8209
+    ]
+   },
+   "properties": {
+    "claim_id": "C9292",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-09",
+    "place_id": "PL0838",
+    "location_name": "Chalampé, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Reaches the Rhine at Chalampé",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 397"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.541,
+     47.8209
+    ]
+   },
+   "properties": {
+    "claim_id": "C9306",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-02-09",
+    "place_id": "PL0838",
+    "location_name": "Chalampé, Haut-Rhin",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Reaches the Rhine at Chalampé",
+    "operation_id": "OP-COLMAR-POCKET",
+    "operation": "Colmar Pocket",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Colmar Pocket",
+    "strength_status": "unknown",
+    "location_date": "1945-02-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 397"
    }
   },
   {
@@ -311401,6 +312549,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.1399,
+     48.9812
+    ]
+   },
+   "properties": {
+    "claim_id": "C9298",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-19",
+    "place_id": "PL4122",
+    "location_name": "Scheibenhardt, Rheinland-Pfalz (2nd Battalion, 4th Tunisian Tirailleurs, with the divisional artillery)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Crosses the Lauter at Scheibenhardt",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 415"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      8.4353,
      49.4811
     ]
@@ -325751,6 +326940,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.4336,
+     49.3166
+    ]
+   },
+   "properties": {
+    "claim_id": "C9299",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-03-30",
+    "place_id": "PL0836",
+    "location_name": "Speyer, Rheinland-Pfalz (three units only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "Three units at Speyer ordered to cross the Rhine",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 424"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.9167,
      50.2667
     ]
@@ -326029,8 +327259,8 @@
     "location_date": "1945-03-31",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R544;R061;R002",
-    "source_locator": "R544: p. 322; R061: section French & German campaign (1944-1945)"
+    "reference_ids": "R544;R061;R686;R002",
+    "source_locator": "R544: p. 322; R061: section French & German campaign (1944-1945); R686: pp. 424-426"
    }
   },
   {
@@ -328491,6 +329721,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 435"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.3453,
+     49.1242
+    ]
+   },
+   "properties": {
+    "claim_id": "C9307",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL4126",
+    "location_name": "Leimersheim, Rheinland-Pfalz (Bourgund's group (21st Colonial Infantry Regiment) only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Crosses the Rhine at Leimersheim",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 430-431"
    }
   },
   {
@@ -334600,6 +335871,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R884;R782",
     "source_locator": "R884: para 106"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.6989,
+     48.8844
+    ]
+   },
+   "properties": {
+    "claim_id": "C9293",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-06",
+    "place_id": "PL4121",
+    "location_name": "Pforzheim, Baden-Württemberg",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Reaches Pforzheim",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 442"
    }
   },
   {
@@ -347686,6 +348998,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.6989,
+     48.8844
+    ]
+   },
+   "properties": {
+    "claim_id": "C9300",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-16",
+    "place_id": "PL4121",
+    "location_name": "Pforzheim, Baden-Württemberg (Leblanc's group and 4th Tunisian Tirailleurs)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "surrender",
+    "current_activity": "Encircles two regiments of the 716th Volksgrenadier Division at Pforzheim",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 457"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.1616,
      52.6263
     ]
@@ -354328,6 +355681,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     8.8718,
+     48.7495
+    ]
+   },
+   "properties": {
+    "claim_id": "C9301",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-003D",
+    "unit_name": "French 3rd Algerian Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-20",
+    "place_id": "PL4123",
+    "location_name": "Weil der Stadt, Baden-Württemberg",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "attack",
+    "current_activity": "Goumiers pass Weil der Stadt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 463"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      9.1605,
      47.7664
     ]
@@ -355271,6 +356665,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.8494,
+     47.9961
+    ]
+   },
+   "properties": {
+    "claim_id": "C9308",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-21",
+    "place_id": "PL0638",
+    "location_name": "Freiburg im Breisgau, Baden-Württemberg (6th Colonial Infantry Regiment and 2nd R.C.A. only)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Colonial troops enter Freiburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: pp. 474-475"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.5783,
      49.9481
     ]
@@ -356166,6 +357601,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R884;R782",
     "source_locator": "R884: para 741"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5601,
+     47.8143
+    ]
+   },
+   "properties": {
+    "claim_id": "C9309",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-22",
+    "place_id": "PL4127",
+    "location_name": "Neuenburg am Rhein, Baden-Württemberg (Landouzy's group only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Landouzy leaps 25 km to Neuenburg",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 476"
    }
   },
   {
@@ -360658,12 +362134,12 @@
     "branch": "Armoured",
     "date": "1945-04-24",
     "place_id": "PL4106",
-    "location_name": "Sigmaringen, Baden-Württemberg (Linarès's group and the cavalry regiment)",
+    "location_name": "Sigmaringen, Baden-Württemberg (cavalry regiment and Mozat's column only)",
     "location_represents": "objective",
     "precision_km": 3,
     "confidence": 0.3,
     "event_type": "capture",
-    "current_activity": "Groups enter Sigmaringen",
+    "current_activity": "Cavalry regiment enters Sigmaringen",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",
     "operation_type": "campaign",
@@ -360676,6 +362152,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 488"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2303,
+     48.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C9294",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-04-24",
+    "place_id": "PL4106",
+    "location_name": "Sigmaringen, Baden-Württemberg (Linarès's group only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Linarès's group reaches Sigmaringen",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 488, 454"
    }
   },
   {
@@ -368022,6 +369539,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     9.7419,
+     47.4143
+    ]
+   },
+   "properties": {
+    "claim_id": "C9312",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARM-005D",
+    "unit_name": "French 5th Armoured Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1945-05-02",
+    "place_id": "PL4129",
+    "location_name": "Dornbirn, Vorarlberg (Combat Command 5 element only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Combat Command 5 element enters Dornbirn",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-02",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 498"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      11.4972,
      53.3244
     ]
@@ -370516,6 +372074,47 @@
     "location_temporal_offset_days": -12,
     "reference_ids": "R360;R528;R002",
     "source_locator": "R360: Assignment and Attachment to Higher Units, row 6 May 45; R528: Assignment and Attachment to Higher Units, row 11 May 45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2664,
+     47.1289
+    ]
+   },
+   "properties": {
+    "claim_id": "C9295",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-002D",
+    "unit_name": "French 2nd Moroccan Infantry Division",
+    "nationality": "France",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1945-05-06",
+    "place_id": "PL0984",
+    "location_name": "Sankt Anton am Arlberg, Tirol (detachment only)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Detachment holds the St Anton end of the Arlberg tunnel",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R002",
+    "source_locator": "R686: p. 500"
    }
   },
   {

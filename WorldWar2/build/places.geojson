@@ -51618,7 +51618,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 10
+    "claims_count": 11
    }
   },
   {
@@ -82738,6 +82738,26 @@
     "precision_km": 50,
     "country": "NL",
     "region": "Noord-Brabant",
+    "claims_count": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.75,
+     51.4167
+    ]
+   },
+   "properties": {
+    "place_id": "PL4154",
+    "name": "Zeeland (liberated area)",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 50,
+    "country": "NL",
+    "region": "Zeeland",
     "claims_count": 1
    }
   }

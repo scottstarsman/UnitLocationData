@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong 10a-1 follow-up 2: first entry of the Bewakingstroepen der Binnenlandse Strijdkrachten (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026): enter the Bewakingstroepen as a formal unit under the irregular-forces rule. Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. A second source family was not used (van Ojen is cited by de Jong but was not re-opened).
+
+- **New unit `NL-INF-BEWAK`:** Bewakingstroepen der Binnenlandse Strijdkrachten, Netherlands, echelon `regiment/battle_group`, independent (no parent), theater `western_europe`, `formed_date` 22 September 1944 (van Houten splits the BS and gives command to W. J. van Dijk, pp. 561-563). Old value: no unit; new value: this row. Numbered battalions are not split out (the London return names two battalions but de Jong says that count is incomplete). De Blauwe Jagers (about 300 men under van Dijk on 25 September, p. 563) stay in the private notes.
+- **New claims (5, `C9389`-`C9393`; old value none, new value the row):** `C9389` 22 September 1944, representative point at Eindhoven `PL2596`, van Dijk appointed, `0.3`. `C9390` 1 December 1944 (winter after Walcheren), Zeeland `PL4154`, military guard duty (Germans still on Schouwen), `0.3`. `C9391` 15 January 1945 (mid-January), liberated south `PL4153`, more than 10,000 men and a further 2,400 sets of clothing, `0.3`; van Ojen's 13,000-14,000 (end of December) and about 16,000 (mid-January), cited by de Jong, are recorded in the notes and not used as the strength. `C9392` 1 March 1945 (early March), 19 gezagscompagnieën / about 4,000 men formed from the Bewakingstroepen and placed with the Militair Gezag, `0.3` (the companies are not entered as units). `C9393` 1 May 1945 (early May), de Jong's working figure of more than 10,000, `0.3`; the London return of two battalions / about 1,500 is recorded in the notes as too low, not as a conflict-group alternate (same source family, and de Jong is correcting his own cited return).
+- **New place:** `PL4154` Zeeland (liberated area) (area, 50 km, GeoNames `R782`, 2744011).
+- **Tests:** new scenario 241.
+
 ## 12 November 2026 — de Jong 10a-1 follow-up: first entry of the Stoottroepen der Binnenlandse Strijdkrachten (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026): enter the Stoottroepen as formal military units; do not enter the KP, OD or RVV (see the irregular-forces rule of the same day). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. A second source family was not used: NIMH pages that appeared in a search were not opened (they returned 404); van Ojen, *De Binnenlandse Strijdkrachten* (1972), is cited by de Jong but was not re-opened.

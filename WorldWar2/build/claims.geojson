@@ -99472,6 +99472,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9389",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Van Dijk is given command of the Bewakingstroepen as the BS are split into Stoottroepen and Bewakingstroepen",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 561-563"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -183317,6 +183358,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.75,
+     51.4167
+    ]
+   },
+   "properties": {
+    "claim_id": "C9390",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL4154",
+    "location_name": "Zeeland (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Carry out military guard duty in Zeeland (German troops still on Schouwen)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769, footnote 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -236077,6 +236159,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R294;R002",
     "source_locator": "R294: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9391",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-01-15",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "More than 10,000 men in the liberated south; the prince obtains a further 2,400 sets of clothing",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 767, 757-758"
    }
   },
   {
@@ -294830,6 +294953,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R886;R782",
     "source_locator": "R886: para 91"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9392",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area) (nineteen gezagscompagnieën (about 4,000 men))",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Nineteen gezagscompagnieën, about 4,000 men, are formed from the Bewakingstroepen and placed with the Militair Gezag",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 757"
    }
   },
   {
@@ -372062,6 +372226,47 @@
     "confidence": 0.3,
     "event_type": "other",
     "current_activity": "Six battalions, about 4,000 men, in the liberated south (London return, early May 1945)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 757-758"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9393",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "More than 10,000 men in the liberated south (de Jong's working figure; the London return of two battalions / about 1,500 is too low)",
     "operation_id": "OP-CAMP-CENTRAL-EUROPE",
     "operation": "Central Europe campaign",
     "operation_type": "campaign",

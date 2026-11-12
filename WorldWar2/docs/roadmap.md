@@ -315,7 +315,7 @@ Earlier relations: 27 were closed (3 at a sourced date, 6 at the end of resistan
 - Divisions of the Alpine and Austrian area after 5 May; individual divisions in the Ruhr pocket other than those named, the 176th Division after 1 April (the Lexikon puts it at Duisburg in April, CMH at Winterberg on 1 April; no row), the 89th Division ("in Umgliederung") and the 719th Division ("Verbleib unbekannt").
 - Hamburg, Bremen and Holland below army level; Norway, Denmark and Italy; Army Group Vistula, the Ninth Army, the Twelfth Army's operations east of the Elbe after 21 April and units shown in the East.
 - Operations: no operation added; German rows sit under `OP-RUHR-POCKET`, `OP-HARZ-POCKET`, `OP-NUREMBERG` and `OP-CAMP-CENTRAL-EUROPE`. `OP-VERITABLE` is still missing.
-- The answer grid (`wc_grid.py`) runs only to 5 March 1945, so it does not exercise any April or May date.
+- The answer grid (`wc_grid.py`) ran only to 5 March 1945 when this batch was written, so it did not then exercise any April or May date. **Lifted 12 November 2026 (Scott):** the standard grid's weekly dates now run through 8 May 1945 (49 weekly Mondays from 5 June 1944 to 7 May 1945, plus 8 May 1945 itself, which the weekly cadence does not land on). See `docs/HANDOFF.md` and the changelog.
 
 **Open points (my recommendation for each):**
 1. `GER-OBNW-000H` (OB Nordwest) is a placeholder that is not used: OB Nordwest is Army Group H renamed, and all rows stay on `GER-AG-00HG` with the renaming in the notes of `C1201`. Recommendation: keep as it is; merge or remove the placeholder only if Scott wants a separate OB Nordwest unit.

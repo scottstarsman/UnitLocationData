@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — extend the standard who_controls grid weekly dates through 8 May 1945 (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026): extend the standard `wc_grid.py` weekly dates through 8 May 1945; keep the weekly cadence; include 8 May 1945 itself as the final date if the cadence does not land on it.
+
+- **Date list.** Old value: 40 weekly Mondays from 5 June 1944 to 5 March 1945, plus daily answers 5 June to 31 December 1944 for US-ABN-082D, GER-PZ-LEHRD and US-ARM-002D. New value: 49 weekly Mondays from 5 June 1944 to 7 May 1945, plus 8 May 1945 (a Tuesday; the weekly cadence does not land on VE-Day), and the same daily probe dates as before (unchanged). Reason: the old window did not exercise April or May, including surrenders and the Wieringermeer rows. The tool is `/workspace/UnitLocationData-tools/wc_grid.py` (not in this repo).
+- **Docs.** The method paragraph in `docs/HANDOFF.md`, a new "who_controls grid" section in `docs/methodology.md`, the German 1945 Batch 2 limitation in `docs/roadmap.md` (marked lifted), and `/workspace/UnitLocationData-tools/README.md` now describe the new window. Historical changelog entries that report a 5,020-answer or 40-week comparison are left as a record of those earlier runs.
+- **CI and tests.** No workflow or semantic-test config pinned the old date list or a fixed answer count, so none was changed.
+
 ## 12 November 2026 — de Jong 10a-1 follow-up 2: BS gewest 11 (Noord-Holland Noord) and the Wieringermeer stoottroepen, 17 April 1945 (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026): add claims for the stoottroepen in the Wieringermeerpolder around 17 April 1945 (deel 10b-2), under the appropriate North-Holland BS command; create that command as a unit only if it meets the formal-unit rule. It does: de Jong, deel 10b, p. 706 and p. 1315, describes gewest 11 as a territorial BS command with a lieutenant-colonel commander (J. G. M. Wastenecker), a staff, and orders from Colonel Koot. New reference `R895` (de Jong, *Het Koninkrijk*, deel 10b, 1981-1982, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only.

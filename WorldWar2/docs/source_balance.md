@@ -177,20 +177,20 @@ Canadian own-nation support rose from 62.3% to 76.4%, and the two thin months na
 
 ## De Lattre leftovers pass (re-measured 12 November 2026)
 
-The third recommended step was done on branch `delattre-leftovers` on 12 November 2026, in five chunks. The source book (`R686`, borrow-only on the Internet Archive) could not be re-opened (401, not bypassed), so every entry came from the private pass-2 reading notes (printed pages cited, paraphrase only). 17 existing rows gained a supporting citation (4 raises), 104 claims were added (`C9244`-`C9347`) and 53 places (`PL4090`-`PL4142`). The same survey script was run on `build/all_claims.csv` of `main` `9f6dce1` and of the branch.
+The third recommended step was done on branch `delattre-leftovers` on 12 November 2026, in six chunks. The source book (`R686`, borrow-only on the Internet Archive) could not be re-opened (401, not bypassed), so every entry came from the private pass-2 reading notes (printed pages cited, paraphrase only). 17 existing rows gained a supporting citation (4 raises), 108 claims were added (`C9244`-`C9351`) and 57 places (`PL4090`-`PL4146`). The same survey script was run on `build/all_claims.csv` of `main` `9f6dce1` and of the branch.
 
 | Measure | On main `9f6dce1` | After the de Lattre pass |
 |---|---|---|
-| Claims | 9,232 | 9,336 |
-| Claims citing de Lattre (`delattre_french_first_army`) | 69 (0.7%) | 190 (2.0%) |
-| French sources, citing / exclusive | 0.8% (77) / 0.5% | 2.1% (198) / 1.6% |
-| French units, own-nation / only US or Wikipedia | 17.9% (42 of 235) / 80.9% (190) | 45.4% (148 of 326) / 53.7% (175) |
+| Claims | 9,232 | 9,340 |
+| Claims citing de Lattre (`delattre_french_first_army`) | 69 (0.7%) | 194 (2.1%) |
+| French sources, citing / exclusive | 0.8% (77) / 0.5% | 2.2% (202) / 1.6% |
+| French units, own-nation / only US or Wikipedia | 17.9% (42 of 235) / 80.9% (190) | 46.1% (152 of 330) / 53.0% (175) |
 | French units, own-nation by month | Oct 1944 14.3%, Dec 6.2%, Jan 1945 11.4%, Feb 9.4%, Mar 0.0%, May 8.7% | Oct 20.0%, Dec 28.6%, Jan 40.0%, Feb 37.2%, Mar 21.4%, May 27.6% |
 | Focus units with no own-nation source | 13 | 9 (French 8 to 4) |
-| US sources, citing / exclusive | 68.8% / 63.1% | 68.1% / 62.3% |
+| US sources, citing / exclusive | 68.8% / 63.1% | 68.0% / 62.3% |
 | 12th Army Group maps, share of all claims | 52.3% | 51.7% |
 
-French own-nation support rose from 17.9% to 45.4% and March 1945, which had none, to 21.4%. The French First Army, I Corps, II Corps and the 10th Division now have an own-nation source; the 14th and 27th Divisions, the Atlantic Army and the Gironde detachment still have none. De Lattre's own wording is partisan on the disputes with Devers and SHAEF, and the German rows record his reading of the enemy, so they enter at 0.3. Left for Scott: Italy and Elba rows (theater `mediterranean`) wait on adding `IT` to the `places.csv` country vocabulary. Remaining recommended steps: de Jong, Joslen, and a Polish-authored source.
+French own-nation support rose from 17.9% to 46.1% and March 1945, which had none, to 21.4%. The French First Army, I Corps, II Corps and the 10th Division now have an own-nation source; the 14th and 27th Divisions, the Atlantic Army and the Gironde detachment still have none. De Lattre's own wording is partisan on the disputes with Devers and SHAEF, and the German rows record his reading of the enemy, so they enter at 0.3. Chunk 6 added `IT` to the `places.csv` country vocabulary (Scott approved, 12 November 2026) and entered the four Italy and Elba rows (theater `mediterranean`, `C9348`-`C9351`, places `PL4143`-`PL4146`). Remaining recommended steps: de Jong, Joslen, and a Polish-authored source.
 
 ## Candidate sources not yet in the references
 

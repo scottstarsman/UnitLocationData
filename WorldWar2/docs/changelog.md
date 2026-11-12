@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Lattre leftovers, chunk 6: Italy added to the country vocabulary; Elba, Naples and Taranto rows (branch `delattre-leftovers`)
+
+**Schema change, approved by Scott on 12 November 2026** ("Let's add the places for Italy."): the country vocabulary of `places.csv` (`schema/vocabularies.json`, `country`) gains `IT` (Italy). Old: 17 codes (AT, BE, BY, CZ, DE, DK, FR, GB, HU, LT, LU, MD, NL, PL, RU, SK, UA). New: those plus `IT`. Reason: four rows from the de Lattre notes (left out of chunk 5 for this reason) are in Italy. `schema/README.md` notes the addition; the validator reads the vocabulary file, so no script changed. No existing place changed.
+
+Source and method as in chunks 1-5: de Lattre, *The History of the French First Army* (`R686`), entered from the private pass-2 notes only, paraphrase only, **the book not re-opened** (the Internet Archive borrow-only text returns 401). Theater `mediterranean`, operation `OP-FRONT-MEDITERRANEAN` (the per-front umbrella, Scott's decision of 9 November 2026).
+
+- **New claims (4, `C9348`-`C9351`; old value none, new value the row):** 9th Colonial Division at Portoferraio (18 June 1944, `C9348`) and Porto Longone, today Porto Azzurro (19 June, `C9349`), both `capture` at `0.3` because the account gives the place for the whole Elba force with other units named; the First Army (de Lattre taking over the French units from Juin) near Naples (23 July, `C9350`, `command_change`, `0.3`, the point is the city and approximate); the First Army at Taranto, port of embarkation, with de Lattre's pennant on the *Batory* (10 August, `C9351`, `hq_observation`, `0.5`: one family, an exact named place on a stated day).
+- **New places (4, `PL4143`-`PL4146`, country `IT`):** Portoferraio, Porto Azzurro, Naples and Taranto, from the offline GeoNames dump (`R782`); region names Tuscany, Campania and Apulia as GeoNames gives them.
+- **No citations, raises, conflict groups or command relations in this chunk.** Corsica has only unit lists, so no row; the 14th and 27th Divisions name no place.
+- **Tests:** new scenario 232 (the four rows, theater `mediterranean`, country `IT` places).
+
 ## 12 November 2026 — de Lattre leftovers, chunk 5: the Toulon plan and German units in southern France, August-September 1944 (branch `delattre-leftovers`)
 
 Approved by Scott (roadmap 374, step 3). Source and method as in chunks 1-4: de Lattre, *The History of the French First Army* (`R686`), entered from the private pass-2 notes (pass-1 lines where the pass-2 line was terse), paraphrase only, the book not re-opened. The German rows are the French account's reading of the enemy, not German records, and each row says so. All seven rows are `0.3` (a plan or one axis only, or part of a formation, or the account's report of the enemy).

@@ -14,9 +14,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Canada | division | 0 | 0 | 5 | 5 | 3 | 424 |
 | Canada | brigade | 0 | 0 | 2 | 2 | 1 | 31 |
 | Czechoslovakia | brigade | 0 | 0 | 1 | 1 | 1 | 8 |
-| France | army | 0 | 0 | 2 | 2 | 2 | 34 |
+| France | army | 0 | 0 | 2 | 2 | 2 | 36 |
 | France | corps | 0 | 0 | 2 | 2 | 2 | 40 |
-| France | division | 0 | 0 | 12 | 12 | 10 | 252 |
+| France | division | 0 | 0 | 12 | 12 | 10 | 254 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 66 |
 | Germany | army | 0 | 0 | 17 | 17 | 10 | 341 |
 | Germany | corps | 1 | 0 | 46 | 47 | 41 | 846 |
@@ -41,7 +41,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **420** | **427** | **259** | **9336** |
+| **All** | | **7** | **0** | **420** | **427** | **259** | **9340** |
 
 ## Operations
 
@@ -49,20 +49,20 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 9 | 6 | 125 |
+| umbrella | 9 | 7 | 129 |
 | campaign | 9 | 9 | 7442 |
 | operation | 33 | 33 | 854 |
 | battle | 20 | 20 | 598 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **72** | **9336** |
+| **All** | **75** | **73** | **9340** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4126 places and 185 alias names for 9336 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4130 places and 185 alias names for 9340 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4022 | 9125 |
+| point | 4026 | 9129 |
 | area | 86 | 190 |
 | line | 18 | 21 |
 
@@ -80,6 +80,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | Poland (PL) | 8 | 8 |
 | Belarus (BY) | 5 | 5 |
 | Ukraine (UA) | 4 | 5 |
+| Italy (IT) | 4 | 4 |
 | Denmark (DK) | 1 | 2 |
 | Moldova (MD) | 1 | 2 |
 | Hungary (HU) | 1 | 1 |

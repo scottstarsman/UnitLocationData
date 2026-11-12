@@ -14151,6 +14151,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     10.313,
+     42.8123
+    ]
+   },
+   "properties": {
+    "claim_id": "C9348",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "mediterranean",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-18",
+    "place_id": "PL4143",
+    "location_name": "Portoferraio, Tuscany (with other units of the Elba force)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Takes part in the capture of Portoferraio",
+    "operation_id": "OP-FRONT-MEDITERRANEAN",
+    "operation": "Mediterranean and Italy",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Mediterranean",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 35-45"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.6681,
      49.3353
     ]
@@ -14636,6 +14677,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R670;R001",
     "source_locator": "R670: p. 261"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.3972,
+     42.7675
+    ]
+   },
+   "properties": {
+    "claim_id": "C9349",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-INF-009D",
+    "unit_name": "French 9th Colonial Infantry Division",
+    "nationality": "France",
+    "theater": "mediterranean",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-06-19",
+    "place_id": "PL4144",
+    "location_name": "Porto Azzurro, Tuscany (with other units of the Elba force)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Takes part in the capture of Porto Longone",
+    "operation_id": "OP-FRONT-MEDITERRANEAN",
+    "operation": "Mediterranean and Italy",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Mediterranean",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: pp. 35-45"
    }
   },
   {
@@ -33708,6 +33790,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     14.2681,
+     40.8522
+    ]
+   },
+   "properties": {
+    "claim_id": "C9350",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARMY-001A",
+    "unit_name": "French First Army (Army B until 25 September 1944)",
+    "nationality": "France",
+    "theater": "mediterranean",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-07-23",
+    "place_id": "PL4145",
+    "location_name": "Naples, Campania",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "De Lattre takes over the French units from Juin near Naples",
+    "operation_id": "OP-FRONT-MEDITERRANEAN",
+    "operation": "Mediterranean and Italy",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Mediterranean",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-23",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 57"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.937,
      49.1937
     ]
@@ -49814,6 +49937,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R891;R782",
     "source_locator": "R891: para 116"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     17.2471,
+     40.4644
+    ]
+   },
+   "properties": {
+    "claim_id": "C9351",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "FR-ARMY-001A",
+    "unit_name": "French First Army (Army B until 25 September 1944)",
+    "nationality": "France",
+    "theater": "mediterranean",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-08-10",
+    "place_id": "PL4146",
+    "location_name": "Taranto, Apulia",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "De Lattre at Taranto aboard the Batory",
+    "operation_id": "OP-FRONT-MEDITERRANEAN",
+    "operation": "Mediterranean and Italy",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Mediterranean",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R686;R782",
+    "source_locator": "R686: p. 63"
    }
   },
   {

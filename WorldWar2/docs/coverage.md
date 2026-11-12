@@ -25,7 +25,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Germany | regiment/battle_group | 0 | 0 | 36 | 36 | 3 | 82 |
 | Germany | battalion | 0 | 0 | 6 | 6 | 0 | 9 |
 | Germany | other | 0 | 0 | 8 | 8 | 0 | 38 |
-| Netherlands | brigade | 0 | 0 | 1 | 1 | 0 | 15 |
+| Netherlands | brigade | 0 | 0 | 1 | 1 | 0 | 18 |
 | Poland | division | 0 | 0 | 1 | 1 | 1 | 85 |
 | Poland | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 28 |
@@ -41,7 +41,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **420** | **427** | **259** | **9363** |
+| **All** | | **7** | **0** | **420** | **427** | **259** | **9366** |
 
 ## Operations
 
@@ -50,19 +50,19 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 129 |
-| campaign | 9 | 9 | 7454 |
-| operation | 33 | 33 | 865 |
+| campaign | 9 | 9 | 7456 |
+| operation | 33 | 33 | 866 |
 | battle | 20 | 20 | 598 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9363** |
+| **All** | **75** | **73** | **9366** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4132 places and 185 alias names for 9363 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4132 places and 185 alias names for 9366 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4028 | 9152 |
+| point | 4028 | 9155 |
 | area | 86 | 190 |
 | line | 18 | 21 |
 
@@ -70,7 +70,7 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 |---|---:|---:|
 | France (FR) | 1605 | 3477 |
 | Germany (DE) | 1458 | 3172 |
-| Netherlands (NL) | 519 | 1514 |
+| Netherlands (NL) | 519 | 1517 |
 | Belgium (BE) | 374 | 847 |
 | Luxembourg (LU) | 89 | 233 |
 | Austria (AT) | 30 | 48 |

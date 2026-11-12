@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong, deel 10a-1, chunk 3: the Irene Brigade at Grave, Heumen and Tilburg; Scheldt and Brabant citations, October-November 1944 (branch `dejong-10a1`)
+
+Approved by Scott (roadmap 374, step 4). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. The Irene Brigade rows are a Dutch account of a Dutch brigade. The Scheldt and Brabant citations follow Stacey and Thompson on the page and so are cited without any confidence raise.
+
+- **Supporting citations (10; old value of `reference_ids`, new value with `R894` added; confidence unchanged on all, reason on each row):** Irene Brigade at Grave, 26 September (`C1605`, span 22 September onward), on the Walcheren coast (`C9041`, `C9052`, span mid-November to early April); Polish Armoured Division at Breda, 29 October (`C1564`); 3rd Canadian Division at the Leopold canal, 6 October (`C1312`), at the Braakman landing, 9 October (`C1313`), at Eede, 16 October (`C7366`), at Knokke, 2 November (`C7383`) and Zeebrugge, 3 November (`C7384`); 2nd Canadian Division at Goes, 29 October (`C7390`).
+- **New claims (3, `C9375`-`C9377`; old value none, new value the row):** the Irene Brigade guards the Maas bridge at Grave from 22 September (`C9375`, `0.5`); guards the Maas-Waal canal bridges at Heumen and Neerbosch from the beginning of October (`C9376`, `0.3`, day inferred); takes part in the liberation of Tilburg, 27 October (`C9377`, `0.3`).
+- **Tests:** new scenario 235.
+
 ## 12 November 2026 — de Jong, deel 10a-1, chunk 2: Market-Garden, the Nijmegen bridges and Dutch intelligence reports on the SS divisions, September 1944 (branch `dejong-10a1`)
 
 Approved by Scott (roadmap 374, step 4). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. Where the page names a Dutch source (the Eindhoven municipal diary, a local history, Boeree, N. A. de Groot, the archive of the intelligence group Albrecht) or a German document, the row says so and counts as independent; where de Jong follows MacDonald, Ellis or Stacey the row is cited without a raise.

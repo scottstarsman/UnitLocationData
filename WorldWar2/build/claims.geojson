@@ -99185,6 +99185,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7411,
+     51.7597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9375",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL0824",
+    "location_name": "Grave, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Guards the Maas bridge at Grave",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -101472,8 +101513,8 @@
     "location_date": "1944-09-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R676;R002",
-    "source_locator": "R676: section Operation Market Garden"
+    "reference_ids": "R676;R894;R002",
+    "source_locator": "R676: section Operation Market Garden; R894: p. 477"
    }
   },
   {
@@ -109189,6 +109230,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8444,
+     51.765
+    ]
+   },
+   "properties": {
+    "claim_id": "C9376",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL4018",
+    "location_name": "Heumen, Gelderland (from the beginning of October)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Guards the Maas-Waal canal bridges",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2231,
      48.2225
     ]
@@ -115207,8 +115289,8 @@
     "location_date": "1944-10-06",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 393; R888: paras 120-123"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 393; R888: paras 120-123; R894: p. 504"
    }
   },
   {
@@ -116150,8 +116232,8 @@
     "location_date": "1944-10-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 396; R888: paras 138-140"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 396; R888: paras 138-140; R894: p. 504"
    }
   },
   {
@@ -123735,8 +123817,8 @@
     "location_date": "1944-10-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 397; R888: para 152"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 397; R888: para 152; R894: p. 505"
    }
   },
   {
@@ -138545,6 +138627,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C9377",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant (with other forces)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Takes part in the liberation of Tilburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: pp. 477-478"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.3773,
      51.0348
     ]
@@ -138741,8 +138864,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 390; R671: p. 125"
+    "reference_ids": "R668;R671;R894;R002",
+    "source_locator": "R668: p. 390; R671: p. 125; R894: p. 477"
    }
   },
   {
@@ -138905,8 +139028,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 404; R888: para 245"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 404; R888: para 245; R894: p. 509"
    }
   },
   {
@@ -146572,8 +146695,8 @@
     "location_date": "1944-11-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 402; R888: para 166"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 402; R888: para 166; R894: p. 506"
    }
   },
   {
@@ -146941,8 +147064,8 @@
     "location_date": "1944-11-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 402"
+    "reference_ids": "R668;R894;R002",
+    "source_locator": "R668: p. 402; R894: p. 506"
    }
   },
   {
@@ -175272,8 +175395,8 @@
     "location_date": "1944-11-27",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R882;R001",
-    "source_locator": "R882: paras 44, 49"
+    "reference_ids": "R882;R894;R001",
+    "source_locator": "R882: paras 44, 49; R894: p. 477"
    }
   },
   {
@@ -227383,8 +227506,8 @@
     "location_date": "1945-01-03",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R882;R001",
-    "source_locator": "R882: para 131"
+    "reference_ids": "R882;R894;R001",
+    "source_locator": "R882: para 131; R894: p. 477"
    }
   },
   {

@@ -2,6 +2,12 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — irregular forces: unit entries only once organised into formal military units (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026). New general rule, recorded as `docs/HANDOFF.md` standing rule 21 and in the decision log, `CONTRIBUTING.md` ("Add a new unit"), `docs/methodology.md` (new "Irregular forces" section) and `schema/README.md` (after the independent-units rule).
+
+- **Rule.** Old value: no general rule for irregular or resistance forces (only the small-unit and independent-unit rules of 4 November 2026). New value: resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain (for example the Dutch Stoottroepen); loose cells and networks (for example the Dutch KP, OD and RVV) are not entered as units, even when they had a paper organisation or a regional commander. Existence, dates and strength figures for organisations that are not entered stay in the private notes. The small-unit rule still applies to the formal units. Reason: Scott approved this as a general rule when agreeing to enter the Stoottroepen and not the KP, OD or RVV.
+
 ## 12 November 2026 — de Jong 10a-1 follow-up: raise C1036 (70th Division surrender at Middelburg, 6 November 1944) to 0.9 (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026): raise `C1036` given four agreeing sources, at the level the existing confidence rules allow.

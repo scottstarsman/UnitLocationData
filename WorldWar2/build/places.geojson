@@ -3998,7 +3998,7 @@
     "precision_km": 5,
     "country": "NL",
     "region": "Limburg",
-    "claims_count": 11
+    "claims_count": 13
    }
   },
   {
@@ -80798,7 +80798,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Gelderland",
-    "claims_count": 1
+    "claims_count": 3
    }
   },
   {
@@ -82738,7 +82738,7 @@
     "precision_km": 50,
     "country": "NL",
     "region": "Noord-Brabant",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -82759,6 +82759,66 @@
     "country": "NL",
     "region": "Zeeland",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0243,
+     51.5596
+    ]
+   },
+   "properties": {
+    "place_id": "PL4155",
+    "name": "Maas front, Mook to Venlo",
+    "alt_names": null,
+    "kind": "line",
+    "precision_km": 25,
+    "country": "NL",
+    "region": "Limburg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3385,
+     51.5324
+    ]
+   },
+   "properties": {
+    "place_id": "PL4156",
+    "name": "Western Noord-Brabant, Tholen and St. Philipsland",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 50,
+    "country": "NL",
+    "region": "Noord-Brabant",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7634,
+     51.219
+    ]
+   },
+   "properties": {
+    "place_id": "PL4157",
+    "name": "Rhineland, Germany",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 50,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 2
    }
   }
  ]

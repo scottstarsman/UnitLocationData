@@ -96930,6 +96930,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C9394",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-LIM",
+    "unit_name": "Limburgse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Van Kooten, commander of the Stoottroepen-Limburg, is back in Maastricht and begins recruiting",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: p. 556"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -122179,6 +122220,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R890;R002",
     "source_locator": "R890: para 150, Appendix \"D\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4653,
+     51.8792
+    ]
+   },
+   "properties": {
+    "claim_id": "C9397",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-BRB",
+    "unit_name": "Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-10-10",
+    "place_id": "PL4056",
+    "location_name": "Wamel (West Maas en Waal), Gelderland (first company (just over 120 men), dike between Leeuwen and Wamel)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "A first company, just over 120 men under Sjef de Groot, is committed along the dike between Leeuwen and Wamel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 768"
    }
   },
   {
@@ -183399,6 +183481,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.0243,
+     51.5596
+    ]
+   },
+   "properties": {
+    "claim_id": "C9401",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-002",
+    "unit_name": "2de Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL4155",
+    "location_name": "Maas front, Mook to Venlo (five companies)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Five companies on the Maas front from Mook to Venlo, in action through the winter of 1944-45",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3385,
+     51.5324
+    ]
+   },
+   "properties": {
+    "claim_id": "C9402",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-003",
+    "unit_name": "3de Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL4156",
+    "location_name": "Western Noord-Brabant, Tholen and St. Philipsland (six companies)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Six companies in the west of Noord-Brabant and on Tholen and St. Philipsland, in action through the winter of 1944-45",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.75,
      49.3167
     ]
@@ -222267,6 +222431,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C9395",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-LIM",
+    "unit_name": "Limburgse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "The Limburg battalions are converted to light infantry battalions and the old ranks are reintroduced",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: p. 760"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4653,
+     51.8792
+    ]
+   },
+   "properties": {
+    "claim_id": "C9399",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-001",
+    "unit_name": "1ste Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL4056",
+    "location_name": "Wamel (West Maas en Waal), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "The three Waal companies become part of the 1st battalion of the Brabantse Stoottroepen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7833,
      50.1333
     ]
@@ -257807,6 +258053,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 371"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9398",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-BRB",
+    "unit_name": "Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "After de Groot is dismissed, the Brabant battalions are likewise converted to light infantry",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 760"
    }
   },
   {
@@ -294994,6 +295281,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R894;R002",
     "source_locator": "R894: p. 757"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7634,
+     51.219
+    ]
+   },
+   "properties": {
+    "claim_id": "C9396",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-LIM",
+    "unit_name": "Limburgse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL4157",
+    "location_name": "Rhineland, Germany (Zuidlimburgse battalions (not numbered in the source))",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "The Zuidlimburgse battalions, following the Americans, enter the Rhineland",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7634,
+     51.219
+    ]
+   },
+   "properties": {
+    "claim_id": "C9400",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-001",
+    "unit_name": "1ste Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL4157",
+    "location_name": "Rhineland, Germany (two companies)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Two companies enter the Rhineland with the British Second Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
    }
   },
   {

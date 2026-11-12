@@ -74,14 +74,14 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 9382, dated 1939-09-16 to 1945-05-31 |
-| units in `data/units.csv` | 432: 425 active (have claims), 7 placeholders |
-| claim files (one per active unit) | 425 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 9391, dated 1939-09-16 to 1945-05-31 |
+| units in `data/units.csv` | 437: 430 active (have claims), 7 placeholders |
+| claim files (one per active unit) | 430 |
 | conflict groups / claims in a group | 122 / 273 |
-| places (`data/places.csv`) / retired in `data/place_merges.csv` | 4138 / 9 |
+| places (`data/places.csv`) / retired in `data/place_merges.csv` | 4141 / 9 |
 | operations / operation relations | 75 / 14 |
-| command relations (`data/command_relations.csv`) | 1284 |
-| relation-to-claim evidence links (`data/command_relation_claims.csv`) | 3163 |
+| command relations (`data/command_relations.csv`) | 1290 |
+| relation-to-claim evidence links (`data/command_relation_claims.csv`) | 3173 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 34 |
 | deferred relations (`docs/deferred_relations.md`, ids D01 onward) | 10 |
 | references (`data/references.csv`, generated) | 887, of which 769 cited by at least one claim (the others are cited by units or operations) |
@@ -89,27 +89,27 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 2 / 11 |
 | controlled vocabularies in `schema/vocabularies.json` | 43 |
 
-Claims by nationality: Germany 4093, US 3081, UK 1142, Canada 589, France 330, Poland 92, Netherlands 31, Belgium 16, Czechoslovakia 8.
+Claims by nationality: Germany 4093, US 3081, UK 1142, Canada 589, France 330, Poland 92, Netherlands 40, Belgium 16, Czechoslovakia 8.
 
-Claims by echelon: division 6393, corps 1733, army 680, brigade 283, army_group 130, regiment/battle_group 106, other 38, battalion 19.
+Claims by echelon: division 6393, corps 1733, army 680, brigade 283, army_group 130, regiment/battle_group 111, other 38, battalion 23.
 
-Claims by branch: Army 6491, Armoured 1817, Luftwaffe 469, Waffen-SS 366, Airborne 238, Navy 1.
+Claims by branch: Army 6500, Armoured 1817, Luftwaffe 469, Waffen-SS 366, Airborne 238, Navy 1.
 
-Claims by event type: other 3911, hq_observation 1682, defense 726, attack 708, capture 390, hq_move 361, arrival 263, relocation 241, command_change 217, subordinate_assignment 206, regroup 184, withdrawal 170, counterattack 84, landing 73, surrender 71, activation 54, redesignation 26, destruction 15.
+Claims by event type: other 3911, hq_observation 1682, defense 728, attack 708, capture 390, hq_move 361, arrival 265, relocation 243, command_change 217, subordinate_assignment 206, regroup 184, withdrawal 170, counterattack 84, landing 73, surrender 71, activation 55, redesignation 28, destruction 15.
 
-Claims by status: preferred 9224, alternate 142, disputed 16. Claims by confidence: 0.3 3556, 0.5 4851, 0.7 897, 0.9 78.
+Claims by status: preferred 9233, alternate 142, disputed 16. Claims by confidence: 0.3 3563, 0.5 4853, 0.7 897, 0.9 78.
 
 Placeholder units by nationality: Allied 3, US 2, Germany 1, UK 1.
 
-Command relations by relationship: assigned 729, unspecified_subordination 274, attached 165, operational_control 44, unknown 28, organic 27, reserve 12, administrative_control 4, coordinating 1.
+Command relations by relationship: assigned 729, unspecified_subordination 275, attached 165, operational_control 44, organic 32, unknown 28, reserve 12, administrative_control 4, coordinating 1.
 
-Command relations: start basis claim_date 615, assignment_table 492, narrative 157, inferred 16, order 4; end basis inferred_from_next_claim 522, open_at_last_claim 449, assignment_table 222, narrative 67, inferred 24; `end_unknown` true 134; `change_undated` true 18; status preferred 1281, alternate 3.
+Command relations: start basis claim_date 620, assignment_table 492, narrative 158, inferred 16, order 4; end basis inferred_from_next_claim 522, open_at_last_claim 455, assignment_table 222, narrative 67, inferred 24; `end_unknown` true 134; `change_undated` true 18; status preferred 1287, alternate 3.
 
-Evidence roles of relation links: observed_during 1457, asserts_start 1212, asserts_start_and_end 327, asserts_end 92, listed_by_higher_unit 75.
+Evidence roles of relation links: observed_during 1461, asserts_start 1218, asserts_start_and_end 327, asserts_end 92, listed_by_higher_unit 75.
 
 References by source family: us_army_cmh 241, wikipedia 237, lexikon_wehrmacht_de 215, fms_german_manuscript 75, ww2byday_com 33, nara_captured_german_records 20, canada_dhh_reports 12, nafziger_naf 3, avalon_law_yale_edu 2, dday_overlord_com 2, erenow_org 2, ownv_nl 2, pegasusarchive_org 2, thesecondwar_pl 2, uk_official_history 2, us_army_unit_history 2, uswarmemorials_org 2, 69th_infantry_division_org 1, actu_fr 1, airborneinnormandy_com 1, army_mil 1, army_mod_uk 1, battle_of_arnhem_com 1, britishmilitaryhistory_co_uk 1, bundesarchiv_ehri 1, canada_ca 1, cgsc_contentdm_oclc_org 1, delattre_french_first_army 1, en_kilroytrip_fr 1, encyclopedia_ushmm_org 1, eucmh_com 1, europeremembers_com 1, francearchives_gouv_fr 1, geonames 1, globalsecurity_org 1, historynet 1, konfliktlandschaften 1, loc_12ag_situation_maps 1, niod_dejong_koninkrijk 1, normandie1944_jimdoweb_com 1, normandie44lamemoire_com 1, okw_kriegstagebuch_schramm 1, openstreetmap 1, ouest_france_fr 1, pattonthirdarmy_com 1, tracesofwar_com 1, trailblazersww2_org 1, veterans_gc_ca 1, warfarehistorynetwork_com 1, wikimanche_fr 1; by type: reference_compilation 249, encyclopedia 237, official_history 185, archive_document 116, assignment_table 65, news_or_web_article 19, monument_or_memorial 6, unit_history 5, gazetteer_geocoder 3, other 2.
 
-Places by kind: point 4028, area 92, line 18.
+Places by kind: point 4028, area 94, line 19.
 
 <!-- counts:end -->
 

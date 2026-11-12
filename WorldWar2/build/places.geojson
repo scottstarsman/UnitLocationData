@@ -758,7 +758,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Franche-Comte",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -16518,7 +16518,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Provence-Alpes-Côte d'Azur",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -19578,7 +19578,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Doubs",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -20058,7 +20058,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -20158,7 +20158,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -20358,7 +20358,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -46978,7 +46978,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -73518,7 +73518,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Doubs",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79678,7 +79678,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -82258,6 +82258,126 @@
     "precision_km": 3,
     "country": "AT",
     "region": "Vorarlberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2077,
+     48.4569
+    ]
+   },
+   "properties": {
+    "place_id": "PL4130",
+    "name": "Rothau, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bas-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2294,
+     48.4784
+    ]
+   },
+   "properties": {
+    "place_id": "PL4131",
+    "name": "Barembach, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bas-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.5992,
+     44.735
+    ]
+   },
+   "properties": {
+    "place_id": "PL4132",
+    "name": "Privas, Ardèche",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Ardèche",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3557,
+     47.4821
+    ]
+   },
+   "properties": {
+    "place_id": "PL4133",
+    "name": "Rougemont, Doubs",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Doubs",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3918,
+     47.3189
+    ]
+   },
+   "properties": {
+    "place_id": "PL4134",
+    "name": "Guillon-les-Bains, Doubs",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Doubs",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4137,
+     48.4669
+    ]
+   },
+   "properties": {
+    "place_id": "PL4135",
+    "name": "Freudenstadt, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
     "claims_count": 1
    }
   }

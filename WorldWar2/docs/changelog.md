@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong, deel 10a-1, chunk 4: Walcheren landings and the Middelburg surrender, November 1944 (branch `dejong-10a1`)
+
+Approved by Scott (roadmap 374, step 4). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. The pages rest on Dutch witnesses (the surgeon E. L. Nauta, OD telegrams, recollections of Dutch Commandos), so they count as a family independent of Stacey and the Canadian reports; no confidence is raised because each cited row either names only part of its formation or already rests on several families.
+
+- **Supporting citations (5; old value of `reference_ids`, new value with `R894` added; confidence unchanged on all, reason on each row):** 4th Special Service Brigade at Vlissingen (`C7398`) and at Westkapelle (`C1704`), 1 November; 52nd (Lowland) Division at Vlissingen, 1 November (`C7397`) and at Middelburg, 6 November (`C7401`); 70th Infantry Division surrender at Middelburg, 6 November (`C1036`; the row stays at `0.5` as left by the earlier passes although several families agree, listed for Scott).
+- **New claim (1, `C9378`; old value none, new value the row):** the 70th Infantry Division staff in Middelburg, 3 November (`0.5`, operation `OP-SCHELDT`).
+- **Tests:** new scenario 236.
+
 ## 12 November 2026 — de Jong, deel 10a-1, chunk 3: the Irene Brigade at Grave, Heumen and Tilburg; Scheldt and Brabant citations, October-November 1944 (branch `dejong-10a1`)
 
 Approved by Scott (roadmap 374, step 4). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. The Irene Brigade rows are a Dutch account of a Dutch brigade. The Scheldt and Brabant citations follow Stacey and Thompson on the page and so are cited without any confidence raise.

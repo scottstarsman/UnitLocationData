@@ -145957,8 +145957,8 @@
     "location_date": "1944-11-01",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R888;R002",
-    "source_locator": "R671: pp. 120, 122; R668: p. 412; R888: para 291"
+    "reference_ids": "R671;R668;R888;R894;R002",
+    "source_locator": "R671: pp. 120, 122; R668: p. 412; R888: para 291; R894: pp. 515-516"
    }
   },
   {
@@ -146162,8 +146162,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R888;R002",
-    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: para 291"
+    "reference_ids": "R668;R671;R888;R894;R002",
+    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: para 291; R894: p. 514"
    }
   },
   {
@@ -146203,8 +146203,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R888;R002",
-    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: paras 288, 291"
+    "reference_ids": "R668;R671;R888;R894;R002",
+    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: paras 288, 291; R894: pp. 513-514"
    }
   },
   {
@@ -147278,6 +147278,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.6137,
+     51.4997
+    ]
+   },
+   "properties": {
+    "claim_id": "C9378",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-03",
+    "place_id": "PL0620",
+    "location_name": "Middelburg, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Staff in Middelburg",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-11-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 517-518"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.3811,
      50.7129
     ]
@@ -147966,8 +148007,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R443;R228;R839;R668;R888;R002",
-    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61); R888: para 303"
+    "reference_ids": "R443;R228;R839;R668;R888;R894;R002",
+    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61); R888: para 303; R894: p. 518"
    }
   },
   {
@@ -148048,8 +148089,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R888;R002",
-    "source_locator": "R668: p. 426; R671: p. 123; R888: para 303"
+    "reference_ids": "R668;R671;R888;R894;R002",
+    "source_locator": "R668: p. 426; R671: p. 123; R888: para 303; R894: p. 518"
    }
   },
   {

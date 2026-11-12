@@ -72977,8 +72977,8 @@
     "location_date": "1944-09-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R811;R812;R002",
-    "source_locator": "R668: p. 302; R811: German pp.1-4; R812: printed pp.4, 7 (Fold3 images 19, 22)"
+    "reference_ids": "R668;R811;R812;R894;R002",
+    "source_locator": "R668: p. 302; R811: German pp.1-4; R812: printed pp.4, 7 (Fold3 images 19, 22); R894: p. 263"
    }
   },
   {
@@ -74052,6 +74052,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "claim_id": "C9352",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-03",
+    "place_id": "PL0745",
+    "location_name": "Brussels, Belgium (near Brussels)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Mostly in trains near Brussels",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 263"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0418,
      51.0356
     ]
@@ -74576,8 +74617,8 @@
     "location_date": "1944-09-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 302"
+    "reference_ids": "R668;R894;R002",
+    "source_locator": "R668: p. 302; R894: p. 263"
    }
   },
   {
@@ -74686,7 +74727,7 @@
     "location_name": "Bilthoven, Utrecht",
     "location_represents": "headquarters",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "LXXXVIII Corps at Bilthoven ordered by the WBN to take over the Albert Canal from Antwerp to Hasselt from early 5 September",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -74699,8 +74740,8 @@
     "location_date": "1944-09-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.1-2 (Fold3 image 7-8)"
+    "reference_ids": "R811;R894;R002",
+    "source_locator": "R811: German p.1-2 (Fold3 image 7-8); R894: p. 261"
    }
   },
   {
@@ -78430,8 +78471,8 @@
     "location_date": "1944-09-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.5 (Fold3 image 11)"
+    "reference_ids": "R811;R894;R002",
+    "source_locator": "R811: German p.5 (Fold3 image 11); R894: p. 268"
    }
   },
   {
@@ -80079,6 +80120,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2267,
+     51.049
+    ]
+   },
+   "properties": {
+    "claim_id": "C9355",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL0822",
+    "location_name": "Beringen, Limburg (BE) (part of the brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Part guards the Beeringen bridge",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 268"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -80892,6 +80974,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R002",
     "source_locator": "R889: para 194"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C9353",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL0569",
+    "location_name": "Breskens, Zeeland (crossing point only)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Starts crossing the Westerschelde",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 266"
    }
   },
   {
@@ -82286,6 +82409,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R890;R002",
     "source_locator": "R890: paras 41, 48"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4428,
+     51.2292
+    ]
+   },
+   "properties": {
+    "claim_id": "C9356",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-10",
+    "place_id": "PL0782",
+    "location_name": "Neerpelt, Limburg (BE) (lead tanks only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Reaches the canal at Neerpelt and bridges it",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 269"
    }
   },
   {
@@ -87418,6 +87582,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     3.341,
+     51.2455
+    ]
+   },
+   "properties": {
+    "claim_id": "C9354",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-064D",
+    "unit_name": "64th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-14",
+    "place_id": "PL3400",
+    "location_name": "Moerkerke (Damme), West Flanders (local action only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Defends against a Canadian attack at Moerkerke",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 266-267"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      4.8538,
      45.7849
     ]
@@ -90361,8 +90566,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R608;R443;R811;R001",
-    "source_locator": "R608: p. 136; R443: p. 219; R811: German p.14"
+    "reference_ids": "R608;R443;R811;R894;R001",
+    "source_locator": "R608: p. 136; R443: p. 219; R811: German p.14; R894: p. 376"
    }
   },
   {
@@ -96334,7 +96539,7 @@
     "location_name": "Terneuzen, Zeeland",
     "location_represents": "objective",
     "precision_km": 3,
-    "confidence": 0.7,
+    "confidence": 0.9,
     "event_type": "capture",
     "current_activity": "South of the Scheldt: reaches the estuary at several points; Terneuzen falls to the 3rd Brigade",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -96347,8 +96552,8 @@
     "location_date": "1944-09-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R889;R002",
-    "source_locator": "R668: p. 364; R671: p. 68; R889: para 235"
+    "reference_ids": "R668;R671;R889;R894;R002",
+    "source_locator": "R668: p. 364; R671: p. 68; R889: para 235; R894: p. 264"
    }
   },
   {
@@ -98725,8 +98930,8 @@
     "location_date": "1944-09-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R769;R671;R001",
-    "source_locator": "R769: p. 8; R671: p. 69"
+    "reference_ids": "R769;R671;R894;R001",
+    "source_locator": "R769: p. 8; R671: p. 69; R894: p. 266"
    }
   },
   {

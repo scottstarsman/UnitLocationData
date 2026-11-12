@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong, deel 10a-1, chunk 1: German dispositions, the Scheldt crossing, the Irene Brigade and the Guards, September 1944 (branch `dejong-10a1`)
+
+Approved by Scott (roadmap 374, step 4). New source `R894`: L. de Jong, *Het Koninkrijk der Nederlanden in de Tweede Wereldoorlog*, deel 10a (Het laatste jaar, eerste helft), chapters 1-7 (printed pp. 1-531), read directly in NIOD's page-tagged CC-BY edition, printed page cited, paraphrase only. New source family `niod_dejong_koninkrijk` (Dutch official history, counted as Dutch own-nation in the source-balance survey). Private reading notes are kept outside the repository. De Jong's account of the Allied and German operations leans on MacDonald, Ellis and Stacey; where the page names a Dutch source the row is treated as independent, otherwise it is cited without a raise and says so.
+
+- **New reference:** `R894` (`data/references_meta.csv`, `data/references.csv`).
+- **Supporting citations (7; old value of `reference_ids`, new value with `R894` added):**
+  - `C7851` LXXXVIII Corps headquarters at Bilthoven, 4 September (p. 261): confidence old value 0.5, new value 0.7, reason: independent Dutch official-history family agrees with the German manuscript family on place and day. Scenario 138 pinned the FMS B-156 rows at "at most 0.5"; that expectation now names `C7851` as the one exception.
+  - `C1559` Polish Armoured Division enters Terneuzen, 20 September (pp. 264, 266): confidence old value 0.7, new value 0.9, reason: a Dutch official history resting on a local Dutch historian is a third independent family beside Ellis and Stacey with the Canadian Historical Section reports.
+  - Cited with the confidence unchanged (reason on each row): `C7286` (347th Division at Kapellen, in conflict group G069), `C7285` (719th Division at Dordrecht, order of 1 September), `C7855` (719th Division bridgehead at Beeringen, one day apart), `C0890` (59th Division in trains near Tilburg), `C2135` (Fifteenth Army crossing ends, one day apart).
+- **New claims (5, `C9352`-`C9356`; old value none, new value the row):** 347th Infantry Division in trains near Brussels, 3 September (`C9352`); Fifteenth Army begins the Westerschelde crossing, Breskens, 8 September (`C9353`); 64th Infantry Division at Moerkerke, 14 September (`C9354`); part of the Irene Brigade guarding the Beeringen bridge, 7 September (`C9355`); Guards Armoured Division at Neerpelt, 10 September (`C9356`). All `0.3` (part of a formation, an approximate place or a looser day).
+- **Tests:** new scenario 233.
+
 ## 12 November 2026 — de Lattre leftovers, chunk 6: Italy added to the country vocabulary; Elba, Naples and Taranto rows (branch `delattre-leftovers`)
 
 **Schema change, approved by Scott on 12 November 2026** ("Let's add the places for Italy."): the country vocabulary of `places.csv` (`schema/vocabularies.json`, `country`) gains `IT` (Italy). Old: 17 codes (AT, BE, BY, CZ, DE, DK, FR, GB, HU, LT, LU, MD, NL, PL, RU, SK, UA). New: those plus `IT`. Reason: four rows from the de Lattre notes (left out of chunk 5 for this reason) are in Italy. `schema/README.md` notes the addition; the validator reads the vocabulary file, so no script changed. No existing place changed.

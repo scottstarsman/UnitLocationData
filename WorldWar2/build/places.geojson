@@ -2258,7 +2258,7 @@
     "precision_km": 25,
     "country": "FR",
     "region": "Bourgogne",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -8638,7 +8638,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -12438,7 +12438,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -12938,7 +12938,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -16398,7 +16398,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -17958,7 +17958,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -21398,7 +21398,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Vosges",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -47618,7 +47618,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79678,7 +79678,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -81458,6 +81458,426 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.3125,
+     43.3945
+    ]
+   },
+   "properties": {
+    "place_id": "PL4090",
+    "name": "Le Luc, Var",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Var",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8089,
+     43.9483
+    ]
+   },
+   "properties": {
+    "place_id": "PL4091",
+    "name": "Avignon, Vaucluse",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Vaucluse",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6197,
+     44.1626
+    ]
+   },
+   "properties": {
+    "place_id": "PL4092",
+    "name": "Bagnols-sur-Cèze, Gard",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Gard",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.8537,
+     46.7811
+    ]
+   },
+   "properties": {
+    "place_id": "PL4093",
+    "name": "Chalon-sur-Saône, Saône-et-Loire",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Saône-et-Loire",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5801,
+     47.7523
+    ]
+   },
+   "properties": {
+    "place_id": "PL4094",
+    "name": "Mélisey, Haute-Saône",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haute-Saône",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.151,
+     47.7614
+    ]
+   },
+   "properties": {
+    "place_id": "PL4095",
+    "name": "Aspach-le-Bas, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3265,
+     47.791
+    ]
+   },
+   "properties": {
+    "place_id": "PL4096",
+    "name": "Kingersheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3529,
+     47.8956
+    ]
+   },
+   "properties": {
+    "place_id": "PL4097",
+    "name": "Réguisheim, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2139,
+     47.56
+    ]
+   },
+   "properties": {
+    "place_id": "PL4098",
+    "name": "Immenstadt im Allgäu, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.8547,
+     48.676
+    ]
+   },
+   "properties": {
+    "place_id": "PL4099",
+    "name": "Kilstett, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bas-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.539,
+     47.9283
+    ]
+   },
+   "properties": {
+    "place_id": "PL4100",
+    "name": "Balgau, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.8333,
+     47.3667
+    ]
+   },
+   "properties": {
+    "place_id": "PL4101",
+    "name": "Fernpass, Tirol",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "AT",
+    "region": "Tirol",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.971,
+     47.5393
+    ]
+   },
+   "properties": {
+    "place_id": "PL4102",
+    "name": "Grandvillars, Territoire de Belfort",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Territoire de Belfort",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2335,
+     47.6423
+    ]
+   },
+   "properties": {
+    "place_id": "PL4103",
+    "name": "Aspach, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.2182,
+     47.9858
+    ]
+   },
+   "properties": {
+    "place_id": "PL4104",
+    "name": "Osenbach, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1714,
+     47.7698
+    ]
+   },
+   "properties": {
+    "place_id": "PL4105",
+    "name": "Überlingen, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.2303,
+     48.0883
+    ]
+   },
+   "properties": {
+    "place_id": "PL4106",
+    "name": "Sigmaringen, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.1758,
+     47.6603
+    ]
+   },
+   "properties": {
+    "place_id": "PL4107",
+    "name": "Konstanz, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2826,
+     47.5182
+    ]
+   },
+   "properties": {
+    "place_id": "PL4108",
+    "name": "Sonthofen, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10.2794,
+     47.4072
+    ]
+   },
+   "properties": {
+    "place_id": "PL4109",
+    "name": "Oberstdorf, Bayern",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Bayern",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.4924,
+     49.1669
+    ]
+   },
+   "properties": {
+    "place_id": "PL4110",
+    "name": "Graben-Neudorf, Baden-Württemberg",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Baden-Württemberg",
     "claims_count": 1
    }
   }

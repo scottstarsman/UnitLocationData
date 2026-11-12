@@ -14,13 +14,13 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Canada | division | 0 | 0 | 5 | 5 | 3 | 424 |
 | Canada | brigade | 0 | 0 | 2 | 2 | 1 | 31 |
 | Czechoslovakia | brigade | 0 | 0 | 1 | 1 | 1 | 8 |
-| France | army | 0 | 0 | 2 | 2 | 2 | 27 |
-| France | corps | 0 | 0 | 2 | 2 | 2 | 31 |
-| France | division | 0 | 0 | 12 | 12 | 10 | 177 |
+| France | army | 0 | 0 | 2 | 2 | 2 | 36 |
+| France | corps | 0 | 0 | 2 | 2 | 2 | 40 |
+| France | division | 0 | 0 | 12 | 12 | 10 | 254 |
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 66 |
 | Germany | army | 0 | 0 | 17 | 17 | 10 | 341 |
 | Germany | corps | 1 | 0 | 46 | 47 | 41 | 846 |
-| Germany | division | 0 | 0 | 135 | 135 | 112 | 2594 |
+| Germany | division | 0 | 0 | 135 | 135 | 112 | 2604 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 95 |
 | Germany | regiment/battle_group | 0 | 0 | 36 | 36 | 3 | 82 |
 | Germany | battalion | 0 | 0 | 6 | 6 | 0 | 9 |
@@ -36,12 +36,12 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | other | 1 | 0 | 0 | 1 | 0 | 0 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 35 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 203 |
-| US | corps | 2 | 0 | 15 | 17 | 7 | 568 |
-| US | division | 0 | 0 | 61 | 61 | 25 | 2224 |
+| US | corps | 2 | 0 | 15 | 17 | 7 | 570 |
+| US | division | 0 | 0 | 61 | 61 | 25 | 2225 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **420** | **427** | **259** | **9232** |
+| **All** | | **7** | **0** | **420** | **427** | **259** | **9340** |
 
 ## Operations
 
@@ -49,37 +49,38 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 9 | 6 | 125 |
-| campaign | 9 | 9 | 7396 |
-| operation | 33 | 33 | 832 |
-| battle | 20 | 20 | 562 |
+| umbrella | 9 | 7 | 129 |
+| campaign | 9 | 9 | 7442 |
+| operation | 33 | 33 | 854 |
+| battle | 20 | 20 | 598 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **72** | **9232** |
+| **All** | **75** | **73** | **9340** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4073 places and 185 alias names for 9232 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4130 places and 185 alias names for 9340 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 3969 | 9021 |
+| point | 4026 | 9129 |
 | area | 86 | 190 |
 | line | 18 | 21 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1567 | 3396 |
-| Germany (DE) | 1445 | 3152 |
+| France (FR) | 1605 | 3477 |
+| Germany (DE) | 1458 | 3172 |
 | Netherlands (NL) | 517 | 1495 |
 | Belgium (BE) | 374 | 843 |
 | Luxembourg (LU) | 89 | 233 |
-| Austria (AT) | 28 | 45 |
+| Austria (AT) | 30 | 48 |
 | Czechia (CZ) | 14 | 22 |
 | Russia (RU) | 11 | 12 |
 | United Kingdom (GB) | 6 | 9 |
 | Poland (PL) | 8 | 8 |
 | Belarus (BY) | 5 | 5 |
 | Ukraine (UA) | 4 | 5 |
+| Italy (IT) | 4 | 4 |
 | Denmark (DK) | 1 | 2 |
 | Moldova (MD) | 1 | 2 |
 | Hungary (HU) | 1 | 1 |

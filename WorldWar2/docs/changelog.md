@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong 10a-1 follow-up: first entry of the Stoottroepen der Binnenlandse Strijdkrachten (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026): enter the Stoottroepen as formal military units; do not enter the KP, OD or RVV (see the irregular-forces rule of the same day). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. A second source family was not used: NIMH pages that appeared in a search were not opened (they returned 404); van Ojen, *De Binnenlandse Strijdkrachten* (1972), is cited by de Jong but was not re-opened.
+
+- **New unit `NL-INF-STOOT`:** Stoottroepen der Binnenlandse Strijdkrachten, Netherlands, echelon `regiment/battle_group`, independent (no parent), theater `western_europe`, `formed_date` 18 September 1944 (the first of the two days de Jong gives, p. 556, for Prince Bernhard's instruction and the appointment of B. J. C. van Kooten as commander of the Stoottroepen-Limburg). The overall command south of the great rivers is dated 22 September (pp. 561-563, Borghouts appointed by van Houten). Old value: no unit; new value: this row. Subordinate battalions and the later regular-army regiment are not entered in this first chunk.
+- **New claims (5, `C9384`-`C9388`; old value none, new value the row):** `C9384` 18 September 1944, Eindhoven `PL2596`, about 1,000 men in six companies mobilised and placed at the disposal of XXX Corps, `0.3` (de Jong still calls them OD stoottroepen; Horrocks's acceptance is not given a separate day). `C9385` 19 September, Maastricht `PL0203`, van Kooten begins recruiting the Stoottroepen-Limburg, `0.5`. `C9386` 22 September, representative point at Eindhoven, Borghouts appointed commander south of the great rivers and the BS split into Stoottroepen and Bewakingstroepen, `0.3` (the appointment is dated but the town is not named). `C9387` 31 October (end of October), De Peel `PL4152`, help beat off the German tank thrust, `0.3`. `C9388` 1 May 1945 (early May), liberated south `PL4153`, six battalions / about 4,000 men, `0.3`.
+- **New places:** `PL4152` De Peel, Noord-Brabant/Limburg (area, 25 km, GeoNames `R782`, 2757157). `PL4153` Southern Netherlands (liberated area) (area, 50 km, the vocabulary maximum; representative midpoint of Eindhoven and Tilburg).
+- **New relation `CR1285`:** `NL-INF-STOOT` under `UK-COR-030C`, `unspecified_subordination`, start 18 September 1944, preferred, end `open_at_last_claim` (de Jong does not date the end), evidenced by `C9384`.
+- **Not entered in this chunk (recorded in the private notes):** Bewakingstroepen strength figures (including van Ojen's higher numbers, which de Jong prefers to the London return); the Wieringermeer stoottroepen in April 1945 (deel 10b-2); later conversion of Limburg battalions to light infantry; named Brabant commanders and numbered battalions not yet fully confirmed from the printed pages.
+- **Tests:** new scenario 240.
+
 ## 12 November 2026 — irregular forces: unit entries only once organised into formal military units (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026). New general rule, recorded as `docs/HANDOFF.md` standing rule 21 and in the decision log, `CONTRIBUTING.md` ("Add a new unit"), `docs/methodology.md` (new "Irregular forces" section) and `schema/README.md` (after the independent-units rule).

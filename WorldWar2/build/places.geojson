@@ -82660,6 +82660,46 @@
     "region": "Gelderland",
     "claims_count": 2
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3241,
+     49.0883
+    ]
+   },
+   "properties": {
+    "place_id": "PL4150",
+    "name": "Normandy (disembarkation, place not named)",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 50,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6104,
+     49.4266
+    ]
+   },
+   "properties": {
+    "place_id": "PL4151",
+    "name": "Seine area, France",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 50,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 2
+   }
   }
  ]
 }

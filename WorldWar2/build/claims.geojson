@@ -44538,7 +44538,7 @@
    },
    "properties": {
     "claim_id": "C1600",
-    "conflict_group_id": null,
+    "conflict_group_id": "G124",
     "claim_status": "preferred",
     "unit_id": "NL-INF-IRNEB",
     "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
@@ -45673,6 +45673,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R891;R002",
     "source_locator": "R891: paras 43-44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3241,
+     49.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C9381",
+    "conflict_group_id": "G124",
+    "claim_status": "alternate",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL4150",
+    "location_name": "Normandy (disembarkation, place not named)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "landing",
+    "current_activity": "The brigade is disembarked in Normandy; de Jong does not name the beach or town",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 41, footnote 1"
    }
   },
   {
@@ -73437,6 +73478,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     0.6104,
+     49.4266
+    ]
+   },
+   "properties": {
+    "claim_id": "C9382",
+    "conflict_group_id": "G125",
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL4151",
+    "location_name": "Seine area, France",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Transferred to the British Second Army (Wikipedia, Piron Brigade, 2 September)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R782",
+    "source_locator": "R144: Piron Brigade (transfer of both brigades, 2 September)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.952,
      50.455
     ]
@@ -75070,6 +75152,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R002",
     "source_locator": "R889: para 151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6104,
+     49.4266
+    ]
+   },
+   "properties": {
+    "claim_id": "C9383",
+    "conflict_group_id": "G125",
+    "claim_status": "alternate",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL4151",
+    "location_name": "Seine area, France",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Attached to the British Second Army and ordered from the Seine area to Brussels",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 268, footnote 4"
    }
   },
   {

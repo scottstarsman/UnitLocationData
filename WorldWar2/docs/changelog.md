@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong 10a-1 follow-up: Irene Brigade landing 7 August and Second Army attachment 4 September as alternates (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. Verified in the printed book: p. 41, footnote 1, the brigade was disembarked on 7 August (no place named) and inserted in the Allied front on 12 August; p. 268, footnote 4, it was attached to the First Canadian Army on arrival in Normandy and attached to the British Second Army on 4 September, then ordered from the Seine area to Brussels.
+
+- **Conflict group `G124`** (date of the disembarkation in Normandy). `C1600` (Wikipedia, 6 August 1944, Graye-sur-Mer) stays preferred at `0.5`. `conflict_group_id` old value: blank; new value: `G124`. `claim_status` old value: preferred; new value: preferred. New alternate row `C9381` (7 August, place not named, `PL4150`, `0.3`). The 12 August insertion is not entered: no place is named, and `C1601` already places the brigade under the 6th Airborne Division on 13 August.
+- **Conflict group `G125`** (date of the transfer to the Second Army). New preferred row `C9382` (2 September, Wikipedia Piron Brigade `R144`, `0.3`, place a representative Seine-area point because Wikipedia and Stacey do not name one). New alternate row `C9383` (4 September, de Jong, `0.5`). Stacey, p. 323, already cited on `CR0933`, has a directive of 3 September and is recorded in the notes, not as a third row. `C9169` (CMHQ 183, 4 September, west of Picquigny, "before going to Second Army") is a relocation on the same day and is not in the group.
+- **New claims (3, `C9381`-`C9383`; old value none, new value the row):** as above.
+- **New places:** `PL4150` Normandy (disembarkation, place not named) (area, 50 km, GeoNames `R782`); `PL4151` Seine area, France (area, 50 km, representative point from Vieux-Port `PL4074`).
+- **Alternate relation `CR1284`:** `NL-INF-IRNEB` under `UK-ARMY-002A`, `unspecified_subordination`, start 4 September 1944 (de Jong), status alternate, evidenced by `C9383`. End left `open_at_last_claim` (de Jong does not date it); the inferred 1 March 1945 end of preferred `CR0933` is not copied. `CR0933` itself is unchanged (start 2 September). Under de Jong the preceding First Canadian Army and 6th Airborne intervals would run to 3 September; those preferred ends on `CR0932` and `CR0893` (1 September) are left unchanged.
+- **Tests:** new scenario 238.
+
 ## 12 November 2026 — de Jong 10a-1 follow-up: Polish 550-man second lift at Grave and the Betuwe bank, 25-26 September 1944 (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, p. 401, family `niod_dejong_koninkrijk`), printed page cited, paraphrase only. De Jong says that on Monday 25 and Tuesday 26 September about 550 Polish parachutists, flown from England and dropped at Grave, arrived at the Betuwe bank of the Rhine, sheltered behind the high Rhine dike and did not attempt to cross. Footnote 2 on that page is about an improvised landing strip at Grave proposed for the 52nd Division, not a separate date for the Polish drop.

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong 10a-1 follow-up 2: BS gewest 11 (Noord-Holland Noord) and the Wieringermeer stoottroepen, 17 April 1945 (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026): add claims for the stoottroepen in the Wieringermeerpolder around 17 April 1945 (deel 10b-2), under the appropriate North-Holland BS command; create that command as a unit only if it meets the formal-unit rule. It does: de Jong, deel 10b, p. 706 and p. 1315, describes gewest 11 as a territorial BS command with a lieutenant-colonel commander (J. G. M. Wastenecker), a staff, and orders from Colonel Koot. New reference `R895` (de Jong, *Het Koninkrijk*, deel 10b, 1981-1982, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only.
+
+- **New reference `R895`:** deel 10b (*Het laatste jaar II*), both halves (NIOD id 17 and 18); `strength_alias` `de Jong, Het Koninkrijk, deel 10b`. Old value: no reference; new value: this row.
+- **New unit `NL-BS-NHN`:** Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord), Netherlands, echelon `regiment/battle_group`, independent, theater `western_europe`, `formed_date` 5 September 1944 ("omstreeks Dolle Dinsdag", p. 706, when Wastenecker is first described as the district commander, then still of the OD; by April 1945 de Jong calls him commandant of the BS in Noord-Holland Noord). Old value: no unit; new value: this row. The gewestelijke Stormtroepen of about 200 men (p. 706) are not entered as a separate unit.
+- **New claims (2, `C9403`-`C9404`; old value none, new value the row):** `C9403` 17 April 1945, Wieringermeer Polder `PL4158`, stoottroepen (a few hundred) concentrated in the polder fail to prevent the blowing of the IJsselmeerdijk at noon, `0.5` (named polder on a stated day; the place is an area, so the row stays at 0.5). `C9404` 18 April 1945 (soon after the inundation), Medemblik `PL4159`, members of the stoottroepen bring some abandoned weapons to safety, `0.3`. These rows are not on the southern `NL-INF-STOOT`.
+- **New places:** `PL4158` Wieringermeer Polder, Noord-Holland (area, 10 km, GeoNames `R782`, 2744536). `PL4159` Medemblik, Noord-Holland (point, 3 km, GeoNames `R782`, 2751073).
+- **Tests:** new scenario 243.
+
 ## 12 November 2026 — de Jong 10a-1 follow-up 2: Limburg and Brabant Stoottroepen commands and the three named Brabant battalions (branch `dejong-10a1`)
 
 Approved by Scott (12 November 2026): split `NL-INF-STOOT` into named/numbered battalions (and the later regular-army regiment if documented) where names and dates can be confirmed; do not invent battalion numbers. Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, p. 760 and p. 768-769), printed pages cited, paraphrase only. The battalion numbers on p. 769 were verified on the printed PDF page (t16 OCR had "11de" and "lilde" for IIde and IIIde).

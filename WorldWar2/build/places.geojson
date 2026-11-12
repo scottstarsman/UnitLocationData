@@ -82820,6 +82820,46 @@
     "region": "Nordrhein-Westfalen",
     "claims_count": 2
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.9965,
+     52.8331
+    ]
+   },
+   "properties": {
+    "place_id": "PL4158",
+    "name": "Wieringermeer Polder, Noord-Holland",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 10,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1056,
+     52.7717
+    ]
+   },
+   "properties": {
+    "place_id": "PL4159",
+    "name": "Medemblik, Noord-Holland",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Noord-Holland",
+    "claims_count": 1
+   }
   }
  ]
 }

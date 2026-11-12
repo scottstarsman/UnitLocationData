@@ -356870,6 +356870,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9965,
+     52.8331
+    ]
+   },
+   "properties": {
+    "claim_id": "C9403",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-BS-NHN",
+    "unit_name": "Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL4158",
+    "location_name": "Wieringermeer Polder, Noord-Holland (stoottroepen (elements, a few hundred))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Stoottroepen, a few hundred strong, concentrated in the polder, fail to prevent the blowing of the IJsselmeerdijk at noon",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R895;R782",
+    "source_locator": "R895: pp. 1314-1315"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.375,
      51.34
     ]
@@ -357929,6 +357970,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 459"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1056,
+     52.7717
+    ]
+   },
+   "properties": {
+    "claim_id": "C9404",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-BS-NHN",
+    "unit_name": "Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL4159",
+    "location_name": "Medemblik, Noord-Holland (stoottroepen (elements))",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "From Medemblik, members of the stoottroepen bring some of the abandoned weapons in the polder to safety",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R895;R782",
+    "source_locator": "R895: p. 1316"
    }
   },
   {

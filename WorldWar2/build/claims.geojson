@@ -44538,7 +44538,7 @@
    },
    "properties": {
     "claim_id": "C1600",
-    "conflict_group_id": null,
+    "conflict_group_id": "G124",
     "claim_status": "preferred",
     "unit_id": "NL-INF-IRNEB",
     "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
@@ -45673,6 +45673,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R891;R002",
     "source_locator": "R891: paras 43-44"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.3241,
+     49.0883
+    ]
+   },
+   "properties": {
+    "claim_id": "C9381",
+    "conflict_group_id": "G124",
+    "claim_status": "alternate",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-08-07",
+    "place_id": "PL4150",
+    "location_name": "Normandy (disembarkation, place not named)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "landing",
+    "current_activity": "The brigade is disembarked in Normandy; de Jong does not name the beach or town",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 41, footnote 1"
    }
   },
   {
@@ -72977,8 +73018,8 @@
     "location_date": "1944-09-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R811;R812;R002",
-    "source_locator": "R668: p. 302; R811: German pp.1-4; R812: printed pp.4, 7 (Fold3 images 19, 22)"
+    "reference_ids": "R668;R811;R812;R894;R002",
+    "source_locator": "R668: p. 302; R811: German pp.1-4; R812: printed pp.4, 7 (Fold3 images 19, 22); R894: p. 263"
    }
   },
   {
@@ -73430,6 +73471,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: pp. 123, 128, 136"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6104,
+     49.4266
+    ]
+   },
+   "properties": {
+    "claim_id": "C9382",
+    "conflict_group_id": "G125",
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-02",
+    "place_id": "PL4151",
+    "location_name": "Seine area, France",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Transferred to the British Second Army (Wikipedia, Piron Brigade, 2 September)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-02",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R144;R782",
+    "source_locator": "R144: Piron Brigade (transfer of both brigades, 2 September)"
    }
   },
   {
@@ -74052,6 +74134,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "claim_id": "C9352",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-347D",
+    "unit_name": "347th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-03",
+    "place_id": "PL0745",
+    "location_name": "Brussels, Belgium (near Brussels)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Mostly in trains near Brussels",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 263"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0418,
      51.0356
     ]
@@ -74576,8 +74699,8 @@
     "location_date": "1944-09-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 302"
+    "reference_ids": "R668;R894;R002",
+    "source_locator": "R668: p. 302; R894: p. 263"
    }
   },
   {
@@ -74686,7 +74809,7 @@
     "location_name": "Bilthoven, Utrecht",
     "location_represents": "headquarters",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "LXXXVIII Corps at Bilthoven ordered by the WBN to take over the Albert Canal from Antwerp to Hasselt from early 5 September",
     "operation_id": "OP-CAMP-NORTHERN-FRANCE",
@@ -74699,8 +74822,8 @@
     "location_date": "1944-09-04",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.1-2 (Fold3 image 7-8)"
+    "reference_ids": "R811;R894;R002",
+    "source_locator": "R811: German p.1-2 (Fold3 image 7-8); R894: p. 261"
    }
   },
   {
@@ -75029,6 +75152,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R002",
     "source_locator": "R889: para 151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.6104,
+     49.4266
+    ]
+   },
+   "properties": {
+    "claim_id": "C9383",
+    "conflict_group_id": "G125",
+    "claim_status": "alternate",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-04",
+    "place_id": "PL4151",
+    "location_name": "Seine area, France",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.5,
+    "event_type": "command_change",
+    "current_activity": "Attached to the British Second Army and ordered from the Seine area to Brussels",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-04",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 268, footnote 4"
    }
   },
   {
@@ -78430,8 +78594,8 @@
     "location_date": "1944-09-05",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.5 (Fold3 image 11)"
+    "reference_ids": "R811;R894;R002",
+    "source_locator": "R811: German p.5 (Fold3 image 11); R894: p. 268"
    }
   },
   {
@@ -80079,6 +80243,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.2267,
+     51.049
+    ]
+   },
+   "properties": {
+    "claim_id": "C9355",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-07",
+    "place_id": "PL0822",
+    "location_name": "Beringen, Limburg (BE) (part of the brigade)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Part guards the Beeringen bridge",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-07",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 268"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.02,
      47.24
     ]
@@ -80892,6 +81097,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R889;R002",
     "source_locator": "R889: para 194"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5552,
+     51.3958
+    ]
+   },
+   "properties": {
+    "claim_id": "C9353",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-08",
+    "place_id": "PL0569",
+    "location_name": "Breskens, Zeeland (crossing point only)",
+    "location_represents": "front_line_point",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Starts crossing the Westerschelde",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 266"
    }
   },
   {
@@ -82286,6 +82532,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R890;R002",
     "source_locator": "R890: paras 41, 48"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4428,
+     51.2292
+    ]
+   },
+   "properties": {
+    "claim_id": "C9356",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-10",
+    "place_id": "PL0782",
+    "location_name": "Neerpelt, Limburg (BE) (lead tanks only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Reaches the canal at Neerpelt and bridges it",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 269"
    }
   },
   {
@@ -87163,8 +87450,8 @@
     "location_date": "1944-09-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R631;R605;R635;R668;R002",
-    "source_locator": "R605: p. 140; R668: Sketch 23 (the front 15 September 1944)"
+    "reference_ids": "R631;R605;R635;R668;R894;R002",
+    "source_locator": "R605: p. 140; R668: Sketch 23 (the front 15 September 1944); R894: p. 427"
    }
   },
   {
@@ -87411,6 +87698,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R860;R002",
     "source_locator": "R860: German Skizze 7 (viewer pp.137-139), I. SS-Pz.K. near Gerolstein (14.9.)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.341,
+     51.2455
+    ]
+   },
+   "properties": {
+    "claim_id": "C9354",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-064D",
+    "unit_name": "64th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-14",
+    "place_id": "PL3400",
+    "location_name": "Moerkerke (Damme), West Flanders (local action only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Defends against a Canadian attack at Moerkerke",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 266-267"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.2889,
+     51.965
+    ]
+   },
+   "properties": {
+    "claim_id": "C9366",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-14",
+    "place_id": "PL4147",
+    "location_name": "Doetinchem, Gelderland (probable, an agent report)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Staff probably at Doetinchem (Albrecht report)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: pp. 334, 336"
    }
   },
   {
@@ -89222,6 +89591,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.225,
+     52.1667
+    ]
+   },
+   "properties": {
+    "claim_id": "C9367",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-15",
+    "place_id": "PL4148",
+    "location_name": "Eefde, Gelderland (perhaps, an agent report)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Staff perhaps at Eefde (Albrecht report)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 336"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2368,
+     51.6512
+    ]
+   },
+   "properties": {
+    "claim_id": "C9369",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJA-001A",
+    "unit_name": "First Parachute Army (1. Fallschirmarmee)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Luftwaffe",
+    "date": "1944-09-15",
+    "place_id": "PL0542",
+    "location_name": "Vught, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Headquarters at Vught (German Ic message)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.842,
+     51.9884
+    ]
+   },
+   "properties": {
+    "claim_id": "C9370",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-00BG",
+    "unit_name": "Army Group B",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL0545",
+    "location_name": "Oosterbeek, Gelderland (\"daar\" in the footnote)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Rauter visits Model there (footnote, report of 1946)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.375,
      47.7178
     ]
@@ -89796,6 +90288,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.9833
+    ]
+   },
+   "properties": {
+    "claim_id": "C9368",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-009D",
+    "unit_name": "9th SS Panzer Division Hohenstaufen",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-09-16",
+    "place_id": "PL0553",
+    "location_name": "Arnhem, Gelderland (assembly point only)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Assembly point and Meldekopf Harzer (Albrecht report)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: p. 336"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.6868,
+     51.769
+    ]
+   },
+   "properties": {
+    "claim_id": "C9371",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-ARMY-015A",
+    "unit_name": "Fifteenth Army",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army",
+    "branch": "Army",
+    "date": "1944-09-16",
+    "place_id": "PL1065",
+    "location_name": "Dordrecht, Zuid-Holland (presumably)",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "Headquarters presumably at Dordrecht (daily report)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-16",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.9305,
      51.7741
     ]
@@ -90361,8 +90935,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R608;R443;R811;R001",
-    "source_locator": "R608: p. 136; R443: p. 219; R811: German p.14"
+    "reference_ids": "R608;R443;R811;R894;R001",
+    "source_locator": "R608: p. 136; R443: p. 219; R811: German p.14; R894: p. 376"
    }
   },
   {
@@ -90525,8 +91099,8 @@
     "location_date": "1944-09-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R811;R002",
-    "source_locator": "R671: pp. 30, 31, 34; R811: German p.11"
+    "reference_ids": "R671;R811;R894;R002",
+    "source_locator": "R671: pp. 30, 31, 34; R811: German p.11; R894: p. 372"
    }
   },
   {
@@ -90607,8 +91181,8 @@
     "location_date": "1944-09-17",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R002",
-    "source_locator": "R671: pp. 35, 46; R668: p. 314"
+    "reference_ids": "R671;R668;R894;R002",
+    "source_locator": "R671: pp. 35, 46; R668: p. 314; R894: p. 385"
    }
   },
   {
@@ -91149,6 +91723,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4582,
+     51.3202
+    ]
+   },
+   "properties": {
+    "claim_id": "C9357",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-17",
+    "place_id": "PL0746",
+    "location_name": "Valkenswaard, Noord-Brabant (lead tanks only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Held at Valkenswaard",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-17",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -91660,7 +92275,7 @@
     "location_name": "Eindhoven, Noord-Brabant",
     "location_represents": "main_body",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "capture",
     "current_activity": "takes Eindhoven",
     "operation_id": "OP-MARKET-GARDEN",
@@ -91673,8 +92288,8 @@
     "location_date": "1944-09-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 314"
+    "reference_ids": "R668;R894;R002",
+    "source_locator": "R668: p. 314; R894: p. 372"
    }
   },
   {
@@ -91701,7 +92316,7 @@
     "location_name": "Eindhoven, Noord-Brabant",
     "location_represents": "main_body",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "other",
     "current_activity": "links up with the 101st Airborne Division at Eindhoven",
     "operation_id": "OP-MARKET-GARDEN",
@@ -91714,8 +92329,8 @@
     "location_date": "1944-09-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 314"
+    "reference_ids": "R668;R894;R002",
+    "source_locator": "R668: p. 314; R894: p. 374"
    }
   },
   {
@@ -91878,8 +92493,8 @@
     "location_date": "1944-09-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R811;R002",
-    "source_locator": "R811: German p.14 (Fold3 image 20)"
+    "reference_ids": "R811;R894;R002",
+    "source_locator": "R811: German p.14 (Fold3 image 20); R894: p. 375"
    }
   },
   {
@@ -92167,6 +92782,252 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R890;R002",
     "source_locator": "R890: paras 139-140"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9358",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-PZB-107B",
+    "unit_name": "Panzer-Brigade 107",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Armoured",
+    "date": "1944-09-18",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant (about 40 tanks, north-east of Eindhoven)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Tanks stopped at the Dommel bridge north-east of Eindhoven",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 374"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.3939,
+     51.5034
+    ]
+   },
+   "properties": {
+    "claim_id": "C9359",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-059D",
+    "unit_name": "59th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL0555",
+    "location_name": "Best, Noord-Brabant (elements only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Elements hold Best",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 376"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4882,
+     51.5177
+    ]
+   },
+   "properties": {
+    "claim_id": "C9360",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-101D",
+    "unit_name": "101st Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-18",
+    "place_id": "PL0912",
+    "location_name": "Son, Noord-Brabant (paratroopers only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Cross the canal at Son after midnight",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 372"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.9305,
+     51.7741
+    ]
+   },
+   "properties": {
+    "claim_id": "C9362",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-18",
+    "place_id": "PL0686",
+    "location_name": "Groesbeek, Gelderland (second lift only)",
+    "location_represents": "sector_center",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "landing",
+    "current_activity": "Second lift, about 1,500 men",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 379"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.842,
+     51.9884
+    ]
+   },
+   "properties": {
+    "claim_id": "C9365",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ABN-001D",
+    "unit_name": "1st Airborne Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-18",
+    "place_id": "PL0545",
+    "location_name": "Oosterbeek, Gelderland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "Headquarters in the Hartenstein hotel",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 388"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9384",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT",
+    "unit_name": "Stoottroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-18",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant (six companies (about 1,000 men), still described as OD stoottroepen)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "About 1,000 men in six companies are mobilised at Eindhoven and placed at the disposal of XXX Corps; Horrocks accepts them",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 542-545"
    }
   },
   {
@@ -95987,6 +96848,129 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.7411,
+     51.7597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9361",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-ARM-GRDD",
+    "unit_name": "Guards Armoured Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Armoured",
+    "date": "1944-09-19",
+    "place_id": "PL0824",
+    "location_name": "Grave, Noord-Brabant (lead tanks only)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Lead tanks reach Grave",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 375"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C9385",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT",
+    "unit_name": "Stoottroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg (Stoottroepen-Limburg)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Van Kooten, commander of the Stoottroepen-Limburg, is back in Maastricht and begins recruiting",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: p. 556"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C9394",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-LIM",
+    "unit_name": "Limburgse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-19",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Van Kooten, commander of the Stoottroepen-Limburg, is back in Maastricht and begins recruiting",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: p. 556"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -96293,7 +97277,7 @@
     "location_name": "Nijmegen, Gelderland",
     "location_represents": "objective",
     "precision_km": 3,
-    "confidence": 0.7,
+    "confidence": 0.9,
     "event_type": "capture",
     "current_activity": "Nijmegen: with the 82nd Airborne Division takes the road and rail bridges over the Waal after a day of hard fighting",
     "operation_id": "OP-MARKET-GARDEN",
@@ -96306,8 +97290,8 @@
     "location_date": "1944-09-20",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R001",
-    "source_locator": "R671: p. 39; R668: p. 314"
+    "reference_ids": "R671;R668;R894;R001",
+    "source_locator": "R671: p. 39; R668: p. 314; R894: pp. 381-382"
    }
   },
   {
@@ -96334,7 +97318,7 @@
     "location_name": "Terneuzen, Zeeland",
     "location_represents": "objective",
     "precision_km": 3,
-    "confidence": 0.7,
+    "confidence": 0.9,
     "event_type": "capture",
     "current_activity": "South of the Scheldt: reaches the estuary at several points; Terneuzen falls to the 3rd Brigade",
     "operation_id": "OP-CAMP-RHINELAND",
@@ -96347,8 +97331,8 @@
     "location_date": "1944-09-20",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R889;R002",
-    "source_locator": "R668: p. 364; R671: p. 68; R889: para 235"
+    "reference_ids": "R668;R671;R889;R894;R002",
+    "source_locator": "R668: p. 364; R671: p. 68; R889: para 235; R894: p. 264"
    }
   },
   {
@@ -96841,6 +97825,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 183"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8819,
+     51.7525
+    ]
+   },
+   "properties": {
+    "claim_id": "C9363",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-20",
+    "place_id": "PL4057",
+    "location_name": "Mook (Mook en Middelaar), Limburg (front sector only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Holds Mook against a German attack",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 384"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8625,
+     51.8475
+    ]
+   },
+   "properties": {
+    "claim_id": "C9364",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-ABN-082D",
+    "unit_name": "82nd Airborne Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Airborne",
+    "date": "1944-09-20",
+    "place_id": "PL0554",
+    "location_name": "Nijmegen, Gelderland (the crossing regiment only)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Assault crossing of the Waal",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-20",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: pp. 380-382"
    }
   },
   {
@@ -98324,6 +99390,170 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8162,
+     51.9592
+    ]
+   },
+   "properties": {
+    "claim_id": "C9372",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL0812",
+    "location_name": "Driel, Overbetuwe, Gelderland (armoured cars and a mobile column)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "Armoured cars and a column reach Driel",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 399-400"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7411,
+     51.7597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9375",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL0824",
+    "location_name": "Grave, Noord-Brabant",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Guards the Maas bridge at Grave",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 477"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9386",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT",
+    "unit_name": "Stoottroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Borghouts is appointed commander of the Stoottroepen der BS south of the great rivers; the BS are split into Stoottroepen and Bewakingstroepen",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 561-563"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4786,
+     51.4393
+    ]
+   },
+   "properties": {
+    "claim_id": "C9389",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-09-22",
+    "place_id": "PL2596",
+    "location_name": "Eindhoven, Noord-Brabant",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Van Dijk is given command of the Bewakingstroepen as the BS are split into Stoottroepen and Bewakingstroepen",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 561-563"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.461,
      51.5646
     ]
@@ -98725,8 +99955,8 @@
     "location_date": "1944-09-23",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R769;R671;R001",
-    "source_locator": "R769: p. 8; R671: p. 69"
+    "reference_ids": "R769;R671;R894;R001",
+    "source_locator": "R769: p. 8; R671: p. 69; R894: p. 266"
    }
   },
   {
@@ -99273,7 +100503,7 @@
    },
    "properties": {
     "claim_id": "C1583",
-    "conflict_group_id": null,
+    "conflict_group_id": "G123",
     "claim_status": "preferred",
     "unit_id": "POL-ABN-001B",
     "unit_name": "1st Polish Independent Parachute Brigade",
@@ -100333,6 +101563,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8162,
+     51.9592
+    ]
+   },
+   "properties": {
+    "claim_id": "C9373",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-25",
+    "place_id": "PL0812",
+    "location_name": "Driel, Overbetuwe, Gelderland (a battalion only)",
+    "location_represents": "front_line_point",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "attack",
+    "current_activity": "Dorsets cross the Rhine at Driel",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 400"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8139,
+     51.9592
+    ]
+   },
+   "properties": {
+    "claim_id": "C9379",
+    "conflict_group_id": "G123",
+    "claim_status": "alternate",
+    "unit_id": "POL-ABN-001B",
+    "unit_name": "1st Polish Independent Parachute Brigade",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Airborne",
+    "date": "1944-09-25",
+    "place_id": "PL4149",
+    "location_name": "Betuwe bank of the Neder Rijn, Gelderland (elements (about 550 parachutists, dropped at Grave))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Market Garden: about 550 parachutists, dropped at Grave, arrive at the Betuwe bank of the Rhine; they shelter behind the high dike and do not cross",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": "Market Garden",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-25",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -4.4861,
      48.3906
     ]
@@ -100570,8 +101882,8 @@
     "location_date": "1944-09-26",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R676;R002",
-    "source_locator": "R676: section Operation Market Garden"
+    "reference_ids": "R676;R894;R002",
+    "source_locator": "R676: section Operation Market Garden; R894: p. 477"
    }
   },
   {
@@ -104966,6 +106278,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.8162,
+     51.9592
+    ]
+   },
+   "properties": {
+    "claim_id": "C9374",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "UK-INF-043D",
+    "unit_name": "43rd (Wessex) Infantry Division",
+    "nationality": "UK",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-26",
+    "place_id": "PL0812",
+    "location_name": "Driel, Overbetuwe, Gelderland (three battalions only)",
+    "location_represents": "sector_center",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Three battalions on the Rhine bank",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-26",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8139,
+     51.9592
+    ]
+   },
+   "properties": {
+    "claim_id": "C9380",
+    "conflict_group_id": "G123",
+    "claim_status": "alternate",
+    "unit_id": "POL-ABN-001B",
+    "unit_name": "1st Polish Independent Parachute Brigade",
+    "nationality": "Poland",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Airborne",
+    "date": "1944-09-26",
+    "place_id": "PL4149",
+    "location_name": "Betuwe bank of the Neder Rijn, Gelderland (elements (about 550 parachutists, dropped at Grave))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Market Garden: about 550 parachutists, dropped at Grave, remain on the Betuwe bank of the Rhine behind the high dike and do not cross",
+    "operation_id": "OP-MARKET-GARDEN",
+    "operation": "Operation Market Garden",
+    "operation_type": "operation",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Market Garden",
+    "strength_status": "unknown",
+    "location_date": "1944-09-26",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 401"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5113,
      48.8231
     ]
@@ -108239,6 +109633,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R880;R701;R001",
     "source_locator": "R880: section 1; R701: Panzer brigades"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.8444,
+     51.765
+    ]
+   },
+   "properties": {
+    "claim_id": "C9376",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-10-01",
+    "place_id": "PL4018",
+    "location_name": "Heumen, Gelderland (from the beginning of October)",
+    "location_represents": "objective",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Guards the Maas-Waal canal bridges",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 477"
    }
   },
   {
@@ -114264,8 +115699,8 @@
     "location_date": "1944-10-06",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 393; R888: paras 120-123"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 393; R888: paras 120-123; R894: p. 504"
    }
   },
   {
@@ -115207,8 +116642,8 @@
     "location_date": "1944-10-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 396; R888: paras 138-140"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 396; R888: paras 138-140; R894: p. 504"
    }
   },
   {
@@ -120792,6 +122227,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.4653,
+     51.8792
+    ]
+   },
+   "properties": {
+    "claim_id": "C9397",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-BRB",
+    "unit_name": "Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-10-10",
+    "place_id": "PL4056",
+    "location_name": "Wamel (West Maas en Waal), Gelderland (first company (just over 120 men), dike between Leeuwen and Wamel)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "A first company, just over 120 men under Sjef de Groot, is committed along the dike between Leeuwen and Wamel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-10",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 768"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.0906,
      51.5575
     ]
@@ -122792,8 +124268,8 @@
     "location_date": "1944-10-16",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 397; R888: para 152"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 397; R888: para 152; R894: p. 505"
    }
   },
   {
@@ -137602,6 +139078,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.0906,
+     51.5575
+    ]
+   },
+   "properties": {
+    "claim_id": "C9377",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1944-10-27",
+    "place_id": "PL0568",
+    "location_name": "Tilburg, Noord-Brabant (with other forces)",
+    "location_represents": "objective",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "capture",
+    "current_activity": "Takes part in the liberation of Tilburg",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-27",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: pp. 477-478"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.3773,
      51.0348
     ]
@@ -137798,8 +139315,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R002",
-    "source_locator": "R668: p. 390; R671: p. 125"
+    "reference_ids": "R668;R671;R894;R002",
+    "source_locator": "R668: p. 390; R671: p. 125; R894: p. 477"
    }
   },
   {
@@ -137962,8 +139479,8 @@
     "location_date": "1944-10-29",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 404; R888: para 245"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 404; R888: para 245; R894: p. 509"
    }
   },
   {
@@ -144777,6 +146294,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.9167,
+     51.4167
+    ]
+   },
+   "properties": {
+    "claim_id": "C9387",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT",
+    "unit_name": "Stoottroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-10-31",
+    "place_id": "PL4152",
+    "location_name": "De Peel, Noord-Brabant/Limburg (elements in the Eindhoven area, still described as OD stoottroepen)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Help beat off the German tank thrust via the Peel",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-10-31",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 543, footnote 2"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5623,
      48.7797
     ]
@@ -144891,8 +146449,8 @@
     "location_date": "1944-11-01",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R668;R888;R002",
-    "source_locator": "R671: pp. 120, 122; R668: p. 412; R888: para 291"
+    "reference_ids": "R671;R668;R888;R894;R002",
+    "source_locator": "R671: pp. 120, 122; R668: p. 412; R888: para 291; R894: pp. 515-516"
    }
   },
   {
@@ -145096,8 +146654,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R888;R002",
-    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: para 291"
+    "reference_ids": "R668;R671;R888;R894;R002",
+    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: para 291; R894: p. 514"
    }
   },
   {
@@ -145137,8 +146695,8 @@
     "location_date": "1944-11-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R888;R002",
-    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: paras 288, 291"
+    "reference_ids": "R668;R671;R888;R894;R002",
+    "source_locator": "R668: p. 414; R671: pp. 118, 119; R888: paras 288, 291; R894: pp. 513-514"
    }
   },
   {
@@ -145629,8 +147187,8 @@
     "location_date": "1944-11-02",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R888;R002",
-    "source_locator": "R668: p. 402; R888: para 166"
+    "reference_ids": "R668;R888;R894;R002",
+    "source_locator": "R668: p. 402; R888: para 166; R894: p. 506"
    }
   },
   {
@@ -145998,8 +147556,8 @@
     "location_date": "1944-11-03",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R002",
-    "source_locator": "R668: p. 402"
+    "reference_ids": "R668;R894;R002",
+    "source_locator": "R668: p. 402; R894: p. 506"
    }
   },
   {
@@ -146205,6 +147763,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R002",
     "source_locator": "R686: p. 206"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.6137,
+     51.4997
+    ]
+   },
+   "properties": {
+    "claim_id": "C9378",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-070D",
+    "unit_name": "70th Infantry Division",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-11-03",
+    "place_id": "PL0620",
+    "location_name": "Middelburg, Zeeland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "Staff in Middelburg",
+    "operation_id": "OP-SCHELDT",
+    "operation": "Battle of the Scheldt",
+    "operation_type": "battle",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": "Scheldt",
+    "strength_status": "unknown",
+    "location_date": "1944-11-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 517-518"
    }
   },
   {
@@ -146887,7 +148486,7 @@
     "location_name": "Middelburg, Zeeland",
     "location_represents": "headquarters",
     "precision_km": 3,
-    "confidence": 0.5,
+    "confidence": 0.9,
     "event_type": "surrender",
     "current_activity": "General Daser surrenders the 70th Division garrison at Middelburg, ending organised resistance on Walcheren",
     "operation_id": "OP-INFATUATE",
@@ -146900,8 +148499,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R443;R228;R839;R668;R888;R002",
-    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61); R888: para 303"
+    "reference_ids": "R443;R228;R839;R668;R888;R894;R002",
+    "source_locator": "R443: p. 219, 228-229; R228: table of 1944, November row; R668: p. 407; R839: German p.53 (Fold3 page 61); R888: para 303; R894: p. 518"
    }
   },
   {
@@ -146982,8 +148581,8 @@
     "location_date": "1944-11-06",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R668;R671;R888;R002",
-    "source_locator": "R668: p. 426; R671: p. 123; R888: para 303"
+    "reference_ids": "R668;R671;R888;R894;R002",
+    "source_locator": "R668: p. 426; R671: p. 123; R888: para 303; R894: p. 518"
    }
   },
   {
@@ -174329,8 +175928,8 @@
     "location_date": "1944-11-27",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R882;R001",
-    "source_locator": "R882: paras 44, 49"
+    "reference_ids": "R882;R894;R001",
+    "source_locator": "R882: paras 44, 49; R894: p. 477"
    }
   },
   {
@@ -181834,6 +183433,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R882;R002",
     "source_locator": "R882: para 78"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.75,
+     51.4167
+    ]
+   },
+   "properties": {
+    "claim_id": "C9390",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL4154",
+    "location_name": "Zeeland (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Carry out military guard duty in Zeeland (German troops still on Schouwen)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769, footnote 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.0243,
+     51.5596
+    ]
+   },
+   "properties": {
+    "claim_id": "C9401",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-002",
+    "unit_name": "2de Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL4155",
+    "location_name": "Maas front, Mook to Venlo (five companies)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Five companies on the Maas front from Mook to Venlo, in action through the winter of 1944-45",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3385,
+     51.5324
+    ]
+   },
+   "properties": {
+    "claim_id": "C9402",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-003",
+    "unit_name": "3de Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1944-12-01",
+    "place_id": "PL4156",
+    "location_name": "Western Noord-Brabant, Tholen and St. Philipsland (six companies)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "Six companies in the west of Noord-Brabant and on Tholen and St. Philipsland, in action through the winter of 1944-45",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
    }
   },
   {
@@ -220709,6 +222431,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.6833,
+     50.85
+    ]
+   },
+   "properties": {
+    "claim_id": "C9395",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-LIM",
+    "unit_name": "Limburgse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL0203",
+    "location_name": "Maastricht, Limburg",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "The Limburg battalions are converted to light infantry battalions and the old ranks are reintroduced",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R001",
+    "source_locator": "R894: p. 760"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.4653,
+     51.8792
+    ]
+   },
+   "properties": {
+    "claim_id": "C9399",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-001",
+    "unit_name": "1ste Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1945-01-01",
+    "place_id": "PL4056",
+    "location_name": "Wamel (West Maas en Waal), Gelderland",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "The three Waal companies become part of the 1st battalion of the Brabantse Stoottroepen",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.7833,
      50.1333
     ]
@@ -226440,8 +228244,8 @@
     "location_date": "1945-01-03",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R882;R001",
-    "source_locator": "R882: para 131"
+    "reference_ids": "R882;R894;R001",
+    "source_locator": "R882: para 131; R894: p. 477"
    }
   },
   {
@@ -234601,6 +236405,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R294;R002",
     "source_locator": "R294: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9391",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-01-15",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "More than 10,000 men in the liberated south; the prince obtains a further 2,400 sets of clothing",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-01-15",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 767, 757-758"
    }
   },
   {
@@ -256208,6 +258053,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 371"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9398",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-BRB",
+    "unit_name": "Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-02-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "headquarters",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "After de Groot is dismissed, the Brabant battalions are likewise converted to light infantry",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 760"
    }
   },
   {
@@ -293354,6 +295240,129 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R886;R782",
     "source_locator": "R886: para 91"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9392",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area) (nineteen gezagscompagnieën (about 4,000 men))",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "subordinate_assignment",
+    "current_activity": "Nineteen gezagscompagnieën, about 4,000 men, are formed from the Bewakingstroepen and placed with the Militair Gezag",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: p. 757"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7634,
+     51.219
+    ]
+   },
+   "properties": {
+    "claim_id": "C9396",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT-LIM",
+    "unit_name": "Limburgse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL4157",
+    "location_name": "Rhineland, Germany (Zuidlimburgse battalions (not numbered in the source))",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "The Zuidlimburgse battalions, following the Americans, enter the Rhineland",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.7634,
+     51.219
+    ]
+   },
+   "properties": {
+    "claim_id": "C9400",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STBRB-001",
+    "unit_name": "1ste Bataljon, Brabantse Stoottroepen",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Army",
+    "date": "1945-03-01",
+    "place_id": "PL4157",
+    "location_name": "Rhineland, Germany (two companies)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "Two companies enter the Rhineland with the British Second Army",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R782",
+    "source_locator": "R894: p. 769"
    }
   },
   {
@@ -354861,6 +356870,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.9965,
+     52.8331
+    ]
+   },
+   "properties": {
+    "claim_id": "C9403",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-BS-NHN",
+    "unit_name": "Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-17",
+    "place_id": "PL4158",
+    "location_name": "Wieringermeer Polder, Noord-Holland (stoottroepen (elements, a few hundred))",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "Stoottroepen, a few hundred strong, concentrated in the polder, fail to prevent the blowing of the IJsselmeerdijk at noon",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-17",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R895;R782",
+    "source_locator": "R895: pp. 1314-1315"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.375,
      51.34
     ]
@@ -355920,6 +357970,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 459"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1056,
+     52.7717
+    ]
+   },
+   "properties": {
+    "claim_id": "C9404",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-BS-NHN",
+    "unit_name": "Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-04-18",
+    "place_id": "PL4159",
+    "location_name": "Medemblik, Noord-Holland (stoottroepen (elements))",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "From Medemblik, members of the stoottroepen bring some of the abandoned weapons in the polder to safety",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R895;R782",
+    "source_locator": "R895: p. 1316"
    }
   },
   {
@@ -370557,6 +372648,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: p. 496"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9388",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-STOOT",
+    "unit_name": "Stoottroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "Six battalions, about 4,000 men, in the liberated south (London return, early May 1945)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 757-758"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.2846,
+     51.4984
+    ]
+   },
+   "properties": {
+    "claim_id": "C9393",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-BEWAK",
+    "unit_name": "Bewakingstroepen der Binnenlandse Strijdkrachten",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Army",
+    "date": "1945-05-01",
+    "place_id": "PL4153",
+    "location_name": "Southern Netherlands (liberated area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "More than 10,000 men in the liberated south (de Jong's working figure; the London return of two battalions / about 1,500 is too low)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-01",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R894;R002",
+    "source_locator": "R894: pp. 757-758"
    }
   },
   {

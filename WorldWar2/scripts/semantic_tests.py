@@ -2487,7 +2487,7 @@ def scenario_138_fms_b156_reinhard():
     s = 'scenario 138'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     new = ['C%d' % i for i in range(7849, 7898)]
-    expect(s + ': new rows cite R811 first, blank parents, at most 0.5', all(claims[c]['reference_ids'].split(';')[0] == 'R811' and claims[c]['parent_unit_id'] == '' and float(claims[c]['confidence']) <= 0.5 for c in new), True)
+    expect(s + ': new rows cite R811 first, blank parents, at most 0.5 (C7851 raised to 0.7 in the de Jong pass, scenario 233)', all(claims[c]['reference_ids'].split(';')[0] == 'R811' and claims[c]['parent_unit_id'] == '' and float(claims[c]['confidence']) <= (0.7 if c == 'C7851' else 0.5) for c in new), True)
     expect(s + ': corps command posts Bilthoven, Moergestel, Dongen', [claims[c]['place_id'] for c in ('C7851', 'C7854', 'C7871')], ['PL2291', 'PL1057', 'PL1058'])
     expect(s + ': C0220 raised; C7723, C7825 and C7435 held', tuple(claims[c]['confidence'] for c in ('C0220', 'C7723', 'C7825', 'C7435')), ('0.7', '0.5', '0.5', '0.3'))
 
@@ -3688,10 +3688,291 @@ def scenario_232_delattre_c6_italy():
     expect(s + ': confidence raises (old value to new value, noted)', [(x, claims[x]['confidence'], ('old value: ' in claims[x]['notes'])) for x in sorted(raised)], [(x, raised[x], True) for x in sorted(raised)])
 
 
+def scenario_233_dejong_sept_german_oob():
+    """de Jong 10a-1 chunk 1: German dispositions, the Scheldt crossing, the Irene Brigade and the Guards, September 1944"""
+    import csv as _csv
+    s = 'scenario 233'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    new_ids = ['C9352', 'C9353', 'C9354', 'C9355', 'C9356']
+    expect(s + ': new rows (unit, date, place, confidence, activity)', [(claims[x]['unit_id'], claims[x]['date'], places[claims[x]['place_id']]['name'], claims[x]['confidence'], claims[x]['activity_status']) for x in new_ids], [('GER-INF-347D', '1944-09-03', 'Brussels, Belgium', '0.3', 'transit'), ('GER-ARMY-015A', '1944-09-08', 'Breskens, Zeeland', '0.3', 'transit'), ('GER-INF-064D', '1944-09-14', 'Moerkerke (Damme), West Flanders', '0.3', 'in_line'), ('NL-INF-IRNEB', '1944-09-07', 'Beringen, Limburg (BE)', '0.3', 'in_line'), ('UK-ARM-GRDD', '1944-09-10', 'Neerpelt, Limburg (BE)', '0.3', 'in_line')])
+    expect(s + ': every new row cites R894 and is a preferred row with no conflict group', [('R894' in refs(x), claims[x]['claim_status'], claims[x]['conflict_group_id']) for x in new_ids], [(True, 'preferred', '')] * len(new_ids))
+    cited = ['C7286', 'C7285', 'C7851', 'C7855', 'C1559', 'C0890', 'C2135']
+    expect(s + ': rows that gained R894 as a supporting citation', [('R894' in refs(x)) for x in cited], [True] * len(cited))
+    raised = {'C7851': '0.7', 'C1559': '0.9'}
+    expect(s + ': confidence raises (old value to new value, noted)', [(x, claims[x]['confidence'], ('old value: ' in claims[x]['notes'])) for x in sorted(raised)], [(x, raised[x], True) for x in sorted(raised)])
+
+
+def scenario_234_dejong_market_garden():
+    """de Jong 10a-1 chunk 2: Market-Garden, the Nijmegen bridges, Dutch intelligence reports on the SS divisions, September 1944"""
+    import csv as _csv
+    s = 'scenario 234'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    new_ids = ['C9357', 'C9358', 'C9359', 'C9360', 'C9361', 'C9362', 'C9363', 'C9364', 'C9365', 'C9366', 'C9367', 'C9368', 'C9369', 'C9370', 'C9371', 'C9372', 'C9373', 'C9374']
+    expect(s + ': new rows (unit, date, place, confidence, activity)', [(claims[x]['unit_id'], claims[x]['date'], places[claims[x]['place_id']]['name'], claims[x]['confidence'], claims[x]['activity_status']) for x in new_ids], [('UK-ARM-GRDD', '1944-09-17', 'Valkenswaard, Noord-Brabant', '0.3', 'in_line'), ('GER-PZB-107B', '1944-09-18', 'Eindhoven, Noord-Brabant', '0.3', 'in_line'), ('GER-INF-059D', '1944-09-18', 'Best, Noord-Brabant', '0.3', 'in_line'), ('US-ABN-101D', '1944-09-18', 'Son, Noord-Brabant', '0.3', 'in_line'), ('UK-ARM-GRDD', '1944-09-19', 'Grave, Noord-Brabant', '0.3', 'in_line'), ('US-ABN-082D', '1944-09-18', 'Groesbeek, Gelderland', '0.3', 'in_line'), ('US-ABN-082D', '1944-09-20', 'Mook (Mook en Middelaar), Limburg', '0.3', 'in_line'), ('US-ABN-082D', '1944-09-20', 'Nijmegen, Gelderland', '0.3', 'in_line'), ('UK-ABN-001D', '1944-09-18', 'Oosterbeek, Gelderland', '0.5', 'in_line'), ('GER-SSPZ-009D', '1944-09-14', 'Doetinchem, Gelderland', '0.3', 'in_line'), ('GER-SSPZ-009D', '1944-09-15', 'Eefde, Gelderland', '0.3', 'in_line'), ('GER-SSPZ-009D', '1944-09-16', 'Arnhem, Gelderland', '0.3', 'in_line'), ('GER-FJA-001A', '1944-09-15', 'Vught, Noord-Brabant', '0.5', 'in_line'), ('GER-AG-00BG', '1944-09-15', 'Oosterbeek, Gelderland', '0.3', 'in_line'), ('GER-ARMY-015A', '1944-09-16', 'Dordrecht, Zuid-Holland', '0.3', 'in_line'), ('UK-INF-043D', '1944-09-22', 'Driel, Overbetuwe, Gelderland', '0.3', 'in_line'), ('UK-INF-043D', '1944-09-25', 'Driel, Overbetuwe, Gelderland', '0.3', 'in_line'), ('UK-INF-043D', '1944-09-26', 'Driel, Overbetuwe, Gelderland', '0.3', 'in_line')])
+    expect(s + ': every new row cites R894 and is a preferred row with no conflict group', [('R894' in refs(x), claims[x]['claim_status'], claims[x]['conflict_group_id']) for x in new_ids], [(True, 'preferred', '')] * len(new_ids))
+    cited = ['C7289', 'C7290', 'C1465', 'C1462', 'C7869', 'C0934', 'C1464']
+    expect(s + ': rows that gained R894 as a supporting citation', [('R894' in refs(x)) for x in cited], [True] * len(cited))
+    raised = {'C7289': '0.7', 'C7290': '0.7', 'C1465': '0.9'}
+    expect(s + ': confidence raises (old value to new value, noted)', [(x, claims[x]['confidence'], ('old value: ' in claims[x]['notes'])) for x in sorted(raised)], [(x, raised[x], True) for x in sorted(raised)])
+
+
+def scenario_235_dejong_irene_scheldt():
+    """de Jong 10a-1 chunk 3: the Irene Brigade at Grave, Heumen and Tilburg; Scheldt and Brabant citations, October-November 1944"""
+    import csv as _csv
+    s = 'scenario 235'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    new_ids = ['C9375', 'C9376', 'C9377']
+    expect(s + ': new rows (unit, date, place, confidence, activity)', [(claims[x]['unit_id'], claims[x]['date'], places[claims[x]['place_id']]['name'], claims[x]['confidence'], claims[x]['activity_status']) for x in new_ids], [('NL-INF-IRNEB', '1944-09-22', 'Grave, Noord-Brabant', '0.5', 'garrison'), ('NL-INF-IRNEB', '1944-10-01', 'Heumen, Gelderland', '0.3', 'garrison'), ('NL-INF-IRNEB', '1944-10-27', 'Tilburg, Noord-Brabant', '0.3', 'in_line')])
+    expect(s + ': every new row cites R894 and is a preferred row with no conflict group', [('R894' in refs(x), claims[x]['claim_status'], claims[x]['conflict_group_id']) for x in new_ids], [(True, 'preferred', '')] * len(new_ids))
+    cited = ['C1605', 'C9041', 'C9052', 'C1564', 'C1312', 'C1313', 'C7366', 'C7390', 'C7383', 'C7384']
+    expect(s + ': rows that gained R894 as a supporting citation', [('R894' in refs(x)) for x in cited], [True] * len(cited))
+    raised = {}
+    expect(s + ': confidence raises (old value to new value, noted)', [(x, claims[x]['confidence'], ('old value: ' in claims[x]['notes'])) for x in sorted(raised)], [(x, raised[x], True) for x in sorted(raised)])
+
+
+def scenario_236_dejong_walcheren():
+    """de Jong 10a-1 chunk 4: Walcheren landings and the Middelburg surrender, November 1944"""
+    import csv as _csv
+    s = 'scenario 236'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    new_ids = ['C9378']
+    expect(s + ': new rows (unit, date, place, confidence, activity)', [(claims[x]['unit_id'], claims[x]['date'], places[claims[x]['place_id']]['name'], claims[x]['confidence'], claims[x]['activity_status']) for x in new_ids], [('GER-INF-070D', '1944-11-03', 'Middelburg, Zeeland', '0.5', 'in_line')])
+    expect(s + ': every new row cites R894 and is a preferred row with no conflict group', [('R894' in refs(x), claims[x]['claim_status'], claims[x]['conflict_group_id']) for x in new_ids], [(True, 'preferred', '')] * len(new_ids))
+    cited = ['C7398', 'C1704', 'C7397', 'C7401', 'C1036']
+    expect(s + ': rows that gained R894 as a supporting citation', [('R894' in refs(x)) for x in cited], [True] * len(cited))
+    raised = {}
+    expect(s + ': confidence raises (old value to new value, noted)', [(x, claims[x]['confidence'], ('old value: ' in claims[x]['notes'])) for x in sorted(raised)], [(x, raised[x], True) for x in sorted(raised)])
+
+
+def scenario_237_dejong_polish_g123():
+    """de Jong 10a-1 follow-up: Polish 550-man second lift at Grave and the Betuwe bank, conflict group G123"""
+    import csv as _csv
+    s = 'scenario 237'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    new_ids = ['C9379', 'C9380']
+    expect(s + ': new rows (unit, date, place, confidence, status, group)',
+           [(claims[x]['unit_id'], claims[x]['date'], places[claims[x]['place_id']]['name'], claims[x]['confidence'], claims[x]['claim_status'], claims[x]['conflict_group_id']) for x in new_ids],
+           [('POL-ABN-001B', '1944-09-25', 'Betuwe bank of the Neder Rijn, Gelderland', '0.5', 'alternate', 'G123'),
+            ('POL-ABN-001B', '1944-09-26', 'Betuwe bank of the Neder Rijn, Gelderland', '0.5', 'alternate', 'G123')])
+    expect(s + ': every new row cites R894', [('R894' in refs(x)) for x in new_ids], [True, True])
+    expect(s + ': C1583 stays preferred in G123 at 0.7',
+           (claims['C1583']['conflict_group_id'], claims['C1583']['claim_status'], claims['C1583']['confidence']),
+           ('G123', 'preferred', '0.7'))
+    expect(s + ': C1580-C1582 and C1584 stay out of G123',
+           [claims[x]['conflict_group_id'] for x in ('C1580', 'C1581', 'C1582', 'C1584')],
+           ['', '', '', ''])
+    expect(s + ': PL4149 is an area place at 10 km',
+           (places['PL4149']['kind'], places['PL4149']['precision_km'], places['PL4149']['coord_reference_id']),
+           ('area', '10', 'R782'))
+
+
+def scenario_238_dejong_irene_dates():
+    """de Jong 10a-1 follow-up: Irene Brigade landing 7 August and Second Army attachment 4 September as alternates"""
+    import csv as _csv
+    s = 'scenario 238'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    refs = lambda c: claims[c]['reference_ids'].split(';')
+    places = {r['place_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    rels = {r['relation_id']: r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'command_relations.csv'), encoding='utf-8'))}
+    links = [r for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'command_relation_claims.csv'), encoding='utf-8')) if r['relation_id'] == 'CR1284']
+    expect(s + ': C9381 landing alternate in G124',
+           (claims['C9381']['date'], claims['C9381']['event_type'], claims['C9381']['claim_status'], claims['C9381']['conflict_group_id'], claims['C9381']['confidence'], places[claims['C9381']['place_id']]['name'], 'R894' in refs('C9381')),
+           ('1944-08-07', 'landing', 'alternate', 'G124', '0.3', 'Normandy (disembarkation, place not named)', True))
+    expect(s + ': C1600 stays preferred in G124 at 0.5 on 6 August',
+           (claims['C1600']['date'], claims['C1600']['conflict_group_id'], claims['C1600']['claim_status'], claims['C1600']['confidence']),
+           ('1944-08-06', 'G124', 'preferred', '0.5'))
+    expect(s + ': G125 transfer dates and statuses',
+           [(claims[x]['date'], claims[x]['event_type'], claims[x]['claim_status'], claims[x]['conflict_group_id'], claims[x]['confidence']) for x in ('C9382', 'C9383')],
+           [('1944-09-02', 'command_change', 'preferred', 'G125', '0.3'),
+            ('1944-09-04', 'command_change', 'alternate', 'G125', '0.5')])
+    expect(s + ': C9383 cites R894 and C9382 cites R144',
+           ('R894' in refs('C9383'), 'R144' in refs('C9382')),
+           (True, True))
+    expect(s + ': CR1284 is an alternate Second Army start on 4 September, evidenced only by C9383',
+           (rels['CR1284']['subject_unit_id'], rels['CR1284']['higher_unit_id'], rels['CR1284']['relationship'], rels['CR1284']['valid_from'], rels['CR1284']['status'], rels['CR1284']['valid_to_basis'], [(l['claim_id'], l['role'], l['stated_effective_from']) for l in links]),
+           ('NL-INF-IRNEB', 'UK-ARMY-002A', 'unspecified_subordination', '1944-09-04', 'alternate', 'open_at_last_claim', [('C9383', 'asserts_start', '1944-09-04')]))
+    expect(s + ': CR0933 stays preferred from 2 September',
+           (rels['CR0933']['valid_from'], rels['CR0933']['status']),
+           ('1944-09-02', 'preferred'))
+
+
+def scenario_239_c1036_raise():
+    """de Jong 10a-1 follow-up: raise C1036, 70th Division surrender at Middelburg on 6 November 1944, to 0.9"""
+    s = 'scenario 239'
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c = claims['C1036']
+    refs = c['reference_ids'].split(';')
+    expect(s + ': C1036 is the Middelburg surrender at 0.9 with the four agreeing families still cited',
+           (c['unit_id'], c['date'], c['event_type'], c['place_id'], c['confidence'], c['claim_status'], c['conflict_group_id'],
+            all(r in refs for r in ('R443', 'R668', 'R888', 'R228', 'R894'))),
+           ('GER-INF-070D', '1944-11-06', 'surrender', 'PL0620', '0.9', 'preferred', '', True))
+    expect(s + ': the raise is annotated with old value 0.5 and new value 0.9',
+           ('old value: 0.5' in c['notes'] and 'new value: 0.9' in c['notes']),
+           True)
+
+
+def scenario_240_stoottroepen_unit():
+    """de Jong 10a-1 follow-up: first entry of the Stoottroepen der Binnenlandse Strijdkrachten"""
+    s = 'scenario 240'
+    units = {u['unit_id']: u for u in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'units.csv'), encoding='utf-8'))}
+    u = units['NL-INF-STOOT']
+    expect(s + ': NL-INF-STOOT is the formal Stoottroepen unit, independent, formed 18 September 1944',
+           (u['unit_name'], u['nationality'], u['echelon'], u['parent_unit_id'], u['formed_date'], u['record_status']),
+           ('Stoottroepen der Binnenlandse Strijdkrachten', 'Netherlands', 'regiment/battle_group', '', '1944-09-18', 'active'))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c18, c19, c22, cpeel, cmay = (claims[i] for i in ('C9384', 'C9385', 'C9386', 'C9387', 'C9388'))
+    expect(s + ': C9384 places about 1,000 men in six companies at Eindhoven on 18 September, at the disposal of XXX Corps, confidence 0.3',
+           (c18['unit_id'], c18['date'], c18['place_id'], c18['event_type'], c18['confidence'], c18['claim_status'], 'R894' in c18['reference_ids'].split(';')),
+           ('NL-INF-STOOT', '1944-09-18', 'PL2596', 'activation', '0.3', 'preferred', True))
+    expect(s + ': C9385 places van Kooten recruiting the Stoottroepen-Limburg at Maastricht on 19 September, confidence 0.5',
+           (c19['unit_id'], c19['date'], c19['place_id'], c19['event_type'], c19['confidence'], c19['commander'], c19['location_qualifier']),
+           ('NL-INF-STOOT', '1944-09-19', 'PL0203', 'arrival', '0.5', 'B. J. C. van Kooten', 'Stoottroepen-Limburg'))
+    expect(s + ': C9386 is Borghouts\'s appointment as commander south of the great rivers on 22 September, confidence 0.3',
+           (c22['unit_id'], c22['date'], c22['place_id'], c22['event_type'], c22['confidence'], c22['commander']),
+           ('NL-INF-STOOT', '1944-09-22', 'PL2596', 'command_change', '0.3', 'F. Borghouts'))
+    expect(s + ': C9387 is the end-of-October action in the Peel, confidence 0.3',
+           (cpeel['unit_id'], cpeel['date'], cpeel['place_id'], cpeel['event_type'], cpeel['confidence']),
+           ('NL-INF-STOOT', '1944-10-31', 'PL4152', 'defense', '0.3'))
+    expect(s + ': C9388 is the early-May 1945 strength of about 4,000 in six battalions, confidence 0.3',
+           (cmay['unit_id'], cmay['date'], cmay['place_id'], cmay['event_type'], cmay['confidence'], 'personnel":4000' in (cmay.get('strength_json') or '')),
+           ('NL-INF-STOOT', '1945-05-01', 'PL4153', 'other', '0.3', True))
+    places = {p['place_id']: p for p in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': PL4152 is the Peel as an area place',
+           (places['PL4152']['name'], places['PL4152']['kind'], places['PL4152']['precision_km']),
+           ('De Peel, Noord-Brabant/Limburg', 'area', '25'))
+    expect(s + ': PL4153 is the liberated south as an area place',
+           (places['PL4153']['name'], places['PL4153']['kind'], places['PL4153']['precision_km']),
+           ('Southern Netherlands (liberated area)', 'area', '50'))
+    rels = {r['relation_id']: r for r in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'command_relations.csv'), encoding='utf-8'))}
+    r = rels['CR1285']
+    expect(s + ': CR1285 places NL-INF-STOOT under XXX Corps from 18 September, unspecified_subordination, preferred, end open',
+           (r['subject_unit_id'], r['higher_unit_id'], r['relationship'], r['valid_from'], r['valid_to'], r['valid_to_basis'], r['status']),
+           ('NL-INF-STOOT', 'UK-COR-030C', 'unspecified_subordination', '1944-09-18', '', 'open_at_last_claim', 'preferred'))
+    links = [L for L in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'command_relation_claims.csv'), encoding='utf-8')) if L['relation_id']=='CR1285']
+    expect(s + ': CR1285 is evidenced only by C9384 asserting the start',
+           (len(links), links[0]['claim_id'], links[0]['role']),
+           (1, 'C9384', 'asserts_start'))
+
+
+def scenario_241_bewakingstroepen_unit():
+    """de Jong 10a-1 follow-up 2: first entry of the Bewakingstroepen der Binnenlandse Strijdkrachten"""
+    s = 'scenario 241'
+    units = {u['unit_id']: u for u in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'units.csv'), encoding='utf-8'))}
+    u = units['NL-INF-BEWAK']
+    expect(s + ': NL-INF-BEWAK is the formal Bewakingstroepen unit, independent, formed 22 September 1944',
+           (u['unit_name'], u['nationality'], u['echelon'], u['parent_unit_id'], u['formed_date'], u['record_status']),
+           ('Bewakingstroepen der Binnenlandse Strijdkrachten', 'Netherlands', 'regiment/battle_group', '', '1944-09-22', 'active'))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c22, czeel, cjan, cmar, cmay = (claims[i] for i in ('C9389', 'C9390', 'C9391', 'C9392', 'C9393'))
+    expect(s + ': C9389 is van Dijk\'s appointment as commander of the Bewakingstroepen on 22 September, confidence 0.3',
+           (c22['unit_id'], c22['date'], c22['place_id'], c22['event_type'], c22['confidence'], c22['commander'], 'R894' in c22['reference_ids'].split(';')),
+           ('NL-INF-BEWAK', '1944-09-22', 'PL2596', 'activation', '0.3', 'W. J. van Dijk', True))
+    expect(s + ': C9390 is Zeeland guard duty on 1 December 1944, confidence 0.3',
+           (czeel['unit_id'], czeel['date'], czeel['place_id'], czeel['event_type'], czeel['confidence']),
+           ('NL-INF-BEWAK', '1944-12-01', 'PL4154', 'defense', '0.3'))
+    expect(s + ': C9391 is the mid-January 1945 strength of more than 10,000, confidence 0.3',
+           (cjan['unit_id'], cjan['date'], cjan['place_id'], cjan['confidence'], 'personnel":10000' in (cjan.get('strength_json') or '')),
+           ('NL-INF-BEWAK', '1945-01-15', 'PL4153', '0.3', True))
+    expect(s + ': C9392 is the early-March transfer of 19 gezagscompagnieën, confidence 0.3',
+           (cmar['unit_id'], cmar['date'], cmar['event_type'], cmar['confidence']),
+           ('NL-INF-BEWAK', '1945-03-01', 'subordinate_assignment', '0.3'))
+    expect(s + ': C9393 uses de Jong\'s working figure of more than 10,000 for early May, not the London 1,500',
+           (cmay['unit_id'], cmay['date'], cmay['place_id'], cmay['confidence'], 'personnel":10000' in (cmay.get('strength_json') or ''), '1,500 is too low' in cmay['notes'] or '1,500' in cmay['notes']),
+           ('NL-INF-BEWAK', '1945-05-01', 'PL4153', '0.3', True, True))
+    places = {p['place_id']: p for p in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': PL4154 is liberated Zeeland as an area place',
+           (places['PL4154']['name'], places['PL4154']['kind'], places['PL4154']['precision_km']),
+           ('Zeeland (liberated area)', 'area', '50'))
+
+
+def scenario_242_stoottroepen_battalions():
+    """de Jong 10a-1 follow-up 2: Limburg and Brabant regional commands and the three named Brabant battalions"""
+    s = 'scenario 242'
+    units = {u['unit_id']: u for u in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'units.csv'), encoding='utf-8'))}
+    expect(s + ': five new units exist with the expected parents and formed dates',
+           [(units[i]['unit_name'], units[i]['echelon'], units[i]['parent_unit_id'], units[i]['formed_date'])
+            for i in ('NL-INF-STOOT-LIM', 'NL-INF-STOOT-BRB', 'NL-INF-STBRB-001', 'NL-INF-STBRB-002', 'NL-INF-STBRB-003')],
+           [
+            ('Limburgse Stoottroepen', 'regiment/battle_group', 'NL-INF-STOOT', '1944-09-18'),
+            ('Brabantse Stoottroepen', 'regiment/battle_group', 'NL-INF-STOOT', '1944-10-10'),
+            ('1ste Bataljon, Brabantse Stoottroepen', 'battalion', 'NL-INF-STOOT-BRB', '1945-01-01'),
+            ('2de Bataljon, Brabantse Stoottroepen', 'battalion', 'NL-INF-STOOT-BRB', '1944-12-01'),
+            ('3de Bataljon, Brabantse Stoottroepen', 'battalion', 'NL-INF-STOOT-BRB', '1944-12-01'),
+           ])
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': C9394 is van Kooten recruiting at Maastricht on 19 September, confidence 0.5',
+           (claims['C9394']['unit_id'], claims['C9394']['date'], claims['C9394']['place_id'], claims['C9394']['confidence'], claims['C9394']['commander']),
+           ('NL-INF-STOOT-LIM', '1944-09-19', 'PL0203', '0.5', 'B. J. C. van Kooten'))
+    expect(s + ': C9397 is the first Brabant company at Wamel on 10 October, confidence 0.5',
+           (claims['C9397']['unit_id'], claims['C9397']['date'], claims['C9397']['place_id'], claims['C9397']['confidence'], claims['C9397']['commander']),
+           ('NL-INF-STOOT-BRB', '1944-10-10', 'PL4056', '0.5', 'Sjef de Groot'))
+    expect(s + ': C9401 and C9402 place the 2nd and 3rd Brabant battalions on their winter fronts, confidence 0.3',
+           (claims['C9401']['unit_id'], claims['C9401']['place_id'], claims['C9401']['date'], claims['C9402']['unit_id'], claims['C9402']['place_id']),
+           ('NL-INF-STBRB-002', 'PL4155', '1944-12-01', 'NL-INF-STBRB-003', 'PL4156'))
+    expect(s + ': C9396 and C9400 are the March 1945 Rhineland moves',
+           (claims['C9396']['unit_id'], claims['C9396']['place_id'], claims['C9400']['unit_id'], claims['C9400']['place_id'], claims['C9400']['location_qualifier']),
+           ('NL-INF-STOOT-LIM', 'PL4157', 'NL-INF-STBRB-001', 'PL4157', 'two companies'))
+    rels = {r['relation_id']: r for r in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'command_relations.csv'), encoding='utf-8'))}
+    expect(s + ': organic relations CR1286-CR1290 and the Second Army relation CR1291 exist',
+           [(rels[i]['subject_unit_id'], rels[i]['higher_unit_id'], rels[i]['relationship'], rels[i]['valid_from'])
+            for i in ('CR1286', 'CR1287', 'CR1288', 'CR1289', 'CR1290', 'CR1291')],
+           [
+            ('NL-INF-STOOT-LIM', 'NL-INF-STOOT', 'organic', '1944-09-19'),
+            ('NL-INF-STOOT-BRB', 'NL-INF-STOOT', 'organic', '1944-10-10'),
+            ('NL-INF-STBRB-001', 'NL-INF-STOOT-BRB', 'organic', '1945-01-01'),
+            ('NL-INF-STBRB-002', 'NL-INF-STOOT-BRB', 'organic', '1944-12-01'),
+            ('NL-INF-STBRB-003', 'NL-INF-STOOT-BRB', 'organic', '1944-12-01'),
+            ('NL-INF-STBRB-001', 'UK-ARMY-002A', 'unspecified_subordination', '1945-03-01'),
+           ])
+    places = {p['place_id']: p for p in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': the three new operational-area places exist',
+           (places['PL4155']['kind'], places['PL4156']['kind'], places['PL4157']['name']),
+           ('line', 'area', 'Rhineland, Germany'))
+
+
+def scenario_243_wieringermeer_gewest11():
+    """de Jong 10a-1 follow-up 2: BS gewest 11 (Noord-Holland Noord) and the Wieringermeer stoottroepen, 17 April 1945"""
+    s = 'scenario 243'
+    units = {u['unit_id']: u for u in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'units.csv'), encoding='utf-8'))}
+    u = units['NL-BS-NHN']
+    expect(s + ': NL-BS-NHN is the formal BS gewest 11 command, independent, formed 5 September 1944',
+           (u['unit_name'], u['nationality'], u['echelon'], u['parent_unit_id'], u['formed_date'], u['record_status']),
+           ('Binnenlandse Strijdkrachten, gewest 11 (Noord-Holland Noord)', 'Netherlands', 'regiment/battle_group', '', '1944-09-05', 'active'))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    c17, c18 = claims['C9403'], claims['C9404']
+    expect(s + ': C9403 places a few hundred stoottroepen of gewest 11 in the Wieringermeer polder on 17 April 1945, confidence 0.5',
+           (c17['unit_id'], c17['date'], c17['place_id'], c17['event_type'], c17['confidence'], c17['commander'], 'R895' in c17['reference_ids'].split(';')),
+           ('NL-BS-NHN', '1945-04-17', 'PL4158', 'defense', '0.5', 'J. G. M. Wastenecker', True))
+    expect(s + ': C9404 is the recovery of abandoned weapons from Medemblik on 18 April, confidence 0.3',
+           (c18['unit_id'], c18['date'], c18['place_id'], c18['event_type'], c18['confidence'], 'R895' in c18['reference_ids'].split(';')),
+           ('NL-BS-NHN', '1945-04-18', 'PL4159', 'other', '0.3', True))
+    expect(s + ': the Wieringermeer stoottroepen are not on the southern NL-INF-STOOT unit',
+           (c17['unit_id'] != 'NL-INF-STOOT', c18['unit_id'] != 'NL-INF-STOOT'),
+           (True, True))
+    places = {p['place_id']: p for p in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'places.csv'), encoding='utf-8'))}
+    expect(s + ': PL4158 is the Wieringermeer polder as an area place and PL4159 is Medemblik',
+           (places['PL4158']['name'], places['PL4158']['kind'], places['PL4159']['name'], places['PL4159']['kind']),
+           ('Wieringermeer Polder, Noord-Holland', 'area', 'Medemblik, Noord-Holland', 'point'))
+    meta = {r['reference_id']: r for r in csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), encoding='utf-8'))}
+    expect(s + ': R895 is de Jong deel 10b in the niod_dejong_koninkrijk family',
+           (meta['R895']['source_family'], meta['R895']['source_type'], '10b' in meta['R895']['short_title']),
+           ('niod_dejong_koninkrijk', 'official_history', True))
+
+
 
 def main():
 
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps, scenario_196_scott_decisions_nov04, scenario_197_b709_german, scenario_198_b730_german, scenario_199_theater, scenario_200_placeholders_b1, scenario_201_placeholders_b2, scenario_202_placeholders_b3, scenario_203_lifespan, scenario_204_command_relations, scenario_205_german_end_rows, scenario_206_map_text_weak_pairs, scenario_207_midwar_ends, scenario_208_lifespan_check, scenario_209_ellis_leftovers_chunk1, scenario_210_ellis_leftovers_chunk2, scenario_211_ellis_leftovers_chunk3, scenario_212_ellis_leftovers_chunk4, scenario_213_ellis_leftovers_chunk5, scenario_214_ellis_leftovers_chunk6, scenario_215_cmhq173_watch_on_the_maas, scenario_216_ahq039_western_netherlands, scenario_217_ahq032_concluding_phase, scenario_218_ahq019_rhine_crossing, scenario_219_cmhq186_blockbuster, scenario_220_cmhq155_veritable, scenario_221_cmhq188_scheldt, scenario_222_cmhq183_pursuit, scenario_223_cmhq184_channel_ports, scenario_224_ahq065_falaise, scenario_225_ahq058_july, scenario_226_cmhq181_goldflake, scenario_227_delattre_c1_armour, scenario_228_delattre_c2_infantry, scenario_229_delattre_c3_headquarters, scenario_230_delattre_c4_us_german, scenario_231_delattre_c5_other_fronts, scenario_232_delattre_c6_italy):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps, scenario_196_scott_decisions_nov04, scenario_197_b709_german, scenario_198_b730_german, scenario_199_theater, scenario_200_placeholders_b1, scenario_201_placeholders_b2, scenario_202_placeholders_b3, scenario_203_lifespan, scenario_204_command_relations, scenario_205_german_end_rows, scenario_206_map_text_weak_pairs, scenario_207_midwar_ends, scenario_208_lifespan_check, scenario_209_ellis_leftovers_chunk1, scenario_210_ellis_leftovers_chunk2, scenario_211_ellis_leftovers_chunk3, scenario_212_ellis_leftovers_chunk4, scenario_213_ellis_leftovers_chunk5, scenario_214_ellis_leftovers_chunk6, scenario_215_cmhq173_watch_on_the_maas, scenario_216_ahq039_western_netherlands, scenario_217_ahq032_concluding_phase, scenario_218_ahq019_rhine_crossing, scenario_219_cmhq186_blockbuster, scenario_220_cmhq155_veritable, scenario_221_cmhq188_scheldt, scenario_222_cmhq183_pursuit, scenario_223_cmhq184_channel_ports, scenario_224_ahq065_falaise, scenario_225_ahq058_july, scenario_226_cmhq181_goldflake, scenario_227_delattre_c1_armour, scenario_228_delattre_c2_infantry, scenario_229_delattre_c3_headquarters, scenario_230_delattre_c4_us_german, scenario_231_delattre_c5_other_fronts, scenario_232_delattre_c6_italy, scenario_233_dejong_sept_german_oob, scenario_234_dejong_market_garden, scenario_235_dejong_irene_scheldt, scenario_236_dejong_walcheren, scenario_237_dejong_polish_g123, scenario_238_dejong_irene_dates, scenario_239_c1036_raise, scenario_240_stoottroepen_unit, scenario_241_bewakingstroepen_unit, scenario_242_stoottroepen_battalions, scenario_243_wieringermeer_gewest11):
         before = len(FAILURES)
         try:
             fn()

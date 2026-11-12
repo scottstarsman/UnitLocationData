@@ -27,7 +27,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Germany | other | 0 | 0 | 8 | 8 | 0 | 38 |
 | Netherlands | brigade | 0 | 0 | 1 | 1 | 0 | 18 |
 | Poland | division | 0 | 0 | 1 | 1 | 1 | 85 |
-| Poland | brigade | 0 | 0 | 1 | 1 | 1 | 5 |
+| Poland | brigade | 0 | 0 | 1 | 1 | 1 | 7 |
 | UK | army_group | 0 | 0 | 1 | 1 | 1 | 28 |
 | UK | army | 0 | 0 | 1 | 1 | 0 | 47 |
 | UK | corps | 0 | 0 | 5 | 5 | 1 | 193 |
@@ -41,7 +41,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **420** | **427** | **259** | **9367** |
+| **All** | | **7** | **0** | **420** | **427** | **259** | **9369** |
 
 ## Operations
 
@@ -51,26 +51,26 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 129 |
 | campaign | 9 | 9 | 7456 |
-| operation | 33 | 33 | 866 |
+| operation | 33 | 33 | 868 |
 | battle | 20 | 20 | 599 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9367** |
+| **All** | **75** | **73** | **9369** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4132 places and 185 alias names for 9367 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4133 places and 187 alias names for 9369 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
 | point | 4028 | 9156 |
-| area | 86 | 190 |
+| area | 87 | 192 |
 | line | 18 | 21 |
 
 | country | Places | Claims |
 |---|---:|---:|
 | France (FR) | 1605 | 3477 |
 | Germany (DE) | 1458 | 3172 |
-| Netherlands (NL) | 519 | 1518 |
+| Netherlands (NL) | 520 | 1520 |
 | Belgium (BE) | 374 | 847 |
 | Luxembourg (LU) | 89 | 233 |
 | Austria (AT) | 30 | 48 |

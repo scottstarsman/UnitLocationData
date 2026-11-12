@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 12 November 2026 — de Jong 10a-1 follow-up: Polish 550-man second lift at Grave and the Betuwe bank, 25-26 September 1944 (branch `dejong-10a1`)
+
+Approved by Scott (12 November 2026). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, p. 401, family `niod_dejong_koninkrijk`), printed page cited, paraphrase only. De Jong says that on Monday 25 and Tuesday 26 September about 550 Polish parachutists, flown from England and dropped at Grave, arrived at the Betuwe bank of the Rhine, sheltered behind the high Rhine dike and did not attempt to cross. Footnote 2 on that page is about an improvised landing strip at Grave proposed for the 52nd Division, not a separate date for the Polish drop.
+
+- **Conflict group `G123`** (the arrival of the remaining about 550 men of the 1st Polish Independent Parachute Brigade on the south bank of the Rhine). `C1583` (Ellis, 24 September 1944, Driel, 550 men flown in via Nijmegen) stays preferred at `0.7` (the cap for a preferred row in a group). `conflict_group_id` old value: blank; new value: `G123`. `claim_status` old value: preferred; new value: preferred. New alternate rows `C9379` (25 September, arrival) and `C9380` (26 September, still on the bank), both `0.5`, place `PL4149`, one source family. `C1580`, `C1581` and `C1582` (the 19 September glider lift, the 21 September drop at Driel, and the 23 September crossing) are different events and were left out of the group. `C1584` (26 September, a Wikipedia march towards Nijmegen) is annotated only and was left out, because it is not clearly the same event.
+- **New claims (2, `C9379`-`C9380`; old value none, new value the row):** as above.
+- **New place:** `PL4149` Betuwe bank of the Neder Rijn, Gelderland (area, precision 10 km; representative point from GeoNames Driel, `R782`).
+- **`R894` `strength_alias`:** old value blank; new value `de Jong, Het Koninkrijk, deel 10a`, so the strength figures on `C9379` and `C9380` resolve to this reference.
+- **Tests:** new scenario 237.
+
 ## 12 November 2026 — de Jong, deel 10a-1, chunk 4: Walcheren landings and the Middelburg surrender, November 1944 (branch `dejong-10a1`)
 
 Approved by Scott (roadmap 374, step 4). Source `R894` (de Jong, *Het Koninkrijk*, deel 10a, family `niod_dejong_koninkrijk`), printed pages cited, paraphrase only. The pages rest on Dutch witnesses (the surgeon E. L. Nauta, OD telegrams, recollections of Dutch Commandos), so they count as a family independent of Stacey and the Canadian reports; no confidence is raised because each cited row either names only part of its formation or already rests on several families.

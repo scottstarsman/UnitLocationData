@@ -19338,7 +19338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -20338,7 +20338,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -46978,7 +46978,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Grand Est",
-    "claims_count": 2
+    "claims_count": 4
    }
   },
   {
@@ -76878,7 +76878,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 3
+    "claims_count": 5
    }
   },
   {
@@ -82378,6 +82378,66 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Baden-Württemberg",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.6118,
+     48.313
+    ]
+   },
+   "properties": {
+    "place_id": "PL4136",
+    "name": "Witternheim, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bas-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.692,
+     48.3597
+    ]
+   },
+   "properties": {
+    "place_id": "PL4137",
+    "name": "Obenheim, Bas-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Bas-Rhin",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.1691,
+     47.671
+    ]
+   },
+   "properties": {
+    "place_id": "PL4138",
+    "name": "Balschwiller, Haut-Rhin",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Haut-Rhin",
     "claims_count": 1
    }
   }

@@ -53,6 +53,8 @@ A different `event_type` is the right fix only when the row really is a differen
 
 ## Add a new unit
 
+A claim for a unit outside the current scope (any domain, front or period) is still recorded when a source gives it, because it will help as scope grows (Scott, 13 November 2026; `docs/HANDOFF.md` standing rule 22). Such claims follow every normal claim rule, stay out of the main outputs and the who_controls grid (as `build/other_domains/` does for air and naval units), and any coverage or balance figure for them is labelled incidental, not surveyed. Only the unit `domain` separates claims today; see `docs/air_naval_pilot.md` section 7 for what is not built yet.
+
 Resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain (Scott, 12 November 2026; `docs/HANDOFF.md` standing rule 21). Loose cells and networks are not entered as units. Formal units still follow the small-unit rule in `schema/README.md` (units below regiment size need a traced parent).
 
 1. Add a row to `data/units.csv` (kept sorted by `unit_id`). Choose the `unit_id` as `NATION-TYPE-NUMBER+ECHELONLETTER`, for example `US-INF-029D` (see [schema/README.md](schema/README.md)). Regiments, battle groups and battalions have no echelon letter (`GER-FJR-006`, `GER-SSHPZ-101`, `echelon` `battalion` for a battalion); the validator rejects an id that ends in an echelon letter that does not match the echelon. For a battle group use `NATION-KG-NAME` (for example `GER-KG-FREY`) or a similar descriptive id, `echelon` `regiment/battle_group`, and set `parent_unit_id` to its parent division (the organic parent; each claim row then lists it as an `organic` relation in `data/command_relation_claims.csv`).

@@ -26,6 +26,7 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/other_domains/claims.csv        claims of air and naval units (data/units.csv domain air or naval), same columns as all_claims.csv; these units
                                         are left out of every other output here (collected for later use)
   build/other_domains/units.csv         the air and naval units with their domain
+  build/other_domains/command_relations.csv  the derived command relations whose subject is an air or naval unit (same columns as command_relations.csv)
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
 Do not hand-edit anything in build/: edit data/claims/, data/command_relations.csv or data/command_relation_claims.csv and re-run this script.
@@ -270,9 +271,12 @@ def outputs():
     ground = [u for u in urows if u['unit_id'] not in other]
     out.update(coveragemod.outputs(ground, rows))
     units = {u['unit_id']: u for u in ground}
+    all_units = {u['unit_id']: u for u in urows}   # every domain: a higher unit of another domain keeps its name in the relation outputs
     out['units.csv'], out['units.json'] = units_outputs((uh, ground))
     out['other_domains/units.csv'] = common.csv_bytes(uh + ['domain'], [[u[c] for c in uh + ['domain']] for u in urows if u['unit_id'] in other])
-    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(command_relations.load(), units, rows))
+    crel = command_relations.load()
+    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
+    out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
     pl_rows, pl_geo, pl_md = places_outputs(rows)

@@ -136,16 +136,21 @@ DERIVED_HEADER = ['relation_id', 'subject_unit_id', 'subject_name', 'higher_unit
                   'source_claim_ids', 'note', 'end_unknown', 'change_undated', 'last_listed_date']
 
 
-def derived_rows(rel_obj, units, claim_rows):
+def derived_rows(rel_obj, units, claim_rows, subjects=None):
     """Rows of build/command_relations.csv: every preferred relation of the master table except `organic` (a constituted component is not a
     command relationship to ask about), with names from units.csv and the evidence claim ids. Placeholders (no higher unit) are included with blank
     higher_* columns. support: documented (date_basis narrative/order), table (assignment_table), inferred (anything else).
     last_listed_date: the date of the latest preferred claim that lists the relation (the last observation); for an end inferred from the next claim it
-    equals valid_to_earliest, for an end open at the last claim it is the last date the evidence reaches. Derived here; not a column of the master table."""
+    equals valid_to_earliest, for an end open at the last claim it is the last date the evidence reaches. Derived here; not a column of the master table.
+    `units` must hold every unit (all domains) so a higher unit of another domain still gets its name; `subjects`, when given, is the set of subject
+    unit ids to include (build.py passes the ground units for the main file and the air and naval units for build/other_domains/command_relations.csv;
+    air-naval pilot, 13 November 2026: a relation whose subject was an air or naval unit used to crash the build with a KeyError)."""
     claim_info = {r['claim_id']: r for r in claim_rows}
     out = []
     for r in rel_obj.rows:
         if r['status'] != 'preferred' or r['relationship'] == 'organic':
+            continue
+        if subjects is not None and r['subject_unit_id'] not in subjects:
             continue
         hu = units.get(r['higher_unit_id']) if r['higher_unit_id'] else None
         su = units[r['subject_unit_id']]

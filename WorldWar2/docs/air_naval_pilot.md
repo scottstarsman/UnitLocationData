@@ -11,7 +11,7 @@ Scott asked on 13 November 2026 for a small air and naval pilot before the data 
 | Luftwaffe | Luftflotte 3 (existing), II Jagdkorps, JG 26, II./JG 26, III./JG 26 | `C9405`-`C9415` (bases Chantilly, Flammersfeld, Cormeilles, Guyancourt, Villacoublay, Creil; D-Day strafing of Sword) |
 | USAAF | 366th Fighter Group, 390th Fighter Squadron, IX TAC (placeholder) | `C9416`-`C9422` (RAF Thruxton, ALG A-1, A-41, A-70) |
 | Naval | USS Texas, USS Satterlee, HMS Warspite, HMS Bedale / ORP Ślązak, 5. Torpedobootsflottille, task groups (placeholders) | `C9423`-`C9436` |
-| Coastal artillery | Marine-Artillerie-Abteilung 260 (ground by function, see 4) | `C9437`-`C9438` |
+| Coastal artillery | Marine-Artillerie-Abteilung 260 (ground by function, decided, see 4) | `C9437`-`C9438` |
 
 No RAF or RCAF unit was entered (optional in the brief; the source work was kept small).
 
@@ -55,9 +55,9 @@ No RAF or RCAF unit was entered (optional in the brief; the source work was kept
 4. `docs/review/` regenerated (relations changed).
 5. One sentence in `schema/README.md` (the new other-domain output file). No change to `schema/vocabularies.json` or the validator.
 
-## 4. Open decision: Marine-Artillerie-Abteilung 260
+## 4. Decision: Marine-Artillerie-Abteilung 260 (closed 13 November 2026)
 
-A Kriegsmarine coastal artillery battalion fights on land. It was entered as `ground` (like flak, Scott 4 November 2026) with branch `Navy`, so it appears in the main outputs and in `who_controls` (new keys only). Flipping it to `naval` is one cell in `data/units.csv` and moves `C9437`, `C9438` and `CR1305` to `build/other_domains/`. Recommended: keep it ground (it holds ground positions, like the 2nd Marine Infantry Division).
+A Kriegsmarine coastal artillery battalion fights on land. It was entered as `ground` (like flak, Scott 4 November 2026) with branch `Navy`, so it appears in the main outputs and in `who_controls` (new keys only). Flipping it to `naval` is one cell in `data/units.csv` and moves `C9437`, `C9438` and `CR1305` to `build/other_domains/`. **Decided by Scott, 13 November 2026: ground.** `GER-MAA-260` stays ground, as a general rule for flak and coastal artillery whatever service owned them (the `branch` column records the service); standing rule 23 in `docs/HANDOFF.md`.
 
 ## 5. Recommended next steps (for Scott's approval)
 

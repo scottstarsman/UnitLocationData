@@ -53,6 +53,8 @@ A different `event_type` is the right fix only when the row really is a differen
 
 ## Add a new unit
 
+Flak units and coastal artillery are domain `ground` whatever service owned them (Luftwaffe flak, Kriegsmarine coastal batteries); the `branch` column records the service (Scott, 13 November 2026; `docs/HANDOFF.md` standing rule 23). Leave `domain` blank for them; use `air` only for flying units and air commands and `naval` only for ships and naval commands.
+
 A claim for a unit outside the current scope (any domain, front or period) is still recorded when a source gives it, because it will help as scope grows (Scott, 13 November 2026; `docs/HANDOFF.md` standing rule 22). Such claims follow every normal claim rule, stay out of the main outputs and the who_controls grid (as `build/other_domains/` does for air and naval units), and any coverage or balance figure for them is labelled incidental, not surveyed. Only the unit `domain` separates claims today; see `docs/air_naval_pilot.md` section 7 for what is not built yet.
 
 Resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain (Scott, 12 November 2026; `docs/HANDOFF.md` standing rule 21). Loose cells and networks are not entered as units. Formal units still follow the small-unit rule in `schema/README.md` (units below regiment size need a traced parent).

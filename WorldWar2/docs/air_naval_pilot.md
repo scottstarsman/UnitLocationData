@@ -67,3 +67,96 @@ A Kriegsmarine coastal artillery battalion fights on land. It was entered as `gr
 4. Allow a second same-day row when the place differs (2.5), or document the exception route.
 5. Write the air and naval id conventions into `schema/README.md` (2.13).
 6. Roadmap 375 keeps the leftovers (II Jagdkorps from August 1944 in Rochefort; the 366th's later stations; the 5. Jagddivision; RAF/RCAF and further ships).
+
+## 6. Follow-up proposals: ships (13 November 2026)
+
+Scott agreed to these in principle (13 November 2026). **Proposals only: nothing below is implemented.** No schema, vocabulary, validator or data file was changed for this section; the pilot rows keep the values described in sections 1-3 until Scott approves the implementation separately.
+
+### 6.1 Granularity
+
+- Every **commissioned combatant of destroyer-escort size or larger** gets its own unit: battleships, carriers, cruisers, destroyers, destroyer escorts and their national equivalents, including German torpedo boats, frigates and corvettes.
+- **Smaller craft** are entered at flotilla or squadron level: MTB, S-boat and minesweeper flotillas, LST groups, landing-craft flotillas.
+- A **single small craft** gets its own unit only when a source singles it out (a famous LCT or S-boat, say), and only if it traces to a parent flotilla or squadron (the same rule as for companies).
+
+### 6.2 Naval echelon ladder
+
+A ladder of its own, not forced onto army ranks:
+
+| Level | Proposed `echelon` value | Examples | Today in the pilot |
+|---|---|---|---|
+| ship | `naval_unit` (existing reserved value, narrowed to a single vessel) | Texas, Warspite, Satterlee, Ślązak | `naval_unit` (unchanged) |
+| division or flotilla | `naval_division` (new) | destroyer division, S-boat flotilla, minesweeping flotilla, 5. Torpedobootsflottille | `GER-TBF-005` is `fleet`; would change to `naval_division` |
+| squadron | `naval_squadron` (new) | destroyer squadron, cruiser squadron | none |
+| task unit, task group, task force | `task_group` (new; the sub-label task unit, task group or task force goes in the unit note) | `US-TG-124-9` (Task Group 124.9), `UK-BF-D` (Bombarding Force D), `UK-TF-S` (Force S) | all three are `fleet`; would change to `task_group` |
+| fleet | `fleet` (existing reserved value, narrowed to numbered fleets and naval commands) | Home Fleet, Seventh Fleet, Marinegruppe West | `GER-MGW-000H` is `other` (older entry); would change to `fleet` |
+
+How it maps onto the reserved values: `naval_unit` keeps its meaning but only for a single vessel (its vocabulary text "ship, squadron or other naval unit" would be corrected); `fleet` stops meaning "task force or flotilla headquarters" and means a numbered fleet or a naval command. Three values are new: `naval_division`, `naval_squadron`, `task_group`. `air_force` and `air_formation` stay reserved and are not touched.
+
+**Proposed `echelon_rank` values** (a separate range so naval ranks never collide with ground ranks): `naval_unit` 10, `naval_division` 11, `naval_squadron` 12, `task_group` 13, `fleet` 14. The hierarchy check (a parent must outrank its child) would apply within the naval ladder only; links between a naval unit and a ground unit are `supporting` or `coordinating` relations, not standing subordination. None of the new values takes an id letter (they would be added to the `no_letter` list of `echelon_id_letter`), so ids such as `UK-TF-S` and `GER-MGW-000H` stay as they are.
+
+**Task organisations hold command relations only.** A task unit, group or force is a shifting organisation; it normally gets no location claim of its own, and its ships carry the locations. Such units would stay `record_status: placeholder` permanently, which means the validator rule "only a placeholder has no claim file" and `promote_placeholders.py` need one clarifying sentence (a task organisation with relations is complete without claims).
+
+### 6.3 New unit columns
+
+- **`ship_type`**: a fixed list based on US hull classification codes, each with a plain-English label in a new vocabulary `ship_type`. National terms (Torpedoboot, escort destroyer, Panzerschiff, frigate in the Royal Navy sense) stay in the unit note.
+
+| Code | Label |
+|---|---|
+| BB | battleship |
+| BC | battlecruiser |
+| CV | fleet aircraft carrier |
+| CVE | escort carrier |
+| CA | heavy cruiser (also the German Panzerschiff, noted) |
+| CL | light cruiser |
+| DD | destroyer |
+| DE | destroyer escort (also the Royal Navy escort destroyer, for example the Hunt class) |
+| PF | frigate |
+| TB | torpedo boat |
+| CORV | corvette |
+
+  Further codes (CVL, minelayer, minesweeper, submarine) are not needed for the entries in 6.1 and are left open; submarines are a question for Scott. The column is blank for non-ships and for flotillas and task groups.
+- **`hull_number`**: free text as the sources give it (`BB-35`, `DD-626`, `L26`, `03`). It is not a key: pennant numbers were reused and changed, so uniqueness is checked only within a nationality and a period, and as a warning at most.
+
+### 6.4 A `ship_classes` table
+
+New file `data/ship_classes.csv` (output in `build/other_domains/ship_classes.csv`), with its own schema file, validator checks and README section.
+
+| Column | Meaning |
+|---|---|
+| `class_id` | its own id, `SC001` and up; never the lead ship's id |
+| `class_name` | for example Hunt class Type II, New York class, Type 1934A destroyer, Type 1939 torpedo boat |
+| `parent_class_id` | blank for a class; set for a sub-type (a Type II row points at the Hunt class row) |
+| `sub_type` | the sub-type label (Type I-IV) or blank |
+| `nationality` | the nation that designed and built the class, which can differ from a ship's flag (Hunt Type II is British; Ślązak flew the Polish flag) |
+| `ship_type` | the code of 6.3 |
+| `lead_ship_name` | name only, as text; the lead ship need not be in the dataset (HMS Hunt never existed as such; German classes named by year have none) |
+| `capabilities_json` | nominal **as-designed** capabilities, with a source on every figure (below) |
+| `reference_ids` | the references the class row rests on |
+| `class_note` | free text |
+
+`capabilities_json` follows the pattern of `strength_json`: an object whose keys are `standard_displacement`, `speed`, `main_armament`, `secondary_armament`, `anti_aircraft`, `torpedo_tubes`, `aircraft`, `complement`, each `{"value": ..., "unit": ..., "reference_id": "R###", "note": ...}`. A key is simply absent when no source gives it (nothing is guessed). `check_json_fields.py` would validate the shape. Capabilities live on the most specific row; a sub-type row repeats only what differs from its parent family row, and a missing key on a sub-type means "as the family row".
+
+**Reasons for a table of its own:** lead ships are often absent from the dataset; some classes are named by year; some have sub-types; a transferred ship keeps its class (Bedale and Ślązak are both Hunt Type II). A unit links to its class through a new `ship_class_id` column in `units.csv` (blank for non-ships and for formations; the validator checks that it exists and that the unit's `ship_type` equals the class's).
+
+### 6.5 Refits and reclassification
+
+- **Refits override the class figures as dated, sourced records**, the way `strength_json` works on a claim: a naval claim row may carry a `capabilities_json` with `as_of` (the date of the refit), `basis: refit` and a `source`, holding only the figures that changed (for example a battleship's anti-aircraft fit or radar after a refit). The ship's answer for a date is the latest refit record on or before that date, else the class row. Nothing from a refit is copied into the class.
+- **Reclassification** (for example DD to DMS) is recorded as a `redesignation` claim (an existing event type) with old and new type in the notes; the unit's `ship_type` holds the type in force on the ship's first claim. A change of flag or name that creates a new unit record is still a lineage row (`UL020`).
+
+### 6.6 Example under the proposed fields
+
+Values marked "to be sourced" are not entered here; the class figures would come from a cited reference before any row is written.
+
+| Unit | `echelon` | `ship_type` | `hull_number` | `ship_class_id` | Class row |
+|---|---|---|---|---|---|
+| `US-BB-035` USS Texas | `naval_unit` | BB | BB-35 | `SC001` | New York class, US; lead ship USS New York; main armament ten 14-inch guns (to be sourced) |
+| `UK-BB-WARSPITE` HMS Warspite | `naval_unit` | BB | 03 | `SC002` | Queen Elizabeth class, UK; lead ship HMS Queen Elizabeth; main armament eight 15-inch guns (to be sourced) |
+| `US-DD-626` USS Satterlee | `naval_unit` | DD | DD-626 | `SC003` | Gleaves class, US; lead ship USS Gleaves; main armament five 5-inch guns (to be sourced) |
+| `UK-DD-BEDALE` HMS Bedale (to `POL-DD-L26`, `UL020`) | `naval_unit` | DE | pennant to be sourced | `SC005` | see below |
+| `POL-DD-L26` ORP Ślązak | `naval_unit` | DE | L26 | `SC005` | Hunt class Type II (sub-type row `SC005`, parent family row `SC004` Hunt class, UK; lead ship named by the source, to be sourced) |
+
+Bedale and Ślązak share `SC005` although the flag changed; the class nationality is British. A refit example: a Texas or Warspite claim could carry `{"as_of": "...", "basis": "refit", "anti_aircraft": {...}}` once a source dates the fit. Task groups such as `US-TG-124-9` (`task_group`) would carry no `ship_type`, no class and no claims, only the relations of the ships in them.
+
+### 6.7 What implementation would touch (for Scott's approval)
+
+`schema/vocabularies.json` (echelon, `echelon_rank`, `echelon_id_letter` `no_letter`, new `ship_type`), `schema/units.schema.json` and the README (`ship_type`, `hull_number`, `ship_class_id`), a new `ship_classes` schema and file, `scripts/validate.py` (class links, type match, naval rank check), `scripts/build.py` (class output), `scripts/check_json_fields.py`, and data changes to the pilot rows: the echelons of `GER-TBF-005`, `UK-BF-D`, `UK-TF-S`, `US-TG-124-9` and `GER-MGW-000H`, and the new columns and class rows for the five ships. Each change would be annotated old value, new value, reason, in the record and the changelog.

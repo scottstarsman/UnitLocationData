@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 13 November 2026 — 1944-45 aircraft variants (branch `air-naval-schema`, added to PR #90)
+
+Scott approved adding the missing 1944-45 variants on this branch (13 November 2026, "Go ahead and add those variants to this branch"). 32 new rows `AT103`-`AT134` and 11 new references `R1148`-`R1158`. Old value of each new row and reference: none; new value: the row. Details in `docs/air_naval_pilot.md` section 9.2.
+
+- **Variants with figures from a named source.** Spitfire LF Mk IXe (`AT103`, specifications table on the variants page, `R1148`); Spitfire Mk XVI armament and bomb load only (`AT104`, late Merlin-powered variants page, `R1149`); P-51B and Mustang Mk III speed and combat radius (`AT105`, `AT108`, Mustang variants page, `R1150`; the Mustang Mk III figures are the page's P-51B figures, which the page equates with the RAF name, annotated on the row); Bf 109G-14, G-14/AS and K-4 speeds (and K-4 armament) (`AT110`-`AT112`, Bf 109 variants page, `R1151`); Fw 190D-9 speed and armament (`AT113`, Erprobungsstelle Rechlin Erpr. Nr. 9003 Teilber. 2, 2 March 1945, transcribed on WWII Aircraft Performance, `R1157`); Fw 190F-8 armament (`AT114`, Fw 190 variants-list page, `R1152`); Ju 88G armament (`AT115`, family page `R1131`); Mosquito FB Mk VI speed from A&AEE HX.809, 1 February 1944 (`R1156`) and armament from the de Havilland Aircraft Museum fact sheet (`R1158`) (`AT116`); Mosquito FB Mk XVIII armament (`AT117`, family page `R1115`); PBY-5A (`AT129`, `R1153`); Warwick ASR Mk I (`AT132`, `R1154`); Albemarle ST Mk I (`AT134`, `R1155`).
+- **Variants entered without figures**, because no reliable named-variant figure was found (the family page gives specifications for another mark, which were not copied): P-51C, P-51K, P-47D-25, Wellington GR Mk XIV, Halifax GR.V, A.V and A.VII, Stirling Mk IV, Liberator GR Mk V, GR Mk VI and C Mk IX, Dakota III and IV, Catalina IIIA (`AT106`, `AT107`, `AT109`, `AT118`-`AT127`, `AT130`). Family rows without figures: PBY Catalina, Warwick, Albemarle (`AT128`, `AT131`, `AT133`).
+- **Inferred values.** Only the Mustang Mk III speed and combat radius, taken from the P-51B figures on the same page, with the reason on the row (the page names Mustang Mk III as the RAF designation of the P-51B/C and states the figures for the P-51B). No other parent or sibling figure was copied.
+- **Already present, not repeated:** Spitfire Mk XIV (`AT102`), Beaufighter TF Mk X (`AT050`), Sunderland III (`AT056`), C-47 / C-47B-DK, C-46 / C-46A, CG-4A, Horsa / Horsa Mk II, Hamilcar, Fw 190A-8.
+- **Checks and grid:** the grid is unchanged (air types are not in it). Next free: `AT135`, `R1159`.
+
 ## 13 November 2026 — air schema pass (branch `air-naval-schema`, added to PR #90)
 
 Approved by Scott (13 November 2026, "Yes" to an air schema pass before the Normandy pass). Details in `docs/air_naval_pilot.md` section 9.

@@ -70,11 +70,11 @@ A Kriegsmarine coastal artillery battalion fights on land. It was entered as `gr
 
 ## 6. Follow-up proposals: ships (13 November 2026)
 
-Scott agreed to these in principle (13 November 2026). **Proposals only: nothing below is implemented.** No schema, vocabulary, validator or data file was changed for this section; the pilot rows keep the values described in sections 1-3 until Scott approves the implementation separately.
+Scott agreed to these in principle (13 November 2026) and decided two further points the same day: submarines and the other hull codes are in scope (6.1, 6.3), and claims are recorded even when a unit is outside the current scope (section 7, standing rule 22). **Proposals only: nothing below is implemented.** No schema, vocabulary, validator or data file was changed for this section; the pilot rows keep the values described in sections 1-3 until Scott approves the implementation separately.
 
 ### 6.1 Granularity
 
-- Every **commissioned combatant of destroyer-escort size or larger** gets its own unit: battleships, carriers, cruisers, destroyers, destroyer escorts and their national equivalents, including German torpedo boats, frigates and corvettes.
+- Every **commissioned combatant of destroyer-escort size or larger** gets its own unit: battleships, carriers, cruisers, destroyers, destroyer escorts and their national equivalents, including German torpedo boats, frigates and corvettes, and **every commissioned submarine** (U-boats, British, American and other Allied boats; decided 13 November 2026).
 - **Smaller craft** are entered at flotilla or squadron level: MTB, S-boat and minesweeper flotillas, LST groups, landing-craft flotillas.
 - A **single small craft** gets its own unit only when a source singles it out (a famous LCT or S-boat, say), and only if it traces to a parent flotilla or squadron (the same rule as for companies).
 
@@ -113,8 +113,14 @@ How it maps onto the reserved values: `naval_unit` keeps its meaning but only fo
 | PF | frigate |
 | TB | torpedo boat |
 | CORV | corvette |
+| CVL | light aircraft carrier |
+| SS | submarine (any navy; U-boats, British and US boats; midget submarines too, noted) |
+| PG | gunboat or sloop (Royal Navy sloops, patrol gunboats) |
+| CM | minelayer |
+| AM | minesweeper (fleet minesweepers entered singly; flotillas of small minesweepers stay at flotilla level, 6.1) |
 
-  Further codes (CVL, minelayer, minesweeper, submarine) are not needed for the entries in 6.1 and are left open; submarines are a question for Scott. The column is blank for non-ships and for flotillas and task groups.
+  **Closed 13 November 2026:** submarines and the other hull codes are in scope; the list above (including SS, CVL, PG, CM and AM) is the proposed full set for the entries of 6.1. No code for the 1990s `SSK` (not a WWII type; every WWII submarine is `SS`). Auxiliaries (oilers, transports, depot ships) are not combatants and have no code. The column is blank for non-ships and for flotillas and task groups.
+- **Submarine types are handled through `ship_classes`, not through `ship_type`:** a U-boat is `SS` and its class row carries the German type, for example Type VIIC (sub-type rows such as VIIC/41 point to it through `parent_class_id`), Type IXC and its IXC/40 sub-type, Type XXI. The same for British (T class, S class) and US (Gato, Balao) boats. Hull number is the boat's number (`U-505`). U-boat flotillas (for example 2. U-Flottille) are `naval_division`, and a submarine at sea has the same sea-position problem as a surface ship (2.2, 2.3).
 - **`hull_number`**: free text as the sources give it (`BB-35`, `DD-626`, `L26`, `03`). It is not a key: pennant numbers were reused and changed, so uniqueness is checked only within a nationality and a period, and as a warning at most.
 
 ### 6.4 A `ship_classes` table
@@ -155,8 +161,16 @@ Values marked "to be sourced" are not entered here; the class figures would come
 | `UK-DD-BEDALE` HMS Bedale (to `POL-DD-L26`, `UL020`) | `naval_unit` | DE | pennant to be sourced | `SC005` | see below |
 | `POL-DD-L26` ORP Ślązak | `naval_unit` | DE | L26 | `SC005` | Hunt class Type II (sub-type row `SC005`, parent family row `SC004` Hunt class, UK; lead ship named by the source, to be sourced) |
 
-Bedale and Ślązak share `SC005` although the flag changed; the class nationality is British. A refit example: a Texas or Warspite claim could carry `{"as_of": "...", "basis": "refit", "anti_aircraft": {...}}` once a source dates the fit. Task groups such as `US-TG-124-9` (`task_group`) would carry no `ship_type`, no class and no claims, only the relations of the ships in them.
+Bedale and Ślązak share `SC005` although the flag changed; the class nationality is British. A refit example: a Texas or Warspite claim could carry `{"as_of": "...", "basis": "refit", "anti_aircraft": {...}}` once a source dates the fit. Illustration only (not a pilot unit): a U-boat such as U-505 would be `ship_type` SS, `hull_number` `U-505`, class Type IXC/40 (sub-type row under the Type IX family row). Task groups such as `US-TG-124-9` (`task_group`) would carry no `ship_type`, no class and no claims, only the relations of the ships in them.
 
 ### 6.7 What implementation would touch (for Scott's approval)
 
 `schema/vocabularies.json` (echelon, `echelon_rank`, `echelon_id_letter` `no_letter`, new `ship_type`), `schema/units.schema.json` and the README (`ship_type`, `hull_number`, `ship_class_id`), a new `ship_classes` schema and file, `scripts/validate.py` (class links, type match, naval rank check), `scripts/build.py` (class output), `scripts/check_json_fields.py`, and data changes to the pilot rows: the echelons of `GER-TBF-005`, `UK-BF-D`, `UK-TF-S`, `US-TG-124-9` and `GER-MGW-000H`, and the new columns and class rows for the five ships. Each change would be annotated old value, new value, reason, in the record and the changelog.
+
+## 7. Out-of-scope claims (standing rule 22, 13 November 2026)
+
+Scott decided on 13 November 2026 that a claim is recorded even when its unit is outside the current scope (any domain, front or period), because it will help as scope grows. It is written up in `docs/HANDOFF.md` as standing rule 22, in `CONTRIBUTING.md` and `docs/methodology.md`, and builds on rule 19 (read every source for all fronts and periods).
+
+- Out-of-scope claims follow every normal claim rule and stay **out of the main outputs and the grid**, the way `build/other_domains/` keeps air and naval claims today.
+- **Coverage and source-balance figures for out-of-scope areas are labelled incidental, not surveyed:** they show what the sources happened to give, not a systematic search, and are not compared with the surveyed Western Front figures.
+- **Not built yet.** Today only the unit `domain` separates claims. Nothing separates a ground unit on another front or in another period; the existing before-6-June-1944 rows under `OP-PRE-INVASION` are in the main outputs and stay as they are. A proposal for implementation (Scott to approve): a `scope` marker (`in_scope`, `out_of_scope`) on the unit record, with `build.py` writing out-of-scope units and claims to `build/other_domains/` (or a sibling folder) and the coverage and balance tools adding an "incidental" label. Until then, only rows that the unit `domain` already keeps out of the main outputs are entered under the new rule; other out-of-scope facts stay where rule 19 puts them (private notes). Roadmap 375 (k).

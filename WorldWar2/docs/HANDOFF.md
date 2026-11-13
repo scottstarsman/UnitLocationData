@@ -222,6 +222,8 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 21. **Irregular forces (Scott, 12 November 2026).** Resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain (for example the Dutch Stoottroepen, formed from the Binnenlandse Strijdkrachten). Loose cells and networks (for example the Dutch KP, OD and RVV) are not entered as units, even when they had a paper organisation or a regional commander. Record their existence, dates and strength in the private notes when a source gives them. The small-unit rule (rule 17) still applies to the formal units: a formation below regiment size needs a parent traced to a division or higher, unless it is an independent unit of regiment size or larger.
 
+22. **Record out-of-scope claims (Scott, 13 November 2026).** When a source gives a dated place, command or event for a unit outside the current scope (any domain, front or period), record it as a claim anyway, with every normal claim rule (citation, confidence, annotations), because it will help as scope grows. This builds on rule 19. Such claims stay out of the main outputs and out of the who_controls grid, the way `build/other_domains/` keeps air and naval claims today. Coverage and source-balance figures for out-of-scope areas are labelled incidental, not surveyed: they show what the sources happened to give, not a systematic search, and are never compared with the surveyed Western Front figures. **Status:** today only the unit `domain` separates claims; a marker for an out-of-scope front or period is not built (proposal in `docs/air_naval_pilot.md` section 7, roadmap 375 (k)). Until it is, only rows already kept out of the main outputs by domain are entered under this rule; other out-of-scope facts stay where rule 19 puts them (private notes; the existing `OP-PRE-INVASION` rows are unchanged).
+
 ---
 
 ## 4. Architecture, data model and conventions
@@ -422,6 +424,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 ---
 
 - **Irregular forces (12 November 2026):** Scott: resistance and other irregular forces get unit entries only once organised into formal military units with a command chain (the Stoottroepen are in; the KP, OD and RVV cells stay out). Recorded as standing rule 21, and in `CONTRIBUTING.md`, `docs/methodology.md` and `schema/README.md`. Strength figures and dates for organisations that are not entered stay in the private notes.
+- **Out-of-scope claims (13 November 2026):** Scott: record a claim even when the unit is outside the current scope, because it will help as scope grows; such claims stay out of the main outputs and the grid and any coverage or balance figures for them are labelled incidental, not surveyed. Recorded as standing rule 22, in `CONTRIBUTING.md`, `docs/methodology.md` and `docs/air_naval_pilot.md` section 7. Mechanism for out-of-scope fronts and periods not built yet (roadmap 375 (k)). Same day: submarines and the other hull codes are in scope for ships (`docs/air_naval_pilot.md` 6.3).
 
 ## 7. Open items and next steps (my recommendations)
 

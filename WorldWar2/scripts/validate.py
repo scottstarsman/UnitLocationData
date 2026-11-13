@@ -191,7 +191,60 @@ def check_capabilities(where, caps, vocabs, listed=None, key_vocab='ship_capabil
             err(where, '%s[%r]: reference_id %s is not in the row reference_ids' % (what, k, rid))
 
 
-def check_strength_json(where, s, vocabs):
+def check_aircraft_strength(where, a, aircraft_types=None):
+    """The aircraft object of strength_json (docs/air_naval_pilot.md section 9): {on_hand, serviceable, by_type: {type_id: {on_hand, serviceable}}}. on_hand is the
+    aircraft the unit holds on the as_of date (Luftwaffe Iststaerke, USAAF aircraft assigned or possessed) and serviceable those ready for operations (Luftwaffe
+    einsatzbereit, USAAF operational or in commission). Counts are non-negative integers; serviceable never exceeds on_hand; a by_type key is an aircraft
+    type_id of data/aircraft_types.csv (the family row when a source gives no variant); the by_type counts add up to at most the totals (a source may
+    leave some types unlisted); at least one count or one by_type row is needed."""
+    w = where + ' strength_json aircraft'
+    if not isinstance(a, dict) or not a:
+        err(w, 'aircraft must be a non-empty JSON object')
+        return
+    for k in a:
+        if k not in ('on_hand', 'serviceable', 'by_type'):
+            err(w, 'unknown key %r (on_hand, serviceable, by_type)' % k)
+    isn = lambda n: isinstance(n, int) and not isinstance(n, bool) and n >= 0   # noqa: E731
+    for k in ('on_hand', 'serviceable'):
+        if k in a and not isn(a[k]):
+            err(w, '%s must be a non-negative integer' % k)
+    if isn(a.get('on_hand')) and isn(a.get('serviceable')) and a['serviceable'] > a['on_hand']:
+        err(w, 'serviceable %d exceeds on_hand %d' % (a['serviceable'], a['on_hand']))
+    if 'by_type' not in a:
+        if 'on_hand' not in a and 'serviceable' not in a:
+            err(w, 'needs on_hand, serviceable and/or by_type')
+        return
+    bt = a['by_type']
+    if not isinstance(bt, dict) or not bt:
+        err(w, 'by_type must be a non-empty object {type_id: {on_hand, serviceable}}')
+        return
+    sums = {'on_hand': 0, 'serviceable': 0}
+    for tid, e in bt.items():
+        if not re.fullmatch(r'AT[0-9]{3,}', tid):
+            err(w, 'by_type key %r is not a type_id AT###' % tid)
+            continue
+        if aircraft_types is not None and tid not in aircraft_types:
+            err(w, 'by_type type_id %s is not in data/aircraft_types.csv' % tid)
+        if not isinstance(e, dict) or not e:
+            err(w, 'by_type[%s] must be a non-empty object {on_hand, serviceable}' % tid)
+            continue
+        for k in e:
+            if k not in ('on_hand', 'serviceable'):
+                err(w, 'by_type[%s]: unknown key %r' % (tid, k))
+        for k in ('on_hand', 'serviceable'):
+            if k in e:
+                if not isn(e[k]):
+                    err(w, 'by_type[%s].%s must be a non-negative integer' % (tid, k))
+                else:
+                    sums[k] += e[k]
+        if isn(e.get('on_hand')) and isn(e.get('serviceable')) and e['serviceable'] > e['on_hand']:
+            err(w, 'by_type[%s]: serviceable %d exceeds on_hand %d' % (tid, e['serviceable'], e['on_hand']))
+    for k in ('on_hand', 'serviceable'):
+        if isn(a.get(k)) and sums[k] > a[k]:
+            err(w, 'by_type %s counts add up to %d, more than the total %s %d' % (k, sums[k], k, a[k]))
+
+
+def check_strength_json(where, s, vocabs, aircraft_types=None):
     if s == '':
         return
     try:
@@ -202,7 +255,7 @@ def check_strength_json(where, s, vocabs):
     if not isinstance(d, dict):
         err(where, 'strength_json must be a JSON object')
         return
-    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'status', 'source', 'note', 'capabilities'}
+    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'status', 'source', 'note', 'capabilities', 'aircraft'}
     for k in d:
         if k not in allowed:
             err(where, 'strength_json: unknown key %r' % k)
@@ -238,13 +291,17 @@ def check_strength_json(where, s, vocabs):
             err(where, 'strength_json: capabilities (a refit override of the class figures) needs basis refit')
     elif d.get('basis') == 'refit':
         err(where, 'strength_json: basis refit needs capabilities')
-    if 'personnel' not in d and 'vehicles' not in d and 'status' not in d and 'capabilities' not in d:
-        err(where, 'strength_json: needs personnel, vehicles, status and/or capabilities')
+    if 'aircraft' in d:
+        check_aircraft_strength(where, d['aircraft'], aircraft_types)
+    if 'personnel' not in d and 'vehicles' not in d and 'status' not in d and 'capabilities' not in d and 'aircraft' not in d:
+        err(where, 'strength_json: needs personnel, vehicles, status, capabilities and/or aircraft')
     if 'scope' in d:
         if d['scope'] not in vocabs['strength_json_scope']['values']:
             err(where, 'strength_json: scope %r not in vocabulary strength_json_scope' % (d['scope'],))
     elif 'personnel' in d:
         err(where, 'strength_json has personnel but no scope: set scope to whole_unit, sub_force or sector (what the figure covers), or remove the personnel figure if no source says')
+    elif 'aircraft' in d:
+        err(where, 'strength_json has aircraft but no scope: set scope to whole_unit, sub_force or sector (what the aircraft figures cover: a Geschwader return, one Gruppe, one detachment)')
 
 
 SHIP_CLASSES_CSV = os.path.join(common.ROOT, 'data', 'ship_classes.csv')
@@ -1641,12 +1698,14 @@ def main():
                 err(where, 'source must contain at least one URL')
             if row['claim_status'] != 'preferred' and not row['conflict_group_id']:
                 err(where, 'claim_status %s requires a conflict_group_id' % row['claim_status'])
-            check_strength_json(where, row['strength_json'], vocabs)
+            check_strength_json(where, row['strength_json'], vocabs, aircraft)
             if u and u['echelon'] == 'naval_unit':
                 if row['event_type'] == 'redesignation' and not re.search(r'[Rr]eclassified from \S+ to \S+', row['notes']):
                     warn(where, 'a redesignation row of a ship: state a reclassification as "Reclassified from <old type or hull code> to <new>" in notes (docs/air_naval_pilot.md section 6.5)')
             elif u and row['strength_json'] and '"capabilities"' in row['strength_json']:
                 err(where, 'strength_json capabilities (a refit) belongs to a unit with echelon naval_unit')
+            if u and row['strength_json'] and '"aircraft"' in row['strength_json'] and (u.get('domain') or 'ground') != 'air':
+                err(where, 'strength_json aircraft (aircraft on hand and serviceable, by type) belongs to a unit of domain air')
             row['command_relationships'] = relset.entries_json(cid)   # derived from the relation tables; not a claim-file column
             check_command_relationships(where, row, units, vocabs)
             check_location_date(where, row)

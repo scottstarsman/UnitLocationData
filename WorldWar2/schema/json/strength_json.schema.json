@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "strength_json.schema.json",
   "title": "strength_json",
-  "description": "Sourced strength figures for one claim, stored as a JSON object in the strength_json column of data/claims/*/*.csv (blank when no source gives figures). Enumerations mirror schema/vocabularies.json (strength_json_basis, strength_json_vehicle_count_type, strength_json_scope, strength_json_status).",
+  "description": "Sourced strength figures for one claim, stored as a JSON object in the strength_json column of data/claims/*/*.csv (blank when no source gives figures). Enumerations mirror schema/vocabularies.json (strength_json_basis, strength_json_vehicle_count_type, strength_json_scope, strength_json_status). For a naval claim the object may instead (or also) carry capabilities with basis refit.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -16,6 +16,7 @@
       "enum": [
         "authorized_organization",
         "estimate",
+        "refit",
         "reported_actual"
       ],
       "description": "What kind of figure it is (vocabulary strength_json_basis)."
@@ -75,6 +76,238 @@
     "note": {
       "type": "string",
       "description": "Optional caveat."
+    },
+    "capabilities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "standard_displacement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "speed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "main_armament": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "secondary_armament": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "anti_aircraft": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "torpedo_tubes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "aircraft": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        },
+        "complement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "reference_id"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+            },
+            "unit": {
+              "type": "string",
+              "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+            },
+            "reference_id": {
+              "type": "string",
+              "pattern": "^R[0-9]+$",
+              "description": "The reference (data/references_meta.csv) that gives this figure."
+            },
+            "note": {
+              "type": "string",
+              "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+            }
+          }
+        }
+      },
+      "description": "Refit override of a ship's class capabilities (basis refit): the figures that differ from the class row of data/ship_classes.csv as of as_of, each with its own reference_id. A ship claim records a refit this way; no personnel, vehicles or status is needed. See docs/air_naval_pilot.md section 6.5."
     }
   },
   "anyOf": [
@@ -91,6 +324,11 @@
     {
       "required": [
         "status"
+      ]
+    },
+    {
+      "required": [
+        "capabilities"
       ]
     }
   ],
@@ -130,6 +368,17 @@
       "as_of": "1944-06-18",
       "status": "heavily_depleted",
       "source": "CMH Cross-Channel Attack ch. X"
+    },
+    {
+      "basis": "refit",
+      "as_of": "1943-01-01",
+      "capabilities": {
+        "anti_aircraft": {
+          "value": "example only",
+          "reference_id": "R1"
+        }
+      },
+      "source": "Wikipedia example ship"
     }
   ]
 }

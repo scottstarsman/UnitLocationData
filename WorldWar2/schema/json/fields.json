@@ -9,6 +9,15 @@
       "also_in": [
         "build/all_claims.csv"
       ]
+    },
+    {
+      "table": "data/ship_classes.csv",
+      "column": "capabilities_json",
+      "schema": "capabilities_json.schema.json",
+      "blank_allowed": true,
+      "also_in": [
+        "build/other_domains/ship_classes.csv"
+      ]
     }
   ]
 }

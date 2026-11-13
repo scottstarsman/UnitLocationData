@@ -27,6 +27,13 @@
         "resource": "units",
         "fields": "unit_id"
       }
+    },
+    {
+      "fields": "ship_class_id",
+      "reference": {
+        "resource": "ship_classes",
+        "fields": "class_id"
+      }
     }
   ],
   "fields": [
@@ -158,6 +165,29 @@
       "type": "string",
       "description": "Domain of the unit: ground, air or naval. Blank means ground (the default). Only ground units go into the main build outputs (all_claims, claims.geojson, units, coverage, places, operations, command_relations); air and naval units are collected for later use and their claims are written to build/other_domains/ only (Scott's decision, 4 November 2026).",
       "vocabulary": "domain"
+    },
+    {
+      "name": "scope",
+      "type": "string",
+      "description": "Scope marker (vocabulary scope): in_scope or out_of_scope; blank means in_scope. A unit marked out_of_scope is recorded, with its claims and command relations, but kept out of the main build outputs and the who_controls grid and written to build/other_domains/ (standing rule 22, Scott, 13 November 2026).",
+      "vocabulary": "scope"
+    },
+    {
+      "name": "ship_type",
+      "type": "string",
+      "description": "Ship type of a unit with echelon naval_unit (vocabulary ship_type: US hull codes BB, BC, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS). Blank for every other echelon. When ship_class_id is set it must equal the ship_type of that class.",
+      "vocabulary": "ship_type"
+    },
+    {
+      "name": "hull_number",
+      "type": "string",
+      "description": "Hull number, pennant, pendant or hull marking exactly as the source gives it (BB-35, L26, S-36, U-47, HMS D 16). Free text and not a key: pennants were reused and numbers were reassigned. Blank for every echelon except naval_unit, and blank where no source gives one."
+    },
+    {
+      "name": "ship_class_id",
+      "type": "string",
+      "description": "Class id (SC###, data/ship_classes.csv) of the ship's class or sub-type. Blank when no class is recorded. The class must exist and its ship_type must equal the unit's ship_type. Only on a unit with echelon naval_unit.",
+      "pattern": "^SC[0-9]{3,}$"
     }
   ]
 }

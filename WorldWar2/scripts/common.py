@@ -168,6 +168,21 @@ def non_ground_unit_ids():
     return {u['unit_id'] for u in read_dicts(UNITS_CSV)[1] if unit_domain(u) != 'ground'}
 
 
+def unit_scope(u):
+    """in_scope or out_of_scope: the scope marker of a unit row (blank means in_scope; standing rule 22)."""
+    return u.get('scope') or 'in_scope'
+
+
+def other_output_unit_ids():
+    """unit_ids kept out of the main build outputs and written to build/other_domains/ instead: units whose domain is air or naval, and units marked
+    out_of_scope in data/units.csv (standing rule 22: recorded, but outside the main outputs and the who_controls grid)."""
+    return {u['unit_id'] for u in read_dicts(UNITS_CSV)[1] if unit_domain(u) != 'ground' or unit_scope(u) == 'out_of_scope'}
+
+
+# unit columns that the main units outputs (build/units.csv, units.json) leave out; build/other_domains/units.csv lists them
+OTHER_ONLY_UNIT_COLUMNS = ['domain', 'scope', 'ship_type', 'hull_number', 'ship_class_id']
+
+
 def load_all_claims():
     """Return (header, rows) with every claim as a dict, sorted by date then claim_id. `header` is the claim-file header; each row also has the
     derived keys command_relationships (see attach_command_relationships) and the place and derived-value keys of attach_places, and the unit-name keys of attach_unit_names."""

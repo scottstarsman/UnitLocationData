@@ -169,6 +169,27 @@ def check_row(where, row, fields, vocabs):
         check_vocab(where, f, v, vocabs)
 
 
+def check_capabilities(where, caps, vocabs, listed=None):
+    """A capabilities object (ship_classes.capabilities_json, strength_json capabilities of a refit): keys from vocabulary ship_capability_key, each
+    {value, unit, reference_id, note} with a reference_id of data/references_meta.csv; `listed` (a set of reference ids), when given, must include them."""
+    import build_references as br
+    if not isinstance(caps, dict) or not caps:
+        err(where, 'capabilities must be a non-empty JSON object')
+        return
+    known = {m['reference_id'] for m in br.read_meta()[1]}
+    for k, fig in caps.items():
+        if k not in vocabs['ship_capability_key']['values']:
+            err(where, 'capabilities: unknown key %r (vocabulary ship_capability_key)' % k)
+        if not isinstance(fig, dict) or not isinstance(fig.get('value'), str) or not fig.get('value').strip():
+            err(where, 'capabilities[%r]: needs a non-empty string value' % k)
+            continue
+        rid = fig.get('reference_id')
+        if not isinstance(rid, str) or rid not in known:
+            err(where, 'capabilities[%r]: reference_id %r is not in data/references_meta.csv (a figure carries its own source; nothing is entered unsourced)' % (k, rid))
+        elif listed is not None and rid not in listed:
+            err(where, 'capabilities[%r]: reference_id %s is not in the row reference_ids' % (k, rid))
+
+
 def check_strength_json(where, s, vocabs):
     if s == '':
         return
@@ -180,7 +201,7 @@ def check_strength_json(where, s, vocabs):
     if not isinstance(d, dict):
         err(where, 'strength_json must be a JSON object')
         return
-    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'status', 'source', 'note'}
+    allowed = {'basis', 'as_of', 'personnel', 'vehicles', 'vehicle_count_type', 'scope', 'status', 'source', 'note', 'capabilities'}
     for k in d:
         if k not in allowed:
             err(where, 'strength_json: unknown key %r' % k)
@@ -210,8 +231,14 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json: vehicle_count_type without vehicles')
     if 'status' in d and d['status'] not in vocabs['strength_json_status']['values']:
         err(where, 'strength_json: status %r not in vocabulary strength_json_status %s (destroyed is derived from the destroyed flag)' % (d['status'], sorted(vocabs['strength_json_status']['values'])))
-    if 'personnel' not in d and 'vehicles' not in d and 'status' not in d:
-        err(where, 'strength_json: needs personnel, vehicles and/or status')
+    if 'capabilities' in d:
+        check_capabilities(where + ' strength_json capabilities', d['capabilities'], vocabs)
+        if d.get('basis') != 'refit':
+            err(where, 'strength_json: capabilities (a refit override of the class figures) needs basis refit')
+    elif d.get('basis') == 'refit':
+        err(where, 'strength_json: basis refit needs capabilities')
+    if 'personnel' not in d and 'vehicles' not in d and 'status' not in d and 'capabilities' not in d:
+        err(where, 'strength_json: needs personnel, vehicles, status and/or capabilities')
     if 'scope' in d:
         if d['scope'] not in vocabs['strength_json_scope']['values']:
             err(where, 'strength_json: scope %r not in vocabulary strength_json_scope' % (d['scope'],))
@@ -219,6 +246,7 @@ def check_strength_json(where, s, vocabs):
         err(where, 'strength_json has personnel but no scope: set scope to whole_unit, sub_force or sector (what the figure covers), or remove the personnel figure if no source says')
 
 
+SHIP_CLASSES_CSV = os.path.join(common.ROOT, 'data', 'ship_classes.csv')
 REPEATED_COLUMNS = common.load_schema('claims')['repeatedColumns']['fields']   # claim columns that must equal data/units.csv
 NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'alliance', 'kind', 'note']
 
@@ -230,6 +258,7 @@ STANDING_RELS = common.relationship_group('standing')
 ACTIVE_RELS = common.relationship_group('active')
 ECH_RANK = common.echelon_rank()
 _LETTERS, NO_ID_LETTER, _CC = common.echelon_id_letters()
+NAVAL_LADDER = frozenset(common.load_vocabularies()['echelon_id_letter']['naval_exempt'])   # naval_unit .. fleet: ranks 10-14, no id letter
 ID_LETTER_ECHELON = {letter: echelon for echelon, letter in _LETTERS.items()}   # 'D' -> 'division'
 COMBAT_COMMAND_ID = re.compile(_CC)
 HIGHER_THAN_ORGANIC = common.higher_than_organic()
@@ -441,10 +470,14 @@ def check_references(claims):
     _c, _u, stats, missing, _m, _o = br.derive()
     for k, first in sorted(missing.items()):
         err('citation', '%s cited by %s has no row in data/references_meta.csv (run python scripts/build_references.py --seed)' % (k, first))
+    class_cited = set()
+    if os.path.isfile(SHIP_CLASSES_CSV):
+        for r in common.read_dicts(SHIP_CLASSES_CSV)[1]:
+            class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
     for m in meta:
         st = stats[m['reference_id']]
-        if not st['claims'] and not st['units'] and not st['ops']:
-            warn(where, '%s (%s) is not cited by any claim, unit or operation: remove the row or cite it' % (m['reference_id'], m['short_title']))
+        if not st['claims'] and not st['units'] and not st['ops'] and m['reference_id'] not in class_cited:
+            warn(where, '%s (%s) is not cited by any claim, unit, operation or ship class: remove the row or cite it' % (m['reference_id'], m['short_title']))
         if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
             err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
     check_claim_references(claims, meta)
@@ -808,15 +841,117 @@ def check_places(claims, vocabs):
                 err(c['_where'], 'latitude/longitude differ from place %s %r by %.0f m and coord_override is blank: use the place point or say why in coord_override' % (p['place_id'], p['name'], dist * 1000))
             elif dist > 5:
                 err(c['_where'], 'the claim point is %.1f km from place %s %r: farther than 5 km is a different place' % (dist, p['place_id'], p['name']))
+        if p['kind'] == 'sea_position' and c['confidence'] and float(c['confidence']) > 0.5:
+            err(c['_where'], 'confidence %s at the sea_position place %s: a point at sea is capped at 0.5' % (c['confidence'], p['place_id']))
         if re.search(r' ; coords?:', c['source']):
             err(c['_where'], "source ends with a coordinate note ('; coords: ...'): the note is the place's coord_source_note (or the claim's coord_override)")
     for d in out:
+        if d['kind'] == 'sea_position' and not d['coord_source_note'].strip():
+            err(d['_where'], 'a sea_position place needs a coord_source_note: say whether the position is stated or worked from an anchor, a distance and a bearing')
         cs = used.get(d['place_id'], [])
         if not cs:
             pass   # a place with no claims is accepted (Scott, 4 November 2026); the warning was removed
         elif d['coord_reference_id'] and not any(d['coord_reference_id'] in br.parse_ids(c['reference_ids']) for c in cs):
             err(d['_where'], 'coord_reference_id %s is not in the reference_ids of any claim at the place' % d['coord_reference_id'])
     return out
+
+
+def check_ship_classes(nats, vocabs):
+    """data/ship_classes.csv: header and field values from schema/ship_classes.schema.json; class_id SC### unique and sorted; class_name unique per
+    nationality; nationality known; sub_type exactly when parent_class_id is set, the parent is a family row (not itself a sub-type) of the same ship_type;
+    capabilities_json is a sourced capabilities object whose reference ids are listed in reference_ids and exist in references_meta; a sub-type row
+    repeats only what differs from its family row. Returns {class_id: row}."""
+    import build_references as br
+    where = 'data/ship_classes.csv'
+    sch = common.load_schema('ship_classes')
+    fields = sch['fields']
+    if not os.path.isfile(SHIP_CLASSES_CSV):
+        err(where, 'missing (schema/ship_classes.schema.json)')
+        return {}
+    h, rows = common.read_rows(SHIP_CLASSES_CSV)
+    if h != [f['name'] for f in fields]:
+        err(where, 'header %s != schema/ship_classes.schema.json' % h)
+        return {}
+    meta = {m['reference_id'] for m in br.read_meta()[1]}
+    out, ids, names = {}, [], {}
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        if len(r) != len(h):
+            err(w, 'expected %d fields, found %d' % (len(h), len(r)))
+            continue
+        d = dict(zip(h, r))
+        d['_where'] = w
+        check_row(w, d, fields, vocabs)
+        ids.append(d['class_id'])
+        if d['class_id'] in out:
+            err(w, 'duplicate class_id %s' % d['class_id'])
+        out[d['class_id']] = d
+        k = (d['nationality'], d['class_name'].casefold())
+        if k in names:
+            err(w, 'class_name %r of %s is already the name of %s (names are unique within a nationality)' % (d['class_name'], d['nationality'], names[k]))
+        names[k] = d['class_id']
+        if d['nationality'] not in nats:
+            err(w, 'nationality %r is not in data/nationalities.csv' % d['nationality'])
+        if bool(d['parent_class_id']) != bool(d['sub_type']):
+            err(w, 'parent_class_id and sub_type are set together (a sub-type has both; a family or single-row class has neither)')
+        rids = [x.strip() for x in d['reference_ids'].split(';') if x.strip()]
+        if not rids:
+            err(w, 'reference_ids is empty: a class row rests on at least one reference')
+        for rid in rids:
+            if rid not in meta:
+                err(w, 'reference_id %s is not in data/references_meta.csv' % rid)
+        if d['capabilities_json']:
+            try:
+                caps = json.loads(d['capabilities_json'])
+            except ValueError as e:
+                err(w, 'capabilities_json is not valid JSON (%s)' % e)
+            else:
+                check_capabilities(w + ' capabilities_json', caps, vocabs, set(rids))
+    if ids != sorted(ids):
+        err(where, 'rows must be sorted by class_id')
+    for d in out.values():
+        pid = d['parent_class_id']
+        if not pid:
+            continue
+        par = out.get(pid)
+        if par is None:
+            err(d['_where'], 'parent_class_id %s is not a class' % pid)
+            continue
+        if par['parent_class_id']:
+            err(d['_where'], 'parent_class_id %s is itself a sub-type (one level: family and sub-type)' % pid)
+        if par['ship_type'] != d['ship_type']:
+            err(d['_where'], 'ship_type %s differs from the parent class %s (%s)' % (d['ship_type'], pid, par['ship_type']))
+        try:
+            a, b = json.loads(d['capabilities_json'] or '{}'), json.loads(par['capabilities_json'] or '{}')
+        except ValueError:
+            continue
+        for k in a:
+            if k in b and a[k].get('value') == b[k].get('value') and a[k].get('unit') == b[k].get('unit'):
+                warn(d['_where'], 'capabilities[%r] repeats the family row %s: a sub-type row keeps only the figures that differ' % (k, pid))
+    return out
+
+
+def check_naval_unit_columns(where, uid, u, classes):
+    """Naval columns of a units.csv row: the naval ladder (naval_unit .. fleet) needs domain naval; ship_type, hull_number and ship_class_id belong to a
+    unit with echelon naval_unit; the class must exist and its ship_type must equal the unit's; a naval_unit without ship_type is a warning."""
+    ech = u['echelon']
+    dom = u.get('domain') or 'ground'
+    if ech in NAVAL_LADDER and dom != 'naval':
+        err(where, 'echelon %s is on the naval ladder and needs domain naval (not %s)' % (ech, dom))
+    for col in ('ship_type', 'hull_number', 'ship_class_id'):
+        if u.get(col) and ech != 'naval_unit':
+            err(where, '%s is set but echelon is %s: ship_type, hull_number and ship_class_id belong to a unit with echelon naval_unit (a ship)' % (col, ech))
+    if ech == 'naval_unit' and not u.get('ship_type'):
+        warn(where, 'a ship (naval_unit) without ship_type: set it (vocabulary ship_type)')
+    cid = u.get('ship_class_id')
+    if cid:
+        c = classes.get(cid)
+        if c is None:
+            err(where, 'ship_class_id %s is not a class in data/ship_classes.csv' % cid)
+        elif u.get('ship_type') and u['ship_type'] != c['ship_type']:
+            err(where, 'ship_type %s differs from the ship_type %s of class %s (%s)' % (u['ship_type'], c['ship_type'], cid, c['class_name']))
+        elif not u.get('ship_type'):
+            err(where, 'ship_class_id %s needs ship_type (the class is %s)' % (cid, c['ship_type']))
 
 
 def check_nationalities():
@@ -859,7 +994,7 @@ def check_foreign_keys(tables):
     """Enforce every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json, and the
     declared primary keys / unique columns of the side tables. `tables` maps resource name -> list of row dicts. A blank value is
     allowed (nullable reference); a column with a `separator` holds a list of keys; `alsoAllowed` lists extra accepted values."""
-    decl = [(n, fk) for n in ('claims', 'units', 'places') for fk in common.load_schema(n).get('foreignKeys', [])]
+    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes') for fk in common.load_schema(n).get('foreignKeys', [])]
     rel = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
     for name, t in rel.items():
         decl.extend((name, fk) for fk in t.get('foreignKeys', []))
@@ -940,6 +1075,11 @@ def check_command_relation_tables(units, vocabs, claims):
                 err(where, 'a relation with no higher unit needs a note saying what is unknown')
         elif r['higher_unit_id'] == r['subject_unit_id']:
             err(where, 'the unit is listed as its own parent')
+        else:
+            su, hu = units.get(r['subject_unit_id']), units.get(r['higher_unit_id'])
+            if su and hu and su['echelon'] in NAVAL_LADDER and hu['echelon'] in NAVAL_LADDER and ECH_RANK[hu['echelon']] <= ECH_RANK[su['echelon']] and r['relationship'] != 'unknown':
+                err(where, 'naval hierarchy: %s (%s) is under %s (%s); within the naval ladder (naval_unit < naval_division < naval_squadron < task_group < fleet) '
+                           'the higher unit must have the higher echelon rank' % (r['subject_unit_id'], su['echelon'], r['higher_unit_id'], hu['echelon']))
         for a, b in (('valid_to', 'valid_from'), ('valid_from_latest', 'valid_from'), ('valid_to_earliest', 'valid_to')):
             if r[a] and r[b] and (r[a] < r[b] if a != 'valid_to_earliest' else r[a] > r[b]):
                 err(where, '%s %s is %s %s %s' % (a, r[a], 'after' if a == 'valid_to_earliest' else 'before', b, r[b]))
@@ -1252,6 +1392,7 @@ def main():
     uheader = [f['name'] for f in ufields]
 
     nats = check_nationalities()
+    classes = check_ship_classes(nats, vocabs)
 
     # ---- units.csv ----
     units = {}
@@ -1283,12 +1424,13 @@ def main():
             where = 'data/units.csv unit %s' % uid
             if u.get('domain', '') not in ('', 'ground', 'air', 'naval'):
                 err(where, 'domain %r must be blank (ground), ground, air or naval' % u['domain'])
+            check_naval_unit_columns(where, uid, u, classes)
             nat = nats.get(u['nationality'])
             if nat and uid.split('-')[0] != nat['code']:
                 err(where, 'unit_id prefix %s is not the code %s of nationality %s' % (uid.split('-')[0], nat['code'], u['nationality']))
             # echelon letter (vocabulary echelon_id_letter): an id ending in digits and G, A, C, D, B or H must have that echelon; regiments, battle groups and battalions have no letter
             lm = re.search(r'[0-9]([A-Z])$', uid)
-            if lm and lm.group(1) in ID_LETTER_ECHELON and ID_LETTER_ECHELON[lm.group(1)] != u['echelon'] and not (u['echelon'] in NO_ID_LETTER and COMBAT_COMMAND_ID.match(uid)):
+            if lm and lm.group(1) in ID_LETTER_ECHELON and ID_LETTER_ECHELON[lm.group(1)] != u['echelon'] and not (u['echelon'] in NO_ID_LETTER and COMBAT_COMMAND_ID.match(uid)) and u['echelon'] not in NAVAL_LADDER:
                 err(where, 'unit_id %s ends in the echelon letter %s (%s) but echelon is %s: regiments, battle groups and battalions have no echelon letter in the id '
                            '(see vocabulary echelon_id_letter)' % (uid, lm.group(1), ID_LETTER_ECHELON[lm.group(1)], u['echelon']))
             if u['formed_date']:
@@ -1384,6 +1526,11 @@ def main():
             if row['claim_status'] != 'preferred' and not row['conflict_group_id']:
                 err(where, 'claim_status %s requires a conflict_group_id' % row['claim_status'])
             check_strength_json(where, row['strength_json'], vocabs)
+            if u and u['echelon'] == 'naval_unit':
+                if row['event_type'] == 'redesignation' and not re.search(r'[Rr]eclassified from \S+ to \S+', row['notes']):
+                    warn(where, 'a redesignation row of a ship: state a reclassification as "Reclassified from <old type or hull code> to <new>" in notes (docs/air_naval_pilot.md section 6.5)')
+            elif u and row['strength_json'] and '"capabilities"' in row['strength_json']:
+                err(where, 'strength_json capabilities (a refit) belongs to a unit with echelon naval_unit')
             row['command_relationships'] = relset.entries_json(cid)   # derived from the relation tables; not a claim-file column
             check_command_relationships(where, row, units, vocabs)
             check_location_date(where, row)
@@ -1474,7 +1621,7 @@ def main():
     import operations as opsmod
     ops = opsmod.load()
     exc_path = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
-    tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()),
+    tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()), 'ship_classes': list(classes.values()),
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'place_merges': placesmod.load_merges(),

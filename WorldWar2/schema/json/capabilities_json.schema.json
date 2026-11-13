@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "capabilities_json.schema.json",
+  "title": "capabilities_json",
+  "description": "As-designed capabilities of a ship class, stored as a JSON object in the capabilities_json column of data/ship_classes.csv (blank when no source gives a figure). One key per figure, each with {value, unit, reference_id, note}; a key is absent when no source gives it. Keys mirror schema/vocabularies.json (ship_capability_key). A sub-type row repeats only the figures that differ from its family row.",
+  "type": "object",
+  "additionalProperties": false,
+  "minProperties": 1,
+  "properties": {
+    "standard_displacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "speed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "main_armament": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "secondary_armament": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "anti_aircraft": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "torpedo_tubes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "aircraft": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    },
+    "complement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "standard_displacement": {
+        "value": "1,000 long tons",
+        "reference_id": "R912",
+        "note": "Type I"
+      },
+      "speed": {
+        "value": "27",
+        "unit": "knots",
+        "reference_id": "R912"
+      }
+    }
+  ]
+}

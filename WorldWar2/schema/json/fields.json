@@ -18,6 +18,15 @@
       "also_in": [
         "build/other_domains/ship_classes.csv"
       ]
+    },
+    {
+      "table": "data/aircraft_types.csv",
+      "column": "performance_json",
+      "schema": "performance_json.schema.json",
+      "blank_allowed": true,
+      "also_in": [
+        "build/other_domains/aircraft_types.csv"
+      ]
     }
   ]
 }

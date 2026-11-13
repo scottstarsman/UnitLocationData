@@ -28,6 +28,7 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/other_domains/units.csv         the air and naval units and the units marked out_of_scope, with domain, scope, ship_type, hull_number and ship_class_id
                                         (the main units.csv and units.json leave those five columns out)
   build/other_domains/ship_classes.csv  data/ship_classes.csv: the ship classes (class_id SC###) that naval units link to through ship_class_id
+  build/other_domains/aircraft_types.csv  data/aircraft_types.csv: the aircraft types (type_id AT###) that air units link to through the aircraft object of strength_json
   build/other_domains/command_relations.csv  the derived command relations whose subject is an air or naval unit (same columns as command_relations.csv)
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
@@ -247,6 +248,12 @@ def ship_classes_output():
     return common.csv_bytes(h, rows)
 
 
+def aircraft_types_output():
+    """build/other_domains/aircraft_types.csv: data/aircraft_types.csv with every type row (air; the types are the table that units link to through strength_json aircraft)."""
+    h, rows = common.read_rows(os.path.join(common.ROOT, 'data', 'aircraft_types.csv'))
+    return common.csv_bytes(h, rows)
+
+
 def outputs():
     """Return {relative path: bytes} for every generated file (paths under docs/ are relative to the repository root)."""
     header, rows = common.load_all_claims()
@@ -284,6 +291,7 @@ def outputs():
     oh = uh + common.OTHER_ONLY_UNIT_COLUMNS
     out['other_domains/units.csv'] = common.csv_bytes(oh, [[u[c] for c in oh] for u in urows if u['unit_id'] in other])
     out['other_domains/ship_classes.csv'] = ship_classes_output()
+    out['other_domains/aircraft_types.csv'] = aircraft_types_output()
     crel = command_relations.load()
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
     out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))

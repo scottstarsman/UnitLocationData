@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "performance_json.schema.json",
+  "title": "performance_json",
+  "description": "Performance figures of an aircraft type, stored as a JSON object in the performance_json column of data/aircraft_types.csv (blank when no source gives a figure). One key per figure, each with {value, unit, reference_id, note}; a key is absent when no source gives it. Keys mirror schema/vocabularies.json (aircraft_performance_key). Used by scripts/validate.py check_aircraft_types.",
+  "type": "object",
+  "additionalProperties": false,
+  "minProperties": 1,
+  "properties": {
+    "max_speed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      },
+      "description": "Maximum speed with the altitude or weight the source gives."
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      },
+      "description": "Range as the source states it (ferry or combat range named in the value or note)."
+    },
+    "service_ceiling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      },
+      "description": "Service ceiling."
+    },
+    "armament": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      },
+      "description": "Fixed guns and cannon (the source wording)."
+    },
+    "bomb_load": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      },
+      "description": "Bomb or other external load."
+    },
+    "crew": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "reference_id"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The figure as the source states it, including its qualifier (for example '27,000 long tons (standard)')."
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of the figure where the value is a bare number, otherwise blank or absent."
+        },
+        "reference_id": {
+          "type": "string",
+          "pattern": "^R[0-9]+$",
+          "description": "The reference (data/references_meta.csv) that gives this figure."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional: sub-type, variant, or as-built versus as-designed remark."
+        }
+      },
+      "description": "Crew number or the crew list as the source gives it."
+    }
+  },
+  "examples": [
+    {
+      "max_speed": {
+        "value": "652 km/h (405 mph) at 5,920 m (19,420 ft)",
+        "reference_id": "R1096",
+        "note": "Fw 190 A-8"
+      }
+    }
+  ]
+}

@@ -593,5 +593,33 @@
       "aircraft": "Aircraft carried.",
       "complement": "Crew."
     }
+  },
+  "aircraft_role": {
+    "description": "Main role of an aircraft type (data/aircraft_types.csv role). Jet propulsion is not a role: a jet fighter is a fighter.",
+    "values": {
+      "fighter": "Day fighter or interceptor, including jet fighters.",
+      "night_fighter": "Night or all-weather fighter.",
+      "fighter_bomber": "Fighter used mainly for ground attack and bombing (Typhoon, P-47D in that role, Fw 190F).",
+      "ground_attack": "Purpose-built ground-attack or dive-bomber aircraft (Ju 87, Hs 129).",
+      "light_bomber": "Light or attack bomber (A-20, A-26, Mosquito bomber, Ar 234).",
+      "medium_bomber": "Medium bomber (B-25, B-26, Ju 88, Do 217, Wellington).",
+      "heavy_bomber": "Heavy or four-engined bomber (B-17, B-24, Lancaster, Halifax, Stirling, He 177).",
+      "reconnaissance": "Reconnaissance aircraft or photo-reconnaissance variant.",
+      "transport": "Transport or troop carrier (C-47, C-46, Ju 52).",
+      "glider": "Troop or cargo glider (CG-4A, Horsa, Hamilcar, Go 242).",
+      "liaison": "Liaison, air observation post or army cooperation aircraft (L-4, Auster, Fi 156).",
+      "maritime_patrol": "Maritime patrol, anti-submarine or flying-boat aircraft."
+    }
+  },
+  "aircraft_performance_key": {
+    "description": "Keys of the performance_json object of data/aircraft_types.csv. Each key holds {value, unit, reference_id, note}; a key is absent when no source gives it.",
+    "values": {
+      "max_speed": "Maximum speed with the altitude or weight the source gives.",
+      "range": "Range as the source states it (ferry or combat range named in the value or note).",
+      "service_ceiling": "Service ceiling.",
+      "armament": "Fixed guns and cannon (the source wording).",
+      "bomb_load": "Bomb or other external load.",
+      "crew": "Crew number or the crew list as the source gives it."
+    }
   }
 }

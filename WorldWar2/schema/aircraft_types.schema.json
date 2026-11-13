@@ -1,0 +1,93 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "aircraft_types",
+  "title": "Aircraft types",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "type_id",
+  "foreignKeys": [
+    {
+      "fields": "nationality",
+      "reference": {
+        "resource": "nationalities",
+        "fields": "name"
+      }
+    },
+    {
+      "fields": "parent_type_id",
+      "reference": {
+        "resource": "aircraft_types",
+        "fields": "type_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "type_id",
+      "type": "string",
+      "description": "Stable id of the aircraft type or variant: AT followed by a number (AT001), assigned in order and never reused or renumbered.",
+      "pattern": "^AT[0-9]{3,}$",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "designation",
+      "type": "string",
+      "description": "Designation as the sources use it, including the variant (Fw 190A-8, P-47D, B-17G, Lancaster B.I). Unique per nationality.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nationality",
+      "type": "string",
+      "description": "Nationality (data/nationalities.csv name) of the air force that designed or first fielded the type. It can differ from the operator, which is the nationality of the unit (a Spitfire in a Polish squadron, a Lancaster built in Canada flown by the RCAF).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "role",
+      "type": "string",
+      "description": "Main role of the type (vocabulary aircraft_role). A variant has the role of its parent unless a source gives it another (a fighter-bomber variant of a fighter family keeps its own role).",
+      "vocabulary": "aircraft_role",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "manufacturer",
+      "type": "string",
+      "description": "Manufacturer as the source names it (Focke-Wulf, Republic, Avro). Blank when not given."
+    },
+    {
+      "name": "parent_type_id",
+      "type": "string",
+      "description": "For a variant, the type_id of the family row it belongs to (Fw 190A-8 to Fw 190). Blank for a family or single-row type. A parent is itself not a variant.",
+      "pattern": "^AT[0-9]{3,}$"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "description": "For a variant, its sub-designation (A-8, D-40, G, B.I). Required with parent_type_id and only then."
+    },
+    {
+      "name": "performance_json",
+      "type": "string",
+      "description": "Optional JSON object of performance figures, one key per figure (vocabulary aircraft_performance_key), each {value, unit, reference_id, note}. A key is absent when no source gives it, and a figure is never estimated. A variant row repeats only the figures that differ from its family row. Schema: schema/json/performance_json.schema.json."
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "Semicolon-separated reference ids (data/references_meta.csv) the row rests on. Every reference_id inside performance_json must be listed here."
+    },
+    {
+      "name": "type_note",
+      "type": "string",
+      "description": "Free text: the variant a figure is for, national terms, the number built, what the row does not cover. Uses no figure that a reference does not give."
+    }
+  ]
+}

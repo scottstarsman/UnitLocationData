@@ -169,25 +169,26 @@ def check_row(where, row, fields, vocabs):
         check_vocab(where, f, v, vocabs)
 
 
-def check_capabilities(where, caps, vocabs, listed=None):
-    """A capabilities object (ship_classes.capabilities_json, strength_json capabilities of a refit): keys from vocabulary ship_capability_key, each
-    {value, unit, reference_id, note} with a reference_id of data/references_meta.csv; `listed` (a set of reference ids), when given, must include them."""
+def check_capabilities(where, caps, vocabs, listed=None, key_vocab='ship_capability_key', what='capabilities'):
+    """A figure object (ship_classes.capabilities_json and the strength_json capabilities of a refit: keys from vocabulary ship_capability_key;
+    aircraft_types.performance_json: keys from aircraft_performance_key, what='performance'), each {value, unit, reference_id, note} with a reference_id of
+    data/references_meta.csv; `listed` (a set of reference ids), when given, must include them."""
     import build_references as br
     if not isinstance(caps, dict) or not caps:
-        err(where, 'capabilities must be a non-empty JSON object')
+        err(where, '%s must be a non-empty JSON object' % what)
         return
     known = {m['reference_id'] for m in br.read_meta()[1]}
     for k, fig in caps.items():
-        if k not in vocabs['ship_capability_key']['values']:
-            err(where, 'capabilities: unknown key %r (vocabulary ship_capability_key)' % k)
+        if k not in vocabs[key_vocab]['values']:
+            err(where, '%s: unknown key %r (vocabulary %s)' % (what, k, key_vocab))
         if not isinstance(fig, dict) or not isinstance(fig.get('value'), str) or not fig.get('value').strip():
-            err(where, 'capabilities[%r]: needs a non-empty string value' % k)
+            err(where, '%s[%r]: needs a non-empty string value' % (what, k))
             continue
         rid = fig.get('reference_id')
         if not isinstance(rid, str) or rid not in known:
-            err(where, 'capabilities[%r]: reference_id %r is not in data/references_meta.csv (a figure carries its own source; nothing is entered unsourced)' % (k, rid))
+            err(where, '%s[%r]: reference_id %r is not in data/references_meta.csv (a figure carries its own source; nothing is entered unsourced)' % (what, k, rid))
         elif listed is not None and rid not in listed:
-            err(where, 'capabilities[%r]: reference_id %s is not in the row reference_ids' % (k, rid))
+            err(where, '%s[%r]: reference_id %s is not in the row reference_ids' % (what, k, rid))
 
 
 def check_strength_json(where, s, vocabs):
@@ -247,6 +248,7 @@ def check_strength_json(where, s, vocabs):
 
 
 SHIP_CLASSES_CSV = os.path.join(common.ROOT, 'data', 'ship_classes.csv')
+AIRCRAFT_TYPES_CSV = os.path.join(common.ROOT, 'data', 'aircraft_types.csv')
 REPEATED_COLUMNS = common.load_schema('claims')['repeatedColumns']['fields']   # claim columns that must equal data/units.csv
 NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'alliance', 'kind', 'note']
 
@@ -472,13 +474,14 @@ def check_references(claims):
     for k, first in sorted(missing.items()):
         err('citation', '%s cited by %s has no row in data/references_meta.csv (run python scripts/build_references.py --seed)' % (k, first))
     class_cited = set()
-    if os.path.isfile(SHIP_CLASSES_CSV):
-        for r in common.read_dicts(SHIP_CLASSES_CSV)[1]:
-            class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
+    for csv_path in (SHIP_CLASSES_CSV, AIRCRAFT_TYPES_CSV):
+        if os.path.isfile(csv_path):
+            for r in common.read_dicts(csv_path)[1]:
+                class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
     for m in meta:
         st = stats[m['reference_id']]
         if not st['claims'] and not st['units'] and not st['ops'] and m['reference_id'] not in class_cited:
-            warn(where, '%s (%s) is not cited by any claim, unit, operation or ship class: remove the row or cite it' % (m['reference_id'], m['short_title']))
+            warn(where, '%s (%s) is not cited by any claim, unit, operation, ship class or aircraft type: remove the row or cite it' % (m['reference_id'], m['short_title']))
         if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
             err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
     check_claim_references(claims, meta)
@@ -939,6 +942,79 @@ def check_ship_classes(nats, vocabs):
     return out
 
 
+def check_aircraft_types(nats, vocabs):
+    """data/aircraft_types.csv: header and field values from schema/aircraft_types.schema.json; type_id AT### unique and sorted; designation unique per
+    nationality; nationality known; variant exactly when parent_type_id is set, the parent is a family row (not itself a sub-type) (the role may differ);
+    performance_json is a sourced figure object whose reference ids are listed in reference_ids and exist in references_meta; a sub-type row
+    repeats only what differs from its family row. Returns {type_id: row}."""
+    import build_references as br
+    where = 'data/aircraft_types.csv'
+    sch = common.load_schema('aircraft_types')
+    fields = sch['fields']
+    if not os.path.isfile(AIRCRAFT_TYPES_CSV):
+        err(where, 'missing (schema/aircraft_types.schema.json)')
+        return {}
+    h, rows = common.read_rows(AIRCRAFT_TYPES_CSV)
+    if h != [f['name'] for f in fields]:
+        err(where, 'header %s != schema/aircraft_types.schema.json' % h)
+        return {}
+    meta = {m['reference_id'] for m in br.read_meta()[1]}
+    out, ids, names = {}, [], {}
+    for i, r in enumerate(rows, start=2):
+        w = '%s line %d' % (where, i)
+        if len(r) != len(h):
+            err(w, 'expected %d fields, found %d' % (len(h), len(r)))
+            continue
+        d = dict(zip(h, r))
+        d['_where'] = w
+        check_row(w, d, fields, vocabs)
+        ids.append(d['type_id'])
+        if d['type_id'] in out:
+            err(w, 'duplicate type_id %s' % d['type_id'])
+        out[d['type_id']] = d
+        k = (d['nationality'], d['designation'].casefold())
+        if k in names:
+            err(w, 'designation %r of %s is already the designation of %s (designations are unique within a nationality)' % (d['designation'], d['nationality'], names[k]))
+        names[k] = d['type_id']
+        if d['nationality'] not in nats:
+            err(w, 'nationality %r is not in data/nationalities.csv' % d['nationality'])
+        if bool(d['parent_type_id']) != bool(d['variant']):
+            err(w, 'parent_type_id and variant are set together (a variant has both; a family or single-row type has neither)')
+        rids = [x.strip() for x in d['reference_ids'].split(';') if x.strip()]
+        if not rids:
+            err(w, 'reference_ids is empty: an aircraft type row rests on at least one reference')
+        for rid in rids:
+            if rid not in meta:
+                err(w, 'reference_id %s is not in data/references_meta.csv' % rid)
+        if d['performance_json']:
+            try:
+                caps = json.loads(d['performance_json'])
+            except ValueError as e:
+                err(w, 'performance_json is not valid JSON (%s)' % e)
+            else:
+                check_capabilities(w + ' performance_json', caps, vocabs, set(rids), 'aircraft_performance_key', 'performance')
+    if ids != sorted(ids):
+        err(where, 'rows must be sorted by type_id')
+    for d in out.values():
+        pid = d['parent_type_id']
+        if not pid:
+            continue
+        par = out.get(pid)
+        if par is None:
+            err(d['_where'], 'parent_type_id %s is not an aircraft type' % pid)
+            continue
+        if par['parent_type_id']:
+            err(d['_where'], 'parent_type_id %s is itself a variant (one level: family and variant)' % pid)
+        try:
+            a, b = json.loads(d['performance_json'] or '{}'), json.loads(par['performance_json'] or '{}')
+        except ValueError:
+            continue
+        for k in a:
+            if k in b and a[k].get('value') == b[k].get('value') and a[k].get('unit') == b[k].get('unit'):
+                warn(d['_where'], 'performance[%r] repeats the family row %s: a variant row keeps only the figures that differ' % (k, pid))
+    return out
+
+
 def check_naval_unit_columns(where, uid, u, classes):
     """Naval columns of a units.csv row: the naval ladder (naval_unit .. fleet) needs domain naval; ship_type, hull_number and ship_class_id belong to a
     unit with echelon naval_unit; the class must exist and its ship_type must equal the unit's; a naval_unit without ship_type is a warning."""
@@ -1007,7 +1083,7 @@ def check_foreign_keys(tables):
     """Enforce every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json, and the
     declared primary keys / unique columns of the side tables. `tables` maps resource name -> list of row dicts. A blank value is
     allowed (nullable reference); a column with a `separator` holds a list of keys; `alsoAllowed` lists extra accepted values."""
-    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes') for fk in common.load_schema(n).get('foreignKeys', [])]
+    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes', 'aircraft_types') for fk in common.load_schema(n).get('foreignKeys', [])]
     rel = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
     for name, t in rel.items():
         decl.extend((name, fk) for fk in t.get('foreignKeys', []))
@@ -1432,6 +1508,7 @@ def main():
 
     nats = check_nationalities()
     classes = check_ship_classes(nats, vocabs)
+    aircraft = check_aircraft_types(nats, vocabs)
 
     # ---- units.csv ----
     units = {}
@@ -1660,7 +1737,7 @@ def main():
     import operations as opsmod
     ops = opsmod.load()
     exc_path = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
-    tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()), 'ship_classes': list(classes.values()),
+    tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()), 'ship_classes': list(classes.values()), 'aircraft_types': list(aircraft.values()),
               'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'place_merges': placesmod.load_merges(),

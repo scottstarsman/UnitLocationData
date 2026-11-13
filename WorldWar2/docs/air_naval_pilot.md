@@ -274,4 +274,4 @@ Standing rule 25 (`docs/HANDOFF.md`) and `CONTRIBUTING.md` carry the conventions
 
 ### 9.7 Grid
 
-The standard grid (50 dates, 18,590 answers) compared against the state of the branch before this pass (identical to main): see the changelog line and the PR description for the result.
+The standard grid (50 dates, 18,590 answers) compared against the state of the branch before this pass (identical to main): result: 18,590 answers, 0 changed, 0 new keys (the grid asks about ground units; the air and naval units are not in it). `who_controls.py` now reads `build/other_domains/command_relations.csv` for air and naval subjects, which adds answers for those units only; none of them is in the grid's unit list, so the grid shows no new key.

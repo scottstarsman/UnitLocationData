@@ -33,6 +33,9 @@ No RAF or RCAF unit was entered (optional in the brief; the source work was kept
 12. **Hard-coded test.** Scenario 172 listed the exact other-domain claims; it was changed to ignore ids from `C9000` up. Every future other-domain claim would have broken it.
 13. **Unit-naming convention.** The README has no convention for air and naval ids. The pilot used `GER-JGK-002C`, `GER-JG-026`, `GER-JGGR-026-2` (Gruppe), `US-FG-366`, `US-FS-390`, `US-TAC-009C`, `US-BB-035`, `US-DD-626`, `UK-BB-WARSPITE`, `POL-DD-L26`, `GER-TBF-005`, `UK-TF-S`, `US-TG-124-9`. Proposal: write these down in `schema/README.md` before opening the data.
 
+14. **`check_claim_ids.py` does not see air and naval claims.** On this branch it reported "claims at origin/main 9393, now 9395, new ids C9437..C9438": the 32 air and naval claims `C9405`-`C9436` are invisible to it, so a reused or dropped other-domain claim id would go undetected, and its "next free id" is correct here only because the ground claims `C9437`-`C9438` come last. The next free id of the pilot (`C9439`) was checked by hand against all claim files. Proposal (not made): read `build/other_domains/claims.csv` as well.
+15. **Existing derived counts move when a new ground unit is added.** `PL0089` Cherbourg in `build/places.csv` changed from 9 to 10 claims because `C9438` is a ground row; every other main-output difference is an added row (`GER-MAA-260`, `CR1305`, `C9437`, `C9438`, the new places). Nothing about an existing unit's answer changed.
+
 ### Theoretical (not hit)
 
 - **Echelon rank.** `echelon_rank` has no entry for the reserved values; the validator ranks an unlisted echelon 0 and the audits rank it 8. No pilot row triggered a disagreement, but a ship above a division would.
@@ -50,7 +53,7 @@ No RAF or RCAF unit was entered (optional in the brief; the source work was kept
 2. `data/units.csv`: 18 new units (listed in the changelog); the reserved echelons `fleet` and `naval_unit` are now used, so the "not yet used" wording in the vocabulary is stale (left for Scott's decision, 5.1).
 3. `scripts/semantic_tests.py`: scenario 172 relaxed; scenarios 244-247 added.
 4. `docs/review/` regenerated (relations changed).
-5. No change to `schema/vocabularies.json`, the validator or the schema documents.
+5. One sentence in `schema/README.md` (the new other-domain output file). No change to `schema/vocabularies.json` or the validator.
 
 ## 4. Open decision: Marine-Artillerie-Abteilung 260
 

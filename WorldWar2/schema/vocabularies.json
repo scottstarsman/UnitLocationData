@@ -566,8 +566,8 @@
   "ship_capability_key": {
     "description": "Keys of the capabilities_json object of data/ship_classes.csv and of the capabilities object inside strength_json of a naval claim (a refit). Each key holds {value, unit, reference_id, note}; a key is absent when no source gives it.",
     "values": {
-      "standard_displacement": "Standard (or design) displacement as the source states it.",
-      "speed": "Design speed.",
+      "standard_displacement": "Displacement as the source states it, with its qualifier in the value (standard and full load for surface ships; surfaced and submerged for submarines).",
+      "speed": "Speed as the source states it (design speed; surfaced and submerged for submarines).",
       "main_armament": "Main guns.",
       "secondary_armament": "Secondary guns.",
       "anti_aircraft": "Anti-aircraft armament.",

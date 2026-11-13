@@ -65,8 +65,9 @@ Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (a
 | kind | Places | Claims |
 |---|---:|---:|
 | point | 4044 | 9167 |
-| area | 97 | 206 |
+| area | 95 | 206 |
 | line | 19 | 22 |
+| sea_position | 2 | 0 |
 
 | country | Places | Claims |
 |---|---:|---:|

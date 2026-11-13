@@ -4000,15 +4000,15 @@ def scenario_245_air_naval_pilot_usaaf():
     expect(s + ': 390th Squadron joins three days later, parent blank on the claim', (claims['C9422']['date'], claims['C9422']['unit_id'], claims['C9422']['parent_unit_id']), ('1944-06-20', 'US-FS-390', ''))
     rels = {r['relation_id']: r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1]}
     expect(s + ': CR1298 group assigned to IX TAC from 5 May 1944', (rels['CR1298']['subject_unit_id'], rels['CR1298']['higher_unit_id'], rels['CR1298']['relationship'], rels['CR1298']['valid_from']), ('US-FG-366', 'US-TAC-009C', 'assigned', '1944-05-05'))
-    expect(s + ': base and target differ: D-Day row is the station, not the target area', (claims['C9416']['place_id'], claims['C9416']['location_represents']), ('PL4166', 'main_body'))
+    expect(s + ': base and target differ: D-Day row is the station, not the target area', (claims['C9416']['place_id'], claims['C9416']['location_represents']), ('PL4166', 'base'))   # was main_body until the air-naval schema pass added base (13 November 2026)
 
 def scenario_246_air_naval_pilot_ships():
     """Air-naval pilot: Normandy bombardment ships, sea places, the 0.3 cap for a range without a bearing, and the Bedale/Slazak lineage."""
     s = 'scenario 246'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     places = {p['place_id']: p for p in common.read_dicts(os.path.join(common.ROOT, 'data', 'places.csv'))[1]}
-    expect(s + ': Texas and Satterlee offshore points are areas with a stated distance', [(places[p]['kind'], places[p]['name']) for p in ('PL4170', 'PL4171')],
-           [('area', 'Offshore Pointe du Hoc, 12,000 yards (Omaha western fire-support area)'), ('area', 'Offshore Pointe du Hoc, 1,500 yards')])
+    expect(s + ': Texas and Satterlee offshore points are sea positions with a stated distance (kind area until the air-naval schema pass)', [(places[p]['kind'], places[p]['name']) for p in ('PL4170', 'PL4171')],
+           [('sea_position', 'Offshore Pointe du Hoc, 12,000 yards (Omaha western fire-support area)'), ('sea_position', 'Offshore Pointe du Hoc, 1,500 yards')])
     expect(s + ': Warspite on D-Day: objective point at 0.3 because the range has no bearing', (claims['C9426']['place_id'], claims['C9426']['location_represents'], claims['C9426']['confidence'], claims['C9426']['location_basis']), ('PL4172', 'objective', '0.3', 'representative_point'))
     expect(s + ': ship rows are naval-domain', sorted({common.unit_domain({u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}[claims[c]['unit_id']]) for c in ('C9423', 'C9425', 'C9426', 'C9433', 'C9436')}), ['naval'])
     expect(s + ': Slazak redesignation of Bedale', [(r['predecessor_unit_id'], r['successor_unit_id'], r['kind'], r['effective_date']) for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'unit_lineage.csv'))[1] if r['lineage_id'] == 'UL020'], [('UK-DD-BEDALE', 'POL-DD-L26', 'redesignation', '1942-04')])

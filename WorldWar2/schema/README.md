@@ -162,6 +162,24 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 
 `ship_type`, `hull_number`, `ship_class_id` (same pass): only on a unit with echelon `naval_unit` (a ship), blank elsewhere. `ship_type` is a US hull code (vocabulary `ship_type`: BB, BC, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS; national terms stay in the note; the validator warns when a ship has none). `hull_number` is free text as the source gives it (BB-35, L26, 03) and not a key. `ship_class_id` (SC###) links to `data/ship_classes.csv`; the class must exist and its `ship_type` must equal the unit's. The naval echelons (`naval_unit`, `naval_division`, `naval_squadron`, `task_group`, `fleet`) need domain `naval` and have no id letter.
 
+### data/aircraft_types.csv (hand-maintained; `schema/aircraft_types.schema.json`; air schema pass, 13 November 2026)
+
+One row per aircraft type (family) or variant; foreign keys `nationality` -> nationalities.`name` and `parent_type_id` -> aircraft_types.`type_id`. Primary key `type_id` (AT001 onward, never reused); rows sorted by `type_id`; `designation` unique within a nationality. Built like `ship_classes`; build output `build/other_domains/aircraft_types.csv`.
+
+| column | description |
+|---|---|
+| `type_id` | AT### |
+| `designation` | as the sources name it, variant included (`Fw 190A-8`, `P-47D-40`, `Lancaster I`) |
+| `nationality` | the air force that designed or first fielded it; the operator is the unit's nationality (a Canadian-built Lancaster X is `Canada`, its family row is `UK`) |
+| `role` | vocabulary `aircraft_role` |
+| `manufacturer` | as the source names it, blank if not given |
+| `parent_type_id`, `variant` | set together for a variant (one level: family and variant); blank for a family or single-row type |
+| `performance_json` | `max_speed`, `range`, `service_ceiling`, `armament`, `bomb_load`, `crew` (vocabulary `aircraft_performance_key`), each `{value, unit, reference_id, note}` with its own source; never estimated; a variant row repeats only the figures that differ from its family row. Schema: `schema/json/performance_json.schema.json` |
+| `reference_ids` | the references the row rests on; every `reference_id` in `performance_json` must be listed |
+| `type_note` | free text: which variant the figures are for, what the row does not cover |
+
+A unit links to its aircraft through the `aircraft` object of `strength_json` (a dated claim record), not through a unit column: groups converted often, so the type is a dated fact (see the strength_json section and `docs/air_naval_pilot.md` section 9.3).
+
 ### data/ship_classes.csv (hand-maintained; `schema/ship_classes.schema.json`; air-naval schema pass, 13 November 2026)
 
 One row per ship class or sub-type; foreign keys `nationality` -> nationalities.`name` and `parent_class_id` -> ship_classes.`class_id`. Primary key `class_id` (SC001 onward, never reused, not the lead ship's id); rows sorted by `class_id`; `class_name` unique within a nationality.
@@ -237,6 +255,8 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | units | `ship_class_id` | ship_classes.`class_id` |
 | ship_classes | `nationality` | nationalities.`name` |
 | ship_classes | `parent_class_id` | ship_classes.`class_id` |
+| aircraft_types | `nationality` | nationalities.`name` |
+| aircraft_types | `parent_type_id` | aircraft_types.`type_id` |
 | operations | `parent_operation_id` | operations.`operation_id` |
 | operations | `nationality_scope` | nationalities.`name` (or `All`) |
 | operations, operation_relations | `reference_ids` (`;` list) | references_meta.`reference_id` |
@@ -505,6 +525,8 @@ Machine-readable schema: [json/strength_json.schema.json](json/strength_json.sch
 
 For a naval claim the object may carry `capabilities` with `basis` `refit` (air-naval schema pass, 13 November 2026): the figures of a dated refit that differ from the ship's class row in `data/ship_classes.csv`, each `{value, unit, reference_id, note}` with its own source; a refit record needs no personnel, vehicles or status.
 
+For an air claim the object may carry `aircraft` (air schema pass, 13 November 2026): `{"on_hand": n, "serviceable": n, "by_type": {"AT004": {"on_hand": n, "serviceable": n}}}`. `on_hand` is the aircraft held on `as_of` (Luftwaffe Iststärke, USAAF assigned or possessed), `serviceable` those ready for operations (einsatzbereit, operational or in commission); `by_type` is keyed by a `type_id` of `data/aircraft_types.csv` (the family row when the source gives no variant). Every number is a source's own; a source may leave types unlisted, so the by_type counts may add up to less than the totals but never to more; `serviceable` never exceeds `on_hand`; `scope` is required (what part of the unit the figures cover); `basis` `reported_actual` for a return, `authorized_organization` for an establishment. A `by_type` row with no counts records only the equipment link ("equipped with the Fw 190A-8 on this date").
+
 A JSON object (blank if no source gives figures):
 
 ```json
@@ -550,7 +572,7 @@ Meaning of the `relationship` column of `data/command_relations.csv` (and of the
 | `attached` | The unit was attached to this formation (a temporary or task-organised subordination) on the row's date; use only where the source says attached or shows a temporary tasking. |
 | `unspecified_subordination` | The source shows the unit subordinate to this formation on the date but does not distinguish assigned from attached (for example the CMH ETO-OB assignment tables' single corps column). Never convert to attached or assigned without a source. |
 | `operational_control` | This formation exercised operational (tactical) control over the unit, whether or not the unit was one of its assigned or attached components. |
-| `administrative_control` | This formation held administrative, supply or personnel responsibility for the unit while another formation had operational control. |
+| `administrative_control` | This formation held administrative, supply or personnel responsibility for the unit while another formation had operational control. For air units the pair is usual: a US group is *assigned* (standing) to one command and *attached* (or under `operational_control`) to a tactical air command; both chains are held at once (relationship classes differ, so no contradictory overlap is raised) and `who_controls.py` prints them as the operational chain and the administrative chain (docs/air_naval_pilot.md section 9.4). |
 | `supporting` | The unit was in direct support of this formation without being part of it. |
 | `coordinating` | This formation coordinated the unit's operations with others without commanding it (for example 21st Army Group's coordination of both army groups until 1 September 1944). |
 | `reserve` | The unit was held in this formation's (or the high command's) reserve. |
@@ -627,8 +649,12 @@ Organisational level of the unit.
 | `regiment/battle_group` | Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command. |
 | `battalion` | Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`. |
 | `other` | Higher or special headquarters that fit no level above (for example OB West). |
-| `air_force` | Reserved for later: air force, air fleet or air army headquarters (not yet used). |
-| `air_formation` | Reserved for later: air corps, air division, wing, group or squadron (not yet used). |
+| `air_squadron` | Air squadron: a Staffel, a US squadron or a RAF squadron (air ladder, rank 20, no id letter). |
+| `air_group` | Gruppe, US group or RAF **wing** (rank 21, no id letter; the level counts, not the name). |
+| `air_wing` | Geschwader, US combat wing or RAF **group** (rank 22, no id letter). |
+| `air_division` | Jagddivision or Fliegerdivision, US air division, bomb division, command or tactical air command (rank 23, no id letter). |
+| `air_corps` | Fliegerkorps or Jagdkorps (rank 24, no id letter). |
+| `air_force` | Luftflotte, numbered US air force or RAF command (rank 25, no id letter). |
 | `naval_unit` | Ship (naval ladder, rank 10, no id letter). |
 | `naval_division` | Naval division or flotilla (rank 11, no id letter). |
 | `naval_squadron` | Naval squadron (rank 12, no id letter). |
@@ -797,6 +823,14 @@ US hull classification codes for a unit with echelon `naval_unit` and for ship c
 | `CM` | minelayer |
 | `AM` | minesweeper |
 | `SS` | submarine (midget submarines noted) |
+
+### aircraft_role
+
+Role of an aircraft type (`role` of `data/aircraft_types.csv`; jet propulsion is not a role): `fighter`, `night_fighter`, `fighter_bomber`, `ground_attack`, `light_bomber`, `medium_bomber`, `heavy_bomber`, `reconnaissance`, `transport`, `glider`, `liaison`, `maritime_patrol`. Meanings: `schema/vocabularies.json`.
+
+### aircraft_performance_key
+
+Keys of `performance_json` (aircraft types): `max_speed`, `range`, `service_ceiling`, `armament`, `bomb_load`, `crew`; each `{value, unit, reference_id, note}`, absent when no source gives it.
 
 ### ship_capability_key
 

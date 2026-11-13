@@ -203,3 +203,75 @@ Scott approved building the section 5 and 6 proposals ("Let's do the schema pass
 ### 8.2 Ship class seeding
 
 200 class rows from the English Wikipedia pages of the classes (184 references `R912`-`R1095`, family `wikipedia`, accessed 13 November 2026), for the US, UK, Germany, France, Netherlands, Poland and Canada: battleships, battlecruisers, carriers (CV, CVL, CVE), cruisers, destroyers, destroyer escorts and frigates, corvettes, torpedo boats, sloops, minelayers and minesweepers, and submarines including the Hunt sub-types (Type I-IV) and the U-boat sub-types VIIA-VIIF, VIIC/41, IXA-IXD2, IXC/40, plus the Types XXI, XXIII and II. Each figure is the infobox text as written, with its own `reference_id`; no figure is entered that a page does not give (a missing key means the page gave nothing for it). The armament lines are sorted by keyword into main, secondary, anti-aircraft and torpedo (class note says so), depth-charge and mine lines are left out, and where a page lists several configurations the first is used (the `note` of the figure or the class note names it). The three family rows with figures only on their sub-type rows (Hunt, Type VII, Type IX) hold no figures. What is not seeded is in roadmap 375 (l).
+
+## 9. Air schema pass (13 November 2026, branch `air-naval-schema`, added to PR #90)
+
+Scott approved an air schema pass before the Normandy pass ("Yes", 13 November 2026): the bomber groups need the echelon ladder, the aircraft table, aircraft strength and the operational/administrative distinction together. Built as separate commits on the open `air-naval-schema` branch. This section supersedes the earlier statement (section 2, item 7) that air units use ground-equivalent echelons.
+
+### 9.1 Air echelon ladder
+
+Ranks 20-25, outside the ground (0-8) and naval (10-14) ranges. The brief suggested "1-9", which collides with the ground ranks (`battalion` is 1, `division` 4, `army_group` 7), so the 20s are used. The rank is the **level**, not the national name. A RAF wing is the level of a US group and a RAF group the level of a US combat wing; the table below is the source of truth and the hierarchy check reads the rank only.
+
+| rank | echelon | Luftwaffe | USAAF | RAF |
+|---|---|---|---|---|
+| 20 | `air_squadron` | Staffel | squadron | squadron |
+| 21 | `air_group` | Gruppe | group | **wing** |
+| 22 | `air_wing` | Geschwader | combat wing (bomb, fighter, troop carrier wing) | **group** |
+| 23 | `air_division` | Jagddivision, Fliegerdivision | air division, bomb division, command (IX Bomber Command, IX Fighter Command), tactical air command (IX TAC, XXIX TAC) | (no standing level; a tactical group such as No. 83 Group is `air_wing`) |
+| 24 | `air_corps` | Fliegerkorps, Jagdkorps | (none in the 1944-45 theater) | (none) |
+| 25 | `air_force` | Luftflotte | numbered air force (Eighth, Ninth) | command (Bomber Command, Fighter Command), Second Tactical Air Force |
+
+No id letter (`echelon_id_letter` `air_exempt`); `air_formation` and the reserved description of `air_force` are replaced. `validate.air_hierarchy_problem`: within the ladder a higher unit must outrank its subject (a Geschwader under a Jagdkorps is fine, a Jagdkorps under a Gruppe is an error); `supporting`, `coordinating` and `unknown` are not checked, and a relation across ladders (a flak regiment under a Fliegerkorps, a group under an army) is not. An air-ladder echelon needs domain `air`; a domain-air unit with a ground echelon is a warning. Scenario 255.
+
+**Re-echeloned pilot units** (old value, new value, reason; `units.csv`, the repeated `echelon` column of the claim files, and a `Review:` line in each `unit_note`; ids unchanged):
+
+| unit | old | new | reason |
+|---|---|---|---|
+| GER-LFL-003A Luftflotte 3 | `army` | `air_force` | top of the air ladder |
+| GER-FLK-002C II Fliegerkorps | `corps` | `air_corps` | Fliegerkorps |
+| GER-JGK-002C II Jagdkorps | `corps` | `air_corps` | Jagdkorps |
+| GER-JG-026 JG 26 | `regiment/battle_group` | `air_wing` | Geschwader |
+| GER-JGGR-026-2, GER-JGGR-026-3 | `battalion` | `air_group` | Gruppe |
+| US-TAC-009C IX Tactical Air Command | `corps` | `air_division` | tactical air command |
+| US-FG-366 366th Fighter Group | `regiment/battle_group` | `air_group` | US group |
+| US-FS-390 390th Fighter Squadron | `battalion` | `air_squadron` | squadron |
+
+### 9.2 `aircraft_types`
+
+`data/aircraft_types.csv`, a table like `ship_classes` (`AT001` onward; family row plus variant rows, one level). Columns: `type_id`, `designation`, `nationality`, `role` (vocabulary `aircraft_role`), `manufacturer`, `parent_type_id`, `variant`, `performance_json` (`max_speed`, `range`, `service_ceiling`, `armament`, `bomb_load`, `crew`, each with its own `reference_id`; never estimated), `reference_ids`, `type_note`. Validator `check_aircraft_types` (header, ids sorted, designation unique per nationality, `parent_type_id` and `variant` together, parent is a family row, references exist and are listed, a variant repeating a family figure warns); JSON schema `performance_json.schema.json`; build output `build/other_domains/aircraft_types.csv`. Scenario 256.
+
+**Seeding.** 102 rows (AT001-AT102) from the Specifications section of the English Wikipedia page of each type (52 references `R1096`-`R1147`, family `wikipedia`, accessed 13 November 2026), in four commits: US 28 rows (P-47, P-51, P-38, P-61, B-17, B-24, B-26, A-20, A-26, B-25, C-47, C-46, CG-4, L-4, L-5), UK 29 (Spitfire Mk Vb and Mk XIV, Typhoon, Tempest, Hurricane, Mosquito, Lancaster, Halifax, Stirling, Wellington, Meteor, Beaufighter, Auster, Horsa, Hamilcar, Sunderland), Germany 42 (Bf 109, Fw 190, Me 262, Me 163, Ar 234, Ju 88, Ju 87, Me 410, Bf 110, He 219, Do 217, He 111, He 177, Ju 52, Fi 156, Hs 129, Ju 188, Do 335, Go 242, Fw 189, He 162), and Canada 3 (Lancaster X, Mosquito B Mk XX, Hurricane Mk XII: Canadian-built variants named on the pages of the types; no figures, the pages give specifications for other variants). A figure is the page's own for **one named variant** (the section heading, repeated in the row's note); the family row carries none. Where a page gives no figure for a key the key is absent (the gliders have no maximum speed; the L-4 page describes the civil Cub, so the L-4 is a family row only).
+
+**What is left** (roadmap 375): the variants most used in 1944-45 whose pages give no specification of their own (Spitfire Mk IX, Mustang Mk III and P-51B/C, P-47D-25, Bf 109K-4, Fw 190D-9, Ju 88G, Me 410 and Ju 188 sub-variants), the Do 17 and Fw 190F/G ground-attack versions, the RAF types of Coastal Command and Transport Command (Dakota is the C-47), the Fieseler and Arado liaison types, Horsa and Hamilcar variants, Polish and French distinct types (none flew a type of their own in the West in 1944-45: the Polish and French squadrons flew British and American types, and the post-war French production of the Fi 156 and the Ju 52 falls after the period), and stronger sources than Wikipedia (Jane's, Air Ministry pilot's notes, USAAF Standard Aircraft Characteristics).
+
+### 9.3 How a unit links to its aircraft, and aircraft strength
+
+A unit's equipment is a **dated fact**: groups converted often (the 366th flew P-47s throughout, but most fighter groups changed type once or twice). Three designs were weighed: (a) an `aircraft_type_id` column on `units`, which cannot carry dates; (b) an `aircraft_type_id` plus `as_of` pair on the claims table, a migration of all claim files and the build for one domain; (c) an `aircraft` object inside the existing `strength_json`, which already carries `as_of`, `basis`, `scope` and a source, and which the refit record (section 8, item 4) already uses the same way. **(c) was built.** The claim's `as_of` is the date the equipment or return applies to.
+
+`strength_json.aircraft` = `{"on_hand": n, "serviceable": n, "by_type": {"AT004": {"on_hand": n, "serviceable": n}}}`.
+
+- `on_hand` is the aircraft held (Luftwaffe *Iststärke* of the Quartermaster-General returns, USAAF aircraft assigned or possessed); `serviceable` those ready for operations (*einsatzbereit*, operational or in commission). These are the figures the standard Luftwaffe and USAAF returns give; every number is the source's own.
+- `by_type` is keyed by a `type_id` of `aircraft_types` (the family row when the source gives no variant). A `by_type` row without counts records only the equipment link. A source may leave types unlisted, so the by_type counts may add up to **less** than the totals, never more; `serviceable` never exceeds `on_hand` (totals or by type).
+- `scope` is required (what part the figures cover: a whole Geschwader, one Gruppe, a detachment); `basis` is `reported_actual` for a return and `authorized_organization` for an establishment (*Soll*) figure.
+- Only a unit of domain air may carry it. Validator `check_aircraft_strength`; JSON schema extended with the `scope` dependency. Scenario 257. No claim yet carries aircraft figures: the first will come from the Normandy pass, with a source for each.
+
+### 9.4 Operational and administrative chains
+
+US air units are *assigned* to one command (administrative: supply, personnel, discipline) and *attached* to another (operational), and RAF units are administered by their own group or command while being operationally controlled elsewhere. The vocabulary already has the kinds: `assigned` (standing), `attached` and `operational_control` (active), `administrative_control`, `supporting` and `coordinating`. **No new relation value was added**: the use is fixed instead.
+
+- Record the administrative parent as `assigned` when the source says assigned, or `administrative_control` when it says so; record the operational parent as `attached` or `operational_control`. Use the source's word.
+- `command_relations.contradictory_overlaps` flags an overlap only between relations of the **same class** (`standing`, or the same other value) naming different higher units of one echelon, so `assigned` to one command with `attached` to another, or `administrative_control` with `operational_control`, are not conflicts; two overlapping `assigned` relations to different commands of one echelon, or two overlapping `operational_control` relations, still are. Scenario 258 tests all four.
+- `who_controls.py` picks the operational chain from the active relations (else the standing ones) by rank, as before. For an air or naval unit (not in the main table) it reads `build/other_domains/command_relations.csv` and adds an **administrative chain** block (an `administrative_control` relation, or an `assigned` relation while another command holds the operational one); ground output is byte-for-byte what it was, because the fallback runs only when the main table has no row for the subject, and the grid compare shows 0 changed cells (9.7).
+- `audit_temporal_relationships.py` still treats `administrative_control` without a sourced end as end-unknown; the pair is not an error there.
+
+### 9.5 The 366th Fighter Group (the pilot's source, now stored)
+
+The pilot could not store the XXIX TAC assignments for lack of an evidence claim. The same source (Wikipedia, 366th Fighter Group, after Maurer, `R896`) dates them, so five claims were added (`C9439` 1 October 1944, `C9440` 22 October, `C9441` 19 November, `C9442` 28 January 1945, `C9443` 11 April 1945; stations A-70, Asch Y-29 `PL4177`, Münster-Handorf Y-94 `PL4178`) and four relations: `CR1306` assigned to XXIX TAC (Provisional) 1-21 October 1944, `CR1307` assigned to IX TAC again 22 October 1944 - 27 January 1945, `CR1308` assigned to IX Fighter Command from 28 January 1945 (administrative), `CR1309` attached to XXIX TAC 28 January - 21 June 1945 (operational). `CR1298` (IX TAC from 5 May 1944) now ends 30 September 1944 (old value open_at_last_claim, new value 1944-09-30, reason: the dates are stored). New placeholders `US-TAC-029C` and `US-FTRCMD-009` (echelon `air_division`). Confidence 0.3 on the three assignment rows (the position is the station of the period, inferred) and 0.5 on the two station moves. Three warnings are new and expected: the claim that states a relation's end is dated the day after it.
+
+### 9.6 Checks and conventions
+
+Standing rule 25 (`docs/HANDOFF.md`) and `CONTRIBUTING.md` carry the conventions. Next free ids: claim `C9444`, place `PL4179`, reference `R1148`, relation `CR1310`, aircraft type `AT103`, ship class `SC201`, scenario 259.
+
+### 9.7 Grid
+
+The standard grid (50 dates, 18,590 answers) compared against the state of the branch before this pass (identical to main): see the changelog line and the PR description for the result.

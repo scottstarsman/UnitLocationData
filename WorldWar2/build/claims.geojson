@@ -6771,6 +6771,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.2967,
+     49.4803
+    ]
+   },
+   "properties": {
+    "claim_id": "C9437",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-MAA-260",
+    "unit_name": "Marine-Artillerie-Abteilung 260 (260th Naval Coastal Artillery Battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Navy",
+    "date": "1944-06-06",
+    "place_id": "PL4176",
+    "location_name": "Crisbecq Battery (Marcouf Battery), Saint-Marcouf, Manche",
+    "location_represents": "objective",
+    "precision_km": 1,
+    "confidence": 0.5,
+    "event_type": "defense",
+    "current_activity": "crisbecq battery engages us ships, sinks corry",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R908;R001",
+    "source_locator": "R908: Normandy landings (05:52 order to fire, 05:55 exchange with Tuscaloosa, Quincy and Nevada, 06:30 Corry sunk)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.63
+    ]
+   },
+   "properties": {
+    "claim_id": "C9438",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-MAA-260",
+    "unit_name": "Marine-Artillerie-Abteilung 260 (260th Naval Coastal Artillery Battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Navy",
+    "date": "1944-06-06",
+    "place_id": "PL0089",
+    "location_name": "Cherbourg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "battalion headquarters at cherbourg",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R908;R001",
+    "source_locator": "R908: Garrison (commanded by Kapitänleutnant Karl Wiese in Cherbourg)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.3636,
      49.1814
     ]

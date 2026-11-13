@@ -23,7 +23,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Germany | division | 0 | 0 | 135 | 135 | 112 | 2611 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 96 |
 | Germany | regiment/battle_group | 0 | 0 | 36 | 36 | 3 | 82 |
-| Germany | battalion | 0 | 0 | 6 | 6 | 0 | 9 |
+| Germany | battalion | 0 | 0 | 7 | 7 | 0 | 11 |
 | Germany | other | 0 | 0 | 8 | 8 | 0 | 38 |
 | Netherlands | brigade | 0 | 0 | 1 | 1 | 0 | 21 |
 | Netherlands | regiment/battle_group | 0 | 0 | 5 | 5 | 5 | 17 |
@@ -43,7 +43,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **428** | **435** | **267** | **9393** |
+| **All** | | **7** | **0** | **429** | **436** | **267** | **9395** |
 
 ## Operations
 
@@ -53,32 +53,32 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 129 |
 | campaign | 9 | 9 | 7475 |
-| operation | 33 | 33 | 873 |
+| operation | 33 | 33 | 875 |
 | battle | 20 | 20 | 599 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9393** |
+| **All** | **75** | **73** | **9395** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4143 places and 187 alias names for 9393 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4160 places and 197 alias names for 9395 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4029 | 9165 |
-| area | 95 | 206 |
+| point | 4044 | 9167 |
+| area | 97 | 206 |
 | line | 19 | 22 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1607 | 3480 |
-| Germany (DE) | 1459 | 3174 |
+| France (FR) | 1619 | 3482 |
+| Germany (DE) | 1460 | 3174 |
 | Netherlands (NL) | 527 | 1539 |
 | Belgium (BE) | 374 | 847 |
 | Luxembourg (LU) | 89 | 233 |
 | Austria (AT) | 30 | 48 |
 | Czechia (CZ) | 14 | 22 |
 | Russia (RU) | 11 | 12 |
-| United Kingdom (GB) | 6 | 9 |
+| United Kingdom (GB) | 10 | 9 |
 | Poland (PL) | 8 | 8 |
 | Belarus (BY) | 5 | 5 |
 | Ukraine (UA) | 4 | 5 |

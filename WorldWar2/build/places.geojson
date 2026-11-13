@@ -1758,7 +1758,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -82858,6 +82858,346 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Noord-Holland",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.4667,
+     49.2
+    ]
+   },
+   "properties": {
+    "place_id": "PL4160",
+    "name": "Chantilly, Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.5264,
+     50.6478
+    ]
+   },
+   "properties": {
+    "place_id": "PL4161",
+    "name": "Flammersfeld, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "DE",
+    "region": "Rheinland-Pfalz",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1928,
+     49.6397
+    ]
+   },
+   "properties": {
+    "place_id": "PL4162",
+    "name": "Cormeilles, Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.0739,
+     48.7714
+    ]
+   },
+   "properties": {
+    "place_id": "PL4163",
+    "name": "Guyancourt, Yvelines",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Ile-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1834,
+     48.7834
+    ]
+   },
+   "properties": {
+    "place_id": "PL4164",
+    "name": "Villacoublay Airfield, Vélizy-Villacoublay, Yvelines",
+    "alt_names": "Villacoublay",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Ile-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.4833,
+     49.2583
+    ]
+   },
+   "properties": {
+    "place_id": "PL4165",
+    "name": "Creil, Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6006,
+     51.2081
+    ]
+   },
+   "properties": {
+    "place_id": "PL4166",
+    "name": "RAF Thruxton, Hampshire",
+    "alt_names": "Thruxton",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "GB",
+    "region": "England",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9472,
+     49.3911
+    ]
+   },
+   "properties": {
+    "place_id": "PL4167",
+    "name": "Saint-Pierre-du-Mont Airfield (ALG A-1), Calvados",
+    "alt_names": "ALG A-1; A-1 Saint-Pierre-du-Mont",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.3614,
+     48.7217
+    ]
+   },
+   "properties": {
+    "place_id": "PL4168",
+    "name": "Dreux/Vernouillet Airfield (A-41), Eure-et-Loir",
+    "alt_names": "A-41 Dreux; Dreux/Vernouillet",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Centre-Val de Loire",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5483,
+     49.6333
+    ]
+   },
+   "properties": {
+    "place_id": "PL4169",
+    "name": "Laon/Couvron Airfield (A-70), Aisne",
+    "alt_names": "A-70 Laon/Couvron",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9889,
+     49.4945
+    ]
+   },
+   "properties": {
+    "place_id": "PL4170",
+    "name": "Offshore Pointe du Hoc, 12,000 yards (Omaha western fire-support area)",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.9889,
+     49.4081
+    ]
+   },
+   "properties": {
+    "place_id": "PL4171",
+    "name": "Offshore Pointe du Hoc, 1,500 yards",
+    "alt_names": null,
+    "kind": "area",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.1294,
+     49.4017
+    ]
+   },
+   "properties": {
+    "place_id": "PL4172",
+    "name": "Villerville battery, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 25,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0872,
+     50.8058
+    ]
+   },
+   "properties": {
+    "place_id": "PL4173",
+    "name": "Portsmouth, Hampshire",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "GB",
+    "region": "England",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.2883,
+     51.9444
+    ]
+   },
+   "properties": {
+    "place_id": "PL4174",
+    "name": "Harwich, Essex",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 50,
+    "country": "GB",
+    "region": "England",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.6133,
+     54.9739
+    ]
+   },
+   "properties": {
+    "place_id": "PL4175",
+    "name": "Newcastle upon Tyne, Tyne and Wear",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 5,
+    "country": "GB",
+    "region": "England",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.2967,
+     49.4803
+    ]
+   },
+   "properties": {
+    "place_id": "PL4176",
+    "name": "Crisbecq Battery (Marcouf Battery), Saint-Marcouf, Manche",
+    "alt_names": "Crisbecq; Marcouf Battery; Batterie de Crisbecq",
+    "kind": "point",
+    "precision_km": 1,
+    "country": "FR",
+    "region": "Lower Normandy",
     "claims_count": 1
    }
   }

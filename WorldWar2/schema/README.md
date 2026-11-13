@@ -95,7 +95,7 @@ One row per place; claims point at it with `place_id`. Primary key `place_id`; r
 | `place_id` | string | yes | Stable key PL0001 onward. Never reused. |
 | `name` | string | yes | Canonical name, unique (ignoring case) across the table. Settlements are written 'Name, administrative area' as the sources give them. |
 | `alt_names` | string | no | Other spellings and names under which claims named the place, separated by '; '. No alias may equal another place's name. |
-| `kind` | string | yes | point (a named settlement or site), area (a named area, sector, beach, zone or bridgehead, represented by one point) or line (a front, axis or route, represented by one point on it). |
+| `kind` | string | yes | point (a named settlement or site), area (a named area, sector, beach, zone or bridgehead, represented by one point) or line (a front, axis or route, represented by one point on it); `sea_position` (a point at sea, stated by a source or worked from an anchor place, a distance and a bearing; claims at it are capped at confidence 0.5 and `coord_source_note` says how the point was worked). |
 | `latitude` | number | yes | Decimal degrees WGS84 of the place's point. |
 | `longitude` | number | yes | Decimal degrees WGS84 of the place's point. |
 | `precision_km` | number | yes | The finest radius (banded, vocabulary precision_km) with which any claim has used this point when the place was created; a guide for new claims, not a measured error. A claim keeps its own precision_km. |
@@ -158,6 +158,28 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 
 `domain` (added 4 November 2026, Scott's decision to collect air units and ships where sources give them): blank or `ground` (the default), `air` or `naval` (vocabulary `domain`). Only ground units feed the main outputs (`build/all_claims.*`, `claims.geojson`, `units.*`, coverage, places counts, operations, command relations); air and naval units and their claims are written to `build/other_domains/units.csv` and `build/other_domains/claims.csv` (same columns as `all_claims.csv`) and are not used yet; command relations whose subject is an air or naval unit are written to `build/other_domains/command_relations.csv` (air-naval pilot, 13 November 2026; see `docs/air_naval_pilot.md`). The main `build/units.csv` keeps its columns (no `domain`). `scripts/validate.py` checks the value; the claim files of air and naval units follow every claim rule. Flak units (Luftwaffe flak corps, divisions, regiments and battle groups) are domain ground (Scott, 4 November 2026), and so is coastal artillery, whatever service owned it (Kriegsmarine coastal batteries and naval coastal artillery battalions such as `GER-MAA-260`; Scott, 13 November 2026, standing rule 23): `domain` follows the function, and `branch` records the service. `air` is for flying units and air commands, `naval` for ships and naval commands. Places used only by air or naval claims stay in `build/places.*` with 0 claims; a place with no claims is acceptable (Scott, 4 November 2026).
 
+`scope` (air-naval schema pass, 13 November 2026; vocabulary `scope`): blank or `in_scope` (the default) or `out_of_scope`. A unit marked `out_of_scope`, its claims and its command relations are written to `build/other_domains/` and stay out of the main outputs and the who_controls grid, whatever the unit's `domain` (standing rule 22); coverage and balance figures for out-of-scope areas are labelled "incidental, not surveyed". The main `build/units.csv` and `units.json` leave out `domain`, `scope`, `ship_type`, `hull_number` and `ship_class_id`; `build/other_domains/units.csv` lists them.
+
+`ship_type`, `hull_number`, `ship_class_id` (same pass): only on a unit with echelon `naval_unit` (a ship), blank elsewhere. `ship_type` is a US hull code (vocabulary `ship_type`: BB, BC, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS; national terms stay in the note; the validator warns when a ship has none). `hull_number` is free text as the source gives it (BB-35, L26, 03) and not a key. `ship_class_id` (SC###) links to `data/ship_classes.csv`; the class must exist and its `ship_type` must equal the unit's. The naval echelons (`naval_unit`, `naval_division`, `naval_squadron`, `task_group`, `fleet`) need domain `naval` and have no id letter.
+
+### data/ship_classes.csv (hand-maintained; `schema/ship_classes.schema.json`; air-naval schema pass, 13 November 2026)
+
+One row per ship class or sub-type; foreign keys `nationality` -> nationalities.`name` and `parent_class_id` -> ship_classes.`class_id`. Primary key `class_id` (SC001 onward, never reused, not the lead ship's id); rows sorted by `class_id`; `class_name` unique within a nationality.
+
+| column | description |
+|---|---|
+| `class_id` | SC### |
+| `class_name` | the class or sub-type as the sources name it (`Fletcher class`, `Hunt class Type II`, `Type VIIC/41`) |
+| `nationality` | the navy that designed or operated the class; a ship's flag can differ (a Hunt-class destroyer under the Polish flag keeps the British class) |
+| `ship_type` | vocabulary `ship_type`; a sub-type has its parent's type |
+| `lead_ship_name` | text, blank when the page gives none |
+| `parent_class_id`, `sub_type` | set together for a sub-type (one level: family and sub-type); blank for a family or single-row class |
+| `capabilities_json` | as-designed figures, one key per figure (`standard_displacement`, `speed`, `main_armament`, `secondary_armament`, `anti_aircraft`, `torpedo_tubes`, `aircraft`, `complement`; vocabulary `ship_capability_key`), each `{value, unit, reference_id, note}` with its own source; a key is absent when no source gives it; a sub-type row keeps only what differs from its family row (`schema/json/capabilities_json.schema.json`, checked by `scripts/check_json_fields.py`) |
+| `reference_ids` | the references the row rests on; every `reference_id` in `capabilities_json` must be listed |
+| `class_note` | free text |
+
+A refit is a dated override on a naval claim: `strength_json` with `basis` `refit`, `as_of`, `source` and a `capabilities` object of the changed figures (see the strength_json section). The ship's answer for a date is the latest refit on or before it, else the class row. A reclassification is a `redesignation` claim with "Reclassified from X to Y" in the notes.
+
 **Units below division level** (Scott, 4 November 2026): Units below division level (Scott, 4 November 2026): record regiments, battalions, brigades and companies only when a source traces them up the chain to a parent division or higher (for example H Company, 116th Infantry, 29th Division); leave out small units that cannot be traced (a bare "H Company"). Divisions and above stay the focus. The link to the parent is recorded without breaking the blank-parent rule for claims: a fixed organic parent goes in `units.csv` `parent_unit_id` with an `organic` relation in `data/command_relations.csv`; an attachment (for example an army assault-gun brigade) is an `attached` relation only; the claim column `parent_unit_id` stays blank. The schema already allows `regiment/battle_group` and `battalion` (no echelon letter in the id); companies use echelon `company` (added 4 November 2026 with Scott's approval; rank 0, no echelon letter in the id). **Independent units (Scott, 4 November 2026, 08:53):** independent units of regiment size or larger (regiments, brigades, Kampfgruppen, improvised corps and deputy corps commands) get their own unit entries even with no parent (units.csv `parent_unit_id` blank); units smaller than a regiment still need a traceable parent chain (so heavy Panzer Battalion 506, a battalion with no traced parent, stays out, while Fallschirmjäger-Regiment 9 goes in under the 3rd Fallschirmjäger Division). Old rule: every unit below division level needed a traced parent; new rule: only units below regiment size do. **Irregular forces (Scott, 12 November 2026):** resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain (for example the Dutch Stoottroepen); loose cells and networks (for example the Dutch KP, OD and RVV) are not entered as units. Record their existence, dates and strength in the private notes. The small-unit rule above still applies to the formal units. See `docs/HANDOFF.md` standing rule 21.
 
 Rows are sorted by `unit_id`. Units with `record_status = placeholder` have no claim file; they exist so that `parent_unit_id`, command relations, `engaged_with` and `composing_units` ids resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with the existence of a claim file, that the nationality is a row of `data/nationalities.csv` and the unit id starts with that row's code, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
@@ -212,6 +234,9 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | claims | `reference_ids` (`;` list) | references_meta.`reference_id` |
 | units | `parent_unit_id`, `initial_parent_unit_id` | units.`unit_id` |
 | units | `nationality` | nationalities.`name` |
+| units | `ship_class_id` | ship_classes.`class_id` |
+| ship_classes | `nationality` | nationalities.`name` |
+| ship_classes | `parent_class_id` | ship_classes.`class_id` |
 | operations | `parent_operation_id` | operations.`operation_id` |
 | operations | `nationality_scope` | nationalities.`name` (or `All`) |
 | operations, operation_relations | `reference_ids` (`;` list) | references_meta.`reference_id` |
@@ -478,6 +503,8 @@ To cite a new source: see CONTRIBUTING.md ("How to cite a new source").
 
 Machine-readable schema: [json/strength_json.schema.json](json/strength_json.schema.json); all JSON-in-cell columns: [../docs/json_fields.md](../docs/json_fields.md).
 
+For a naval claim the object may carry `capabilities` with `basis` `refit` (air-naval schema pass, 13 November 2026): the figures of a dated refit that differ from the ship's class row in `data/ship_classes.csv`, each `{value, unit, reference_id, note}` with its own source; a refit record needs no personnel, vehicles or status.
+
 A JSON object (blank if no source gives figures):
 
 ```json
@@ -602,8 +629,11 @@ Organisational level of the unit.
 | `other` | Higher or special headquarters that fit no level above (for example OB West). |
 | `air_force` | Reserved for later: air force, air fleet or air army headquarters (not yet used). |
 | `air_formation` | Reserved for later: air corps, air division, wing, group or squadron (not yet used). |
-| `fleet` | Reserved for later: naval fleet, task force or flotilla headquarters (not yet used). |
-| `naval_unit` | Reserved for later: ship, squadron or other naval unit (not yet used). |
+| `naval_unit` | Ship (naval ladder, rank 10, no id letter). |
+| `naval_division` | Naval division or flotilla (rank 11, no id letter). |
+| `naval_squadron` | Naval squadron (rank 12, no id letter). |
+| `task_group` | Task unit, group or task force; a task organisation holds relations only and is a placeholder with no claims (rank 13, no id letter). |
+| `fleet` | Numbered fleet or naval command (rank 14, no id letter). |
 
 ### branch
 
@@ -632,6 +662,7 @@ What the latitude/longitude stands for.
 | `front_line_point` | A representative point on the unit's front line or point of contact. |
 | `objective` | The place the unit captured, attacked or defended. |
 | `approach_route` | A point on the unit's march or approach route. |
+| `base` | The airfield, port or anchorage a flying or naval unit operates from (a base), as opposed to the target area (`objective`). |
 
 ### precision_km
 
@@ -688,6 +719,8 @@ One primary event per row.
 | `activation` | A formation becomes operational, or is activated or constituted as a headquarters or unit (for example 12th Army Group becoming operational on 1 August 1944). |
 | `subordinate_assignment` | A source (a CMH assignment table or an order) lists the unit under a higher headquarters, or lists a headquarters' first subordinate unit, from this date; it says nothing about when command was first exercised or when a headquarters became operational. Use `activation` only where a source documents the operational start (taking a sector, command or mission). |
 | `redesignation` | The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps). |
+| `commissioning` | A ship or boat is launched, commissioned or taken into service. |
+| `sortie` | A flying unit's sorties or a ship's or submarine's sortie or patrol from its base (a documented mission, not a relocation). |
 | `other` | Headquarters decisions, air attack on a headquarters, units at their station. |
 
 ### strength_status (derived)
@@ -711,6 +744,7 @@ Meaning of the basis field inside strength_json.
 | `reported_actual` | A unit report or operational count relayed by the source (for example working-order tank returns). |
 | `authorized_organization` | Establishment or table-of-organisation strength, not an actual count. |
 | `estimate` | Rounded, approximate or retrospective figure, or a landing tally. |
+| `refit` | A dated change of a ship's capabilities from its class figures; carried as `capabilities` inside `strength_json`. |
 
 ### strength_json_vehicle_count_type
 
@@ -731,6 +765,42 @@ What part of the unit the figures in strength_json describe. Required whenever p
 | `whole_unit` | The figure covers the whole unit (division, brigade, ...) as the source states it. |
 | `sub_force` | The figure covers only part of the unit: a battle group, a detachment or the force available for one task or line. |
 | `sector` | The figure covers the forces in a sector or area that is not the unit's own organisation (for example the defenders of a line or beach, or all the forces landed on a beach). |
+
+### scope
+
+Scope marker of a unit (`units.scope`).
+
+| value | meaning |
+|---|---|
+| `in_scope` | Inside the current scope (the default; blank means `in_scope`). |
+| `out_of_scope` | Outside the current scope; recorded, kept out of the main outputs and the grid, written to `build/other_domains/`. |
+
+### ship_type
+
+US hull classification codes for a unit with echelon `naval_unit` and for ship classes.
+
+| value | meaning |
+|---|---|
+| `BB` | battleship |
+| `BC` | battlecruiser |
+| `CV` | fleet aircraft carrier |
+| `CVL` | light aircraft carrier |
+| `CVE` | escort carrier |
+| `CA` | heavy cruiser (also the German Panzerschiff, noted) |
+| `CL` | light cruiser |
+| `DD` | destroyer |
+| `DE` | destroyer escort (also the Royal Navy escort destroyer, for example the Hunt class) |
+| `PF` | frigate |
+| `CORV` | corvette |
+| `TB` | torpedo boat |
+| `PG` | gunboat or sloop |
+| `CM` | minelayer |
+| `AM` | minesweeper |
+| `SS` | submarine (midget submarines noted) |
+
+### ship_capability_key
+
+Keys of `capabilities_json` (ship classes) and of the `capabilities` object of a refit: `standard_displacement`, `speed`, `main_armament`, `secondary_armament`, `anti_aircraft`, `torpedo_tubes`, `aircraft`, `complement`. Each is `{value, unit, reference_id, note}`; a key is absent when no source gives it.
 
 ### boolean
 

@@ -23,6 +23,7 @@ Standard library only.
 import contextlib
 import csv
 import io
+import json
 import os
 import re
 import sys
@@ -4027,9 +4028,188 @@ def scenario_247_air_naval_pilot_ground_by_function():
     expect(s + ': Crisbecq battery row', (claims['C9437']['place_id'], claims['C9437']['confidence'], claims['C9437']['event_type']), ('PL4176', '0.5', 'defense'))
 
 
+def _vmsgs(fn, *args, **kw):
+    """(errors, warnings) that a validate.py check adds when called with synthetic input."""
+    e0, w0 = len(validate.errors), len(validate.warnings)
+    out = fn(*args, **kw)
+    got = (validate.errors[e0:], validate.warnings[w0:])
+    del validate.errors[e0:], validate.warnings[w0:]
+    return out, got
+
+
+def scenario_248_scope_marker():
+    """Scope marker (standing rule 22): a unit with scope out_of_scope, its claims and relations go to build/other_domains/, not the main outputs."""
+    s = 'scenario 248'
+    import tempfile
+    import build
+    expect(s + ': blank means in_scope', (common.unit_scope({}), common.unit_scope({'scope': 'out_of_scope'})), ('in_scope', 'out_of_scope'))
+    h, rows = common.read_rows(common.UNITS_CSV)
+    base = build.outputs()
+    uid = 'GER-FJ-005D'
+    with tempfile.TemporaryDirectory() as td:
+        path = os.path.join(td, 'units.csv')
+        i = h.index('scope')
+        rows2 = [r[:i] + ['out_of_scope'] + r[i + 1:] if r[0] == uid else r for r in rows]
+        with open(path, 'wb') as f:
+            f.write(common.csv_bytes(h, rows2))
+        old = common.UNITS_CSV
+        common.UNITS_CSV = path
+        try:
+            moved = build.outputs()
+        finally:
+            common.UNITS_CSV = old
+    cl = lambda out, k: [r for r in csv.DictReader(io.StringIO(out[k].decode('utf-8')))]  # noqa: E731
+    n_unit = len([r for r in cl(base, 'all_claims.csv') if r['unit_id'] == uid])
+    expect(s + ': the unit has claims in the main output before the marker', n_unit > 0, True)
+    expect(s + ': marked unit leaves all_claims.csv', len([r for r in cl(moved, 'all_claims.csv') if r['unit_id'] == uid]), 0)
+    expect(s + ': marked unit claims land in other_domains/claims.csv', len([r for r in cl(moved, 'other_domains/claims.csv') if r['unit_id'] == uid]), n_unit)
+    expect(s + ': marked unit is in other_domains/units.csv with its scope', [(r['unit_id'], r['scope']) for r in cl(moved, 'other_domains/units.csv') if r['unit_id'] == uid], [(uid, 'out_of_scope')])
+    expect(s + ': marked unit leaves the main units.csv, coverage.csv and command_relations.csv',
+           (uid in [r['unit_id'] for r in cl(moved, 'units.csv')], uid in [r['unit_id'] for r in cl(moved, 'coverage.csv')],
+            uid in [r['subject_unit_id'] for r in cl(moved, 'command_relations.csv')]), (False, False, False))
+    rel_base = len([r for r in cl(base, 'command_relations.csv') if r['subject_unit_id'] == uid])
+    expect(s + ': its relations move to other_domains/command_relations.csv', len([r for r in cl(moved, 'other_domains/command_relations.csv') if r['subject_unit_id'] == uid]), rel_base)
+    expect(s + ': the main units.csv header has none of the five other-output columns', [c for c in common.OTHER_ONLY_UNIT_COLUMNS if c in cl(base, 'units.csv')[0]], [])
+    expect(s + ': no pilot unit is marked out_of_scope (data unchanged by the schema pass)', [u for u in common.read_dicts(common.UNITS_CSV)[1] if u['scope']], [])
+
+
+def scenario_249_naval_unit_columns():
+    """ship_type, hull_number and ship_class_id belong to echelon naval_unit; the class must exist and match; naval echelons need domain naval."""
+    s = 'scenario 249'
+    classes = {'SC001': {'ship_type': 'BB', 'class_name': 'New York class'}}
+    chk = lambda **u: _vmsgs(validate.check_naval_unit_columns, 'w', 'X', dict({'echelon': 'naval_unit', 'domain': 'naval', 'ship_type': 'BB', 'hull_number': 'BB-35', 'ship_class_id': 'SC001'}, **u), classes)[1]  # noqa: E731
+    expect(s + ': a clean ship passes', chk(), ([], []))
+    expect_in(s + ': ship_type on a battalion is an error', ' | '.join(chk(echelon='battalion', domain='')[0]), 'ship_type is set but echelon is battalion')
+    expect_in(s + ': a naval-ladder echelon on a ground unit is an error', ' | '.join(chk(echelon='task_group', domain='', ship_type='', hull_number='', ship_class_id='')[0]), 'needs domain naval')
+    expect_in(s + ': an unknown class is an error', ' | '.join(chk(ship_class_id='SC999')[0]), 'not a class')
+    expect_in(s + ': a class of another ship_type is an error', ' | '.join(chk(ship_type='DD')[0]), 'differs from the ship_type BB')
+    expect_in(s + ': a class without ship_type is an error', ' | '.join(chk(ship_type='')[0]), 'needs ship_type')
+    expect_in(s + ': a ship without ship_type is a warning', ' | '.join(chk(ship_type='', ship_class_id='')[1]), 'without ship_type')
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': Texas, Satterlee, Warspite, Bedale and Slazak', [(units[u]['ship_type'], units[u]['hull_number']) for u in ('US-BB-035', 'US-DD-626', 'UK-BB-WARSPITE', 'UK-DD-BEDALE', 'POL-DD-L26')],
+           [('BB', 'BB-35'), ('DD', 'DD-626'), ('BB', '03'), ('DE', 'L25'), ('DE', 'L26')])
+    classes = {c['class_id']: c for c in common.read_dicts(os.path.join(common.ROOT, 'data', 'ship_classes.csv'))[1]}
+    names = [classes[units[u]['ship_class_id']]['class_name'] + ' / ' + classes[units[u]['ship_class_id']]['nationality'] for u in ('US-BB-035', 'US-DD-626', 'UK-BB-WARSPITE', 'UK-DD-BEDALE', 'POL-DD-L26')]
+    expect(s + ': ships link to their classes; the Polish ship keeps the British class', names, ['New York class / US', 'Gleaves class / US', 'Queen Elizabeth class / UK', 'Hunt class Type II / UK', 'Hunt class Type II / UK'])
+    expect(s + ': ship_type vocabulary is the US hull codes', sorted(common.vocab_values('ship_type')), sorted(['AM', 'BB', 'BC', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))
+
+
+def scenario_250_ship_classes_table():
+    """data/ship_classes.csv: the checker rejects bad rows (synthetic) and the seeded table has the core types with sourced figures."""
+    s = 'scenario 250'
+    import tempfile
+    vocabs = common.load_vocabularies()
+    nats = {'US': {}, 'UK': {}}
+    h = common.field_names(common.load_schema('ship_classes'))
+    meta = {m['reference_id'] for m in __import__('build_references').read_meta()[1]}
+    rid = sorted(meta)[0]
+    good = {'class_id': 'SC001', 'class_name': 'Fam', 'nationality': 'US', 'ship_type': 'DD', 'lead_ship_name': '', 'parent_class_id': '', 'sub_type': '',
+            'capabilities_json': '{"speed": {"value": "30 knots", "reference_id": "%s"}}' % rid, 'reference_ids': rid, 'class_note': ''}
+    def run(rows):
+        with tempfile.TemporaryDirectory() as td:
+            path = os.path.join(td, 'ship_classes.csv')
+            with open(path, 'wb') as f:
+                f.write(common.csv_bytes(h, [[r[c] for c in h] for r in rows]))
+            old = validate.SHIP_CLASSES_CSV
+            validate.SHIP_CLASSES_CSV = path
+            try:
+                return _vmsgs(validate.check_ship_classes, nats, vocabs)[1]
+            finally:
+                validate.SHIP_CLASSES_CSV = old
+    expect(s + ': a clean family and sub-type pass', run([good, dict(good, class_id='SC002', class_name='Fam II', parent_class_id='SC001', sub_type='II', capabilities_json='{"speed": {"value": "32 knots", "reference_id": "%s"}}' % rid)]), ([], []))
+    text = lambda rows: ' | '.join(run(rows)[0])  # noqa: E731
+    expect_in(s + ': a sub_type without a parent is an error', text([dict(good, sub_type='II')]), 'set together')
+    expect_in(s + ': a parent that is itself a sub-type is an error', text([good, dict(good, class_id='SC002', class_name='B', parent_class_id='SC001', sub_type='B'), dict(good, class_id='SC003', class_name='C', parent_class_id='SC002', sub_type='C')]), 'itself a sub-type')
+    expect_in(s + ': a sub-type of another ship_type is an error', text([good, dict(good, class_id='SC002', class_name='B', ship_type='BB', parent_class_id='SC001', sub_type='B')]), 'differs from the parent class')
+    expect_in(s + ': a duplicate class name per nationality is an error', text([good, dict(good, class_id='SC002')]), 'already the name')
+    expect_in(s + ': an unknown capability key is an error', text([dict(good, capabilities_json='{"armour": {"value": "x", "reference_id": "%s"}}' % rid)]), 'unknown key')
+    expect_in(s + ': a figure with an unknown reference is an error', text([dict(good, capabilities_json='{"speed": {"value": "30", "reference_id": "R99999"}}')]), 'not in data/references_meta.csv')
+    expect_in(s + ': a figure whose reference is not listed is an error', text([dict(good, reference_ids='R001', capabilities_json='{"speed": {"value": "30", "reference_id": "%s"}}' % rid)]) if rid != 'R001' else 'not in the row reference_ids', 'not in the row reference_ids')
+    expect_in(s + ': a sub-type that repeats a family figure is a warning', ' | '.join(run([good, dict(good, class_id='SC002', class_name='B', parent_class_id='SC001', sub_type='B')])[1]), 'repeats the family row')
+    rows = common.read_dicts(os.path.join(common.ROOT, 'data', 'ship_classes.csv'))[1]
+    by = {r['class_name']: r for r in rows}
+    core = ['Iowa class', 'Essex class', 'Fletcher class', 'Evarts class', 'Gato class', 'King George V class (1939)', 'Hunt class', 'Flower class (corvette)', 'River class (frigate)', 'Bismarck class',
+            'Type 1939 torpedo boat', 'Type VIIC', 'Type VIIC/41', 'Type IXC', 'Type IXC/40', 'Type XXI', 'Bogue class', 'Richelieu class', 'Tromp class', 'Grom class', 'Fundy class']
+    expect(s + ': core classes are seeded', [c for c in core if c not in by], [])
+    expect(s + ': Hunt Type II is a sub-type of Hunt, Type VIIC of Type VII', (by['Hunt class Type II']['parent_class_id'] == by['Hunt class']['class_id'], by['Type VIIC']['parent_class_id'] == by['Type VII']['class_id']), (True, True))
+    expect(s + ': every seeded figure has its own reference', [r['class_id'] for r in rows if r['capabilities_json'] and any(not v.get('reference_id') for v in json.loads(r['capabilities_json']).values())], [])
+    expect(s + ': ship types seeded cover the brief', sorted({r['ship_type'] for r in rows}), sorted(['AM', 'BB', 'BC', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))
+
+
+def scenario_251_refit_and_reclassification():
+    """A refit is carried in strength_json capabilities (basis refit); a reclassification is a redesignation row stated as 'Reclassified from X to Y'."""
+    s = 'scenario 251'
+    vocabs = common.load_vocabularies()
+    rid = 'R001'
+    ok = '{"basis": "refit", "as_of": "1943-01-01", "capabilities": {"anti_aircraft": {"value": "10 x 20 mm", "reference_id": "%s"}}, "source": "x"}' % rid
+    chk = lambda js: _vmsgs(validate.check_strength_json, 'w', js, vocabs)[1][0]  # noqa: E731
+    expect(s + ': a refit record passes with no personnel, vehicles or status', chk(ok), [])
+    expect_in(s + ': capabilities need basis refit', ' | '.join(chk(ok.replace('"refit"', '"estimate"'))), 'needs basis refit')
+    expect_in(s + ': basis refit needs capabilities', ' | '.join(chk('{"basis": "refit", "as_of": "1943-01-01", "status": "full", "source": "x"}')), 'basis refit needs capabilities')
+    expect_in(s + ': a refit figure needs its own known reference', ' | '.join(chk(ok.replace(rid, 'R99999'))), 'not in data/references_meta.csv')
+    expect_in(s + ': an unknown capability key is an error', ' | '.join(chk(ok.replace('anti_aircraft', 'armour'))), 'unknown key')
+    expect(s + ': the ordinary strength_json still passes', chk('{"basis": "estimate", "as_of": "1944-06-10", "status": "full", "source": "x"}'), [])
+    ship = {'echelon': 'naval_unit', 'unit_id': 'X'}
+    expect(s + ': the vocabulary allows refit', 'refit' in common.vocab_values('strength_json_basis'), True)
+    expect(s + ': the JSON schema carries a capabilities property', 'capabilities' in common.load_json(os.path.join(common.SCHEMA_DIR, 'json', 'strength_json.schema.json'))['properties'], True)
+
+
+def scenario_252_naval_echelon_ladder():
+    """Naval echelon ladder: ranks 10-14, no id letter, the hierarchy applies within the ladder only; the five pilot units are re-echeloned."""
+    s = 'scenario 252'
+    rank = common.echelon_rank()
+    expect(s + ': ranks', [rank[e] for e in ('naval_unit', 'naval_division', 'naval_squadron', 'task_group', 'fleet')], [10, 11, 12, 13, 14])
+    expect(s + ': ground ranks are unchanged', (rank['squad'], rank['army_group'], rank['other']), (0, 7, 8))
+    units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    expect(s + ': the five pilot units', [(u, units[u]['echelon']) for u in ('GER-TBF-005', 'UK-BF-D', 'UK-TF-S', 'US-TG-124-9', 'GER-MGW-000H')],
+           [('GER-TBF-005', 'naval_division'), ('UK-BF-D', 'task_group'), ('UK-TF-S', 'task_group'), ('US-TG-124-9', 'task_group'), ('GER-MGW-000H', 'fleet')])
+    mk = lambda uid, e: {'unit_id': uid, 'echelon': e}  # noqa: E731
+    prob = lambda a, b, r='assigned': validate.naval_hierarchy_problem(a, b, r)  # noqa: E731
+    expect(s + ': a ship under a task group is fine', prob(mk('S', 'naval_unit'), mk('T', 'task_group')), '')
+    expect(s + ': a task group under a fleet is fine', prob(mk('T', 'task_group'), mk('F', 'fleet')), '')
+    expect_in(s + ': a ship under a ship is an error', prob(mk('S', 'naval_unit'), mk('T', 'naval_unit')), 'naval hierarchy')
+    expect_in(s + ': a fleet under a division is an error', prob(mk('F', 'fleet'), mk('D', 'naval_division')), 'naval hierarchy')
+    expect(s + ': across ladders is not checked', (prob(mk('S', 'naval_unit'), mk('A', 'army')), prob(mk('B', 'battalion'), mk('F', 'fleet'))), ('', ''))
+    expect(s + ': an unknown relation is not checked', prob(mk('S', 'naval_unit'), mk('T', 'naval_unit'), 'unknown'), '')
+    expect(s + ': a final letter on a naval-ladder id is not an echelon letter (GER-MGW-000H is a fleet)', 'fleet' in validate.NAVAL_LADDER and units['GER-MGW-000H']['unit_id'].endswith('H'), True)
+    placeholders = [(u, units[u]['record_status']) for u in ('UK-BF-D', 'UK-TF-S', 'US-TG-124-9')]
+    expect(s + ': task organisations are placeholders with no claim file', placeholders, [(u, 'placeholder') for u in ('UK-BF-D', 'UK-TF-S', 'US-TG-124-9')])
+    relations = [r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1] if r['higher_unit_id'] in ('UK-BF-D', 'UK-TF-S', 'US-TG-124-9')]
+    expect(s + ': a placeholder task organisation holds relations (as the higher unit) without claims of its own', len(relations), 4)
+
+
+def scenario_253_sea_position_base_and_event_types():
+    """sea_position place kind (confidence cap 0.5), location_represents base, event types commissioning and sortie, and the revisited pilot rows."""
+    s = 'scenario 253'
+    pl = {'kind': 'sea_position', 'place_id': 'PL1'}
+    expect(s + ': 0.7 at sea is an error', validate.sea_position_problem(pl, {'confidence': '0.7'}) != '', True)
+    expect(s + ': 0.5 at sea passes', validate.sea_position_problem(pl, {'confidence': '0.5'}), '')
+    expect(s + ': 0.7 on land is not capped', validate.sea_position_problem({'kind': 'point', 'place_id': 'PL2'}, {'confidence': '0.7'}), '')
+    expect(s + ': vocabularies', ('base' in common.vocab_values('location_represents'), 'commissioning' in common.vocab_values('event_type'), 'sortie' in common.vocab_values('event_type'), 'sea_position' in common.vocab_values('place_kind')), (True, True, True, True))
+    claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
+    expect(s + ': US-FG-366 D-Day row is a sortie from its base', (claims['C9416']['event_type'], claims['C9416']['location_represents']), ('sortie', 'base'))
+    expect(s + ': the launch of Bedale is a commissioning row', claims['C9432']['event_type'], 'commissioning')
+    expect(s + ': airfield and port rows now say base', sorted(c for c, r in claims.items() if r['location_represents'] == 'base' and 'C9411' <= c <= 'C9435'),
+           ['C9411', 'C9412', 'C9413', 'C9414', 'C9415', 'C9416', 'C9417', 'C9418', 'C9419', 'C9420', 'C9421', 'C9422', 'C9429', 'C9435'])
+    expect(s + ': each changed row records old and new value', [c for c in ('C9411', 'C9416', 'C9429', 'C9432', 'C9435') if 'old value' not in claims[c]['notes']], [])
+    places = {p['place_id']: p for p in common.read_dicts(os.path.join(common.ROOT, 'data', 'places.csv'))[1]}
+    expect(s + ': Texas and Satterlee points are sea positions; Warspite objective and the Harwich fallback are not', [places[p]['kind'] for p in ('PL4170', 'PL4171', 'PL4172', 'PL4174')], ['sea_position', 'sea_position', 'point', 'point'])
+    expect(s + ': every claim at a sea_position place is at 0.5 or lower', [c for c, r in claims.items() if places[r['place_id']]['kind'] == 'sea_position' and float(r['confidence']) > 0.5], [])
+    expect(s + ': III./JG 26 same-day exception stays (base does not change the claim key)', [r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'claim_key_exceptions.csv'))[1] if r['claim_id'] == 'C9412' and r['other_claim_id'] == 'C9413'] != [], True)
+
+
+def scenario_254_claim_ids_other_domains():
+    """check_claim_ids.py reads build/other_domains/claims.csv as well as all_claims.csv (an air/naval/out_of_scope id cannot be reused unseen)."""
+    s = 'scenario 254'
+    import subprocess
+    p = subprocess.run([sys.executable, os.path.join(common.ROOT, 'scripts', 'check_claim_ids.py'), '--base', 'HEAD'], capture_output=True, text=True, cwd=common.ROOT)
+    total = len(common.load_all_claims()[1])
+    expect_in(s + ': the script counts the other-domain claims in "now"', p.stdout, 'now: %d;' % total)
+    expect_in(s + ': and passes', p.stdout, 'OK: no id was reused or dropped')
+
 def main():
 
-    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps, scenario_196_scott_decisions_nov04, scenario_197_b709_german, scenario_198_b730_german, scenario_199_theater, scenario_200_placeholders_b1, scenario_201_placeholders_b2, scenario_202_placeholders_b3, scenario_203_lifespan, scenario_204_command_relations, scenario_205_german_end_rows, scenario_206_map_text_weak_pairs, scenario_207_midwar_ends, scenario_208_lifespan_check, scenario_209_ellis_leftovers_chunk1, scenario_210_ellis_leftovers_chunk2, scenario_211_ellis_leftovers_chunk3, scenario_212_ellis_leftovers_chunk4, scenario_213_ellis_leftovers_chunk5, scenario_214_ellis_leftovers_chunk6, scenario_215_cmhq173_watch_on_the_maas, scenario_216_ahq039_western_netherlands, scenario_217_ahq032_concluding_phase, scenario_218_ahq019_rhine_crossing, scenario_219_cmhq186_blockbuster, scenario_220_cmhq155_veritable, scenario_221_cmhq188_scheldt, scenario_222_cmhq183_pursuit, scenario_223_cmhq184_channel_ports, scenario_224_ahq065_falaise, scenario_225_ahq058_july, scenario_226_cmhq181_goldflake, scenario_227_delattre_c1_armour, scenario_228_delattre_c2_infantry, scenario_229_delattre_c3_headquarters, scenario_230_delattre_c4_us_german, scenario_231_delattre_c5_other_fronts, scenario_232_delattre_c6_italy, scenario_233_dejong_sept_german_oob, scenario_234_dejong_market_garden, scenario_235_dejong_irene_scheldt, scenario_236_dejong_walcheren, scenario_237_dejong_polish_g123, scenario_238_dejong_irene_dates, scenario_239_c1036_raise, scenario_240_stoottroepen_unit, scenario_241_bewakingstroepen_unit, scenario_242_stoottroepen_battalions, scenario_243_wieringermeer_gewest11, scenario_244_air_naval_pilot_luftwaffe, scenario_245_air_naval_pilot_usaaf, scenario_246_air_naval_pilot_ships, scenario_247_air_naval_pilot_ground_by_function):
+    for fn in (scenario_0_staleness, scenario_1_first_army, scenario_2_viii_corps, scenario_3_84th_division, scenario_4_administrative_versus_operational, scenario_6_german_parent_changes_1944, scenario_7_german_batch_1b_july_1944, scenario_8_german_batch_2_sep_oct_1944, scenario_9_german_batch_2_followup_model_lxxx, scenario_10_german_batch_3_nov_dec_1944, scenario_11_german_1945_batch_1_jan_mar, scenario_12_german_1945_batch_2_apr_may, scenario_13_cleanup_open_items_oct28, scenario_14_canadian_batch_1_jun_dec_1944, scenario_15_canadian_batch_2_jan_may_1945, scenario_16_british_batch_1_jun_dec_1944, scenario_17_british_batch_2_jan_may_1945, scenario_18_british_batch_2_followup, scenario_19_allied_contingents_1944_45, scenario_20_french_1944_45, scenario_21_french_followup, scenario_22_french_delattre, scenario_23_brigades_batch_1_uk_can, scenario_24_brigades_batch_2_us, scenario_25_brigades_batch_3_german, scenario_26_activity_pilot, scenario_27_activity_rollout_1, scenario_28_activity_rollout_2, scenario_29_activity_rollout_3, scenario_30_activity_german_1, scenario_31_activity_german_2, scenario_32_activity_german_3, scenario_33_activity_canada_france, scenario_34_official_history_pass_1, scenario_35_source_fixes_delattre_ellis, scenario_36_fms_b466_geyr, scenario_37_fms_19army, scenario_38_fms_b703_armygroupg, scenario_39_fms_b811_15army, scenario_40_fms_b701_armygroupb, scenario_41_fms_b078_armygroupg, scenario_42_official_history_pass_2, scenario_43_fms_b475_german, scenario_44_fms_b235_german, scenario_45_fms_b179_german, scenario_46_fms_b763_german, scenario_47_fms_b781, scenario_48_fms_b831, scenario_49_fms_b084, scenario_50_fms_b849, scenario_51_fms_b745, scenario_52_fms_b151, scenario_53_loc_12ag_maps, scenario_54_loc_12ag_us_backfill, scenario_55_loc_12ag_august_1, scenario_56_loc_12ag_villages, scenario_57_loc_12ag_late_august_september, scenario_58_loc_12ag_villages_2, scenario_59_loc_12ag_october_1, scenario_60_loc_12ag_villages_3, scenario_61_loc_12ag_october_2, scenario_62_loc_12ag_october_3, scenario_63_loc_12ag_october_4, scenario_64_loc_12ag_nov07, scenario_65_loc_12ag_nov14, scenario_66_loc_12ag_nov21, scenario_67_loc_12ag_nov28, scenario_68_loc_12ag_dec05, scenario_69_loc_12ag_dec12, scenario_70_loc_12ag_dec19, scenario_71_loc_12ag_dec26, scenario_72_loc_12ag_jan02, scenario_73_loc_12ag_jan09, scenario_74_loc_12ag_jan16, scenario_75_loc_12ag_jan23, scenario_76_loc_12ag_jan30, scenario_77_loc_12ag_feb06, scenario_78_loc_12ag_feb13, scenario_79_loc_12ag_feb20, scenario_80_loc_12ag_feb27, scenario_81_loc_12ag_mar06, scenario_82_loc_12ag_mar13, scenario_83_loc_12ag_mar20, scenario_84_loc_12ag_mar27, scenario_85_loc_12ag_apr3, scenario_86_loc_12ag_apr10, scenario_87_loc_12ag_apr17, scenario_88_loc_12ag_apr24, scenario_89_loc_12ag_may01, scenario_90_loc_12ag_may08, scenario_91_loc_12ag_may08b, scenario_92_loc_12ag_may08c, scenario_93_loc_12ag_may09, scenario_94_unit_lineage, scenario_95_coverage_report, scenario_96_nara_t315_r940, scenario_97_nara_t311_r4, scenario_98_nara_t311_r3, scenario_99_nara_t354_r120, scenario_100_nara_t315_r1298, scenario_101_nara_t354_r147, scenario_102_nara_t314_r1605, scenario_103_nara_t354_r149, scenario_104_nara_t314_r1607, scenario_105_nara_t315_r828, scenario_106_nara_t354_r129, scenario_107_nara_t311_r1, scenario_108_nara_t315_r2145, scenario_109_cole_ardennes_fifth_army, scenario_110_cole_ardennes_seventh_army, scenario_111_cole_ardennes_sixth_army, scenario_112_cole_ardennes_pass2_german, scenario_113_cole_ardennes_pass2_allied, scenario_114_cole_ardennes_corroborations, scenario_115_cole_ardennes_79th_vgd, scenario_116_confidence_corroborated, scenario_117_map_row_conflicts, scenario_118_stacey_normandy_to_spring, scenario_119_stacey_falaise, scenario_120_stacey_seine_channel_ports, scenario_121_stacey_scheldt, scenario_122_stacey_maas_winter, scenario_123_stacey_veritable, scenario_124_stacey_blockbuster, scenario_125_stacey_rhine_crossing, scenario_126_stacey_western_netherlands, scenario_127_stacey_surrender_and_appendices, scenario_128_stacey_maps, scenario_129_stacey_conflict_groups, scenario_130_stacey_units_added, scenario_131_fms_b093_meindl, scenario_132_fms_b717_student, scenario_133_fms_b084_reread, scenario_134_fms_b368_langhaeuser, scenario_135_fms_b774_prittwitz, scenario_136_fms_b762_prittwitz, scenario_137_roadmap_253_map_rows, scenario_138_fms_b156_reinhard, scenario_139_fms_b343_reinhard, scenario_140_fms_b262_blauensteiner, scenario_141_fms_b414_geyer, scenario_142_fms_b147_geyer, scenario_143_fms_b148_geyer, scenario_144_fms_b453_langhaeuser, scenario_145_fms_b580_langhaeuser, scenario_146_fms_b365_blumentritt, scenario_147_fms_b811_german, scenario_148_fms_b812_german, scenario_149_fms_b197_german, scenario_150_fms_b200, scenario_151_fms_b367_german, scenario_152_fms_b368_reread, scenario_153_fms_b369_german, scenario_154_fms_b674_german, scenario_155_fms_b327, scenario_156_fms_b051_german, scenario_157_fms_b052, scenario_158_fms_b261_german, scenario_159_fms_b240_german, scenario_160_fms_b401_german, scenario_161_fms_b346_german, scenario_162_fms_b101, scenario_163_fms_b309, scenario_164_fms_b236_german, scenario_165_fms_b798_german, scenario_166_fms_b596_german, scenario_167_fms_b475_reread, scenario_168_pre_invasion_dates, scenario_169_fms_b249_german, scenario_170_fms_b508_german, scenario_171_fms_b820_german, scenario_172_unit_domain, scenario_173_fms_b023_german, scenario_174_small_units_b023, scenario_175_fms_b361_german, scenario_176_post_surrender, scenario_177_blumentritt_relations, scenario_178_b283, scenario_179_a969, scenario_180_a859, scenario_181_ethint43, scenario_182_independent_units, scenario_183_a898, scenario_184_kampfgruppen, scenario_185_a939, scenario_186_a940, scenario_187_b410, scenario_188_b541, scenario_189_b673, scenario_190_b709, scenario_191_b730, scenario_192_b823, scenario_193_ethint78, scenario_194_b709_second_pass, scenario_195_b709_maps, scenario_196_scott_decisions_nov04, scenario_197_b709_german, scenario_198_b730_german, scenario_199_theater, scenario_200_placeholders_b1, scenario_201_placeholders_b2, scenario_202_placeholders_b3, scenario_203_lifespan, scenario_204_command_relations, scenario_205_german_end_rows, scenario_206_map_text_weak_pairs, scenario_207_midwar_ends, scenario_208_lifespan_check, scenario_209_ellis_leftovers_chunk1, scenario_210_ellis_leftovers_chunk2, scenario_211_ellis_leftovers_chunk3, scenario_212_ellis_leftovers_chunk4, scenario_213_ellis_leftovers_chunk5, scenario_214_ellis_leftovers_chunk6, scenario_215_cmhq173_watch_on_the_maas, scenario_216_ahq039_western_netherlands, scenario_217_ahq032_concluding_phase, scenario_218_ahq019_rhine_crossing, scenario_219_cmhq186_blockbuster, scenario_220_cmhq155_veritable, scenario_221_cmhq188_scheldt, scenario_222_cmhq183_pursuit, scenario_223_cmhq184_channel_ports, scenario_224_ahq065_falaise, scenario_225_ahq058_july, scenario_226_cmhq181_goldflake, scenario_227_delattre_c1_armour, scenario_228_delattre_c2_infantry, scenario_229_delattre_c3_headquarters, scenario_230_delattre_c4_us_german, scenario_231_delattre_c5_other_fronts, scenario_232_delattre_c6_italy, scenario_233_dejong_sept_german_oob, scenario_234_dejong_market_garden, scenario_235_dejong_irene_scheldt, scenario_236_dejong_walcheren, scenario_237_dejong_polish_g123, scenario_238_dejong_irene_dates, scenario_239_c1036_raise, scenario_240_stoottroepen_unit, scenario_241_bewakingstroepen_unit, scenario_242_stoottroepen_battalions, scenario_243_wieringermeer_gewest11, scenario_244_air_naval_pilot_luftwaffe, scenario_245_air_naval_pilot_usaaf, scenario_246_air_naval_pilot_ships, scenario_247_air_naval_pilot_ground_by_function, scenario_248_scope_marker, scenario_249_naval_unit_columns, scenario_250_ship_classes_table, scenario_251_refit_and_reclassification, scenario_252_naval_echelon_ladder, scenario_253_sea_position_base_and_event_types, scenario_254_claim_ids_other_domains):
         before = len(FAILURES)
         try:
             fn()

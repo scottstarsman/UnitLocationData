@@ -767,6 +767,13 @@ def check_claim_keys(claims, schema):
     return exc
 
 
+def sea_position_problem(place, claim):
+    """Message when a claim at a sea_position place has a confidence above 0.5 (a point at sea is capped at 0.5); '' otherwise."""
+    if place['kind'] == 'sea_position' and claim['confidence'] and float(claim['confidence']) > 0.5:
+        return 'confidence %s at the sea_position place %s: a point at sea is capped at 0.5' % (claim['confidence'], place['place_id'])
+    return ''
+
+
 def check_places(claims, vocabs):
     """data/places.csv and the claim -> place links: header and field values from schema/places.schema.json, ids and names unique, aliases unambiguous,
     the coordinate service, and that each claim's point equals its place's exactly when coord_override is blank. Returns the place rows (with _where)."""
@@ -841,8 +848,8 @@ def check_places(claims, vocabs):
                 err(c['_where'], 'latitude/longitude differ from place %s %r by %.0f m and coord_override is blank: use the place point or say why in coord_override' % (p['place_id'], p['name'], dist * 1000))
             elif dist > 5:
                 err(c['_where'], 'the claim point is %.1f km from place %s %r: farther than 5 km is a different place' % (dist, p['place_id'], p['name']))
-        if p['kind'] == 'sea_position' and c['confidence'] and float(c['confidence']) > 0.5:
-            err(c['_where'], 'confidence %s at the sea_position place %s: a point at sea is capped at 0.5' % (c['confidence'], p['place_id']))
+        if sea_position_problem(p, c):
+            err(c['_where'], sea_position_problem(p, c))
         if re.search(r' ; coords?:', c['source']):
             err(c['_where'], "source ends with a coordinate note ('; coords: ...'): the note is the place's coord_source_note (or the claim's coord_override)")
     for d in out:
@@ -1038,6 +1045,15 @@ def check_foreign_keys(tables):
                 seen[k] = i
 
 
+def naval_hierarchy_problem(su, hu, relationship):
+    """Message when a command relation between two units of the naval ladder (naval_unit < naval_division < naval_squadron < task_group < fleet) puts a
+    higher unit that does not outrank the subject; '' otherwise. A relation across ladders (a ship under an army, a battalion under a navy command) is not checked."""
+    if su and hu and su['echelon'] in NAVAL_LADDER and hu['echelon'] in NAVAL_LADDER and ECH_RANK[hu['echelon']] <= ECH_RANK[su['echelon']] and relationship != 'unknown':
+        return ('naval hierarchy: %s (%s) is under %s (%s); within the naval ladder (naval_unit < naval_division < naval_squadron < task_group < fleet) '
+                'the higher unit must have the higher echelon rank' % (su['unit_id'], su['echelon'], hu['unit_id'], hu['echelon']))
+    return ''
+
+
 def check_command_relation_tables(units, vocabs, claims):
     """data/command_relations.csv (master), data/command_relation_claims.csv (evidence join) and data/command_relation_overlaps.csv: headers and
     field values from schema/relations.schema.json; the interval rules (see schema/README.md, "Validity of a relationship"); the evidence agrees with
@@ -1076,10 +1092,9 @@ def check_command_relation_tables(units, vocabs, claims):
         elif r['higher_unit_id'] == r['subject_unit_id']:
             err(where, 'the unit is listed as its own parent')
         else:
-            su, hu = units.get(r['subject_unit_id']), units.get(r['higher_unit_id'])
-            if su and hu and su['echelon'] in NAVAL_LADDER and hu['echelon'] in NAVAL_LADDER and ECH_RANK[hu['echelon']] <= ECH_RANK[su['echelon']] and r['relationship'] != 'unknown':
-                err(where, 'naval hierarchy: %s (%s) is under %s (%s); within the naval ladder (naval_unit < naval_division < naval_squadron < task_group < fleet) '
-                           'the higher unit must have the higher echelon rank' % (r['subject_unit_id'], su['echelon'], r['higher_unit_id'], hu['echelon']))
+            problem = naval_hierarchy_problem(units.get(r['subject_unit_id']), units.get(r['higher_unit_id']), r['relationship'])
+            if problem:
+                err(where, problem)
         for a, b in (('valid_to', 'valid_from'), ('valid_from_latest', 'valid_from'), ('valid_to_earliest', 'valid_to')):
             if r[a] and r[b] and (r[a] < r[b] if a != 'valid_to_earliest' else r[a] > r[b]):
                 err(where, '%s %s is %s %s %s' % (a, r[a], 'after' if a == 'valid_to_earliest' else 'before', b, r[b]))

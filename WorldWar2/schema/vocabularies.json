@@ -51,8 +51,12 @@
       "company": "Company-sized unit (company, battery, squadron of a ground unit), recorded only when a source traces it up the chain to a parent division or higher (Scott, 4 November 2026; for example H Company, 116th Infantry, 29th Division); rank 0, no echelon letter in the id.",
       "battalion": "Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`.",
       "other": "Higher or special headquarters that fit no level above (for example OB West).",
-      "air_force": "Reserved for later: air force, air fleet or air army headquarters (not yet used).",
-      "air_formation": "Reserved for later: air corps, air division, wing, group or squadron (not yet used).",
+      "air_squadron": "Air squadron: a Staffel (Luftwaffe), a US squadron or a RAF squadron; a flight is not recorded. Air ladder, rank 20, no id letter (docs/air_naval_pilot.md section 9).",
+      "air_group": "Air group-level unit: a Gruppe (Luftwaffe), a US group, or a RAF WING (the RAF's wing is the level of a US group, as the RAF's group is the level of a US combat wing; the level, not the name, decides). Air ladder, rank 21, no id letter.",
+      "air_wing": "Air wing-level unit: a Geschwader (Luftwaffe), a US combat wing (bomb, fighter or troop carrier wing), or a RAF GROUP (No. 2 Group, No. 11 Group). Air ladder, rank 22, no id letter.",
+      "air_division": "Air division or command: a Jagddivision or Fliegerdivision, a US air division or bomb division, a US command (IX Bomber Command, IX Fighter Command) or tactical air command (IX TAC, XXIX TAC). A RAF tactical group such as No. 83 Group is a RAF group and belongs to air_wing. Air ladder, rank 23, no id letter.",
+      "air_corps": "Air corps: a Fliegerkorps or Jagdkorps (Luftwaffe); a US air corps does not exist in the 1944-45 theater. Air ladder, rank 24, no id letter.",
+      "air_force": "Air force or air fleet: a Luftflotte, a numbered US air force (Eighth, Ninth), a RAF command (Bomber Command, Fighter Command) or the Second Tactical Air Force. Air ladder, rank 25, no id letter.",
       "naval_unit": "Ship: one vessel, a commissioned combatant of destroyer-escort size or larger, or a single small craft that a source singles out and that traces to a parent (docs/air_naval_pilot.md section 6.1). Naval ladder, rank 10, no id letter.",
       "naval_division": "Naval division or flotilla: a destroyer division, a minesweeping, S-boat or U-boat flotilla, a landing-craft flotilla or LST group. Naval ladder, rank 11, no id letter.",
       "naval_squadron": "Naval squadron: a destroyer or cruiser squadron. Naval ladder, rank 12, no id letter.",
@@ -317,7 +321,7 @@
     }
   },
   "echelon_rank": {
-    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, fleet 14) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). display_order lists ground echelons only (the main outputs are ground).",
+    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, fleet 14) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). The air ladder (air_squadron 20, air_group 21, air_wing 22, air_division 23, air_corps 24, air_force 25) has its own range too, so air ranks never collide with ground (0-8) or naval (10-14) ranks; ranks are by level, so the RAF wing (air_group) and RAF group (air_wing) rank like the US group and combat wing; the hierarchy check applies within the air ladder only (scripts/validate.py air_hierarchy_problem). display_order lists ground echelons only (the main outputs are ground).",
     "values": {
       "squad": 0,
       "platoon": 0,
@@ -334,7 +338,13 @@
       "naval_division": 11,
       "naval_squadron": 12,
       "task_group": 13,
-      "fleet": 14
+      "fleet": 14,
+      "air_squadron": 20,
+      "air_group": 21,
+      "air_wing": 22,
+      "air_division": 23,
+      "air_corps": 24,
+      "air_force": 25
     },
     "display_order": [
       "army_group",
@@ -349,7 +359,7 @@
     ]
   },
   "echelon_id_letter": {
-    "description": "The echelon letter that ends a unit_id (`NATION-TYPE-NUMBER` + letter, see schema/README.md, \"unit_id pattern\"). An id that ends in a digit and one of these letters must have the matching echelon (checked by scripts/validate.py); an id that ends otherwise has no echelon letter. The echelons in `no_letter` never carry one: regiments, regiment-sized battle groups and battalions are identified by their type code and name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). Exception: the combat commands `US-CCA-002D` and `US-CCR-004D` (echelon `regiment/battle_group`), whose final `D` is the 2nd and 4th Armored Division in the id and not an echelon letter (`combat_command_pattern`). Ids are opaque and are never renamed to follow this rule. The naval-ladder echelons (naval_exempt) take no id letter, and a final letter on the id of such a unit is not an echelon letter (GER-MGW-000H, Marinegruppe West, is echelon fleet; ids are opaque and never renamed).",
+    "description": "The echelon letter that ends a unit_id (`NATION-TYPE-NUMBER` + letter, see schema/README.md, \"unit_id pattern\"). An id that ends in a digit and one of these letters must have the matching echelon (checked by scripts/validate.py); an id that ends otherwise has no echelon letter. The echelons in `no_letter` never carry one: regiments, regiment-sized battle groups and battalions are identified by their type code and name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). Exception: the combat commands `US-CCA-002D` and `US-CCR-004D` (echelon `regiment/battle_group`), whose final `D` is the 2nd and 4th Armored Division in the id and not an echelon letter (`combat_command_pattern`). Ids are opaque and are never renamed to follow this rule. The naval-ladder echelons (naval_exempt) take no id letter, and a final letter on the id of such a unit is not an echelon letter (GER-MGW-000H, Marinegruppe West, is echelon fleet; ids are opaque and never renamed). The air-ladder echelons (air_exempt) take no id letter either: GER-JGK-002C (II Jagdkorps), GER-FLK-002C, GER-LFL-003A and US-TAC-009C keep their final letters, which are not echelon letters.",
     "values": {
       "army_group": "G",
       "army": "A",
@@ -370,6 +380,14 @@
       "naval_squadron",
       "task_group",
       "fleet"
+    ],
+    "air_exempt": [
+      "air_squadron",
+      "air_group",
+      "air_wing",
+      "air_division",
+      "air_corps",
+      "air_force"
     ]
   },
   "relationship_groups": {

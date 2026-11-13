@@ -259,6 +259,7 @@ ACTIVE_RELS = common.relationship_group('active')
 ECH_RANK = common.echelon_rank()
 _LETTERS, NO_ID_LETTER, _CC = common.echelon_id_letters()
 NAVAL_LADDER = frozenset(common.load_vocabularies()['echelon_id_letter']['naval_exempt'])   # naval_unit .. fleet: ranks 10-14, no id letter
+AIR_LADDER = frozenset(common.load_vocabularies()['echelon_id_letter']['air_exempt'])   # air_squadron .. air_force: ranks 20-25, no id letter
 ID_LETTER_ECHELON = {letter: echelon for echelon, letter in _LETTERS.items()}   # 'D' -> 'division'
 COMBAT_COMMAND_ID = re.compile(_CC)
 HIGHER_THAN_ORGANIC = common.higher_than_organic()
@@ -945,6 +946,11 @@ def check_naval_unit_columns(where, uid, u, classes):
     dom = u.get('domain') or 'ground'
     if ech in NAVAL_LADDER and dom != 'naval':
         err(where, 'echelon %s is on the naval ladder and needs domain naval (not %s)' % (ech, dom))
+    if ech in AIR_LADDER and dom != 'air':
+        err(where, 'echelon %s is on the air ladder and needs domain air (not %s)' % (ech, dom))
+    if dom == 'air' and ech not in AIR_LADDER:
+        warn(where, 'a unit of domain air with the ground echelon %s: use the air ladder (air_squadron, air_group, air_wing, air_division, air_corps, air_force; '
+                    'docs/air_naval_pilot.md section 9) so the hierarchy check applies' % ech)
     for col in ('ship_type', 'hull_number', 'ship_class_id'):
         if u.get(col) and ech != 'naval_unit':
             err(where, '%s is set but echelon is %s: ship_type, hull_number and ship_class_id belong to a unit with echelon naval_unit (a ship)' % (col, ech))
@@ -1054,6 +1060,23 @@ def naval_hierarchy_problem(su, hu, relationship):
     return ''
 
 
+AIR_LATERAL = ('supporting', 'coordinating')   # relationships that are not subordination and so are not rank-checked
+
+
+def air_hierarchy_problem(su, hu, relationship):
+    """Message when a subordination between two units of the air ladder (air_squadron < air_group < air_wing < air_division < air_corps < air_force) puts a
+    higher unit that does not outrank the subject; '' otherwise. The rank follows the LEVEL, not the national name: a Gruppe, a US group and a RAF wing are
+    air_group; a Geschwader, a US combat wing and a RAF group are air_wing, so a RAF group over a RAF wing and a US wing over a US group are both fine
+    and a US group over a US wing is not. Supporting and coordinating are lateral and not checked; unknown is a placeholder. A relation across ladders
+    (an air group under an army, a flak regiment under a Fliegerkorps) is not checked."""
+    if (su and hu and su['echelon'] in AIR_LADDER and hu['echelon'] in AIR_LADDER and ECH_RANK[hu['echelon']] <= ECH_RANK[su['echelon']]
+            and relationship != 'unknown' and relationship not in AIR_LATERAL):
+        return ('air hierarchy: %s (%s) is under %s (%s); within the air ladder (air_squadron < air_group < air_wing < air_division < air_corps < air_force) '
+                'the higher unit must have the higher echelon rank (the level counts, not the name: a RAF wing is air_group, a RAF group is air_wing)' % (
+                    su['unit_id'], su['echelon'], hu['unit_id'], hu['echelon']))
+    return ''
+
+
 def check_command_relation_tables(units, vocabs, claims):
     """data/command_relations.csv (master), data/command_relation_claims.csv (evidence join) and data/command_relation_overlaps.csv: headers and
     field values from schema/relations.schema.json; the interval rules (see schema/README.md, "Validity of a relationship"); the evidence agrees with
@@ -1092,7 +1115,8 @@ def check_command_relation_tables(units, vocabs, claims):
         elif r['higher_unit_id'] == r['subject_unit_id']:
             err(where, 'the unit is listed as its own parent')
         else:
-            problem = naval_hierarchy_problem(units.get(r['subject_unit_id']), units.get(r['higher_unit_id']), r['relationship'])
+            problem = (naval_hierarchy_problem(units.get(r['subject_unit_id']), units.get(r['higher_unit_id']), r['relationship'])
+                       or air_hierarchy_problem(units.get(r['subject_unit_id']), units.get(r['higher_unit_id']), r['relationship']))
             if problem:
                 err(where, problem)
         for a, b in (('valid_to', 'valid_from'), ('valid_from_latest', 'valid_from'), ('valid_to_earliest', 'valid_to')):
@@ -1445,7 +1469,7 @@ def main():
                 err(where, 'unit_id prefix %s is not the code %s of nationality %s' % (uid.split('-')[0], nat['code'], u['nationality']))
             # echelon letter (vocabulary echelon_id_letter): an id ending in digits and G, A, C, D, B or H must have that echelon; regiments, battle groups and battalions have no letter
             lm = re.search(r'[0-9]([A-Z])$', uid)
-            if lm and lm.group(1) in ID_LETTER_ECHELON and ID_LETTER_ECHELON[lm.group(1)] != u['echelon'] and not (u['echelon'] in NO_ID_LETTER and COMBAT_COMMAND_ID.match(uid)) and u['echelon'] not in NAVAL_LADDER:
+            if lm and lm.group(1) in ID_LETTER_ECHELON and ID_LETTER_ECHELON[lm.group(1)] != u['echelon'] and not (u['echelon'] in NO_ID_LETTER and COMBAT_COMMAND_ID.match(uid)) and u['echelon'] not in NAVAL_LADDER and u['echelon'] not in AIR_LADDER:
                 err(where, 'unit_id %s ends in the echelon letter %s (%s) but echelon is %s: regiments, battle groups and battalions have no echelon letter in the id '
                            '(see vocabulary echelon_id_letter)' % (uid, lm.group(1), ID_LETTER_ECHELON[lm.group(1)], u['echelon']))
             if u['formed_date']:

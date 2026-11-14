@@ -39,12 +39,12 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | UK | other | 1 | 0 | 0 | 1 | 0 | 0 |
 | US | army_group | 0 | 0 | 2 | 2 | 2 | 35 |
 | US | army | 0 | 0 | 5 | 5 | 3 | 203 |
-| US | corps | 2 | 0 | 15 | 17 | 7 | 570 |
+| US | corps | 2 | 0 | 15 | 17 | 7 | 571 |
 | US | division | 0 | 0 | 61 | 61 | 25 | 2229 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 19 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **8** | **0** | **429** | **437** | **268** | **9403** |
+| **All** | | **8** | **0** | **429** | **437** | **268** | **9404** |
 
 ## Operations
 
@@ -53,26 +53,26 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 129 |
-| campaign | 9 | 9 | 7483 |
+| campaign | 9 | 9 | 7484 |
 | operation | 33 | 33 | 875 |
 | battle | 20 | 20 | 599 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9403** |
+| **All** | **75** | **73** | **9404** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4164 places and 205 alias names for 9403 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4164 places and 205 alias names for 9404 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4048 | 9175 |
+| point | 4048 | 9176 |
 | area | 95 | 206 |
 | line | 19 | 22 |
 | sea_position | 2 | 0 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1620 | 3486 |
+| France (FR) | 1620 | 3487 |
 | Germany (DE) | 1461 | 3175 |
 | Netherlands (NL) | 527 | 1541 |
 | Belgium (BE) | 376 | 848 |

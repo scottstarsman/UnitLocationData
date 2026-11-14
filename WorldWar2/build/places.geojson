@@ -8278,7 +8278,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "North Rhine-Westphalia",
-    "claims_count": 21
+    "claims_count": 22
    }
   },
   {
@@ -10818,7 +10818,7 @@
     "precision_km": 10,
     "country": "NL",
     "region": "Zeeland",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -25178,7 +25178,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -27938,7 +27938,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -70278,7 +70278,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 2
+    "claims_count": 3
    }
   },
   {
@@ -81018,7 +81018,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Normandy",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -83239,6 +83239,46 @@
     "country": "DE",
     "region": "Nordrhein-Westfalen",
     "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.0594,
+     48.975
+    ]
+   },
+   "properties": {
+    "place_id": "PL4179",
+    "name": "Tessy-sur-Vire, Manche",
+    "alt_names": "Tessy; Tessy-Bocage",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.1959,
+     50.2172
+    ]
+   },
+   "properties": {
+    "place_id": "PL4180",
+    "name": "Buissonville (Rochefort), Namur",
+    "alt_names": "Buissonville",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Namur",
+    "claims_count": 1
    }
   }
  ]

@@ -25212,8 +25212,8 @@
     "location_date": "1944-07-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: p. 310"
+    "reference_ids": "R670;R1161;R001",
+    "source_locator": "R670: p. 310, Appendix IV, p. 521; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -30076,7 +30076,7 @@
     "date": "1944-07-17",
     "place_id": "PL0526",
     "location_name": "Maltot (Maltot area, one Kampfgruppe only)",
-    "location_represents": "main_body",
+    "location_represents": "sector_center",
     "precision_km": 5,
     "confidence": 0.5,
     "event_type": "regroup",
@@ -30216,6 +30216,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R892;R002",
     "source_locator": "R892: paras 41, 131, 151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.069,
+     49.075
+    ]
+   },
+   "properties": {
+    "claim_id": "C9444",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-17",
+    "place_id": "PL4067",
+    "location_name": "Mézidon (Mézidon-Canon), Calvados (in reserve near Mézidon)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "in reserve near Mézidon, under orders to move to the Lisieux-Pont l'Évêque area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R782",
+    "source_locator": "R892: para 131 (German situation map of 17 July, used with AHQ Report No. 50)"
    }
   },
   {
@@ -38865,8 +38906,8 @@
     "location_date": "1944-07-30",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: p. 389"
+    "reference_ids": "R670;R1161;R001",
+    "source_locator": "R670: p. 389, Appendix IV, p. 521; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -42974,6 +43015,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0594,
+     48.975
+    ]
+   },
+   "properties": {
+    "claim_id": "C9447",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-08-01",
+    "place_id": "PL4179",
+    "location_name": "Tessy-sur-Vire, Manche",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking from Villebaudon and penetrating Tessy-sur-Vire",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R396;R001",
+    "source_locator": "R396: p. 303, 304"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.19,
      48.9161
     ]
@@ -44696,6 +44778,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.8686,
+     48.82
+    ]
+   },
+   "properties": {
+    "claim_id": "C9448",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-08-06",
+    "place_id": "PL1272",
+    "location_name": "Vire Normandie, Calvados (Hill 219, west of the town)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "designated XIX Corps reserve on Hill 219 west of Vire",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1165;R402;R002",
+    "source_locator": "R1165: p. 449, 450, 451; R402: p. 471"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.8576,
      48.5401
     ]
@@ -45712,8 +45835,8 @@
     "location_date": "1944-08-07",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R891;R001",
-    "source_locator": "R670: pp. 420, 421; R891: para 49"
+    "reference_ids": "R670;R891;R1161;R001",
+    "source_locator": "R670: pp. 420, 421, Appendix IV, p. 521; R891: para 49; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -51862,8 +51985,8 @@
     "location_date": "1944-08-14",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R891;R001",
-    "source_locator": "R670: p. 430; R891: para 166"
+    "reference_ids": "R670;R891;R1161;R001",
+    "source_locator": "R670: p. 430, Appendix IV, p. 521; R891: para 166; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -58903,7 +59026,7 @@
     "precision_km": 5,
     "confidence": 0.5,
     "event_type": "withdrawal",
-    "current_activity": "12th SS Panzer Division infantry group under Meyer crosses the Dives between Chambois and St. Lambert",
+    "current_activity": "12th SS Panzer Division infantry group crosses the Dives between Chambois and St. Lambert",
     "operation_id": "OP-FALAISE",
     "operation": "Battle of the Falaise Pocket",
     "operation_type": "battle",
@@ -58914,8 +59037,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R001",
-    "source_locator": "R404: p. 550, 540"
+    "reference_ids": "R404;R278;R001",
+    "source_locator": "R404: p. 550, 540; R278: Kommandeure"
    }
   },
   {
@@ -65148,6 +65271,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: pp. 115, 120"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0109,
+     49.2871
+    ]
+   },
+   "properties": {
+    "claim_id": "C9449",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-08-25",
+    "place_id": "PL1410",
+    "location_name": "Elbeuf, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking and entering Elbeuf",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R405;R002",
+    "source_locator": "R405: p. 580"
    }
   },
   {
@@ -82489,8 +82653,8 @@
     "location_date": "1944-09-10",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R890;R001",
-    "source_locator": "R671: p. 14; R890: paras 13, 30"
+    "reference_ids": "R671;R890;R1161;R001",
+    "source_locator": "R671: p. 14, Appendix IV, pp. 367-368; R890: paras 13, 30; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -91755,8 +91919,8 @@
     "location_date": "1944-09-17",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R890;R002",
-    "source_locator": "R890: paras 45, 57, Appendix \"B\""
+    "reference_ids": "R890;R671;R1161;R002",
+    "source_locator": "R890: paras 45, 57, Appendix \"B\"; R671: Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -101595,8 +101759,8 @@
     "location_date": "1944-09-25",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R890;R002",
-    "source_locator": "R890: para 107, Appendix \"C\""
+    "reference_ids": "R890;R671;R1161;R002",
+    "source_locator": "R890: para 107, Appendix \"C\"; R671: Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -138167,8 +138331,8 @@
     "location_date": "1944-10-26",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 111–113"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: pp. 111–113, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -147146,8 +147310,8 @@
     "location_date": "1944-11-01",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: pp. 120, 122"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: pp. 120, 122, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -155469,8 +155633,8 @@
     "location_date": "1944-11-08",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 123"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: p. 123, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -184374,8 +184538,8 @@
     "location_date": "1944-12-03",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R001",
-    "source_locator": "R671: p. 159"
+    "reference_ids": "R671;R1161;R001",
+    "source_locator": "R671: p. 159, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -213985,6 +214149,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1959,
+     50.2172
+    ]
+   },
+   "properties": {
+    "claim_id": "C9450",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL4180",
+    "location_name": "Buissonville (Rochefort), Namur",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking and taking Buissonville",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R388;R002",
+    "source_locator": "R388: p. 440, 441"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -222504,8 +222709,8 @@
     "location_date": "1945-01-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R882;R002",
-    "source_locator": "R882: Appx C (map), Appx E (map)"
+    "reference_ids": "R882;R671;R1161;R002",
+    "source_locator": "R882: Appx C (map), Appx E (map); R671: Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -242717,8 +242922,8 @@
     "location_date": "1945-01-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 244"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: p. 244, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -267153,8 +267358,8 @@
     "location_date": "1945-02-08",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 258"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: p. 258, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -267686,8 +267891,8 @@
     "location_date": "1945-02-09",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R001",
-    "source_locator": "R671: p. 262"
+    "reference_ids": "R671;R1161;R001",
+    "source_locator": "R671: p. 262, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -276706,8 +276911,8 @@
     "location_date": "1945-02-18",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 267"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: p. 267, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -295452,6 +295657,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C9451",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1945-03-01",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia (outskirts of the town, after crossing the Nord Canal)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "crossing the Nord Canal and reaching the outskirts of Krefeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R538;R002",
+    "source_locator": "R538: p. 174"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.5249,
      49.9733
     ]
@@ -296142,6 +296388,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R776;R829;R002",
     "source_locator": "R776: Annex I,3 (Fold3 image 76); R829: printed p. 7"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.5822,
+     51.5214
+    ]
+   },
+   "properties": {
+    "claim_id": "C9445",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-03-02",
+    "place_id": "PL0549",
+    "location_name": "Walcheren island, Zeeland (still on the Walcheren coast (span, not named on this day))",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "command_change",
+    "current_activity": "Put under the command of Netherlands District (Major-General A. Galloway, headquarters at Tilburg)",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-02",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R676;R894",
+    "source_locator": "R676: On 2 March 1945, the P.I.B. was put under the command of the Netherlands District; R894: p. 477 n. (Walcheren mid-November 1944 to early April 1945)"
    }
   },
   {
@@ -321257,12 +321544,12 @@
     "branch": "Armoured",
     "date": "1945-03-21",
     "place_id": "PL4056",
-    "location_name": "Wamel (West Maas en Waal), Gelderland (Westminster Regiment (Motor))",
+    "location_name": "Wamel (West Maas en Waal), Gelderland (Westminster Regiment (Motor), under 49th Division, Wamel-Dreumel sector)",
     "location_represents": "front_line_point",
     "precision_km": 3,
     "confidence": 0.3,
     "event_type": "relocation",
-    "current_activity": "The Westminster Regiment (Motor) takes over the line at Wamel",
+    "current_activity": "The Westminster Regiment (Motor), under the 49th Division, takes over the line at Wamel and Dreumel",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -321273,8 +321560,8 @@
     "location_date": "1945-03-21",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R886;R782",
-    "source_locator": "R886: para 193"
+    "reference_ids": "R886;R883;R668;R782",
+    "source_locator": "R886: para 193; R883: para 8; R668: p. 567"
    }
   },
   {
@@ -346488,8 +346775,8 @@
     "location_date": "1945-04-11",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 314"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: p. 314, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -347718,8 +348005,8 @@
     "location_date": "1945-04-12",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R671;R002",
-    "source_locator": "R671: p. 314"
+    "reference_ids": "R671;R1161;R002",
+    "source_locator": "R671: p. 314, Appendix IV, pp. 367-368; R1161: designated to 21 Army Group 23.5.1944-31.8.1945"
    }
   },
   {
@@ -366127,8 +366414,8 @@
     "location_date": "1945-04-25",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R676;R002",
-    "source_locator": "R676: section Operation \"Orange\""
+    "reference_ids": "R676;R894;R002",
+    "source_locator": "R676: section Operation \"Orange\"; R894: p. 477 n. (Hedel and Heusden after early April)"
    }
   },
   {
@@ -381545,6 +381832,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R281;R002",
     "source_locator": "R281: section 1"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.2697,
+     52.0749
+    ]
+   },
+   "properties": {
+    "claim_id": "C9446",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "NL-INF-IRNEB",
+    "unit_name": "Royal Netherlands Brigade (Prinses Irene)",
+    "nationality": "Netherlands",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Army",
+    "date": "1945-05-08",
+    "place_id": "PL3529",
+    "location_name": "The Hague (Den Haag), Zuid-Holland (Groenmarkt; official reception by the burgemeester)",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "arrival",
+    "current_activity": "Enters The Hague; officially received by the burgemeester and cheered on the Groenmarkt",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-05-08",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R895;R1159;R1160;R002",
+    "source_locator": "R895: p. 1426 (and illustration list, 8 May 1945 entry into Den Haag); R1159: Capitulatie en afronding; R1160: Bevrijding (3 days after 5 May)"
    }
   },
   {

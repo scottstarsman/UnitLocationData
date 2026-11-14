@@ -19,10 +19,14 @@ next claim also makes an interval [possible].
 Staleness rule (schema/README.md, "Reading a command interval"). Every interval whose end is not sourced also prints a label with the date of
 the last claim that lists it (last_listed_date in build/command_relations.csv) and its end basis, whatever the status. A relationship is
 [certain] only up to that date. For a date AFTER the last listing of a relationship that has no recorded end (valid_to_basis
-open_at_last_claim) the interval is [possible], at any distance: the sources observed it last on that date, and a standing relationship (assigned,
-unspecified_subordination) is carried forward only until a replacement is recorded, a temporary one has an unknown end. The reason names the
-last listing, the number of days since it and that kind of carry-forward. This is the rule already applied to an end inferred from the next
-claim (a date after valid_to_earliest is [possible]); there is no day threshold, and no date is invented. The operational parent is the lowest-echelon holder of operational_control or
+open_at_last_claim) the interval is [possible] for at most OPEN_CARRY_FORWARD_DAYS (90) after that listing: the sources observed it last on that
+date, and a standing relationship (assigned, unspecified_subordination) is carried forward only until a replacement is recorded, a temporary
+one has an unknown end. Beyond 90 days the interval no longer covers the date (the answer is dropped, not a new state). No end date is
+written into the tables; 90 days is the same threshold already used to flag stale-relation repair candidates, chosen because 60 days would
+drop late-war divisions last listed only two months earlier, while 90 days still removes the VE-Day leftover (101 German units answering off
+listings 90+ days old, including June 1944 Kampfgruppen). The reason names the last listing, the number of days since it and that kind of
+carry-forward. This is the rule already applied to an end inferred from the next claim (a date after valid_to_earliest is [possible] within its
+bounded interval); a sourced end is never capped. The operational parent is the lowest-echelon holder of operational_control or
 attached, else of a standing relationship (assigned, unspecified_subordination). The table covers every unit that has a claim (all nationalities,
 the whole period of the data); `organic` relations are not in it. A relation marked [change undated] belongs to one of the parent changes that no
 source dates (change_undated in the master table): the change fell between the previous relation's last listing and this one's first. Where only
@@ -39,6 +43,13 @@ import common  # noqa: E402
 RANK = common.echelon_rank()                    # schema/vocabularies.json, vocabulary echelon_rank
 ACTIVE = common.relationship_group('active')    # schema/vocabularies.json, vocabulary relationship_groups
 STANDING = ('assigned', 'unspecified_subordination')
+
+# An open_at_last_claim interval is answered as [possible] for at most this many days after last_listed_date.
+# Beyond that the interval no longer covers the date. 90 days is the stale-relation repair threshold already
+# used in the command-chain repair (docs/methodology.md, 9 November 2026) and is the value that removes the
+# observed VE-Day leftover (101 German units still answering off listings 90+ days old) without dropping
+# late-war divisions last listed 61-89 days earlier. This is a reading cutoff, not an invented end date.
+OPEN_CARRY_FORWARD_DAYS = 90
 
 
 def status(iv, date, time):
@@ -59,6 +70,8 @@ def status(iv, date, time):
     last = iv.get('last_listed_date', '')
     if iv['valid_to_basis'] == 'open_at_last_claim' and last and date > last:
         days = (datetime.date.fromisoformat(date) - datetime.date.fromisoformat(last)).days
+        if days > OPEN_CARRY_FORWARD_DAYS:
+            return 'no', []   # reading cutoff: do not invent an end date; just stop answering possible
         why.append('after the last claim that lists it (%s, %d day%s earlier); %s' % (
             last, days, '' if days == 1 else 's',
             'a standing relationship, carried forward until a replacement is recorded' if iv['relationship'] in STANDING + ('unknown', 'organic')

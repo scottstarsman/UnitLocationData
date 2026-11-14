@@ -43015,6 +43015,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.0594,
+     48.975
+    ]
+   },
+   "properties": {
+    "claim_id": "C9447",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-08-01",
+    "place_id": "PL4179",
+    "location_name": "Tessy-sur-Vire, Manche",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking from Villebaudon and penetrating Tessy-sur-Vire",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R396;R001",
+    "source_locator": "R396: p. 303, 304"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.19,
      48.9161
     ]
@@ -44730,6 +44771,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R400;R002",
     "source_locator": "R400: p. 391"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.8686,
+     48.82
+    ]
+   },
+   "properties": {
+    "claim_id": "C9448",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-08-06",
+    "place_id": "PL1272",
+    "location_name": "Vire Normandie, Calvados (Hill 219, west of the town)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "command_change",
+    "current_activity": "designated XIX Corps reserve on Hill 219 west of Vire",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1165;R402;R002",
+    "source_locator": "R1165: p. 449, 450, 451; R402: p. 471"
    }
   },
   {
@@ -65189,6 +65271,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: pp. 115, 120"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.0109,
+     49.2871
+    ]
+   },
+   "properties": {
+    "claim_id": "C9449",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-08-25",
+    "place_id": "PL1410",
+    "location_name": "Elbeuf, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking and entering Elbeuf",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-25",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R405;R002",
+    "source_locator": "R405: p. 580"
    }
   },
   {
@@ -214026,6 +214149,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.1959,
+     50.2172
+    ]
+   },
+   "properties": {
+    "claim_id": "C9450",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1944-12-24",
+    "place_id": "PL4180",
+    "location_name": "Buissonville (Rochefort), Namur",
+    "location_represents": "main_body",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "attacking and taking Buissonville",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R388;R002",
+    "source_locator": "R388: p. 440, 441"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      5.5225,
      50.4817
     ]
@@ -295486,6 +295650,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R894;R782",
     "source_locator": "R894: p. 769"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.5667,
+     51.3333
+    ]
+   },
+   "properties": {
+    "claim_id": "C9451",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-CCA-002D",
+    "unit_name": "Combat Command A, 2nd Armored Division",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Armoured",
+    "date": "1945-03-01",
+    "place_id": "PL0420",
+    "location_name": "Krefeld, North Rhine-Westphalia (outskirts of the town, after crossing the Nord Canal)",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.7,
+    "event_type": "attack",
+    "current_activity": "crossing the Nord Canal and reaching the outskirts of Krefeld",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-03-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R538;R002",
+    "source_locator": "R538: p. 174"
    }
   },
   {

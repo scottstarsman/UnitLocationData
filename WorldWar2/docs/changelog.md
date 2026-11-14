@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 14 November 2026 — Combat Command A, 2nd Armored Division, after 28 July 1944 (branch `small-fixes-1113`)
+
+Scott approved adding sourced later claims or relations for Combat Command A, 2nd Armored Division (`US-CCA-002D`) on this branch. The unit had only two claims, the last on 28 July 1944 (`C0515`), so the 90-day cutoff left it unanswered from late October 1944. Official histories already in the references (Blumenson, Cole, MacDonald) name CCA after that date. Wikipedia's 2nd Armored Division article was opened and does not name these CCA actions, so each new row has one source family (the US Army official history).
+
+- **New claims `C9447`–`C9451`:** 1 August 1944 at Tessy-sur-Vire, attached to the 29th Division (`C9447`, Breakout-15 p303-304, `R396`); 6 August on Hill 219 west of Vire as XIX Corps reserve (`C9448`, Breakout-23 p449-451, `R1165`, new, and Breakout-24 p471, `R402`); 25 August entering Elbeuf with the division again (`C9449`, Breakout-28 p580, `R405`); 24 December taking Buissonville (`C9450`, Cole, The Ardennes, ch. 18 p440-441, `R388`); 1 March 1945 reaching the outskirts of Krefeld after crossing the Nord Canal (`C9451`, The Last Offensive ch. 9 p174, `R538`). New places `PL4179` (Tessy-sur-Vire) and `PL4180` (Buissonville). Claim `parent_unit_id` is the 29th Division on `C9447` and XIX Corps on `C9448`; later rows leave it blank because the parent is the organic division (`units.csv` and `CR0176`).
+- **`CR1313`:** attached to the 29th Infantry Division from 1 August to 6 August 1944. Breakout-15 p304 says CCA reverted to 2d Armored Division control on 2 August when Tessy was secured; the same day Breakout-23 p449 has the 29th, with CCA attached, attacking toward Vire, recorded as a same-day mission change rather than a gap.
+- **`CR0177`:** last listed old value 28 July 1944 (`C0515`), new value 6 August 1944 (`C9448`). End still `open_at_last_claim`: the sources show CCA still a separate XIX Corps element on 6 August (the rest of the division left for VII Corps shortly after midnight, 6 August), and they next place CCA with the division at Elbeuf on 25 August, without a reunion day. `C0515` notes were updated to replace the earlier reading that the end of the temporary arrangement was not documented.
+- **who_controls:** the 29th attachment is an active relation for 1-6 August, and the XIX Corps listing now runs 90 days from 6 August rather than from 28 July. After the split, later claims are organic only; `organic` is excluded from who_controls, so Elbeuf, Buissonville and Krefeld do not themselves keep an operational chain in the grid. No assigned-to-division relation was invented to close that gap.
+
+Scenario 265; roadmap 379.
+
 ## 14 November 2026 — Binnenlandse Strijdkrachten unit and Stoottroepen organic parent (branch `small-fixes-1113`)
 
 Scott approved adding Prince Bernhard's Binnenlandse Strijdkrachten (Netherlands Forces of the Interior) as a unit on this branch, so that the Stoottroepen have a sourced administrative/organic superior after the XXX Corps placement of 18 September 1944 could no longer cover the later claims.

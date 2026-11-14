@@ -42,9 +42,9 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | corps | 2 | 0 | 15 | 17 | 7 | 570 |
 | US | division | 0 | 0 | 61 | 61 | 25 | 2229 |
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
-| US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
+| US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 19 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **8** | **0** | **429** | **437** | **268** | **9398** |
+| **All** | | **8** | **0** | **429** | **437** | **268** | **9403** |
 
 ## Operations
 
@@ -53,29 +53,29 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 129 |
-| campaign | 9 | 9 | 7478 |
+| campaign | 9 | 9 | 7483 |
 | operation | 33 | 33 | 875 |
 | battle | 20 | 20 | 599 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9398** |
+| **All** | **75** | **73** | **9403** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4162 places and 202 alias names for 9398 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4164 places and 205 alias names for 9403 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4046 | 9170 |
+| point | 4048 | 9175 |
 | area | 95 | 206 |
 | line | 19 | 22 |
 | sea_position | 2 | 0 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1619 | 3483 |
-| Germany (DE) | 1461 | 3174 |
+| France (FR) | 1620 | 3486 |
+| Germany (DE) | 1461 | 3175 |
 | Netherlands (NL) | 527 | 1541 |
-| Belgium (BE) | 375 | 847 |
+| Belgium (BE) | 376 | 848 |
 | Luxembourg (LU) | 89 | 233 |
 | Austria (AT) | 30 | 48 |
 | Czechia (CZ) | 14 | 22 |

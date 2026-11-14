@@ -83074,7 +83074,7 @@
     "place_id": "PL4170",
     "name": "Offshore Pointe du Hoc, 12,000 yards (Omaha western fire-support area)",
     "alt_names": null,
-    "kind": "area",
+    "kind": "sea_position",
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
@@ -83094,7 +83094,7 @@
     "place_id": "PL4171",
     "name": "Offshore Pointe du Hoc, 1,500 yards",
     "alt_names": null,
-    "kind": "area",
+    "kind": "sea_position",
     "precision_km": 3,
     "country": "FR",
     "region": "Lower Normandy",
@@ -83199,6 +83199,46 @@
     "country": "FR",
     "region": "Lower Normandy",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.5906,
+     50.9475
+    ]
+   },
+   "properties": {
+    "place_id": "PL4177",
+    "name": "Asch Airfield (Y-29), Zutendaal, Limburg",
+    "alt_names": "Asch; Zutendaal Air Base; Y-29",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "BE",
+    "region": "Limburg",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.7319,
+     51.9883
+    ]
+   },
+   "properties": {
+    "place_id": "PL4178",
+    "name": "Münster-Handorf Airfield (Y-94), Münster",
+    "alt_names": "Handorf; Y-94",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Nordrhein-Westfalen",
+    "claims_count": 0
    }
   }
  ]

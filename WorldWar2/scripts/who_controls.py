@@ -6,6 +6,10 @@ Usage: python scripts/who_controls.py US-ARM-002D 1944-08-28
        python scripts/who_controls.py US-ABN-101D 1944-12-20 12:00        (optional HH:MM, 24-hour)
        python scripts/who_controls.py "2nd Armored" 1944-08-28            (matches a substring of the subject name)
 
+For an air or naval unit (not in the main table) the same answer is read from build/other_domains/command_relations.csv and a second block, the
+administrative chain (an administrative_control relation, or an assigned relation while another headquarters holds operational_control or the
+attachment), follows the operational chain; ground answers are unchanged (docs/air_naval_pilot.md section 9.4).
+
 Prints every interval that covers the date, each marked [certain] or [possible: why], then the immediate operational parent
 and the chain above it. Intervals are INCLUSIVE (valid_to is the last day), so on the day one relationship ends and the next
 begins both cover the day; the hour decides, and where no hour is recorded the answer for that level is UNKNOWN rather than a
@@ -83,6 +87,8 @@ def main(argv):
         return 2
     path = os.path.join(common.BUILD_DIR, 'command_relations.csv')
     _h, rows = common.read_dicts(path)
+    other_path = os.path.join(common.BUILD_DIR, 'other_domains', 'command_relations.csv')   # air and naval subjects; consulted only when the main table has no answer
+    other_rows = common.read_dicts(other_path)[1] if os.path.isfile(other_path) else []
     _uh, units = common.read_dicts(common.UNITS_CSV)
     ech = {u['unit_id']: u['echelon'] for u in units}
 
@@ -98,6 +104,11 @@ def main(argv):
         return out
 
     hits = hits_for(who)
+    other_mode = False
+    if not hits and other_rows and not any(not r['higher_unit_id'] and r['subject_unit_id'] == who for r in rows):
+        rows = rows + other_rows   # an air or naval unit: its relations are in build/other_domains/command_relations.csv; ground answers never reach this line
+        hits = hits_for(who)
+        other_mode = bool(hits)
     if not hits:
         holes = [r for r in rows if not r['higher_unit_id'] and (r['subject_unit_id'] == who or who.lower() in r['subject_name'].lower()) and status(r, date, time)[0] != 'no']
         if holes:
@@ -153,6 +164,27 @@ def main(argv):
             break
         seen.add(pick)
         cur_hits = hits_for(pick)
+    if other_mode:   # air and naval: the administrative chain next to the operational one (docs/air_naval_pilot.md section 9.4)
+        print('administrative chain:')
+        cur, seen = who, set()
+        cur_hits = hits
+        for depth in range(5):
+            pool = [h for h in cur_hits if h[0]['relationship'] == 'administrative_control']
+            if not pool and any(h[0]['relationship'] in ACTIVE for h in cur_hits):
+                pool = [h for h in cur_hits if h[0]['relationship'] in STANDING]   # assigned while another headquarters has operational control or the attachment
+            if not pool:
+                if depth == 0:
+                    print('  (none recorded apart from the operational chain)')
+                break
+            low = min(RANK.get(ech.get(h[0]['higher_unit_id'], 'other'), 8) for h in pool)
+            pool = [h for h in pool if RANK.get(ech.get(h[0]['higher_unit_id'], 'other'), 8) == low]
+            h = sorted(pool, key=lambda x: (x[1] != 'yes', x[0]['higher_unit_id']))[0]
+            pad = '  ' * (depth + 1)
+            print('%s%s (%s, %s%s)' % (pad, h[0]['higher_name'], h[0]['relationship'], 'certain' if h[1] == 'yes' else 'possible', ': ' + '; '.join(h[2]) if h[2] else ''))
+            if h[0]['higher_unit_id'] in seen:
+                break
+            seen.add(h[0]['higher_unit_id'])
+            cur_hits = hits_for(h[0]['higher_unit_id'])
     return 0
 
 

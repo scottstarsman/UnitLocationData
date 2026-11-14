@@ -24,8 +24,11 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         data/references_meta.csv by scripts/build_references.py, which build.py calls)
   build/claim_references.csv            claim_id -> reference_id links, one row per link and role (role event | date | location | command_relationship | strength | general; locator = page or section), built from the claims' stored reference_ids
   build/other_domains/claims.csv        claims of air and naval units (data/units.csv domain air or naval), same columns as all_claims.csv; these units
-                                        are left out of every other output here (collected for later use)
-  build/other_domains/units.csv         the air and naval units with their domain
+                                        and the units marked out_of_scope are left out of every other output here (collected for later use; standing rule 22)
+  build/other_domains/units.csv         the air and naval units and the units marked out_of_scope, with domain, scope, ship_type, hull_number and ship_class_id
+                                        (the main units.csv and units.json leave those five columns out)
+  build/other_domains/ship_classes.csv  data/ship_classes.csv: the ship classes (class_id SC###) that naval units link to through ship_class_id
+  build/other_domains/aircraft_types.csv  data/aircraft_types.csv: the aircraft types (type_id AT###) that air units link to through the aircraft object of strength_json
   build/other_domains/command_relations.csv  the derived command relations whose subject is an air or naval unit (same columns as command_relations.csv)
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
 
@@ -126,7 +129,7 @@ def ech_rank(e):
 def coverage(claim_rows):
     """Return (rows for coverage.csv, text of docs/coverage.md)."""
     _h, units = common.read_dicts(common.UNITS_CSV)
-    units = [u for u in units if common.unit_domain(u) == 'ground']
+    units = [u for u in units if common.unit_domain(u) == 'ground' and common.unit_scope(u) == 'in_scope']
     per = {}
     for r in claim_rows:
         d = per.setdefault(r['unit_id'], [])
@@ -239,10 +242,22 @@ def all_claims_json(header, rows):
             '"json_columns":' + json.dumps(sorted(jc)) + ',"claims":[\n' + ',\n'.join(lines) + '\n]}\n').encode('utf-8')
 
 
+def ship_classes_output():
+    """build/other_domains/ship_classes.csv: data/ship_classes.csv with every class row (naval; the classes are the table that ships link to)."""
+    h, rows = common.read_rows(os.path.join(common.ROOT, 'data', 'ship_classes.csv'))
+    return common.csv_bytes(h, rows)
+
+
+def aircraft_types_output():
+    """build/other_domains/aircraft_types.csv: data/aircraft_types.csv with every type row (air; the types are the table that units link to through strength_json aircraft)."""
+    h, rows = common.read_rows(os.path.join(common.ROOT, 'data', 'aircraft_types.csv'))
+    return common.csv_bytes(h, rows)
+
+
 def outputs():
     """Return {relative path: bytes} for every generated file (paths under docs/ are relative to the repository root)."""
     header, rows = common.load_all_claims()
-    other = common.non_ground_unit_ids()   # air and naval units: collected, kept out of the main outputs (units.csv domain)
+    other = common.other_output_unit_ids()   # air and naval units and out_of_scope units: collected, kept out of the main outputs (units.csv domain, scope)
     other_rows = [r for r in rows if r['unit_id'] in other]
     rows = [r for r in rows if r['unit_id'] not in other]
     ops = operations.load()
@@ -267,13 +282,16 @@ def outputs():
     cov_rows, cov_md = coverage(rows)
     out['coverage.csv'] = common.csv_bytes(COVERAGE_HEADER, cov_rows)
     uh, urows = common.read_dicts(common.UNITS_CSV)
-    uh = [c for c in uh if c != 'domain']   # the main units outputs keep their columns; domain is listed in build/other_domains/units.csv
+    uh = [c for c in uh if c not in common.OTHER_ONLY_UNIT_COLUMNS]   # the main units outputs keep their columns; these are listed in build/other_domains/units.csv
     ground = [u for u in urows if u['unit_id'] not in other]
     out.update(coveragemod.outputs(ground, rows))
     units = {u['unit_id']: u for u in ground}
     all_units = {u['unit_id']: u for u in urows}   # every domain: a higher unit of another domain keeps its name in the relation outputs
     out['units.csv'], out['units.json'] = units_outputs((uh, ground))
-    out['other_domains/units.csv'] = common.csv_bytes(uh + ['domain'], [[u[c] for c in uh + ['domain']] for u in urows if u['unit_id'] in other])
+    oh = uh + common.OTHER_ONLY_UNIT_COLUMNS
+    out['other_domains/units.csv'] = common.csv_bytes(oh, [[u[c] for c in oh] for u in urows if u['unit_id'] in other])
+    out['other_domains/ship_classes.csv'] = ship_classes_output()
+    out['other_domains/aircraft_types.csv'] = aircraft_types_output()
     crel = command_relations.load()
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
     out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))

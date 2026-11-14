@@ -51,10 +51,17 @@
       "company": "Company-sized unit (company, battery, squadron of a ground unit), recorded only when a source traces it up the chain to a parent division or higher (Scott, 4 November 2026; for example H Company, 116th Infantry, 29th Division); rank 0, no echelon letter in the id.",
       "battalion": "Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`.",
       "other": "Higher or special headquarters that fit no level above (for example OB West).",
-      "air_force": "Reserved for later: air force, air fleet or air army headquarters (not yet used).",
-      "air_formation": "Reserved for later: air corps, air division, wing, group or squadron (not yet used).",
-      "fleet": "Reserved for later: naval fleet, task force or flotilla headquarters (not yet used).",
-      "naval_unit": "Reserved for later: ship, squadron or other naval unit (not yet used)."
+      "air_squadron": "Air squadron: a Staffel (Luftwaffe), a US squadron or a RAF squadron; a flight is not recorded. Air ladder, rank 20, no id letter (docs/air_naval_pilot.md section 9).",
+      "air_group": "Air group-level unit: a Gruppe (Luftwaffe), a US group, or a RAF WING (the RAF's wing is the level of a US group, as the RAF's group is the level of a US combat wing; the level, not the name, decides). Air ladder, rank 21, no id letter.",
+      "air_wing": "Air wing-level unit: a Geschwader (Luftwaffe), a US combat wing (bomb, fighter or troop carrier wing), or a RAF GROUP (No. 2 Group, No. 11 Group). Air ladder, rank 22, no id letter.",
+      "air_division": "Air division or command: a Jagddivision or Fliegerdivision, a US air division or bomb division, a US command (IX Bomber Command, IX Fighter Command) or tactical air command (IX TAC, XXIX TAC). A RAF tactical group such as No. 83 Group is a RAF group and belongs to air_wing. Air ladder, rank 23, no id letter.",
+      "air_corps": "Air corps: a Fliegerkorps or Jagdkorps (Luftwaffe); a US air corps does not exist in the 1944-45 theater. Air ladder, rank 24, no id letter.",
+      "air_force": "Air force or air fleet: a Luftflotte, a numbered US air force (Eighth, Ninth), a RAF command (Bomber Command, Fighter Command) or the Second Tactical Air Force. Air ladder, rank 25, no id letter.",
+      "naval_unit": "Ship: one vessel, a commissioned combatant of destroyer-escort size or larger, or a single small craft that a source singles out and that traces to a parent (docs/air_naval_pilot.md section 6.1). Naval ladder, rank 10, no id letter.",
+      "naval_division": "Naval division or flotilla: a destroyer division, a minesweeping, S-boat or U-boat flotilla, a landing-craft flotilla or LST group. Naval ladder, rank 11, no id letter.",
+      "naval_squadron": "Naval squadron: a destroyer or cruiser squadron. Naval ladder, rank 12, no id letter.",
+      "task_group": "Task unit, task group or task force (US task organisation; Royal Navy forces such as Force S and Bombarding Force D map here); the sub-label goes in the unit note. A task organisation holds command relations only and normally has no claims (record_status placeholder). Naval ladder, rank 13, no id letter.",
+      "fleet": "Numbered fleet or naval command (Home Fleet, Seventh Fleet, Marinegruppe West). Naval ladder, rank 14, no id letter."
     }
   },
   "branch": {
@@ -78,7 +85,8 @@
       "sector_center": "The centre of the sector or landing zone the unit held or used.",
       "front_line_point": "A representative point on the unit's front line or point of contact.",
       "objective": "The place the unit captured, attacked or defended.",
-      "approach_route": "A point on the unit's march or approach route."
+      "approach_route": "A point on the unit's march or approach route.",
+      "base": "The airfield, port or anchorage a flying or naval unit operates from (a base), as opposed to the target area it acts over (objective). Added in the air-naval schema pass, 13 November 2026."
     }
   },
   "precision_km": {
@@ -125,6 +133,8 @@
       "subordinate_assignment": "A source (a CMH assignment table or an order) lists the unit under a higher headquarters, or lists a headquarters' first subordinate unit, from this date; it says nothing about when command was first exercised or when a headquarters became operational. Use activation only where a source documents the operational start (taking a sector, command or mission).",
       "hq_observation": "A source (a command-post list, situation map or report) records the headquarters at a place on the date; it does not state that the headquarters moved on that date (use hq_move where a dated movement source exists).",
       "redesignation": "The same formation takes a new designation (identity continues; for example XVIII Corps becoming XVIII Airborne Corps).",
+      "commissioning": "A ship or boat is launched, commissioned or taken into service (including transfer to another navy as a new commissioning). Added in the air-naval schema pass, 13 November 2026.",
+      "sortie": "A flying unit's sorties or a ship's or submarine's sortie or patrol from its base (a documented mission flown or sailed, not a relocation of the unit). Added in the air-naval schema pass, 13 November 2026.",
       "other": "Headquarters decisions, air attack on a headquarters, units at their station."
     }
   },
@@ -168,7 +178,8 @@
     "values": {
       "reported_actual": "A unit report or operational count relayed by the source (for example working-order tank returns).",
       "authorized_organization": "Establishment or table-of-organisation strength, not an actual count.",
-      "estimate": "Rounded, approximate or retrospective figure, or a landing tally."
+      "estimate": "Rounded, approximate or retrospective figure, or a landing tally.",
+      "refit": "A dated change of a ship's capabilities from its class figures (a refit); carried in strength_json under capabilities (docs/air_naval_pilot.md section 6.5)."
     }
   },
   "strength_json_vehicle_count_type": {
@@ -310,7 +321,7 @@
     }
   },
   "echelon_rank": {
-    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour).",
+    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, fleet 14) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). The air ladder (air_squadron 20, air_group 21, air_wing 22, air_division 23, air_corps 24, air_force 25) has its own range too, so air ranks never collide with ground (0-8) or naval (10-14) ranks; ranks are by level, so the RAF wing (air_group) and RAF group (air_wing) rank like the US group and combat wing; the hierarchy check applies within the air ladder only (scripts/validate.py air_hierarchy_problem). display_order lists ground echelons only (the main outputs are ground).",
     "values": {
       "squad": 0,
       "platoon": 0,
@@ -322,7 +333,18 @@
       "corps": 5,
       "army": 6,
       "army_group": 7,
-      "other": 8
+      "other": 8,
+      "naval_unit": 10,
+      "naval_division": 11,
+      "naval_squadron": 12,
+      "task_group": 13,
+      "fleet": 14,
+      "air_squadron": 20,
+      "air_group": 21,
+      "air_wing": 22,
+      "air_division": 23,
+      "air_corps": 24,
+      "air_force": 25
     },
     "display_order": [
       "army_group",
@@ -337,7 +359,7 @@
     ]
   },
   "echelon_id_letter": {
-    "description": "The echelon letter that ends a unit_id (`NATION-TYPE-NUMBER` + letter, see schema/README.md, \"unit_id pattern\"). An id that ends in a digit and one of these letters must have the matching echelon (checked by scripts/validate.py); an id that ends otherwise has no echelon letter. The echelons in `no_letter` never carry one: regiments, regiment-sized battle groups and battalions are identified by their type code and name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). Exception: the combat commands `US-CCA-002D` and `US-CCR-004D` (echelon `regiment/battle_group`), whose final `D` is the 2nd and 4th Armored Division in the id and not an echelon letter (`combat_command_pattern`). Ids are opaque and are never renamed to follow this rule.",
+    "description": "The echelon letter that ends a unit_id (`NATION-TYPE-NUMBER` + letter, see schema/README.md, \"unit_id pattern\"). An id that ends in a digit and one of these letters must have the matching echelon (checked by scripts/validate.py); an id that ends otherwise has no echelon letter. The echelons in `no_letter` never carry one: regiments, regiment-sized battle groups and battalions are identified by their type code and name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). Exception: the combat commands `US-CCA-002D` and `US-CCR-004D` (echelon `regiment/battle_group`), whose final `D` is the 2nd and 4th Armored Division in the id and not an echelon letter (`combat_command_pattern`). Ids are opaque and are never renamed to follow this rule. The naval-ladder echelons (naval_exempt) take no id letter, and a final letter on the id of such a unit is not an echelon letter (GER-MGW-000H, Marinegruppe West, is echelon fleet; ids are opaque and never renamed). The air-ladder echelons (air_exempt) take no id letter either: GER-JGK-002C (II Jagdkorps), GER-FLK-002C, GER-LFL-003A and US-TAC-009C keep their final letters, which are not echelon letters.",
     "values": {
       "army_group": "G",
       "army": "A",
@@ -351,7 +373,22 @@
       "battalion",
       "company"
     ],
-    "combat_command_pattern": "^[A-Z]+-CC[A-Z]-[0-9]+D$"
+    "combat_command_pattern": "^[A-Z]+-CC[A-Z]-[0-9]+D$",
+    "naval_exempt": [
+      "naval_unit",
+      "naval_division",
+      "naval_squadron",
+      "task_group",
+      "fleet"
+    ],
+    "air_exempt": [
+      "air_squadron",
+      "air_group",
+      "air_wing",
+      "air_division",
+      "air_corps",
+      "air_force"
+    ]
   },
   "relationship_groups": {
     "description": "Groups of command-relationship values used by the checks and the derived tables (single source for scripts/validate.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py).",
@@ -447,7 +484,8 @@
     "values": {
       "point": "A named settlement or site: a town, village, hamlet, château, hill or station.",
       "area": "A named area, sector, beach, zone, bridgehead or other stretch of ground, represented by one point (usually the centre of the town or place it is geocoded to).",
-      "line": "A front, defensive line, axis of advance or route, represented by one point on it."
+      "line": "A front, defensive line, axis of advance or route, represented by one point on it.",
+      "sea_position": "A point at sea: a ship or submarine position given by a source, or worked from an anchor place, a distance and a bearing (say how in coord_source_note). Claims at a sea_position place are capped at confidence 0.5 (scripts/validate.py). The country is the nearest coast. Added in the air-naval schema pass, 13 November 2026."
     }
   },
   "country": {
@@ -513,6 +551,75 @@
       "reconstitution_from_remnants": "The predecessor was destroyed or broken up and the successor was formed with its remnants (usually together with a new or forming formation), as the source states.",
       "absorbed_into": "The predecessor (for example a division still forming) was merged into or renamed as the successor and ceased to exist on its own.",
       "formed_from_remnants": "A different kind of formation was formed from the remnants of the predecessor (for example a panzer brigade formed from the remnants of a panzergrenadier division)."
+    }
+  },
+  "scope": {
+    "description": "Scope marker of a unit in data/units.csv (column scope; blank means in_scope). Standing rule 22 (Scott, 13 November 2026): a claim is recorded even when its unit is outside the current scope (any domain, front or period). Out-of-scope units, their claims and their command relations stay out of the main outputs and the who_controls grid and are written to build/other_domains/.",
+    "values": {
+      "in_scope": "The unit is inside the current scope (the default; blank means in_scope). Ground units in scope feed the main outputs.",
+      "out_of_scope": "The unit is outside the current scope (another front or period, another domain). Collected for later; its coverage and balance figures are incidental, not surveyed."
+    }
+  },
+  "ship_type": {
+    "description": "Ship type of a unit with echelon naval_unit (column ship_type of data/units.csv and of data/ship_classes.csv): US hull classification codes with plain-English labels. National terms (Torpedoboot, escort destroyer, Panzerschiff) stay in the unit or class note. Added in the air-naval schema pass, 13 November 2026; docs/air_naval_pilot.md section 6.3.",
+    "values": {
+      "BB": "battleship",
+      "BC": "battlecruiser",
+      "CV": "fleet aircraft carrier",
+      "CVL": "light aircraft carrier",
+      "CVE": "escort carrier",
+      "CA": "heavy cruiser (also the German Panzerschiff, noted)",
+      "CL": "light cruiser",
+      "DD": "destroyer",
+      "DE": "destroyer escort (also the Royal Navy escort destroyer, for example the Hunt class)",
+      "PF": "frigate",
+      "CORV": "corvette",
+      "TB": "torpedo boat",
+      "PG": "gunboat or sloop (Royal Navy sloops, patrol gunboats)",
+      "CM": "minelayer",
+      "AM": "minesweeper (fleet minesweepers entered singly)",
+      "SS": "submarine (any navy; midget submarines too, noted)"
+    }
+  },
+  "ship_capability_key": {
+    "description": "Keys of the capabilities_json object of data/ship_classes.csv and of the capabilities object inside strength_json of a naval claim (a refit). Each key holds {value, unit, reference_id, note}; a key is absent when no source gives it.",
+    "values": {
+      "standard_displacement": "Displacement as the source states it, with its qualifier in the value (standard and full load for surface ships; surfaced and submerged for submarines).",
+      "speed": "Speed as the source states it (design speed; surfaced and submerged for submarines).",
+      "main_armament": "Main guns.",
+      "secondary_armament": "Secondary guns.",
+      "anti_aircraft": "Anti-aircraft armament.",
+      "torpedo_tubes": "Torpedo tubes.",
+      "aircraft": "Aircraft carried.",
+      "complement": "Crew."
+    }
+  },
+  "aircraft_role": {
+    "description": "Main role of an aircraft type (data/aircraft_types.csv role). Jet propulsion is not a role: a jet fighter is a fighter.",
+    "values": {
+      "fighter": "Day fighter or interceptor, including jet fighters.",
+      "night_fighter": "Night or all-weather fighter.",
+      "fighter_bomber": "Fighter used mainly for ground attack and bombing (Typhoon, P-47D in that role, Fw 190F).",
+      "ground_attack": "Purpose-built ground-attack or dive-bomber aircraft (Ju 87, Hs 129).",
+      "light_bomber": "Light or attack bomber (A-20, A-26, Mosquito bomber, Ar 234).",
+      "medium_bomber": "Medium bomber (B-25, B-26, Ju 88, Do 217, Wellington).",
+      "heavy_bomber": "Heavy or four-engined bomber (B-17, B-24, Lancaster, Halifax, Stirling, He 177).",
+      "reconnaissance": "Reconnaissance aircraft or photo-reconnaissance variant.",
+      "transport": "Transport or troop carrier (C-47, C-46, Ju 52).",
+      "glider": "Troop or cargo glider (CG-4A, Horsa, Hamilcar, Go 242).",
+      "liaison": "Liaison, air observation post or army cooperation aircraft (L-4, Auster, Fi 156).",
+      "maritime_patrol": "Maritime patrol, anti-submarine or flying-boat aircraft."
+    }
+  },
+  "aircraft_performance_key": {
+    "description": "Keys of the performance_json object of data/aircraft_types.csv. Each key holds {value, unit, reference_id, note}; a key is absent when no source gives it.",
+    "values": {
+      "max_speed": "Maximum speed with the altitude or weight the source gives.",
+      "range": "Range as the source states it (ferry or combat range named in the value or note).",
+      "service_ceiling": "Service ceiling.",
+      "armament": "Fixed guns and cannon (the source wording).",
+      "bomb_load": "Bomb or other external load.",
+      "crew": "Crew number or the crew list as the source gives it."
     }
   }
 }

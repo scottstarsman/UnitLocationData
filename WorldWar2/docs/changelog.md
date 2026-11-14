@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 13 November 2026 — CR1303 re-check against the full NHHC Operation NEPTUNE ch. 9 page (branch `small-fixes-1113`)
+
+The air-naval pilot had entered `CR1303` (HMS Warspite assigned to Bombarding Force D, `UK-BF-D`, from 6 June 1944, end open) from a search snippet of NHHC Operation NEPTUNE ch. 9, because the earlier fetch of the page had been cut off (roadmap 375 (g)). The full chapter was re-read on 13 November 2026 from [the NHHC page](https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/o/operation-neptune-invasion-normandy/chapter-9-neptune-assaults.html) (already `R902`).
+
+- **Relation confirmed, values unchanged.** Type `assigned`, superior `UK-BF-D`, start 1944-06-06 (`claim_date` / `inferred`), end open (`open_at_last_claim`). Evidence remains `C9426` (`observed_during`). The chapter does not date the end of the assignment.
+- **The confirming passages.** Ch. 9 para 63: Warspite was already anchored in her bombarding position with Ramillies, Roberts and Arethusa as Force S approached the lowering position. Section E, "Force S — SWORD Area", p. 553 n. 2, the FORCE S table: Bombarding Force D lists Warspite under Mauritius (flag of Rear Admiral Patterson), with Ramillies, Roberts, Arethusa, Frobisher, Dragon and Danae. Paras 65-66 describe Warspite in the bombarding squadron and "the cruisers of Force D".
+- **Notes.** `CR1303` note: old value cited "NHHC Operation NEPTUNE ch. 9, read from a search snippet only; the page was cut off in the fetch"; new value cites the full page (section E, p. 553 n. 2 and para 63). `C9426` `source_locator`: old value "R902: ch. 9 para 63 (anchored in bombarding position)"; new value the same plus "and p. 553 n. 2 (FORCE S table: Warspite in Bombarding Force D)". `UK-BF-D` unit note: the composition and the support to Assault Force S are confirmed from the same table. Reason for all three: the full chapter was re-read and confirms what the snippet had been used for.
+- **Not entered.** The FORCE S table presents Bombarding Force D as a component of Force S. No relation from `UK-BF-D` to `UK-TF-S` is added, because both units are placeholders with no evidence claim (the same reason `CR1296`, `CR1299` and `CR1300` were dropped in the pilot). That can wait for the Normandy pass, when those units get claims.
+- **No new ids**, no semantic-test scenario (the relation itself did not change), no grid change expected (naval units are in `build/other_domains/`). Next free remains `C9444`, `PL4179`, `R1159`, `CR1310`, scenario 259, roadmap 376.
+
 ## 13 November 2026 — 1944-45 aircraft variants (branch `air-naval-schema`, added to PR #90)
 
 Scott approved adding the missing 1944-45 variants on this branch (13 November 2026, "Go ahead and add those variants to this branch"). 32 new rows `AT103`-`AT134` and 11 new references `R1148`-`R1158`. Old value of each new row and reference: none; new value: the row. Details in `docs/air_naval_pilot.md` section 9.2.

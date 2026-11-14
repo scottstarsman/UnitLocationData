@@ -31,6 +31,16 @@ attached, else of a standing relationship (assigned, unspecified_subordination).
 the whole period of the data); `organic` relations are not in it. A relation marked [change undated] belongs to one of the parent changes that no
 source dates (change_undated in the master table): the change fell between the previous relation's last listing and this one's first. Where only
 an explicit `unknown` placeholder (no higher unit named by any source) covers the date, the answer says so. Standard library only.
+
+Organic fallback (14 November 2026). Before this rule a unit whose only relation on a date was `organic` (a combat command, a Kampfgruppe, a regiment of
+its own division) had no operational answer, because `organic` is not in build/command_relations.csv. Now, at any level of the chain where NO non-organic
+relation of any kind (operational_control, attached, assigned, unspecified_subordination, reserve, administrative_control, unknown with a named higher
+unit, ...) covers the date, the lookup falls back to the unit's organic parent, read from build/organic_relations.csv (the preferred `organic` relations,
+same columns and the same staleness rule, including OPEN_CARRY_FORWARD_DAYS, as every other interval), and goes on up the chain from that parent as
+normal (the parent may itself fall back). An explicit non-organic relation always wins, even a [possible] one; the fallback never mixes with it. A
+fallback answer is marked: the interval line ends [organic_fallback: ...] and the chain level reads "(organic_fallback, certain|possible)" instead of the
+relationship, so it cannot be mistaken for a sourced operational link. An explicit `unknown` placeholder without a higher unit is not a superior and does
+not block the fallback; it is printed as a note. The fallback adds no data: the organic relation is the sourced fact, only the lookup rule changed.
 """
 import datetime
 import os
@@ -50,6 +60,9 @@ STANDING = ('assigned', 'unspecified_subordination')
 # observed VE-Day leftover (101 German units still answering off listings 90+ days old) without dropping
 # late-war divisions last listed 61-89 days earlier. This is a reading cutoff, not an invented end date.
 OPEN_CARRY_FORWARD_DAYS = 90
+
+# Basis printed for a chain level that is answered from the organic parent because no non-organic relation covers the date.
+ORGANIC_FALLBACK = 'organic_fallback'
 
 
 def status(iv, date, time):
@@ -102,12 +115,14 @@ def main(argv):
     _h, rows = common.read_dicts(path)
     other_path = os.path.join(common.BUILD_DIR, 'other_domains', 'command_relations.csv')   # air and naval subjects; consulted only when the main table has no answer
     other_rows = common.read_dicts(other_path)[1] if os.path.isfile(other_path) else []
+    organic_path = os.path.join(common.BUILD_DIR, 'organic_relations.csv')   # the preferred organic relations; consulted only for the organic fallback
+    organic_rows = common.read_dicts(organic_path)[1] if os.path.isfile(organic_path) else []
     _uh, units = common.read_dicts(common.UNITS_CSV)
     ech = {u['unit_id']: u['echelon'] for u in units}
 
-    def hits_for(uid_or_name):
+    def hits_for(uid_or_name, source=None):
         out = []
-        for r in rows:
+        for r in (rows if source is None else source):
             if not r['higher_unit_id']:
                 continue   # explicit unknown placeholders are reported separately
             if r['subject_unit_id'] == uid_or_name or (uid_or_name.lower() in r['subject_name'].lower() and not uid_or_name.startswith(('US-', 'UK-', 'GER-', 'CAN-'))):
@@ -116,14 +131,18 @@ def main(argv):
                     out.append((r, st, why))
         return out
 
+    def organic_hits_for(uid_or_name):
+        return hits_for(uid_or_name, organic_rows)
+
     hits = hits_for(who)
     other_mode = False
     if not hits and other_rows and not any(not r['higher_unit_id'] and r['subject_unit_id'] == who for r in rows):
         rows = rows + other_rows   # an air or naval unit: its relations are in build/other_domains/command_relations.csv; ground answers never reach this line
         hits = hits_for(who)
         other_mode = bool(hits)
-    if not hits:
-        holes = [r for r in rows if not r['higher_unit_id'] and (r['subject_unit_id'] == who or who.lower() in r['subject_name'].lower()) and status(r, date, time)[0] != 'no']
+    holes = [r for r in rows if not r['higher_unit_id'] and (r['subject_unit_id'] == who or who.lower() in r['subject_name'].lower()) and status(r, date, time)[0] != 'no']
+    fallback_hits = [] if hits else organic_hits_for(who)   # organic fallback: only where no non-organic relation covers the date
+    if not hits and not fallback_hits:
         if holes:
             for r in holes:
                 print('%s on %s: no higher headquarters is recorded; relation %s is an explicit unknown (%s to %s): %s' % (
@@ -139,7 +158,10 @@ def main(argv):
             print('activity: ' + _act.describe(_a))
     except ImportError:
         pass
-    for r, st, why in sorted(hits, key=lambda h: (h[0]['relationship'], h[0]['higher_unit_id'])):
+    if fallback_hits:
+        for r in holes:   # an explicit unknown placeholder names no superior, so it does not block the fallback; say that it exists
+            print('note: relation %s is an explicit unknown (%s to %s): %s' % (r['relation_id'], r['valid_from'], r['valid_to'] or 'open', r['note']))
+    for r, st, why in sorted(hits or fallback_hits, key=lambda h: (h[0]['relationship'], h[0]['higher_unit_id'])):
         label = ''
         if r['valid_to_basis'] == 'inferred_from_next_claim':
             label = ' [last listed %s; end inferred from next claim]' % (r['last_listed_date'] or r['valid_to_earliest'])
@@ -149,14 +171,21 @@ def main(argv):
             r['subject_unit_id'], r['higher_name'], r['relationship'], r['valid_from'], (' ' + r['valid_from_time']) if r['valid_from_time'] else '',
             r['valid_to'] or 'open', (' ' + r['valid_to_time']) if r['valid_to_time'] else '', r['support'],
             r['valid_to_basis'] or r['valid_from_basis'], r['source_claim_ids'],
-            'certain' if st == 'yes' else 'possible', (': ' + '; '.join(why)) if st == 'possible' else '', label))
+            'certain' if st == 'yes' else 'possible', (': ' + '; '.join(why)) if st == 'possible' else '', label + (
+                ' [%s: no operational, attachment or other non-organic relation covers this date]' % ORGANIC_FALLBACK if fallback_hits else '')))
 
     # operational chain: lowest-echelon holder of operational_control/attached, else of a standing relationship
     print('operational chain:')
     cur, seen = who, set()
     cur_hits = hits
+    cur_fallback = fallback_hits
     for depth in range(5):
-        pool = [h for h in cur_hits if h[0]['relationship'] in ACTIVE] or [h for h in cur_hits if h[0]['relationship'] in STANDING]
+        fb = False
+        if cur_hits:
+            pool = [h for h in cur_hits if h[0]['relationship'] in ACTIVE] or [h for h in cur_hits if h[0]['relationship'] in STANDING]
+        else:   # no non-organic relation covers this level on the date: the organic parent stands in (marked organic_fallback)
+            pool = cur_fallback
+            fb = bool(pool)
         if not pool:
             break
         low = min(RANK.get(ech.get(h[0]['higher_unit_id'], 'other'), 8) for h in pool)
@@ -171,12 +200,13 @@ def main(argv):
             break
         pick = sure[0] if sure else ids[0]
         h = [x for x in pool if x[0]['higher_unit_id'] == pick][0]
-        print('%s%s (%s, %s%s)' % (pad, names[pick], h[0]['relationship'], 'certain' if h[1] == 'yes' else 'possible',
+        print('%s%s (%s, %s%s)' % (pad, names[pick], ORGANIC_FALLBACK if fb else h[0]['relationship'], 'certain' if h[1] == 'yes' else 'possible',
                                    ': ' + '; '.join(h[2]) if h[2] else ''))
         if pick in seen or not pick:
             break
         seen.add(pick)
         cur_hits = hits_for(pick)
+        cur_fallback = [] if cur_hits else organic_hits_for(pick)
     if other_mode:   # air and naval: the administrative chain next to the operational one (docs/air_naval_pilot.md section 9.4)
         print('administrative chain:')
         cur, seen = who, set()

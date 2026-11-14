@@ -20,7 +20,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | Germany | army_group | 0 | 0 | 4 | 4 | 3 | 67 |
 | Germany | army | 0 | 0 | 17 | 17 | 10 | 344 |
 | Germany | corps | 1 | 0 | 46 | 47 | 41 | 846 |
-| Germany | division | 0 | 0 | 135 | 135 | 112 | 2611 |
+| Germany | division | 0 | 0 | 135 | 135 | 112 | 2612 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 96 |
 | Germany | regiment/battle_group | 0 | 0 | 36 | 36 | 3 | 82 |
 | Germany | battalion | 0 | 0 | 7 | 7 | 0 | 11 |
@@ -43,7 +43,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 14 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **7** | **0** | **429** | **436** | **267** | **9395** |
+| **All** | | **7** | **0** | **429** | **436** | **267** | **9396** |
 
 ## Operations
 
@@ -52,26 +52,26 @@ Generated from `data/operations.csv` and the claims' `operation_id`. Per-operati
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 129 |
-| campaign | 9 | 9 | 7475 |
+| campaign | 9 | 9 | 7476 |
 | operation | 33 | 33 | 875 |
 | battle | 20 | 20 | 599 |
 | phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9395** |
+| **All** | **75** | **73** | **9396** |
 
 ## Places
 
-Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4162 places and 202 alias names for 9395 claims.
+Generated from `data/places.csv` and the claims' `place_id`. Per-place detail (aliases, claim and unit counts, first and last claim date) is in `build/places.csv`; `build/places.geojson` has one point per place. 4162 places and 202 alias names for 9396 claims.
 
 | kind | Places | Claims |
 |---|---:|---:|
-| point | 4046 | 9167 |
+| point | 4046 | 9168 |
 | area | 95 | 206 |
 | line | 19 | 22 |
 | sea_position | 2 | 0 |
 
 | country | Places | Claims |
 |---|---:|---:|
-| France (FR) | 1619 | 3482 |
+| France (FR) | 1619 | 3483 |
 | Germany (DE) | 1461 | 3174 |
 | Netherlands (NL) | 527 | 1539 |
 | Belgium (BE) | 375 | 847 |

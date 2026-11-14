@@ -30076,7 +30076,7 @@
     "date": "1944-07-17",
     "place_id": "PL0526",
     "location_name": "Maltot (Maltot area, one Kampfgruppe only)",
-    "location_represents": "main_body",
+    "location_represents": "sector_center",
     "precision_km": 5,
     "confidence": 0.5,
     "event_type": "regroup",
@@ -30216,6 +30216,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R892;R002",
     "source_locator": "R892: paras 41, 131, 151"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.069,
+     49.075
+    ]
+   },
+   "properties": {
+    "claim_id": "C9444",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-012D",
+    "unit_name": "12th SS Panzer Division Hitlerjugend",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Waffen-SS",
+    "date": "1944-07-17",
+    "place_id": "PL4067",
+    "location_name": "Mézidon (Mézidon-Canon), Calvados (in reserve near Mézidon)",
+    "location_represents": "sector_center",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "in reserve near Mézidon, under orders to move to the Lisieux-Pont l'Évêque area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-17",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R892;R782",
+    "source_locator": "R892: para 131 (German situation map of 17 July, used with AHQ Report No. 50)"
    }
   },
   {
@@ -58903,7 +58944,7 @@
     "precision_km": 5,
     "confidence": 0.5,
     "event_type": "withdrawal",
-    "current_activity": "12th SS Panzer Division infantry group under Meyer crosses the Dives between Chambois and St. Lambert",
+    "current_activity": "12th SS Panzer Division infantry group crosses the Dives between Chambois and St. Lambert",
     "operation_id": "OP-FALAISE",
     "operation": "Battle of the Falaise Pocket",
     "operation_type": "battle",
@@ -58914,8 +58955,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R404;R001",
-    "source_locator": "R404: p. 550, 540"
+    "reference_ids": "R404;R278;R001",
+    "source_locator": "R404: p. 550, 540; R278: Kommandeure"
    }
   },
   {
@@ -321257,12 +321298,12 @@
     "branch": "Armoured",
     "date": "1945-03-21",
     "place_id": "PL4056",
-    "location_name": "Wamel (West Maas en Waal), Gelderland (Westminster Regiment (Motor))",
+    "location_name": "Wamel (West Maas en Waal), Gelderland (Westminster Regiment (Motor), under 49th Division, Wamel-Dreumel sector)",
     "location_represents": "front_line_point",
     "precision_km": 3,
     "confidence": 0.3,
     "event_type": "relocation",
-    "current_activity": "The Westminster Regiment (Motor) takes over the line at Wamel",
+    "current_activity": "The Westminster Regiment (Motor), under the 49th Division, takes over the line at Wamel and Dreumel",
     "operation_id": "OP-CAMP-RHINELAND",
     "operation": "Rhineland campaign",
     "operation_type": "campaign",
@@ -321273,8 +321314,8 @@
     "location_date": "1945-03-21",
     "location_basis": "representative_point",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R886;R782",
-    "source_locator": "R886: para 193"
+    "reference_ids": "R886;R883;R668;R782",
+    "source_locator": "R886: para 193; R883: para 8; R668: p. 567"
    }
   },
   {

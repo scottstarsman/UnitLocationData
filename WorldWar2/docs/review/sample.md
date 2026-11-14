@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 1306)
+## Part 2: command relations (20 of 1308)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -872,18 +872,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C8567 (US-INF-035D, 1945-04-13) | asserts_start_and_end | 1945-04-13 | 1945-04-15 | CMH ETO-OB assignment table, Corps column: "XIX (Opns)" (row 13 Apr 45) | R350 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/35ID-ETO.htm [Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr] |
 
-### R18. CR1147: 35th Infantry Division -> XIII Corps (administrative_control)
-
-- **Subject / higher unit:** `US-INF-035D` / `US-COR-013C`
-- **Interval:** from 1945-04-13 (assignment_table) to 1945-04-15 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Corps column: "XIII (Adm)" from the row of 13 Apr 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); valid_to is the day before the first row that no longer lists it (16 Aor 45). The table qualifies the entry (Adm), so the relationship is administrative_control. Added in the command-chain repair, wf-health-fixes, 9 November 2026, approved by Scott: old value none (no relation), new value this relation; reason: the chain after th [...]
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C8567 (US-INF-035D, 1945-04-13) | asserts_start_and_end | 1945-04-13 | 1945-04-15 | CMH ETO-OB assignment table, Corps column: "XIII (Adm)" (row 13 Apr 45) | R350 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/35ID-ETO.htm [Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr] |
-
-### R19. CR1216: 1st Canadian Armoured Brigade -> I Canadian Corps (unspecified_subordination)
+### R18. CR1216: 1st Canadian Armoured Brigade -> I Canadian Corps (unspecified_subordination)
 
 - **Subject / higher unit:** `CAN-ARM-001B` / `CAN-COR-001C`
 - **Interval:** from 1945-04-12 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -895,7 +884,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C7616 (CAN-ARM-001B, 1945-04-12) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 570] |
   | C7688 (CAN-ARM-001B, 1945-04-18) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 581]; R883 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq039.pdf [para 113] |
 
-### R20. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
+### R19. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
 
 - **Subject / higher unit:** `NL-INF-IRNEB` / `UK-ARMY-002A`
 - **Interval:** from 1944-09-04 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status alternate
@@ -905,4 +894,16 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C9383 (NL-INF-IRNEB, 1944-09-04) | asserts_start | 1944-09-04 | - | Attached to the British Second Army on 4 September and then ordered from the Seine area to Brussels (de Jong, p. 268, footnote 4) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 268, footnote 4] |
+
+### R20. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
+
+- **Subject / higher unit:** `NL-INF-BEWAK` / `NL-BS-000H`
+- **Interval:** from 1944-09-22 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
+- **Note:** The Bewakingstroepen der Binnenlandse Strijdkrachten are the guard arm of the BS, organised in the same 22 September 1944 split (de Jong, deel 10a, pp. 561-563, R894; C9389). Organic. End left open at the last linked claim (C9393, the early May 1945 London return). Review (branch small-fixes-1113, 14 November 2026, approved by Scott): old value none, new value this relation.
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C9389 (NL-INF-BEWAK, 1944-09-22) | asserts_start | 1944-09-22 | - | Van Houten gives command of the Bewakingstroepen der BS to van Dijk in the same 22 September split (de Jong, pp. 561-563) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 561-563] |
+  | C9393 (NL-INF-BEWAK, 1945-05-01) | observed_during | - | - | London war-department return for early May 1945 still reports Bewakingstroepen in the liberated south (de Jong, pp. 757-758) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 757-758] |
 

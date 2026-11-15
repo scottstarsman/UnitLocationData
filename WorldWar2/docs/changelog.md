@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (e) batch 2: allegiance rows for the Allies (branch `leftovers-1115`, sixth commit; roadmap 385, Scott t421u)
+
+Old value: 25 codes, 34 allegiance rows. New value: **32 codes and 44 rows**: new codes `BRA`, `CHN`, `GRE`, `IND`, `PHL`, `SOV`, `YUG` (documented in `schema/README.md`), Wikipedia references `R1226`-`R1233`. Reason: Scott t421u. Yugoslavia has four rows in 1941 (neutral, Axis 25 and 26 March, a blank, Allied from 6 April). Blanks and uncertain days are in each row note and in roadmap 385 (USSR before 22 June 1941; India's day uncertain; Mexico and Ethiopia not entered because no day was found on a page read). Scenario 279. Batch 3 (neutrals, Vichy France, Iran, Iraq) is not done.
+
 ## 15 November 2026 — leftovers, task (e) batch 1: allegiance rows for the Axis and Axis-aligned states (branch `leftovers-1115`, fifth commit; roadmap 385, Scott t421u)
 
 Old value: `data/nationalities.csv` had 16 codes and `data/nation_allegiance.csv` 21 rows. New value: **25 codes and 34 rows**: new codes `BUL`, `FIN`, `HUN`, `JPN`, `MCK`, `NDH`, `ROM`, `SVK`, `THA` (documented in `schema/README.md`) with 13 dated rows (Axis from the Tripartite Pact dates for Japan, Hungary, Romania, Slovakia and Bulgaria; Croatia from its proclamation; Thailand neutral then Axis from the alliance of 21 December 1941; Manchukuo; the side switches of Romania, 23 August 1944, Bulgaria, 8 September 1944, and Finland, 15 September 1944). Reason: Scott t421u (all countries, all theaters). Ten Wikipedia references `R1216`-`R1225`; no official text was read in this batch, the Avalon armistice texts for Romania, Bulgaria and Hungary are not yet added. **Blanks, not guesses:** see roadmap 385. Scenario 278. Batches 2 (Allies) and 3 (neutrals) are not done.

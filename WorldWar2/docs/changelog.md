@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (e) batch 1: allegiance rows for the Axis and Axis-aligned states (branch `leftovers-1115`, fifth commit; roadmap 385, Scott t421u)
+
+Old value: `data/nationalities.csv` had 16 codes and `data/nation_allegiance.csv` 21 rows. New value: **25 codes and 34 rows**: new codes `BUL`, `FIN`, `HUN`, `JPN`, `MCK`, `NDH`, `ROM`, `SVK`, `THA` (documented in `schema/README.md`) with 13 dated rows (Axis from the Tripartite Pact dates for Japan, Hungary, Romania, Slovakia and Bulgaria; Croatia from its proclamation; Thailand neutral then Axis from the alliance of 21 December 1941; Manchukuo; the side switches of Romania, 23 August 1944, Bulgaria, 8 September 1944, and Finland, 15 September 1944). Reason: Scott t421u (all countries, all theaters). Ten Wikipedia references `R1216`-`R1225`; no official text was read in this batch, the Avalon armistice texts for Romania, Bulgaria and Hungary are not yet added. **Blanks, not guesses:** see roadmap 385. Scenario 278. Batches 2 (Allies) and 3 (neutrals) are not done.
+
 ## 15 November 2026 — leftovers, task (d): official sources for the allegiance dates (branch `leftovers-1115`, fourth commit; roadmap 384, Scott t420u)
 
 Primary or official texts (Avalon Project, FRUS, Hansard) were added to the `reference_ids` of 22 rows of `data/nation_allegiance.csv` next to the Wikipedia references (none removed); 14 new references `R1200`-`R1208` and `R1210`-`R1215` (the Berlin surrender act is the existing `R666`). Each row note carries old value (reference list), new value and reason.

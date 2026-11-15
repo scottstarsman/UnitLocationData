@@ -2,6 +2,19 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (c): Armeegruppe Student leftovers (branch `leftovers-1115`, third commit; roadmap 351, Scott t419u)
+
+Sources: FMS B-084, B-453 (Langhaeuser), B-762 (Prittwitz), B-414 (Geyer), B-283 and B-361 (Blumentritt) through the private notes with printed pages (all FMS manuscripts are one source family), CMH The Last Offensive ch. 17 (`R567`), Lexikon der Wehrmacht, II. Fallschirm-Korps (`R266`). Old value / new value / reason are in each record's note.
+
+- **`CR0787`** (6th Parachute Division -> XLVII Panzer Corps): `valid_to` old value blank, new **1945-03-10** (narrative), earliest end new 1945-03-04; reason: B-084 p. 16 (4 March) and B-453 pp. 1-2 (under the II Parachute Corps about 11 March).
+- **`CR1322` (new)** 6th Parachute Division -> II Parachute Corps (`GER-FJ-002C`), unspecified_subordination, from 1945-03-11 (narrative), end between 1945-03-25 and 1945-04-02; **`CR1323` (new)** -> LXXXVIII Corps (`GER-COR-088C`), from 1945-03-26 with latest start 1945-04-03, open at the last claim. Two readings kept (B-453 about 26 March; B-762 30 March-3 April); the overlap is listed in `command_relation_overlaps.csv` (transfer_dates_differ). No direct relation to Armeegruppe Student.
+- **`C8005`, `C8010`, `C7835`:** `parent_unit_id` old value blank, new values `GER-FJ-002C`, `GER-COR-088C`, `GER-COR-088C`; date, place and confidence unchanged.
+- **`CR1314`** end old blank, new **1945-04-06** (earliest 1945-04-02); **`CR1316`** end old blank, new **1945-04-10** (earliest 1945-04-02); links `C9453` and `C7969` now `asserts_start_and_end`. Reason: B-414 pp. 24-26 (staff given the Weser defence 6 April; Student to the First Parachute Army 10 April).
+- **`CR0606`** (II Parachute Corps -> First Parachute Army) stays open; new claim **`C9463`** (Lexikon, April 1945, 0.3, parent `GER-FJA-001A`) linked as observed_during. New link rows are appended at the end of `command_relation_claims.csv`.
+- **Lineage `UL026`** `GER-AG-STUDT` -> `GER-ARMY-BLUMT`, redesignation, 1945-04-06 (narrative; B-283 p. 103, B-414, B-361, CMH); `GER-ARMY-BLUMT` `formed_date` old blank, new 1945-04-06; both unit notes updated.
+- **Tests:** scenario 276 added; scenario 269 (CR1314 and CR1316 no longer open) and scenario 136 (C7835 now has a parent) adjusted with old value, new value and reason in the code.
+- **Not resolved:** the day the II Parachute Corps passed from the group to the First Parachute Army (2-10 April); the day the 6th Parachute Division moved to the LXXXVIII Corps (26 March-3 April); no second source family for these dates.
+
 ## 15 November 2026 — leftovers, task (b): CR0950 re-checked, II Corps relation CR1321 (branch `leftovers-1115`, second commit; roadmap 352, Scott t418u)
 
 The source (de Lattre, The History of the French First Army, `R686`) is a borrow-only scan. Its full text cannot be fetched (HTTP 401) and I cannot drive the viewer, so the re-check used the private pass-2 notes (paraphrase with printed pages) of pp. 397-459; the book was **not re-opened**. Every row says so.

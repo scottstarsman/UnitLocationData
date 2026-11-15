@@ -352155,6 +352155,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7072,
+     53.1009
+    ]
+   },
+   "properties": {
+    "claim_id": "C9463",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FJ-002C",
+    "unit_name": "II Fallschirmjäger Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1945-04-15",
+    "place_id": "PL3694",
+    "location_name": "Hollenermoor (Saterland), Lower Saxony (month-level table row; representative point of the listed area (Ems, Weser))",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "II Parachute Corps is listed in April 1945 under the First Parachute Army, OB Nordwest, in the area of Ems and Weser",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R266;R002",
+    "source_locator": "R266: table of 1945, April row"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      12.8069,
      51.1292
     ]

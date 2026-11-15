@@ -74,7 +74,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 
 | what | count |
 |---|---|
-| claims (rows of `data/claims/`, `build/all_claims.csv`) | 9404, dated 1939-09-16 to 1945-05-31 |
+| claims (rows of `data/claims/`, `build/all_claims.csv`) | 9405, dated 1939-09-16 to 1945-05-31 |
 | units in `data/units.csv` | 460: 445 active (have claims), 15 placeholders |
 | claim files (one per active unit) | 445 |
 | conflict groups / claims in a group | 122 / 273 |
@@ -89,15 +89,15 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | nationalities / retired claim ids / claim-key exceptions | 10 / 3 / 12 |
 | controlled vocabularies in `schema/vocabularies.json` | 49 |
 
-Claims by nationality: Germany 4096, US 3087, UK 1142, Canada 589, France 330, Poland 92, Netherlands 44, Belgium 16, Czechoslovakia 8.
+Claims by nationality: Germany 4096, US 3088, UK 1142, Canada 589, France 330, Poland 92, Netherlands 44, Belgium 16, Czechoslovakia 8.
 
-Claims by echelon: division 6394, corps 1734, army 679, brigade 285, army_group 131, regiment/battle_group 118, other 38, battalion 25.
+Claims by echelon: division 6394, corps 1734, army 679, brigade 285, army_group 132, regiment/battle_group 118, other 38, battalion 25.
 
-Claims by branch: Army 6505, Armoured 1822, Luftwaffe 469, Waffen-SS 367, Airborne 238, Navy 3.
+Claims by branch: Army 6506, Armoured 1822, Luftwaffe 469, Waffen-SS 367, Airborne 238, Navy 3.
 
-Claims by event type: other 3913, hq_observation 1683, defense 730, attack 712, capture 390, hq_move 362, arrival 266, relocation 243, command_change 219, subordinate_assignment 206, regroup 184, withdrawal 170, counterattack 84, landing 73, surrender 71, activation 55, redesignation 28, destruction 15.
+Claims by event type: other 3913, hq_observation 1683, defense 730, attack 712, capture 390, hq_move 363, arrival 266, relocation 243, command_change 219, subordinate_assignment 206, regroup 184, withdrawal 170, counterattack 84, landing 73, surrender 71, activation 55, redesignation 28, destruction 15.
 
-Claims by status: preferred 9246, alternate 142, disputed 16. Claims by confidence: 0.3 3568, 0.5 4856, 0.7 902, 0.9 78.
+Claims by status: preferred 9247, alternate 142, disputed 16. Claims by confidence: 0.3 3569, 0.5 4856, 0.7 902, 0.9 78.
 
 Placeholder units by nationality: US 6, Allied 3, UK 3, Germany 2, Netherlands 1.
 

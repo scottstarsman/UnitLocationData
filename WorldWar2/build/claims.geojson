@@ -222308,6 +222308,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.5017,
+     48.5894
+    ]
+   },
+   "properties": {
+    "claim_id": "C9454",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-AG-006G",
+    "unit_name": "6th Army Group",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1944-12-31",
+    "place_id": "PL0199",
+    "location_name": "Lunéville, Meurthe-et-Moselle (advance headquarters)",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "advance headquarters moves from Phalsbourg to Lunéville, forty miles to the rear",
+    "operation_id": "OP-CAMP-ARDENNES-ALSACE",
+    "operation": "Ardennes-Alsace campaign",
+    "operation_type": "campaign",
+    "campaign": "Ardennes-Alsace",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-31",
+    "location_basis": "town_centroid",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R424;R686;R001",
+    "source_locator": "R424: p. 500; R686: pp. 302-303"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -2.79,
      47.51
     ]

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 14 November 2026 — 6th Army Group advance headquarters at Lunéville (branch `small-fixes-1114`, task 2 of 4)
+
+Roadmap 356 (opened 9 November): Clarke and Smith, Riviera to the Rhine ch. 27 p. 500 (`R424`) has Devers move his advance headquarters from Phalsbourg to Lunéville, undated; de Lattre pp. 302-303 (`R686`, `C8616`) has him at Vittel on 27 December. Scott approved the task.
+
+- **New claim `C9454`** (6th Army Group, `US-AG-006G`, `hq_move`, Lunéville `PL0199`, existing place, precision 5 km, **confidence 0.3**). Date 1944-12-31: the source gives the move inside its section "Preparations for the Defense (19-31 December 1944)" and no day, so the row is dated at the latest day of that section and the note says "not later than 31 December"; it is not before 22 December (`C8615`, Phalsbourg) and de Lattre has Devers back at Phalsbourg on 26 December. References `R424` (p. 500, with the p. 503 photograph caption of Devers and Patch conferring at Luneville), `R686`, `R001`. Old value none, new value this claim.
+- **Conflict kept, not resolved.** `C8616` (Vittel, 27 December, 0.5) stays; the two accounts most likely describe two echelons, but neither source says so. A private-notes line that SHAEF officers arrived by air at Lunéville about 26 December (de Lattre p. 302, date inferred) is quoted in the note as context only; it does not say whom they met.
+- **`C8616` annotated** (data unchanged): the location caveat said "not resolved (roadmap)"; old value that text, new value "not resolved (roadmap 356: the Lunéville move is now entered as C9454, approximate, 0.3; both rows kept)", reason: the move now has its own row.
+- **No relation or unit change**; who_controls is not affected (expected grid change: none).
+- **Checks.** Scenario 270; the validator is unchanged at 352 warnings. Roadmap 356 closed with the leftovers above.
+
 ## 14 November 2026 — Armeegruppe Student gets a unit row (branch `small-fixes-1114`, task 1 of 4, from `main` `d505dd6e`)
 
 Roadmap 351 (opened 9 November): the Armeegruppe Student that FMS B-762 (`C7836`) and Stacey p. 550 (`C7581`) put LXXXVIII Corps under from 3 to 6 April 1945 had no unit row. Scott approved the task.

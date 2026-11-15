@@ -16,6 +16,7 @@ REL_CSV = os.path.join(common.ROOT, 'data', 'command_relations.csv')
 LINK_CSV = os.path.join(common.ROOT, 'data', 'command_relation_claims.csv')
 
 OVERLAP_CSV = os.path.join(common.ROOT, 'data', 'command_relation_overlaps.csv')
+OVERRIDE_CSV = os.path.join(common.ROOT, 'data', 'who_controls_overrides.csv')   # per-relation exceptions to the who_controls.py precedence (14 November 2026)
 OVERLAP_HEADER = ['relation_id_a', 'relation_id_b', 'overlap_from', 'overlap_to', 'kind', 'explanation']
 STANDING_CLASS = ('assigned', 'unspecified_subordination')   # one standing parent class: a unit is assigned to one headquarters of an echelon at a time
 FAR = '9999-12-31'
@@ -122,6 +123,7 @@ def load(force=False):
         links = common.read_dicts(LINK_CSV)[1] if os.path.isfile(LINK_CSV) else []
         _cache['rel'] = Relations(rows, links)
         _cache['rel'].overlaps = common.read_dicts(OVERLAP_CSV)[1] if os.path.isfile(OVERLAP_CSV) else []
+        _cache['rel'].overrides = common.read_dicts(OVERRIDE_CSV)[1] if os.path.isfile(OVERRIDE_CSV) else []
     return _cache['rel']
 
 

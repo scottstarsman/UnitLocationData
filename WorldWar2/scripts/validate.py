@@ -1215,9 +1215,9 @@ def check_command_relation_tables(units, vocabs, claims):
     field values from schema/relations.schema.json; the interval rules (see schema/README.md, "Validity of a relationship"); the evidence agrees with
     the master; every contradictory overlap is documented. Keys and foreign keys are checked by check_foreign_keys."""
     sch = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
-    paths = {'command_relations': crel.REL_CSV, 'command_relation_claims': crel.LINK_CSV, 'command_relation_overlaps': crel.OVERLAP_CSV}
+    paths = {'command_relations': crel.REL_CSV, 'command_relation_claims': crel.LINK_CSV, 'command_relation_overlaps': crel.OVERLAP_CSV, 'command_relation_overrides': crel.OVERRIDE_CSV}
     for name, path in paths.items():
-        where = 'data/%s.csv' % name
+        where = os.path.relpath(path, common.ROOT).replace(os.sep, '/')
         if not os.path.isfile(path):
             err(where, 'missing')
             continue
@@ -1347,6 +1347,20 @@ def check_command_relation_tables(units, vocabs, claims):
     ids = [(o['relation_id_a'], o['relation_id_b']) for o in ol]
     if ids != sorted(ids):
         err('data/command_relation_overlaps.csv', 'rows must be sorted by relation_id_a, relation_id_b')
+    # who_controls overrides (data/who_controls_overrides.csv): each names a preferred, non-organic relation whose subject has a preferred organic parent to answer instead
+    ov_ids = [o['relation_id'] for o in rel.overrides]
+    if ov_ids != sorted(ov_ids):
+        err('data/who_controls_overrides.csv', 'rows must be sorted by relation_id')
+    if len(ov_ids) != len(set(ov_ids)):
+        err('data/who_controls_overrides.csv', 'a relation is listed twice')
+    for o in rel.overrides:
+        r = rel.by_id.get(o['relation_id'])
+        if r is None:
+            continue   # the foreign key check reports it
+        if r['status'] != 'preferred' or r['relationship'] == 'organic':
+            err('data/who_controls_overrides.csv', '%s must be a preferred, non-organic relation (it is %s %s)' % (o['relation_id'], r['status'], r['relationship']))
+        if not any(x['subject_unit_id'] == r['subject_unit_id'] and x['relationship'] == 'organic' and x['status'] == 'preferred' for x in rel.rows):
+            err('data/who_controls_overrides.csv', '%s: %s has no preferred organic relation to answer instead (defer_to_organic_parent would leave no answer)' % (o['relation_id'], r['subject_unit_id']))
 
 
 def check_deferred_relations(units, vocabs, claims):
@@ -1804,7 +1818,7 @@ def main():
               'claim_key_exceptions': common.read_dicts(CLAIM_KEY_EXCEPTIONS_CSV)[1] if os.path.isfile(CLAIM_KEY_EXCEPTIONS_CSV) else [],
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
               'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],
-              'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps}
+              'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps, 'command_relation_overrides': relset.overrides}
     check_foreign_keys(tables)
 
     for w in warnings:

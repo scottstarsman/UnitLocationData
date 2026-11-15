@@ -1572,9 +1572,10 @@ def check_lineage(units, vocabs):
         err(where, msg)
 
 
-def check_allegiance(vocabs):
+def check_allegiance(units, vocabs):
     """data/nation_allegiance.csv (scripts/allegiance.py): header, nation codes exist and are nations, side and conflict in the vocabularies,
-    real dates inside the conflict, references exist, rows of one nation do not overlap, every nation has a row."""
+    real dates inside the conflict, references exist, rows of one nation do not overlap, every nation has a row; and
+    data/unit_allegiance_overrides.csv: unit exists, side valid, real dates inside WW2, no overlap per unit, references exist."""
     import allegiance
     import csv as _csv
     with open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8') as fh:
@@ -1582,6 +1583,9 @@ def check_allegiance(vocabs):
     h, rows = allegiance.load()
     nats = {n['code']: n for n in common.load_nationalities()}
     for where, msg in allegiance.check(h, rows, nats, vocabs, ref_ids):
+        err(where, msg)
+    oh, orows = allegiance.load_overrides()
+    for where, msg in allegiance.check_overrides(oh, orows, units, vocabs, ref_ids):
         err(where, msg)
 
 
@@ -1820,7 +1824,7 @@ def main():
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
-    check_allegiance(vocabs)
+    check_allegiance(units, vocabs)
     check_lifespan(units, all_rows)
 
     # ---- foreign keys declared in the schemas ----

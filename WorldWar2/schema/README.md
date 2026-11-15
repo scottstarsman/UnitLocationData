@@ -235,6 +235,21 @@ Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a c
 
 Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`): the nation exists and is a nation; the side and conflict are in their vocabularies; both dates are real and inside the conflict; the rows of one nation and one conflict do not overlap (inclusive dates, an open-ended row must be the last); rows sorted by nation, then `valid_from`; every reference exists; every nation of kind `nation` has at least one row. **Gaps are allowed and mean "no status stated for these days"**, not neutrality: Italy has no row from 9 September to 12 October 1943 (armistice announced, co-belligerence not yet declared), and the UK, France and the Dominions start at their declaration of war, not on 1 September 1939. `allegiance.side_on(rows, nation, date)` answers a dated question. Code `FR` covers Free French and French Army formations only; Vichy France has no code and no row. Italy is split in two codes: `IT` (the Kingdom: Axis to 8 September 1943, co-belligerent from 13 October 1943) and `RSI` (the Italian Social Republic: Axis, 23 September 1943 to 29 April 1945); the rule is in the `note` of `IT` in `data/nationalities.csv`.
 
+### data/unit_allegiance_overrides.csv (hand-maintained; `schema/unit_allegiance_overrides.schema.json`)
+
+Added 15 November 2026 (roadmap 384, part 2). A dated exception to the nation table: one unit stood on a different side from its nation for a period (a formation that served with the other side's forces). **It wins over `data/nation_allegiance.csv` for that unit and those days**; outside its rows the nation's side applies. Populated only where the dataset already has a sourced case; **empty (header only) on 15 November 2026**, because no unit of the dataset has a recorded side different from its nation's (the candidates are listed in the changelog and roadmap 384).
+
+| column | type | required | meaning | constraints |
+|---|---|---|---|---|
+| `unit_id` | string | yes | The unit. | a `unit_id` of `data/units.csv` |
+| `side` | string | yes | The side during the period. | vocabulary `allegiance_side` |
+| `valid_from` | date | yes | First day. | `YYYY-MM-DD`, inside WW2 |
+| `valid_to` | date | no | Last day, inclusive; blank = to the end of the war. | `YYYY-MM-DD`, not before `valid_from`, inside WW2 |
+| `reference_ids` | string | yes | `;`-separated reference ids. | each in `data/references_meta.csv`; at least one |
+| `note` | string | no | What the source says, and why the side differs from the nation's. | |
+
+Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`, `check_overrides`): the unit exists; the side is in the vocabulary; both dates are real and inside WW2; rows of one unit do not overlap (an open-ended row must be the last); rows sorted by `unit_id`, then `valid_from`; every reference exists. **Resolving a side:** `allegiance.Resolver.load().side(unit_id, date)` returns the unit override, else the nation's allegiance on that date, else `None` (a gap, or an unknown nation); `Resolver.camp(side)` folds `co-belligerent` into `Allied` and `neutral` or none into `None` for checks that ask whether two units fought on opposite sides.
+
 ### Coverage outputs (`build/coverage_by_unit.csv`, `build/coverage_by_month.csv`, `build/review_queue.csv`)
 
 Derived by `scripts/coverage.py` during `scripts/build.py`; columns and ranking are defined in [../docs/coverage_report.md](../docs/coverage_report.md). They read the claims, units and reference families and change nothing.
@@ -270,6 +285,8 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | units | `nationality` | nationalities.`name` |
 | units | `ship_class_id` | ship_classes.`class_id` |
 | nation_allegiance | `nation` | nationalities.`code` |
+| unit_allegiance_overrides | `unit_id` | units.`unit_id` |
+| unit_allegiance_overrides | `reference_ids` (`;` list) | references_meta.`reference_id` |
 | nation_allegiance, unit_lineage | `reference_ids` (`;` list) | references_meta.`reference_id` |
 | ship_classes | `nationality` | nationalities.`name` |
 | ship_classes | `parent_class_id` | ship_classes.`class_id` |

@@ -13,8 +13,8 @@ OP-BULGE,Battle of the Bulge,Ardennes,Ardennes counteroffensive; Ardennes offens
 OP-CAMP-ARDENNES-ALSACE,Ardennes-Alsace campaign,Ardennes-Alsace,,campaign,,Ardennes-Alsace campaign,0,1944-12-16,1945-01-25,cmh_streamer,All,96,249,1944-12-11,1945-01-27,R507;R508
 OP-CAMP-CENTRAL-EUROPE,Central Europe campaign,Central Europe,,campaign,,Central Europe campaign,0,1945-03-22,1945-05-11,cmh_streamer,All,1423,1553,1945-03-06,1945-05-10,R507;R508
 OP-CAMP-NORMANDY,Normandy campaign,Normandy,,campaign,OP-OVERLORD,Operation Overlord > Normandy campaign,1,1944-06-06,1944-07-24,cmh_streamer,All,542,733,1944-06-06,1944-08-22,R507;R508
-OP-CAMP-NORTHERN-FRANCE,Northern France campaign,Northern France,,campaign,OP-OVERLORD,Operation Overlord > Northern France campaign,1,1944-07-25,1944-09-14,cmh_streamer,All,832,1193,1944-06-06,1944-09-26,R507;R508
-OP-CAMP-RHINELAND,Rhineland campaign,Rhineland,,campaign,,Rhineland campaign,0,1944-09-15,1945-03-21,cmh_streamer,All,4412,5093,1944-09-05,1945-03-28,R507;R508
+OP-CAMP-NORTHERN-FRANCE,Northern France campaign,Northern France,,campaign,OP-OVERLORD,Operation Overlord > Northern France campaign,1,1944-07-25,1944-09-14,cmh_streamer,All,833,1194,1944-06-06,1944-09-26,R507;R508
+OP-CAMP-RHINELAND,Rhineland campaign,Rhineland,,campaign,,Rhineland campaign,0,1944-09-15,1945-03-21,cmh_streamer,All,4414,5095,1944-09-05,1945-03-28,R507;R508
 OP-CAMP-SOUTHERN-FRANCE,Southern France campaign,Southern France,,campaign,,Southern France campaign,0,1944-08-15,1944-09-14,cmh_streamer,All,6,79,1944-08-15,1944-09-12,R507;R508
 OP-CARENTAN,Battle of Carentan,Battle of Carentan,,battle,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Battle of Carentan,2,1944-06-10,1944-06-14,secondary,Allied,3,6,1944-06-10,1944-06-13,R111
 OP-CHARNWOOD,Operation Charnwood,Charnwood,,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Charnwood,2,1944-07-08,1944-07-09,secondary,Allied,12,12,1944-07-08,1944-07-09,R596
@@ -29,7 +29,7 @@ OP-EPSOM,Operation Epsom,Epsom,,operation,OP-CAMP-NORMANDY,Operation Overlord > 
 OP-FALAISE,Battle of the Falaise Pocket,Falaise,Falaise-Argentan; Falaise Gap,battle,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Battle of the Falaise Pocket,2,1944-08-12,1944-08-21,secondary,Allied,60,68,1944-08-07,1944-08-22,R495
 OP-FRONT-BALKANS,Balkans,Balkans,"Yugoslavia, Albania, Greece",umbrella,,Balkans,0,1940-10-28,1945-05-15,derived,All,0,0,,,
 OP-FRONT-EASTERN,Eastern Front,Eastern Front,Polish campaign; war against the Soviet Union,umbrella,,Eastern Front,0,1939-09-01,1945-05-11,derived,All,38,38,1939-09-16,1945-05-08,
-OP-FRONT-MEDITERRANEAN,Mediterranean and Italy,Mediterranean,Italian campaign,umbrella,,Mediterranean and Italy,0,1940-06-10,1945-05-02,derived,All,4,4,1944-06-18,1944-08-10,
+OP-FRONT-MEDITERRANEAN,Mediterranean and Italy,Mediterranean,Italian campaign,umbrella,,Mediterranean and Italy,0,1940-06-10,1945-05-02,derived,All,5,5,1944-06-18,1944-12-18,
 OP-FRONT-NORTH-AFRICA,North Africa,North Africa,Western Desert; Tunisia,umbrella,,North Africa,0,1940-06-10,1943-05-13,derived,All,0,0,,,
 OP-FRONT-SCANDINAVIA,Scandinavia,Scandinavia,Norway and Denmark,umbrella,,Scandinavia,0,1940-04-09,1945-05-08,derived,All,2,2,1944-07-04,1944-11-15,
 OP-GOODWOOD,Operation Goodwood,Goodwood,,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Goodwood,2,1944-07-18,1944-07-20,secondary,Allied,12,12,1944-07-18,1944-07-20,R598
@@ -48,7 +48,7 @@ OP-MORTAIN,Battle of Mortain,Mortain,Mortain counterattack,battle,OP-CAMP-NORTHE
 OP-NEPTUNE,Operation Neptune,Neptune,Normandy landings; D-Day assault phase,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Neptune,2,1944-06-06,1944-06-30,secondary,Allied,50,52,1944-06-06,1944-06-23,R506;R137
 OP-NORDWIND,Operation Nordwind,Nordwind,Operation Northwind; Unternehmen Nordwind,operation,OP-CAMP-ARDENNES-ALSACE,Ardennes-Alsace campaign > Operation Nordwind,1,1944-12-31,1945-01-25,secondary,Allied,36,36,1945-01-01,1945-01-23,R012
 OP-NUREMBERG,Battle of Nuremberg (1945),Nuremberg,Fall of Nuremberg,battle,OP-CAMP-CENTRAL-EUROPE,Central Europe campaign > Battle of Nuremberg (1945),1,1945-04-16,1945-04-20,official_history,Allied,4,4,1945-04-16,1945-04-20,R568;R579
-OP-OVERLORD,Operation Overlord,Overlord,Normandy invasion,umbrella,,Operation Overlord,0,1944-06-06,1944-08-30,secondary,Allied,1,1927,1944-06-06,1944-09-26,R490
+OP-OVERLORD,Operation Overlord,Overlord,Normandy invasion,umbrella,,Operation Overlord,0,1944-06-06,1944-08-30,secondary,Allied,1,1928,1944-06-06,1944-09-26,R490
 OP-PARIS,Liberation of Paris,Paris,,battle,OP-CAMP-NORTHERN-FRANCE,Operation Overlord > Northern France campaign > Liberation of Paris,2,1944-08-19,1944-08-25,secondary,Allied,5,5,1944-08-23,1944-08-29,R134
 OP-PERCH,Operation Perch,Perch,,operation,OP-CAMP-NORMANDY,Operation Overlord > Normandy campaign > Operation Perch,2,1944-06-07,1944-06-14,secondary,Allied,21,21,1944-06-07,1944-06-14,R141
 OP-PHEASANT,Operation Pheasant,Pheasant,Liberation of North Brabant,operation,OP-CAMP-RHINELAND,Rhineland campaign > Operation Pheasant,1,1944-10-20,1944-11-04,secondary,Allied,40,40,1944-10-20,1944-11-04,R671;R672

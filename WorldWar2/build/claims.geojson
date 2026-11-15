@@ -56176,6 +56176,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9459",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-016D",
+    "unit_name": "16th Infantry Division (16. Infanterie-Division, 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-15",
+    "place_id": "PL0936",
+    "location_name": "La Rochelle, Charente-Maritime (month-level table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "16th Infantry Division is listed in August 1944 under Army Group G in the area of western France (being set up)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1168;R002",
+    "source_locator": "R1168: table of 1944, August row (Aufstellung)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1999,
      48.8965
     ]
@@ -90117,6 +90158,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R894;R002",
     "source_locator": "R894: p. 427"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.4512,
+     48.1744
+    ]
+   },
+   "properties": {
+    "claim_id": "C9460",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-016D",
+    "unit_name": "16th Infantry Division (16. Infanterie-Division, 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL0133",
+    "location_name": "Épinal, Vosges (month-level table row; representative point of the listed area)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "16th Infantry Division is listed in September 1944 under LXVI Corps, Nineteenth Army, Army Group G, at Epinal",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1168;R415;R002",
+    "source_locator": "R1168: table of 1944, September row; R415: p. 188"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7358,
+     45.1876
+    ]
+   },
+   "properties": {
+    "claim_id": "C9461",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-GEB-157D",
+    "unit_name": "157th Mountain Division (157. Gebirgs-Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-15",
+    "place_id": "PL3902",
+    "location_name": "Grenoble, Isère (month-level statement; representative point of the area (western Alps))",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "157th Mountain Division is put under Armee Ligurien in September 1944 and holds the Alpine passes in the western Alps",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-15",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1199;R002",
+    "source_locator": "R1199: section 157. Gebirgs-Division (Armee Ligurien, September 1944)"
    }
   },
   {
@@ -203031,6 +203154,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R882;R002",
     "source_locator": "R882: para 93"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3426,
+     44.4938
+    ]
+   },
+   "properties": {
+    "claim_id": "C9462",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-GEB-157D",
+    "unit_name": "157th Mountain Division (157. Gebirgs-Division)",
+    "nationality": "Germany",
+    "theater": "mediterranean",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-12-18",
+    "place_id": "PL4181",
+    "location_name": "Bologna, Emilia-Romagna",
+    "location_represents": "headquarters",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "157th Mountain Division staff reaches the Bologna area; division under the XIV Panzer Corps (reserve)",
+    "operation_id": "OP-FRONT-MEDITERRANEAN",
+    "operation": "Mediterranean and Italy",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Mediterranean",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-12-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1199;R002",
+    "source_locator": "R1199: section Verlegung in den Raum Bologna (17-18 December 1944)"
    }
   },
   {

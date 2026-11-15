@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (a): command relations for the 157th Mountain and 16th Infantry Divisions (branch `leftovers-1115`, from main `6d045922`; roadmap 363, Scott t417u)
+
+One commit. Old value, new value and reason are also in the notes of every changed row.
+
+- **Relations.** `CR1317` (16th Infantry Division under Army Group G from the August 1944 Lexikon row, 15 August, closed 6 September), `CR1318` (under the LXVI Corps from 7 September 1944, Cole p. 188 and the Lexikon September row, open at the last claim), `CR1319` (157th Mountain Division under Armee Ligurien from September 1944, closed 16 December) and `CR1320` (under the XIV Panzer Corps from 17 December 1944, open). Old: no relation for either unit (scenario 272 checked for none); new: these four; reason: roadmap 363 point (b). The 157th relations use `unspecified_subordination` because the source says "unterstellt" and does not separate assigned from attached.
+- **Claims.** `C9459`, `C9460` (16th Infantry Division) and `C9461`, `C9462` (157th Mountain Division), all 0.3, each with the higher unit as `parent_unit_id`. `C9462` is the Italy row (theater mediterranean, place `PL4181` Bologna). The note of `C9455` (old: the renaming to the 8th Mountain Division "not entered"; new: points to lineage `UL025`; reason: now recorded).
+- **Units.** Placeholders `GER-ARMY-LIGUR` (Armee Ligurien), `GER-PZ-014C` (XIV Panzer Corps) and `GER-GEB-008D` (8th Mountain Division, formed 1945-02-27); old: no records; new: three placeholder rows; reason: the relations need resolvable higher units and the renaming needs a successor. The unit notes of `GER-GEB-157D` and `GER-INF-016D` were updated (old value, new value, reason in the text).
+- **Lineage and reference.** `UL025` (157th Mountain -> 8th Mountain, redesignation, 27 February 1945); new reference `R1199` (German Wikipedia, 8. Gebirgs-Division (Wehrmacht)); new place `PL4181`.
+- **Verified in the source.** Cole, The Lorraine Campaign, ch. 4 p. 188 (R415): 7 September, General Lucht was given permission to use the 16th Division; the earlier notes quoted this statement without a page check.
+- **Tests.** Scenario 275 added; scenario 272's last check changed (old: no relation for the new units; new: the four relations; reason: they were added).
+- **Next free ids.** Claim `C9463`, relation `CR1321`, place `PL4182`, reference `R1200`, conflict group `G129`, ship class `SC212`, aircraft type `AT143`, lineage `UL026`, scenario 276, roadmap 385.
+
 ## 15 November 2026 — allegiance follow-up (branch `allegiance-followup`, stacked on PR #97 and #96; roadmap 384, Scott t415u)
 
 Three parts, one commit each. The parts are listed below, newest first.

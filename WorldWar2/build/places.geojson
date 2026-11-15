@@ -2618,7 +2618,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lorraine",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -18458,7 +18458,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Nouvelle-Aquitaine",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -77738,7 +77738,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Auvergne-Rhône-Alpes",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -83278,6 +83278,26 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Namur",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     11.3426,
+     44.4938
+    ]
+   },
+   "properties": {
+    "place_id": "PL4181",
+    "name": "Bologna, Emilia-Romagna",
+    "alt_names": "Bologna",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "IT",
+    "region": "Emilia-Romagna",
     "claims_count": 1
    }
   }

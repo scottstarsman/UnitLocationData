@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (b): CR0950 re-checked, II Corps relation CR1321 (branch `leftovers-1115`, second commit; roadmap 352, Scott t418u)
+
+The source (de Lattre, The History of the French First Army, `R686`) is a borrow-only scan. Its full text cannot be fetched (HTTP 401) and I cannot drive the viewer, so the re-check used the private pass-2 notes (paraphrase with printed pages) of pp. 397-459; the book was **not re-opened**. Every row says so.
+
+- **`CR0950` (9th Colonial Division -> I Corps).** `valid_to` old value 1945-04-02 (basis narrative); new value **1945-03-29** (basis inferred); earliest end unchanged (1945-02-09); start unchanged. Reason: pp. 421 (plan of 28-29 March: the division is the II Corps passive flank), 424 (Monsabert orders the Leimersheim crossing on 30 March), 429 (Directive No. 8: the II Corps takes Karlsruhe with the division) and 430 (Valluy has the task from 30 March) put the division under the II Corps; the afternoon of 2 April (p. 435, de Lattre takes the division under direct Army orders) ends the II Corps link, so the first change had applied it to the wrong corps. The 29 March end is an inference (one corps at a time; the day the division left the I Corps is not stated). Link row `C1645` now `asserts_end`; the `C9307` link moved to `CR1321`.
+- **`CR1321` (new), 9th Colonial Division -> II Corps (`FR-COR-002C`),** operational_control, from 1945-03-30 (narrative, no later than that day), end between **1945-04-02** (de Lattre takes the division under Army orders that afternoon, p. 435) and **1945-04-04** (Karlsruhe falls, p. 436; Monsabert's Order No. 154 and Directive No. 8 keep it in the II Corps until then, pp. 429-430, 435; the western group under Valluy is separate from the II Corps on 4 April, p. 440). The two readings of p. 435 are not reconciled and are kept as a range. Old value none (the II Corps reading was an open conflict); new value this relation.
+- **`C9307`:** `parent_unit_id` old value blank, new value `FR-COR-002C`; date, place, confidence (0.3), activity and locator unchanged; reason: the crossing is made under the II Corps plan.
+- **Not resolved:** the date the division moved from the I Corps to the II Corps (before 30 March, after 9 February; the army moved the 2nd Moroccan Division on 18-19 March, p. 414, but no line names the 9th Colonial Division); the end of the II Corps link (2 to 4 April); the days after 2-4 April (Army orders, Valluy group, pp. 440, 453) and the I Corps plan of 18 April (p. 459) give no relation.
+- **Tests.** Scenario 271 changed (old: CR0950 ends 2 April, narrative, evidenced by C1645 and C9307, no II Corps relation; new: CR0950 ends 29 March, CR1321 added, chain answers for 15 March to 5 April; reason: this change).
+- **Next free ids.** Claim `C9463`, relation `CR1322`, place `PL4182`, reference `R1200`, conflict group `G129`, lineage `UL026`, scenario 276, roadmap 385.
+
 ## 15 November 2026 — leftovers, task (a): command relations for the 157th Mountain and 16th Infantry Divisions (branch `leftovers-1115`, from main `6d045922`; roadmap 363, Scott t417u)
 
 One commit. Old value, new value and reason are also in the notes of every changed row.

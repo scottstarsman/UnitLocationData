@@ -2466,8 +2466,7 @@ CR0948,C1631,1,observed_during,,,,,,,,,,
 CR0948,C1632,1,observed_during,,,,,,,,,,
 CR0948,C1657,1,observed_during,,,,,,,,,,
 CR0949,C1642,1,observed_during,,,,,,,,,,
-CR0950,C1645,1,observed_during,,,,,,,,,,
-CR0950,C9307,1,asserts_end,,,,,1945-04-02,1945-02-09,,narrative,"de Lattre p. 435: on the afternoon of 2 April de Lattre takes the 9th Colonial Division under direct Army orders at once; earliest end 9 February is the last day a source places it with the I Corps (C1629, p. 397)",narrative
+CR0950,C1645,1,asserts_end,,,,,1945-03-29,1945-02-09,,inferred,"Review (leftovers-1115, task b): the claim does not state an end. End no later than 29 March 1945 (inferred from the II Corps orders of 30 March, de Lattre pp. 421, 424, 429-430, pass-2 notes) and no earlier than 9 February (the last day a source places the division with the I Corps, C1629, p. 397); old value of the link: observed_during with no end; the end 1945-04-02 of the earlier change came from C9307 (moved to CR1321).",inferred
 CR0951,C1646,1,asserts_start_and_end,1944-12-05,,,,1944-12-27,,,,"Operational control to the First French Army effective 5 December (Riviera to the Rhine, p. 464); back to the Seventh Army by the letter of instructions of 28 December (p. 496, note 7)",
 CR0952,C1646,3,asserts_end,,,,,1944-12-27,,,,"Attached to the II Corps for the push from the Selestat region (p. 486); the division left the First French Army on 28 December (p. 496, note 7)",
 CR0953,C1647,2,asserts_end,,,,,1945-01-18,,,narrative,"The combat commands Dio and Langlade left the US Seventh Army on 19 January (de Lattre, History of the French First Army, p. 373)",
@@ -3246,3 +3245,4 @@ CR1317,C9459,1,observed_during,,,,,,,,,,
 CR1318,C9460,1,asserts_start,1944-09-07,,,,,,,,Cole p. 188: on 7 September the LXVI Corps (General Lucht) was given permission to use the 16th Division; the claim row itself is the Lexikon September row (month-level).,narrative
 CR1319,C9461,1,observed_during,,,,,,,,,,
 CR1320,C9462,1,asserts_start,1944-12-17,,,,,,,,German Wikipedia: on 17 December 1944 the division was put under the XIV Panzer Corps as a reserve of Army Group C; the staff arrived in the Bologna area on 18 December (this claim).,narrative
+CR1321,C9307,1,asserts_start_and_end,1945-03-30,,,,1945-04-04,1945-04-02,,narrative,"de Lattre pass-2 notes: start no later than 30 March (Monsabert orders the Leimersheim crossing, p. 424; Valluy has the task from 30 March, p. 430); end between 2 April (de Lattre takes the division under direct Army orders that afternoon, p. 435) and 4 April (Karlsruhe falls, p. 436; Order No. 154 keeps it in the II Corps until then, p. 435); conflict kept. The claim is the crossing of 2 April and states neither date itself; the dates come from the cited pages.",narrative

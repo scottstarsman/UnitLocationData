@@ -4695,23 +4695,32 @@ def scenario_270_6ag_advance_hq_luneville():
 
 
 def scenario_271_cr0950_9th_colonial_end():
-    """Roadmap 352, CR0950 (15 November 2026): the French 9th Colonial Division under the I Corps from 6 February 1945 now ends no later than 2 April 1945 (de Lattre p. 435: taken under direct
-    Army orders that afternoon), earliest end 9 February (last day placed with the I Corps); the II Corps reading of the Karlsruhe rows is kept as an open conflict, no II Corps relation is entered."""
-    s = 'CR0950 9th Colonial Division (scenario 271)'
+    """Roadmap 352, CR0950 (15 November 2026; re-checked in leftovers-1115 task b): the French 9th Colonial Division under the I Corps from 6 February 1945. First change (small-fixes-1114): end 2 April, earliest 9 February.
+    Task b (de Lattre pass-2 notes, R686; the borrowed scan was not re-opened): the II Corps commanded the division for the Rhine crossing from 30 March (pp. 421, 424, 429-430), so the I Corps end is now 29 March (inferred) and
+    CR1321 enters the II Corps (operational_control, 30 March, end between 2 and 4 April, the two readings of p. 435 kept as a range)."""
+    s = 'CR0950 and CR1321 9th Colonial Division (scenario 271)'
     r = master('FR-INF-009D', 'FR-COR-001C', 'unspecified_subordination', '1945-02-06')
-    expect(s + ': CR0950 ends 2 April 1945 (narrative), earliest end 9 February, evidenced by C1645 and C9307',
-           (r['relation_id'], r['valid_to'], r['valid_to_earliest'], r['valid_to_basis'], sorted(r['source_claim_ids'].split())), ('CR0950', '1945-04-02', '1945-02-09', 'narrative', ['C1645', 'C9307']))
-    expect(s + ': the note records old value, new value, reason and keeps the II Corps reading as a conflict',
-           ('old value blank' in r['note'], 'new value 1945-04-02' in r['note'], 'reason' in r['note'], 'Conflict kept, not resolved' in r['note'], 'No II Corps relation is entered' in r['note']), (True, True, True, True, True))
-    expect(s + ': no other relation of the division exists (no II Corps relation entered)', sorted(x['relation_id'] for x in _ROWS if x['subject_unit_id'] == 'FR-INF-009D'), ['CR0950'])
+    expect(s + ': CR0950 ends 29 March 1945 (inferred), earliest end 9 February, evidenced by C1645 only',
+           (r['relation_id'], r['valid_to'], r['valid_to_earliest'], r['valid_to_basis'], sorted(r['source_claim_ids'].split())), ('CR0950', '1945-03-29', '1945-02-09', 'inferred', ['C1645']))
+    expect(s + ': the CR0950 note keeps the first change and records old value, new value and reason of the second',
+           ('old value blank' in r['note'], 'new value 1945-04-02' in r['note'], 'leftovers-1115' in r['note'], 'old value 1945-04-02' in r['note'], 'new value 1945-03-29' in r['note'], 'reason' in r['note'], 'superseded by CR1321' in r['note']),
+           (True, True, True, True, True, True, True))
+    r2 = master('FR-INF-009D', 'FR-COR-002C', 'operational_control', '1945-03-30')
+    expect(s + ': CR1321 II Corps operational_control from 30 March, end between 2 and 4 April (narrative), evidence C9307',
+           (r2['relation_id'], r2['valid_to'], r2['valid_to_earliest'], r2['valid_to_basis'], sorted(r2['source_claim_ids'].split())), ('CR1321', '1945-04-04', '1945-04-02', 'narrative', ['C9307']))
+    expect(s + ': the CR1321 note records old value, new value, reason and keeps the end as a conflict',
+           ('old value none' in r2['note'], 'new value this relation' in r2['note'], 'reason' in r2['note'], 'conflict kept' in r2['note'], 'not re-opened' in r2['note']), (True, True, True, True, True))
+    expect(s + ': the division has these two relations only', sorted(x['relation_id'] for x in _ROWS if x['subject_unit_id'] == 'FR-INF-009D'), ['CR0950', 'CR1321'])
     expect(s + ': 6 February 1945 the division is under the I Corps (certain)', chain('FR-INF-009D', '1945-02-06')[0], ('French I Corps', 'unspecified_subordination', 'certain'))
-    expect(s + ': 15 March 1945 the I Corps answer is possible (end between 9 February and 2 April)', intervals('FR-INF-009D', '1945-03-15')[('FR-COR-001C', 'unspecified_subordination')][0], 'possible')
-    expect(s + ': 3 April 1945 and later no I Corps answer (no chain)', [chain('FR-INF-009D', d)[0][0] for d in ('1945-04-03', '1945-04-20')], ['NO CHAIN'] * 2)
+    expect(s + ': 15 March 1945 the I Corps answer is possible (end between 9 February and 29 March)', intervals('FR-INF-009D', '1945-03-15')[('FR-COR-001C', 'unspecified_subordination')][0], 'possible')
+    expect(s + ': 2 April 1945 the II Corps answer is certain; 3 April possible (end between 2 and 4 April); 5 April and later no corps answer',
+           [chain('FR-INF-009D', d)[0][:3] for d in ('1945-04-02', '1945-04-03', '1945-04-05', '1945-04-20')],
+           [('French II Corps', 'operational_control', 'certain'), ('French II Corps', 'operational_control', 'possible'), ('NO CHAIN', [], None), ('NO CHAIN', [], None)])
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     c = claims['C9307']
-    expect(s + ': C9307 keeps date, place and 0.3, cites p. 435 and the note has Command support and a Review with old and new locator',
-           (c['date'], c['place_id'], c['confidence'], c['source_locator'], 'Command support: de Lattre, p. 435' in c['notes'], 'source_locator old value' in c['notes'], 'new value' in c['notes']),
-           ('1945-04-02', 'PL4126', '0.3', 'R686: pp. 430-431, 435', True, True, True))
+    expect(s + ': C9307 keeps date, place and 0.3, cites p. 435, has the II Corps as parent and a Review with old and new value',
+           (c['date'], c['place_id'], c['confidence'], c['source_locator'], c['parent_unit_id'], 'Command support: de Lattre, p. 435' in c['notes'], 'source_locator old value' in c['notes'], 'parent_unit_id old value blank, new value FR-COR-002C' in c['notes']),
+           ('1945-04-02', 'PL4126', '0.3', 'R686: pp. 430-431, 435', 'FR-COR-002C', True, True, True))
 
 
 def scenario_272_successors_157_and_158():

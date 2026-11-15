@@ -574,6 +574,82 @@
           }
         }
       ]
+    },
+    "command_relation_overrides": {
+      "path": "data/who_controls_overrides.csv",
+      "primaryKey": [
+        "relation_id"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "relation_id",
+          "reference": {
+            "resource": "command_relations",
+            "fields": "relation_id"
+          }
+        }
+      ],
+      "fields": [
+        {
+          "name": "relation_id",
+          "type": "string",
+          "description": "The relation that who_controls.py sets aside for its subject (a preferred, non-organic relation of the master table).",
+          "constraints": {
+            "required": true,
+            "pattern": "^CR\\d{4,}$"
+          }
+        },
+        {
+          "name": "effect",
+          "type": "string",
+          "description": "What the override does (vocabulary who_controls_override_effect).",
+          "constraints": {
+            "required": true
+          },
+          "vocabulary": "who_controls_override_effect"
+        },
+        {
+          "name": "decided_by",
+          "type": "string",
+          "description": "Who decided it.",
+          "constraints": {
+            "required": true
+          }
+        },
+        {
+          "name": "decided_on",
+          "type": "date",
+          "description": "Date of the decision.",
+          "constraints": {
+            "required": true
+          },
+          "format": "%Y-%m-%d"
+        },
+        {
+          "name": "old_value",
+          "type": "string",
+          "description": "What who_controls answered before the override.",
+          "constraints": {
+            "required": true
+          }
+        },
+        {
+          "name": "new_value",
+          "type": "string",
+          "description": "What who_controls answers with the override.",
+          "constraints": {
+            "required": true
+          }
+        },
+        {
+          "name": "reason",
+          "type": "string",
+          "description": "Why (the decision and its ground).",
+          "constraints": {
+            "required": true
+          }
+        }
+      ]
     }
   }
 }

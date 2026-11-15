@@ -30,6 +30,7 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/other_domains/ship_classes.csv  data/ship_classes.csv: the ship classes (class_id SC###) that naval units link to through ship_class_id
   build/other_domains/aircraft_types.csv  data/aircraft_types.csv: the aircraft types (type_id AT###) that air units link to through the aircraft object of strength_json
   build/other_domains/command_relations.csv  the derived command relations whose subject is an air or naval unit (same columns as command_relations.csv)
+  build/who_controls_overrides.csv      verbatim copy of data/who_controls_overrides.csv (per-relation exceptions to the who_controls.py precedence)
   build/organic_relations.csv           the preferred `organic` relations only (same columns as command_relations.csv, all domains); read by scripts/who_controls.py for
                                         the organic fallback and by nothing else (command_relations.csv keeps excluding `organic`)
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
@@ -298,6 +299,7 @@ def outputs():
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
     out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))
     out['organic_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows + other_rows, None, organic=True))
+    out['who_controls_overrides.csv'] = open(command_relations.OVERRIDE_CSV, 'rb').read() if os.path.isfile(command_relations.OVERRIDE_CSV) else common.csv_bytes(['relation_id'], [])   # verbatim copy of data/who_controls_overrides.csv; read by scripts/who_controls.py
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
     pl_rows, pl_geo, pl_md = places_outputs(rows)

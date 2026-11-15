@@ -41,6 +41,12 @@ normal (the parent may itself fall back). An explicit non-organic relation alway
 fallback answer is marked: the interval line ends [organic_fallback: ...] and the chain level reads "(organic_fallback, certain|possible)" instead of the
 relationship, so it cannot be mistaken for a sourced operational link. An explicit `unknown` placeholder without a higher unit is not a superior and does
 not block the fallback; it is printed as a note. The fallback adds no data: the organic relation is the sourced fact, only the lookup rule changed.
+
+Per-relation overrides (14 November 2026, Scott's decision). build/who_controls_overrides.csv (a copy of data/who_controls_overrides.csv) lists relations that this
+lookup sets aside when it answers for their subject (effect defer_to_organic_parent): the relation is not used as a hit, so the organic fallback applies and
+the unit answers with its organic parent, exactly as if the relation did not exist. It is not a general rule: it covers only the listed relations (today CR0017 and
+CR0026, the corps links of GER-KG-002PZ and GER-KG-MEYER). The relation stays in the data and in build/command_relations.csv; any other non-organic relation
+that covers the date still wins. A set-aside relation that covers the date is printed as a note.
 """
 import datetime
 import os
@@ -117,14 +123,22 @@ def main(argv):
     other_rows = common.read_dicts(other_path)[1] if os.path.isfile(other_path) else []
     organic_path = os.path.join(common.BUILD_DIR, 'organic_relations.csv')   # the preferred organic relations; consulted only for the organic fallback
     organic_rows = common.read_dicts(organic_path)[1] if os.path.isfile(organic_path) else []
+    override_path = os.path.join(common.BUILD_DIR, 'who_controls_overrides.csv')   # relations set aside for their subject (effect defer_to_organic_parent)
+    overrides = {o['relation_id']: o for o in common.read_dicts(override_path)[1]} if os.path.isfile(override_path) else {}
     _uh, units = common.read_dicts(common.UNITS_CSV)
     ech = {u['unit_id']: u['echelon'] for u in units}
+
+    set_aside = []   # (relation, status, why) of the overridden relations that cover the date, for the note
 
     def hits_for(uid_or_name, source=None):
         out = []
         for r in (rows if source is None else source):
             if not r['higher_unit_id']:
                 continue   # explicit unknown placeholders are reported separately
+            if source is None and r['relation_id'] in overrides and overrides[r['relation_id']]['effect'] == 'defer_to_organic_parent':
+                if r['subject_unit_id'] == uid_or_name and status(r, date, time)[0] != 'no':
+                    set_aside.append(r)   # not a hit: the organic parent answers (organic fallback)
+                continue
             if r['subject_unit_id'] == uid_or_name or (uid_or_name.lower() in r['subject_name'].lower() and not uid_or_name.startswith(('US-', 'UK-', 'GER-', 'CAN-'))):
                 st, why = status(r, date, time)
                 if st != 'no':
@@ -158,6 +172,9 @@ def main(argv):
             print('activity: ' + _act.describe(_a))
     except ImportError:
         pass
+    for r in sorted({s['relation_id']: s for s in set_aside if s['subject_unit_id'] == who}.values(), key=lambda s: s['relation_id']):
+        o = overrides[r['relation_id']]   # a set-aside relation is a sourced fact kept in the data; say that it was not used and why
+        print('note: relation %s (%s, %s) is set aside by a per-relation override (%s, %s): %s' % (r['relation_id'], r['relationship'], r['higher_name'], o['decided_by'], o['decided_on'], o['reason']))
     if fallback_hits:
         for r in holes:   # an explicit unknown placeholder names no superior, so it does not block the fallback; say that it exists
             print('note: relation %s is an explicit unknown (%s to %s): %s' % (r['relation_id'], r['valid_from'], r['valid_to'] or 'open', r['note']))

@@ -621,5 +621,11 @@
       "bomb_load": "Bomb or other external load.",
       "crew": "Crew number or the crew list as the source gives it."
     }
+  },
+  "who_controls_override_effect": {
+    "description": "What a row of data/who_controls_overrides.csv does. An override is a per-relation, per-decision exception to the who_controls.py precedence; it never edits or deletes the relation, which stays in data/command_relations.csv and build/command_relations.csv.",
+    "values": {
+      "defer_to_organic_parent": "who_controls.py does not use this non-organic relation when it answers for the subject unit, so the organic fallback applies: the unit answers with its organic parent (marked organic_fallback) unless another non-organic relation covers the date. The relation itself is still listed in the data and the derived tables."
+    }
   }
 }

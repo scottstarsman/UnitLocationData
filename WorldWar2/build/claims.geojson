@@ -22146,6 +22146,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9457",
+    "conflict_group_id": "G128",
+    "claim_status": "alternate",
+    "unit_id": "GER-INF-016D",
+    "unit_name": "16th Infantry Division (16. Infanterie-Division, 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-07-02",
+    "place_id": "PL0936",
+    "location_name": "La Rochelle, Charente-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "158th Reserve Division reorganised into the 16th Infantry Division (date on the 158th page)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-02",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R288;R002",
+    "source_locator": "R288: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.0938,
      48.8989
     ]
@@ -43835,6 +43876,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9456",
+    "conflict_group_id": "G128",
+    "claim_status": "preferred",
+    "unit_id": "GER-INF-016D",
+    "unit_name": "16th Infantry Division (16. Infanterie-Division, 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-04",
+    "place_id": "PL0936",
+    "location_name": "La Rochelle, Charente-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "16th Infantry Division formed in western France from the 158th Reserve Division and the 16th Luftwaffe Field Division",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-04",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1168;R267;R405;R002",
+    "source_locator": "R1168: Einsatz und Unterstellung; R267: Einsatz und Unterstellung; R405: p. 560"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.9157,
      48.9255
     ]
@@ -56497,6 +56579,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R427;R241;R002",
     "source_locator": "R427: p. 117; R241: Einsatz und Unterstellung"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.1516,
+     46.1597
+    ]
+   },
+   "properties": {
+    "claim_id": "C9458",
+    "conflict_group_id": "G128",
+    "claim_status": "alternate",
+    "unit_id": "GER-INF-016D",
+    "unit_name": "16th Infantry Division (16. Infanterie-Division, 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-08-16",
+    "place_id": "PL0936",
+    "location_name": "La Rochelle, Charente-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "158th Reserve Division and 16th Luftwaffe Field Division reorganised as the 16th Division (Cole)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-16",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R415;R002",
+    "source_locator": "R415: p. 208 n. 6"
    }
   },
   {
@@ -72774,6 +72897,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R784;R002",
     "source_locator": "R784: report of 1.9.44 (Lagebericht)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.7358,
+     45.1876
+    ]
+   },
+   "properties": {
+    "claim_id": "C9455",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-GEB-157D",
+    "unit_name": "157th Mountain Division (157. Gebirgs-Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Army",
+    "date": "1944-09-01",
+    "place_id": "PL3902",
+    "location_name": "Grenoble, Isère",
+    "location_represents": "main_body",
+    "precision_km": 50,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "157th Reserve Division becomes the 157th Mountain Division (first record of the successor)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-01",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R287;R428;R002",
+    "source_locator": "R287: Einsatz und Unterstellung; R428: p. 135"
    }
   },
   {

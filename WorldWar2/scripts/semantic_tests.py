@@ -4279,7 +4279,7 @@ def scenario_256_aircraft_types_table():
     expect(s + ': core types are seeded', [c for c in core if c not in by], [])
     expect(s + ': P-47D-40 is a variant of the P-47 family, Lancaster X (Canada) of the Lancaster', (by['P-47D-40']['parent_type_id'] == by['P-47 Thunderbolt']['type_id'], by['Lancaster X']['parent_type_id'] == by['Lancaster I']['parent_type_id'], by['Lancaster X']['nationality']), (True, True, 'Canada'))
     expect(s + ': every seeded figure has its own reference', [r['type_id'] for r in rows if r['performance_json'] and any(not v.get('reference_id') for v in json.loads(r['performance_json']).values())], [])
-    expect(s + ': nationalities seeded', sorted({r['nationality'] for r in rows}), ['Canada', 'Germany', 'UK', 'US'])
+    expect(s + ': nationalities seeded', sorted({r['nationality'] for r in rows}), ['Canada', 'France', 'Germany', 'UK', 'US'])  # France added 15 November 2026 (LeO 451, Normandy prep); old value ['Canada', 'Germany', 'UK', 'US']
     expect(s + ': every role used is in the vocabulary', sorted({r['role'] for r in rows} - set(common.vocab_values('aircraft_role'))), [])
     expect(s + ': ids run AT001.. without a gap', [r['type_id'] for r in rows], ['AT%03d' % i for i in range(1, len(rows) + 1)])
 

@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (e) batch 3: allegiance rows for the neutrals and Vichy France (branch `leftovers-1115`, seventh commit; roadmap 385, Scott t421u)
+
+Old value: 32 codes, 44 allegiance rows. New value: **39 codes and 52 rows**: new codes `CHE`, `ESP`, `IRL`, `PRT`, `SWE`, `TUR`, `VIC` (documented in `schema/README.md`), references `R1234`-`R1240`. Reason: Scott t421u. Not entered because no day was found on a page read: Iran, Iraq, Mexico, Ethiopia (roadmap 385). Vichy France carries the value `neutral` only as the table value for "no declaration of war read"; for Scott to confirm. Scenario 280.
+
 ## 15 November 2026 — leftovers, task (e) batch 2: allegiance rows for the Allies (branch `leftovers-1115`, sixth commit; roadmap 385, Scott t421u)
 
 Old value: 25 codes, 34 allegiance rows. New value: **32 codes and 44 rows**: new codes `BRA`, `CHN`, `GRE`, `IND`, `PHL`, `SOV`, `YUG` (documented in `schema/README.md`), Wikipedia references `R1226`-`R1233`. Reason: Scott t421u. Yugoslavia has four rows in 1941 (neutral, Axis 25 and 26 March, a blank, Allied from 6 April). Blanks and uncertain days are in each row note and in roadmap 385 (USSR before 22 June 1941; India's day uncertain; Mexico and Ethiopia not entered because no day was found on a page read). Scenario 279. Batch 3 (neutrals, Vichy France, Iran, Iraq) is not done.

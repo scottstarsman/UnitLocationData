@@ -45,7 +45,8 @@ GER-ARMY-015A,Fifteenth Army,Germany,army,Army,active,,true,46,1944-08-28,1945-0
 GER-ARMY-019A,Nineteenth Army (Germany),Germany,army,Army,active,1943-08-26,true,51,1944-09-18,1945-05-05,GER-AG-00GG
 GER-ARMY-024A,Twenty-fourth Army (Germany),Germany,army,Army,active,1944-10-17,true,5,1945-02-15,1945-05-04,
 GER-ARMY-025A,Twenty-fifth Army (Germany),Germany,army,Army,active,1944-11-10,true,13,1944-11-10,1945-05-05,
-GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,active,,true,13,1945-04-06,1945-05-31,
+GER-ARMY-BLUMT,Army Blumentritt (Armee Blumentritt),Germany,army,Army,active,1945-04-06,true,13,1945-04-06,1945-05-31,
+GER-ARMY-LIGUR,Armee Ligurien (Army Liguria),Germany,army,Army,placeholder,,false,0,,,
 GER-ARMY-LUETT,"Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944)",Germany,army,Army,active,1944-12-30,true,2,1944-12-30,1944-12-31,
 GER-FJA-001A,First Parachute Army (1. Fallschirmarmee),Germany,army,Luftwaffe,active,,true,54,1944-09-04,1945-05-05,
 GER-PZA-005A,Fifth Panzer Army,Germany,army,Armoured,active,,true,37,1944-08-18,1945-04-17,GER-AG-00BG
@@ -75,8 +76,9 @@ GER-COR-090C,LXXXX Corps,Germany,corps,Army,active,1942-11-15,true,3,1944-11-26,
 GER-COR-EMS,Korps Ems (General Rasp),Germany,corps,Army,active,,true,1,1945-04-10,1945-04-10,
 GER-COR-FELDT,Korps Feldt (Generalkommando Feldt),Germany,corps,Army,active,1944-09-09,true,10,1944-09-18,1944-12-19,
 GER-COR-KVOSG,"Corps Command Vosges (Korpskommando Vosges, provisional corps headquarters)",Germany,corps,Army,active,1944-11-22,true,1,1944-11-22,1944-11-22,
-GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,86,1944-05-05,1945-05-05,GER-ARMY-007A
+GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,87,1944-05-05,1945-05-05,GER-ARMY-007A
 GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,active,,true,21,1944-09-15,1945-01-23,
+GER-PZ-014C,XIV Panzer Corps,Germany,corps,Army,placeholder,,false,0,,,
 GER-PZ-039C,XXXIX Panzer Corps,Germany,corps,Armoured,active,1942-07-09,true,8,1944-12-15,1945-05-04,
 GER-PZ-047C,XLVII Panzer Corps,Germany,corps,Armoured,active,1942-06-21,true,70,1944-05-31,1945-04-18,GER-PZA-005A
 GER-PZ-058C,LVIII Panzer Corps,Germany,corps,Armoured,active,1943-07-28,true,18,1944-06-06,1945-04-15,GER-PZA-005A
@@ -114,8 +116,9 @@ GER-FJ-008D,8th Fallschirmjäger Division,Germany,division,Luftwaffe,active,,tru
 GER-FJ-011D,11th Fallschirmjäger Division,Germany,division,Luftwaffe,active,,true,6,1945-03-31,1945-05-08,GER-FJ-002C
 GER-FJ-ERDMD,Fallschirmjäger Division Erdmann,Germany,division,Luftwaffe,active,,true,4,1944-09-07,1944-09-28,
 GER-GEB-002D,2nd Mountain Division (2. Gebirgs-Division),Germany,division,Army,active,1938-04-01,true,1,1945-04-16,1945-04-16,
-GER-GEB-157D,157th Mountain Division (157. Gebirgs-Division),Germany,division,Army,active,1944-09-01,true,1,1944-09-01,1944-09-01,
-GER-INF-016D,"16th Infantry Division (16. Infanterie-Division, 1944)",Germany,division,Army,active,1944-08-04,true,3,1944-07-02,1944-08-16,GER-COR-066C
+GER-GEB-008D,8th Mountain Division (8. Gebirgs-Division),Germany,division,Army,placeholder,1945-02-27,false,0,,,
+GER-GEB-157D,157th Mountain Division (157. Gebirgs-Division),Germany,division,Army,active,1944-09-01,true,3,1944-09-01,1944-12-18,
+GER-INF-016D,"16th Infantry Division (16. Infanterie-Division, 1944)",Germany,division,Army,active,1944-08-04,true,5,1944-07-02,1944-09-15,GER-COR-066C
 GER-INF-047D,47th Infantry Division,Germany,division,Army,active,1944-02-01,true,7,1944-02-01,1944-09-15,GER-COR-082C
 GER-INF-048D,48th Infantry Division,Germany,division,Army,active,1944-02-01,true,15,1944-08-17,1944-11-14,GER-COR-080C
 GER-INF-049D,49th Infantry Division,Germany,division,Army,active,1944-02-01,true,18,1944-08-29,1944-12-05,GER-COR-082C

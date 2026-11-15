@@ -2,6 +2,64 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (e) batch 3: allegiance rows for the neutrals and Vichy France (branch `leftovers-1115`, seventh commit; roadmap 385, Scott t421u)
+
+Old value: 32 codes, 44 allegiance rows. New value: **39 codes and 52 rows**: new codes `CHE`, `ESP`, `IRL`, `PRT`, `SWE`, `TUR`, `VIC` (documented in `schema/README.md`), references `R1234`-`R1240`. Reason: Scott t421u. Not entered because no day was found on a page read: Iran, Iraq, Mexico, Ethiopia (roadmap 385). Vichy France carries the value `neutral` only as the table value for "no declaration of war read"; for Scott to confirm. Scenario 280.
+
+## 15 November 2026 — leftovers, task (e) batch 2: allegiance rows for the Allies (branch `leftovers-1115`, sixth commit; roadmap 385, Scott t421u)
+
+Old value: 25 codes, 34 allegiance rows. New value: **32 codes and 44 rows**: new codes `BRA`, `CHN`, `GRE`, `IND`, `PHL`, `SOV`, `YUG` (documented in `schema/README.md`), Wikipedia references `R1226`-`R1233`. Reason: Scott t421u. Yugoslavia has four rows in 1941 (neutral, Axis 25 and 26 March, a blank, Allied from 6 April). Blanks and uncertain days are in each row note and in roadmap 385 (USSR before 22 June 1941; India's day uncertain; Mexico and Ethiopia not entered because no day was found on a page read). Scenario 279. Batch 3 (neutrals, Vichy France, Iran, Iraq) is not done.
+
+## 15 November 2026 — leftovers, task (e) batch 1: allegiance rows for the Axis and Axis-aligned states (branch `leftovers-1115`, fifth commit; roadmap 385, Scott t421u)
+
+Old value: `data/nationalities.csv` had 16 codes and `data/nation_allegiance.csv` 21 rows. New value: **25 codes and 34 rows**: new codes `BUL`, `FIN`, `HUN`, `JPN`, `MCK`, `NDH`, `ROM`, `SVK`, `THA` (documented in `schema/README.md`) with 13 dated rows (Axis from the Tripartite Pact dates for Japan, Hungary, Romania, Slovakia and Bulgaria; Croatia from its proclamation; Thailand neutral then Axis from the alliance of 21 December 1941; Manchukuo; the side switches of Romania, 23 August 1944, Bulgaria, 8 September 1944, and Finland, 15 September 1944). Reason: Scott t421u (all countries, all theaters). Ten Wikipedia references `R1216`-`R1225`; no official text was read in this batch, the Avalon armistice texts for Romania, Bulgaria and Hungary are not yet added. **Blanks, not guesses:** see roadmap 385. Scenario 278. Batches 2 (Allies) and 3 (neutrals) are not done.
+
+## 15 November 2026 — leftovers, task (d): official sources for the allegiance dates (branch `leftovers-1115`, fourth commit; roadmap 384, Scott t420u)
+
+Primary or official texts (Avalon Project, FRUS, Hansard) were added to the `reference_ids` of 22 rows of `data/nation_allegiance.csv` next to the Wikipedia references (none removed); 14 new references `R1200`-`R1208` and `R1210`-`R1215` (the Berlin surrender act is the existing `R666`). Each row note carries old value (reference list), new value and reason.
+
+- **No date changed.** Checked: UK 3 September 1939 (`R1200`), France 3 September 1939 at 5 p.m. (`R1201`), US 8 December 1941 (`R1202`), Italy co-belligerent 13 October 1943 (`R1205`, `R1206`), Belgium and the Netherlands 10 May 1940 (`R1208`), Norway 9 April 1940 (`R1215`), the end of the war 2 September 1945 on every Allied row with that end (`R1212`), Germany 8 May 1945 (`R666`, `R1210`).
+- **Differences kept as documented conflicts in the notes:** Italy start 10 June 1940 (declaration) against 11 June 1940 4:45 p.m. (the Italian note, `R1204`); Italy armistice in force 3 September 1943 (`R1207`) against announced 8 September 1943 (kept); Germany 7 May 02:41 (Reims, `R1210`) against 8 May (kept); RSI and Italy 29 April (signing) against 2 May 1945 (effect), `R1211`.
+- **Placeholder starts not replaced** (old value = new value = 1939-09-01, reason in each note): the neutral rows (the neutral status began before the table; the date of a neutrality proclamation is not the start of neutrality) and CZ (the sources date only the British recognition of the Provisional Government, 21 July 1940, `R1213`, `R1214`, not an Allied status; a candidate for Scott).
+- **Not found:** an official source for the RSI proclamation of 23 September 1943 (Wikipedia only), and for Italy's declaration of war on Japan.
+- Scenario 277 added.
+
+## 15 November 2026 — leftovers, task (c): Armeegruppe Student leftovers (branch `leftovers-1115`, third commit; roadmap 351, Scott t419u)
+
+Sources: FMS B-084, B-453 (Langhaeuser), B-762 (Prittwitz), B-414 (Geyer), B-283 and B-361 (Blumentritt) through the private notes with printed pages (all FMS manuscripts are one source family), CMH The Last Offensive ch. 17 (`R567`), Lexikon der Wehrmacht, II. Fallschirm-Korps (`R266`). Old value / new value / reason are in each record's note.
+
+- **`CR0787`** (6th Parachute Division -> XLVII Panzer Corps): `valid_to` old value blank, new **1945-03-10** (narrative), earliest end new 1945-03-04; reason: B-084 p. 16 (4 March) and B-453 pp. 1-2 (under the II Parachute Corps about 11 March).
+- **`CR1322` (new)** 6th Parachute Division -> II Parachute Corps (`GER-FJ-002C`), unspecified_subordination, from 1945-03-11 (narrative), end between 1945-03-25 and 1945-04-02; **`CR1323` (new)** -> LXXXVIII Corps (`GER-COR-088C`), from 1945-03-26 with latest start 1945-04-03, open at the last claim. Two readings kept (B-453 about 26 March; B-762 30 March-3 April); the overlap is listed in `command_relation_overlaps.csv` (transfer_dates_differ). No direct relation to Armeegruppe Student.
+- **`C8005`, `C8010`, `C7835`:** `parent_unit_id` old value blank, new values `GER-FJ-002C`, `GER-COR-088C`, `GER-COR-088C`; date, place and confidence unchanged.
+- **`CR1314`** end old blank, new **1945-04-06** (earliest 1945-04-02); **`CR1316`** end old blank, new **1945-04-10** (earliest 1945-04-02); links `C9453` and `C7969` now `asserts_start_and_end`. Reason: B-414 pp. 24-26 (staff given the Weser defence 6 April; Student to the First Parachute Army 10 April).
+- **`CR0606`** (II Parachute Corps -> First Parachute Army) stays open; new claim **`C9463`** (Lexikon, April 1945, 0.3, parent `GER-FJA-001A`) linked as observed_during. New link rows are appended at the end of `command_relation_claims.csv`.
+- **Lineage `UL026`** `GER-AG-STUDT` -> `GER-ARMY-BLUMT`, redesignation, 1945-04-06 (narrative; B-283 p. 103, B-414, B-361, CMH); `GER-ARMY-BLUMT` `formed_date` old blank, new 1945-04-06; both unit notes updated.
+- **Tests:** scenario 276 added; scenario 269 (CR1314 and CR1316 no longer open) and scenario 136 (C7835 now has a parent) adjusted with old value, new value and reason in the code.
+- **Not resolved:** the day the II Parachute Corps passed from the group to the First Parachute Army (2-10 April); the day the 6th Parachute Division moved to the LXXXVIII Corps (26 March-3 April); no second source family for these dates.
+
+## 15 November 2026 — leftovers, task (b): CR0950 re-checked, II Corps relation CR1321 (branch `leftovers-1115`, second commit; roadmap 352, Scott t418u)
+
+The source (de Lattre, The History of the French First Army, `R686`) is a borrow-only scan. Its full text cannot be fetched (HTTP 401) and I cannot drive the viewer, so the re-check used the private pass-2 notes (paraphrase with printed pages) of pp. 397-459; the book was **not re-opened**. Every row says so.
+
+- **`CR0950` (9th Colonial Division -> I Corps).** `valid_to` old value 1945-04-02 (basis narrative); new value **1945-03-29** (basis inferred); earliest end unchanged (1945-02-09); start unchanged. Reason: pp. 421 (plan of 28-29 March: the division is the II Corps passive flank), 424 (Monsabert orders the Leimersheim crossing on 30 March), 429 (Directive No. 8: the II Corps takes Karlsruhe with the division) and 430 (Valluy has the task from 30 March) put the division under the II Corps; the afternoon of 2 April (p. 435, de Lattre takes the division under direct Army orders) ends the II Corps link, so the first change had applied it to the wrong corps. The 29 March end is an inference (one corps at a time; the day the division left the I Corps is not stated). Link row `C1645` now `asserts_end`; the `C9307` link moved to `CR1321`.
+- **`CR1321` (new), 9th Colonial Division -> II Corps (`FR-COR-002C`),** operational_control, from 1945-03-30 (narrative, no later than that day), end between **1945-04-02** (de Lattre takes the division under Army orders that afternoon, p. 435) and **1945-04-04** (Karlsruhe falls, p. 436; Monsabert's Order No. 154 and Directive No. 8 keep it in the II Corps until then, pp. 429-430, 435; the western group under Valluy is separate from the II Corps on 4 April, p. 440). The two readings of p. 435 are not reconciled and are kept as a range. Old value none (the II Corps reading was an open conflict); new value this relation.
+- **`C9307`:** `parent_unit_id` old value blank, new value `FR-COR-002C`; date, place, confidence (0.3), activity and locator unchanged; reason: the crossing is made under the II Corps plan.
+- **Not resolved:** the date the division moved from the I Corps to the II Corps (before 30 March, after 9 February; the army moved the 2nd Moroccan Division on 18-19 March, p. 414, but no line names the 9th Colonial Division); the end of the II Corps link (2 to 4 April); the days after 2-4 April (Army orders, Valluy group, pp. 440, 453) and the I Corps plan of 18 April (p. 459) give no relation.
+- **Tests.** Scenario 271 changed (old: CR0950 ends 2 April, narrative, evidenced by C1645 and C9307, no II Corps relation; new: CR0950 ends 29 March, CR1321 added, chain answers for 15 March to 5 April; reason: this change).
+- **Next free ids.** Claim `C9463`, relation `CR1322`, place `PL4182`, reference `R1200`, conflict group `G129`, lineage `UL026`, scenario 276, roadmap 385.
+
+## 15 November 2026 — leftovers, task (a): command relations for the 157th Mountain and 16th Infantry Divisions (branch `leftovers-1115`, from main `6d045922`; roadmap 363, Scott t417u)
+
+One commit. Old value, new value and reason are also in the notes of every changed row.
+
+- **Relations.** `CR1317` (16th Infantry Division under Army Group G from the August 1944 Lexikon row, 15 August, closed 6 September), `CR1318` (under the LXVI Corps from 7 September 1944, Cole p. 188 and the Lexikon September row, open at the last claim), `CR1319` (157th Mountain Division under Armee Ligurien from September 1944, closed 16 December) and `CR1320` (under the XIV Panzer Corps from 17 December 1944, open). Old: no relation for either unit (scenario 272 checked for none); new: these four; reason: roadmap 363 point (b). The 157th relations use `unspecified_subordination` because the source says "unterstellt" and does not separate assigned from attached.
+- **Claims.** `C9459`, `C9460` (16th Infantry Division) and `C9461`, `C9462` (157th Mountain Division), all 0.3, each with the higher unit as `parent_unit_id`. `C9462` is the Italy row (theater mediterranean, place `PL4181` Bologna). The note of `C9455` (old: the renaming to the 8th Mountain Division "not entered"; new: points to lineage `UL025`; reason: now recorded).
+- **Units.** Placeholders `GER-ARMY-LIGUR` (Armee Ligurien), `GER-PZ-014C` (XIV Panzer Corps) and `GER-GEB-008D` (8th Mountain Division, formed 1945-02-27); old: no records; new: three placeholder rows; reason: the relations need resolvable higher units and the renaming needs a successor. The unit notes of `GER-GEB-157D` and `GER-INF-016D` were updated (old value, new value, reason in the text).
+- **Lineage and reference.** `UL025` (157th Mountain -> 8th Mountain, redesignation, 27 February 1945); new reference `R1199` (German Wikipedia, 8. Gebirgs-Division (Wehrmacht)); new place `PL4181`.
+- **Verified in the source.** Cole, The Lorraine Campaign, ch. 4 p. 188 (R415): 7 September, General Lucht was given permission to use the 16th Division; the earlier notes quoted this statement without a page check.
+- **Tests.** Scenario 275 added; scenario 272's last check changed (old: no relation for the new units; new: the four relations; reason: they were added).
+- **Next free ids.** Claim `C9463`, relation `CR1321`, place `PL4182`, reference `R1200`, conflict group `G129`, ship class `SC212`, aircraft type `AT143`, lineage `UL026`, scenario 276, roadmap 385.
+
 ## 15 November 2026 — allegiance follow-up (branch `allegiance-followup`, stacked on PR #97 and #96; roadmap 384, Scott t415u)
 
 Three parts, one commit each. The parts are listed below, newest first.

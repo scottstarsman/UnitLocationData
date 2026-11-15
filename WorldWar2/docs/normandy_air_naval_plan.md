@@ -1,6 +1,6 @@
 # Normandy air and naval pass: preparation and plan (branch `normandy-air-naval-prep`, 15 November 2026)
 
-Scott asked on 15 November 2026 (t410u) for preparation before the larger Normandy ship and aircraft pass. This file is **prep, not data entry**: no unit, claim, place or relation is added by this branch. Section 1 (source inventory) is written first; the table gaps and the plan follow in later commits of the same branch.
+Scott asked on 15 November 2026 (t410u) for preparation before the larger Normandy ship and aircraft pass. This file is **prep, not data entry**: no unit, claim, place or relation is added by this branch. Section 1 is the source inventory (commit 1 of the branch), section 2 the table gaps (commit 2), sections 3-7 the plan (commit 3).
 
 **Scope decisions (Scott, 15 November 2026, t410u).**
 
@@ -79,3 +79,107 @@ No naval or air **order of battle** is held as such: the repo has the pilot's 34
 - **Reachable (opened for the facts above):** 16 sources: the Admiralty Battle Summary 39 (both volumes), Morison XI, NHB booklet, Roskill III/2, Maurer units, Maurer squadrons, Craven and Cate III, the Combat Chronology, wartimes.ca 2nd TAC, rafweb, Project Overlord, German Wikipedia Kriegsgliederung, HyperWar GAF, oocities LF3, Wikipedia pages, uboat.net.
 - **Missing:** the ANCXF Report itself (the Battle Summary is its published digest), the AIR 27 ORBs, the Luftwaffe returns, the niehorster tree and the Kriegsmarine daily chronologies.
 - Everything reachable is either public domain or facts-only. The single point of weakness is the **RAF below wing level**: squadron stations rest on the wartimes.ca chart and rafweb, with Wikipedia as a second family.
+
+## 2. Table gaps (seeded 15 November 2026)
+
+Method: the ships and aircraft types named in the orders of battle read in section 1 (Admiralty Battle Summary 39 Appendices A-C, Morison XI Appendix I, the NHB booklet, the German Wikipedia Kriegsgliederung and the wartimes.ca 2nd TAC chart) were compared with `data/ship_classes.csv` (SC001-SC200) and `data/aircraft_types.csv` (AT001-AT134). Class and type pages were fetched again on 15 November 2026 (`accessed_date` 2026-11-15; the class notes say "15 November 2026"). Same conventions as the earlier seeding (`docs/air_naval_pilot.md` 8.2 and 9.2): infobox or Specifications text as written, each figure with its own `reference_id`, a key absent when the page gives nothing, no estimated figure, a family row with figures only on the sub-type or variant row.
+
+**Added (commit 2): 11 ship classes `SC201`-`SC211`, 8 aircraft types `AT135`-`AT142`, 10 references `R1169`-`R1178`** (Wikipedia, family `wikipedia`). The Allied destroyer classes below were **not** attached to `SC102` (V and W class) or `SC103` (S class (1917)): both are First World War classes, and the Neptune destroyers of the same letters are the War Emergency Programme classes of 1942-1944.
+
+| Row | Why it is needed (ships named in the sources) |
+|---|---|
+| `SC201` Wyoming class (US BB) | USS Arkansas, TF 124 bombardment group (Morison XI Appendix I; Admiralty Battle Summary 39 App. B(1)) |
+| `SC202` Emerald class (UK CL) | HMS Emerald (Bombarding Force K) and HMS Enterprise (Force A) |
+| `SC203` O and P class with `SC204` O class (4 inch), `SC205` O class (4.7 inch), `SC206` P class (UK DD) | HMS Onslow, Onslaught, Offa, Opportune, Orwell (Battle Summary 39 App. A(1), fleet destroyers); the page gives three infoboxes, so the family row has none and the three sub-type rows carry theirs; the sources do not say which O-class ships carried 4 inch guns, so no ship is tied to a sub-type yet |
+| `SC207` S and T class (UK DD) | HMS Saumarez, Scorpion, Scourge, Serapis, Swift and the Norwegian Stord and Svenner (Force D, NHB booklet) |
+| `SC208` U and V class (UK DD) | HMS Grenville, Ulster, Ulysses, Undaunted, Undine, Urania, Urchin, Ursa (Force K), Venus, Vigilant, Verulam, Virago; the page lists HMCS Algonquin (ex-Valentine) and Sioux (ex-Vixen) as the Canadian V class |
+| `SC209` W and Z class with `SC210` W class, `SC211` Z class (UK DD) | HMS Kempenfelt (W class) and the other Emergency flotilla ships |
+| `AT135` Fw 200 Condor with `AT136` Fw 200 C-3/U4 (Germany) | KG 40 (X. Fliegerkorps), German Wikipedia Kriegsgliederung: 45 Fw 200C on 6 June 1944 |
+| `AT137` Ju 290 with `AT138` Ju 290 A-5 (Germany) | Fernaufklärungsgruppe 5 (6 Ju 290A-5 and 4 Ju 290A-7) |
+| `AT139` LeO 45 with `AT140` LeO 451 (France, built; flown by the Luftwaffe transport units) | III./TG 1 and IV./TG 4 (the German page says "LeO 45") |
+| `AT141` Seafire with `AT142` Seafire F Mk III (UK) | "Seafire LIII" appears three times on the 2nd TAC chart of 6 June 1944 (the squadrons are not yet identified; the page's Specifications section is headed F Mk III) |
+
+**Seen but not seeded (each needs a decision or a different source), carried into the open questions in section 7:**
+
+- **Ship type codes:** no `ship_type` for **monitors** (HMS Roberts, Erebus), **S-boats and R-boats**, and **landing ships and craft**; the pilot's section 6 chose the US hull codes. Monitors are single ships above the DE threshold, so they need a code (proposal: `BM`).
+- **Nationality codes** missing from `data/nationalities.csv`: Norway (Stord, Svenner, Glaisdale; 331 and 332 Squadrons), Australia (453 Squadron), New Zealand (485 Squadron), Italy (the SM.82 Marsupiale of TG 1; the German Wikipedia page counts 16), South Africa (SANF minesweepers Recruit, Rifleman), 164 Squadron, with its Argentine-British volunteers, is an RAF squadron and needs no code.
+- **Aircraft types not yet read in any source of section 1:** the Lockheed Hudson, Fairey Swordfish, Grumman Avenger and Avro Anson (RAF and Fleet Air Arm types; the Wikipedia Specifications section of the Hudson is the Mk I, not a 1944 mark). The Coastal, Transport and Fleet Air Arm squadron lists of chunks 6 and 8 decide which are needed.
+- **Variants** named in the sources and left as leftovers: Spitfire Mk IX (row `AT103` is the LF Mk IXe), Mk XI and Mk VII, Mosquito NF Mk XIII/XVII and Mk IX, Mustang I/IA/II (Allison), Auster Mk IV, Fw 190G-3 and G-8, Do 24, Bv 138, Ju 88R/C sub-variants, Lancaster/Halifax marks in the Bomber Command squadrons, Dakota and Stirling marks of 38 and 46 Group. A variant row is added when a claim needs its type link and the page names a specification.
+- **Class gaps likely to appear** (not yet read at class level): the Canadian ex-Royal Navy destroyers (HMCS Ottawa, Kootenay, Chaudière, Gatineau, Skeena, St. Laurent), the Free French and Norwegian Hunt variants beyond `Hunt class` Type I-IV, `Adventure` and `Albatross` (single-ship classes), the Isles-class trawlers and the Fairmile boats (below the DE threshold, flotilla level), and the German `Sperrbrecher`, `Vorpostenboot` and `Artillerieträger` types (auxiliaries, flotilla level). Chunk 1 reads the exact class of each ship as it enters the pass.
+- **Source quality:** all 19 new rows rest on English Wikipedia only (second source family missing for the figures); stronger sources (Jane's, navypedia, NHHC DANFS, Air Ministry pilot's notes) stay open as in roadmap 375 (l).
+
+## 3. Scope
+
+- **Window (default): 1 June to 31 August 1944** for all forces. Claims before 1 June are entered only where a unit's state on 1 June needs them (a unit's formation, an assignment still in force). DRAGOON (15 August) and the Mediterranean forces are out of this pass; a Normandy unit that ends or leaves the window is not followed beyond it (leftover list).
+- **Ships:** every commissioned combatant of destroyer-escort size or larger is its own unit (`docs/air_naval_pilot.md` 6.1): battleships, monitors, cruisers, destroyers, escort destroyers, sloops, frigates, corvettes, fleet minesweepers, gunboats, submarines. Landing ships and craft, motor torpedo boats and gunboats (MTB, MGB, ML), S-boats, R-boats, trawlers, auxiliaries and the small minesweepers (MMS, BYMS) are **flotilla level** (`naval_division`), with a single craft only when a source singles it out and it traces to a parent.
+- **Aircraft:** down to **squadron** level (USAAF and RAF squadron, Luftwaffe Staffel where a source lists it), with groups and wings above them. A Luftwaffe Staffel is listed in the source of 6 June 1944 only at Gruppe level; Staffel rows follow only where a second source gives them (see open question 3).
+- **Domain:** air and naval units go to `build/other_domains/` (rule 22 and the air-naval pilot section 8); the grid and the main outputs do not move, so each chunk's grid compare is expected to show **0 changes**. Coastal artillery and flak stay ground (rule 22).
+- **Claims first, strength later:** a unit needs a dated location claim before it can carry a relation (the evidence rule, pilot 2.9). Aircraft counts (`strength_json.aircraft`) and refits come last (chunk 9) and only from a source that gives them.
+
+## 4. Unit list by force
+
+Counts are **estimates read from the sources of section 1** (OCR for the Battle Summary, so ±10%); chunk 1 of each force makes the exact count before entering anything. "Id pattern" follows `docs/air_naval_pilot.md` 8.1; patterns marked *new* extend it and need Scott's approval with this plan.
+
+### 4.1 Allied naval
+
+| Force | Units | Principal source(s) | Id pattern | Estimate |
+|---|---|---|---|---|
+| Eastern Task Force (RN): Force S, J, G (assault forces, `task_group`); Bombarding Forces D, E, K; Force L and the follow-up forces | task groups; 4 battleships and 2 monitors (some in Western reserve); about 20 cruisers; destroyer flotillas as `naval_division`; every fleet destroyer and Hunt escort destroyer as a ship; sloops, frigates, corvettes (including the RCN, RAN, SANF, French and Norwegian crews); fleet minesweepers; submarines; X-craft | Admiralty Battle Summary 39 App. A(1)-A(4) (class lists and allocations); NHB booklet; Morison App. I for the US-flag ships | ship `UK-<type>-<NAME>` (`UK-CL-ARETHUSA`, as the pilot); flotilla *new* `UK-DF-<nn>` (destroyer), `UK-MSF-<nn>` (minesweeping), `UK-MLF-<nn>` (landing-craft flotilla by number), `UK-CF-<nn>` (coastal forces: MTB, MGB, ML); task groups `UK-TF-<letter>`, `UK-BF-<letter>` (existing) | about 200 ship units plus about 60 flotillas |
+| Western Task Force (US): TF 122, 125 (Utah), 124 (Omaha), 126, 129; bombardment, escort, minesweeper and support groups | task groups; Texas, Arkansas, Nevada, Augusta, Tuscaloosa, Quincy, the destroyers and destroyer escorts | Morison XI App. I; Battle Summary 39 App. B(1); NHHC *Operation NEPTUNE* ch. 9 (`R902`); NHHC DANFS | ship `US-<type>-<hull as 3 digits>` (pilot); task groups `US-TG-<group with dashes>` (pilot) | about 34 US ships listed in App. B(1) plus about 18 other Allied ships under US command; about 20 groups |
+| Other Allied naval (French, Dutch, Polish, Norwegian, Canadian ships) | the ships under the RN forces above, listed under their own flag | Battle Summary 39 App. C | `FR-`, `NL-`, `POL-`, `CAN-` plus type and name; Norway needs a code (open question 4) | about 20 |
+| Landing craft and ships (ETF and WTF) | assault groups and landing-craft flotillas | Battle Summary 39 App. A(3); Morison App. I; Ellis vol. I App. II | as the flotillas above | about 40 flotillas |
+
+### 4.2 Allied air
+
+| Force | Units | Principal source(s) | Id pattern | Estimate |
+|---|---|---|---|---|
+| USAAF Ninth Air Force (IX TAC, XIX TAC, IX Bomber Command (19th Air Division), IX Troop Carrier Command, 10th Photographic Group): groups, squadrons | fighter, medium and light bomber groups and squadrons; troop carrier groups and squadrons; reconnaissance | Maurer *Combat Units* (group) and *Combat Squadrons* (squadron: assignment, dated stations, aircraft); Craven and Cate III; the airfield list `R898`; Combat Chronology | group `US-FG-<nnn>` (existing for the 366th), bomb group `US-BG-<nnn>`, troop carrier `US-TCG-<nnn>`, squadron `US-FS-<nnn>`, `US-BS-<nnn>`, `US-TCS-<nnn>` (the squadron prefix follows the 390th, `US-FS-390`); commands `US-TAC-<nnn>C` (existing) | to be counted from Maurer (a few dozen groups, about 3-4 squadrons each) |
+| USAAF Eighth Air Force (VIII Bomber Command: three bomb divisions; VIII Fighter Command): groups, squadrons | heavy bomb groups and squadrons; fighter groups | Maurer; Craven and Cate III; Combat Chronology | as above | about 40 bomb groups and 15 fighter groups (to be counted); only the groups that flew against Normandy targets in the window |
+| RAF 2nd Tactical Air Force (No. 2, 83, 84, 85 Group), ADGB (Fighter Command; the No. 11 Group page was checked), Bomber Command, Coastal Command, Transport (No. 38, 46 Group): groups (`air_wing`), wings (`air_group`), squadrons | 83 Group: 29 squadrons and 5 AOP squadrons on 6 June (counted from the wartimes.ca chart and the dday-overlord order of battle); 84 Group: 29 squadrons; 2 Group about 11; the others to be counted | wartimes.ca 2nd TAC chart; rafweb group pages; Project Overlord; Wikipedia group and station pages; Craven and Cate; the ORBs (AIR 27) are not reachable | squadron `UK-SQN-<nnn>` (RAF), `CAN-SQN-<nnn>`, `POL-SQN-<nnn>`, `CZ-SQN-<nnn>`, `FR-SQN-<nnn>`, `NL-SQN-<nnn>`, `BEL-SQN-<nnn>` (nationality prefix by squadron flag); wing `UK-WG-<nnn>`; group `UK-GRP-<nnn>` (all *new*; Norwegian, Australian and New Zealand squadrons wait for codes) | about 250 squadrons in the window; the 2nd TAF and ADGB first (about 120) |
+| Fleet Air Arm squadrons (Seafire spotting squadrons on the 2nd TAC chart, Swordfish, escort carriers) | squadrons | the 2nd TAC chart; the NHB booklet "contribution of Naval Aviation"; Battle Summary 39 | `UK-SQN-<nnn>` with a `Fleet Air Arm` note, or a `UK-FAA-<nnn>` prefix | open question 3 |
+
+### 4.3 German
+
+| Force | Units | Principal source(s) | Id pattern | Estimate |
+|---|---|---|---|---|
+| Luftflotte 3 (existing unit): IX. and X. Fliegerkorps, II. Fliegerdivision, II. Jagdkorps, Fliegerführer and Jagdfliegerführer; Geschwader, Gruppen, Staffeln; the units that arrived from Germany under *Dr. Gustav West* | the units of the German Wikipedia Kriegsgliederung (about 35 Gruppen, with aircraft on hand by type); later arrivals from the HyperWar GAF text and the oocities LF3 tables | German Wikipedia (organisation 6 June 1944); HyperWar *G.A.F. and the Invasion of Normandy*; oocities LF3; Wikipedia unit pages; niehorster (once a route to its tree exists) | `GER-<type>-<nnn>` (pilot: `GER-JG-026`, `GER-JGGR-026-2`); Staffel `GER-JGST-026-4` pattern *new* | about 35 Gruppen, about 100 Staffeln (second source needed) |
+| Kriegsmarine: Marinegruppenkommando West (existing `GER-MGW-000H`); 5. Torpedobootsflottille (T 28, Möwe, Jaguar, Kondor, Falke), 8. Zerstörerflottille (Z 23, Z 24, Z 32, ZH 1 and others of the Biscay group); S-boat flotillas 2, 4, 5, 8, 9; Sicherungs-Divisionen and their Minensuchflottillen, Räumbootsflottillen, Vorpostenflottillen; the U-boats of the Biscay and Channel groups | ships DE or larger as units (torpedo boats, destroyers, U-boats); the rest as flotillas | German Wikipedia Kriegsgliederung; NHB chronology (ships sunk and dates); uboat.net (boat lists and patrols); Battle Summary 39 App. E (German disposition) | `GER-DD-Z<nnn>` (Z 23), `GER-TB-T<nnn>` (T 28), `GER-TB-<NAME>` (Möwe), U-boat `GER-SS-U<nnn>` (pilot); flotillas `GER-TBF-<nnn>` (pilot), `GER-SBF-<nnn>`, `GER-MSF-<nnn>` *new* | about 40 ships, about 40 flotillas, plus the U-boats the patrol lists give |
+
+### 4.4 Id ranges
+
+Claim, place, relation, reference and group ids are allocated from the next free id of the repo at the time of each chunk (the repo convention; ranges cannot be reserved across branches). At the end of this branch the next free ids are **`C9459`, `PL4181`, `CR1317`, `R1179`, `G129`, `SC212`, `AT143`, `UL025`, scenario 273, roadmap 384**. Planning budget, to be re-estimated after chunk 1: one dated claim per unit as a minimum, two to five per ship or squadron in the window; the new units add rows to `data/units.csv` (domain `naval` or `air`), not to the main outputs.
+
+## 5. Order of work (chunks)
+
+One branch and one PR per chunk, separate commits per force within it, the full verification set at each (including a grid compare that must show 0 changes).
+
+| Chunk | Content | Why in this order |
+|---|---|---|
+| 1 | **Western Task Force, US ships**: task forces and groups, the 34 US ships of App. B(1) and the Allied ships under US command; D-Day and the Cherbourg bombardment (25 June) as dated claims with `sea_position` places (cap 0.5) | the best-documented force (Morison, NHHC, DANFS, one appendix): proves the method for ships at scale |
+| 2 | **Eastern Task Force, Royal Navy**: Bombarding Forces D, E, K, escort and screening destroyers, then sloops, frigates, corvettes and the fleet minesweepers; the Battle Summary 39 allocations as claims and relations | the largest ship list; needs the monitor code and the nationality codes |
+| 3 | **Flotillas**: minesweeping, MMS and BYMS, coastal forces, landing-craft and LST groups, assault groups (ETF and WTF) | flotilla-level units under the task groups of chunks 1 and 2 |
+| 4 | **Kriegsmarine West**: 5. Torpedobootsflottille, destroyers, S-boat and Sicherungs flotillas; German losses of the window (6 June to 24 August) from the NHB chronology | needs the S-boat and R-boat code decision |
+| 5 | **USAAF Ninth Air Force**: groups and squadrons with their dated stations (Maurer) and aircraft types; IX TAC and XIX TAC chains | extends the 366th pilot; Maurer and Craven and Cate are public domain |
+| 6 | **RAF 2nd TAF and ADGB**: groups, wings and squadrons of 6 June, then the station moves through the window | wartimes.ca and rafweb give the 6 June structure; the station dates need a second source |
+| 7 | **Luftwaffe Luftflotte 3**: Fliegerkorps, Geschwader and Gruppen of 6 June, the arrivals of 7 June onward, strength by type where a source gives it | after the Allied air units, because their claims cross-reference |
+| 8 | **USAAF Eighth Air Force, RAF Bomber, Coastal and Transport Commands**: groups and squadrons that flew against Normandy targets | large and lower priority for the ground-location question |
+| 9 | **Strength and refits**: `strength_json.aircraft`, naval refits | only from sources that give figures; none yet |
+
+## 6. Rules carried into the pass (from the pilot and the standing rules)
+
+Never guess; every value has its source and a confidence by the rubric; sea positions are `sea_position` places, capped at 0.5 with a `coord_source_note`; the 1 June station of a flying unit uses `location_represents` `base`; a relation needs an evidence claim; a source conflict is kept as alternates in a conflict group; a unit below regiment needs a traceable parent; out-of-scope claims are recorded (rule 22); ids are never reused; private reading notes stay in the Drive folder, never committed (rule 24).
+
+## 7. Open questions for Scott
+
+1. **Window.** Confirm 1 June to 31 August 1944 (the default stated here), or choose another.
+2. **Monitors and small craft codes.** Approve a `ship_type` code for monitors (proposal `BM`: Roberts, Erebus) and decide whether S-boats and R-boats (proposal: flotilla level only, no code) and landing ships (flotilla level) need codes of their own.
+3. **Air depth.** Squadron level is agreed for the USAAF and RAF. For the Luftwaffe, Staffel rows rest on one or two weak sources (the Wikipedia and oocities tables stop at Gruppe or give the Staffeln without dates): enter Gruppe only, or Staffel where a second source confirms it. Are **Fleet Air Arm squadrons** (Seafire, Swordfish) in scope?
+4. **Nationality codes.** Add Norway, Australia, New Zealand, South Africa and Italy to `data/nationalities.csv` (the squadron and ship prefix must equal the code)? Without them 331, 332, 453 and 485 Squadrons, the Norwegian ships and the SM.82 cannot be entered.
+5. **Id patterns marked *new*** in section 4 (flotilla, wing, group, squadron, Staffel, S-boat and minesweeper flotilla prefixes): approve, or choose others, before `schema/README.md` writes them down.
+6. **Class conflicts.** The NHB booklet calls HMCS Algonquin and Sioux 'Tribal' class; Wikipedia (and the transferred names Valentine and Vixen) put them in the V class (`SC208`); the Battle Summary lists them without a class. Policy proposal: the ship's own class page and Admiralty lists decide, the secondary booklet is recorded as a conflict in the unit note; a ship's class has no alternates column, so the note carries it.
+7. **Stronger sources.** The 19 new rows rest on Wikipedia alone; keep that for now, or replace them (Jane's, Air Ministry pilot's notes) before the open-source release?
+8. **Public-domain versus copyrighted sources.** The pass would read Morison, Roskill, Ellis and the Admiralty Battle Summary (copyright, facts only) as primary sources for ships; the RAF below wing level rests on third-party charts. Accept, or hold back the RAF squadron stations until a second family is found?
+
+## 8. Not done in this branch
+
+No unit, claim, place or relation is entered; no `scripts/` or schema change (the one change to a test is scenario 256, whose list of aircraft nationalities gains France). The Battle Summary text, the Morison, Maurer, Craven and Cate and other downloads used for this inventory are kept in scratch space and are not committed.

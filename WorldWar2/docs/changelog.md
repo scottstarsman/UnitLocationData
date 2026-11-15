@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — Normandy air and naval pass: preparation (branch `normandy-air-naval-prep`)
+
+Scott asked (t410u) for preparation before the larger Normandy ship and aircraft pass: ships DE or larger as units with landing craft at flotilla level, aircraft down to squadron level, window 1 June to 31 August 1944 (default). Prep only: no unit, claim, place or relation was entered.
+
+- **New `docs/normandy_air_naval_plan.md`:** source inventory (held, reachable, missing; URL and rights for each), table gaps, scope, unit list by force with id patterns and estimates, nine chunks, eight open questions for Scott. Roadmap item **383**; roadmap 375 (l) updated.
+- **Ship classes `SC201`-`SC211`** (old value: none; new value: 11 rows; reason: ships named in the Neptune orders of battle had no class): Wyoming class (US BB), Emerald class (UK CL), O and P class with three sub-type rows, S and T class, U and V class, W and Z class with two sub-type rows (UK DD). The four destroyer classes are the 1942-1944 War Emergency Programme classes, kept apart from the First World War `SC102` V and W class and `SC103` S class (1917). Figures as in the earlier seeding: infobox text as written, one reference per figure, accessed 15 November 2026.
+- **Aircraft types `AT135`-`AT142`** (old value: none; new value: 8 rows): Fw 200 Condor with the C-3/U4 variant, Ju 290 with the A-5, LeO 45 (France) with the LeO 451, Seafire with the F Mk III; figures from each page's Specifications section for the named variant. **References `R1169`-`R1178`** (Wikipedia, 15 November 2026).
+- **`scripts/semantic_tests.py` scenario 256:** the expected list of aircraft nationalities gains France (old value `['Canada', 'Germany', 'UK', 'US']`, new value `['Canada', 'France', 'Germany', 'UK', 'US']`; reason: the LeO 451 is French-built). No other test or script changed.
+- **Not seeded (open questions in the plan):** monitors, S-boats, R-boats and landing craft (no `ship_type` code), Norway, Australia, New Zealand, South Africa and Italy (no nationality code), the Hudson and other types no source of the inventory names.
+- **Checks:** the full verification set passes; the grid compare against the previous grid shows 0 changes (new rows are other-domain tables). Next free ids: `C9459`, `PL4181`, `CR1317`, `R1179`, `G129`, `SC212`, `AT143`, `UL025`, scenario 273, roadmap 384.
+
 ## 15 November 2026 — successors of the 157th and 158th Reserve Divisions (branch `small-fixes-1114`, task 4 of 4)
 
 Roadmap 363 (opened 9 November): the 157th Reserve Division became the 157th Mountain Division on 1 September 1944 and the 158th Reserve Division merged into the new 16th Infantry Division; neither successor had a record, so no lineage row existed. Scott approved the task. Sources read again: the Lexikon der Wehrmacht pages for the 157th and 158th Reserve Divisions, the 16th Infantry Division and the 16th Luftwaffe Field Division; CMH Riviera to the Rhine ch. 8 (`R428`), Breakout and Pursuit ch. 28 (`R405`), Cole, The Lorraine Campaign ch. 4 (`R415`); English Wikipedia (8th Mountain Division) for context only.

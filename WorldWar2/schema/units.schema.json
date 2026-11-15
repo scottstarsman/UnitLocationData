@@ -175,7 +175,7 @@
     {
       "name": "ship_type",
       "type": "string",
-      "description": "Ship type of a unit with echelon naval_unit (vocabulary ship_type: US hull codes BB, BC, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS). Blank for every other echelon. When ship_class_id is set it must equal the ship_type of that class.",
+      "description": "Ship type of a unit with echelon naval_unit (vocabulary ship_type: US hull codes BB, BC, BM, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS). Blank for every other echelon. When ship_class_id is set it must equal the ship_type of that class.",
       "vocabulary": "ship_type"
     },
     {

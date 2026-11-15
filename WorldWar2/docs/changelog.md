@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — Scott's answers on the Normandy prep (branch `normandy-air-naval-prep`, one more commit; t410u-t412u)
+
+Decisions recorded in section 7 of `docs/normandy_air_naval_plan.md` (all nine entries marked answered; the plan's "new" and "proposal" wording updated). No unit, claim, place or relation changed.
+
+- **Window** 1 June to 31 August 1944 confirmed (old: executor's default; new: confirmed).
+- **`ship_type` `BM` (monitor)** added to `schema/vocabularies.json`, the `units.schema.json` description and `schema/README.md` (old: 16 codes; new: 17; reason: HMS Roberts and Erebus need a code; Scott approved). Test expectation of the `ship_type` vocabulary in `scripts/semantic_tests.py` gains `BM` (old value without it). S-boats, R-boats and landing ships stay flotilla level, no code.
+- **Nationalities `NOR`, `AUS`, `NZ`, `SAF`** (Norway, Australia, New Zealand, South Africa; Allied, kind nation) added to `data/nationalities.csv` (old: 10 rows; new: 14; reason: squadrons 331, 332, 453, 485 and the Norwegian and South African ships). **Italy not added:** the table allows one `alliance` value and Italy changed sides on 8 September 1943; open question 9 in the plan, to be answered before the `IT` row (first step of the chunk that needs the SM.82).
+- **Id patterns** (UK-DF/MSF/MLF/CF, US-BG/TCG/FS/BS/TCS, UK-GRP/WG, `<NAT>-SQN`, UK-FAA, GER-JGST, GER-SBF/MSF) written into `schema/README.md` (unit_id pattern, "Naval and air id patterns").
+- **Luftwaffe depth:** Staffel only with a second source, otherwise Gruppe; Fleet Air Arm squadrons in scope as `UK-FAA-<nnn>`. **Class conflicts:** the ship's own class page decides, the other source goes in the unit note as a conflict. **Wikipedia-only table rows** and **RAF squadron stations from the wartimes.ca chart plus Wikipedia** accepted for now.
+- Next free ids unchanged (`C9459`, `PL4181`, `CR1317`, `R1179`, `G129`, `SC212`, `AT143`, `UL025`, scenario 273, roadmap 384).
+
 ## 15 November 2026 — Normandy air and naval pass: preparation (branch `normandy-air-naval-prep`)
 
 Scott asked (t410u) for preparation before the larger Normandy ship and aircraft pass: ships DE or larger as units with landing craft at flotilla level, aircraft down to squadron level, window 1 June to 31 August 1944 (default). Prep only: no unit, claim, place or relation was entered.

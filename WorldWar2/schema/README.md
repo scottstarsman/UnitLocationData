@@ -160,7 +160,7 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 
 `scope` (air-naval schema pass, 13 November 2026; vocabulary `scope`): blank or `in_scope` (the default) or `out_of_scope`. A unit marked `out_of_scope`, its claims and its command relations are written to `build/other_domains/` and stay out of the main outputs and the who_controls grid, whatever the unit's `domain` (standing rule 22); coverage and balance figures for out-of-scope areas are labelled "incidental, not surveyed". The main `build/units.csv` and `units.json` leave out `domain`, `scope`, `ship_type`, `hull_number` and `ship_class_id`; `build/other_domains/units.csv` lists them.
 
-`ship_type`, `hull_number`, `ship_class_id` (same pass): only on a unit with echelon `naval_unit` (a ship), blank elsewhere. `ship_type` is a US hull code (vocabulary `ship_type`: BB, BC, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS; national terms stay in the note; the validator warns when a ship has none). `hull_number` is free text as the source gives it (BB-35, L26, 03) and not a key. `ship_class_id` (SC###) links to `data/ship_classes.csv`; the class must exist and its `ship_type` must equal the unit's. The naval echelons (`naval_unit`, `naval_division`, `naval_squadron`, `task_group`, `fleet`) need domain `naval` and have no id letter.
+`ship_type`, `hull_number`, `ship_class_id` (same pass): only on a unit with echelon `naval_unit` (a ship), blank elsewhere. `ship_type` is a US hull code (vocabulary `ship_type`: BB, BC, BM, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS; national terms stay in the note; the validator warns when a ship has none). `hull_number` is free text as the source gives it (BB-35, L26, 03) and not a key. `ship_class_id` (SC###) links to `data/ship_classes.csv`; the class must exist and its `ship_type` must equal the unit's. The naval echelons (`naval_unit`, `naval_division`, `naval_squadron`, `task_group`, `fleet`) need domain `naval` and have no id letter.
 
 ### data/aircraft_types.csv (hand-maintained; `schema/aircraft_types.schema.json`; air schema pass, 13 November 2026)
 
@@ -280,7 +280,7 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 
 `NATION-TYPE-NUMBER+ECHELONLETTER`, all upper case.
 
-- Nation: the `code` of the unit's row in `data/nationalities.csv`: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF). The validator requires the prefix to equal the code of the unit's nationality. The id is an opaque stable key: the attributes it spells (nation, type, echelon letter) are not re-derived and the id is never renamed when they change.
+- Nation: the `code` of the unit's row in `data/nationalities.csv`: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF), and since 15 November 2026 `NOR`, `AUS`, `NZ`, `SAF` (no unit yet). The validator requires the prefix to equal the code of the unit's nationality. The id is an opaque stable key: the attributes it spells (nation, type, echelon letter) are not re-derived and the id is never renamed when they change.
 - Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger, also Fallschirmjaeger corps), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West), `OKW`, `SHAEF`; placeholder additions: `VG` (Volksgrenadier division), `PG` (panzergrenadier), `SSGEB` (SS mountain), `SSGR` (SS grenadier), `LFD` (Luftwaffe field division), `RES` (reserve division), `DIV` (numbered or z.b.V. division), `PZB` (Panzer-Brigade), `PZA` (panzer army), `FJA` (parachute army), `AA` (Armee-Abteilung), `PZ`/`SSCOR`/`LFC` for panzer, SS and Luftwaffe field corps, `VAK` (Volks-Artillerie-Korps), `OBNW`/`WBN` (other HQs), `CDO` (commando brigade).
 - Echelon letter: `G` army group, `A` army, `C` corps, `D` division, `B` brigade, `H` other HQ (vocabulary `echelon_id_letter`). A regiment, a regiment-sized battle group (Kampfgruppe) and a battalion have **no** echelon letter: they are identified by the type code and the name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). The validator checks one direction: an id that ends in a digit and one of the six letters must have the matching echelon (so `...D` is a division). Divisions and larger formations that are only a placeholder may also be without a letter (for example `GER-DIV-172`; ids are never renamed). The one exception is the combat command: `US-CCA-002D` and `US-CCR-004D` end in the `D` of the division they belong to, and their echelon is `regiment/battle_group` (pattern `combat_command_pattern`).
 - Examples: `US-INF-029D`, `GER-PZ-021D`, `UK-ARM-011D`, `CAN-INF-003D`, `GER-SSPZ-001C` (I SS Panzer Corps), `GER-SSPZ-001D` (1st SS Panzer Division).
@@ -288,6 +288,21 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 - Battle groups and combat commands: `GER-KG-<NAME>` for a Kampfgruppe (for example `GER-KG-FREY`; unnamed ones use a number or parent code, for example `GER-KG-265`, `GER-KG-002PZ`) and `US-CCA-002D` for Combat Command A of the 2nd Armored Division. Their `echelon` is `regiment/battle_group` and the units.csv `parent_unit_id` points at the parent division (the organic parent).
 - A regiment or battalion that is only an opponent or a component has no echelon letter and the type names the arm: `GER-FJR-006` (6th Fallschirmjäger Regiment, echelon `regiment/battle_group`, the one value for a regiment and a regiment-sized battle group), `GER-SSHPZ-101` (SS Heavy Panzer Battalion 101, echelon `battalion`). Both placeholders keep their letterless ids because that is the convention, not an omission (review item 6).
 - The id is the same on every row of the unit and equals the claim file name.
+
+**Naval and air id patterns (approved by Scott 15 November 2026 for the Normandy air and naval pass; `docs/normandy_air_naval_plan.md` section 4).** The nation prefix is the `code` of the unit's nationality (so the squadron ids have the form `CAN-SQN-401`, `POL-SQN-302`, `NOR-SQN-331`, `AUS-SQN-453`, `NZ-SQN-485`); the validator requires it. The number is the unit's own number, zero-padded as in the examples; none of these ids has an echelon letter.
+
+| Unit | Pattern | Example |
+|---|---|---|
+| Royal Navy destroyer, minesweeping, landing-craft and coastal-forces flotillas (echelon `naval_division`) | `UK-DF-<nn>`, `UK-MSF-<nn>`, `UK-MLF-<nn>`, `UK-CF-<nn>` | none yet |
+| US bomb group, troop carrier group, fighter group | `US-BG-<nnn>`, `US-TCG-<nnn>`, `US-FG-<nnn>` (existing) | `US-FG-366` |
+| US squadron (fighter, bomb, troop carrier) | `US-FS-<nnn>`, `US-BS-<nnn>`, `US-TCS-<nnn>` | `US-FS-390` |
+| RAF group and wing (RAF group = `air_wing`, RAF wing = `air_group`) | `UK-GRP-<nnn>`, `UK-WG-<nnn>` | none yet |
+| Squadron of any air force | `<NAT>-SQN-<nnn>` with the squadron's flag | none yet (`CAN-SQN-401` and the like are the form) |
+| Fleet Air Arm squadron | `UK-FAA-<nnn>` (never `UK-SQN`, so the numbers cannot clash) | none yet |
+| Luftwaffe Staffel (only where a second source confirms it; otherwise the unit stops at Gruppe) | `GER-JGST-<nnn>-<n>` (type letters follow the Geschwader, `JG`, `KG`, ...) | `GER-JGST-026-4` (4./JG 26); Geschwader `GER-JG-026`, Gruppe `GER-JGGR-026-2` (existing) |
+| Kriegsmarine S-boat and minesweeper flotillas | `GER-SBF-<nnn>`, `GER-MSF-<nnn>` | none yet |
+
+Ships keep the pilot's patterns (`US-DD-<hull>`, `UK-CL-<NAME>`, `GER-DD-Z<nnn>`, flotilla `GER-TBF-<nnn>`; `docs/air_naval_pilot.md` 8.1). Where a source gives a ship's class differently from the ship's own class page, the class page decides and the other source is recorded as a conflict in the unit note.
 
 ## Free-text conventions
 
@@ -816,6 +831,7 @@ US hull classification codes for a unit with echelon `naval_unit` and for ship c
 |---|---|
 | `BB` | battleship |
 | `BC` | battlecruiser |
+| `BM` | monitor (added 15 November 2026) |
 | `CV` | fleet aircraft carrier |
 | `CVL` | light aircraft carrier |
 | `CVE` | escort carrier |

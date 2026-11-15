@@ -276920,6 +276920,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     6.6458,
+     48.9251
+    ]
+   },
+   "properties": {
+    "claim_id": "C9452",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "US-COR-021C",
+    "unit_name": "XXI Corps",
+    "nationality": "US",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Army",
+    "date": "1945-02-18",
+    "place_id": "PL2253",
+    "location_name": "Morhange, Moselle",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "XXI Corps back under the Seventh Army and moves to Morhange for a limited offensive",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-02-18",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1166;R453;R160;R1167;R002",
+    "source_locator": "R1166: History: XXI Corps (second paragraph); R453: p. 43; R160: Eastern France; R1167: corps list, XXI Corps entry; R002: Morhange, Moselle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      6.2928,
      51.7389
     ]

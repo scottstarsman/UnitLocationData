@@ -17,8 +17,8 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | France | army | 0 | 0 | 2 | 2 | 2 | 36 |
 | France | corps | 0 | 0 | 2 | 2 | 2 | 40 |
 | France | division | 0 | 0 | 12 | 12 | 10 | 254 |
-| Germany | army_group | 0 | 0 | 4 | 4 | 3 | 67 |
-| Germany | army | 0 | 0 | 17 | 17 | 10 | 344 |
+| Germany | army_group | 0 | 0 | 5 | 5 | 4 | 68 |
+| Germany | army | 0 | 0 | 17 | 17 | 10 | 343 |
 | Germany | corps | 1 | 0 | 46 | 47 | 41 | 846 |
 | Germany | division | 0 | 0 | 135 | 135 | 112 | 2612 |
 | Germany | brigade | 0 | 0 | 12 | 12 | 11 | 96 |
@@ -44,7 +44,7 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 | US | brigade | 0 | 0 | 3 | 3 | 0 | 20 |
 | US | regiment/battle_group | 0 | 0 | 3 | 3 | 0 | 19 |
 | US | battalion | 0 | 0 | 2 | 2 | 0 | 10 |
-| **All** | | **8** | **0** | **429** | **437** | **268** | **9404** |
+| **All** | | **8** | **0** | **430** | **438** | **269** | **9404** |
 
 ## Operations
 

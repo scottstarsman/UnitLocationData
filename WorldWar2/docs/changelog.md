@@ -2,6 +2,20 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 14 November 2026 — Armeegruppe Student gets a unit row (branch `small-fixes-1114`, task 1 of 4, from `main` `d505dd6e`)
+
+Roadmap 351 (opened 9 November): the Armeegruppe Student that FMS B-762 (`C7836`) and Stacey p. 550 (`C7581`) put LXXXVIII Corps under from 3 to 6 April 1945 had no unit row. Scott approved the task.
+
+- **New unit `GER-AG-STUDT`** (Armeegruppe Student, `army_group`, Army, `western_europe`, active, `formed_date` 1945-04-01, source FMS B-414 `R814`). Not a placeholder: it has a claim file, and two source families name it (FMS B-414/B-674 for the formation; FMS B-762 and Stacey `R668` p. 550 for the corps). No Lexikon page.
+- **Claim `C7968` retired, re-entered as `C9453`.** Old value: `C7968`, unit `GER-ARMY-BLUMT` (Army Blumentritt), echelon army, 2 April 1945, activation, Lingen (`PL0770`), 0.3. New value: `C9453`, unit `GER-AG-STUDT`, echelon army_group, same date, place, confidence, sources and text. Reason: the row is the formation of Armeegruppe Student, and `check_claim_ids` forbids reusing an id for another unit, so the old id is in `data/retired_claims.csv` with `C9453` as its replacement. The note of `C9453` carries the old and new values and the reason.
+- **New relation `CR1314`:** `GER-AG-STUDT` to `GER-AG-00HG` (Army Group H), `unspecified_subordination`, from 1945-04-01 (narrative, B-414 pp. 22-23, Anlage 2), open at the last claim.
+- **New relation `CR1315`:** `GER-COR-088C` to `GER-AG-STUDT`, `unspecified_subordination`, 1945-04-03 to 1945-04-06, both ends narrative (B-762 pp. 2 and 4; Stacey p. 550 as the second family). The hour of neither change is given, so both are boundary days (`CR0736` ends 3 April and `CR1188` starts 6 April). Geyer (B-414, B-674) lists the corps in the group from about 1 April; that date is not used and the difference is kept.
+- **New relation `CR1316`:** `GER-FJ-002C` (II Parachute Corps) to `GER-AG-STUDT`, from 1945-04-01 (latest 1945-04-02), open (B-414, one family).
+- **`CR0736` annotated** (data unchanged): its note said the Student relation was not entered for lack of a unit; it now points to `CR1315`.
+- **Not entered:** the 6th Parachute Division relation (approximate date, and it overlaps `CR0787` with no source dating the change; it reaches Student through the corps), any end for `CR1314`/`CR1316`, any change to `CR0606` (II Parachute Corps under the First Parachute Army, no source says when it left), and a lineage row to Army Blumentritt (B-414 does not say one formation was renamed). All left for Scott in roadmap 351.
+- **who_controls.** LXXXVIII Corps on 4 and 5 April 1945 is now answered through Armeegruppe Student (certain), then Army Group H; 3 and 6 April stay `possible` (both lines cover the change day). Before: on 4 and 5 April no relation covered the corps.
+- **Checks.** Scenario 269; the validator is unchanged at 352 warnings. Roadmap 351 closed.
+
 ## 14 November 2026 — Parent division answers for two Kampfgruppen (branch `kg-division-answer`, from `main` `1298290c`)
 
 Scott decided (14 November 2026) that `GER-KG-MEYER` and `GER-KG-002PZ`, and only those two, answer `who_controls` with their parent division, not with the corps link. A per-unit decision, not a change of the general rule (the organic fallback of the earlier entry below is unchanged for every other unit).

@@ -333300,47 +333300,6 @@
     ]
    },
    "properties": {
-    "claim_id": "C7968",
-    "conflict_group_id": null,
-    "claim_status": "preferred",
-    "unit_id": "GER-ARMY-BLUMT",
-    "unit_name": "Army Blumentritt (Armee Blumentritt)",
-    "nationality": "Germany",
-    "theater": "western_europe",
-    "echelon": "army",
-    "branch": "Army",
-    "date": "1945-04-02",
-    "place_id": "PL0770",
-    "location_name": "Lingen (Ems), Niedersachsen",
-    "location_represents": "headquarters",
-    "precision_km": 10,
-    "confidence": 0.3,
-    "event_type": "activation",
-    "current_activity": "Armeegruppe Student formed (LXXXVIII Corps, II Parachute Corps, WBN) with headquarters north of Lingen (Skizze 4)",
-    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
-    "operation": "Central Europe campaign",
-    "operation_type": "campaign",
-    "campaign": "Central Europe",
-    "operation_name": null,
-    "sub_operation_name": null,
-    "strength_status": "unknown",
-    "location_date": "1945-04-02",
-    "location_basis": "representative_point",
-    "location_temporal_offset_days": 0,
-    "reference_ids": "R814;R002",
-    "source_locator": "R814: German p.22-23 (Fold3 image 81-82), Skizze 4 (Fold3 image 132)"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     7.3166,
-     52.5225
-    ]
-   },
-   "properties": {
     "claim_id": "C7969",
     "conflict_group_id": null,
     "claim_status": "preferred",
@@ -333657,6 +333616,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R686;R782",
     "source_locator": "R686: pp. 430-431"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.3166,
+     52.5225
+    ]
+   },
+   "properties": {
+    "claim_id": "C9453",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-AG-STUDT",
+    "unit_name": "Armeegruppe Student (Army Group Student)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "army_group",
+    "branch": "Army",
+    "date": "1945-04-02",
+    "place_id": "PL0770",
+    "location_name": "Lingen (Ems), Niedersachsen",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "activation",
+    "current_activity": "Armeegruppe Student formed (LXXXVIII Corps, II Parachute Corps, WBN) with headquarters north of Lingen (Skizze 4)",
+    "operation_id": "OP-CAMP-CENTRAL-EUROPE",
+    "operation": "Central Europe campaign",
+    "operation_type": "campaign",
+    "campaign": "Central Europe",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1945-04-02",
+    "location_basis": "representative_point",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R814;R002",
+    "source_locator": "R814: German p.22-23 (Fold3 image 81-82), Skizze 4 (Fold3 image 132)"
    }
   },
   {

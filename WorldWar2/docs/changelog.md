@@ -2,6 +2,12 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — allegiance follow-up (branch `allegiance-followup`, stacked on PR #97 and #96; roadmap 384, Scott t415u)
+
+Three parts, one commit each. Part 1 is below; parts 2 and 3 are added to this section by their commits.
+
+- **Part 1, `RSI` code.** `data/nationalities.csv` gains `RSI` (Italian Social Republic, adjective `RSI`, `alliance` Axis, kind nation; old: 15 rows, new: 16; reason: the Social Republic's units fought on the German side and cannot share the Kingdom's `IT` row). `data/nation_allegiance.csv` gains one row: `RSI` Axis 23 September 1943 to 29 April 1945 (`R1198`, English Wikipedia: proclamation, collapse 25 April, surrender of RSI forces 29 April; the page calls it a puppet state of Nazi Germany). The two `IT` rows no longer say "no code yet". The split between `IT` and `RSI` is written in the note of `IT`: `IT` is the King's forces (Axis to 8 September 1943, co-belligerent from 13 October 1943), `RSI` the Social Republic's own army, navy, air force and party and police formations; a formation on both sides keeps its `IT` record to 8 September 1943 and gets an `RSI` re-formation with a lineage link (a convention for Scott to confirm). **No existing unit was reassigned: the dataset names no RSI unit** (a search of the unit table and claim files for the Social Republic, Monterosa, San Marco, Decima, Littorio, the Black Brigades and the like found none; the other "Italian" mentions are the Franco-Italian border). Scenario 273 gains the RSI dates and the nationality expectation gains `RSI` (old value without it).
+
 ## 15 November 2026 — dated nation allegiance table (branch `nation-allegiance`, stacked on PR #96; Scott t413u-t414u)
 
 The single `alliance` column of `data/nationalities.csv` cannot say that Italy changed sides or that the United States was neutral until December 1941. New table, table only; no unit, claim or build output changed.

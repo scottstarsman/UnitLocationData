@@ -12,6 +12,7 @@ An open, claim-based dataset of where World War II units were, when, and how sur
 data/claims/<nationality>/<unit_id>.csv   master copy: one file per unit, all claim columns
 data/units.csv                            unit table (one row per unit, including placeholder and parent-only units)
 data/nationalities.csv                    hand-maintained lookup table of nationalities (code = unit_id prefix, name, adjective, alliance); units, claims and operations refer to it
+data/nation_allegiance.csv                hand-maintained dated sides of each nation in a conflict (Allied, Axis, neutral, co-belligerent; nation code, valid_from, valid_to, references); not yet read by the build
 data/operations.csv                       hand-maintained table of operations, battles, phases and campaigns (parent chain, dates, sources); claims point at it through operation_id. Also operation_relations.csv (follows / concurrent_with / supports / related links) and operation_exceptions.csv
 data/places.csv                           hand-maintained table of places (ids PL0001...: canonical name, aliases, kind point / area / line, coordinates, country, region, coordinate source); every claim points at one with place_id
 data/command_relations.csv              hand-maintained master table of command relations (one dated interval per subject unit, higher unit and relationship; ids CR0001...); data/command_relation_claims.csv links each relation to the claims that list it (with what each claim stated), data/command_relation_overlaps.csv documents contradictory overlaps

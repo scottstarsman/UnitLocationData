@@ -535,10 +535,14 @@ def check_references(claims):
         if os.path.isfile(csv_path):
             for r in common.read_dicts(csv_path)[1]:
                 class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
+    allegiance_path = os.path.join(common.ROOT, 'data', 'nation_allegiance.csv')   # added 15 November 2026: its rows cite references too
+    if os.path.isfile(allegiance_path):
+        for r in common.read_dicts(allegiance_path)[1]:
+            class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
     for m in meta:
         st = stats[m['reference_id']]
         if not st['claims'] and not st['units'] and not st['ops'] and m['reference_id'] not in class_cited:
-            warn(where, '%s (%s) is not cited by any claim, unit, operation, ship class or aircraft type: remove the row or cite it' % (m['reference_id'], m['short_title']))
+            warn(where, '%s (%s) is not cited by any claim, unit, operation, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
         if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
             err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
     check_claim_references(claims, meta)
@@ -1568,6 +1572,19 @@ def check_lineage(units, vocabs):
         err(where, msg)
 
 
+def check_allegiance(vocabs):
+    """data/nation_allegiance.csv (scripts/allegiance.py): header, nation codes exist and are nations, side and conflict in the vocabularies,
+    real dates inside the conflict, references exist, rows of one nation do not overlap, every nation has a row."""
+    import allegiance
+    import csv as _csv
+    with open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8') as fh:
+        ref_ids = {r['reference_id'] for r in _csv.DictReader(fh)}
+    h, rows = allegiance.load()
+    nats = {n['code']: n for n in common.load_nationalities()}
+    for where, msg in allegiance.check(h, rows, nats, vocabs, ref_ids):
+        err(where, msg)
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -1803,6 +1820,7 @@ def main():
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
+    check_allegiance(vocabs)
     check_lifespan(units, all_rows)
 
     # ---- foreign keys declared in the schemas ----

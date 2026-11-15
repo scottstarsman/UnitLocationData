@@ -1,0 +1,82 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "nation_allegiance",
+  "title": "Dated nation allegiance in a conflict (data/nation_allegiance.csv)",
+  "description": "Hand-maintained. One row per period in which a nation (a code of data/nationalities.csv) stood on one side of a conflict: Allied, Axis, neutral or co-belligerent. A nation has several rows when its side changed (Italy, the United States). Rows of one nation and one conflict never overlap; a gap between two rows means the table states nothing for those days (no source read, or no status such as Italy between the armistice of 8 September 1943 and 13 October 1943). Added 15 November 2026. The single `alliance` column of data/nationalities.csv is not changed by this table yet.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "nation",
+    "valid_from"
+  ],
+  "foreignKeys": [
+    {
+      "fields": "nation",
+      "reference": {
+        "resource": "nationalities",
+        "fields": "code"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "nation",
+      "type": "string",
+      "description": "The `code` of a row of data/nationalities.csv (not the multinational `ALL`).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "side",
+      "type": "string",
+      "description": "The side the nation was on during the period.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "allegiance_side"
+    },
+    {
+      "name": "valid_from",
+      "type": "date",
+      "description": "First day of the period, YYYY-MM-DD, not before the start of the conflict.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "valid_to",
+      "type": "date",
+      "description": "Last day of the period (inclusive), YYYY-MM-DD, not before valid_from. Blank = still open (none yet). For the nation's last row it is the end of the conflict for that nation as the sources date it, not a change of side.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "conflict",
+      "type": "string",
+      "description": "The conflict the row belongs to.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "allegiance_conflict"
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "';'-separated reference ids of data/references_meta.csv; at least one.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "What the source says (paraphrased); where a date is the start of the table rather than an event, or is uncertain, the note says so.",
+      "constraints": {
+        "required": false
+      }
+    }
+  ]
+}

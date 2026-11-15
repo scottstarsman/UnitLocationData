@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — leftovers, task (d): official sources for the allegiance dates (branch `leftovers-1115`, fourth commit; roadmap 384, Scott t420u)
+
+Primary or official texts (Avalon Project, FRUS, Hansard) were added to the `reference_ids` of 22 rows of `data/nation_allegiance.csv` next to the Wikipedia references (none removed); 14 new references `R1200`-`R1208` and `R1210`-`R1215` (the Berlin surrender act is the existing `R666`). Each row note carries old value (reference list), new value and reason.
+
+- **No date changed.** Checked: UK 3 September 1939 (`R1200`), France 3 September 1939 at 5 p.m. (`R1201`), US 8 December 1941 (`R1202`), Italy co-belligerent 13 October 1943 (`R1205`, `R1206`), Belgium and the Netherlands 10 May 1940 (`R1208`), Norway 9 April 1940 (`R1215`), the end of the war 2 September 1945 on every Allied row with that end (`R1212`), Germany 8 May 1945 (`R666`, `R1210`).
+- **Differences kept as documented conflicts in the notes:** Italy start 10 June 1940 (declaration) against 11 June 1940 4:45 p.m. (the Italian note, `R1204`); Italy armistice in force 3 September 1943 (`R1207`) against announced 8 September 1943 (kept); Germany 7 May 02:41 (Reims, `R1210`) against 8 May (kept); RSI and Italy 29 April (signing) against 2 May 1945 (effect), `R1211`.
+- **Placeholder starts not replaced** (old value = new value = 1939-09-01, reason in each note): the neutral rows (the neutral status began before the table; the date of a neutrality proclamation is not the start of neutrality) and CZ (the sources date only the British recognition of the Provisional Government, 21 July 1940, `R1213`, `R1214`, not an Allied status; a candidate for Scott).
+- **Not found:** an official source for the RSI proclamation of 23 September 1943 (Wikipedia only), and for Italy's declaration of war on Japan.
+- Scenario 277 added.
+
 ## 15 November 2026 — leftovers, task (c): Armeegruppe Student leftovers (branch `leftovers-1115`, third commit; roadmap 351, Scott t419u)
 
 Sources: FMS B-084, B-453 (Langhaeuser), B-762 (Prittwitz), B-414 (Geyer), B-283 and B-361 (Blumentritt) through the private notes with printed pages (all FMS manuscripts are one source family), CMH The Last Offensive ch. 17 (`R567`), Lexikon der Wehrmacht, II. Fallschirm-Korps (`R266`). Old value / new value / reason are in each record's note.

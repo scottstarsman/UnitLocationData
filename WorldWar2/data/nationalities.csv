@@ -1,16 +1,17 @@
-code,name,adjective,alt_adjectives,alliance,kind,note
-ALL,Allied,Allied,,Allied,multinational,"Combined Allied headquarters that belong to no single nation, for example SHAEF and AFHQ (folder allied; no claim files yet). Kept as an explicit value; the unit records do not say which nation staffed them."
-AUS,Australia,Australian,,Allied,nation,Australian formations (folder australia). Added 15 November 2026 for the Normandy air and naval pass (RAAF squadrons such as 453; HMAS ships); no unit yet.
-BEL,Belgium,Belgian,,Allied,nation,Belgian formations (folder belgium).
-CAN,Canada,Canadian,,Allied,nation,Canada (folder canada).
-CZ,Czechoslovakia,Czechoslovak,,Allied,nation,Czechoslovak formations (folder czechoslovakia).
-FR,France,French,,Allied,nation,Free French and French Army formations (folder france).
-GER,Germany,German,,Axis,nation,"Germany, including Waffen-SS and Luftwaffe ground formations (folder germany). The unit id prefix is GER; the nationality value is Germany; the adjective used in names is German."
-IT,Italy,Italian,,Axis,nation,"Italian formations (folder italy). Added 15 November 2026 with the nation_allegiance table. The `alliance` value is the single label for the whole war (the Kingdom of Italy entered as an Axis power); the dated sides (neutral, Axis, co-belligerent) are in data/nation_allegiance.csv, and the column is to be retired. The Italian Social Republic has no code yet. No unit yet."
-NL,Netherlands,Dutch,,Allied,nation,Dutch formations (folder netherlands).
-NOR,Norway,Norwegian,,Allied,nation,Norwegian formations (folder norway). Added 15 November 2026 for the Normandy air and naval pass (331 and 332 Squadrons; Norwegian-flag ships); no unit yet.
-NZ,New Zealand,New Zealand,,Allied,nation,New Zealand formations (folder new_zealand). Added 15 November 2026 for the Normandy air and naval pass (RNZAF squadrons such as 485; no unit yet). The adjective is the country name as written in the sources.
-POL,Poland,Polish,,Allied,nation,Polish formations serving under British or Allied command (folder poland).
-SAF,South Africa,South African,,Allied,nation,South African formations (folder south_africa). Added 15 November 2026 for the Normandy air and naval pass (SAAF and South African Naval Forces; no unit yet).
-UK,UK,British,,Allied,nation,United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).
-US,US,US,American,Allied,nation,United States (folder us).
+code,name,adjective,alt_adjectives,kind,note
+ALL,Allied,Allied,,multinational,"Combined Allied headquarters that belong to no single nation, for example SHAEF and AFHQ (folder allied; no claim files yet). Kept as an explicit value; the unit records do not say which nation staffed them."
+AUS,Australia,Australian,,nation,Australian formations (folder australia). Added 15 November 2026 for the Normandy air and naval pass (RAAF squadrons such as 453; HMAS ships); no unit yet.
+BEL,Belgium,Belgian,,nation,Belgian formations (folder belgium).
+CAN,Canada,Canadian,,nation,Canada (folder canada).
+CZ,Czechoslovakia,Czechoslovak,,nation,Czechoslovak formations (folder czechoslovakia).
+FR,France,French,,nation,Free French and French Army formations (folder france).
+GER,Germany,German,,nation,"Germany, including Waffen-SS and Luftwaffe ground formations (folder germany). The unit id prefix is GER; the nationality value is Germany; the adjective used in names is German."
+IT,Italy,Italian,,nation,"Italian formations of the Kingdom of Italy (folder italy). Added 15 November 2026 with the nation_allegiance table. **Split between IT and RSI (15 November 2026; a convention for Scott to confirm):** IT is the King's forces, that is the Regio Esercito, Regia Marina and Regia Aeronautica up to the armistice of 8 September 1943 (Axis, then neutral gap) and the co-belligerent forces of the Kingdom from 13 October 1943; RSI is the forces of the Italian Social Republic proclaimed on 23 September 1943 (its republican army, navy, air force and party and police formations). A formation that exists on both sides of the split keeps its IT record up to 8 September 1943 and an RSI re-formation gets its own RSI record with a lineage link, as with other redesignations (no source of the dataset names one yet). The dated sides are in data/nation_allegiance.csv. No unit yet."
+NL,Netherlands,Dutch,,nation,Dutch formations (folder netherlands).
+NOR,Norway,Norwegian,,nation,Norwegian formations (folder norway). Added 15 November 2026 for the Normandy air and naval pass (331 and 332 Squadrons; Norwegian-flag ships); no unit yet.
+NZ,New Zealand,New Zealand,,nation,New Zealand formations (folder new_zealand). Added 15 November 2026 for the Normandy air and naval pass (RNZAF squadrons such as 485; no unit yet). The adjective is the country name as written in the sources.
+POL,Poland,Polish,,nation,Polish formations serving under British or Allied command (folder poland).
+RSI,Italian Social Republic,RSI,,nation,"Formations of the Italian Social Republic (Repubblica Sociale Italiana), the German-backed state in northern Italy proclaimed on 23 September 1943 (folder italian_social_republic). Added 15 November 2026. Its units are not the King's: see the split between IT and RSI in the note of IT. The adjective `RSI` is used in unit names. No unit yet."
+SAF,South Africa,South African,,nation,South African formations (folder south_africa). Added 15 November 2026 for the Normandy air and naval pass (SAAF and South African Naval Forces; no unit yet).
+UK,UK,British,,nation,United Kingdom and Commonwealth formations serving in British armies except those with their own entry (folder uk).
+US,US,US,American,nation,United States (folder us).

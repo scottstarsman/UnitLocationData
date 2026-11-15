@@ -1,0 +1,73 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "unit_allegiance_overrides",
+  "title": "Unit-level allegiance overrides (data/unit_allegiance_overrides.csv)",
+  "description": "Hand-maintained, dated. A row says that one unit (a unit_id of data/units.csv) stood on a different side from its nation during a period, for example a formation that served with the other side's forces. It wins over data/nation_allegiance.csv for that unit and those days; outside the rows the nation's side applies. Rows of one unit never overlap. Populated only where the dataset already has a sourced case; the table may be empty. Added 15 November 2026 (roadmap 384, part 2). The conflict is the one of the nation table (WW2).",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "unit_id",
+    "valid_from"
+  ],
+  "foreignKeys": [
+    {
+      "fields": "unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "description": "A `unit_id` of data/units.csv.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "side",
+      "type": "string",
+      "description": "The side the unit stood on during the period (same vocabulary as data/nation_allegiance.csv).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "allegiance_side"
+    },
+    {
+      "name": "valid_from",
+      "type": "date",
+      "description": "First day of the period, YYYY-MM-DD, inside WW2 (1 September 1939 to 2 September 1945).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "valid_to",
+      "type": "date",
+      "description": "Last day of the period (inclusive), YYYY-MM-DD, not before valid_from. Blank = until the end of WW2 for the unit's nation.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "';'-separated reference ids of data/references_meta.csv; at least one.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "What the source says (paraphrased) and why the unit's side differs from its nation's.",
+      "constraints": {
+        "required": false
+      }
+    }
+  ]
+}

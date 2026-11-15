@@ -221,7 +221,7 @@ Rules checked by `scripts/validate.py` (through `scripts/lineage.py`): unique id
 
 ### data/nation_allegiance.csv (hand-maintained; `schema/nation_allegiance.schema.json`)
 
-Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a conflict, by period. One row per nation and period; a nation has several rows when its side changed. The single `alliance` column of `data/nationalities.csv` cannot say that Italy was neutral, then Axis, then co-belligerent, or that the United States was neutral until December 1941. The table is read by nothing else yet: units, claims and the build outputs still use `nationalities.alliance`. Follow-ups, not decided: retiring that column, an Italian Social Republic code, and a per-unit allegiance override for formations that served on the other side from their nation (for example Ost battalions).
+Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a conflict, by period. One row per nation and period; a nation has several rows when its side changed. The single `alliance` column of `data/nationalities.csv` cannot say that Italy was neutral, then Axis, then co-belligerent, or that the United States was neutral until December 1941. Since the allegiance follow-up of 15 November 2026 (roadmap 384) the table is the only source of a nation's side: the `alliance` column of `data/nationalities.csv` was retired, the Italian Social Republic has its own code `RSI`, and `data/unit_allegiance_overrides.csv` (below) holds per-unit exceptions. The one consumer is the opponent check of `engaged_with` (`scripts/unit_refs.py`, through `allegiance.Resolver`).
 
 | column | type | required | meaning | constraints |
 |---|---|---|---|---|
@@ -233,7 +233,22 @@ Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a c
 | `reference_ids` | string | yes | `;`-separated reference ids. | each in `data/references_meta.csv` |
 | `note` | string | no | What the source says (paraphrased); says so where a date is the start of the table (1 September 1939) instead of an event, or is uncertain. | |
 
-Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`): the nation exists and is a nation; the side and conflict are in their vocabularies; both dates are real and inside the conflict; the rows of one nation and one conflict do not overlap (inclusive dates, an open-ended row must be the last); rows sorted by nation, then `valid_from`; every reference exists; every nation of kind `nation` has at least one row. **Gaps are allowed and mean "no status stated for these days"**, not neutrality: Italy has no row from 9 September to 12 October 1943 (armistice announced, co-belligerence not yet declared), and the UK, France and the Dominions start at their declaration of war, not on 1 September 1939. `allegiance.side_on(rows, nation, date)` answers a dated question. Code `FR` covers Free French and French Army formations only; Vichy France has no code and no row.
+Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`): the nation exists and is a nation; the side and conflict are in their vocabularies; both dates are real and inside the conflict; the rows of one nation and one conflict do not overlap (inclusive dates, an open-ended row must be the last); rows sorted by nation, then `valid_from`; every reference exists; every nation of kind `nation` has at least one row. **Gaps are allowed and mean "no status stated for these days"**, not neutrality: Italy has no row from 9 September to 12 October 1943 (armistice announced, co-belligerence not yet declared), and the UK, France and the Dominions start at their declaration of war, not on 1 September 1939. `allegiance.side_on(rows, nation, date)` answers a dated question. Code `FR` covers Free French and French Army formations only; Vichy France has no code and no row. Italy is split in two codes: `IT` (the Kingdom: Axis to 8 September 1943, co-belligerent from 13 October 1943) and `RSI` (the Italian Social Republic: Axis, 23 September 1943 to 29 April 1945); the rule is in the `note` of `IT` in `data/nationalities.csv`.
+
+### data/unit_allegiance_overrides.csv (hand-maintained; `schema/unit_allegiance_overrides.schema.json`)
+
+Added 15 November 2026 (roadmap 384, part 2). A dated exception to the nation table: one unit stood on a different side from its nation for a period (a formation that served with the other side's forces). **It wins over `data/nation_allegiance.csv` for that unit and those days**; outside its rows the nation's side applies. Populated only where the dataset already has a sourced case; **empty (header only) on 15 November 2026**, because no unit of the dataset has a recorded side different from its nation's (the candidates are listed in the changelog and roadmap 384).
+
+| column | type | required | meaning | constraints |
+|---|---|---|---|---|
+| `unit_id` | string | yes | The unit. | a `unit_id` of `data/units.csv` |
+| `side` | string | yes | The side during the period. | vocabulary `allegiance_side` |
+| `valid_from` | date | yes | First day. | `YYYY-MM-DD`, inside WW2 |
+| `valid_to` | date | no | Last day, inclusive; blank = to the end of the war. | `YYYY-MM-DD`, not before `valid_from`, inside WW2 |
+| `reference_ids` | string | yes | `;`-separated reference ids. | each in `data/references_meta.csv`; at least one |
+| `note` | string | no | What the source says, and why the side differs from the nation's. | |
+
+Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`, `check_overrides`): the unit exists; the side is in the vocabulary; both dates are real and inside WW2; rows of one unit do not overlap (an open-ended row must be the last); rows sorted by `unit_id`, then `valid_from`; every reference exists. **Resolving a side:** `allegiance.Resolver.load().side(unit_id, date)` returns the unit override, else the nation's allegiance on that date, else `None` (a gap, or an unknown nation); `Resolver.camp(side)` folds `co-belligerent` into `Allied` and `neutral` or none into `None` for checks that ask whether two units fought on opposite sides.
 
 ### Coverage outputs (`build/coverage_by_unit.csv`, `build/coverage_by_month.csv`, `build/review_queue.csv`)
 
@@ -249,7 +264,6 @@ Lookup table, hand-maintained, sorted by `code`. It is the single list of nation
 | `name` | The value used in the `nationality` columns and the lowercase folder under `data/claims/` (Germany, US, UK, Canada, ..., Allied). | unique; not `All` (reserved for operation scopes) |
 | `adjective` | Adjective used in display names ("German", "British", "US"). | required |
 | `alt_adjectives` | Further adjectives accepted when matching opponent and component names (the migration and the validator's name check), `;`-separated (US: American). | optional |
-| `alliance` | Side: `Allied` or `Axis` (vocabulary `alliance`). One value for the whole war; it cannot represent a nation that changed sides (Italy) or was neutral first (the United States). The dated sides are in [`data/nation_allegiance.csv`](#datanation_allegiancecsv-hand-maintained-schemanation_allegianceschemajson), and this column is to be retired (follow-up, not decided). | vocabulary |
 | `kind` | `nation`, or `multinational` for combined headquarters (vocabulary `nationality_kind`). | vocabulary |
 | `note` | Scope of the row, folder and id conventions. | required |
 
@@ -270,6 +284,8 @@ The references between tables are declared as `foreignKeys` (Frictionless Table 
 | units | `nationality` | nationalities.`name` |
 | units | `ship_class_id` | ship_classes.`class_id` |
 | nation_allegiance | `nation` | nationalities.`code` |
+| unit_allegiance_overrides | `unit_id` | units.`unit_id` |
+| unit_allegiance_overrides | `reference_ids` (`;` list) | references_meta.`reference_id` |
 | nation_allegiance, unit_lineage | `reference_ids` (`;` list) | references_meta.`reference_id` |
 | ship_classes | `nationality` | nationalities.`name` |
 | ship_classes | `parent_class_id` | ship_classes.`class_id` |
@@ -298,7 +314,7 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 
 `NATION-TYPE-NUMBER+ECHELONLETTER`, all upper case.
 
-- Nation: the `code` of the unit's row in `data/nationalities.csv`: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF), and since 15 November 2026 `NOR`, `AUS`, `NZ`, `SAF`, `IT` (no unit yet). The validator requires the prefix to equal the code of the unit's nationality. The id is an opaque stable key: the attributes it spells (nation, type, echelon letter) are not re-derived and the id is never renamed when they change.
+- Nation: the `code` of the unit's row in `data/nationalities.csv`: `US`, `UK`, `CAN`, `GER`, `POL`, `FR`, `BEL`, `NL`, `CZ`, `ALL` (combined Allied headquarters such as SHAEF), and since 15 November 2026 `NOR`, `AUS`, `NZ`, `SAF`, `IT`, `RSI` (no unit yet; `IT` is the King's forces, `RSI` the Italian Social Republic, see the note of `IT`). The validator requires the prefix to equal the code of the unit's nationality. The id is an opaque stable key: the attributes it spells (nation, type, echelon letter) are not re-derived and the id is never renamed when they change.
 - Type: `INF`, `ARM`, `ABN` (airborne), `TNK` (tank brigade), `PZ` (panzer), `SSPZ` (SS panzer), `SSPG` (SS panzergrenadier), `FJ` (Fallschirmjaeger, also Fallschirmjaeger corps), `LL` (Luftlande), `COR`, `ARMY`, `AG`, `PZG` (panzer group), `OBW` (OB West), `OKW`, `SHAEF`; placeholder additions: `VG` (Volksgrenadier division), `PG` (panzergrenadier), `SSGEB` (SS mountain), `SSGR` (SS grenadier), `LFD` (Luftwaffe field division), `RES` (reserve division), `DIV` (numbered or z.b.V. division), `PZB` (Panzer-Brigade), `PZA` (panzer army), `FJA` (parachute army), `AA` (Armee-Abteilung), `PZ`/`SSCOR`/`LFC` for panzer, SS and Luftwaffe field corps, `VAK` (Volks-Artillerie-Korps), `OBNW`/`WBN` (other HQs), `CDO` (commando brigade).
 - Echelon letter: `G` army group, `A` army, `C` corps, `D` division, `B` brigade, `H` other HQ (vocabulary `echelon_id_letter`). A regiment, a regiment-sized battle group (Kampfgruppe) and a battalion have **no** echelon letter: they are identified by the type code and the name or number (`GER-FJR-006`, `GER-KG-FREY`, `GER-SSHPZ-101`). The validator checks one direction: an id that ends in a digit and one of the six letters must have the matching echelon (so `...D` is a division). Divisions and larger formations that are only a placeholder may also be without a letter (for example `GER-DIV-172`; ids are never renamed). The one exception is the combat command: `US-CCA-002D` and `US-CCR-004D` end in the `D` of the division they belong to, and their echelon is `regiment/battle_group` (pattern `combat_command_pattern`).
 - Examples: `US-INF-029D`, `GER-PZ-021D`, `UK-ARM-011D`, `CAN-INF-003D`, `GER-SSPZ-001C` (I SS Panzer Corps), `GER-SSPZ-001D` (1st SS Panzer Division).
@@ -927,5 +943,5 @@ These entries of `vocabularies.json` are not field vocabularies; they hold value
 - `relationship_groups`: `standing` (organic, assigned, unspecified_subordination, unknown) and `active` (operational_control, attached); `standing` is also what decides `end_unknown` of a command relation.
 - `higher_than_organic`: for each echelon, the higher echelons whose headquarters cannot be an `organic` parent.
 - `source_type`: the allowed `source_type` values of `data/references_meta.csv`.
-- `alliance` and `nationality_kind`: the allowed `alliance` and `kind` values of `data/nationalities.csv`.
+- `nationality_kind`: the allowed `kind` values of `data/nationalities.csv`. (The `alliance` vocabulary was retired with the `alliance` column on 15 November 2026; see `allegiance_side`.)
 - `allegiance_side` and `allegiance_conflict`: the allowed `side` and `conflict` values of `data/nation_allegiance.csv`.

@@ -11,10 +11,10 @@ date rules (valid_to not before valid_from, ranges, bases, end_unknown), the evi
 listing and sourced dates), and every contradictory overlap (same relationship class, different higher units of one echelon) is documented or an error.
 The rebuilt per-claim entries (what the old command_relationships column held) are still checked: valid keys, relationship values and resolving unit_ids (an entry with unit_id null must be relationship unknown with a note),
 every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch) equal the unit table (theater is per row and must match the row's operation).
-Nationalities (data/nationalities.csv): header, unique code and name, alliance and kind vocabularies, adjective set; every unit's nationality is a row of the table,
+Nationalities (data/nationalities.csv): header, unique code and name, kind vocabulary, adjective set; every unit's nationality is a row of the table,
 its unit_id prefix is the row's code and its claim folder is the lower-case name.
 Unit references in claims (scripts/unit_refs.py, see schema/README.md): engaged_with and composing_units are `;` lists of unit_ids (or the sentinel `unknown` alone),
-each a row of units.csv (foreign key), no duplicate, never the claiming unit itself, an opponent on the other side of the war (nationalities.alliance); engaged_note
+each a row of units.csv (foreign key), no duplicate, never the claiming unit itself, an opponent on the other side of the war on the claim date (data/nation_allegiance.csv and data/unit_allegiance_overrides.csv, scripts/allegiance.py); engaged_note
 and composing_text are free text that never repeats the name of a unit that has an id, never starts with `attached:`, and never contains a unit id that does not exist; a
 composing_text entry that starts with a unit id must be `<unit_id> (<qualifier>)` for an id listed in composing_units; engaged_note must hold no unit id; the lists are
 written canonically (entries joined by "; ").
@@ -307,7 +307,7 @@ def check_strength_json(where, s, vocabs, aircraft_types=None):
 SHIP_CLASSES_CSV = os.path.join(common.ROOT, 'data', 'ship_classes.csv')
 AIRCRAFT_TYPES_CSV = os.path.join(common.ROOT, 'data', 'aircraft_types.csv')
 REPEATED_COLUMNS = common.load_schema('claims')['repeatedColumns']['fields']   # claim columns that must equal data/units.csv
-NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'alliance', 'kind', 'note']
+NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'kind', 'note']   # the `alliance` column was retired on 15 November 2026 (data/nation_allegiance.csv)
 
 REL_KEYS = {'unit_id', 'relationship', 'effective_from', 'effective_from_latest', 'ordered_date', 'effective_to',
             'effective_to_earliest', 'effective_to_basis', 'date_basis', 'note', 'effective_time', 'effective_to_time'}
@@ -1105,7 +1105,7 @@ def check_naval_unit_columns(where, uid, u, classes):
 
 
 def check_nationalities():
-    """data/nationalities.csv: header, unique code and name, vocabularies for alliance and kind, adjective set."""
+    """data/nationalities.csv: header, unique code and name, vocabulary for kind, adjective set (the alliance column was retired on 15 November 2026)."""
     where = 'data/nationalities.csv'
     if not os.path.isfile(common.NATIONALITIES_CSV):
         err(where, 'missing')
@@ -1114,7 +1114,7 @@ def check_nationalities():
     if header != NAT_HEADER:
         err(where, 'header %s != %s' % (header, NAT_HEADER))
         return {}
-    alliances, kinds = common.vocab_values('alliance'), common.vocab_values('nationality_kind')
+    kinds = common.vocab_values('nationality_kind')
     codes, names = set(), set()
     for i, r in enumerate(rows, start=2):
         w = '%s line %d' % (where, i)
@@ -1126,13 +1126,11 @@ def check_nationalities():
             err(w, 'duplicate name %s' % r['name'])
         codes.add(r['code'])
         names.add(r['name'])
-        for f in ('name', 'adjective', 'alliance', 'kind', 'note'):
+        for f in ('name', 'adjective', 'kind', 'note'):
             if not r[f].strip():
                 err(w, '%s is empty' % f)
         if r['name'] != r['name'].strip() or r['name'] == 'All':
             err(w, "name %r is invalid ('All' is reserved for operation scopes)" % r['name'])
-        if r['alliance'] not in alliances:
-            err(w, 'alliance %r not in vocabulary alliance %s' % (r['alliance'], alliances))
         if r['kind'] not in kinds:
             err(w, 'kind %r not in vocabulary nationality_kind %s' % (r['kind'], kinds))
     if [r['code'] for r in rows] != sorted(r['code'] for r in rows):
@@ -1572,9 +1570,10 @@ def check_lineage(units, vocabs):
         err(where, msg)
 
 
-def check_allegiance(vocabs):
+def check_allegiance(units, vocabs):
     """data/nation_allegiance.csv (scripts/allegiance.py): header, nation codes exist and are nations, side and conflict in the vocabularies,
-    real dates inside the conflict, references exist, rows of one nation do not overlap, every nation has a row."""
+    real dates inside the conflict, references exist, rows of one nation do not overlap, every nation has a row; and
+    data/unit_allegiance_overrides.csv: unit exists, side valid, real dates inside WW2, no overlap per unit, references exist."""
     import allegiance
     import csv as _csv
     with open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8') as fh:
@@ -1582,6 +1581,9 @@ def check_allegiance(vocabs):
     h, rows = allegiance.load()
     nats = {n['code']: n for n in common.load_nationalities()}
     for where, msg in allegiance.check(h, rows, nats, vocabs, ref_ids):
+        err(where, msg)
+    oh, orows = allegiance.load_overrides()
+    for where, msg in allegiance.check_overrides(oh, orows, units, vocabs, ref_ids):
         err(where, msg)
 
 
@@ -1820,7 +1822,7 @@ def main():
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
-    check_allegiance(vocabs)
+    check_allegiance(units, vocabs)
     check_lifespan(units, all_rows)
 
     # ---- foreign keys declared in the schemas ----

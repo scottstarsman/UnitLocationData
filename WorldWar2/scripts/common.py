@@ -63,7 +63,7 @@ def higher_than_organic():
 
 @functools.lru_cache(maxsize=1)
 def load_nationalities():
-    """data/nationalities.csv as a list of dicts (code, name, adjective, alt_adjectives, alliance, kind, note); {} rows if missing."""
+    """data/nationalities.csv as a list of dicts (code, name, adjective, alt_adjectives, kind, note; the alliance column was retired on 15 November 2026); {} rows if missing."""
     if not os.path.isfile(NATIONALITIES_CSV):
         return ()
     return tuple(read_dicts(NATIONALITIES_CSV)[1])

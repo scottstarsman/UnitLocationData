@@ -23,7 +23,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 
-NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'alliance', 'kind', 'note']
+NAT_HEADER = ['code', 'name', 'adjective', 'alt_adjectives', 'alliance', 'kind', 'note']   # historic one-off migration; the live table no longer has `alliance` (retired 15 November 2026)
 NATIONALITIES = [
     ['ALL', 'Allied', 'Allied', '', 'Allied', 'multinational',
      'Combined Allied headquarters that belong to no single nation, for example SHAEF and AFHQ (folder allied; no claim files yet). Kept as an explicit value; the unit records do not say which nation staffed them.'],

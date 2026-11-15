@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — CR0950, the French 9th Colonial Division under the I Corps gets an end (branch `small-fixes-1114`, task 3 of 4)
+
+Roadmap 352 (opened 9 November) listed `CR0950` (9th Colonial Division -> I Corps, open from 6 February 1945, evidence Wikipedia only) as a stale open relation: "the Karlsruhe rows suggest II Corps". The private de Lattre notes (`R686`) were read for the division's corps. Scott approved the task.
+
+- **`CR0950` end:** old value blank (basis `open_at_last_claim`; who_controls carried the answer forward 90 days after the last listing, to 7 May); new value **1945-04-02**, basis `narrative`, with **valid_to_earliest 1945-02-09**; start unchanged (1945-02-06, inferred). Reason: de Lattre p. 435 has de Lattre take the 9th Colonial Division under his direct orders at once on the afternoon of 2 April 1945 and give its commander the conquest of Karlsruhe, so the I Corps link ends no later than that day; the last day a source places it with the I Corps is 9 February (Chalampé, p. 397, with `C1629`). The division's earlier I Corps link is shown by Béthouart's orders of 2 February (p. 382) and the I Corps front of 24-31 January (pp. 350, 377-381). The day it left the I Corps is not stated, hence the range (10 February to 2 April is answered `possible`).
+- **Evidence link:** `C9307` (2 April 1945, Leimersheim) is linked as `asserts_end`; its note gains a Command support line and a Review (source_locator old value `R686: pp. 430-431`, new value `R686: pp. 430-431, 435`; date, place, confidence 0.3 and activity unchanged; reason: it now also cites the command change of that afternoon, the page `C2041` already cites). The `CR0950` note records old value, new value and reason.
+- **Conflict kept, not resolved:** the II Corps reading of the Karlsruhe rows is partly supported: the 28 March plan has the II Corps force the Rhine with the division as a temporary passive flank (p. 421) and Monsabert orders the Leimersheim crossing on 30 March (p. 424); two lines of the private notes disagree on 2-3 April (p. 434: only the Bourgund group stays with the II Corps; p. 435: the division). **No II Corps relation is entered** (30 March to 2 April), and none is entered after 2 April either (the Valluy group is temporary under the Army, p. 440; the I Corps plan of 18 April lists the division, p. 459, against p. 453 where it passes under Army orders on 17 April). Roadmap 352 keeps these open for a re-read of pp. 421-436 and 453-459.
+- **Effect:** 3 April 1945 and later the division has no chain (no organic parent is recorded); before, it answered I Corps until 7 May.
+- **Checks.** Scenario 271; no new claim, relation or unit; the validator is unchanged at 352 warnings.
+
 ## 14 November 2026 — 6th Army Group advance headquarters at Lunéville (branch `small-fixes-1114`, task 2 of 4)
 
 Roadmap 356 (opened 9 November): Clarke and Smith, Riviera to the Rhine ch. 27 p. 500 (`R424`) has Devers move his advance headquarters from Phalsbourg to Lunéville, undated; de Lattre pp. 302-303 (`R686`, `C8616`) has him at Vittel on 27 December. Scott approved the task.

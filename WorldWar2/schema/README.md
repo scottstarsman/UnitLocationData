@@ -221,7 +221,7 @@ Rules checked by `scripts/validate.py` (through `scripts/lineage.py`): unique id
 
 ### data/nation_allegiance.csv (hand-maintained; `schema/nation_allegiance.schema.json`)
 
-Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a conflict, by period. One row per nation and period; a nation has several rows when its side changed. The single `alliance` column of `data/nationalities.csv` cannot say that Italy was neutral, then Axis, then co-belligerent, or that the United States was neutral until December 1941. The table is read by nothing else yet: units, claims and the build outputs still use `nationalities.alliance`. Follow-ups, not decided: retiring that column, an Italian Social Republic code, and a per-unit allegiance override for formations that served on the other side from their nation (for example Ost battalions).
+Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a conflict, by period. One row per nation and period; a nation has several rows when its side changed. The single `alliance` column of `data/nationalities.csv` cannot say that Italy was neutral, then Axis, then co-belligerent, or that the United States was neutral until December 1941. Since the allegiance follow-up of 15 November 2026 (roadmap 384) the table is the only source of a nation's side: the `alliance` column of `data/nationalities.csv` was retired, the Italian Social Republic has its own code `RSI`, and `data/unit_allegiance_overrides.csv` (below) holds per-unit exceptions. The one consumer is the opponent check of `engaged_with` (`scripts/unit_refs.py`, through `allegiance.Resolver`).
 
 | column | type | required | meaning | constraints |
 |---|---|---|---|---|
@@ -264,7 +264,6 @@ Lookup table, hand-maintained, sorted by `code`. It is the single list of nation
 | `name` | The value used in the `nationality` columns and the lowercase folder under `data/claims/` (Germany, US, UK, Canada, ..., Allied). | unique; not `All` (reserved for operation scopes) |
 | `adjective` | Adjective used in display names ("German", "British", "US"). | required |
 | `alt_adjectives` | Further adjectives accepted when matching opponent and component names (the migration and the validator's name check), `;`-separated (US: American). | optional |
-| `alliance` | Side: `Allied` or `Axis` (vocabulary `alliance`). One value for the whole war; it cannot represent a nation that changed sides (Italy) or was neutral first (the United States). The dated sides are in [`data/nation_allegiance.csv`](#datanation_allegiancecsv-hand-maintained-schemanation_allegianceschemajson), and this column is to be retired (follow-up, not decided). | vocabulary |
 | `kind` | `nation`, or `multinational` for combined headquarters (vocabulary `nationality_kind`). | vocabulary |
 | `note` | Scope of the row, folder and id conventions. | required |
 
@@ -944,5 +943,5 @@ These entries of `vocabularies.json` are not field vocabularies; they hold value
 - `relationship_groups`: `standing` (organic, assigned, unspecified_subordination, unknown) and `active` (operational_control, attached); `standing` is also what decides `end_unknown` of a command relation.
 - `higher_than_organic`: for each echelon, the higher echelons whose headquarters cannot be an `organic` parent.
 - `source_type`: the allowed `source_type` values of `data/references_meta.csv`.
-- `alliance` and `nationality_kind`: the allowed `alliance` and `kind` values of `data/nationalities.csv`.
+- `nationality_kind`: the allowed `kind` values of `data/nationalities.csv`. (The `alliance` vocabulary was retired with the `alliance` column on 15 November 2026; see `allegiance_side`.)
 - `allegiance_side` and `allegiance_conflict`: the allowed `side` and `conflict` values of `data/nation_allegiance.csv`.

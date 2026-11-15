@@ -38,7 +38,9 @@ All tables are CSV files under `data/` (UTF-8, comma separated). Column definiti
 |---|---|---|---|
 | claims | `data/claims/<nationality>/<unit_id>.csv`; combined in `build/all_claims.csv` | one sourced claim about one unit on one date | `claim_id` (`C0001`...); also unique: `(unit_id, date, event_type)` |
 | units | `data/units.csv` | one unit (active or placeholder): name, nationality, `echelon`, `branch`, operational parent | `unit_id` (nationality prefix, type, number, echelon letter) |
-| nationalities | `data/nationalities.csv` | one nationality (code, name, adjective, alliance) | `code` |
+| nationalities | `data/nationalities.csv` | one nationality (code, name, adjective, kind; the sides are in `nation_allegiance.csv`) | `code` |
+| nation_allegiance | `data/nation_allegiance.csv` | one period in which a nation was Allied, Axis, neutral or co-belligerent in WW2 | `(nation, valid_from)` |
+| unit_allegiance_overrides | `data/unit_allegiance_overrides.csv` | one period in which a unit stood on another side from its nation (wins over the nation table; empty) | `(unit_id, valid_from)` |
 | places | `data/places.csv` | one named place: canonical name, aliases, kind (point / area / line), coordinates, country, region, coordinate source | `place_id` (`PL0001`...) |
 | place_merges | `data/place_merges.csv` | one place id that was retired by a merge into a surviving place | `retired_place_id` |
 | operations | `data/operations.csv` (+ `operation_relations.csv`, `operation_exceptions.csv`) | one operation, battle, phase, campaign or umbrella with a parent chain and dates | `operation_id` (`OP-...`) |
@@ -87,7 +89,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | references (`data/references.csv`, generated) | 1191, of which 795 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 77 |
 | nationalities / retired claim ids / claim-key exceptions | 16 / 3 / 12 |
-| controlled vocabularies in `schema/vocabularies.json` | 51 |
+| controlled vocabularies in `schema/vocabularies.json` | 50 |
 
 Claims by nationality: Germany 4100, US 3088, UK 1142, Canada 589, France 330, Poland 92, Netherlands 44, Belgium 16, Czechoslovakia 8.
 

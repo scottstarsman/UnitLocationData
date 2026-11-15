@@ -191,6 +191,44 @@ def _name_clash(entry, nat, name):
     return []
 
 
+_RESOLVER = []
+
+
+def _resolver():
+    """The side resolver (unit override, nation allegiance; scripts/allegiance.py), built once."""
+    if not _RESOLVER:
+        import allegiance
+        _RESOLVER.append(allegiance.Resolver.load())
+    return _RESOLVER[0]
+
+
+def _same_camp(resolver, a, b, date):
+    """True when units a and b are on the same camp (Allied incl. co-belligerent, or Axis) on the claim date. The side is resolved from the
+    unit override, then the nation's dated allegiance (the old nationalities.alliance column was retired on 15 November 2026). A month or a
+    year is checked at its first and last day and counts only when both ends agree; a blank date, a neutral nation or a gap in the table is not checked."""
+    import datetime
+    m = re.fullmatch(r'(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?', date or '')
+    if not m:
+        return False
+    y, mo, d = int(m.group(1)), m.group(2), m.group(3)
+    try:
+        if d:
+            days = [datetime.date(y, int(mo), int(d))]
+        elif mo:
+            first = datetime.date(y, int(mo), 1)
+            nxt = datetime.date(y + (int(mo) == 12), int(mo) % 12 + 1, 1)
+            days = [first, nxt - datetime.timedelta(days=1)]
+        else:
+            days = [datetime.date(y, 1, 1), datetime.date(y, 12, 31)]
+    except ValueError:
+        return False
+    for day in days:
+        ca, cb = resolver.camp(resolver.side(a, day)), resolver.camp(resolver.side(b, day))
+        if not ca or ca != cb:
+            return False
+    return True
+
+
 def check(row):
     """(errors, warnings) for the four unit-reference columns of one claim dict (engaged_with, engaged_note, composing_units, composing_text)."""
     errs, warns = [], []
@@ -198,7 +236,7 @@ def check(row):
     me = units.get(row.get('unit_id', ''))
     nat = me['nationality'] if me else ''
     nname = me['unit_name'] if me else ''
-    alliances = {n['name']: n['alliance'] for n in common.load_nationalities()}
+    resolver = _resolver()
 
     def canonical(col, entries):
         if row[col] != '; '.join(entries):
@@ -246,9 +284,8 @@ def check(row):
             elif uid == row.get('unit_id'):
                 errs.append('engaged_with lists the claiming unit itself (%s)' % uid)
             elif uid in units and me:
-                a, b = alliances.get(me['nationality'], ''), alliances.get(units[uid]['nationality'], '')
-                if a and a == b:
-                    errs.append('engaged_with %s (%s) is on the same side as the claiming unit (%s)' % (uid, units[uid]['nationality'], me['nationality']))
+                if _same_camp(resolver, row.get('unit_id', ''), uid, row.get('date', '')):
+                    errs.append('engaged_with %s (%s) is on the same side as the claiming unit (%s) on %s' % (uid, units[uid]['nationality'], me['nationality'], row.get('date', '')))
         n_opp = len(ids) + len(notes)
     if n_opp > 3:
         warns.append('engaged_with and engaged_note list more than three opponents: check that they were fought in one action')

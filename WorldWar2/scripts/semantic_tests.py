@@ -4777,7 +4777,7 @@ def scenario_273_nation_allegiance():
     expect(s + ': RSI (Italian Social Republic) is Axis from 23 September 1943 to 29 April 1945 and has no side outside it; Italy is co-belligerent on the same days', (side('RSI', '1943-09-22'), side('RSI', '1943-09-23'), side('RSI', '1945-04-29'), side('RSI', '1945-04-30'), side('IT', '1944-06-06')), (None, 'Axis', 'Axis', None, 'co-belligerent'))
     expect(s + ': UK has no row on 2 September 1939 (the declaration was 3 September)', (side('UK', '1939-09-02'), side('UK', '1939-09-03')), (None, 'Allied'))
     expect(s + ': every nation of kind nation has at least one row, ALL has none', (sorted({r['nation'] for r in rows}), 'ALL' in {r['nation'] for r in rows}), (sorted(c for c, n in nat_rows.items() if n['kind'] == 'nation'), False))
-    expect(s + ': the alliance column of nationalities.csv is unchanged for the existing nations (Allied except GER Axis) and IT is Axis', {c: n['alliance'] for c, n in nat_rows.items()}, {'ALL': 'Allied', 'AUS': 'Allied', 'BEL': 'Allied', 'CAN': 'Allied', 'CZ': 'Allied', 'FR': 'Allied', 'GER': 'Axis', 'IT': 'Axis', 'NL': 'Allied', 'NOR': 'Allied', 'NZ': 'Allied', 'POL': 'Allied', 'RSI': 'Axis', 'SAF': 'Allied', 'UK': 'Allied', 'US': 'Allied'})  # RSI added 15 November 2026 (allegiance follow-up part 1); old expectation without RSI
+    expect(s + ': nationalities.csv has no alliance column since 15 November 2026 (old values: ALL, AUS, BEL, CAN, CZ, FR, NL, NOR, NZ, POL, SAF, UK, US Allied; GER, IT, RSI Axis)', common.read_dicts(common.NATIONALITIES_CSV)[0], ['code', 'name', 'adjective', 'alt_adjectives', 'kind', 'note'])
 
 
 def scenario_274_unit_allegiance_overrides():
@@ -4810,6 +4810,11 @@ def scenario_274_unit_allegiance_overrides():
     expect(s + ': a second override beats the nation (U1 Axis 1 October 1944 by override), U2 neutral from 1940 to the end', (rs.side('U1', '1944-10-01'), rs.side('U2', '1944-06-06')), ('Axis', 'neutral'))
     expect(s + ': a unit with an unknown nationality or an unknown unit has no side; a date in a nation gap has none', (rs.side('U3', '1944-06-06'), rs.side('NOPE', '1944-06-06'), rs.side('U1', '1945-06-01')), (None, None, None))
     expect(s + ': camp folds co-belligerent into Allied and neutral into none', [allegiance.Resolver.camp(x) for x in ('Allied', 'co-belligerent', 'Axis', 'neutral', None)], ['Allied', 'Allied', 'Axis', None, None])
+    import unit_refs
+    real0 = allegiance.Resolver.load()
+    same = lambda a, b, d: unit_refs._same_camp(real0, a, b, d)  # noqa: E731
+    expect(s + ': engaged_with side check on the real tables: US vs German is not the same camp on D-Day; US vs UK is; German vs German is', (same('US-INF-029D', 'GER-PZ-021D', '1944-06-06'), same('US-INF-029D', 'UK-ARM-011D', '1944-06-06'), same('GER-PZ-021D', 'GER-INF-352D', '1944-06-06')), (False, True, True))
+    expect(s + ': a month or year counts only when both ends agree (US and UK in June 1944 yes; US and UK in December 1941: neutral then Allied, no); a blank or impossible date, or a date in a gap, is not checked', (same('US-INF-029D', 'UK-ARM-011D', '1944-06'), same('US-INF-029D', 'UK-ARM-011D', '1941-12'), same('US-INF-029D', 'UK-ARM-011D', ''), same('US-INF-029D', 'UK-ARM-011D', '1944-02-30'), same('GER-PZ-021D', 'GER-INF-352D', '1945-06-01')), (True, False, False, False, False))
     h2, rows = allegiance.load_overrides()
     unit_rows = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     refs = {r['reference_id'] for r in _csv.DictReader(open(os.path.join(common.ROOT, 'data', 'references_meta.csv'), newline='', encoding='utf-8'))}

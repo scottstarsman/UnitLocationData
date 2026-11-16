@@ -4097,7 +4097,7 @@ def scenario_249_naval_unit_columns():
     classes = {c['class_id']: c for c in common.read_dicts(os.path.join(common.ROOT, 'data', 'ship_classes.csv'))[1]}
     names = [classes[units[u]['ship_class_id']]['class_name'] + ' / ' + classes[units[u]['ship_class_id']]['nationality'] for u in ('US-BB-035', 'US-DD-626', 'UK-BB-WARSPITE', 'UK-DD-BEDALE', 'POL-DD-L26')]
     expect(s + ': ships link to their classes; the Polish ship keeps the British class', names, ['New York class / US', 'Gleaves class / US', 'Queen Elizabeth class / UK', 'Hunt class Type II / UK', 'Hunt class Type II / UK'])
-    expect(s + ': ship_type vocabulary is the US hull codes', sorted(common.vocab_values('ship_type')), sorted(['AGC', 'AM', 'APA', 'BB', 'BC', 'BM', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))  # BM added 15 November 2026 (monitors, Normandy prep); AGC and APA added 16 November 2026 (Normandy chunk 1, force flagships Ancon and Bayfield); old value without them
+    expect(s + ': ship_type vocabulary is the US hull codes', sorted(common.vocab_values('ship_type')), sorted(['AGC', 'AM', 'APA', 'AV', 'BB', 'BC', 'BM', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))  # BM added 15 November 2026; AGC and APA added 16 November 2026 (chunk 1); AV added 16 November 2026 (Normandy chunk 2, HMS Albatross); old value without AV
 
 
 def scenario_250_ship_classes_table():

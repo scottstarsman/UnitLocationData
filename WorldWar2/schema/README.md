@@ -160,7 +160,7 @@ The flags `established`, `disestablished` and `destroyed` are kept, because they
 
 `scope` (air-naval schema pass, 13 November 2026; vocabulary `scope`): blank or `in_scope` (the default) or `out_of_scope`. A unit marked `out_of_scope`, its claims and its command relations are written to `build/other_domains/` and stay out of the main outputs and the who_controls grid, whatever the unit's `domain` (standing rule 22); coverage and balance figures for out-of-scope areas are labelled "incidental, not surveyed". The main `build/units.csv` and `units.json` leave out `domain`, `scope`, `ship_type`, `hull_number` and `ship_class_id`; `build/other_domains/units.csv` lists them.
 
-`ship_type`, `hull_number`, `ship_class_id` (same pass): only on a unit with echelon `naval_unit` (a ship), blank elsewhere. `ship_type` is a US hull code (vocabulary `ship_type`: BB, BC, BM, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS, AGC, APA; national terms stay in the note; the validator warns when a ship has none). `hull_number` is free text as the source gives it (BB-35, L26, 03) and not a key. `ship_class_id` (SC###) links to `data/ship_classes.csv`; the class must exist and its `ship_type` must equal the unit's. The naval echelons (`naval_unit`, `naval_division`, `naval_squadron`, `task_group`, `fleet`) need domain `naval` and have no id letter.
+`ship_type`, `hull_number`, `ship_class_id` (same pass): only on a unit with echelon `naval_unit` (a ship), blank elsewhere. `ship_type` is a US hull code (vocabulary `ship_type`: BB, BC, BM, CV, CVL, CVE, CA, CL, DD, DE, PF, CORV, TB, PG, CM, AM, SS, AGC, APA, AV; national terms stay in the note; the validator warns when a ship has none). `hull_number` is free text as the source gives it (BB-35, L26, 03) and not a key. `ship_class_id` (SC###) links to `data/ship_classes.csv`; the class must exist and its `ship_type` must equal the unit's. The naval echelons (`naval_unit`, `naval_division`, `naval_squadron`, `task_group`, `fleet`) need domain `naval` and have no id letter.
 
 ### data/aircraft_types.csv (hand-maintained; `schema/aircraft_types.schema.json`; air schema pass, 13 November 2026)
 
@@ -888,6 +888,7 @@ US hull classification codes for a unit with echelon `naval_unit` and for ship c
 | `SS` | submarine (midget submarines noted) |
 | `AGC` | amphibious force flagship, a headquarters ship (added 16 November 2026 for USS Ancon, Normandy chunk 1; not a combatant) |
 | `APA` | attack transport (added 16 November 2026 for USS Bayfield, a force flagship of Operation Neptune; not a combatant) |
+| `AV` | seaplane tender or seaplane carrier (added 16 November 2026 for HMS Albatross, Normandy chunk 2) |
 
 ### aircraft_role
 

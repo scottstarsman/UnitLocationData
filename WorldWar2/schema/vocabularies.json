@@ -312,7 +312,8 @@
       "Allied": "On the Allied side of the conflict (at war with the Axis).",
       "Axis": "On the Axis side of the conflict.",
       "neutral": "Not at war; includes a declared non-belligerence (Italy, September 1939 to June 1940), which the note names.",
-      "co-belligerent": "Fought alongside the Allies against the Axis without being one of the Allied powers (the Kingdom of Italy from its declaration of war on Germany on 13 October 1943)."
+      "co-belligerent": "Fought alongside the Allies against the Axis without being one of the Allied powers (the Kingdom of Italy from its declaration of war on Germany on 13 October 1943).",
+      "non-aligned-belligerent": "At war, declared or not, but on neither the Allied nor the Axis side (the USSR in its undeclared border war with Japan, its invasion of Poland and the Winter War, 1 September 1939 to 13 March 1940; Finland in the Winter War). Not neutral (neutral means not at war) and not co-belligerent (not fighting alongside the Allies). Added 15 November 2026 (Scott t427u). Treated like neutral by Resolver.camp: it belongs to no camp, so it never makes two units count as being on the same side."
     }
   },
   "allegiance_conflict": {

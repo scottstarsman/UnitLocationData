@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — allegiance: the side value `non-aligned-belligerent` (branch `allegiance-remaining`, fourth commit; roadmap 389, Scott t427u)
+
+- **New vocabulary value** `allegiance_side` `non-aligned-belligerent` (old value: four sides; reason: Scott approved the proposal of roadmap 387). Meaning: at war, declared or not, on neither the Allied nor the Axis side. `Resolver.camp` returns no camp for it (as for neutral), documented in `scripts/allegiance.py`, `schema/vocabularies.json`, `schema/nation_allegiance.schema.json` and `schema/README.md` (where the stale sentence "`allegiance_conflict` has one value, `WW2`" is corrected to two values). `engaged_with`: no false pass or failure (the check only rejects two units of the same camp).
+- **New rows** (old value blank, new value below, reason: the side value and the sources read; sources in each note): `SOV` non-aligned-belligerent 1939-09-01 to 1939-10-06, neutral 1939-10-07 to 1939-11-29, non-aligned-belligerent 1939-11-30 to 1940-03-13, neutral 1940-03-14 to 1941-06-21; `FIN` non-aligned-belligerent 1939-11-30 to 1940-03-13, neutral 1940-03-14 to 1941-06-24. The Soviet Allied row, the Finnish Axis row, the Finnish co-belligerent row and the `FIN` entry of `data/nationalities.csv` carry old and new text.
+- **Still blank:** Finland 5 to 14 September 1944 and Thailand 11 to 20 December 1941 (the new value does not fit).
+- References R1266-R1274 (FRUS 1939 and 1940, the Avalon non-aggression pact, Wikipedia). Rows 66 to 72. Scenario 284; the expectations of scenarios 279 and 282 that asserted the old blanks are changed (old and new in the test text). Choices for Scott to confirm are in roadmap 389.
+
 ## 15 November 2026 — allegiance: the Second Sino-Japanese War as its own conflict (branch `allegiance-remaining`, third commit; roadmap 388, Scott t425u)
 
 - **New vocabulary value** `allegiance_conflict` `SJW2` (old value: only `WW2`; reason: Scott asked to back Japan up to its invasion of China, and the WW2 conflict starts 1 September 1939). `scripts/allegiance.py` `CONFLICT_SPAN` gets `SJW2` = 7 July 1937 to 2 September 1945; `side_on` still answers for `WW2` unless asked for `SJW2`.

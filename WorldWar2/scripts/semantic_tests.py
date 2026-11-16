@@ -4097,7 +4097,7 @@ def scenario_249_naval_unit_columns():
     classes = {c['class_id']: c for c in common.read_dicts(os.path.join(common.ROOT, 'data', 'ship_classes.csv'))[1]}
     names = [classes[units[u]['ship_class_id']]['class_name'] + ' / ' + classes[units[u]['ship_class_id']]['nationality'] for u in ('US-BB-035', 'US-DD-626', 'UK-BB-WARSPITE', 'UK-DD-BEDALE', 'POL-DD-L26')]
     expect(s + ': ships link to their classes; the Polish ship keeps the British class', names, ['New York class / US', 'Gleaves class / US', 'Queen Elizabeth class / UK', 'Hunt class Type II / UK', 'Hunt class Type II / UK'])
-    expect(s + ': ship_type vocabulary is the US hull codes', sorted(common.vocab_values('ship_type')), sorted(['AM', 'BB', 'BC', 'BM', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))  # BM added 15 November 2026 (monitors, Normandy prep); old value without BM
+    expect(s + ': ship_type vocabulary is the US hull codes', sorted(common.vocab_values('ship_type')), sorted(['AGC', 'AM', 'APA', 'BB', 'BC', 'BM', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))  # BM added 15 November 2026 (monitors, Normandy prep); AGC and APA added 16 November 2026 (Normandy chunk 1, force flagships Ancon and Bayfield); old value without them
 
 
 def scenario_250_ship_classes_table():
@@ -4139,7 +4139,7 @@ def scenario_250_ship_classes_table():
     expect(s + ': core classes are seeded', [c for c in core if c not in by], [])
     expect(s + ': Hunt Type II is a sub-type of Hunt, Type VIIC of Type VII', (by['Hunt class Type II']['parent_class_id'] == by['Hunt class']['class_id'], by['Type VIIC']['parent_class_id'] == by['Type VII']['class_id']), (True, True))
     expect(s + ': every seeded figure has its own reference', [r['class_id'] for r in rows if r['capabilities_json'] and any(not v.get('reference_id') for v in json.loads(r['capabilities_json']).values())], [])
-    expect(s + ': ship types seeded cover the brief', sorted({r['ship_type'] for r in rows}), sorted(['AM', 'BB', 'BC', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))
+    expect(s + ': ship types seeded cover the brief', sorted({r['ship_type'] for r in rows}), sorted(['AM', 'APA', 'BB', 'BC', 'BM', 'CA', 'CL', 'CM', 'CORV', 'CV', 'CVE', 'CVL', 'DD', 'DE', 'PF', 'PG', 'SS', 'TB']))  # BM and APA added 16 November 2026 (Erebus class SC213, Bayfield class SC214, Normandy chunk 1); old value without them
 
 
 def scenario_251_refit_and_reclassification():

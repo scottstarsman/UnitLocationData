@@ -575,7 +575,7 @@
     "values": {
       "BB": "battleship",
       "BC": "battlecruiser",
-      "BM": "monitor (code added 15 November 2026 for HMS Roberts and Erebus; no class row yet)",
+      "BM": "monitor (code added 15 November 2026 for HMS Roberts and Erebus; class row SC213 Erebus class added 16 November 2026)",
       "CV": "fleet aircraft carrier",
       "CVL": "light aircraft carrier",
       "CVE": "escort carrier",
@@ -589,7 +589,9 @@
       "PG": "gunboat or sloop (Royal Navy sloops, patrol gunboats)",
       "CM": "minelayer",
       "AM": "minesweeper (fleet minesweepers entered singly)",
-      "SS": "submarine (any navy; midget submarines too, noted)"
+      "SS": "submarine (any navy; midget submarines too, noted)",
+      "AGC": "amphibious force flagship, the US hull code for a headquarters ship such as USS Ancon (code added 16 November 2026, Normandy chunk 1; not a combatant)",
+      "APA": "attack transport, the US hull code for a ship such as USS Bayfield, used for a force flagship of Operation Neptune (code added 16 November 2026, Normandy chunk 1; not a combatant)"
     }
   },
   "ship_capability_key": {

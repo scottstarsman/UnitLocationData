@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3b (2/3): RN LST flotillas, US LST divisions, LCI and support flotillas (branch `normandy-landing-craft`)
+
+- **Units (45 new):** eight RN LST flotillas `UK-LSTF-01`, `02`, `03`, `04`, `05`, `07`, `08`, `09` (no 6th); 19 US LST divisions `US-LSTD-21`, `22`, `23`, `55`, `56`, `60`, `61`, `62`, `65`, `70`, `71`, `72`, `97`, `98`, `99`, `100`, `101`, `102`, `103`; 12 LCI flotillas (`UK-MLF-200`, `201`, `202`, `251`, `252`, `253`, `263`, `265`, `266`, and RCN `CAN-MLF-260`, `261`, `264`); six support flotillas `UK-MLF-310`, `330`, `331`, `332`, `333`, `900`. Echelon `naval_division`. Old value none, new value these rows; reason: Scott approved F1-F21 and ND1-ND5 (16 November 2026). The 56th LST Division note records five hulls as printed; a sixth is not invented. The 8th LST Flotilla note lists the five hulls in App. A(2).
+- **Claims `C9922`-`C9967` (46):** one 6 June claim per unit, and a second claim for the 261st LCI Flotilla. Sword, Juno and Gold beaches are the operational area at confidence 0.5. Force L LST divisions and flotillas, and the J4 Support LCI and 310th Support Flotilla, use the general Eastern Task Force area (`PL0157`). Force B LST divisions are at Plymouth (`PL4196`, `location_represents` base); an arrival off the beaches on 6 June is not invented. No new places or references.
+- **Conflict group `G135`:** 261st LCI Flotilla, 6 June, App. A(2) "P" Squadron / Assault Group J3, R.C.N. manned [12], Juno Beach (`PL0180`) preferred versus App. A(2) "E" Squadron / Assault Group S3 [5], not marked RCN, Sword Beach (`PL0344`) alternate. One unit, not two (Scott, 16 November 2026).
+- **Relations `CR1830`-`CR1875` (46):** LST flotillas 1, 3 and 5 assigned to `UK-LCS-S-LST`; 2, 4 and 9 to `UK-AG-J3`; 7 and 8 to `UK-AG-L1`. G3 LST divisions to `UK-AG-G3`; L1 LST divisions to `UK-AG-L1`; Force B LST divisions to `US-TG-126`. LCI flotillas to their squadron or, for the 264th, to `UK-AG-G3`. The 261st preferred to `UK-LCS-P` and alternate to `UK-LCS-E` (G135). Support flotillas to `UK-LCS-S-SUP`, `UK-LCS-1`, `UK-LCS-2`, `UK-LCS-J4-SUP` or `UK-LCS-G-SUP`.
+- Next free: `C9968`, `CR1876`, `R1542`, `PL4201`, `G136`, `SC220`, `AT143`, `UL027`, scenario 294, roadmap 392.
+
 ## 16 November 2026 — Normandy chunk 3b (1/3): assault groups, landing-craft squadrons, and Western Task Force landing-craft groups (branch `normandy-landing-craft`)
 
 - **Patterns and plan:** qualified landing-craft squadron ids `UK-LCS-S-LST`, `UK-LCS-S-SUP`, `UK-LCS-J4-SUP` and `UK-LCS-G-SUP` (ND2); `UK-AG-O4` (ND3); `CAN-MLF-<nnn>` for RCN-manned LCI flotillas, written into `schema/README.md`. `docs/normandy_air_naval_plan.md` section 9 records Scott's approval of ND1–ND5 on 16 November 2026.

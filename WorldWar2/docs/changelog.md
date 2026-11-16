@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — allegiance: the Second Sino-Japanese War as its own conflict (branch `allegiance-remaining`, third commit; roadmap 388, Scott t425u)
+
+- **New vocabulary value** `allegiance_conflict` `SJW2` (old value: only `WW2`; reason: Scott asked to back Japan up to its invasion of China, and the WW2 conflict starts 1 September 1939). `scripts/allegiance.py` `CONFLICT_SPAN` gets `SJW2` = 7 July 1937 to 2 September 1945; `side_on` still answers for `WW2` unless asked for `SJW2`.
+- **New rows** (old value: none; new value: below; reason: Scott t425u): `JPN` Axis and `CHN` Allied, `SJW2`, 1937-07-07 to 1945-09-02. Start: the Marco Polo Bridge clash on the night of 7 July 1937 (FRUS Japan 1931-1941 vol. I doc. 228, R1262; the National Archives of Japan JACAR timeline, R1263; R1227). The 1931 invasion of Manchuria is not entered.
+- **Sides:** Axis is Japan side of the conflict and Allied the side opposing Japan, as the vocabulary has no other value; this is stated in the vocabulary text and in the notes (for Scott to confirm).
+- **WW2 rows unchanged** (old value equals new value): `JPN` Axis from 1939-09-01 and `CHN` Allied from 1939-09-01, kept because Scott said the 1939 date works from a strict European perspective; the notes now point to the `SJW2` rows. The `CHN` note records that China declared war on Japan on 9 December 1941 and that a state of war with Germany and Italy existed from midnight of that day (R1264, R1265).
+- Rows 64 to 66. References R1262-R1265. Scenario 283. The proposed side value "non-aligned belligerent" is still not added.
+
 ## 15 November 2026 — allegiance, the remaining countries, batch 2: the blank periods (branch `allegiance-remaining`, second commit; roadmap 387, Scott t424u)
 
 Old value to new value, with the reason, for each change (the full text is in the row notes):

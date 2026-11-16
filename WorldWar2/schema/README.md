@@ -231,7 +231,7 @@ Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a c
 | `side` | string | yes | The side during the period. | vocabulary `allegiance_side`: `Allied`, `Axis`, `neutral`, `co-belligerent` |
 | `valid_from` | date | yes | First day of the period. | `YYYY-MM-DD`, not before the start of the conflict |
 | `valid_to` | date | no | Last day of the period, inclusive; blank = open. For a nation's last row it is the end of the conflict for that nation as the sources date it, not a change of side. | `YYYY-MM-DD`, not before `valid_from` |
-| `conflict` | string | yes | The conflict. | vocabulary `allegiance_conflict` (`WW2`: 1 September 1939 to 2 September 1945) |
+| `conflict` | string | yes | The conflict. | vocabulary `allegiance_conflict` (`WW2`: 1 September 1939 to 2 September 1945; `SJW2`, the Second Sino-Japanese War, 7 July 1937 to 2 September 1945, rows for `JPN` and `CHN` only; `side_on` answers for `WW2` unless asked for another conflict) |
 | `reference_ids` | string | yes | `;`-separated reference ids. | each in `data/references_meta.csv` |
 | `note` | string | no | What the source says (paraphrased); says so where a date is the start of the table (1 September 1939) instead of an event, or is uncertain. | |
 

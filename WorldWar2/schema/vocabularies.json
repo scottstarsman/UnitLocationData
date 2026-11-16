@@ -318,7 +318,8 @@
   "allegiance_conflict": {
     "description": "Conflict a nation_allegiance row belongs to (column conflict of data/nation_allegiance.csv). Added 15 November 2026.",
     "values": {
-      "WW2": "The Second World War, 1 September 1939 to 2 September 1945 (dates of the table scope)."
+      "WW2": "The Second World War, 1 September 1939 to 2 September 1945 (dates of the table scope).",
+      "SJW2": "The Second Sino-Japanese War, 7 July 1937 (the Marco Polo Bridge incident) to 2 September 1945. Rows exist for Japan and China only (added 15 November 2026, Scott t425u). The sides are used as the two sides of this conflict: Axis = Japan's side, Allied = the side opposing Japan (China); the vocabulary has no other value. The 1931 invasion of Manchuria is a separate conflict and is not entered. After 7 December 1941 the war is part of WW2; the rows keep running to 2 September 1945 and do not replace the WW2 rows."
     }
   },
   "nationality_kind": {

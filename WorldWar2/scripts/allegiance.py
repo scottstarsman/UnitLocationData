@@ -12,7 +12,8 @@ import common
 
 PATH = os.path.join(common.ROOT, 'data', 'nation_allegiance.csv')
 WHERE = 'data/nation_allegiance.csv'
-CONFLICT_SPAN = {'WW2': (datetime.date(1939, 9, 1), datetime.date(1945, 9, 2))}
+CONFLICT_SPAN = {'WW2': (datetime.date(1939, 9, 1), datetime.date(1945, 9, 2)),
+                 'SJW2': (datetime.date(1937, 7, 7), datetime.date(1945, 9, 2))}
 
 
 def header():

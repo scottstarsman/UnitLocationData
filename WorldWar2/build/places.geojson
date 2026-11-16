@@ -83540,6 +83540,46 @@
     "region": "Lower Normandy",
     "claims_count": 0
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.2218,
+     50.5144
+    ]
+   },
+   "properties": {
+    "place_id": "PL4194",
+    "name": "Nine nautical miles east of Portland Bill",
+    "alt_names": "east of the Isle of Portland, 4 May 1944",
+    "kind": "sea_position",
+    "precision_km": 5,
+    "country": "GB",
+    "region": "English Channel",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.6833,
+     50.15
+    ]
+   },
+   "properties": {
+    "place_id": "PL4195",
+    "name": "English Channel, 50°09′N 00°41′W",
+    "alt_names": "mid-Channel, Loyalty sinking 22 August 1944",
+    "kind": "sea_position",
+    "precision_km": 5,
+    "country": "GB",
+    "region": "English Channel",
+    "claims_count": 0
+   }
   }
  ]
 }

@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3b follow-up: review sample and claim-id sort (branch `normandy-landing-craft`)
+
+- **Review sample:** `docs/review/README.md` and `sample.md` refreshed after the 144 new units and 145 claims. Unit, claim-file and command-relation counts now include the chunk 3b rows (1005 units, 931 claim files, 1926 command relations). The ground claim count in the main outputs is unchanged.
+- **`check_claim_ids.py`:** new-id range is sorted by the numeric part, so five-digit ids are not listed as `C10000..C9999`.
+
 ## 16 November 2026 — Normandy chunk 3b (3/3): LCT flotillas (branch `normandy-landing-craft`)
 
 - **Units (55 new):** LCT, LCT(A) and LCT(R) flotillas `UK-MLF-04` to `UK-MLF-59` as numbered, plus `UK-MLF-100`, `102`, `103`, `104`, `105`, `106`, `107`, `108`, `109`, `110`, `320`, `321` and `322`. Forty-five Eastern Task Force flotillas from App. A(2) and ten British-manned Western Task Force flotillas from App. B(2) ("G", "O" and "Q" LCT Squadrons). Echelon `naval_division`. The 23rd is one unit with both Green List figures ([11] and [17] LCT(4) under "D" Squadron) in the note (Scott, 16 November 2026). The 322nd is one unit, split across G1 and G2, both off Gold. Old value none, new value these rows; reason: Scott approved F1-F21 and ND1-ND5 (16 November 2026).

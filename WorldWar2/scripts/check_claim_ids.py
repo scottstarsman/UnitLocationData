@@ -73,7 +73,7 @@ def main():
             problems.append('%s was retired at %s and is not in %s now: a retired id is never forgotten' % (cid, a.base, RETIRED))
         if cid in new:
             problems.append('%s was retired at %s and is a claim again: a retired id is never reused' % (cid, a.base))
-    added = sorted(set(new) - set(old))
+    added = sorted(set(new) - set(old), key=lambda x: int(x[1:]))
     top = max([int(c[1:]) for c in list(new) + list(new_ret)] or [0])
     print('claims at %s: %d; now: %d; new ids: %s; retired now: %d; next free id: C%04d' % (
         a.base, len(old), len(new), (added[0] + '..' + added[-1] + ' (%d)' % len(added)) if added else 'none', len(new_ret), top + 1))

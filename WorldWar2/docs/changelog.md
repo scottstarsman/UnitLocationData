@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — allegiance, the remaining countries, batch 1: Iran, Iraq, Mexico, Ethiopia (branch `allegiance-remaining`, first commit; roadmap 386, Scott t424u)
+
+Old value: 39 codes and 52 allegiance rows. New value: **43 codes and 62 rows**: new codes `ETH`, `IRN`, `IRQ`, `MEX` (documented in `schema/README.md`), references `R1241`-`R1256`. Reason: Scott t424u (the four countries left blank on 15 November 2026). The Greek row `GRE` Allied 1940-10-28 gets `R1241` (old value of `reference_ids` `R1229;R1197`, new value `R1229;R1241;R1197`); no date changed. Choices for Scott are in each row note and in roadmap 386. Scenario 281.
+
 ## 15 November 2026 — leftovers, task (e) batch 3: allegiance rows for the neutrals and Vichy France (branch `leftovers-1115`, seventh commit; roadmap 385, Scott t421u)
 
 Old value: 32 codes, 44 allegiance rows. New value: **39 codes and 52 rows**: new codes `CHE`, `ESP`, `IRL`, `PRT`, `SWE`, `TUR`, `VIC` (documented in `schema/README.md`), references `R1234`-`R1240`. Reason: Scott t421u. Not entered because no day was found on a page read: Iran, Iraq, Mexico, Ethiopia (roadmap 385). Vichy France carries the value `neutral` only as the table value for "no declaration of war read"; for Scott to confirm. Scenario 280.

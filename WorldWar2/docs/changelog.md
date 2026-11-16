@@ -2,6 +2,20 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — allegiance, the remaining countries, batch 2: the blank periods (branch `allegiance-remaining`, second commit; roadmap 387, Scott t424u)
+
+Old value to new value, with the reason, for each change (the full text is in the row notes):
+
+- **JPN Axis:** valid_from 1940-09-27 to 1939-09-01; reference_ids add R1227, R1261. Reason: war with China since 7 July 1937 and the Anti-Comintern Pact of 25 November 1936. For Scott to confirm.
+- **FIN:** new row Axis 1941-06-25 to 1944-09-04 (R1260, R1220, R1261); old value: no row. Reason: the start of the Continuation War is sourced. Still blank: Winter War, 5 to 14 September 1944. `data/nationalities.csv` FIN note updated (old and new text in the note).
+- **SOV:** no change; 1939-09-01 to 1941-06-21 stays blank (needs a new side value; none added).
+- **THA neutral:** valid_to 1941-12-07 to 1941-12-10; refs add R1258, R1259. 11 to 20 December 1941 stay blank (sources conflict).
+- **YUG:** new row neutral 1941-03-27 to 1941-04-05 (R1257, R1231, R1230); old value: no row. R1241 added to the Allied row.
+- **IND:** UNCERTAIN note replaced (old and new note in the row); refs add R1241; date unchanged 1939-09-03.
+- **AUS, CAN, NZ, SAF:** R1241 added to reference_ids; dates unchanged. **NOR:** note only (the table date 25 April 1940 is a documented alternate; 9 April kept).
+- Semantic scenarios 278 and 279 updated (old expectations: Japan blank before 1940-09-27, Thailand blank 8-10 December, Yugoslavia blank 27 March to 5 April; new expectations follow the new rows).
+- Rows: 62 to 64 (Finland and Yugoslavia). New references R1257-R1261. Scenario 282. No new vocabulary value was added.
+
 ## 15 November 2026 — allegiance, the remaining countries, batch 1: Iran, Iraq, Mexico, Ethiopia (branch `allegiance-remaining`, first commit; roadmap 386, Scott t424u)
 
 Old value: 39 codes and 52 allegiance rows. New value: **43 codes and 62 rows**: new codes `ETH`, `IRN`, `IRQ`, `MEX` (documented in `schema/README.md`), references `R1241`-`R1256`. Reason: Scott t424u (the four countries left blank on 15 November 2026). The Greek row `GRE` Allied 1940-10-28 gets `R1241` (old value of `reference_ids` `R1229;R1197`, new value `R1229;R1241;R1197`); no date changed. Choices for Scott are in each row note and in roadmap 386. Scenario 281.

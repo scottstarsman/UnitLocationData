@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3b (3/3): LCT flotillas (branch `normandy-landing-craft`)
+
+- **Units (55 new):** LCT, LCT(A) and LCT(R) flotillas `UK-MLF-04` to `UK-MLF-59` as numbered, plus `UK-MLF-100`, `102`, `103`, `104`, `105`, `106`, `107`, `108`, `109`, `110`, `320`, `321` and `322`. Forty-five Eastern Task Force flotillas from App. A(2) and ten British-manned Western Task Force flotillas from App. B(2) ("G", "O" and "Q" LCT Squadrons). Echelon `naval_division`. The 23rd is one unit with both Green List figures ([11] and [17] LCT(4) under "D" Squadron) in the note (Scott, 16 November 2026). The 322nd is one unit, split across G1 and G2, both off Gold. Old value none, new value these rows; reason: Scott approved F1-F21 and ND1-ND5 (16 November 2026).
+- **Claims `C9968`-`C10022` (55):** one 6 June claim per flotilla. Sword, Juno, Gold and Utah beaches are the operational area at confidence 0.5. Force L flotillas use the general Eastern Task Force area (`PL0157`). "Q" Squadron flotillas (54th, 56th, 57th, 59th) are at Plymouth (`PL4196`, `location_represents` base). No new places or references.
+- **Relations `CR1876`-`CR1930` (55):** each flotilla assigned to its LCT or support squadron (`UK-LCS-T`, `I`, `E`, `S-SUP`, `K`, `1`, `N`, `2`, `P`, `D`, `G-SUP`, `L`, `U`, `V`, `H`, `G`, `O`, `Q`).
+- **Claim ids past `C9999`:** ids are `C` plus four or more digits (`^C\d{4,}$`). Scenario 172's other-domain filter and the 79th Volksgrenadier pre-`C8961` filter now compare the numeric part, so five-digit ids are not treated as earlier than `C9000`.
+- Next free: `C10023`, `CR1931`, `R1542`, `PL4201`, `G136`, `SC220`, `AT143`, `UL027`, scenario 295, roadmap 393.
+
 ## 16 November 2026 — Normandy chunk 3b (2/3): RN LST flotillas, US LST divisions, LCI and support flotillas (branch `normandy-landing-craft`)
 
 - **Units (45 new):** eight RN LST flotillas `UK-LSTF-01`, `02`, `03`, `04`, `05`, `07`, `08`, `09` (no 6th); 19 US LST divisions `US-LSTD-21`, `22`, `23`, `55`, `56`, `60`, `61`, `62`, `65`, `70`, `71`, `72`, `97`, `98`, `99`, `100`, `101`, `102`, `103`; 12 LCI flotillas (`UK-MLF-200`, `201`, `202`, `251`, `252`, `253`, `263`, `265`, `266`, and RCN `CAN-MLF-260`, `261`, `264`); six support flotillas `UK-MLF-310`, `330`, `331`, `332`, `333`, `900`. Echelon `naval_division`. Old value none, new value these rows; reason: Scott approved F1-F21 and ND1-ND5 (16 November 2026). The 56th LST Division note records five hulls as printed; a sixth is not invented. The 8th LST Flotilla note lists the five hulls in App. A(2).

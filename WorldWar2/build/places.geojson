@@ -83300,6 +83300,46 @@
     "region": "Emilia-Romagna",
     "claims_count": 1
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.62,
+     49.7287
+    ]
+   },
+   "properties": {
+    "place_id": "PL4182",
+    "name": "Offshore Cherbourg, 12,000 yards north (Fire Support Area 1)",
+    "alt_names": null,
+    "kind": "sea_position",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Lower Normandy",
+    "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.4572,
+     50.5144
+    ]
+   },
+   "properties": {
+    "place_id": "PL4183",
+    "name": "Portland Bill, Dorset",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 1,
+    "country": "GB",
+    "region": "Dorset",
+    "claims_count": 0
+   }
   }
  ]
 }

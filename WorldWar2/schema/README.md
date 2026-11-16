@@ -325,11 +325,20 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 - A regiment or battalion that is only an opponent or a component has no echelon letter and the type names the arm: `GER-FJR-006` (6th Fallschirmjäger Regiment, echelon `regiment/battle_group`, the one value for a regiment and a regiment-sized battle group), `GER-SSHPZ-101` (SS Heavy Panzer Battalion 101, echelon `battalion`). Both placeholders keep their letterless ids because that is the convention, not an omission (review item 6).
 - The id is the same on every row of the unit and equals the claim file name.
 
-**Naval and air id patterns (approved by Scott 15 November 2026 for the Normandy air and naval pass; `docs/normandy_air_naval_plan.md` section 4).** The nation prefix is the `code` of the unit's nationality (so the squadron ids have the form `CAN-SQN-401`, `POL-SQN-302`, `NOR-SQN-331`, `AUS-SQN-453`, `NZ-SQN-485`); the validator requires it. The number is the unit's own number, zero-padded as in the examples; none of these ids has an echelon letter.
+**Naval and air id patterns (approved by Scott 15 November 2026 for the Normandy air and naval pass; `docs/normandy_air_naval_plan.md` section 4; extended 16 November 2026, decisions F1–F21, chunk 3a).** The nation prefix is the `code` of the unit's nationality (so the squadron ids have the form `CAN-SQN-401`, `POL-SQN-302`, `NOR-SQN-331`, `AUS-SQN-453`, `NZ-SQN-485`); the validator requires it. The number is the unit's own number, zero-padded as in the examples; none of these ids has an echelon letter.
 
 | Unit | Pattern | Example |
 |---|---|---|
-| Royal Navy destroyer, minesweeping, landing-craft and coastal-forces flotillas (echelon `naval_division`) | `UK-DF-<nn>`, `UK-MSF-<nn>`, `UK-MLF-<nn>`, `UK-CF-<nn>` | none yet |
+| Royal Navy destroyer, minesweeping, landing-craft and coastal-forces flotillas (echelon `naval_division`) | `UK-DF-<nn>`, `UK-MSF-<nn>` (fleet, MMS and BYMS flotillas; the 101-series numbers do not clash with the fleet flotillas), `UK-MLF-<nn>` (LCT, LCI and support flotillas), `UK-CF-<nn>` (**MTB flotillas only**; Scott, 16 November 2026, F7) | `UK-MSF-01`, `UK-MSF-101`, `UK-CF-55` |
+| Motor-launch (and HDML) flotillas (echelon `naval_division`) | `UK-CML-<nn>` (new, 16 November 2026, F7) | `UK-CML-01`, `UK-CML-103` |
+| Coastal-force gunboat flotillas (echelon `naval_division`) | `UK-MGBF-<nn>`, `UK-SGBF-<nn>` (new, 16 November 2026, F7) | `UK-MGBF-01`, `UK-SGBF-01` |
+| RCN coastal-force (MTB) flotillas | `CAN-CF-<nn>` (same nationality rule as `CAN-MSF-31`; F10) | `CAN-CF-29`, `CAN-CF-65` |
+| LL (magnetic) minesweeping-trawler groups (echelon `naval_division`) | `UK-LLG-<nnn>` (new, 16 November 2026, F6) | `UK-LLG-131` |
+| US YMS sweep units (echelon `naval_division`) | `US-YMSU-<n>` (new, 16 November 2026, F12) | `US-YMSU-4`, `US-YMSU-5` |
+| US LST divisions | `US-LSTD-<nn>` (new, 16 November 2026, F19; used in chunk 3b) | none yet |
+| Eastern Task Force assault groups (echelon `task_group`) | `UK-AG-<letter+n>` (new, 16 November 2026, F16; used in chunk 3b) | `UK-AG-S1` |
+| Landing-craft squadrons (lettered or numbered) | `UK-LCS-<letter or n>` (new, 16 November 2026, F16; used in chunk 3b) | none yet |
+| RN LST flotillas (echelon `naval_division`) | `UK-LSTF-<nn>` (new, 16 November 2026, F16; used in chunk 3b; do not reuse `UK-MLF-`) | none yet |
 | US bomb group, troop carrier group, fighter group | `US-BG-<nnn>`, `US-TCG-<nnn>`, `US-FG-<nnn>` (existing) | `US-FG-366` |
 | US squadron (fighter, bomb, troop carrier) | `US-FS-<nnn>`, `US-BS-<nnn>`, `US-TCS-<nnn>` | `US-FS-390` |
 | RAF group and wing (RAF group = `air_wing`, RAF wing = `air_group`) | `UK-GRP-<nnn>`, `UK-WG-<nnn>` | none yet |

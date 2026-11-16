@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 1487)
+## Part 2: command relations (20 of 1599)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -697,19 +697,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0408 (US-INF-029D, 1944-09-18) | asserts_start | 1944-09-05 | - | CMH ETO-OB assignment table, Army Assigned column: "Ninth" | R408 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-30.html [p. 650] |
   | C0409 (US-INF-029D, 1944-09-19) | asserts_start | 1944-09-05 | - | CMH ETO-OB assignment table, Army Assigned column: "Ninth" | R346 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/29ID-ETO.htm |
 
-### R06. CR0458: 99th Infantry Division -> III Corps (unspecified_subordination)
-
-- **Subject / higher unit:** `US-INF-099D` / `US-COR-003C`
-- **Interval:** from 1945-03-09 (assignment_table) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis assignment_table; status preferred
-- **Note:** CMH ETO-OB assignment table, Corps column: "III" from the row of 9 Mar 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C0623 (US-INF-099D, 1945-03-12) | asserts_start | 1945-03-09 | - | CMH ETO-OB assignment table, Corps column: "III" from the row of 9 Mar 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached | R532 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/99ID-ETO.htm [R540: p. 226]; R540 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-11.html [p. 226] |
-  | C0668 (US-INF-099D, 1945-04-15) | asserts_start | 1945-03-09 | - | CMH ETO-OB assignment table, Corps column: "III" from the row of 9 Mar 45; valid_from is the first row of the unbroken run (convention V-013, schema/README.md); no later row without it in the table; the single corps column does not say assigned or attached | R532 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/99ID-ETO.htm [R566: p. 370]; R566 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-16.html [p. 370] |
-
-### R07. CR0564: 9th Panzer Division -> LXXXI Corps (assigned)
+### R06. CR0564: 9th Panzer Division -> LXXXI Corps (assigned)
 
 - **Subject / higher unit:** `GER-PZ-009D` / `GER-COR-081C`
 - **Interval:** from 1944-08-10 (narrative) to 1944-10-14 (earliest 1944-09-16) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -721,18 +709,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0730 (GER-PZ-009D, 1944-08-10) | asserts_start | 1944-08-10 | - | Listed as one of the two LXXXI Corps divisions in line on 10 August (Breakout and Pursuit ch. 25 p. 498) | R403 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-25.html [p. 500, 498] |
   | C0862 (GER-PZ-009D, 1944-09-16) | observed_during | - | - |  | R441 https://www.ibiblio.org/hyperwar/USA/USA-E-Siegfried/USA-E-Siegfried-4.html [p. 87] |
 
-### R08. CR0655: 64th Infantry Division -> LXVII Corps (assigned)
-
-- **Subject / higher unit:** `GER-INF-064D` / `GER-COR-067C`
-- **Interval:** from 1944-10-15 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** Lexikon der Wehrmacht, 64th Infantry Division, table 1944: October: LXVII Corps, 15. Armee; month-level, so the start is the row date and an approximate date
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C0922 (GER-INF-064D, 1944-10-15) | observed_during | - | - |  | R623 https://lexikon-wehrmacht.de/Gliederungen/Infanteriedivisionen/64ID-R.htm [table of 1944, October row] |
-
-### R09. CR0822: Twenty-fourth Army (Germany) -> Nineteenth Army (Germany) (attached)
+### R07. CR0822: Twenty-fourth Army (Germany) -> Nineteenth Army (Germany) (attached)
 
 - **Subject / higher unit:** `GER-ARMY-024A` / `GER-ARMY-019A`
 - **Interval:** from 1945-04-21 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -743,7 +720,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C1219 (GER-ARMY-024A, 1945-04-21) | observed_during | - | - |  | R568 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-18.html [p. 434]; R569 https://www.ibiblio.org/hyperwar/USA/USA-E-Last/USA-E-Last-19.html [p. 472] |
 
-### R10. CR0925: 1st Polish Armoured Division -> First Canadian Army (unspecified_subordination)
+### R08. CR0925: 1st Polish Armoured Division -> First Canadian Army (unspecified_subordination)
 
 - **Subject / higher unit:** `POL-ARM-001D` / `CAN-ARMY-001A`
 - **Interval:** from 1944-08-05 (inferred) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -786,7 +763,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1579 (POL-ARM-001D, 1945-05-06) | observed_during | - | - |  | R035 https://en.wikipedia.org/wiki/1st_Armoured_Division_(Poland) [section Germany] |
   | C1560 (POL-ARM-001D, 1944-09-28) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 367]; R671 https://archive.org/details/victory-west-vol-2 [p. 70]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 261] |
 
-### R11. CR0927: 1st Czechoslovak Independent Armoured Brigade -> 21st Army Group (unspecified_subordination)
+### R09. CR0927: 1st Czechoslovak Independent Armoured Brigade -> 21st Army Group (unspecified_subordination)
 
 - **Subject / higher unit:** `CZ-ARM-001B` / `UK-AG-021G`
 - **Interval:** from 1944-08-30 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -801,7 +778,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1587 (CZ-ARM-001B, 1944-10-28) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R675 https://en.wikipedia.org/wiki/Siege_of_Dunkirk_(1944%E2%80%931945) [section Siege]; R890 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq184.pdf [para 153] |
   | C1588 (CZ-ARM-001B, 1944-11-27) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R882 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq173.pdf [paras 24, 49, 59]; R890 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq184.pdf [para 159] |
 
-### R12. CR0929: 1st Belgian Infantry Brigade (Brigade Piron) -> First Canadian Army (unspecified_subordination)
+### R10. CR0929: 1st Belgian Infantry Brigade (Brigade Piron) -> First Canadian Army (unspecified_subordination)
 
 - **Subject / higher unit:** `BEL-INF-001B` / `CAN-ARMY-001A`
 - **Interval:** from 1944-08-13 (narrative) to 1944-09-01 (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -816,7 +793,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1593 (BEL-INF-001B, 1944-08-24) | observed_during | - | - |  | R144 https://en.wikipedia.org/wiki/Piron_Brigade [section Normandy invasion] |
   | C1594 (BEL-INF-001B, 1944-08-26) | asserts_end | - | 1944-09-01 | Transferred from General Crerar to the Second Army on 2 September (Wikipedia; Stacey p. 323); last row under First Canadian Army | R144 https://en.wikipedia.org/wiki/Piron_Brigade [section Normandy invasion] |
 
-### R13. CR0941: French 2nd Armoured Division -> Third Army (unspecified_subordination)
+### R11. CR0941: French 2nd Armoured Division -> Third Army (unspecified_subordination)
 
 - **Subject / higher unit:** `FR-ARM-002D` / `US-ARMY-003A`
 - **Interval:** from 1944-09-08 (narrative) to 1944-09-28 (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -828,7 +805,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1613 (FR-ARM-002D, 1944-09-13) | asserts_start | 1944-09-08 | - | Joined the XV Corps of the Third Army on 8 September (The Lorraine Campaign, p. 185) | R048 https://en.wikipedia.org/wiki/2nd_Armored_Division_(France) [section Alsace and Lorraine]; R415 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-4.html [pp. 185, 199] |
   | C1614 (FR-ARM-002D, 1944-09-28) | asserts_end | - | 1944-09-28 | The XV Corps passed to the 6th Army Group and the Seventh Army on 29 September (Riviera to the Rhine, p. 254) | R421 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-14.html [pp. 254, 256] |
 
-### R14. CR1046: Panzer-Brigade 107 -> LXXXVI Corps (assigned)
+### R12. CR1046: Panzer-Brigade 107 -> LXXXVI Corps (assigned)
 
 - **Subject / higher unit:** `GER-PZB-107B` / `GER-COR-086C`
 - **Interval:** from 1944-10-01 (claim_date) to 1944-11-07 (earliest 1944-10-01) (inferred); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -839,7 +816,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C1769 (GER-PZB-107B, 1944-10-01) | asserts_end | - | 1944-11-07 | Inferred value: the brigade was dissolved on 7 November 1944 (Wikipedia); the row itself does not date the end | R701 https://en.wikipedia.org/wiki/List_of_German_brigades_in_World_War_II [R703: p. 236, 239]; R703 https://www.ibiblio.org/hyperwar/USA/USA-E-Siegfried/USA-E-Siegfried-10.html [p. 236, 239] |
 
-### R15. CR1083: Fallschirm-Nachrichten-Abteilung 3 (3rd Fallschirmjäger Division) -> 3rd Fallschirmjäger Division (organic)
+### R13. CR1083: Fallschirm-Nachrichten-Abteilung 3 (3rd Fallschirmjäger Division) -> 3rd Fallschirmjäger Division (organic)
 
 - **Subject / higher unit:** `GER-FJNA-003` / `GER-FJ-003D`
 - **Interval:** from 1944-05-15 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -850,7 +827,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C8415 (GER-FJNA-003, 1944-05-15) | observed_during | - | - |  | R853 https://www.fold3.com/image/160245250/ [Skizze 1 (Fold3 images 35, 39)] |
 
-### R16. CR1146: 35th Infantry Division -> XIX Corps (operational_control)
+### R14. CR1146: 35th Infantry Division -> XIX Corps (operational_control)
 
 - **Subject / higher unit:** `US-INF-035D` / `US-COR-019C`
 - **Interval:** from 1945-04-13 (assignment_table) to 1945-04-15 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -861,7 +838,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C8567 (US-INF-035D, 1945-04-13) | asserts_start_and_end | 1945-04-13 | 1945-04-15 | CMH ETO-OB assignment table, Corps column: "XIX (Opns)" (row 13 Apr 45) | R350 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/35ID-ETO.htm [Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr] |
 
-### R17. CR1216: 1st Canadian Armoured Brigade -> I Canadian Corps (unspecified_subordination)
+### R15. CR1216: 1st Canadian Armoured Brigade -> I Canadian Corps (unspecified_subordination)
 
 - **Subject / higher unit:** `CAN-ARM-001B` / `CAN-COR-001C`
 - **Interval:** from 1945-04-12 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -873,7 +850,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C7616 (CAN-ARM-001B, 1945-04-12) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 570] |
   | C7688 (CAN-ARM-001B, 1945-04-18) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 581]; R883 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq039.pdf [para 113] |
 
-### R18. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
+### R16. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
 
 - **Subject / higher unit:** `NL-INF-IRNEB` / `UK-ARMY-002A`
 - **Interval:** from 1944-09-04 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status alternate
@@ -884,7 +861,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9383 (NL-INF-IRNEB, 1944-09-04) | asserts_start | 1944-09-04 | - | Attached to the British Second Army on 4 September and then ordered from the Seine area to Brussels (de Jong, p. 268, footnote 4) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 268, footnote 4] |
 
-### R19. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
+### R17. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
 
 - **Subject / higher unit:** `NL-INF-BEWAK` / `NL-BS-000H`
 - **Interval:** from 1944-09-22 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -896,7 +873,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C9389 (NL-INF-BEWAK, 1944-09-22) | asserts_start | 1944-09-22 | - | Van Houten gives command of the Bewakingstroepen der BS to van Dijk in the same 22 September split (de Jong, pp. 561-563) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 561-563] |
   | C9393 (NL-INF-BEWAK, 1945-05-01) | observed_during | - | - | London war-department return for early May 1945 still reports Bewakingstroepen in the liberated south (de Jong, pp. 757-758) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 757-758] |
 
-### R20. CR1366: USS O'Brien (DD-725) -> Escort Group, Assault Force U (Task Group 125.6) (assigned)
+### R18. CR1366: USS O'Brien (DD-725) -> Escort Group, Assault Force U (Task Group 125.6) (assigned)
 
 - **Subject / higher unit:** `US-DD-725` / `US-TG-125-6`
 - **Interval:** from 1944-06-06 (claim_date) to 1944-06-24 (earliest 1944-06-06) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -906,4 +883,26 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C9497 (, ) | observed_during | - | - |  | R1278 https://archive.org/details/husno-volume-xi-the-invasion-of-france-and-germany-1944-1945 [App. I, Western Naval Task Force]; R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. B(1) or App. A or App. C, allocation]; R1312 https://en.wikipedia.org/wiki/USS_O'Brien_(DD-725) [Normandy or service paragraph] |
+
+### R19. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
+
+- **Subject / higher unit:** `NOR-DD-STORD` / `UK-DF-23`
+- **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
+- **Note:** Added in the Normandy chunk 2 pass (branch normandy-etf-ships, 16 November 2026): old value none, new value this relation; reason: Scott approved recommendations E1-E11 (16 November 2026). Allocation from Battle Summary 39 and the NHB booklet (decision E7).
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C9631 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1426 https://en.wikipedia.org/wiki/HNoMS_Stord_(G26) [Normandy or service or loss paragraph] |
+
+### R20. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
+
+- **Subject / higher unit:** `GRE-CORV-TOMBAZIS` / `UK-TF-G`
+- **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
+- **Note:** Added in the Normandy chunk 2 pass (branch normandy-etf-ships, 16 November 2026): old value none, new value this relation; reason: Scott approved recommendations E1-E11 (16 November 2026). Allocation from Battle Summary 39 and the NHB booklet (decision E7).
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C9701 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1490 https://en.wikipedia.org/wiki/HMS_Tamarisk_(K216) [Normandy or service or loss paragraph] |
 

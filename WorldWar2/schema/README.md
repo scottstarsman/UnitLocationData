@@ -219,7 +219,7 @@ Lineage links between unit records. A renamed, rebuilt or merged formation keeps
 
 Rules checked by `scripts/validate.py` (through `scripts/lineage.py`): unique ids, sorted by `lineage_id`; no duplicate predecessor-successor pair; the links form no cycle (a unit cannot be its own ancestor); both ends exist. Both linked units carry a `unit_note` that names the other record. Build outputs `build/units.csv` and `build/units.json` repeat `data/units.csv` and add `predecessor_unit_ids` and `successor_unit_ids` (`;`-separated in the CSV, lists in the JSON), derived from this table.
 
-**Nation codes added in leftovers-1115 task e (15 November 2026, Scott t421u).** `data/nationalities.csv` now also has `BUL` (Bulgaria), `FIN` (Finland), `HUN` (Hungary), `JPN` (Japan), `MCK` (Manchukuo), `NDH` (Independent State of Croatia), `ROM` (Romania), `SVK` (Slovakia) and `THA` (Thailand) in batch 1, and `BRA` (Brazil), `CHN` (China), `GRE` (Greece), `IND` (India), `PHL` (Philippines), `SOV` (Soviet Union) and `YUG` (Yugoslavia) in batch 2, and `CHE` (Switzerland), `ESP` (Spain), `IRL` (Ireland), `PRT` (Portugal), `SWE` (Sweden), `TUR` (Turkey) and `VIC` (Vichy France) in batch 3: three letters, the style of GER, POL, NOR, AUS and SAF (the two-letter codes CZ, FR, IT, NL, UK, US stay). `MCK`, `NDH`, `SOV` and `VIC` are choices for Scott to confirm. A unit id of such a nation starts with its code.
+**Nation codes added in leftovers-1115 task e (15 November 2026, Scott t421u).** `data/nationalities.csv` now also has `BUL` (Bulgaria), `FIN` (Finland), `HUN` (Hungary), `JPN` (Japan), `MCK` (Manchukuo), `NDH` (Independent State of Croatia), `ROM` (Romania), `SVK` (Slovakia) and `THA` (Thailand) in batch 1, and `BRA` (Brazil), `CHN` (China), `GRE` (Greece), `IND` (India), `PHL` (Philippines), `SOV` (Soviet Union) and `YUG` (Yugoslavia) in batch 2, and `CHE` (Switzerland), `ESP` (Spain), `IRL` (Ireland), `PRT` (Portugal), `SWE` (Sweden), `TUR` (Turkey) and `VIC` (Vichy France) in batch 3, and `ETH` (Ethiopia), `IRN` (Iran), `IRQ` (Iraq) and `MEX` (Mexico) on the branch allegiance-remaining (15 November 2026): three letters, the style of GER, POL, NOR, AUS and SAF (the two-letter codes CZ, FR, IT, NL, UK, US stay). `MCK`, `NDH`, `SOV` and `VIC` are choices for Scott to confirm. A unit id of such a nation starts with its code.
 
 ### data/nation_allegiance.csv (hand-maintained; `schema/nation_allegiance.schema.json`)
 
@@ -228,10 +228,10 @@ Added 15 November 2026 (Scott, t413u-t414u). Which side a nation stood on in a c
 | column | type | required | meaning | constraints |
 |---|---|---|---|---|
 | `nation` | string | yes | The `code` of a row of `data/nationalities.csv`. | foreign key `nationalities.code`; kind `nation` (not `ALL`) |
-| `side` | string | yes | The side during the period. | vocabulary `allegiance_side`: `Allied`, `Axis`, `neutral`, `co-belligerent` |
+| `side` | string | yes | The side during the period. | vocabulary `allegiance_side`: `Allied`, `Axis`, `neutral`, `co-belligerent`, `non-aligned-belligerent` |
 | `valid_from` | date | yes | First day of the period. | `YYYY-MM-DD`, not before the start of the conflict |
 | `valid_to` | date | no | Last day of the period, inclusive; blank = open. For a nation's last row it is the end of the conflict for that nation as the sources date it, not a change of side. | `YYYY-MM-DD`, not before `valid_from` |
-| `conflict` | string | yes | The conflict. | vocabulary `allegiance_conflict` (`WW2`: 1 September 1939 to 2 September 1945) |
+| `conflict` | string | yes | The conflict. | vocabulary `allegiance_conflict` (`WW2`: 1 September 1939 to 2 September 1945; `SJW2`, the Second Sino-Japanese War, 7 July 1937 to 2 September 1945, rows for `JPN` and `CHN` only; `side_on` answers for `WW2` unless asked for another conflict) |
 | `reference_ids` | string | yes | `;`-separated reference ids. | each in `data/references_meta.csv` |
 | `note` | string | no | What the source says (paraphrased); says so where a date is the start of the table (1 September 1939) instead of an event, or is uncertain. | |
 
@@ -638,7 +638,7 @@ Meaning of the `relationship` column of `data/command_relations.csv` (and of the
 
 ### allegiance_side
 
-Meaning of the `side` column of data/nation_allegiance.csv (vocabulary `allegiance_side`): `Allied`, `Axis`, `neutral` (not at war; a declared non-belligerence such as Italy's from September 1939 to June 1940 is `neutral` with the note saying so), `co-belligerent` (fought alongside the Allies without being one of the Allied powers: the Kingdom of Italy from 13 October 1943). `allegiance_conflict` has one value, `WW2`.
+Meaning of the `side` column of data/nation_allegiance.csv (vocabulary `allegiance_side`): `Allied`, `Axis`, `neutral` (not at war; a declared non-belligerence such as Italy's from September 1939 to June 1940 is `neutral` with the note saying so), `co-belligerent` (fought alongside the Allies without being one of the Allied powers: the Kingdom of Italy from 13 October 1943), `non-aligned-belligerent` (at war, declared or not, but on neither the Allied nor the Axis side: the USSR 1 September 1939 to 6 October 1939 and 30 November 1939 to 13 March 1940, Finland in the Winter War; added 15 November 2026, Scott t427u; `Resolver.camp` gives it no camp, as for `neutral`, so the same-side check of `engaged_with` never fires for it). `allegiance_conflict` has two values: `WW2` and `SJW2` (old text: "one value, `WW2`", stale since the Sino-Japanese War commit of 15 November 2026).
 
 ### lineage_kind
 

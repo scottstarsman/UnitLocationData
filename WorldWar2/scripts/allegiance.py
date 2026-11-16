@@ -12,7 +12,8 @@ import common
 
 PATH = os.path.join(common.ROOT, 'data', 'nation_allegiance.csv')
 WHERE = 'data/nation_allegiance.csv'
-CONFLICT_SPAN = {'WW2': (datetime.date(1939, 9, 1), datetime.date(1945, 9, 2))}
+CONFLICT_SPAN = {'WW2': (datetime.date(1939, 9, 1), datetime.date(1945, 9, 2)),
+                 'SJW2': (datetime.date(1937, 7, 7), datetime.date(1945, 9, 2))}
 
 
 def header():
@@ -178,7 +179,7 @@ class Resolver:
 
     Built from the three tables (nationality name -> code through data/nationalities.csv). side(unit_id, date)
     takes a datetime.date or YYYY-MM-DD; camp(...) folds the side into 'Allied' (Allied and co-belligerent), 'Axis' or None
-    (neutral, a gap) for the checks that ask whether two units fought on opposite sides.
+    (neutral, non-aligned-belligerent, a gap) for the checks that ask whether two units fought on opposite sides.
     """
 
     def __init__(self, units, nationalities, nation_rows, override_rows):
@@ -213,4 +214,5 @@ class Resolver:
 
     @staticmethod
     def camp(side):
+        # neutral and non-aligned-belligerent (added 15 November 2026) belong to no camp: the same-side check in unit_refs never fires for them
         return {'Allied': 'Allied', 'co-belligerent': 'Allied', 'Axis': 'Axis'}.get(side)

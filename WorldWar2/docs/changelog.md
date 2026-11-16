@@ -2,6 +2,39 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 15 November 2026 — allegiance: the side value `non-aligned-belligerent` (branch `allegiance-remaining`, fourth commit; roadmap 389, Scott t427u)
+
+- **New vocabulary value** `allegiance_side` `non-aligned-belligerent` (old value: four sides; reason: Scott approved the proposal of roadmap 387). Meaning: at war, declared or not, on neither the Allied nor the Axis side. `Resolver.camp` returns no camp for it (as for neutral), documented in `scripts/allegiance.py`, `schema/vocabularies.json`, `schema/nation_allegiance.schema.json` and `schema/README.md` (where the stale sentence "`allegiance_conflict` has one value, `WW2`" is corrected to two values). `engaged_with`: no false pass or failure (the check only rejects two units of the same camp).
+- **New rows** (old value blank, new value below, reason: the side value and the sources read; sources in each note): `SOV` non-aligned-belligerent 1939-09-01 to 1939-10-06, neutral 1939-10-07 to 1939-11-29, non-aligned-belligerent 1939-11-30 to 1940-03-13, neutral 1940-03-14 to 1941-06-21; `FIN` non-aligned-belligerent 1939-11-30 to 1940-03-13, neutral 1940-03-14 to 1941-06-24. The Soviet Allied row, the Finnish Axis row, the Finnish co-belligerent row and the `FIN` entry of `data/nationalities.csv` carry old and new text.
+- **Still blank:** Finland 5 to 14 September 1944 and Thailand 11 to 20 December 1941 (the new value does not fit).
+- References R1266-R1274 (FRUS 1939 and 1940, the Avalon non-aggression pact, Wikipedia). Rows 66 to 72. Scenario 284; the expectations of scenarios 279 and 282 that asserted the old blanks are changed (old and new in the test text). Choices for Scott to confirm are in roadmap 389.
+
+## 15 November 2026 — allegiance: the Second Sino-Japanese War as its own conflict (branch `allegiance-remaining`, third commit; roadmap 388, Scott t425u)
+
+- **New vocabulary value** `allegiance_conflict` `SJW2` (old value: only `WW2`; reason: Scott asked to back Japan up to its invasion of China, and the WW2 conflict starts 1 September 1939). `scripts/allegiance.py` `CONFLICT_SPAN` gets `SJW2` = 7 July 1937 to 2 September 1945; `side_on` still answers for `WW2` unless asked for `SJW2`.
+- **New rows** (old value: none; new value: below; reason: Scott t425u): `JPN` Axis and `CHN` Allied, `SJW2`, 1937-07-07 to 1945-09-02. Start: the Marco Polo Bridge clash on the night of 7 July 1937 (FRUS Japan 1931-1941 vol. I doc. 228, R1262; the National Archives of Japan JACAR timeline, R1263; R1227). The 1931 invasion of Manchuria is not entered.
+- **Sides:** Axis is Japan side of the conflict and Allied the side opposing Japan, as the vocabulary has no other value; this is stated in the vocabulary text and in the notes (for Scott to confirm).
+- **WW2 rows unchanged** (old value equals new value): `JPN` Axis from 1939-09-01 and `CHN` Allied from 1939-09-01, kept because Scott said the 1939 date works from a strict European perspective; the notes now point to the `SJW2` rows. The `CHN` note records that China declared war on Japan on 9 December 1941 and that a state of war with Germany and Italy existed from midnight of that day (R1264, R1265).
+- Rows 64 to 66. References R1262-R1265. Scenario 283. The proposed side value "non-aligned belligerent" is still not added.
+
+## 15 November 2026 — allegiance, the remaining countries, batch 2: the blank periods (branch `allegiance-remaining`, second commit; roadmap 387, Scott t424u)
+
+Old value to new value, with the reason, for each change (the full text is in the row notes):
+
+- **JPN Axis:** valid_from 1940-09-27 to 1939-09-01; reference_ids add R1227, R1261. Reason: war with China since 7 July 1937 and the Anti-Comintern Pact of 25 November 1936. For Scott to confirm.
+- **FIN:** new row Axis 1941-06-25 to 1944-09-04 (R1260, R1220, R1261); old value: no row. Reason: the start of the Continuation War is sourced. Still blank: Winter War, 5 to 14 September 1944. `data/nationalities.csv` FIN note updated (old and new text in the note).
+- **SOV:** no change; 1939-09-01 to 1941-06-21 stays blank (needs a new side value; none added).
+- **THA neutral:** valid_to 1941-12-07 to 1941-12-10; refs add R1258, R1259. 11 to 20 December 1941 stay blank (sources conflict).
+- **YUG:** new row neutral 1941-03-27 to 1941-04-05 (R1257, R1231, R1230); old value: no row. R1241 added to the Allied row.
+- **IND:** UNCERTAIN note replaced (old and new note in the row); refs add R1241; date unchanged 1939-09-03.
+- **AUS, CAN, NZ, SAF:** R1241 added to reference_ids; dates unchanged. **NOR:** note only (the table date 25 April 1940 is a documented alternate; 9 April kept).
+- Semantic scenarios 278 and 279 updated (old expectations: Japan blank before 1940-09-27, Thailand blank 8-10 December, Yugoslavia blank 27 March to 5 April; new expectations follow the new rows).
+- Rows: 62 to 64 (Finland and Yugoslavia). New references R1257-R1261. Scenario 282. No new vocabulary value was added.
+
+## 15 November 2026 — allegiance, the remaining countries, batch 1: Iran, Iraq, Mexico, Ethiopia (branch `allegiance-remaining`, first commit; roadmap 386, Scott t424u)
+
+Old value: 39 codes and 52 allegiance rows. New value: **43 codes and 62 rows**: new codes `ETH`, `IRN`, `IRQ`, `MEX` (documented in `schema/README.md`), references `R1241`-`R1256`. Reason: Scott t424u (the four countries left blank on 15 November 2026). The Greek row `GRE` Allied 1940-10-28 gets `R1241` (old value of `reference_ids` `R1229;R1197`, new value `R1229;R1241;R1197`); no date changed. Choices for Scott are in each row note and in roadmap 386. Scenario 281.
+
 ## 15 November 2026 — leftovers, task (e) batch 3: allegiance rows for the neutrals and Vichy France (branch `leftovers-1115`, seventh commit; roadmap 385, Scott t421u)
 
 Old value: 32 codes, 44 allegiance rows. New value: **39 codes and 52 rows**: new codes `CHE`, `ESP`, `IRL`, `PRT`, `SWE`, `TUR`, `VIC` (documented in `schema/README.md`), references `R1234`-`R1240`. Reason: Scott t421u. Not entered because no day was found on a page read: Iran, Iraq, Mexico, Ethiopia (roadmap 385). Vichy France carries the value `neutral` only as the table value for "no declaration of war read"; for Scott to confirm. Scenario 280.

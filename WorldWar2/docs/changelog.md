@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3c follow-up: review sample (branch `normandy-lca-buildup`)
+
+- **Review sample:** `docs/review/README.md` and `sample.md` refreshed after the 132 new units and 132 claims. Unit, claim-file and command-relation counts now include the chunk 3c rows (1137 units, 1063 claim files, 2058 command relations). The ground claim count in the main outputs is unchanged.
+
 ## 16 November 2026 — Normandy chunk 3c (3/3): build-up and barge flotillas (branch `normandy-lca-buildup`)
 
 - **Units (58 new):** 27 build-up flotillas `UK-MLF-<nn>` (G3) and 31 barge flotillas `UK-LBF-<nn>` (G2): 19 LBV, 10 L.B. (S and R) and the 25th and 26th L.B.F. Old value none, new value these rows; reason: Scott approved G1-G8 (16 November 2026). The 4th LBV (`UK-LBF-04`) and the 30th L.B. (S and R) (`UK-LBF-30`) are one unit each, parented to `UK-TF-ETF`, with both squadron allocations in the note and a single claim at `PL0157` (G4); a preferred beach is not sourced. The 25th and 26th L.B.F. parent to `UK-AG-G1` and `UK-AG-G2` (G6). Named HMFTs stay in the flotilla notes (F19). App. A(2) prints the 35th as "L.B.V. (S and R)"; that heading is in the note. The 3rd LBV's own strength is not printed separately from half of the 4th; the combined [18] is kept on both notes and a split is not invented.

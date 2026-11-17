@@ -6,6 +6,7 @@ The machine-readable definitions live next to this file and are what `scripts/va
 - [`units.schema.json`](units.schema.json): the same for `data/units.csv`.
 - [`relations.schema.json`](relations.schema.json): primary keys and foreign keys of the side tables that have no column schema of their own (`nationalities`, `operations`, `operation_relations`, `operation_exceptions`, `coordinate_exceptions`, `claim_key_exceptions`, `place_merges`, `references_meta`, `claim_reference_roles`).
 - [`places.schema.json`](places.schema.json): columns, primary key and foreign key of `data/places.csv`.
+- [`missions.schema.json`](missions.schema.json): columns, primary key and foreign keys of the mission files `data/missions/<nationality>/<unit_id>.csv` (decision J1, 17 November 2026; see "missions columns" below).
 - [`vocabularies.json`](vocabularies.json): controlled vocabularies and the confidence rubric.
 
 All CSV files are UTF-8, LF line endings, comma separated, with a header row, minimal quoting (fields with commas, quotes or newlines are quoted). Missing values are empty strings. Dates are `YYYY-MM-DD`. Booleans are lowercase `true`/`false`. Coordinates are decimal degrees (WGS84). The column order is the same in every claim file; `theater` follows `date`.
@@ -85,6 +86,33 @@ Claim ids are never reused. A claim that has to leave the data (it was entered b
 | `reason` | Why the claim was removed, and by whom or in which change. |
 
 Validator checks (`scripts/validate.py`): header, sorted, no repeated id, the id is not a claim, the replacement is a claim, the reason is not blank; a gap in the numbering that is not retired is printed as a NOTE (a gap is allowed when the id was never used). `scripts/check_claim_ids.py` compares with an earlier revision (default `origin/main`) and fails when an id of that revision is gone without a row here, belongs to another unit now, or when a retired id was forgotten or reused; it needs git history, so it is run by hand before a pull request.
+
+## missions columns (`data/missions/<nationality>/<unit_id>.csv`, `build/other_domains/missions.csv`)
+
+Decision J1 of Normandy chunk 5 (Scott, 17 November 2026). One row is **one mission of a flying unit** (not one aircraft or pilot). A mission is **not a location claim**: it says where the unit attacked or flew, not where the unit was, so it never feeds `build/all_claims.csv`, the command relations or the who_controls grid. The unit's position on the day is its **base claim** (`location_represents` `base`). One file per flying unit (`domain` air), like the claim files; `scripts/build.py` concatenates them into `build/other_domains/missions.csv` (sorted by date then mission id, with `unit_name`, `nationality`, `target_place_name`, `target_latitude`, `target_longitude`, `target_country` and `aircraft_designation` added from the unit, place and aircraft tables; `scripts/missions.py`). Column definitions: `missions.schema.json`.
+
+| column | required | meaning |
+|---|---|---|
+| `mission_id` | yes | `MSN` and four or more digits (`MSN0001` onward), unique across the files, never reused or renumbered. A removed row goes to `data/retired_missions.csv` (`mission_id,replaced_by_mission_id,reason`). |
+| `mission_status` | yes | `preferred`, or `alternate` for a competing reading of the same mission (vocabulary `mission_status`). |
+| `conflict_group_id` | for an alternate | `G###` from the **shared G numbering** of the claims: a G id is either a claim group or a mission group, never both. A group has one preferred row and rows of one unit. |
+| `unit_id` | yes | The flying unit as the source records the mission (usually the group; a squadron when the source gives a squadron mission). Equals the file name; domain air. |
+| `date` | yes | `YYYY-MM-DD`, or `YYYY-MM` when the source gives only the month. |
+| `takeoff_time`, `target_time` | no | `HH:MM` when the source states them. |
+| `source_mission_number` | no | The unit's own mission number as printed ("158"). |
+| `mission_type` | yes | Vocabulary `mission_type`. A combined mission takes the first type stated; the rest go in notes. |
+| `target_text` | yes | The target as the source writes it (spelling and question marks kept). |
+| `target_category` | no | Vocabulary `mission_target_category`, when the source states the kind of target. |
+| `target_place_id` | no | Place of the target or area; **blank when the source names no locatable place** (never guessed). New target places follow the normal place rules and continue the `PL` numbering. |
+| `aircraft_type_id` | no | `AT###` (the family row when no variant is given). |
+| `aircraft_dispatched`, `aircraft_effective`, `aircraft_lost` | no | Whole numbers, **only the source's own figures** (blank when not given; `0` only when the source says none). `effective` and `lost` are never above `dispatched`. |
+| `supported_unit_ids`, `attacked_unit_ids` | no | Units the source names as supported or attacked, `"; "`-separated. Only where a source says so explicitly; never inferred from the area. |
+| `operation_id` | no | `OP-...` when a source ties the mission to an operation; a date outside the operation is a warning. |
+| `confidence` | yes | The confidence vocabulary read for a mission: 0.9 two independent source families agree; 0.7 one authoritative or primary record (the unit's own official history); 0.5 one secondary source (a unit association compilation); 0.3 the date is approximate. No position cap, except that a target at a `sea_position` place keeps the 0.5 cap. |
+| `source`, `reference_ids`, `source_locator` | yes, yes, no | As for claims: URLs separated by ` | `, each the url of a listed reference; at least one reference; locators only for listed references. |
+| `notes` | no | Free text with the claim note labels (`Review:`, `Context:` ...). A changed value carries old value, new value and reason. |
+
+Validator checks (`scripts/validate.py`, `check_missions`): header and field values (types, patterns, the three vocabularies, confidence); file path, unit of domain air, nationality folder; unique ids, not retired; rows sorted by date then `mission_id`; a real date not before 1939-09-01; counts; status and conflict group; supported and attacked units (exist, not the flying unit, not both); the foreign keys of the schema (unit, target place, aircraft type, operation, references); source URLs against `reference_ids`; locators; note labels; the sea-position cap. Warnings: hedge words in notes; an operation that does not cover the date; and, **once per unit**, the missions whose unit (or, for a unit with no claims of its own, its organic parent on the day) has **no base claim in force** that day (the latest non-alternate claim on or before the date is not a base claim, or there is none). `scripts/check_mission_ids.py` (run by `scripts/run_checks.sh`) compares with `origin/main` and fails when a mission id was dropped without a retired row, moved to another unit, or a retired id was forgotten or reused. `data/references.csv` counts the missions that cite each reference (`missions_count`). Semantic test scenario 308 runs these rules on synthetic rows and proves that a mission changes no build output except `build/other_domains/missions.csv` and `missions_count`.
 
 ## places columns (`data/places.csv`)
 
@@ -610,6 +638,8 @@ Every URL in a claim's `source` column, every `formed_date_source` URL in `units
 
 `source_type`: `official_history`, `unit_history`, `assignment_table`, `reference_compilation`, `encyclopedia`, `gazetteer_geocoder`, `monument_or_memorial`, `archive_document`, `news_or_web_article`, `other`. `link_status`: `ok`, `blocked_403` (the server refuses automated requests, as `history.army.mil` does), `not_found`, `error` (timeout or other failure), `unchecked`. A link status records the day of the last check only; web pages move.
 
+Mission rows (`data/missions`) cite references the same way (`reference_ids`, `source_locator`, URLs in `source`); `data/references.csv` counts them in `missions_count` (17 November 2026), and a reference cited only by missions is not reported as uncited.
+
 To cite a new source: see CONTRIBUTING.md ("How to cite a new source").
 
 ## strength_json
@@ -924,6 +954,10 @@ US hull classification codes for a unit with echelon `naval_unit` and for ship c
 | `AGC` | amphibious force flagship, a headquarters ship (added 16 November 2026 for USS Ancon, Normandy chunk 1; not a combatant) |
 | `APA` | attack transport (added 16 November 2026 for USS Bayfield, a force flagship of Operation Neptune; not a combatant) |
 | `AV` | seaplane tender or seaplane carrier (added 16 November 2026 for HMS Albatross, Normandy chunk 2) |
+
+### mission_status, mission_type, mission_target_category
+
+Vocabularies of the missions table (decision J1, 17 November 2026; see "missions columns"). `mission_status`: `preferred`, `alternate`. `mission_type`: `bombing`, `dive_bombing`, `strafing`, `armed_reconnaissance`, `fighter_sweep`, `escort`, `area_patrol`, `close_support`, `photo_reconnaissance`, `visual_reconnaissance`, `night_fighter_patrol`, `airborne_drop`, `glider_tow`, `resupply_drop`, `leaflet`, `air_transport`, `other`. `mission_target_category`: `bridge`, `rail`, `marshalling_yard`, `road_junction`, `airfield`, `coastal_battery`, `fortification`, `troops`, `armour`, `motor_transport`, `fuel_or_ammunition_dump`, `v_weapon_site`, `port_or_shipping`, `headquarters`, `area`, `other`. Definitions in `vocabularies.json`. The existing event type `sortie` stays in the claim vocabulary (naval sorties and patrols); a flying unit's mission is a mission row from now on, not a `sortie` claim.
 
 ### aircraft_role
 

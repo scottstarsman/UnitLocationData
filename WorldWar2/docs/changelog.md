@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 5d (1/3): the missions table (branch `normandy-ninthaf-5d`)
+
+- **New table `data/missions/<nationality>/<unit_id>.csv`** (decision J1, approved by Scott on 17 November 2026): one row per mission of a flying unit, columns in `schema/missions.schema.json` (new): `mission_id` (`MSN0001` onward, never reused), `mission_status` and `conflict_group_id` (shared G numbering), `unit_id`, `date`, `takeoff_time`, `target_time`, `source_mission_number`, `mission_type`, `target_text`, `target_category`, `target_place_id`, `aircraft_type_id`, `aircraft_dispatched`, `aircraft_effective`, `aircraft_lost`, `supported_unit_ids`, `attacked_unit_ids`, `operation_id`, `confidence`, `source`, `reference_ids`, `source_locator`, `notes`. New hand-maintained `data/retired_missions.csv` (header only). Old value none; reason: J1.
+- **Vocabularies (3 new):** `mission_status`, `mission_type` (17 values), `mission_target_category` (16 values) in `schema/vocabularies.json`.
+- **Build:** `scripts/missions.py` (new); `scripts/build.py` writes `build/other_domains/missions.csv` (stored columns plus unit name, nationality, target place name, coordinates and country, aircraft designation). No other output reads the missions.
+- **References:** `data/references.csv` gains the column `missions_count` after `operations_count` (old value: no column; new value: the number of mission rows citing the reference, 0 for every existing row; reason: J1). A reference cited only by missions is not reported as uncited.
+- **Validator:** `check_missions` in `scripts/validate.py` (rules in `schema/README.md`, "missions columns"); the summary line now ends with the mission count. Warnings: hedge words in notes, an operation that does not cover the date, and once per unit the missions on days with no base claim of the unit (or of its organic parent) in force.
+- **Checks:** `scripts/check_mission_ids.py` (new; no mission id dropped or reused since `origin/main`), run by `scripts/run_checks.sh`.
+- **Tests:** scenario 308 (validator rules on synthetic rows; the base-claim warning; a mission changes no build output except `build/other_domains/missions.csv` and `missions_count`).
+- **Docs:** `schema/README.md`, `CONTRIBUTING.md`, `docs/HANDOFF.md`, roadmap 398.
+
 ## 17 November 2026 — Normandy chunk 5c (2/2): the 50th Troop Carrier Wing's groups, the 439th, and their squadrons (branch `normandy-ninthaf-5c`)
 
 - **Units (20 new):** `US-TCG-439`, `440`, `441`, `442` and their 16 squadrons (`US-TCS-091`-`098`, `099`, `100`, `301`-`306`). Old value none, new value these rows; reason: Scott approved J1-J12 (17 November 2026).

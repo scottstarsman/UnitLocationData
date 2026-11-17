@@ -35,6 +35,10 @@ A different `event_type` is the right fix only when the row really is a differen
 - **Retiring a claim.** A claim that has to leave the data (entered by mistake, or a duplicate of another claim) is removed from its claim file in the same change that adds a row to `data/retired_claims.csv` (`claim_id,replaced_by_claim_id,reason`; sorted by id). A claim that is only wrong is corrected, or contradicted by a conflicting claim (rules 2 and 6), not retired. If the unit's file would be left empty, the unit stays in `data/units.csv` as before (see "Placeholder units" in `docs/methodology.md`).
 - **Checks.** `python scripts/validate.py` fails on a duplicate id, a retired id that is a claim again, and a bad `data/retired_claims.csv`; it prints a NOTE for a gap that is not retired. Run `python scripts/check_claim_ids.py` before a pull request: it compares with `origin/main` and fails when a claim id disappeared without a retired row or now belongs to another unit.
 
+### Mission ids (missions table)
+
+A mission of a flying unit is a row of `data/missions/<nationality>/<unit_id>.csv` (decision J1, 17 November 2026; columns in `schema/README.md`, "missions columns"), never a claim. Ids are `MSN` and four or more digits (`MSN0001` ...), with the same rules as claim ids: the next id is the highest in use or retired plus one (`python scripts/check_mission_ids.py` prints it), never reuse or renumber a published id, and a removed row goes to `data/retired_missions.csv` with a reason. Figures (aircraft dispatched, effective, lost) and supported or attacked units are entered only as a source gives them; otherwise the cell is blank. A target place is entered only when the source names a place that can be located.
+
 ## Add a claim to an existing unit
 
 1. Open `data/claims/<nationality>/<unit_id>.csv`.
@@ -100,6 +104,7 @@ python scripts/check_coordinates.py    # warnings only; add --geocode (network, 
 python scripts/build.py
 git diff --stat build/        # build outputs must be committed with your change
 python scripts/build.py --check
+python scripts/check_mission_ids.py   # needs git history: mission ids not reused or dropped since origin/main (run_checks.sh runs it)
 python scripts/semantic_tests.py   # expected answers of who_controls.py for four command scenarios (fails CI); if you change the data on purpose, change the expectation in the same commit and say why
 python scripts/build_references.py --check-links   # optional, network: re-check reference URLs (writes link_status into data/references_meta.csv; rerun build.py after)
 python scripts/audit_command_location.py   # review prompts: command and location-date patterns

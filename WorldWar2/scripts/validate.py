@@ -541,8 +541,8 @@ def check_references(claims):
             class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
     for m in meta:
         st = stats[m['reference_id']]
-        if not st['claims'] and not st['units'] and not st['ops'] and m['reference_id'] not in class_cited:
-            warn(where, '%s (%s) is not cited by any claim, unit, operation, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
+        if not st['claims'] and not st['units'] and not st['ops'] and not st['missions'] and m['reference_id'] not in class_cited:
+            warn(where, '%s (%s) is not cited by any claim, unit, operation, mission, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
         if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
             err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
     check_claim_references(claims, meta)
@@ -1587,6 +1587,220 @@ def check_allegiance(units, vocabs):
         err(where, msg)
 
 
+MISSION_START = '1939-09-01'
+TIME_RE = re.compile(r'([01][0-9]|2[0-3]):[0-5][0-9]')
+
+
+def mission_base_gaps(units, claims, missions, relations):
+    """{unit_id: [mission rows]} of missions whose unit (or, when the unit has no claims, its organic parent on the day) has no base claim in force on
+    the mission date: the latest non-alternate claim on or before the date must have location_represents base. A month-only date is read as the last
+    day of the month. Used by check_missions (warning) and the semantic tests."""
+    by_unit = {}
+    for c in claims:
+        if c['claim_status'] != 'alternate':
+            by_unit.setdefault(c['unit_id'], []).append(c)
+    for rs in by_unit.values():
+        rs.sort(key=lambda c: (c['date'], c['claim_id']))
+    organic = {}
+    for r in relations:
+        if r['relationship'] == 'organic' and r['higher_unit_id']:
+            organic.setdefault(r['subject_unit_id'], []).append(r)
+    out = {}
+    for m in missions:
+        d = m['date'] if len(m['date']) == 10 else m['date'] + '-31'
+        uid = m['unit_id']
+        if uid not in by_unit:
+            for r in organic.get(uid, []):
+                if (not r['valid_from'] or r['valid_from'] <= d) and (not r['valid_to'] or d <= r['valid_to']):
+                    uid = r['higher_unit_id']
+                    break
+        before = [c for c in by_unit.get(uid, []) if c['date'] <= d]
+        if not before or before[-1]['location_represents'] != 'base':
+            out.setdefault(m['unit_id'], []).append(m)
+    return out
+
+
+def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
+    """data/missions/<nationality folder>/<unit_id>.csv and data/retired_missions.csv (schema/missions.schema.json, decision J1; scripts/missions.py):
+    header and field values (types, patterns, vocabularies mission_status, mission_type, mission_target_category, confidence); the file path and the
+    unit (domain air, file name, nationality folder); unique MSN ids that are not retired; rows sorted by date then mission_id; a real date not before
+    1939-09-01 (YYYY-MM allowed); HH:MM times; integer counts with aircraft_effective and aircraft_lost not above aircraft_dispatched; status and
+    conflict group paired (an alternate needs a G id; a group has two or more rows of one unit and one preferred row; a G id is not also a claim group);
+    supported and attacked units exist, are not the flying unit and are not repeated; a target at a sea_position place is at most 0.5; every source URL
+    is the url of one of the row's reference_ids and every reference id exists; source_locator names only the row's references; note labels; hedge
+    words in notes (warning); an operation whose dates do not cover the mission (warning); a mission with no base claim of its unit in force that day
+    (warning, one per unit); the foreignKeys of the schema (unit, target place, aircraft type, supported and attacked units, operation, references); a
+    place used only by missions has its coord_reference_id among those missions' references. Returns the mission rows (dicts with _where)."""
+    import missions as msmod
+    import build_references as br
+    sch = common.load_schema('missions')
+    fields = sch['fields']
+    header = [f['name'] for f in fields]
+    out = []
+    seen = {}
+    nat_folder = {u['unit_id']: u['nationality'].lower() for u in units.values()}
+    for path in msmod.files():
+        r_path = rel(path)
+        parts = r_path.split(os.sep)
+        if len(parts) != 4 or parts[:2] != ['data', 'missions']:
+            err(r_path, 'mission files must be data/missions/<nationality>/<unit_id>.csv')
+            continue
+        folder, stem = parts[2], parts[3][:-4]
+        h, rows = common.read_rows(path)
+        if h != header:
+            err(r_path, 'header does not match schema/missions.schema.json (expected %s)' % header)
+            continue
+        u = units.get(stem)
+        if u is None:
+            err(r_path, 'unit_id %s (file name) not in data/units.csv' % stem)
+        else:
+            if (u.get('domain') or 'ground') != 'air':
+                err(r_path, 'unit %s has domain %s: missions belong to a unit of domain air' % (stem, u.get('domain') or 'ground'))
+            if nat_folder[stem] != folder:
+                err(r_path, 'folder %s does not match unit nationality %s' % (folder, u['nationality']))
+        if not rows:
+            err(r_path, 'file has no rows')
+        prev = None
+        for i, r in enumerate(rows, start=2):
+            where = '%s line %d' % (r_path, i)
+            if len(r) != len(header):
+                err(where, 'expected %d fields, found %d' % (len(header), len(r)))
+                continue
+            row = dict(zip(header, r))
+            row['_where'] = where
+            check_row(where, row, fields, vocabs)
+            mid = row['mission_id']
+            if mid in seen:
+                err(where, 'duplicate mission_id %s (also in %s)' % (mid, seen[mid]))
+            seen[mid] = r_path
+            if row['unit_id'] != stem:
+                err(where, 'unit_id %s does not match file name %s' % (row['unit_id'], stem))
+            if row['date'] and not valid_partial_date(row['date']):
+                err(where, 'date %r is not a real YYYY-MM-DD or YYYY-MM' % row['date'])
+            elif row['date'] and row['date'] < MISSION_START[:len(row['date'])]:
+                err(where, 'date %s is before %s' % (row['date'], MISSION_START))
+            k = msmod.sort_key(row)
+            if prev and k < prev:
+                err(where, 'rows must be sorted by date then mission_id')
+            prev = k
+            n = {}
+            for c in ('aircraft_dispatched', 'aircraft_effective', 'aircraft_lost'):
+                if row[c] != '':
+                    if re.fullmatch(r'[0-9]+', row[c]):
+                        n[c] = int(row[c])
+                    else:
+                        err(where, '%s %r is not a whole number' % (c, row[c]))
+            for c in ('aircraft_effective', 'aircraft_lost'):
+                if c in n and 'aircraft_dispatched' in n and n[c] > n['aircraft_dispatched']:
+                    err(where, '%s %d is more than aircraft_dispatched %d' % (c, n[c], n['aircraft_dispatched']))
+            if row['mission_status'] == 'alternate' and not row['conflict_group_id']:
+                err(where, 'mission_status alternate requires a conflict_group_id')
+            for c in ('supported_unit_ids', 'attacked_unit_ids'):
+                toks = [t.strip() for t in row[c].split(';') if t.strip()]
+                if row[c] and row[c] != '; '.join(toks):
+                    err(where, '%s must be unit ids joined by "; "' % c)
+                if len(toks) != len(set(toks)):
+                    err(where, '%s lists a unit twice' % c)
+                if row['unit_id'] in toks:
+                    err(where, '%s lists the flying unit itself' % c)
+            if set(t.strip() for t in row['supported_unit_ids'].split(';') if t.strip()) & set(t.strip() for t in row['attacked_unit_ids'].split(';') if t.strip()):
+                err(where, 'a unit is both supported and attacked')
+            if not re.search(r'https?://', row['source']):
+                err(where, 'source must contain at least one URL')
+            check_note_labels(where, row, vocabs['note_label']['values'])
+            if HEDGE_WORDS.search(row['notes']):
+                warn(where, 'notes contain a hedge word (%s): state only what the source documents' % HEDGE_WORDS.search(row['notes']).group(0))
+            out.append(row)
+    # retired ids
+    if not os.path.isfile(msmod.RETIRED_CSV):
+        err('data/retired_missions.csv', 'missing (header %s)' % ','.join(msmod.RETIRED_HEADER))
+    else:
+        h, rrows = common.read_dicts(msmod.RETIRED_CSV)
+        if h != msmod.RETIRED_HEADER:
+            err('data/retired_missions.csv', 'header %s != %s' % (h, msmod.RETIRED_HEADER))
+        for i, d in enumerate(rrows, start=2):
+            w = 'data/retired_missions.csv line %d' % i
+            if not re.fullmatch(r'MSN\d{4,}', d.get('mission_id', '')):
+                err(w, 'mission_id %r is not a mission id (MSN0001 onward)' % d.get('mission_id'))
+            if d.get('mission_id') in seen:
+                err(w, '%s is retired but is also a mission: a retired id is never reused' % d['mission_id'])
+            if d.get('replaced_by_mission_id') and d['replaced_by_mission_id'] not in seen:
+                err(w, 'replaced_by_mission_id %s is not a mission' % d['replaced_by_mission_id'])
+            if not d.get('reason', '').strip():
+                err(w, 'reason is blank')
+    # conflict groups (shared G numbering with the claims)
+    claim_groups = {c['conflict_group_id'] for c in claims if c['conflict_group_id']}
+    groups = {}
+    for m in out:
+        if m['conflict_group_id']:
+            groups.setdefault(m['conflict_group_id'], []).append(m)
+    for g, ms in sorted(groups.items()):
+        where = 'mission conflict group %s' % g
+        if g in claim_groups:
+            err(where, '%s is also a claim conflict group: a G id is one group, of claims or of missions' % g)
+        if len(ms) < 2:
+            err(where, 'a conflict group needs at least two missions')
+        if len({m['unit_id'] for m in ms}) != 1:
+            err(where, 'all missions of a group must be of the same unit_id')
+        if [m['mission_status'] for m in ms].count('preferred') != 1:
+            err(where, 'a mission conflict group has exactly one preferred row')
+        if not any('Conflict' in m['notes'] or 'Review' in m['notes'] for m in ms):
+            warn(where, 'no row says what differs (a "Review:" sentence)')
+    # places, references, operations
+    places = {p['place_id']: p for p in place_rows}
+    _h, meta = br.read_meta()
+    by_url = {m['url']: m['reference_id'] for m in meta if m['url']}
+    ref_ids = {m['reference_id'] for m in meta}
+    import operations as opsmod
+    ops = opsmod.load()
+    for m in out:
+        w = m['_where']
+        p = places.get(m['target_place_id'])
+        if p is not None and p['kind'] == 'sea_position' and m['confidence'] and is_number(m['confidence']) and float(m['confidence']) > 0.5:
+            err(w, 'target %s is a sea_position: confidence is at most 0.5' % p['place_id'])
+        ids = br.parse_ids(m['reference_ids'])
+        if not ids:
+            err(w, 'reference_ids: at least one reference is required')
+        if len(ids) != len(set(ids)):
+            err(w, 'reference_ids lists a reference twice')
+        urls, _note = br.split_source(m['source'])
+        for raw in urls:
+            u, _frag = br.norm_url(raw)
+            rid = by_url.get(u)
+            if rid is None:
+                err(w, 'source URL %s has no row in data/references_meta.csv' % u)
+            elif rid not in ids:
+                err(w, 'source URL %s is reference %s, which is not in reference_ids' % (u, rid))
+        locs, bad = br.parse_locators(m['source_locator'])
+        for b in bad:
+            err(w, 'source_locator part %r is not "R###: locator"' % b)
+        for rid in locs:
+            if rid not in ids:
+                err(w, 'source_locator names %s, which is not in reference_ids' % rid)
+        if m['operation_id'] and m['operation_id'] in ops.by_id and len(m['date']) == 10:
+            o = ops.by_id[m['operation_id']]
+            if o['start_date'] and o['end_date'] and not (o['start_date'] <= m['date'] <= o['end_date']):
+                warn(w, 'mission date %s is outside operation %s (%s to %s)' % (m['date'], m['operation_id'], o['start_date'], o['end_date']))
+    claim_places = {c['place_id'] for c in claims}
+    for pid in sorted({m['target_place_id'] for m in out if m['target_place_id']} - claim_places):
+        p = places.get(pid)
+        if p is not None and p['coord_reference_id'] and not any(p['coord_reference_id'] in br.parse_ids(m['reference_ids']) for m in out if m['target_place_id'] == pid):
+            err(p['_where'], 'coord_reference_id %s is not in the reference_ids of any claim or mission at the place' % p['coord_reference_id'])
+    # foreign keys declared in schema/missions.schema.json (enforced here rather than in check_foreign_keys, so that a synthetic test can run them)
+    keysets = {'units': set(units), 'places': set(places), 'aircraft_types': set(aircraft), 'operations': set(ops.by_id), 'references_meta': ref_ids}
+    for fk in sch.get('foreignKeys', []):
+        allowed = keysets[fk['reference']['resource']]
+        for m in out:
+            v = m.get(fk['fields'], '')
+            for tok in ([t.strip() for t in v.split(fk['separator']) if t.strip()] if fk.get('separator') else ([v] if v else [])):
+                if tok not in allowed:
+                    err(m['_where'], 'foreign key missions.%s = %r is not a %s.%s' % (fk['fields'], tok, fk['reference']['resource'], fk['reference']['fields']))
+    for uid, ms in sorted(mission_base_gaps(units, claims, out, relset.rows).items()):
+        warn('data/missions unit %s' % uid, '%d mission(s) fall on a date with no base claim of the unit (or of its organic parent) in force: %s; '
+             'the base of the day is not recorded' % (len(ms), ', '.join('%s (%s)' % (m['mission_id'], m['date']) for m in ms)))
+    return out
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -1824,6 +2038,7 @@ def main():
     check_lineage(units, vocabs)
     check_allegiance(units, vocabs)
     check_lifespan(units, all_rows)
+    mission_rows = check_missions(units, all_rows, place_rows, aircraft, vocabs, relset)
 
     # ---- foreign keys declared in the schemas ----
     import build_references as br
@@ -1850,7 +2065,7 @@ def main():
             print('ERROR', e)
         print('\nFAILED: %d problem(s) in %d claim file(s)' % (len(errors), len(files)))
         return 1
-    print('OK: %d claim files, %d claims, %d units, %d conflict groups' % (len(files), len(all_rows), len(units), len(groups)))
+    print('OK: %d claim files, %d claims, %d units, %d conflict groups, %d missions' % (len(files), len(all_rows), len(units), len(groups), len(mission_rows)))
     return 0
 
 

@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 2265)
+## Part 2: command relations (20 of 2384)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -896,14 +896,15 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9816 (, ) | observed_during | - | - |  | R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [chronology, 25 June, clearance sweeping by 8 fleet minesweepers of the RN 9th M/S Flotilla during the TF 129 bombardment of Cherbourg]; R1530 https://en.wikipedia.org/wiki/HMS_Bridport_(J50) [identity of the ship in the 9th Minesweeping Flotilla] |
 
-### R20. CR2229: 452nd Bombardment Squadron -> 322nd Bombardment Group (organic)
+### R20. CR2272: 23rd Fighter Squadron -> 36th Fighter Group (organic)
 
-- **Subject / higher unit:** `US-BS-452` / `US-BG-322`
-- **Interval:** from 1942-07-17 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
-- **Note:** The 452nd Bombardment Squadron was a squadron of the 322nd Bombardment Group from its activation (Maurer, Combat Squadrons, Assignment: 322nd Bombardment Group, 17 Jul 1942-12 Dec 1945); the end is after the window and is left open. Added in the Normandy chunk 5a pass (branch normandy-ninthaf-5a, 17 November 2026): old value none, new value this relation; reason: Scott approved recommendations J1-J12 (17 November 2026), J6 chain squadron-group organic, group-wing, wing-command and command-Ninth [...]
+- **Subject / higher unit:** `US-FS-023` / `US-FG-036`
+- **Interval:** from 1940-02-01 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
+- **Note:** The 23rd Fighter Squadron was a squadron of the 36th Fighter Group from 1 February 1940 (Maurer, Combat Squadrons, Assignment: 36th Fighter Group, 1 February 1940-31 March 1946); the end is after the window and is left open. Added in the Normandy chunk 5b pass (branch normandy-ninthaf-5b, 17 November 2026): old value none, new value this relation; reason: Scott approved recommendations J1-J12 (17 November 2026), J6 chain squadron-group organic, group-wing, wing-command and command-Ninth AF assig [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C10440 (, ) | asserts_start | 1942-07-17 | - | Assignment: 322nd Bombardment Group, 17 Jul 1942-12 Dec 1945 | R1565 https://archive.org/details/CombatSquadronsOfTheAirForceWWII-nsia [p. 558 (452nd Bombardment Squadron, Stations: Great Saling 12 Jun 1943, Beauvais/Tille c. 29 Sep 1944)] |
+  | C10515 (, ) | asserts_start | 1940-02-01 | - | Maurer, Combat Squadrons p. 122-123, Assignment: 36th Fighter Group, 1 February 1940-31 March 1946 | R1565 https://archive.org/details/CombatSquadronsOfTheAirForceWWII-nsia [p. 122-123 (23rd Fighter Squadron, Stations: Kingsnorth 6 Apr 1944 / Brucheville 3 Aug 1944 / Le Mans 6 Sep 1944)] |
+  | C10516 (, ) | observed_during | - | - |  | R1565 https://archive.org/details/CombatSquadronsOfTheAirForceWWII-nsia [p. 122-123 (23rd Fighter Squadron, Stations: Kingsnorth 6 Apr 1944 / Brucheville 3 Aug 1944 / Le Mans 6 Sep 1944)] |
 

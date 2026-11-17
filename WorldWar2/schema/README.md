@@ -325,7 +325,7 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 - A regiment or battalion that is only an opponent or a component has no echelon letter and the type names the arm: `GER-FJR-006` (6th Fallschirmjäger Regiment, echelon `regiment/battle_group`, the one value for a regiment and a regiment-sized battle group), `GER-SSHPZ-101` (SS Heavy Panzer Battalion 101, echelon `battalion`). Both placeholders keep their letterless ids because that is the convention, not an omission (review item 6).
 - The id is the same on every row of the unit and equals the claim file name.
 
-**Naval and air id patterns (approved by Scott 15 November 2026 for the Normandy air and naval pass; `docs/normandy_air_naval_plan.md` section 4; extended 16 November 2026, decisions F1–F21, chunk 3a; extended again 16 November 2026, ND1–ND5, chunk 3b; extended again 16 November 2026, G1–G8, chunk 3c).** The nation prefix is the `code` of the unit's nationality (so the squadron ids have the form `CAN-SQN-401`, `POL-SQN-302`, `NOR-SQN-331`, `AUS-SQN-453`, `NZ-SQN-485`); the validator requires it. The number is the unit's own number, zero-padded as in the examples; none of these ids has an echelon letter.
+**Naval and air id patterns (approved by Scott 15 November 2026 for the Normandy air and naval pass; `docs/normandy_air_naval_plan.md` section 4; extended 16 November 2026, decisions F1–F21, chunk 3a; extended again 16 November 2026, ND1–ND5, chunk 3b; extended again 16 November 2026, G1–G8, chunk 3c); extended 17 November 2026, decisions H1–H12, chunk 4).** The nation prefix is the `code` of the unit's nationality (so the squadron ids have the form `CAN-SQN-401`, `POL-SQN-302`, `NOR-SQN-331`, `AUS-SQN-453`, `NZ-SQN-485`); the validator requires it. The number is the unit's own number, zero-padded as in the examples; none of these ids has an echelon letter.
 
 | Unit | Pattern | Example |
 |---|---|---|
@@ -347,7 +347,23 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 | Squadron of any air force | `<NAT>-SQN-<nnn>` with the squadron's flag | none yet (`CAN-SQN-401` and the like are the form) |
 | Fleet Air Arm squadron | `UK-FAA-<nnn>` (never `UK-SQN`, so the numbers cannot clash) | none yet |
 | Luftwaffe Staffel (only where a second source confirms it; otherwise the unit stops at Gruppe) | `GER-JGST-<nnn>-<n>` (type letters follow the Geschwader, `JG`, `KG`, ...) | `GER-JGST-026-4` (4./JG 26); Geschwader `GER-JG-026`, Gruppe `GER-JGGR-026-2` (existing) |
-| Kriegsmarine S-boat and minesweeper flotillas | `GER-SBF-<nnn>`, `GER-MSF-<nnn>` | none yet |
+| Kriegsmarine S-boat and minesweeper flotillas (echelon `naval_division`) | `GER-SBF-<nnn>`, `GER-MSF-<nnn>` (approved 15 November 2026; used in chunk 4) | `GER-SBF-002`, `GER-MSF-036` |
+| Kriegsmarine destroyer flotilla (echelon `naval_division`) | `GER-ZF-<nnn>` (new, 17 November 2026, H2) | `GER-ZF-008` |
+| Räumbootsflottille (echelon `naval_division`) | `GER-RBF-<nnn>` (new, 17 November 2026, H2) | `GER-RBF-004` |
+| Vorpostenflottille (echelon `naval_division`) | `GER-VPF-<nnn>` (new, 17 November 2026, H2) | `GER-VPF-015` |
+| U-Bootsjagdflottille (echelon `naval_division`) | `GER-UJF-<nnn>` (new, 17 November 2026, H2) | `GER-UJF-014` |
+| Sperrbrecherflottille (echelon `naval_division`) | `GER-SPF-<nnn>` (new, 17 November 2026, H2; do not reuse `GER-SBF-`, which is S-boats) | `GER-SPF-006` |
+| Artillerieträgerflottille (echelon `naval_division`) | `GER-ATF-<nnn>` (new, 17 November 2026, H2) | `GER-ATF-002` |
+| 6. Sicherungsflottille (echelon `naval_division`) | `GER-SICF-006` (new, 17 November 2026, H2; not `GER-SBF-`) | `GER-SICF-006` |
+| Sicherungs-Division (echelon `naval_squadron`) | `GER-SD-<n>` (no `D` letter; new, 17 November 2026, H2). H2 recommended `task_group`; `naval_squadron` is used so the unit outranks its flotillas and is outranked by BdS West (`task_group`) and MGK West (`fleet`) | `GER-SD-002` |
+| U-boat flotilla (echelon `naval_division`) | `GER-SSF-<nnn>` (new, 17 November 2026, H2) | `GER-SSF-009` |
+| KdK flotilla (echelon `naval_division`) | `GER-KKF-<nnn>` (new, 17 November 2026, H2) | `GER-KKF-361` |
+| Kriegsmarine commands (FdS, coast admirals, BdS, FdU West, KdK; echelon `task_group`) | type + `000H`, following `GER-MGW-000H` (H2). H2 recommended `other`; `task_group` is used so the validator naval hierarchy holds (fleet > task_group > naval_squadron > naval_division). The final `H` is not an echelon letter on a naval-ladder unit (`naval_exempt`), as with `GER-MGW-000H` | `GER-FDS-000H`, `GER-KAK-000H`, `GER-BDSW-000H`, `GER-FDUW-000H`, `GER-KDK-000H` |
+| Seekommandanten and K-Stab West (echelon `naval_squadron`) | type + `000H` (H2). H2 recommended `other`; `naval_squadron` is used for the same ladder reason. Existing `GER-KSN-000H` stays `other` and is not retitled | `GER-KSS-000H`, `GER-KSW-000H` |
+| ZH 1 (ex-Dutch destroyer) | `GER-DD-ZH001` under the approved `GER-DD-Z<nnn>` family (H2) | `GER-DD-ZH001` |
+| U-boat numbers | `GER-SS-U<number as written>` (H2; no extra zeros; four digits when the boat has them) | `GER-SS-U212`, `GER-SS-U1191` |
+| Named 1920s torpedo boats | `GER-TB-<NAME>` in ASCII, umlaut as OE (H2) | `GER-TB-MOEWE`, `GER-TB-JAGUAR` |
+| Numbered destroyers and T-boats | `GER-DD-Z023`, `GER-TB-T028` (three digits; already approved family) | `GER-DD-Z024`, `GER-TB-T024` |
 
 Ships keep the pilot's patterns (`US-DD-<hull>`, `UK-CL-<NAME>`, `GER-DD-Z<nnn>`, flotilla `GER-TBF-<nnn>`; `docs/air_naval_pilot.md` 8.1). Where a source gives a ship's class differently from the ship's own class page, the class page decides and the other source is recorded as a conflict in the unit note.
 

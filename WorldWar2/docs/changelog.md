@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 5d (2/3): the 387th Bombardment Group's missions (branch `normandy-ninthaf-5d`)
+
+- **Missions `MSN0001`-`MSN0070` (70 rows, new file `data/missions/us/US-BG-387.csv`):** the 387th Bombardment Group's numbered missions 158-222, 2 June-28 August 1944 (65 preferred rows, one per mission), plus 5 alternates. Old value none, new value these rows; reason: J1 (Scott, 17 November 2026). Aircraft `AT013` (B-26 family row); confidence 0.5 (one source family: the 387th Bomb Group association compilation, which the asisbiz list reproduces). Figures (dispatched, effective, take-off time) only where the chronology's quotations give them; `aircraft_lost` blank on every row (no source gives a total; named losses are in the notes). D-Day mission 161 has `operation_id` `OP-NEPTUNE`. The moves to Stoney Cross (197) and Maupertus (220) are `mission_type` `other`; 212 and 218 are `leaflet`.
+- **Conflict groups `G164`-`G168` (5):** mission 165 (fuel dump in the Forêt de Grimbosq per the group History, preferred; "Grimusq airfield" per the list), the second mission of 22 June (Foret de Conches per the numbered list, preferred; "Remainsil V-1 site" per the chronology heading), mission 199 (19 July per the list and chronology, preferred; 18 July per the History), mission 209 (St. Remi-sur-Avre, preferred; Honfleur per a crew diary) and mission 217 (Pont-Audemer fuel dump, preferred; a bridge per a crew diary).
+- **Places `PL4363`-`PL4383` (21):** mission targets with a GeoNames point (`R782`), checked offline against the GeoNames France dump: Épreville, Zudausques, Esquerdes, the forests of Grimbosq, Conches, Senonches and Écouves, Mérey, Démouville, Tours, Serquigny, Bourth, Maintenon, Saint-Rémy-sur-Avre, Briollay, Blois, Corbeil-Essonnes, Auvers-sur-Oise, Anizy-le-Château, Saint-Gobain and Querrieu. 20 targets reuse existing places. 16 preferred missions have no target place (ambiguous or doubtful names; the note says why).
+- **References `R1618`, `R1619` (2):** the asisbiz 387th Bombardment Group mission list and the 387bg.com chronology (`source_family` `bg387_association`).
+- **Not entered:** two crew-diary missions with no number in the list (22 July, Lisieux bridge; 27 July, a bridge east of "Leidier") and the second D-Day flight (no number or target). They are named in the notes or here only.
+- **Validator:** one new warning, expected: missions 158-160 (2-4 June, `MSN0001`-`MSN0003`) come before the group's first base claim (6 June, `C10423`).
+- **Tests:** scenario 309 added.
+- Next free: `MSN0071`, `R1620`, `PL4384`, `G169`; the others unchanged.
+
 ## 17 November 2026 — Normandy chunk 5d (1/3): the missions table (branch `normandy-ninthaf-5d`)
 
 - **New table `data/missions/<nationality>/<unit_id>.csv`** (decision J1, approved by Scott on 17 November 2026): one row per mission of a flying unit, columns in `schema/missions.schema.json` (new): `mission_id` (`MSN0001` onward, never reused), `mission_status` and `conflict_group_id` (shared G numbering), `unit_id`, `date`, `takeoff_time`, `target_time`, `source_mission_number`, `mission_type`, `target_text`, `target_category`, `target_place_id`, `aircraft_type_id`, `aircraft_dispatched`, `aircraft_effective`, `aircraft_lost`, `supported_unit_ids`, `attacked_unit_ids`, `operation_id`, `confidence`, `source`, `reference_ids`, `source_locator`, `notes`. New hand-maintained `data/retired_missions.csv` (header only). Old value none; reason: J1.

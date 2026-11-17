@@ -379,9 +379,14 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 | US tactical and photo reconnaissance squadrons | `US-TRS-<nnn>`, `US-PRS-<nnn>` (new, 17 November 2026, J2; separate prefixes because the 15th TRS and the 15th PRS are different squadrons) | none yet (`US-TRS-012`, `US-PRS-155`) |
 | US night fighter and liaison squadrons | `US-NFS-<nnn>`, `US-LS-<nnn>` (new, 17 November 2026, J2) | none yet (`US-NFS-422`, `US-LS-153`) |
 | US provisional pathfinder units | `US-PFS-<nnn>`, `US-PFG-<nnn>` (new, 17 November 2026, J2) | none yet (`US-PFS-001`) |
-| RAF group and wing (RAF group = `air_wing`, RAF wing = `air_group`) | `UK-GRP-<nnn>`, `UK-WG-<nnn>` | none yet |
-| Squadron of any air force | `<NAT>-SQN-<nnn>` with the squadron's flag | none yet (`CAN-SQN-401` and the like are the form) |
-| Fleet Air Arm squadron | `UK-FAA-<nnn>` (never `UK-SQN`, so the numbers cannot clash) | none yet |
+| RAF group and wing (RAF group = `air_wing`, RAF wing = `air_group`) | `UK-GRP-<nnn>`, `UK-WG-<nnn>` (used from 17 November 2026, chunk 6a, K2; the RCAF wings 126, 127, 143 and 144 take `CAN-WG-<nnn>`, K2) | `UK-GRP-085`, `UK-WG-137` |
+| Squadron of any air force | `<NAT>-SQN-<nnn>` with the squadron's flag (used from chunk 6a, K2) | `UK-SQN-088`, `FR-SQN-342`, `NL-SQN-320`, `POL-SQN-305`, `AUS-SQN-464`, `NZ-SQN-487` |
+| Fleet Air Arm squadron | `UK-FAA-<nnn>` (never `UK-SQN`, so the numbers cannot clash; used from chunk 6a, K9) | `UK-FAA-808` |
+| RAF tactical air force (echelon `air_force`) | `UK-TAF-<nnn>` (new, 17 November 2026, K1) | `UK-TAF-002` |
+| RAF Fighter Command, including its ADGB period (echelon `air_force`) | `UK-FTRCMD-000H`, one continuous unit (new, 17 November 2026, K1; the J11 style) | `UK-FTRCMD-000H` |
+| Allied Expeditionary Air Force (echelon `other`, the SHAEF form) | `ALL-AEAF-000H` (new, 17 November 2026, K3) | `ALL-AEAF-000H` |
+| Fleet Air Arm naval fighter wing (echelon `air_group`, branch Navy) | `UK-NFW-<nnn>` (new, 17 November 2026, K9) | `UK-NFW-003` |
+| US Navy cruiser-scouting (VCS) squadron | `US-VCS-<nnn>` (new, 17 November 2026, K9) | `US-VCS-007` |
 | Luftwaffe Staffel (only where a second source confirms it; otherwise the unit stops at Gruppe) | `GER-JGST-<nnn>-<n>` (type letters follow the Geschwader, `JG`, `KG`, ...) | `GER-JGST-026-4` (4./JG 26); Geschwader `GER-JG-026`, Gruppe `GER-JGGR-026-2` (existing) |
 | Kriegsmarine S-boat and minesweeper flotillas (echelon `naval_division`) | `GER-SBF-<nnn>`, `GER-MSF-<nnn>` (approved 15 November 2026; used in chunk 4) | `GER-SBF-002`, `GER-MSF-036` |
 | Kriegsmarine destroyer flotilla (echelon `naval_division`) | `GER-ZF-<nnn>` (new, 17 November 2026, H2) | `GER-ZF-008` |

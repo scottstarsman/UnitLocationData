@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3c (3/3): build-up and barge flotillas (branch `normandy-lca-buildup`)
+
+- **Units (58 new):** 27 build-up flotillas `UK-MLF-<nn>` (G3) and 31 barge flotillas `UK-LBF-<nn>` (G2): 19 LBV, 10 L.B. (S and R) and the 25th and 26th L.B.F. Old value none, new value these rows; reason: Scott approved G1-G8 (16 November 2026). The 4th LBV (`UK-LBF-04`) and the 30th L.B. (S and R) (`UK-LBF-30`) are one unit each, parented to `UK-TF-ETF`, with both squadron allocations in the note and a single claim at `PL0157` (G4); a preferred beach is not sourced. The 25th and 26th L.B.F. parent to `UK-AG-G1` and `UK-AG-G2` (G6). Named HMFTs stay in the flotilla notes (F19). App. A(2) prints the 35th as "L.B.V. (S and R)"; that heading is in the note. The 3rd LBV's own strength is not printed separately from half of the 4th; the combined [18] is kept on both notes and a split is not invented.
+- **Claims `C10097`-`C10154` (58):** one 6 June claim per flotilla. Sword, Juno, Gold, Omaha and Utah beaches, or the general Eastern Task Force area for the 4th and 30th, at confidence 0.5. No new places, references or conflict groups.
+- **Relations `CR2005`-`CR2062` (58):** flotilla to the named build-up or barge squadron, or to `UK-TF-ETF` (4th and 30th), or to Assault Groups G1 and G2 (25th and 26th).
+- **Notes on existing parents:** the 11 squadron notes, `UK-AG-G1`, `UK-AG-G2` and `UK-TF-ETF` now record that these flotillas have been entered (old value: counts in the note; new value: these unit ids).
+- **Tests:** scenario 297 added.
+- Next free: `C10155`, `CR2063`, `R1542`, `PL4201`, `G136`, `SC220`, `AT143`, `UL027`, scenario 298, roadmap 394.
+
 ## 16 November 2026 — Normandy chunk 3c (2/3): assault and auxiliary flotillas (branch `normandy-lca-buildup`)
 
 - **Units (63 new):** 62 assault flotillas and the 499th Auxiliary Flotilla (`UK-MLF-499`, G8), all `UK-MLF-<nn>` (G3), echelon `naval_division`. Old value none, new value these rows; reason: Scott approved G1-G8 (16 November 2026). The 712th is one unit with both Force G / Force J and Sword / Juno / Gold allocations in the note (G4). The twelve J4 flotillas are entered once, parented to `UK-AG-J4`, with the printed force allocation on the claim (G5); the six Force O flotillas are also named on `UK-AG-O4`. The 528th and 529th are `UK-MLF-`, not `CAN-MLF-` (embarked in RCN ships; the appendix does not mark the flotillas as RCN-manned).

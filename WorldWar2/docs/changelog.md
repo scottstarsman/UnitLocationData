@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 5c (2/2): the 50th Troop Carrier Wing's groups, the 439th, and their squadrons (branch `normandy-ninthaf-5c`)
+
+- **Units (20 new):** `US-TCG-439`, `440`, `441`, `442` and their 16 squadrons (`US-TCS-091`-`098`, `099`, `100`, `301`-`306`). Old value none, new value these rows; reason: Scott approved J1-J12 (17 November 2026).
+- **Claims `C10847`-`C10872` (26):** bases on 6 June 1944 from Maurer (0.5, station interval). The 442nd Group's Fulbeck claim is dated 31 May 1944 because its next station, Weston Zoyland, is dated "Jun 1944" only; the group's move is a 30 June claim at 0.3 (month-only, J5), and the claim notes the squadron dates. The 303rd and 304th Squadrons move to Weston Zoyland c. 12 June (0.3), the 305th and 306th on 13 June (0.5). The 439th has a second Upottery claim on 26 August 1944 that evidences its IX Troop Carrier Command relation.
+- **Relations `CR2439`-`CR2460` (22):** squadrons `organic` to their groups (Maurer); the 440th-442nd `assigned` to the 50th Troop Carrier Wing from the dated group pages (the 440th and 442nd month-only, with `valid_from_latest`); the 442nd also `attached` to the 52nd Troop Carrier Wing 12 May-6 June 1944 (its 1-11 September attachment is after the window). The 439th's group page names no wing: it is `assigned` to the Ninth Air Force from c. 10 March 1944 and to IX Troop Carrier Command from 26 August 1944; the end of the Ninth AF relation (25 August) is inferred from the next start (old value none, new value 25 August 1944, reason: the next assignment begins 26 August). The 50th Troop Carrier Wing page's listing of the 439th (21 February 1944-15 July 1945) and the IX Troop Carrier Command page's 16 August date are recorded in the relation notes, not entered (J6).
+- **Places `PL4359`-`PL4362` (4):** RAF Upottery, Merryfield, Fulbeck and Weston Zoyland, 1 km (Wikipedia coordinates). RAF Exeter (`PL4270`) already existed.
+- **References `R1614`-`R1617` (4):** Wikipedia group pages.
+- **Notes only:** the squadrons' operations from Italy for the invasion of southern France (J8), and the 306th Squadron's "operated from Ramsgate, England, 7-24 Aug 1944" (as printed), are claim notes; no claims.
+- **Tests:** scenario 307 added.
+- Next free: `C10873`, `CR2461`, `R1618`, `PL4363`, `G164`, `SC220`, `AT143`, `UL027`, scenario 308, roadmap 398.
+
 ## 17 November 2026 — Normandy chunk 5c (1/2): the 52nd and 53rd Troop Carrier Wings' groups and squadrons (branch `normandy-ninthaf-5c`)
 
 - **Units (50 new):** troop carrier groups `US-TCG-061`, `313`, `314`, `315`, `316` (52nd Troop Carrier Wing) and `US-TCG-434`-`438` (53rd Troop Carrier Wing) (echelon `air_group`), and their 40 squadrons `US-TCS-<nnn>` (echelon `air_squadron`). Domain air. Old value none, new value these rows; reason: Scott approved J1-J12 (17 November 2026) and the start of 5c.

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3c (1/3): id patterns and build-up and barge squadrons (branch `normandy-lca-buildup`)
+
+- **Patterns and plan:** qualified build-up and barge squadron ids `UK-LCS-A-BU`, `UK-LCS-D-BU`, `UK-LCS-E-BU` and `UK-LCS-U-LB` (G1); plain `UK-LCS-B`, `C`, `F`, `W`, `X`, `Y`, `Z` where the letter is free; new `UK-LBF-<nn>` for landing-barge flotillas (G2); `UK-MLF-<nn>` extended to assault and build-up flotillas (G3). Written into `schema/README.md`. `docs/normandy_air_naval_plan.md` section 9 records Scott's approval of G1–G8 on 16 November 2026.
+- **Units (11 new):** six build-up squadrons `UK-LCS-C`, `UK-LCS-D-BU`, `UK-LCS-A-BU`, `UK-LCS-F`, `UK-LCS-B`, `UK-LCS-E-BU`; five landing-barge squadrons `UK-LCS-U-LB`, `UK-LCS-W`, `UK-LCS-Z`, `UK-LCS-X`, `UK-LCS-Y`. Echelon `naval_squadron`. Old value none, new value these rows; reason: Scott approved G1-G8 (16 November 2026). Commanders are entered only where App. A(2) prints them (Robins, Gladwin, Brevilly); the others are left blank. Morison's 36 LBV at Utah versus App. B(2)'s 31 for "X" are both in the "X" note.
+- **Claims `C10023`-`C10033` (11):** one 6 June claim per squadron. Sword, Juno, Gold, Utah and Omaha beaches are the operational area at confidence 0.5. No new places or references.
+- **Relations `CR1931`-`CR1941` (11):** "C", "D" and "U" to `UK-TF-S`; "A", "F" and "W" to `UK-TF-J`; "B", "E" and "Z" to `UK-TF-G`; "X" to `US-TG-125-10`; "Y" to `US-TG-124` (Far Shore Omaha is not a unit, ND5).
+- **Notes on existing forces:** the parent force notes on `UK-TF-S`, `UK-TF-J`, `UK-TF-G`, `US-TG-125-10` and `US-TG-124` now record that the squadrons have been entered (old value: held for 3c as counts; new value: these unit ids). Flotilla counts stay on the squadron notes until later commits of this branch. R.H.F. type-counts and Ferry Control LCH 95 remain notes only (G7).
+- **Tests:** scenario 252's count of relations under the placeholder task organisations `UK-BF-D`, `UK-TF-S` and `US-TG-124-9` old value 78, new value 81 (three build-up and barge squadrons under Force S). Scenario 295 added. Scenario 292 no longer treats `UK-LCS-C` and `UK-LCS-B` as absent (they are 3c units); the unused `UK-LBS-` pattern and Far Shore Omaha / US LCI divisions remain absent (ND4, ND5, G1).
+- Next free: `C10034`, `CR1942`, `R1542`, `PL4201`, `G136`, `SC220`, `AT143`, `UL027`, scenario 296, roadmap 393.
+
 ## 16 November 2026 — Normandy chunk 3b follow-up: review sample and claim-id sort (branch `normandy-landing-craft`)
 
 - **Review sample:** `docs/review/README.md` and `sample.md` refreshed after the 144 new units and 145 claims. Unit, claim-file and command-relation counts now include the chunk 3b rows (1005 units, 931 claim files, 1926 command relations). The ground claim count in the main outputs is unchanged.

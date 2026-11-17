@@ -10,6 +10,7 @@ Changes to the tables, schemas and scripts (not to individual claims). Newest fi
 - **Reference `R1620`:** the 368th Fighter Group's June 1944 historical report (`source_family` `afhra_unit_records`, a unit's own wartime records, independent of Maurer's `usaf_historical_division`).
 - **Validator:** one new warning, expected: the 2 and 4 June missions (`MSN0071`, `MSN0072`) come before the group's first base claim (6 June).
 - **Tests:** scenario 310 added.
+- **Roadmap 399 (open):** leftover missions of this pilot, to be entered when a better source is found: (a) the 368th Fighter Group after 17 June 1944, which needs a working copy of the group's July 1944 (and later) historical report (the July PDF on the association site is broken, 1,251 bytes; try AFHRA or another copy); (b) the 368th's June missions the history counts but does not describe one by one (6 of the 11 of 7 June; the patrols of 10, 11 and 15 June; 3 of the 4 of 17 June), which need the Mission Summary Reports; (c) the 387th's two diary-only missions with no list number (22 July, Lisieux bridge; 27 July, a bridge east of "Leidier") and the second D-Day flight.
 - Next free: `MSN0098`, `R1621`; `PL4384`, `G169` and the others unchanged.
 
 ## 17 November 2026 — Normandy chunk 5d (2/3): the 387th Bombardment Group's missions (branch `normandy-ninthaf-5d`)

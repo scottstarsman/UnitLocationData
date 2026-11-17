@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 5d follow-up: squadron unit_id on one-squadron missions (branch `normandy-ninthaf-5d`)
+
+- **Rule (Scott, 17 November 2026):** when a single squadron flies a mission, the row's `unit_id` is the squadron's id, not the group's. A "missions by group" view rolls squadron rows up through the squadron's organic parent relation. When the source does not name the squadron, the row stays on the group; the squadron is not guessed.
+- **Moved rows (5), mission ids unchanged:** `MSN0073` and `MSN0078` from `US-FG-368` to `US-FS-395` (new file `data/missions/us/US-FS-395.csv`); `MSN0076` and `MSN0079` to `US-FS-396` (new file `data/missions/us/US-FS-396.csv`); `MSN0077` to `US-FS-397` (new file `data/missions/us/US-FS-397.csv`). Each note records old value, new value and reason. The Mission Summary Reports name those squadrons as the flying units. The three squadrons already have unit records, organic relations to the 368th (`CR2315`-`CR2317`) and base claims from chunk 5b.
+- **Left on the group, with a note:** `MSN0080` (the report's squadron number is overtyped; Langmaid is placed in the 397th, not used as a guess); `MSN0095` (12 P-47s, no squadron named); `MSN0097` (12 P-47s led by Major Sparks of the 396th, which names the leader's assignment, not the flying unit).
+- **387th Bombardment Group:** no row names a single squadron as the flying unit (mentions of the 556th are diary authors or one squadron inside a group formation); all 70 rows stay on `US-BG-387`.
+- **Docs:** `schema/README.md`, `CONTRIBUTING.md`, `docs/HANDOFF.md`; roadmap 398 (the one-squadron question is closed; the Cardonville date remains open).
+- **Tests:** scenario 310 updated (the 27 rows are still `MSN0071`-`MSN0097`; five of them now have the squadron id).
+- Next free unchanged: `MSN0098`, `R1621`, `PL4384`, `G169`, scenario 311, roadmap 400.
+
 ## 17 November 2026 — Normandy chunk 5d (3/3): the 368th Fighter Group's missions of June 1944 (branch `normandy-ninthaf-5d`)
 
 - **Missions `MSN0071`-`MSN0097` (27 rows, new file `data/missions/us/US-FG-368.csv`):** the 368th Fighter Group's missions of 2-17 June 1944 that its June historical report (AFHRA copy, an image PDF read page by page) describes one by one: the Domfront fuel dump (2 June), the Rouen road bridge (4 June), three D-Day missions (`OP-NEPTUNE`), the five 7 June missions with Mission Summary Reports, three assault-area patrols on 8 June, four on 12 June, one on 13 June, four on 14 June, the recalled mission of 15 June, three on 16 June and the first of 17 June. Old value none, new value these rows; reason: J1 (Scott, 17 November 2026). Aircraft `AT001` (P-47 family row); confidence 0.7 (one primary record). Times and aircraft numbers from the Mission Summary Reports where they exist, otherwise from the Record of Events; where the two differ (the take-off of the first D-Day mission, 0520 or 0525; the narrative's 1530 notice for the second) the report is entered and the note gives the other. Losses only where a report gives them (7 June: 2 and 1); named losses elsewhere are in the notes. The squadron that flew a mission is named in the note (the row's unit is the group).

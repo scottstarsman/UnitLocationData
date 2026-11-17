@@ -6356,9 +6356,14 @@ def scenario_310_missions_368th_fg():
     """Missions pilot (Normandy chunk 5d commit 3): the 368th Fighter Group, June 1944, from its AFHRA historical report (J1)."""
     s = 'scenario 310 (missions 368th FG)'
     import missions as msmod
-    ms = [m for m in msmod.load() if m['unit_id'] == 'US-FG-368']
+    family = {'US-FG-368', 'US-FS-395', 'US-FS-396', 'US-FS-397'}
+    ms = [m for m in msmod.load() if m['unit_id'] in family]
     expect(s + ': 27 rows MSN0071-MSN0097, all preferred, 2-17 June 1944', (len(ms), min(m['mission_id'] for m in ms), max(m['mission_id'] for m in ms), {m['mission_status'] for m in ms}, min(m['date'] for m in ms), max(m['date'] for m in ms)),
            (27, 'MSN0071', 'MSN0097', {'preferred'}, '1944-06-02', '1944-06-17'))
+    expect(s + ': single-squadron missions use the squadron id (Scott, 17 November 2026)',
+           sorted((m['mission_id'], m['unit_id']) for m in ms if m['unit_id'] != 'US-FG-368'),
+           [('MSN0073', 'US-FS-395'), ('MSN0076', 'US-FS-396'), ('MSN0077', 'US-FS-397'), ('MSN0078', 'US-FS-395'), ('MSN0079', 'US-FS-396')])
+    expect(s + ': 22 rows remain on the group', sum(1 for m in ms if m['unit_id'] == 'US-FG-368'), 22)
     expect(s + ': one reference (R1620), confidence 0.7, aircraft AT001', ({m['reference_ids'] for m in ms}, {m['confidence'] for m in ms}, {m['aircraft_type_id'] for m in ms}), ({'R1620'}, {'0.7'}, {'AT001'}))
     per = {}
     for m in ms:

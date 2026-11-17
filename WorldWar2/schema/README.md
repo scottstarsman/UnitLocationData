@@ -96,7 +96,7 @@ Decision J1 of Normandy chunk 5 (Scott, 17 November 2026). One row is **one miss
 | `mission_id` | yes | `MSN` and four or more digits (`MSN0001` onward), unique across the files, never reused or renumbered. A removed row goes to `data/retired_missions.csv` (`mission_id,replaced_by_mission_id,reason`). |
 | `mission_status` | yes | `preferred`, or `alternate` for a competing reading of the same mission (vocabulary `mission_status`). |
 | `conflict_group_id` | for an alternate | `G###` from the **shared G numbering** of the claims: a G id is either a claim group or a mission group, never both. A group has one preferred row and rows of one unit. |
-| `unit_id` | yes | The flying unit as the source records the mission (usually the group; a squadron when the source gives a squadron mission). Equals the file name; domain air. |
+| `unit_id` | yes | The flying unit. When the source names a single squadron as the unit that flew the mission, that squadron's id (Scott, 17 November 2026). When more than one squadron flew, or the source does not name the squadron, the group's id; an unnamed "a squadron" is not guessed. Equals the file name; domain air. A "missions by group" count rolls squadron rows up through the squadron's organic parent relation to the group. |
 | `date` | yes | `YYYY-MM-DD`, or `YYYY-MM` when the source gives only the month. |
 | `takeoff_time`, `target_time` | no | `HH:MM` when the source states them. |
 | `source_mission_number` | no | The unit's own mission number as printed ("158"). |

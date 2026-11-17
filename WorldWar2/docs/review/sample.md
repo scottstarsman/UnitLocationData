@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 2190)
+## Part 2: command relations (20 of 2265)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -795,18 +795,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1613 (FR-ARM-002D, 1944-09-13) | asserts_start | 1944-09-08 | - | Joined the XV Corps of the Third Army on 8 September (The Lorraine Campaign, p. 185) | R048 https://en.wikipedia.org/wiki/2nd_Armored_Division_(France) [section Alsace and Lorraine]; R415 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-4.html [pp. 185, 199] |
   | C1614 (FR-ARM-002D, 1944-09-28) | asserts_end | - | 1944-09-28 | The XV Corps passed to the 6th Army Group and the Seventh Army on 29 September (Riviera to the Rhine, p. 254) | R421 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-14.html [pp. 254, 256] |
 
-### R11. CR1083: Fallschirm-Nachrichten-Abteilung 3 (3rd Fallschirmjäger Division) -> 3rd Fallschirmjäger Division (organic)
-
-- **Subject / higher unit:** `GER-FJNA-003` / `GER-FJ-003D`
-- **Interval:** from 1944-05-15 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** Organic unit of the 3rd Fallschirmjäger Division per the FMS B-541 order of battle (R853, Skizze 2, Fold3 image 40); start = first claim (inferred), open at the last claim; added 4 November 2026 under Scott's small-units rule
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C8415 (GER-FJNA-003, 1944-05-15) | observed_during | - | - |  | R853 https://www.fold3.com/image/160245250/ [Skizze 1 (Fold3 images 35, 39)] |
-
-### R12. CR1146: 35th Infantry Division -> XIX Corps (operational_control)
+### R11. CR1146: 35th Infantry Division -> XIX Corps (operational_control)
 
 - **Subject / higher unit:** `US-INF-035D` / `US-COR-019C`
 - **Interval:** from 1945-04-13 (assignment_table) to 1945-04-15 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -817,7 +806,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C8567 (US-INF-035D, 1945-04-13) | asserts_start_and_end | 1945-04-13 | 1945-04-15 | CMH ETO-OB assignment table, Corps column: "XIX (Opns)" (row 13 Apr 45) | R350 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/35ID-ETO.htm [Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr] |
 
-### R13. CR1216: 1st Canadian Armoured Brigade -> I Canadian Corps (unspecified_subordination)
+### R12. CR1216: 1st Canadian Armoured Brigade -> I Canadian Corps (unspecified_subordination)
 
 - **Subject / higher unit:** `CAN-ARM-001B` / `CAN-COR-001C`
 - **Interval:** from 1945-04-12 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -829,7 +818,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C7616 (CAN-ARM-001B, 1945-04-12) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 570] |
   | C7688 (CAN-ARM-001B, 1945-04-18) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 581]; R883 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq039.pdf [para 113] |
 
-### R14. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
+### R13. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
 
 - **Subject / higher unit:** `NL-INF-IRNEB` / `UK-ARMY-002A`
 - **Interval:** from 1944-09-04 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status alternate
@@ -840,7 +829,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9383 (NL-INF-IRNEB, 1944-09-04) | asserts_start | 1944-09-04 | - | Attached to the British Second Army on 4 September and then ordered from the Seine area to Brussels (de Jong, p. 268, footnote 4) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 268, footnote 4] |
 
-### R15. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
+### R14. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
 
 - **Subject / higher unit:** `NL-INF-BEWAK` / `NL-BS-000H`
 - **Interval:** from 1944-09-22 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -852,7 +841,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C9389 (NL-INF-BEWAK, 1944-09-22) | asserts_start | 1944-09-22 | - | Van Houten gives command of the Bewakingstroepen der BS to van Dijk in the same 22 September split (de Jong, pp. 561-563) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 561-563] |
   | C9393 (NL-INF-BEWAK, 1945-05-01) | observed_during | - | - | London war-department return for early May 1945 still reports Bewakingstroepen in the liberated south (de Jong, pp. 757-758) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 757-758] |
 
-### R16. CR1316: II Fallschirmjäger Corps -> Armeegruppe Student (Army Group Student) (unspecified_subordination)
+### R15. CR1316: II Fallschirmjäger Corps -> Armeegruppe Student (Army Group Student) (unspecified_subordination)
 
 - **Subject / higher unit:** `GER-FJ-002C` / `GER-AG-STUDT`
 - **Interval:** from 1945-04-01 (latest 1945-04-02) (narrative) to 1945-04-10 (earliest 1945-04-02) (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -863,7 +852,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C7969 (GER-FJ-002C, 1945-04-02) | asserts_start_and_end | 1945-04-01 | 1945-04-10 | B-414 pp. 22-23: Armeegruppe Student from about 1 April includes II Parachute Corps, concentrated toward Lingen for Student's local attacks \| Review (leftovers-1115, task c): end added, old value none, new value 1945-04-10 (earliest 1945-04-02): Student's staff leaves on 6 April and Student takes ov [...] | R814 https://www.fold3.com/image/153819777/b-414-army-group-h-10-mar-9-may-1945-page-1-us-wwii-foreign-military-studies-1945-1954 [German p.23 (Fold3 image 82, English p.22)] |
 
-### R17. CR1366: USS O'Brien (DD-725) -> Escort Group, Assault Force U (Task Group 125.6) (assigned)
+### R16. CR1366: USS O'Brien (DD-725) -> Escort Group, Assault Force U (Task Group 125.6) (assigned)
 
 - **Subject / higher unit:** `US-DD-725` / `US-TG-125-6`
 - **Interval:** from 1944-06-06 (claim_date) to 1944-06-24 (earliest 1944-06-06) (inferred_from_next_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -874,7 +863,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9497 (, ) | observed_during | - | - |  | R1278 https://archive.org/details/husno-volume-xi-the-invasion-of-france-and-germany-1944-1945 [App. I, Western Naval Task Force]; R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. B(1) or App. A or App. C, allocation]; R1312 https://en.wikipedia.org/wiki/USS_O'Brien_(DD-725) [Normandy or service paragraph] |
 
-### R18. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
+### R17. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
 
 - **Subject / higher unit:** `NOR-DD-STORD` / `UK-DF-23`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -885,7 +874,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9631 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1426 https://en.wikipedia.org/wiki/HNoMS_Stord_(G26) [Normandy or service or loss paragraph] |
 
-### R19. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
+### R18. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
 
 - **Subject / higher unit:** `GRE-CORV-TOMBAZIS` / `UK-TF-G`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -896,7 +885,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9701 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1490 https://en.wikipedia.org/wiki/HMS_Tamarisk_(K216) [Normandy or service or loss paragraph] |
 
-### R20. CR1788: HMS Bridport (J50) -> Cherbourg Bombardment Force (Task Force 129), 25 June 1944 (attached)
+### R19. CR1788: HMS Bridport (J50) -> Cherbourg Bombardment Force (Task Force 129), 25 June 1944 (attached)
 
 - **Subject / higher unit:** `UK-AM-BRIDPORT` / `US-TG-129`
 - **Interval:** from 1944-06-25 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -906,4 +895,15 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C9816 (, ) | observed_during | - | - |  | R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [chronology, 25 June, clearance sweeping by 8 fleet minesweepers of the RN 9th M/S Flotilla during the TF 129 bombardment of Cherbourg]; R1530 https://en.wikipedia.org/wiki/HMS_Bridport_(J50) [identity of the ship in the 9th Minesweeping Flotilla] |
+
+### R20. CR2229: 452nd Bombardment Squadron -> 322nd Bombardment Group (organic)
+
+- **Subject / higher unit:** `US-BS-452` / `US-BG-322`
+- **Interval:** from 1942-07-17 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
+- **Note:** The 452nd Bombardment Squadron was a squadron of the 322nd Bombardment Group from its activation (Maurer, Combat Squadrons, Assignment: 322nd Bombardment Group, 17 Jul 1942-12 Dec 1945); the end is after the window and is left open. Added in the Normandy chunk 5a pass (branch normandy-ninthaf-5a, 17 November 2026): old value none, new value this relation; reason: Scott approved recommendations J1-J12 (17 November 2026), J6 chain squadron-group organic, group-wing, wing-command and command-Ninth [...]
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C10440 (, ) | asserts_start | 1942-07-17 | - | Assignment: 322nd Bombardment Group, 17 Jul 1942-12 Dec 1945 | R1565 https://archive.org/details/CombatSquadronsOfTheAirForceWWII-nsia [p. 558 (452nd Bombardment Squadron, Stations: Great Saling 12 Jun 1943, Beauvais/Tille c. 29 Sep 1944)] |
 

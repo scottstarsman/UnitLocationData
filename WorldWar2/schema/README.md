@@ -343,6 +343,14 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 | RN landing-barge flotillas (LBV, L.B. (S and R), LBF; echelon `naval_division`) | `UK-LBF-<nn>` (new, 16 November 2026, G2; do not reuse `UK-MLF-`, which clashes with LCT numbers) | `UK-LBF-01`, `UK-LBF-30` |
 | US bomb group, troop carrier group, fighter group | `US-BG-<nnn>`, `US-TCG-<nnn>`, `US-FG-<nnn>` (existing) | `US-FG-366` |
 | US squadron (fighter, bomb, troop carrier) | `US-FS-<nnn>`, `US-BS-<nnn>`, `US-TCS-<nnn>` | `US-FS-390` |
+| US numbered air force (echelon `air_force`) | `US-AF-<nnn>` (new, 17 November 2026, J2) | `US-AF-009` |
+| US bomber, troop carrier and air defense commands (echelon `air_division`) | `US-BOMCMD-<nnn>`, `US-TCCMD-<nnn>`, `US-ADCMD-<nnn>` (new, 17 November 2026, J2; same style as the existing `US-FTRCMD-009`) | `US-BOMCMD-009`, `US-TCCMD-009`, `US-ADCMD-009` |
+| US tactical air command (echelon `air_division`) | `US-TAC-<nnn>C` (existing form of `US-TAC-009C`; J2) | `US-TAC-019C` |
+| US bomb, fighter and troop carrier wings (echelon `air_wing`) | `US-BW-<nnn>`, `US-FW-<nnn>`, `US-TCW-<nnn>` (new, 17 November 2026, J2) | `US-BW-097`, `US-FW-303`, `US-TCW-050` |
+| US reconnaissance group, photo or tactical (echelon `air_group`) | `US-RG-<nnn>` (new, 17 November 2026, J2) | none yet (`US-RG-010`, `US-RG-067` are the form) |
+| US tactical and photo reconnaissance squadrons | `US-TRS-<nnn>`, `US-PRS-<nnn>` (new, 17 November 2026, J2; separate prefixes because the 15th TRS and the 15th PRS are different squadrons) | none yet (`US-TRS-012`, `US-PRS-155`) |
+| US night fighter and liaison squadrons | `US-NFS-<nnn>`, `US-LS-<nnn>` (new, 17 November 2026, J2) | none yet (`US-NFS-422`, `US-LS-153`) |
+| US provisional pathfinder units | `US-PFS-<nnn>`, `US-PFG-<nnn>` (new, 17 November 2026, J2) | none yet (`US-PFS-001`) |
 | RAF group and wing (RAF group = `air_wing`, RAF wing = `air_group`) | `UK-GRP-<nnn>`, `UK-WG-<nnn>` | none yet |
 | Squadron of any air force | `<NAT>-SQN-<nnn>` with the squadron's flag | none yet (`CAN-SQN-401` and the like are the form) |
 | Fleet Air Arm squadron | `UK-FAA-<nnn>` (never `UK-SQN`, so the numbers cannot clash) | none yet |

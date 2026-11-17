@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 4 (2/3): S-boat flotillas and Sicherung West (branch `normandy-kriegsmarine`)
+
+- **Units (41 new):** six S-boat flotillas `GER-SBF-002`, `004`, `005`, `008`, `009` and `006` (H6); `GER-SICF-006`; 2., 3. and 4. Sicherungs-Division (`GER-SD-002`, `003`, `004`) and their 29 flotillas (`GER-MSF-`, `GER-RBF-`, `GER-ATF-`, `GER-VPF-`, `GER-SPF-`, `GER-UJF-` as in H2); 1. and 5. Sicherungs-Division (`GER-SD-001`, `GER-SD-005`) under BdS Nordsee, flotillas deferred (H1). Echelon `naval_division` for flotillas and `naval_squadron` for Sicherungs-Divisionen. Old value none, new value these rows; reason: Scott approved H1-H12 (17 November 2026). Individual M-, R-, VP-, UJ- and Sperrbrecher boats stay in the flotilla notes (H4).
+- **Claims `C10204`–`C10246` (43):** 6 June bases for the 2nd, 4th, 5th, 8th and 9th S-flotillas; the 6th at IJmuiden on 26 June; 2nd also at Boulogne on 8 June after Rohwer's 7/8 June move. Sicherungs units use a representative sector centre at confidence 0.3 except the 4th R-boat flotilla, which has a 6 June claim at Le Havre for Rohwer's 6/7 June action (Kptlt. Anhalt).
+- **Conflict group `G140`:** 8th S-boat flotilla, 6 June, Ostende (Rohwer, preferred; S 83, S 117, S 127, S 133 sailed from there on 6/7 June) versus IJmuiden (s-boot.net, alternate).
+- **Relations `CR2094`–`CR2134` (41):** S-flotillas to `GER-FDS-000H`; SichDiv and `GER-SICF-006` to BdS West or BdS Nordsee; flotillas to their Sicherungs-Division.
+- **Tests:** scenario 299 added.
+- Next free: `C10247`, `CR2135`, `R1563`, `PL4219`, `G141`, `SC220`, `AT143`, `UL027`, scenario 300, roadmap 395.
+
 ## 17 November 2026 — Normandy chunk 4 (1/3): id patterns, commands, surface ships and KdK flotillas (branch `normandy-kriegsmarine`)
 
 - **Patterns and plan:** new Kriegsmarine patterns of H2 (`GER-ZF-`, `GER-RBF-`, `GER-VPF-`, `GER-UJF-`, `GER-SPF-`, `GER-ATF-`, `GER-SD-<n>`, `GER-SICF-006`, `GER-SSF-`, `GER-KKF-`, command and Seeko `000H` forms, `GER-DD-ZH001`, `GER-SS-U<number as written>`, `GER-TB-<NAME>`), written into `schema/README.md`. `docs/normandy_air_naval_plan.md` section 10 records Scott's approval of H1–H12 on 17 November 2026. H2 recommended echelon `other` for commands and `task_group` for Sicherungs-Divisionen; entry uses `task_group` and `naval_squadron` on the naval ladder so the validator hierarchy holds (old value as in H2: `other` / `task_group`; new value as entered; reason: a SichDiv as `task_group` cannot sit under BdS West as `task_group`, and BdS West cannot be `fleet` under MGK West, already `fleet`). Existing `GER-KSN-000H` stays `other`.

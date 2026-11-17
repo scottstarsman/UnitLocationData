@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 4 (3/3): French U-flotillas and U-boats (branch `normandy-kriegsmarine`)
+
+- **Units (60 new):** eight French-based U-boat flotillas `GER-SSF-001`, `002`, `003`, `006`, `007`, `009`, `010` and `012` under FdU West; all 36 Landwirt boats, verified on uboat.net at entry (none dropped); 15 other Channel or Biscay boats named by Rohwer or NHB; and `GER-SS-U480`, which the count had left out unless uboat.net confirmed it in the window (its patrols show Arendal 7 June to Brest 7 July, and Brest 3 August). Type from each boat's uboat.net type field (VIIC = `SC155`, VIID = `SC157`). Parent is the home flotilla on the uboat.net Career table, not a Landwirt unit (H5). `U 984` remains on 5. Flottille (training, Kiel) until 31 July on that table; the 5th is not entered (out of theatre, H1), and the parent relation to the 9th begins on the 2 August fate date. Old value none, new value these rows; reason: Scott approved H1-H12 (17 November 2026).
+- **Claims `C10247`–`C10368` (122):** 6 June in-port claims only where the patrol table shows the boat in a French or Channel port that day; later port-change arrivals in the window; sinkings and decommissionings dated in the window. Norwegian ports are not used as Normandy-window locations. Sea positions are capped at confidence 0.5. No mid-sea 6 June place is invented for boats already on patrol.
+- **Conflict groups `G141`–`G146`:** date or place disagreements between the current uboat.net fate and a previously recorded fate in the window: U 441 (G141, 30 June preferred vs 8 and 18 June), U 984 (G142, 2 August preferred vs 20 August), U 1191 (G143, 3 July preferred vs 25 June), U 988 (G144, 22 June preferred vs 29 June), U 740 (G145, 8 June preferred vs 9 June), U 629 (G146, 7 June preferred vs 8 June).
+- **References and places:** one uboat.net site reference (`R1563`); new sea_position rows for sinking coordinates, hand-worked from the fate line (coord_reference_id blank).
+- **Relations `CR2135`–`CR2194` (60):** flotillas to `GER-FDUW-000H`; boats to their home flotilla, with `valid_from` equal to the first linked preferred evidence claim.
+- **Tests:** scenario 300 added.
+- Next free: `C10369`, `CR2195`, `R1564`, `PL4251`, `G147`, `SC220`, `AT143`, `UL027`, scenario 301, roadmap 395.
+- **Not entered (as planned):** U 247 and U 719 (Minch / North Channel); weather boats U 853, U 534, U 857; U 955 (homebound, not Landwirt); 5. Unterseebootsflottille; FdU Mitte as an in-theatre command; SG 3 (still no class page, from commit 1).
+
 ## 17 November 2026 — Normandy chunk 4 (2/3): S-boat flotillas and Sicherung West (branch `normandy-kriegsmarine`)
 
 - **Units (41 new):** six S-boat flotillas `GER-SBF-002`, `004`, `005`, `008`, `009` and `006` (H6); `GER-SICF-006`; 2., 3. and 4. Sicherungs-Division (`GER-SD-002`, `003`, `004`) and their 29 flotillas (`GER-MSF-`, `GER-RBF-`, `GER-ATF-`, `GER-VPF-`, `GER-SPF-`, `GER-UJF-` as in H2); 1. and 5. Sicherungs-Division (`GER-SD-001`, `GER-SD-005`) under BdS Nordsee, flotillas deferred (H1). Echelon `naval_division` for flotillas and `naval_squadron` for Sicherungs-Divisionen. Old value none, new value these rows; reason: Scott approved H1-H12 (17 November 2026). Individual M-, R-, VP-, UJ- and Sperrbrecher boats stay in the flotilla notes (H4).

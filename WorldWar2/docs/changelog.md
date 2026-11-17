@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 5a (2/2): IX Bomber Command groups and squadrons (branch `normandy-ninthaf-5a`)
+
+- **Units (55 new):** the 11 bomb groups of IX Bomber Command `US-BG-322`, `323`, `344`, `386`, `387`, `391`, `394`, `397`, `409`, `410`, `416` (echelon `air_group`) and their 44 squadrons `US-BS-449` to `452`, `453`–`456`, `494`–`497`, `552`–`555`, `556`–`559`, `572`–`575`, `584`–`587`, `596`–`599`, `640`–`643`, `644`–`647`, `668`–`671` (echelon `air_squadron`). Activation dates from Maurer. Domain air. Old value none, new value these rows; reason: Scott approved J1–J12 (17 November 2026).
+- **Claims `C10416`–`C10508` (93):** 21 group claims from each group's own Maurer *Combat Units* station list and 72 squadron claims from each squadron's own *Combat Squadrons* entry (J4), read from the page images: the 6 June station and every dated move to 31 August. Continental moves of the 323rd (Lessay A-20, 26 August, 0.7: Maurer and R898 agree within a day), 387th (Maupertus A-15, 22 August, 0.5) and 394th (Tour-en-Bessin A-13, 25 August, 0.5) cite R898 and the ALG pages; "c." squadron dates are 0.3. The 450th Squadron's entry prints "Beauvais/Tille, Sep 1943" and "Le Culot, c. 5 Apr 1943" after Great Saling (12 June 1943); read as a misprint (the other three squadrons give September 1944), its 6 June claim is 0.3 with old value, new value and reason in the note.
+- **Conflict groups `G147`–`G148`:** 323rd at Lessay, 26 August (Maurer, preferred) versus 25 August (R898 field date, alternate); 397th at Gorges, 31 August (month-end of Maurer's "Aug 1944", preferred) versus 16 August (Wikipedia, Gorges Airfield, and the R898 field date, alternate).
+- **Relations `CR2215`–`CR2269` (55):** groups to their combat bombardment wings (`assigned`, dated starts from the Wikipedia wing component lists; the 344th from its first claim, because the list date is "c."); squadrons to their groups (`organic`, from activation per the Maurer assignment line). The 450th's printed assignment start "17 Jun 1942" is read as 17 July 1942 (its activation date), with old value, new value and reason in the relation note.
+- **Notes fix:** the 47 claims of commit 1 lacked the full stop after the "added in" sentence; text only, no value changed.
+- **Tests:** scenario 302 added.
+- **Left out:** the 1st Pathfinder Squadron (Provisional) of IX Bomber Command (J7: no second readable source for its station and parent; its parent is given both as attached to the 322nd and under the 344th). The 387th's Maupertus move in its squadron entries (c. 1 September) is outside the window.
+- Next free: `C10509`, `CR2270`, `R1586`, `PL4292`, `G149`, `SC220`, `AT143`, `UL027`, scenario 303, roadmap 396.
+
 ## 17 November 2026 — Normandy chunk 5a (1/2): Ninth Air Force, commands and wings (branch `normandy-ninthaf-5a`)
 
 - **Patterns and plan:** new id patterns of J2 (`US-AF-`, `US-BOMCMD-`, `US-TCCMD-`, `US-ADCMD-`, `US-TAC-<nnn>C`, `US-BW-`, `US-FW-`, `US-TCW-`, `US-RG-`, `US-TRS-`, `US-PRS-`, `US-NFS-`, `US-LS-`, `US-PFS-`/`US-PFG-`) written into `schema/README.md`. `docs/normandy_air_naval_plan.md` section 11 records Scott's approval of J1–J12 on 17 November 2026.

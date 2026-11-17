@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 16 November 2026 — Normandy chunk 3c (2/3): assault and auxiliary flotillas (branch `normandy-lca-buildup`)
+
+- **Units (63 new):** 62 assault flotillas and the 499th Auxiliary Flotilla (`UK-MLF-499`, G8), all `UK-MLF-<nn>` (G3), echelon `naval_division`. Old value none, new value these rows; reason: Scott approved G1-G8 (16 November 2026). The 712th is one unit with both Force G / Force J and Sword / Juno / Gold allocations in the note (G4). The twelve J4 flotillas are entered once, parented to `UK-AG-J4`, with the printed force allocation on the claim (G5); the six Force O flotillas are also named on `UK-AG-O4`. The 528th and 529th are `UK-MLF-`, not `CAN-MLF-` (embarked in RCN ships; the appendix does not mark the flotillas as RCN-manned).
+- **S3 note correction:** on `UK-AG-S3`, the 536th Green List figure old value [13] (inherited from an OCR reading in the 3b note), new value [18], matching the App. A(2) page image for Empire Cutlass. The five S3 assault flotillas are now entered as `UK-MLF-435`, `543`, `537`, `538` and `536`. Reason: Scott approved G1-G8 (16 November 2026); the page image is the authority for the strength.
+- **Claims `C10034`-`C10096` (63):** one 6 June claim per flotilla. Sword, Juno, Gold, Omaha and Utah beaches, or the general Eastern Task Force area (`PL0157`) for the 701st and 712th, at confidence 0.5. J4 flotillas use the allocated force's beach, not J4's ETF-area claim. No new places or references.
+- **Relations `CR1942`-`CR2004` (63):** flotilla to assault group, support squadron, Force J, Force G, or the named Western Task Force group (`US-TG-124-3`, `US-TG-124-4`, `US-TG-125-4`).
+- **Notes on existing parents:** the parent assault-group, squadron and force notes now record that these flotillas have been entered (old value: counts in the note, F15; new value: these unit ids).
+- **Tests:** scenario 296 added.
+- Next free: `C10097`, `CR2005`, `R1542`, `PL4201`, `G136`, `SC220`, `AT143`, `UL027`, scenario 297, roadmap 393.
+
 ## 16 November 2026 — Normandy chunk 3c (1/3): id patterns and build-up and barge squadrons (branch `normandy-lca-buildup`)
 
 - **Patterns and plan:** qualified build-up and barge squadron ids `UK-LCS-A-BU`, `UK-LCS-D-BU`, `UK-LCS-E-BU` and `UK-LCS-U-LB` (G1); plain `UK-LCS-B`, `C`, `F`, `W`, `X`, `Y`, `Z` where the letter is free; new `UK-LBF-<nn>` for landing-barge flotillas (G2); `UK-MLF-<nn>` extended to assault and build-up flotillas (G3). Written into `schema/README.md`. `docs/normandy_air_naval_plan.md` section 9 records Scott's approval of G1–G8 on 16 November 2026.

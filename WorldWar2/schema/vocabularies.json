@@ -641,5 +641,55 @@
     "values": {
       "defer_to_organic_parent": "who_controls.py does not use this non-organic relation when it answers for the subject unit, so the organic fallback applies: the unit answers with its organic parent (marked organic_fallback) unless another non-organic relation covers the date. The relation itself is still listed in the data and the derived tables."
     }
+  },
+  "mission_status": {
+    "description": "How a mission row relates to a competing reading of the same mission (data/missions; as claim_status, without disputed).",
+    "values": {
+      "preferred": "A mission with no competing reading, or the best-supported reading in a conflict group.",
+      "alternate": "A competing reading of the same mission (another date, target or figure) judged less likely; needs a conflict_group_id."
+    }
+  },
+  "mission_type": {
+    "description": "What a flying unit's mission was (data/missions mission_type). One value per row; a combined mission takes the first stated type and the rest go in notes.",
+    "values": {
+      "bombing": "Level bombing of a target (medium and heavy bombers; also fighter-bombers releasing from level flight when the source says so).",
+      "dive_bombing": "Dive-bombing by fighter-bombers.",
+      "strafing": "Strafing attack on ground targets as the main task.",
+      "armed_reconnaissance": "Armed reconnaissance: a sweep over an area attacking targets of opportunity.",
+      "fighter_sweep": "Offensive sweep against enemy aircraft.",
+      "escort": "Escort of bombers, transports or other aircraft.",
+      "area_patrol": "Defensive or area patrol (beachhead, convoy or shipping cover).",
+      "close_support": "Close support of ground troops on call or at a stated front-line target (cooperation with a named ground unit).",
+      "photo_reconnaissance": "Photographic reconnaissance.",
+      "visual_reconnaissance": "Visual or tactical reconnaissance.",
+      "night_fighter_patrol": "Night-fighter patrol or intruder sortie.",
+      "airborne_drop": "Paratroop drop.",
+      "glider_tow": "Glider tow.",
+      "resupply_drop": "Resupply by air drop.",
+      "leaflet": "Leaflet drop.",
+      "air_transport": "Air transport or evacuation by landing.",
+      "other": "Any other mission; say what in notes."
+    }
+  },
+  "mission_target_category": {
+    "description": "Kind of target of a mission (data/missions target_category), when the source states it.",
+    "values": {
+      "bridge": "Road or rail bridge.",
+      "rail": "Railway line, junction or rolling stock (not a marshalling yard).",
+      "marshalling_yard": "Railway marshalling yard.",
+      "road_junction": "Road junction or crossroads.",
+      "airfield": "Airfield.",
+      "coastal_battery": "Coastal or field battery.",
+      "fortification": "Defended area, strong point, defended town or village, or other fortification.",
+      "troops": "Troops or troop concentrations.",
+      "armour": "Tanks and other armoured vehicles.",
+      "motor_transport": "Motor transport and road traffic.",
+      "fuel_or_ammunition_dump": "Fuel, ammunition or supply dump.",
+      "v_weapon_site": "V-weapon (NOBALL) site.",
+      "port_or_shipping": "Port, harbour or shipping.",
+      "headquarters": "Headquarters or command post.",
+      "area": "An area with no single target kind (an area patrol or sweep).",
+      "other": "Any other target; say what in notes."
+    }
   }
 }

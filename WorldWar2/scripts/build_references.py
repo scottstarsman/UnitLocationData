@@ -8,11 +8,13 @@ Inputs
   data/claim_reference_roles.csv   HAND-MAINTAINED role of a link (event | location | command_relationship | strength | date | general). Only judgments are stored:
                          the role `location` of a gazetteer_geocoder reference (the coordinate service, R001 / R002) is derived here, never stored
   data/units.csv         formed_date_source (URL), listing_source and initial_parent_source (tokens)
+  data/missions/**.csv   reference_ids of the mission rows (counted in missions_count) and the URLs of their source column (each needs a metadata row)
   data/references_meta.csv   HAND-MAINTAINED metadata, one row per reference: stable reference_id, URL,
                          title, citation, type, publisher, licence, reliability, link status, ...
 
 Outputs (deterministic; the claims stay the evidence, these tables are derived):
-  data/references.csv        one row per reference: the metadata plus claims_count, units_count, first_claim_id
+  data/references.csv        one row per reference: the metadata plus claims_count, units_count, operations_count, missions_count (rows of data/missions that
+                             cite it; added 17 November 2026), first_claim_id
   build/claim_references.csv claim_id, reference_id, role, locator (page / section, from the claim's source_locator), one row per link and role
   build/unit_references.csv  unit_id, field (formed_date_source | listing_source | initial_parent_source), reference_id
   build/operation_references.csv  operation_id, reference_id (the reference_ids column of data/operations.csv)
@@ -53,7 +55,7 @@ LINK_CACHE = os.path.join(common.ROOT, '.cache', 'links.json')
 META_HEADER = ['reference_id', 'url', 'source_token', 'strength_alias', 'short_title', 'full_citation', 'source_type',
                'source_family', 'publisher', 'accessed_date', 'license_or_status', 'reliability_note', 'used_for', 'link_status', 'link_checked']
 REF_HEADER = ['reference_id', 'short_title', 'full_citation', 'source_type', 'source_family', 'publisher', 'url', 'original_url', 'accessed_date',
-              'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'first_claim_id', 'used_for', 'link_status',
+              'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'missions_count', 'first_claim_id', 'used_for', 'link_status',
               'link_checked']
 CLAIM_REF_HEADER = ['claim_id', 'reference_id', 'role', 'locator']
 ROLES_CSV = os.path.join(common.ROOT, 'data', 'claim_reference_roles.csv')
@@ -218,7 +220,7 @@ def derive():
     tokens = {m['source_token']: m for m in meta if m['source_token']}
     by_url = {m['url']: m for m in meta if m['url']}
     claim_refs, unit_refs = set(), set()
-    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set()} for m in meta}
+    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set(), 'missions': set()} for m in meta}
 
     geocoders = {m['reference_id'] for m in meta if m['source_type'] == 'gazetteer_geocoder'}
     _hh, claims = common.load_all_claims()
@@ -274,6 +276,16 @@ def derive():
             for rid in [x.strip() for x in r['reference_ids'].split(';') if x.strip()]:
                 if rid in stats:
                     stats[rid]['ops'].add('%s>%s' % (r['from_operation_id'], r['to_operation_id']))
+    # missions (data/missions, decision J1 of 17 November 2026): their stored reference_ids count as citations; a source URL needs a metadata row
+    import missions as msmod
+    for ms in msmod.load():
+        for rid in parse_ids(ms.get('reference_ids', '')):
+            if rid in stats:
+                stats[rid]['missions'].add(ms['mission_id'])
+        for raw in split_source(ms.get('source', ''))[0]:
+            url, _frag = norm_url(raw)
+            if url not in by_url:
+                missing.setdefault(url, ms['mission_id'])
     return sorted(claim_refs), sorted(unit_refs), stats, missing, meta, sorted(op_refs)
 
 
@@ -288,7 +300,7 @@ def outputs():
         st = stats[m['reference_id']]
         rows.append([m['reference_id'], m['short_title'], m['full_citation'], m['source_type'], m['source_family'], m['publisher'], m['url'],
                      original_url(m['url']), m['accessed_date'], m['license_or_status'], m['reliability_note'],
-                     str(len(st['claims'])), str(len(st['units'])), str(len(st['ops'])), min(st['claims']) if st['claims'] else '', m['used_for'],
+                     str(len(st['claims'])), str(len(st['units'])), str(len(st['ops'])), str(len(st['missions'])), min(st['claims']) if st['claims'] else '', m['used_for'],
                      m['link_status'] or 'unchecked', m['link_checked']])
     return {
         'data/references.csv': common.csv_bytes(REF_HEADER, rows),

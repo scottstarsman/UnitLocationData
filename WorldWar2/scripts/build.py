@@ -29,6 +29,10 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         (the main units.csv and units.json leave those five columns out)
   build/other_domains/ship_classes.csv  data/ship_classes.csv: the ship classes (class_id SC###) that naval units link to through ship_class_id
   build/other_domains/aircraft_types.csv  data/aircraft_types.csv: the aircraft types (type_id AT###) that air units link to through the aircraft object of strength_json
+  build/other_domains/missions.csv      every mission row of data/missions/<nationality>/<unit_id>.csv (one row per mission of a flying unit; decision J1, 17 November
+                                        2026), sorted by date then mission_id, with unit_name, nationality, target place name, latitude, longitude and country, and the
+                                        aircraft designation added (scripts/missions.py). Missions are not claims: no other output reads them, and they never reach the
+                                        command relations or the who_controls grid
   build/other_domains/command_relations.csv  the derived command relations whose subject is an air or naval unit (same columns as command_relations.csv)
   build/who_controls_overrides.csv      verbatim copy of data/who_controls_overrides.csv (per-relation exceptions to the who_controls.py precedence)
   build/organic_relations.csv           the preferred `organic` relations only (same columns as command_relations.csv, all domains); read by scripts/who_controls.py for
@@ -53,6 +57,7 @@ import operations  # noqa: E402
 import places as placesmod  # noqa: E402
 import lineage  # noqa: E402
 import coverage as coveragemod  # noqa: E402
+import missions as missionsmod  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
@@ -295,6 +300,7 @@ def outputs():
     out['other_domains/units.csv'] = common.csv_bytes(oh, [[u[c] for c in oh] for u in urows if u['unit_id'] in other])
     out['other_domains/ship_classes.csv'] = ship_classes_output()
     out['other_domains/aircraft_types.csv'] = aircraft_types_output()
+    out['other_domains/missions.csv'] = common.csv_bytes(missionsmod.BUILD_HEADER, missionsmod.build_rows())   # data/missions (J1); never part of the claims or relations
     crel = command_relations.load()
     out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
     out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))

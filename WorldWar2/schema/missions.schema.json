@@ -1,0 +1,246 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "missions",
+  "title": "Missions of flying units (one row per mission)",
+  "description": "Missions of air units, one row per unit mission (not per aircraft or pilot), in data/missions/<nationality folder>/<unit_id>.csv; built into build/other_domains/missions.csv. A mission is not a location claim: it never feeds the claims, the command relations or the who_controls grid. The unit's position on the day is its base claim. Scott approved the layout on 17 November 2026 (decision J1, Normandy chunk 5).",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "mission_id",
+  "foreignKeys": [
+    {
+      "fields": "unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "target_place_id",
+      "reference": {
+        "resource": "places",
+        "fields": "place_id"
+      }
+    },
+    {
+      "fields": "aircraft_type_id",
+      "reference": {
+        "resource": "aircraft_types",
+        "fields": "type_id"
+      }
+    },
+    {
+      "fields": "supported_unit_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "attacked_unit_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "operation_id",
+      "reference": {
+        "resource": "operations",
+        "fields": "operation_id"
+      }
+    },
+    {
+      "fields": "reference_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "references_meta",
+        "fields": "reference_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "mission_id",
+      "type": "string",
+      "description": "Stable id of the mission row: MSN followed by four or more digits (MSN0001), assigned in order and never reused or renumbered. A removed row goes to data/retired_missions.csv and its id is never a mission again (scripts/check_mission_ids.py checks the history).",
+      "constraints": {
+        "required": true,
+        "unique": true,
+        "pattern": "^MSN[0-9]{4,}$"
+      }
+    },
+    {
+      "name": "mission_status",
+      "type": "string",
+      "description": "preferred, or alternate for a competing reading of the same mission in a conflict group (vocabulary mission_status; as claim_status, without disputed).",
+      "vocabulary": "mission_status",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "conflict_group_id",
+      "type": "string",
+      "description": "G### of the conflict group when two rows are competing readings of one mission (the shared G numbering of the claims: a G id is either a claim group or a mission group, never both). Required for an alternate row.",
+      "constraints": {
+        "pattern": "^G[0-9]{3,}$"
+      }
+    },
+    {
+      "name": "unit_id",
+      "type": "string",
+      "description": "The flying unit as the source records the mission: usually the group, a squadron when the source gives a squadron mission. A row of data/units.csv with domain air; it must equal the file name.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "date",
+      "type": "string",
+      "description": "Date of the mission, YYYY-MM-DD, or YYYY-MM when the source gives only the month. Not before 1939-09-01.",
+      "constraints": {
+        "required": true,
+        "pattern": "^[0-9]{4}-[0-9]{2}(-[0-9]{2})?$"
+      }
+    },
+    {
+      "name": "takeoff_time",
+      "type": "string",
+      "description": "Take-off time HH:MM (24-hour, local time as the source gives it) when the source states it; blank otherwise.",
+      "constraints": {
+        "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+      }
+    },
+    {
+      "name": "target_time",
+      "type": "string",
+      "description": "Time over target HH:MM when the source states it; blank otherwise.",
+      "constraints": {
+        "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+      }
+    },
+    {
+      "name": "source_mission_number",
+      "type": "string",
+      "description": "The unit's own mission number as the source prints it (158 for the 387th Bombardment Group's Mission 158). Blank when the source numbers none."
+    },
+    {
+      "name": "mission_type",
+      "type": "string",
+      "description": "What the mission was (vocabulary mission_type). One value: a combined mission takes the first type the source states and the others go in notes.",
+      "vocabulary": "mission_type",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "target_text",
+      "type": "string",
+      "description": "The target or area as the source writes it, spelling kept (a doubtful reading of the source is kept with its question mark). Required.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "target_category",
+      "type": "string",
+      "description": "Kind of target (vocabulary mission_target_category) when the source states it; blank otherwise.",
+      "vocabulary": "mission_target_category"
+    },
+    {
+      "name": "target_place_id",
+      "type": "string",
+      "description": "PL#### of the target or area (data/places.csv) when the source names a place that can be located; blank when it names none (never guessed). A target place follows the normal place rules; a sea target uses kind sea_position.",
+      "constraints": {
+        "pattern": "^PL[0-9]{4,}$"
+      }
+    },
+    {
+      "name": "aircraft_type_id",
+      "type": "string",
+      "description": "AT### of the aircraft flown (data/aircraft_types.csv); the family row when the source gives no variant. Blank when not given.",
+      "constraints": {
+        "pattern": "^AT[0-9]{3,}$"
+      }
+    },
+    {
+      "name": "aircraft_dispatched",
+      "type": "string",
+      "description": "Number of aircraft that took off or were dispatched, as the source gives it (an integer). Blank when not given; never estimated.",
+      "constraints": {
+        "pattern": "^[0-9]+$"
+      }
+    },
+    {
+      "name": "aircraft_effective",
+      "type": "string",
+      "description": "Number of aircraft that attacked the target (credited sorties), as the source gives it. Blank when not given; never more than aircraft_dispatched.",
+      "constraints": {
+        "pattern": "^[0-9]+$"
+      }
+    },
+    {
+      "name": "aircraft_lost",
+      "type": "string",
+      "description": "Number of aircraft lost on the mission (shot down, crashed or written off), as the source gives it. Blank when not given; never more than aircraft_dispatched. 0 only when the source says none was lost.",
+      "constraints": {
+        "pattern": "^[0-9]+$"
+      }
+    },
+    {
+      "name": "supported_unit_ids",
+      "type": "string",
+      "description": "Ground (or naval) units that the source says the mission supported, as unit_ids of data/units.csv separated by \"; \". Blank when the source names none; never inferred from the area."
+    },
+    {
+      "name": "attacked_unit_ids",
+      "type": "string",
+      "description": "Enemy units that the source names as attacked, as unit_ids separated by \"; \". Blank when the source names none; never inferred from the area."
+    },
+    {
+      "name": "operation_id",
+      "type": "string",
+      "description": "OP-... of the operation the mission belongs to (data/operations.csv) when a source ties it to one; blank otherwise. A date outside the operation is a warning."
+    },
+    {
+      "name": "confidence",
+      "type": "number",
+      "description": "How well the mission row is documented (vocabulary confidence, read for a mission: 0.9 two independent source families agree; 0.7 one authoritative or primary source such as the unit's own official history; 0.5 one secondary source such as a unit association compilation; 0.3 the date is approximate). No position cap applies, except that a target at a sea_position place keeps the 0.5 cap.",
+      "vocabulary": "confidence",
+      "constraints": {
+        "required": true,
+        "minimum": 0,
+        "maximum": 1
+      }
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "description": "Readable citation: the source URL(s) separated by \" | \", with page or section when known. Every URL must be the url of a reference listed in reference_ids.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "The stored mission -> reference links: reference ids of data/references_meta.csv separated by \";\", at least one.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "source_locator",
+      "type": "string",
+      "description": "Page or section per reference, \"R###: p. 7; R###: section ...\" (blank when the source has no pages)."
+    },
+    {
+      "name": "notes",
+      "type": "string",
+      "description": "Free text. Sentence-initial labels use the note_label vocabulary (Review:, Context:, Event definition: ...). A changed value carries old value, new value and reason, as for claims. A conflict group needs a sentence that says what differs."
+    }
+  ]
+}

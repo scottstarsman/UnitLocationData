@@ -6507,9 +6507,11 @@ def scenario_314_normandy_chunk6b():
            [[('CAN-WG-144', 'organic', '1944-06-06', '1944-07-12'), ('UK-WG-125', 'organic', '1944-07-14', '')],
             [('CAN-WG-126', 'organic', '1944-07-14', ''), ('CAN-WG-144', 'organic', '1944-06-06', '1944-07-12')],
             [('CAN-WG-127', 'organic', '1944-07-14', ''), ('CAN-WG-144', 'organic', '1944-06-06', '1944-07-12')]])
-    expect(s + ': 652 Squadron is assigned to 83 Group and attached to Second Army from 7 June',
-           rel('UK-SQN-652'),
-           [('UK-ARMY-002A', 'attached', '1944-06-07', ''), ('UK-GRP-083', 'assigned', '1944-06-06', '')])
+    expect(s + ': 652 Squadron is assigned to 83 Group (preferred) and 84 Group (alternate), and attached to Second Army from 7 June',
+           sorted((r['higher_unit_id'], r['relationship'], r['status'], r['valid_from'], r['valid_to']) for r in rels if r['subject_unit_id'] == 'UK-SQN-652'),
+           [('UK-ARMY-002A', 'attached', 'preferred', '1944-06-07', ''),
+            ('UK-GRP-083', 'assigned', 'preferred', '1944-06-06', ''),
+            ('UK-GRP-084', 'assigned', 'alternate', '1944-06-01', '')])
     units = {r['unit_id']: r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'units.csv'))[1]}
     expect(s + ': no Spotting Wing unit and no 650 Squadron',
            [u for u in units if 'Spotting' in units[u]['unit_name'] or u == 'UK-SQN-650'], [])
@@ -6531,6 +6533,16 @@ def scenario_314_normandy_chunk6b():
            ['G182', 'G183', 'G184', 'G185', 'G186', 'G187', 'G188', 'G189', 'G190', 'G191', 'G192'])
     expect(s + ': no live B.21 place or 414 Squadron claim at PL4445 (C13)',
            [r['place_id'] for r in claims['CAN-SQN-414'] if r['place_id'] == 'PL4445'], [])
+    expect(s + ': no live B.34 place or 39 Wing claim at PL4443',
+           [r['place_id'] for r in claims['UK-WG-039'] if r['place_id'] == 'PL4443'], [])
+    places = {r['place_id'] for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'places.csv'))[1]}
+    expect(s + ': places PL4443 and PL4445 are withdrawn',
+           ('PL4443' in places, 'PL4445' in places), (False, False))
+    expect(s + ': 652 Squadron G193 keeps Project Overlord as an alternate',
+           sorted((r['date'], r['claim_status'], r['conflict_group_id']) for r in claims['UK-SQN-652']),
+           [('1944-06-01', 'alternate', 'G193'),
+            ('1944-06-06', 'preferred', 'G193'),
+            ('1944-06-07', 'preferred', '')])
 
 
 def main():

@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 2527)
+## Part 2: command relations (20 of 2577)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -710,17 +710,48 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C0730 (GER-PZ-009D, 1944-08-10) | asserts_start | 1944-08-10 | - | Listed as one of the two LXXXI Corps divisions in line on 10 August (Breakout and Pursuit ch. 25 p. 498) | R403 https://www.ibiblio.org/hyperwar/USA/USA-E-Breakout/USA-E-Breakout-25.html [p. 500, 498] |
   | C0862 (GER-PZ-009D, 1944-09-16) | observed_during | - | - |  | R441 https://www.ibiblio.org/hyperwar/USA/USA-E-Siegfried/USA-E-Siegfried-4.html [p. 87] |
 
-### R07. CR0866: 3rd Canadian Infantry Division -> XXX Corps (attached)
+### R07. CR0925: 1st Polish Armoured Division -> First Canadian Army (unspecified_subordination)
 
-- **Subject / higher unit:** `CAN-INF-003D` / `UK-COR-030C`
-- **Interval:** from 1945-02-08 (inferred) to 1945-02-15 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
-- **Note:** 3rd Canadian Division on the northern flank of the 30th British Corps in Operation Veritable from 8 February 1945 (Stacey p. 471) until it reverted under the 2nd Canadian Corps on 15 February (p. 482). The start day is inferred: Stacey says the division part began at 18:00 on 8 February on the 30th Corps flank but does not give the day of the attachment. The division stays assigned to II Canadian Corps in the dataset (CR0849).
+- **Subject / higher unit:** `POL-ARM-001D` / `CAN-ARMY-001A`
+- **Interval:** from 1944-08-05 (inferred) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
+- **Note:** 1st Polish Armoured Division under First Canadian Army (standing relation). The start is an inferred value: no row of First Canadian Army states it, so it is taken from the day the division came under Canadian command, 06:00 on 5 August 1944 (Stacey, p. 208, under II Canadian Corps of that army); it left General Crerar's command in mid-June 1945 (Stacey, p. 618); Stacey p. 276 counts it among the two armoured divisions available to the First Canadian Army, and Ellis, vol. II, p. 285 lists it und [...]
 - **Evidence:**
 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
-  | C1379 (CAN-INF-003D, 1945-02-08) | asserts_start | 1945-02-08 | - | The division part in Veritable on the 30th Corps northern flank began at 18:00 on 8 February | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 471] |
-  | C1380 (CAN-INF-003D, 1945-02-15) | asserts_end | - | 1945-02-15 | Reverted under the 2nd Canadian Corps on 15 February | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 482]; R808 https://www.fold3.com/image/160529072/b-368-6th-parachute-division-19-nov-1944-10-may-1945-page-1-us-wwii-foreign-military-studies-1945-1954 [German p.12 (Fold3 page 16)]; R887 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq155.pdf [para 90] |
+  | C1547 (POL-ARM-001D, 1944-08-08) | asserts_start | 1944-08-05 | - | Stacey p. 208: under Canadian command (II Canadian Corps, First Canadian Army) from 06:00 on 5 August; start inferred for the army from this | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 224]; R670 https://archive.org/details/victory-west-vol-1 [p. 423]; R891 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq065.pdf [para 78] |
+  | C1548 (POL-ARM-001D, 1944-08-09) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 229]; R670 https://archive.org/details/victory-west-vol-1 [p. 424]; R891 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq065.pdf [para 95] |
+  | C1549 (POL-ARM-001D, 1944-08-15) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 250]; R670 https://archive.org/details/victory-west-vol-1 [p. 431]; R891 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq065.pdf [para 185] |
+  | C1550 (POL-ARM-001D, 1944-08-18) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 256]; R670 https://archive.org/details/victory-west-vol-1 [p. 442] |
+  | C1551 (POL-ARM-001D, 1944-08-19) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 261]; R670 https://archive.org/details/victory-west-vol-1 [p. 445]; R891 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq065.pdf [paras 205, 214] |
+  | C1552 (POL-ARM-001D, 1944-08-21) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [pp. 262, 264]; R670 https://archive.org/details/victory-west-vol-1 [p. 447]; R891 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq065.pdf [paras 216, 229] |
+  | C1553 (POL-ARM-001D, 1944-09-04) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 324]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 179] |
+  | C1554 (POL-ARM-001D, 1944-09-05) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 326]; R671 https://archive.org/details/victory-west-vol-2 [p. 6]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 180] |
+  | C1555 (POL-ARM-001D, 1944-09-06) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 326]; R671 https://archive.org/details/victory-west-vol-2 [p. 15]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 188] |
+  | C1556 (POL-ARM-001D, 1944-09-07) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 326]; R671 https://archive.org/details/victory-west-vol-2 [p. 15]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 188] |
+  | C1557 (POL-ARM-001D, 1944-09-11) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 327]; R671 https://archive.org/details/victory-west-vol-2 [p. 15]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 188] |
+  | C1558 (POL-ARM-001D, 1944-09-19) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 364]; R671 https://archive.org/details/victory-west-vol-2 [p. 68]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 235] |
+  | C1559 (POL-ARM-001D, 1944-09-20) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 364]; R671 https://archive.org/details/victory-west-vol-2 [p. 68]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 235]; R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 264] |
+  | C1561 (POL-ARM-001D, 1944-09-30) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R671 https://archive.org/details/victory-west-vol-2 [p. 100]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 275] |
+  | C1562 (POL-ARM-001D, 1944-10-03) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 381]; R671 https://archive.org/details/victory-west-vol-2 [p. 100] |
+  | C1563 (POL-ARM-001D, 1944-10-05) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 381]; R671 https://archive.org/details/victory-west-vol-2 [p. 100]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 275] |
+  | C1564 (POL-ARM-001D, 1944-10-29) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 390]; R671 https://archive.org/details/victory-west-vol-2 [p. 125]; R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 477] |
+  | C1565 (POL-ARM-001D, 1944-11-09) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 424]; R882 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq173.pdf [para 27]; R888 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq188.pdf [para 225] |
+  | C1566 (POL-ARM-001D, 1944-12-30) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 452]; R671 https://archive.org/details/victory-west-vol-2 [p. 239]; R808 https://www.fold3.com/image/160529072/b-368-6th-parachute-division-19-nov-1944-10-may-1945-page-1-us-wwii-foreign-military-studies-1945-1954 [German p.8, English p.8]; R882 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq173.pdf [paras 127, 135] |
+  | C1567 (POL-ARM-001D, 1945-01-07) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 452]; R671 https://archive.org/details/victory-west-vol-2 [p. 239]; R808 https://www.fold3.com/image/160529072/b-368-6th-parachute-division-19-nov-1944-10-may-1945-page-1-us-wwii-foreign-military-studies-1945-1954 [German p.8, English p.8]; R882 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq173.pdf [paras 127, 135] |
+  | C1568 (POL-ARM-001D, 1945-04-08) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [pp. 552, 561]; R671 https://archive.org/details/victory-west-vol-2 [p. 313] |
+  | C1569 (POL-ARM-001D, 1945-04-10) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561]; R884 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq032-1.pdf [para 169] |
+  | C1570 (POL-ARM-001D, 1945-04-13) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561] |
+  | C1571 (POL-ARM-001D, 1945-04-14) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561]; R884 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq032-1.pdf [para 263] |
+  | C1572 (POL-ARM-001D, 1945-04-15) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561] |
+  | C1573 (POL-ARM-001D, 1945-04-18) | observed_during | - | - |  | R671 https://archive.org/details/victory-west-vol-2 [p. 313] |
+  | C1574 (POL-ARM-001D, 1945-04-22) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 561] |
+  | C1575 (POL-ARM-001D, 1945-04-25) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 598] |
+  | C1576 (POL-ARM-001D, 1945-05-01) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 598]; R884 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq032-1.pdf [para 434] |
+  | C1577 (POL-ARM-001D, 1945-05-03) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 598]; R884 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/ahq-reports/ahq032-1.pdf [para 435] |
+  | C1578 (POL-ARM-001D, 1945-05-04) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 598] |
+  | C1579 (POL-ARM-001D, 1945-05-06) | observed_during | - | - |  | R035 https://en.wikipedia.org/wiki/1st_Armoured_Division_(Poland) [section Germany] |
+  | C1560 (POL-ARM-001D, 1944-09-28) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 367]; R671 https://archive.org/details/victory-west-vol-2 [p. 70]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 261] |
 
 ### R08. CR0927: 1st Czechoslovak Independent Armoured Brigade -> 21st Army Group (unspecified_subordination)
 
@@ -842,18 +873,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9816 (, ) | observed_during | - | - |  | R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [chronology, 25 June, clearance sweeping by 8 fleet minesweepers of the RN 9th M/S Flotilla during the TF 129 bombardment of Cherbourg]; R1530 https://en.wikipedia.org/wiki/HMS_Bridport_(J50) [identity of the ship in the 9th Minesweeping Flotilla] |
 
-### R18. CR2490: No. 305 (Polish) Squadron -> No. 138 Wing RAF (organic)
-
-- **Subject / higher unit:** `POL-SQN-305` / `UK-WG-138`
-- **Interval:** from 1943-11-18 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
-- **Note:** No. 305 (Polish) Squadron joined No 138 Airfield (later Wing) on 18 November 1943 (rafweb, wing ORB: 18 Nov 1943 "No 305 Sqn arrived pending re-equipment with Mosquitos"); it is listed in the wing on 6 June 1944 (Richards and Saunders). The end is after the window. Added in the Normandy chunk 6a pass (branch normandy-raf-6a, 17 November 2026): old value none, new value this relation; reason: Scott approved recommendations K1-K13 (17 November 2026).
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C10909 (, ) | asserts_start | 1943-11-18 | - | 18 Nov 1943 "No 305 Sqn arrived pending re-equipment with Mosquitos" | R1621 https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-III/UK-RAF-III-XI.html [No. 138 Wing]; R1632 https://www.rafweb.org/Members%20Pages/Unit%20Details/Wings/No%20138%20Wing.htm [Unit Composition and Movements (18 Nov 1943 "No 305 Sqn arrived pending re-equipment with Mosquitos")]; R1650 https://www.historyofwar.org/air/units/RAF/305_wwII.html [Locations (November 1943-October 1944: Lasham)] |
-
-### R19. CR2496: No. 464 Squadron RAAF -> No. 140 Wing RAF (organic)
+### R18. CR2496: No. 464 Squadron RAAF -> No. 140 Wing RAF (organic)
 
 - **Subject / higher unit:** `AUS-SQN-464` / `UK-WG-140`
 - **Interval:** from 1944-06-01 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -865,7 +885,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C10916 (, ) | observed_during | - | - |  | R1656 https://www.historyofwar.org/air/units/RAAF/464_wwII.html [Locations (April-June 1944: Gravesend / June 1944-February 1945: Thorney Island)] |
   | C10917 (, ) | observed_during | - | - |  | R1656 https://www.historyofwar.org/air/units/RAAF/464_wwII.html [Locations (June 1944-February 1945: Thorney Island)] |
 
-### R20. CR2523: No. 488 Squadron RNZAF -> No. 149 Wing RAF (organic)
+### R19. CR2523: No. 488 Squadron RNZAF -> No. 149 Wing RAF (organic)
 
 - **Subject / higher unit:** `NZ-SQN-488` / `UK-WG-149`
 - **Interval:** from 1944-06-29 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -875,4 +895,16 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C10978 (, ) | asserts_start | 1944-06-29 | - | 29 Jun 1944 "Nos 410 and 488 Sqns taken over" | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [488 Squadron (Zeals, Colerne)]; R1639 https://www.rafweb.org/Members%20Pages/Unit%20Details/Wings/No%20149%20Wing.htm [Unit Composition and Movements (28 Jul 1944 "No 149 Wing and squadrons moved from RAF Zeals to RAF Colerne")]; R1686 https://en.wikipedia.org/wiki/No._488_Squadron_RNZAF [Bases (28 July 1944-9 October 1944, RAF Colerne, Wiltshire)] |
+
+### R20. CR2572: No. 442 Squadron RCAF -> No. 144 (RCAF) Wing (organic)
+
+- **Subject / higher unit:** `CAN-SQN-442` / `CAN-WG-144`
+- **Interval:** from 1944-06-06 (claim_date) to 1944-07-12 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
+- **Note:** No. 442 Squadron RCAF was a squadron of No 144 (RCAF) Wing on 6 June 1944 (Richards and Saunders, Appendix XI). The wing disbanded on 12 July 1944; the squadron transferred on 14 July 1944. Added in the Normandy chunk 6b pass (branch normandy-raf-6b, 18 November 2026): old value none, new value this relation; reason: Scott approved recommendations K1-K13 (17 November 2026).
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C11112 (, ) | observed_during | - | - |  | R1621 https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-III/UK-RAF-III-XI.html; R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [442 (Canadian) Squadron, Spitfire IX (Ford, B.3 15Jun, B.4 15Jul)]; R1724 https://www.historyofwar.org/air/units/RCAF/442_wwII.html [Locations (14 May-15 June 1944: Ford (West Sussex))] |
+  | C11113 (, ) | asserts_end | - | 1944-07-12 | 12 Jul 1944 No 144 Wing Disbanded (rafweb). The squadron transferred to the receiving wing on 14 July 1944. | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [B.3 15Jun]; R1724 https://www.historyofwar.org/air/units/RCAF/442_wwII.html [Locations (15 June-14 July 1944: B.3 St. Croix)] |
 

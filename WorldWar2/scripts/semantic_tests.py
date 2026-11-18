@@ -6577,9 +6577,9 @@ def scenario_315_normandy_chunk6c():
     expect(s + ': 660 Squadron is assigned to 84 Group and attached to Second Army from 8 July',
            rel('UK-SQN-660'),
            [('UK-ARMY-002A', 'attached', '1944-07-08', ''), ('UK-GRP-084', 'assigned', '1944-06-06', '')])
-    expect(s + ': 661 Squadron is assigned to 84 Group',
+    expect(s + ': 661 Squadron is assigned to 84 Group and attached to First Canadian Army from 7 August',
            rel('UK-SQN-661'),
-           [('UK-GRP-084', 'assigned', '1944-06-06', '')])
+           [('CAN-ARMY-001A', 'attached', '1944-08-07', ''), ('UK-GRP-084', 'assigned', '1944-06-06', '')])
     expect(s + ': 652 Squadron is not given a new 6c preferred parent (preferred 83 Group, alternate 84 Group already stored)',
            rel('UK-SQN-652'),
            [('UK-ARMY-002A', 'attached', '1944-06-07', ''),
@@ -6598,8 +6598,8 @@ def scenario_315_normandy_chunk6c():
         for r in common.read_dicts(path)[1]:
             claims.setdefault(r['unit_id'], []).append(r)
     aop_places = sorted({r['place_id'] for u in ('UK-SQN-660', 'UK-SQN-661') for r in claims[u]})
-    expect(s + ': AOP 660 and 661 claims are English strips only (Westenhanger, Hammerwood, Biggin Hill)',
-           aop_places, ['PL4423', 'PL4453', 'PL4457'])
+    expect(s + ': AOP 660 and 661 claims are English strips only (Westenhanger, Hammerwood, Biggin Hill, Penshurst)',
+           aop_places, ['PL4423', 'PL4425', 'PL4453', 'PL4457'])
     expect(s + ': 136 Wing is disestablished at Hurn on 26 July',
            [(r['date'], r['disestablished'], r['place_id']) for r in claims['UK-WG-136'] if r['disestablished'] == 'true'],
            [('1944-07-26', 'true', 'PL4262')])
@@ -6609,12 +6609,17 @@ def scenario_315_normandy_chunk6c():
     expect(s + ': withdrawn B-21 and B-34 place ids are not reused',
            ('PL4443' in places, 'PL4445' in places, 'PL4446' in places, 'PL4459' in places),
            (False, False, True, True))
-    expect(s + ': twenty-three conflict groups in G194-G225',
-           sorted({r['conflict_group_id'] for rows in claims.values() for r in rows if r.get('conflict_group_id') and r['conflict_group_id'].startswith('G') and 194 <= int(r['conflict_group_id'][1:]) <= 225}),
-           ['G%d' % i for i in range(194, 226) if i not in (198, 201, 202, 203, 204, 211, 212, 213, 217)])
+    expect(s + ': twenty-four conflict groups in G194-G226',
+           sorted({r['conflict_group_id'] for rows in claims.values() for r in rows if r.get('conflict_group_id') and r['conflict_group_id'].startswith('G') and 194 <= int(r['conflict_group_id'][1:]) <= 226}),
+           ['G%d' % i for i in range(194, 227) if i not in (198, 201, 202, 203, 204, 211, 212, 213, 217)])
     expect(s + ': 485 Squadron 6 June conflict (Wikipedia Selsey preferred, Project Overlord Coolham alternate)',
            sorted((r['date'], r['claim_status'], r['place_id']) for r in claims['NZ-SQN-485'] if r['date'] == '1944-06-06'),
            [('1944-06-06', 'alternate', 'PL4450'), ('1944-06-06', 'preferred', 'PL4402')])
+    expect(s + ': 661 Squadron move to France (Rickard 7 August preferred at Penshurst, Wikipedia July alternate dated 31 July)',
+           sorted((r['date'], r['claim_status'], r['conflict_group_id'], r['place_id']) for r in claims['UK-SQN-661']),
+           [('1944-06-06', 'preferred', '', 'PL4453'),
+            ('1944-07-31', 'alternate', 'G226', 'PL4425'),
+            ('1944-08-07', 'preferred', 'G226', 'PL4425')])
 
 
 def main():

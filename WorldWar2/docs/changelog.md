@@ -2,6 +2,23 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 18 November 2026 — Normandy chunk 6d follow-up: Scott's decisions on the open questions (branch `normandy-raf-6d`, PR #114)
+
+Scott answered the eight open questions of chunk 6d on 18 November 2026 and agreed with every recommendation. Recorded as his decisions:
+
+1. **219 Squadron / No 147 Wing (count C9):** no relation. Project Overlord's listing is undated and the 147 Wing ORB first names the squadron on 10 October 1944; 219 stays with No 11 Group.
+2. **No 134 Wing's parent, 2-12 July 1944:** no wing → ADGB relation; rafweb transfers "the Czech squadrons and Servicing Echelons" on 1 July, not the wing.
+3. **No 134 Wing disbanded 12 July, squadrons transferred out 17 July:** the 134 Wing relations of 33, 74 and 127 Squadrons (`CR2656`, `CR2659`, `CR2662`) keep following the squadron entries (3-16 July). Data change: a sentence recording the decision appended to the note of each of the three relations (old value no recorded decision; new value the sentence; reason: review answer). The disbandment/transfer discrepancy was already stated on the three relations and on the wing's disbandment claim `C11414`.
+4. **345 Squadron:** both `operational_control` relations stay (2nd TAF, `CR2664`, from Richards and Saunders footnote 2; No 141 Wing, `CR2667`, from Rickard).
+5. **137 Squadron "from No 125 Wing":** no 125 Wing relation.
+6. **Nos 310, 312 and 313 Squadrons:** the 1 July 1944 same-day handover from No 134 Wing (chunk 6c) to ADGB stays.
+7. **306 and 315 Squadrons on 30 June 1944 (chunk 6c, `C11179`, `C11182`, Holmsley South):** no data change now; re-check against Rickard's "June-July 1944: Ford" in a later cleanup (roadmap 407).
+8. **33, 74 and 127 Squadrons:** stay `assigned` to No 11 Group until 16 July while in No 134 Wing.
+
+Roadmap 406's "Open for Scott" sentence is replaced with a pointer to these decisions (old value the open list; new value "Resolved by Scott on 18 November 2026"; reason: review answer). No other data change; no new ids used.
+
+- Next free: `C11423`, `CR2690`, `R1855`, `PL4480` (do not reuse PL4443 or PL4445), `G242`, `SC220`, `AT143`, `UL027`, `MSN0098`, scenario 317, roadmap 408.
+
 ## 18 November 2026 — Normandy chunk 6d: Air Defence of Great Britain squadrons and the ADGB / 2nd TAF transfers (branch `normandy-raf-6d`)
 
 - **Units (43 new):** the 43 squadrons Richards and Saunders (Appendix XI) list under Nos 10, 11, 12 and 13 Groups of ADGB on 6 June 1944, ids `<NAT>-SQN-<nnn>` (K2): 10 Group `UK-SQN-001`, `041`, `068`, `126`, `131`, `151`, `165`, `263`, `276`, `610`, `616`, `CAN-SQN-406`; 11 Group `UK-SQN-033`, `064`, `074`, `080`, `096`, `125`, `127`, `130`, `137`, `219`, `229`, `234`, `274`, `275`, `277`, `278`, `501`, `605`, `611`, `POL-SQN-303`, `FR-SQN-345`, `BEL-SQN-350`, `CAN-SQN-402`, `CAN-SQN-418`, `AUS-SQN-456`; 12 Group `UK-SQN-025`, `504`, `POL-SQN-307`, `316`; 13 Group `UK-SQN-118`, `POL-SQN-309`. Old value none, new value these rows; reason: Scott approved K1–K13 (17 November 2026). formed_date blank (not read). 85 and 157 Squadrons stay for chunk 8 (K8). No existing unit was re-entered: the Czech squadrons, 133/134 Wing and 129/306/315 Squadrons get claims or relations only.

@@ -6419,9 +6419,12 @@ def scenario_312_normandy_chunk6a_commit2():
     expect(s + ': the 2 Group wings are assigned to 2 Group from formation',
            [rel('UK-WG-%s' % w) for w in ('137', '138', '139', '140')],
            [[('UK-GRP-002', 'assigned', d, '')] for d in ('1943-11-14', '1943-11-10', '1943-11-17', '1943-12-01')])
-    expect(s + ': 3 NFW is attached to 2nd TAF for June 1944; VCS-7 for 1-26 June',
-           (rel('UK-NFW-003'), rel('US-VCS-007')),
-           ([('UK-TAF-002', 'attached', '1944-06-06', '1944-06-30')], [('UK-TAF-002', 'attached', '1944-06-01', '1944-06-26')]))
+    expect(s + ': 3 NFW is attached to 2nd TAF for June 1944; VCS-7 is attached to 34 Wing (preferred) and to 2nd TAF (alternate) for 1-26 June',
+           (rel('UK-NFW-003'),
+            sorted((r['higher_unit_id'], r['relationship'], r['status'], r['valid_from'], r['valid_to']) for r in rels if r['subject_unit_id'] == 'US-VCS-007')),
+           ([('UK-TAF-002', 'attached', '1944-06-06', '1944-06-30')],
+            [('UK-TAF-002', 'attached', 'alternate', '1944-06-01', '1944-06-26'),
+             ('UK-WG-034', 'attached', 'preferred', '1944-06-01', '1944-06-26')]))
     expect(s + ': 886 and 897 NAS leave 3 NFW when they disband',
            (rel('UK-FAA-886'), rel('UK-FAA-897')),
            ([('UK-NFW-003', 'organic', '1943-10-25', '1944-07-19')], [('UK-NFW-003', 'organic', '1943-10-25', '1944-07-17')]))
@@ -6438,9 +6441,11 @@ def scenario_312_normandy_chunk6a_commit2():
            ([(r['date'], r['confidence']) for r in sorted(claims['UK-SQN-021'], key=lambda r: r['date'])],
             [(r['date'], r['confidence']) for r in sorted(claims['AUS-SQN-464'], key=lambda r: r['date'])]),
            ([('1944-06-06', '0.5'), ('1944-06-18', '0.5')], [('1944-06-01', '0.3'), ('1944-06-30', '0.3')]))
-    expect(s + ': VCS-7 is established on 1 June and disestablished on 26 June',
-           [(r['date'], r['established'], r['disestablished']) for r in sorted(claims['US-VCS-007'], key=lambda r: r['date'])],
-           [('1944-06-01', 'true', 'false'), ('1944-06-26', 'false', 'true')])
+    expect(s + ': VCS-7 is established on 1 June and disestablished on 26 June; G180 keeps Project Overlord as an alternate',
+           sorted((r['date'], r['claim_status'], r['conflict_group_id'], r['established'], r['disestablished']) for r in claims['US-VCS-007']),
+           [('1944-06-01', 'preferred', 'G180', 'true', 'false'),
+            ('1944-06-06', 'alternate', 'G180', 'false', 'false'),
+            ('1944-06-26', 'preferred', '', 'false', 'true')])
 
 
 def scenario_313_normandy_chunk6a_commit3():

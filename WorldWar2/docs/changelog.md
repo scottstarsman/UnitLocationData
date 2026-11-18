@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 17 November 2026 — Normandy chunk 6a follow-up: VCS-7 under 34 Wing (branch `normandy-raf-6a`)
+
+- **Relation `CR2481`:** VCS-7 (`US-VCS-007`) preferred `attached` parent changed from 2nd TAF (`UK-TAF-002`) to No. 34 Wing (`UK-WG-034`), 1–26 June 1944. Old value: attached to `UK-TAF-002`; new value: attached to `UK-WG-034`; reason: Scott's decision 17 November 2026; Wikipedia places VCS-7 in the Air Spotting Pool (34 Wing); Project Overlord's "attached to 2nd TAF" is kept as an alternate.
+- **Relation `CR2531` (new, `alternate`):** VCS-7 `attached` to `UK-TAF-002` 1–26 June, evidenced by alternate claim `C10983` (Project Overlord). Old value none; new value this relation; reason: conflicts kept as alternates; Scott's decision 17 November 2026.
+- **Claim `C10983` and conflict group `G180`:** `C10983` is an alternate 6 June row at Lee-on-Solent (confidence 0.3) that carries Project Overlord's 2nd TAF attachment. The 6 June date is inferred: Project Overlord dates the attachment as June 1944 without a day, and 6 June is the order-of-battle date used in this chunk; old value none, new value 6 June, reason as above. Competing claims must differ in date or place, so the alternate is not on 1 June. `C10930` (1 June, preferred) joins `G180`. `C10931` (26 June disbandment) is unchanged in status. Notes on `C10930`, `C10931` and unit `US-VCS-007` record the old value, new value and reason. The three "attached entry without a standing parent entry" warnings on `C10895`, `C10930` and `C10931` remain: moving VCS-7 under 34 Wing does not give it an organic or assigned parent. `C10983` adds a fourth warning of the same kind (validator 395 to 396). Scott accepted the original three warnings, and ADGB `assigned` under AEAF, on 17 November 2026.
+- **Tests:** scenario 312 updated for the preferred 34 Wing attachment, the 2nd TAF alternate, and `G180`.
+- **Docs:** `docs/normandy_air_naval_plan.md` entry notes and K9 line; roadmap 401.
+- Next free: `C10984`, `CR2532`, `R1687`, `PL4418`, `G181`, `SC220`, `AT143`, `UL027`, `MSN0098`, scenario 314, roadmap 402.
+
 ## 17 November 2026 — Normandy chunk 6a (3/3): No. 85 Group's wings and squadrons (branch `normandy-raf-6a`)
 
 - **Units (18 new):** wings `UK-WG-141`, `142`, `147`, `148`, `149`, `150` (echelon `air_group`; formed dates from the rafweb wing pages, which quote the ORBs; the "No 24 Wing" and "No 25 Wing" of the ORBs are sectors and stay in the notes, K4); squadrons `UK-SQN-003`, `029`, `056`, `091`, `124`, `264`, `604`, `NL-SQN-322`, `CAN-SQN-409`, `CAN-SQN-410`, `NZ-SQN-486`, `NZ-SQN-488`. Old value none, new value these rows; reason: Scott approved K1–K13 (17 November 2026).

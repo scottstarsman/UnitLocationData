@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 5 of 5 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 2578)
+## Part 2: command relations (20 of 2624)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -753,22 +753,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1579 (POL-ARM-001D, 1945-05-06) | observed_during | - | - |  | R035 https://en.wikipedia.org/wiki/1st_Armoured_Division_(Poland) [section Germany] |
   | C1560 (POL-ARM-001D, 1944-09-28) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 367]; R671 https://archive.org/details/victory-west-vol-2 [p. 70]; R889 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq183.pdf [para 261] |
 
-### R08. CR0927: 1st Czechoslovak Independent Armoured Brigade -> 21st Army Group (unspecified_subordination)
-
-- **Subject / higher unit:** `CZ-ARM-001B` / `UK-AG-021G`
-- **Interval:** from 1944-08-30 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
-- **Note:** 1st Czechoslovak Independent Armoured Brigade Group in 21st Army Group (standing relation) from 30 August 1944, when it joined the army group at Falaise (Wikipedia); Ellis, vol. II, p. 343 calls it "Twenty-First Army Group's Czech Armoured Brigade" in May 1945, and Stacey p. 368 has it pass under direct command of the army group on 27 November 1944. The sources do not say assigned or attached, so the kind is unspecified_subordination; open at the last row (the brigade left for Czechoslovakia aft [...]
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C1585 (CZ-ARM-001B, 1944-08-30) | asserts_start | 1944-08-30 | - | Joined 21st Army Group at Falaise on 30 August (Wikipedia) | R037 https://en.wikipedia.org/wiki/1st_Czechoslovak_Independent_Armoured_Brigade [section Siege of Dunkirk] |
-  | C1589 (CZ-ARM-001B, 1945-05-08) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R671 https://archive.org/details/victory-west-vol-2 [p. 343]; R675 https://en.wikipedia.org/wiki/Siege_of_Dunkirk_(1944%E2%80%931945) [section Siege]; R890 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq184.pdf [para 164] |
-  | C1586 (CZ-ARM-001B, 1944-10-09) | observed_during | - | - |  | R037 https://en.wikipedia.org/wiki/1st_Czechoslovak_Independent_Armoured_Brigade [section Siege of Dunkirk]; R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R675 https://en.wikipedia.org/wiki/Siege_of_Dunkirk_(1944%E2%80%931945) [section Siege]; R890 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq184.pdf [para 148] |
-  | C1587 (CZ-ARM-001B, 1944-10-28) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R675 https://en.wikipedia.org/wiki/Siege_of_Dunkirk_(1944%E2%80%931945) [section Siege]; R890 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq184.pdf [para 153] |
-  | C1588 (CZ-ARM-001B, 1944-11-27) | observed_during | - | - |  | R668 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/official/book-1960-army-ww2-3-en.pdf [p. 368]; R882 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq173.pdf [paras 24, 49, 59]; R890 https://www.canada.ca/content/dam/themes/defence/caf/militaryhistory/dhh/reports/cmhq-reports/cmhq184.pdf [para 159] |
-
-### R09. CR0929: 1st Belgian Infantry Brigade (Brigade Piron) -> First Canadian Army (unspecified_subordination)
+### R08. CR0929: 1st Belgian Infantry Brigade (Brigade Piron) -> First Canadian Army (unspecified_subordination)
 
 - **Subject / higher unit:** `BEL-INF-001B` / `CAN-ARMY-001A`
 - **Interval:** from 1944-08-13 (narrative) to 1944-09-01 (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -783,7 +768,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1593 (BEL-INF-001B, 1944-08-24) | observed_during | - | - |  | R144 https://en.wikipedia.org/wiki/Piron_Brigade [section Normandy invasion] |
   | C1594 (BEL-INF-001B, 1944-08-26) | asserts_end | - | 1944-09-01 | Transferred from General Crerar to the Second Army on 2 September (Wikipedia; Stacey p. 323); last row under First Canadian Army | R144 https://en.wikipedia.org/wiki/Piron_Brigade [section Normandy invasion] |
 
-### R10. CR0941: French 2nd Armoured Division -> Third Army (unspecified_subordination)
+### R09. CR0941: French 2nd Armoured Division -> Third Army (unspecified_subordination)
 
 - **Subject / higher unit:** `FR-ARM-002D` / `US-ARMY-003A`
 - **Interval:** from 1944-09-08 (narrative) to 1944-09-28 (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -795,7 +780,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C1613 (FR-ARM-002D, 1944-09-13) | asserts_start | 1944-09-08 | - | Joined the XV Corps of the Third Army on 8 September (The Lorraine Campaign, p. 185) | R048 https://en.wikipedia.org/wiki/2nd_Armored_Division_(France) [section Alsace and Lorraine]; R415 https://www.ibiblio.org/hyperwar/USA/USA-E-Lorraine/USA-E-Lorraine-4.html [pp. 185, 199] |
   | C1614 (FR-ARM-002D, 1944-09-28) | asserts_end | - | 1944-09-28 | The XV Corps passed to the 6th Army Group and the Seventh Army on 29 September (Riviera to the Rhine, p. 254) | R421 https://www.ibiblio.org/hyperwar/USA/USA-E-Riviera/USA-E-Riviera-14.html [pp. 254, 256] |
 
-### R11. CR1146: 35th Infantry Division -> XIX Corps (operational_control)
+### R10. CR1146: 35th Infantry Division -> XIX Corps (operational_control)
 
 - **Subject / higher unit:** `US-INF-035D` / `US-COR-019C`
 - **Interval:** from 1945-04-13 (assignment_table) to 1945-04-15 (assignment_table); end_unknown false; change_undated false; date_basis assignment_table; status preferred
@@ -806,7 +791,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C8567 (US-INF-035D, 1945-04-13) | asserts_start_and_end | 1945-04-13 | 1945-04-15 | CMH ETO-OB assignment table, Corps column: "XIX (Opns)" (row 13 Apr 45) | R350 https://web.archive.org/web/2018/http://www.history.army.mil/documents/ETO-OB/35ID-ETO.htm [Assignment and Attachment to Higher Units, row 13 Apr 45, and Command Posts, row 13 Apr] |
 
-### R12. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
+### R11. CR1284: Royal Netherlands Brigade (Prinses Irene) -> Second Army (unspecified_subordination)
 
 - **Subject / higher unit:** `NL-INF-IRNEB` / `UK-ARMY-002A`
 - **Interval:** from 1944-09-04 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status alternate
@@ -817,7 +802,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9383 (NL-INF-IRNEB, 1944-09-04) | asserts_start | 1944-09-04 | - | Attached to the British Second Army on 4 September and then ordered from the Seine area to Brussels (de Jong, p. 268, footnote 4) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 268, footnote 4] |
 
-### R13. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
+### R12. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
 
 - **Subject / higher unit:** `NL-INF-BEWAK` / `NL-BS-000H`
 - **Interval:** from 1944-09-22 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -829,7 +814,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C9389 (NL-INF-BEWAK, 1944-09-22) | asserts_start | 1944-09-22 | - | Van Houten gives command of the Bewakingstroepen der BS to van Dijk in the same 22 September split (de Jong, pp. 561-563) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 561-563] |
   | C9393 (NL-INF-BEWAK, 1945-05-01) | observed_during | - | - | London war-department return for early May 1945 still reports Bewakingstroepen in the liberated south (de Jong, pp. 757-758) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 757-758] |
 
-### R14. CR1316: II Fallschirmjäger Corps -> Armeegruppe Student (Army Group Student) (unspecified_subordination)
+### R13. CR1316: II Fallschirmjäger Corps -> Armeegruppe Student (Army Group Student) (unspecified_subordination)
 
 - **Subject / higher unit:** `GER-FJ-002C` / `GER-AG-STUDT`
 - **Interval:** from 1945-04-01 (latest 1945-04-02) (narrative) to 1945-04-10 (earliest 1945-04-02) (narrative); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -840,7 +825,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C7969 (GER-FJ-002C, 1945-04-02) | asserts_start_and_end | 1945-04-01 | 1945-04-10 | B-414 pp. 22-23: Armeegruppe Student from about 1 April includes II Parachute Corps, concentrated toward Lingen for Student's local attacks \| Review (leftovers-1115, task c): end added, old value none, new value 1945-04-10 (earliest 1945-04-02): Student's staff leaves on 6 April and Student takes ov [...] | R814 https://www.fold3.com/image/153819777/b-414-army-group-h-10-mar-9-may-1945-page-1-us-wwii-foreign-military-studies-1945-1954 [German p.23 (Fold3 image 82, English p.22)] |
 
-### R15. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
+### R14. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
 
 - **Subject / higher unit:** `NOR-DD-STORD` / `UK-DF-23`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -851,7 +836,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9631 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1426 https://en.wikipedia.org/wiki/HNoMS_Stord_(G26) [Normandy or service or loss paragraph] |
 
-### R16. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
+### R15. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
 
 - **Subject / higher unit:** `GRE-CORV-TOMBAZIS` / `UK-TF-G`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -862,7 +847,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9701 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1490 https://en.wikipedia.org/wiki/HMS_Tamarisk_(K216) [Normandy or service or loss paragraph] |
 
-### R17. CR1788: HMS Bridport (J50) -> Cherbourg Bombardment Force (Task Force 129), 25 June 1944 (attached)
+### R16. CR1788: HMS Bridport (J50) -> Cherbourg Bombardment Force (Task Force 129), 25 June 1944 (attached)
 
 - **Subject / higher unit:** `UK-AM-BRIDPORT` / `US-TG-129`
 - **Interval:** from 1944-06-25 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -873,7 +858,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9816 (, ) | observed_during | - | - |  | R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [chronology, 25 June, clearance sweeping by 8 fleet minesweepers of the RN 9th M/S Flotilla during the TF 129 bombardment of Cherbourg]; R1530 https://en.wikipedia.org/wiki/HMS_Bridport_(J50) [identity of the ship in the 9th Minesweeping Flotilla] |
 
-### R18. CR2496: No. 464 Squadron RAAF -> No. 140 Wing RAF (organic)
+### R17. CR2496: No. 464 Squadron RAAF -> No. 140 Wing RAF (organic)
 
 - **Subject / higher unit:** `AUS-SQN-464` / `UK-WG-140`
 - **Interval:** from 1944-06-01 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -885,7 +870,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C10916 (, ) | observed_during | - | - |  | R1656 https://www.historyofwar.org/air/units/RAAF/464_wwII.html [Locations (April-June 1944: Gravesend / June 1944-February 1945: Thorney Island)] |
   | C10917 (, ) | observed_during | - | - |  | R1656 https://www.historyofwar.org/air/units/RAAF/464_wwII.html [Locations (June 1944-February 1945: Thorney Island)] |
 
-### R19. CR2523: No. 488 Squadron RNZAF -> No. 149 Wing RAF (organic)
+### R18. CR2523: No. 488 Squadron RNZAF -> No. 149 Wing RAF (organic)
 
 - **Subject / higher unit:** `NZ-SQN-488` / `UK-WG-149`
 - **Interval:** from 1944-06-29 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -896,7 +881,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C10978 (, ) | asserts_start | 1944-06-29 | - | 29 Jun 1944 "Nos 410 and 488 Sqns taken over" | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [488 Squadron (Zeals, Colerne)]; R1639 https://www.rafweb.org/Members%20Pages/Unit%20Details/Wings/No%20149%20Wing.htm [Unit Composition and Movements (28 Jul 1944 "No 149 Wing and squadrons moved from RAF Zeals to RAF Colerne")]; R1686 https://en.wikipedia.org/wiki/No._488_Squadron_RNZAF [Bases (28 July 1944-9 October 1944, RAF Colerne, Wiltshire)] |
 
-### R20. CR2572: No. 442 Squadron RCAF -> No. 144 (RCAF) Wing (organic)
+### R19. CR2572: No. 442 Squadron RCAF -> No. 144 (RCAF) Wing (organic)
 
 - **Subject / higher unit:** `CAN-SQN-442` / `CAN-WG-144`
 - **Interval:** from 1944-06-06 (claim_date) to 1944-07-12 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -907,4 +892,17 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C11112 (, ) | observed_during | - | - |  | R1621 https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-III/UK-RAF-III-XI.html; R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [442 (Canadian) Squadron, Spitfire IX (Ford, B.3 15Jun, B.4 15Jul)]; R1724 https://www.historyofwar.org/air/units/RCAF/442_wwII.html [Locations (14 May-15 June 1944: Ford (West Sussex))] |
   | C11113 (, ) | asserts_end | - | 1944-07-12 | 12 Jul 1944 No 144 Wing Disbanded (rafweb). The squadron transferred to the receiving wing on 14 July 1944. | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [B.3 15Jun]; R1724 https://www.historyofwar.org/air/units/RCAF/442_wwII.html [Locations (15 June-14 July 1944: B.3 St. Croix)] |
+
+### R20. CR2605: No. 313 (Czech) Squadron -> No. 134 (Czech) Wing RAF (organic)
+
+- **Subject / higher unit:** `CZ-SQN-313` / `UK-WG-134`
+- **Interval:** from 1944-06-06 (claim_date) to 1944-07-01 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
+- **Note:** No. 313 (Czech) Squadron was a squadron of No. 134 (Czech) Wing RAF on 6 June 1944 (Richards and Saunders, Appendix XI; wartimes.ca). The parent is closed on 1 July 1944 (rafweb). Added in the Normandy chunk 6c pass (branch normandy-raf-6c, 18 November 2026): old value none, new value this relation; reason: Scott approved recommendations K1-K13 (17 November 2026).
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C11207 (, ) | observed_during | - | - |  | R1621 https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-III/UK-RAF-III-XI.html [Nos. 310, 312, 313 / Spitfire, No. 134 Wing]; R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [313 (Czech) Squadron (Apuldram, B.10 28Jun)]; R1771 https://www.historyofwar.org/air/units/RAF/313_wwII.html [Locations (April-June 1944: Appledram)] |
+  | C11208 (, ) | observed_during | - | - |  | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [B.10 28Jun]; R1771 https://www.historyofwar.org/air/units/RAF/313_wwII.html [Locations (June 1944: B.10 Plumetot)] |
+  | C11209 (, ) | asserts_end | - | 1944-07-01 | transferred from 2nd TAF to ADGB, 1 July 1944 (rafweb No 134 Wing); later stations wait for chunk 6d | R1771 https://www.historyofwar.org/air/units/RAF/313_wwII.html [Locations (June-July 1944: Tangmere)] |
 

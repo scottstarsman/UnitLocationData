@@ -2819,7 +2819,8 @@ def scenario_178_b283():
     """FMS B-283 (R845): Luftflotte 3 (air) and Marinegruppe West (naval) at Paris on 6 June 1944; OB West at Verzy; the Brussels/Antwerp conflict G065."""
     s = 'scenario 178'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
-    expect(s + ': air/naval rows', [(claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8332', 'C8333')], [('GER-LFL-003A', 'PL0271', '0.5'), ('GER-MGW-000H', 'PL0271', '0.5')])
+    # C8332 raised from 0.5 to 0.7 in the Normandy chunk 7a follow-up (Holm, R1855, as a second family; Scott, 18 November 2026)
+    expect(s + ': air/naval rows', [(claims[c]['unit_id'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C8332', 'C8333')], [('GER-LFL-003A', 'PL0271', '0.7'), ('GER-MGW-000H', 'PL0271', '0.5')])
     expect(s + ': Verzy', (claims['C8336']['place_id'], claims['C8336']['date']), ('PL3768', '1944-08-18'))
     expect(s + ': G065', sorted((claims[c]['conflict_group_id'], claims[c]['claim_status']) for c in ('C2062', 'C8335')), [('G065', 'alternate'), ('G065', 'preferred')])
     expect(s + ': support only', ('R845' in claims['C8322']['reference_ids'], claims['C8322']['confidence']), (True, '0.5'))
@@ -6751,6 +6752,9 @@ def scenario_317_normandy_chunk7a():
     expect(s + ': JG 26 gets no chunk 7a claim or relation (chunk 7d)',
            ([r['claim_id'] for r in claims.get('GER-JG-026', []) if 11423 <= int(r['claim_id'][1:]) <= 11513], rel('GER-JG-026')),
            ([], []))
+    expect(s + ': C8284 and C8332 raised to 0.7 with Holm as the second family (Scott, 18 November 2026, open question 6)',
+           [(r['claim_id'], r['confidence'], r['reference_ids']) for u in ('GER-FLK-002C', 'GER-LFL-003A') for r in claims[u] if r['claim_id'] in ('C8284', 'C8332')],
+           [('C8284', '0.7', 'R842;R1856;R002'), ('C8332', '0.7', 'R845;R1855;R002')])
     expect_in(s + ': C8285 carries the count C18 review sentence',
               ' '.join(r['notes'] for r in claims['GER-FLK-002C'] if r['claim_id'] == 'C8285'), 'count C18 re-check')
 

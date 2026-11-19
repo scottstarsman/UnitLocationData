@@ -3698,7 +3698,7 @@
     "precision_km": 50,
     "country": "FR",
     "region": "Pays de la Loire",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -5318,7 +5318,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -8218,7 +8218,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Rheinland-Pfalz",
-    "claims_count": 18
+    "claims_count": 19
    }
   },
   {
@@ -9618,7 +9618,7 @@
     "precision_km": 5,
     "country": "DE",
     "region": "Baden-Württemberg",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -12198,7 +12198,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Alsace",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -14698,7 +14698,7 @@
     "precision_km": 5,
     "country": "BE",
     "region": "Brussels",
-    "claims_count": 6
+    "claims_count": 7
    }
   },
   {
@@ -16938,7 +16938,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -50778,7 +50778,7 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Zuid-Holland",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -77938,7 +77938,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -79558,7 +79558,7 @@
     "precision_km": 3,
     "country": "DE",
     "region": "Hessen",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -92039,6 +92039,86 @@
     "country": "BE",
     "region": "Flanders",
     "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.1615,
+     48.4343
+    ]
+   },
+   "properties": {
+    "place_id": "PL4621",
+    "name": "Étampes, Essonne",
+    "alt_names": "Étampes; Etampes",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Île-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0583,
+     50.6278
+    ]
+   },
+   "properties": {
+    "place_id": "PL4622",
+    "name": "Lille, Nord",
+    "alt_names": "Lille; Rijsel",
+    "kind": "point",
+    "precision_km": 5,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0869,
+     50.1119
+    ]
+   },
+   "properties": {
+    "place_id": "PL4623",
+    "name": "Havrincourt, Pas-de-Calais",
+    "alt_names": "Havrincourt",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5.25939,
+     52.11402
+    ]
+   },
+   "properties": {
+    "place_id": "PL4624",
+    "name": "Huis ter Heide (Zeist), Utrecht",
+    "alt_names": "Huis ter Heide",
+    "kind": "point",
+    "precision_km": 3,
+    "country": "NL",
+    "region": "Utrecht",
+    "claims_count": 1
    }
   }
  ]

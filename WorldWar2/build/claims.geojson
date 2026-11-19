@@ -3983,6 +3983,293 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.1615,
+     48.4343
+    ]
+   },
+   "properties": {
+    "claim_id": "C11823",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LGK-WFR",
+    "unit_name": "Luftgau-Kommando Westfrankreich (Air District Command Western France)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4621",
+    "location_name": "Étampes, Essonne",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Étampes",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1925;R004;R1855;R001",
+    "source_locator": "R1925: Stab \"6.40 - 9.44 | Etampes\" / formation line \"Formed 6.40 in Etampes, near Paris\" / R004: Luftflotte 3 table, Luftgaukommando Westfrankreich (6 June 1944, no units, no place) / R1855: Luftflotte 3, subordinate commands \"Luftgau-Kommando Westfrankreich, 6.40 - 9.44\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.3525,
+     50.8467
+    ]
+   },
+   "properties": {
+    "claim_id": "C11825",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LGK-BNF",
+    "unit_name": "Luftgau-Kommando Belgien-Nordfrankreich (Air District Command Belgium and Northern France)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0745",
+    "location_name": "Brussels, Belgium",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Brussels",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1926;R004;R1855;R002",
+    "source_locator": "R1926: Stab \"1.8.38 - 6.9.44 | Brüssels\" / formation line \"Formed 1.6.40 in Brüssels\" / R004: Luftflotte 3 table, Luftgaukommando Belgien/Nordfrankreich (6 June 1944, no place) / R1855: Luftflotte 3, subordinate commands \"Luftgau-Kommando Belgien-Nordfrankreich, 5.41 - 9.44\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7689,
+     48.0733
+    ]
+   },
+   "properties": {
+    "claim_id": "C11827",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKD-013D",
+    "unit_name": "13. Flak-Division (13th Anti-Aircraft Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0188",
+    "location_name": "Laval, Mayenne",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Laval",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1927;R1925;R001",
+    "source_locator": "R1927: \"In early 1943 moved to Laval (southeast of Rennes, attached to 7th Armee)\" / R1925: subordinated units \"13. Flak-Division in Caen/Vernon/Laval [2.42 - 8.44]\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0583,
+     50.6278
+    ]
+   },
+   "properties": {
+    "claim_id": "C11829",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKD-016D",
+    "unit_name": "16. Flak-Division (16th Anti-Aircraft Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4622",
+    "location_name": "Lille, Nord",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Lille",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1928;R1926;R1933;R1935;R001",
+    "source_locator": "R1928: \"Formed 1.3.42 in Lille\" / \"Organisation 1.3.44 (HQ Lille)\" / R1926: subordinated units \"16. Flak-Division in Lille [3.42 - 9.44]\" / R1933: 1.3.44 \"16. Flak-Division (o) at Lille\" / R1935: command post near Lille from 15 June 1942 until the move on 22 September 1944"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3522,
+     48.8567
+    ]
+   },
+   "properties": {
+    "claim_id": "C11831",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKB-001B",
+    "unit_name": "1. Flak-Brigade (1st Anti-Aircraft Brigade)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0271",
+    "location_name": "Paris",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Paris",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1929;R1925;R001",
+    "source_locator": "R1929: \"Reformed 4.44 in Paris (as the 1. Flak-Brigade), to control all Flak units in the Paris area\" / \"In 8.44 withdrew to Meux\" / R1925: subordinated units \"1. Flak-Brigade in Paris [6.40 - 12.40 / 4.44 - 9.44]\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.2346,
+     50.1758
+    ]
+   },
+   "properties": {
+    "claim_id": "C11833",
+    "conflict_group_id": "G266",
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKB-018B",
+    "unit_name": "18. Flak-Brigade (18th Anti-Aircraft Brigade)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL3912",
+    "location_name": "Cambrai, Nord",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Cambrai",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1930;R1926;R1933;R002",
+    "source_locator": "R1930: \"Moved to Cambrai in 11.43\" / R1926: subordinated units \"18. Flak-Brigade in Cambrai [11.43 - 8.44]\" / R1933: 1.3.44 \"18. Flak-Brigade (mot.) at Cambrai\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.0869,
+     50.1119
+    ]
+   },
+   "properties": {
+    "claim_id": "C11834",
+    "conflict_group_id": "G266",
+    "claim_status": "alternate",
+    "unit_id": "GER-FLAKB-018B",
+    "unit_name": "18. Flak-Brigade (18th Anti-Aircraft Brigade)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4623",
+    "location_name": "Havrincourt, Pas-de-Calais",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Havrincourt",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1936;R001",
+    "source_locator": "R1936: early in January 1944 the brigade staff moved north, came under 16. Flak-Division and set up its command post at Havrincourt"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.2268,
      51.2086
     ]
@@ -21565,6 +21852,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R139;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.3411,
+     50.1572
+    ]
+   },
+   "properties": {
+    "claim_id": "C11835",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKB-020B",
+    "unit_name": "20. Flak-Brigade (20th Anti-Aircraft Brigade)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Luftwaffe",
+    "date": "1944-06-30",
+    "place_id": "PL0859",
+    "location_name": "Doullens, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Doullens",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1931;R1926;R1932;R002",
+    "source_locator": "R1931: \"6.44 moved to Doullens (France, protection of the V-weapon sites)\" / \"Subordinated to Luftgau-Kommando VII, from 6.44 Stab/16. Flak-Division\" / R1926: subordinated units \"20. Flak-Brigade in Doullens/Rotterdam [6.44 - 9.44]\" / R1932: Flak-Regiment 20 \"1.7.44 under 20. Flak-Brigade (16. Flak-Division)\" (relation evidence, no place)"
    }
   },
   {
@@ -71223,6 +71551,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     7.7458,
+     48.5833
+    ]
+   },
+   "properties": {
+    "claim_id": "C11828",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKD-013D",
+    "unit_name": "13. Flak-Division (13th Anti-Aircraft Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-08-31",
+    "place_id": "PL0619",
+    "location_name": "Strasbourg, Bas-Rhin",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to a command post near Strasbourg",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1934;R001",
+    "source_locator": "R1934: section \"Straßburg 1944\": at the end of August 1944 the division had to occupy its new command post near Strasbourg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.7181,
      49.1949
     ]
@@ -79375,6 +79744,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R411;R001",
     "source_locator": "R411: p. 45-46"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     9.18,
+     48.7775
+    ]
+   },
+   "properties": {
+    "claim_id": "C11824",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LGK-WFR",
+    "unit_name": "Luftgau-Kommando Westfrankreich (Air District Command Western France)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-06",
+    "place_id": "PL0487",
+    "location_name": "Stuttgart, Baden-Württemberg",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Stuttgart (redesignated Luftgau-Kommando V)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1925;R001",
+    "source_locator": "R1925: \"6.9.44 moved to Stuttgart and was redesignated Luftgau-Kommando V.\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8.2417,
+     50.082
+    ]
+   },
+   "properties": {
+    "claim_id": "C11826",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-LGK-BNF",
+    "unit_name": "Luftgau-Kommando Belgien-Nordfrankreich (Air District Command Belgium and Northern France)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-06",
+    "place_id": "PL3993",
+    "location_name": "Wiesbaden, Hessen",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Wiesbaden (became Luftgau-Kommando XIV)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-06",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1926;R002",
+    "source_locator": "R1926: \"On 6.9.44 moved to Wiesbaden, and became Luftgau-Kommando XIV.\""
    }
   },
   {
@@ -99267,6 +99718,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     5.25939,
+     52.11402
+    ]
+   },
+   "properties": {
+    "claim_id": "C11830",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKD-016D",
+    "unit_name": "16. Flak-Division (16th Anti-Aircraft Division)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "division",
+    "branch": "Luftwaffe",
+    "date": "1944-09-22",
+    "place_id": "PL4624",
+    "location_name": "Huis ter Heide (Zeist), Utrecht",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Huis ter Heide",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-22",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1935;R002",
+    "source_locator": "R1935: the old command post at Lille had to be given up / from 22 September 1944 the staff moved to Huis ter Heide (Holland)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      1.6119,
      50.726
     ]
@@ -109100,6 +109592,88 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R344;R002",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6.6414,
+     49.7567
+    ]
+   },
+   "properties": {
+    "claim_id": "C11832",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKB-001B",
+    "unit_name": "1. Flak-Brigade (1st Anti-Aircraft Brigade)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Luftwaffe",
+    "date": "1944-09-30",
+    "place_id": "PL0417",
+    "location_name": "Trier, Rheinland-Pfalz",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Trier",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1929;R001",
+    "source_locator": "R1929: \"In 8.44 withdrew to Meux, 9.44 to Trier.\" / next station \"11.44 to Amersfoort\""
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.4778,
+     51.9244
+    ]
+   },
+   "properties": {
+    "claim_id": "C11836",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKB-020B",
+    "unit_name": "20. Flak-Brigade (20th Anti-Aircraft Brigade)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "brigade",
+    "branch": "Luftwaffe",
+    "date": "1944-09-30",
+    "place_id": "PL2554",
+    "location_name": "Rotterdam, Zuid-Holland",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Rotterdam",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1931;R1932;R002",
+    "source_locator": "R1931: \"9.44 in Rotterdam (as Stab/Flak-Brigade z.b.V. des Luftwaffenkommando West)\" / R1932: Flak-Regiment 20 \"1.9.44 under 20. Flak-Brigade (16. Flak-Division, Luftgau XIV)\" (relation evidence, no place)"
    }
   },
   {

@@ -6950,29 +6950,35 @@ def scenario_321_lw_ground_a():
            [('GER-LGK-BNF', 'PL3993'), ('GER-LGK-WFR', 'PL0487')])
 
 def scenario_322_lw_ground_b():
-    """Luftwaffe ground G-b: III. Flakkorps, Flak-Sturm-Regiment 1-4 and their Abteilungen (G3, G4, G6, G9)."""
+    """Luftwaffe ground G-b and its follow-up: III. Flakkorps, Flak-Sturm-Regiment 1-4 and their Abteilungen (G3, G4, G6, G9; follow-up Q3 and Q5, 19 November 2026)."""
     s = 'scenario 322 (luftwaffe ground G-b)'
-    rels = [r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1] if 2868 <= int(r['relation_id'][2:]) <= 2883]
-    links = [l for l in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relation_claims.csv'))[1] if 2868 <= int(l['relation_id'][2:]) <= 2883]
+    rels = [r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1] if 2868 <= int(r['relation_id'][2:]) <= 2885]
+    links = [l for l in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relation_claims.csv'))[1] if 2868 <= int(l['relation_id'][2:]) <= 2885]
     units = {r['unit_id']: r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'units.csv'))[1]}
     claims, byid = {}, {}
     for path in common.claim_files():
         for r in common.read_dicts(path)[1]:
             claims.setdefault(r['unit_id'], []).append(r)
             byid[r['claim_id']] = r
-    active = ('GER-FLAKK-003C', 'GER-FLAKSR-001', 'GER-FLAKA-266', 'GER-FLAKA-497', 'GER-FLAKA-020-1', 'GER-FLAKA-052-2', 'GER-FLAKA-064-2', 'GER-FLAKA-084', 'GER-FLAKA-053-1')
-    ph = ('GER-FLAKSR-002', 'GER-FLAKSR-003', 'GER-FLAKSR-004', 'GER-FLAKA-080', 'GER-FLAKA-022-2', 'GER-FLAKA-035-1', 'GER-FLAKA-141-1', 'GER-FLAKA-098')
-    expect(s + ': 9 active units with claims and 8 placeholders without, all domain ground',
+    active = ('GER-FLAKK-003C', 'GER-FLAKSR-001', 'GER-FLAKA-266', 'GER-FLAKA-497', 'GER-FLAKA-020-1', 'GER-FLAKA-052-2', 'GER-FLAKA-064-2', 'GER-FLAKA-084', 'GER-FLAKA-053-1', 'GER-FLAKA-022-2', 'GER-FLAKA-141-1')
+    ph = ('GER-FLAKSR-002', 'GER-FLAKSR-003', 'GER-FLAKSR-004', 'GER-FLAKA-080', 'GER-FLAKA-035-1', 'GER-FLAKA-098')
+    expect(s + ': 11 active units with claims and 6 placeholders without, all domain ground (II./22 and I./141 promoted in the follow-up)',
            (all(units[u]['record_status'] == 'active' and u in claims for u in active), all(units[u]['record_status'] == 'placeholder' and u not in claims for u in ph),
             sorted({units[u]['domain'] for u in active + ph})),
            (True, True, ['ground']))
     expect(s + ': Sturm regiment names keep the old staff number (G3)',
            [units['GER-FLAKSR-00%d' % i]['unit_name'] for i in (1, 2, 3, 4)],
            ['Flak-Sturm-Regiment 1 (Stab Flak-Regiment 431)', 'Flak-Sturm-Regiment 2 (Stab Flak-Regiment 653)', 'Flak-Sturm-Regiment 3 (Stab Flak-Regiment 37)', 'Flak-Sturm-Regiment 4 (Stab Flak-Regiment 79)'])
-    expect(s + ': claims C11837-C11849, confidence 0.3 or 0.5, Cochem is the corps exit',
-           (sorted(int(c[1:]) for c in byid if 11837 <= int(c[1:]) <= 11849) == list(range(11837, 11850)),
-            sorted({byid['C%d' % n]['confidence'] for n in range(11837, 11850)}), max(r['date'] for r in claims['GER-FLAKK-003C']), byid['C11840']['place_id']),
-           (True, ['0.3', '0.5'], '1944-09-30', 'PL4625'))
+    expect(s + ': claims C11837-C11851, all confidence 0.3 after the follow-up, Cochem is the corps exit',
+           (sorted(int(c[1:]) for c in byid if 11837 <= int(c[1:]) <= 11851) == list(range(11837, 11852)),
+            sorted({byid['C%d' % n]['confidence'] for n in range(11837, 11852)}), max(r['date'] for r in claims['GER-FLAKK-003C']), byid['C11840']['place_id']),
+           (True, ['0.3'], '1944-09-30', 'PL4625'))
+    expect(s + ': Q5, 266 and 497 at Bayeux on 24 June 1944 are the Bayeux area (0.3, 10 km, operational_area) with the old value annotated',
+           [(byid[c]['place_id'], byid[c]['confidence'], byid[c]['precision_km'], byid[c]['location_basis'], 'confidence old value 0.5, new value 0.3' in byid[c]['notes']) for c in ('C11842', 'C11843')],
+           [('PL0033', '0.3', '10', 'operational_area', True)] * 2)
+    expect(s + ': Q3, II./22 at Arras and I./141 at Amiens in June 1944 (Holm regiment pages R1950, R1951)',
+           [(byid[c]['unit_id'], byid[c]['date'], byid[c]['place_id'], byid[c]['reference_ids'].split(';')[0]) for c in ('C11850', 'C11851')],
+           [('GER-FLAKA-022-2', '1944-06-01', 'PL3916', 'R1950'), ('GER-FLAKA-141-1', '1944-06-01', 'PL0743', 'R1951')])
     expect(s + ': corps assigned to Luftflotte 3, supporting Panzer Group West then Fifth Panzer Army (G6)',
            sorted((r['higher_unit_id'], r['relationship'], r['valid_from'], r['valid_to']) for r in rels if r['subject_unit_id'] == 'GER-FLAKK-003C'),
            [('GER-LFL-003A', 'assigned', '1944-06-01', ''), ('GER-PZA-005A', 'supporting', '1944-08-05', '1944-08-31'), ('GER-PZG-WESTA', 'supporting', '1944-06-09', '1944-08-04')])
@@ -6984,8 +6990,8 @@ def scenario_322_lw_ground_b():
     expect(s + ': battalions under their Sturm regiment; no Flak relation to an army corps',
            (sorted((r['subject_unit_id'], r['higher_unit_id'], r['relationship']) for r in rels if r['subject_unit_id'].startswith('GER-FLAKA-')),
             [r for r in rels if r['higher_unit_id'].startswith(('GER-COR-', 'GER-PZ-', 'GER-SSPZ-'))]),
-           ([('GER-FLAKA-020-1', 'GER-FLAKSR-002', 'attached'), ('GER-FLAKA-052-2', 'GER-FLAKSR-002', 'attached'), ('GER-FLAKA-053-1', 'GER-FLAKSR-004', 'attached'),
-             ('GER-FLAKA-064-2', 'GER-FLAKSR-003', 'unspecified_subordination'), ('GER-FLAKA-084', 'GER-FLAKSR-003', 'attached'),
+           ([('GER-FLAKA-020-1', 'GER-FLAKSR-002', 'attached'), ('GER-FLAKA-022-2', 'GER-FLAKSR-003', 'attached'), ('GER-FLAKA-052-2', 'GER-FLAKSR-002', 'attached'), ('GER-FLAKA-053-1', 'GER-FLAKSR-004', 'attached'),
+             ('GER-FLAKA-064-2', 'GER-FLAKSR-003', 'unspecified_subordination'), ('GER-FLAKA-084', 'GER-FLAKSR-003', 'attached'), ('GER-FLAKA-141-1', 'GER-FLAKSR-004', 'attached'),
              ('GER-FLAKA-266', 'GER-FLAKSR-001', 'organic'), ('GER-FLAKA-497', 'GER-FLAKSR-001', 'organic')], []))
 
 def main():

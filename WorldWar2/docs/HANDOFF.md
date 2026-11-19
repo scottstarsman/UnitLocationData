@@ -260,6 +260,8 @@ Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits
 
 24. **Where private source reading notes are stored (Scott, 14 November 2026).** Private source reading notes are stored only in the Drive folder `WWII Unit Locations/source notes` (folder id `1PIim4rMY2dEILwr-_XTC5jZzeGhrS5ee`), one file per source, named `<source>_notes.md` in the uppercase canonical form (for example `FMS_B-084_notes.md`, not `fms_b084_notes.md`). They are never committed to the repository (rule 16). Before creating a notes file, look for an existing file for the source in that folder; if two spellings exist, merge them into the canonical one without losing a line.
 
+25. **One complete note-taking pass before data entry (Scott, 18 November 2026).** Before entering data from any source, do one note-taking pass that records every fact in what is read, including facts not usable yet (strengths, types, ground units, other dates), each tagged entered now / deferred (named task) / out of scope, so no source is read twice. For large sites, open only the pages needed but take complete notes on every page opened, one notes file per page in a per-source folder with an index (Scott, 18 November 2026).
+
 ---
 
 ## 4. Architecture, data model and conventions

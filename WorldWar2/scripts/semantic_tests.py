@@ -6976,6 +6976,9 @@ def scenario_322_lw_ground_b():
     expect(s + ': Q5, 266 and 497 at Bayeux on 24 June 1944 are the Bayeux area (0.3, 10 km, operational_area) with the old value annotated',
            [(byid[c]['place_id'], byid[c]['confidence'], byid[c]['precision_km'], byid[c]['location_basis'], 'confidence old value 0.5, new value 0.3' in byid[c]['notes']) for c in ('C11842', 'C11843')],
            [('PL0033', '0.3', '10', 'operational_area', True)] * 2)
+    expect(s + ': Flak-Sturm-Regiment 1 at Bayeux on 24 June 1944 at 10 km like its battalions, still inferred, old value annotated',
+           (byid['C11841']['place_id'], byid['C11841']['confidence'], byid['C11841']['precision_km'], byid['C11841']['location_basis'], 'precision_km old value 5, new value 10' in byid['C11841']['notes']),
+           ('PL0033', '0.3', '10', 'inferred', True))
     expect(s + ': Q3, II./22 at Arras and I./141 at Amiens in June 1944 (Holm regiment pages R1950, R1951)',
            [(byid[c]['unit_id'], byid[c]['date'], byid[c]['place_id'], byid[c]['reference_ids'].split(';')[0]) for c in ('C11850', 'C11851')],
            [('GER-FLAKA-022-2', '1944-06-01', 'PL3916', 'R1950'), ('GER-FLAKA-141-1', '1944-06-01', 'PL0743', 'R1951')])

@@ -4598,6 +4598,211 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.17807,
+     49.38917
+    ]
+   },
+   "properties": {
+    "claim_id": "C11852",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKR-155",
+    "unit_name": "Flak-Regiment 155 (W) (V-1 regiment)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4626",
+    "location_name": "Merlemont (Warluis), Oise",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "regiment staff at Merlemont, preparing the V-1 offensive",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R1954;R1955;R002",
+    "source_locator": "R1952: arrived at Merlemont 3 December 1943 / next move 9 June 1944 to Saleux / R1954: command post at the château of Merlemont, 8 km south-east of Beauvais, at first / R1955: the staff's old quarters near Beauvais before the move to Saleux"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.12081,
+     50.70693
+    ]
+   },
+   "properties": {
+    "claim_id": "C11858",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-1",
+    "unit_name": "I./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4628",
+    "location_name": "Lumbres, Pas-de-Calais",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V-1 battalion at Lumbres",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R782",
+    "source_locator": "R1952: I./Flak-Regiment 155 (W) December 1943 to 3 September 1944 at Lumbres"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C11859",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-2",
+    "unit_name": "II./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V-1 battalion at Amiens",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R002",
+    "source_locator": "R1952: II./Flak-Regiment 155 (W) December 1943 to 18 July 1944 at Amiens"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.61547,
+     49.65371
+    ]
+   },
+   "properties": {
+    "claim_id": "C11860",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-3",
+    "unit_name": "III./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4629",
+    "location_name": "Gaillefontaine, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V-1 battalion at Gaillefontaine",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R782",
+    "source_locator": "R1952: III./Flak-Regiment 155 (W) December 1943 to 14 August 1944 at Gaillefontaine"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.35695,
+     49.52002
+    ]
+   },
+   "properties": {
+    "claim_id": "C11864",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-4",
+    "unit_name": "IV./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL4630",
+    "location_name": "Boissay, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "V-1 battalion at Boissay",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R782",
+    "source_locator": "R1952: IV./Flak-Regiment 155 (W) December 1943 to July 1944 at Boissay (France), first meant for the Cherbourg area"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.2268,
      51.2086
     ]
@@ -9149,6 +9354,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.239,
+     49.8605
+    ]
+   },
+   "properties": {
+    "claim_id": "C11853",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKR-155",
+    "unit_name": "Flak-Regiment 155 (W) (V-1 regiment)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-09",
+    "place_id": "PL3377",
+    "location_name": "Saleux, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "regiment command post moved to Saleux for the opening of the V-1 offensive",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-09",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R1954;R1955;R002",
+    "source_locator": "R1952: 9 June 1944 to Saleux / R1954: on 10 June Wachtel joined his command post at Saleux / R1955: the staff had moved to Saleux a day or two before 12 June"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -1.0293,
      49.1917
     ]
@@ -10741,6 +10987,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R111;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.239,
+     49.8605
+    ]
+   },
+   "properties": {
+    "claim_id": "C11854",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKR-155",
+    "unit_name": "Flak-Regiment 155 (W) (V-1 regiment)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-12",
+    "place_id": "PL3377",
+    "location_name": "Saleux, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.7,
+    "event_type": "hq_observation",
+    "current_activity": "regiment command post at Saleux on the eve of the first V-1 launches (13 June 1944)",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-12",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1955;R1952;R1954;R002",
+    "source_locator": "R1955: in the afternoon of 12 June Heinemann went from his own headquarters to Wachtel's command post at Saleux near Amiens / R1952: at Saleux from 9 June to 19 August 1944 / R1954: command post at Saleux from 10 June to 23 August 1944"
    }
   },
   {
@@ -31494,6 +31781,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.094,
+     49.4405
+    ]
+   },
+   "properties": {
+    "claim_id": "C11862",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-2",
+    "unit_name": "II./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-07-18",
+    "place_id": "PL0676",
+    "location_name": "Rouen, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "V-1 battalion moved from Amiens to the Rouen area",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R002",
+    "source_locator": "R1952: 18 July 1944 to the Rouen area"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.2972,
      49.2041
     ]
@@ -34398,6 +34726,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R892;R002",
     "source_locator": "R892: paras 190, 202"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.35695,
+     49.52002
+    ]
+   },
+   "properties": {
+    "claim_id": "C11865",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-4",
+    "unit_name": "IV./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-07-21",
+    "place_id": "PL4630",
+    "location_name": "Boissay, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "redesignation",
+    "current_activity": "battalion renamed II./Flak-Regiment 255 (W) at Boissay; the record ends here (G8)",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-21",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R1953;R782",
+    "source_locator": "R1952: 21 July 1944 renamed II./Flak-Regiment 255 / R1953: II./255 set up 21 July 1944 at Boissay from IV./Flak-Regiment 155 (W)"
    }
   },
   {
@@ -52773,6 +53142,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     1.61547,
+     49.65371
+    ]
+   },
+   "properties": {
+    "claim_id": "C11863",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-3",
+    "unit_name": "III./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-08-14",
+    "place_id": "PL4629",
+    "location_name": "Gaillefontaine, Seine-Maritime",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V-1 battalion at Gaillefontaine on the last day of Holm's interval",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-14",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R1954;R782",
+    "source_locator": "R1952: III./155 at Gaillefontaine to 14 August 1944 / R1954: after the withdrawal order of 10 August the III. and IV. Abteilung soon stopped firing"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.1725,
      49.0046
     ]
@@ -59162,6 +59572,88 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R404;R002",
     "source_locator": "R404: p. 550, 540"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.17456,
+     50.69421
+    ]
+   },
+   "properties": {
+    "claim_id": "C11855",
+    "conflict_group_id": "G267",
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKR-155",
+    "unit_name": "Flak-Regiment 155 (W) (V-1 regiment)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-08-19",
+    "place_id": "PL4627",
+    "location_name": "Roubaix, Nord",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "hq_move",
+    "current_activity": "regiment command post moved back to Roubaix as the withdrawal began",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R782",
+    "source_locator": "R1952: 19 August 1944 to Roubaix"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.239,
+     49.8605
+    ]
+   },
+   "properties": {
+    "claim_id": "C11856",
+    "conflict_group_id": "G267",
+    "claim_status": "alternate",
+    "unit_id": "GER-FLAKR-155",
+    "unit_name": "Flak-Regiment 155 (W) (V-1 regiment)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-08-19",
+    "place_id": "PL3377",
+    "location_name": "Saleux, Somme",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "regiment command post still at Saleux (alternate to Roubaix)",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1954;R002",
+    "source_locator": "R1954: on 23 August Wachtel left his command post at Saleux"
    }
   },
   {
@@ -72166,6 +72658,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     4.5203,
+     51.3243
+    ]
+   },
+   "properties": {
+    "claim_id": "C11857",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKR-155",
+    "unit_name": "Flak-Regiment 155 (W) (V-1 regiment)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-08-31",
+    "place_id": "PL4080",
+    "location_name": "Maria-ter-Heide (Brasschaat), Antwerp",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.5,
+    "event_type": "withdrawal",
+    "current_activity": "regiment staff withdrawn to Maria-ter-Heide near Antwerp",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-31",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R1955;R782",
+    "source_locator": "R1952: 31 August 1944 to Maria-ter-Heide / R1955: after the last firing early on 1 September the regiment went to a camp near Antwerp, then the Deventer area"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      0.7181,
      49.1949
     ]
@@ -75193,6 +75726,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R608;R668;R001",
     "source_locator": "R608: p. 127; R668: p. 313 n."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.12081,
+     50.70693
+    ]
+   },
+   "properties": {
+    "claim_id": "C11861",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-155-1",
+    "unit_name": "I./Flak-Regiment 155 (W) (V-1 battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-09-03",
+    "place_id": "PL4628",
+    "location_name": "Lumbres, Pas-de-Calais",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "hq_observation",
+    "current_activity": "V-1 battalion at Lumbres on the last day of Holm's interval, after the last firing from France",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-03",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1952;R1954;R782",
+    "source_locator": "R1952: I./155 at Lumbres to 3 September 1944 / R1954: the last V-1s from France were fired from the Saint-Omer sector on the morning of 1 September 1944"
    }
   },
   {

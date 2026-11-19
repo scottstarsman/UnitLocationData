@@ -13338,7 +13338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Upper Normandy",
-    "claims_count": 3
+    "claims_count": 4
    }
   },
   {
@@ -14658,7 +14658,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Somme",
-    "claims_count": 9
+    "claims_count": 10
    }
   },
   {
@@ -67238,7 +67238,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 2
+    "claims_count": 5
    }
   },
   {
@@ -81278,7 +81278,7 @@
     "precision_km": 3,
     "country": "BE",
     "region": "Antwerp",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -92139,6 +92139,106 @@
     "country": "DE",
     "region": "Rhineland-Palatinate",
     "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.17807,
+     49.38917
+    ]
+   },
+   "properties": {
+    "place_id": "PL4626",
+    "name": "Merlemont (Warluis), Oise",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.17456,
+     50.69421
+    ]
+   },
+   "properties": {
+    "place_id": "PL4627",
+    "name": "Roubaix, Nord",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.12081,
+     50.70693
+    ]
+   },
+   "properties": {
+    "place_id": "PL4628",
+    "name": "Lumbres, Pas-de-Calais",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Hauts-de-France",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.61547,
+     49.65371
+    ]
+   },
+   "properties": {
+    "place_id": "PL4629",
+    "name": "Gaillefontaine, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.35695,
+     49.52002
+    ]
+   },
+   "properties": {
+    "place_id": "PL4630",
+    "name": "Boissay, Seine-Maritime",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandie",
+    "claims_count": 2
    }
   }
  ]

@@ -4516,6 +4516,88 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.7772,
+     50.291
+    ]
+   },
+   "properties": {
+    "claim_id": "C11850",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-022-2",
+    "unit_name": "II./Flak-Regiment 22 (mixed Flak battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL3916",
+    "location_name": "Arras, Pas-de-Calais",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Arras; joining Flak-Sturm-Regiment 3 as its second battalion",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1950;R1940;R002",
+    "source_locator": "R1950: June 1944 at Arras, joining Flak-Sturm-Regiment 3 as its second battalion / R1940: Flak-Sturm-Regiment 3: set up with II./Flak-Regiment 22, II./Flak-Regiment 64 and light 84 (relation evidence, no place)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C11851",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-141-1",
+    "unit_name": "I./Flak-Regiment 141 (Flak-Abteilung 141)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Amiens; joining Flak-Sturm-Regiment 4",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1951;R1941;R002",
+    "source_locator": "R1951: June 1944 at Amiens, joining Flak-Sturm-Regiment 4 / R1941: Flak-Sturm-Regiment 4: set up with mixed I./141, I./35, I./53 and light 98 (relation evidence, no place)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.2268,
      51.2086
     ]
@@ -17613,8 +17695,8 @@
     "place_id": "PL0033",
     "location_name": "Bayeux",
     "location_represents": "main_body",
-    "precision_km": 5,
-    "confidence": 0.5,
+    "precision_km": 10,
+    "confidence": 0.3,
     "event_type": "redesignation",
     "current_activity": "renamed I./Flak-Sturm-Regiment 1 at Bayeux",
     "operation_id": "OP-NEPTUNE",
@@ -17625,7 +17707,7 @@
     "sub_operation_name": "Neptune",
     "strength_status": "unknown",
     "location_date": "1944-06-24",
-    "location_basis": "documented_on_date",
+    "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
     "reference_ids": "R1947;R1938;R001",
     "source_locator": "R1947: renamed I./Flak-Sturm-Regiment 1 on 24 June 1944 / R1938: I./Flak-Sturm-Regiment 1 formed 24 June 1944 at Bayeux with batteries 1-6"
@@ -17654,8 +17736,8 @@
     "place_id": "PL0033",
     "location_name": "Bayeux",
     "location_represents": "main_body",
-    "precision_km": 5,
-    "confidence": 0.5,
+    "precision_km": 10,
+    "confidence": 0.3,
     "event_type": "redesignation",
     "current_activity": "renamed II./Flak-Sturm-Regiment 1 at Bayeux",
     "operation_id": "OP-NEPTUNE",
@@ -17666,7 +17748,7 @@
     "sub_operation_name": "Neptune",
     "strength_status": "unknown",
     "location_date": "1944-06-24",
-    "location_basis": "documented_on_date",
+    "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
     "reference_ids": "R1948;R1938;R001",
     "source_locator": "R1948: renamed II./Flak-Sturm-Regiment 1 on 24 June 1944 / R1938: II./Flak-Sturm-Regiment 1 formed 24 June 1944 at Bayeux with batteries 7-12"

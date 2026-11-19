@@ -6814,6 +6814,7 @@ def scenario_318_normandy_chunk7b():
 def scenario_319_normandy_chunk7c():
     """Normandy chunk 7c: II. Jagdkorps units of 6 June 1944, NJG 2, JG 26 pilot fixes and mission MSN0098 (L1-L15, C1, C2, C5, C18)."""
     s = 'scenario 319 (normandy chunk 7c)'
+    rel_links = common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relation_claims.csv'))[1]
     rels = {r['relation_id']: r for r in common.read_dicts(os.path.join(common.ROOT, 'data', 'command_relations.csv'))[1]}
     def rel(sub, lo=2801, hi=2828):
         return sorted((r['higher_unit_id'], r['relationship'], r['valid_from'], r['valid_to']) for r in rels.values()
@@ -6858,6 +6859,9 @@ def scenario_319_normandy_chunk7c():
     expect(s + ': G259 (Scott, 19 November 2026): II./JG 2 on 6 June at Cologne preferred, Creil alternate, both 0.3',
            sorted((r['claim_status'], r['place_id'], r['confidence']) for r in claims['GER-JGGR-002-2'] if r['date'] == '1944-06-06'),
            [('alternate', 'PL4558', '0.3'), ('preferred', 'PL0591', '0.3')])
+    expect(s + ': CR2803 and CR2806 cite both 6 June 1944 rows of G259 (Creil C11650, Cologne C11651) as evidence (Scott, 19 November 2026)',
+           [sorted(l['claim_id'] for l in rel_links if l['relation_id'] == rid and l['claim_id'] in ('C11650', 'C11651')) for rid in ('CR2803', 'CR2806')],
+           [['C11650', 'C11651'], ['C11650', 'C11651']])
     expect(s + ': no Saint-Piat claim for II. Jagdkorps (C18)', [r['claim_id'] for r in claims['GER-JGK-002C'] if r['place_id'] == 'PL3748'], [])
 
 

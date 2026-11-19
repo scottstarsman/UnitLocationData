@@ -6855,6 +6855,9 @@ def scenario_319_normandy_chunk7c():
            (True, [('MSN0098', 'GER-JG-026', '1944-06-06', 'strafing', 'PL0344', 'AT059', '2')]))
     expect(s + ': II./JG 2 at Creil on 14 June at 0.7 (Wikipedia and Holm)',
            [(r['place_id'], r['confidence']) for r in claims['GER-JGGR-002-2'] if r['date'] == '1944-06-14'], [('PL4558', '0.7')])
+    expect(s + ': G259 (Scott, 19 November 2026): II./JG 2 on 6 June at Cologne preferred, Creil alternate, both 0.3',
+           sorted((r['claim_status'], r['place_id'], r['confidence']) for r in claims['GER-JGGR-002-2'] if r['date'] == '1944-06-06'),
+           [('alternate', 'PL4558', '0.3'), ('preferred', 'PL0591', '0.3')])
     expect(s + ': no Saint-Piat claim for II. Jagdkorps (C18)', [r['claim_id'] for r in claims['GER-JGK-002C'] if r['place_id'] == 'PL3748'], [])
 
 

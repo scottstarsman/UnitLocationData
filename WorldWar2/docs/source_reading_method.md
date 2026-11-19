@@ -29,6 +29,12 @@ For each fact: date or date range, unit, place, what happened, parent formation,
 - **Uncertainty:** vague dating, contradictions with other sources, and anything unreadable in the scan.
 - **Every front and period (Scott, 9 November 2026).** "As you review a source, keep in mind that we may use it for more than this period of time (if applicable). Keep notes and data even if it applies to other fronts and time periods. This is a general rule that applies to every resource analysis." Capture dated facts for the Eastern Front, Italy, the Balkans, Scandinavia, the home areas and the years before June 1944 as fully as Western Front facts, and mark them as other front or period in the notes.
 
+## One note-taking pass before data entry (Scott, 18 November 2026)
+Before entering data from any source, do one note-taking pass that records every fact in what is read, including facts not usable yet (strengths, types, ground units, other dates), each tagged entered now / deferred (named task) / out of scope, so no source is read twice. For large sites, open only the pages needed but take complete notes on every page opened, one notes file per page in a per-source folder with an index (Scott, 18 November 2026).
+- **Tags:** every fact line carries one tag: `entered now` (the task that enters it), `deferred (<named task>)` (for example `deferred (chunk 9 strengths)`), or `out of scope` (with the reason). Strengths, aircraft or equipment types, ground units and dates outside the current window are recorded and tagged like any other fact.
+- **Large sites** (for example ww2.dk, a site with one page per unit): open only the pages the task needs, but take complete notes on every page opened. Keep one notes file per page in a folder per source (`/workspace/ww2-locations/sources/<source>/<page>_notes.md`, for example `sources/ww2dk/kampf_kg26_notes.md`) with an index file (`<SOURCE>_index_notes.md`, for example `sources/ww2dk/WW2DK_index_notes.md`) listing each page, its URL, the date read and the tasks that used it. A page opened later for another task gets its own complete notes file and index line at that time.
+- The notes pass comes first; data entry then works from the notes, not from a second reading of the source.
+
 ## Notes file layout
 1. Header: source details, method, pass history, coverage and limits (which nationalities and dates the source is thin on).
 2. Entries by unit, grouped by nationality.

@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 18 November 2026 — Roadmap 410: unit symbol codes (branch `roadmap-sidc`)
+
+- **Docs:** roadmap item 410 added (derive SIDC military symbol codes for units; Scott asked for it soon, not yet). No data, schema or script change.
+
 ## 18 November 2026 — Normandy chunk 7a follow-up: Scott's decisions (branch `normandy-luftwaffe-7a`)
 
 - **Decisions:** Scott accepted all twelve chunk 7a recommendations (18 November 2026): (1) C8285 Saint-Piat stays at 0.3 with its review note; (2) Holm's "Montfris" is Montfrin; (3) KG 100 at Toulouse-Francazal, Istres a note; (4) Jafü Bretagne at Rennes, not Brest; (5) KG 40 stays under X. Fliegerkorps; (6) C8284 and C8332 raised to 0.7 with Holm as the second family; (7) Wekusta 51 at Buc, deZeng's other bases a note; (8) no change for III./SG 4 at Clermont-Ferrand; (9) Holm's "Carne" left out; (10) I./ZG 1 at Welzow from 12 July; (11) no 2./NAGr 13 unit; (12) the undated Wikipedia Luftflotte 3 order of battle is used for notes only.

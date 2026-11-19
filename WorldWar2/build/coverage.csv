@@ -77,6 +77,7 @@ GER-COR-EMS,Korps Ems (General Rasp),Germany,corps,Army,active,,true,1,1945-04-1
 GER-COR-FELDT,Korps Feldt (Generalkommando Feldt),Germany,corps,Army,active,1944-09-09,true,10,1944-09-18,1944-12-19,
 GER-COR-KVOSG,"Corps Command Vosges (Korpskommando Vosges, provisional corps headquarters)",Germany,corps,Army,active,1944-11-22,true,1,1944-11-22,1944-11-22,
 GER-FJ-002C,II Fallschirmjäger Corps,Germany,corps,Luftwaffe,active,1944-01,true,87,1944-05-05,1945-05-05,GER-ARMY-007A
+GER-FLAKK-003C,III. Flakkorps (3rd Flak Corps),Germany,corps,Luftwaffe,active,,true,4,1944-06-01,1944-09-30,GER-LFL-003A
 GER-LFC-004C,IV Luftwaffe Field Corps,Germany,corps,Luftwaffe,active,,true,21,1944-09-15,1945-01-23,
 GER-LGK-BNF,Luftgau-Kommando Belgien-Nordfrankreich (Air District Command Belgium and Northern France),Germany,corps,Luftwaffe,active,,true,2,1944-06-01,1944-09-06,
 GER-LGK-WFR,Luftgau-Kommando Westfrankreich (Air District Command Western France),Germany,corps,Luftwaffe,active,,true,2,1944-06-01,1944-09-06,
@@ -266,6 +267,10 @@ GER-FJR-013,Fallschirmjäger-Regiment 13 (5th Fallschirmjäger Division),Germany
 GER-FJR-014,Fallschirmjäger-Regiment 14 (5th Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,4,1944-12-16,1945-01-08,
 GER-FJR-015,Fallschirmjäger-Regiment 15 (5th Fallschirmjäger Division),Germany,regiment/battle_group,Luftwaffe,active,,true,2,1944-12-17,1944-12-28,
 GER-FJR-LEHR,Fallschirm-Lehr-Regiment,Germany,regiment/battle_group,Luftwaffe,active,,true,3,1944-08-26,1944-09-02,
+GER-FLAKSR-001,Flak-Sturm-Regiment 1 (Stab Flak-Regiment 431),Germany,regiment/battle_group,Luftwaffe,active,,true,1,1944-06-24,1944-06-24,
+GER-FLAKSR-002,Flak-Sturm-Regiment 2 (Stab Flak-Regiment 653),Germany,regiment/battle_group,Luftwaffe,placeholder,,false,0,,,GER-FLAKK-003C
+GER-FLAKSR-003,Flak-Sturm-Regiment 3 (Stab Flak-Regiment 37),Germany,regiment/battle_group,Luftwaffe,placeholder,,false,0,,,GER-FLAKK-003C
+GER-FLAKSR-004,Flak-Sturm-Regiment 4 (Stab Flak-Regiment 79),Germany,regiment/battle_group,Luftwaffe,placeholder,,false,0,,,GER-FLAKK-003C
 GER-GR-078,Grenadier-Regiment 78 (26th Volksgrenadier Division),Germany,regiment/battle_group,Army,active,,true,1,1944-12-17,1944-12-17,
 GER-KG-002PZ,Kampfgruppe (tank battalion) 2nd Panzer Division,Germany,regiment/battle_group,Armoured,active,,true,1,1944-06-27,1944-06-27,
 GER-KG-265,Kampfgruppe 265th Infantry Division (name of commander not given),Germany,regiment/battle_group,Army,active,,true,2,1944-06-07,1944-07-18,
@@ -299,6 +304,18 @@ GER-FJNA-003,Fallschirm-Nachrichten-Abteilung 3 (3rd Fallschirmjäger Division),
 GER-FJPI-003,Fallschirm-Pionier-Bataillon 3 (3rd Fallschirmjäger Division),Germany,battalion,Luftwaffe,active,,true,1,1944-05-15,1944-05-15,
 GER-FJPI-005,Fallschirm-Pionier-Bataillon 5 (5th Fallschirmjäger Division),Germany,battalion,Luftwaffe,active,,true,3,1944-12-16,1944-12-26,
 GER-FJPZJ-003,Fallschirm-Panzerjäger-Abteilung 3 (3rd Fallschirmjäger Division),Germany,battalion,Luftwaffe,active,,true,1,1944-05-15,1944-05-15,
+GER-FLAKA-020-1,I./Flak-Regiment 20 (mixed Flak battalion),Germany,battalion,Luftwaffe,active,,true,1,1944-06-01,1944-06-01,GER-FLAKSR-002
+GER-FLAKA-022-2,II./Flak-Regiment 22 (Flak battalion),Germany,battalion,Luftwaffe,placeholder,,false,0,,,GER-FLAKSR-003
+GER-FLAKA-035-1,I./Flak-Regiment 35 (mixed Flak battalion),Germany,battalion,Luftwaffe,placeholder,,false,0,,,GER-FLAKSR-004
+GER-FLAKA-052-2,II./Flak-Regiment 52 (mixed Flak battalion),Germany,battalion,Luftwaffe,active,,true,1,1944-06-01,1944-06-01,GER-FLAKSR-002
+GER-FLAKA-053-1,I./Flak-Regiment 53 (mixed Flak battalion),Germany,battalion,Luftwaffe,active,,true,1,1944-06-01,1944-06-01,GER-FLAKSR-004
+GER-FLAKA-064-2,II./Flak-Regiment 64 (mixed Flak battalion),Germany,battalion,Luftwaffe,active,,true,2,1944-06-01,1944-07-01,GER-FLAKSR-003
+GER-FLAKA-080,leichte Flak-Abteilung 80 (light Flak battalion 80),Germany,battalion,Luftwaffe,placeholder,,false,0,,,GER-FLAKSR-002
+GER-FLAKA-084,leichte Flak-Abteilung 84 (light Flak battalion 84),Germany,battalion,Luftwaffe,active,,true,1,1944-06-01,1944-06-01,GER-FLAKSR-003
+GER-FLAKA-098,leichte Flak-Abteilung 98 (light Flak battalion 98),Germany,battalion,Luftwaffe,placeholder,,false,0,,,GER-FLAKSR-004
+GER-FLAKA-141-1,I./Flak-Regiment 141 (Flak-Abteilung 141),Germany,battalion,Luftwaffe,placeholder,,false,0,,,GER-FLAKSR-004
+GER-FLAKA-266,gemischte Flak-Abteilung 266 (I./Flak-Sturm-Regiment 1 from 24 June 1944),Germany,battalion,Luftwaffe,active,,true,1,1944-06-24,1944-06-24,
+GER-FLAKA-497,gemischte Flak-Abteilung 497 (II./Flak-Sturm-Regiment 1 from 24 June 1944),Germany,battalion,Luftwaffe,active,,true,1,1944-06-24,1944-06-24,
 GER-MAA-260,Marine-Artillerie-Abteilung 260 (260th Naval Coastal Artillery Battalion),Germany,battalion,Navy,active,,true,2,1944-06-06,1944-06-06,
 GER-SSHPZ-101,SS Heavy Panzer Battalion 101,Germany,battalion,Waffen-SS,active,,true,2,1944-06-13,1944-07-15,
 GER-FEST-DUNKIRK,Fortress Dunkirk (Festung Dünkirchen) garrison,Germany,other,Army,active,,true,7,1944-09-09,1945-05-09,

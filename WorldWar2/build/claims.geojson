@@ -4270,6 +4270,252 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3522,
+     48.8567
+    ]
+   },
+   "properties": {
+    "claim_id": "C11837",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0271",
+    "location_name": "Paris",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "headquarters at Paris",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1937;R1933;R001",
+    "source_locator": "R1937: infobox, headquarters Paris (February to June 1944) / created 22 February 1944 in Paris (DRZW vol. 7, p. 290) / R1933: set up 22 February 1944 at Paris from the staff of 11. Flak-Division"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C11844",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-020-1",
+    "unit_name": "I./Flak-Regiment 20 (mixed Flak battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Amiens; joining Flak-Sturm-Regiment 2 as its first battalion",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1932;R002",
+    "source_locator": "R1932: June 1944 at Amiens, joining Flak-Sturm-Regiment 2 as its first battalion"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C11845",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-052-2",
+    "unit_name": "II./Flak-Regiment 52 (mixed Flak battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Amiens; joining Flak-Sturm-Regiment 2 as its second battalion",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1944;R002",
+    "source_locator": "R1944: June 1944 at Amiens, joining Flak-Sturm-Regiment 2 as its second battalion"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C11846",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-064-2",
+    "unit_name": "II./Flak-Regiment 64 (mixed Flak battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Amiens; under Flak-Sturm-Regiment 3",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1946;R002",
+    "source_locator": "R1946: June 1944 at Amiens, under Flak-Sturm-Regiment 3"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.7772,
+     50.291
+    ]
+   },
+   "properties": {
+    "claim_id": "C11847",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-084",
+    "unit_name": "leichte Flak-Abteilung 84 (light Flak battalion 84)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL3916",
+    "location_name": "Arras, Pas-de-Calais",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Arras; joining Flak-Sturm-Regiment 3 as its third battalion",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1949;R002",
+    "source_locator": "R1949: June 1944 at Arras, joining Flak-Sturm-Regiment 3 as its third battalion"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.2957,
+     49.8942
+    ]
+   },
+   "properties": {
+    "claim_id": "C11848",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-053-1",
+    "unit_name": "I./Flak-Regiment 53 (mixed Flak battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-01",
+    "place_id": "PL0743",
+    "location_name": "Amiens, Somme",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "battalion at Amiens; joining Flak-Sturm-Regiment 4",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1945;R002",
+    "source_locator": "R1945: June 1944 at Amiens, joining Flak-Sturm-Regiment 4"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      3.2268,
      51.2086
     ]
@@ -8773,6 +9019,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R106;R150;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.5019,
+     49.1006
+    ]
+   },
+   "properties": {
+    "claim_id": "C11838",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-09",
+    "place_id": "PL0527",
+    "location_name": "Évrecy",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters moves to Évrecy",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-09",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1937;R001",
+    "source_locator": "R1937: infobox, headquarters Évrecy (June 1944, citing deZeng, France airfields, p. 155) / by 9 June the corps was assembled around Caen and bound to cooperate with Panzer Group West (DRZW vol. 7, p. 295)"
    }
   },
   {
@@ -14356,6 +14643,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C11839",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-18",
+    "place_id": "PL0057",
+    "location_name": "Caen",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "heavy Flak guns of the corps come up south and east of Caen",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-18",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R670;R001",
+    "source_locator": "R670: p. 265, about 18 June 1944 heavy mortars (7th Werfer Brigade) and 88s of III Flak Corps came up south and east of Caen (Panzer Group West front)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7814,
      48.8769
     ]
@@ -17219,6 +17547,129 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R008;R140;R001",
     "source_locator": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C11841",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKSR-001",
+    "unit_name": "Flak-Sturm-Regiment 1 (Stab Flak-Regiment 431)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-24",
+    "place_id": "PL0033",
+    "location_name": "Bayeux",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "regroup",
+    "current_activity": "regiment staff at Bayeux; its two battalions re-formed there as I./ and II./Flak-Sturm-Regiment 1",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-24",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1938;R001",
+    "source_locator": "R1938: service record \"June to August 1944: Bayeux and the Falaise pocket\" / I./ and II./Flak-Sturm-Regiment 1 formed on 24 June 1944 at Bayeux"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C11842",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-266",
+    "unit_name": "gemischte Flak-Abteilung 266 (I./Flak-Sturm-Regiment 1 from 24 June 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-24",
+    "place_id": "PL0033",
+    "location_name": "Bayeux",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "redesignation",
+    "current_activity": "renamed I./Flak-Sturm-Regiment 1 at Bayeux",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1947;R1938;R001",
+    "source_locator": "R1947: renamed I./Flak-Sturm-Regiment 1 on 24 June 1944 / R1938: I./Flak-Sturm-Regiment 1 formed 24 June 1944 at Bayeux with batteries 1-6"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C11843",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-497",
+    "unit_name": "gemischte Flak-Abteilung 497 (II./Flak-Sturm-Regiment 1 from 24 June 1944)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-06-24",
+    "place_id": "PL0033",
+    "location_name": "Bayeux",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.5,
+    "event_type": "redesignation",
+    "current_activity": "renamed II./Flak-Sturm-Regiment 1 at Bayeux",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-24",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1948;R1938;R001",
+    "source_locator": "R1948: renamed II./Flak-Sturm-Regiment 1 on 24 June 1944 / R1938: II./Flak-Sturm-Regiment 1 formed 24 June 1944 at Bayeux with batteries 7-12"
    }
   },
   {
@@ -22262,6 +22713,47 @@
     "location_temporal_offset_days": null,
     "reference_ids": "R586;R761;R854;R001",
     "source_locator": "R586: p. 30, 29; R761: p. 49; R854: German p.4 (Fold3 image 8)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C11849",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKA-064-2",
+    "unit_name": "II./Flak-Regiment 64 (mixed Flak battalion)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "battalion",
+    "branch": "Luftwaffe",
+    "date": "1944-07-01",
+    "place_id": "PL0057",
+    "location_name": "Caen",
+    "location_represents": "main_body",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "other",
+    "current_activity": "battalion at Caen",
+    "operation_id": "OP-CAMP-NORMANDY",
+    "operation": "Normandy campaign",
+    "operation_type": "campaign",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-07-01",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1946;R001",
+    "source_locator": "R1946: 1 July 1944 under III. Flakkorps (Flak-Sturm-Regiment 3) / July 1944 at Caen"
    }
   },
   {
@@ -109674,6 +110166,47 @@
     "location_temporal_offset_days": 0,
     "reference_ids": "R1931;R1932;R002",
     "source_locator": "R1931: \"9.44 in Rotterdam (as Stab/Flak-Brigade z.b.V. des Luftwaffenkommando West)\" / R1932: Flak-Regiment 20 \"1.9.44 under 20. Flak-Brigade (16. Flak-Division, Luftgau XIV)\" (relation evidence, no place)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.16667,
+     50.14694
+    ]
+   },
+   "properties": {
+    "claim_id": "C11840",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-09-30",
+    "place_id": "PL4625",
+    "location_name": "Cochem, Rhineland-Palatinate",
+    "location_represents": "headquarters",
+    "precision_km": 5,
+    "confidence": 0.3,
+    "event_type": "hq_move",
+    "current_activity": "headquarters at Cochem after the withdrawal from France",
+    "operation_id": "OP-CAMP-RHINELAND",
+    "operation": "Rhineland campaign",
+    "operation_type": "campaign",
+    "campaign": "Rhineland",
+    "operation_name": null,
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-09-30",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R1933;R1937;R001",
+    "source_locator": "R1933: what was left fell back to Germany and in September 1944 was at Cochem, supporting Army Group B, under Luftwaffenkommando West / R1937: infobox, headquarters Cochem (September 1944)"
    }
   },
   {

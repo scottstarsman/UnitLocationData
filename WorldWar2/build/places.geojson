@@ -658,7 +658,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 8
    }
   },
   {
@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 10
+    "claims_count": 12
    }
   },
   {
@@ -5318,7 +5318,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 7
+    "claims_count": 8
    }
   },
   {
@@ -10398,7 +10398,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 5
+    "claims_count": 6
    }
   },
   {
@@ -14658,7 +14658,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Somme",
-    "claims_count": 4
+    "claims_count": 8
    }
   },
   {
@@ -78018,7 +78018,7 @@
     "precision_km": 3,
     "country": "FR",
     "region": "Hauts-de-France",
-    "claims_count": 1
+    "claims_count": 2
    }
   },
   {
@@ -92118,6 +92118,26 @@
     "precision_km": 3,
     "country": "NL",
     "region": "Utrecht",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7.16667,
+     50.14694
+    ]
+   },
+   "properties": {
+    "place_id": "PL4625",
+    "name": "Cochem, Rhineland-Palatinate",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "DE",
+    "region": "Rhineland-Palatinate",
     "claims_count": 1
    }
   }

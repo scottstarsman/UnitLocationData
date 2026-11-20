@@ -385,6 +385,14 @@ Not foreign keys: `conflict_group_id` (a group exists as the set of claims that 
 | RAF tactical air force (echelon `air_force`) | `UK-TAF-<nnn>` (new, 17 November 2026, K1) | `UK-TAF-002` |
 | RAF Fighter Command, including its ADGB period (echelon `air_force`) | `UK-FTRCMD-000H`, one continuous unit (new, 17 November 2026, K1; the J11 style) | `UK-FTRCMD-000H` |
 | Allied Expeditionary Air Force (echelon `other`, the SHAEF form) | `ALL-AEAF-000H` (new, 17 November 2026, K3) | `ALL-AEAF-000H` |
+| US Strategic Air Forces in Europe (echelon `other`, the AEAF/SHAEF form) | `US-USSTAF-000H` (chunk 8 decision M2, Scott, 19 November 2026; in use from 8a) | `US-USSTAF-000H` |
+| Eighth Air Force, VIII Fighter Command, bombardment divisions, photographic wing (chunk 8 decision M2; planned for 8b) | `US-AF-008` (`air_force`), `US-FTRCMD-008` (`air_division`, the `US-FTRCMD-009` style), `US-BD-<n>` (1st-3rd Bombardment Divisions, `air_division`), `US-RW-325` (325th Photographic Wing, `air_wing`) | `US-BD-1`, `US-RW-325` |
+| RAF Bomber, Coastal and Transport Commands (echelon `air_force`, the `UK-FTRCMD-000H` form; M2, in use from 8a) | `UK-BOMCMD-000H`, `UK-CSTCMD-000H`, `UK-TPTCMD-000H` | `UK-BOMCMD-000H` |
+| No. 6 (RCAF) Group (M2; planned for 8f) | `CAN-GRP-006` (the K2 nationality rule, as `CAN-WG-126`) | `CAN-GRP-006` |
+| US Navy Fleet Air Wing 7 and its patrol-bomber squadrons (M2, M10; planned for 8g) | `US-FAW-007` (`air_wing`), `US-VB-<nnn>` (`air_squadron`) | `US-VB-103` |
+| RAF small air units, echelon `air_flight` (M5 widened to rule 26, Scott, 19 November 2026; in use from 8a) | numbered flights `UK-FLT-<nnnn>`; group communication flights `UK-COMMFLT-<nnn>` (the group number; not `UK-CF-`, which is MTB flotillas); servicing echelons `UK-SE-<nnnn>` (the printed number, 6nnn in No. 38 Group, 9nnn elsewhere); a group servicing section `UK-SERVSEC-<nnn>`; development units `UK-DU-<abbreviation>`; glider servicing units `UK-GSU-<nnn>` and `UK-GSU-<nnn>-HG` for the separately listed "(H G)" unit of the same number; mobile parachute servicing units `UK-MPSU-<nnn>`; heavy glider maintenance units `UK-HGMU-<nnn>`; forward staging posts `UK-FSP-<nnn>` | `UK-FLT-1692`, `UK-COMMFLT-100`, `UK-SE-9192`, `UK-SERVSEC-100`, `UK-DU-BSDU`, `UK-GSU-009`, `UK-GSU-009-HG`, `UK-MPSU-001`, `UK-HGMU-001`, `UK-FSP-091` |
+| RAF Regiment squadrons (domain `ground`, echelon `company`, branch Air Force; rules 23 and 26; in use from 8a) | `UK-RAFREGT-<nnnn>` | `UK-RAFREGT-2754` |
+| RAF wing No. 80 (Signals) Wing (`air_group`; M2) | `UK-WG-080` (the `UK-WG-<nnn>` pattern) | `UK-WG-080` |
 | Fleet Air Arm naval fighter wing (echelon `air_group`, branch Navy) | `UK-NFW-<nnn>` (new, 17 November 2026, K9) | `UK-NFW-003` |
 | US Navy cruiser-scouting (VCS) squadron | `US-VCS-<nnn>` (new, 17 November 2026, K9) | `US-VCS-007` |
 | Luftwaffe commands (L1, 18 November 2026; the pilot's echelon letters kept) | `GER-FLK-<nnn>C` Fliegerkorps (`air_corps`); `GER-FLD-<nnn>D` Fliegerdivision, `GER-JD-<nnn>D` Jagddivision (`air_division`); `GER-FLF-<NAME>` Fliegerführer, `GER-JAFU-<NAME>` Jagdfliegerführer, `GER-JABF-<NAME>` Jagdabschnittsführer (`air_division`) | `GER-FLK-009C`, `GER-FLD-002D`, `GER-JD-004D`, `GER-FLF-WEST`, `GER-JAFU-BRET`, `GER-JABF-BDX` |
@@ -787,6 +795,7 @@ Organisational level of the unit.
 | `regiment/battle_group` | Regiment-sized or smaller ad hoc formation such as a Kampfgruppe or an Allied combat command. |
 | `battalion` | Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`. |
 | `other` | Higher or special headquarters that fit no level above (for example OB West). |
+| `air_flight` | Air element below or not organised as a squadron: a numbered or communication flight, a servicing echelon or section, a trials or development unit, a glider or parachute servicing unit, a forward staging post (air ladder, rank 19, no id letter; added 19 November 2026, chunk 8 decision M5 widened to rule 26; only with a base and a traced parent, and with the incidental-coverage sentence). |
 | `air_squadron` | Air squadron: a Staffel, a US squadron or a RAF squadron (air ladder, rank 20, no id letter). |
 | `air_group` | Gruppe, US group or RAF **wing** (rank 21, no id letter; the level counts, not the name). |
 | `air_wing` | Geschwader, US combat wing or RAF **group** (rank 22, no id letter). |

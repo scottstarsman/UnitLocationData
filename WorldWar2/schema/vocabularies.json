@@ -51,7 +51,8 @@
       "company": "Company-sized unit (company, battery, squadron of a ground unit), recorded only when a source traces it up the chain to a parent division or higher (Scott, 4 November 2026; for example H Company, 116th Infantry, 29th Division); rank 0, no echelon letter in the id.",
       "battalion": "Battalion-sized or smaller formation that is only an opponent or a component of a larger unit (for example a heavy tank battalion); rank 1. Regiments and regiment-sized battle groups keep `regiment/battle_group`.",
       "other": "Higher or special headquarters that fit no level above (for example OB West).",
-      "air_squadron": "Air squadron: a Staffel (Luftwaffe), a US squadron or a RAF squadron; a flight is not recorded. Air ladder, rank 20, no id letter (docs/air_naval_pilot.md section 9).",
+      "air_flight": "Air element below or not organised as a squadron (Scott, 19 November 2026, chunk 8 decision M5 widened to rule 26): a numbered or named flight, a communication flight, a servicing echelon or servicing section, a trials or development unit, a glider, parachute or heavy-glider servicing or maintenance unit, a forward staging post and the like. Air ladder, rank 19, no id letter; recorded only with a base and a traceable parent (HANDOFF rule 26), with the incidental-coverage sentence in the unit note.",
+      "air_squadron": "Air squadron: a Staffel (Luftwaffe), a US squadron or a RAF squadron; a flight or other element below a squadron is `air_flight` (from 19 November 2026; before that a flight was not recorded). Air ladder, rank 20, no id letter (docs/air_naval_pilot.md section 9).",
       "air_group": "Air group-level unit: a Gruppe (Luftwaffe), a US group, or a RAF WING (the RAF's wing is the level of a US group, as the RAF's group is the level of a US combat wing; the level, not the name, decides). Air ladder, rank 21, no id letter.",
       "air_wing": "Air wing-level unit: a Geschwader (Luftwaffe), a US combat wing (bomb, fighter or troop carrier wing), or a RAF GROUP (No. 2 Group, No. 11 Group). Air ladder, rank 22, no id letter.",
       "air_division": "Air division or command: a Jagddivision or Fliegerdivision, a US air division or bomb division, a US command (IX Bomber Command, IX Fighter Command) or tactical air command (IX TAC, XXIX TAC). A RAF tactical group such as No. 83 Group is a RAF group and belongs to air_wing. Air ladder, rank 23, no id letter.",
@@ -331,7 +332,7 @@
     }
   },
   "echelon_rank": {
-    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, fleet 14) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). The air ladder (air_squadron 20, air_group 21, air_wing 22, air_division 23, air_corps 24, air_force 25) has its own range too, so air ranks never collide with ground (0-8) or naval (10-14) ranks; ranks are by level, so the RAF wing (air_group) and RAF group (air_wing) rank like the US group and combat wing; the hierarchy check applies within the air ladder only (scripts/validate.py air_hierarchy_problem). display_order lists ground echelons only (the main outputs are ground).",
+    "description": "Rank of each organisational level for hierarchy checks (higher = larger formation) and the display order used in build/coverage.csv and docs/coverage.md. Read by scripts/validate.py, scripts/build.py, scripts/audit_temporal_relationships.py and scripts/who_controls.py through scripts/common.py; do not copy it into code. The rank 8 of `other` places higher or special headquarters above an army group; unlisted echelons rank 0 in the validator and 8 in the audits (unchanged behaviour). The naval ladder (naval_unit 10, naval_division 11, naval_squadron 12, task_group 13, fleet 14) has its own range so naval ranks never collide with ground ranks; the hierarchy check applies within the naval ladder only (scripts/validate.py check_command_relation_tables). The air ladder (air_flight 19, added 19 November 2026; air_squadron 20, air_group 21, air_wing 22, air_division 23, air_corps 24, air_force 25) has its own range too, so air ranks never collide with ground (0-8) or naval (10-14) ranks; ranks are by level, so the RAF wing (air_group) and RAF group (air_wing) rank like the US group and combat wing; the hierarchy check applies within the air ladder only (scripts/validate.py air_hierarchy_problem). display_order lists ground echelons only (the main outputs are ground).",
     "values": {
       "squad": 0,
       "platoon": 0,
@@ -349,6 +350,7 @@
       "naval_squadron": 12,
       "task_group": 13,
       "fleet": 14,
+      "air_flight": 19,
       "air_squadron": 20,
       "air_group": 21,
       "air_wing": 22,
@@ -392,6 +394,7 @@
       "fleet"
     ],
     "air_exempt": [
+      "air_flight",
       "air_squadron",
       "air_group",
       "air_wing",

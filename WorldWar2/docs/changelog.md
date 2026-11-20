@@ -2,6 +2,14 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 19 November 2026 — Normandy chunk 8a: air_flight echelon; Bomber, Coastal and Transport Command HQs, USSTAF; Nos 38, 46 and 100 Groups (branch `normandy-air-8a`)
+
+- **Scott accepted all fourteen chunk 8 recommendations M1-M14 (19 November 2026), with M5 widened to follow rule 26 fully** (`docs/normandy_air_naval_plan.md` section 13).
+- **Schema change, new echelon `air_flight` (M5 widened):** air ladder rank 19, below `air_squadron`, no id letter (`schema/vocabularies.json`: `echelon`, `echelon_rank`, `echelon_id_letter.air_exempt`; `schema/README.md`; `docs/air_naval_pilot.md` section 9.1; `docs/methodology.md`; HANDOFF rule 25). Old value: no air level below `air_squadron` (the `air_squadron` description said "a flight is not recorded"); new value: `air_flight` for flights, communication flights, servicing echelons and sections, trials and development units, glider and parachute servicing units, heavy glider maintenance units and forward staging posts, recorded only with a base and a traced parent and with the incidental-coverage sentence; reason: rule 26 (b), an echelon is always filled and a missing level is proposed as a schema change. The `air_squadron` description is changed to say so. `scripts/validate.py` messages name `air_flight` in the ladder (the ladder set itself is read from the vocabulary).
+- **Test changed:** scenario 255, the air-ladder exemption check, old expected value the six echelons `air_squadron`-`air_force`, new value the seven with `air_flight`; reason: the schema change above. **Scenario 324 added** (the `air_flight` rank and hierarchy).
+- **Id patterns (M2) written into `schema/README.md`**, with the new small-unit patterns of 8a (`UK-FLT-`, `UK-COMMFLT-`, `UK-SE-`, `UK-SERVSEC-`, `UK-DU-`, `UK-GSU-`, `UK-MPSU-`, `UK-HGMU-`, `UK-FSP-`, `UK-RAFREGT-`).
+- **Roadmap 416** (D-Day and COBRA mission set, M12) and **417** (chunk 8 progress) added.
+
 ## 19 November 2026 — Luftwaffe ground G-c: Flak-Regiment 155 (W), the V-1 regiment (branch `normandy-lw-ground-c`)
 
 - **Standing rule 26 added (Scott, 19 November 2026; `docs/HANDOFF.md`, `schema/README.md`):** units of any size (companies, batteries, Staffeln, platoon-level units) are entered whenever a source gives them, with three conditions: (a) a unit below regiment size still needs a parent traced in the sources, otherwise notes only; (b) `echelon` is always filled so depth is filterable; (c) a unit below battalion size carries a `unit_note` sentence that its coverage is incidental (absence is not evidence). Old rule (rule 17): small units only when traced to a division or higher, and several groups deferred; new rule: as above. Roadmap 415 added for a backfill from the existing notes; echelon check: 0 of 1,838 units have a blank `echelon`. No data rows changed.

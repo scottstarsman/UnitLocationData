@@ -214,6 +214,7 @@ Ranks 20-25, outside the ground (0-8) and naval (10-14) ranges. The brief sugges
 
 | rank | echelon | Luftwaffe | USAAF | RAF |
 |---|---|---|---|---|
+| 19 | `air_flight` (added 19 November 2026, chunk 8a) | (a Staffel is `air_squadron`) | flight or detachment organised as a unit | flight, servicing echelon, communication flight, development unit, glider or parachute servicing unit, forward staging post |
 | 20 | `air_squadron` | Staffel | squadron | squadron |
 | 21 | `air_group` | Gruppe | group | **wing** |
 | 22 | `air_wing` | Geschwader | combat wing (bomb, fighter, troop carrier wing) | **group** |

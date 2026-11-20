@@ -2,6 +2,11 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 20 November 2026 — Roadmap 418: time of day and small actions (branch `roadmap-418-time-of-day`)
+
+- **Roadmap 418 added** (Scott, 20 November 2026): optional `time` and `time_precision` columns for position claims (two fields, not a combined date-time), the check changes they need, and a small-actions table; to begin after the naval and air trial. Documentation only; no data, schema or test changed.
+- Next free roadmap 419 (other ids unchanged).
+
 ## 19 November 2026 — Normandy chunk 8a: air_flight echelon; Bomber, Coastal and Transport Command HQs, USSTAF; Nos 38, 46 and 100 Groups (branch `normandy-air-8a`)
 
 - **Scott accepted all fourteen chunk 8 recommendations M1-M14 (19 November 2026), with M5 widened to follow rule 26 fully** (`docs/normandy_air_naval_plan.md` section 13).

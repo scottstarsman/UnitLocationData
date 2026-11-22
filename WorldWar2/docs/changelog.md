@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 22 November 2026 — Normandy chunk 8e part 1: 3rd Bombardment Division HQ, its five combat wings and the 66th Fighter Wing (branch `normandy-air-8e`)
+
+Scott merged chunk 8d (PR #128) and asked for the next task, chunk 8e (22 November 2026). Part 1 stopped at the usage limit; the groups and squadrons follow in part 2 on this branch.
+- **New units:** `US-BD-3` (3rd Bombardment Division, formed 13 September 1943, Maurer) and the 4th, 13th, 45th, 92nd and 93rd Combat Bombardment Wings (`US-BW-004`, `-013`, `-045`, `-092`, `-093`), each with formed_date and lineage from Maurer.
+- **Claims (C12241-C12247):** 3rd BD HQ at Elveden Hall (Camp Blainey) on 6 June 1944 at 0.7 (Maurer and Anderson AAF-116); the wings on 6 June 1944 at their Maurer stations: 4th Bury St Edmunds, 13th Horham, 45th Snetterton Heath, 93rd Mendlesham at 0.5 (Maurer alone; Anderson lists only groups at those stations), 92nd Sudbury at 0.7 (Anderson AAF-174); the 66th Fighter Wing at Sawston Hall on 15 September 1944 at 0.7 (evidence claim for its new relation).
+- **Relations (CR3251-CR3257):** 3rd BD -> Eighth AF from 22 February 1944 (old value 13 September 1943, new value 22 February 1944, reason: the Eighth AF row starts then, the 1st and 2nd BD precedent), end inferred 15 July 1945 (old value none, reason: the day before the VIII Fighter Command assignment); each wing -> 3rd BD with the dated wing components of the Wikipedia 3rd Air Division page (4th, 13th, 45th from 13 September 1943; 92nd from 31 March 1944; 93rd from 10 January 1944); 66th Fighter Wing -> 3rd BD 15 September 1944-1 November 1945.
+- **Changed: `CR3007`** (66th Fighter Wing -> VIII Fighter Command): valid_to old value 15 September 1944, new value 14 September 1944, valid_to_basis old value narrative, new value inferred; reason: the 3rd BD relation (CR3257) starts on 15 September 1944 and assigned relations may not overlap (the CR3006 precedent). `C12247` operation_id old value OP-CAMP-NORTHERN-FRANCE (computed), new value OP-CAMP-RHINELAND (the C12164 precedent).
+- **References and places:** R2019 (Wikipedia, 3rd Air Division); PL4707 Elveden Hall (Camp Blainey), PL4708 RAF Bury St Edmunds, PL4709 RAF Horham (Wikidata Q7275389), PL4710 RAF Snetterton Heath (3 km), PL4711 RAF Sudbury, PL4712 RAF Mendlesham.
+- **Tests:** scenario 331.
+- **Deferred to part 2:** the 14 heavy groups (34th, 94th, 95th, 96th, 100th, 385th, 388th, 390th, 447th, 452nd, 486th, 487th, 490th, 493rd) and their squadrons, and the 850th BS -> 490th BG relation carried from 8c-2.
+
 ## 22 November 2026 — Normandy chunk 8d part 2: the 2nd Bombardment Division's combat wings, heavy groups and squadrons (branch `normandy-air-8d`)
 
 - **Same branch and PR (#128) as part 1, at Scott's request (22 November 2026).**

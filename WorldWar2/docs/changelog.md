@@ -2,6 +2,40 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 22 November 2026 — Normandy chunk 8d part 2: the 2nd Bombardment Division's combat wings, heavy groups and squadrons (branch `normandy-air-8d`)
+
+- **Same branch and PR (#128) as part 1, at Scott's request (22 November 2026).**
+- **Sources:** Maurer, *Combat Units* (`R1564`: 2d, 14th, 20th, 95th and 96th Bombardment Wings, the 13 groups) and *Combat Squadrons* (`R1565`: 51 squadrons and the 788th); Anderson (`R2002`: AAF-104, 114, 115, 118, 120, 123, 124, 125, 144, 145 and 146; Halesworth AAF-365 and Metfield AAF-366 list only fighter groups). New references `R2009`-`R2018`, Wikipedia (not a second family): 2nd Combat Bombardment Wing, 14th Air Division, 20th Bombardment Wing, 95th Combat Bombardment Wing, 96th Air Division, 93rd Operations Group, 446th Operations Group, 448th Supply Chain Management Group, 489th Bomb Group, 491st Bombardment Group.
+- **Places `PL4694`-`PL4706` (13):** airfields Hethel, Shipdham, Hardwick, Wendling, Tibenham, Bungay (Flixton), Seething, Old Buckenham, Horsham St Faith, Attlebridge, Rackheath, Halesworth and Metfield. Coordinates come from Wikipedia, or from Wikidata where the article has none (M13). Points given to two decimals (Shipdham, Tibenham, Wendling, Seething) are at 3 km. Alt names are as printed by Maurer and Anderson.
+- **Units (69 new):**
+  - Combat bombardment wings `US-BW-002`, `014`, `020`, `095` and `096`. Their formed_date is the last activation before the window (Maurer).
+  - Groups `US-BG-044`, `093`, `389`, `392`, `445`, `446`, `448`, `453`, `458`, `466`, `467`, `489` and `491`.
+  - 51 squadrons `US-BS-<nnn>`.
+  - Old value none, new value these rows; reason: Scott asked for 8d.
+- **Claims `C12165`-`C12240` (76):**
+  - Every new unit at its station or headquarters on 6 June 1944. The station is inferred from the Maurer interval (old value none, new value the station, reason: the interval covers the day).
+  - Evidence claims for relation changes: the 489th at Halesworth on 14 August 1944; the 491st and its squadrons at North Pickenham on 15 August 1944; the 788th BS at Rackheath on 10 August 1944.
+  - Confidence is 0.7 for 11 groups and the 20th CBW, where Maurer and Anderson agree. It is 0.5 for the other wings, the 489th and 491st, and the squadrons (Maurer only).
+- **Relations `CR3179`-`CR3250` (72), each with an evidence claim (M6: group to wing from dated Wikipedia wing or group pages):**
+  - **Wings:**
+    - The 2nd CBW and the 14th CBW are assigned to the 2nd BD from 13 September 1943. For the 2nd CBW: old value 16 August 1943, new value 13 September 1943; reason: the division was activated then.
+    - The 95th CBW is assigned to the 2nd BD from 22 February 1944 to 18 June 1945. The 96th CBW is assigned from 22 February 1944 to 15 July 1945 (the end is inferred).
+    - The 20th CBW is assigned to the Eighth AF from 22 February 1944. The Wikipedia 20th Bombardment Wing page gives VIII Bomber Command (later Eighth AF) from 1 July 1943. Maurer lists the wing under the 2d Air Division by years only, so this is a conflict and a question to Scott.
+  - **Groups:**
+    - 389th, 445th and 453rd → 2nd CBW.
+    - 44th and 392nd → 14th CBW.
+    - 93rd, 446th and 448th → 20th CBW.
+    - 458th, 466th and 467th → 96th CBW.
+    - 489th → 95th CBW from 5 April to 13 August 1944, then 20th CBW from 14 August to 29 November 1944.
+    - 491st → 95th CBW from c. 5 May to 14 August 1944, then 14th CBW from 15 August 1944.
+    - Inferred ends are one day before the next printed assignment.
+  - **Squadrons:** 51 are organic to their groups (the 847th ends on its inactivation, 28 March 1945). The 788th BS is organic to the 467th BG from 10 August 1944 (8c-2 question 8).
+- **Changed:** `CR3172` and `CR3173` (the 788th BS assigned to the Composite Command, and attached to the 801st BG (Prov)) have valid_to old value 10 August 1944, new value 9 August 1944, and valid_to_basis old value narrative, new value inferred. Reason: the squadron is organic to the 467th from 10 August (the M6 one-day rule).
+- **Conflicts kept in notes, not entered (questions to Scott):**
+  - The Wikipedia 96th Air Division page lists the 392nd from c. 6 July 1944, the 448th from 6 July 1944 (the 448th page says 1945) and the 491st from c. 5 May 1944.
+  - The 492nd BG → 14th CBW link (Wikipedia 14th Air Division, 12 March-5 August 1944) is dated, but it starts before the group arrived (18 April) and would replace `CR3177`.
+- **Tests:** scenario 330. **Validate:** no new warning.
+
 ## 22 November 2026 — Normandy chunk 8d part 1: 2nd Bombardment Division HQ and the items carried from 8c-2 (branch `normandy-air-8d`)
 
 - **Scott accepted the four part-1 recommendations (22 November 2026)** (`pr_chunk8d` questions 1-4), with one change to question 4: the 492nd BG's month-only start ("April 1944", entered as 1-30 April) stands; the 2nd BD under the Eighth AF from 22 February 1944 (1st BD precedent) stands; the 492nd's 14th Combat Bombardment Wing link is added in part 2 only if a source dates it; part 2 continues on the same branch, `normandy-air-8d`, so that PR #128 covers all of chunk 8d (one branch per task), instead of a new branch. Scott also raised the usage stop to 98%. No data changed by these decisions.

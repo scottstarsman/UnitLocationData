@@ -7211,9 +7211,12 @@ def scenario_329_normandy_air_8d():
            (units['US-BD-2']['record_status'], units['US-BD-2']['echelon'], units['US-BD-2']['formed_date'], byid['C12163']['unit_id'], byid['C12163']['date'], byid['C12163']['confidence']),
            ('active', 'air_division', '1943-09-13', 'US-BD-2', '1944-06-06', '0.7'))
     on = lambda u, d: sorted(r['higher_unit_id'] for r in rels.values() if r['subject_unit_id'] == u and r['relationship'] == 'assigned' and r['valid_from'] <= d and (not r['valid_to'] or r['valid_to'] >= d))  # noqa: E731
-    expect(s + ': the 2nd BD under the Eighth AF; the 492nd under the 2nd BD to 9 August, then the Composite Command',
-           [on('US-BD-2', '1944-06-06'), on('US-BG-492', '1944-06-06'), on('US-BG-492', '1944-08-09'), on('US-BG-492', '1944-08-10')],
-           [['US-AF-008'], ['US-BD-2'], ['US-BD-2'], ['US-AFCC-008']])
+    # Changed in chunk 8d (question 7, accepted by Scott 22 November 2026): old value the 492nd under US-BD-2 to 9 August 1944, new value
+    # under the 14th CBW (US-BW-014, itself under the 2nd BD) 18 April-4 August 1944, no parent 5-9 August, the Composite Command from 10 August;
+    # reason: the Wikipedia 14th Air Division page dates the group under the wing (12 March-5 August 1944; start moved to its arrival, end the day before).
+    expect(s + ': the 2nd BD under the Eighth AF; the 492nd under the 14th CBW 18 April-4 August (CR3177, question 7), then the Composite Command from 10 August',
+           [on('US-BD-2', '1944-06-06'), on('US-BG-492', '1944-04-17'), on('US-BG-492', '1944-06-06'), on('US-BG-492', '1944-08-04'), on('US-BG-492', '1944-08-05'), on('US-BG-492', '1944-08-10'), on('US-BW-014', '1944-06-06')],
+           [['US-AF-008'], [], ['US-BW-014'], ['US-BW-014'], [], ['US-AFCC-008'], ['US-BD-2']])
     expect(s + ': the 65th Fighter Wing under VIII Fighter Command to 14 September 1944 (CR3006 end moved back one day), the 2nd BD from 15 September',
            (on('US-FW-065', '1944-09-14'), on('US-FW-065', '1944-09-15'), rels['CR3006']['valid_to'], 'old value 15 September 1944' in rels['CR3006']['note']),
            (['US-FTRCMD-008'], ['US-BD-2'], '1944-09-14', True))

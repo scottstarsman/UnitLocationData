@@ -105,7 +105,7 @@ Placeholder units by nationality: UK 36, US 27, Germany 23, Allied 3, Canada 1, 
 
 Command relations by relationship: assigned 2070, organic 559, unspecified_subordination 287, attached 218, operational_control 59, unknown 28, reserve 14, administrative_control 8, supporting 2, coordinating 1.
 
-Command relations: start basis claim_date 1937, narrative 774, assignment_table 515, inferred 16, order 4; end basis open_at_last_claim 2163, inferred_from_next_claim 560, assignment_table 253, narrative 219, inferred 51; `end_unknown` true 167; `change_undated` true 36; status preferred 3238, alternate 8.
+Command relations: start basis claim_date 1937, narrative 773, assignment_table 515, inferred 17, order 4; end basis open_at_last_claim 2163, inferred_from_next_claim 560, assignment_table 253, narrative 219, inferred 51; `end_unknown` true 167; `change_undated` true 36; status preferred 3238, alternate 8.
 
 Evidence roles of relation links: observed_during 3543, asserts_start 1765, asserts_start_and_end 449, asserts_end 186, listed_by_higher_unit 87.
 

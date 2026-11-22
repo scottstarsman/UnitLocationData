@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 22 November 2026 — Normandy chunk 8e part 2: the 3rd Bombardment Division's heavy groups and squadrons (branch `normandy-air-8e`)
+
+Scott accepted the part-1 recommendations and asked to continue on this branch, pausing at 99% usage (22 November 2026). One commit per wing.
+- **New units:** 14 heavy bombardment groups (`US-BG-034`, `-094`, `-095`, `-096`, `-100`, `-385`, `-388`, `-390`, `-447`, `-452`, `-486`, `-487`, `-490`, `-493`) and 55 squadrons (the 850th already existed), each with formed_date from Maurer.
+- **Claims (C12248-C12318):** each group at its station on 6 June 1944 at 0.7 (Maurer's station interval and Anderson's Part 1 list agree for all 14); each squadron at its Maurer station on 6 June 1944 at 0.5 (Combat Squadrons alone); the 850th at Eye on 12 August 1944 (evidence for its return to the 490th) and the 862nd at Wormingford on 17 February 1945 (evidence for its attachment); `C12317` operation_id old value OP-CAMP-NORTHERN-FRANCE (computed), new value OP-CAMP-RHINELAND; `C12280` (452nd) also cites R2027.
+- **Relations (CR3258-CR3327):** groups -> wings from the dated Wikipedia wing and group pages (M6): 4th CBW 94th (14 Sep 1943), 385th (June 1943, month only), 447th (November 1943, month only); 13th CBW 95th (September 1943, month only), 100th (14 Sep 1943), 390th (13 Sep 1943); 45th CBW 96th (14 Sep 1943), 388th and 452nd (8 Jan 1944); 92nd CBW 486th (4 Apr 1944, end inferred 15 Feb 1945, the day before the 4th CBW), 487th (5 Apr 1944, end inferred 21 Nov 1944, the day before the 4th Bombardment Wing (Provisional)); 93rd CBW 34th and 493rd (April 1944, month only). The 490th's 1944 wing is not entered (no dated source). Conflicts kept in the relation notes (94th end, 385th and 388th wings). Squadrons organic to their groups from Maurer's assignment dates.
+- **850th BS -> 490th BG** organic from 10 August 1944 (`CR3321`; Maurer), carried from 8c-2. **Changed `CR3174` and `CR3175`** (850th -> Composite Command, assigned; -> 801st BG (Prov), attached): valid_to old value 10 August 1944, new value 9 August 1944, valid_to_basis old value narrative, new value inferred; reason: the organic relation to the 490th starts on 10 August 1944 (the CR3172/CR3173 precedent).
+- **862nd BS attached to the 3rd Air Division** 17 February-7 May 1945 (`CR3327`; Maurer), with `C12317` also linked to the organic relation `CR3325` as observed_during.
+- **References and places:** R2020-R2029 (Wikipedia wing and group pages); PL4713-PL4721 (Thorpe Abbotts (3 km), Great Ashfield, Knettishall, Framlingham, Rattlesden, Deopham Green, Lavenham, Eye, Debach).
+- **Tests:** scenario 332.
+
 ## 22 November 2026 — Normandy chunk 8e part 1: 3rd Bombardment Division HQ, its five combat wings and the 66th Fighter Wing (branch `normandy-air-8e`)
 
 Scott merged chunk 8d (PR #128) and asked for the next task, chunk 8e (22 November 2026). Part 1 stopped at the usage limit; the groups and squadrons follow in part 2 on this branch.

@@ -7059,8 +7059,9 @@ def scenario_325_normandy_air_8a():
     new = [c for c in byid if 11866 <= int(c[1:]) <= 11988]
     expect(s + ': claims C11866-C11988, all air or RAF Regiment units of 8a',
            (sorted(int(c[1:]) for c in new) == list(range(11866, 11989)), len({byid[c]['unit_id'] for c in new})), (True, 113))
-    small = [u for u in units if u.startswith(('UK-SE-', 'UK-FLT-', 'UK-COMMFLT-', 'UK-SERVSEC-', 'UK-DU-', 'UK-GSU-', 'UK-MPSU-', 'UK-HGMU-', 'UK-FSP-'))]
-    regt = [u for u in units if u.startswith('UK-RAFREGT-')]
+    in8a = lambda u: 'Normandy chunk 8a pass' in units[u]['unit_note']  # noqa: E731  (8f adds more small units; this scenario counts 8a's only)
+    small = [u for u in units if u.startswith(('UK-SE-', 'UK-FLT-', 'UK-COMMFLT-', 'UK-SERVSEC-', 'UK-DU-', 'UK-GSU-', 'UK-MPSU-', 'UK-HGMU-', 'UK-FSP-')) and in8a(u)]
+    regt = [u for u in units if u.startswith('UK-RAFREGT-') and in8a(u)]
     expect(s + ': 58 air_flight units (domain air) and 21 RAF Regiment squadrons (company, domain ground), each with the incidental-coverage sentence',
            (len(small), sorted({(units[u]['echelon'], units[u]['domain']) for u in small}), len(regt), sorted({(units[u]['echelon'], units[u]['domain'], units[u]['branch']) for u in regt}),
             all('is incidental (HANDOFF rule 26 (c))' in units[u]['unit_note'] for u in small + regt)),

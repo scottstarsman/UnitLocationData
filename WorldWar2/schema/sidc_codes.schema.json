@@ -1,0 +1,56 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "sidc_codes",
+  "title": "Recorded 2525D code list (data/sidc_codes.csv)",
+  "description": "Reference copy (roadmap 410, 23 November 2026) of the entity and modifier codes of MIL-STD-2525D symbol sets 10 (Land Unit), 30 (Sea Surface) and 35 (Sea Subsurface), flattened from the JMSML instance files (github.com/Esri/joint-military-symbology-xml, branch dev, commit 094e7647f0bd, 19 September 2024), with the icon key milsymbol (v3.0.6, src/numbersidc) uses for each code (blank where milsymbol has none). scripts/validate.py checks every code of data/sidc_function_map.csv against it. Not hand-edited except to add a newly verified code.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "symbol_set",
+    "kind",
+    "code"
+  ],
+  "fields": [
+    {
+      "name": "symbol_set",
+      "type": "string",
+      "description": "10, 30 or 35.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "kind",
+      "type": "string",
+      "description": "entity, modifier1 or modifier2.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Six digits (entity) or two digits (modifier).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "The JMSML label (entity path with \" / \").",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "milsymbol_icon",
+      "type": "string",
+      "description": "The milsymbol icon key for the code; blank when milsymbol has no entry (for example 000000 Unspecified, drawn as an empty frame).",
+      "constraints": {
+        "required": false
+      }
+    }
+  ]
+}

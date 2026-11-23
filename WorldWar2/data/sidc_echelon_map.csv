@@ -1,0 +1,22 @@
+echelon,amplifier,amplifier_label,fit,note
+army_group,24,Army Group/Front,exact,
+army,23,Army,exact,Includes panzer groups and Armee-Abteilungen.
+corps,22,Corps/MEF,exact,A Volks-Artillerie-Korps is overridden to 18 (rule GA01).
+division,21,Division,exact,
+brigade,18,Brigade,exact,
+regiment/battle_group,17,Regiment/Group,exact,Kampfgruppen and combat commands also get the Task Force digit (rule ADD-TF).
+battalion,16,Battalion/Squadron,exact,
+company,15,Company/Battery/Troop,exact,"Includes RAF Regiment squadrons, which the data records as company."
+other,25,Region/Theater,nearest,Top and territorial headquarters; OKW is overridden to 26 Command and fortress garrisons to 00 Unknown.
+air_flight,14,Platoon/Detachment,nearest,"Flights, servicing echelons and other air elements below a squadron."
+air_squadron,16,Battalion/Squadron,nearest,"Staffel, US squadron, RAF squadron; the 2525D label already says squadron."
+air_group,17,Regiment/Group,nearest,"Gruppe, US group, RAF wing."
+air_wing,18,Brigade,nearest,"Geschwader, US combat wing, RAF group."
+air_division,21,Division,nearest,"Jagddivision, US air division or command, tactical air command."
+air_corps,22,Corps/MEF,nearest,"Fliegerkorps, Jagdkorps."
+air_force,23,Army,nearest,"Luftflotte, numbered US air force, RAF command, 2nd TAF."
+naval_unit,00,(none),n/a,Sea symbol sets carry no echelon amplifier.
+naval_division,00,(none),n/a,"Surface group symbol, no echelon (Scott, 23 November 2026)."
+naval_squadron,00,(none),n/a,"Surface group symbol, no echelon."
+task_group,00,(none),n/a,"Task force, group or unit entity, no echelon."
+fleet,00,(none),n/a,"Surface group symbol, no echelon."

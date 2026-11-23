@@ -2,6 +2,45 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Roadmap 410: derived military symbol codes, code step (branch `symbol-codes-410`)
+
+The code step of the accepted proposal (Scott, 23 November 2026, PR #134). No hand-entered column anywhere; `units.csv` and the claim files are unchanged.
+- **New script `scripts/sidc.py`:** applies `data/sidc_function_map.csv` (first matching function rule, then the land add-ons) and `data/sidc_echelon_map.csv`, and takes the side from `scripts/allegiance.py` (unit override, then nation row; a date after the last applicable row keeps the last side, question 3; a gap has no side). Version `10`, context `0`, standard identity from the Allied viewpoint (Allied and co-belligerent 3, Axis 6, neutral and non-aligned-belligerent 4, none 1; questions 1 and 4), status 0, or 4 on a claim whose `destroyed` flag is true (question 16).
+- **New tables:** `data/sidc_codes.csv`, the recorded 2525D code list (528 JMSML codes of symbol sets 10, 30 and 35 with the milsymbol icon key; 9 have no milsymbol entry, among them `000000` Unspecified); schemas `schema/sidc_function_map.schema.json`, `schema/sidc_echelon_map.schema.json`, `schema/sidc_codes.schema.json` (question 19); `schema/README.md` section "Military symbol codes" and a derived-values row; `README.md` rows.
+- **Function map change (question 12):** rule GM01 `name_pattern` old value `Panzergrenadier|Panzer-Grenadier|Armored Infantry|Mechanized`, new value `...|Führer-Begleit`; reason: the Führer-Begleit-Brigade (`GER-PG-FUEBE`) is drawn as mechanized infantry instead of the infantry default GI02 (GI02 15 -> 14 units, GM01 4 -> 5); note in the rule. Coverage report regenerated.
+- **Build outputs (`scripts/build.py`):** a last column `sidc` in `build/all_claims.csv`, `build/all_claims.json`, `build/claims.geojson` (property) and `build/other_domains/claims.csv`; new `build/unit_symbols.csv` (ground units) and `build/other_domains/unit_symbols.csv` (air, naval and out_of_scope units; standing rule 22), one row per unit and allegiance period (`unit_id`, `unit_name`, `nationality`, `domain`, `echelon`, `valid_from`, `valid_to`, `side`, `standard_identity`, `sidc`, `function_rule`, `entity_label`; question 2).
+- **Validator (`check_sidc` in `scripts/validate.py`):** errors for a table that does not match its schema, a rule that does not compile or uses a code not in `data/sidc_codes.csv`, an echelon value without a two-digit amplifier, a unit no rule matches, a derived code that is not 20 digits; warnings for a GZ99 fall-through and a claim with no side on its date. On the data: no error and no warning.
+- **Semantic tests:** scenario 337 (US 29th Infantry Division, 2nd Panzer Division, Kampfgruppe Peiper, OKW, No. 1 Squadron RAF, USS Corry and its destroyed claim C9522, 1. Unterseebootsflottille, SHAEF, the Führer-Begleit-Brigade, Fortress Dunkirk after 8 May 1945, a synthetic Italian division before and after the 1943 switch, the per-unit periods) and scenario 338 (the check passes with no warning).
+- **Counts:** 12,762 claims with a 20-digit `sidc` (9,499 in `all_claims.csv`, 3,263 in `other_domains/claims.csv`); standard identity Friend 7,984, Hostile 4,778, Neutral 0, Unknown 0 (the 8 German claims after 8 May 1945 now keep Axis; without question 3 they would be Unknown); status Destroyed on 96 claims. Unit tables: 617 rows for 513 ground units and 2,788 rows for 2,122 air, naval and out_of_scope units (3,405 rows, 2,635 units; the extra rows are the neutral periods of the US, Belgium, the Netherlands, Norway and Greece before they entered the war).
+- **Warnings:** validate.py 464, coordinate check 427 (unchanged). The grid is unchanged (symbol codes do not touch relations).
+- Next free ids unchanged except scenarios: scenario 339 (claims `C12775`, relations `CR3742`, references `R2216`, places `PL4895`, conflict groups `G318`, roadmap 422, SC220, AT143, UL028, MSN0099).
+
+## 23 November 2026 — Roadmap 410 question 3: a side for the four multinational Allied headquarters (branch `symbol-codes-410`)
+
+Scott accepted question 3 of the symbol-code proposal (23 November 2026, "I agree with your recommendations"): the multinational headquarters get the Allied side. The accepted wording was a `nation_allegiance.csv` row for `ALL`, but that table's checker takes only codes of kind `nation` ("a multinational headquarters code has no allegiance", roadmap 384), so the side is entered as four unit rows of `data/unit_allegiance_overrides.csv` instead, which the resolver already reads first; the effect is the same (question 20 of PR #134 asks Scott to confirm the route).
+- `ALL-AEAF-000H` (`R1621`), `ALL-AFHQ-000H` (`R011`), `ALL-FAAA-001A` (`R034;R009`), `ALL-SHAEF-000H` (`R564`): side old value none, new value `Allied`, 1939-09-03 to 1945-09-02 (the span accepted in question 3). Reason in each row's note; the references are each unit's existing listing sources, no new page read.
+- `README.md` and `schema/README.md` no longer describe the overrides table as empty.
+- Warnings: see the code-step entry.
+
+## 23 November 2026 — Roadmap 410: Scott's acceptance of the 19 proposal recommendations (branch `symbol-codes-410`, PR #134)
+
+Scott accepted all 19 recommendations of `docs/symbol_codes_proposal.md` section 8 (23 November 2026: "I agree with your recommendations"). The proposal is marked accepted question by question. What the acceptance changes, in the commits that follow on this branch:
+- **Q3:** a `nation_allegiance.csv` row for the multinational code `ALL` (Allied, 1939-09-03 to 1945-09-02), and the derivation keeps a nation's last side for a claim after its last allegiance row.
+- **Q12:** the Führer-Begleit-Brigade gets a name rule for 121102 Infantry, Armored/Mechanized (old: infantry default rule GI02).
+- **Q1, Q2, Q4, Q15, Q16:** Allied viewpoint stored; a `sidc` column on every claim and `build/unit_symbols.csv` per unit and allegiance period; co-belligerents Friend; version `10`; status 4 on a destroyed claim.
+- **Q19:** schema entries for the two maps.
+- All other answers keep the proposal as written. No earlier accepted answer changes.
+
+## 23 November 2026 — Roadmap 410: military symbol codes, proposal and mapping tables (branch `symbol-codes-410`, from main `62e65fd7`)
+
+Scott agreed the approach on 23 November 2026 ("I agree with all of that. Please proceed"): MIL-STD-2525D / APP-6D 20-digit numeric SIDCs, derived (never entered), function from a mapping table, affiliation from the allegiance table on the date. This step adds the proposal and the mapping tables only; no script, build output or check, and no existing row changes.
+- **New reference tables:** `data/sidc_function_map.csv` (68 rules: `rule_id`, `kind`, conditions `domain`, `echelon`, `ship_type`, `name_pattern`; outputs `symbol_set`, `entity`, `modifier1`, `modifier2`, `hq_tf_dummy`, `amplifier_override`; `entity_label`, `case`, `note`) and `data/sidc_echelon_map.csv` (one 2525D echelon amplifier for each of the 21 echelon values). Not yet in a schema or read by any script; the schema entry and the validator check come with the code step.
+- **New pages:** `docs/symbol_codes_proposal.md` (layout, values and sources, echelon map, affiliation rule, no-exact-symbol cases, 19 questions with recommendations) and `docs/symbol_codes_coverage.md` (units per rule, defaults, ambiguous units, the code verification table).
+- **Sources:** the JMSML 2525D instance files (Esri joint-military-symbology-xml, commit `094e7647f0bd`) and milsymbol's number-SIDC icon tables (v3.0.6); every entity and modifier code used is present in both.
+- **Coverage:** 2,635 of 2,635 units mapped; 0 fall through to the unspecified default; 15 land units with no arm in their name drawn as infantry; 13 units marked for a decision in the coverage report (questions 5, 11 and 12).
+- **Warnings:** unchanged, validate.py 464, coordinate check 427.
+- Next free ids unchanged: claims `C12775`, relations `CR3742`, references `R2216`, places `PL4895`, conflict groups `G318`, scenario 337, roadmap 422 (SC220, AT143, UL028, MSN0099 unchanged).
+
 ## 23 November 2026 — Roadmap 420: Scott's acceptance of the 14 review recommendations (branch `niehorster-followups-420`, PR #133)
 
 Scott accepted all 14 recommendations of the roadmap 420 review (23 November 2026: "I'm good with your recommendations"). No data row changed: every accepted answer keeps the branch's values as entered.

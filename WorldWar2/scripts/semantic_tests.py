@@ -7364,9 +7364,10 @@ def scenario_334_normandy_air_8g():
     for path in common.claim_files():
         claims.extend(common.read_dicts(path)[1])
     new = [r for r in claims if 12532 <= int(r['claim_id'][1:]) <= 12750]
-    expect(s + ': 219 claims C12532-C12750 (208 preferred, 11 alternates in 11 conflict groups G297-G307), confidence only 0.3/0.5/0.7',
+    # Roadmap 419 (commit 4): No 15 Group's Derby House claim C12532 joined G310 (Niehorster's Castle Archdale alternate C12765, outside this range).
+    expect(s + ': 219 claims C12532-C12750 (208 preferred, 11 alternates in 11 conflict groups G297-G307; C12532 also in G310 since roadmap 419), confidence only 0.3/0.5/0.7',
            (len(new), sum(r['claim_status'] == 'alternate' for r in new), sorted({r['conflict_group_id'] for r in new if r['conflict_group_id']}),
-            sorted({r['confidence'] for r in new})), (219, 11, ['G%d' % n for n in range(297, 308)], ['0.3', '0.5', '0.7']))
+            sorted({r['confidence'] for r in new})), (219, 11, ['G%d' % n for n in range(297, 308)] + ['G310'], ['0.3', '0.5', '0.7']))
     grp = {'UK-GRP-015': 'PL4891', 'UK-GRP-016': 'PL4885', 'UK-GRP-018': 'PL4892', 'UK-GRP-019': 'PL4893', 'UK-GRP-106': 'PL4886'}
     hq = {r['unit_id']: r['place_id'] for r in new if r['unit_id'] in grp and r['claim_status'] == 'preferred'}
     expect(s + ': five group HQ claims on 1 June 1944 (Liverpool, Gillingham, Pitreavie Castle, Mount Wise, Benson), air_wing rows', (hq, sorted({units[g]['echelon'] for g in grp})), (grp, ['air_wing']))
@@ -7396,17 +7397,19 @@ def scenario_334_normandy_air_8g():
            ({v: (on(v, '1944-06-06'), on(v, '1944-06-06', 'operational_control')) for v in vb}, sorted({r['place_id'] for r in new if r['unit_id'] in vb})),
            ({v: (['US-FAW-007'], ['UK-GRP-019']) for v in vb}, ['PL4812']))
     pl = lambda u: sorted((r['date'], r['place_id'], r['claim_status'], r['confidence']) for r in new if r['unit_id'] == u)  # noqa: E731
-    expect(s + ': conflicts kept: No 143 North Coates (lists) over Manston; No 281 Tiree over Mullaghmore; MCU 40 Weymouth over Portaferry; MCU 56 Portaferry over Portland',
+    # Roadmap 419 (commit 4): Niehorster's 1 June 1944 chart is a second family for No 281 at Tiree (0.5 -> 0.7); No 143 stays 0.5 (rafweb contradicts itself).
+    expect(s + ': conflicts kept: No 143 North Coates (lists) over Manston; No 281 Tiree (0.7 since roadmap 419) over Mullaghmore; MCU 40 Weymouth over Portaferry; MCU 56 Portaferry over Portland',
            (pl('UK-SQN-143'), pl('UK-SQN-281'), pl('UK-MCU-40'), pl('UK-MCU-56')),
            ([('1944-06-01', 'PL4469', 'alternate', '0.3'), ('1944-06-01', 'PL4797', 'preferred', '0.5')],
-            [('1944-06-01', 'PL4793', 'preferred', '0.5'), ('1944-06-01', 'PL4817', 'alternate', '0.3')],
+            [('1944-06-01', 'PL4793', 'preferred', '0.7'), ('1944-06-01', 'PL4817', 'alternate', '0.3')],
             [('1944-06-01', 'PL4861', 'preferred', '0.5'), ('1944-06-01', 'PL4871', 'alternate', '0.3')],
             [('1944-06-01', 'PL4862', 'alternate', '0.3'), ('1944-06-01', 'PL4871', 'preferred', '0.5')]))
     # Roadmap 419 (commit 2b): the rafweb Limavady station page dates 850's arrival 1 August 1944, so the narrative date became preferred, and
-    # 816 at Perranporth rose to 0.7 (rafweb Perranporth station page and the Fleet Air Arm Archive).
-    expect(s + ': 850 NAS to Limavady: narrative and rafweb 1 August 1944 preferred, station list 1 September alternate (G307, roadmap 419); 816 NAS Perranporth (0.7) over St Merryn (G306)',
+    # 816 at Perranporth rose to 0.7 (rafweb Perranporth station page and the Fleet Air Arm Archive); commit 4 raised 850 at Perranporth to 0.7
+    # (the Fleet Air Arm Archive and Niehorster's 1 June 1944 chart).
+    expect(s + ': 850 NAS to Limavady: narrative and rafweb 1 August 1944 preferred, station list 1 September alternate (G307, roadmap 419); 850 Perranporth 0.7; 816 NAS Perranporth (0.7) over St Merryn (G306)',
            (pl('UK-FAA-850'), [x for x in pl('UK-FAA-816') if x[0] == '1944-06-01']),
-           ([('1944-06-01', 'PL4821', 'preferred', '0.5'), ('1944-08-01', 'PL4824', 'preferred', '0.5'), ('1944-09-01', 'PL4824', 'alternate', '0.3')],
+           ([('1944-06-01', 'PL4821', 'preferred', '0.7'), ('1944-08-01', 'PL4824', 'preferred', '0.5'), ('1944-09-01', 'PL4824', 'alternate', '0.3')],
             [('1944-06-01', 'PL4821', 'preferred', '0.7'), ('1944-06-01', 'PL4825', 'alternate', '0.3')]))
     expect(s + ': CR3466 (No 415 Squadron RCAF, 8f) now points at No 16 Group (8f question 9)', rels['CR3466']['higher_unit_id'], 'UK-GRP-016')
 

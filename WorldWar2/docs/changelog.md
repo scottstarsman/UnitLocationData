@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Roadmap 410: military symbol codes, proposal and mapping tables (branch `symbol-codes-410`, from main `62e65fd7`)
+
+Scott agreed the approach on 23 November 2026 ("I agree with all of that. Please proceed"): MIL-STD-2525D / APP-6D 20-digit numeric SIDCs, derived (never entered), function from a mapping table, affiliation from the allegiance table on the date. This step adds the proposal and the mapping tables only; no script, build output or check, and no existing row changes.
+- **New reference tables:** `data/sidc_function_map.csv` (68 rules: `rule_id`, `kind`, conditions `domain`, `echelon`, `ship_type`, `name_pattern`; outputs `symbol_set`, `entity`, `modifier1`, `modifier2`, `hq_tf_dummy`, `amplifier_override`; `entity_label`, `case`, `note`) and `data/sidc_echelon_map.csv` (one 2525D echelon amplifier for each of the 21 echelon values). Not yet in a schema or read by any script; the schema entry and the validator check come with the code step.
+- **New pages:** `docs/symbol_codes_proposal.md` (layout, values and sources, echelon map, affiliation rule, no-exact-symbol cases, 19 questions with recommendations) and `docs/symbol_codes_coverage.md` (units per rule, defaults, ambiguous units, the code verification table).
+- **Sources:** the JMSML 2525D instance files (Esri joint-military-symbology-xml, commit `094e7647f0bd`) and milsymbol's number-SIDC icon tables (v3.0.6); every entity and modifier code used is present in both.
+- **Coverage:** 2,635 of 2,635 units mapped; 0 fall through to the unspecified default; 15 land units with no arm in their name drawn as infantry; 13 units marked for a decision in the coverage report (questions 5, 11 and 12).
+- **Warnings:** unchanged, validate.py 464, coordinate check 427.
+- Next free ids unchanged: claims `C12775`, relations `CR3742`, references `R2216`, places `PL4895`, conflict groups `G318`, scenario 337, roadmap 422 (SC220, AT143, UL028, MSN0099 unchanged).
+
 ## 23 November 2026 — Roadmap 420: Scott's acceptance of the 14 review recommendations (branch `niehorster-followups-420`, PR #133)
 
 Scott accepted all 14 recommendations of the roadmap 420 review (23 November 2026: "I'm good with your recommendations"). No data row changed: every accepted answer keeps the branch's values as entered.

@@ -1,0 +1,69 @@
+rule_id,kind,domain,echelon,ship_type,name_pattern,symbol_set,entity,modifier1,modifier2,hq_tf_dummy,amplifier_override,entity_label,case,note
+HQ01,function,,,,Oberkommando der Wehrmacht,10,110000,,,2,26,Command and Control,no-exact,"National high command: C2 with the HQ staff, echelon Command (26)."
+HQ02,function,,,,Supreme Headquarters|Allied Force Headquarters|Oberbefehlshaber|Wehrmachtbefehlshaber|Strategic Air Forces|Allied Expeditionary Air Force,10,110000,,,2,25,Command and Control,no-exact,"Theater headquarters: C2 with the HQ staff, echelon Region/Theater (25)."
+HQ03,function,,,,Luftgau|Wehrkreis|District,10,110000,,,2,,Command and Control,no-exact,Territorial or administrative command; amplifier from the echelon map (other = 25 Region).
+SH-BB,function,naval,naval_unit,BB,,30,120201,,,0,,Battleship,exact,
+SH-BC,function,naval,naval_unit,BC,,30,120201,,,0,,Battleship,nearest,No battlecruiser entity in 2525D; no unit has this type today.
+SH-BM,function,naval,naval_unit,BM,,30,120200,,,0,,"Surface Combatant, Line",nearest,No monitor entity; generic line combatant.
+SH-CA,function,naval,naval_unit,CA,,30,120202,,02,0,,Cruiser,exact,Modifier 2 Heavy.
+SH-CL,function,naval,naval_unit,CL,,30,120202,,03,0,,Cruiser,exact,Modifier 2 Light.
+SH-CV,function,naval,naval_unit,CV,,30,120100,,,0,,Carrier,exact,No unit has this type today.
+SH-CVL,function,naval,naval_unit,CVL,,30,120100,,03,0,,Carrier,exact,Modifier 2 Light; no unit has this type today.
+SH-CVE,function,naval,naval_unit,CVE,,30,120100,04,,0,,Carrier,nearest,Modifier 1 Escort; no unit has this type today.
+SH-DD,function,naval,naval_unit,DD,,30,120203,,,0,,Destroyer,exact,
+SH-DE,function,naval,naval_unit,DE,,30,120203,04,,0,,Destroyer,nearest,Destroyer escort: destroyer with modifier 1 Escort.
+SH-PF,function,naval,naval_unit,PF,,30,120204,,,0,,Frigate,exact,
+SH-CORV,function,naval,naval_unit,CORV,,30,120205,,,0,,Corvette,exact,2525D has a corvette entity.
+SH-TB,function,naval,naval_unit,TB,,30,120203,17,,0,,Destroyer,nearest,Torpedo boat (German Torpedoboot): destroyer with modifier 1 Torpedo.
+SH-PG,function,naval,naval_unit,PG,,30,120502,,,0,,"Patrol Ship, General",nearest,Gunboat or sloop.
+SH-CM,function,naval,naval_unit,CM,,30,120401,,,0,,Mine Layer,exact,
+SH-AM,function,naval,naval_unit,AM,,30,120402,,,0,,Mine Sweeper,exact,
+SH-AGC,function,naval,naval_unit,AGC,,30,120301,,,0,,Amphibious Command Ship,exact,
+SH-APA,function,naval,naval_unit,APA,,30,120300,,,0,,Amphibious Warfare Ship,nearest,Attack transport: generic amphibious warfare ship.
+SH-AV,function,naval,naval_unit,AV,,30,130100,,,0,,Auxiliary Ship,nearest,Seaplane tender: generic auxiliary.
+SH-SS,function,naval,naval_unit,SS,,35,110100,,02,0,,Submarine,exact,"Modifier 2 Diesel Electric, General."
+NF01,function,naval,,,\(Task Force \d|Task Force \d,30,121002,,,0,,Task Force,exact,Navy task organization.
+NF02,function,naval,,,Task Group \d|\(TG \d,30,121003,,,0,,Task Group,exact,Navy task organization.
+NF03,function,naval,,,Task Unit|Sweep Unit,30,121004,,,0,,Task Unit,exact,Navy task organization.
+NF04,function,naval,,,Kommand|Befehlshaber|Führer der|Group Command|Admiral|K-Stab|Flag Officer|Commander-in-Chief|C-in-C,30,121000,,,2,,Navy Task Organization,no-exact,Naval command headquarters: surface group with the HQ staff.
+NF09,function,naval,,,U-Bootsjagd|U-Jagd|U-Jäger|Anti-Submarine|Submarine Chaser,30,121000,03,,0,,Navy Task Organization,no-exact,Group symbol with modifier 1 Anti-Submarine Warfare.
+NF05,function,naval,,,Unterseeboot|Submarine Flotilla,35,110000,,,0,,Military (subsurface),no-exact,"Submarine flotilla: subsurface military, no group entity exists."
+NF06,function,naval,,,Minesweep|Minensuch|Räumboot|Sweep|Minesweeper,30,121000,07,,0,,Navy Task Organization,no-exact,Group symbol with modifier 1 Mine Countermeasures.
+NF07,function,naval,,,Torpedo|Schnellboot|MTB|PT Boat|Motor Gun|MGB|Torpedoboot,30,121000,17,,0,,Navy Task Organization,no-exact,Group symbol with modifier 1 Torpedo.
+NF08,function,naval,,,Escort|Sicherung|Vorposten|Support Group,30,121000,04,,0,,Navy Task Organization,no-exact,Group symbol with modifier 1 Escort.
+NF99,function,naval,,,,30,121000,,,0,,Navy Task Organization,default,"Any other naval formation (flotilla, squadron, division, fleet, force)."
+AD01,function,,,,Flak-Regiment 155 \(W\),10,130700,,,0,,Missile,no-exact,V-1 launching regiment: Fires/Missile.
+AD02,function,,,,Flak|Anti-Aircraft|Air Defense|Air Defence,10,130100,,,0,,Air Defense,exact,
+AS01,function,air,,,Service Command,10,160000,78,,0,,Sustainment,no-exact,Air force service command: sustainment with modifier 1 Aviation.
+AS02,function,air,,,Servicing|Service Echelon|Maintenance|Salvage|Repair|Ground Support Unit|Glider Maintenance|Parachute Servicing,10,161100,78,,0,,Maintenance,no-exact,Ground servicing unit of the air arm: maintenance with modifier 1 Aviation.
+AS03,function,air,,,Marine Craft|Air Sea Rescue|Air-Sea Rescue,10,141800,46,,0,,Search and Rescue,nearest,RAF marine craft unit: SAR with modifier 1 Naval.
+AS04,function,air,,,Staging Post,10,120200,,,0,,Air Traffic Services/Airfield Operations,nearest,
+AN01,function,air,,,Observation Squadron|VCS|VOS,10,120801,46,,0,,"Aviation Fixed Wing, Reconnaissance",nearest,Navy observation squadron: recon with modifier 1 Naval.
+AN02,function,air,,,Naval Air Squadron|Fleet Air Arm|Fleet Air Wing|Naval Fighter Wing|\(VB-|Bombing Squadron \d+|Patrol Bombing|\(VPB,10,120800,46,,0,,Aviation Fixed Wing,nearest,Naval aviation: fixed wing with modifier 1 Naval.
+AR01,function,air,,,Reconnaissance|Aufklärung|Photographic|Wettererkundung|Weather|\(PR\)|Photo,10,120801,,,0,,"Aviation Fixed Wing, Reconnaissance",exact,
+AF99,function,air,,,,10,120800,,,0,,Aviation Fixed Wing,default,All other flying units and air commands; amplifier from the air echelon map.
+GF01,function,,,,Fortress|Festung|Garrison,10,121100,,,0,00,Infantry,no-exact,"Fortress garrison: infantry, echelon unknown (00)."
+GA01,function,,,,Volks-Artillerie-Korps|Volksartilleriekorps,10,130300,,,0,18,Field Artillery,no-exact,"Volks-Artillerie-Korps: field artillery, echelon brigade (18) rather than corps."
+GA02,function,,,,Marine-Artillerie|Coast Artillery|Coastal Artillery|Küstenartillerie,10,130300,46,,0,,Field Artillery,nearest,Coastal artillery: field artillery with modifier 1 Naval.
+GA03,function,,,,Artillerie|Artillery|Werfer|Nebelwerfer|Rocket,10,130300,,,0,,Field Artillery,exact,
+GE01,function,,,,Fallschirm-Pionier|Airborne Engineer|Parachute Engineer,10,140700,,01,0,,Engineer,exact,Modifier 2 Airborne.
+GE02,function,,,,Pionier|Engineer|Sapper,10,140700,,,0,,Engineer,exact,
+GS01,function,,,,Nachrichten|Signal,10,111000,,,0,,Signal,exact,
+GT01,function,,,,Tank Destroyer|Panzerjäger|Anti-Tank|Antitank,10,120400,,,0,,Antitank/Antiarmor,exact,Airborne (Fallschirm-) adds modifier 2 Airborne; a Task Force name adds the TF amplifier (see note in the proposal).
+GT02,function,,,,Sturmgeschütz|Assault Gun|StuG,10,120401,,,0,,"Antitank/Antiarmor, Armored",nearest,Assault-gun brigade.
+GM01,function,,,,Panzergrenadier|Panzer-Grenadier|Armored Infantry|Mechanized,10,121102,,,0,,"Infantry, Armored/Mechanized/Tracked",exact,
+GP01,function,,,,Airborne|Parachute|Fallschirm|Luftlande|Glider|Air Landing,10,121100,,01,0,,Infantry,exact,Modifier 2 Airborne; airborne task forces keep the TF amplifier.
+GK01,function,,,,Kampfgruppe|Combat Command|Task Force|Kampfgruppen,10,121000,,,4,,Combined Arms,no-exact,Task-organized group: combined arms with the Task Force amplifier. Airborne and tank destroyer task forces are matched earlier.
+GR01,function,,,,Heavy Panzer|schwere Panzer|s\.Pz|Heavy Tank,10,120500,,15,0,,Armor,exact,Modifier 2 Heavy.
+GR02,function,,,,Panzer|Armou?red|Tank|Armour|Armor,10,120500,,,0,,Armor,exact,
+GC01,function,,,,Reconnaissance|Aufklärung|Cavalry|Recce,10,121300,,,0,,Reconnaissance/Cavalry/Scout,exact,
+GG01,function,,,,Gebirgs|Mountain|Alpine,10,121100,,27,0,,Infantry,exact,Modifier 2 Mountain.
+GX01,function,,,,Commando|Special Service,10,121100,76,,0,,Infantry,nearest,Commando or Special Service unit: infantry with modifier 1 Ranger.
+GL01,function,,,,Polizei|Police,10,141700,,,0,,Security,nearest,Police regiment.
+GU01,function,,,,RAF Regiment,10,121100,,,0,,Infantry,nearest,RAF Regiment airfield-defence squadron: infantry (no source splits field and LAA squadrons).
+GI01,function,,,,Infantry|Infanterie|Grenadier|Volksgrenadier|Rifle|Marine|Landesschützen|Sicherungs|Stoottroepen|Bewakingstroepen|Binnenlandse Strijdkrachten|Feld-Division|Field Division|Jäger,10,121100,,,0,,Infantry,exact,Infantry by name.
+GI02,function,,,,Division|Regiment|Brigade|Battalion|Bataillon,10,121100,,,0,,Infantry,default-infantry,"Land division, brigade, regiment or battalion whose name names no arm (for example Division Nr. 172, Division z.b.V. 136): infantry, listed in the coverage report."
+GH01,function,,,,Army Group|Heeresgruppe|Army|Armee|Corps|Korps|Group|Détachement d.Armée|Forces of the,10,121000,,,0,,Combined Arms,no-exact,"Higher land formation with no single arm (army group, army, corps, army detachment): combined arms."
+GZ99,function,,,,,10,000000,,,0,,Unspecified,default,Fall-through: unspecified land unit.
+ADD-ABN,addon,,,,Airborne|Parachute|Fallschirm|Luftlande|Glider|Air Landing,,,,01,,,(modifier 2 Airborne),addon,"Land units only: sets modifier 2 Airborne when the function rule left it blank (for example Fallschirm-Panzerjäger, Fallschirm-Flak)."
+ADD-TF,addon,,,,Kampfgruppe|Combat Command|Task Force,,,,,4,,(Task Force amplifier),addon,Land units only: sets the HQ/TF/Dummy digit to 4 Task Force (6 when the unit already has the HQ digit 2).

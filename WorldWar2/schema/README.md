@@ -267,7 +267,7 @@ Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`): the na
 
 ### data/unit_allegiance_overrides.csv (hand-maintained; `schema/unit_allegiance_overrides.schema.json`)
 
-Added 15 November 2026 (roadmap 384, part 2). A dated exception to the nation table: one unit stood on a different side from its nation for a period (a formation that served with the other side's forces). **It wins over `data/nation_allegiance.csv` for that unit and those days**; outside its rows the nation's side applies. Populated only where the dataset already has a sourced case; **empty (header only) on 15 November 2026**, because no unit of the dataset has a recorded side different from its nation's (the candidates are listed in the changelog and roadmap 384).
+Added 15 November 2026 (roadmap 384, part 2). A dated exception to the nation table: one unit stood on a different side from its nation for a period (a formation that served with the other side's forces). **It wins over `data/nation_allegiance.csv` for that unit and those days**; outside its rows the nation's side applies. Populated only where the dataset already has a sourced case; **empty (header only) on 15 November 2026**, because no unit of the dataset has a recorded side different from its nation's (the candidates are listed in the changelog and roadmap 384). From 23 November 2026 (roadmap 410, question 3) it also holds the four multinational Allied headquarters (`ALL-AEAF-000H`, `ALL-AFHQ-000H`, `ALL-FAAA-001A`, `ALL-SHAEF-000H`): their nationality `ALL` is of kind `multinational`, which `nation_allegiance.csv` does not take, so each gets an `Allied` row for 1939-09-03 to 1945-09-02 here.
 
 | column | type | required | meaning | constraints |
 |---|---|---|---|---|

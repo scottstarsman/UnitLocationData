@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Roadmap 410 question 3: a side for the four multinational Allied headquarters (branch `symbol-codes-410`)
+
+Scott accepted question 3 of the symbol-code proposal (23 November 2026, "I agree with your recommendations"): the multinational headquarters get the Allied side. The accepted wording was a `nation_allegiance.csv` row for `ALL`, but that table's checker takes only codes of kind `nation` ("a multinational headquarters code has no allegiance", roadmap 384), so the side is entered as four unit rows of `data/unit_allegiance_overrides.csv` instead, which the resolver already reads first; the effect is the same (question 20 of PR #134 asks Scott to confirm the route).
+- `ALL-AEAF-000H` (`R1621`), `ALL-AFHQ-000H` (`R011`), `ALL-FAAA-001A` (`R034;R009`), `ALL-SHAEF-000H` (`R564`): side old value none, new value `Allied`, 1939-09-03 to 1945-09-02 (the span accepted in question 3). Reason in each row's note; the references are each unit's existing listing sources, no new page read.
+- `README.md` and `schema/README.md` no longer describe the overrides table as empty.
+- Warnings: see the code-step entry.
+
 ## 23 November 2026 — Roadmap 410: Scott's acceptance of the 19 proposal recommendations (branch `symbol-codes-410`, PR #134)
 
 Scott accepted all 19 recommendations of `docs/symbol_codes_proposal.md` section 8 (23 November 2026: "I agree with your recommendations"). The proposal is marked accepted question by question. What the acceptance changes, in the commits that follow on this branch:

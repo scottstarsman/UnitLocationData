@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Roadmap 420: Scott's acceptance of the 14 review recommendations (branch `niehorster-followups-420`, PR #133)
+
+Scott accepted all 14 recommendations of the roadmap 420 review (23 November 2026: "I'm good with your recommendations"). No data row changed: every accepted answer keeps the branch's values as entered.
+- **Kept as entered:** Q1 the ten servicing echelons follow their squadrons into the GR wings (`CR3722`, `CR3723`, `CR3727`-`CR3729`, `CR3733`-`CR3735`, `CR3738`, `CR3739`); Q2 `CR3731` and `CR3732` end the day before the next station claim; Q3 No 22 MSU(T) not entered; Q4 No 415 Thorney Island alternate `C12768` (G311) kept, Bircham Newton `C12480` preferred at 0.7, the detachment not entered; Q5 no No 119 Squadron claim after Manston; Q6 the "119" on Niehorster's Coastal Command chart not used; Q7 `CR3740` (846 NAS) ends 5 July 1944, no HMS Trumpeter claim; Q8 the chart misprints (8120, 8086, 8281, 8461) not counted, those claims stay 0.5; Q9 Det. 8519 stays 0.5; Q10 Leuchars preferred over the Woodhaven alternates `C12769`-`C12771` (place `PL4894`); Q11 No 1693 Flt Skitten alternate `C12772`; Q12 Roborough and Angle preferred over `C12773` and `C12774`; Q13 the raises of 521, 519, 618 and 517 to 0.7 inside their 8g conflict groups; Q14 no action on the two-step raise of ten SEs.
+- **Earlier answers changed by this acceptance:** Q4 and Q10-Q12 add conflict groups (`G311`-`G317`) to claims accepted in 8f/8g; Q13 raises the confidence of four accepted 8g claims (`C12572`, `C12619`, `C12616`, `C12664`: old value 0.5, new value 0.7, annotated in the rows in part 3).
+- **Carried forward into roadmap 421:** recheck the open group relations of Nos 311 and 524 (Q2); a dated source for No 119 Squadron at Swingfield/Beccles (Q5).
+- **Warnings:** unchanged, validate.py 464, coordinate check 427.
+- Next free ids: claims `C12775`, relations `CR3742`, references `R2216`, places `PL4895`, conflict groups `G318`, scenario 337, roadmap 422 (SC220, AT143, UL028, MSN0099 unchanged).
+
 ## 23 November 2026 — Roadmap 420: Niehorster follow-ups (branch `niehorster-followups-420`, from main `f3b62f81`)
 
 Scott accepted the roadmap 419 review (PR #132 questions 14, 22 and 23 carried forward) and asked for roadmap 420 ("Yes", 23 November 2026). Three data commits, then this documentation and build refresh; window 1 June-31 August 1944. 2 new units (`UK-FAA-846`, `UK-SQN-119`), claims `C12766`-`C12774` (9), relations `CR3721`-`CR3741` (21), references `R2213`-`R2215` (3), place `PL4894`, conflict groups `G311`-`G317`, scenario 336. Every changed value is annotated old value, new value, reason in its row.

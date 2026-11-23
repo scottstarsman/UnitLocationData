@@ -7386,10 +7386,11 @@ def scenario_334_normandy_air_8g():
     expect(s + ': No 58 Squadron under No 19 Group to 31 August 1944 and No 18 Group from 1 September (move to Stornoway, 28 August)',
            (on('UK-SQN-058', '1944-08-31'), on('UK-SQN-058', '1944-09-01')), (['UK-GRP-019'], ['UK-GRP-018']))
     faa = ['UK-FAA-%d' % n for n in (816, 819, 838, 849, 850, 854, 855)]
-    expect(s + ': the seven FAA squadrons attached (not assigned) to Coastal Command or a group on 6 June 1944, branch Navy (no Admiralty parent in the dataset)',
+    # Roadmap 419 moved the FAA relations from Coastal Command / No 19 Group to the GR wing a source names (and attached 849 to No 156 Wing).
+    expect(s + ': the seven FAA squadrons attached (not assigned) to a Coastal Command GR wing on 6 June 1944 (roadmap 419), branch Navy (no Admiralty parent in the dataset)',
            ({f: on(f, '1944-06-06', 'attached') for f in faa}, sorted({units[f]['branch'] for f in faa})),
-           ({'UK-FAA-816': ['UK-GRP-019'], 'UK-FAA-819': ['UK-CSTCMD-000H'], 'UK-FAA-838': ['UK-CSTCMD-000H'], 'UK-FAA-849': [],
-             'UK-FAA-850': ['UK-CSTCMD-000H'], 'UK-FAA-854': ['UK-CSTCMD-000H'], 'UK-FAA-855': ['UK-CSTCMD-000H']}, ['Navy']))
+           ({'UK-FAA-816': ['UK-WG-156'], 'UK-FAA-819': ['UK-WG-155'], 'UK-FAA-838': ['UK-WG-156'], 'UK-FAA-849': ['UK-WG-156'],
+             'UK-FAA-850': ['UK-WG-156'], 'UK-FAA-854': ['UK-WG-157'], 'UK-FAA-855': ['UK-WG-157']}, ['Navy']))
     vb = ['US-VB-103', 'US-VB-105', 'US-VB-110']
     expect(s + ': VB-103, VB-105 and VB-110 assigned to Fleet Air Wing 7 and under the operational control of No 19 Group on 6 June 1944, at Dunkeswell',
            ({v: (on(v, '1944-06-06'), on(v, '1944-06-06', 'operational_control')) for v in vb}, sorted({r['place_id'] for r in new if r['unit_id'] in vb})),

@@ -2,6 +2,15 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Roadmap 410: Scott's acceptance of the 19 proposal recommendations (branch `symbol-codes-410`, PR #134)
+
+Scott accepted all 19 recommendations of `docs/symbol_codes_proposal.md` section 8 (23 November 2026: "I agree with your recommendations"). The proposal is marked accepted question by question. What the acceptance changes, in the commits that follow on this branch:
+- **Q3:** a `nation_allegiance.csv` row for the multinational code `ALL` (Allied, 1939-09-03 to 1945-09-02), and the derivation keeps a nation's last side for a claim after its last allegiance row.
+- **Q12:** the Führer-Begleit-Brigade gets a name rule for 121102 Infantry, Armored/Mechanized (old: infantry default rule GI02).
+- **Q1, Q2, Q4, Q15, Q16:** Allied viewpoint stored; a `sidc` column on every claim and `build/unit_symbols.csv` per unit and allegiance period; co-belligerents Friend; version `10`; status 4 on a destroyed claim.
+- **Q19:** schema entries for the two maps.
+- All other answers keep the proposal as written. No earlier accepted answer changes.
+
 ## 23 November 2026 — Roadmap 410: military symbol codes, proposal and mapping tables (branch `symbol-codes-410`, from main `62e65fd7`)
 
 Scott agreed the approach on 23 November 2026 ("I agree with all of that. Please proceed"): MIL-STD-2525D / APP-6D 20-digit numeric SIDCs, derived (never entered), function from a mapping table, affiliation from the allegiance table on the date. This step adds the proposal and the mapping tables only; no script, build output or check, and no existing row changes.

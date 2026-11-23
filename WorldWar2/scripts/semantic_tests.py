@@ -7402,10 +7402,12 @@ def scenario_334_normandy_air_8g():
             [('1944-06-01', 'PL4793', 'preferred', '0.5'), ('1944-06-01', 'PL4817', 'alternate', '0.3')],
             [('1944-06-01', 'PL4861', 'preferred', '0.5'), ('1944-06-01', 'PL4871', 'alternate', '0.3')],
             [('1944-06-01', 'PL4862', 'alternate', '0.3'), ('1944-06-01', 'PL4871', 'preferred', '0.5')]))
-    expect(s + ': 850 NAS to Limavady: station list 1 September 1944 preferred, narrative 1 August alternate (G307); 816 NAS Perranporth over St Merryn (G306)',
+    # Roadmap 419 (commit 2b): the rafweb Limavady station page dates 850's arrival 1 August 1944, so the narrative date became preferred, and
+    # 816 at Perranporth rose to 0.7 (rafweb Perranporth station page and the Fleet Air Arm Archive).
+    expect(s + ': 850 NAS to Limavady: narrative and rafweb 1 August 1944 preferred, station list 1 September alternate (G307, roadmap 419); 816 NAS Perranporth (0.7) over St Merryn (G306)',
            (pl('UK-FAA-850'), [x for x in pl('UK-FAA-816') if x[0] == '1944-06-01']),
-           ([('1944-06-01', 'PL4821', 'preferred', '0.5'), ('1944-08-01', 'PL4824', 'alternate', '0.3'), ('1944-09-01', 'PL4824', 'preferred', '0.5')],
-            [('1944-06-01', 'PL4821', 'preferred', '0.5'), ('1944-06-01', 'PL4825', 'alternate', '0.3')]))
+           ([('1944-06-01', 'PL4821', 'preferred', '0.5'), ('1944-08-01', 'PL4824', 'preferred', '0.5'), ('1944-09-01', 'PL4824', 'alternate', '0.3')],
+            [('1944-06-01', 'PL4821', 'preferred', '0.7'), ('1944-06-01', 'PL4825', 'alternate', '0.3')]))
     expect(s + ': CR3466 (No 415 Squadron RCAF, 8f) now points at No 16 Group (8f question 9)', rels['CR3466']['higher_unit_id'], 'UK-GRP-016')
 
 

@@ -7333,15 +7333,16 @@ def scenario_333_normandy_air_8f():
     u8f = [u for u, r in units.items() if 'Normandy chunk 8f pass' in r['unit_note']]
     sq = [u for u in u8f if units[u]['echelon'] == 'air_squadron']
     count = lambda d: dict(sorted(collections.Counter(h for u in sq for h in on(u, d)).items()))  # noqa: E731
-    expect(s + ': squadrons per group on 6 June 1944 (No 347 from 20 June, No 608 from 1 August, No 415 still under Coastal Command)',
-           count('1944-06-06'), {'CAN-GRP-006': 13, 'UK-CSTCMD-000H': 1, 'UK-GRP-001': 11, 'UK-GRP-003': 10, 'UK-GRP-004': 11, 'UK-GRP-005': 16, 'UK-GRP-008': 11})
+    # chunk 8g: CR3466 now points at No 16 Group (old value UK-CSTCMD-000H, new value UK-GRP-016; 8f question 9, accepted by Scott, 23 November 2026)
+    expect(s + ': squadrons per group on 6 June 1944 (No 347 from 20 June, No 608 from 1 August, No 415 still under Coastal Command, No 16 Group)',
+           count('1944-06-06'), {'CAN-GRP-006': 13, 'UK-GRP-016': 1, 'UK-GRP-001': 11, 'UK-GRP-003': 10, 'UK-GRP-004': 11, 'UK-GRP-005': 16, 'UK-GRP-008': 11})
     expect(s + ': squadrons per group on 31 August 1944 (75 in all)',
            count('1944-08-31'), {'CAN-GRP-006': 14, 'UK-GRP-001': 11, 'UK-GRP-003': 10, 'UK-GRP-004': 12, 'UK-GRP-005': 16, 'UK-GRP-008': 12})
     small = [u for u in u8f if u not in sq and u not in grp]
     expect(s + ': 106 small units (servicing echelons, flights, communication flights, servicing sections, BDU, RAF Regiment companies) each under its group on 6 June 1944',
            (len(small), sorted({len(on(u, '1944-06-06')) for u in small}), sorted({units[u]['echelon'] for u in small})), (106, [1], ['air_flight', 'company']))
-    expect(s + ': No 415 Squadron RCAF under Coastal Command to 11 July 1944, No 6 (RCAF) Group from 12 July (move to East Moor)',
-           (on('CAN-SQN-415', '1944-07-11'), on('CAN-SQN-415', '1944-07-12')), (['UK-CSTCMD-000H'], ['CAN-GRP-006']))
+    expect(s + ': No 415 Squadron RCAF under Coastal Command (No 16 Group since chunk 8g) to 11 July 1944, No 6 (RCAF) Group from 12 July (move to East Moor)',
+           (on('CAN-SQN-415', '1944-07-11'), on('CAN-SQN-415', '1944-07-12')), (['UK-GRP-016'], ['CAN-GRP-006']))
     expect(s + ': the Bombing Development Unit under No 3 Group and under the operational control of Bomber Command HQ',
            (on('UK-DU-BDU', '1944-06-06'), on('UK-DU-BDU', '1944-06-06', 'operational_control')), (['UK-GRP-003'], ['UK-BOMCMD-000H']))
     pl = lambda u: sorted((r['place_id'], r['claim_status'], r['confidence']) for r in new if r['unit_id'] == u)  # noqa: E731

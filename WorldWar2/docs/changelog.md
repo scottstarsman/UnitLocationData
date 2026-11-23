@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Normandy chunk 8f: Scott's acceptance of the 16 review recommendations (branch `normandy-air-8f`, PR #130)
+
+Scott accepted all 16 recommendations of the 8f review (23 November 2026: "I agree with your recommendations").
+- **Kept as entered (1-5, 7, 8, 12-16):** SD161 and the CAFL one family with Rickard the second; Wikipedia not a family; Bases in notes only (M3); servicing echelons of Commonwealth and Allied squadrons nationality UK; No. 75 (New Zealand) Squadron RAF as UK; No 2784 Sqn RAF Regiment East Kirkby over Gransden Lodge (G295); No 9424 SE Skipton-on-Swale over Leeming (G296); RAF Regiment squadrons as ground `company` rows; No 426's "June 1944" Transport Command date left out; No 405 in No 8 Group as the lists give it; Nos 9 and 433 at 0.7; the 23 new coordinate warnings (kept alternates) accepted, no exceptions added.
+- **Question 11, R2062 and R2109 (Rickard's No 78 and No 692 Squadron pages):** cited as checked rather than deleted. `C12386` (No 78 at Breighton): reference_ids old value R2030;R1956;R001, new value R2030;R1956;R2062;R001. `C12508` (No 692 at Graveley): reference_ids old value R2030;R1956;R001, new value R2030;R1956;R2109;R001. In both, source gains the Rickard URL and source_locator gains the Rickard entry (the group line, and the Locations checked). Each link has the role `command_relationship` in `data/claim_reference_roles.csv` ("not used for the place"; the 8a precedent). Reason: the pages were read for 8f and support the group relations (CR3390, CR3493) but not the stations, so confidence stays 0.5 (old value 0.5, new value 0.5). The two "not cited" validator warnings are cleared (451 -> 449, the main count).
+- **Carried forward:** question 9 (No 415's Coastal Command relation CR3466 to point at No 16 Group in 8g) and question 10 (an 8a follow-up for No 100 Group: No 9169 SE, the No 100 Group Servicing Section, the BSDU at Foulsham as alternate) into roadmap 417; question 6 (No 1678 (Conversion) Flight) into roadmap 415 as a conditional.
+
 ## 22 November 2026 — Normandy chunk 8f: RAF Bomber Command main force, Nos 1, 3, 4, 5, 6 (RCAF) and 8 Groups (branch `normandy-air-8f`)
 
 Scott merged chunk 8e (PR #129) and asked for chunk 8f ("Go ahead and start 8f", 22 November 2026), under the accepted chunk 8 decisions M1-M14 (M5 widened to rule 26). One commit per group; window 1 June-31 August 1944.

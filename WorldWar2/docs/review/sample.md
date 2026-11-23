@@ -634,7 +634,7 @@ Value coverage: confidence 4 of 4 values; echelon 6 of 6 values; event_type 18 o
   | R781 | general | HQ 12th Army Group situation maps, 6 Jun 1944-26 Jul 1945 (Library of Congress) | archive_document | https://www.loc.gov/item/2001628569/ | sheet cs000339 situation 1200 hrs 9 May 1945 |
   | R002 | location | OpenStreetMap Nominatim geocoder | gazetteer_geocoder | https://nominatim.openstreetmap.org/ | R781: sheet cs000339 situation 1200 hrs 9 May 1945 |
 
-## Part 2: command relations (20 of 3699)
+## Part 2: command relations (20 of 3716)
 
 A relation is one dated interval of one relationship between a subject unit and a higher unit. It is listed with the claims that state it (`data/command_relation_claims.csv`), what each stated, and the sources of those claims. Dates are inclusive; a blank end with `end_unknown` true means no source ends it.
 
@@ -789,19 +789,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9383 (NL-INF-IRNEB, 1944-09-04) | asserts_start | 1944-09-04 | - | Attached to the British Second Army on 4 September and then ordered from the Seine area to Brussels (de Jong, p. 268, footnote 4) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [p. 268, footnote 4] |
 
-### R11. CR1312: Bewakingstroepen der Binnenlandse Strijdkrachten -> Binnenlandse Strijdkrachten (administrative_control)
-
-- **Subject / higher unit:** `NL-INF-BEWAK` / `NL-BS-000H`
-- **Interval:** from 1944-09-22 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
-- **Note:** The Bewakingstroepen der Binnenlandse Strijdkrachten are the guard arm of the BS, organised in the same 22 September 1944 split (de Jong, deel 10a, pp. 561-563, R894; C9389). Organic. End left open at the last linked claim (C9393, the early May 1945 London return). Review (branch small-fixes-1113, 14 November 2026, approved by Scott): old value none, new value this relation.
-- **Evidence:**
-
-  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
-  |---|---|---|---|---|---|---|
-  | C9389 (NL-INF-BEWAK, 1944-09-22) | asserts_start | 1944-09-22 | - | Van Houten gives command of the Bewakingstroepen der BS to van Dijk in the same 22 September split (de Jong, pp. 561-563) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 561-563] |
-  | C9393 (NL-INF-BEWAK, 1945-05-01) | observed_during | - | - | London war-department return for early May 1945 still reports Bewakingstroepen in the liberated south (de Jong, pp. 757-758) | R894 https://niod.contentdm.oclc.org/digital/collection/p21083coll6/id/15 [pp. 757-758] |
-
-### R12. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
+### R11. CR1515: HNoMS Stord (G26) -> 23rd Destroyer Flotilla (assigned)
 
 - **Subject / higher unit:** `NOR-DD-STORD` / `UK-DF-23`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -812,7 +800,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9631 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1426 https://en.wikipedia.org/wiki/HNoMS_Stord_(G26) [Normandy or service or loss paragraph] |
 
-### R13. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
+### R12. CR1601: Tombazis (K216) -> Assault Force G (Force G) (assigned)
 
 - **Subject / higher unit:** `GRE-CORV-TOMBAZIS` / `UK-TF-G`
 - **Interval:** from 1944-06-06 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -823,7 +811,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9701 (, ) | observed_during | - | - |  | R1279 https://www.forposterityssake.ca/RCN-DOCS/RCND0533.pdf [App. A(1) or App. C, allocation or loss mark]; R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [NHB Operation NEPTUNE booklet, force page or chronology]; R1490 https://en.wikipedia.org/wiki/HMS_Tamarisk_(K216) [Normandy or service or loss paragraph] |
 
-### R14. CR1788: HMS Bridport (J50) -> Cherbourg Bombardment Force (Task Force 129), 25 June 1944 (attached)
+### R13. CR1788: HMS Bridport (J50) -> Cherbourg Bombardment Force (Task Force 129), 25 June 1944 (attached)
 
 - **Subject / higher unit:** `UK-AM-BRIDPORT` / `US-TG-129`
 - **Interval:** from 1944-06-25 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
@@ -834,7 +822,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C9816 (, ) | observed_during | - | - |  | R1374 https://britishfriendsofnormandy.org.uk/wp-content/uploads/2019/11/NHB-Neptune-D-Day-bklt-O.pdf [chronology, 25 June, clearance sweeping by 8 fleet minesweepers of the RN 9th M/S Flotilla during the TF 129 bombardment of Cherbourg]; R1530 https://en.wikipedia.org/wiki/HMS_Bridport_(J50) [identity of the ship in the 9th Minesweeping Flotilla] |
 
-### R15. CR2523: No. 488 Squadron RNZAF -> No. 149 Wing RAF (organic)
+### R14. CR2523: No. 488 Squadron RNZAF -> No. 149 Wing RAF (organic)
 
 - **Subject / higher unit:** `NZ-SQN-488` / `UK-WG-149`
 - **Interval:** from 1944-06-29 (narrative) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis narrative; status preferred
@@ -845,7 +833,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C10978 (, ) | asserts_start | 1944-06-29 | - | 29 Jun 1944 "Nos 410 and 488 Sqns taken over" | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [488 Squadron (Zeals, Colerne)]; R1639 https://www.rafweb.org/Members%20Pages/Unit%20Details/Wings/No%20149%20Wing.htm [Unit Composition and Movements (28 Jul 1944 "No 149 Wing and squadrons moved from RAF Zeals to RAF Colerne")]; R1686 https://en.wikipedia.org/wiki/No._488_Squadron_RNZAF [Bases (28 July 1944-9 October 1944, RAF Colerne, Wiltshire)] |
 
-### R16. CR2572: No. 442 Squadron RCAF -> No. 144 (RCAF) Wing (organic)
+### R15. CR2572: No. 442 Squadron RCAF -> No. 144 (RCAF) Wing (organic)
 
 - **Subject / higher unit:** `CAN-SQN-442` / `CAN-WG-144`
 - **Interval:** from 1944-06-06 (claim_date) to 1944-07-12 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -857,7 +845,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C11112 (, ) | observed_during | - | - |  | R1621 https://www.ibiblio.org/hyperwar/UN/UK/UK-RAF-III/UK-RAF-III-XI.html; R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [442 (Canadian) Squadron, Spitfire IX (Ford, B.3 15Jun, B.4 15Jul)]; R1724 https://www.historyofwar.org/air/units/RCAF/442_wwII.html [Locations (14 May-15 June 1944: Ford (West Sussex))] |
   | C11113 (, ) | asserts_end | - | 1944-07-12 | 12 Jul 1944 No 144 Wing Disbanded (rafweb). The squadron transferred to the receiving wing on 14 July 1944. | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [B.3 15Jun]; R1724 https://www.historyofwar.org/air/units/RCAF/442_wwII.html [Locations (15 June-14 July 1944: B.3 St. Croix)] |
 
-### R17. CR2605: No. 313 (Czech) Squadron -> No. 134 (Czech) Wing RAF (organic)
+### R16. CR2605: No. 313 (Czech) Squadron -> No. 134 (Czech) Wing RAF (organic)
 
 - **Subject / higher unit:** `CZ-SQN-313` / `UK-WG-134`
 - **Interval:** from 1944-06-06 (claim_date) to 1944-07-01 (narrative); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -870,7 +858,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   | C11208 (, ) | observed_during | - | - |  | R1630 https://www.projectoverlord.co.uk/history/second-tactical-air-force-order-of-battle/ [B.10 28Jun]; R1771 https://www.historyofwar.org/air/units/RAF/313_wwII.html [Locations (June 1944: B.10 Plumetot)] |
   | C11209 (, ) | asserts_end | - | 1944-07-01 | transferred from 2nd TAF to ADGB, 1 July 1944 (rafweb No 134 Wing); later stations wait for chunk 6d | R1771 https://www.historyofwar.org/air/units/RAF/313_wwII.html [Locations (June-July 1944: Tangmere)] |
 
-### R18. CR2870: III. Flakkorps (3rd Flak Corps) -> Fifth Panzer Army (supporting)
+### R17. CR2870: III. Flakkorps (3rd Flak Corps) -> Fifth Panzer Army (supporting)
 
 - **Subject / higher unit:** `GER-FLAKK-003C` / `GER-PZA-005A`
 - **Interval:** from 1944-08-05 (narrative) to 1944-08-31 (inferred); end_unknown false; change_undated true; date_basis narrative; status preferred
@@ -881,7 +869,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C11840 (GER-FLAKK-003C, 1944-09-30) | asserts_start_and_end | 1944-08-05 | 1944-08-31 | Ellis p. 420: III Flak Corps on the Fifth Panzer Army front, 7 August 1944; Holm: most of the corps lost in the Falaise pocket; German Wikipedia: refitting from 3 September 1944 | R1933 https://www.ww2.dk/ground/hq/iiiflak.htm [what was left fell back to Germany and in September 1944 was at Cochem, supporting Army Group B, under Luftwaffenkommando West / R1937: infobox, headquarters Cochem (September 1944)]; R1937 https://de.wikipedia.org/wiki/III._Flak-Korps [R1933: what was left fell back to Germany and in September 1944 was at Cochem, supporting Army Group B, under Luftwaffenkommando West / R1937: infobox, headquarters Cochem (September 1944)] |
 
-### R19. CR2987: No. 2810 Squadron RAF Regiment -> No. 38 Group RAF (assigned)
+### R18. CR2987: No. 2810 Squadron RAF Regiment -> No. 38 Group RAF (assigned)
 
 - **Subject / higher unit:** `UK-RAFREGT-2810` / `UK-GRP-038`
 - **Interval:** from 1944-06-01 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -892,7 +880,7 @@ A relation is one dated interval of one relationship between a subject unit and 
   |---|---|---|---|---|---|---|
   | C11972 (UK-RAFREGT-2810, 1944-06-01) | observed_during | - | - |  | R1624 https://www.rafweb.org/Members%20Pages/Orders%20of%20Battle/1944/1944_06C_ADGB.htm [No 38 Group, HQ RAF Netheravon ("Tarrant Rushton: No 2810 Sqn RAF Regiment")] |
 
-### R20. CR3428: No. 463 Squadron RAAF -> No. 5 Group RAF (assigned)
+### R19. CR3428: No. 463 Squadron RAAF -> No. 5 Group RAF (assigned)
 
 - **Subject / higher unit:** `AUS-SQN-463` / `UK-GRP-005`
 - **Interval:** from 1944-06-01 (claim_date) to open (open_at_last_claim); end_unknown false; change_undated false; date_basis inferred; status preferred
@@ -902,4 +890,15 @@ A relation is one dated interval of one relationship between a subject unit and 
   | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
   |---|---|---|---|---|---|---|
   | C12432 (, ) | observed_during | - | - |  | R1956 https://www.rafweb.org/Members%20Pages/Orders%20of%20Battle/1944/1944_06C_Bomber.htm [No 5 Group, HQ St Vincents, Grantham ("No 463 Sqn RAAF, RAF Waddington")]; R2030 https://www.rafweb.org/Members%20Pages/Orders%20of%20Battle/1944/1944_06S_Bomber.htm [No 5 Group, HQ Morton Hall ("No 463 Sqn RAAF, RAF Waddington, Lancaster I/III")]; R2084 https://www.historyofwar.org/air/units/RAAF/463_wwII.html [Locations (November 1943-July 1945: Waddington)] |
+
+### R20. CR3710: No. 155 (General Reconnaissance) Wing RAF -> RAF Coastal Command (administrative_control)
+
+- **Subject / higher unit:** `UK-WG-155` / `UK-CSTCMD-000H`
+- **Interval:** from 1944-06-01 (claim_date) to open (open_at_last_claim); end_unknown true; change_undated false; date_basis inferred; status preferred
+- **Note:** No 155 (General Reconnaissance) Wing is listed among the "Units administered directly by Command HQ" of Coastal Command in the June 1944 Confidential Air Force List (rafweb); its operations were under a group (unspecified_subordination row) where a source names one. Start at the claim date; the wing was formed 22 April 1944 and disbanded 19 September 1944 (rafweb Wings 111 - 192), but no claim asserts the end, so the relation is left open at its last claim. Added in the chunk 8 follow-up pass, r [...]
+- **Evidence:**
+
+  | claim | role | stated start | stated end | what the claim stated | sources of that claim (link, locator) |
+  |---|---|---|---|---|---|---|
+  | C12758 (, ) | observed_during | - | - |  | R1958 https://www.rafweb.org/Members%20Pages/Orders%20of%20Battle/1944/1944_06C_Coastal.htm [Command HQ, Units administered directly by Command HQ ("No 155 (General Reconnaissance) Wing", no location)]; R2123 https://www.rafweb.org/Members%20Pages/Orders%20of%20Battle/1944/1944_06S_Coastal.htm [No 16 (Reconnaissance) Group, HQ Black Lion Fields ("No 155 Wing, RAF Manston, Station in ADGB")]; R2197 https://www.rafweb.org/Organsation/Wings3.htm [Wings 111 - 192 ("155 22/4/44 - 19/9/44 (General Reconnaissance)")]; R2198 https://web.archive.org/web/20120916090012/http://www.fleetairarmarchive.net/Squadrons/RAF_CoastalCommand_FAA_Groups.html [No 16 Group ("155 General Reconnaissance Wing of No 16 Group RAF Coastal Command, Stationed at Manston")]; R2200 https://www.rafweb.org/Stations/Stations-M.htm [RAF Manston ("HQ, No 155 (General Reconnaissance) Wing (22 Apr - 19 Sep 1944)")] |
 

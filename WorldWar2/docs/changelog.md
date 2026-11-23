@@ -2,6 +2,23 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Roadmap 419: Scott's acceptance of the 25 review recommendations (branch `chunk8-followups-419`, PR #132)
+
+Scott accepted all 25 recommendations of the roadmap 419 review (23 November 2026: "Please take your recommendations to these answers"). Where a question left the choice to Scott, the recommended option was taken. No data row changed: every accepted answer keeps the branch's values as entered or carries work forward.
+- **Earlier answers superseded (questions 1-8):**
+  - Q1 supersedes 8g question 20: 850 NAS reached Limavady on 1 August 1944 (`C12750` preferred, `C12738` 1 September alternate, `CR3695` ends 31 July), as changed in commit 2b.
+  - Q2 supersedes the 8g question 12 plan ("152-157 (and 135)"): No 135 Wing is not entered as a GR wing; SD161's "No 135 Wing, RAF Portreath" stays in the notes only (read as 153).
+  - Q3 supersedes the 8f question 10 plan (BSDU at Foulsham as the alternate): Foulsham `C11913` stays preferred, West Raynham `C12753` alternate (G309).
+  - Q4 supersedes the 8a entry: the No 100 Group Servicing Section at West Raynham (`C12752`) preferred, Swannington (`C11918`) alternate (G308).
+  - Q5 supersedes 8g question 16 ("keep at 0.5"): No 281 at Tiree at 0.7 (`C12541`).
+  - Q6 keeps 8g question 4: No 143 at North Coates preferred at 0.5; no dated "moves to Manston" claim; the Manston alternate `C12577` keeps the station-page reference.
+  - Q7 supersedes 8g question 17 ("848 NAS not entered"): 848 NAS entered (`C12761`, `C12762`); `CR3717` left open.
+  - Q8 supersedes 8g question 19 ("849 NAS without a relation"): `CR3716` 849 attached to No 156 Wing, 1 June-8 August 1944.
+- **Kept as entered (9-13, 15-21, 24, 25):** Niehorster counted as a source family (`niehorster_org`); No 15 Group HQ at Castle Archdale kept as alternate `C12765` (G310); Niehorster's "153" label at Harrowbeer read as 156 and not counted (`C12759` 0.5); `CR3720` (153 Wing under No 19 Group) on Niehorster alone; wings modelled with `administrative_control` to Coastal Command HQ and `unspecified_subordination` to the group; formed_date from Wings3 for 155 and 157 Wings; 811 NAS with no end claim; `CR3719` (825 NAS) open; `CR3691` (816 NAS) ends 7 August; No 1694 Flt's Great Massingham kept as alternate (`C12754`, G271); No 9169 SE with no later claim; the 819 NAS relation gap of 1-7 August kept; older "Event support" text that lists Wikipedia left unchanged; rule-25 notes for the rafweb station pages limited to the stations used.
+- **Carried forward into roadmap 420 (14, 22, 23):** Niehorster's squadron-to-wing links; 846 NAS, No 119 Squadron and No 415 Squadron's Thorney Island detachment; the Niehorster confidence sweep of the 1 June 1944 Coastal Command claims.
+- **Warnings:** validate.py 463 (458 on main; the 5 new "attached without a standing parent" warnings accepted, as in 8g question 25), coordinate check 420 (415 on main; 5 from the kept conflict groups, accepted, no exceptions added).
+- Next free ids: claims `C12766`, relations `CR3721`, references `R2213`, places `PL4894`, conflict groups `G311`, scenario 336, roadmap 421 (SC220, AT143, UL028, MSN0099 unchanged).
+
 ## 23 November 2026 — Roadmap 419: chunk 8 follow-ups (branch `chunk8-followups-419`, from main `9a882a42`)
 
 Scott accepted the 8g review (question 34) and asked for roadmap 419 ("Let's do 419", 23 November 2026). Five data commits (1, 2, 2b, 3, 4), then this documentation and build refresh; window 1 June-31 August 1944. 10 new units (`UK-SE-9169`, `UK-WG-152`-`UK-WG-157`, `UK-FAA-811`, `UK-FAA-825`, `UK-FAA-848`), claims `C12751`-`C12765` (15), relations `CR3704`-`CR3720` (17), references `R2193`-`R2212` (20), conflict groups `G308`-`G310`, no new places, scenario 335. Every changed value is annotated old value, new value, reason in its row.

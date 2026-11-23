@@ -157,6 +157,7 @@ Not stored in the claim files; rebuilt by `common.load_all_claims()` and carried
 | `place_name`, `country`, `region`, `coord_reference_id`, `coord_source_note` | the place row (new columns) |
 | `location_temporal_offset_days` | `location_date` minus `date` in days; blank when `location_date` is blank |
 | `strength_status` | `destroyed` when the `destroyed` flag is true, else `strength_json.status`, else `unknown` |
+| `sidc` (last column) | the MIL-STD-2525D / APP-6D 20-digit military symbol code of the unit on the claim date (`scripts/sidc.py`; see "Military symbol codes" below): function from `data/sidc_function_map.csv`, echelon from `data/sidc_echelon_map.csv`, standard identity from the side on the date (Allied viewpoint), status 4 when `destroyed` is true |
 | `engaged_with_names` | the display name of each unit in `engaged_with` (`<adjective> <unit_name>`, `common.display_name`), then the entries of `engaged_note` (`scripts/unit_refs.py`) |
 | `composing_units_names` | the unit name of each unit in `composing_units` (the display name when the unit's nation differs from the claiming unit's), each followed by its qualifiers from `composing_text`, then the other `composing_text` entries |
 | role `location` of a `gazetteer_geocoder` reference | `build_references.derive()`; not stored in `claim_reference_roles.csv` |
@@ -283,6 +284,29 @@ Rules checked by `scripts/validate.py` (through `scripts/allegiance.py`, `check_
 ### Coverage outputs (`build/coverage_by_unit.csv`, `build/coverage_by_month.csv`, `build/review_queue.csv`)
 
 Derived by `scripts/coverage.py` during `scripts/build.py`; columns and ranking are defined in [../docs/coverage_report.md](../docs/coverage_report.md). They read the claims, units and reference families and change nothing.
+
+
+## Military symbol codes (`data/sidc_function_map.csv`, `data/sidc_echelon_map.csv`, `data/sidc_codes.csv`; roadmap 410)
+
+Added 23 November 2026 (Scott accepted the proposal, PR #134; design and questions in `docs/symbol_codes_proposal.md`, coverage in `docs/symbol_codes_coverage.md`). Every unit gets a MIL-STD-2525D / APP-6D 20-digit numeric SIDC, **derived, never entered** (no column in `units.csv`), by `scripts/sidc.py`:
+
+| digits | field | value |
+|---|---|---|
+| 1-2 | version | `10` (2525D) |
+| 3 | context | `0` reality |
+| 4 | standard identity | side on the date, Allied viewpoint: Allied and co-belligerent `3` Friend, Axis `6` Hostile, neutral and non-aligned-belligerent `4` Neutral, no side `1` Unknown. Side = unit override (`data/unit_allegiance_overrides.csv`), else the nation row (`data/nation_allegiance.csv`); a date after the last row that applies keeps that row's side; a gap between rows has no side |
+| 5-6 | symbol set | `10` land unit (ground and air units), `30` sea surface, `35` sea subsurface (from the rule) |
+| 7 | status | `0` present; `4` present/destroyed on a claim whose `destroyed` flag is true (claims only) |
+| 8 | HQ / task force / dummy | from the rule (`0`, `2` HQ, `4` task force, `6` task force HQ) |
+| 9-10 | echelon amplifier | `amplifier_override` of the rule, else `data/sidc_echelon_map.csv`; `00` in symbol sets 30 and 35 |
+| 11-16 | entity | from the rule |
+| 17-20 | modifiers 1 and 2 | from the rule (`00` when blank) |
+
+`data/sidc_function_map.csv` (`schema/sidc_function_map.schema.json`, hand-maintained): one row per rule; conditions `domain`, `echelon`, `ship_type`, `name_pattern` (case-insensitive regular expression in `unit_name`), outputs `symbol_set`, `entity`, `modifier1`, `modifier2`, `hq_tf_dummy`, `amplifier_override`; the first `function` row whose conditions hold wins, then the `addon` rows (land units only) add modifier 2 Airborne when blank and the task-force digit. The last function row, `GZ99`, has no condition (unspecified land unit). `data/sidc_echelon_map.csv` (`schema/sidc_echelon_map.schema.json`): one amplifier per echelon value. `data/sidc_codes.csv` (`schema/sidc_codes.schema.json`): the recorded code list, the JMSML 2525D codes of symbol sets 10, 30 and 35 with the milsymbol icon key.
+
+Outputs: the `sidc` column of `build/all_claims.csv`, `build/all_claims.json`, `build/claims.geojson` and `build/other_domains/claims.csv`; `build/unit_symbols.csv` (ground units) and `build/other_domains/unit_symbols.csv` (air, naval and out_of_scope units): one row per unit and allegiance period, columns `unit_id`, `unit_name`, `nationality`, `domain`, `echelon`, `valid_from`, `valid_to` (blank = open: later dates keep the last side), `side`, `standard_identity`, `sidc` (status present), `function_rule`, `entity_label`. Periods follow the allegiance rows, not the unit's lifespan.
+
+Validator (`check_sidc`): the three tables match their schemas; every rule compiles, its echelon and domain are valid, its entity and modifiers are codes of `data/sidc_codes.csv` in its symbol set; every echelon value has a two-digit amplifier; every unit matches a rule; every derived SIDC is 20 digits (errors). Warnings: a unit that falls through to `GZ99`; a claim with no side on its date (Unknown).
 
 ## nationalities columns (`data/nationalities.csv`)
 

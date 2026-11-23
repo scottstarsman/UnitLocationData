@@ -1,0 +1,54 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "sidc_echelon_map",
+  "title": "Echelon amplifier per echelon value (data/sidc_echelon_map.csv)",
+  "description": "Hand-maintained reference table (roadmap 410, 23 November 2026). One row per value of the echelon vocabulary: the two-digit 2525D echelon amplifier (SIDC digits 9-10). Symbol sets 30 and 35 always use 00.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "echelon"
+  ],
+  "fields": [
+    {
+      "name": "echelon",
+      "type": "string",
+      "description": "A value of the echelon vocabulary; every value has exactly one row.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "amplifier",
+      "type": "string",
+      "description": "Two digits: 11-18 echelon at brigade and below, 21-26 at division and above, 00 none.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "amplifier_label",
+      "type": "string",
+      "description": "The 2525D label of the amplifier.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "fit",
+      "type": "string",
+      "description": "exact, nearest or n/a.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "Remarks and overrides.",
+      "constraints": {
+        "required": false
+      }
+    }
+  ]
+}

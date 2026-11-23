@@ -1,13 +1,13 @@
 # Symbol codes (SIDC) coverage report (roadmap 410 proposal)
 
-Generated 23 November 2026 on branch `symbol-codes-410` from `data/units.csv` (main `62e65fd7`), `data/sidc_function_map.csv` and `data/sidc_echelon_map.csv` with a scratch evaluator that is not part of the repository. The evaluator only shows what the proposed rules would do; the derivation script, build output and check come after Scott approves the proposal (`docs/symbol_codes_proposal.md`).
+Generated 23 November 2026 on branch `symbol-codes-410` from `data/units.csv` (main `62e65fd7`), `data/sidc_function_map.csv` and `data/sidc_echelon_map.csv` with a scratch evaluator that is not part of the repository; regenerated after Scott accepted the proposal (23 November 2026), with the question 12 rule for the Führer-Begleit-Brigade. The derived codes themselves are in `build/unit_symbols.csv`, `build/other_domains/unit_symbols.csv` and the `sidc` column of the claims outputs (`scripts/sidc.py`).
 
 Rule order: the first `function` rule whose conditions all hold (domain, echelon, ship_type, name pattern; a blank domain in `units.csv` counts as ground) gives the symbol set, entity and modifiers; then the two `addon` rules apply to land units only. In the SIDC patterns below `S` stands for the standard identity, which comes from the allegiance table on the date.
 
 ## Summary
 
 - Units: 2635. Mapped by a rule: 2635. Fall through to the unspecified land default (GZ99): 0.
-- By kind of match: default 1328, exact 694, no-exact 410, nearest 188, default-infantry 15.
+- By kind of match: default 1328, exact 695, no-exact 410, nearest 188, default-infantry 14.
   - `exact`: the 2525D entity is the arm or ship type itself. `nearest`: no exact entity, the nearest one (listed in the proposal). `no-exact`: one of the no-exact-symbol cases Scott decided on 23 November (headquarters, Kampfgruppen, fortresses, naval formations and so on). `default`: the domain default (other flying units, other naval formations). `default-infantry`: a land unit whose name names no arm (listed below).
 - Add-on rules: ADD-ABN (modifier 2 Airborne) 3 units; ADD-TF (Task Force digit) 31 units.
 - Ambiguous (the rule would change if the parenthesised part of the name were ignored, or the function changed on a date): 47 units, of which the ones that need a decision are listed below.
@@ -68,7 +68,7 @@ Rule order: the first `function` rule whose conditions all hold (domain, echelon
 | GS01 | exact | any | `Nachrichten\|Signal` | `100S1000161110000001` | 1 |
 | GT01 | exact | any | `Tank Destroyer\|Panzerjäger\|Anti-Tank\|Antitank` | `100S1000161204000001` | 2 |
 | GT02 | nearest | any | `Sturmgeschütz\|Assault Gun\|StuG` | `100S1000181204010000` | 1 |
-| GM01 | exact | any | `Panzergrenadier\|Panzer-Grenadier\|Armored Infantry\|Mechanized` | `100S1000211211020000` | 4 |
+| GM01 | exact | any | `Panzergrenadier\|Panzer-Grenadier\|Armored Infantry\|Mechanized\|Führer-Begleit` | `100S1000211211020000` | 5 |
 | GP01 | exact | any | `Airborne\|Parachute\|Fallschirm\|Luftlande\|Glider\|Air Landing` | `100S1000231211000001` | 32 |
 | GK01 | no-exact | any | `Kampfgruppe\|Combat Command\|Task Force\|Kampfgruppen` | `100S1004171210000000` | 29 |
 | GR01 | exact | any | `Heavy Panzer\|schwere Panzer\|s\.Pz\|Heavy Tank` | `100S1000161205000015` | 1 |
@@ -79,7 +79,7 @@ Rule order: the first `function` rule whose conditions all hold (domain, echelon
 | GL01 | nearest | any | `Polizei\|Police` | `100S1000171417000000` | 1 |
 | GU01 | nearest | any | `RAF Regiment` | `100S1000151211000000` | 41 |
 | GI01 | exact | any | `Infantry\|Infanterie\|Grenadier\|Volksgrenadier\|Rifle\|Marine\|Landesschützen\|Sicherungs\|Stoottroepen\|Bewakingstroepen\|Binnenlandse Strijdkrachten\|Feld-Division\|Field Division\|Jäger` | `100S1000181211000000` | 172 |
-| GI02 | default-infantry | any | `Division\|Regiment\|Brigade\|Battalion\|Bataillon` | `100S1000211211000000` | 15 |
+| GI02 | default-infantry | any | `Division\|Regiment\|Brigade\|Battalion\|Bataillon` | `100S1000211211000000` | 14 |
 | GH01 | no-exact | any | `Army Group\|Heeresgruppe\|Army\|Armee\|Corps\|Korps\|Group\|Détachement d.Armée\|Forces of the` | `100S1000231210000000` | 81 |
 | GZ99 | default | any | (any) |  | 0 |
 | ADD-ABN | addon | any | `Airborne\|Parachute\|Fallschirm\|Luftlande\|Glider\|Air Landing` |  | 3 |
@@ -90,7 +90,7 @@ Rule order: the first `function` rule whose conditions all hold (domain, echelon
 - **GZ99 unspecified land unit:** 0 units.
 - **AF99 fixed-wing default:** 1007 flying units and air commands whose names give no reconnaissance, naval or ground-service role (bombardment, fighter, troop carrier, liaison squadrons and groups, RAF numbered squadrons, Geschwader, Gruppen, Staffeln, commands). This is the intended symbol for them, not a gap; the proposal asks whether bomber, fighter and transport units should get modifiers (question 9).
 - **NF99 naval-formation default:** 321 flotillas, squadrons, divisions and forces whose names give no mine-warfare, torpedo, escort or anti-submarine role (assault, LCT, LCI, LST, build-up, motor launch, landing barge, destroyer and support flotillas, assault groups, bombarding forces). This is the surface-group symbol Scott approved.
-- **GI02 land unit with no arm in its name, drawn as infantry:** 15 units:
+- **GI02 land unit with no arm in its name, drawn as infantry:** 14 units:
 
   - `FR-INF-GIRONDE` French Gironde Marching Division (Division de marche Gironde) (division)
   - `GER-DIV-136ZBV` Division z.b.V. 136 (division)
@@ -100,7 +100,6 @@ Rule order: the first `function` rule whose conditions all hold (domain, echelon
   - `GER-DIV-905` Division Nr. 905 (division)
   - `GER-INF-HUTTN` Division Ulrich von Hutten (division)
   - `GER-INF-SCHRN` Division Scharnhorst (division)
-  - `GER-PG-FUEBE` Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945) (brigade)
   - `GER-RES-148D` 148th Reserve Division (division)
   - `GER-RES-157D` 157th Reserve Division (division)
   - `GER-RES-158D` 158th Reserve Division (division)
@@ -112,12 +111,12 @@ Rule order: the first `function` rule whose conditions all hold (domain, echelon
 
 Each of these units matches a different entity when the part of its name in parentheses is ignored. Most are not real ambiguities (the parenthesis carries the role, as in "No. 35 (Reconnaissance) Wing RAF" or "(Task Group 124.3)"); the ones that need a decision are marked **decide**.
 
-- `GER-ARMY-LUETT` Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944): rule GR02 (`120500`); without the parenthesis GH01 (`121000`). decide (question 12): an army-level group of two panzer corps for two days; armour from the parenthesis, combined arms from "Armeegruppe".
-- `GER-FLAKA-155-1` I./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decide (question 5): as Flak-Regiment 155 (W).
-- `GER-FLAKA-155-2` II./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decide (question 5): as Flak-Regiment 155 (W).
-- `GER-FLAKA-155-3` III./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decide (question 5): as Flak-Regiment 155 (W).
-- `GER-FLAKA-155-4` IV./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decide (question 5): as Flak-Regiment 155 (W).
-- `GER-FLAKR-155` Flak-Regiment 155 (W) (V-1 regiment): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decide (question 5): V-1 regiment drawn as Fires/Missile rather than air defense.
+- `GER-ARMY-LUETT` Armeegruppe Lüttwitz (XXXIX and XLVII Panzer Corps, 30-31 December 1944): rule GR02 (`120500`); without the parenthesis GH01 (`121000`). decided (question 12, accepted 23 November 2026): an army-level group of two panzer corps for two days; armour from the parenthesis, combined arms from "Armeegruppe".
+- `GER-FLAKA-155-1` I./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decided (question 5, accepted 23 November 2026): as Flak-Regiment 155 (W).
+- `GER-FLAKA-155-2` II./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decided (question 5, accepted 23 November 2026): as Flak-Regiment 155 (W).
+- `GER-FLAKA-155-3` III./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decided (question 5, accepted 23 November 2026): as Flak-Regiment 155 (W).
+- `GER-FLAKA-155-4` IV./Flak-Regiment 155 (W) (V-1 battalion): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decided (question 5, accepted 23 November 2026): as Flak-Regiment 155 (W).
+- `GER-FLAKR-155` Flak-Regiment 155 (W) (V-1 regiment): rule AD01 (`130700`); without the parenthesis AD02 (`130100`). decided (question 5, accepted 23 November 2026): V-1 regiment drawn as Fires/Missile rather than air defense.
 - `GER-WK-XI` Stellvertretendes Generalkommando XI (Wehrkreis XI): rule HQ03 (`110000`); without the parenthesis GZ99 (`000000`). no decision needed: the parenthesis carries the role.
 - `UK-WG-034` No. 34 (Photographic Reconnaissance) Wing RAF: rule AR01 (`120801`); without the parenthesis AF99 (`120800`). no decision needed: the parenthesis carries the role.
 - `UK-WG-035` No. 35 (Reconnaissance) Wing RAF: rule AR01 (`120801`); without the parenthesis AF99 (`120800`). no decision needed: the parenthesis carries the role.
@@ -129,11 +128,11 @@ Each of these units matches a different entity when the part of its name in pare
 - `UK-WG-156` No. 156 (General Reconnaissance) Wing RAF: rule AR01 (`120801`); without the parenthesis AF99 (`120800`). no decision needed: the parenthesis carries the role.
 - `UK-WG-157` No. 157 (General Reconnaissance) Wing RAF: rule AR01 (`120801`); without the parenthesis AF99 (`120800`). no decision needed: the parenthesis carries the role.
 - `US-BG-025` 25th Bombardment Group (Reconnaissance): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). no decision needed: the parenthesis carries the role.
-- `US-FG-363` 363rd Fighter Group (363rd Tactical Reconnaissance Group from September 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decide (question 11): fighter group until September 1944, tactical reconnaissance group after; one function for all dates.
-- `US-FS-380` 380th Fighter Squadron (160th Tactical Reconnaissance Squadron from 25 August 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decide (question 11): fighter squadron until 25 August 1944, reconnaissance after.
-- `US-FS-381` 381st Fighter Squadron (161st Tactical Reconnaissance Squadron from 25 August 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decide (question 11): as 380.
-- `US-FS-382` 382nd Fighter Squadron (162nd Tactical Reconnaissance Squadron from 25 August 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decide (question 11): as 380.
-- `US-TDB-001B` Task Force A (1st Tank Destroyer Brigade): rule GT01 (`120400`); without the parenthesis GK01 (`121000`). decide (question 12): "Task Force A" is the 1st Tank Destroyer Brigade; drawn as antitank with the Task Force digit.
+- `US-FG-363` 363rd Fighter Group (363rd Tactical Reconnaissance Group from September 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decided (question 11, accepted 23 November 2026): fighter group until September 1944, tactical reconnaissance group after; one function for all dates.
+- `US-FS-380` 380th Fighter Squadron (160th Tactical Reconnaissance Squadron from 25 August 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decided (question 11, accepted 23 November 2026): fighter squadron until 25 August 1944, reconnaissance after.
+- `US-FS-381` 381st Fighter Squadron (161st Tactical Reconnaissance Squadron from 25 August 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decided (question 11, accepted 23 November 2026): as 380.
+- `US-FS-382` 382nd Fighter Squadron (162nd Tactical Reconnaissance Squadron from 25 August 1944): rule AR01 (`120801`); without the parenthesis AF99 (`120800`). decided (question 11, accepted 23 November 2026): as 380.
+- `US-TDB-001B` Task Force A (1st Tank Destroyer Brigade): rule GT01 (`120400`); without the parenthesis GK01 (`121000`). decided (question 12, accepted 23 November 2026): "Task Force A" is the 1st Tank Destroyer Brigade; drawn as antitank with the Task Force digit.
 - `US-TG-122` Western Naval Task Force (Task Force 122): rule NF01 (`121002`); without the parenthesis NF99 (`121000`). no decision needed: the parenthesis carries the role.
 - `US-TG-124` Assault Force O, Omaha Beach (Task Force 124): rule NF01 (`121002`); without the parenthesis NF99 (`121000`). no decision needed: the parenthesis carries the role.
 - `US-TG-124-10` Minesweeper Group, Assault Force O (Task Group 124.10): rule NF02 (`121003`); without the parenthesis NF06 (`121000`). no decision needed: the parenthesis carries the role.
@@ -159,8 +158,8 @@ Each of these units matches a different entity when the part of its name in pare
 - `US-TG-129` Cherbourg Bombardment Force (Task Force 129), 25 June 1944: rule NF01 (`121002`); without the parenthesis NF99 (`121000`). no decision needed: the parenthesis carries the role.
 - `US-TG-129-1` Cherbourg Bombardment Group 1 (Task Group 129.1): rule NF02 (`121003`); without the parenthesis NF99 (`121000`). no decision needed: the parenthesis carries the role.
 - `US-TG-129-2` Cherbourg Bombardment Group 2 (Task Group 129.2): rule NF02 (`121003`); without the parenthesis NF99 (`121000`). no decision needed: the parenthesis carries the role.
-- `US-PRS-155` 155th Photographic Squadron (423rd Night Fighter Squadron until 22 June 1944): rule AR01 (reconnaissance) for all dates. decide (question 11).
-- `GER-PG-FUEBE` Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945): rule GI02 (infantry); its id token `PG` says panzergrenadier, but the name names no arm. decide (question 12).
+- `US-PRS-155` 155th Photographic Squadron (423rd Night Fighter Squadron until 22 June 1944): rule AR01 (reconnaissance) for all dates. decided (question 11, accepted 23 November 2026).
+- `GER-PG-FUEBE` Führer-Begleit-Brigade (Führer-Begleit-Division from 26 January 1945): rule GM01 (mechanized infantry) since question 12 was accepted (23 November 2026; old: GI02 infantry default).
 
 ## Codes used and their verification
 

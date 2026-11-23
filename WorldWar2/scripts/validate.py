@@ -11,6 +11,8 @@ date rules (valid_to not before valid_from, ranges, bases, end_unknown), the evi
 listing and sourced dates), and every contradictory overlap (same relationship class, different higher units of one echelon) is documented or an error.
 The rebuilt per-claim entries (what the old command_relationships column held) are still checked: valid keys, relationship values and resolving unit_ids (an entry with unit_id null must be relationship unknown with a note),
 every row has a source URL, the columns repeated from units.csv (unit_name, nationality, echelon, branch) equal the unit table (theater is per row and must match the row's operation).
+Military symbol codes (scripts/sidc.py, roadmap 410): data/sidc_function_map.csv, data/sidc_echelon_map.csv and data/sidc_codes.csv match their schemas, every rule's codes
+are in the code list, every echelon has an amplifier, every unit maps and every derived SIDC is 20 digits; a GZ99 fall-through and a claim with no side are warnings.
 Nationalities (data/nationalities.csv): header, unique code and name, kind vocabulary, adjective set; every unit's nationality is a row of the table,
 its unit_id prefix is the row's code and its claim folder is the lower-case name.
 Unit references in claims (scripts/unit_refs.py, see schema/README.md): engaged_with and composing_units are `;` lists of unit_ids (or the sentinel `unknown` alone),
@@ -1587,6 +1589,18 @@ def check_allegiance(units, vocabs):
         err(where, msg)
 
 
+def check_sidc(units, claims):
+    """Military symbol codes (roadmap 410, scripts/sidc.py): the three tables match their schemas; every rule compiles, uses vocabulary values and codes of
+    data/sidc_codes.csv (entity in its symbol set, modifiers); every echelon value has a two-digit amplifier; every unit matches a rule and every derived
+    SIDC is 20 digits (errors). A unit that falls through to GZ99 (unspecified) and a claim with no side on its date (standard identity Unknown) are warnings."""
+    import sidc
+    errs, warns = sidc.check(units, claims)
+    for where, msg in errs:
+        err(where, msg)
+    for where, msg in warns:
+        warn(where, msg)
+
+
 MISSION_START = '1939-09-01'
 TIME_RE = re.compile(r'([01][0-9]|2[0-3]):[0-5][0-9]')
 
@@ -2037,6 +2051,7 @@ def main():
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
     check_allegiance(units, vocabs)
+    check_sidc(units, all_rows)
     check_lifespan(units, all_rows)
     mission_rows = check_missions(units, all_rows, place_rows, aircraft, vocabs, relset)
 

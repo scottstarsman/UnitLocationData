@@ -6,7 +6,8 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         command_relationships (rebuilt from data/command_relations.csv and data/command_relation_claims.csv),
                                         place_name, location_name (place name + location_qualifier), country, region, coord_reference_id and
                                         coord_source_note (from data/places.csv), strength_status (destroyed flag, else strength_json status, else unknown)
-                                        and location_temporal_offset_days (location_date - date); see scripts/places.py
+                                        and location_temporal_offset_days (location_date - date); see scripts/places.py; and, last, sidc: the
+                                        MIL-STD-2525D military symbol code of the unit on the claim date (scripts/sidc.py, roadmap 410)
   build/claims.geojson                  one Point feature per claim (lon, lat; the claim's own point, which equals its place's unless coord_override) with main properties
   build/places.csv                      derived view of data/places.csv: the place columns plus claims_count, units_count, first and last claim date
   build/places.geojson                  one Point feature per place with its main properties and claims_count
@@ -38,6 +39,9 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/organic_relations.csv           the preferred `organic` relations only (same columns as command_relations.csv, all domains); read by scripts/who_controls.py for
                                         the organic fallback and by nothing else (command_relations.csv keeps excluding `organic`)
   build/unit_references.csv             unit_id -> reference_id links (formed_date_source, listing_source, initial_parent_source)
+  build/unit_symbols.csv                one row per unit and allegiance period: valid_from, valid_to (blank = open: a later date keeps the last side), side,
+                                        standard_identity (Allied viewpoint) and the sidc for that period (status present), with the function rule
+                                        (scripts/sidc.py, roadmap 410); build/other_domains/unit_symbols.csv the same for the air, naval and out_of_scope units
 
 Do not hand-edit anything in build/: edit data/claims/, data/command_relations.csv or data/command_relation_claims.csv and re-run this script.
 
@@ -58,11 +62,12 @@ import places as placesmod  # noqa: E402
 import lineage  # noqa: E402
 import coverage as coveragemod  # noqa: E402
 import missions as missionsmod  # noqa: E402
+import sidc as sidcmod  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
              'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
-             'location_temporal_offset_days', 'reference_ids', 'source_locator']
+             'location_temporal_offset_days', 'reference_ids', 'source_locator', 'sidc']
 DERIVED = ['operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'operation_path']   # appended to all_claims.csv from data/operations.csv
 NUMERIC = {'precision_km', 'confidence', 'location_temporal_offset_days'}
 PLACES_OUT_HEADER = placesmod.HEADER + ['claims_count', 'units_count', 'first_claim_date', 'last_claim_date']
@@ -78,7 +83,7 @@ def all_claims_header(stored):
     for c in stored:
         h.append(c)
         h.extend(after.get(c, []))
-    return h + DERIVED
+    return h + DERIVED + ['sidc']   # sidc: derived by scripts/sidc.py (roadmap 410)
 
 
 def places_outputs(rows):
@@ -273,6 +278,10 @@ def outputs():
         r.update(ops.labels(r['operation_id'], r['date']))
     for r in rows:
         r.update(ops.labels(r['operation_id'], r['date']))
+    coder = sidcmod.Coder()
+    all_units_rows = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
+    for r in rows + other_rows:
+        r['sidc'] = coder.claim_sidc(all_units_rows[r['unit_id']], r)
     header = all_claims_header(header)   # the derived columns (command_relationships, place and derived-value columns, operations) are not claim-file columns
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows), 'other_domains/claims.csv': table(other_rows)}
@@ -298,6 +307,8 @@ def outputs():
     out['units.csv'], out['units.json'] = units_outputs((uh, ground))
     oh = uh + common.OTHER_ONLY_UNIT_COLUMNS
     out['other_domains/units.csv'] = common.csv_bytes(oh, [[u[c] for c in oh] for u in urows if u['unit_id'] in other])
+    out['unit_symbols.csv'] = common.csv_bytes(sidcmod.UNIT_SYMBOLS_HEADER, coder.unit_rows(ground))
+    out['other_domains/unit_symbols.csv'] = common.csv_bytes(sidcmod.UNIT_SYMBOLS_HEADER, coder.unit_rows([u for u in urows if u['unit_id'] in other]))
     out['other_domains/ship_classes.csv'] = ship_classes_output()
     out['other_domains/aircraft_types.csv'] = aircraft_types_output()
     out['other_domains/missions.csv'] = common.csv_bytes(missionsmod.BUILD_HEADER, missionsmod.build_rows())   # data/missions (J1); never part of the claims or relations

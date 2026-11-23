@@ -1,0 +1,134 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "sidc_function_map",
+  "title": "Military symbol function rules (data/sidc_function_map.csv)",
+  "description": "Hand-maintained reference table (roadmap 410; Scott accepted the proposal on 23 November 2026). One row per rule that turns a unit of data/units.csv into the date-independent digits of its MIL-STD-2525D / APP-6D SIDC (symbol set, HQ/TF/dummy, entity, modifiers, echelon override). scripts/sidc.py applies the first `function` row (in file order) whose conditions all hold, then the `addon` rows to land units. The last function row is GZ99 with no condition. See docs/symbol_codes_proposal.md.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "rule_id"
+  ],
+  "fields": [
+    {
+      "name": "rule_id",
+      "type": "string",
+      "description": "Unique rule id (for example GI01, SH-DD).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "kind",
+      "type": "string",
+      "description": "`function` (gives the symbol) or `addon` (land units only: modifier 2 Airborne when still blank, or the Task Force digit).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "Condition: ground, air or naval (a blank domain in data/units.csv counts as ground); blank = any.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "echelon",
+      "type": "string",
+      "description": "Condition: an echelon value (vocabulary echelon); blank = any.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "ship_type",
+      "type": "string",
+      "description": "Condition: the unit's ship_type; blank = any.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "name_pattern",
+      "type": "string",
+      "description": "Condition: a Python regular expression searched case-insensitively in unit_name; blank = any.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "symbol_set",
+      "type": "string",
+      "description": "Digits 5-6: 10 Land Unit, 30 Sea Surface, 35 Sea Subsurface (blank on addon rows).",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "entity",
+      "type": "string",
+      "description": "Digits 11-16: the entity/type/subtype code of data/sidc_codes.csv in that symbol set.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "modifier1",
+      "type": "string",
+      "description": "Digits 17-18 (blank = 00); a modifier1 code of data/sidc_codes.csv.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "modifier2",
+      "type": "string",
+      "description": "Digits 19-20 (blank = 00); a modifier2 code of data/sidc_codes.csv.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "hq_tf_dummy",
+      "type": "string",
+      "description": "Digit 8: 0 none, 2 headquarters, 4 task force (addon: 4, or 6 when the rule already gave 2).",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "amplifier_override",
+      "type": "string",
+      "description": "Digits 9-10 instead of the echelon map (two digits), for example 26 for OKW; blank = from data/sidc_echelon_map.csv.",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "entity_label",
+      "type": "string",
+      "description": "The 2525D label of the entity (or what the addon adds).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "case",
+      "type": "string",
+      "description": "exact, nearest, no-exact, default, default-infantry or addon (docs/symbol_codes_coverage.md).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "Why the rule maps as it does; changes are annotated here and in docs/changelog.md.",
+      "constraints": {
+        "required": false
+      }
+    }
+  ]
+}

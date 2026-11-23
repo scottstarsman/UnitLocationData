@@ -68,7 +68,7 @@ One row per rule. Columns: `rule_id`; `kind` (`function` or `addon`); conditions
 
 How a unit is coded: the first `function` row (in file order) whose conditions all hold gives the symbol set, entity, modifiers, HQ digit and any echelon override; for land units the two `addon` rows then add modifier 2 Airborne (when still blank) and the Task Force digit. The order is: top headquarters; ships by `ship_type`; naval formations; air defense and V-1; air units (services, rescue, staging posts, naval aviation, reconnaissance, then the fixed-wing default); land units (fortresses, artillery, engineers, signals, antitank, assault guns, panzergrenadiers, airborne, Kampfgruppen and task forces, armour, reconnaissance, mountain, commandos, police, RAF Regiment, infantry, unnamed-arm formations, higher formations); and the unspecified fall-through.
 
-Coverage (details and every default or ambiguous unit in the [coverage report](symbol_codes_coverage.md)): all 2,635 units are mapped and none falls through to the unspecified default. By kind: 694 exact, 188 nearest, 410 no-exact cases, 1,328 domain defaults (1,007 fixed-wing flying units, 321 naval formations; both are the intended symbols), 15 land units with no arm in their name drawn as infantry. Largest rules: fixed-wing default 1,007, naval-formation default 321, infantry 172, servicing units 165, mine sweepers 102, destroyers 92, combined-arms higher formations 81.
+Coverage (details and every default or ambiguous unit in the [coverage report](symbol_codes_coverage.md); the counts are those of the proposal, before question 12 moved the Führer-Begleit-Brigade from the infantry default to GM01, which makes 695 exact and 14 default-infantry): all 2,635 units are mapped and none falls through to the unspecified default. By kind: 694 exact, 188 nearest, 410 no-exact cases, 1,328 domain defaults (1,007 fixed-wing flying units, 321 naval formations; both are the intended symbols), 15 land units with no arm in their name drawn as infantry. Largest rules: fixed-wing default 1,007, naval-formation default 321, infantry 172, servicing units 165, mine sweepers 102, destroyers 92, combined-arms higher formations 81.
 
 ### Ships (symbol set 30, submarines 35)
 
@@ -129,7 +129,9 @@ Measured on today's claims (Allied viewpoint): 5,351 claims Friend, 4,140 Hostil
 | Commandos and 1st Special Service Force | 121100 Infantry with modifier 1 Ranger (question 18) | 3 |
 | Polizei-Regiment Mönchengladbach | 141700 Security (question 18) | 1 |
 
-## 7. What the code step will add (after approval)
+## 7. What the code step adds (done 23 November 2026 on this branch; see `schema/README.md`, "Military symbol codes")
+
+As built: `scripts/sidc.py`, the recorded code list `data/sidc_codes.csv` (528 JMSML codes of symbol sets 10, 30 and 35 with the milsymbol icon keys), schemas for the three tables, `build/unit_symbols.csv` and `build/other_domains/unit_symbols.csv` (the air, naval and out_of_scope units, following standing rule 22), the `sidc` column of every claims output, the validator check `check_sidc` and semantic scenarios 337-338. The plan as written before approval:
 
 - `scripts/sidc.py`: reads the two maps and the allegiance tables and computes the codes as above; `build.py` writes `build/unit_symbols.csv` and the `sidc` column of `build/all_claims.csv` (and `all_claims.json`, `claims.geojson`).
 - A validator check: every map row's codes exist in a pinned code list (the entity and modifier table of the coverage report), every unit matches a rule, no unit falls through to GZ99 without a warning, every echelon value has an amplifier row, and the build output matches a fresh derivation.

@@ -51,7 +51,7 @@ GE02,function,,,,Pionier|Engineer|Sapper,10,140700,,,0,,Engineer,exact,
 GS01,function,,,,Nachrichten|Signal,10,111000,,,0,,Signal,exact,
 GT01,function,,,,Tank Destroyer|Panzerjäger|Anti-Tank|Antitank,10,120400,,,0,,Antitank/Antiarmor,exact,Airborne (Fallschirm-) adds modifier 2 Airborne; a Task Force name adds the TF amplifier (see note in the proposal).
 GT02,function,,,,Sturmgeschütz|Assault Gun|StuG,10,120401,,,0,,"Antitank/Antiarmor, Armored",nearest,Assault-gun brigade.
-GM01,function,,,,Panzergrenadier|Panzer-Grenadier|Armored Infantry|Mechanized,10,121102,,,0,,"Infantry, Armored/Mechanized/Tracked",exact,
+GM01,function,,,,Panzergrenadier|Panzer-Grenadier|Armored Infantry|Mechanized|Führer-Begleit,10,121102,,,0,,"Infantry, Armored/Mechanized/Tracked",exact,Führer-Begleit added 23 November 2026 (question 12 accepted): the Führer-Begleit-Brigade moved from GI02 (infantry default) to this rule.
 GP01,function,,,,Airborne|Parachute|Fallschirm|Luftlande|Glider|Air Landing,10,121100,,01,0,,Infantry,exact,Modifier 2 Airborne; airborne task forces keep the TF amplifier.
 GK01,function,,,,Kampfgruppe|Combat Command|Task Force|Kampfgruppen,10,121000,,,4,,Combined Arms,no-exact,Task-organized group: combined arms with the Task Force amplifier. Airborne and tank destroyer task forces are matched earlier.
 GR01,function,,,,Heavy Panzer|schwere Panzer|s\.Pz|Heavy Tank,10,120500,,15,0,,Armor,exact,Modifier 2 Heavy.

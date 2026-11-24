@@ -2780,11 +2780,11 @@ def scenario_172_unit_domain():
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     expect(s + ': domain', (common.unit_domain(units['GER-FLK-002C']), common.unit_domain(units['GER-FJ-005D'])), ('air', 'ground'))
     main = {r['claim_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
-    # C8332/C8333 added with B-283 (R845); the air-naval pilot (scenarios 244-247) added C9405-C9436
-    early_air = ['C8284', 'C8285', 'C8332', 'C8333']
-    expect(s + ': early air claims are in all_claims.csv with domain=air',
-           ([c in main for c in early_air], [main[c]['domain'] for c in early_air]),
-           ([True] * 4, ['air'] * 4))
+    # C8332/C8333 added with B-283 (R845); C8333 is Marinegruppe West (naval). The air-naval pilot (scenarios 244-247) added C9405-C9436.
+    early = ['C8284', 'C8285', 'C8332', 'C8333']
+    expect(s + ': early air and naval claims are in all_claims.csv with the unit domain',
+           ([c in main for c in early], [main[c]['domain'] for c in early]),
+           ([True] * 4, ['air', 'air', 'air', 'naval']))
     bu = common.read_dicts(os.path.join(common.BUILD_DIR, 'units.csv'))
     expect(s + ': unified units.csv has domain and includes II Fliegerkorps',
            ('domain' in bu[0], any(u['unit_id'] == 'GER-FLK-002C' and u['domain'] == 'air' for u in bu[1])), (True, True))
@@ -4364,7 +4364,9 @@ def scenario_258_air_command_relations():
     with contextlib.redirect_stdout(buf):
         wc.main([DIV_84, '1944-12-01'])
     expect(s + ': a ground answer prints no administrative chain block', 'administrative chain' in buf.getvalue(), False)
-    expect(s + ': the ground table does not hold the air relations', [r['relation_id'] for r in _ROWS if r['subject_unit_id'] == 'US-FG-366'], [])
+    expect(s + ': the 366th air relations are in the unified command_relations table with domain=air',
+           sorted((r['relation_id'], r.get('domain')) for r in _ROWS if r['subject_unit_id'] == 'US-FG-366'),
+           [(rid, 'air') for rid in ('CR1298', 'CR1306', 'CR1307', 'CR1308', 'CR1309')])
 
 
 def scenario_259_irene_after_march_1945():

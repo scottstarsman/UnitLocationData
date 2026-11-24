@@ -4099,7 +4099,7 @@
     "location_name": "Étampes, Essonne",
     "location_represents": "headquarters",
     "precision_km": 5,
-    "confidence": 0.5,
+    "confidence": 0.7,
     "event_type": "hq_observation",
     "current_activity": "headquarters at Étampes",
     "operation_id": "OP-PRE-INVASION",
@@ -4112,8 +4112,8 @@
     "location_date": "1944-06-01",
     "location_basis": "documented_on_date",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R1925;R004;R1855;R001",
-    "source_locator": "R1925: Stab \"6.40 - 9.44 | Etampes\" / formation line \"Formed 6.40 in Etampes, near Paris\" / R004: Luftflotte 3 table, Luftgaukommando Westfrankreich (6 June 1944, no units, no place) / R1855: Luftflotte 3, subordinate commands \"Luftgau-Kommando Westfrankreich, 6.40 - 9.44\"",
+    "reference_ids": "R1925;R004;R1855;R2216;R001",
+    "source_locator": "R1925: Stab \"6.40 - 9.44 | Etampes\" / formation line \"Formed 6.40 in Etampes, near Paris\" / R004: Luftflotte 3 table, Luftgaukommando Westfrankreich (6 June 1944, no units, no place) / R1855: Luftflotte 3, subordinate commands \"Luftgau-Kommando Westfrankreich, 6.40 - 9.44\"; R2216: ms -6- (Fold3 page 59), Gef.Stand ETAMPES [blurred], for the period to 5 June 1944",
     "sidc": "10061002221100000000"
    }
   },
@@ -6726,6 +6726,48 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.8883,
+     48.9603
+    ]
+   },
+   "properties": {
+    "claim_id": "C12775",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-05",
+    "place_id": "PL4895",
+    "location_name": "Meaux, Seine-et-Marne (east of)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "corps command post east of Meaux before the invasion",
+    "operation_id": "OP-PRE-INVASION",
+    "operation": "Western Europe before the Normandy landings",
+    "operation_type": "umbrella",
+    "campaign": null,
+    "operation_name": "Pre-invasion",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-06-05",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R001",
+    "source_locator": "R2216: ms -7- (Fold3 page 60), Korpsgefechtsstand east of Meaux, MEAUX partly blurred, ms -5- and Anlage 1 (Fold3 pages 58 and 96), Gliederung bis 5.6.1944, Anlage 2 (Fold3 pages 97 and 100), Meaux marked",
+    "sidc": "10061000221301000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      2.2957,
      49.8942
     ]
@@ -8147,6 +8189,48 @@
     "reference_ids": "R448;R001",
     "source_locator": null,
     "sidc": "10061004171210000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.7028,
+     49.2794
+    ]
+   },
+   "properties": {
+    "claim_id": "C12781",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKSR-001",
+    "unit_name": "Flak-Sturm-Regiment 1 (Stab Flak-Regiment 431)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "regiment/battle_group",
+    "branch": "Luftwaffe",
+    "date": "1944-06-06",
+    "place_id": "PL0033",
+    "location_name": "Bayeux (area west of)",
+    "location_represents": "main_body",
+    "precision_km": 25,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "regiment in the invasion sector west of Bayeux, detached from the corps",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-06",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2217;R2216;R001",
+    "source_locator": "R2217: p.-4- (Fold3 page 106); R2216: ms -6-, -8- and -34- (Fold3 pages 59, 61 and 87), Anlage 2 (Fold3 page 100), comment ms -a- (Fold3 page 93)",
+    "sidc": "10061000171301000000"
    }
   },
   {
@@ -10254,6 +10338,48 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     2.3522,
+     48.8567
+    ]
+   },
+   "properties": {
+    "claim_id": "C12776",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-07",
+    "place_id": "PL0271",
+    "location_name": "vicinity of Paris",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "relocation",
+    "current_activity": "corps troops reach the Paris area on the march from the Somme mouth to Normandy",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-07",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R2217;R001",
+    "source_locator": "R2216: ms -9- and -10- (Fold3 pages 62-63); R2217: p.-4- (Fold3 page 106)",
+    "sidc": "10061000221301000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.7028,
      49.2794
     ]
@@ -10926,6 +11052,48 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C12777",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-06-08",
+    "place_id": "PL0057",
+    "location_name": "Caen (west and south-west of)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "arrival",
+    "current_activity": "mass of the corps arrives west and south-west of Caen for the planned counterattack",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-08",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R2217;R001",
+    "source_locator": "R2216: ms -11- (Fold3 page 64), Anlage 3 (Fold3 pages 98 and 101); R2217: p.-5- (Fold3 page 107)",
+    "sidc": "10061000221301000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -0.5929,
      49.2079
     ]
@@ -11168,8 +11336,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R141;R449;R001",
-    "source_locator": null,
+    "reference_ids": "R141;R449;R2216;R001",
+    "source_locator": "R2216: ms -8- (Fold3 page 61), liaison with Panzer Group West ordered in the area west of THURY HARCOURT",
     "sidc": "10061000231205000000"
    }
   },
@@ -11320,10 +11488,10 @@
     "branch": "Luftwaffe",
     "date": "1944-06-09",
     "place_id": "PL0527",
-    "location_name": "Évrecy",
+    "location_name": "Évrecy (just east of)",
     "location_represents": "headquarters",
     "precision_km": 5,
-    "confidence": 0.3,
+    "confidence": 0.5,
     "event_type": "hq_move",
     "current_activity": "headquarters moves to Évrecy",
     "operation_id": "OP-NEPTUNE",
@@ -11336,8 +11504,8 @@
     "location_date": "1944-06-09",
     "location_basis": "inferred",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R1937;R001",
-    "source_locator": "R1937: infobox, headquarters Évrecy (June 1944, citing deZeng, France airfields, p. 155) / by 9 June the corps was assembled around Caen and bound to cooperate with Panzer Group West (DRZW vol. 7, p. 295)",
+    "reference_ids": "R1937;R2216;R001",
+    "source_locator": "R1937: infobox, headquarters Évrecy (June 1944, citing deZeng, France airfields, p. 155) / by 9 June the corps was assembled around Caen and bound to cooperate with Panzer Group West (DRZW vol. 7, p. 295); R2216: ms -11- (Fold3 page 64), forward corps command post at first just east of EVRECY, in position by 9 June early, and Anlage 3 (Fold3 pages 98 and 101), Einsatz etwa 9.6.44 früh, corps symbol III at Évrecy",
     "sidc": "10061000221301000000"
    }
   },
@@ -11381,6 +11549,48 @@
     "reference_ids": "R1952;R1954;R1955;R002",
     "source_locator": "R1952: 9 June 1944 to Saleux / R1954: on 10 June Wachtel joined his command post at Saleux / R1955: the staff had moved to Saleux a day or two before 12 June",
     "sidc": "10061000171307000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4825,
+     49.1286
+    ]
+   },
+   "properties": {
+    "claim_id": "C12782",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-SSPZ-001C",
+    "unit_name": "I SS Panzer Corps",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Waffen-SS",
+    "date": "1944-06-09",
+    "place_id": "PL4896",
+    "location_name": "Baron-sur-Odon, Calvados",
+    "location_represents": "headquarters",
+    "precision_km": 3,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "I SS Panzer Corps, leading in the Caen area, at Baron when III. Flakkorps takes up liaison",
+    "operation_id": "OP-NEPTUNE",
+    "operation": "Operation Neptune",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Neptune",
+    "strength_status": "unknown",
+    "location_date": "1944-06-09",
+    "location_basis": "inferred",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R001",
+    "source_locator": "R2216: ms -11- (Fold3 page 64)",
+    "sidc": "10061000221205000000"
    }
   },
   {
@@ -11714,8 +11924,8 @@
     "location_date": null,
     "location_basis": null,
     "location_temporal_offset_days": null,
-    "reference_ids": "R133;R077;R761;R002",
-    "source_locator": "R761: pp. 31-32",
+    "reference_ids": "R133;R077;R761;R2216;R002",
+    "source_locator": "R761: pp. 31-32; R2216: ms -11- (Fold3 page 64), Panzer Group West command post as far as the author remembers in LA CAINE 20 km SW Caen, destroyed by Marauders (undated)",
     "sidc": "10061000231205000000"
    }
   },
@@ -17174,8 +17384,8 @@
     "location_date": "1944-06-18",
     "location_basis": "operational_area",
     "location_temporal_offset_days": 0,
-    "reference_ids": "R670;R001",
-    "source_locator": "R670: p. 265, about 18 June 1944 heavy mortars (7th Werfer Brigade) and 88s of III Flak Corps came up south and east of Caen (Panzer Group West front)",
+    "reference_ids": "R670;R2216;R001",
+    "source_locator": "R670: p. 265, about 18 June 1944 heavy mortars (7th Werfer Brigade) and 88s of III Flak Corps came up south and east of Caen (Panzer Group West front); R2216: ms -11- to -24- (Fold3 pages 64-77), the corps in the Caen area from 9 June to 19 July 1944, the mass west and south-west of Caen",
     "sidc": "10061000221301000000"
    }
   },
@@ -37127,6 +37337,90 @@
     "reference_ids": "R593;R185;R001",
     "source_locator": "R593: p. 458, 325-326; R185: list of commanders",
     "sidc": "10061000241210000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.473,
+     48.984
+    ]
+   },
+   "properties": {
+    "claim_id": "C12778",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-07-19",
+    "place_id": "PL0347",
+    "location_name": "Thury-Harcourt (about 5 km north-east of)",
+    "location_represents": "headquarters",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "hq_observation",
+    "current_activity": "forward corps command post north-east of Thury-Harcourt at the start of the British attack east of Caen",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-19",
+    "location_basis": "documented_on_date",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R001",
+    "source_locator": "R2216: ms -24- (Fold3 page 77), Anlage 4 (Fold3 pages 99 and 102)",
+    "sidc": "10061000221301000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.3636,
+     49.1814
+    ]
+   },
+   "properties": {
+    "claim_id": "C12779",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-07-19",
+    "place_id": "PL0057",
+    "location_name": "Caen (east and south-east of)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "defense",
+    "current_activity": "three Flak regiments and the Flakkampfgruppen at the Fifth Panzer Army main effort east and south-east of Caen",
+    "operation_id": "OP-GOODWOOD",
+    "operation": "Operation Goodwood",
+    "operation_type": "operation",
+    "campaign": "Normandy",
+    "operation_name": "Overlord",
+    "sub_operation_name": "Goodwood",
+    "strength_status": "unknown",
+    "location_date": "1944-07-19",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R001",
+    "source_locator": "R2216: ms -24- and -25- (Fold3 pages 77-78), Anlage 4 (Fold3 pages 99 and 102)",
+    "sidc": "10061000221301000000"
    }
   },
   {
@@ -68291,6 +68585,48 @@
     "reference_ids": "R405;R478;R415;R016;R158;R401;R409;R398;R001",
     "source_locator": "R405: p. 578; R401: p. 423; R409: p. 672; R398: p. 344",
     "sidc": "10031000221210000000"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.094,
+     49.4405
+    ]
+   },
+   "properties": {
+    "claim_id": "C12780",
+    "conflict_group_id": null,
+    "claim_status": "preferred",
+    "unit_id": "GER-FLAKK-003C",
+    "unit_name": "III. Flakkorps (3rd Flak Corps)",
+    "nationality": "Germany",
+    "theater": "western_europe",
+    "echelon": "corps",
+    "branch": "Luftwaffe",
+    "date": "1944-08-24",
+    "place_id": "PL0676",
+    "location_name": "Rouen, Seine-Maritime (Seine crossings at)",
+    "location_represents": "main_body",
+    "precision_km": 10,
+    "confidence": 0.3,
+    "event_type": "withdrawal",
+    "current_activity": "remnants of the corps cross the Seine at Rouen with Fifth Panzer Army",
+    "operation_id": "OP-CAMP-NORTHERN-FRANCE",
+    "operation": "Northern France campaign",
+    "operation_type": "campaign",
+    "campaign": "Northern France",
+    "operation_name": "Overlord",
+    "sub_operation_name": null,
+    "strength_status": "unknown",
+    "location_date": "1944-08-24",
+    "location_basis": "operational_area",
+    "location_temporal_offset_days": 0,
+    "reference_ids": "R2216;R2217;R002",
+    "source_locator": "R2216: ms -30-, -31- and -38- (Fold3 pages 83, 84 and 91); R2217: pp.-13- and -14- (Fold3 pages 115-116)",
+    "sidc": "10061000221301000000"
    }
   },
   {

@@ -6315,6 +6315,7 @@ def scenario_308_missions_table():
     allowed = {
         'missions.csv', '../data/references.csv',
         'operations.csv', 'operations.geojson', 'operation_units.csv',
+        'manifest.json',
     }
     changed = sorted(k for k in base if base[k] != with_m.get(k) and k not in allowed)
     expect(s + ': a mission changes only missions.csv, references.csv missions_count, and the Task 2 operation participation/count outputs', changed, [])

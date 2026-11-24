@@ -18,6 +18,16 @@ All CSV files are UTF-8, LF line endings, comma separated, with a header row, mi
 
 When you change a column or vocabulary, edit the JSON files and this page together.
 
+## Versions
+
+Public releases carry two version strings, written to `build/manifest.json` from [`release.json`](release.json):
+
+- **schema_version** (currently 1.0.0): MAJOR for a breaking change (renamed or removed column, tightened or renamed vocabulary, reused or reformatted ids); MINOR for an additive table, column or vocabulary value; PATCH for tighter validation of an existing field, or schema docs only.
+- **data_version** (currently 1.0.0-rc1): MAJOR when the schema major bumps or a release is announced as incompatible; MINOR when claims, units or other rows are added or materially corrected without a schema break; PATCH for docs, packaging, or typo-level fixes. A later claims pass that does not change the schema is a minor bump (`1.1.0`), not a patch, when "minor" means "more data."
+
+`CITATION.cff` `version` follows `data_version`. The manifest's `generated_at` is the `date_released` at 00:00:00 UTC (not the wall clock) so `python scripts/build.py --check` is deterministic. It uses `source_tree_sha256` of the tracked non-generated files rather than `git rev-parse HEAD`, because a committed manifest cannot include the hash of the commit that adds it.
+
+
 ## claims columns (`data/claims/<nationality>/<unit_id>.csv`, `build/all_claims.csv`)
 
 | column | type | required | meaning | constraints |

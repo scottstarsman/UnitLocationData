@@ -53,6 +53,10 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/unit_symbols.csv                one row per unit and allegiance period: valid_from, valid_to (blank = open: a later date keeps the last side), side,
                                         standard_identity (Allied viewpoint) and the sidc for that period (status present), with the function rule
                                         (scripts/sidc.py, roadmap 410); one file covers every domain
+  build/manifest.json                   release metadata written by this script (schema/release.json): schema_version, data_version,
+                                        generated_at (the release date at 00:00:00 UTC, not the wall clock), source_tree_sha256 of the
+                                        tracked non-generated WorldWar2 files, license, a CITATION.cff pointer, and per-file path, rows or
+                                        features, sha256 and bytes. The manifest does not list itself. --check compares the whole file.
 
 Do not hand-edit anything in build/: edit data/claims/, data/command_relations.csv or data/command_relation_claims.csv and re-run this script.
 
@@ -60,8 +64,10 @@ Usage: python scripts/build.py            write the outputs (removes stale files
        python scripts/build.py --check    do not write; exit 1 if build/ is not up to date
 """
 import argparse
+import hashlib
 import json
 import os
+import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -261,6 +267,106 @@ def aircraft_types_output():
     return common.csv_bytes(h, rows)
 
 
+
+RELEASE_JSON = os.path.join(common.ROOT, 'schema', 'release.json')
+GENERATED_SKIP_PREFIX = 'WorldWar2/build/'
+GENERATED_SKIP = {'WorldWar2/docs/coverage.md', 'WorldWar2/data/references.csv'}
+
+
+def load_release():
+    """schema_version, data_version and date_released from schema/release.json."""
+    with open(RELEASE_JSON, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def source_tree_sha256():
+    """SHA-256 of tracked WorldWar2 files excluding generated build outputs (and coverage.md / references.csv).
+
+    Used instead of git rev-parse HEAD so a committed manifest stays stable under --check: the
+    manifest is itself a generated file, so including HEAD would always be stale after the commit
+    that adds it.
+    """
+    repo = os.path.dirname(common.ROOT)
+    proc = subprocess.run(['git', 'ls-files', '-z', 'WorldWar2'], cwd=repo, capture_output=True, check=True)
+    paths = [p.decode() for p in proc.stdout.split(b'\0') if p]
+    h = hashlib.sha256()
+    for rel in sorted(paths):
+        if rel.startswith(GENERATED_SKIP_PREFIX) or rel in GENERATED_SKIP:
+            continue
+        h.update(rel.encode('utf-8'))
+        h.update(b'\0')
+        with open(os.path.join(repo, rel), 'rb') as f:
+            h.update(f.read())
+        h.update(b'\n')
+    return h.hexdigest()
+
+
+def citation_pointer(release):
+    """Short pointer at CITATION.cff; version follows schema/release.json data_version."""
+    title = 'WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944)'
+    author = 'Raymond Scott Starsman'
+    path = os.path.join(common.ROOT, 'CITATION.cff')
+    if os.path.isfile(path):
+        fields = {}
+        for line in open(path, encoding='utf-8'):
+            if line.startswith('title:'):
+                fields['title'] = line.split(':', 1)[1].strip().strip('"')
+            elif line.startswith('  family-names:'):
+                fields['family-names'] = line.split(':', 1)[1].strip().strip('"')
+            elif line.startswith('  given-names:'):
+                fields['given-names'] = line.split(':', 1)[1].strip().strip('"')
+        if fields.get('title'):
+            title = fields['title']
+        names = (fields.get('given-names', '') + ' ' + fields.get('family-names', '')).strip()
+        if names:
+            author = names
+    return {'file': 'CITATION.cff', 'title': title, 'version': release['data_version'], 'author': author}
+
+
+def file_stats(key, data):
+    """One files[] entry for an outputs() item. Paths are relative to WorldWar2/."""
+    path = key[3:] if key.startswith('../') else 'build/' + key
+    entry = {'path': path, 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+    if path.endswith('.md'):
+        return entry
+    if path.endswith('.csv'):
+        entry['rows'] = max(data.count(b'\n') - 1, 0)
+        return entry
+    if not (path.endswith('.geojson') or path.endswith('.json')):
+        return entry
+    obj = json.loads(data)
+    if path.endswith('.geojson'):
+        entry['features'] = len(obj.get('features', []))
+        return entry
+    if isinstance(obj, list):
+        entry['rows'] = len(obj)
+    elif isinstance(obj, dict):
+        if isinstance(obj.get('claims'), list):
+            entry['rows'] = len(obj['claims'])
+        elif isinstance(obj.get('units'), list):
+            entry['rows'] = len(obj['units'])
+        elif isinstance(obj.get('trees'), list):
+            entry['rows'] = len(obj['trees'])
+        elif isinstance(obj.get('features'), list):
+            entry['features'] = len(obj['features'])
+    return entry
+
+
+def manifest_bytes(out):
+    """Deterministic build/manifest.json for the files already in *out* (does not list itself)."""
+    release = load_release()
+    man = {
+        'schema_version': release['schema_version'],
+        'data_version': release['data_version'],
+        'generated_at': release['date_released'] + 'T00:00:00Z',
+        'source_tree_sha256': source_tree_sha256(),
+        'license': 'CC-BY-SA-4.0',
+        'citation': citation_pointer(release),
+        'files': [file_stats(k, out[k]) for k in sorted(out)],
+    }
+    return (json.dumps(man, ensure_ascii=False, indent=2) + '\n').encode('utf-8')
+
+
 def outputs():
     """Return {relative path: bytes} for every generated file (paths under docs/ are relative to the repository root)."""
     header, rows = common.load_all_claims()
@@ -343,6 +449,7 @@ def outputs():
     # references: data/references.csv (metadata + counts) and the claim/unit -> reference links (see build_references.py)
     for k, data in build_references.outputs().items():
         out[k[len('build/'):] if k.startswith('build/') else '../' + k] = data
+    out['manifest.json'] = manifest_bytes(out)
     return out
 
 

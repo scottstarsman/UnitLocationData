@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
-  "data_version": "1.0.0-rc1",
+  "schema_version": "1.1.0",
+  "data_version": "1.1.0-rc1",
   "generated_at": "2026-11-24T00:00:00Z",
-  "source_tree_sha256": "119078c3f5a246c481a637d0711994d74d9b28bd33cc3740f582598cf72a9b86",
+  "source_tree_sha256": "18b126e68841bd766f727bfe9fb8cdfbb4a3612dded7483e9280bd6529e07492",
   "license": "CC-BY-SA-4.0",
   "citation": {
     "file": "CITATION.cff",
     "title": "WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944–1945)",
-    "version": "1.0.0-rc1",
+    "version": "1.1.0-rc1",
     "author": "Raymond Scott Starsman"
   },
   "files": [
@@ -30,14 +30,14 @@
     },
     {
       "path": "build/all_claims.csv",
-      "bytes": 26998065,
-      "sha256": "f123c04a809cb05ad30dfd6e11f955ec3d3048e822d8aa694088dd777860502d",
+      "bytes": 27418899,
+      "sha256": "97dd4a3c6755919738240eea846dbee527df91439291155d4f2d503f17f15e2e",
       "rows": 12770
     },
     {
       "path": "build/all_claims.json",
-      "bytes": 40160895,
-      "sha256": "dc5faabcbe8b78e32fadd88082e16cb2521724fd3b264a575cf84659f0294a38",
+      "bytes": 41998722,
+      "sha256": "196304b00160947c6f75ff5b189afe57e415bb12d4196587df767d430971ba69",
       "rows": 12770
     },
     {
@@ -48,8 +48,8 @@
     },
     {
       "path": "build/claims.geojson",
-      "bytes": 17480021,
-      "sha256": "f460dc204573247c60ed32468fd083510019dda5ebe29fbbb6a5e2dd77b23e41",
+      "bytes": 19659504,
+      "sha256": "4e7a6804f9d9a62418daa395daeea68f6033458b3d052a9b0c310cdc51b8e262",
       "features": 12770
     },
     {

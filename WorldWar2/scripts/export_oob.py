@@ -318,6 +318,30 @@ def _toe_on(ctx, uid, date):
     }
 
 
+def _commander_display(cdrs):
+    """CSV and markdown columns: every tenure id, each person once (roles merged)."""
+    tenure_ids = [c.get('tenure_id') or '' for c in cdrs]
+    seen = {}
+    order = []
+    for c in cdrs:
+        pid = c.get('person_id') or ''
+        if pid not in seen:
+            seen[pid] = {
+                'person_id': pid,
+                'canonical_name': c.get('canonical_name') or '',
+                'roles': [],
+            }
+            order.append(pid)
+        role = c.get('role') or ''
+        if role and role not in seen[pid]['roles']:
+            seen[pid]['roles'].append(role)
+    pids = [seen[pid]['person_id'] for pid in order]
+    names = [seen[pid]['canonical_name'] for pid in order]
+    roles = [';'.join(seen[pid]['roles']) for pid in order]
+    return tenure_ids, pids, names, roles
+
+
+
 def _commanders_on(ctx, uid, date):
     out = []
     for t in ctx.tenures.get(uid, []):
@@ -543,6 +567,7 @@ def _csv_row(r):
     cdrs = r.get('commanders') or []
     loc_off = r.get('location_offset_days')
     loc_win = r.get('location_in_window')
+    cdr_tenures, cdr_pids, cdr_names, cdr_roles = _commander_display(cdrs)
     return [
         r['unit_id'], r['unit_name'], r['domain'], r['nationality'], r['side'], r['echelon'], r['branch'], r['record_status'],
         r['primary_parent_unit_id'], r['primary_parent_name'], r['primary_relationship'], r['primary_relation_status'],
@@ -556,10 +581,10 @@ def _csv_row(r):
         r.get('event_type') or '', r.get('strength_json') or '',
         r.get('authorized_template_id') or '', r.get('authorized_template_name') or '',
         r.get('authorized_personnel') or '', r.get('authorized_strength_json') or '',
-        ';'.join(c['tenure_id'] for c in cdrs),
-        ';'.join(c['person_id'] for c in cdrs),
-        ';'.join(c['canonical_name'] for c in cdrs),
-        ';'.join(c['role'] for c in cdrs),
+        ';'.join(cdr_tenures),
+        ';'.join(cdr_pids),
+        ';'.join(cdr_names),
+        ';'.join(cdr_roles),
         r.get('sidc') or '', r.get('standard_identity') or '', r.get('symbol_side') or '',
     ]
 
@@ -592,7 +617,15 @@ def snapshot_markdown(snap, title=None):
         cdrs = node.get('commanders') or []
         cdr_s = ''
         if cdrs:
-            cdr_s = ' Cdr: ' + '; '.join((c['canonical_name'] or c['person_id']) + ((' (%s)' % c['role']) if c['role'] and c['role'] != 'commander' else '') for c in cdrs) + '.'
+            _t, _pids, _names, _roles = _commander_display(cdrs)
+            parts = []
+            for name, pid, role_s in zip(_names, _pids, _roles):
+                label = name or pid
+                role_list = [x for x in role_s.split(';') if x]
+                if role_list and role_list != ['commander']:
+                    label += ' (%s)' % ', '.join(role_list)
+                parts.append(label)
+            cdr_s = ' Cdr: ' + '; '.join(parts) + '.'
         loc = ''
         if node.get('place_name') or node.get('location_claim_id'):
             off = node.get('location_offset_days')

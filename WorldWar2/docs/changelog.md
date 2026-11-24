@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Deduplicate commanders on operation participation (branch `rc1-data-fixes`, RV12)
+
+Scott approved the rc1 data-fix branch (24 November 2026). `build/operation_units.csv` listed the same person twice when two preferred tenures overlapped the operation window (18 rows; for example Rudolf Bacherer on `OP-COBRA` / `GER-INF-077D` from `UC0176` and `UC0177`). The 15 August 1944 OOB snapshot repeated the same pair.
+
+- **Exporter:** `scripts/operation_units.py` and the OOB CSV/markdown columns now list each person once and still list every covering `tenure_id`. No tenure row was edited: the five same-person overlaps (Bacherer, Model, Blumentritt, Crasemann, Borghouts) are role overlaps allowed by schema CM5 (`acting_commander` / `temporary_commander` may overlap a still-in-post `commander`; `deputy_commander` is not an exclusive slot).
+- **Tests:** scenario 367 (Bacherer listed once on Cobra with both tenure ids kept; Crerar listed once on the Rhineland with both of his tenures kept; no duplicate person on any participation row).
+
 ## 24 November 2026 — US branch spelling Armored (branch `rc1-data-fixes`, from main `817306c9`, RV16)
 
 Scott approved the rc1 data-fix branch (24 November 2026). 19 US units had `branch` `Armoured` (the British vocabulary spelling) while their unit names use “Armored”.

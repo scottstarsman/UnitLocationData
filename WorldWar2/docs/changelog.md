@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Operation Cobra participation (branch `rc1-data-fixes`, RV11)
+
+Scott approved the rc1 data-fix branch (24 November 2026). Operation Cobra (`OP-COBRA`, 25–31 July 1944) listed only 18 units. Several US divisions with preferred claims in that window were tagged only `OP-CAMP-NORTHERN-FRANCE`. 12th Army Group and Third Army appeared with `first_date` 1 August, after the operation's end.
+
+- **Date window (general logic fix):** `scripts/operation_units.py` now counts a claim or mission toward an operation only when its date falls in that operation's `start_date`..`end_date` (a blank bound is open; an undated row still counts). This applies to every operation, not only Cobra. Rows whose only tagged claims sit outside the window drop out, and `first_date` / `last_date` stay inside the window.
+- **Retagged to `OP-COBRA` (37 preferred claims),** old value `OP-CAMP-NORTHERN-FRANCE`, sourced from Blumenson, *Breakout and Pursuit* (already in the dataset): ch. 12 (`R592`) for the 4th, 9th and 30th Infantry Divisions (the units scheduled to initiate Cobra); ch. 14 (`R395`) for the 8th, 79th, 90th and 83rd Infantry Divisions (VIII Corps pressure force); ch. 16 (`R397`) for the 6th Armored Division from 27 July (reconnoitre 27 July, attack 28 July; the 25 July arrival claim `C0270` was left on the campaign); ch. 15 (`R396`) for the 2nd and 5th Infantry Divisions (V Corps diversion) and the 29th, 35th and 28th Infantry Divisions (XIX Corps during the diversion and the 28 July displacement). In-window claims of units already sourced as Cobra participants (1st Infantry, 2nd/3rd/4th Armored, First Army, VII and VIII Corps) were retagged to match. Each row is annotated old value, new value and reason; the Blumenson chapter was added to `reference_ids` where it was not already present. Claim `confidence` is unchanged.
+- **Moved off Cobra (2 claims):** `C0223` (12th Army Group) and `C0289` (Third Army), 1 August 1944, old value `OP-COBRA`, new value `OP-CAMP-NORTHERN-FRANCE`; reason: the event is the noon activation in Breakout and Pursuit ch. 18 p. 343 (`R398`), after Cobra's 31 July end date. The date-window filter would also have dropped them.
+- **Not retagged (no Blumenson Cobra citation found in the chapters used):** 5th Armored Division (`C0260`, arrived on the Continent 25 July); 12th Army Group and Third Army 25 July map positions (neither was operational until 1 August). British and Canadian formations in the same window stay on Northern France, Spring or Bluecoat. Some German divisions on the Cobra front remain on the campaign tag pending a sourced pass (roadmap 430).
+- **Tests:** scenario 368 (4th, 8th, 9th, 30th, 83rd and 90th Infantry are Cobra participants; 12th Army Group and Third Army are not; in-window dates only).
+
 ## 24 November 2026 — Deduplicate commanders on operation participation (branch `rc1-data-fixes`, RV12)
 
 Scott approved the rc1 data-fix branch (24 November 2026). `build/operation_units.csv` listed the same person twice when two preferred tenures overlapped the operation window (18 rows; for example Rudolf Bacherer on `OP-COBRA` / `GER-INF-077D` from `UC0176` and `UC0177`). The 15 August 1944 OOB snapshot repeated the same pair.

@@ -2,7 +2,7 @@
 """Derived unit participation in operations (Task 2, OB7, OB8).
 
 build/operation_units.csv has one row per (operation_id, unit_id) that has at least one claim or
-mission whose operation_id is this operation or a descendant. Participation is never rolled up
+mission whose operation_id is this operation or a descendant, and whose date falls in that operation's start_date..end_date window (a blank bound is open; an undated claim or mission still counts). Participation is never rolled up
 the command hierarchy. most_specific_op_type records the most specific op_type among the unit's
 tags in this chain so campaign-default tags stay distinguishable from a named battle. Standard library only.
 
@@ -43,6 +43,18 @@ def _most_specific(types):
     if not types:
         return ''
     return min(types, key=lambda t: OP_TYPE_RANK.get(t, 99))
+
+
+def _in_window(date, start, end):
+    """True if date is inside [start, end] (inclusive). A blank bound is open; a blank date counts."""
+    if not date:
+        return True
+    if start and date < start:
+        return False
+    if end and date > end:
+        return False
+    return True
+
 
 
 def _unique_people(tenures_and_names):
@@ -126,6 +138,9 @@ def operation_unit_rows(ops, claims, missions, units, people=None, tenures=None,
         pref = is_preferred(c)
         typ = typ_of.get(oid, '')
         for anc in chain_ids[oid]:
+            op_anc = ops.by_id.get(anc) or {}
+            if not _in_window(c.get('date') or '', op_anc.get('start_date') or '', op_anc.get('end_date') or ''):
+                continue
             b = bucket(anc, uid)
             b['rolled'] += 1
             if pref:
@@ -147,6 +162,9 @@ def operation_unit_rows(ops, claims, missions, units, people=None, tenures=None,
             continue
         typ = typ_of.get(oid, '')
         for anc in chain_ids[oid]:
+            op_anc = ops.by_id.get(anc) or {}
+            if not _in_window(m.get('date') or '', op_anc.get('start_date') or '', op_anc.get('end_date') or ''):
+                continue
             b = bucket(anc, uid)
             b['missions_rolled'] += 1
             if m.get('date'):

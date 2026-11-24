@@ -24,6 +24,9 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   data/references.csv                   the references table (one row per distinct source cited; derived from the claims and
                                         data/references_meta.csv by scripts/build_references.py, which build.py calls)
   build/claim_references.csv            claim_id -> reference_id links, one row per link and role (role event | date | location | command_relationship | strength | general; locator = page or section), built from the claims' stored reference_ids
+  build/people.csv                      data/people.csv plus tenures_count and units_count
+  build/unit_commanders.csv             data/unit_commanders.csv (all domains and statuses) with unit_name, nationality,
+                                        domain, echelon, canonical_name, sort_name and source_claim_ids
   build/other_domains/claims.csv        claims of air and naval units (data/units.csv domain air or naval), same columns as all_claims.csv; these units
                                         and the units marked out_of_scope are left out of every other output here (collected for later use; standing rule 22)
   build/other_domains/units.csv         the air and naval units and the units marked out_of_scope, with domain, scope, ship_type, hull_number and ship_class_id
@@ -63,9 +66,10 @@ import lineage  # noqa: E402
 import coverage as coveragemod  # noqa: E402
 import missions as missionsmod  # noqa: E402
 import sidc as sidcmod  # noqa: E402
+import commanders as commandersmod  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
-             'echelon', 'branch', 'date', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
+             'echelon', 'branch', 'date', 'commander', 'commander_person_id', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
              'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
              'location_temporal_offset_days', 'reference_ids', 'source_locator', 'sidc']
 DERIVED = ['operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'operation_path']   # appended to all_claims.csv from data/operations.csv
@@ -76,7 +80,7 @@ PLACES_OUT_HEADER = placesmod.HEADER + ['claims_count', 'units_count', 'first_cl
 def all_claims_header(stored):
     """Header of build/all_claims.csv: the claim-file columns with the derived ones at the place the stored column used to have (or next to the
     column they come from), then the derived operation columns."""
-    after = {'parent_unit_id': ['command_relationships'], 'place_id': ['place_name', 'location_name'],
+    after = {'parent_unit_id': ['command_relationships'], 'commander': ['commander_person_id'], 'place_id': ['place_name', 'location_name'],
              'coord_override': ['country', 'region', 'coord_reference_id', 'coord_source_note'], 'engaged_note': ['engaged_with_names', 'strength_status'], 'composing_text': ['composing_units_names'],
              'location_basis': ['location_temporal_offset_days']}
     h = []
@@ -282,6 +286,13 @@ def outputs():
     all_units_rows = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     for r in rows + other_rows:
         r['sidc'] = coder.claim_sidc(all_units_rows[r['unit_id']], r)
+    ph, people_rows = commandersmod.load_people()
+    th, tenure_rows = commandersmod.load_tenures()
+    lh, commander_links = commandersmod.load_links()
+    people_rows = people_rows or []
+    tenure_rows = tenure_rows or []
+    commander_links = commander_links or []
+    commandersmod.attach_person_ids(rows + other_rows, tenure_rows, commander_links)
     header = all_claims_header(header)   # the derived columns (command_relationships, place and derived-value columns, operations) are not claim-file columns
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows), 'other_domains/claims.csv': table(other_rows)}
@@ -317,6 +328,8 @@ def outputs():
     out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))
     out['organic_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows + other_rows, None, organic=True))
     out['who_controls_overrides.csv'] = open(command_relations.OVERRIDE_CSV, 'rb').read() if os.path.isfile(command_relations.OVERRIDE_CSV) else common.csv_bytes(['relation_id'], [])   # verbatim copy of data/who_controls_overrides.csv; read by scripts/who_controls.py
+    out['people.csv'] = common.csv_bytes(commandersmod.PEOPLE_BUILD_HEADER, commandersmod.derived_people(people_rows, tenure_rows))
+    out['unit_commanders.csv'] = common.csv_bytes(commandersmod.TENURE_BUILD_HEADER, commandersmod.derived_tenures(tenure_rows, people_rows, commander_links, all_units_rows))
     op_rows, op_md = operations_table(ops, rows)
     out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
     pl_rows, pl_geo, pl_md = places_outputs(rows)

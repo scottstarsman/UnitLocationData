@@ -1,0 +1,58 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "unit_commander_claims",
+  "title": "Evidence links from commander tenures to claims (data/unit_commander_claims.csv)",
+  "description": "Hand-maintained. One row per (tenure, claim) link. A command-change claim can assert a start or end; a location claim that simply names the officer is observed_during. Parallel to data/command_relation_claims.csv.",
+  "missingValues": [""],
+  "primaryKey": ["tenure_id", "claim_id"],
+  "foreignKeys": [
+    {
+      "fields": "tenure_id",
+      "reference": {
+        "resource": "unit_commanders",
+        "fields": "tenure_id"
+      }
+    },
+    {
+      "fields": "claim_id",
+      "reference": {
+        "resource": "claims",
+        "fields": "claim_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "tenure_id",
+      "type": "string",
+      "description": "The tenure (data/unit_commanders.csv).",
+      "constraints": {
+        "required": true,
+        "pattern": "^UC\\d{4,}$"
+      }
+    },
+    {
+      "name": "claim_id",
+      "type": "string",
+      "description": "The claim that names this person in this role, or that dates a vacancy ending the tenure.",
+      "constraints": {
+        "required": true,
+        "pattern": "^C\\d{4,}$"
+      }
+    },
+    {
+      "name": "role",
+      "type": "string",
+      "description": "What the claim says about the tenure (vocabulary commander_claim_role).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "commander_claim_role"
+    },
+    {
+      "name": "stated_note",
+      "type": "string",
+      "description": "The qualifier or clause this claim contributes (killed 6 June, acting, from noon on 21 August)."
+    }
+  ]
+}

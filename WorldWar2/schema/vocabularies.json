@@ -697,5 +697,31 @@
       "area": "An area with no single target kind (an area patrol or sweep).",
       "other": "Any other target; say what in notes."
     }
+  },
+  "commander_role": {
+    "description": "Role of a person on a unit (data/unit_commanders.csv role). Royal Navy 'Act.' or 'Ty. Act.' in a rank is an acting or temporary rank, not this vocabulary.",
+    "values": {
+      "commander": "The unit's commanding officer (the default).",
+      "acting_commander": "The source says acting, i.V., or equivalent for the command of the unit (not an acting rank alone).",
+      "temporary_commander": "The source says temporary command of the unit.",
+      "deputy_commander": "The source says deputy commander of the unit.",
+      "embarked_commander": "An officer embarked in a ship as a force or formation commander, not the ship's own captain."
+    }
+  },
+  "name_completeness": {
+    "description": "How complete the sourced name of a person is (data/people.csv name_completeness).",
+    "values": {
+      "full": "A given name or initials and a surname are sourced.",
+      "surname_only": "Only a surname is sourced (for example Gen. Guillaume).",
+      "incomplete": "The name is partial in some other way (for example a surname whose first name is explicitly not verified)."
+    }
+  },
+  "commander_claim_role": {
+    "description": "What a claim says about a commander tenure (data/unit_commander_claims.csv role).",
+    "values": {
+      "asserts_start": "The claim dates the start of the tenure (an appointment, 'from' a date, 'took over', or a command_change that names the incoming officer with a start date).",
+      "asserts_end": "The claim dates the end of the tenure (killed, died, relieved, wounded and evacuated, or a sourced vacancy).",
+      "observed_during": "The claim names the person as in command on the claim date but does not date the start or end of the tenure."
+    }
   }
 }

@@ -36,6 +36,10 @@ Examples:
 
 `theater` is a plain vocabulary column, not JSON, but it appears in the JSON outputs: `build/all_claims.json` (one string per row) and the feature properties of `build/claims.geojson`. Since 9 November 2026 it is the row's own theater (values in `schema/vocabularies.json`, rules in `schema/README.md`, "Theater"), so one unit's rows may carry different values (for example `GER-INF-106D`: `home_germany` at Wahn in 1940, `eastern_front` 1941-1944, `western_europe` in 1942-1943 and 1945). A consumer that wants the Western Front only filters on `theater == "western_europe"`.
 
+## commander_person_id in the JSON and GeoJSON outputs (not a JSON cell)
+
+`commander_person_id` is a plain derived column, not a JSON object. It appears on `build/all_claims.csv`, `build/all_claims.json`, `build/other_domains/claims.csv`, and as a feature property on `build/claims.geojson` (which also now carries the source-stated `commander` string). The value is the `PE####` id(s) of the people linked to that claim in `data/unit_commander_claims.csv`. When a claim names more than one person (a handover cell, or embarked officers on a ship), the distinct ids are joined with `;` in ascending id order. The column is blank when `commander` is `unknown` and the claim is not a sourced vacancy end.
+
 ## Adding a JSON column
 
 Add a schema file to `schema/json/`, an entry to `schema/json/fields.json`, and a section to this page in the same change.

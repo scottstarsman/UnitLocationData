@@ -49,16 +49,18 @@ A **placeholder** is a unit that exists in the table (identity, echelon, sometim
 
 ## Operations
 
-Generated from `data/operations.csv` and the claims' `operation_id`. Per-operation detail (path, dates, claim counts) is in `build/operations.csv`. A claim points at the most specific operation row it belongs to; rows with no named operation point at their campaign row.
+Generated from `data/operations.csv` and every claim's `operation_id` (all domains: ground, air and naval). Per-operation detail (path, dates, claim and mission counts, sourced pin, derived extent) is in `build/operations.csv`. A claim points at the most specific operation row it belongs to; rows with no named operation point at their campaign row. Before 24 November 2026 the claim counts in this section and in `build/operations.csv` counted ground claims only; the totals below and the `claims_direct` / `claims_including_children` columns are now all-domain, with ground/air/naval breakdowns.
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 9 | 7 | 193 |
-| campaign | 9 | 9 | 7509 |
-| operation | 33 | 33 | 889 |
-| battle | 20 | 20 | 599 |
-| phase | 4 | 4 | 317 |
-| **All** | **75** | **73** | **9507** |
+| umbrella | 9 | 7 | 709 |
+| campaign | 9 | 9 | 8252 |
+| operation | 33 | 33 | 2877 |
+| battle | 20 | 20 | 609 |
+| phase | 4 | 4 | 323 |
+| **All** | **75** | **73** | **12770** |
+
+Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 52, compact 3, broad 15, none 5. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 

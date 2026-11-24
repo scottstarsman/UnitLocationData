@@ -7,7 +7,7 @@ A survey of all tables under `data/` on 2 November 2026 found one such column: `
 ## strength_json
 
 - **Where:** `data/claims/*/*.csv` (column `strength_json`); copied unchanged to `build/all_claims.csv`.
-- **Purpose:** sourced strength figures (personnel, vehicles, qualitative status) for the unit on or near the claim date. Blank when no source gives figures (31 of 7,055 claims had a value on 2 November 2026).
+- **Purpose:** sourced strength figures (personnel, vehicles, qualitative status) for the unit on or near the claim date. Blank when no source gives figures (39 of 12,770 claims had a value on 24 November 2026).
 - **Schema:** [`schema/json/strength_json.schema.json`](../schema/json/strength_json.schema.json).
 
 | key | type | required | allowed values / rule |

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944)"
+title: "WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944–1945)"
 type: dataset
 version: 1.0.0-rc1
 date-released: "2026-11-24"
@@ -10,7 +10,7 @@ authors:
     email: "scott@starsman.com"
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/scottstarsman/UnitLocationData"
-abstract: "Event-based, sourced claims about where World War II units were on given dates, with coordinates, precision, confidence, conflict handling and optional strength figures. Coverage so far: the Western Front, 6 June 1944 to 8 May 1945 (pre-invasion rows under OP-PRE-INVASION), 12,770 claims in 2,635 units across ground, air and naval domains."
+abstract: "Event-based, sourced claims about where World War II units were on given dates, with coordinates, precision, confidence, conflict handling and optional strength figures. Coverage so far: the surveyed focus is the Western Front, 6 June 1944 to 8 May 1945, with 12,770 claims in 2,635 units across ground, air and naval domains. Claim dates in the current build run from 16 September 1939 to 31 May 1945: earlier rows include pre-invasion Western Front positions (mostly under OP-PRE-INVASION) and a smaller number of incidental other-front or home-area rows; a few claims continue past 8 May 1945."
 keywords:
   - World War II
   - military history

@@ -303,7 +303,7 @@ def source_tree_sha256():
 
 def citation_pointer(release):
     """Short pointer at CITATION.cff; version follows schema/release.json data_version."""
-    title = 'WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944)'
+    title = 'WWII Unit Locations: a claim-based dataset of unit positions (Western Front, 1944–1945)'
     author = 'Raymond Scott Starsman'
     path = os.path.join(common.ROOT, 'CITATION.cff')
     if os.path.isfile(path):

@@ -650,6 +650,80 @@
           }
         }
       ]
+    },
+    "people": {
+      "path": "data/people.csv",
+      "primaryKey": "person_id",
+      "foreignKeys": [
+        {
+          "fields": "nationality",
+          "reference": {
+            "resource": "nationalities",
+            "fields": "name"
+          }
+        }
+      ]
+    },
+    "unit_commanders": {
+      "path": "data/unit_commanders.csv",
+      "primaryKey": "tenure_id",
+      "uniqueTogether": [
+        [
+          "unit_id",
+          "person_id",
+          "role",
+          "valid_from",
+          "valid_to",
+          "status"
+        ]
+      ],
+      "foreignKeys": [
+        {
+          "fields": "unit_id",
+          "reference": {
+            "resource": "units",
+            "fields": "unit_id"
+          }
+        },
+        {
+          "fields": "person_id",
+          "reference": {
+            "resource": "people",
+            "fields": "person_id"
+          }
+        },
+        {
+          "fields": "reference_ids",
+          "separator": ";",
+          "reference": {
+            "resource": "references_meta",
+            "fields": "reference_id"
+          }
+        }
+      ]
+    },
+    "unit_commander_claims": {
+      "path": "data/unit_commander_claims.csv",
+      "primaryKey": [
+        "tenure_id",
+        "claim_id"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "tenure_id",
+          "reference": {
+            "resource": "unit_commanders",
+            "fields": "tenure_id"
+          }
+        },
+        {
+          "fields": "claim_id",
+          "reference": {
+            "resource": "claims",
+            "fields": "claim_id"
+          }
+        }
+      ]
     }
   }
 }

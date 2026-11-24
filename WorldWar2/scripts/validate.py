@@ -59,6 +59,11 @@ place's name, coord_reference_id a gazetteer_geocoder reference that a claim at 
 exactly when coord_override is blank (and differ, within 5 km, when it is set), the coordinate note no longer ends `source`. A place with no claim is a warning.
 Derived values are not stored (location_name, location_temporal_offset_days, strength_status, the roles of coordinate-service references; scripts/places.py,
 scripts/build_references.py): a role row for a gazetteer_geocoder reference is an error; strength_json may carry `status` (full, reduced, heavily_depleted), which build/all_claims.csv turns into strength_status.
+Commanders (data/people.csv, data/unit_commanders.csv, data/unit_commander_claims.csv; scripts/commanders.py):
+header and field values from the schemas, unique PE#### / UC#### without gaps, vocabularies, date and conflict-group
+rules (blank valid_to <=> open_at_last_claim), foreign keys, every named commander cell linked to a tenure, and unknown
+commander cells linked only as asserts_end (a sourced vacancy).
+
 Coordinate checks live in scripts/check_coordinates.py.
 
 Usage: python scripts/validate.py        (exit code 0 = OK, 1 = problems found; warnings do not count)
@@ -76,6 +81,7 @@ import common  # noqa: E402
 import command_relations as crel  # noqa: E402
 import places as placesmod  # noqa: E402
 import unit_refs  # noqa: E402
+import commanders as commandersmod  # noqa: E402
 
 errors = []
 warnings = []
@@ -543,8 +549,8 @@ def check_references(claims):
             class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
     for m in meta:
         st = stats[m['reference_id']]
-        if not st['claims'] and not st['units'] and not st['ops'] and not st['missions'] and m['reference_id'] not in class_cited:
-            warn(where, '%s (%s) is not cited by any claim, unit, operation, mission, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
+        if not st['claims'] and not st['units'] and not st['ops'] and not st['missions'] and not st.get('commanders') and m['reference_id'] not in class_cited:
+            warn(where, '%s (%s) is not cited by any claim, unit, operation, mission, commander tenure, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
         if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
             err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
     check_claim_references(claims, meta)
@@ -1144,7 +1150,7 @@ def check_foreign_keys(tables):
     """Enforce every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json, and the
     declared primary keys / unique columns of the side tables. `tables` maps resource name -> list of row dicts. A blank value is
     allowed (nullable reference); a column with a `separator` holds a list of keys; `alsoAllowed` lists extra accepted values."""
-    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes', 'aircraft_types') for fk in common.load_schema(n).get('foreignKeys', [])]
+    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes', 'aircraft_types', 'people', 'unit_commanders', 'unit_commander_claims') for fk in common.load_schema(n).get('foreignKeys', [])]
     rel = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
     for name, t in rel.items():
         decl.extend((name, fk) for fk in t.get('foreignKeys', []))
@@ -1815,6 +1821,19 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
     return out
 
 
+def check_commanders(units, vocabs, claims, nats):
+    """data/people.csv, data/unit_commanders.csv and data/unit_commander_claims.csv (scripts/commanders.py)."""
+    import build_references as br
+    ref_ids = {m['reference_id'] for m in br.read_meta()[1]} if os.path.isfile(br.META_CSV) else set()
+    nat_names = {n['name'] for n in nats.values()} if isinstance(nats, dict) else {n['name'] for n in nats}
+    ph, people = commandersmod.load_people()
+    th, tenures = commandersmod.load_tenures()
+    lh, links = commandersmod.load_links()
+    for where, msg in commandersmod.check(ph, people, th, tenures, lh, links, units, claims, vocabs, ref_ids, nat_names):
+        err(where, msg)
+    return people, tenures, links
+
+
 def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
@@ -2050,6 +2069,7 @@ def main():
     check_claim_keys(all_rows, claims_schema)
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
+    people_rows, tenure_rows, commander_links = check_commanders(units, vocabs, all_rows, nats)
     check_allegiance(units, vocabs)
     check_sidc(units, all_rows)
     check_lifespan(units, all_rows)
@@ -2068,7 +2088,8 @@ def main():
               'claim_key_exceptions': common.read_dicts(CLAIM_KEY_EXCEPTIONS_CSV)[1] if os.path.isfile(CLAIM_KEY_EXCEPTIONS_CSV) else [],
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
               'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],
-              'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps, 'command_relation_overrides': relset.overrides}
+              'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps, 'command_relation_overrides': relset.overrides,
+              'people': people_rows, 'unit_commanders': tenure_rows, 'unit_commander_claims': commander_links}
     check_foreign_keys(tables)
 
     for w in warnings:

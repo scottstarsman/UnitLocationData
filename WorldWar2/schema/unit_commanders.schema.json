@@ -1,0 +1,205 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "unit_commanders",
+  "title": "Unit commander tenures (data/unit_commanders.csv)",
+  "description": "Hand-maintained. One row per sourced tenure: one person, one unit, one role, one interval. Modelled on data/command_relations.csv. A claim that names a commander on date X is evidence that the person was in command on X; it is not, by itself, evidence that the person took command on X or left command on X (valid_from_basis claim_date). Tenure ids UC0001 onward are never reused or renumbered. Evidence claims are in data/unit_commander_claims.csv.",
+  "missingValues": [""],
+  "primaryKey": "tenure_id",
+  "uniqueTogether": [
+    ["unit_id", "person_id", "role", "valid_from", "valid_to", "status"]
+  ],
+  "foreignKeys": [
+    {
+      "fields": "unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "person_id",
+      "reference": {
+        "resource": "people",
+        "fields": "person_id"
+      }
+    },
+    {
+      "fields": "reference_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "references_meta",
+        "fields": "reference_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "tenure_id",
+      "type": "string",
+      "description": "Stable id of the tenure, UC0001 onward. Never reused or renumbered.",
+      "constraints": {
+        "required": true,
+        "pattern": "^UC\\d{4,}$"
+      }
+    },
+    {
+      "name": "unit_id",
+      "type": "string",
+      "description": "The unit this tenure is for. Must exist in data/units.csv.",
+      "constraints": {
+        "required": true,
+        "pattern": "^[A-Z]{2,4}(-[A-Z0-9]+)+$"
+      }
+    },
+    {
+      "name": "person_id",
+      "type": "string",
+      "description": "The person (data/people.csv).",
+      "constraints": {
+        "required": true,
+        "pattern": "^PE\\d{4,}$"
+      }
+    },
+    {
+      "name": "role",
+      "type": "string",
+      "description": "Kind of command (vocabulary commander_role).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "commander_role"
+    },
+    {
+      "name": "rank",
+      "type": "string",
+      "description": "Rank as stated for this tenure (General der Infanterie, Lt.-Gen., Act. Capt.). Free text. Blank when the source gives no rank. Decorations and service suffixes may be kept with the rank (R.N., D.S.C.)."
+    },
+    {
+      "name": "rank_disputed",
+      "type": "boolean",
+      "description": "true when sources disagree on the rank. Explain in note.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "boolean"
+    },
+    {
+      "name": "valid_from",
+      "type": "date",
+      "description": "First day the tenure is known to hold, YYYY-MM-DD (inclusive). With valid_from_basis claim_date it is only the first day a claim names the person in this role; the tenure may have begun earlier.",
+      "constraints": {
+        "required": true
+      },
+      "format": "%Y-%m-%d"
+    },
+    {
+      "name": "valid_from_latest",
+      "type": "date",
+      "description": "Latest possible start when the source gives a range (valid_from is then the earliest possible start). Blank otherwise.",
+      "format": "%Y-%m-%d"
+    },
+    {
+      "name": "valid_from_time",
+      "type": "string",
+      "description": "Optional hour of the start on valid_from, HH:MM 24-hour. Blank = hour not documented.",
+      "constraints": {
+        "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+      }
+    },
+    {
+      "name": "valid_from_basis",
+      "type": "string",
+      "description": "Where valid_from comes from (vocabulary relation_start_basis).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "relation_start_basis"
+    },
+    {
+      "name": "valid_to",
+      "type": "date",
+      "description": "Last day the tenure holds, YYYY-MM-DD (inclusive). Blank = no end recorded (see valid_to_basis and end_unknown). A missing end never means indefinitely valid. When valid_to_earliest is set, valid_to is the latest possible end.",
+      "format": "%Y-%m-%d"
+    },
+    {
+      "name": "valid_to_earliest",
+      "type": "date",
+      "description": "Earliest possible end when the true end lies in a range (valid_to is the latest possible end). For an undated change, the last claim date that names the person. Blank otherwise.",
+      "format": "%Y-%m-%d"
+    },
+    {
+      "name": "valid_to_time",
+      "type": "string",
+      "description": "Optional hour of the end on valid_to, HH:MM 24-hour. Blank = hour not documented.",
+      "constraints": {
+        "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+      }
+    },
+    {
+      "name": "valid_to_basis",
+      "type": "string",
+      "description": "Where valid_to comes from (vocabulary relation_end_basis); open_at_last_claim when valid_to is blank.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "relation_end_basis"
+    },
+    {
+      "name": "end_unknown",
+      "type": "boolean",
+      "description": "true when no sourced end exists (valid_to is blank, or only an inferred window from the next commander). false when a source dates a relief, death, or handover.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "boolean"
+    },
+    {
+      "name": "change_undated",
+      "type": "boolean",
+      "description": "true when the change of commander happened somewhere between two dated observations and no source dates the change. Nothing is guessed inside that range.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "boolean"
+    },
+    {
+      "name": "date_basis",
+      "type": "string",
+      "description": "Where the evidence for the tenure dates comes from (vocabulary relationship_date_basis).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "relationship_date_basis"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "preferred, or alternate / disputed when the tenure is known only from competing claims of a conflict group.",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "claim_status"
+    },
+    {
+      "name": "conflict_group_id",
+      "type": "string",
+      "description": "Conflict group (the existing G### series) when status is alternate or disputed, and when two preferred tenures compete on a date. Blank when there is no conflict.",
+      "constraints": {
+        "pattern": "^G\\d{3,}$"
+      }
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "';'-separated reference ids of data/references_meta.csv; at least one.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "What the sources say, including same-day handovers and open disagreements."
+    }
+  ]
+}

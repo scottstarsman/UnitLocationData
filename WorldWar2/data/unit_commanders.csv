@@ -1,0 +1,697 @@
+tenure_id,unit_id,person_id,role,rank,rank_disputed,valid_from,valid_from_latest,valid_from_time,valid_from_basis,valid_to,valid_to_earliest,valid_to_time,valid_to_basis,end_unknown,change_undated,date_basis,status,conflict_group_id,reference_ids,note
+UC0001,BEL-INF-001B,PE0416,commander,Col.,false,1944-08-13,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R144;R668;R670;R782;R883;R889,
+UC0002,CAN-ARM-001B,PE0370,commander,Brigadier,false,1945-03-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R782;R893,
+UC0003,CAN-ARM-002B,PE0598,commander,Brigadier,false,1944-06-06,,,claim_date,1944-09-16,1944-08-23,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R008;R050;R137;R141;R456;R668;R670;R782;R889;R891;R892,"End not dated by a source: last named on 1944-08-23, next commanding officer of the unit first named on 1944-09-17 (change_undated)."
+UC0004,CAN-ARM-002B,PE0032,commander,Brigadier,false,1944-09-17,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R671;R890,
+UC0005,CAN-ARM-004D,PE0269,commander,Maj.-Gen.,false,1944-07-29,,,claim_date,1944-08-23,1944-08-19,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R404;R668;R670;R891;R892,"End not dated by a source: last named on 1944-08-19, next commanding officer of the unit first named on 1944-08-24 (change_undated)."
+UC0006,CAN-ARM-004D,PE0164,commander,Maj.-Gen.,false,1944-08-24,,,claim_date,1944-12-04,1944-11-04,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R668;R671;R782;R888;R889,"End not dated by a source: last named on 1944-11-04, next commanding officer of the unit first named on 1944-12-05 (change_undated)."
+UC0007,CAN-ARM-004D,PE0561,commander,Maj.-Gen.,false,1944-12-05,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R782;R882;R884;R885;R886,
+UC0008,CAN-ARM-005D,PE0238,commander,Maj.-Gen.,false,1945-02-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R668;R782;R883;R884;R886,
+UC0009,CAN-ARMY-001A,PE0098,commander,Lt.-Gen.,false,1944-06-18,,,claim_date,1944-09-27,,,narrative,false,false,narrative,preferred,,R002;R668;R892,"Handed First Canadian Army to Simonds on the morning of 27 September (C1282, Stacey p. 373)."
+UC0010,CAN-ARMY-001A,PE0498,acting_commander,Lt.-Gen.,false,1944-09-27,,,narrative,1944-11-09,,12:00,narrative,false,false,narrative,preferred,,R001;R002;R668,
+UC0011,CAN-ARMY-001A,PE0098,commander,Gen.,false,1944-11-09,,12:00,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R668;R882,"Resumed command at noon on 9 November (C1284, Stacey p. 426)."
+UC0012,CAN-COR-001C,PE0165,commander,Lt.-Gen.,false,1945-02-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R668;R782;R883;R884;R893,
+UC0013,CAN-COR-002C,PE0498,commander,Lt.-Gen.,false,1944-06-29,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R668;R670;R782;R882;R884;R887;R889;R891;R892,
+UC0014,CAN-COR-002C,PE0165,acting_commander,,false,1944-11-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668,
+UC0015,CAN-CORV-KITCHENER,PE0434,commander,Lt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1365,
+UC0016,CAN-INF-001D,PE0164,commander,Maj.-Gen.,false,1945-03-23,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R671;R782;R883;R884;R893,
+UC0017,CAN-INF-002D,PE0165,commander,Maj.-Gen.,false,1944-07-07,,,claim_date,1944-11-09,1944-09-26,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R668;R670;R782;R889;R890;R891;R892,"End not dated by a source: last named on 1944-09-26, next commanding officer of the unit first named on 1944-11-10 (change_undated)."
+UC0018,CAN-INF-002D,PE0258,acting_commander,Brig.,false,1944-10-07,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R668;R888,
+UC0019,CAN-INF-002D,PE0336,commander,Maj.-Gen.,false,1944-11-10,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R782;R808;R882;R884;R885;R886;R887,
+UC0020,CAN-INF-003D,PE0261,commander,Major-General,false,1944-06-06,,,claim_date,1944-08-17,1944-07-31,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R013;R063;R137;R141;R449;R668;R670;R782;R892,"End not dated by a source: last named on 1944-07-31, next commanding officer of the unit first named on 1944-08-18 (change_undated)."
+UC0021,CAN-INF-003D,PE0034,acting_commander,Brig.,false,1944-08-08,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R668;R670;R782;R891,
+UC0022,CAN-INF-003D,PE0509,commander,Maj.-Gen.,false,1944-08-18,,,claim_date,1945-03-23,1945-02-27,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R668;R782;R808;R882;R886;R887;R888;R889;R890;R891;R894,"End not dated by a source: last named on 1945-02-27, next commanding officer of the unit first named on 1945-03-24 (change_undated)."
+UC0023,CAN-INF-003D,PE0258,commander,Maj.-Gen.,false,1945-03-24,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R782;R884;R885,
+UC0024,CZ-ARM-001B,PE0316,commander,Maj.-Gen.,false,1944-08-30,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R037;R668;R671;R675;R882;R890,
+UC0025,FR-ARM-001D,PE0557,commander,Maj. Gen.,false,1944-08-17,,,claim_date,1945-01-19,1944-12-11,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R651;R680;R686;R782,"End not dated by a source: last named on 1944-12-11, next commanding officer of the unit first named on 1945-01-20 (change_undated)."
+UC0026,FR-ARM-001D,PE0523,commander,Gen.,false,1945-01-20,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R568;R686;R782,
+UC0027,FR-ARM-002D,PE0305,commander,Maj. Gen.,false,1944-08-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R048;R134;R403;R404;R406;R415;R421;R424;R425;R552;R568;R648;R650;R652;R668;R677;R686;R782,
+UC0028,FR-ARM-005D,PE0554,commander,Gen.,false,1944-11-20,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R686;R782,
+UC0029,FR-ARMY-001A,PE0525,commander,Gen.,false,1944-07-23,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R119;R428;R544;R568;R678;R679;R686;R782,
+UC0030,FR-ARMY-ATLANT,PE0300,commander,Gen.,false,1944-10-14,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R682;R683,
+UC0031,FR-CL-GEORGES-LEYGUES,PE0303,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1297,
+UC0032,FR-CL-MONTCALM,PE0122,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1296,
+UC0033,FR-COR-001C,PE0028,commander,Lt. Gen.,false,1944-09-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R129;R552;R686;R782,
+UC0034,FR-COR-002C,PE0362,commander,Maj. Gen.,false,1944-09-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R415;R420;R544;R686;R782,
+UC0035,FR-CORV-ACONIT,PE0354,commander,Lt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1370,
+UC0036,FR-CORV-RENONCULE,PE0358,commander,Lt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1371,
+UC0037,FR-DE-LA-COMBATTANTE,PE0404,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R1279;R1374;R1463,
+UC0038,FR-INF-001D,PE0056,commander,Gen.,false,1944-08-20,,,claim_date,1944-11-20,,,narrative,false,false,narrative,preferred,,R002;R038;R420;R686;R782,
+UC0039,FR-INF-001D,PE0176,commander,Gen.,false,1944-11-20,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R425;R552;R686;R782,
+UC0040,FR-INF-002D,PE0074,commander,Gen.,false,1944-09-15,,,claim_date,1945-04-23,1945-04-06,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R053;R544;R651;R686;R782,"End not dated by a source: last named on 1945-04-06, next commanding officer of the unit first named on 1945-04-24 (change_undated)."
+UC0041,FR-INF-002D,PE0314,commander,Gen.,false,1945-04-24,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R686;R782,
+UC0042,FR-INF-003D,PE0362,commander,Maj. Gen.,false,1944-08-20,,,claim_date,1944-10-07,1944-08-28,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R061;R428;R686,"End not dated by a source: last named on 1944-08-28, next commanding officer of the unit first named on 1944-10-08 (change_undated)."
+UC0043,FR-INF-003D,PE0199,commander,Gen.,false,1944-10-08,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R061;R544;R545;R686;R782,
+UC0044,FR-INF-004D,PE0043,commander,Gen.,false,1945-02-04,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R686,
+UC0045,FR-INF-009D,PE0329,commander,Gen.,false,1944-06-18,,,claim_date,1945-04-01,1944-11-14,,inferred_from_next_claim,true,true,inferred,preferred,,R686;R782,"End not dated by a source: last named on 1944-11-14, next commanding officer of the unit first named on 1945-04-02 (change_undated)."
+UC0046,FR-INF-009D,PE0553,commander,Gen.,false,1945-04-02,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R686;R782,
+UC0047,FR-INF-010D,PE0031,commander,Gen.,false,1944-10-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R425;R685;R686,
+UC0048,FR-INF-014D,PE0465,commander,Gen.,false,1945-02-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R028,
+UC0049,FR-INF-GIRONDE,PE0106,commander,Gen.,false,1945-04-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R682,
+UC0050,FR-PF-L-AVENTURE,PE0427,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1368,
+UC0051,FR-PF-L-ESCARMOUCHE,PE0133,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1369,
+UC0052,GER-AA-LUETTW,PE0323,commander,Generalleutnant,false,1945-04-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R169;R566,
+UC0053,GER-AA-STRAUB,PE0518,commander,General der Infanterie,false,1945-04-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R814,
+UC0054,GER-AG-00BG,PE0457,commander,Generalfeldmarschall,false,1944-06-06,,,claim_date,1944-07-16,1944-06-29,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R107;R137;R139;R165;R446;R448;R845,"End not dated by a source: last named on 1944-06-29, next commanding officer of the unit first named on 1944-07-17 (change_undated)."
+UC0055,GER-AG-00BG,PE0273,commander,Generalfeldmarschall,false,1944-07-17,,,narrative,1944-08-18,1944-07-19,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R107;R185;R588;R593;R668;R845,"End not dated by a source: last named on 1944-07-19, next commanding officer of the unit first named on 1944-08-19 (change_undated)."
+UC0056,GER-AG-00BG,PE0359,acting_commander,Generalfeldmarschall,false,1944-08-17,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R107;R185;R404;R587;R593;R629;R636,
+UC0057,GER-AG-00BG,PE0359,commander,Generalfeldmarschall,false,1944-08-19,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R107;R185;R404;R566;R605;R629;R630;R631;R632;R635;R638;R668;R807;R855;R894,
+UC0058,GER-AG-00GG,PE0037,commander,Generaloberst,false,1944-06-06,,,claim_date,1944-09-20,1944-09-18,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R415;R593;R845,"End not dated by a source: last named on 1944-09-18, next commanding officer of the unit first named on 1944-09-21 (change_undated)."
+UC0059,GER-AG-00GG,PE0017,commander,General der Panzertruppen,false,1944-09-21,,,narrative,1945-01-28,1944-12-03,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R186;R416;R770,"End not dated by a source: last named on 1944-12-03, next commanding officer of the unit first named on 1945-01-29 (change_undated)."
+UC0060,GER-AG-00GG,PE0214,commander,SS-Oberstgruppenführer,false,1945-01-29,,,narrative,1945-04-04,1945-03-30,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R002;R186;R425;R541;R767,"End not dated by a source: last named on 1945-03-30, next commanding officer of the unit first named on 1945-04-05 (change_undated)."
+UC0061,GER-AG-00GG,PE0479,commander,General der Infanterie,false,1945-04-05,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R186;R568;R569;R767,
+UC0062,GER-AG-00HG,PE0522,commander,Generaloberst,false,1944-10-31,,,narrative,1945-01-27,1944-11-10,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R187;R434;R807;R815,"End not dated by a source: last named on 1944-11-10, next commanding officer of the unit first named on 1945-01-28 (change_undated)."
+UC0063,GER-AG-00HG,PE0037,commander,Generaloberst,false,1945-01-28,,,narrative,1945-04-05,1945-02-02,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R187;R425;R538;R668;R815;R819,"End not dated by a source: last named on 1945-02-02, next commanding officer of the unit first named on 1945-04-06 (change_undated)."
+UC0064,GER-AG-00HG,PE0066,commander,Generalfeldmarschall,false,1945-04-06,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R187;R567;R569;R660;R661;R814,
+UC0065,GER-AG-OBRHG,PE0231,commander,SS-Reichsführer,false,1945-01-05,,,claim_date,1945-01-22,1945-01-05,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R545,"End not dated by a source: last named on 1945-01-05, next commanding officer of the unit first named on 1945-01-23 (change_undated)."
+UC0066,GER-AG-OBRHG,PE0214,commander,SS-Oberstgruppenführer,false,1945-01-23,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R425;R649,
+UC0067,GER-AG-STUDT,PE0522,commander,Generaloberst,false,1945-04-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R814,
+UC0068,GER-ARMY-001A,PE0277,commander,General der Panzertruppen,false,1944-09-06,,,narrative,1944-12-02,1944-11-28,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R002;R411;R412;R415;R416;R593;R770,"End not dated by a source: last named on 1944-11-28, next commanding officer of the unit first named on 1944-12-03 (change_undated)."
+UC0069,GER-ARMY-001A,PE0387,commander,General der Infanterie,false,1944-12-03,,,claim_date,1945-02-27,1944-12-03,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R770,"End not dated by a source: last named on 1944-12-03, next commanding officer of the unit first named on 1945-02-28 (change_undated)."
+UC0070,GER-ARMY-001A,PE0162,commander,General der Infanterie,false,1945-02-28,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R171;R186;R541;R568;R569,
+UC0071,GER-ARMY-007A,PE0130,commander,Generaloberst,false,1944-06-06,,,claim_date,1944-06-28,,,narrative,false,false,narrative,preferred,G001,R001;R002;R096;R139;R446;R448;R668;R761;R774,Died 28 June per CMH / Operation Epsom (G001 preferred).
+UC0072,GER-ARMY-007A,PE0214,commander,SS-Oberst-Gruppenfuehrer,false,1944-06-28,,15:00,narrative,1944-08-20,,,narrative,false,false,narrative,preferred,,R001;R002;R139;R402;R404;R405;R409;R446;R590;R668;R761;R773;R774,
+UC0073,GER-ARMY-007A,PE0130,commander,Generaloberst,false,1944-06-29,,,narrative,1944-06-29,,,narrative,false,false,narrative,alternate,G001,R001;R120,Wikipedia Dollmann page: died 29 June (G001 alternate).
+UC0074,GER-ARMY-007A,PE0136,commander,,false,1944-08-21,,,narrative,,,,open_at_last_claim,true,false,narrative,alternate,G318,R001;R404;R405;R409;R668,"Breakout and Pursuit ch. 31 p. 663 and Wikipedia's Eberbach page give Eberbach as Hausser's successor (from 21 August); ch. 27 p. 557 names Funck as temporary commander (G318). Linked to C0725/C0726, which record the disagreement."
+UC0075,GER-ARMY-007A,PE0172,commander,General der Panzertruppen,false,1944-08-21,,12:00,narrative,1944-08-30,1944-08-21,,inferred_from_next_claim,true,true,narrative,preferred,G318,R002;R773,"FMS B-179: Hausser handed command to Funck at noon on 21 August (C2202). Competing reading (Eberbach) is the G318 alternate. End not dated by a source: last named on 1944-08-21, next commanding officer of the unit first named on 1944-08-31 (change_undated)."
+UC0076,GER-ARMY-007A,PE0136,commander,,false,1944-08-31,,,narrative,1944-08-31,,,narrative,false,false,narrative,preferred,,R002;R668;R889,Stacey p. 298 (C7276): appointed to command the reconstituted Seventh Army and due to take over at noon on 31 August; captured at Saleux that morning.
+UC0077,GER-ARMY-007A,PE0048,commander,General der Panzertruppen,false,1944-09-09,,,claim_date,1945-02-20,,,narrative,false,false,narrative,preferred,,R001;R002;R174;R391;R535;R593;R640;R643,
+UC0078,GER-ARMY-007A,PE0154,commander,General der Infanterie,false,1945-02-20,1945-02-22,,narrative,1945-03-26,,,narrative,false,false,narrative,preferred,,R001;R002;R174;R535;R539;R542;R776,CMH: Model named Felber at once when Brandenberger was relieved on 20 February; Lexikon starts Felber 22 February (C1150). Ended late on 26 March when Obstfelder took over (C1180); C2220 still names Felber that day (headquarters move). Lexikon ends Felber 25 March.
+UC0079,GER-ARMY-007A,PE0387,commander,General der Infanterie,false,1945-03-26,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R174;R542;R568;R569;R767,
+UC0080,GER-ARMY-011A,PE0232,commander,General der Infanterie,false,1945-04-02,,,narrative,1945-04-07,1945-04-03,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R567;R662;R835,"End not dated by a source: last named on 1945-04-03, next commanding officer of the unit first named on 1945-04-08 (change_undated)."
+UC0081,GER-ARMY-011A,PE0320,commander,General der Artillerie,false,1945-04-08,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R567;R662;R835,
+UC0082,GER-ARMY-012A,PE0575,commander,General der Panzertruppen,false,1945-04-10,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R567;R569;R663,
+UC0083,GER-ARMY-015A,PE0602,commander,General der Infanterie,false,1944-08-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R434;R539;R540;R566;R593;R664;R671;R768;R769;R771;R778;R820;R821;R839;R888;R894,
+UC0084,GER-ARMY-019A,PE0581,commander,General der Infanterie,false,1944-09-18,,,claim_date,1944-12-14,1944-11-27,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R422;R423;R593;R607;R647;R762;R770,"End not dated by a source: last named on 1944-11-27, next commanding officer of the unit first named on 1944-12-15 (change_undated)."
+UC0085,GER-ARMY-019A,PE0430,commander,General der Infanterie,false,1944-12-15,,,narrative,1945-02-14,1945-02-05,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R002;R170;R424;R425;R541;R545;R648;R649;R763;R764,"End not dated by a source: last named on 1945-02-05, next commanding officer of the unit first named on 1945-02-15 (change_undated)."
+UC0086,GER-ARMY-019A,PE0162,commander,General der Infanterie,false,1945-02-15,,,narrative,1945-02-28,1945-02-20,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R170;R764,"End not dated by a source: last named on 1945-02-20, next commanding officer of the unit first named on 1945-03-01 (change_undated)."
+UC0087,GER-ARMY-019A,PE0387,commander,General der Infanterie,false,1945-03-01,,,narrative,1945-03-25,1945-03-05,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R170;R541;R764,"End not dated by a source: last named on 1945-03-05, next commanding officer of the unit first named on 1945-03-26 (change_undated)."
+UC0088,GER-ARMY-019A,PE0048,commander,General der Panzertruppen,false,1945-03-26,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R170;R568;R569;R686;R767;R779,
+UC0089,GER-ARMY-024A,PE0475,commander,General der Infanterie,false,1945-04-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R568;R569;R779,
+UC0090,GER-ARMY-025A,PE0078,commander,General der Flieger,false,1944-11-10,,,claim_date,1945-02-02,1944-11-25,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R173;R434;R815,"End not dated by a source: last named on 1944-11-25, next commanding officer of the unit first named on 1945-02-03 (change_undated)."
+UC0091,GER-ARMY-025A,PE0040,commander,General der Infanterie,false,1945-02-03,,,narrative,1945-03-25,,,narrative,false,false,narrative,preferred,,R002;R173;R543;R814;R819;R845,"Handover to Kleffel is dated 25 March (FMS B-414, C7954), 27 March (FMS B-365, C8037), or 28 March (CMH, C1194). Preferred valid_to uses the earliest sourced handover day so the preferred tenures do not overlap; the later dates remain linked as asserts_end evidence."
+UC0092,GER-ARMY-025A,PE0271,commander,General der Kavallerie,false,1945-03-25,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R814;R819;R845,Earliest sourced start is 25 March (C7954); FMS B-365 dates the handover 27 March (C8037).
+UC0093,GER-ARMY-BLUMT,PE0040,commander,General der Infanterie,false,1945-04-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R567;R569;R814;R844;R845,
+UC0094,GER-ARMY-LUETT,PE0323,commander,General der Panzertruppe,false,1944-12-30,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R851,
+UC0095,GER-BDSW-000H,PE0052,commander,Konteradmiral,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R004;R1548,
+UC0096,GER-COR-012C,PE0394,commander,General der Artillerie,false,1945-03-22,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R542;R776,
+UC0097,GER-COR-013C,PE0390,commander,Generalleutnant,false,1945-02-20,,,claim_date,1945-04-03,1945-03-21,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R533;R539;R541;R542;R776;R829,"End not dated by a source: last named on 1945-03-21, next commanding officer of the unit first named on 1945-04-04 (change_undated)."
+UC0098,GER-COR-013C,PE0045,commander,Generalleutnant,false,1945-04-04,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R255;R568,
+UC0099,GER-COR-025C,PE0148,commander,General der Artillerie,false,1944-08-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R257;R398;R401;R570;R784,
+UC0100,GER-COR-030C,PE0271,commander,General der Kavallerie,false,1945-02-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R819,
+UC0101,GER-COR-053C,PE0530,commander,General der Kavallerie,false,1945-01-21,,,claim_date,1945-03-05,1945-03-02,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R515;R776,"End not dated by a source: last named on 1945-03-02, next commanding officer of the unit first named on 1945-03-06 (change_undated)."
+UC0102,GER-COR-053C,PE0046,commander,Generalleutnant,false,1945-03-06,,,narrative,1945-03-30,1945-03-06,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R540;R829,"End not dated by a source: last named on 1945-03-06, next commanding officer of the unit first named on 1945-03-31 (change_undated)."
+UC0103,GER-COR-053C,PE0023,commander,Generalleutnant,false,1945-03-31,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R566;R778;R822,
+UC0104,GER-COR-062C,PE0376,commander,General der Infanterie,false,1944-08-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R241;R427;R667;R692,
+UC0105,GER-COR-063C,PE0117,commander,General,false,1944-11-18,,,claim_date,1944-11-21,1944-11-18,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R650;R651,"End not dated by a source: last named on 1944-11-18, next commanding officer of the unit first named on 1944-11-22 (change_undated)."
+UC0106,GER-COR-063C,PE0468,commander,General der Infanterie,false,1944-11-22,,,claim_date,1945-01-19,1944-12-06,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R686;R775,"End not dated by a source: last named on 1944-12-06, next commanding officer of the unit first named on 1945-01-20 (change_undated)."
+UC0107,GER-COR-063C,PE0001,commander,Generalleutnant,false,1945-01-20,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R425;R668;R777;R815,
+UC0108,GER-COR-064C,PE0529,commander,General,false,1944-09-22,,,claim_date,1945-01-27,1945-01-26,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R422;R425;R545;R607;R647;R650;R762;R763;R765;R766,"End not dated by a source: last named on 1945-01-26, next commanding officer of the unit first named on 1945-01-28 (change_undated)."
+UC0109,GER-COR-064C,PE0195,commander,General der Artillerie,false,1945-01-28,,,narrative,1945-05-04,1945-04-19,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R568;R766;R779,"End not dated by a source: last named on 1945-04-19, next commanding officer of the unit first named on 1945-05-05 (change_undated)."
+UC0110,GER-COR-064C,PE0170,commander,Generalleutnant,false,1945-05-05,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R779,
+UC0111,GER-COR-066C,PE0320,commander,General der Artillerie,false,1944-09-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R244;R392;R411;R539;R643;R657;R775;R780,
+UC0112,GER-COR-067C,PE0573,commander,General der Infanterie,false,1944-06-05,,,claim_date,1944-06-06,1944-06-05,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R836;R838,"End not dated by a source: last named on 1944-06-05, next commanding officer of the unit first named on 1944-06-07 (change_undated)."
+UC0113,GER-COR-067C,PE0507,commander,General der Infanterie,false,1944-06-07,,,claim_date,1944-10-31,1944-10-30,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R668;R771;R836;R837;R838;R839,"End not dated by a source: last named on 1944-10-30, next commanding officer of the unit first named on 1944-11-01 (change_undated)."
+UC0114,GER-COR-067C,PE0426,commander,Generalleutnant,false,1944-11-01,,,claim_date,1944-12-15,1944-11-15,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R837,"End not dated by a source: last named on 1944-11-15, next commanding officer of the unit first named on 1944-12-16 (change_undated)."
+UC0115,GER-COR-067C,PE0232,commander,General der Infanterie,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R243;R515;R540;R567;R643;R644;R768;R820;R834;R835,
+UC0116,GER-COR-067C,PE0168,commander,General der Infanterie,false,1945-04-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R835,
+UC0117,GER-COR-074C,PE0517,commander,General,false,1944-11-02,,,claim_date,1944-12-09,1944-11-02,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R642,"End not dated by a source: last named on 1944-11-02, next commanding officer of the unit first named on 1944-12-10 (change_undated)."
+UC0118,GER-COR-074C,PE0426,commander,General der Infanterie,false,1944-12-10,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R533;R534;R768;R778;R820,
+UC0119,GER-COR-080C,PE0029,commander,General der Infanterie,false,1944-09-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R250;R411;R539;R541;R568;R633;R634;R637;R639;R640;R776;R779,
+UC0120,GER-COR-081C,PE0290,commander,General der Panzertruppen,false,1944-08-06,,,claim_date,1944-09-11,1944-08-12,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R402;R403,"End not dated by a source: last named on 1944-08-12, next commanding officer of the unit first named on 1944-09-12 (change_undated)."
+UC0121,GER-COR-081C,PE0469,commander,General,false,1944-09-12,,,claim_date,1944-09-19,1944-09-12,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R247;R441,"End not dated by a source: last named on 1944-09-12, next commanding officer of the unit first named on 1944-09-20 (change_undated)."
+UC0122,GER-COR-081C,PE0279,commander,General der Infanterie,false,1944-09-20,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R435;R441;R566;R641;R778;R821,
+UC0123,GER-COR-082C,PE0500,commander,General der Infanterie,false,1944-11-11,,,claim_date,1944-12-02,1944-11-11,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R419,"End not dated by a source: last named on 1944-11-11, next commanding officer of the unit first named on 1944-12-03 (change_undated)."
+UC0124,GER-COR-082C,PE0201,commander,General der Infanterie,false,1944-12-03,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R568;R569;R767;R770,
+UC0125,GER-COR-084C,PE0334,commander,General der Artillerie,false,1944-06-06,,,claim_date,1944-06-12,,,narrative,false,false,narrative,preferred,,R001;R115;R132;R446;R448;R668;R832,
+UC0126,GER-COR-084C,PE0148,commander,General der Artillerie,false,1944-06-10,,,narrative,,,,open_at_last_claim,true,false,narrative,alternate,G004,R001;R132;R153,Wikipedia Fahrmbacher page dates the LXXXIV Corps command from 10 June (G004 alternate).
+UC0127,GER-COR-084C,PE0148,commander,General der Artillerie,false,1944-06-12,,,narrative,1944-06-17,1944-06-15,,narrative,false,false,narrative,preferred,G003,R001;R112;R115;R132;R446;R832,G004 preferred start: took over on 12 June when Marcks was killed (C0081). End dated as a range in G003 (no preferred claim): Choltitz replacing him from 15 June (C0116) or 16 June (C0123); Wikipedia Cherbourg page has Rommel relieving him c. 17 June (C0128).
+UC0128,GER-COR-084C,PE0077,commander,Generalleutnant,false,1944-06-15,1944-06-17,,narrative,1944-07-27,1944-07-26,,inferred_from_next_claim,true,true,narrative,preferred,G003,R001;R002;R132;R153;R248;R591;R593;R774,"Start dated as a range in G003 (all three handover claims are disputed; no preferred claim in the group): 15 June (C0116), 16 June (C0123), or after a c. 17 June relief of Fahrmbacher (C0128). First later preferred observation is C0805 (14 July). End not dated by a source: last named on 1944-07-26, next commanding officer of the unit first named on 1944-07-28 (change_undated)."
+UC0129,GER-COR-084C,PE0140,commander,Generalleutnant,false,1944-07-28,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R404;R590,
+UC0130,GER-COR-085C,PE0275,commander,General der Infanterie,false,1944-11-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R253;R542;R640;R643;R647;R651;R843,
+UC0131,GER-COR-086C,PE0387,commander,General der Infanterie,false,1944-07-01,,,claim_date,1945-02-06,1944-09-08,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R252;R586;R761;R839,"End not dated by a source: last named on 1944-09-08, next commanding officer of the unit first named on 1945-02-07 (change_undated)."
+UC0132,GER-COR-086C,PE0245,acting_commander,Generalleutnant,false,1944-09-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R839,
+UC0133,GER-COR-086C,PE0518,commander,,false,1945-02-07,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R777;R815,
+UC0134,GER-COR-088C,PE0436,commander,General der Infanterie,false,1944-06-06,,,claim_date,1944-12-21,1944-12-19,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R606;R771;R807;R809;R811;R812;R894,"End not dated by a source: last named on 1944-12-19, next commanding officer of the unit first named on 1944-12-22 (change_undated)."
+UC0135,GER-COR-088C,PE0481,commander,Generalleutnant,false,1944-12-22,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R668;R809;R810;R811;R812;R819,
+UC0136,GER-COR-089C,PE0185,commander,General der Infanterie,false,1944-09-01,,,claim_date,1944-10-31,1944-09-16,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R839,"End not dated by a source: last named on 1944-09-16, next commanding officer of the unit first named on 1944-11-01 (change_undated)."
+UC0137,GER-COR-089C,PE0236,commander,General der Infanterie,false,1944-11-01,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R249;R418;R541;R545;R648;R653;R770;R776,
+UC0138,GER-COR-090C,PE0410,commander,General,false,1944-11-26,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R423;R545;R650;R763,
+UC0139,GER-COR-FELDT,PE0155,commander,General der Kavallerie,false,1944-09-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R654;R813,
+UC0140,GER-FDS-000H,PE0412,commander,Kapitän zur See,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R1545,
+UC0141,GER-FDUW-000H,PE0463,commander,Kapitän zur See,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R1543,
+UC0142,GER-FEST-DUNKIRK,PE0171,commander,,false,1944-10-10,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R570;R716;R839;R890,
+UC0143,GER-FEST-LORIENT,PE0148,commander,,false,1944-08-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R398,
+UC0144,GER-FJ-002C,PE0344,commander,General der Fallschirmtruppen,false,1944-05-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R125;R266;R404;R449;R543;R586;R591;R606;R668;R774;R777;R806;R807;R813;R814;R815;R817;R826;R827;R828;R830;R831;R832;R833;R846;R847;R858;R885,
+UC0145,GER-FJ-002D,PE0292,commander,Generalleutnant,false,1944-10-31,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R807;R840;R855,
+UC0146,GER-FJ-003D,PE0471,commander,Generalleutnant,false,1944-06-09,,,claim_date,1944-12-15,1944-06-10,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R065;R449;R830;R853,"End not dated by a source: last named on 1944-06-10, next commanding officer of the unit first named on 1944-12-16 (change_undated)."
+UC0147,GER-FJ-003D,PE0344,acting_commander,General der Fallschirmtruppen,false,1944-08-20,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R404;R668;R833;R891,
+UC0148,GER-FJ-003D,PE0562,commander,Oberst,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R644,
+UC0149,GER-FJ-005D,PE0587,commander,Generalleutnant,false,1944-06-06,,,claim_date,1944-10-30,1944-06-27,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R841,"End not dated by a source: last named on 1944-06-27, next commanding officer of the unit first named on 1944-10-31 (change_undated)."
+UC0150,GER-FJ-005D,PE0220,commander,Generalmajor,false,1944-10-31,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R389;R391;R640;R643;R807;R843,
+UC0151,GER-FJ-006D,PE0228,commander,Generalleutnant,false,1944-08-25,,,claim_date,1944-11-18,1944-09-03,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R849,"End not dated by a source: last named on 1944-09-03, next commanding officer of the unit first named on 1944-11-19 (change_undated)."
+UC0152,GER-FJ-006D,PE0417,commander,,false,1944-11-19,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R807;R808;R810;R811;R817;R818;R882,
+UC0153,GER-FJ-007D,PE0145,commander,,false,1944-12-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R806;R813,
+UC0154,GER-FJ-008D,PE0562,commander,Generalleutnant,false,1945-01-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R777;R806;R813;R828,
+UC0155,GER-FJ-011D,PE0181,commander,Oberst,false,1945-03-31,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R864,
+UC0156,GER-FJ-ERDMD,PE0145,commander,,false,1944-09-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R807;R811,
+UC0157,GER-FJA-001A,PE0522,commander,Generaloberst,false,1944-09-04,,,claim_date,1944-11-19,1944-11-10,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R434;R593;R605;R606;R807;R811;R894,"End not dated by a source: last named on 1944-11-10, next commanding officer of the unit first named on 1944-11-20 (change_undated)."
+UC0158,GER-FJA-001A,PE0472,commander,General der Fallschirmtruppe,false,1944-11-20,,,narrative,1945-03-28,1945-03-21,,narrative,false,false,narrative,preferred,G027,R002;R543;R544;R668;R777;R806;R813;R814;R815;R826,"Wounded 21 March (Stacey, C7568); CMH has him remain until Blumentritt took over on 28 March (G027 preferred)."
+UC0159,GER-FJA-001A,PE0040,commander,General der Infanterie,false,1945-03-20,,,narrative,,,,open_at_last_claim,true,false,narrative,alternate,G027,R002;R659,Lexikon starts Blumentritt on 20 March (G027 alternate).
+UC0160,GER-FJA-001A,PE0472,commander,General der Fallschirmtruppe,false,1945-03-20,,,narrative,1945-03-20,,,narrative,false,false,narrative,alternate,G027,R002;R659,Lexikon ends Schlemm on 20 March (G027 alternate).
+UC0161,GER-FJA-001A,PE0040,commander,General der Infanterie,false,1945-03-21,1945-03-28,,narrative,1945-04-10,,,narrative,false,false,narrative,preferred,G027,R002;R543;R544;R567;R659;R668;R814;R826;R845,"Start dated as a range: Stacey has Schlemm wounded 21 March and Blumentritt taking over subsequently (C7568); FMS B-414 dates him from 25 March (C7955); CMH dates the arrival from Twenty-fifth Army on 28 March (C1192, G027 preferred)."
+UC0162,GER-FJA-001A,PE0522,commander,Generaloberst,false,1945-04-10,,,narrative,1945-04-27,1945-04-10,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R567;R659;R814,"End not dated by a source: last named on 1945-04-10, next commanding officer of the unit first named on 1945-04-28 (change_undated)."
+UC0163,GER-FJA-001A,PE0518,commander,General der Infanterie,false,1945-04-28,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R569;R659;R660;R814,
+UC0164,GER-FJR-005,PE0024,commander,Major,false,1944-06-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R853,
+UC0165,GER-FJR-006,PE0226,commander,,false,1944-09-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R807;R811,
+UC0166,GER-FJR-008,PE0313,commander,Oberst,false,1944-06-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R853,
+UC0167,GER-FJR-009,PE0514,commander,Major,false,1944-06-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R853,
+UC0168,GER-FJR-LEHR,PE0225,commander,Oberstleutnant,false,1944-09-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R849,
+UC0169,GER-FLK-002C,PE0071,commander,General der Flieger,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R842;R1856,
+UC0170,GER-GEB-002D,PE0551,commander,Generalleutnant,false,1945-04-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R568;R665,
+UC0171,GER-INF-048D,PE0075,commander,Generalleutnant,false,1944-11-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R418,
+UC0172,GER-INF-059D,PE0418,commander,Generalleutnant,false,1944-09-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R443;R608;R768;R771;R807;R811;R820;R839;R894,
+UC0173,GER-INF-064D,PE0137,commander,,false,1944-09-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R888;R889;R894,
+UC0174,GER-INF-070D,PE0110,commander,Generalleutnant,false,1944-09-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R228;R443;R668;R782;R839;R888;R894,
+UC0175,GER-INF-077D,PE0511,commander,Generalmajor,false,1944-06-10,,,claim_date,1944-06-18,,,narrative,false,false,narrative,preferred,,R001;R002;R091;R446;R449,
+UC0176,GER-INF-077D,PE0013,acting_commander,Oberst,false,1944-06-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R446,
+UC0177,GER-INF-077D,PE0013,commander,Oberst,false,1944-07-30,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R773,
+UC0178,GER-INF-084D,PE0346,commander,,false,1944-08-21,,,claim_date,1944-10-30,1944-08-21,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R668;R891,"End not dated by a source: last named on 1944-08-21, next commanding officer of the unit first named on 1944-10-31 (change_undated)."
+UC0179,GER-INF-084D,PE0157,commander,,false,1944-10-31,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R777;R806;R813;R828;R887,
+UC0180,GER-INF-089D,PE0059,commander,Generalmajor,false,1944-11-04,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R642,
+UC0181,GER-INF-176D,PE0295,commander,Generalleutnant,false,1944-11-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R845,
+UC0182,GER-INF-180D,PE0527,commander,,false,1944-12-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R777;R806;R813;R828,
+UC0183,GER-INF-189D,PE0116,commander,Generalmajor,false,1944-11-14,,,claim_date,1944-11-18,1944-11-18,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R825,"End not dated by a source: last named on 1944-11-18, next commanding officer of the unit first named on 1944-11-19 (change_undated)."
+UC0184,GER-INF-189D,PE0605,commander,Generalmajor,false,1944-11-19,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R191;R425;R764;R765;R766;R825,
+UC0185,GER-INF-190D,PE0206,commander,Generalleutnant,false,1944-09-21,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R777;R806;R813;R828;R886,
+UC0186,GER-INF-198D,PE0019,commander,Generalmajor,false,1945-04-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R779,
+UC0187,GER-INF-242D,PE0014,commander,Generalleutnant,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R195;R428;R667,
+UC0188,GER-INF-243D,PE0222,commander,Generalleutnant,false,1944-06-17,,,claim_date,1944-06-17,,,narrative,false,false,narrative,preferred,,R001;R043,
+UC0189,GER-INF-243D,PE0527,commander,Generalmajor,false,1944-06-17,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R043;R196;R446,
+UC0190,GER-INF-244D,PE0485,commander,Generalleutnant,false,1944-08-22,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R197;R428;R686,
+UC0191,GER-INF-245D,PE0466,commander,Generalleutnant,false,1944-09-13,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R815;R816;R889,
+UC0192,GER-INF-266D,PE0505,commander,Generalleutnant,false,1944-08-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R201;R861,
+UC0193,GER-INF-277D,PE0556,commander,Oberst,false,1944-08-20,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R404,
+UC0194,GER-INF-331D,PE0513,commander,,false,1944-08-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668,
+UC0195,GER-INF-338D,PE0093,commander,General,false,1944-10-06,,,claim_date,1944-11-13,1944-10-06,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R686,"End not dated by a source: last named on 1944-10-06, next commanding officer of the unit first named on 1944-11-14 (change_undated)."
+UC0196,GER-INF-338D,PE0392,commander,General,false,1944-11-14,,,claim_date,1945-04-04,1944-11-14,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R686;R825,"End not dated by a source: last named on 1944-11-14, next commanding officer of the unit first named on 1945-04-05 (change_undated)."
+UC0197,GER-INF-338D,PE0147,commander,Generalmajor,false,1945-04-05,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R778;R855;R859,
+UC0198,GER-INF-343D,PE0431,commander,Generalleutnant,false,1944-09-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R209;R408,
+UC0199,GER-INF-346D,PE0126,commander,Generalleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R057;R771;R782;R888;R889,
+UC0200,GER-INF-347D,PE0532,commander,Generalleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R412;R812,
+UC0201,GER-INF-348D,PE0492,commander,Generalleutnant,false,1944-06-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R213;R406;R784;R836;R838,
+UC0202,GER-INF-352D,PE0284,commander,Generalleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R059;R060;R132;R137;R141;R449;R832,
+UC0203,GER-INF-353D,PE0330,commander,Generalleutnant,false,1944-08-20,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R404;R833,
+UC0204,GER-INF-471D,PE0217,commander,Generalleutnant,false,1945-03-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R814,
+UC0205,GER-INF-709D,PE0473,commander,Generalleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R085;R112;R446;R449,
+UC0206,GER-INF-711D,PE0435,commander,Generalleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R087;R448;R670;R782;R838;R889,
+UC0207,GER-INF-712D,PE0377,commander,Generalleutnant,false,1944-09-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R771;R839,
+UC0208,GER-INF-716D,PE0445,commander,Generalleutnant,false,1944-06-06,,,claim_date,1945-04-01,1944-06-06,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R088;R132;R137;R448;R668;R670,"End not dated by a source: last named on 1944-06-06, next commanding officer of the unit first named on 1945-04-02 (change_undated)."
+UC0209,GER-INF-716D,PE0534,commander,Oberst,false,1945-04-02,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R779,
+UC0210,GER-INF-719D,PE0494,commander,Generalleutnant,false,1944-09-04,,,claim_date,1944-12-02,1944-09-06,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R811,"End not dated by a source: last named on 1944-09-06, next commanding officer of the unit first named on 1944-12-03 (change_undated)."
+UC0211,GER-INF-719D,PE0480,commander,Generalleutnant,false,1944-12-03,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R653;R770,
+UC0212,GER-JGK-002C,PE0254,commander,Generalleutnant,false,1943-09-15,,,claim_date,1944-06-30,1943-09-15,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R909,"End not dated by a source: last named on 1943-09-15, next commanding officer of the unit first named on 1944-07-01 (change_undated)."
+UC0213,GER-JGK-002C,PE0071,commander,General,false,1944-07-01,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R801;R909,
+UC0214,GER-KDK-000H,PE0227,commander,Vizeadmiral,false,1944-04-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R1546;R1561,
+UC0215,GER-KG-BOEHM,PE0041,commander,,false,1944-06-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R449,
+UC0216,GER-KG-CHILL,PE0076,commander,,false,1944-09-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R443;R605;R608;R668;R771;R807;R809;R811,
+UC0217,GER-KG-FREY,PE0169,commander,SS-Obersturmbannführer,false,1944-06-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R139;R140;R446,
+UC0218,GER-KG-HEINTZ,PE0221,commander,Oberst,false,1944-06-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R044;R449,
+UC0219,GER-KG-HEYDTE,PE0226,commander,,false,1944-12-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R711;R712;R713;R857,
+UC0220,GER-KG-KUNKEL,PE0289,commander,Major,false,1944-12-20,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R850,
+UC0221,GER-KG-MEYER,PE0347,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R448,
+UC0222,GER-KG-PEIPER,PE0409,commander,,false,1944-12-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R386;R695;R711,
+UC0223,GER-KG-ROHRBACH,PE0455,commander,Oberst,false,1944-06-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R043;R449,
+UC0224,GER-KG-VONLUCK,PE0321,commander,Major,false,1944-06-23,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R139;R761,
+UC0225,GER-KG-WEIDINGER,PE0572,commander,SS-Obersturmbannführer,false,1944-06-27,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R139;R140;R446,
+UC0226,GER-KKF-261,PE0021,commander,Korvettenkapitän,false,1944-08-22,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R1547,
+UC0227,GER-KSN-000H,PE0223,commander,Konteradmiral,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R908,
+UC0228,GER-KSW-000H,PE0070,commander,Kapitän zur See,false,1944-06-21,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1544;R1547,
+UC0229,GER-LFC-004C,PE0411,commander,General,false,1944-10-31,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R422;R607,
+UC0230,GER-LFD-016D,PE0495,commander,Generalleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R812,
+UC0231,GER-LFL-003A,PE0506,commander,Generalfeldmarschall,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R845;R1855;R2216,
+UC0232,GER-LL-091D,PE0149,commander,Generalleutnant,false,1944-06-06,,,claim_date,1944-06-06,,,narrative,false,false,narrative,preferred,,R001;R102;R447;R448,
+UC0233,GER-LL-091D,PE0527,temporary_commander,Generalmajor,false,1944-06-06,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R102;R447;R448,
+UC0234,GER-LL-091D,PE0291,acting_commander,Generalleutnant,true,1944-07-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R603,"Rank disputed: Colonel per CMH, Generalleutnant per Lexikon (C0798). Rank stored as Generalleutnant."
+UC0235,GER-MAA-260,PE0582,commander,Kapitänleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R908,
+UC0236,GER-MGW-000H,PE0286,commander,Admiral,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R845,
+UC0237,GER-OBW-000H,PE0273,commander,Generalfeldmarschall,false,1944-07-02,,,narrative,1944-08-17,1944-07-03,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R407;R586;R587;R593;R845,"End not dated by a source: last named on 1944-07-03, next commanding officer of the unit first named on 1944-08-18 (change_undated)."
+UC0238,GER-OBW-000H,PE0359,commander,Generalfeldmarschall,false,1944-08-18,,,claim_date,1944-08-31,1944-08-28,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R845,"End not dated by a source: last named on 1944-08-28, next commanding officer of the unit first named on 1944-09-01 (change_undated)."
+UC0239,GER-OBW-000H,PE0462,commander,Generalfeldmarschall,false,1944-09-01,,,narrative,1945-03-10,,,narrative,false,false,narrative,preferred,,R001;R002;R013;R121;R137;R154;R407;R410;R411;R416;R430;R447;R515;R540;R586;R587;R593;R635;R636;R638;R668;R819;R845,
+UC0240,GER-OBW-000H,PE0264,commander,Generalfeldmarschall,false,1945-03-10,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R540;R568;R569;R638,
+UC0241,GER-OKW-000H,PE0248,commander,Generaloberst,false,1945-05-07,,,claim_date,1945-05-07,1945-05-07,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R569,"End not dated by a source: last named on 1945-05-07, next commanding officer of the unit first named on 1945-05-08 (change_undated)."
+UC0242,GER-OKW-000H,PE0259,commander,Generalfeldmarschall,false,1945-05-08,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R569;R666,
+UC0243,GER-PG-003D,PE0218,commander,Generalmajor,false,1944-09-12,,,claim_date,1944-11-16,1944-09-17,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R411;R413,"End not dated by a source: last named on 1944-09-17, next commanding officer of the unit first named on 1944-11-17 (change_undated)."
+UC0244,GER-PG-003D,PE0120,commander,Generalmajor,false,1944-11-17,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R437;R438;R566;R709;R778;R804;R850;R851,
+UC0245,GER-PG-015D,PE0454,commander,Generalleutnant,false,1945-01-14,,,claim_date,1945-02-23,1945-01-14,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R850;R851,"End not dated by a source: last named on 1945-01-14, next commanding officer of the unit first named on 1945-02-24 (change_undated)."
+UC0246,GER-PG-015D,PE0453,commander,,false,1945-02-24,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R777,
+UC0247,GER-PG-FUEBE,PE0439,commander,Oberst,false,1944-12-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R387;R392;R708;R709;R850,
+UC0248,GER-PG-FUEGR,PE0092,acting_commander,,false,1944-12-27,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R709,
+UC0249,GER-PZ-002D,PE0323,commander,Generalleutnant,false,1944-06-10,,,claim_date,1944-12-15,1944-08-20,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R054;R141;R404;R449;R668;R761;R854,"End not dated by a source: last named on 1944-08-20, next commanding officer of the unit first named on 1944-12-16 (change_undated)."
+UC0250,GER-PZ-002D,PE0301,commander,Oberst,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R388;R389;R393;R643;R708;R772;R850;R851,
+UC0251,GER-PZ-009D,PE0367,commander,General,false,1944-09-16,,,claim_date,1944-09-16,,,narrative,false,false,narrative,preferred,,R002;R441,C0862 (CMH Siegfried Line Campaign ch. 4 p. 87): Brandenberger relieved General Mueller on 16 September; as of nightfall the division lacked even a commander. No earlier named commander cell; valid_from is the relief date (known in command when relieved).
+UC0252,GER-PZ-009D,PE0142,commander,General,false,1944-11-17,,,claim_date,1945-03-08,1944-11-17,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R438;R824,"End not dated by a source: last named on 1944-11-17, next commanding officer of the unit first named on 1945-03-09 (change_undated)."
+UC0253,GER-PZ-009D,PE0023,commander,Generalleutnant,false,1945-03-09,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R540,
+UC0254,GER-PZ-011D,PE0583,commander,Generalleutnant,false,1944-09-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R273;R416;R418;R540;R569;R770,
+UC0255,GER-PZ-021D,PE0156,commander,Generalmajor,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R013;R014;R042;R114;R132;R137;R139;R141;R164;R274;R416;R418;R448;R449;R668;R670;R761;R770,
+UC0256,GER-PZ-039C,PE0115,commander,General der Panzertruppen,false,1945-01-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R425;R545;R649;R814;R844,
+UC0257,GER-PZ-047C,PE0172,commander,General der Panzertruppen,false,1944-06-13,,,claim_date,1944-09-03,1944-08-20,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R140;R402;R403;R404;R449;R586;R761;R773;R774;R854,"End not dated by a source: last named on 1944-08-20, next commanding officer of the unit first named on 1944-09-04 (change_undated)."
+UC0258,GER-PZ-047C,PE0323,commander,General der Panzertruppen,false,1944-09-04,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R261;R393;R411;R415;R416;R435;R438;R515;R543;R544;R566;R643;R668;R768;R772;R777;R778;R780;R806;R807;R814;R815;R820;R822;R823;R824;R848;R850;R851;R885;R886,
+UC0259,GER-PZ-058C,PE0287,commander,General der Panzertruppen,false,1944-11-23,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R259;R393;R643;R772;R780;R821,
+UC0260,GER-PZ-116D,PE0437,commander,Oberst,false,1944-08-07,,,narrative,1944-08-19,1944-08-07,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R402,"End not dated by a source: last named on 1944-08-07, next commanding officer of the unit first named on 1944-08-20 (change_undated)."
+UC0261,GER-PZ-116D,PE0368,commander,Oberst,false,1944-08-20,,,claim_date,1944-09-11,1944-08-20,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R404,"End not dated by a source: last named on 1944-08-20, next commanding officer of the unit first named on 1944-09-12 (change_undated)."
+UC0262,GER-PZ-116D,PE0484,commander,Generalleutnant,false,1944-09-12,,,claim_date,1944-11-03,1944-09-12,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R272;R441,"End not dated by a source: last named on 1944-09-12, next commanding officer of the unit first named on 1944-11-04 (change_undated)."
+UC0263,GER-PZ-116D,PE0563,commander,Generalmajor,false,1944-11-04,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R272;R385;R386;R388;R393;R566;R642;R643;R695;R708;R772,
+UC0264,GER-PZ-LEHRD,PE0023,commander,Generalleutnant,false,1944-06-07,,,claim_date,1945-04-02,1945-03-09,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R014;R114;R139;R141;R143;R384;R393;R448;R449;R540;R591;R592;R643;R646;R668;R670;R708;R761;R770;R772;R843;R850;R851;R855;R859,"End not dated by a source: last named on 1945-03-09, next commanding officer of the unit first named on 1945-04-03 (change_undated)."
+UC0265,GER-PZ-LEHRD,PE0378,commander,Generalmajor,false,1945-02-28,,,claim_date,1945-04-02,1945-02-28,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R852,"End not dated by a source: last named on 1945-02-28, next commanding officer of the unit first named on 1945-04-03 (change_undated)."
+UC0266,GER-PZ-LEHRD,PE0213,commander,Oberst,false,1945-04-03,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R778,
+UC0267,GER-PZA-005A,PE0127,commander,Panzergeneraloberst,false,1944-08-18,,,claim_date,1944-08-30,1944-08-18,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R077;R404,"End not dated by a source: last named on 1944-08-18, next commanding officer of the unit first named on 1944-08-31 (change_undated)."
+UC0268,GER-PZA-005A,PE0136,commander,,false,1944-08-31,,,claim_date,1944-09-10,1944-08-31,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R668,"End not dated by a source: last named on 1944-08-31, next commanding officer of the unit first named on 1944-09-11 (change_undated)."
+UC0269,GER-PZA-005A,PE0333,commander,General der Panzertruppen,false,1944-09-11,,,claim_date,1945-03-08,1945-03-01,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R393;R416;R434;R515;R537;R539;R540;R544;R643;R772;R780;R845,"End not dated by a source: last named on 1945-03-01, next commanding officer of the unit first named on 1945-03-09 (change_undated)."
+UC0270,GER-PZA-005A,PE0210,commander,Generaloberst,false,1945-03-09,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R544;R566;R658,
+UC0271,GER-PZA-006A,PE0127,commander,Generaloberst der Waffen-SS,false,1944-11-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R175;R434;R515;R537;R643;R644,
+UC0272,GER-PZB-106B,PE0069,commander,Colonel,false,1944-09-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R414;R415;R702,
+UC0273,GER-PZB-107B,PE0332,commander,Major,false,1944-09-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R605;R606;R701;R703;R807,
+UC0274,GER-PZB-111B,PE0470,commander,Colonel,false,1944-09-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R415;R416;R701;R704,
+UC0275,GER-PZB-112B,PE0550,commander,Colonel,false,1944-09-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R415;R416;R701;R705,
+UC0276,GER-PZB-113B,PE0486,commander,Colonel,false,1944-09-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R416;R704;R706,
+UC0277,GER-PZB-150B,PE0501,commander,,false,1944-12-20,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R386;R707,
+UC0278,GER-PZG-EBERB,PE0136,commander,General der Panzertruppe,false,1944-08-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R403,
+UC0279,GER-PZG-WESTA,PE0483,commander,General der Panzertruppe,false,1944-06-09,,,narrative,1944-07-01,1944-06-28,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R002;R077;R133;R139;R141;R446;R449;R761;R2216,"End not dated by a source: last named on 1944-06-28, next commanding officer of the unit first named on 1944-07-02 (change_undated)."
+UC0280,GER-PZG-WESTA,PE0136,commander,General der Panzertruppen,false,1944-07-02,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R077;R401;R407;R586;R589;R593,
+UC0281,GER-RBF-004,PE0008,commander,Kapitänleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R1542,
+UC0282,GER-SBF-002,PE0389,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R1542;R1562,
+UC0283,GER-SBF-004,PE0159,commander,Kapitänleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R1542;R1562,
+UC0284,GER-SBF-005,PE0272,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R1542;R1562,
+UC0285,GER-SBF-008,PE0607,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R1542;R1562,
+UC0286,GER-SBF-009,PE0357,commander,Kapitänleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R004;R1542;R1562,
+UC0287,GER-SS-U1191,PE0191,commander,Oblt.,false,1944-06-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0288,GER-SS-U212,PE0560,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0289,GER-SS-U256,PE0049,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0290,GER-SS-U262,PE0580,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0291,GER-SS-U269,PE0547,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0292,GER-SS-U270,PE0395,commander,,false,1944-06-06,,,claim_date,1944-08-12,1944-06-17,,inferred_from_next_claim,true,true,inferred,preferred,,R1563,"End not dated by a source: last named on 1944-06-17, next commanding officer of the unit first named on 1944-08-13 (change_undated)."
+UC0293,GER-SS-U270,PE0478,commander,Oblt.,false,1944-08-13,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R1563,
+UC0294,GER-SS-U281,PE0111,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0295,GER-SS-U333,PE0097,commander,,false,1944-06-06,,,claim_date,1944-07-30,1944-06-13,,inferred_from_next_claim,true,true,inferred,preferred,,R1563,"End not dated by a source: last named on 1944-06-13, next commanding officer of the unit first named on 1944-07-31 (change_undated)."
+UC0296,GER-SS-U333,PE0158,commander,,false,1944-07-31,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R1563,
+UC0297,GER-SS-U373,PE0309,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0298,GER-SS-U382,PE0606,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0299,GER-SS-U385,PE0552,commander,,false,1944-06-04,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0300,GER-SS-U390,PE0382,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0301,GER-SS-U413,PE0464,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0302,GER-SS-U415,PE0576,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0303,GER-SS-U437,PE0293,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0304,GER-SS-U441,PE0211,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0305,GER-SS-U445,PE0531,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0306,GER-SS-U480,PE0173,commander,Oblt.,false,1944-07-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0307,GER-SS-U608,PE0438,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0308,GER-SS-U618,PE0152,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0309,GER-SS-U621,PE0521,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0310,GER-SS-U629,PE0062,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0311,GER-SS-U650,PE0591,commander,Oblt.,false,1944-06-06,,,claim_date,1944-08-16,1944-06-16,,inferred_from_next_claim,true,true,inferred,preferred,,R1563,"End not dated by a source: last named on 1944-06-16, next commanding officer of the unit first named on 1944-08-17 (change_undated)."
+UC0312,GER-SS-U650,PE0606,commander,,false,1944-08-17,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R1563,
+UC0313,GER-SS-U671,PE0219,commander,,false,1944-07-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0314,GER-SS-U672,PE0304,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0315,GER-SS-U678,PE0244,commander,Oblt.,false,1944-07-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0316,GER-SS-U714,PE0482,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0317,GER-SS-U736,PE0383,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0318,GER-SS-U740,PE0510,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0319,GER-SS-U741,PE0400,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0320,GER-SS-U758,PE0153,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0321,GER-SS-U763,PE0089,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0322,GER-SS-U764,PE0050,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0323,GER-SS-U766,PE0384,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0324,GER-SS-U767,PE0385,commander,,false,1944-06-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0325,GER-SS-U821,PE0274,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0326,GER-SS-U963,PE0374,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0327,GER-SS-U970,PE0265,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0328,GER-SS-U971,PE0604,commander,Oblt.,false,1944-06-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0329,GER-SS-U981,PE0386,commander,,false,1944-06-06,,,claim_date,1944-08-11,1944-06-06,,inferred_from_next_claim,true,true,inferred,preferred,,R1563,"End not dated by a source: last named on 1944-06-06, next commanding officer of the unit first named on 1944-08-12 (change_undated)."
+UC0330,GER-SS-U981,PE0260,commander,Oblt.,false,1944-08-12,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R1563,
+UC0331,GER-SS-U984,PE0493,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0332,GER-SS-U985,PE0593,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0333,GER-SS-U988,PE0129,commander,Oblt.,false,1944-06-22,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0334,GER-SS-U989,PE0456,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0335,GER-SS-U993,PE0512,commander,Oblt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1563,
+UC0336,GER-SSCOR-012C,PE0040,commander,General der Infanterie,false,1944-10-21,,,narrative,1945-01-30,1944-12-17,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R768;R820;R845;R848,"End not dated by a source: last named on 1944-12-17, next commanding officer of the unit first named on 1945-01-31 (change_undated)."
+UC0337,GER-SSCOR-012C,PE0040,temporary_commander,General der Infanterie,false,1944-11-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R438;R848,
+UC0338,GER-SSCOR-012C,PE0023,commander,,false,1945-01-31,,,narrative,1945-02-22,1945-01-31,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R819;R852,"End not dated by a source: last named on 1945-01-31, next commanding officer of the unit first named on 1945-02-23 (change_undated)."
+UC0339,GER-SSCOR-012C,PE0096,commander,SS-Obergruppenführer,false,1945-02-23,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R821;R852,
+UC0340,GER-SSCOR-012C,PE0096,deputy_commander,Generalleutnant,false,1945-02-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R852;R855;R859,
+UC0341,GER-SSCOR-013C,PE0422,commander,Generalleutnant der Waffen-SS,false,1944-09-24,,,claim_date,1944-12-02,1944-11-13,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R416;R418,"End not dated by a source: last named on 1944-11-13, next commanding officer of the unit first named on 1944-12-03 (change_undated)."
+UC0342,GER-SSCOR-013C,PE0497,commander,General der Waffen-SS,false,1944-12-03,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R568;R569;R770,
+UC0343,GER-SSCOR-014C,PE0012,commander,General der Waffen-SS,false,1945-01-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R545,
+UC0344,GER-SSCOR-018C,PE0263,commander,General der Waffen-SS,false,1945-04-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R265;R568;R779,
+UC0345,GER-SSF-001,PE0589,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0346,GER-SSF-002,PE0255,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0347,GER-SSF-003,PE0603,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0348,GER-SSF-006,PE0143,commander,Kapitänleutnant,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0349,GER-SSF-007,PE0414,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0350,GER-SSF-009,PE0308,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0351,GER-SSF-010,PE0288,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0352,GER-SSF-012,PE0477,commander,Korvettenkapitän,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1543;R1563,
+UC0353,GER-SSGEB-006D,PE0051,commander,General,false,1945-04-02,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R566;R567,
+UC0354,GER-SSPG-017D,PE0393,commander,Generalmajor der Waffen-SS,false,1944-06-10,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R032;R109;R111;R449;R645;R761;R830,
+UC0355,GER-SSPZ-001C,PE0127,commander,SS-Oberst-Gruppenführer,false,1944-06-06,,,claim_date,1944-12-15,1944-07-01,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R131;R139;R140;R141;R448;R449;R586;R668;R761,"End not dated by a source: last named on 1944-07-01, next commanding officer of the unit first named on 1944-12-16 (change_undated)."
+UC0356,GER-SSPZ-001C,PE0422,commander,Generalleutnant der Waffen-SS,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R515;R643;R644,
+UC0357,GER-SSPZ-001D,PE0361,commander,SS-Brigadeführer,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R643;R644,
+UC0358,GER-SSPZ-002C,PE0214,commander,SS-Obergruppenführer,false,1944-06-26,,,claim_date,1944-06-29,,,narrative,false,false,narrative,preferred,,R001;R126;R139;R446,
+UC0359,GER-SSPZ-002C,PE0033,commander,SS-Obergruppenführer und General der Waffen-SS,false,1944-06-29,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R139;R262;R446;R515;R586;R605;R606;R608;R668;R761;R769;R807,
+UC0360,GER-SSPZ-002D,PE0294,commander,,false,1944-12-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R696,
+UC0361,GER-SSPZ-009D,PE0373,commander,SS-Standartenführer,false,1944-06-29,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R139;R446;R447;R761,
+UC0362,GER-SSPZ-010D,PE0207,commander,SS-Oberführer,false,1944-06-29,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R139;R446;R761,
+UC0363,GER-SSPZ-012D,PE0590,commander,SS-Brigadeführer,false,1944-06-06,,,claim_date,1944-06-25,1944-06-08,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R025;R140;R448;R449;R668;R670;R761,"End not dated by a source: last named on 1944-06-08, next commanding officer of the unit first named on 1944-06-26 (change_undated)."
+UC0364,GER-SSPZ-012D,PE0348,commander,SS-Standartenführer,false,1944-06-26,,,claim_date,1944-12-15,1944-08-20,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R014;R139;R141;R278;R404;R670;R891,"End not dated by a source: last named on 1944-08-20, next commanding officer of the unit first named on 1944-12-16 (change_undated)."
+UC0365,GER-SSPZ-012D,PE0283,commander,SS-Standartenführer,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R643;R644,
+UC0366,GER-VG-009D,PE0281,commander,Oberst,false,1944-12-29,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R331;R709,
+UC0367,GER-VG-012D,PE0144,commander,Generalmajor,false,1944-09-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R435;R441;R442;R644,
+UC0368,GER-VG-018D,PE0237,commander,Generalmajor,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R392;R643,
+UC0369,GER-VG-019D,PE0054,commander,Oberst,false,1944-11-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R412,
+UC0370,GER-VG-026D,PE0280,commander,Generalmajor,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R389;R393;R643;R850;R851,
+UC0371,GER-VG-036D,PE0574,commander,Generalmajor,false,1944-11-13,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R418;R770,
+UC0372,GER-VG-047D,PE0198,commander,Oberst,false,1945-04-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R779,
+UC0373,GER-VG-062D,PE0270,commander,Oberst,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R392;R643,
+UC0374,GER-VG-079D,PE0571,commander,,false,1944-12-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R391,
+UC0375,GER-VG-167D,PE0245,commander,Generalleutnant,false,1944-12-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R709,
+UC0376,GER-VG-183D,PE0297,commander,Generalleutnant,false,1944-11-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R845,
+UC0377,GER-VG-212D,PE0491,commander,,false,1944-12-20,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R390;R805,
+UC0378,GER-VG-246D,PE0585,commander,Colonel,false,1944-10-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R432;R593,
+UC0379,GER-VG-257D,PE0487,commander,Generalmajor,false,1945-04-10,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R686;R779,
+UC0380,GER-VG-276D,PE0360,commander,Generalleutnant,false,1944-12-16,,,claim_date,1944-12-20,1944-12-16,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R634;R640,"End not dated by a source: last named on 1944-12-16, next commanding officer of the unit first named on 1944-12-21 (change_undated)."
+UC0381,GER-VG-276D,PE0119,commander,,false,1944-12-21,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R390,
+UC0382,GER-VG-277D,PE0556,commander,Oberst,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R644,
+UC0383,GER-VG-326D,PE0256,commander,Generalmajor,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R644;R657,
+UC0384,GER-VG-347D,PE0533,commander,Generalleutnant,false,1945-05-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R617;R862,
+UC0385,GER-VG-352D,PE0474,commander,Oberst,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R391;R640;R643,
+UC0386,GER-VG-361D,PE0413,commander,Colonel,false,1944-11-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R418;R770,
+UC0387,GER-VG-462D,PE0322,commander,Generalleutnant,false,1944-11-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R645,
+UC0388,GER-VG-559D,PE0372,commander,Generalleutnant,false,1944-09-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R416;R418;R770;R779,
+UC0389,GER-VG-560D,PE0298,commander,Generalmajor,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R393;R643;R696;R772,
+UC0390,GER-VG-708D,PE0038,commander,Oberst,false,1944-11-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R770,
+UC0391,GER-ZF-008,PE0338,commander,Kapitän zur See,false,1944-06-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R1542;R1549;R1551,
+UC0392,NL-BS-NHN,PE0569,commander,,false,1945-04-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R782;R895,
+UC0393,NL-INF-BEWAK,PE0128,commander,,false,1944-09-22,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R782;R894,
+UC0394,NL-INF-IRNEB,PE0515,commander,Lt.-Col.,false,1944-08-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R144;R668;R670;R671;R676;R782;R889;R894;R895;R1159;R1160,
+UC0395,NL-INF-STOOT,PE0282,commander,,false,1944-09-19,,,claim_date,1945-04-30,1944-09-19,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R894,"End not dated by a source: last named on 1944-09-19, next commanding officer of the unit first named on 1945-05-01 (change_undated)."
+UC0396,NL-INF-STOOT,PE0044,acting_commander,,false,1944-09-22,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R894,
+UC0397,NL-INF-STOOT,PE0044,commander,,false,1945-05-01,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R894,
+UC0398,NL-INF-STOOT-BRB,PE0196,commander,,false,1944-10-10,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R782;R894,
+UC0399,NL-INF-STOOT-LIM,PE0282,commander,,false,1944-09-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R782;R894,
+UC0400,NL-PG-SOEMBA,PE0424,commander,"Lt. Cdr., RNN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1372,
+UC0401,POL-ABN-001B,PE0504,commander,Maj.-Gen.,false,1944-09-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R039;R668;R671;R782;R894,
+UC0402,POL-ARM-001D,PE0328,commander,Maj.-Gen.,false,1944-08-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R035;R668;R670;R671;R782;R808;R882;R884;R888;R889;R891;R894,
+UC0403,UK-ABN-001C,PE0058,commander,Lieutenant-General,false,1944-09-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R671,
+UC0404,UK-ABN-001D,PE0548,commander,,false,1944-09-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R894,
+UC0405,UK-ABN-006D,PE0175,commander,Major-General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R082;R141;R142;R333;R375;R670,
+UC0406,UK-AG-021G,PE0363,commander,Field-Marshal,false,1944-06-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R007;R017;R167;R376;R378;R451;R668;R670;R671,
+UC0407,UK-AG-G1,PE0151,commander,"Captain, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0408,UK-AG-G2,PE0018,commander,"Captain, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0409,UK-AG-G3,PE0131,commander,"Act. Captain, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0410,UK-AG-J1,PE0425,commander,"Captain, D.S.O., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0411,UK-AG-J2,PE0396,commander,"Captain, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0412,UK-AG-J3,PE0150,commander,"Act. Captain, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0413,UK-AG-J4,PE0247,commander,"Act. Captain, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0414,UK-AG-L1,PE0204,commander,"Act. Captain, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0415,UK-AG-L2,PE0407,commander,"Act. Captain, O.B.E., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0416,UK-AG-O4,PE0121,commander,"Act. Commander, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1374,
+UC0417,UK-AG-S1,PE0307,commander,"Captain, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0418,UK-AG-S2,PE0188,commander,"Captain, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0419,UK-AG-S3,PE0067,commander,"Captain, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0420,UK-ARM-004B,PE0104,commander,Brigadier,false,1944-06-26,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R068;R139;R140,
+UC0421,UK-ARM-007D,PE0146,commander,Major-General,false,1944-06-07,,,claim_date,1944-08-03,1944-06-14,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R008;R095;R114;R141;R449;R668;R670,"End not dated by a source: last named on 1944-06-14, next commanding officer of the unit first named on 1944-08-04 (change_undated)."
+UC0422,UK-ARM-007D,PE0555,commander,Brigadier,false,1944-08-04,,,narrative,1945-04-14,1944-08-26,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R668;R670;R782;R889,"End not dated by a source: last named on 1944-08-26, next commanding officer of the unit first named on 1945-04-15 (change_undated)."
+UC0423,UK-ARM-007D,PE0324,commander,Major-General,false,1945-04-15,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R671;R782;R884,
+UC0424,UK-ARM-008B,PE0094,commander,Brigadier,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R008;R014;R512;R513;R514,
+UC0425,UK-ARM-011D,PE0449,commander,Major-General,false,1944-06-13,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R139;R140;R446;R668;R670,
+UC0426,UK-ARM-011D,PE0241,commander,Lieutenant-General,false,1944-08-31,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R670;R671;R811;R889,
+UC0427,UK-ARM-027B,PE0423,commander,Brigadier,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R045;R670,
+UC0428,UK-ARM-079D,PE0233,commander,Major-General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R137;R670;R671;R890;R891;R1161,
+UC0429,UK-ARM-GRDD,PE0002,commander,Major-General,false,1944-06-28,,,claim_date,1944-09-02,1944-06-28,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R008;R122;R139,"End not dated by a source: last named on 1944-06-28, next commanding officer of the unit first named on 1944-09-03 (change_undated)."
+UC0430,UK-ARM-GRDD,PE0241,commander,Lieutenant-General,false,1944-09-03,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R668;R671;R889;R894,
+UC0431,UK-ARMY-002A,PE0118,commander,Lieutenant-General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R137;R139;R145;R668;R670,
+UC0432,UK-BM-EREBUS,PE0086,commander,Act. Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1295,
+UC0433,UK-CA-HAWKINS,PE0253,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1290,
+UC0434,UK-CDO-001B,PE0318,commander,Brigadier,false,1944-06-06,,,claim_date,1945-01-19,1944-06-06,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R668;R690,"End not dated by a source: last named on 1944-06-06, next commanding officer of the unit first named on 1945-01-20 (change_undated)."
+UC0435,UK-CDO-001B,PE0356,commander,Brigadier,false,1945-01-20,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R671;R690;R782;R884;R885,
+UC0436,UK-CDO-004B,PE0310,commander,Brigadier,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R668;R670;R671;R691;R782;R882;R888;R889;R890;R891;R894,
+UC0437,UK-CL-BELLONA,PE0379,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1294,
+UC0438,UK-CL-BLACK-PRINCE,PE0306,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1291,
+UC0439,UK-CL-ENTERPRISE,PE0190,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1281;R1284;R1292,
+UC0440,UK-CL-GLASGOW,PE0079,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1281;R1284;R1293,
+UC0441,UK-COR-001C,PE0099,commander,Lieutenant-General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R072;R110;R130;R137;R139;R141;R668;R670;R671;R889;R890;R892,
+UC0442,UK-COR-008C,PE0380,commander,Lieutenant-General,false,1944-06-26,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R139;R140;R668;R670,
+UC0443,UK-COR-012C,PE0448,commander,Lieutenant-General,false,1945-01-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R671,
+UC0444,UK-COR-030C,PE0061,commander,Lieutenant-General,false,1944-06-06,,,claim_date,1944-08-03,1944-06-27,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R014;R114;R137;R139;R141;R161;R449;R668,"End not dated by a source: last named on 1944-06-27, next commanding officer of the unit first named on 1944-08-04 (change_undated)."
+UC0445,UK-COR-030C,PE0241,commander,Lieutenant-General,false,1944-08-04,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R668;R670;R671;R708;R811;R882;R894,
+UC0446,UK-CORV-AZALEA,PE0179,commander,"Lt. Cdr., RD, RNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1364,
+UC0447,UK-CORV-BLUEBELL,PE0565,commander,"Lt., RNVR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1367,
+UC0448,UK-DD-BOADICEA,PE0215,commander,"Lt. Cdr., RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1366;R1373,
+UC0449,UK-DD-VESPER,PE0432,commander,"Lt. Cdr., RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1355,
+UC0450,UK-DD-VIDETTE,PE0596,commander,"Act. Lt. Cdr., RNVR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1356,
+UC0451,UK-DD-VIMY,PE0276,commander,"Lt. Cdr., RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1358,
+UC0452,UK-DD-VOLUNTEER,PE0586,commander,"Lt. Cdr., RD",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1357,
+UC0453,UK-DE-BRISSENDEN,PE0559,commander,"Lt., RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1362,
+UC0454,UK-DE-MELBREAK,PE0268,commander,"Lt., DSC, RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1361,
+UC0455,UK-DE-TALYBONT,PE0015,commander,"Lt. Cdr., RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1359,
+UC0456,UK-DE-TANATSIDE,PE0100,commander,"Cdr., RN",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1360,
+UC0457,UK-DE-WENSLEYDALE,PE0187,commander,"Act. Lt. Cdr., RNVR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1363,
+UC0458,UK-INF-003D,PE0441,commander,Major-General,false,1944-06-06,,,claim_date,1945-01-18,1944-06-06,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R064;R137;R142;R147;R668;R670,"End not dated by a source: last named on 1944-06-06, next commanding officer of the unit first named on 1945-01-19 (change_undated)."
+UC0459,UK-INF-003D,PE0578,commander,Major-General,false,1945-01-19,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R671;R882;R886;R887,
+UC0460,UK-INF-015D,PE0326,commander,Major-General,false,1944-06-14,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R008;R139;R140;R668;R670,
+UC0461,UK-INF-043D,PE0528,commander,Major-General,false,1944-06-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R139;R140;R668;R671;R673;R674;R884;R885;R887,
+UC0462,UK-INF-049D,PE0020,commander,Major-General,false,1944-06-13,,,claim_date,1944-12-03,1944-06-27,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R008;R014;R066;R139;R670,"End not dated by a source: last named on 1944-06-27, next commanding officer of the unit first named on 1944-12-04 (change_undated)."
+UC0463,UK-INF-049D,PE0326,commander,Major-General,false,1944-12-04,,,claim_date,1945-03-27,1944-12-04,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R668;R808;R882,"End not dated by a source: last named on 1944-12-04, next commanding officer of the unit first named on 1945-03-28 (change_undated)."
+UC0464,UK-INF-049D,PE0433,commander,,false,1945-03-28,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R883;R884,
+UC0465,UK-INF-050D,PE0189,commander,Major-General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R071;R137;R141;R449;R668;R670;R671,
+UC0466,UK-INF-051D,PE0064,commander,Major-General,false,1944-06-07,,,claim_date,1944-08-09,1944-06-23,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R008;R013;R072;R114;R139;R141;R142,"End not dated by a source: last named on 1944-06-23, next commanding officer of the unit first named on 1944-08-10 (change_undated)."
+UC0467,UK-INF-051D,PE0441,commander,Major-General,false,1944-08-10,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R668;R671;R885;R891,
+UC0468,UK-INF-052D,PE0203,commander,,false,1944-10-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R668;R888,
+UC0469,UK-INF-053D,PE0460,commander,Major-General,false,1944-06-27,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R008;R073,
+UC0470,UK-INF-059D,PE0324,commander,Major-General,false,1944-06-27,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R008;R145,
+UC0471,UK-LCS-1,PE0242,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0472,UK-LCS-2,PE0600,commander,"Lt.Cdr, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0473,UK-LCS-A,PE0558,commander,"Act. Lt.Cdr, R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0474,UK-LCS-C,PE0452,commander,"Ty. Act. Major, R.M.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0475,UK-LCS-D,PE0299,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0476,UK-LCS-D-BU,PE0186,commander,"Ty. Act. Major, R.M.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0477,UK-LCS-E,PE0488,commander,"Act. Commander, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0478,UK-LCS-G,PE0010,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0479,UK-LCS-H,PE0193,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0480,UK-LCS-I,PE0353,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0481,UK-LCS-K,PE0520,commander,"Commander, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0482,UK-LCS-L,PE0450,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0483,UK-LCS-N,PE0009,commander,"Lt., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0484,UK-LCS-O,PE0502,commander,"Commander, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0485,UK-LCS-P,PE0194,commander,"Commander, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0486,UK-LCS-Q,PE0132,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R1279;R1374,
+UC0487,UK-LCS-S-SUP,PE0103,commander,"Commander, D.S.C., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0488,UK-LCS-T,PE0428,commander,"Commander, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0489,UK-LCS-U,PE0141,commander,"Lt.Cdr, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0490,UK-LCS-U-LB,PE0053,commander,"Ty. Act. Lt.Cdr, R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0491,UK-LCS-V,PE0315,commander,"Commander, R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0492,UK-LSTF-01,PE0003,commander,"Act. Com., R.N.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0493,UK-LSTF-02,PE0109,commander,"Act. Com., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0494,UK-LSTF-03,PE0240,commander,"Act. Com., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0495,UK-LSTF-04,PE0082,commander,"Act. Com., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0496,UK-LSTF-05,PE0401,commander,"Act. Com., R.D., R.N.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0497,UK-LSTF-07,PE0524,commander,"Act. Com., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0498,UK-LSTF-08,PE0461,commander,"Act. Com., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0499,UK-LSTF-09,PE0399,commander,"Act. Com., D.S.O., R.N.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0500,UK-MSF-104,PE0027,commander,"Lt., R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1374,
+UC0501,UK-MSF-115,PE0446,commander,"Act. Lt.Com., D.S.C., R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279;R1374,
+UC0502,UK-MSF-143,PE0073,commander,"Lt., R.N.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0503,UK-MSF-150,PE0080,commander,"Act. Lt.Com., D.S.C., R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0504,UK-MSF-159,PE0112,commander,"Act. Lt.Com., D.S.C., R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279,
+UC0505,UK-MSF-165,PE0516,commander,"Ty. Act. Lt.Com., D.S.C., R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1279;R1374,
+UC0506,UK-MSF-167,PE0216,commander,"Lt., R.N.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1374,
+UC0507,UK-TNK-034B,PE0081,commander,Brigadier,false,1944-07-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R058;R668;R670;R671,
+UC0508,US-ABN-017D,PE0352,commander,Major General,false,1945-01-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R515;R521;R543;R549;R668;R885,
+UC0509,US-ABN-018C,PE0447,commander,Major General,false,1944-08-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R157;R336;R365;R386;R465;R479;R543;R566;R671,
+UC0510,US-ABN-082D,PE0447,commander,Major General,false,1944-06-06,,,claim_date,1944-08-26,1944-08-12,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R097;R106;R150;R365;R373;R382;R446;R668,"End not dated by a source: last named on 1944-08-12, next commanding officer of the unit first named on 1944-08-27 (change_undated)."
+UC0511,US-ABN-082D,PE0177,commander,Brigadier General,false,1944-08-27,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R015;R365;R386;R452;R465;R569;R696;R782;R894,
+UC0512,US-ABN-101D,PE0526,commander,Major General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R019;R106;R109;R111;R137;R150;R336;R446;R515;R568;R569;R668;R811;R812,
+UC0513,US-ABN-101D,PE0339,acting_commander,Brigadier General,false,1944-12-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R336;R384;R387;R389;R460,
+UC0514,US-ABTF-001D,PE0166,commander,Major General,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R420;R426;R647;R677;R692;R693,
+UC0515,US-AG-006G,PE0123,commander,Lieutenant General,false,1944-09-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R006;R410;R423;R424;R453;R487;R544;R568;R686,
+UC0516,US-AG-012G,PE0047,commander,Lieutenant General,false,1944-08-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R005;R168;R334;R377;R379;R386;R388;R398;R410;R444;R445;R457;R486;R542;R668,
+UC0517,US-AGC-004,PE0408,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1353,
+UC0518,US-AM-125,PE0229,commander,"Lt. Cdr., USNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1301;R1352,
+UC0519,US-APA-033,PE0549,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1354,
+UC0520,US-ARM-002D,PE0055,commander,Major General,false,1944-06-09,,,claim_date,1944-09-11,1944-09-02,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R049;R106;R347;R394;R397;R405;R409;R449;R668,"End not dated by a source: last named on 1944-09-02, next commanding officer of the unit first named on 1944-09-12 (change_undated)."
+UC0521,US-ARM-002D,PE0208,commander,Major General,false,1944-09-12,,,narrative,1945-04-11,1944-12-25,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R347;R708,"End not dated by a source: last named on 1944-12-25, next commanding officer of the unit first named on 1945-04-12 (change_undated)."
+UC0522,US-ARM-002D,PE0579,commander,Major General,false,1945-04-12,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R347;R567,
+UC0523,US-ARM-003D,PE0570,commander,Major General,false,1944-06-23,,,claim_date,1944-08-06,1944-07-31,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R008;R062;R352;R395;R446,"End not dated by a source: last named on 1944-07-31, next commanding officer of the unit first named on 1944-08-07 (change_undated)."
+UC0524,US-ARM-003D,PE0459,commander,Brigadier General,false,1944-08-07,,,narrative,1945-04-10,1944-12-21,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R002;R352;R386;R410;R695,"End not dated by a source: last named on 1944-12-21, next commanding officer of the unit first named on 1945-04-11 (change_undated)."
+UC0525,US-ARM-003D,PE0230,commander,Brig Gen,false,1945-04-11,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R352;R567,
+UC0526,US-ARM-004D,PE0595,commander,Major General,false,1944-07-11,,,claim_date,1944-12-21,1944-09-19,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R067;R163;R356;R397;R399;R400;R405;R413;R416,"End not dated by a source: last named on 1944-09-19, next commanding officer of the unit first named on 1944-12-22 (change_undated)."
+UC0527,US-ARM-004D,PE0174,commander,Major General,false,1944-12-22,,,claim_date,1945-04-03,1945-01-10,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R356;R391;R462;R515;R843,"End not dated by a source: last named on 1945-01-10, next commanding officer of the unit first named on 1945-04-04 (change_undated)."
+UC0528,US-ARM-004D,PE0239,commander,Brig Gen,false,1945-04-04,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R356;R567,
+UC0529,US-ARM-005D,PE0388,commander,Major General,false,1944-07-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R358;R430;R567,
+UC0530,US-ARM-006D,PE0197,commander,Major General,false,1944-07-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R360;R399;R408;R709,
+UC0531,US-ARM-007D,PE0496,commander,Major General,false,1944-08-10,,,claim_date,1944-12-15,1944-09-30,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R363,"End not dated by a source: last named on 1944-09-30, next commanding officer of the unit first named on 1944-12-16 (change_undated)."
+UC0532,US-ARM-007D,PE0212,commander,Maj Gen,false,1944-12-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R363;R383;R387;R515,
+UC0533,US-ARM-008D,PE0124,commander,Brigadier General,false,1945-01-14,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R516;R537;R538;R543,
+UC0534,US-ARM-009D,PE0311,commander,Major General,false,1945-01-14,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R517;R540;R556;R567;R584,
+UC0535,US-ARM-010D,PE0366,commander,Major General,false,1944-11-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R341;R384;R386;R412;R419;R470;R536;R568;R805,
+UC0536,US-ARM-011D,PE0266,commander,Brigadier General,false,1944-12-24,,,claim_date,1945-05-05,1945-03-08,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R515;R518;R540;R708;R709,"End not dated by a source: last named on 1945-03-08, next commanding officer of the unit first named on 1945-05-06 (change_undated)."
+UC0537,US-ARM-011D,PE0107,commander,Major General,false,1945-05-06,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R518;R569,
+UC0538,US-ARM-012D,PE0004,commander,Major General,false,1945-01-16,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R425;R519;R541;R545;R568,
+UC0539,US-ARM-013D,PE0592,commander,Major General,false,1945-04-12,,,claim_date,1945-05-01,1945-04-12,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R566;R571,"End not dated by a source: last named on 1945-04-12, next commanding officer of the unit first named on 1945-05-02 (change_undated)."
+UC0540,US-ARM-013D,PE0355,commander,Major General,false,1945-05-02,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R568;R569;R571;R582,
+UC0541,US-ARM-014D,PE0503,commander,Brigadier General,false,1945-01-11,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R425;R520;R541;R568,
+UC0542,US-ARM-016D,PE0415,commander,Brigadier General,false,1945-05-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R569;R572;R580,
+UC0543,US-ARM-020D,PE0391,commander,Major General,false,1945-04-29,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R568;R569;R570;R573,
+UC0544,US-ARMY-001A,PE0047,commander,Lieutenant General,false,1944-06-06,,,claim_date,1944-07-31,1944-07-25,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R007;R112;R117;R374;R394;R395;R445;R446;R449;R450;R454;R482,"End not dated by a source: last named on 1944-07-25, next commanding officer of the unit first named on 1944-08-01 (change_undated)."
+UC0545,US-ARMY-001A,PE0235,commander,Lieutenant General,false,1944-08-01,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R134;R386;R388;R398;R402;R406;R409;R410;R433;R436;R450;R454;R482;R515;R567;R711,
+UC0546,US-ARMY-003A,PE0405,commander,Lieutenant General,false,1944-08-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R006;R018;R148;R332;R387;R390;R391;R398;R411;R413;R417;R418;R419;R430;R455;R485;R567,
+UC0547,US-ARMY-007A,PE0403,commander,Lieutenant General,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R006;R146;R410;R423;R426;R427;R428;R484;R568;R668,
+UC0548,US-ARMY-009A,PE0499,commander,Lieutenant General,false,1944-09-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R135;R369;R388;R408;R433;R483;R566;R567,
+UC0549,US-ARMY-015A,PE0182,commander,Lieutenant General,false,1945-01-16,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R116;R515;R544;R547,
+UC0550,US-BB-033,PE0444,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1280;R1285,
+UC0551,US-BB-035,PE0016,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R901;R902;R903,
+UC0552,US-BB-035,PE0060,embarked_commander,Rear Admiral,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R901;R902;R903,
+UC0553,US-BB-036,PE0442,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1281;R1286,
+UC0554,US-CA-031,PE0252,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1282;R1287,
+UC0555,US-CA-031,PE0047,embarked_commander,Lt. Gen.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1282;R1287,
+UC0556,US-CA-031,PE0267,embarked_commander,Rear Admiral,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1282;R1287,
+UC0557,US-CA-037,PE0567,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1281;R1283;R1284;R1288,
+UC0558,US-CA-037,PE0125,embarked_commander,Rear Admiral,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1281;R1283;R1284;R1288,
+UC0559,US-CA-071,PE0490,commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1281;R1284;R1289,
+UC0560,US-CCA-002D,PE0083,commander,,false,1944-12-24,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R388,
+UC0561,US-CCR-004D,PE0036,commander,Colonel,false,1944-12-26,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R391,
+UC0562,US-COR-003C,PE0355,commander,Major General,false,1944-12-04,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R368;R391;R417;R471,
+UC0563,US-COR-005C,PE0182,commander,Major General,false,1944-06-06,,,claim_date,1945-04-14,1944-12-16,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R134;R137;R152;R396;R404;R406;R430;R436;R446;R449;R472;R644;R668,"End not dated by a source: last named on 1944-12-16, next commanding officer of the unit first named on 1945-04-15 (change_undated)."
+UC0564,US-COR-005C,PE0243,commander,Major General,false,1945-04-15,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R472;R567,
+UC0565,US-COR-006C,PE0535,commander,Major General,false,1944-08-15,,,claim_date,1945-05-03,1944-09-25,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R138;R151;R355;R420;R426;R427;R429,"End not dated by a source: last named on 1944-09-25, next commanding officer of the unit first named on 1945-05-04 (change_undated)."
+UC0566,US-COR-006C,PE0055,commander,Major General,false,1945-05-04,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R569;R575,
+UC0567,US-COR-007C,PE0085,commander,Major General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R111;R112;R137;R150;R382;R388;R394;R395;R397;R402;R409;R410;R432;R434;R435;R436;R437;R438;R441;R446;R473;R567;R668,
+UC0568,US-COR-008C,PE0350,commander,Major General,false,1944-06-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R113;R149;R366;R369;R383;R385;R387;R395;R397;R398;R399;R400;R407;R408;R446;R474,
+UC0569,US-COR-012C,PE0088,commander,Major General,false,1944-08-07,,,claim_date,1944-08-18,1944-08-13,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R155;R398;R405;R475,"End not dated by a source: last named on 1944-08-13, next commanding officer of the unit first named on 1944-08-19 (change_undated)."
+UC0570,US-COR-012C,PE0138,commander,Major General,false,1944-08-19,,,narrative,1945-04-21,1945-01-18,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R155;R372;R390;R405;R411;R413;R416;R418;R475;R515,"End not dated by a source: last named on 1945-01-18, next commanding officer of the unit first named on 1945-04-22 (change_undated)."
+UC0571,US-COR-012C,PE0246,commander,Major General,false,1945-04-22,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R475;R568;R569,
+UC0572,US-COR-013C,PE0183,commander,Major General,false,1944-11-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R434;R438;R440;R476;R567,
+UC0573,US-COR-015C,PE0202,commander,Major General,false,1944-08-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R016;R158;R168;R398;R401;R403;R405;R409;R413;R415;R421;R422;R423;R478;R568;R668,
+UC0574,US-COR-016C,PE0006,commander,Major General,false,1945-01-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R537;R538;R543;R546,
+UC0575,US-COR-019C,PE0090,commander,Major General,false,1944-06-13,,,claim_date,1944-10-15,1944-09-10,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R156;R396;R397;R405;R409;R442;R449;R477,"End not dated by a source: last named on 1944-09-10, next commanding officer of the unit first named on 1944-10-16 (change_undated)."
+UC0576,US-COR-019C,PE0342,commander,Major General,false,1944-10-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R431;R432;R437;R438;R477;R567,
+UC0577,US-COR-020C,PE0566,commander,Major General,false,1944-08-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R162;R398;R401;R405;R411;R414;R419;R480;R489;R568;R569,
+UC0578,US-COR-021C,PE0351,commander,Major General,false,1944-12-27,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R160;R351;R424;R425;R453;R481;R568;R686;R1166;R1167,
+UC0579,US-COR-022C,PE0208,commander,Major General,false,1945-03-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R116;R159;R337;R371;R531;R557;R558;R561;R562;R563;R564;R565,
+UC0580,US-COR-023C,PE0174,commander,Major General,false,1945-03-28,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R116;R557;R559;R560;R564,
+UC0581,US-DD-431,PE0398,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1318,
+UC0582,US-DD-454,PE0317,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1323,
+UC0583,US-DD-454,PE0087,embarked_commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1323,
+UC0584,US-DD-455,PE0440,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1325,
+UC0585,US-DD-456,PE0163,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1326,
+UC0586,US-DD-457,PE0030,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1324,
+UC0587,US-DD-461,PE0312,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1329,
+UC0588,US-DD-462,PE0568,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1328,
+UC0589,US-DD-463,PE0237,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1298;R1327,
+UC0590,US-DD-464,PE0319,commander,Lt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1330,
+UC0591,US-DD-493,PE0026,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1302,
+UC0592,US-DD-494,PE0335,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1303,
+UC0593,US-DD-496,PE0429,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1304,
+UC0594,US-DD-497,PE0489,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1305,
+UC0595,US-DD-497,PE0467,embarked_commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1305,
+UC0596,US-DD-603,PE0594,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1316,
+UC0597,US-DD-620,PE0250,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1299;R1314,
+UC0598,US-DD-621,PE0371,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1315,
+UC0599,US-DD-623,PE0341,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1317,
+UC0600,US-DD-623,PE0369,embarked_commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1317,
+UC0601,US-DD-624,PE0420,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1306,
+UC0602,US-DD-625,PE0423,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1307,
+UC0603,US-DD-627,PE0178,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1308,
+UC0604,US-DD-636,PE0337,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1319,
+UC0605,US-DD-637,PE0105,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1320,
+UC0606,US-DD-638,PE0365,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1321,
+UC0607,US-DD-639,PE0039,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1322,
+UC0608,US-DD-722,PE0072,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1309,
+UC0609,US-DD-722,PE0167,embarked_commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1309,
+UC0610,US-DD-723,PE0601,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1313,
+UC0611,US-DD-724,PE0025,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1310,
+UC0612,US-DD-725,PE0397,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1312,
+UC0613,US-DD-725,PE0167,embarked_commander,Capt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279;R1312,
+UC0614,US-DD-726,PE0278,commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1300;R1311,
+UC0615,US-DE-066,PE0584,commander,"Lt. Cdr., USNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1336,
+UC0616,US-DE-068,PE0588,commander,"Lt. Cdr., USNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1337,
+UC0617,US-DE-069,PE0184,commander,"Lt. Cdr., USNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1338,
+UC0618,US-DE-695,PE0349,commander,"Lt. Cdr., USNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1299;R1340,
+UC0619,US-DE-790,PE0113,commander,Lt. Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1339,
+UC0620,US-DE-790,PE0209,embarked_commander,Cdr.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1339,
+UC0621,US-DE-791,PE0262,commander,"Lt. Cdr., USNR",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1341,
+UC0622,US-DE-791,PE0139,embarked_commander,Commodore,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R1278;R1279;R1341,
+UC0623,US-INF-001D,PE0243,commander,Major General,false,1944-06-06,,,claim_date,1945-03-08,1944-08-25,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R040;R137;R141;R343;R394;R449;R668,"End not dated by a source: last named on 1944-08-25, next commanding officer of the unit first named on 1945-03-09 (change_undated)."
+UC0624,US-INF-001D,PE0007,commander,Brigadier General,false,1945-03-09,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R343;R540;R567,
+UC0625,US-INF-002D,PE0451,commander,Major General,false,1944-06-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R052;R348;R408;R449;R533;R567;R644;R804,
+UC0626,US-INF-003D,PE0381,commander,Major General,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R353;R426;R568;R569;R579;R686,
+UC0627,US-INF-004D,PE0022,commander,Major General,false,1944-06-06,,,claim_date,1944-09-17,1944-09-11,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R069;R112;R137;R357;R381;R446;R449;R668;R805,"End not dated by a source: last named on 1944-09-11, next commanding officer of the unit first named on 1944-09-18 (change_undated)."
+UC0628,US-INF-004D,PE0035,commander,Brigadier General,false,1944-09-18,,,narrative,1944-09-20,1944-09-18,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R357;R533,"End not dated by a source: last named on 1944-09-18, next commanding officer of the unit first named on 1944-09-21 (change_undated)."
+UC0629,US-INF-004D,PE0063,commander,Major General,false,1944-09-21,,,narrative,1944-09-29,1944-09-21,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R357,"End not dated by a source: last named on 1944-09-21, next commanding officer of the unit first named on 1944-09-30 (change_undated)."
+UC0630,US-INF-004D,PE0161,commander,Brigadier General,false,1944-09-30,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R002;R357,
+UC0631,US-INF-005D,PE0246,commander,Major General,false,1944-07-09,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R359;R390;R414;R489;R535;R542,
+UC0632,US-INF-008D,PE0343,commander,Major General,false,1944-07-04,,,claim_date,1944-07-24,1944-07-06,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R369,"End not dated by a source: last named on 1944-07-06, next commanding officer of the unit first named on 1944-07-25 (change_undated)."
+UC0633,US-INF-008D,PE0519,commander,Brigadier General,false,1944-07-25,,,claim_date,1945-04-13,1944-09-14,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R369;R408,"End not dated by a source: last named on 1944-09-14, next commanding officer of the unit first named on 1945-04-14 (change_undated)."
+UC0634,US-INF-008D,PE0364,commander,Brig Gen,false,1945-04-14,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R369;R566;R569,
+UC0635,US-INF-009D,PE0138,commander,Major General,false,1944-06-10,,,claim_date,1944-08-24,1944-08-15,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R002;R008;R105;R112;R372;R382;R446,"End not dated by a source: last named on 1944-08-15, next commanding officer of the unit first named on 1944-08-25 (change_undated)."
+UC0636,US-INF-009D,PE0095,commander,Major General,false,1944-08-25,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R002;R372;R533;R567,
+UC0637,US-INF-026D,PE0406,commander,Major General,false,1944-09-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R166;R344;R391,
+UC0638,US-INF-028D,PE0057,commander,Major General,false,1944-07-24,,,claim_date,1944-08-12,1944-08-06,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R345,"End not dated by a source: last named on 1944-08-06, next commanding officer of the unit first named on 1944-08-13 (change_undated)."
+UC0639,US-INF-028D,PE0577,commander,Brigadier General,false,1944-08-13,,,narrative,1944-08-13,1944-08-13,,inferred_from_next_claim,true,true,narrative,preferred,,R002;R345,"End not dated by a source: last named on 1944-08-13, next commanding officer of the unit first named on 1944-08-14 (change_undated)."
+UC0640,US-INF-028D,PE0091,commander,Brigadier General,false,1944-08-14,,,narrative,,,,open_at_last_claim,true,false,narrative,preferred,,R001;R002;R046;R345;R385;R393;R409;R459,
+UC0641,US-INF-029D,PE0180,commander,Major General,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R047;R137;R346;R408;R449;R668,
+UC0642,US-INF-030D,PE0234,commander,Major General,false,1944-06-10,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R055;R349;R386;R397;R402;R449;R567,
+UC0643,US-INF-035D,PE0011,commander,Major General,false,1944-07-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R350;R396;R709,
+UC0644,US-INF-036D,PE0108,commander,Major General,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R351;R420;R426,
+UC0645,US-INF-042D,PE0084,commander,Major General,false,1945-03-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R522;R541;R568;R578,
+UC0646,US-INF-044D,PE0508,commander,Major General,false,1944-09-15,,,claim_date,1945-05-04,1944-09-15,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R354,"End not dated by a source: last named on 1944-09-15, next commanding officer of the unit first named on 1945-05-05 (change_undated)."
+UC0647,US-INF-044D,PE0114,commander,Major General,false,1945-05-05,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R354;R569,
+UC0648,US-INF-045D,PE0134,commander,Major General,false,1944-08-15,,,claim_date,1945-04-15,1944-09-20,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R355;R427,"End not dated by a source: last named on 1944-09-20, next commanding officer of the unit first named on 1945-04-16 (change_undated)."
+UC0649,US-INF-045D,PE0166,commander,Major General,false,1945-04-16,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R355;R568;R579,
+UC0650,US-INF-066D,PE0285,commander,Major General,false,1945-01-01,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R080;R525;R544,
+UC0651,US-INF-069D,PE0443,commander,Major General,false,1945-02-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R526;R539;R567;R569;R577;R584,
+UC0652,US-INF-070D,PE0224,commander,Brigadier General,false,1945-01-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R527;R545,
+UC0653,US-INF-071D,PE0599,commander,Major General,false,1945-04-25,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R568;R569;R574,
+UC0654,US-INF-075D,PE0421,commander,Major General,false,1944-12-22,,,claim_date,1945-01-30,1944-12-22,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R361;R388;R464,"End not dated by a source: last named on 1944-12-22, next commanding officer of the unit first named on 1945-01-31 (change_undated)."
+UC0655,US-INF-075D,PE0419,commander,Major General,false,1945-01-31,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R361;R425,
+UC0656,US-INF-076D,PE0476,commander,Major General,false,1945-01-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R528;R535,
+UC0657,US-INF-078D,PE0402,commander,Major General,false,1945-02-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R529;R534;R540,
+UC0658,US-INF-079D,PE0597,commander,Major General,false,1944-06-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R093;R112;R362;R380;R405;R446,
+UC0659,US-INF-080D,PE0340,commander,Major General,false,1944-08-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R364;R391;R405;R535;R569,
+UC0660,US-INF-083D,PE0327,commander,Major General,false,1944-06-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R008;R098;R366;R408;R446;R567,
+UC0661,US-INF-084D,PE0042,commander,Brigadier General,false,1944-11-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R367;R388;R439;R440;R467;R567;R708;R824,
+UC0662,US-INF-086D,PE0345,commander,Major General,false,1945-04-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R561;R566;R568;R569;R570,
+UC0663,US-INF-087D,PE0102,commander,Brigadier General,false,1944-12-04,,,claim_date,1944-12-29,1944-12-04,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R368;R468,"End not dated by a source: last named on 1944-12-04, next commanding officer of the unit first named on 1944-12-30 (change_undated)."
+UC0664,US-INF-087D,PE0101,commander,,false,1944-12-30,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R002;R709,
+UC0665,US-INF-089D,PE0160,commander,Major General,false,1945-03-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R530;R541;R542;R551,
+UC0666,US-INF-090D,PE0325,commander,Brigadier General,false,1944-06-06,,,claim_date,1944-06-13,,,narrative,false,false,narrative,preferred,,R001;R101;R446,
+UC0667,US-INF-090D,PE0296,commander,Major General,false,1944-06-13,,,narrative,1944-08-14,1944-07-25,,inferred_from_next_claim,true,true,narrative,preferred,,R001;R002;R106;R370;R446,"End not dated by a source: last named on 1944-07-25, next commanding officer of the unit first named on 1944-08-15 (change_undated)."
+UC0668,US-INF-090D,PE0342,commander,Brigadier General,false,1944-08-15,,,claim_date,1945-01-31,1944-09-22,,inferred_from_next_claim,true,true,inferred,preferred,,R002;R370,"End not dated by a source: last named on 1944-09-22, next commanding officer of the unit first named on 1945-02-01 (change_undated)."
+UC0669,US-INF-090D,PE0458,commander,Maj Gen,false,1945-02-01,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R370;R533,
+UC0670,US-INF-094D,PE0331,commander,Major General,false,1944-09-05,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R371;R536,
+UC0671,US-INF-095D,PE0536,commander,Major General,false,1945-03-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R531;R538;R566;R581,
+UC0672,US-INF-097D,PE0205,commander,Brigadier General,false,1945-04-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R562;R566;R569,
+UC0673,US-INF-099D,PE0302,commander,Major General,false,1944-12-18,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R532;R540;R566;R804,
+UC0674,US-INF-100D,PE0065,commander,Major General,false,1944-11-12,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R335;R422;R458;R568,
+UC0675,US-INF-102D,PE0257,commander,Brigadier General,false,1944-11-08,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R337;R434;R461,
+UC0676,US-INF-103D,PE0200,commander,Major General,false,1944-11-20,,,claim_date,1945-05-03,1944-11-20,,inferred_from_next_claim,true,true,inferred,preferred,,R001;R338;R422;R463,"End not dated by a source: last named on 1944-11-20, next commanding officer of the unit first named on 1945-05-04 (change_undated)."
+UC0677,US-INF-103D,PE0339,commander,Major General,false,1945-05-04,,,claim_date,,,,open_at_last_claim,true,true,inferred,preferred,,R001;R338;R569;R583,
+UC0678,US-INF-104D,PE0005,commander,Major General,false,1944-10-19,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R339;R443;R466;R567;R668;R888,
+UC0679,US-INF-106D,PE0251,commander,Major General,false,1944-12-11,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R001;R002;R340;R383;R388;R392;R469,
+UC0680,US-PIB-551,PE0249,commander,Lieutenant Colonel,false,1945-01-07,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R694;R698,
+UC0681,US-PRCT-517,PE0192,commander,Colonel,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R427;R515;R692;R693;R694;R695;R696,
+UC0682,US-SSF-001B,PE0564,commander,Colonel,false,1944-08-15,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R647;R692;R694;R700,
+UC0683,US-TDB-001B,PE0135,commander,Brigadier General,false,1944-08-03,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R400;R408,
+UC0684,US-TF-BUTLER,PE0068,commander,Brigadier General,false,1944-08-17,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R002;R428;R429,
+UC0685,US-TG-124-3,PE0537,commander,Captain,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279,
+UC0686,US-TG-124-4,PE0540,commander,Captain,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279,
+UC0687,US-TG-124-5,PE0539,commander,Captain,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279,
+UC0688,US-TG-124-8,PE0546,commander,Captain,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279,
+UC0689,US-TG-125-12,PE0546,commander,Commander,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278,
+UC0690,US-TG-125-13,PE0545,commander,,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278,
+UC0691,US-TG-125-14,PE0375,commander,"Lt. Cdr., R.N.V.R.",false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902,
+UC0692,US-TG-125-4,PE0538,commander,Commander,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279,
+UC0693,US-TG-125-5,PE0542,commander,Commander,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278;R1279,
+UC0694,US-TG-125-7,PE0544,commander,Lt.Cdr,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1279,
+UC0695,US-YMSU-4,PE0543,commander,Lt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278,
+UC0696,US-YMSU-5,PE0541,commander,Lt.,false,1944-06-06,,,claim_date,,,,open_at_last_claim,true,false,inferred,preferred,,R902;R1278,

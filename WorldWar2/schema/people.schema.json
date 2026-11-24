@@ -1,0 +1,91 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "people",
+  "title": "People (data/people.csv)",
+  "description": "Hand-maintained. One row per distinct person named as a commander (or acting, temporary, deputy or embarked commander) in the claims. No tenure dates on this table; those live in data/unit_commanders.csv. Biographical life dates are out of scope. Person ids PE0001 onward are never reused or renumbered.",
+  "missingValues": [""],
+  "primaryKey": "person_id",
+  "foreignKeys": [
+    {
+      "fields": "nationality",
+      "reference": {
+        "resource": "nationalities",
+        "fields": "name"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "person_id",
+      "type": "string",
+      "description": "Stable id, PE0001 onward. Never reused or renumbered.",
+      "constraints": {
+        "required": true,
+        "pattern": "^PE\\d{4,}$"
+      }
+    },
+    {
+      "name": "canonical_name",
+      "type": "string",
+      "description": "Display name without rank: Hans von Obstfelder, Omar N. Bradley, Günther Blumentritt. Prefer the fullest sourced form, with the person's own diacritics when a source uses them.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sort_name",
+      "type": "string",
+      "description": "Sort key: Obstfelder, Hans von; Bradley, Omar N.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "given_names",
+      "type": "string",
+      "description": "Given names or initials (Hans, Omar N., Günther). Blank when only a surname is sourced."
+    },
+    {
+      "name": "surname",
+      "type": "string",
+      "description": "Surname (Obstfelder, Bradley, Blumentritt).",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "name_particles",
+      "type": "string",
+      "description": "Particles and nobiliary predicates as written (von, de, van, Freiherr, Graf, und zu)."
+    },
+    {
+      "name": "generation",
+      "type": "string",
+      "description": "Generational suffix when part of the sourced name (Jr.)."
+    },
+    {
+      "name": "alt_names",
+      "type": "string",
+      "description": "Semicolon-separated other spellings actually seen in claims or cited sources (Guenther Blumentritt, Luettwitz). Ranks do not belong here."
+    },
+    {
+      "name": "nationality",
+      "type": "string",
+      "description": "The name value of a row of data/nationalities.csv, filled only when the officer's nation is clear. Blank rather than guessed."
+    },
+    {
+      "name": "name_completeness",
+      "type": "string",
+      "description": "How complete the sourced name is (vocabulary name_completeness).",
+      "constraints": {
+        "required": true
+      },
+      "vocabulary": "name_completeness"
+    },
+    {
+      "name": "notes",
+      "type": "string",
+      "description": "Disambiguation and sourcing remarks. Not a place to store unsourced biography."
+    }
+  ]
+}

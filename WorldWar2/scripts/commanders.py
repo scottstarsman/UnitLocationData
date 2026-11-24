@@ -3,7 +3,9 @@ data/unit_commander_claims.csv).
 
 load_*() read the tables; check(...) returns a list of (where, message) problems
 for scripts/validate.py; attach_person_ids(rows) fills commander_person_id on
-claim dicts; derived_people / derived_tenures build the unified build/ exports.
+claim dicts; attach_commander_on_date(rows) fills the derived commander_on_date*
+columns on build claim exports; derived_people / derived_tenures build the
+unified build/ exports.
 """
 import csv
 import datetime
@@ -117,6 +119,162 @@ def attach_person_ids(rows, tenures=None, links=None):
     for r in rows:
         ids = sorted(by_claim.get(r.get('claim_id'), []), key=lambda x: int(x[2:]))
         r['commander_person_id'] = ';'.join(ids)
+
+
+# Role order for listing several covering tenures (commander first).
+COMMANDER_ROLE_ORDER = {
+    'commander': 0,
+    'acting_commander': 1,
+    'temporary_commander': 2,
+    'deputy_commander': 3,
+    'embarked_commander': 4,
+}
+INFERRED_START_BASES = {'claim_date', 'inferred'}
+INFERRED_END_BASES = {'inferred', 'inferred_from_next_claim'}
+VACANCY_LINK_ROLES = {'asserts_end'}
+NAMED_LINK_ROLES = {'observed_during', 'asserts_start'}
+
+
+def _is_day_date(value):
+    """True when value is a full YYYY-MM-DD date."""
+    if not value or len(value) != 10 or value[4] != '-' or value[7] != '-':
+        return False
+    try:
+        datetime.date.fromisoformat(value)
+        return True
+    except ValueError:
+        return False
+
+
+def _tenure_covers(tenure, date):
+    """Inclusive coverage: valid_from <= date <= valid_to, or open if valid_to is blank."""
+    start = tenure.get('valid_from') or ''
+    end = tenure.get('valid_to') or ''
+    if not _is_day_date(start):
+        return False
+    if start > date:
+        return False
+    if not end:
+        return True
+    if not _is_day_date(end):
+        return False
+    return date <= end
+
+
+def _commander_basis(tenures):
+    """Worst-case start/end inference across the selected covering tenures."""
+    start_inf = any((t.get('valid_from_basis') or '') in INFERRED_START_BASES for t in tenures)
+    end_inf = any((t.get('valid_to_basis') or '') in INFERRED_END_BASES for t in tenures)
+    if start_inf and end_inf:
+        return 'inferred_start_end'
+    if start_inf:
+        return 'inferred_start'
+    if end_inf:
+        return 'inferred_end'
+    return 'narrative'
+
+
+def _person_sort_key(pid):
+    try:
+        return (0, int(pid[2:]), pid)
+    except (TypeError, ValueError):
+        return (1, pid or '')
+
+
+def _tenure_sort_key(tenure):
+    role_rank = COMMANDER_ROLE_ORDER.get(tenure.get('role') or '', 99)
+    return (role_rank, _person_sort_key(tenure.get('person_id') or ''), tenure.get('tenure_id') or '')
+
+
+def attach_commander_on_date(rows, tenures=None, links=None, people=None):
+    """Fill derived commander_on_date* columns on claim dicts for the build exports.
+
+    These columns are not stored in data/claims/. The source-stated `commander`
+    field is left unchanged. Rules:
+
+    - source=`claim` when the claim names a commander (commander is not blank or
+      `unknown`). The name is the claim's commander string; person ids come from
+      commander_person_id (already set from unit_commander_claims). basis=`stated`.
+    - A sourced vacancy (commander unknown, and the claim's links are only
+      `asserts_end`, as with C0862) stays blank. The claim records that the
+      unit had no commander, so a tenure that ends on that date is not used.
+    - Otherwise, look up preferred tenures of the same unit whose interval
+      covers the claim date (inclusive). Only YYYY-MM-DD claim dates are
+      matched; a coarser claim date is left blank. Alternate or disputed
+      tenures are ignored.
+    - If several preferred tenures cover the date, all are listed (a handover
+      or an acting commander beside a standing commander). They are ordered by
+      role (commander, acting_commander, temporary_commander, deputy_commander,
+      embarked_commander), then person_id, then tenure_id. The same person is
+      listed once. source=`tenure`; names are people.canonical_name; basis is
+      `inferred_start`, `inferred_end`, `inferred_start_end` or `narrative`
+      from valid_from_basis / valid_to_basis (`claim_date` and `inferred` count
+      as an inferred start; `inferred_from_next_claim` and `inferred` as an
+      inferred end; `open_at_last_claim` is not treated as inferred).
+    """
+    if tenures is None:
+        _h, tenures = load_tenures()
+    if links is None:
+        _h, links = load_links()
+    if people is None:
+        _h, people = load_people()
+    people_by_id = {p['person_id']: p for p in people or []}
+    preferred_by_unit = {}
+    for t in tenures or []:
+        if (t.get('status') or '') != 'preferred':
+            continue
+        preferred_by_unit.setdefault(t['unit_id'], []).append(t)
+    links_by_claim = {}
+    for link in links or []:
+        links_by_claim.setdefault(link['claim_id'], []).append(link)
+
+    def blank(row):
+        row['commander_on_date'] = ''
+        row['commander_on_date_person_id'] = ''
+        row['commander_on_date_source'] = ''
+        row['commander_on_date_basis'] = ''
+
+    for r in rows:
+        named = (r.get('commander') or '').strip()
+        if named and named.lower() != 'unknown':
+            r['commander_on_date'] = named
+            r['commander_on_date_person_id'] = r.get('commander_person_id') or ''
+            r['commander_on_date_source'] = 'claim'
+            r['commander_on_date_basis'] = 'stated'
+            continue
+        claim_links = links_by_claim.get(r.get('claim_id') or '', [])
+        link_roles = {(l.get('role') or '') for l in claim_links}
+        if claim_links and link_roles <= VACANCY_LINK_ROLES and not (link_roles & NAMED_LINK_ROLES):
+            blank(r)
+            continue
+        date = r.get('date') or ''
+        if not _is_day_date(date):
+            blank(r)
+            continue
+        covering = [t for t in preferred_by_unit.get(r.get('unit_id') or '', []) if _tenure_covers(t, date)]
+        covering.sort(key=_tenure_sort_key)
+        seen = set()
+        chosen = []
+        for t in covering:
+            pid = t.get('person_id') or ''
+            if not pid or pid in seen:
+                continue
+            seen.add(pid)
+            chosen.append(t)
+        if not chosen:
+            blank(r)
+            continue
+        names = []
+        ids = []
+        for t in chosen:
+            pid = t['person_id']
+            person = people_by_id.get(pid) or {}
+            names.append((person.get('canonical_name') or '').strip() or pid)
+            ids.append(pid)
+        r['commander_on_date'] = ';'.join(names)
+        r['commander_on_date_person_id'] = ';'.join(ids)
+        r['commander_on_date_source'] = 'tenure'
+        r['commander_on_date_basis'] = _commander_basis(chosen)
 
 
 def derived_people(people, tenures):

@@ -2,6 +2,17 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Frozen `strength_json` vehicle keys (branch `release-packaging`, from main `d5b9701a`)
+
+Task 4 closed the `vehicles` object in `schema/json/strength_json.schema.json` (`additionalProperties: false`) to a snake_case list: `tanks`, `medium_tanks`, `assault_guns`, `tank_destroyers`, `armored_cars`, `half_tracks`, plus the typed keys `panzer_iv`, `panther` and `tanks_and_assault_guns` that current claims need and that cannot be folded without losing information. Authorized templates stay on `authorized_strength_json` (`counts` / `structure`); no authorized figures were copied onto claims, and Panzer Lehr's combined 237 was not split. The five claims that already used `tanks` (C0003, C0004, C0057, C0090, C0212) needed no rename.
+
+Remapped and annotated in the claim `notes` (old value, new value, reason); counts are unchanged:
+
+- C0004 (21st Panzer, 6 June): old value `"assault guns"`, new value `assault_guns`.
+- C0038 (Panzer Lehr, 6 June): old value `"tanks and assault guns (combined)"` and `"half-tracks"`, new value `tanks_and_assault_guns` and `half_tracks`.
+- C0158 (12th SS Panzer, 24 June) and C0173 (Panzer Lehr, 26 June): old value `"Panzer IV"` and `"Panther"`, new value `panzer_iv` and `panther`.
+- C0184 (21st Panzer, 28 June): old value `"Panzer IV"`, new value `panzer_iv`.
+
 ## 24 November 2026 — British infantry and armoured War Establishment templates (branch `british-toe`, from main `f57fc630`)
 
 Scott chose to start the British TO&E follow-up from the free sources already in hand (24 November 2026). No official British Personnel Staff Table or verified Joslen page was available; figures are taken only from the sourced pages, disagreements are recorded rather than silently preferred, and unsourced keys (including British armoured personnel) are left blank. No claim or command-relation row was changed.

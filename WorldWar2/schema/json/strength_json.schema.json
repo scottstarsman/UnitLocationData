@@ -35,11 +35,49 @@
     "vehicles": {
       "type": "object",
       "minProperties": 1,
-      "additionalProperties": {
-        "type": "integer",
-        "minimum": 0
-      },
-      "description": "Vehicle type name -> count. Guns are not vehicles."
+      "additionalProperties": false,
+      "description": "Controlled snake_case vehicle type -> count. Guns are not vehicles. Adding a new typed key is a schema MINOR.",
+      "properties": {
+        "tanks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "medium_tanks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assault_guns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tank_destroyers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "armored_cars": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "half_tracks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "panzer_iv": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Typed Panzer IV count; not folded into tanks."
+        },
+        "panther": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Typed Panther count; not folded into tanks."
+        },
+        "tanks_and_assault_guns": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Combined tanks and assault guns when the source does not split them (for example Panzer Lehr's 237 on 6 June 1944)."
+        }
+      }
     },
     "vehicle_count_type": {
       "type": "string",

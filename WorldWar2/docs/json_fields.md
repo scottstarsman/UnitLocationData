@@ -16,7 +16,7 @@ A survey of all tables under `data/` on 2 November 2026 found one such column: `
 | `as_of` | string | yes | date `YYYY-MM-DD`; may differ from the row date |
 | `source` | string | yes | non-empty; resolves through `data/references_meta.csv` |
 | `personnel` | integer | one of personnel / vehicles / status | ≥ 0; needs `scope` |
-| `vehicles` | object | one of personnel / vehicles / status | at least one key; vehicle type name → integer ≥ 0; needs `vehicle_count_type`; guns are not vehicles |
+| `vehicles` | object | one of personnel / vehicles / status | at least one key from the closed snake_case list (`tanks`, `medium_tanks`, `assault_guns`, `tank_destroyers`, `armored_cars`, `half_tracks`, `panzer_iv`, `panther`, `tanks_and_assault_guns`) → integer ≥ 0; needs `vehicle_count_type`; guns are not vehicles; adding a key is a schema MINOR |
 | `vehicle_count_type` | string | with `vehicles` only | `operational`, `on_hand`, `unknown` |
 | `scope` | string | with `personnel` | `whole_unit`, `sub_force`, `sector` |
 | `status` | string | no | `full`, `reduced`, `heavily_depleted` (`destroyed` is derived from the claim's `destroyed` flag, never stored here) |
@@ -53,7 +53,7 @@ Example:
 {"personnel":10937,"counts":{"tanks":263},"structure":{"tank_battalions":3,"armored_infantry_battalions":3}}
 ```
 
-`strength_json` on claims is unchanged (39 cells in this release). Task 4 will freeze its keys, including vehicle-type spelling. Do not fill `basis=authorized_organization` on claims to stand in for a TO&E template.
+`strength_json` vehicle keys are frozen (Task 4, 24 November 2026) to the snake_case list above. Five claims were remapped and annotated (C0004, C0038, C0158, C0173, C0184); the five cells that already used `tanks` needed no rename. Authorized figures stay on templates, not on claims. Do not fill `basis=authorized_organization` on claims to stand in for a TO&E template.
 
 ## theater in the JSON outputs (not a JSON cell)
 

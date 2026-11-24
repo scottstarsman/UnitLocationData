@@ -10,6 +10,8 @@ The machine-readable definitions live next to this file and are what `scripts/va
 - [`people.schema.json`](people.schema.json): columns and primary key of `data/people.csv` (`PE0001`+; commanders table, 23 November 2026).
 - [`unit_commanders.schema.json`](unit_commanders.schema.json): dated commander tenures (`UC0001`+), modeled on `command_relations.csv`.
 - [`unit_commander_claims.schema.json`](unit_commander_claims.schema.json): links from a tenure to the claims that evidence it.
+- [`toe_templates.schema.json`](toe_templates.schema.json): columns and primary key of `data/toe_templates.csv` (`TT0001`+; authorized TO&E tables, Task 3, 24 November 2026).
+- [`unit_toe.schema.json`](unit_toe.schema.json): dated, sourced assignments of a unit to a template (`UT0001`+), modeled on `unit_commanders.csv`.
 - [`vocabularies.json`](vocabularies.json): controlled vocabularies and the confidence rubric.
 
 All CSV files are UTF-8, LF line endings, comma separated, with a header row, minimal quoting (fields with commas, quotes or newlines are quoted). Missing values are empty strings. Dates are `YYYY-MM-DD`. Booleans are lowercase `true`/`false`. Coordinates are decimal degrees (WGS84). The column order is the same in every claim file; `theater` follows `date`.
@@ -233,6 +235,56 @@ A refit is a dated override on a naval claim: `strength_json` with `basis` `refi
 **Units below division level** (Scott, 4 November 2026): Units below division level (Scott, 4 November 2026): record regiments, battalions, brigades and companies only when a source traces them up the chain to a parent division or higher (for example H Company, 116th Infantry, 29th Division); leave out small units that cannot be traced (a bare "H Company"). Divisions and above stay the focus. The link to the parent is recorded without breaking the blank-parent rule for claims: a fixed organic parent goes in `units.csv` `parent_unit_id` with an `organic` relation in `data/command_relations.csv`; an attachment (for example an army assault-gun brigade) is an `attached` relation only; the claim column `parent_unit_id` stays blank. The schema already allows `regiment/battle_group` and `battalion` (no echelon letter in the id); companies use echelon `company` (added 4 November 2026 with Scott's approval; rank 0, no echelon letter in the id). **Independent units (Scott, 4 November 2026, 08:53):** independent units of regiment size or larger (regiments, brigades, Kampfgruppen, improvised corps and deputy corps commands) get their own unit entries even with no parent (units.csv `parent_unit_id` blank); units smaller than a regiment still need a traceable parent chain (so heavy Panzer Battalion 506, a battalion with no traced parent, stays out, while Fallschirmjäger-Regiment 9 goes in under the 3rd Fallschirmjäger Division). Old rule: every unit below division level needed a traced parent; new rule: only units below regiment size do. **Irregular forces (Scott, 12 November 2026):** resistance groups, partisan bands and other irregular forces get unit entries only once they are organised into formal military units with a command chain (for example the Dutch Stoottroepen); loose cells and networks (for example the Dutch KP, OD and RVV) are not entered as units. Record their existence, dates and strength in the private notes. The small-unit rule above still applies to the formal units. See `docs/HANDOFF.md` standing rule 21. **Units of any size (Scott, 19 November 2026; `docs/HANDOFF.md` standing rule 26):** units of any size (companies, batteries, Staffeln, platoon-level units) are entered whenever a source gives them, provided (a) a unit below regiment size has a parent traced in the sources (otherwise notes only), (b) `echelon` is always filled (a missing value such as a platoon level is proposed as a vocabulary change, never left blank), and (c) a unit below battalion size carries a `unit_note` sentence that its coverage is incidental (absence is not evidence). Backfill of previously skipped small units: roadmap 415.
 
 Rows are sorted by `unit_id`. Units with `record_status = placeholder` have no claim file; they exist so that `parent_unit_id`, command relations, `engaged_with` and `composing_units` ids resolve and so that coverage can be tracked (see "Placeholder units" in `docs/methodology.md`). A placeholder is not a claim about where the unit was. When a claim file is added for a placeholder, run `python scripts/promote_placeholders.py` (sets `record_status = active`). `scripts/validate.py` checks every parent id against `units.csv`, that `record_status` agrees with the existence of a claim file, that the nationality is a row of `data/nationalities.csv` and the unit id starts with that row's code, that `formed_date` is a real date with a source URL, and that `unit_name` is unique within a nationality. `python scripts/build.py` writes `build/coverage.csv` and `docs/coverage.md`.
+
+
+### data/toe_templates.csv (hand-maintained; `schema/toe_templates.schema.json`; Task 3, 24 November 2026)
+
+One official authorized table of organization per row: one issuing nationality, one formation type, one echelon, one edition. Modelled on `ship_classes.csv`, with edition dates. Primary key `template_id` (`TT0001` onward, never reused or renumbered); rows sorted by id; `template_name` unique within a nationality. The issuing `nationality` may differ from a using unit's nationality (a Canadian division on a British War Establishment), the same convention as `ship_classes.nationality` versus a ship's flag. Authorized figures live here, never on claims.
+
+| column | type | required | meaning |
+|---|---|---|---|
+| `template_id` | string | yes | Stable id `TT0001` onward. |
+| `template_name` | string | yes | Readable name, unique per nationality. |
+| `nationality` | string | yes | Issuing nation (`data/nationalities.csv` name). |
+| `domain` | string | yes | Vocabulary `domain`. The first seed is `ground`. |
+| `echelon` | string | yes | Vocabulary `echelon`. The first seed is almost entirely `division`. |
+| `formation_type` | string | yes | Vocabulary `formation_type`. This is not a column of `units.csv`. |
+| `official_designation` | string | yes | The table's own name as the source cites it. |
+| `edition_date` | string | no | Official date of this edition (`YYYY`, `YYYY-MM` or `YYYY-MM-DD`) when the source gives one. |
+| `valid_from` | string | yes | First day this edition is treated as in force, `YYYY-MM-DD`. |
+| `valid_to` | string | no | Last day in force, inclusive. Blank if no superseding edition is recorded. |
+| `valid_to_basis` | string | yes | Vocabulary `relation_end_basis`. Use `open` when `valid_to` is blank. |
+| `parent_template_id` | string | no | A documented variant of a stock table. A parent is itself not a variant. |
+| `authorized_strength_json` | string | yes | JSON object of high-level authorized counts (see `docs/json_fields.md`). |
+| `structure_summary` | string | no | Short prose summary of the authorized subordinate structure. Not a list of unit ids. |
+| `reference_ids` | string | yes | Semicolon-separated `data/references_meta.csv` ids. The official table itself must be among them. |
+| `template_note` | string | no | What the row does not cover, or why a variant exists. No figure that a reference does not give. |
+
+`valid_to` may stay open even when a later edition exists, so a unit that is not sourced as reorganized can remain on the older table without a closed template interval.
+
+Build output: `build/toe_templates.csv` (a copy).
+
+### data/unit_toe.csv (hand-maintained; `schema/unit_toe.schema.json`; Task 3, 24 November 2026)
+
+One sourced assignment of one unit to one TO&E template for one interval. Modelled on `unit_commanders.csv`, but simpler: no claims-join table and no conflict groups in v1. Primary key `assignment_id` (`UT0001` onward, never reused); rows sorted by id. Intervals for the same unit must not overlap. A unit with no row has no authorized table recorded, which is valid.
+
+| column | type | required | meaning |
+|---|---|---|---|
+| `assignment_id` | string | yes | Stable id `UT0001` onward. |
+| `unit_id` | string | yes | FK to `data/units.csv`. |
+| `template_id` | string | yes | FK to `data/toe_templates.csv`. |
+| `valid_from` | string | yes | First day the unit is on this table, `YYYY-MM-DD`. |
+| `valid_from_basis` | string | yes | Vocabulary `relation_start_basis`. |
+| `valid_to` | string | no | Last day, inclusive. |
+| `valid_to_basis` | string | yes | Vocabulary `relation_end_basis`. Prefer `open` when `valid_to` is blank; do not use `open_at_last_claim`. |
+| `conformance` | string | yes | Vocabulary `toe_conformance` (`standard`, `modified`, `unknown`). A `modified` row needs a note. |
+| `confidence` | number | yes | Usual numeric tiers `0.3`, `0.5`, `0.7`, `0.9`: 0.3 a single source that this unit used this table; 0.5 a day-level conversion or edition date; 0.7 a second source family agrees. |
+| `reference_ids` | string | yes | Sources that this unit was on this table in this interval. |
+| `note` | string | no | Conversion remarks, or why conformance is `modified`. Inferred dates record old value, new value and reason. |
+
+An assignment may begin after the template `valid_from` (a unit formed later). Canadian or Polish units may point at a British template. Kampfgruppen and other ad hoc units have no template. Ships stay on `ship_classes.csv`. Air establishments are not in the first seed.
+
+Build output: `build/unit_toe.csv`, with the template name, nationality, designation, formation type, authorized personnel total and `authorized_strength_json` joined on.
 
 ### data/unit_lineage.csv (hand-maintained; `schema/unit_lineage.schema.json`)
 

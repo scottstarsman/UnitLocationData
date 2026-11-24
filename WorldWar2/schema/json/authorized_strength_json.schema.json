@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "authorized_strength_json.schema.json",
+  "title": "authorized_strength_json",
+  "description": "High-level authorized strength of one TO&E template, stored as a JSON object in data/toe_templates.csv. Enumerations mirror schema/vocabularies.json (authorized_count_key, authorized_structure_key). The figures are authorized; there is no basis or qualitative status field. A key is omitted when the official table does not give it. Row-level reference_ids on the template cover the object.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "personnel": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Authorized whole-unit personnel total when the official table gives one."
+    },
+    "counts": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "tanks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "medium_tanks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "heavy_tanks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "assault_guns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tank_destroyers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "armored_cars": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "half_tracks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "artillery_pieces": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "anti_tank_guns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "anti_aircraft_guns": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "infantry_regiments": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "field_artillery_battalions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tank_battalions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "armored_infantry_battalions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "combat_commands": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reconnaissance_squadrons": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "engineer_battalions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "medical_battalions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "infantry_brigades": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "infantry_battalions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "panzergrenadier_regiments": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parachute_rifle_regiments": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

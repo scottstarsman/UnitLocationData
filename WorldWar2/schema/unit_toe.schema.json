@@ -1,0 +1,125 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "unit_toe",
+  "title": "Unit TO&E assignments (data/unit_toe.csv)",
+  "description": "Hand-maintained. One sourced assignment of one unit to one TO&E template for one interval. Modelled on unit_commanders.csv, but simpler: no claims-join table and no conflict groups in v1. Assignment ids UT0001 onward are never reused or renumbered. A unit with no row has no authorized table recorded.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "assignment_id",
+  "foreignKeys": [
+    {
+      "fields": "unit_id",
+      "reference": {
+        "resource": "units",
+        "fields": "unit_id"
+      }
+    },
+    {
+      "fields": "template_id",
+      "reference": {
+        "resource": "toe_templates",
+        "fields": "template_id"
+      }
+    },
+    {
+      "fields": "reference_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "references_meta",
+        "fields": "reference_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "assignment_id",
+      "type": "string",
+      "description": "Stable id, UT0001 onward. Never reused or renumbered.",
+      "pattern": "^UT[0-9]{4,}$",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "unit_id",
+      "type": "string",
+      "description": "FK to data/units.csv.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "template_id",
+      "type": "string",
+      "description": "FK to data/toe_templates.csv.",
+      "pattern": "^TT[0-9]{4,}$",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "valid_from",
+      "type": "string",
+      "description": "First day the unit is on this table, YYYY-MM-DD.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "valid_from_basis",
+      "type": "string",
+      "description": "Where valid_from comes from (vocabulary relation_start_basis).",
+      "vocabulary": "relation_start_basis",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "valid_to",
+      "type": "string",
+      "description": "Last day, inclusive. Blank if still on the table at the end of recorded life."
+    },
+    {
+      "name": "valid_to_basis",
+      "type": "string",
+      "description": "Where valid_to comes from (vocabulary relation_end_basis). Prefer open when valid_to is blank; do not use open_at_last_claim.",
+      "vocabulary": "relation_end_basis",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "conformance",
+      "type": "string",
+      "description": "How closely the unit matched the table (vocabulary toe_conformance).",
+      "vocabulary": "toe_conformance",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "confidence",
+      "type": "number",
+      "description": "Usual tiers (vocabulary confidence): 0.3 a single source that this unit used this table; 0.5 a day-level conversion or edition date; 0.7 a second source family agrees.",
+      "vocabulary": "confidence",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "Sources that this unit was on this table in this interval. A template citation alone is not enough if the unit's edition is in doubt.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "note",
+      "type": "string",
+      "description": "Conversion remarks, not-yet-reorganized, or why conformance is modified."
+    }
+  ]
+}

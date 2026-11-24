@@ -1,0 +1,156 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "toe_templates",
+  "title": "TO&E templates (data/toe_templates.csv)",
+  "description": "Hand-maintained. One row per official authorized table: one issuing nationality, one formation type, one echelon, one edition. Modelled on ship_classes.csv, with edition dates. Template ids TT0001 onward are never reused or renumbered. Authorized figures live here, not on claims.",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "template_id",
+  "foreignKeys": [
+    {
+      "fields": "nationality",
+      "reference": {
+        "resource": "nationalities",
+        "fields": "name"
+      }
+    },
+    {
+      "fields": "parent_template_id",
+      "reference": {
+        "resource": "toe_templates",
+        "fields": "template_id"
+      }
+    },
+    {
+      "fields": "reference_ids",
+      "separator": ";",
+      "reference": {
+        "resource": "references_meta",
+        "fields": "reference_id"
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "template_id",
+      "type": "string",
+      "description": "Stable id, TT0001 onward. Never reused or renumbered.",
+      "pattern": "^TT[0-9]{4,}$",
+      "constraints": {
+        "required": true,
+        "unique": true
+      }
+    },
+    {
+      "name": "template_name",
+      "type": "string",
+      "description": "Readable name as cited, e.g. US Infantry Division, T/O&E 7, 15 July 1943. Unique per nationality.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nationality",
+      "type": "string",
+      "description": "Issuing nation (data/nationalities.csv name). May differ from a using unit's nationality (a Canadian division on a British War Establishment), the same convention as ship_classes.nationality versus a ship's flag.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "Domain of the formation the table describes (vocabulary domain). v1 seed is ground.",
+      "vocabulary": "domain",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "echelon",
+      "type": "string",
+      "description": "Echelon the table describes (vocabulary echelon). v1 seed is almost entirely division.",
+      "vocabulary": "echelon",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "formation_type",
+      "type": "string",
+      "description": "Type of formation the table describes (vocabulary formation_type). Not a column of units.csv.",
+      "vocabulary": "formation_type",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "official_designation",
+      "type": "string",
+      "description": "The table's own name: T/O&E 7, T/O 17, Infantry Division, 1944 Type, and so on.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "edition_date",
+      "type": "string",
+      "description": "Official date of this edition (YYYY-MM-DD or YYYY-MM) when the source gives one."
+    },
+    {
+      "name": "valid_from",
+      "type": "string",
+      "description": "First day this edition is treated as in force, YYYY-MM-DD.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "valid_to",
+      "type": "string",
+      "description": "Last day in force, inclusive. Blank if no superseding edition is recorded (see valid_to_basis)."
+    },
+    {
+      "name": "valid_to_basis",
+      "type": "string",
+      "description": "Where valid_to comes from (vocabulary relation_end_basis). Use open when valid_to is blank.",
+      "vocabulary": "relation_end_basis",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "parent_template_id",
+      "type": "string",
+      "description": "For a documented variant of a stock table. A parent is itself not a variant. Blank for a stock edition or a sibling table (the 1942 heavy US armored division is a sibling of the 1943 light table, not a child).",
+      "pattern": "^TT[0-9]{4,}$"
+    },
+    {
+      "name": "authorized_strength_json",
+      "type": "string",
+      "description": "JSON object of high-level authorized counts. Schema: schema/json/authorized_strength_json.schema.json. personnel is the authorized whole-unit total when the official table gives one; counts and structure use the authorized_count_key and authorized_structure_key vocabularies; a key is omitted when the source does not give it.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "structure_summary",
+      "type": "string",
+      "description": "Short prose summary of the authorized subordinate structure. Not a list of unit ids, and not a substitute for command_relations."
+    },
+    {
+      "name": "reference_ids",
+      "type": "string",
+      "description": "Semicolon-separated data/references_meta.csv ids. The official table itself must be among them.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "template_note",
+      "type": "string",
+      "description": "What the row does not cover, known local modifications, or why a variant exists. No figure that a reference does not give."
+    }
+  ]
+}

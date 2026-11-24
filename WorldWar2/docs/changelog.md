@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Derived commander_on_date columns (branch `commander-on-date`, from main `d2ceff6b`)
+
+Scott approved part 1 of the rc1 review item RV10 (24 November 2026): a derived commander on the claim date in the build claims export. No `data/claims/` row was edited; the source-stated `commander` field is unchanged. Part 2 (research for units with no tenure) was deferred (roadmap 428). Tightening inferred tenure starts is roadmap 429.
+
+- **Build columns:** `commander_on_date`, `commander_on_date_person_id`, `commander_on_date_source` (`claim` / `tenure`) and `commander_on_date_basis` (`stated` / `narrative` / `inferred_start` / `inferred_end` / `inferred_start_end`) on `build/all_claims.csv`, `build/all_claims.json` and `build/claims.geojson`. Lookup rules are in `scripts/commanders.py` (`attach_commander_on_date`) and `schema/README.md`.
+- **Version:** `schema_version` 1.1.0 (additive derived columns) and `data_version` 1.1.0-rc1. `CITATION.cff` follows `data_version`.
+- **Tests:** scenarios 362–365 (Taylor via tenure, Erskine with an inferred start, a claim with no tenure, a named claim and the C0862 vacancy).
+- **Vocabularies:** `commander_on_date_source` and `commander_on_date_basis` added to `schema/vocabularies.json` (61 to 63). The live counts block in `docs/review/README.md` was refreshed to match.
+- **Counts in this build:** 2,572 claims filled from the claim itself, 5,801 from a covering tenure (5,413 of those flagged `inferred_*`), 4,397 left blank. 620 of 696 tenures have `valid_from_basis` `claim_date` or `inferred`.
+
 ## 24 November 2026 — rc1 documentation review fixes (branch `rc1-docs-fixes`, from main `eb96edd8`)
 
 Docs-only follow-up to the v1.0.0-rc1 first-user review. No claim, unit, commander or operation row was changed.

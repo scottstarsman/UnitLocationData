@@ -276,6 +276,13 @@ def derive():
             for rid in [x.strip() for x in r['reference_ids'].split(';') if x.strip()]:
                 if rid in stats:
                     stats[rid]['ops'].add('%s>%s' % (r['from_operation_id'], r['to_operation_id']))
+    if os.path.isfile(opsmod.PLACES_CSV):
+        _ph, prows = common.read_dicts(opsmod.PLACES_CSV)
+        for r in prows:
+            for rid in [x.strip() for x in r['reference_ids'].split(';') if x.strip()]:
+                if rid in stats:
+                    op_refs.add((r['operation_id'], rid))
+                    stats[rid]['ops'].add(r['operation_id'])
     # missions (data/missions, decision J1 of 17 November 2026): their stored reference_ids count as citations; a source URL needs a metadata row
     import missions as msmod
     for ms in msmod.load():

@@ -39,6 +39,13 @@
             "resource": "references_meta",
             "fields": "reference_id"
           }
+        },
+        {
+          "fields": "primary_place_id",
+          "reference": {
+            "resource": "places",
+            "fields": "place_id"
+          }
         }
       ]
     },
@@ -90,6 +97,37 @@
           "reference": {
             "resource": "operations",
             "fields": "operation_id"
+          }
+        }
+      ]
+    },
+    "operation_places": {
+      "path": "data/operation_places.csv",
+      "primaryKey": [
+        "operation_id",
+        "place_id"
+      ],
+      "foreignKeys": [
+        {
+          "fields": "operation_id",
+          "reference": {
+            "resource": "operations",
+            "fields": "operation_id"
+          }
+        },
+        {
+          "fields": "place_id",
+          "reference": {
+            "resource": "places",
+            "fields": "place_id"
+          }
+        },
+        {
+          "fields": "reference_ids",
+          "separator": ";",
+          "reference": {
+            "resource": "references_meta",
+            "fields": "reference_id"
           }
         }
       ]

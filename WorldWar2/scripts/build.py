@@ -14,9 +14,17 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/coverage.csv                    one row per unit in data/units.csv: record_status, formed_date, whether it has a
                                         claim file, number of claim rows and their first and last date
   docs/coverage.md                      summary counts of the same, by nationality and echelon (generated; do not edit)
-  build/operations.csv                  derived view of data/operations.csv: operation path, depth, claim counts (direct and including child operations);
-                                        all_claims.csv also carries the derived columns operation, operation_type, campaign, operation_name,
-                                        sub_operation_name, operation_path (see scripts/operations.py)
+  build/operations.csv                  derived view of data/operations.csv: operation path, depth, all-domain claim and mission counts
+                                        (direct and including child operations, with preferred and ground/air/naval breakdowns),
+                                        sourced primary_place_id, and a derived extent (median, bbox, quality; scripts/operation_extent.py).
+                                        Earlier builds counted ground claims only in claims_direct / claims_including_children.
+  build/operations.geojson              one Feature per operation: a Point (primary place, else centroid) when extent_quality is focal or compact,
+                                        otherwise null geometry (broad campaigns, umbrellas and sparse extents)
+  build/operation_units.csv             one row per (operation_id, unit_id) derived from claims and missions (direct or via a descendant
+                                        operation; no command-hierarchy roll-up; scripts/operation_units.py)
+  build/oob/                            flagship order-of-battle snapshots (scripts/export_oob.py) for 6 June, 18 July, 15 August,
+                                        16 December 1944, 24 March 1945 and 7 May 1945: JSON, CSV, a ground Markdown tree, and a
+                                        14-day located CSV; regenerated on every build
   build/command_relations.csv           the master data/command_relations.csv with names, a support column (documented | table | inferred)
                                         and the evidence claim ids; every preferred relation except `organic` (the placeholders with no
                                         higher unit included), all nationalities and dates; see schema/README.md, "Validity of a relationship"
@@ -35,8 +43,8 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/other_domains/aircraft_types.csv  data/aircraft_types.csv: the aircraft types (type_id AT###) that air units link to through the aircraft object of strength_json
   build/other_domains/missions.csv      every mission row of data/missions/<nationality>/<unit_id>.csv (one row per mission of a flying unit; decision J1, 17 November
                                         2026), sorted by date then mission_id, with unit_name, nationality, target place name, latitude, longitude and country, and the
-                                        aircraft designation added (scripts/missions.py). Missions are not claims: no other output reads them, and they never reach the
-                                        command relations or the who_controls grid
+                                        aircraft designation added (scripts/missions.py). Missions are not claims and never reach the command relations or the
+                                        who_controls grid; build/operation_units.csv counts a mission that carries an operation_id as participation
   build/other_domains/command_relations.csv  the derived command relations whose subject is an air or naval unit (same columns as command_relations.csv)
   build/who_controls_overrides.csv      verbatim copy of data/who_controls_overrides.csv (per-relation exceptions to the who_controls.py precedence)
   build/organic_relations.csv           the preferred `organic` relations only (same columns as command_relations.csv, all domains); read by scripts/who_controls.py for
@@ -67,6 +75,9 @@ import coverage as coveragemod  # noqa: E402
 import missions as missionsmod  # noqa: E402
 import sidc as sidcmod  # noqa: E402
 import commanders as commandersmod  # noqa: E402
+import operation_extent  # noqa: E402
+import operation_units  # noqa: E402
+import export_oob  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'commander', 'commander_person_id', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
@@ -183,45 +194,6 @@ def coverage(claim_rows):
     return rows, ('\n'.join(out) + '\n').encode('utf-8')
 
 
-OPERATIONS_HEADER = ['operation_id', 'name', 'short_name', 'alt_names', 'op_type', 'parent_operation_id', 'operation_path', 'depth', 'start_date',
-                     'end_date', 'date_basis', 'nationality_scope', 'claims_direct', 'claims_including_children', 'first_claim_date',
-                     'last_claim_date', 'reference_ids']
-
-
-def operations_table(ops, rows):
-    """Rows of build/operations.csv and the text of the operations section of docs/coverage.md."""
-    direct, sub = {}, {}
-    for r in rows:
-        direct.setdefault(r['operation_id'], []).append(r['date'])
-        for c in ops.chain(r['operation_id']):
-            sub.setdefault(c['operation_id'], []).append(r['date'])
-    out = []
-    for o in sorted(ops.rows, key=lambda o: o['operation_id']):
-        i = o['operation_id']
-        ds = sorted(sub.get(i, []))
-        path = ' > '.join(c['name'] for c in reversed(ops.chain(i)))
-        out.append([i, o['name'], o['short_name'], o['alt_names'], o['op_type'], o['parent_operation_id'], path, str(ops.depth(i)),
-                    o['start_date'], o['end_date'], o['date_basis'], o['nationality_scope'], str(len(direct.get(i, []))), str(len(ds)),
-                    ds[0] if ds else '', ds[-1] if ds else '', o['reference_ids']])
-    by_type = {}
-    for o in ops.rows:
-        by_type.setdefault(o['op_type'], [0, 0, 0])[0] += 1
-    for r in rows:
-        t = ops.by_id[r['operation_id']]['op_type']
-        by_type.setdefault(t, [0, 0, 0])[1] += 1
-    for o in ops.rows:
-        if direct.get(o['operation_id']):
-            by_type[o['op_type']][2] += 1
-    md = ['', '## Operations', '',
-          'Generated from `data/operations.csv` and the claims\' `operation_id`. Per-operation detail (path, dates, claim counts) is in `build/operations.csv`. '
-          'A claim points at the most specific operation row it belongs to; rows with no named operation point at their campaign row.', '',
-          '| op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |', '|---|---:|---:|---:|']
-    for t in operations.OP_TYPES:
-        if t in by_type:
-            md.append('| %s | %d | %d | %d |' % (t, by_type[t][0], by_type[t][2], by_type[t][1]))
-    md.append('| **All** | **%d** | **%d** | **%d** |' % (len(ops.rows), sum(v[2] for v in by_type.values()), len(rows)))
-    return out, ('\n'.join(md) + '\n').encode('utf-8')
-
 
 def units_outputs(units_table):
     """build/units.csv and build/units.json: data/units.csv unchanged plus predecessor_unit_ids and successor_unit_ids from
@@ -324,14 +296,33 @@ def outputs():
     out['other_domains/aircraft_types.csv'] = aircraft_types_output()
     out['other_domains/missions.csv'] = common.csv_bytes(missionsmod.BUILD_HEADER, missionsmod.build_rows())   # data/missions (J1); never part of the claims or relations
     crel = command_relations.load()
-    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
-    out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))
-    out['organic_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows + other_rows, None, organic=True))
+    ground_rel = command_relations.derived_rows(crel, all_units, rows, set(units))
+    other_rel = command_relations.derived_rows(crel, all_units, other_rows, other)
+    organic_rel = command_relations.derived_rows(crel, all_units, rows + other_rows, None, organic=True)
+    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, ground_rel)
+    out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, other_rel)
+    out['organic_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, organic_rel)
     out['who_controls_overrides.csv'] = open(command_relations.OVERRIDE_CSV, 'rb').read() if os.path.isfile(command_relations.OVERRIDE_CSV) else common.csv_bytes(['relation_id'], [])   # verbatim copy of data/who_controls_overrides.csv; read by scripts/who_controls.py
     out['people.csv'] = common.csv_bytes(commandersmod.PEOPLE_BUILD_HEADER, commandersmod.derived_people(people_rows, tenure_rows))
     out['unit_commanders.csv'] = common.csv_bytes(commandersmod.TENURE_BUILD_HEADER, commandersmod.derived_tenures(tenure_rows, people_rows, commander_links, all_units_rows))
-    op_rows, op_md = operations_table(ops, rows)
-    out['operations.csv'] = common.csv_bytes(OPERATIONS_HEADER, op_rows)
+    places_rows = {p['place_id']: p for p in common.read_dicts(os.path.join(common.ROOT, 'data', 'places.csv'))[1]}
+    mission_rows = missionsmod.load()
+    op_rows, op_md, _qc = operation_extent.operations_table(ops, rows + other_rows, mission_rows, all_units_rows, places_rows)
+    out['operations.csv'] = common.csv_bytes(operation_extent.BUILD_HEADER, op_rows)
+    out['operations.geojson'] = operation_extent.operations_geojson(op_rows, places_rows)
+    ou_rows = operation_units.operation_unit_rows(ops, rows + other_rows, mission_rows, all_units_rows,
+                                                  people=people_rows, tenures=tenure_rows)
+    out['operation_units.csv'] = common.csv_bytes(operation_units.BUILD_HEADER, ou_rows)
+    symbol_rows = coder.unit_rows(ground) + coder.unit_rows([u for u in urows if u['unit_id'] in other])
+    as_dicts = lambda header, rows: [dict(zip(header, r)) for r in rows]
+    oob_ctx = export_oob.context_from_build_outputs(
+        as_dicts(command_relations.DERIVED_HEADER, ground_rel + other_rel),
+        as_dicts(command_relations.DERIVED_HEADER, organic_rel),
+        common.read_dicts(command_relations.OVERRIDE_CSV)[1] if os.path.isfile(command_relations.OVERRIDE_CSV) else [],
+        all_units_rows, rows + other_rows, tenure_rows, people_rows,
+        as_dicts(sidcmod.UNIT_SYMBOLS_HEADER, symbol_rows),
+        ou_rows)
+    out.update(export_oob.flagship_outputs(oob_ctx))
     pl_rows, pl_geo, pl_md = places_outputs(rows)
     out['places.csv'] = common.csv_bytes(PLACES_OUT_HEADER, pl_rows)
     out['places.geojson'] = pl_geo

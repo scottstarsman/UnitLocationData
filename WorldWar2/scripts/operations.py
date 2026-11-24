@@ -2,9 +2,11 @@
 """The operations tables: loading, the parent chain, derived labels and the checks used by validate.py and build.py.
 
 Files (hand-maintained, under data/):
-  operations.csv          one row per operation, battle, phase, campaign or umbrella; claims point at one row by operation_id
+  operations.csv          one row per operation, battle, phase, campaign or umbrella; claims point at one row by operation_id;
+                          optional primary_place_id is a sourced map pin (FK to data/places.csv)
   operation_relations.csv links between operations other than parent/child (follows, concurrent_with, supports, related)
   operation_exceptions.csv  claims dated outside the window of their operation, each with a reason
+  operation_places.csv    sourced places of an operation (composite key operation_id + place_id; role from operation_place_role)
 
 A claim carries ONE operation_id, the most specific operation it belongs to. The chain of parent_operation_id values above it
 (battle > operation > campaign > umbrella) is derived here, together with the old-style labels (campaign, operation_name,
@@ -32,16 +34,19 @@ import common  # noqa: E402
 OPERATIONS_CSV = os.path.join(common.ROOT, 'data', 'operations.csv')
 RELATIONS_CSV = os.path.join(common.ROOT, 'data', 'operation_relations.csv')
 EXCEPTIONS_CSV = os.path.join(common.ROOT, 'data', 'operation_exceptions.csv')
+PLACES_CSV = os.path.join(common.ROOT, 'data', 'operation_places.csv')
 
 OP_HEADER = ['operation_id', 'name', 'short_name', 'alt_names', 'op_type', 'parent_operation_id', 'start_date', 'end_date',
-             'date_basis', 'parent_date_exception', 'theater', 'nationality_scope', 'reference_ids', 'notes']
+             'date_basis', 'parent_date_exception', 'theater', 'nationality_scope', 'reference_ids', 'primary_place_id', 'notes']
 REL_HEADER = ['from_operation_id', 'to_operation_id', 'relation', 'reference_ids', 'note']
 EXC_HEADER = ['claim_id', 'operation_id', 'reason']
+PLACES_HEADER = ['operation_id', 'place_id', 'role', 'reference_ids', 'note']
 
 # Single source: schema/vocabularies.json (op_type, operation_date_basis, operation_relation) and data/nationalities.csv (scope)
 OP_TYPES = common.vocab_descriptions('op_type')
 DATE_BASES = common.vocab_descriptions('operation_date_basis')
 RELATIONS = common.vocab_descriptions('operation_relation')
+PLACE_ROLES = common.vocab_descriptions('operation_place_role')
 # nationality_scope: the `name` of a row of data/nationalities.csv (Allied, Germany, ...) or All (neutral or both sides)
 SCOPES = dict({'All': 'Neutral or both sides.'}, **{n['name']: 'Name or concept of %s.' % n['name'] for n in common.load_nationalities()})
 
@@ -60,6 +65,7 @@ class Operations:
         self.header, self.rows = _read(OPERATIONS_CSV, OP_HEADER)
         self.rel_header, self.relations = _read(RELATIONS_CSV, REL_HEADER)
         self.exc_header, self.exceptions = _read(EXCEPTIONS_CSV, EXC_HEADER)
+        self.places_header, self.places = _read(PLACES_CSV, PLACES_HEADER)
         self.by_id = {r['operation_id']: r for r in self.rows}
         self.exc_index = {(e['claim_id'], e['operation_id']) for e in self.exceptions}
         self.streamers = sorted((r for r in self.rows if r['op_type'] == 'campaign' and r['date_basis'] == 'cmh_streamer'),
@@ -114,11 +120,15 @@ ID_RE = re.compile(r'OP-[A-Z0-9]+(-[A-Z0-9]+)*')
 ISO = re.compile(r'\d{4}-\d{2}-\d{2}')
 
 
-def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
-    """Return (errors, warnings), each a list of (where, message). `claims` is a list of claim dicts with `_where` set."""
+def check(ops, claims, reference_ids, vocab_theaters, valid_iso, place_ids=None):
+    """Return (errors, warnings), each a list of (where, message). `claims` is a list of claim dicts with `_where` set.
+    `place_ids` is the set of data/places.csv place_id values (loaded here when omitted)."""
     E, W = [], []
     e = lambda w, m: E.append((w, m))  # noqa: E731
     w = lambda wh, m: W.append((wh, m))  # noqa: E731
+    if place_ids is None:
+        places_path = os.path.join(common.ROOT, 'data', 'places.csv')
+        place_ids = {r['place_id'] for r in common.read_dicts(places_path)[1]} if os.path.isfile(places_path) else set()
     if ops.header is None:
         e('data/operations.csv', 'missing')
         return E, W
@@ -159,6 +169,9 @@ def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
             e(wh, 'needs a source (reference_ids) or a note that explains why there is none')
         if r['date_basis'] in ('derived',) and not r['notes'].strip():
             e(wh, 'date_basis derived needs a note that says how the dates were set')
+        pid = (r.get('primary_place_id') or '').strip()
+        if pid and pid not in place_ids:
+            e(wh, 'primary_place_id %s is not in data/places.csv' % pid)
     ids = set(ops.by_id)
     for i, r in enumerate(ops.rows, start=2):
         wh = 'data/operations.csv line %d (%s)' % (i, r['operation_id'])
@@ -224,6 +237,41 @@ def check(ops, claims, reference_ids, vocab_theaters, valid_iso):
             w(wh, 'stale exception: claim %s is inside the dates of %s' % (x['claim_id'], x['operation_id']))
         if not x['reason'].strip():
             e(wh, 'reason is required')
+    if ops.places_header is not None and ops.places_header != PLACES_HEADER:
+        e('data/operation_places.csv', 'header %s != %s' % (ops.places_header, PLACES_HEADER))
+    seen_pl, primary_of = set(), {}
+    for i, r in enumerate(ops.places, start=2):
+        wh = 'data/operation_places.csv line %d' % i
+        if r['operation_id'] not in ids:
+            e(wh, 'operation_id %r does not exist' % r['operation_id'])
+        if not r['place_id'] or r['place_id'] not in place_ids:
+            e(wh, 'place_id %r is not in data/places.csv' % r['place_id'])
+        if r['role'] not in PLACE_ROLES:
+            e(wh, 'role %r not in %s' % (r['role'], sorted(PLACE_ROLES)))
+        refs = [x for x in r['reference_ids'].split(';') if x.strip()]
+        if not refs:
+            e(wh, 'reference_ids is required')
+        for x in refs:
+            if x.strip() not in reference_ids:
+                e(wh, 'reference_id %s is not in data/references_meta.csv' % x.strip())
+        k = (r['operation_id'], r['place_id'])
+        if k in seen_pl:
+            e(wh, 'duplicate (operation_id, place_id)')
+        seen_pl.add(k)
+        if r['role'] == 'primary':
+            if r['operation_id'] in primary_of:
+                e(wh, 'operation %s already has a primary place (%s)' % (r['operation_id'], primary_of[r['operation_id']]))
+            primary_of[r['operation_id']] = r['place_id']
+    for i, r in enumerate(ops.rows, start=2):
+        wh = 'data/operations.csv line %d (%s)' % (i, r['operation_id'])
+        pin = (r.get('primary_place_id') or '').strip()
+        linked = primary_of.get(r['operation_id'], '')
+        if pin and not linked:
+            e(wh, 'primary_place_id %s has no matching role=primary row in data/operation_places.csv' % pin)
+        elif linked and not pin:
+            e(wh, 'data/operation_places.csv has primary place %s but primary_place_id is blank' % linked)
+        elif pin and linked and pin != linked:
+            e(wh, 'primary_place_id %s does not match the role=primary row (%s)' % (pin, linked))
     # claims
     for c in claims:
         wh = c['_where']

@@ -288,6 +288,17 @@
       "related": "Linked in a way the other values do not capture, for example the German and Allied names of the same battle."
     }
   },
+  "operation_place_role": {
+    "description": "Role of a place linked to an operation in data/operation_places.csv (column role). At most one primary per operation.",
+    "values": {
+      "primary": "The single map pin for the operation or battle, matching operations.csv primary_place_id when one is set.",
+      "secondary": "An additional documented place that is part of the operation but is not the single pin.",
+      "namesake": "The place the operation is named after, when that place is not (or not only) the primary pin.",
+      "landing_area": "A landing beach, drop zone or assault sector of an amphibious or airborne operation.",
+      "objective": "A stated objective of the operation (a town, island, river crossing or pocket) documented in the sources.",
+      "representative": "A representative point already in data/places.csv that stands for a pocket or area (not a single namesake town)."
+    }
+  },
   "reference_role": {
     "description": "Role of a claim-to-reference link in data/claim_reference_roles.csv: what in the claim the reference supports. A link with no row there has the role general.",
     "values": {

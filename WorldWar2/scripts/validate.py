@@ -617,7 +617,7 @@ def check_claim_references(claims, meta):
 
 
 def check_operations(claims, vocabs):
-    """data/operations.csv, operation_relations.csv, operation_exceptions.csv and every claim's operation_id (rules in scripts/operations.py;
+    """data/operations.csv, operation_relations.csv, operation_exceptions.csv, operation_places.csv and every claim's operation_id (rules in scripts/operations.py;
     window and parent-date problems are warnings, structural problems errors)."""
     import operations
     import build_references as br
@@ -2081,7 +2081,7 @@ def main():
     ops = opsmod.load()
     exc_path = os.path.join(common.ROOT, 'data', 'coordinate_exceptions.csv')
     tables = {'claims': all_rows, 'places': place_rows, 'units': list(units.values()), 'nationalities': list(nats.values()), 'ship_classes': list(classes.values()), 'aircraft_types': list(aircraft.values()),
-              'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions,
+              'operations': ops.rows, 'operation_relations': ops.relations, 'operation_exceptions': ops.exceptions, 'operation_places': ops.places,
               'coordinate_exceptions': common.read_dicts(exc_path)[1] if os.path.isfile(exc_path) else [],
               'place_merges': placesmod.load_merges(),
               'retired_claims': common.read_dicts(RETIRED_CLAIMS_CSV)[1] if os.path.isfile(RETIRED_CLAIMS_CSV) else [],

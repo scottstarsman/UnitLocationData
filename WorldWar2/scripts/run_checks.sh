@@ -17,7 +17,7 @@ step() {  # step NAME FILTER CMD...: run CMD, show its output through FILTER, re
 step validate 'grep -E "^OK|ERROR|warning\(s\)" || true' python3 scripts/validate.py
 step check_json_fields 'tail -1' python3 scripts/check_json_fields.py
 step semantic_tests 'tail -1' python3 scripts/semantic_tests.py
-step build_check 'tail -1' python3 scripts/build.py --check
+step build_check 'tail -1' python3 scripts/build.py --check   # includes build/oob/ flagship snapshots and other generated files
 step build_references_check 'tail -1' python3 scripts/build_references.py --check
 step review_sample_check 'cat' python3 scripts/review_sample.py --check
 step check_coordinates 'tail -1' python3 scripts/check_coordinates.py

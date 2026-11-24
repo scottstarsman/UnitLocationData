@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Annotation labels and Cobra operation exceptions (branch `rc1-data-fixes`)
+
+The validator treats a sentence that starts `Word:` in claim `notes` as a `note_label`. The RV16 and RV11 annotations originally used `Branch:` and `Operation:`, which are not in the vocabulary. They are rewritten to the existing `Review:` label (`Review: branch old value...` and `Review: operation old value...`), including the 19 unit notes. The Hyperwar URL for each added Blumenson chapter was appended to the claim `source` column so the new `reference_ids` stay cited (464 validator warnings, unchanged). Two `data/operation_exceptions.csv` rows for `C0223` and `C0289` (allowed those claims to stay on `OP-COBRA` one day after the end date) were removed; old value the two exception rows, new value omitted, reason: those claims were retagged to `OP-CAMP-NORTHERN-FRANCE`.
+
 ## 24 November 2026 — Operation Cobra participation (branch `rc1-data-fixes`, RV11)
 
 Scott approved the rc1 data-fix branch (24 November 2026). Operation Cobra (`OP-COBRA`, 25–31 July 1944) listed only 18 units. Several US divisions with preferred claims in that window were tagged only `OP-CAMP-NORTHERN-FRANCE`. 12th Army Group and Third Army appeared with `first_date` 1 August, after the operation's end.

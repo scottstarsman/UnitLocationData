@@ -89,7 +89,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | references (`data/references.csv`, generated) | 2209, of which 1692 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 82 |
 | nationalities / retired claim ids / claim-key exceptions | 43 / 7 / 12 |
-| controlled vocabularies in `schema/vocabularies.json` | 53 |
+| controlled vocabularies in `schema/vocabularies.json` | 56 |
 
 Claims by nationality: Germany 4156, US 3088, UK 1184, Canada 589, France 330, Poland 92, Netherlands 44, Belgium 16, Czechoslovakia 8.
 

@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 23 November 2026 — Commanders table, Phase 1 (branch `commanders-table`, from main `6e497077`)
+
+Scott approved the commanders-table proposal (CM1-CM13, 23 November 2026, "I'm good with this") as Task 1 of the four-phase v1.0 public-release plan. New tables seed every already-named `commander` cell (2,572 claims) plus the approved C0862 vacancy end; claim `commander` cells are not rewritten (CM2). Unified `build/` exports include all domains, with a `domain` column (Scott, 23 November 2026: fold the domains into unified build exports).
+- **Tables and IDs (CM1, CM4, CM11):** `data/people.csv` (`PE0001`-`PE0607`, 607 people), `data/unit_commanders.csv` (`UC0001`-`UC0696`, 696 tenures), `data/unit_commander_claims.csv` (2,610 links: `asserts_start` / `asserts_end` / `observed_during`). Optional `nationality` when clear; no birth or death dates in Phase 1.
+- **Vocabularies:** `commander_role` (`commander`, `acting_commander`, `temporary_commander`, `deputy_commander`, `embarked_commander`), `name_completeness` (`full`, `surname_only`, `incomplete`), `commander_claim_role`.
+- **Date model (CM3):** same interval columns as `command_relations.csv`. A name on date X without appointment or relief language is known-in-command (`claim_date`), not a take-command date; an unsourced succession uses `inferred_from_next_claim` + `change_undated` and never invents an end from the next officer's first sighting alone.
+- **Conflicts (CM7):** existing `G###` series; new **G318** (Funck preferred from noon 21 August, C2202, vs Eberbach alternate on C0725/C0726). G001 (Dollmann death date), G027 (Schlemm/Blumentritt March 1945 dates), and G003/G004 (LXXXIV Corps Fahrmbacher/Choltitz/Marcks) are modeled on the tenures.
+- **Build (CM10, CM12, CM13):** `data/references.csv` gains `commanders_count`; unified `build/people.csv` and `build/unit_commanders.csv` (all domains and all statuses, with `conflict_group_id` visible); `commander_person_id` on `build/all_claims.csv`, `build/all_claims.json`, and `build/other_domains/claims.csv` (`PE####` joined with `;` in id order when a claim links more than one person); both `commander` and `commander_person_id` on `build/claims.geojson`.
+- **Follow-ups:** roadmap 423 (note-only commanders, surname-only completions, and related checks). Next free: `PE0608`, `UC0697`, `G319`, scenario 341, roadmap 424.
+
 ## 23 November 2026 — FMS B-597 (Pickert, III. Flakkorps) (branch `fms-b597`, from main `c6d3ac90`)
 
 Scott accepted all sixteen B-597 recommendations (Q1-Q16, 23 November 2026, "I'm good with them"). B-597 is the German original of Pickert's 1947 manuscript on III. Flakkorps (May to 14 September 1944) with Pemsel's comment (typed "Hemsel") and four Anlagen, and a copy of the corps' wartime report of 20 September 1944, on Fold3 (NARA M1035, fiche 0587G). Private reading notes: `sources/FMS_B-597_notes.md` (not committed).

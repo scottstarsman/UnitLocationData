@@ -632,7 +632,7 @@ Use short labelled sentences in `notes` so the sources for each kind of statemen
 
 **Adding a label.** Do it in one change (one pull request, one commit): (1) add the label to `note_label` in `schema/vocabularies.json` with a one-line definition (what the sentence says, and when to use it instead of an existing label); (2) add it to the table above (and change the count in the first paragraph); (3) add a line to `docs/changelog.md`; (4) use it in at least one row in the same change, or say why none yet; (5) run `python scripts/validate.py`. If a `scripts/` check needs to read the new label (as `Event support:` and `Event definition:` are read by the validator and the audits), change it in the same commit. A label is not renamed or removed while a note uses it; rewrite the notes in the same change. Before inventing a label, check whether an existing one fits.
 
-## Operations (`data/operations.csv`, `data/operation_relations.csv`, `data/operation_exceptions.csv`)
+## Operations (`data/operations.csv`, `data/operation_relations.csv`, `data/operation_exceptions.csv`, `data/operation_places.csv`)
 
 Claims point at one operation row through `operation_id`. The operations table replaces the earlier free-text columns `campaign`, `operation_name` and `sub_operation_name` (migration: `scripts/migrate_operations.py`; how each claim was moved: `docs/review/operations_backfill.md`).
 
@@ -652,13 +652,25 @@ Claims point at one operation row through `operation_id`. The operations table r
 | `theater` | A `theater` vocabulary value. A child operation has its parent's theater, and a claim has its operation's theater (validator errors). One holding umbrella per front labels rows outside the Western Front operations: `OP-FRONT-EASTERN`, `OP-FRONT-MEDITERRANEAN`, `OP-FRONT-BALKANS`, `OP-FRONT-SCANDINAVIA`, `OP-FRONT-NORTH-AFRICA`, `OP-HOME-GERMANY` (all `date_basis derived`, dates in their notes). |
 | `nationality_scope` | A nationality `name` from `data/nationalities.csv` (`Allied`, `Germany`, ...) or `All`: whose name or concept the row is (a German codename is its own row, linked to the Allied battle). Foreign key to `nationalities.name` (also allowing `All`). |
 | `reference_ids` | `;`-separated `reference_id`s from `data/references.csv` that source the name and dates. |
+| `primary_place_id` | Optional sourced map pin, a `place_id` from `data/places.csv`. Blank on campaigns, umbrellas, fronts, and any operation that should not be reduced to one point. When filled, `data/operation_places.csv` has a matching `role=primary` row. The pin is not a computed centroid (Task 2, OB2, OB6). |
 | `notes` | Contested boundaries, placement decisions, what the row is for. Required when `reference_ids` is empty or the dates are `derived`. |
 
 `op_type`: `umbrella` is a planning or command umbrella that contains campaigns (Overlord), or a holding umbrella for dates no campaign covers (`OP-PRE-INVASION`, 1 September 1939-5 June 1944: a claim dated before the first CMH streamer needs no campaign; a claim dated before 1 September 1939 is an error; `OP-POST-SURRENDER`, 12 May-31 December 1945 (end a working bound): a claim dated after the last streamer ends needs no campaign; both are `western_europe`; rows of other theaters use the per-front umbrellas `OP-FRONT-*` and `OP-HOME-GERMANY`, which need no campaign at any date); `campaign` is a CMH campaign streamer (`date_basis cmh_streamer`: Normandy, Northern France, Southern France, Rhineland, Ardennes-Alsace, Central Europe) or a named campaign of the official histories (Brittany, Lorraine, Siegfried Line); `operation` is a named operation (Cobra, Epsom, Market Garden); `battle` a battle or siege; `phase` a stretch of a larger operation without a name of its own. The CMH streamers are the only rows that give a claim its derived `campaign`; the others sit in the tree for context.
 
 Examples of the tree: Operation Overlord > Normandy campaign > Operation Neptune > Operation Tonga; Operation Overlord > Northern France campaign > Operation Cobra; Northern France > Brittany campaign > Siege of Brest; Ardennes-Alsace campaign > Battle of the Bulge > Siege of Bastogne; Southern France campaign > Operation Dragoon. Rows that span two campaigns (Lorraine, Siegfried Line) have no parent.
 
-### data/operation_relations.csv (hand-maintained)
+### data/operation_places.csv (hand-maintained; Task 2, OB3, OB6)
+
+Sourced places of an operation or battle. Composite primary key `(operation_id, place_id)` — no new id series. Every row has `reference_ids`. Role vocabulary `operation_place_role`: `primary`, `secondary`, `namesake`, `landing_area`, `objective`, `representative`. At most one `primary` per operation, and it must match `operations.csv.primary_place_id`. Multi-place operations (Market Garden, Neptune's five beaches, the Scheldt, Falaise) have several rows and no primary pin. The statistical modal claim location is never auto-assigned as the pin.
+
+Derived spatial fields (median, bounding box, 80th-percentile radius, `extent_quality` `focal` / `compact` / `broad` / `none`) live only on `build/operations.csv` and `build/operations.geojson`. They are computed from preferred coordinates after dropping headquarters rows and points 200 km or more from the first median; centroids are published only for `focal` and `compact` operations (OB4, OB5).
+
+`build/operation_units.csv` is one row per `(operation_id, unit_id)` derived from claims and missions (direct or via a descendant operation). It does not roll units up the command hierarchy. `most_specific_op_type` distinguishes a named battle from a campaign-default tag. There is no sourced `data/operation_participants.csv` in v1 (OB7, OB8).
+
+Point-in-time order-of-battle trees are generated by `scripts/export_oob.py` and written to `build/oob/` on every build; see `docs/oob_exports.md`.
+
+### data/operation_relations.csv
+ (hand-maintained)
 
 `from_operation_id, to_operation_id, relation, reference_ids, note`. Relations other than parent/child: `follows`, `concurrent_with`, `supports`, `succeeded_by`, `related` (vocabulary `operation_relation`). A German and an Allied name of one battle are `related`. Endpoints must exist; a source or a note is required.
 
@@ -905,7 +917,7 @@ Numeric 0-1 score applied by rule from location quality and source families. Onl
 
 ### Operation vocabularies
 
-`op_type`, `operation_date_basis` and `operation_relation` (the values of `op_type`, `date_basis` and `relation`) are defined in `schema/vocabularies.json` and described under "Operations" above (`scripts/operations.py` reads them from there); `nationality_scope` takes the names of `data/nationalities.csv` plus `All`. The CMH campaign streamers and the other operations are rows of `data/operations.csv`, not vocabulary values.
+`op_type`, `operation_date_basis`, `operation_relation` and `operation_place_role` (the values of `op_type`, `date_basis` and `relation`) are defined in `schema/vocabularies.json` and described under "Operations" above (`scripts/operations.py` reads them from there); `nationality_scope` takes the names of `data/nationalities.csv` plus `All`. The CMH campaign streamers and the other operations are rows of `data/operations.csv`, not vocabulary values.
 
 ### event_type
 

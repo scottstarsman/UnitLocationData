@@ -155,6 +155,17 @@ def main(argv):
     else:
         qid = next((u['unit_id'] for u in units if who.lower() in u['unit_name'].lower()), who)
     other_mode = common.unit_domain(units_by_id.get(qid, {})) in ('air', 'naval')
+    # After the Task 4 fold, air and naval relations share this file. A ground query still
+    # walks only relations whose subject is ground, so a ground unit parented to an air or
+    # naval HQ (RAF Regiment under a Bomber Command group; coastal artillery under a naval
+    # command) does not inherit that HQ's own air/naval chain. That is the same answer as
+    # when the ground table was a separate file (RP6: unchanged ground who_controls answers).
+    if not other_mode:
+        def _ground_subject(r):
+            return common.unit_domain(units_by_id.get(r['subject_unit_id'], {})) == 'ground'
+        rows = [r for r in rows if _ground_subject(r)]
+        organic_rows = [r for r in organic_rows if _ground_subject(r)]
+        hits = hits_for(who)
     holes = [r for r in rows if not r['higher_unit_id'] and (r['subject_unit_id'] == who or who.lower() in r['subject_name'].lower()) and status(r, date, time)[0] != 'no']
     fallback_hits = [] if hits else organic_hits_for(who)   # organic fallback: only where no non-organic relation covers the date
     if not hits and not fallback_hits:

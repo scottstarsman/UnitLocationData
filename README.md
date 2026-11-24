@@ -2,7 +2,7 @@
 
 An open, claim-based dataset of where World War II units were, on a date, with coordinates, precision, confidence, sources, conflict handling and optional strength figures. Competing claims are kept, not averaged.
 
-**Version 1.0.0-rc1** (`schema_version` 1.0.0). The current build has **12,770 claims** (9,507 ground, 2,343 air, 920 naval) in **2,635 units**. The surveyed focus is the Western Front, 6 June 1944 to 8 May 1945; claim dates in the files run from 16 September 1939 to 31 May 1945. Coverage is uneven and event-based, not a daily plot.
+**Version 1.1.0-rc1** (`schema_version` 1.1.0). The current build has **12,770 claims** (9,507 ground, 2,343 air, 920 naval) in **2,635 units**. The surveyed focus is the Western Front, 6 June 1944 to 8 May 1945; claim dates in the files run from 16 September 1939 to 31 May 1945. Coverage is uneven and event-based, not a daily plot.
 
 Everything lives in [`WorldWar2/`](WorldWar2/):
 

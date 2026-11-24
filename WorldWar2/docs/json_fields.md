@@ -63,6 +63,16 @@ Example:
 
 `commander_person_id` is a plain derived column, not a JSON object. It appears on `build/all_claims.csv`, `build/all_claims.json`, and as a feature property on `build/claims.geojson` (which also now carries the source-stated `commander` string). The value is the `PE####` id(s) of the people linked to that claim in `data/unit_commander_claims.csv`. When a claim names more than one person (a handover cell, or embarked officers on a ship), the distinct ids are joined with `;` in ascending id order. The column is blank when `commander` is `unknown` and the claim is not a sourced vacancy end.
 
+## commander_on_date columns in the JSON and GeoJSON outputs (not JSON cells)
+
+`commander_on_date`, `commander_on_date_person_id`, `commander_on_date_source` and `commander_on_date_basis` are plain derived columns, not JSON objects. They appear on `build/all_claims.csv`, `build/all_claims.json`, and as feature properties on `build/claims.geojson`. They are not stored in `data/claims/`. The source-stated `commander` field is unchanged.
+
+- `commander_on_date_source` is `claim` when the claim itself names a commander, `tenure` when the name is looked up from a preferred `unit_commanders` tenure that covers the claim date, and blank when no commander is known for that date (including a sourced vacancy such as C0862).
+- `commander_on_date` is the claim's commander string when the source is `claim`, or the person's `canonical_name` (several names joined with `;` when more than one preferred tenure covers the date) when the source is `tenure`.
+- `commander_on_date_basis` is `stated` for a claim-named commander. For a tenure lookup it is `narrative` when neither boundary is inferred, `inferred_start` when `valid_from_basis` is `claim_date` or `inferred` (often the first sourced claim, not the historical appointment), `inferred_end` when only the end is `inferred` or `inferred_from_next_claim`, and `inferred_start_end` when both are inferred. An open end (`open_at_last_claim`) is not treated as inferred.
+
+See "People and commanders" in `schema/README.md` for the lookup and tie rules.
+
 ## Adding a JSON column
 
 Add a schema file to `schema/json/`, an entry to `schema/json/fields.json`, and a section to this page in the same change.

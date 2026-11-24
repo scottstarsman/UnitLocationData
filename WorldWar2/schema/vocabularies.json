@@ -791,5 +791,22 @@
       "modified": "A sourced local variant of this table, not large enough to merit its own template_id.",
       "unknown": "The unit is linked to the table but how closely it conformed is not sourced."
     }
+  },
+  "commander_on_date_source": {
+    "description": "How build/all_claims.csv filled the derived commander_on_date columns. Blank when no commander is known for the claim date.",
+    "values": {
+      "claim": "The claim itself names a commander (the source-stated commander field is not blank or unknown).",
+      "tenure": "The claim did not name a commander; the value is looked up from a preferred unit_commanders tenure that covers the claim date."
+    }
+  },
+  "commander_on_date_basis": {
+    "description": "How strongly the derived commander_on_date is dated. Blank when commander_on_date is blank. stated is used with source=claim; the other values describe the covering tenure or tenures.",
+    "values": {
+      "stated": "The name comes from the claim's own commander field.",
+      "narrative": "The covering tenure's start (and end, if it has one) is a sourced narrative or open_at_last_claim; neither boundary is an inferred claim date.",
+      "inferred_start": "The covering tenure's valid_from_basis is claim_date or inferred (often the first sourced claim, not the historical appointment).",
+      "inferred_end": "The covering tenure's valid_to_basis is inferred or inferred_from_next_claim, and the start is not inferred.",
+      "inferred_start_end": "Both the start and the end of the covering tenure are inferred (claim_date or inferred start, and inferred or inferred_from_next_claim end)."
+    }
   }
 }

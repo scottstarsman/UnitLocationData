@@ -6,7 +6,10 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         command_relationships (rebuilt from data/command_relations.csv and data/command_relation_claims.csv),
                                         place_name, location_name (place name + location_qualifier), country, region, coord_reference_id and
                                         coord_source_note (from data/places.csv), strength_status (destroyed flag, else strength_json status, else unknown)
-                                        and location_temporal_offset_days (location_date - date); see scripts/places.py; and, last, sidc: the
+                                        and location_temporal_offset_days (location_date - date); see scripts/places.py;
+                                        commander_on_date, commander_on_date_person_id, commander_on_date_source and
+                                        commander_on_date_basis (derived from the source-stated commander or from a
+                                        preferred covering tenure; scripts/commanders.py); and, last, sidc: the
                                         MIL-STD-2525D military symbol code of the unit on the claim date (scripts/sidc.py, roadmap 410)
   build/claims.geojson                  one Point feature per claim (lon, lat; the claim's own point, which equals its place's unless coord_override) with main properties
   build/places.csv                      derived view of data/places.csv: the place columns plus claims_count, units_count, first and last claim date
@@ -87,7 +90,7 @@ import operation_units  # noqa: E402
 import export_oob  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'domain', 'theater',
-             'echelon', 'branch', 'date', 'commander', 'commander_person_id', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
+             'echelon', 'branch', 'date', 'commander', 'commander_person_id', 'commander_on_date', 'commander_on_date_person_id', 'commander_on_date_source', 'commander_on_date_basis', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
              'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
              'location_temporal_offset_days', 'reference_ids', 'source_locator', 'sidc']
 DERIVED = ['operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'operation_path']   # appended to all_claims.csv from data/operations.csv
@@ -98,7 +101,7 @@ PLACES_OUT_HEADER = placesmod.HEADER + ['claims_count', 'units_count', 'claims_g
 def all_claims_header(stored):
     """Header of build/all_claims.csv: the claim-file columns with the derived ones at the place the stored column used to have (or next to the
     column they come from), then the derived operation columns."""
-    after = {'nationality': ['domain'], 'parent_unit_id': ['command_relationships'], 'commander': ['commander_person_id'], 'place_id': ['place_name', 'location_name'],
+    after = {'nationality': ['domain'], 'parent_unit_id': ['command_relationships'], 'commander': ['commander_person_id', 'commander_on_date', 'commander_on_date_person_id', 'commander_on_date_source', 'commander_on_date_basis'], 'place_id': ['place_name', 'location_name'],
              'coord_override': ['country', 'region', 'coord_reference_id', 'coord_source_note'], 'engaged_note': ['engaged_with_names', 'strength_status'], 'composing_text': ['composing_units_names'],
              'location_basis': ['location_temporal_offset_days']}
     h = []
@@ -390,6 +393,7 @@ def outputs():
     tenure_rows = tenure_rows or []
     commander_links = commander_links or []
     commandersmod.attach_person_ids(rows, tenure_rows, commander_links)
+    commandersmod.attach_commander_on_date(rows, tenure_rows, commander_links, people_rows)
     header = all_claims_header(header)   # the derived columns (command_relationships, place and derived-value columns, operations, domain) are not claim-file columns
     table = lambda rs: common.csv_bytes(header, [[r[c] for c in header] for r in rs])  # noqa: E731
     out = {'all_claims.csv': table(rows)}

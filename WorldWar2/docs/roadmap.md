@@ -1374,3 +1374,8 @@ Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next
    - **Do not rebuild the Drive zip**, and do not add a GitHub release asset unless Scott asks for one from a tagged commit.
    - A later claims pass that does not change the schema is `data_version` 1.1.0, not a patch.
    - Known later work remains on 424 (late-war air/naval relations) and 425–426 (TO&E gaps).
+
+428. **Commander tenures for claims that have none (part 2 of RV10; deferred 24 November 2026).** The derived `commander_on_date` column fills 5,801 claims from tenures already in hand, but 4,397 claims still have no commander on that date (almost all because the unit has no covering preferred tenure; one sourced vacancy, C0862, is left blank on purpose). Filling them is a sourced tenure pass, one unit family at a time, with the usual confidence tiers and annotations. Scott skipped this for now (24 November 2026). Count the affected units and propose an order before starting.
+
+429. **Tighten inferred commander tenure starts (24 November 2026).** 620 of 696 tenures have `valid_from_basis` `claim_date` (the first sourced claim, not necessarily the appointment). The derived `commander_on_date_basis` flags those rows `inferred_start` or `inferred_start_end` (for example Erskine's 7th Armoured tenure `UC0421` starts on 7 June 1944). A later pass should replace inferred starts and ends with sourced appointment and relief dates where a source gives them, and leave the flag on the rest.
+

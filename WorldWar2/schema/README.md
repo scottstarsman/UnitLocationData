@@ -928,7 +928,8 @@ Service or arm, assigned from the unit name.
 | value | meaning |
 |---|---|
 | `Army` | Regular army (including infantry and static divisions). |
-| `Armoured` | Armoured and panzer formations. |
+| `Armoured` | Armoured and panzer formations (British spelling; also used for Commonwealth and other non-US formations). |
+| `Armored` | US armored formations (American spelling). |
 | `Airborne` | Allied airborne formations. |
 | `Waffen-SS` | Waffen-SS formations. |
 | `Luftwaffe` | Luftwaffe ground formations (for example Fallschirmjaeger and Luftwaffe field divisions); also reserved for Luftwaffe flying units. |

@@ -2,6 +2,13 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — US branch spelling Armored (branch `rc1-data-fixes`, from main `817306c9`, RV16)
+
+Scott approved the rc1 data-fix branch (24 November 2026). 19 US units had `branch` `Armoured` (the British vocabulary spelling) while their unit names use “Armored”.
+
+- **Vocabulary:** `Armored` added to `branch` for US armored formations. `Armoured` remains the spelling for British, Commonwealth and other non-US armoured and panzer formations.
+- **Units and claims:** all 19 US units (`US-ARM-002D`–`US-ARM-014D`, `US-ARM-016D`, `US-ARM-020D`, `US-CCA-002D`, `US-CCR-004D`, `US-TDB-001B`, `US-TF-BUTLER`) and their 525 claim rows: `branch` old value `Armoured`, new value `Armored`; reason: the US Army spelling, matching the unit name (rc1 review RV16). Annotated in each `unit_note` and claim `notes`. Unit ids are unchanged. No UK, Canadian or Polish row was changed.
+
 ## 24 November 2026 — Derived commander_on_date columns (branch `commander-on-date`, from main `d2ceff6b`)
 
 Scott approved part 1 of the rc1 review item RV10 (24 November 2026): a derived commander on the claim date in the build claims export. No `data/claims/` row was edited; the source-stated `commander` field is unchanged. Part 2 (research for units with no tenure) was deferred (roadmap 428). Tightening inferred tenure starts is roadmap 429.

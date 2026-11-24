@@ -1,5 +1,7 @@
 # HANDOFF: WWII unit-locations dataset
 
+**Maintainer-only.** This file is the project's internal operating manual for assistants working with Scott. It is not part of the public dataset documentation and is not linked from the front-page README.
+
 Written 26 October 2026 for a new assistant with no memory of the earlier work. Read this file first, then follow section 8 before you touch anything. It holds no secrets and must never be given any (no tokens, passwords or keys, in this file, in commits, in logs, or in messages).
 
 Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits are authored as **Raymond Scott Starsman**, same address). You work *for* Scott. You propose; he decides; he merges.

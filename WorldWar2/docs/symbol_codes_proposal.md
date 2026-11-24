@@ -2,6 +2,9 @@
 
 Status: accepted. Proposal written 23 November 2026 on branch `symbol-codes-410` (from main `62e65fd7`); Scott accepted all 19 recommendations of section 8 on 23 November 2026 ("I agree with your recommendations", PR #134), and the code step follows on the same branch. Nothing here changes `units.csv`, the claims or the build: this step adds only this page, the two mapping tables `data/sidc_function_map.csv` and `data/sidc_echelon_map.csv`, and the coverage report [`symbol_codes_coverage.md`](symbol_codes_coverage.md). The derivation script, the build output and the validator check come after approval.
 
+
+Note (24 November 2026): `build/other_domains/` was later folded into the unified `build/` files. Use `build/unit_symbols.csv` and the `domain` column; do not look for a separate `other_domains` output.
+
 ## 1. Decisions already taken (Scott, 23 November 2026: "I agree with all of that. Please proceed")
 
 - **Standard:** MIL-STD-2525D / NATO APP-6D 20-digit numeric SIDC (the same code serves both), with a later move to 2525E (only the version digits change for the codes used here; see question 15). Rendering target: the milsymbol JavaScript library.

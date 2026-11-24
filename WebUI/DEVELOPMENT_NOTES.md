@@ -28,7 +28,7 @@ November 1, 2026. Local implementation on `codex/webui-situation-map`. No hosted
 - `WorldWar2/scripts/semantic_tests.py`: all 590 expectations pass. Its existing inferred-position-replacement scenario remains explicitly not tested because the dataset cannot represent that replacement.
 - Git whitespace checks: passed. The pre-existing `.idea/.gitignore` and previously staged notes were preserved.
 
-The dataset checks used `C:\Users\scott\AppData\Local\Programs\Python\Python314\python.exe -B`. This directly installed interpreter was found after the earlier notes: the `python` WindowsApps alias and `py -3` launcher still failed. Python was already present; it was not installed for this app task. `tsx` tests required the normal account context because the sandbox's OS-profile lookup fails; ordinary terminal runs use the user's normal account.
+The dataset checks used the local Python 3.14 interpreter (`python -B`). This directly installed interpreter was found after the earlier notes: the `python` WindowsApps alias and `py -3` launcher still failed. Python was already present; it was not installed for this app task. `tsx` tests required the normal account context because the sandbox's OS-profile lookup fails; ordinary terminal runs use the user's normal account.
 
 ## Current limits and next discussion
 

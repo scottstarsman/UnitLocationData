@@ -1,5 +1,5 @@
 import csv,glob,io,os
-os.chdir('/workspace/UnitLocationData-prep/WorldWar2')
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 URL='https://www.fold3.com/image/158876338/'
 NOM='https://nominatim.openstreetmap.org/'
 REF='R834'; DAY='4 November 2026'

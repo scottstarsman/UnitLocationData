@@ -4,21 +4,21 @@ What to credit, and what applies, when you reuse the dataset or one of its deriv
 
 ## What you reuse
 
-Every file under `data/`, `build/`, `schema/vocabularies.json` and `docs/` is covered by the data licence (CC BY-SA 4.0): you may copy, adapt and use it for any purpose, including commercially, if you give credit, say what you changed, and release your adaptation under the same licence. The scripts are MIT. Cite the dataset with `CITATION.cff`.
+Every file in the repository — including `data/`, `build/`, `schema/`, `docs/`, the scripts and the web viewer — is licensed under CC BY-SA 4.0: you may copy, adapt and use it for any purpose, including commercially, if you give credit, say what you changed, and release your adaptation under the same licence. Cite the dataset with `CITATION.cff`.
 
 The facts in the rows come from published sources. The repository stores facts (dates, places, unit names, relationships), short notes in its own words, and links; it does not copy source text, so the sources' own terms matter mainly for **credit** and for the **share-alike** inheritance of Wikipedia-derived material.
 
 ## By source family
 
-The counts are the references of `data/references.csv` on 26 October 2026 (511 references; the count of claims per reference is in the same file; a few references have other terms, such as the OpenStreetMap geocoder and one French public-archive page under the Licence Ouverte).
+The counts below are from `data/references.csv` on 24 November 2026 (2,215 references). The count of claims per reference is in the same file, which is the live inventory; a few references have other terms, such as the OpenStreetMap geocoder, GeoNames, and one French public-archive page under the Licence Ouverte.
 
 | family | references | terms recorded | what a reuser should do |
 |---|---:|---|---|
-| US Army Center of Military History (the Green Books and order-of-battle tables, on HyperWar or the history.army.mil archive copies), other US Army reports | 119 recorded as public domain (113 of them in the `us_army_cmh` family) | public domain (US government work); the hosting mirror is private | no restriction on the facts; cite the volume and page (`source_locator`) and the link |
-| English Wikipedia (unit, operation and order-of-battle pages) | 174 | CC BY-SA 4.0 (Wikipedia text); Wikidata coordinates are CC0 | credit Wikipedia as the origin of the facts and keep the share-alike licence on what you publish with them; the repository's data licence is CC BY-SA 4.0 for this reason |
-| Lexikon der Wehrmacht | 164 | all rights reserved by the site; only short facts (dates, names) are used | credit the site; do not copy its text; the repository holds the facts and the link |
-| other web pages, books on web mirrors, memorial and local-history pages (World War II by Day, erenow, Pegasus Archive, D-Day Overlord and others) | 51 recorded as copyrighted pages (30 of them World War II by Day) | copyrighted pages; only facts and the URL are used | credit the page where you rely on it; do not copy the page |
-| OpenStreetMap Nominatim geocodes (reference R002) and Wikipedia article coordinates (R001) | 2 references, behind 170 and 204 of the 378 places | R002: ODbL 1.0, attribution "(c) OpenStreetMap contributors"; R001: Wikipedia, CC BY-SA, Wikidata CC0 | if you publish the point of a place with a `coord_reference_id` of R002, add the OpenStreetMap attribution; the coordinates of a place are place-centre geocodes (see "What a location point can mean" in `schema/README.md`) |
+| English Wikipedia (unit, operation and order-of-battle pages; family `wikipedia`) | 1,035 | CC BY-SA 4.0 (Wikipedia text); Wikidata coordinates are CC0 | credit Wikipedia as the origin of the facts and keep the share-alike licence on what you publish with them; the repository's data licence is CC BY-SA 4.0 for this reason |
+| US Army Center of Military History (the Green Books and order-of-battle tables, on HyperWar or the history.army.mil archive copies), other US Army reports (family `us_army_cmh`) | 243, all recorded as public domain (366 references in the file are public-domain or US government work when other US official families are included) | public domain (US government work); the hosting mirror is private | no restriction on the facts; cite the volume and page (`source_locator`) and the link |
+| Lexikon der Wehrmacht (family `lexikon_wehrmacht_de`) | 216 | all rights reserved by the site; only short facts (dates, names) are used | credit the site; do not copy its text; the repository holds the facts and the link |
+| other web pages, books on web mirrors, official and memorial pages (including History of War, ww2.dk, RAFWeb, World War II by Day, FMS manuscripts, and others) | 530 recorded as copyrighted pages outside the Wikipedia, Lexikon and `us_army_cmh` families (33 of them World War II by Day) | copyrighted pages; only facts and the URL are used | credit the page where you rely on it; do not copy the page |
+| Place geocodes: OpenStreetMap Nominatim (R002), Wikipedia article coordinates (R001) and GeoNames country dumps (R782) | 3 references, behind 3,348, 930 and 501 of the 4,878 places (99 places have a blank `coord_reference_id`) | R002: ODbL 1.0, attribution "(c) OpenStreetMap contributors"; R001: Wikipedia, CC BY-SA, Wikidata CC0; R782: CC BY 4.0, attribution "GeoNames (geonames.org)" | if you publish the point of a place, carry the attribution for that `coord_reference_id`; the coordinates of a place are place-centre geocodes (see "What a location point can mean" in `schema/README.md`) |
 
 ## By derived export
 
@@ -34,4 +34,4 @@ A suggested credit line: "Unit-location data from the WWII Unit Locations datase
 
 ## What the dataset does not give you
 
-A claim is a sourced assertion, not a verified unit state; a point is usually a place centre; `confidence` scores the date and place. See "How to interpret the data" in the root `README.md` before you publish a map, a distance or a timeline built from these files.
+A claim is a sourced assertion, not a verified unit state; a point is usually a place centre; `confidence` scores the date and place. See "How to read a claim" in [`WorldWar2/README.md`](../README.md) before you publish a map, a distance or a timeline built from these files.

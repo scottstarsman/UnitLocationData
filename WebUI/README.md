@@ -7,7 +7,7 @@ A local React / TypeScript / MapLibre web app for the WWII unit-location dataset
 Requires Node.js 22.12+ (developed with Node 22.20) and npm.
 
 ```powershell
-cd C:\Users\scott\WebstormProjects\UnitLocationData\WebUI
+cd WebUI
 npm ci
 npm run dev
 ```
@@ -67,4 +67,4 @@ The web viewer, like the rest of the repository, is licensed under **CC BY-SA 4.
 
 The first implementation was checked with a production build, TypeScript and nine regression/data-contract tests. Browser QA covers map rendering, formation search/selection, multi-unit history, range controls, daily/event stepping, playback, evidence details and responsive layouts. See `DEVELOPMENT_NOTES.md` for the final verification record and current limitations.
 
-This is local development work on `codex/webui-situation-map`; no hosted deployment, push or merge is part of this task.
+This is a local viewer; there is no hosted deployment in this release.

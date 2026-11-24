@@ -1,5 +1,7 @@
 # HANDOFF: WWII unit-locations dataset
 
+**Maintainer-only.** This file is the project's internal operating manual for assistants working with Scott. It is not part of the public dataset documentation and is not linked from the front-page README.
+
 Written 26 October 2026 for a new assistant with no memory of the earlier work. Read this file first, then follow section 8 before you touch anything. It holds no secrets and must never be given any (no tokens, passwords or keys, in this file, in commits, in logs, or in messages).
 
 Owner and only decision-maker: **Scott Starsman** (`scott@starsman.com`; commits are authored as **Raymond Scott Starsman**, same address). You work *for* Scott. You propose; he decides; he merges.
@@ -495,7 +497,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 
 **First, small housekeeping (ask Scott):**
 1. Fix leftover stale counts when a branch next touches those files: `docs/roadmap.md` header was fixed by `handoff-doc`; the snapshot documents `normalization_review.md`, `places_review.md`, `unit_references_review.md` and "41 of 566" in `docs/methodology.md` deliberately keep the old numbers.
-2. Licence choice (CC BY-SA 4.0 and MIT) and the copyright holder are unconfirmed.
+2. Done (24 November 2026): a single CC BY-SA 4.0 licence covers the whole repository (data, documentation, scripts and the web viewer); copyright holder Raymond Scott Starsman. See the root `LICENSE` and `CITATION.cff`.
 
 **Batch 4 (1 January to 31 March 1945) and Batch 5 (1 April to 8 May 1945).** Scope: US Army ground units, army group to division. **Batch 4 was done on 26 October 2026 on the branch `batch4-jan-mar-1945` (awaiting the spot check, Scott's review and merge); the text of this section below describes it as planned.** Batch 5 was approved by Scott on 26 October 2026 and done on 27 October 2026 on the branch `batch5-apr-may-1945` (see the table above and `docs/roadmap.md`, "Batch 5"); all six US placeholders are now active.
 
@@ -515,7 +517,7 @@ All dates 2026. "Scott decided" = approved by him in chat.
 1. **Division level only, or add combat commands** (for example CCB of the 9th Armored at Remagen). Today only two combat commands exist (`US-CCA-002D`, `US-CCR-004D`).
 2. Whether to start the **commanders table** (R1-Q6) and the `event_support`/position columns now or after the US work: my advice is after the US work.
 3. Whether and when to send the **outside-review questions** (`docs/review/questions.md`, ten questions; question 8 is the scaling to 1945). **Not yet sent.** Sending is Scott's call; draft the cover note for him, do not send.
-4. Licence choice and copyright holder.
+4. Licence and copyright holder: settled 24 November 2026 (single CC BY-SA 4.0; Raymond Scott Starsman). See item 2 under housekeeping above.
 
 **Open data points (no decision needed unless Scott asks):** LXXXIV Corps HQ after 12 June; 101st Canadian entries to 16 December versus Mourmelon on 1 December; C0048 `attack` event type; PL0195 and PL0222 sites; six relations still `change_undated` true (the three German pairs CR0040/41 Panzer Lehr, CR0049/50 II SS Panzer Corps, CR0053/54 12th SS); the 3 validator and 3 coordinate warnings above.
 

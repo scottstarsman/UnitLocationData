@@ -248,4 +248,4 @@ Favour the biggest gaps and free access. Entering leftover facts from sources al
 - **Already in force:** Fold3 remains Scott-signed-in, no printing, no DevTools, no bulk export. Further FMS reading is German source work, not the first move in this balance pass.
 - **Not recommended for this pass:** paying for a new British official history (Ellis is already in hand); treating Vigneras as a French source; scraping or APIs.
 
-Private reading notes, if any, stay in `/workspace/ww2-locations/sources/` and in Drive `WWII Unit Locations/source notes/`. They are never committed.
+Private reading notes, if any, stay in the private source notes folder and in Drive `WWII Unit Locations/source notes/`. They are never committed.

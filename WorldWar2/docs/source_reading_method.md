@@ -3,7 +3,7 @@
 How to review a source document (official history, divisional history, memoir, report) and write reading notes for the unit-location dataset. Follow it for every source so notes stay consistent.
 
 ## Where notes live
-- Notes from copyrighted sources are private: keep them on the assistant's computer (`/workspace/ww2-locations/sources/<source>_notes.md`) and one copy in the Google Drive folder `WWII Unit Locations/source notes/`. Never commit them; `.gitignore` excludes `**/sources/*_notes.md`.
+- Notes from copyrighted sources are private: keep them in the private source notes folder (a local working copy, and one copy in the Google Drive folder `WWII Unit Locations/source notes/`), named `<source>_notes.md`. Never commit them; `.gitignore` excludes `**/sources/*_notes.md`.
 - Replace the Drive copy in place when notes change (no duplicates) and confirm the Drive checksum matches the local file.
 - Delete scratch text extracted from the source when done; keep the source PDF if it may be reread.
 
@@ -32,7 +32,7 @@ For each fact: date or date range, unit, place, what happened, parent formation,
 ## One note-taking pass before data entry (Scott, 18 November 2026)
 Before entering data from any source, do one note-taking pass that records every fact in what is read, including facts not usable yet (strengths, types, ground units, other dates), each tagged entered now / deferred (named task) / out of scope, so no source is read twice. For large sites, open only the pages needed but take complete notes on every page opened, one notes file per page in a per-source folder with an index (Scott, 18 November 2026).
 - **Tags:** every fact line carries one tag: `entered now` (the task that enters it), `deferred (<named task>)` (for example `deferred (chunk 9 strengths)`), or `out of scope` (with the reason). Strengths, aircraft or equipment types, ground units and dates outside the current window are recorded and tagged like any other fact.
-- **Large sites** (for example ww2.dk, a site with one page per unit): open only the pages the task needs, but take complete notes on every page opened. Keep one notes file per page in a folder per source (`/workspace/ww2-locations/sources/<source>/<page>_notes.md`, for example `sources/ww2dk/kampf_kg26_notes.md`) with an index file (`<SOURCE>_index_notes.md`, for example `sources/ww2dk/WW2DK_index_notes.md`) listing each page, its URL, the date read and the tasks that used it. A page opened later for another task gets its own complete notes file and index line at that time.
+- **Large sites** (for example ww2.dk, a site with one page per unit): open only the pages the task needs, but take complete notes on every page opened. Keep one notes file per page in a folder per source (`sources/<source>/<page>_notes.md`, for example `sources/ww2dk/kampf_kg26_notes.md`) with an index file (`<SOURCE>_index_notes.md`, for example `sources/ww2dk/WW2DK_index_notes.md`) listing each page, its URL, the date read and the tasks that used it. A page opened later for another task gets its own complete notes file and index line at that time.
 - The notes pass comes first; data entry then works from the notes, not from a second reading of the source.
 
 ## Notes file layout

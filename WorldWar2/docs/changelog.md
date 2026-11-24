@@ -2,6 +2,16 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — rc1 documentation review fixes (branch `rc1-docs-fixes`, from main `eb96edd8`)
+
+Docs-only follow-up to the v1.0.0-rc1 first-user review. No claim, unit, commander or operation row was changed.
+
+- Leftover MIT and dual-licence wording removed from `docs/reuse_and_attribution.md`, `CONTRIBUTING.md` and `HANDOFF.md`. The whole repository remains CC BY-SA 4.0.
+- Coverage and citation wording now state the surveyed Western Front focus (6 June 1944 to 8 May 1945) and the actual claim-date span in the files (16 September 1939 to 31 May 1945). `CITATION.cff` title and the `build.py` fallback used in `build/manifest.json` say 1944–1945.
+- Front-page README: claim-vs-unit counts clarified; `scope` filter described as it actually works (`theater` is the Western Front filter; every unit in this release is `in_scope`); a ready-to-paste citation, a commanders join example, and limitations for operation participation and claim `commander` were added.
+- Reuse-guide family counts refreshed from `data/references.csv` (2,215 references on 24 November 2026). `docs/json_fields.md` strength fill count updated (39 of 12,770).
+- `HANDOFF.md` labelled maintainer-only and kept off the front page. `add101.py` moved to `maintainer/`. Personal `C:\Users\scott\...` paths removed from the WebUI docs. WebUI `package.json` version and licence aligned with 1.0.0-rc1 / CC BY-SA 4.0.
+
 ## 24 November 2026 — Public v1.0.0-rc1 packaging (branch `release-packaging`, from main `d5b9701a`)
 
 Scott approved RP1–RP18 (24 November 2026) with a single CC BY-SA 4.0 licence for the whole repository (data, documentation, scripts and the web viewer), `data_version` 1.0.0-rc1 (`schema_version` stays 1.0.0), and the Drive folder ids moved out of the public `docs/HANDOFF.md`.

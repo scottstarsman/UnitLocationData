@@ -2,7 +2,7 @@
 """The missions table (decision J1, Normandy chunk 5, approved by Scott on 17 November 2026): one row per mission of a flying unit.
 
 Files: data/missions/<nationality folder>/<unit_id>.csv (one file per flying unit, like data/claims/), columns from schema/missions.schema.json;
-data/retired_missions.csv lists removed mission ids (never reused). scripts/build.py writes build/other_domains/missions.csv (every row, sorted by
+data/retired_missions.csv lists removed mission ids (never reused). scripts/build.py writes build/missions.csv (every row, sorted by
 date then mission_id, with the derived columns of DERIVED). A mission is not a location claim: it never feeds build/all_claims.csv, the command
 relations or the who_controls grid. scripts/validate.py checks the rows (check_missions); scripts/check_mission_ids.py checks id reuse across revisions.
 Standard library only.
@@ -18,7 +18,7 @@ RETIRED_CSV = os.path.join(common.ROOT, 'data', 'retired_missions.csv')
 RETIRED_HEADER = ['mission_id', 'replaced_by_mission_id', 'reason']
 FIELDS = common.load_schema('missions')['fields']
 HEADER = [f['name'] for f in FIELDS]
-# derived columns of build/other_domains/missions.csv, after the stored ones (from data/units.csv, data/places.csv and data/aircraft_types.csv)
+# derived columns of build/missions.csv, after the stored ones (from data/units.csv, data/places.csv and data/aircraft_types.csv)
 DERIVED = ['unit_name', 'nationality', 'target_place_name', 'target_latitude', 'target_longitude', 'target_country', 'aircraft_designation']
 BUILD_HEADER = HEADER + DERIVED
 
@@ -54,7 +54,7 @@ def retired():
 
 
 def build_rows():
-    """Rows (lists) of build/other_domains/missions.csv."""
+    """Rows (lists) of build/missions.csv."""
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     places = {p['place_id']: p for p in common.read_dicts(os.path.join(common.ROOT, 'data', 'places.csv'))[1]}
     at_path = os.path.join(common.ROOT, 'data', 'aircraft_types.csv')

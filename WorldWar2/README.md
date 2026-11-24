@@ -1,95 +1,96 @@
 # WWII Unit Locations
 
-An open, claim-based dataset of where World War II units were, when, and how sure we are. Each row is one sourced claim: *this unit was at this place on this date*, with coordinates, a precision radius, a confidence score, an event type, what the unit was doing, and the sources. Competing claims are kept as separate rows instead of being averaged away.
+An open, claim-based dataset of where World War II units were, on a date, with coordinates, a precision radius, a confidence score, sources, and optional strength figures. Each row is one sourced claim: *this unit was at this place on this date*. Competing claims are kept as separate rows, not averaged away.
 
-**Status: work in progress.** The dataset covers the **Western Front, 6 June 1944 to 8 May 1945** so far, and may be extended to the whole war (pre-invasion rows carry their real dates under `OP-PRE-INVASION`; the only date floor is the sanity bound 1 September 1939; decision Scott, 4 November 2026): 1,657 claims about 285 units out of 370 in the unit table (the rest are placeholders). Coverage is uneven. June 1944 (Normandy landings through the fall of Cherbourg and Operation Epsom) covers US, British, Canadian and German units, including battle groups (Kampfgruppen) and a combat command; July 1944 to 8 May 1945 covers US Army army groups, armies, corps and selected division milestones; German Batch 1 (merged into `main`) adds 52 German claims for 2 July to 20 August 1944 (headquarters from OB West to corps, panzer, parachute and infantry divisions in the Mortain counterattack and the Falaise pocket); German Batch 1b (merged into `main`) adds 57 German claims for 1 to 19 July 1944 (the Caen front, Operations Charnwood and Goodwood, the Cotentin and Vire sectors), including 19 month-level or area-only rows at confidence 0.3. German Batch 2 (on the branch `german-batch2-sep-oct-1944`, branched from `main`) adds 111 German claims for 1 September to 31 October 1944 (OB West, Army Groups B and G, the armies, corps and divisions in the Aachen, Lorraine, Netherlands and Scheldt fighting; 54 of the rows are month-level or inferred at confidence 0.3). German Batch 2 follow-up (on the branch `german-batch2-followup-model-lxxx`, built on the Batch 2 branch) adds 22 German claims (Army Group B from 17 August 1944 to its dissolution on 17 April 1945, the LXXX Corps with its Seventh Army, First Army and Nineteenth Army relations, and five of its divisions; 6 of the rows are at confidence 0.3). German Batch 3 (merged into `main`) adds 121 German claims for 23 October to 16 December 1944 (the Aachen, Hürtgen and Roer front, the Ardennes offensive order of battle on 7 November and 16 December, Lorraine and the Saar, the Vosges, Belfort and Colmar, the Netherlands and Army Group H, and OB West at Ziegenberg; 33 of the rows are month-level or approximate at confidence 0.3, none is at 0.7). German 1945 Batch 1 (merged into `main` with PR #24) adds 119 German claims for 1 January to 28 March 1945 (the end of the Ardennes fighting, Operation Nordwind and the Colmar Pocket, the Roer and the Rhineland battles, the Eifel, the Remagen bridgehead and the Rhine crossings, and the army-group, army and corps command changes of the quarter, including OB West from Rundstedt to Kesselring; 10 rows are at 0.7, 71 at 0.5, 38 at 0.3). German 1945 Batch 2 (on the branch `german-1945-batch2-apr-may`, branched from `main`; pushed, not merged) adds 83 German claims for 1 April to 8 May 1945 (the Ruhr pocket and the surrender of Army Group B's armies, the Harz and the Eleventh Army, the Twelfth Army on the Elbe, the south from Würzburg and Nuremberg to the Black Forest and the Alps, Army Group H as OB Nordwest, and the surrenders from Lüneburg Heath on 4 May to Reims on 7 May and Berlin on 8 May; 2 rows are at 0.9, 13 at 0.7, 33 at 0.5, 35 at 0.3). Rows are event-based, not daily: a unit has a row on days when something substantial happened, so its position between rows is unknown. See [docs/roadmap.md](docs/roadmap.md) for known gaps and the scale-up plan, and [docs/coverage.md](docs/coverage.md) for current counts. Canadian Batch 1 (on the branch `canadian-batch1-jun-dec-1944`, branched from `main`) adds 65 claims for 4 July to 31 December 1944 (First Canadian Army, II Canadian Corps and the 2nd, 3rd and 4th Canadian Divisions, from the Atlantic, Spring, Totalize and Tractable operations and the Falaise Gap through the Seine, the Channel ports and the Scheldt to the Nijmegen winter positions; one is a minimal I Corps row, 32 are at confidence 0.7 and 6 at 0.3), with 14 command relations and the official history of the Canadian Army (Stacey) as the main source; Italy is not covered. Canadian Batch 2 (on the branch `canadian-batch2-jan-may-1945`, branched from `main` after Canadian Batch 1 was merged) adds 65 claims for 29 December 1944 to 8 May 1945 (First Canadian Army, I and II Canadian Corps and the 1st, 2nd, 3rd, 4th Armoured and 5th Armoured Divisions: Operations Elephant, Veritable and Blockbuster, the Rhine crossing, the Ijssel and the liberation of the northern and western Netherlands, Emden, Oldenburg and the German surrender; 27 rows are at confidence 0.7, 26 at 0.5 and 12 at 0.3, none at 0.9 because a single source family, Stacey, is used), with 15 command relations; the positions of I Canadian Corps and its divisions in Italy are not written. British Batch 1 (on the branch `british-batch1-jun-dec-1944`, branched from `main` after Canadian Batch 2 was merged) adds 61 claims for 8 July to 20 December 1944 (21st Army Group, Second Army, I, VIII, XII, XXX and I Airborne Corps and the 3rd, 15th, 43rd, 49th, 50th, 51st, 52nd, 53rd, 59th Infantry, 7th, 11th and Guards Armoured, 1st and 6th Airborne Divisions: Charnwood, Jupiter, the Odon preliminaries, Goodwood, Bluecoat, the Falaise pursuit and the Seine and Somme crossings, Brussels, Antwerp, Le Havre, Market Garden, Walcheren and XXX Corps in the Ardennes; 40 rows are at confidence 0.7, 19 at 0.5 and 2 at 0.3, none at 0.9 because a single source family, Ellis, the British official history, is used), with 21 new command relations, 7 closed or inferred relation ends, two operations (Bluecoat and Tractable) and three Canadian rows re-pointed to Tractable; the rest of the British record for June to December 1944 (independent brigades, Polish, Czech, Belgian and Dutch formations as units) is not written. British Batch 2 (on the branch `british-batch2-jan-may-1945`, branched from the British Batch 1 head) adds 70 claims for 22 October 1944 to 4 May 1945 (XII and XXX Corps with Pheasant and Clipper, the Ardennes counter-attack, Blackcock, Veritable and Blockbuster, the Rhine crossing (Plunder and Varsity), Lingen, Hannover, Celle and Belsen, Bremen, the Elbe, Luebeck, Wismar, Hamburg and the surrender on Lueneburg Heath, for the 3rd, 6th Airborne, 7th Armoured, 11th Armoured, 15th, 43rd, 49th, 51st, 52nd and 53rd Divisions, the Guards Armoured Division, VIII, XII and XXX Corps, Second Army and 21st Army Group; 45 rows are at confidence 0.7, 22 at 0.5 and 3 at 0.3, none at 0.9 because a single source family, Ellis, is used), with 24 new command relations, 10 closed or inferred relation ends, five operations (Astonia, Infatuate, Pheasant, Blackcock, Plunder) and six rows re-pointed to the new operations; a follow-up on the same branch adds 8 claims (the 50th Division at Neerpelt and on the Nijmegen Island, the 3rd Division in January and February 1945, the 43rd Division at Megchelen, the 49th Division on the Island, and the XVIII Airborne Corps attached to the British Second Army for Plunder), 5 relations and the end of the 59th Division's assignment at its disbandment; the 1st Airborne and 79th Armoured Divisions (no sourced place), independent brigades and the Polish, Czech, Belgian and Dutch formations as units are not written in those batches. The Allied contingents batch (on the branch `allied-contingents-1944-45`, branched from `main`) adds 61 claims for 8 August 1944 to 8 May 1945. It covers the 1st Polish Armoured Division (33), the Polish Parachute Brigade at Arnhem and Driel (5), the Czechoslovak Armoured Brigade Group at Dunkirk (5), the Belgian (Piron) Brigade (10) and the Princess Irene Brigade (8). Of these, 11 rows are at 0.9, 26 at 0.7, 19 at 0.5 and 5 at 0.3, from Stacey, Ellis and Wikipedia. It also adds 11 command relations.
+**Version 1.0.0-rc1** (`schema_version` 1.0.0). See `build/manifest.json` and `CITATION.cff`.
 
-> **Licensing.** Data: CC BY-SA 4.0 (`LICENSE-DATA`). Code: MIT (`LICENSE-CODE`). Wikipedia-derived facts are CC BY-SA, which is the main reason for the share-alike data licence; US Army Center of Military History volumes are public domain in the United States. Source-by-source notes: [docs/sources.md](docs/sources.md).
+## Coverage and status
 
-## Layout
+The dataset covers the **Western Front, 6 June 1944 to 8 May 1945**. Pre-invasion rows keep their real dates under `OP-PRE-INVASION`. The current build has **12,770 claims** in **2,635 units** (91 of them placeholders with no claim file):
 
-```
-data/claims/<nationality>/<unit_id>.csv   master copy: one file per unit, all claim columns
-data/units.csv                            unit table (one row per unit, including placeholder and parent-only units)
-data/nationalities.csv                    hand-maintained lookup table of nationalities (code = unit_id prefix, name, adjective, kind; the sides are in nation_allegiance.csv); units, claims and operations refer to it
-data/nation_allegiance.csv                hand-maintained dated sides of each nation in a conflict (Allied, Axis, neutral, co-belligerent; nation code, valid_from, valid_to, references); not yet read by the build
-data/unit_allegiance_overrides.csv        hand-maintained dated exceptions to the nation table: a unit that stood on another side from its nation (wins over nation_allegiance.csv; also gives the four multinational Allied headquarters, nationality ALL, their side, from 23 November 2026)
-data/sidc_function_map.csv                hand-maintained rules that give each unit its military symbol function (MIL-STD-2525D symbol set, entity, modifiers; roadmap 410); data/sidc_echelon_map.csv the echelon amplifier per echelon value; data/sidc_codes.csv the recorded 2525D code list (JMSML, with the milsymbol icon key). The SIDCs themselves are derived (build/unit_symbols.csv and the sidc column of the claims outputs), never entered
-data/operations.csv                       hand-maintained table of operations, battles, phases and campaigns (parent chain, dates, sources); claims point at it through operation_id. Also operation_relations.csv (follows / concurrent_with / supports / related links) and operation_exceptions.csv
-data/places.csv                           hand-maintained table of places (ids PL0001...: canonical name, aliases, kind point / area / line, coordinates, country, region, coordinate source); every claim points at one with place_id
-data/command_relations.csv              hand-maintained master table of command relations (one dated interval per subject unit, higher unit and relationship; ids CR0001...); data/command_relation_claims.csv links each relation to the claims that list it (with what each claim stated), data/command_relation_overlaps.csv documents contradictory overlaps
-data/claim_reference_roles.csv         hand-maintained role of a claim-to-reference link where a source supports one part of a claim (event, date, location, command_relationship, strength; the role of a coordinate service is derived, not stored); the links themselves are `reference_ids` in the claim files
-data/references.csv                       GENERATED table of every source cited (one row per reference, with a link, licence and claim count and source family); curated metadata in data/references_meta.csv. Each claim lists its references in reference_ids (+ source_locator)
-schema/                                   machine-readable schema (columns, foreign keys) + vocabularies + human-readable README
-scripts/                                  validate.py, places.py, unit_refs.py and command_relations.py (libraries), migrate_places.py, migrate_command_relations.py, migrate_unit_ids.py, verify_unit_ids.py and migrate_review_items.py and verify_review_items.py (one-off), check_coordinates.py, audit_command_location.py, audit_temporal_relationships.py, who_controls.py, build.py, build_references.py, operations.py (library), promote_placeholders.py, migrate_operations.py, migrate_campaign.py (obsolete), split_from_flat.py, migrate_parent_formation.py, review_sample.py (the review packet's sample and counts) (standard library only)
-build/                                    GENERATED combined outputs (unit_symbols.csv, all_claims.csv, claims.geojson, places.csv, places.geojson, coverage.csv, command_relations.csv, organic_relations.csv, operations.csv, claim_references.csv, unit_references.csv, operation_references.csv, all_claims.json, units.csv, units.json, coverage_by_unit.csv, coverage_by_month.csv, review_queue.csv; air and naval units in other_domains/claims.csv and other_domains/units.csv only; docs/coverage.md and data/references.csv are generated too)
-docs/                                     methodology, sources, roadmap, coverage (generated); docs/coverage_report.md and docs/coverage_summary.md explain the coverage tables and the source-review queue; docs/review/ is the independent-review packet (brief, checklist, sample, questions) and the earlier review notes
-archive/v5_flat/                          the flat CSVs the per-unit files were first split from
-(repository root) .github/workflows/validate.yml   CI for pull requests and pushes to any branch; runs the commands below inside WorldWar2/
-```
+| Domain | Units | Claims |
+|---|---:|---:|
+| ground | 513 | 9,507 |
+| air | 1,307 | 2,343 |
+| naval | 815 | 920 |
+| **All** | **2,635** | **12,770** |
 
-**Edit `data/` only. Never hand-edit `build/`**: it is generated by `scripts/build.py` and committed so people can download the combined files without running anything.
+Coverage is uneven and event-based, not a daily plot: a unit has a row on days when something substantial happened, so its position between rows is unknown. Live counts are in [docs/coverage.md](docs/coverage.md). Known gaps and later work are in [docs/roadmap.md](docs/roadmap.md).
 
-## Data model
+## How to read a claim
 
-- **Claim** (a row in `data/claims/...`): `claim_id` (never reused), optional `conflict_group_id`, `claim_status` (preferred / alternate / disputed), `unit_id`, `date`, `theater`, place (`place_id` pointing at `data/places.csv`, `location_qualifier`, the claim's own `latitude` and `longitude`, `coord_override` when that point differs from the place's, `location_represents`, `precision_km`), `event_type` and `current_activity`, `engaged_with` (opponent `unit_id`s; `engaged_note` for an opponent that is not a unit), command (`parent_unit_id` for the operational parent; the claim's organic, assigned, attached, operational-control or reserve relations are rows of `data/command_relations.csv` linked by `data/command_relation_claims.csv`, and `build/all_claims.csv` rebuilds them as `command_relationships`; `commander`, `composing_units` as unit ids with `composing_text` for the rest), optional `strength_json` (figures and, where a source states it, a qualitative `status`), `confidence`, `source`, `notes`. Values that follow from other data are not stored: `location_name`, `location_temporal_offset_days` and `strength_status` are derived into `build/all_claims.csv` (see [schema/README.md](schema/README.md), "Derived values"). Full column definitions: [schema/README.md](schema/README.md).
-- **Unit** (a row in `data/units.csv`): `unit_id`, `unit_name`, `nationality`, `echelon`, `branch`, `theater` (primary), `parent_unit_id` (organic parent of battle groups), `record_status` (placeholder / partial / active), `domain` (blank or ground / air / naval; air and naval units are collected but kept out of the main outputs and written to `build/other_domains/`), optional `formed_date` and `initial_parent_*` listing columns (see [docs/methodology.md](docs/methodology.md), "Placeholder units"). Most of the table is placeholders; [docs/coverage.md](docs/coverage.md) shows what has claims.
-- **Operation** (a row in `data/operations.csv`): `operation_id` (`OP-EPSOM`), `name`, `short_name`, `op_type` (umbrella / campaign / operation / battle / phase), `parent_operation_id`, dates with a `date_basis`, `reference_ids` and `notes`. A claim's `operation_id` is the most specific row it belongs to; the parent chain gives the campaign and the umbrella, and `build/all_claims.csv` carries the derived `operation`, `campaign`, `operation_name`, `sub_operation_name` and `operation_path`. See [schema/README.md](schema/README.md#operations-dataoperationscsv-dataoperation_relationscsv-dataoperation_exceptionscsv).
-- **Conflict group**: claims that disagree about the same unit and event (for example two sources dating a commander's death differently). One may be preferred; the others are alternate or disputed.
-- **theater**: controlled vocabulary (`western_europe`, `mediterranean`, `north_africa`, `eastern_front`, `balkans`, `scandinavia`, `home_germany`, `pacific`, `cbi`, `atlantic`, `other`), per claim row since 9 November 2026 (a row may differ from the unit's primary theater). Nearly all rows are `western_europe`; German rows on other fronts or in home areas, kept under Scott's rule of 9 November 2026, carry `eastern_front`, `home_germany` or `scandinavia` and a per-front operation (`OP-FRONT-*`, `OP-HOME-GERMANY`). The viewer and `build/` outputs include them; filter on `theater` for the Western Front only.
+One row is one sourced claim. `claim_status` is `preferred`, `alternate` or `disputed`; competing claims about the same unit and event share a `conflict_group_id`. The point is usually a place centre (`location_represents`), not a surveyed unit position. `confidence` measures date-and-place support, not “did the event happen.” Claim and relation dates are `YYYY-MM-DD`; `formed_date` and `initial_parent_as_of` may be a day, a month or a year, as the source gives them. Coordinates are decimal degrees, WGS84.
 
-## How to interpret the data
+Public ids (`C####`, `CR####`, `PL####`, `R####`, `G####`, `PE####`, `UC####`, `TT####`, `UT####`, and the others) are unique, never reused, and not renumbered across releases.
 
-The dataset is a set of **sourced observations**, not a continuous reconstruction of where every unit was. Read each row with these points (the details and the counts are in [schema/README.md](schema/README.md), "Reading a command interval", "What `confidence` means" and "What a location point can mean"; the reuse terms are in [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md)):
+## Confidence tiers
 
-- **A claim is a sourced assertion** that a source puts this unit at this place on this date doing this. It is not a verified unit state for the days around it.
-- **No row for a date does not mean no activity, and does not mean the unit stayed put.** Rows are event-based; quiet days are absent on purpose, so a position between two rows is unknown, not unchanged. Do not interpolate unless you say so.
-- **A point is not always where the unit was.** It can stand for a headquarters, a main body, the centre of a sector, a point on a front line, an objective, a march route or a town centre (`location_represents`, `location_basis`, `precision_km`). A distance between two claim points is not a distance between two units.
-- **`confidence` scores the date and the place** (how exactly the location is documented and by how many independent source families); it is not a probability, and it says nothing about whether the event happened. A command change with a well-documented date and an approximate headquarters place scores 0.3 or 0.5. Do not filter events by it (84 of the 96 command-change claims are below 0.7); the notes sentence `Event support:` says how well an event is documented, where there is one.
-- **A command relationship is an interval, and its boundaries may be inferred.** `valid_to_basis` says whether an end is sourced, inferred from the unit's next claim, or open at the last claim that lists it; a missing end never means the relationship held indefinitely. A relationship is evidenced up to the last claim that lists it.
-- **The `preferred` claim is the dataset's selection, not a fact.** In a conflict group it is the best-supported of competing claims; the alternates are kept and say what the other sources say.
-- **`claim_id` is the identity of a claim.** `(unit_id, date, event_type)` is only a guard against entering the same claim twice.
+The four levels are defined in [docs/methodology.md](docs/methodology.md):
 
-Three examples. **C0001** (2nd Canadian Armoured Brigade, 6 June 1944, landing): the point is the centre of the Juno Beach sector (`sector_center`, 10 km), not the position of the brigade's units. **CR0106** (the 101st Airborne Division attached to British Second Army from 18 September 1944): its end, 8 November, is read from the table (the Army Attached column lists Second Army until the row of 9 November, `assignment_table`; before 26 October 2026 the end was inferred as 16 December), and the claims C0567 to C0573 evidence the corps changes that follow. **C0244** (4th Armored Division arrives on the Continent, 13 July 1944; confidence 0.3): its separate event row **C0243** (landing at Utah Beach, 11 July, from other sources) is a different event, not a rival date; the two were a conflict group (G012) until 26 October 2026, when the group was dissolved; the place is the vicinity of an unresolved CMH place name (50 km).
+| value | rule |
+|---|---|
+| 0.9 | exact place and two independent source families agree |
+| 0.7 | exact place with one authoritative source, or an approximate place with two families |
+| 0.5 | exact place with one secondary source, or an approximate place with one family |
+| 0.3 | inferred or representative position, or an approximate date |
+
+A single source is enough to create a unit (0.3). The preferred claim of a conflict group is at most 0.7; alternate and disputed claims are at most 0.5. Wikipedia is not a source family of its own in the sense of “two families”: every Wikipedia language is one family.
+
+## Allied viewpoint
+
+Sides and MIL-STD-2525D standard identity are stored from the Allied viewpoint (Allied and co-belligerent Friend, Axis Hostile). A viewer can swap digit 4 of the SIDC.
+
+## Files and keys
+
+Start here (paths relative to this folder). Filter on `domain` (`ground` / `air` / `naval`) and `scope` (`in_scope` / `out_of_scope`). The who_controls grid still defaults to in-scope ground subjects.
+
+- `build/all_claims.csv`, `build/all_claims.json`, `build/claims.geojson` — every claim, all domains
+- `build/units.csv`, `build/units.json` — the unit table
+- `build/command_relations.csv`, `build/organic_relations.csv` — command relations (with a `domain` column)
+- `build/places.csv`, `build/places.geojson` — places, with claim counts by domain
+- `build/operations.csv`, `build/operations.geojson`, `build/operation_units.csv` — operations and participation
+- `build/oob/` — flagship order-of-battle snapshots
+- `build/people.csv`, `build/unit_commanders.csv` — commanders
+- `build/toe_templates.csv`, `build/unit_toe.csv` — authorized TO&E
+- `build/missions.csv`, `build/ship_classes.csv`, `build/aircraft_types.csv`
+- `build/manifest.json` — schema and data versions, checksums and row counts
+- `data/` — the master files the build is generated from
+- [schema/README.md](schema/README.md) — the full column and vocabulary dictionary
+
+The large combined files (`all_claims.csv`, `all_claims.json`, `claims.geojson`) are committed so a checkout is immediately usable.
 
 ## Quick start
-
-Requires Python 3.8+ and nothing else (standard library only). Run the commands from this directory (`WorldWar2/` in the repository).
-
-```bash
-python scripts/validate.py          # exit code 0 = data is valid
-python scripts/build.py             # regenerate build/ (all_claims.csv, claims.geojson)
-python scripts/build.py --check     # exit code 1 if build/ is stale (used by CI)
-python scripts/semantic_tests.py    # what who_controls.py answers for four command scenarios; exit code 1 on a changed answer (used by CI, run build.py first)
-python scripts/check_coordinates.py # coordinate warnings only (add --geocode and --places before a release to fill the geocoder cache)
-```
-
-Use the data directly: `build/all_claims.csv` (all claims, one file) or `build/claims.geojson` (Point features for GIS tools, `geojson.io`, QGIS, Leaflet).
-
-Example (Python, no libraries):
 
 ```python
 import csv
 rows = list(csv.DictReader(open("build/all_claims.csv", encoding="utf-8")))
-d13 = [r for r in rows if r["date"] == "1944-06-13" and r["claim_status"] == "preferred"]
-print(len(d13), "preferred claims on 13 June 1944")
+print(len(rows), "claims")
+print(sum(1 for r in rows if r["domain"] == "ground"), "ground")
+d13 = [r for r in rows if r["date"] == "1944-06-13" and r["claim_status"] == "preferred" and r["domain"] == "ground"]
+print(len(d13), "preferred ground claims on 13 June 1944")
 ```
 
-## Contributing
+Run the scripts from this folder: `python scripts/validate.py`, `python scripts/build.py`, `python scripts/build.py --check`.
 
-Every row needs a source, conflicting claims become separate rows, and nothing is invented. Read [CONTRIBUTING.md](CONTRIBUTING.md) (how to add a unit or a claim, the PR checklist) and the [code of conduct](CODE_OF_CONDUCT.md). Pull requests run `scripts/validate.py` and check that `build/` is up to date.
+## How to cite
 
-## Documentation
+See `CITATION.cff`. Copyright holder: Raymond Scott Starsman. Attribution guidance by source family and export is in [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md).
 
-- [docs/methodology.md](docs/methodology.md): how claims are built, precision, confidence, conflicts, strength figures
-- [docs/sources.md](docs/sources.md): sources used, reliability, licensing; the full list of references is [data/references.csv](data/references.csv)
-- [docs/reuse_and_attribution.md](docs/reuse_and_attribution.md): what to credit and what applies when you reuse a derived file, by source family and by export
-- [docs/roadmap.md](docs/roadmap.md): scale-up plan and known gaps
-- [docs/HANDOFF.md](docs/HANDOFF.md): handoff for whoever maintains the dataset next (state, locations, standing rules, conventions, checks, decision log, next steps)
-- [docs/coverage.md](docs/coverage.md): generated coverage of the unit table (placeholder vs active)
-- [docs/review/README.md](docs/review/README.md): the brief for an independent reviewer (scope, tables, rules, known limitations), with a checklist, a seeded sample to check against the sources, and ten design questions
-- [schema/README.md](schema/README.md): column and vocabulary reference
+## Limitations and known gaps
 
-## Licence and citation
+- Event-based, not a daily location for every unit.
+- Western Front first; other fronts appear only when a source happened to give them, and are labelled incidental when out of scope.
+- Air and naval command relations are dense in June 1944 and thin later.
+- TO&E is high-level and incomplete (British official tables, earlier German KStN, and air establishments are still open).
+- Some headquarters points are representative of a sector, not a surveyed command post.
+- Wikipedia is not treated as a second family next to a work it summarises.
 
-Data: CC BY-SA 4.0 (see `LICENSE-DATA`). Code: MIT (see `LICENSE-CODE`). Citation metadata: `CITATION.cff`. Copyright holder: Raymond Scott Starsman.
+See [docs/roadmap.md](docs/roadmap.md) for the open items. Do not take this page as a complete inventory of gaps.
+
+## Contributing and licence
+
+Every row needs a source, conflicting claims become separate rows, and nothing is invented. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md). Pull requests run `scripts/validate.py` and check that `build/` is up to date.
+
+The whole repository — data, documentation, scripts and the web viewer — is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see the root [`LICENSE`](../LICENSE)). Creative Commons recommends against using CC licences for software, because they do not address patents and are not standard open-source software licences. Scott chose a single licence for the whole repository for simplicity (24 November 2026). Wikipedia-derived facts already require share-alike, which is why the data could not go under a non-share-alike licence.
+
+Further documentation: [methodology](docs/methodology.md), [sources](docs/sources.md), [reuse and attribution](docs/reuse_and_attribution.md), [roadmap](docs/roadmap.md), [coverage](docs/coverage.md), [schema](schema/README.md).

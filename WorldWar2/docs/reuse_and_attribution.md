@@ -1,6 +1,6 @@
 # Reuse and attribution
 
-What to credit, and what applies, when you reuse the dataset or one of its derived files. This page describes what the repository records; it is not legal advice and it does not change any licence. The licences themselves are in `LICENSE-DATA` (data and documentation) and `LICENSE-CODE` (code); the source-by-source notes are in [sources.md](sources.md); the per-source terms are in the `license_or_status` column of [`data/references.csv`](../data/references.csv).
+What to credit, and what applies, when you reuse the dataset or one of its derived files. This page describes what the repository records; it is not legal advice and it does not change any licence. The whole repository is licensed under CC BY-SA 4.0 (root [`LICENSE`](../../LICENSE)); the source-by-source notes are in [sources.md](sources.md); the per-source terms are in the `license_or_status` column of [`data/references.csv`](../data/references.csv).
 
 ## What you reuse
 

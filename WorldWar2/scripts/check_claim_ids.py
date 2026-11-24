@@ -6,8 +6,8 @@
 
 scripts/validate.py checks what a single checkout can show (ids are unique and well formed, data/retired_claims.csv is consistent, no retired id is a claim).
 This script needs git history, which a shallow CI checkout does not have, so it is run by hand before a pull request (and by whoever merges one). It reads
-build/all_claims.csv, build/other_domains/claims.csv (the claims of air and naval units and of out_of_scope units, which are kept out of all_claims.csv;
-read since the air-naval schema pass, 13 November 2026, so an id there cannot be reused unseen) and data/retired_claims.csv at <rev> and the working tree, and fails (exit 1) when
+build/all_claims.csv (every domain; older revisions may still have a separate build/other_domains/claims.csv, which is also read at <rev>
+so an id there cannot be reused unseen) and data/retired_claims.csv at <rev> and the working tree, and fails (exit 1) when
   * a claim id of <rev> is no longer a claim and is not listed in data/retired_claims.csv (a claim was deleted without a record);
   * a claim id of <rev> now belongs to a different unit (the id was reused for another claim);
   * an id of the retired list at <rev> is missing from it now (a retired id may not be forgotten) or is a claim again (reused).

@@ -5,7 +5,7 @@
   python scripts/check_mission_ids.py                  compare with origin/main
   python scripts/check_mission_ids.py --base <rev>     compare with any revision
 
-It reads build/other_domains/missions.csv and data/retired_missions.csv at <rev> and in the working tree (both may be absent at <rev>: the table is
+It reads build/missions.csv (and, at an older <rev>, build/other_domains/missions.csv) and data/retired_missions.csv at <rev> and in the working tree (both may be absent at <rev>: the table is
 new), and fails (exit 1) when
   * a mission id of <rev> is no longer a mission and is not listed in data/retired_missions.csv (a mission row was deleted without a record);
   * a mission id of <rev> now belongs to a different unit (the id was reused);
@@ -22,7 +22,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 from check_claim_ids import git, show  # noqa: E402
 
-BUILT = os.path.join('build', 'other_domains', 'missions.csv')
+BUILT = os.path.join('build', 'missions.csv')
+BUILT_LEGACY = os.path.join('build', 'other_domains', 'missions.csv')
 RETIRED = os.path.join('data', 'retired_missions.csv')
 
 
@@ -34,7 +35,7 @@ def main():
     if rc:
         raise SystemExit('not inside a git work tree')
     prefix = prefix.strip()
-    old_txt = show(a.base, prefix, BUILT, optional=True)
+    old_txt = show(a.base, prefix, BUILT, optional=True) or show(a.base, prefix, BUILT_LEGACY, optional=True)
     old = {r['mission_id']: r['unit_id'] for r in csv.DictReader(io.StringIO(old_txt))} if old_txt else {}
     old_ret_txt = show(a.base, prefix, RETIRED, optional=True)
     old_ret = {r['mission_id'] for r in csv.DictReader(io.StringIO(old_ret_txt))} if old_ret_txt else set()

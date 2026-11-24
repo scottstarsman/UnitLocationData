@@ -9,7 +9,7 @@ data/sidc_echelon_map.csv (amplifier per echelon value), data/sidc_codes.csv (th
 symbol sets 10, 30 and 35 with the milsymbol icon key). Side: scripts/allegiance.py (unit override, then nation row); a date after
 the last row that covers the unit keeps that last side (question 3); a gap between rows stays without a side (standard identity 1 Unknown).
 
-Used by scripts/build.py (sidc column of the claims outputs, build/unit_symbols.csv and build/other_domains/unit_symbols.csv),
+Used by scripts/build.py (sidc column of the claims outputs, build/unit_symbols.csv),
 scripts/validate.py (check_sidc) and scripts/semantic_tests.py.
 """
 import datetime

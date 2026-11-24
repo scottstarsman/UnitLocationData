@@ -1,7 +1,7 @@
 """Coverage report and source-review queue (derived outputs only; see docs/coverage_report.md).
 
 build/coverage_by_unit.csv   one row per unit with claims: span, counts by confidence band, map-only share, source families, longest gap, empty months
-build/coverage_by_month.csv  one row per nationality x month: units active, units with a claim, claim rows, map-only share
+build/coverage_by_month.csv  one row per domain x nationality x month: units active, units with a claim, claim rows, map-only share
 build/review_queue.csv       units ranked by where reading another source would help most, with the period and suggested source types
 
 Called by scripts/build.py (outputs()); pure functions so that scripts/semantic_tests.py can test them on synthetic rows.
@@ -15,11 +15,11 @@ import common
 MAP_FAMILY = 'loc_12ag_situation_maps'
 GEOCODER = 'gazetteer_geocoder'
 BANDS = [('conf_0_9', lambda c: c >= 0.9), ('conf_0_7', lambda c: 0.7 <= c < 0.9), ('conf_0_5', lambda c: 0.5 <= c < 0.7), ('conf_0_3_or_less', lambda c: c < 0.5)]
-UNIT_HEADER = ['unit_id', 'unit_name', 'nationality', 'echelon', 'branch', 'first_claim_date', 'last_claim_date', 'span_days', 'claim_count',
+UNIT_HEADER = ['unit_id', 'unit_name', 'nationality', 'domain', 'echelon', 'branch', 'first_claim_date', 'last_claim_date', 'span_days', 'claim_count',
                'conf_0_9', 'conf_0_7', 'conf_0_5', 'conf_0_3_or_less', 'map_only_rows', 'map_only_share', 'source_families', 'source_family_list',
                'longest_gap_days', 'longest_gap_from', 'longest_gap_to', 'empty_months', 'empty_month_list']
-MONTH_HEADER = ['nationality', 'month', 'units_active', 'units_with_claim', 'units_without_claim', 'claim_rows', 'map_only_rows', 'map_only_share']
-QUEUE_HEADER = ['rank', 'score', 'unit_id', 'unit_name', 'nationality', 'echelon', 'read_from', 'read_to', 'reason', 'suggested_sources',
+MONTH_HEADER = ['domain', 'nationality', 'month', 'units_active', 'units_with_claim', 'units_without_claim', 'claim_rows', 'map_only_rows', 'map_only_share']
+QUEUE_HEADER = ['rank', 'score', 'unit_id', 'unit_name', 'nationality', 'domain', 'echelon', 'read_from', 'read_to', 'reason', 'suggested_sources',
                 'gap_score', 'map_score', 'low_conf_score', 'single_family_score', 'empty_month_score']
 # ranking weights (docs/coverage_report.md, "Ranking")
 WEIGHTS = {'gap': 0.30, 'map': 0.25, 'low_conf': 0.15, 'single_family': 0.15, 'empty_month': 0.15}
@@ -73,6 +73,7 @@ def by_unit(units, claims, fam):
             continue
         dates = sorted({_d(c['date']) for c in cs})
         row = {k: u[k] for k in ('unit_id', 'unit_name', 'nationality', 'echelon', 'branch')}
+        row['domain'] = u.get('domain') or 'ground'
         row['first_claim_date'], row['last_claim_date'] = dates[0].isoformat(), dates[-1].isoformat()
         row['span_days'] = (dates[-1] - dates[0]).days
         row['claim_count'] = len(cs)
@@ -96,26 +97,30 @@ def by_unit(units, claims, fam):
 
 
 def by_month(unit_rows, claims, fam):
-    """Per nationality and month: units whose first..last claim span covers the month, how many have a claim in it, map-only share."""
+    """Per domain, nationality and month: units whose first..last claim span covers the month, how many have a claim in it, map-only share."""
     if not claims:
         return []
     allm = _months(min(_d(c['date']) for c in claims), max(_d(c['date']) for c in claims))
-    nat_of = {r['unit_id']: r['nationality'] for r in unit_rows}
+    meta = {r['unit_id']: (r.get('domain') or 'ground', r['nationality']) for r in unit_rows}
     cell = {}
     for c in claims:
-        k = (nat_of.get(c['unit_id'], c['nationality']), c['date'][:7])
+        dom, nat = meta.get(c['unit_id'], (c.get('domain') or 'ground', c['nationality']))
+        k = (dom, nat, c['date'][:7])
         e = cell.setdefault(k, [set(), 0, 0])
         e[0].add(c['unit_id'])
         e[1] += 1
         e[2] += is_map_only(c, fam)
     out = []
-    for nat in sorted({r['nationality'] for r in unit_rows}):
+    groups = sorted({(r.get('domain') or 'ground', r['nationality']) for r in unit_rows},
+                    key=lambda g: (('ground', 'air', 'naval').index(g[0]) if g[0] in ('ground', 'air', 'naval') else 9, g[1]))
+    for dom, nat in groups:
         for m in allm:
-            active = sum(1 for r in unit_rows if r['nationality'] == nat and r['first_claim_date'][:7] <= m <= r['last_claim_date'][:7])
+            active = sum(1 for r in unit_rows if (r.get('domain') or 'ground') == dom and r['nationality'] == nat
+                         and r['first_claim_date'][:7] <= m <= r['last_claim_date'][:7])
             if not active:
                 continue
-            units_with, rows_n, mo = cell.get((nat, m), [set(), 0, 0])
-            out.append({'nationality': nat, 'month': m, 'units_active': active, 'units_with_claim': len(units_with),
+            units_with, rows_n, mo = cell.get((dom, nat, m), [set(), 0, 0])
+            out.append({'domain': dom, 'nationality': nat, 'month': m, 'units_active': active, 'units_with_claim': len(units_with),
                         'units_without_claim': active - len(units_with), 'claim_rows': rows_n, 'map_only_rows': mo,
                         'map_only_share': '%.3f' % (mo / rows_n) if rows_n else ''})
     return out
@@ -149,7 +154,7 @@ def queue(unit_rows):
         else:
             rf, rt = r['first_claim_date'], r['last_claim_date']
         out.append({'score': round(score, 4), 'unit_id': r['unit_id'], 'unit_name': r['unit_name'], 'nationality': r['nationality'],
-                    'echelon': r['echelon'], 'read_from': rf, 'read_to': rt, 'reason': '; '.join(why) or 'no weak point',
+                    'domain': r.get('domain') or 'ground', 'echelon': r['echelon'], 'read_from': rf, 'read_to': rt, 'reason': '; '.join(why) or 'no weak point',
                     'suggested_sources': SUGGEST.get(r['nationality'], DEFAULT_SUGGEST),
                     'gap_score': round(f['gap'], 3), 'map_score': round(f['map'], 3), 'low_conf_score': round(f['low_conf'], 3),
                     'single_family_score': f['single_family'], 'empty_month_score': round(f['empty_month'], 3)})

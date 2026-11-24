@@ -582,9 +582,9 @@
     }
   },
   "scope": {
-    "description": "Scope marker of a unit in data/units.csv (column scope; blank means in_scope). Standing rule 22 (Scott, 13 November 2026): a claim is recorded even when its unit is outside the current scope (any domain, front or period). Out-of-scope units, their claims and their command relations stay out of the main outputs and the who_controls grid and are written to build/other_domains/.",
+    "description": "Scope marker of a unit in data/units.csv (column scope; blank means in_scope). Standing rule 22 (Scott, 13 November 2026): a claim is recorded even when its unit is outside the current scope (any domain, front or period). Out-of-scope units, their claims and their command relations are included in the unified build/ files with scope=out_of_scope; the who_controls grid still defaults to in-scope ground.",
     "values": {
-      "in_scope": "The unit is inside the current scope (the default; blank means in_scope). Ground units in scope feed the main outputs.",
+      "in_scope": "The unit is inside the current scope (the default; blank means in_scope in the master file). In-scope ground units are the default who_controls grid subjects.",
       "out_of_scope": "The unit is outside the current scope (another front or period, another domain). Collected for later; its coverage and balance figures are incidental, not surveyed."
     }
   },

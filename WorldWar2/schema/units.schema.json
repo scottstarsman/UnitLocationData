@@ -163,13 +163,13 @@
     {
       "name": "domain",
       "type": "string",
-      "description": "Domain of the unit: ground, air or naval. Blank means ground (the default). Only ground units go into the main build outputs (all_claims, claims.geojson, units, coverage, places, operations, command_relations); air and naval units are collected for later use and their claims are written to build/other_domains/ only (Scott's decision, 4 November 2026).",
+      "description": "Domain of the unit: ground, air or naval. Required; blank is not allowed (Task 4, RP3, 24 November 2026). Every domain is written to the unified build/ outputs, with this column present so users can filter. The who_controls grid still defaults to in-scope ground units.",
       "vocabulary": "domain"
     },
     {
       "name": "scope",
       "type": "string",
-      "description": "Scope marker (vocabulary scope): in_scope or out_of_scope; blank means in_scope. A unit marked out_of_scope is recorded, with its claims and command relations, but kept out of the main build outputs and the who_controls grid and written to build/other_domains/ (standing rule 22, Scott, 13 November 2026).",
+      "description": "Scope marker (vocabulary scope): in_scope or out_of_scope; blank means in_scope in the master file, and build/units.csv writes in_scope explicitly. A unit marked out_of_scope is recorded, with its claims and command relations, in the unified build/ files; the who_controls grid still defaults to in-scope ground (standing rule 22, Scott, 13 November 2026; Task 4, 24 November 2026).",
       "vocabulary": "scope"
     },
     {

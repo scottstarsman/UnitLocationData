@@ -52,11 +52,10 @@ Every claim row cites its own sources in the `source` column. This page lists wh
 
 ## Licensing notes
 
-- **Data**: CC BY-SA 4.0. Wikipedia text is CC BY-SA, and share-alike applies to adaptations; keeping the dataset BY-SA is the conservative option. CMH is public domain; OSM data is ODbL (geocodes of place names are factual, but keep the attribution note in `source`).
-- **Code**: MIT, independent of the data licence.
+- **Licence**: the whole repository (data, documentation, scripts and the web viewer) is CC BY-SA 4.0 (root `LICENSE`). Wikipedia text is CC BY-SA, and share-alike applies to adaptations; keeping the dataset BY-SA is required. CMH is public domain in the United States; OSM data is ODbL (geocodes of place names are factual, but keep the attribution note in `source`). Creative Commons recommends against CC licences for software; Scott chose a single licence for simplicity (24 November 2026).
 - **No copied text**: `notes` and `current_activity` were written by the dataset authors from the sources; do not paste long passages from copyrighted pages.
-- **Contributors** should only add facts they can source and must be able to license their contribution under the repository licences.
-- The licence choices (data CC BY-SA 4.0, code MIT) are final. Anyone planning a specific reuse should read the Wikipedia share-alike terms for themselves; nothing here is legal advice.
+- **Contributors** should only add facts they can source and must be able to license their contribution under CC BY-SA 4.0.
+- Anyone planning a specific reuse should read the Wikipedia share-alike terms for themselves; nothing here is legal advice.
 
 ## Source nationality balance (10 November 2026)
 

@@ -6,9 +6,9 @@ Usage: python scripts/who_controls.py US-ARM-002D 1944-08-28
        python scripts/who_controls.py US-ABN-101D 1944-12-20 12:00        (optional HH:MM, 24-hour)
        python scripts/who_controls.py "2nd Armored" 1944-08-28            (matches a substring of the subject name)
 
-For an air or naval unit (not in the main table) the same answer is read from build/other_domains/command_relations.csv and a second block, the
-administrative chain (an administrative_control relation, or an assigned relation while another headquarters holds operational_control or the
-attachment), follows the operational chain; ground answers are unchanged (docs/air_naval_pilot.md section 9.4).
+For an air or naval unit a second block, the administrative chain (an administrative_control relation, or an assigned relation while another
+headquarters holds operational_control or the attachment), follows the operational chain; ground answers are unchanged (docs/air_naval_pilot.md
+section 9.4). Air and naval relations live in the same build/command_relations.csv as ground relations, with a domain column.
 
 Prints every interval that covers the date, each marked [certain] or [possible: why], then the immediate operational parent
 and the chain above it. Intervals are INCLUSIVE (valid_to is the last day), so on the day one relationship ends and the next
@@ -119,14 +119,13 @@ def main(argv):
         return 2
     path = os.path.join(common.BUILD_DIR, 'command_relations.csv')
     _h, rows = common.read_dicts(path)
-    other_path = os.path.join(common.BUILD_DIR, 'other_domains', 'command_relations.csv')   # air and naval subjects; consulted only when the main table has no answer
-    other_rows = common.read_dicts(other_path)[1] if os.path.isfile(other_path) else []
     organic_path = os.path.join(common.BUILD_DIR, 'organic_relations.csv')   # the preferred organic relations; consulted only for the organic fallback
     organic_rows = common.read_dicts(organic_path)[1] if os.path.isfile(organic_path) else []
     override_path = os.path.join(common.BUILD_DIR, 'who_controls_overrides.csv')   # relations set aside for their subject (effect defer_to_organic_parent)
     overrides = {o['relation_id']: o for o in common.read_dicts(override_path)[1]} if os.path.isfile(override_path) else {}
     _uh, units = common.read_dicts(common.UNITS_CSV)
     ech = {u['unit_id']: u['echelon'] for u in units}
+    units_by_id = {u['unit_id']: u for u in units}
 
     set_aside = []   # (relation, status, why) of the overridden relations that cover the date, for the note
 
@@ -149,11 +148,24 @@ def main(argv):
         return hits_for(uid_or_name, organic_rows)
 
     hits = hits_for(who)
-    other_mode = False
-    if not hits and other_rows and not any(not r['higher_unit_id'] and r['subject_unit_id'] == who for r in rows):
-        rows = rows + other_rows   # an air or naval unit: its relations are in build/other_domains/command_relations.csv; ground answers never reach this line
+    if who in units_by_id:
+        qid = who
+    elif hits:
+        qid = hits[0][0]['subject_unit_id']
+    else:
+        qid = next((u['unit_id'] for u in units if who.lower() in u['unit_name'].lower()), who)
+    other_mode = common.unit_domain(units_by_id.get(qid, {})) in ('air', 'naval')
+    # After the Task 4 fold, air and naval relations share this file. A ground query still
+    # walks only relations whose subject is ground, so a ground unit parented to an air or
+    # naval HQ (RAF Regiment under a Bomber Command group; coastal artillery under a naval
+    # command) does not inherit that HQ's own air/naval chain. That is the same answer as
+    # when the ground table was a separate file (RP6: unchanged ground who_controls answers).
+    if not other_mode:
+        def _ground_subject(r):
+            return common.unit_domain(units_by_id.get(r['subject_unit_id'], {})) == 'ground'
+        rows = [r for r in rows if _ground_subject(r)]
+        organic_rows = [r for r in organic_rows if _ground_subject(r)]
         hits = hits_for(who)
-        other_mode = bool(hits)
     holes = [r for r in rows if not r['higher_unit_id'] and (r['subject_unit_id'] == who or who.lower() in r['subject_name'].lower()) and status(r, date, time)[0] != 'no']
     fallback_hits = [] if hits else organic_hits_for(who)   # organic fallback: only where no non-organic relation covers the date
     if not hits and not fallback_hits:

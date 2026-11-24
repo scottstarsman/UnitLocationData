@@ -2,6 +2,26 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Public v1.0.0-rc1 packaging (branch `release-packaging`, from main `d5b9701a`)
+
+Scott approved RP1–RP18 (24 November 2026) with a single CC BY-SA 4.0 licence for the whole repository (data, documentation, scripts and the web viewer), `data_version` 1.0.0-rc1 (`schema_version` stays 1.0.0), and the Drive folder ids moved out of the public `docs/HANDOFF.md`.
+
+- **Licence:** one CC BY-SA 4.0 notice in the root `LICENSE`. `LICENSE-CODE` and `LICENSE-DATA` were removed. Creative Commons recommends against CC licences for software; Scott chose a single licence for simplicity. README, `CITATION.cff`, `docs/sources.md`, `docs/reuse_and_attribution.md` and the WebUI notices were updated to match.
+- **HANDOFF:** Drive folder ids (the five ids formerly in the locations table, plus the source-notes folder id in standing rule 24) moved to `docs/HANDOFF_private.md` (gitignored; a copy is at `/workspace/airnaval/HANDOFF_private.md`). `HANDOFF.md` keeps a pointer. The historical changelog mention of the source-notes id was redacted to the same pointer.
+- **README / citation:** `WorldWar2/README.md` rewritten for a public audience; root `README.md` shortened to match; `CITATION.cff` set to version 1.0.0-rc1, date-released 2026-11-24.
+- Earlier commits on this branch folded `build/other_domains/` into unified `build/` files with a `domain` column, added `build/manifest.json`, and froze `strength_json` vehicle keys.
+
+## 24 November 2026 — Frozen `strength_json` vehicle keys (branch `release-packaging`, from main `d5b9701a`)
+
+Task 4 closed the `vehicles` object in `schema/json/strength_json.schema.json` (`additionalProperties: false`) to a snake_case list: `tanks`, `medium_tanks`, `assault_guns`, `tank_destroyers`, `armored_cars`, `half_tracks`, plus the typed keys `panzer_iv`, `panther` and `tanks_and_assault_guns` that current claims need and that cannot be folded without losing information. Authorized templates stay on `authorized_strength_json` (`counts` / `structure`); no authorized figures were copied onto claims, and Panzer Lehr's combined 237 was not split. The five claims that already used `tanks` (C0003, C0004, C0057, C0090, C0212) needed no rename.
+
+Remapped and annotated in the claim `notes` (old value, new value, reason); counts are unchanged:
+
+- C0004 (21st Panzer, 6 June): old value `"assault guns"`, new value `assault_guns`.
+- C0038 (Panzer Lehr, 6 June): old value `"tanks and assault guns (combined)"` and `"half-tracks"`, new value `tanks_and_assault_guns` and `half_tracks`.
+- C0158 (12th SS Panzer, 24 June) and C0173 (Panzer Lehr, 26 June): old value `"Panzer IV"` and `"Panther"`, new value `panzer_iv` and `panther`.
+- C0184 (21st Panzer, 28 June): old value `"Panzer IV"`, new value `panzer_iv`.
+
 ## 24 November 2026 — British infantry and armoured War Establishment templates (branch `british-toe`, from main `f57fc630`)
 
 Scott chose to start the British TO&E follow-up from the free sources already in hand (24 November 2026). No official British Personnel Staff Table or verified Joslen page was available; figures are taken only from the sourced pages, disagreements are recorded rather than silently preferred, and unsourced keys (including British armoured personnel) are left blank. No claim or command-relation row was changed.
@@ -1063,7 +1083,7 @@ Scott decided (14 November 2026) that `GER-KG-MEYER` and `GER-KG-002PZ`, and onl
 - **Mechanism (data-driven, matches the table conventions).** New table `data/who_controls_overrides.csv` (columns `relation_id`, `effect`, `decided_by`, `decided_on`, `old_value`, `new_value`, `reason`) with two rows, effect `defer_to_organic_parent` (new vocabulary `who_controls_override_effect`); registered in `schema/relations.schema.json` as `command_relation_overrides` (primary key `relation_id`, foreign key to `command_relations`); `scripts/command_relations.py` loads it; `scripts/validate.py` checks the header and values, sorted and unique rows, that each relation is preferred and non-organic and that its subject has a preferred organic relation; `scripts/build.py` copies it to `build/who_controls_overrides.csv`; `scripts/who_controls.py` skips a listed relation when it answers for the relation's subject (so any other non-organic relation that covers the date still wins) and prints the note. Chosen over a new column on `command_relations.csv` because it changes no existing table, header or derived file, keeps the decision with its old value, new value and reason in one place, and cannot be applied by accident to other rows.
 - **Kept as data.** `CR0017` and `CR0026` are unchanged rows in `data/command_relations.csv` and `build/command_relations.csv`; only their `note` gained a `Review:` annotation (old value, new value, reason). The 90-day rule of scenarios 260 and 261 still reads the reserve relation as before; the organic relations `CR0027` (last listed 6 June 1944) and `CR0016` (27 June 1944) follow the same 90-day cutoff, so each answer now ends 90 days after its listing.
 - **Checks.** Scenario 268; the Kampfgruppe Meyer expectation of scenario 266 (reserve line kept, empty chain) is replaced, because it is the case Scott decided otherwise (no other expectation changed). Roadmap 382.
-- **HANDOFF rule 24 added:** private source reading notes are stored only in the Drive folder `WWII Unit Locations/source notes` (id `1PIim4rMY2dEILwr-_XTC5jZzeGhrS5ee`), one file per source named `<source>_notes.md` in the uppercase canonical form, never committed.
+- **HANDOFF rule 24 added:** private source reading notes are stored only in the Drive folder `WWII Unit Locations/source notes` (folder id later moved to `docs/HANDOFF_private.md`), one file per source named `<source>_notes.md` in the uppercase canonical form, never committed.
 
 ## 14 November 2026 — End of CR1282, US XXI Corps under the French First Army (branch `cr1282-end`, from `main` `69fdf0e8`)
 

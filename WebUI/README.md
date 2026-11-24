@@ -61,7 +61,7 @@ The app requests a detailed vector style/tiles from **OpenFreeMap**, with OpenMa
 
 The bundled `public/geography/europe.geojson` provides an offline outline fallback. It contains 28 country features selected from Natural Earth's public-domain 1:50m country polygons; see its adjacent source note. No historical boundaries or detailed offline road network are included. If only some online tiles fail after the style loads, the app flags that condition; the detail layers may be incomplete.
 
-Application code follows the repository's MIT code license. Dataset exports and derived data remain **CC BY-SA 4.0**, with the dataset credit and source evidence retained. Coordinate attribution includes OpenStreetMap contributors and the recorded Wikipedia/Wikidata sources. See the repository's `WorldWar2/LICENSE-DATA`, `LICENSE-CODE`, `CITATION.cff` and `docs/reuse_and_attribution.md` for its attribution instructions. Source-specific licensing is available in `data/references.csv` and in the generated package.
+The web viewer, like the rest of the repository, is licensed under **CC BY-SA 4.0** (root `LICENSE`). Dataset credit and source evidence must be retained. Coordinate attribution includes OpenStreetMap contributors and the recorded Wikipedia/Wikidata sources. See `CITATION.cff` and `WorldWar2/docs/reuse_and_attribution.md` for attribution instructions. Source-specific licensing is available in `data/references.csv` and in the generated package.
 
 ## Verification
 

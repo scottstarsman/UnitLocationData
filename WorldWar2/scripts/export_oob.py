@@ -146,7 +146,7 @@ class Context:
         def load(rel):
             p = os.path.join(common.BUILD_DIR, rel)
             return common.read_dicts(p)[1] if os.path.isfile(p) else []
-        nonorg = load('command_relations.csv') + load(os.path.join('other_domains', 'command_relations.csv'))
+        nonorg = load('command_relations.csv')
         organic = load('organic_relations.csv')
         ov_rows = load('who_controls_overrides.csv')
         overrides = {o['relation_id']: o for o in ov_rows}
@@ -154,7 +154,7 @@ class Context:
         _h, claims = common.load_all_claims()
         people = commandersmod.load_people()[1] or []
         tenures = commandersmod.load_tenures()[1] or []
-        symbols = load('unit_symbols.csv') + load(os.path.join('other_domains', 'unit_symbols.csv'))
+        symbols = load('unit_symbols.csv')
         resolver = allegiance.Resolver.load()
         pairs = set()
         ou = load('operation_units.csv')

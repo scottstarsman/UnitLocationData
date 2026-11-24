@@ -133,7 +133,7 @@ def source_claim_ids(rel, rel_obj, claim_info):
     return sorted(set(ids), key=lambda c: (claim_info[c]['date'], c))
 
 
-DERIVED_HEADER = ['relation_id', 'subject_unit_id', 'subject_name', 'higher_unit_id', 'higher_name', 'relationship', 'valid_from', 'valid_from_latest',
+DERIVED_HEADER = ['relation_id', 'subject_unit_id', 'subject_name', 'domain', 'higher_unit_id', 'higher_name', 'relationship', 'valid_from', 'valid_from_latest',
                   'valid_from_time', 'valid_from_basis', 'valid_to', 'valid_to_earliest', 'valid_to_time', 'valid_to_basis', 'support', 'ordered_date',
                   'source_claim_ids', 'note', 'end_unknown', 'change_undated', 'last_listed_date']
 
@@ -145,8 +145,7 @@ def derived_rows(rel_obj, units, claim_rows, subjects=None, organic=False):
     last_listed_date: the date of the latest preferred claim that lists the relation (the last observation); for an end inferred from the next claim it
     equals valid_to_earliest, for an end open at the last claim it is the last date the evidence reaches. Derived here; not a column of the master table.
     `units` must hold every unit (all domains) so a higher unit of another domain still gets its name; `subjects`, when given, is the set of subject
-    unit ids to include (build.py passes the ground units for the main file and the air and naval units for build/other_domains/command_relations.csv;
-    air-naval pilot, 13 November 2026: a relation whose subject was an air or naval unit used to crash the build with a KeyError).
+    unit ids to include (build.py now writes every domain into one command_relations.csv; subjects=None means all).
     organic=True writes the opposite selection, for build/organic_relations.csv: only the preferred `organic` relations (same columns, same derivation of
     last_listed_date). who_controls.py reads that file for the organic fallback only (14 November 2026); the main file keeps excluding `organic`."""
     claim_info = {r['claim_id']: r for r in claim_rows}
@@ -160,10 +159,10 @@ def derived_rows(rel_obj, units, claim_rows, subjects=None, organic=False):
         su = units[r['subject_unit_id']]
         ids = source_claim_ids(r, rel_obj, claim_info)
         sup = {'narrative': 'documented', 'order': 'documented', 'assignment_table': 'table'}.get(r['date_basis'], 'inferred')
-        out.append([r['relation_id'], r['subject_unit_id'], su['unit_name'], r['higher_unit_id'],
+        out.append([r['relation_id'], r['subject_unit_id'], su['unit_name'], common.unit_domain(su), r['higher_unit_id'],
                     common.display_name(hu['unit_name'], hu['nationality']) if hu else '', r['relationship'], r['valid_from'], r['valid_from_latest'],
                     r['valid_from_time'], r['valid_from_basis'], r['valid_to'], r['valid_to_earliest'], r['valid_to_time'], r['valid_to_basis'], sup,
                     r['ordered_date'], ' '.join(ids), r['note'], r['end_unknown'], r['change_undated'],
                     max((claim_info[c]['date'] for c in ids), default='')])
-    out.sort(key=lambda x: (x[1], x[6], x[3], x[5], x[0]))
+    out.sort(key=lambda x: (x[1], x[7], x[4], x[6], x[0]))
     return out

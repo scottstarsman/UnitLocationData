@@ -1897,8 +1897,8 @@ def main():
                 err('data/units.csv', 'unit_name %r is used by both %s and %s (names must be unique within a nationality)' % (u['unit_name'], seen_names[key], uid))
             seen_names[key] = uid
             where = 'data/units.csv unit %s' % uid
-            if u.get('domain', '') not in ('', 'ground', 'air', 'naval'):
-                err(where, 'domain %r must be blank (ground), ground, air or naval' % u['domain'])
+            if u.get('domain', '') not in ('ground', 'air', 'naval'):
+                err(where, 'domain %r must be ground, air or naval (blank is no longer allowed; Task 4 / RP3)' % u['domain'])
             check_naval_unit_columns(where, uid, u, classes)
             nat = nats.get(u['nationality'])
             if nat and uid.split('-')[0] != nat['code']:

@@ -164,7 +164,7 @@ def unit_domain(u):
 
 
 def non_ground_unit_ids():
-    """unit_ids whose domain is air or naval (kept out of the main build outputs)."""
+    """unit_ids whose domain is air or naval (included in the unified build outputs, excluded from the who_controls grid)."""
     return {u['unit_id'] for u in read_dicts(UNITS_CSV)[1] if unit_domain(u) != 'ground'}
 
 
@@ -174,12 +174,12 @@ def unit_scope(u):
 
 
 def other_output_unit_ids():
-    """unit_ids kept out of the main build outputs and written to build/other_domains/ instead: units whose domain is air or naval, and units marked
-    out_of_scope in data/units.csv (standing rule 22: recorded, but outside the main outputs and the who_controls grid)."""
+    """unit_ids that are not in-scope ground: domain air or naval, or scope out_of_scope (standing rule 22).
+    The unified build includes them in the public files, with domain and scope columns; the who_controls grid still defaults to in-scope ground."""
     return {u['unit_id'] for u in read_dicts(UNITS_CSV)[1] if unit_domain(u) != 'ground' or unit_scope(u) == 'out_of_scope'}
 
 
-# unit columns that the main units outputs (build/units.csv, units.json) leave out; build/other_domains/units.csv lists them
+# unit columns that used to be omitted from the main units outputs; they are now on build/units.csv for every unit
 OTHER_ONLY_UNIT_COLUMNS = ['domain', 'scope', 'ship_type', 'hull_number', 'ship_class_id']
 
 

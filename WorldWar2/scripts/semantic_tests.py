@@ -2064,7 +2064,7 @@ def scenario_95_coverage_report():
     expect(s + ': the weights sum to 1', round(sum(cv.WEIGHTS.values()), 6), 1.0)
     import csv as _csv
     b = list(_csv.DictReader(open(os.path.join(common.ROOT, 'build', 'review_queue.csv'), newline='', encoding='utf-8')))
-    expect(s + ': build/review_queue.csv ranks every unit with claims once', (len(b), len({r['unit_id'] for r in b}), b[0]['rank']), (len({x['unit_id'] for x in common.load_all_claims()[1]} - common.non_ground_unit_ids()), len(b), '1'))  # ground units only (domain, 4 November 2026)
+    expect(s + ': build/review_queue.csv ranks every unit with claims once', (len(b), len({r['unit_id'] for r in b}), b[0]['rank']), (len({x['unit_id'] for x in common.load_all_claims()[1]}), len(b), '1'))  # all domains (Task 4)
 
 
 def scenario_96_nara_t315_r940():
@@ -2773,16 +2773,19 @@ def scenario_171_fms_b820_german():
     expect(s + ': B-240 row kept', (claims['C8214']['place_id'], claims['C8214']['claim_status']), ('PL0296', 'preferred'))
 
 def scenario_172_unit_domain():
-    """Unit domain: air/naval units (II Fliegerkorps, B-509) are kept out of the main outputs and written to build/other_domains/."""
+    """Unit domain: air/naval units (II Fliegerkorps, B-509) appear in the unified build/ outputs with domain=air or naval (Task 4)."""
     s = 'scenario 172'
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
     expect(s + ': domain', (common.unit_domain(units['GER-FLK-002C']), common.unit_domain(units['GER-FJ-005D'])), ('air', 'ground'))
-    main = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
-    other = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'other_domains', 'claims.csv'))[1]}
-    # C8332/C8333 added with B-283 (R845); the air-naval pilot (scenarios 244-247) added C9405-C9436 to the same file
-    expect(s + ': split', ('C8284' in main, [c for c in sorted(other, key=lambda x: int(x[1:])) if int(c[1:]) < 9000]), (False, ['C8284', 'C8285', 'C8332', 'C8333']))
+    main = {r['claim_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
+    # C8332/C8333 added with B-283 (R845); the air-naval pilot (scenarios 244-247) added C9405-C9436
+    early_air = ['C8284', 'C8285', 'C8332', 'C8333']
+    expect(s + ': early air claims are in all_claims.csv with domain=air',
+           ([c in main for c in early_air], [main[c]['domain'] for c in early_air]),
+           ([True] * 4, ['air'] * 4))
     bu = common.read_dicts(os.path.join(common.BUILD_DIR, 'units.csv'))
-    expect(s + ': main units unchanged', ('domain' in bu[0], any(u['unit_id'] == 'GER-FLK-002C' for u in bu[1])), (False, False))
+    expect(s + ': unified units.csv has domain and includes II Fliegerkorps',
+           ('domain' in bu[0], any(u['unit_id'] == 'GER-FLK-002C' and u['domain'] == 'air' for u in bu[1])), (True, True))
 
 def scenario_173_fms_b023_german():
     """FMS B-023 German original (Heilmann, 5th Parachute Division, Ardennes): C8286-C8309; C7137 raised to 0.7, other corroborations not raised."""
@@ -3980,7 +3983,7 @@ def scenario_243_wieringermeer_gewest11():
 
 
 def scenario_244_air_naval_pilot_luftwaffe():
-    """Air-naval pilot (branch air-naval-pilot): Luftflotte 3, II Jagdkorps and JG 26 rows are air-domain, kept out of the main outputs; the relations among them build in other_domains."""
+    """Air-naval pilot (branch air-naval-pilot): Luftflotte 3, II Jagdkorps and JG 26 rows are air-domain and appear in the unified build/ outputs with domain=air."""
     s = 'scenario 244'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     units = {u['unit_id']: u for u in common.read_dicts(common.UNITS_CSV)[1]}
@@ -3988,13 +3991,14 @@ def scenario_244_air_naval_pilot_luftwaffe():
     expect(s + ': II Jagdkorps rows', [(claims[c]['unit_id'], claims[c]['date'], claims[c]['place_id'], claims[c]['confidence']) for c in ('C9406', 'C9407', 'C9408', 'C9409')],
            [('GER-JGK-002C', '1943-09-15', 'PL4160', '0.5'), ('GER-JGK-002C', '1944-07-01', 'PL4160', '0.3'), ('GER-JGK-002C', '1944-08-19', 'PL4160', '0.5'), ('GER-JGK-002C', '1944-09-10', 'PL4161', '0.5')])
     expect(s + ': III./JG 26 on two airfields on 7 June 1944 is a claim-key exception', ((claims['C9412']['unit_id'], claims['C9412']['date'], claims['C9412']['event_type']) == (claims['C9413']['unit_id'], claims['C9413']['date'], claims['C9413']['event_type']), claims['C9412']['place_id'], claims['C9413']['place_id']), (True, 'PL4482', 'PL4164'))  # chunk 7c: PL4163 -> PL4482 (L10)
-    main = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
-    other = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'other_domains', 'claims.csv'))[1]}
-    expect(s + ': split', (sorted(c for c in ('C9405', 'C9406', 'C9414', 'C9415') if c in main), sorted(c for c in ('C9405', 'C9406', 'C9414', 'C9415') if c in other)), ([], ['C9405', 'C9406', 'C9414', 'C9415']))  # chunk 7c: C9410 retired (MSN0098)
-    rels = {r['relation_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'other_domains', 'command_relations.csv'))[1]}
-    expect(s + ': other-domain relations keep the subject and higher unit names (the build crashed on an air subject before the fix)',
-           (rels['CR1292']['subject_name'], rels['CR1292']['higher_name'], rels['CR1293']['relationship']),
-           (units['GER-JGK-002C']['unit_name'], 'German ' + units['GER-LFL-003A']['unit_name'], 'unspecified_subordination'))
+    main = {r['claim_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
+    expect(s + ': air claims are in all_claims.csv with domain=air',
+           (sorted(c for c in ('C9405', 'C9406', 'C9414', 'C9415') if c in main), [main[c]['domain'] for c in ('C9405', 'C9406', 'C9414', 'C9415')]),
+           (['C9405', 'C9406', 'C9414', 'C9415'], ['air'] * 4))  # chunk 7c: C9410 retired (MSN0098)
+    rels = {r['relation_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'command_relations.csv'))[1]}
+    expect(s + ': air-domain relations keep the subject and higher unit names and carry domain=air',
+           (rels['CR1292']['domain'], rels['CR1292']['subject_name'], rels['CR1292']['higher_name'], rels['CR1293']['relationship']),
+           ('air', units['GER-JGK-002C']['unit_name'], 'German ' + units['GER-LFL-003A']['unit_name'], 'unspecified_subordination'))
     expect(s + ': organic Gruppe relations are not derived output', [r for r in ('CR1294', 'CR1295', 'CR1297') if r in rels], [])
 
 def scenario_245_air_naval_pilot_usaaf():
@@ -4030,7 +4034,10 @@ def scenario_247_air_naval_pilot_ground_by_function():
     main = {r['claim_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
     expect(s + ': C9437 and C9438 in the main outputs', ('C9437' in main, 'C9438' in main), (True, True))
     mrel = {r['relation_id'] for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'command_relations.csv'))[1]}
-    expect(s + ': CR1305 in the main relations and no air or naval relation there', ('CR1305' in mrel, sorted(r for r in mrel if r in ('CR1292', 'CR1293', 'CR1298', 'CR1301', 'CR1303', 'CR1304'))), (True, []))
+    rels = {r['relation_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'command_relations.csv'))[1]}
+    expect(s + ': CR1305 is in the unified relations as ground; the air and naval pilot relations are there too, with their own domain',
+           (rels['CR1305']['domain'], {r: rels[r]['domain'] for r in ('CR1292', 'CR1293', 'CR1298', 'CR1301', 'CR1303', 'CR1304') if r in rels}),
+           ('ground', {'CR1292': 'air', 'CR1293': 'air', 'CR1298': 'air', 'CR1301': 'naval', 'CR1303': 'naval', 'CR1304': 'naval'}))
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     expect(s + ': Crisbecq battery row', (claims['C9437']['place_id'], claims['C9437']['confidence'], claims['C9437']['event_type']), ('PL4176', '0.5', 'defense'))
 
@@ -4045,7 +4052,7 @@ def _vmsgs(fn, *args, **kw):
 
 
 def scenario_248_scope_marker():
-    """Scope marker (standing rule 22): a unit with scope out_of_scope, its claims and relations go to build/other_domains/, not the main outputs."""
+    """Scope marker (standing rule 22): a unit with scope out_of_scope stays in the unified build/ files, tagged with scope, and is not written to a separate folder."""
     s = 'scenario 248'
     import tempfile
     import build
@@ -4068,16 +4075,16 @@ def scenario_248_scope_marker():
     cl = lambda out, k: [r for r in csv.DictReader(io.StringIO(out[k].decode('utf-8')))]  # noqa: E731
     n_unit = len([r for r in cl(base, 'all_claims.csv') if r['unit_id'] == uid])
     expect(s + ': the unit has claims in the main output before the marker', n_unit > 0, True)
-    expect(s + ': marked unit leaves all_claims.csv', len([r for r in cl(moved, 'all_claims.csv') if r['unit_id'] == uid]), 0)
-    expect(s + ': marked unit claims land in other_domains/claims.csv', len([r for r in cl(moved, 'other_domains/claims.csv') if r['unit_id'] == uid]), n_unit)
-    expect(s + ': marked unit is in other_domains/units.csv with its scope', [(r['unit_id'], r['scope']) for r in cl(moved, 'other_domains/units.csv') if r['unit_id'] == uid], [(uid, 'out_of_scope')])
-    expect(s + ': marked unit leaves the main units.csv, coverage.csv and command_relations.csv',
+    expect(s + ': marked unit stays in all_claims.csv with the same number of claims', len([r for r in cl(moved, 'all_claims.csv') if r['unit_id'] == uid]), n_unit)
+    expect(s + ': no other_domains/ output is written', [k for k in moved if k.startswith('other_domains/')], [])
+    expect(s + ': marked unit is in units.csv with scope=out_of_scope', [(r['unit_id'], r['scope']) for r in cl(moved, 'units.csv') if r['unit_id'] == uid], [(uid, 'out_of_scope')])
+    expect(s + ': marked unit stays in units.csv, coverage.csv and command_relations.csv',
            (uid in [r['unit_id'] for r in cl(moved, 'units.csv')], uid in [r['unit_id'] for r in cl(moved, 'coverage.csv')],
-            uid in [r['subject_unit_id'] for r in cl(moved, 'command_relations.csv')]), (False, False, False))
+            uid in [r['subject_unit_id'] for r in cl(moved, 'command_relations.csv')]), (True, True, True))
     rel_base = len([r for r in cl(base, 'command_relations.csv') if r['subject_unit_id'] == uid])
-    expect(s + ': its relations move to other_domains/command_relations.csv', len([r for r in cl(moved, 'other_domains/command_relations.csv') if r['subject_unit_id'] == uid]), rel_base)
-    expect(s + ': the main units.csv header has none of the five other-output columns', [c for c in common.OTHER_ONLY_UNIT_COLUMNS if c in cl(base, 'units.csv')[0]], [])
-    expect(s + ': no pilot unit is marked out_of_scope (data unchanged by the schema pass)', [u for u in common.read_dicts(common.UNITS_CSV)[1] if u['scope']], [])
+    expect(s + ': its relations stay in command_relations.csv', len([r for r in cl(moved, 'command_relations.csv') if r['subject_unit_id'] == uid]), rel_base)
+    expect(s + ': the unified units.csv header includes domain, scope and the ship columns', [c for c in common.OTHER_ONLY_UNIT_COLUMNS if c in cl(base, 'units.csv')[0]], list(common.OTHER_ONLY_UNIT_COLUMNS))
+    expect(s + ': no live unit is marked out_of_scope (data unchanged by the fold)', [u for u in common.read_dicts(common.UNITS_CSV)[1] if u['scope']], [])
 
 
 def scenario_249_naval_unit_columns():
@@ -4206,12 +4213,12 @@ def scenario_253_sea_position_base_and_event_types():
 
 
 def scenario_254_claim_ids_other_domains():
-    """check_claim_ids.py reads build/other_domains/claims.csv as well as all_claims.csv (an air/naval/out_of_scope id cannot be reused unseen)."""
+    """check_claim_ids.py counts every claim in the unified all_claims.csv (and, at an older base revision, the former other_domains/claims.csv)."""
     s = 'scenario 254'
     import subprocess
     p = subprocess.run([sys.executable, os.path.join(common.ROOT, 'scripts', 'check_claim_ids.py'), '--base', 'HEAD'], capture_output=True, text=True, cwd=common.ROOT)
     total = len(common.load_all_claims()[1])
-    expect_in(s + ': the script counts the other-domain claims in "now"', p.stdout, 'now: %d;' % total)
+    expect_in(s + ': the script counts every claim in "now"', p.stdout, 'now: %d;' % total)
     expect_in(s + ': and passes', p.stdout, 'OK: no id was reused or dropped')
 
 def scenario_255_air_echelon_ladder():
@@ -6306,7 +6313,7 @@ def scenario_308_missions_table():
     # build/operation_units.csv (participation). They still never reach claims,
     # command relations, the who_controls grid, or the flagship OOB snapshots.
     allowed = {
-        'other_domains/missions.csv', '../data/references.csv',
+        'missions.csv', '../data/references.csv',
         'operations.csv', 'operations.geojson', 'operation_units.csv',
     }
     changed = sorted(k for k in base if base[k] != with_m.get(k) and k not in allowed)
@@ -6315,11 +6322,11 @@ def scenario_308_missions_table():
            all(base[k] != with_m.get(k) for k in ('operations.csv', 'operations.geojson', 'operation_units.csv')), True)
     expect(s + ': a mission does not change any flagship OOB snapshot',
            sorted(k for k in base if k.startswith('oob/') and base[k] != with_m.get(k)), [])
-    expect(s + ': the synthetic mission is in missions.csv', b'MSN9001' in with_m['other_domains/missions.csv'], True)
-    built = common.read_dicts(os.path.join(common.BUILD_DIR, 'other_domains', 'missions.csv'))[1]
+    expect(s + ': the synthetic mission is in missions.csv', b'MSN9001' in with_m['missions.csv'], True)
+    built = common.read_dicts(os.path.join(common.BUILD_DIR, 'missions.csv'))[1]
     ids = {m['mission_id'] for m in built}
     leaks = []
-    for k in ('all_claims.csv', 'claims.geojson', 'other_domains/claims.csv', 'command_relations.csv', 'organic_relations.csv', 'other_domains/command_relations.csv', 'claim_references.csv'):
+    for k in ('all_claims.csv', 'claims.geojson', 'command_relations.csv', 'organic_relations.csv', 'claim_references.csv'):
         t = open(os.path.join(common.BUILD_DIR, k), encoding='utf-8').read()
         leaks += [(k, i) for i in ids if i in t]
     expect(s + ': no built mission id appears in the claims, relations or claim references (the grid reads only the relations)', leaks, [])
@@ -7746,12 +7753,10 @@ def scenario_340_commanders_table():
                (feat is not None, bool(feat) and feat['properties'].get('commander_person_id', '').count(';') == 1
                 and bool(feat['properties'].get('commander'))),
                (True, True))
-    od_path = os.path.join(common.ROOT, 'build', 'other_domains', 'claims.csv')
-    if os.path.isfile(od_path):
-        od = {r['claim_id']: r for r in common.read_dicts(od_path)[1]}
-        expect(s + ': C9468 in other_domains/claims.csv has three commander_person_id values (Jones, Kirk, Bradley)',
-               (od.get('C9468', {}).get('commander_person_id', '').count(';') == 2),
-               True)
+    allc = {r['claim_id']: r for r in common.read_dicts(os.path.join(common.BUILD_DIR, 'all_claims.csv'))[1]}
+    expect(s + ': C9468 in all_claims.csv has three commander_person_id values (Jones, Kirk, Bradley)',
+           (allc.get('C9468', {}).get('commander_person_id', '').count(';') == 2),
+           True)
     # references.csv commanders_count
     refs = list(common.read_dicts(os.path.join(common.ROOT, 'data', 'references.csv'))[1])
     expect(s + ': references.csv has commanders_count and at least one positive count',

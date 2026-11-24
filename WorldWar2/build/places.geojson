@@ -658,7 +658,7 @@
     "precision_km": 1,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -1138,7 +1138,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 12
+    "claims_count": 14
    }
   },
   {
@@ -5318,7 +5318,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Ile-de-France",
-    "claims_count": 8
+    "claims_count": 9
    }
   },
   {
@@ -6818,7 +6818,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Lower Normandy",
-    "claims_count": 11
+    "claims_count": 12
    }
   },
   {
@@ -13338,7 +13338,7 @@
     "precision_km": 5,
     "country": "FR",
     "region": "Upper Normandy",
-    "claims_count": 4
+    "claims_count": 5
    }
   },
   {
@@ -97519,6 +97519,46 @@
     "country": "GB",
     "region": "Scotland",
     "claims_count": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.8883,
+     48.9603
+    ]
+   },
+   "properties": {
+    "place_id": "PL4895",
+    "name": "Meaux, Seine-et-Marne",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Île-de-France",
+    "claims_count": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.4825,
+     49.1286
+    ]
+   },
+   "properties": {
+    "place_id": "PL4896",
+    "name": "Baron-sur-Odon, Calvados",
+    "alt_names": null,
+    "kind": "point",
+    "precision_km": 3,
+    "country": "FR",
+    "region": "Normandy",
+    "claims_count": 1
    }
   }
  ]

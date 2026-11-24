@@ -2,6 +2,34 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 24 November 2026 — Annotation labels and Cobra operation exceptions (branch `rc1-data-fixes`)
+
+The validator treats a sentence that starts `Word:` in claim `notes` as a `note_label`. The RV16 and RV11 annotations originally used `Branch:` and `Operation:`, which are not in the vocabulary. They are rewritten to the existing `Review:` label (`Review: branch old value...` and `Review: operation old value...`), including the 19 unit notes. The Hyperwar URL for each added Blumenson chapter was appended to the claim `source` column so the new `reference_ids` stay cited (464 validator warnings, unchanged). Two `data/operation_exceptions.csv` rows for `C0223` and `C0289` (allowed those claims to stay on `OP-COBRA` one day after the end date) were removed; old value the two exception rows, new value omitted, reason: those claims were retagged to `OP-CAMP-NORTHERN-FRANCE`.
+
+## 24 November 2026 — Operation Cobra participation (branch `rc1-data-fixes`, RV11)
+
+Scott approved the rc1 data-fix branch (24 November 2026). Operation Cobra (`OP-COBRA`, 25–31 July 1944) listed only 18 units. Several US divisions with preferred claims in that window were tagged only `OP-CAMP-NORTHERN-FRANCE`. 12th Army Group and Third Army appeared with `first_date` 1 August, after the operation's end.
+
+- **Date window (general logic fix):** `scripts/operation_units.py` now counts a claim or mission toward an operation only when its date falls in that operation's `start_date`..`end_date` (a blank bound is open; an undated row still counts). This applies to every operation, not only Cobra. Rows whose only tagged claims sit outside the window drop out, and `first_date` / `last_date` stay inside the window.
+- **Retagged to `OP-COBRA` (37 preferred claims),** old value `OP-CAMP-NORTHERN-FRANCE`, sourced from Blumenson, *Breakout and Pursuit* (already in the dataset): ch. 12 (`R592`) for the 4th, 9th and 30th Infantry Divisions (the units scheduled to initiate Cobra); ch. 14 (`R395`) for the 8th, 79th, 90th and 83rd Infantry Divisions (VIII Corps pressure force); ch. 16 (`R397`) for the 6th Armored Division from 27 July (reconnoitre 27 July, attack 28 July; the 25 July arrival claim `C0270` was left on the campaign); ch. 15 (`R396`) for the 2nd and 5th Infantry Divisions (V Corps diversion) and the 29th, 35th and 28th Infantry Divisions (XIX Corps during the diversion and the 28 July displacement). In-window claims of units already sourced as Cobra participants (1st Infantry, 2nd/3rd/4th Armored, First Army, VII and VIII Corps) were retagged to match. Each row is annotated old value, new value and reason; the Blumenson chapter was added to `reference_ids` where it was not already present. Claim `confidence` is unchanged.
+- **Moved off Cobra (2 claims):** `C0223` (12th Army Group) and `C0289` (Third Army), 1 August 1944, old value `OP-COBRA`, new value `OP-CAMP-NORTHERN-FRANCE`; reason: the event is the noon activation in Breakout and Pursuit ch. 18 p. 343 (`R398`), after Cobra's 31 July end date. The date-window filter would also have dropped them.
+- **Not retagged (no Blumenson Cobra citation found in the chapters used):** 5th Armored Division (`C0260`, arrived on the Continent 25 July); 12th Army Group and Third Army 25 July map positions (neither was operational until 1 August). British and Canadian formations in the same window stay on Northern France, Spring or Bluecoat. Some German divisions on the Cobra front remain on the campaign tag pending a sourced pass (roadmap 430).
+- **Tests:** scenario 368 (4th, 8th, 9th, 30th, 83rd and 90th Infantry are Cobra participants; 12th Army Group and Third Army are not; in-window dates only).
+
+## 24 November 2026 — Deduplicate commanders on operation participation (branch `rc1-data-fixes`, RV12)
+
+Scott approved the rc1 data-fix branch (24 November 2026). `build/operation_units.csv` listed the same person twice when two preferred tenures overlapped the operation window (18 rows; for example Rudolf Bacherer on `OP-COBRA` / `GER-INF-077D` from `UC0176` and `UC0177`). The 15 August 1944 OOB snapshot repeated the same pair.
+
+- **Exporter:** `scripts/operation_units.py` and the OOB CSV/markdown columns now list each person once and still list every covering `tenure_id`. No tenure row was edited: the five same-person overlaps (Bacherer, Model, Blumentritt, Crasemann, Borghouts) are role overlaps allowed by schema CM5 (`acting_commander` / `temporary_commander` may overlap a still-in-post `commander`; `deputy_commander` is not an exclusive slot).
+- **Tests:** scenario 367 (Bacherer listed once on Cobra with both tenure ids kept; Crerar listed once on the Rhineland with both of his tenures kept; no duplicate person on any participation row).
+
+## 24 November 2026 — US branch spelling Armored (branch `rc1-data-fixes`, from main `817306c9`, RV16)
+
+Scott approved the rc1 data-fix branch (24 November 2026). 19 US units had `branch` `Armoured` (the British vocabulary spelling) while their unit names use “Armored”.
+
+- **Vocabulary:** `Armored` added to `branch` for US armored formations. `Armoured` remains the spelling for British, Commonwealth and other non-US armoured and panzer formations.
+- **Units and claims:** all 19 US units (`US-ARM-002D`–`US-ARM-014D`, `US-ARM-016D`, `US-ARM-020D`, `US-CCA-002D`, `US-CCR-004D`, `US-TDB-001B`, `US-TF-BUTLER`) and their 525 claim rows: `branch` old value `Armoured`, new value `Armored`; reason: the US Army spelling, matching the unit name (rc1 review RV16). Annotated in each `unit_note` and claim `notes`. Unit ids are unchanged. No UK, Canadian or Polish row was changed.
+
 ## 24 November 2026 — Derived commander_on_date columns (branch `commander-on-date`, from main `d2ceff6b`)
 
 Scott approved part 1 of the rc1 review item RV10 (24 November 2026): a derived commander on the claim date in the build claims export. No `data/claims/` row was edited; the source-stated `commander` field is unchanged. Part 2 (research for units with no tenure) was deferred (roadmap 428). Tightening inferred tenure starts is roadmap 429.

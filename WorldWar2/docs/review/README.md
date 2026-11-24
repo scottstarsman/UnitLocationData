@@ -95,7 +95,7 @@ Claims by nationality: Germany 4786, US 4059, UK 2577, Canada 716, France 356, P
 
 Claims by echelon: division 6406, corps 1750, air_squadron 1282, army 679, air_group 560, naval_unit 520, naval_division 322, air_flight 301, brigade 291, air_wing 147, army_group 132, regiment/battle_group 126, naval_squadron 44, battalion 43, company 42, other 41, task_group 32, air_division 28, air_corps 12, air_force 11, fleet 1.
 
-Claims by branch: Army 6514, Air Force 1924, Armoured 1822, Navy 971, Luftwaffe 933, Waffen-SS 368, Airborne 238.
+Claims by branch: Army 6514, Air Force 1924, Armoured 1297, Navy 971, Luftwaffe 933, Armored 525, Waffen-SS 368, Airborne 238.
 
 Claims by event type: other 6171, hq_observation 1816, relocation 903, attack 856, defense 732, hq_move 446, capture 390, arrival 290, command_change 220, subordinate_assignment 209, regroup 192, withdrawal 172, counterattack 84, landing 73, surrender 71, activation 66, destruction 46, redesignation 31, commissioning 1, sortie 1.
 

@@ -111,8 +111,8 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
 | umbrella | 9 | 7 | 709 |
-| campaign | 9 | 9 | 8252 |
-| operation | 33 | 33 | 2877 |
+| campaign | 9 | 9 | 8217 |
+| operation | 33 | 33 | 2912 |
 | battle | 20 | 20 | 609 |
 | phase | 4 | 4 | 323 |
 | **All** | **75** | **73** | **12770** |

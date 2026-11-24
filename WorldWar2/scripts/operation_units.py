@@ -2,10 +2,15 @@
 """Derived unit participation in operations (Task 2, OB7, OB8).
 
 build/operation_units.csv has one row per (operation_id, unit_id) that has at least one claim or
-mission whose operation_id is this operation or a descendant. Participation is never rolled up
+mission whose operation_id is this operation or a descendant, and whose date falls in that operation's start_date..end_date window (a blank bound is open; an undated claim or mission still counts). Participation is never rolled up
 the command hierarchy. most_specific_op_type records the most specific op_type among the unit's
-tags in this chain so campaign-default tags stay distinguishable from a named battle.
-Standard library only.
+tags in this chain so campaign-default tags stay distinguishable from a named battle. Standard library only.
+
+Commanders: preferred tenures that overlap the operation window are listed.
+commander_tenure_ids keeps every matching tenure; commander_person_ids and
+commander_names list each person once (first tenure in valid_from, tenure_id
+order). Same-person role overlaps (acting then confirmed commander, and similar)
+are allowed by schema CM5 and are not closed automatically.
 """
 import os
 import sys
@@ -38,6 +43,37 @@ def _most_specific(types):
     if not types:
         return ''
     return min(types, key=lambda t: OP_TYPE_RANK.get(t, 99))
+
+
+def _in_window(date, start, end):
+    """True if date is inside [start, end] (inclusive). A blank bound is open; a blank date counts."""
+    if not date:
+        return True
+    if start and date < start:
+        return False
+    if end and date > end:
+        return False
+    return True
+
+
+
+def _unique_people(tenures_and_names):
+    """Keep every tenure id; list each person_id and name once, first seen wins.
+
+    tenures_and_names is a list of (tenure_id, person_id, name).
+    """
+    c_ids, p_ids, names = [], [], []
+    seen = set()
+    for tid, pid, name in tenures_and_names:
+        c_ids.append(tid)
+        if pid in seen:
+            continue
+        if pid:
+            seen.add(pid)
+        p_ids.append(pid)
+        names.append(name)
+    return c_ids, p_ids, names
+
 
 
 def _overlaps(from_s, to_s, start, end):
@@ -102,6 +138,9 @@ def operation_unit_rows(ops, claims, missions, units, people=None, tenures=None,
         pref = is_preferred(c)
         typ = typ_of.get(oid, '')
         for anc in chain_ids[oid]:
+            op_anc = ops.by_id.get(anc) or {}
+            if not _in_window(c.get('date') or '', op_anc.get('start_date') or '', op_anc.get('end_date') or ''):
+                continue
             b = bucket(anc, uid)
             b['rolled'] += 1
             if pref:
@@ -123,6 +162,9 @@ def operation_unit_rows(ops, claims, missions, units, people=None, tenures=None,
             continue
         typ = typ_of.get(oid, '')
         for anc in chain_ids[oid]:
+            op_anc = ops.by_id.get(anc) or {}
+            if not _in_window(m.get('date') or '', op_anc.get('start_date') or '', op_anc.get('end_date') or ''):
+                continue
             b = bucket(anc, uid)
             b['missions_rolled'] += 1
             if m.get('date'):
@@ -144,12 +186,15 @@ def operation_unit_rows(ops, claims, missions, units, people=None, tenures=None,
         note = _side_note(resolver, uid, start, end, side)
         dates = sorted(d for d in b['dates'] if d)
         # commanders whose preferred tenure overlaps the operation window
-        c_ids, p_ids, names = [], [], []
+        covering = []
         for t in sorted(tenures_by_unit.get(uid, []), key=lambda r: (r.get('valid_from') or '', r.get('tenure_id') or '')):
             if _overlaps(t.get('valid_from') or '', t.get('valid_to') or '', start, end):
-                c_ids.append(t['tenure_id'])
-                p_ids.append(t['person_id'])
-                names.append((people.get(t['person_id']) or {}).get('canonical_name') or '')
+                covering.append((
+                    t['tenure_id'],
+                    t['person_id'],
+                    (people.get(t['person_id']) or {}).get('canonical_name') or '',
+                ))
+        c_ids, p_ids, names = _unique_people(covering)
         rows.append([
             oid, uid, u.get('unit_name') or '', domain, u.get('nationality') or '', side_s, note,
             u.get('echelon') or '', u.get('branch') or '', u.get('record_status') or '',

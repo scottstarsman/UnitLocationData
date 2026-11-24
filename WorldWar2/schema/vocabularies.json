@@ -476,14 +476,15 @@
     }
   },
   "relation_end_basis": {
-    "description": "Where valid_to of a command relation comes from: a sourced date (the values of relationship_date_basis), or one of the two derived cases below. A missing sourced end never means indefinitely valid.",
+    "description": "Where valid_to of a command relation comes from: a sourced date (the values of relationship_date_basis), or one of the two derived cases below. A missing sourced end never means indefinitely valid. The value `open` is for TO&E templates and unit_toe assignments (valid_to blank); it is not used on command relations.",
     "values": {
       "order": "A named order or message gives the date.",
       "assignment_table": "A dated assignment table such as CMH ETO-OB. The table date may differ from the day command actually passed.",
       "narrative": "A narrative history or reference work states the date.",
       "inferred": "The date is inferred from other rows; treat as approximate.",
       "inferred_from_next_claim": "No source dates the end: valid_to is the day before the unit's next claim that no longer lists the relation; valid_to_earliest is the last claim date that lists it, so the true end lies between the two.",
-      "open_at_last_claim": "No end is recorded: the unit's latest claim still lists the relation, valid_to is blank."
+      "open_at_last_claim": "No end is recorded: the unit's latest claim still lists the relation, valid_to is blank.",
+      "open": "No end is recorded and valid_to is blank. Used for TO&E templates and unit_toe assignments when no superseding edition or conversion is sourced (Task 3). Not used on command relations."
     }
   },
   "relation_claim_role": {
@@ -733,6 +734,62 @@
       "asserts_start": "The claim dates the start of the tenure (an appointment, 'from' a date, 'took over', or a command_change that names the incoming officer with a start date).",
       "asserts_end": "The claim dates the end of the tenure (killed, died, relieved, wounded and evacuated, or a sourced vacancy).",
       "observed_during": "The claim names the person as in command on the claim date but does not date the start or end of the tenure."
+    }
+  },
+  "formation_type": {
+    "description": "The type of formation a TO&E template describes (data/toe_templates.csv formation_type). This is not a column of units.csv.",
+    "values": {
+      "infantry": "An infantry division or similar infantry formation (including a German infantry division of the 1944 or older type).",
+      "armored": "An armoured or armored division (Allied 1942 heavy or 1943 light tables).",
+      "airborne": "An airborne division.",
+      "volksgrenadier": "A German Volksgrenadier division of the 1944 type.",
+      "panzer": "A German army panzer division.",
+      "panzergrenadier": "A German army panzergrenadier (motorized) division.",
+      "fallschirmjaeger": "A Luftwaffe Fallschirmjäger (air-force parachute) division.",
+      "static_infantry": "A German bodenständige / static infantry division (reserved for a later sourced template).",
+      "mountain": "A mountain or alpine division (reserved).",
+      "reserve": "A reserve or replacement division (reserved).",
+      "luftwaffe_field": "A Luftwaffe Field Division (reserved)."
+    }
+  },
+  "authorized_count_key": {
+    "description": "Keys allowed in authorized_strength_json.counts on a TO&E template. A key is omitted when the official table does not give that figure. No free-text keys.",
+    "values": {
+      "tanks": "Undifferentiated authorized tank total, when the source does not split types.",
+      "medium_tanks": "Authorized medium tanks.",
+      "heavy_tanks": "Authorized heavy tanks.",
+      "assault_guns": "Authorized assault guns (Sturmgeschütz and similar).",
+      "tank_destroyers": "Authorized tank destroyers.",
+      "armored_cars": "Authorized armored cars.",
+      "half_tracks": "Authorized half-tracks.",
+      "artillery_pieces": "Authorized artillery pieces (all calibres the source groups together).",
+      "anti_tank_guns": "Authorized anti-tank guns.",
+      "anti_aircraft_guns": "Authorized anti-aircraft guns."
+    }
+  },
+  "authorized_structure_key": {
+    "description": "Keys allowed in authorized_strength_json.structure on a TO&E template: high-level authorized subordinate counts, not a list of unit ids.",
+    "values": {
+      "infantry_regiments": "Authorized infantry (or grenadier, or parachute rifle) regiments.",
+      "field_artillery_battalions": "Authorized field-artillery battalions.",
+      "tank_battalions": "Authorized tank battalions.",
+      "armored_infantry_battalions": "Authorized armored-infantry battalions.",
+      "combat_commands": "Authorized combat commands in a US armored division (not including a reserve-command headquarters of a few men).",
+      "reconnaissance_squadrons": "Authorized reconnaissance squadrons or equivalent.",
+      "engineer_battalions": "Authorized engineer battalions.",
+      "medical_battalions": "Authorized medical battalions.",
+      "infantry_brigades": "Authorized infantry brigades (British pattern).",
+      "infantry_battalions": "Authorized infantry battalions in the division (for example the nine battalions of a British infantry division).",
+      "panzergrenadier_regiments": "Authorized panzergrenadier or motorized infantry regiments.",
+      "parachute_rifle_regiments": "Authorized parachute rifle regiments."
+    }
+  },
+  "toe_conformance": {
+    "description": "How closely a unit's organization matches the template it is assigned to (data/unit_toe.csv conformance).",
+    "values": {
+      "standard": "The unit was on this table.",
+      "modified": "A sourced local variant of this table, not large enough to merit its own template_id.",
+      "unknown": "The unit is linked to the table but how closely it conformed is not sourced."
     }
   }
 }

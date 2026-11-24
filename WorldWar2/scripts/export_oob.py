@@ -15,7 +15,7 @@ covering relation is listed as an additional parent; there is no task-group
 nesting exception (OB9, OB10). Open intervals stay possible for at most 90
 days after last_listed_date (OB11). Locations are the nearest preferred claim
 (ties prefer on or before the date) and are never inherited from a parent HQ
-(OB13). build.py writes flagship snapshots under build/oob/ on every build
+(OB13). Authorized TO&E columns come from the unit's own unit_toe assignment on the date and are never inherited from a parent (TE6, TE14). build.py writes flagship snapshots under build/oob/ on every build
 (OB14). Standard library only.
 """
 import argparse
@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import allegiance  # noqa: E402
 import common  # noqa: E402
 import commanders as commandersmod  # noqa: E402
+import toe as toemod  # noqa: E402
 import operations  # noqa: E402
 import who_controls  # noqa: E402
 
@@ -53,6 +54,7 @@ CSV_HEADER = [
     'location_claim_id', 'location_date', 'location_offset_days', 'location_in_window',
     'place_id', 'place_name', 'lat', 'lon', 'location_represents', 'activity_status', 'activity_basis',
     'event_type', 'strength_json',
+    'authorized_template_id', 'authorized_template_name', 'authorized_personnel', 'authorized_strength_json',
     'commander_tenure_ids', 'commander_person_ids', 'commander_names', 'commander_roles',
     'sidc', 'standard_identity', 'symbol_side',
 ]
@@ -133,6 +135,10 @@ class Context:
             self.symbols[s['unit_id']].append(s)
         self.resolver = resolver
         self.operation_units = operation_unit_pairs or set()
+        self.templates = {t['template_id']: t for t in (toemod.load_templates()[1] or [])}
+        self.assignments = defaultdict(list)
+        for a in (toemod.load_assignments()[1] or []):
+            self.assignments[a['unit_id']].append(a)
 
     @classmethod
     def from_build_dir(cls):
@@ -293,6 +299,25 @@ def _sidc_on(ctx, uid, date):
     return hit.get('sidc') or '', hit.get('standard_identity') or '', hit.get('side') or ''
 
 
+def _toe_on(ctx, uid, date):
+    """The unit's own covering TO&E assignment on date. Never inherited from a parent."""
+    asg, conflicts = toemod.assignment_on(ctx.assignments, uid, date)
+    if conflicts or not asg:
+        return {
+            'authorized_template_id': '',
+            'authorized_template_name': '',
+            'authorized_personnel': '',
+            'authorized_strength_json': '',
+        }
+    tmpl = ctx.templates.get(asg['template_id']) or {}
+    return {
+        'authorized_template_id': asg.get('template_id') or '',
+        'authorized_template_name': tmpl.get('template_name') or '',
+        'authorized_personnel': toemod.personnel_of(tmpl),
+        'authorized_strength_json': tmpl.get('authorized_strength_json') or '',
+    }
+
+
 def _commanders_on(ctx, uid, date):
     out = []
     for t in ctx.tenures.get(uid, []):
@@ -323,6 +348,7 @@ def _unit_record(ctx, uid, date, time, near_days, parents):
     }
     cdrs = _commanders_on(ctx, uid, date)
     sidc, ident, sym_side = _sidc_on(ctx, uid, date)
+    toe = _toe_on(ctx, uid, date)
     return {
         'unit_id': uid,
         'unit_name': u.get('unit_name') or '',
@@ -342,6 +368,7 @@ def _unit_record(ctx, uid, date, time, near_days, parents):
         'handover': parents['handover'],
         'parent_reason': parents['parent_reason'],
         **loc,
+        **toe,
         'commanders': cdrs,
         'sidc': sidc,
         'standard_identity': ident,
@@ -527,6 +554,8 @@ def _csv_row(r):
         r.get('place_id') or '', r.get('place_name') or '', r.get('lat') or '', r.get('lon') or '',
         r.get('location_represents') or '', r.get('activity_status') or '', r.get('activity_basis') or '',
         r.get('event_type') or '', r.get('strength_json') or '',
+        r.get('authorized_template_id') or '', r.get('authorized_template_name') or '',
+        r.get('authorized_personnel') or '', r.get('authorized_strength_json') or '',
         ';'.join(c['tenure_id'] for c in cdrs),
         ';'.join(c['person_id'] for c in cdrs),
         ';'.join(c['canonical_name'] for c in cdrs),
@@ -569,8 +598,15 @@ def snapshot_markdown(snap, title=None):
             off = node.get('location_offset_days')
             off_s = 'offset %+d days' % off if off not in ('', None) else 'no offset'
             loc = ' At %s (%s).' % (node.get('place_name') or node.get('place_id') or node.get('location_claim_id'), off_s)
-        lines.append('%s- **%s** (`%s`) — %s%s.%s%s' % (
-            pad, node['unit_name'] or node['unit_id'], node['unit_id'], rel_s, add_s, cdr_s, loc))
+        auth = ''
+        if node.get('authorized_personnel') or node.get('authorized_template_name'):
+            who = node.get('authorized_template_name') or node.get('authorized_template_id') or 'TO&E'
+            if node.get('authorized_personnel'):
+                auth = ' Authorized: %s (%s).' % (node['authorized_personnel'], who)
+            else:
+                auth = ' Authorized: %s.' % who
+        lines.append('%s- **%s** (`%s`) — %s%s.%s%s%s' % (
+            pad, node['unit_name'] or node['unit_id'], node['unit_id'], rel_s, add_s, cdr_s, loc, auth))
         for ch in node.get('children') or []:
             walk(ch, depth + 1)
 
@@ -605,6 +641,8 @@ These files are generated by `scripts/export_oob.py` on every `scripts/build.py`
 The primary parent is the `who_controls.py` answer: the lowest-echelon `operational_control` or `attached` holder, otherwise the lowest-echelon `assigned` or `unspecified_subordination` holder, otherwise the organic parent (labelled `organic_fallback`). Other relations that cover the date (including a second `assigned` parent, which is common for D-Day ships that belong to a flotilla and a task group) are listed as additional parents; the task group is not promoted over the flotilla in v1.
 
 A unit's location is its nearest preferred claim to the snapshot date (ties prefer a claim on or before the date). It is never inherited from a parent headquarters.
+
+Authorized strength (`authorized_template_id`, `authorized_template_name`, `authorized_personnel`, `authorized_strength_json`) comes from that unit's own `data/unit_toe.csv` assignment covering the date. It is kept separate from `strength_json` (a sourced actual or estimated figure on a claim) and is never inherited from a parent.
 
 Late-war snapshots (from mid-December 1944) have few air and naval units because most of those relations were last listed in June 1944 and the 90-day reading cutoff has expired. That is a coverage gap in the relations, not a reason to lengthen the window.
 '''

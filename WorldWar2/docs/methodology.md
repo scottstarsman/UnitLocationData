@@ -21,6 +21,13 @@ Rows were built by reading the sources in [sources.md](sources.md), writing one 
 
 Every unit has one `unit_id` and one row in `data/units.csv`. Battle groups (Kampfgruppen) and combat commands are units of their own (`echelon` = `regiment/battle_group`) with a fixed `parent_unit_id` in `data/units.csv` (the organic parent division) and, on each claim, a time-dependent `parent_unit_id` and `command_relationships` (for example attached to Panzer Lehr, with the organic parent division kept in the list). Brigades stay brigades. A battalion that is only an opponent or a component is a placeholder with `echelon` = `battalion` (rank 1, below `regiment/battle_group`); regiments and battle groups share `regiment/battle_group`. Neither carries an echelon letter in the id (vocabulary `echelon_id_letter`, `schema/README.md` "unit_id pattern"), and the validator rejects an id whose final echelon letter contradicts the echelon (review item 6). When all of a division's rows were really about its battle group, the division has no claim file and is a `parent_only` unit so that parent links still resolve. A claim is never duplicated between a division and its battle group.
 
+
+## Authorized TO&E
+
+Authorized tables of organization are recorded separately from claims. `data/toe_templates.csv` holds one official edition per row (nationality, formation type, echelon, edition dates, and a high-level `authorized_strength_json`). `data/unit_toe.csv` assigns a unit to a template for a dated, sourced interval, with the usual confidence tiers and a required `conformance` (`standard`, `modified` or `unknown`). A unit with no assignment has no authorized table recorded, which is valid.
+
+Authorized figures stay on the template. They are never written onto a claim, and `strength_json` on a claim remains a sourced actual or estimated figure (or a qualitative status) for that date. Generated order-of-battle snapshots show the two side by side and never inherit a parent's template. Official tables are preferred (US T/O&E and CMH official history, British War Establishments, German KStN or, where a KStN is not in hand, a contemporary US handbook such as TM-E 30-451, noted as such). Wikipedia is not a source family. A figure the official table does not give is left blank.
+
 ## Placeholder units
 
 `data/units.csv` also holds **placeholder** units: identity records created so that every ground formation of the Western Front (6 June 1944 to 8 May 1945: northwest Europe plus southern France/Dragoon, not Italy) has a stable `unit_id` before anyone researches it. This lets claims, `command_relationships` and `engaged_with` names point at real records, and `build/coverage.csv` / `docs/coverage.md` show what is still to do.

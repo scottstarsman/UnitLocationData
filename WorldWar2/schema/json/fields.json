@@ -27,6 +27,15 @@
       "also_in": [
         "build/other_domains/aircraft_types.csv"
       ]
+    },
+    {
+      "table": "data/toe_templates.csv",
+      "column": "authorized_strength_json",
+      "schema": "authorized_strength_json.schema.json",
+      "blank_allowed": false,
+      "also_in": [
+        "build/toe_templates.csv"
+      ]
     }
   ]
 }

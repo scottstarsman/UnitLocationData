@@ -2,7 +2,7 @@
 
 Some CSV columns hold a JSON value inside one cell. This page lists every such column. The machine-readable definitions are in [`schema/json/`](../schema/json/): `fields.json` is the registry (table, column, schema file), and each column has its own JSON Schema (draft 2020-12). `scripts/check_json_fields.py` validates every non-blank cell against its schema, and `scripts/build.py` writes `build/all_claims.json`: the same rows and columns as `build/all_claims.csv`, values unchanged as strings, except that these cells appear as nested objects (`null` when blank). The CSV columns and values are not changed.
 
-A survey of all tables under `data/` on 2 November 2026 found one such column: `strength_json`. No other column holds JSON (lists elsewhere, for example `composing_units` and `reference_ids`, are `;`-separated text, not JSON).
+A survey of all tables under `data/` on 2 November 2026 found one such column: `strength_json`. Later work added other JSON cells registered in `schema/json/fields.json`, including `aircraft` and `capabilities` on claims (see the strength_json schema) and, from 24 November 2026, `authorized_strength_json` on `data/toe_templates.csv`. Lists such as `composing_units` and `reference_ids` remain `;`-separated text, not JSON.
 
 ## strength_json
 
@@ -31,6 +31,29 @@ Examples:
 {"basis":"estimate","as_of":"1944-06-10","personnel":15976,"scope":"whole_unit","status":"full","source":"Wikipedia 3rd Parachute Division"}
 {"basis":"estimate","as_of":"1944-06-18","status":"heavily_depleted","source":"CMH Cross-Channel Attack ch. X"}
 ```
+
+
+## authorized_strength_json
+
+- **Where:** `data/toe_templates.csv` (column `authorized_strength_json`); copied to `build/toe_templates.csv` and joined onto `build/unit_toe.csv` and the flagship OOB authorized columns.
+- **Purpose:** high-level authorized strength of one official table of organization. These figures are authorized, not actual, and must not be copied onto claims. A key is omitted when the official table does not give that figure.
+- **Schema:** [`schema/json/authorized_strength_json.schema.json`](../schema/json/authorized_strength_json.schema.json).
+
+| key | type | required | allowed values / rule |
+|---|---|---|---|
+| `personnel` | integer | no | ≥ 0; authorized whole-unit personnel total when the official table gives one |
+| `counts` | object | no | keys from vocabulary `authorized_count_key` (including `tanks` for an undifferentiated tank total) → integer ≥ 0 |
+| `structure` | object | no | keys from vocabulary `authorized_structure_key` → integer ≥ 0; a high-level subordinate count, not a list of unit ids |
+
+No other keys are allowed. There is no `basis` or qualitative `status` field; the figures are authorized by definition, and the template's `reference_ids` cover the object. The enumerations must equal the vocabularies in `schema/vocabularies.json`.
+
+Example:
+
+```json
+{"personnel":10937,"counts":{"tanks":263},"structure":{"tank_battalions":3,"armored_infantry_battalions":3}}
+```
+
+`strength_json` on claims is unchanged (39 cells in this release). Task 4 will freeze its keys, including vehicle-type spelling. Do not fill `basis=authorized_organization` on claims to stand in for a TO&E template.
 
 ## theater in the JSON outputs (not a JSON cell)
 

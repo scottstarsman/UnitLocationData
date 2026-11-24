@@ -63,6 +63,11 @@ Commanders (data/people.csv, data/unit_commanders.csv, data/unit_commander_claim
 header and field values from the schemas, unique PE#### / UC#### without gaps, vocabularies, date and conflict-group
 rules (blank valid_to <=> open_at_last_claim), foreign keys, every named commander cell linked to a tenure, and unknown
 commander cells linked only as asserts_end (a sourced vacancy).
+TO&E (data/toe_templates.csv, data/unit_toe.csv; scripts/toe.py):
+header and field values from the schemas, unique TT#### / UT#### without gaps, vocabularies (including formation_type,
+authorized_count_key, authorized_structure_key and toe_conformance), date rules (blank valid_to <=> open), non-overlapping
+assignments per unit, and authorized_strength_json keys restricted to the vocabularies. Authorized figures live on the
+template, never on claims.
 
 Coordinate checks live in scripts/check_coordinates.py.
 
@@ -82,6 +87,7 @@ import command_relations as crel  # noqa: E402
 import places as placesmod  # noqa: E402
 import unit_refs  # noqa: E402
 import commanders as commandersmod  # noqa: E402
+import toe as toemod  # noqa: E402
 
 errors = []
 warnings = []
@@ -549,8 +555,8 @@ def check_references(claims):
             class_cited |= set(br.parse_ids(r.get('reference_ids', '')))
     for m in meta:
         st = stats[m['reference_id']]
-        if not st['claims'] and not st['units'] and not st['ops'] and not st['missions'] and not st.get('commanders') and m['reference_id'] not in class_cited:
-            warn(where, '%s (%s) is not cited by any claim, unit, operation, mission, commander tenure, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
+        if not st['claims'] and not st['units'] and not st['ops'] and not st['missions'] and not st.get('commanders') and not st.get('toe') and m['reference_id'] not in class_cited:
+            warn(where, '%s (%s) is not cited by any claim, unit, operation, mission, commander tenure, TO&E template or assignment, ship class, aircraft type or nation allegiance row: remove the row or cite it' % (m['reference_id'], m['short_title']))
         if not re.fullmatch(r'[a-z0-9_]+', m['source_family']):
             err(where, '%s source_family %r must be a lower-case token (see vocabularies.json source_family)' % (m['reference_id'], m['source_family']))
     check_claim_references(claims, meta)
@@ -1150,7 +1156,7 @@ def check_foreign_keys(tables):
     """Enforce every foreignKeys entry declared in schema/claims.schema.json, units.schema.json and relations.schema.json, and the
     declared primary keys / unique columns of the side tables. `tables` maps resource name -> list of row dicts. A blank value is
     allowed (nullable reference); a column with a `separator` holds a list of keys; `alsoAllowed` lists extra accepted values."""
-    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes', 'aircraft_types', 'people', 'unit_commanders', 'unit_commander_claims') for fk in common.load_schema(n).get('foreignKeys', [])]
+    decl = [(n, fk) for n in ('claims', 'units', 'places', 'ship_classes', 'aircraft_types', 'people', 'unit_commanders', 'unit_commander_claims', 'toe_templates', 'unit_toe') for fk in common.load_schema(n).get('foreignKeys', [])]
     rel = common.load_json(os.path.join(common.SCHEMA_DIR, 'relations.schema.json'))['tables']
     for name, t in rel.items():
         decl.extend((name, fk) for fk in t.get('foreignKeys', []))
@@ -1821,6 +1827,22 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
     return out
 
 
+
+def check_toe(units, vocabs, nats):
+    """data/toe_templates.csv and data/unit_toe.csv (scripts/toe.py)."""
+    import build_references as br
+    ref_ids = {m['reference_id'] for m in br.read_meta()[1]} if os.path.isfile(br.META_CSV) else set()
+    nat_names = {n['name'] for n in nats.values()} if isinstance(nats, dict) else {n['name'] for n in nats}
+    th, templates = toemod.load_templates()
+    ah, assignments = toemod.load_assignments()
+    for where, msg in toemod.check(th, templates or [], ah, assignments or [], units, vocabs, ref_ids, nat_names):
+        if msg.startswith(toemod.WARNING_PREFIX):
+            warn(where, msg[len(toemod.WARNING_PREFIX):])
+        else:
+            err(where, msg)
+    return templates or [], assignments or []
+
+
 def check_commanders(units, vocabs, claims, nats):
     """data/people.csv, data/unit_commanders.csv and data/unit_commander_claims.csv (scripts/commanders.py)."""
     import build_references as br
@@ -2070,6 +2092,7 @@ def main():
     place_rows = check_places(all_rows, vocabs)
     check_lineage(units, vocabs)
     people_rows, tenure_rows, commander_links = check_commanders(units, vocabs, all_rows, nats)
+    template_rows, assignment_rows = check_toe(units, vocabs, nats)
     check_allegiance(units, vocabs)
     check_sidc(units, all_rows)
     check_lifespan(units, all_rows)
@@ -2089,7 +2112,8 @@ def main():
               'references_meta': br.read_meta()[1] if os.path.isfile(br.META_CSV) else [],
               'claim_reference_roles': br.read_roles()[1] if os.path.isfile(br.ROLES_CSV) else [],
               'command_relations': relset.rows, 'command_relation_claims': relset.links, 'command_relation_overlaps': relset.overlaps, 'command_relation_overrides': relset.overrides,
-              'people': people_rows, 'unit_commanders': tenure_rows, 'unit_commander_claims': commander_links}
+              'people': people_rows, 'unit_commanders': tenure_rows, 'unit_commander_claims': commander_links,
+              'toe_templates': template_rows, 'unit_toe': assignment_rows}
     check_foreign_keys(tables)
 
     for w in warnings:

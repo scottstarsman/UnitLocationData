@@ -22,6 +22,9 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         otherwise null geometry (broad campaigns, umbrellas and sparse extents)
   build/operation_units.csv             one row per (operation_id, unit_id) derived from claims and missions (direct or via a descendant
                                         operation; no command-hierarchy roll-up; scripts/operation_units.py)
+  build/oob/                            flagship order-of-battle snapshots (scripts/export_oob.py) for 6 June, 18 July, 15 August,
+                                        16 December 1944, 24 March 1945 and 7 May 1945: JSON, CSV, a ground Markdown tree, and a
+                                        14-day located CSV; regenerated on every build
   build/command_relations.csv           the master data/command_relations.csv with names, a support column (documented | table | inferred)
                                         and the evidence claim ids; every preferred relation except `organic` (the placeholders with no
                                         higher unit included), all nationalities and dates; see schema/README.md, "Validity of a relationship"
@@ -74,6 +77,7 @@ import sidc as sidcmod  # noqa: E402
 import commanders as commandersmod  # noqa: E402
 import operation_extent  # noqa: E402
 import operation_units  # noqa: E402
+import export_oob  # noqa: E402
 
 GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'theater',
              'echelon', 'branch', 'date', 'commander', 'commander_person_id', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
@@ -292,9 +296,12 @@ def outputs():
     out['other_domains/aircraft_types.csv'] = aircraft_types_output()
     out['other_domains/missions.csv'] = common.csv_bytes(missionsmod.BUILD_HEADER, missionsmod.build_rows())   # data/missions (J1); never part of the claims or relations
     crel = command_relations.load()
-    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows, set(units)))
-    out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, other_rows, other))
-    out['organic_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, command_relations.derived_rows(crel, all_units, rows + other_rows, None, organic=True))
+    ground_rel = command_relations.derived_rows(crel, all_units, rows, set(units))
+    other_rel = command_relations.derived_rows(crel, all_units, other_rows, other)
+    organic_rel = command_relations.derived_rows(crel, all_units, rows + other_rows, None, organic=True)
+    out['command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, ground_rel)
+    out['other_domains/command_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, other_rel)
+    out['organic_relations.csv'] = common.csv_bytes(command_relations.DERIVED_HEADER, organic_rel)
     out['who_controls_overrides.csv'] = open(command_relations.OVERRIDE_CSV, 'rb').read() if os.path.isfile(command_relations.OVERRIDE_CSV) else common.csv_bytes(['relation_id'], [])   # verbatim copy of data/who_controls_overrides.csv; read by scripts/who_controls.py
     out['people.csv'] = common.csv_bytes(commandersmod.PEOPLE_BUILD_HEADER, commandersmod.derived_people(people_rows, tenure_rows))
     out['unit_commanders.csv'] = common.csv_bytes(commandersmod.TENURE_BUILD_HEADER, commandersmod.derived_tenures(tenure_rows, people_rows, commander_links, all_units_rows))
@@ -303,10 +310,19 @@ def outputs():
     op_rows, op_md, _qc = operation_extent.operations_table(ops, rows + other_rows, mission_rows, all_units_rows, places_rows)
     out['operations.csv'] = common.csv_bytes(operation_extent.BUILD_HEADER, op_rows)
     out['operations.geojson'] = operation_extent.operations_geojson(op_rows, places_rows)
-    out['operation_units.csv'] = common.csv_bytes(
-        operation_units.BUILD_HEADER,
-        operation_units.operation_unit_rows(ops, rows + other_rows, mission_rows, all_units_rows,
-                                            people=people_rows, tenures=tenure_rows))
+    ou_rows = operation_units.operation_unit_rows(ops, rows + other_rows, mission_rows, all_units_rows,
+                                                  people=people_rows, tenures=tenure_rows)
+    out['operation_units.csv'] = common.csv_bytes(operation_units.BUILD_HEADER, ou_rows)
+    symbol_rows = coder.unit_rows(ground) + coder.unit_rows([u for u in urows if u['unit_id'] in other])
+    as_dicts = lambda header, rows: [dict(zip(header, r)) for r in rows]
+    oob_ctx = export_oob.context_from_build_outputs(
+        as_dicts(command_relations.DERIVED_HEADER, ground_rel + other_rel),
+        as_dicts(command_relations.DERIVED_HEADER, organic_rel),
+        common.read_dicts(command_relations.OVERRIDE_CSV)[1] if os.path.isfile(command_relations.OVERRIDE_CSV) else [],
+        all_units_rows, rows + other_rows, tenure_rows, people_rows,
+        as_dicts(sidcmod.UNIT_SYMBOLS_HEADER, symbol_rows),
+        ou_rows)
+    out.update(export_oob.flagship_outputs(oob_ctx))
     pl_rows, pl_geo, pl_md = places_outputs(rows)
     out['places.csv'] = common.csv_bytes(PLACES_OUT_HEADER, pl_rows)
     out['places.geojson'] = pl_geo

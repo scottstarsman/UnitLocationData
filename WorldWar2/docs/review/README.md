@@ -167,7 +167,7 @@ A pull request runs `validate.py`, the coordinate and temporal audits, and `buil
 
 ## 7. What we do not want reviewed
 
-- The licences (data CC BY-SA 4.0, code MIT) and the repository's publication format; the choice is made. A question on whether the licensing and terms of each source are recorded clearly enough is welcome (question 10).
+- The licence (the whole repository is CC BY-SA 4.0; confirmed by Scott, 24 November 2026) and the repository's publication format; the choice is made. A question on whether the licensing and terms of each source are recorded clearly enough is welcome (question 10).
 - The `zip` or any packaged download of the data; only the repository is in scope.
 - Style of the prose and spelling, unless it makes a rule ambiguous.
 - Coverage you wish existed (other months, other theaters, other armies). Whether the design would carry them is welcome (questions 8 and 9); which units to add next is not.

@@ -61,7 +61,7 @@ Example:
 
 ## commander_person_id in the JSON and GeoJSON outputs (not a JSON cell)
 
-`commander_person_id` is a plain derived column, not a JSON object. It appears on `build/all_claims.csv`, `build/all_claims.json`, `build/other_domains/claims.csv`, and as a feature property on `build/claims.geojson` (which also now carries the source-stated `commander` string). The value is the `PE####` id(s) of the people linked to that claim in `data/unit_commander_claims.csv`. When a claim names more than one person (a handover cell, or embarked officers on a ship), the distinct ids are joined with `;` in ascending id order. The column is blank when `commander` is `unknown` and the claim is not a sourced vacancy end.
+`commander_person_id` is a plain derived column, not a JSON object. It appears on `build/all_claims.csv`, `build/all_claims.json`, and as a feature property on `build/claims.geojson` (which also now carries the source-stated `commander` string). The value is the `PE####` id(s) of the people linked to that claim in `data/unit_commander_claims.csv`. When a claim names more than one person (a handover cell, or embarked officers on a ship), the distinct ids are joined with `;` in ascending id order. The column is blank when `commander` is `unknown` and the claim is not a sourced vacancy end.
 
 ## Adding a JSON column
 

@@ -74,7 +74,7 @@ It omits commander, notes, parent/command relationships, detailed strength, oppo
 
 ## Attribution and scope
 
-Repository data/documentation are CC BY-SA 4.0; code is MIT. Review `WorldWar2/docs/reuse_and_attribution.md`, `LICENSE-DATA`, `LICENSE-CODE` and `CITATION.cff` when implementing public credit and downloads. Carry provenance and interpretation fields with mapped/exported claims; include the repository's specified coordinate attribution where applicable. No historical source websites were researched for this structural review.
+The whole repository (data, documentation, scripts and this viewer) is CC BY-SA 4.0 (root `LICENSE`). Review `WorldWar2/docs/reuse_and_attribution.md` and `CITATION.cff` when implementing public credit and downloads. Carry provenance and interpretation fields with mapped/exported claims; include the repository's specified coordinate attribution where applicable. No historical source websites were researched for this structural review.
 
 Potential discussion topics: primary audience and questions; map versus timeline versus unit browsing; exact-day versus date-window behavior; filters and conflict visibility; uncertainty presentation; command hierarchy and activity queries; detail/source panels; data refresh and packaging; hosting and framework preferences. These are open decisions, not selected features.
 

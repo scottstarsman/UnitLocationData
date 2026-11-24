@@ -1356,11 +1356,16 @@ Resume point: the sheets `cs000254` to `cs000339` are all visually audited; next
    - **Optional display switch** `--prefer-parent-echelon task_group` if Scott later wants D-Day naval trees to nest under task groups (v1 keeps the flotilla as the `who_controls` primary parent and lists the task group as an additional parent).
    - **Sourced `data/operation_participants.csv`** only if a later source states that a unit fought in a battle without a dated location claim. Not in v1.
 
-425. **Follow-ups from Task 3 TO&E work (branch `toe-templates`, 24 November 2026; Scott accepted TE1-TE16; not started).**
-   - **British, Canadian and Polish War Establishments:** no free official WE scan was verified in this pass (published 18,347-type figures come from copyrighted compilations and are not used). Seed those templates when an official table is in hand; Canadian and Polish units may then point at a British template (TE10).
+425. **Follow-ups from Task 3 TO&E work (branch `toe-templates`, 24 November 2026; Scott accepted TE1-TE16).**
+   - **British, Canadian and Polish War Establishments:** first templates and assignments seeded on branch `british-toe` (24 November 2026) from free sources (Nafziger 939BXIA/939BXAA, AHQ Report No. 57, Ellis R670, Sikorski A.XII.1/48 E). Official British Personnel Staff Tables and a verified Joslen page remain outstanding (roadmap 426).
    - **French, Waffen-SS, brigades, other German types** (static / bodenständige infantry, mountain, reserve, Luftwaffe Field, unique official organizations such as Panzer Lehr and 21st Panzer) when an official or handbook table for that type is verified. Do not force-fit a stock table onto a unique organization.
    - **German KStN edition dates:** army panzer, panzergrenadier and Fallschirmjäger units are attached only from the TM-E 30-451 handbook date (15 March 1945) because that is the dated source for the seeded totals. Earlier 1943–44 editions, and GER-INF attachments to the 1944 Type, wait for a transcribed KStN or an equally specific official date. TM-E is a US handbook, possibly including estimates, not a KStN.
    - **US January 1945 infantry (14,037) and armored (10,700) tables:** templates exist (TT0002, TT0005) but have no `unit_toe` rows, because Wilson does not name which divisions reorganized onto them.
    - **Air establishments,** deferred (TE9).
    - **Claim `strength_json` vehicle-key alignment** when Task 4 freezes those keys. Do not rewrite the 39 existing `strength_json` cells in the meantime, and do not fill `basis=authorized_organization` on claims.
+
+426. **British TO&E, official-table follow-ups (branch `british-toe`, 24 November 2026; not started).**
+   - **Joslen verification:** read H. F. Joslen, *Orders of Battle, Second World War, 1939–1945* (HMSO, 1960, or the Naval & Military Press reprint), especially the commonly cited infantry-division total of 18,347 (often to p. 131) and any armoured-division and airborne personnel totals, and raise or correct the Nafziger-based figures accordingly. Facts only in the repo.
+   - **TNA WO 24 staff tables:** page-check the 1944–45 War Establishment volumes (start with WO 24/950 and WO 24/951) for Personnel Staff Tables or Formation Staff Equipment Tables of the standard infantry, armoured and airborne divisions, to lock official designation, notified and effective dates, and first-choice official totals.
+   - **Airborne personnel:** no sourced authorized personnel total was found for the 1944 British airborne division. Hold `UK-ABN-001D` and `UK-ABN-006D` until Joslen or a TNA table supplies one. The 79th Armoured Division and independent armoured/tank brigades also remain unassigned.
 

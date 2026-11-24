@@ -4,7 +4,7 @@ What to credit, and what applies, when you reuse the dataset or one of its deriv
 
 ## What you reuse
 
-Every file under `data/`, `build/`, `schema/vocabularies.json` and `docs/` is covered by the data licence (CC BY-SA 4.0): you may copy, adapt and use it for any purpose, including commercially, if you give credit, say what you changed, and release your adaptation under the same licence. The scripts are MIT. Cite the dataset with `CITATION.cff`.
+Every file in the repository — including `data/`, `build/`, `schema/`, `docs/`, the scripts and the web viewer — is licensed under CC BY-SA 4.0: you may copy, adapt and use it for any purpose, including commercially, if you give credit, say what you changed, and release your adaptation under the same licence. Cite the dataset with `CITATION.cff`.
 
 The facts in the rows come from published sources. The repository stores facts (dates, places, unit names, relationships), short notes in its own words, and links; it does not copy source text, so the sources' own terms matter mainly for **credit** and for the **share-alike** inheritance of Wikipedia-derived material.
 

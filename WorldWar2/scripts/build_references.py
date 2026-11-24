@@ -14,7 +14,7 @@ Inputs
 
 Outputs (deterministic; the claims stay the evidence, these tables are derived):
   data/references.csv        one row per reference: the metadata plus claims_count, units_count, operations_count, missions_count (rows of data/missions that
-                             cite it; added 17 November 2026), commanders_count (unit_commanders rows that cite it; added 23 November 2026), first_claim_id
+                             cite it; added 17 November 2026), commanders_count (unit_commanders rows that cite it; added 23 November 2026), toe_count (toe_templates and unit_toe rows that cite it; added 24 November 2026), first_claim_id
   build/claim_references.csv claim_id, reference_id, role, locator (page / section, from the claim's source_locator), one row per link and role
   build/unit_references.csv  unit_id, field (formed_date_source | listing_source | initial_parent_source), reference_id
   build/operation_references.csv  operation_id, reference_id (the reference_ids column of data/operations.csv)
@@ -55,7 +55,7 @@ LINK_CACHE = os.path.join(common.ROOT, '.cache', 'links.json')
 META_HEADER = ['reference_id', 'url', 'source_token', 'strength_alias', 'short_title', 'full_citation', 'source_type',
                'source_family', 'publisher', 'accessed_date', 'license_or_status', 'reliability_note', 'used_for', 'link_status', 'link_checked']
 REF_HEADER = ['reference_id', 'short_title', 'full_citation', 'source_type', 'source_family', 'publisher', 'url', 'original_url', 'accessed_date',
-              'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'missions_count', 'commanders_count', 'first_claim_id', 'used_for', 'link_status',
+              'license_or_status', 'reliability_note', 'claims_count', 'units_count', 'operations_count', 'missions_count', 'commanders_count', 'toe_count', 'first_claim_id', 'used_for', 'link_status',
               'link_checked']
 CLAIM_REF_HEADER = ['claim_id', 'reference_id', 'role', 'locator']
 ROLES_CSV = os.path.join(common.ROOT, 'data', 'claim_reference_roles.csv')
@@ -220,7 +220,7 @@ def derive():
     tokens = {m['source_token']: m for m in meta if m['source_token']}
     by_url = {m['url']: m for m in meta if m['url']}
     claim_refs, unit_refs = set(), set()
-    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set(), 'missions': set(), 'commanders': set()} for m in meta}
+    stats = {m['reference_id']: {'claims': set(), 'units': set(), 'ops': set(), 'missions': set(), 'commanders': set(), 'toe': set()} for m in meta}
 
     geocoders = {m['reference_id'] for m in meta if m['source_type'] == 'gazetteer_geocoder'}
     _hh, claims = common.load_all_claims()
@@ -299,6 +299,15 @@ def derive():
         for rid in parse_ids(tr.get('reference_ids', '')):
             if rid in stats:
                 stats[rid]['commanders'].add(tr['tenure_id'])
+    import toe as toemod
+    for tmpl in toemod.load_templates()[1] or []:
+        for rid in parse_ids(tmpl.get('reference_ids', '')):
+            if rid in stats:
+                stats[rid]['toe'].add(tmpl['template_id'])
+    for asg in toemod.load_assignments()[1] or []:
+        for rid in parse_ids(asg.get('reference_ids', '')):
+            if rid in stats:
+                stats[rid]['toe'].add(asg['assignment_id'])
     return sorted(claim_refs), sorted(unit_refs), stats, missing, meta, sorted(op_refs)
 
 
@@ -313,7 +322,7 @@ def outputs():
         st = stats[m['reference_id']]
         rows.append([m['reference_id'], m['short_title'], m['full_citation'], m['source_type'], m['source_family'], m['publisher'], m['url'],
                      original_url(m['url']), m['accessed_date'], m['license_or_status'], m['reliability_note'],
-                     str(len(st['claims'])), str(len(st['units'])), str(len(st['ops'])), str(len(st['missions'])), str(len(st.get('commanders', ()))), min(st['claims']) if st['claims'] else '', m['used_for'],
+                     str(len(st['claims'])), str(len(st['units'])), str(len(st['ops'])), str(len(st['missions'])), str(len(st.get('commanders', ()))), str(len(st.get('toe', ()))), min(st['claims']) if st['claims'] else '', m['used_for'],
                      m['link_status'] or 'unchecked', m['link_checked']])
     return {
         'data/references.csv': common.csv_bytes(REF_HEADER, rows),

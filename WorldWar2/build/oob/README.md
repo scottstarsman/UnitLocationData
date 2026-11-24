@@ -23,4 +23,6 @@ The primary parent is the `who_controls.py` answer: the lowest-echelon `operatio
 
 A unit's location is its nearest preferred claim to the snapshot date (ties prefer a claim on or before the date). It is never inherited from a parent headquarters.
 
+Authorized strength (`authorized_template_id`, `authorized_template_name`, `authorized_personnel`, `authorized_strength_json`) comes from that unit's own `data/unit_toe.csv` assignment covering the date. It is kept separate from `strength_json` (a sourced actual or estimated figure on a claim) and is never inherited from a parent.
+
 Late-war snapshots (from mid-December 1944) have few air and naval units because most of those relations were last listed in June 1944 and the 90-day reading cutoff has expired. That is a coverage gap in the relations, not a reason to lengthen the window.

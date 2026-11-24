@@ -24,7 +24,8 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
                                         operation; no command-hierarchy roll-up; scripts/operation_units.py)
   build/oob/                            flagship order-of-battle snapshots (scripts/export_oob.py) for 6 June, 18 July, 15 August,
                                         16 December 1944, 24 March 1945 and 7 May 1945: JSON, CSV, a ground Markdown tree, and a
-                                        14-day located CSV; regenerated on every build
+                                        14-day located CSV; regenerated on every build. Authorized TO&E columns are filled from
+                                        unit_toe for that date only (never inherited from a parent) and kept separate from strength_json.
   build/command_relations.csv           the master data/command_relations.csv with names, a support column (documented | table | inferred)
                                         and the evidence claim ids; every preferred relation except `organic` (the placeholders with no
                                         higher unit included), all nationalities and dates; see schema/README.md, "Validity of a relationship"
@@ -35,6 +36,9 @@ Outputs (deterministic: rows sorted by date then claim_id, LF line endings, UTF-
   build/people.csv                      data/people.csv plus tenures_count and units_count
   build/unit_commanders.csv             data/unit_commanders.csv (all domains and statuses) with unit_name, nationality,
                                         domain, echelon, canonical_name, sort_name and source_claim_ids
+  build/toe_templates.csv               copy of data/toe_templates.csv (authorized TO&E tables, TT####)
+  build/unit_toe.csv                    data/unit_toe.csv with the template name, nationality, designation, formation_type,
+                                        authorized personnel total and authorized_strength_json joined on
   build/other_domains/claims.csv        claims of air and naval units (data/units.csv domain air or naval), same columns as all_claims.csv; these units
                                         and the units marked out_of_scope are left out of every other output here (collected for later use; standing rule 22)
   build/other_domains/units.csv         the air and naval units and the units marked out_of_scope, with domain, scope, ship_type, hull_number and ship_class_id
@@ -75,6 +79,7 @@ import coverage as coveragemod  # noqa: E402
 import missions as missionsmod  # noqa: E402
 import sidc as sidcmod  # noqa: E402
 import commanders as commandersmod  # noqa: E402
+import toe as toemod  # noqa: E402
 import operation_extent  # noqa: E402
 import operation_units  # noqa: E402
 import export_oob  # noqa: E402
@@ -305,6 +310,9 @@ def outputs():
     out['who_controls_overrides.csv'] = open(command_relations.OVERRIDE_CSV, 'rb').read() if os.path.isfile(command_relations.OVERRIDE_CSV) else common.csv_bytes(['relation_id'], [])   # verbatim copy of data/who_controls_overrides.csv; read by scripts/who_controls.py
     out['people.csv'] = common.csv_bytes(commandersmod.PEOPLE_BUILD_HEADER, commandersmod.derived_people(people_rows, tenure_rows))
     out['unit_commanders.csv'] = common.csv_bytes(commandersmod.TENURE_BUILD_HEADER, commandersmod.derived_tenures(tenure_rows, people_rows, commander_links, all_units_rows))
+    toe_templates = toemod.load_templates()[1] or []
+    toe_assignments = toemod.load_assignments()[1] or []
+    out.update(toemod.build_outputs(toe_templates, toe_assignments))
     places_rows = {p['place_id']: p for p in common.read_dicts(os.path.join(common.ROOT, 'data', 'places.csv'))[1]}
     mission_rows = missionsmod.load()
     op_rows, op_md, _qc = operation_extent.operations_table(ops, rows + other_rows, mission_rows, all_units_rows, places_rows)

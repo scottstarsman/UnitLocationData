@@ -6,8 +6,8 @@
 2. guard: a candidate whose name equals an existing places.csv row but lies more than 3 km from it
    is not merged into that row; it is renamed "<name> (<nearest municipality>)" (or "<name> (2)")
    and becomes a new place.
-GeoNames dumps (reference R782) are read from GEONAMES_DIR (default /workspace/geonames); they are
-not part of the repository.
+GeoNames dumps (reference R782) are read from the GEONAMES_DIR environment variable
+(a local directory outside the repository). They are not part of the repository.
 """
 import csv, math, os, pickle
 GD = os.environ.get('GEONAMES_DIR', '/workspace/geonames')

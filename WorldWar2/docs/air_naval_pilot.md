@@ -57,7 +57,7 @@ No RAF or RCAF unit was entered (optional in the brief; the source work was kept
 
 ## 4. Decision: Marine-Artillerie-Abteilung 260 (closed 13 November 2026)
 
-A Kriegsmarine coastal artillery battalion fights on land. It was entered as `ground` (like flak, Scott 4 November 2026) with branch `Navy`, so it appears in the main outputs and in `who_controls` (new keys only). Flipping it to `naval` is one cell in `data/units.csv` and moves `C9437`, `C9438` and `CR1305` to `build/other_domains/`. **Decided by Scott, 13 November 2026: ground.** `GER-MAA-260` stays ground, as a general rule for flak and coastal artillery whatever service owned them (the `branch` column records the service); standing rule 23 in `docs/HANDOFF.md`.
+A Kriegsmarine coastal artillery battalion fights on land. It was entered as `ground` (like flak, Scott 4 November 2026) with branch `Navy`, so it appears in the main outputs and in `who_controls` (new keys only). Flipping it to `naval` is one cell in `data/units.csv` and moves `C9437`, `C9438` and `CR1305` to `build/other_domains/`. **Decided by Scott, 13 November 2026: ground.** `GER-MAA-260` stays ground, as a general rule for flak and coastal artillery whatever service owned them (the `branch` column records the service).
 
 ## 5. Recommended next steps (for Scott's approval)
 
@@ -169,7 +169,7 @@ Bedale and Ślązak share `SC005` although the flag changed; the class nationali
 
 ## 7. Out-of-scope claims (standing rule 22, 13 November 2026)
 
-Scott decided on 13 November 2026 that a claim is recorded even when its unit is outside the current scope (any domain, front or period), because it will help as scope grows. It is written up in `docs/HANDOFF.md` as standing rule 22, in `CONTRIBUTING.md` and `docs/methodology.md`, and builds on rule 19 (read every source for all fronts and periods).
+Scott decided on 13 November 2026 that a claim is recorded even when its unit is outside the current scope (any domain, front or period), because it will help as scope grows. It is written up in `CONTRIBUTING.md` and `docs/methodology.md`, and builds on the rule to read every source for all fronts and periods.
 
 - Out-of-scope claims follow every normal claim rule and stay **out of the main outputs and the grid**, the way `build/other_domains/` keeps air and naval claims today.
 - **Coverage and source-balance figures for out-of-scope areas are labelled incidental, not surveyed:** they show what the sources happened to give, not a systematic search, and are not compared with the surveyed Western Front figures.
@@ -273,7 +273,7 @@ The pilot could not store the XXIX TAC assignments for lack of an evidence claim
 
 ### 9.6 Checks and conventions
 
-Standing rule 25 (`docs/HANDOFF.md`) and `CONTRIBUTING.md` carry the conventions. Next free ids: claim `C9444`, place `PL4179`, reference `R1159`, relation `CR1310`, aircraft type `AT135`, ship class `SC201`, scenario 259.
+`CONTRIBUTING.md` carries the conventions. Next free ids: claim `C9444`, place `PL4179`, reference `R1159`, relation `CR1310`, aircraft type `AT135`, ship class `SC201`, scenario 259.
 
 ### 9.7 Grid
 

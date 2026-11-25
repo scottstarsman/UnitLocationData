@@ -239,13 +239,13 @@ Favour the biggest gaps and free access. Entering leftover facts from sources al
 
 4. **de Jong, deel 10a and 10b**, from the NIOD library (10a part 1, chapters 1-7, done on `dejong-10a1`, 12 November 2026; 10a part 2 and 10b remain). Free, official, openly licensed. First own-nation source for the Princess Irene Brigade, and Dutch-theatre context for Canadian and British units in the Netherlands.
 
-5. **Joslen, *Orders of Battle***. Free official British OOB, already on the roadmap. Use it for formation dates, independent brigades and relation dates, not as a place source. The 79th Armoured Division now has Ellis-supported place rows; Joslen is still wanted for composition and attachments. May need Scott to save the PDFs if the General Staff host remains blocked from this box.
+5. **Joslen, *Orders of Battle***. Free official British OOB, already on the roadmap. Use it for formation dates, independent brigades and relation dates, not as a place source. The 79th Armoured Division now has Ellis-supported place rows; Joslen is still wanted for composition and attachments. May need a local copy of the PDFs if the General Staff host remains blocked.
 
 ## What would need Scott
 
 - **Purchase or library loan:** the IPN *Pancerz i odwaga* volume (or the Sikorski Institute official history, or Maczek's memoir) if a Polish-authored source for the 1st Armoured Division is wanted; *Les grandes unités françaises* for a French official series; British commercial divisional histories if a deeper pass on one British division is wanted after the Ellis leftovers.
 - **Access help:** a local copy of Joslen if the General Staff host stays blocked; a research request or visit for NIMH collection 466.
-- **Already in force:** Fold3 remains Scott-signed-in, no printing, no DevTools, no bulk export. Further FMS reading is German source work, not the first move in this balance pass.
+- **Already in force:** further FMS reading is German source work, not the first move in this balance pass.
 - **Not recommended for this pass:** paying for a new British official history (Ellis is already in hand); treating Vigneras as a French source; scraping or APIs.
 
-Private reading notes, if any, stay in the private source notes folder and in Drive `WWII Unit Locations/source notes/`. They are never committed.
+Private reading notes, if any, stay outside the repository. They are never committed.

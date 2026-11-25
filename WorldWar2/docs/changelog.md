@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Public docs hygiene (branch `public-docs-hygiene`)
+
+The internal maintainer operating manual (`docs/HANDOFF.md`) and Drive folder ids (`docs/HANDOFF_private.md`) are no longer part of the published tree; both are gitignored and kept privately by the project owner. A short public page, `docs/maintainers.md`, covers how to run the checks and the release rules that can be public. Pointers to the handoff and to private working paths were removed from CONTRIBUTING, methodology, the roadmap, source-reading and source-balance notes, the schema README, and a few tool docs. No claim, unit, or other data row was changed.
+
 ## 24 November 2026 — Annotation labels and Cobra operation exceptions (branch `rc1-data-fixes`)
 
 The validator treats a sentence that starts `Word:` in claim `notes` as a `note_label`. The RV16 and RV11 annotations originally used `Branch:` and `Operation:`, which are not in the vocabulary. They are rewritten to the existing `Review:` label (`Review: branch old value...` and `Review: operation old value...`), including the 19 unit notes. The Hyperwar URL for each added Blumenson chapter was appended to the claim `source` column so the new `reference_ids` stay cited (464 validator warnings, unchanged). Two `data/operation_exceptions.csv` rows for `C0223` and `C0289` (allowed those claims to stay on `OP-COBRA` one day after the end date) were removed; old value the two exception rows, new value omitted, reason: those claims were retagged to `OP-CAMP-NORTHERN-FRANCE`.

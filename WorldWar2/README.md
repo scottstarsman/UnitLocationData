@@ -105,4 +105,4 @@ Every row needs a source, conflicting claims become separate rows, and nothing i
 
 The whole repository — data, documentation, scripts and the web viewer — is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see the root [`LICENSE`](../LICENSE)). Creative Commons recommends against using CC licences for software, because they do not address patents and are not standard open-source software licences. Scott chose a single licence for the whole repository for simplicity (24 November 2026). Wikipedia-derived facts already require share-alike, which is why the data could not go under a non-share-alike licence.
 
-Further documentation: [methodology](docs/methodology.md), [sources](docs/sources.md), [reuse and attribution](docs/reuse_and_attribution.md), [roadmap](docs/roadmap.md), [coverage](docs/coverage.md), [schema](schema/README.md).
+Further documentation: [methodology](docs/methodology.md), [sources](docs/sources.md), [reuse and attribution](docs/reuse_and_attribution.md), [roadmap](docs/roadmap.md), [coverage](docs/coverage.md), [schema](schema/README.md), [maintainer notes](docs/maintainers.md).

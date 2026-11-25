@@ -26,6 +26,6 @@ The GitHub Actions workflow in `.github/workflows/validate.yml` runs on every pu
 ## Reviewing a contribution
 
 - Every new or changed row has a source, and conflicting claims stay as separate rows.
-- New identifiers must not collide with ids already on `main`. If two branches took the same new numbers, the second one to be merged renumbers only its unpublished ids (see CONTRIBUTING, "Claim ids").
+- New identifiers must not collide with ids already on `main`. If two branches took the same new numbers, rebase the second branch onto the updated `main` and run `python scripts/renumber_new_ids.py` (dry-run), then `--apply`, so only its unpublished ids are remapped (see CONTRIBUTING, "Identifiers"). Then run `python scripts/build.py` and commit `build/`. Use `--keep-group G###` when the branch meant to add members to a group already on `main`. The script also remaps colliding scenario and roadmap numbers on lines the branch adds.
 - Regenerated `build/` files are committed with the data change and pass `python scripts/build.py --check`.
 - A contribution must not add copyrighted extracts, private research notes, or credentials.

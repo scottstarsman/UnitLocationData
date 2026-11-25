@@ -40,6 +40,7 @@ export function operationSet(operations: Operation[], id: string): Set<string> |
 export function matches(c: Claim, filters: Filters, ops: Set<string> | null) {
   return (!filters.nationality || c.nationality === filters.nationality)
     && (!filters.echelon || c.echelon === filters.echelon)
+    && (!filters.theater || c.theater === filters.theater)
     && (!ops || ops.has(c.operation_id));
 }
 export function buildIndex(claims: Claim[]) {

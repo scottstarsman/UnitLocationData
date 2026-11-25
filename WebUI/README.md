@@ -1,6 +1,6 @@
-# Western Front · Situation Atlas
+# WWII Unit Locations
 
-A local React / TypeScript / MapLibre web app for the WWII unit-location dataset. The visual design takes its warm paper, muted blue water, subdued geography and compact military symbols from Scott's June 23, 1944 situation-map reference. The scan itself is not copied into the app.
+A local React / TypeScript / MapLibre web app for the WWII Unit Locations dataset. The surveyed focus of the current data is the Western Front, June 1944 to May 1945, but the atlas is not limited to that front. The visual design takes its warm paper, muted blue water, subdued geography and compact military symbols from Scott's June 23, 1944 situation-map reference. The scan itself is not copied into the app.
 
 ## Run
 

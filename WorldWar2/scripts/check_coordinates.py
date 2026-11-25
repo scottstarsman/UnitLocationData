@@ -57,18 +57,10 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import places as placesmod  # noqa: E402
+import theaters  # noqa: E402
 
-BBOX = {  # theater -> (lat_min, lat_max, lon_min, lon_max); loose, only to catch typos and sign errors
-    'western_europe': (35.0, 62.0, -12.0, 25.0),
-    'mediterranean': (28.0, 48.0, -10.0, 40.0),
-    'north_africa': (15.0, 38.0, -20.0, 40.0),
-    'eastern_front': (40.0, 72.0, 10.0, 70.0),
-    'balkans': (34.0, 47.5, 13.0, 30.0),
-    'scandinavia': (54.0, 72.0, 4.0, 32.0),
-    'home_germany': (45.5, 56.0, 5.5, 24.0),   # the Reich of 1937 plus Austria, the Sudetenland, the Protectorate and the annexed Polish areas
-    'pacific': (-50.0, 60.0, 90.0, 180.0),
-    'cbi': (0.0, 40.0, 60.0, 125.0),
-}
+# Theater bounding boxes live in schema/theaters.json (scripts/theaters.py). They are loose typo
+# checks, including both sides of the Pacific antimeridian and boxes for atlantic and other.
 # (lat_min, lat_max, lon_min, lon_max) of open Atlantic: west of Brittany and the Bay of Biscay, and west of Cornwall / the Scilly Isles.
 # Loose on purpose: it must not touch Brittany (west tip 4.8 W), Cornwall (5.7 W) or Ireland (north of 51 N).
 ATLANTIC = [(43.0, 48.9, -20.0, -5.3), (48.9, 50.7, -20.0, -6.4)]
@@ -161,15 +153,18 @@ def main(argv):
 
     for r in rows:
         lat, lon = pt(r)
-        b = BBOX.get(r['theater'])
-        if b and not (b[0] <= lat <= b[1] and b[2] <= lon <= b[3]):
-            warn('bbox', r, 'point %.4f,%.4f is outside the bounding box for theater %s' % (lat, lon, r['theater']))
+        code = (r.get('sub_theater') or r.get('theater') or '').strip()
+        boxes = theaters.bboxes(code) or theaters.bboxes(r.get('theater') or '')
+        if boxes and not theaters.in_bboxes(lat, lon, boxes):
+            label = code or r.get('theater')
+            warn('bbox', r, 'point %.4f,%.4f is outside the bounding box for theater %s' % (lat, lon, label))
 
     places = placesmod.load()
     for r in rows:
         lat, lon = pt(r)
-        if any(b[0] <= lat <= b[1] and b[2] <= lon <= b[3] for b in ATLANTIC):
-            warn('atlantic', r, 'point %.4f,%.4f is in the open Atlantic' % (lat, lon))
+        if not theaters.is_open_water_theater(r.get('sub_theater') or r.get('theater')):
+            if any(b[0] <= lat <= b[1] and b[2] <= lon <= b[3] for b in ATLANTIC):
+                warn('atlantic', r, 'point %.4f,%.4f is in the open Atlantic' % (lat, lon))
         p = places.by_id.get(r['place_id'])
         if p:
             d = km(lat, lon, float(p['latitude']), float(p['longitude']))

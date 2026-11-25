@@ -23,6 +23,7 @@ const fallbackStyle: StyleSpecification = {
 interface Props {
   positions: Claim[]; tracks: Track[]; selected: string[]; focused: Claim | null;
   date: string; mode: Mode; showPrecision: boolean; showLabels: boolean; fitRequest: number;
+  initialBounds?: [number, number, number, number] | null;
   onClaim: (claim: Claim) => void;
 }
 
@@ -81,8 +82,12 @@ export function MapView(props: Props) {
     if (!container.current) return;
     let map: maplibregl.Map;
     try {
+      const bounds = latest.current.initialBounds;
+      const start = bounds
+        ? { bounds: new maplibregl.LngLatBounds([bounds[0], bounds[1]], [bounds[2], bounds[3]]), fitBoundsOptions: { padding: 60, maxZoom: 6.6 } }
+        : { center: [0.1, 49.05] as [number, number], zoom: 6.6 };
       map = new maplibregl.Map({ container: container.current, style: fallbackStyle,
-        center: [0.1, 49.05], zoom: 6.6, minZoom: 3, maxZoom: 13, maxPitch: 0,
+        ...start, minZoom: 3, maxZoom: 13, maxPitch: 0,
         attributionControl: false, renderWorldCopies: false });
     } catch {
       setFailure('The map needs WebGL. Enable browser hardware acceleration or try another browser. The unit list and dated records remain available.');

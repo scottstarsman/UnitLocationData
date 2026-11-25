@@ -9,7 +9,7 @@ export interface Relation {
 export interface Claim {
   claim_id: string; conflict_group_id: string; claim_status: 'preferred' | 'alternate' | 'disputed';
   unit_id: string; unit_name: string; date: string; nationality: string; echelon: string; branch: string;
-  theater: string; parent_unit_id: string; commander: string;
+  theater: string; sub_theater?: string; parent_unit_id: string; commander: string;
   latitude: number; longitude: number; precision_km: number; confidence: number;
   place_id: string; place_name: string; location_name: string; location_represents: string;
   location_qualifier: string; coord_override: string; coord_reference_id: string; coord_source_note: string;
@@ -40,4 +40,4 @@ export interface Atlas {
   nationalities: { name: string; adjective: string; alliance: string }[];
 }
 export type Mode = 'situation' | 'history';
-export interface Filters { nationality: string; echelon: string; operation: string; maxAge: number | null; includeAlternates: boolean; }
+export interface Filters { nationality: string; echelon: string; theater: string; operation: string; maxAge: number | null; includeAlternates: boolean; }

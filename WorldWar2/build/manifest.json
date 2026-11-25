@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "data_version": "1.1.0-rc1",
   "generated_at": "2026-11-24T00:00:00Z",
-  "source_tree_sha256": "5ba9a43183bd7a664e7ad38070be9a42695a0d6caa89dcc98a20d43a0d27998f",
+  "source_tree_sha256": "c518ec95c858e7272679d5085b542491b13e0e15c141db57e4c2d36a771a8e0d",
   "license": "CC-BY-SA-4.0",
   "citation": {
     "file": "CITATION.cff",
@@ -19,8 +19,8 @@
     },
     {
       "path": "docs/coverage.md",
-      "bytes": 8418,
-      "sha256": "0b8083744eb9540532746c8eea3c898a721ea4c016e7c6682971760d453aaa73"
+      "bytes": 8420,
+      "sha256": "96e4cbfb81e3b494cbd87970a02fc91db876769306abf7deebfa342472c4fb36"
     },
     {
       "path": "build/aircraft_types.csv",
@@ -30,14 +30,14 @@
     },
     {
       "path": "build/all_claims.csv",
-      "bytes": 27508890,
-      "sha256": "3c5d3406f52bdbfdc72e6073a8b34de37ccd7296bde70f8a4be1be1b0102ad0f",
+      "bytes": 27521672,
+      "sha256": "9a573fe9e523de7ce2481b6834381789ef1ba8be813a102db633834f84042621",
       "rows": 12770
     },
     {
       "path": "build/all_claims.json",
-      "bytes": 42088709,
-      "sha256": "330d566cd2b9abd84579ae8a96f7a1ded69aba3331258c0b2382b7b3a3531fba",
+      "bytes": 42305799,
+      "sha256": "1ce208cd99c787673df155b3e5e2df5ec2ec82bb9e8d68493c00d4cf5fcd4d4d",
       "rows": 12770
     },
     {
@@ -48,8 +48,8 @@
     },
     {
       "path": "build/claims.geojson",
-      "bytes": 19659685,
-      "sha256": "812fedc0ade51b460caaccadd4c994e533fa5738af167aac89a8f3520a678783",
+      "bytes": 19978935,
+      "sha256": "09688612a80301a9f8688e94b89b559e96247bea2dca45b176bd6e583670b944",
       "features": 12770
     },
     {
@@ -239,15 +239,15 @@
     },
     {
       "path": "build/operations.csv",
-      "bytes": 24758,
-      "sha256": "648b93ba382b588d9fd4187365c941eea29c88e51852d47317d4ed2fa314e537",
-      "rows": 75
+      "bytes": 25822,
+      "sha256": "fdeda9aa81cab076b33c57aba8595c28be167d2255469dd5bf27eaba915040ca",
+      "rows": 81
     },
     {
       "path": "build/operations.geojson",
-      "bytes": 113301,
-      "sha256": "c45ad0665d6430c1d894bb1e44d30d91e29c8b8f154770a973bd5fb951fee473",
-      "features": 75
+      "bytes": 121373,
+      "sha256": "9f5ca00782fc1a5b4306b3e4ecd880be3fbfb13e69867a2d2f9a4d56be3e5f8c",
+      "features": 81
     },
     {
       "path": "build/organic_relations.csv",
@@ -317,14 +317,14 @@
     },
     {
       "path": "build/units.csv",
-      "bytes": 2060071,
-      "sha256": "e909280501e7c57a41035511809ab371e78ea8dcd2bd82f3dee470018975ef6f",
+      "bytes": 2062718,
+      "sha256": "9b75294ac9ea4eb978d1112e90bc8832ef38d1d0d0e0670312734ed5b809a6eb",
       "rows": 2635
     },
     {
       "path": "build/units.json",
-      "bytes": 3124766,
-      "sha256": "4034fc03ec6f86688b9bac82b3467e00211c0a2217b24e035caf88079aa974ca",
+      "bytes": 3169561,
+      "sha256": "631fa65df85775f69c4882cd8ac35cc295d93e615dc08f8a8809b8625e002f3c",
       "rows": 2635
     },
     {

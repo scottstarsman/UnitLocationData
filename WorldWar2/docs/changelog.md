@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Per-theater date floors and removal of Western Front hard-coding (branch `theater-vocabulary`)
+
+Claim and mission date checks now use the per-theater floors in `schema/theaters.json` (global earliest date 7 July 1937; China and CBI from that date; most European theaters from 1 September 1939; Pacific from 1 July 1941). Coordinate checks use the vocabulary bounding boxes, including `atlantic` and `other` and both sides of the Pacific antimeridian; a mid-Atlantic point in theater `atlantic` is no longer treated as a typo. The web viewer is titled WWII Unit Locations, the caption uses the dataset date range, the default map view is the extent of the data, and a theater filter was added. The country vocabulary gained modern ISO 3166-1 codes needed for other fronts. Flagship order-of-battle snapshot dates stay Western Front for this release, and are documented as such. No published claim coordinates or dates were changed.
+
 ## 25 November 2026 — Two-level theater vocabulary (branch `theater-vocabulary`)
 
 `schema/theaters.json` and `docs/theaters.md` are a two-level list of theaters and sub-theaters based on official Allied and Axis theater divisions, with codes, names, parents, bounding boxes, date floors and cited sources. An optional `sub_theater` column was added to claims, units and operations; existing rows leave it blank. Existing theater codes stay valid: `north_africa`, `balkans`, `scandinavia` and `home_germany` are classified as sub-theaters but remain allowed in the `theater` column. Holding umbrellas `OP-FRONT-PACIFIC`, `OP-FRONT-CBI`, `OP-FRONT-ATLANTIC`, `OP-FRONT-ARCTIC`, `OP-FRONT-HOME` and `OP-FRONT-OTHER` were added so each theater has a place to file claims that are not yet under a named campaign. No existing claim theater values were renamed.

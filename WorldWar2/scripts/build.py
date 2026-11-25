@@ -89,7 +89,7 @@ import operation_extent  # noqa: E402
 import operation_units  # noqa: E402
 import export_oob  # noqa: E402
 
-GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'domain', 'theater',
+GEO_PROPS = ['claim_id', 'conflict_group_id', 'claim_status', 'unit_id', 'unit_name', 'nationality', 'domain', 'theater', 'sub_theater',
              'echelon', 'branch', 'date', 'commander', 'commander_person_id', 'commander_on_date', 'commander_on_date_person_id', 'commander_on_date_source', 'commander_on_date_basis', 'place_id', 'location_name', 'location_represents', 'precision_km', 'confidence',
              'event_type', 'current_activity', 'operation_id', 'operation', 'operation_type', 'campaign', 'operation_name', 'sub_operation_name', 'strength_status', 'location_date', 'location_basis',
              'location_temporal_offset_days', 'reference_ids', 'source_locator', 'sidc']

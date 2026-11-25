@@ -11,7 +11,7 @@ Everything lives in [`WorldWar2/`](WorldWar2/):
 - [`WorldWar2/data/`](WorldWar2/data/): the master data (one claim file per unit, the unit table, places, command relations, and the other source tables)
 - [`WorldWar2/docs/`](WorldWar2/docs/): methodology, sources, roadmap, coverage, reuse and attribution
 - [`WorldWar2/docs/review/`](WorldWar2/docs/review/): review notes
-- [`WorldWar2/CONTRIBUTING.md`](WorldWar2/CONTRIBUTING.md): how to add a unit or a claim
+- [`WorldWar2/CONTRIBUTING.md`](WorldWar2/CONTRIBUTING.md): how to fork, add a unit or a claim, run the checks, and start a new theater
 - [`WorldWar2/docs/maintainers.md`](WorldWar2/docs/maintainers.md): how to run the checks and the public release rules
 - [`WorldWar2/CITATION.cff`](WorldWar2/CITATION.cff): citation metadata
 - [`WorldWar2/build/manifest.json`](WorldWar2/build/manifest.json): schema and data versions, checksums and row counts

@@ -1,0 +1,34 @@
+name: New source suggestion
+description: A book, official history, document or site that could improve the dataset.
+title: "[source] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a source we should use. Free, original-language and official sources are preferred. See the [contributor guide](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md).
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: A stable link if one exists (catalogue record, official history page, archive item).
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title and author
+      description: Enough to find the work (author, title, year, volume).
+    validations:
+      required: true
+  - type: textarea
+    id: covers
+    attributes:
+      label: What does it cover?
+      description: Units, period, theater or front, and whether it is useful for places, command, or strength.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Licence or access
+      description: Optional. For example public domain, CC BY-SA, official publication, or library-only.

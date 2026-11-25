@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Issue and pull-request templates, and id checks in CI (branch `templates-and-ci`)
+
+Issue forms (data correction, new source, new theater, script or viewer bug) and a pull-request checklist are in `.github/`. The validate workflow now fetches the pull request's base `main` (or `origin/main` on a push) and runs `check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py` and the new `scripts/check_other_ids.py` (command relations, places, references, conflict groups, TO&E, aircraft types, ship classes). It stays on the `pull_request` event, with a read-only token and no secrets, so it is safe for forks. After a rebase, a second pull request that reused the same new ids fails those checks. `run_checks.sh` and the contributor and maintainer docs are updated. No claim, unit, or other data row was changed.
+
 ## 25 November 2026 — Contributor guide (branch `contrib-guide`)
 
 `CONTRIBUTING.md` rewritten for outside contributors: fork-to-pull-request steps, a worked example (text only; no example rows were added to the data), plain-language source and confidence rules, a "how to add a new theater" section, and `scripts/run_checks.sh` as the starting check command. Stale wording was corrected: claim `theater` is per row and must match the operation (not the unit's primary theater); operation `nationality_scope` uses nationality `name` values such as `Germany` (not `German`); every unit in this release is `in_scope`, and other-front rows are distinguished by `theater`. No claim, unit, or other data row was changed.

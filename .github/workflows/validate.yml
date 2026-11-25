@@ -16,6 +16,17 @@ jobs:
         working-directory: WorldWar2
     steps:
       - uses: actions/checkout@v4
+      # Depth 1 of the pull-request base (or of main, on a push) is enough for git show of that tree.
+      # pull_request, not pull_request_target: no secrets, read-only token, safe for forks.
+      - name: Fetch origin/main for id checks
+        working-directory: .
+        run: |
+          set -euo pipefail
+          if [ -n "${{ github.event.pull_request.base.sha }}" ]; then
+            git fetch --no-tags --depth=1 origin "${{ github.event.pull_request.base.sha }}":refs/remotes/origin/main
+          else
+            git fetch --no-tags --depth=1 origin main:refs/remotes/origin/main
+          fi
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -44,3 +55,10 @@ jobs:
       # fails the build: the answers of who_controls.py for four command scenarios (scripts/semantic_tests.py)
       - name: Semantic tests (command scenarios)
         run: python scripts/semantic_tests.py
+      # After rebase onto an updated main, a second PR that reused the same new ids fails here.
+      - name: Id collision checks against origin/main
+        run: |
+          python scripts/check_claim_ids.py
+          python scripts/check_mission_ids.py
+          python scripts/check_commander_ids.py
+          python scripts/check_other_ids.py

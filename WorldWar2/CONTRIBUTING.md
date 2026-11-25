@@ -67,12 +67,10 @@ Public ids are unique, never reused, and not renumbered once they have been on `
 | Mission | `MSN####` | `python scripts/check_mission_ids.py` |
 | Person / tenure | `PE####` / `UC####` | `python scripts/check_commander_ids.py` |
 | Reference | `R###` | `python scripts/build_references.py --add URL` assigns it |
-| Command relation | `CR####` | Highest in `data/command_relations.csv` plus one |
-| Place | `PL####` | Highest in `data/places.csv` plus one |
-| Conflict group | `G###` | Highest in use plus one |
+| Command relation, place, reference, conflict group, TO&E, aircraft type, ship class | `CR####`, `PL####`, `R###`, `G###`, `TT####`, `UT####`, `AT###`, `SC###` | `python scripts/check_other_ids.py` (also prints the next free id of each) |
 | Operation | `OP-` plus upper-case words | Choose a unique name; never rename or reuse one |
 
-`python scripts/check_claim_ids.py` (and the mission and commander scripts) compare your branch with `origin/main`. Run them before you open a pull request. If two branches took the same new numbers, the one merged second renumbers only its *unpublished* ids — never an id already on `main`. Maintainers may do that renumbering when they merge; a script to do it safely is planned.
+`python scripts/check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py` and `check_other_ids.py` compare your branch with `origin/main`. `run_checks.sh` runs them when `origin/main` is available, and CI runs them on every pull request (including from forks) after fetching the base `main`. If two branches took the same new numbers, rebase onto the updated `main`: the id checks will fail until the one merged second renumbers only its *unpublished* ids — never an id already on `main`. Maintainers may do that renumbering when they merge; a script to do it safely is planned.
 
 **The identity of a claim is its `claim_id`.** A claim keeps its id when it is corrected. The combination `(unit_id, date, event_type)` is a guard against entering the same claim twice. A unit has at most one claim per date and event type, unless the sources disagree (put both rows in one conflict group) or the unit really did two actions of the same kind on the same day (list the pair with a reason in `data/claim_key_exceptions.csv`). The validator names both claim ids when this fails.
 
@@ -225,11 +223,11 @@ That is the set to run before you open a pull request. It is read-only aside fro
 | `python scripts/review_sample.py --check` | The committed review sample is up to date. | Only relevant if you changed the review-sample inputs; regenerate it as the script says. |
 | `python scripts/check_coordinates.py` | Offline coordinate sanity (theater bounding box, speed, and others). Warnings only; it does not fail `run_checks.sh` on warnings. | Re-check the point or date. A known, sourced exception goes in `data/coordinate_exceptions.csv` with a reason. `--geocode` (network) is optional and should not be run in CI. |
 | `python scripts/audit_command_location.py` and `python scripts/audit_temporal_relationships.py` | Read-only review prompts (command patterns, overlaps, undated transfers). | A finding is a prompt, not an error. In the pull request, say which findings on rows you touched are real and which are expected. |
-| `python scripts/check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py` | Ids were not reused or dropped since `origin/main`. Skipped if `origin/main` is not available. They also print the next free id. | You dropped or reused a published id: restore or retire it. If the only problem is a collision with `main`, rebase and take new unused ids (or wait for the planned renumber script). |
+| `python scripts/check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py`, `check_other_ids.py` | Ids (claims, missions, people, tenures, command relations, places, references, conflict groups, TO&E, aircraft types, ship classes) were not reused or dropped since `origin/main`. Skipped if `origin/main` is not available. They also print the next free ids. | You dropped or reused a published id: restore or retire it. If the only problem is a collision with `main`, rebase and take new unused ids (or wait for the planned renumber script). |
 
 After the script passes, run `python scripts/build.py` if you have not already, and commit `build/`. Optional, needs network: `python scripts/build_references.py --check-links` re-checks reference URLs (then run `build.py` again).
 
-GitHub Actions runs a slightly smaller set on every pull request (`validate.py`, `check_json_fields.py`, `build.py --check`, `semantic_tests.py`; coordinate and temporal audits run but do not fail the job). It does not yet run the id-collision checks, so please run `run_checks.sh` locally when `origin/main` is available.
+GitHub Actions runs on every pull request, including from forks (`validate.py`, `check_json_fields.py`, `build.py --check`, `semantic_tests.py`, and the id-collision checks against the pull request's base `main`; coordinate and temporal audits run but do not fail the job). The workflow uses the `pull_request` event, a read-only token and no secrets. Please still run `bash scripts/run_checks.sh` locally when you can, so you see a failure before you push.
 
 ## Per-row review checklist
 

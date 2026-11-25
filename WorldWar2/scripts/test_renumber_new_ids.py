@@ -327,6 +327,64 @@ def test_verify_detects_duplicate():
         shutil.rmtree(root)
 
 
+def test_column_added_to_published_claims():
+    """A new column on every published claim must not make those rows look new.
+
+    This is the theater-vocabulary failure mode: sub_theater was added (blank) to
+    every published claim, so row tuples no longer matched main and --apply
+    rewrote published ids (C0001, R001) in those rows.
+    """
+    root = init_repo()
+    try:
+        seed_main(root)
+        add_branch_a(root)
+        main_sha = git(root, 'rev-parse', 'HEAD').stdout.strip()
+        add_branch_b_collisions(root)
+        # Add an empty sub_theater column after date on every claim file, as a
+        # schema addition that does not change published values.
+        import glob
+        for path in glob.glob(os.path.join(root, 'data', 'claims', '*', '*.csv')):
+            h, rows = common.read_dicts(path)
+            i = h.index('date') + 1
+            h = h[:i] + ['sub_theater'] + h[i:]
+            body = [[r.get(c, '') for c in h] for r in rows]
+            write_csv(path, h, body)
+        git(root, 'add', '.')
+        git(root, 'commit', '-m', 'branch B collisions plus a new claim column')
+
+        def published_cells():
+            out = {}
+            for path, cid in (
+                (os.path.join(root, 'data', 'claims', 'us', 'US-INF-001D.csv'), 'C0001'),
+                (os.path.join(root, 'data', 'claims', 'us', 'US-INF-001D.csv'), 'C0003'),
+                (os.path.join(root, 'data', 'claims', 'us', 'US-INF-002D.csv'), 'C0002'),
+            ):
+                rows = {r['claim_id']: r for r in common.read_dicts(path)[1]}
+                out[cid] = dict(rows[cid])
+            return out
+        before = published_cells()
+        rc = rn.main(['--root', root, '--base', main_sha, '--apply'])
+        assert rc == 0, 'apply failed after a column was added to published claims'
+        after = published_cells()
+        assert after == before, 'published claim rows were altered: %s' % (
+            {k: (before[k], after[k]) for k in before if before[k] != after[k]},)
+        # New colliding row was remapped; published C0003 stays on unit 001
+        h, rows = common.read_dicts(os.path.join(root, 'data', 'claims', 'us', 'US-INF-002D.csv'))
+        by_id = {r['claim_id']: r for r in rows}
+        assert 'C0002' in by_id and 'C0003' not in by_id and 'C0004' in by_id, by_id.keys()
+        assert by_id['C0002']['reference_ids'] == 'R001'
+        assert by_id['C0004']['reference_ids'] == 'R003'
+        assert 'sub_theater' in h
+        # Published C0001 still cites R001
+        rows1 = {r['claim_id']: r for r in common.read_dicts(
+            os.path.join(root, 'data', 'claims', 'us', 'US-INF-001D.csv'))[1]}
+        assert rows1['C0001']['reference_ids'] == 'R001'
+        assert rows1['C0003']['claim_id'] == 'C0003'
+    finally:
+        shutil.rmtree(root)
+
+
+
 def main():
     tests = [
         test_collision_and_apply,
@@ -334,6 +392,7 @@ def main():
         test_no_collision,
         test_token_word_boundaries,
         test_verify_detects_duplicate,
+        test_column_added_to_published_claims,
     ]
     failed = 0
     for fn in tests:

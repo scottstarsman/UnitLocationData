@@ -148,6 +148,15 @@
       "vocabulary": "theater"
     },
     {
+      "name": "sub_theater",
+      "type": "string",
+      "description": "Optional sub-theater of this claim row (vocabulary sub_theater): a child of the row's theater in schema/theaters.json. Existing rows may leave it blank. Must be consistent with the operation's sub_theater when both are set.",
+      "constraints": {
+        "required": false
+      },
+      "vocabulary": "sub_theater"
+    },
+    {
       "name": "nationality",
       "type": "string",
       "description": "Nationality of the unit: the `name` of a row of data/nationalities.csv (foreign key; US, UK, Canada, Germany, ... Allied). Repeated from data/units.csv (must equal it). Matches the data/claims/<nationality>/ folder in lowercase.",

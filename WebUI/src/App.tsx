@@ -73,7 +73,7 @@ export default function App() {
     return () => abort.abort();
   }, []);
   if (error) return <main className="loading-screen"><span className="eyebrow">SITUATION ATLAS</span><h1>Unable to load the dataset</h1><p>{error}</p><p>Run <code>npm run data:prepare</code> in WebUI, then reload.</p><button onClick={() => location.reload()}>Try again</button></main>;
-  if (!atlas) return <main className="loading-screen"><span className="eyebrow">WESTERN FRONT · 1944–45</span><h1>Opening the field atlas<span className="loading-dot">…</span></h1><p>Loading sourced observations and formation records.</p></main>;
+  if (!atlas) return <main className="loading-screen"><span className="eyebrow">WWII UNIT LOCATIONS</span><h1>Opening the field atlas<span className="loading-dot">…</span></h1><p>Loading sourced observations and formation records.</p></main>;
   return <AtlasApp atlas={atlas}/>;
 }
 
@@ -94,7 +94,7 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
   const [detailUnit, setDetailUnit] = useState(selected[0] ?? '');
   const [detailsOpen, setDetailsOpen] = useState(() => window.innerWidth > 1000);
   const [search, setSearch] = useState('');
-  const [filters, setFilters] = useState<Filters>({ nationality: '', echelon: '', operation: '', maxAge: 30, includeAlternates: false });
+  const [filters, setFilters] = useState<Filters>({ nationality: '', echelon: '', theater: '', operation: '', maxAge: 30, includeAlternates: false });
   const [rangeStart, setRangeStart] = useState(firstDate);
   const [rangeEnd, setRangeEnd] = useState(lastDate);
   const [wholeRange, setWholeRange] = useState(false);
@@ -107,6 +107,24 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
   const [includePlaceholders, setIncludePlaceholders] = useState(false);
   const [mobilePanel, setMobilePanel] = useState(false);
   const [timelineTab, setTimelineTab] = useState<'observation' | 'chronology'>('observation');
+  const dataBounds = useMemo(() => {
+    const pts = atlas.claims.filter(c => Number.isFinite(c.longitude) && Number.isFinite(c.latitude));
+    if (!pts.length) return null;
+    let west = pts[0].longitude, east = pts[0].longitude, south = pts[0].latitude, north = pts[0].latitude;
+    for (const c of pts) {
+      if (c.longitude < west) west = c.longitude;
+      if (c.longitude > east) east = c.longitude;
+      if (c.latitude < south) south = c.latitude;
+      if (c.latitude > north) north = c.latitude;
+    }
+    return [west, south, east, north] as [number, number, number, number];
+  }, [atlas]);
+  const theaters = useMemo(() => [...new Set(atlas.claims.map(c => c.theater).filter(Boolean))].sort(), [atlas]);
+  const dateCaption = useMemo(() => {
+    const a = formatDate(firstDate).toUpperCase();
+    const b = formatDate(lastDate).toUpperCase();
+    return `${a} — ${b}`;
+  }, [firstDate, lastDate]);
   const opSet = useMemo(() => operationSet(atlas.operations, filters.operation), [atlas, filters.operation]);
   const positions = useMemo(() => situation(index, date, filters, opSet), [index, date, filters, opSet]);
   const tracks = useMemo(() => histories(index, selected, rangeStart, rangeEnd, date, wholeRange, filters, opSet), [index, selected, rangeStart, rangeEnd, date, wholeRange, filters, opSet]);
@@ -125,6 +143,7 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
   const filteredUnits = useMemo(() => atlas.units.filter(u => (includePlaceholders || u.claim_rows > 0)
     && (!filters.nationality || u.nationality === filters.nationality)
     && (!filters.echelon || u.echelon === filters.echelon)
+    && (!filters.theater || (index.get(u.unit_id) ?? []).some(c => c.theater === filters.theater))
     && (!opSet || (index.get(u.unit_id) ?? []).some(c => opSet.has(c.operation_id)))
     && `${u.unit_name} ${u.unit_id} ${u.nationality}`.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => a.nationality.localeCompare(b.nationality) || a.unit_name.localeCompare(b.unit_name, undefined, { numeric: true })), [atlas, filters, search, includePlaceholders, opSet, index]);
@@ -171,8 +190,8 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
 
   return <div className="atlas-app">
     <header className="masthead">
-      <div className="atlas-brand"><div className="brand-symbol" aria-hidden="true"><span>XX</span><svg viewBox="0 0 36 26" fill="none" stroke="currentColor" strokeWidth="1.5" preserveAspectRatio="none"><path d="M1 1H35V25H1ZM1 1 35 25M35 1 1 25" vectorEffect="non-scaling-stroke"/></svg></div><div><span className="eyebrow">THE OBSERVATION ATLAS</span><h1>The Western Front<span className="title-dot">.</span></h1></div></div>
-      <div className="header-caption">A sourced record of formations<br/><strong>6 JUNE 1944 — 10 MAY 1945</strong></div>
+      <div className="atlas-brand"><div className="brand-symbol" aria-hidden="true"><span>XX</span><svg viewBox="0 0 36 26" fill="none" stroke="currentColor" strokeWidth="1.5" preserveAspectRatio="none"><path d="M1 1H35V25H1ZM1 1 35 25M35 1 1 25" vectorEffect="non-scaling-stroke"/></svg></div><div><span className="eyebrow">THE OBSERVATION ATLAS</span><h1>WWII Unit Locations<span className="title-dot">.</span></h1></div></div>
+      <div className="header-caption">A sourced record of formations<br/><strong>{dateCaption}</strong></div>
       <div className="header-actions"><span className="edition">FIELD EDITION <b>01</b></span><button className="icon-button help-button" title="About the atlas" aria-label="About the atlas" onClick={() => setShowHelp(true)}><Icon name="info"/></button></div>
     </header>
 
@@ -181,7 +200,8 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
         <div className="panel-heading"><div><span className="eyebrow">ORDER OF BATTLE</span><h2>Formations <span>{atlas.manifest.observedUnitCount}</span></h2></div><button className="icon-button mobile-close" aria-label="Close formation list" onClick={() => setMobilePanel(false)}><Icon name="close"/></button></div>
         <label className="search-box"><Icon name="search" size={16}/><input aria-label="Search formations" placeholder="Find a formation…" value={search} onChange={e => setSearch(e.target.value)}/><kbd>/</kbd></label>
         <div className="filter-pair"><label>Nation<select aria-label="Filter nationality" value={filters.nationality} onChange={e => setFilters(f => ({ ...f, nationality: e.target.value }))}><option value="">All nations</option>{atlas.nationalities.map(n => <option key={n.name}>{n.name}</option>)}</select></label><label>Echelon<select aria-label="Filter echelon" value={filters.echelon} onChange={e => setFilters(f => ({ ...f, echelon: e.target.value }))}><option value="">All levels</option>{[...new Set(atlas.units.map(u => u.echelon))].sort().map(e => <option key={e} value={e}>{humanize(e)}</option>)}</select></label></div>
-        <label className="operation-filter">Campaign / operation<select aria-label="Filter operation" value={filters.operation} onChange={e => setFilters(f => ({ ...f, operation: e.target.value }))}><option value="">Entire Western Front</option>{atlas.operations.map(o => <option key={o.operation_id} value={o.operation_id}>{'· '.repeat(Number(o.depth))}{o.name}</option>)}</select></label>
+        <div className="filter-pair"><label>Theater<select aria-label="Filter theater" value={filters.theater} onChange={e => { const theater = e.target.value; setFilters(f => ({ ...f, theater })); setFitRequest(n => n + 1); }}><option value="">All theaters</option>{theaters.map(th => <option key={th} value={th}>{humanize(th)}</option>)}</select></label></div>
+        <label className="operation-filter">Campaign / operation<select aria-label="Filter operation" value={filters.operation} onChange={e => setFilters(f => ({ ...f, operation: e.target.value }))}><option value="">All operations</option>{atlas.operations.map(o => <option key={o.operation_id} value={o.operation_id}>{'· '.repeat(Number(o.depth))}{o.name}</option>)}</select></label>
         <div className="formation-list-heading"><span>{filteredUnits.length} FORMATIONS</span><span title="Check formations to compare their movement histories">HISTORY</span></div>
         <div className="formation-list">
           {filteredUnits.map(u => {
@@ -192,7 +212,7 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
               <label className="unit-check" style={{ '--track-color': chosen >= 0 ? historyColors[chosen % historyColors.length] : undefined } as CSSProperties}><input type="checkbox" aria-label={`Include ${u.nationality} ${u.unit_name} in movement history`} checked={chosen >= 0} onChange={() => toggleUnit(u.unit_id)}/><span>{chosen >= 0 ? '✓' : '+'}</span></label>
             </div>;
           })}
-          {!filteredUnits.length && <div className="list-empty"><strong>No matching formations</strong><p>Try another name or clear the filters.</p><button className="text-button" onClick={() => { setSearch(''); setFilters(f => ({ ...f, nationality: '', echelon: '', operation: '' })); }}>Clear search & filters</button></div>}
+          {!filteredUnits.length && <div className="list-empty"><strong>No matching formations</strong><p>Try another name or clear the filters.</p><button className="text-button" onClick={() => { setSearch(''); setFilters(f => ({ ...f, nationality: '', echelon: '', theater: '', operation: '' })); }}>Clear search & filters</button></div>}
         </div>
         <div className="formation-footer"><label className="check-label"><input type="checkbox" checked={includePlaceholders} onChange={e => setIncludePlaceholders(e.target.checked)}/> Include units without claims</label><span>{atlas.manifest.claimCount.toLocaleString()} observations · {atlas.manifest.unitCount} catalogued units</span></div>
       </aside>
@@ -201,7 +221,7 @@ function AtlasApp({ atlas }: { atlas: Atlas }) {
         <div className="map-toolbar"><div className="mode-switch" role="group" aria-label="Map mode"><button aria-pressed={mode === 'situation'} className={mode === 'situation' ? 'active' : ''} onClick={() => switchMode('situation')}><span className="tiny-cross">⊞</span> Situation</button><button aria-pressed={mode === 'history'} className={mode === 'history' ? 'active' : ''} onClick={() => switchMode('history')}><Icon name="route" size={16}/> Movement history</button></div><div className="toolbar-options"><button className="mobile-formations text-button" onClick={() => setMobilePanel(true)}>Formations</button><label className="check-label"><input type="checkbox" checked={showLabels} onChange={e => setShowLabels(e.target.checked)}/> Labels</label><button className="icon-button" title="Fit visible observations" aria-label="Fit visible observations" onClick={() => setFitRequest(n => n + 1)}><Icon name="locate"/></button></div></div>
         <div className="situation-strip"><div><span className="eyebrow">{mode === 'situation' ? 'SITUATION AS OF' : 'MOVEMENT RECORD'}</span><h2>{formatDate(date)}</h2></div><div className="situation-stats"><strong>{mode === 'situation' ? visibleUnits.size : tracks.reduce((n, t) => n + t.points.length, 0)}</strong><span>{mode === 'situation' ? 'formations shown' : 'observations in range'}</span><i/><strong>{mode === 'situation' ? sameDayCount : selected.length}</strong><span>{mode === 'situation' ? 'observed this day' : 'units selected'}</span></div></div>
         {mode === 'history' && <div className="history-controls"><label>From<DateField label="History start date" min={firstDate} max={rangeEnd} value={rangeStart} onCommit={v => { setRangeStart(v); setFocusedId(''); setPlaying(false); }}/></label><span>—</span><label>To<DateField label="History end date" min={rangeStart} max={lastDate} value={rangeEnd} onCommit={v => { setRangeEnd(v); setFocusedId(''); setPlaying(false); }}/></label><label className="check-label whole-range"><input type="checkbox" checked={wholeRange} onChange={e => setWholeRange(e.target.checked)}/> Show entire range</label></div>}
-        <div className="map-area"><MapView positions={mapPositions} tracks={tracks} selected={selected} focused={focused} date={date} mode={mode} showPrecision={showPrecision} showLabels={showLabels} fitRequest={fitRequest} onClaim={focusClaim}/>
+        <div className="map-area"><MapView initialBounds={dataBounds} positions={mapPositions} tracks={tracks} selected={selected} focused={focused} date={date} mode={mode} showPrecision={showPrecision} showLabels={showLabels} fitRequest={fitRequest} onClaim={focusClaim}/>
           {mode === 'history' && selected.length === 0 && <div className="map-empty"><Icon name="route" size={30}/><h3>Trace a formation’s history</h3><p>Check one or more formations in the list to compare their recorded locations.</p><button onClick={() => setMobilePanel(true)} className="mobile-formations">Choose formations</button></div>}
           {!(mode === 'history' && !selected.length) && mapPositions.length === 0 && (mode === 'situation' || !tracks.some(t => t.points.length)) && <div className="map-empty"><h3>No observations to show</h3><p>Try a later date, a wider history range, or a different filter.</p></div>}
         </div>

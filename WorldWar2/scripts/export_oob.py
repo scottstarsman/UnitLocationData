@@ -34,6 +34,9 @@ import toe as toemod  # noqa: E402
 import operations  # noqa: E402
 import who_controls  # noqa: E402
 
+# Flagship snapshot dates for this release are Western Front events (D-Day through the
+# German surrender in the west). They will stay that way until a later release adds
+# flagship dates for other theaters; they are not a limit on what the dataset may contain.
 FLAGSHIP_DATES = [
     '1944-06-06',  # D-Day / Neptune
     '1944-07-18',  # Goodwood and Atlantic open

@@ -110,14 +110,14 @@ Generated from `data/operations.csv` and every claim's `operation_id` (all domai
 
 | op_type | Operation rows | Rows used by a claim | Claims whose operation_id is of this type |
 |---|---:|---:|---:|
-| umbrella | 9 | 7 | 709 |
+| umbrella | 15 | 7 | 709 |
 | campaign | 9 | 9 | 8217 |
 | operation | 33 | 33 | 2912 |
 | battle | 20 | 20 | 609 |
 | phase | 4 | 4 | 323 |
-| **All** | **75** | **73** | **12770** |
+| **All** | **81** | **73** | **12770** |
 
-Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 52, compact 3, broad 15, none 5. A map pin (`primary_place_id`) is a sourced place, not this centroid.
+Derived extent quality (preferred coordinates, headquarters rows and points 200 km from the median excluded): focal 52, compact 3, broad 15, none 11. A map pin (`primary_place_id`) is a sourced place, not this centroid.
 
 ## Places
 

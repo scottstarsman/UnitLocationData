@@ -42,6 +42,8 @@ Sides and MIL-STD-2525D standard identity are stored from the Allied viewpoint (
 
 ## Files and keys
 
+The list of theaters and sub-theaters is in [`docs/theaters.md`](docs/theaters.md) and [`schema/theaters.json`](schema/theaters.json). To add a front, start with [How to add a new theater](CONTRIBUTING.md#how-to-add-a-new-theater).
+
 Start here (paths relative to this folder). Filter claims on `domain` (`ground` / `air` / `naval`) and, for the surveyed Western Front, on `theater == "western_europe"`. The unit table has a `scope` column (`in_scope` / `out_of_scope`), but in this release every unit is `in_scope`; incidental other-front rows are distinguished by `theater` (and sometimes `operation_id`), not by `scope`. The who_controls grid is a derived point-in-time command tree used in checks and in the order-of-battle exporter; it still defaults to in-scope ground subjects.
 
 - `build/all_claims.csv`, `build/all_claims.json`, `build/claims.geojson` — every claim, all domains, including the derived `commander_on_date` columns

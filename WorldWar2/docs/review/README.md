@@ -81,7 +81,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | claim files (one per active unit) | 2544 |
 | conflict groups / claims in a group | 299 / 636 |
 | places (`data/places.csv`) / retired in `data/place_merges.csv` | 4878 / 9 |
-| operations / operation relations | 75 / 14 |
+| operations / operation relations | 81 / 14 |
 | command relations (`data/command_relations.csv`) | 3737 |
 | relation-to-claim evidence links (`data/command_relation_claims.csv`) | 6571 |
 | documented relation overlaps (`data/command_relation_overlaps.csv`) | 35 |
@@ -89,7 +89,7 @@ Computed from the data by `python scripts/review_sample.py --counts`; the block 
 | references (`data/references.csv`, generated) | 2215, of which 1692 cited by at least one claim (the others are cited by units or operations) |
 | claim-reference roles (`data/claim_reference_roles.csv`) | 82 |
 | nationalities / retired claim ids / claim-key exceptions | 43 / 7 / 12 |
-| controlled vocabularies in `schema/vocabularies.json` | 63 |
+| controlled vocabularies in `schema/vocabularies.json` | 64 |
 
 Claims by nationality: Germany 4786, US 4059, UK 2577, Canada 716, France 356, Poland 129, Netherlands 51, Czechoslovakia 27, Belgium 24, Norway 19, Australia 14, New Zealand 9, Greece 2, Allied 1.
 

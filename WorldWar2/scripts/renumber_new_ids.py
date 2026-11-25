@@ -664,12 +664,59 @@ def row_tuple(header, row):
     return tuple((row.get(c) or '') for c in header)
 
 
+def tables_spec_for(rel):
+    """Return the TABLES entry whose file pattern matches rel, or None.
+
+    Link tables such as command_relation_claims.csv are not TABLES files, so a
+    foreign key like claim_id or relation_id must not be treated as this row's
+    published primary key.
+    """
+    rel_n = rel.replace(os.sep, '/')
+    for spec in TABLES:
+        pat = spec[3].replace(os.sep, '/')
+        want = re.compile(fnmatch_to_re(pat))
+        if want.match(rel_n) or want.match(rel_n.lstrip('./')):
+            return spec
+    return None
+
+
+def published_row_in_file(rel, row, base_rows):
+    """True if this TABLES-file row is a published primary key with the same identity.
+
+    Used so token replacement does not rewrite published ids in a published row
+    when the file also gained a new column (or an unrelated field edit).
+    Extra copies of a published tuple (same ids, a second unpublished row) are
+    still remapped because they fail the seen_counts test first, then this
+    helper only matches the *first* same-identity id in this file's base rows;
+    callers also require is_new_row.
+    """
+    if not base_rows:
+        return False
+    spec = tables_spec_for(rel)
+    if not spec:
+        return False
+    _kind, _pfx, _width, _pattern, id_col, ident_cols = spec
+    i = (row.get(id_col) or '').strip()
+    if not i:
+        return False
+    for br in base_rows:
+        if (br.get(id_col) or '').strip() == i:
+            if identity_of(br, ident_cols) == identity_of(row, ident_cols):
+                return True
+    return False
+
+
 def apply_csv_file(root, rel, header, rows, base_header, base_rows, mappings, tmap, base_members):
     """Return new rows and whether anything changed."""
     if not header:
         return rows, False
-    base_set = {row_tuple(base_header or header, r) for r in base_rows}
-    base_counts = Counter(row_tuple(base_header or header, r) for r in base_rows)
+    # Compare published vs working rows on the base revision's columns only.
+    # A new column (for example sub_theater added to every claim) must not make
+    # every published row look new, or token replacement would rewrite published
+    # ids such as C1234 or R001 in those rows.
+    compare_header = list(base_header) if base_header else list(header)
+    base_set = {row_tuple(compare_header, r) for r in base_rows}
+    base_counts = Counter(row_tuple(compare_header, r) for r in base_rows)
     seen_counts = Counter()
     table_maps = [
         m for m in mappings
@@ -716,11 +763,13 @@ def apply_csv_file(root, rel, header, rows, base_header, base_rows, mappings, tm
                     changed = True
                     break
 
-        seen_counts[original] += 1
+        aligned = row_tuple(compare_header, orig_row)
+        seen_counts[aligned] += 1
         # A new row can be token-identical to a published link (both sides collided).
         # Extra copies of a published tuple are unpublished and must be remapped.
-        is_new_row = (original not in base_set) or (seen_counts[original] > base_counts[original])
-        if is_new_row:
+        # Header alignment: ignore columns added on this branch when testing membership.
+        is_new_row = (aligned not in base_set) or (seen_counts[aligned] > base_counts[aligned])
+        if is_new_row and not published_row_in_file(rel, orig_row, base_rows):
             for c in header:
                 val = row.get(c) or ''
                 if not val:

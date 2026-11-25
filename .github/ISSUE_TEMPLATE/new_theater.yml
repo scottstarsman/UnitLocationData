@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        The dataset already has theater values for the main fronts. Please read [How to add a new theater](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md#how-to-add-a-new-theater) before proposing a new code. A later change will add a two-level list (theater and sub-theater).
+        The dataset has a two-level list of theaters and sub-theaters in [schema/theaters.json](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/schema/theaters.json) ([docs/theaters.md](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/docs/theaters.md)). Please read [How to add a new theater](https://github.com/scottstarsman/UnitLocationData/blob/main/WorldWar2/CONTRIBUTING.md#how-to-add-a-new-theater) before proposing a new code. Prefer an existing code.
   - type: input
     id: theater
     attributes:

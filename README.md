@@ -10,6 +10,7 @@ Everything lives in [`WorldWar2/`](WorldWar2/):
 - [`WorldWar2/build/`](WorldWar2/build/): ready-to-use combined files (`all_claims.csv`, `claims.geojson`, `units.csv`, `command_relations.csv`, `places.csv`, `operations.csv`, `manifest.json`, and the rest)
 - [`WorldWar2/data/`](WorldWar2/data/): the master data (one claim file per unit, the unit table, places, command relations, and the other source tables)
 - [`WorldWar2/docs/`](WorldWar2/docs/): methodology, sources, roadmap, coverage, reuse and attribution
+- [`WorldWar2/docs/theaters.md`](WorldWar2/docs/theaters.md): the two-level list of theaters and sub-theaters
 - [`WorldWar2/docs/review/`](WorldWar2/docs/review/): review notes
 - [`WorldWar2/CONTRIBUTING.md`](WorldWar2/CONTRIBUTING.md): how to fork, add a unit or a claim, run the checks, and start a new theater
 - [`WorldWar2/docs/maintainers.md`](WorldWar2/docs/maintainers.md): how to run the checks and the public release rules

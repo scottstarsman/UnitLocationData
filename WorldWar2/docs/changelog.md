@@ -2,6 +2,18 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Renumber script no longer rewrites published rows after a new column is added (branch `theater-vocabulary`)
+
+`renumber_new_ids.py --apply` compared working rows to `main` using each file's current header. Adding a column such as `sub_theater` made every published claim look new, so token replacement rewrote published ids (including `C1234` and `R001`) in those rows. The script now compares rows on the base revision's columns only, and it still does not rewrite tokens in a published TABLES-file row whose id and identity are already on `main`. A fixture test adds a column to published claims and asserts those rows are unchanged. No claim, unit, or other data row was changed.
+
+## 25 November 2026 — Per-theater date floors and removal of Western Front hard-coding (branch `theater-vocabulary`)
+
+Claim and mission date checks now use the per-theater floors in `schema/theaters.json` (global earliest date 7 July 1937; China and CBI from that date; most European theaters from 1 September 1939; Pacific from 1 July 1941). Coordinate checks use the vocabulary bounding boxes, including `atlantic` and `other` and both sides of the Pacific antimeridian; a mid-Atlantic point in theater `atlantic` is no longer treated as a typo. The web viewer is titled WWII Unit Locations, the caption uses the dataset date range, the default map view is the extent of the data, and a theater filter was added. The country vocabulary gained modern ISO 3166-1 codes needed for other fronts. Flagship order-of-battle snapshot dates stay Western Front for this release, and are documented as such. No published claim coordinates or dates were changed.
+
+## 25 November 2026 — Two-level theater vocabulary (branch `theater-vocabulary`)
+
+`schema/theaters.json` and `docs/theaters.md` are a two-level list of theaters and sub-theaters based on official Allied and Axis theater divisions, with codes, names, parents, bounding boxes, date floors and cited sources. An optional `sub_theater` column was added to claims, units and operations; existing rows leave it blank. Existing theater codes stay valid: `north_africa`, `balkans`, `scandinavia` and `home_germany` are classified as sub-theaters but remain allowed in the `theater` column. Holding umbrellas `OP-FRONT-PACIFIC`, `OP-FRONT-CBI`, `OP-FRONT-ATLANTIC`, `OP-FRONT-ARCTIC`, `OP-FRONT-HOME` and `OP-FRONT-OTHER` were added so each theater has a place to file claims that are not yet under a named campaign. No existing claim theater values were renamed.
+
 ## 25 November 2026 — Renumber tests no longer require a local `main` (branch `renumber-ids-hardened`)
 
 The full-dataset remumber test failed in CI, which has `origin/main` (fetched at depth 1) but no local `main` branch. The test now resolves the base SHA in the source repo (`origin/main`, then `main`, then `HEAD`) and installs a local `base` ref in its temp clone. `renumber_new_ids.py` uses the same fallback when `--base` is omitted. No data rows changed.

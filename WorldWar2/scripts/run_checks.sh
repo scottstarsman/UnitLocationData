@@ -27,8 +27,9 @@ if git rev-parse --verify -q origin/main >/dev/null; then
     step check_claim_ids 'tail -2' python3 scripts/check_claim_ids.py
     step check_mission_ids 'tail -2' python3 scripts/check_mission_ids.py
     step check_commander_ids 'tail -3' python3 scripts/check_commander_ids.py
+    step check_other_ids 'cat' python3 scripts/check_other_ids.py
 else
-    echo "(check_claim_ids, check_mission_ids and check_commander_ids skipped: origin/main not available)"
+    echo "(check_claim_ids, check_mission_ids, check_commander_ids and check_other_ids skipped: origin/main not available)"
 fi
 if [ ${#FAILED[@]} -ne 0 ]; then
     echo "CHECKS FAILED: ${FAILED[*]}"; exit 1

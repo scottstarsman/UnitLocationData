@@ -90,6 +90,15 @@
       "vocabulary": "theater"
     },
     {
+      "name": "sub_theater",
+      "type": "string",
+      "description": "Optional primary sub-theater of the unit (vocabulary sub_theater), a child of the unit's primary theater. Not copied onto claim rows. Existing units may leave it blank.",
+      "constraints": {
+        "required": false
+      },
+      "vocabulary": "sub_theater"
+    },
+    {
       "name": "parent_unit_id",
       "type": "string",
       "description": "Fixed organic parent unit, used for battle groups and combat commands (their parent division). Blank for units whose parent changes with time; use claims.parent_unit_id and the command relations (data/command_relations.csv) for time-dependent parents.",

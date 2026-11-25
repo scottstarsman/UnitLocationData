@@ -1,0 +1,967 @@
+{
+  "title": "WWII theaters and sub-theaters",
+  "description": "A two-level controlled vocabulary of Second World War theaters and sub-theaters, based on official Allied and Axis theater divisions (US ETO, MTO, POA with North/Central/South Pacific Areas, SWPA, and CBI; British and Commonwealth commands; German OKW/OKH fronts). Codes already used in published data stay valid: north_africa, balkans, scandinavia and home_germany are classified as sub-theaters but remain allowed in the theater column. New sub-theater codes are used only in the optional sub_theater field. Bounding boxes are loose typo checks, not political borders. Date floors are the earliest claim or mission date the checks will accept in that theater; start_date and end_date are the typical official span and are informational. The global earliest date the dataset accepts is 7 July 1937 (Marco Polo Bridge). The global latest working bound is 31 December 1945.",
+  "global_date_floor": "1937-07-07",
+  "global_date_ceiling": "1945-12-31",
+  "sources": [
+    {
+      "id": "cmh-eto",
+      "title": "United States Army in World War II: The European Theater of Operations (series)",
+      "publisher": "U.S. Army Center of Military History",
+      "note": "Defines the European Theater of Operations (ETOUSA) and the northwest-Europe campaign, including the United Kingdom as a base of operations and southern France from the Dragoon landing as part of the Western Front advance."
+    },
+    {
+      "id": "cmh-supreme-command",
+      "title": "Pogue, Forrest C. The Supreme Command. United States Army in World War II: The European Theater of Operations",
+      "publisher": "U.S. Army Center of Military History",
+      "note": "SHAEF and the northwest-Europe command structure under which 21st, 12th and 6th Army Groups operated."
+    },
+    {
+      "id": "cmh-mto",
+      "title": "United States Army in World War II: The Mediterranean Theater of Operations (series), including Howe, Northwest Africa, and Garland and Smyth, Sicily and the Surrender of Italy",
+      "publisher": "U.S. Army Center of Military History",
+      "note": "Defines the Mediterranean Theater of Operations (NATOUSA / MTOUSA): North Africa, Sicily, Italy and related Mediterranean operations."
+    },
+    {
+      "id": "cmh-pacific",
+      "title": "Morton, Louis. Strategy and Command: The First Two Years. United States Army in World War II: The War in the Pacific",
+      "publisher": "U.S. Army Center of Military History",
+      "note": "Records the Pacific Ocean Areas (POA) under Nimitz, subdivided into the North, Central and South Pacific Areas, and the Southwest Pacific Area (SWPA) under MacArthur."
+    },
+    {
+      "id": "cmh-cbi",
+      "title": "Romanus, Charles F., and Riley Sunderland. Stilwell's Mission to China. United States Army in World War II: China-Burma-India Theater",
+      "publisher": "U.S. Army Center of Military History",
+      "note": "Defines the China-Burma-India theater (later split into a China Theater and an India-Burma Theater) and treats 7 July 1937 (the Marco Polo Bridge incident) as the opening of the China war."
+    },
+    {
+      "id": "uk-official",
+      "title": "History of the Second World War, United Kingdom Military Series (HMSO), including Playfair, The Mediterranean and Middle East, and the official histories of the war against Japan and of the war at sea",
+      "publisher": "Her Majesty's Stationery Office",
+      "note": "British and Commonwealth command areas: Home Forces; 21st Army Group; Mediterranean and Middle East Command; Persia and Iraq Command; East Africa Command; South-East Asia Command (SEAC)."
+    },
+    {
+      "id": "okw-okh",
+      "title": "German high-command theater division: Oberkommando der Wehrmacht (OKW) theaters (West, Süd, Südost, Norwegen) and the Oberkommando des Heeres (OKH) Eastern Front (Ostfront)",
+      "publisher": "Described in the MGFA series Germany and the Second World War and in Tessin, Verbände und Truppen der deutschen Wehrmacht und Waffen-SS",
+      "note": "Used for Western Europe (OB West), the Mediterranean and Balkans (OB Süd / OB Südost), Norway (Wehrmachtbefehlshaber Norwegen), and the Eastern Front as an OKH theater."
+    },
+    {
+      "id": "atlantic",
+      "title": "Official Allied and German accounts of the Battle of the Atlantic and of the Arctic convoys (UK official history of the war at sea; U.S. Naval History and Heritage Command; German Seekriegsleitung)",
+      "publisher": "various official histories",
+      "note": "The Battle of the Atlantic is treated as a theater of sea and air operations from the British declaration of war (3 September 1939). Arctic convoy routes are also listed as a sub-theater of arctic."
+    }
+  ],
+  "theaters": [
+    {
+      "code": "western_europe",
+      "name": "Western Europe",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          35.0,
+          62.0,
+          -12.0,
+          25.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-08",
+      "official_equivalents": "US European Theater of Operations (ETOUSA); German Westfront / Oberbefehlshaber West; British 21st Army Group and Home Forces (for the United Kingdom as a base)",
+      "description": "Northwest Europe and France: the 1940 campaign in the West, the 1940-1944 occupation of France, Belgium, the Netherlands, Luxembourg and the Channel Islands, staging in Great Britain, and the campaign from the Normandy landings to the end of the war in the West (including Germany, Austria and Czechoslovakia as the Western Allies advanced), plus southern France from the Dragoon landings (15 August 1944) on."
+    },
+    {
+      "code": "britain",
+      "name": "Britain",
+      "level": "sub_theater",
+      "parent": "western_europe",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          49.0,
+          61.0,
+          -11.0,
+          2.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-08",
+      "official_equivalents": "British Home Forces; US ETO base in the United Kingdom; the Battle of Britain and the air and V-weapon war over the British Isles",
+      "description": "Great Britain, Northern Ireland and the adjacent waters as a home, staging and air-defence area."
+    },
+    {
+      "code": "france_low_countries",
+      "name": "France and the Low Countries",
+      "level": "sub_theater",
+      "parent": "western_europe",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          42.0,
+          54.0,
+          -5.5,
+          9.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1940-05-10",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The 1940 campaign in the West (Fall Gelb / Fall Rot) and the 1944-1945 campaign in France, Belgium, the Netherlands and Luxembourg (CMH ETO streamers Normandy, Northern France, Rhineland in part)",
+      "description": "France, Belgium, the Netherlands, Luxembourg and the Channel Islands, including the 1940 campaign, the occupation, and the 1944-1945 campaign west of the Rhine."
+    },
+    {
+      "code": "southern_france",
+      "name": "Southern France",
+      "level": "sub_theater",
+      "parent": "western_europe",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          41.5,
+          47.0,
+          -2.0,
+          8.0
+        ]
+      ],
+      "date_floor": "1944-08-15",
+      "start_date": "1944-08-15",
+      "end_date": "1945-05-08",
+      "official_equivalents": "Operation Dragoon and the Riviera-to-Rhine advance (CMH campaign streamer Southern France); from 15 August 1944 this is Western Front, not Mediterranean",
+      "description": "Southern France from the Dragoon landings on 15 August 1944 through the advance to the Rhine. Staging in Italy or Corsica before that date is mediterranean / italy."
+    },
+    {
+      "code": "germany_west",
+      "name": "Germany, Austria and Czechoslovakia (Western Allies)",
+      "level": "sub_theater",
+      "parent": "western_europe",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          45.5,
+          55.5,
+          5.0,
+          19.0
+        ]
+      ],
+      "date_floor": "1944-09-01",
+      "start_date": "1944-09-11",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The Western Allied advance into Germany, Austria and Czechoslovakia (CMH streamers Rhineland, Ardennes-Alsace, Central Europe)",
+      "description": "German, Austrian and Czechoslovak territory once it was in the path of the Western Allies. Forming and training inside the Reich before the front arrived is home_germany. Territory reached by the Red Army is eastern_front / germany_east."
+    },
+    {
+      "code": "mediterranean",
+      "name": "Mediterranean",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          28.0,
+          48.0,
+          -10.0,
+          40.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1940-06-10",
+      "end_date": "1945-05-15",
+      "official_equivalents": "US Mediterranean Theater of Operations (NATOUSA / MTOUSA); British Mediterranean and Middle East Command; German Oberbefehlshaber Süd",
+      "description": "Italy, Sicily, Sardinia, Corsica and the Mediterranean Sea; southern France only before the Dragoon landing. North Africa, the Balkans and the Middle East are sub-theaters (and, for existing rows, north_africa and balkans remain valid as theater values)."
+    },
+    {
+      "code": "north_africa",
+      "name": "North Africa",
+      "level": "sub_theater",
+      "parent": "mediterranean",
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          15.0,
+          38.0,
+          -20.0,
+          40.0
+        ]
+      ],
+      "date_floor": "1940-06-10",
+      "start_date": "1940-06-10",
+      "end_date": "1943-05-13",
+      "official_equivalents": "The North African campaigns of MTO / Middle East Command (Egypt, Libya, Tunisia, Algeria, Morocco), 1940-1943",
+      "description": "Libya, Egypt, Tunisia, Algeria and Morocco, 1940-1943. Legacy theater code: existing rows may keep theater=north_africa; new rows may use theater=mediterranean and sub_theater=north_africa."
+    },
+    {
+      "code": "italy",
+      "name": "Italy",
+      "level": "sub_theater",
+      "parent": "mediterranean",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          35.0,
+          48.0,
+          6.0,
+          20.0
+        ]
+      ],
+      "date_floor": "1940-06-10",
+      "start_date": "1943-07-09",
+      "end_date": "1945-05-02",
+      "official_equivalents": "The Italian campaign of MTO (Sicily, the mainland, Sardinia, Corsica); Allied Force Headquarters (AFHQ)",
+      "description": "Sicily, the Italian mainland, Sardinia and Corsica. Malta and early Mediterranean sea and air operations before Husky use this sub-theater or the parent mediterranean theater."
+    },
+    {
+      "code": "balkans",
+      "name": "Balkans",
+      "level": "sub_theater",
+      "parent": "mediterranean",
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          34.0,
+          47.5,
+          13.0,
+          30.0
+        ]
+      ],
+      "date_floor": "1940-10-28",
+      "start_date": "1940-10-28",
+      "end_date": "1945-05-15",
+      "official_equivalents": "German Oberbefehlshaber Südost; the 1940-1941 Greek and Yugoslav campaigns and the 1944-1945 withdrawal; British Balkan operations",
+      "description": "Yugoslavia, Albania, Greece, Bulgaria and the Aegean islands. Legacy theater code: existing rows may keep theater=balkans."
+    },
+    {
+      "code": "middle_east",
+      "name": "Middle East",
+      "level": "sub_theater",
+      "parent": "mediterranean",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          12.0,
+          42.0,
+          24.0,
+          65.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-08",
+      "official_equivalents": "British Middle East Command (less Egypt-Libya when filed as north_africa) and Persia and Iraq Command (PAIC)",
+      "description": "The Levant, Iraq, Iran, Palestine, Syria and neighbouring Middle Eastern areas, including the 1941 Syria-Lebanon and Iraq operations."
+    },
+    {
+      "code": "eastern_front",
+      "name": "Eastern Front",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          40.0,
+          72.0,
+          10.0,
+          70.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-11",
+      "official_equivalents": "German OKH Ostfront; the Soviet-German war and the 1939 Polish campaign as filed in this dataset",
+      "description": "Germany and other Axis powers versus the USSR, and the 1939 Polish campaign: the Soviet Union, Poland, the Baltic, Romania, Hungary, Slovakia and Finland, including German territory once the Red Army reached it."
+    },
+    {
+      "code": "poland",
+      "name": "Poland",
+      "level": "sub_theater",
+      "parent": "eastern_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          48.0,
+          55.5,
+          14.0,
+          25.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-11",
+      "official_equivalents": "The 1939 Polish campaign and later fighting on Polish territory between Germany and the USSR",
+      "description": "Poland, including the September 1939 campaign and later Eastern Front fighting on Polish territory. Forming and training inside the 1937 German border is home_germany."
+    },
+    {
+      "code": "soviet_union",
+      "name": "Soviet Union",
+      "level": "sub_theater",
+      "parent": "eastern_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          40.0,
+          72.0,
+          20.0,
+          70.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1941-06-22",
+      "end_date": "1945-05-11",
+      "official_equivalents": "The Soviet-German war from Barbarossa (22 June 1941) on, including the Baltic, Ukraine, Belarus and Russia",
+      "description": "The USSR as a combat zone, including the Baltic republics, Ukraine, Belarus and Russia. Finland is its own sub-theater. The date floor allows earlier incidental rows (for example 1939-1940)."
+    },
+    {
+      "code": "finland",
+      "name": "Finland",
+      "level": "sub_theater",
+      "parent": "eastern_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          59.0,
+          71.0,
+          19.0,
+          33.0
+        ]
+      ],
+      "date_floor": "1939-11-30",
+      "start_date": "1939-11-30",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The Winter War (30 November 1939) and the Continuation War; German Gebirgsarmee / AOK 20 in northern Finland and Lapland",
+      "description": "Finland, including the Winter War and the Continuation War. Denmark and Norway are scandinavia, under arctic."
+    },
+    {
+      "code": "germany_east",
+      "name": "Germany (Red Army)",
+      "level": "sub_theater",
+      "parent": "eastern_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          48.0,
+          56.0,
+          10.0,
+          24.0
+        ]
+      ],
+      "date_floor": "1944-06-01",
+      "start_date": "1944-08-01",
+      "end_date": "1945-05-11",
+      "official_equivalents": "The Red Army's advance into East Prussia, Silesia, Pomerania, the Oder front and Berlin, to the last fighting around Prague (11 May 1945)",
+      "description": "German, Austrian and Czechoslovak territory once it was in the path of the Red Army. The Western Allied advance is germany_west."
+    },
+    {
+      "code": "pacific",
+      "name": "Pacific",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          -50.0,
+          72.0,
+          90.0,
+          180.0
+        ],
+        [
+          -50.0,
+          72.0,
+          -180.0,
+          -110.0
+        ]
+      ],
+      "date_floor": "1941-07-01",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "US Pacific Ocean Areas (POA) under Nimitz, with North, Central and South Pacific Areas, and the Southwest Pacific Area (SWPA) under MacArthur",
+      "description": "Pacific Ocean areas and the Southwest Pacific, including Japan, the Philippines, the Dutch East Indies, the Aleutians and the eastern Pacific (Hawaii and the approaches to the Americas). The bounding boxes cover both sides of the antimeridian. The date floor is 1 July 1941 so that pre-Pearl Harbor garrison and buildup rows are allowed; the official opening of hostilities is 7 December 1941."
+    },
+    {
+      "code": "central_pacific",
+      "name": "Central Pacific",
+      "level": "sub_theater",
+      "parent": "pacific",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          0.0,
+          35.0,
+          125.0,
+          180.0
+        ],
+        [
+          0.0,
+          35.0,
+          -180.0,
+          -140.0
+        ]
+      ],
+      "date_floor": "1941-07-01",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "POA Central Pacific Area (Gilberts, Marshalls, Marianas, Carolines, Iwo Jima, Okinawa)",
+      "description": "The Central Pacific drive: the Gilbert, Marshall, Mariana and Caroline Islands, Iwo Jima and Okinawa, and the surrounding ocean."
+    },
+    {
+      "code": "south_pacific",
+      "name": "South Pacific",
+      "level": "sub_theater",
+      "parent": "pacific",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          -30.0,
+          5.0,
+          155.0,
+          180.0
+        ],
+        [
+          -30.0,
+          5.0,
+          -180.0,
+          -150.0
+        ]
+      ],
+      "date_floor": "1941-07-01",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "POA South Pacific Area (SOPAC): the Solomons, New Hebrides, New Caledonia, Fiji and neighbouring islands",
+      "description": "The South Pacific Area: the Solomon Islands, New Hebrides (Vanuatu), New Caledonia, Fiji and neighbouring island groups."
+    },
+    {
+      "code": "southwest_pacific",
+      "name": "Southwest Pacific",
+      "level": "sub_theater",
+      "parent": "pacific",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          -50.0,
+          22.0,
+          110.0,
+          160.0
+        ]
+      ],
+      "date_floor": "1941-07-01",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "Southwest Pacific Area (SWPA) under MacArthur: Australia, New Guinea, the Bismarcks, the Philippines and the Dutch East Indies",
+      "description": "Australia, New Guinea, the Bismarck Archipelago, the Philippines and the Dutch East Indies (Indonesia), including Borneo."
+    },
+    {
+      "code": "north_pacific",
+      "name": "North Pacific",
+      "level": "sub_theater",
+      "parent": "pacific",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          45.0,
+          72.0,
+          140.0,
+          180.0
+        ],
+        [
+          45.0,
+          72.0,
+          -180.0,
+          -140.0
+        ]
+      ],
+      "date_floor": "1941-07-01",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "POA North Pacific Area (NOPAC): Alaska, the Bering Sea and the Kuriles (the Aleutians have their own sub-theater)",
+      "description": "The North Pacific Area other than the Aleutian chain: Alaska, the Bering Sea and the Kurile Islands."
+    },
+    {
+      "code": "aleutians",
+      "name": "Aleutians",
+      "level": "sub_theater",
+      "parent": "pacific",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          50.0,
+          58.0,
+          165.0,
+          180.0
+        ],
+        [
+          50.0,
+          58.0,
+          -180.0,
+          -160.0
+        ]
+      ],
+      "date_floor": "1941-12-07",
+      "start_date": "1942-06-03",
+      "end_date": "1943-08-24",
+      "official_equivalents": "The Aleutian Islands campaign (Dutch Harbor, Attu, Kiska) within the North Pacific Area",
+      "description": "The Aleutian Islands and immediately adjacent waters, including the 1942-1943 campaign."
+    },
+    {
+      "code": "japan_home",
+      "name": "Japan (home islands)",
+      "level": "sub_theater",
+      "parent": "pacific",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          24.0,
+          46.0,
+          124.0,
+          146.0
+        ]
+      ],
+      "date_floor": "1941-07-01",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "The Japanese home islands as a combat and strategic-bombing theater, including Okinawa only when not filed as central_pacific",
+      "description": "The Japanese home islands (Honshu, Kyushu, Shikoku, Hokkaido) and immediately adjacent waters, including strategic bombing and the planned invasion. Training and rear-area rows that are not a combat zone may use home_front / home_japan."
+    },
+    {
+      "code": "cbi",
+      "name": "China-Burma-India",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          0.0,
+          54.0,
+          60.0,
+          135.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1937-07-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "US China-Burma-India Theater (later China Theater and India-Burma Theater); British India Command and South-East Asia Command (SEAC)",
+      "description": "China, Burma, India and Indochina. The date floor is 7 July 1937, the Marco Polo Bridge incident, which official US Army histories treat as the opening of the China war."
+    },
+    {
+      "code": "china",
+      "name": "China",
+      "level": "sub_theater",
+      "parent": "cbi",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          18.0,
+          54.0,
+          97.0,
+          135.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1937-07-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "The Second Sino-Japanese War and the US China Theater (from 1944); Nationalist, Communist and Japanese operations in China and Manchuria",
+      "description": "China and Manchuria, from the Marco Polo Bridge incident on 7 July 1937."
+    },
+    {
+      "code": "burma",
+      "name": "Burma",
+      "level": "sub_theater",
+      "parent": "cbi",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          9.0,
+          28.5,
+          92.0,
+          102.0
+        ]
+      ],
+      "date_floor": "1941-12-01",
+      "start_date": "1941-12-08",
+      "end_date": "1945-08-15",
+      "official_equivalents": "The Burma campaigns of SEAC and the India-Burma Theater",
+      "description": "Burma (Myanmar), including the 1942 retreat, the 1943-1944 battles and the 1945 reconquest."
+    },
+    {
+      "code": "india",
+      "name": "India",
+      "level": "sub_theater",
+      "parent": "cbi",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          5.0,
+          37.0,
+          60.0,
+          98.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1939-09-03",
+      "end_date": "1945-09-02",
+      "official_equivalents": "British India Command, as a base, training and (from 1944, Imphal-Kohima) combat area for SEAC and CBI",
+      "description": "India, Ceylon (Sri Lanka) and the north-west frontier, including the Imphal and Kohima battles. The date floor matches the CBI theater so that pre-1939 China-related rear rows can be filed here if needed."
+    },
+    {
+      "code": "indochina",
+      "name": "Indochina",
+      "level": "sub_theater",
+      "parent": "cbi",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          8.0,
+          24.0,
+          100.0,
+          110.0
+        ]
+      ],
+      "date_floor": "1940-09-01",
+      "start_date": "1940-09-22",
+      "end_date": "1945-09-02",
+      "official_equivalents": "French Indochina under Japanese occupation (from September 1940) and the 1945 campaign; neighbouring SEAC operations",
+      "description": "French Indochina (Vietnam, Laos, Cambodia) and immediately neighbouring areas, including the Japanese entry in 1940."
+    },
+    {
+      "code": "atlantic",
+      "name": "Atlantic",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          0.0,
+          70.0,
+          -80.0,
+          10.0
+        ]
+      ],
+      "date_floor": "1939-09-03",
+      "start_date": "1939-09-03",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The Battle of the Atlantic (Western Approaches, US Eastern Sea Frontier and the mid-Atlantic air and naval war)",
+      "description": "The Atlantic Ocean and the air and naval war fought mainly at sea, from the British declaration of war on 3 September 1939. A point in mid-Atlantic with this theater is expected and is not treated as a coordinate typo."
+    },
+    {
+      "code": "north_atlantic",
+      "name": "North Atlantic",
+      "level": "sub_theater",
+      "parent": "atlantic",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          40.0,
+          70.0,
+          -70.0,
+          5.0
+        ]
+      ],
+      "date_floor": "1939-09-03",
+      "start_date": "1939-09-03",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The North Atlantic convoy routes and Western Approaches",
+      "description": "The North Atlantic, including the Western Approaches, the Greenland-Iceland-United Kingdom gap and the convoy routes to the British Isles. Arctic convoy routes may instead use arctic / arctic_convoys."
+    },
+    {
+      "code": "mid_atlantic",
+      "name": "Mid-Atlantic",
+      "level": "sub_theater",
+      "parent": "atlantic",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          5.0,
+          40.0,
+          -80.0,
+          0.0
+        ]
+      ],
+      "date_floor": "1939-09-03",
+      "start_date": "1939-09-03",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The mid-Atlantic air and U-boat war, including the Azores and the central Atlantic gap",
+      "description": "The mid-Atlantic Ocean between the Caribbean and the North Atlantic boxes, including the Azores."
+    },
+    {
+      "code": "caribbean",
+      "name": "Caribbean and Gulf",
+      "level": "sub_theater",
+      "parent": "atlantic",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          8.0,
+          32.0,
+          -98.0,
+          -58.0
+        ]
+      ],
+      "date_floor": "1939-09-03",
+      "start_date": "1939-09-03",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The Caribbean Sea Frontier and the U-boat campaign in the Caribbean and the Gulf of Mexico",
+      "description": "The Caribbean Sea and the Gulf of Mexico, including the 1942-1943 U-boat campaign there."
+    },
+    {
+      "code": "arctic",
+      "name": "Arctic and Scandinavia",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": false,
+      "bboxes": [
+        [
+          54.0,
+          82.0,
+          -40.0,
+          60.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1940-04-09",
+      "end_date": "1945-05-08",
+      "official_equivalents": "German Wehrmachtbefehlshaber Norwegen; the Norwegian campaign; the Arctic (Murmansk and Archangel) convoy routes",
+      "description": "Norway, Denmark and the Arctic approaches, including the Arctic convoy routes. Existing rows use the legacy theater code scandinavia; new rows may use theater=arctic with a sub-theater."
+    },
+    {
+      "code": "scandinavia",
+      "name": "Scandinavia",
+      "level": "sub_theater",
+      "parent": "arctic",
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          54.0,
+          72.0,
+          4.0,
+          32.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1940-04-09",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The 1940 Norwegian campaign (Weserübung) and the occupation of Norway and Denmark to May 1945. Finland is eastern_front / finland.",
+      "description": "Norway and Denmark. Legacy theater code: existing rows may keep theater=scandinavia."
+    },
+    {
+      "code": "arctic_convoys",
+      "name": "Arctic convoys",
+      "level": "sub_theater",
+      "parent": "arctic",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          60.0,
+          82.0,
+          -25.0,
+          55.0
+        ]
+      ],
+      "date_floor": "1941-08-01",
+      "start_date": "1941-08-21",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The Allied Arctic convoys to Murmansk and Archangel (PQ, QP, JW, RA and earlier named sailings from the Dervish convoy of August 1941)",
+      "description": "The Arctic Ocean convoy routes between Iceland or the United Kingdom and the Soviet northern ports. These routes are sometimes also treated as part of the Battle of the Atlantic; in this vocabulary they sit under arctic."
+    },
+    {
+      "code": "home_front",
+      "name": "Home front",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": false,
+      "bboxes": [
+        [
+          24.0,
+          50.0,
+          -125.0,
+          -66.0
+        ],
+        [
+          49.0,
+          61.0,
+          -11.0,
+          2.0
+        ],
+        [
+          45.5,
+          56.0,
+          5.5,
+          24.0
+        ],
+        [
+          24.0,
+          46.0,
+          124.0,
+          146.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1937-07-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "Rear and home areas that were not then a combat zone: the German Ersatzheer / BdE, and the equivalent British, United States and Japanese home establishments",
+      "description": "Forming, training, refitting and the replacement or home establishment at places that were not then in a combat zone. Existing German rear-area rows use the legacy theater code home_germany; new rows for other countries use this theater and a sub-theater."
+    },
+    {
+      "code": "home_germany",
+      "name": "Home Germany",
+      "level": "sub_theater",
+      "parent": "home_front",
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          45.5,
+          56.0,
+          5.5,
+          24.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-08",
+      "official_equivalents": "The German Ersatzheer / Befehlshaber des Ersatzheeres (BdE) and other rear and training establishments inside the Reich of the time",
+      "description": "Germany as then constituted (the 1937 Reich plus annexed Austria, the Sudetenland, the Protectorate of Bohemia and Moravia and the annexed Polish areas) as a rear or home area: forming, training, refitting and the replacement army, at places that were not then in a combat zone. Rows in Germany in the path of the Western Allies are western_europe; rows in the path of the Red Army are eastern_front. Legacy theater code: existing rows may keep theater=home_germany."
+    },
+    {
+      "code": "home_britain",
+      "name": "Home Britain",
+      "level": "sub_theater",
+      "parent": "home_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          49.0,
+          61.0,
+          -11.0,
+          2.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1939-09-01",
+      "end_date": "1945-05-08",
+      "official_equivalents": "British Home Forces and the UK as a purely home or industrial area (as distinct from Britain as an ETO staging base, which is western_europe / britain)",
+      "description": "Great Britain and Northern Ireland as a home or industrial area rather than as the ETO staging base (use western_europe / britain for Overlord staging and the air defence of Great Britain)."
+    },
+    {
+      "code": "home_united_states",
+      "name": "Home United States",
+      "level": "sub_theater",
+      "parent": "home_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          24.0,
+          50.0,
+          -125.0,
+          -66.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1941-12-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "The continental United States as a training, forming and embarkation area (Army Ground Forces, Army Air Forces training commands, and equivalent naval establishments)",
+      "description": "The continental United States as a home, training and embarkation area. Hawaii and Alaska as Pacific combat or garrison areas are pacific."
+    },
+    {
+      "code": "home_japan",
+      "name": "Home Japan",
+      "level": "sub_theater",
+      "parent": "home_front",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          24.0,
+          46.0,
+          124.0,
+          146.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1937-07-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "The Japanese home islands as a rear, training and industrial area (as distinct from japan_home as a combat and bombing theater)",
+      "description": "The Japanese home islands as a rear, training or industrial area. Strategic bombing, invasion and other combat rows use pacific / japan_home."
+    },
+    {
+      "code": "other",
+      "name": "Other",
+      "level": "theater",
+      "parent": null,
+      "allowed_as_theater": true,
+      "legacy": true,
+      "bboxes": [
+        [
+          -90.0,
+          90.0,
+          -180.0,
+          180.0
+        ]
+      ],
+      "date_floor": "1937-07-07",
+      "start_date": "1937-07-07",
+      "end_date": "1945-09-02",
+      "official_equivalents": "A residual class, not a named Allied or Axis theater. Use only when no named theater or sub-theater fits, and explain in notes.",
+      "description": "Anything that does not fit the named theaters (for example East Africa). Explain in notes. The bounding box is the whole globe and only catches impossible coordinates."
+    },
+    {
+      "code": "east_africa",
+      "name": "East Africa",
+      "level": "sub_theater",
+      "parent": "other",
+      "allowed_as_theater": false,
+      "legacy": false,
+      "bboxes": [
+        [
+          -35.0,
+          20.0,
+          20.0,
+          55.0
+        ]
+      ],
+      "date_floor": "1939-09-01",
+      "start_date": "1940-06-10",
+      "end_date": "1941-11-27",
+      "official_equivalents": "British East Africa Command and the East African campaign of 1940-1941 (Italian East Africa)",
+      "description": "Ethiopia, Eritrea, Somaliland, Kenya and neighbouring East African areas, including the 1940-1941 campaign against Italian East Africa."
+    }
+  ]
+}

@@ -88,6 +88,7 @@ import places as placesmod  # noqa: E402
 import unit_refs  # noqa: E402
 import commanders as commandersmod  # noqa: E402
 import toe as toemod  # noqa: E402
+import theaters  # noqa: E402
 
 errors = []
 warnings = []
@@ -1613,7 +1614,8 @@ def check_sidc(units, claims):
         warn(where, msg)
 
 
-MISSION_START = '1939-09-01'
+MISSION_START = '1939-09-01'   # European default; per-theater floors are in schema/theaters.json
+                               # (global earliest date 1937-07-07). The check below uses theaters.date_floor().
 TIME_RE = re.compile(r'([01][0-9]|2[0-3]):[0-5][0-9]')
 
 
@@ -1650,7 +1652,7 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
     """data/missions/<nationality folder>/<unit_id>.csv and data/retired_missions.csv (schema/missions.schema.json, decision J1; scripts/missions.py):
     header and field values (types, patterns, vocabularies mission_status, mission_type, mission_target_category, confidence); the file path and the
     unit (domain air, file name, nationality folder); unique MSN ids that are not retired; rows sorted by date then mission_id; a real date not before
-    1939-09-01 (YYYY-MM allowed); HH:MM times; integer counts with aircraft_effective and aircraft_lost not above aircraft_dispatched; status and
+    the theater date floor in schema/theaters.json (YYYY-MM allowed); HH:MM times; integer counts with aircraft_effective and aircraft_lost not above aircraft_dispatched; status and
     conflict group paired (an alternate needs a G id; a group has two or more rows of one unit and one preferred row; a G id is not also a claim group);
     supported and attacked units exist, are not the flying unit and are not repeated; a target at a sea_position place is at most 0.5; every source URL
     is the url of one of the row's reference_ids and every reference id exists; source_locator names only the row's references; note labels; hedge
@@ -1665,6 +1667,8 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
     out = []
     seen = {}
     nat_folder = {u['unit_id']: u['nationality'].lower() for u in units.values()}
+    import operations as operationsmod
+    ops_by_id = operationsmod.load().by_id
     for path in msmod.files():
         r_path = rel(path)
         parts = r_path.split(os.sep)
@@ -1703,8 +1707,18 @@ def check_missions(units, claims, place_rows, aircraft, vocabs, relset):
                 err(where, 'unit_id %s does not match file name %s' % (row['unit_id'], stem))
             if row['date'] and not valid_partial_date(row['date']):
                 err(where, 'date %r is not a real YYYY-MM-DD or YYYY-MM' % row['date'])
-            elif row['date'] and row['date'] < MISSION_START[:len(row['date'])]:
-                err(where, 'date %s is before %s' % (row['date'], MISSION_START))
+            elif row['date']:
+                mth = ''
+                oid = row.get('operation_id') or ''
+                if oid:
+                    op = ops_by_id.get(oid)
+                    if op:
+                        mth = op.get('theater') or ''
+                if not mth and u:
+                    mth = u.get('theater') or ''
+                floor = theaters.date_floor(mth)
+                if theaters.before_floor(row['date'], mth):
+                    err(where, 'date %s is before %s for theater %s' % (row['date'], floor, mth or '(none)'))
             k = msmod.sort_key(row)
             if prev and k < prev:
                 err(where, 'rows must be sorted by date then mission_id')
@@ -1860,6 +1874,8 @@ def main():
     claims_schema = common.load_schema('claims')
     units_schema = common.load_schema('units')
     vocabs = common.load_vocabularies()
+    for msg in theaters.validate_vocab():
+        err('schema/theaters.json', msg)
     cfields = claims_schema['fields']
     cheader = [f['name'] for f in cfields]
     ufields = units_schema['fields']
@@ -1884,6 +1900,9 @@ def main():
                 continue
             row = dict(zip(header, r))
             check_row(where, row, ufields, vocabs)
+            msg = theaters.sub_theater_error(row.get('theater', ''), row.get('sub_theater', ''))
+            if msg:
+                err(where, msg)
             if row['unit_id'] in units:
                 err(where, 'duplicate unit_id %s' % row['unit_id'])
             units[row['unit_id']] = row

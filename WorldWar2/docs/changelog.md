@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — US Marine and Japanese ground unit-id patterns, and new source families (branch `guadalcanal-pilot`)
+
+`schema/README.md` documents unit-id patterns for US Marine Corps ground formations (`US-MAR-001D`, letterless Marine regiments, raider, defense, tank, pioneer and related battalion types), the Americal Division (`US-AMER-001D`), Seabees ashore (`US-NCB-<nnn>`, domain `ground`, branch `Navy`), and Japanese armies, divisions, brigades, regiments, named detachments (`JPN-DET-ICHIKI`), SNLF and naval construction units (`JPN-` prefix already in `data/nationalities.csv`). Existing Army ids such as `US-INF-001D` are not reused. Source-family vocabulary tokens `usmc_history`, `jacar` and `japanese_monographs` were added so a HyperWar copy of a Marine official history is not counted as a second family, and so a JACAR original and its English monograph translation are not counted as two families. CONTRIBUTING points to the new patterns and to promoting an existing placeholder rather than inventing a second id. No claim, unit, or other data row was changed in this commit.
+
 ## 25 November 2026 — Renumber script no longer rewrites published rows after a new column is added (branch `theater-vocabulary`)
 
 `renumber_new_ids.py --apply` compared working rows to `main` using each file's current header. Adding a column such as `sub_theater` made every published claim look new, so token replacement rewrote published ids (including `C1234` and `R001`) in those rows. The script now compares rows on the base revision's columns only, and it still does not rewrite tokens in a published TABLES-file row whose id and identity are already on `main`. A fixture test adds a column to published claims and asserts those rows are unchanged. No claim, unit, or other data row was changed.

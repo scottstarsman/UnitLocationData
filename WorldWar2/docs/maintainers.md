@@ -10,9 +10,9 @@ Run the scripts from the `WorldWar2/` directory. One command runs the full set:
 bash scripts/run_checks.sh
 ```
 
-That runs `validate.py`, `check_json_fields.py`, `semantic_tests.py`, `build.py --check`, `build_references.py --check`, `review_sample.py --check`, `check_coordinates.py`, the two audit scripts, and (when `origin/main` is available) `check_claim_ids.py`, `check_mission_ids.py` and `check_commander_ids.py`.
+That runs `validate.py`, `check_json_fields.py`, `semantic_tests.py`, `build.py --check`, `build_references.py --check`, `review_sample.py --check`, `check_coordinates.py`, the two audit scripts, and (when `origin/main` is available) `check_claim_ids.py`, `check_mission_ids.py`, `check_commander_ids.py` and `check_other_ids.py`.
 
-The GitHub Actions workflow in `.github/workflows/validate.yml` runs a subset on every push and pull request, including pull requests from forks: `validate.py`, `check_json_fields.py`, `check_coordinates.py` and `audit_temporal_relationships.py` (the last two do not fail the job), `build.py`, `build.py --check` (fails if `build/` is stale), and `semantic_tests.py`. It does not use repository secrets.
+The GitHub Actions workflow in `.github/workflows/validate.yml` runs on every push and pull request, including pull requests from forks: `validate.py`, `check_json_fields.py`, `check_coordinates.py` and `audit_temporal_relationships.py` (the last two do not fail the job), `build.py`, `build.py --check` (fails if `build/` is stale), `semantic_tests.py`, and the id-collision checks against the pull request's base `main` (or `origin/main` on a push). It uses the `pull_request` event, a read-only token and no secrets.
 
 `validate.py` and `check_coordinates.py` also print warnings. A warning is a prompt to re-check a row, not an automatic failure. Some warnings on `main` are already known and left open; a change should not add a warning for a row it touches unless the pull request explains why.
 

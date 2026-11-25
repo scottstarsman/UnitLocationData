@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Safer remapping of colliding unpublished ids (branch `renumber-ids-hardened`)
+
+`--apply` now refuses a dirty work tree, remaps on a temporary copy, and writes back only if the id-check scripts and foreign-key checks pass; a failure leaves the work tree unchanged. `git diff` pathspecs are relative to the dataset root, so scenario and roadmap collisions are detected when the data lives in `WorldWar2/`. Token rewrites in text files are limited to docs, CONTRIBUTING/README, and `scripts/semantic_tests.py`, so tool and test sources are not edited. Full-dataset and property tests cover every id family, word-boundary and range mentions, silent-join conflict groups, round-trip inversion, and idempotence. No claim, unit, or other data row was changed.
+
 ## 25 November 2026 — Renumber colliding unpublished ids (branch `renumber-new-ids`)
 
 `scripts/renumber_new_ids.py` remaps unpublished ids on a branch that collide with `origin/main` (or `--base`) after a rebase: claims, missions, people, tenures, command relations, places, references, conflict groups, TO&E, aircraft types, ship classes, lineage, and colliding scenario and roadmap numbers. Dry-run is the default; `--apply` writes the mapping and rewrites references in the new or changed data rows and in lines the branch adds to docs, the changelog and tests. Ids already on `main` are never changed. A new conflict group that reused a `G###` already on `main` is split so it does not silently join the published group (`--keep-group` opts out). Fixture tests simulate two branches taking the same next-free ids; `run_checks.sh` and CI run them. No claim, unit, or other data row was changed.

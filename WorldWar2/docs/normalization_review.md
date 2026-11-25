@@ -1,6 +1,6 @@
 # Normalization review of the data structures (26 October 2026)
 
-Scope: a read-only review of every table and file in the working copy at commit `5a97013` (the same content as `main` on GitHub after the `claim-references` merge, `cd8007d`). Nothing in `data/`, `schema/`, `build/` or `scripts/` was changed. Every count below was computed from the files; the profiling scripts are in `/workspace/norm/` (`p1.py` to `p8.py`, outside the repository) and can be re-run.
+Scope: a read-only review of every table and file in the working copy at commit `5a97013` (the same content as `main` on GitHub after the `claim-references` merge, `cd8007d`). Nothing in `data/`, `schema/`, `build/` or `scripts/` was changed. Every count below was computed from the files; the profiling scripts (`p1.py` to `p8.py`) were kept outside the repository and can be re-run.
 
 ## Status after `unit-ids-in-text-columns` (27 October 2026)
 

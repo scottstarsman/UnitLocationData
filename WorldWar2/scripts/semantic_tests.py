@@ -3178,7 +3178,7 @@ def scenario_206_map_text_weak_pairs():
     expect(s + ': no map row outranks text', any(claims[c]['reference_ids'].startswith('R781') and float(claims[c]['confidence']) > 0.3 for c in ('C2580', 'C2496', 'C6449')), False)
 
 def scenario_207_midwar_ends():
-    """Mid-war ends (branch midwar-ends): end rows for German units that ended before about April 1945 (HANDOFF rule 20)."""
+    """Mid-war ends (branch midwar-ends): end rows for German units that ended before about April 1945."""
     s = 'scenario 207'
     claims = {c['claim_id']: c for c in common.load_all_claims()[1]}
     ends = {'C8961': 'GER-COR-089C', 'C8962': 'GER-VG-019D', 'C8963': 'GER-INF-077D', 'C8964': 'GER-LL-091D', 'C8965': 'GER-LFD-017D', 'C8966': 'GER-PZB-150B', 'C8967': 'GER-VG-272D', 'C8968': 'GER-COR-FELDT', 'C8970': 'GER-VG-079D'}

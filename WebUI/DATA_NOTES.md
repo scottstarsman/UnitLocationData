@@ -8,7 +8,7 @@ Reviewed November 1, 2026. This is a discovery note; interface design and techno
 - `../WorldWar2/data/`: master CSVs, including one claim file per unit under `claims/<nationality>/`, unit identities, source metadata, places, operations, and command evidence.
 - `../WorldWar2/schema/`: JSON schemas, foreign keys, vocabulary descriptions and display ordering. `vocabularies.json` is the vocabulary authority.
 - `../WorldWar2/scripts/`: Python standard-library build, validation, temporal queries, audits and migrations.
-- `../WorldWar2/docs/`: methodology, source and attribution guidance, coverage, review history and handoff. Historical narrative counts can lag the actual files.
+- `../WorldWar2/docs/`: methodology, source and attribution guidance, coverage, review history and [maintainer notes](../WorldWar2/docs/maintainers.md). Historical narrative counts can lag the actual files.
 - `../WorldWar2/archive/`: older flat exports; not an app input.
 
 ## Current build inventory

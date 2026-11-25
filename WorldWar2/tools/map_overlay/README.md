@@ -9,8 +9,8 @@ claim rows.
 It needs numpy and Pillow, like `tools/loc12ag`. It is not part of the build
 or `run_checks.sh`.
 
-Map scans and overlay outputs (PNG and CSV) stay in Drive or a scratch folder
-and are never committed.
+Map scans and overlay outputs (PNG and CSV) stay in a scratch folder
+outside the repository and are never committed.
 
 ## Pilot (27 June 1944, scan `cs000022`)
 
@@ -20,8 +20,8 @@ half-size IIIF link (`pct:50`). The image itself is not in the repository;
 download it into a scratch folder outside git:
 
 ```bash
-mkdir -p /workspace/map-overlay-scratch
-curl -L -o /workspace/map-overlay-scratch/cs000022.jpg \
+mkdir -p /tmp/map-overlay-scratch
+curl -L -o /tmp/map-overlay-scratch/cs000022.jpg \
   'https://tile.loc.gov/image-services/iiif/service:gmd:gmd5m:g5701m:g5701sm:gct00021:cs000022/full/pct:50/0/default.jpg'
 ```
 
@@ -36,8 +36,8 @@ python3 tools/map_overlay/overlay.py \
   --date 1944-06-27 \
   --sheet cs000022 \
   --control tools/loc12ag/sheet3_control.json \
-  --image /workspace/map-overlay-scratch/cs000022.jpg \
-  --out /workspace/map-overlay-scratch
+  --image /tmp/map-overlay-scratch/cs000022.jpg \
+  --out /tmp/map-overlay-scratch
 ```
 
 That writes, only in `--out`:

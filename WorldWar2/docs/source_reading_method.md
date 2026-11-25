@@ -3,8 +3,7 @@
 How to review a source document (official history, divisional history, memoir, report) and write reading notes for the unit-location dataset. Follow it for every source so notes stay consistent.
 
 ## Where notes live
-- Notes from copyrighted sources are private: keep them in the private source notes folder (a local working copy, and one copy in the Google Drive folder `WWII Unit Locations/source notes/`), named `<source>_notes.md`. Never commit them; `.gitignore` excludes `**/sources/*_notes.md`.
-- Replace the Drive copy in place when notes change (no duplicates) and confirm the Drive checksum matches the local file.
+- Notes from copyrighted sources are private: keep them outside the repository, named `<source>_notes.md`. Never commit them; `.gitignore` excludes `**/sources/*_notes.md`, `docs/sources/` and `private_notes/`.
 - Delete scratch text extracted from the source when done; keep the source PDF if it may be reread.
 
 ## How to read

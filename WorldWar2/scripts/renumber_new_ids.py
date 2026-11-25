@@ -128,6 +128,25 @@ def git_prefix(root):
     return out.strip()
 
 
+def resolve_base(root, explicit=None):
+    """Return a revision SHA to compare with.
+
+    If explicit is set, that name must resolve. Otherwise try origin/main,
+    then main, then HEAD, so a shallow CI checkout that only has origin/main
+    (and no local main) still works, as do fixture repos that have only HEAD.
+    """
+    names = (explicit,) if explicit else ('origin/main', 'main', 'HEAD')
+    err = ''
+    for name in names:
+        if not name:
+            continue
+        rc, out, e = git(root, 'rev-parse', '--verify', name)
+        if rc == 0 and out.strip():
+            return out.strip()
+        err = (e or out or '').strip()
+    raise SystemExit('cannot resolve a base revision (tried %s): %s' % (', '.join(n for n in names if n), err))
+
+
 def git_show(root, rev, rel_path, optional=False):
     prefix = git_prefix(root)
     rc, out, err = git(root, 'show', '%s:%s%s' % (rev, prefix, rel_path.replace(os.sep, '/')))
@@ -1203,7 +1222,8 @@ def apply_safely(root, rev, mappings, allow_dirty=False):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--base', default='origin/main', help='revision to compare with (default origin/main)')
+    ap.add_argument('--base', default=None,
+                    help='revision to compare with (default: origin/main, then main, then HEAD)')
     ap.add_argument('--apply', action='store_true', help='write the remapping (default is dry-run)')
     ap.add_argument('--allow-dirty', action='store_true',
                     help='with --apply, allow a dirty work tree (not recommended)')
@@ -1215,14 +1235,15 @@ def main(argv=None):
     if not os.path.isdir(root):
         raise SystemExit('root does not exist: %s' % root)
     git_prefix(root)  # fail early if not a work tree
-    mappings, problems = plan(root, a.base, keep_groups=a.keep_group)
+    base = resolve_base(root, a.base)
+    mappings, problems = plan(root, base, keep_groups=a.keep_group)
     print_table(mappings, problems, apply=a.apply)
     if problems:
         if a.apply:
             print('Aborted: problems were found; the work tree was not changed.')
         return 1
     if a.apply and mappings:
-        rc, written, errors = apply_safely(root, a.base, mappings, allow_dirty=a.allow_dirty)
+        rc, written, errors = apply_safely(root, base, mappings, allow_dirty=a.allow_dirty)
         if errors:
             for e in errors:
                 print('ERROR:', e)

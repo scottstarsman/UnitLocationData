@@ -149,8 +149,46 @@ def real_repo_top():
     return git(common.ROOT, 'rev-parse', '--show-toplevel').stdout.strip()
 
 
+def resolve_rev(root, *names):
+    """Return the first name that git can resolve in root, or None."""
+    for name in names:
+        if not name:
+            continue
+        p = git(root, 'rev-parse', '--verify', name, check=False)
+        if p.returncode == 0 and p.stdout.strip():
+            return p.stdout.strip()
+    return None
+
+
+def install_base_ref(repo, sha):
+    """Point refs/heads/base at sha inside repo, fetching it if the object is missing."""
+    p = git(repo, 'cat-file', '-t', sha, check=False)
+    if p.returncode != 0 or (p.stdout or '').strip() != 'commit':
+        p2 = git(repo, 'fetch', '--no-tags', '--depth=1', real_repo_top(),
+                 '+%s:refs/heads/base' % sha, check=False)
+        if p2.returncode != 0:
+            raise RuntimeError('cannot fetch base %s into the temp repo: %s%s' % (
+                sha, p2.stdout, p2.stderr))
+        return
+    git(repo, 'update-ref', 'refs/heads/base', sha)
+    # The object must now be readable as the local 'base' ref.
+    got = git(repo, 'rev-parse', '--verify', 'base').stdout.strip()
+    if got != sha:
+        raise RuntimeError('failed to set local base ref (%s != %s)' % (got, sha))
+
+
 def clone_real_dataset():
+    """Copy the real dataset into a temp repo with its own local 'base' ref.
+
+    The base SHA is resolved in the *source* repo (origin/main, then main,
+    then HEAD). A shallow CI checkout has origin/main but no local main, and
+    a clone of that checkout does not get the source's remote-tracking refs,
+    so the temp repo always gets a refs/heads/base we pass as --base.
+    """
     top = real_repo_top()
+    base_sha = resolve_rev(top, 'origin/main', 'main', 'HEAD')
+    if not base_sha:
+        raise RuntimeError('cannot resolve a base revision in %s (tried origin/main, main, HEAD)' % top)
     tmp = tempfile.mkdtemp(prefix='renumber-stress-full-')
     p = subprocess.run(
         ['git', 'clone', '--local', '--shared', top, tmp],
@@ -161,16 +199,16 @@ def clone_real_dataset():
         raise RuntimeError('git clone failed: %s%s' % (p.stdout, p.stderr))
     git(tmp, 'config', 'user.email', 'test@example.com')
     git(tmp, 'config', 'user.name', 'Test')
-    # Stay on the cloned HEAD (this branch). Base is origin/main if present, else main.
-    pbase = git(tmp, 'rev-parse', 'origin/main', check=False)
-    if pbase.returncode == 0 and pbase.stdout.strip():
-        base = pbase.stdout.strip()
-    else:
-        base = git(tmp, 'rev-parse', 'main').stdout.strip()
+    try:
+        install_base_ref(tmp, base_sha)
+    except Exception:
+        shutil.rmtree(tmp, ignore_errors=True)
+        raise
     root = os.path.join(tmp, 'WorldWar2')
     if not os.path.isdir(root):
+        shutil.rmtree(tmp, ignore_errors=True)
         raise RuntimeError('clone is missing WorldWar2/')
-    return tmp, root, base
+    return tmp, root, 'base'
 
 
 def find_claim(root, claim_id):

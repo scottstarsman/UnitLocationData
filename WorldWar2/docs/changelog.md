@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Renumber tests no longer require a local `main` (branch `renumber-ids-hardened`)
+
+The full-dataset remumber test failed in CI, which has `origin/main` (fetched at depth 1) but no local `main` branch. The test now resolves the base SHA in the source repo (`origin/main`, then `main`, then `HEAD`) and installs a local `base` ref in its temp clone. `renumber_new_ids.py` uses the same fallback when `--base` is omitted. No data rows changed.
+
 ## 25 November 2026 — Safer remapping of colliding unpublished ids (branch `renumber-ids-hardened`)
 
 `--apply` now refuses a dirty work tree, remaps on a temporary copy, and writes back only if the id-check scripts and foreign-key checks pass; a failure leaves the work tree unchanged. `git diff` pathspecs are relative to the dataset root, so scenario and roadmap collisions are detected when the data lives in `WorldWar2/`. Token rewrites in text files are limited to docs, CONTRIBUTING/README, and `scripts/semantic_tests.py`, so tool and test sources are not edited. Full-dataset and property tests cover every id family, word-boundary and range mentions, silent-join conflict groups, round-trip inversion, and idempotence. No claim, unit, or other data row was changed.

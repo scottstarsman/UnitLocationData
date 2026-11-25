@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Guadalcanal campaign operation and Solomon Islands gazetteer (branch `guadalcanal-pilot`)
+
+Operation `OP-CAMP-GUADALCANAL` (7 August 1942–21 February 1943, `theater` `pacific`, `sub_theater` `south_pacific`) was added under `OP-FRONT-PACIFIC`, with dates from Miller, *Guadalcanal: The First Offensive*. Thirty-four Solomon Islands places (Lunga Point, Henderson Field, Tulagi, Gavutu, Tanambogo, the Ilu and Tenaru rivers as distinct features, Bloody Ridge, Mount Austen, Kokumbona, the Russells, and other named battlefields) were added from the GeoNames Solomon Islands dump (R2224), with wider `precision_km` where the published coordinates look 1-arc-minute rounded. Official-history references for Miller, Zimmerman, USMC Operations vol. 1, the JACAR 17th Army record, and the 6th NCB unit history were added. No claim rows yet.
+
 ## 25 November 2026 — US Marine and Japanese ground unit-id patterns, and new source families (branch `guadalcanal-pilot`)
 
 `schema/README.md` documents unit-id patterns for US Marine Corps ground formations (`US-MAR-001D`, letterless Marine regiments, raider, defense, tank, pioneer and related battalion types), the Americal Division (`US-AMER-001D`), Seabees ashore (`US-NCB-<nnn>`, domain `ground`, branch `Navy`), and Japanese armies, divisions, brigades, regiments, named detachments (`JPN-DET-ICHIKI`), SNLF and naval construction units (`JPN-` prefix already in `data/nationalities.csv`). Existing Army ids such as `US-INF-001D` are not reused. Source-family vocabulary tokens `usmc_history`, `jacar` and `japanese_monographs` were added so a HyperWar copy of a Marine official history is not counted as a second family, and so a JACAR original and its English monograph translation are not counted as two families. CONTRIBUTING points to the new patterns and to promoting an existing placeholder rather than inventing a second id. No claim, unit, or other data row was changed in this commit.

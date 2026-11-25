@@ -101,7 +101,7 @@ See [docs/roadmap.md](docs/roadmap.md) for the open items. Do not take this page
 
 ## Contributing and licence
 
-Every row needs a source, conflicting claims become separate rows, and nothing is invented. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md). Pull requests run `scripts/validate.py` and check that `build/` is up to date.
+Every row needs a source, conflicting claims become separate rows, and nothing is invented. [CONTRIBUTING.md](CONTRIBUTING.md) walks through a fork, a worked example (one unit, one claim, one source), the checks, and how to add another theater. Please also read the [code of conduct](CODE_OF_CONDUCT.md). Run `bash scripts/run_checks.sh` from this folder before you open a pull request; CI runs a subset of the same checks, including on pull requests from forks.
 
 The whole repository — data, documentation, scripts and the web viewer — is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see the root [`LICENSE`](../LICENSE)). Creative Commons recommends against using CC licences for software, because they do not address patents and are not standard open-source software licences. Scott chose a single licence for the whole repository for simplicity (24 November 2026). Wikipedia-derived facts already require share-alike, which is why the data could not go under a non-share-alike licence.
 

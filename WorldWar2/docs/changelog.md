@@ -2,6 +2,10 @@
 
 Changes to the tables, schemas and scripts (not to individual claims). Newest first.
 
+## 25 November 2026 — Contributor guide (branch `contrib-guide`)
+
+`CONTRIBUTING.md` rewritten for outside contributors: fork-to-pull-request steps, a worked example (text only; no example rows were added to the data), plain-language source and confidence rules, a "how to add a new theater" section, and `scripts/run_checks.sh` as the starting check command. Stale wording was corrected: claim `theater` is per row and must match the operation (not the unit's primary theater); operation `nationality_scope` uses nationality `name` values such as `Germany` (not `German`); every unit in this release is `in_scope`, and other-front rows are distinguished by `theater`. No claim, unit, or other data row was changed.
+
 ## 25 November 2026 — Public docs hygiene (branch `public-docs-hygiene`)
 
 The internal maintainer operating manual (`docs/HANDOFF.md`) and Drive folder ids (`docs/HANDOFF_private.md`) are no longer part of the published tree; both are gitignored and kept privately by the project owner. A short public page, `docs/maintainers.md`, covers how to run the checks and the release rules that can be public. Pointers to the handoff and to private working paths were removed from CONTRIBUTING, methodology, the roadmap, source-reading and source-balance notes, the schema README, and a few tool docs. No claim, unit, or other data row was changed.

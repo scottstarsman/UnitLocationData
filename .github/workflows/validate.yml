@@ -55,6 +55,8 @@ jobs:
       # fails the build: the answers of who_controls.py for four command scenarios (scripts/semantic_tests.py)
       - name: Semantic tests (command scenarios)
         run: python scripts/semantic_tests.py
+      - name: Renumber-script fixture tests
+        run: python scripts/test_renumber_new_ids.py
       # After rebase onto an updated main, a second PR that reused the same new ids fails here.
       - name: Id collision checks against origin/main
         run: |
